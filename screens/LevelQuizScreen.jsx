@@ -2,8 +2,16 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-const PASS_SCORE = 60;   // >= 60% to unlock next level
-const REVIEW_SCORE = 50; // < 50% triggers review exercise before retry
+const PASS_SCORE = 60;
+const REVIEW_SCORE = 50;
+
+const NEXT_LEVEL = {
+  hsk1: { emoji: '🚶', name: 'Level 2 – Explorer' },
+  hsk2: { emoji: '🗣',  name: 'Level 3 – Conversation Builder' },
+  hsk3: { emoji: '🌟', name: 'Level 4 – Confident Speaker' },
+  hsk4: { emoji: '🔥', name: 'Level 5 – Communicator' },
+  hsk5: { emoji: '🎓', name: 'Level 6 – Advanced' },
+};
 
 // Import quiz data - data folder is in root
 import quizData from '../data/hsk1/hsk1_level_quiz.json';
@@ -116,7 +124,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
               <Text style={styles.perfectScoreSubtext}>You got all questions correct!</Text>
             </View>
           ) : (
-            incorrectQuestions.map((question, idx) => {
+            incorrectQuestions.map((question) => {
               const answer = answers[question.id];
               const questionNumber = quizData.questions.findIndex(q => q.id === question.id) + 1;
               
@@ -186,11 +194,29 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
     const passed = getPassed();
     const review = needsReview();
     const correctCount = Object.values(answers).filter(a => a.isCorrect).length;
+    const nextLevel = NEXT_LEVEL[currentLevelId];
 
     return (
       <SafeAreaView style={styles.safe}>
         <StatusBar barStyle="light-content" />
         <ScrollView contentContainerStyle={styles.resultsContainer}>
+
+          {/* Unlock celebration (passed only) */}
+          {passed && (
+            <View style={styles.unlockCard}>
+              <Text style={styles.unlockEmoji}>🎉</Text>
+              <Text style={styles.unlockTitle}>Congratulations!</Text>
+              {nextLevel && (
+                <View style={styles.unlockLevelRow}>
+                  <Text style={styles.unlockLabel}>You unlocked</Text>
+                  <View style={styles.unlockLevelBadge}>
+                    <Text style={styles.unlockLevelText}>{nextLevel.emoji} {nextLevel.name}</Text>
+                  </View>
+                </View>
+              )}
+            </View>
+          )}
+
           <View style={styles.resultsCard}>
             <Text style={styles.resultsEmoji}>{passed ? '🏆' : '📚'}</Text>
             <Text style={styles.resultsTitle}>
@@ -228,13 +254,6 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
               Pass threshold: {PASS_SCORE}% · You scored: {score}%
             </Text>
 
-            {passed && (
-              <View style={styles.passedBox}>
-                <Text style={styles.passedText}>
-                  ✅ Next level unlocked!
-                </Text>
-              </View>
-            )}
 
             {!passed && review && (
               <View style={styles.encouragementBox}>
@@ -443,6 +462,15 @@ const styles = StyleSheet.create({
   nextButtonText: { fontSize: 16, fontWeight: '800', color: '#fff' },
   
   // Results
+  // Unlock celebration card
+  unlockCard:       { backgroundColor: 'rgba(29,209,161,0.12)', borderRadius: 24, padding: 28, alignItems: 'center', marginBottom: 16, borderWidth: 2, borderColor: '#1DD1A1' },
+  unlockEmoji:      { fontSize: 52, marginBottom: 8 },
+  unlockTitle:      { fontSize: 28, fontWeight: '900', color: '#1DD1A1', marginBottom: 12 },
+  unlockLevelRow:   { alignItems: 'center', gap: 6 },
+  unlockLabel:      { fontSize: 14, color: '#b2bec3', fontWeight: '600' },
+  unlockLevelBadge: { backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: 12, paddingHorizontal: 16, paddingVertical: 8, marginTop: 4 },
+  unlockLevelText:  { fontSize: 18, fontWeight: '800', color: '#fff' },
+
   resultsContainer: { flexGrow: 1, padding: 20, justifyContent: 'center' },
   resultsCard: { backgroundColor: '#16213e', borderRadius: 24, padding: 32, alignItems: 'center', marginBottom: 20, borderWidth: 1, borderColor: '#2d3436' },
   resultsEmoji: { fontSize: 64, marginBottom: 16 },

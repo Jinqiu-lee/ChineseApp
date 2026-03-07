@@ -31,11 +31,12 @@ const LESSONS = {
 /**
  * LessonDetailScreen - Shows complete lesson content
  */
-export default function LessonDetailScreen({ 
-  lessonId, 
-  onBack, 
+export default function LessonDetailScreen({
+  lessonId,
+  onBack,
+  onLessonComplete,
   onPlayGame,
-  onTakeQuiz 
+  onTakeQuiz
 }) {
   const lesson = LESSONS[lessonId];
 
@@ -133,6 +134,15 @@ export default function LessonDetailScreen({
           </TouchableOpacity>
         </View>
 
+        {/* Complete Lesson */}
+        <TouchableOpacity
+          style={styles.completeButton}
+          onPress={() => onLessonComplete(lessonId)}
+          activeOpacity={0.85}
+        >
+          <Text style={styles.completeButtonText}>✓ Complete Lesson</Text>
+        </TouchableOpacity>
+
         <View style={{ height: 40 }} />
       </ScrollView>
     </SafeAreaView>
@@ -164,6 +174,8 @@ const styles = StyleSheet.create({
   quizButtonTitle: { fontSize: 18, fontWeight: '800', color: '#fff', marginBottom: 4 },
   quizButtonDesc: { fontSize: 13, color: '#636e72' },
   quizButtonArrow: { fontSize: 20, fontWeight: '700', color: '#FF6B6B' },
+  completeButton: { backgroundColor: '#1DD1A1', borderRadius: 18, padding: 18, alignItems: 'center', marginBottom: 12 },
+  completeButtonText: { fontSize: 17, fontWeight: '900', color: '#fff', letterSpacing: 0.5 },
   errorContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20 },
   errorText: { fontSize: 20, fontWeight: '700', color: '#FF6B6B', marginBottom: 8 },
   errorSubtext: { fontSize: 14, color: '#636e72', marginBottom: 20 },

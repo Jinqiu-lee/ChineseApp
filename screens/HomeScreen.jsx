@@ -12,6 +12,22 @@ const LEVEL_CONFIG = [
   { id: 'hsk6', number: 6, emoji: '🎓', title: 'Advanced',              subtitle: 'HSK 6', color: '#fd79a8' },
 ];
 
+const LEVEL_WORD_DATA = {
+  hsk1: { totalWords: 150, wordsPerLesson: 19 },
+  hsk2: { totalWords: 300, wordsPerLesson: 30 },
+  hsk3: { totalWords: 600, wordsPerLesson: 60 },
+  hsk4: { totalWords: 900, wordsPerLesson: 0 },
+  hsk5: { totalWords: 1200, wordsPerLesson: 0 },
+};
+
+const UNLOCK_QUESTS = {
+  hsk2: { emoji: '🗺️', title: "Explorer's Quest", desc: "Complete all 8 HSK1 lessons and pass the Level Quiz with 60%+ to unlock this realm. Your adventure continues!" },
+  hsk3: { emoji: '⚔️', title: "Adventurer's Challenge", desc: "Brave traveler! Finish all 5 HSK2 lessons and conquer the Level Quiz to push deeper into uncharted territory!" },
+  hsk4: { emoji: '🏰', title: "Warrior's Trial", desc: "A fortress awaits! Master all 5 HSK3 lessons and ace the Level Quiz to storm the castle of the Confident Speaker!" },
+  hsk5: { emoji: '🔥', title: "Champion's Gauntlet", desc: "Legendary challenge! Complete all HSK4 lessons and defeat the Level Quiz to claim the title of Communicator!" },
+  hsk6: { emoji: '🌟', title: 'The Legendary Realm', desc: "The ultimate realm is being forged! Keep conquering the earlier levels to prepare for the greatest challenge. Coming soon!" },
+};
+
 const LESSONS_BY_LEVEL = {
   hsk1: [
     { id: 1, title: 'Greetings & Introductions', topic_chinese: '你好！' },
@@ -42,6 +58,7 @@ const LESSONS_BY_LEVEL = {
 export default function HomeScreen({
   userData,
   levelState,
+  lessonProgress,
   onLessonPress,
   onLevelQuizPress,
   onChangeLevelConfirm,
@@ -104,7 +121,12 @@ export default function HomeScreen({
     }
     const isLocked = !levelState.unlockedLevels.includes(level.id);
     if (isLocked) {
-      alert(`${level.emoji} Level ${level.number}: ${level.title}\n\nComplete the previous level quiz with 60%+ to unlock this level!`);
+      const quest = UNLOCK_QUESTS[level.id];
+      if (quest) {
+        alert(`${quest.emoji} ${quest.title}\n\n${quest.desc}`);
+      } else {
+        alert(`${level.emoji} Level ${level.number}: ${level.title}\n\nComplete the previous level quiz with 60%+ to unlock!`);
+      }
       return;
     }
     setSelectedLevel(level);
@@ -141,13 +163,40 @@ export default function HomeScreen({
             </View>
           </View>
 
+          {/* Progress bar */}
+          {(() => {
+            const completed = (lessonProgress[selectedLevel.id] || []).length;
+            const total = lessons.length;
+            const wordData = LEVEL_WORD_DATA[selectedLevel.id];
+            const pct = total > 0 ? completed / total : 0;
+            const wordsLearned = wordData ? completed * wordData.wordsPerLesson : 0;
+            return total > 0 ? (
+              <View style={styles.progressSection}>
+                <View style={styles.progressHeader}>
+                  <Text style={styles.progressTitle}>{selectedLevel.subtitle} Progress</Text>
+                  <Text style={[styles.progressCount, { color: selectedLevel.color }]}>{completed}/{total} lessons</Text>
+                </View>
+                <View style={styles.progressBarBg}>
+                  <View style={[styles.progressBarFill, { width: `${pct * 100}%`, backgroundColor: selectedLevel.color }]} />
+                </View>
+                {wordData && (
+                  <Text style={styles.progressWords}>
+                    {wordsLearned} / {wordData.totalWords} words learned
+                  </Text>
+                )}
+              </View>
+            ) : null;
+          })()}
+
           <View style={styles.lessonsSection}>
             <Text style={styles.sectionTitle}>📚 Lessons</Text>
-            {lessons.map((lesson) => (
+            {lessons.map((lesson) => {
+              const isDone = (lessonProgress[selectedLevel.id] || []).includes(lesson.id);
+              return (
               <TouchableOpacity
                 key={lesson.id}
-                style={styles.lessonCard}
-                onPress={() => onLessonPress(lesson.id)}
+                style={[styles.lessonCard, isDone && styles.lessonCardDone]}
+                onPress={() => onLessonPress(selectedLevel.id, lesson.id)}
                 activeOpacity={0.7}
               >
                 <View style={[styles.lessonNumber, { backgroundColor: selectedLevel.color + '33' }]}>
@@ -157,9 +206,12 @@ export default function HomeScreen({
                   <Text style={styles.lessonTitle}>{lesson.title}</Text>
                   <Text style={styles.lessonChinese}>{lesson.topic_chinese}</Text>
                 </View>
-                <Text style={styles.lessonArrow}>→</Text>
+                <Text style={[styles.lessonArrow, isDone && { color: '#1DD1A1' }]}>
+                  {isDone ? '✓' : '→'}
+                </Text>
               </TouchableOpacity>
-            ))}
+              );
+            })}
           </View>
 
           <View style={styles.quizSection}>
@@ -515,8 +567,18 @@ const styles = StyleSheet.create({
   levelDetailTitle:     { fontSize: 18, fontWeight: '800', marginBottom: 3 },
   levelDetailSubtitle:  { fontSize: 13, color: '#636e72' },
 
+  // Level progress bar
+  progressSection:  { backgroundColor: '#16213e', borderRadius: 16, padding: 16, marginBottom: 20, borderWidth: 1, borderColor: '#2d3436' },
+  progressHeader:   { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 },
+  progressTitle:    { fontSize: 14, fontWeight: '700', color: '#fff' },
+  progressCount:    { fontSize: 13, fontWeight: '800' },
+  progressBarBg:    { height: 8, backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: 4, overflow: 'hidden', marginBottom: 8 },
+  progressBarFill:  { height: '100%', borderRadius: 4 },
+  progressWords:    { fontSize: 13, color: '#636e72', textAlign: 'right' },
+
   lessonsSection:       { marginBottom: 24 },
   lessonCard:           { flexDirection: 'row', alignItems: 'center', backgroundColor: '#16213e', borderRadius: 16, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: '#2d3436' },
+  lessonCardDone:       { borderColor: '#1DD1A1' + '55' },
   lessonNumber:         { width: 40, height: 40, borderRadius: 20, alignItems: 'center', justifyContent: 'center', marginRight: 14 },
   lessonNumberText:     { fontSize: 16, fontWeight: '800' },
   lessonInfo:           { flex: 1 },

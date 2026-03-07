@@ -24,6 +24,7 @@ const MANUAL_RANK_MAP = {
   hsk3: { level: "Conversation Builder", levelChinese: "中级", badge: "🗣",  color: "#1DD1A1", recommendedLevel: "hsk3", recommendedLabel: "Level 3 – Conversation Builder", message: "Great! We'll start you at Level 3 – Conversation Builder." },
   hsk4: { level: "Confident Speaker",    levelChinese: "高级", badge: "🌟", color: "#FF9F43", recommendedLevel: "hsk4", recommendedLabel: "Level 4 – Confident Speaker",    message: "Great! We'll start you at Level 4 – Confident Speaker." },
   hsk5: { level: "Communicator",         levelChinese: "精通", badge: "🔥", color: "#a29bfe", recommendedLevel: "hsk5", recommendedLabel: "Level 5 – Communicator",         message: "Great! We'll start you at Level 5 – Communicator." },
+  hsk6: { level: "Advanced",             levelChinese: "高端", badge: "🎓", color: "#fd79a8", recommendedLevel: "hsk6", recommendedLabel: "Level 6 – Advanced",             message: "Level 6 is coming soon!", comingSoon: true },
 };
 
 // ── CEFR level details (for results screen & levels panel) ───────
@@ -131,16 +132,18 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
   };
 
   const handleManualPick = (lvl) => {
-    if (lvl.comingSoon) {
-      alert("🎓 Level 6: Advanced\n\nThis level is coming soon!\nKeep working through the earlier levels. 加油！");
-      return;
-    }
     const rank = MANUAL_RANK_MAP[lvl.id];
     setResult({ ...rank, description: `You selected ${lvl.label}`, startFrom: "beginning", source: "manual" });
     fade(() => setStep(STEP_RESULTS));
   };
 
-  const handleDone = () => onComplete({ age: parseInt(age, 10), result });
+  const handleDone = () => {
+    if (result?.comingSoon) {
+      alert("🎓 Level 6: Advanced\n\nThis level is coming soon!\nPlease choose a lower level for now. 加油！");
+      return;
+    }
+    onComplete({ age: parseInt(age, 10), result });
+  };
 
   const q = step === STEP_TEST && questions.length > 0 ? questions[qIndex] : null;
   const totalQ = questions.length;
@@ -365,6 +368,12 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
           const detail = LEVEL_DETAILS_MAP[result.recommendedLevel] || LEVEL_DETAILS_MAP.hsk1;
           return (
             <ScrollView contentContainerStyle={s.centered}>
+              <TouchableOpacity
+                style={s.pathBackBtn}
+                onPress={() => fade(() => setStep(result.source === "manual" ? STEP_MANUAL : STEP_PATH))}
+              >
+                <Text style={s.backBtn}>← Back</Text>
+              </TouchableOpacity>
               <Text style={s.testCompleteTitle}>
                 {result.source === "test" ? "🎉 Test Complete!" : "🎉 Great Choice!"}
               </Text>

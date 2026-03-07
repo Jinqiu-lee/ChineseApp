@@ -10,7 +10,9 @@ export default function App() {
   const [currentScreen, setCurrentScreen] = useState('onboarding');
   const [userData, setUserData] = useState(null);
   const [currentLessonId, setCurrentLessonId] = useState(null);
+  const [currentLessonLevelId, setCurrentLessonLevelId] = useState(null);
   const [currentQuizLevelId, setCurrentQuizLevelId] = useState(null);
+  const [lessonProgress, setLessonProgress] = useState({}); // { hsk1: [1, 3], hsk2: [] }
   const [levelState, setLevelState] = useState({
     unlockedLevels: ['hsk1'],
     completedLevels: [],
@@ -33,9 +35,21 @@ export default function App() {
     setCurrentScreen('home');
   };
 
-  const handleLessonPress = (lessonId) => {
+  const handleLessonPress = (levelId, lessonId) => {
+    setCurrentLessonLevelId(levelId);
     setCurrentLessonId(lessonId);
     setCurrentScreen('lesson');
+  };
+
+  const handleLessonComplete = (lessonId) => {
+    const levelId = currentLessonLevelId;
+    if (!levelId) { handleBackToHome(); return; }
+    setLessonProgress(prev => {
+      const existing = prev[levelId] || [];
+      if (existing.includes(lessonId)) return prev;
+      return { ...prev, [levelId]: [...existing, lessonId] };
+    });
+    handleBackToHome();
   };
 
   const handleBackToHome = () => {
@@ -111,6 +125,7 @@ export default function App() {
       <HomeScreen
         userData={userData}
         levelState={levelState}
+        lessonProgress={lessonProgress}
         onLessonPress={handleLessonPress}
         onLevelQuizPress={handleLevelQuizPress}
         onChangeLevelConfirm={handleChangeLevelConfirm}
@@ -124,6 +139,7 @@ export default function App() {
       <LessonDetailScreen
         lessonId={currentLessonId}
         onBack={handleBackToHome}
+        onLessonComplete={handleLessonComplete}
         onPlayGame={handlePlayGame}
         onTakeQuiz={handleTakeQuiz}
       />
