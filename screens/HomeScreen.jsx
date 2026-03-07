@@ -50,6 +50,36 @@ export default function HomeScreen({
   const [showMenu, setShowMenu] = useState(false);
   const [selectedLevel, setSelectedLevel] = useState(null);
   const [showLevelChangeModal, setShowLevelChangeModal] = useState(false);
+  const [foundationModal, setFoundationModal] = useState(null); // 'pinyin' | 'characters' | null
+
+  const FOUNDATION_CONTENT = {
+    pinyin: {
+      emoji: '🔊',
+      title: 'Pinyin – Master Chinese Sounds',
+      tagline: 'Unlock the sound system of Chinese! 🎧',
+      body: 'Learn Pinyin, tones, and pronunciation so you can read and say Chinese words correctly. Train your ears and voice to sound like a real Chinese speaker!',
+      color: '#54A0FF',
+      bullets: [
+        { icon: '🎵', text: 'Four tones & pronunciation rules' },
+        { icon: '🔤', text: 'Initials, finals, and combinations' },
+        { icon: '👂', text: 'Listening & speaking practice' },
+        { icon: '📖', text: 'Read any Chinese word with Pinyin' },
+      ],
+    },
+    characters: {
+      emoji: '✍️',
+      title: 'Chinese Characters – Discover the Writing System',
+      tagline: 'Explore the world of Chinese characters! ✨',
+      body: 'Learn strokes, radicals, and basic characters step by step. Start reading and writing the building blocks of Chinese.',
+      color: '#1DD1A1',
+      bullets: [
+        { icon: '✏️', text: 'Stroke order & writing technique' },
+        { icon: '🧩', text: 'Radicals — the building blocks' },
+        { icon: '📝', text: 'Basic high-frequency characters' },
+        { icon: '🔍', text: 'Character recognition & meaning' },
+      ],
+    },
+  };
 
   const { result } = userData;
   const currentLevelConfig =
@@ -57,12 +87,12 @@ export default function HomeScreen({
 
   const handlePinyinSection = () => {
     setShowMenu(false);
-    alert('🔊 Pinyin Learning\n\nLearn the Pinyin sound system:\n• Four tones\n• Initials & Finals\n• Pronunciation practice\n\n(Coming soon!)');
+    setFoundationModal('pinyin');
   };
 
   const handleCharactersSection = () => {
     setShowMenu(false);
-    alert('✍️ Chinese Characters\n\nLearn to read and write:\n• Stroke order\n• Radicals\n• Character components\n\n(Coming soon!)');
+    setFoundationModal('characters');
   };
 
   const canChangeLevel = levelState.levelSetBy === 'manual' && !levelState.levelChangedUsed;
@@ -365,6 +395,69 @@ export default function HomeScreen({
         currentLevelId={result.recommendedLevel}
         mode="manual"
       />
+
+      {/* Foundation Description Modal */}
+      <Modal
+        visible={foundationModal !== null}
+        transparent
+        animationType="slide"
+        onRequestClose={() => setFoundationModal(null)}
+      >
+        <View style={styles.foundationOverlay}>
+          <View style={styles.foundationSheet}>
+            {(() => {
+              const content = FOUNDATION_CONTENT[foundationModal];
+              if (!content) return null;
+              return (
+                <>
+                  <View style={styles.foundationSheetHandle} />
+
+                  {/* Header */}
+                  <View style={[styles.foundationSheetHeader, { borderBottomColor: content.color + '44' }]}>
+                    <Text style={styles.foundationSheetEmoji}>{content.emoji}</Text>
+                    <TouchableOpacity onPress={() => setFoundationModal(null)} style={styles.foundationSheetCloseBtn}>
+                      <Text style={styles.foundationSheetClose}>✕</Text>
+                    </TouchableOpacity>
+                  </View>
+
+                  <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.foundationSheetBody}>
+                    {/* Title & tagline */}
+                    <Text style={[styles.foundationSheetTitle, { color: content.color }]}>{content.title}</Text>
+                    <Text style={styles.foundationSheetTagline}>{content.tagline}</Text>
+
+                    {/* Body description */}
+                    <Text style={styles.foundationSheetDesc}>{content.body}</Text>
+
+                    {/* What you'll learn */}
+                    <View style={[styles.foundationLearnBox, { borderColor: content.color + '44' }]}>
+                      <Text style={[styles.foundationLearnTitle, { color: content.color }]}>What you'll learn:</Text>
+                      {content.bullets.map((b, i) => (
+                        <View key={i} style={styles.foundationLearnRow}>
+                          <Text style={styles.foundationLearnIcon}>{b.icon}</Text>
+                          <Text style={styles.foundationLearnText}>{b.text}</Text>
+                        </View>
+                      ))}
+                    </View>
+
+                    {/* Coming soon badge */}
+                    <View style={[styles.foundationComingSoon, { borderColor: content.color + '66' }]}>
+                      <Text style={[styles.foundationComingSoonText, { color: content.color }]}>
+                        Coming Soon
+                      </Text>
+                      <Text style={styles.foundationComingSoonSub}>
+                        We're building this section. Stay tuned!
+                      </Text>
+                    </View>
+
+                    <View style={{ height: 8 }} />
+                  </ScrollView>
+                </>
+              );
+            })()}
+          </View>
+        </View>
+      </Modal>
+
     </SafeAreaView>
   );
 }
@@ -457,4 +550,25 @@ const styles = StyleSheet.create({
   menuItemText:         { fontSize: 16, fontWeight: '600', color: '#fff' },
   menuItemSubtext:      { fontSize: 12, color: '#636e72', marginTop: 2 },
   menuItemArrow:        { fontSize: 18, color: '#636e72' },
+
+  // Foundation description modal
+  foundationOverlay:        { flex: 1, backgroundColor: 'rgba(0,0,0,0.65)', justifyContent: 'flex-end' },
+  foundationSheet:          { backgroundColor: '#16213e', borderTopLeftRadius: 28, borderTopRightRadius: 28, maxHeight: '85%' },
+  foundationSheetHandle:    { width: 40, height: 4, backgroundColor: 'rgba(255,255,255,0.2)', borderRadius: 2, alignSelf: 'center', marginTop: 12 },
+  foundationSheetHeader:    { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 24, paddingTop: 16, paddingBottom: 16, borderBottomWidth: 1 },
+  foundationSheetEmoji:     { fontSize: 36 },
+  foundationSheetCloseBtn:  { padding: 4 },
+  foundationSheetClose:     { fontSize: 22, color: '#636e72' },
+  foundationSheetBody:      { paddingHorizontal: 24, paddingTop: 20, paddingBottom: 32 },
+  foundationSheetTitle:     { fontSize: 20, fontWeight: '900', lineHeight: 28, marginBottom: 8 },
+  foundationSheetTagline:   { fontSize: 15, fontWeight: '600', color: '#b2bec3', marginBottom: 16 },
+  foundationSheetDesc:      { fontSize: 14, color: '#b2bec3', lineHeight: 22, marginBottom: 24 },
+  foundationLearnBox:       { borderWidth: 1.5, borderRadius: 18, padding: 18, marginBottom: 20 },
+  foundationLearnTitle:     { fontSize: 14, fontWeight: '800', marginBottom: 14 },
+  foundationLearnRow:       { flexDirection: 'row', alignItems: 'center', marginBottom: 12, gap: 12 },
+  foundationLearnIcon:      { fontSize: 20, width: 28, textAlign: 'center' },
+  foundationLearnText:      { fontSize: 14, color: '#dfe6e9', flex: 1, fontWeight: '500' },
+  foundationComingSoon:     { borderWidth: 1.5, borderRadius: 14, padding: 16, alignItems: 'center' },
+  foundationComingSoonText: { fontSize: 15, fontWeight: '800', marginBottom: 4 },
+  foundationComingSoonSub:  { fontSize: 13, color: '#636e72' },
 });
