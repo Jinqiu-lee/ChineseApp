@@ -15,6 +15,7 @@ const LEVELS_MANUAL = [
   { id: "hsk3", label: "Level 3 – Conversation Builder", badge: "🗣",  color: "#1DD1A1", desc: "Can hold simple conversations" },
   { id: "hsk4", label: "Level 4 – Confident Speaker",    badge: "🌟", color: "#FF9F43", desc: "Comfortable with everyday Chinese" },
   { id: "hsk5", label: "Level 5 – Communicator",         badge: "🔥", color: "#a29bfe", desc: "Advanced, near-fluent communication" },
+  { id: "hsk6", label: "Level 6 – Advanced",             badge: "🎓", color: "#fd79a8", desc: "Coming soon!", comingSoon: true },
 ];
 
 const MANUAL_RANK_MAP = {
@@ -130,6 +131,10 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
   };
 
   const handleManualPick = (lvl) => {
+    if (lvl.comingSoon) {
+      alert("🎓 Level 6: Advanced\n\nThis level is coming soon!\nKeep working through the earlier levels. 加油！");
+      return;
+    }
     const rank = MANUAL_RANK_MAP[lvl.id];
     setResult({ ...rank, description: `You selected ${lvl.label}`, startFrom: "beginning", source: "manual" });
     fade(() => setStep(STEP_RESULTS));
@@ -210,13 +215,16 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
             <Text style={s.title}>Choose Your Level</Text>
             <Text style={s.subtitle}>Pick the level that best matches you</Text>
             {LEVELS_MANUAL.map((lvl) => (
-              <TouchableOpacity key={lvl.id} style={[s.levelCard, { borderColor: lvl.color }]} onPress={() => handleManualPick(lvl)} activeOpacity={0.8}>
+              <TouchableOpacity key={lvl.id} style={[s.levelCard, { borderColor: lvl.comingSoon ? "#2d3436" : lvl.color }, lvl.comingSoon && s.levelCardDimmed]} onPress={() => handleManualPick(lvl)} activeOpacity={0.8}>
                 <Text style={s.levelEmoji}>{lvl.badge}</Text>
                 <View style={s.levelInfo}>
-                  <Text style={[s.levelLabel, { color: lvl.color }]}>{lvl.label}</Text>
+                  <Text style={[s.levelLabel, { color: lvl.comingSoon ? "#636e72" : lvl.color }]}>{lvl.label}</Text>
                   <Text style={s.levelDesc}>{lvl.desc}</Text>
                 </View>
-                <Text style={[s.levelArrow, { color: lvl.color }]}>→</Text>
+                {lvl.comingSoon
+                  ? <Text style={s.levelSoonTag}>Soon</Text>
+                  : <Text style={[s.levelArrow, { color: lvl.color }]}>→</Text>
+                }
               </TouchableOpacity>
             ))}
           </ScrollView>
@@ -498,6 +506,8 @@ const s = StyleSheet.create({
   pathBackBtn:  { alignSelf: "flex-start", marginBottom: 8 },
   backBtn:      { color: "#636e72", fontSize: 15, fontWeight: "500", marginBottom: 16 },
   levelCard:    { flexDirection: "row", alignItems: "center", backgroundColor: "#16213e", borderRadius: 16, padding: 16, marginBottom: 10, borderWidth: 2 },
+  levelCardDimmed: { opacity: 0.5 },
+  levelSoonTag: { fontSize: 10, fontWeight: "700", color: "#636e72", backgroundColor: "rgba(255,255,255,0.08)", paddingHorizontal: 7, paddingVertical: 3, borderRadius: 6 },
   levelEmoji:   { fontSize: 28, marginRight: 14, width: 40, textAlign: "center" },
   levelInfo:    { flex: 1 },
   levelLabel:   { fontSize: 18, fontWeight: "800" },
