@@ -37,8 +37,8 @@ const LEVEL_DETAILS = [
     willLearn: ["Discuss work, travel, and study", "Understand longer conversations", "Vocabulary: 800–900 words"] },
   { id: "hsk5", number: 5, cefrLabel: "Upper Intermediate", cefr: "B1+", emoji: "🔥", color: "#a29bfe",
     willLearn: ["Discuss love, friendship, careers, and health", "Interact with more complex topics", "Vocabulary: ~1,200 words"] },
-  { id: "hsk6", number: 6, cefrLabel: "Advanced",           cefr: "C1",  emoji: "🎓", color: "#fd79a8",
-    willLearn: ["Express yourself effortlessly in Chinese", "Understand any style of written/spoken Chinese", "Near-native level proficiency", "Master 5,000+ Chinese words"] },
+  { id: "hsk6", number: 6, cefrLabel: "Advanced",           cefr: "B2",  emoji: "🎓", color: "#fd79a8",
+    willLearn: ["Read Chinese newspapers and novels", "Watch Chinese films without subtitles", "Communicate fluently with native speakers", "Use 2,500+ Chinese words"] },
 ];
 const LEVEL_DETAILS_MAP = Object.fromEntries(LEVEL_DETAILS.map(l => [l.id, l]));
 
