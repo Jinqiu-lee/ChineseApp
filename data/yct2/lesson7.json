@@ -1,0 +1,49 @@
+{
+  "level": "YCT2",
+  "lesson": 7,
+  "topic": "Weather",
+  "topic_chinese": "今天天气怎么样？",
+  "age_group": "7-8",
+  "objectives": ["listening", "speaking", "pinyin_spelling", "character_recognition"],
+  "key_characters": ["天", "气", "好", "热", "冷"],
+  "vocabulary": [
+    { "id": "yct2_l7_01", "chinese": "天气", "pinyin": "tiān qì", "tones": [1, 4], "english": "Weather", "part_of_speech": "noun" },
+    { "id": "yct2_l7_02", "chinese": "怎么样", "pinyin": "zěn me yàng", "tones": [3, 0, 4], "english": "How is it? / What's it like?", "part_of_speech": "question_phrase" },
+    { "id": "yct2_l7_03", "chinese": "热", "pinyin": "rè", "tones": [4], "english": "Hot", "part_of_speech": "adjective" },
+    { "id": "yct2_l7_04", "chinese": "冷", "pinyin": "lěng", "tones": [3], "english": "Cold", "part_of_speech": "adjective" },
+    { "id": "yct2_l7_05", "chinese": "晴天", "pinyin": "qíng tiān", "tones": [2, 1], "english": "Sunny day", "part_of_speech": "noun" },
+    { "id": "yct2_l7_06", "chinese": "下雨", "pinyin": "xià yǔ", "tones": [4, 3], "english": "To rain / Raining", "part_of_speech": "verb_phrase" },
+    { "id": "yct2_l7_07", "chinese": "下雪", "pinyin": "xià xuě", "tones": [4, 3], "english": "To snow / Snowing", "part_of_speech": "verb_phrase" },
+    { "id": "yct2_l7_08", "chinese": "刮风", "pinyin": "guā fēng", "tones": [1, 1], "english": "Windy", "part_of_speech": "verb_phrase" },
+    { "id": "yct2_l7_09", "chinese": "多云", "pinyin": "duō yún", "tones": [1, 2], "english": "Cloudy", "part_of_speech": "adjective" },
+    { "id": "yct2_l7_10", "chinese": "暖和", "pinyin": "nuǎn huo", "tones": [3, 0], "english": "Warm", "part_of_speech": "adjective" }
+  ],
+  "key_sentences": [
+    { "chinese": "今天天气怎么样？", "pinyin": "Jīntiān tiānqì zěnmeyàng?", "english": "What is the weather like today?" },
+    { "chinese": "今天很热。", "pinyin": "Jīntiān hěn rè.", "english": "Today is very hot." },
+    { "chinese": "今天下雨了。", "pinyin": "Jīntiān xià yǔ le.", "english": "It is raining today." },
+    { "chinese": "明天会下雪吗？", "pinyin": "Míngtiān huì xià xuě ma?", "english": "Will it snow tomorrow?" }
+  ],
+  "grammar_point": {
+    "title": "了 (le) — change of state",
+    "explanation": "了 (le) at the end of a sentence indicates a change of state or new situation. 下雨了 = 'it has started raining / it is now raining'. 来了 = 'has come / is here now'. This is one of the most frequently used particles in Chinese.",
+    "examples": [
+      { "chinese": "他来了", "pinyin": "Tā lái le", "english": "He has arrived / He's here now" },
+      { "chinese": "冷了", "pinyin": "Lěng le", "english": "It has become cold" }
+    ]
+  },
+  "pinyin_spelling": {
+    "topic": "Spelling practice: tian, qi, xia, gua, nuan",
+    "words_to_spell": [
+      { "pinyin": "tiān qì", "chinese": "天气", "english": "weather" },
+      { "pinyin": "xià yǔ", "chinese": "下雨", "english": "rain" },
+      { "pinyin": "nuǎn huo", "chinese": "暖和", "english": "warm" }
+    ]
+  },
+  "games": ["flashcard", "matching"],
+  "quiz": [
+    { "question": "What does 天气 (tiānqì) mean?", "type": "multiple_choice", "correct": "Weather", "options": ["Weather", "Sky", "Today", "Temperature"] },
+    { "question": "How do you say 'it is raining'?", "type": "multiple_choice", "correct": "下雨", "options": ["下雨", "下雪", "刮风", "多云"] },
+    { "question": "What does 怎么样 mean?", "type": "multiple_choice", "correct": "How is it / What's it like", "options": ["How is it / What's it like", "What is this", "Who is this", "Where is it"] }
+  ]
+}

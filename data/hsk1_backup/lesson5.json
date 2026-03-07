@@ -1,0 +1,55 @@
+{
+  "level": "HSK1",
+  "lesson": 5,
+  "topic": "Transportation",
+  "topic_chinese": "你怎么去？",
+  "age_group": "Adults and 10+",
+  "objectives": ["listening", "speaking", "reading", "writing"],
+  "vocabulary": [
+    { "id": "hsk1_l5_01", "chinese": "飞机", "pinyin": "fēi jī", "tones": [1, 1], "english": "Airplane", "part_of_speech": "noun" },
+    { "id": "hsk1_l5_02", "chinese": "火车", "pinyin": "huǒ chē", "tones": [3, 1], "english": "Train", "part_of_speech": "noun" },
+    { "id": "hsk1_l5_03", "chinese": "出租车", "pinyin": "chū zū chē", "tones": [1, 1, 1], "english": "Taxi", "part_of_speech": "noun" },
+    { "id": "hsk1_l5_04", "chinese": "地铁", "pinyin": "dì tiě", "tones": [4, 3], "english": "Subway / Metro", "part_of_speech": "noun" },
+    { "id": "hsk1_l5_05", "chinese": "公共汽车", "pinyin": "gōng gòng qì chē", "tones": [1, 4, 4, 1], "english": "Bus", "part_of_speech": "noun" },
+    { "id": "hsk1_l5_06", "chinese": "坐", "pinyin": "zuò", "tones": [4], "english": "To sit / To take (transport)", "part_of_speech": "verb" },
+    { "id": "hsk1_l5_07", "chinese": "骑", "pinyin": "qí", "tones": [2], "english": "To ride (bike, horse)", "part_of_speech": "verb" },
+    { "id": "hsk1_l5_08", "chinese": "开车", "pinyin": "kāi chē", "tones": [1, 1], "english": "Drive a car", "part_of_speech": "verb_phrase" },
+    { "id": "hsk1_l5_09", "chinese": "走路", "pinyin": "zǒu lù", "tones": [3, 4], "english": "Walk", "part_of_speech": "verb_phrase" },
+    { "id": "hsk1_l5_10", "chinese": "怎么", "pinyin": "zěn me", "tones": [3, 0], "english": "How", "part_of_speech": "question_word" },
+    { "id": "hsk1_l5_11", "chinese": "坐飞机", "pinyin": "zuò fēi jī", "tones": [4, 1, 1], "english": "Take a plane", "part_of_speech": "verb_phrase" },
+    { "id": "hsk1_l5_12", "chinese": "坐火车", "pinyin": "zuò huǒ chē", "tones": [4, 3, 1], "english": "Take a train", "part_of_speech": "verb_phrase" },
+    { "id": "hsk1_l5_13", "chinese": "坐地铁", "pinyin": "zuò dì tiě", "tones": [4, 4, 3], "english": "Take the subway", "part_of_speech": "verb_phrase" },
+    { "id": "hsk1_l5_14", "chinese": "坐公共汽车", "pinyin": "zuò gōng gòng qì chē", "tones": [4, 1, 4, 4, 1], "english": "Take the bus", "part_of_speech": "verb_phrase" },
+    { "id": "hsk1_l5_15", "chinese": "骑车", "pinyin": "qí chē", "tones": [2, 1], "english": "Ride a bike", "part_of_speech": "verb_phrase" },
+    { "id": "hsk1_l5_16", "chinese": "开", "pinyin": "kāi", "tones": [1], "english": "To drive", "part_of_speech": "verb" },
+    { "id": "hsk1_l5_17", "chinese": "走", "pinyin": "zǒu", "tones": [3], "english": "To walk", "part_of_speech": "verb" }
+  ],
+  "key_sentences": [
+    { "chinese": "你怎么去机场？", "pinyin": "Nǐ zěnme qù jīchǎng?", "english": "How are you going to the airport?" },
+    { "chinese": "我坐地铁去。", "pinyin": "Wǒ zuò dìtiě qù.", "english": "I'm going by metro." },
+    { "chinese": "他开车去。", "pinyin": "tā kāi chē qù", "english": "He drives there." },
+    { "chinese": "我们坐公共汽车去。", "pinyin": "wǒ men zuò gōng gòng qì chē qù", "english": "We go by bus." },
+    { "chinese": "坐飞机要多长时间？", "pinyin": "Zuò fēijī yào duō cháng shíjiān?", "english": "How long does it take by plane?" },
+    { "chinese": "大约两个小时。", "pinyin": "Dàyuē liǎng gè xiǎoshí.", "english": "About two hours." }
+  ],
+  "grammar_point": {
+    "title": "怎么 (zěnme) — How",
+    "explanation": "怎么 asks 'how' about methods or manner. 你怎么去 = How are you going? The transport verb 坐 is used for vehicles you sit inside (bus, train, plane, taxi). 骑 is used for things you ride on top of (bike, horse, motorbike). 开 means to drive.",
+    "examples": [
+      { "chinese": "你怎么来的？", "pinyin": "Nǐ zěnme lái de?", "english": "How did you come / get here?" },
+      { "chinese": "我骑自行车来的", "pinyin": "Wǒ qí zìxíngchē lái de", "english": "I came by bicycle" }
+    ]
+  },
+  "games": ["flashcard", "matching"],
+  "quiz": [
+    { "question": "Which verb do you use for taking a train?", "type": "multiple_choice", "correct": "坐", "options": ["坐", "骑", "开", "走"] },
+    { "question": "What does 出租车(chū zū chē) mean?", "type": "multiple_choice", "correct": "Taxi", "options": ["Taxi", "Bus", "Train", "Subway"] },
+    { "question": "How do you ask 'How do you go(there)?'", "type": "multiple_choice", "correct": "你怎么去?", "options": ["你怎么去?", "你去哪里?", "你去吗?", "你几点去?"] },
+    { "question": "What does 地铁 mean?", "type": "multiple_choice", "correct": "Subway / Metro", "options": ["Taxi", "Subway / Metro", "Airplane", "Bus"] },
+    { "question": "Which verb means 'to ride (a bike)'?", "type": "multiple_choice", "correct": "骑", "options": ["坐", "骑", "走", "开"] },
+    { "question": "What does 走路 mean?", "type": "multiple_choice", "correct": "Walk", "options": ["Run", "Drive", "Walk", "Ride"] },
+    { "question": "How do you say 'bus' in Chinese?", "type": "multiple_choice", "correct": "公共汽车", "options": ["公共汽车", "出租车", "火车", "飞机"] },
+    { "question": "What does 怎么 mean?", "type": "multiple_choice", "correct": "How", "options": ["Where", "How", "When", "Why"] }
+  
+  ]
+}

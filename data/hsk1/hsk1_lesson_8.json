@@ -1,0 +1,422 @@
+{
+  "lesson": 8,
+  "topic": "Daily Activities",
+  "topic_chinese": "你做什么？",
+  "age_group": "Adults and 10+",
+  "objectives": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "vocabulary": [
+    {
+      "id": "hsk1_l8_01",
+      "chinese": "去",
+      "pinyin": "qù",
+      "tones": [
+        4
+      ],
+      "english": "To go",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l8_02",
+      "chinese": "来",
+      "pinyin": "lái",
+      "tones": [
+        2
+      ],
+      "english": "To come",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l8_03",
+      "chinese": "回",
+      "pinyin": "huí",
+      "tones": [
+        2
+      ],
+      "english": "To return",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l8_04",
+      "chinese": "做",
+      "pinyin": "zuò",
+      "tones": [
+        4
+      ],
+      "english": "To do / To make",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l8_05",
+      "chinese": "看",
+      "pinyin": "kàn",
+      "tones": [
+        4
+      ],
+      "english": "To look / To watch / To read",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l8_06",
+      "chinese": "读",
+      "pinyin": "dú",
+      "tones": [
+        2
+      ],
+      "english": "To read (aloud)",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l8_07",
+      "chinese": "写",
+      "pinyin": "xiě",
+      "tones": [
+        3
+      ],
+      "english": "To write",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l8_08",
+      "chinese": "看见",
+      "pinyin": "kàn jiàn",
+      "tones": [
+        4,
+        4
+      ],
+      "english": "To see",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l8_09",
+      "chinese": "电视",
+      "pinyin": "diàn shì",
+      "tones": [
+        4,
+        4
+      ],
+      "english": "Television",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l8_10",
+      "chinese": "电影",
+      "pinyin": "diàn yǐng",
+      "tones": [
+        4,
+        3
+      ],
+      "english": "Movie / Film",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l8_11",
+      "chinese": "汉字",
+      "pinyin": "hàn zì",
+      "tones": [
+        4,
+        4
+      ],
+      "english": "Chinese character",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l8_12",
+      "chinese": "工作",
+      "pinyin": "gōng zuò",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "Work / To work",
+      "part_of_speech": "noun/verb"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "你去哪儿？",
+      "pinyin": "Nǐ qù nǎr?",
+      "english": "Where are you going?"
+    },
+    {
+      "chinese": "我去学校。",
+      "pinyin": "Wǒ qù xué xiào.",
+      "english": "I'm going to school."
+    },
+    {
+      "chinese": "他做什么？",
+      "pinyin": "Tā zuò shén me?",
+      "english": "What does he do?"
+    },
+    {
+      "chinese": "我看电视。",
+      "pinyin": "Wǒ kàn diàn shì.",
+      "english": "I watch TV."
+    },
+    {
+      "chinese": "她在写汉字。",
+      "pinyin": "Tā zài xiě hàn zì.",
+      "english": "She is writing Chinese characters."
+    },
+    {
+      "chinese": "你来我家吗？",
+      "pinyin": "Nǐ lái wǒ jiā ma?",
+      "english": "Will you come to my home?"
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "Using 去 (qù) - To go to a place",
+      "explanation": "去 (qù) means 'to go' and is followed by a location. Formula: Subject + 去 + Place. To ask where someone is going: Subject + 去 + 哪儿？",
+      "examples": [
+        {
+          "chinese": "我去医院。",
+          "pinyin": "Wǒ qù yī yuàn.",
+          "english": "I'm going to the hospital."
+        },
+        {
+          "chinese": "他们去商店。",
+          "pinyin": "Tā men qù shāng diàn.",
+          "english": "They're going to the store."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Say 'I'm going to school' in Chinese",
+          "answer": "我去学校。",
+          "type": "production"
+        },
+        {
+          "question": "Ask 'Where are you going?'",
+          "answer": "你去哪儿？",
+          "type": "production"
+        },
+        {
+          "question": "Fill in: 她___家。(She's going home)",
+          "answer": "去",
+          "type": "fill_in_blank"
+        },
+        {
+          "question": "Translate: He's going to the hospital",
+          "answer": "他去医院。",
+          "type": "translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Using 看 (kàn) - To watch/read/look",
+      "explanation": "看 (kàn) has multiple meanings depending on context: to watch (TV/movies), to read (books/newspapers), or to look at. Formula: Subject + 看 + Object.",
+      "examples": [
+        {
+          "chinese": "我看电影。",
+          "pinyin": "Wǒ kàn diàn yǐng.",
+          "english": "I watch movies."
+        },
+        {
+          "chinese": "他看书。",
+          "pinyin": "Tā kàn shū.",
+          "english": "He reads books."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Say 'I watch TV' in Chinese",
+          "answer": "我看电视。",
+          "type": "production"
+        },
+        {
+          "question": "What does 看 mean with 书?",
+          "answer": "to read (books)",
+          "type": "concept"
+        },
+        {
+          "question": "Translate: She watches movies",
+          "answer": "她看电影。",
+          "type": "translation"
+        },
+        {
+          "question": "Does 看 mean the same thing in all contexts? (Yes/No)",
+          "answer": "No",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Ongoing action with 在 (zài) + Verb",
+      "explanation": "在 + Verb shows an action currently in progress (similar to '-ing' in English). Formula: Subject + 在 + Verb + Object. This is different from 在 for location.",
+      "examples": [
+        {
+          "chinese": "我在吃饭。",
+          "pinyin": "Wǒ zài chī fàn.",
+          "english": "I am eating."
+        },
+        {
+          "chinese": "他在看书。",
+          "pinyin": "Tā zài kàn shū.",
+          "english": "He is reading."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Say 'I am writing' in Chinese",
+          "answer": "我在写。",
+          "type": "production"
+        },
+        {
+          "question": "What does 在 + verb indicate?",
+          "answer": "ongoing/current action",
+          "type": "concept"
+        },
+        {
+          "question": "Translate: She is working",
+          "answer": "她在工作。",
+          "type": "translation"
+        },
+        {
+          "question": "Make progressive: 他看电视。",
+          "answer": "他在看电视。",
+          "type": "transformation"
+        }
+      ]
+    }
+  ],
+  "pinyin_focus": {
+    "topic": "Similar sounds: qi/xi, ju/xu, qu/chu",
+    "initials_focus": [
+      "q",
+      "x",
+      "j",
+      "zh",
+      "ch"
+    ],
+    "finals_focus": [
+      "i",
+      "u",
+      "ü",
+      "ie",
+      "üe"
+    ],
+    "tone_practice": [
+      "qù",
+      "lái",
+      "huí",
+      "zuò",
+      "kàn",
+      "xiě"
+    ]
+  },
+  "games": [
+    "flashcard",
+    "matching",
+    "word_shake",
+    "sentence_builder"
+  ],
+  "quiz": [
+    {
+      "question": "What does 去 mean?",
+      "type": "multiple_choice",
+      "correct": "To go",
+      "options": [
+        "To go",
+        "To come",
+        "To return",
+        "To do"
+      ]
+    },
+    {
+      "question": "How do you ask 'Where are you going?'",
+      "type": "multiple_choice",
+      "correct": "你去哪儿？",
+      "options": [
+        "你去哪儿？",
+        "你在哪儿？",
+        "你来哪儿？",
+        "你是哪儿？"
+      ]
+    },
+    {
+      "question": "What does 看 mean with 电视?",
+      "type": "multiple_choice",
+      "correct": "To watch",
+      "options": [
+        "To watch",
+        "To listen",
+        "To buy",
+        "To have"
+      ]
+    },
+    {
+      "question": "How do you say 'to write' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "写",
+      "options": [
+        "读",
+        "看",
+        "写",
+        "做"
+      ]
+    },
+    {
+      "question": "What does 做 mean?",
+      "type": "multiple_choice",
+      "correct": "To do / To make",
+      "options": [
+        "To do / To make",
+        "To go",
+        "To come",
+        "To see"
+      ]
+    },
+    {
+      "question": "What does 在 + verb indicate?",
+      "type": "multiple_choice",
+      "correct": "Ongoing action",
+      "options": [
+        "Ongoing action",
+        "Past action",
+        "Future action",
+        "Location"
+      ]
+    },
+    {
+      "question": "How do you say 'movie' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "电影",
+      "options": [
+        "电视",
+        "电影",
+        "电话",
+        "电脑"
+      ]
+    },
+    {
+      "question": "What does 来 mean?",
+      "type": "multiple_choice",
+      "correct": "To come",
+      "options": [
+        "To go",
+        "To come",
+        "To return",
+        "To leave"
+      ]
+    },
+    {
+      "question": "How do you say 'I am reading'?",
+      "type": "multiple_choice",
+      "correct": "我在看书。",
+      "options": [
+        "我看书。",
+        "我在看书。",
+        "我有书。",
+        "我是书。"
+      ]
+    }
+  ]
+}

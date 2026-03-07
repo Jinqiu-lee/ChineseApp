@@ -1,0 +1,422 @@
+{
+  "lesson": 7,
+  "topic": "Locations and Directions",
+  "topic_chinese": "在哪儿？",
+  "age_group": "Adults and 10+",
+  "objectives": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "vocabulary": [
+    {
+      "id": "hsk1_l7_01",
+      "chinese": "在",
+      "pinyin": "zài",
+      "tones": [
+        4
+      ],
+      "english": "At / In / On (location)",
+      "part_of_speech": "preposition"
+    },
+    {
+      "id": "hsk1_l7_02",
+      "chinese": "哪儿",
+      "pinyin": "nǎr",
+      "tones": [
+        3
+      ],
+      "english": "Where",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l7_03",
+      "chinese": "这儿",
+      "pinyin": "zhèr",
+      "tones": [
+        4
+      ],
+      "english": "Here",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l7_04",
+      "chinese": "那儿",
+      "pinyin": "nàr",
+      "tones": [
+        4
+      ],
+      "english": "There",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l7_05",
+      "chinese": "上",
+      "pinyin": "shàng",
+      "tones": [
+        4
+      ],
+      "english": "On / Above / Up",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l7_06",
+      "chinese": "下",
+      "pinyin": "xià",
+      "tones": [
+        4
+      ],
+      "english": "Below / Under / Down",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l7_07",
+      "chinese": "里",
+      "pinyin": "lǐ",
+      "tones": [
+        3
+      ],
+      "english": "Inside / In",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l7_08",
+      "chinese": "前",
+      "pinyin": "qián",
+      "tones": [
+        2
+      ],
+      "english": "Front / Before",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l7_09",
+      "chinese": "后",
+      "pinyin": "hòu",
+      "tones": [
+        4
+      ],
+      "english": "Behind / Back / After",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l7_10",
+      "chinese": "学校",
+      "pinyin": "xué xiào",
+      "tones": [
+        2,
+        4
+      ],
+      "english": "School",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l7_11",
+      "chinese": "医院",
+      "pinyin": "yī yuàn",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "Hospital",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l7_12",
+      "chinese": "商店",
+      "pinyin": "shāng diàn",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "Shop / Store",
+      "part_of_speech": "noun"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "你在哪儿？",
+      "pinyin": "Nǐ zài nǎr?",
+      "english": "Where are you?"
+    },
+    {
+      "chinese": "我在学校。",
+      "pinyin": "Wǒ zài xué xiào.",
+      "english": "I'm at school."
+    },
+    {
+      "chinese": "书在桌子上。",
+      "pinyin": "Shū zài zhuō zi shàng.",
+      "english": "The book is on the table."
+    },
+    {
+      "chinese": "医院在前面。",
+      "pinyin": "Yī yuàn zài qián miàn.",
+      "english": "The hospital is in front."
+    },
+    {
+      "chinese": "他在哪儿工作？",
+      "pinyin": "Tā zài nǎr gōng zuò?",
+      "english": "Where does he work?"
+    },
+    {
+      "chinese": "商店在后面。",
+      "pinyin": "Shāng diàn zài hòu miàn.",
+      "english": "The store is in the back."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "Using 在 (zài) to indicate location",
+      "explanation": "在 (zài) is a preposition meaning 'at/in/on' for locations. It shows where something or someone is. Formula: Subject + 在 + Place. Can also mean 'to be located at'.",
+      "examples": [
+        {
+          "chinese": "我在家。",
+          "pinyin": "Wǒ zài jiā.",
+          "english": "I'm at home."
+        },
+        {
+          "chinese": "猫在桌子下。",
+          "pinyin": "Māo zài zhuō zi xià.",
+          "english": "The cat is under the table."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Say 'I'm at school' in Chinese",
+          "answer": "我在学校。",
+          "type": "production"
+        },
+        {
+          "question": "Fill in: 他___医院。(He is at the hospital)",
+          "answer": "在",
+          "type": "fill_in_blank"
+        },
+        {
+          "question": "Translate: The book is in the room",
+          "answer": "书在房间里。",
+          "type": "translation"
+        },
+        {
+          "question": "What preposition shows location in Chinese?",
+          "answer": "在",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Asking 'where' with 哪儿 (nǎr)",
+      "explanation": "哪儿 (nǎr) means 'where' and is used to ask about locations. It replaces the place in a 在 sentence. Formula: Subject + 在 + 哪儿？ Some regions use 哪里 instead of 哪儿.",
+      "examples": [
+        {
+          "chinese": "你在哪儿？",
+          "pinyin": "Nǐ zài nǎr?",
+          "english": "Where are you?"
+        },
+        {
+          "chinese": "学校在哪儿？",
+          "pinyin": "Xué xiào zài nǎr?",
+          "english": "Where is the school?"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Ask 'Where is he?' in Chinese",
+          "answer": "他在哪儿？",
+          "type": "production"
+        },
+        {
+          "question": "Ask 'Where is the hospital?'",
+          "answer": "医院在哪儿？",
+          "type": "production"
+        },
+        {
+          "question": "What word means 'where' in Chinese?",
+          "answer": "哪儿",
+          "type": "concept"
+        },
+        {
+          "question": "Turn into a question: 书在桌子上。",
+          "answer": "书在哪儿？",
+          "type": "transformation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Position words: 上, 下, 里, 前, 后",
+      "explanation": "These are position words (localizers) that describe relative locations. They usually need 面 or 边 after them for common places. Formula: Noun + Position word + (面/边). 上=on/above, 下=below, 里=inside, 前=front, 后=back.",
+      "examples": [
+        {
+          "chinese": "桌子上",
+          "pinyin": "zhuō zi shàng",
+          "english": "On the table"
+        },
+        {
+          "chinese": "房间里",
+          "pinyin": "fáng jiān lǐ",
+          "english": "In the room"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Say 'on the chair' in Chinese",
+          "answer": "椅子上",
+          "type": "production"
+        },
+        {
+          "question": "What does 里 mean?",
+          "answer": "inside/in",
+          "type": "concept"
+        },
+        {
+          "question": "Translate: Under the table",
+          "answer": "桌子下",
+          "type": "translation"
+        },
+        {
+          "question": "Say 'in front of the school'",
+          "answer": "学校前面",
+          "type": "production"
+        }
+      ]
+    }
+  ],
+  "pinyin_focus": {
+    "topic": "Retroflex sounds zh, ch, sh, r",
+    "initials_focus": [
+      "zh",
+      "ch",
+      "sh",
+      "r",
+      "z",
+      "c",
+      "s"
+    ],
+    "finals_focus": [
+      "e",
+      "i",
+      "a",
+      "ang",
+      "ong"
+    ],
+    "tone_practice": [
+      "zài",
+      "nǎr",
+      "zhèr",
+      "nàr",
+      "shàng",
+      "xià"
+    ]
+  },
+  "games": [
+    "flashcard",
+    "matching",
+    "word_shake",
+    "sentence_builder"
+  ],
+  "quiz": [
+    {
+      "question": "What does 在 mean?",
+      "type": "multiple_choice",
+      "correct": "At / In / On (location)",
+      "options": [
+        "At / In / On (location)",
+        "To have",
+        "To be",
+        "To go"
+      ]
+    },
+    {
+      "question": "How do you ask 'Where are you?' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "你在哪儿？",
+      "options": [
+        "你在哪儿？",
+        "你是哪儿？",
+        "你去哪儿？",
+        "你有哪儿？"
+      ]
+    },
+    {
+      "question": "What does 这儿 mean?",
+      "type": "multiple_choice",
+      "correct": "Here",
+      "options": [
+        "Here",
+        "There",
+        "Where",
+        "Everywhere"
+      ]
+    },
+    {
+      "question": "What does 上 mean?",
+      "type": "multiple_choice",
+      "correct": "On / Above",
+      "options": [
+        "On / Above",
+        "Below",
+        "Inside",
+        "Outside"
+      ]
+    },
+    {
+      "question": "How do you say 'school' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "学校",
+      "options": [
+        "学校",
+        "医院",
+        "商店",
+        "家"
+      ]
+    },
+    {
+      "question": "What does 里 mean?",
+      "type": "multiple_choice",
+      "correct": "Inside",
+      "options": [
+        "Inside",
+        "Outside",
+        "Above",
+        "Below"
+      ]
+    },
+    {
+      "question": "How do you say 'hospital' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "医院",
+      "options": [
+        "学校",
+        "医院",
+        "商店",
+        "家"
+      ]
+    },
+    {
+      "question": "What does 前 mean?",
+      "type": "multiple_choice",
+      "correct": "Front",
+      "options": [
+        "Front",
+        "Back",
+        "Left",
+        "Right"
+      ]
+    },
+    {
+      "question": "How do you say 'I'm at the store'?",
+      "type": "multiple_choice",
+      "correct": "我在商店。",
+      "options": [
+        "我在商店。",
+        "我是商店。",
+        "我有商店。",
+        "我去商店。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "lesson": 6,
+  "topic": "Shopping and Money",
+  "topic_chinese": "多少钱？",
+  "age_group": "Adults and 10+",
+  "objectives": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "vocabulary": [
+    {
+      "id": "hsk1_l6_01",
+      "chinese": "买",
+      "pinyin": "mǎi",
+      "tones": [
+        3
+      ],
+      "english": "To buy",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l6_02",
+      "chinese": "钱",
+      "pinyin": "qián",
+      "tones": [
+        2
+      ],
+      "english": "Money",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l6_03",
+      "chinese": "少",
+      "pinyin": "shǎo",
+      "tones": [
+        3
+      ],
+      "english": "Few / Little",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk1_l6_04",
+      "chinese": "多少",
+      "pinyin": "duō shǎo",
+      "tones": [
+        1,
+        3
+      ],
+      "english": "How much / How many",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l6_05",
+      "chinese": "块",
+      "pinyin": "kuài",
+      "tones": [
+        4
+      ],
+      "english": "Yuan (RMB) / Piece",
+      "part_of_speech": "measure_word"
+    },
+    {
+      "id": "hsk1_l6_06",
+      "chinese": "本",
+      "pinyin": "běn",
+      "tones": [
+        3
+      ],
+      "english": "Measure word for books",
+      "part_of_speech": "measure_word"
+    },
+    {
+      "id": "hsk1_l6_07",
+      "chinese": "书",
+      "pinyin": "shū",
+      "tones": [
+        1
+      ],
+      "english": "Book",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l6_08",
+      "chinese": "衣服",
+      "pinyin": "yī fu",
+      "tones": [
+        1,
+        0
+      ],
+      "english": "Clothes",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l6_09",
+      "chinese": "东西",
+      "pinyin": "dōng xi",
+      "tones": [
+        1,
+        0
+      ],
+      "english": "Thing / Stuff",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l6_10",
+      "chinese": "贵",
+      "pinyin": "guì",
+      "tones": [
+        4
+      ],
+      "english": "Expensive",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk1_l6_11",
+      "chinese": "便宜",
+      "pinyin": "pián yi",
+      "tones": [
+        2,
+        0
+      ],
+      "english": "Cheap / Inexpensive",
+      "part_of_speech": "adjective"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "这个多少钱？",
+      "pinyin": "Zhè ge duō shǎo qián?",
+      "english": "How much is this?"
+    },
+    {
+      "chinese": "五十块。",
+      "pinyin": "Wǔ shí kuài.",
+      "english": "50 yuan."
+    },
+    {
+      "chinese": "太贵了！",
+      "pinyin": "Tài guì le!",
+      "english": "Too expensive!"
+    },
+    {
+      "chinese": "我想买书。",
+      "pinyin": "Wǒ xiǎng mǎi shū.",
+      "english": "I want to buy books."
+    },
+    {
+      "chinese": "这本书多少钱？",
+      "pinyin": "Zhè běn shū duō shǎo qián?",
+      "english": "How much is this book?"
+    },
+    {
+      "chinese": "这件衣服很便宜。",
+      "pinyin": "Zhè jiàn yī fu hěn pián yi.",
+      "english": "This piece of clothing is very cheap."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "Asking price with 多少钱 (duō shǎo qián)",
+      "explanation": "多少钱 means 'how much money' and is used to ask prices. Formula: This/That + (Measure word) + Item + 多少钱？ Always put 多少钱 at the end of the question.",
+      "examples": [
+        {
+          "chinese": "这个苹果多少钱？",
+          "pinyin": "Zhè ge píng guǒ duō shǎo qián?",
+          "english": "How much is this apple?"
+        },
+        {
+          "chinese": "那本书多少钱？",
+          "pinyin": "Nà běn shū duō shǎo qián?",
+          "english": "How much is that book?"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Ask 'How much is this?' in Chinese",
+          "answer": "这个多少钱？",
+          "type": "production"
+        },
+        {
+          "question": "Ask the price of 'that coffee'",
+          "answer": "那杯咖啡多少钱？",
+          "type": "production"
+        },
+        {
+          "question": "Where does 多少钱 go in a price question?",
+          "answer": "at the end",
+          "type": "concept"
+        },
+        {
+          "question": "Translate: How much is this clothing?",
+          "answer": "这件衣服多少钱？",
+          "type": "translation"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Currency: 块 (kuài) for yuan",
+      "explanation": "块 (kuài) is the colloquial word for 元 (yuán), the Chinese currency unit (RMB). It's like saying 'bucks' instead of 'dollars'. Formula: Number + 块 (+ 钱).",
+      "examples": [
+        {
+          "chinese": "三十块",
+          "pinyin": "sān shí kuài",
+          "english": "30 yuan"
+        },
+        {
+          "chinese": "一百块钱",
+          "pinyin": "yī bǎi kuài qián",
+          "english": "100 yuan"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Say '25 yuan' in Chinese",
+          "answer": "二十五块",
+          "type": "production"
+        },
+        {
+          "question": "What does 块 mean in pricing?",
+          "answer": "yuan / RMB",
+          "type": "concept"
+        },
+        {
+          "question": "Say '50 yuan' in Chinese",
+          "answer": "五十块",
+          "type": "production"
+        },
+        {
+          "question": "Is 块 formal or colloquial?",
+          "answer": "colloquial",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Measure word 本 (běn) for books",
+      "explanation": "本 (běn) is the measure word specifically for books, magazines, and bound printed materials. Formula: Number + 本 + Book/Magazine. Different items need different measure words.",
+      "examples": [
+        {
+          "chinese": "一本书",
+          "pinyin": "yī běn shū",
+          "english": "One book"
+        },
+        {
+          "chinese": "三本杂志",
+          "pinyin": "sān běn zá zhì",
+          "english": "Three magazines"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Say 'two books' in Chinese",
+          "answer": "两本书",
+          "type": "production"
+        },
+        {
+          "question": "What measure word is used for books?",
+          "answer": "本",
+          "type": "concept"
+        },
+        {
+          "question": "Fill in: 五___书 (five books)",
+          "answer": "本",
+          "type": "fill_in_blank"
+        },
+        {
+          "question": "Translate: This book",
+          "answer": "这本书",
+          "type": "translation"
+        }
+      ]
+    }
+  ],
+  "pinyin_focus": {
+    "topic": "Final sounds -ai, -ei, -ui, -ao, -ou",
+    "initials_focus": [
+      "m",
+      "d",
+      "sh",
+      "g",
+      "k",
+      "b"
+    ],
+    "finals_focus": [
+      "ai",
+      "ei",
+      "ui",
+      "ao",
+      "ou"
+    ],
+    "tone_practice": [
+      "mǎi",
+      "qián",
+      "shǎo",
+      "kuài",
+      "guì"
+    ]
+  },
+  "games": [
+    "flashcard",
+    "matching",
+    "word_shake",
+    "sentence_builder"
+  ],
+  "quiz": [
+    {
+      "question": "What does 买 mean?",
+      "type": "multiple_choice",
+      "correct": "To buy",
+      "options": [
+        "To buy",
+        "To sell",
+        "To have",
+        "To want"
+      ]
+    },
+    {
+      "question": "How do you ask 'How much?' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "多少钱？",
+      "options": [
+        "多少钱？",
+        "几个？",
+        "什么？",
+        "多大？"
+      ]
+    },
+    {
+      "question": "What does 块 mean?",
+      "type": "multiple_choice",
+      "correct": "Yuan (Chinese currency)",
+      "options": [
+        "Yuan (Chinese currency)",
+        "Dollar",
+        "Book",
+        "Measure word"
+      ]
+    },
+    {
+      "question": "What is the measure word for books?",
+      "type": "multiple_choice",
+      "correct": "本",
+      "options": [
+        "个",
+        "本",
+        "杯",
+        "件"
+      ]
+    },
+    {
+      "question": "How do you say 'expensive' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "贵",
+      "options": [
+        "贵",
+        "便宜",
+        "多",
+        "少"
+      ]
+    },
+    {
+      "question": "What does 便宜 mean?",
+      "type": "multiple_choice",
+      "correct": "Cheap",
+      "options": [
+        "Expensive",
+        "Cheap",
+        "Big",
+        "Small"
+      ]
+    },
+    {
+      "question": "How do you say 'book' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "书",
+      "options": [
+        "书",
+        "本",
+        "钱",
+        "东西"
+      ]
+    },
+    {
+      "question": "What does 衣服 mean?",
+      "type": "multiple_choice",
+      "correct": "Clothes",
+      "options": [
+        "Clothes",
+        "Book",
+        "Money",
+        "Food"
+      ]
+    },
+    {
+      "question": "How do you say 'I want to buy clothes'?",
+      "type": "multiple_choice",
+      "correct": "我想买衣服。",
+      "options": [
+        "我想买衣服。",
+        "我买衣服。",
+        "我有衣服。",
+        "我是衣服。"
+      ]
+    }
+  ]
+}

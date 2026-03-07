@@ -1,0 +1,49 @@
+{
+  "level": "YCT2",
+  "lesson": 2,
+  "topic": "School and Stationery",
+  "topic_chinese": "这是什么？",
+  "age_group": "7-8",
+  "objectives": ["listening", "speaking", "pinyin_spelling", "character_recognition"],
+  "key_characters": ["书", "本", "笔", "纸", "老师"],
+  "vocabulary": [
+    { "id": "yct2_l2_01", "chinese": "书", "pinyin": "shū", "tones": [1], "english": "Book", "part_of_speech": "noun" },
+    { "id": "yct2_l2_02", "chinese": "本子", "pinyin": "běn zi", "tones": [3, 0], "english": "Notebook", "part_of_speech": "noun" },
+    { "id": "yct2_l2_03", "chinese": "铅笔", "pinyin": "qiān bǐ", "tones": [1, 3], "english": "Pencil", "part_of_speech": "noun" },
+    { "id": "yct2_l2_04", "chinese": "钢笔", "pinyin": "gāng bǐ", "tones": [1, 3], "english": "Pen (fountain)", "part_of_speech": "noun" },
+    { "id": "yct2_l2_05", "chinese": "尺子", "pinyin": "chǐ zi", "tones": [3, 0], "english": "Ruler", "part_of_speech": "noun" },
+    { "id": "yct2_l2_06", "chinese": "橡皮", "pinyin": "xiàng pí", "tones": [4, 2], "english": "Eraser", "part_of_speech": "noun" },
+    { "id": "yct2_l2_07", "chinese": "这是", "pinyin": "zhè shì", "tones": [4, 4], "english": "This is", "part_of_speech": "phrase" },
+    { "id": "yct2_l2_08", "chinese": "一本", "pinyin": "yī běn", "tones": [1, 3], "english": "One (book) — measure word", "part_of_speech": "measure_phrase" },
+    { "id": "yct2_l2_09", "chinese": "一支", "pinyin": "yī zhī", "tones": [1, 1], "english": "One (pen/pencil) — measure word", "part_of_speech": "measure_phrase" },
+    { "id": "yct2_l2_10", "chinese": "多少", "pinyin": "duō shǎo", "tones": [1, 3], "english": "How many / How much", "part_of_speech": "question_word" }
+  ],
+  "key_sentences": [
+    { "chinese": "这是什么？", "pinyin": "Zhè shì shénme?", "english": "What is this?" },
+    { "chinese": "这是一本书。", "pinyin": "Zhè shì yī běn shū.", "english": "This is a book." },
+    { "chinese": "你有几支铅笔？", "pinyin": "Nǐ yǒu jǐ zhī qiānbǐ?", "english": "How many pencils do you have?" },
+    { "chinese": "我有两支铅笔。", "pinyin": "Wǒ yǒu liǎng zhī qiānbǐ.", "english": "I have two pencils." }
+  ],
+  "grammar_point": {
+    "title": "Measure words (量词 liàngcí)",
+    "explanation": "In Chinese, you cannot say 'one book' directly. You need a measure word between the number and noun. 本 (běn) is used for books, 支 (zhī) for pens and pencils, 个 (gè) is the general measure word. Pattern: number + measure word + noun.",
+    "examples": [
+      { "chinese": "一个苹果", "pinyin": "yī gè píngguǒ", "english": "one apple" },
+      { "chinese": "两本书", "pinyin": "liǎng běn shū", "english": "two books" }
+    ]
+  },
+  "pinyin_spelling": {
+    "topic": "Spelling practice: qian, gang, xiang, chi",
+    "words_to_spell": [
+      { "pinyin": "qiān bǐ", "chinese": "铅笔", "english": "pencil" },
+      { "pinyin": "gāng bǐ", "chinese": "钢笔", "english": "fountain pen" },
+      { "pinyin": "xiàng pí", "chinese": "橡皮", "english": "eraser" }
+    ]
+  },
+  "games": ["flashcard", "matching"],
+  "quiz": [
+    { "question": "What measure word is used for books?", "type": "multiple_choice", "correct": "本", "options": ["本", "支", "个", "只"] },
+    { "question": "How do you say 'eraser'?", "type": "multiple_choice", "correct": "橡皮", "options": ["橡皮", "铅笔", "尺子", "本子"] },
+    { "question": "What does 多少 (duōshǎo) mean?", "type": "multiple_choice", "correct": "How many / How much", "options": ["How many / How much", "What", "Where", "When"] }
+  ]
+}

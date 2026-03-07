@@ -1,0 +1,202 @@
+import { useRef, useEffect } from "react";
+import {
+  Modal, View, Text, TouchableOpacity,
+  StyleSheet, Animated, ScrollView, Pressable, SafeAreaView,
+} from "react-native";
+
+const ALL_LEVELS = [
+  { id: "yct1", label: "YCT 1", badge: "🌱", color: "#FF6B6B", desc: "Complete beginner · Age 5–7" },
+  { id: "yct2", label: "YCT 2", badge: "🌿", color: "#FF9F43", desc: "Elementary · Age 7–8" },
+  { id: "yct3", label: "YCT 3", badge: "🌳", color: "#54A0FF", desc: "Pre-intermediate · Age 8–12" },
+  { id: "yct4", label: "YCT 4", badge: "🌲", color: "#5F27CD", desc: "Intermediate · Age 10–12" },
+  { id: "hsk1", label: "HSK 1", badge: "⭐",     color: "#00D2D3", desc: "Beginner · Adult / 10+" },
+  { id: "hsk2", label: "HSK 2", badge: "⭐⭐",   color: "#FF6B6B", desc: "Elementary · Adult" },
+  { id: "hsk3", label: "HSK 3", badge: "⭐⭐⭐", color: "#1DD1A1", desc: "Intermediate · Adult" },
+];
+
+// Given a level id, return the one step down
+export function getDowngradedLevel(currentLevelId) {
+  const idx = ALL_LEVELS.findIndex((l) => l.id === currentLevelId);
+  if (idx <= 0) return null;
+  return ALL_LEVELS[idx - 1];
+}
+
+// Given a level id, return the one step up
+export function getUpgradedLevel(currentLevelId) {
+  const idx = ALL_LEVELS.findIndex((l) => l.id === currentLevelId);
+  if (idx < 0 || idx >= ALL_LEVELS.length - 1) return null;
+  return ALL_LEVELS[idx + 1];
+}
+
+export default function LevelChangeModal({
+  visible,
+  onClose,
+  onConfirm,           // (newLevelId) => void
+  currentLevelId,      // current recommended level
+  mode = "manual",     // "manual" | "suggest"
+  poorScorePct = null, // e.g. 0.38 — shown in suggest mode
+}) {
+  const slideAnim = useRef(new Animated.Value(400)).current;
+  const fadeAnim  = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    if (visible) {
+      Animated.parallel([
+        Animated.timing(fadeAnim,  { toValue: 1, duration: 250, useNativeDriver: true }),
+        Animated.spring(slideAnim, { toValue: 0, tension: 65, friction: 11, useNativeDriver: true }),
+      ]).start();
+    } else {
+      fadeAnim.setValue(0);
+      slideAnim.setValue(400);
+    }
+  }, [visible]);
+
+  const currentLevel = ALL_LEVELS.find((l) => l.id === currentLevelId);
+  const suggestedDown = getDowngradedLevel(currentLevelId);
+
+  return (
+    <Modal visible={visible} transparent animationType="none" onRequestClose={onClose}>
+      <Animated.View style={[m.overlay, { opacity: fadeAnim }]}>
+        <Pressable style={m.backdrop} onPress={onClose} />
+
+        <Animated.View style={[m.sheet, { transform: [{ translateY: slideAnim }] }]}>
+          <SafeAreaView>
+            {/* Handle */}
+            <View style={m.handle} />
+
+            {/* ── Suggest mode header ── */}
+            {mode === "suggest" && (
+              <View style={m.suggestBanner}>
+                <Text style={m.suggestEmoji}>📉</Text>
+                <View style={m.suggestText}>
+                  <Text style={m.suggestTitle}>Lesson was tough!</Text>
+                  <Text style={m.suggestSub}>
+                    You got {Math.round((poorScorePct ?? 0) * 100)}% on this lesson.{"\n"}
+                    It's totally okay to step down a level.
+                  </Text>
+                </View>
+              </View>
+            )}
+
+            {/* ── Manual mode header ── */}
+            {mode === "manual" && (
+              <View style={m.manualHeader}>
+                <Text style={m.manualTitle}>Change Your Level</Text>
+                <Text style={m.manualSub}>Pick any level below — you can always switch back</Text>
+              </View>
+            )}
+
+            {/* Current level */}
+            {currentLevel && (
+              <View style={m.currentRow}>
+                <Text style={m.currentLabel}>Current level:</Text>
+                <View style={[m.currentBadge, { backgroundColor: currentLevel.color }]}>
+                  <Text style={m.currentBadgeText}>{currentLevel.badge} {currentLevel.label}</Text>
+                </View>
+              </View>
+            )}
+
+            {/* ── Suggest mode: just show one step down ── */}
+            {mode === "suggest" && suggestedDown && (
+              <View style={m.suggestOptions}>
+                <TouchableOpacity
+                  style={[m.suggestBtn, { borderColor: suggestedDown.color }]}
+                  onPress={() => onConfirm(suggestedDown.id)}
+                  activeOpacity={0.8}
+                >
+                  <Text style={m.suggestBtnEmoji}>{suggestedDown.badge}</Text>
+                  <View style={m.suggestBtnInfo}>
+                    <Text style={[m.suggestBtnLabel, { color: suggestedDown.color }]}>
+                      Switch to {suggestedDown.label}
+                    </Text>
+                    <Text style={m.suggestBtnDesc}>{suggestedDown.desc}</Text>
+                  </View>
+                  <Text style={[m.suggestBtnArrow, { color: suggestedDown.color }]}>→</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity style={m.keepBtn} onPress={onClose} activeOpacity={0.7}>
+                  <Text style={m.keepBtnText}>No thanks, I'll keep trying 💪</Text>
+                </TouchableOpacity>
+              </View>
+            )}
+
+            {/* ── Manual mode: full list ── */}
+            {mode === "manual" && (
+              <ScrollView style={m.listScroll} showsVerticalScrollIndicator={false}>
+                {ALL_LEVELS.map((lvl) => {
+                  const isCurrent = lvl.id === currentLevelId;
+                  return (
+                    <TouchableOpacity
+                      key={lvl.id}
+                      style={[m.listItem, { borderColor: isCurrent ? lvl.color : "rgba(255,255,255,0.08)" }, isCurrent && m.listItemCurrent]}
+                      onPress={() => { if (!isCurrent) onConfirm(lvl.id); }}
+                      activeOpacity={isCurrent ? 1 : 0.75}
+                    >
+                      <Text style={m.listEmoji}>{lvl.badge}</Text>
+                      <View style={m.listInfo}>
+                        <Text style={[m.listLabel, { color: isCurrent ? lvl.color : "#fff" }]}>
+                          {lvl.label} {isCurrent ? "← current" : ""}
+                        </Text>
+                        <Text style={m.listDesc}>{lvl.desc}</Text>
+                      </View>
+                      {!isCurrent && <Text style={[m.listArrow, { color: lvl.color }]}>→</Text>}
+                      {isCurrent && <View style={[m.activeDot, { backgroundColor: lvl.color }]} />}
+                    </TouchableOpacity>
+                  );
+                })}
+                <View style={{ height: 24 }} />
+              </ScrollView>
+            )}
+          </SafeAreaView>
+        </Animated.View>
+      </Animated.View>
+    </Modal>
+  );
+}
+
+const m = StyleSheet.create({
+  overlay:       { flex: 1, justifyContent: "flex-end" },
+  backdrop:      { ...StyleSheet.absoluteFillObject, backgroundColor: "rgba(0,0,0,0.6)" },
+  sheet:         { backgroundColor: "#16213e", borderTopLeftRadius: 28, borderTopRightRadius: 28, paddingHorizontal: 20, paddingBottom: 8, maxHeight: "85%" },
+  handle:        { width: 40, height: 4, backgroundColor: "rgba(255,255,255,0.2)", borderRadius: 2, alignSelf: "center", marginTop: 12, marginBottom: 16 },
+
+  // Suggest mode
+  suggestBanner: { flexDirection: "row", alignItems: "flex-start", backgroundColor: "rgba(255,107,107,0.12)", borderRadius: 16, padding: 14, marginBottom: 16, gap: 12 },
+  suggestEmoji:  { fontSize: 32 },
+  suggestText:   { flex: 1 },
+  suggestTitle:  { fontSize: 17, fontWeight: "800", color: "#fff", marginBottom: 4 },
+  suggestSub:    { fontSize: 13, color: "#636e72", lineHeight: 20 },
+
+  // Manual mode
+  manualHeader:  { marginBottom: 16 },
+  manualTitle:   { fontSize: 20, fontWeight: "800", color: "#fff", marginBottom: 4 },
+  manualSub:     { fontSize: 13, color: "#636e72" },
+
+  // Current level row
+  currentRow:    { flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 16 },
+  currentLabel:  { fontSize: 13, color: "#636e72" },
+  currentBadge:  { paddingHorizontal: 10, paddingVertical: 4, borderRadius: 10 },
+  currentBadgeText: { fontSize: 13, fontWeight: "800", color: "#fff" },
+
+  // Suggest options
+  suggestOptions:{ gap: 10, marginBottom: 8 },
+  suggestBtn:    { flexDirection: "row", alignItems: "center", backgroundColor: "rgba(255,255,255,0.05)", borderRadius: 16, padding: 16, borderWidth: 2, gap: 12 },
+  suggestBtnEmoji: { fontSize: 28 },
+  suggestBtnInfo:  { flex: 1 },
+  suggestBtnLabel: { fontSize: 17, fontWeight: "800" },
+  suggestBtnDesc:  { fontSize: 12, color: "#636e72", marginTop: 2 },
+  suggestBtnArrow: { fontSize: 20, fontWeight: "700" },
+  keepBtn:       { padding: 16, alignItems: "center" },
+  keepBtnText:   { fontSize: 14, color: "#636e72", fontWeight: "600" },
+
+  // Manual list
+  listScroll:    { maxHeight: 400 },
+  listItem:      { flexDirection: "row", alignItems: "center", backgroundColor: "rgba(255,255,255,0.04)", borderRadius: 14, padding: 14, marginBottom: 8, borderWidth: 1.5, gap: 12 },
+  listItemCurrent: { backgroundColor: "rgba(255,255,255,0.08)" },
+  listEmoji:     { fontSize: 24, width: 32, textAlign: "center" },
+  listInfo:      { flex: 1 },
+  listLabel:     { fontSize: 15, fontWeight: "700" },
+  listDesc:      { fontSize: 11, color: "#636e72", marginTop: 2 },
+  listArrow:     { fontSize: 18, fontWeight: "700" },
+  activeDot:     { width: 8, height: 8, borderRadius: 4 },
+});

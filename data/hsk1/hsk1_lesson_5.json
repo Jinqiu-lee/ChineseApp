@@ -1,0 +1,418 @@
+{
+  "lesson": 5,
+  "topic": "Food and Drinks",
+  "topic_chinese": "吃什么？",
+  "age_group": "Adults and 10+",
+  "objectives": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "vocabulary": [
+    {
+      "id": "hsk1_l5_01",
+      "chinese": "吃",
+      "pinyin": "chī",
+      "tones": [
+        1
+      ],
+      "english": "To eat",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l5_02",
+      "chinese": "喝",
+      "pinyin": "hē",
+      "tones": [
+        1
+      ],
+      "english": "To drink",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l5_03",
+      "chinese": "米饭",
+      "pinyin": "mǐ fàn",
+      "tones": [
+        3,
+        4
+      ],
+      "english": "Rice",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l5_04",
+      "chinese": "面条",
+      "pinyin": "miàn tiáo",
+      "tones": [
+        4,
+        2
+      ],
+      "english": "Noodles",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l5_05",
+      "chinese": "水",
+      "pinyin": "shuǐ",
+      "tones": [
+        3
+      ],
+      "english": "Water",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l5_06",
+      "chinese": "茶",
+      "pinyin": "chá",
+      "tones": [
+        2
+      ],
+      "english": "Tea",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l5_07",
+      "chinese": "牛奶",
+      "pinyin": "niú nǎi",
+      "tones": [
+        2,
+        3
+      ],
+      "english": "Milk",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l5_08",
+      "chinese": "咖啡",
+      "pinyin": "kā fēi",
+      "tones": [
+        1,
+        1
+      ],
+      "english": "Coffee",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l5_09",
+      "chinese": "菜",
+      "pinyin": "cài",
+      "tones": [
+        4
+      ],
+      "english": "Dish / Vegetable",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l5_10",
+      "chinese": "苹果",
+      "pinyin": "píng guǒ",
+      "tones": [
+        2,
+        3
+      ],
+      "english": "Apple",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l5_11",
+      "chinese": "想",
+      "pinyin": "xiǎng",
+      "tones": [
+        3
+      ],
+      "english": "To want / To think",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l5_12",
+      "chinese": "杯",
+      "pinyin": "bēi",
+      "tones": [
+        1
+      ],
+      "english": "Cup / Glass (measure word)",
+      "part_of_speech": "measure_word"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "你吃什么？",
+      "pinyin": "Nǐ chī shén me?",
+      "english": "What do you eat? / What would you like to eat?"
+    },
+    {
+      "chinese": "我吃米饭。",
+      "pinyin": "Wǒ chī mǐ fàn.",
+      "english": "I eat rice."
+    },
+    {
+      "chinese": "你喝茶吗？",
+      "pinyin": "Nǐ hē chá ma?",
+      "english": "Do you drink tea?"
+    },
+    {
+      "chinese": "我想喝水。",
+      "pinyin": "Wǒ xiǎng hē shuǐ.",
+      "english": "I want to drink water."
+    },
+    {
+      "chinese": "请喝茶。",
+      "pinyin": "Qǐng hē chá.",
+      "english": "Please have some tea."
+    },
+    {
+      "chinese": "一杯咖啡",
+      "pinyin": "Yī bēi kā fēi",
+      "english": "A cup of coffee"
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "Using 想 (xiǎng) - To want / Would like",
+      "explanation": "想 (xiǎng) expresses desire or intention. It's followed directly by a verb (no 'to'). Formula: Subject + 想 + Verb + Object. 想 is softer and more polite than 要.",
+      "examples": [
+        {
+          "chinese": "我想吃面条。",
+          "pinyin": "Wǒ xiǎng chī miàn tiáo.",
+          "english": "I want to eat noodles."
+        },
+        {
+          "chinese": "她想喝咖啡。",
+          "pinyin": "Tā xiǎng hē kā fēi.",
+          "english": "She wants to drink coffee."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Say 'I want to eat rice' in Chinese",
+          "answer": "我想吃米饭。",
+          "type": "production"
+        },
+        {
+          "question": "Fill in: 他___喝茶。(He wants to drink tea)",
+          "answer": "想",
+          "type": "fill_in_blank"
+        },
+        {
+          "question": "Translate: Do you want to eat apples?",
+          "answer": "你想吃苹果吗？",
+          "type": "translation"
+        },
+        {
+          "question": "What comes after 想 in a sentence?",
+          "answer": "verb (action word)",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Measure word 杯 (bēi) for beverages",
+      "explanation": "杯 (bēi) means 'cup' or 'glass' and is used as a measure word for drinks. Formula: Number + 杯 + Beverage. It's similar to saying 'a cup of' in English.",
+      "examples": [
+        {
+          "chinese": "两杯茶",
+          "pinyin": "liǎng bēi chá",
+          "english": "Two cups of tea"
+        },
+        {
+          "chinese": "一杯水",
+          "pinyin": "yī bēi shuǐ",
+          "english": "A glass of water"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Say 'three cups of coffee' in Chinese",
+          "answer": "三杯咖啡",
+          "type": "production"
+        },
+        {
+          "question": "Fill in: 一___牛奶 (one glass of milk)",
+          "answer": "杯",
+          "type": "fill_in_blank"
+        },
+        {
+          "question": "What measure word is used for beverages?",
+          "answer": "杯",
+          "type": "concept"
+        },
+        {
+          "question": "Translate: Two glasses of water",
+          "answer": "两杯水",
+          "type": "translation"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Asking 'what' with 什么 (shén me)",
+      "explanation": "什么 (shén me) means 'what' and is used to ask questions. It replaces the thing you're asking about in the sentence. Formula: Subject + Verb + 什么？ Position matters!",
+      "examples": [
+        {
+          "chinese": "你吃什么？",
+          "pinyin": "Nǐ chī shén me?",
+          "english": "What do you eat?"
+        },
+        {
+          "chinese": "这是什么？",
+          "pinyin": "Zhè shì shén me?",
+          "english": "What is this?"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Ask 'What do you drink?' in Chinese",
+          "answer": "你喝什么？",
+          "type": "production"
+        },
+        {
+          "question": "Ask 'What does she want?' using 想",
+          "answer": "她想什么？",
+          "type": "production"
+        },
+        {
+          "question": "Where does 什么 go in 'What is your name?'",
+          "answer": "你叫什么名字？",
+          "type": "production"
+        }
+      ]
+    }
+  ],
+  "pinyin_focus": {
+    "topic": "Sounds ch, sh, zh and c, s, z distinction",
+    "initials_focus": [
+      "ch",
+      "sh",
+      "zh",
+      "c",
+      "s",
+      "z",
+      "h"
+    ],
+    "finals_focus": [
+      "ai",
+      "ei",
+      "ao",
+      "ou",
+      "i"
+    ],
+    "tone_practice": [
+      "chī",
+      "hē",
+      "chá",
+      "cài",
+      "shuǐ"
+    ]
+  },
+  "games": [
+    "flashcard",
+    "matching",
+    "word_shake",
+    "sentence_builder"
+  ],
+  "quiz": [
+    {
+      "question": "What does 吃 mean?",
+      "type": "multiple_choice",
+      "correct": "To eat",
+      "options": [
+        "To eat",
+        "To drink",
+        "To want",
+        "To have"
+      ]
+    },
+    {
+      "question": "How do you say 'water' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "水",
+      "options": [
+        "茶",
+        "水",
+        "牛奶",
+        "咖啡"
+      ]
+    },
+    {
+      "question": "What does 想 mean?",
+      "type": "multiple_choice",
+      "correct": "To want",
+      "options": [
+        "To want",
+        "To have",
+        "To eat",
+        "To drink"
+      ]
+    },
+    {
+      "question": "What is the measure word for drinks?",
+      "type": "multiple_choice",
+      "correct": "杯",
+      "options": [
+        "个",
+        "杯",
+        "本",
+        "口"
+      ]
+    },
+    {
+      "question": "How do you say 'coffee' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "咖啡",
+      "options": [
+        "咖啡",
+        "茶",
+        "牛奶",
+        "水"
+      ]
+    },
+    {
+      "question": "What does 米饭 mean?",
+      "type": "multiple_choice",
+      "correct": "Rice",
+      "options": [
+        "Rice",
+        "Noodles",
+        "Bread",
+        "Vegetables"
+      ]
+    },
+    {
+      "question": "How do you ask 'What do you eat?'",
+      "type": "multiple_choice",
+      "correct": "你吃什么？",
+      "options": [
+        "你吃什么？",
+        "你喝什么？",
+        "你想什么？",
+        "你有什么？"
+      ]
+    },
+    {
+      "question": "What does 喝 mean?",
+      "type": "multiple_choice",
+      "correct": "To drink",
+      "options": [
+        "To eat",
+        "To drink",
+        "To want",
+        "To think"
+      ]
+    },
+    {
+      "question": "How do you say 'I want to drink tea'?",
+      "type": "multiple_choice",
+      "correct": "我想喝茶。",
+      "options": [
+        "我想喝茶。",
+        "我喝茶。",
+        "我有茶。",
+        "我是茶。"
+      ]
+    }
+  ]
+}

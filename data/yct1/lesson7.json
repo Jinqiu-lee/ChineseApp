@@ -1,0 +1,48 @@
+{
+  "level": "YCT1",
+  "lesson": 7,
+  "topic": "Animals and Possessives",
+  "topic_chinese": "这是谁的狗？",
+  "age_group": "5-7",
+  "objectives": ["listening", "speaking", "pinyin_reading"],
+  "vocabulary": [
+    { "id": "yct1_l7_01", "chinese": "狗", "pinyin": "gǒu", "tones": [3], "english": "Dog", "part_of_speech": "noun" },
+    { "id": "yct1_l7_02", "chinese": "猫", "pinyin": "māo", "tones": [1], "english": "Cat", "part_of_speech": "noun" },
+    { "id": "yct1_l7_03", "chinese": "鸟", "pinyin": "niǎo", "tones": [3], "english": "Bird", "part_of_speech": "noun" },
+    { "id": "yct1_l7_04", "chinese": "鱼", "pinyin": "yú", "tones": [2], "english": "Fish", "part_of_speech": "noun" },
+    { "id": "yct1_l7_05", "chinese": "这", "pinyin": "zhè", "tones": [4], "english": "This", "part_of_speech": "pronoun" },
+    { "id": "yct1_l7_06", "chinese": "那", "pinyin": "nà", "tones": [4], "english": "That", "part_of_speech": "pronoun" },
+    { "id": "yct1_l7_07", "chinese": "的", "pinyin": "de", "tones": [0], "english": "Possessive particle (of / 's)", "part_of_speech": "particle" },
+    { "id": "yct1_l7_08", "chinese": "可爱", "pinyin": "kě ài", "tones": [3, 4], "english": "Cute / Adorable", "part_of_speech": "adjective" },
+    { "id": "yct1_l7_09", "chinese": "喜欢", "pinyin": "xǐ huān", "tones": [3, 1], "english": "To like", "part_of_speech": "verb" }
+  ],
+  "key_sentences": [
+    { "chinese": "这是谁的狗？", "pinyin": "Zhè shì shéi de gǒu?", "english": "Whose dog is this?" },
+    { "chinese": "这是我的猫。", "pinyin": "Zhè shì wǒ de māo.", "english": "This is my cat." },
+    { "chinese": "那只鸟真可爱！", "pinyin": "Nà zhī niǎo zhēn kě'ài!", "english": "That bird is really cute!" },
+    { "chinese": "我喜欢狗。", "pinyin": "Wǒ xǐhuān gǒu.", "english": "I like dogs." }
+  ],
+  "grammar_point": {
+    "title": "Possessives with 的 (de)",
+    "explanation": "的 (de) is placed between a pronoun/name and a noun to show possession, like 's in English. 我的 = my, 你的 = your, 他的 = his, 她的 = her. You can also use names: 小明的狗 = Xiao Ming's dog.",
+    "examples": [
+      { "chinese": "这是你的猫吗？", "pinyin": "Zhè shì nǐ de māo ma?", "english": "Is this your cat?" },
+      { "chinese": "那是他的鱼", "pinyin": "Nà shì tā de yú", "english": "That is his fish" }
+    ]
+  },
+  "pinyin_focus": {
+    "topic": "Finals: ou, ao, iao, iu",
+    "finals_covered": ["ou", "ao", "iao", "iu"],
+    "examples": [
+      { "final": "ou", "example": "gǒu (狗)", "english": "dog" },
+      { "final": "ao", "example": "māo (猫)", "english": "cat" },
+      { "final": "iao", "example": "niǎo (鸟)", "english": "bird" }
+    ]
+  },
+  "games": ["flashcard", "listening_match"],
+  "quiz": [
+    { "question": "What does 猫 (māo) mean?", "type": "multiple_choice", "correct": "Cat", "options": ["Cat", "Dog", "Bird", "Fish"] },
+    { "question": "What does 的 (de) do in Chinese?", "type": "multiple_choice", "correct": "Shows possession (like 's)", "options": ["Shows possession (like 's)", "Shows negation", "Shows a question", "Shows a number"] },
+    { "question": "How do you say 'I like' in Chinese?", "type": "multiple_choice", "correct": "我喜欢", "options": ["我喜欢", "我有", "我是", "我叫"] }
+  ]
+}

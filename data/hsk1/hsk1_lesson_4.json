@@ -1,0 +1,422 @@
+{
+  "lesson": 4,
+  "topic": "Family Members",
+  "topic_chinese": "我的家",
+  "age_group": "Adults and 10+",
+  "objectives": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "vocabulary": [
+    {
+      "id": "hsk1_l4_01",
+      "chinese": "家",
+      "pinyin": "jiā",
+      "tones": [
+        1
+      ],
+      "english": "Home / Family",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l4_02",
+      "chinese": "爸爸",
+      "pinyin": "bà ba",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "Father / Dad",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l4_03",
+      "chinese": "妈妈",
+      "pinyin": "mā ma",
+      "tones": [
+        1,
+        0
+      ],
+      "english": "Mother / Mom",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l4_04",
+      "chinese": "儿子",
+      "pinyin": "ér zi",
+      "tones": [
+        2,
+        0
+      ],
+      "english": "Son",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l4_05",
+      "chinese": "女儿",
+      "pinyin": "nǚ ér",
+      "tones": [
+        3,
+        2
+      ],
+      "english": "Daughter",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l4_06",
+      "chinese": "哥哥",
+      "pinyin": "gē ge",
+      "tones": [
+        1,
+        0
+      ],
+      "english": "Older brother",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l4_07",
+      "chinese": "姐姐",
+      "pinyin": "jiě jie",
+      "tones": [
+        3,
+        0
+      ],
+      "english": "Older sister",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l4_08",
+      "chinese": "弟弟",
+      "pinyin": "dì di",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "Younger brother",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l4_09",
+      "chinese": "妹妹",
+      "pinyin": "mèi mei",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "Younger sister",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l4_10",
+      "chinese": "有",
+      "pinyin": "yǒu",
+      "tones": [
+        3
+      ],
+      "english": "To have",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l4_11",
+      "chinese": "没有",
+      "pinyin": "méi yǒu",
+      "tones": [
+        2,
+        3
+      ],
+      "english": "Don't have / There isn't",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l4_12",
+      "chinese": "两",
+      "pinyin": "liǎng",
+      "tones": [
+        3
+      ],
+      "english": "Two (with measure words)",
+      "part_of_speech": "number"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "english": "How many people are in your family?"
+    },
+    {
+      "chinese": "我家有四口人。",
+      "pinyin": "Wǒ jiā yǒu sì kǒu rén.",
+      "english": "There are four people in my family."
+    },
+    {
+      "chinese": "你有哥哥吗？",
+      "pinyin": "Nǐ yǒu gē ge ma?",
+      "english": "Do you have an older brother?"
+    },
+    {
+      "chinese": "我没有哥哥。",
+      "pinyin": "Wǒ méi yǒu gē ge.",
+      "english": "I don't have an older brother."
+    },
+    {
+      "chinese": "她有两个妹妹。",
+      "pinyin": "Tā yǒu liǎng gè mèi mei.",
+      "english": "She has two younger sisters."
+    },
+    {
+      "chinese": "我爸爸是老师。",
+      "pinyin": "Wǒ bà ba shì lǎo shī.",
+      "english": "My father is a teacher."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "Using 有 (yǒu) - To have / There is",
+      "explanation": "有 (yǒu) means 'to have' or 'there is/are'. It shows possession or existence. Formula: Subject + 有 + Object. For family members, 的 is often omitted.",
+      "examples": [
+        {
+          "chinese": "我有一个哥哥。",
+          "pinyin": "Wǒ yǒu yī gè gē ge.",
+          "english": "I have an older brother."
+        },
+        {
+          "chinese": "他有三本书。",
+          "pinyin": "Tā yǒu sān běn shū.",
+          "english": "He has three books."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Say 'I have two sisters' in Chinese",
+          "answer": "我有两个姐姐。or 我有两个妹妹。",
+          "type": "production"
+        },
+        {
+          "question": "Fill in: 她___一个弟弟。(She has a younger brother)",
+          "answer": "有",
+          "type": "fill_in_blank"
+        },
+        {
+          "question": "Translate: Do you have a dog?",
+          "answer": "你有狗吗？",
+          "type": "translation"
+        },
+        {
+          "question": "What verb means 'to have' in Chinese?",
+          "answer": "有",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Negation with 没有 (méi yǒu)",
+      "explanation": "To negate 有, use 没有 (méi yǒu), NOT 不. 没有 means 'don't have' or 'there isn't'. Formula: Subject + 没有 + Object. Note: 不 cannot be used with 有.",
+      "examples": [
+        {
+          "chinese": "我没有妹妹。",
+          "pinyin": "Wǒ méi yǒu mèi mei.",
+          "english": "I don't have a younger sister."
+        },
+        {
+          "chinese": "他没有钱。",
+          "pinyin": "Tā méi yǒu qián.",
+          "english": "He doesn't have money."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Say 'I don't have an older brother' in Chinese",
+          "answer": "我没有哥哥。",
+          "type": "production"
+        },
+        {
+          "question": "How do you negate the verb 有?",
+          "answer": "没有",
+          "type": "concept"
+        },
+        {
+          "question": "Negate this sentence: 她有弟弟。",
+          "answer": "她没有弟弟。",
+          "type": "transformation"
+        },
+        {
+          "question": "Can you use 不 to negate 有? (Yes/No)",
+          "answer": "No",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Measure word 口 (kǒu) for family members",
+      "explanation": "口 (kǒu) literally means 'mouth' but is the special measure word for counting family members. Formula: Number + 口 + 人. Use when asking 'How many people in your family?'",
+      "examples": [
+        {
+          "chinese": "我家有五口人。",
+          "pinyin": "Wǒ jiā yǒu wǔ kǒu rén.",
+          "english": "There are five people in my family."
+        },
+        {
+          "chinese": "你家有几口人？",
+          "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+          "english": "How many people are in your family?"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Ask 'How many people in your family?' in Chinese",
+          "answer": "你家有几口人？",
+          "type": "production"
+        },
+        {
+          "question": "Say 'There are 3 people in my family'",
+          "answer": "我家有三口人。",
+          "type": "production"
+        },
+        {
+          "question": "What measure word is used for family members?",
+          "answer": "口",
+          "type": "concept"
+        }
+      ]
+    }
+  ],
+  "pinyin_focus": {
+    "topic": "Neutral tone practice",
+    "initials_focus": [
+      "b",
+      "p",
+      "m",
+      "g",
+      "j",
+      "d"
+    ],
+    "finals_focus": [
+      "a",
+      "e",
+      "i",
+      "ei",
+      "ie"
+    ],
+    "tone_practice": [
+      "bà ba",
+      "mā ma",
+      "gē ge",
+      "jiě jie",
+      "dì di",
+      "mèi mei"
+    ]
+  },
+  "games": [
+    "flashcard",
+    "matching",
+    "word_shake",
+    "sentence_builder"
+  ],
+  "quiz": [
+    {
+      "question": "How do you say 'father' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "爸爸",
+      "options": [
+        "爸爸",
+        "妈妈",
+        "哥哥",
+        "弟弟"
+      ]
+    },
+    {
+      "question": "What does 有 mean?",
+      "type": "multiple_choice",
+      "correct": "To have",
+      "options": [
+        "To have",
+        "To be",
+        "To go",
+        "To come"
+      ]
+    },
+    {
+      "question": "How do you negate 有?",
+      "type": "multiple_choice",
+      "correct": "没有",
+      "options": [
+        "不有",
+        "没有",
+        "不是",
+        "没是"
+      ]
+    },
+    {
+      "question": "What is the measure word for family members?",
+      "type": "multiple_choice",
+      "correct": "口",
+      "options": [
+        "个",
+        "口",
+        "本",
+        "只"
+      ]
+    },
+    {
+      "question": "How do you say 'older sister'?",
+      "type": "multiple_choice",
+      "correct": "姐姐",
+      "options": [
+        "姐姐",
+        "妹妹",
+        "哥哥",
+        "弟弟"
+      ]
+    },
+    {
+      "question": "Which means 'younger brother'?",
+      "type": "multiple_choice",
+      "correct": "弟弟",
+      "options": [
+        "哥哥",
+        "弟弟",
+        "妹妹",
+        "儿子"
+      ]
+    },
+    {
+      "question": "How do you ask 'How many people in your family?'",
+      "type": "multiple_choice",
+      "correct": "你家有几口人？",
+      "options": [
+        "你家有几口人？",
+        "你家有多少人？",
+        "你家几个人？",
+        "你家有人吗？"
+      ]
+    },
+    {
+      "question": "What does 没有 mean?",
+      "type": "multiple_choice",
+      "correct": "Don't have",
+      "options": [
+        "Don't have",
+        "Don't be",
+        "Don't go",
+        "Don't know"
+      ]
+    },
+    {
+      "question": "How do you say 'daughter'?",
+      "type": "multiple_choice",
+      "correct": "女儿",
+      "options": [
+        "儿子",
+        "女儿",
+        "妹妹",
+        "姐姐"
+      ]
+    }
+  ]
+}

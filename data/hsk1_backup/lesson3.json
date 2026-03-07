@@ -1,0 +1,72 @@
+{
+  "level": "HSK1",
+  "lesson": 3,
+  "topic": "Time and Date",
+  "topic_chinese": "今天几号？",
+  "age_group": "Adults and 10+",
+  "objectives": ["listening", "speaking", "reading", "writing"],
+  "vocabulary": [
+    { "id": "hsk1_l3_01", "chinese": "年", "pinyin": "nián", "tones": [2], "english": "Year", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_02", "chinese": "月", "pinyin": "yuè", "tones": [4], "english": "Month", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_03", "chinese": "号", "pinyin": "hào", "tones": [4], "english": "Date / Number (in a series)", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_04", "chinese": "今天", "pinyin": "jīn tiān", "tones": [1, 1], "english": "Today", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_05", "chinese": "明天", "pinyin": "míng tiān", "tones": [2, 1], "english": "Tomorrow", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_06", "chinese": "昨天", "pinyin": "zuó tiān", "tones": [2, 1], "english": "Yesterday", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_07", "chinese": "上午", "pinyin": "shàng wǔ", "tones": [4, 3], "english": "Morning / AM", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_08", "chinese": "中午", "pinyin": "zhōng wǔ", "tones": [1, 3], "english": "Noon / Midday", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_09", "chinese": "下午", "pinyin": "xià wǔ", "tones": [4, 3], "english": "Afternoon / PM", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_10", "chinese": "晚上", "pinyin": "wǎn shàng", "tones": [3, 4], "english": "Evening", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_11", "chinese": "点", "pinyin": "diǎn", "tones": [3], "english": "O'clock", "part_of_speech": "measure_word" },
+    { "id": "hsk1_l3_12", "chinese": "分", "pinyin": "fēn", "tones": [1], "english": "Minute", "part_of_speech": "measure_word" },
+    { "id": "hsk1_l3_13", "chinese": "一月", "pinyin": "yī yuè", "tones": [1,4], "english": "January", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_14", "chinese": "二月", "pinyin": "èr yuè", "tones": [4,4], "english": "February", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_15", "chinese": "三月", "pinyin": "sān yuè", "tones": [1,4], "english": "March", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_16", "chinese": "四月", "pinyin": "sì yuè", "tones": [4,4], "english": "April", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_17", "chinese": "五月", "pinyin": "wǔ yuè", "tones": [3,4], "english": "May", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_18", "chinese": "六月", "pinyin": "liù yuè", "tones": [4,4], "english": "June", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_19", "chinese": "七月", "pinyin": "qī yuè", "tones": [1,4], "english": "July", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_20", "chinese": "八月", "pinyin": "bā yuè", "tones": [1,4], "english": "August", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_21", "chinese": "九月", "pinyin": "jiǔ yuè", "tones": [3,4], "english": "September", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_22", "chinese": "十月", "pinyin": "shí yuè", "tones": [2,4], "english": "October", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_23", "chinese": "十一月", "pinyin": "shí yī yuè", "tones": [2,1,4], "english": "November", "part_of_speech": "noun" },
+    { "id": "hsk1_l3_24", "chinese": "十二月", "pinyin": "shí èr yuè", "tones": [2,4,4], "english": "December", "part_of_speech": "noun" }
+  ],
+  "key_sentences": [
+    { "chinese": "今天几月几号？", "pinyin": "Jīntiān jǐ yuè jǐ hào?", "english": "What date is it today?" },
+    { "chinese": "今天三月十五号。", "pinyin": "Jīntiān sān yuè shíwǔ hào.", "english": "Today is March 15th." },
+    { "chinese": "现在几点？", "pinyin": "Xiànzài jǐ diǎn?", "english": "What time is it now?" },
+    { "chinese": "下午两点半。", "pinyin": "Xiàwǔ liǎng diǎn bàn.", "english": "2:30 in the afternoon." },
+    { "chinese": "明天几号？", "pinyin": "míng tiān jǐ hào ？", "english": "What's the data tomorrow ? " },
+    { "chinese": "晚上八点", "pinyin": "wǎn shang bā diǎn", "english": "8:00 PM " },
+    { "chinese": "早上八点", "pinyin": "zǎo shang bā diǎn", "english": "8:00 AM " },
+    { "chinese": "下午三点四十五分", "pinyin": "xià wǔ sān diǎn sì shí wǔ fēn", "english": "3:45 PM " },
+    { "chinese": "中午十二点", "pinyin": "zhōng wǔ shí èr diǎn", "english": "12:00 PM " },
+    { "chinese": "晚上十二点", "pinyin": "wǎn shang shí èr diǎn", "english": "8:00 AM " }
+  ],
+  "grammar_point": {
+    "title": "Date expressions: Year-Month-Date order",
+    "explanation": "Chinese dates go from largest to smallest unit: 年(year) → 月(month) → 号(date). E.g. 2024年3月15号 = March 15, 2024. This is the opposite of British English (15 March 2024) and different from American English (March 15, 2024). Time also goes: 下午两点三十分 (PM 2:30).",
+    "examples": [
+      { "chinese": "2024年6月1号", "pinyin": "Èr líng èr sì nián liù yuè yī hào", "english": "June 1, 2024" },
+      { "chinese": "上午十点二十分", "pinyin": "Shàngwǔ shí diǎn èrshí fēn", "english": "10:20 AM" },
+      { "chinese": "2025年1月30日 早上10点", "pinyin": "èr líng ér wǔ nián yī yuè sān shí rì zǎo shàng shí diǎn", "english": "January 30, 2025, 10:00 AM" }
+    ]
+  },
+  "pinyin_focus": {
+    "topic": "Complete pinyin review — initials, finals and tones",
+    "initials_review": ["b", "p", "m", "f", "d", "t", "n", "l", "g", "k", "h", "j", "q", "x", "zh", "ch", "sh", "r", "z", "c", "s", "y", "w"],
+    "finals_review": ["a", "o", "e", "i", "u", "ü", "ai", "ei", "ui", "ao", "ou", "iu", "ie", "üe", "er", "an", "en", "in", "un", "ün", "ang", "eng", "ing", "ong"]
+  },
+  "games": ["flashcard", "matching"],
+  "quiz": [
+    { "question": "What order do Chinese dates go in?", "type": "multiple_choice", "correct": "Year → Month → Date", "options": ["Year → Month → Date", "Date → Month → Year", "Month → Date → Year", "Date → Year → Month"] },
+    { "question": "How do you say 'noon' in Chinese?", "type": "multiple_choice", "correct": "中午", "options": ["中午", "上午", "下午", "晚上"] },
+    { "question": "What does 号 (hào) refer to in dates?", "type": "multiple_choice", "correct": "The day/date number", "options": ["The day/date number", "The year", "The month", "The hour"] },
+    { "question": "How do you say 'January' in Chinese?", "type": "multiple_choice", "correct": "一月", "options": ["一个月", "一月", "一号", "二月"] },
+    { "question": "How do you say 'tomorrow' in Chinese?", "type": "multiple_choice", "correct": "明天", "options": ["昨天", "今天", "明天", "晚上"] },
+    { "question": "How do you say 'yesterday' in Chinese?", "type": "multiple_choice", "correct": "昨天", "options": ["昨天", "今天", "明天", "上午"] },
+    { "question": "What does 点 (diǎn) mean when telling time?", "type": "multiple_choice", "correct": "O'clock", "options": ["Minute", "Second", "O'clock", "Date"] },
+    { "question": "How do you say 'afternoon' in Chinese?", "type": "multiple_choice", "correct": "下午", "options": ["上午", "下午", "中午", "晚上"] },
+    { "question": "How do you say 'December' in Chinese?", "type": "multiple_choice", "correct": "十二月", "options": ["十月", "十一月", "十二月", "二月"] }
+  ]
+}

@@ -1,0 +1,581 @@
+
+{
+  "level": "HSK1",
+  "quiz_type": "level_final_assessment",
+  "title": "HSK1 Level Final Quiz",
+  "description": "Comprehensive assessment covering all vocabulary, grammar, and sentence patterns from HSK1 Lessons 1-8",
+  "passing_score": 70,
+  "total_questions": 30,
+  "format": "chinese_characters_with_pinyin",
+  "questions": [
+    {
+      "id": "hsk1_final_01",
+      "question": "你叫什么名字？",
+      "question_pinyin": "Nǐ jiào shén me míng zi?",
+      "type": "multiple_choice",
+      "correct": "What is your name?",
+      "options": [
+        "How are you?",
+        "Where are you from?",
+        "What is your name?",
+        "Who are you?"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 1
+    },
+    {
+      "id": "hsk1_final_02",
+      "question": "How do you say '15' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "十五",
+      "options": [
+        "十五",
+        "五一",
+        "五十",
+        "一五"
+      ],
+      "option_pinyin": [
+        "shí wǔ",
+        "wǔ yī",
+        "wǔ shí",
+        "yī wǔ"
+      ],
+      "correct_pinyin": "shí wǔ",
+      "difficulty": "easy",
+      "lesson_reference": 2
+    },
+    {
+      "id": "hsk1_final_03",
+      "question": "今天几月几号？",
+      "question_pinyin": "Jīn tiān jǐ yuè jǐ hào?",
+      "type": "multiple_choice",
+      "correct": "What's the date today?",
+      "options": [
+        "What time is it?",
+        "What's the date today?",
+        "What day is today?",
+        "What month is it?"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 3
+    },
+    {
+      "id": "hsk1_final_04",
+      "question": "Which is the correct negation: 我___哥哥。",
+      "type": "multiple_choice",
+      "correct": "没有",
+      "options": [
+        "没有",
+        "不有",
+        "没是",
+        "不是"
+      ],
+      "option_pinyin": [
+        "méi yǒu",
+        "bù yǒu",
+        "méi shì",
+        "bù shì"
+      ],
+      "correct_pinyin": "méi yǒu",
+      "difficulty": "medium",
+      "lesson_reference": 4
+    },
+    {
+      "id": "hsk1_final_05",
+      "question": "What does 想 indicate in this sentence: 我想喝水。",
+      "question_pinyin": "xiǎng / Wǒ xiǎng hē shuǐ.",
+      "type": "multiple_choice",
+      "correct": "Desire/want to do something",
+      "options": [
+        "Ability to do something",
+        "Desire/want to do something",
+        "Completed action",
+        "Currently doing something"
+      ],
+      "difficulty": "medium",
+      "lesson_reference": 5
+    },
+    {
+      "id": "hsk1_final_06",
+      "question": "这本书多少钱？",
+      "question_pinyin": "Zhè běn shū duō shǎo qián?",
+      "type": "multiple_choice",
+      "correct": "How much is this book?",
+      "options": [
+        "Where is the book?",
+        "How many books?",
+        "How much is this book?",
+        "Do you have books?"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 6
+    },
+    {
+      "id": "hsk1_final_07",
+      "question": "Choose the correct position word: 书在桌子___。(The book is on the table)",
+      "question_pinyin": "Shū zài zhuō zi ___.",
+      "type": "multiple_choice",
+      "correct": "上",
+      "options": [
+        "上",
+        "下",
+        "前",
+        "里"
+      ],
+      "option_pinyin": [
+        "shàng",
+        "xià",
+        "qián",
+        "lǐ"
+      ],
+      "correct_pinyin": "shàng",
+      "difficulty": "medium",
+      "lesson_reference": 7
+    },
+    {
+      "id": "hsk1_final_08",
+      "question": "What's the difference between 看 in '看书' and '看电视'?",
+      "question_pinyin": "kàn / kàn shū / kàn diàn shì",
+      "type": "multiple_choice",
+      "correct": "看书 = read, 看电视 = watch",
+      "options": [
+        "No difference",
+        "Both mean 'to look at'",
+        "Both mean 'to watch'",
+        "看书 = read, 看电视 = watch"
+      ],
+      "difficulty": "hard",
+      "lesson_reference": 8
+    },
+    {
+      "id": "hsk1_final_09",
+      "question": "她___两个妹妹。(She has two younger sisters)",
+      "question_pinyin": "Tā ___ liǎng gè mèi mei.",
+      "type": "multiple_choice",
+      "correct": "有",
+      "options": [
+        "在",
+        "的",
+        "有",
+        "是"
+      ],
+      "option_pinyin": [
+        "zài",
+        "de",
+        "yǒu",
+        "shì"
+      ],
+      "correct_pinyin": "yǒu",
+      "difficulty": "easy",
+      "lesson_reference": 4
+    },
+    {
+      "id": "hsk1_final_10",
+      "question": "Translate to Chinese: 'I am 22 years old.'",
+      "type": "multiple_choice",
+      "correct": "我二十二岁。",
+      "options": [
+        "我是二十二。",
+        "二十二岁我。",
+        "我有二十二岁。",
+        "我二十二岁。"
+      ],
+      "option_pinyin": [
+        "Wǒ shì èr shí èr.",
+        "Èr shí èr suì wǒ.",
+        "Wǒ yǒu èr shí èr suì.",
+        "Wǒ èr shí èr suì."
+      ],
+      "correct_pinyin": "Wǒ èr shí èr suì.",
+      "difficulty": "medium",
+      "lesson_reference": 2
+    },
+    {
+      "id": "hsk1_final_11",
+      "question": "What is the measure word for books?",
+      "type": "multiple_choice",
+      "correct": "本",
+      "options": [
+        "口",
+        "个",
+        "杯",
+        "本"
+      ],
+      "option_pinyin": [
+        "kǒu",
+        "gè",
+        "bēi",
+        "běn"
+      ],
+      "correct_pinyin": "běn",
+      "difficulty": "easy",
+      "lesson_reference": 6
+    },
+    {
+      "id": "hsk1_final_12",
+      "question": "你在哪儿？",
+      "question_pinyin": "Nǐ zài nǎr?",
+      "type": "multiple_choice",
+      "correct": "Where are you?",
+      "options": [
+        "Where do you come from?",
+        "Where are you?",
+        "Where are you going?",
+        "Where do you work?"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 7
+    },
+    {
+      "id": "hsk1_final_13",
+      "question": "Choose the correct order: Year, Month, Date",
+      "type": "multiple_choice",
+      "correct": "年, 月, 号",
+      "options": [
+        "号, 年, 月",
+        "月, 号, 年",
+        "号, 月, 年",
+        "年, 月, 号"
+      ],
+      "option_pinyin": [
+        "hào, nián, yuè",
+        "yuè, hào, nián",
+        "hào, yuè, nián",
+        "nián, yuè, hào"
+      ],
+      "correct_pinyin": "nián, yuè, hào",
+      "difficulty": "medium",
+      "lesson_reference": 3
+    },
+    {
+      "id": "hsk1_final_14",
+      "question": "What particle turns a statement into a yes/no question?",
+      "type": "multiple_choice",
+      "correct": "吗",
+      "options": [
+        "吗",
+        "了",
+        "的",
+        "呢"
+      ],
+      "option_pinyin": [
+        "ma",
+        "le",
+        "de",
+        "ne"
+      ],
+      "correct_pinyin": "ma",
+      "difficulty": "easy",
+      "lesson_reference": 1
+    },
+    {
+      "id": "hsk1_final_15",
+      "question": "我___吃米饭。(I want to eat rice)",
+      "question_pinyin": "Wǒ ___ chī mǐ fàn.",
+      "type": "multiple_choice",
+      "correct": "想",
+      "options": [
+        "在",
+        "有",
+        "想",
+        "是"
+      ],
+      "option_pinyin": [
+        "zài",
+        "yǒu",
+        "xiǎng",
+        "shì"
+      ],
+      "correct_pinyin": "xiǎng",
+      "difficulty": "easy",
+      "lesson_reference": 5
+    },
+    {
+      "id": "hsk1_final_16",
+      "question": "Translate: '下午三点'",
+      "question_pinyin": "xiàwǔ sān diǎn",
+      "type": "multiple_choice",
+      "correct": "3:00 PM",
+      "options": [
+        "3rd day of the month",
+        "3:00 PM",
+        "3:00 AM",
+        "March 3rd"
+      ],
+      "difficulty": "medium",
+      "lesson_reference": 3
+    },
+    {
+      "id": "hsk1_final_17",
+      "question": "What does 在 + verb indicate? Example: 她在写汉字。",
+      "question_pinyin": "zài / Tā zài xiě hàn zì.",
+      "type": "multiple_choice",
+      "correct": "Ongoing action (she is writing)",
+      "options": [
+        "Future action",
+        "Location (she is at...)",
+        "Completed action",
+        "Ongoing action (she is writing)"
+      ],
+      "difficulty": "hard",
+      "lesson_reference": 8
+    },
+    {
+      "id": "hsk1_final_18",
+      "question": "How do you say 'expensive' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "贵",
+      "options": [
+        "少",
+        "便宜",
+        "多",
+        "贵"
+      ],
+      "option_pinyin": [
+        "shǎo",
+        "pián yi",
+        "duō",
+        "guì"
+      ],
+      "correct_pinyin": "guì",
+      "difficulty": "easy",
+      "lesson_reference": 6
+    },
+    {
+      "id": "hsk1_final_19",
+      "question": "你家有几口人？",
+      "question_pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "type": "multiple_choice",
+      "correct": "How many people are in your family?",
+      "options": [
+        "Who is in your family?",
+        "Do you have a family?",
+        "Where is your family?",
+        "How many people are in your family?"
+      ],
+      "difficulty": "medium",
+      "lesson_reference": 4
+    },
+    {
+      "id": "hsk1_final_20",
+      "question": "Complete the sentence: Subject + ___ + Object (to show possession)",
+      "type": "multiple_choice",
+      "correct": "的",
+      "options": [
+        "是",
+        "有",
+        "在",
+        "的"
+      ],
+      "option_pinyin": [
+        "shì",
+        "yǒu",
+        "zài",
+        "de"
+      ],
+      "correct_pinyin": "de",
+      "difficulty": "medium",
+      "lesson_reference": 1
+    },
+    {
+      "id": "hsk1_final_21",
+      "question": "Which sentence is correct?",
+      "type": "multiple_choice",
+      "correct": "我去学校。",
+      "options": [
+        "学校我去。",
+        "我学校去。",
+        "去我学校。",
+        "我去学校。"
+      ],
+      "option_pinyin": [
+        "Xué xiào wǒ qù.",
+        "Wǒ xué xiào qù.",
+        "Qù wǒ xué xiào.",
+        "Wǒ qù xué xiào."
+      ],
+      "correct_pinyin": "Wǒ qù xué xiào.",
+      "difficulty": "medium",
+      "lesson_reference": 8
+    },
+    {
+      "id": "hsk1_final_22",
+      "question": "What is the measure word for family members?",
+      "type": "multiple_choice",
+      "correct": "口",
+      "options": [
+        "个",
+        "杯",
+        "口",
+        "本"
+      ],
+      "option_pinyin": [
+        "gè",
+        "bēi",
+        "kǒu",
+        "běn"
+      ],
+      "correct_pinyin": "kǒu",
+      "difficulty": "easy",
+      "lesson_reference": 4
+    },
+    {
+      "id": "hsk1_final_23",
+      "question": "Translate to Chinese: 'Two cups of tea'",
+      "type": "multiple_choice",
+      "correct": "两杯茶",
+      "options": [
+        "茶两杯",
+        "二杯茶",
+        "两杯茶",
+        "杯两茶"
+      ],
+      "option_pinyin": [
+        "chá liǎng bēi",
+        "èr bēi chá",
+        "liǎng bēi chá",
+        "bēi liǎng chá"
+      ],
+      "correct_pinyin": "liǎng bēi chá",
+      "difficulty": "medium",
+      "lesson_reference": 5
+    },
+    {
+      "id": "hsk1_final_24",
+      "question": "医院在哪儿？",
+      "question_pinyin": "Yī yuàn zài nǎr?",
+      "type": "multiple_choice",
+      "correct": "Where is the hospital?",
+      "options": [
+        "Where is the hospital?",
+        "Go to the hospital",
+        "Is this a hospital?",
+        "Do you have a hospital?"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 7
+    },
+    {
+      "id": "hsk1_final_25",
+      "question": "Choose the correct sentence for 'She doesn't have money.'",
+      "type": "multiple_choice",
+      "correct": "她没有钱。",
+      "options": [
+        "她不钱。",
+        "她不有钱。",
+        "她没有钱。",
+        "她没钱有。"
+      ],
+      "option_pinyin": [
+        "Tā bù qián.",
+        "Tā bù yǒu qián.",
+        "Tā méi yǒu qián.",
+        "Tā méi qián yǒu."
+      ],
+      "correct_pinyin": "Tā méi yǒu qián.",
+      "difficulty": "hard",
+      "lesson_reference": 4
+    },
+    {
+      "id": "hsk1_final_26",
+      "question": "What comes first in Chinese time expressions?",
+      "type": "multiple_choice",
+      "correct": "Time of day (上午/下午/晚上)",
+      "options": [
+        "Time of day (上午/下午/晚上)",
+        "Hour (几点)",
+        "Minutes (几分)",
+        "All are equal"
+      ],
+      "option_pinyin": [
+        "shàng wǔ/xià wǔ/wǎn shàng",
+        "jǐ diǎn",
+        "jǐ fēn",
+        ""
+      ],
+      "difficulty": "hard",
+      "lesson_reference": 3
+    },
+    {
+      "id": "hsk1_final_27",
+      "question": "Translate to English: 他在看书。",
+      "question_pinyin": "Tā zài kàn shū.",
+      "type": "multiple_choice",
+      "correct": "He is reading.",
+      "options": [
+        "He is reading.",
+        "He read.",
+        "He reads.",
+        "He will read."
+      ],
+      "difficulty": "medium",
+      "lesson_reference": 8
+    },
+    {
+      "id": "hsk1_final_28",
+      "question": "What does 什么 replace in a question?",
+      "question_pinyin": "shén me",
+      "type": "multiple_choice",
+      "correct": "The thing you're asking about",
+      "options": [
+        "The subject",
+        "The thing you're asking about",
+        "The verb",
+        "The location"
+      ],
+      "difficulty": "hard",
+      "lesson_reference": 5
+    },
+    {
+      "id": "hsk1_final_29",
+      "question": "Choose the grammatically correct sentence:",
+      "type": "multiple_choice",
+      "correct": "这本书五十块。",
+      "options": [
+        "五十块这本书。",
+        "这书本五十块。",
+        "这本书五十块。",
+        "本这书五十块。"
+      ],
+      "option_pinyin": [
+        "Wǔ shí kuài zhè běn shū.",
+        "Zhè shū běn wǔ shí kuài.",
+        "Zhè běn shū wǔ shí kuài.",
+        "Běn zhè shū wǔ shí kuài."
+      ],
+      "correct_pinyin": "Zhè běn shū wǔ shí kuài.",
+      "difficulty": "hard",
+      "lesson_reference": 6
+    },
+    {
+      "id": "hsk1_final_30",
+      "question": "Complete: 我___老师。(I am a teacher)",
+      "question_pinyin": "Wǒ ___ lǎo shī.",
+      "type": "multiple_choice",
+      "correct": "是",
+      "options": [
+        "在",
+        "的",
+        "是",
+        "有"
+      ],
+      "option_pinyin": [
+        "zài",
+        "de",
+        "shì",
+        "yǒu"
+      ],
+      "correct_pinyin": "shì",
+      "difficulty": "easy",
+      "lesson_reference": 1
+    }
+  ],
+  "scoring_breakdown": {
+    "easy_questions": 12,
+    "medium_questions": 11,
+    "hard_questions": 7,
+    "vocabulary_focus": 10,
+    "grammar_focus": 12,
+    "sentence_comprehension": 8
+  }
+}

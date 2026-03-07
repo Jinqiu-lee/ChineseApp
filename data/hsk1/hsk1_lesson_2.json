@@ -1,0 +1,412 @@
+{
+  "lesson": 2,
+  "topic": "Numbers and Age",
+  "topic_chinese": "你多大？",
+  "age_group": "Adults and 10+",
+  "objectives": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
+  "vocabulary": [
+    {
+      "id": "hsk1_l2_01",
+      "chinese": "一",
+      "pinyin": "yī",
+      "tones": [
+        1
+      ],
+      "english": "One",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "hsk1_l2_02",
+      "chinese": "二",
+      "pinyin": "èr",
+      "tones": [
+        4
+      ],
+      "english": "Two",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "hsk1_l2_03",
+      "chinese": "三",
+      "pinyin": "sān",
+      "tones": [
+        1
+      ],
+      "english": "Three",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "hsk1_l2_04",
+      "chinese": "四",
+      "pinyin": "sì",
+      "tones": [
+        4
+      ],
+      "english": "Four",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "hsk1_l2_05",
+      "chinese": "五",
+      "pinyin": "wǔ",
+      "tones": [
+        3
+      ],
+      "english": "Five",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "hsk1_l2_06",
+      "chinese": "六",
+      "pinyin": "liù",
+      "tones": [
+        4
+      ],
+      "english": "Six",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "hsk1_l2_07",
+      "chinese": "七",
+      "pinyin": "qī",
+      "tones": [
+        1
+      ],
+      "english": "Seven",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "hsk1_l2_08",
+      "chinese": "八",
+      "pinyin": "bā",
+      "tones": [
+        1
+      ],
+      "english": "Eight",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "hsk1_l2_09",
+      "chinese": "九",
+      "pinyin": "jiǔ",
+      "tones": [
+        3
+      ],
+      "english": "Nine",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "hsk1_l2_10",
+      "chinese": "十",
+      "pinyin": "shí",
+      "tones": [
+        2
+      ],
+      "english": "Ten",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "hsk1_l2_11",
+      "chinese": "零",
+      "pinyin": "líng",
+      "tones": [
+        2
+      ],
+      "english": "Zero",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "hsk1_l2_12",
+      "chinese": "个",
+      "pinyin": "gè",
+      "tones": [
+        4
+      ],
+      "english": "General measure word",
+      "part_of_speech": "measure_word"
+    },
+    {
+      "id": "hsk1_l2_13",
+      "chinese": "几",
+      "pinyin": "jǐ",
+      "tones": [
+        3
+      ],
+      "english": "How many / Several",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l2_14",
+      "chinese": "多",
+      "pinyin": "duō",
+      "tones": [
+        1
+      ],
+      "english": "Many / Much / More",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk1_l2_15",
+      "chinese": "大",
+      "pinyin": "dà",
+      "tones": [
+        4
+      ],
+      "english": "Big / Large",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk1_l2_16",
+      "chinese": "岁",
+      "pinyin": "suì",
+      "tones": [
+        4
+      ],
+      "english": "Years old / Age",
+      "part_of_speech": "measure_word"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "你多大？",
+      "pinyin": "Nǐ duō dà?",
+      "english": "How old are you?"
+    },
+    {
+      "chinese": "我二十岁。",
+      "pinyin": "Wǒ èr shí suì.",
+      "english": "I am 20 years old."
+    },
+    {
+      "chinese": "你有几个朋友？",
+      "pinyin": "Nǐ yǒu jǐ gè péng yǒu?",
+      "english": "How many friends do you have?"
+    },
+    {
+      "chinese": "我有三个。",
+      "pinyin": "Wǒ yǒu sān gè.",
+      "english": "I have three."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "Chinese number system (1-99)",
+      "explanation": "Numbers 1-10 are basic characters. 11-19: 十 + digit. 20-99: tens digit + 十 + ones digit.",
+      "examples": [
+        {
+          "chinese": "十五",
+          "pinyin": "shí wǔ",
+          "english": "15"
+        },
+        {
+          "chinese": "二十八",
+          "pinyin": "èr shí bā",
+          "english": "28"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "How do you say '17' in Chinese?",
+          "type": "multiple_choice",
+          "correct": "十七",
+          "options": [
+            "七十",
+            "十七",
+            "一七",
+            "七一"
+          ]
+        },
+        {
+          "question": "What number is 三十四?",
+          "type": "multiple_choice",
+          "correct": "34",
+          "options": [
+            "34",
+            "43",
+            "13",
+            "31"
+          ]
+        },
+        {
+          "question": "How do you write 'twenty' in Chinese?",
+          "type": "multiple_choice",
+          "correct": "二十",
+          "options": [
+            "二十",
+            "十二",
+            "二",
+            "二零"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Measure word 个 (gè)",
+      "explanation": "个 (gè) is used between a number and a noun. Formula: Number + 个 + Noun.",
+      "examples": [
+        {
+          "chinese": "一个人",
+          "pinyin": "yī gè rén",
+          "english": "One person"
+        },
+        {
+          "chinese": "三个朋友",
+          "pinyin": "sān gè péng yǒu",
+          "english": "Three friends"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: 两___人 (two people)",
+          "type": "multiple_choice",
+          "correct": "个",
+          "options": [
+            "个",
+            "本",
+            "杯",
+            "口"
+          ]
+        },
+        {
+          "question": "How do you say 'five students'?",
+          "type": "multiple_choice",
+          "correct": "五个学生",
+          "options": [
+            "五个学生",
+            "个五学生",
+            "五学生",
+            "学生五个"
+          ]
+        },
+        {
+          "question": "What goes between number and noun?",
+          "type": "multiple_choice",
+          "correct": "measure word",
+          "options": [
+            "measure word",
+            "verb",
+            "的",
+            "是"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Asking age with 多大 (duō dà)",
+      "explanation": "多大 means 'how big' but is used to ask age. Answer with number + 岁.",
+      "examples": [
+        {
+          "chinese": "你多大？我十八岁。",
+          "pinyin": "Nǐ duō dà? Wǒ shí bā suì.",
+          "english": "How old are you? I'm 18."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "How do you ask 'How old are you?'",
+          "type": "multiple_choice",
+          "correct": "你多大？",
+          "options": [
+            "你多大？",
+            "你几岁？",
+            "你有多少？",
+            "你是多大？"
+          ]
+        },
+        {
+          "question": "How do you say 'I am 22 years old'?",
+          "type": "multiple_choice",
+          "correct": "我二十二岁。",
+          "options": [
+            "我二十二岁。",
+            "我是二十二。",
+            "我有二十二岁。",
+            "二十二岁我。"
+          ]
+        },
+        {
+          "question": "What word means 'years old'?",
+          "type": "multiple_choice",
+          "correct": "岁",
+          "options": [
+            "岁",
+            "年",
+            "月",
+            "号"
+          ]
+        }
+      ]
+    }
+  ],
+  "pinyin_focus": {
+    "topic": "Tone combinations and number pronunciation",
+    "initials_focus": [
+      "d",
+      "t",
+      "l",
+      "s"
+    ],
+    "finals_focus": [
+      "i",
+      "u",
+      "ü",
+      "ui"
+    ],
+    "tone_practice": [
+      "yī",
+      "èr",
+      "sān",
+      "sì",
+      "wǔ"
+    ]
+  },
+  "games": [
+    "flashcard",
+    "matching",
+    "word_shake",
+    "sentence_builder"
+  ],
+  "quiz": [
+    {
+      "question": "What is '3' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "三",
+      "options": [
+        "一",
+        "二",
+        "三",
+        "四"
+      ]
+    },
+    {
+      "question": "How do you say '15'?",
+      "type": "multiple_choice",
+      "correct": "十五",
+      "options": [
+        "五十",
+        "十五",
+        "五",
+        "一五"
+      ]
+    },
+    {
+      "question": "What is 个 used for?",
+      "type": "multiple_choice",
+      "correct": "Measure word",
+      "options": [
+        "Measure word",
+        "Question",
+        "Possession",
+        "Verb"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "level": "YCT1",
+  "lesson": 4,
+  "topic": "Family",
+  "topic_chinese": "我家有四口人",
+  "age_group": "5-7",
+  "objectives": ["listening", "speaking", "pinyin_reading"],
+  "vocabulary": [
+    {
+      "id": "yct1_l4_01",
+      "chinese": "家",
+      "pinyin": "jiā",
+      "tones": [1],
+      "english": "Family / Home",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "yct1_l4_02",
+      "chinese": "有",
+      "pinyin": "yǒu",
+      "tones": [3],
+      "english": "Have / There is",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "yct1_l4_03",
+      "chinese": "爸爸",
+      "pinyin": "bà ba",
+      "tones": [4, 0],
+      "english": "Dad / Father",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "yct1_l4_04",
+      "chinese": "妈妈",
+      "pinyin": "māma",
+      "tones": [1, 0],
+      "english": "Mum / Mother",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "yct1_l4_05",
+      "chinese": "爷爷",
+      "pinyin": "yé ye",
+      "tones": [2, 0],
+      "english": "Paternal grandfather",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "yct1_l4_06",
+      "chinese": "奶奶",
+      "pinyin": "nǎi nai",
+      "tones": [3, 0],
+      "english": "Paternal grandmother",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "yct1_l4_07",
+      "chinese": "口",
+      "pinyin": "kǒu",
+      "tones": [3],
+      "english": "Measure word for family members",
+      "part_of_speech": "measure_word"
+    },
+    {
+      "id": "yct1_l4_08",
+      "chinese": "人",
+      "pinyin": "rén",
+      "tones": [2],
+      "english": "Person / People",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "yct1_l4_09",
+      "chinese": "没有",
+      "pinyin": "méi yǒu",
+      "tones": [2, 3],
+      "english": "Don't have / There isn't",
+      "part_of_speech": "verb_negative"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "我家有四口人。",
+      "pinyin": "Wǒ jiā yǒu sì kǒu rén.",
+      "english": "My family has four people."
+    },
+    {
+      "chinese": "我有爸爸、妈妈和我。",
+      "pinyin": "Wǒ yǒu bàba, māma hé wǒ.",
+      "english": "I have dad, mum and me."
+    },
+    {
+      "chinese": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "english": "How many people are in your family?"
+    },
+    {
+      "chinese": "我没有哥哥。",
+      "pinyin": "Wǒ méi yǒu gē ge.",
+      "english": "I don't have an older brother."
+    }
+  ],
+  "grammar_point": {
+    "title": "有 (yǒu) — to have",
+    "explanation": "有 means 'have' or 'there is'. The negative form is 没有 (méi yǒu) — 'don't have'. To ask 'how many', use 几 (jǐ) for small numbers. 口 is the measure word used specifically for counting family members.",
+    "examples": [
+      { "chinese": "我有一个弟弟", "pinyin": "Wǒ yǒu yí gè dìdi", "english": "I have a younger brother" },
+      { "chinese": "我没有妹妹", "pinyin": "Wǒ méiyǒu mèimei", "english": "I don't have a younger sister" }
+    ]
+  },
+  "pinyin_focus": {
+    "topic": "Finals: ia, ao, ou, an, en",
+    "finals_covered": ["ia", "ao", "ou", "an", "en"],
+    "examples": [
+      { "final": "ia", "example": "jiā (家)", "english": "family" },
+      { "final": "ao", "example": "nǎo (脑)", "english": "brain" },
+      { "final": "ou", "example": "yǒu (有)", "english": "have" },
+      { "final": "an", "example": "rén (人→ ren)", "english": "person" }
+    ]
+  },
+  "games": ["flashcard", "listening_match"],
+  "quiz": [
+    {
+      "question": "What does 家 (jiā) mean?",
+      "type": "multiple_choice",
+      "correct": "Family / Home",
+      "options": ["Family / Home", "School", "Friend", "Name"]
+    },
+    {
+      "question": "How do you say 'I don't have' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "我没有",
+      "options": ["我没有", "我有", "我不是", "我叫"]
+    },
+    {
+      "question": "Which means 'Dad'?",
+      "type": "multiple_choice",
+      "correct": "爸爸",
+      "options": ["爸爸", "妈妈", "爷爷", "奶奶"]
+    }
+  ]
+}

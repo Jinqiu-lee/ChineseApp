@@ -1,0 +1,48 @@
+{
+  "level": "YCT1",
+  "lesson": 9,
+  "topic": "Days of the Week",
+  "topic_chinese": "今天星期几？",
+  "age_group": "5-7",
+  "objectives": ["listening", "speaking", "pinyin_reading"],
+  "vocabulary": [
+    { "id": "yct1_l9_01", "chinese": "今天", "pinyin": "jīn tiān", "tones": [1, 1], "english": "Today", "part_of_speech": "noun" },
+    { "id": "yct1_l9_02", "chinese": "明天", "pinyin": "míng tiān", "tones": [2, 1], "english": "Tomorrow", "part_of_speech": "noun" },
+    { "id": "yct1_l9_03", "chinese": "昨天", "pinyin": "zuó tiān", "tones": [2, 1], "english": "Yesterday", "part_of_speech": "noun" },
+    { "id": "yct1_l9_04", "chinese": "星期一", "pinyin": "xīng qī yī", "tones": [1, 1, 1], "english": "Monday", "part_of_speech": "noun" },
+    { "id": "yct1_l9_05", "chinese": "星期二", "pinyin": "xīng qī èr", "tones": [1, 1, 4], "english": "Tuesday", "part_of_speech": "noun" },
+    { "id": "yct1_l9_06", "chinese": "星期三", "pinyin": "xīng qī sān", "tones": [1, 1, 1], "english": "Wednesday", "part_of_speech": "noun" },
+    { "id": "yct1_l9_07", "chinese": "星期四", "pinyin": "xīng qī sì", "tones": [1, 1, 4], "english": "Thursday", "part_of_speech": "noun" },
+    { "id": "yct1_l9_08", "chinese": "星期五", "pinyin": "xīng qī wǔ", "tones": [1, 1, 3], "english": "Friday", "part_of_speech": "noun" },
+    { "id": "yct1_l9_09", "chinese": "星期六", "pinyin": "xīng qī liù", "tones": [1, 1, 4], "english": "Saturday", "part_of_speech": "noun" },
+    { "id": "yct1_l9_10", "chinese": "星期天", "pinyin": "xīng qī tiān", "tones": [1, 1, 1], "english": "Sunday", "part_of_speech": "noun" }
+  ],
+  "key_sentences": [
+    { "chinese": "今天星期几？", "pinyin": "Jīntiān xīngqī jǐ?", "english": "What day is today?" },
+    { "chinese": "今天星期三。", "pinyin": "Jīntiān xīngqī sān.", "english": "Today is Wednesday." },
+    { "chinese": "明天星期四。", "pinyin": "Míngtiān xīngqī sì.", "english": "Tomorrow is Thursday." },
+    { "chinese": "我星期六去公园。", "pinyin": "Wǒ xīngqī liù qù gōngyuán.", "english": "I go to the park on Saturday." }
+  ],
+  "grammar_point": {
+    "title": "Days of the week — 星期 + number",
+    "explanation": "Chinese days of the week are logical: 星期 (xīngqī = week) + number 1–6 for Monday to Saturday. Sunday is special: 星期天 or 星期日. To ask 'what day?', say 星期几 (which number of the week?). Time words go before the verb in Chinese sentences.",
+    "examples": [
+      { "chinese": "昨天星期一", "pinyin": "Zuótiān xīngqī yī", "english": "Yesterday was Monday" },
+      { "chinese": "他星期五来", "pinyin": "Tā xīngqī wǔ lái", "english": "He comes on Friday" }
+    ]
+  },
+  "pinyin_focus": {
+    "topic": "Finals: ing, ong, ang, eng",
+    "finals_covered": ["ing", "ong", "ang", "eng"],
+    "examples": [
+      { "final": "ing", "example": "xīng (星)", "english": "star/week" },
+      { "final": "ian", "example": "tiān (天)", "english": "sky/day" }
+    ]
+  },
+  "games": ["flashcard", "listening_match"],
+  "quiz": [
+    { "question": "What does 今天 (jīntiān) mean?", "type": "multiple_choice", "correct": "Today", "options": ["Today", "Tomorrow", "Yesterday", "This week"] },
+    { "question": "How do you say 'Wednesday' in Chinese?", "type": "multiple_choice", "correct": "星期三", "options": ["星期三", "星期二", "星期四", "星期五"] },
+    { "question": "What does 星期几 mean?", "type": "multiple_choice", "correct": "What day of the week?", "options": ["What day of the week?", "How many weeks?", "What time?", "Which month?"] }
+  ]
+}

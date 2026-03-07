@@ -1,0 +1,47 @@
+{
+  "level": "YCT1",
+  "lesson": 10,
+  "topic": "Telling Time",
+  "topic_chinese": "现在几点？",
+  "age_group": "5-7",
+  "objectives": ["listening", "speaking", "pinyin_reading"],
+  "vocabulary": [
+    { "id": "yct1_l10_01", "chinese": "现在", "pinyin": "xiàn zài", "tones": [4, 4], "english": "Now", "part_of_speech": "noun" },
+    { "id": "yct1_l10_02", "chinese": "点", "pinyin": "diǎn", "tones": [3], "english": "O'clock", "part_of_speech": "measure_word" },
+    { "id": "yct1_l10_03", "chinese": "分", "pinyin": "fēn", "tones": [1], "english": "Minute", "part_of_speech": "measure_word" },
+    { "id": "yct1_l10_04", "chinese": "半", "pinyin": "bàn", "tones": [4], "english": "Half (past)", "part_of_speech": "number" },
+    { "id": "yct1_l10_05", "chinese": "上午", "pinyin": "shàng wǔ", "tones": [4, 3], "english": "Morning / AM", "part_of_speech": "noun" },
+    { "id": "yct1_l10_06", "chinese": "下午", "pinyin": "xià wǔ", "tones": [4, 3], "english": "Afternoon / PM", "part_of_speech": "noun" },
+    { "id": "yct1_l10_07", "chinese": "晚上", "pinyin": "wǎn shàng", "tones": [3, 4], "english": "Evening / Night", "part_of_speech": "noun" },
+    { "id": "yct1_l10_08", "chinese": "钟", "pinyin": "zhōng", "tones": [1], "english": "Clock", "part_of_speech": "noun" }
+  ],
+  "key_sentences": [
+    { "chinese": "现在几点？", "pinyin": "Xiànzài jǐ diǎn?", "english": "What time is it now?" },
+    { "chinese": "现在三点。", "pinyin": "Xiànzài sān diǎn.", "english": "It is three o'clock." },
+    { "chinese": "现在八点半。", "pinyin": "Xiànzài bā diǎn bàn.", "english": "It is half past eight." },
+    { "chinese": "下午两点三十分。", "pinyin": "Xiàwǔ liǎng diǎn sānshí fēn.", "english": "2:30 PM." }
+  ],
+  "grammar_point": {
+    "title": "Telling time with 点 (diǎn) and 分 (fēn)",
+    "explanation": "To tell the time: [number] + 点 (o'clock) + [minutes] + 分. For half past, use 半 (bàn). Note: for '2 o'clock', Chinese uses 两 (liǎng) instead of 二 (èr) when counting things. Time expressions go at the start or right after the subject.",
+    "examples": [
+      { "chinese": "七点二十分", "pinyin": "Qī diǎn èrshí fēn", "english": "7:20" },
+      { "chinese": "上午十点", "pinyin": "Shàngwǔ shí diǎn", "english": "10 o'clock in the morning" }
+    ]
+  },
+  "pinyin_focus": {
+    "topic": "Finals: an, en, in, un, ün",
+    "finals_covered": ["an", "en", "in", "un"],
+    "examples": [
+      { "final": "an", "example": "xiàn (现)", "english": "now/present" },
+      { "final": "en", "example": "fēn (分)", "english": "minute" },
+      { "final": "ong", "example": "zhōng (钟)", "english": "clock" }
+    ]
+  },
+  "games": ["flashcard", "listening_match"],
+  "quiz": [
+    { "question": "What does 现在 (xiànzài) mean?", "type": "multiple_choice", "correct": "Now", "options": ["Now", "Today", "Tomorrow", "Later"] },
+    { "question": "How do you say '5 o'clock'?", "type": "multiple_choice", "correct": "五点", "options": ["五点", "五分", "五时", "五个"] },
+    { "question": "What does 半 (bàn) mean in telling time?", "type": "multiple_choice", "correct": "Half (past)", "options": ["Half (past)", "Quarter", "Full hour", "Minute"] }
+  ]
+}

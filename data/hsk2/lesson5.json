@@ -1,0 +1,40 @@
+{
+  "level": "HSK2",
+  "lesson": 5,
+  "topic": "Making Plans",
+  "topic_chinese": "我们什么时候见面？",
+  "age_group": "Adults, 10-12+",
+  "objectives": ["listening", "speaking", "reading", "writing"],
+  "vocabulary": [
+    { "id": "hsk2_l5_01", "chinese": "见面", "pinyin": "jiàn miàn", "tones": [4, 4], "english": "Meet (face to face)", "part_of_speech": "verb" },
+    { "id": "hsk2_l5_02", "chinese": "约", "pinyin": "yuē", "tones": [1], "english": "To arrange / Make an appointment", "part_of_speech": "verb" },
+    { "id": "hsk2_l5_03", "chinese": "方便", "pinyin": "fāng biàn", "tones": [1, 4], "english": "Convenient", "part_of_speech": "adjective" },
+    { "id": "hsk2_l5_04", "chinese": "时间", "pinyin": "shí jiān", "tones": [2, 1], "english": "Time", "part_of_speech": "noun" },
+    { "id": "hsk2_l5_05", "chinese": "地方", "pinyin": "dì fāng", "tones": [4, 1], "english": "Place", "part_of_speech": "noun" },
+    { "id": "hsk2_l5_06", "chinese": "等", "pinyin": "děng", "tones": [3], "english": "To wait", "part_of_speech": "verb" },
+    { "id": "hsk2_l5_07", "chinese": "准时", "pinyin": "zhǔn shí", "tones": [3, 2], "english": "On time / Punctual", "part_of_speech": "adjective" },
+    { "id": "hsk2_l5_08", "chinese": "迟到", "pinyin": "chí dào", "tones": [2, 4], "english": "To be late / Late", "part_of_speech": "verb" },
+    { "id": "hsk2_l5_09", "chinese": "没关系", "pinyin": "méi guān xi", "tones": [2, 1, 0], "english": "It's okay / Never mind", "part_of_speech": "phrase" },
+    { "id": "hsk2_l5_10", "chinese": "对不起", "pinyin": "duì bu qǐ", "tones": [4, 0, 3], "english": "Sorry / I'm sorry", "part_of_speech": "phrase" }
+  ],
+  "key_sentences": [
+    { "chinese": "我们什么时候见面？", "pinyin": "Wǒmen shénme shíhòu jiànmiàn?", "english": "When shall we meet?" },
+    { "chinese": "明天下午三点，你方便吗？", "pinyin": "Míngtiān xiàwǔ sān diǎn, nǐ fāngbiàn ma?", "english": "Tomorrow at 3 PM, is that convenient for you?" },
+    { "chinese": "我们在咖啡店见面吧。", "pinyin": "Wǒmen zài kāfēidiàn jiànmiàn ba.", "english": "Let's meet at the coffee shop." },
+    { "chinese": "对不起，我迟到了。没关系！", "pinyin": "Duìbuqǐ, wǒ chídào le. Méiguānxi!", "english": "Sorry, I'm late. Never mind!" }
+  ],
+  "grammar_point": {
+    "title": "吧 (ba) — suggestion particle",
+    "explanation": "吧 at the end of a sentence softens it into a suggestion or mild question. 我们去吧 = Let's go (shall we). 你是学生吧 = You're a student, right? 在 here means 'at' (location). Common pattern: 我们在 [place] 见面 = Let's meet at [place].",
+    "examples": [
+      { "chinese": "我们走吧", "pinyin": "Wǒmen zǒu ba", "english": "Let's go" },
+      { "chinese": "你很累了吧？", "pinyin": "Nǐ hěn lèi le ba?", "english": "You must be very tired, right?" }
+    ]
+  },
+  "games": ["flashcard", "matching"],
+  "quiz": [
+    { "question": "What does 见面 mean?", "type": "multiple_choice", "correct": "To meet (face to face)", "options": ["To meet (face to face)", "To call", "To write", "To visit"] },
+    { "question": "What does 迟到 mean?", "type": "multiple_choice", "correct": "To be late", "options": ["To be late", "To arrive early", "To wait", "To leave"] },
+    { "question": "What does adding 吧 to a sentence do?", "type": "multiple_choice", "correct": "Makes it a suggestion or soft question", "options": ["Makes it a suggestion or soft question", "Makes it negative", "Makes it past tense", "Makes it more formal"] }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "level": "YCT1",
+  "lesson": 5,
+  "topic": "Age and Numbers",
+  "topic_chinese": "我6岁",
+  "age_group": "5-7",
+  "objectives": ["listening", "speaking", "pinyin_reading"],
+  "vocabulary": [
+    {
+      "id": "yct1_l5_01",
+      "chinese": "一",
+      "pinyin": "yī",
+      "tones": [1],
+      "english": "One (1)",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "yct1_l5_02",
+      "chinese": "二",
+      "pinyin": "èr",
+      "tones": [4],
+      "english": "Two (2)",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "yct1_l5_03",
+      "chinese": "三",
+      "pinyin": "sān",
+      "tones": [1],
+      "english": "Three (3)",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "yct1_l5_04",
+      "chinese": "四",
+      "pinyin": "sì",
+      "tones": [4],
+      "english": "Four (4)",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "yct1_l5_05",
+      "chinese": "五",
+      "pinyin": "wǔ",
+      "tones": [3],
+      "english": "Five (5)",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "yct1_l5_06",
+      "chinese": "六",
+      "pinyin": "liù",
+      "tones": [4],
+      "english": "Six (6)",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "yct1_l5_07",
+      "chinese": "七",
+      "pinyin": "qī",
+      "tones": [1],
+      "english": "Seven (7)",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "yct1_l5_08",
+      "chinese": "八",
+      "pinyin": "bā",
+      "tones": [1],
+      "english": "Eight (8)",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "yct1_l5_09",
+      "chinese": "九",
+      "pinyin": "jiǔ",
+      "tones": [3],
+      "english": "Nine (9)",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "yct1_l5_10",
+      "chinese": "十",
+      "pinyin": "shí",
+      "tones": [2],
+      "english": "Ten (10)",
+      "part_of_speech": "number"
+    },
+    {
+      "id": "yct1_l5_11",
+      "chinese": "岁",
+      "pinyin": "suì",
+      "tones": [4],
+      "english": "Years old",
+      "part_of_speech": "measure_word"
+    },
+    {
+      "id": "yct1_l5_12",
+      "chinese": "几",
+      "pinyin": "jǐ",
+      "tones": [3],
+      "english": "How many (for small numbers)",
+      "part_of_speech": "question_word"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "你几岁？",
+      "pinyin": "Nǐ jǐ suì?",
+      "english": "How old are you?"
+    },
+    {
+      "chinese": "我六岁。",
+      "pinyin": "Wǒ liù suì.",
+      "english": "I am six years old."
+    },
+    {
+      "chinese": "他八岁。",
+      "pinyin": "Tā bā suì.",
+      "english": "He is eight years old."
+    },
+    {
+      "chinese": "我家有三口人。",
+      "pinyin": "Wǒ jiā yǒu sān kǒu rén.",
+      "english": "My family has three people."
+    }
+  ],
+  "grammar_point": {
+    "title": "Saying age with 岁 (suì)",
+    "explanation": "To say your age in Chinese: [number] + 岁. No verb needed! 我六岁 literally means 'I six years-old'. To ask age, use 几岁 (how many years old). Numbers 1–10 are the foundation for all larger numbers in Chinese.",
+    "examples": [
+      { "chinese": "我七岁", "pinyin": "Wǒ qī suì", "english": "I am seven years old" },
+      { "chinese": "她十岁", "pinyin": "Tā shí suì", "english": "She is ten years old" }
+    ]
+  },
+  "pinyin_focus": {
+    "topic": "Finals: i, u, ü and compound finals",
+    "finals_covered": ["i", "u", "ü", "ui", "iu"],
+    "examples": [
+      { "final": "i", "example": "yī (一)", "english": "one" },
+      { "final": "u", "example": "wǔ (五)", "english": "five" },
+      { "final": "iu", "example": "liù (六)", "english": "six" },
+      { "final": "ui", "example": "suì (岁)", "english": "years old" }
+    ]
+  },
+  "games": ["flashcard", "number_tap"],
+  "quiz": [
+    {
+      "question": "How do you say 'I am 7 years old'?",
+      "type": "multiple_choice",
+      "correct": "我七岁",
+      "options": ["我七岁", "我有七", "我是七", "七我岁"]
+    },
+    {
+      "question": "What number is 八 (bā)?",
+      "type": "multiple_choice",
+      "correct": "8",
+      "options": ["8", "6", "9", "3"]
+    },
+    {
+      "question": "What does 几岁 mean?",
+      "type": "multiple_choice",
+      "correct": "How old",
+      "options": ["How old", "How many people", "What name", "How much"]
+    }
+  ]
+}
