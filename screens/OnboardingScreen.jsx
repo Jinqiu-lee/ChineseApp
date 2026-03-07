@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import {
   View, Text, TouchableOpacity, StyleSheet,
-  ScrollView, TextInput, Animated,
+  ScrollView, TextInput, Animated, Modal,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
@@ -24,6 +24,23 @@ const MANUAL_RANK_MAP = {
   hsk4: { level: "Confident Speaker",    levelChinese: "高级", badge: "🌟", color: "#FF9F43", recommendedLevel: "hsk4", recommendedLabel: "Level 4 – Confident Speaker",    message: "Great! We'll start you at Level 4 – Confident Speaker." },
   hsk5: { level: "Communicator",         levelChinese: "精通", badge: "🔥", color: "#a29bfe", recommendedLevel: "hsk5", recommendedLabel: "Level 5 – Communicator",         message: "Great! We'll start you at Level 5 – Communicator." },
 };
+
+// ── CEFR level details (for results screen & levels panel) ───────
+const LEVEL_DETAILS = [
+  { id: "hsk1", number: 1, cefrLabel: "Beginner",           cefr: "A1",  emoji: "🌱", color: "#00D2D3",
+    willLearn: ["Introduce yourself in Chinese", "Use basic greetings and farewells", "Count numbers and tell the time", "Understand ~150 Chinese words"] },
+  { id: "hsk2", number: 2, cefrLabel: "Elementary",         cefr: "A2",  emoji: "🚶", color: "#54A0FF",
+    willLearn: ["Talk about daily routines", "Discuss weather and seasons", "Navigate simple transactions", "Understand ~300 Chinese words"] },
+  { id: "hsk3", number: 3, cefrLabel: "Lower Intermediate", cefr: "A2+", emoji: "🗣",  color: "#1DD1A1",
+    willLearn: ["Talk about daily life", "Understand common conversations", "Share opinions and experiences", "Use 500~600 Chinese words"] },
+  { id: "hsk4", number: 4, cefrLabel: "Intermediate",       cefr: "B1",  emoji: "🌟", color: "#FF9F43",
+    willLearn: ["Hold fluent everyday conversations", "Discuss news and current events", "Express complex ideas in Chinese", "Use 1,000~1,200 Chinese words"] },
+  { id: "hsk5", number: 5, cefrLabel: "Upper Intermediate", cefr: "B2",  emoji: "🔥", color: "#a29bfe",
+    willLearn: ["Read Chinese newspapers and novels", "Watch Chinese films without subtitles", "Communicate fluently with native speakers", "Use 2,500+ Chinese words"] },
+  { id: "hsk6", number: 6, cefrLabel: "Advanced",           cefr: "C1",  emoji: "🎓", color: "#fd79a8",
+    willLearn: ["Express yourself effortlessly in Chinese", "Understand any style of written/spoken Chinese", "Near-native level proficiency", "Master 5,000+ Chinese words"] },
+];
+const LEVEL_DETAILS_MAP = Object.fromEntries(LEVEL_DETAILS.map(l => [l.id, l]));
 
 const STEP_AGE    = "age";
 const STEP_PATH   = "path";
@@ -50,6 +67,7 @@ export default function OnboardingScreen({ onComplete }) {
   const [advScore, setAdvScore]     = useState(null);
   const [answered, setAnswered]     = useState(false);
   const [result, setResult]         = useState(null);
+  const [showLevelsPanel, setShowLevelsPanel] = useState(false);
 
   const fadeAnim = useRef(new Animated.Value(1)).current;
   const fade = (cb) => {
@@ -100,11 +118,11 @@ export default function OnboardingScreen({ onComplete }) {
           fade(() => { setPhase(2); setQuestions(ADVANCED_QUESTIONS); setQIndex(0); setSelected(null); setAnswered(false); setAdvScore(0); });
         } else {
           const r = getPlacementResult(newBasic, questions.length, null, 15, parseInt(age, 10));
-          setResult(r); fade(() => setStep(STEP_RESULTS));
+          setResult({ ...r, source: "test" }); fade(() => setStep(STEP_RESULTS));
         }
       } else {
         const r = getPlacementResult(basicScore, 15, newAdv, questions.length, parseInt(age, 10));
-        setResult(r); fade(() => setStep(STEP_RESULTS));
+        setResult({ ...r, source: "test" }); fade(() => setStep(STEP_RESULTS));
       }
     } else {
       fade(() => { setQIndex(qIndex + 1); setSelected(null); setAnswered(false); });
@@ -113,7 +131,7 @@ export default function OnboardingScreen({ onComplete }) {
 
   const handleManualPick = (lvl) => {
     const rank = MANUAL_RANK_MAP[lvl.id];
-    setResult({ ...rank, description: `You selected ${lvl.label}`, startFrom: "beginning" });
+    setResult({ ...rank, description: `You selected ${lvl.label}`, startFrom: "beginning", source: "manual" });
     fade(() => setStep(STEP_RESULTS));
   };
 
@@ -323,37 +341,121 @@ export default function OnboardingScreen({ onComplete }) {
         )}
 
         {/* ── RESULTS ── */}
-        {step === STEP_RESULTS && result && (
-          <ScrollView contentContainerStyle={s.centered}>
-            <View style={[s.resultCard, { borderColor: result.color }]}>
-              <Text style={s.resultEmoji}>{result.badge}</Text>
-              <Text style={[s.resultLevel, { color: result.color }]}>{result.levelChinese} · {result.level}</Text>
-              <Text style={s.resultDesc}>{result.description}</Text>
-            </View>
+        {step === STEP_RESULTS && result && (() => {
+          const detail = LEVEL_DETAILS_MAP[result.recommendedLevel] || LEVEL_DETAILS_MAP.hsk1;
+          return (
+            <ScrollView contentContainerStyle={s.centered}>
+              <Text style={s.testCompleteTitle}>
+                {result.source === "test" ? "🎉 Test Complete!" : "🎉 Great Choice!"}
+              </Text>
 
-            <View style={s.recommendBox}>
-              <Text style={s.recommendTitle}>📌 Recommended for you</Text>
-              <View style={[s.recommendLevel, { backgroundColor: result.color + "22", borderColor: result.color }]}>
-                <Text style={[s.recommendLevelText, { color: result.color }]}>{result.recommendedLabel}</Text>
+              {/* Main result card */}
+              <View style={[s.resultCard2, { borderColor: detail.color }]}>
+                <View style={s.resultCard2Top}>
+                  <View>
+                    <Text style={[s.resultCard2LevelNum, { color: detail.color }]}>
+                      Level {detail.number}
+                    </Text>
+                    <Text style={s.resultCard2Cefr}>CEFR: {detail.cefr} · {detail.cefrLabel}</Text>
+                  </View>
+                  <Text style={s.resultCard2Emoji}>{detail.emoji}</Text>
+                </View>
+                <Text style={[s.resultCard2Name, { color: detail.color }]}>{result.level}</Text>
               </View>
-              <Text style={s.recommendMessage}>{result.message}</Text>
-            </View>
 
-            {advScore !== null && (
-              <View style={s.scoreBreakdown}>
-                <Text style={s.scoreBreakdownTitle}>Your Scores</Text>
-                <Text style={s.scoreBreakdownLine}>Basic: {basicScore}/15 ({Math.round(basicScore / 15 * 100)}%)</Text>
-                <Text style={s.scoreBreakdownLine}>Advanced: {advScore}/{ADVANCED_QUESTIONS.length} ({Math.round(advScore / ADVANCED_QUESTIONS.length * 100)}%)</Text>
+              {/* You will learn */}
+              <View style={s.willLearnBox}>
+                <Text style={s.willLearnTitle}>You will learn:</Text>
+                {detail.willLearn.map((item, i) => (
+                  <View key={i} style={s.willLearnRow}>
+                    <Text style={[s.willLearnCheck, { color: detail.color }]}>✔</Text>
+                    <Text style={s.willLearnText}>{item}</Text>
+                  </View>
+                ))}
               </View>
-            )}
 
-            <TouchableOpacity style={[s.primaryBtn, { backgroundColor: result.color }]} onPress={handleDone}>
-              <Text style={s.primaryBtnText}>Start Learning! 开始学习 →</Text>
-            </TouchableOpacity>
-          </ScrollView>
-        )}
+              {/* Score breakdown (test only) */}
+              {advScore !== null && (
+                <View style={s.scoreBreakdown}>
+                  <Text style={s.scoreBreakdownTitle}>Your Scores</Text>
+                  <Text style={s.scoreBreakdownLine}>Basic: {basicScore}/15 ({Math.round(basicScore / 15 * 100)}%)</Text>
+                  <Text style={s.scoreBreakdownLine}>Advanced: {advScore}/{ADVANCED_QUESTIONS.length} ({Math.round(advScore / ADVANCED_QUESTIONS.length * 100)}%)</Text>
+                </View>
+              )}
+
+              <TouchableOpacity style={s.showLevelsBtn} onPress={() => setShowLevelsPanel(true)}>
+                <Text style={s.showLevelsBtnText}>Show Language Levels</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity style={[s.primaryBtn, { backgroundColor: detail.color }]} onPress={handleDone}>
+                <Text style={s.primaryBtnText}>👉 Start Learning</Text>
+              </TouchableOpacity>
+            </ScrollView>
+          );
+        })()}
 
       </Animated.View>
+
+      {/* ── Language Levels Panel Modal ── */}
+      <Modal
+        visible={showLevelsPanel}
+        transparent
+        animationType="slide"
+        onRequestClose={() => setShowLevelsPanel(false)}
+      >
+        <View style={s.levelsOverlay}>
+          <View style={s.levelsSheet}>
+            <View style={s.levelsSheetHeader}>
+              <Text style={s.levelsSheetTitle}>Language Levels</Text>
+              <TouchableOpacity onPress={() => setShowLevelsPanel(false)}>
+                <Text style={s.levelsSheetClose}>✕</Text>
+              </TouchableOpacity>
+            </View>
+            <ScrollView showsVerticalScrollIndicator={false}>
+              {LEVEL_DETAILS.map((lvl) => {
+                const isCurrent = result && lvl.id === result.recommendedLevel;
+                const isAdvanced = lvl.number === 6;
+                return (
+                  <TouchableOpacity
+                    key={lvl.id}
+                    style={[
+                      s.levelsItem,
+                      isCurrent && { backgroundColor: lvl.color + "18", borderColor: lvl.color },
+                    ]}
+                    onPress={() => isAdvanced && alert("🎓 Advanced level is coming soon!\n\nKeep working through the earlier levels. 加油！")}
+                    activeOpacity={isAdvanced ? 0.7 : 1}
+                  >
+                    <Text style={[s.levelsItemEmoji, !isCurrent && !isAdvanced && { opacity: 0.7 }]}>{lvl.emoji}</Text>
+                    <View style={s.levelsItemInfo}>
+                      <View style={s.levelsItemRow}>
+                        <Text style={[s.levelsItemNum, { color: isCurrent ? lvl.color : "#636e72" }]}>
+                          Level {lvl.number}
+                        </Text>
+                        <Text style={s.levelsItemCefr}>{lvl.cefr}</Text>
+                        {isCurrent && (
+                          <View style={[s.levelsCurrentBadge, { backgroundColor: lvl.color }]}>
+                            <Text style={s.levelsCurrentBadgeText}>YOUR LEVEL</Text>
+                          </View>
+                        )}
+                        {isAdvanced && (
+                          <View style={s.levelsSoonBadge}>
+                            <Text style={s.levelsSoonText}>COMING SOON</Text>
+                          </View>
+                        )}
+                      </View>
+                      <Text style={[s.levelsItemName, isCurrent && { color: lvl.color, fontWeight: "800" }]}>
+                        {lvl.cefrLabel}
+                      </Text>
+                    </View>
+                  </TouchableOpacity>
+                );
+              })}
+              <View style={{ height: 24 }} />
+            </ScrollView>
+          </View>
+        </View>
+      </Modal>
+
     </SafeAreaView>
   );
 }
@@ -431,16 +533,44 @@ const s = StyleSheet.create({
   nextBtn:        { backgroundColor: "#FF6B6B", padding: 16, borderRadius: 14, alignItems: "center" },
   nextBtnText:    { color: "#fff", fontWeight: "800", fontSize: 15 },
 
-  resultCard:     { alignItems: "center", backgroundColor: "#16213e", borderRadius: 24, padding: 28, marginBottom: 20, borderWidth: 2, width: "100%" },
-  resultEmoji:    { fontSize: 64, marginBottom: 10 },
-  resultLevel:    { fontSize: 26, fontWeight: "900", letterSpacing: 1 },
-  resultDesc:     { fontSize: 14, color: "#636e72", marginTop: 8, textAlign: "center" },
-  recommendBox:   { backgroundColor: "#16213e", borderRadius: 20, padding: 20, marginBottom: 20, width: "100%", alignItems: "center" },
-  recommendTitle: { fontSize: 14, fontWeight: "700", color: "#fff", marginBottom: 12 },
-  recommendLevel: { paddingHorizontal: 20, paddingVertical: 10, borderRadius: 14, borderWidth: 2, marginBottom: 10 },
-  recommendLevelText: { fontSize: 22, fontWeight: "900" },
-  recommendMessage: { fontSize: 13, color: "#636e72", textAlign: "center", lineHeight: 20 },
-  scoreBreakdown: { backgroundColor: "#16213e", borderRadius: 16, padding: 16, marginBottom: 20, width: "100%" },
+  // Enhanced result card
+  testCompleteTitle: { fontSize: 26, fontWeight: "900", color: "#fff", textAlign: "center", marginBottom: 20 },
+  resultCard2:       { backgroundColor: "#16213e", borderRadius: 24, padding: 24, marginBottom: 16, borderWidth: 2, width: "100%" },
+  resultCard2Top:    { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 },
+  resultCard2LevelNum: { fontSize: 22, fontWeight: "900" },
+  resultCard2Cefr:   { fontSize: 13, color: "#636e72", marginTop: 4 },
+  resultCard2Emoji:  { fontSize: 52 },
+  resultCard2Name:   { fontSize: 20, fontWeight: "800" },
+
+  // You will learn
+  willLearnBox:   { backgroundColor: "#16213e", borderRadius: 20, padding: 20, marginBottom: 16, width: "100%" },
+  willLearnTitle: { fontSize: 15, fontWeight: "800", color: "#fff", marginBottom: 12 },
+  willLearnRow:   { flexDirection: "row", alignItems: "flex-start", marginBottom: 8, gap: 8 },
+  willLearnCheck: { fontSize: 14, fontWeight: "800", marginTop: 1 },
+  willLearnText:  { fontSize: 14, color: "#b2bec3", flex: 1, lineHeight: 20 },
+
+  scoreBreakdown: { backgroundColor: "#16213e", borderRadius: 16, padding: 16, marginBottom: 16, width: "100%" },
   scoreBreakdownTitle: { fontSize: 13, fontWeight: "700", color: "#a29bfe", marginBottom: 8 },
   scoreBreakdownLine: { fontSize: 14, color: "#636e72", marginBottom: 4 },
+
+  showLevelsBtn:     { borderWidth: 1.5, borderColor: "#a29bfe", borderRadius: 14, paddingVertical: 13, paddingHorizontal: 24, marginBottom: 12, width: "100%", alignItems: "center" },
+  showLevelsBtnText: { fontSize: 15, fontWeight: "700", color: "#a29bfe" },
+
+  // Language Levels Modal
+  levelsOverlay:      { flex: 1, backgroundColor: "rgba(0,0,0,0.65)", justifyContent: "flex-end" },
+  levelsSheet:        { backgroundColor: "#16213e", borderTopLeftRadius: 28, borderTopRightRadius: 28, paddingHorizontal: 20, paddingTop: 16, maxHeight: "80%" },
+  levelsSheetHeader:  { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 20 },
+  levelsSheetTitle:   { fontSize: 20, fontWeight: "800", color: "#fff" },
+  levelsSheetClose:   { fontSize: 22, color: "#636e72", paddingHorizontal: 4 },
+  levelsItem:         { flexDirection: "row", alignItems: "center", borderRadius: 16, padding: 14, marginBottom: 8, borderWidth: 1.5, borderColor: "rgba(255,255,255,0.07)", gap: 12 },
+  levelsItemEmoji:    { fontSize: 26, width: 32, textAlign: "center" },
+  levelsItemInfo:     { flex: 1 },
+  levelsItemRow:      { flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 3 },
+  levelsItemNum:      { fontSize: 13, fontWeight: "800" },
+  levelsItemCefr:     { fontSize: 12, color: "#636e72", fontWeight: "600" },
+  levelsCurrentBadge: { paddingHorizontal: 7, paddingVertical: 2, borderRadius: 6 },
+  levelsCurrentBadgeText: { fontSize: 9, fontWeight: "900", color: "#fff", letterSpacing: 0.5 },
+  levelsSoonBadge:    { paddingHorizontal: 7, paddingVertical: 2, borderRadius: 6, backgroundColor: "rgba(255,255,255,0.08)" },
+  levelsSoonText:     { fontSize: 9, fontWeight: "700", color: "#636e72", letterSpacing: 0.5 },
+  levelsItemName:     { fontSize: 15, color: "#dfe6e9", fontWeight: "600" },
 });

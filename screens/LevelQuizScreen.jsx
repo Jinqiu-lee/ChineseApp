@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+
+const PASS_SCORE = 60;   // >= 60% to unlock next level
+const REVIEW_SCORE = 50; // < 50% triggers review exercise before retry
 
 // Import quiz data - data folder is in root
 import quizData from '../data/hsk1/hsk1_level_quiz.json';
@@ -9,7 +12,7 @@ import quizData from '../data/hsk1/hsk1_level_quiz.json';
  * LevelQuizScreen - HSK1 Final Quiz
  * 30 questions with pinyin support
  */
-export default function LevelQuizScreen({ onBack, onComplete }) {
+export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [answers, setAnswers] = useState({});
@@ -59,7 +62,21 @@ export default function LevelQuizScreen({ onBack, onComplete }) {
     setScore(0);
   };
 
-  const getPassed = () => score >= quizData.passing_score;
+  const getPassed = () => score >= PASS_SCORE;
+  const needsReview = () => score < REVIEW_SCORE;
+
+  const handleShowReviewExercise = () => {
+    const incorrectQuestions = quizData.questions.filter(q => answers[q.id] && !answers[q.id].isCorrect);
+    const mistakeList = incorrectQuestions
+      .slice(0, 5)
+      .map(q => `• ${q.question}`)
+      .join('\n');
+    Alert.alert(
+      'Review Exercise',
+      `You scored ${score}%. Let's review what you missed:\n\n${mistakeList}\n\nGo over these lessons and then retake the quiz. You need 60% to advance!`,
+      [{ text: 'Retake Quiz', onPress: handleRestart }],
+    );
+  };
 
   // Review Screen - Show incorrect answers
   if (showReview) {
@@ -167,6 +184,7 @@ export default function LevelQuizScreen({ onBack, onComplete }) {
   // Results Screen
   if (showResults) {
     const passed = getPassed();
+    const review = needsReview();
     const correctCount = Object.values(answers).filter(a => a.isCorrect).length;
 
     return (
@@ -176,7 +194,7 @@ export default function LevelQuizScreen({ onBack, onComplete }) {
           <View style={styles.resultsCard}>
             <Text style={styles.resultsEmoji}>{passed ? '🏆' : '📚'}</Text>
             <Text style={styles.resultsTitle}>
-              {passed ? 'Congratulations!' : 'Keep Practicing!'}
+              {passed ? 'Level Passed!' : 'Keep Practicing!'}
             </Text>
             <Text style={styles.resultsSubtitle}>
               {passed ? '恭喜！Gōng xǐ!' : '加油！Jiā yóu!'}
@@ -207,36 +225,64 @@ export default function LevelQuizScreen({ onBack, onComplete }) {
             </View>
 
             <Text style={styles.passingText}>
-              Passing score: {quizData.passing_score}%
+              Pass threshold: {PASS_SCORE}% · You scored: {score}%
             </Text>
 
             {passed && (
               <View style={styles.passedBox}>
                 <Text style={styles.passedText}>
-                  ✅ You've mastered HSK1!
+                  ✅ Next level unlocked!
                 </Text>
               </View>
             )}
 
-            {!passed && (
+            {!passed && review && (
               <View style={styles.encouragementBox}>
                 <Text style={styles.encouragementText}>
-                  Review the lessons and try again. You're getting better! 💪
+                  Your score is below 50%. Please review the exercises based on your mistakes, then try again!
+                </Text>
+              </View>
+            )}
+
+            {!passed && !review && (
+              <View style={styles.encouragementBox}>
+                <Text style={styles.encouragementText}>
+                  So close! You need 60% to advance. Review and try again! 💪
                 </Text>
               </View>
             )}
           </View>
 
           <View style={styles.resultsActions}>
-            <TouchableOpacity 
-              style={styles.reviewButton} 
+            {passed && (
+              <TouchableOpacity
+                style={styles.nextLevelButton}
+                onPress={() => onComplete(score)}
+              >
+                <Text style={styles.nextLevelButtonText}>Continue →</Text>
+              </TouchableOpacity>
+            )}
+
+            {!passed && review && (
+              <TouchableOpacity
+                style={styles.reviewExerciseButton}
+                onPress={handleShowReviewExercise}
+              >
+                <Text style={styles.reviewButtonText}>📋 Review Exercise + Retake</Text>
+              </TouchableOpacity>
+            )}
+
+            {!passed && !review && (
+              <TouchableOpacity style={styles.retryButton} onPress={handleRestart}>
+                <Text style={styles.retryButtonText}>🔄 Try Again</Text>
+              </TouchableOpacity>
+            )}
+
+            <TouchableOpacity
+              style={styles.reviewButton}
               onPress={() => setShowReview(true)}
             >
               <Text style={styles.reviewButtonText}>📋 Review Incorrect Answers</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={styles.retryButton} onPress={handleRestart}>
-              <Text style={styles.retryButtonText}>🔄 Try Again</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.doneButton} onPress={onBack}>
@@ -422,6 +468,9 @@ const styles = StyleSheet.create({
   encouragementText: { fontSize: 14, color: '#FF9F43', textAlign: 'center', lineHeight: 20 },
   
   resultsActions: { gap: 12 },
+  nextLevelButton: { backgroundColor: '#1DD1A1', padding: 16, borderRadius: 16, alignItems: 'center' },
+  nextLevelButtonText: { fontSize: 16, fontWeight: '800', color: '#fff' },
+  reviewExerciseButton: { backgroundColor: '#FF9F43', padding: 16, borderRadius: 16, alignItems: 'center' },
   reviewButton: { backgroundColor: '#a29bfe', padding: 16, borderRadius: 16, alignItems: 'center' },
   reviewButtonText: { fontSize: 16, fontWeight: '800', color: '#fff' },
   retryButton: { backgroundColor: '#FF9F43', padding: 16, borderRadius: 16, alignItems: 'center' },

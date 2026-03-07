@@ -5,13 +5,11 @@ import {
 } from "react-native";
 
 const ALL_LEVELS = [
-  { id: "yct1", label: "YCT 1", badge: "🌱", color: "#FF6B6B", desc: "Complete beginner · Age 5–7" },
-  { id: "yct2", label: "YCT 2", badge: "🌿", color: "#FF9F43", desc: "Elementary · Age 7–8" },
-  { id: "yct3", label: "YCT 3", badge: "🌳", color: "#54A0FF", desc: "Pre-intermediate · Age 8–12" },
-  { id: "yct4", label: "YCT 4", badge: "🌲", color: "#5F27CD", desc: "Intermediate · Age 10–12" },
-  { id: "hsk1", label: "HSK 1", badge: "⭐",     color: "#00D2D3", desc: "Beginner · Adult / 10+" },
-  { id: "hsk2", label: "HSK 2", badge: "⭐⭐",   color: "#FF6B6B", desc: "Elementary · Adult" },
-  { id: "hsk3", label: "HSK 3", badge: "⭐⭐⭐", color: "#1DD1A1", desc: "Intermediate · Adult" },
+  { id: "hsk1", label: "Level 1 – Beginner",             badge: "🌱", color: "#00D2D3", desc: "Complete beginner, starting from scratch" },
+  { id: "hsk2", label: "Level 2 – Explorer",             badge: "🚶", color: "#54A0FF", desc: "Know basics, ready to build vocabulary" },
+  { id: "hsk3", label: "Level 3 – Conversation Builder", badge: "🗣",  color: "#1DD1A1", desc: "Can hold simple conversations" },
+  { id: "hsk4", label: "Level 4 – Confident Speaker",    badge: "🌟", color: "#FF9F43", desc: "Comfortable with everyday Chinese" },
+  { id: "hsk5", label: "Level 5 – Communicator",         badge: "🔥", color: "#a29bfe", desc: "Advanced, near-fluent communication" },
 ];
 
 // Given a level id, return the one step down
@@ -82,7 +80,7 @@ export default function LevelChangeModal({
             {mode === "manual" && (
               <View style={m.manualHeader}>
                 <Text style={m.manualTitle}>Change Your Level</Text>
-                <Text style={m.manualSub}>Pick any level below — you can always switch back</Text>
+                <Text style={m.manualSub}>Pick a new level — this is a one-time change</Text>
               </View>
             )}
 

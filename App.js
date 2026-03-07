@@ -1,116 +1,118 @@
 import React, { useState } from 'react';
-// CORRECT: screens folder is in root
 import OnboardingScreen from './screens/OnboardingScreen';
 import HomeScreen from './screens/HomeScreen';
 import LessonDetailScreen from './screens/LessonDetailScreen';
 import LevelQuizScreen from './screens/LevelQuizScreen';
 
-/**
- * Main App Component
- * Simple state-based navigation between screens
- */
+const ALL_LEVEL_IDS = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5'];
+
 export default function App() {
-  // Navigation state
   const [currentScreen, setCurrentScreen] = useState('onboarding');
   const [userData, setUserData] = useState(null);
   const [currentLessonId, setCurrentLessonId] = useState(null);
+  const [currentQuizLevelId, setCurrentQuizLevelId] = useState(null);
+  const [levelState, setLevelState] = useState({
+    unlockedLevels: ['hsk1'],
+    completedLevels: [],
+    levelSetBy: 'manual',   // 'manual' | 'test'
+    levelChangedUsed: false, // one-time change for manual users
+  });
 
-  // ═══════════════════════════════════════════════════════════
-  // NAVIGATION HANDLERS
-  // ═══════════════════════════════════════════════════════════
-
-  /**
-   * Handle onboarding completion
-   * Saves user data and navigates to home screen
-   */
   const handleOnboardingComplete = (data) => {
+    const startLevel = data.result.recommendedLevel || 'hsk1';
+    const startIdx = Math.max(ALL_LEVEL_IDS.indexOf(startLevel), 0);
+    // Unlock all levels up to and including the starting level
+    const unlockedLevels = ALL_LEVEL_IDS.slice(0, startIdx + 1);
     setUserData(data);
+    setLevelState({
+      unlockedLevels,
+      completedLevels: [],
+      levelSetBy: data.result.source || 'manual',
+      levelChangedUsed: false,
+    });
     setCurrentScreen('home');
   };
 
-  /**
-   * Navigate to lesson detail screen
-   */
   const handleLessonPress = (lessonId) => {
     setCurrentLessonId(lessonId);
     setCurrentScreen('lesson');
   };
 
-  /**
-   * Navigate back to home screen
-   */
   const handleBackToHome = () => {
     setCurrentScreen('home');
     setCurrentLessonId(null);
+    setCurrentQuizLevelId(null);
   };
 
-  /**
-   * Change level - go back to onboarding manual selection
-   */
-  const handleChangeLevel = () => {
-    setCurrentScreen('onboarding');
-    // Keep user data so age is preserved
+  // Called when a manual-pick user confirms a level change (one-time only)
+  const handleChangeLevelConfirm = (newLevelId) => {
+    const startIdx = Math.max(ALL_LEVEL_IDS.indexOf(newLevelId), 0);
+    const unlockedLevels = ALL_LEVEL_IDS.slice(0, startIdx + 1);
+    setUserData(prev => ({
+      ...prev,
+      result: { ...prev.result, recommendedLevel: newLevelId },
+    }));
+    setLevelState(prev => ({
+      ...prev,
+      unlockedLevels,
+      completedLevels: [],
+      levelChangedUsed: true,
+    }));
   };
 
-  /**
-   * Retake placement test - restart onboarding completely
-   */
   const handleRetakeTest = () => {
     setCurrentScreen('onboarding');
-    setUserData(null); // Clear everything to start fresh
+    setUserData(null);
+    setLevelState({ unlockedLevels: ['hsk1'], completedLevels: [], levelSetBy: 'manual', levelChangedUsed: false });
   };
 
-  /**
-   * Handle game navigation (placeholder)
-   * TODO: Create game screens
-   */
   const handlePlayGame = (gameType) => {
-    console.log(`[Game] Navigate to: ${gameType}`);
     alert(`🎮 ${gameType.toUpperCase()}\n\nGame coming soon!`);
-    // TODO: setCurrentScreen('game'); setCurrentGame(gameType);
   };
 
-  /**
-   * Handle lesson quiz navigation (placeholder)
-   * TODO: Create quiz screen
-   */
   const handleTakeQuiz = () => {
-    console.log('[Quiz] Navigate to lesson quiz');
     alert('📝 Lesson Quiz\n\nQuiz screen coming soon!');
-    // TODO: setCurrentScreen('quiz');
   };
 
-  /**
-   * Handle level final quiz navigation
-   */
-  const handleLevelQuizPress = () => {
-    console.log('[Level Quiz] Navigate to level final quiz');
+  const handleLevelQuizPress = (levelId) => {
+    setCurrentQuizLevelId(levelId || userData?.result?.recommendedLevel || 'hsk1');
     setCurrentScreen('levelQuiz');
   };
 
-  // ═══════════════════════════════════════════════════════════
-  // SCREEN RENDERING
-  // ═══════════════════════════════════════════════════════════
+  // Called by LevelQuizScreen when the user finishes with a passing score (>=60%)
+  const handleLevelQuizComplete = (score) => {
+    const levelId = currentQuizLevelId || userData?.result?.recommendedLevel || 'hsk1';
+    if (score >= 60) {
+      const idx = ALL_LEVEL_IDS.indexOf(levelId);
+      const nextLevel = idx >= 0 && idx < ALL_LEVEL_IDS.length - 1 ? ALL_LEVEL_IDS[idx + 1] : null;
+      setLevelState(prev => ({
+        ...prev,
+        completedLevels: [...new Set([...prev.completedLevels, levelId])],
+        unlockedLevels: nextLevel && !prev.unlockedLevels.includes(nextLevel)
+          ? [...prev.unlockedLevels, nextLevel]
+          : prev.unlockedLevels,
+      }));
+    }
+    handleBackToHome();
+  };
 
-  // Show onboarding screen
   if (currentScreen === 'onboarding') {
     return <OnboardingScreen onComplete={handleOnboardingComplete} />;
   }
 
-  // Show home screen
   if (currentScreen === 'home') {
     return (
       <HomeScreen
         userData={userData}
+        levelState={levelState}
         onLessonPress={handleLessonPress}
         onLevelQuizPress={handleLevelQuizPress}
-        onChangeLevel={handleChangeLevel}
+        onChangeLevelConfirm={handleChangeLevelConfirm}
         onRetakeTest={handleRetakeTest}
       />
     );
   }
 
-  // Show lesson detail screen
   if (currentScreen === 'lesson') {
     return (
       <LessonDetailScreen
@@ -122,19 +124,15 @@ export default function App() {
     );
   }
 
-  // Show level quiz screen
   if (currentScreen === 'levelQuiz') {
     return (
       <LevelQuizScreen
+        currentLevelId={currentQuizLevelId || userData?.result?.recommendedLevel || 'hsk1'}
         onBack={handleBackToHome}
-        onComplete={() => {
-          // When quiz is completed, could save results here
-          handleBackToHome();
-        }}
+        onComplete={handleLevelQuizComplete}
       />
     );
   }
 
-  // Fallback (should never reach here)
   return null;
 }

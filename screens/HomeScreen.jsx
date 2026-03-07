@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import LevelChangeModal from '../components/LevelChangeModal';
 
 const LEVEL_CONFIG = [
-  { id: 'hsk1', number: 1, emoji: '🌱', title: 'Beginner',              subtitle: 'HSK 1', color: '#00D2D3', available: true },
-  { id: 'hsk2', number: 2, emoji: '🚶', title: 'Explorer',              subtitle: 'HSK 2', color: '#54A0FF', available: true },
-  { id: 'hsk3', number: 3, emoji: '🗣',  title: 'Conversation Builder',  subtitle: 'HSK 3', color: '#1DD1A1', available: true },
-  { id: 'hsk4', number: 4, emoji: '🌟', title: 'Confident Speaker',     subtitle: 'HSK 4', color: '#FF9F43', available: false },
-  { id: 'hsk5', number: 5, emoji: '🔥', title: 'Communicator',          subtitle: 'HSK 5', color: '#a29bfe', available: false },
+  { id: 'hsk1', number: 1, emoji: '🌱', title: 'Beginner',              subtitle: 'HSK 1', color: '#00D2D3' },
+  { id: 'hsk2', number: 2, emoji: '🚶', title: 'Explorer',              subtitle: 'HSK 2', color: '#54A0FF' },
+  { id: 'hsk3', number: 3, emoji: '🗣',  title: 'Conversation Builder',  subtitle: 'HSK 3', color: '#1DD1A1' },
+  { id: 'hsk4', number: 4, emoji: '🌟', title: 'Confident Speaker',     subtitle: 'HSK 4', color: '#FF9F43' },
+  { id: 'hsk5', number: 5, emoji: '🔥', title: 'Communicator',          subtitle: 'HSK 5', color: '#a29bfe' },
+  { id: 'hsk6', number: 6, emoji: '🎓', title: 'Advanced',              subtitle: 'HSK 6', color: '#fd79a8' },
 ];
 
 const LESSONS_BY_LEVEL = {
@@ -39,13 +41,15 @@ const LESSONS_BY_LEVEL = {
 
 export default function HomeScreen({
   userData,
+  levelState,
   onLessonPress,
   onLevelQuizPress,
-  onChangeLevel,
+  onChangeLevelConfirm,
   onRetakeTest,
 }) {
   const [showMenu, setShowMenu] = useState(false);
   const [selectedLevel, setSelectedLevel] = useState(null);
+  const [showLevelChangeModal, setShowLevelChangeModal] = useState(false);
 
   const { result } = userData;
   const currentLevelConfig =
@@ -61,12 +65,24 @@ export default function HomeScreen({
     alert('✍️ Chinese Characters\n\nLearn to read and write:\n• Stroke order\n• Radicals\n• Character components\n\n(Coming soon!)');
   };
 
+  const canChangeLevel = levelState.levelSetBy === 'manual' && !levelState.levelChangedUsed;
+
   const handleLevelPress = (level) => {
-    if (!level.available) {
-      alert(`${level.emoji} Level ${level.number}: ${level.title}\n\nComing soon!`);
+    if (level.id === 'hsk6') {
+      alert('🎓 Level 6: Advanced\n\nThis advanced level is coming soon!\nKeep working through the earlier levels. 加油！');
+      return;
+    }
+    const isLocked = !levelState.unlockedLevels.includes(level.id);
+    if (isLocked) {
+      alert(`${level.emoji} Level ${level.number}: ${level.title}\n\nComplete the previous level quiz with 60%+ to unlock this level!`);
       return;
     }
     setSelectedLevel(level);
+  };
+
+  const handleChangeLevelConfirm = (newLevelId) => {
+    onChangeLevelConfirm(newLevelId);
+    setShowLevelChangeModal(false);
   };
 
   // ── Level lessons view ──────────────────────────────────────────
@@ -119,7 +135,7 @@ export default function HomeScreen({
           <View style={styles.quizSection}>
             <TouchableOpacity
               style={[styles.quizCard, { borderColor: selectedLevel.color }]}
-              onPress={onLevelQuizPress}
+              onPress={() => onLevelQuizPress(selectedLevel.id)}
               activeOpacity={0.8}
             >
               <Text style={styles.quizEmoji}>🏆</Text>
@@ -183,47 +199,55 @@ export default function HomeScreen({
           </View>
         </View>
 
-        {/* Chinese Levels */}
+        {/* Chinese Journey path */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>🎓 Chinese Levels</Text>
-          {LEVEL_CONFIG.map((level) => {
+          <Text style={styles.sectionTitle}>🗺 Chinese Journey</Text>
+          {LEVEL_CONFIG.map((level, index) => {
             const isCurrent = level.id === result.recommendedLevel;
-            const isLocked = !level.available;
+            const isComingSoon = level.id === 'hsk6';
+            const isLocked = isComingSoon || !levelState.unlockedLevels.includes(level.id);
+            const isCompleted = levelState.completedLevels.includes(level.id);
+            const isLast = index === LEVEL_CONFIG.length - 1;
+            const dotColor = isCompleted ? '#1DD1A1' : isLocked ? '#2d3436' : level.color;
+
             return (
-              <TouchableOpacity
-                key={level.id}
-                style={[
-                  styles.levelCard,
-                  { borderColor: isLocked ? '#2d3436' : level.color },
-                  isCurrent && { backgroundColor: level.color + '15' },
-                ]}
-                onPress={() => handleLevelPress(level)}
-                activeOpacity={0.8}
-              >
-                <Text style={[styles.levelCardEmoji, isLocked && styles.dimmed]}>{level.emoji}</Text>
-                <View style={styles.levelCardInfo}>
-                  <View style={styles.levelCardTitleRow}>
-                    <Text style={[styles.levelCardNumber, { color: isLocked ? '#636e72' : level.color }]}>
+              <View key={level.id} style={styles.pathRow}>
+                {/* Left connector */}
+                <View style={styles.pathConnectorCol}>
+                  <View style={[styles.pathDot, { backgroundColor: dotColor, borderColor: dotColor }]}>
+                    {isCompleted && <Text style={styles.pathDotCheck}>✓</Text>}
+                    {isCurrent && !isCompleted && <View style={[styles.pathDotInner, { backgroundColor: level.color }]} />}
+                  </View>
+                  {!isLast && <View style={[styles.pathLine, { backgroundColor: isCompleted ? '#1DD1A1' : '#2d3436' }]} />}
+                </View>
+
+                {/* Card */}
+                <TouchableOpacity
+                  style={[
+                    styles.pathCard,
+                    isCurrent && { backgroundColor: level.color + '15', borderColor: level.color },
+                    isCompleted && { borderColor: '#1DD1A1' + '88' },
+                  ]}
+                  onPress={() => handleLevelPress(level)}
+                  activeOpacity={0.8}
+                >
+                  <Text style={[styles.pathEmoji, isLocked && !isComingSoon && styles.dimmed]}>{level.emoji}</Text>
+                  <View style={styles.pathInfo}>
+                    <Text style={[styles.pathLevelNum, { color: isLocked ? '#636e72' : level.color }]}>
                       Level {level.number}
                     </Text>
-                    {isCurrent && (
-                      <View style={[styles.currentBadge, { backgroundColor: level.color }]}>
-                        <Text style={styles.currentBadgeText}>YOUR LEVEL</Text>
-                      </View>
-                    )}
-                    {isLocked && (
-                      <View style={styles.comingSoonBadge}>
-                        <Text style={styles.comingSoonText}>COMING SOON</Text>
-                      </View>
-                    )}
+                    <Text style={[styles.pathTitle, isLocked && !isComingSoon && styles.dimmed]}>{level.title}</Text>
                   </View>
-                  <Text style={[styles.levelCardTitle, isLocked && styles.dimmed]}>{level.title}</Text>
-                  <Text style={[styles.levelCardSubtitle, isLocked && styles.dimmed]}>{level.subtitle}</Text>
-                </View>
-                <Text style={{ fontSize: 18, color: isLocked ? '#2d3436' : level.color }}>
-                  {isLocked ? '🔒' : '→'}
-                </Text>
-              </TouchableOpacity>
+                  <View style={styles.pathStatusCol}>
+                    {isCurrent && !isCompleted && (
+                      <Text style={[styles.pathCurrentLabel, { color: level.color }]}>← Your level</Text>
+                    )}
+                    {isCompleted && <Text style={styles.pathCompletedLabel}>✓ Done</Text>}
+                    {isComingSoon && <Text style={styles.pathSoonLabel}>Soon</Text>}
+                    {isLocked && !isComingSoon && <Text style={styles.pathLockIcon}>🔒</Text>}
+                  </View>
+                </TouchableOpacity>
+              </View>
             );
           })}
         </View>
@@ -287,16 +311,27 @@ export default function HomeScreen({
               <Text style={styles.menuSectionTitle}>⚙️ Settings</Text>
             </View>
 
-            <TouchableOpacity
-              style={styles.menuItem}
-              onPress={() => { setShowMenu(false); onChangeLevel(); }}
-            >
-              <Text style={styles.menuItemEmoji}>🔄</Text>
-              <View style={styles.menuItemTextContainer}>
-                <Text style={styles.menuItemText}>Change Level</Text>
-              </View>
-              <Text style={styles.menuItemArrow}>→</Text>
-            </TouchableOpacity>
+            {levelState.levelSetBy === 'manual' && (
+              <TouchableOpacity
+                style={[styles.menuItem, levelState.levelChangedUsed && styles.menuItemDisabled]}
+                onPress={() => {
+                  if (levelState.levelChangedUsed) return;
+                  setShowMenu(false);
+                  setShowLevelChangeModal(true);
+                }}
+              >
+                <Text style={styles.menuItemEmoji}>🔄</Text>
+                <View style={styles.menuItemTextContainer}>
+                  <Text style={[styles.menuItemText, levelState.levelChangedUsed && styles.menuItemTextDisabled]}>
+                    Change Level
+                  </Text>
+                  {levelState.levelChangedUsed && (
+                    <Text style={styles.menuItemSubtext}>Already used (one-time only)</Text>
+                  )}
+                </View>
+                {!levelState.levelChangedUsed && <Text style={styles.menuItemArrow}>→</Text>}
+              </TouchableOpacity>
+            )}
 
             <TouchableOpacity
               style={styles.menuItem}
@@ -322,6 +357,14 @@ export default function HomeScreen({
           </View>
         </TouchableOpacity>
       </Modal>
+
+      <LevelChangeModal
+        visible={showLevelChangeModal}
+        onClose={() => setShowLevelChangeModal(false)}
+        onConfirm={handleChangeLevelConfirm}
+        currentLevelId={result.recommendedLevel}
+        mode="manual"
+      />
     </SafeAreaView>
   );
 }
@@ -352,19 +395,26 @@ const styles = StyleSheet.create({
   foundationTitle:      { fontSize: 15, fontWeight: '800', color: '#fff', marginBottom: 4 },
   foundationSubtitle:   { fontSize: 12, color: '#636e72', textAlign: 'center' },
 
-  // Level cards (hub)
-  levelCard:            { flexDirection: 'row', alignItems: 'center', backgroundColor: '#16213e', borderRadius: 16, padding: 16, marginBottom: 12, borderWidth: 1.5 },
-  levelCardEmoji:       { fontSize: 28, marginRight: 14, width: 36, textAlign: 'center' },
-  levelCardInfo:        { flex: 1 },
-  levelCardTitleRow:    { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 3 },
-  levelCardNumber:      { fontSize: 13, fontWeight: '800', letterSpacing: 0.5 },
-  levelCardTitle:       { fontSize: 16, fontWeight: '700', color: '#fff', marginBottom: 2 },
-  levelCardSubtitle:    { fontSize: 12, color: '#636e72' },
-  currentBadge:         { paddingHorizontal: 7, paddingVertical: 2, borderRadius: 6 },
-  currentBadgeText:     { fontSize: 9, fontWeight: '900', color: '#fff', letterSpacing: 0.5 },
-  comingSoonBadge:      { paddingHorizontal: 7, paddingVertical: 2, borderRadius: 6, backgroundColor: 'rgba(255,255,255,0.08)' },
-  comingSoonText:       { fontSize: 9, fontWeight: '700', color: '#636e72', letterSpacing: 0.5 },
+  // Chinese Journey path
+  pathRow:            { flexDirection: 'row', alignItems: 'flex-start', marginBottom: 0 },
+  pathConnectorCol:   { alignItems: 'center', width: 32, marginRight: 10, marginTop: 14 },
+  pathDot:            { width: 18, height: 18, borderRadius: 9, borderWidth: 2, alignItems: 'center', justifyContent: 'center' },
+  pathDotInner:       { width: 8, height: 8, borderRadius: 4 },
+  pathDotCheck:       { fontSize: 10, color: '#fff', fontWeight: '900' },
+  pathLine:           { width: 2, flex: 1, minHeight: 20, marginVertical: 2 },
+  pathCard:           { flex: 1, flexDirection: 'row', alignItems: 'center', backgroundColor: '#16213e', borderRadius: 14, padding: 14, marginBottom: 8, borderWidth: 1.5, borderColor: '#2d3436', gap: 10 },
+  pathEmoji:          { fontSize: 24, width: 30, textAlign: 'center' },
+  pathInfo:           { flex: 1 },
+  pathLevelNum:       { fontSize: 12, fontWeight: '800', letterSpacing: 0.5, marginBottom: 2 },
+  pathTitle:          { fontSize: 15, fontWeight: '700', color: '#fff' },
+  pathStatusCol:      { alignItems: 'flex-end', minWidth: 70 },
+  pathCurrentLabel:   { fontSize: 11, fontWeight: '800' },
+  pathCompletedLabel: { fontSize: 11, fontWeight: '700', color: '#1DD1A1' },
+  pathSoonLabel:      { fontSize: 10, fontWeight: '700', color: '#636e72', backgroundColor: 'rgba(255,255,255,0.07)', paddingHorizontal: 6, paddingVertical: 2, borderRadius: 6 },
+  pathLockIcon:       { fontSize: 14 },
   dimmed:               { opacity: 0.4 },
+  menuItemDisabled:     { opacity: 0.5 },
+  menuItemTextDisabled: { color: '#636e72' },
 
   // Level lessons view
   levelDetailBadge:     { flexDirection: 'row', alignItems: 'center', gap: 14, backgroundColor: '#16213e', borderRadius: 20, padding: 20, marginBottom: 24, borderWidth: 2 },
