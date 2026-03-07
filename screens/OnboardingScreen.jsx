@@ -55,9 +55,9 @@ const TYPE_LABELS = {
   pinyin: { label: "🔈 Pinyin",           bg: "rgba(162,155,254,0.2)" },
 };
 
-export default function OnboardingScreen({ onComplete }) {
-  const [step, setStep]             = useState(STEP_AGE);
-  const [age, setAge]               = useState("");
+export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
+  const [step, setStep]             = useState(initialAge ? STEP_PATH : STEP_AGE);
+  const [age, setAge]               = useState(initialAge ? String(initialAge) : "");
   const [ageError, setAgeError]     = useState("");
   const [phase, setPhase]           = useState(1);
   const [questions, setQuestions]   = useState([]);
@@ -166,6 +166,18 @@ export default function OnboardingScreen({ onComplete }) {
         {/* ── PATH ── */}
         {step === STEP_PATH && (
           <ScrollView contentContainerStyle={s.centered}>
+            <TouchableOpacity
+              style={s.pathBackBtn}
+              onPress={() => {
+                if (initialAge) {
+                  onCancel?.();
+                } else {
+                  fade(() => setStep(STEP_AGE));
+                }
+              }}
+            >
+              <Text style={s.backBtn}>← Back</Text>
+            </TouchableOpacity>
             <Text style={s.bigEmoji}>📚</Text>
             <Text style={s.title}>How well do you know Chinese?</Text>
             <Text style={s.subtitle}>Age: {age}</Text>
@@ -483,6 +495,7 @@ const s = StyleSheet.create({
   pathArrow:    { fontSize: 20, color: "#636e72" },
   orDivider:    { color: "#636e72", fontSize: 13, marginVertical: 8 },
 
+  pathBackBtn:  { alignSelf: "flex-start", marginBottom: 8 },
   backBtn:      { color: "#636e72", fontSize: 15, fontWeight: "500", marginBottom: 16 },
   levelCard:    { flexDirection: "row", alignItems: "center", backgroundColor: "#16213e", borderRadius: 16, padding: 16, marginBottom: 10, borderWidth: 2 },
   levelEmoji:   { fontSize: 28, marginRight: 14, width: 40, textAlign: "center" },

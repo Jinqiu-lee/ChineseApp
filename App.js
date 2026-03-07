@@ -61,9 +61,9 @@ export default function App() {
   };
 
   const handleRetakeTest = () => {
-    setCurrentScreen('onboarding');
-    setUserData(null);
+    // Keep userData so the age is preserved — OnboardingScreen will skip the age step
     setLevelState({ unlockedLevels: ['hsk1'], completedLevels: [], levelSetBy: 'manual', levelChangedUsed: false });
+    setCurrentScreen('onboarding');
   };
 
   const handlePlayGame = (gameType) => {
@@ -97,7 +97,13 @@ export default function App() {
   };
 
   if (currentScreen === 'onboarding') {
-    return <OnboardingScreen onComplete={handleOnboardingComplete} />;
+    return (
+      <OnboardingScreen
+        onComplete={handleOnboardingComplete}
+        initialAge={userData?.age}
+        onCancel={userData ? handleBackToHome : null}
+      />
+    );
   }
 
   if (currentScreen === 'home') {
