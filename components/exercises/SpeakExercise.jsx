@@ -21,7 +21,6 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
   const [phase, setPhase] = useState('idle');
   const [attempts, setAttempts] = useState(0);
   const [accuracy, setAccuracy] = useState(null);
-  const [timer, setTimer] = useState(0);
   const recordingRef = useRef(null);
   const timerRef = useRef(null);
 
@@ -48,20 +47,8 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
   const handleStartRecording = async () => {
     try {
       setPhase('recording');
-      setTimer(0);
       const recording = await startRecording();
       recordingRef.current = recording;
-
-      // Timer tick
-      timerRef.current = setInterval(() => {
-        setTimer(t => {
-          if (t >= 7) {
-            handleStopRecording();
-            return t;
-          }
-          return t + 1;
-        });
-      }, 1000);
     } catch (err) {
       console.error('startRecording error:', err);
       setPhase('idle');
@@ -142,10 +129,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
 
         <View style={styles.recordingCard}>
           <Text style={styles.recordingIcon}>🎙</Text>
-          <Text style={styles.timerText}>{timer}s / 8s</Text>
-          <View style={styles.timerBar}>
-            <View style={[styles.timerFill, { width: `${(timer / 8) * 100}%` }]} />
-          </View>
+          <Text style={styles.recordingHint}>Tap Stop when you're done</Text>
         </View>
 
         <TouchableOpacity style={styles.stopBtn} onPress={handleStopRecording} activeOpacity={0.8}>
@@ -317,15 +301,7 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   recordingIcon: { fontSize: 52 },
-  timerText: { fontSize: 16, color: '#FF6B6B', fontWeight: '700' },
-  timerBar: {
-    width: '100%',
-    height: 6,
-    backgroundColor: 'rgba(255,107,107,0.2)',
-    borderRadius: 3,
-    overflow: 'hidden',
-  },
-  timerFill: { height: '100%', backgroundColor: '#FF6B6B', borderRadius: 3 },
+  recordingHint: { fontSize: 14, color: '#FF6B6B', fontWeight: '600' },
 
   stopBtn: {
     backgroundColor: '#FF6B6B',

@@ -162,10 +162,16 @@ export function generateStages(lessonData) {
   const vocab = lessonData.vocabulary || [];
   const sentences = (lessonData.key_sentences || []).filter(s => s?.chinese);
 
-  // Only multi-character words for speak exercises — single chars aren't
-  // reliably recognised by Google STT in isolation
-  const speakVocab = vocab.filter(v => v.chinese && [...v.chinese].length >= 2);
-  const speakPool = speakVocab.length > 0 ? speakVocab : vocab;
+  // Speak pool: multi-character words + phrases + key sentences
+  // Single characters are excluded — Google STT doesn't reliably recognise them in isolation
+  const multiCharWords = vocab.filter(v => v.chinese && [...v.chinese].length >= 2);
+  const sentenceItems = sentences.map(s => ({
+    chinese: s.chinese,
+    pinyin: s.pinyin || '',
+    english: s.english || '',
+  }));
+  const speakPool = shuffle([...multiCharWords, ...sentenceItems]);
+  const safePool = speakPool.length > 0 ? speakPool : vocab;
 
   // Stage 1 – First Look: 5 flashcards · 3 audio choice · 2 match pairs
   const s1 = [
@@ -180,8 +186,8 @@ export function generateStages(lessonData) {
     ...Array.from({ length: 5 }, (_, i) => makeAudioChoice(vocab[i % vocab.length], vocab)),
     ...Array.from({ length: 3 }, (_, i) =>
       fillOrFallback(sentences[i % sentences.length], i + 5, vocab)),
-    makeSpeakRepeat(speakPool[0 % speakPool.length]),
-    makeSpeakRepeat(speakPool[1 % speakPool.length]),
+    makeSpeakRepeat(safePool[0 % safePool.length]),
+    makeSpeakRepeat(safePool[1 % safePool.length]),
   ];
 
   // Stage 3 – Build Sentences: 4 arrange · 4 fill blank · 2 speak_translate
@@ -190,8 +196,8 @@ export function generateStages(lessonData) {
       arrangeOrFallback(sentences[i % sentences.length], i, vocab)),
     ...Array.from({ length: 4 }, (_, i) =>
       fillOrFallback(sentences[(i + 1) % sentences.length], i + 4, vocab)),
-    makeSpeakTranslate(speakPool[2 % speakPool.length]),
-    makeSpeakTranslate(speakPool[3 % speakPool.length]),
+    makeSpeakTranslate(safePool[2 % safePool.length]),
+    makeSpeakTranslate(safePool[3 % safePool.length]),
   ];
 
   // Stage 4 – Match & Review: 4 match pairs · 4 audio choice · 2 speak_repeat
@@ -203,8 +209,8 @@ export function generateStages(lessonData) {
     }),
     ...Array.from({ length: 4 }, (_, i) =>
       makeAudioChoice(vocab[(i + 7) % vocab.length], vocab)),
-    makeSpeakRepeat(speakPool[4 % speakPool.length]),
-    makeSpeakRepeat(speakPool[5 % speakPool.length]),
+    makeSpeakRepeat(safePool[4 % safePool.length]),
+    makeSpeakRepeat(safePool[5 % safePool.length]),
   ];
 
   // Stage 5 – Final Challenge: 2 flash · 1 audio · 1 fill · 1 arrange · 1 match · 2 speak_repeat · 2 speak_translate
@@ -215,10 +221,10 @@ export function generateStages(lessonData) {
     fillOrFallback(sentences[Math.min(4, sentences.length - 1)], 4, vocab),
     arrangeOrFallback(sentences[0], 5, vocab),
     makeMatchPairs(shuffle([...vocab])),
-    makeSpeakRepeat(speakPool[Math.min(6, speakPool.length - 1)]),
-    makeSpeakRepeat(speakPool[Math.min(7, speakPool.length - 1)]),
-    makeSpeakTranslate(speakPool[Math.min(8, speakPool.length - 1)]),
-    makeSpeakTranslate(speakPool[Math.min(9, speakPool.length - 1)]),
+    makeSpeakRepeat(safePool[Math.min(6, safePool.length - 1)]),
+    makeSpeakRepeat(safePool[Math.min(7, safePool.length - 1)]),
+    makeSpeakTranslate(safePool[Math.min(8, safePool.length - 1)]),
+    makeSpeakTranslate(safePool[Math.min(9, safePool.length - 1)]),
   ];
 
   return [s1, s2, s3, s4, s5];
