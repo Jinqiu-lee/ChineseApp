@@ -26,13 +26,6 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
 
   const isRepeat = exercise.subtype === 'repeat';
 
-  // Auto-play audio on mount for "repeat" exercises
-  useEffect(() => {
-    if (isRepeat) {
-      const t = setTimeout(() => speakChinese(exercise.chinese), 400);
-      return () => clearTimeout(t);
-    }
-  }, []);
 
   // Cleanup recording on unmount
   useEffect(() => {
