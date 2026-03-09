@@ -24,9 +24,16 @@ const STAGE_META = [
   { name: 'Final Challenge', desc: 'All types · Full review',        icon: '🏆', color: '#FF6B6B' },
 ];
 
+const ROUND_INFO = {
+  1: { label: 'Round 1', sub: 'Learn', color: '#a29bfe' },
+  2: { label: 'Round 2', sub: 'Practice', color: '#54A0FF' },
+  3: { label: 'Round 3', sub: 'Master', color: '#1DD1A1' },
+};
+
 export default function LessonDetailScreen({
   lessonId,
   stageProgress = [],
+  currentRound = 1,
   onBack,
   onLessonComplete,
   onTakeQuiz,
@@ -159,6 +166,22 @@ export default function LessonDetailScreen({
           <Text style={styles.stageCount}>{completedCount}/5 done</Text>
         </View>
 
+        {/* Round badge */}
+        {(() => {
+          const r = ROUND_INFO[currentRound] || ROUND_INFO[1];
+          return (
+            <View style={[styles.roundBadge, { borderColor: `${r.color}55`, backgroundColor: `${r.color}18` }]}>
+              <View style={[styles.roundDot, { backgroundColor: r.color }]} />
+              <Text style={[styles.roundBadgeText, { color: r.color }]}>{r.label} · {r.sub}</Text>
+              <View style={styles.roundDots}>
+                {[1, 2, 3].map(n => (
+                  <View key={n} style={[styles.roundPip, { backgroundColor: n <= currentRound ? r.color : '#2d3436' }]} />
+                ))}
+              </View>
+            </View>
+          );
+        })()}
+
         {STAGE_META.map((stage, i) => {
           const unlocked = isUnlocked(i);
           const completed = isCompleted(i);
@@ -276,6 +299,22 @@ const styles = StyleSheet.create({
 
   // Expanded section
   expandedSection: { marginBottom: 24, marginTop: 4 },
+
+  // Round badge
+  roundBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderRadius: 12,
+    borderWidth: 1,
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+    marginBottom: 12,
+    gap: 8,
+  },
+  roundDot: { width: 8, height: 8, borderRadius: 4 },
+  roundBadgeText: { fontSize: 14, fontWeight: '800', flex: 1 },
+  roundDots: { flexDirection: 'row', gap: 4 },
+  roundPip: { width: 8, height: 8, borderRadius: 4 },
 
   // Stage cards
   stageCard: {

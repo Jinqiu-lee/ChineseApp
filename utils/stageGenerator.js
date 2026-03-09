@@ -157,75 +157,162 @@ function arrangeOrFallback(sentence, i, vocab) {
   return makeArrange(sentence, vocab) || makeFillBlank(sentence, vocab) || fallbackAudio(i, vocab);
 }
 
-// ── Main export ──────────────────────────────────────────────────────────
-export function generateStages(lessonData) {
+// ── Shared setup ─────────────────────────────────────────────────────────
+function buildSpeakPool(vocab, sentences) {
+  const multiChar = vocab.filter(v => v.chinese && [...v.chinese].length >= 2);
+  const sentItems = sentences.map(s => ({ chinese: s.chinese, pinyin: s.pinyin || '', english: s.english || '' }));
+  const pool = shuffle([...multiChar, ...sentItems]);
+  return pool.length > 0 ? pool : vocab;
+}
+
+// Helpers that wrap index with modulo so we never go out of bounds
+function v(vocab, i) { return vocab[i % vocab.length]; }
+function s(sentences, i) { return sentences[i % sentences.length]; }
+function p(pool, i) { return pool[i % pool.length]; }
+
+// ── Round 1 – Learn: recognition & introduction ──────────────────────────
+function buildLearnRound(vocab, sentences, pool) {
+  const s1 = [
+    ...Array.from({ length: 5 }, (_, i) => makeFlashcard(v(vocab, i))),
+    ...Array.from({ length: 3 }, (_, i) => makeAudioChoice(v(vocab, i + 5), vocab)),
+    makeMatchPairs(shuffle([...vocab])),
+    makeMatchPairs(shuffle([...vocab])),
+  ];
+  const s2 = [
+    ...Array.from({ length: 5 }, (_, i) => makeAudioChoice(v(vocab, i), vocab)),
+    ...Array.from({ length: 3 }, (_, i) => fillOrFallback(s(sentences, i), i + 5, vocab)),
+    makeSpeakRepeat(p(pool, 0)),
+    makeSpeakRepeat(p(pool, 1)),
+  ];
+  const s3 = [
+    ...Array.from({ length: 4 }, (_, i) => arrangeOrFallback(s(sentences, i), i, vocab)),
+    ...Array.from({ length: 4 }, (_, i) => fillOrFallback(s(sentences, i + 1), i + 4, vocab)),
+    makeSpeakTranslate(p(pool, 2)),
+    makeSpeakTranslate(p(pool, 3)),
+  ];
+  const s4 = [
+    ...Array.from({ length: 4 }, (_, i) =>
+      makeMatchPairs(Array.from({ length: 4 }, (_, j) => v(vocab, i * 4 + j)))),
+    ...Array.from({ length: 4 }, (_, i) => makeAudioChoice(v(vocab, i + 7), vocab)),
+    makeSpeakRepeat(p(pool, 4)),
+    makeSpeakRepeat(p(pool, 5)),
+  ];
+  const s5 = [
+    makeFlashcard(v(vocab, 8)),
+    makeFlashcard(v(vocab, 9)),
+    makeAudioChoice(v(vocab, 10), vocab),
+    fillOrFallback(s(sentences, 4), 4, vocab),
+    arrangeOrFallback(s(sentences, 0), 5, vocab),
+    makeMatchPairs(shuffle([...vocab])),
+    makeSpeakRepeat(p(pool, 6)),
+    makeSpeakRepeat(p(pool, 7)),
+    makeSpeakTranslate(p(pool, 8)),
+    makeSpeakTranslate(p(pool, 9)),
+  ];
+  return [s1, s2, s3, s4, s5];
+}
+
+// ── Round 2 – Practice: sentence production, offset vocab ────────────────
+function buildPracticeRound(vocab, sentences, pool) {
+  const O = 3; // vocab offset keeps questions fresh
+  const s1 = [
+    ...Array.from({ length: 3 }, (_, i) => makeFlashcard(v(vocab, i + O))),
+    ...Array.from({ length: 3 }, (_, i) => makeAudioChoice(v(vocab, i + O + 3), vocab)),
+    ...Array.from({ length: 2 }, (_, i) => fillOrFallback(s(sentences, i + O), i, vocab)),
+    makeMatchPairs(shuffle([...vocab])),
+    makeMatchPairs(shuffle([...vocab])),
+  ];
+  const s2 = [
+    ...Array.from({ length: 4 }, (_, i) => fillOrFallback(s(sentences, i + O + 1), i, vocab)),
+    ...Array.from({ length: 4 }, (_, i) => arrangeOrFallback(s(sentences, i + O), i + 4, vocab)),
+    makeSpeakRepeat(p(pool, O)),
+    makeSpeakRepeat(p(pool, O + 1)),
+  ];
+  const s3 = [
+    ...Array.from({ length: 5 }, (_, i) => arrangeOrFallback(s(sentences, i + O + 1), i, vocab)),
+    ...Array.from({ length: 3 }, (_, i) => fillOrFallback(s(sentences, i + O + 2), i + 5, vocab)),
+    makeSpeakTranslate(p(pool, O + 2)),
+    makeSpeakTranslate(p(pool, O + 3)),
+  ];
+  const s4 = [
+    ...Array.from({ length: 4 }, (_, i) =>
+      makeMatchPairs(Array.from({ length: 4 }, (_, j) => v(vocab, (i + 2) * 3 + j)))),
+    ...Array.from({ length: 3 }, (_, i) => makeAudioChoice(v(vocab, i + O + 4), vocab)),
+    makeSpeakRepeat(p(pool, O + 4)),
+    makeSpeakRepeat(p(pool, O + 5)),
+    makeSpeakTranslate(p(pool, O + 6)),
+  ];
+  const s5 = [
+    makeAudioChoice(v(vocab, O + 5), vocab),
+    makeAudioChoice(v(vocab, O + 6), vocab),
+    fillOrFallback(s(sentences, O + 3), 0, vocab),
+    fillOrFallback(s(sentences, O + 4), 1, vocab),
+    arrangeOrFallback(s(sentences, O + 2), 2, vocab),
+    arrangeOrFallback(s(sentences, O + 3), 3, vocab),
+    makeMatchPairs(shuffle([...vocab])),
+    makeSpeakRepeat(p(pool, O + 7)),
+    makeSpeakTranslate(p(pool, O + 8)),
+    makeSpeakTranslate(p(pool, O + 9)),
+  ];
+  return [s1, s2, s3, s4, s5];
+}
+
+// ── Round 3 – Master: heavy speaking & full production ────────────────────
+function buildMasteryRound(vocab, sentences, pool) {
+  const O = 7;
+  const s1 = [
+    ...Array.from({ length: 3 }, (_, i) => arrangeOrFallback(s(sentences, i + O), i, vocab)),
+    ...Array.from({ length: 3 }, (_, i) => fillOrFallback(s(sentences, i + O + 1), i + 3, vocab)),
+    makeSpeakRepeat(p(pool, O)),
+    makeSpeakRepeat(p(pool, O + 1)),
+    makeMatchPairs(shuffle([...vocab])),
+    makeMatchPairs(shuffle([...vocab])),
+  ];
+  const s2 = [
+    ...Array.from({ length: 4 }, (_, i) => makeSpeakRepeat(p(pool, O + 2 + i))),
+    ...Array.from({ length: 3 }, (_, i) => fillOrFallback(s(sentences, i + O + 2), i, vocab)),
+    ...Array.from({ length: 3 }, (_, i) =>
+      makeMatchPairs(Array.from({ length: 4 }, (_, j) => v(vocab, i * 5 + j)))),
+  ];
+  const s3 = [
+    ...Array.from({ length: 5 }, (_, i) => makeSpeakTranslate(p(pool, O + 6 + i))),
+    ...Array.from({ length: 3 }, (_, i) => arrangeOrFallback(s(sentences, i + O + 1), i, vocab)),
+    ...Array.from({ length: 2 }, (_, i) => fillOrFallback(s(sentences, i + O + 3), i + 3, vocab)),
+  ];
+  const s4 = [
+    ...Array.from({ length: 4 }, (_, i) => makeSpeakRepeat(p(pool, O + 11 + i))),
+    ...Array.from({ length: 4 }, (_, i) => makeSpeakTranslate(p(pool, O + 15 + i))),
+    makeMatchPairs(shuffle([...vocab])),
+    makeAudioChoice(v(vocab, O + 4), vocab),
+  ];
+  const s5 = [
+    fillOrFallback(s(sentences, O), 0, vocab),
+    fillOrFallback(s(sentences, O + 1), 1, vocab),
+    arrangeOrFallback(s(sentences, O + 2), 2, vocab),
+    arrangeOrFallback(s(sentences, O + 3), 3, vocab),
+    makeMatchPairs(shuffle([...vocab])),
+    makeMatchPairs(shuffle([...vocab])),
+    makeSpeakRepeat(p(pool, O + 19)),
+    makeSpeakRepeat(p(pool, O + 20)),
+    makeSpeakTranslate(p(pool, O + 21)),
+    makeSpeakTranslate(p(pool, O + 22)),
+  ];
+  return [s1, s2, s3, s4, s5];
+}
+
+// ── Exports ───────────────────────────────────────────────────────────────
+export function generateRounds(lessonData) {
   const vocab = lessonData.vocabulary || [];
   const sentences = (lessonData.key_sentences || []).filter(s => s?.chinese);
-
-  // Speak pool: multi-character words + phrases + key sentences
-  // Single characters are excluded — Google STT doesn't reliably recognise them in isolation
-  const multiCharWords = vocab.filter(v => v.chinese && [...v.chinese].length >= 2);
-  const sentenceItems = sentences.map(s => ({
-    chinese: s.chinese,
-    pinyin: s.pinyin || '',
-    english: s.english || '',
-  }));
-  const speakPool = shuffle([...multiCharWords, ...sentenceItems]);
-  const safePool = speakPool.length > 0 ? speakPool : vocab;
-
-  // Stage 1 – First Look: 5 flashcards · 3 audio choice · 2 match pairs
-  const s1 = [
-    ...Array.from({ length: 5 }, (_, i) => makeFlashcard(vocab[i % vocab.length])),
-    ...Array.from({ length: 3 }, (_, i) => makeAudioChoice(vocab[(i + 5) % vocab.length], vocab)),
-    makeMatchPairs(shuffle([...vocab])),
-    makeMatchPairs(shuffle([...vocab])),
+  const pool = buildSpeakPool(vocab, sentences);
+  return [
+    buildLearnRound(vocab, sentences, pool),
+    buildPracticeRound(vocab, sentences, pool),
+    buildMasteryRound(vocab, sentences, pool),
   ];
+}
 
-  // Stage 2 – Listen & Choose: 5 audio choice · 3 fill blank · 2 speak_repeat
-  const s2 = [
-    ...Array.from({ length: 5 }, (_, i) => makeAudioChoice(vocab[i % vocab.length], vocab)),
-    ...Array.from({ length: 3 }, (_, i) =>
-      fillOrFallback(sentences[i % sentences.length], i + 5, vocab)),
-    makeSpeakRepeat(safePool[0 % safePool.length]),
-    makeSpeakRepeat(safePool[1 % safePool.length]),
-  ];
-
-  // Stage 3 – Build Sentences: 4 arrange · 4 fill blank · 2 speak_translate
-  const s3 = [
-    ...Array.from({ length: 4 }, (_, i) =>
-      arrangeOrFallback(sentences[i % sentences.length], i, vocab)),
-    ...Array.from({ length: 4 }, (_, i) =>
-      fillOrFallback(sentences[(i + 1) % sentences.length], i + 4, vocab)),
-    makeSpeakTranslate(safePool[2 % safePool.length]),
-    makeSpeakTranslate(safePool[3 % safePool.length]),
-  ];
-
-  // Stage 4 – Match & Review: 4 match pairs · 4 audio choice · 2 speak_repeat
-  const s4 = [
-    ...Array.from({ length: 4 }, (_, i) => {
-      const start = (i * 4) % vocab.length;
-      const items = Array.from({ length: 4 }, (_, j) => vocab[(start + j) % vocab.length]);
-      return makeMatchPairs(items);
-    }),
-    ...Array.from({ length: 4 }, (_, i) =>
-      makeAudioChoice(vocab[(i + 7) % vocab.length], vocab)),
-    makeSpeakRepeat(safePool[4 % safePool.length]),
-    makeSpeakRepeat(safePool[5 % safePool.length]),
-  ];
-
-  // Stage 5 – Final Challenge: 2 flash · 1 audio · 1 fill · 1 arrange · 1 match · 2 speak_repeat · 2 speak_translate
-  const s5 = [
-    makeFlashcard(vocab[Math.min(8, vocab.length - 1)]),
-    makeFlashcard(vocab[Math.min(9, vocab.length - 1)]),
-    makeAudioChoice(vocab[Math.min(10, vocab.length - 1)], vocab),
-    fillOrFallback(sentences[Math.min(4, sentences.length - 1)], 4, vocab),
-    arrangeOrFallback(sentences[0], 5, vocab),
-    makeMatchPairs(shuffle([...vocab])),
-    makeSpeakRepeat(safePool[Math.min(6, safePool.length - 1)]),
-    makeSpeakRepeat(safePool[Math.min(7, safePool.length - 1)]),
-    makeSpeakTranslate(safePool[Math.min(8, safePool.length - 1)]),
-    makeSpeakTranslate(safePool[Math.min(9, safePool.length - 1)]),
-  ];
-
-  return [s1, s2, s3, s4, s5];
+// Backward-compat alias
+export function generateStages(lessonData) {
+  return generateRounds(lessonData)[0];
 }

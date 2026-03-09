@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { generateStages } from '../utils/stageGenerator';
+import { generateRounds } from '../utils/stageGenerator';
 import FlashcardExercise from '../components/exercises/FlashcardExercise';
 import AudioChoiceExercise from '../components/exercises/AudioChoiceExercise';
 import FillBlankExercise from '../components/exercises/FillBlankExercise';
@@ -13,15 +13,16 @@ const STAGE_NAMES = [
   'First Look', 'Listen & Choose', 'Build Sentences', 'Match & Review', 'Final Challenge',
 ];
 
-export default function StageExercisesScreen({ lessonData, stageIndex, onComplete, onBack }) {
+export default function StageExercisesScreen({ lessonData, stageIndex, roundIndex = 0, onComplete, onBack }) {
   const [exercises, setExercises] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [done, setDone] = useState(false);
 
   useEffect(() => {
-    const stages = generateStages(lessonData);
-    setExercises(stages[stageIndex] || []);
+    const rounds = generateRounds(lessonData);
+    const round = rounds[roundIndex] || rounds[0];
+    setExercises(round[stageIndex] || []);
   }, []);
 
   const advance = (wasCorrect) => {
@@ -70,7 +71,7 @@ export default function StageExercisesScreen({ lessonData, stageIndex, onComplet
           <Text style={styles.doneMessage}>{messages[stars - 1]}</Text>
           <TouchableOpacity
             style={styles.continueBtn}
-            onPress={() => onComplete(stageIndex)}
+            onPress={() => onComplete(stageIndex, score, exercises.length)}
             activeOpacity={0.85}
           >
             <Text style={styles.continueBtnText}>Continue →</Text>

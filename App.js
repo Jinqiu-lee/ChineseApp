@@ -7,6 +7,7 @@ import LessonDetailScreen from './screens/LessonDetailScreen';
 import LevelQuizScreen from './screens/LevelQuizScreen';
 import LessonStagesScreen from './screens/LessonStagesScreen';
 import StageExercisesScreen from './screens/StageExercisesScreen';
+import RoundCompleteScreen from './screens/RoundCompleteScreen';
 
 // Lesson data (needed to pass to stage screens)
 import lesson1 from './data/hsk1/hsk1_lesson_1.json';
@@ -27,6 +28,7 @@ const STORAGE_KEYS = {
   levelState:     '@chineseapp:levelState',
   lessonProgress: '@chineseapp:lessonProgress',
   stageProgress:  '@chineseapp:stageProgress',
+  roundScores:    '@chineseapp:roundScores',
 };
 
 const DEFAULT_LEVEL_STATE = {
@@ -45,18 +47,21 @@ export default function App() {
   const [currentQuizLevelId, setCurrentQuizLevelId] = useState(null);
   const [currentStageIndex, setCurrentStageIndex] = useState(null);
   const [lessonProgress, setLessonProgress] = useState({});
-  const [stageProgress, setStageProgress] = useState({});  // { "hsk1_5": [0, 1, 2] }
+  const [stageProgress, setStageProgress] = useState({});  // { "hsk1_5_r1": [0,1,2] }
+  const [roundScores, setRoundScores] = useState({});      // { "hsk1_5_r1": {score,total} }
   const [levelState, setLevelState] = useState(DEFAULT_LEVEL_STATE);
+  const [currentRound, setCurrentRound] = useState(1);    // 1 | 2 | 3
 
   // ── Load saved data on startup ──────────────────────────────
   useEffect(() => {
     const load = async () => {
       try {
-        const [savedUser, savedLevel, savedProgress, savedStageProgress] = await Promise.all([
+        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores] = await Promise.all([
           AsyncStorage.getItem(STORAGE_KEYS.userData),
           AsyncStorage.getItem(STORAGE_KEYS.levelState),
           AsyncStorage.getItem(STORAGE_KEYS.lessonProgress),
           AsyncStorage.getItem(STORAGE_KEYS.stageProgress),
+          AsyncStorage.getItem(STORAGE_KEYS.roundScores),
         ]);
         const parsedUser = savedUser ? JSON.parse(savedUser) : null;
         if (parsedUser) {
@@ -66,6 +71,7 @@ export default function App() {
         if (savedLevel)         setLevelState(JSON.parse(savedLevel));
         if (savedProgress)      setLessonProgress(JSON.parse(savedProgress));
         if (savedStageProgress) setStageProgress(JSON.parse(savedStageProgress));
+        if (savedRoundScores)   setRoundScores(JSON.parse(savedRoundScores));
       } catch (e) {
         console.warn('Failed to restore saved data:', e);
       } finally {
@@ -96,6 +102,11 @@ export default function App() {
     AsyncStorage.setItem(STORAGE_KEYS.stageProgress, JSON.stringify(stageProgress)).catch(console.warn);
   }, [stageProgress, isLoading]);
 
+  useEffect(() => {
+    if (isLoading) return;
+    AsyncStorage.setItem(STORAGE_KEYS.roundScores, JSON.stringify(roundScores)).catch(console.warn);
+  }, [roundScores, isLoading]);
+
   // ── Splash while loading ─────────────────────────────────────
   if (isLoading) {
     return (
@@ -122,6 +133,10 @@ export default function App() {
   const handleLessonPress = (levelId, lessonId) => {
     setCurrentLessonLevelId(levelId);
     setCurrentLessonId(lessonId);
+    // Derive which round to show based on completed stage progress
+    const r1Done = (stageProgress[`${levelId}_${lessonId}_r1`] || []).length >= 5;
+    const r2Done = (stageProgress[`${levelId}_${lessonId}_r2`] || []).length >= 5;
+    setCurrentRound(r1Done && r2Done ? 3 : r1Done ? 2 : 1);
     setCurrentScreen('lesson');
   };
 
@@ -201,20 +216,47 @@ export default function App() {
     setCurrentScreen('stageExercises');
   };
 
-  const handleStageComplete = (stageIndex) => {
-    const key = `${currentLessonLevelId}_${currentLessonId}`;
-    setStageProgress(prev => {
-      const existing = prev[key] || [];
-      if (existing.includes(stageIndex)) return prev;
-      return { ...prev, [key]: [...existing, stageIndex].sort((a, b) => a - b) };
+  const handleStageComplete = (stageIndex, score = 0, total = 0) => {
+    const key = `${currentLessonLevelId}_${currentLessonId}_r${currentRound}`;
+
+    // Accumulate round score
+    setRoundScores(prev => {
+      const existing = prev[key] || { score: 0, total: 0 };
+      return { ...prev, [key]: { score: existing.score + score, total: existing.total + total } };
     });
-    setCurrentScreen('lessonStages');
+
+    // Update stage completion and compute new progress inline (avoids stale state)
+    const existingStages = stageProgress[key] || [];
+    const newStages = existingStages.includes(stageIndex)
+      ? existingStages
+      : [...existingStages, stageIndex].sort((a, b) => a - b);
+    setStageProgress(prev => ({ ...prev, [key]: newStages }));
+
+    // All 5 stages done → show round complete screen
+    if (newStages.length >= 5) {
+      setCurrentScreen('roundComplete');
+    } else {
+      setCurrentScreen('lesson');
+    }
   };
 
-  // ── Helper to get stage progress for current lesson ──────────
-  const currentStageProgressKey = `${currentLessonLevelId}_${currentLessonId}`;
+  const handleRoundAdvance = () => {
+    setCurrentRound(prev => Math.min(prev + 1, 3));
+    setCurrentScreen('lesson');
+  };
+
+  // ── Helper to get stage progress for current lesson & round ─────────────
+  const currentStageProgressKey = `${currentLessonLevelId}_${currentLessonId}_r${currentRound}`;
   const currentStageProgressArr = stageProgress[currentStageProgressKey] || [];
   const currentLessonData = LESSONS[currentLessonId] || null;
+
+  // Combined accuracy for rounds 1 + 2 (used by RoundCompleteScreen after round 2)
+  const r1Score = roundScores[`${currentLessonLevelId}_${currentLessonId}_r1`] || { score: 0, total: 0 };
+  const r2Score = roundScores[`${currentLessonLevelId}_${currentLessonId}_r2`] || { score: 0, total: 0 };
+  const combinedTotal = r1Score.total + r2Score.total;
+  const combinedAccuracy = combinedTotal > 0
+    ? Math.round(((r1Score.score + r2Score.score) / combinedTotal) * 100)
+    : 0;
 
   // ── Screens ──────────────────────────────────────────────────
   if (currentScreen === 'onboarding') {
@@ -246,6 +288,7 @@ export default function App() {
       <LessonDetailScreen
         lessonId={currentLessonId}
         stageProgress={currentStageProgressArr}
+        currentRound={currentRound}
         onBack={handleBackToHome}
         onLessonComplete={handleLessonComplete}
         onTakeQuiz={handleTakeQuiz}
@@ -270,8 +313,23 @@ export default function App() {
       <StageExercisesScreen
         lessonData={currentLessonData}
         stageIndex={currentStageIndex}
+        roundIndex={currentRound - 1}
         onComplete={handleStageComplete}
-        onBack={() => setCurrentScreen('lessonStages')}
+        onBack={() => setCurrentScreen('lesson')}
+      />
+    );
+  }
+
+  if (currentScreen === 'roundComplete') {
+    const currentRoundScoreKey = `${currentLessonLevelId}_${currentLessonId}_r${currentRound}`;
+    const currentRoundScore = roundScores[currentRoundScoreKey] || { score: 0, total: 0 };
+    return (
+      <RoundCompleteScreen
+        currentRound={currentRound}
+        roundScore={currentRoundScore}
+        combinedAccuracy={combinedAccuracy}
+        onContinue={handleRoundAdvance}
+        onTakeQuiz={handleTakeQuiz}
       />
     );
   }
