@@ -144,6 +144,40 @@ function makeSpeakTranslate(vocabItem) {
   };
 }
 
+function makeSpeakRespond(qaPair) {
+  return {
+    type: 'speak',
+    subtype: 'respond',
+    questionChinese: qaPair.questionChinese,
+    questionPinyin:  qaPair.questionPinyin,
+    answerChinese:   qaPair.answerChinese,
+    answerPinyin:    qaPair.answerPinyin,
+    answerEnglish:   qaPair.answerEnglish,
+  };
+}
+
+// Extract consecutive A→B and B→A line pairs from dialogues as Q&A exercises
+function extractQAPairs(lessonData) {
+  const pairs = [];
+  for (const dialogue of (lessonData.dialogues || [])) {
+    const lines = dialogue.lines || [];
+    for (let i = 0; i < lines.length - 1; i++) {
+      const q = lines[i];
+      const a = lines[i + 1];
+      if (q.speaker !== a.speaker && q.chinese && a.chinese) {
+        pairs.push({
+          questionChinese: q.chinese,
+          questionPinyin:  q.pinyin  || '',
+          answerChinese:   a.chinese,
+          answerPinyin:    a.pinyin  || '',
+          answerEnglish:   a.english || '',
+        });
+      }
+    }
+  }
+  return pairs;
+}
+
 // ── Stage builder helpers ────────────────────────────────────────────────
 function fallbackAudio(i, vocab) {
   return makeAudioChoice(vocab[i % vocab.length], vocab);
@@ -213,8 +247,8 @@ function buildLearnRound(vocab, sentences, pool) {
 }
 
 // ── Round 2 – Practice: sentence production, offset vocab ────────────────
-function buildPracticeRound(vocab, sentences, pool) {
-  const O = 3; // vocab offset keeps questions fresh
+function buildPracticeRound(vocab, sentences, pool, respondOrFallback) {
+  const O = 3;
   const s1 = [
     ...Array.from({ length: 3 }, (_, i) => makeFlashcard(v(vocab, i + O))),
     ...Array.from({ length: 3 }, (_, i) => makeAudioChoice(v(vocab, i + O + 3), vocab)),
@@ -224,9 +258,10 @@ function buildPracticeRound(vocab, sentences, pool) {
   ];
   const s2 = [
     ...Array.from({ length: 4 }, (_, i) => fillOrFallback(s(sentences, i + O + 1), i, vocab)),
-    ...Array.from({ length: 4 }, (_, i) => arrangeOrFallback(s(sentences, i + O), i + 4, vocab)),
+    ...Array.from({ length: 3 }, (_, i) => arrangeOrFallback(s(sentences, i + O), i + 4, vocab)),
     makeSpeakRepeat(p(pool, O)),
-    makeSpeakRepeat(p(pool, O + 1)),
+    makeSpeakTranslate(p(pool, O + 1)),
+    respondOrFallback(0),                     // 🎧 Q&A exercise
   ];
   const s3 = [
     ...Array.from({ length: 5 }, (_, i) => arrangeOrFallback(s(sentences, i + O + 1), i, vocab)),
@@ -237,10 +272,11 @@ function buildPracticeRound(vocab, sentences, pool) {
   const s4 = [
     ...Array.from({ length: 4 }, (_, i) =>
       makeMatchPairs(Array.from({ length: 4 }, (_, j) => v(vocab, (i + 2) * 3 + j)))),
-    ...Array.from({ length: 3 }, (_, i) => makeAudioChoice(v(vocab, i + O + 4), vocab)),
+    ...Array.from({ length: 2 }, (_, i) => makeAudioChoice(v(vocab, i + O + 4), vocab)),
     makeSpeakRepeat(p(pool, O + 4)),
-    makeSpeakRepeat(p(pool, O + 5)),
-    makeSpeakTranslate(p(pool, O + 6)),
+    makeSpeakTranslate(p(pool, O + 5)),
+    respondOrFallback(1),                     // 🎧 Q&A exercise
+    respondOrFallback(2),                     // 🎧 Q&A exercise
   ];
   const s5 = [
     makeAudioChoice(v(vocab, O + 5), vocab),
@@ -252,13 +288,13 @@ function buildPracticeRound(vocab, sentences, pool) {
     makeMatchPairs(shuffle([...vocab])),
     makeSpeakRepeat(p(pool, O + 7)),
     makeSpeakTranslate(p(pool, O + 8)),
-    makeSpeakTranslate(p(pool, O + 9)),
+    respondOrFallback(3),
   ];
   return [s1, s2, s3, s4, s5];
 }
 
 // ── Round 3 – Master: heavy speaking & full production ────────────────────
-function buildMasteryRound(vocab, sentences, pool) {
+function buildMasteryRound(vocab, sentences, pool, respondOrFallback) {
   const O = 7;
   const s1 = [
     ...Array.from({ length: 3 }, (_, i) => arrangeOrFallback(s(sentences, i + O), i, vocab)),
@@ -280,8 +316,10 @@ function buildMasteryRound(vocab, sentences, pool) {
     ...Array.from({ length: 2 }, (_, i) => fillOrFallback(s(sentences, i + O + 3), i + 3, vocab)),
   ];
   const s4 = [
-    ...Array.from({ length: 4 }, (_, i) => makeSpeakRepeat(p(pool, O + 11 + i))),
-    ...Array.from({ length: 4 }, (_, i) => makeSpeakTranslate(p(pool, O + 15 + i))),
+    ...Array.from({ length: 3 }, (_, i) => makeSpeakRepeat(p(pool, O + 11 + i))),
+    ...Array.from({ length: 3 }, (_, i) => makeSpeakTranslate(p(pool, O + 14 + i))),
+    respondOrFallback(4),
+    respondOrFallback(5),
     makeMatchPairs(shuffle([...vocab])),
     makeAudioChoice(v(vocab, O + 4), vocab),
   ];
@@ -291,11 +329,11 @@ function buildMasteryRound(vocab, sentences, pool) {
     arrangeOrFallback(s(sentences, O + 2), 2, vocab),
     arrangeOrFallback(s(sentences, O + 3), 3, vocab),
     makeMatchPairs(shuffle([...vocab])),
-    makeMatchPairs(shuffle([...vocab])),
-    makeSpeakRepeat(p(pool, O + 19)),
-    makeSpeakRepeat(p(pool, O + 20)),
-    makeSpeakTranslate(p(pool, O + 21)),
-    makeSpeakTranslate(p(pool, O + 22)),
+    makeSpeakRepeat(p(pool, O + 17)),
+    makeSpeakTranslate(p(pool, O + 18)),
+    respondOrFallback(6),
+    respondOrFallback(7),
+    respondOrFallback(8),
   ];
   return [s1, s2, s3, s4, s5];
 }
@@ -305,10 +343,18 @@ export function generateRounds(lessonData) {
   const vocab = lessonData.vocabulary || [];
   const sentences = (lessonData.key_sentences || []).filter(s => s?.chinese);
   const pool = buildSpeakPool(vocab, sentences);
+  const qaPairs = extractQAPairs(lessonData);
+
+  // Helper: pick a Q&A respond exercise, fall back to speak_repeat if none available
+  const respondOrFallback = (i) =>
+    qaPairs.length > 0
+      ? makeSpeakRespond(qaPairs[i % qaPairs.length])
+      : makeSpeakRepeat(p(pool, i));
+
   return [
     buildLearnRound(vocab, sentences, pool),
-    buildPracticeRound(vocab, sentences, pool),
-    buildMasteryRound(vocab, sentences, pool),
+    buildPracticeRound(vocab, sentences, pool, respondOrFallback),
+    buildMasteryRound(vocab, sentences, pool, respondOrFallback),
   ];
 }
 
