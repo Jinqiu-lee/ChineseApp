@@ -134,6 +134,164 @@
       ],
       "english": "Cup / Glass (measure word)",
       "part_of_speech": "measure_word"
+    },
+    {
+      "id": "hsk1_l5_p01",
+      "chinese": "喝茶",
+      "pinyin": "hē chá",
+      "tones": [1, 2],
+      "english": "Drink tea",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l5_p02",
+      "chinese": "喝水",
+      "pinyin": "hē shuǐ",
+      "tones": [1, 3],
+      "english": "Drink water",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l5_p03",
+      "chinese": "喝咖啡",
+      "pinyin": "hē kā fēi",
+      "tones": [1, 1, 1],
+      "english": "Drink coffee",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l5_p04",
+      "chinese": "喝牛奶",
+      "pinyin": "hē niú nǎi",
+      "tones": [1, 2, 3],
+      "english": "Drink milk",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l5_p05",
+      "chinese": "吃米饭",
+      "pinyin": "chī mǐ fàn",
+      "tones": [1, 3, 4],
+      "english": "Eat rice",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l5_p06",
+      "chinese": "吃面条",
+      "pinyin": "chī miàn tiáo",
+      "tones": [1, 4, 2],
+      "english": "Eat noodles",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l5_p07",
+      "chinese": "吃苹果",
+      "pinyin": "chī píng guǒ",
+      "tones": [1, 2, 3],
+      "english": "Eat an apple",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l5_p08",
+      "chinese": "吃菜",
+      "pinyin": "chī cài",
+      "tones": [1, 4],
+      "english": "Eat vegetables",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l5_p09",
+      "chinese": "想吃",
+      "pinyin": "xiǎng chī",
+      "tones": [3, 1],
+      "english": "Want to eat",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l5_p10",
+      "chinese": "想喝",
+      "pinyin": "xiǎng hē",
+      "tones": [3, 1],
+      "english": "Want to drink",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l5_p11",
+      "chinese": "一杯茶",
+      "pinyin": "yī bēi chá",
+      "tones": [1, 1, 2],
+      "english": "A cup of tea",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l5_p12",
+      "chinese": "一杯水",
+      "pinyin": "yī bēi shuǐ",
+      "tones": [1, 1, 3],
+      "english": "A glass of water",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "At the Restaurant",
+      "title_chinese": "在餐厅",
+      "lines": [
+        { "speaker": "A", "chinese": "你吃什么？", "pinyin": "Nǐ chī shén me?", "english": "What would you like to eat?" },
+        { "speaker": "B", "chinese": "我吃米饭。你呢？", "pinyin": "Wǒ chī mǐ fàn. Nǐ ne?", "english": "I'll have rice. What about you?" },
+        { "speaker": "A", "chinese": "我吃面条。", "pinyin": "Wǒ chī miàn tiáo.", "english": "I'll have noodles." }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "What to Drink",
+      "title_chinese": "喝什么",
+      "lines": [
+        { "speaker": "A", "chinese": "你喝茶吗？", "pinyin": "Nǐ hē chá ma?", "english": "Do you drink tea?" },
+        { "speaker": "B", "chinese": "不，我想喝水。", "pinyin": "Bù, wǒ xiǎng hē shuǐ.", "english": "No, I want to drink water." },
+        { "speaker": "A", "chinese": "好，请喝水。", "pinyin": "Hǎo, qǐng hē shuǐ.", "english": "Okay, please have some water." }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Please Have Some Tea",
+      "title_chinese": "请喝茶",
+      "lines": [
+        { "speaker": "A", "chinese": "请喝茶！", "pinyin": "Qǐng hē chá!", "english": "Please have some tea!" },
+        { "speaker": "B", "chinese": "谢谢！你喝什么？", "pinyin": "Xièxiè! Nǐ hē shén me?", "english": "Thank you! What do you drink?" },
+        { "speaker": "A", "chinese": "我喝咖啡。", "pinyin": "Wǒ hē kā fēi.", "english": "I drink coffee." }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "What Do You Want to Eat",
+      "title_chinese": "想吃什么",
+      "lines": [
+        { "speaker": "A", "chinese": "你想吃什么？", "pinyin": "Nǐ xiǎng chī shén me?", "english": "What do you want to eat?" },
+        { "speaker": "B", "chinese": "我想吃苹果。你呢？", "pinyin": "Wǒ xiǎng chī píng guǒ. Nǐ ne?", "english": "I want to eat an apple. What about you?" },
+        { "speaker": "A", "chinese": "我想喝牛奶。", "pinyin": "Wǒ xiǎng hē niú nǎi.", "english": "I want to drink milk." }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "A Cup of Coffee",
+      "title_chinese": "一杯咖啡",
+      "lines": [
+        { "speaker": "A", "chinese": "你喝咖啡吗？", "pinyin": "Nǐ hē kā fēi ma?", "english": "Do you drink coffee?" },
+        { "speaker": "B", "chinese": "喝，一杯咖啡，谢谢。", "pinyin": "Hē, yī bēi kā fēi, xièxiè.", "english": "Yes, a cup of coffee, thank you." },
+        { "speaker": "A", "chinese": "好的。", "pinyin": "Hǎo de.", "english": "Okay." }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Vegetables and Drinks",
+      "title_chinese": "吃菜喝水",
+      "lines": [
+        { "speaker": "A", "chinese": "你吃菜吗？", "pinyin": "Nǐ chī cài ma?", "english": "Do you eat vegetables?" },
+        { "speaker": "B", "chinese": "吃，我想吃菜。你喝茶吗？", "pinyin": "Chī, wǒ xiǎng chī cài. Nǐ hē chá ma?", "english": "Yes, I want to eat vegetables. Do you drink tea?" },
+        { "speaker": "A", "chinese": "不，我喝水。", "pinyin": "Bù, wǒ hē shuǐ.", "english": "No, I drink water." }
+      ]
     }
   ],
   "key_sentences": [

@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
+import { speakChinese } from '../utils/tts';
 
 /**
  * SentencesSection Component - DEFAULT EXPORT
@@ -17,7 +18,10 @@ function SentencesSection({ sentences }) {
         <Text style={styles.sentenceEnglish}>"{item.english}"</Text>
       </View>
 
-      <TouchableOpacity style={styles.audioIcon}>
+      <TouchableOpacity
+        style={styles.audioIcon}
+        onPress={() => speakChinese(item.chinese)}
+      >
         <Text style={styles.audioIconText}>🔊</Text>
       </TouchableOpacity>
     </View>
