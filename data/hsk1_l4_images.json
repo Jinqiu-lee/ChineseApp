@@ -1,0 +1,130 @@
+{
+  "_note": "Image dataset for HSK1 Lesson 4 – Family Members.",
+  "vocab_images": {
+    "家": {
+      "pinyin": "jiā", "english": "home / family", "color": "#e17055",
+      "pexels_query": "cozy home house family living",
+      "images": [
+        { "id": "jia_1", "emoji": "🏠", "label": "家",      "label_en": "home",              "url": null },
+        { "id": "jia_2", "emoji": "👨‍👩‍👧‍👦","label": "一家人", "label_en": "the whole family",  "url": null },
+        { "id": "jia_3", "emoji": "🛋️", "label": "在家",   "label_en": "at home",           "url": null },
+        { "id": "jia_4", "emoji": "🏡", "label": "我的家",  "label_en": "my home",           "url": null }
+      ]
+    },
+    "爸爸": {
+      "pinyin": "bà ba", "english": "father / dad", "color": "#0984e3",
+      "pexels_query": "father dad child family happy",
+      "images": [
+        { "id": "baba_1", "emoji": "👨", "label": "爸爸",    "label_en": "dad",               "url": null },
+        { "id": "baba_2", "emoji": "👨‍👧", "label": "爸爸和女儿","label_en": "dad and daughter","url": null },
+        { "id": "baba_3", "emoji": "👨‍👦", "label": "爸爸和儿子","label_en": "dad and son",    "url": null },
+        { "id": "baba_4", "emoji": "🏠", "label": "爸爸在家","label_en": "dad at home",       "url": null }
+      ]
+    },
+    "妈妈": {
+      "pinyin": "mā ma", "english": "mother / mom", "color": "#fd79a8",
+      "pexels_query": "mother mom child family warm",
+      "images": [
+        { "id": "mama_1", "emoji": "👩", "label": "妈妈",    "label_en": "mom",               "url": null },
+        { "id": "mama_2", "emoji": "👩‍👧", "label": "妈妈和女儿","label_en": "mom and daughter","url": null },
+        { "id": "mama_3", "emoji": "👩‍👦", "label": "妈妈和儿子","label_en": "mom and son",   "url": null },
+        { "id": "mama_4", "emoji": "🍳", "label": "妈妈做饭","label_en": "mom cooking",       "url": null }
+      ]
+    },
+    "儿子": {
+      "pinyin": "ér zi", "english": "son", "color": "#74b9ff",
+      "pexels_query": "young boy son child family",
+      "images": [
+        { "id": "erzi_1", "emoji": "👦", "label": "儿子",    "label_en": "son",               "url": null },
+        { "id": "erzi_2", "emoji": "👨‍👦", "label": "爸爸的儿子","label_en": "dad's son",     "url": null },
+        { "id": "erzi_3", "emoji": "🧒", "label": "小儿子",  "label_en": "little son",       "url": null },
+        { "id": "erzi_4", "emoji": "🏫", "label": "儿子上学","label_en": "son goes to school","url": null }
+      ]
+    },
+    "女儿": {
+      "pinyin": "nǚ ér", "english": "daughter", "color": "#fd79a8",
+      "pexels_query": "young girl daughter child family",
+      "images": [
+        { "id": "nver_1", "emoji": "👧", "label": "女儿",    "label_en": "daughter",          "url": null },
+        { "id": "nver_2", "emoji": "👩‍👧", "label": "妈妈的女儿","label_en": "mom's daughter", "url": null },
+        { "id": "nver_3", "emoji": "🧒‍♀️","label": "小女儿", "label_en": "little daughter",  "url": null },
+        { "id": "nver_4", "emoji": "🌸", "label": "女儿可爱","label_en": "cute daughter",     "url": null }
+      ]
+    },
+    "哥哥": {
+      "pinyin": "gē ge", "english": "older brother", "color": "#6c5ce7",
+      "pexels_query": "older brother siblings boy",
+      "images": [
+        { "id": "gege_1", "emoji": "👱", "label": "哥哥",    "label_en": "older brother",     "url": null },
+        { "id": "gege_2", "emoji": "👦", "label": "大哥哥",  "label_en": "big brother",      "url": null },
+        { "id": "gege_3", "emoji": "🤝", "label": "哥哥帮忙","label_en": "brother helping",  "url": null },
+        { "id": "gege_4", "emoji": "👨‍👦‍👦","label": "兄弟",  "label_en": "brothers",          "url": null }
+      ]
+    },
+    "姐姐": {
+      "pinyin": "jiě jie", "english": "older sister", "color": "#fd79a8",
+      "pexels_query": "older sister siblings girl",
+      "images": [
+        { "id": "jiejie_1", "emoji": "👩", "label": "姐姐",    "label_en": "older sister",    "url": null },
+        { "id": "jiejie_2", "emoji": "👧", "label": "大姐姐",  "label_en": "big sister",     "url": null },
+        { "id": "jiejie_3", "emoji": "🤝", "label": "姐姐帮忙","label_en": "sister helping",  "url": null },
+        { "id": "jiejie_4", "emoji": "👯‍♀️","label": "姐妹",   "label_en": "sisters",         "url": null }
+      ]
+    },
+    "弟弟": {
+      "pinyin": "dì di", "english": "younger brother", "color": "#0984e3",
+      "pexels_query": "younger brother small boy",
+      "images": [
+        { "id": "didi_1", "emoji": "🧒", "label": "弟弟",    "label_en": "younger brother",   "url": null },
+        { "id": "didi_2", "emoji": "👦", "label": "小弟弟",  "label_en": "little brother",   "url": null },
+        { "id": "didi_3", "emoji": "🎒", "label": "弟弟上学","label_en": "younger bro at school","url": null },
+        { "id": "didi_4", "emoji": "🎮", "label": "弟弟玩",  "label_en": "brother playing",  "url": null }
+      ]
+    },
+    "妹妹": {
+      "pinyin": "mèi mei", "english": "younger sister", "color": "#e84393",
+      "pexels_query": "younger sister small girl cute",
+      "images": [
+        { "id": "meimei_1", "emoji": "🧒‍♀️","label": "妹妹",  "label_en": "younger sister",   "url": null },
+        { "id": "meimei_2", "emoji": "👧", "label": "小妹妹", "label_en": "little sister",    "url": null },
+        { "id": "meimei_3", "emoji": "🎀", "label": "妹妹可爱","label_en": "cute little sis",  "url": null },
+        { "id": "meimei_4", "emoji": "🪆", "label": "妹妹玩", "label_en": "sister playing",   "url": null }
+      ]
+    },
+    "有": {
+      "pinyin": "yǒu", "english": "to have", "color": "#00b894",
+      "pexels_query": "person holding owning possession",
+      "images": [
+        { "id": "you_1", "emoji": "💝", "label": "有",      "label_en": "have",              "url": null },
+        { "id": "you_2", "emoji": "🤲", "label": "我有…",   "label_en": "I have...",         "url": null },
+        { "id": "you_3", "emoji": "👨‍👩‍👧‍👦","label": "有家人","label_en": "have family",      "url": null },
+        { "id": "you_4", "emoji": "📚", "label": "有书",    "label_en": "have books",        "url": null }
+      ]
+    },
+    "没有": {
+      "pinyin": "méi yǒu", "english": "don't have / there isn't", "color": "#b2bec3",
+      "pexels_query": "empty hands nothing no",
+      "images": [
+        { "id": "meiyou_1", "emoji": "🤚", "label": "没有",    "label_en": "don't have",       "url": null },
+        { "id": "meiyou_2", "emoji": "❌", "label": "没有了",  "label_en": "none left",        "url": null },
+        { "id": "meiyou_3", "emoji": "🙅", "label": "我没有",  "label_en": "I don't have",    "url": null },
+        { "id": "meiyou_4", "emoji": "📭", "label": "没有信",  "label_en": "no mail",         "url": null }
+      ]
+    },
+    "两": {
+      "pinyin": "liǎng", "english": "two (with measure words)", "color": "#a29bfe",
+      "pexels_query": "two pair couple",
+      "images": [
+        { "id": "liang_1", "emoji": "✌️", "label": "两个",   "label_en": "two (things)",      "url": null },
+        { "id": "liang_2", "emoji": "👫", "label": "两个人", "label_en": "two people",        "url": null },
+        { "id": "liang_3", "emoji": "🍎", "label": "两个苹果","label_en": "two apples",        "url": null },
+        { "id": "liang_4", "emoji": "👭", "label": "两个朋友","label_en": "two friends",       "url": null }
+      ]
+    }
+  },
+  "dialogue_images": {
+    "1": { "emoji": "👨‍👩‍👧‍👦","label": "你的家",   "label_en": "Your Family",           "color": "#e17055", "url": null },
+    "2": { "emoji": "👫", "label": "兄弟姐妹", "label_en": "Brothers and Sisters",   "color": "#a29bfe", "url": null },
+    "3": { "emoji": "💼", "label": "爸爸的工作","label_en": "Dad's Job",              "color": "#0984e3", "url": null }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "_note": "Image dataset for HSK1 Lesson 2 – Numbers and Age.",
+  "vocab_images": {
+    "一": {
+      "pinyin": "yī", "english": "one", "color": "#4834d4",
+      "pexels_query": "number one single item",
+      "images": [
+        { "id": "yi_1", "emoji": "1️⃣", "label": "一",    "label_en": "one",               "url": null },
+        { "id": "yi_2", "emoji": "☝️", "label": "一个",  "label_en": "one item",          "url": null },
+        { "id": "yi_3", "emoji": "🍎", "label": "一个苹果","label_en": "one apple",        "url": null },
+        { "id": "yi_4", "emoji": "🌟", "label": "第一",  "label_en": "number one / first", "url": null }
+      ]
+    },
+    "二": {
+      "pinyin": "èr", "english": "two", "color": "#e17055",
+      "pexels_query": "number two pair items",
+      "images": [
+        { "id": "er_1", "emoji": "2️⃣", "label": "二",    "label_en": "two",               "url": null },
+        { "id": "er_2", "emoji": "✌️", "label": "二个",  "label_en": "two items",         "url": null },
+        { "id": "er_3", "emoji": "👫", "label": "两个人","label_en": "two people",         "url": null },
+        { "id": "er_4", "emoji": "🦆", "label": "两只鸭子","label_en": "two ducks",        "url": null }
+      ]
+    },
+    "三": {
+      "pinyin": "sān", "english": "three", "color": "#6ab04c",
+      "pexels_query": "number three group items",
+      "images": [
+        { "id": "san_1", "emoji": "3️⃣", "label": "三",     "label_en": "three",            "url": null },
+        { "id": "san_2", "emoji": "🤟", "label": "三个",   "label_en": "three items",      "url": null },
+        { "id": "san_3", "emoji": "🔺", "label": "三角形", "label_en": "triangle",         "url": null },
+        { "id": "san_4", "emoji": "🍡", "label": "三个月", "label_en": "three months",     "url": null }
+      ]
+    },
+    "四": {
+      "pinyin": "sì", "english": "four", "color": "#22a6b3",
+      "pexels_query": "number four square four seasons",
+      "images": [
+        { "id": "si_1", "emoji": "4️⃣", "label": "四",    "label_en": "four",              "url": null },
+        { "id": "si_2", "emoji": "🍀", "label": "四叶草", "label_en": "four-leaf clover", "url": null },
+        { "id": "si_3", "emoji": "🌿", "label": "四季",  "label_en": "four seasons",      "url": null },
+        { "id": "si_4", "emoji": "⬛", "label": "四方形", "label_en": "square",           "url": null }
+      ]
+    },
+    "五": {
+      "pinyin": "wǔ", "english": "five", "color": "#f9ca24",
+      "pexels_query": "five fingers hand open",
+      "images": [
+        { "id": "wu_1", "emoji": "5️⃣", "label": "五",    "label_en": "five",              "url": null },
+        { "id": "wu_2", "emoji": "🖐️", "label": "五个手指","label_en": "five fingers",    "url": null },
+        { "id": "wu_3", "emoji": "⭐", "label": "五星",  "label_en": "five stars",        "url": null },
+        { "id": "wu_4", "emoji": "🌺", "label": "五瓣花", "label_en": "five-petal flower","url": null }
+      ]
+    },
+    "六": {
+      "pinyin": "liù", "english": "six", "color": "#fd79a8",
+      "pexels_query": "number six dice six dots",
+      "images": [
+        { "id": "liu_1", "emoji": "6️⃣", "label": "六",    "label_en": "six",              "url": null },
+        { "id": "liu_2", "emoji": "🎲", "label": "骰子六点","label_en": "dice six",        "url": null },
+        { "id": "liu_3", "emoji": "🐛", "label": "六条腿","label_en": "six legs (insect)", "url": null },
+        { "id": "liu_4", "emoji": "🍯", "label": "六个杯子","label_en": "six cups",        "url": null }
+      ]
+    },
+    "七": {
+      "pinyin": "qī", "english": "seven", "color": "#a29bfe",
+      "pexels_query": "rainbow seven colors",
+      "images": [
+        { "id": "qi_1", "emoji": "7️⃣", "label": "七",    "label_en": "seven",             "url": null },
+        { "id": "qi_2", "emoji": "🌈", "label": "彩虹七色","label_en": "rainbow 7 colors", "url": null },
+        { "id": "qi_3", "emoji": "📅", "label": "一星期七天","label_en": "7 days a week",  "url": null },
+        { "id": "qi_4", "emoji": "🎵", "label": "七个音符","label_en": "seven musical notes","url": null }
+      ]
+    },
+    "八": {
+      "pinyin": "bā", "english": "eight", "color": "#e17055",
+      "pexels_query": "number eight lucky Chinese",
+      "images": [
+        { "id": "ba_1", "emoji": "8️⃣", "label": "八",    "label_en": "eight",             "url": null },
+        { "id": "ba_2", "emoji": "🎱", "label": "八号球", "label_en": "eight ball",        "url": null },
+        { "id": "ba_3", "emoji": "🕷️", "label": "八条腿", "label_en": "eight legs",       "url": null },
+        { "id": "ba_4", "emoji": "🍀", "label": "幸运八", "label_en": "lucky eight",       "url": null }
+      ]
+    },
+    "九": {
+      "pinyin": "jiǔ", "english": "nine", "color": "#00b894",
+      "pexels_query": "number nine baseball",
+      "images": [
+        { "id": "jiu_1", "emoji": "9️⃣",  "label": "九",    "label_en": "nine",            "url": null },
+        { "id": "jiu_2", "emoji": "🌙", "label": "农历九月","label_en": "9th lunar month", "url": null },
+        { "id": "jiu_3", "emoji": "🐱", "label": "猫九条命","label_en": "cat nine lives",  "url": null },
+        { "id": "jiu_4", "emoji": "🎯", "label": "九分",   "label_en": "nine points",      "url": null }
+      ]
+    },
+    "十": {
+      "pinyin": "shí", "english": "ten", "color": "#d63031",
+      "pexels_query": "number ten hands perfect score",
+      "images": [
+        { "id": "shi_1", "emoji": "🔟", "label": "十",    "label_en": "ten",               "url": null },
+        { "id": "shi_2", "emoji": "👐", "label": "十个手指","label_en": "ten fingers",     "url": null },
+        { "id": "shi_3", "emoji": "💯", "label": "满分十",  "label_en": "perfect ten",    "url": null },
+        { "id": "shi_4", "emoji": "➕", "label": "十字",    "label_en": "cross / plus",   "url": null }
+      ]
+    },
+    "零": {
+      "pinyin": "líng", "english": "zero", "color": "#636e72",
+      "pexels_query": "zero empty nothing circle",
+      "images": [
+        { "id": "ling_1", "emoji": "0️⃣", "label": "零",   "label_en": "zero",             "url": null },
+        { "id": "ling_2", "emoji": "⭕", "label": "空",    "label_en": "empty",            "url": null },
+        { "id": "ling_3", "emoji": "❄️", "label": "零度",  "label_en": "zero degrees",   "url": null },
+        { "id": "ling_4", "emoji": "🌀", "label": "零分",  "label_en": "zero points",     "url": null }
+      ]
+    },
+    "个": {
+      "pinyin": "gè", "english": "general measure word", "color": "#74b9ff",
+      "pexels_query": "counting items objects",
+      "images": [
+        { "id": "ge_1", "emoji": "📦", "label": "三个",   "label_en": "three (items)",     "url": null },
+        { "id": "ge_2", "emoji": "🍎", "label": "两个苹果","label_en": "two apples",       "url": null },
+        { "id": "ge_3", "emoji": "👥", "label": "几个人", "label_en": "several people",    "url": null },
+        { "id": "ge_4", "emoji": "🔢", "label": "一个",   "label_en": "one (item)",        "url": null }
+      ]
+    },
+    "几": {
+      "pinyin": "jǐ", "english": "how many / several", "color": "#6c5ce7",
+      "pexels_query": "counting question how many",
+      "images": [
+        { "id": "ji_1", "emoji": "🔢", "label": "几个？",  "label_en": "how many?",        "url": null },
+        { "id": "ji_2", "emoji": "✌️", "label": "你几岁？","label_en": "how old are you?", "url": null },
+        { "id": "ji_3", "emoji": "❓", "label": "几点了？","label_en": "what time is it?", "url": null },
+        { "id": "ji_4", "emoji": "🤔", "label": "几号？",  "label_en": "what date?",       "url": null }
+      ]
+    },
+    "多": {
+      "pinyin": "duō", "english": "many / much / more", "color": "#00b894",
+      "pexels_query": "many lots crowd abundance",
+      "images": [
+        { "id": "duo_1", "emoji": "📚", "label": "很多书",  "label_en": "many books",       "url": null },
+        { "id": "duo_2", "emoji": "👥", "label": "很多人",  "label_en": "many people",      "url": null },
+        { "id": "duo_3", "emoji": "🌟", "label": "多星星",  "label_en": "many stars",       "url": null },
+        { "id": "duo_4", "emoji": "💰", "label": "多少钱？","label_en": "how much money?",  "url": null }
+      ]
+    },
+    "大": {
+      "pinyin": "dà", "english": "big / large", "color": "#e17055",
+      "pexels_query": "big large elephant size comparison",
+      "images": [
+        { "id": "da_1", "emoji": "🐘", "label": "大象",   "label_en": "big elephant",      "url": null },
+        { "id": "da_2", "emoji": "🏙️", "label": "大城市", "label_en": "big city",         "url": null },
+        { "id": "da_3", "emoji": "🎂", "label": "你多大？","label_en": "how old are you?",  "url": null },
+        { "id": "da_4", "emoji": "📏", "label": "大小",   "label_en": "size (big)",        "url": null }
+      ]
+    },
+    "岁": {
+      "pinyin": "suì", "english": "years old / age", "color": "#fd79a8",
+      "pexels_query": "birthday cake candles age celebration",
+      "images": [
+        { "id": "sui_1", "emoji": "🎂", "label": "生日蛋糕","label_en": "birthday cake",   "url": null },
+        { "id": "sui_2", "emoji": "🕯️", "label": "十岁",   "label_en": "ten years old",  "url": null },
+        { "id": "sui_3", "emoji": "🎉", "label": "你多大？","label_en": "how old are you?", "url": null },
+        { "id": "sui_4", "emoji": "📅", "label": "几岁了？","label_en": "how old are you?", "url": null }
+      ]
+    }
+  },
+  "dialogue_images": {
+    "1": { "emoji": "🎂", "label": "你多大",   "label_en": "How Old Are You?",    "color": "#fd79a8", "url": null },
+    "2": { "emoji": "👥", "label": "几个朋友", "label_en": "How Many Friends?",   "color": "#4834d4", "url": null },
+    "3": { "emoji": "🔢", "label": "说数字",   "label_en": "Talking Numbers",     "color": "#6ab04c", "url": null }
+  }
+}

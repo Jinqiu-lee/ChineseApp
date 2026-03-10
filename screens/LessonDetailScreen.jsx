@@ -148,7 +148,7 @@ export default function LessonDetailScreen({
         )}
         {openSection === 'dialogue' && (
           <View style={styles.expandedSection}>
-            <DialogueSection dialogues={lesson.dialogues || []} />
+            <DialogueSection dialogues={lesson.dialogues || []} lessonNumber={lesson.lesson} />
           </View>
         )}
         {openSection === 'grammar' && (

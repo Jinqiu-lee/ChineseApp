@@ -1,0 +1,150 @@
+{
+  "_note": "Image dataset for HSK1 Lesson 1 – Greetings. Abstract words shown through contextual usage scenarios.",
+  "vocab_images": {
+    "你": {
+      "pinyin": "nǐ", "english": "you", "color": "#e17055",
+      "pexels_query": "person greeting waving hello",
+      "images": [
+        { "id": "ni_1", "emoji": "👋", "label": "你好！",   "label_en": "hello!",           "url": null },
+        { "id": "ni_2", "emoji": "🫵", "label": "是你",    "label_en": "it's you",         "url": null },
+        { "id": "ni_3", "emoji": "👤", "label": "你是谁？", "label_en": "who are you?",    "url": null },
+        { "id": "ni_4", "emoji": "🤝", "label": "你好吗？", "label_en": "how are you?",    "url": null }
+      ]
+    },
+    "好": {
+      "pinyin": "hǎo", "english": "good / well", "color": "#fdcb6e",
+      "pexels_query": "thumbs up happy person",
+      "images": [
+        { "id": "hao_1", "emoji": "👍", "label": "很好",   "label_en": "very good",        "url": null },
+        { "id": "hao_2", "emoji": "😊", "label": "好！",   "label_en": "good!",            "url": null },
+        { "id": "hao_3", "emoji": "✅", "label": "你好",   "label_en": "hello",            "url": null },
+        { "id": "hao_4", "emoji": "🌟", "label": "好人",   "label_en": "good person",      "url": null }
+      ]
+    },
+    "我": {
+      "pinyin": "wǒ", "english": "I / me", "color": "#a29bfe",
+      "pexels_query": "person pointing at themselves",
+      "images": [
+        { "id": "wo_1", "emoji": "🙋", "label": "我！",    "label_en": "me!",              "url": null },
+        { "id": "wo_2", "emoji": "👆", "label": "我是…",   "label_en": "I am...",          "url": null },
+        { "id": "wo_3", "emoji": "🪞", "label": "这是我",  "label_en": "this is me",       "url": null },
+        { "id": "wo_4", "emoji": "💬", "label": "我叫…",   "label_en": "my name is...",    "url": null }
+      ]
+    },
+    "是": {
+      "pinyin": "shì", "english": "to be / is / am / are", "color": "#74b9ff",
+      "pexels_query": "identity card name introduction",
+      "images": [
+        { "id": "shi_1", "emoji": "🪪", "label": "我是…",  "label_en": "I am...",          "url": null },
+        { "id": "shi_2", "emoji": "✅", "label": "是的",   "label_en": "yes / correct",    "url": null },
+        { "id": "shi_3", "emoji": "🙋", "label": "是我",   "label_en": "it is me",         "url": null },
+        { "id": "shi_4", "emoji": "👤", "label": "他是谁", "label_en": "who is he",        "url": null }
+      ]
+    },
+    "的": {
+      "pinyin": "de", "english": "possessive particle", "color": "#636e72",
+      "pexels_query": "ownership belongings backpack person",
+      "images": [
+        { "id": "de_1", "emoji": "🎒", "label": "我的书包", "label_en": "my backpack",     "url": null },
+        { "id": "de_2", "emoji": "📱", "label": "我的手机", "label_en": "my phone",        "url": null },
+        { "id": "de_3", "emoji": "🏡", "label": "我的家",  "label_en": "my home",          "url": null },
+        { "id": "de_4", "emoji": "🐕", "label": "我的狗",  "label_en": "my dog",           "url": null }
+      ]
+    },
+    "吗": {
+      "pinyin": "ma", "english": "question particle", "color": "#fd79a8",
+      "pexels_query": "person asking question curious",
+      "images": [
+        { "id": "ma_1", "emoji": "❓", "label": "你好吗？", "label_en": "how are you?",    "url": null },
+        { "id": "ma_2", "emoji": "🤔", "label": "是吗？",  "label_en": "is that so?",      "url": null },
+        { "id": "ma_3", "emoji": "💬", "label": "他是吗？","label_en": "is it him?",        "url": null },
+        { "id": "ma_4", "emoji": "🙋", "label": "你喝吗？","label_en": "do you drink?",     "url": null }
+      ]
+    },
+    "呢": {
+      "pinyin": "ne", "english": "question particle (and you?)", "color": "#00cec9",
+      "pexels_query": "two people conversation asking",
+      "images": [
+        { "id": "ne_1", "emoji": "↩️", "label": "你呢？",  "label_en": "and you?",         "url": null },
+        { "id": "ne_2", "emoji": "🔄", "label": "他呢？",  "label_en": "what about him?",  "url": null },
+        { "id": "ne_3", "emoji": "💭", "label": "她呢？",  "label_en": "what about her?",  "url": null },
+        { "id": "ne_4", "emoji": "🗣️", "label": "你好。你呢？","label_en": "I'm good. You?","url": null }
+      ]
+    },
+    "叫": {
+      "pinyin": "jiào", "english": "to be called / named", "color": "#e17055",
+      "pexels_query": "name tag person introduction meeting",
+      "images": [
+        { "id": "jiao_1", "emoji": "📛", "label": "我叫…",    "label_en": "I'm called...",  "url": null },
+        { "id": "jiao_2", "emoji": "🏷️", "label": "你叫什么？","label_en": "what's your name?","url": null },
+        { "id": "jiao_3", "emoji": "🤝", "label": "她叫小丽", "label_en": "she's called 小丽","url": null },
+        { "id": "jiao_4", "emoji": "🎤", "label": "他叫大卫", "label_en": "he's called 大卫","url": null }
+      ]
+    },
+    "什么": {
+      "pinyin": "shén me", "english": "what", "color": "#6c5ce7",
+      "pexels_query": "person confused thinking question",
+      "images": [
+        { "id": "shenme_1", "emoji": "🤷", "label": "什么？",   "label_en": "what?",         "url": null },
+        { "id": "shenme_2", "emoji": "❓", "label": "你吃什么？","label_en": "what do you eat?","url": null },
+        { "id": "shenme_3", "emoji": "🔍", "label": "这是什么？","label_en": "what is this?", "url": null },
+        { "id": "shenme_4", "emoji": "💬", "label": "你叫什么？","label_en": "what's your name?","url": null }
+      ]
+    },
+    "名字": {
+      "pinyin": "míng zi", "english": "name", "color": "#fdcb6e",
+      "pexels_query": "name badge card identity",
+      "images": [
+        { "id": "mingzi_1", "emoji": "📛", "label": "我的名字", "label_en": "my name",       "url": null },
+        { "id": "mingzi_2", "emoji": "🏷️", "label": "名字",    "label_en": "name tag",      "url": null },
+        { "id": "mingzi_3", "emoji": "✍️", "label": "写名字",  "label_en": "write name",     "url": null },
+        { "id": "mingzi_4", "emoji": "🪪", "label": "你的名字","label_en": "your name",       "url": null }
+      ]
+    },
+    "谁": {
+      "pinyin": "shéi", "english": "who", "color": "#b2bec3",
+      "pexels_query": "mystery person silhouette unknown",
+      "images": [
+        { "id": "shei_1", "emoji": "🕵️", "label": "谁？",    "label_en": "who?",            "url": null },
+        { "id": "shei_2", "emoji": "🙋", "label": "他是谁？", "label_en": "who is he?",      "url": null },
+        { "id": "shei_3", "emoji": "👤", "label": "她是谁？", "label_en": "who is she?",     "url": null },
+        { "id": "shei_4", "emoji": "❓", "label": "那是谁？", "label_en": "who is that?",    "url": null }
+      ]
+    },
+    "他": {
+      "pinyin": "tā", "english": "he / him", "color": "#0984e3",
+      "pexels_query": "young man portrait smiling",
+      "images": [
+        { "id": "ta_m_1", "emoji": "👨", "label": "他",      "label_en": "he",               "url": null },
+        { "id": "ta_m_2", "emoji": "🧑", "label": "他是…",   "label_en": "he is...",         "url": null },
+        { "id": "ta_m_3", "emoji": "👆", "label": "他叫…",   "label_en": "his name is...",   "url": null },
+        { "id": "ta_m_4", "emoji": "🙋", "label": "这是他",  "label_en": "this is him",      "url": null }
+      ]
+    },
+    "她": {
+      "pinyin": "tā", "english": "she / her", "color": "#fd79a8",
+      "pexels_query": "young woman portrait smiling",
+      "images": [
+        { "id": "ta_f_1", "emoji": "👩", "label": "她",      "label_en": "she",              "url": null },
+        { "id": "ta_f_2", "emoji": "🧕", "label": "她是…",   "label_en": "she is...",        "url": null },
+        { "id": "ta_f_3", "emoji": "👆", "label": "她叫…",   "label_en": "her name is...",   "url": null },
+        { "id": "ta_f_4", "emoji": "🙋‍♀️","label": "这是她",  "label_en": "this is her",     "url": null }
+      ]
+    },
+    "人": {
+      "pinyin": "rén", "english": "person / people", "color": "#74b9ff",
+      "pexels_query": "people group crowd diverse",
+      "images": [
+        { "id": "ren_1", "emoji": "🧑", "label": "一个人",  "label_en": "one person",        "url": null },
+        { "id": "ren_2", "emoji": "👥", "label": "很多人",  "label_en": "many people",       "url": null },
+        { "id": "ren_3", "emoji": "🏙️", "label": "中国人",  "label_en": "Chinese person",   "url": null },
+        { "id": "ren_4", "emoji": "👤", "label": "好人",    "label_en": "good person",       "url": null }
+      ]
+    }
+  },
+  "dialogue_images": {
+    "1": { "emoji": "👋", "label": "你好！",   "label_en": "Nice to Meet You", "color": "#e17055", "url": null },
+    "2": { "emoji": "🕵️","label": "她是谁？", "label_en": "Who Is She?",      "color": "#636e72", "url": null },
+    "3": { "emoji": "😊", "label": "你好吗？", "label_en": "How Are You?",     "color": "#fdcb6e", "url": null }
+  }
+}

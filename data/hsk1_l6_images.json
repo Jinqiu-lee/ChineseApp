@@ -1,0 +1,120 @@
+{
+  "_note": "Image dataset for HSK1 Lesson 6 – Shopping and Money.",
+  "vocab_images": {
+    "买": {
+      "pinyin": "mǎi", "english": "to buy", "color": "#f9ca24",
+      "pexels_query": "shopping buying store cashier",
+      "images": [
+        { "id": "mai_1", "emoji": "🛒", "label": "买东西",  "label_en": "buying things",     "url": null },
+        { "id": "mai_2", "emoji": "🏪", "label": "去买",    "label_en": "going to buy",      "url": null },
+        { "id": "mai_3", "emoji": "💳", "label": "买书",    "label_en": "buying books",      "url": null },
+        { "id": "mai_4", "emoji": "🛍️", "label": "买衣服",  "label_en": "buying clothes",   "url": null }
+      ]
+    },
+    "钱": {
+      "pinyin": "qián", "english": "money", "color": "#00b894",
+      "pexels_query": "money cash wallet currency",
+      "images": [
+        { "id": "qian_1", "emoji": "💰", "label": "钱",     "label_en": "money",             "url": null },
+        { "id": "qian_2", "emoji": "💵", "label": "纸币",   "label_en": "banknotes",         "url": null },
+        { "id": "qian_3", "emoji": "👛", "label": "钱包",   "label_en": "wallet",            "url": null },
+        { "id": "qian_4", "emoji": "💴", "label": "人民币",  "label_en": "RMB",              "url": null }
+      ]
+    },
+    "少": {
+      "pinyin": "shǎo", "english": "few / little", "color": "#b2bec3",
+      "pexels_query": "few small amount little",
+      "images": [
+        { "id": "shao_1", "emoji": "🔽", "label": "很少",   "label_en": "very few",          "url": null },
+        { "id": "shao_2", "emoji": "💧", "label": "少量",   "label_en": "small amount",      "url": null },
+        { "id": "shao_3", "emoji": "🫙", "label": "少一点", "label_en": "a little less",     "url": null },
+        { "id": "shao_4", "emoji": "📉", "label": "越来越少","label_en": "less and less",     "url": null }
+      ]
+    },
+    "多少": {
+      "pinyin": "duō shǎo", "english": "how much / how many", "color": "#f9ca24",
+      "pexels_query": "price tag asking how much cost",
+      "images": [
+        { "id": "duoshao_1", "emoji": "💰", "label": "多少钱？","label_en": "how much?",      "url": null },
+        { "id": "duoshao_2", "emoji": "🏷️", "label": "价格",   "label_en": "price tag",     "url": null },
+        { "id": "duoshao_3", "emoji": "❓", "label": "多少个？","label_en": "how many?",       "url": null },
+        { "id": "duoshao_4", "emoji": "⚖️", "label": "多少克？","label_en": "how many grams?","url": null }
+      ]
+    },
+    "块": {
+      "pinyin": "kuài", "english": "yuan (RMB) / piece", "color": "#fdcb6e",
+      "pexels_query": "Chinese yuan coin RMB money",
+      "images": [
+        { "id": "kuai_1", "emoji": "💴", "label": "一块钱", "label_en": "one yuan",          "url": null },
+        { "id": "kuai_2", "emoji": "🪙", "label": "几块钱", "label_en": "a few yuan",        "url": null },
+        { "id": "kuai_3", "emoji": "💰", "label": "十块",   "label_en": "ten yuan",          "url": null },
+        { "id": "kuai_4", "emoji": "🛒", "label": "五块钱", "label_en": "five yuan",         "url": null }
+      ]
+    },
+    "本": {
+      "pinyin": "běn", "english": "measure word for books", "color": "#6c5ce7",
+      "pexels_query": "book stack notebook binding",
+      "images": [
+        { "id": "ben_1", "emoji": "📗", "label": "一本书", "label_en": "one book",           "url": null },
+        { "id": "ben_2", "emoji": "📚", "label": "几本书", "label_en": "several books",      "url": null },
+        { "id": "ben_3", "emoji": "📔", "label": "一本本子","label_en": "one notebook",      "url": null },
+        { "id": "ben_4", "emoji": "📖", "label": "两本书", "label_en": "two books",          "url": null }
+      ]
+    },
+    "书": {
+      "pinyin": "shū", "english": "book", "color": "#a29bfe",
+      "pexels_query": "book reading library open",
+      "images": [
+        { "id": "shu_1", "emoji": "📖", "label": "书",     "label_en": "book",               "url": null },
+        { "id": "shu_2", "emoji": "📚", "label": "很多书", "label_en": "many books",         "url": null },
+        { "id": "shu_3", "emoji": "🛒", "label": "买书",   "label_en": "buying books",       "url": null },
+        { "id": "shu_4", "emoji": "📝", "label": "看书",   "label_en": "reading a book",     "url": null }
+      ]
+    },
+    "衣服": {
+      "pinyin": "yī fu", "english": "clothes", "color": "#e84393",
+      "pexels_query": "clothes fashion clothing store",
+      "images": [
+        { "id": "yifu_1", "emoji": "👕", "label": "衣服",   "label_en": "clothes",           "url": null },
+        { "id": "yifu_2", "emoji": "🛍️", "label": "买衣服", "label_en": "buying clothes",   "url": null },
+        { "id": "yifu_3", "emoji": "👔", "label": "新衣服", "label_en": "new clothes",       "url": null },
+        { "id": "yifu_4", "emoji": "🏪", "label": "衣服店", "label_en": "clothing shop",     "url": null }
+      ]
+    },
+    "东西": {
+      "pinyin": "dōng xi", "english": "thing / stuff", "color": "#74b9ff",
+      "pexels_query": "things objects stuff mixed items",
+      "images": [
+        { "id": "dongxi_1", "emoji": "📦", "label": "东西",   "label_en": "things",           "url": null },
+        { "id": "dongxi_2", "emoji": "🛒", "label": "买东西", "label_en": "buying things",    "url": null },
+        { "id": "dongxi_3", "emoji": "🎒", "label": "装东西", "label_en": "packing things",   "url": null },
+        { "id": "dongxi_4", "emoji": "🏪", "label": "卖东西", "label_en": "selling things",   "url": null }
+      ]
+    },
+    "贵": {
+      "pinyin": "guì", "english": "expensive", "color": "#6c5ce7",
+      "pexels_query": "expensive luxury diamond jewelry",
+      "images": [
+        { "id": "gui_1", "emoji": "💎", "label": "很贵",   "label_en": "very expensive",     "url": null },
+        { "id": "gui_2", "emoji": "🏷️", "label": "价格贵", "label_en": "high price",        "url": null },
+        { "id": "gui_3", "emoji": "🚗", "label": "贵的车", "label_en": "expensive car",      "url": null },
+        { "id": "gui_4", "emoji": "💰", "label": "太贵了", "label_en": "too expensive!",     "url": null }
+      ]
+    },
+    "便宜": {
+      "pinyin": "pián yi", "english": "cheap / inexpensive", "color": "#00b894",
+      "pexels_query": "cheap sale discount bargain",
+      "images": [
+        { "id": "pianyi_1", "emoji": "🏷️", "label": "便宜",   "label_en": "cheap",            "url": null },
+        { "id": "pianyi_2", "emoji": "🛒", "label": "很便宜", "label_en": "very cheap",       "url": null },
+        { "id": "pianyi_3", "emoji": "💰", "label": "打折",   "label_en": "on sale",          "url": null },
+        { "id": "pianyi_4", "emoji": "😊", "label": "真便宜", "label_en": "so cheap!",        "url": null }
+      ]
+    }
+  },
+  "dialogue_images": {
+    "1": { "emoji": "💰", "label": "多少钱",   "label_en": "How Much Is This?", "color": "#f9ca24",  "url": null },
+    "2": { "emoji": "📚", "label": "买书",     "label_en": "Buying Books",      "color": "#6c5ce7",  "url": null },
+    "3": { "emoji": "🏷️", "label": "便宜吗",   "label_en": "Is It Cheap?",      "color": "#00b894", "url": null }
+  }
+}

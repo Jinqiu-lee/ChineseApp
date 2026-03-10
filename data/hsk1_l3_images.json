@@ -1,0 +1,170 @@
+{
+  "_note": "Image dataset for HSK1 Lesson 3 – Time and Date.",
+  "vocab_images": {
+    "年": {
+      "pinyin": "nián", "english": "year", "color": "#f9ca24",
+      "pexels_query": "new year calendar annual celebration",
+      "images": [
+        { "id": "nian_1", "emoji": "📅", "label": "今年",    "label_en": "this year",         "url": null },
+        { "id": "nian_2", "emoji": "🎆", "label": "新年",    "label_en": "new year",          "url": null },
+        { "id": "nian_3", "emoji": "🗓️", "label": "一年",   "label_en": "one year",          "url": null },
+        { "id": "nian_4", "emoji": "🌏", "label": "明年",    "label_en": "next year",         "url": null }
+      ]
+    },
+    "月": {
+      "pinyin": "yuè", "english": "month / moon", "color": "#30336b",
+      "pexels_query": "moon night sky full moon",
+      "images": [
+        { "id": "yue_1", "emoji": "🌙", "label": "月亮",    "label_en": "moon",              "url": null },
+        { "id": "yue_2", "emoji": "📅", "label": "一月",    "label_en": "January",           "url": null },
+        { "id": "yue_3", "emoji": "🗓️", "label": "每个月", "label_en": "every month",       "url": null },
+        { "id": "yue_4", "emoji": "🌛", "label": "半个月",  "label_en": "half a month",      "url": null }
+      ]
+    },
+    "号": {
+      "pinyin": "hào", "english": "date / day number", "color": "#e55039",
+      "pexels_query": "calendar date circled number",
+      "images": [
+        { "id": "hao_1", "emoji": "📆", "label": "几号？",  "label_en": "what date?",        "url": null },
+        { "id": "hao_2", "emoji": "🗓️", "label": "一号",   "label_en": "the 1st",          "url": null },
+        { "id": "hao_3", "emoji": "🔢", "label": "日期",    "label_en": "date",              "url": null },
+        { "id": "hao_4", "emoji": "📅", "label": "今天几号","label_en": "what's today's date","url": null }
+      ]
+    },
+    "今天": {
+      "pinyin": "jīn tiān", "english": "today", "color": "#f9ca24",
+      "pexels_query": "today sunrise morning present day",
+      "images": [
+        { "id": "jintian_1", "emoji": "☀️", "label": "今天",    "label_en": "today",          "url": null },
+        { "id": "jintian_2", "emoji": "📅", "label": "今天是…", "label_en": "today is...",    "url": null },
+        { "id": "jintian_3", "emoji": "🌄", "label": "今天早上","label_en": "this morning",   "url": null },
+        { "id": "jintian_4", "emoji": "🗓️", "label": "今天几号","label_en": "today's date",  "url": null }
+      ]
+    },
+    "明天": {
+      "pinyin": "míng tiān", "english": "tomorrow", "color": "#00cec9",
+      "pexels_query": "tomorrow sunrise future bright day",
+      "images": [
+        { "id": "mingtian_1", "emoji": "🌅", "label": "明天",    "label_en": "tomorrow",       "url": null },
+        { "id": "mingtian_2", "emoji": "➡️", "label": "明天见", "label_en": "see you tomorrow","url": null },
+        { "id": "mingtian_3", "emoji": "🌤️", "label": "明天天气","label_en": "tomorrow weather","url": null },
+        { "id": "mingtian_4", "emoji": "💤", "label": "明天早上","label_en": "tomorrow morning","url": null }
+      ]
+    },
+    "昨天": {
+      "pinyin": "zuó tiān", "english": "yesterday", "color": "#636e72",
+      "pexels_query": "yesterday past memory calendar",
+      "images": [
+        { "id": "zuotian_1", "emoji": "⬅️", "label": "昨天",    "label_en": "yesterday",      "url": null },
+        { "id": "zuotian_2", "emoji": "🌃", "label": "昨天晚上","label_en": "last night",      "url": null },
+        { "id": "zuotian_3", "emoji": "📖", "label": "昨天发生", "label_en": "what happened",  "url": null },
+        { "id": "zuotian_4", "emoji": "💭", "label": "昨天的事","label_en": "yesterday's events","url": null }
+      ]
+    },
+    "上午": {
+      "pinyin": "shàng wǔ", "english": "morning / AM", "color": "#fdcb6e",
+      "pexels_query": "morning sunrise breakfast AM time",
+      "images": [
+        { "id": "shangwu_1", "emoji": "🌄", "label": "早上",    "label_en": "morning",         "url": null },
+        { "id": "shangwu_2", "emoji": "☕", "label": "上午喝咖啡","label_en": "morning coffee", "url": null },
+        { "id": "shangwu_3", "emoji": "🕘", "label": "上午九点","label_en": "9 AM",            "url": null },
+        { "id": "shangwu_4", "emoji": "🍳", "label": "吃早饭",  "label_en": "breakfast",       "url": null }
+      ]
+    },
+    "中午": {
+      "pinyin": "zhōng wǔ", "english": "noon / midday", "color": "#e17055",
+      "pexels_query": "noon lunch midday sun high",
+      "images": [
+        { "id": "zhongwu_1", "emoji": "☀️", "label": "中午",    "label_en": "noon",            "url": null },
+        { "id": "zhongwu_2", "emoji": "🕛", "label": "十二点",  "label_en": "12 o'clock",      "url": null },
+        { "id": "zhongwu_3", "emoji": "🍱", "label": "吃午饭",  "label_en": "lunch",           "url": null },
+        { "id": "zhongwu_4", "emoji": "🌞", "label": "正午",    "label_en": "midday",          "url": null }
+      ]
+    },
+    "下午": {
+      "pinyin": "xià wǔ", "english": "afternoon / PM", "color": "#f9ca24",
+      "pexels_query": "afternoon tea time PM sunny",
+      "images": [
+        { "id": "xiawu_1", "emoji": "🌇", "label": "下午",    "label_en": "afternoon",         "url": null },
+        { "id": "xiawu_2", "emoji": "🕒", "label": "下午三点","label_en": "3 PM",              "url": null },
+        { "id": "xiawu_3", "emoji": "🍵", "label": "下午茶",  "label_en": "afternoon tea",    "url": null },
+        { "id": "xiawu_4", "emoji": "🌤️", "label": "下午天气","label_en": "afternoon weather", "url": null }
+      ]
+    },
+    "晚上": {
+      "pinyin": "wǎn shàng", "english": "evening / night", "color": "#30336b",
+      "pexels_query": "evening night city lights dark",
+      "images": [
+        { "id": "wanshang_1", "emoji": "🌃", "label": "晚上",    "label_en": "evening",         "url": null },
+        { "id": "wanshang_2", "emoji": "🌙", "label": "晚上好",  "label_en": "good evening",   "url": null },
+        { "id": "wanshang_3", "emoji": "🌟", "label": "晚上的星星","label_en": "evening stars", "url": null },
+        { "id": "wanshang_4", "emoji": "🍽️", "label": "吃晚饭",  "label_en": "dinner",        "url": null }
+      ]
+    },
+    "点": {
+      "pinyin": "diǎn", "english": "o'clock", "color": "#e17055",
+      "pexels_query": "clock time hour analog",
+      "images": [
+        { "id": "dian_1", "emoji": "🕐", "label": "一点",   "label_en": "1 o'clock",         "url": null },
+        { "id": "dian_2", "emoji": "⏰", "label": "几点了？","label_en": "what time is it?",  "url": null },
+        { "id": "dian_3", "emoji": "🕛", "label": "十二点", "label_en": "12 o'clock",        "url": null },
+        { "id": "dian_4", "emoji": "🕙", "label": "十点半", "label_en": "10:30",             "url": null }
+      ]
+    },
+    "分": {
+      "pinyin": "fēn", "english": "minute", "color": "#00cec9",
+      "pexels_query": "stopwatch timer minute hand",
+      "images": [
+        { "id": "fen_1", "emoji": "⏱️", "label": "几分？",   "label_en": "how many minutes?", "url": null },
+        { "id": "fen_2", "emoji": "⏰", "label": "三十分",   "label_en": "thirty minutes",   "url": null },
+        { "id": "fen_3", "emoji": "🕐", "label": "五分钟",   "label_en": "five minutes",     "url": null },
+        { "id": "fen_4", "emoji": "⌚", "label": "十五分",   "label_en": "fifteen minutes",  "url": null }
+      ]
+    },
+    "一月": {
+      "pinyin": "yī yuè", "english": "January", "color": "#74b9ff",
+      "pexels_query": "January winter snow cold month",
+      "images": [
+        { "id": "jan_1", "emoji": "❄️", "label": "一月",   "label_en": "January",           "url": null },
+        { "id": "jan_2", "emoji": "🌨️", "label": "冬天",  "label_en": "winter",            "url": null },
+        { "id": "jan_3", "emoji": "🎆", "label": "新年",  "label_en": "new year",           "url": null },
+        { "id": "jan_4", "emoji": "📅", "label": "一月一号","label_en": "January 1st",      "url": null }
+      ]
+    },
+    "四月": {
+      "pinyin": "sì yuè", "english": "April", "color": "#fd79a8",
+      "pexels_query": "April spring flowers bloom",
+      "images": [
+        { "id": "apr_1", "emoji": "🌸", "label": "四月",   "label_en": "April",             "url": null },
+        { "id": "apr_2", "emoji": "🌼", "label": "春天",   "label_en": "spring",            "url": null },
+        { "id": "apr_3", "emoji": "🌱", "label": "春暖",   "label_en": "spring warmth",     "url": null },
+        { "id": "apr_4", "emoji": "☔", "label": "春雨",   "label_en": "spring rain",       "url": null }
+      ]
+    },
+    "七月": {
+      "pinyin": "qī yuè", "english": "July", "color": "#e17055",
+      "pexels_query": "July summer beach hot",
+      "images": [
+        { "id": "jul_1", "emoji": "☀️", "label": "七月",   "label_en": "July",              "url": null },
+        { "id": "jul_2", "emoji": "🏖️", "label": "夏天",  "label_en": "summer",            "url": null },
+        { "id": "jul_3", "emoji": "🌊", "label": "夏日海边","label_en": "summer beach",     "url": null },
+        { "id": "jul_4", "emoji": "🍦", "label": "吃冰淇淋","label_en": "eating ice cream", "url": null }
+      ]
+    },
+    "十月": {
+      "pinyin": "shí yuè", "english": "October", "color": "#e17055",
+      "pexels_query": "October autumn fall leaves",
+      "images": [
+        { "id": "oct_1", "emoji": "🍂", "label": "十月",   "label_en": "October",           "url": null },
+        { "id": "oct_2", "emoji": "🍁", "label": "秋天",   "label_en": "autumn",            "url": null },
+        { "id": "oct_3", "emoji": "🎃", "label": "秋季",   "label_en": "fall season",       "url": null },
+        { "id": "oct_4", "emoji": "🌾", "label": "秋天丰收","label_en": "autumn harvest",   "url": null }
+      ]
+    }
+  },
+  "dialogue_images": {
+    "1": { "emoji": "📅", "label": "今天几号",   "label_en": "What's the Date?",   "color": "#f9ca24", "url": null },
+    "2": { "emoji": "⏰", "label": "现在几点",   "label_en": "What Time Is It?",    "color": "#e17055", "url": null },
+    "3": { "emoji": "🌅", "label": "早上还是晚上","label_en": "Morning or Evening?", "color": "#30336b", "url": null }
+  }
+}
