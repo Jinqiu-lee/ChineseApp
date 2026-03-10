@@ -418,5 +418,124 @@
         "我是书。"
       ]
     }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Where Are You Going?",
+      "title_chinese": "去哪儿",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你去哪儿？",
+          "pinyin": "Nǐ qù nǎr?",
+          "english": "Where are you going?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我去学校。你去哪儿？",
+          "pinyin": "Wǒ qù xuéxiào. Nǐ qù nǎr?",
+          "english": "I'm going to school. Where are you going?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我去图书馆看书。",
+          "pinyin": "Wǒ qù túshūguǎn kàn shū.",
+          "english": "I'm going to the library to read."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "朋友",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Come to My Place!",
+      "title_chinese": "来我家",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你来我家吗？",
+          "pinyin": "Nǐ lái wǒ jiā ma?",
+          "english": "Will you come to my home?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "好啊！你做什么？",
+          "pinyin": "Hǎo a! Nǐ zuò shén me?",
+          "english": "Sure! What are you doing?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我看电视，你也来看吧！",
+          "pinyin": "Wǒ kàn diànshì, nǐ yě lái kàn ba!",
+          "english": "I'm watching TV, come watch with me!"
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "室友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大卫",
+          "role": "室友",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "What Is She Doing?",
+      "title_chinese": "她在做什么",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "她在做什么？",
+          "pinyin": "Tā zài zuò shén me?",
+          "english": "What is she doing?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "她在写汉字。",
+          "pinyin": "Tā zài xiě Hànzì.",
+          "english": "She is writing Chinese characters."
+        },
+        {
+          "speaker": "A",
+          "chinese": "她在哪儿写？",
+          "pinyin": "Tā zài nǎr xiě?",
+          "english": "Where is she writing?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "她在学校写。",
+          "pinyin": "Tā zài xuéxiào xiě.",
+          "english": "She's writing at school."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "朋友",
+          "gender": "male"
+        }
+      }
+    }
   ]
 }

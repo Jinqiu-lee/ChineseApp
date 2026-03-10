@@ -408,5 +408,118 @@
         "Verb"
       ]
     }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "How Old Are You?",
+      "title_chinese": "你多大",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你好！你多大？",
+          "pinyin": "Nǐ hǎo! Nǐ duō dà?",
+          "english": "Hi! How old are you?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我二十岁，你呢？",
+          "pinyin": "Wǒ èr shí suì, nǐ ne?",
+          "english": "I'm 20 years old, and you?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我十八岁。",
+          "pinyin": "Wǒ shí bā suì.",
+          "english": "I'm 18 years old."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大卫",
+          "role": "朋友",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "How Many Friends?",
+      "title_chinese": "几个朋友",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你有几个朋友？",
+          "pinyin": "Nǐ yǒu jǐ gè péng yǒu?",
+          "english": "How many friends do you have?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我有三个。你呢？",
+          "pinyin": "Wǒ yǒu sān gè. Nǐ ne?",
+          "english": "I have three. What about you?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我有两个朋友。",
+          "pinyin": "Wǒ yǒu liǎng gè péng yǒu.",
+          "english": "I have two friends."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大卫",
+          "role": "朋友",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Talking Numbers",
+      "title_chinese": "说数字",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你有几个同学？",
+          "pinyin": "Nǐ yǒu jǐ gè tóng xué?",
+          "english": "How many classmates do you have?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我有二十个同学。",
+          "pinyin": "Wǒ yǒu èr shí gè tóng xué.",
+          "english": "I have twenty classmates."
+        },
+        {
+          "speaker": "A",
+          "chinese": "很多！",
+          "pinyin": "Hěn duō!",
+          "english": "A lot!"
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "同学",
+          "gender": "male"
+        }
+      }
+    }
   ]
 }

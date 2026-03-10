@@ -3,31 +3,192 @@
   "topic": "Greetings and Basic Introductions",
   "topic_chinese": "你好！",
   "age_group": "Adults and 10+",
-  "objectives": ["listening", "speaking", "reading", "writing"],
+  "objectives": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
   "vocabulary": [
-    { "id": "hsk1_l1_01", "chinese": "你", "pinyin": "nǐ", "tones": [3], "english": "You", "part_of_speech": "pronoun" },
-    { "id": "hsk1_l1_02", "chinese": "好", "pinyin": "hǎo", "tones": [3], "english": "Good / Well", "part_of_speech": "adjective" },
-    { "id": "hsk1_l1_03", "chinese": "我", "pinyin": "wǒ", "tones": [3], "english": "I / Me", "part_of_speech": "pronoun" },
-    { "id": "hsk1_l1_04", "chinese": "是", "pinyin": "shì", "tones": [4], "english": "To be / Am / Is / Are", "part_of_speech": "verb" },
-    { "id": "hsk1_l1_05", "chinese": "的", "pinyin": "de", "tones": [0], "english": "Possessive particle / Of", "part_of_speech": "particle" },
-    { "id": "hsk1_l1_06", "chinese": "吗", "pinyin": "ma", "tones": [0], "english": "Question particle", "part_of_speech": "particle" },
-    { "id": "hsk1_l1_07", "chinese": "呢", "pinyin": "ne", "tones": [0], "english": "Question particle (and you?)", "part_of_speech": "particle" },
-    { "id": "hsk1_l1_08", "chinese": "叫", "pinyin": "jiào", "tones": [4], "english": "To be called", "part_of_speech": "verb" },
-    { "id": "hsk1_l1_09", "chinese": "什么", "pinyin": "shén me", "tones": [2, 0], "english": "What", "part_of_speech": "pronoun" },
-    { "id": "hsk1_l1_10", "chinese": "名字", "pinyin": "míng zi", "tones": [2, 0], "english": "Name", "part_of_speech": "noun" },
-    { "id": "hsk1_l1_11", "chinese": "谁", "pinyin": "shéi", "tones": [2], "english": "Who", "part_of_speech": "pronoun" },
-    { "id": "hsk1_l1_12", "chinese": "他", "pinyin": "tā", "tones": [1], "english": "He / Him", "part_of_speech": "pronoun" },
-    { "id": "hsk1_l1_13", "chinese": "她", "pinyin": "tā", "tones": [1], "english": "She / Her", "part_of_speech": "pronoun" },
-    { "id": "hsk1_l1_14", "chinese": "人", "pinyin": "rén", "tones": [2], "english": "Person / People", "part_of_speech": "noun" }
+    {
+      "id": "hsk1_l1_01",
+      "chinese": "你",
+      "pinyin": "nǐ",
+      "tones": [
+        3
+      ],
+      "english": "You",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l1_02",
+      "chinese": "好",
+      "pinyin": "hǎo",
+      "tones": [
+        3
+      ],
+      "english": "Good / Well",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk1_l1_03",
+      "chinese": "我",
+      "pinyin": "wǒ",
+      "tones": [
+        3
+      ],
+      "english": "I / Me",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l1_04",
+      "chinese": "是",
+      "pinyin": "shì",
+      "tones": [
+        4
+      ],
+      "english": "To be / Am / Is / Are",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l1_05",
+      "chinese": "的",
+      "pinyin": "de",
+      "tones": [
+        0
+      ],
+      "english": "Possessive particle / Of",
+      "part_of_speech": "particle"
+    },
+    {
+      "id": "hsk1_l1_06",
+      "chinese": "吗",
+      "pinyin": "ma",
+      "tones": [
+        0
+      ],
+      "english": "Question particle",
+      "part_of_speech": "particle"
+    },
+    {
+      "id": "hsk1_l1_07",
+      "chinese": "呢",
+      "pinyin": "ne",
+      "tones": [
+        0
+      ],
+      "english": "Question particle (and you?)",
+      "part_of_speech": "particle"
+    },
+    {
+      "id": "hsk1_l1_08",
+      "chinese": "叫",
+      "pinyin": "jiào",
+      "tones": [
+        4
+      ],
+      "english": "To be called",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l1_09",
+      "chinese": "什么",
+      "pinyin": "shén me",
+      "tones": [
+        2,
+        0
+      ],
+      "english": "What",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l1_10",
+      "chinese": "名字",
+      "pinyin": "míng zi",
+      "tones": [
+        2,
+        0
+      ],
+      "english": "Name",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l1_11",
+      "chinese": "谁",
+      "pinyin": "shéi",
+      "tones": [
+        2
+      ],
+      "english": "Who",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l1_12",
+      "chinese": "他",
+      "pinyin": "tā",
+      "tones": [
+        1
+      ],
+      "english": "He / Him",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l1_13",
+      "chinese": "她",
+      "pinyin": "tā",
+      "tones": [
+        1
+      ],
+      "english": "She / Her",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l1_14",
+      "chinese": "人",
+      "pinyin": "rén",
+      "tones": [
+        2
+      ],
+      "english": "Person / People",
+      "part_of_speech": "noun"
+    }
   ],
   "key_sentences": [
-    { "chinese": "你好！", "pinyin": "Nǐ hǎo!", "english": "Hello!" },
-    { "chinese": "你叫什么名字？", "pinyin": "Nǐ jiào shén me míng zi?", "english": "What is your name?" },
-    { "chinese": "我叫李明。", "pinyin": "Wǒ jiào Lǐ Míng.", "english": "My name is Li Ming." },
-    { "chinese": "他是谁？", "pinyin": "Tā shì shéi?", "english": "Who is he?" },
-    { "chinese": "她是我的朋友。", "pinyin": "Tā shì wǒ de péng yǒu.", "english": "She is my friend." },
-    { "chinese": "你好吗？", "pinyin": "Nǐ hǎo ma?", "english": "How are you?" },
-    { "chinese": "我很好，你呢？", "pinyin": "Wǒ hěn hǎo, nǐ ne?", "english": "I'm fine, and you?" }
+    {
+      "chinese": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "english": "Hello!"
+    },
+    {
+      "chinese": "你叫什么名字？",
+      "pinyin": "Nǐ jiào shén me míng zi?",
+      "english": "What is your name?"
+    },
+    {
+      "chinese": "我叫李明。",
+      "pinyin": "Wǒ jiào Lǐ Míng.",
+      "english": "My name is Li Ming."
+    },
+    {
+      "chinese": "他是谁？",
+      "pinyin": "Tā shì shéi?",
+      "english": "Who is he?"
+    },
+    {
+      "chinese": "她是我的朋友。",
+      "pinyin": "Tā shì wǒ de péng yǒu.",
+      "english": "She is my friend."
+    },
+    {
+      "chinese": "你好吗？",
+      "pinyin": "Nǐ hǎo ma?",
+      "english": "How are you?"
+    },
+    {
+      "chinese": "我很好，你呢？",
+      "pinyin": "Wǒ hěn hǎo, nǐ ne?",
+      "english": "I'm fine, and you?"
+    }
   ],
   "grammar_points": [
     {
@@ -35,37 +196,80 @@
       "title": "Using 是 (shì) - The verb 'to be'",
       "explanation": "是 (shì) is used to link the subject with a noun or pronoun. It works like 'am/is/are' in English. Formula: Subject + 是 + Noun/Pronoun.",
       "examples": [
-        { "chinese": "我是学生。", "pinyin": "Wǒ shì xué shēng.", "english": "I am a student." },
-        { "chinese": "他是老师。", "pinyin": "Tā shì lǎo shī.", "english": "He is a teacher." }
+        {
+          "chinese": "我是学生。",
+          "pinyin": "Wǒ shì xué shēng.",
+          "english": "I am a student."
+        },
+        {
+          "chinese": "他是老师。",
+          "pinyin": "Tā shì lǎo shī.",
+          "english": "He is a teacher."
+        }
       ],
       "exercises": [
         {
           "question": "Fill in the blank: 我___老师。(I am a teacher)",
           "type": "multiple_choice",
           "correct": "是",
-          "options": ["是", "有", "在", "的"],
-          "option_pinyin": ["shì", "yǒu", "zài", "de"]
+          "options": [
+            "是",
+            "有",
+            "在",
+            "的"
+          ],
+          "option_pinyin": [
+            "shì",
+            "yǒu",
+            "zài",
+            "de"
+          ]
         },
         {
           "question": "Which sentence means 'She is my friend'?",
           "type": "multiple_choice",
           "correct": "她是我的朋友。",
-          "options": ["她是我的朋友。", "她有我的朋友。", "她在我的朋友。", "她的我朋友。"],
-          "option_pinyin": ["Tā shì wǒ de péng yǒu.", "Tā yǒu wǒ de péng yǒu.", "Tā zài wǒ de péng yǒu.", "Tā de wǒ péng yǒu."],
+          "options": [
+            "她是我的朋友。",
+            "她有我的朋友。",
+            "她在我的朋友。",
+            "她的我朋友。"
+          ],
+          "option_pinyin": [
+            "Tā shì wǒ de péng yǒu.",
+            "Tā yǒu wǒ de péng yǒu.",
+            "Tā zài wǒ de péng yǒu.",
+            "Tā de wǒ péng yǒu."
+          ],
           "correct_pinyin": "Tā shì wǒ de péng yǒu."
         },
         {
           "question": "What does 是 mean in English?",
           "type": "multiple_choice",
           "correct": "to be (am/is/are)",
-          "options": ["to be (am/is/are)", "to have", "to go", "at/in/on"]
+          "options": [
+            "to be (am/is/are)",
+            "to have",
+            "to go",
+            "at/in/on"
+          ]
         },
         {
           "question": "Choose the correct sentence: 'He is a student'",
           "type": "multiple_choice",
           "correct": "他是学生。",
-          "options": ["他是学生。", "他有学生。", "他在学生。", "学生他是。"],
-          "option_pinyin": ["Tā shì xué shēng.", "Tā yǒu xué shēng.", "Tā zài xué shēng.", "Xué shēng tā shì."],
+          "options": [
+            "他是学生。",
+            "他有学生。",
+            "他在学生。",
+            "学生他是。"
+          ],
+          "option_pinyin": [
+            "Tā shì xué shēng.",
+            "Tā yǒu xué shēng.",
+            "Tā zài xué shēng.",
+            "Xué shēng tā shì."
+          ],
           "correct_pinyin": "Tā shì xué shēng."
         }
       ]
@@ -75,37 +279,80 @@
       "title": "The possessive particle 的 (de)",
       "explanation": "的 (de) shows possession, like 's or 'of' in English. Formula: Possessor + 的 + Thing possessed.",
       "examples": [
-        { "chinese": "我的书", "pinyin": "wǒ de shū", "english": "My book" },
-        { "chinese": "他的名字", "pinyin": "tā de míng zi", "english": "His name" }
+        {
+          "chinese": "我的书",
+          "pinyin": "wǒ de shū",
+          "english": "My book"
+        },
+        {
+          "chinese": "他的名字",
+          "pinyin": "tā de míng zi",
+          "english": "His name"
+        }
       ],
       "exercises": [
         {
           "question": "Fill in: 她___朋友 (her friend)",
           "type": "multiple_choice",
           "correct": "的",
-          "options": ["的", "是", "有", "在"],
-          "option_pinyin": ["de", "shì", "yǒu", "zài"]
+          "options": [
+            "的",
+            "是",
+            "有",
+            "在"
+          ],
+          "option_pinyin": [
+            "de",
+            "shì",
+            "yǒu",
+            "zài"
+          ]
         },
         {
           "question": "Which means 'my teacher'?",
           "type": "multiple_choice",
           "correct": "我的老师",
-          "options": ["我的老师", "我是老师", "老师我", "我有老师"],
-          "option_pinyin": ["wǒ de lǎo shī", "wǒ shì lǎo shī", "lǎo shī wǒ", "wǒ yǒu lǎo shī"],
+          "options": [
+            "我的老师",
+            "我是老师",
+            "老师我",
+            "我有老师"
+          ],
+          "option_pinyin": [
+            "wǒ de lǎo shī",
+            "wǒ shì lǎo shī",
+            "lǎo shī wǒ",
+            "wǒ yǒu lǎo shī"
+          ],
           "correct_pinyin": "wǒ de lǎo shī"
         },
         {
           "question": "What does 的 indicate?",
           "type": "multiple_choice",
           "correct": "possession (like 's)",
-          "options": ["possession (like 's)", "question", "location", "action"]
+          "options": [
+            "possession (like 's)",
+            "question",
+            "location",
+            "action"
+          ]
         },
         {
           "question": "How do you say 'his book' in Chinese?",
           "type": "multiple_choice",
           "correct": "他的书",
-          "options": ["他的书", "他是书", "书他", "他书"],
-          "option_pinyin": ["tā de shū", "tā shì shū", "shū tā", "tā shū"],
+          "options": [
+            "他的书",
+            "他是书",
+            "书他",
+            "他书"
+          ],
+          "option_pinyin": [
+            "tā de shū",
+            "tā shì shū",
+            "shū tā",
+            "tā shū"
+          ],
           "correct_pinyin": "tā de shū"
         }
       ]
@@ -115,8 +362,16 @@
       "title": "Question particle 吗 (ma)",
       "explanation": "吗 (ma) is added at the end of a statement to turn it into a yes/no question. Formula: Statement + 吗？",
       "examples": [
-        { "chinese": "你是学生吗？", "pinyin": "Nǐ shì xué shēng ma?", "english": "Are you a student?" },
-        { "chinese": "他好吗？", "pinyin": "Tā hǎo ma?", "english": "Is he well?" }
+        {
+          "chinese": "你是学生吗？",
+          "pinyin": "Nǐ shì xué shēng ma?",
+          "english": "Are you a student?"
+        },
+        {
+          "chinese": "他好吗？",
+          "pinyin": "Tā hǎo ma?",
+          "english": "Is he well?"
+        }
       ],
       "exercises": [
         {
@@ -124,23 +379,53 @@
           "question_pinyin": "Nǐ shì lǎo shī.",
           "type": "multiple_choice",
           "correct": "你是老师吗？",
-          "options": ["你是老师吗？", "你老师是吗？", "是你老师吗？", "吗你是老师？"],
-          "option_pinyin": ["Nǐ shì lǎo shī ma?", "Nǐ lǎo shī shì ma?", "Shì nǐ lǎo shī ma?", "Ma nǐ shì lǎo shī?"],
+          "options": [
+            "你是老师吗？",
+            "你老师是吗？",
+            "是你老师吗？",
+            "吗你是老师？"
+          ],
+          "option_pinyin": [
+            "Nǐ shì lǎo shī ma?",
+            "Nǐ lǎo shī shì ma?",
+            "Shì nǐ lǎo shī ma?",
+            "Ma nǐ shì lǎo shī?"
+          ],
           "correct_pinyin": "Nǐ shì lǎo shī ma?"
         },
         {
           "question": "What particle makes a yes/no question?",
           "type": "multiple_choice",
           "correct": "吗",
-          "options": ["吗", "呢", "的", "是"],
-          "option_pinyin": ["ma", "ne", "de", "shì"]
+          "options": [
+            "吗",
+            "呢",
+            "的",
+            "是"
+          ],
+          "option_pinyin": [
+            "ma",
+            "ne",
+            "de",
+            "shì"
+          ]
         },
         {
           "question": "Which is a correct question?",
           "type": "multiple_choice",
           "correct": "她是你的朋友吗？",
-          "options": ["她是你的朋友吗？", "她吗是你的朋友？", "吗她是你的朋友？", "她是吗你的朋友？"],
-          "option_pinyin": ["Tā shì nǐ de péng yǒu ma?", "Tā ma shì nǐ de péng yǒu?", "Ma tā shì nǐ de péng yǒu?", "Tā shì ma nǐ de péng yǒu?"],
+          "options": [
+            "她是你的朋友吗？",
+            "她吗是你的朋友？",
+            "吗她是你的朋友？",
+            "她是吗你的朋友？"
+          ],
+          "option_pinyin": [
+            "Tā shì nǐ de péng yǒu ma?",
+            "Tā ma shì nǐ de péng yǒu?",
+            "Ma tā shì nǐ de péng yǒu?",
+            "Tā shì ma nǐ de péng yǒu?"
+          ],
           "correct_pinyin": "Tā shì nǐ de péng yǒu ma?"
         }
       ]
@@ -148,20 +433,262 @@
   ],
   "pinyin_focus": {
     "topic": "Four tones and basic initials",
-    "initials_focus": ["b", "p", "m", "f", "d", "t", "n", "l"],
-    "finals_focus": ["a", "o", "e", "i", "u", "ao", "ou"],
-    "tone_practice": ["mā", "má", "mǎ", "mà"]
+    "initials_focus": [
+      "b",
+      "p",
+      "m",
+      "f",
+      "d",
+      "t",
+      "n",
+      "l"
+    ],
+    "finals_focus": [
+      "a",
+      "o",
+      "e",
+      "i",
+      "u",
+      "ao",
+      "ou"
+    ],
+    "tone_practice": [
+      "mā",
+      "má",
+      "mǎ",
+      "mà"
+    ]
   },
-  "games": ["flashcard", "matching", "word_shake", "sentence_builder"],
+  "games": [
+    "flashcard",
+    "matching",
+    "word_shake",
+    "sentence_builder"
+  ],
   "quiz": [
-    { "question": "What does 你好 mean?", "type": "multiple_choice", "correct": "Hello", "options": ["Hello", "Goodbye", "Thank you", "Sorry"] },
-    { "question": "How do you ask 'What is your name?' in Chinese?", "type": "multiple_choice", "correct": "你叫什么名字？", "options": ["你叫什么名字？", "你好吗？", "你是谁？", "你呢？"] },
-    { "question": "Which character means 'I/me'?", "type": "multiple_choice", "correct": "我", "options": ["你", "我", "他", "她"] },
-    { "question": "What is the function of 是 in a sentence?", "type": "multiple_choice", "correct": "To be (am/is/are)", "options": ["To be (am/is/are)", "Possessive marker", "Question particle", "To have"] },
-    { "question": "What does 的 indicate?", "type": "multiple_choice", "correct": "Possession", "options": ["Possession", "Question", "Action", "Location"] },
-    { "question": "How do you say 'Who is he?' in Chinese?", "type": "multiple_choice", "correct": "他是谁？", "options": ["他是谁？", "谁是他？", "他叫谁？", "他好吗？"] },
-    { "question": "Which particle turns a statement into a yes/no question?", "type": "multiple_choice", "correct": "吗", "options": ["吗", "呢", "的", "是"] },
-    { "question": "What does 她 mean?", "type": "multiple_choice", "correct": "She/Her", "options": ["He/Him", "She/Her", "You", "I/Me"] },
-    { "question": "How do you say 'my name'?", "type": "multiple_choice", "correct": "我的名字", "options": ["我的名字", "我是名字", "名字的我", "我叫名字"] }
+    {
+      "question": "What does 你好 mean?",
+      "type": "multiple_choice",
+      "correct": "Hello",
+      "options": [
+        "Hello",
+        "Goodbye",
+        "Thank you",
+        "Sorry"
+      ]
+    },
+    {
+      "question": "How do you ask 'What is your name?' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "你叫什么名字？",
+      "options": [
+        "你叫什么名字？",
+        "你好吗？",
+        "你是谁？",
+        "你呢？"
+      ]
+    },
+    {
+      "question": "Which character means 'I/me'?",
+      "type": "multiple_choice",
+      "correct": "我",
+      "options": [
+        "你",
+        "我",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "question": "What is the function of 是 in a sentence?",
+      "type": "multiple_choice",
+      "correct": "To be (am/is/are)",
+      "options": [
+        "To be (am/is/are)",
+        "Possessive marker",
+        "Question particle",
+        "To have"
+      ]
+    },
+    {
+      "question": "What does 的 indicate?",
+      "type": "multiple_choice",
+      "correct": "Possession",
+      "options": [
+        "Possession",
+        "Question",
+        "Action",
+        "Location"
+      ]
+    },
+    {
+      "question": "How do you say 'Who is he?' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "他是谁？",
+      "options": [
+        "他是谁？",
+        "谁是他？",
+        "他叫谁？",
+        "他好吗？"
+      ]
+    },
+    {
+      "question": "Which particle turns a statement into a yes/no question?",
+      "type": "multiple_choice",
+      "correct": "吗",
+      "options": [
+        "吗",
+        "呢",
+        "的",
+        "是"
+      ]
+    },
+    {
+      "question": "What does 她 mean?",
+      "type": "multiple_choice",
+      "correct": "She/Her",
+      "options": [
+        "He/Him",
+        "She/Her",
+        "You",
+        "I/Me"
+      ]
+    },
+    {
+      "question": "How do you say 'my name'?",
+      "type": "multiple_choice",
+      "correct": "我的名字",
+      "options": [
+        "我的名字",
+        "我是名字",
+        "名字的我",
+        "我叫名字"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Nice to Meet You",
+      "title_chinese": "你好",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你好！",
+          "pinyin": "Nǐ hǎo!",
+          "english": "Hello!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "你好！你叫什么名字？",
+          "pinyin": "Nǐ hǎo! Nǐ jiào shén me míng zì?",
+          "english": "Hello! What is your name?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我叫小丽，你呢？",
+          "pinyin": "Wǒ jiào Xiǎo Lì, nǐ ne?",
+          "english": "My name is Xiao Li, and you?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我叫小明。",
+          "pinyin": "Wǒ jiào Xiǎo Míng.",
+          "english": "My name is Xiao Ming."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "新同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "同学",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Who Is She?",
+      "title_chinese": "她是谁",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "她是谁？",
+          "pinyin": "Tā shì shuí?",
+          "english": "Who is she?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "她是我的朋友。",
+          "pinyin": "Tā shì wǒ de péng yǒu.",
+          "english": "She is my friend."
+        },
+        {
+          "speaker": "A",
+          "chinese": "她叫什么名字？",
+          "pinyin": "Tā jiào shén me míng zì?",
+          "english": "What is her name?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "她叫小华。",
+          "pinyin": "Tā jiào Xiǎo Huá.",
+          "english": "Her name is Xiao Hua."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小华",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大卫",
+          "role": "新朋友",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "How Are You?",
+      "title_chinese": "你好吗",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小明，你好吗？",
+          "pinyin": "Xiǎo Míng, nǐ hǎo ma?",
+          "english": "Xiao Ming, how are you?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我很好，你呢？",
+          "pinyin": "Wǒ hěn hǎo, nǐ ne?",
+          "english": "I'm fine, and you?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我也很好！",
+          "pinyin": "Wǒ yě hěn hǎo!",
+          "english": "I'm also fine!"
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "同学",
+          "gender": "male"
+        }
+      }
+    }
   ]
 }

@@ -418,5 +418,118 @@
         "姐姐"
       ]
     }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Your Family",
+      "title_chinese": "你的家",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你家有几口人？",
+          "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+          "english": "How many people are in your family?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我家有四口人。你呢？",
+          "pinyin": "Wǒ jiā yǒu sì kǒu rén. Nǐ ne?",
+          "english": "Four people. What about you?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我家有三口人。",
+          "pinyin": "Wǒ jiā yǒu sān kǒu rén.",
+          "english": "Three people in my family."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小华",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "同学",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Brothers and Sisters",
+      "title_chinese": "兄弟姐妹",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你有哥哥吗？",
+          "pinyin": "Nǐ yǒu gēge ma?",
+          "english": "Do you have an older brother?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我没有哥哥，我有一个妹妹。",
+          "pinyin": "Wǒ méi yǒu gēge, wǒ yǒu yī gè mèimei.",
+          "english": "I don't have a brother, but I have a younger sister."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我也有一个妹妹！",
+          "pinyin": "Wǒ yě yǒu yī gè mèimei!",
+          "english": "I also have a younger sister!"
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小华",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "同学",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Dad's Job",
+      "title_chinese": "爸爸的工作",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你爸爸做什么工作？",
+          "pinyin": "Nǐ bàba zuò shén me gōng zuò?",
+          "english": "What does your father do?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我爸爸是老师。你呢？",
+          "pinyin": "Wǒ bàba shì lǎo shī. Nǐ ne?",
+          "english": "My father is a teacher. And yours?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我爸爸是医生。",
+          "pinyin": "Wǒ bàba shì yī shēng.",
+          "english": "My father is a doctor."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大卫",
+          "role": "朋友",
+          "gender": "male"
+        }
+      }
+    }
   ]
 }

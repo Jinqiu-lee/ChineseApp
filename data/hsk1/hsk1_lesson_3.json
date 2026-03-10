@@ -593,5 +593,124 @@
         "二月"
       ]
     }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "What's the Date?",
+      "title_chinese": "今天几号",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "今天几月几号？",
+          "pinyin": "Jīn tiān jǐ yuè jǐ hào?",
+          "english": "What's the date today?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "今天三月十五号。",
+          "pinyin": "Jīn tiān sān yuè shí wǔ hào.",
+          "english": "Today is March 15th."
+        },
+        {
+          "speaker": "A",
+          "chinese": "明天几号？",
+          "pinyin": "Míng tiān jǐ hào?",
+          "english": "What's the date tomorrow?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "明天十六号。",
+          "pinyin": "Míng tiān shí liù hào.",
+          "english": "Tomorrow is the 16th."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "王老师",
+          "role": "老师",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "学生",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "What Time Is It?",
+      "title_chinese": "现在几点",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "现在几点？",
+          "pinyin": "Xiàn zài jǐ diǎn?",
+          "english": "What time is it now?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "下午两点半。",
+          "pinyin": "Xià wǔ liǎng diǎn bàn.",
+          "english": "It's 2:30 in the afternoon."
+        },
+        {
+          "speaker": "A",
+          "chinese": "谢谢！",
+          "pinyin": "Xièxiè!",
+          "english": "Thank you!"
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "同事",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "同事",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Morning or Evening?",
+      "title_chinese": "早上还是晚上",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你几点上课？",
+          "pinyin": "Nǐ jǐ diǎn shàng kè?",
+          "english": "What time do you have class?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "早上八点。",
+          "pinyin": "Zǎo shang bā diǎn.",
+          "english": "8:00 in the morning."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我中午十二点上课。",
+          "pinyin": "Wǒ zhōng wǔ shí èr diǎn shàng kè.",
+          "english": "I have class at noon."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "王老师",
+          "role": "老师",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "学生",
+          "gender": "male"
+        }
+      }
+    }
   ]
 }

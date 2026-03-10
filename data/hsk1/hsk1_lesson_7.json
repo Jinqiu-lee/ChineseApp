@@ -418,5 +418,124 @@
         "我去商店。"
       ]
     }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Where Are You?",
+      "title_chinese": "你在哪儿",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你在哪儿？",
+          "pinyin": "Nǐ zài nǎr?",
+          "english": "Where are you?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我在学校。你在哪儿？",
+          "pinyin": "Wǒ zài xuéxiào. Nǐ zài nǎr?",
+          "english": "I'm at school. Where are you?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我在图书馆。",
+          "pinyin": "Wǒ zài túshūguǎn.",
+          "english": "I'm at the library."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "路人",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "本地人",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Where Is the Hospital?",
+      "title_chinese": "医院在哪儿",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "请问，医院在哪儿？",
+          "pinyin": "Qǐng wèn, yīyuàn zài nǎr?",
+          "english": "Excuse me, where is the hospital?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "医院在前面。",
+          "pinyin": "Yīyuàn zài qiánmiàn.",
+          "english": "The hospital is in front."
+        },
+        {
+          "speaker": "A",
+          "chinese": "商店呢？",
+          "pinyin": "Shāngdiàn ne?",
+          "english": "What about the store?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "商店在后面。",
+          "pinyin": "Shāngdiàn zài hòumiàn.",
+          "english": "The store is in the back."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小华",
+          "role": "同事",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "同事",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Where's the Book?",
+      "title_chinese": "书在哪儿",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "书在哪儿？",
+          "pinyin": "Shū zài nǎr?",
+          "english": "Where is the book?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "书在桌子上。",
+          "pinyin": "Shū zài zhuōzi shàng.",
+          "english": "The book is on the table."
+        },
+        {
+          "speaker": "A",
+          "chinese": "谢谢！",
+          "pinyin": "Xièxiè!",
+          "english": "Thank you!"
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "学生",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "老师",
+          "gender": "male"
+        }
+      }
+    }
   ]
 }

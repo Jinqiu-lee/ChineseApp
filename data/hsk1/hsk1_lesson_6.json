@@ -407,5 +407,130 @@
         "我是衣服。"
       ]
     }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "How Much Is This?",
+      "title_chinese": "多少钱",
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "你好！这个多少钱？",
+          "pinyin": "Nǐ hǎo! Zhège duō shao qián?",
+          "english": "Hi! How much is this?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "五十块。",
+          "pinyin": "Wǔ shí kuài.",
+          "english": "50 yuan."
+        },
+        {
+          "speaker": "B",
+          "chinese": "太贵了！",
+          "pinyin": "Tài guì le!",
+          "english": "Too expensive!"
+        },
+        {
+          "speaker": "A",
+          "chinese": "那个三十块。",
+          "pinyin": "Nà ge sān shí kuài.",
+          "english": "That one is 30 yuan."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小美",
+          "role": "店员",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "顾客",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Buying Books",
+      "title_chinese": "买书",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你想买什么？",
+          "pinyin": "Nǐ xiǎng mǎi shén me?",
+          "english": "What would you like to buy?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我想买书。这本书多少钱？",
+          "pinyin": "Wǒ xiǎng mǎi shū. Zhè běn shū duō shao qián?",
+          "english": "I want to buy books. How much is this book?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "二十块。很便宜！",
+          "pinyin": "Èr shí kuài. Hěn pián yi!",
+          "english": "20 yuan. Very cheap!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "好，我买这本。",
+          "pinyin": "Hǎo, wǒ mǎi zhè běn.",
+          "english": "Okay, I'll buy this one."
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "顾客",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "店员",
+          "gender": "male"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Is It Cheap?",
+      "title_chinese": "便宜吗",
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "这件衣服多少钱？",
+          "pinyin": "Zhè jiàn yīfu duō shao qián?",
+          "english": "How much is this piece of clothing?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "八十块。",
+          "pinyin": "Bā shí kuài.",
+          "english": "80 yuan."
+        },
+        {
+          "speaker": "B",
+          "chinese": "不贵，我买！",
+          "pinyin": "Bù guì, wǒ mǎi!",
+          "english": "Not expensive, I'll buy it!"
+        }
+      ],
+      "speakers": {
+        "A": {
+          "name": "小美",
+          "role": "店员",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大卫",
+          "role": "顾客",
+          "gender": "male"
+        }
+      }
+    }
   ]
 }
