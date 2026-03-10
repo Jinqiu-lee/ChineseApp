@@ -21,19 +21,29 @@ function buildSSML(text) {
   return `<speak>${inner}</speak>`;
 }
 
-// Simple in-memory cache: chinese text → base64 MP3 string
+// Simple in-memory cache: cacheKey (text+gender) → base64 MP3 string
 const audioCache = new Map();
 
 const TMP_FILE = FileSystem.cacheDirectory + 'tts_temp.mp3';
 
-export async function speakChinese(text) {
+// Voice configs by gender
+// Male: higher pitch + slower rate → soft, young, non-aggressive
+const VOICE_CONFIG = {
+  female: { ssmlGender: 'FEMALE', speakingRate: 0.9, pitch: 2.0 },
+  male:   { ssmlGender: 'MALE',   speakingRate: 0.85, pitch: 5.0 },
+};
+
+export async function speakChinese(text, gender = 'female') {
   if (!GOOGLE_TTS_API_KEY || GOOGLE_TTS_API_KEY === 'YOUR_GOOGLE_CLOUD_API_KEY_HERE') {
     console.warn('tts.js: Set your GOOGLE_TTS_API_KEY to enable audio.');
     return;
   }
 
+  const vc = VOICE_CONFIG[gender] || VOICE_CONFIG.female;
+  const cacheKey = `${gender}:${text}`;
+
   try {
-    let base64Audio = audioCache.get(text);
+    let base64Audio = audioCache.get(cacheKey);
 
     if (!base64Audio) {
       const res = await fetch(
@@ -45,12 +55,12 @@ export async function speakChinese(text) {
             input: { ssml: buildSSML(text) },
             voice: {
               languageCode: 'zh-CN',
-              ssmlGender: 'FEMALE',
+              ssmlGender: vc.ssmlGender,
             },
             audioConfig: {
               audioEncoding: 'MP3',
-              speakingRate: 0.9,  // 0.25–4.0; 1.0 is normal speed
-              pitch: 2.0,         // -20–20 semitones; positive = higher/younger
+              speakingRate: vc.speakingRate,
+              pitch: vc.pitch,
             },
           }),
         },
@@ -62,7 +72,7 @@ export async function speakChinese(text) {
         return;
       }
       base64Audio = json.audioContent;
-      audioCache.set(text, base64Audio);
+      audioCache.set(cacheKey, base64Audio);
     }
 
     // Write base64 MP3 to a temp file then play it

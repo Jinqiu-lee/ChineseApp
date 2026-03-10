@@ -74,7 +74,7 @@ function DialogueCard({ dialogue }) {
               <View style={[styles.bubble, { backgroundColor: pal.bubble, borderColor: pal.border }]}>
                 <View style={styles.bubbleTop}>
                   <Text style={styles.bubbleChinese}>{line.chinese}</Text>
-                  <TouchableOpacity onPress={() => speakChinese(line.chinese)} style={styles.speakBtn}>
+                  <TouchableOpacity onPress={() => speakChinese(line.chinese, info?.gender)} style={styles.speakBtn}>
                     <Text style={styles.speakBtnText}>🔊</Text>
                   </TouchableOpacity>
                 </View>
