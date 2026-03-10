@@ -1,0 +1,173 @@
+{
+  "_note": "Image dataset for HSK1 Lesson 5 – Food & Drinks. 'url' fields are null until scripts/downloadVocabImages.js is run. Emoji+color are used as fallback visuals. Keyed by Chinese word for reuse across HSK levels.",
+  "vocab_images": {
+    "吃": {
+      "pinyin": "chī", "english": "eat", "color": "#e17055",
+      "pexels_query": "person eating Chinese food chopsticks",
+      "images": [
+        { "id": "chi_1", "emoji": "🍚", "label": "吃米饭", "label_en": "eating rice",        "url": null },
+        { "id": "chi_2", "emoji": "🍜", "label": "吃面条", "label_en": "eating noodles",     "url": null },
+        { "id": "chi_3", "emoji": "🥦", "label": "吃菜",   "label_en": "eating vegetables",  "url": null },
+        { "id": "chi_4", "emoji": "🍎", "label": "吃苹果", "label_en": "eating an apple",    "url": null }
+      ]
+    },
+    "喝": {
+      "pinyin": "hē", "english": "drink", "color": "#0984e3",
+      "pexels_query": "person drinking beverage",
+      "images": [
+        { "id": "he_1", "emoji": "🍵", "label": "喝茶",   "label_en": "drinking tea",    "url": null },
+        { "id": "he_2", "emoji": "💧", "label": "喝水",   "label_en": "drinking water",  "url": null },
+        { "id": "he_3", "emoji": "☕", "label": "喝咖啡", "label_en": "drinking coffee", "url": null },
+        { "id": "he_4", "emoji": "🥛", "label": "喝牛奶", "label_en": "drinking milk",   "url": null }
+      ]
+    },
+    "米饭": {
+      "pinyin": "mǐ fàn", "english": "rice", "color": "#fdcb6e",
+      "pexels_query": "white rice bowl Asian food",
+      "images": [
+        { "id": "mifan_1", "emoji": "🍚", "label": "米饭",   "label_en": "a bowl of rice",       "url": null },
+        { "id": "mifan_2", "emoji": "🍱", "label": "白米饭", "label_en": "steamed white rice",    "url": null },
+        { "id": "mifan_3", "emoji": "🥢", "label": "吃米饭", "label_en": "eating rice",          "url": null },
+        { "id": "mifan_4", "emoji": "🌾", "label": "大米",   "label_en": "uncooked rice grains", "url": null }
+      ]
+    },
+    "面条": {
+      "pinyin": "miàn tiáo", "english": "noodles", "color": "#f9ca24",
+      "pexels_query": "Chinese noodles bowl ramen",
+      "images": [
+        { "id": "miantiao_1", "emoji": "🍜", "label": "面条",   "label_en": "bowl of noodles",     "url": null },
+        { "id": "miantiao_2", "emoji": "🥢", "label": "吃面条", "label_en": "eating noodles",      "url": null },
+        { "id": "miantiao_3", "emoji": "🍝", "label": "汤面",   "label_en": "noodle soup",         "url": null },
+        { "id": "miantiao_4", "emoji": "🫕", "label": "一碗面", "label_en": "a bowl of noodles",   "url": null }
+      ]
+    },
+    "水": {
+      "pinyin": "shuǐ", "english": "water", "color": "#74b9ff",
+      "pexels_query": "glass of water clear blue",
+      "images": [
+        { "id": "shui_1", "emoji": "💧", "label": "水",   "label_en": "water",              "url": null },
+        { "id": "shui_2", "emoji": "🥤", "label": "喝水", "label_en": "drinking water",     "url": null },
+        { "id": "shui_3", "emoji": "🪣", "label": "一杯水","label_en": "a glass of water",  "url": null },
+        { "id": "shui_4", "emoji": "🌊", "label": "清水", "label_en": "clear water",        "url": null }
+      ]
+    },
+    "茶": {
+      "pinyin": "chá", "english": "tea", "color": "#55efc4",
+      "pexels_query": "Chinese tea cup green tea",
+      "images": [
+        { "id": "cha_1", "emoji": "🍵", "label": "茶",   "label_en": "tea",              "url": null },
+        { "id": "cha_2", "emoji": "🫖", "label": "泡茶", "label_en": "brewing tea",      "url": null },
+        { "id": "cha_3", "emoji": "🍵", "label": "喝茶", "label_en": "drinking tea",     "url": null },
+        { "id": "cha_4", "emoji": "🌿", "label": "绿茶", "label_en": "green tea leaves", "url": null }
+      ]
+    },
+    "牛奶": {
+      "pinyin": "niú nǎi", "english": "milk", "color": "#b2bec3",
+      "pexels_query": "glass of milk white dairy",
+      "images": [
+        { "id": "niunai_1", "emoji": "🥛", "label": "牛奶",   "label_en": "milk",             "url": null },
+        { "id": "niunai_2", "emoji": "🐄", "label": "新鲜牛奶","label_en": "fresh milk",      "url": null },
+        { "id": "niunai_3", "emoji": "🥛", "label": "喝牛奶", "label_en": "drinking milk",    "url": null },
+        { "id": "niunai_4", "emoji": "📦", "label": "一盒牛奶","label_en": "a carton of milk","url": null }
+      ]
+    },
+    "咖啡": {
+      "pinyin": "kā fēi", "english": "coffee", "color": "#6c5ce7",
+      "pexels_query": "coffee cup latte art cafe",
+      "images": [
+        { "id": "kafei_1", "emoji": "☕", "label": "咖啡",   "label_en": "coffee",           "url": null },
+        { "id": "kafei_2", "emoji": "☕", "label": "喝咖啡", "label_en": "drinking coffee",  "url": null },
+        { "id": "kafei_3", "emoji": "🫘", "label": "咖啡豆", "label_en": "coffee beans",     "url": null },
+        { "id": "kafei_4", "emoji": "🏪", "label": "咖啡店", "label_en": "coffee shop",      "url": null }
+      ]
+    },
+    "菜": {
+      "pinyin": "cài", "english": "dish / vegetable", "color": "#00b894",
+      "pexels_query": "Chinese vegetable dish stir fry",
+      "images": [
+        { "id": "cai_1", "emoji": "🥦", "label": "蔬菜", "label_en": "vegetables",        "url": null },
+        { "id": "cai_2", "emoji": "🥬", "label": "青菜", "label_en": "green vegetables",  "url": null },
+        { "id": "cai_3", "emoji": "🍽️", "label": "炒菜", "label_en": "stir-fried dish",  "url": null },
+        { "id": "cai_4", "emoji": "🥢", "label": "吃菜", "label_en": "eating vegetables", "url": null }
+      ]
+    },
+    "苹果": {
+      "pinyin": "píng guǒ", "english": "apple", "color": "#d63031",
+      "pexels_query": "red apple fresh fruit",
+      "images": [
+        { "id": "pingguo_1", "emoji": "🍎", "label": "苹果",   "label_en": "apple",             "url": null },
+        { "id": "pingguo_2", "emoji": "🍏", "label": "青苹果", "label_en": "green apple",       "url": null },
+        { "id": "pingguo_3", "emoji": "🍎", "label": "吃苹果", "label_en": "eating an apple",   "url": null },
+        { "id": "pingguo_4", "emoji": "🧺", "label": "一篮苹果","label_en": "basket of apples", "url": null }
+      ]
+    },
+    "想": {
+      "pinyin": "xiǎng", "english": "want / think", "color": "#a29bfe",
+      "pexels_query": "person thinking deciding food",
+      "images": [
+        { "id": "xiang_1", "emoji": "💭", "label": "想吃",   "label_en": "want to eat",      "url": null },
+        { "id": "xiang_2", "emoji": "🤔", "label": "在想",   "label_en": "thinking",         "url": null },
+        { "id": "xiang_3", "emoji": "💭", "label": "想喝",   "label_en": "want to drink",    "url": null },
+        { "id": "xiang_4", "emoji": "😋", "label": "想吃什么","label_en": "want to eat what","url": null }
+      ]
+    },
+    "杯": {
+      "pinyin": "bēi", "english": "cup / glass", "color": "#fd79a8",
+      "pexels_query": "cup glass beverage close-up",
+      "images": [
+        { "id": "bei_1", "emoji": "🥤", "label": "一杯",   "label_en": "a cup",              "url": null },
+        { "id": "bei_2", "emoji": "🍵", "label": "一杯茶", "label_en": "a cup of tea",       "url": null },
+        { "id": "bei_3", "emoji": "☕", "label": "一杯咖啡","label_en": "a cup of coffee",   "url": null },
+        { "id": "bei_4", "emoji": "💧", "label": "一杯水", "label_en": "a glass of water",   "url": null }
+      ]
+    },
+    "喝茶": {
+      "pinyin": "hē chá", "english": "drink tea", "color": "#55efc4",
+      "pexels_query": "person drinking tea relaxing",
+      "images": [
+        { "id": "hecha_1", "emoji": "🍵", "label": "喝茶",   "label_en": "drinking tea",       "url": null },
+        { "id": "hecha_2", "emoji": "🫖", "label": "请喝茶", "label_en": "please have tea",    "url": null },
+        { "id": "hecha_3", "emoji": "🍵", "label": "喝绿茶", "label_en": "drinking green tea", "url": null },
+        { "id": "hecha_4", "emoji": "🌿", "label": "茶叶",   "label_en": "tea leaves",         "url": null }
+      ]
+    },
+    "喝水": {
+      "pinyin": "hē shuǐ", "english": "drink water", "color": "#74b9ff",
+      "pexels_query": "person drinking water glass",
+      "images": [
+        { "id": "heshui_1", "emoji": "💧", "label": "喝水",   "label_en": "drinking water",     "url": null },
+        { "id": "heshui_2", "emoji": "🥤", "label": "一杯水", "label_en": "a glass of water",  "url": null },
+        { "id": "heshui_3", "emoji": "🚰", "label": "喝水",   "label_en": "tap water",         "url": null },
+        { "id": "heshui_4", "emoji": "🌊", "label": "清水",   "label_en": "clear water",       "url": null }
+      ]
+    },
+    "吃米饭": {
+      "pinyin": "chī mǐ fàn", "english": "eat rice", "color": "#fdcb6e",
+      "pexels_query": "eating white rice chopsticks bowl",
+      "images": [
+        { "id": "chimifan_1", "emoji": "🍚", "label": "吃米饭", "label_en": "eating rice",       "url": null },
+        { "id": "chimifan_2", "emoji": "🥢", "label": "米饭",   "label_en": "rice bowl",         "url": null },
+        { "id": "chimifan_3", "emoji": "🍱", "label": "白米饭", "label_en": "steamed rice",      "url": null },
+        { "id": "chimifan_4", "emoji": "😋", "label": "好吃",   "label_en": "delicious",         "url": null }
+      ]
+    },
+    "吃面条": {
+      "pinyin": "chī miàn tiáo", "english": "eat noodles", "color": "#f9ca24",
+      "pexels_query": "eating noodles soup bowl Asian",
+      "images": [
+        { "id": "chimiantiao_1", "emoji": "🍜", "label": "吃面条", "label_en": "eating noodles",     "url": null },
+        { "id": "chimiantiao_2", "emoji": "🥢", "label": "一碗面", "label_en": "a bowl of noodles",  "url": null },
+        { "id": "chimiantiao_3", "emoji": "🍝", "label": "面条",   "label_en": "noodles",            "url": null },
+        { "id": "chimiantiao_4", "emoji": "😋", "label": "好吃",   "label_en": "delicious",          "url": null }
+      ]
+    }
+  },
+  "dialogue_images": {
+    "1": { "emoji": "🍽️", "label": "在餐厅", "label_en": "At the Restaurant", "color": "#e17055", "url": null },
+    "2": { "emoji": "🥤", "label": "喝什么",  "label_en": "What to Drink",      "color": "#0984e3", "url": null },
+    "3": { "emoji": "🍵", "label": "请喝茶",  "label_en": "Please Have Some Tea","color": "#55efc4","url": null },
+    "4": { "emoji": "🤔", "label": "想吃什么","label_en": "What Do You Want",    "color": "#a29bfe", "url": null },
+    "5": { "emoji": "☕", "label": "一杯咖啡","label_en": "A Cup of Coffee",     "color": "#6c5ce7", "url": null },
+    "6": { "emoji": "🥦", "label": "吃菜喝水","label_en": "Vegetables & Water",  "color": "#00b894", "url": null }
+  }
+}

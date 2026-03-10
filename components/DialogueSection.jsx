@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { speakChinese } from '../utils/tts';
+
+// ── Dialogue scene images (optional, loaded from hsk1_l5_images.json) ─────
+let _dialogueImages = null;
+function getDialogueImage(dialogueId) {
+  try {
+    if (!_dialogueImages) {
+      _dialogueImages = require('../data/hsk1_l5_images.json').dialogue_images || {};
+    }
+    return _dialogueImages[String(dialogueId)] || null;
+  } catch { return null; }
+}
 
 // Gender-based palette
 const PALETTE = {
@@ -26,9 +37,24 @@ function DialogueCard({ dialogue }) {
   const speakerB = dialogue.speakers?.B;
   const palA = PALETTE[(speakerA?.gender) || 'female'];
   const palB = PALETTE[(speakerB?.gender) || 'male'];
+  const sceneImg = getDialogueImage(dialogue.id);
 
   return (
     <View style={styles.card}>
+
+      {/* Scene banner – emoji or real photo */}
+      {sceneImg && (
+        <View style={[styles.sceneBanner, { backgroundColor: sceneImg.color || '#16213e' }]}>
+          {sceneImg.url ? (
+            <Image source={{ uri: sceneImg.url }} style={styles.scenePhoto} resizeMode="cover" />
+          ) : (
+            <Text style={styles.sceneEmoji}>{sceneImg.emoji}</Text>
+          )}
+          <View style={styles.sceneLabelWrap}>
+            <Text style={styles.sceneLabel}>{sceneImg.label}</Text>
+          </View>
+        </View>
+      )}
 
       {/* Card header */}
       <View style={styles.cardHeader}>
@@ -117,6 +143,22 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#2d3436',
   },
+
+  // Scene banner (above card header)
+  sceneBanner: {
+    height: 90,
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'relative',
+  },
+  scenePhoto:   { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
+  sceneEmoji:   { fontSize: 44 },
+  sceneLabelWrap: {
+    position: 'absolute', bottom: 0, left: 0, right: 0,
+    backgroundColor: 'rgba(0,0,0,0.45)',
+    paddingVertical: 4, paddingHorizontal: 12,
+  },
+  sceneLabel: { fontSize: 13, fontWeight: '700', color: '#fff' },
   cardHeader: {
     paddingHorizontal: 16,
     paddingVertical: 12,

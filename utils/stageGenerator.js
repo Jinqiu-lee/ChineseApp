@@ -1,3 +1,95 @@
+// ── Image data (optional – only loaded when available) ───────────────────
+let _imageData = null;
+function getImageData() {
+  if (_imageData === null) {
+    try {
+      _imageData = require('../data/hsk1_l5_images.json').vocab_images || {};
+    } catch {
+      _imageData = {};
+    }
+  }
+  return _imageData;
+}
+
+// ── Image exercise factories ──────────────────────────────────────────────
+// Returns one "image" entry for a vocab word (picks by imageIndex for variety)
+function pickImage(chinese, imageIndex = 0) {
+  const imgData = getImageData();
+  const entry = imgData[chinese];
+  if (!entry || !entry.images || entry.images.length === 0) return null;
+  const img = entry.images[imageIndex % entry.images.length];
+  return { ...img, color: entry.color };
+}
+
+function pickRandomImage(chinese) {
+  const imgData = getImageData();
+  const entry = imgData[chinese];
+  if (!entry || !entry.images || entry.images.length === 0) return null;
+  const img = entry.images[Math.floor(Math.random() * entry.images.length)];
+  return { ...img, color: entry.color };
+}
+
+function makeImageToWord(vocabItem, allVocab, imageIndex = 0) {
+  const image = pickImage(vocabItem.chinese, imageIndex);
+  if (!image) return makeFlashcard(vocabItem); // fallback
+  const distractors = pickDistractors(vocabItem.id, allVocab, 3);
+  return {
+    type: 'image_exercise',
+    subtype: 'picture_to_word',
+    image,
+    correct: vocabItem.chinese,
+    choices: shuffle([
+      { chinese: vocabItem.chinese, pinyin: vocabItem.pinyin || '', english: vocabItem.english },
+      ...distractors.map(d => ({ chinese: d.chinese, pinyin: d.pinyin || '', english: d.english })),
+    ]),
+  };
+}
+
+function makeWordToImage(vocabItem, allVocab, imageIndex = 0) {
+  const correctImg = pickImage(vocabItem.chinese, imageIndex);
+  if (!correctImg) return makeFlashcard(vocabItem); // fallback
+  const distractors = pickDistractors(vocabItem.id, allVocab, 3);
+  const distractorImgs = distractors
+    .map(d => { const img = pickRandomImage(d.chinese); return img ? { ...img, isCorrect: false } : null; })
+    .filter(Boolean);
+  if (distractorImgs.length < 3) return makeFlashcard(vocabItem);
+  return {
+    type: 'image_exercise',
+    subtype: 'word_to_picture',
+    chinese: vocabItem.chinese,
+    pinyin: vocabItem.pinyin || '',
+    english: vocabItem.english,
+    choices: shuffle([
+      { ...correctImg, isCorrect: true },
+      ...distractorImgs,
+    ]),
+  };
+}
+
+function makeSentenceToImage(sentence, keyVocabItem, allVocab) {
+  const correctImg = pickRandomImage(keyVocabItem.chinese);
+  if (!correctImg) return makeFillBlank(sentence, allVocab) || makeFlashcard(keyVocabItem);
+  const distractors = pickDistractors(keyVocabItem.id, allVocab, 3);
+  const distractorImgs = distractors
+    .map(d => { const img = pickRandomImage(d.chinese); return img ? { ...img, isCorrect: false } : null; })
+    .filter(Boolean);
+  if (distractorImgs.length < 3) return makeFillBlank(sentence, allVocab) || makeFlashcard(keyVocabItem);
+  return {
+    type: 'image_exercise',
+    subtype: 'sentence_to_picture',
+    chinese: sentence.chinese,
+    pinyin: sentence.pinyin || '',
+    english: sentence.english || '',
+    choices: shuffle([{ ...correctImg, isCorrect: true }, ...distractorImgs]),
+  };
+}
+
+function makeListenToImage(vocabItem, allVocab, imageIndex = 0) {
+  const base = makeWordToImage(vocabItem, allVocab, imageIndex);
+  if (base.type !== 'image_exercise') return base;
+  return { ...base, subtype: 'listen_to_picture' };
+}
+
 // ── Tokenizer (same logic as SentenceBuilder) ───────────────────────────
 function tokenizeSentence(chineseSentence, vocab) {
   if (!chineseSentence) return [];
@@ -207,33 +299,46 @@ function p(pool, i) { return pool[i % pool.length]; }
 // ── Round 1 – Learn: recognition & introduction ──────────────────────────
 function buildLearnRound(vocab, sentences, pool) {
   const s1 = [
-    ...Array.from({ length: 5 }, (_, i) => makeFlashcard(v(vocab, i))),
-    ...Array.from({ length: 3 }, (_, i) => makeAudioChoice(v(vocab, i + 5), vocab)),
+    makeFlashcard(v(vocab, 0)),
+    makeFlashcard(v(vocab, 1)),
+    makeFlashcard(v(vocab, 2)),
+    makeImageToWord(v(vocab, 0), vocab, 0),   // 🖼️ picture → word
+    makeImageToWord(v(vocab, 1), vocab, 0),
+    makeImageToWord(v(vocab, 2), vocab, 0),
+    makeAudioChoice(v(vocab, 5), vocab),
+    makeAudioChoice(v(vocab, 6), vocab),
     makeMatchPairs(shuffle([...vocab])),
     makeMatchPairs(shuffle([...vocab])),
   ];
   const s2 = [
-    ...Array.from({ length: 5 }, (_, i) => makeAudioChoice(v(vocab, i), vocab)),
-    ...Array.from({ length: 3 }, (_, i) => fillOrFallback(s(sentences, i), i + 5, vocab)),
+    ...Array.from({ length: 3 }, (_, i) => makeAudioChoice(v(vocab, i), vocab)),
+    makeListenToImage(v(vocab, 3), vocab, 0),  // 🔊 listen → picture
+    makeListenToImage(v(vocab, 4), vocab, 0),
+    makeListenToImage(v(vocab, 5), vocab, 0),
+    ...Array.from({ length: 2 }, (_, i) => fillOrFallback(s(sentences, i), i + 5, vocab)),
     makeSpeakRepeat(p(pool, 0)),
     makeSpeakRepeat(p(pool, 1)),
   ];
   const s3 = [
-    ...Array.from({ length: 4 }, (_, i) => arrangeOrFallback(s(sentences, i), i, vocab)),
-    ...Array.from({ length: 4 }, (_, i) => fillOrFallback(s(sentences, i + 1), i + 4, vocab)),
+    makeImageToWord(v(vocab, 3), vocab, 1),   // different image variant
+    makeImageToWord(v(vocab, 4), vocab, 1),
+    ...Array.from({ length: 3 }, (_, i) => arrangeOrFallback(s(sentences, i), i, vocab)),
+    ...Array.from({ length: 3 }, (_, i) => fillOrFallback(s(sentences, i + 1), i + 4, vocab)),
     makeSpeakTranslate(p(pool, 2)),
     makeSpeakTranslate(p(pool, 3)),
   ];
   const s4 = [
     ...Array.from({ length: 4 }, (_, i) =>
       makeMatchPairs(Array.from({ length: 4 }, (_, j) => v(vocab, i * 4 + j)))),
-    ...Array.from({ length: 4 }, (_, i) => makeAudioChoice(v(vocab, i + 7), vocab)),
+    makeListenToImage(v(vocab, 6), vocab, 0),  // 🔊 listen → picture
+    makeListenToImage(v(vocab, 7), vocab, 0),
+    ...Array.from({ length: 2 }, (_, i) => makeAudioChoice(v(vocab, i + 7), vocab)),
     makeSpeakRepeat(p(pool, 4)),
     makeSpeakRepeat(p(pool, 5)),
   ];
   const s5 = [
-    makeFlashcard(v(vocab, 8)),
-    makeFlashcard(v(vocab, 9)),
+    makeImageToWord(v(vocab, 5), vocab, 2),
+    makeImageToWord(v(vocab, 6), vocab, 2),
     makeAudioChoice(v(vocab, 10), vocab),
     fillOrFallback(s(sentences, 4), 4, vocab),
     arrangeOrFallback(s(sentences, 0), 5, vocab),
@@ -250,8 +355,11 @@ function buildLearnRound(vocab, sentences, pool) {
 function buildPracticeRound(vocab, sentences, pool, respondOrFallback) {
   const O = 3;
   const s1 = [
-    ...Array.from({ length: 3 }, (_, i) => makeFlashcard(v(vocab, i + O))),
-    ...Array.from({ length: 3 }, (_, i) => makeAudioChoice(v(vocab, i + O + 3), vocab)),
+    ...Array.from({ length: 2 }, (_, i) => makeFlashcard(v(vocab, i + O))),
+    makeWordToImage(v(vocab, O), vocab, 0),    // 🖼️ word → picture
+    makeWordToImage(v(vocab, O + 1), vocab, 0),
+    makeWordToImage(v(vocab, O + 2), vocab, 0),
+    ...Array.from({ length: 2 }, (_, i) => makeAudioChoice(v(vocab, i + O + 3), vocab)),
     ...Array.from({ length: 2 }, (_, i) => fillOrFallback(s(sentences, i + O), i, vocab)),
     makeMatchPairs(shuffle([...vocab])),
     makeMatchPairs(shuffle([...vocab])),
@@ -311,8 +419,10 @@ function buildMasteryRound(vocab, sentences, pool, respondOrFallback) {
       makeMatchPairs(Array.from({ length: 4 }, (_, j) => v(vocab, i * 5 + j)))),
   ];
   const s3 = [
-    ...Array.from({ length: 5 }, (_, i) => makeSpeakTranslate(p(pool, O + 6 + i))),
-    ...Array.from({ length: 3 }, (_, i) => arrangeOrFallback(s(sentences, i + O + 1), i, vocab)),
+    ...Array.from({ length: 3 }, (_, i) => makeSpeakTranslate(p(pool, O + 6 + i))),
+    makeSentenceToImage(s(sentences, 0), v(vocab, 2), vocab),   // 🖼️ sentence → picture
+    makeSentenceToImage(s(sentences, 1), v(vocab, 5), vocab),
+    ...Array.from({ length: 2 }, (_, i) => arrangeOrFallback(s(sentences, i + O + 1), i, vocab)),
     ...Array.from({ length: 2 }, (_, i) => fillOrFallback(s(sentences, i + O + 3), i + 3, vocab)),
   ];
   const s4 = [
@@ -324,8 +434,8 @@ function buildMasteryRound(vocab, sentences, pool, respondOrFallback) {
     makeAudioChoice(v(vocab, O + 4), vocab),
   ];
   const s5 = [
-    fillOrFallback(s(sentences, O), 0, vocab),
-    fillOrFallback(s(sentences, O + 1), 1, vocab),
+    makeSentenceToImage(s(sentences, 2), v(vocab, 0), vocab),   // 🖼️ sentence → picture
+    makeSentenceToImage(s(sentences, 3), v(vocab, 1), vocab),
     arrangeOrFallback(s(sentences, O + 2), 2, vocab),
     arrangeOrFallback(s(sentences, O + 3), 3, vocab),
     makeMatchPairs(shuffle([...vocab])),

@@ -8,6 +8,7 @@ import FillBlankExercise from '../components/exercises/FillBlankExercise';
 import ArrangeSentenceExercise from '../components/exercises/ArrangeSentenceExercise';
 import MatchPairsExercise from '../components/exercises/MatchPairsExercise';
 import SpeakExercise from '../components/exercises/SpeakExercise';
+import ImageExercise from '../components/exercises/ImageExercise';
 
 const STAGE_NAMES = [
   'First Look', 'Listen & Choose', 'Build Sentences', 'Match & Review', 'Final Challenge',
@@ -146,6 +147,14 @@ export default function StageExercisesScreen({ lessonData, stageIndex, roundInde
         )}
         {exercise.type === 'speak' && (
           <SpeakExercise
+            key={currentIndex}
+            exercise={exercise}
+            onCorrect={() => advance(true)}
+            onWrong={() => advance(false)}
+          />
+        )}
+        {exercise.type === 'image_exercise' && (
+          <ImageExercise
             key={currentIndex}
             exercise={exercise}
             onCorrect={() => advance(true)}
