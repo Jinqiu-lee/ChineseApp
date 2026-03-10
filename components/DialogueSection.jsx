@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { speakChinese } from '../utils/tts';
 
+// Gender-based palette
+const PALETTE = {
+  female: { bubble: 'rgba(253,121,168,0.12)', border: 'rgba(253,121,168,0.3)', pinyin: '#fd79a8', badge: 'rgba(253,121,168,0.2)', emoji: '👩' },
+  male:   { bubble: 'rgba(84,160,255,0.12)',  border: 'rgba(84,160,255,0.3)',  pinyin: '#54A0FF', badge: 'rgba(84,160,255,0.2)',  emoji: '👨' },
+};
+
 export default function DialogueSection({ dialogues = [] }) {
   return (
     <View style={styles.container}>
@@ -16,66 +22,91 @@ export default function DialogueSection({ dialogues = [] }) {
 function DialogueCard({ dialogue }) {
   const [showPinyin, setShowPinyin] = useState(false);
 
+  const speakerA = dialogue.speakers?.A;
+  const speakerB = dialogue.speakers?.B;
+  const palA = PALETTE[(speakerA?.gender) || 'female'];
+  const palB = PALETTE[(speakerB?.gender) || 'male'];
+
   return (
     <View style={styles.card}>
+
       {/* Card header */}
       <View style={styles.cardHeader}>
-        <View>
-          <Text style={styles.cardTitleChinese}>{dialogue.title_chinese}</Text>
-          <Text style={styles.cardTitleEnglish}>{dialogue.title}</Text>
+        <View style={styles.headerTop}>
+          <View>
+            <Text style={styles.cardTitleChinese}>{dialogue.title_chinese}</Text>
+            <Text style={styles.cardTitleEnglish}>{dialogue.title}</Text>
+          </View>
+          <TouchableOpacity
+            style={[styles.pinyinToggle, showPinyin && styles.pinyinToggleOn]}
+            onPress={() => setShowPinyin(v => !v)}
+          >
+            <Text style={[styles.pinyinToggleText, showPinyin && styles.pinyinToggleTextOn]}>拼</Text>
+          </TouchableOpacity>
         </View>
-        <TouchableOpacity
-          style={[styles.pinyinToggle, showPinyin && styles.pinyinToggleOn]}
-          onPress={() => setShowPinyin(v => !v)}
-        >
-          <Text style={[styles.pinyinToggleText, showPinyin && styles.pinyinToggleTextOn]}>
-            拼
-          </Text>
-        </TouchableOpacity>
+
+        {/* Speaker name cards */}
+        {(speakerA || speakerB) && (
+          <View style={styles.speakerRow}>
+            {speakerA && <SpeakerTag info={speakerA} pal={palA} />}
+            <Text style={styles.vsText}>vs</Text>
+            {speakerB && <SpeakerTag info={speakerB} pal={palB} />}
+          </View>
+        )}
       </View>
 
       {/* Dialogue lines */}
       <View style={styles.lines}>
         {dialogue.lines.map((line, i) => {
           const isA = line.speaker === 'A';
+          const pal = isA ? palA : palB;
+          const info = isA ? speakerA : speakerB;
           return (
             <View key={i} style={[styles.lineRow, isA ? styles.lineRowA : styles.lineRowB]}>
-              {/* Speaker label */}
-              <View style={[styles.speakerBadge, isA ? styles.speakerBadgeA : styles.speakerBadgeB]}>
-                <Text style={styles.speakerText}>{line.speaker}</Text>
+
+              {/* Avatar badge */}
+              <View style={[styles.avatarBadge, { backgroundColor: pal.badge }]}>
+                <Text style={styles.avatarEmoji}>{pal.emoji}</Text>
+                <Text style={styles.avatarName}>{info?.name || line.speaker}</Text>
               </View>
 
               {/* Bubble */}
-              <View style={[styles.bubble, isA ? styles.bubbleA : styles.bubbleB]}>
+              <View style={[styles.bubble, { backgroundColor: pal.bubble, borderColor: pal.border }]}>
                 <View style={styles.bubbleTop}>
-                  <Text style={[styles.bubbleChinese, isA ? styles.bubbleChineseA : styles.bubbleChineseB]}>
-                    {line.chinese}
-                  </Text>
-                  <TouchableOpacity
-                    onPress={() => speakChinese(line.chinese)}
-                    style={styles.speakBtn}
-                    activeOpacity={0.7}
-                  >
+                  <Text style={styles.bubbleChinese}>{line.chinese}</Text>
+                  <TouchableOpacity onPress={() => speakChinese(line.chinese)} style={styles.speakBtn}>
                     <Text style={styles.speakBtnText}>🔊</Text>
                   </TouchableOpacity>
                 </View>
                 {showPinyin && (
-                  <Text style={[styles.bubblePinyin, isA ? styles.bubblePinyinA : styles.bubblePinyinB]}>
-                    {line.pinyin}
-                  </Text>
+                  <Text style={[styles.bubblePinyin, { color: pal.pinyin }]}>{line.pinyin}</Text>
                 )}
                 <Text style={styles.bubbleEnglish}>{line.english}</Text>
               </View>
+
             </View>
           );
         })}
+      </View>
+
+    </View>
+  );
+}
+
+function SpeakerTag({ info, pal }) {
+  return (
+    <View style={[styles.speakerTag, { backgroundColor: pal.badge, borderColor: pal.border }]}>
+      <Text style={styles.speakerTagEmoji}>{pal.emoji}</Text>
+      <View>
+        <Text style={[styles.speakerTagName, { color: pal.pinyin }]}>{info.name}</Text>
+        <Text style={styles.speakerTagRole}>{info.role}</Text>
       </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { marginBottom: 24 },
+  container:    { marginBottom: 24 },
   sectionTitle: { fontSize: 20, fontWeight: '800', color: '#fff', marginBottom: 14 },
 
   card: {
@@ -87,65 +118,81 @@ const styles = StyleSheet.create({
     borderColor: '#2d3436',
   },
   cardHeader: {
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    backgroundColor: 'rgba(255,255,255,0.04)',
+    borderBottomWidth: 1,
+    borderBottomColor: '#2d3436',
+    gap: 10,
+  },
+  headerTop: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    backgroundColor: 'rgba(162,155,254,0.08)',
-    borderBottomWidth: 1,
-    borderBottomColor: '#2d3436',
   },
   cardTitleChinese: { fontSize: 16, fontWeight: '800', color: '#fff' },
   cardTitleEnglish: { fontSize: 12, color: '#636e72', marginTop: 2 },
+
   pinyinToggle: {
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 10,
-    borderWidth: 1.5,
-    borderColor: '#2d3436',
-    backgroundColor: 'rgba(255,255,255,0.04)',
+    paddingHorizontal: 12, paddingVertical: 6,
+    borderRadius: 10, borderWidth: 1.5,
+    borderColor: '#2d3436', backgroundColor: 'rgba(255,255,255,0.04)',
   },
-  pinyinToggleOn: { borderColor: '#a29bfe', backgroundColor: 'rgba(162,155,254,0.15)' },
-  pinyinToggleText: { fontSize: 14, fontWeight: '700', color: '#636e72' },
+  pinyinToggleOn:     { borderColor: '#a29bfe', backgroundColor: 'rgba(162,155,254,0.15)' },
+  pinyinToggleText:   { fontSize: 14, fontWeight: '700', color: '#636e72' },
   pinyinToggleTextOn: { color: '#a29bfe' },
 
-  lines: { padding: 14, gap: 12 },
-  lineRow: { flexDirection: 'row', alignItems: 'flex-start', gap: 10 },
+  // Speaker name row
+  speakerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
+  vsText: { fontSize: 11, fontWeight: '700', color: '#636e72' },
+  speakerTag: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    paddingHorizontal: 10,
+    paddingVertical: 6,
+    borderRadius: 10,
+    borderWidth: 1,
+    flex: 1,
+    justifyContent: 'center',
+  },
+  speakerTagEmoji: { fontSize: 20 },
+  speakerTagName:  { fontSize: 14, fontWeight: '800' },
+  speakerTagRole:  { fontSize: 11, color: '#636e72' },
+
+  // Lines
+  lines:    { padding: 14, gap: 12 },
+  lineRow:  { flexDirection: 'row', alignItems: 'flex-start', gap: 10 },
   lineRowA: { flexDirection: 'row' },
   lineRowB: { flexDirection: 'row-reverse' },
 
-  speakerBadge: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
+  // Avatar badge (replaces the old letter circle)
+  avatarBadge: {
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 4,
+    borderRadius: 10,
+    paddingHorizontal: 6,
+    paddingVertical: 4,
+    minWidth: 40,
     flexShrink: 0,
+    marginTop: 2,
   },
-  speakerBadgeA: { backgroundColor: 'rgba(162,155,254,0.25)' },
-  speakerBadgeB: { backgroundColor: 'rgba(29,209,161,0.25)' },
-  speakerText: { fontSize: 13, fontWeight: '800', color: '#fff' },
+  avatarEmoji: { fontSize: 20 },
+  avatarName:  { fontSize: 10, fontWeight: '800', color: '#fff', marginTop: 2 },
 
+  // Bubble
   bubble: {
-    flex: 1,
-    borderRadius: 14,
-    padding: 12,
-    maxWidth: '88%',
+    flex: 1, borderRadius: 14, padding: 12,
+    maxWidth: '85%', borderWidth: 1,
   },
-  bubbleA: { backgroundColor: 'rgba(162,155,254,0.12)', borderWidth: 1, borderColor: 'rgba(162,155,254,0.25)' },
-  bubbleB: { backgroundColor: 'rgba(29,209,161,0.1)', borderWidth: 1, borderColor: 'rgba(29,209,161,0.25)' },
-
-  bubbleTop: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' },
-  bubbleChinese: { fontSize: 18, fontWeight: '700', flex: 1, lineHeight: 26 },
-  bubbleChineseA: { color: '#fff' },
-  bubbleChineseB: { color: '#fff' },
-  speakBtn: { paddingLeft: 8, paddingTop: 2 },
+  bubbleTop:    { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' },
+  bubbleChinese:{ fontSize: 18, fontWeight: '700', color: '#fff', flex: 1, lineHeight: 26 },
+  speakBtn:     { paddingLeft: 8, paddingTop: 2 },
   speakBtnText: { fontSize: 16 },
-
   bubblePinyin: { fontSize: 13, fontStyle: 'italic', marginTop: 4, marginBottom: 2 },
-  bubblePinyinA: { color: '#a29bfe' },
-  bubblePinyinB: { color: '#1DD1A1' },
-  bubbleEnglish: { fontSize: 13, color: '#636e72', marginTop: 4, lineHeight: 18 },
+  bubbleEnglish:{ fontSize: 13, color: '#636e72', marginTop: 4, lineHeight: 18 },
 });
