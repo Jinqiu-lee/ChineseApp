@@ -1,0 +1,156 @@
+{
+  "lesson": 15,
+  "topic": "Getting Around",
+  "topic_chinese": "怎么去",
+  "age_group": "Adults and 10+",
+  "objectives": ["listening", "speaking", "reading", "writing"],
+  "vocabulary": [
+    { "id": "hsk1_l15_01", "chinese": "飞机", "pinyin": "fēijī", "tones": [1, 1], "english": "Airplane", "part_of_speech": "noun" },
+    { "id": "hsk1_l15_02", "chinese": "出租车", "pinyin": "chūzūchē", "tones": [1, 1, 1], "english": "Taxi", "part_of_speech": "noun" },
+    { "id": "hsk1_l15_03", "chinese": "地铁", "pinyin": "dìtiě", "tones": [4, 3], "english": "Subway / Metro", "part_of_speech": "noun" },
+    { "id": "hsk1_l15_04", "chinese": "机场", "pinyin": "jīchǎng", "tones": [1, 3], "english": "Airport", "part_of_speech": "noun" },
+    { "id": "hsk1_l15_05", "chinese": "坐", "pinyin": "zuò", "tones": [4], "english": "To sit / To take (transportation)", "part_of_speech": "verb" },
+    { "id": "hsk1_l15_06", "chinese": "骑", "pinyin": "qí", "tones": [2], "english": "To ride (bike/horse)", "part_of_speech": "verb" },
+    { "id": "hsk1_l15_07", "chinese": "走", "pinyin": "zǒu", "tones": [3], "english": "To walk / To go / To leave", "part_of_speech": "verb" },
+    { "id": "hsk1_l15_08", "chinese": "北京", "pinyin": "Běijīng", "tones": [3, 1], "english": "Beijing", "part_of_speech": "noun" },
+    { "id": "hsk1_l15_09", "chinese": "中午", "pinyin": "zhōngwǔ", "tones": [1, 3], "english": "Noon / Midday", "part_of_speech": "noun" },
+    { "id": "hsk1_l15_10", "chinese": "票", "pinyin": "piào", "tones": [4], "english": "Ticket", "part_of_speech": "noun" },
+    { "id": "hsk1_l15_11", "chinese": "远", "pinyin": "yuǎn", "tones": [3], "english": "Far / Distant", "part_of_speech": "adjective" },
+    { "id": "hsk1_l15_12", "chinese": "近", "pinyin": "jìn", "tones": [4], "english": "Near / Close", "part_of_speech": "adjective" },
+    { "id": "hsk1_l15_p01", "chinese": "坐飞机", "pinyin": "zuò fēijī", "tones": [4, 1, 1], "english": "Take an airplane / Fly", "part_of_speech": "phrase" },
+    { "id": "hsk1_l15_p02", "chinese": "坐出租车", "pinyin": "zuò chūzūchē", "tones": [4, 1, 1, 1], "english": "Take a taxi", "part_of_speech": "phrase" },
+    { "id": "hsk1_l15_p03", "chinese": "坐地铁", "pinyin": "zuò dìtiě", "tones": [4, 4, 3], "english": "Take the subway", "part_of_speech": "phrase" },
+    { "id": "hsk1_l15_p04", "chinese": "去机场", "pinyin": "qù jīchǎng", "tones": [4, 1, 3], "english": "Go to the airport", "part_of_speech": "phrase" },
+    { "id": "hsk1_l15_p05", "chinese": "去北京", "pinyin": "qù Běijīng", "tones": [4, 3, 1], "english": "Go to Beijing", "part_of_speech": "phrase" },
+    { "id": "hsk1_l15_p06", "chinese": "怎么去", "pinyin": "zěnme qù", "tones": [3, 0, 4], "english": "How to get there", "part_of_speech": "phrase" },
+    { "id": "hsk1_l15_p07", "chinese": "走路去", "pinyin": "zǒu lù qù", "tones": [3, 4, 4], "english": "Go on foot / Walk there", "part_of_speech": "phrase" },
+    { "id": "hsk1_l15_p08", "chinese": "买票", "pinyin": "mǎi piào", "tones": [3, 4], "english": "Buy a ticket", "part_of_speech": "phrase" },
+    { "id": "hsk1_l15_p09", "chinese": "很远", "pinyin": "hěn yuǎn", "tones": [3, 3], "english": "Very far", "part_of_speech": "phrase" },
+    { "id": "hsk1_l15_p10", "chinese": "不远", "pinyin": "bù yuǎn", "tones": [4, 3], "english": "Not far", "part_of_speech": "phrase" },
+    { "id": "hsk1_l15_p11", "chinese": "骑车去", "pinyin": "qí chē qù", "tones": [2, 1, 4], "english": "Go by bike / Ride there", "part_of_speech": "phrase" },
+    { "id": "hsk1_l15_p12", "chinese": "是坐飞机来的", "pinyin": "shì zuò fēijī lái de", "tones": [4, 4, 1, 1, 2, 0], "english": "Came by airplane (emphasis pattern)", "part_of_speech": "phrase" }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "How Did You Get Here?",
+      "title_chinese": "你怎么来的",
+      "lines": [
+        { "speaker": "A", "chinese": "你是怎么来中国的？", "pinyin": "Nǐ shì zěnme lái Zhōngguó de?", "english": "How did you come to China?" },
+        { "speaker": "B", "chinese": "我是坐飞机来的。飞机票很贵。", "pinyin": "Wǒ shì zuò fēijī lái de. Fēijī piào hěn guì.", "english": "I came by airplane. The plane ticket is very expensive." },
+        { "speaker": "A", "chinese": "多少钱？", "pinyin": "Duōshǎo qián?", "english": "How much was it?" },
+        { "speaker": "B", "chinese": "很贵！但是我很高兴来中国！", "pinyin": "Hěn guì! Dànshì wǒ hěn gāoxìng lái Zhōngguó!", "english": "Very expensive! But I'm very happy to come to China!" }
+      ],
+      "speakers": {
+        "A": { "name": "小丽", "role": "朋友", "gender": "female" },
+        "B": { "name": "大明", "role": "朋友", "gender": "male" }
+      }
+    },
+    {
+      "id": 2,
+      "title": "How to Get to the Airport",
+      "title_chinese": "怎么去机场",
+      "lines": [
+        { "speaker": "A", "chinese": "请问，去机场怎么走？", "pinyin": "Qǐngwèn, qù jīchǎng zěnme zǒu?", "english": "Excuse me, how do I get to the airport?" },
+        { "speaker": "B", "chinese": "你可以坐地铁，也可以坐出租车。", "pinyin": "Nǐ kěyǐ zuò dìtiě, yě kěyǐ zuò chūzūchē.", "english": "You can take the subway, or you can take a taxi." },
+        { "speaker": "A", "chinese": "机场远不远？", "pinyin": "Jīchǎng yuǎn bù yuǎn?", "english": "Is the airport far?" },
+        { "speaker": "B", "chinese": "有一点远，坐地铁大概三十分钟。", "pinyin": "Yǒu yīdiǎn yuǎn, zuò dìtiě dàgài sānshí fēnzhōng.", "english": "A bit far, about 30 minutes by subway." }
+      ],
+      "speakers": {
+        "A": { "name": "小华", "role": "旅客", "gender": "female" },
+        "B": { "name": "小明", "role": "路人", "gender": "male" }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Is It Far?",
+      "title_chinese": "远不远",
+      "lines": [
+        { "speaker": "A", "chinese": "学校远不远？", "pinyin": "Xuéxiào yuǎn bù yuǎn?", "english": "Is the school far?" },
+        { "speaker": "B", "chinese": "不远，走路十分钟就到了。", "pinyin": "Bù yuǎn, zǒu lù shí fēnzhōng jiù dào le.", "english": "Not far, ten minutes on foot and you're there." },
+        { "speaker": "A", "chinese": "好，我走路去。谢谢！", "pinyin": "Hǎo, wǒ zǒu lù qù. Xièxie!", "english": "Good, I'll walk. Thank you!" }
+      ],
+      "speakers": {
+        "A": { "name": "小美", "role": "学生", "gender": "female" },
+        "B": { "name": "王先生", "role": "路人", "gender": "male" }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Going to Beijing",
+      "title_chinese": "去北京",
+      "lines": [
+        { "speaker": "A", "chinese": "你去北京了吗？", "pinyin": "Nǐ qù Běijīng le ma?", "english": "Did you go to Beijing?" },
+        { "speaker": "B", "chinese": "去了！我是坐飞机去的。北京太好了！", "pinyin": "Qù le! Wǒ shì zuò fēijī qù de. Běijīng tài hǎo le!", "english": "Yes! I went by airplane. Beijing is amazing!" },
+        { "speaker": "A", "chinese": "我以后也想去！买票贵吗？", "pinyin": "Wǒ yǐhòu yě xiǎng qù! Mǎi piào guì ma?", "english": "I want to go in the future too! Is it expensive to buy tickets?" },
+        { "speaker": "B", "chinese": "还好，提前买比较便宜。", "pinyin": "Hái hǎo, tíqián mǎi bǐjiào piányí.", "english": "Not too bad, buying early is cheaper." }
+      ],
+      "speakers": {
+        "A": { "name": "小丽", "role": "同学", "gender": "female" },
+        "B": { "name": "小刚", "role": "同学", "gender": "male" }
+      }
+    }
+  ],
+  "key_sentences": [
+    { "chinese": "你怎么去？", "pinyin": "Nǐ zěnme qù?", "english": "How are you getting there?" },
+    { "chinese": "我是坐飞机来的。", "pinyin": "Wǒ shì zuò fēijī lái de.", "english": "I came by airplane." },
+    { "chinese": "机场远不远？", "pinyin": "Jīchǎng yuǎn bù yuǎn?", "english": "Is the airport far?" },
+    { "chinese": "坐地铁去吧。", "pinyin": "Zuò dìtiě qù ba.", "english": "Take the subway." },
+    { "chinese": "买票多少钱？", "pinyin": "Mǎi piào duōshǎo qián?", "english": "How much is the ticket?" }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "是...的 (shì...de) — Emphasizing Past Details",
+      "explanation": "The 是...的 pattern emphasizes HOW, WHEN, or WHERE a past action happened. The verb goes between 是 and 的. Formula: Subject + 是 + [emphasized detail] + Verb + 的.",
+      "examples": [
+        { "chinese": "我是坐飞机来的。", "pinyin": "Wǒ shì zuò fēijī lái de.", "english": "I came (specifically) by airplane." },
+        { "chinese": "他是昨天来的。", "pinyin": "Tā shì zuótiān lái de.", "english": "He came (specifically) yesterday." }
+      ],
+      "exercises": [
+        { "question": "Say 'She came by taxi' using 是...的", "answer": "她是坐出租车来的。", "type": "production" },
+        { "question": "What does 是...的 emphasize?", "answer": "HOW, WHEN, or WHERE a past action happened", "type": "concept" }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Transportation with 坐 (zuò) — Take / Ride",
+      "explanation": "坐 means 'to sit' but also 'to take' transportation you sit in. 坐 + vehicle: 坐飞机 (take airplane), 坐出租车 (take taxi), 坐地铁 (take subway). For bikes, use 骑: 骑车 (ride a bike).",
+      "examples": [
+        { "chinese": "我坐地铁去学校。", "pinyin": "Wǒ zuò dìtiě qù xuéxiào.", "english": "I take the subway to school." },
+        { "chinese": "你坐出租车还是走路？", "pinyin": "Nǐ zuò chūzūchē háishi zǒu lù?", "english": "Do you take a taxi or walk?" }
+      ],
+      "exercises": [
+        { "question": "Say 'I take the subway to go to the airport'", "answer": "我坐地铁去机场。", "type": "production" },
+        { "question": "Which verb do you use for riding a bicycle?", "answer": "骑 (骑车)", "type": "concept" }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Distance: 远 (yuǎn) and 近 (jìn)",
+      "explanation": "远 (yuǎn) = far; 近 (jìn) = near/close. A-not-A question pattern: 远不远? (Is it far?). Answers: 很远 (very far), 不远 (not far), 有一点远 (a bit far).",
+      "examples": [
+        { "chinese": "北京远不远？", "pinyin": "Běijīng yuǎn bù yuǎn?", "english": "Is Beijing far?" },
+        { "chinese": "不远，很近。", "pinyin": "Bù yuǎn, hěn jìn.", "english": "Not far, very close." }
+      ],
+      "exercises": [
+        { "question": "Ask 'Is the restaurant far?' using A-not-A pattern", "answer": "饭馆远不远？", "type": "production" },
+        { "question": "What is the opposite of 远?", "answer": "近", "type": "concept" }
+      ]
+    }
+  ],
+  "pinyin_focus": {
+    "topic": "Tones in transport vocabulary",
+    "initials_focus": ["f", "ch", "d", "j"],
+    "finals_focus": ["ei", "ie", "ao", "ang"],
+    "tone_practice": ["fēijī", "chūzūchē", "dìtiě", "jīchǎng", "piào"]
+  },
+  "games": ["flashcard", "matching", "word_shake", "sentence_builder"],
+  "quiz": [
+    { "question": "What does 飞机 mean?", "type": "multiple_choice", "correct": "Airplane", "options": ["Taxi", "Subway", "Airplane", "Bus"] },
+    { "question": "What is 地铁?", "type": "multiple_choice", "correct": "Subway / Metro", "options": ["Airport", "Train station", "Subway / Metro", "Taxi"] },
+    { "question": "How do you say 'I came by airplane'?", "type": "multiple_choice", "correct": "我是坐飞机来的。", "options": ["我坐飞机来。", "我是坐飞机来的。", "我坐了飞机来。", "我飞机来的。"] },
+    { "question": "What verb do you use for riding a bike?", "type": "multiple_choice", "correct": "骑", "options": ["坐", "走", "骑", "开"] },
+    { "question": "What does 机场 mean?", "type": "multiple_choice", "correct": "Airport", "options": ["School", "Hospital", "Airport", "Station"] }
+  ]
+}

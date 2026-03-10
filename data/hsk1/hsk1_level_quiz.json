@@ -1,11 +1,10 @@
-
 {
   "level": "HSK1",
   "quiz_type": "level_final_assessment",
   "title": "HSK1 Level Final Quiz",
-  "description": "Comprehensive assessment covering all vocabulary, grammar, and sentence patterns from HSK1 Lessons 1-8",
+  "description": "Comprehensive assessment covering all vocabulary, grammar, and sentence patterns from HSK1 Lessons 1-15",
   "passing_score": 70,
-  "total_questions": 30,
+  "total_questions": 45,
   "format": "chinese_characters_with_pinyin",
   "questions": [
     {
@@ -14,12 +13,7 @@
       "question_pinyin": "Nǐ jiào shén me míng zi?",
       "type": "multiple_choice",
       "correct": "What is your name?",
-      "options": [
-        "How are you?",
-        "Where are you from?",
-        "What is your name?",
-        "Who are you?"
-      ],
+      "options": ["How are you?", "Where are you from?", "What is your name?", "Who are you?"],
       "difficulty": "easy",
       "lesson_reference": 1
     },
@@ -28,18 +22,8 @@
       "question": "How do you say '15' in Chinese?",
       "type": "multiple_choice",
       "correct": "十五",
-      "options": [
-        "十五",
-        "五一",
-        "五十",
-        "一五"
-      ],
-      "option_pinyin": [
-        "shí wǔ",
-        "wǔ yī",
-        "wǔ shí",
-        "yī wǔ"
-      ],
+      "options": ["十五", "五一", "五十", "一五"],
+      "option_pinyin": ["shí wǔ", "wǔ yī", "wǔ shí", "yī wǔ"],
       "correct_pinyin": "shí wǔ",
       "difficulty": "easy",
       "lesson_reference": 2
@@ -50,48 +34,28 @@
       "question_pinyin": "Jīn tiān jǐ yuè jǐ hào?",
       "type": "multiple_choice",
       "correct": "What's the date today?",
-      "options": [
-        "What time is it?",
-        "What's the date today?",
-        "What day is today?",
-        "What month is it?"
-      ],
+      "options": ["What time is it?", "What's the date today?", "What day is today?", "What month is it?"],
       "difficulty": "easy",
       "lesson_reference": 3
     },
     {
       "id": "hsk1_final_04",
-      "question": "Which is the correct negation: 我___哥哥。",
+      "question": "Which is correct negation: 我___哥哥。",
       "type": "multiple_choice",
       "correct": "没有",
-      "options": [
-        "没有",
-        "不有",
-        "没是",
-        "不是"
-      ],
-      "option_pinyin": [
-        "méi yǒu",
-        "bù yǒu",
-        "méi shì",
-        "bù shì"
-      ],
+      "options": ["没有", "不有", "没是", "不是"],
+      "option_pinyin": ["méi yǒu", "bù yǒu", "méi shì", "bù shì"],
       "correct_pinyin": "méi yǒu",
       "difficulty": "medium",
       "lesson_reference": 4
     },
     {
       "id": "hsk1_final_05",
-      "question": "What does 想 indicate in this sentence: 我想喝水。",
-      "question_pinyin": "xiǎng / Wǒ xiǎng hē shuǐ.",
+      "question": "What does 想 mean in: 我想喝水。",
+      "question_pinyin": "Wǒ xiǎng hē shuǐ.",
       "type": "multiple_choice",
-      "correct": "Desire/want to do something",
-      "options": [
-        "Ability to do something",
-        "Desire/want to do something",
-        "Completed action",
-        "Currently doing something"
-      ],
+      "correct": "Want to / Would like to",
+      "options": ["Ability to", "Want to / Would like to", "Completed action", "Currently doing"],
       "difficulty": "medium",
       "lesson_reference": 5
     },
@@ -101,481 +65,429 @@
       "question_pinyin": "Zhè běn shū duō shǎo qián?",
       "type": "multiple_choice",
       "correct": "How much is this book?",
-      "options": [
-        "Where is the book?",
-        "How many books?",
-        "How much is this book?",
-        "Do you have books?"
-      ],
+      "options": ["Where is the book?", "How many books?", "How much is this book?", "Do you have books?"],
       "difficulty": "easy",
       "lesson_reference": 6
     },
     {
       "id": "hsk1_final_07",
-      "question": "Choose the correct position word: 书在桌子___。(The book is on the table)",
+      "question": "书在桌子___。(The book is on the table)",
       "question_pinyin": "Shū zài zhuō zi ___.",
       "type": "multiple_choice",
       "correct": "上",
-      "options": [
-        "上",
-        "下",
-        "前",
-        "里"
-      ],
-      "option_pinyin": [
-        "shàng",
-        "xià",
-        "qián",
-        "lǐ"
-      ],
+      "options": ["上", "下", "前", "里"],
+      "option_pinyin": ["shàng", "xià", "qián", "lǐ"],
       "correct_pinyin": "shàng",
       "difficulty": "medium",
       "lesson_reference": 7
     },
     {
       "id": "hsk1_final_08",
-      "question": "What's the difference between 看 in '看书' and '看电视'?",
-      "question_pinyin": "kàn / kàn shū / kàn diàn shì",
+      "question": "他在___书。(He is reading a book)",
+      "question_pinyin": "Tā zài ___ shū.",
       "type": "multiple_choice",
-      "correct": "看书 = read, 看电视 = watch",
-      "options": [
-        "No difference",
-        "Both mean 'to look at'",
-        "Both mean 'to watch'",
-        "看书 = read, 看电视 = watch"
-      ],
-      "difficulty": "hard",
+      "correct": "看",
+      "options": ["做", "看", "写", "听"],
+      "option_pinyin": ["zuò", "kàn", "xiě", "tīng"],
+      "correct_pinyin": "kàn",
+      "difficulty": "easy",
       "lesson_reference": 8
     },
     {
       "id": "hsk1_final_09",
-      "question": "她___两个妹妹。(She has two younger sisters)",
-      "question_pinyin": "Tā ___ liǎng gè mèi mei.",
+      "question": "认识你很___！(Nice to meet you!)",
+      "question_pinyin": "Rènshi nǐ hěn ___!",
       "type": "multiple_choice",
-      "correct": "有",
-      "options": [
-        "在",
-        "的",
-        "有",
-        "是"
-      ],
-      "option_pinyin": [
-        "zài",
-        "de",
-        "yǒu",
-        "shì"
-      ],
-      "correct_pinyin": "yǒu",
+      "correct": "高兴",
+      "options": ["高兴", "漂亮", "热", "冷"],
+      "option_pinyin": ["gāoxìng", "piàoliang", "rè", "lěng"],
+      "correct_pinyin": "gāoxìng",
       "difficulty": "easy",
-      "lesson_reference": 4
+      "lesson_reference": 9
     },
     {
       "id": "hsk1_final_10",
-      "question": "Translate to Chinese: 'I am 22 years old.'",
+      "question": "Today's weather is too hot. Which sentence is correct?",
       "type": "multiple_choice",
-      "correct": "我二十二岁。",
-      "options": [
-        "我是二十二。",
-        "二十二岁我。",
-        "我有二十二岁。",
-        "我二十二岁。"
-      ],
-      "option_pinyin": [
-        "Wǒ shì èr shí èr.",
-        "Èr shí èr suì wǒ.",
-        "Wǒ yǒu èr shí èr suì.",
-        "Wǒ èr shí èr suì."
-      ],
-      "correct_pinyin": "Wǒ èr shí èr suì.",
+      "correct": "今天太热了！",
+      "options": ["今天太了热！", "今天热太了！", "太今天热了！", "今天太热了！"],
+      "option_pinyin": ["Jīntiān tài le rè!", "Jīntiān rè tài le!", "Tài jīntiān rè le!", "Jīntiān tài rè le!"],
+      "correct_pinyin": "Jīntiān tài rè le!",
       "difficulty": "medium",
-      "lesson_reference": 2
+      "lesson_reference": 10
     },
     {
       "id": "hsk1_final_11",
-      "question": "What is the measure word for books?",
+      "question": "现在下午___点。(It's 3:00 PM now)",
+      "question_pinyin": "Xiànzài xiàwǔ ___ diǎn.",
       "type": "multiple_choice",
-      "correct": "本",
-      "options": [
-        "口",
-        "个",
-        "杯",
-        "本"
-      ],
-      "option_pinyin": [
-        "kǒu",
-        "gè",
-        "bēi",
-        "běn"
-      ],
-      "correct_pinyin": "běn",
+      "correct": "三",
+      "options": ["二", "三", "四", "五"],
+      "option_pinyin": ["èr", "sān", "sì", "wǔ"],
+      "correct_pinyin": "sān",
       "difficulty": "easy",
-      "lesson_reference": 6
+      "lesson_reference": 11
     },
     {
       "id": "hsk1_final_12",
-      "question": "你在哪儿？",
-      "question_pinyin": "Nǐ zài nǎr?",
+      "question": "她___说汉语。(She can speak Chinese — learned skill)",
+      "question_pinyin": "Tā ___ shuō Hànyǔ.",
       "type": "multiple_choice",
-      "correct": "Where are you?",
-      "options": [
-        "Where do you come from?",
-        "Where are you?",
-        "Where are you going?",
-        "Where do you work?"
-      ],
-      "difficulty": "easy",
-      "lesson_reference": 7
+      "correct": "会",
+      "options": ["能", "会", "想", "有"],
+      "option_pinyin": ["néng", "huì", "xiǎng", "yǒu"],
+      "correct_pinyin": "huì",
+      "difficulty": "medium",
+      "lesson_reference": 9
     },
     {
       "id": "hsk1_final_13",
-      "question": "Choose the correct order: Year, Month, Date",
+      "question": "They are ALL students. Which is correct?",
       "type": "multiple_choice",
-      "correct": "年, 月, 号",
-      "options": [
-        "号, 年, 月",
-        "月, 号, 年",
-        "号, 月, 年",
-        "年, 月, 号"
-      ],
-      "option_pinyin": [
-        "hào, nián, yuè",
-        "yuè, hào, nián",
-        "hào, yuè, nián",
-        "nián, yuè, hào"
-      ],
-      "correct_pinyin": "nián, yuè, hào",
+      "correct": "他们都是学生。",
+      "options": ["都他们是学生。", "他们是都学生。", "他们都是学生。", "他们是学生都。"],
+      "option_pinyin": ["Dōu tāmen shì xuésheng.", "Tāmen shì dōu xuésheng.", "Tāmen dōu shì xuésheng.", "Tāmen shì xuésheng dōu."],
+      "correct_pinyin": "Tāmen dōu shì xuésheng.",
       "difficulty": "medium",
-      "lesson_reference": 3
+      "lesson_reference": 12
     },
     {
       "id": "hsk1_final_14",
+      "question": "你住在哪儿？What does 住 mean?",
+      "type": "multiple_choice",
+      "correct": "To live / Reside",
+      "options": ["To work", "To live / Reside", "To study", "To stay temporarily"],
+      "difficulty": "easy",
+      "lesson_reference": 13
+    },
+    {
+      "id": "hsk1_final_15",
+      "question": "我买___衣服。(I bought clothes — completed)",
+      "question_pinyin": "Wǒ mǎi ___ yīfu.",
+      "type": "multiple_choice",
+      "correct": "了",
+      "options": ["在", "有", "了", "是"],
+      "option_pinyin": ["zài", "yǒu", "le", "shì"],
+      "correct_pinyin": "le",
+      "difficulty": "easy",
+      "lesson_reference": 14
+    },
+    {
+      "id": "hsk1_final_16",
+      "question": "我是坐飞机来的。What does this sentence emphasize?",
+      "question_pinyin": "Wǒ shì zuò fēijī lái de.",
+      "type": "multiple_choice",
+      "correct": "The method of travel (by airplane)",
+      "options": ["When I came", "Where I came from", "The method of travel (by airplane)", "Whether I came or not"],
+      "difficulty": "hard",
+      "lesson_reference": 15
+    },
+    {
+      "id": "hsk1_final_17",
       "question": "What particle turns a statement into a yes/no question?",
       "type": "multiple_choice",
       "correct": "吗",
-      "options": [
-        "吗",
-        "了",
-        "的",
-        "呢"
-      ],
-      "option_pinyin": [
-        "ma",
-        "le",
-        "de",
-        "ne"
-      ],
+      "options": ["吗", "了", "的", "呢"],
+      "option_pinyin": ["ma", "le", "de", "ne"],
       "correct_pinyin": "ma",
       "difficulty": "easy",
       "lesson_reference": 1
     },
     {
-      "id": "hsk1_final_15",
-      "question": "我___吃米饭。(I want to eat rice)",
-      "question_pinyin": "Wǒ ___ chī mǐ fàn.",
-      "type": "multiple_choice",
-      "correct": "想",
-      "options": [
-        "在",
-        "有",
-        "想",
-        "是"
-      ],
-      "option_pinyin": [
-        "zài",
-        "yǒu",
-        "xiǎng",
-        "shì"
-      ],
-      "correct_pinyin": "xiǎng",
-      "difficulty": "easy",
-      "lesson_reference": 5
-    },
-    {
-      "id": "hsk1_final_16",
-      "question": "Translate: '下午三点'",
-      "question_pinyin": "xiàwǔ sān diǎn",
-      "type": "multiple_choice",
-      "correct": "3:00 PM",
-      "options": [
-        "3rd day of the month",
-        "3:00 PM",
-        "3:00 AM",
-        "March 3rd"
-      ],
-      "difficulty": "medium",
-      "lesson_reference": 3
-    },
-    {
-      "id": "hsk1_final_17",
-      "question": "What does 在 + verb indicate? Example: 她在写汉字。",
-      "question_pinyin": "zài / Tā zài xiě hàn zì.",
-      "type": "multiple_choice",
-      "correct": "Ongoing action (she is writing)",
-      "options": [
-        "Future action",
-        "Location (she is at...)",
-        "Completed action",
-        "Ongoing action (she is writing)"
-      ],
-      "difficulty": "hard",
-      "lesson_reference": 8
-    },
-    {
       "id": "hsk1_final_18",
-      "question": "How do you say 'expensive' in Chinese?",
+      "question": "Translate to Chinese: 'I am 22 years old.'",
       "type": "multiple_choice",
-      "correct": "贵",
-      "options": [
-        "少",
-        "便宜",
-        "多",
-        "贵"
-      ],
-      "option_pinyin": [
-        "shǎo",
-        "pián yi",
-        "duō",
-        "guì"
-      ],
-      "correct_pinyin": "guì",
+      "correct": "我二十二岁。",
+      "options": ["我是二十二。", "二十二岁我。", "我有二十二岁。", "我二十二岁。"],
+      "option_pinyin": ["Wǒ shì èrshí'èr.", "Èrshí'èr suì wǒ.", "Wǒ yǒu èrshí'èr suì.", "Wǒ èrshí'èr suì."],
+      "correct_pinyin": "Wǒ èrshí'èr suì.",
+      "difficulty": "medium",
+      "lesson_reference": 2
+    },
+    {
+      "id": "hsk1_final_19",
+      "question": "What is the measure word for books?",
+      "type": "multiple_choice",
+      "correct": "本",
+      "options": ["口", "个", "杯", "本"],
+      "option_pinyin": ["kǒu", "gè", "bēi", "běn"],
+      "correct_pinyin": "běn",
       "difficulty": "easy",
       "lesson_reference": 6
     },
     {
-      "id": "hsk1_final_19",
-      "question": "你家有几口人？",
-      "question_pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
-      "type": "multiple_choice",
-      "correct": "How many people are in your family?",
-      "options": [
-        "Who is in your family?",
-        "Do you have a family?",
-        "Where is your family?",
-        "How many people are in your family?"
-      ],
-      "difficulty": "medium",
-      "lesson_reference": 4
-    },
-    {
       "id": "hsk1_final_20",
-      "question": "Complete the sentence: Subject + ___ + Object (to show possession)",
-      "type": "multiple_choice",
-      "correct": "的",
-      "options": [
-        "是",
-        "有",
-        "在",
-        "的"
-      ],
-      "option_pinyin": [
-        "shì",
-        "yǒu",
-        "zài",
-        "de"
-      ],
-      "correct_pinyin": "de",
-      "difficulty": "medium",
-      "lesson_reference": 1
-    },
-    {
-      "id": "hsk1_final_21",
-      "question": "Which sentence is correct?",
-      "type": "multiple_choice",
-      "correct": "我去学校。",
-      "options": [
-        "学校我去。",
-        "我学校去。",
-        "去我学校。",
-        "我去学校。"
-      ],
-      "option_pinyin": [
-        "Xué xiào wǒ qù.",
-        "Wǒ xué xiào qù.",
-        "Qù wǒ xué xiào.",
-        "Wǒ qù xué xiào."
-      ],
-      "correct_pinyin": "Wǒ qù xué xiào.",
-      "difficulty": "medium",
-      "lesson_reference": 8
-    },
-    {
-      "id": "hsk1_final_22",
       "question": "What is the measure word for family members?",
       "type": "multiple_choice",
       "correct": "口",
-      "options": [
-        "个",
-        "杯",
-        "口",
-        "本"
-      ],
-      "option_pinyin": [
-        "gè",
-        "bēi",
-        "kǒu",
-        "běn"
-      ],
+      "options": ["个", "杯", "口", "本"],
+      "option_pinyin": ["gè", "bēi", "kǒu", "běn"],
       "correct_pinyin": "kǒu",
       "difficulty": "easy",
       "lesson_reference": 4
     },
     {
+      "id": "hsk1_final_21",
+      "question": "Translate: '下午三点半'",
+      "question_pinyin": "xiàwǔ sān diǎn bàn",
+      "type": "multiple_choice",
+      "correct": "3:30 PM",
+      "options": ["3rd day of the month", "3:30 PM", "3:00 AM", "March 3rd"],
+      "difficulty": "medium",
+      "lesson_reference": 11
+    },
+    {
+      "id": "hsk1_final_22",
+      "question": "What does 在 + verb indicate? Example: 她在写汉字。",
+      "question_pinyin": "Tā zài xiě hàn zì.",
+      "type": "multiple_choice",
+      "correct": "Ongoing action (she is writing)",
+      "options": ["Future action", "Location (she is at...)", "Completed action", "Ongoing action (she is writing)"],
+      "difficulty": "hard",
+      "lesson_reference": 8
+    },
+    {
       "id": "hsk1_final_23",
+      "question": "How do you say 'expensive' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "贵",
+      "options": ["少", "便宜", "多", "贵"],
+      "option_pinyin": ["shǎo", "piányí", "duō", "guì"],
+      "correct_pinyin": "guì",
+      "difficulty": "easy",
+      "lesson_reference": 6
+    },
+    {
+      "id": "hsk1_final_24",
+      "question": "你家有几口人？",
+      "question_pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "type": "multiple_choice",
+      "correct": "How many people are in your family?",
+      "options": ["Who is in your family?", "Do you have a family?", "Where is your family?", "How many people are in your family?"],
+      "difficulty": "medium",
+      "lesson_reference": 4
+    },
+    {
+      "id": "hsk1_final_25",
       "question": "Translate to Chinese: 'Two cups of tea'",
       "type": "multiple_choice",
       "correct": "两杯茶",
-      "options": [
-        "茶两杯",
-        "二杯茶",
-        "两杯茶",
-        "杯两茶"
-      ],
-      "option_pinyin": [
-        "chá liǎng bēi",
-        "èr bēi chá",
-        "liǎng bēi chá",
-        "bēi liǎng chá"
-      ],
+      "options": ["茶两杯", "二杯茶", "两杯茶", "杯两茶"],
+      "option_pinyin": ["chá liǎng bēi", "èr bēi chá", "liǎng bēi chá", "bēi liǎng chá"],
       "correct_pinyin": "liǎng bēi chá",
       "difficulty": "medium",
       "lesson_reference": 5
     },
     {
-      "id": "hsk1_final_24",
-      "question": "医院在哪儿？",
-      "question_pinyin": "Yī yuàn zài nǎr?",
+      "id": "hsk1_final_26",
+      "question": "What does 对不起 mean?",
+      "question_pinyin": "duìbuqǐ",
       "type": "multiple_choice",
-      "correct": "Where is the hospital?",
-      "options": [
-        "Where is the hospital?",
-        "Go to the hospital",
-        "Is this a hospital?",
-        "Do you have a hospital?"
-      ],
+      "correct": "Sorry / Excuse me",
+      "options": ["You're welcome", "Thank you", "Sorry / Excuse me", "Goodbye"],
       "difficulty": "easy",
-      "lesson_reference": 7
+      "lesson_reference": 9
     },
     {
-      "id": "hsk1_final_25",
+      "id": "hsk1_final_27",
+      "question": "天气怎么样？What does 怎么样 ask?",
+      "type": "multiple_choice",
+      "correct": "How / What is it like",
+      "options": ["Where", "When", "How / What is it like", "Why"],
+      "difficulty": "medium",
+      "lesson_reference": 10
+    },
+    {
+      "id": "hsk1_final_28",
+      "question": "How do you say 'Monday' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "星期一",
+      "options": ["星期日", "星期七", "星期一", "星期零"],
+      "option_pinyin": ["xīngqīrì", "xīngqīqī", "xīngqīyī", "xīngqīlíng"],
+      "correct_pinyin": "xīngqīyī",
+      "difficulty": "easy",
+      "lesson_reference": 11
+    },
+    {
+      "id": "hsk1_final_29",
+      "question": "我___来，他不能来。 (I CAN come — situational ability)",
+      "type": "multiple_choice",
+      "correct": "能",
+      "options": ["会", "能", "想", "有"],
+      "option_pinyin": ["huì", "néng", "xiǎng", "yǒu"],
+      "correct_pinyin": "néng",
+      "difficulty": "medium",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk1_final_30",
       "question": "Choose the correct sentence for 'She doesn't have money.'",
       "type": "multiple_choice",
       "correct": "她没有钱。",
-      "options": [
-        "她不钱。",
-        "她不有钱。",
-        "她没有钱。",
-        "她没钱有。"
-      ],
-      "option_pinyin": [
-        "Tā bù qián.",
-        "Tā bù yǒu qián.",
-        "Tā méi yǒu qián.",
-        "Tā méi qián yǒu."
-      ],
-      "correct_pinyin": "Tā méi yǒu qián.",
+      "options": ["她不钱。", "她不有钱。", "她没有钱。", "她没钱有。"],
+      "option_pinyin": ["Tā bù qián.", "Tā bù yǒu qián.", "Tā méiyǒu qián.", "Tā méi qián yǒu."],
+      "correct_pinyin": "Tā méiyǒu qián.",
       "difficulty": "hard",
       "lesson_reference": 4
     },
     {
-      "id": "hsk1_final_26",
-      "question": "What comes first in Chinese time expressions?",
+      "id": "hsk1_final_31",
+      "question": "你住在___？(Where do you live?)",
+      "question_pinyin": "Nǐ zhù zài ___?",
       "type": "multiple_choice",
-      "correct": "Time of day (上午/下午/晚上)",
-      "options": [
-        "Time of day (上午/下午/晚上)",
-        "Hour (几点)",
-        "Minutes (几分)",
-        "All are equal"
-      ],
-      "option_pinyin": [
-        "shàng wǔ/xià wǔ/wǎn shàng",
-        "jǐ diǎn",
-        "jǐ fēn",
-        ""
-      ],
-      "difficulty": "hard",
-      "lesson_reference": 3
+      "correct": "哪儿",
+      "options": ["哪儿", "什么", "怎么", "谁"],
+      "option_pinyin": ["nǎr", "shénme", "zěnme", "shuí"],
+      "correct_pinyin": "nǎr",
+      "difficulty": "easy",
+      "lesson_reference": 13
     },
     {
-      "id": "hsk1_final_27",
+      "id": "hsk1_final_32",
+      "question": "我吃___饭了。(I have eaten — completed)",
+      "question_pinyin": "Wǒ chī ___ fàn le.",
+      "type": "multiple_choice",
+      "correct": "了 goes after the verb: 我吃了饭。",
+      "options": ["了 goes after the verb: 我吃了饭。", "了 goes at the end: 我吃饭了。", "Both are correct", "了 is not needed"],
+      "difficulty": "hard",
+      "lesson_reference": 14
+    },
+    {
+      "id": "hsk1_final_33",
+      "question": "How do you ask 'How do I get to the airport?'",
+      "type": "multiple_choice",
+      "correct": "去机场怎么走？",
+      "options": ["去机场哪儿走？", "去机场怎么走？", "机场怎么样？", "去机场几点走？"],
+      "difficulty": "medium",
+      "lesson_reference": 15
+    },
+    {
+      "id": "hsk1_final_34",
+      "question": "What does 和 connect?",
+      "type": "multiple_choice",
+      "correct": "Nouns / Pronouns only",
+      "options": ["Verbs only", "Sentences only", "Nouns / Pronouns only", "Adjectives only"],
+      "difficulty": "hard",
+      "lesson_reference": 10
+    },
+    {
+      "id": "hsk1_final_35",
       "question": "Translate to English: 他在看书。",
       "question_pinyin": "Tā zài kàn shū.",
       "type": "multiple_choice",
       "correct": "He is reading.",
-      "options": [
-        "He is reading.",
-        "He read.",
-        "He reads.",
-        "He will read."
-      ],
+      "options": ["He is reading.", "He read.", "He reads.", "He will read."],
       "difficulty": "medium",
       "lesson_reference": 8
     },
     {
-      "id": "hsk1_final_28",
-      "question": "What does 什么 replace in a question?",
-      "question_pinyin": "shén me",
+      "id": "hsk1_final_36",
+      "question": "Choose the correct year order for dates in Chinese:",
       "type": "multiple_choice",
-      "correct": "The thing you're asking about",
-      "options": [
-        "The subject",
-        "The thing you're asking about",
-        "The verb",
-        "The location"
-      ],
+      "correct": "年, 月, 号/日",
+      "options": ["号, 年, 月", "月, 号, 年", "号, 月, 年", "年, 月, 号/日"],
+      "option_pinyin": ["hào, nián, yuè", "yuè, hào, nián", "hào, yuè, nián", "nián, yuè, hào/rì"],
+      "correct_pinyin": "nián, yuè, hào/rì",
+      "difficulty": "medium",
+      "lesson_reference": 3
+    },
+    {
+      "id": "hsk1_final_37",
+      "question": "Which sentence is correct?",
+      "type": "multiple_choice",
+      "correct": "我去学校。",
+      "options": ["学校我去。", "我学校去。", "去我学校。", "我去学校。"],
+      "option_pinyin": ["Xuéxiào wǒ qù.", "Wǒ xuéxiào qù.", "Qù wǒ xuéxiào.", "Wǒ qù xuéxiào."],
+      "correct_pinyin": "Wǒ qù xuéxiào.",
+      "difficulty": "medium",
+      "lesson_reference": 8
+    },
+    {
+      "id": "hsk1_final_38",
+      "question": "她买了不少衣服。What does 了 show here?",
+      "question_pinyin": "Tā mǎi le bùshǎo yīfu.",
+      "type": "multiple_choice",
+      "correct": "The buying action is completed",
+      "options": ["She is currently buying", "The buying action is completed", "She will buy in the future", "She wants to buy"],
+      "difficulty": "medium",
+      "lesson_reference": 14
+    },
+    {
+      "id": "hsk1_final_39",
+      "question": "What does 会 mean vs 能?",
+      "type": "multiple_choice",
+      "correct": "会 = learned skill; 能 = situational ability",
+      "options": ["They are the same", "会 = situational; 能 = learned skill", "会 = learned skill; 能 = situational ability", "Both mean 'want to'"],
       "difficulty": "hard",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk1_final_40",
+      "question": "Medical question: What is 医生?",
+      "type": "multiple_choice",
+      "correct": "Doctor",
+      "options": ["Hospital", "Doctor", "Medicine", "Patient"],
+      "difficulty": "easy",
+      "lesson_reference": 14
+    },
+    {
+      "id": "hsk1_final_41",
+      "question": "完成___！(Complete sentence: I came by taking the subway)",
+      "type": "multiple_choice",
+      "correct": "我是坐地铁来的。",
+      "options": ["我坐了地铁来。", "我是坐地铁来的。", "我坐地铁是来的。", "我来是坐地铁的。"],
+      "difficulty": "hard",
+      "lesson_reference": 15
+    },
+    {
+      "id": "hsk1_final_42",
+      "question": "Choose the correct order: 'I want to drink water.'",
+      "type": "multiple_choice",
+      "correct": "我想喝水。",
+      "options": ["我喝想水。", "想我喝水。", "我想喝水。", "水我想喝。"],
+      "option_pinyin": ["Wǒ hē xiǎng shuǐ.", "Xiǎng wǒ hē shuǐ.", "Wǒ xiǎng hē shuǐ.", "Shuǐ wǒ xiǎng hē."],
+      "correct_pinyin": "Wǒ xiǎng hē shuǐ.",
+      "difficulty": "easy",
       "lesson_reference": 5
     },
     {
-      "id": "hsk1_final_29",
-      "question": "Choose the grammatically correct sentence:",
+      "id": "hsk1_final_43",
+      "question": "哪 means which, 这 means this, 那 means ___.",
       "type": "multiple_choice",
-      "correct": "这本书五十块。",
-      "options": [
-        "五十块这本书。",
-        "这书本五十块。",
-        "这本书五十块。",
-        "本这书五十块。"
-      ],
-      "option_pinyin": [
-        "Wǔ shí kuài zhè běn shū.",
-        "Zhè shū běn wǔ shí kuài.",
-        "Zhè běn shū wǔ shí kuài.",
-        "Běn zhè shū wǔ shí kuài."
-      ],
-      "correct_pinyin": "Zhè běn shū wǔ shí kuài.",
-      "difficulty": "hard",
-      "lesson_reference": 6
+      "correct": "That",
+      "options": ["Here", "There", "That", "Which"],
+      "difficulty": "easy",
+      "lesson_reference": 13
     },
     {
-      "id": "hsk1_final_30",
+      "id": "hsk1_final_44",
+      "question": "我还没吃。What does 还没 mean?",
+      "question_pinyin": "Wǒ hái méi chī.",
+      "type": "multiple_choice",
+      "correct": "Haven't yet",
+      "options": ["Already ate", "Want to eat", "Haven't yet", "Will not eat"],
+      "difficulty": "medium",
+      "lesson_reference": 14
+    },
+    {
+      "id": "hsk1_final_45",
       "question": "Complete: 我___老师。(I am a teacher)",
       "question_pinyin": "Wǒ ___ lǎo shī.",
       "type": "multiple_choice",
       "correct": "是",
-      "options": [
-        "在",
-        "的",
-        "是",
-        "有"
-      ],
-      "option_pinyin": [
-        "zài",
-        "de",
-        "shì",
-        "yǒu"
-      ],
+      "options": ["在", "的", "是", "有"],
+      "option_pinyin": ["zài", "de", "shì", "yǒu"],
       "correct_pinyin": "shì",
       "difficulty": "easy",
       "lesson_reference": 1
     }
   ],
   "scoring_breakdown": {
-    "easy_questions": 12,
-    "medium_questions": 11,
-    "hard_questions": 7,
-    "vocabulary_focus": 10,
-    "grammar_focus": 12,
-    "sentence_comprehension": 8
+    "easy_questions": 18,
+    "medium_questions": 17,
+    "hard_questions": 10,
+    "vocabulary_focus": 15,
+    "grammar_focus": 18,
+    "sentence_comprehension": 12
   }
 }

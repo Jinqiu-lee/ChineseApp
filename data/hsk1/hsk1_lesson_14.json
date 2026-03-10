@@ -1,0 +1,157 @@
+{
+  "lesson": 14,
+  "topic": "Completed Actions",
+  "topic_chinese": "买了什么",
+  "age_group": "Adults and 10+",
+  "objectives": ["listening", "speaking", "reading", "writing"],
+  "vocabulary": [
+    { "id": "hsk1_l14_01", "chinese": "了", "pinyin": "le", "tones": [0], "english": "Completion particle (action done)", "part_of_speech": "particle" },
+    { "id": "hsk1_l14_02", "chinese": "衣服", "pinyin": "yīfu", "tones": [1, 0], "english": "Clothes / Clothing", "part_of_speech": "noun" },
+    { "id": "hsk1_l14_03", "chinese": "女儿", "pinyin": "nǚ'ér", "tones": [3, 2], "english": "Daughter", "part_of_speech": "noun" },
+    { "id": "hsk1_l14_04", "chinese": "儿子", "pinyin": "érzi", "tones": [2, 0], "english": "Son", "part_of_speech": "noun" },
+    { "id": "hsk1_l14_05", "chinese": "医生", "pinyin": "yīshēng", "tones": [1, 1], "english": "Doctor", "part_of_speech": "noun" },
+    { "id": "hsk1_l14_06", "chinese": "工作", "pinyin": "gōngzuò", "tones": [1, 4], "english": "Work / Job / To work", "part_of_speech": "noun/verb" },
+    { "id": "hsk1_l14_07", "chinese": "人", "pinyin": "rén", "tones": [2], "english": "Person / People", "part_of_speech": "noun" },
+    { "id": "hsk1_l14_08", "chinese": "男人", "pinyin": "nánrén", "tones": [2, 2], "english": "Man", "part_of_speech": "noun" },
+    { "id": "hsk1_l14_09", "chinese": "自己", "pinyin": "zìjǐ", "tones": [4, 3], "english": "Oneself / Yourself", "part_of_speech": "pronoun" },
+    { "id": "hsk1_l14_10", "chinese": "又", "pinyin": "yòu", "tones": [4], "english": "Again / Also", "part_of_speech": "adverb" },
+    { "id": "hsk1_l14_11", "chinese": "以前", "pinyin": "yǐqián", "tones": [3, 2], "english": "Before / Previously", "part_of_speech": "noun" },
+    { "id": "hsk1_l14_12", "chinese": "以后", "pinyin": "yǐhòu", "tones": [3, 4], "english": "After / Later / In the future", "part_of_speech": "noun" },
+    { "id": "hsk1_l14_p01", "chinese": "买了衣服", "pinyin": "mǎi le yīfu", "tones": [3, 0, 1, 0], "english": "Bought clothes", "part_of_speech": "phrase" },
+    { "id": "hsk1_l14_p02", "chinese": "吃了饭", "pinyin": "chī le fàn", "tones": [1, 0, 4], "english": "Ate (a meal)", "part_of_speech": "phrase" },
+    { "id": "hsk1_l14_p03", "chinese": "喝了茶", "pinyin": "hē le chá", "tones": [1, 0, 2], "english": "Drank tea", "part_of_speech": "phrase" },
+    { "id": "hsk1_l14_p04", "chinese": "我女儿", "pinyin": "wǒ nǚ'ér", "tones": [3, 3, 2], "english": "My daughter", "part_of_speech": "phrase" },
+    { "id": "hsk1_l14_p05", "chinese": "我儿子", "pinyin": "wǒ érzi", "tones": [3, 2, 0], "english": "My son", "part_of_speech": "phrase" },
+    { "id": "hsk1_l14_p06", "chinese": "是医生", "pinyin": "shì yīshēng", "tones": [4, 1, 1], "english": "Is a doctor", "part_of_speech": "phrase" },
+    { "id": "hsk1_l14_p07", "chinese": "去工作", "pinyin": "qù gōngzuò", "tones": [4, 1, 4], "english": "Go to work", "part_of_speech": "phrase" },
+    { "id": "hsk1_l14_p08", "chinese": "没有工作", "pinyin": "méiyǒu gōngzuò", "tones": [2, 3, 1, 4], "english": "No job / Unemployed", "part_of_speech": "phrase" },
+    { "id": "hsk1_l14_p09", "chinese": "以前工作", "pinyin": "yǐqián gōngzuò", "tones": [3, 2, 1, 4], "english": "Previously worked", "part_of_speech": "phrase" },
+    { "id": "hsk1_l14_p10", "chinese": "以后再来", "pinyin": "yǐhòu zài lái", "tones": [3, 4, 4, 2], "english": "Come again later", "part_of_speech": "phrase" },
+    { "id": "hsk1_l14_p11", "chinese": "又买了", "pinyin": "yòu mǎi le", "tones": [4, 3, 0], "english": "Bought again", "part_of_speech": "phrase" },
+    { "id": "hsk1_l14_p12", "chinese": "自己做", "pinyin": "zìjǐ zuò", "tones": [4, 3, 4], "english": "Do it yourself / Make it yourself", "part_of_speech": "phrase" }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "She Bought Clothes",
+      "title_chinese": "她买了衣服",
+      "lines": [
+        { "speaker": "A", "chinese": "你去哪儿了？", "pinyin": "Nǐ qù nǎr le?", "english": "Where did you go?" },
+        { "speaker": "B", "chinese": "我去买衣服了。你看，我买了很多！", "pinyin": "Wǒ qù mǎi yīfu le. Nǐ kàn, wǒ mǎi le hěn duō!", "english": "I went to buy clothes. Look, I bought a lot!" },
+        { "speaker": "A", "chinese": "你又买了？", "pinyin": "Nǐ yòu mǎi le?", "english": "You bought again?" },
+        { "speaker": "B", "chinese": "哈哈！衣服都很漂亮！", "pinyin": "Hāhā! Yīfu dōu hěn piàoliang!", "english": "Haha! The clothes are all very beautiful!" }
+      ],
+      "speakers": {
+        "A": { "name": "妈妈", "role": "妈妈", "gender": "female" },
+        "B": { "name": "小丽", "role": "女儿", "gender": "female" }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Did You Eat?",
+      "title_chinese": "你吃了吗",
+      "lines": [
+        { "speaker": "A", "chinese": "你吃了吗？", "pinyin": "Nǐ chī le ma?", "english": "Did you eat?" },
+        { "speaker": "B", "chinese": "吃了，我吃了米饭和菜。你呢？", "pinyin": "Chī le, wǒ chī le mǐfàn hé cài. Nǐ ne?", "english": "Yes, I ate rice and vegetables. What about you?" },
+        { "speaker": "A", "chinese": "我还没吃。我去饭馆吃。", "pinyin": "Wǒ hái méi chī. Wǒ qù fànguǎn chī.", "english": "I haven't eaten yet. I'll go eat at a restaurant." },
+        { "speaker": "B", "chinese": "我和你一起去！", "pinyin": "Wǒ hé nǐ yīqǐ qù!", "english": "I'll go with you!" }
+      ],
+      "speakers": {
+        "A": { "name": "小华", "role": "朋友", "gender": "female" },
+        "B": { "name": "小明", "role": "朋友", "gender": "male" }
+      }
+    },
+    {
+      "id": 3,
+      "title": "My Son is a Doctor",
+      "title_chinese": "我儿子是医生",
+      "lines": [
+        { "speaker": "A", "chinese": "你儿子做什么工作？", "pinyin": "Nǐ érzi zuò shénme gōngzuò?", "english": "What does your son do for work?" },
+        { "speaker": "B", "chinese": "我儿子是医生。我女儿也工作了。", "pinyin": "Wǒ érzi shì yīshēng. Wǒ nǚ'ér yě gōngzuò le.", "english": "My son is a doctor. My daughter started working too." },
+        { "speaker": "A", "chinese": "太好了！他们都工作了，你可以休息了！", "pinyin": "Tài hǎo le! Tāmen dōu gōngzuò le, nǐ kěyǐ xiūxi le!", "english": "Great! They both work now, you can rest!" }
+      ],
+      "speakers": {
+        "A": { "name": "李太太", "role": "邻居", "gender": "female" },
+        "B": { "name": "王先生", "role": "父亲", "gender": "male" }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Before and After",
+      "title_chinese": "以前和以后",
+      "lines": [
+        { "speaker": "A", "chinese": "你以前做什么工作？", "pinyin": "Nǐ yǐqián zuò shénme gōngzuò?", "english": "What work did you do before?" },
+        { "speaker": "B", "chinese": "我以前是老师，现在是医生。", "pinyin": "Wǒ yǐqián shì lǎoshī, xiànzài shì yīshēng.", "english": "I was a teacher before, now I'm a doctor." },
+        { "speaker": "A", "chinese": "以后呢？", "pinyin": "Yǐhòu ne?", "english": "What about in the future?" },
+        { "speaker": "B", "chinese": "以后，我想自己开一个饭馆！", "pinyin": "Yǐhòu, wǒ xiǎng zìjǐ kāi yīge fànguǎn!", "english": "In the future, I want to open my own restaurant!" }
+      ],
+      "speakers": {
+        "A": { "name": "小丽", "role": "学生", "gender": "female" },
+        "B": { "name": "大明", "role": "老师", "gender": "male" }
+      }
+    }
+  ],
+  "key_sentences": [
+    { "chinese": "我买了很多衣服。", "pinyin": "Wǒ mǎi le hěn duō yīfu.", "english": "I bought a lot of clothes." },
+    { "chinese": "你吃了吗？", "pinyin": "Nǐ chī le ma?", "english": "Did you eat?" },
+    { "chinese": "我儿子是医生。", "pinyin": "Wǒ érzi shì yīshēng.", "english": "My son is a doctor." },
+    { "chinese": "以前是老师，现在是医生。", "pinyin": "Yǐqián shì lǎoshī, xiànzài shì yīshēng.", "english": "Was a teacher before, now is a doctor." },
+    { "chinese": "还没吃。", "pinyin": "Hái méi chī.", "english": "Haven't eaten yet." }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "Completion Particle 了 (le) — Action Completed",
+      "explanation": "了 after a verb shows the action is completed. Formula: Subject + Verb + 了 + Object. Negative: 没(有) + Verb (no 了). Question: Verb + 了 + 吗? or Verb + 了 + 没有?",
+      "examples": [
+        { "chinese": "我吃了米饭。", "pinyin": "Wǒ chī le mǐfàn.", "english": "I ate rice." },
+        { "chinese": "她买了新衣服。", "pinyin": "Tā mǎi le xīn yīfu.", "english": "She bought new clothes." }
+      ],
+      "exercises": [
+        { "question": "Say 'I drank tea' using 了", "answer": "我喝了茶。", "type": "production" },
+        { "question": "How do you negate a 了 sentence?", "answer": "Use 没有 + Verb (remove 了)", "type": "concept" },
+        { "question": "Fill in: 他___吃饭。(He ate. Use 了)", "answer": "了", "type": "fill_in_blank" }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "还没 (hái méi) — Haven't Yet",
+      "explanation": "还没 + Verb means 'haven't done yet'. No 了 is used. 还 = still/yet; 没 = not (for actions). Formula: Subject + 还没 + Verb + (呢).",
+      "examples": [
+        { "chinese": "我还没吃。", "pinyin": "Wǒ hái méi chī.", "english": "I haven't eaten yet." },
+        { "chinese": "他还没来。", "pinyin": "Tā hái méi lái.", "english": "He hasn't come yet." }
+      ],
+      "exercises": [
+        { "question": "Say 'She hasn't bought clothes yet'", "answer": "她还没买衣服。", "type": "production" },
+        { "question": "Fill in: 我___吃饭。(I haven't eaten yet)", "answer": "还没", "type": "fill_in_blank" }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "以前 and 以后 — Before and After",
+      "explanation": "以前 (yǐqián) = before/previously. 以后 (yǐhòu) = after/later/in the future. They come before the main verb clause. Often paired with 现在 (now).",
+      "examples": [
+        { "chinese": "以前我是学生，现在我工作了。", "pinyin": "Yǐqián wǒ shì xuésheng, xiànzài wǒ gōngzuò le.", "english": "I was a student before, now I'm working." },
+        { "chinese": "以后你想做什么？", "pinyin": "Yǐhòu nǐ xiǎng zuò shénme?", "english": "What do you want to do in the future?" }
+      ],
+      "exercises": [
+        { "question": "Say 'I will go to China in the future'", "answer": "我以后去中国。", "type": "production" },
+        { "question": "What is the opposite of 以前?", "answer": "以后", "type": "concept" }
+      ]
+    }
+  ],
+  "pinyin_focus": {
+    "topic": "Neutral tone and 了 particle",
+    "initials_focus": ["y", "g", "r", "m"],
+    "finals_focus": ["ü", "ou", "u", "ang"],
+    "tone_practice": ["yīfu", "nǚ'ér", "érzi", "yīshēng", "gōngzuò"]
+  },
+  "games": ["flashcard", "matching", "word_shake", "sentence_builder"],
+  "quiz": [
+    { "question": "What does 了 indicate when placed after a verb?", "type": "multiple_choice", "correct": "Completed action", "options": ["Future action", "Ongoing action", "Completed action", "Negative action"] },
+    { "question": "How do you say 'I haven't eaten yet'?", "type": "multiple_choice", "correct": "我还没吃。", "options": ["我不吃了。", "我没有吃了。", "我还没吃。", "我没吃了。"] },
+    { "question": "What does 衣服 mean?", "type": "multiple_choice", "correct": "Clothes", "options": ["Food", "Shoes", "Clothes", "Bag"] },
+    { "question": "What does 以前 mean?", "type": "multiple_choice", "correct": "Before / Previously", "options": ["After", "Now", "Before / Previously", "Later"] },
+    { "question": "How do you say 'My daughter is a doctor'?", "type": "multiple_choice", "correct": "我女儿是医生。", "options": ["我儿子是医生。", "我女儿是老师。", "我女儿是医生。", "我女人是医生。"] }
+  ]
+}

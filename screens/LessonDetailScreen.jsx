@@ -13,8 +13,19 @@ import lesson5 from '../data/hsk1/hsk1_lesson_5.json';
 import lesson6 from '../data/hsk1/hsk1_lesson_6.json';
 import lesson7 from '../data/hsk1/hsk1_lesson_7.json';
 import lesson8 from '../data/hsk1/hsk1_lesson_8.json';
+import lesson9 from '../data/hsk1/hsk1_lesson_9.json';
+import lesson10 from '../data/hsk1/hsk1_lesson_10.json';
+import lesson11 from '../data/hsk1/hsk1_lesson_11.json';
+import lesson12 from '../data/hsk1/hsk1_lesson_12.json';
+import lesson13 from '../data/hsk1/hsk1_lesson_13.json';
+import lesson14 from '../data/hsk1/hsk1_lesson_14.json';
+import lesson15 from '../data/hsk1/hsk1_lesson_15.json';
 
-const LESSONS = { 1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5, 6: lesson6, 7: lesson7, 8: lesson8 };
+const LESSONS = {
+  1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5,
+  6: lesson6, 7: lesson7, 8: lesson8, 9: lesson9, 10: lesson10,
+  11: lesson11, 12: lesson12, 13: lesson13, 14: lesson14, 15: lesson15,
+};
 
 const STAGE_META = [
   { name: 'First Look',      desc: 'Flashcards · Audio · Match',    icon: '👁',  color: '#a29bfe' },

@@ -1,0 +1,155 @@
+{
+  "lesson": 10,
+  "topic": "Weather",
+  "topic_chinese": "天气怎么样",
+  "age_group": "Adults and 10+",
+  "objectives": ["listening", "speaking", "reading", "writing"],
+  "vocabulary": [
+    { "id": "hsk1_l10_01", "chinese": "天气", "pinyin": "tiānqì", "tones": [1, 4], "english": "Weather", "part_of_speech": "noun" },
+    { "id": "hsk1_l10_02", "chinese": "热", "pinyin": "rè", "tones": [4], "english": "Hot", "part_of_speech": "adjective" },
+    { "id": "hsk1_l10_03", "chinese": "冷", "pinyin": "lěng", "tones": [3], "english": "Cold", "part_of_speech": "adjective" },
+    { "id": "hsk1_l10_04", "chinese": "下雨", "pinyin": "xià yǔ", "tones": [4, 3], "english": "To rain / Raining", "part_of_speech": "verb" },
+    { "id": "hsk1_l10_05", "chinese": "太", "pinyin": "tài", "tones": [4], "english": "Too / Extremely", "part_of_speech": "adverb" },
+    { "id": "hsk1_l10_06", "chinese": "怎么样", "pinyin": "zěnmeyàng", "tones": [3, 0, 4], "english": "How / How about / What's it like", "part_of_speech": "question_word" },
+    { "id": "hsk1_l10_07", "chinese": "大", "pinyin": "dà", "tones": [4], "english": "Big / Large", "part_of_speech": "adjective" },
+    { "id": "hsk1_l10_08", "chinese": "小", "pinyin": "xiǎo", "tones": [3], "english": "Small / Little", "part_of_speech": "adjective" },
+    { "id": "hsk1_l10_09", "chinese": "多", "pinyin": "duō", "tones": [1], "english": "Many / Much / More", "part_of_speech": "adjective" },
+    { "id": "hsk1_l10_10", "chinese": "少", "pinyin": "shǎo", "tones": [3], "english": "Few / Little / Less", "part_of_speech": "adjective" },
+    { "id": "hsk1_l10_11", "chinese": "和", "pinyin": "hé", "tones": [2], "english": "And / With", "part_of_speech": "conjunction" },
+    { "id": "hsk1_l10_12", "chinese": "一些", "pinyin": "yīxiē", "tones": [1, 1], "english": "Some / A few", "part_of_speech": "determiner" },
+    { "id": "hsk1_l10_p01", "chinese": "天气怎么样", "pinyin": "tiānqì zěnmeyàng", "tones": [1, 4, 3, 0, 4], "english": "How's the weather?", "part_of_speech": "phrase" },
+    { "id": "hsk1_l10_p02", "chinese": "太热了", "pinyin": "tài rè le", "tones": [4, 4, 0], "english": "Too hot", "part_of_speech": "phrase" },
+    { "id": "hsk1_l10_p03", "chinese": "太冷了", "pinyin": "tài lěng le", "tones": [4, 3, 0], "english": "Too cold", "part_of_speech": "phrase" },
+    { "id": "hsk1_l10_p04", "chinese": "下雨了", "pinyin": "xià yǔ le", "tones": [4, 3, 0], "english": "It's raining now", "part_of_speech": "phrase" },
+    { "id": "hsk1_l10_p05", "chinese": "今天下雨", "pinyin": "jīntiān xià yǔ", "tones": [1, 1, 4, 3], "english": "It rains today", "part_of_speech": "phrase" },
+    { "id": "hsk1_l10_p06", "chinese": "天气很好", "pinyin": "tiānqì hěn hǎo", "tones": [1, 4, 3, 3], "english": "The weather is good", "part_of_speech": "phrase" },
+    { "id": "hsk1_l10_p07", "chinese": "多一点", "pinyin": "duō yīdiǎn", "tones": [1, 1, 3], "english": "A little more", "part_of_speech": "phrase" },
+    { "id": "hsk1_l10_p08", "chinese": "少一点", "pinyin": "shǎo yīdiǎn", "tones": [3, 1, 3], "english": "A little less", "part_of_speech": "phrase" },
+    { "id": "hsk1_l10_p09", "chinese": "你和我", "pinyin": "nǐ hé wǒ", "tones": [3, 2, 3], "english": "You and I", "part_of_speech": "phrase" },
+    { "id": "hsk1_l10_p10", "chinese": "一些水果", "pinyin": "yīxiē shuǐguǒ", "tones": [1, 1, 3, 3], "english": "Some fruit", "part_of_speech": "phrase" },
+    { "id": "hsk1_l10_p11", "chinese": "大雨", "pinyin": "dàyǔ", "tones": [4, 3], "english": "Heavy rain", "part_of_speech": "phrase" },
+    { "id": "hsk1_l10_p12", "chinese": "大小", "pinyin": "dàxiǎo", "tones": [4, 3], "english": "Size (big and small)", "part_of_speech": "phrase" }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "How's the Weather?",
+      "title_chinese": "天气怎么样",
+      "lines": [
+        { "speaker": "A", "chinese": "今天天气怎么样？", "pinyin": "Jīntiān tiānqì zěnmeyàng?", "english": "How's the weather today?" },
+        { "speaker": "B", "chinese": "今天很热。太热了！", "pinyin": "Jīntiān hěn rè. Tài rè le!", "english": "It's very hot today. Too hot!" },
+        { "speaker": "A", "chinese": "明天呢？", "pinyin": "Míngtiān ne?", "english": "What about tomorrow?" },
+        { "speaker": "B", "chinese": "明天下雨。", "pinyin": "Míngtiān xià yǔ.", "english": "It will rain tomorrow." }
+      ],
+      "speakers": {
+        "A": { "name": "小丽", "role": "朋友", "gender": "female" },
+        "B": { "name": "小明", "role": "朋友", "gender": "male" }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Too Cold!",
+      "title_chinese": "太冷了",
+      "lines": [
+        { "speaker": "A", "chinese": "你冷吗？", "pinyin": "Nǐ lěng ma?", "english": "Are you cold?" },
+        { "speaker": "B", "chinese": "太冷了！今天天气不好。", "pinyin": "Tài lěng le! Jīntiān tiānqì bù hǎo.", "english": "Too cold! The weather is bad today." },
+        { "speaker": "A", "chinese": "你喝一些热茶吧。", "pinyin": "Nǐ hē yīxiē rè chá ba.", "english": "Have some hot tea." },
+        { "speaker": "B", "chinese": "好！谢谢你。", "pinyin": "Hǎo! Xièxie nǐ.", "english": "Great! Thank you." }
+      ],
+      "speakers": {
+        "A": { "name": "妈妈", "role": "妈妈", "gender": "female" },
+        "B": { "name": "小刚", "role": "儿子", "gender": "male" }
+      }
+    },
+    {
+      "id": 3,
+      "title": "It's Raining",
+      "title_chinese": "下雨了",
+      "lines": [
+        { "speaker": "A", "chinese": "下雨了！你有没有？", "pinyin": "Xià yǔ le! Nǐ yǒu méiyǒu?", "english": "It's raining! Do you have one?" },
+        { "speaker": "B", "chinese": "没有。今天下大雨！", "pinyin": "Méiyǒu. Jīntiān xià dàyǔ!", "english": "No. It's raining heavily today!" },
+        { "speaker": "A", "chinese": "我们一起走吧。", "pinyin": "Wǒmen yīqǐ zǒu ba.", "english": "Let's go together." }
+      ],
+      "speakers": {
+        "A": { "name": "小华", "role": "同学", "gender": "female" },
+        "B": { "name": "小明", "role": "同学", "gender": "male" }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Big or Small?",
+      "title_chinese": "大还是小",
+      "lines": [
+        { "speaker": "A", "chinese": "你想要大的还是小的？", "pinyin": "Nǐ xiǎng yào dà de háishi xiǎo de?", "english": "Do you want the big one or the small one?" },
+        { "speaker": "B", "chinese": "我想要大的。多一点。", "pinyin": "Wǒ xiǎng yào dà de. Duō yīdiǎn.", "english": "I want the big one. A little more." },
+        { "speaker": "A", "chinese": "好的。你和我一起吃吧！", "pinyin": "Hǎo de. Nǐ hé wǒ yīqǐ chī ba!", "english": "Okay. Let's eat together!" }
+      ],
+      "speakers": {
+        "A": { "name": "小美", "role": "服务员", "gender": "female" },
+        "B": { "name": "大明", "role": "顾客", "gender": "male" }
+      }
+    }
+  ],
+  "key_sentences": [
+    { "chinese": "今天天气怎么样？", "pinyin": "Jīntiān tiānqì zěnmeyàng?", "english": "How's the weather today?" },
+    { "chinese": "太热了！", "pinyin": "Tài rè le!", "english": "Too hot!" },
+    { "chinese": "今天下雨。", "pinyin": "Jīntiān xià yǔ.", "english": "It rains today." },
+    { "chinese": "天气很好。", "pinyin": "Tiānqì hěn hǎo.", "english": "The weather is nice." },
+    { "chinese": "多一点，少一点。", "pinyin": "Duō yīdiǎn, shǎo yīdiǎn.", "english": "A little more, a little less." }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "怎么样 (zěnmeyàng) — How / What's it like",
+      "explanation": "怎么样 asks for a description or opinion. Formula: Subject + 怎么样? It can also follow a topic: 天气怎么样? (How is the weather?). More open-ended than yes/no 吗 questions.",
+      "examples": [
+        { "chinese": "天气怎么样？", "pinyin": "Tiānqì zěnmeyàng?", "english": "How's the weather?" },
+        { "chinese": "你怎么样？", "pinyin": "Nǐ zěnmeyàng?", "english": "How are you?" }
+      ],
+      "exercises": [
+        { "question": "Ask 'How is the food?' in Chinese", "answer": "菜怎么样？", "type": "production" },
+        { "question": "Fill in: 今天天气___？(How's the weather today?)", "answer": "怎么样", "type": "fill_in_blank" }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "太...了 (tài...le) — Too / Excessively",
+      "explanation": "太 + Adjective + 了 expresses excess. 太 alone without 了 can mean 'very' in casual speech, but 太...了 emphasizes too much. Formula: Subject + 太 + Adjective + 了.",
+      "examples": [
+        { "chinese": "今天太热了！", "pinyin": "Jīntiān tài rè le!", "english": "It's too hot today!" },
+        { "chinese": "这个太大了。", "pinyin": "Zhège tài dà le.", "english": "This is too big." }
+      ],
+      "exercises": [
+        { "question": "Say 'The coffee is too hot' using 太...了", "answer": "咖啡太热了。", "type": "production" },
+        { "question": "Fill in: 今天___冷___！(It's too cold today)", "answer": "太 / 了", "type": "fill_in_blank" }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "和 (hé) — And (connecting nouns)",
+      "explanation": "和 connects two nouns or pronouns. It cannot connect verbs or sentences (unlike English 'and'). Formula: Noun A + 和 + Noun B. Example: 你和我 (you and I).",
+      "examples": [
+        { "chinese": "你和我都是学生。", "pinyin": "Nǐ hé wǒ dōu shì xuésheng.", "english": "You and I are both students." },
+        { "chinese": "茶和咖啡", "pinyin": "chá hé kāfēi", "english": "Tea and coffee" }
+      ],
+      "exercises": [
+        { "question": "Say 'rice and noodles' in Chinese", "answer": "米饭和面条", "type": "production" },
+        { "question": "Can 和 connect two verbs?", "answer": "No, 和 only connects nouns/pronouns", "type": "concept" }
+      ]
+    }
+  ],
+  "pinyin_focus": {
+    "topic": "Tones on adjectives and question words",
+    "initials_focus": ["x", "zh", "t", "d"],
+    "finals_focus": ["iang", "eng", "ao", "e"],
+    "tone_practice": ["tiānqì", "rè", "lěng", "tài", "zěnmeyàng"]
+  },
+  "games": ["flashcard", "matching", "word_shake", "sentence_builder"],
+  "quiz": [
+    { "question": "What does 天气 mean?", "type": "multiple_choice", "correct": "Weather", "options": ["Season", "Weather", "Temperature", "Wind"] },
+    { "question": "How do you say 'too cold' in Chinese?", "type": "multiple_choice", "correct": "太冷了", "options": ["很冷", "冷太了", "太冷了", "太了冷"] },
+    { "question": "What does 怎么样 ask?", "type": "multiple_choice", "correct": "How / What's it like", "options": ["Where", "When", "How / What's it like", "Why"] },
+    { "question": "Which word means 'and' between nouns?", "type": "multiple_choice", "correct": "和", "options": ["也", "都", "和", "一些"] },
+    { "question": "What does 下雨 mean?", "type": "multiple_choice", "correct": "To rain", "options": ["Sunny", "To snow", "To rain", "Windy"] }
+  ]
+}

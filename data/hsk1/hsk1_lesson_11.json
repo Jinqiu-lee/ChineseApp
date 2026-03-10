@@ -1,0 +1,156 @@
+{
+  "lesson": 11,
+  "topic": "What Time Is It?",
+  "topic_chinese": "现在几点",
+  "age_group": "Adults and 10+",
+  "objectives": ["listening", "speaking", "reading", "writing"],
+  "vocabulary": [
+    { "id": "hsk1_l11_01", "chinese": "现在", "pinyin": "xiànzài", "tones": [4, 4], "english": "Now / At present", "part_of_speech": "adverb" },
+    { "id": "hsk1_l11_02", "chinese": "分钟", "pinyin": "fēnzhōng", "tones": [1, 1], "english": "Minute (duration)", "part_of_speech": "noun" },
+    { "id": "hsk1_l11_03", "chinese": "中午", "pinyin": "zhōngwǔ", "tones": [1, 3], "english": "Noon / Midday", "part_of_speech": "noun" },
+    { "id": "hsk1_l11_04", "chinese": "时候", "pinyin": "shíhou", "tones": [2, 0], "english": "Time / Moment / When", "part_of_speech": "noun" },
+    { "id": "hsk1_l11_05", "chinese": "星期", "pinyin": "xīngqī", "tones": [1, 1], "english": "Week / Day of the week", "part_of_speech": "noun" },
+    { "id": "hsk1_l11_06", "chinese": "日", "pinyin": "rì", "tones": [4], "english": "Day / Date (formal)", "part_of_speech": "noun" },
+    { "id": "hsk1_l11_07", "chinese": "打电话", "pinyin": "dǎ diànhuà", "tones": [3, 4, 4], "english": "To make a phone call", "part_of_speech": "verb" },
+    { "id": "hsk1_l11_08", "chinese": "喂", "pinyin": "wèi", "tones": [4], "english": "Hello (on the phone)", "part_of_speech": "interjection" },
+    { "id": "hsk1_l11_09", "chinese": "听", "pinyin": "tīng", "tones": [1], "english": "To listen / To hear", "part_of_speech": "verb" },
+    { "id": "hsk1_l11_10", "chinese": "年", "pinyin": "nián", "tones": [2], "english": "Year", "part_of_speech": "noun" },
+    { "id": "hsk1_l11_11", "chinese": "请问", "pinyin": "qǐngwèn", "tones": [3, 4], "english": "Excuse me / May I ask", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_12", "chinese": "等一下", "pinyin": "děng yīxià", "tones": [3, 1, 4], "english": "Wait a moment", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p01", "chinese": "现在几点", "pinyin": "xiànzài jǐ diǎn", "tones": [4, 4, 3, 3], "english": "What time is it now?", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p02", "chinese": "几点几分", "pinyin": "jǐ diǎn jǐ fēn", "tones": [3, 3, 3, 1], "english": "What time exactly (hour and minute)", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p03", "chinese": "中午十二点", "pinyin": "zhōngwǔ shí'èr diǎn", "tones": [1, 3, 2, 4, 3], "english": "12 o'clock noon", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p04", "chinese": "什么时候", "pinyin": "shénme shíhou", "tones": [2, 0, 2, 0], "english": "When / What time", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p05", "chinese": "星期一", "pinyin": "xīngqīyī", "tones": [1, 1, 1], "english": "Monday", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p06", "chinese": "星期六", "pinyin": "xīngqīliù", "tones": [1, 1, 4], "english": "Saturday", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p07", "chinese": "打电话给你", "pinyin": "dǎ diànhuà gěi nǐ", "tones": [3, 4, 4, 3, 3], "english": "Call you / Phone you", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p08", "chinese": "五分钟后", "pinyin": "wǔ fēnzhōng hòu", "tones": [3, 1, 1, 4], "english": "In five minutes", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p09", "chinese": "听说", "pinyin": "tīng shuō", "tones": [1, 1], "english": "I heard that / They say", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p10", "chinese": "今年", "pinyin": "jīnnián", "tones": [1, 2], "english": "This year", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p11", "chinese": "明年", "pinyin": "míngnián", "tones": [2, 2], "english": "Next year", "part_of_speech": "phrase" },
+    { "id": "hsk1_l11_p12", "chinese": "请问几点", "pinyin": "qǐngwèn jǐ diǎn", "tones": [3, 4, 3, 3], "english": "Excuse me, what time is it?", "part_of_speech": "phrase" }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "What Time Is It Now?",
+      "title_chinese": "现在几点",
+      "lines": [
+        { "speaker": "A", "chinese": "请问，现在几点？", "pinyin": "Qǐngwèn, xiànzài jǐ diǎn?", "english": "Excuse me, what time is it now?" },
+        { "speaker": "B", "chinese": "现在下午两点半。", "pinyin": "Xiànzài xiàwǔ liǎng diǎn bàn.", "english": "It's 2:30 PM now." },
+        { "speaker": "A", "chinese": "谢谢！", "pinyin": "Xièxie!", "english": "Thank you!" },
+        { "speaker": "B", "chinese": "不客气。", "pinyin": "Bú kèqi.", "english": "You're welcome." }
+      ],
+      "speakers": {
+        "A": { "name": "小丽", "role": "学生", "gender": "female" },
+        "B": { "name": "王先生", "role": "路人", "gender": "male" }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Phone Call",
+      "title_chinese": "打电话",
+      "lines": [
+        { "speaker": "A", "chinese": "喂，你好！", "pinyin": "Wèi, nǐ hǎo!", "english": "Hello!" },
+        { "speaker": "B", "chinese": "你好！现在几点了？", "pinyin": "Nǐ hǎo! Xiànzài jǐ diǎn le?", "english": "Hello! What time is it now?" },
+        { "speaker": "A", "chinese": "现在上午九点。你什么时候来？", "pinyin": "Xiànzài shàngwǔ jiǔ diǎn. Nǐ shénme shíhou lái?", "english": "It's 9 AM now. When are you coming?" },
+        { "speaker": "B", "chinese": "我十分钟后来。", "pinyin": "Wǒ shí fēnzhōng hòu lái.", "english": "I'll come in ten minutes." }
+      ],
+      "speakers": {
+        "A": { "name": "小华", "role": "朋友", "gender": "female" },
+        "B": { "name": "小明", "role": "朋友", "gender": "male" }
+      }
+    },
+    {
+      "id": 3,
+      "title": "What Day Is Today?",
+      "title_chinese": "今天星期几",
+      "lines": [
+        { "speaker": "A", "chinese": "今天星期几？", "pinyin": "Jīntiān xīngqī jǐ?", "english": "What day is today?" },
+        { "speaker": "B", "chinese": "今天星期三。", "pinyin": "Jīntiān xīngqīsān.", "english": "Today is Wednesday." },
+        { "speaker": "A", "chinese": "你星期六有空吗？", "pinyin": "Nǐ xīngqīliù yǒu kòng ma?", "english": "Are you free on Saturday?" },
+        { "speaker": "B", "chinese": "有。我们中午一起吃饭吧！", "pinyin": "Yǒu. Wǒmen zhōngwǔ yīqǐ chīfàn ba!", "english": "Yes. Let's have lunch together!" }
+      ],
+      "speakers": {
+        "A": { "name": "小美", "role": "同学", "gender": "female" },
+        "B": { "name": "小刚", "role": "同学", "gender": "male" }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Have You Heard?",
+      "title_chinese": "听说",
+      "lines": [
+        { "speaker": "A", "chinese": "听说，你今年去中国？", "pinyin": "Tīng shuō, nǐ jīnnián qù Zhōngguó?", "english": "I heard you're going to China this year?" },
+        { "speaker": "B", "chinese": "是，我明年一月一日去。", "pinyin": "Shì, wǒ míngnián yīyuè yī rì qù.", "english": "Yes, I'm going on January 1st next year." },
+        { "speaker": "A", "chinese": "太好了！等一下，我打电话给你。", "pinyin": "Tài hǎo le! Děng yīxià, wǒ dǎ diànhuà gěi nǐ.", "english": "Great! Wait, I'll call you." }
+      ],
+      "speakers": {
+        "A": { "name": "小丽", "role": "朋友", "gender": "female" },
+        "B": { "name": "大明", "role": "朋友", "gender": "male" }
+      }
+    }
+  ],
+  "key_sentences": [
+    { "chinese": "现在几点？", "pinyin": "Xiànzài jǐ diǎn?", "english": "What time is it now?" },
+    { "chinese": "你什么时候来？", "pinyin": "Nǐ shénme shíhou lái?", "english": "When are you coming?" },
+    { "chinese": "喂，你好！", "pinyin": "Wèi, nǐ hǎo!", "english": "Hello! (on the phone)" },
+    { "chinese": "今天星期几？", "pinyin": "Jīntiān xīngqī jǐ?", "english": "What day is today?" },
+    { "chinese": "我打电话给你。", "pinyin": "Wǒ dǎ diànhuà gěi nǐ.", "english": "I'll call you." }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "Telling Clock Time: X点Y分",
+      "explanation": "To tell clock time: [Time of day] + [Number] + 点 + [Minutes] + 分. Minutes are optional if on the hour. 半 (bàn) = half past. Examples: 三点 (3:00), 三点半 (3:30), 三点十分 (3:10).",
+      "examples": [
+        { "chinese": "现在下午三点半。", "pinyin": "Xiànzài xiàwǔ sān diǎn bàn.", "english": "It's 3:30 PM now." },
+        { "chinese": "我上午九点来。", "pinyin": "Wǒ shàngwǔ jiǔ diǎn lái.", "english": "I'll come at 9 AM." }
+      ],
+      "exercises": [
+        { "question": "How do you say '7:00 PM'?", "answer": "晚上七点", "type": "production" },
+        { "question": "Fill in: 现在中午___点。(It is now 12:00 noon)", "answer": "十二", "type": "fill_in_blank" }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "什么时候 (shénme shíhou) — When",
+      "explanation": "什么时候 asks about when something happens. It is placed before the verb, like all time expressions in Chinese. Formula: Subject + 什么时候 + Verb?",
+      "examples": [
+        { "chinese": "你什么时候去中国？", "pinyin": "Nǐ shénme shíhou qù Zhōngguó?", "english": "When are you going to China?" },
+        { "chinese": "你什么时候吃饭？", "pinyin": "Nǐ shénme shíhou chīfàn?", "english": "When do you eat?" }
+      ],
+      "exercises": [
+        { "question": "Ask 'When does she come?' in Chinese", "answer": "她什么时候来？", "type": "production" },
+        { "question": "Where does 什么时候 go in the sentence?", "answer": "Before the verb", "type": "concept" }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Days of the Week: 星期 + Number",
+      "explanation": "星期 + 1-6 = Monday to Saturday. 星期天/日 = Sunday. 星期几? = What day of the week? Numbers 1-6 go after 星期.",
+      "examples": [
+        { "chinese": "今天星期一。", "pinyin": "Jīntiān xīngqīyī.", "english": "Today is Monday." },
+        { "chinese": "星期天我在家。", "pinyin": "Xīngqītiān wǒ zài jiā.", "english": "I'm at home on Sunday." }
+      ],
+      "exercises": [
+        { "question": "How do you say 'Friday'?", "answer": "星期五", "type": "production" },
+        { "question": "What does 星期天 mean?", "answer": "Sunday", "type": "concept" }
+      ]
+    }
+  ],
+  "pinyin_focus": {
+    "topic": "Falling tones and neutral tones",
+    "initials_focus": ["x", "zh", "d", "t"],
+    "finals_focus": ["ian", "ong", "ing", "ou"],
+    "tone_practice": ["xiànzài", "fēnzhōng", "xīngqī", "shíhou", "zhōngwǔ"]
+  },
+  "games": ["flashcard", "matching", "word_shake", "sentence_builder"],
+  "quiz": [
+    { "question": "What does 现在 mean?", "type": "multiple_choice", "correct": "Now", "options": ["Later", "Before", "Now", "Then"] },
+    { "question": "How do you say 'Monday'?", "type": "multiple_choice", "correct": "星期一", "options": ["星期七", "星期一", "星期日", "星期零"] },
+    { "question": "What is 喂 used for?", "type": "multiple_choice", "correct": "Answering the phone", "options": ["Saying goodbye", "Answering the phone", "Asking a question", "Apologizing"] },
+    { "question": "How do you say '3:30 PM'?", "type": "multiple_choice", "correct": "下午三点半", "options": ["下午三点三十", "上午三点半", "三点半下午", "下午三点半"] },
+    { "question": "What does 分钟 mean?", "type": "multiple_choice", "correct": "Minute (duration)", "options": ["Second", "Hour", "Minute (duration)", "Week"] }
+  ]
+}

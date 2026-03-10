@@ -1,0 +1,157 @@
+{
+  "lesson": 9,
+  "topic": "Making Friends",
+  "topic_chinese": "认识朋友",
+  "age_group": "Adults and 10+",
+  "objectives": ["listening", "speaking", "reading", "writing"],
+  "vocabulary": [
+    { "id": "hsk1_l9_01", "chinese": "朋友", "pinyin": "péngyou", "tones": [2, 0], "english": "Friend", "part_of_speech": "noun" },
+    { "id": "hsk1_l9_02", "chinese": "同学", "pinyin": "tóngxué", "tones": [2, 2], "english": "Classmate", "part_of_speech": "noun" },
+    { "id": "hsk1_l9_03", "chinese": "认识", "pinyin": "rènshi", "tones": [4, 0], "english": "To know / To meet", "part_of_speech": "verb" },
+    { "id": "hsk1_l9_04", "chinese": "高兴", "pinyin": "gāoxìng", "tones": [1, 4], "english": "Happy / Glad", "part_of_speech": "adjective" },
+    { "id": "hsk1_l9_05", "chinese": "对不起", "pinyin": "duìbuqǐ", "tones": [4, 0, 3], "english": "Sorry / Excuse me", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_06", "chinese": "不客气", "pinyin": "bú kèqi", "tones": [2, 4, 0], "english": "You're welcome", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_07", "chinese": "汉语", "pinyin": "Hànyǔ", "tones": [4, 3], "english": "Chinese language (Mandarin)", "part_of_speech": "noun" },
+    { "id": "hsk1_l9_08", "chinese": "说", "pinyin": "shuō", "tones": [1], "english": "To speak / To say", "part_of_speech": "verb" },
+    { "id": "hsk1_l9_09", "chinese": "会", "pinyin": "huì", "tones": [4], "english": "Can / Know how to", "part_of_speech": "verb" },
+    { "id": "hsk1_l9_10", "chinese": "中国", "pinyin": "Zhōngguó", "tones": [1, 2], "english": "China", "part_of_speech": "noun" },
+    { "id": "hsk1_l9_11", "chinese": "我们", "pinyin": "wǒmen", "tones": [3, 0], "english": "We / Us", "part_of_speech": "pronoun" },
+    { "id": "hsk1_l9_12", "chinese": "先生", "pinyin": "xiānsheng", "tones": [1, 0], "english": "Mr. / Sir / Husband", "part_of_speech": "noun" },
+    { "id": "hsk1_l9_p01", "chinese": "认识你", "pinyin": "rènshi nǐ", "tones": [4, 0, 3], "english": "Meet you / Know you", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_p02", "chinese": "很高兴", "pinyin": "hěn gāoxìng", "tones": [3, 1, 4], "english": "Very happy / Glad", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_p03", "chinese": "认识你很高兴", "pinyin": "rènshi nǐ hěn gāoxìng", "tones": [4, 0, 3, 3, 1, 4], "english": "Nice to meet you", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_p04", "chinese": "我们是朋友", "pinyin": "wǒmen shì péngyou", "tones": [3, 0, 4, 2, 0], "english": "We are friends", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_p05", "chinese": "会说汉语", "pinyin": "huì shuō Hànyǔ", "tones": [4, 1, 4, 3], "english": "Can speak Chinese", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_p06", "chinese": "学汉语", "pinyin": "xué Hànyǔ", "tones": [2, 4, 3], "english": "Study Chinese", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_p07", "chinese": "我们是同学", "pinyin": "wǒmen shì tóngxué", "tones": [3, 0, 4, 2, 2], "english": "We are classmates", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_p08", "chinese": "好朋友", "pinyin": "hǎo péngyou", "tones": [3, 2, 0], "english": "Good friend / Best friend", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_p09", "chinese": "中国朋友", "pinyin": "Zhōngguó péngyou", "tones": [1, 2, 2, 0], "english": "Chinese friend", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_p10", "chinese": "你们好", "pinyin": "nǐmen hǎo", "tones": [3, 0, 3], "english": "Hello everyone", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_p11", "chinese": "一起学习", "pinyin": "yīqǐ xuéxí", "tones": [1, 3, 2, 2], "english": "Study together", "part_of_speech": "phrase" },
+    { "id": "hsk1_l9_p12", "chinese": "说中国话", "pinyin": "shuō Zhōngguóhuà", "tones": [1, 1, 2, 4], "english": "Speak Chinese", "part_of_speech": "phrase" }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Nice to Meet You",
+      "title_chinese": "认识你很高兴",
+      "lines": [
+        { "speaker": "A", "chinese": "你好！我叫小丽。", "pinyin": "Nǐ hǎo! Wǒ jiào Xiǎo Lì.", "english": "Hello! My name is Xiao Li." },
+        { "speaker": "B", "chinese": "你好！我叫大明。认识你很高兴！", "pinyin": "Nǐ hǎo! Wǒ jiào Dà Míng. Rènshi nǐ hěn gāoxìng!", "english": "Hello! I'm Da Ming. Nice to meet you!" },
+        { "speaker": "A", "chinese": "我也很高兴！你是学生吗？", "pinyin": "Wǒ yě hěn gāoxìng! Nǐ shì xuésheng ma?", "english": "I'm glad too! Are you a student?" },
+        { "speaker": "B", "chinese": "是，我是学生。我们是同学！", "pinyin": "Shì, wǒ shì xuésheng. Wǒmen shì tóngxué!", "english": "Yes, I'm a student. We are classmates!" }
+      ],
+      "speakers": {
+        "A": { "name": "小丽", "role": "学生", "gender": "female" },
+        "B": { "name": "大明", "role": "学生", "gender": "male" }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Can You Speak Chinese?",
+      "title_chinese": "你会说汉语吗",
+      "lines": [
+        { "speaker": "A", "chinese": "你会说汉语吗？", "pinyin": "Nǐ huì shuō Hànyǔ ma?", "english": "Can you speak Chinese?" },
+        { "speaker": "B", "chinese": "会，我会说一点汉语。你呢？", "pinyin": "Huì, wǒ huì shuō yīdiǎn Hànyǔ. Nǐ ne?", "english": "Yes, I can speak a little Chinese. What about you?" },
+        { "speaker": "A", "chinese": "我也会说汉语。我们一起学习！", "pinyin": "Wǒ yě huì shuō Hànyǔ. Wǒmen yīqǐ xuéxí!", "english": "I can speak Chinese too. Let's study together!" }
+      ],
+      "speakers": {
+        "A": { "name": "小华", "role": "老师", "gender": "female" },
+        "B": { "name": "小明", "role": "学生", "gender": "male" }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Are You from China?",
+      "title_chinese": "你是中国人吗",
+      "lines": [
+        { "speaker": "A", "chinese": "你好！你是中国人吗？", "pinyin": "Nǐ hǎo! Nǐ shì Zhōngguórén ma?", "english": "Hello! Are you Chinese?" },
+        { "speaker": "B", "chinese": "是，我是中国人。你呢？", "pinyin": "Shì, wǒ shì Zhōngguórén. Nǐ ne?", "english": "Yes, I'm Chinese. What about you?" },
+        { "speaker": "A", "chinese": "我不是，但是我想学汉语。", "pinyin": "Wǒ bù shì, dànshì wǒ xiǎng xué Hànyǔ.", "english": "I'm not, but I want to study Chinese." },
+        { "speaker": "B", "chinese": "好！我们一起学习，好朋友！", "pinyin": "Hǎo! Wǒmen yīqǐ xuéxí, hǎo péngyou!", "english": "Great! Let's study together, good friend!" }
+      ],
+      "speakers": {
+        "A": { "name": "小美", "role": "朋友", "gender": "female" },
+        "B": { "name": "小刚", "role": "朋友", "gender": "male" }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Sorry!",
+      "title_chinese": "对不起",
+      "lines": [
+        { "speaker": "A", "chinese": "对不起！", "pinyin": "Duìbuqǐ!", "english": "Sorry!" },
+        { "speaker": "B", "chinese": "没关系。你叫什么名字？", "pinyin": "Méi guānxi. Nǐ jiào shénme míngzi?", "english": "It's okay. What is your name?" },
+        { "speaker": "A", "chinese": "我叫小丽。认识你很高兴！", "pinyin": "Wǒ jiào Xiǎo Lì. Rènshi nǐ hěn gāoxìng!", "english": "My name is Xiao Li. Nice to meet you!" },
+        { "speaker": "B", "chinese": "我也是！不客气。", "pinyin": "Wǒ yě shì! Bú kèqi.", "english": "Me too! You're welcome." }
+      ],
+      "speakers": {
+        "A": { "name": "小丽", "role": "朋友", "gender": "female" },
+        "B": { "name": "王先生", "role": "先生", "gender": "male" }
+      }
+    }
+  ],
+  "key_sentences": [
+    { "chinese": "认识你很高兴！", "pinyin": "Rènshi nǐ hěn gāoxìng!", "english": "Nice to meet you!" },
+    { "chinese": "你会说汉语吗？", "pinyin": "Nǐ huì shuō Hànyǔ ma?", "english": "Can you speak Chinese?" },
+    { "chinese": "我们是朋友。", "pinyin": "Wǒmen shì péngyou.", "english": "We are friends." },
+    { "chinese": "对不起！不客气。", "pinyin": "Duìbuqǐ! Bú kèqi.", "english": "Sorry! You're welcome." },
+    { "chinese": "我们一起学习！", "pinyin": "Wǒmen yīqǐ xuéxí!", "english": "Let's study together!" }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "Modal Verb 会 (huì) — Learned Ability",
+      "explanation": "会 expresses a skill or ability acquired through learning. Formula: Subject + 会 + Verb. It differs from 能 (physical ability/permission). 会 = learned skill, like speaking a language.",
+      "examples": [
+        { "chinese": "我会说汉语。", "pinyin": "Wǒ huì shuō Hànyǔ.", "english": "I can speak Chinese." },
+        { "chinese": "她会唱歌。", "pinyin": "Tā huì chàng gē.", "english": "She can sing." }
+      ],
+      "exercises": [
+        { "question": "Say 'He can speak Chinese' using 会", "answer": "他会说汉语。", "type": "production" },
+        { "question": "Fill in: 你___说汉语吗？", "answer": "会", "type": "fill_in_blank" },
+        { "question": "Translate: Can you read Chinese?", "answer": "你会读汉语吗？", "type": "translation" }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Plural Pronoun 我们 (wǒmen) — We / Us",
+      "explanation": "Add 们 to a pronoun to make it plural. 我→我们 (I→we), 你→你们 (you→you all), 他/她→他们/她们 (he/she→they). 们 cannot be added to nouns.",
+      "examples": [
+        { "chinese": "我们是朋友。", "pinyin": "Wǒmen shì péngyou.", "english": "We are friends." },
+        { "chinese": "你们好！", "pinyin": "Nǐmen hǎo!", "english": "Hello everyone!" }
+      ],
+      "exercises": [
+        { "question": "How do you say 'they' (male) in Chinese?", "answer": "他们", "type": "concept" },
+        { "question": "Fill in: ___是同学。(We are classmates)", "answer": "我们", "type": "fill_in_blank" }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Polite Expressions: 对不起 and 不客气",
+      "explanation": "对不起 (duìbuqǐ) = Sorry/Excuse me. Common response: 没关系 (méi guānxi) = It doesn't matter. 不客气 (bú kèqi) = You're welcome. Used after someone thanks you (谢谢).",
+      "examples": [
+        { "chinese": "对不起！没关系。", "pinyin": "Duìbuqǐ! Méi guānxi.", "english": "Sorry! It's okay." },
+        { "chinese": "谢谢！不客气。", "pinyin": "Xièxie! Bú kèqi.", "english": "Thank you! You're welcome." }
+      ],
+      "exercises": [
+        { "question": "What do you say after 谢谢？", "answer": "不客气", "type": "concept" },
+        { "question": "What is the response to 对不起？", "answer": "没关系", "type": "concept" }
+      ]
+    }
+  ],
+  "pinyin_focus": {
+    "topic": "Retroflexes and r-endings",
+    "initials_focus": ["r", "zh", "ch", "sh"],
+    "finals_focus": ["en", "eng", "ong", "ing"],
+    "tone_practice": ["rènshi", "gāoxìng", "péngyou", "Hànyǔ", "shuō"]
+  },
+  "games": ["flashcard", "matching", "word_shake", "sentence_builder"],
+  "quiz": [
+    { "question": "What does 朋友 mean?", "type": "multiple_choice", "correct": "Friend", "options": ["Classmate", "Friend", "Teacher", "Family"] },
+    { "question": "How do you say 'Sorry' in Chinese?", "type": "multiple_choice", "correct": "对不起", "options": ["不客气", "高兴", "对不起", "认识"] },
+    { "question": "What does 会 indicate?", "type": "multiple_choice", "correct": "Learned ability", "options": ["Permission", "Learned ability", "Location", "Past action"] },
+    { "question": "How do you say 'We are classmates'?", "type": "multiple_choice", "correct": "我们是同学。", "options": ["我们是朋友。", "我们是同学。", "我是学生。", "你们是同学。"] },
+    { "question": "What does 汉语 mean?", "type": "multiple_choice", "correct": "Chinese language", "options": ["China", "Chinese language", "Chinese food", "Chinese people"] }
+  ]
+}
