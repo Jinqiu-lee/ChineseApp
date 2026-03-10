@@ -1,0 +1,4175 @@
+{
+  "_note": "Consolidated HSK1 image dataset. All lesson images in one file. Keyed by lesson number under lessons.{n}. Run scripts/downloadVocabImages.js to populate real photo URLs.",
+  "level": "hsk1",
+  "lessons": {
+    "1": {
+      "topic": "Greetings",
+      "vocab_images": {
+        "你": {
+          "pinyin": "nǐ",
+          "english": "you",
+          "color": "#e17055",
+          "pexels_query": "person greeting waving hello",
+          "images": [
+            {
+              "id": "ni_1",
+              "emoji": "👋",
+              "label": "你好！",
+              "label_en": "hello!",
+              "url": null
+            },
+            {
+              "id": "ni_2",
+              "emoji": "🫵",
+              "label": "是你",
+              "label_en": "it's you",
+              "url": null
+            },
+            {
+              "id": "ni_3",
+              "emoji": "👤",
+              "label": "你是谁？",
+              "label_en": "who are you?",
+              "url": null
+            },
+            {
+              "id": "ni_4",
+              "emoji": "🤝",
+              "label": "你好吗？",
+              "label_en": "how are you?",
+              "url": null
+            }
+          ]
+        },
+        "好": {
+          "pinyin": "hǎo",
+          "english": "good / well",
+          "color": "#fdcb6e",
+          "pexels_query": "thumbs up happy person",
+          "images": [
+            {
+              "id": "hao_1",
+              "emoji": "👍",
+              "label": "很好",
+              "label_en": "very good",
+              "url": null
+            },
+            {
+              "id": "hao_2",
+              "emoji": "😊",
+              "label": "好！",
+              "label_en": "good!",
+              "url": null
+            },
+            {
+              "id": "hao_3",
+              "emoji": "✅",
+              "label": "你好",
+              "label_en": "hello",
+              "url": null
+            },
+            {
+              "id": "hao_4",
+              "emoji": "🌟",
+              "label": "好人",
+              "label_en": "good person",
+              "url": null
+            }
+          ]
+        },
+        "我": {
+          "pinyin": "wǒ",
+          "english": "I / me",
+          "color": "#a29bfe",
+          "pexels_query": "person pointing at themselves",
+          "images": [
+            {
+              "id": "wo_1",
+              "emoji": "🙋",
+              "label": "我！",
+              "label_en": "me!",
+              "url": null
+            },
+            {
+              "id": "wo_2",
+              "emoji": "👆",
+              "label": "我是…",
+              "label_en": "I am...",
+              "url": null
+            },
+            {
+              "id": "wo_3",
+              "emoji": "🪞",
+              "label": "这是我",
+              "label_en": "this is me",
+              "url": null
+            },
+            {
+              "id": "wo_4",
+              "emoji": "💬",
+              "label": "我叫…",
+              "label_en": "my name is...",
+              "url": null
+            }
+          ]
+        },
+        "是": {
+          "pinyin": "shì",
+          "english": "to be / is / am / are",
+          "color": "#74b9ff",
+          "pexels_query": "identity card name introduction",
+          "images": [
+            {
+              "id": "shi_1",
+              "emoji": "🪪",
+              "label": "我是…",
+              "label_en": "I am...",
+              "url": null
+            },
+            {
+              "id": "shi_2",
+              "emoji": "✅",
+              "label": "是的",
+              "label_en": "yes / correct",
+              "url": null
+            },
+            {
+              "id": "shi_3",
+              "emoji": "🙋",
+              "label": "是我",
+              "label_en": "it is me",
+              "url": null
+            },
+            {
+              "id": "shi_4",
+              "emoji": "👤",
+              "label": "他是谁",
+              "label_en": "who is he",
+              "url": null
+            }
+          ]
+        },
+        "的": {
+          "pinyin": "de",
+          "english": "possessive particle",
+          "color": "#636e72",
+          "pexels_query": "ownership belongings backpack person",
+          "images": [
+            {
+              "id": "de_1",
+              "emoji": "🎒",
+              "label": "我的书包",
+              "label_en": "my backpack",
+              "url": null
+            },
+            {
+              "id": "de_2",
+              "emoji": "📱",
+              "label": "我的手机",
+              "label_en": "my phone",
+              "url": null
+            },
+            {
+              "id": "de_3",
+              "emoji": "🏡",
+              "label": "我的家",
+              "label_en": "my home",
+              "url": null
+            },
+            {
+              "id": "de_4",
+              "emoji": "🐕",
+              "label": "我的狗",
+              "label_en": "my dog",
+              "url": null
+            }
+          ]
+        },
+        "吗": {
+          "pinyin": "ma",
+          "english": "question particle",
+          "color": "#fd79a8",
+          "pexels_query": "person asking question curious",
+          "images": [
+            {
+              "id": "ma_1",
+              "emoji": "❓",
+              "label": "你好吗？",
+              "label_en": "how are you?",
+              "url": null
+            },
+            {
+              "id": "ma_2",
+              "emoji": "🤔",
+              "label": "是吗？",
+              "label_en": "is that so?",
+              "url": null
+            },
+            {
+              "id": "ma_3",
+              "emoji": "💬",
+              "label": "他是吗？",
+              "label_en": "is it him?",
+              "url": null
+            },
+            {
+              "id": "ma_4",
+              "emoji": "🙋",
+              "label": "你喝吗？",
+              "label_en": "do you drink?",
+              "url": null
+            }
+          ]
+        },
+        "呢": {
+          "pinyin": "ne",
+          "english": "question particle (and you?)",
+          "color": "#00cec9",
+          "pexels_query": "two people conversation asking",
+          "images": [
+            {
+              "id": "ne_1",
+              "emoji": "↩️",
+              "label": "你呢？",
+              "label_en": "and you?",
+              "url": null
+            },
+            {
+              "id": "ne_2",
+              "emoji": "🔄",
+              "label": "他呢？",
+              "label_en": "what about him?",
+              "url": null
+            },
+            {
+              "id": "ne_3",
+              "emoji": "💭",
+              "label": "她呢？",
+              "label_en": "what about her?",
+              "url": null
+            },
+            {
+              "id": "ne_4",
+              "emoji": "🗣️",
+              "label": "你好。你呢？",
+              "label_en": "I'm good. You?",
+              "url": null
+            }
+          ]
+        },
+        "叫": {
+          "pinyin": "jiào",
+          "english": "to be called / named",
+          "color": "#e17055",
+          "pexels_query": "name tag person introduction meeting",
+          "images": [
+            {
+              "id": "jiao_1",
+              "emoji": "📛",
+              "label": "我叫…",
+              "label_en": "I'm called...",
+              "url": null
+            },
+            {
+              "id": "jiao_2",
+              "emoji": "🏷️",
+              "label": "你叫什么？",
+              "label_en": "what's your name?",
+              "url": null
+            },
+            {
+              "id": "jiao_3",
+              "emoji": "🤝",
+              "label": "她叫小丽",
+              "label_en": "she's called 小丽",
+              "url": null
+            },
+            {
+              "id": "jiao_4",
+              "emoji": "🎤",
+              "label": "他叫大卫",
+              "label_en": "he's called 大卫",
+              "url": null
+            }
+          ]
+        },
+        "什么": {
+          "pinyin": "shén me",
+          "english": "what",
+          "color": "#6c5ce7",
+          "pexels_query": "person confused thinking question",
+          "images": [
+            {
+              "id": "shenme_1",
+              "emoji": "🤷",
+              "label": "什么？",
+              "label_en": "what?",
+              "url": null
+            },
+            {
+              "id": "shenme_2",
+              "emoji": "❓",
+              "label": "你吃什么？",
+              "label_en": "what do you eat?",
+              "url": null
+            },
+            {
+              "id": "shenme_3",
+              "emoji": "🔍",
+              "label": "这是什么？",
+              "label_en": "what is this?",
+              "url": null
+            },
+            {
+              "id": "shenme_4",
+              "emoji": "💬",
+              "label": "你叫什么？",
+              "label_en": "what's your name?",
+              "url": null
+            }
+          ]
+        },
+        "名字": {
+          "pinyin": "míng zi",
+          "english": "name",
+          "color": "#fdcb6e",
+          "pexels_query": "name badge card identity",
+          "images": [
+            {
+              "id": "mingzi_1",
+              "emoji": "📛",
+              "label": "我的名字",
+              "label_en": "my name",
+              "url": null
+            },
+            {
+              "id": "mingzi_2",
+              "emoji": "🏷️",
+              "label": "名字",
+              "label_en": "name tag",
+              "url": null
+            },
+            {
+              "id": "mingzi_3",
+              "emoji": "✍️",
+              "label": "写名字",
+              "label_en": "write name",
+              "url": null
+            },
+            {
+              "id": "mingzi_4",
+              "emoji": "🪪",
+              "label": "你的名字",
+              "label_en": "your name",
+              "url": null
+            }
+          ]
+        },
+        "谁": {
+          "pinyin": "shéi",
+          "english": "who",
+          "color": "#b2bec3",
+          "pexels_query": "mystery person silhouette unknown",
+          "images": [
+            {
+              "id": "shei_1",
+              "emoji": "🕵️",
+              "label": "谁？",
+              "label_en": "who?",
+              "url": null
+            },
+            {
+              "id": "shei_2",
+              "emoji": "🙋",
+              "label": "他是谁？",
+              "label_en": "who is he?",
+              "url": null
+            },
+            {
+              "id": "shei_3",
+              "emoji": "👤",
+              "label": "她是谁？",
+              "label_en": "who is she?",
+              "url": null
+            },
+            {
+              "id": "shei_4",
+              "emoji": "❓",
+              "label": "那是谁？",
+              "label_en": "who is that?",
+              "url": null
+            }
+          ]
+        },
+        "他": {
+          "pinyin": "tā",
+          "english": "he / him",
+          "color": "#0984e3",
+          "pexels_query": "young man portrait smiling",
+          "images": [
+            {
+              "id": "ta_m_1",
+              "emoji": "👨",
+              "label": "他",
+              "label_en": "he",
+              "url": null
+            },
+            {
+              "id": "ta_m_2",
+              "emoji": "🧑",
+              "label": "他是…",
+              "label_en": "he is...",
+              "url": null
+            },
+            {
+              "id": "ta_m_3",
+              "emoji": "👆",
+              "label": "他叫…",
+              "label_en": "his name is...",
+              "url": null
+            },
+            {
+              "id": "ta_m_4",
+              "emoji": "🙋",
+              "label": "这是他",
+              "label_en": "this is him",
+              "url": null
+            }
+          ]
+        },
+        "她": {
+          "pinyin": "tā",
+          "english": "she / her",
+          "color": "#fd79a8",
+          "pexels_query": "young woman portrait smiling",
+          "images": [
+            {
+              "id": "ta_f_1",
+              "emoji": "👩",
+              "label": "她",
+              "label_en": "she",
+              "url": null
+            },
+            {
+              "id": "ta_f_2",
+              "emoji": "🧕",
+              "label": "她是…",
+              "label_en": "she is...",
+              "url": null
+            },
+            {
+              "id": "ta_f_3",
+              "emoji": "👆",
+              "label": "她叫…",
+              "label_en": "her name is...",
+              "url": null
+            },
+            {
+              "id": "ta_f_4",
+              "emoji": "🙋‍♀️",
+              "label": "这是她",
+              "label_en": "this is her",
+              "url": null
+            }
+          ]
+        },
+        "人": {
+          "pinyin": "rén",
+          "english": "person / people",
+          "color": "#74b9ff",
+          "pexels_query": "people group crowd diverse",
+          "images": [
+            {
+              "id": "ren_1",
+              "emoji": "🧑",
+              "label": "一个人",
+              "label_en": "one person",
+              "url": null
+            },
+            {
+              "id": "ren_2",
+              "emoji": "👥",
+              "label": "很多人",
+              "label_en": "many people",
+              "url": null
+            },
+            {
+              "id": "ren_3",
+              "emoji": "🏙️",
+              "label": "中国人",
+              "label_en": "Chinese person",
+              "url": null
+            },
+            {
+              "id": "ren_4",
+              "emoji": "👤",
+              "label": "好人",
+              "label_en": "good person",
+              "url": null
+            }
+          ]
+        }
+      },
+      "dialogue_images": {
+        "1": {
+          "emoji": "👋",
+          "label": "你好！",
+          "label_en": "Nice to Meet You",
+          "color": "#e17055",
+          "url": null
+        },
+        "2": {
+          "emoji": "🕵️",
+          "label": "她是谁？",
+          "label_en": "Who Is She?",
+          "color": "#636e72",
+          "url": null
+        },
+        "3": {
+          "emoji": "😊",
+          "label": "你好吗？",
+          "label_en": "How Are You?",
+          "color": "#fdcb6e",
+          "url": null
+        }
+      }
+    },
+    "2": {
+      "topic": "Numbers and Age",
+      "vocab_images": {
+        "一": {
+          "pinyin": "yī",
+          "english": "one",
+          "color": "#4834d4",
+          "pexels_query": "number one single item",
+          "images": [
+            {
+              "id": "yi_1",
+              "emoji": "1️⃣",
+              "label": "一",
+              "label_en": "one",
+              "url": null
+            },
+            {
+              "id": "yi_2",
+              "emoji": "☝️",
+              "label": "一个",
+              "label_en": "one item",
+              "url": null
+            },
+            {
+              "id": "yi_3",
+              "emoji": "🍎",
+              "label": "一个苹果",
+              "label_en": "one apple",
+              "url": null
+            },
+            {
+              "id": "yi_4",
+              "emoji": "🌟",
+              "label": "第一",
+              "label_en": "number one / first",
+              "url": null
+            }
+          ]
+        },
+        "二": {
+          "pinyin": "èr",
+          "english": "two",
+          "color": "#e17055",
+          "pexels_query": "number two pair items",
+          "images": [
+            {
+              "id": "er_1",
+              "emoji": "2️⃣",
+              "label": "二",
+              "label_en": "two",
+              "url": null
+            },
+            {
+              "id": "er_2",
+              "emoji": "✌️",
+              "label": "二个",
+              "label_en": "two items",
+              "url": null
+            },
+            {
+              "id": "er_3",
+              "emoji": "👫",
+              "label": "两个人",
+              "label_en": "two people",
+              "url": null
+            },
+            {
+              "id": "er_4",
+              "emoji": "🦆",
+              "label": "两只鸭子",
+              "label_en": "two ducks",
+              "url": null
+            }
+          ]
+        },
+        "三": {
+          "pinyin": "sān",
+          "english": "three",
+          "color": "#6ab04c",
+          "pexels_query": "number three group items",
+          "images": [
+            {
+              "id": "san_1",
+              "emoji": "3️⃣",
+              "label": "三",
+              "label_en": "three",
+              "url": null
+            },
+            {
+              "id": "san_2",
+              "emoji": "🤟",
+              "label": "三个",
+              "label_en": "three items",
+              "url": null
+            },
+            {
+              "id": "san_3",
+              "emoji": "🔺",
+              "label": "三角形",
+              "label_en": "triangle",
+              "url": null
+            },
+            {
+              "id": "san_4",
+              "emoji": "🍡",
+              "label": "三个月",
+              "label_en": "three months",
+              "url": null
+            }
+          ]
+        },
+        "四": {
+          "pinyin": "sì",
+          "english": "four",
+          "color": "#22a6b3",
+          "pexels_query": "number four square four seasons",
+          "images": [
+            {
+              "id": "si_1",
+              "emoji": "4️⃣",
+              "label": "四",
+              "label_en": "four",
+              "url": null
+            },
+            {
+              "id": "si_2",
+              "emoji": "🍀",
+              "label": "四叶草",
+              "label_en": "four-leaf clover",
+              "url": null
+            },
+            {
+              "id": "si_3",
+              "emoji": "🌿",
+              "label": "四季",
+              "label_en": "four seasons",
+              "url": null
+            },
+            {
+              "id": "si_4",
+              "emoji": "⬛",
+              "label": "四方形",
+              "label_en": "square",
+              "url": null
+            }
+          ]
+        },
+        "五": {
+          "pinyin": "wǔ",
+          "english": "five",
+          "color": "#f9ca24",
+          "pexels_query": "five fingers hand open",
+          "images": [
+            {
+              "id": "wu_1",
+              "emoji": "5️⃣",
+              "label": "五",
+              "label_en": "five",
+              "url": null
+            },
+            {
+              "id": "wu_2",
+              "emoji": "🖐️",
+              "label": "五个手指",
+              "label_en": "five fingers",
+              "url": null
+            },
+            {
+              "id": "wu_3",
+              "emoji": "⭐",
+              "label": "五星",
+              "label_en": "five stars",
+              "url": null
+            },
+            {
+              "id": "wu_4",
+              "emoji": "🌺",
+              "label": "五瓣花",
+              "label_en": "five-petal flower",
+              "url": null
+            }
+          ]
+        },
+        "六": {
+          "pinyin": "liù",
+          "english": "six",
+          "color": "#fd79a8",
+          "pexels_query": "number six dice six dots",
+          "images": [
+            {
+              "id": "liu_1",
+              "emoji": "6️⃣",
+              "label": "六",
+              "label_en": "six",
+              "url": null
+            },
+            {
+              "id": "liu_2",
+              "emoji": "🎲",
+              "label": "骰子六点",
+              "label_en": "dice six",
+              "url": null
+            },
+            {
+              "id": "liu_3",
+              "emoji": "🐛",
+              "label": "六条腿",
+              "label_en": "six legs (insect)",
+              "url": null
+            },
+            {
+              "id": "liu_4",
+              "emoji": "🍯",
+              "label": "六个杯子",
+              "label_en": "six cups",
+              "url": null
+            }
+          ]
+        },
+        "七": {
+          "pinyin": "qī",
+          "english": "seven",
+          "color": "#a29bfe",
+          "pexels_query": "rainbow seven colors",
+          "images": [
+            {
+              "id": "qi_1",
+              "emoji": "7️⃣",
+              "label": "七",
+              "label_en": "seven",
+              "url": null
+            },
+            {
+              "id": "qi_2",
+              "emoji": "🌈",
+              "label": "彩虹七色",
+              "label_en": "rainbow 7 colors",
+              "url": null
+            },
+            {
+              "id": "qi_3",
+              "emoji": "📅",
+              "label": "一星期七天",
+              "label_en": "7 days a week",
+              "url": null
+            },
+            {
+              "id": "qi_4",
+              "emoji": "🎵",
+              "label": "七个音符",
+              "label_en": "seven musical notes",
+              "url": null
+            }
+          ]
+        },
+        "八": {
+          "pinyin": "bā",
+          "english": "eight",
+          "color": "#e17055",
+          "pexels_query": "number eight lucky Chinese",
+          "images": [
+            {
+              "id": "ba_1",
+              "emoji": "8️⃣",
+              "label": "八",
+              "label_en": "eight",
+              "url": null
+            },
+            {
+              "id": "ba_2",
+              "emoji": "🎱",
+              "label": "八号球",
+              "label_en": "eight ball",
+              "url": null
+            },
+            {
+              "id": "ba_3",
+              "emoji": "🕷️",
+              "label": "八条腿",
+              "label_en": "eight legs",
+              "url": null
+            },
+            {
+              "id": "ba_4",
+              "emoji": "🍀",
+              "label": "幸运八",
+              "label_en": "lucky eight",
+              "url": null
+            }
+          ]
+        },
+        "九": {
+          "pinyin": "jiǔ",
+          "english": "nine",
+          "color": "#00b894",
+          "pexels_query": "number nine baseball",
+          "images": [
+            {
+              "id": "jiu_1",
+              "emoji": "9️⃣",
+              "label": "九",
+              "label_en": "nine",
+              "url": null
+            },
+            {
+              "id": "jiu_2",
+              "emoji": "🌙",
+              "label": "农历九月",
+              "label_en": "9th lunar month",
+              "url": null
+            },
+            {
+              "id": "jiu_3",
+              "emoji": "🐱",
+              "label": "猫九条命",
+              "label_en": "cat nine lives",
+              "url": null
+            },
+            {
+              "id": "jiu_4",
+              "emoji": "🎯",
+              "label": "九分",
+              "label_en": "nine points",
+              "url": null
+            }
+          ]
+        },
+        "十": {
+          "pinyin": "shí",
+          "english": "ten",
+          "color": "#d63031",
+          "pexels_query": "number ten hands perfect score",
+          "images": [
+            {
+              "id": "shi_1",
+              "emoji": "🔟",
+              "label": "十",
+              "label_en": "ten",
+              "url": null
+            },
+            {
+              "id": "shi_2",
+              "emoji": "👐",
+              "label": "十个手指",
+              "label_en": "ten fingers",
+              "url": null
+            },
+            {
+              "id": "shi_3",
+              "emoji": "💯",
+              "label": "满分十",
+              "label_en": "perfect ten",
+              "url": null
+            },
+            {
+              "id": "shi_4",
+              "emoji": "➕",
+              "label": "十字",
+              "label_en": "cross / plus",
+              "url": null
+            }
+          ]
+        },
+        "零": {
+          "pinyin": "líng",
+          "english": "zero",
+          "color": "#636e72",
+          "pexels_query": "zero empty nothing circle",
+          "images": [
+            {
+              "id": "ling_1",
+              "emoji": "0️⃣",
+              "label": "零",
+              "label_en": "zero",
+              "url": null
+            },
+            {
+              "id": "ling_2",
+              "emoji": "⭕",
+              "label": "空",
+              "label_en": "empty",
+              "url": null
+            },
+            {
+              "id": "ling_3",
+              "emoji": "❄️",
+              "label": "零度",
+              "label_en": "zero degrees",
+              "url": null
+            },
+            {
+              "id": "ling_4",
+              "emoji": "🌀",
+              "label": "零分",
+              "label_en": "zero points",
+              "url": null
+            }
+          ]
+        },
+        "个": {
+          "pinyin": "gè",
+          "english": "general measure word",
+          "color": "#74b9ff",
+          "pexels_query": "counting items objects",
+          "images": [
+            {
+              "id": "ge_1",
+              "emoji": "📦",
+              "label": "三个",
+              "label_en": "three (items)",
+              "url": null
+            },
+            {
+              "id": "ge_2",
+              "emoji": "🍎",
+              "label": "两个苹果",
+              "label_en": "two apples",
+              "url": null
+            },
+            {
+              "id": "ge_3",
+              "emoji": "👥",
+              "label": "几个人",
+              "label_en": "several people",
+              "url": null
+            },
+            {
+              "id": "ge_4",
+              "emoji": "🔢",
+              "label": "一个",
+              "label_en": "one (item)",
+              "url": null
+            }
+          ]
+        },
+        "几": {
+          "pinyin": "jǐ",
+          "english": "how many / several",
+          "color": "#6c5ce7",
+          "pexels_query": "counting question how many",
+          "images": [
+            {
+              "id": "ji_1",
+              "emoji": "🔢",
+              "label": "几个？",
+              "label_en": "how many?",
+              "url": null
+            },
+            {
+              "id": "ji_2",
+              "emoji": "✌️",
+              "label": "你几岁？",
+              "label_en": "how old are you?",
+              "url": null
+            },
+            {
+              "id": "ji_3",
+              "emoji": "❓",
+              "label": "几点了？",
+              "label_en": "what time is it?",
+              "url": null
+            },
+            {
+              "id": "ji_4",
+              "emoji": "🤔",
+              "label": "几号？",
+              "label_en": "what date?",
+              "url": null
+            }
+          ]
+        },
+        "多": {
+          "pinyin": "duō",
+          "english": "many / much / more",
+          "color": "#00b894",
+          "pexels_query": "many lots crowd abundance",
+          "images": [
+            {
+              "id": "duo_1",
+              "emoji": "📚",
+              "label": "很多书",
+              "label_en": "many books",
+              "url": null
+            },
+            {
+              "id": "duo_2",
+              "emoji": "👥",
+              "label": "很多人",
+              "label_en": "many people",
+              "url": null
+            },
+            {
+              "id": "duo_3",
+              "emoji": "🌟",
+              "label": "多星星",
+              "label_en": "many stars",
+              "url": null
+            },
+            {
+              "id": "duo_4",
+              "emoji": "💰",
+              "label": "多少钱？",
+              "label_en": "how much money?",
+              "url": null
+            }
+          ]
+        },
+        "大": {
+          "pinyin": "dà",
+          "english": "big / large",
+          "color": "#e17055",
+          "pexels_query": "big large elephant size comparison",
+          "images": [
+            {
+              "id": "da_1",
+              "emoji": "🐘",
+              "label": "大象",
+              "label_en": "big elephant",
+              "url": null
+            },
+            {
+              "id": "da_2",
+              "emoji": "🏙️",
+              "label": "大城市",
+              "label_en": "big city",
+              "url": null
+            },
+            {
+              "id": "da_3",
+              "emoji": "🎂",
+              "label": "你多大？",
+              "label_en": "how old are you?",
+              "url": null
+            },
+            {
+              "id": "da_4",
+              "emoji": "📏",
+              "label": "大小",
+              "label_en": "size (big)",
+              "url": null
+            }
+          ]
+        },
+        "岁": {
+          "pinyin": "suì",
+          "english": "years old / age",
+          "color": "#fd79a8",
+          "pexels_query": "birthday cake candles age celebration",
+          "images": [
+            {
+              "id": "sui_1",
+              "emoji": "🎂",
+              "label": "生日蛋糕",
+              "label_en": "birthday cake",
+              "url": null
+            },
+            {
+              "id": "sui_2",
+              "emoji": "🕯️",
+              "label": "十岁",
+              "label_en": "ten years old",
+              "url": null
+            },
+            {
+              "id": "sui_3",
+              "emoji": "🎉",
+              "label": "你多大？",
+              "label_en": "how old are you?",
+              "url": null
+            },
+            {
+              "id": "sui_4",
+              "emoji": "📅",
+              "label": "几岁了？",
+              "label_en": "how old are you?",
+              "url": null
+            }
+          ]
+        }
+      },
+      "dialogue_images": {
+        "1": {
+          "emoji": "🎂",
+          "label": "你多大",
+          "label_en": "How Old Are You?",
+          "color": "#fd79a8",
+          "url": null
+        },
+        "2": {
+          "emoji": "👥",
+          "label": "几个朋友",
+          "label_en": "How Many Friends?",
+          "color": "#4834d4",
+          "url": null
+        },
+        "3": {
+          "emoji": "🔢",
+          "label": "说数字",
+          "label_en": "Talking Numbers",
+          "color": "#6ab04c",
+          "url": null
+        }
+      }
+    },
+    "3": {
+      "topic": "Time and Date",
+      "vocab_images": {
+        "年": {
+          "pinyin": "nián",
+          "english": "year",
+          "color": "#f9ca24",
+          "pexels_query": "new year calendar annual celebration",
+          "images": [
+            {
+              "id": "nian_1",
+              "emoji": "📅",
+              "label": "今年",
+              "label_en": "this year",
+              "url": null
+            },
+            {
+              "id": "nian_2",
+              "emoji": "🎆",
+              "label": "新年",
+              "label_en": "new year",
+              "url": null
+            },
+            {
+              "id": "nian_3",
+              "emoji": "🗓️",
+              "label": "一年",
+              "label_en": "one year",
+              "url": null
+            },
+            {
+              "id": "nian_4",
+              "emoji": "🌏",
+              "label": "明年",
+              "label_en": "next year",
+              "url": null
+            }
+          ]
+        },
+        "月": {
+          "pinyin": "yuè",
+          "english": "month / moon",
+          "color": "#30336b",
+          "pexels_query": "moon night sky full moon",
+          "images": [
+            {
+              "id": "yue_1",
+              "emoji": "🌙",
+              "label": "月亮",
+              "label_en": "moon",
+              "url": null
+            },
+            {
+              "id": "yue_2",
+              "emoji": "📅",
+              "label": "一月",
+              "label_en": "January",
+              "url": null
+            },
+            {
+              "id": "yue_3",
+              "emoji": "🗓️",
+              "label": "每个月",
+              "label_en": "every month",
+              "url": null
+            },
+            {
+              "id": "yue_4",
+              "emoji": "🌛",
+              "label": "半个月",
+              "label_en": "half a month",
+              "url": null
+            }
+          ]
+        },
+        "号": {
+          "pinyin": "hào",
+          "english": "date / day number",
+          "color": "#e55039",
+          "pexels_query": "calendar date circled number",
+          "images": [
+            {
+              "id": "hao_1",
+              "emoji": "📆",
+              "label": "几号？",
+              "label_en": "what date?",
+              "url": null
+            },
+            {
+              "id": "hao_2",
+              "emoji": "🗓️",
+              "label": "一号",
+              "label_en": "the 1st",
+              "url": null
+            },
+            {
+              "id": "hao_3",
+              "emoji": "🔢",
+              "label": "日期",
+              "label_en": "date",
+              "url": null
+            },
+            {
+              "id": "hao_4",
+              "emoji": "📅",
+              "label": "今天几号",
+              "label_en": "what's today's date",
+              "url": null
+            }
+          ]
+        },
+        "今天": {
+          "pinyin": "jīn tiān",
+          "english": "today",
+          "color": "#f9ca24",
+          "pexels_query": "today sunrise morning present day",
+          "images": [
+            {
+              "id": "jintian_1",
+              "emoji": "☀️",
+              "label": "今天",
+              "label_en": "today",
+              "url": null
+            },
+            {
+              "id": "jintian_2",
+              "emoji": "📅",
+              "label": "今天是…",
+              "label_en": "today is...",
+              "url": null
+            },
+            {
+              "id": "jintian_3",
+              "emoji": "🌄",
+              "label": "今天早上",
+              "label_en": "this morning",
+              "url": null
+            },
+            {
+              "id": "jintian_4",
+              "emoji": "🗓️",
+              "label": "今天几号",
+              "label_en": "today's date",
+              "url": null
+            }
+          ]
+        },
+        "明天": {
+          "pinyin": "míng tiān",
+          "english": "tomorrow",
+          "color": "#00cec9",
+          "pexels_query": "tomorrow sunrise future bright day",
+          "images": [
+            {
+              "id": "mingtian_1",
+              "emoji": "🌅",
+              "label": "明天",
+              "label_en": "tomorrow",
+              "url": null
+            },
+            {
+              "id": "mingtian_2",
+              "emoji": "➡️",
+              "label": "明天见",
+              "label_en": "see you tomorrow",
+              "url": null
+            },
+            {
+              "id": "mingtian_3",
+              "emoji": "🌤️",
+              "label": "明天天气",
+              "label_en": "tomorrow weather",
+              "url": null
+            },
+            {
+              "id": "mingtian_4",
+              "emoji": "💤",
+              "label": "明天早上",
+              "label_en": "tomorrow morning",
+              "url": null
+            }
+          ]
+        },
+        "昨天": {
+          "pinyin": "zuó tiān",
+          "english": "yesterday",
+          "color": "#636e72",
+          "pexels_query": "yesterday past memory calendar",
+          "images": [
+            {
+              "id": "zuotian_1",
+              "emoji": "⬅️",
+              "label": "昨天",
+              "label_en": "yesterday",
+              "url": null
+            },
+            {
+              "id": "zuotian_2",
+              "emoji": "🌃",
+              "label": "昨天晚上",
+              "label_en": "last night",
+              "url": null
+            },
+            {
+              "id": "zuotian_3",
+              "emoji": "📖",
+              "label": "昨天发生",
+              "label_en": "what happened",
+              "url": null
+            },
+            {
+              "id": "zuotian_4",
+              "emoji": "💭",
+              "label": "昨天的事",
+              "label_en": "yesterday's events",
+              "url": null
+            }
+          ]
+        },
+        "上午": {
+          "pinyin": "shàng wǔ",
+          "english": "morning / AM",
+          "color": "#fdcb6e",
+          "pexels_query": "morning sunrise breakfast AM time",
+          "images": [
+            {
+              "id": "shangwu_1",
+              "emoji": "🌄",
+              "label": "早上",
+              "label_en": "morning",
+              "url": null
+            },
+            {
+              "id": "shangwu_2",
+              "emoji": "☕",
+              "label": "上午喝咖啡",
+              "label_en": "morning coffee",
+              "url": null
+            },
+            {
+              "id": "shangwu_3",
+              "emoji": "🕘",
+              "label": "上午九点",
+              "label_en": "9 AM",
+              "url": null
+            },
+            {
+              "id": "shangwu_4",
+              "emoji": "🍳",
+              "label": "吃早饭",
+              "label_en": "breakfast",
+              "url": null
+            }
+          ]
+        },
+        "中午": {
+          "pinyin": "zhōng wǔ",
+          "english": "noon / midday",
+          "color": "#e17055",
+          "pexels_query": "noon lunch midday sun high",
+          "images": [
+            {
+              "id": "zhongwu_1",
+              "emoji": "☀️",
+              "label": "中午",
+              "label_en": "noon",
+              "url": null
+            },
+            {
+              "id": "zhongwu_2",
+              "emoji": "🕛",
+              "label": "十二点",
+              "label_en": "12 o'clock",
+              "url": null
+            },
+            {
+              "id": "zhongwu_3",
+              "emoji": "🍱",
+              "label": "吃午饭",
+              "label_en": "lunch",
+              "url": null
+            },
+            {
+              "id": "zhongwu_4",
+              "emoji": "🌞",
+              "label": "正午",
+              "label_en": "midday",
+              "url": null
+            }
+          ]
+        },
+        "下午": {
+          "pinyin": "xià wǔ",
+          "english": "afternoon / PM",
+          "color": "#f9ca24",
+          "pexels_query": "afternoon tea time PM sunny",
+          "images": [
+            {
+              "id": "xiawu_1",
+              "emoji": "🌇",
+              "label": "下午",
+              "label_en": "afternoon",
+              "url": null
+            },
+            {
+              "id": "xiawu_2",
+              "emoji": "🕒",
+              "label": "下午三点",
+              "label_en": "3 PM",
+              "url": null
+            },
+            {
+              "id": "xiawu_3",
+              "emoji": "🍵",
+              "label": "下午茶",
+              "label_en": "afternoon tea",
+              "url": null
+            },
+            {
+              "id": "xiawu_4",
+              "emoji": "🌤️",
+              "label": "下午天气",
+              "label_en": "afternoon weather",
+              "url": null
+            }
+          ]
+        },
+        "晚上": {
+          "pinyin": "wǎn shàng",
+          "english": "evening / night",
+          "color": "#30336b",
+          "pexels_query": "evening night city lights dark",
+          "images": [
+            {
+              "id": "wanshang_1",
+              "emoji": "🌃",
+              "label": "晚上",
+              "label_en": "evening",
+              "url": null
+            },
+            {
+              "id": "wanshang_2",
+              "emoji": "🌙",
+              "label": "晚上好",
+              "label_en": "good evening",
+              "url": null
+            },
+            {
+              "id": "wanshang_3",
+              "emoji": "🌟",
+              "label": "晚上的星星",
+              "label_en": "evening stars",
+              "url": null
+            },
+            {
+              "id": "wanshang_4",
+              "emoji": "🍽️",
+              "label": "吃晚饭",
+              "label_en": "dinner",
+              "url": null
+            }
+          ]
+        },
+        "点": {
+          "pinyin": "diǎn",
+          "english": "o'clock",
+          "color": "#e17055",
+          "pexels_query": "clock time hour analog",
+          "images": [
+            {
+              "id": "dian_1",
+              "emoji": "🕐",
+              "label": "一点",
+              "label_en": "1 o'clock",
+              "url": null
+            },
+            {
+              "id": "dian_2",
+              "emoji": "⏰",
+              "label": "几点了？",
+              "label_en": "what time is it?",
+              "url": null
+            },
+            {
+              "id": "dian_3",
+              "emoji": "🕛",
+              "label": "十二点",
+              "label_en": "12 o'clock",
+              "url": null
+            },
+            {
+              "id": "dian_4",
+              "emoji": "🕙",
+              "label": "十点半",
+              "label_en": "10:30",
+              "url": null
+            }
+          ]
+        },
+        "分": {
+          "pinyin": "fēn",
+          "english": "minute",
+          "color": "#00cec9",
+          "pexels_query": "stopwatch timer minute hand",
+          "images": [
+            {
+              "id": "fen_1",
+              "emoji": "⏱️",
+              "label": "几分？",
+              "label_en": "how many minutes?",
+              "url": null
+            },
+            {
+              "id": "fen_2",
+              "emoji": "⏰",
+              "label": "三十分",
+              "label_en": "thirty minutes",
+              "url": null
+            },
+            {
+              "id": "fen_3",
+              "emoji": "🕐",
+              "label": "五分钟",
+              "label_en": "five minutes",
+              "url": null
+            },
+            {
+              "id": "fen_4",
+              "emoji": "⌚",
+              "label": "十五分",
+              "label_en": "fifteen minutes",
+              "url": null
+            }
+          ]
+        },
+        "一月": {
+          "pinyin": "yī yuè",
+          "english": "January",
+          "color": "#74b9ff",
+          "pexels_query": "January winter snow cold month",
+          "images": [
+            {
+              "id": "jan_1",
+              "emoji": "❄️",
+              "label": "一月",
+              "label_en": "January",
+              "url": null
+            },
+            {
+              "id": "jan_2",
+              "emoji": "🌨️",
+              "label": "冬天",
+              "label_en": "winter",
+              "url": null
+            },
+            {
+              "id": "jan_3",
+              "emoji": "🎆",
+              "label": "新年",
+              "label_en": "new year",
+              "url": null
+            },
+            {
+              "id": "jan_4",
+              "emoji": "📅",
+              "label": "一月一号",
+              "label_en": "January 1st",
+              "url": null
+            }
+          ]
+        },
+        "四月": {
+          "pinyin": "sì yuè",
+          "english": "April",
+          "color": "#fd79a8",
+          "pexels_query": "April spring flowers bloom",
+          "images": [
+            {
+              "id": "apr_1",
+              "emoji": "🌸",
+              "label": "四月",
+              "label_en": "April",
+              "url": null
+            },
+            {
+              "id": "apr_2",
+              "emoji": "🌼",
+              "label": "春天",
+              "label_en": "spring",
+              "url": null
+            },
+            {
+              "id": "apr_3",
+              "emoji": "🌱",
+              "label": "春暖",
+              "label_en": "spring warmth",
+              "url": null
+            },
+            {
+              "id": "apr_4",
+              "emoji": "☔",
+              "label": "春雨",
+              "label_en": "spring rain",
+              "url": null
+            }
+          ]
+        },
+        "七月": {
+          "pinyin": "qī yuè",
+          "english": "July",
+          "color": "#e17055",
+          "pexels_query": "July summer beach hot",
+          "images": [
+            {
+              "id": "jul_1",
+              "emoji": "☀️",
+              "label": "七月",
+              "label_en": "July",
+              "url": null
+            },
+            {
+              "id": "jul_2",
+              "emoji": "🏖️",
+              "label": "夏天",
+              "label_en": "summer",
+              "url": null
+            },
+            {
+              "id": "jul_3",
+              "emoji": "🌊",
+              "label": "夏日海边",
+              "label_en": "summer beach",
+              "url": null
+            },
+            {
+              "id": "jul_4",
+              "emoji": "🍦",
+              "label": "吃冰淇淋",
+              "label_en": "eating ice cream",
+              "url": null
+            }
+          ]
+        },
+        "十月": {
+          "pinyin": "shí yuè",
+          "english": "October",
+          "color": "#e17055",
+          "pexels_query": "October autumn fall leaves",
+          "images": [
+            {
+              "id": "oct_1",
+              "emoji": "🍂",
+              "label": "十月",
+              "label_en": "October",
+              "url": null
+            },
+            {
+              "id": "oct_2",
+              "emoji": "🍁",
+              "label": "秋天",
+              "label_en": "autumn",
+              "url": null
+            },
+            {
+              "id": "oct_3",
+              "emoji": "🎃",
+              "label": "秋季",
+              "label_en": "fall season",
+              "url": null
+            },
+            {
+              "id": "oct_4",
+              "emoji": "🌾",
+              "label": "秋天丰收",
+              "label_en": "autumn harvest",
+              "url": null
+            }
+          ]
+        }
+      },
+      "dialogue_images": {
+        "1": {
+          "emoji": "📅",
+          "label": "今天几号",
+          "label_en": "What's the Date?",
+          "color": "#f9ca24",
+          "url": null
+        },
+        "2": {
+          "emoji": "⏰",
+          "label": "现在几点",
+          "label_en": "What Time Is It?",
+          "color": "#e17055",
+          "url": null
+        },
+        "3": {
+          "emoji": "🌅",
+          "label": "早上还是晚上",
+          "label_en": "Morning or Evening?",
+          "color": "#30336b",
+          "url": null
+        }
+      }
+    },
+    "4": {
+      "topic": "Family Members",
+      "vocab_images": {
+        "家": {
+          "pinyin": "jiā",
+          "english": "home / family",
+          "color": "#e17055",
+          "pexels_query": "cozy home house family living",
+          "images": [
+            {
+              "id": "jia_1",
+              "emoji": "🏠",
+              "label": "家",
+              "label_en": "home",
+              "url": null
+            },
+            {
+              "id": "jia_2",
+              "emoji": "👨‍👩‍👧‍👦",
+              "label": "一家人",
+              "label_en": "the whole family",
+              "url": null
+            },
+            {
+              "id": "jia_3",
+              "emoji": "🛋️",
+              "label": "在家",
+              "label_en": "at home",
+              "url": null
+            },
+            {
+              "id": "jia_4",
+              "emoji": "🏡",
+              "label": "我的家",
+              "label_en": "my home",
+              "url": null
+            }
+          ]
+        },
+        "爸爸": {
+          "pinyin": "bà ba",
+          "english": "father / dad",
+          "color": "#0984e3",
+          "pexels_query": "father dad child family happy",
+          "images": [
+            {
+              "id": "baba_1",
+              "emoji": "👨",
+              "label": "爸爸",
+              "label_en": "dad",
+              "url": null
+            },
+            {
+              "id": "baba_2",
+              "emoji": "👨‍👧",
+              "label": "爸爸和女儿",
+              "label_en": "dad and daughter",
+              "url": null
+            },
+            {
+              "id": "baba_3",
+              "emoji": "👨‍👦",
+              "label": "爸爸和儿子",
+              "label_en": "dad and son",
+              "url": null
+            },
+            {
+              "id": "baba_4",
+              "emoji": "🏠",
+              "label": "爸爸在家",
+              "label_en": "dad at home",
+              "url": null
+            }
+          ]
+        },
+        "妈妈": {
+          "pinyin": "mā ma",
+          "english": "mother / mom",
+          "color": "#fd79a8",
+          "pexels_query": "mother mom child family warm",
+          "images": [
+            {
+              "id": "mama_1",
+              "emoji": "👩",
+              "label": "妈妈",
+              "label_en": "mom",
+              "url": null
+            },
+            {
+              "id": "mama_2",
+              "emoji": "👩‍👧",
+              "label": "妈妈和女儿",
+              "label_en": "mom and daughter",
+              "url": null
+            },
+            {
+              "id": "mama_3",
+              "emoji": "👩‍👦",
+              "label": "妈妈和儿子",
+              "label_en": "mom and son",
+              "url": null
+            },
+            {
+              "id": "mama_4",
+              "emoji": "🍳",
+              "label": "妈妈做饭",
+              "label_en": "mom cooking",
+              "url": null
+            }
+          ]
+        },
+        "儿子": {
+          "pinyin": "ér zi",
+          "english": "son",
+          "color": "#74b9ff",
+          "pexels_query": "young boy son child family",
+          "images": [
+            {
+              "id": "erzi_1",
+              "emoji": "👦",
+              "label": "儿子",
+              "label_en": "son",
+              "url": null
+            },
+            {
+              "id": "erzi_2",
+              "emoji": "👨‍👦",
+              "label": "爸爸的儿子",
+              "label_en": "dad's son",
+              "url": null
+            },
+            {
+              "id": "erzi_3",
+              "emoji": "🧒",
+              "label": "小儿子",
+              "label_en": "little son",
+              "url": null
+            },
+            {
+              "id": "erzi_4",
+              "emoji": "🏫",
+              "label": "儿子上学",
+              "label_en": "son goes to school",
+              "url": null
+            }
+          ]
+        },
+        "女儿": {
+          "pinyin": "nǚ ér",
+          "english": "daughter",
+          "color": "#fd79a8",
+          "pexels_query": "young girl daughter child family",
+          "images": [
+            {
+              "id": "nver_1",
+              "emoji": "👧",
+              "label": "女儿",
+              "label_en": "daughter",
+              "url": null
+            },
+            {
+              "id": "nver_2",
+              "emoji": "👩‍👧",
+              "label": "妈妈的女儿",
+              "label_en": "mom's daughter",
+              "url": null
+            },
+            {
+              "id": "nver_3",
+              "emoji": "🧒‍♀️",
+              "label": "小女儿",
+              "label_en": "little daughter",
+              "url": null
+            },
+            {
+              "id": "nver_4",
+              "emoji": "🌸",
+              "label": "女儿可爱",
+              "label_en": "cute daughter",
+              "url": null
+            }
+          ]
+        },
+        "哥哥": {
+          "pinyin": "gē ge",
+          "english": "older brother",
+          "color": "#6c5ce7",
+          "pexels_query": "older brother siblings boy",
+          "images": [
+            {
+              "id": "gege_1",
+              "emoji": "👱",
+              "label": "哥哥",
+              "label_en": "older brother",
+              "url": null
+            },
+            {
+              "id": "gege_2",
+              "emoji": "👦",
+              "label": "大哥哥",
+              "label_en": "big brother",
+              "url": null
+            },
+            {
+              "id": "gege_3",
+              "emoji": "🤝",
+              "label": "哥哥帮忙",
+              "label_en": "brother helping",
+              "url": null
+            },
+            {
+              "id": "gege_4",
+              "emoji": "👨‍👦‍👦",
+              "label": "兄弟",
+              "label_en": "brothers",
+              "url": null
+            }
+          ]
+        },
+        "姐姐": {
+          "pinyin": "jiě jie",
+          "english": "older sister",
+          "color": "#fd79a8",
+          "pexels_query": "older sister siblings girl",
+          "images": [
+            {
+              "id": "jiejie_1",
+              "emoji": "👩",
+              "label": "姐姐",
+              "label_en": "older sister",
+              "url": null
+            },
+            {
+              "id": "jiejie_2",
+              "emoji": "👧",
+              "label": "大姐姐",
+              "label_en": "big sister",
+              "url": null
+            },
+            {
+              "id": "jiejie_3",
+              "emoji": "🤝",
+              "label": "姐姐帮忙",
+              "label_en": "sister helping",
+              "url": null
+            },
+            {
+              "id": "jiejie_4",
+              "emoji": "👯‍♀️",
+              "label": "姐妹",
+              "label_en": "sisters",
+              "url": null
+            }
+          ]
+        },
+        "弟弟": {
+          "pinyin": "dì di",
+          "english": "younger brother",
+          "color": "#0984e3",
+          "pexels_query": "younger brother small boy",
+          "images": [
+            {
+              "id": "didi_1",
+              "emoji": "🧒",
+              "label": "弟弟",
+              "label_en": "younger brother",
+              "url": null
+            },
+            {
+              "id": "didi_2",
+              "emoji": "👦",
+              "label": "小弟弟",
+              "label_en": "little brother",
+              "url": null
+            },
+            {
+              "id": "didi_3",
+              "emoji": "🎒",
+              "label": "弟弟上学",
+              "label_en": "younger bro at school",
+              "url": null
+            },
+            {
+              "id": "didi_4",
+              "emoji": "🎮",
+              "label": "弟弟玩",
+              "label_en": "brother playing",
+              "url": null
+            }
+          ]
+        },
+        "妹妹": {
+          "pinyin": "mèi mei",
+          "english": "younger sister",
+          "color": "#e84393",
+          "pexels_query": "younger sister small girl cute",
+          "images": [
+            {
+              "id": "meimei_1",
+              "emoji": "🧒‍♀️",
+              "label": "妹妹",
+              "label_en": "younger sister",
+              "url": null
+            },
+            {
+              "id": "meimei_2",
+              "emoji": "👧",
+              "label": "小妹妹",
+              "label_en": "little sister",
+              "url": null
+            },
+            {
+              "id": "meimei_3",
+              "emoji": "🎀",
+              "label": "妹妹可爱",
+              "label_en": "cute little sis",
+              "url": null
+            },
+            {
+              "id": "meimei_4",
+              "emoji": "🪆",
+              "label": "妹妹玩",
+              "label_en": "sister playing",
+              "url": null
+            }
+          ]
+        },
+        "有": {
+          "pinyin": "yǒu",
+          "english": "to have",
+          "color": "#00b894",
+          "pexels_query": "person holding owning possession",
+          "images": [
+            {
+              "id": "you_1",
+              "emoji": "💝",
+              "label": "有",
+              "label_en": "have",
+              "url": null
+            },
+            {
+              "id": "you_2",
+              "emoji": "🤲",
+              "label": "我有…",
+              "label_en": "I have...",
+              "url": null
+            },
+            {
+              "id": "you_3",
+              "emoji": "👨‍👩‍👧‍👦",
+              "label": "有家人",
+              "label_en": "have family",
+              "url": null
+            },
+            {
+              "id": "you_4",
+              "emoji": "📚",
+              "label": "有书",
+              "label_en": "have books",
+              "url": null
+            }
+          ]
+        },
+        "没有": {
+          "pinyin": "méi yǒu",
+          "english": "don't have / there isn't",
+          "color": "#b2bec3",
+          "pexels_query": "empty hands nothing no",
+          "images": [
+            {
+              "id": "meiyou_1",
+              "emoji": "🤚",
+              "label": "没有",
+              "label_en": "don't have",
+              "url": null
+            },
+            {
+              "id": "meiyou_2",
+              "emoji": "❌",
+              "label": "没有了",
+              "label_en": "none left",
+              "url": null
+            },
+            {
+              "id": "meiyou_3",
+              "emoji": "🙅",
+              "label": "我没有",
+              "label_en": "I don't have",
+              "url": null
+            },
+            {
+              "id": "meiyou_4",
+              "emoji": "📭",
+              "label": "没有信",
+              "label_en": "no mail",
+              "url": null
+            }
+          ]
+        },
+        "两": {
+          "pinyin": "liǎng",
+          "english": "two (with measure words)",
+          "color": "#a29bfe",
+          "pexels_query": "two pair couple",
+          "images": [
+            {
+              "id": "liang_1",
+              "emoji": "✌️",
+              "label": "两个",
+              "label_en": "two (things)",
+              "url": null
+            },
+            {
+              "id": "liang_2",
+              "emoji": "👫",
+              "label": "两个人",
+              "label_en": "two people",
+              "url": null
+            },
+            {
+              "id": "liang_3",
+              "emoji": "🍎",
+              "label": "两个苹果",
+              "label_en": "two apples",
+              "url": null
+            },
+            {
+              "id": "liang_4",
+              "emoji": "👭",
+              "label": "两个朋友",
+              "label_en": "two friends",
+              "url": null
+            }
+          ]
+        }
+      },
+      "dialogue_images": {
+        "1": {
+          "emoji": "👨‍👩‍👧‍👦",
+          "label": "你的家",
+          "label_en": "Your Family",
+          "color": "#e17055",
+          "url": null
+        },
+        "2": {
+          "emoji": "👫",
+          "label": "兄弟姐妹",
+          "label_en": "Brothers and Sisters",
+          "color": "#a29bfe",
+          "url": null
+        },
+        "3": {
+          "emoji": "💼",
+          "label": "爸爸的工作",
+          "label_en": "Dad's Job",
+          "color": "#0984e3",
+          "url": null
+        }
+      }
+    },
+    "5": {
+      "topic": "Food and Drinks",
+      "vocab_images": {
+        "吃": {
+          "pinyin": "chī",
+          "english": "eat",
+          "color": "#e17055",
+          "pexels_query": "person eating Chinese food chopsticks",
+          "images": [
+            {
+              "id": "chi_1",
+              "emoji": "🍚",
+              "label": "吃米饭",
+              "label_en": "eating rice",
+              "url": null
+            },
+            {
+              "id": "chi_2",
+              "emoji": "🍜",
+              "label": "吃面条",
+              "label_en": "eating noodles",
+              "url": null
+            },
+            {
+              "id": "chi_3",
+              "emoji": "🥦",
+              "label": "吃菜",
+              "label_en": "eating vegetables",
+              "url": null
+            },
+            {
+              "id": "chi_4",
+              "emoji": "🍎",
+              "label": "吃苹果",
+              "label_en": "eating an apple",
+              "url": null
+            }
+          ]
+        },
+        "喝": {
+          "pinyin": "hē",
+          "english": "drink",
+          "color": "#0984e3",
+          "pexels_query": "person drinking beverage",
+          "images": [
+            {
+              "id": "he_1",
+              "emoji": "🍵",
+              "label": "喝茶",
+              "label_en": "drinking tea",
+              "url": null
+            },
+            {
+              "id": "he_2",
+              "emoji": "💧",
+              "label": "喝水",
+              "label_en": "drinking water",
+              "url": null
+            },
+            {
+              "id": "he_3",
+              "emoji": "☕",
+              "label": "喝咖啡",
+              "label_en": "drinking coffee",
+              "url": null
+            },
+            {
+              "id": "he_4",
+              "emoji": "🥛",
+              "label": "喝牛奶",
+              "label_en": "drinking milk",
+              "url": null
+            }
+          ]
+        },
+        "米饭": {
+          "pinyin": "mǐ fàn",
+          "english": "rice",
+          "color": "#fdcb6e",
+          "pexels_query": "white rice bowl Asian food",
+          "images": [
+            {
+              "id": "mifan_1",
+              "emoji": "🍚",
+              "label": "米饭",
+              "label_en": "a bowl of rice",
+              "url": null
+            },
+            {
+              "id": "mifan_2",
+              "emoji": "🍱",
+              "label": "白米饭",
+              "label_en": "steamed white rice",
+              "url": null
+            },
+            {
+              "id": "mifan_3",
+              "emoji": "🥢",
+              "label": "吃米饭",
+              "label_en": "eating rice",
+              "url": null
+            },
+            {
+              "id": "mifan_4",
+              "emoji": "🌾",
+              "label": "大米",
+              "label_en": "uncooked rice grains",
+              "url": null
+            }
+          ]
+        },
+        "面条": {
+          "pinyin": "miàn tiáo",
+          "english": "noodles",
+          "color": "#f9ca24",
+          "pexels_query": "Chinese noodles bowl ramen",
+          "images": [
+            {
+              "id": "miantiao_1",
+              "emoji": "🍜",
+              "label": "面条",
+              "label_en": "bowl of noodles",
+              "url": null
+            },
+            {
+              "id": "miantiao_2",
+              "emoji": "🥢",
+              "label": "吃面条",
+              "label_en": "eating noodles",
+              "url": null
+            },
+            {
+              "id": "miantiao_3",
+              "emoji": "🍝",
+              "label": "汤面",
+              "label_en": "noodle soup",
+              "url": null
+            },
+            {
+              "id": "miantiao_4",
+              "emoji": "🫕",
+              "label": "一碗面",
+              "label_en": "a bowl of noodles",
+              "url": null
+            }
+          ]
+        },
+        "水": {
+          "pinyin": "shuǐ",
+          "english": "water",
+          "color": "#74b9ff",
+          "pexels_query": "glass of water clear blue",
+          "images": [
+            {
+              "id": "shui_1",
+              "emoji": "💧",
+              "label": "水",
+              "label_en": "water",
+              "url": null
+            },
+            {
+              "id": "shui_2",
+              "emoji": "🥤",
+              "label": "喝水",
+              "label_en": "drinking water",
+              "url": null
+            },
+            {
+              "id": "shui_3",
+              "emoji": "🪣",
+              "label": "一杯水",
+              "label_en": "a glass of water",
+              "url": null
+            },
+            {
+              "id": "shui_4",
+              "emoji": "🌊",
+              "label": "清水",
+              "label_en": "clear water",
+              "url": null
+            }
+          ]
+        },
+        "茶": {
+          "pinyin": "chá",
+          "english": "tea",
+          "color": "#55efc4",
+          "pexels_query": "Chinese tea cup green tea",
+          "images": [
+            {
+              "id": "cha_1",
+              "emoji": "🍵",
+              "label": "茶",
+              "label_en": "tea",
+              "url": null
+            },
+            {
+              "id": "cha_2",
+              "emoji": "🫖",
+              "label": "泡茶",
+              "label_en": "brewing tea",
+              "url": null
+            },
+            {
+              "id": "cha_3",
+              "emoji": "🍵",
+              "label": "喝茶",
+              "label_en": "drinking tea",
+              "url": null
+            },
+            {
+              "id": "cha_4",
+              "emoji": "🌿",
+              "label": "绿茶",
+              "label_en": "green tea leaves",
+              "url": null
+            }
+          ]
+        },
+        "牛奶": {
+          "pinyin": "niú nǎi",
+          "english": "milk",
+          "color": "#b2bec3",
+          "pexels_query": "glass of milk white dairy",
+          "images": [
+            {
+              "id": "niunai_1",
+              "emoji": "🥛",
+              "label": "牛奶",
+              "label_en": "milk",
+              "url": null
+            },
+            {
+              "id": "niunai_2",
+              "emoji": "🐄",
+              "label": "新鲜牛奶",
+              "label_en": "fresh milk",
+              "url": null
+            },
+            {
+              "id": "niunai_3",
+              "emoji": "🥛",
+              "label": "喝牛奶",
+              "label_en": "drinking milk",
+              "url": null
+            },
+            {
+              "id": "niunai_4",
+              "emoji": "📦",
+              "label": "一盒牛奶",
+              "label_en": "a carton of milk",
+              "url": null
+            }
+          ]
+        },
+        "咖啡": {
+          "pinyin": "kā fēi",
+          "english": "coffee",
+          "color": "#6c5ce7",
+          "pexels_query": "coffee cup latte art cafe",
+          "images": [
+            {
+              "id": "kafei_1",
+              "emoji": "☕",
+              "label": "咖啡",
+              "label_en": "coffee",
+              "url": null
+            },
+            {
+              "id": "kafei_2",
+              "emoji": "☕",
+              "label": "喝咖啡",
+              "label_en": "drinking coffee",
+              "url": null
+            },
+            {
+              "id": "kafei_3",
+              "emoji": "🫘",
+              "label": "咖啡豆",
+              "label_en": "coffee beans",
+              "url": null
+            },
+            {
+              "id": "kafei_4",
+              "emoji": "🏪",
+              "label": "咖啡店",
+              "label_en": "coffee shop",
+              "url": null
+            }
+          ]
+        },
+        "菜": {
+          "pinyin": "cài",
+          "english": "dish / vegetable",
+          "color": "#00b894",
+          "pexels_query": "Chinese vegetable dish stir fry",
+          "images": [
+            {
+              "id": "cai_1",
+              "emoji": "🥦",
+              "label": "蔬菜",
+              "label_en": "vegetables",
+              "url": null
+            },
+            {
+              "id": "cai_2",
+              "emoji": "🥬",
+              "label": "青菜",
+              "label_en": "green vegetables",
+              "url": null
+            },
+            {
+              "id": "cai_3",
+              "emoji": "🍽️",
+              "label": "炒菜",
+              "label_en": "stir-fried dish",
+              "url": null
+            },
+            {
+              "id": "cai_4",
+              "emoji": "🥢",
+              "label": "吃菜",
+              "label_en": "eating vegetables",
+              "url": null
+            }
+          ]
+        },
+        "苹果": {
+          "pinyin": "píng guǒ",
+          "english": "apple",
+          "color": "#d63031",
+          "pexels_query": "red apple fresh fruit",
+          "images": [
+            {
+              "id": "pingguo_1",
+              "emoji": "🍎",
+              "label": "苹果",
+              "label_en": "apple",
+              "url": null
+            },
+            {
+              "id": "pingguo_2",
+              "emoji": "🍏",
+              "label": "青苹果",
+              "label_en": "green apple",
+              "url": null
+            },
+            {
+              "id": "pingguo_3",
+              "emoji": "🍎",
+              "label": "吃苹果",
+              "label_en": "eating an apple",
+              "url": null
+            },
+            {
+              "id": "pingguo_4",
+              "emoji": "🧺",
+              "label": "一篮苹果",
+              "label_en": "basket of apples",
+              "url": null
+            }
+          ]
+        },
+        "想": {
+          "pinyin": "xiǎng",
+          "english": "want / think",
+          "color": "#a29bfe",
+          "pexels_query": "person thinking deciding food",
+          "images": [
+            {
+              "id": "xiang_1",
+              "emoji": "💭",
+              "label": "想吃",
+              "label_en": "want to eat",
+              "url": null
+            },
+            {
+              "id": "xiang_2",
+              "emoji": "🤔",
+              "label": "在想",
+              "label_en": "thinking",
+              "url": null
+            },
+            {
+              "id": "xiang_3",
+              "emoji": "💭",
+              "label": "想喝",
+              "label_en": "want to drink",
+              "url": null
+            },
+            {
+              "id": "xiang_4",
+              "emoji": "😋",
+              "label": "想吃什么",
+              "label_en": "want to eat what",
+              "url": null
+            }
+          ]
+        },
+        "杯": {
+          "pinyin": "bēi",
+          "english": "cup / glass",
+          "color": "#fd79a8",
+          "pexels_query": "cup glass beverage close-up",
+          "images": [
+            {
+              "id": "bei_1",
+              "emoji": "🥤",
+              "label": "一杯",
+              "label_en": "a cup",
+              "url": null
+            },
+            {
+              "id": "bei_2",
+              "emoji": "🍵",
+              "label": "一杯茶",
+              "label_en": "a cup of tea",
+              "url": null
+            },
+            {
+              "id": "bei_3",
+              "emoji": "☕",
+              "label": "一杯咖啡",
+              "label_en": "a cup of coffee",
+              "url": null
+            },
+            {
+              "id": "bei_4",
+              "emoji": "💧",
+              "label": "一杯水",
+              "label_en": "a glass of water",
+              "url": null
+            }
+          ]
+        },
+        "喝茶": {
+          "pinyin": "hē chá",
+          "english": "drink tea",
+          "color": "#55efc4",
+          "pexels_query": "person drinking tea relaxing",
+          "images": [
+            {
+              "id": "hecha_1",
+              "emoji": "🍵",
+              "label": "喝茶",
+              "label_en": "drinking tea",
+              "url": null
+            },
+            {
+              "id": "hecha_2",
+              "emoji": "🫖",
+              "label": "请喝茶",
+              "label_en": "please have tea",
+              "url": null
+            },
+            {
+              "id": "hecha_3",
+              "emoji": "🍵",
+              "label": "喝绿茶",
+              "label_en": "drinking green tea",
+              "url": null
+            },
+            {
+              "id": "hecha_4",
+              "emoji": "🌿",
+              "label": "茶叶",
+              "label_en": "tea leaves",
+              "url": null
+            }
+          ]
+        },
+        "喝水": {
+          "pinyin": "hē shuǐ",
+          "english": "drink water",
+          "color": "#74b9ff",
+          "pexels_query": "person drinking water glass",
+          "images": [
+            {
+              "id": "heshui_1",
+              "emoji": "💧",
+              "label": "喝水",
+              "label_en": "drinking water",
+              "url": null
+            },
+            {
+              "id": "heshui_2",
+              "emoji": "🥤",
+              "label": "一杯水",
+              "label_en": "a glass of water",
+              "url": null
+            },
+            {
+              "id": "heshui_3",
+              "emoji": "🚰",
+              "label": "喝水",
+              "label_en": "tap water",
+              "url": null
+            },
+            {
+              "id": "heshui_4",
+              "emoji": "🌊",
+              "label": "清水",
+              "label_en": "clear water",
+              "url": null
+            }
+          ]
+        },
+        "吃米饭": {
+          "pinyin": "chī mǐ fàn",
+          "english": "eat rice",
+          "color": "#fdcb6e",
+          "pexels_query": "eating white rice chopsticks bowl",
+          "images": [
+            {
+              "id": "chimifan_1",
+              "emoji": "🍚",
+              "label": "吃米饭",
+              "label_en": "eating rice",
+              "url": null
+            },
+            {
+              "id": "chimifan_2",
+              "emoji": "🥢",
+              "label": "米饭",
+              "label_en": "rice bowl",
+              "url": null
+            },
+            {
+              "id": "chimifan_3",
+              "emoji": "🍱",
+              "label": "白米饭",
+              "label_en": "steamed rice",
+              "url": null
+            },
+            {
+              "id": "chimifan_4",
+              "emoji": "😋",
+              "label": "好吃",
+              "label_en": "delicious",
+              "url": null
+            }
+          ]
+        },
+        "吃面条": {
+          "pinyin": "chī miàn tiáo",
+          "english": "eat noodles",
+          "color": "#f9ca24",
+          "pexels_query": "eating noodles soup bowl Asian",
+          "images": [
+            {
+              "id": "chimiantiao_1",
+              "emoji": "🍜",
+              "label": "吃面条",
+              "label_en": "eating noodles",
+              "url": null
+            },
+            {
+              "id": "chimiantiao_2",
+              "emoji": "🥢",
+              "label": "一碗面",
+              "label_en": "a bowl of noodles",
+              "url": null
+            },
+            {
+              "id": "chimiantiao_3",
+              "emoji": "🍝",
+              "label": "面条",
+              "label_en": "noodles",
+              "url": null
+            },
+            {
+              "id": "chimiantiao_4",
+              "emoji": "😋",
+              "label": "好吃",
+              "label_en": "delicious",
+              "url": null
+            }
+          ]
+        }
+      },
+      "dialogue_images": {
+        "1": {
+          "emoji": "🍽️",
+          "label": "在餐厅",
+          "label_en": "At the Restaurant",
+          "color": "#e17055",
+          "url": null
+        },
+        "2": {
+          "emoji": "🥤",
+          "label": "喝什么",
+          "label_en": "What to Drink",
+          "color": "#0984e3",
+          "url": null
+        },
+        "3": {
+          "emoji": "🍵",
+          "label": "请喝茶",
+          "label_en": "Please Have Some Tea",
+          "color": "#55efc4",
+          "url": null
+        },
+        "4": {
+          "emoji": "🤔",
+          "label": "想吃什么",
+          "label_en": "What Do You Want",
+          "color": "#a29bfe",
+          "url": null
+        },
+        "5": {
+          "emoji": "☕",
+          "label": "一杯咖啡",
+          "label_en": "A Cup of Coffee",
+          "color": "#6c5ce7",
+          "url": null
+        },
+        "6": {
+          "emoji": "🥦",
+          "label": "吃菜喝水",
+          "label_en": "Vegetables & Water",
+          "color": "#00b894",
+          "url": null
+        }
+      }
+    },
+    "6": {
+      "topic": "Shopping and Money",
+      "vocab_images": {
+        "买": {
+          "pinyin": "mǎi",
+          "english": "to buy",
+          "color": "#f9ca24",
+          "pexels_query": "shopping buying store cashier",
+          "images": [
+            {
+              "id": "mai_1",
+              "emoji": "🛒",
+              "label": "买东西",
+              "label_en": "buying things",
+              "url": null
+            },
+            {
+              "id": "mai_2",
+              "emoji": "🏪",
+              "label": "去买",
+              "label_en": "going to buy",
+              "url": null
+            },
+            {
+              "id": "mai_3",
+              "emoji": "💳",
+              "label": "买书",
+              "label_en": "buying books",
+              "url": null
+            },
+            {
+              "id": "mai_4",
+              "emoji": "🛍️",
+              "label": "买衣服",
+              "label_en": "buying clothes",
+              "url": null
+            }
+          ]
+        },
+        "钱": {
+          "pinyin": "qián",
+          "english": "money",
+          "color": "#00b894",
+          "pexels_query": "money cash wallet currency",
+          "images": [
+            {
+              "id": "qian_1",
+              "emoji": "💰",
+              "label": "钱",
+              "label_en": "money",
+              "url": null
+            },
+            {
+              "id": "qian_2",
+              "emoji": "💵",
+              "label": "纸币",
+              "label_en": "banknotes",
+              "url": null
+            },
+            {
+              "id": "qian_3",
+              "emoji": "👛",
+              "label": "钱包",
+              "label_en": "wallet",
+              "url": null
+            },
+            {
+              "id": "qian_4",
+              "emoji": "💴",
+              "label": "人民币",
+              "label_en": "RMB",
+              "url": null
+            }
+          ]
+        },
+        "少": {
+          "pinyin": "shǎo",
+          "english": "few / little",
+          "color": "#b2bec3",
+          "pexels_query": "few small amount little",
+          "images": [
+            {
+              "id": "shao_1",
+              "emoji": "🔽",
+              "label": "很少",
+              "label_en": "very few",
+              "url": null
+            },
+            {
+              "id": "shao_2",
+              "emoji": "💧",
+              "label": "少量",
+              "label_en": "small amount",
+              "url": null
+            },
+            {
+              "id": "shao_3",
+              "emoji": "🫙",
+              "label": "少一点",
+              "label_en": "a little less",
+              "url": null
+            },
+            {
+              "id": "shao_4",
+              "emoji": "📉",
+              "label": "越来越少",
+              "label_en": "less and less",
+              "url": null
+            }
+          ]
+        },
+        "多少": {
+          "pinyin": "duō shǎo",
+          "english": "how much / how many",
+          "color": "#f9ca24",
+          "pexels_query": "price tag asking how much cost",
+          "images": [
+            {
+              "id": "duoshao_1",
+              "emoji": "💰",
+              "label": "多少钱？",
+              "label_en": "how much?",
+              "url": null
+            },
+            {
+              "id": "duoshao_2",
+              "emoji": "🏷️",
+              "label": "价格",
+              "label_en": "price tag",
+              "url": null
+            },
+            {
+              "id": "duoshao_3",
+              "emoji": "❓",
+              "label": "多少个？",
+              "label_en": "how many?",
+              "url": null
+            },
+            {
+              "id": "duoshao_4",
+              "emoji": "⚖️",
+              "label": "多少克？",
+              "label_en": "how many grams?",
+              "url": null
+            }
+          ]
+        },
+        "块": {
+          "pinyin": "kuài",
+          "english": "yuan (RMB) / piece",
+          "color": "#fdcb6e",
+          "pexels_query": "Chinese yuan coin RMB money",
+          "images": [
+            {
+              "id": "kuai_1",
+              "emoji": "💴",
+              "label": "一块钱",
+              "label_en": "one yuan",
+              "url": null
+            },
+            {
+              "id": "kuai_2",
+              "emoji": "🪙",
+              "label": "几块钱",
+              "label_en": "a few yuan",
+              "url": null
+            },
+            {
+              "id": "kuai_3",
+              "emoji": "💰",
+              "label": "十块",
+              "label_en": "ten yuan",
+              "url": null
+            },
+            {
+              "id": "kuai_4",
+              "emoji": "🛒",
+              "label": "五块钱",
+              "label_en": "five yuan",
+              "url": null
+            }
+          ]
+        },
+        "本": {
+          "pinyin": "běn",
+          "english": "measure word for books",
+          "color": "#6c5ce7",
+          "pexels_query": "book stack notebook binding",
+          "images": [
+            {
+              "id": "ben_1",
+              "emoji": "📗",
+              "label": "一本书",
+              "label_en": "one book",
+              "url": null
+            },
+            {
+              "id": "ben_2",
+              "emoji": "📚",
+              "label": "几本书",
+              "label_en": "several books",
+              "url": null
+            },
+            {
+              "id": "ben_3",
+              "emoji": "📔",
+              "label": "一本本子",
+              "label_en": "one notebook",
+              "url": null
+            },
+            {
+              "id": "ben_4",
+              "emoji": "📖",
+              "label": "两本书",
+              "label_en": "two books",
+              "url": null
+            }
+          ]
+        },
+        "书": {
+          "pinyin": "shū",
+          "english": "book",
+          "color": "#a29bfe",
+          "pexels_query": "book reading library open",
+          "images": [
+            {
+              "id": "shu_1",
+              "emoji": "📖",
+              "label": "书",
+              "label_en": "book",
+              "url": null
+            },
+            {
+              "id": "shu_2",
+              "emoji": "📚",
+              "label": "很多书",
+              "label_en": "many books",
+              "url": null
+            },
+            {
+              "id": "shu_3",
+              "emoji": "🛒",
+              "label": "买书",
+              "label_en": "buying books",
+              "url": null
+            },
+            {
+              "id": "shu_4",
+              "emoji": "📝",
+              "label": "看书",
+              "label_en": "reading a book",
+              "url": null
+            }
+          ]
+        },
+        "衣服": {
+          "pinyin": "yī fu",
+          "english": "clothes",
+          "color": "#e84393",
+          "pexels_query": "clothes fashion clothing store",
+          "images": [
+            {
+              "id": "yifu_1",
+              "emoji": "👕",
+              "label": "衣服",
+              "label_en": "clothes",
+              "url": null
+            },
+            {
+              "id": "yifu_2",
+              "emoji": "🛍️",
+              "label": "买衣服",
+              "label_en": "buying clothes",
+              "url": null
+            },
+            {
+              "id": "yifu_3",
+              "emoji": "👔",
+              "label": "新衣服",
+              "label_en": "new clothes",
+              "url": null
+            },
+            {
+              "id": "yifu_4",
+              "emoji": "🏪",
+              "label": "衣服店",
+              "label_en": "clothing shop",
+              "url": null
+            }
+          ]
+        },
+        "东西": {
+          "pinyin": "dōng xi",
+          "english": "thing / stuff",
+          "color": "#74b9ff",
+          "pexels_query": "things objects stuff mixed items",
+          "images": [
+            {
+              "id": "dongxi_1",
+              "emoji": "📦",
+              "label": "东西",
+              "label_en": "things",
+              "url": null
+            },
+            {
+              "id": "dongxi_2",
+              "emoji": "🛒",
+              "label": "买东西",
+              "label_en": "buying things",
+              "url": null
+            },
+            {
+              "id": "dongxi_3",
+              "emoji": "🎒",
+              "label": "装东西",
+              "label_en": "packing things",
+              "url": null
+            },
+            {
+              "id": "dongxi_4",
+              "emoji": "🏪",
+              "label": "卖东西",
+              "label_en": "selling things",
+              "url": null
+            }
+          ]
+        },
+        "贵": {
+          "pinyin": "guì",
+          "english": "expensive",
+          "color": "#6c5ce7",
+          "pexels_query": "expensive luxury diamond jewelry",
+          "images": [
+            {
+              "id": "gui_1",
+              "emoji": "💎",
+              "label": "很贵",
+              "label_en": "very expensive",
+              "url": null
+            },
+            {
+              "id": "gui_2",
+              "emoji": "🏷️",
+              "label": "价格贵",
+              "label_en": "high price",
+              "url": null
+            },
+            {
+              "id": "gui_3",
+              "emoji": "🚗",
+              "label": "贵的车",
+              "label_en": "expensive car",
+              "url": null
+            },
+            {
+              "id": "gui_4",
+              "emoji": "💰",
+              "label": "太贵了",
+              "label_en": "too expensive!",
+              "url": null
+            }
+          ]
+        },
+        "便宜": {
+          "pinyin": "pián yi",
+          "english": "cheap / inexpensive",
+          "color": "#00b894",
+          "pexels_query": "cheap sale discount bargain",
+          "images": [
+            {
+              "id": "pianyi_1",
+              "emoji": "🏷️",
+              "label": "便宜",
+              "label_en": "cheap",
+              "url": null
+            },
+            {
+              "id": "pianyi_2",
+              "emoji": "🛒",
+              "label": "很便宜",
+              "label_en": "very cheap",
+              "url": null
+            },
+            {
+              "id": "pianyi_3",
+              "emoji": "💰",
+              "label": "打折",
+              "label_en": "on sale",
+              "url": null
+            },
+            {
+              "id": "pianyi_4",
+              "emoji": "😊",
+              "label": "真便宜",
+              "label_en": "so cheap!",
+              "url": null
+            }
+          ]
+        }
+      },
+      "dialogue_images": {
+        "1": {
+          "emoji": "💰",
+          "label": "多少钱",
+          "label_en": "How Much Is This?",
+          "color": "#f9ca24",
+          "url": null
+        },
+        "2": {
+          "emoji": "📚",
+          "label": "买书",
+          "label_en": "Buying Books",
+          "color": "#6c5ce7",
+          "url": null
+        },
+        "3": {
+          "emoji": "🏷️",
+          "label": "便宜吗",
+          "label_en": "Is It Cheap?",
+          "color": "#00b894",
+          "url": null
+        }
+      }
+    },
+    "7": {
+      "topic": "Locations and Directions",
+      "vocab_images": {
+        "在": {
+          "pinyin": "zài",
+          "english": "at / in / on (location)",
+          "color": "#0984e3",
+          "pexels_query": "location pin map standing place",
+          "images": [
+            {
+              "id": "zai_1",
+              "emoji": "📍",
+              "label": "在这儿",
+              "label_en": "here (at)",
+              "url": null
+            },
+            {
+              "id": "zai_2",
+              "emoji": "🗺️",
+              "label": "在哪儿？",
+              "label_en": "where at?",
+              "url": null
+            },
+            {
+              "id": "zai_3",
+              "emoji": "🏠",
+              "label": "在家",
+              "label_en": "at home",
+              "url": null
+            },
+            {
+              "id": "zai_4",
+              "emoji": "🏫",
+              "label": "在学校",
+              "label_en": "at school",
+              "url": null
+            }
+          ]
+        },
+        "哪儿": {
+          "pinyin": "nǎr",
+          "english": "where",
+          "color": "#6c5ce7",
+          "pexels_query": "person lost looking for map confused",
+          "images": [
+            {
+              "id": "nar_1",
+              "emoji": "🗺️",
+              "label": "哪儿？",
+              "label_en": "where?",
+              "url": null
+            },
+            {
+              "id": "nar_2",
+              "emoji": "❓",
+              "label": "你在哪儿",
+              "label_en": "where are you?",
+              "url": null
+            },
+            {
+              "id": "nar_3",
+              "emoji": "🧭",
+              "label": "找地方",
+              "label_en": "finding a place",
+              "url": null
+            },
+            {
+              "id": "nar_4",
+              "emoji": "📍",
+              "label": "医院在哪儿",
+              "label_en": "where's the hospital?",
+              "url": null
+            }
+          ]
+        },
+        "这儿": {
+          "pinyin": "zhèr",
+          "english": "here",
+          "color": "#00cec9",
+          "pexels_query": "pointing down here this place",
+          "images": [
+            {
+              "id": "zher_1",
+              "emoji": "👇",
+              "label": "这儿",
+              "label_en": "here",
+              "url": null
+            },
+            {
+              "id": "zher_2",
+              "emoji": "📍",
+              "label": "就在这儿",
+              "label_en": "right here",
+              "url": null
+            },
+            {
+              "id": "zher_3",
+              "emoji": "🙋",
+              "label": "来这儿",
+              "label_en": "come here",
+              "url": null
+            },
+            {
+              "id": "zher_4",
+              "emoji": "✅",
+              "label": "在这儿",
+              "label_en": "it's here",
+              "url": null
+            }
+          ]
+        },
+        "那儿": {
+          "pinyin": "nàr",
+          "english": "there",
+          "color": "#b2bec3",
+          "pexels_query": "pointing away there that place",
+          "images": [
+            {
+              "id": "nar2_1",
+              "emoji": "👉",
+              "label": "那儿",
+              "label_en": "there",
+              "url": null
+            },
+            {
+              "id": "nar2_2",
+              "emoji": "📍",
+              "label": "在那儿",
+              "label_en": "over there",
+              "url": null
+            },
+            {
+              "id": "nar2_3",
+              "emoji": "🏙️",
+              "label": "去那儿",
+              "label_en": "go there",
+              "url": null
+            },
+            {
+              "id": "nar2_4",
+              "emoji": "🎯",
+              "label": "那边",
+              "label_en": "that side",
+              "url": null
+            }
+          ]
+        },
+        "上": {
+          "pinyin": "shàng",
+          "english": "on / above / up",
+          "color": "#fdcb6e",
+          "pexels_query": "on top above elevated shelf",
+          "images": [
+            {
+              "id": "shang_1",
+              "emoji": "⬆️",
+              "label": "上面",
+              "label_en": "on top / above",
+              "url": null
+            },
+            {
+              "id": "shang_2",
+              "emoji": "📚",
+              "label": "桌子上",
+              "label_en": "on the table",
+              "url": null
+            },
+            {
+              "id": "shang_3",
+              "emoji": "🏔️",
+              "label": "山上",
+              "label_en": "on the mountain",
+              "url": null
+            },
+            {
+              "id": "shang_4",
+              "emoji": "🛗",
+              "label": "楼上",
+              "label_en": "upstairs",
+              "url": null
+            }
+          ]
+        },
+        "下": {
+          "pinyin": "xià",
+          "english": "below / under / down",
+          "color": "#74b9ff",
+          "pexels_query": "under below ground level",
+          "images": [
+            {
+              "id": "xia_1",
+              "emoji": "⬇️",
+              "label": "下面",
+              "label_en": "below / under",
+              "url": null
+            },
+            {
+              "id": "xia_2",
+              "emoji": "🪑",
+              "label": "椅子下",
+              "label_en": "under the chair",
+              "url": null
+            },
+            {
+              "id": "xia_3",
+              "emoji": "🌊",
+              "label": "水下",
+              "label_en": "underwater",
+              "url": null
+            },
+            {
+              "id": "xia_4",
+              "emoji": "🏠",
+              "label": "楼下",
+              "label_en": "downstairs",
+              "url": null
+            }
+          ]
+        },
+        "里": {
+          "pinyin": "lǐ",
+          "english": "inside / in",
+          "color": "#00b894",
+          "pexels_query": "inside interior room interior",
+          "images": [
+            {
+              "id": "li_1",
+              "emoji": "📦",
+              "label": "里面",
+              "label_en": "inside",
+              "url": null
+            },
+            {
+              "id": "li_2",
+              "emoji": "🏠",
+              "label": "家里",
+              "label_en": "inside the house",
+              "url": null
+            },
+            {
+              "id": "li_3",
+              "emoji": "🎒",
+              "label": "书包里",
+              "label_en": "in the backpack",
+              "url": null
+            },
+            {
+              "id": "li_4",
+              "emoji": "🏫",
+              "label": "教室里",
+              "label_en": "inside the classroom",
+              "url": null
+            }
+          ]
+        },
+        "前": {
+          "pinyin": "qián",
+          "english": "front / before",
+          "color": "#e17055",
+          "pexels_query": "front forward ahead street",
+          "images": [
+            {
+              "id": "qian_1",
+              "emoji": "➡️",
+              "label": "前面",
+              "label_en": "in front",
+              "url": null
+            },
+            {
+              "id": "qian_2",
+              "emoji": "🚶",
+              "label": "向前走",
+              "label_en": "walk forward",
+              "url": null
+            },
+            {
+              "id": "qian_3",
+              "emoji": "🏫",
+              "label": "学校前面",
+              "label_en": "in front of school",
+              "url": null
+            },
+            {
+              "id": "qian_4",
+              "emoji": "🎯",
+              "label": "前方",
+              "label_en": "ahead",
+              "url": null
+            }
+          ]
+        },
+        "后": {
+          "pinyin": "hòu",
+          "english": "behind / back / after",
+          "color": "#636e72",
+          "pexels_query": "behind back rear",
+          "images": [
+            {
+              "id": "hou_1",
+              "emoji": "⬅️",
+              "label": "后面",
+              "label_en": "behind",
+              "url": null
+            },
+            {
+              "id": "hou_2",
+              "emoji": "🔙",
+              "label": "在后面",
+              "label_en": "at the back",
+              "url": null
+            },
+            {
+              "id": "hou_3",
+              "emoji": "🚶",
+              "label": "跟在后面",
+              "label_en": "following behind",
+              "url": null
+            },
+            {
+              "id": "hou_4",
+              "emoji": "🏫",
+              "label": "学校后面",
+              "label_en": "behind school",
+              "url": null
+            }
+          ]
+        },
+        "学校": {
+          "pinyin": "xué xiào",
+          "english": "school",
+          "color": "#a29bfe",
+          "pexels_query": "school building students education",
+          "images": [
+            {
+              "id": "xuexiao_1",
+              "emoji": "🏫",
+              "label": "学校",
+              "label_en": "school",
+              "url": null
+            },
+            {
+              "id": "xuexiao_2",
+              "emoji": "📚",
+              "label": "在学校",
+              "label_en": "at school",
+              "url": null
+            },
+            {
+              "id": "xuexiao_3",
+              "emoji": "🎒",
+              "label": "去学校",
+              "label_en": "going to school",
+              "url": null
+            },
+            {
+              "id": "xuexiao_4",
+              "emoji": "✏️",
+              "label": "学校上课",
+              "label_en": "class at school",
+              "url": null
+            }
+          ]
+        },
+        "医院": {
+          "pinyin": "yī yuàn",
+          "english": "hospital",
+          "color": "#d63031",
+          "pexels_query": "hospital building medical healthcare",
+          "images": [
+            {
+              "id": "yiyuan_1",
+              "emoji": "🏥",
+              "label": "医院",
+              "label_en": "hospital",
+              "url": null
+            },
+            {
+              "id": "yiyuan_2",
+              "emoji": "🚑",
+              "label": "去医院",
+              "label_en": "going to hospital",
+              "url": null
+            },
+            {
+              "id": "yiyuan_3",
+              "emoji": "👨‍⚕️",
+              "label": "医院里",
+              "label_en": "inside hospital",
+              "url": null
+            },
+            {
+              "id": "yiyuan_4",
+              "emoji": "➕",
+              "label": "医院标志",
+              "label_en": "hospital sign",
+              "url": null
+            }
+          ]
+        },
+        "商店": {
+          "pinyin": "shāng diàn",
+          "english": "shop / store",
+          "color": "#f9ca24",
+          "pexels_query": "shop store front retail",
+          "images": [
+            {
+              "id": "shangdian_1",
+              "emoji": "🏪",
+              "label": "商店",
+              "label_en": "store",
+              "url": null
+            },
+            {
+              "id": "shangdian_2",
+              "emoji": "🛒",
+              "label": "在商店",
+              "label_en": "in the store",
+              "url": null
+            },
+            {
+              "id": "shangdian_3",
+              "emoji": "💰",
+              "label": "去商店买",
+              "label_en": "shopping",
+              "url": null
+            },
+            {
+              "id": "shangdian_4",
+              "emoji": "🏬",
+              "label": "大商场",
+              "label_en": "shopping mall",
+              "url": null
+            }
+          ]
+        }
+      },
+      "dialogue_images": {
+        "1": {
+          "emoji": "📍",
+          "label": "你在哪儿",
+          "label_en": "Where Are You?",
+          "color": "#0984e3",
+          "url": null
+        },
+        "2": {
+          "emoji": "🏥",
+          "label": "医院在哪儿",
+          "label_en": "Where Is the Hospital?",
+          "color": "#d63031",
+          "url": null
+        },
+        "3": {
+          "emoji": "📖",
+          "label": "书在哪儿",
+          "label_en": "Where's the Book?",
+          "color": "#6c5ce7",
+          "url": null
+        }
+      }
+    },
+    "8": {
+      "topic": "Daily Activities",
+      "vocab_images": {
+        "去": {
+          "pinyin": "qù",
+          "english": "to go",
+          "color": "#00b894",
+          "pexels_query": "person going walking leaving",
+          "images": [
+            {
+              "id": "qu_1",
+              "emoji": "🏃",
+              "label": "去学校",
+              "label_en": "going to school",
+              "url": null
+            },
+            {
+              "id": "qu_2",
+              "emoji": "🚶",
+              "label": "去吃饭",
+              "label_en": "going to eat",
+              "url": null
+            },
+            {
+              "id": "qu_3",
+              "emoji": "✈️",
+              "label": "去旅行",
+              "label_en": "going on a trip",
+              "url": null
+            },
+            {
+              "id": "qu_4",
+              "emoji": "🚗",
+              "label": "去医院",
+              "label_en": "going to hospital",
+              "url": null
+            }
+          ]
+        },
+        "来": {
+          "pinyin": "lái",
+          "english": "to come",
+          "color": "#0984e3",
+          "pexels_query": "person arriving coming greeting welcome",
+          "images": [
+            {
+              "id": "lai_1",
+              "emoji": "🤲",
+              "label": "来吧！",
+              "label_en": "come (here)!",
+              "url": null
+            },
+            {
+              "id": "lai_2",
+              "emoji": "🚶",
+              "label": "来我家",
+              "label_en": "come to my place",
+              "url": null
+            },
+            {
+              "id": "lai_3",
+              "emoji": "🙋",
+              "label": "他来了",
+              "label_en": "he's coming",
+              "url": null
+            },
+            {
+              "id": "lai_4",
+              "emoji": "👋",
+              "label": "欢迎来",
+              "label_en": "welcome!",
+              "url": null
+            }
+          ]
+        },
+        "回": {
+          "pinyin": "huí",
+          "english": "to return",
+          "color": "#e17055",
+          "pexels_query": "returning home coming back",
+          "images": [
+            {
+              "id": "hui_1",
+              "emoji": "🔙",
+              "label": "回家",
+              "label_en": "go home",
+              "url": null
+            },
+            {
+              "id": "hui_2",
+              "emoji": "🏠",
+              "label": "回到家",
+              "label_en": "returned home",
+              "url": null
+            },
+            {
+              "id": "hui_3",
+              "emoji": "↩️",
+              "label": "回来",
+              "label_en": "come back",
+              "url": null
+            },
+            {
+              "id": "hui_4",
+              "emoji": "🚌",
+              "label": "坐车回家",
+              "label_en": "ride home",
+              "url": null
+            }
+          ]
+        },
+        "做": {
+          "pinyin": "zuò",
+          "english": "to do / to make",
+          "color": "#fdcb6e",
+          "pexels_query": "person doing working making craft",
+          "images": [
+            {
+              "id": "zuo_1",
+              "emoji": "🔨",
+              "label": "做什么？",
+              "label_en": "what are you doing?",
+              "url": null
+            },
+            {
+              "id": "zuo_2",
+              "emoji": "🍳",
+              "label": "做饭",
+              "label_en": "cooking",
+              "url": null
+            },
+            {
+              "id": "zuo_3",
+              "emoji": "✍️",
+              "label": "做作业",
+              "label_en": "doing homework",
+              "url": null
+            },
+            {
+              "id": "zuo_4",
+              "emoji": "💼",
+              "label": "做工作",
+              "label_en": "doing work",
+              "url": null
+            }
+          ]
+        },
+        "看": {
+          "pinyin": "kàn",
+          "english": "to look / watch / read",
+          "color": "#a29bfe",
+          "pexels_query": "person watching looking reading",
+          "images": [
+            {
+              "id": "kan_1",
+              "emoji": "👀",
+              "label": "看",
+              "label_en": "look / watch",
+              "url": null
+            },
+            {
+              "id": "kan_2",
+              "emoji": "📺",
+              "label": "看电视",
+              "label_en": "watching TV",
+              "url": null
+            },
+            {
+              "id": "kan_3",
+              "emoji": "📖",
+              "label": "看书",
+              "label_en": "reading a book",
+              "url": null
+            },
+            {
+              "id": "kan_4",
+              "emoji": "🎬",
+              "label": "看电影",
+              "label_en": "watching a movie",
+              "url": null
+            }
+          ]
+        },
+        "读": {
+          "pinyin": "dú",
+          "english": "to read (aloud)",
+          "color": "#6c5ce7",
+          "pexels_query": "person reading aloud book study",
+          "images": [
+            {
+              "id": "du_1",
+              "emoji": "📖",
+              "label": "读书",
+              "label_en": "reading",
+              "url": null
+            },
+            {
+              "id": "du_2",
+              "emoji": "🗣️",
+              "label": "大声读",
+              "label_en": "reading aloud",
+              "url": null
+            },
+            {
+              "id": "du_3",
+              "emoji": "🎤",
+              "label": "读汉字",
+              "label_en": "reading Chinese",
+              "url": null
+            },
+            {
+              "id": "du_4",
+              "emoji": "📚",
+              "label": "读课文",
+              "label_en": "reading lesson text",
+              "url": null
+            }
+          ]
+        },
+        "写": {
+          "pinyin": "xiě",
+          "english": "to write",
+          "color": "#00b894",
+          "pexels_query": "person writing pen paper",
+          "images": [
+            {
+              "id": "xie_1",
+              "emoji": "✍️",
+              "label": "写字",
+              "label_en": "writing",
+              "url": null
+            },
+            {
+              "id": "xie_2",
+              "emoji": "🖊️",
+              "label": "写汉字",
+              "label_en": "writing Chinese",
+              "url": null
+            },
+            {
+              "id": "xie_3",
+              "emoji": "📝",
+              "label": "写作业",
+              "label_en": "writing homework",
+              "url": null
+            },
+            {
+              "id": "xie_4",
+              "emoji": "🖋️",
+              "label": "写名字",
+              "label_en": "writing a name",
+              "url": null
+            }
+          ]
+        },
+        "看见": {
+          "pinyin": "kàn jiàn",
+          "english": "to see",
+          "color": "#f9ca24",
+          "pexels_query": "person seeing spotting eye",
+          "images": [
+            {
+              "id": "kanjian_1",
+              "emoji": "👁️",
+              "label": "看见",
+              "label_en": "see / spot",
+              "url": null
+            },
+            {
+              "id": "kanjian_2",
+              "emoji": "🔍",
+              "label": "看见了！",
+              "label_en": "I can see it!",
+              "url": null
+            },
+            {
+              "id": "kanjian_3",
+              "emoji": "👀",
+              "label": "你看见吗",
+              "label_en": "can you see it?",
+              "url": null
+            },
+            {
+              "id": "kanjian_4",
+              "emoji": "🌟",
+              "label": "看见星星",
+              "label_en": "seeing stars",
+              "url": null
+            }
+          ]
+        },
+        "电视": {
+          "pinyin": "diàn shì",
+          "english": "television",
+          "color": "#d63031",
+          "pexels_query": "television TV screen watching",
+          "images": [
+            {
+              "id": "dianshi_1",
+              "emoji": "📺",
+              "label": "电视",
+              "label_en": "TV",
+              "url": null
+            },
+            {
+              "id": "dianshi_2",
+              "emoji": "🛋️",
+              "label": "看电视",
+              "label_en": "watching TV",
+              "url": null
+            },
+            {
+              "id": "dianshi_3",
+              "emoji": "📡",
+              "label": "电视节目",
+              "label_en": "TV program",
+              "url": null
+            },
+            {
+              "id": "dianshi_4",
+              "emoji": "🎮",
+              "label": "电视游戏",
+              "label_en": "TV game",
+              "url": null
+            }
+          ]
+        },
+        "电影": {
+          "pinyin": "diàn yǐng",
+          "english": "movie / film",
+          "color": "#2d3436",
+          "pexels_query": "movie cinema film theater",
+          "images": [
+            {
+              "id": "dianying_1",
+              "emoji": "🎬",
+              "label": "电影",
+              "label_en": "movie",
+              "url": null
+            },
+            {
+              "id": "dianying_2",
+              "emoji": "🍿",
+              "label": "看电影",
+              "label_en": "watching a movie",
+              "url": null
+            },
+            {
+              "id": "dianying_3",
+              "emoji": "🎥",
+              "label": "电影院",
+              "label_en": "cinema",
+              "url": null
+            },
+            {
+              "id": "dianying_4",
+              "emoji": "🎞️",
+              "label": "好看电影",
+              "label_en": "great film",
+              "url": null
+            }
+          ]
+        },
+        "汉字": {
+          "pinyin": "hàn zì",
+          "english": "Chinese character",
+          "color": "#e17055",
+          "pexels_query": "Chinese calligraphy character writing",
+          "images": [
+            {
+              "id": "hanzi_1",
+              "emoji": "🈶",
+              "label": "汉字",
+              "label_en": "Chinese character",
+              "url": null
+            },
+            {
+              "id": "hanzi_2",
+              "emoji": "✍️",
+              "label": "写汉字",
+              "label_en": "writing characters",
+              "url": null
+            },
+            {
+              "id": "hanzi_3",
+              "emoji": "🖌️",
+              "label": "汉字书法",
+              "label_en": "Chinese calligraphy",
+              "url": null
+            },
+            {
+              "id": "hanzi_4",
+              "emoji": "📖",
+              "label": "读汉字",
+              "label_en": "reading characters",
+              "url": null
+            }
+          ]
+        },
+        "工作": {
+          "pinyin": "gōng zuò",
+          "english": "work / to work",
+          "color": "#74b9ff",
+          "pexels_query": "working office laptop professional",
+          "images": [
+            {
+              "id": "gongzuo_1",
+              "emoji": "💼",
+              "label": "工作",
+              "label_en": "work",
+              "url": null
+            },
+            {
+              "id": "gongzuo_2",
+              "emoji": "💻",
+              "label": "在工作",
+              "label_en": "working",
+              "url": null
+            },
+            {
+              "id": "gongzuo_3",
+              "emoji": "🏢",
+              "label": "去工作",
+              "label_en": "going to work",
+              "url": null
+            },
+            {
+              "id": "gongzuo_4",
+              "emoji": "👔",
+              "label": "爸爸工作",
+              "label_en": "dad working",
+              "url": null
+            }
+          ]
+        }
+      },
+      "dialogue_images": {
+        "1": {
+          "emoji": "🏃",
+          "label": "去哪儿",
+          "label_en": "Where Are You Going?",
+          "color": "#00b894",
+          "url": null
+        },
+        "2": {
+          "emoji": "🏠",
+          "label": "来我家",
+          "label_en": "Come to My Place!",
+          "color": "#e17055",
+          "url": null
+        },
+        "3": {
+          "emoji": "🎬",
+          "label": "她在做什么",
+          "label_en": "What Is She Doing?",
+          "color": "#6c5ce7",
+          "url": null
+        }
+      }
+    }
+  }
+}

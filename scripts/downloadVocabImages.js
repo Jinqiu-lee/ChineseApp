@@ -16,7 +16,7 @@ const path = require('path');
 const https = require('https');
 
 // ── Config ─────────────────────────────────────────────────────────────────
-const DATA_FILE  = path.join(__dirname, '../data/hsk1_l5_images.json');
+const DATA_FILE  = path.join(__dirname, '../data/hsk1/hsk1_images/hsk1_images.json');
 const OUT_DIR    = path.join(__dirname, '../assets/vocab_images/hsk1_l5');
 const IMAGES_PER_WORD = 4;
 const PEXELS_API = 'https://api.pexels.com/v1/search';

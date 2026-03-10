@@ -1,23 +1,12 @@
-// ── Image data (lazy-loaded per lesson) ───────────────────────────────────
-// React Native requires static require() calls, so all files must be listed.
-const IMAGE_FILES = {
-  1: () => require('../data/hsk1_l1_images.json'),
-  2: () => require('../data/hsk1_l2_images.json'),
-  3: () => require('../data/hsk1_l3_images.json'),
-  4: () => require('../data/hsk1_l4_images.json'),
-  5: () => require('../data/hsk1_l5_images.json'),
-  6: () => require('../data/hsk1_l6_images.json'),
-  7: () => require('../data/hsk1_l7_images.json'),
-  8: () => require('../data/hsk1_l8_images.json'),
-};
+// ── Image data — single consolidated file per level ──────────────────────
+const HSK1_IMAGES = require('../data/hsk1/hsk1_images/hsk1_images.json');
 
 const _imageCache = {};
 function getImageData(lessonNumber) {
   const key = lessonNumber || 5;
   if (!_imageCache[key]) {
     try {
-      const loader = IMAGE_FILES[key];
-      _imageCache[key] = loader ? loader().vocab_images || {} : {};
+      _imageCache[key] = HSK1_IMAGES.lessons?.[String(key)]?.vocab_images || {};
     } catch {
       _imageCache[key] = {};
     }

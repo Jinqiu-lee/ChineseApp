@@ -2,27 +2,13 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { speakChinese } from '../utils/tts';
 
-// ── Dialogue scene images (lazy-loaded per lesson) ────────────────────────
-const DIALOGUE_IMAGE_FILES = {
-  1: () => require('../data/hsk1_l1_images.json'),
-  2: () => require('../data/hsk1_l2_images.json'),
-  3: () => require('../data/hsk1_l3_images.json'),
-  4: () => require('../data/hsk1_l4_images.json'),
-  5: () => require('../data/hsk1_l5_images.json'),
-  6: () => require('../data/hsk1_l6_images.json'),
-  7: () => require('../data/hsk1_l7_images.json'),
-  8: () => require('../data/hsk1_l8_images.json'),
-};
-const _dialogueCache = {};
+// ── Dialogue scene images — single consolidated file per level ───────────
+const HSK1_IMAGES = require('../data/hsk1/hsk1_images/hsk1_images.json');
 
 function getDialogueImage(dialogueId, lessonNumber) {
-  const key = lessonNumber || 5;
   try {
-    if (!_dialogueCache[key]) {
-      const loader = DIALOGUE_IMAGE_FILES[key];
-      _dialogueCache[key] = loader ? loader().dialogue_images || {} : {};
-    }
-    return _dialogueCache[key][String(dialogueId)] || null;
+    const lesson = HSK1_IMAGES.lessons?.[String(lessonNumber || 5)];
+    return lesson?.dialogue_images?.[String(dialogueId)] || null;
   } catch { return null; }
 }
 
