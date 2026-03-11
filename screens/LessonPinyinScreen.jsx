@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { speakChinese } from '../utils/tts';
+import { speakPinyin } from '../utils/tts';
 import { buildPinyinExercises } from '../utils/stageGenerator';
 import PinyinExercise from '../components/exercises/PinyinExercise';
 
@@ -13,41 +13,17 @@ const TONE_NUM = {
   'ū':1,'ú':2,'ǔ':3,'ù':4,
   'ǖ':1,'ǘ':2,'ǚ':3,'ǜ':4,
 };
-const TONE_STRIP = {
-  'ā':'a','á':'a','ǎ':'a','à':'a',
-  'ē':'e','é':'e','ě':'e','è':'e',
-  'ī':'i','í':'i','ǐ':'i','ì':'i',
-  'ō':'o','ó':'o','ǒ':'o','ò':'o',
-  'ū':'u','ú':'u','ǔ':'u','ù':'u',
-  'ǖ':'u','ǘ':'u','ǚ':'u','ǜ':'u',
-};
 
 function detectTone(syllable) {
   for (const ch of syllable) { if (TONE_NUM[ch]) return TONE_NUM[ch]; }
   return 0;
-}
-function stripTones(s) {
-  return [...s].map(c => TONE_STRIP[c] ?? c).join('');
 }
 
 const TONE_COLORS = ['#FF6B6B', '#FF9F43', '#1DD1A1', '#54A0FF'];
 const TONE_NAMES  = ['', '1st Tone ā', '2nd Tone á', '3rd Tone ǎ', '4th Tone à'];
 
 export default function LessonPinyinScreen({ lessonData, onBack, onOpenFoundations }) {
-  const pf    = lessonData?.pinyin_focus || {};
-  const vocab = lessonData?.vocabulary   || [];
-
-  // Build stripped-pinyin → Chinese character lookup
-  const pinyinToChar = useMemo(() => {
-    const map = {};
-    for (const item of vocab) {
-      if (item.pinyin && item.chinese) {
-        const key = stripTones(item.pinyin.replace(/\s+/g, ''));
-        map[key] = item.chinese;
-      }
-    }
-    return map;
-  }, [vocab]);
+  const pf = lessonData?.pinyin_focus || {};
 
   const exercises = useMemo(
     () => buildPinyinExercises(lessonData).slice(0, 10),
@@ -165,15 +141,13 @@ export default function LessonPinyinScreen({ lessonData, onBack, onOpenFoundatio
             </View>
             <View style={styles.tonesGrid}>
               {tonePractice.map((syl, i) => {
-                const toneNum  = detectTone(syl);
-                const color    = TONE_COLORS[(toneNum - 1) % 4] || '#54A0FF';
-                const stripped = stripTones(syl.replace(/\s+/g, ''));
-                const charToPlay = pinyinToChar[stripped] || syl;
+                const toneNum = detectTone(syl);
+                const color   = TONE_COLORS[(toneNum - 1) % 4] || '#54A0FF';
                 return (
                   <TouchableOpacity
                     key={i}
                     style={[styles.toneCard, { borderColor: color, backgroundColor: color + '18' }]}
-                    onPress={() => speakChinese(charToPlay)}
+                    onPress={() => speakPinyin(syl)}
                     activeOpacity={0.75}
                   >
                     <Text style={styles.toneCardIcon}>🔊</Text>
@@ -195,7 +169,7 @@ export default function LessonPinyinScreen({ lessonData, onBack, onOpenFoundatio
             </View>
             <View style={styles.chipsRow}>
               {initials.map((init, i) => (
-                <TouchableOpacity key={i} style={styles.chip} onPress={() => speakChinese(init)} activeOpacity={0.75}>
+                <TouchableOpacity key={i} style={styles.chip} onPress={() => speakPinyin(init)} activeOpacity={0.75}>
                   <Text style={styles.chipText}>{init}</Text>
                 </TouchableOpacity>
               ))}
@@ -212,7 +186,7 @@ export default function LessonPinyinScreen({ lessonData, onBack, onOpenFoundatio
             </View>
             <View style={styles.chipsRow}>
               {finals.map((fin, i) => (
-                <TouchableOpacity key={i} style={[styles.chip, styles.chipFinal]} onPress={() => speakChinese(fin)} activeOpacity={0.75}>
+                <TouchableOpacity key={i} style={[styles.chip, styles.chipFinal]} onPress={() => speakPinyin(fin)} activeOpacity={0.75}>
                   <Text style={[styles.chipText, styles.chipFinalText]}>{fin}</Text>
                 </TouchableOpacity>
               ))}

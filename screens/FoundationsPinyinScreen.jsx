@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { speakChinese } from '../utils/tts';
+import { speakChinese, speakPinyin } from '../utils/tts';
 
 const TONES = [
   { num: 1, mark: 'ā', name: 'First Tone',  desc: 'High and level — hold it steady and flat',   color: '#FF6B6B', example: '妈', pinyin: 'mā', meaning: 'mother' },
@@ -27,20 +27,6 @@ const FINALS = [
   { group: 'Nasal (ng)',     items: ['ang','eng','ing','ong'] },
 ];
 
-// Example Chinese characters to play audio for each initial
-const INITIAL_EXAMPLES = {
-  'b':'爸','p':'怕','m':'妈','f':'发','d':'打','t':'他','n':'你','l':'来',
-  'g':'哥','k':'可','h':'好','j':'叫','q':'去','x':'小',
-  'zh':'中','ch':'吃','sh':'是','r':'人','z':'在','c':'才','s':'四','y':'一','w':'我',
-};
-
-// Example Chinese characters for finals audio
-const FINAL_EXAMPLES = {
-  'a':'啊','o':'哦','e':'额','i':'一','u':'五','ü':'鱼',
-  'ai':'爱','ei':'给','ui':'回','ao':'好','ou':'走','iu':'牛','ie':'写','üe':'月','er':'耳',
-  'an':'安','en':'恩','in':'音','un':'温','ün':'云',
-  'ang':'忙','eng':'冷','ing':'听','ong':'红',
-};
 
 export default function FoundationsPinyinScreen({ onBack, lessonContext = null }) {
   return (
@@ -135,7 +121,7 @@ export default function FoundationsPinyinScreen({ onBack, lessonContext = null }
             <TouchableOpacity
               key={i}
               style={styles.chipInitial}
-              onPress={() => speakChinese(INITIAL_EXAMPLES[init] || init)}
+              onPress={() => speakPinyin(init)}
               activeOpacity={0.75}
             >
               <Text style={styles.chipInitialText}>{init}</Text>
@@ -158,7 +144,7 @@ export default function FoundationsPinyinScreen({ onBack, lessonContext = null }
                 <TouchableOpacity
                   key={i}
                   style={styles.chipFinal}
-                  onPress={() => speakChinese(FINAL_EXAMPLES[fin] || fin)}
+                  onPress={() => speakPinyin(fin)}
                   activeOpacity={0.75}
                 >
                   <Text style={styles.chipFinalText}>{fin}</Text>
