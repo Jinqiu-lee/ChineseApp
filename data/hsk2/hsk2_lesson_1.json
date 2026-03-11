@@ -1,0 +1,141 @@
+{
+  "lesson": 2,
+  "topic": "Travel Time",
+  "topic_chinese": "九月去北京旅游最好",
+  "age_group": "Adults and 10+",
+  "objectives": ["listening","speaking","reading","writing"],
+
+  "vocabulary": [
+    {
+      "id": "hsk2_l2_01",
+      "chinese": "九月",
+      "pinyin": "jiǔ yuè",
+      "tones": [3,4],
+      "english": "September",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l2_02",
+      "chinese": "北京",
+      "pinyin": "běi jīng",
+      "tones": [3,1],
+      "english": "Beijing",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l2_03",
+      "chinese": "旅游",
+      "pinyin": "lǚ yóu",
+      "tones": [3,2],
+      "english": "To travel",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l2_04",
+      "chinese": "最好",
+      "pinyin": "zuì hǎo",
+      "tones": [4,3],
+      "english": "Best",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l2_05",
+      "chinese": "时候",
+      "pinyin": "shí hou",
+      "tones": [2,0],
+      "english": "Time / moment",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l2_06",
+      "chinese": "天气",
+      "pinyin": "tiān qì",
+      "tones": [1,4],
+      "english": "Weather",
+      "part_of_speech": "noun"
+    }
+  ],
+
+  "key_sentences": [
+    {
+      "chinese": "九月去北京旅游最好。",
+      "pinyin": "Jiǔ yuè qù Běi jīng lǚ yóu zuì hǎo.",
+      "english": "September is the best time to travel to Beijing."
+    },
+    {
+      "chinese": "北京的天气很好。",
+      "pinyin": "Běi jīng de tiān qì hěn hǎo.",
+      "english": "The weather in Beijing is very good."
+    },
+    {
+      "chinese": "什么时候去北京最好？",
+      "pinyin": "Shén me shí hou qù Běi jīng zuì hǎo?",
+      "english": "When is the best time to go to Beijing?"
+    }
+  ],
+
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "Using 最 (zuì) for superlative",
+      "explanation": "最 means 'most' or 'best'. It is used before adjectives to form the superlative.",
+      "examples": [
+        {
+          "chinese": "九月去北京旅游最好。",
+          "pinyin": "Jiǔ yuè qù Běi jīng lǚ yóu zuì hǎo.",
+          "english": "September is the best time to travel to Beijing."
+        },
+        {
+          "chinese": "这个地方最好。",
+          "pinyin": "Zhè ge dì fāng zuì hǎo.",
+          "english": "This place is the best."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: 九月去北京旅游___好。",
+          "type": "multiple_choice",
+          "correct": "最",
+          "options": ["最","很","也","不"]
+        }
+      ]
+    }
+  ],
+
+  "quiz": [
+    {
+      "question": "What does 旅游 mean?",
+      "type": "multiple_choice",
+      "correct": "To travel",
+      "options": ["To travel","To study","To work","To eat"]
+    },
+    {
+      "question": "What does 最好 mean?",
+      "type": "multiple_choice",
+      "correct": "Best",
+      "options": ["Worst","Best","Small","Fast"]
+    }
+  ],
+
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Travel Plan",
+      "title_chinese": "旅游计划",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "什么时候去北京最好？",
+          "pinyin": "Shén me shí hou qù Běi jīng zuì hǎo?",
+          "english": "When is the best time to go to Beijing?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "九月去北京旅游最好。",
+          "pinyin": "Jiǔ yuè qù Běi jīng lǚ yóu zuì hǎo.",
+          "english": "September is the best time."
+        }
+      ]
+    }
+  ]
+}

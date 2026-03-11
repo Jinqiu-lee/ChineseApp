@@ -1,0 +1,126 @@
+{
+  "lesson": 2,
+  "topic": "Travel Time",
+  "topic_chinese": "九月去北京旅游最好",
+
+  "vocabulary": [
+    {
+      "id": "hsk2_l2_07",
+      "chinese": "春天",
+      "pinyin": "chūn tiān",
+      "tones": [1,1],
+      "english": "Spring",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l2_08",
+      "chinese": "夏天",
+      "pinyin": "xià tiān",
+      "tones": [4,1],
+      "english": "Summer",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l2_09",
+      "chinese": "秋天",
+      "pinyin": "qiū tiān",
+      "tones": [1,1],
+      "english": "Autumn",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l2_10",
+      "chinese": "冬天",
+      "pinyin": "dōng tiān",
+      "tones": [1,1],
+      "english": "Winter",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l2_11",
+      "chinese": "因为",
+      "pinyin": "yīn wèi",
+      "tones": [1,4],
+      "english": "Because",
+      "part_of_speech": "conjunction"
+    }
+  ],
+
+  "key_sentences": [
+    {
+      "chinese": "秋天的北京很漂亮。",
+      "pinyin": "Qiū tiān de Běi jīng hěn piào liang.",
+      "english": "Beijing in autumn is very beautiful."
+    },
+    {
+      "chinese": "我想去北京旅游。",
+      "pinyin": "Wǒ xiǎng qù Běi jīng lǚ yóu.",
+      "english": "I want to travel to Beijing."
+    }
+  ],
+
+  "grammar_points": [
+    {
+      "number": 2,
+      "title": "Because – 因为",
+      "explanation": "因为 means 'because'. It introduces the reason for something.",
+      "examples": [
+        {
+          "chinese": "因为天气很好。",
+          "pinyin": "Yīn wèi tiān qì hěn hǎo.",
+          "english": "Because the weather is very good."
+        },
+        {
+          "chinese": "因为我喜欢北京。",
+          "pinyin": "Yīn wèi wǒ xǐ huān Běi jīng.",
+          "english": "Because I like Beijing."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: ___天气很好。",
+          "type": "multiple_choice",
+          "correct": "因为",
+          "options": ["因为","所以","但是","如果"]
+        }
+      ]
+    }
+  ],
+
+  "quiz": [
+    {
+      "question": "What does 秋天 mean?",
+      "type": "multiple_choice",
+      "correct": "Autumn",
+      "options": ["Spring","Summer","Autumn","Winter"]
+    },
+    {
+      "question": "What does 因为 mean?",
+      "type": "multiple_choice",
+      "correct": "Because",
+      "options": ["Because","If","But","When"]
+    }
+  ],
+
+  "dialogues": [
+    {
+      "id": 2,
+      "title": "Why Travel in September",
+      "title_chinese": "为什么九月去北京",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你什么时候去北京？",
+          "pinyin": "Nǐ shén me shí hou qù Běi jīng?",
+          "english": "When will you go to Beijing?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "九月，因为天气很好。",
+          "pinyin": "Jiǔ yuè, yīn wèi tiān qì hěn hǎo.",
+          "english": "September, because the weather is good."
+        }
+      ]
+    }
+  ]
+}
