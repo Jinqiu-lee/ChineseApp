@@ -1,6 +1,7 @@
 import { Audio } from 'expo-av';
 import * as FileSystem from 'expo-file-system/legacy';
 import { GOOGLE_API_KEY } from '../config/googleApiKey';
+import { PINYIN_AUDIO } from './pinyinAudio';
 
 const GOOGLE_TTS_API_KEY = GOOGLE_API_KEY;
 
@@ -82,14 +83,47 @@ const FINAL_CANONICAL_PY = {
   'ang':'ang2','eng':'eng1','ing':'ying1','ong':'hong2',
 };
 
-// Speak a pinyin syllable (with or without tone marks) using SSML phoneme.
-// Examples: speakPinyin("mā"), speakPinyin("ma1"), speakPinyin("b") (uses canonical)
+// Derive the PINYIN_AUDIO map key for a given syllable input.
+// Returns e.g. 'init_b', 'fin_ao', 'fin_v' (for ü), or 'ma1' for tone practice.
+function getPinyinAudioKey(syllable) {
+  const lower = syllable.toLowerCase().trim();
+  // Normalize ü → v for filename safety
+  const normalized = lower.replace(/ü/g, 'v');
+  if (INITIAL_CANONICAL_PY[normalized] || INITIAL_CANONICAL_PY[lower]) return `init_${normalized}`;
+  if (FINAL_CANONICAL_PY[normalized] || FINAL_CANONICAL_PY[lower])   return `fin_${normalized}`;
+  // Tone-practice syllable → numbered form (e.g. "mā" → "ma1")
+  return pinyinToNumbered(normalized);
+}
+
+// Play a bundled local MP3 asset (from the require() map).
+async function playLocalAudio(assetModule) {
+  await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
+  const { sound } = await Audio.Sound.createAsync(assetModule);
+  await sound.playAsync();
+  sound.setOnPlaybackStatusUpdate((s) => { if (s.didJustFinish) sound.unloadAsync(); });
+}
+
+// Speak a pinyin syllable. Uses your recorded MP3 if available, falls back to TTS.
+// Examples: speakPinyin("mā"), speakPinyin("b"), speakPinyin("ao")
 export async function speakPinyin(syllable, gender = 'female') {
+  // ── 1. Try local recording first ────────────────────────────────────────
+  const key = getPinyinAudioKey(syllable);
+  const localAsset = PINYIN_AUDIO[key];
+  if (localAsset) {
+    try {
+      await playLocalAudio(localAsset);
+      return;
+    } catch (err) {
+      console.warn('speakPinyin: local file failed, falling back to TTS:', err);
+    }
+  }
+
+  // ── 2. Fall back to Google TTS ───────────────────────────────────────────
   if (!GOOGLE_TTS_API_KEY || GOOGLE_TTS_API_KEY === 'YOUR_GOOGLE_CLOUD_API_KEY_HERE') {
-    console.warn('tts.js: Set your GOOGLE_TTS_API_KEY to enable audio.');
+    console.warn('tts.js: No local audio and no API key set.');
     return;
   }
-  // If it's a bare initial or final with no tone mark, look up canonical syllable
+
   const lower = syllable.toLowerCase().trim();
   let numbered;
   if (INITIAL_CANONICAL_PY[lower]) {
@@ -106,7 +140,6 @@ export async function speakPinyin(syllable, gender = 'female') {
   try {
     let base64Audio = audioCache.get(cacheKey);
     if (!base64Audio) {
-      // Use SSML phoneme — "啊" is a placeholder, pronunciation is driven by ph attribute
       const ssml = `<speak><phoneme alphabet="pinyin" ph="${numbered}">啊</phoneme></speak>`;
       const res = await fetch(
         `https://texttospeech.googleapis.com/v1/text:synthesize?key=${GOOGLE_TTS_API_KEY}`,
@@ -129,7 +162,7 @@ export async function speakPinyin(syllable, gender = 'female') {
     await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
     const { sound } = await Audio.Sound.createAsync({ uri: TMP_FILE });
     await sound.playAsync();
-    sound.setOnPlaybackStatusUpdate((status) => { if (status.didJustFinish) sound.unloadAsync(); });
+    sound.setOnPlaybackStatusUpdate((s) => { if (s.didJustFinish) sound.unloadAsync(); });
   } catch (err) {
     console.error('speakPinyin error:', err);
   }
