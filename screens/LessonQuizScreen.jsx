@@ -11,17 +11,19 @@ import ArrangeSentenceExercise from '../components/exercises/ArrangeSentenceExer
 import MatchPairsExercise    from '../components/exercises/MatchPairsExercise';
 import SpeakExercise         from '../components/exercises/SpeakExercise';
 import ImageExercise         from '../components/exercises/ImageExercise';
+import PinyinExercise        from '../components/exercises/PinyinExercise';
 
 const PASS_SCORE   = 60;
 const REVIEW_SCORE = 50;
 
 const TYPE_LABELS = {
-  audio_choice:   '🎧 Listen & Choose',
-  fill_blank:     '✏️ Fill in the Blank',
-  arrange:        '🧩 Build the Sentence',
-  match_pairs:    '🔄 Match Pairs',
-  speak:          '🎤 Speaking',
-  image_exercise: '🖼️ Picture Quiz',
+  audio_choice:    '🎧 Listen & Choose',
+  fill_blank:      '✏️ Fill in the Blank',
+  arrange:         '🧩 Build the Sentence',
+  match_pairs:     '🔄 Match Pairs',
+  speak:           '🎤 Speaking',
+  image_exercise:  '🖼️ Picture Quiz',
+  pinyin_exercise: '🎵 Pinyin Focus',
 };
 
 export default function LessonQuizScreen({ lessonData, onBack }) {
@@ -158,6 +160,16 @@ export default function LessonQuizScreen({ lessonData, onBack }) {
     );
   }
 
+  // ── Safety net: skip unrenderable types (e.g. flashcard fallbacks) ──────────
+  const RENDERABLE_TYPES = new Set([
+    'audio_choice', 'fill_blank', 'arrange', 'match_pairs', 'speak', 'image_exercise', 'pinyin_exercise',
+  ]);
+  if (!RENDERABLE_TYPES.has(exercise.type)) {
+    // Auto-advance past this exercise on next tick
+    setTimeout(() => advance(false), 0);
+    return null;
+  }
+
   // ── Quiz Screen ────────────────────────────────────────────────────────────
   const typeLabel = TYPE_LABELS[exercise.type] ?? '📝 Quiz';
 
@@ -230,6 +242,14 @@ export default function LessonQuizScreen({ lessonData, onBack }) {
         )}
         {exercise.type === 'image_exercise' && (
           <ImageExercise
+            key={currentIndex}
+            exercise={exercise}
+            onCorrect={() => advance(true)}
+            onWrong={() => advance(false)}
+          />
+        )}
+        {exercise.type === 'pinyin_exercise' && (
+          <PinyinExercise
             key={currentIndex}
             exercise={exercise}
             onCorrect={() => advance(true)}

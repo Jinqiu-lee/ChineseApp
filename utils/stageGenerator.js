@@ -148,6 +148,136 @@ function buildPinyinMap(vocab) {
   return map;
 }
 
+// ── Pinyin exercise helpers ──────────────────────────────────────────────
+
+const TONE_NUM = {
+  'ā':1,'á':2,'ǎ':3,'à':4,
+  'ē':1,'é':2,'ě':3,'è':4,
+  'ī':1,'í':2,'ǐ':3,'ì':4,
+  'ō':1,'ó':2,'ǒ':3,'ò':4,
+  'ū':1,'ú':2,'ǔ':3,'ù':4,
+  'ǖ':1,'ǘ':2,'ǚ':3,'ǜ':4,
+};
+const TONE_STRIP = {
+  'ā':'a','á':'a','ǎ':'a','à':'a',
+  'ē':'e','é':'e','ě':'e','è':'e',
+  'ī':'i','í':'i','ǐ':'i','ì':'i',
+  'ō':'o','ó':'o','ǒ':'o','ò':'o',
+  'ū':'u','ú':'u','ǔ':'u','ù':'u',
+  'ǖ':'u','ǘ':'u','ǚ':'u','ǜ':'u',
+};
+const TONE_LABELS = ['1st tone (ā)', '2nd tone (á)', '3rd tone (ǎ)', '4th tone (à)'];
+const INITIALS_ORDERED = ['zh','ch','sh','b','p','m','f','d','t','n','l','g','k','h','j','q','x','r','z','c','s','y','w'];
+
+function detectTone(syllable) {
+  for (const ch of syllable) { if (TONE_NUM[ch]) return TONE_NUM[ch]; }
+  return 0;
+}
+
+function stripTones(s) {
+  return [...s].map(c => TONE_STRIP[c] ?? c).join('');
+}
+
+function extractInitial(syllable) {
+  const base = stripTones(syllable.toLowerCase().split(' ')[0]);
+  for (const init of INITIALS_ORDERED) {
+    if (base.startsWith(init)) return init;
+  }
+  return null;
+}
+
+function extractFinal(syllable) {
+  const base = stripTones(syllable.toLowerCase().split(' ')[0]);
+  const init = extractInitial(syllable);
+  if (!init) return base;
+  return base.slice(init.length) || null;
+}
+
+// ── Pinyin exercise factories ─────────────────────────────────────────────
+
+function makePinyinToneId(syllable, vocabItem = null) {
+  const toneNum = detectTone(syllable);
+  if (!toneNum) return null; // skip neutral / undetected
+  return {
+    type: 'pinyin_exercise',
+    subtype: 'tone_id',
+    syllable,
+    chinese: vocabItem?.chinese ?? null,
+    english: vocabItem?.english ?? null,
+    correct: TONE_LABELS[toneNum - 1],
+    choices: TONE_LABELS.slice(),
+  };
+}
+
+function makePinyinInitialId(syllable, initialsPool, vocabItem = null) {
+  const firstSyl = syllable.split(' ')[0];
+  const correct = extractInitial(firstSyl);
+  if (!correct || !initialsPool.includes(correct)) return null;
+  const others = shuffle(initialsPool.filter(i => i !== correct)).slice(0, 3);
+  if (others.length < 2) return null;
+  return {
+    type: 'pinyin_exercise',
+    subtype: 'initial_id',
+    syllable: firstSyl,
+    chinese: vocabItem?.chinese ?? null,
+    english: vocabItem?.english ?? null,
+    correct,
+    choices: shuffle([correct, ...others]),
+  };
+}
+
+function makePinyinFinalId(syllable, finalsPool, vocabItem = null) {
+  const firstSyl = syllable.split(' ')[0];
+  const correct = extractFinal(firstSyl);
+  if (!correct || !finalsPool.includes(correct)) return null;
+  const others = shuffle(finalsPool.filter(f => f !== correct)).slice(0, 3);
+  if (others.length < 2) return null;
+  return {
+    type: 'pinyin_exercise',
+    subtype: 'final_id',
+    syllable: firstSyl,
+    chinese: vocabItem?.chinese ?? null,
+    english: vocabItem?.english ?? null,
+    correct,
+    choices: shuffle([correct, ...others]),
+  };
+}
+
+// Build all pinyin exercises for a lesson from its pinyin_focus data
+function buildPinyinExercises(lessonData) {
+  const pf = lessonData?.pinyin_focus;
+  if (!pf) return [];
+
+  const tonePractice = pf.tone_practice || [];
+  const initials     = pf.initials_focus  || pf.initials_review  || [];
+  const finals       = pf.finals_focus    || pf.finals_review    || [];
+
+  // Build vocab lookup: stripped-pinyin → vocabItem
+  const vocabByPinyin = {};
+  (lessonData.vocabulary || []).forEach(v => {
+    if (v.pinyin) vocabByPinyin[stripTones(v.pinyin.toLowerCase().trim())] = v;
+  });
+
+  const exercises = [];
+  for (const syllable of tonePractice) {
+    const key = stripTones(syllable.toLowerCase().trim());
+    const vocabItem = vocabByPinyin[key] || vocabByPinyin[stripTones(syllable.split(' ')[0].toLowerCase())] || null;
+
+    const toneEx   = makePinyinToneId(syllable, vocabItem);
+    if (toneEx) exercises.push(toneEx);
+
+    if (initials.length >= 3) {
+      const initEx = makePinyinInitialId(syllable, initials, vocabItem);
+      if (initEx) exercises.push(initEx);
+    }
+    if (finals.length >= 3) {
+      const finalEx = makePinyinFinalId(syllable, finals, vocabItem);
+      if (finalEx) exercises.push(finalEx);
+    }
+  }
+  return exercises.filter(Boolean);
+}
+
 // ── Exercise factories ───────────────────────────────────────────────────
 function makeFlashcard(vocabItem) {
   return { type: 'flashcard', vocabItem };
@@ -451,7 +581,7 @@ function buildMasteryRound(vocab, sentences, pool, respondOrFallback, L) {
   return [s1, s2, s3, s4, s5];
 }
 
-// ── Quiz Round – mixed types, no flashcards ───────────────────────────────
+// ── Quiz Round – mixed types including pinyin, no flashcards ─────────────
 export function generateQuizRound(lessonData) {
   const vocab     = lessonData.vocabulary || [];
   const sentences = (lessonData.key_sentences || []).filter(s => s?.chinese);
@@ -463,6 +593,10 @@ export function generateQuizRound(lessonData) {
     qaPairs.length > 0
       ? makeSpeakRespond(qaPairs[i % qaPairs.length])
       : makeSpeakRepeat(p(pool, i));
+
+  // Pick up to 3 pinyin exercises from the lesson
+  const pinyinPool = shuffle(buildPinyinExercises(lessonData));
+  const pinyinPick = pinyinPool.slice(0, 3);
 
   const raw = [
     // Audio listen-and-choose (3)
@@ -480,13 +614,15 @@ export function generateQuizRound(lessonData) {
     // Match pairs (2)
     makeMatchPairs(shuffle([...vocab]).slice(0, 4)),
     makeMatchPairs(shuffle([...vocab]).slice(0, 4)),
-    // Image exercises (2)
-    makeImageToWord(v(vocab, 2), vocab, L, 0),
-    makeWordToImage(v(vocab, 5), vocab, L, 1),
+    // Image exercises (2) — fall back to audio_choice if no images available
+    (function() { const r = makeImageToWord(v(vocab, 2), vocab, L, 0); return r.type === 'flashcard' ? makeAudioChoice(v(vocab, 2), vocab) : r; })(),
+    (function() { const r = makeWordToImage(v(vocab, 5), vocab, L, 1); return r.type === 'flashcard' ? makeAudioChoice(v(vocab, 5), vocab) : r; })(),
     // Speaking – repeat, translate, Q&A respond (3)
     makeSpeakRepeat(p(pool, 1)),
     makeSpeakTranslate(p(pool, 3)),
     respondOrFallback(0),
+    // Pinyin focus (up to 3)
+    ...pinyinPick,
   ].filter(Boolean);
 
   return shuffle(raw);
@@ -506,11 +642,24 @@ export function generateRounds(lessonData) {
       ? makeSpeakRespond(qaPairs[i % qaPairs.length])
       : makeSpeakRepeat(p(pool, i));
 
-  return [
+  const rounds = [
     buildLearnRound(vocab, sentences, pool, L),
     buildPracticeRound(vocab, sentences, pool, respondOrFallback, L),
     buildMasteryRound(vocab, sentences, pool, respondOrFallback, L),
   ];
+
+  // Inject pinyin exercises: 1 into stage 2 (Listen & Choose) + 1 into stage 5 (Final Challenge)
+  // of each round, cycling through the pinyin pool
+  const pinyinPool = shuffle(buildPinyinExercises(lessonData));
+  if (pinyinPool.length > 0) {
+    let pIdx = 0;
+    for (const round of rounds) {
+      if (pIdx < pinyinPool.length) round[1].push(pinyinPool[pIdx++]); // stage 2
+      if (pIdx < pinyinPool.length) round[4].push(pinyinPool[pIdx++]); // stage 5
+    }
+  }
+
+  return rounds;
 }
 
 // Backward-compat alias
