@@ -66,13 +66,16 @@ export default function HomeScreen({
   userData,
   levelState,
   lessonProgress,
+  returnLevelId = null,
   onLessonPress,
   onLevelQuizPress,
   onChangeLevelConfirm,
   onRetakeTest,
 }) {
   const [showMenu, setShowMenu] = useState(false);
-  const [selectedLevel, setSelectedLevel] = useState(null);
+  const [selectedLevel, setSelectedLevel] = useState(
+    () => returnLevelId ? LEVEL_CONFIG.find(l => l.id === returnLevelId) ?? null : null
+  );
   const [showLevelChangeModal, setShowLevelChangeModal] = useState(false);
   const [foundationModal, setFoundationModal] = useState(null); // 'pinyin' | 'characters' | null
 

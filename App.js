@@ -5,6 +5,7 @@ import OnboardingScreen from './screens/OnboardingScreen';
 import HomeScreen from './screens/HomeScreen';
 import LessonDetailScreen from './screens/LessonDetailScreen';
 import LevelQuizScreen from './screens/LevelQuizScreen';
+import LessonQuizScreen from './screens/LessonQuizScreen';
 import LessonStagesScreen from './screens/LessonStagesScreen';
 import StageExercisesScreen from './screens/StageExercisesScreen';
 import RoundCompleteScreen from './screens/RoundCompleteScreen';
@@ -18,8 +19,15 @@ import lesson5 from './data/hsk1/hsk1_lesson_5.json';
 import lesson6 from './data/hsk1/hsk1_lesson_6.json';
 import lesson7 from './data/hsk1/hsk1_lesson_7.json';
 import lesson8 from './data/hsk1/hsk1_lesson_8.json';
+import lesson9 from './data/hsk1/hsk1_lesson_9.json';
+import lesson10 from './data/hsk1/hsk1_lesson_10.json';
+import lesson11 from './data/hsk1/hsk1_lesson_11.json';
+import lesson12 from './data/hsk1/hsk1_lesson_12.json';
+import lesson13 from './data/hsk1/hsk1_lesson_13.json';
+import lesson14 from './data/hsk1/hsk1_lesson_14.json';
+import lesson15 from './data/hsk1/hsk1_lesson_15.json';
 
-const LESSONS = { 1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5, 6: lesson6, 7: lesson7, 8: lesson8 };
+const LESSONS = { 1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5, 6: lesson6, 7: lesson7, 8: lesson8, 9: lesson9, 10: lesson10, 11: lesson11, 12: lesson12, 13: lesson13, 14: lesson14, 15: lesson15 };
 
 const ALL_LEVEL_IDS = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5'];
 
@@ -51,6 +59,7 @@ export default function App() {
   const [roundScores, setRoundScores] = useState({});      // { "hsk1_5_r1": {score,total} }
   const [levelState, setLevelState] = useState(DEFAULT_LEVEL_STATE);
   const [currentRound, setCurrentRound] = useState(1);    // 1 | 2 | 3
+  const [returnLevelId, setReturnLevelId] = useState(null); // which level list to return to on back
 
   // ── Load saved data on startup ──────────────────────────────
   useEffect(() => {
@@ -148,10 +157,11 @@ export default function App() {
       if (existing.includes(lessonId)) return prev;
       return { ...prev, [levelId]: [...existing, lessonId] };
     });
-    handleBackToHome();
+    handleBackToHome(levelId);
   };
 
-  const handleBackToHome = () => {
+  const handleBackToHome = (levelId = null) => {
+    setReturnLevelId(levelId);
     setCurrentScreen('home');
     setCurrentLessonId(null);
     setCurrentQuizLevelId(null);
@@ -182,7 +192,7 @@ export default function App() {
   };
 
   const handleTakeQuiz = () => {
-    alert('📝 Lesson Quiz\n\nQuiz screen coming soon!');
+    setCurrentScreen('lessonQuiz');
   };
 
   const handleLevelQuizPress = (levelId) => {
@@ -203,7 +213,7 @@ export default function App() {
           : prev.unlockedLevels,
       }));
     }
-    handleBackToHome();
+    handleBackToHome(levelId);
   };
 
   // ── Stage navigation handlers ────────────────────────────────
@@ -258,6 +268,11 @@ export default function App() {
     ? Math.round(((r1Score.score + r2Score.score) / combinedTotal) * 100)
     : 0;
 
+  // Quiz unlocked when: Round 2 all done + ≥90% combined accuracy, OR Round 3 all done
+  const r2Done = (stageProgress[`${currentLessonLevelId}_${currentLessonId}_r2`] || []).length >= 5;
+  const r3Done = (stageProgress[`${currentLessonLevelId}_${currentLessonId}_r3`] || []).length >= 5;
+  const quizUnlocked = (r2Done && combinedAccuracy >= 90) || r3Done;
+
   // ── Screens ──────────────────────────────────────────────────
   if (currentScreen === 'onboarding') {
     return (
@@ -275,6 +290,7 @@ export default function App() {
         userData={userData}
         levelState={levelState}
         lessonProgress={lessonProgress}
+        returnLevelId={returnLevelId}
         onLessonPress={handleLessonPress}
         onLevelQuizPress={handleLevelQuizPress}
         onChangeLevelConfirm={handleChangeLevelConfirm}
@@ -289,7 +305,8 @@ export default function App() {
         lessonId={currentLessonId}
         stageProgress={currentStageProgressArr}
         currentRound={currentRound}
-        onBack={handleBackToHome}
+        quizUnlocked={quizUnlocked}
+        onBack={() => handleBackToHome(currentLessonLevelId)}
         onLessonComplete={handleLessonComplete}
         onTakeQuiz={handleTakeQuiz}
         onSelectStage={handleSelectStage}
@@ -334,11 +351,20 @@ export default function App() {
     );
   }
 
+  if (currentScreen === 'lessonQuiz') {
+    return (
+      <LessonQuizScreen
+        lessonData={currentLessonData}
+        onBack={() => setCurrentScreen('lesson')}
+      />
+    );
+  }
+
   if (currentScreen === 'levelQuiz') {
     return (
       <LevelQuizScreen
         currentLevelId={currentQuizLevelId || userData?.result?.recommendedLevel || 'hsk1'}
-        onBack={handleBackToHome}
+        onBack={() => handleBackToHome(currentQuizLevelId)}
         onComplete={handleLevelQuizComplete}
       />
     );

@@ -617,25 +617,36 @@
       "type": "multiple_choice",
       "correct": "Hello",
       "options": [
-        "Hello",
         "Goodbye",
+        "Hello",
         "Thank you",
         "Sorry"
       ]
     },
     {
-      "question": "How do you ask 'What is your name?' in Chinese?",
+      "question": "How do you say 'Goodbye' in Chinese?",
       "type": "multiple_choice",
-      "correct": "你叫什么名字？",
+      "correct": "再见",
       "options": [
-        "你叫什么名字？",
-        "你好吗？",
-        "你是谁？",
-        "你呢？"
+        "你好",
+        "谢谢",
+        "再见",
+        "对不起"
       ]
     },
     {
-      "question": "Which character means 'I/me'?",
+      "question": "What does 谢谢 mean?",
+      "type": "multiple_choice",
+      "correct": "Thank you",
+      "options": [
+        "Sorry",
+        "You're welcome",
+        "Thank you",
+        "Hello"
+      ]
+    },
+    {
+      "question": "Which word means 'I / me'?",
       "type": "multiple_choice",
       "correct": "我",
       "options": [
@@ -646,69 +657,256 @@
       ]
     },
     {
-      "question": "What is the function of 是 in a sentence?",
+      "question": "What does 是 mean?",
       "type": "multiple_choice",
-      "correct": "To be (am/is/are)",
+      "correct": "Am / Is / Are (to be)",
       "options": [
-        "To be (am/is/are)",
-        "Possessive marker",
-        "Question particle",
+        "Have",
+        "Am / Is / Are (to be)",
+        "Go",
+        "Want"
+      ]
+    },
+    {
+      "question": "How do you say 'You are a teacher.' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "你是老师。",
+      "options": [
+        "我是老师。",
+        "你是老师。",
+        "他是老师。",
+        "你有老师。"
+      ]
+    },
+    {
+      "question": "What particle makes a statement into a yes/no question?",
+      "type": "multiple_choice",
+      "correct": "吗",
+      "options": [
+        "呢",
+        "的",
+        "吗",
+        "了"
+      ]
+    },
+    {
+      "question": "Fill in: 我___老师。(I am a teacher)",
+      "type": "multiple_choice",
+      "correct": "是",
+      "options": [
+        "在",
+        "有",
+        "是",
+        "和"
+      ]
+    },
+    {
+      "question": "How do you say 'I am not a student.'?",
+      "type": "multiple_choice",
+      "correct": "我不是学生。",
+      "options": [
+        "我没是学生。",
+        "我不是学生。",
+        "我不有学生。",
+        "不我是学生。"
+      ]
+    },
+    {
+      "question": "What does 的 do in 我的名字?",
+      "type": "multiple_choice",
+      "correct": "Shows possession (my name)",
+      "options": [
+        "Makes a question",
+        "Shows past action",
+        "Shows possession (my name)",
+        "Connects nouns"
+      ]
+    },
+    {
+      "question": "What does 叫 mean?",
+      "type": "multiple_choice",
+      "correct": "To be called / Named",
+      "options": [
+        "To know",
+        "To be called / Named",
+        "To like",
         "To have"
       ]
     },
     {
-      "question": "What does 的 indicate?",
+      "question": "How do you ask 'What is your name?'",
       "type": "multiple_choice",
-      "correct": "Possession",
+      "correct": "你叫什么名字？",
       "options": [
-        "Possession",
-        "Question",
-        "Action",
-        "Location"
-      ]
-    },
-    {
-      "question": "How do you say 'Who is he?' in Chinese?",
-      "type": "multiple_choice",
-      "correct": "他是谁？",
-      "options": [
-        "他是谁？",
-        "谁是他？",
-        "他叫谁？",
-        "他好吗？"
-      ]
-    },
-    {
-      "question": "Which particle turns a statement into a yes/no question?",
-      "type": "multiple_choice",
-      "correct": "吗",
-      "options": [
-        "吗",
-        "呢",
-        "的",
-        "是"
+        "你是谁？",
+        "你叫什么名字？",
+        "你有名字吗？",
+        "你是什么名字？"
       ]
     },
     {
       "question": "What does 她 mean?",
       "type": "multiple_choice",
-      "correct": "She/Her",
+      "correct": "She / Her",
       "options": [
-        "He/Him",
-        "She/Her",
-        "You",
-        "I/Me"
+        "He / Him",
+        "She / Her",
+        "They",
+        "You"
       ]
     },
     {
-      "question": "How do you say 'my name'?",
+      "question": "What does 也 mean?",
       "type": "multiple_choice",
-      "correct": "我的名字",
+      "correct": "Also / Too",
       "options": [
-        "我的名字",
-        "我是名字",
-        "名字的我",
-        "我叫名字"
+        "Still",
+        "Already",
+        "Also / Too",
+        "Very"
+      ]
+    },
+    {
+      "question": "How do you say 'She is also a teacher.'?",
+      "type": "multiple_choice",
+      "correct": "她也是老师。",
+      "options": [
+        "她很是老师。",
+        "她也是老师。",
+        "她都是老师。",
+        "她是也老师。"
+      ]
+    },
+    {
+      "question": "What does 好 mean?",
+      "type": "multiple_choice",
+      "correct": "Good / Well",
+      "options": [
+        "Bad",
+        "Good / Well",
+        "Big",
+        "Small"
+      ]
+    },
+    {
+      "question": "你好吗？means:",
+      "type": "multiple_choice",
+      "correct": "How are you?",
+      "options": [
+        "Are you good?",
+        "Do you have it?",
+        "How are you?",
+        "Where are you?"
+      ]
+    },
+    {
+      "question": "What does 很 mean?",
+      "type": "multiple_choice",
+      "correct": "Very",
+      "options": [
+        "Not",
+        "Also",
+        "Very",
+        "All"
+      ]
+    },
+    {
+      "question": "我很好。means:",
+      "type": "multiple_choice",
+      "correct": "I am very well.",
+      "options": [
+        "I have a lot.",
+        "I am very well.",
+        "I am not well.",
+        "I also am good."
+      ]
+    },
+    {
+      "question": "How do you say 'What about you?' (short form)?",
+      "type": "multiple_choice",
+      "correct": "你呢？",
+      "options": [
+        "你是？",
+        "你呢？",
+        "你吗？",
+        "你的？"
+      ]
+    },
+    {
+      "question": "What is 老师?",
+      "type": "multiple_choice",
+      "correct": "Teacher",
+      "options": [
+        "Student",
+        "Doctor",
+        "Teacher",
+        "Friend"
+      ]
+    },
+    {
+      "question": "Fill in: 你是学生___？(Are you a student?)",
+      "type": "multiple_choice",
+      "correct": "吗",
+      "options": [
+        "呢",
+        "的",
+        "吗",
+        "不"
+      ]
+    },
+    {
+      "question": "What does 对 mean?",
+      "type": "multiple_choice",
+      "correct": "Correct / Right",
+      "options": [
+        "Wrong",
+        "Correct / Right",
+        "Good",
+        "Bad"
+      ]
+    },
+    {
+      "question": "How do you say 'She is not a student.'?",
+      "type": "multiple_choice",
+      "correct": "她不是学生。",
+      "options": [
+        "她没有学生。",
+        "她不是学生。",
+        "她不在学生。",
+        "她是不学生。"
+      ]
+    },
+    {
+      "question": "What does 不 do before 是?",
+      "type": "multiple_choice",
+      "correct": "Makes it negative: 'is not'",
+      "options": [
+        "Makes it a question",
+        "Makes it past tense",
+        "Makes it negative: 'is not'",
+        "Has no effect"
+      ]
+    },
+    {
+      "question": "Translate: 'My name is Xiao Ming.'",
+      "type": "multiple_choice",
+      "correct": "我叫小明。",
+      "options": [
+        "我的名字很好。",
+        "我是叫小明。",
+        "我叫小明。",
+        "名字我叫小明。"
+      ]
+    },
+    {
+      "question": "What does 再见 literally mean?",
+      "type": "multiple_choice",
+      "correct": "See you again",
+      "options": [
+        "Go away",
+        "See you again",
+        "Good night",
+        "Take care"
       ]
     }
   ],

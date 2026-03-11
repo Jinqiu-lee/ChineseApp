@@ -45,6 +45,7 @@ export default function LessonDetailScreen({
   lessonId,
   stageProgress = [],
   currentRound = 1,
+  quizUnlocked = false,
   onBack,
   onLessonComplete,
   onTakeQuiz,
@@ -140,14 +141,17 @@ export default function LessonDetailScreen({
           </TouchableOpacity>
 
           <TouchableOpacity
-            style={[styles.learnBtn, styles.learnBtnQuiz]}
-            onPress={onTakeQuiz}
-            activeOpacity={0.8}
+            style={[styles.learnBtn, quizUnlocked ? styles.learnBtnQuiz : styles.learnBtnLocked]}
+            onPress={quizUnlocked ? onTakeQuiz : undefined}
+            activeOpacity={quizUnlocked ? 0.8 : 1}
           >
-            <Text style={styles.learnBtnEmoji}>📋</Text>
-            <Text style={[styles.learnBtnLabel, styles.learnBtnLabelQuiz]}>
+            <Text style={styles.learnBtnEmoji}>{quizUnlocked ? '📋' : '🔒'}</Text>
+            <Text style={[styles.learnBtnLabel, quizUnlocked ? styles.learnBtnLabelQuiz : styles.learnBtnLabelLocked]}>
               Lesson Quiz
             </Text>
+            {!quizUnlocked && (
+              <Text style={styles.learnBtnLockHint}>Finish Round 2 (90%+)</Text>
+            )}
           </TouchableOpacity>
         </View>
 
@@ -302,11 +306,14 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   learnBtnActive: { borderColor: '#a29bfe', backgroundColor: 'rgba(162,155,254,0.1)' },
-  learnBtnQuiz: { borderColor: '#FF6B6B', backgroundColor: 'rgba(255,107,107,0.08)' },
+  learnBtnQuiz:   { borderColor: '#FF6B6B', backgroundColor: 'rgba(255,107,107,0.08)' },
+  learnBtnLocked: { borderColor: '#2d3436', backgroundColor: 'rgba(255,255,255,0.03)', opacity: 0.55 },
   learnBtnEmoji: { fontSize: 24 },
   learnBtnLabel: { fontSize: 14, fontWeight: '700', color: '#636e72', textAlign: 'center' },
-  learnBtnLabelActive: { color: '#a29bfe' },
-  learnBtnLabelQuiz: { color: '#FF6B6B' },
+  learnBtnLabelActive:  { color: '#a29bfe' },
+  learnBtnLabelQuiz:    { color: '#FF6B6B' },
+  learnBtnLabelLocked:  { color: '#636e72' },
+  learnBtnLockHint:     { fontSize: 10, color: '#636e72', textAlign: 'center', marginTop: 2 },
 
   // Expanded section
   expandedSection: { marginBottom: 24, marginTop: 4 },

@@ -470,102 +470,289 @@
   ],
   "quiz": [
     {
-      "question": "How do you say 'father' in Chinese?",
+      "question": "What does 家 mean?",
       "type": "multiple_choice",
-      "correct": "爸爸",
+      "correct": "Home / Family",
       "options": [
-        "爸爸",
-        "妈妈",
-        "哥哥",
-        "弟弟"
+        "House",
+        "Home / Family",
+        "Room",
+        "Garden"
+      ]
+    },
+    {
+      "question": "What is 爸爸?",
+      "type": "multiple_choice",
+      "correct": "Dad",
+      "options": [
+        "Mom",
+        "Dad",
+        "Brother",
+        "Sister"
+      ]
+    },
+    {
+      "question": "What is 妈妈?",
+      "type": "multiple_choice",
+      "correct": "Mom",
+      "options": [
+        "Grandma",
+        "Aunt",
+        "Mom",
+        "Sister"
+      ]
+    },
+    {
+      "question": "What is 哥哥?",
+      "type": "multiple_choice",
+      "correct": "Older brother",
+      "options": [
+        "Younger brother",
+        "Older brother",
+        "Older sister",
+        "Younger sister"
+      ]
+    },
+    {
+      "question": "What is 姐姐?",
+      "type": "multiple_choice",
+      "correct": "Older sister",
+      "options": [
+        "Younger sister",
+        "Older brother",
+        "Older sister",
+        "Mom"
+      ]
+    },
+    {
+      "question": "What is 弟弟?",
+      "type": "multiple_choice",
+      "correct": "Younger brother",
+      "options": [
+        "Older brother",
+        "Younger brother",
+        "Younger sister",
+        "Son"
+      ]
+    },
+    {
+      "question": "What is 妹妹?",
+      "type": "multiple_choice",
+      "correct": "Younger sister",
+      "options": [
+        "Older sister",
+        "Younger sister",
+        "Daughter",
+        "Mom"
       ]
     },
     {
       "question": "What does 有 mean?",
       "type": "multiple_choice",
-      "correct": "To have",
+      "correct": "To have / There is",
       "options": [
-        "To have",
         "To be",
-        "To go",
-        "To come"
+        "To want",
+        "To have / There is",
+        "To go"
       ]
     },
     {
-      "question": "How do you negate 有?",
+      "question": "How do you say 'I have a brother.'?",
+      "type": "multiple_choice",
+      "correct": "我有哥哥。",
+      "options": [
+        "我是哥哥。",
+        "我有哥哥。",
+        "我在哥哥。",
+        "我的哥哥。"
+      ]
+    },
+    {
+      "question": "What is the negative form of 有?",
       "type": "multiple_choice",
       "correct": "没有",
       "options": [
         "不有",
+        "无有",
         "没有",
-        "不是",
         "没是"
       ]
     },
     {
-      "question": "What is the measure word for family members?",
+      "question": "How do you say 'I don't have a sister.'?",
+      "type": "multiple_choice",
+      "correct": "我没有姐姐。",
+      "options": [
+        "我不有姐姐。",
+        "我没有姐姐。",
+        "我没是姐姐。",
+        "我无姐姐。"
+      ]
+    },
+    {
+      "question": "What does 儿子 mean?",
+      "type": "multiple_choice",
+      "correct": "Son",
+      "options": [
+        "Daughter",
+        "Son",
+        "Child",
+        "Boy"
+      ]
+    },
+    {
+      "question": "What does 女儿 mean?",
+      "type": "multiple_choice",
+      "correct": "Daughter",
+      "options": [
+        "Son",
+        "Daughter",
+        "Girl",
+        "Sister"
+      ]
+    },
+    {
+      "question": "What measure word counts people in a family?",
       "type": "multiple_choice",
       "correct": "口",
       "options": [
         "个",
         "口",
         "本",
-        "只"
+        "杯"
       ]
     },
     {
-      "question": "How do you say 'older sister'?",
+      "question": "你家有几口人？means:",
+      "type": "multiple_choice",
+      "correct": "How many people are in your family?",
+      "options": [
+        "Who is in your family?",
+        "How many people are in your family?",
+        "Where is your family?",
+        "Do you have a family?"
+      ]
+    },
+    {
+      "question": "How do you say 'My family has 4 people.'?",
+      "type": "multiple_choice",
+      "correct": "我家有四口人。",
+      "options": [
+        "我家有四个人。",
+        "我的家四口人。",
+        "我家有四口人。",
+        "四口人我家有。"
+      ]
+    },
+    {
+      "question": "What is 两 used with instead of 二?",
+      "type": "multiple_choice",
+      "correct": "Before measure words: 两个, 两口",
+      "options": [
+        "In counting sequences",
+        "Before measure words: 两个, 两口",
+        "Only for people",
+        "Only for animals"
+      ]
+    },
+    {
+      "question": "What does 没有 contrast with?",
+      "type": "multiple_choice",
+      "correct": "有 (to have)",
+      "options": [
+        "是 (to be)",
+        "有 (to have)",
+        "在 (to be at)",
+        "做 (to do)"
+      ]
+    },
+    {
+      "question": "Translate: 'She has two sons.'",
+      "type": "multiple_choice",
+      "correct": "她有两个儿子。",
+      "options": [
+        "她是两个儿子。",
+        "她有二个儿子。",
+        "她有两个儿子。",
+        "两个儿子她有。"
+      ]
+    },
+    {
+      "question": "Which is correct for 'older sister'?",
       "type": "multiple_choice",
       "correct": "姐姐",
       "options": [
+        "妹妹",
         "姐姐",
-        "妹妹",
-        "哥哥",
-        "弟弟"
-      ]
-    },
-    {
-      "question": "Which means 'younger brother'?",
-      "type": "multiple_choice",
-      "correct": "弟弟",
-      "options": [
-        "哥哥",
         "弟弟",
-        "妹妹",
-        "儿子"
+        "哥哥"
       ]
     },
     {
-      "question": "How do you ask 'How many people in your family?'",
+      "question": "What is 爸爸妈妈 together?",
       "type": "multiple_choice",
-      "correct": "你家有几口人？",
+      "correct": "Parents",
       "options": [
-        "你家有几口人？",
-        "你家有多少人？",
-        "你家几个人？",
-        "你家有人吗？"
+        "Grandparents",
+        "Parents",
+        "Brothers and sisters",
+        "Children"
       ]
     },
     {
-      "question": "What does 没有 mean?",
+      "question": "我有没有哥哥？is an example of:",
       "type": "multiple_choice",
-      "correct": "Don't have",
+      "correct": "A-not-A question pattern",
       "options": [
-        "Don't have",
-        "Don't be",
-        "Don't go",
-        "Don't know"
+        "A 吗 question",
+        "A negative statement",
+        "A-not-A question pattern",
+        "A command"
       ]
     },
     {
-      "question": "How do you say 'daughter'?",
+      "question": "What does 他们 mean?",
       "type": "multiple_choice",
-      "correct": "女儿",
+      "correct": "They (male or mixed)",
       "options": [
-        "儿子",
-        "女儿",
-        "妹妹",
-        "姐姐"
+        "You all",
+        "We",
+        "They (male or mixed)",
+        "She/Her"
+      ]
+    },
+    {
+      "question": "How do you say 'Do you have a younger brother?'",
+      "type": "multiple_choice",
+      "correct": "你有弟弟吗？",
+      "options": [
+        "你是弟弟吗？",
+        "你有没有弟弟？",
+        "你有弟弟吗？",
+        "Both B and C are correct"
+      ]
+    },
+    {
+      "question": "What does 家人 mean?",
+      "type": "multiple_choice",
+      "correct": "Family members",
+      "options": [
+        "Family friend",
+        "Family members",
+        "Home person",
+        "Relative"
+      ]
+    },
+    {
+      "question": "Translate: 'My dad is a teacher.'",
+      "type": "multiple_choice",
+      "correct": "我爸爸是老师。",
+      "options": [
+        "我的爸爸老师。",
+        "我爸爸是老师。",
+        "老师是我爸爸。",
+        "我爸爸有老师。"
       ]
     }
   ],

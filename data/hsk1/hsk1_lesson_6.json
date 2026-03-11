@@ -455,32 +455,76 @@
       "type": "multiple_choice",
       "correct": "To buy",
       "options": [
-        "To buy",
         "To sell",
-        "To have",
-        "To want"
+        "To buy",
+        "To pay",
+        "To take"
       ]
     },
     {
-      "question": "How do you ask 'How much?' in Chinese?",
+      "question": "What does 多少 mean?",
+      "type": "multiple_choice",
+      "correct": "How much / How many",
+      "options": [
+        "How old",
+        "How big",
+        "How much / How many",
+        "How far"
+      ]
+    },
+    {
+      "question": "How do you ask 'How much is it?'",
       "type": "multiple_choice",
       "correct": "多少钱？",
       "options": [
+        "几个钱？",
+        "多少块？",
         "多少钱？",
-        "几个？",
-        "什么？",
-        "多大？"
+        "几多钱？"
       ]
     },
     {
-      "question": "What does 块 mean?",
+      "question": "What is 钱?",
       "type": "multiple_choice",
-      "correct": "Yuan (Chinese currency)",
+      "correct": "Money",
       "options": [
-        "Yuan (Chinese currency)",
+        "Price",
+        "Money",
+        "Coin",
+        "Bill"
+      ]
+    },
+    {
+      "question": "What does 贵 mean?",
+      "type": "multiple_choice",
+      "correct": "Expensive",
+      "options": [
+        "Cheap",
+        "Big",
+        "Expensive",
+        "Small"
+      ]
+    },
+    {
+      "question": "What does 便宜 mean?",
+      "type": "multiple_choice",
+      "correct": "Cheap / Inexpensive",
+      "options": [
+        "Expensive",
+        "Cheap / Inexpensive",
+        "Reasonable",
+        "Free"
+      ]
+    },
+    {
+      "question": "What is 块 (kuài)?",
+      "type": "multiple_choice",
+      "correct": "Chinese yuan (colloquial)",
+      "options": [
+        "Cent",
         "Dollar",
-        "Book",
-        "Measure word"
+        "Chinese yuan (colloquial)",
+        "Ten yuan"
       ]
     },
     {
@@ -489,64 +533,196 @@
       "correct": "本",
       "options": [
         "个",
-        "本",
         "杯",
-        "件"
+        "本",
+        "张"
       ]
     },
     {
-      "question": "How do you say 'expensive' in Chinese?",
+      "question": "How do you say 'this book'?",
       "type": "multiple_choice",
-      "correct": "贵",
+      "correct": "这本书",
       "options": [
-        "贵",
-        "便宜",
-        "多",
-        "少"
+        "这书",
+        "这个书",
+        "这本书",
+        "这本的书"
       ]
     },
     {
-      "question": "What does 便宜 mean?",
+      "question": "What does 东西 mean?",
       "type": "multiple_choice",
-      "correct": "Cheap",
+      "correct": "Thing / Item / Stuff",
       "options": [
-        "Expensive",
-        "Cheap",
+        "East and west",
+        "Things / Items / Stuff",
+        "Direction",
+        "Place"
+      ]
+    },
+    {
+      "question": "How do you say 'I want to buy things.'?",
+      "type": "multiple_choice",
+      "correct": "我想买东西。",
+      "options": [
+        "我要买东西。",
+        "我想买东西。",
+        "Both A and B",
+        "Neither"
+      ]
+    },
+    {
+      "question": "What is 书?",
+      "type": "multiple_choice",
+      "correct": "Book",
+      "options": [
+        "Notebook",
+        "Book",
+        "Magazine",
+        "Newspaper"
+      ]
+    },
+    {
+      "question": "这本书多少钱？means:",
+      "type": "multiple_choice",
+      "correct": "How much is this book?",
+      "options": [
+        "Where is this book?",
+        "Whose book is this?",
+        "How much is this book?",
+        "Do you want this book?"
+      ]
+    },
+    {
+      "question": "How do you say 'This is too expensive.'?",
+      "type": "multiple_choice",
+      "correct": "这太贵了。",
+      "options": [
+        "这很贵。",
+        "这太贵。",
+        "这太贵了。",
+        "这太了贵。"
+      ]
+    },
+    {
+      "question": "What does 少 mean?",
+      "type": "multiple_choice",
+      "correct": "Few / Little",
+      "options": [
+        "Many",
         "Big",
+        "Few / Little",
         "Small"
       ]
     },
     {
-      "question": "How do you say 'book' in Chinese?",
+      "question": "What does 多 mean?",
       "type": "multiple_choice",
-      "correct": "书",
+      "correct": "Many / Much",
       "options": [
-        "书",
-        "本",
-        "钱",
-        "东西"
+        "Few",
+        "Many / Much",
+        "Big",
+        "All"
       ]
     },
     {
-      "question": "What does 衣服 mean?",
+      "question": "How do you say 'a little cheaper'?",
       "type": "multiple_choice",
-      "correct": "Clothes",
+      "correct": "便宜一点",
       "options": [
-        "Clothes",
-        "Book",
-        "Money",
-        "Food"
+        "一点便宜",
+        "便宜一些",
+        "便宜一点",
+        "Both B and C"
       ]
     },
     {
-      "question": "How do you say 'I want to buy clothes'?",
+      "question": "What is 元?",
       "type": "multiple_choice",
-      "correct": "我想买衣服。",
+      "correct": "Yuan (formal written form)",
       "options": [
-        "我想买衣服。",
-        "我买衣服。",
-        "我有衣服。",
-        "我是衣服。"
+        "Cent",
+        "Yuan (formal written form)",
+        "Dollar",
+        "Ten yuan"
+      ]
+    },
+    {
+      "question": "Translate: '50 yuan'",
+      "type": "multiple_choice",
+      "correct": "五十块钱",
+      "options": [
+        "五十块钱",
+        "五十元钱",
+        "五十钱块",
+        "Both A and B"
+      ]
+    },
+    {
+      "question": "How do you say 'I want to buy this book.'?",
+      "type": "multiple_choice",
+      "correct": "我想买这本书。",
+      "options": [
+        "我买这本书想。",
+        "我想买这本书。",
+        "我这本书想买。",
+        "这本书我买想。"
+      ]
+    },
+    {
+      "question": "What does 件 mean as a measure word?",
+      "type": "multiple_choice",
+      "correct": "Piece/item (for clothes, matters)",
+      "options": [
+        "Item (for books)",
+        "Cup (for drinks)",
+        "Piece/item (for clothes, matters)",
+        "Flat item (for paper)"
+      ]
+    },
+    {
+      "question": "Translate: 'expensive things'",
+      "type": "multiple_choice",
+      "correct": "贵东西",
+      "options": [
+        "很东西",
+        "贵东西",
+        "东西贵",
+        "贵的东西"
+      ]
+    },
+    {
+      "question": "How do you say 'three books'?",
+      "type": "multiple_choice",
+      "correct": "三本书",
+      "options": [
+        "三书本",
+        "书三本",
+        "三本书",
+        "三个书"
+      ]
+    },
+    {
+      "question": "What does 一点 mean after an adjective?",
+      "type": "multiple_choice",
+      "correct": "A little (more/less)",
+      "options": [
+        "Very",
+        "A little (more/less)",
+        "Too much",
+        "A lot"
+      ]
+    },
+    {
+      "question": "Choose correct: 'This is cheap.'",
+      "type": "multiple_choice",
+      "correct": "这个很便宜。",
+      "options": [
+        "这个是便宜。",
+        "这个便宜很。",
+        "这个很便宜。",
+        "很便宜这个。"
       ]
     }
   ],

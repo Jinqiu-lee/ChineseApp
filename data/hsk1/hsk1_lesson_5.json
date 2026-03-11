@@ -683,32 +683,120 @@
       "type": "multiple_choice",
       "correct": "To eat",
       "options": [
-        "To eat",
         "To drink",
+        "To eat",
         "To want",
-        "To have"
+        "To buy"
       ]
     },
     {
-      "question": "How do you say 'water' in Chinese?",
+      "question": "What does 喝 mean?",
       "type": "multiple_choice",
-      "correct": "水",
+      "correct": "To drink",
       "options": [
-        "茶",
-        "水",
-        "牛奶",
-        "咖啡"
+        "To eat",
+        "To drink",
+        "To taste",
+        "To smell"
+      ]
+    },
+    {
+      "question": "What is 米饭?",
+      "type": "multiple_choice",
+      "correct": "Rice (cooked)",
+      "options": [
+        "Bread",
+        "Noodles",
+        "Rice (cooked)",
+        "Vegetable"
+      ]
+    },
+    {
+      "question": "What is 面条?",
+      "type": "multiple_choice",
+      "correct": "Noodles",
+      "options": [
+        "Rice",
+        "Noodles",
+        "Bread",
+        "Dumpling"
+      ]
+    },
+    {
+      "question": "What does 水 mean?",
+      "type": "multiple_choice",
+      "correct": "Water",
+      "options": [
+        "Tea",
+        "Coffee",
+        "Milk",
+        "Water"
+      ]
+    },
+    {
+      "question": "What is 茶?",
+      "type": "multiple_choice",
+      "correct": "Tea",
+      "options": [
+        "Coffee",
+        "Tea",
+        "Milk",
+        "Juice"
+      ]
+    },
+    {
+      "question": "What is 牛奶?",
+      "type": "multiple_choice",
+      "correct": "Milk",
+      "options": [
+        "Tea",
+        "Water",
+        "Milk",
+        "Coffee"
+      ]
+    },
+    {
+      "question": "What is 咖啡?",
+      "type": "multiple_choice",
+      "correct": "Coffee",
+      "options": [
+        "Tea",
+        "Coffee",
+        "Juice",
+        "Milk"
+      ]
+    },
+    {
+      "question": "What does 菜 mean?",
+      "type": "multiple_choice",
+      "correct": "Vegetable / Dish",
+      "options": [
+        "Fruit",
+        "Rice",
+        "Vegetable / Dish",
+        "Meat"
+      ]
+    },
+    {
+      "question": "What is 苹果?",
+      "type": "multiple_choice",
+      "correct": "Apple",
+      "options": [
+        "Orange",
+        "Apple",
+        "Banana",
+        "Grape"
       ]
     },
     {
       "question": "What does 想 mean?",
       "type": "multiple_choice",
-      "correct": "To want",
+      "correct": "To want / Would like",
       "options": [
-        "To want",
         "To have",
-        "To eat",
-        "To drink"
+        "To want / Would like",
+        "To think only",
+        "To need"
       ]
     },
     {
@@ -723,58 +811,146 @@
       ]
     },
     {
-      "question": "How do you say 'coffee' in Chinese?",
+      "question": "How do you say 'a cup of tea'?",
       "type": "multiple_choice",
-      "correct": "咖啡",
+      "correct": "一杯茶",
       "options": [
-        "咖啡",
-        "茶",
-        "牛奶",
-        "水"
+        "一个茶",
+        "茶一杯",
+        "一杯茶",
+        "杯茶"
       ]
     },
     {
-      "question": "What does 米饭 mean?",
-      "type": "multiple_choice",
-      "correct": "Rice",
-      "options": [
-        "Rice",
-        "Noodles",
-        "Bread",
-        "Vegetables"
-      ]
-    },
-    {
-      "question": "How do you ask 'What do you eat?'",
+      "question": "How do you ask 'What would you like to eat?'",
       "type": "multiple_choice",
       "correct": "你吃什么？",
       "options": [
-        "你吃什么？",
         "你喝什么？",
         "你想什么？",
-        "你有什么？"
+        "你有什么？",
+        "你吃什么？"
       ]
     },
     {
-      "question": "What does 喝 mean?",
+      "question": "Translate: 'I want to drink water.'",
       "type": "multiple_choice",
-      "correct": "To drink",
+      "correct": "我想喝水。",
       "options": [
-        "To eat",
-        "To drink",
-        "To want",
-        "To think"
+        "我喝水。",
+        "我想喝水。",
+        "我有水喝。",
+        "我喝想水。"
       ]
     },
     {
-      "question": "How do you say 'I want to drink tea'?",
+      "question": "What comes after 想 in a sentence?",
       "type": "multiple_choice",
-      "correct": "我想喝茶。",
+      "correct": "A verb (action word)",
       "options": [
-        "我想喝茶。",
-        "我喝茶。",
-        "我有茶。",
-        "我是茶。"
+        "A noun",
+        "A verb (action word)",
+        "An adjective",
+        "Nothing"
+      ]
+    },
+    {
+      "question": "How do you say 'two cups of coffee'?",
+      "type": "multiple_choice",
+      "correct": "两杯咖啡",
+      "options": [
+        "二杯咖啡",
+        "两个咖啡",
+        "两杯咖啡",
+        "咖啡两杯"
+      ]
+    },
+    {
+      "question": "Translate: '请喝茶。'",
+      "type": "multiple_choice",
+      "correct": "Please have some tea.",
+      "options": [
+        "Do you want tea?",
+        "I drink tea.",
+        "Please have some tea.",
+        "Tea, please give me."
+      ]
+    },
+    {
+      "question": "How do you say 'I don't want to eat noodles.'?",
+      "type": "multiple_choice",
+      "correct": "我不想吃面条。",
+      "options": [
+        "我没想吃面条。",
+        "我不吃面条。",
+        "我不想吃面条。",
+        "我想不吃面条。"
+      ]
+    },
+    {
+      "question": "What is the difference between 想 and 要?",
+      "type": "multiple_choice",
+      "correct": "想 is softer/more polite; both express want",
+      "options": [
+        "They are identical",
+        "想 is softer/more polite; both express want",
+        "要 is softer",
+        "想 is only for thinking"
+      ]
+    },
+    {
+      "question": "How do you say 'She wants to drink milk.'?",
+      "type": "multiple_choice",
+      "correct": "她想喝牛奶。",
+      "options": [
+        "她喝牛奶想。",
+        "她想牛奶喝。",
+        "她想喝牛奶。",
+        "她牛奶想喝。"
+      ]
+    },
+    {
+      "question": "什么 in 你吃什么？replaces:",
+      "type": "multiple_choice",
+      "correct": "The food you're asking about",
+      "options": [
+        "The subject",
+        "The verb",
+        "The food you're asking about",
+        "The time"
+      ]
+    },
+    {
+      "question": "How do you say 'Eat vegetables' as a phrase?",
+      "type": "multiple_choice",
+      "correct": "吃菜",
+      "options": [
+        "喝菜",
+        "吃水",
+        "吃菜",
+        "做菜"
+      ]
+    },
+    {
+      "question": "Translate: 'Do you drink coffee?'",
+      "type": "multiple_choice",
+      "correct": "你喝咖啡吗？",
+      "options": [
+        "你有咖啡吗？",
+        "你想咖啡吗？",
+        "你喝咖啡吗？",
+        "你吃咖啡吗？"
+      ]
+    },
+    {
+      "question": "How do you say 'I eat rice.'?",
+      "type": "multiple_choice",
+      "correct": "我吃米饭。",
+      "options": [
+        "我喝米饭。",
+        "我吃面条。",
+        "我吃米饭。",
+        "米饭我吃。"
       ]
     }
   ]

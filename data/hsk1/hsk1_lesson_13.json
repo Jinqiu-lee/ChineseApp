@@ -3,32 +3,289 @@
   "topic": "Home & Things",
   "topic_chinese": "家里有什么",
   "age_group": "Adults and 10+",
-  "objectives": ["listening", "speaking", "reading", "writing"],
+  "objectives": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
   "vocabulary": [
-    { "id": "hsk1_l13_01", "chinese": "电脑", "pinyin": "diànnǎo", "tones": [4, 3], "english": "Computer", "part_of_speech": "noun" },
-    { "id": "hsk1_l13_02", "chinese": "椅子", "pinyin": "yǐzi", "tones": [3, 0], "english": "Chair", "part_of_speech": "noun" },
-    { "id": "hsk1_l13_03", "chinese": "桌子", "pinyin": "zhuōzi", "tones": [1, 0], "english": "Table / Desk", "part_of_speech": "noun" },
-    { "id": "hsk1_l13_04", "chinese": "住", "pinyin": "zhù", "tones": [4], "english": "To live / To reside", "part_of_speech": "verb" },
-    { "id": "hsk1_l13_05", "chinese": "饭馆", "pinyin": "fànguǎn", "tones": [4, 3], "english": "Restaurant", "part_of_speech": "noun" },
-    { "id": "hsk1_l13_06", "chinese": "杯子", "pinyin": "bēizi", "tones": [1, 0], "english": "Cup / Glass", "part_of_speech": "noun" },
-    { "id": "hsk1_l13_07", "chinese": "这", "pinyin": "zhè", "tones": [4], "english": "This", "part_of_speech": "pronoun" },
-    { "id": "hsk1_l13_08", "chinese": "那", "pinyin": "nà", "tones": [4], "english": "That", "part_of_speech": "pronoun" },
-    { "id": "hsk1_l13_09", "chinese": "哪", "pinyin": "nǎ", "tones": [3], "english": "Which", "part_of_speech": "question_word" },
-    { "id": "hsk1_l13_10", "chinese": "这儿", "pinyin": "zhèr", "tones": [4], "english": "Here", "part_of_speech": "pronoun" },
-    { "id": "hsk1_l13_11", "chinese": "那儿", "pinyin": "nàr", "tones": [4], "english": "There", "part_of_speech": "pronoun" },
-    { "id": "hsk1_l13_12", "chinese": "开", "pinyin": "kāi", "tones": [1], "english": "To open / To drive / To turn on", "part_of_speech": "verb" },
-    { "id": "hsk1_l13_p01", "chinese": "电脑在桌子上", "pinyin": "diànnǎo zài zhuōzi shàng", "tones": [4, 3, 4, 1, 0, 4], "english": "The computer is on the desk", "part_of_speech": "phrase" },
-    { "id": "hsk1_l13_p02", "chinese": "坐椅子", "pinyin": "zuò yǐzi", "tones": [4, 3, 0], "english": "Sit on the chair", "part_of_speech": "phrase" },
-    { "id": "hsk1_l13_p03", "chinese": "在饭馆吃饭", "pinyin": "zài fànguǎn chīfàn", "tones": [4, 4, 3, 1, 4], "english": "Eat at a restaurant", "part_of_speech": "phrase" },
-    { "id": "hsk1_l13_p04", "chinese": "住在哪儿", "pinyin": "zhù zài nǎr", "tones": [4, 4, 3], "english": "Live where / Where do you live", "part_of_speech": "phrase" },
-    { "id": "hsk1_l13_p05", "chinese": "这是什么", "pinyin": "zhè shì shénme", "tones": [4, 4, 2, 0], "english": "What is this?", "part_of_speech": "phrase" },
-    { "id": "hsk1_l13_p06", "chinese": "那个杯子", "pinyin": "nàge bēizi", "tones": [4, 0, 1, 0], "english": "That cup", "part_of_speech": "phrase" },
-    { "id": "hsk1_l13_p07", "chinese": "哪个好", "pinyin": "nǎge hǎo", "tones": [3, 0, 3], "english": "Which one is good?", "part_of_speech": "phrase" },
-    { "id": "hsk1_l13_p08", "chinese": "开电脑", "pinyin": "kāi diànnǎo", "tones": [1, 4, 3], "english": "Turn on the computer", "part_of_speech": "phrase" },
-    { "id": "hsk1_l13_p09", "chinese": "在这儿", "pinyin": "zài zhèr", "tones": [4, 4], "english": "Here / Right here", "part_of_speech": "phrase" },
-    { "id": "hsk1_l13_p10", "chinese": "在那儿", "pinyin": "zài nàr", "tones": [4, 4], "english": "There / Over there", "part_of_speech": "phrase" },
-    { "id": "hsk1_l13_p11", "chinese": "我住在", "pinyin": "wǒ zhù zài", "tones": [3, 4, 4], "english": "I live at / in", "part_of_speech": "phrase" },
-    { "id": "hsk1_l13_p12", "chinese": "去饭馆", "pinyin": "qù fànguǎn", "tones": [4, 4, 3], "english": "Go to a restaurant", "part_of_speech": "phrase" }
+    {
+      "id": "hsk1_l13_01",
+      "chinese": "电脑",
+      "pinyin": "diànnǎo",
+      "tones": [
+        4,
+        3
+      ],
+      "english": "Computer",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l13_02",
+      "chinese": "椅子",
+      "pinyin": "yǐzi",
+      "tones": [
+        3,
+        0
+      ],
+      "english": "Chair",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l13_03",
+      "chinese": "桌子",
+      "pinyin": "zhuōzi",
+      "tones": [
+        1,
+        0
+      ],
+      "english": "Table / Desk",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l13_04",
+      "chinese": "住",
+      "pinyin": "zhù",
+      "tones": [
+        4
+      ],
+      "english": "To live / To reside",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l13_05",
+      "chinese": "饭馆",
+      "pinyin": "fànguǎn",
+      "tones": [
+        4,
+        3
+      ],
+      "english": "Restaurant",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l13_06",
+      "chinese": "杯子",
+      "pinyin": "bēizi",
+      "tones": [
+        1,
+        0
+      ],
+      "english": "Cup / Glass",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l13_07",
+      "chinese": "这",
+      "pinyin": "zhè",
+      "tones": [
+        4
+      ],
+      "english": "This",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l13_08",
+      "chinese": "那",
+      "pinyin": "nà",
+      "tones": [
+        4
+      ],
+      "english": "That",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l13_09",
+      "chinese": "哪",
+      "pinyin": "nǎ",
+      "tones": [
+        3
+      ],
+      "english": "Which",
+      "part_of_speech": "question_word"
+    },
+    {
+      "id": "hsk1_l13_10",
+      "chinese": "这儿",
+      "pinyin": "zhèr",
+      "tones": [
+        4
+      ],
+      "english": "Here",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l13_11",
+      "chinese": "那儿",
+      "pinyin": "nàr",
+      "tones": [
+        4
+      ],
+      "english": "There",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk1_l13_12",
+      "chinese": "开",
+      "pinyin": "kāi",
+      "tones": [
+        1
+      ],
+      "english": "To open / To drive / To turn on",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l13_p01",
+      "chinese": "电脑在桌子上",
+      "pinyin": "diànnǎo zài zhuōzi shàng",
+      "tones": [
+        4,
+        3,
+        4,
+        1,
+        0,
+        4
+      ],
+      "english": "The computer is on the desk",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l13_p02",
+      "chinese": "坐在椅子上",
+      "pinyin": "zuò zài yǐ zi shàng",
+      "tones": [
+        4,
+        4,
+        3,
+        0,
+        4
+      ],
+      "english": "Sit on the chair",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l13_p03",
+      "chinese": "在饭馆吃饭",
+      "pinyin": "zài fànguǎn chīfàn",
+      "tones": [
+        4,
+        4,
+        3,
+        1,
+        4
+      ],
+      "english": "Eat at a restaurant",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l13_p04",
+      "chinese": "住在哪儿",
+      "pinyin": "zhù zài nǎr",
+      "tones": [
+        4,
+        4,
+        3
+      ],
+      "english": "Live where / Where do you live",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l13_p05",
+      "chinese": "这是什么",
+      "pinyin": "zhè shì shénme",
+      "tones": [
+        4,
+        4,
+        2,
+        0
+      ],
+      "english": "What is this?",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l13_p06",
+      "chinese": "那个杯子",
+      "pinyin": "nàge bēizi",
+      "tones": [
+        4,
+        0,
+        1,
+        0
+      ],
+      "english": "That cup",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l13_p07",
+      "chinese": "哪个好",
+      "pinyin": "nǎge hǎo",
+      "tones": [
+        3,
+        0,
+        3
+      ],
+      "english": "Which one is good?",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l13_p08",
+      "chinese": "开电脑",
+      "pinyin": "kāi diànnǎo",
+      "tones": [
+        1,
+        4,
+        3
+      ],
+      "english": "Turn on the computer",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l13_p09",
+      "chinese": "在这儿",
+      "pinyin": "zài zhèr",
+      "tones": [
+        4,
+        4
+      ],
+      "english": "Here / Right here",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l13_p10",
+      "chinese": "在那儿",
+      "pinyin": "zài nàr",
+      "tones": [
+        4,
+        4
+      ],
+      "english": "There / Over there",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l13_p11",
+      "chinese": "我住在",
+      "pinyin": "wǒ zhù zài",
+      "tones": [
+        3,
+        4,
+        4
+      ],
+      "english": "I live at / in",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l13_p12",
+      "chinese": "去饭馆",
+      "pinyin": "qù fànguǎn",
+      "tones": [
+        4,
+        4,
+        3
+      ],
+      "english": "Go to a restaurant",
+      "part_of_speech": "phrase"
+    }
   ],
   "dialogues": [
     {
@@ -36,14 +293,42 @@
       "title": "Where Do You Live?",
       "title_chinese": "你住在哪儿",
       "lines": [
-        { "speaker": "A", "chinese": "你住在哪儿？", "pinyin": "Nǐ zhù zài nǎr?", "english": "Where do you live?" },
-        { "speaker": "B", "chinese": "我住在学校旁边。你呢？", "pinyin": "Wǒ zhù zài xuéxiào pángbiān. Nǐ ne?", "english": "I live next to the school. What about you?" },
-        { "speaker": "A", "chinese": "我住在那儿，那个饭馆旁边。", "pinyin": "Wǒ zhù zài nàr, nàge fànguǎn pángbiān.", "english": "I live there, next to that restaurant." },
-        { "speaker": "B", "chinese": "太好了！我们去那个饭馆吃饭吧！", "pinyin": "Tài hǎo le! Wǒmen qù nàge fànguǎn chīfàn ba!", "english": "Great! Let's go eat at that restaurant!" }
+        {
+          "speaker": "A",
+          "chinese": "你住在哪儿？",
+          "pinyin": "Nǐ zhù zài nǎr?",
+          "english": "Where do you live?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我住在学校旁边。你呢？",
+          "pinyin": "Wǒ zhù zài xuéxiào pángbiān. Nǐ ne?",
+          "english": "I live next to the school. What about you?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我住在那儿，那个饭馆旁边。",
+          "pinyin": "Wǒ zhù zài nàr, nàge fànguǎn pángbiān.",
+          "english": "I live there, next to that restaurant."
+        },
+        {
+          "speaker": "B",
+          "chinese": "太好了！我们去那个饭馆吃饭吧！",
+          "pinyin": "Tài hǎo le! Wǒmen qù nàge fànguǎn chīfàn ba!",
+          "english": "Great! Let's go eat at that restaurant!"
+        }
       ],
       "speakers": {
-        "A": { "name": "小丽", "role": "同学", "gender": "female" },
-        "B": { "name": "小明", "role": "同学", "gender": "male" }
+        "A": {
+          "name": "小丽",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "同学",
+          "gender": "male"
+        }
       }
     },
     {
@@ -51,14 +336,42 @@
       "title": "What Is This?",
       "title_chinese": "这是什么",
       "lines": [
-        { "speaker": "A", "chinese": "这是什么？", "pinyin": "Zhè shì shénme?", "english": "What is this?" },
-        { "speaker": "B", "chinese": "这是我的电脑。", "pinyin": "Zhè shì wǒ de diànnǎo.", "english": "This is my computer." },
-        { "speaker": "A", "chinese": "那个呢？那是桌子吗？", "pinyin": "Nàge ne? Nà shì zhuōzi ma?", "english": "What about that one? Is that a table?" },
-        { "speaker": "B", "chinese": "是，那是桌子，桌子上有一个杯子。", "pinyin": "Shì, nà shì zhuōzi, zhuōzi shàng yǒu yīge bēizi.", "english": "Yes, that's a table. There's a cup on the table." }
+        {
+          "speaker": "A",
+          "chinese": "这是什么？",
+          "pinyin": "Zhè shì shénme?",
+          "english": "What is this?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "这是我的电脑。",
+          "pinyin": "Zhè shì wǒ de diànnǎo.",
+          "english": "This is my computer."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那个呢？那是桌子吗？",
+          "pinyin": "Nàge ne? Nà shì zhuōzi ma?",
+          "english": "What about that one? Is that a table?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是，那是桌子，桌子上有一个杯子。",
+          "pinyin": "Shì, nà shì zhuōzi, zhuōzi shàng yǒu yīge bēizi.",
+          "english": "Yes, that's a table. There's a cup on the table."
+        }
       ],
       "speakers": {
-        "A": { "name": "小华", "role": "朋友", "gender": "female" },
-        "B": { "name": "大明", "role": "朋友", "gender": "male" }
+        "A": {
+          "name": "小华",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "朋友",
+          "gender": "male"
+        }
       }
     },
     {
@@ -66,13 +379,36 @@
       "title": "Sit Here Please",
       "title_chinese": "请坐这儿",
       "lines": [
-        { "speaker": "A", "chinese": "请坐！坐这儿。", "pinyin": "Qǐng zuò! Zuò zhèr.", "english": "Please sit! Sit here." },
-        { "speaker": "B", "chinese": "谢谢。这椅子很舒服！", "pinyin": "Xièxie. Zhè yǐzi hěn shūfu!", "english": "Thank you. This chair is very comfortable!" },
-        { "speaker": "A", "chinese": "我先开电脑，你喝茶吧。", "pinyin": "Wǒ xiān kāi diànnǎo, nǐ hē chá ba.", "english": "I'll turn on the computer first, have some tea." }
+        {
+          "speaker": "A",
+          "chinese": "请坐！坐这儿。",
+          "pinyin": "Qǐng zuò! Zuò zhèr.",
+          "english": "Please sit! Sit here."
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢。这椅子很舒服！",
+          "pinyin": "Xièxie. Zhè yǐzi hěn shūfu!",
+          "english": "Thank you. This chair is very comfortable!"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我先开电脑，你喝茶吧。",
+          "pinyin": "Wǒ xiān kāi diànnǎo, nǐ hē chá ba.",
+          "english": "I'll turn on the computer first, have some tea."
+        }
       ],
       "speakers": {
-        "A": { "name": "小美", "role": "主人", "gender": "female" },
-        "B": { "name": "王先生", "role": "客人", "gender": "male" }
+        "A": {
+          "name": "小美",
+          "role": "主人",
+          "gender": "female"
+        },
+        "B": {
+          "name": "王先生",
+          "role": "客人",
+          "gender": "male"
+        }
       }
     },
     {
@@ -80,22 +416,65 @@
       "title": "Which Restaurant?",
       "title_chinese": "哪个饭馆",
       "lines": [
-        { "speaker": "A", "chinese": "我们去哪个饭馆？这个还是那个？", "pinyin": "Wǒmen qù nǎge fànguǎn? Zhège háishi nàge?", "english": "Which restaurant should we go to? This one or that one?" },
-        { "speaker": "B", "chinese": "我想去那个，那个菜很好吃！", "pinyin": "Wǒ xiǎng qù nàge, nàge cài hěn hǎo chī!", "english": "I want to go to that one, the food there is delicious!" },
-        { "speaker": "A", "chinese": "好！我们在那儿见面。", "pinyin": "Hǎo! Wǒmen zài nàr jiànmiàn.", "english": "Okay! Let's meet there." }
+        {
+          "speaker": "A",
+          "chinese": "我们去哪个饭馆？这个还是那个？",
+          "pinyin": "Wǒmen qù nǎge fànguǎn? Zhège háishi nàge?",
+          "english": "Which restaurant should we go to? This one or that one?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我想去那个，那个菜很好吃！",
+          "pinyin": "Wǒ xiǎng qù nàge, nàge cài hěn hǎo chī!",
+          "english": "I want to go to that one, the food there is delicious!"
+        },
+        {
+          "speaker": "A",
+          "chinese": "好！我们在那儿见面。",
+          "pinyin": "Hǎo! Wǒmen zài nàr jiànmiàn.",
+          "english": "Okay! Let's meet there."
+        }
       ],
       "speakers": {
-        "A": { "name": "小丽", "role": "朋友", "gender": "female" },
-        "B": { "name": "小刚", "role": "朋友", "gender": "male" }
+        "A": {
+          "name": "小丽",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "朋友",
+          "gender": "male"
+        }
       }
     }
   ],
   "key_sentences": [
-    { "chinese": "你住在哪儿？", "pinyin": "Nǐ zhù zài nǎr?", "english": "Where do you live?" },
-    { "chinese": "这是什么？", "pinyin": "Zhè shì shénme?", "english": "What is this?" },
-    { "chinese": "电脑在桌子上。", "pinyin": "Diànnǎo zài zhuōzi shàng.", "english": "The computer is on the desk." },
-    { "chinese": "哪个好？", "pinyin": "Nǎge hǎo?", "english": "Which one is good?" },
-    { "chinese": "我们去那个饭馆吃饭吧。", "pinyin": "Wǒmen qù nàge fànguǎn chīfàn ba.", "english": "Let's go eat at that restaurant." }
+    {
+      "chinese": "你住在哪儿？",
+      "pinyin": "Nǐ zhù zài nǎr?",
+      "english": "Where do you live?"
+    },
+    {
+      "chinese": "这是什么？",
+      "pinyin": "Zhè shì shénme?",
+      "english": "What is this?"
+    },
+    {
+      "chinese": "电脑在桌子上。",
+      "pinyin": "Diànnǎo zài zhuōzi shàng.",
+      "english": "The computer is on the desk."
+    },
+    {
+      "chinese": "哪个好？",
+      "pinyin": "Nǎge hǎo?",
+      "english": "Which one is good?"
+    },
+    {
+      "chinese": "我们去那个饭馆吃饭吧。",
+      "pinyin": "Wǒmen qù nàge fànguǎn chīfàn ba.",
+      "english": "Let's go eat at that restaurant."
+    }
   ],
   "grammar_points": [
     {
@@ -103,12 +482,28 @@
       "title": "Demonstratives: 这, 那, 哪 (zhè, nà, nǎ)",
       "explanation": "这 = this (near); 那 = that (far); 哪 = which (question). Add 个 after them before nouns: 这个, 那个, 哪个. Add 儿 for locations: 这儿 (here), 那儿 (there), 哪儿 (where).",
       "examples": [
-        { "chinese": "这个杯子很漂亮。", "pinyin": "Zhège bēizi hěn piàoliang.", "english": "This cup is very beautiful." },
-        { "chinese": "哪个是你的？", "pinyin": "Nǎge shì nǐ de?", "english": "Which one is yours?" }
+        {
+          "chinese": "这个杯子很漂亮。",
+          "pinyin": "Zhège bēizi hěn piàoliang.",
+          "english": "This cup is very beautiful."
+        },
+        {
+          "chinese": "哪个是你的？",
+          "pinyin": "Nǎge shì nǐ de?",
+          "english": "Which one is yours?"
+        }
       ],
       "exercises": [
-        { "question": "How do you say 'that chair'?", "answer": "那个椅子", "type": "production" },
-        { "question": "What is the question form of 这 and 那?", "answer": "哪", "type": "concept" }
+        {
+          "question": "How do you say 'that chair'?",
+          "answer": "那个椅子",
+          "type": "production"
+        },
+        {
+          "question": "What is the question form of 这 and 那?",
+          "answer": "哪",
+          "type": "concept"
+        }
       ]
     },
     {
@@ -116,12 +511,28 @@
       "title": "Verb 住 (zhù) — To Live / Reside",
       "explanation": "住 means to live somewhere. Always followed by 在 + location. Formula: Subject + 住在 + Place. To ask where: 你住在哪儿？",
       "examples": [
-        { "chinese": "我住在北京。", "pinyin": "Wǒ zhù zài Běijīng.", "english": "I live in Beijing." },
-        { "chinese": "她住在学校旁边。", "pinyin": "Tā zhù zài xuéxiào pángbiān.", "english": "She lives next to the school." }
+        {
+          "chinese": "我住在北京。",
+          "pinyin": "Wǒ zhù zài Běijīng.",
+          "english": "I live in Beijing."
+        },
+        {
+          "chinese": "她住在学校旁边。",
+          "pinyin": "Tā zhù zài xuéxiào pángbiān.",
+          "english": "She lives next to the school."
+        }
       ],
       "exercises": [
-        { "question": "Ask 'Where does he live?' in Chinese", "answer": "他住在哪儿？", "type": "production" },
-        { "question": "Fill in: 我___在上海。(I live in Shanghai)", "answer": "住", "type": "fill_in_blank" }
+        {
+          "question": "Ask 'Where does he live?' in Chinese",
+          "answer": "他住在哪儿？",
+          "type": "production"
+        },
+        {
+          "question": "Fill in: 我___在上海。(I live in Shanghai)",
+          "answer": "住",
+          "type": "fill_in_blank"
+        }
       ]
     },
     {
@@ -129,27 +540,334 @@
       "title": "Verb 开 (kāi) — To Open / Drive / Turn On",
       "explanation": "开 has several meanings: open a door (开门), drive a car (开车), turn on a device (开电脑/开电视). Context determines meaning.",
       "examples": [
-        { "chinese": "请开门。", "pinyin": "Qǐng kāi mén.", "english": "Please open the door." },
-        { "chinese": "我会开车。", "pinyin": "Wǒ huì kāi chē.", "english": "I can drive a car." }
+        {
+          "chinese": "请开门。",
+          "pinyin": "Qǐng kāi mén.",
+          "english": "Please open the door."
+        },
+        {
+          "chinese": "我会开车。",
+          "pinyin": "Wǒ huì kāi chē.",
+          "english": "I can drive a car."
+        }
       ],
       "exercises": [
-        { "question": "How do you say 'turn on the TV'?", "answer": "开电视", "type": "production" },
-        { "question": "What does 开 mean in 开车?", "answer": "To drive", "type": "concept" }
+        {
+          "question": "How do you say 'turn on the TV'?",
+          "answer": "开电视",
+          "type": "production"
+        },
+        {
+          "question": "What does 开 mean in 开车?",
+          "answer": "To drive",
+          "type": "concept"
+        }
       ]
     }
   ],
   "pinyin_focus": {
     "topic": "zh, zh clusters and falling tone",
-    "initials_focus": ["zh", "z", "k", "f"],
-    "finals_focus": ["uo", "an", "i", "ao"],
-    "tone_practice": ["diànnǎo", "zhuōzi", "yǐzi", "fànguǎn", "zhù"]
+    "initials_focus": [
+      "zh",
+      "z",
+      "k",
+      "f"
+    ],
+    "finals_focus": [
+      "uo",
+      "an",
+      "i",
+      "ao"
+    ],
+    "tone_practice": [
+      "diànnǎo",
+      "zhuōzi",
+      "yǐzi",
+      "fànguǎn",
+      "zhù"
+    ]
   },
-  "games": ["flashcard", "matching", "word_shake", "sentence_builder"],
+  "games": [
+    "flashcard",
+    "matching",
+    "word_shake",
+    "sentence_builder"
+  ],
   "quiz": [
-    { "question": "What does 电脑 mean?", "type": "multiple_choice", "correct": "Computer", "options": ["Television", "Phone", "Computer", "Radio"] },
-    { "question": "How do you say 'Where do you live?'", "type": "multiple_choice", "correct": "你住在哪儿？", "options": ["你在哪儿？", "你住在哪儿？", "你去哪儿？", "你来哪儿？"] },
-    { "question": "What does 那 mean?", "type": "multiple_choice", "correct": "That", "options": ["This", "Which", "That", "Here"] },
-    { "question": "What does 饭馆 mean?", "type": "multiple_choice", "correct": "Restaurant", "options": ["Supermarket", "Restaurant", "Hotel", "Hospital"] },
-    { "question": "Which is the measure word for cups?", "type": "multiple_choice", "correct": "个 (for cups: 杯子)", "options": ["本", "只", "个 (for cups: 杯子)", "口"] }
+    {
+      "question": "What does 电脑 mean?",
+      "type": "multiple_choice",
+      "correct": "Computer",
+      "options": [
+        "Television",
+        "Phone",
+        "Computer",
+        "Tablet"
+      ]
+    },
+    {
+      "question": "What does 椅子 mean?",
+      "type": "multiple_choice",
+      "correct": "Chair",
+      "options": [
+        "Table",
+        "Sofa",
+        "Chair",
+        "Bench"
+      ]
+    },
+    {
+      "question": "What does 桌子 mean?",
+      "type": "multiple_choice",
+      "correct": "Table / Desk",
+      "options": [
+        "Chair",
+        "Shelf",
+        "Table / Desk",
+        "Cabinet"
+      ]
+    },
+    {
+      "question": "What does 住 mean?",
+      "type": "multiple_choice",
+      "correct": "To live / To reside",
+      "options": [
+        "To stay overnight",
+        "To visit",
+        "To live / To reside",
+        "To move"
+      ]
+    },
+    {
+      "question": "What does 饭馆 mean?",
+      "type": "multiple_choice",
+      "correct": "Restaurant",
+      "options": [
+        "Cafeteria",
+        "Supermarket",
+        "Restaurant",
+        "Hotel"
+      ]
+    },
+    {
+      "question": "What is 杯子?",
+      "type": "multiple_choice",
+      "correct": "Cup / Glass (the object)",
+      "options": [
+        "Cup of tea",
+        "Cupboard",
+        "Cup / Glass (the object)",
+        "Plate"
+      ]
+    },
+    {
+      "question": "What does 这 mean?",
+      "type": "multiple_choice",
+      "correct": "This",
+      "options": [
+        "That",
+        "Which",
+        "This",
+        "Here"
+      ]
+    },
+    {
+      "question": "What does 那 mean?",
+      "type": "multiple_choice",
+      "correct": "That",
+      "options": [
+        "This",
+        "Which",
+        "That",
+        "There"
+      ]
+    },
+    {
+      "question": "What does 哪 mean?",
+      "type": "multiple_choice",
+      "correct": "Which (question word)",
+      "options": [
+        "This",
+        "That",
+        "Here",
+        "Which (question word)"
+      ]
+    },
+    {
+      "question": "这儿 and 那儿 mean:",
+      "type": "multiple_choice",
+      "correct": "Here and there",
+      "options": [
+        "This and that",
+        "Here and where",
+        "Here and there",
+        "Near and far"
+      ]
+    },
+    {
+      "question": "What does 开 mean in 开电脑?",
+      "type": "multiple_choice",
+      "correct": "Turn on",
+      "options": [
+        "Open physically",
+        "Operate",
+        "Turn on",
+        "Start programs"
+      ]
+    },
+    {
+      "question": "How do you ask 'Where do you live?'",
+      "type": "multiple_choice",
+      "correct": "你住在哪儿？",
+      "options": [
+        "你在哪儿住？",
+        "你住哪儿？",
+        "你住在哪儿？",
+        "All are correct"
+      ]
+    },
+    {
+      "question": "How do you say 'The computer is on the desk.'?",
+      "type": "multiple_choice",
+      "correct": "电脑在桌子上。",
+      "options": [
+        "电脑桌子上在。",
+        "在桌子上电脑。",
+        "电脑在桌子上。",
+        "桌子上有电脑在。"
+      ]
+    },
+    {
+      "question": "这是什么？means:",
+      "type": "multiple_choice",
+      "correct": "What is this?",
+      "options": [
+        "Is this good?",
+        "What is this?",
+        "Where is this?",
+        "Whose is this?"
+      ]
+    },
+    {
+      "question": "How do you say 'that restaurant'?",
+      "type": "multiple_choice",
+      "correct": "那个饭馆",
+      "options": [
+        "这个饭馆",
+        "哪个饭馆",
+        "那个饭馆",
+        "那饭馆"
+      ]
+    },
+    {
+      "question": "How do you ask 'Which one is good?'",
+      "type": "multiple_choice",
+      "correct": "哪个好？",
+      "options": [
+        "那个好？",
+        "这个好？",
+        "哪个好？",
+        "什么好？"
+      ]
+    },
+    {
+      "question": "What does 住在 + place mean?",
+      "type": "multiple_choice",
+      "correct": "Live in/at [place]",
+      "options": [
+        "Stay at [place]",
+        "Work at [place]",
+        "Live in/at [place]",
+        "Visit [place]"
+      ]
+    },
+    {
+      "question": "Translate: 'I live next to the school.'",
+      "type": "multiple_choice",
+      "correct": "我住在学校旁边。",
+      "options": [
+        "我住旁边学校。",
+        "我在学校住旁边。",
+        "我住在学校旁边。",
+        "学校旁边我住在。"
+      ]
+    },
+    {
+      "question": "How do you say 'Let's go to that restaurant.'?",
+      "type": "multiple_choice",
+      "correct": "我们去那个饭馆吧。",
+      "options": [
+        "我们去这个饭馆吧。",
+        "我们去哪个饭馆吧？",
+        "我们去那个饭馆吧。",
+        "我们那个饭馆去吧。"
+      ]
+    },
+    {
+      "question": "请坐！means:",
+      "type": "multiple_choice",
+      "correct": "Please sit down!",
+      "options": [
+        "Can I sit?",
+        "Please stand up!",
+        "Please sit down!",
+        "Are you sitting?"
+      ]
+    },
+    {
+      "question": "What does 开门 mean?",
+      "type": "multiple_choice",
+      "correct": "Open the door",
+      "options": [
+        "Close the door",
+        "Open the door",
+        "Lock the door",
+        "Knock on the door"
+      ]
+    },
+    {
+      "question": "How do you say 'turn on the computer'?",
+      "type": "multiple_choice",
+      "correct": "开电脑",
+      "options": [
+        "关电脑",
+        "开电视",
+        "开电脑",
+        "用电脑"
+      ]
+    },
+    {
+      "question": "Which is the correct 这/那/哪 for a question?",
+      "type": "multiple_choice",
+      "correct": "哪",
+      "options": [
+        "这",
+        "那",
+        "哪",
+        "Any of them"
+      ]
+    },
+    {
+      "question": "Translate: 'Here or there?'",
+      "type": "multiple_choice",
+      "correct": "在这儿还是那儿？",
+      "options": [
+        "在哪儿？",
+        "这儿吗？",
+        "在这儿还是那儿？",
+        "这儿那儿？"
+      ]
+    },
+    {
+      "question": "What's the difference between 杯 and 杯子?",
+      "type": "multiple_choice",
+      "correct": "杯 = measure word (a cup of); 杯子 = the cup object",
+      "options": [
+        "They are the same",
+        "杯子 = measure word; 杯 = the object",
+        "杯 = measure word (a cup of); 杯子 = the cup object",
+        "Both only mean the object"
+      ]
+    }
   ]
 }

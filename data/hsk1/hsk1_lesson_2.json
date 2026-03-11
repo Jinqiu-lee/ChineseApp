@@ -513,14 +513,91 @@
   ],
   "quiz": [
     {
-      "question": "What is '3' in Chinese?",
+      "question": "What does 一 mean?",
       "type": "multiple_choice",
-      "correct": "三",
+      "correct": "One",
       "options": [
-        "一",
-        "二",
-        "三",
-        "四"
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ]
+    },
+    {
+      "question": "How do you say '7' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "七",
+      "options": [
+        "六",
+        "七",
+        "八",
+        "九"
+      ]
+    },
+    {
+      "question": "What does 零 mean?",
+      "type": "multiple_choice",
+      "correct": "Zero",
+      "options": [
+        "Zero",
+        "Ten",
+        "Hundred",
+        "One"
+      ]
+    },
+    {
+      "question": "How do you say '10' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "十",
+      "options": [
+        "百",
+        "千",
+        "十",
+        "万"
+      ]
+    },
+    {
+      "question": "What does 岁 mean?",
+      "type": "multiple_choice",
+      "correct": "Years old",
+      "options": [
+        "Year",
+        "Age",
+        "Years old",
+        "Month"
+      ]
+    },
+    {
+      "question": "How do you say 'I am 18 years old.'?",
+      "type": "multiple_choice",
+      "correct": "我十八岁。",
+      "options": [
+        "我是十八岁。",
+        "我有十八岁。",
+        "我十八岁。",
+        "十八岁我。"
+      ]
+    },
+    {
+      "question": "What does 多大 ask?",
+      "type": "multiple_choice",
+      "correct": "How old (for adults)",
+      "options": [
+        "How many",
+        "How big",
+        "How old (for adults)",
+        "How much"
+      ]
+    },
+    {
+      "question": "What does 几岁 ask?",
+      "type": "multiple_choice",
+      "correct": "How old (for children)",
+      "options": [
+        "How many years",
+        "How old (for children)",
+        "How many people",
+        "What year"
       ]
     },
     {
@@ -530,19 +607,206 @@
       "options": [
         "五十",
         "十五",
-        "五",
-        "一五"
+        "一五",
+        "五一"
       ]
     },
     {
-      "question": "What is 个 used for?",
+      "question": "What is 两 used for instead of 二?",
       "type": "multiple_choice",
-      "correct": "Measure word",
+      "correct": "Before measure words (两个, 两本)",
       "options": [
-        "Measure word",
-        "Question",
-        "Possession",
-        "Verb"
+        "Counting in sequence",
+        "Before measure words (两个, 两本)",
+        "In phone numbers",
+        "All situations"
+      ]
+    },
+    {
+      "question": "How do you say 'two people' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "两个人",
+      "options": [
+        "二个人",
+        "两个人",
+        "两人个",
+        "人两个"
+      ]
+    },
+    {
+      "question": "What is 个?",
+      "type": "multiple_choice",
+      "correct": "General measure word",
+      "options": [
+        "Measure word for books",
+        "General measure word",
+        "Measure word for drinks",
+        "Measure word for family"
+      ]
+    },
+    {
+      "question": "How do you say '21'?",
+      "type": "multiple_choice",
+      "correct": "二十一",
+      "options": [
+        "二十一",
+        "一十二",
+        "十二一",
+        "二一十"
+      ]
+    },
+    {
+      "question": "What does 几 ask?",
+      "type": "multiple_choice",
+      "correct": "How many (for small numbers)",
+      "options": [
+        "How much money",
+        "How many (for small numbers)",
+        "Which one",
+        "What time"
+      ]
+    },
+    {
+      "question": "What measure word for 'people' in family context?",
+      "type": "multiple_choice",
+      "correct": "口",
+      "options": [
+        "个",
+        "人",
+        "口",
+        "位"
+      ]
+    },
+    {
+      "question": "How do you say 'three people'?",
+      "type": "multiple_choice",
+      "correct": "三个人",
+      "options": [
+        "三人",
+        "三个人",
+        "人三个",
+        "个三人"
+      ]
+    },
+    {
+      "question": "What number is 九?",
+      "type": "multiple_choice",
+      "correct": "9",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "question": "How do you say 'five cups'?",
+      "type": "multiple_choice",
+      "correct": "五杯",
+      "options": [
+        "杯五",
+        "五杯",
+        "五个杯",
+        "五杯子"
+      ]
+    },
+    {
+      "question": "What is 百?",
+      "type": "multiple_choice",
+      "correct": "Hundred",
+      "options": [
+        "Ten",
+        "Hundred",
+        "Thousand",
+        "Ten thousand"
+      ]
+    },
+    {
+      "question": "How do you say 'How old are you?' to an adult?",
+      "type": "multiple_choice",
+      "correct": "你多大？",
+      "options": [
+        "你几岁？",
+        "你多大？",
+        "你是几岁？",
+        "你的年龄？"
+      ]
+    },
+    {
+      "question": "What number comes after 八?",
+      "type": "multiple_choice",
+      "correct": "九",
+      "options": [
+        "七",
+        "十",
+        "九",
+        "六"
+      ]
+    },
+    {
+      "question": "How do you say '100'?",
+      "type": "multiple_choice",
+      "correct": "一百",
+      "options": [
+        "百一",
+        "十十",
+        "一百",
+        "百"
+      ]
+    },
+    {
+      "question": "Fill in: 我___十六岁。(I am 16 years old)",
+      "type": "multiple_choice",
+      "correct": "No verb needed",
+      "options": [
+        "是",
+        "有",
+        "在",
+        "No verb needed"
+      ]
+    },
+    {
+      "question": "What does 多少 ask?",
+      "type": "multiple_choice",
+      "correct": "How many / How much (for large numbers)",
+      "options": [
+        "How small",
+        "How many / How much (for large numbers)",
+        "How old",
+        "How far"
+      ]
+    },
+    {
+      "question": "What is the correct order for '35'?",
+      "type": "multiple_choice",
+      "correct": "三十五",
+      "options": [
+        "五三十",
+        "三五十",
+        "十三五",
+        "三十五"
+      ]
+    },
+    {
+      "question": "What number is 四?",
+      "type": "multiple_choice",
+      "correct": "4",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "question": "Translate: 'She is 25 years old.'",
+      "type": "multiple_choice",
+      "correct": "她二十五岁。",
+      "options": [
+        "她是有二十五岁。",
+        "她二十五岁。",
+        "二十五岁她。",
+        "她很二十五岁。"
       ]
     }
   ],

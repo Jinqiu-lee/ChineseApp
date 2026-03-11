@@ -3,32 +3,287 @@
   "topic": "Ability & Animals",
   "topic_chinese": "我能做什么",
   "age_group": "Adults and 10+",
-  "objectives": ["listening", "speaking", "reading", "writing"],
+  "objectives": [
+    "listening",
+    "speaking",
+    "reading",
+    "writing"
+  ],
   "vocabulary": [
-    { "id": "hsk1_l12_01", "chinese": "能", "pinyin": "néng", "tones": [2], "english": "Can / Be able to", "part_of_speech": "verb" },
-    { "id": "hsk1_l12_02", "chinese": "漂亮", "pinyin": "piàoliang", "tones": [4, 0], "english": "Beautiful / Pretty", "part_of_speech": "adjective" },
-    { "id": "hsk1_l12_03", "chinese": "学习", "pinyin": "xuéxí", "tones": [2, 2], "english": "To study / To learn", "part_of_speech": "verb" },
-    { "id": "hsk1_l12_04", "chinese": "学生", "pinyin": "xuésheng", "tones": [2, 0], "english": "Student", "part_of_speech": "noun" },
-    { "id": "hsk1_l12_05", "chinese": "水果", "pinyin": "shuǐguǒ", "tones": [3, 3], "english": "Fruit", "part_of_speech": "noun" },
-    { "id": "hsk1_l12_06", "chinese": "睡觉", "pinyin": "shuì jiào", "tones": [4, 4], "english": "To sleep", "part_of_speech": "verb" },
-    { "id": "hsk1_l12_07", "chinese": "猫", "pinyin": "māo", "tones": [1], "english": "Cat", "part_of_speech": "noun" },
-    { "id": "hsk1_l12_08", "chinese": "狗", "pinyin": "gǒu", "tones": [3], "english": "Dog", "part_of_speech": "noun" },
-    { "id": "hsk1_l12_09", "chinese": "小姐", "pinyin": "xiǎojiě", "tones": [3, 3], "english": "Miss / Ms. / Young woman", "part_of_speech": "noun" },
-    { "id": "hsk1_l12_10", "chinese": "女人", "pinyin": "nǚrén", "tones": [3, 2], "english": "Woman", "part_of_speech": "noun" },
-    { "id": "hsk1_l12_11", "chinese": "都", "pinyin": "dōu", "tones": [1], "english": "All / Both", "part_of_speech": "adverb" },
-    { "id": "hsk1_l12_12", "chinese": "怎么", "pinyin": "zěnme", "tones": [3, 0], "english": "How / Why", "part_of_speech": "question_word" },
-    { "id": "hsk1_l12_p01", "chinese": "能说", "pinyin": "néng shuō", "tones": [2, 1], "english": "Can speak / Able to say", "part_of_speech": "phrase" },
-    { "id": "hsk1_l12_p02", "chinese": "很漂亮", "pinyin": "hěn piàoliang", "tones": [3, 4, 0], "english": "Very beautiful", "part_of_speech": "phrase" },
-    { "id": "hsk1_l12_p03", "chinese": "学习汉语", "pinyin": "xuéxí Hànyǔ", "tones": [2, 2, 4, 3], "english": "Study Chinese", "part_of_speech": "phrase" },
-    { "id": "hsk1_l12_p04", "chinese": "我是学生", "pinyin": "wǒ shì xuésheng", "tones": [3, 4, 2, 0], "english": "I am a student", "part_of_speech": "phrase" },
-    { "id": "hsk1_l12_p05", "chinese": "吃水果", "pinyin": "chī shuǐguǒ", "tones": [1, 3, 3], "english": "Eat fruit", "part_of_speech": "phrase" },
-    { "id": "hsk1_l12_p06", "chinese": "睡觉了", "pinyin": "shuì jiào le", "tones": [4, 4, 0], "english": "Going to sleep / Went to sleep", "part_of_speech": "phrase" },
-    { "id": "hsk1_l12_p07", "chinese": "一只猫", "pinyin": "yī zhī māo", "tones": [1, 1, 1], "english": "One cat", "part_of_speech": "phrase" },
-    { "id": "hsk1_l12_p08", "chinese": "一只狗", "pinyin": "yī zhī gǒu", "tones": [1, 1, 3], "english": "One dog", "part_of_speech": "phrase" },
-    { "id": "hsk1_l12_p09", "chinese": "都很好", "pinyin": "dōu hěn hǎo", "tones": [1, 3, 3], "english": "All very good / Both are good", "part_of_speech": "phrase" },
-    { "id": "hsk1_l12_p10", "chinese": "怎么学", "pinyin": "zěnme xué", "tones": [3, 0, 2], "english": "How to study", "part_of_speech": "phrase" },
-    { "id": "hsk1_l12_p11", "chinese": "都是朋友", "pinyin": "dōu shì péngyou", "tones": [1, 4, 2, 0], "english": "All are friends", "part_of_speech": "phrase" },
-    { "id": "hsk1_l12_p12", "chinese": "能不能", "pinyin": "néng bu néng", "tones": [2, 0, 2], "english": "Can or cannot / Is it possible?", "part_of_speech": "phrase" }
+    {
+      "id": "hsk1_l12_01",
+      "chinese": "能",
+      "pinyin": "néng",
+      "tones": [
+        2
+      ],
+      "english": "Can / Be able to",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l12_02",
+      "chinese": "漂亮",
+      "pinyin": "piàoliang",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "Beautiful / Pretty",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk1_l12_03",
+      "chinese": "学习",
+      "pinyin": "xuéxí",
+      "tones": [
+        2,
+        2
+      ],
+      "english": "To study / To learn",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l12_04",
+      "chinese": "学生",
+      "pinyin": "xuésheng",
+      "tones": [
+        2,
+        0
+      ],
+      "english": "Student",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l12_05",
+      "chinese": "水果",
+      "pinyin": "shuǐguǒ",
+      "tones": [
+        3,
+        3
+      ],
+      "english": "Fruit",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l12_06",
+      "chinese": "睡觉",
+      "pinyin": "shuì jiào",
+      "tones": [
+        4,
+        4
+      ],
+      "english": "To sleep",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk1_l12_07",
+      "chinese": "猫",
+      "pinyin": "māo",
+      "tones": [
+        1
+      ],
+      "english": "Cat",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l12_08",
+      "chinese": "狗",
+      "pinyin": "gǒu",
+      "tones": [
+        3
+      ],
+      "english": "Dog",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l12_09",
+      "chinese": "小姐",
+      "pinyin": "xiǎojiě",
+      "tones": [
+        3,
+        3
+      ],
+      "english": "Miss / Ms. / Young woman",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l12_10",
+      "chinese": "女人",
+      "pinyin": "nǚrén",
+      "tones": [
+        3,
+        2
+      ],
+      "english": "Woman",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk1_l12_11",
+      "chinese": "都",
+      "pinyin": "dōu",
+      "tones": [
+        1
+      ],
+      "english": "All / Both",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk1_l12_12",
+      "chinese": "怎么",
+      "pinyin": "zěnme",
+      "tones": [
+        3,
+        0
+      ],
+      "english": "How / Why",
+      "part_of_speech": "question_word"
+    },
+    {
+      "id": "hsk1_l12_p01",
+      "chinese": "能说",
+      "pinyin": "néng shuō",
+      "tones": [
+        2,
+        1
+      ],
+      "english": "Can speak / Able to say",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l12_p02",
+      "chinese": "很漂亮",
+      "pinyin": "hěn piàoliang",
+      "tones": [
+        3,
+        4,
+        0
+      ],
+      "english": "Very beautiful",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l12_p03",
+      "chinese": "学习汉语",
+      "pinyin": "xuéxí Hànyǔ",
+      "tones": [
+        2,
+        2,
+        4,
+        3
+      ],
+      "english": "Study Chinese",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l12_p04",
+      "chinese": "我是学生",
+      "pinyin": "wǒ shì xuésheng",
+      "tones": [
+        3,
+        4,
+        2,
+        0
+      ],
+      "english": "I am a student",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l12_p05",
+      "chinese": "吃水果",
+      "pinyin": "chī shuǐguǒ",
+      "tones": [
+        1,
+        3,
+        3
+      ],
+      "english": "Eat fruit",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l12_p06",
+      "chinese": "睡觉了",
+      "pinyin": "shuì jiào le",
+      "tones": [
+        4,
+        4,
+        0
+      ],
+      "english": "Going to sleep / Went to sleep",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l12_p07",
+      "chinese": "一只猫",
+      "pinyin": "yī zhī māo",
+      "tones": [
+        1,
+        1,
+        1
+      ],
+      "english": "One cat",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l12_p08",
+      "chinese": "一只狗",
+      "pinyin": "yī zhī gǒu",
+      "tones": [
+        1,
+        1,
+        3
+      ],
+      "english": "One dog",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l12_p09",
+      "chinese": "都很好",
+      "pinyin": "dōu hěn hǎo",
+      "tones": [
+        1,
+        3,
+        3
+      ],
+      "english": "All very good / Both are good",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l12_p10",
+      "chinese": "怎么学",
+      "pinyin": "zěnme xué",
+      "tones": [
+        3,
+        0,
+        2
+      ],
+      "english": "How to study",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l12_p11",
+      "chinese": "都是朋友",
+      "pinyin": "dōu shì péngyou",
+      "tones": [
+        1,
+        4,
+        2,
+        0
+      ],
+      "english": "All are friends",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l12_p12",
+      "chinese": "能不能",
+      "pinyin": "néng bu néng",
+      "tones": [
+        2,
+        0,
+        2
+      ],
+      "english": "Can or cannot / Is it possible?",
+      "part_of_speech": "phrase"
+    }
   ],
   "dialogues": [
     {
@@ -36,13 +291,36 @@
       "title": "Can You Come?",
       "title_chinese": "你能来吗",
       "lines": [
-        { "speaker": "A", "chinese": "你明天能来吗？", "pinyin": "Nǐ míngtiān néng lái ma?", "english": "Can you come tomorrow?" },
-        { "speaker": "B", "chinese": "能，我明天能来。", "pinyin": "Néng, wǒ míngtiān néng lái.", "english": "Yes, I can come tomorrow." },
-        { "speaker": "A", "chinese": "太好了！我们一起学习。", "pinyin": "Tài hǎo le! Wǒmen yīqǐ xuéxí.", "english": "Great! Let's study together." }
+        {
+          "speaker": "A",
+          "chinese": "你明天能来吗？",
+          "pinyin": "Nǐ míngtiān néng lái ma?",
+          "english": "Can you come tomorrow?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "能，我明天能来。",
+          "pinyin": "Néng, wǒ míngtiān néng lái.",
+          "english": "Yes, I can come tomorrow."
+        },
+        {
+          "speaker": "A",
+          "chinese": "太好了！我们一起学习。",
+          "pinyin": "Tài hǎo le! Wǒmen yīqǐ xuéxí.",
+          "english": "Great! Let's study together."
+        }
       ],
       "speakers": {
-        "A": { "name": "小丽", "role": "同学", "gender": "female" },
-        "B": { "name": "小明", "role": "同学", "gender": "male" }
+        "A": {
+          "name": "小丽",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "同学",
+          "gender": "male"
+        }
       }
     },
     {
@@ -50,14 +328,42 @@
       "title": "Do You Have Pets?",
       "title_chinese": "你有宠物吗",
       "lines": [
-        { "speaker": "A", "chinese": "你有猫还是狗？", "pinyin": "Nǐ yǒu māo háishi gǒu?", "english": "Do you have a cat or a dog?" },
-        { "speaker": "B", "chinese": "我有一只猫和一只狗，都很漂亮！", "pinyin": "Wǒ yǒu yī zhī māo hé yī zhī gǒu, dōu hěn piàoliang!", "english": "I have one cat and one dog, both are very beautiful!" },
-        { "speaker": "A", "chinese": "真的？它们都叫什么名字？", "pinyin": "Zhēn de? Tāmen dōu jiào shénme míngzi?", "english": "Really? What are their names?" },
-        { "speaker": "B", "chinese": "猫叫小白，狗叫大黑。", "pinyin": "Māo jiào Xiǎobái, gǒu jiào Dàhēi.", "english": "The cat is called Xiaobai, the dog is called Dahei." }
+        {
+          "speaker": "A",
+          "chinese": "你有猫还是狗？",
+          "pinyin": "Nǐ yǒu māo háishi gǒu?",
+          "english": "Do you have a cat or a dog?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我有一只猫和一只狗，都很漂亮！",
+          "pinyin": "Wǒ yǒu yī zhī māo hé yī zhī gǒu, dōu hěn piàoliang!",
+          "english": "I have one cat and one dog, both are very beautiful!"
+        },
+        {
+          "speaker": "A",
+          "chinese": "真的？它们都叫什么名字？",
+          "pinyin": "Zhēn de? Tāmen dōu jiào shénme míngzi?",
+          "english": "Really? What are their names?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "猫叫小白，狗叫大黑。",
+          "pinyin": "Māo jiào Xiǎobái, gǒu jiào Dàhēi.",
+          "english": "The cat is called Xiaobai, the dog is called Dahei."
+        }
       ],
       "speakers": {
-        "A": { "name": "小华", "role": "朋友", "gender": "female" },
-        "B": { "name": "小刚", "role": "朋友", "gender": "male" }
+        "A": {
+          "name": "小华",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "朋友",
+          "gender": "male"
+        }
       }
     },
     {
@@ -65,14 +371,42 @@
       "title": "She Is Very Beautiful",
       "title_chinese": "她很漂亮",
       "lines": [
-        { "speaker": "A", "chinese": "你看，那个女人很漂亮！", "pinyin": "Nǐ kàn, nàge nǚrén hěn piàoliang!", "english": "Look, that woman is very beautiful!" },
-        { "speaker": "B", "chinese": "是，她是小姐吧？", "pinyin": "Shì, tā shì xiǎojiě ba?", "english": "Yes, she's a young woman, right?" },
-        { "speaker": "A", "chinese": "不知道。她能说汉语吗？", "pinyin": "Bù zhīdào. Tā néng shuō Hànyǔ ma?", "english": "I don't know. Can she speak Chinese?" },
-        { "speaker": "B", "chinese": "能，她是我的同学！", "pinyin": "Néng, tā shì wǒ de tóngxué!", "english": "Yes, she's my classmate!" }
+        {
+          "speaker": "A",
+          "chinese": "你看，那个女人很漂亮！",
+          "pinyin": "Nǐ kàn, nàge nǚrén hěn piàoliang!",
+          "english": "Look, that woman is very beautiful!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是，她是小姐吧？",
+          "pinyin": "Shì, tā shì xiǎojiě ba?",
+          "english": "Yes, she's a young woman, right?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "不知道。她能说汉语吗？",
+          "pinyin": "Bù zhīdào. Tā néng shuō Hànyǔ ma?",
+          "english": "I don't know. Can she speak Chinese?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "能，她是我的同学！",
+          "pinyin": "Néng, tā shì wǒ de tóngxué!",
+          "english": "Yes, she's my classmate!"
+        }
       ],
       "speakers": {
-        "A": { "name": "小美", "role": "朋友", "gender": "female" },
-        "B": { "name": "大明", "role": "朋友", "gender": "male" }
+        "A": {
+          "name": "小美",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "朋友",
+          "gender": "male"
+        }
       }
     },
     {
@@ -80,23 +414,71 @@
       "title": "How Do You Study?",
       "title_chinese": "怎么学习",
       "lines": [
-        { "speaker": "A", "chinese": "你怎么学习汉语？", "pinyin": "Nǐ zěnme xuéxí Hànyǔ?", "english": "How do you study Chinese?" },
-        { "speaker": "B", "chinese": "我每天听和说。你呢？", "pinyin": "Wǒ měitiān tīng hé shuō. Nǐ ne?", "english": "I listen and speak every day. What about you?" },
-        { "speaker": "A", "chinese": "我吃水果，睡觉，然后学习！", "pinyin": "Wǒ chī shuǐguǒ, shuì jiào, rán hòu xuéxí!", "english": "I eat fruit, sleep, then study!" },
-        { "speaker": "B", "chinese": "哈哈！你们学生都一样！", "pinyin": "Hāhā! Nǐmen xuésheng dōu yīyàng!", "english": "Haha! You students are all the same!" }
+        {
+          "speaker": "A",
+          "chinese": "你怎么学习汉语？",
+          "pinyin": "Nǐ zěnme xuéxí Hànyǔ?",
+          "english": "How do you study Chinese?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我每天听和说。你呢？",
+          "pinyin": "Wǒ měitiān tīng hé shuō. Nǐ ne?",
+          "english": "I listen and speak every day. What about you?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我吃水果，睡觉，然后学习！",
+          "pinyin": "Wǒ chī shuǐguǒ, shuì jiào, rán hòu xuéxí!",
+          "english": "I eat fruit, sleep, then study!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "哈哈！你们学生都一样！",
+          "pinyin": "Hāhā! Nǐmen xuésheng dōu yīyàng!",
+          "english": "Haha! You students are all the same!"
+        }
       ],
       "speakers": {
-        "A": { "name": "小丽", "role": "学生", "gender": "female" },
-        "B": { "name": "王先生", "role": "老师", "gender": "male" }
+        "A": {
+          "name": "小丽",
+          "role": "学生",
+          "gender": "female"
+        },
+        "B": {
+          "name": "王先生",
+          "role": "老师",
+          "gender": "male"
+        }
       }
     }
   ],
   "key_sentences": [
-    { "chinese": "你能来吗？", "pinyin": "Nǐ néng lái ma?", "english": "Can you come?" },
-    { "chinese": "我有一只猫。", "pinyin": "Wǒ yǒu yī zhī māo.", "english": "I have one cat." },
-    { "chinese": "她很漂亮。", "pinyin": "Tā hěn piàoliang.", "english": "She is very beautiful." },
-    { "chinese": "我们都是学生。", "pinyin": "Wǒmen dōu shì xuésheng.", "english": "We are all students." },
-    { "chinese": "你怎么学习汉语？", "pinyin": "Nǐ zěnme xuéxí Hànyǔ?", "english": "How do you study Chinese?" }
+    {
+      "chinese": "你能来吗？",
+      "pinyin": "Nǐ néng lái ma?",
+      "english": "Can you come?"
+    },
+    {
+      "chinese": "我有一只猫。",
+      "pinyin": "Wǒ yǒu yī zhī māo.",
+      "english": "I have one cat."
+    },
+    {
+      "chinese": "她很漂亮。",
+      "pinyin": "Tā hěn piàoliang.",
+      "english": "She is very beautiful."
+    },
+    {
+      "chinese": "我们都是学生。",
+      "pinyin": "Wǒmen dōu shì xuésheng.",
+      "english": "We are all students."
+    },
+    {
+      "chinese": "你怎么学习汉语？",
+      "pinyin": "Nǐ zěnme xuéxí Hànyǔ?",
+      "english": "How do you study Chinese?"
+    }
   ],
   "grammar_points": [
     {
@@ -104,12 +486,28 @@
       "title": "Modal Verb 能 (néng) — Physical Ability / Permission",
       "explanation": "能 expresses physical ability or situational permission. Differs from 会 (learned skill). 能 = 'can' because of circumstances. Negative: 不能. Question: 能不能 or 能...吗?",
       "examples": [
-        { "chinese": "你能来吗？", "pinyin": "Nǐ néng lái ma?", "english": "Can you come?" },
-        { "chinese": "这里不能喝酒。", "pinyin": "Zhèlǐ bù néng hē jiǔ.", "english": "You can't drink alcohol here." }
+        {
+          "chinese": "你能来吗？",
+          "pinyin": "Nǐ néng lái ma?",
+          "english": "Can you come?"
+        },
+        {
+          "chinese": "这里不能喝酒。",
+          "pinyin": "Zhèlǐ bù néng hē jiǔ.",
+          "english": "You can't drink alcohol here."
+        }
       ],
       "exercises": [
-        { "question": "Difference between 能 and 会?", "answer": "能 = situational ability/permission; 会 = learned skill", "type": "concept" },
-        { "question": "Fill in: 我___来，但是他不能来。(I can come)", "answer": "能", "type": "fill_in_blank" }
+        {
+          "question": "Difference between 能 and 会?",
+          "answer": "能 = situational ability/permission; 会 = learned skill",
+          "type": "concept"
+        },
+        {
+          "question": "Fill in: 我___来，但是他不能来。(I can come)",
+          "answer": "能",
+          "type": "fill_in_blank"
+        }
       ]
     },
     {
@@ -117,12 +515,28 @@
       "title": "都 (dōu) — All / Both",
       "explanation": "都 means 'all' or 'both' and always comes before the verb, never before the subject. Formula: Subject(s) + 都 + Verb. It summarizes multiple subjects.",
       "examples": [
-        { "chinese": "我们都是学生。", "pinyin": "Wǒmen dōu shì xuésheng.", "english": "We are all students." },
-        { "chinese": "猫和狗都很可爱。", "pinyin": "Māo hé gǒu dōu hěn kě'ài.", "english": "Cats and dogs are both very cute." }
+        {
+          "chinese": "我们都是学生。",
+          "pinyin": "Wǒmen dōu shì xuésheng.",
+          "english": "We are all students."
+        },
+        {
+          "chinese": "猫和狗都很可爱。",
+          "pinyin": "Māo hé gǒu dōu hěn kě'ài.",
+          "english": "Cats and dogs are both very cute."
+        }
       ],
       "exercises": [
-        { "question": "Say 'They all eat rice' in Chinese", "answer": "他们都吃米饭。", "type": "production" },
-        { "question": "Where does 都 go in a sentence?", "answer": "Before the verb", "type": "concept" }
+        {
+          "question": "Say 'They all eat rice' in Chinese",
+          "answer": "他们都吃米饭。",
+          "type": "production"
+        },
+        {
+          "question": "Where does 都 go in a sentence?",
+          "answer": "Before the verb",
+          "type": "concept"
+        }
       ]
     },
     {
@@ -130,27 +544,334 @@
       "title": "怎么 (zěnme) — How",
       "explanation": "怎么 asks about the method or way of doing something. Formula: Subject + 怎么 + Verb? Compare: 怎么样 asks for a description; 怎么 asks for the method.",
       "examples": [
-        { "chinese": "你怎么去？", "pinyin": "Nǐ zěnme qù?", "english": "How are you going?" },
-        { "chinese": "这个字怎么写？", "pinyin": "Zhège zì zěnme xiě?", "english": "How do you write this character?" }
+        {
+          "chinese": "你怎么去？",
+          "pinyin": "Nǐ zěnme qù?",
+          "english": "How are you going?"
+        },
+        {
+          "chinese": "这个字怎么写？",
+          "pinyin": "Zhège zì zěnme xiě?",
+          "english": "How do you write this character?"
+        }
       ],
       "exercises": [
-        { "question": "Ask 'How do you say this word?' in Chinese", "answer": "这个词怎么说？", "type": "production" },
-        { "question": "Difference between 怎么 and 怎么样?", "answer": "怎么 = how (method); 怎么样 = how (description/opinion)", "type": "concept" }
+        {
+          "question": "Ask 'How do you say this word?' in Chinese",
+          "answer": "这个词怎么说？",
+          "type": "production"
+        },
+        {
+          "question": "Difference between 怎么 and 怎么样?",
+          "answer": "怎么 = how (method); 怎么样 = how (description/opinion)",
+          "type": "concept"
+        }
       ]
     }
   ],
   "pinyin_focus": {
     "topic": "Words with ü and nasal finals",
-    "initials_focus": ["n", "l", "x", "zh"],
-    "finals_focus": ["ü", "iao", "ui", "uan"],
-    "tone_practice": ["néng", "piàoliang", "xuéxí", "shuǐguǒ", "dōu"]
+    "initials_focus": [
+      "n",
+      "l",
+      "x",
+      "zh"
+    ],
+    "finals_focus": [
+      "ü",
+      "iao",
+      "ui",
+      "uan"
+    ],
+    "tone_practice": [
+      "néng",
+      "piàoliang",
+      "xuéxí",
+      "shuǐguǒ",
+      "dōu"
+    ]
   },
-  "games": ["flashcard", "matching", "word_shake", "sentence_builder"],
+  "games": [
+    "flashcard",
+    "matching",
+    "word_shake",
+    "sentence_builder"
+  ],
   "quiz": [
-    { "question": "What does 都 mean?", "type": "multiple_choice", "correct": "All / Both", "options": ["Some", "All / Both", "None", "Many"] },
-    { "question": "What does 能 express?", "type": "multiple_choice", "correct": "Physical ability or permission", "options": ["Learned skill", "Physical ability or permission", "Past action", "Future plan"] },
-    { "question": "How do you say 'cat' in Chinese?", "type": "multiple_choice", "correct": "猫", "options": ["狗", "猫", "鱼", "鸟"] },
-    { "question": "What does 漂亮 mean?", "type": "multiple_choice", "correct": "Beautiful", "options": ["Smart", "Big", "Beautiful", "Fast"] },
-    { "question": "Say 'They are all students.' Which is correct?", "type": "multiple_choice", "correct": "他们都是学生。", "options": ["都他们是学生。", "他们是都学生。", "他们都是学生。", "他们是学生都。"] }
+    {
+      "question": "What does 能 mean?",
+      "type": "multiple_choice",
+      "correct": "Can / Be able to (situationally)",
+      "options": [
+        "Want to",
+        "Know how to",
+        "Can / Be able to (situationally)",
+        "Must"
+      ]
+    },
+    {
+      "question": "What is the key difference between 能 and 会?",
+      "type": "multiple_choice",
+      "correct": "能 = situational ability; 会 = learned skill",
+      "options": [
+        "They are the same",
+        "能 = learned skill; 会 = situational",
+        "能 = situational ability; 会 = learned skill",
+        "Neither can be used for language"
+      ]
+    },
+    {
+      "question": "What does 漂亮 mean?",
+      "type": "multiple_choice",
+      "correct": "Beautiful / Pretty",
+      "options": [
+        "Ugly",
+        "Big",
+        "Beautiful / Pretty",
+        "Interesting"
+      ]
+    },
+    {
+      "question": "What does 学习 mean?",
+      "type": "multiple_choice",
+      "correct": "To study / To learn",
+      "options": [
+        "To teach",
+        "To study / To learn",
+        "To read",
+        "To work"
+      ]
+    },
+    {
+      "question": "What does 学生 mean?",
+      "type": "multiple_choice",
+      "correct": "Student",
+      "options": [
+        "Teacher",
+        "Student",
+        "Worker",
+        "Doctor"
+      ]
+    },
+    {
+      "question": "What is 水果?",
+      "type": "multiple_choice",
+      "correct": "Fruit",
+      "options": [
+        "Vegetable",
+        "Juice",
+        "Fruit",
+        "Snack"
+      ]
+    },
+    {
+      "question": "What does 睡觉 mean?",
+      "type": "multiple_choice",
+      "correct": "To sleep",
+      "options": [
+        "To wake up",
+        "To rest",
+        "To sleep",
+        "To lie down"
+      ]
+    },
+    {
+      "question": "What is 猫?",
+      "type": "multiple_choice",
+      "correct": "Cat",
+      "options": [
+        "Dog",
+        "Cat",
+        "Bird",
+        "Fish"
+      ]
+    },
+    {
+      "question": "What is 狗?",
+      "type": "multiple_choice",
+      "correct": "Dog",
+      "options": [
+        "Cat",
+        "Horse",
+        "Dog",
+        "Rabbit"
+      ]
+    },
+    {
+      "question": "What does 都 mean?",
+      "type": "multiple_choice",
+      "correct": "All / Both",
+      "options": [
+        "Some",
+        "Only",
+        "All / Both",
+        "Either"
+      ]
+    },
+    {
+      "question": "Where does 都 go in a sentence?",
+      "type": "multiple_choice",
+      "correct": "Before the verb",
+      "options": [
+        "After the subject, before verb",
+        "After the verb",
+        "Before the subject",
+        "Before the verb"
+      ]
+    },
+    {
+      "question": "What does 怎么 ask?",
+      "type": "multiple_choice",
+      "correct": "How (method/way)",
+      "options": [
+        "How (description)",
+        "When",
+        "How (method/way)",
+        "Why"
+      ]
+    },
+    {
+      "question": "Translate: 'They are all students.'",
+      "type": "multiple_choice",
+      "correct": "他们都是学生。",
+      "options": [
+        "都他们是学生。",
+        "他们是都学生。",
+        "他们都是学生。",
+        "都学生他们是。"
+      ]
+    },
+    {
+      "question": "How do you ask 'Can you come tomorrow?'",
+      "type": "multiple_choice",
+      "correct": "你明天能来吗？",
+      "options": [
+        "你明天会来吗？",
+        "你明天能来吗？",
+        "你明天可以来吗？",
+        "Both B and C"
+      ]
+    },
+    {
+      "question": "How do you say 'I have a cat and a dog.'?",
+      "type": "multiple_choice",
+      "correct": "我有一只猫和一只狗。",
+      "options": [
+        "我有一个猫和一个狗。",
+        "我有一只猫和一只狗。",
+        "我有猫和狗一只。",
+        "一只猫和一只狗我有。"
+      ]
+    },
+    {
+      "question": "What is the measure word for animals (cats, dogs)?",
+      "type": "multiple_choice",
+      "correct": "只",
+      "options": [
+        "个",
+        "条",
+        "只",
+        "头"
+      ]
+    },
+    {
+      "question": "What does 小姐 mean?",
+      "type": "multiple_choice",
+      "correct": "Miss / Ms. / Young woman",
+      "options": [
+        "Old woman",
+        "Miss / Ms. / Young woman",
+        "Mrs.",
+        "Little sister"
+      ]
+    },
+    {
+      "question": "What does 女人 mean?",
+      "type": "multiple_choice",
+      "correct": "Woman",
+      "options": [
+        "Girl",
+        "Woman",
+        "Lady",
+        "Female student"
+      ]
+    },
+    {
+      "question": "Translate: 'How do you study Chinese?'",
+      "type": "multiple_choice",
+      "correct": "你怎么学习汉语？",
+      "options": [
+        "你学习汉语怎么？",
+        "怎么你学习汉语？",
+        "你怎么学习汉语？",
+        "你汉语怎么学习？"
+      ]
+    },
+    {
+      "question": "怎么 vs 怎么样: which asks for a description?",
+      "type": "multiple_choice",
+      "correct": "怎么样 (how is it / what's it like)",
+      "options": [
+        "怎么 (how)",
+        "怎么样 (how is it / what's it like)",
+        "Both ask for description",
+        "Neither"
+      ]
+    },
+    {
+      "question": "How do you say 'Both are very good.'?",
+      "type": "multiple_choice",
+      "correct": "都很好。",
+      "options": [
+        "都是好。",
+        "两个很好。",
+        "都很好。",
+        "很都好。"
+      ]
+    },
+    {
+      "question": "Translate: 'She is very beautiful.'",
+      "type": "multiple_choice",
+      "correct": "她很漂亮。",
+      "options": [
+        "她是漂亮。",
+        "她很漂亮。",
+        "漂亮她很。",
+        "她漂亮很。"
+      ]
+    },
+    {
+      "question": "How do you say 'I eat fruit every day.'?",
+      "type": "multiple_choice",
+      "correct": "我每天吃水果。",
+      "options": [
+        "我吃水果每天。",
+        "每天我吃水果。",
+        "我每天吃水果。",
+        "Both B and C"
+      ]
+    },
+    {
+      "question": "能不能 means:",
+      "type": "multiple_choice",
+      "correct": "Can or cannot? / Is it possible?",
+      "options": [
+        "Definitely can",
+        "Definitely cannot",
+        "Can or cannot? / Is it possible?",
+        "Want or don't want?"
+      ]
+    },
+    {
+      "question": "Translate: 'We are all friends.'",
+      "type": "multiple_choice",
+      "correct": "我们都是朋友。",
+      "options": [
+        "我们是都朋友。",
+        "都我们是朋友。",
+        "我们都是朋友。",
+        "朋友我们都是。"
+      ]
+    }
   ]
 }

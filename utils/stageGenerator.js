@@ -451,6 +451,47 @@ function buildMasteryRound(vocab, sentences, pool, respondOrFallback, L) {
   return [s1, s2, s3, s4, s5];
 }
 
+// ── Quiz Round – mixed types, no flashcards ───────────────────────────────
+export function generateQuizRound(lessonData) {
+  const vocab     = lessonData.vocabulary || [];
+  const sentences = (lessonData.key_sentences || []).filter(s => s?.chinese);
+  const pool      = buildSpeakPool(vocab, sentences);
+  const qaPairs   = extractQAPairs(lessonData);
+  const L         = lessonData.lesson || 5;
+
+  const respondOrFallback = (i) =>
+    qaPairs.length > 0
+      ? makeSpeakRespond(qaPairs[i % qaPairs.length])
+      : makeSpeakRepeat(p(pool, i));
+
+  const raw = [
+    // Audio listen-and-choose (3)
+    makeAudioChoice(v(vocab, 0), vocab),
+    makeAudioChoice(v(vocab, 4), vocab),
+    makeAudioChoice(v(vocab, 8), vocab),
+    // Fill in the blank (3)
+    fillOrFallback(s(sentences, 0), 0, vocab),
+    fillOrFallback(s(sentences, 2), 2, vocab),
+    fillOrFallback(s(sentences, 4), 4, vocab),
+    // Arrange / build sentence (3)
+    arrangeOrFallback(s(sentences, 1), 1, vocab),
+    arrangeOrFallback(s(sentences, 3), 3, vocab),
+    arrangeOrFallback(s(sentences, 5), 5, vocab),
+    // Match pairs (2)
+    makeMatchPairs(shuffle([...vocab]).slice(0, 4)),
+    makeMatchPairs(shuffle([...vocab]).slice(0, 4)),
+    // Image exercises (2)
+    makeImageToWord(v(vocab, 2), vocab, L, 0),
+    makeWordToImage(v(vocab, 5), vocab, L, 1),
+    // Speaking – repeat, translate, Q&A respond (3)
+    makeSpeakRepeat(p(pool, 1)),
+    makeSpeakTranslate(p(pool, 3)),
+    respondOrFallback(0),
+  ].filter(Boolean);
+
+  return shuffle(raw);
+}
+
 // ── Exports ───────────────────────────────────────────────────────────────
 export function generateRounds(lessonData) {
   const vocab = lessonData.vocabulary || [];

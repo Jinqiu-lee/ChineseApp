@@ -463,102 +463,278 @@
   ],
   "quiz": [
     {
-      "question": "What does 在 mean?",
+      "question": "What does 在 mean in '你在哪儿？'",
       "type": "multiple_choice",
-      "correct": "At / In / On (location)",
+      "correct": "At / Located at",
       "options": [
-        "At / In / On (location)",
-        "To have",
-        "To be",
-        "To go"
+        "Going to",
+        "Coming from",
+        "At / Located at",
+        "In the future at"
       ]
     },
     {
-      "question": "How do you ask 'Where are you?' in Chinese?",
+      "question": "What does 哪儿 mean?",
       "type": "multiple_choice",
-      "correct": "你在哪儿？",
-      "options": [
-        "你在哪儿？",
-        "你是哪儿？",
-        "你去哪儿？",
-        "你有哪儿？"
-      ]
-    },
-    {
-      "question": "What does 这儿 mean?",
-      "type": "multiple_choice",
-      "correct": "Here",
+      "correct": "Where",
       "options": [
         "Here",
         "There",
         "Where",
-        "Everywhere"
+        "Which place"
       ]
     },
     {
-      "question": "What does 上 mean?",
+      "question": "这儿 means:",
       "type": "multiple_choice",
-      "correct": "On / Above",
+      "correct": "Here",
       "options": [
-        "On / Above",
+        "There",
+        "Here",
+        "Where",
+        "Nearby"
+      ]
+    },
+    {
+      "question": "那儿 means:",
+      "type": "multiple_choice",
+      "correct": "There",
+      "options": [
+        "Here",
+        "There",
+        "Where",
+        "That place"
+      ]
+    },
+    {
+      "question": "What does 学校 mean?",
+      "type": "multiple_choice",
+      "correct": "School",
+      "options": [
+        "Hospital",
+        "School",
+        "Store",
+        "Library"
+      ]
+    },
+    {
+      "question": "What does 医院 mean?",
+      "type": "multiple_choice",
+      "correct": "Hospital",
+      "options": [
+        "School",
+        "Pharmacy",
+        "Hospital",
+        "Clinic"
+      ]
+    },
+    {
+      "question": "What does 商店 mean?",
+      "type": "multiple_choice",
+      "correct": "Shop / Store",
+      "options": [
+        "Restaurant",
+        "School",
+        "Shop / Store",
+        "Market"
+      ]
+    },
+    {
+      "question": "How do you ask 'Where is the school?'",
+      "type": "multiple_choice",
+      "correct": "学校在哪儿？",
+      "options": [
+        "学校哪儿在？",
+        "在哪儿学校？",
+        "学校在哪儿？",
+        "哪儿是学校？"
+      ]
+    },
+    {
+      "question": "What does 上 mean as a position word?",
+      "type": "multiple_choice",
+      "correct": "On / Above / On top",
+      "options": [
         "Below",
-        "Inside",
-        "Outside"
+        "In front",
+        "On / Above / On top",
+        "Behind"
       ]
     },
     {
-      "question": "How do you say 'school' in Chinese?",
+      "question": "What does 下 mean as a position word?",
       "type": "multiple_choice",
-      "correct": "学校",
+      "correct": "Under / Below",
       "options": [
-        "学校",
-        "医院",
-        "商店",
-        "家"
+        "On top",
+        "Under / Below",
+        "In front",
+        "Behind"
       ]
     },
     {
       "question": "What does 里 mean?",
       "type": "multiple_choice",
-      "correct": "Inside",
+      "correct": "Inside / In",
       "options": [
-        "Inside",
         "Outside",
-        "Above",
-        "Below"
-      ]
-    },
-    {
-      "question": "How do you say 'hospital' in Chinese?",
-      "type": "multiple_choice",
-      "correct": "医院",
-      "options": [
-        "学校",
-        "医院",
-        "商店",
-        "家"
+        "In front",
+        "Inside / In",
+        "Behind"
       ]
     },
     {
       "question": "What does 前 mean?",
       "type": "multiple_choice",
-      "correct": "Front",
+      "correct": "In front / Before",
       "options": [
-        "Front",
-        "Back",
+        "Behind",
+        "In front / Before",
         "Left",
         "Right"
       ]
     },
     {
-      "question": "How do you say 'I'm at the store'?",
+      "question": "What does 后 mean?",
       "type": "multiple_choice",
-      "correct": "我在商店。",
+      "correct": "Behind / After",
       "options": [
-        "我在商店。",
-        "我是商店。",
-        "我有商店。",
-        "我去商店。"
+        "In front",
+        "Left",
+        "Behind / After",
+        "Right"
+      ]
+    },
+    {
+      "question": "How do you say 'The cat is under the table.'?",
+      "type": "multiple_choice",
+      "correct": "猫在桌子下。",
+      "options": [
+        "猫在桌子上。",
+        "猫在桌子下。",
+        "猫下桌子。",
+        "桌子下猫在。"
+      ]
+    },
+    {
+      "question": "你在哪儿？means:",
+      "type": "multiple_choice",
+      "correct": "Where are you?",
+      "options": [
+        "Where are you going?",
+        "Where are you from?",
+        "Where are you?",
+        "Where do you work?"
+      ]
+    },
+    {
+      "question": "How do you say 'I am at home.'?",
+      "type": "multiple_choice",
+      "correct": "我在家。",
+      "options": [
+        "我是家。",
+        "我有家。",
+        "我在家。",
+        "家在我。"
+      ]
+    },
+    {
+      "question": "What does 旁边 mean?",
+      "type": "multiple_choice",
+      "correct": "Next to / Beside",
+      "options": [
+        "In front",
+        "Behind",
+        "Next to / Beside",
+        "Above"
+      ]
+    },
+    {
+      "question": "医院在哪儿？means:",
+      "type": "multiple_choice",
+      "correct": "Where is the hospital?",
+      "options": [
+        "Is this a hospital?",
+        "Where is the hospital?",
+        "Go to the hospital",
+        "How far is the hospital?"
+      ]
+    },
+    {
+      "question": "How do you say 'in the school'?",
+      "type": "multiple_choice",
+      "correct": "在学校里",
+      "options": [
+        "学校里在",
+        "在学校",
+        "在学校里",
+        "Both B and C"
+      ]
+    },
+    {
+      "question": "What does 外 mean?",
+      "type": "multiple_choice",
+      "correct": "Outside / Out",
+      "options": [
+        "Inside",
+        "Outside / Out",
+        "Front",
+        "Back"
+      ]
+    },
+    {
+      "question": "How do you say 'The hospital is in front.'?",
+      "type": "multiple_choice",
+      "correct": "医院在前面。",
+      "options": [
+        "医院前面在。",
+        "前面在医院。",
+        "医院在前面。",
+        "在前面医院。"
+      ]
+    },
+    {
+      "question": "Which is the correct way to describe location?",
+      "type": "multiple_choice",
+      "correct": "书在桌子上。",
+      "options": [
+        "上桌子书在。",
+        "书桌子在上。",
+        "书在桌子上。",
+        "在上书桌子。"
+      ]
+    },
+    {
+      "question": "What does 中间 mean?",
+      "type": "multiple_choice",
+      "correct": "Middle / Center",
+      "options": [
+        "Side",
+        "Corner",
+        "Middle / Center",
+        "Edge"
+      ]
+    },
+    {
+      "question": "Translate: 'The shop is next to the school.'",
+      "type": "multiple_choice",
+      "correct": "商店在学校旁边。",
+      "options": [
+        "商店旁边学校在。",
+        "商店在学校旁边。",
+        "学校在商店旁边。",
+        "旁边商店在学校。"
+      ]
+    },
+    {
+      "question": "What formula describes location in Chinese?",
+      "type": "multiple_choice",
+      "correct": "Subject + 在 + Location",
+      "options": [
+        "Location + 在 + Subject",
+        "Subject + 是 + Location",
+        "Subject + 在 + Location",
+        "Location + Subject + 在"
       ]
     }
   ],

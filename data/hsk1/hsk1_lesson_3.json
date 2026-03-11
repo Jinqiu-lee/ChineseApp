@@ -649,102 +649,289 @@
   ],
   "quiz": [
     {
-      "question": "What order do Chinese dates go in?",
+      "question": "What does 今天 mean?",
       "type": "multiple_choice",
-      "correct": "Year → Month → Date",
+      "correct": "Today",
       "options": [
-        "Year → Month → Date",
-        "Date → Month → Year",
-        "Month → Date → Year",
-        "Date → Year → Month"
+        "Yesterday",
+        "Tomorrow",
+        "Today",
+        "Day"
       ]
     },
     {
-      "question": "How do you say 'noon' in Chinese?",
+      "question": "What does 明天 mean?",
       "type": "multiple_choice",
-      "correct": "中午",
+      "correct": "Tomorrow",
       "options": [
-        "中午",
-        "上午",
-        "下午",
-        "晚上"
+        "Yesterday",
+        "Today",
+        "Tomorrow",
+        "Next week"
       ]
     },
     {
-      "question": "What does 号 (hào) refer to in dates?",
+      "question": "What does 昨天 mean?",
       "type": "multiple_choice",
-      "correct": "The day/date number",
+      "correct": "Yesterday",
       "options": [
-        "The day/date number",
-        "The year",
-        "The month",
-        "The hour"
+        "Yesterday",
+        "Today",
+        "Tomorrow",
+        "Last week"
       ]
     },
     {
-      "question": "How do you say 'January' in Chinese?",
+      "question": "What does 上午 mean?",
       "type": "multiple_choice",
-      "correct": "一月",
+      "correct": "Morning (A.M.)",
       "options": [
-        "一个月",
-        "一月",
-        "一号",
-        "二月"
+        "Afternoon",
+        "Evening",
+        "Morning (A.M.)",
+        "Noon"
       ]
     },
     {
-      "question": "How do you say 'tomorrow' in Chinese?",
+      "question": "What does 下午 mean?",
       "type": "multiple_choice",
-      "correct": "明天",
+      "correct": "Afternoon (P.M.)",
       "options": [
-        "昨天",
-        "今天",
-        "明天",
-        "晚上"
+        "Morning",
+        "Afternoon (P.M.)",
+        "Evening",
+        "Midnight"
       ]
     },
     {
-      "question": "How do you say 'yesterday' in Chinese?",
+      "question": "What does 晚上 mean?",
       "type": "multiple_choice",
-      "correct": "昨天",
+      "correct": "Evening / Night",
       "options": [
-        "昨天",
-        "今天",
-        "明天",
-        "上午"
+        "Afternoon",
+        "Morning",
+        "Evening / Night",
+        "Noon"
       ]
     },
     {
-      "question": "What does 点 (diǎn) mean when telling time?",
+      "question": "今天几号？means:",
       "type": "multiple_choice",
-      "correct": "O'clock",
+      "correct": "What's the date today?",
+      "options": [
+        "What time is it?",
+        "What's the date today?",
+        "What day is today?",
+        "What month is it?"
+      ]
+    },
+    {
+      "question": "What is the correct date order in Chinese?",
+      "type": "multiple_choice",
+      "correct": "Year, Month, Date",
+      "options": [
+        "Date, Month, Year",
+        "Month, Date, Year",
+        "Year, Month, Date",
+        "All the same as English"
+      ]
+    },
+    {
+      "question": "What does 月 mean?",
+      "type": "multiple_choice",
+      "correct": "Month",
+      "options": [
+        "Day",
+        "Year",
+        "Month",
+        "Week"
+      ]
+    },
+    {
+      "question": "What does 号 mean?",
+      "type": "multiple_choice",
+      "correct": "Date number / Day of month",
+      "options": [
+        "Month",
+        "Year",
+        "Date number / Day of month",
+        "Week"
+      ]
+    },
+    {
+      "question": "How do you say 'January 1st'?",
+      "type": "multiple_choice",
+      "correct": "一月一号",
+      "options": [
+        "一号一月",
+        "一月一号",
+        "一日一月",
+        "月一号一"
+      ]
+    },
+    {
+      "question": "What does 年 mean?",
+      "type": "multiple_choice",
+      "correct": "Year",
+      "options": [
+        "Month",
+        "Day",
+        "Year",
+        "Week"
+      ]
+    },
+    {
+      "question": "Fill in: 今天___月___号？(What's the date?)",
+      "type": "multiple_choice",
+      "correct": "几 / 几",
+      "options": [
+        "什么 / 什么",
+        "几 / 几",
+        "多少 / 多少",
+        "哪 / 哪"
+      ]
+    },
+    {
+      "question": "How do you say 'this morning'?",
+      "type": "multiple_choice",
+      "correct": "今天上午",
+      "options": [
+        "今天下午",
+        "上午今天",
+        "今天上午",
+        "今天早上午"
+      ]
+    },
+    {
+      "question": "What does 点 mean in time expressions?",
+      "type": "multiple_choice",
+      "correct": "O'clock / Hour",
       "options": [
         "Minute",
         "Second",
-        "O'clock",
-        "Date"
+        "O'clock / Hour",
+        "Half"
       ]
     },
     {
-      "question": "How do you say 'afternoon' in Chinese?",
+      "question": "What does 分 mean in time expressions?",
       "type": "multiple_choice",
-      "correct": "下午",
+      "correct": "Minute",
       "options": [
-        "上午",
-        "下午",
-        "中午",
-        "晚上"
+        "Hour",
+        "Minute",
+        "Second",
+        "Half"
       ]
     },
     {
-      "question": "How do you say 'December' in Chinese?",
+      "question": "How do you say '3:15'?",
       "type": "multiple_choice",
-      "correct": "十二月",
+      "correct": "三点十五分",
       "options": [
-        "十月",
-        "十一月",
-        "十二月",
-        "二月"
+        "三点十五",
+        "十五分三点",
+        "三时十五",
+        "三点十五分"
+      ]
+    },
+    {
+      "question": "What does 半 mean in time?",
+      "type": "multiple_choice",
+      "correct": "Half (past)",
+      "options": [
+        "Quarter past",
+        "Half (past)",
+        "Quarter to",
+        "Almost"
+      ]
+    },
+    {
+      "question": "How do you say '7:30'?",
+      "type": "multiple_choice",
+      "correct": "七点半",
+      "options": [
+        "七点三十",
+        "七时半",
+        "七点半",
+        "半七点"
+      ]
+    },
+    {
+      "question": "Translate: 'yesterday evening'",
+      "type": "multiple_choice",
+      "correct": "昨天晚上",
+      "options": [
+        "昨天下午",
+        "明天晚上",
+        "昨天上午",
+        "昨天晚上"
+      ]
+    },
+    {
+      "question": "What is 下午三点?",
+      "type": "multiple_choice",
+      "correct": "3:00 PM",
+      "options": [
+        "3:00 AM",
+        "3:00 PM",
+        "3 days",
+        "3 months"
+      ]
+    },
+    {
+      "question": "What comes first: time of day (上午) or clock time (几点)?",
+      "type": "multiple_choice",
+      "correct": "Time of day first: 上午九点",
+      "options": [
+        "Clock time first: 九点上午",
+        "Time of day first: 上午九点",
+        "Either order is fine",
+        "No time of day needed"
+      ]
+    },
+    {
+      "question": "How do you say 'tomorrow afternoon'?",
+      "type": "multiple_choice",
+      "correct": "明天下午",
+      "options": [
+        "下午明天",
+        "明天上午",
+        "明天下午",
+        "明天晚上"
+      ]
+    },
+    {
+      "question": "What does 前 mean in time?",
+      "type": "multiple_choice",
+      "correct": "Before / Ago",
+      "options": [
+        "After",
+        "During",
+        "Before / Ago",
+        "Around"
+      ]
+    },
+    {
+      "question": "How do you say 'March 8th'?",
+      "type": "multiple_choice",
+      "correct": "三月八号",
+      "options": [
+        "八月三号",
+        "三号八月",
+        "三月八号",
+        "八号三月"
+      ]
+    },
+    {
+      "question": "What is 今年?",
+      "type": "multiple_choice",
+      "correct": "This year",
+      "options": [
+        "Next year",
+        "Last year",
+        "This year",
+        "Every year"
       ]
     }
   ],

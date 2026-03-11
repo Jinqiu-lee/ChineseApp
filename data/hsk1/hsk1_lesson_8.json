@@ -461,80 +461,80 @@
   ],
   "quiz": [
     {
-      "question": "What does 去 mean?",
-      "type": "multiple_choice",
-      "correct": "To go",
-      "options": [
-        "To go",
-        "To come",
-        "To return",
-        "To do"
-      ]
-    },
-    {
-      "question": "How do you ask 'Where are you going?'",
-      "type": "multiple_choice",
-      "correct": "你去哪儿？",
-      "options": [
-        "你去哪儿？",
-        "你在哪儿？",
-        "你来哪儿？",
-        "你是哪儿？"
-      ]
-    },
-    {
-      "question": "What does 看 mean with 电视?",
-      "type": "multiple_choice",
-      "correct": "To watch",
-      "options": [
-        "To watch",
-        "To listen",
-        "To buy",
-        "To have"
-      ]
-    },
-    {
-      "question": "How do you say 'to write' in Chinese?",
-      "type": "multiple_choice",
-      "correct": "写",
-      "options": [
-        "读",
-        "看",
-        "写",
-        "做"
-      ]
-    },
-    {
       "question": "What does 做 mean?",
       "type": "multiple_choice",
       "correct": "To do / To make",
       "options": [
-        "To do / To make",
         "To go",
+        "To have",
+        "To do / To make",
+        "To work"
+      ]
+    },
+    {
+      "question": "What does 看 mean?",
+      "type": "multiple_choice",
+      "correct": "To look / Watch / Read",
+      "options": [
+        "To listen",
+        "To speak",
+        "To look / Watch / Read",
+        "To write"
+      ]
+    },
+    {
+      "question": "What does 看电视 mean?",
+      "type": "multiple_choice",
+      "correct": "Watch TV",
+      "options": [
+        "Fix the TV",
+        "Watch TV",
+        "Buy a TV",
+        "Turn on the TV"
+      ]
+    },
+    {
+      "question": "What does 看电影 mean?",
+      "type": "multiple_choice",
+      "correct": "Watch a movie",
+      "options": [
+        "Make a movie",
+        "Watch a movie",
+        "Buy a movie ticket",
+        "Talk about a movie"
+      ]
+    },
+    {
+      "question": "What does 读 mean?",
+      "type": "multiple_choice",
+      "correct": "To read (aloud)",
+      "options": [
+        "To write",
+        "To listen",
+        "To read (aloud)",
+        "To study"
+      ]
+    },
+    {
+      "question": "What does 写 mean?",
+      "type": "multiple_choice",
+      "correct": "To write",
+      "options": [
+        "To read",
+        "To draw",
+        "To write",
+        "To paint"
+      ]
+    },
+    {
+      "question": "What does 去 mean?",
+      "type": "multiple_choice",
+      "correct": "To go",
+      "options": [
         "To come",
-        "To see"
-      ]
-    },
-    {
-      "question": "What does 在 + verb indicate?",
-      "type": "multiple_choice",
-      "correct": "Ongoing action",
-      "options": [
-        "Ongoing action",
-        "Past action",
-        "Future action",
-        "Location"
-      ]
-    },
-    {
-      "question": "How do you say 'movie' in Chinese?",
-      "type": "multiple_choice",
-      "correct": "电影",
-      "options": [
-        "电视",
-        "电影",
-        "电话",
-        "电脑"
+        "To go",
+        "To leave",
+        "To stay"
       ]
     },
     {
@@ -543,20 +543,196 @@
       "correct": "To come",
       "options": [
         "To go",
+        "To leave",
         "To come",
-        "To return",
-        "To leave"
+        "To arrive"
       ]
     },
     {
-      "question": "How do you say 'I am reading'?",
+      "question": "What does 回 mean?",
       "type": "multiple_choice",
-      "correct": "我在看书。",
+      "correct": "To return / Go back",
       "options": [
-        "我看书。",
-        "我在看书。",
-        "我有书。",
-        "我是书。"
+        "To go forward",
+        "To turn around",
+        "To return / Go back",
+        "To enter"
+      ]
+    },
+    {
+      "question": "How do you say '他在看书。' in English?",
+      "type": "multiple_choice",
+      "correct": "He is reading a book.",
+      "options": [
+        "He reads a book.",
+        "He read a book.",
+        "He is reading a book.",
+        "He will read a book."
+      ]
+    },
+    {
+      "question": "What does 在 + verb indicate?",
+      "type": "multiple_choice",
+      "correct": "Ongoing action right now",
+      "options": [
+        "Completed action",
+        "Future plan",
+        "Ongoing action right now",
+        "Location"
+      ]
+    },
+    {
+      "question": "How do you say 'She is writing characters.'?",
+      "type": "multiple_choice",
+      "correct": "她在写汉字。",
+      "options": [
+        "她写汉字了。",
+        "她在写汉字。",
+        "她写了汉字。",
+        "她将写汉字。"
+      ]
+    },
+    {
+      "question": "What does 电视 mean?",
+      "type": "multiple_choice",
+      "correct": "Television",
+      "options": [
+        "Computer",
+        "Phone",
+        "Television",
+        "Radio"
+      ]
+    },
+    {
+      "question": "What does 电影 mean?",
+      "type": "multiple_choice",
+      "correct": "Movie / Film",
+      "options": [
+        "TV show",
+        "Movie / Film",
+        "Music",
+        "Book"
+      ]
+    },
+    {
+      "question": "What does 汉字 mean?",
+      "type": "multiple_choice",
+      "correct": "Chinese characters",
+      "options": [
+        "Chinese people",
+        "Chinese language",
+        "Chinese characters",
+        "Chinese culture"
+      ]
+    },
+    {
+      "question": "How do you say 'I go to work.'?",
+      "type": "multiple_choice",
+      "correct": "我去工作。",
+      "options": [
+        "我在工作。",
+        "我做工作。",
+        "我去工作。",
+        "All are correct"
+      ]
+    },
+    {
+      "question": "What does 看见 mean?",
+      "type": "multiple_choice",
+      "correct": "To see / Catch sight of",
+      "options": [
+        "To look at carefully",
+        "To see / Catch sight of",
+        "To watch TV",
+        "To notice"
+      ]
+    },
+    {
+      "question": "How do you say 'Let's go home.'?",
+      "type": "multiple_choice",
+      "correct": "我们回家吧。",
+      "options": [
+        "我们去家吧。",
+        "我们回家吧。",
+        "我们来家吧。",
+        "我们家回吧。"
+      ]
+    },
+    {
+      "question": "What is 书?",
+      "type": "multiple_choice",
+      "correct": "Book",
+      "options": [
+        "Notebook",
+        "Book",
+        "Dictionary",
+        "Magazine"
+      ]
+    },
+    {
+      "question": "What does 读书 vs 看书 difference?",
+      "type": "multiple_choice",
+      "correct": "读书 = read aloud; 看书 = read silently",
+      "options": [
+        "They are the same",
+        "读书 = read aloud; 看书 = read silently",
+        "看书 = read aloud; 读书 = read silently",
+        "Only 看书 is correct"
+      ]
+    },
+    {
+      "question": "Translate: 'What are you doing?'",
+      "type": "multiple_choice",
+      "correct": "你在做什么？",
+      "options": [
+        "你做什么了？",
+        "你做什么？",
+        "你在做什么？",
+        "Both B and C"
+      ]
+    },
+    {
+      "question": "How do you say 'Come to my home.'?",
+      "type": "multiple_choice",
+      "correct": "来我家。",
+      "options": [
+        "去我家。",
+        "在我家。",
+        "来我家。",
+        "到我家。"
+      ]
+    },
+    {
+      "question": "What does 写字 mean?",
+      "type": "multiple_choice",
+      "correct": "Write characters / Write",
+      "options": [
+        "Type on computer",
+        "Write characters / Write",
+        "Read characters",
+        "Draw pictures"
+      ]
+    },
+    {
+      "question": "她在做什么？She is watching TV. Which is correct?",
+      "type": "multiple_choice",
+      "correct": "她在看电视。",
+      "options": [
+        "她看电视了。",
+        "她有看电视。",
+        "她在看电视。",
+        "她是看电视。"
+      ]
+    },
+    {
+      "question": "How do you say 'I am going to school.'?",
+      "type": "multiple_choice",
+      "correct": "我去学校。",
+      "options": [
+        "我在学校去。",
+        "我去学校。",
+        "我来学校。",
+        "我是学校去。"
       ]
     }
   ],
