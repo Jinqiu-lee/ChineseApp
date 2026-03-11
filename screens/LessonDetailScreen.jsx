@@ -49,6 +49,7 @@ export default function LessonDetailScreen({
   onBack,
   onLessonComplete,
   onTakeQuiz,
+  onOpenPinyin,
   onSelectStage,
 }) {
   const lesson = LESSONS[lessonId];
@@ -141,17 +142,14 @@ export default function LessonDetailScreen({
           </TouchableOpacity>
 
           <TouchableOpacity
-            style={[styles.learnBtn, quizUnlocked ? styles.learnBtnQuiz : styles.learnBtnLocked]}
-            onPress={quizUnlocked ? onTakeQuiz : undefined}
-            activeOpacity={quizUnlocked ? 0.8 : 1}
+            style={[styles.learnBtn, styles.learnBtnPinyin]}
+            onPress={onOpenPinyin}
+            activeOpacity={0.8}
           >
-            <Text style={styles.learnBtnEmoji}>{quizUnlocked ? '📋' : '🔒'}</Text>
-            <Text style={[styles.learnBtnLabel, quizUnlocked ? styles.learnBtnLabelQuiz : styles.learnBtnLabelLocked]}>
-              Lesson Quiz
+            <Text style={styles.learnBtnEmoji}>🎵</Text>
+            <Text style={[styles.learnBtnLabel, styles.learnBtnLabelPinyin]}>
+              Pinyin
             </Text>
-            {!quizUnlocked && (
-              <Text style={styles.learnBtnLockHint}>Finish Round 2 (90%+)</Text>
-            )}
           </TouchableOpacity>
         </View>
 
@@ -240,6 +238,30 @@ export default function LessonDetailScreen({
           );
         })}
 
+        {/* Lesson Quiz — unlocked after Round 2 with ≥90% */}
+        <View style={styles.sectionHeader}>
+          <View style={[styles.sectionDot, { backgroundColor: '#FF6B6B' }]} />
+          <Text style={styles.sectionTitle}>Lesson Quiz</Text>
+        </View>
+        <TouchableOpacity
+          style={[styles.quizBanner, quizUnlocked ? styles.quizBannerUnlocked : styles.quizBannerLocked]}
+          onPress={quizUnlocked ? onTakeQuiz : undefined}
+          activeOpacity={quizUnlocked ? 0.8 : 1}
+        >
+          <Text style={styles.quizBannerEmoji}>{quizUnlocked ? '📋' : '🔒'}</Text>
+          <View style={{ flex: 1 }}>
+            <Text style={[styles.quizBannerTitle, !quizUnlocked && styles.textMuted]}>
+              {quizUnlocked ? 'Lesson Quiz' : 'Lesson Quiz  (Locked)'}
+            </Text>
+            <Text style={styles.quizBannerSub}>
+              {quizUnlocked
+                ? 'Mixed exercises · Audio · Pinyin · Speaking'
+                : 'Complete Round 2 with 90%+ accuracy to unlock'}
+            </Text>
+          </View>
+          {quizUnlocked && <Text style={styles.quizBannerArrow}>→</Text>}
+        </TouchableOpacity>
+
         {/* Complete lesson */}
         <TouchableOpacity
           style={styles.completeBtn}
@@ -305,15 +327,24 @@ const styles = StyleSheet.create({
     borderColor: '#2d3436',
     gap: 6,
   },
-  learnBtnActive: { borderColor: '#a29bfe', backgroundColor: 'rgba(162,155,254,0.1)' },
-  learnBtnQuiz:   { borderColor: '#FF6B6B', backgroundColor: 'rgba(255,107,107,0.08)' },
-  learnBtnLocked: { borderColor: '#2d3436', backgroundColor: 'rgba(255,255,255,0.03)', opacity: 0.55 },
+  learnBtnActive:  { borderColor: '#a29bfe', backgroundColor: 'rgba(162,155,254,0.1)' },
+  learnBtnPinyin:  { borderColor: '#54A0FF', backgroundColor: 'rgba(84,160,255,0.08)' },
   learnBtnEmoji: { fontSize: 24 },
   learnBtnLabel: { fontSize: 14, fontWeight: '700', color: '#636e72', textAlign: 'center' },
   learnBtnLabelActive:  { color: '#a29bfe' },
-  learnBtnLabelQuiz:    { color: '#FF6B6B' },
-  learnBtnLabelLocked:  { color: '#636e72' },
-  learnBtnLockHint:     { fontSize: 10, color: '#636e72', textAlign: 'center', marginTop: 2 },
+  learnBtnLabelPinyin:  { color: '#54A0FF' },
+
+  // Quiz banner (below stages)
+  quizBanner: {
+    flexDirection: 'row', alignItems: 'center', borderRadius: 16,
+    padding: 16, marginBottom: 20, borderWidth: 1.5, gap: 12,
+  },
+  quizBannerUnlocked: { borderColor: '#FF6B6B', backgroundColor: 'rgba(255,107,107,0.08)' },
+  quizBannerLocked:   { borderColor: '#2d3436', backgroundColor: 'rgba(255,255,255,0.03)', opacity: 0.6 },
+  quizBannerEmoji: { fontSize: 28 },
+  quizBannerTitle: { fontSize: 15, fontWeight: '700', color: '#fff', marginBottom: 3 },
+  quizBannerSub:   { fontSize: 12, color: '#636e72', lineHeight: 17 },
+  quizBannerArrow: { fontSize: 18, color: '#FF6B6B', fontWeight: '700' },
 
   // Expanded section
   expandedSection: { marginBottom: 24, marginTop: 4 },

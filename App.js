@@ -6,6 +6,8 @@ import HomeScreen from './screens/HomeScreen';
 import LessonDetailScreen from './screens/LessonDetailScreen';
 import LevelQuizScreen from './screens/LevelQuizScreen';
 import LessonQuizScreen from './screens/LessonQuizScreen';
+import LessonPinyinScreen from './screens/LessonPinyinScreen';
+import FoundationsPinyinScreen from './screens/FoundationsPinyinScreen';
 import LessonStagesScreen from './screens/LessonStagesScreen';
 import StageExercisesScreen from './screens/StageExercisesScreen';
 import RoundCompleteScreen from './screens/RoundCompleteScreen';
@@ -60,6 +62,7 @@ export default function App() {
   const [levelState, setLevelState] = useState(DEFAULT_LEVEL_STATE);
   const [currentRound, setCurrentRound] = useState(1);    // 1 | 2 | 3
   const [returnLevelId, setReturnLevelId] = useState(null); // which level list to return to on back
+  const [pinyinReturnTo, setPinyinReturnTo] = useState('home'); // 'home' | 'lessonPinyin'
 
   // ── Load saved data on startup ──────────────────────────────
   useEffect(() => {
@@ -195,6 +198,23 @@ export default function App() {
     setCurrentScreen('lessonQuiz');
   };
 
+  const handleOpenLessonPinyin = () => {
+    setCurrentScreen('lessonPinyin');
+  };
+
+  const handleOpenFoundationsPinyin = (returnTo = 'home') => {
+    setPinyinReturnTo(returnTo);
+    setCurrentScreen('foundationsPinyin');
+  };
+
+  const handleBackFromFoundationsPinyin = () => {
+    if (pinyinReturnTo === 'lessonPinyin') {
+      setCurrentScreen('lessonPinyin');
+    } else {
+      handleBackToHome();
+    }
+  };
+
   const handleLevelQuizPress = (levelId) => {
     setCurrentQuizLevelId(levelId || userData?.result?.recommendedLevel || 'hsk1');
     setCurrentScreen('levelQuiz');
@@ -295,6 +315,7 @@ export default function App() {
         onLevelQuizPress={handleLevelQuizPress}
         onChangeLevelConfirm={handleChangeLevelConfirm}
         onRetakeTest={handleRetakeTest}
+        onFoundationsPinyinPress={() => handleOpenFoundationsPinyin('home')}
       />
     );
   }
@@ -309,6 +330,7 @@ export default function App() {
         onBack={() => handleBackToHome(currentLessonLevelId)}
         onLessonComplete={handleLessonComplete}
         onTakeQuiz={handleTakeQuiz}
+        onOpenPinyin={handleOpenLessonPinyin}
         onSelectStage={handleSelectStage}
       />
     );
@@ -356,6 +378,25 @@ export default function App() {
       <LessonQuizScreen
         lessonData={currentLessonData}
         onBack={() => setCurrentScreen('lesson')}
+      />
+    );
+  }
+
+  if (currentScreen === 'lessonPinyin') {
+    return (
+      <LessonPinyinScreen
+        lessonData={currentLessonData}
+        onBack={() => setCurrentScreen('lesson')}
+        onOpenFoundations={() => handleOpenFoundationsPinyin('lessonPinyin')}
+      />
+    );
+  }
+
+  if (currentScreen === 'foundationsPinyin') {
+    return (
+      <FoundationsPinyinScreen
+        onBack={handleBackFromFoundationsPinyin}
+        lessonContext={pinyinReturnTo === 'lessonPinyin' ? currentLessonData : null}
       />
     );
   }

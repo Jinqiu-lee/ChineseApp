@@ -244,7 +244,7 @@ function makePinyinFinalId(syllable, finalsPool, vocabItem = null) {
 }
 
 // Build all pinyin exercises for a lesson from its pinyin_focus data
-function buildPinyinExercises(lessonData) {
+export function buildPinyinExercises(lessonData) {
   const pf = lessonData?.pinyin_focus;
   if (!pf) return [];
 
