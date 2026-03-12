@@ -87,11 +87,11 @@ const FINAL_CANONICAL_PY = {
 // Returns e.g. 'init_b', 'fin_ao', 'fin_v' (for ü), or 'ma1' for tone practice.
 function getPinyinAudioKey(syllable) {
   const lower = syllable.toLowerCase().trim();
-  // Normalize ü → v for filename safety
-  const normalized = lower.replace(/ü/g, 'v');
+  // Normalize ü → v and remove apostrophes for filename safety
+  const normalized = lower.replace(/ü/g, 'v').replace(/'/g, '');
   if (INITIAL_CANONICAL_PY[normalized] || INITIAL_CANONICAL_PY[lower]) return `init_${normalized}`;
   if (FINAL_CANONICAL_PY[normalized] || FINAL_CANONICAL_PY[lower])   return `fin_${normalized}`;
-  // Tone-practice syllable → numbered form (e.g. "mā" → "ma1")
+  // Tone-practice syllable → numbered form (e.g. "mā" → "ma1", "nǚ'ér" → "nuer2")
   return pinyinToNumbered(normalized);
 }
 

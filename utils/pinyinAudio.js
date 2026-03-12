@@ -1,87 +1,140 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // Pinyin local audio map
 //
-// HOW TO ADD MORE RECORDINGS:
-//   1. Put your MP3 file in:  assets/audio/pinyin/
-//   2. Add a require() line below
-//   3. Save — the app will instantly use your recording instead of TTS
+// Folder structure:
+//   assets/audio/pinyin/initials/   init_b.mp3, init_zh.mp3 ...
+//   assets/audio/pinyin/finals/     fin_a.mp3,  fin_ao.mp3  ...
+//   assets/audio/pinyin/tones/      ma1.mp3,    gongzuo4.mp3 ...
 //
-// FILE NAMING:
-//   Initials → init_<initial>.mp3   e.g. init_b.mp3, init_zh.mp3
-//   Finals   → fin_<final>.mp3      e.g. fin_a.mp3, fin_ao.mp3, fin_v.mp3 (ü)
+// To activate a recording: uncomment its line and save.
+// TTS is used automatically for any entry that is still commented out.
 // ─────────────────────────────────────────────────────────────────────────────
 
 export const PINYIN_AUDIO = {
 
   // ── INITIALS (声母) ─────────────────────────────────────────────────────
-  // Labials
-  'init_b':  require('../assets/audio/pinyin/init_b.mp3'),
-  'init_p':  require('../assets/audio/pinyin/init_p.mp3'),
-  'init_m':  require('../assets/audio/pinyin/init_m.mp3'),
-  'init_f':  require('../assets/audio/pinyin/init_f.mp3'),
-
-  // Alveolars
-  'init_d':  require('../assets/audio/pinyin/init_d.mp3'),
-  'init_t':  require('../assets/audio/pinyin/init_t.mp3'),
-  'init_n':  require('../assets/audio/pinyin/init_n.mp3'),
-  'init_l':  require('../assets/audio/pinyin/init_l.mp3'),
-
-  // Velars
-  'init_g':  require('../assets/audio/pinyin/init_g.mp3'),
-  'init_k':  require('../assets/audio/pinyin/init_k.mp3'),
-  'init_h':  require('../assets/audio/pinyin/init_h.mp3'),
-
-  // Palatals
-  'init_j':  require('../assets/audio/pinyin/init_j.mp3'),
-  'init_q':  require('../assets/audio/pinyin/init_q.mp3'),
-  'init_x':  require('../assets/audio/pinyin/init_x.mp3'),
-
-  // Retroflexes
-  'init_zh': require('../assets/audio/pinyin/init_zh.mp3'),
-  'init_ch': require('../assets/audio/pinyin/init_ch.mp3'),
-  'init_sh': require('../assets/audio/pinyin/init_sh.mp3'),
-  'init_r':  require('../assets/audio/pinyin/init_r.mp3'),
-
-  // Sibilants
-  'init_z':  require('../assets/audio/pinyin/init_z.mp3'),
-  'init_c':  require('../assets/audio/pinyin/init_c.mp3'),
-  'init_s':  require('../assets/audio/pinyin/init_s.mp3'),
-
-  // Semi-vowels
-  'init_y':  require('../assets/audio/pinyin/init_y.mp3'),
-  'init_w':  require('../assets/audio/pinyin/init_w.mp3'),
-
+  'init_b':  require('../assets/audio/pinyin/initials/init_b.mp3'),
+  'init_p':  require('../assets/audio/pinyin/initials/init_p.mp3'),
+  'init_m':  require('../assets/audio/pinyin/initials/init_m.mp3'),
+  'init_f':  require('../assets/audio/pinyin/initials/init_f.mp3'),
+  'init_d':  require('../assets/audio/pinyin/initials/init_d.mp3'),
+  'init_t':  require('../assets/audio/pinyin/initials/init_t.mp3'),
+  'init_n':  require('../assets/audio/pinyin/initials/init_n.mp3'),
+  'init_l':  require('../assets/audio/pinyin/initials/init_l.mp3'),
+  'init_g':  require('../assets/audio/pinyin/initials/init_g.mp3'),
+  'init_k':  require('../assets/audio/pinyin/initials/init_k.mp3'),
+  'init_h':  require('../assets/audio/pinyin/initials/init_h.mp3'),
+  'init_j':  require('../assets/audio/pinyin/initials/init_j.mp3'),
+  'init_q':  require('../assets/audio/pinyin/initials/init_q.mp3'),
+  'init_x':  require('../assets/audio/pinyin/initials/init_x.mp3'),
+  'init_zh': require('../assets/audio/pinyin/initials/init_zh.mp3'),
+  'init_ch': require('../assets/audio/pinyin/initials/init_ch.mp3'),
+  'init_sh': require('../assets/audio/pinyin/initials/init_sh.mp3'),
+  'init_r':  require('../assets/audio/pinyin/initials/init_r.mp3'),
+  'init_z':  require('../assets/audio/pinyin/initials/init_z.mp3'),
+  'init_c':  require('../assets/audio/pinyin/initials/init_c.mp3'),
+  'init_s':  require('../assets/audio/pinyin/initials/init_s.mp3'),
+  'init_y':  require('../assets/audio/pinyin/initials/init_y.mp3'),
+  'init_w':  require('../assets/audio/pinyin/initials/init_w.mp3'),
 
   // ── FINALS (韵母) ────────────────────────────────────────────────────────
-  // Simple vowels
-  'fin_a':   require('../assets/audio/pinyin/fin_a.mp3'),
-  'fin_o':   require('../assets/audio/pinyin/fin_o.mp3'),
-  'fin_e':   require('../assets/audio/pinyin/fin_e.mp3'),
-  'fin_i':   require('../assets/audio/pinyin/fin_i.mp3'),
-  'fin_u':   require('../assets/audio/pinyin/fin_u.mp3'),
-  'fin_v':   require('../assets/audio/pinyin/fin_v.mp3'),   // ü sound
+  'fin_a':   require('../assets/audio/pinyin/finals/fin_a.mp3'),
+  'fin_o':   require('../assets/audio/pinyin/finals/fin_o.mp3'),
+  'fin_e':   require('../assets/audio/pinyin/finals/fin_e.mp3'),
+  'fin_i':   require('../assets/audio/pinyin/finals/fin_i.mp3'),
+  'fin_u':   require('../assets/audio/pinyin/finals/fin_u.mp3'),
+  'fin_v':   require('../assets/audio/pinyin/finals/fin_v.mp3'),
+  'fin_ai':  require('../assets/audio/pinyin/finals/fin_ai.mp3'),
+  'fin_ei':  require('../assets/audio/pinyin/finals/fin_ei.mp3'),
+  'fin_ui':  require('../assets/audio/pinyin/finals/fin_ui.mp3'),
+  'fin_ao':  require('../assets/audio/pinyin/finals/fin_ao.mp3'),
+  'fin_ou':  require('../assets/audio/pinyin/finals/fin_ou.mp3'),
+  'fin_iu':  require('../assets/audio/pinyin/finals/fin_iu.mp3'),
+  'fin_ie':  require('../assets/audio/pinyin/finals/fin_ie.mp3'),
+  'fin_ve':  require('../assets/audio/pinyin/finals/fin_ve.mp3'),
+  'fin_er':  require('../assets/audio/pinyin/finals/fin_er.mp3'),
+  'fin_an':  require('../assets/audio/pinyin/finals/fin_an.mp3'),
+  'fin_en':  require('../assets/audio/pinyin/finals/fin_en.mp3'),
+  'fin_in':  require('../assets/audio/pinyin/finals/fin_in.mp3'),
+  'fin_un':  require('../assets/audio/pinyin/finals/fin_un.mp3'),
+  'fin_vn':  require('../assets/audio/pinyin/finals/fin_vn.mp3'),
+  'fin_ang': require('../assets/audio/pinyin/finals/fin_ang.mp3'),
+  'fin_eng': require('../assets/audio/pinyin/finals/fin_eng.mp3'),
+  'fin_ing': require('../assets/audio/pinyin/finals/fin_ing.mp3'),
+  'fin_ong': require('../assets/audio/pinyin/finals/fin_ong.mp3'),
 
-  // Compound
-  'fin_ai':  require('../assets/audio/pinyin/fin_ai.mp3'),
-  'fin_ei':  require('../assets/audio/pinyin/fin_ei.mp3'),
-  'fin_ui':  require('../assets/audio/pinyin/fin_ui.mp3'),
-  'fin_ao':  require('../assets/audio/pinyin/fin_ao.mp3'),
-  'fin_ou':  require('../assets/audio/pinyin/fin_ou.mp3'),
-  'fin_iu':  require('../assets/audio/pinyin/fin_iu.mp3'),
-  'fin_ie':  require('../assets/audio/pinyin/fin_ie.mp3'),
-  'fin_ve':  require('../assets/audio/pinyin/fin_ve.mp3'),  // üe sound
-  'fin_er':  require('../assets/audio/pinyin/fin_er.mp3'),
-
-  // Nasal -n
-  'fin_an':  require('../assets/audio/pinyin/fin_an.mp3'),
-  'fin_en':  require('../assets/audio/pinyin/fin_en.mp3'),
-  'fin_in':  require('../assets/audio/pinyin/fin_in.mp3'),
-  'fin_un':  require('../assets/audio/pinyin/fin_un.mp3'),
-  'fin_vn':  require('../assets/audio/pinyin/fin_vn.mp3'),  // ün sound
-
-  // Nasal -ng
-  'fin_ang': require('../assets/audio/pinyin/fin_ang.mp3'),
-  'fin_eng': require('../assets/audio/pinyin/fin_eng.mp3'),
-  'fin_ing': require('../assets/audio/pinyin/fin_ing.mp3'),
-  'fin_ong': require('../assets/audio/pinyin/fin_ong.mp3'),
+  // ── TONE PRACTICE — 72 lesson syllables ─────────────────────────────────
+  // Drop your MP3 into assets/audio/pinyin/tones/ then uncomment the line.
+  // 'ba4_ba5':     require('../assets/audio/pinyin/tones/ba4_ba5.mp3'),
+  // 'cai4':        require('../assets/audio/pinyin/tones/cai4.mp3'),
+  // 'cha2':        require('../assets/audio/pinyin/tones/cha2.mp3'),
+  // 'chi1':        require('../assets/audio/pinyin/tones/chi1.mp3'),
+  // 'chuzuche1':   require('../assets/audio/pinyin/tones/chuzuche1.mp3'),
+  // 'di4_di5':     require('../assets/audio/pinyin/tones/di4_di5.mp3'),
+  // 'diannao3':    require('../assets/audio/pinyin/tones/diannao3.mp3'),
+  // 'ditie3':      require('../assets/audio/pinyin/tones/ditie3.mp3'),
+  // 'dou1':        require('../assets/audio/pinyin/tones/dou1.mp3'),
+  // 'er4':         require('../assets/audio/pinyin/tones/er4.mp3'),
+  // 'erzi2':       require('../assets/audio/pinyin/tones/erzi2.mp3'),
+  // 'fanguan3':    require('../assets/audio/pinyin/tones/fanguan3.mp3'),
+  // 'feiji1':      require('../assets/audio/pinyin/tones/feiji1.mp3'),
+  // 'fenzhong1':   require('../assets/audio/pinyin/tones/fenzhong1.mp3'),
+  // 'gaoxing4':    require('../assets/audio/pinyin/tones/gaoxing4.mp3'),
+  // 'ge1_ge5':     require('../assets/audio/pinyin/tones/ge1_ge5.mp3'),
+  // 'gongzuo4':    require('../assets/audio/pinyin/tones/gongzuo4.mp3'),
+  // 'gui4':        require('../assets/audio/pinyin/tones/gui4.mp3'),
+  // 'hanyu3':      require('../assets/audio/pinyin/tones/hanyu3.mp3'),
+  // 'he1':         require('../assets/audio/pinyin/tones/he1.mp3'),
+  // 'hui2':        require('../assets/audio/pinyin/tones/hui2.mp3'),
+  // 'jichang3':    require('../assets/audio/pinyin/tones/jichang3.mp3'),
+  // 'jie3_jie5':   require('../assets/audio/pinyin/tones/jie3_jie5.mp3'),
+  // 'kan4':        require('../assets/audio/pinyin/tones/kan4.mp3'),
+  // 'kuai4':       require('../assets/audio/pinyin/tones/kuai4.mp3'),
+  // 'lai2':        require('../assets/audio/pinyin/tones/lai2.mp3'),
+  // 'leng3':       require('../assets/audio/pinyin/tones/leng3.mp3'),
+  // 'ma1':         require('../assets/audio/pinyin/tones/ma1.mp3'),
+  // 'ma1_ma5':     require('../assets/audio/pinyin/tones/ma1_ma5.mp3'),
+  // 'ma2':         require('../assets/audio/pinyin/tones/ma2.mp3'),
+  // 'ma3':         require('../assets/audio/pinyin/tones/ma3.mp3'),
+  // 'ma4':         require('../assets/audio/pinyin/tones/ma4.mp3'),
+  // 'mai3':        require('../assets/audio/pinyin/tones/mai3.mp3'),
+  // 'mei4_mei5':   require('../assets/audio/pinyin/tones/mei4_mei5.mp3'),
+  // 'nar3':        require('../assets/audio/pinyin/tones/nar3.mp3'),
+  // 'nar4':        require('../assets/audio/pinyin/tones/nar4.mp3'),
+  // 'neng2':       require('../assets/audio/pinyin/tones/neng2.mp3'),
+  // 'nuer2':       require('../assets/audio/pinyin/tones/nuer2.mp3'),
+  // 'pengyou2':    require('../assets/audio/pinyin/tones/pengyou2.mp3'),
+  // 'piao4':       require('../assets/audio/pinyin/tones/piao4.mp3'),
+  // 'piaoliang4':  require('../assets/audio/pinyin/tones/piaoliang4.mp3'),
+  // 'qian2':       require('../assets/audio/pinyin/tones/qian2.mp3'),
+  // 'qu4':         require('../assets/audio/pinyin/tones/qu4.mp3'),
+  // 're4':         require('../assets/audio/pinyin/tones/re4.mp3'),
+  // 'renshi4':     require('../assets/audio/pinyin/tones/renshi4.mp3'),
+  // 'san1':        require('../assets/audio/pinyin/tones/san1.mp3'),
+  // 'shang4':      require('../assets/audio/pinyin/tones/shang4.mp3'),
+  // 'shao3':       require('../assets/audio/pinyin/tones/shao3.mp3'),
+  // 'shihou2':     require('../assets/audio/pinyin/tones/shihou2.mp3'),
+  // 'shui3':       require('../assets/audio/pinyin/tones/shui3.mp3'),
+  // 'shuiguo3':    require('../assets/audio/pinyin/tones/shuiguo3.mp3'),
+  // 'shuo1':       require('../assets/audio/pinyin/tones/shuo1.mp3'),
+  // 'si4':         require('../assets/audio/pinyin/tones/si4.mp3'),
+  // 'tai4':        require('../assets/audio/pinyin/tones/tai4.mp3'),
+  // 'tianqi4':     require('../assets/audio/pinyin/tones/tianqi4.mp3'),
+  // 'wu3':         require('../assets/audio/pinyin/tones/wu3.mp3'),
+  // 'xia4':        require('../assets/audio/pinyin/tones/xia4.mp3'),
+  // 'xianzai4':    require('../assets/audio/pinyin/tones/xianzai4.mp3'),
+  // 'xie3':        require('../assets/audio/pinyin/tones/xie3.mp3'),
+  // 'xingqi1':     require('../assets/audio/pinyin/tones/xingqi1.mp3'),
+  // 'xuexi2':      require('../assets/audio/pinyin/tones/xuexi2.mp3'),
+  // 'yi1':         require('../assets/audio/pinyin/tones/yi1.mp3'),
+  // 'yifu1':       require('../assets/audio/pinyin/tones/yifu1.mp3'),
+  // 'yisheng1':    require('../assets/audio/pinyin/tones/yisheng1.mp3'),
+  // 'yizi3':       require('../assets/audio/pinyin/tones/yizi3.mp3'),
+  // 'zai4':        require('../assets/audio/pinyin/tones/zai4.mp3'),
+  // 'zenmeyang4':  require('../assets/audio/pinyin/tones/zenmeyang4.mp3'),
+  // 'zher4':       require('../assets/audio/pinyin/tones/zher4.mp3'),
+  // 'zhongwu3':    require('../assets/audio/pinyin/tones/zhongwu3.mp3'),
+  // 'zhu4':        require('../assets/audio/pinyin/tones/zhu4.mp3'),
+  // 'zhuozi1':     require('../assets/audio/pinyin/tones/zhuozi1.mp3'),
+  // 'zuo4':        require('../assets/audio/pinyin/tones/zuo4.mp3'),
 };
