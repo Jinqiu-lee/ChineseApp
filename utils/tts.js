@@ -54,7 +54,7 @@ const PY_STRIP = {
 
 // Convert diacritic pinyin syllable to numbered format: "mā" → "ma1", "zhōng" → "zhong1"
 function pinyinToNumbered(syllable) {
-  let tone = 5; // neutral default
+  let tone = 0; // neutral tone = 0
   let base = '';
   for (const ch of syllable.toLowerCase().trim()) {
     if (PY_TONE_NUM[ch]) { tone = PY_TONE_NUM[ch]; base += PY_STRIP[ch]; }
