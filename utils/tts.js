@@ -94,7 +94,12 @@ function getPinyinAudioKey(syllable) {
   if (INITIAL_CANONICAL_PY[normalized] || INITIAL_CANONICAL_PY[lower]) return `init_${normalized}`;
   if (FINAL_CANONICAL_PY[normalized] || FINAL_CANONICAL_PY[lower])   return `fin_${normalized}`;
   // Tone-practice syllable → numbered form (e.g. "mā" → "ma1", "nǚ'ér" → "nuer2")
-  return pinyinToNumbered(normalized);
+  const numbered = pinyinToNumbered(normalized);
+  if (PINYIN_AUDIO[numbered]) return numbered;
+  // Fallback: if only a single fin_ recording exists (no 4-tone set), strip the tone digit
+  const base = numbered.replace(/\d$/, '');
+  if (PINYIN_AUDIO[`fin_${base}`]) return `fin_${base}`;
+  return numbered;
 }
 
 // Play a bundled local MP3 asset (from the require() map).

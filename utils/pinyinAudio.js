@@ -175,47 +175,21 @@ export const PINYIN_AUDIO = {
   'ong3': require('../assets/audio/pinyin/vowel_tones/ong3.mp3'),  // ǒng  tone 3
   'ong4': require('../assets/audio/pinyin/vowel_tones/ong4.mp3'),  // òng  tone 4
 
-  // Lesson 6 — ia iao ian iang ua uai uo uan uang üan (40 files)
-  // 'ia1':   require('../assets/audio/pinyin/vowel_tones/ia1.mp3'),    // iā  tone 1
-  // 'ia2':   require('../assets/audio/pinyin/vowel_tones/ia2.mp3'),    // iá  tone 2
-  // 'ia3':   require('../assets/audio/pinyin/vowel_tones/ia3.mp3'),    // iǎ  tone 3
-  // 'ia4':   require('../assets/audio/pinyin/vowel_tones/ia4.mp3'),    // ià  tone 4
-  // 'iao1':  require('../assets/audio/pinyin/vowel_tones/iao1.mp3'),   // iāo tone 1
-  // 'iao2':  require('../assets/audio/pinyin/vowel_tones/iao2.mp3'),   // iáo tone 2
-  // 'iao3':  require('../assets/audio/pinyin/vowel_tones/iao3.mp3'),   // iǎo tone 3
-  // 'iao4':  require('../assets/audio/pinyin/vowel_tones/iao4.mp3'),   // iào tone 4
-  // 'ian1':  require('../assets/audio/pinyin/vowel_tones/ian1.mp3'),   // iān tone 1
-  // 'ian2':  require('../assets/audio/pinyin/vowel_tones/ian2.mp3'),   // ián tone 2
-  // 'ian3':  require('../assets/audio/pinyin/vowel_tones/ian3.mp3'),   // iǎn tone 3
-  // 'ian4':  require('../assets/audio/pinyin/vowel_tones/ian4.mp3'),   // iàn tone 4
-  // 'iang1': require('../assets/audio/pinyin/vowel_tones/iang1.mp3'),  // iāng tone 1
-  // 'iang2': require('../assets/audio/pinyin/vowel_tones/iang2.mp3'),  // iáng tone 2
-  // 'iang3': require('../assets/audio/pinyin/vowel_tones/iang3.mp3'),  // iǎng tone 3
-  // 'iang4': require('../assets/audio/pinyin/vowel_tones/iang4.mp3'),  // iàng tone 4
-  // 'ua1':   require('../assets/audio/pinyin/vowel_tones/ua1.mp3'),    // uā  tone 1
-  // 'ua2':   require('../assets/audio/pinyin/vowel_tones/ua2.mp3'),    // uá  tone 2
-  // 'ua3':   require('../assets/audio/pinyin/vowel_tones/ua3.mp3'),    // uǎ  tone 3
-  // 'ua4':   require('../assets/audio/pinyin/vowel_tones/ua4.mp3'),    // uà  tone 4
-  // 'uai1':  require('../assets/audio/pinyin/vowel_tones/uai1.mp3'),   // uāi tone 1
-  // 'uai2':  require('../assets/audio/pinyin/vowel_tones/uai2.mp3'),   // uái tone 2
-  // 'uai3':  require('../assets/audio/pinyin/vowel_tones/uai3.mp3'),   // uǎi tone 3
-  // 'uai4':  require('../assets/audio/pinyin/vowel_tones/uai4.mp3'),   // uài tone 4
-  // 'uo1':   require('../assets/audio/pinyin/vowel_tones/uo1.mp3'),    // uō  tone 1
-  // 'uo2':   require('../assets/audio/pinyin/vowel_tones/uo2.mp3'),    // uó  tone 2
-  // 'uo3':   require('../assets/audio/pinyin/vowel_tones/uo3.mp3'),    // uǒ  tone 3
-  // 'uo4':   require('../assets/audio/pinyin/vowel_tones/uo4.mp3'),    // uò  tone 4
-  // 'uan1':  require('../assets/audio/pinyin/vowel_tones/uan1.mp3'),   // uān tone 1
-  // 'uan2':  require('../assets/audio/pinyin/vowel_tones/uan2.mp3'),   // uán tone 2
-  // 'uan3':  require('../assets/audio/pinyin/vowel_tones/uan3.mp3'),   // uǎn tone 3
-  // 'uan4':  require('../assets/audio/pinyin/vowel_tones/uan4.mp3'),   // uàn tone 4
-  // 'uang1': require('../assets/audio/pinyin/vowel_tones/uang1.mp3'),  // uāng tone 1
-  // 'uang2': require('../assets/audio/pinyin/vowel_tones/uang2.mp3'),  // uáng tone 2
-  // 'uang3': require('../assets/audio/pinyin/vowel_tones/uang3.mp3'),  // uǎng tone 3
-  // 'uang4': require('../assets/audio/pinyin/vowel_tones/uang4.mp3'),  // uàng tone 4
-  // 'van1':  require('../assets/audio/pinyin/vowel_tones/van1.mp3'),   // üān tone 1 (üan)
-  // 'van2':  require('../assets/audio/pinyin/vowel_tones/van2.mp3'),   // üán tone 2
-  // 'van3':  require('../assets/audio/pinyin/vowel_tones/van3.mp3'),   // üǎn tone 3
-  // 'van4':  require('../assets/audio/pinyin/vowel_tones/van4.mp3'),   // üàn tone 4
+  // Lesson 6 — ia iao ian iang ua uai uo uan uang üan
+  // Single recording per final (no 4-tone set). Put files in finals/ folder.
+  // Naming: fin_ia.mp3  fin_iao.mp3  fin_ian.mp3  fin_iang.mp3
+  //         fin_ua.mp3  fin_uai.mp3  fin_uo.mp3   fin_uan.mp3  fin_uang.mp3  fin_van.mp3
+  // Uncomment each line after recording:
+  // 'fin_ia':   require('../assets/audio/pinyin/finals/fin_ia.mp3'),
+  // 'fin_iao':  require('../assets/audio/pinyin/finals/fin_iao.mp3'),
+  // 'fin_ian':  require('../assets/audio/pinyin/finals/fin_ian.mp3'),
+  // 'fin_iang': require('../assets/audio/pinyin/finals/fin_iang.mp3'),
+  // 'fin_ua':   require('../assets/audio/pinyin/finals/fin_ua.mp3'),
+  // 'fin_uai':  require('../assets/audio/pinyin/finals/fin_uai.mp3'),
+  // 'fin_uo':   require('../assets/audio/pinyin/finals/fin_uo.mp3'),
+  // 'fin_uan':  require('../assets/audio/pinyin/finals/fin_uan.mp3'),
+  // 'fin_uang': require('../assets/audio/pinyin/finals/fin_uang.mp3'),
+  // 'fin_van':  require('../assets/audio/pinyin/finals/fin_van.mp3'),
 
   // ── TONE PRACTICE — lesson syllables ────────────────────────────────────
   'ba4_ba0':     require('../assets/audio/pinyin/tones/ba4_ba0.mp3'),
