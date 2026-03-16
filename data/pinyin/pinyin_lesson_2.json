@@ -1,0 +1,612 @@
+{
+  "id": 2,
+  "title": "Compound Finals & New Initials",
+  "emoji": "🔤",
+  "subtitle": "ai ei ui ao ou iu · g k h j q x",
+  "description": "Learn 6 compound vowels and 6 new initials including the j-q-x family.",
+  "new_finals": [
+    "ai",
+    "ei",
+    "ui",
+    "ao",
+    "ou",
+    "iu"
+  ],
+  "review_finals": [
+    "a",
+    "o",
+    "e",
+    "i",
+    "u",
+    "ü"
+  ],
+  "new_initials": [
+    "g",
+    "k",
+    "h",
+    "j",
+    "q",
+    "x"
+  ],
+  "review_initials": [
+    "b",
+    "p",
+    "m",
+    "f",
+    "d",
+    "t",
+    "n",
+    "l"
+  ],
+  "learn_content": {
+    "rules": [
+      "ai = 'eye', ei = 'ay', ui = 'way'",
+      "ao = 'ow' (as in cow), ou = 'oh', iu = 'yo'",
+      "j, q, x are ONLY used with i and ü finals — never a, o, u",
+      "j + ü = ju (the ü dots are dropped after j, q, x)"
+    ],
+    "spelling_rules": [
+      {
+        "title": "Initial + ei",
+        "rule": "b p m f l g combine with 'ei'",
+        "examples": [
+          {
+            "pinyin": "bēi",
+            "note": "b + ei",
+            "audio_key": "bei1"
+          }
+        ]
+      },
+      {
+        "title": "Initial + ou",
+        "rule": "m t n l g k h combine with 'ou'",
+        "examples": [
+          {
+            "pinyin": "gǒu",
+            "note": "g + ou",
+            "audio_key": "gou3"
+          }
+        ]
+      },
+      {
+        "title": "j q x + i",
+        "rule": "j q x combine with 'i'",
+        "examples": [
+          {
+            "pinyin": "jī",
+            "note": "j + i",
+            "audio_key": "ji1"
+          },
+          {
+            "pinyin": "qī",
+            "note": "q + i",
+            "audio_key": "qi1"
+          }
+        ]
+      }
+    ]
+  },
+  "stage1_pool": [
+    {
+      "type": "listen_tone",
+      "syllable": "hǎo",
+      "audio_key": "hao3",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "guì",
+      "audio_key": "gui4",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "qī",
+      "audio_key": "qi1",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "gē",
+      "audio_key": "init_g",
+      "correct": "g",
+      "choices": [
+        "g",
+        "k",
+        "h",
+        "j"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "kē",
+      "audio_key": "init_k",
+      "correct": "k",
+      "choices": [
+        "g",
+        "k",
+        "h",
+        "j"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "hē",
+      "audio_key": "init_h",
+      "correct": "h",
+      "choices": [
+        "g",
+        "k",
+        "h",
+        "j"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "jī",
+      "audio_key": "init_j",
+      "correct": "j",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "g"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "qī",
+      "audio_key": "init_q",
+      "correct": "q",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "g"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "xī",
+      "audio_key": "init_x",
+      "correct": "x",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "g"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "māi",
+      "audio_key": "fin_ai",
+      "correct": "ai",
+      "choices": [
+        "ai",
+        "ei",
+        "ui",
+        "ao"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "fēi",
+      "audio_key": "fin_ei",
+      "correct": "ei",
+      "choices": [
+        "ai",
+        "ei",
+        "ui",
+        "ao"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "guī",
+      "audio_key": "fin_ui",
+      "correct": "ui",
+      "choices": [
+        "ai",
+        "ei",
+        "ui",
+        "ao"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "māo",
+      "audio_key": "fin_ao",
+      "correct": "ao",
+      "choices": [
+        "ao",
+        "ou",
+        "iu",
+        "ai"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "gōu",
+      "audio_key": "fin_ou",
+      "correct": "ou",
+      "choices": [
+        "ao",
+        "ou",
+        "iu",
+        "ai"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "jiū",
+      "audio_key": "fin_iu",
+      "correct": "iu",
+      "choices": [
+        "ao",
+        "ou",
+        "iu",
+        "ui"
+      ]
+    }
+  ],
+  "stage2_pool": [
+    {
+      "syllable": "nǐhǎo",
+      "audio_key": "ni3_hao3",
+      "meaning": "hello",
+      "chinese": "你好"
+    },
+    {
+      "syllable": "guì",
+      "audio_key": "gui4",
+      "meaning": "expensive",
+      "chinese": "贵"
+    },
+    {
+      "syllable": "fēi",
+      "audio_key": "fei1",
+      "meaning": "fly",
+      "chinese": "飞"
+    },
+    {
+      "syllable": "gāo",
+      "audio_key": "gao1",
+      "meaning": "tall",
+      "chinese": "高"
+    },
+    {
+      "syllable": "hǎo",
+      "audio_key": "hao3",
+      "meaning": "good",
+      "chinese": "好"
+    },
+    {
+      "syllable": "māo",
+      "audio_key": "mao1",
+      "meaning": "cat",
+      "chinese": "猫"
+    },
+    {
+      "syllable": "gǒu",
+      "audio_key": "gou3",
+      "meaning": "dog",
+      "chinese": "狗"
+    },
+    {
+      "syllable": "qī",
+      "audio_key": "qi1",
+      "meaning": "seven",
+      "chinese": "七"
+    },
+    {
+      "syllable": "xǐ",
+      "audio_key": "xi3",
+      "meaning": "wash",
+      "chinese": "洗"
+    },
+    {
+      "syllable": "bēi",
+      "audio_key": "bei1",
+      "meaning": "cup",
+      "chinese": "杯"
+    }
+  ],
+  "stage3_pool": [
+    {
+      "type": "visual_tone",
+      "syllable": "hǎo",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "guì",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "māo",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "gē",
+      "correct": "g",
+      "choices": [
+        "g",
+        "k",
+        "h",
+        "j"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "kē",
+      "correct": "k",
+      "choices": [
+        "g",
+        "k",
+        "h",
+        "j"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "hē",
+      "correct": "h",
+      "choices": [
+        "g",
+        "k",
+        "h",
+        "j"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "jī",
+      "correct": "j",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "g"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "qī",
+      "correct": "q",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "g"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "xī",
+      "correct": "x",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "g"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "māi",
+      "correct": "ai",
+      "choices": [
+        "ai",
+        "ei",
+        "ao",
+        "ou"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "fēi",
+      "correct": "ei",
+      "choices": [
+        "ai",
+        "ei",
+        "ui",
+        "ao"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "māo",
+      "correct": "ao",
+      "choices": [
+        "ao",
+        "ou",
+        "iu",
+        "ai"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "gōu",
+      "correct": "ou",
+      "choices": [
+        "ao",
+        "ou",
+        "iu",
+        "ui"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "jiū",
+      "correct": "iu",
+      "choices": [
+        "ao",
+        "ou",
+        "iu",
+        "ui"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "guī",
+      "correct": "ui",
+      "choices": [
+        "ai",
+        "ei",
+        "ui",
+        "ao"
+      ]
+    }
+  ],
+  "quiz_pool": [
+    {
+      "type": "visual_tone",
+      "syllable": "hǎo",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "guì",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "gē",
+      "correct": "g",
+      "choices": [
+        "g",
+        "k",
+        "h",
+        "j"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "jī",
+      "correct": "j",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "g"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "qī",
+      "correct": "q",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "g"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "xī",
+      "correct": "x",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "g"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "māo",
+      "correct": "ao",
+      "choices": [
+        "ao",
+        "ou",
+        "iu",
+        "ai"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "gōu",
+      "correct": "ou",
+      "choices": [
+        "ao",
+        "ou",
+        "iu",
+        "ui"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "fēi",
+      "correct": "ei",
+      "choices": [
+        "ai",
+        "ei",
+        "ui",
+        "ao"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "guī",
+      "correct": "ui",
+      "choices": [
+        "ai",
+        "ei",
+        "ui",
+        "ao"
+      ]
+    }
+  ]
+}

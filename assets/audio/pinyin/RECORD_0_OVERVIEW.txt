@@ -1,0 +1,48 @@
+═══════════════════════════════════════════════════════════════
+  PINYIN AUDIO RECORDING OVERVIEW
+═══════════════════════════════════════════════════════════════
+
+FOLDER STRUCTURE — where to put each file:
+
+  assets/audio/pinyin/
+  ├── initials/         ← Recordings for all 23 initials
+  │     Files: init_b.mp3  init_p.mp3  init_m.mp3 ... init_w.mp3
+  │     ✅ ALREADY RECORDED (23 files present)
+  │
+  ├── finals/           ← Recordings for all 24 finals
+  │     Files: fin_a.mp3  fin_ai.mp3  fin_ao.mp3 ... fin_ong.mp3
+  │     ✅ ALREADY RECORDED (24 files present)
+  │
+  ├── vowel_tones/      ← Pure vowel × 4 tones (FoundationsPinyinScreen)
+  │     Files: a1.mp3  a2.mp3  a3.mp3  a4.mp3  o1.mp3 ... nv4.mp3
+  │     ❌ NOT YET RECORDED — See RECORD_1_FOUNDATIONS_vowel_tones.txt
+  │
+  └── tones/            ← All syllables for Stage 1 & Stage 2 practice
+        Files: ba1.mp3  hao3.mp3  ni3_hao3.mp3 ...
+        ⚠️  PARTIALLY RECORDED — See per-lesson files below
+
+RECORDING LIST FILES:
+
+  RECORD_1_FOUNDATIONS_vowel_tones.txt   → 24 files  (vowel_tones/ folder)
+  RECORD_2_LESSON_1.txt                  → 4 files   (tones/ folder)
+  RECORD_3_LESSON_2.txt                  → 8 files   (tones/ folder)
+  RECORD_4_LESSON_3.txt                  → 7 files   (tones/ folder)
+  RECORD_5_LESSON_4.txt                  → 9 files   (tones/ folder)
+  RECORD_6_LESSON_5.txt                  → 8 files   (tones/ folder)
+  RECORD_7_LESSON_6.txt                  → 8 files   (tones/ folder)
+  RECORD_8_LESSON_7.txt                  → 8 files   (tones/ folder)
+  RECORD_9_LESSON_8.txt                  → 15 files  (tones/ folder)
+  RECORD_10_LESSON_9.txt                 → 2 files   (tones/ folder)
+  RECORD_11_LESSON_10.txt                → 8 files   (tones/ folder)
+
+TOTAL NEW FILES TO RECORD: ~101 files
+
+NAMING RULES:
+  - Use numbered pinyin (tone number at end):   bā → ba1.mp3
+  - ü is written as v:                          nǚ → nv3.mp3
+  - Multi-syllable (joined with underscore):    nǐhǎo → ni3_hao3.mp3
+  - Neutral tone = 0:                           mama → ma1_ma0.mp3
+
+AFTER RECORDING:
+  Open utils/pinyinAudio.js and uncomment the line for each file you recorded.
+  The commented-out lines are already prepared and waiting for you.

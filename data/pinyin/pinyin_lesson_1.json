@@ -1,0 +1,705 @@
+{
+  "id": 1,
+  "title": "Finals & The Four Tones",
+  "emoji": "🎵",
+  "subtitle": "a o e i u ü · b p m f d t n l",
+  "description": "Master the 6 basic vowels, the four tones, and your first 8 consonants.",
+  "new_finals": [
+    "a",
+    "o",
+    "e",
+    "i",
+    "u",
+    "ü"
+  ],
+  "review_finals": [],
+  "new_initials": [
+    "b",
+    "p",
+    "m",
+    "f",
+    "d",
+    "t",
+    "n",
+    "l"
+  ],
+  "review_initials": [],
+  "learn_content": {
+    "tones": [
+      {
+        "tone": 1,
+        "mark": "ā",
+        "name": "1st Tone",
+        "desc": "High and level — hold flat",
+        "example_syllable": "mā",
+        "example_meaning": "mother"
+      },
+      {
+        "tone": 2,
+        "mark": "á",
+        "name": "2nd Tone",
+        "desc": "Rising — like asking 'really?'",
+        "example_syllable": "má",
+        "example_meaning": "hemp"
+      },
+      {
+        "tone": 3,
+        "mark": "ǎ",
+        "name": "3rd Tone",
+        "desc": "Dipping — down then up",
+        "example_syllable": "mǎ",
+        "example_meaning": "horse"
+      },
+      {
+        "tone": 4,
+        "mark": "à",
+        "name": "4th Tone",
+        "desc": "Falling — sharp and fast",
+        "example_syllable": "mà",
+        "example_meaning": "scold"
+      }
+    ],
+    "rules": [
+      "ü is written as v in file names but always displayed as ü",
+      "Neutral tone (轻声) has no tone mark — it is short and light",
+      "Every Chinese syllable has exactly one tone"
+    ],
+    "spelling_rules": [
+      {
+        "title": "Initial + a",
+        "rule": "b p m f d t n l combine with 'a'",
+        "examples": [
+          {
+            "pinyin": "bā",
+            "note": "b + a",
+            "audio_key": "ba1"
+          },
+          {
+            "pinyin": "mā",
+            "note": "m + a",
+            "audio_key": "ma1"
+          },
+          {
+            "pinyin": "dà",
+            "note": "d + a",
+            "audio_key": "da4"
+          }
+        ]
+      },
+      {
+        "title": "Initial + i",
+        "rule": "b p m d t n l combine with 'i' (f does not combine with i)",
+        "examples": [
+          {
+            "pinyin": "bǐ",
+            "note": "b + i",
+            "audio_key": "bi3"
+          }
+        ]
+      },
+      {
+        "title": "Initial + ü",
+        "rule": "Only n and l combine with 'ü' from this set",
+        "examples": [
+          {
+            "pinyin": "nǚ",
+            "note": "n + ü",
+            "audio_key": "nv3"
+          }
+        ]
+      }
+    ]
+  },
+  "stage1_pool": [
+    {
+      "type": "listen_tone",
+      "syllable": "mā",
+      "audio_key": "ma1",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "má",
+      "audio_key": "ma2",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mǎ",
+      "audio_key": "ma3",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mà",
+      "audio_key": "ma4",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "bō",
+      "audio_key": "init_b",
+      "correct": "b",
+      "choices": [
+        "b",
+        "p",
+        "m",
+        "f"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "pō",
+      "audio_key": "init_p",
+      "correct": "p",
+      "choices": [
+        "b",
+        "p",
+        "m",
+        "f"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "mō",
+      "audio_key": "init_m",
+      "correct": "m",
+      "choices": [
+        "b",
+        "p",
+        "m",
+        "f"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "fō",
+      "audio_key": "init_f",
+      "correct": "f",
+      "choices": [
+        "b",
+        "p",
+        "m",
+        "f"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "dē",
+      "audio_key": "init_d",
+      "correct": "d",
+      "choices": [
+        "d",
+        "t",
+        "n",
+        "l"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "tē",
+      "audio_key": "init_t",
+      "correct": "t",
+      "choices": [
+        "d",
+        "t",
+        "n",
+        "l"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "nā",
+      "audio_key": "init_n",
+      "correct": "n",
+      "choices": [
+        "d",
+        "t",
+        "n",
+        "l"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "lā",
+      "audio_key": "init_l",
+      "correct": "l",
+      "choices": [
+        "d",
+        "t",
+        "n",
+        "l"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bā",
+      "audio_key": "fin_a",
+      "correct": "a",
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "i"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bō",
+      "audio_key": "fin_o",
+      "correct": "o",
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "i"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "mē",
+      "audio_key": "fin_e",
+      "correct": "e",
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "i"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bī",
+      "audio_key": "fin_i",
+      "correct": "i",
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "u"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bū",
+      "audio_key": "fin_u",
+      "correct": "u",
+      "choices": [
+        "i",
+        "u",
+        "ü",
+        "a"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "nü",
+      "audio_key": "fin_v",
+      "correct": "ü",
+      "choices": [
+        "i",
+        "u",
+        "ü",
+        "e"
+      ]
+    }
+  ],
+  "stage2_pool": [
+    {
+      "syllable": "mā",
+      "audio_key": "ma1",
+      "meaning": "1st tone",
+      "chinese": ""
+    },
+    {
+      "syllable": "má",
+      "audio_key": "ma2",
+      "meaning": "2nd tone",
+      "chinese": ""
+    },
+    {
+      "syllable": "mǎ",
+      "audio_key": "ma3",
+      "meaning": "3rd tone — horse",
+      "chinese": "马"
+    },
+    {
+      "syllable": "mà",
+      "audio_key": "ma4",
+      "meaning": "4th tone — scold",
+      "chinese": "骂"
+    },
+    {
+      "syllable": "māma",
+      "audio_key": "ma1_ma0",
+      "meaning": "mom",
+      "chinese": "妈妈"
+    },
+    {
+      "syllable": "bàba",
+      "audio_key": "ba4_ba0",
+      "meaning": "dad",
+      "chinese": "爸爸"
+    },
+    {
+      "syllable": "bā",
+      "audio_key": "ba1",
+      "meaning": "eight",
+      "chinese": "八"
+    },
+    {
+      "syllable": "bǐ",
+      "audio_key": "bi3",
+      "meaning": "pen",
+      "chinese": "笔"
+    },
+    {
+      "syllable": "nǚ",
+      "audio_key": "nv3",
+      "meaning": "female/woman",
+      "chinese": "女"
+    },
+    {
+      "syllable": "dà",
+      "audio_key": "da4",
+      "meaning": "big",
+      "chinese": "大"
+    }
+  ],
+  "stage3_pool": [
+    {
+      "type": "visual_tone",
+      "syllable": "mā",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "má",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "mǎ",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "mà",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "bō",
+      "correct": "b",
+      "choices": [
+        "b",
+        "p",
+        "m",
+        "f"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "pō",
+      "correct": "p",
+      "choices": [
+        "b",
+        "p",
+        "m",
+        "f"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "mō",
+      "correct": "m",
+      "choices": [
+        "b",
+        "p",
+        "m",
+        "f"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "fō",
+      "correct": "f",
+      "choices": [
+        "b",
+        "p",
+        "m",
+        "f"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "dā",
+      "correct": "d",
+      "choices": [
+        "d",
+        "t",
+        "n",
+        "l"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "tā",
+      "correct": "t",
+      "choices": [
+        "d",
+        "t",
+        "n",
+        "l"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "nā",
+      "correct": "n",
+      "choices": [
+        "d",
+        "t",
+        "n",
+        "l"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "lā",
+      "correct": "l",
+      "choices": [
+        "d",
+        "t",
+        "n",
+        "l"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "bā",
+      "correct": "a",
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "i"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "bō",
+      "correct": "o",
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "i"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "mē",
+      "correct": "e",
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "i"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "mī",
+      "correct": "i",
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "i"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "bū",
+      "correct": "u",
+      "choices": [
+        "i",
+        "u",
+        "ü",
+        "a"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "nü",
+      "correct": "ü",
+      "choices": [
+        "i",
+        "u",
+        "ü",
+        "e"
+      ]
+    }
+  ],
+  "quiz_pool": [
+    {
+      "type": "visual_tone",
+      "syllable": "mā",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "mǎ",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "mà",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "bō",
+      "correct": "b",
+      "choices": [
+        "b",
+        "p",
+        "m",
+        "f"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "pō",
+      "correct": "p",
+      "choices": [
+        "b",
+        "p",
+        "m",
+        "f"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "dā",
+      "correct": "d",
+      "choices": [
+        "d",
+        "t",
+        "n",
+        "l"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "lā",
+      "correct": "l",
+      "choices": [
+        "d",
+        "t",
+        "n",
+        "l"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "bā",
+      "correct": "a",
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "i"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "mī",
+      "correct": "i",
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "i"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "bū",
+      "correct": "u",
+      "choices": [
+        "i",
+        "u",
+        "ü",
+        "a"
+      ]
+    }
+  ]
+}
