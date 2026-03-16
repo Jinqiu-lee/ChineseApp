@@ -82,54 +82,36 @@
         "title": "Initial + ang",
         "rule": "b p m f d t n l g k h zh ch sh r z c s combine with 'ang'",
         "examples": [
-          {
-            "pinyin": "shāng",
-            "note": "sh + ang",
-            "audio_key": "shang1"
-          }
+          { "pinyin": "yáng",  "note": "y (standalone)", "audio_key": "yang2" },
+          { "pinyin": "wáng",  "note": "w (standalone)", "audio_key": "wang2" },
+          { "pinyin": "zhāng", "note": "zh + ang",       "audio_key": "zhang1" },
+          { "pinyin": "shāng", "note": "sh + ang",       "audio_key": "shang1" }
         ]
       },
       {
         "title": "Initial + eng",
         "rule": "b p m f d t n l g k h zh ch sh r z c s combine with 'eng'",
         "examples": [
-          {
-            "pinyin": "néng",
-            "note": "n + eng",
-            "audio_key": "neng2"
-          }
+          { "pinyin": "néng",  "note": "n + eng",  "audio_key": "neng2" },
+          { "pinyin": "wèng",  "note": "w (standalone)", "audio_key": "weng4" }
         ]
       },
       {
         "title": "Initial + ing",
         "rule": "b p m d t n l j q x combine with 'ing'",
         "examples": [
-          {
-            "pinyin": "míng",
-            "note": "m + ing",
-            "audio_key": "ming2"
-          }
+          { "pinyin": "míng",  "note": "m + ing",  "audio_key": "ming2" },
+          { "pinyin": "yīng",  "note": "y (standalone)", "audio_key": "ying1" }
         ]
       },
       {
         "title": "Initial + ong",
         "rule": "d t n l g k h zh ch sh r z c s combine with 'ong'",
         "examples": [
-          {
-            "pinyin": "dōng",
-            "note": "d + ong",
-            "audio_key": "dong1"
-          },
-          {
-            "pinyin": "zhōng",
-            "note": "zh + ong",
-            "audio_key": "zhong1"
-          },
-          {
-            "pinyin": "cóng",
-            "note": "c + ong",
-            "audio_key": "cong2"
-          }
+          { "pinyin": "dōng",  "note": "d + ong",  "audio_key": "dong1" },
+          { "pinyin": "zhōng", "note": "zh + ong", "audio_key": "zhong1" },
+          { "pinyin": "chóng", "note": "ch + ong", "audio_key": "chong2" },
+          { "pinyin": "cóng",  "note": "c + ong",  "audio_key": "cong2" }
         ]
       }
     ]

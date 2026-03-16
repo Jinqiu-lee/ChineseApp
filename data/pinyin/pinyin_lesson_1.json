@@ -69,43 +69,70 @@
         "title": "Initial + a",
         "rule": "b p m f d t n l combine with 'a'",
         "examples": [
-          {
-            "pinyin": "bā",
-            "note": "b + a",
-            "audio_key": "ba1"
-          },
-          {
-            "pinyin": "mā",
-            "note": "m + a",
-            "audio_key": "ma1"
-          },
-          {
-            "pinyin": "dà",
-            "note": "d + a",
-            "audio_key": "da4"
-          }
+          { "pinyin": "bā",  "note": "b + a", "audio_key": "ba1" },
+          { "pinyin": "pá",  "note": "p + a", "audio_key": "pa2" },
+          { "pinyin": "mā",  "note": "m + a", "audio_key": "ma1" },
+          { "pinyin": "fà",  "note": "f + a", "audio_key": "fa4" },
+          { "pinyin": "dà",  "note": "d + a", "audio_key": "da4" },
+          { "pinyin": "tā",  "note": "t + a", "audio_key": "ta1" },
+          { "pinyin": "nǎ",  "note": "n + a", "audio_key": "na3" },
+          { "pinyin": "lā",  "note": "l + a", "audio_key": "la1" }
+        ]
+      },
+      {
+        "title": "Initial + o",
+        "rule": "b p m f combine with 'o'",
+        "examples": [
+          { "pinyin": "bō",  "note": "b + o", "audio_key": "bo1" },
+          { "pinyin": "pó",  "note": "p + o", "audio_key": "po2" },
+          { "pinyin": "mó",  "note": "m + o", "audio_key": "mo2" },
+          { "pinyin": "fó",  "note": "f + o", "audio_key": "fo2" }
+        ]
+      },
+      {
+        "title": "Initial + e",
+        "rule": "m d t n l combine with 'e'",
+        "examples": [
+          { "pinyin": "mē",  "note": "m + e", "audio_key": "me1" },
+          { "pinyin": "dé",  "note": "d + e", "audio_key": "de2" },
+          { "pinyin": "tè",  "note": "t + e", "audio_key": "te4" },
+          { "pinyin": "nè",  "note": "n + e", "audio_key": "ne4" },
+          { "pinyin": "lè",  "note": "l + e", "audio_key": "le4" }
         ]
       },
       {
         "title": "Initial + i",
         "rule": "b p m d t n l combine with 'i' (f does not combine with i)",
         "examples": [
-          {
-            "pinyin": "bǐ",
-            "note": "b + i",
-            "audio_key": "bi3"
-          }
+          { "pinyin": "bǐ",  "note": "b + i", "audio_key": "bi3" },
+          { "pinyin": "pí",  "note": "p + i", "audio_key": "pi2" },
+          { "pinyin": "mǐ",  "note": "m + i", "audio_key": "mi3" },
+          { "pinyin": "dì",  "note": "d + i", "audio_key": "di4" },
+          { "pinyin": "tí",  "note": "t + i", "audio_key": "ti2" },
+          { "pinyin": "nǐ",  "note": "n + i", "audio_key": "ni3" },
+          { "pinyin": "lì",  "note": "l + i", "audio_key": "li4" }
+        ]
+      },
+      {
+        "title": "Initial + u",
+        "rule": "b p m f d t n l combine with 'u'",
+        "examples": [
+          { "pinyin": "bù",  "note": "b + u", "audio_key": "bu4" },
+          { "pinyin": "pù",  "note": "p + u", "audio_key": "pu4" },
+          { "pinyin": "mù",  "note": "m + u", "audio_key": "mu4" },
+          { "pinyin": "fú",  "note": "f + u", "audio_key": "fu2" },
+          { "pinyin": "dù",  "note": "d + u", "audio_key": "du4" },
+          { "pinyin": "tù",  "note": "t + u", "audio_key": "tu4" },
+          { "pinyin": "nǔ",  "note": "n + u", "audio_key": "nu3" },
+          { "pinyin": "lù",  "note": "l + u", "audio_key": "lu4" }
         ]
       },
       {
         "title": "Initial + ü",
         "rule": "Only n and l combine with 'ü' from this set",
         "examples": [
-          {
-            "pinyin": "nǚ",
-            "note": "n + ü",
-            "audio_key": "nv3"
-          }
+          { "pinyin": "nǚ",  "note": "n + ü", "audio_key": "nv3" },
+          { "pinyin": "lǜ",  "note": "l + ü", "audio_key": "lv4" }
         ]
       }
     ]

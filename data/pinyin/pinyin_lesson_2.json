@@ -47,41 +47,85 @@
     ],
     "spelling_rules": [
       {
+        "title": "Initial + ai",
+        "rule": "b p m d t n l k h combine with 'ai'",
+        "examples": [
+          { "pinyin": "bái",  "note": "b + ai", "audio_key": "bai2" },
+          { "pinyin": "pái",  "note": "p + ai", "audio_key": "pai2" },
+          { "pinyin": "mǎi",  "note": "m + ai", "audio_key": "mai3" },
+          { "pinyin": "dāi",  "note": "d + ai", "audio_key": "dai1" },
+          { "pinyin": "nǎi",  "note": "n + ai", "audio_key": "nai3" },
+          { "pinyin": "lái",  "note": "l + ai", "audio_key": "lai2" },
+          { "pinyin": "kāi",  "note": "k + ai", "audio_key": "kai1" },
+          { "pinyin": "hǎi",  "note": "h + ai", "audio_key": "hai3" }
+        ]
+      },
+      {
         "title": "Initial + ei",
         "rule": "b p m f l g combine with 'ei'",
         "examples": [
-          {
-            "pinyin": "bēi",
-            "note": "b + ei",
-            "audio_key": "bei1"
-          }
+          { "pinyin": "bēi",  "note": "b + ei", "audio_key": "bei1" },
+          { "pinyin": "méi",  "note": "m + ei", "audio_key": "mei2" },
+          { "pinyin": "fēi",  "note": "f + ei", "audio_key": "fei1" },
+          { "pinyin": "lèi",  "note": "l + ei", "audio_key": "lei4" },
+          { "pinyin": "gěi",  "note": "g + ei", "audio_key": "gei3" }
+        ]
+      },
+      {
+        "title": "Initial + ui",
+        "rule": "d t g k h combine with 'ui'",
+        "examples": [
+          { "pinyin": "duì",  "note": "d + ui", "audio_key": "dui4" },
+          { "pinyin": "tuī",  "note": "t + ui", "audio_key": "tui1" },
+          { "pinyin": "guī",  "note": "g + ui", "audio_key": "gui1" },
+          { "pinyin": "kuī",  "note": "k + ui", "audio_key": "kui1" },
+          { "pinyin": "huī",  "note": "h + ui", "audio_key": "hui1" }
+        ]
+      },
+      {
+        "title": "Initial + ao",
+        "rule": "b p m d t n l g h combine with 'ao'",
+        "examples": [
+          { "pinyin": "bāo",  "note": "b + ao", "audio_key": "bao1" },
+          { "pinyin": "pǎo",  "note": "p + ao", "audio_key": "pao3" },
+          { "pinyin": "māo",  "note": "m + ao", "audio_key": "mao1" },
+          { "pinyin": "dāo",  "note": "d + ao", "audio_key": "dao1" },
+          { "pinyin": "táo",  "note": "t + ao", "audio_key": "tao2" },
+          { "pinyin": "nào",  "note": "n + ao", "audio_key": "nao4" },
+          { "pinyin": "láo",  "note": "l + ao", "audio_key": "lao2" },
+          { "pinyin": "gāo",  "note": "g + ao", "audio_key": "gao1" }
         ]
       },
       {
         "title": "Initial + ou",
         "rule": "m t n l g k h combine with 'ou'",
         "examples": [
-          {
-            "pinyin": "gǒu",
-            "note": "g + ou",
-            "audio_key": "gou3"
-          }
+          { "pinyin": "móu",  "note": "m + ou", "audio_key": "mou2" },
+          { "pinyin": "tóu",  "note": "t + ou", "audio_key": "tou2" },
+          { "pinyin": "lóu",  "note": "l + ou", "audio_key": "lou2" },
+          { "pinyin": "kǒu",  "note": "k + ou", "audio_key": "kou3" },
+          { "pinyin": "gǒu",  "note": "g + ou", "audio_key": "gou3" },
+          { "pinyin": "hóu",  "note": "h + ou", "audio_key": "hou2" },
+          { "pinyin": "dōu",  "note": "d + ou", "audio_key": "dou1" }
+        ]
+      },
+      {
+        "title": "Initial + iu",
+        "rule": "n l j q x combine with 'iu'",
+        "examples": [
+          { "pinyin": "niú",  "note": "n + iu", "audio_key": "niu2" },
+          { "pinyin": "liú",  "note": "l + iu", "audio_key": "liu2" },
+          { "pinyin": "jiǔ",  "note": "j + iu", "audio_key": "jiu3" },
+          { "pinyin": "xiū",  "note": "x + iu", "audio_key": "xiu1" }
         ]
       },
       {
         "title": "j q x + i",
         "rule": "j q x combine with 'i'",
         "examples": [
-          {
-            "pinyin": "jī",
-            "note": "j + i",
-            "audio_key": "ji1"
-          },
-          {
-            "pinyin": "qī",
-            "note": "q + i",
-            "audio_key": "qi1"
-          }
+          { "pinyin": "jī",   "note": "j + i",  "audio_key": "ji1" },
+          { "pinyin": "qī",   "note": "q + i",  "audio_key": "qi1" },
+          { "pinyin": "xī",   "note": "x + i",  "audio_key": "xi1" }
         ]
       }
     ]

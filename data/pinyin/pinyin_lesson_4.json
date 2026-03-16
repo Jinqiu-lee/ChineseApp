@@ -65,64 +65,56 @@
         "title": "Initial + an",
         "rule": "b p m f d t n l g k h combine with 'an'",
         "examples": [
-          {
-            "pinyin": "bān",
-            "note": "b + an",
-            "audio_key": "ban1"
-          },
-          {
-            "pinyin": "kàn",
-            "note": "k + an",
-            "audio_key": "kan4"
-          }
+          { "pinyin": "bān",  "note": "b + an", "audio_key": "ban1" },
+          { "pinyin": "pán",  "note": "p + an", "audio_key": "pan2" },
+          { "pinyin": "màn",  "note": "m + an", "audio_key": "man4" },
+          { "pinyin": "fān",  "note": "f + an", "audio_key": "fan1" },
+          { "pinyin": "dān",  "note": "d + an", "audio_key": "dan1" },
+          { "pinyin": "tán",  "note": "t + an", "audio_key": "tan2" },
+          { "pinyin": "nán",  "note": "n + an", "audio_key": "nan2" },
+          { "pinyin": "lán",  "note": "l + an", "audio_key": "lan2" },
+          { "pinyin": "gān",  "note": "g + an", "audio_key": "gan1" },
+          { "pinyin": "kàn",  "note": "k + an", "audio_key": "kan4" },
+          { "pinyin": "hàn",  "note": "h + an", "audio_key": "han4" },
+          { "pinyin": "zhān", "note": "zh + an","audio_key": "zhan1" },
+          { "pinyin": "rán",  "note": "r + an", "audio_key": "ran2" },
+          { "pinyin": "sān",  "note": "s + an", "audio_key": "san1" },
+          { "pinyin": "cān",  "note": "c + an", "audio_key": "can1" }
         ]
       },
       {
         "title": "Initial + en",
         "rule": "b p m f d n g h zh ch sh r z combine with 'en'",
         "examples": [
-          {
-            "pinyin": "mén",
-            "note": "m + en",
-            "audio_key": "men2"
-          },
-          {
-            "pinyin": "fēn",
-            "note": "f + en",
-            "audio_key": "fen1"
-          },
-          {
-            "pinyin": "rén",
-            "note": "r + en",
-            "audio_key": "ren2"
-          }
+          { "pinyin": "bēn",  "note": "b + en", "audio_key": "ben1" },
+          { "pinyin": "pén",  "note": "p + en", "audio_key": "pen2" },
+          { "pinyin": "mén",  "note": "m + en", "audio_key": "men2" },
+          { "pinyin": "fēn",  "note": "f + en", "audio_key": "fen1" },
+          { "pinyin": "gēn",  "note": "g + en", "audio_key": "gen1" },
+          { "pinyin": "hěn",  "note": "h + en", "audio_key": "hen3" },
+          { "pinyin": "zhēn", "note": "zh + en","audio_key": "zhen1" },
+          { "pinyin": "chén", "note": "ch + en","audio_key": "chen2" },
+          { "pinyin": "shén", "note": "sh + en","audio_key": "shen2" },
+          { "pinyin": "rén",  "note": "r + en", "audio_key": "ren2" }
         ]
       },
       {
         "title": "Initial + in",
         "rule": "b p m n l j q x combine with 'in'",
         "examples": [
-          {
-            "pinyin": "nín",
-            "note": "n + in",
-            "audio_key": "nin2"
-          },
-          {
-            "pinyin": "xīn",
-            "note": "x + in",
-            "audio_key": "xin1"
-          }
+          { "pinyin": "bīn",  "note": "b + in", "audio_key": "bin1" },
+          { "pinyin": "pín",  "note": "p + in", "audio_key": "pin2" },
+          { "pinyin": "mǐn",  "note": "m + in", "audio_key": "min3" },
+          { "pinyin": "nín",  "note": "n + in", "audio_key": "nin2" },
+          { "pinyin": "lín",  "note": "l + in", "audio_key": "lin2" },
+          { "pinyin": "xīn",  "note": "x + in", "audio_key": "xin1" }
         ]
       },
       {
         "title": "Initial + ün",
         "rule": "j q x combine with 'ün' (written as jun qun xun — umlaut omitted after j q x)",
         "examples": [
-          {
-            "pinyin": "jūn",
-            "note": "j + ün",
-            "audio_key": "jun1"
-          }
+          { "pinyin": "jūn",  "note": "j + ün", "audio_key": "jun1" }
         ]
       }
     ]

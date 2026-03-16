@@ -429,9 +429,13 @@ export const PINYIN_AUDIO = {
 
   // Lesson 2 — ai/ei/ui/ao/ou/iu, j/q/x
   // 'bai1': require('../assets/audio/pinyin/tones/bai1.mp3'),  // bāi
-  'pai2': require('../assets/audio/pinyin/tones/pai2.mp3'),  // pái
+  'bai2': require('../assets/audio/pinyin/tones/bai2.mp3'),  // bái  white
+  'pai2': require('../assets/audio/pinyin/tones/pai2.mp3'),  // pái  brand
+  'mai3': require('../assets/audio/pinyin/tones/mai3.mp3'),  // mǎi  buy
   // 'mai1': require('../assets/audio/pinyin/tones/mai1.mp3'),  // māi
-  'dai1': require('../assets/audio/pinyin/tones/dai1.mp3'),  // dāi
+  'dai1': require('../assets/audio/pinyin/tones/dai1.mp3'),  // dāi  stay
+  'nai3': require('../assets/audio/pinyin/tones/nai3.mp3'),  // nǎi  milk
+  'hai3': require('../assets/audio/pinyin/tones/hai3.mp3'),  // hǎi  sea
   'tai2': require('../assets/audio/pinyin/tones/tai2.mp3'),  // tái  platform
   // 'nai1': require('../assets/audio/pinyin/tones/nai1.mp3'),  // nāi  grandma
   // 'lai1': require('../assets/audio/pinyin/tones/lai1.mp3'),  // lāi
@@ -450,10 +454,11 @@ export const PINYIN_AUDIO = {
   'hui1': require('../assets/audio/pinyin/tones/hui1.mp3'),  // huī  gray
   'bao1': require('../assets/audio/pinyin/tones/bao1.mp3'),  // bāo  wrap
   // 'pao2': require('../assets/audio/pinyin/tones/pao2.mp3'),  // páo  run
+  'pao3': require('../assets/audio/pinyin/tones/pao3.mp3'),  // pǎo  run
   'mao2': require('../assets/audio/pinyin/tones/mao2.mp3'),  // máo  hair
   'dao1': require('../assets/audio/pinyin/tones/dao1.mp3'),  // dāo  knife
   'tao2': require('../assets/audio/pinyin/tones/tao2.mp3'),  // táo  peach
-  // 'nao2': require('../assets/audio/pinyin/tones/nao2.mp3'),  // náo  noisy
+  'nao4': require('../assets/audio/pinyin/tones/nao4.mp3'),  // nào  noisy
   'lao2': require('../assets/audio/pinyin/tones/lao2.mp3'),  // láo  labor
   'gao1': require('../assets/audio/pinyin/tones/gao1.mp3'),  // gāo  tall
   // 'kao1': require('../assets/audio/pinyin/tones/kao1.mp3'),  // kāo  bake
@@ -462,11 +467,12 @@ export const PINYIN_AUDIO = {
   'tou2': require('../assets/audio/pinyin/tones/tou2.mp3'),  // tóu  head
   // 'nou2': require('../assets/audio/pinyin/tones/nou2.mp3'),  // nóu
   'lou2': require('../assets/audio/pinyin/tones/lou2.mp3'),  // lóu  floor
-  // 'kou1': require('../assets/audio/pinyin/tones/kou1.mp3'),  // kōu  mouth
+  'kou3': require('../assets/audio/pinyin/tones/kou3.mp3'),  // kǒu  mouth
   'hou2': require('../assets/audio/pinyin/tones/hou2.mp3'),  // hóu  monkey
   'niu2': require('../assets/audio/pinyin/tones/niu2.mp3'),  // niú  cow
   'liu2': require('../assets/audio/pinyin/tones/liu2.mp3'),  // liú  flow
-  // 'jiu1': require('../assets/audio/pinyin/tones/jiu1.mp3'),  // jiū  wine/nine
+  'jiu3': require('../assets/audio/pinyin/tones/jiu3.mp3'),  // jiǔ  nine/wine
+  // 'jiu1': require('../assets/audio/pinyin/tones/jiu1.mp3'),  // jiū
   // 'qiu2': require('../assets/audio/pinyin/tones/qiu2.mp3'),  // qiú  ball
   'xiu1': require('../assets/audio/pinyin/tones/xiu1.mp3'),  // xiū  repair
   'xi1':  require('../assets/audio/pinyin/tones/xi1.mp3'),   // xī   west/hope
@@ -506,20 +512,20 @@ export const PINYIN_AUDIO = {
   'cu4':   require('../assets/audio/pinyin/tones/cu4.mp3'),   // cù  vinegar
   'su1':   require('../assets/audio/pinyin/tones/su1.mp3'),   // sū  revive
   'pan2':  require('../assets/audio/pinyin/tones/pan2.mp3'),  // pán  plate
-  // 'man1':  require('../assets/audio/pinyin/tones/man1.mp3'),  // mān
+  'man4':  require('../assets/audio/pinyin/tones/man4.mp3'),  // màn  slow
   'fan1':  require('../assets/audio/pinyin/tones/fan1.mp3'),  // fān  turn over
   'dan1':  require('../assets/audio/pinyin/tones/dan1.mp3'),  // dān  single
-  // 'tan1':  require('../assets/audio/pinyin/tones/tan1.mp3'),  // tān  spread
+  'tan2':  require('../assets/audio/pinyin/tones/tan2.mp3'),  // tán  talk
   'nan2':  require('../assets/audio/pinyin/tones/nan2.mp3'),  // nán  difficult
   'lan2':  require('../assets/audio/pinyin/tones/lan2.mp3'),  // lán  blue
   'gan1':  require('../assets/audio/pinyin/tones/gan1.mp3'),  // gān  dry
-  // 'han2':  require('../assets/audio/pinyin/tones/han2.mp3'),  // hán  cold
+  'han4':  require('../assets/audio/pinyin/tones/han4.mp3'),  // hàn  Chinese/sweat
   'ben1':  require('../assets/audio/pinyin/tones/ben1.mp3'),  // bēn  run
   'pen2':  require('../assets/audio/pinyin/tones/pen2.mp3'),  // pén  basin
   // 'den4':  require('../assets/audio/pinyin/tones/den4.mp3'),  // dèn
   'nen4':  require('../assets/audio/pinyin/tones/nen4.mp3'),  // nèn  tender
   'gen1':  require('../assets/audio/pinyin/tones/gen1.mp3'),  // gēn  root
-  // 'hen2':  require('../assets/audio/pinyin/tones/hen2.mp3'),  // hén  mark
+  'hen3':  require('../assets/audio/pinyin/tones/hen3.mp3'),  // hěn  very
   'zhen1': require('../assets/audio/pinyin/tones/zhen1.mp3'), // zhēn  needle
   'chen2': require('../assets/audio/pinyin/tones/chen2.mp3'), // chén  morning
   'shen2': require('../assets/audio/pinyin/tones/shen2.mp3'), // shén  spirit

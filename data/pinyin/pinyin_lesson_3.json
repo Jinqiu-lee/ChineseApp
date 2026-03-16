@@ -57,16 +57,30 @@
         "title": "er — standalone final",
         "rule": "'er' stands alone — no initial combines with 'er'",
         "examples": [
-          {
-            "pinyin": "ér",
-            "note": "ear / child",
-            "audio_key": "er2"
-          },
-          {
-            "pinyin": "èr",
-            "note": "two",
-            "audio_key": "er4"
-          }
+          { "pinyin": "ér",  "note": "ear / child", "audio_key": "er2" },
+          { "pinyin": "èr",  "note": "two",          "audio_key": "er4" }
+        ]
+      },
+      {
+        "title": "Initial + ie",
+        "rule": "b p m d t n l j q x combine with 'ie'",
+        "examples": [
+          { "pinyin": "biē",  "note": "b + ie", "audio_key": "bie1" },
+          { "pinyin": "diē",  "note": "d + ie", "audio_key": "die1" },
+          { "pinyin": "tiē",  "note": "t + ie", "audio_key": "tie1" },
+          { "pinyin": "niē",  "note": "n + ie", "audio_key": "nie1" },
+          { "pinyin": "jiē",  "note": "j + ie", "audio_key": "jie1" },
+          { "pinyin": "qiē",  "note": "q + ie", "audio_key": "qie1" },
+          { "pinyin": "xiē",  "note": "x + ie", "audio_key": "xie1" }
+        ]
+      },
+      {
+        "title": "Initial + üe",
+        "rule": "l j q x combine with 'üe' (written as lüe, jue, que, xue)",
+        "examples": [
+          { "pinyin": "lüè",  "note": "l + üe", "audio_key": "lve4" },
+          { "pinyin": "juē",  "note": "j + üe", "audio_key": "jue1" },
+          { "pinyin": "quē",  "note": "q + üe", "audio_key": "que1" }
         ]
       }
     ]
