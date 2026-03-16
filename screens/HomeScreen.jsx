@@ -71,6 +71,7 @@ export default function HomeScreen({
   onLevelQuizPress,
   onChangeLevelConfirm,
   onRetakeTest,
+  onFoundationsPinyinPress,
 }) {
   const [showMenu, setShowMenu] = useState(false);
   const [selectedLevel, setSelectedLevel] = useState(
@@ -114,7 +115,7 @@ export default function HomeScreen({
 
   const handlePinyinSection = () => {
     setShowMenu(false);
-    setFoundationModal('pinyin');
+    if (onFoundationsPinyinPress) onFoundationsPinyinPress();
   };
 
   const handleCharactersSection = () => {

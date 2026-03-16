@@ -1,0 +1,597 @@
+{
+  "id": 3,
+  "title": "Finals ie üe er · Retroflex Initials",
+  "emoji": "🌀",
+  "subtitle": "ie üe er · zh ch sh r",
+  "description": "Learn the complex finals ie, üe, er and the four retroflex (curled-tongue) initials.",
+  "new_finals": [
+    "ie",
+    "üe",
+    "er"
+  ],
+  "review_finals": [
+    "ai",
+    "ei",
+    "ui",
+    "ao",
+    "ou",
+    "iu",
+    "a",
+    "o",
+    "e",
+    "i",
+    "u",
+    "ü"
+  ],
+  "new_initials": [
+    "zh",
+    "ch",
+    "sh",
+    "r"
+  ],
+  "review_initials": [
+    "b",
+    "p",
+    "m",
+    "f",
+    "d",
+    "t",
+    "n",
+    "l",
+    "g",
+    "k",
+    "h",
+    "j",
+    "q",
+    "x"
+  ],
+  "learn_content": {
+    "rules": [
+      "zh, ch, sh, r are retroflex — curl your tongue back to the roof of your mouth",
+      "er is a special final with no initial — 二(two), 耳(ear)",
+      "üe is used after n and l: nüe, lüe; and after j, q, x as jue, que, xue",
+      "ie sounds like 'yeah', üe sounds like 'yue-eh'"
+    ],
+    "spelling_rules": [
+      {
+        "title": "er — standalone final",
+        "rule": "'er' stands alone — no initial combines with 'er'",
+        "examples": [
+          {
+            "pinyin": "ér",
+            "note": "ear / child",
+            "audio_key": "er2"
+          },
+          {
+            "pinyin": "èr",
+            "note": "two",
+            "audio_key": "er4"
+          }
+        ]
+      }
+    ]
+  },
+  "stage1_pool": [
+    {
+      "type": "listen_initial",
+      "syllable": "zhī",
+      "audio_key": "init_zh",
+      "correct": "zh",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "chī",
+      "audio_key": "init_ch",
+      "correct": "ch",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "shī",
+      "audio_key": "init_sh",
+      "correct": "sh",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "rì",
+      "audio_key": "init_r",
+      "correct": "r",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "jiě",
+      "audio_key": "fin_ie",
+      "correct": "ie",
+      "choices": [
+        "ie",
+        "üe",
+        "er",
+        "ei"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "yuè",
+      "audio_key": "fin_ve",
+      "correct": "üe",
+      "choices": [
+        "ie",
+        "üe",
+        "er",
+        "ei"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "ér",
+      "audio_key": "fin_er",
+      "correct": "er",
+      "choices": [
+        "ie",
+        "üe",
+        "er",
+        "ei"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "zhè",
+      "audio_key": "zhe4",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "chī",
+      "audio_key": "chi1",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "shū",
+      "audio_key": "shu1",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "rè",
+      "audio_key": "re4",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "jiě",
+      "audio_key": "init_j",
+      "correct": "j",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "zh"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "xié",
+      "audio_key": "init_x",
+      "correct": "x",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "zh"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "jiě",
+      "audio_key": "jie3",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yuè",
+      "audio_key": "yue4",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ],
+  "stage2_pool": [
+    {
+      "syllable": "zhè",
+      "audio_key": "zhe4",
+      "meaning": "this",
+      "chinese": "这"
+    },
+    {
+      "syllable": "chī",
+      "audio_key": "chi1",
+      "meaning": "eat",
+      "chinese": "吃"
+    },
+    {
+      "syllable": "shū",
+      "audio_key": "shu1",
+      "meaning": "book",
+      "chinese": "书"
+    },
+    {
+      "syllable": "rè",
+      "audio_key": "re4",
+      "meaning": "hot",
+      "chinese": "热"
+    },
+    {
+      "syllable": "jiě",
+      "audio_key": "jie3",
+      "meaning": "older sister",
+      "chinese": "姐"
+    },
+    {
+      "syllable": "yuè",
+      "audio_key": "yue4",
+      "meaning": "moon/month",
+      "chinese": "月"
+    },
+    {
+      "syllable": "ér",
+      "audio_key": "er4",
+      "meaning": "son/child",
+      "chinese": "儿"
+    },
+    {
+      "syllable": "xiě",
+      "audio_key": "xie3",
+      "meaning": "write",
+      "chinese": "写"
+    },
+    {
+      "syllable": "zhōng",
+      "audio_key": "zhong1",
+      "meaning": "middle/China",
+      "chinese": "中"
+    },
+    {
+      "syllable": "chūzūchē",
+      "audio_key": "chuzuche1",
+      "meaning": "taxi",
+      "chinese": "出租车"
+    }
+  ],
+  "stage3_pool": [
+    {
+      "type": "visual_initial",
+      "syllable": "zhī",
+      "correct": "zh",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "chī",
+      "correct": "ch",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "shī",
+      "correct": "sh",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "rì",
+      "correct": "r",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "jiě",
+      "correct": "ie",
+      "choices": [
+        "ie",
+        "üe",
+        "er",
+        "ei"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "xuě",
+      "correct": "üe",
+      "choices": [
+        "ie",
+        "üe",
+        "er",
+        "iu"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "ér",
+      "correct": "er",
+      "choices": [
+        "ie",
+        "üe",
+        "er",
+        "ei"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "zhè",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "chī",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "rè",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "jiě",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "yuè",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "zhōng",
+      "correct": "zh",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "z"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "chūn",
+      "correct": "ch",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "shān",
+      "correct": "sh",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    }
+  ],
+  "quiz_pool": [
+    {
+      "type": "visual_initial",
+      "syllable": "zhī",
+      "correct": "zh",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "chī",
+      "correct": "ch",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "shī",
+      "correct": "sh",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "rì",
+      "correct": "r",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "jiě",
+      "correct": "ie",
+      "choices": [
+        "ie",
+        "üe",
+        "er",
+        "ei"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "xuě",
+      "correct": "üe",
+      "choices": [
+        "ie",
+        "üe",
+        "er",
+        "iu"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "ér",
+      "correct": "er",
+      "choices": [
+        "ie",
+        "üe",
+        "er",
+        "ei"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "zhè",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "chī",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "rè",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ]
+}

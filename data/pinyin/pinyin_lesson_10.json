@@ -1,0 +1,749 @@
+{
+  "id": 10,
+  "title": "Comprehensive Review",
+  "emoji": "🏆",
+  "subtitle": "All finals · All initials · All rules",
+  "description": "Test your mastery of the complete pinyin system — tones, initials, finals, and special rules.",
+  "new_finals": [],
+  "review_finals": [
+    "a",
+    "o",
+    "e",
+    "i",
+    "u",
+    "ü",
+    "ai",
+    "ei",
+    "ui",
+    "ao",
+    "ou",
+    "iu",
+    "ie",
+    "üe",
+    "er",
+    "an",
+    "en",
+    "in",
+    "un",
+    "ün",
+    "ang",
+    "eng",
+    "ing",
+    "ong",
+    "ia",
+    "iao",
+    "ian",
+    "iang",
+    "ua",
+    "uai",
+    "uo",
+    "uan",
+    "uang",
+    "üan"
+  ],
+  "new_initials": [],
+  "review_initials": [
+    "b",
+    "p",
+    "m",
+    "f",
+    "d",
+    "t",
+    "n",
+    "l",
+    "g",
+    "k",
+    "h",
+    "j",
+    "q",
+    "x",
+    "zh",
+    "ch",
+    "sh",
+    "r",
+    "z",
+    "c",
+    "s",
+    "y",
+    "w"
+  ],
+  "learn_content": {
+    "rules": [
+      "FULL INITIALS: b p m f | d t n l | g k h | j q x | zh ch sh r | z c s | y w",
+      "SIMPLE FINALS: a o e i u ü",
+      "COMPOUND FINALS: ai ei ui ao ou iu ie üe er",
+      "NASAL FINALS: an en in un ün | ang eng ing ong",
+      "MEDIAL FINALS: ia iao ian iang | ua uai uo uan uang | üan",
+      "WHOLE SYLLABLES: zhi chi shi ri | zi ci si | yi wu yu | ye yue yuan yin yun ying"
+    ],
+    "spelling_rules": [
+      {
+        "title": "Simple finals — all 6",
+        "rule": "The 6 basic vowels: a o e i u ü",
+        "examples": [
+          {
+            "pinyin": "bā",
+            "note": "a — (eight)",
+            "audio_key": "ba1"
+          },
+          {
+            "pinyin": "nǚ",
+            "note": "ü — (female)",
+            "audio_key": "nv3"
+          }
+        ]
+      },
+      {
+        "title": "Compound finals — ai ei ui ao ou iu ie üe er",
+        "rule": "Compound finals made of two or more vowels",
+        "examples": [
+          {
+            "pinyin": "gǒu",
+            "note": "ou — (dog)",
+            "audio_key": "gou3"
+          },
+          {
+            "pinyin": "ér",
+            "note": "er — (child)",
+            "audio_key": "er2"
+          }
+        ]
+      },
+      {
+        "title": "Nasal finals — an en in un ün / ang eng ing ong",
+        "rule": "Finals ending in n or ng",
+        "examples": [
+          {
+            "pinyin": "mén",
+            "note": "en — (door)",
+            "audio_key": "men2"
+          },
+          {
+            "pinyin": "xīn",
+            "note": "in — (heart)",
+            "audio_key": "xin1"
+          },
+          {
+            "pinyin": "jūn",
+            "note": "ün — (army)",
+            "audio_key": "jun1"
+          },
+          {
+            "pinyin": "néng",
+            "note": "eng — (can)",
+            "audio_key": "neng2"
+          },
+          {
+            "pinyin": "míng",
+            "note": "ing — (name)",
+            "audio_key": "ming2"
+          },
+          {
+            "pinyin": "dōng",
+            "note": "ong — (east)",
+            "audio_key": "dong1"
+          }
+        ]
+      },
+      {
+        "title": "Medial finals — ia iao ian iang / ua uai uo uan uang / üan",
+        "rule": "Finals with a medial vowel i, u, or ü before the main vowel",
+        "examples": [
+          {
+            "pinyin": "jiā",
+            "note": "ia — (home)",
+            "audio_key": "jia1"
+          },
+          {
+            "pinyin": "shuō",
+            "note": "uo — (speak)",
+            "audio_key": "shuo1"
+          },
+          {
+            "pinyin": "guān",
+            "note": "uan — (close)",
+            "audio_key": "guan1"
+          }
+        ]
+      },
+      {
+        "title": "Whole syllables — zhi chi shi ri / zi ci si / yi wu yu",
+        "rule": "These syllables stand alone — no separate final can be added",
+        "examples": [
+          {
+            "pinyin": "zhī",
+            "note": "zhi — (know)",
+            "audio_key": "zhi1"
+          },
+          {
+            "pinyin": "chī",
+            "note": "chi — (eat)",
+            "audio_key": "chi1"
+          },
+          {
+            "pinyin": "shī",
+            "note": "shi — (teacher)",
+            "audio_key": "shi1"
+          },
+          {
+            "pinyin": "rì",
+            "note": "ri — (sun/day)",
+            "audio_key": "ri4"
+          },
+          {
+            "pinyin": "zì",
+            "note": "zi — (character)",
+            "audio_key": "zi4"
+          },
+          {
+            "pinyin": "sī",
+            "note": "si — (think)",
+            "audio_key": "si1"
+          },
+          {
+            "pinyin": "yī",
+            "note": "yi — (one)",
+            "audio_key": "yi1"
+          },
+          {
+            "pinyin": "wǔ",
+            "note": "wu — (five)",
+            "audio_key": "wu3"
+          },
+          {
+            "pinyin": "yú",
+            "note": "yu — (fish)",
+            "audio_key": "yu2"
+          }
+        ]
+      }
+    ]
+  },
+  "stage1_pool": [
+    {
+      "type": "listen_initial",
+      "syllable": "zhī",
+      "audio_key": "init_zh",
+      "correct": "zh",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "z"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "chī",
+      "audio_key": "init_ch",
+      "correct": "ch",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "jī",
+      "audio_key": "init_j",
+      "correct": "j",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "zh"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "qī",
+      "audio_key": "init_q",
+      "correct": "q",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "g"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "yīng",
+      "audio_key": "fin_ing",
+      "correct": "ing",
+      "choices": [
+        "in",
+        "ang",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "zhōng",
+      "audio_key": "fin_ong",
+      "correct": "ong",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "guān",
+      "audio_key": "fin_an",
+      "correct": "uan",
+      "choices": [
+        "uan",
+        "ian",
+        "an",
+        "un"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "liáng",
+      "audio_key": "fin_ang",
+      "correct": "iang",
+      "choices": [
+        "iang",
+        "uang",
+        "ang",
+        "ing"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mā",
+      "audio_key": "ma1",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "má",
+      "audio_key": "ma2",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mǎ",
+      "audio_key": "ma3",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mà",
+      "audio_key": "ma4",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "sī",
+      "audio_key": "init_s",
+      "correct": "s",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "sh"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "gē",
+      "audio_key": "init_g",
+      "correct": "g",
+      "choices": [
+        "g",
+        "k",
+        "h",
+        "j"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "jiě",
+      "audio_key": "fin_ie",
+      "correct": "ie",
+      "choices": [
+        "ie",
+        "üe",
+        "er",
+        "ei"
+      ]
+    }
+  ],
+  "stage2_pool": [
+    {
+      "syllable": "nǐhǎo",
+      "audio_key": "ni3_hao3",
+      "meaning": "hello",
+      "chinese": "你好"
+    },
+    {
+      "syllable": "xièxiè",
+      "audio_key": "xie3",
+      "meaning": "thank you",
+      "chinese": "谢谢"
+    },
+    {
+      "syllable": "zàijiàn",
+      "audio_key": "zai4",
+      "meaning": "goodbye",
+      "chinese": "再见"
+    },
+    {
+      "syllable": "duìbuqǐ",
+      "audio_key": "dui4_bu4_qi3",
+      "meaning": "sorry",
+      "chinese": "对不起"
+    },
+    {
+      "syllable": "méiguānxi",
+      "audio_key": "mei2_guan1_xi0",
+      "meaning": "no problem",
+      "chinese": "没关系"
+    },
+    {
+      "syllable": "zhōngguó",
+      "audio_key": "zhong1_guo2",
+      "meaning": "China",
+      "chinese": "中国"
+    },
+    {
+      "syllable": "xuéxí",
+      "audio_key": "xuexi2",
+      "meaning": "study",
+      "chinese": "学习"
+    },
+    {
+      "syllable": "péngyou",
+      "audio_key": "pengyou2",
+      "meaning": "friend",
+      "chinese": "朋友"
+    },
+    {
+      "syllable": "māma",
+      "audio_key": "ma1_ma0",
+      "meaning": "mom",
+      "chinese": "妈妈"
+    },
+    {
+      "syllable": "bàba",
+      "audio_key": "ba4_ba0",
+      "meaning": "dad",
+      "chinese": "爸爸"
+    }
+  ],
+  "stage3_pool": [
+    {
+      "type": "visual_initial",
+      "syllable": "zhī",
+      "correct": "zh",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "z"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "chī",
+      "correct": "ch",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "r"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "jī",
+      "correct": "j",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "zh"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "sī",
+      "correct": "s",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "sh"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "yīng",
+      "correct": "ing",
+      "choices": [
+        "in",
+        "ang",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "zhōng",
+      "correct": "ong",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "liáng",
+      "correct": "iang",
+      "choices": [
+        "iang",
+        "uang",
+        "ang",
+        "ing"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "guān",
+      "correct": "uan",
+      "choices": [
+        "uan",
+        "ian",
+        "an",
+        "un"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "mā",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "má",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "mǎ",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "mà",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "一 + 个 (T4) → 一 becomes tone...",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T4, 一 rises"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "不 + 对 (T4) → 不 becomes tone...",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T4, 不 rises"
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "妈妈 māma — 2nd syllable is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "1st tone",
+        "2nd tone",
+        "4th tone"
+      ]
+    }
+  ],
+  "quiz_pool": [
+    {
+      "type": "visual_tone",
+      "syllable": "mā",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "mǎ",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "zhī",
+      "correct": "zh",
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "z"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "jī",
+      "correct": "j",
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "zh"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "yīng",
+      "correct": "ing",
+      "choices": [
+        "in",
+        "ang",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "liáng",
+      "correct": "iang",
+      "choices": [
+        "iang",
+        "uang",
+        "ang",
+        "ing"
+      ]
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "一 + 个 (T4) → 一 becomes tone...",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T4, 一 rises"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "不 + 对 (T4) → 不 becomes tone...",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T4, 不 rises"
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "妈妈 māma — 2nd syllable is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "1st tone",
+        "2nd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "sī",
+      "correct": "s",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "sh"
+      ]
+    }
+  ]
+}

@@ -87,6 +87,8 @@ const FINAL_CANONICAL_PY = {
 // Returns e.g. 'init_b', 'fin_ao', 'fin_v' (for ü), or 'ma1' for tone practice.
 function getPinyinAudioKey(syllable) {
   const lower = syllable.toLowerCase().trim();
+  // If the input is already a key in the map (e.g. 'nv1', 'ba1'), use it directly.
+  if (PINYIN_AUDIO[lower]) return lower;
   // Normalize ü → v and remove apostrophes for filename safety
   const normalized = lower.replace(/ü/g, 'v').replace(/'/g, '');
   if (INITIAL_CANONICAL_PY[normalized] || INITIAL_CANONICAL_PY[lower]) return `init_${normalized}`;

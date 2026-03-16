@@ -1,0 +1,696 @@
+{
+  "id": 9,
+  "title": "Neutral Tone & Erhua",
+  "emoji": "💨",
+  "subtitle": "轻声 neutral tone · 儿化 er suffix",
+  "description": "Learn how certain syllables lose their tone and become light, and how 儿 adds an 'r' color to words.",
+  "new_finals": [],
+  "review_finals": [],
+  "new_initials": [],
+  "review_initials": [],
+  "neutral_tone_words": [
+    {
+      "word": "妈妈",
+      "pinyin": "māma",
+      "meaning": "mom (2nd ma is neutral)"
+    },
+    {
+      "word": "爸爸",
+      "pinyin": "bàba",
+      "meaning": "dad (2nd ba is neutral)"
+    },
+    {
+      "word": "哥哥",
+      "pinyin": "gēge",
+      "meaning": "older brother"
+    },
+    {
+      "word": "姐姐",
+      "pinyin": "jiějie",
+      "meaning": "older sister"
+    },
+    {
+      "word": "弟弟",
+      "pinyin": "dìdi",
+      "meaning": "younger brother"
+    },
+    {
+      "word": "妹妹",
+      "pinyin": "mèimei",
+      "meaning": "younger sister"
+    },
+    {
+      "word": "奶奶",
+      "pinyin": "nǎinai",
+      "meaning": "grandma (paternal)"
+    },
+    {
+      "word": "爷爷",
+      "pinyin": "yéye",
+      "meaning": "grandpa (paternal)"
+    },
+    {
+      "word": "朋友",
+      "pinyin": "péngyou",
+      "meaning": "friend"
+    },
+    {
+      "word": "的",
+      "pinyin": "de",
+      "meaning": "possessive particle"
+    },
+    {
+      "word": "了",
+      "pinyin": "le",
+      "meaning": "completed action particle"
+    },
+    {
+      "word": "吗",
+      "pinyin": "ma",
+      "meaning": "question particle"
+    }
+  ],
+  "erhua_words": [
+    {
+      "word": "哪儿",
+      "pinyin": "nǎr",
+      "meaning": "where"
+    },
+    {
+      "word": "这儿",
+      "pinyin": "zhèr",
+      "meaning": "here"
+    },
+    {
+      "word": "那儿",
+      "pinyin": "nàr",
+      "meaning": "there"
+    },
+    {
+      "word": "一点儿",
+      "pinyin": "yīdiǎnr",
+      "meaning": "a little"
+    },
+    {
+      "word": "好玩儿",
+      "pinyin": "hǎowánr",
+      "meaning": "fun"
+    },
+    {
+      "word": "花儿",
+      "pinyin": "huār",
+      "meaning": "flower"
+    }
+  ],
+  "learn_content": {
+    "rules": [
+      "Neutral tone (轻声): no tone mark, very short and light — never stressed",
+      "Common in: kinship terms (māma), particles (de, le, ma), complement words",
+      "Erhua (儿化): add 儿 after a syllable, the final merges with 'r' sound",
+      "哪 + 儿 → 哪儿 (nǎr) — the final disappears, 'r' colors the vowel",
+      "Erhua is common in Beijing dialect and casual speech"
+    ],
+    "spelling_rules": [
+      {
+        "title": "Neutral tone syllables (轻声)",
+        "rule": "Neutral tone has no mark — written without a tone number. It is short and unstressed.",
+        "examples": [
+          {
+            "pinyin": "māma",
+            "note": "妈妈 — the 2nd ma is neutral (mom)",
+            "audio_key": "ma1_ma0"
+          },
+          {
+            "pinyin": "bàba",
+            "note": "爸爸 — the 2nd ba is neutral (dad)",
+            "audio_key": "ba4_ba0"
+          },
+          {
+            "pinyin": "gēge",
+            "note": "哥哥 — the 2nd ge is neutral (older brother)",
+            "audio_key": "ge1_ge0"
+          },
+          {
+            "pinyin": "mèimei",
+            "note": "妹妹 — the 2nd mei is neutral (younger sister)",
+            "audio_key": "mei4_mei0"
+          },
+          {
+            "pinyin": "nǐ de",
+            "note": "你的 — de is always neutral (your)",
+            "audio_key": "de0"
+          },
+          {
+            "pinyin": "lái le",
+            "note": "来了 — le is always neutral (came)",
+            "audio_key": "le0"
+          }
+        ]
+      },
+      {
+        "title": "Erhua (儿化) spelling",
+        "rule": "Add 儿 (r) after a syllable — the final merges with 'r'. Written with 'r' suffix.",
+        "examples": [
+          {
+            "pinyin": "nǎr",
+            "note": "哪儿 — nǎ + r → nǎr (where)",
+            "audio_key": "nar3"
+          },
+          {
+            "pinyin": "zhèr",
+            "note": "这儿 — zhè + r → zhèr (here)",
+            "audio_key": "zher4"
+          },
+          {
+            "pinyin": "nàr",
+            "note": "那儿 — nà + r → nàr (there)",
+            "audio_key": "nar4"
+          }
+        ]
+      }
+    ]
+  },
+  "stage1_pool": [
+    {
+      "type": "listen_tone",
+      "syllable": "māma",
+      "audio_key": "ma1_ma0",
+      "correct": "0",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "bàba",
+      "audio_key": "ba4_ba0",
+      "correct": "0",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "gēge",
+      "audio_key": "ge1_ge0",
+      "correct": "0",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "péngyou",
+      "audio_key": "pengyou2",
+      "correct": "0",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "de",
+      "audio_key": "de0",
+      "correct": "0",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "le",
+      "audio_key": "le0",
+      "correct": "0",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "nǎr",
+      "audio_key": "nar3",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "zhèr",
+      "audio_key": "zher4",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "nàr",
+      "audio_key": "nar4",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "jiějie",
+      "audio_key": "jie3_jie0",
+      "correct": "0",
+      "choices": [
+        "0",
+        "1",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "dìdi",
+      "audio_key": "di4_di0",
+      "correct": "0",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mèimei",
+      "audio_key": "mei4_mei0",
+      "correct": "0",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "nǎr",
+      "audio_key": "nar3",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "nàr",
+      "audio_key": "nar4",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "māma 2nd syllable",
+      "audio_key": "ma1_ma0",
+      "correct": "0",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "stage2_pool": [
+    {
+      "syllable": "māma",
+      "audio_key": "ma1_ma0",
+      "meaning": "mom",
+      "chinese": "妈妈"
+    },
+    {
+      "syllable": "bàba",
+      "audio_key": "ba4_ba0",
+      "meaning": "dad",
+      "chinese": "爸爸"
+    },
+    {
+      "syllable": "gēge",
+      "audio_key": "ge1_ge0",
+      "meaning": "older brother",
+      "chinese": "哥哥"
+    },
+    {
+      "syllable": "jiějie",
+      "audio_key": "jie3_jie0",
+      "meaning": "older sister",
+      "chinese": "姐姐"
+    },
+    {
+      "syllable": "dìdi",
+      "audio_key": "di4_di0",
+      "meaning": "younger brother",
+      "chinese": "弟弟"
+    },
+    {
+      "syllable": "mèimei",
+      "audio_key": "mei4_mei0",
+      "meaning": "younger sister",
+      "chinese": "妹妹"
+    },
+    {
+      "syllable": "péngyou",
+      "audio_key": "pengyou2",
+      "meaning": "friend",
+      "chinese": "朋友"
+    },
+    {
+      "syllable": "nǎr",
+      "audio_key": "nar3",
+      "meaning": "where",
+      "chinese": "哪儿"
+    },
+    {
+      "syllable": "zhèr",
+      "audio_key": "zher4",
+      "meaning": "here",
+      "chinese": "这儿"
+    },
+    {
+      "syllable": "nàr",
+      "audio_key": "nar4",
+      "meaning": "there",
+      "chinese": "那儿"
+    }
+  ],
+  "stage3_pool": [
+    {
+      "type": "neutral_choice",
+      "prompt": "妈妈 māma — the 2nd syllable is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "1st tone",
+        "2nd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "爸爸 bàba — the 2nd syllable is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "1st tone",
+        "3rd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "哥哥 gēge — the 2nd syllable is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "1st tone",
+        "2nd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "朋友 péngyou — 'you' is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "1st tone",
+        "2nd tone",
+        "3rd tone"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "的 (possessive particle) is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "2nd tone",
+        "3rd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "nǎr",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "zhèr",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "nàr",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "姐姐 jiějie — 2nd syllable is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "2nd tone",
+        "3rd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "弟弟 dìdi — 2nd syllable is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "1st tone",
+        "2nd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "了 (aspect particle) is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "2nd tone",
+        "3rd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "吗 (question particle) is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "1st tone",
+        "2nd tone",
+        "3rd tone"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "māma 1st syllable: mā",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "bàba 1st syllable: bà",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "gēge 1st syllable: gē",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ],
+  "quiz_pool": [
+    {
+      "type": "neutral_choice",
+      "prompt": "妈妈 māma — the 2nd syllable is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "1st tone",
+        "2nd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "爸爸 bàba — the 2nd syllable is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "1st tone",
+        "3rd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "朋友 péngyou — 'you' is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "1st tone",
+        "2nd tone",
+        "3rd tone"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "的 (possessive particle) is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "2nd tone",
+        "3rd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "nǎr",
+      "correct": "3",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "zhèr",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "nàr",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "姐姐 jiějie — 2nd syllable is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "2nd tone",
+        "3rd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "neutral_choice",
+      "prompt": "了 (aspect particle) is...",
+      "correct": "neutral tone",
+      "choices": [
+        "neutral tone",
+        "2nd tone",
+        "3rd tone",
+        "4th tone"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "māma 1st syllable: mā",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ]
+}

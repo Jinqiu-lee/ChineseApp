@@ -397,136 +397,136 @@ export const PINYIN_AUDIO = {
   // See RECORD_SPELLING_LESSON_1.txt through RECORD_SPELLING_LESSON_10.txt
 
   // Lesson 1 — Initial + a/o/e/i/u/ü
-  // 'pa2':  require('../assets/audio/pinyin/tones/pa2.mp3'),   // pá
-  // 'fa4':  require('../assets/audio/pinyin/tones/fa4.mp3'),   // fà
-  // 'ta1':  require('../assets/audio/pinyin/tones/ta1.mp3'),   // tā
-  // 'na3':  require('../assets/audio/pinyin/tones/na3.mp3'),   // nǎ
-  // 'la1':  require('../assets/audio/pinyin/tones/la1.mp3'),   // lā
-  // 'bo1':  require('../assets/audio/pinyin/tones/bo1.mp3'),   // bō
-  // 'po2':  require('../assets/audio/pinyin/tones/po2.mp3'),   // pó
-  // 'mo2':  require('../assets/audio/pinyin/tones/mo2.mp3'),   // mó
-  // 'fo2':  require('../assets/audio/pinyin/tones/fo2.mp3'),   // fó
-  // 'me1':  require('../assets/audio/pinyin/tones/me1.mp3'),   // mē
-  // 'de2':  require('../assets/audio/pinyin/tones/de2.mp3'),   // dé
-  // 'te4':  require('../assets/audio/pinyin/tones/te4.mp3'),   // tè
-  // 'ne4':  require('../assets/audio/pinyin/tones/ne4.mp3'),   // nè
-  // 'le4':  require('../assets/audio/pinyin/tones/le4.mp3'),   // lè
-  // 'pi2':  require('../assets/audio/pinyin/tones/pi2.mp3'),   // pí
-  // 'mi3':  require('../assets/audio/pinyin/tones/mi3.mp3'),   // mǐ
-  // 'di4':  require('../assets/audio/pinyin/tones/di4.mp3'),   // dì
-  // 'ti2':  require('../assets/audio/pinyin/tones/ti2.mp3'),   // tí
-  // 'ni3':  require('../assets/audio/pinyin/tones/ni3.mp3'),   // nǐ  you
-  // 'li4':  require('../assets/audio/pinyin/tones/li4.mp3'),   // lì
-  // 'bu4':  require('../assets/audio/pinyin/tones/bu4.mp3'),   // bù
-  // 'pu4':  require('../assets/audio/pinyin/tones/pu4.mp3'),   // pù
-  // 'mu4':  require('../assets/audio/pinyin/tones/mu4.mp3'),   // mù  wood
-  // 'fu2':  require('../assets/audio/pinyin/tones/fu2.mp3'),   // fú  luck
-  // 'du4':  require('../assets/audio/pinyin/tones/du4.mp3'),   // dù  belly
-  // 'tu4':  require('../assets/audio/pinyin/tones/tu4.mp3'),   // tù  rabbit
-  // 'nu3':  require('../assets/audio/pinyin/tones/nu3.mp3'),   // nǔ  effort
-  // 'lu4':  require('../assets/audio/pinyin/tones/lu4.mp3'),   // lù  road
-  // 'lv4':  require('../assets/audio/pinyin/tones/lv4.mp3'),   // lǜ  green
+  'pa2':  require('../assets/audio/pinyin/tones/pa2.mp3'),   // pá
+  'fa4':  require('../assets/audio/pinyin/tones/fa4.mp3'),   // fà
+  'ta1':  require('../assets/audio/pinyin/tones/ta1.mp3'),   // tā
+  'na3':  require('../assets/audio/pinyin/tones/na3.mp3'),   // nǎ
+  'la1':  require('../assets/audio/pinyin/tones/la1.mp3'),   // lā
+  'bo1':  require('../assets/audio/pinyin/tones/bo1.mp3'),   // bō
+  'po2':  require('../assets/audio/pinyin/tones/po2.mp3'),   // pó
+  'mo2':  require('../assets/audio/pinyin/tones/mo2.mp3'),   // mó
+  'fo2':  require('../assets/audio/pinyin/tones/fo2.mp3'),   // fó
+  'me1':  require('../assets/audio/pinyin/tones/me1.mp3'),   // mē
+  'de2':  require('../assets/audio/pinyin/tones/de2.mp3'),   // dé
+  'te4':  require('../assets/audio/pinyin/tones/te4.mp3'),   // tè
+  'ne4':  require('../assets/audio/pinyin/tones/ne4.mp3'),   // nè
+  'le4':  require('../assets/audio/pinyin/tones/le4.mp3'),   // lè
+  'pi2':  require('../assets/audio/pinyin/tones/pi2.mp3'),   // pí
+  'mi3':  require('../assets/audio/pinyin/tones/mi3.mp3'),   // mǐ
+  'di4':  require('../assets/audio/pinyin/tones/di4.mp3'),   // dì
+  'ti2':  require('../assets/audio/pinyin/tones/ti2.mp3'),   // tí
+  'ni3':  require('../assets/audio/pinyin/tones/ni3.mp3'),   // nǐ  you
+  'li4':  require('../assets/audio/pinyin/tones/li4.mp3'),   // lì
+  'bu4':  require('../assets/audio/pinyin/tones/bu4.mp3'),   // bù
+  'pu4':  require('../assets/audio/pinyin/tones/pu4.mp3'),   // pù
+  'mu4':  require('../assets/audio/pinyin/tones/mu4.mp3'),   // mù  wood
+  'fu2':  require('../assets/audio/pinyin/tones/fu2.mp3'),   // fú  luck
+  'du4':  require('../assets/audio/pinyin/tones/du4.mp3'),   // dù  belly
+  'tu4':  require('../assets/audio/pinyin/tones/tu4.mp3'),   // tù  rabbit
+  'nu3':  require('../assets/audio/pinyin/tones/nu3.mp3'),   // nǔ  effort
+  'lu4':  require('../assets/audio/pinyin/tones/lu4.mp3'),   // lù  road
+  'lv4':  require('../assets/audio/pinyin/tones/lv4.mp3'),   // lǜ  green
 
   // Lesson 2 — ai/ei/ui/ao/ou/iu, j/q/x
   // 'bai1': require('../assets/audio/pinyin/tones/bai1.mp3'),  // bāi
-  // 'pai2': require('../assets/audio/pinyin/tones/pai2.mp3'),  // pái
+  'pai2': require('../assets/audio/pinyin/tones/pai2.mp3'),  // pái
   // 'mai1': require('../assets/audio/pinyin/tones/mai1.mp3'),  // māi
-  // 'dai1': require('../assets/audio/pinyin/tones/dai1.mp3'),  // dāi
-  // 'tai2': require('../assets/audio/pinyin/tones/tai2.mp3'),  // tái  platform
+  'dai1': require('../assets/audio/pinyin/tones/dai1.mp3'),  // dāi
+  'tai2': require('../assets/audio/pinyin/tones/tai2.mp3'),  // tái  platform
   // 'nai1': require('../assets/audio/pinyin/tones/nai1.mp3'),  // nāi  grandma
   // 'lai1': require('../assets/audio/pinyin/tones/lai1.mp3'),  // lāi
   // 'gai1': require('../assets/audio/pinyin/tones/gai1.mp3'),  // gāi  should
-  // 'kai1': require('../assets/audio/pinyin/tones/kai1.mp3'),  // kāi  open
+  'kai1': require('../assets/audio/pinyin/tones/kai1.mp3'),  // kāi  open
   // 'hai1': require('../assets/audio/pinyin/tones/hai1.mp3'),  // hāi  alas
   // 'pei1': require('../assets/audio/pinyin/tones/pei1.mp3'),  // pēi
-  // 'mei2': require('../assets/audio/pinyin/tones/mei2.mp3'),  // méi  no/eyebrow
+  'mei2': require('../assets/audio/pinyin/tones/mei2.mp3'),  // méi  no/eyebrow
   'fei1': require('../assets/audio/pinyin/tones/fei1.mp3'),  // fēi  fly
-  // 'lei4': require('../assets/audio/pinyin/tones/lei4.mp3'),  // lèi  tired
-  // 'gei3': require('../assets/audio/pinyin/tones/gei3.mp3'),  // gěi  give
-  // 'dui4': require('../assets/audio/pinyin/tones/dui4.mp3'),  // duì  correct
-  // 'tui1': require('../assets/audio/pinyin/tones/tui1.mp3'),  // tuī  push
-  // 'gui1': require('../assets/audio/pinyin/tones/gui1.mp3'),  // guī  turtle
-  // 'kui1': require('../assets/audio/pinyin/tones/kui1.mp3'),  // kuī  lose
-  // 'hui1': require('../assets/audio/pinyin/tones/hui1.mp3'),  // huī  gray
-  // 'bao1': require('../assets/audio/pinyin/tones/bao1.mp3'),  // bāo  wrap
+  'lei4': require('../assets/audio/pinyin/tones/lei4.mp3'),  // lèi  tired
+  'gei3': require('../assets/audio/pinyin/tones/gei3.mp3'),  // gěi  give
+  'dui4': require('../assets/audio/pinyin/tones/dui4.mp3'),  // duì  correct
+  'tui1': require('../assets/audio/pinyin/tones/tui1.mp3'),  // tuī  push
+  'gui1': require('../assets/audio/pinyin/tones/gui1.mp3'),  // guī  turtle
+  'kui1': require('../assets/audio/pinyin/tones/kui1.mp3'),  // kuī  lose
+  'hui1': require('../assets/audio/pinyin/tones/hui1.mp3'),  // huī  gray
+  'bao1': require('../assets/audio/pinyin/tones/bao1.mp3'),  // bāo  wrap
   // 'pao2': require('../assets/audio/pinyin/tones/pao2.mp3'),  // páo  run
-  // 'mao2': require('../assets/audio/pinyin/tones/mao2.mp3'),  // máo  hair
-  // 'dao1': require('../assets/audio/pinyin/tones/dao1.mp3'),  // dāo  knife
-  // 'tao2': require('../assets/audio/pinyin/tones/tao2.mp3'),  // táo  peach
+  'mao2': require('../assets/audio/pinyin/tones/mao2.mp3'),  // máo  hair
+  'dao1': require('../assets/audio/pinyin/tones/dao1.mp3'),  // dāo  knife
+  'tao2': require('../assets/audio/pinyin/tones/tao2.mp3'),  // táo  peach
   // 'nao2': require('../assets/audio/pinyin/tones/nao2.mp3'),  // náo  noisy
-  // 'lao2': require('../assets/audio/pinyin/tones/lao2.mp3'),  // láo  labor
+  'lao2': require('../assets/audio/pinyin/tones/lao2.mp3'),  // láo  labor
   'gao1': require('../assets/audio/pinyin/tones/gao1.mp3'),  // gāo  tall
   // 'kao1': require('../assets/audio/pinyin/tones/kao1.mp3'),  // kāo  bake
   // 'hao1': require('../assets/audio/pinyin/tones/hao1.mp3'),  // hāo
-  // 'mou2': require('../assets/audio/pinyin/tones/mou2.mp3'),  // móu  scheme
-  // 'tou2': require('../assets/audio/pinyin/tones/tou2.mp3'),  // tóu  head
+  'mou2': require('../assets/audio/pinyin/tones/mou2.mp3'),  // móu  scheme
+  'tou2': require('../assets/audio/pinyin/tones/tou2.mp3'),  // tóu  head
   // 'nou2': require('../assets/audio/pinyin/tones/nou2.mp3'),  // nóu
-  // 'lou2': require('../assets/audio/pinyin/tones/lou2.mp3'),  // lóu  floor
+  'lou2': require('../assets/audio/pinyin/tones/lou2.mp3'),  // lóu  floor
   // 'kou1': require('../assets/audio/pinyin/tones/kou1.mp3'),  // kōu  mouth
-  // 'hou2': require('../assets/audio/pinyin/tones/hou2.mp3'),  // hóu  monkey
-  // 'niu2': require('../assets/audio/pinyin/tones/niu2.mp3'),  // niú  cow
-  // 'liu2': require('../assets/audio/pinyin/tones/liu2.mp3'),  // liú  flow
+  'hou2': require('../assets/audio/pinyin/tones/hou2.mp3'),  // hóu  monkey
+  'niu2': require('../assets/audio/pinyin/tones/niu2.mp3'),  // niú  cow
+  'liu2': require('../assets/audio/pinyin/tones/liu2.mp3'),  // liú  flow
   // 'jiu1': require('../assets/audio/pinyin/tones/jiu1.mp3'),  // jiū  wine/nine
   // 'qiu2': require('../assets/audio/pinyin/tones/qiu2.mp3'),  // qiú  ball
-  // 'xiu1': require('../assets/audio/pinyin/tones/xiu1.mp3'),  // xiū  repair
-  // 'xi1':  require('../assets/audio/pinyin/tones/xi1.mp3'),   // xī   west/hope
+  'xiu1': require('../assets/audio/pinyin/tones/xiu1.mp3'),  // xiū  repair
+  'xi1':  require('../assets/audio/pinyin/tones/xi1.mp3'),   // xī   west/hope
 
   // Lesson 3 — zh/ch/sh/r, ie, üe, er
-  // 'zha1':  require('../assets/audio/pinyin/tones/zha1.mp3'),  // zhā
+  'zha1':  require('../assets/audio/pinyin/tones/zha1.mp3'),  // zhā
   // 'cha1':  require('../assets/audio/pinyin/tones/cha1.mp3'),  // chā  differ
-  // 'sha1':  require('../assets/audio/pinyin/tones/sha1.mp3'),  // shā  sand
+  'sha1':  require('../assets/audio/pinyin/tones/sha1.mp3'),  // shā  sand
   // 'ra2':   require('../assets/audio/pinyin/tones/ra2.mp3'),   // rá
-  // 'zhao1': require('../assets/audio/pinyin/tones/zhao1.mp3'), // zhāo  beckon
-  // 'chao2': require('../assets/audio/pinyin/tones/chao2.mp3'), // cháo  dynasty
-  // 'shao1': require('../assets/audio/pinyin/tones/shao1.mp3'), // shāo  a little
-  // 'rao2':  require('../assets/audio/pinyin/tones/rao2.mp3'),  // ráo  forgive
-  // 'bie1':  require('../assets/audio/pinyin/tones/bie1.mp3'),  // biē
+  'zhao1': require('../assets/audio/pinyin/tones/zhao1.mp3'), // zhāo  beckon
+  'chao2': require('../assets/audio/pinyin/tones/chao2.mp3'), // cháo  dynasty
+  'shao1': require('../assets/audio/pinyin/tones/shao1.mp3'), // shāo  a little
+  'rao2':  require('../assets/audio/pinyin/tones/rao2.mp3'),  // ráo  forgive
+  'bie1':  require('../assets/audio/pinyin/tones/bie1.mp3'),  // biē
   // 'pie2':  require('../assets/audio/pinyin/tones/pie2.mp3'),  // pié
-  // 'die1':  require('../assets/audio/pinyin/tones/die1.mp3'),  // diē  fall
-  // 'tie1':  require('../assets/audio/pinyin/tones/tie1.mp3'),  // tiē  stick
-  // 'nie1':  require('../assets/audio/pinyin/tones/nie1.mp3'),  // niē  pinch
+  'die1':  require('../assets/audio/pinyin/tones/die1.mp3'),  // diē  fall
+  'tie1':  require('../assets/audio/pinyin/tones/tie1.mp3'),  // tiē  stick
+  'nie1':  require('../assets/audio/pinyin/tones/nie1.mp3'),  // niē  pinch
   // 'lie1':  require('../assets/audio/pinyin/tones/lie1.mp3'),  // liē
-  // 'jie1':  require('../assets/audio/pinyin/tones/jie1.mp3'),  // jiē  street
-  // 'qie1':  require('../assets/audio/pinyin/tones/qie1.mp3'),  // qiē  cut
-  // 'xie1':  require('../assets/audio/pinyin/tones/xie1.mp3'),  // xiē  some
+  'jie1':  require('../assets/audio/pinyin/tones/jie1.mp3'),  // jiē  street
+  'qie1':  require('../assets/audio/pinyin/tones/qie1.mp3'),  // qiē  cut
+  'xie1':  require('../assets/audio/pinyin/tones/xie1.mp3'),  // xiē  some
   // 'nve1':  require('../assets/audio/pinyin/tones/nve1.mp3'),  // nüē
-  // 'lve4':  require('../assets/audio/pinyin/tones/lve4.mp3'),  // lüè  abbreviate
-  // 'jue1':  require('../assets/audio/pinyin/tones/jue1.mp3'),  // juē  (written jue)
-  // 'que1':  require('../assets/audio/pinyin/tones/que1.mp3'),  // quē  lack
+  'lve4':  require('../assets/audio/pinyin/tones/lve4.mp3'),  // lüè  abbreviate
+  'jue1':  require('../assets/audio/pinyin/tones/jue1.mp3'),  // juē  (written jue)
+  'que1':  require('../assets/audio/pinyin/tones/que1.mp3'),  // quē  lack
   // 'xue1':  require('../assets/audio/pinyin/tones/xue1.mp3'),  // xuē  snow
 
   // Lesson 4 — z/c/s, -an/-en/-in/-un/-ün
-  // 'za1':   require('../assets/audio/pinyin/tones/za1.mp3'),   // zā
-  // 'ca1':   require('../assets/audio/pinyin/tones/ca1.mp3'),   // cā  wipe
+  'za1':   require('../assets/audio/pinyin/tones/za1.mp3'),   // zā
+  'ca1':   require('../assets/audio/pinyin/tones/ca1.mp3'),   // cā  wipe
   // 'sa1':   require('../assets/audio/pinyin/tones/sa1.mp3'),   // sā  scatter
-  // 'ze2':   require('../assets/audio/pinyin/tones/ze2.mp3'),   // zé  standard
-  // 'ce4':   require('../assets/audio/pinyin/tones/ce4.mp3'),   // cè  survey
-  // 'se4':   require('../assets/audio/pinyin/tones/se4.mp3'),   // sè  color
-  // 'zu2':   require('../assets/audio/pinyin/tones/zu2.mp3'),   // zú  foot
-  // 'cu4':   require('../assets/audio/pinyin/tones/cu4.mp3'),   // cù  vinegar
-  // 'su1':   require('../assets/audio/pinyin/tones/su1.mp3'),   // sū  revive
-  // 'pan2':  require('../assets/audio/pinyin/tones/pan2.mp3'),  // pán  plate
+  'ze2':   require('../assets/audio/pinyin/tones/ze2.mp3'),   // zé  standard
+  'ce4':   require('../assets/audio/pinyin/tones/ce4.mp3'),   // cè  survey
+  'se4':   require('../assets/audio/pinyin/tones/se4.mp3'),   // sè  color
+  'zu2':   require('../assets/audio/pinyin/tones/zu2.mp3'),   // zú  foot
+  'cu4':   require('../assets/audio/pinyin/tones/cu4.mp3'),   // cù  vinegar
+  'su1':   require('../assets/audio/pinyin/tones/su1.mp3'),   // sū  revive
+  'pan2':  require('../assets/audio/pinyin/tones/pan2.mp3'),  // pán  plate
   // 'man1':  require('../assets/audio/pinyin/tones/man1.mp3'),  // mān
-  // 'fan1':  require('../assets/audio/pinyin/tones/fan1.mp3'),  // fān  turn over
-  // 'dan1':  require('../assets/audio/pinyin/tones/dan1.mp3'),  // dān  single
+  'fan1':  require('../assets/audio/pinyin/tones/fan1.mp3'),  // fān  turn over
+  'dan1':  require('../assets/audio/pinyin/tones/dan1.mp3'),  // dān  single
   // 'tan1':  require('../assets/audio/pinyin/tones/tan1.mp3'),  // tān  spread
-  // 'nan2':  require('../assets/audio/pinyin/tones/nan2.mp3'),  // nán  difficult
-  // 'lan2':  require('../assets/audio/pinyin/tones/lan2.mp3'),  // lán  blue
-  // 'gan1':  require('../assets/audio/pinyin/tones/gan1.mp3'),  // gān  dry
+  'nan2':  require('../assets/audio/pinyin/tones/nan2.mp3'),  // nán  difficult
+  'lan2':  require('../assets/audio/pinyin/tones/lan2.mp3'),  // lán  blue
+  'gan1':  require('../assets/audio/pinyin/tones/gan1.mp3'),  // gān  dry
   // 'han2':  require('../assets/audio/pinyin/tones/han2.mp3'),  // hán  cold
-  // 'ben1':  require('../assets/audio/pinyin/tones/ben1.mp3'),  // bēn  run
-  // 'pen2':  require('../assets/audio/pinyin/tones/pen2.mp3'),  // pén  basin
+  'ben1':  require('../assets/audio/pinyin/tones/ben1.mp3'),  // bēn  run
+  'pen2':  require('../assets/audio/pinyin/tones/pen2.mp3'),  // pén  basin
   // 'den4':  require('../assets/audio/pinyin/tones/den4.mp3'),  // dèn
-  // 'nen4':  require('../assets/audio/pinyin/tones/nen4.mp3'),  // nèn  tender
-  // 'gen1':  require('../assets/audio/pinyin/tones/gen1.mp3'),  // gēn  root
+  'nen4':  require('../assets/audio/pinyin/tones/nen4.mp3'),  // nèn  tender
+  'gen1':  require('../assets/audio/pinyin/tones/gen1.mp3'),  // gēn  root
   // 'hen2':  require('../assets/audio/pinyin/tones/hen2.mp3'),  // hén  mark
-  // 'zhen1': require('../assets/audio/pinyin/tones/zhen1.mp3'), // zhēn  needle
-  // 'chen2': require('../assets/audio/pinyin/tones/chen2.mp3'), // chén  morning
-  // 'shen2': require('../assets/audio/pinyin/tones/shen2.mp3'), // shén  spirit
-  // 'bin1':  require('../assets/audio/pinyin/tones/bin1.mp3'),  // bīn  guest
-  // 'pin2':  require('../assets/audio/pinyin/tones/pin2.mp3'),  // pín  poor
-  // 'min3':  require('../assets/audio/pinyin/tones/min3.mp3'),  // mǐn  quick
-  // 'lin2':  require('../assets/audio/pinyin/tones/lin2.mp3'),  // lín  forest
+  'zhen1': require('../assets/audio/pinyin/tones/zhen1.mp3'), // zhēn  needle
+  'chen2': require('../assets/audio/pinyin/tones/chen2.mp3'), // chén  morning
+  'shen2': require('../assets/audio/pinyin/tones/shen2.mp3'), // shén  spirit
+  'bin1':  require('../assets/audio/pinyin/tones/bin1.mp3'),  // bīn  guest
+  'pin2':  require('../assets/audio/pinyin/tones/pin2.mp3'),  // pín  poor
+  'min3':  require('../assets/audio/pinyin/tones/min3.mp3'),  // mǐn  quick
+  'lin2':  require('../assets/audio/pinyin/tones/lin2.mp3'),  // lín  forest
   // 'jin1':  require('../assets/audio/pinyin/tones/jin1.mp3'),  // jīn  gold
   // 'qin2':  require('../assets/audio/pinyin/tones/qin2.mp3'),  // qín  diligent
   // 'dun1':  require('../assets/audio/pinyin/tones/dun1.mp3'),  // dūn  squat
@@ -558,7 +558,7 @@ export const PINYIN_AUDIO = {
   // 'gang1':  require('../assets/audio/pinyin/tones/gang1.mp3'),  // gāng  steel
   // 'kang4':  require('../assets/audio/pinyin/tones/kang4.mp3'),  // kàng  resist
   // 'hang2':  require('../assets/audio/pinyin/tones/hang2.mp3'),  // háng  trade
-  // 'zhang1': require('../assets/audio/pinyin/tones/zhang1.mp3'), // zhāng  chapter
+  'zhang1': require('../assets/audio/pinyin/tones/zhang1.mp3'), // zhāng  chapter
   // 'chang2': require('../assets/audio/pinyin/tones/chang2.mp3'), // cháng  long
   // 'rang2':  require('../assets/audio/pinyin/tones/rang2.mp3'),  // ráng  cede
   // 'zang1':  require('../assets/audio/pinyin/tones/zang1.mp3'),  // zāng  dirty
@@ -596,103 +596,103 @@ export const PINYIN_AUDIO = {
   // 'gong1':  require('../assets/audio/pinyin/tones/gong1.mp3'),  // gōng  work
   // 'kong1':  require('../assets/audio/pinyin/tones/kong1.mp3'),  // kōng  empty
   // 'hong2':  require('../assets/audio/pinyin/tones/hong2.mp3'),  // hóng  red
-  // 'chong2': require('../assets/audio/pinyin/tones/chong2.mp3'), // chóng  insect
+  'chong2': require('../assets/audio/pinyin/tones/chong2.mp3'), // chóng  insect
   // 'song1':  require('../assets/audio/pinyin/tones/song1.mp3'),  // sōng  pine
   // 'zong1':  require('../assets/audio/pinyin/tones/zong1.mp3'),  // zōng  ancestor
 
   // Lesson 6 — ia/iao/ian/iang/ua/uai/uo/uan/uang/üan
-  // 'qia1':    require('../assets/audio/pinyin/tones/qia1.mp3'),    // qiā
-  // 'xia1':    require('../assets/audio/pinyin/tones/xia1.mp3'),    // xiā  shrimp
+  'qia1':    require('../assets/audio/pinyin/tones/qia1.mp3'),    // qiā
+  'xia1':    require('../assets/audio/pinyin/tones/xia1.mp3'),    // xiā  shrimp
   // 'nia3':    require('../assets/audio/pinyin/tones/nia3.mp3'),    // niǎ
-  // 'lia3':    require('../assets/audio/pinyin/tones/lia3.mp3'),    // liǎ  two
-  // 'biao1':   require('../assets/audio/pinyin/tones/biao1.mp3'),   // biāo  mark
+  'lia3':    require('../assets/audio/pinyin/tones/lia3.mp3'),    // liǎ  two
+  'biao1':   require('../assets/audio/pinyin/tones/biao1.mp3'),   // biāo  mark
   // 'piao2':   require('../assets/audio/pinyin/tones/piao2.mp3'),   // piáo  float
   // 'miao1':   require('../assets/audio/pinyin/tones/miao1.mp3'),   // miāo  meow
-  // 'diao4':   require('../assets/audio/pinyin/tones/diao4.mp3'),   // diào  hang
-  // 'tiao2':   require('../assets/audio/pinyin/tones/tiao2.mp3'),   // tiáo  strip
-  // 'niao3':   require('../assets/audio/pinyin/tones/niao3.mp3'),   // niǎo  bird
-  // 'liao3':   require('../assets/audio/pinyin/tones/liao3.mp3'),   // liǎo  understand
-  // 'jiao1':   require('../assets/audio/pinyin/tones/jiao1.mp3'),   // jiāo  teach
-  // 'qiao1':   require('../assets/audio/pinyin/tones/qiao1.mp3'),   // qiāo  knock
+  'diao4':   require('../assets/audio/pinyin/tones/diao4.mp3'),   // diào  hang
+  'tiao2':   require('../assets/audio/pinyin/tones/tiao2.mp3'),   // tiáo  strip
+  'niao3':   require('../assets/audio/pinyin/tones/niao3.mp3'),   // niǎo  bird
+  'liao3':   require('../assets/audio/pinyin/tones/liao3.mp3'),   // liǎo  understand
+  'jiao1':   require('../assets/audio/pinyin/tones/jiao1.mp3'),   // jiāo  teach
+  'qiao1':   require('../assets/audio/pinyin/tones/qiao1.mp3'),   // qiāo  knock
   // 'xiao1':   require('../assets/audio/pinyin/tones/xiao1.mp3'),   // xiāo  small
-  // 'bian1':   require('../assets/audio/pinyin/tones/bian1.mp3'),   // biān  side
-  // 'pian1':   require('../assets/audio/pinyin/tones/pian1.mp3'),   // piān  one-sided
-  // 'mian4':   require('../assets/audio/pinyin/tones/mian4.mp3'),   // miàn  face
-  // 'dian3':   require('../assets/audio/pinyin/tones/dian3.mp3'),   // diǎn  point
-  // 'tian1':   require('../assets/audio/pinyin/tones/tian1.mp3'),   // tiān  sky
-  // 'nian2':   require('../assets/audio/pinyin/tones/nian2.mp3'),   // nián  year
-  // 'lian3':   require('../assets/audio/pinyin/tones/lian3.mp3'),   // liǎn  face
-  // 'jian1':   require('../assets/audio/pinyin/tones/jian1.mp3'),   // jiān  shoulder
-  // 'niang2':  require('../assets/audio/pinyin/tones/niang2.mp3'),  // niáng  mother
-  // 'jiang1':  require('../assets/audio/pinyin/tones/jiang1.mp3'),  // jiāng  river
-  // 'qiang1':  require('../assets/audio/pinyin/tones/qiang1.mp3'),  // qiāng  gun
-  // 'xiang1':  require('../assets/audio/pinyin/tones/xiang1.mp3'),  // xiāng  fragrant
-  // 'kua1':    require('../assets/audio/pinyin/tones/kua1.mp3'),    // kuā  boast
-  // 'hua1':    require('../assets/audio/pinyin/tones/hua1.mp3'),    // huā  flower
-  // 'zhua1':   require('../assets/audio/pinyin/tones/zhua1.mp3'),   // zhuā  grab
-  // 'shua1':   require('../assets/audio/pinyin/tones/shua1.mp3'),   // shuā  brush
-  // 'guai1':   require('../assets/audio/pinyin/tones/guai1.mp3'),   // guāi  well-behaved
+  'bian1':   require('../assets/audio/pinyin/tones/bian1.mp3'),   // biān  side
+  'pian1':   require('../assets/audio/pinyin/tones/pian1.mp3'),   // piān  one-sided
+  'mian4':   require('../assets/audio/pinyin/tones/mian4.mp3'),   // miàn  face
+  'dian3':   require('../assets/audio/pinyin/tones/dian3.mp3'),   // diǎn  point
+  'tian1':   require('../assets/audio/pinyin/tones/tian1.mp3'),   // tiān  sky
+  'nian2':   require('../assets/audio/pinyin/tones/nian2.mp3'),   // nián  year
+  'lian3':   require('../assets/audio/pinyin/tones/lian3.mp3'),   // liǎn  face
+  'jian1':   require('../assets/audio/pinyin/tones/jian1.mp3'),   // jiān  shoulder
+  'niang2':  require('../assets/audio/pinyin/tones/niang2.mp3'),  // niáng  mother
+  'jiang1':  require('../assets/audio/pinyin/tones/jiang1.mp3'),  // jiāng  river
+  'qiang1':  require('../assets/audio/pinyin/tones/qiang1.mp3'),  // qiāng  gun
+  'xiang1':  require('../assets/audio/pinyin/tones/xiang1.mp3'),  // xiāng  fragrant
+  'kua1':    require('../assets/audio/pinyin/tones/kua1.mp3'),    // kuā  boast
+  'hua1':    require('../assets/audio/pinyin/tones/hua1.mp3'),    // huā  flower
+  'zhua1':   require('../assets/audio/pinyin/tones/zhua1.mp3'),   // zhuā  grab
+  'shua1':   require('../assets/audio/pinyin/tones/shua1.mp3'),   // shuā  brush
+  'guai1':   require('../assets/audio/pinyin/tones/guai1.mp3'),   // guāi  well-behaved
   // 'kuai1':   require('../assets/audio/pinyin/tones/kuai1.mp3'),   // kuāi
   // 'huai1':   require('../assets/audio/pinyin/tones/huai1.mp3'),   // huāi
   // 'zhuai1':  require('../assets/audio/pinyin/tones/zhuai1.mp3'),  // zhuāi  drag
-  // 'shuai1':  require('../assets/audio/pinyin/tones/shuai1.mp3'),  // shuāi  handsome
-  // 'duo1':    require('../assets/audio/pinyin/tones/duo1.mp3'),    // duō  many
-  // 'tuo1':    require('../assets/audio/pinyin/tones/tuo1.mp3'),    // tuō  pull
+  'shuai1':  require('../assets/audio/pinyin/tones/shuai1.mp3'),  // shuāi  handsome
+  'duo1':    require('../assets/audio/pinyin/tones/duo1.mp3'),    // duō  many
+  'tuo1':    require('../assets/audio/pinyin/tones/tuo1.mp3'),    // tuō  pull
   // 'nuo4':    require('../assets/audio/pinyin/tones/nuo4.mp3'),    // nuò  promise
   // 'luo1':    require('../assets/audio/pinyin/tones/luo1.mp3'),    // luō  net
-  // 'guo1':    require('../assets/audio/pinyin/tones/guo1.mp3'),    // guō  pot
-  // 'kuo4':    require('../assets/audio/pinyin/tones/kuo4.mp3'),    // kuò  broad
-  // 'huo4':    require('../assets/audio/pinyin/tones/huo4.mp3'),    // huò  goods
-  // 'zhuo1':   require('../assets/audio/pinyin/tones/zhuo1.mp3'),   // zhuō  table
-  // 'chuo1':   require('../assets/audio/pinyin/tones/chuo1.mp3'),   // chuō  poke
-  // 'ruo4':    require('../assets/audio/pinyin/tones/ruo4.mp3'),    // ruò  weak
-  // 'cuo1':    require('../assets/audio/pinyin/tones/cuo1.mp3'),    // cuō  rub
-  // 'suo1':    require('../assets/audio/pinyin/tones/suo1.mp3'),    // suō  shrink
-  // 'duan1':   require('../assets/audio/pinyin/tones/duan1.mp3'),   // duān  proper
-  // 'tuan2':   require('../assets/audio/pinyin/tones/tuan2.mp3'),   // tuán  group
-  // 'nuan3':   require('../assets/audio/pinyin/tones/nuan3.mp3'),   // nuǎn  warm
-  // 'luan4':   require('../assets/audio/pinyin/tones/luan4.mp3'),   // luàn  chaos
-  // 'kuan1':   require('../assets/audio/pinyin/tones/kuan1.mp3'),   // kuān  wide
-  // 'huan2':   require('../assets/audio/pinyin/tones/huan2.mp3'),   // huán  return
-  // 'zhuan1':  require('../assets/audio/pinyin/tones/zhuan1.mp3'),  // zhuān  special
+  'guo1':    require('../assets/audio/pinyin/tones/guo1.mp3'),    // guō  pot
+  'kuo4':    require('../assets/audio/pinyin/tones/kuo4.mp3'),    // kuò  broad
+  'huo4':    require('../assets/audio/pinyin/tones/huo4.mp3'),    // huò  goods
+  'zhuo1':   require('../assets/audio/pinyin/tones/zhuo1.mp3'),   // zhuō  table
+  'chuo1':   require('../assets/audio/pinyin/tones/chuo1.mp3'),   // chuō  poke
+  'ruo4':    require('../assets/audio/pinyin/tones/ruo4.mp3'),    // ruò  weak
+  'cuo1':    require('../assets/audio/pinyin/tones/cuo1.mp3'),    // cuō  rub
+  'suo1':    require('../assets/audio/pinyin/tones/suo1.mp3'),    // suō  shrink
+  'duan1':   require('../assets/audio/pinyin/tones/duan1.mp3'),   // duān  proper
+  'tuan2':   require('../assets/audio/pinyin/tones/tuan2.mp3'),   // tuán  group
+  'nuan3':   require('../assets/audio/pinyin/tones/nuan3.mp3'),   // nuǎn  warm
+  'luan4':   require('../assets/audio/pinyin/tones/luan4.mp3'),   // luàn  chaos
+  'kuan1':   require('../assets/audio/pinyin/tones/kuan1.mp3'),   // kuān  wide
+  'huan2':   require('../assets/audio/pinyin/tones/huan2.mp3'),   // huán  return
+  'zhuan1':  require('../assets/audio/pinyin/tones/zhuan1.mp3'),  // zhuān  special
   // 'chuan2':  require('../assets/audio/pinyin/tones/chuan2.mp3'),  // chuán  boat
-  // 'shuan1':  require('../assets/audio/pinyin/tones/shuan1.mp3'),  // shuān  latch
-  // 'ruan3':   require('../assets/audio/pinyin/tones/ruan3.mp3'),   // ruǎn  soft
-  // 'zuan1':   require('../assets/audio/pinyin/tones/zuan1.mp3'),   // zuān  drill
-  // 'cuan1':   require('../assets/audio/pinyin/tones/cuan1.mp3'),   // cuān  flee
-  // 'suan4':   require('../assets/audio/pinyin/tones/suan4.mp3'),   // suàn  calculate
+  'shuan1':  require('../assets/audio/pinyin/tones/shuan1.mp3'),  // shuān  latch
+  'ruan3':   require('../assets/audio/pinyin/tones/ruan3.mp3'),   // ruǎn  soft
+  'zuan1':   require('../assets/audio/pinyin/tones/zuan1.mp3'),   // zuān  drill
+  'cuan1':   require('../assets/audio/pinyin/tones/cuan1.mp3'),   // cuān  flee
+  'suan4':   require('../assets/audio/pinyin/tones/suan4.mp3'),   // suàn  calculate
   // 'guang1':  require('../assets/audio/pinyin/tones/guang1.mp3'),  // guāng  light
-  // 'kuang1':  require('../assets/audio/pinyin/tones/kuang1.mp3'),  // kuāng  basket
-  // 'huang2':  require('../assets/audio/pinyin/tones/huang2.mp3'),  // huáng  yellow
-  // 'zhuang1': require('../assets/audio/pinyin/tones/zhuang1.mp3'), // zhuāng  dress up
-  // 'chuang1': require('../assets/audio/pinyin/tones/chuang1.mp3'), // chuāng  window
-  // 'shuang1': require('../assets/audio/pinyin/tones/shuang1.mp3'), // shuāng  pair
-  // 'juan1':   require('../assets/audio/pinyin/tones/juan1.mp3'),   // juān  donate
-  // 'quan1':   require('../assets/audio/pinyin/tones/quan1.mp3'),   // quān  circle
-  // 'xuan1':   require('../assets/audio/pinyin/tones/xuan1.mp3'),   // xuān  announce
+  'kuang1':  require('../assets/audio/pinyin/tones/kuang1.mp3'),  // kuāng  basket
+  'huang2':  require('../assets/audio/pinyin/tones/huang2.mp3'),  // huáng  yellow
+  'zhuang1': require('../assets/audio/pinyin/tones/zhuang1.mp3'), // zhuāng  dress up
+  'chuang1': require('../assets/audio/pinyin/tones/chuang1.mp3'), // chuāng  window
+  'shuang1': require('../assets/audio/pinyin/tones/shuang1.mp3'), // shuāng  pair
+  'juan1':   require('../assets/audio/pinyin/tones/juan1.mp3'),   // juān  donate
+  'quan1':   require('../assets/audio/pinyin/tones/quan1.mp3'),   // quān  circle
+  'xuan1':   require('../assets/audio/pinyin/tones/xuan1.mp3'),   // xuān  announce
 
   // Lesson 7 — whole-syllable compound finals
   // 'ri2':   require('../assets/audio/pinyin/tones/ri2.mp3'),   // rí  (tone 2)
   // 'zi1':   require('../assets/audio/pinyin/tones/zi1.mp3'),   // zī  character
-  // 'ci2':   require('../assets/audio/pinyin/tones/ci2.mp3'),   // cí  word
-  // 'zhan1': require('../assets/audio/pinyin/tones/zhan1.mp3'), // zhān
+  'ci2':   require('../assets/audio/pinyin/tones/ci2.mp3'),   // cí  word
+  'zhan1': require('../assets/audio/pinyin/tones/zhan1.mp3'), // zhān
   // 'zhang1':require('../assets/audio/pinyin/tones/zhang1.mp3'),// zhāng  chapter
   // 'chong2':require('../assets/audio/pinyin/tones/chong2.mp3'),// chóng  insect
-  // 'chan2': require('../assets/audio/pinyin/tones/chan2.mp3'),  // chán  meditation
-  // 'shan1': require('../assets/audio/pinyin/tones/shan1.mp3'),  // shān  mountain
-  // 'ran2':  require('../assets/audio/pinyin/tones/ran2.mp3'),  // rán  burn
-  // 'zao1':  require('../assets/audio/pinyin/tones/zao1.mp3'),  // zāo  messy
+  'chan2': require('../assets/audio/pinyin/tones/chan2.mp3'),  // chán  meditation
+  'shan1': require('../assets/audio/pinyin/tones/shan1.mp3'),  // shān  mountain
+  'ran2':  require('../assets/audio/pinyin/tones/ran2.mp3'),  // rán  burn
+  'zao1':  require('../assets/audio/pinyin/tones/zao1.mp3'),  // zāo  messy
   // 'zan1':  require('../assets/audio/pinyin/tones/zan1.mp3'),  // zān
-  // 'cao1':  require('../assets/audio/pinyin/tones/cao1.mp3'),  // cāo  operate
-  // 'can1':  require('../assets/audio/pinyin/tones/can1.mp3'),  // cān  meal
+  'cao1':  require('../assets/audio/pinyin/tones/cao1.mp3'),  // cāo  operate
+  'can1':  require('../assets/audio/pinyin/tones/can1.mp3'),  // cān  meal
   // 'sao1':  require('../assets/audio/pinyin/tones/sao1.mp3'),  // sāo  sweep
 
   // Lesson 8 — 不 sandhi
-  // 'bu4_lai2': require('../assets/audio/pinyin/tones/bu4_lai2.mp3'), // bù lái  not coming
+  'bu4_lai2': require('../assets/audio/pinyin/tones/bu4_lai2.mp3'), // bù lái  not coming
 
   // Lesson 9 — neutral tone & erhua
-  // 'ma0':     require('../assets/audio/pinyin/tones/ma0.mp3'),     // ma  吗 question particle
-  // 'wanr2':   require('../assets/audio/pinyin/tones/wanr2.mp3'),   // wánr  玩儿 play
-  // 'dianr3':  require('../assets/audio/pinyin/tones/dianr3.mp3'),  // diǎnr 点儿 a little
-  // 'yihuir0': require('../assets/audio/pinyin/tones/yihuir0.mp3'), // yīhuìr 一会儿 a moment
+  'ma0':     require('../assets/audio/pinyin/tones/ma0.mp3'),     // ma  吗 question particle
+  'wanr2':   require('../assets/audio/pinyin/tones/wanr2.mp3'),   // wánr  玩儿 play
+  'dianr3':  require('../assets/audio/pinyin/tones/dianr3.mp3'),  // diǎnr 点儿 a little
+  'yihuir4': require('../assets/audio/pinyin/tones/yihuir4.mp3'), // yīhuìr 一会儿 a moment
 };

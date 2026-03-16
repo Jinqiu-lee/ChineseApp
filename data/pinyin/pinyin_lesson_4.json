@@ -1,0 +1,653 @@
+{
+  "id": 4,
+  "title": "Nasal Finals (-n) & New Initials",
+  "emoji": "👃",
+  "subtitle": "an en in un ün · z c s",
+  "description": "Learn finals ending in -n and the sibilant initials z, c, s.",
+  "new_finals": [
+    "an",
+    "en",
+    "in",
+    "un",
+    "ün"
+  ],
+  "review_finals": [
+    "a",
+    "o",
+    "e",
+    "i",
+    "u",
+    "ü",
+    "ai",
+    "ei",
+    "ui",
+    "ao",
+    "ou",
+    "iu",
+    "ie",
+    "üe",
+    "er"
+  ],
+  "new_initials": [
+    "z",
+    "c",
+    "s"
+  ],
+  "review_initials": [
+    "b",
+    "p",
+    "m",
+    "f",
+    "d",
+    "t",
+    "n",
+    "l",
+    "g",
+    "k",
+    "h",
+    "j",
+    "q",
+    "x",
+    "zh",
+    "ch",
+    "sh",
+    "r"
+  ],
+  "learn_content": {
+    "rules": [
+      "an = 'ahn', en = 'un' (as in under), in = 'een'",
+      "un = 'wen', ün = 'yün' (lips rounded)",
+      "z sounds like 'dz', c sounds like 'ts', s is like English s",
+      "z/c/s are flat-tongue — tongue stays flat (unlike zh/ch/sh)"
+    ],
+    "spelling_rules": [
+      {
+        "title": "Initial + an",
+        "rule": "b p m f d t n l g k h combine with 'an'",
+        "examples": [
+          {
+            "pinyin": "bān",
+            "note": "b + an",
+            "audio_key": "ban1"
+          },
+          {
+            "pinyin": "kàn",
+            "note": "k + an",
+            "audio_key": "kan4"
+          }
+        ]
+      },
+      {
+        "title": "Initial + en",
+        "rule": "b p m f d n g h zh ch sh r z combine with 'en'",
+        "examples": [
+          {
+            "pinyin": "mén",
+            "note": "m + en",
+            "audio_key": "men2"
+          },
+          {
+            "pinyin": "fēn",
+            "note": "f + en",
+            "audio_key": "fen1"
+          },
+          {
+            "pinyin": "rén",
+            "note": "r + en",
+            "audio_key": "ren2"
+          }
+        ]
+      },
+      {
+        "title": "Initial + in",
+        "rule": "b p m n l j q x combine with 'in'",
+        "examples": [
+          {
+            "pinyin": "nín",
+            "note": "n + in",
+            "audio_key": "nin2"
+          },
+          {
+            "pinyin": "xīn",
+            "note": "x + in",
+            "audio_key": "xin1"
+          }
+        ]
+      },
+      {
+        "title": "Initial + ün",
+        "rule": "j q x combine with 'ün' (written as jun qun xun — umlaut omitted after j q x)",
+        "examples": [
+          {
+            "pinyin": "jūn",
+            "note": "j + ün",
+            "audio_key": "jun1"
+          }
+        ]
+      }
+    ]
+  },
+  "stage1_pool": [
+    {
+      "type": "listen_final",
+      "syllable": "bān",
+      "audio_key": "fin_an",
+      "correct": "an",
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "un"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "mén",
+      "audio_key": "fin_en",
+      "correct": "en",
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "un"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "xīn",
+      "audio_key": "fin_in",
+      "correct": "in",
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "ün"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "cūn",
+      "audio_key": "fin_un",
+      "correct": "un",
+      "choices": [
+        "an",
+        "en",
+        "un",
+        "ün"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "jūn",
+      "audio_key": "fin_vn",
+      "correct": "ün",
+      "choices": [
+        "in",
+        "un",
+        "ün",
+        "en"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "zī",
+      "audio_key": "init_z",
+      "correct": "z",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "zh"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "cī",
+      "audio_key": "init_c",
+      "correct": "c",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "ch"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "sī",
+      "audio_key": "init_s",
+      "correct": "s",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "sh"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "sān",
+      "audio_key": "san1",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "zài",
+      "audio_key": "zai4",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "cóng",
+      "audio_key": "cong2",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "fēn",
+      "audio_key": "init_f",
+      "correct": "f",
+      "choices": [
+        "f",
+        "b",
+        "m",
+        "p"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "fēn",
+      "audio_key": "fin_en",
+      "correct": "en",
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "un"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mén",
+      "audio_key": "men2",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "cūn",
+      "audio_key": "init_c",
+      "correct": "c",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "zh"
+      ]
+    }
+  ],
+  "stage2_pool": [
+    {
+      "syllable": "sān",
+      "audio_key": "san1",
+      "meaning": "three",
+      "chinese": "三"
+    },
+    {
+      "syllable": "zài",
+      "audio_key": "zai4",
+      "meaning": "at/again",
+      "chinese": "在"
+    },
+    {
+      "syllable": "mén",
+      "audio_key": "men2",
+      "meaning": "door/gate",
+      "chinese": "门"
+    },
+    {
+      "syllable": "fēn",
+      "audio_key": "fen1",
+      "meaning": "minute/cent",
+      "chinese": "分"
+    },
+    {
+      "syllable": "xīn",
+      "audio_key": "xin1",
+      "meaning": "heart/new",
+      "chinese": "心"
+    },
+    {
+      "syllable": "cūn",
+      "audio_key": "cun1",
+      "meaning": "village",
+      "chinese": "村"
+    },
+    {
+      "syllable": "jūn",
+      "audio_key": "jun1",
+      "meaning": "army/equal",
+      "chinese": "军"
+    },
+    {
+      "syllable": "bān",
+      "audio_key": "ban1",
+      "meaning": "class/shift",
+      "chinese": "班"
+    },
+    {
+      "syllable": "rén",
+      "audio_key": "ren2",
+      "meaning": "person",
+      "chinese": "人"
+    },
+    {
+      "syllable": "nín",
+      "audio_key": "nin2",
+      "meaning": "you (formal)",
+      "chinese": "您"
+    }
+  ],
+  "stage3_pool": [
+    {
+      "type": "visual_final",
+      "syllable": "bān",
+      "correct": "an",
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "un"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "mén",
+      "correct": "en",
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "un"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "xīn",
+      "correct": "in",
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "ün"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "cūn",
+      "correct": "un",
+      "choices": [
+        "an",
+        "en",
+        "un",
+        "ün"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "jūn",
+      "correct": "ün",
+      "choices": [
+        "in",
+        "un",
+        "ün",
+        "en"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "zī",
+      "correct": "z",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "zh"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "cī",
+      "correct": "c",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "ch"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "sī",
+      "correct": "s",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "sh"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "sān",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "zài",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "fēn",
+      "correct": "f",
+      "choices": [
+        "f",
+        "b",
+        "m",
+        "p"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "fēn",
+      "correct": "en",
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "un"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "mén",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "zài",
+      "correct": "z",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "zh"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "sān",
+      "correct": "s",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "sh"
+      ]
+    }
+  ],
+  "quiz_pool": [
+    {
+      "type": "visual_final",
+      "syllable": "bān",
+      "correct": "an",
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "un"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "mén",
+      "correct": "en",
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "un"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "xīn",
+      "correct": "in",
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "ün"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "cūn",
+      "correct": "un",
+      "choices": [
+        "an",
+        "en",
+        "un",
+        "ün"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "jūn",
+      "correct": "ün",
+      "choices": [
+        "in",
+        "un",
+        "ün",
+        "en"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "zī",
+      "correct": "z",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "zh"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "cī",
+      "correct": "c",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "ch"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "sī",
+      "correct": "s",
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "sh"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "sān",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "zài",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ]
+}

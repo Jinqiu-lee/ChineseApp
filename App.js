@@ -11,6 +11,29 @@ import FoundationsPinyinScreen from './screens/FoundationsPinyinScreen';
 import LessonStagesScreen from './screens/LessonStagesScreen';
 import StageExercisesScreen from './screens/StageExercisesScreen';
 import RoundCompleteScreen from './screens/RoundCompleteScreen';
+import PinyinSystemScreen from './screens/PinyinSystemScreen';
+import PinyinLessonScreen from './screens/PinyinLessonScreen';
+import PinyinStageScreen from './screens/PinyinStageScreen';
+import PinyinLessonQuizScreen from './screens/PinyinLessonQuizScreen';
+import PinyinFinalQuizScreen from './screens/PinyinFinalQuizScreen';
+
+// Pinyin lesson data
+import pinyinLesson1  from './data/pinyin/pinyin_lesson_1.json';
+import pinyinLesson2  from './data/pinyin/pinyin_lesson_2.json';
+import pinyinLesson3  from './data/pinyin/pinyin_lesson_3.json';
+import pinyinLesson4  from './data/pinyin/pinyin_lesson_4.json';
+import pinyinLesson5  from './data/pinyin/pinyin_lesson_5.json';
+import pinyinLesson6  from './data/pinyin/pinyin_lesson_6.json';
+import pinyinLesson7  from './data/pinyin/pinyin_lesson_7.json';
+import pinyinLesson8  from './data/pinyin/pinyin_lesson_8.json';
+import pinyinLesson9  from './data/pinyin/pinyin_lesson_9.json';
+import pinyinLesson10 from './data/pinyin/pinyin_lesson_10.json';
+
+const PINYIN_LESSONS = {
+  1: pinyinLesson1, 2: pinyinLesson2, 3: pinyinLesson3, 4: pinyinLesson4, 5: pinyinLesson5,
+  6: pinyinLesson6, 7: pinyinLesson7, 8: pinyinLesson8, 9: pinyinLesson9, 10: pinyinLesson10,
+};
+const ALL_PINYIN_LESSONS = Object.values(PINYIN_LESSONS);
 
 // Lesson data (needed to pass to stage screens)
 import lesson1 from './data/hsk1/hsk1_lesson_1.json';
@@ -34,11 +57,13 @@ const LESSONS = { 1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5, 6:
 const ALL_LEVEL_IDS = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5'];
 
 const STORAGE_KEYS = {
-  userData:       '@chineseapp:userData',
-  levelState:     '@chineseapp:levelState',
-  lessonProgress: '@chineseapp:lessonProgress',
-  stageProgress:  '@chineseapp:stageProgress',
-  roundScores:    '@chineseapp:roundScores',
+  userData:           '@chineseapp:userData',
+  levelState:         '@chineseapp:levelState',
+  lessonProgress:     '@chineseapp:lessonProgress',
+  stageProgress:      '@chineseapp:stageProgress',
+  roundScores:        '@chineseapp:roundScores',
+  pinyinQuizPassed:   '@chineseapp:pinyinQuizPassed',
+  pinyinStageProgress:'@chineseapp:pinyinStageProgress',
 };
 
 const DEFAULT_LEVEL_STATE = {
@@ -63,17 +88,24 @@ export default function App() {
   const [currentRound, setCurrentRound] = useState(1);    // 1 | 2 | 3
   const [returnLevelId, setReturnLevelId] = useState(null); // which level list to return to on back
   const [pinyinReturnTo, setPinyinReturnTo] = useState('home'); // 'home' | 'lessonPinyin'
+  // Pinyin Learning System state
+  const [currentPinyinLessonId, setCurrentPinyinLessonId] = useState(null);
+  const [currentPinyinStageIndex, setCurrentPinyinStageIndex] = useState(null);
+  const [pinyinQuizPassed, setPinyinQuizPassed] = useState([]);       // [1,2,3,...] lesson IDs passed
+  const [pinyinStageProgress, setPinyinStageProgress] = useState({}); // { "pinyin_1": [0,1,2] }
 
   // ── Load saved data on startup ──────────────────────────────
   useEffect(() => {
     const load = async () => {
       try {
-        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores] = await Promise.all([
+        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage] = await Promise.all([
           AsyncStorage.getItem(STORAGE_KEYS.userData),
           AsyncStorage.getItem(STORAGE_KEYS.levelState),
           AsyncStorage.getItem(STORAGE_KEYS.lessonProgress),
           AsyncStorage.getItem(STORAGE_KEYS.stageProgress),
           AsyncStorage.getItem(STORAGE_KEYS.roundScores),
+          AsyncStorage.getItem(STORAGE_KEYS.pinyinQuizPassed),
+          AsyncStorage.getItem(STORAGE_KEYS.pinyinStageProgress),
         ]);
         const parsedUser = savedUser ? JSON.parse(savedUser) : null;
         if (parsedUser) {
@@ -84,6 +116,8 @@ export default function App() {
         if (savedProgress)      setLessonProgress(JSON.parse(savedProgress));
         if (savedStageProgress) setStageProgress(JSON.parse(savedStageProgress));
         if (savedRoundScores)   setRoundScores(JSON.parse(savedRoundScores));
+        if (savedPinyinQuiz)    setPinyinQuizPassed(JSON.parse(savedPinyinQuiz));
+        if (savedPinyinStage)   setPinyinStageProgress(JSON.parse(savedPinyinStage));
       } catch (e) {
         console.warn('Failed to restore saved data:', e);
       } finally {
@@ -118,6 +152,16 @@ export default function App() {
     if (isLoading) return;
     AsyncStorage.setItem(STORAGE_KEYS.roundScores, JSON.stringify(roundScores)).catch(console.warn);
   }, [roundScores, isLoading]);
+
+  useEffect(() => {
+    if (isLoading) return;
+    AsyncStorage.setItem(STORAGE_KEYS.pinyinQuizPassed, JSON.stringify(pinyinQuizPassed)).catch(console.warn);
+  }, [pinyinQuizPassed, isLoading]);
+
+  useEffect(() => {
+    if (isLoading) return;
+    AsyncStorage.setItem(STORAGE_KEYS.pinyinStageProgress, JSON.stringify(pinyinStageProgress)).catch(console.warn);
+  }, [pinyinStageProgress, isLoading]);
 
   // ── Splash while loading ─────────────────────────────────────
   if (isLoading) {
@@ -196,6 +240,48 @@ export default function App() {
 
   const handleTakeQuiz = () => {
     setCurrentScreen('lessonQuiz');
+  };
+
+  // ── Pinyin Learning System handlers ─────────────────────────
+  const handleOpenPinyinSystem = () => {
+    setCurrentScreen('pinyinSystem');
+  };
+
+  const handleSelectPinyinLesson = (lessonId) => {
+    setCurrentPinyinLessonId(lessonId);
+    setCurrentScreen('pinyinLesson');
+  };
+
+  const handleStartPinyinStage = (stageIndex) => {
+    setCurrentPinyinStageIndex(stageIndex);
+    setCurrentScreen('pinyinStage');
+  };
+
+  const handlePinyinStageComplete = (score, total) => {
+    const key = `pinyin_${currentPinyinLessonId}`;
+    setPinyinStageProgress(prev => {
+      const existing = prev[key] || [];
+      const idx = currentPinyinStageIndex;
+      if (existing.includes(idx)) return prev;
+      return { ...prev, [key]: [...existing, idx] };
+    });
+    setCurrentScreen('pinyinLesson');
+  };
+
+  const handleOpenPinyinLessonQuiz = () => {
+    setCurrentScreen('pinyinLessonQuiz');
+  };
+
+  const handlePinyinQuizPass = () => {
+    setPinyinQuizPassed(prev => {
+      if (prev.includes(currentPinyinLessonId)) return prev;
+      return [...prev, currentPinyinLessonId];
+    });
+    setCurrentScreen('pinyinSystem');
+  };
+
+  const handlePinyinFinalQuiz = () => {
+    setCurrentScreen('pinyinFinalQuiz');
   };
 
   const handleOpenLessonPinyin = () => {
@@ -397,6 +483,69 @@ export default function App() {
       <FoundationsPinyinScreen
         onBack={handleBackFromFoundationsPinyin}
         lessonContext={pinyinReturnTo === 'lessonPinyin' ? currentLessonData : null}
+        onOpenPinyinSystem={handleOpenPinyinSystem}
+      />
+    );
+  }
+
+  if (currentScreen === 'pinyinSystem') {
+    return (
+      <PinyinSystemScreen
+        onBack={() => setCurrentScreen('foundationsPinyin')}
+        onSelectLesson={handleSelectPinyinLesson}
+        onFinalQuiz={handlePinyinFinalQuiz}
+        quizPassedLessons={pinyinQuizPassed}
+        pinyinStageProgress={pinyinStageProgress}
+      />
+    );
+  }
+
+  if (currentScreen === 'pinyinLesson') {
+    const pinyinLessonData  = PINYIN_LESSONS[currentPinyinLessonId];
+    const pinyinStageKey    = `pinyin_${currentPinyinLessonId}`;
+    const pinyinStageDone   = pinyinStageProgress[pinyinStageKey] || [];
+    const pinyinQuizPassed2 = pinyinQuizPassed.includes(currentPinyinLessonId);
+    return (
+      <PinyinLessonScreen
+        lessonData={pinyinLessonData}
+        stageProgress={pinyinStageDone}
+        quizPassed={pinyinQuizPassed2}
+        onBack={() => setCurrentScreen('pinyinSystem')}
+        onStartStage={handleStartPinyinStage}
+        onTakeQuiz={handleOpenPinyinLessonQuiz}
+      />
+    );
+  }
+
+  if (currentScreen === 'pinyinStage') {
+    const pinyinLessonData = PINYIN_LESSONS[currentPinyinLessonId];
+    return (
+      <PinyinStageScreen
+        lessonData={pinyinLessonData}
+        stageIndex={currentPinyinStageIndex}
+        onComplete={handlePinyinStageComplete}
+        onBack={() => setCurrentScreen('pinyinLesson')}
+      />
+    );
+  }
+
+  if (currentScreen === 'pinyinLessonQuiz') {
+    const pinyinLessonData = PINYIN_LESSONS[currentPinyinLessonId];
+    return (
+      <PinyinLessonQuizScreen
+        lessonData={pinyinLessonData}
+        onPass={handlePinyinQuizPass}
+        onFail={() => setCurrentScreen('pinyinLesson')}
+        onBack={() => setCurrentScreen('pinyinLesson')}
+      />
+    );
+  }
+
+  if (currentScreen === 'pinyinFinalQuiz') {
+    return (
+      <PinyinFinalQuizScreen
+        allLessons={ALL_PINYIN_LESSONS}
+        onBack={() => setCurrentScreen('pinyinSystem')}
       />
     );
   }

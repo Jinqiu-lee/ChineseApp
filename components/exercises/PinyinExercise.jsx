@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { speakChinese } from '../../utils/tts';
+import { speakPinyin } from '../../utils/tts';
 
 const SUBTYPE_META = {
   tone_id:    { instruction: '🎵 What tone is this syllable?',       label: 'TONE' },
@@ -14,8 +14,7 @@ export default function PinyinExercise({ exercise, onCorrect, onWrong }) {
   const [answered, setAnswered]   = useState(false);
 
   useEffect(() => {
-    // Auto-play audio if we have the Chinese character
-    if (chinese) speakChinese(chinese);
+    speakPinyin(syllable);
   }, []);
 
   const handleSelect = (choice) => {
@@ -49,14 +48,13 @@ export default function PinyinExercise({ exercise, onCorrect, onWrong }) {
       {/* Syllable card */}
       <TouchableOpacity
         style={styles.syllableCard}
-        onPress={() => chinese && speakChinese(chinese)}
-        activeOpacity={chinese ? 0.75 : 1}
+        onPress={() => speakPinyin(syllable)}
+        activeOpacity={0.75}
       >
-        {chinese && <Text style={styles.audioIcon}>🔊</Text>}
+        <Text style={styles.audioIcon}>🔊</Text>
         <Text style={styles.syllable}>{syllable}</Text>
         {chinese && <Text style={styles.chinese}>{chinese}</Text>}
         {english  && <Text style={styles.english}>{english}</Text>}
-        {!chinese && <Text style={styles.noAudioHint}>Look at the tone marks</Text>}
       </TouchableOpacity>
 
       {/* Choices */}

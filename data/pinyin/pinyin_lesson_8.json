@@ -1,0 +1,707 @@
+{
+  "id": 8,
+  "title": "Tone Sandhi: 一 and 不",
+  "emoji": "🔄",
+  "subtitle": "yī changes tone · bù becomes bú",
+  "description": "Learn how the tones of 一(yī) and 不(bù) change depending on what follows them.",
+  "new_finals": [],
+  "review_finals": [],
+  "new_initials": [],
+  "review_initials": [],
+  "sandhi_rules": {
+    "yi": {
+      "base_tone": 1,
+      "rules": [
+        {
+          "context": "before tone 4",
+          "result_tone": 2,
+          "example_before": "一个",
+          "example_pinyin": "yī + gè → yí gè",
+          "meaning": "one (thing)"
+        },
+        {
+          "context": "before tone 1/2/3",
+          "result_tone": 4,
+          "example_before": "一天",
+          "example_pinyin": "yī + tiān → yì tiān",
+          "meaning": "one day"
+        },
+        {
+          "context": "standalone or at end",
+          "result_tone": 1,
+          "example_before": "第一",
+          "example_pinyin": "dì yī",
+          "meaning": "number one"
+        },
+        {
+          "context": "in a series/ordinal",
+          "result_tone": 1,
+          "example_before": "一、二、三",
+          "example_pinyin": "yī, èr, sān",
+          "meaning": "one, two, three"
+        }
+      ]
+    },
+    "bu": {
+      "base_tone": 4,
+      "rules": [
+        {
+          "context": "before tone 4",
+          "result_tone": 2,
+          "example_before": "不对",
+          "example_pinyin": "bù + duì → bú duì",
+          "meaning": "incorrect"
+        },
+        {
+          "context": "before tone 1/2/3",
+          "result_tone": 4,
+          "example_before": "不好",
+          "example_pinyin": "bù + hǎo → bù hǎo",
+          "meaning": "not good"
+        }
+      ]
+    }
+  },
+  "learn_content": {
+    "rules": [
+      "一 (yī) + Tone 4 → yí (2nd tone): yí gè, yí wèi, yí cì",
+      "一 (yī) + Tone 1/2/3 → yì (4th tone): yì tiān, yì nián, yì qǐ",
+      "一 alone or at end of phrase stays yī: dì yī, shí yī",
+      "不 (bù) + Tone 4 → bú: bú duì, bú shì, bú cuò",
+      "不 + any other tone stays bù: bù hǎo, bù lái, bù néng"
+    ],
+    "spelling_rules": [
+      {
+        "title": "一 (yī) tone sandhi spelling",
+        "rule": "The written form always shows yī, but pronunciation changes by context",
+        "examples": [
+          {
+            "pinyin": "yī gè",
+            "note": "yī + tone 4 → spoken: yí gè (one, a measure word)",
+            "audio_key": "yi1"
+          },
+          {
+            "pinyin": "yī tiān",
+            "note": "yī + tone 1 → spoken: yì tiān (one day)",
+            "audio_key": "yi1"
+          },
+          {
+            "pinyin": "yī nián",
+            "note": "yī + tone 2 → spoken: yì nián (one year)",
+            "audio_key": "yi1"
+          },
+          {
+            "pinyin": "yī qǐ",
+            "note": "yī + tone 3 → spoken: yì qǐ (together)",
+            "audio_key": "yi1"
+          },
+          {
+            "pinyin": "dì yī",
+            "note": "yī at phrase-end stays yī (first)",
+            "audio_key": "yi1"
+          },
+          {
+            "pinyin": "shí yī",
+            "note": "yī at phrase-end stays yī (eleven)",
+            "audio_key": "yi1"
+          }
+        ]
+      },
+      {
+        "title": "不 (bù) tone sandhi spelling",
+        "rule": "不 is always written bù, but becomes bú before a 4th-tone syllable",
+        "examples": [
+          {
+            "pinyin": "bù hǎo",
+            "note": "bù + tone 3 → stays bù (not good)",
+            "audio_key": "bu4_hao3"
+          },
+          {
+            "pinyin": "bù néng",
+            "note": "bù + tone 2 → stays bù (cannot)",
+            "audio_key": "bu4_neng2"
+          },
+          {
+            "pinyin": "bú duì",
+            "note": "bù + tone 4 → spoken: bú duì (incorrect)",
+            "audio_key": "bu2_dui4"
+          },
+          {
+            "pinyin": "bú shì",
+            "note": "bù + tone 4 → spoken: bú shì (is not)",
+            "audio_key": "bu2_shi4"
+          },
+          {
+            "pinyin": "bú cuò",
+            "note": "bù + tone 4 → spoken: bú cuò (not bad)",
+            "audio_key": "bu2_cuo4"
+          }
+        ]
+      },
+      {
+        "title": "Common sandhi pairs — listen and compare",
+        "rule": "Practice these pairs to hear the tone change clearly",
+        "examples": [
+          {
+            "pinyin": "yí gè",
+            "note": "one (before tone 4)",
+            "audio_key": "yi2_ge4"
+          },
+          {
+            "pinyin": "yì tiān",
+            "note": "one day (before tone 1)",
+            "audio_key": "yi4_tian1"
+          },
+          {
+            "pinyin": "bú duì",
+            "note": "incorrect (before tone 4)",
+            "audio_key": "bu2_dui4"
+          },
+          {
+            "pinyin": "bù hǎo",
+            "note": "not good (before tone 3)",
+            "audio_key": "bu4_hao3"
+          }
+        ]
+      }
+    ]
+  },
+  "stage1_pool": [
+    {
+      "type": "listen_tone",
+      "syllable": "yí gè",
+      "audio_key": "yi2_ge4",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yì tiān",
+      "audio_key": "yi4_tian1",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "bú duì",
+      "audio_key": "bu2_dui4",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "bù hǎo",
+      "audio_key": "bu4_hao3",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "dì yī",
+      "audio_key": "di4_yi1",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yì qǐ",
+      "audio_key": "yi4_qi3",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "bú shì",
+      "audio_key": "bu2_shi4",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yí wèi",
+      "audio_key": "yi2_wei4",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "bù néng",
+      "audio_key": "bu4_neng2",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yí cì",
+      "audio_key": "yi2_ci4",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yì qiān",
+      "audio_key": "yi4_qian1",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "bú cuò",
+      "audio_key": "bu2_cuo4",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "bù xíng",
+      "audio_key": "bu4_xing2",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yì bǎi",
+      "audio_key": "yi4_bai3",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "shí yī",
+      "audio_key": "shi2_yi1",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ],
+  "stage2_pool": [
+    {
+      "syllable": "yí gè",
+      "audio_key": "yi2_ge4",
+      "meaning": "one (+ T4 word)",
+      "chinese": "一个"
+    },
+    {
+      "syllable": "yì tiān",
+      "audio_key": "yi4_tian1",
+      "meaning": "one day (+ T1)",
+      "chinese": "一天"
+    },
+    {
+      "syllable": "yì qǐ",
+      "audio_key": "yi4_qi3",
+      "meaning": "together (yì + T3)",
+      "chinese": "一起"
+    },
+    {
+      "syllable": "bú duì",
+      "audio_key": "bu2_dui4",
+      "meaning": "wrong (bú + T4)",
+      "chinese": "不对"
+    },
+    {
+      "syllable": "bù hǎo",
+      "audio_key": "bu4_hao3",
+      "meaning": "not good (bù + T3)",
+      "chinese": "不好"
+    },
+    {
+      "syllable": "bú shì",
+      "audio_key": "bu2_shi4",
+      "meaning": "is not (bú + T4)",
+      "chinese": "不是"
+    },
+    {
+      "syllable": "dì yī",
+      "audio_key": "di4_yi1",
+      "meaning": "number one (yī alone)",
+      "chinese": "第一"
+    },
+    {
+      "syllable": "shí yī",
+      "audio_key": "shi2_yi1",
+      "meaning": "eleven (yī at end)",
+      "chinese": "十一"
+    },
+    {
+      "syllable": "yì bǎi",
+      "audio_key": "yi4_bai3",
+      "meaning": "100 (+ T3)",
+      "chinese": "一百"
+    },
+    {
+      "syllable": "bú cuò",
+      "audio_key": "bu2_cuo4",
+      "meaning": "not bad (+ T4)",
+      "chinese": "不错"
+    }
+  ],
+  "stage3_pool": [
+    {
+      "type": "sandhi_choice",
+      "prompt": "一 + 个 (T4) → 一 becomes tone...",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T4, 一 rises to 2nd tone"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "一 + 天 (T1) → 一 becomes tone...",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T1/2/3, 一 falls to 4th tone"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "不 + 对 (T4) → 不 becomes tone...",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T4, 不 rises to 2nd tone"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "不 + 好 (T3) → 不 stays tone...",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before non-T4, 不 stays 4th tone"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "第一 — 一 here is tone...",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Standalone 一 keeps 1st tone"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "一 + 起 (T3) → 一 becomes tone...",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T3, 一→4th tone"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "不 + 是 (T4) → 不 becomes tone...",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T4, 不→2nd tone"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "一 + 年 (T2) → 一 becomes tone...",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T2, 一→4th tone"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "不 + 来 (T2) → 不 stays tone...",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T2, 不 stays 4th"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "十一 — final 一 is tone...",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Standalone/end 一 keeps 1st tone"
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "yí gè",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "bú duì",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "bù hǎo",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "yì tiān",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "dì yī",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ],
+  "quiz_pool": [
+    {
+      "type": "sandhi_choice",
+      "prompt": "一 + 个 (T4) → 一 becomes tone...",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T4, 一 rises"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "一 + 天 (T1) → 一 becomes tone...",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T1, 一 falls"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "不 + 对 (T4) → 不 becomes tone...",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T4, 不 rises"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "不 + 好 (T3) → 不 stays tone...",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Before T3, 不 stays"
+    },
+    {
+      "type": "sandhi_choice",
+      "prompt": "第一 — 一 is tone...",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "hint": "Standalone stays 1st"
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "yí gè",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "bú duì",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "bù hǎo",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "yì tiān",
+      "correct": "4",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "dì yī",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,660 @@
+{
+  "id": 5,
+  "title": "Nasal Finals (-ng) & Medials y/w",
+  "emoji": "🔔",
+  "subtitle": "ang eng ing ong · y w",
+  "description": "Learn finals with -ng ending and the semi-vowels y and w used as initials.",
+  "new_finals": [
+    "ang",
+    "eng",
+    "ing",
+    "ong"
+  ],
+  "review_finals": [
+    "an",
+    "en",
+    "in",
+    "un",
+    "ün",
+    "a",
+    "o",
+    "e",
+    "i",
+    "u"
+  ],
+  "new_initials": [
+    "y",
+    "w"
+  ],
+  "review_initials": [
+    "b",
+    "p",
+    "m",
+    "f",
+    "d",
+    "t",
+    "n",
+    "l",
+    "g",
+    "k",
+    "h",
+    "j",
+    "q",
+    "x",
+    "z",
+    "c",
+    "s",
+    "zh",
+    "ch",
+    "sh",
+    "r"
+  ],
+  "learn_content": {
+    "rules": [
+      "ang = 'ahng', eng = 'ung', ing = 'eeng', ong = 'oong'",
+      "y is used when i or ü starts a syllable alone: yi, yu, ye, yue",
+      "w is used when u starts a syllable alone: wu, wa, wo, wei",
+      "Distinguish -n finals (an/en/in) from -ng finals (ang/eng/ing)"
+    ],
+    "spelling_rules": [
+      {
+        "title": "y and w — standalone vowel syllables",
+        "rule": "y replaces i / w replaces u when no initial is present",
+        "examples": [
+          {
+            "pinyin": "yī",
+            "note": "y + i = yi (one)",
+            "audio_key": "yi1"
+          },
+          {
+            "pinyin": "yú",
+            "note": "y + ü = yu",
+            "audio_key": "yu2"
+          },
+          {
+            "pinyin": "wū",
+            "note": "w + u = wu (five)",
+            "audio_key": "wu1"
+          }
+        ]
+      },
+      {
+        "title": "Initial + ang",
+        "rule": "b p m f d t n l g k h zh ch sh r z c s combine with 'ang'",
+        "examples": [
+          {
+            "pinyin": "shāng",
+            "note": "sh + ang",
+            "audio_key": "shang1"
+          }
+        ]
+      },
+      {
+        "title": "Initial + eng",
+        "rule": "b p m f d t n l g k h zh ch sh r z c s combine with 'eng'",
+        "examples": [
+          {
+            "pinyin": "néng",
+            "note": "n + eng",
+            "audio_key": "neng2"
+          }
+        ]
+      },
+      {
+        "title": "Initial + ing",
+        "rule": "b p m d t n l j q x combine with 'ing'",
+        "examples": [
+          {
+            "pinyin": "míng",
+            "note": "m + ing",
+            "audio_key": "ming2"
+          }
+        ]
+      },
+      {
+        "title": "Initial + ong",
+        "rule": "d t n l g k h zh ch sh r z c s combine with 'ong'",
+        "examples": [
+          {
+            "pinyin": "dōng",
+            "note": "d + ong",
+            "audio_key": "dong1"
+          },
+          {
+            "pinyin": "zhōng",
+            "note": "zh + ong",
+            "audio_key": "zhong1"
+          },
+          {
+            "pinyin": "cóng",
+            "note": "c + ong",
+            "audio_key": "cong2"
+          }
+        ]
+      }
+    ]
+  },
+  "stage1_pool": [
+    {
+      "type": "listen_final",
+      "syllable": "bāng",
+      "audio_key": "fin_ang",
+      "correct": "ang",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bēng",
+      "audio_key": "fin_eng",
+      "correct": "eng",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "dīng",
+      "audio_key": "fin_ing",
+      "correct": "ing",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "dōng",
+      "audio_key": "fin_ong",
+      "correct": "ong",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "yī",
+      "audio_key": "init_y",
+      "correct": "y",
+      "choices": [
+        "y",
+        "w",
+        "j",
+        "x"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "wū",
+      "audio_key": "init_w",
+      "correct": "w",
+      "choices": [
+        "y",
+        "w",
+        "j",
+        "x"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yáng",
+      "audio_key": "yang2",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "wáng",
+      "audio_key": "wang2",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yīng",
+      "audio_key": "ying1",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "zhōng",
+      "audio_key": "zhong1",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "yīng",
+      "audio_key": "fin_ing",
+      "correct": "ing",
+      "choices": [
+        "an",
+        "ang",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "zhōng",
+      "audio_key": "fin_ong",
+      "correct": "ong",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bān",
+      "audio_key": "fin_an",
+      "correct": "an",
+      "choices": [
+        "an",
+        "ang",
+        "in",
+        "ing"
+      ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bāng",
+      "audio_key": "fin_ang",
+      "correct": "ang",
+      "choices": [
+        "an",
+        "ang",
+        "in",
+        "ing"
+      ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "yīng",
+      "audio_key": "init_y",
+      "correct": "y",
+      "choices": [
+        "y",
+        "w",
+        "j",
+        "q"
+      ]
+    }
+  ],
+  "stage2_pool": [
+    {
+      "syllable": "yáng",
+      "audio_key": "yang2",
+      "meaning": "sheep/yang",
+      "chinese": "羊"
+    },
+    {
+      "syllable": "wáng",
+      "audio_key": "wang2",
+      "meaning": "king/surname Wang",
+      "chinese": "王"
+    },
+    {
+      "syllable": "yīng",
+      "audio_key": "ying1",
+      "meaning": "should/eagle",
+      "chinese": "应"
+    },
+    {
+      "syllable": "zhōng",
+      "audio_key": "zhong1",
+      "meaning": "middle/China",
+      "chinese": "中"
+    },
+    {
+      "syllable": "dōng",
+      "audio_key": "dong1",
+      "meaning": "east/winter",
+      "chinese": "东"
+    },
+    {
+      "syllable": "péngyou",
+      "audio_key": "pengyou2",
+      "meaning": "friend",
+      "chinese": "朋友"
+    },
+    {
+      "syllable": "shāng",
+      "audio_key": "shang1",
+      "meaning": "injure/commerce",
+      "chinese": "商"
+    },
+    {
+      "syllable": "wèng",
+      "audio_key": "weng4",
+      "meaning": "jar/surname",
+      "chinese": "瓮"
+    },
+    {
+      "syllable": "yīng",
+      "audio_key": "ying1",
+      "meaning": "hero",
+      "chinese": "英"
+    },
+    {
+      "syllable": "míng",
+      "audio_key": "ming2",
+      "meaning": "name/bright",
+      "chinese": "名"
+    }
+  ],
+  "stage3_pool": [
+    {
+      "type": "visual_final",
+      "syllable": "bāng",
+      "correct": "ang",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "bēng",
+      "correct": "eng",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "dīng",
+      "correct": "ing",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "dōng",
+      "correct": "ong",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "yī",
+      "correct": "y",
+      "choices": [
+        "y",
+        "w",
+        "j",
+        "x"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "wū",
+      "correct": "w",
+      "choices": [
+        "y",
+        "w",
+        "j",
+        "x"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "yáng",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "zhōng",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "dōng",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "bān",
+      "correct": "an",
+      "choices": [
+        "an",
+        "ang",
+        "in",
+        "ing"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "bāng",
+      "correct": "ang",
+      "choices": [
+        "an",
+        "ang",
+        "in",
+        "ing"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "xīn",
+      "correct": "in",
+      "choices": [
+        "an",
+        "ang",
+        "in",
+        "ing"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "yīng",
+      "correct": "ing",
+      "choices": [
+        "an",
+        "ang",
+        "in",
+        "ing"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "wáng",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "yáng",
+      "correct": "y",
+      "choices": [
+        "y",
+        "w",
+        "j",
+        "n"
+      ]
+    }
+  ],
+  "quiz_pool": [
+    {
+      "type": "visual_final",
+      "syllable": "bāng",
+      "correct": "ang",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "bēng",
+      "correct": "eng",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "dīng",
+      "correct": "ing",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "dōng",
+      "correct": "ong",
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "bān",
+      "correct": "an",
+      "choices": [
+        "an",
+        "ang",
+        "in",
+        "ing"
+      ]
+    },
+    {
+      "type": "visual_final",
+      "syllable": "bāng",
+      "correct": "ang",
+      "choices": [
+        "an",
+        "ang",
+        "in",
+        "ing"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "yī",
+      "correct": "y",
+      "choices": [
+        "y",
+        "w",
+        "j",
+        "x"
+      ]
+    },
+    {
+      "type": "visual_initial",
+      "syllable": "wū",
+      "correct": "w",
+      "choices": [
+        "y",
+        "w",
+        "j",
+        "x"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "yáng",
+      "correct": "2",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "type": "visual_tone",
+      "syllable": "zhōng",
+      "correct": "1",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    }
+  ]
+}
