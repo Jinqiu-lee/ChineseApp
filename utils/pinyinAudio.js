@@ -180,16 +180,16 @@ export const PINYIN_AUDIO = {
   // Naming: fin_ia.mp3  fin_iao.mp3  fin_ian.mp3  fin_iang.mp3
   //         fin_ua.mp3  fin_uai.mp3  fin_uo.mp3   fin_uan.mp3  fin_uang.mp3  fin_van.mp3
   // Uncomment each line after recording:
-  // 'fin_ia':   require('../assets/audio/pinyin/finals/fin_ia.mp3'),
-  // 'fin_iao':  require('../assets/audio/pinyin/finals/fin_iao.mp3'),
-  // 'fin_ian':  require('../assets/audio/pinyin/finals/fin_ian.mp3'),
-  // 'fin_iang': require('../assets/audio/pinyin/finals/fin_iang.mp3'),
-  // 'fin_ua':   require('../assets/audio/pinyin/finals/fin_ua.mp3'),
-  // 'fin_uai':  require('../assets/audio/pinyin/finals/fin_uai.mp3'),
-  // 'fin_uo':   require('../assets/audio/pinyin/finals/fin_uo.mp3'),
-  // 'fin_uan':  require('../assets/audio/pinyin/finals/fin_uan.mp3'),
-  // 'fin_uang': require('../assets/audio/pinyin/finals/fin_uang.mp3'),
-  // 'fin_van':  require('../assets/audio/pinyin/finals/fin_van.mp3'),
+  'fin_ia':   require('../assets/audio/pinyin/finals/fin_ia.mp3'),
+  'fin_iao':  require('../assets/audio/pinyin/finals/fin_iao.mp3'),
+  'fin_ian':  require('../assets/audio/pinyin/finals/fin_ian.mp3'),
+  'fin_iang': require('../assets/audio/pinyin/finals/fin_iang.mp3'),
+  'fin_ua':   require('../assets/audio/pinyin/finals/fin_ua.mp3'),
+  'fin_uai':  require('../assets/audio/pinyin/finals/fin_uai.mp3'),
+  'fin_uo':   require('../assets/audio/pinyin/finals/fin_uo.mp3'),
+  'fin_uan':  require('../assets/audio/pinyin/finals/fin_uan.mp3'),
+  'fin_uang': require('../assets/audio/pinyin/finals/fin_uang.mp3'),
+  'fin_van':  require('../assets/audio/pinyin/finals/fin_van.mp3'),
 
   // ── TONE PRACTICE — lesson syllables ────────────────────────────────────
   'ba4_ba0':     require('../assets/audio/pinyin/tones/ba4_ba0.mp3'),
