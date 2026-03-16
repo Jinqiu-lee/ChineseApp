@@ -28,8 +28,8 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
 
   // Auto-play audio when Stage 2 card changes
   useEffect(() => {
-    if (stageIndex === 1 && exercise?.syllable) {
-      speakPinyin(exercise.syllable);
+    if (stageIndex === 1 && exercise) {
+      speakPinyin(exercise.audio_key || exercise.syllable);
     }
   }, [current, stageIndex]);
 
@@ -54,7 +54,7 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
         <Text style={styles.speakCardMeaning}>{item.meaning}</Text>
         <TouchableOpacity
           style={styles.playBtn}
-          onPress={() => speakPinyin(item.syllable || item.audio_key)}
+          onPress={() => speakPinyin(item.audio_key || item.syllable)}
           activeOpacity={0.75}
         >
           <Text style={styles.playBtnText}>🔊  Play Audio</Text>

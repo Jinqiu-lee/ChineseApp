@@ -86,10 +86,10 @@ export const PINYIN_AUDIO = {
   'u2': require('../assets/audio/pinyin/vowel_tones/u2.mp3'),
   'u3': require('../assets/audio/pinyin/vowel_tones/u3.mp3'),
   'u4': require('../assets/audio/pinyin/vowel_tones/u4.mp3'),
-  'nv1': require('../assets/audio/pinyin/vowel_tones/v1.mp3'),  // ü tone 1 (ǖ)
-  'nv2': require('../assets/audio/pinyin/vowel_tones/v2.mp3'),  // ü tone 2 (ǘ)
-  'nv3': require('../assets/audio/pinyin/vowel_tones/v3.mp3'),  // ü tone 3 (ǚ)
-  'nv4': require('../assets/audio/pinyin/vowel_tones/v4.mp3'),  // ü tone 4 (ǜ)
+  'v1': require('../assets/audio/pinyin/vowel_tones/v1.mp3'),  // ü tone 1 (ǖ)  — standalone vowel
+  'v2': require('../assets/audio/pinyin/vowel_tones/v2.mp3'),  // ü tone 2 (ǘ)
+  'v3': require('../assets/audio/pinyin/vowel_tones/v3.mp3'),  // ü tone 3 (ǚ)
+  'v4': require('../assets/audio/pinyin/vowel_tones/v4.mp3'),  // ü tone 4 (ǜ)
 
   // ── COMPOUND FINAL TONES — used in lesson tone popup (tap final → hear tones)
   // Folder: assets/audio/pinyin/vowel_tones/
@@ -300,7 +300,6 @@ export const PINYIN_AUDIO = {
   'ba1':  require('../assets/audio/pinyin/tones/ba1.mp3'),    // bā  八 eight
   'bi3':  require('../assets/audio/pinyin/tones/bi3.mp3'),    // bǐ  笔 pen
   'da4':  require('../assets/audio/pinyin/tones/da4.mp3'),    // dà  大 big
-  // 'nv3' already defined above in VOWEL TONES section (vowel_tones/v3.mp3)
 
   // Lesson 2
    'hao3':       require('../assets/audio/pinyin/tones/hao3.mp3'),      // hǎo  好 good
@@ -425,6 +424,7 @@ export const PINYIN_AUDIO = {
   'tu4':  require('../assets/audio/pinyin/tones/tu4.mp3'),   // tù  rabbit
   'nu3':  require('../assets/audio/pinyin/tones/nu3.mp3'),   // nǔ  effort
   'lu4':  require('../assets/audio/pinyin/tones/lu4.mp3'),   // lù  road
+  'nv3':  require('../assets/audio/pinyin/tones/nv3.mp3'),   // nǚ  female/woman
   'lv4':  require('../assets/audio/pinyin/tones/lv4.mp3'),   // lǜ  green
 
   // Lesson 2 — ai/ei/ui/ao/ou/iu, j/q/x

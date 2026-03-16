@@ -49,7 +49,7 @@ const PY_STRIP = {
   'ī':'i','í':'i','ǐ':'i','ì':'i',
   'ō':'o','ó':'o','ǒ':'o','ò':'o',
   'ū':'u','ú':'u','ǔ':'u','ù':'u',
-  'ǖ':'u','ǘ':'u','ǚ':'u','ǜ':'u',
+  'ǖ':'v','ǘ':'v','ǚ':'v','ǜ':'v',
 };
 
 // Convert diacritic pinyin syllable to numbered format: "mā" → "ma1", "zhōng" → "zhong1"
