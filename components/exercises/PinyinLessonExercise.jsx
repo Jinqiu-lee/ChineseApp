@@ -124,11 +124,7 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
               <View style={styles.toneChoiceInner}>
                 <View style={[styles.toneDot, { backgroundColor: TONE_COLORS[choice] }]} />
                 <Text style={getChoiceTextStyle(choice)}>
-                  {choice === '0'
-                    ? '0 · neutral'
-                    : type === 'listen_tone'
-                      ? `Tone ${choice}`
-                      : `${choice} · ${'ā á ǎ à'.split(' ')[+choice - 1]}`}
+                  {choice === '0' ? 'Tone 0 · neutral' : `Tone ${choice}`}
                 </Text>
               </View>
             ) : (
