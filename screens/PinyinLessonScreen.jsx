@@ -36,7 +36,6 @@ export default function PinyinLessonScreen({
   onTakeQuiz,
 }) {
   const [tab,           setTab]           = useState('learn'); // 'learn' | 'practice'
-  const [spellingOpen,  setSpellingOpen]  = useState(false);
   const [selectedFinal, setSelectedFinal] = useState(null);  // opens tone popup
 
   if (!lessonData) return null;
@@ -55,6 +54,7 @@ export default function PinyinLessonScreen({
     const rules = content.rules || [];
     const newFinals   = lessonData.new_finals   || [];
     const newInitials = lessonData.new_initials  || [];
+    const singleFinals = new Set(lessonData.single_finals || []);
     const wholeSyl    = lessonData.whole_syllables || {};
 
     return (
@@ -100,20 +100,20 @@ export default function PinyinLessonScreen({
           </>
         )}
 
-        {/* New finals — tap to open tone popup */}
+        {/* New finals — tap to play sound or open tone popup */}
         {newFinals.length > 0 && (
           <>
             <Text style={[styles.sectionLabel, { marginTop: 24 }]}>NEW FINALS (韵母)</Text>
-            <Text style={styles.finalHint}>Tap a final to see & hear all 4 tones</Text>
+            <Text style={styles.finalHint}>Tap a final to hear it</Text>
             <View style={styles.chipsRow}>
               {newFinals.map((fin, i) => (
                 <TouchableOpacity
                   key={i} style={styles.chipFinalTappable}
-                  onPress={() => setSelectedFinal(fin)}
+                  onPress={() => singleFinals.has(fin) ? speakPinyin(fin) : setSelectedFinal(fin)}
                   activeOpacity={0.75}
                 >
                   <Text style={styles.chipFinalText}>{fin}</Text>
-                  <Text style={styles.chipFinalArrow}>↗</Text>
+                  <Text style={styles.chipFinalArrow}>{singleFinals.has(fin) ? '🔊' : '↗'}</Text>
                 </TouchableOpacity>
               ))}
             </View>
@@ -202,25 +202,11 @@ export default function PinyinLessonScreen({
           </>
         )}
 
-        {/* Spelling — collapsible, content added per-lesson via learn_content.spelling_rules */}
-        <TouchableOpacity
-          style={[styles.sectionLabel, styles.spellingHeader]}
-          onPress={() => setSpellingOpen(o => !o)}
-          activeOpacity={0.7}
-        >
-          <Text style={styles.sectionLabel}>✏️ SPELLING RULES</Text>
-          <Text style={styles.spellingChevron}>{spellingOpen ? '▲' : '▼'}</Text>
-        </TouchableOpacity>
-
-        {spellingOpen && (
-          (lessonData.learn_content?.spelling_rules || []).length === 0 ? (
-            <View style={styles.spellingPlaceholder}>
-              <Text style={styles.spellingPlaceholderText}>
-                🚧  Spelling examples coming soon
-              </Text>
-            </View>
-          ) : (
-            (lessonData.learn_content.spelling_rules).map((rule, i) => (
+        {/* Spelling rules — always visible */}
+        {(lessonData.learn_content?.spelling_rules || []).length > 0 && (
+          <>
+            <Text style={[styles.sectionLabel, { marginTop: 24 }]}>✏️ SPELLING RULES</Text>
+            {(lessonData.learn_content.spelling_rules).map((rule, i) => (
               <View key={i} style={styles.spellingRule}>
                 <Text style={styles.spellingRuleTitle}>{rule.title}</Text>
                 <Text style={styles.spellingRuleText}>{rule.rule}</Text>
@@ -236,8 +222,8 @@ export default function PinyinLessonScreen({
                   </TouchableOpacity>
                 ))}
               </View>
-            ))
-          )
+            ))}
+          </>
         )}
 
         <View style={{ height: 40 }} />
