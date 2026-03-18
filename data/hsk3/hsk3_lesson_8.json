@@ -1,0 +1,644 @@
+{
+  "lesson": 8,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Conditions & Decisions",
+  "topic_chinese": "你去哪儿我就跟去哪儿",
+  "vocabulary": [
+    {
+      "id": "hsk3_l8_01",
+      "chinese": "跟",
+      "pinyin": "gēn",
+      "tones": [1],
+      "english": "To follow / With / And",
+      "part_of_speech": "verb/preposition"
+    },
+    {
+      "id": "hsk3_l8_02",
+      "chinese": "不管",
+      "pinyin": "bù guǎn",
+      "tones": [4, 3],
+      "english": "No matter / Regardless of",
+      "part_of_speech": "conjunction"
+    },
+    {
+      "id": "hsk3_l8_03",
+      "chinese": "只要",
+      "pinyin": "zhǐ yào",
+      "tones": [3, 4],
+      "english": "As long as / So long as",
+      "part_of_speech": "conjunction"
+    },
+    {
+      "id": "hsk3_l8_04",
+      "chinese": "肯定",
+      "pinyin": "kěn dìng",
+      "tones": [3, 4],
+      "english": "Definitely / Certainly",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l8_05",
+      "chinese": "随便",
+      "pinyin": "suí biàn",
+      "tones": [2, 4],
+      "english": "As you like / Casual / Careless",
+      "part_of_speech": "adverb/adjective"
+    },
+    {
+      "id": "hsk3_l8_06",
+      "chinese": "反正",
+      "pinyin": "fǎn zhèng",
+      "tones": [3, 4],
+      "english": "Anyway / In any case",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l8_07",
+      "chinese": "算了",
+      "pinyin": "suàn le",
+      "tones": [4, 0],
+      "english": "Forget it / Never mind / Let it go",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l8_08",
+      "chinese": "无论",
+      "pinyin": "wú lùn",
+      "tones": [2, 4],
+      "english": "No matter (what/how/who)",
+      "part_of_speech": "conjunction"
+    },
+    {
+      "id": "hsk3_l8_09",
+      "chinese": "决定",
+      "pinyin": "jué dìng",
+      "tones": [2, 4],
+      "english": "To decide / Decision",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk3_l8_10",
+      "chinese": "选择",
+      "pinyin": "xuǎn zé",
+      "tones": [3, 2],
+      "english": "To choose / Choice",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk3_l8_11",
+      "chinese": "哪怕",
+      "pinyin": "nǎ pà",
+      "tones": [3, 4],
+      "english": "Even if / Even though",
+      "part_of_speech": "conjunction"
+    },
+    {
+      "id": "hsk3_l8_12",
+      "chinese": "一…就…",
+      "pinyin": "yī…jiù…",
+      "tones": [1, 4],
+      "english": "As soon as / Once...then",
+      "part_of_speech": "structure"
+    },
+    {
+      "id": "hsk3_l8_p01",
+      "chinese": "反正随便",
+      "pinyin": "fǎn zhèng suí biàn",
+      "tones": [3, 4, 2, 4],
+      "english": "Anyway, whatever you like",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l8_p02",
+      "chinese": "你决定吧",
+      "pinyin": "nǐ jué dìng ba",
+      "tones": [3, 2, 4, 0],
+      "english": "You decide",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l8_p03",
+      "chinese": "不管去哪儿",
+      "pinyin": "bù guǎn qù nǎr",
+      "tones": [4, 3, 4, 3],
+      "english": "No matter where we go",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l8_p04",
+      "chinese": "只要你高兴",
+      "pinyin": "zhǐ yào nǐ gāo xìng",
+      "tones": [3, 4, 3, 1, 4],
+      "english": "As long as you're happy",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l8_p05",
+      "chinese": "算了算了",
+      "pinyin": "suàn le suàn le",
+      "tones": [4, 0, 4, 0],
+      "english": "Forget it, forget it",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l8_p06",
+      "chinese": "无论如何",
+      "pinyin": "wú lùn rú hé",
+      "tones": [2, 4, 2, 2],
+      "english": "No matter what / Regardless",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l8_p07",
+      "chinese": "一来就走",
+      "pinyin": "yī lái jiù zǒu",
+      "tones": [1, 2, 4, 3],
+      "english": "As soon as he arrives, he leaves",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l8_p08",
+      "chinese": "跟你一起去",
+      "pinyin": "gēn nǐ yī qǐ qù",
+      "tones": [1, 3, 1, 3, 4],
+      "english": "Go together with you",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "你去哪儿，我就跟去哪儿。",
+      "pinyin": "Nǐ qù nǎr, wǒ jiù gēn qù nǎr.",
+      "english": "Wherever you go, I'll follow."
+    },
+    {
+      "chinese": "不管天气怎样，我们都去。",
+      "pinyin": "Bù guǎn tiān qì zěn yàng, wǒ men dōu qù.",
+      "english": "No matter what the weather is like, we'll go."
+    },
+    {
+      "chinese": "只要你高兴，我做什么都可以。",
+      "pinyin": "Zhǐ yào nǐ gāo xìng, wǒ zuò shén me dōu kě yǐ.",
+      "english": "As long as you're happy, I can do anything."
+    },
+    {
+      "chinese": "他一来就走，我都不知道他来了。",
+      "pinyin": "Tā yī lái jiù zǒu, wǒ dōu bù zhī dào tā lái le.",
+      "english": "He leaves as soon as he arrives — I didn't even know he'd come."
+    },
+    {
+      "chinese": "反正随便，你决定吧。",
+      "pinyin": "Fǎn zhèng suí biàn, nǐ jué dìng ba.",
+      "english": "Anyway, whatever — you decide."
+    },
+    {
+      "chinese": "无论如何，我都会跟你一起去。",
+      "pinyin": "Wú lùn rú hé, wǒ dōu huì gēn nǐ yī qǐ qù.",
+      "english": "No matter what, I will go with you."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "一...就... — As soon as...then...",
+      "explanation": "一 + Verb1 + 就 + Verb2 means 'as soon as [action 1] happens, [action 2] immediately follows'. The two actions are tightly connected in time. Subject can be the same or different. This pattern implies immediate consequence or habitual succession.",
+      "examples": [
+        {
+          "chinese": "他一来就走。",
+          "pinyin": "Tā yī lái jiù zǒu.",
+          "english": "As soon as he arrives, he leaves."
+        },
+        {
+          "chinese": "我一看书就想睡觉。",
+          "pinyin": "Wǒ yī kàn shū jiù xiǎng shuì jiào.",
+          "english": "As soon as I start reading, I want to sleep."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: 她___进门___开始做作业。(As soon as she walks in, she starts homework.)",
+          "type": "multiple_choice",
+          "correct": "一 / 就",
+          "options": ["一 / 就", "不 / 就", "只要 / 也", "无论 / 都"],
+          "option_pinyin": ["yī / jiù", "bù / jiù", "zhǐ yào / yě", "wú lùn / dōu"]
+        },
+        {
+          "question": "What does 一...就... express?",
+          "type": "multiple_choice",
+          "correct": "Immediate consequence: as soon as action 1, action 2",
+          "options": [
+            "Immediate consequence: as soon as action 1, action 2",
+            "Condition: only if action 1, then action 2",
+            "Contrast: action 1, but action 2",
+            "Duration: action 1 lasts until action 2"
+          ]
+        },
+        {
+          "question": "Which sentence uses 一...就... correctly?",
+          "type": "multiple_choice",
+          "correct": "我一到家就吃饭。",
+          "options": [
+            "我一到家就吃饭。",
+            "我只要到家就吃饭。",
+            "我不到家就不吃饭。",
+            "我到家一就吃饭。"
+          ],
+          "option_pinyin": [
+            "Wǒ yī dào jiā jiù chī fàn.",
+            "Wǒ zhǐ yào dào jiā jiù chī fàn.",
+            "Wǒ bù dào jiā jiù bù chī fàn.",
+            "Wǒ dào jiā yī jiù chī fàn."
+          ]
+        },
+        {
+          "question": "Translate: 天一黑，他就回家了。",
+          "type": "multiple_choice",
+          "correct": "As soon as it got dark, he went home.",
+          "options": [
+            "As soon as it got dark, he went home.",
+            "He went home because it was dark.",
+            "He will go home when it is dark.",
+            "No matter how dark it is, he goes home."
+          ]
+        },
+        {
+          "question": "Fill in: 她___听到音乐___开始跳舞。",
+          "type": "multiple_choice",
+          "correct": "一 / 就",
+          "options": ["一 / 就", "不管 / 都", "哪怕 / 也", "只要 / 才"],
+          "option_pinyin": ["yī / jiù", "bù guǎn / dōu", "nǎ pà / yě", "zhǐ yào / cái"]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "不管/无论...都/也... — No matter...",
+      "explanation": "不管/无论 + condition + 都/也 + result: expresses that the result is true regardless of the condition. 不管 and 无论 both mean 'no matter'; 无论 is slightly more formal and literary. The condition clause often contains question words (什么, 怎么, 谁, 哪里). 都 is most common in the result; 也 is also used.",
+      "examples": [
+        {
+          "chinese": "不管天气怎么样，我都去。",
+          "pinyin": "Bù guǎn tiān qì zěn me yàng, wǒ dōu qù.",
+          "english": "No matter what the weather, I'll go."
+        },
+        {
+          "chinese": "无论谁来，我也不怕。",
+          "pinyin": "Wú lùn shuí lái, wǒ yě bú pà.",
+          "english": "No matter who comes, I'm not afraid."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: ___你去哪儿，我___跟你去。",
+          "type": "multiple_choice",
+          "correct": "不管 / 都",
+          "options": ["不管 / 都", "只要 / 就", "一 / 就", "哪怕 / 才"],
+          "option_pinyin": ["bù guǎn / dōu", "zhǐ yào / jiù", "yī / jiù", "nǎ pà / cái"]
+        },
+        {
+          "question": "Which word is slightly more formal: 不管 or 无论?",
+          "type": "multiple_choice",
+          "correct": "无论",
+          "options": ["不管", "无论", "只要", "反正"],
+          "option_pinyin": ["bù guǎn", "wú lùn", "zhǐ yào", "fǎn zhèng"]
+        },
+        {
+          "question": "Choose the correct sentence: 'No matter what choice you make, I support you.'",
+          "type": "multiple_choice",
+          "correct": "不管你做什么选择，我都支持你。",
+          "options": [
+            "不管你做什么选择，我都支持你。",
+            "只要你做什么选择，我都支持你。",
+            "一你做选择，我就支持你。",
+            "你做选择，反正我支持。"
+          ],
+          "option_pinyin": [
+            "Bù guǎn nǐ zuò shén me xuǎn zé, wǒ dōu zhī chí nǐ.",
+            "Zhǐ yào nǐ zuò shén me xuǎn zé, wǒ dōu zhī chí nǐ.",
+            "Yī nǐ zuò xuǎn zé, wǒ jiù zhī chí nǐ.",
+            "Nǐ zuò xuǎn zé, fǎn zhèng wǒ zhī chí."
+          ]
+        },
+        {
+          "question": "What question words are typically found in the condition clause of 不管/无论?",
+          "type": "multiple_choice",
+          "correct": "什么, 怎么, 谁, 哪里",
+          "options": [
+            "什么, 怎么, 谁, 哪里",
+            "已经, 刚, 还, 又",
+            "因为, 所以, 虽然, 但是",
+            "的, 地, 得, 了"
+          ]
+        },
+        {
+          "question": "Translate: 无论如何，我都会决定的。",
+          "type": "multiple_choice",
+          "correct": "No matter what, I will make a decision.",
+          "options": [
+            "No matter what, I will make a decision.",
+            "As long as I decide, it will work.",
+            "As soon as I decide, I'll tell you.",
+            "Maybe I will make a decision."
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "疑问代词的活用 — Flexible Use of Question Words",
+      "explanation": "In Chinese, question words (哪, 什么, 怎么, 谁) can function as indefinite pronouns, meaning 'whatever / wherever / however / whoever'. This is called 活用 (flexible use). 你去哪儿我就去哪儿 = Wherever you go, I go. 什么都行 = Anything is fine. 怎么都可以 = Any way works. 谁都知道 = Everyone knows.",
+      "examples": [
+        {
+          "chinese": "你去哪儿，我就去哪儿。",
+          "pinyin": "Nǐ qù nǎr, wǒ jiù qù nǎr.",
+          "english": "Wherever you go, I'll go."
+        },
+        {
+          "chinese": "随便，什么都可以。",
+          "pinyin": "Suí biàn, shén me dōu kě yǐ.",
+          "english": "Whatever — anything is fine."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 什么都行 mean?",
+          "type": "multiple_choice",
+          "correct": "Anything is fine",
+          "options": ["Anything is fine", "Nothing works", "Something is okay", "Everything is wrong"],
+          "option_pinyin": ["shén me dōu xíng", "shén me dōu bù xíng", "yǒu xiē kě yǐ", "shén me dōu bú duì"]
+        },
+        {
+          "question": "Which sentence uses 怎么 as an indefinite pronoun?",
+          "type": "multiple_choice",
+          "correct": "怎么做都可以。",
+          "options": [
+            "怎么做都可以。",
+            "你怎么了？",
+            "怎么不来呢？",
+            "他不知道怎么办。"
+          ],
+          "option_pinyin": [
+            "Zěn me zuò dōu kě yǐ.",
+            "Nǐ zěn me le?",
+            "Zěn me bù lái ne?",
+            "Tā bù zhī dào zěn me bàn."
+          ]
+        },
+        {
+          "question": "Translate: 你去哪儿，我就跟去哪儿。",
+          "type": "multiple_choice",
+          "correct": "Wherever you go, I'll follow.",
+          "options": [
+            "Wherever you go, I'll follow.",
+            "You go somewhere; I'll stay here.",
+            "I'll go somewhere if you follow me.",
+            "No matter where, we go together."
+          ]
+        },
+        {
+          "question": "What does 谁都知道 mean?",
+          "type": "multiple_choice",
+          "correct": "Everyone knows",
+          "options": ["Everyone knows", "No one knows", "Someone knows", "Who knows?"],
+          "option_pinyin": ["shuí dōu zhī dào", "shuí dōu bù zhī dào", "yǒu rén zhī dào", "shuí zhī dào?"]
+        },
+        {
+          "question": "Fill in: ___你高兴，我___支持你的决定。(As long as you're happy, I'll support your decision.)",
+          "type": "multiple_choice",
+          "correct": "只要 / 就",
+          "options": ["只要 / 就", "不管 / 都", "一 / 就", "无论 / 也"],
+          "option_pinyin": ["zhǐ yào / jiù", "bù guǎn / dōu", "yī / jiù", "wú lùn / yě"]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 跟 mean in '跟你一起去'?",
+      "type": "multiple_choice",
+      "correct": "With / Together with",
+      "options": ["Against", "With / Together with", "Without", "Before"]
+    },
+    {
+      "question": "What does 不管 mean?",
+      "type": "multiple_choice",
+      "correct": "No matter / Regardless of",
+      "options": ["No matter / Regardless of", "As long as", "Even if", "Anyway"]
+    },
+    {
+      "question": "What does 只要 mean?",
+      "type": "multiple_choice",
+      "correct": "As long as / So long as",
+      "options": ["No matter", "As long as / So long as", "Even if", "Wherever"]
+    },
+    {
+      "question": "What does 随便 mean?",
+      "type": "multiple_choice",
+      "correct": "As you like / Whatever",
+      "options": ["Definitely", "As you like / Whatever", "Never mind", "No matter"]
+    },
+    {
+      "question": "What does 反正 mean?",
+      "type": "multiple_choice",
+      "correct": "Anyway / In any case",
+      "options": ["Anyway / In any case", "Definitely", "As soon as", "No matter"]
+    },
+    {
+      "question": "What does 算了 mean?",
+      "type": "multiple_choice",
+      "correct": "Forget it / Never mind",
+      "options": ["Let's do it", "Forget it / Never mind", "Of course", "Suddenly"]
+    },
+    {
+      "question": "What does 无论 mean?",
+      "type": "multiple_choice",
+      "correct": "No matter (what/how/who)",
+      "options": ["As you like", "No matter (what/how/who)", "As long as", "Anyway"]
+    },
+    {
+      "question": "What does 决定 mean?",
+      "type": "multiple_choice",
+      "correct": "To decide / Decision",
+      "options": ["To choose", "To decide / Decision", "To follow", "To forget"]
+    },
+    {
+      "question": "What does 哪怕 mean?",
+      "type": "multiple_choice",
+      "correct": "Even if / Even though",
+      "options": ["Wherever", "Even if / Even though", "As long as", "No matter what"]
+    },
+    {
+      "question": "What does 选择 mean?",
+      "type": "multiple_choice",
+      "correct": "To choose / Choice",
+      "options": ["To decide", "To choose / Choice", "To follow", "To go"]
+    },
+    {
+      "question": "Which pattern means 'as soon as action 1, action 2'?",
+      "type": "multiple_choice",
+      "correct": "一...就...",
+      "options": ["不管...都...", "只要...就...", "一...就...", "无论...也..."]
+    },
+    {
+      "question": "Fill in: 他___进来___坐下了。(As soon as he came in, he sat down.)",
+      "type": "multiple_choice",
+      "correct": "一 / 就",
+      "options": ["一 / 就", "不管 / 都", "只要 / 就", "哪怕 / 也"]
+    },
+    {
+      "question": "What does 无论如何 mean?",
+      "type": "multiple_choice",
+      "correct": "No matter what / Regardless",
+      "options": ["No matter what / Regardless", "As long as it works", "Suddenly", "Let it go"]
+    },
+    {
+      "question": "Complete: 不管去哪儿，我___跟你去。",
+      "type": "multiple_choice",
+      "correct": "都",
+      "options": ["都", "就", "才", "刚"]
+    },
+    {
+      "question": "What does 什么都行 mean?",
+      "type": "multiple_choice",
+      "correct": "Anything is fine",
+      "options": ["Anything is fine", "Nothing works", "Something is better", "Everything is too much"]
+    },
+    {
+      "question": "What does 反正随便 mean?",
+      "type": "multiple_choice",
+      "correct": "Anyway, whatever you like",
+      "options": ["Anyway, whatever you like", "Definitely, make a decision", "No matter what, follow me", "Let's go wherever"]
+    },
+    {
+      "question": "What does 只要你高兴 mean?",
+      "type": "multiple_choice",
+      "correct": "As long as you're happy",
+      "options": ["As long as you're happy", "No matter if you're happy", "Even if you're not happy", "As soon as you're happy"]
+    },
+    {
+      "question": "What does 一来就走 mean?",
+      "type": "multiple_choice",
+      "correct": "As soon as he arrives, he leaves",
+      "options": ["As soon as he arrives, he leaves", "He comes and stays", "He never arrives", "He came and then left later"]
+    },
+    {
+      "question": "What does 你决定吧 mean?",
+      "type": "multiple_choice",
+      "correct": "You decide",
+      "options": ["You decide", "I'll decide", "Let's decide together", "No one decides"]
+    },
+    {
+      "question": "What does 跟你一起去 mean?",
+      "type": "multiple_choice",
+      "correct": "Go together with you",
+      "options": ["Go together with you", "Go ahead of you", "Go without you", "Go after you"]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Where Should We Go?",
+      "title_chinese": "去哪儿好呢？",
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "朋友",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "大明，今天去哪儿玩？你决定吧。",
+          "pinyin": "Dà Míng, jīn tiān qù nǎr wán? Nǐ jué dìng ba.",
+          "english": "Da Ming, where should we go today? You decide."
+        },
+        {
+          "speaker": "B",
+          "chinese": "反正随便，你去哪儿我就跟去哪儿。",
+          "pinyin": "Fǎn zhèng suí biàn, nǐ qù nǎr wǒ jiù gēn qù nǎr.",
+          "english": "Anyway, whatever — wherever you go, I'll follow."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那去公园？不管天气怎样，我们都可以去。",
+          "pinyin": "Nà qù gōng yuán? Bù guǎn tiān qì zěn yàng, wǒ men dōu kě yǐ qù.",
+          "english": "How about the park? No matter what the weather, we can go."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好！只要你高兴，去哪儿都可以。我们无论如何都去。",
+          "pinyin": "Hǎo! Zhǐ yào nǐ gāo xìng, qù nǎr dōu kě yǐ. Wǒ men wú lùn rú hé dōu qù.",
+          "english": "Great! As long as you're happy, anywhere is fine. We'll go no matter what."
+        },
+        {
+          "speaker": "A",
+          "chinese": "哈哈，那就这样决定了！跟你一起去，肯定很开心。",
+          "pinyin": "Hā hā, nà jiù zhè yàng jué dìng le! Gēn nǐ yī qǐ qù, kěn dìng hěn kāi xīn.",
+          "english": "Haha, it's settled then! Going with you is definitely fun."
+        },
+        {
+          "speaker": "B",
+          "chinese": "一出门就走吧，别等了。",
+          "pinyin": "Yī chū mén jiù zǒu ba, bié děng le.",
+          "english": "Let's go as soon as we're out the door — no more waiting."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Making a Difficult Choice",
+      "title_chinese": "难以选择",
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "同学",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小刚，我不知道选择哪个工作，怎么办？",
+          "pinyin": "Xiǎo Gāng, wǒ bù zhī dào xuǎn zé nǎ gè gōng zuò, zěn me bàn?",
+          "english": "Xiao Gang, I don't know which job to choose — what should I do?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "算了算了，别想太多。不管选哪个，都会有机会发展。",
+          "pinyin": "Suàn le suàn le, bié xiǎng tài duō. Bù guǎn xuǎn nǎ gè, dōu huì yǒu jī huì fā zhǎn.",
+          "english": "Forget it, forget it — don't overthink it. No matter which you choose, there'll be opportunities to grow."
+        },
+        {
+          "speaker": "A",
+          "chinese": "哪怕工资少一点，只要工作有意思就好。",
+          "pinyin": "Nǎ pà gōng zī shǎo yī diǎn, zhǐ yào gōng zuò yǒu yì si jiù hǎo.",
+          "english": "Even if the pay is a little lower, as long as the work is interesting, that's fine."
+        },
+        {
+          "speaker": "B",
+          "chinese": "对，反正你一决定，就马上告诉我。",
+          "pinyin": "Duì, fǎn zhèng nǐ yī jué dìng, jiù mǎ shàng gào su wǒ.",
+          "english": "Right — anyway, as soon as you decide, tell me right away."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好，无论如何，谢谢你的支持！",
+          "pinyin": "Hǎo, wú lùn rú hé, xiè xie nǐ de zhī chí!",
+          "english": "Okay, no matter what — thank you for your support!"
+        }
+      ]
+    }
+  ]
+}

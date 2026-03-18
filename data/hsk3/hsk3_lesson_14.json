@@ -1,0 +1,536 @@
+{
+  "lesson": 14,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Directional Complements",
+  "topic_chinese": "请把水果拿过来",
+  "vocabulary": [
+    {
+      "id": "hsk3_l14_01",
+      "chinese": "过来",
+      "pinyin": "guò lái",
+      "tones": [4, 2],
+      "english": "Come over (towards speaker)",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_02",
+      "chinese": "过去",
+      "pinyin": "guò qù",
+      "tones": [4, 4],
+      "english": "Go over (away from speaker)",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_03",
+      "chinese": "进来",
+      "pinyin": "jìn lái",
+      "tones": [4, 2],
+      "english": "Come in",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_04",
+      "chinese": "进去",
+      "pinyin": "jìn qù",
+      "tones": [4, 4],
+      "english": "Go in",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_05",
+      "chinese": "出来",
+      "pinyin": "chū lái",
+      "tones": [1, 2],
+      "english": "Come out",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_06",
+      "chinese": "出去",
+      "pinyin": "chū qù",
+      "tones": [1, 4],
+      "english": "Go out",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_07",
+      "chinese": "上来",
+      "pinyin": "shàng lái",
+      "tones": [4, 2],
+      "english": "Come up",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_08",
+      "chinese": "下来",
+      "pinyin": "xià lái",
+      "tones": [4, 2],
+      "english": "Come down",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_09",
+      "chinese": "回来",
+      "pinyin": "huí lái",
+      "tones": [2, 2],
+      "english": "Come back",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_10",
+      "chinese": "回去",
+      "pinyin": "huí qù",
+      "tones": [2, 4],
+      "english": "Go back",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_11",
+      "chinese": "起来",
+      "pinyin": "qǐ lái",
+      "tones": [3, 2],
+      "english": "Rise up / Start to (aspect)",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_12",
+      "chinese": "带来",
+      "pinyin": "dài lái",
+      "tones": [4, 2],
+      "english": "Bring (here)",
+      "part_of_speech": "directional complement"
+    },
+    {
+      "id": "hsk3_l14_p01",
+      "chinese": "拿过来",
+      "pinyin": "ná guò lái",
+      "tones": [2, 4, 2],
+      "english": "Bring it over here",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l14_p02",
+      "chinese": "送进去",
+      "pinyin": "sòng jìn qù",
+      "tones": [4, 4, 4],
+      "english": "Send/deliver inside",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l14_p03",
+      "chinese": "走出来",
+      "pinyin": "zǒu chū lái",
+      "tones": [3, 1, 2],
+      "english": "Walk out (towards speaker)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l14_p04",
+      "chinese": "搬上来",
+      "pinyin": "bān shàng lái",
+      "tones": [1, 4, 2],
+      "english": "Carry up (towards speaker)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l14_p05",
+      "chinese": "跑回来",
+      "pinyin": "pǎo huí lái",
+      "tones": [3, 2, 2],
+      "english": "Run back (towards speaker)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l14_p06",
+      "chinese": "带过来",
+      "pinyin": "dài guò lái",
+      "tones": [4, 4, 2],
+      "english": "Bring over here",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l14_p07",
+      "chinese": "走进来",
+      "pinyin": "zǒu jìn lái",
+      "tones": [3, 4, 2],
+      "english": "Walk in (towards speaker)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l14_p08",
+      "chinese": "快回去",
+      "pinyin": "kuài huí qù",
+      "tones": [4, 2, 4],
+      "english": "Go back quickly",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "请把水果拿过来。",
+      "pinyin": "Qǐng bǎ shuǐ guǒ ná guò lái.",
+      "english": "Please bring the fruit over here."
+    },
+    {
+      "chinese": "他从楼下搬上来很多东西。",
+      "pinyin": "Tā cóng lóu xià bān shàng lái hěn duō dōng xi.",
+      "english": "He carried a lot of things up from downstairs."
+    },
+    {
+      "chinese": "你能把那本书带过来吗？",
+      "pinyin": "Nǐ néng bǎ nà běn shū dài guò lái ma?",
+      "english": "Can you bring that book over here?"
+    },
+    {
+      "chinese": "他走进来的时候，大家都站起来了。",
+      "pinyin": "Tā zǒu jìn lái de shí hòu, dà jiā dōu zhàn qǐ lái le.",
+      "english": "When he walked in, everyone stood up."
+    },
+    {
+      "chinese": "把书搬进去，放在书架上。",
+      "pinyin": "Bǎ shū bān jìn qù, fàng zài shū jià shàng.",
+      "english": "Carry the books inside and put them on the shelf."
+    },
+    {
+      "chinese": "她唱起来了，声音真好听。",
+      "pinyin": "Tā chàng qǐ lái le, shēng yīn zhēn hǎo tīng.",
+      "english": "She started singing — her voice sounds wonderful."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "趋向补语 — Directional Complements",
+      "explanation": "Verbs of motion + 来/去 or compound directional complements. 来 = towards speaker. 去 = away from speaker. Simple: 进来, 出去. Compound: 走进来 (walk in towards speaker), 跑出去 (run out away). The direction is always from the speaker's perspective.",
+      "examples": [
+        {
+          "chinese": "他跑进来了。",
+          "pinyin": "Tā pǎo jìn lái le.",
+          "english": "He ran in (towards me)."
+        },
+        {
+          "chinese": "她走出去了。",
+          "pinyin": "Tā zǒu chū qù le.",
+          "english": "She walked out (away from me)."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 来 indicate in a directional complement?",
+          "type": "multiple_choice",
+          "correct": "Movement towards the speaker",
+          "options": [
+            "Movement towards the speaker",
+            "Movement away from the speaker",
+            "Upward movement",
+            "Downward movement"
+          ]
+        },
+        {
+          "question": "Which means 'go in (away from speaker)'?",
+          "type": "multiple_choice",
+          "correct": "进去",
+          "options": ["进去", "进来", "出来", "出去"],
+          "option_pinyin": ["jìn qù", "jìn lái", "chū lái", "chū qù"]
+        },
+        {
+          "question": "Fill in: 他跑___了。(He ran in towards me.)",
+          "type": "multiple_choice",
+          "correct": "进来",
+          "options": ["进来", "出去", "回去", "上去"],
+          "option_pinyin": ["jìn lái", "chū qù", "huí qù", "shàng qù"]
+        },
+        {
+          "question": "Which is a compound directional complement?",
+          "type": "multiple_choice",
+          "correct": "走进来",
+          "options": ["走进来", "进", "来", "走"],
+          "option_pinyin": ["zǒu jìn lái", "jìn", "lái", "zǒu"]
+        },
+        {
+          "question": "Whose perspective determines 来 or 去?",
+          "type": "multiple_choice",
+          "correct": "The speaker's",
+          "options": ["The speaker's", "The listener's", "A third person's", "The subject's"]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "把字句 + 趋向补语 — Bǎ-sentence with Directional Complement",
+      "explanation": "Subject + 把 + Object + Verb + Directional complement. 请把水果拿过来 = Please bring the fruit over here. 把书搬进去 = Carry the books inside. The 把 + directional combination is very common for physical movement of objects.",
+      "examples": [
+        {
+          "chinese": "请把水果拿过来。",
+          "pinyin": "Qǐng bǎ shuǐ guǒ ná guò lái.",
+          "english": "Please bring the fruit over here."
+        },
+        {
+          "chinese": "他把行李搬上来了。",
+          "pinyin": "Tā bǎ xíng lǐ bān shàng lái le.",
+          "english": "He carried the luggage upstairs."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: 请___水果拿过来。(Please bring the fruit here.)",
+          "type": "multiple_choice",
+          "correct": "把",
+          "options": ["把", "被", "让", "在"],
+          "option_pinyin": ["bǎ", "bèi", "ràng", "zài"]
+        },
+        {
+          "question": "Which is a correct 把 + directional sentence?",
+          "type": "multiple_choice",
+          "correct": "把书搬进去。",
+          "options": ["把书搬进去。", "书把搬进去。", "把进去搬书。", "搬书把进去。"],
+          "option_pinyin": [
+            "Bǎ shū bān jìn qù.",
+            "Shū bǎ bān jìn qù.",
+            "Bǎ jìn qù bān shū.",
+            "Bān shū bǎ jìn qù."
+          ],
+          "correct_pinyin": "Bǎ shū bān jìn qù."
+        },
+        {
+          "question": "Translate: 把椅子搬出去。",
+          "type": "multiple_choice",
+          "correct": "Carry the chairs outside.",
+          "options": ["Carry the chairs outside.", "Bring the chairs in.", "Put the chairs down.", "Lift the chairs up."]
+        },
+        {
+          "question": "In a 把 + directional sentence, what follows the verb?",
+          "type": "multiple_choice",
+          "correct": "The directional complement",
+          "options": [
+            "The directional complement",
+            "Another subject",
+            "A question word",
+            "A time expression"
+          ]
+        },
+        {
+          "question": "What type of action is 把 + directional most used for?",
+          "type": "multiple_choice",
+          "correct": "Physical movement of objects",
+          "options": [
+            "Physical movement of objects",
+            "Mental activities",
+            "States and conditions",
+            "Future plans"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "起来 的特殊用法 — Special Use of 起来",
+      "explanation": "Beyond literal 'rise up', 起来 after a verb can mean 'start to' (action begins): 唱起来 = start singing. 笑起来 = start laughing. 看起来 (standalone) = seem/look like. 听起来 = sound like. These extended uses are very common in everyday speech.",
+      "examples": [
+        {
+          "chinese": "她突然哭起来了。",
+          "pinyin": "Tā tū rán kū qǐ lái le.",
+          "english": "She suddenly started crying."
+        },
+        {
+          "chinese": "这个菜看起来很好吃。",
+          "pinyin": "Zhè gè cài kàn qǐ lái hěn hǎo chī.",
+          "english": "This dish looks delicious."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 唱起来 mean?",
+          "type": "multiple_choice",
+          "correct": "Start singing",
+          "options": ["Start singing", "Stop singing", "Sing well", "Sing loudly"]
+        },
+        {
+          "question": "What does 看起来 mean as a standalone phrase?",
+          "type": "multiple_choice",
+          "correct": "Seem / Look like",
+          "options": ["Seem / Look like", "Start looking", "Look up", "Stand up and look"]
+        },
+        {
+          "question": "Fill in: 大家都___来了，气氛很好。(Everyone started laughing.)",
+          "type": "multiple_choice",
+          "correct": "笑起",
+          "options": ["笑起", "哭起", "跑起", "走起"],
+          "option_pinyin": ["xiào qǐ", "kū qǐ", "pǎo qǐ", "zǒu qǐ"]
+        },
+        {
+          "question": "What does 听起来 mean?",
+          "type": "multiple_choice",
+          "correct": "Sound like",
+          "options": ["Sound like", "Start listening", "Listen carefully", "Hear clearly"]
+        },
+        {
+          "question": "Translate: 这件事听起来很有意思。",
+          "type": "multiple_choice",
+          "correct": "This thing sounds very interesting.",
+          "options": ["This thing sounds very interesting.", "This thing looks interesting.", "This thing started interesting.", "This thing is interesting to hear."]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 过来 mean?",
+      "type": "multiple_choice",
+      "correct": "Come over (towards speaker)",
+      "options": ["Come over (towards speaker)", "Go over (away from speaker)", "Come in", "Go back"]
+    },
+    {
+      "question": "What does 进去 mean?",
+      "type": "multiple_choice",
+      "correct": "Go in",
+      "options": ["Go in", "Come in", "Go out", "Come out"]
+    },
+    {
+      "question": "What does 出来 mean?",
+      "type": "multiple_choice",
+      "correct": "Come out",
+      "options": ["Come out", "Go out", "Come in", "Go in"]
+    },
+    {
+      "question": "What does 回去 mean?",
+      "type": "multiple_choice",
+      "correct": "Go back",
+      "options": ["Go back", "Come back", "Go out", "Come up"]
+    },
+    {
+      "question": "What is the pinyin for 起来?",
+      "type": "multiple_choice",
+      "correct": "qǐ lái",
+      "options": ["qǐ lái", "huí lái", "chū lái", "shàng lái"]
+    },
+    {
+      "question": "What does 下来 mean?",
+      "type": "multiple_choice",
+      "correct": "Come down",
+      "options": ["Come down", "Come up", "Go down", "Go back"]
+    },
+    {
+      "question": "What does 带来 mean?",
+      "type": "multiple_choice",
+      "correct": "Bring (here)",
+      "options": ["Bring (here)", "Take away", "Go back", "Come over"]
+    },
+    {
+      "question": "In directional complements, what does 来 indicate?",
+      "type": "multiple_choice",
+      "correct": "Movement towards the speaker",
+      "options": ["Movement towards the speaker", "Movement away from the speaker", "Upward movement", "Completed action"]
+    },
+    {
+      "question": "Translate: 请把水果拿过来。",
+      "type": "multiple_choice",
+      "correct": "Please bring the fruit over here.",
+      "options": ["Please bring the fruit over here.", "Please take the fruit away.", "Please put the fruit down.", "Please carry the fruit upstairs."]
+    },
+    {
+      "question": "Which sentence uses 把 + directional correctly?",
+      "type": "multiple_choice",
+      "correct": "把书搬进去。",
+      "options": ["把书搬进去。", "书把进搬去。", "把进去书搬。", "进去把书搬。"]
+    },
+    {
+      "question": "What does 唱起来 mean?",
+      "type": "multiple_choice",
+      "correct": "Start singing",
+      "options": ["Start singing", "Stop singing", "Sing well", "Sing together"]
+    },
+    {
+      "question": "What does 看起来 mean as a standalone expression?",
+      "type": "multiple_choice",
+      "correct": "Seem / Look like",
+      "options": ["Seem / Look like", "Start looking", "Rise up to look", "Look carefully"]
+    },
+    {
+      "question": "Translate: 他走进来了。",
+      "type": "multiple_choice",
+      "correct": "He walked in (towards speaker).",
+      "options": ["He walked in (towards speaker).", "He walked out.", "He went in (away from speaker).", "He ran in."]
+    },
+    {
+      "question": "What does 搬上来 mean?",
+      "type": "multiple_choice",
+      "correct": "Carry up (towards speaker)",
+      "options": ["Carry up (towards speaker)", "Carry down", "Carry inside", "Carry over"]
+    },
+    {
+      "question": "What does 听起来 mean?",
+      "type": "multiple_choice",
+      "correct": "Sound like",
+      "options": ["Sound like", "Start listening", "Hear clearly", "Listen upward"]
+    },
+    {
+      "question": "Which complement means 'go out (away from speaker)'?",
+      "type": "multiple_choice",
+      "correct": "出去",
+      "options": ["出去", "出来", "进去", "进来"]
+    },
+    {
+      "question": "Translate: 跑回来",
+      "type": "multiple_choice",
+      "correct": "Run back (towards speaker)",
+      "options": ["Run back (towards speaker)", "Run away", "Run in", "Run out"]
+    },
+    {
+      "question": "Which word means 'go over (away from speaker)'?",
+      "type": "multiple_choice",
+      "correct": "过去",
+      "options": ["过去", "过来", "回来", "上来"]
+    },
+    {
+      "question": "Translate: 把椅子搬出去。",
+      "type": "multiple_choice",
+      "correct": "Carry the chairs outside.",
+      "options": ["Carry the chairs outside.", "Bring the chairs in.", "Move the chairs upstairs.", "Put the chairs down."]
+    },
+    {
+      "question": "What does 快回去 mean?",
+      "type": "multiple_choice",
+      "correct": "Go back quickly",
+      "options": ["Go back quickly", "Come back quickly", "Go in quickly", "Come out quickly"]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Helping Carry Things",
+      "title_chinese": "帮忙搬东西",
+      "speakers": {
+        "A": {"name": "小红", "role": "朋友", "gender": "female"},
+        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+      },
+      "lines": [
+        {"speaker": "A", "chinese": "大明，你能帮我把这些箱子搬进去吗？", "pinyin": "Dà Míng, nǐ néng bāng wǒ bǎ zhè xiē xiāng zi bān jìn qù ma?", "english": "Daming, can you help me carry these boxes inside?"},
+        {"speaker": "B", "chinese": "可以，放哪里？", "pinyin": "Kě yǐ, fàng nǎ lǐ?", "english": "Sure, where should they go?"},
+        {"speaker": "A", "chinese": "请把它们搬到楼上去，放在书房里。", "pinyin": "Qǐng bǎ tā men bān dào lóu shàng qù, fàng zài shū fáng lǐ.", "english": "Please carry them upstairs and put them in the study."},
+        {"speaker": "B", "chinese": "好的，那本书也要带过来吗？", "pinyin": "Hǎo de, nà běn shū yě yào dài guò lái ma?", "english": "Sure. Should I also bring that book over here?"},
+        {"speaker": "A", "chinese": "对，把书也搬上来，谢谢你！", "pinyin": "Duì, bǎ shū yě bān shàng lái, xiè xie nǐ!", "english": "Yes, bring the books up too — thank you!"},
+        {"speaker": "B", "chinese": "没问题，我把所有东西都搬进去。", "pinyin": "Méi wèn tí, wǒ bǎ suǒ yǒu dōng xi dōu bān jìn qù.", "english": "No problem — I'll carry everything inside."}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Giving Directions Inside a Building",
+      "title_chinese": "在楼里指路",
+      "speakers": {
+        "A": {"name": "小红", "role": "同事", "gender": "female"},
+        "B": {"name": "大明", "role": "同事", "gender": "male"}
+      },
+      "lines": [
+        {"speaker": "A", "chinese": "会议室在哪儿？我找不到。", "pinyin": "Huì yì shì zài nǎr? Wǒ zhǎo bú dào.", "english": "Where's the meeting room? I can't find it."},
+        {"speaker": "B", "chinese": "你走进来之后，往左边走过去。", "pinyin": "Nǐ zǒu jìn lái zhī hòu, wǎng zuǒ biān zǒu guò qù.", "english": "After you walk in, go over to the left."},
+        {"speaker": "A", "chinese": "然后呢？上楼还是下楼？", "pinyin": "Rán hòu ne? Shàng lóu hái shì xià lóu?", "english": "Then what? Go up or down?"},
+        {"speaker": "B", "chinese": "坐电梯上来，到三楼，然后往右走出去。", "pinyin": "Zuò diàn tī shàng lái, dào sān lóu, rán hòu wǎng yòu zǒu chū qù.", "english": "Take the elevator up to the third floor, then walk out to the right."},
+        {"speaker": "A", "chinese": "好的，我看起来可能要走错了，你带我过去吧！", "pinyin": "Hǎo de, wǒ kàn qǐ lái kě néng yào zǒu cuò le, nǐ dài wǒ guò qù ba!", "english": "OK, it looks like I might get lost — just take me there!"},
+        {"speaker": "B", "chinese": "哈哈，好吧，我带你过去。走，跟我来！", "pinyin": "Hā hā, hǎo ba, wǒ dài nǐ guò qù. Zǒu, gēn wǒ lái!", "english": "Ha ha, OK then — I'll take you there. Come on, follow me!"}
+      ]
+    }
+  ]
+}

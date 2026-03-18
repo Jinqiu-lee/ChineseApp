@@ -295,7 +295,7 @@
     {
       "type": "listen_final",
       "syllable": "guān",
-      "audio_key": "fin_an",
+      "audio_key": "fin_uan",
       "correct": "uan",
       "choices": [
         "uan",
@@ -307,7 +307,7 @@
     {
       "type": "listen_final",
       "syllable": "liáng",
-      "audio_key": "fin_ang",
+      "audio_key": "fin_iang",
       "correct": "iang",
       "choices": [
         "iang",
@@ -410,13 +410,13 @@
     },
     {
       "syllable": "xièxiè",
-      "audio_key": "xie3",
+      "audio_key": "xie4_xie4",
       "meaning": "thank you",
       "chinese": "谢谢"
     },
     {
       "syllable": "zàijiàn",
-      "audio_key": "zai4",
+      "audio_key": "zai4_jian4",
       "meaning": "goodbye",
       "chinese": "再见"
     },
@@ -606,7 +606,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T4, 一 rises"
+      "hint": "Before T4, 一 rises",
+      "pinyin_hint": "yī + gè"
     },
     {
       "type": "sandhi_choice",
@@ -618,12 +619,14 @@
         "3",
         "4"
       ],
-      "hint": "Before T4, 不 rises"
+      "hint": "Before T4, 不 rises",
+      "pinyin_hint": "bù + duì"
     },
     {
       "type": "neutral_choice",
       "prompt": "妈妈 māma — 2nd syllable is...",
       "correct": "neutral tone",
+      "pinyin_hint": "māma",
       "choices": [
         "neutral tone",
         "1st tone",
@@ -709,7 +712,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T4, 一 rises"
+      "hint": "Before T4, 一 rises",
+      "pinyin_hint": "yī + gè"
     },
     {
       "type": "sandhi_choice",
@@ -721,12 +725,14 @@
         "3",
         "4"
       ],
-      "hint": "Before T4, 不 rises"
+      "hint": "Before T4, 不 rises",
+      "pinyin_hint": "bù + duì"
     },
     {
       "type": "neutral_choice",
       "prompt": "妈妈 māma — 2nd syllable is...",
       "correct": "neutral tone",
+      "pinyin_hint": "māma",
       "choices": [
         "neutral tone",
         "1st tone",
@@ -744,6 +750,55 @@
         "s",
         "sh"
       ]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "zhī",
+      "audio_key": "init_zh",
+      "correct": "zh",
+      "choices": ["zh", "ch", "sh", "z"]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "jī",
+      "audio_key": "init_j",
+      "correct": "j",
+      "choices": ["j", "q", "x", "zh"]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "sī",
+      "audio_key": "init_s",
+      "correct": "s",
+      "choices": ["z", "c", "s", "sh"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "yīng",
+      "audio_key": "fin_ing",
+      "correct": "ing",
+      "choices": ["in", "ang", "ing", "ong"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "liáng",
+      "audio_key": "fin_iang",
+      "correct": "iang",
+      "choices": ["iang", "uang", "ang", "ing"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mā",
+      "audio_key": "ma1",
+      "correct": "1",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mǎ",
+      "audio_key": "ma3",
+      "correct": "3",
+      "choices": ["1", "2", "3", "4"]
     }
   ]
 }

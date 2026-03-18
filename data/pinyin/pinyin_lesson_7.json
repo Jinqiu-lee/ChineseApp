@@ -18,28 +18,28 @@
   ],
   "whole_syllables": {
     "retroflex_group": [
-      "zhi",
-      "chi",
-      "shi",
-      "ri"
+      "zhī",
+      "chī",
+      "shī",
+      "rì"
     ],
     "sibilant_group": [
-      "zi",
-      "ci",
-      "si"
+      "zì",
+      "cí",
+      "sī"
     ],
     "standalone_group": [
-      "yi",
-      "wu",
-      "yu"
+      "yī",
+      "wū",
+      "yú"
     ],
     "compound_group": [
-      "ye",
-      "yue",
-      "yuan",
-      "yin",
-      "yun",
-      "ying"
+      "yè",
+      "yuè",
+      "yuán",
+      "yīn",
+      "yún",
+      "yīng"
     ]
   },
   "learn_content": {
@@ -532,116 +532,87 @@
       "type": "visual_tone",
       "syllable": "zhī",
       "correct": "1",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ]
+      "choices": ["1", "2", "3", "4"]
     },
     {
       "type": "visual_tone",
       "syllable": "rì",
       "correct": "4",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ]
+      "choices": ["1", "2", "3", "4"]
     },
     {
       "type": "visual_tone",
       "syllable": "sì",
       "correct": "4",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ]
+      "choices": ["1", "2", "3", "4"]
     },
     {
       "type": "visual_tone",
       "syllable": "yī",
       "correct": "1",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ]
+      "choices": ["1", "2", "3", "4"]
     },
     {
       "type": "visual_tone",
       "syllable": "yú",
       "correct": "2",
-      "choices": [
-        "1",
-        "2",
-        "3",
-        "4"
-      ]
+      "choices": ["1", "2", "3", "4"]
     },
     {
       "type": "listen_syllable",
       "syllable": "zhī",
-      "audio_key": "ma1",
+      "audio_key": "zhi1",
       "correct": "zhi",
-      "choices": [
-        "zhi",
-        "chi",
-        "shi",
-        "zi"
-      ]
+      "choices": ["zhi", "chi", "shi", "zi"]
     },
     {
       "type": "listen_syllable",
       "syllable": "chī",
       "audio_key": "chi1",
       "correct": "chi",
-      "choices": [
-        "zhi",
-        "chi",
-        "shi",
-        "ri"
-      ]
+      "choices": ["zhi", "chi", "shi", "ri"]
+    },
+    {
+      "type": "listen_syllable",
+      "syllable": "shī",
+      "audio_key": "shi1",
+      "correct": "shi",
+      "choices": ["zhi", "chi", "shi", "ri"]
     },
     {
       "type": "listen_syllable",
       "syllable": "sì",
       "audio_key": "si4",
       "correct": "si",
-      "choices": [
-        "zi",
-        "ci",
-        "si",
-        "shi"
-      ]
+      "choices": ["zi", "ci", "si", "shi"]
     },
     {
       "type": "listen_syllable",
       "syllable": "yī",
       "audio_key": "yi1",
       "correct": "yi",
-      "choices": [
-        "yi",
-        "wu",
-        "yu",
-        "ya"
-      ]
+      "choices": ["yi", "wu", "yu", "ya"]
+    },
+    {
+      "type": "listen_syllable",
+      "syllable": "wū",
+      "audio_key": "wu1",
+      "correct": "wu",
+      "choices": ["yi", "wu", "yu", "wa"]
     },
     {
       "type": "listen_syllable",
       "syllable": "yú",
-      "audio_key": "ma2",
+      "audio_key": "yu2",
       "correct": "yu",
-      "choices": [
-        "yi",
-        "wu",
-        "yu",
-        "yue"
-      ]
+      "choices": ["yi", "wu", "yu", "yue"]
+    },
+    {
+      "type": "listen_syllable",
+      "syllable": "yuè",
+      "audio_key": "yue4",
+      "correct": "yue",
+      "choices": ["ye", "yue", "yuan", "yun"]
     }
   ]
 }

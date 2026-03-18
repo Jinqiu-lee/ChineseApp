@@ -1,0 +1,657 @@
+{
+  "lesson": 9,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Comparison & Compliments",
+  "topic_chinese": "她的汉语说得像中国人一样好",
+  "vocabulary": [
+    {
+      "id": "hsk3_l9_01",
+      "chinese": "汉语",
+      "pinyin": "hàn yǔ",
+      "tones": [4, 3],
+      "english": "Mandarin Chinese (language)",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l9_02",
+      "chinese": "一样",
+      "pinyin": "yī yàng",
+      "tones": [1, 4],
+      "english": "Same / Alike / As...as",
+      "part_of_speech": "adjective/adverb"
+    },
+    {
+      "id": "hsk3_l9_03",
+      "chinese": "像",
+      "pinyin": "xiàng",
+      "tones": [4],
+      "english": "Like / Similar to / Resemble",
+      "part_of_speech": "verb/preposition"
+    },
+    {
+      "id": "hsk3_l9_04",
+      "chinese": "还",
+      "pinyin": "hái",
+      "tones": [2],
+      "english": "Even more / Still / Also",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l9_05",
+      "chinese": "更",
+      "pinyin": "gèng",
+      "tones": [4],
+      "english": "Even more / More",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l9_06",
+      "chinese": "流利",
+      "pinyin": "liú lì",
+      "tones": [2, 4],
+      "english": "Fluent / Fluently",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk3_l9_07",
+      "chinese": "地道",
+      "pinyin": "dì dào",
+      "tones": [4, 4],
+      "english": "Authentic / Native-like",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk3_l9_08",
+      "chinese": "厉害",
+      "pinyin": "lì hài",
+      "tones": [4, 4],
+      "english": "Impressive / Fierce / Awesome",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk3_l9_09",
+      "chinese": "进步",
+      "pinyin": "jìn bù",
+      "tones": [4, 4],
+      "english": "Progress / To improve",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk3_l9_10",
+      "chinese": "赞",
+      "pinyin": "zàn",
+      "tones": [4],
+      "english": "To praise / Thumbs up / Great",
+      "part_of_speech": "verb/adjective"
+    },
+    {
+      "id": "hsk3_l9_11",
+      "chinese": "口音",
+      "pinyin": "kǒu yīn",
+      "tones": [3, 1],
+      "english": "Accent / Pronunciation",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l9_12",
+      "chinese": "母语",
+      "pinyin": "mǔ yǔ",
+      "tones": [3, 3],
+      "english": "Mother tongue / Native language",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l9_p01",
+      "chinese": "说得很流利",
+      "pinyin": "shuō de hěn liú lì",
+      "tones": [1, 0, 3, 2, 4],
+      "english": "Speaks very fluently",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l9_p02",
+      "chinese": "像中国人一样",
+      "pinyin": "xiàng Zhōng guó rén yī yàng",
+      "tones": [4, 1, 2, 2, 1, 4],
+      "english": "Like a Chinese person",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l9_p03",
+      "chinese": "比我更好",
+      "pinyin": "bǐ wǒ gèng hǎo",
+      "tones": [3, 3, 4, 3],
+      "english": "Even better than me",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l9_p04",
+      "chinese": "进步很大",
+      "pinyin": "jìn bù hěn dà",
+      "tones": [4, 4, 3, 4],
+      "english": "Great improvement / Made big progress",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l9_p05",
+      "chinese": "地道的汉语",
+      "pinyin": "dì dào de hàn yǔ",
+      "tones": [4, 4, 0, 4, 3],
+      "english": "Authentic / Native-level Chinese",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l9_p06",
+      "chinese": "真厉害",
+      "pinyin": "zhēn lì hài",
+      "tones": [1, 4, 4],
+      "english": "Truly impressive / So awesome",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l9_p07",
+      "chinese": "没有口音",
+      "pinyin": "méi yǒu kǒu yīn",
+      "tones": [2, 3, 3, 1],
+      "english": "No accent",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l9_p08",
+      "chinese": "一样好",
+      "pinyin": "yī yàng hǎo",
+      "tones": [1, 4, 3],
+      "english": "Equally good / Just as good",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "她的汉语说得像中国人一样好。",
+      "pinyin": "Tā de hàn yǔ shuō de xiàng Zhōng guó rén yī yàng hǎo.",
+      "english": "Her Chinese is as good as a native Chinese speaker."
+    },
+    {
+      "chinese": "他说得比我更流利，真厉害。",
+      "pinyin": "Tā shuō de bǐ wǒ gèng liú lì, zhēn lì hài.",
+      "english": "He speaks even more fluently than me — truly impressive."
+    },
+    {
+      "chinese": "她的进步很大，已经没有口音了。",
+      "pinyin": "Tā de jìn bù hěn dà, yǐ jīng méi yǒu kǒu yīn le.",
+      "english": "Her progress is huge — she already has no accent."
+    },
+    {
+      "chinese": "你说得很地道，像母语一样。",
+      "pinyin": "Nǐ shuō de hěn dì dào, xiàng mǔ yǔ yī yàng.",
+      "english": "You speak very authentically — just like your mother tongue."
+    },
+    {
+      "chinese": "她跑得像风一样快，真赞！",
+      "pinyin": "Tā pǎo de xiàng fēng yī yàng kuài, zhēn zàn!",
+      "english": "She runs as fast as the wind — amazing!"
+    },
+    {
+      "chinese": "他的汉语比我还好，我要更努力学习。",
+      "pinyin": "Tā de hàn yǔ bǐ wǒ hái hǎo, wǒ yào gèng nǔ lì xué xí.",
+      "english": "His Chinese is even better than mine — I need to study even harder."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "A比B还/更+Adj — A is even more...than B",
+      "explanation": "A + 比 + B + 还/更 + Adjective means 'A is even more [adjective] than B'. 还 and 更 both intensify the comparison beyond a simple 比 sentence. 还 is slightly more colloquial; 更 is neutral. The degree can be emphasised further with 多了 at the end: 比我更好多了 = much better than me.",
+      "examples": [
+        {
+          "chinese": "她的汉语比我还好。",
+          "pinyin": "Tā de hàn yǔ bǐ wǒ hái hǎo.",
+          "english": "Her Chinese is even better than mine."
+        },
+        {
+          "chinese": "今天比昨天更冷。",
+          "pinyin": "Jīn tiān bǐ zuó tiān gèng lěng.",
+          "english": "Today is even colder than yesterday."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: 他的口音比我___好，几乎没有外国口音。",
+          "type": "multiple_choice",
+          "correct": "还",
+          "options": ["还", "很", "不", "也"],
+          "option_pinyin": ["hái", "hěn", "bù", "yě"]
+        },
+        {
+          "question": "Which sentence means 'Her progress is even greater than before'?",
+          "type": "multiple_choice",
+          "correct": "她的进步比以前更大。",
+          "options": [
+            "她的进步比以前更大。",
+            "她的进步很大。",
+            "她的进步和以前一样。",
+            "她的进步没有以前大。"
+          ],
+          "option_pinyin": [
+            "Tā de jìn bù bǐ yǐ qián gèng dà.",
+            "Tā de jìn bù hěn dà.",
+            "Tā de jìn bù hé yǐ qián yī yàng.",
+            "Tā de jìn bù méi yǒu yǐ qián dà."
+          ]
+        },
+        {
+          "question": "What is the difference between 还 and 更 in 比 comparisons?",
+          "type": "multiple_choice",
+          "correct": "还 is more colloquial; 更 is neutral — both intensify the comparison",
+          "options": [
+            "还 is more colloquial; 更 is neutral — both intensify the comparison",
+            "还 means 'also'; 更 means 'most'",
+            "还 is used before adjectives; 更 is used after verbs",
+            "They cannot both follow 比"
+          ]
+        },
+        {
+          "question": "Translate: 她跑得比我还快。",
+          "type": "multiple_choice",
+          "correct": "She runs even faster than me.",
+          "options": [
+            "She runs even faster than me.",
+            "She runs as fast as me.",
+            "She runs slower than me.",
+            "She and I run at the same speed."
+          ]
+        },
+        {
+          "question": "How do you add emphasis meaning 'much more' to a 比 comparison?",
+          "type": "multiple_choice",
+          "correct": "Add 多了 at the end: 比我好多了",
+          "options": [
+            "Add 多了 at the end: 比我好多了",
+            "Add 非常 before the adjective",
+            "Use 最 instead of 更",
+            "Repeat the adjective twice"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "像...一样... — Like / As...as...",
+      "explanation": "像 + Noun/Pronoun + 一样 + Adj/Verb means 'like [noun], [adjective/verb]'. This pattern is used for similes and comparisons of equality. 她说得像中国人一样好 = She speaks as well as a Chinese person. 他跑得像风一样快 = He runs as fast as the wind. The structure can also omit 一样 when following directly: 像中国人好.",
+      "examples": [
+        {
+          "chinese": "她说得像中国人一样好。",
+          "pinyin": "Tā shuō de xiàng Zhōng guó rén yī yàng hǎo.",
+          "english": "She speaks as well as a Chinese person."
+        },
+        {
+          "chinese": "他跑得像风一样快。",
+          "pinyin": "Tā pǎo de xiàng fēng yī yàng kuài.",
+          "english": "He runs as fast as the wind."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: 她的汉语___母语___流利。(Her Chinese is as fluent as her mother tongue.)",
+          "type": "multiple_choice",
+          "correct": "像 / 一样",
+          "options": ["像 / 一样", "比 / 还", "和 / 一起", "跟 / 一样"],
+          "option_pinyin": ["xiàng / yī yàng", "bǐ / hái", "hé / yī qǐ", "gēn / yī yàng"]
+        },
+        {
+          "question": "What does 像风一样快 mean?",
+          "type": "multiple_choice",
+          "correct": "As fast as the wind",
+          "options": ["As fast as the wind", "Faster than the wind", "Like the wind, very slow", "Following the wind"],
+          "option_pinyin": ["xiàng fēng yī yàng kuài", "bǐ fēng hái kuài", "xiàng fēng yī yàng màn", "gēn zhe fēng"]
+        },
+        {
+          "question": "Which sentence correctly uses 像...一样?",
+          "type": "multiple_choice",
+          "correct": "他唱得像歌手一样好。",
+          "options": [
+            "他唱得像歌手一样好。",
+            "他唱得比歌手一样。",
+            "他一样唱得像歌手。",
+            "他唱歌像一样好。"
+          ],
+          "option_pinyin": [
+            "Tā chàng de xiàng gē shǒu yī yàng hǎo.",
+            "Tā chàng de bǐ gē shǒu yī yàng.",
+            "Tā yī yàng chàng de xiàng gē shǒu.",
+            "Tā chàng gē xiàng yī yàng hǎo."
+          ]
+        },
+        {
+          "question": "Translate: 这里的天气像北京一样冷。",
+          "type": "multiple_choice",
+          "correct": "The weather here is as cold as Beijing.",
+          "options": [
+            "The weather here is as cold as Beijing.",
+            "The weather here is colder than Beijing.",
+            "The weather here is like summer in Beijing.",
+            "Beijing's weather is just like here."
+          ]
+        },
+        {
+          "question": "What is the structure of 像...一样?",
+          "type": "multiple_choice",
+          "correct": "像 + Noun + 一样 + Adjective/Verb",
+          "options": [
+            "像 + Noun + 一样 + Adjective/Verb",
+            "Noun + 像 + Adjective + 一样",
+            "一样 + 像 + Noun + Adjective",
+            "Adjective + 像 + Noun + 一样"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "V得+Adj — Degree Complements",
+      "explanation": "Verb + 得 + Adjective/Adverb describes how well or to what degree an action is performed. This is the degree complement (程度补语). 说得好 = speaks well. 跑得快 = runs fast. 写得很漂亮 = writes very beautifully. Negative form: 说得不好 = doesn't speak well. Note: when an object is present, the verb must be repeated: 汉语说得很好.",
+      "examples": [
+        {
+          "chinese": "她汉语说得很流利。",
+          "pinyin": "Tā hàn yǔ shuō de hěn liú lì.",
+          "english": "She speaks Chinese very fluently."
+        },
+        {
+          "chinese": "他写得不太好，需要多练习。",
+          "pinyin": "Tā xiě de bú tài hǎo, xū yào duō liàn xí.",
+          "english": "He doesn't write very well; he needs more practice."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "How do you say 'She speaks Chinese very fluently'?",
+          "type": "multiple_choice",
+          "correct": "她汉语说得很流利。",
+          "options": [
+            "她汉语说得很流利。",
+            "她很流利说汉语。",
+            "她说汉语得很流利。",
+            "她流利地说汉语很。"
+          ],
+          "option_pinyin": [
+            "Tā hàn yǔ shuō de hěn liú lì.",
+            "Tā hěn liú lì shuō hàn yǔ.",
+            "Tā shuō hàn yǔ de hěn liú lì.",
+            "Tā liú lì de shuō hàn yǔ hěn."
+          ]
+        },
+        {
+          "question": "Fill in: 他唱歌唱___很好。",
+          "type": "multiple_choice",
+          "correct": "得",
+          "options": ["得", "了", "过", "着"],
+          "option_pinyin": ["de", "le", "guò", "zhe"]
+        },
+        {
+          "question": "What is the negative form of 说得好?",
+          "type": "multiple_choice",
+          "correct": "说得不好",
+          "options": ["说得不好", "不说得好", "说不得好", "说好得不"],
+          "option_pinyin": ["shuō de bù hǎo", "bù shuō de hǎo", "shuō bù de hǎo", "shuō hǎo de bù"]
+        },
+        {
+          "question": "When an object is present, how must the verb be structured?",
+          "type": "multiple_choice",
+          "correct": "The verb must be repeated: 汉语说得很好",
+          "options": [
+            "The verb must be repeated: 汉语说得很好",
+            "The object goes after 得: 说得汉语好",
+            "The verb is dropped: 汉语得很好",
+            "得 comes before the verb: 得说汉语很好"
+          ]
+        },
+        {
+          "question": "Translate: 她写字写得很漂亮。",
+          "type": "multiple_choice",
+          "correct": "She writes characters very beautifully.",
+          "options": [
+            "She writes characters very beautifully.",
+            "She has very beautiful characters.",
+            "She can't write beautifully.",
+            "Her writing is more beautiful than before."
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 汉语 mean?",
+      "type": "multiple_choice",
+      "correct": "Mandarin Chinese",
+      "options": ["English", "Mandarin Chinese", "Japanese", "Korean"]
+    },
+    {
+      "question": "What does 流利 mean?",
+      "type": "multiple_choice",
+      "correct": "Fluent / Fluently",
+      "options": ["Impressive", "Fluent / Fluently", "Authentic", "Native"]
+    },
+    {
+      "question": "What does 地道 mean?",
+      "type": "multiple_choice",
+      "correct": "Authentic / Native-like",
+      "options": ["Fluent", "Authentic / Native-like", "Impressive", "Perfect"]
+    },
+    {
+      "question": "What does 厉害 mean?",
+      "type": "multiple_choice",
+      "correct": "Impressive / Awesome",
+      "options": ["Fluent", "Easy", "Impressive / Awesome", "Strange"]
+    },
+    {
+      "question": "What does 进步 mean?",
+      "type": "multiple_choice",
+      "correct": "Progress / To improve",
+      "options": ["Progress / To improve", "Accent", "Mother tongue", "Language"]
+    },
+    {
+      "question": "What does 口音 mean?",
+      "type": "multiple_choice",
+      "correct": "Accent / Pronunciation",
+      "options": ["Volume", "Accent / Pronunciation", "Language", "Tone"]
+    },
+    {
+      "question": "What does 母语 mean?",
+      "type": "multiple_choice",
+      "correct": "Mother tongue / Native language",
+      "options": ["Foreign language", "Mother tongue / Native language", "Second language", "Written language"]
+    },
+    {
+      "question": "Which word means 'even more' in a comparison?",
+      "type": "multiple_choice",
+      "correct": "更",
+      "options": ["像", "一样", "更", "赞"]
+    },
+    {
+      "question": "What does 赞 mean informally?",
+      "type": "multiple_choice",
+      "correct": "Thumbs up / Great / Awesome",
+      "options": ["Boring", "Bad", "Thumbs up / Great / Awesome", "Normal"]
+    },
+    {
+      "question": "How do you say 'speaks very fluently'?",
+      "type": "multiple_choice",
+      "correct": "说得很流利",
+      "options": ["说得很流利", "说很流利", "流利地说", "说流利得很"]
+    },
+    {
+      "question": "What does 像中国人一样 mean?",
+      "type": "multiple_choice",
+      "correct": "Like a Chinese person",
+      "options": ["Like a Chinese person", "Better than a Chinese person", "Learning like Chinese", "Speaking to a Chinese person"]
+    },
+    {
+      "question": "Fill in: 她的汉语比我___好，进步很大。",
+      "type": "multiple_choice",
+      "correct": "还",
+      "options": ["还", "不", "很", "最"]
+    },
+    {
+      "question": "Which sentence correctly uses V得?",
+      "type": "multiple_choice",
+      "correct": "她唱得很好。",
+      "options": ["她唱得很好。", "她很好唱得。", "她唱很好得。", "她得唱好。"]
+    },
+    {
+      "question": "What does 进步很大 mean?",
+      "type": "multiple_choice",
+      "correct": "Made great progress",
+      "options": ["Made great progress", "Is very impressive", "Has no accent", "Speaks fluently"]
+    },
+    {
+      "question": "What does 没有口音 mean?",
+      "type": "multiple_choice",
+      "correct": "No accent",
+      "options": ["No accent", "Strong accent", "Native accent", "Foreign accent"]
+    },
+    {
+      "question": "What does 真厉害 mean?",
+      "type": "multiple_choice",
+      "correct": "Truly impressive",
+      "options": ["Truly impressive", "Very fluent", "Really authentic", "No accent"]
+    },
+    {
+      "question": "What does 一样好 mean?",
+      "type": "multiple_choice",
+      "correct": "Equally good / Just as good",
+      "options": ["Equally good / Just as good", "Even better", "Not as good", "The best"]
+    },
+    {
+      "question": "Translate: 她汉语说得像母语一样。",
+      "type": "multiple_choice",
+      "correct": "She speaks Chinese like her mother tongue.",
+      "options": [
+        "She speaks Chinese like her mother tongue.",
+        "She speaks Chinese better than her mother tongue.",
+        "Her mother tongue is Chinese.",
+        "She wants to speak Chinese like a native."
+      ]
+    },
+    {
+      "question": "What does 比我更好 mean?",
+      "type": "multiple_choice",
+      "correct": "Even better than me",
+      "options": ["Even better than me", "As good as me", "Not as good as me", "The best of all"]
+    },
+    {
+      "question": "What does 地道的汉语 mean?",
+      "type": "multiple_choice",
+      "correct": "Authentic / Native-level Chinese",
+      "options": ["Authentic / Native-level Chinese", "Broken Chinese", "Written Chinese", "Classical Chinese"]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Complimenting a Friend's Chinese",
+      "title_chinese": "夸朋友的汉语",
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "朋友",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "大明，你的汉语说得真好！像中国人一样，没有口音。",
+          "pinyin": "Dà Míng, nǐ de hàn yǔ shuō de zhēn hǎo! Xiàng Zhōng guó rén yī yàng, méi yǒu kǒu yīn.",
+          "english": "Da Ming, your Chinese is so good! Just like a native — no accent at all."
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢！我觉得我说得还不够流利，你比我更厉害。",
+          "pinyin": "Xiè xie! Wǒ jué de wǒ shuō de hái bú gòu liú lì, nǐ bǐ wǒ gèng lì hài.",
+          "english": "Thanks! I feel I'm still not fluent enough — you're even more impressive than me."
+        },
+        {
+          "speaker": "A",
+          "chinese": "哪里！你的进步很大，已经说得很地道了，真赞！",
+          "pinyin": "Nǎ lǐ! Nǐ de jìn bù hěn dà, yǐ jīng shuō de hěn dì dào le, zhēn zàn!",
+          "english": "Not at all! Your progress is huge — you already speak very authentically. Amazing!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "你说的话像鼓励一样，让我很开心。我会继续努力。",
+          "pinyin": "Nǐ shuō de huà xiàng gǔ lì yī yàng, ràng wǒ hěn kāi xīn. Wǒ huì jì xù nǔ lì.",
+          "english": "Your words are like encouragement — they make me very happy. I'll keep working hard."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好！你的汉语一定会比现在还好的。",
+          "pinyin": "Hǎo! Nǐ de hàn yǔ yī dìng huì bǐ xiàn zài hái hǎo de.",
+          "english": "Great! Your Chinese will definitely get even better than it is now."
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢你！你的鼓励对我很重要。",
+          "pinyin": "Xiè xie nǐ! Nǐ de gǔ lì duì wǒ hěn zhòng yào.",
+          "english": "Thank you! Your encouragement means a lot to me."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Comparing Language Skills",
+      "title_chinese": "比较语言水平",
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "同学",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小刚，你觉得学汉语难吗？",
+          "pinyin": "Xiǎo Gāng, nǐ jué de xué hàn yǔ nán ma?",
+          "english": "Xiao Gang, do you find learning Chinese difficult?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "挺难的，但是我进步了不少。老师说我说得比以前流利多了。",
+          "pinyin": "Tǐng nán de, dàn shi wǒ jìn bù le bù shǎo. Lǎo shī shuō wǒ shuō de bǐ yǐ qián liú lì duō le.",
+          "english": "It's quite difficult, but I've made a lot of progress. The teacher said I speak much more fluently than before."
+        },
+        {
+          "speaker": "A",
+          "chinese": "真的！你的汉语说得像母语一样自然，真厉害。",
+          "pinyin": "Zhēn de! Nǐ de hàn yǔ shuō de xiàng mǔ yǔ yī yàng zì rán, zhēn lì hài.",
+          "english": "Really! Your Chinese sounds as natural as your mother tongue — so impressive."
+        },
+        {
+          "speaker": "B",
+          "chinese": "你比我更好吧！你的口音比我地道多了。",
+          "pinyin": "Nǐ bǐ wǒ gèng hǎo ba! Nǐ de kǒu yīn bǐ wǒ dì dào duō le.",
+          "english": "You're even better than me! Your accent is much more native-sounding than mine."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我们互相学习吧，一起进步！",
+          "pinyin": "Wǒ men hù xiāng xué xí ba, yī qǐ jìn bù!",
+          "english": "Let's learn from each other and progress together!"
+        }
+      ]
+    }
+  ]
+}

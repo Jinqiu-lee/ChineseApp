@@ -1,0 +1,970 @@
+{
+  "lesson": 9,
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Hobby & Free Time",
+  "topic_chinese": "爱好与休闲",
+  "vocabulary": [
+    {
+      "id": "hsk2_l9_01",
+      "chinese": "问题",
+      "pinyin": "wèn tí",
+      "tones": [
+        4,
+        2
+      ],
+      "english": "Problem / Question",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l9_02",
+      "chinese": "非常",
+      "pinyin": "fēi cháng",
+      "tones": [
+        1,
+        2
+      ],
+      "english": "Extremely / Very",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l9_03",
+      "chinese": "考试",
+      "pinyin": "kǎo shì",
+      "tones": [
+        3,
+        4
+      ],
+      "english": "Examination / Test",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk2_l9_04",
+      "chinese": "题",
+      "pinyin": "tí",
+      "tones": [
+        2
+      ],
+      "english": "Question (on a test) / Topic",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l9_05",
+      "chinese": "错",
+      "pinyin": "cuò",
+      "tones": [
+        4
+      ],
+      "english": "Wrong / Incorrect",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l9_06",
+      "chinese": "对",
+      "pinyin": "duì",
+      "tones": [
+        4
+      ],
+      "english": "Correct / Right",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l9_07",
+      "chinese": "第一",
+      "pinyin": "dì yī",
+      "tones": [
+        4,
+        1
+      ],
+      "english": "First / Number one",
+      "part_of_speech": "numeral"
+    },
+    {
+      "id": "hsk2_l9_08",
+      "chinese": "懂",
+      "pinyin": "dǒng",
+      "tones": [
+        3
+      ],
+      "english": "To understand",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l9_09",
+      "chinese": "知道",
+      "pinyin": "zhī dào",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "To know",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l9_10",
+      "chinese": "已经",
+      "pinyin": "yǐ jīng",
+      "tones": [
+        3,
+        1
+      ],
+      "english": "Already",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l9_11",
+      "chinese": "两",
+      "pinyin": "liǎng",
+      "tones": [
+        3
+      ],
+      "english": "Two (of something)",
+      "part_of_speech": "numeral"
+    },
+    {
+      "id": "hsk2_l9_12",
+      "chinese": "完",
+      "pinyin": "wán",
+      "tones": [
+        2
+      ],
+      "english": "To finish / Completion marker",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l9_p01",
+      "chinese": "问了也没用",
+      "pinyin": "wèn le yě méi yòng",
+      "tones": [
+        4,
+        0,
+        3,
+        2,
+        4
+      ],
+      "english": "Asking is useless",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p02",
+      "chinese": "做错了两道题",
+      "pinyin": "zuò cuò le liǎng dào tí",
+      "tones": [
+        4,
+        4,
+        0,
+        3,
+        4,
+        2
+      ],
+      "english": "Got two questions wrong",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p03",
+      "chinese": "第一题",
+      "pinyin": "dì yī tí",
+      "tones": [
+        4,
+        1,
+        2
+      ],
+      "english": "The first question",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p04",
+      "chinese": "已经做完了",
+      "pinyin": "yǐ jīng zuò wán le",
+      "tones": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "english": "Already finished (doing)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p05",
+      "chinese": "考试非常难",
+      "pinyin": "kǎo shì fēi cháng nán",
+      "tones": [
+        3,
+        4,
+        1,
+        2,
+        2
+      ],
+      "english": "The exam is extremely difficult",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p06",
+      "chinese": "知道答案",
+      "pinyin": "zhī dào dá àn",
+      "tones": [
+        1,
+        4,
+        2,
+        4
+      ],
+      "english": "Know the answer",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p07",
+      "chinese": "对还是错",
+      "pinyin": "duì hái shì cuò",
+      "tones": [
+        4,
+        2,
+        4,
+        4
+      ],
+      "english": "Right or wrong",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p08",
+      "chinese": "懂这道题",
+      "pinyin": "dǒng zhè dào tí",
+      "tones": [
+        3,
+        4,
+        4,
+        2
+      ],
+      "english": "Understand this question",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hsk2_l9_p01",
+      "chinese": "问了也没用",
+      "pinyin": "wèn le yě méi yòng",
+      "tones": [
+        4,
+        0,
+        3,
+        2,
+        4
+      ],
+      "english": "Asking is useless",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p02",
+      "chinese": "做错了两道题",
+      "pinyin": "zuò cuò le liǎng dào tí",
+      "tones": [
+        4,
+        4,
+        0,
+        3,
+        4,
+        2
+      ],
+      "english": "Got two questions wrong",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p03",
+      "chinese": "第一题",
+      "pinyin": "dì yī tí",
+      "tones": [
+        4,
+        1,
+        2
+      ],
+      "english": "The first question",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p04",
+      "chinese": "已经做完了",
+      "pinyin": "yǐ jīng zuò wán le",
+      "tones": [
+        3,
+        1,
+        4,
+        2,
+        0
+      ],
+      "english": "Already finished (doing)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p05",
+      "chinese": "考试非常难",
+      "pinyin": "kǎo shì fēi cháng nán",
+      "tones": [
+        3,
+        4,
+        1,
+        2,
+        2
+      ],
+      "english": "The exam is extremely difficult",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p06",
+      "chinese": "知道答案",
+      "pinyin": "zhī dào dá àn",
+      "tones": [
+        1,
+        4,
+        2,
+        4
+      ],
+      "english": "Know the answer",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p07",
+      "chinese": "对还是错",
+      "pinyin": "duì hái shì cuò",
+      "tones": [
+        4,
+        2,
+        4,
+        4
+      ],
+      "english": "Right or wrong",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l9_p08",
+      "chinese": "懂这道题",
+      "pinyin": "dǒng zhè dào tí",
+      "tones": [
+        3,
+        4,
+        4,
+        2
+      ],
+      "english": "Understand this question",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "那里问题太多，问了也没用。",
+      "pinyin": "Nà lǐ wèn tí tài duō, wèn le yě méi yòng.",
+      "english": "There were too many questions there; asking was useless."
+    },
+    {
+      "chinese": "这次考试非常难，我做错了两道题。",
+      "pinyin": "Zhè cì kǎo shì fēi cháng nán, wǒ zuò cuò le liǎng dào tí.",
+      "english": "This exam was extremely difficult; I got two questions wrong."
+    },
+    {
+      "chinese": "你知道第一题的答案吗？",
+      "pinyin": "Nǐ zhī dào dì yī tí de dá àn ma?",
+      "english": "Do you know the answer to the first question?"
+    },
+    {
+      "chinese": "我已经做完考试题了。",
+      "pinyin": "Wǒ yǐ jīng zuò wán kǎo shì tí le.",
+      "english": "I have already finished the exam questions."
+    },
+    {
+      "chinese": "他把第一题的答案写对了。",
+      "pinyin": "Tā bǎ dì yī tí de dá àn xiě duì le.",
+      "english": "He wrote the answer to the first question correctly."
+    },
+    {
+      "chinese": "不管怎么问，他什么都不懂。",
+      "pinyin": "Bù guǎn zěn me wèn, tā shén me dōu bù dǒng.",
+      "english": "No matter how you ask, he doesn't understand anything."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "疑问代词任指 — Interrogative Pronouns as Indefinites",
+      "explanation": "In Chinese, interrogative pronouns (什么, 谁, 哪里, 怎么, etc.) can be used with 都/也 to express 'everything / everyone / everywhere / in any way'. Structure: Interrogative Pronoun + 都/也 + Verb. Example: 什么都好 (Everything is fine); 哪里都有 (It's everywhere); 谁都知道 (Everyone knows). The pronoun is no longer asking a question — it makes a universal statement.",
+      "examples": [
+        {
+          "chinese": "他什么都不懂。",
+          "pinyin": "Tā shén me dōu bù dǒng.",
+          "english": "He doesn't understand anything."
+        },
+        {
+          "chinese": "谁都知道这道题的答案。",
+          "pinyin": "Shéi dōu zhī dào zhè dào tí de dá àn.",
+          "english": "Everyone knows the answer to this question."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 什么都 mean in '他什么都不知道'?",
+          "type": "multiple_choice",
+          "correct": "Doesn't know anything",
+          "options": [
+            "Doesn't know anything",
+            "What does he know",
+            "He knows something",
+            "He knows nothing specific"
+          ]
+        },
+        {
+          "question": "Which sentence means 'Everyone is going'?",
+          "type": "multiple_choice",
+          "correct": "谁都去。",
+          "options": [
+            "谁都去。",
+            "谁都不去。",
+            "谁去了？",
+            "谁要去？"
+          ],
+          "correct_pinyin": "Shéi dōu qù."
+        },
+        {
+          "question": "Fill in: 她___都懂，非常聪明。(She understands everything; very smart.)",
+          "type": "multiple_choice",
+          "correct": "什么",
+          "options": [
+            "什么",
+            "怎么",
+            "哪里",
+            "为什么"
+          ],
+          "option_pinyin": [
+            "shén me",
+            "zěn me",
+            "nǎ lǐ",
+            "wèi shén me"
+          ]
+        },
+        {
+          "question": "What does 问了也没用 mean?",
+          "type": "multiple_choice",
+          "correct": "Asking (it) is useless too",
+          "options": [
+            "Asking (it) is useless too",
+            "No one has questions",
+            "There are no questions",
+            "The question is wrong"
+          ],
+          "option_pinyin": [
+            "wèn le yě méi yòng",
+            "méi rén yǒu wèn tí",
+            "méi yǒu wèn tí",
+            "wèn tí cuò le"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "连动句 — Serial Verb Sentences",
+      "explanation": "A serial verb sentence (连动句) has two or more verbs (or verb phrases) in sequence, sharing the same subject. The verbs occur in the logical or temporal order of the actions. Structure: Subject + Verb1 + Verb2. There is no conjunction between them. Examples: 我去图书馆借书 (I go to the library to borrow books — going is the means, borrowing is the purpose).",
+      "examples": [
+        {
+          "chinese": "我去学校考试。",
+          "pinyin": "Wǒ qù xué xiào kǎo shì.",
+          "english": "I go to school to take an exam."
+        },
+        {
+          "chinese": "他拿笔写答案。",
+          "pinyin": "Tā ná bǐ xiě dá àn.",
+          "english": "He picks up a pen to write the answer."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What is a serial verb sentence?",
+          "type": "multiple_choice",
+          "correct": "A sentence with two or more verbs sharing one subject",
+          "options": [
+            "A sentence with two or more verbs sharing one subject",
+            "A sentence asking two questions",
+            "A sentence with two subjects",
+            "A sentence using 和 to connect verbs"
+          ]
+        },
+        {
+          "question": "Which sentence is a serial verb sentence?",
+          "type": "multiple_choice",
+          "correct": "她去图书馆借书。",
+          "options": [
+            "她去图书馆借书。",
+            "她去图书馆，也借书。",
+            "她去了图书馆，又借了书。",
+            "她去了图书馆，借书了。"
+          ],
+          "correct_pinyin": "Tā qù túshūguǎn jiè shū."
+        },
+        {
+          "question": "In 我去学校考试, what is the relationship between the two verbs?",
+          "type": "multiple_choice",
+          "correct": "The first verb is the means/method; the second is the purpose",
+          "options": [
+            "The first verb is the means/method; the second is the purpose",
+            "They happen at the same time",
+            "The second verb happened first",
+            "They describe different subjects"
+          ]
+        },
+        {
+          "question": "Which phrase means 'already finished'?",
+          "type": "multiple_choice",
+          "correct": "已经做完了",
+          "options": [
+            "已经做完了",
+            "还没做完",
+            "做错了",
+            "懂这道题"
+          ],
+          "option_pinyin": [
+            "yǐ jīng zuò wán le",
+            "hái méi zuò wán",
+            "zuò cuò le",
+            "dǒng zhè dào tí"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "「把」字句 — The bǎ Sentence",
+      "explanation": "The 把 (bǎ) sentence is used when the action has a specific effect or result on the object. Structure: Subject + 把 + Object + Verb + Result/Complement. The object must be definite (known). 把 moves the object before the verb to emphasise what happens to it. The verb cannot stand alone — it needs a complement or 了. Example: 他把书看完了 (He finished reading the book).",
+      "examples": [
+        {
+          "chinese": "他把第一题的答案写对了。",
+          "pinyin": "Tā bǎ dì yī tí de dá àn xiě duì le.",
+          "english": "He wrote the answer to the first question correctly."
+        },
+        {
+          "chinese": "我把考试题做完了。",
+          "pinyin": "Wǒ bǎ kǎo shì tí zuò wán le.",
+          "english": "I finished all the exam questions."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "When is the 把 sentence used?",
+          "type": "multiple_choice",
+          "correct": "When the action has a specific effect or result on a definite object",
+          "options": [
+            "When the action has a specific effect or result on a definite object",
+            "For any sentence with an object",
+            "For past actions only",
+            "For negative sentences"
+          ]
+        },
+        {
+          "question": "Which sentence is a correct 把 sentence?",
+          "type": "multiple_choice",
+          "correct": "她把作业做完了。",
+          "options": [
+            "她把作业做完了。",
+            "她做完作业把了。",
+            "把她作业做完了。",
+            "她做把作业完了。"
+          ],
+          "correct_pinyin": "Tā bǎ zuò yè zuò wán le."
+        },
+        {
+          "question": "Fill in: 他___那道错题改对了。(He corrected that wrong question.)",
+          "type": "multiple_choice",
+          "correct": "把",
+          "options": [
+            "把",
+            "让",
+            "被",
+            "给"
+          ],
+          "option_pinyin": [
+            "bǎ",
+            "ràng",
+            "bèi",
+            "gěi"
+          ]
+        },
+        {
+          "question": "What does 做错了两道题 mean?",
+          "type": "multiple_choice",
+          "correct": "Got two questions wrong",
+          "options": [
+            "Got two questions wrong",
+            "Finished two questions",
+            "Did two questions correctly",
+            "Had two questions left"
+          ],
+          "option_pinyin": [
+            "zuò cuò le liǎng dào tí",
+            "zuò wán le liǎng dào tí",
+            "zuò duì le liǎng dào tí",
+            "hái yǒu liǎng dào tí"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 问题 mean?",
+      "type": "multiple_choice",
+      "correct": "Problem / Question",
+      "options": [
+        "Answer",
+        "Problem / Question",
+        "Topic",
+        "Exercise"
+      ]
+    },
+    {
+      "question": "What does 考试 mean?",
+      "type": "multiple_choice",
+      "correct": "Examination / Test",
+      "options": [
+        "Homework",
+        "Examination / Test",
+        "Class",
+        "Lesson"
+      ]
+    },
+    {
+      "question": "What does 错 mean?",
+      "type": "multiple_choice",
+      "correct": "Wrong / Incorrect",
+      "options": [
+        "Right",
+        "Wrong / Incorrect",
+        "Good",
+        "Strange"
+      ]
+    },
+    {
+      "question": "What does 对 mean?",
+      "type": "multiple_choice",
+      "correct": "Correct / Right",
+      "options": [
+        "Wrong",
+        "Correct / Right",
+        "Big",
+        "Hard"
+      ]
+    },
+    {
+      "question": "What does 第一 mean?",
+      "type": "multiple_choice",
+      "correct": "First / Number one",
+      "options": [
+        "First / Number one",
+        "Second",
+        "Last",
+        "Only"
+      ]
+    },
+    {
+      "question": "What does 两 mean?",
+      "type": "multiple_choice",
+      "correct": "Two (of something)",
+      "options": [
+        "Both",
+        "Some",
+        "Two (of something)",
+        "A few"
+      ]
+    },
+    {
+      "question": "What does 完 mean after a verb?",
+      "type": "multiple_choice",
+      "correct": "Completion of the action",
+      "options": [
+        "Start of the action",
+        "Completion of the action",
+        "Repetition",
+        "Negation"
+      ]
+    },
+    {
+      "question": "What does 题 mean?",
+      "type": "multiple_choice",
+      "correct": "Question (on a test) / Topic",
+      "options": [
+        "Answer",
+        "Question (on a test) / Topic",
+        "Mistake",
+        "Number"
+      ]
+    },
+    {
+      "question": "Which sentence means 'He doesn't understand anything'?",
+      "type": "multiple_choice",
+      "correct": "他什么都不懂。",
+      "options": [
+        "他什么都不懂。",
+        "他懂什么都。",
+        "他不懂什么。",
+        "什么他都不懂。"
+      ]
+    },
+    {
+      "question": "Which is a correct 把 sentence?",
+      "type": "multiple_choice",
+      "correct": "我把作业做完了。",
+      "options": [
+        "我把作业做完了。",
+        "我做完把作业了。",
+        "把我作业做完了。",
+        "我做把作业完了。"
+      ]
+    },
+    {
+      "question": "What does 非常 mean?",
+      "type": "multiple_choice",
+      "correct": "Extremely / Very",
+      "options": [
+        "A little",
+        "Extremely / Very",
+        "Sometimes",
+        "Not at all"
+      ]
+    },
+    {
+      "question": "What does 已经 mean?",
+      "type": "multiple_choice",
+      "correct": "Already",
+      "options": [
+        "Not yet",
+        "Still",
+        "Already",
+        "Again"
+      ]
+    },
+    {
+      "question": "What does 知道 mean?",
+      "type": "multiple_choice",
+      "correct": "To know",
+      "options": [
+        "To understand",
+        "To know",
+        "To see",
+        "To think"
+      ]
+    },
+    {
+      "question": "Which sentence uses an interrogative pronoun as an indefinite?",
+      "type": "multiple_choice",
+      "correct": "她哪里都去过。",
+      "options": [
+        "她哪里去了？",
+        "她哪里都去过。",
+        "她去哪里？",
+        "她哪里不去？"
+      ]
+    },
+    {
+      "question": "Which sentence means 'I went to school to take an exam' (serial verb)?",
+      "type": "multiple_choice",
+      "correct": "我去学校考试。",
+      "options": [
+        "我去学校，也考试。",
+        "我去学校考试。",
+        "我去了学校，又考了试。",
+        "我在学校考试了。"
+      ]
+    },
+    {
+      "question": "How do you say 'got two questions wrong'?",
+      "type": "multiple_choice",
+      "correct": "做错了两道题",
+      "options": [
+        "做错了两道题",
+        "做对了两道题",
+        "做完了两道题",
+        "做了两道题"
+      ]
+    },
+    {
+      "question": "What does 考试非常难 mean?",
+      "type": "multiple_choice",
+      "correct": "The exam is extremely difficult",
+      "options": [
+        "The exam is extremely difficult",
+        "The exam is very easy",
+        "The exam has too many questions",
+        "The exam is finished"
+      ]
+    },
+    {
+      "question": "How do you say 'right or wrong'?",
+      "type": "multiple_choice",
+      "correct": "对还是错",
+      "options": [
+        "对还是错",
+        "错还是对",
+        "第一还是两",
+        "懂还是不懂"
+      ]
+    },
+    {
+      "question": "What does 知道答案 mean?",
+      "type": "multiple_choice",
+      "correct": "Know the answer",
+      "options": [
+        "Know the answer",
+        "Know the question",
+        "Understand the exam",
+        "Write the answer"
+      ]
+    },
+    {
+      "question": "Fill in: 这次___非常难，我做___了两道题，___已经改完了。",
+      "type": "multiple_choice",
+      "correct": "考试 / 错 / 完",
+      "options": [
+        "考试 / 错 / 完",
+        "问题 / 对 / 懂",
+        "题 / 完 / 错",
+        "非常 / 懂 / 对"
+      ]
+    },
+    {
+      "question": "What does 考试非常难 mean?",
+      "type": "multiple_choice",
+      "correct": "The exam is extremely difficult",
+      "options": [
+        "The exam is extremely difficult",
+        "The exam is very easy",
+        "The exam is already done",
+        "The exam has wrong answers"
+      ]
+    },
+    {
+      "question": "What does 知道答案 mean?",
+      "type": "multiple_choice",
+      "correct": "Know the answer",
+      "options": [
+        "Know the answer",
+        "Write the answer",
+        "Forget the answer",
+        "Have no answer"
+      ]
+    },
+    {
+      "question": "What does 对还是错 mean?",
+      "type": "multiple_choice",
+      "correct": "Right or wrong",
+      "options": [
+        "Right or wrong",
+        "First or second",
+        "Do it or not",
+        "Finish or not"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "After the Exam",
+      "title_chinese": "考试以后",
+      "speakers": {
+        "A": {
+          "name": "小明",
+          "role": "学生",
+          "gender": "male"
+        },
+        "B": {
+          "name": "小丽",
+          "role": "学生",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "这次考试太难了，你做完了吗？",
+          "pinyin": "Zhè cì kǎo shì tài nán le, nǐ zuò wán le ma?",
+          "english": "This exam was so difficult; did you finish it?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "做完了，但是我已经错了两道题。",
+          "pinyin": "Zuò wán le, dàn shì wǒ yǐ jīng cuò le liǎng dào tí.",
+          "english": "I finished, but I already got two questions wrong."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那里问题太多，问了也没用，我也不知道。",
+          "pinyin": "Nà lǐ wèn tí tài duō, wèn le yě méi yòng, wǒ yě bù zhī dào.",
+          "english": "There were too many questions there; asking was useless; I didn't know either."
+        },
+        {
+          "speaker": "B",
+          "chinese": "第一题你对了吗？",
+          "pinyin": "Dì yī tí nǐ duì le ma?",
+          "english": "Did you get the first question right?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "对了，但是我把第三题做错了。",
+          "pinyin": "Duì le, dàn shì wǒ bǎ dì sān tí zuò cuò le.",
+          "english": "Yes, but I got the third question wrong."
+        },
+        {
+          "speaker": "B",
+          "chinese": "下次考试前，大家一起复习吧！",
+          "pinyin": "Xià cì kǎo shì qián, dà jiā yì qǐ fù xí ba!",
+          "english": "Before the next exam, let's all study together!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Helping a Classmate",
+      "title_chinese": "帮助同学",
+      "speakers": {
+        "A": {
+          "name": "小华",
+          "role": "学生",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "学生",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你懂这道题吗？我不知道怎么做。",
+          "pinyin": "Nǐ dǒng zhè dào tí ma? Wǒ bù zhī dào zěn me zuò.",
+          "english": "Do you understand this question? I don't know how to do it."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我来看看，是哪一道？第一题？",
+          "pinyin": "Wǒ lái kàn kan, shì nǎ yī dào? Dì yī tí?",
+          "english": "Let me have a look; which one is it? The first question?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "是的，这道题非常难，我已经做错两次了。",
+          "pinyin": "Shì de, zhè dào tí fēi cháng nán, wǒ yǐ jīng zuò cuò liǎng cì le.",
+          "english": "Yes; this question is extremely difficult; I've already got it wrong twice."
+        },
+        {
+          "speaker": "B",
+          "chinese": "没问题，我把答案告诉你。你要把它写对。",
+          "pinyin": "Méi wèn tí, wǒ bǎ dá àn gào su nǐ. Nǐ yào bǎ tā xiě duì.",
+          "english": "No problem; I'll tell you the answer. You need to write it correctly."
+        },
+        {
+          "speaker": "A",
+          "chinese": "谢谢，我懂了！我把答案改完就好了。",
+          "pinyin": "Xiè xie, wǒ dǒng le! Wǒ bǎ dá àn gǎi wán jiù hǎo le.",
+          "english": "Thank you; I understand now! Once I've corrected the answer, it'll be fine."
+        }
+      ]
+    }
+  ]
+}

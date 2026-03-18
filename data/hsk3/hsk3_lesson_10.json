@@ -1,0 +1,660 @@
+{
+  "lesson": 10,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Study & Subjects",
+  "topic_chinese": "数学比历史难多了",
+  "vocabulary": [
+    {
+      "id": "hsk3_l10_01",
+      "chinese": "数学",
+      "pinyin": "shù xué",
+      "tones": [4, 2],
+      "english": "Mathematics",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l10_02",
+      "chinese": "历史",
+      "pinyin": "lì shǐ",
+      "tones": [4, 3],
+      "english": "History",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l10_03",
+      "chinese": "难",
+      "pinyin": "nán",
+      "tones": [2],
+      "english": "Difficult / Hard",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk3_l10_04",
+      "chinese": "容易",
+      "pinyin": "róng yì",
+      "tones": [2, 4],
+      "english": "Easy",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk3_l10_05",
+      "chinese": "成绩",
+      "pinyin": "chéng jì",
+      "tones": [2, 4],
+      "english": "Results / Grades / Score",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l10_06",
+      "chinese": "科目",
+      "pinyin": "kē mù",
+      "tones": [1, 4],
+      "english": "School subject",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l10_07",
+      "chinese": "复习",
+      "pinyin": "fù xí",
+      "tones": [4, 2],
+      "english": "To revise / To review",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l10_08",
+      "chinese": "努力",
+      "pinyin": "nǔ lì",
+      "tones": [3, 4],
+      "english": "Hardworking / To work hard",
+      "part_of_speech": "adjective/verb"
+    },
+    {
+      "id": "hsk3_l10_09",
+      "chinese": "一些",
+      "pinyin": "yī xiē",
+      "tones": [1, 1],
+      "english": "Some / A few / A little",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk3_l10_10",
+      "chinese": "进步",
+      "pinyin": "jìn bù",
+      "tones": [4, 4],
+      "english": "Progress / To improve",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk3_l10_11",
+      "chinese": "好多了",
+      "pinyin": "hǎo duō le",
+      "tones": [3, 1, 0],
+      "english": "Much better",
+      "part_of_speech": "phrase/adjective"
+    },
+    {
+      "id": "hsk3_l10_12",
+      "chinese": "多了",
+      "pinyin": "duō le",
+      "tones": [1, 0],
+      "english": "Much more (degree after comparison)",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l10_p01",
+      "chinese": "比历史难多了",
+      "pinyin": "bǐ lì shǐ nán duō le",
+      "tones": [3, 4, 3, 2, 1, 0],
+      "english": "Much harder than history",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l10_p02",
+      "chinese": "成绩进步了",
+      "pinyin": "chéng jì jìn bù le",
+      "tones": [2, 4, 4, 4, 0],
+      "english": "Grades have improved",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l10_p03",
+      "chinese": "努力复习",
+      "pinyin": "nǔ lì fù xí",
+      "tones": [3, 4, 4, 2],
+      "english": "Study hard / Revise diligently",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l10_p04",
+      "chinese": "哪个科目",
+      "pinyin": "nǎ ge kē mù",
+      "tones": [3, 0, 1, 4],
+      "english": "Which subject",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l10_p05",
+      "chinese": "容易一些",
+      "pinyin": "róng yì yī xiē",
+      "tones": [2, 4, 1, 1],
+      "english": "A little easier",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l10_p06",
+      "chinese": "好多了",
+      "pinyin": "hǎo duō le",
+      "tones": [3, 1, 0],
+      "english": "Much better",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l10_p07",
+      "chinese": "一些问题",
+      "pinyin": "yī xiē wèn tí",
+      "tones": [1, 1, 4, 2],
+      "english": "Some questions / problems",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l10_p08",
+      "chinese": "比以前好",
+      "pinyin": "bǐ yǐ qián hǎo",
+      "tones": [3, 3, 2, 3],
+      "english": "Better than before",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "数学比历史难多了，我每天都要复习。",
+      "pinyin": "Shù xué bǐ lì shǐ nán duō le, wǒ měi tiān dōu yào fù xí.",
+      "english": "Maths is much harder than history — I need to revise every day."
+    },
+    {
+      "chinese": "这个科目容易一些，你不用太担心。",
+      "pinyin": "Zhè ge kē mù róng yì yī xiē, nǐ bú yòng tài dān xīn.",
+      "english": "This subject is a little easier — you don't need to worry too much."
+    },
+    {
+      "chinese": "她这次的成绩进步了很多，老师很高兴。",
+      "pinyin": "Tā zhè cì de chéng jì jìn bù le hěn duō, lǎo shī hěn gāo xìng.",
+      "english": "Her grades improved a lot this time — the teacher is very pleased."
+    },
+    {
+      "chinese": "他努力复习了一个月，成绩比以前好多了。",
+      "pinyin": "Tā nǔ lì fù xí le yī ge yuè, chéng jì bǐ yǐ qián hǎo duō le.",
+      "english": "He studied hard for a month and his grades are much better than before."
+    },
+    {
+      "chinese": "老师给我们一些练习题，让我们回家复习。",
+      "pinyin": "Lǎo shī gěi wǒ men yī xiē liàn xí tí, ràng wǒ men huí jiā fù xí.",
+      "english": "The teacher gave us some exercises and asked us to revise at home."
+    },
+    {
+      "chinese": "你觉得哪个科目最难？我觉得数学比英语难得多。",
+      "pinyin": "Nǐ jué de nǎ ge kē mù zuì nán? Wǒ jué de shù xué bǐ yīng yǔ nán de duō.",
+      "english": "Which subject do you find hardest? I think maths is much harder than English."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "A比B+Adj+多了 — A is much more...than B",
+      "explanation": "A + 比 + B + Adjective + 多了. The 多了 at the end emphasises a big degree of difference. 数学比历史难多了 = Maths is much harder than history. You can also use 得多 instead: 数学比历史难得多. Both mean 'a lot more / much more'. This is different from simply adding 很 before the adjective, which does not make a comparison.",
+      "examples": [
+        {
+          "chinese": "数学比历史难多了。",
+          "pinyin": "Shù xué bǐ lì shǐ nán duō le.",
+          "english": "Maths is much harder than history."
+        },
+        {
+          "chinese": "今天比昨天冷多了。",
+          "pinyin": "Jīn tiān bǐ zuó tiān lěng duō le.",
+          "english": "Today is much colder than yesterday."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which sentence correctly means 'History is much easier than maths'?",
+          "type": "multiple_choice",
+          "correct": "历史比数学容易多了。",
+          "options": [
+            "历史比数学容易多了。",
+            "历史比数学很容易。",
+            "历史和数学一样容易。",
+            "历史没有数学容易。"
+          ],
+          "option_pinyin": [
+            "Lì shǐ bǐ shù xué róng yì duō le.",
+            "Lì shǐ bǐ shù xué hěn róng yì.",
+            "Lì shǐ hé shù xué yī yàng róng yì.",
+            "Lì shǐ méi yǒu shù xué róng yì."
+          ]
+        },
+        {
+          "question": "Fill in: 他的成绩比以前好___，进步很大。",
+          "type": "multiple_choice",
+          "correct": "多了",
+          "options": ["多了", "一些", "很多", "得多"],
+          "option_pinyin": ["duō le", "yī xiē", "hěn duō", "de duō"]
+        },
+        {
+          "question": "What is the difference between 多了 and 得多 in A比B+Adj comparisons?",
+          "type": "multiple_choice",
+          "correct": "Both mean 'much more' — they are interchangeable in this pattern",
+          "options": [
+            "Both mean 'much more' — they are interchangeable in this pattern",
+            "多了 means 'a little more'; 得多 means 'much more'",
+            "Only 多了 can follow 比; 得多 cannot",
+            "得多 is formal; 多了 cannot be used in writing"
+          ]
+        },
+        {
+          "question": "Translate: 这道题比那道题难多了。",
+          "type": "multiple_choice",
+          "correct": "This question is much harder than that one.",
+          "options": [
+            "This question is much harder than that one.",
+            "This question is harder than that one by a little.",
+            "This question and that one are equally hard.",
+            "That question is harder than this one."
+          ]
+        },
+        {
+          "question": "Which word CANNOT be placed at the end of A比B+Adj to mean 'much more'?",
+          "type": "multiple_choice",
+          "correct": "很",
+          "options": ["很", "多了", "得多", "多"],
+          "option_pinyin": ["hěn", "duō le", "de duō", "duō"]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "些 — Softener / Plural marker",
+      "explanation": "些 is used in three main ways. (1) 一些 = some / a few (placed before a noun): 一些问题 = some problems. (2) 这些 / 那些 = these / those (plural marker): 这些科目 = these subjects. (3) After an adjective in a comparison: 容易一些 = a little easier. In this third use, 些 softens the comparison, unlike 多了 which amplifies it. Think of 些 as 'a little' and 多了 as 'a lot'.",
+      "examples": [
+        {
+          "chinese": "给我一些时间，我需要复习。",
+          "pinyin": "Gěi wǒ yī xiē shí jiān, wǒ xū yào fù xí.",
+          "english": "Give me some time — I need to revise."
+        },
+        {
+          "chinese": "这些科目都很难，但历史容易一些。",
+          "pinyin": "Zhè xiē kē mù dōu hěn nán, dàn lì shǐ róng yì yī xiē.",
+          "english": "These subjects are all difficult, but history is a little easier."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 容易一些 mean?",
+          "type": "multiple_choice",
+          "correct": "A little easier",
+          "options": ["A little easier", "Much easier", "The easiest", "As easy as before"],
+          "option_pinyin": ["róng yì yī xiē", "róng yì duō le", "zuì róng yì", "hé yǐ qián yī yàng róng yì"]
+        },
+        {
+          "question": "Fill in: ___科目我都想学，但数学最有意思。",
+          "type": "multiple_choice",
+          "correct": "这些",
+          "options": ["这些", "一些", "那个", "哪些"],
+          "option_pinyin": ["zhè xiē", "yī xiē", "nà ge", "nǎ xiē"]
+        },
+        {
+          "question": "Which sentence uses 一些 correctly?",
+          "type": "multiple_choice",
+          "correct": "老师给了我们一些练习题。",
+          "options": [
+            "老师给了我们一些练习题。",
+            "老师给了我们一些很。",
+            "老师一些给了我们题。",
+            "一些老师给练习题。"
+          ],
+          "option_pinyin": [
+            "Lǎo shī gěi le wǒ men yī xiē liàn xí tí.",
+            "Lǎo shī gěi le wǒ men yī xiē hěn.",
+            "Lǎo shī yī xiē gěi le wǒ men tí.",
+            "Yī xiē lǎo shī gěi liàn xí tí."
+          ]
+        },
+        {
+          "question": "What is the difference between 难多了 and 难一些?",
+          "type": "multiple_choice",
+          "correct": "难多了 means 'much harder'; 难一些 means 'a little harder'",
+          "options": [
+            "难多了 means 'much harder'; 难一些 means 'a little harder'",
+            "难多了 means 'a little harder'; 难一些 means 'much harder'",
+            "They mean exactly the same thing",
+            "Neither can follow a 比 comparison"
+          ]
+        },
+        {
+          "question": "How do you say 'these subjects' in Chinese?",
+          "type": "multiple_choice",
+          "correct": "这些科目",
+          "options": ["这些科目", "这科目", "一些这科目", "科目这些"],
+          "option_pinyin": ["zhè xiē kē mù", "zhè kē mù", "yī xiē zhè kē mù", "kē mù zhè xiē"]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "数量补语 — Quantitative complements",
+      "explanation": "A quantitative complement tells 'how much' or 'how long' an action happened. Verb + 了 + Quantity: 复习了三个小时 = revised for three hours. 进步了很多 = improved a lot. The complement answers 'by how much' or 'for how long'. 好多了 is a special case where 多了 acts as a degree complement meaning 'much better'. Note: the 了 here indicates completion or change of state, not the future.",
+      "examples": [
+        {
+          "chinese": "他复习了两个小时，成绩好多了。",
+          "pinyin": "Tā fù xí le liǎng ge xiǎo shí, chéng jì hǎo duō le.",
+          "english": "He revised for two hours and his grades are much better."
+        },
+        {
+          "chinese": "她的成绩进步了很多，老师很满意。",
+          "pinyin": "Tā de chéng jì jìn bù le hěn duō, lǎo shī hěn mǎn yì.",
+          "english": "Her grades improved a lot — the teacher is very satisfied."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 复习了三个小时 mean?",
+          "type": "multiple_choice",
+          "correct": "Revised for three hours",
+          "options": ["Revised for three hours", "Revised three times", "Will revise for three hours", "Revised three subjects"],
+          "option_pinyin": ["fù xí le sān ge xiǎo shí", "fù xí le sān cì", "huì fù xí sān ge xiǎo shí", "fù xí le sān ge kē mù"]
+        },
+        {
+          "question": "Fill in: 她的数学成绩进步___很多，老师很高兴。",
+          "type": "multiple_choice",
+          "correct": "了",
+          "options": ["了", "得", "过", "着"],
+          "option_pinyin": ["le", "de", "guò", "zhe"]
+        },
+        {
+          "question": "Which sentence correctly uses a quantitative complement?",
+          "type": "multiple_choice",
+          "correct": "他努力复习了一个月。",
+          "options": [
+            "他努力复习了一个月。",
+            "他复习努力一个月了。",
+            "他一个月复习了努力。",
+            "他努力一个月了复习。"
+          ],
+          "option_pinyin": [
+            "Tā nǔ lì fù xí le yī ge yuè.",
+            "Tā fù xí nǔ lì yī ge yuè le.",
+            "Tā yī ge yuè fù xí le nǔ lì.",
+            "Tā nǔ lì yī ge yuè le fù xí."
+          ]
+        },
+        {
+          "question": "Translate: 我的汉语好多了，因为我每天都复习。",
+          "type": "multiple_choice",
+          "correct": "My Chinese is much better because I revise every day.",
+          "options": [
+            "My Chinese is much better because I revise every day.",
+            "My Chinese was better before I started revising.",
+            "My Chinese is a little better than before.",
+            "I revise every day but my Chinese is still not good."
+          ]
+        },
+        {
+          "question": "What does the 了 in 进步了很多 indicate?",
+          "type": "multiple_choice",
+          "correct": "A change of state — the improvement has happened",
+          "options": [
+            "A change of state — the improvement has happened",
+            "Future intention to improve",
+            "An ongoing continuous action",
+            "A past habitual action"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 数学 mean?",
+      "type": "multiple_choice",
+      "correct": "Mathematics",
+      "options": ["History", "Mathematics", "English", "Science"]
+    },
+    {
+      "question": "What does 历史 mean?",
+      "type": "multiple_choice",
+      "correct": "History",
+      "options": ["History", "Geography", "Science", "Mathematics"]
+    },
+    {
+      "question": "What does 难 mean?",
+      "type": "multiple_choice",
+      "correct": "Difficult / Hard",
+      "options": ["Difficult / Hard", "Easy", "Interesting", "Boring"]
+    },
+    {
+      "question": "What does 容易 mean?",
+      "type": "multiple_choice",
+      "correct": "Easy",
+      "options": ["Difficult", "Easy", "Hard", "Impossible"]
+    },
+    {
+      "question": "What does 成绩 mean?",
+      "type": "multiple_choice",
+      "correct": "Results / Grades / Score",
+      "options": ["Subject", "Results / Grades / Score", "Lesson", "Class"]
+    },
+    {
+      "question": "What does 科目 mean?",
+      "type": "multiple_choice",
+      "correct": "School subject",
+      "options": ["Textbook", "Classroom", "School subject", "Homework"]
+    },
+    {
+      "question": "What does 复习 mean?",
+      "type": "multiple_choice",
+      "correct": "To revise / To review",
+      "options": ["To study new material", "To revise / To review", "To finish homework", "To take a test"]
+    },
+    {
+      "question": "What does 努力 mean?",
+      "type": "multiple_choice",
+      "correct": "Hardworking / To work hard",
+      "options": ["Lazy", "Hardworking / To work hard", "To rest", "Slow"]
+    },
+    {
+      "question": "What does 一些 mean?",
+      "type": "multiple_choice",
+      "correct": "Some / A few",
+      "options": ["All", "Some / A few", "None", "Many"]
+    },
+    {
+      "question": "What does 进步 mean?",
+      "type": "multiple_choice",
+      "correct": "Progress / To improve",
+      "options": ["To fail", "To stop", "Progress / To improve", "To repeat"]
+    },
+    {
+      "question": "How do you say 'much harder than history'?",
+      "type": "multiple_choice",
+      "correct": "比历史难多了",
+      "options": ["比历史难多了", "历史比较难", "和历史一样难", "历史难得多"]
+    },
+    {
+      "question": "Fill in: 他的成绩比以前好___，进步很大。",
+      "type": "multiple_choice",
+      "correct": "多了",
+      "options": ["多了", "一点", "很", "非常"]
+    },
+    {
+      "question": "Which sentence correctly means 'Maths is much harder than English'?",
+      "type": "multiple_choice",
+      "correct": "数学比英语难多了。",
+      "options": ["数学比英语难多了。", "数学英语难多了。", "数学很难英语。", "数学比较英语难。"]
+    },
+    {
+      "question": "What does 好多了 mean?",
+      "type": "multiple_choice",
+      "correct": "Much better",
+      "options": ["Much better", "A little better", "Not better", "The best"]
+    },
+    {
+      "question": "Fill in: 这个科目比那个容易___，不用太担心。",
+      "type": "multiple_choice",
+      "correct": "一些",
+      "options": ["一些", "多了", "非常", "最"]
+    },
+    {
+      "question": "Translate: 她努力复习了两个小时。",
+      "type": "multiple_choice",
+      "correct": "She revised hard for two hours.",
+      "options": [
+        "She revised hard for two hours.",
+        "She has been revising for two days.",
+        "She will revise for two hours.",
+        "She revised two subjects."
+      ]
+    },
+    {
+      "question": "What does 比以前好 mean?",
+      "type": "multiple_choice",
+      "correct": "Better than before",
+      "options": ["Better than before", "Best of all", "Same as before", "Worse than before"]
+    },
+    {
+      "question": "Which sentence uses 些 correctly to mean 'a little harder'?",
+      "type": "multiple_choice",
+      "correct": "这道题难一些。",
+      "options": ["这道题难一些。", "这道题些难。", "这些道题难。", "难些一题。"]
+    },
+    {
+      "question": "Translate: 哪个科目你觉得最难？",
+      "type": "multiple_choice",
+      "correct": "Which subject do you find the hardest?",
+      "options": [
+        "Which subject do you find the hardest?",
+        "Why is this subject difficult?",
+        "Which subject do you like the most?",
+        "How many subjects do you study?"
+      ]
+    },
+    {
+      "question": "What does 成绩进步了 mean?",
+      "type": "multiple_choice",
+      "correct": "Grades have improved",
+      "options": ["Grades have improved", "Grades are bad", "Studying more subjects", "Taking an exam"]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Comparing Subjects",
+      "title_chinese": "比较科目",
+      "speakers": {
+        "A": {
+          "name": "小明",
+          "role": "同学",
+          "gender": "male"
+        },
+        "B": {
+          "name": "小红",
+          "role": "同学",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小红，你觉得数学难吗？我觉得数学比历史难多了。",
+          "pinyin": "Xiǎo Hóng, nǐ jué de shù xué nán ma? Wǒ jué de shù xué bǐ lì shǐ nán duō le.",
+          "english": "Xiao Hong, do you find maths difficult? I think maths is much harder than history."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我也觉得数学难，不过比英语容易一些。哪个科目你最喜欢？",
+          "pinyin": "Wǒ yě jué de shù xué nán, bú guò bǐ yīng yǔ róng yì yī xiē. Nǎ ge kē mù nǐ zuì xǐ huān?",
+          "english": "I also find maths hard, but it's a little easier than English. Which subject do you like most?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我最喜欢历史，因为历史比数学容易多了，而且很有意思。",
+          "pinyin": "Wǒ zuì xǐ huān lì shǐ, yīn wèi lì shǐ bǐ shù xué róng yì duō le, ér qiě hěn yǒu yì si.",
+          "english": "I like history the most because history is much easier than maths and also very interesting."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那你数学怎么复习？我每次都不知道怎么努力复习。",
+          "pinyin": "Nà nǐ shù xué zěn me fù xí? Wǒ měi cì dōu bù zhī dào zěn me nǔ lì fù xí.",
+          "english": "Then how do you revise maths? I never know how to revise hard."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我每天复习一些练习题，做了大概两个小时。成绩比以前好多了！",
+          "pinyin": "Wǒ měi tiān fù xí yī xiē liàn xí tí, zuò le dà gài liǎng ge xiǎo shí. Chéng jì bǐ yǐ qián hǎo duō le!",
+          "english": "I revise some exercises every day — about two hours' worth. My grades are much better than before!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "太好了！我也要努力复习，希望我的成绩也能进步。",
+          "pinyin": "Tài hǎo le! Wǒ yě yào nǔ lì fù xí, xī wàng wǒ de chéng jì yě néng jìn bù.",
+          "english": "Great! I also want to revise hard — I hope my grades can improve too."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Teacher's Feedback on Grades",
+      "title_chinese": "老师的成绩反馈",
+      "speakers": {
+        "A": {
+          "name": "小明",
+          "role": "学生",
+          "gender": "male"
+        },
+        "B": {
+          "name": "王老师",
+          "role": "老师",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "王老师，我这次的数学成绩怎么样？",
+          "pinyin": "Wáng lǎo shī, wǒ zhè cì de shù xué chéng jì zěn me yàng?",
+          "english": "Teacher Wang, how were my maths grades this time?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "进步了很多！你的成绩比上次好多了，我很高兴。",
+          "pinyin": "Jìn bù le hěn duō! Nǐ de chéng jì bǐ shàng cì hǎo duō le, wǒ hěn gāo xìng.",
+          "english": "You've improved a lot! Your grades are much better than last time — I'm very pleased."
+        },
+        {
+          "speaker": "A",
+          "chinese": "谢谢老师！我这个月每天都努力复习了两个小时。",
+          "pinyin": "Xiè xie lǎo shī! Wǒ zhè ge yuè měi tiān dōu nǔ lì fù xí le liǎng ge xiǎo shí.",
+          "english": "Thank you, Teacher! I've been revising hard for two hours every day this month."
+        },
+        {
+          "speaker": "B",
+          "chinese": "很好！不过还有一些问题需要注意。这些题你还是有点难。",
+          "pinyin": "Hěn hǎo! Bú guò hái yǒu yī xiē wèn tí xū yào zhù yì. Zhè xiē tí nǐ hái shì yǒu diǎn nán.",
+          "english": "Very good! But there are still some issues to pay attention to. These questions are still a little hard for you."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我知道了，我会再认真复习这些科目的内容。",
+          "pinyin": "Wǒ zhī dào le, wǒ huì zài rèn zhēn fù xí zhè xiē kē mù de nèi róng.",
+          "english": "I understand — I'll revise the content of these subjects more carefully."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好！只要你继续努力，成绩一定会越来越好的。",
+          "pinyin": "Hǎo! Zhǐ yào nǐ jì xù nǔ lì, chéng jì yī dìng huì yuè lái yuè hǎo de.",
+          "english": "Great! As long as you keep working hard, your grades will definitely keep getting better and better."
+        }
+      ]
+    }
+  ]
+}

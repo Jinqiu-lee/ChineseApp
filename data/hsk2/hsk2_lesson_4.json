@@ -1,0 +1,973 @@
+{
+  "lesson": 4,
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Work",
+  "topic_chinese": "工作",
+  "vocabulary": [
+    {
+      "id": "hsk2_l4_01",
+      "chinese": "公司",
+      "pinyin": "gōng sī",
+      "tones": [
+        1,
+        1
+      ],
+      "english": "Company / Office",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l4_02",
+      "chinese": "介绍",
+      "pinyin": "jiè shào",
+      "tones": [
+        4,
+        4
+      ],
+      "english": "To introduce",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l4_03",
+      "chinese": "告诉",
+      "pinyin": "gào su",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "To tell / To inform",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l4_04",
+      "chinese": "问题",
+      "pinyin": "wèn tí",
+      "tones": [
+        4,
+        2
+      ],
+      "english": "Problem / Question",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l4_05",
+      "chinese": "同事",
+      "pinyin": "tóng shì",
+      "tones": [
+        2,
+        4
+      ],
+      "english": "Colleague",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l4_06",
+      "chinese": "姓",
+      "pinyin": "xìng",
+      "tones": [
+        4
+      ],
+      "english": "Surname / Family name",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l4_07",
+      "chinese": "上班",
+      "pinyin": "shàng bān",
+      "tones": [
+        4,
+        1
+      ],
+      "english": "To go to work",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l4_08",
+      "chinese": "进",
+      "pinyin": "jìn",
+      "tones": [
+        4
+      ],
+      "english": "To enter / To come in",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l4_09",
+      "chinese": "见面",
+      "pinyin": "jiàn miàn",
+      "tones": [
+        4,
+        4
+      ],
+      "english": "To meet (face to face)",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l4_10",
+      "chinese": "认识",
+      "pinyin": "rèn shi",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "To know / To recognise / To be acquainted with",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l4_11",
+      "chinese": "对",
+      "pinyin": "duì",
+      "tones": [
+        4
+      ],
+      "english": "Correct / Right / Towards",
+      "part_of_speech": "adjective/preposition"
+    },
+    {
+      "id": "hsk2_l4_12",
+      "chinese": "非常",
+      "pinyin": "fēi cháng",
+      "tones": [
+        1,
+        2
+      ],
+      "english": "Extremely / Very",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l4_p01",
+      "chinese": "介绍一下",
+      "pinyin": "jiè shào yī xià",
+      "tones": [
+        4,
+        4,
+        1,
+        4
+      ],
+      "english": "Let me introduce / Make an introduction",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p02",
+      "chinese": "非常高兴认识你",
+      "pinyin": "fēi cháng gāo xìng rèn shi nǐ",
+      "tones": [
+        1,
+        2,
+        1,
+        4,
+        4,
+        0,
+        3
+      ],
+      "english": "Very pleased to meet you",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p03",
+      "chinese": "在公司上班",
+      "pinyin": "zài gōng sī shàng bān",
+      "tones": [
+        4,
+        1,
+        1,
+        4,
+        1
+      ],
+      "english": "Work at the company",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p04",
+      "chinese": "告诉同事",
+      "pinyin": "gào su tóng shì",
+      "tones": [
+        4,
+        0,
+        2,
+        4
+      ],
+      "english": "Tell the colleague(s)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p05",
+      "chinese": "没有问题",
+      "pinyin": "méi yǒu wèn tí",
+      "tones": [
+        2,
+        3,
+        4,
+        2
+      ],
+      "english": "No problem",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p06",
+      "chinese": "和他见面",
+      "pinyin": "hé tā jiàn miàn",
+      "tones": [
+        2,
+        1,
+        4,
+        4
+      ],
+      "english": "Meet with him",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p07",
+      "chinese": "对我说",
+      "pinyin": "duì wǒ shuō",
+      "tones": [
+        4,
+        3,
+        1
+      ],
+      "english": "Say to me / Tell me",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p08",
+      "chinese": "是谁介绍的",
+      "pinyin": "shì shéi jiè shào de",
+      "tones": [
+        4,
+        2,
+        4,
+        4,
+        0
+      ],
+      "english": "Who introduced (you/them)",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hsk2_l4_p01",
+      "chinese": "介绍一下",
+      "pinyin": "jiè shào yī xià",
+      "tones": [
+        4,
+        4,
+        1,
+        4
+      ],
+      "english": "Let me introduce / Make an introduction",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p02",
+      "chinese": "非常高兴认识你",
+      "pinyin": "fēi cháng gāo xìng rèn shi nǐ",
+      "tones": [
+        1,
+        2,
+        1,
+        4,
+        4,
+        0,
+        3
+      ],
+      "english": "Very pleased to meet you",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p03",
+      "chinese": "在公司上班",
+      "pinyin": "zài gōng sī shàng bān",
+      "tones": [
+        4,
+        1,
+        1,
+        4,
+        1
+      ],
+      "english": "Work at the company",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p04",
+      "chinese": "告诉同事",
+      "pinyin": "gào su tóng shì",
+      "tones": [
+        4,
+        0,
+        2,
+        4
+      ],
+      "english": "Tell the colleague(s)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p05",
+      "chinese": "没有问题",
+      "pinyin": "méi yǒu wèn tí",
+      "tones": [
+        2,
+        3,
+        4,
+        2
+      ],
+      "english": "No problem",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p06",
+      "chinese": "和他见面",
+      "pinyin": "hé tā jiàn miàn",
+      "tones": [
+        2,
+        1,
+        4,
+        4
+      ],
+      "english": "Meet with him",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p07",
+      "chinese": "对我说",
+      "pinyin": "duì wǒ shuō",
+      "tones": [
+        4,
+        3,
+        1
+      ],
+      "english": "Say to me / Tell me",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l4_p08",
+      "chinese": "是谁介绍的",
+      "pinyin": "shì shéi jiè shào de",
+      "tones": [
+        4,
+        2,
+        4,
+        4,
+        0
+      ],
+      "english": "Who introduced (you/them)",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "他推荐我来这个公司工作。",
+      "pinyin": "Tā tuī jiàn wǒ lái zhè gè gōng sī gōng zuò.",
+      "english": "He recommended me to come work at this company."
+    },
+    {
+      "chinese": "我来介绍一下，他是我的同事。",
+      "pinyin": "Wǒ lái jiè shào yī xià, tā shì wǒ de tóng shì.",
+      "english": "Let me introduce — he is my colleague."
+    },
+    {
+      "chinese": "你是在哪里认识他的？",
+      "pinyin": "Nǐ shì zài nǎ lǐ rèn shi tā de?",
+      "english": "Where did you meet him?"
+    },
+    {
+      "chinese": "他是昨天进公司的。",
+      "pinyin": "Tā shì zuó tiān jìn gōng sī de.",
+      "english": "He joined the company yesterday."
+    },
+    {
+      "chinese": "非常高兴认识你，我姓王。",
+      "pinyin": "Fēi cháng gāo xìng rèn shi nǐ, wǒ xìng Wáng.",
+      "english": "Very pleased to meet you; my surname is Wang."
+    },
+    {
+      "chinese": "他对我说，上班以后告诉他问题。",
+      "pinyin": "Tā duì wǒ shuō, shàng bān yǐ hòu gào su tā wèn tí.",
+      "english": "He told me to tell him the problems after starting work."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "「是...的」结构 — The Structure shì...de",
+      "explanation": "The 是...的 structure is used to emphasise information about a past event — specifically the time, place, manner, or agent. The action has already happened; 是...的 focuses on the circumstances. Structure: Subject + 是 + [emphasis: time/place/manner] + Verb + 的. The object can go before or after 的.",
+      "examples": [
+        {
+          "chinese": "你是在哪里认识他的？",
+          "pinyin": "Nǐ shì zài nǎ lǐ rèn shi tā de?",
+          "english": "Where (exactly) did you meet him?"
+        },
+        {
+          "chinese": "他是昨天来的。",
+          "pinyin": "Tā shì zuó tiān lái de.",
+          "english": "He came yesterday (emphasising when)."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does the 是...的 structure emphasise?",
+          "type": "multiple_choice",
+          "correct": "Circumstances of a past event (time, place, manner)",
+          "options": [
+            "Circumstances of a past event (time, place, manner)",
+            "Future plans",
+            "Ongoing actions",
+            "Habitual actions"
+          ]
+        },
+        {
+          "question": "Which sentence uses 是...的 correctly?",
+          "type": "multiple_choice",
+          "correct": "他是在北京认识她的。",
+          "options": [
+            "他是在北京认识她的。",
+            "他在北京是认识她。",
+            "是他在北京认识她。",
+            "他认识是在北京她的。"
+          ],
+          "correct_pinyin": "Tā shì zài Běijīng rèn shi tā de."
+        },
+        {
+          "question": "Fill in: 你___几点来___？(When did you come?) — Use 是...的",
+          "type": "multiple_choice",
+          "correct": "是 / 的",
+          "options": [
+            "是 / 的",
+            "在 / 了",
+            "已经 / 了",
+            "要 / 吗"
+          ]
+        },
+        {
+          "question": "What does 是谁介绍的 mean?",
+          "type": "multiple_choice",
+          "correct": "Who introduced (you/them)",
+          "options": [
+            "Who introduced (you/them)",
+            "Who told you",
+            "Who met you first",
+            "Who knows you"
+          ],
+          "option_pinyin": [
+            "shì shuí jiè shào de",
+            "shì shuí gào su nǐ de",
+            "shì shuí xiān jiàn miàn de",
+            "shì shuí rèn shi nǐ de"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "副词「也」indicating time — yě for simultaneous action",
+      "explanation": "也 (yě) means 'also / too / as well'. It is placed before the verb to indicate that the subject shares in an action or state. Structure: Subject + 也 + Verb/Adjective. When indicating parallel time or situation: 他也在那里 (He was also there). 也 can be used with 正在 or other time markers.",
+      "examples": [
+        {
+          "chinese": "他也在公司上班。",
+          "pinyin": "Tā yě zài gōng sī shàng bān.",
+          "english": "He also works at the company."
+        },
+        {
+          "chinese": "我也认识他。",
+          "pinyin": "Wǒ yě rèn shi tā.",
+          "english": "I also know him."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Where does 也 go in a sentence?",
+          "type": "multiple_choice",
+          "correct": "Before the verb",
+          "options": [
+            "Before the verb",
+            "After the verb",
+            "At the end",
+            "Before the subject"
+          ]
+        },
+        {
+          "question": "How do you say 'She also wants to meet him'?",
+          "type": "multiple_choice",
+          "correct": "她也想和他见面。",
+          "options": [
+            "她也想和他见面。",
+            "她想也和他见面。",
+            "她想和他也见面。",
+            "也她想和他见面。"
+          ],
+          "correct_pinyin": "Tā yě xiǎng hé tā jiàn miàn."
+        },
+        {
+          "question": "Fill in: 我的同事___姓王。(My colleague is also surnamed Wang.)",
+          "type": "multiple_choice",
+          "correct": "也",
+          "options": [
+            "也",
+            "非常",
+            "对",
+            "进"
+          ],
+          "option_pinyin": [
+            "yě",
+            "fēi cháng",
+            "duì",
+            "jìn"
+          ]
+        },
+        {
+          "question": "How do you say 'work at the company'?",
+          "type": "multiple_choice",
+          "correct": "在公司上班",
+          "options": [
+            "在公司上班",
+            "进公司上班",
+            "对公司上班",
+            "从公司上班"
+          ],
+          "option_pinyin": [
+            "zài gōng sī shàng bān",
+            "jìn gōng sī shàng bān",
+            "duì gōng sī shàng bān",
+            "cóng gōng sī shàng bān"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "正在 — Indicating an Ongoing Action",
+      "explanation": "正在 (zhèng zài) is used to indicate an action that is currently in progress. Structure: Subject + 正在 + Verb (+ 呢). It is similar to the English present continuous tense. 呢 can be added at the end for emphasis. 在 alone can also be used: 我在吃饭 = I am eating.",
+      "examples": [
+        {
+          "chinese": "他正在和同事见面。",
+          "pinyin": "Tā zhèng zài hé tóng shì jiàn miàn.",
+          "english": "He is currently meeting with his colleague."
+        },
+        {
+          "chinese": "我正在介绍新同事呢。",
+          "pinyin": "Wǒ zhèng zài jiè shào xīn tóng shì ne.",
+          "english": "I'm in the middle of introducing the new colleague."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 正在 indicate?",
+          "type": "multiple_choice",
+          "correct": "An action currently in progress",
+          "options": [
+            "An action currently in progress",
+            "A completed action",
+            "A future plan",
+            "A habitual action"
+          ]
+        },
+        {
+          "question": "Which sentence means 'She is currently working'?",
+          "type": "multiple_choice",
+          "correct": "她正在上班。",
+          "options": [
+            "她正在上班。",
+            "她已经上班了。",
+            "她要上班。",
+            "她上班了。"
+          ],
+          "correct_pinyin": "Tā zhèng zài shàng bān."
+        },
+        {
+          "question": "Fill in: 他___介绍新朋友呢。(He is currently introducing a new friend.)",
+          "type": "multiple_choice",
+          "correct": "正在",
+          "options": [
+            "正在",
+            "已经",
+            "以前",
+            "再"
+          ],
+          "option_pinyin": [
+            "zhèng zài",
+            "yǐ jīng",
+            "yǐ qián",
+            "zài"
+          ]
+        },
+        {
+          "question": "What does 告诉同事 mean?",
+          "type": "multiple_choice",
+          "correct": "Tell a colleague",
+          "options": [
+            "Tell a colleague",
+            "Meet a colleague",
+            "Introduce a colleague",
+            "Know a colleague"
+          ],
+          "option_pinyin": [
+            "gào su tóng shì",
+            "jiàn miàn tóng shì",
+            "jiè shào tóng shì",
+            "rèn shi tóng shì"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 公司 mean?",
+      "type": "multiple_choice",
+      "correct": "Company / Office",
+      "options": [
+        "School",
+        "Hospital",
+        "Company / Office",
+        "Restaurant"
+      ]
+    },
+    {
+      "question": "What does 介绍 mean?",
+      "type": "multiple_choice",
+      "correct": "To introduce",
+      "options": [
+        "To know",
+        "To introduce",
+        "To tell",
+        "To meet"
+      ]
+    },
+    {
+      "question": "What does 同事 mean?",
+      "type": "multiple_choice",
+      "correct": "Colleague",
+      "options": [
+        "Classmate",
+        "Friend",
+        "Colleague",
+        "Family member"
+      ]
+    },
+    {
+      "question": "What does 非常 mean?",
+      "type": "multiple_choice",
+      "correct": "Extremely / Very",
+      "options": [
+        "A little",
+        "Extremely / Very",
+        "Not at all",
+        "Sometimes"
+      ]
+    },
+    {
+      "question": "What does 告诉 mean?",
+      "type": "multiple_choice",
+      "correct": "To tell / To inform",
+      "options": [
+        "To ask",
+        "To know",
+        "To tell / To inform",
+        "To understand"
+      ]
+    },
+    {
+      "question": "What does 认识 mean?",
+      "type": "multiple_choice",
+      "correct": "To know / To be acquainted with",
+      "options": [
+        "To like",
+        "To know / To be acquainted with",
+        "To see",
+        "To meet for the first time only"
+      ]
+    },
+    {
+      "question": "What does the 是...的 structure emphasise?",
+      "type": "multiple_choice",
+      "correct": "Circumstances of a past event",
+      "options": [
+        "Future plans",
+        "Ongoing actions",
+        "Circumstances of a past event",
+        "Habitual actions"
+      ]
+    },
+    {
+      "question": "How do you say 'Very pleased to meet you'?",
+      "type": "multiple_choice",
+      "correct": "非常高兴认识你。",
+      "options": [
+        "非常高兴认识你。",
+        "很高兴告诉你。",
+        "非常认识你了。",
+        "高兴非常见面。"
+      ]
+    },
+    {
+      "question": "What does 进 mean?",
+      "type": "multiple_choice",
+      "correct": "To enter / To come in",
+      "options": [
+        "To exit",
+        "To enter / To come in",
+        "To tell",
+        "To introduce"
+      ]
+    },
+    {
+      "question": "What does 问题 mean?",
+      "type": "multiple_choice",
+      "correct": "Problem / Question",
+      "options": [
+        "Answer",
+        "Problem / Question",
+        "Topic",
+        "Name"
+      ]
+    },
+    {
+      "question": "What does 正在 indicate?",
+      "type": "multiple_choice",
+      "correct": "An action currently in progress",
+      "options": [
+        "Completed action",
+        "An action currently in progress",
+        "Future plan",
+        "Past experience"
+      ]
+    },
+    {
+      "question": "What does 姓 mean?",
+      "type": "multiple_choice",
+      "correct": "Surname / Family name",
+      "options": [
+        "Given name",
+        "Full name",
+        "Surname / Family name",
+        "Nickname"
+      ]
+    },
+    {
+      "question": "Where does 也 go in a sentence?",
+      "type": "multiple_choice",
+      "correct": "Before the verb",
+      "options": [
+        "After the verb",
+        "Before the verb",
+        "At the end",
+        "Before the subject"
+      ]
+    },
+    {
+      "question": "Which sentence correctly uses 是...的?",
+      "type": "multiple_choice",
+      "correct": "他是昨天来的。",
+      "options": [
+        "他是昨天来的。",
+        "他昨天是来的了。",
+        "是他昨天来。",
+        "他来是昨天的。"
+      ]
+    },
+    {
+      "question": "What does 对 mean as a preposition?",
+      "type": "multiple_choice",
+      "correct": "Towards / To (someone)",
+      "options": [
+        "From",
+        "Towards / To (someone)",
+        "With",
+        "Without"
+      ]
+    },
+    {
+      "question": "How do you say 'very pleased to meet you'?",
+      "type": "multiple_choice",
+      "correct": "非常高兴认识你",
+      "options": [
+        "非常高兴认识你",
+        "非常高兴见面",
+        "告诉你认识我",
+        "介绍我们见面"
+      ]
+    },
+    {
+      "question": "What does 在公司上班 mean?",
+      "type": "multiple_choice",
+      "correct": "Work at the company",
+      "options": [
+        "Work at the company",
+        "Enter the company",
+        "Leave the company",
+        "Know the company"
+      ]
+    },
+    {
+      "question": "How do you say 'meet with him'?",
+      "type": "multiple_choice",
+      "correct": "和他见面",
+      "options": [
+        "和他见面",
+        "和他上班",
+        "告诉他见面",
+        "进公司见面"
+      ]
+    },
+    {
+      "question": "What does 是谁介绍的 mean?",
+      "type": "multiple_choice",
+      "correct": "Who introduced (you/them)",
+      "options": [
+        "Who introduced (you/them)",
+        "Who told you",
+        "Who is your colleague",
+        "Who met you"
+      ]
+    },
+    {
+      "question": "Fill in: 我来___一下，他是我的同事，我们在同一个公司___班。",
+      "type": "multiple_choice",
+      "correct": "介绍 / 上",
+      "options": [
+        "介绍 / 上",
+        "告诉 / 进",
+        "认识 / 对",
+        "见面 / 非常"
+      ]
+    },
+    {
+      "question": "What does 非常高兴认识你 mean?",
+      "type": "multiple_choice",
+      "correct": "Very pleased to meet you",
+      "options": [
+        "Very pleased to meet you",
+        "Nice to introduce myself",
+        "Very happy to tell you",
+        "Glad you came to work"
+      ]
+    },
+    {
+      "question": "How do you say 'meet with him'?",
+      "type": "multiple_choice",
+      "correct": "和他见面",
+      "options": [
+        "和他见面",
+        "和他上班",
+        "告诉他见面",
+        "对他介绍"
+      ]
+    },
+    {
+      "question": "What does 没有问题 mean?",
+      "type": "multiple_choice",
+      "correct": "No problem",
+      "options": [
+        "No problem",
+        "Have a question",
+        "No answer",
+        "Have no colleague"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "First Day at Work",
+      "title_chinese": "第一天上班",
+      "speakers": {
+        "A": {
+          "name": "小李",
+          "role": "新同事",
+          "gender": "male"
+        },
+        "B": {
+          "name": "王经理",
+          "role": "经理",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "您好，我是新来的，我姓李，叫小李。",
+          "pinyin": "Nín hǎo, wǒ shì xīn lái de, wǒ xìng Lǐ, jiào Xiǎo Lǐ.",
+          "english": "Hello, I'm the new person; my surname is Li, I'm called Xiao Li."
+        },
+        {
+          "speaker": "B",
+          "chinese": "你好，非常欢迎！我来介绍一下，这是你的同事小张。",
+          "pinyin": "Nǐ hǎo, fēi cháng huān yíng! Wǒ lái jiè shào yī xià, zhè shì nǐ de tóng shì Xiǎo Zhāng.",
+          "english": "Hello, very welcome! Let me make an introduction — this is your colleague Xiao Zhang."
+        },
+        {
+          "speaker": "A",
+          "chinese": "非常高兴认识你，小张！",
+          "pinyin": "Fēi cháng gāo xìng rèn shi nǐ, Xiǎo Zhāng!",
+          "english": "Very pleased to meet you, Xiao Zhang!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "你是在哪里认识王主任的？",
+          "pinyin": "Nǐ shì zài nǎ lǐ rèn shi Wáng zhǔ rèn de?",
+          "english": "Where did you meet Director Wang?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我是在大学认识他的，他推荐我来这个公司。",
+          "pinyin": "Wǒ shì zài dà xué rèn shi tā de, tā tuī jiàn wǒ lái zhè gè gōng sī.",
+          "english": "I met him at university; he recommended me to this company."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好，如果有问题，对我说就好了。",
+          "pinyin": "Hǎo, rú guǒ yǒu wèn tí, duì wǒ shuō jiù hǎo le.",
+          "english": "Good — if you have any problems, just tell me."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Meeting a New Colleague",
+      "title_chinese": "认识新同事",
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "同事",
+          "gender": "female"
+        },
+        "B": {
+          "name": "新同事",
+          "role": "新员工",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你好，你是新来的吗？你贵姓？",
+          "pinyin": "Nǐ hǎo, nǐ shì xīn lái de ma? Nǐ guì xìng?",
+          "english": "Hello, are you new here? What is your honourable surname?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我姓陈，叫陈小美，非常高兴认识你！",
+          "pinyin": "Wǒ xìng Chén, jiào Chén Xiǎo Měi, fēi cháng gāo xìng rèn shi nǐ!",
+          "english": "My surname is Chen, my name is Chen Xiaomei — very pleased to meet you!"
+        },
+        {
+          "speaker": "A",
+          "chinese": "你是什么时候进公司的？",
+          "pinyin": "Nǐ shì shén me shí hou jìn gōng sī de?",
+          "english": "When did you join the company?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我是今天才进来的，正在认识同事。",
+          "pinyin": "Wǒ shì jīn tiān cái jìn lái de, zhèng zài rèn shi tóng shì.",
+          "english": "I just joined today; I'm currently getting to know my colleagues."
+        },
+        {
+          "speaker": "A",
+          "chinese": "没问题，我来告诉你公司的情况。",
+          "pinyin": "Méi wèn tí, wǒ lái gào su nǐ gōng sī de qíng kuàng.",
+          "english": "No problem — I'll tell you about the company."
+        }
+      ]
+    }
+  ]
+}

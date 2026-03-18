@@ -651,6 +651,62 @@
         "ui",
         "ao"
       ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "hǎo",
+      "audio_key": "hao3",
+      "correct": "3",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "guì",
+      "audio_key": "gui4",
+      "correct": "4",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "qī",
+      "audio_key": "qi1",
+      "correct": "1",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "gē",
+      "audio_key": "init_g",
+      "correct": "g",
+      "choices": ["g", "k", "h", "j"]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "jī",
+      "audio_key": "init_j",
+      "correct": "j",
+      "choices": ["j", "q", "x", "g"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "māo",
+      "audio_key": "fin_ao",
+      "correct": "ao",
+      "choices": ["ao", "ou", "iu", "ai"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "fēi",
+      "audio_key": "fin_ei",
+      "correct": "ei",
+      "choices": ["ai", "ei", "ui", "ao"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "jiū",
+      "audio_key": "fin_iu",
+      "correct": "iu",
+      "choices": ["ao", "ou", "iu", "ui"]
     }
   ]
 }

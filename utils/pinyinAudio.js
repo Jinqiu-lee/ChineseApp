@@ -654,10 +654,12 @@ export const PINYIN_AUDIO = {
   // Lesson 7 — whole-syllable compound finals
   // 'ri2':   require('../assets/audio/pinyin/tones/ri2.mp3'),   // rí  (tone 2)
   // 'zi1':   require('../assets/audio/pinyin/tones/zi1.mp3'),   // zī  character
-  'ci2':   require('../assets/audio/pinyin/tones/ci2.mp3'),   // cí  word
+  'ci2':   require('../assets/audio/pinyin/tones/ci2.mp3'),   // cí  词 word
+  'ci4':   require('../assets/audio/pinyin/tones/ci4.mp3'),   // cì  次 time/occasion
+  'yin1':  require('../assets/audio/pinyin/tones/yin1.mp3'),  // yīn 音 sound/music
   'zhan1': require('../assets/audio/pinyin/tones/zhan1.mp3'), // zhān
-  // 'zhang1':require('../assets/audio/pinyin/tones/zhang1.mp3'),// zhāng  chapter
-  // 'chong2':require('../assets/audio/pinyin/tones/chong2.mp3'),// chóng  insect
+  'zhang1':require('../assets/audio/pinyin/tones/zhang1.mp3'), // zhāng  章 chapter
+  'chong2':require('../assets/audio/pinyin/tones/chong2.mp3'), // chóng  虫 insect
   'chan2': require('../assets/audio/pinyin/tones/chan2.mp3'),  // chán  meditation
   'shan1': require('../assets/audio/pinyin/tones/shan1.mp3'),  // shān  mountain
   'ran2':  require('../assets/audio/pinyin/tones/ran2.mp3'),  // rán  burn
@@ -671,8 +673,13 @@ export const PINYIN_AUDIO = {
   'bu4_lai2': require('../assets/audio/pinyin/tones/bu4_lai2.mp3'), // bù lái  not coming
 
   // Lesson 9 — neutral tone & erhua
-  'ma0':     require('../assets/audio/pinyin/tones/ma0.mp3'),     // ma  吗 question particle
-  'wanr2':   require('../assets/audio/pinyin/tones/wanr2.mp3'),   // wánr  玩儿 play
-  'dianr3':  require('../assets/audio/pinyin/tones/dianr3.mp3'),  // diǎnr 点儿 a little
-  'yihuir4': require('../assets/audio/pinyin/tones/yihuir4.mp3'), // yīhuìr 一会儿 a moment
+  'ma0':        require('../assets/audio/pinyin/tones/ma0.mp3'),        // ma  吗 question particle
+  'wanr2':      require('../assets/audio/pinyin/tones/wanr2.mp3'),      // wánr  玩儿 play
+  'dianr3':     require('../assets/audio/pinyin/tones/dianr3.mp3'),     // diǎnr 点儿 a little
+  'yihuir4':    require('../assets/audio/pinyin/tones/yihuir4.mp3'),    // yīhuìr 一会儿 a moment
+  'nai3_nai0':  require('../assets/audio/pinyin/tones/nai3_nai0.mp3'),  // nǎi·nai 奶奶 grandma
+  'ye2_ye0':    require('../assets/audio/pinyin/tones/ye2_ye0.mp3'),    // yé·ye  爷爷 grandpa
+  'yi1_dianr3': require('../assets/audio/pinyin/tones/yi1_dianr3.mp3'), // yīdiǎnr 一点儿 a little
+  'hao3_wanr2': require('../assets/audio/pinyin/tones/hao3_wanr2.mp3'), // hǎowánr 好玩儿 fun
+  'huar1':      require('../assets/audio/pinyin/tones/huar1.mp3'),      // huār  花儿 flower
 };

@@ -1,0 +1,667 @@
+{
+  "lesson": 7,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Time & Relationships",
+  "topic_chinese": "我已经认识五年了",
+  "vocabulary": [
+    {
+      "id": "hsk3_l7_01",
+      "chinese": "认识",
+      "pinyin": "rèn shi",
+      "tones": [4, 0],
+      "english": "To know / To be acquainted with",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l7_02",
+      "chinese": "毕业",
+      "pinyin": "bì yè",
+      "tones": [4, 4],
+      "english": "To graduate",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l7_03",
+      "chinese": "结婚",
+      "pinyin": "jié hūn",
+      "tones": [2, 1],
+      "english": "To get married",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l7_04",
+      "chinese": "分手",
+      "pinyin": "fēn shǒu",
+      "tones": [1, 3],
+      "english": "To break up / To part ways",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l7_05",
+      "chinese": "已经",
+      "pinyin": "yǐ jīng",
+      "tones": [3, 1],
+      "english": "Already",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l7_06",
+      "chinese": "刚",
+      "pinyin": "gāng",
+      "tones": [1],
+      "english": "Just (recently) / Just now",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l7_07",
+      "chinese": "爱好",
+      "pinyin": "ài hào",
+      "tones": [4, 4],
+      "english": "Hobby / Interest",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l7_08",
+      "chinese": "经历",
+      "pinyin": "jīng lì",
+      "tones": [1, 4],
+      "english": "Experience / To experience",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk3_l7_09",
+      "chinese": "联系",
+      "pinyin": "lián xì",
+      "tones": [2, 4],
+      "english": "To contact / To keep in touch",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk3_l7_10",
+      "chinese": "发展",
+      "pinyin": "fā zhǎn",
+      "tones": [1, 3],
+      "english": "To develop / Development",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk3_l7_11",
+      "chinese": "期间",
+      "pinyin": "qī jiān",
+      "tones": [1, 1],
+      "english": "During / Period of time",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l7_12",
+      "chinese": "感情",
+      "pinyin": "gǎn qíng",
+      "tones": [3, 2],
+      "english": "Feelings / Emotion / Relationship",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l7_p01",
+      "chinese": "认识五年了",
+      "pinyin": "rèn shi wǔ nián le",
+      "tones": [4, 0, 3, 2, 0],
+      "english": "Have known each other for five years",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l7_p02",
+      "chinese": "刚毕业",
+      "pinyin": "gāng bì yè",
+      "tones": [1, 4, 4],
+      "english": "Just graduated",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l7_p03",
+      "chinese": "结婚以后",
+      "pinyin": "jié hūn yǐ hòu",
+      "tones": [2, 1, 3, 4],
+      "english": "After getting married",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l7_p04",
+      "chinese": "保持联系",
+      "pinyin": "bǎo chí lián xì",
+      "tones": [3, 2, 2, 4],
+      "english": "Keep in touch",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l7_p05",
+      "chinese": "共同爱好",
+      "pinyin": "gòng tóng ài hào",
+      "tones": [4, 2, 4, 4],
+      "english": "Shared hobbies / Common interests",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l7_p06",
+      "chinese": "分手了",
+      "pinyin": "fēn shǒu le",
+      "tones": [1, 3, 0],
+      "english": "Broke up",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l7_p07",
+      "chinese": "感情很好",
+      "pinyin": "gǎn qíng hěn hǎo",
+      "tones": [3, 2, 3, 3],
+      "english": "Have a great relationship",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l7_p08",
+      "chinese": "已经发展了",
+      "pinyin": "yǐ jīng fā zhǎn le",
+      "tones": [3, 1, 1, 3, 0],
+      "english": "Has already developed",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "我们已经认识五年了。",
+      "pinyin": "Wǒ men yǐ jīng rèn shi wǔ nián le.",
+      "english": "We have already known each other for five years."
+    },
+    {
+      "chinese": "他刚毕业，还在找工作。",
+      "pinyin": "Tā gāng bì yè, hái zài zhǎo gōng zuò.",
+      "english": "He just graduated and is still looking for a job."
+    },
+    {
+      "chinese": "他们感情很好，结婚以后一直保持联系。",
+      "pinyin": "Tā men gǎn qíng hěn hǎo, jié hūn yǐ hòu yī zhí bǎo chí lián xì.",
+      "english": "They have a great relationship and have kept in touch ever since getting married."
+    },
+    {
+      "chinese": "大学期间，他们有很多共同爱好。",
+      "pinyin": "Dà xué qī jiān, tā men yǒu hěn duō gòng tóng ài hào.",
+      "english": "During university, they had many shared hobbies."
+    },
+    {
+      "chinese": "不早点联系，关系就很难发展了。",
+      "pinyin": "Bù zǎo diǎn lián xì, guān xi jiù hěn nán fā zhǎn le.",
+      "english": "If you don't keep in touch early on, the relationship will be hard to develop."
+    },
+    {
+      "chinese": "他们已经分手了，但还是保持联系。",
+      "pinyin": "Tā men yǐ jīng fēn shǒu le, dàn hái shi bǎo chí lián xì.",
+      "english": "They have already broken up, but still keep in touch."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "时段补语 — Duration Expressions",
+      "explanation": "To express how long an action has lasted, use: V + 了 + Time Duration (+ 了). The first 了 marks completion of a single instance; the second 了 at the sentence end indicates the situation is ongoing up to now. Example: 我们认识了五年了 = We've known each other for five years (and still do). Without the second 了, it implies the duration is completed.",
+      "examples": [
+        {
+          "chinese": "我们认识了五年了。",
+          "pinyin": "Wǒ men rèn shi le wǔ nián le.",
+          "english": "We've known each other for five years."
+        },
+        {
+          "chinese": "他等了两个小时。",
+          "pinyin": "Tā děng le liǎng gè xiǎo shí.",
+          "english": "He waited for two hours."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which sentence means 'She has studied Chinese for three years (and still is)'?",
+          "type": "multiple_choice",
+          "correct": "她学汉语学了三年了。",
+          "options": [
+            "她学汉语学了三年了。",
+            "她学汉语学了三年。",
+            "她已经学三年汉语。",
+            "她学汉语刚三年。"
+          ],
+          "option_pinyin": [
+            "Tā xué Hàn yǔ xué le sān nián le.",
+            "Tā xué Hàn yǔ xué le sān nián.",
+            "Tā yǐ jīng xué sān nián Hàn yǔ.",
+            "Tā xué Hàn yǔ gāng sān nián."
+          ]
+        },
+        {
+          "question": "Fill in: 他们结婚___十年___。(They've been married for ten years — and still are.)",
+          "type": "multiple_choice",
+          "correct": "了 / 了",
+          "options": ["了 / 了", "了 / 过", "过 / 了", "着 / 了"],
+          "option_pinyin": ["le / le", "le / guò", "guò / le", "zhe / le"]
+        },
+        {
+          "question": "What does the second 了 at sentence end signal in a duration expression?",
+          "type": "multiple_choice",
+          "correct": "The situation is still ongoing",
+          "options": [
+            "The situation is still ongoing",
+            "The action is completed and finished",
+            "The speaker is surprised",
+            "The action happened in the past only"
+          ]
+        },
+        {
+          "question": "How do you say 'She waited for half an hour'?",
+          "type": "multiple_choice",
+          "correct": "她等了半个小时。",
+          "options": [
+            "她等了半个小时。",
+            "她等半个小时了。",
+            "她已经等半个小时。",
+            "她刚等半个小时了。"
+          ],
+          "option_pinyin": [
+            "Tā děng le bàn gè xiǎo shí.",
+            "Tā děng bàn gè xiǎo shí le.",
+            "Tā yǐ jīng děng bàn gè xiǎo shí.",
+            "Tā gāng děng bàn gè xiǎo shí le."
+          ]
+        },
+        {
+          "question": "Translate: 我们认识了五年了。",
+          "type": "multiple_choice",
+          "correct": "We've known each other for five years.",
+          "options": [
+            "We've known each other for five years.",
+            "We knew each other five years ago.",
+            "We will know each other for five years.",
+            "We just met five years ago."
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "刚 vs 已经 — Just vs. Already",
+      "explanation": "刚 (gāng) = just recently — emphasises that an action happened a very short time ago. 已经 (yǐ jīng) = already — emphasises that an action is completed, possibly some time ago. 刚 focuses on recency; 已经 focuses on completion. 刚 is often followed by 了 or used alone. 已经 is often followed by 了 to confirm completion.",
+      "examples": [
+        {
+          "chinese": "他刚来，还没吃饭。",
+          "pinyin": "Tā gāng lái, hái méi chī fàn.",
+          "english": "He just arrived and hasn't eaten yet."
+        },
+        {
+          "chinese": "他已经走了，你来晚了。",
+          "pinyin": "Tā yǐ jīng zǒu le, nǐ lái wǎn le.",
+          "english": "He has already left — you came too late."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which adverb emphasises very recent completion?",
+          "type": "multiple_choice",
+          "correct": "刚",
+          "options": ["已经", "刚", "还", "也"],
+          "option_pinyin": ["yǐ jīng", "gāng", "hái", "yě"]
+        },
+        {
+          "question": "Fill in: 我___毕业，刚开始找工作。(I just graduated and just started looking for work.)",
+          "type": "multiple_choice",
+          "correct": "刚",
+          "options": ["刚", "已经", "还", "都"],
+          "option_pinyin": ["gāng", "yǐ jīng", "hái", "dōu"]
+        },
+        {
+          "question": "Which sentence means 'They have already broken up'?",
+          "type": "multiple_choice",
+          "correct": "他们已经分手了。",
+          "options": [
+            "他们已经分手了。",
+            "他们刚分手。",
+            "他们要分手了。",
+            "他们没有分手。"
+          ],
+          "option_pinyin": [
+            "Tā men yǐ jīng fēn shǒu le.",
+            "Tā men gāng fēn shǒu.",
+            "Tā men yào fēn shǒu le.",
+            "Tā men méi yǒu fēn shǒu."
+          ]
+        },
+        {
+          "question": "What is the difference between 刚 and 已经?",
+          "type": "multiple_choice",
+          "correct": "刚 = just now (recent); 已经 = already (completed)",
+          "options": [
+            "刚 = just now (recent); 已经 = already (completed)",
+            "刚 = already done; 已经 = just started",
+            "Both mean the same thing",
+            "刚 = not yet; 已经 = never"
+          ]
+        },
+        {
+          "question": "Translate: 她刚结婚，感情很好。",
+          "type": "multiple_choice",
+          "correct": "She just got married; they have a great relationship.",
+          "options": [
+            "She just got married; they have a great relationship.",
+            "She already got married a long time ago.",
+            "She is about to get married.",
+            "She wants to get married soon."
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "不...就... / 不...才... — Not...then... / Not...until...",
+      "explanation": "不...就... = if not X, then Y (expresses a consequence). 不...才... = not until X (emphasises delay or condition before a result). 不早点睡就会累 = If you don't sleep early, you'll be tired. 不努力才会失败 = Only by not working hard will one fail. 才 implies the result is delayed or conditional.",
+      "examples": [
+        {
+          "chinese": "不早点联系，感情就会变差。",
+          "pinyin": "Bù zǎo diǎn lián xì, gǎn qíng jiù huì biàn chà.",
+          "english": "If you don't keep in touch early on, the relationship will deteriorate."
+        },
+        {
+          "chinese": "不努力发展，才会失去机会。",
+          "pinyin": "Bù nǔ lì fā zhǎn, cái huì shī qù jī huì.",
+          "english": "Only by not working hard will you lose the opportunity."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: 不好好复习，___会不及格。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["就", "才", "也", "都"],
+          "option_pinyin": ["jiù", "cái", "yě", "dōu"]
+        },
+        {
+          "question": "What does 不...就... express?",
+          "type": "multiple_choice",
+          "correct": "A consequence if something is not done",
+          "options": [
+            "A consequence if something is not done",
+            "An action that just happened",
+            "An action that is already completed",
+            "A simultaneous action"
+          ]
+        },
+        {
+          "question": "Which sentence means 'If you don't call, she won't come'?",
+          "type": "multiple_choice",
+          "correct": "你不打电话，她就不来。",
+          "options": [
+            "你不打电话，她就不来。",
+            "你刚打电话，她就来了。",
+            "你已经打电话，她来了。",
+            "你才打电话，她就走了。"
+          ],
+          "option_pinyin": [
+            "Nǐ bù dǎ diàn huà, tā jiù bù lái.",
+            "Nǐ gāng dǎ diàn huà, tā jiù lái le.",
+            "Nǐ yǐ jīng dǎ diàn huà, tā lái le.",
+            "Nǐ cái dǎ diàn huà, tā jiù zǒu le."
+          ]
+        },
+        {
+          "question": "What does 才 in 不...才... emphasise?",
+          "type": "multiple_choice",
+          "correct": "Delay — the result only happens under a negative condition",
+          "options": [
+            "Delay — the result only happens under a negative condition",
+            "Speed — the result happens immediately",
+            "Certainty — the result always happens",
+            "Surprise — the result is unexpected"
+          ]
+        },
+        {
+          "question": "Translate: 不保持联系，感情就会变淡。",
+          "type": "multiple_choice",
+          "correct": "If you don't keep in touch, feelings will fade.",
+          "options": [
+            "If you don't keep in touch, feelings will fade.",
+            "Just keep in touch and feelings will grow.",
+            "Already out of touch, feelings have faded.",
+            "Since you kept in touch, feelings are strong."
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 认识 mean?",
+      "type": "multiple_choice",
+      "correct": "To know / To be acquainted with",
+      "options": ["To meet for the first time", "To know / To be acquainted with", "To remember", "To forget"]
+    },
+    {
+      "question": "What does 毕业 mean?",
+      "type": "multiple_choice",
+      "correct": "To graduate",
+      "options": ["To study", "To graduate", "To apply", "To fail"]
+    },
+    {
+      "question": "What does 已经 mean?",
+      "type": "multiple_choice",
+      "correct": "Already",
+      "options": ["Just now", "Already", "Not yet", "Still"]
+    },
+    {
+      "question": "What does 刚 mean?",
+      "type": "multiple_choice",
+      "correct": "Just (recently) / Just now",
+      "options": ["Already", "Just (recently) / Just now", "During", "Later"]
+    },
+    {
+      "question": "What does 感情 mean?",
+      "type": "multiple_choice",
+      "correct": "Feelings / Emotion / Relationship",
+      "options": ["Hobby", "Feelings / Emotion / Relationship", "Experience", "Contact"]
+    },
+    {
+      "question": "How do you say 'to break up'?",
+      "type": "multiple_choice",
+      "correct": "分手",
+      "options": ["结婚", "分手", "联系", "发展"]
+    },
+    {
+      "question": "What does 期间 mean?",
+      "type": "multiple_choice",
+      "correct": "During / Period of time",
+      "options": ["Before", "During / Period of time", "After", "Together"]
+    },
+    {
+      "question": "Which word means 'hobby / interest'?",
+      "type": "multiple_choice",
+      "correct": "爱好",
+      "options": ["经历", "联系", "爱好", "发展"]
+    },
+    {
+      "question": "What does 联系 mean?",
+      "type": "multiple_choice",
+      "correct": "To contact / Keep in touch",
+      "options": ["To develop", "To contact / Keep in touch", "To graduate", "To experience"]
+    },
+    {
+      "question": "Which sentence correctly says 'We've known each other for five years'?",
+      "type": "multiple_choice",
+      "correct": "我们认识了五年了。",
+      "options": [
+        "我们认识了五年了。",
+        "我们认识五年前。",
+        "我们刚认识五年。",
+        "我们认识了吗？"
+      ]
+    },
+    {
+      "question": "What does 刚毕业 mean?",
+      "type": "multiple_choice",
+      "correct": "Just graduated",
+      "options": ["Already graduated", "Just graduated", "About to graduate", "Will graduate"]
+    },
+    {
+      "question": "What does 保持联系 mean?",
+      "type": "multiple_choice",
+      "correct": "Keep in touch",
+      "options": ["Break up", "Keep in touch", "Get married", "Develop feelings"]
+    },
+    {
+      "question": "What does 感情很好 mean?",
+      "type": "multiple_choice",
+      "correct": "Have a great relationship",
+      "options": ["Have a great relationship", "Just met", "Already broke up", "Have shared hobbies"]
+    },
+    {
+      "question": "Fill in: 不早点___，感情就会变差。",
+      "type": "multiple_choice",
+      "correct": "联系",
+      "options": ["毕业", "联系", "分手", "结婚"]
+    },
+    {
+      "question": "Which adverb emphasises completion that happened some time ago?",
+      "type": "multiple_choice",
+      "correct": "已经",
+      "options": ["刚", "已经", "还", "才"]
+    },
+    {
+      "question": "What does 共同爱好 mean?",
+      "type": "multiple_choice",
+      "correct": "Shared hobbies / Common interests",
+      "options": ["Shared hobbies / Common interests", "Separate interests", "A new hobby", "No interests"]
+    },
+    {
+      "question": "What does 分手了 mean?",
+      "type": "multiple_choice",
+      "correct": "Broke up",
+      "options": ["Broke up", "Got married", "Just graduated", "Kept in touch"]
+    },
+    {
+      "question": "What does 已经发展了 mean?",
+      "type": "multiple_choice",
+      "correct": "Has already developed",
+      "options": ["Has already developed", "Just started developing", "Cannot develop", "Will develop soon"]
+    },
+    {
+      "question": "How do you express ongoing duration in Chinese?",
+      "type": "multiple_choice",
+      "correct": "V + 了 + time + 了",
+      "options": ["V + 了 + time + 了", "已经 + V + time", "刚 + V + time + 了", "V + time + 过"]
+    },
+    {
+      "question": "What does 结婚以后 mean?",
+      "type": "multiple_choice",
+      "correct": "After getting married",
+      "options": ["After getting married", "Before getting married", "When getting married", "Instead of getting married"]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Old Friends Reconnecting",
+      "title_chinese": "老朋友重新联系",
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "朋友",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "大明！好久不见！我们已经认识五年了吧？",
+          "pinyin": "Dà Míng! Hǎo jiǔ bú jiàn! Wǒ men yǐ jīng rèn shi wǔ nián le ba?",
+          "english": "Da Ming! Long time no see! We've already known each other for five years, right?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "对！时间过得真快。你刚毕业还是已经工作了？",
+          "pinyin": "Duì! Shí jiān guò de zhēn kuài. Nǐ gāng bì yè hái shi yǐ jīng gōng zuò le?",
+          "english": "Yes! Time flies. Did you just graduate or are you already working?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我已经工作了，去年毕业的。你呢？",
+          "pinyin": "Wǒ yǐ jīng gōng zuò le, qù nián bì yè de. Nǐ ne?",
+          "english": "I'm already working — I graduated last year. What about you?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我刚找到工作，上个月才开始。我们有共同爱好，应该多保持联系。",
+          "pinyin": "Wǒ gāng zhǎo dào gōng zuò, shàng gè yuè cái kāi shǐ. Wǒ men yǒu gòng tóng ài hào, yīng gāi duō bǎo chí lián xì.",
+          "english": "I just found a job — I only started last month. We share common interests; we should keep in touch more."
+        },
+        {
+          "speaker": "A",
+          "chinese": "对！不保持联系，感情就会变淡了。",
+          "pinyin": "Duì! Bù bǎo chí lián xì, gǎn qíng jiù huì biàn dàn le.",
+          "english": "Exactly! If we don't keep in touch, our friendship will fade."
+        },
+        {
+          "speaker": "B",
+          "chinese": "大学期间的经历真难忘，我们感情一直很好。",
+          "pinyin": "Dà xué qī jiān de jīng lì zhēn nán wàng, wǒ men gǎn qíng yī zhí hěn hǎo.",
+          "english": "The experiences during university are truly unforgettable — our friendship has always been great."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Talking About Relationships",
+      "title_chinese": "聊感情",
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "同学",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "听说你们分手了？发生什么事了？",
+          "pinyin": "Tīng shuō nǐ men fēn shǒu le? Fā shēng shén me shì le?",
+          "english": "I heard you two broke up. What happened?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我们已经分手了，但还是保持联系。感情还是不错的。",
+          "pinyin": "Wǒ men yǐ jīng fēn shǒu le, dàn hái shi bǎo chí lián xì. Gǎn qíng hái shi bú cuò de.",
+          "english": "We've already broken up, but we still keep in touch. The relationship is still good."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你们认识多久了？",
+          "pinyin": "Nǐ men rèn shi duō jiǔ le?",
+          "english": "How long have you known each other?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "认识了三年了，有很多共同爱好和经历。",
+          "pinyin": "Rèn shi le sān nián le, yǒu hěn duō gòng tóng ài hào hé jīng lì.",
+          "english": "We've known each other for three years and have many shared hobbies and experiences."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那很好。刚分手的时候肯定不容易。",
+          "pinyin": "Nà hěn hǎo. Gāng fēn shǒu de shí hou kěn dìng bù róng yì.",
+          "english": "That's nice. It was definitely hard when you first broke up."
+        }
+      ]
+    }
+  ]
+}

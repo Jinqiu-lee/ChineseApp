@@ -637,6 +637,55 @@
         "3",
         "4"
       ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bāng",
+      "audio_key": "fin_ang",
+      "correct": "ang",
+      "choices": ["ang", "eng", "ing", "ong"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "dōng",
+      "audio_key": "fin_ong",
+      "correct": "ong",
+      "choices": ["ang", "eng", "ing", "ong"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bān",
+      "audio_key": "fin_an",
+      "correct": "an",
+      "choices": ["an", "ang", "in", "ing"]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "yī",
+      "audio_key": "init_y",
+      "correct": "y",
+      "choices": ["y", "w", "j", "x"]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "wū",
+      "audio_key": "init_w",
+      "correct": "w",
+      "choices": ["y", "w", "j", "x"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yáng",
+      "audio_key": "yang2",
+      "correct": "2",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "zhōng",
+      "audio_key": "zhong1",
+      "correct": "1",
+      "choices": ["1", "2", "3", "4"]
     }
   ]
 }

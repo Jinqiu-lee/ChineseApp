@@ -51,8 +51,27 @@ import lesson12 from './data/hsk1/hsk1_lesson_12.json';
 import lesson13 from './data/hsk1/hsk1_lesson_13.json';
 import lesson14 from './data/hsk1/hsk1_lesson_14.json';
 import lesson15 from './data/hsk1/hsk1_lesson_15.json';
+import hsk2lesson1 from './data/hsk2/hsk2_lesson_1.json';
+import hsk2lesson2 from './data/hsk2/hsk2_lesson_2.json';
+import hsk2lesson3 from './data/hsk2/hsk2_lesson_3.json';
+import hsk2lesson4 from './data/hsk2/hsk2_lesson_4.json';
+import hsk2lesson5 from './data/hsk2/hsk2_lesson_5.json';
+import hsk2lesson6 from './data/hsk2/hsk2_lesson_6.json';
+import hsk2lesson7 from './data/hsk2/hsk2_lesson_7.json';
+import hsk2lesson8 from './data/hsk2/hsk2_lesson_8.json';
+import hsk2lesson9 from './data/hsk2/hsk2_lesson_9.json';
+import hsk2lesson10 from './data/hsk2/hsk2_lesson_10.json';
+import hsk2lesson11 from './data/hsk2/hsk2_lesson_11.json';
+import hsk2lesson12 from './data/hsk2/hsk2_lesson_12.json';
+import hsk2lesson13 from './data/hsk2/hsk2_lesson_13.json';
+import hsk2lesson14 from './data/hsk2/hsk2_lesson_14.json';
+import hsk2lesson15 from './data/hsk2/hsk2_lesson_15.json';
 
-const LESSONS = { 1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5, 6: lesson6, 7: lesson7, 8: lesson8, 9: lesson9, 10: lesson10, 11: lesson11, 12: lesson12, 13: lesson13, 14: lesson14, 15: lesson15 };
+const LESSONS_BY_LEVEL = {
+  hsk1: { 1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5, 6: lesson6, 7: lesson7, 8: lesson8, 9: lesson9, 10: lesson10, 11: lesson11, 12: lesson12, 13: lesson13, 14: lesson14, 15: lesson15 },
+  hsk2: { 1: hsk2lesson1, 2: hsk2lesson2, 3: hsk2lesson3, 4: hsk2lesson4, 5: hsk2lesson5, 6: hsk2lesson6, 7: hsk2lesson7, 8: hsk2lesson8, 9: hsk2lesson9, 10: hsk2lesson10, 11: hsk2lesson11, 12: hsk2lesson12, 13: hsk2lesson13, 14: hsk2lesson14, 15: hsk2lesson15 },
+};
+const LESSONS = LESSONS_BY_LEVEL.hsk1; // keep for backward compat
 
 const ALL_LEVEL_IDS = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5'];
 
@@ -93,6 +112,7 @@ export default function App() {
   const [currentPinyinStageIndex, setCurrentPinyinStageIndex] = useState(null);
   const [pinyinQuizPassed, setPinyinQuizPassed] = useState([]);       // [1,2,3,...] lesson IDs passed
   const [pinyinStageProgress, setPinyinStageProgress] = useState({}); // { "pinyin_1": [0,1,2] }
+  const [pinyinLessonInitialTab, setPinyinLessonInitialTab] = useState('learn');
 
   // ── Load saved data on startup ──────────────────────────────
   useEffect(() => {
@@ -249,6 +269,7 @@ export default function App() {
 
   const handleSelectPinyinLesson = (lessonId) => {
     setCurrentPinyinLessonId(lessonId);
+    setPinyinLessonInitialTab('learn');
     setCurrentScreen('pinyinLesson');
   };
 
@@ -265,6 +286,7 @@ export default function App() {
       if (existing.includes(idx)) return prev;
       return { ...prev, [key]: [...existing, idx] };
     });
+    setPinyinLessonInitialTab('practice');
     setCurrentScreen('pinyinLesson');
   };
 
@@ -364,7 +386,7 @@ export default function App() {
   // ── Helper to get stage progress for current lesson & round ─────────────
   const currentStageProgressKey = `${currentLessonLevelId}_${currentLessonId}_r${currentRound}`;
   const currentStageProgressArr = stageProgress[currentStageProgressKey] || [];
-  const currentLessonData = LESSONS[currentLessonId] || null;
+  const currentLessonData = (LESSONS_BY_LEVEL[currentLessonLevelId] || LESSONS)[currentLessonId] || null;
 
   // Combined accuracy for rounds 1 + 2 (used by RoundCompleteScreen after round 2)
   const r1Score = roundScores[`${currentLessonLevelId}_${currentLessonId}_r1`] || { score: 0, total: 0 };
@@ -410,6 +432,7 @@ export default function App() {
     return (
       <LessonDetailScreen
         lessonId={currentLessonId}
+        levelId={currentLessonLevelId}
         stageProgress={currentStageProgressArr}
         currentRound={currentRound}
         quizUnlocked={quizUnlocked}
@@ -510,6 +533,7 @@ export default function App() {
         lessonData={pinyinLessonData}
         stageProgress={pinyinStageDone}
         quizPassed={pinyinQuizPassed2}
+        initialTab={pinyinLessonInitialTab}
         onBack={() => setCurrentScreen('pinyinSystem')}
         onStartStage={handleStartPinyinStage}
         onTakeQuiz={handleOpenPinyinLessonQuiz}

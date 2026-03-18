@@ -1,0 +1,572 @@
+{
+  "lesson": 11,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Home & Reminders",
+  "topic_chinese": "别忘了把空调关了",
+  "vocabulary": [
+    {
+      "id": "hsk3_l11_01",
+      "chinese": "空调",
+      "pinyin": "kōng tiáo",
+      "tones": [1, 2],
+      "english": "Air conditioner",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l11_02",
+      "chinese": "忘",
+      "pinyin": "wàng",
+      "tones": [4],
+      "english": "To forget",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l11_03",
+      "chinese": "关",
+      "pinyin": "guān",
+      "tones": [1],
+      "english": "To turn off / To close",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l11_04",
+      "chinese": "开",
+      "pinyin": "kāi",
+      "tones": [1],
+      "english": "To turn on / To open",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l11_05",
+      "chinese": "灯",
+      "pinyin": "dēng",
+      "tones": [1],
+      "english": "Light / Lamp",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l11_06",
+      "chinese": "窗户",
+      "pinyin": "chuāng hu",
+      "tones": [1, 0],
+      "english": "Window",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l11_07",
+      "chinese": "帮",
+      "pinyin": "bāng",
+      "tones": [1],
+      "english": "To help",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l11_08",
+      "chinese": "顺便",
+      "pinyin": "shùn biàn",
+      "tones": [4, 4],
+      "english": "Conveniently / While at it",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l11_09",
+      "chinese": "浪费",
+      "pinyin": "làng fèi",
+      "tones": [4, 4],
+      "english": "To waste / Wasteful",
+      "part_of_speech": "verb/adjective"
+    },
+    {
+      "id": "hsk3_l11_10",
+      "chinese": "电",
+      "pinyin": "diàn",
+      "tones": [4],
+      "english": "Electricity",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l11_11",
+      "chinese": "节约",
+      "pinyin": "jié yuē",
+      "tones": [2, 1],
+      "english": "To save / To economise",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l11_12",
+      "chinese": "随手",
+      "pinyin": "suí shǒu",
+      "tones": [2, 3],
+      "english": "Right away (habitually) / Casually",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l11_p01",
+      "chinese": "把空调关了",
+      "pinyin": "bǎ kōng tiáo guān le",
+      "tones": [3, 1, 2, 1, 0],
+      "english": "Turn off the air conditioner",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l11_p02",
+      "chinese": "别忘了",
+      "pinyin": "bié wàng le",
+      "tones": [2, 4, 0],
+      "english": "Don't forget",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l11_p03",
+      "chinese": "随手关灯",
+      "pinyin": "suí shǒu guān dēng",
+      "tones": [2, 3, 1, 1],
+      "english": "Turn off the lights as you go",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l11_p04",
+      "chinese": "浪费电",
+      "pinyin": "làng fèi diàn",
+      "tones": [4, 4, 4],
+      "english": "Waste electricity",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l11_p05",
+      "chinese": "顺便帮我",
+      "pinyin": "shùn biàn bāng wǒ",
+      "tones": [4, 4, 1, 3],
+      "english": "Help me while you're at it",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l11_p06",
+      "chinese": "节约用电",
+      "pinyin": "jié yuē yòng diàn",
+      "tones": [2, 1, 4, 4],
+      "english": "Save electricity",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l11_p07",
+      "chinese": "开着空调",
+      "pinyin": "kāi zhe kōng tiáo",
+      "tones": [1, 0, 1, 2],
+      "english": "With the air conditioner on",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l11_p08",
+      "chinese": "忘关窗户",
+      "pinyin": "wàng guān chuāng hu",
+      "tones": [4, 1, 1, 0],
+      "english": "Forget to close the window",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "别忘了把空调关了。",
+      "pinyin": "Bié wàng le bǎ kōng tiáo guān le.",
+      "english": "Don't forget to turn off the air conditioner."
+    },
+    {
+      "chinese": "请随手关灯，不要浪费电。",
+      "pinyin": "Qǐng suí shǒu guān dēng, bú yào làng fèi diàn.",
+      "english": "Please turn off the lights as you go — don't waste electricity."
+    },
+    {
+      "chinese": "你能帮我把窗户关上吗？",
+      "pinyin": "Nǐ néng bāng wǒ bǎ chuāng hu guān shàng ma?",
+      "english": "Can you help me close the window?"
+    },
+    {
+      "chinese": "我们要节约用电，不要开着空调睡觉。",
+      "pinyin": "Wǒ men yào jié yuē yòng diàn, bú yào kāi zhe kōng tiáo shuì jiào.",
+      "english": "We should save electricity — don't sleep with the air conditioner on."
+    },
+    {
+      "chinese": "你顺便帮我把门关了吧。",
+      "pinyin": "Nǐ shùn biàn bāng wǒ bǎ mén guān le ba.",
+      "english": "While you're at it, please close the door for me."
+    },
+    {
+      "chinese": "他出门的时候忘关窗户了。",
+      "pinyin": "Tā chū mén de shí hòu wàng guān chuāng hu le.",
+      "english": "He forgot to close the window when he went out."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "把字句（1）— The Bǎ-sentence",
+      "explanation": "Subject + 把 + Object + Verb + Complement. The object is moved before the verb using 把 to emphasise what was done to it. The verb must have a complement (了, 开, 上, etc.) — bare verbs are not used. 把空调关了 = turn off the air conditioner. 把门开开 = open the door.",
+      "examples": [
+        {
+          "chinese": "请把空调关了。",
+          "pinyin": "Qǐng bǎ kōng tiáo guān le.",
+          "english": "Please turn off the air conditioner."
+        },
+        {
+          "chinese": "他把窗户开开了。",
+          "pinyin": "Tā bǎ chuāng hu kāi kāi le.",
+          "english": "He opened the window."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: 请___空调关了。(Please turn off the air conditioner.)",
+          "type": "multiple_choice",
+          "correct": "把",
+          "options": ["把", "被", "让", "给"],
+          "option_pinyin": ["bǎ", "bèi", "ràng", "gěi"]
+        },
+        {
+          "question": "Which sentence uses 把 correctly?",
+          "type": "multiple_choice",
+          "correct": "他把灯关了。",
+          "options": ["他把灯关了。", "他把关灯了。", "把他灯关了。", "他关把灯了。"],
+          "option_pinyin": [
+            "Tā bǎ dēng guān le.",
+            "Tā bǎ guān dēng le.",
+            "Bǎ tā dēng guān le.",
+            "Tā guān bǎ dēng le."
+          ],
+          "correct_pinyin": "Tā bǎ dēng guān le."
+        },
+        {
+          "question": "What must follow the verb in a 把-sentence?",
+          "type": "multiple_choice",
+          "correct": "A complement (like 了, 开, 上)",
+          "options": [
+            "A complement (like 了, 开, 上)",
+            "Another subject",
+            "A question word",
+            "Nothing — verb alone is fine"
+          ]
+        },
+        {
+          "question": "What does 把门开开 mean?",
+          "type": "multiple_choice",
+          "correct": "Open the door",
+          "options": ["Open the door", "Close the door", "Lock the door", "Break the door"],
+          "option_pinyin": ["bǎ mén kāi kāi", "bǎ mén guān shàng", "bǎ mén suǒ shàng", "bǎ mén dǎ pò"]
+        },
+        {
+          "question": "Choose the correct 把-sentence: 'She put the bag down.'",
+          "type": "multiple_choice",
+          "correct": "她把包放下了。",
+          "options": ["她把包放下了。", "她放包下了。", "把她包放下了。", "她包把放下了。"],
+          "option_pinyin": [
+            "Tā bǎ bāo fàng xià le.",
+            "Tā fàng bāo xià le.",
+            "Bǎ tā bāo fàng xià le.",
+            "Tā bāo bǎ fàng xià le."
+          ],
+          "correct_pinyin": "Tā bǎ bāo fàng xià le."
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "句末「了2」— Sentence-final 了",
+      "explanation": "了 at the end of a sentence signals a change of state or new situation. 下雨了 = It's raining now (it wasn't before). 空调开着了 = The air conditioner is on now. This is different from 了(1) which marks completion after a verb.",
+      "examples": [
+        {
+          "chinese": "外面下雨了。",
+          "pinyin": "Wài miàn xià yǔ le.",
+          "english": "It's raining outside now."
+        },
+        {
+          "chinese": "他回来了。",
+          "pinyin": "Tā huí lái le.",
+          "english": "He's back now."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does the sentence-final 了 signal?",
+          "type": "multiple_choice",
+          "correct": "A change of state or new situation",
+          "options": [
+            "A change of state or new situation",
+            "A completed action in the past",
+            "A future plan",
+            "A negative statement"
+          ]
+        },
+        {
+          "question": "Which 了 signals a new situation: 他买了书 vs 天黑了?",
+          "type": "multiple_choice",
+          "correct": "天黑了 (sentence-final 了)",
+          "options": [
+            "天黑了 (sentence-final 了)",
+            "他买了书 (post-verb 了)",
+            "Both are the same",
+            "Neither"
+          ]
+        },
+        {
+          "question": "Fill in: 天气冷___，快把窗户关上吧。(It's gotten cold — close the window.)",
+          "type": "multiple_choice",
+          "correct": "了",
+          "options": ["了", "过", "着", "完"],
+          "option_pinyin": ["le", "guò", "zhe", "wán"]
+        },
+        {
+          "question": "What does 他走了 mean?",
+          "type": "multiple_choice",
+          "correct": "He has left / He's gone now",
+          "options": ["He has left / He's gone now", "He is walking", "He will walk", "He walked before"],
+          "option_pinyin": ["tā zǒu le", "tā zài zǒu", "tā yào zǒu", "tā zǒu guò"]
+        },
+        {
+          "question": "Which sentence shows a change of state?",
+          "type": "multiple_choice",
+          "correct": "空调开了。",
+          "options": ["空调开了。", "他开空调。", "我要开空调。", "空调很好。"],
+          "option_pinyin": [
+            "Kōng tiáo kāi le.",
+            "Tā kāi kōng tiáo.",
+            "Wǒ yào kāi kōng tiáo.",
+            "Kōng tiáo hěn hǎo."
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "别...了 — Don't...anymore",
+      "explanation": "别 + Verb (+ 了) = Don't / Stop doing something. 别忘了 = Don't forget. 别说了 = Stop talking. 别浪费了 = Stop wasting. The 了 adds a 'stop/anymore' nuance. It is stronger than 不要 when giving warnings or reminders.",
+      "examples": [
+        {
+          "chinese": "别忘了把灯关了。",
+          "pinyin": "Bié wàng le bǎ dēng guān le.",
+          "english": "Don't forget to turn off the lights."
+        },
+        {
+          "chinese": "别浪费电了。",
+          "pinyin": "Bié làng fèi diàn le.",
+          "english": "Stop wasting electricity."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 别说了 mean?",
+          "type": "multiple_choice",
+          "correct": "Stop talking",
+          "options": ["Stop talking", "Say it again", "Don't know how to speak", "Keep talking"],
+          "option_pinyin": ["bié shuō le", "zài shuō", "bù huì shuō", "jì xù shuō"]
+        },
+        {
+          "question": "Fill in: ___忘了带钥匙。(Don't forget to bring your key.)",
+          "type": "multiple_choice",
+          "correct": "别",
+          "options": ["别", "不", "没", "很"],
+          "option_pinyin": ["bié", "bù", "méi", "hěn"]
+        },
+        {
+          "question": "Which sentence means 'Stop wasting food'?",
+          "type": "multiple_choice",
+          "correct": "别浪费食物了。",
+          "options": ["别浪费食物了。", "不浪费食物。", "没有浪费食物。", "浪费食物别。"],
+          "option_pinyin": [
+            "Bié làng fèi shí wù le.",
+            "Bù làng fèi shí wù.",
+            "Méi yǒu làng fèi shí wù.",
+            "Làng fèi shí wù bié."
+          ],
+          "correct_pinyin": "Bié làng fèi shí wù le."
+        },
+        {
+          "question": "How does 别 differ from 不要 in reminders?",
+          "type": "multiple_choice",
+          "correct": "别 is stronger and more direct",
+          "options": [
+            "别 is stronger and more direct",
+            "不要 is stronger",
+            "They are exactly the same",
+            "别 is only used in writing"
+          ]
+        },
+        {
+          "question": "Translate: 别开着空调睡觉了。",
+          "type": "multiple_choice",
+          "correct": "Stop sleeping with the air conditioner on.",
+          "options": [
+            "Stop sleeping with the air conditioner on.",
+            "Turn on the air conditioner to sleep.",
+            "The air conditioner was left on while sleeping.",
+            "Don't turn on the air conditioner."
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 空调 mean?",
+      "type": "multiple_choice",
+      "correct": "Air conditioner",
+      "options": ["Air conditioner", "Window", "Light", "Electricity"]
+    },
+    {
+      "question": "What does 忘 mean?",
+      "type": "multiple_choice",
+      "correct": "To forget",
+      "options": ["To forget", "To help", "To waste", "To save"]
+    },
+    {
+      "question": "Which word means 'to turn off / to close'?",
+      "type": "multiple_choice",
+      "correct": "关",
+      "options": ["关", "开", "帮", "忘"]
+    },
+    {
+      "question": "What does 灯 mean?",
+      "type": "multiple_choice",
+      "correct": "Light / Lamp",
+      "options": ["Light / Lamp", "Window", "Air conditioner", "Electricity"]
+    },
+    {
+      "question": "What is the pinyin for 窗户?",
+      "type": "multiple_choice",
+      "correct": "chuāng hu",
+      "options": ["chuāng hu", "kōng tiáo", "suí shǒu", "jié yuē"]
+    },
+    {
+      "question": "What does 顺便 mean?",
+      "type": "multiple_choice",
+      "correct": "Conveniently / While at it",
+      "options": ["Conveniently / While at it", "Right away", "To waste", "To forget"]
+    },
+    {
+      "question": "What does 浪费 mean?",
+      "type": "multiple_choice",
+      "correct": "To waste / Wasteful",
+      "options": ["To waste / Wasteful", "To save", "To help", "To turn off"]
+    },
+    {
+      "question": "What does 节约 mean?",
+      "type": "multiple_choice",
+      "correct": "To save / To economise",
+      "options": ["To save / To economise", "To waste", "To forget", "To turn on"]
+    },
+    {
+      "question": "What does 随手 mean?",
+      "type": "multiple_choice",
+      "correct": "Right away (habitually) / Casually",
+      "options": ["Right away (habitually) / Casually", "Conveniently", "To help", "To close"]
+    },
+    {
+      "question": "Fill in: 请把空调___了。(Please turn off the air conditioner.)",
+      "type": "multiple_choice",
+      "correct": "关",
+      "options": ["关", "开", "帮", "忘"]
+    },
+    {
+      "question": "Which is a correct 把-sentence?",
+      "type": "multiple_choice",
+      "correct": "他把灯关了。",
+      "options": ["他把灯关了。", "他灯把关了。", "把关他灯了。", "他把灯。"]
+    },
+    {
+      "question": "What does 别忘了 mean?",
+      "type": "multiple_choice",
+      "correct": "Don't forget",
+      "options": ["Don't forget", "Stop helping", "Save electricity", "Turn on the light"]
+    },
+    {
+      "question": "Which structure means 'Stop doing something'?",
+      "type": "multiple_choice",
+      "correct": "别 + Verb + 了",
+      "options": ["别 + Verb + 了", "把 + Verb + 了", "是 + Verb + 的", "被 + Verb + 了"]
+    },
+    {
+      "question": "What role does sentence-final 了 play?",
+      "type": "multiple_choice",
+      "correct": "Signals a change of state or new situation",
+      "options": [
+        "Signals a change of state or new situation",
+        "Marks a past completed action after a verb",
+        "Asks a question",
+        "Expresses the future"
+      ]
+    },
+    {
+      "question": "Translate: 随手关灯",
+      "type": "multiple_choice",
+      "correct": "Turn off the lights as you go",
+      "options": ["Turn off the lights as you go", "Save electricity", "Turn on the lamp", "Forget the light"]
+    },
+    {
+      "question": "What does 节约用电 mean?",
+      "type": "multiple_choice",
+      "correct": "Save electricity",
+      "options": ["Save electricity", "Waste power", "Turn on lights", "Close windows"]
+    },
+    {
+      "question": "Which sentence means 'Don't waste electricity'?",
+      "type": "multiple_choice",
+      "correct": "别浪费电了。",
+      "options": ["别浪费电了。", "把电浪费了。", "电被浪费了。", "浪费不电了。"]
+    },
+    {
+      "question": "What does 顺便帮我 mean?",
+      "type": "multiple_choice",
+      "correct": "Help me while you're at it",
+      "options": ["Help me while you're at it", "Forget to help", "Save for me", "Turn off for me"]
+    },
+    {
+      "question": "Which verb goes with 把 in: 请___空调关了?",
+      "type": "multiple_choice",
+      "correct": "把",
+      "options": ["把", "被", "在", "对"]
+    },
+    {
+      "question": "What does 开着空调 mean?",
+      "type": "multiple_choice",
+      "correct": "With the air conditioner on",
+      "options": ["With the air conditioner on", "Turn off the AC", "Waste electricity", "Close the window"]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Reminding a Roommate",
+      "title_chinese": "提醒室友",
+      "speakers": {
+        "A": {"name": "小红", "role": "室友", "gender": "female"},
+        "B": {"name": "大明", "role": "室友", "gender": "male"}
+      },
+      "lines": [
+        {"speaker": "A", "chinese": "大明，你要出门了吗？", "pinyin": "Dà Míng, nǐ yào chū mén le ma?", "english": "Daming, are you heading out?"},
+        {"speaker": "B", "chinese": "对，我要去图书馆了。", "pinyin": "Duì, wǒ yào qù tú shū guǎn le.", "english": "Yes, I'm going to the library."},
+        {"speaker": "A", "chinese": "别忘了把空调关了，很浪费电。", "pinyin": "Bié wàng le bǎ kōng tiáo guān le, hěn làng fèi diàn.", "english": "Don't forget to turn off the air conditioner — it wastes a lot of electricity."},
+        {"speaker": "B", "chinese": "好的，我随手把灯也关了。", "pinyin": "Hǎo de, wǒ suí shǒu bǎ dēng yě guān le.", "english": "OK, I'll turn off the lights too as I go."},
+        {"speaker": "A", "chinese": "顺便帮我把窗户关上，谢谢。", "pinyin": "Shùn biàn bāng wǒ bǎ chuāng hu guān shàng, xiè xie.", "english": "While you're at it, please close the window for me. Thanks."},
+        {"speaker": "B", "chinese": "没问题，我们要节约用电嘛！", "pinyin": "Méi wèn tí, wǒ men yào jié yuē yòng diàn ma!", "english": "No problem — we should save electricity after all!"}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Leaving Home Checklist",
+      "title_chinese": "出门前的检查",
+      "speakers": {
+        "A": {"name": "妈妈", "role": "家长", "gender": "female"},
+        "B": {"name": "小刚", "role": "学生", "gender": "male"}
+      },
+      "lines": [
+        {"speaker": "A", "chinese": "小刚，你要上学了，东西带好了吗？", "pinyin": "Xiǎo Gāng, nǐ yào shàng xué le, dōng xi dài hǎo le ma?", "english": "Xiaogang, you're going to school — have you got everything?"},
+        {"speaker": "B", "chinese": "带好了，我走了。", "pinyin": "Dài hǎo le, wǒ zǒu le.", "english": "Yes, I'm off."},
+        {"speaker": "A", "chinese": "等一下！别忘了把空调关了。", "pinyin": "Děng yī xià! Bié wàng le bǎ kōng tiáo guān le.", "english": "Wait! Don't forget to turn off the air conditioner."},
+        {"speaker": "B", "chinese": "啊，对！我忘了。谢谢妈妈。", "pinyin": "Ā, duì! Wǒ wàng le. Xiè xie māma.", "english": "Oh, right! I forgot. Thanks, Mum."},
+        {"speaker": "A", "chinese": "还有，把窗户关上，外面要下雨了。", "pinyin": "Hái yǒu, bǎ chuāng hu guān shàng, wài miàn yào xià yǔ le.", "english": "Also, close the window — it's going to rain outside."},
+        {"speaker": "B", "chinese": "好，关好了。我去上学了！", "pinyin": "Hǎo, guān hǎo le. Wǒ qù shàng xué le!", "english": "Done, all closed. I'm off to school!"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,960 @@
+{
+  "lesson": 10,
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Family Time",
+  "topic_chinese": "家庭时光",
+  "vocabulary": [
+    {
+      "id": "hsk2_l10_01",
+      "chinese": "到",
+      "pinyin": "dào",
+      "tones": [
+        4
+      ],
+      "english": "To arrive / To reach",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l10_02",
+      "chinese": "手机",
+      "pinyin": "shǒu jī",
+      "tones": [
+        3,
+        1
+      ],
+      "english": "Mobile phone",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l10_03",
+      "chinese": "放",
+      "pinyin": "fàng",
+      "tones": [
+        4
+      ],
+      "english": "To put / To place",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l10_04",
+      "chinese": "桌子",
+      "pinyin": "zhuō zi",
+      "tones": [
+        1,
+        0
+      ],
+      "english": "Table / Desk",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l10_05",
+      "chinese": "上",
+      "pinyin": "shàng",
+      "tones": [
+        4
+      ],
+      "english": "Above / On top of / On",
+      "part_of_speech": "noun (location)"
+    },
+    {
+      "id": "hsk2_l10_06",
+      "chinese": "旁边",
+      "pinyin": "páng biān",
+      "tones": [
+        2,
+        1
+      ],
+      "english": "Next to / Beside",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l10_07",
+      "chinese": "找",
+      "pinyin": "zhǎo",
+      "tones": [
+        3
+      ],
+      "english": "To look for / To find",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l10_08",
+      "chinese": "等",
+      "pinyin": "děng",
+      "tones": [
+        3
+      ],
+      "english": "To wait",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l10_09",
+      "chinese": "门",
+      "pinyin": "mén",
+      "tones": [
+        2
+      ],
+      "english": "Door / Gate",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l10_10",
+      "chinese": "进",
+      "pinyin": "jìn",
+      "tones": [
+        4
+      ],
+      "english": "To enter",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l10_11",
+      "chinese": "外",
+      "pinyin": "wài",
+      "tones": [
+        4
+      ],
+      "english": "Outside / Outer",
+      "part_of_speech": "noun (location)"
+    },
+    {
+      "id": "hsk2_l10_12",
+      "chinese": "里",
+      "pinyin": "lǐ",
+      "tones": [
+        3
+      ],
+      "english": "Inside / Within",
+      "part_of_speech": "noun (location)"
+    },
+    {
+      "id": "hsk2_l10_p01",
+      "chinese": "放在桌子上",
+      "pinyin": "fàng zài zhuō zi shàng",
+      "tones": [
+        4,
+        4,
+        1,
+        0,
+        4
+      ],
+      "english": "Placed on the table",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p02",
+      "chinese": "手机在里面",
+      "pinyin": "shǒu jī zài lǐ miàn",
+      "tones": [
+        3,
+        1,
+        4,
+        3,
+        4
+      ],
+      "english": "The phone is inside",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p03",
+      "chinese": "在门外等",
+      "pinyin": "zài mén wài děng",
+      "tones": [
+        4,
+        2,
+        4,
+        3
+      ],
+      "english": "Wait outside the door",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p04",
+      "chinese": "找手机",
+      "pinyin": "zhǎo shǒu jī",
+      "tones": [
+        3,
+        3,
+        1
+      ],
+      "english": "Look for the phone",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p05",
+      "chinese": "到了",
+      "pinyin": "dào le",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "Arrived / Here (we are)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p06",
+      "chinese": "门旁边的桌子",
+      "pinyin": "mén páng biān de zhuō zi",
+      "tones": [
+        2,
+        2,
+        1,
+        0,
+        1,
+        0
+      ],
+      "english": "The table next to the door",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p07",
+      "chinese": "进来找",
+      "pinyin": "jìn lái zhǎo",
+      "tones": [
+        4,
+        2,
+        3
+      ],
+      "english": "Come in and look for (something)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p08",
+      "chinese": "桌子上面",
+      "pinyin": "zhuō zi shàng miàn",
+      "tones": [
+        1,
+        0,
+        4,
+        4
+      ],
+      "english": "On top of the table",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hsk2_l10_p01",
+      "chinese": "放在桌子上",
+      "pinyin": "fàng zài zhuō zi shàng",
+      "tones": [
+        4,
+        4,
+        1,
+        0,
+        4
+      ],
+      "english": "Placed on the table",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p02",
+      "chinese": "手机在里面",
+      "pinyin": "shǒu jī zài lǐ miàn",
+      "tones": [
+        3,
+        1,
+        4,
+        3,
+        4
+      ],
+      "english": "The phone is inside",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p03",
+      "chinese": "在门外等",
+      "pinyin": "zài mén wài děng",
+      "tones": [
+        4,
+        2,
+        4,
+        3
+      ],
+      "english": "Wait outside the door",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p04",
+      "chinese": "找手机",
+      "pinyin": "zhǎo shǒu jī",
+      "tones": [
+        3,
+        3,
+        1
+      ],
+      "english": "Look for the phone",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p05",
+      "chinese": "到了",
+      "pinyin": "dào le",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "Arrived / Here (we are)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p06",
+      "chinese": "门旁边的桌子",
+      "pinyin": "mén páng biān de zhuō zi",
+      "tones": [
+        2,
+        2,
+        1,
+        0,
+        1,
+        0
+      ],
+      "english": "The table next to the door",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p07",
+      "chinese": "进来找",
+      "pinyin": "jìn lái zhǎo",
+      "tones": [
+        4,
+        2,
+        3
+      ],
+      "english": "Come in and look for (something)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l10_p08",
+      "chinese": "桌子上面",
+      "pinyin": "zhuō zi shàng miàn",
+      "tones": [
+        1,
+        0,
+        4,
+        4
+      ],
+      "english": "On top of the table",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "到了，你的手机放在桌子上。",
+      "pinyin": "Dào le, nǐ de shǒu jī fàng zài zhuō zi shàng.",
+      "english": "We're here — your phone is on the table."
+    },
+    {
+      "chinese": "你的手机在桌子里面还是桌子旁边？",
+      "pinyin": "Nǐ de shǒu jī zài zhuō zi lǐ miàn hái shì zhuō zi páng biān?",
+      "english": "Is your phone inside the drawer or beside the table?"
+    },
+    {
+      "chinese": "请在门外等，他马上出来。",
+      "pinyin": "Qǐng zài mén wài děng, tā mǎ shàng chū lái.",
+      "english": "Please wait outside the door; he'll come out soon."
+    },
+    {
+      "chinese": "把手机放在桌子上。",
+      "pinyin": "Bǎ shǒu jī fàng zài zhuō zi shàng.",
+      "english": "Put the phone on the table."
+    },
+    {
+      "chinese": "他在里面找东西。",
+      "pinyin": "Tā zài lǐ miàn zhǎo dōng xi.",
+      "english": "He is looking for something inside."
+    },
+    {
+      "chinese": "门旁边有一张桌子，上面放着书包。",
+      "pinyin": "Mén páng biān yǒu yī zhāng zhuō zi, shàng miàn fàng zhe shū bāo.",
+      "english": "There is a table next to the door, with a bag on top of it."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "祈使句 — Imperative Sentences",
+      "explanation": "Imperative sentences in Chinese give orders, instructions, or requests. They typically omit the subject (you) and begin directly with the verb or with 请 (please) to be polite. Structure: (请) + Verb + Object. Negatives: 不要/别 + Verb. Examples: 进来 (Come in); 请坐 (Please sit); 别说话 (Don't talk); 把手机放好 (Put the phone away properly).",
+      "examples": [
+        {
+          "chinese": "把手机放在桌子上。",
+          "pinyin": "Bǎ shǒu jī fàng zài zhuō zi shàng.",
+          "english": "Put the phone on the table."
+        },
+        {
+          "chinese": "请在门外等一下。",
+          "pinyin": "Qǐng zài mén wài děng yī xià.",
+          "english": "Please wait outside the door for a moment."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which sentence is a polite imperative?",
+          "type": "multiple_choice",
+          "correct": "请进来。",
+          "options": [
+            "请进来。",
+            "你进来了。",
+            "你进来吗？",
+            "你要进来。"
+          ],
+          "correct_pinyin": "Qǐng jìn lái."
+        },
+        {
+          "question": "How do you say 'Don't use the phone' as an imperative?",
+          "type": "multiple_choice",
+          "correct": "别用手机。",
+          "options": [
+            "别用手机。",
+            "你不用手机。",
+            "你不要用手机了。",
+            "没有手机用。"
+          ],
+          "correct_pinyin": "Bié yòng shǒu jī."
+        },
+        {
+          "question": "What makes a Chinese imperative sentence polite?",
+          "type": "multiple_choice",
+          "correct": "Adding 请 before the verb",
+          "options": [
+            "Adding 请 before the verb",
+            "Adding 了 at the end",
+            "Using the full subject",
+            "Adding 吗 at the end"
+          ]
+        },
+        {
+          "question": "What does 在门外等 mean?",
+          "type": "multiple_choice",
+          "correct": "Wait outside the door",
+          "options": [
+            "Wait outside the door",
+            "Enter through the door",
+            "Look for the door",
+            "Stand next to the door"
+          ],
+          "option_pinyin": [
+            "zài mén wài děng",
+            "jìn mén",
+            "zhǎo mén",
+            "zhàn zài mén páng biān"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "存现句 — Existential Sentences",
+      "explanation": "Existential sentences describe the existence or appearance of something at a location. Structure: Location + 有/是/存在 + Subject. The location comes first, then the existence verb, then what exists there. This is the opposite of typical English word order. Examples: 桌子上有一本书 (On the table there is a book); 门旁边有一张桌子 (Next to the door there is a table).",
+      "examples": [
+        {
+          "chinese": "桌子上有一本书。",
+          "pinyin": "Zhuō zi shàng yǒu yī běn shū.",
+          "english": "On the table there is a book."
+        },
+        {
+          "chinese": "门旁边有一张桌子。",
+          "pinyin": "Mén páng biān yǒu yī zhāng zhuō zi.",
+          "english": "Next to the door there is a table."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What is the word order in a Chinese existential sentence?",
+          "type": "multiple_choice",
+          "correct": "Location + 有 + Thing",
+          "options": [
+            "Location + 有 + Thing",
+            "Thing + 有 + Location",
+            "Subject + 在 + Location",
+            "有 + Thing + Location"
+          ]
+        },
+        {
+          "question": "Which sentence correctly describes something existing at a location?",
+          "type": "multiple_choice",
+          "correct": "桌子上有手机。",
+          "options": [
+            "桌子上有手机。",
+            "手机有桌子上。",
+            "有手机桌子上。",
+            "在桌子上手机有。"
+          ],
+          "correct_pinyin": "Zhuō zi shàng yǒu shǒu jī."
+        },
+        {
+          "question": "Fill in: 房间___有一张大桌子。(Inside the room there is a large table.)",
+          "type": "multiple_choice",
+          "correct": "里",
+          "options": [
+            "里",
+            "上",
+            "外",
+            "旁边"
+          ],
+          "option_pinyin": [
+            "lǐ",
+            "shàng",
+            "wài",
+            "páng biān"
+          ]
+        },
+        {
+          "question": "What does 桌子上面 mean?",
+          "type": "multiple_choice",
+          "correct": "On top of the table",
+          "options": [
+            "On top of the table",
+            "Under the table",
+            "Inside the table",
+            "Next to the table"
+          ],
+          "option_pinyin": [
+            "zhuō zi shàng miàn",
+            "zhuō zi xià miàn",
+            "zhuō zi lǐ miàn",
+            "zhuō zi páng biān"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "介词「在」— The Preposition zài",
+      "explanation": "在 (zài) as a preposition means 'at / in / on'. It comes before the location to show where an action takes place. Structure: Subject + 在 + Location + Verb. It can also be used as a verb meaning 'to be (at a place)': 他在家 (He is at home). When describing the position of something: Object + 在 + Location: 手机在桌子上 (The phone is on the table).",
+      "examples": [
+        {
+          "chinese": "你的手机放在桌子上。",
+          "pinyin": "Nǐ de shǒu jī fàng zài zhuō zi shàng.",
+          "english": "Your phone is placed on the table."
+        },
+        {
+          "chinese": "他在门外等你。",
+          "pinyin": "Tā zài mén wài děng nǐ.",
+          "english": "He is waiting for you outside the door."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 在 mean as a preposition?",
+          "type": "multiple_choice",
+          "correct": "At / In / On (a location)",
+          "options": [
+            "At / In / On (a location)",
+            "From",
+            "To",
+            "Near"
+          ]
+        },
+        {
+          "question": "Which sentence correctly uses 在 as a preposition?",
+          "type": "multiple_choice",
+          "correct": "他在图书馆看书。",
+          "options": [
+            "他在图书馆看书。",
+            "他图书馆在看书。",
+            "他看书在图书馆。",
+            "在他图书馆看书。"
+          ],
+          "correct_pinyin": "Tā zài túshūguǎn kàn shū."
+        },
+        {
+          "question": "Fill in: 手机___桌子旁边。(The phone is next to the table.)",
+          "type": "multiple_choice",
+          "correct": "在",
+          "options": [
+            "在",
+            "是",
+            "有",
+            "放"
+          ],
+          "option_pinyin": [
+            "zài",
+            "shì",
+            "yǒu",
+            "fàng"
+          ]
+        },
+        {
+          "question": "What does 放在桌子上 mean?",
+          "type": "multiple_choice",
+          "correct": "Put on the table",
+          "options": [
+            "Put on the table",
+            "Take from the table",
+            "Look under the table",
+            "Find next to the table"
+          ],
+          "option_pinyin": [
+            "fàng zài zhuō zi shàng",
+            "cóng zhuō zi ná",
+            "zài zhuō zi xià zhǎo",
+            "zài zhuō zi páng biān zhǎo"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 手机 mean?",
+      "type": "multiple_choice",
+      "correct": "Mobile phone",
+      "options": [
+        "Watch",
+        "Computer",
+        "Mobile phone",
+        "Camera"
+      ]
+    },
+    {
+      "question": "What does 桌子 mean?",
+      "type": "multiple_choice",
+      "correct": "Table / Desk",
+      "options": [
+        "Chair",
+        "Table / Desk",
+        "Bed",
+        "Sofa"
+      ]
+    },
+    {
+      "question": "What does 放 mean?",
+      "type": "multiple_choice",
+      "correct": "To put / To place",
+      "options": [
+        "To take",
+        "To put / To place",
+        "To find",
+        "To move"
+      ]
+    },
+    {
+      "question": "What does 上 mean as a location word?",
+      "type": "multiple_choice",
+      "correct": "Above / On top of",
+      "options": [
+        "Below",
+        "Inside",
+        "Above / On top of",
+        "Outside"
+      ]
+    },
+    {
+      "question": "What does 里 mean?",
+      "type": "multiple_choice",
+      "correct": "Inside / Within",
+      "options": [
+        "Outside",
+        "Inside / Within",
+        "Above",
+        "Below"
+      ]
+    },
+    {
+      "question": "What does 外 mean?",
+      "type": "multiple_choice",
+      "correct": "Outside / Outer",
+      "options": [
+        "Outside / Outer",
+        "Inside",
+        "Near",
+        "Far"
+      ]
+    },
+    {
+      "question": "How do you say 'The phone is on the table'?",
+      "type": "multiple_choice",
+      "correct": "手机在桌子上。",
+      "options": [
+        "手机在桌子上。",
+        "手机在桌子里。",
+        "手机在桌子外。",
+        "手机在桌子旁边。"
+      ]
+    },
+    {
+      "question": "What is the word order in an existential sentence?",
+      "type": "multiple_choice",
+      "correct": "Location + 有 + Thing",
+      "options": [
+        "Thing + 有 + Location",
+        "Location + 有 + Thing",
+        "Subject + 在 + Location",
+        "有 + Thing + Location"
+      ]
+    },
+    {
+      "question": "Which sentence is a polite imperative?",
+      "type": "multiple_choice",
+      "correct": "请进来。",
+      "options": [
+        "你进来了。",
+        "请进来。",
+        "你要进来。",
+        "你进来吗？"
+      ]
+    },
+    {
+      "question": "What does 到 mean?",
+      "type": "multiple_choice",
+      "correct": "To arrive / To reach",
+      "options": [
+        "To go",
+        "To leave",
+        "To arrive / To reach",
+        "To wait"
+      ]
+    },
+    {
+      "question": "What does 进 mean?",
+      "type": "multiple_choice",
+      "correct": "To enter",
+      "options": [
+        "To exit",
+        "To enter",
+        "To arrive",
+        "To stand"
+      ]
+    },
+    {
+      "question": "What does 找 mean?",
+      "type": "multiple_choice",
+      "correct": "To look for / To find",
+      "options": [
+        "To put",
+        "To wait",
+        "To look for / To find",
+        "To ask"
+      ]
+    },
+    {
+      "question": "What does 在 mean as a preposition?",
+      "type": "multiple_choice",
+      "correct": "At / In / On",
+      "options": [
+        "From",
+        "To",
+        "At / In / On",
+        "Near"
+      ]
+    },
+    {
+      "question": "Which sentence correctly places something at a location?",
+      "type": "multiple_choice",
+      "correct": "书放在桌子上。",
+      "options": [
+        "书放在桌子上。",
+        "桌子放在书上。",
+        "放书在桌子上。",
+        "书在放桌子上。"
+      ]
+    },
+    {
+      "question": "What does 旁边 mean?",
+      "type": "multiple_choice",
+      "correct": "Next to / Beside",
+      "options": [
+        "In front of",
+        "Behind",
+        "Next to / Beside",
+        "Far from"
+      ]
+    },
+    {
+      "question": "How do you say 'placed on the table'?",
+      "type": "multiple_choice",
+      "correct": "放在桌子上",
+      "options": [
+        "放在桌子上",
+        "放在桌子里",
+        "放在桌子外",
+        "放在桌子旁边"
+      ]
+    },
+    {
+      "question": "What does 手机在里面 mean?",
+      "type": "multiple_choice",
+      "correct": "The phone is inside",
+      "options": [
+        "The phone is inside",
+        "The phone is outside",
+        "The phone is on top",
+        "The phone is next to it"
+      ]
+    },
+    {
+      "question": "How do you say 'come in and look for something'?",
+      "type": "multiple_choice",
+      "correct": "进来找",
+      "options": [
+        "进来找",
+        "出去找",
+        "等着找",
+        "放在找"
+      ]
+    },
+    {
+      "question": "What does 门旁边的桌子 mean?",
+      "type": "multiple_choice",
+      "correct": "The table next to the door",
+      "options": [
+        "The table next to the door",
+        "The table inside the door",
+        "The table outside the door",
+        "The door next to the table"
+      ]
+    },
+    {
+      "question": "Fill in: 你的手机___桌子___，门___等你。(Your phone is on the table; I'm waiting for you outside the door.)",
+      "type": "multiple_choice",
+      "correct": "在 / 上 / 外",
+      "options": [
+        "在 / 上 / 外",
+        "放 / 里 / 旁边",
+        "到 / 上 / 里",
+        "找 / 外 / 上"
+      ]
+    },
+    {
+      "question": "What does 手机在里面 mean?",
+      "type": "multiple_choice",
+      "correct": "The phone is inside",
+      "options": [
+        "The phone is inside",
+        "The phone is outside",
+        "The phone is on top",
+        "Find the phone"
+      ]
+    },
+    {
+      "question": "What does 门旁边的桌子 mean?",
+      "type": "multiple_choice",
+      "correct": "The table next to the door",
+      "options": [
+        "The table next to the door",
+        "The door next to the table",
+        "The table outside the door",
+        "The table inside the door"
+      ]
+    },
+    {
+      "question": "How do you say 'come in and look for something'?",
+      "type": "multiple_choice",
+      "correct": "进来找",
+      "options": [
+        "进来找",
+        "出去找",
+        "在里面放",
+        "门外等"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Looking for the Phone",
+      "title_chinese": "找手机",
+      "speakers": {
+        "A": {
+          "name": "小明",
+          "role": "朋友",
+          "gender": "male"
+        },
+        "B": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小红，你看到我的手机了吗？",
+          "pinyin": "Xiǎo Hóng, nǐ kàn dào wǒ de shǒu jī le ma?",
+          "english": "Xiao Hong, have you seen my phone?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "到了，你的手机放在桌子上，旁边有你的书包。",
+          "pinyin": "Dào le, nǐ de shǒu jī fàng zài zhuō zi shàng, páng biān yǒu nǐ de shū bāo.",
+          "english": "Here you go — your phone is on the table, with your bag next to it."
+        },
+        {
+          "speaker": "A",
+          "chinese": "桌子上？我刚才在桌子里面找，没找到。",
+          "pinyin": "Zhuō zi shàng? Wǒ gāng cái zài zhuō zi lǐ miàn zhǎo, méi zhǎo dào.",
+          "english": "On the table? I just looked inside the drawer and didn't find it."
+        },
+        {
+          "speaker": "B",
+          "chinese": "就在桌子上，门旁边那张桌子上。",
+          "pinyin": "Jiù zài zhuō zi shàng, mén páng biān nà zhāng zhuō zi shàng.",
+          "english": "It's right on the table — the table next to the door."
+        },
+        {
+          "speaker": "A",
+          "chinese": "找到了！谢谢，我等你，先进去吧。",
+          "pinyin": "Zhǎo dào le! Xiè xie, wǒ děng nǐ, xiān jìn qù ba.",
+          "english": "Found it! Thank you; I'll wait for you — go in first."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Arriving at the Office",
+      "title_chinese": "到了公司",
+      "speakers": {
+        "A": {
+          "name": "大卫",
+          "role": "访客",
+          "gender": "male"
+        },
+        "B": {
+          "name": "前台",
+          "role": "接待员",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你好，我来找王经理，他在里面吗？",
+          "pinyin": "Nǐ hǎo, wǒ lái zhǎo Wáng jīng lǐ, tā zài lǐ miàn ma?",
+          "english": "Hello, I'm here to see Manager Wang; is he inside?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "在的，请在门外等一下，我去告诉他。",
+          "pinyin": "Zài de, qǐng zài mén wài děng yī xià, wǒ qù gào su tā.",
+          "english": "Yes, he's in. Please wait outside the door; I'll go tell him."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好的，谢谢，我把手机放在这里的桌子上。",
+          "pinyin": "Hǎo de, xiè xie, wǒ bǎ shǒu jī fàng zài zhè lǐ de zhuō zi shàng.",
+          "english": "Okay, thank you; I'll put my phone on the table here."
+        },
+        {
+          "speaker": "B",
+          "chinese": "王经理来了，请进来，往左边走。",
+          "pinyin": "Wáng jīng lǐ lái le, qǐng jìn lái, wǎng zuǒ bian zǒu.",
+          "english": "Manager Wang is here; please come in and walk to the left."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好，里面有桌子吗？我需要放东西。",
+          "pinyin": "Hǎo, lǐ miàn yǒu zhuō zi ma? Wǒ xū yào fàng dōng xi.",
+          "english": "Okay; is there a table inside? I need to put some things down."
+        },
+        {
+          "speaker": "B",
+          "chinese": "有，门旁边就有一张大桌子。",
+          "pinyin": "Yǒu, mén páng biān jiù yǒu yī zhāng dà zhuō zi.",
+          "english": "Yes; right next to the door there is a large table."
+        }
+      ]
+    }
+  ]
+}

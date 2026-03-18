@@ -1,0 +1,756 @@
+{
+  "lesson": 3,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Location & Things",
+  "topic_chinese": "桌子上放着哪些饮料",
+  "vocabulary": [
+    {
+      "id": "hsk3_l3_01",
+      "chinese": "饮料",
+      "pinyin": "yǐn liào",
+      "tones": [3, 4],
+      "english": "Drink / Beverage",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l3_02",
+      "chinese": "放",
+      "pinyin": "fàng",
+      "tones": [4],
+      "english": "To put / To place",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l3_03",
+      "chinese": "台",
+      "pinyin": "tái",
+      "tones": [2],
+      "english": "[Measure word for machines/appliances]",
+      "part_of_speech": "measure word"
+    },
+    {
+      "id": "hsk3_l3_04",
+      "chinese": "瓶",
+      "pinyin": "píng",
+      "tones": [2],
+      "english": "Bottle / [Measure word for bottles]",
+      "part_of_speech": "measure word/noun"
+    },
+    {
+      "id": "hsk3_l3_05",
+      "chinese": "果汁",
+      "pinyin": "guǒ zhī",
+      "tones": [3, 1],
+      "english": "Fruit juice",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l3_06",
+      "chinese": "矿泉水",
+      "pinyin": "kuàng quán shuǐ",
+      "tones": [4, 2, 3],
+      "english": "Mineral water",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l3_07",
+      "chinese": "就",
+      "pinyin": "jiù",
+      "tones": [4],
+      "english": "Just / Right there / Exactly",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l3_08",
+      "chinese": "旁边",
+      "pinyin": "páng biān",
+      "tones": [2, 1],
+      "english": "Next to / Beside",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l3_09",
+      "chinese": "右边",
+      "pinyin": "yòu biān",
+      "tones": [4, 1],
+      "english": "Right side / On the right",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l3_10",
+      "chinese": "左边",
+      "pinyin": "zuǒ biān",
+      "tones": [3, 1],
+      "english": "Left side / On the left",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l3_11",
+      "chinese": "够",
+      "pinyin": "gòu",
+      "tones": [4],
+      "english": "Enough / Sufficient",
+      "part_of_speech": "adjective/verb"
+    },
+    {
+      "id": "hsk3_l3_12",
+      "chinese": "着",
+      "pinyin": "zhe",
+      "tones": [0],
+      "english": "[Aspect particle: ongoing state]",
+      "part_of_speech": "particle"
+    },
+    {
+      "id": "hsk3_l3_p01",
+      "chinese": "放在桌子上",
+      "pinyin": "fàng zài zhuō zi shàng",
+      "tones": [4, 4, 1, 0, 4],
+      "english": "Placed on the table",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l3_p02",
+      "chinese": "一瓶果汁",
+      "pinyin": "yī píng guǒ zhī",
+      "tones": [1, 2, 3, 1],
+      "english": "One bottle of fruit juice",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l3_p03",
+      "chinese": "够喝了",
+      "pinyin": "gòu hē le",
+      "tones": [4, 1, 0],
+      "english": "Enough to drink",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l3_p04",
+      "chinese": "就在旁边",
+      "pinyin": "jiù zài páng biān",
+      "tones": [4, 4, 2, 1],
+      "english": "Right next to / Right beside",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l3_p05",
+      "chinese": "放着饮料",
+      "pinyin": "fàng zhe yǐn liào",
+      "tones": [4, 0, 3, 4],
+      "english": "Drinks placed there (ongoing state)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l3_p06",
+      "chinese": "两台电脑",
+      "pinyin": "liǎng tái diàn nǎo",
+      "tones": [3, 2, 4, 3],
+      "english": "Two computers",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l3_p07",
+      "chinese": "左边还是右边",
+      "pinyin": "zuǒ biān hái shì yòu biān",
+      "tones": [3, 1, 2, 4, 4, 1],
+      "english": "Left side or right side",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l3_p08",
+      "chinese": "矿泉水够不够",
+      "pinyin": "kuàng quán shuǐ gòu bu gòu",
+      "tones": [4, 2, 3, 4, 0, 4],
+      "english": "Is the mineral water enough",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "桌子上放着哪些饮料？",
+      "pinyin": "Zhuō zi shàng fàng zhe nǎ xiē yǐn liào?",
+      "english": "What drinks are placed on the table?"
+    },
+    {
+      "chinese": "桌子上放着两瓶矿泉水和一瓶果汁。",
+      "pinyin": "Zhuō zi shàng fàng zhe liǎng píng kuàng quán shuǐ hé yī píng guǒ zhī.",
+      "english": "Two bottles of mineral water and one bottle of fruit juice are placed on the table."
+    },
+    {
+      "chinese": "电脑就在你右边。",
+      "pinyin": "Diàn nǎo jiù zài nǐ yòu biān.",
+      "english": "The computer is right to your right."
+    },
+    {
+      "chinese": "饮料够了吗？我觉得够喝了。",
+      "pinyin": "Yǐn liào gòu le ma? Wǒ jué de gòu hē le.",
+      "english": "Are there enough drinks? I think there's enough to drink."
+    },
+    {
+      "chinese": "冰箱就在门口旁边，你去拿一瓶矿泉水吧。",
+      "pinyin": "Bīng xiāng jiù zài mén kǒu páng biān, nǐ qù ná yī píng kuàng quán shuǐ ba.",
+      "english": "The fridge is right beside the entrance; go get a bottle of mineral water."
+    },
+    {
+      "chinese": "左边放着果汁，右边放着矿泉水。",
+      "pinyin": "Zuǒ biān fàng zhe guǒ zhī, yòu biān fàng zhe kuàng quán shuǐ.",
+      "english": "Fruit juice is placed on the left; mineral water is placed on the right."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "「就」表示确认位置 — 就 to Confirm Location",
+      "explanation": "就在 + location means 'right here/there/next to'. 就 adds certainty and precision to location statements. E.g. 就在门口 = Right at the entrance. 就在你旁边 = Right beside you. 就在左边 = Right on the left. It reassures the listener that the location is exact and close.",
+      "examples": [
+        {
+          "chinese": "电脑就在桌子右边。",
+          "pinyin": "Diàn nǎo jiù zài zhuō zi yòu biān.",
+          "english": "The computer is right to the right of the table."
+        },
+        {
+          "chinese": "饮料就在旁边，自己拿吧。",
+          "pinyin": "Yǐn liào jiù zài páng biān, zì jǐ ná ba.",
+          "english": "The drinks are right there beside you; help yourself."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 就在这里 mean?",
+          "type": "multiple_choice",
+          "correct": "Right here",
+          "options": [
+            "Right here",
+            "Not here",
+            "Over there",
+            "Approximately here"
+          ]
+        },
+        {
+          "question": "What does 就 add to a location statement?",
+          "type": "multiple_choice",
+          "correct": "Certainty and precision",
+          "options": [
+            "Certainty and precision",
+            "Approximation",
+            "Negation",
+            "A habitual action"
+          ]
+        },
+        {
+          "question": "How do you say 'Right beside you'?",
+          "type": "multiple_choice",
+          "correct": "就在你旁边",
+          "options": [
+            "就在你旁边",
+            "在你就旁边",
+            "你旁边就在",
+            "旁边就你在"
+          ],
+          "option_pinyin": [
+            "jiù zài nǐ páng biān",
+            "zài nǐ jiù páng biān",
+            "nǐ páng biān jiù zài",
+            "páng biān jiù nǐ zài"
+          ]
+        },
+        {
+          "question": "Fill in: 冰箱___在门口旁边。(The fridge is right beside the entrance.)",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": [
+            "就",
+            "很",
+            "也",
+            "着"
+          ]
+        },
+        {
+          "question": "Which sentence means 'The fruit juice is right on the left'?",
+          "type": "multiple_choice",
+          "correct": "果汁就在左边。",
+          "options": [
+            "果汁就在左边。",
+            "果汁在左边就。",
+            "就果汁在左边。",
+            "果汁左边就在。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "名量词组合 — Numeral + Measure Word + Noun",
+      "explanation": "Chinese requires a measure word between a number and a noun. The measure word must match the noun type. Common combinations: 一瓶水 (one bottle of water — 瓶 for bottles), 两台电脑 (two computers — 台 for machines), 三个人 (three people — 个 is general). Formula: Number + Measure Word + Noun. Without the measure word the sentence is incorrect.",
+      "examples": [
+        {
+          "chinese": "桌子上有两瓶矿泉水。",
+          "pinyin": "Zhuō zi shàng yǒu liǎng píng kuàng quán shuǐ.",
+          "english": "There are two bottles of mineral water on the table."
+        },
+        {
+          "chinese": "房间里放着一台电脑。",
+          "pinyin": "Fáng jiān lǐ fàng zhe yī tái diàn nǎo.",
+          "english": "A computer is placed in the room."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which measure word goes with 电脑 (computer)?",
+          "type": "multiple_choice",
+          "correct": "台",
+          "options": [
+            "台",
+            "瓶",
+            "个",
+            "趟"
+          ],
+          "option_pinyin": [
+            "tái",
+            "píng",
+            "gè",
+            "tàng"
+          ]
+        },
+        {
+          "question": "How do you say 'three bottles of fruit juice'?",
+          "type": "multiple_choice",
+          "correct": "三瓶果汁",
+          "options": [
+            "三瓶果汁",
+            "三台果汁",
+            "三个果汁",
+            "三趟果汁"
+          ],
+          "option_pinyin": [
+            "sān píng guǒ zhī",
+            "sān tái guǒ zhī",
+            "sān gè guǒ zhī",
+            "sān tàng guǒ zhī"
+          ]
+        },
+        {
+          "question": "What is the correct order for a numeral + noun phrase?",
+          "type": "multiple_choice",
+          "correct": "Number + Measure Word + Noun",
+          "options": [
+            "Number + Measure Word + Noun",
+            "Number + Noun + Measure Word",
+            "Measure Word + Number + Noun",
+            "Noun + Number + Measure Word"
+          ]
+        },
+        {
+          "question": "Fill in: 桌子上有两___矿泉水。",
+          "type": "multiple_choice",
+          "correct": "瓶",
+          "options": [
+            "瓶",
+            "台",
+            "趟",
+            "个"
+          ]
+        },
+        {
+          "question": "Which sentence is correct?",
+          "type": "multiple_choice",
+          "correct": "我有一台电脑。",
+          "options": [
+            "我有一台电脑。",
+            "我有一电脑。",
+            "我有电脑一台。",
+            "我一台有电脑。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "动词+着 — Verb + 着 (Ongoing State)",
+      "explanation": "V+着 describes a continuing state resulting from an action. 放着饮料 = drinks are placed there (ongoing placement). 开着门 = the door is open (ongoing state). 坐着 = sitting (ongoing posture). Different from 在+V-ing which is an active process: 他在放饮料 = He is placing drinks (right now). V+着 describes the resulting state, not the active process.",
+      "examples": [
+        {
+          "chinese": "桌子上放着很多饮料。",
+          "pinyin": "Zhuō zi shàng fàng zhe hěn duō yǐn liào.",
+          "english": "Many drinks are placed on the table."
+        },
+        {
+          "chinese": "门开着，你可以进去。",
+          "pinyin": "Mén kāi zhe, nǐ kě yǐ jìn qù.",
+          "english": "The door is open; you can go in."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does V+着 describe?",
+          "type": "multiple_choice",
+          "correct": "A continuing state resulting from an action",
+          "options": [
+            "A continuing state resulting from an action",
+            "An active process happening right now",
+            "A completed action",
+            "A future action"
+          ]
+        },
+        {
+          "question": "What does 放着饮料 mean?",
+          "type": "multiple_choice",
+          "correct": "Drinks placed there (ongoing state)",
+          "options": [
+            "Drinks placed there (ongoing state)",
+            "Currently placing drinks",
+            "Drinks have been drunk",
+            "Placing drinks later"
+          ]
+        },
+        {
+          "question": "Which sentence uses 着 correctly for an ongoing state?",
+          "type": "multiple_choice",
+          "correct": "门开着呢。",
+          "options": [
+            "门开着呢。",
+            "他着开门。",
+            "着门开了。",
+            "门开了着。"
+          ]
+        },
+        {
+          "question": "How is V+着 different from 在+V?",
+          "type": "multiple_choice",
+          "correct": "V+着 is a resulting state; 在+V is an active process",
+          "options": [
+            "V+着 is a resulting state; 在+V is an active process",
+            "They are exactly the same",
+            "V+着 is future; 在+V is past",
+            "V+着 is formal; 在+V is informal"
+          ]
+        },
+        {
+          "question": "Fill in: 桌子上放___两瓶矿泉水。(Two bottles of mineral water are placed on the table.)",
+          "type": "multiple_choice",
+          "correct": "着",
+          "options": [
+            "着",
+            "了",
+            "过",
+            "在"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 饮料 mean?",
+      "type": "multiple_choice",
+      "correct": "Drink / Beverage",
+      "options": [
+        "Food",
+        "Drink / Beverage",
+        "Water",
+        "Juice"
+      ]
+    },
+    {
+      "question": "What does 果汁 mean?",
+      "type": "multiple_choice",
+      "correct": "Fruit juice",
+      "options": [
+        "Mineral water",
+        "Tea",
+        "Fruit juice",
+        "Soda"
+      ]
+    },
+    {
+      "question": "What does 矿泉水 mean?",
+      "type": "multiple_choice",
+      "correct": "Mineral water",
+      "options": [
+        "Fruit juice",
+        "Tap water",
+        "Mineral water",
+        "Cold water"
+      ]
+    },
+    {
+      "question": "What does 够 mean?",
+      "type": "multiple_choice",
+      "correct": "Enough / Sufficient",
+      "options": [
+        "Too much",
+        "Not enough",
+        "Enough / Sufficient",
+        "A little"
+      ]
+    },
+    {
+      "question": "What does 旁边 mean?",
+      "type": "multiple_choice",
+      "correct": "Next to / Beside",
+      "options": [
+        "In front of",
+        "Behind",
+        "Next to / Beside",
+        "Above"
+      ]
+    },
+    {
+      "question": "Which measure word goes with 水 (water) when in a bottle?",
+      "type": "multiple_choice",
+      "correct": "瓶",
+      "options": [
+        "台",
+        "瓶",
+        "个",
+        "趟"
+      ]
+    },
+    {
+      "question": "What does V+着 describe?",
+      "type": "multiple_choice",
+      "correct": "A continuing state",
+      "options": [
+        "A completed action",
+        "A continuing state",
+        "A future action",
+        "A past habit"
+      ]
+    },
+    {
+      "question": "How do you say 'What drinks are placed on the table?'",
+      "type": "multiple_choice",
+      "correct": "桌子上放着哪些饮料？",
+      "options": [
+        "桌子上放着哪些饮料？",
+        "桌子上有什么饮料？",
+        "桌子旁边放饮料？",
+        "饮料放在桌子下？"
+      ]
+    },
+    {
+      "question": "What does 就在旁边 mean?",
+      "type": "multiple_choice",
+      "correct": "Right next to / Right beside",
+      "options": [
+        "Far away",
+        "Right next to / Right beside",
+        "Approximately beside",
+        "Not nearby"
+      ]
+    },
+    {
+      "question": "Which sentence correctly uses 就 to confirm location?",
+      "type": "multiple_choice",
+      "correct": "果汁就在桌子上。",
+      "options": [
+        "果汁就在桌子上。",
+        "果汁在就桌子上。",
+        "就果汁桌子上在。",
+        "果汁桌子上就。"
+      ]
+    },
+    {
+      "question": "What does 左边 mean?",
+      "type": "multiple_choice",
+      "correct": "Left side / On the left",
+      "options": [
+        "Right side",
+        "Left side / On the left",
+        "In front",
+        "Behind"
+      ]
+    },
+    {
+      "question": "What does 放 mean?",
+      "type": "multiple_choice",
+      "correct": "To put / To place",
+      "options": [
+        "To take",
+        "To put / To place",
+        "To drink",
+        "To carry"
+      ]
+    },
+    {
+      "question": "How do you say 'two computers'?",
+      "type": "multiple_choice",
+      "correct": "两台电脑",
+      "options": [
+        "两台电脑",
+        "两瓶电脑",
+        "两个电脑",
+        "两趟电脑"
+      ]
+    },
+    {
+      "question": "What does 台 measure?",
+      "type": "multiple_choice",
+      "correct": "Machines / Appliances",
+      "options": [
+        "Bottles",
+        "People",
+        "Machines / Appliances",
+        "Trips"
+      ]
+    },
+    {
+      "question": "What does 着 indicate after a verb?",
+      "type": "multiple_choice",
+      "correct": "An ongoing state or continuing posture",
+      "options": [
+        "A completed action",
+        "An ongoing state or continuing posture",
+        "A future action",
+        "A negative"
+      ]
+    },
+    {
+      "question": "What does 放在桌子上 mean?",
+      "type": "multiple_choice",
+      "correct": "Placed on the table",
+      "options": [
+        "Placed on the table",
+        "Under the table",
+        "Beside the table",
+        "On the left of the table"
+      ]
+    },
+    {
+      "question": "What does 一瓶果汁 mean?",
+      "type": "multiple_choice",
+      "correct": "One bottle of fruit juice",
+      "options": [
+        "One bottle of fruit juice",
+        "One glass of juice",
+        "One cup of water",
+        "One bottle of water"
+      ]
+    },
+    {
+      "question": "What does 够喝了 mean?",
+      "type": "multiple_choice",
+      "correct": "Enough to drink",
+      "options": [
+        "Enough to drink",
+        "Not enough to drink",
+        "Finished drinking",
+        "Want more to drink"
+      ]
+    },
+    {
+      "question": "What does 左边还是右边 mean?",
+      "type": "multiple_choice",
+      "correct": "Left side or right side",
+      "options": [
+        "Left side or right side",
+        "Left side and right side",
+        "Neither left nor right",
+        "Left side only"
+      ]
+    },
+    {
+      "question": "What does 矿泉水够不够 mean?",
+      "type": "multiple_choice",
+      "correct": "Is the mineral water enough",
+      "options": [
+        "Is the mineral water enough",
+        "Buy some mineral water",
+        "There is no mineral water",
+        "The mineral water is cold"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Setting Up for a Party",
+      "title_chinese": "为派对做准备",
+      "speakers": {
+        "A": {"name": "小红", "role": "朋友", "gender": "female"},
+        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "大明，桌子上放着哪些饮料？",
+          "pinyin": "Dà Míng, zhuō zi shàng fàng zhe nǎ xiē yǐn liào?",
+          "english": "Da Ming, what drinks are placed on the table?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "左边放着两瓶矿泉水，右边放着一瓶果汁。",
+          "pinyin": "Zuǒ biān fàng zhe liǎng píng kuàng quán shuǐ, yòu biān fàng zhe yī píng guǒ zhī.",
+          "english": "Two bottles of mineral water are placed on the left, and one bottle of fruit juice on the right."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这些饮料够喝了吗？今天来的人很多。",
+          "pinyin": "Zhè xiē yǐn liào gòu hē le ma? Jīn tiān lái de rén hěn duō.",
+          "english": "Are these drinks enough? A lot of people are coming today."
+        },
+        {
+          "speaker": "B",
+          "chinese": "可能不够，冰箱里还有，就在门口旁边。",
+          "pinyin": "Kě néng bú gòu, bīng xiāng lǐ hái yǒu, jiù zài mén kǒu páng biān.",
+          "english": "Maybe not enough; there are more in the fridge, right beside the entrance."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好，我去拿几瓶过来，放在桌子上。",
+          "pinyin": "Hǎo, wǒ qù ná jǐ píng guò lái, fàng zài zhuō zi shàng.",
+          "english": "OK, I'll go get a few bottles and place them on the table."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那台音响就在你左边，你顺便开一下吧。",
+          "pinyin": "Nà tái yīn xiǎng jiù zài nǐ zuǒ biān, nǐ shùn biàn kāi yī xià ba.",
+          "english": "That sound system is right to your left; switch it on while you're at it."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Looking for Things in the Office",
+      "title_chinese": "在办公室找东西",
+      "speakers": {
+        "A": {"name": "小丽", "role": "同事", "gender": "female"},
+        "B": {"name": "小刚", "role": "同事", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小刚，我的矿泉水在哪儿？",
+          "pinyin": "Xiǎo Gāng, wǒ de kuàng quán shuǐ zài nǎr?",
+          "english": "Xiao Gang, where is my mineral water?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "就在你旁边，桌子右边放着一瓶呢。",
+          "pinyin": "Jiù zài nǐ páng biān, zhuō zi yòu biān fàng zhe yī píng ne.",
+          "english": "Right beside you — there's one bottle placed on the right side of the desk."
+        },
+        {
+          "speaker": "A",
+          "chinese": "找到了！那台打印机呢，在左边吗？",
+          "pinyin": "Zhǎo dào le! Nà tái dǎ yìn jī ne, zài zuǒ biān ma?",
+          "english": "Found it! What about that printer — is it on the left?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "打印机就在门口旁边，不在左边。",
+          "pinyin": "Dǎ yìn jī jiù zài mén kǒu páng biān, bú zài zuǒ biān.",
+          "english": "The printer is right at the entrance, not on the left."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好的，谢谢你啊！饮料够喝了吧，我再拿一瓶果汁。",
+          "pinyin": "Hǎo de, xiè xiè nǐ a! Yǐn liào gòu hē le ba, wǒ zài ná yī píng guǒ zhī.",
+          "english": "Thanks! The drinks are enough, I'll just grab another bottle of fruit juice."
+        }
+      ]
+    }
+  ]
+}

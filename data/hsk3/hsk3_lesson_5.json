@@ -1,0 +1,752 @@
+{
+  "lesson": 5,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Health & Lifestyle",
+  "topic_chinese": "你越来越胖了",
+  "vocabulary": [
+    {
+      "id": "hsk3_l5_01",
+      "chinese": "越来越",
+      "pinyin": "yuè lái yuè",
+      "tones": [4, 2, 4],
+      "english": "More and more / Increasingly",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l5_02",
+      "chinese": "最近",
+      "pinyin": "zuì jìn",
+      "tones": [4, 4],
+      "english": "Recently / Lately",
+      "part_of_speech": "time word"
+    },
+    {
+      "id": "hsk3_l5_03",
+      "chinese": "胖",
+      "pinyin": "pàng",
+      "tones": [4],
+      "english": "Fat / Overweight",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk3_l5_04",
+      "chinese": "锻炼",
+      "pinyin": "duàn liàn",
+      "tones": [4, 4],
+      "english": "To exercise / To work out",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l5_05",
+      "chinese": "坚持",
+      "pinyin": "jiān chí",
+      "tones": [1, 2],
+      "english": "To persist / To keep at it",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l5_06",
+      "chinese": "体重",
+      "pinyin": "tǐ zhòng",
+      "tones": [3, 4],
+      "english": "Body weight",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l5_07",
+      "chinese": "减肥",
+      "pinyin": "jiǎn féi",
+      "tones": [3, 2],
+      "english": "To lose weight / To diet",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l5_08",
+      "chinese": "健康",
+      "pinyin": "jiàn kāng",
+      "tones": [4, 1],
+      "english": "Health / Healthy",
+      "part_of_speech": "noun/adjective"
+    },
+    {
+      "id": "hsk3_l5_09",
+      "chinese": "比较",
+      "pinyin": "bǐ jiào",
+      "tones": [3, 4],
+      "english": "Relatively / Comparatively",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l5_10",
+      "chinese": "这么",
+      "pinyin": "zhè me",
+      "tones": [4, 0],
+      "english": "So / This / Like this",
+      "part_of_speech": "pronoun/adverb"
+    },
+    {
+      "id": "hsk3_l5_11",
+      "chinese": "节食",
+      "pinyin": "jié shí",
+      "tones": [2, 2],
+      "english": "To diet / To restrict eating",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l5_12",
+      "chinese": "瘦",
+      "pinyin": "shòu",
+      "tones": [4],
+      "english": "Thin / Slim",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk3_l5_p01",
+      "chinese": "越来越胖",
+      "pinyin": "yuè lái yuè pàng",
+      "tones": [4, 2, 4, 4],
+      "english": "Getting fatter and fatter",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l5_p02",
+      "chinese": "坚持锻炼",
+      "pinyin": "jiān chí duàn liàn",
+      "tones": [1, 2, 4, 4],
+      "english": "Keep exercising / Persist in working out",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l5_p03",
+      "chinese": "减肥计划",
+      "pinyin": "jiǎn féi jì huà",
+      "tones": [3, 2, 4, 4],
+      "english": "Weight loss plan",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l5_p04",
+      "chinese": "比较健康",
+      "pinyin": "bǐ jiào jiàn kāng",
+      "tones": [3, 4, 4, 1],
+      "english": "Relatively healthy",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l5_p05",
+      "chinese": "越吃越胖",
+      "pinyin": "yuè chī yuè pàng",
+      "tones": [4, 1, 4, 4],
+      "english": "The more you eat, the fatter you get",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l5_p06",
+      "chinese": "最近体重",
+      "pinyin": "zuì jìn tǐ zhòng",
+      "tones": [4, 4, 3, 4],
+      "english": "Recent body weight",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l5_p07",
+      "chinese": "这么瘦",
+      "pinyin": "zhè me shòu",
+      "tones": [4, 0, 4],
+      "english": "This thin / So slim",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l5_p08",
+      "chinese": "节食减肥",
+      "pinyin": "jié shí jiǎn féi",
+      "tones": [2, 2, 3, 2],
+      "english": "Diet to lose weight",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "你最近越来越胖了，要注意健康啊。",
+      "pinyin": "Nǐ zuì jìn yuè lái yuè pàng le, yào zhù yì jiàn kāng a.",
+      "english": "You've been getting fatter and fatter lately; you need to watch your health."
+    },
+    {
+      "chinese": "我知道，我打算开始坚持锻炼。",
+      "pinyin": "Wǒ zhī dào, wǒ dǎ suàn kāi shǐ jiān chí duàn liàn.",
+      "english": "I know; I'm planning to start exercising consistently."
+    },
+    {
+      "chinese": "你越锻炼，体重越容易减下来。",
+      "pinyin": "Nǐ yuè duàn liàn, tǐ zhòng yuè róng yì jiǎn xià lái.",
+      "english": "The more you exercise, the easier it is to lose weight."
+    },
+    {
+      "chinese": "她节食减肥，现在越来越瘦了。",
+      "pinyin": "Tā jié shí jiǎn féi, xiàn zài yuè lái yuè shòu le.",
+      "english": "She's been dieting to lose weight; now she's getting thinner and thinner."
+    },
+    {
+      "chinese": "比较健康的生活方式是多运动，少吃油腻的食物。",
+      "pinyin": "Bǐ jiào jiàn kāng de shēng huó fāng shì shì duō yùn dòng, shǎo chī yóu nì de shí wù.",
+      "english": "A relatively healthy lifestyle is to exercise more and eat less greasy food."
+    },
+    {
+      "chinese": "你怎么这么瘦，要注意多吃一点啊。",
+      "pinyin": "Nǐ zěn me zhè me shòu, yào zhù yì duō chī yī diǎn a.",
+      "english": "How are you so thin? You need to make sure you eat more."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "越来越+Adj — More and More",
+      "explanation": "Subject + 越来越 + Adjective/Verb (+ 了) expresses a gradual increase or worsening of a state. 越来越胖了 = getting fatter and fatter. 越来越好了 = getting better and better. 了 is often added at the end to signal the change is ongoing. This structure cannot be used with a comparison — it means an absolute, progressive change.",
+      "examples": [
+        {
+          "chinese": "天气越来越热了。",
+          "pinyin": "Tiān qì yuè lái yuè rè le.",
+          "english": "The weather is getting hotter and hotter."
+        },
+        {
+          "chinese": "他的健康越来越好了。",
+          "pinyin": "Tā de jiàn kāng yuè lái yuè hǎo le.",
+          "english": "His health is getting better and better."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 越来越 express?",
+          "type": "multiple_choice",
+          "correct": "A gradual progressive change",
+          "options": [
+            "A gradual progressive change",
+            "A comparison between two things",
+            "A completed action",
+            "An approximation"
+          ]
+        },
+        {
+          "question": "How do you say 'She's getting thinner and thinner'?",
+          "type": "multiple_choice",
+          "correct": "她越来越瘦了。",
+          "options": [
+            "她越来越瘦了。",
+            "她瘦越来越了。",
+            "她越瘦越来越。",
+            "越来越她瘦了。"
+          ],
+          "option_pinyin": [
+            "Tā yuè lái yuè shòu le.",
+            "Tā shòu yuè lái yuè le.",
+            "Tā yuè shòu yuè lái yuè.",
+            "Yuè lái yuè tā shòu le."
+          ],
+          "correct_pinyin": "Tā yuè lái yuè shòu le."
+        },
+        {
+          "question": "What is the role of 了 at the end of 越来越胖了?",
+          "type": "multiple_choice",
+          "correct": "It signals the change is ongoing",
+          "options": [
+            "It signals the change is ongoing",
+            "It marks a completed action",
+            "It makes the sentence a question",
+            "It is purely decorative"
+          ]
+        },
+        {
+          "question": "Fill in: 他最近___锻炼了，体重___来___好了。(He's been exercising more lately; his weight is getting better and better.)",
+          "type": "multiple_choice",
+          "correct": "多 / 越 / 越",
+          "options": [
+            "多 / 越 / 越",
+            "越 / 来 / 越",
+            "比较 / 越 / 来",
+            "越来越 / 很 / 好"
+          ]
+        },
+        {
+          "question": "Which sentence means 'It's getting colder and colder'?",
+          "type": "multiple_choice",
+          "correct": "越来越冷了。",
+          "options": [
+            "越来越冷了。",
+            "越冷越来越。",
+            "比较冷了。",
+            "冷越来越了。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "越…越… — The More…The More…",
+      "explanation": "Subject + 越 + V/Adj + 越 + V/Adj expresses a proportional relationship: as one thing increases, so does another. 越吃越胖 = The more you eat, the fatter you get. 越学越有意思 = The more you study, the more interesting it gets. The subject can be split: 你越锻炼，你越健康. This pattern emphasises cause and effect.",
+      "examples": [
+        {
+          "chinese": "越吃越胖，越不动越懒。",
+          "pinyin": "Yuè chī yuè pàng, yuè bù dòng yuè lǎn.",
+          "english": "The more you eat, the fatter you get; the less you move, the lazier you become."
+        },
+        {
+          "chinese": "你越坚持锻炼，身体越健康。",
+          "pinyin": "Nǐ yuè jiān chí duàn liàn, shēn tǐ yuè jiàn kāng.",
+          "english": "The more you persist in exercising, the healthier your body gets."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 越…越… express?",
+          "type": "multiple_choice",
+          "correct": "A proportional relationship: as one thing increases, so does another",
+          "options": [
+            "A proportional relationship: as one thing increases, so does another",
+            "A gradual single-direction change",
+            "An approximation",
+            "A comparison between two people"
+          ]
+        },
+        {
+          "question": "How do you say 'The more you study, the smarter you get'?",
+          "type": "multiple_choice",
+          "correct": "越学越聪明。",
+          "options": [
+            "越学越聪明。",
+            "学越越聪明。",
+            "越聪明越学。",
+            "越来越学聪明。"
+          ],
+          "option_pinyin": [
+            "Yuè xué yuè cōng míng.",
+            "Xué yuè yuè cōng míng.",
+            "Yuè cōng míng yuè xué.",
+            "Yuè lái yuè xué cōng míng."
+          ],
+          "correct_pinyin": "Yuè xué yuè cōng míng."
+        },
+        {
+          "question": "Fill in: 你___锻炼，体重___容易减。(The more you exercise, the easier it is to lose weight.)",
+          "type": "multiple_choice",
+          "correct": "越 / 越",
+          "options": [
+            "越 / 越",
+            "越来越 / 比较",
+            "比较 / 更",
+            "更 / 越来越"
+          ]
+        },
+        {
+          "question": "What is the difference between 越来越 and 越…越…?",
+          "type": "multiple_choice",
+          "correct": "越来越 = single progressive change; 越…越… = two linked changes",
+          "options": [
+            "越来越 = single progressive change; 越…越… = two linked changes",
+            "They are exactly the same",
+            "越来越 is for adjectives only; 越…越… is for verbs only",
+            "越…越… is more formal"
+          ]
+        },
+        {
+          "question": "Which sentence uses 越…越… correctly?",
+          "type": "multiple_choice",
+          "correct": "越节食越瘦。",
+          "options": [
+            "越节食越瘦。",
+            "节食越越瘦。",
+            "越节食瘦越。",
+            "越来越节食越瘦。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "比较 — Relatively / Comparatively",
+      "explanation": "比较 + Adjective means 'relatively/rather + adjective'. 比较健康 = relatively healthy. It softens the statement compared to 很 (very) or 非常 (extremely) — it means 'compared to other things/people, it is X'. 比较 can also be used as a verb meaning 'to compare': 我们来比较一下 = Let's do a comparison.",
+      "examples": [
+        {
+          "chinese": "这个减肥方法比较健康。",
+          "pinyin": "Zhè gè jiǎn féi fāng fǎ bǐ jiào jiàn kāng.",
+          "english": "This weight-loss method is relatively healthy."
+        },
+        {
+          "chinese": "她最近比较注意饮食，坚持锻炼。",
+          "pinyin": "Tā zuì jìn bǐ jiào zhù yì yǐn shí, jiān chí duàn liàn.",
+          "english": "She has been paying relatively more attention to her diet lately and keeps exercising."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 比较 mean before an adjective?",
+          "type": "multiple_choice",
+          "correct": "Relatively / Rather",
+          "options": [
+            "Relatively / Rather",
+            "Very",
+            "Extremely",
+            "Not at all"
+          ]
+        },
+        {
+          "question": "How does 比较 differ from 很?",
+          "type": "multiple_choice",
+          "correct": "比较 means 'relatively'; 很 means 'very' — 比较 is softer",
+          "options": [
+            "比较 means 'relatively'; 很 means 'very' — 比较 is softer",
+            "They mean exactly the same thing",
+            "比较 is stronger than 很",
+            "比较 is only used in formal writing"
+          ]
+        },
+        {
+          "question": "How do you say 'This exercise method is relatively healthy'?",
+          "type": "multiple_choice",
+          "correct": "这个锻炼方法比较健康。",
+          "options": [
+            "这个锻炼方法比较健康。",
+            "这个锻炼方法很比较健康。",
+            "比较这个锻炼方法健康。",
+            "这个锻炼方法健康比较。"
+          ]
+        },
+        {
+          "question": "Fill in: 节食减肥___健康，不如多锻炼。(Dieting to lose weight is relatively unhealthy; it's better to exercise more.)",
+          "type": "multiple_choice",
+          "correct": "比较不",
+          "options": [
+            "比较不",
+            "越来越不",
+            "不比较",
+            "越不"
+          ]
+        },
+        {
+          "question": "What is the other meaning of 比较 used as a verb?",
+          "type": "multiple_choice",
+          "correct": "To compare",
+          "options": [
+            "To compare",
+            "To exercise",
+            "To persist",
+            "To lose weight"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 越来越 mean?",
+      "type": "multiple_choice",
+      "correct": "More and more / Increasingly",
+      "options": [
+        "Less and less",
+        "More and more / Increasingly",
+        "The same",
+        "Approximately"
+      ]
+    },
+    {
+      "question": "What does 最近 mean?",
+      "type": "multiple_choice",
+      "correct": "Recently / Lately",
+      "options": [
+        "Long ago",
+        "In the future",
+        "Recently / Lately",
+        "Sometimes"
+      ]
+    },
+    {
+      "question": "What does 胖 mean?",
+      "type": "multiple_choice",
+      "correct": "Fat / Overweight",
+      "options": [
+        "Thin / Slim",
+        "Healthy",
+        "Fat / Overweight",
+        "Strong"
+      ]
+    },
+    {
+      "question": "What does 坚持 mean?",
+      "type": "multiple_choice",
+      "correct": "To persist / To keep at it",
+      "options": [
+        "To give up",
+        "To start",
+        "To persist / To keep at it",
+        "To finish"
+      ]
+    },
+    {
+      "question": "What does 减肥 mean?",
+      "type": "multiple_choice",
+      "correct": "To lose weight / To diet",
+      "options": [
+        "To gain weight",
+        "To lose weight / To diet",
+        "To exercise",
+        "To eat less"
+      ]
+    },
+    {
+      "question": "What does 健康 mean?",
+      "type": "multiple_choice",
+      "correct": "Health / Healthy",
+      "options": [
+        "Exercise",
+        "Weight",
+        "Health / Healthy",
+        "Diet"
+      ]
+    },
+    {
+      "question": "What does 比较 mean before an adjective?",
+      "type": "multiple_choice",
+      "correct": "Relatively / Rather",
+      "options": [
+        "Very",
+        "Extremely",
+        "Relatively / Rather",
+        "Not"
+      ]
+    },
+    {
+      "question": "How do you say 'She's getting thinner and thinner'?",
+      "type": "multiple_choice",
+      "correct": "她越来越瘦了。",
+      "options": [
+        "她越来越瘦了。",
+        "她比较瘦了。",
+        "她越瘦越好。",
+        "她瘦越来越了。"
+      ]
+    },
+    {
+      "question": "What does 越吃越胖 mean?",
+      "type": "multiple_choice",
+      "correct": "The more you eat, the fatter you get",
+      "options": [
+        "The more you eat, the fatter you get",
+        "Getting fatter and fatter",
+        "Eating makes you thin",
+        "Don't eat too much"
+      ]
+    },
+    {
+      "question": "What does 节食 mean?",
+      "type": "multiple_choice",
+      "correct": "To diet / To restrict eating",
+      "options": [
+        "To exercise",
+        "To overeat",
+        "To diet / To restrict eating",
+        "To cook"
+      ]
+    },
+    {
+      "question": "What does 瘦 mean?",
+      "type": "multiple_choice",
+      "correct": "Thin / Slim",
+      "options": [
+        "Fat",
+        "Healthy",
+        "Thin / Slim",
+        "Strong"
+      ]
+    },
+    {
+      "question": "What does 锻炼 mean?",
+      "type": "multiple_choice",
+      "correct": "To exercise / To work out",
+      "options": [
+        "To rest",
+        "To eat",
+        "To exercise / To work out",
+        "To sleep"
+      ]
+    },
+    {
+      "question": "Which sentence uses 越…越… correctly?",
+      "type": "multiple_choice",
+      "correct": "越锻炼越健康。",
+      "options": [
+        "越锻炼越健康。",
+        "锻炼越越健康。",
+        "越越锻炼健康。",
+        "锻炼越健康越。"
+      ]
+    },
+    {
+      "question": "What does 体重 mean?",
+      "type": "multiple_choice",
+      "correct": "Body weight",
+      "options": [
+        "Body shape",
+        "Body weight",
+        "Health",
+        "Diet"
+      ]
+    },
+    {
+      "question": "Which sentence is correct for 'getting better and better'?",
+      "type": "multiple_choice",
+      "correct": "越来越好了。",
+      "options": [
+        "越来越好了。",
+        "越好越来越。",
+        "比较好了。",
+        "越来好越了。"
+      ]
+    },
+    {
+      "question": "What does 越来越胖 mean?",
+      "type": "multiple_choice",
+      "correct": "Getting fatter and fatter",
+      "options": [
+        "Getting fatter and fatter",
+        "The more you eat the fatter",
+        "Relatively fat",
+        "Fat recently"
+      ]
+    },
+    {
+      "question": "What does 坚持锻炼 mean?",
+      "type": "multiple_choice",
+      "correct": "Keep exercising / Persist in working out",
+      "options": [
+        "Keep exercising / Persist in working out",
+        "Start exercising",
+        "Stop exercising",
+        "Exercise once"
+      ]
+    },
+    {
+      "question": "What does 减肥计划 mean?",
+      "type": "multiple_choice",
+      "correct": "Weight loss plan",
+      "options": [
+        "Weight loss plan",
+        "Exercise plan",
+        "Health goal",
+        "Diet food"
+      ]
+    },
+    {
+      "question": "What does 节食减肥 mean?",
+      "type": "multiple_choice",
+      "correct": "Diet to lose weight",
+      "options": [
+        "Diet to lose weight",
+        "Exercise to lose weight",
+        "Eat well to stay healthy",
+        "Gain weight by dieting"
+      ]
+    },
+    {
+      "question": "What does 这么瘦 mean?",
+      "type": "multiple_choice",
+      "correct": "This thin / So slim",
+      "options": [
+        "This thin / So slim",
+        "Getting thinner",
+        "Relatively thin",
+        "Thin and healthy"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Talking About Weight and Exercise",
+      "title_chinese": "聊体重和锻炼",
+      "speakers": {
+        "A": {"name": "小红", "role": "朋友", "gender": "female"},
+        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "大明，你最近越来越胖了，有注意到吗？",
+          "pinyin": "Dà Míng, nǐ zuì jìn yuè lái yuè pàng le, yǒu zhù yì dào ma?",
+          "english": "Da Ming, you've been getting fatter and fatter lately — have you noticed?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "哎，我知道，最近吃太多了，而且没有锻炼。",
+          "pinyin": "Āi, wǒ zhī dào, zuì jìn chī tài duō le, ér qiě méi yǒu duàn liàn.",
+          "english": "Ah, I know — I've been eating too much lately, and I haven't been exercising either."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你越吃越胖，越不动越懒，要开始坚持锻炼了。",
+          "pinyin": "Nǐ yuè chī yuè pàng, yuè bù dòng yuè lǎn, yào kāi shǐ jiān chí duàn liàn le.",
+          "english": "The more you eat, the fatter you get; the less you move, the lazier you become — you need to start exercising consistently."
+        },
+        {
+          "speaker": "B",
+          "chinese": "说得对。我打算开始节食减肥，也要每天锻炼。",
+          "pinyin": "Shuō de duì. Wǒ dǎ suàn kāi shǐ jié shí jiǎn féi, yě yào měi tiān duàn liàn.",
+          "english": "You're right. I plan to start dieting to lose weight, and also exercise every day."
+        },
+        {
+          "speaker": "A",
+          "chinese": "比较健康的方法是多锻炼，少节食，这样体重慢慢就减下来了。",
+          "pinyin": "Bǐ jiào jiàn kāng de fāng fǎ shì duō duàn liàn, shǎo jié shí, zhè yàng tǐ zhòng màn màn jiù jiǎn xià lái le.",
+          "english": "The relatively healthier approach is to exercise more and diet less — that way your weight will slowly come down."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好，我从明天开始坚持！你帮我监督一下吧。",
+          "pinyin": "Hǎo, wǒ cóng míng tiān kāi shǐ jiān chí! Nǐ bāng wǒ jiān dū yī xià ba.",
+          "english": "OK, I'll start persisting from tomorrow! Help keep an eye on me."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Complimenting Someone on Losing Weight",
+      "title_chinese": "夸人瘦了",
+      "speakers": {
+        "A": {"name": "小丽", "role": "同学", "gender": "female"},
+        "B": {"name": "小刚", "role": "同学", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小刚，你怎么越来越瘦了，有在减肥吗？",
+          "pinyin": "Xiǎo Gāng, nǐ zěn me yuè lái yuè shòu le, yǒu zài jiǎn féi ma?",
+          "english": "Xiao Gang, how are you getting thinner and thinner? Are you losing weight?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是啊，我最近坚持每天锻炼，也比较注意饮食。",
+          "pinyin": "Shì a, wǒ zuì jìn jiān chí měi tiān duàn liàn, yě bǐ jiào zhù yì yǐn shí.",
+          "english": "Yes! I've been consistently exercising every day lately, and paying relatively more attention to my diet."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你越锻炼越健康，感觉精神也越来越好了！",
+          "pinyin": "Nǐ yuè duàn liàn yuè jiàn kāng, gǎn jué jīng shén yě yuè lái yuè hǎo le!",
+          "english": "The more you exercise, the healthier you get; your energy also seems to be getting better and better!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢！不过你这么瘦，要多吃一点，别节食了。",
+          "pinyin": "Xiè xiè! Bú guò nǐ zhè me shòu, yào duō chī yī diǎn, bié jié shí le.",
+          "english": "Thank you! But you're so slim — you should eat more, don't diet."
+        },
+        {
+          "speaker": "A",
+          "chinese": "哈哈，我也想坚持锻炼，这样比较健康！",
+          "pinyin": "Hā hā, wǒ yě xiǎng jiān chí duàn liàn, zhè yàng bǐ jiào jiàn kāng!",
+          "english": "Haha, I also want to keep exercising consistently — that's relatively healthier!"
+        }
+      ]
+    }
+  ]
+}

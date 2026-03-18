@@ -31,11 +31,12 @@ export default function PinyinLessonScreen({
   lessonData,
   stageProgress = [],     // e.g. [0,1,2] = stages 0,1,2 done
   quizPassed = false,
+  initialTab = 'learn',
   onBack,
   onStartStage,           // (stageIndex: 0|1|2) => void
   onTakeQuiz,
 }) {
-  const [tab,           setTab]           = useState('learn'); // 'learn' | 'practice'
+  const [tab,           setTab]           = useState(initialTab); // 'learn' | 'practice'
   const [selectedFinal, setSelectedFinal] = useState(null);  // opens tone popup
 
   if (!lessonData) return null;
@@ -60,10 +61,44 @@ export default function PinyinLessonScreen({
     return (
       <ScrollView contentContainerStyle={styles.tabContent} showsVerticalScrollIndicator={false}>
 
+        {/* New initials */}
+        {newInitials.length > 0 && (
+          <>
+            <Text style={styles.sectionLabel}>NEW INITIALS (声母)</Text>
+            <View style={styles.chipsRow}>
+              {newInitials.map((init, i) => (
+                <TouchableOpacity key={i} style={styles.chipInitial} onPress={() => speakPinyin(init)} activeOpacity={0.75}>
+                  <Text style={styles.chipInitialText}>{init}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </>
+        )}
+
+        {/* New finals — tap to play sound or open tone popup */}
+        {newFinals.length > 0 && (
+          <>
+            <Text style={[styles.sectionLabel, { marginTop: newInitials.length > 0 ? 24 : 0 }]}>NEW FINALS (韵母)</Text>
+            <Text style={styles.finalHint}>Tap a final to hear it</Text>
+            <View style={styles.chipsRow}>
+              {newFinals.map((fin, i) => (
+                <TouchableOpacity
+                  key={i} style={styles.chipFinalTappable}
+                  onPress={() => singleFinals.has(fin) ? speakPinyin(fin) : setSelectedFinal(fin)}
+                  activeOpacity={0.75}
+                >
+                  <Text style={styles.chipFinalText}>{fin}</Text>
+                  <Text style={styles.chipFinalArrow}>{singleFinals.has(fin) ? '🔊' : '↗'}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </>
+        )}
+
         {/* Tones reference */}
         {tones.length > 0 && (
           <>
-            <Text style={styles.sectionLabel}>THE FOUR TONES</Text>
+            <Text style={[styles.sectionLabel, { marginTop: (newInitials.length > 0 || newFinals.length > 0) ? 24 : 0 }]}>THE FOUR TONES</Text>
             {tones.map((t, i) => (
               <TouchableOpacity
                 key={i}
@@ -83,40 +118,6 @@ export default function PinyinLessonScreen({
                 <Text style={styles.audioBtn}>🔊</Text>
               </TouchableOpacity>
             ))}
-          </>
-        )}
-
-        {/* New initials */}
-        {newInitials.length > 0 && (
-          <>
-            <Text style={[styles.sectionLabel, { marginTop: 24 }]}>NEW INITIALS (声母)</Text>
-            <View style={styles.chipsRow}>
-              {newInitials.map((init, i) => (
-                <TouchableOpacity key={i} style={styles.chipInitial} onPress={() => speakPinyin(init)} activeOpacity={0.75}>
-                  <Text style={styles.chipInitialText}>{init}</Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-          </>
-        )}
-
-        {/* New finals — tap to play sound or open tone popup */}
-        {newFinals.length > 0 && (
-          <>
-            <Text style={[styles.sectionLabel, { marginTop: 24 }]}>NEW FINALS (韵母)</Text>
-            <Text style={styles.finalHint}>Tap a final to hear it</Text>
-            <View style={styles.chipsRow}>
-              {newFinals.map((fin, i) => (
-                <TouchableOpacity
-                  key={i} style={styles.chipFinalTappable}
-                  onPress={() => singleFinals.has(fin) ? speakPinyin(fin) : setSelectedFinal(fin)}
-                  activeOpacity={0.75}
-                >
-                  <Text style={styles.chipFinalText}>{fin}</Text>
-                  <Text style={styles.chipFinalArrow}>{singleFinals.has(fin) ? '🔊' : '↗'}</Text>
-                </TouchableOpacity>
-              ))}
-            </View>
           </>
         )}
 
@@ -176,7 +177,7 @@ export default function PinyinLessonScreen({
             <Text style={[styles.sectionLabel, { marginTop: 24 }]}>NEUTRAL TONE WORDS (轻声)</Text>
             <View style={styles.wordGrid}>
               {lessonData.neutral_tone_words.map((w, i) => (
-                <TouchableOpacity key={i} style={styles.wordCard} onPress={() => speakPinyin(w.pinyin)} activeOpacity={0.75}>
+                <TouchableOpacity key={i} style={styles.wordCard} onPress={() => speakPinyin(w.audio_key || w.pinyin)} activeOpacity={0.75}>
                   <Text style={styles.wordChinese}>{w.word}</Text>
                   <Text style={styles.wordPinyin}>{w.pinyin}</Text>
                   <Text style={styles.wordMeaning}>{w.meaning}</Text>
@@ -192,7 +193,7 @@ export default function PinyinLessonScreen({
             <Text style={[styles.sectionLabel, { marginTop: 24 }]}>ERHUA WORDS (儿化)</Text>
             <View style={styles.wordGrid}>
               {lessonData.erhua_words.map((w, i) => (
-                <TouchableOpacity key={i} style={styles.wordCard} onPress={() => speakPinyin(w.pinyin)} activeOpacity={0.75}>
+                <TouchableOpacity key={i} style={styles.wordCard} onPress={() => speakPinyin(w.audio_key || w.pinyin)} activeOpacity={0.75}>
                   <Text style={styles.wordChinese}>{w.word}</Text>
                   <Text style={styles.wordPinyin}>{w.pinyin}</Text>
                   <Text style={styles.wordMeaning}>{w.meaning}</Text>

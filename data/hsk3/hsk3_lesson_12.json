@@ -1,0 +1,558 @@
+{
+  "lesson": 12,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "The Bǎ & Bèi Sentences",
+  "topic_chinese": "把重要的东西放在我这儿",
+  "vocabulary": [
+    {
+      "id": "hsk3_l12_01",
+      "chinese": "重要",
+      "pinyin": "zhòng yào",
+      "tones": [4, 4],
+      "english": "Important",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk3_l12_02",
+      "chinese": "东西",
+      "pinyin": "dōng xi",
+      "tones": [1, 0],
+      "english": "Thing / Item / Stuff",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l12_03",
+      "chinese": "放",
+      "pinyin": "fàng",
+      "tones": [4],
+      "english": "To put / To place",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l12_04",
+      "chinese": "拿",
+      "pinyin": "ná",
+      "tones": [2],
+      "english": "To take / To hold / To carry",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l12_05",
+      "chinese": "搬",
+      "pinyin": "bān",
+      "tones": [1],
+      "english": "To move (furniture/objects)",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l12_06",
+      "chinese": "背",
+      "pinyin": "bēi",
+      "tones": [1],
+      "english": "To carry on back",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l12_07",
+      "chinese": "提",
+      "pinyin": "tí",
+      "tones": [2],
+      "english": "To carry (in hand) / To mention",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l12_08",
+      "chinese": "保管",
+      "pinyin": "bǎo guǎn",
+      "tones": [3, 3],
+      "english": "To keep safely / To look after",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l12_09",
+      "chinese": "借",
+      "pinyin": "jiè",
+      "tones": [4],
+      "english": "To borrow / To lend",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l12_10",
+      "chinese": "还",
+      "pinyin": "huán",
+      "tones": [2],
+      "english": "To return (something)",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l12_11",
+      "chinese": "丢",
+      "pinyin": "diū",
+      "tones": [1],
+      "english": "To lose / To misplace",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l12_12",
+      "chinese": "被",
+      "pinyin": "bèi",
+      "tones": [4],
+      "english": "By (passive marker)",
+      "part_of_speech": "preposition"
+    },
+    {
+      "id": "hsk3_l12_p01",
+      "chinese": "把东西放好",
+      "pinyin": "bǎ dōng xi fàng hǎo",
+      "tones": [3, 1, 0, 4, 3],
+      "english": "Put things away properly",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l12_p02",
+      "chinese": "重要的东西",
+      "pinyin": "zhòng yào de dōng xi",
+      "tones": [4, 4, 0, 1, 0],
+      "english": "Important things",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l12_p03",
+      "chinese": "被人拿走了",
+      "pinyin": "bèi rén ná zǒu le",
+      "tones": [4, 2, 2, 3, 0],
+      "english": "Was taken away by someone",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l12_p04",
+      "chinese": "帮我保管",
+      "pinyin": "bāng wǒ bǎo guǎn",
+      "tones": [1, 3, 3, 3],
+      "english": "Keep it safe for me",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l12_p05",
+      "chinese": "借给我",
+      "pinyin": "jiè gěi wǒ",
+      "tones": [4, 3, 3],
+      "english": "Lend to me",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l12_p06",
+      "chinese": "还给你",
+      "pinyin": "huán gěi nǐ",
+      "tones": [2, 3, 3],
+      "english": "Return to you",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l12_p07",
+      "chinese": "拿过来",
+      "pinyin": "ná guò lái",
+      "tones": [2, 4, 2],
+      "english": "Bring it over here",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l12_p08",
+      "chinese": "搬进去",
+      "pinyin": "bān jìn qù",
+      "tones": [1, 4, 4],
+      "english": "Move inside",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "把重要的东西放在我这儿。",
+      "pinyin": "Bǎ zhòng yào de dōng xi fàng zài wǒ zhèr.",
+      "english": "Put the important things here with me."
+    },
+    {
+      "chinese": "我的书包被人拿走了。",
+      "pinyin": "Wǒ de shū bāo bèi rén ná zǒu le.",
+      "english": "My schoolbag was taken away by someone."
+    },
+    {
+      "chinese": "你能帮我保管这个东西吗？",
+      "pinyin": "Nǐ néng bāng wǒ bǎo guǎn zhè gè dōng xi ma?",
+      "english": "Can you look after this thing for me?"
+    },
+    {
+      "chinese": "我把书还给他了。",
+      "pinyin": "Wǒ bǎ shū huán gěi tā le.",
+      "english": "I returned the book to him."
+    },
+    {
+      "chinese": "他借给我一支笔，我要还给他。",
+      "pinyin": "Tā jiè gěi wǒ yì zhī bǐ, wǒ yào huán gěi tā.",
+      "english": "He lent me a pen — I need to return it to him."
+    },
+    {
+      "chinese": "钥匙不见了，可能被人拿走了。",
+      "pinyin": "Yào shi bú jiàn le, kě néng bèi rén ná zǒu le.",
+      "english": "The key is gone — it may have been taken by someone."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "把字句（2）— The Bǎ-sentence Type 2",
+      "explanation": "Extended uses of 把: disposal (把书放回去 = put the book back), transformation (把问题解决了 = solve the problem). Key: the verb must show result or direction. Cannot use 把 with verbs of cognition or state (like 知道, 是).",
+      "examples": [
+        {
+          "chinese": "请把书放回去。",
+          "pinyin": "Qǐng bǎ shū fàng huí qù.",
+          "english": "Please put the book back."
+        },
+        {
+          "chinese": "他把问题解决了。",
+          "pinyin": "Tā bǎ wèn tí jiě jué le.",
+          "english": "He solved the problem."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which verb CANNOT be used with 把?",
+          "type": "multiple_choice",
+          "correct": "知道",
+          "options": ["知道", "放", "拿", "搬"],
+          "option_pinyin": ["zhī dào", "fàng", "ná", "bān"]
+        },
+        {
+          "question": "Fill in: 请___重要的东西放好。(Please put the important things away.)",
+          "type": "multiple_choice",
+          "correct": "把",
+          "options": ["把", "被", "让", "和"],
+          "option_pinyin": ["bǎ", "bèi", "ràng", "hé"]
+        },
+        {
+          "question": "Which shows a disposal/result 把-sentence?",
+          "type": "multiple_choice",
+          "correct": "她把作业做完了。",
+          "options": ["她把作业做完了。", "她把作业。", "把她作业做。", "她做把作业了。"],
+          "option_pinyin": [
+            "Tā bǎ zuò yè zuò wán le.",
+            "Tā bǎ zuò yè.",
+            "Bǎ tā zuò yè zuò.",
+            "Tā zuò bǎ zuò yè le."
+          ],
+          "correct_pinyin": "Tā bǎ zuò yè zuò wán le."
+        },
+        {
+          "question": "Translate: 把东西放好",
+          "type": "multiple_choice",
+          "correct": "Put the things away properly",
+          "options": ["Put the things away properly", "Take things out", "Lose the things", "Carry the things"]
+        },
+        {
+          "question": "Which type of outcome is required in a 把-sentence?",
+          "type": "multiple_choice",
+          "correct": "A result or directional complement",
+          "options": [
+            "A result or directional complement",
+            "A question word",
+            "A new subject",
+            "A time word"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "被字句 — The Bèi-sentence (Passive)",
+      "explanation": "Object + 被 + (Agent) + Verb + Complement. 东西被人拿走了 = The things were taken away by someone. 我的钱包被偷了 = My wallet was stolen. 被 often implies an undesirable outcome. The agent can be omitted: 东西被拿走了.",
+      "examples": [
+        {
+          "chinese": "我的钱包被人偷了。",
+          "pinyin": "Wǒ de qián bāo bèi rén tōu le.",
+          "english": "My wallet was stolen by someone."
+        },
+        {
+          "chinese": "那本书被借走了。",
+          "pinyin": "Nà běn shū bèi jiè zǒu le.",
+          "english": "That book was borrowed (and taken away)."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 被 mark in a sentence?",
+          "type": "multiple_choice",
+          "correct": "The passive voice (something done to the subject)",
+          "options": [
+            "The passive voice (something done to the subject)",
+            "A future action",
+            "A command",
+            "A completed action after the verb"
+          ]
+        },
+        {
+          "question": "Which sentence is a correct 被-sentence?",
+          "type": "multiple_choice",
+          "correct": "东西被人拿走了。",
+          "options": ["东西被人拿走了。", "被东西人拿走了。", "人被东西走了。", "东西人被了。"],
+          "option_pinyin": [
+            "Dōng xi bèi rén ná zǒu le.",
+            "Bèi dōng xi rén ná zǒu le.",
+            "Rén bèi dōng xi zǒu le.",
+            "Dōng xi rén bèi le."
+          ],
+          "correct_pinyin": "Dōng xi bèi rén ná zǒu le."
+        },
+        {
+          "question": "In 被-sentences, can the agent be omitted?",
+          "type": "multiple_choice",
+          "correct": "Yes — 东西被拿走了 is acceptable",
+          "options": [
+            "Yes — 东西被拿走了 is acceptable",
+            "No — the agent is always required",
+            "Only in formal writing",
+            "Only with 人 as agent"
+          ]
+        },
+        {
+          "question": "What feeling does 被 often imply?",
+          "type": "multiple_choice",
+          "correct": "Something undesirable happened",
+          "options": [
+            "Something undesirable happened",
+            "Something good happened",
+            "A voluntary action",
+            "A future plan"
+          ]
+        },
+        {
+          "question": "Translate: 我的书被丢了。",
+          "type": "multiple_choice",
+          "correct": "My book was lost.",
+          "options": ["My book was lost.", "I lost someone's book.", "I found a book.", "My book is very important."]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "放在/拿到 — Verb + Locational Phrases",
+      "explanation": "放在 + Place = put something at/in a place. 拿到 + Place = take to a place. 搬到 + Place = move to a place. These verb-location combinations express both the action and the result location.",
+      "examples": [
+        {
+          "chinese": "把书放在桌子上。",
+          "pinyin": "Bǎ shū fàng zài zhuō zi shàng.",
+          "english": "Put the book on the table."
+        },
+        {
+          "chinese": "把东西搬到楼上去。",
+          "pinyin": "Bǎ dōng xi bān dào lóu shàng qù.",
+          "english": "Move the things upstairs."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 放在桌子上 mean?",
+          "type": "multiple_choice",
+          "correct": "Put on the table",
+          "options": ["Put on the table", "Take from the table", "Move the table", "Borrow the table"]
+        },
+        {
+          "question": "Fill in: 把东西___到那里去。(Take the things there.)",
+          "type": "multiple_choice",
+          "correct": "拿",
+          "options": ["拿", "放", "丢", "借"],
+          "option_pinyin": ["ná", "fàng", "diū", "jiè"]
+        },
+        {
+          "question": "Which sentence means 'Put the bag on the chair'?",
+          "type": "multiple_choice",
+          "correct": "把包放在椅子上。",
+          "options": ["把包放在椅子上。", "把包拿到椅子上。", "椅子放包在上。", "包被放椅子了。"],
+          "option_pinyin": [
+            "Bǎ bāo fàng zài yǐ zi shàng.",
+            "Bǎ bāo ná dào yǐ zi shàng.",
+            "Yǐ zi fàng bāo zài shàng.",
+            "Bāo bèi fàng yǐ zi le."
+          ],
+          "correct_pinyin": "Bǎ bāo fàng zài yǐ zi shàng."
+        },
+        {
+          "question": "What does 搬到 express?",
+          "type": "multiple_choice",
+          "correct": "Moving something to a specific place",
+          "options": [
+            "Moving something to a specific place",
+            "Losing something somewhere",
+            "Borrowing from a place",
+            "Carrying on your back to a place"
+          ]
+        },
+        {
+          "question": "Translate: 把钥匙放在包里。",
+          "type": "multiple_choice",
+          "correct": "Put the key in the bag.",
+          "options": ["Put the key in the bag.", "Take the key out of the bag.", "The key was lost in the bag.", "Carry the bag with the key."]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 重要 mean?",
+      "type": "multiple_choice",
+      "correct": "Important",
+      "options": ["Important", "To forget", "To waste", "Convenient"]
+    },
+    {
+      "question": "What does 放 mean?",
+      "type": "multiple_choice",
+      "correct": "To put / To place",
+      "options": ["To put / To place", "To carry on back", "To borrow", "To lose"]
+    },
+    {
+      "question": "What does 拿 mean?",
+      "type": "multiple_choice",
+      "correct": "To take / To hold / To carry",
+      "options": ["To take / To hold / To carry", "To move (objects)", "To return", "To lend"]
+    },
+    {
+      "question": "What does 被 mark in a sentence?",
+      "type": "multiple_choice",
+      "correct": "Passive voice",
+      "options": ["Passive voice", "Disposal action", "Comparison", "Change of state"]
+    },
+    {
+      "question": "What is the pinyin for 保管?",
+      "type": "multiple_choice",
+      "correct": "bǎo guǎn",
+      "options": ["bǎo guǎn", "zhòng yào", "jiè gěi", "huán gěi"]
+    },
+    {
+      "question": "What does 借 mean?",
+      "type": "multiple_choice",
+      "correct": "To borrow / To lend",
+      "options": ["To borrow / To lend", "To return", "To lose", "To put"]
+    },
+    {
+      "question": "What does 还 (huán) mean?",
+      "type": "multiple_choice",
+      "correct": "To return (something)",
+      "options": ["To return (something)", "To borrow", "To carry on back", "To mention"]
+    },
+    {
+      "question": "What does 丢 mean?",
+      "type": "multiple_choice",
+      "correct": "To lose / To misplace",
+      "options": ["To lose / To misplace", "To move", "To carry in hand", "To keep safely"]
+    },
+    {
+      "question": "Which sentence is correct?",
+      "type": "multiple_choice",
+      "correct": "东西被人拿走了。",
+      "options": ["东西被人拿走了。", "人东西被走了。", "被东西拿了人。", "东西人走被了。"]
+    },
+    {
+      "question": "Fill in: 我把书___给他了。(I returned the book to him.)",
+      "type": "multiple_choice",
+      "correct": "还",
+      "options": ["还", "借", "放", "拿"]
+    },
+    {
+      "question": "Which verb CANNOT be used with 把?",
+      "type": "multiple_choice",
+      "correct": "是",
+      "options": ["是", "放", "拿", "搬"]
+    },
+    {
+      "question": "What does 被人拿走了 mean?",
+      "type": "multiple_choice",
+      "correct": "Was taken away by someone",
+      "options": ["Was taken away by someone", "Took something from someone", "Gave back to someone", "Lost by oneself"]
+    },
+    {
+      "question": "Translate: 把重要的东西放在我这儿。",
+      "type": "multiple_choice",
+      "correct": "Put the important things here with me.",
+      "options": ["Put the important things here with me.", "Take the important things away.", "The important things were lost.", "Borrow the important things from me."]
+    },
+    {
+      "question": "What does 搬 mean?",
+      "type": "multiple_choice",
+      "correct": "To move (furniture/objects)",
+      "options": ["To move (furniture/objects)", "To carry on back", "To carry in hand", "To put"]
+    },
+    {
+      "question": "In 被-sentences, what does 被 often imply?",
+      "type": "multiple_choice",
+      "correct": "An undesirable outcome",
+      "options": ["An undesirable outcome", "A desirable outcome", "A future action", "A question"]
+    },
+    {
+      "question": "What does 帮我保管 mean?",
+      "type": "multiple_choice",
+      "correct": "Keep it safe for me",
+      "options": ["Keep it safe for me", "Borrow for me", "Return for me", "Lose for me"]
+    },
+    {
+      "question": "Translate: 还给你",
+      "type": "multiple_choice",
+      "correct": "Return to you",
+      "options": ["Return to you", "Borrow from you", "Take from you", "Lose yours"]
+    },
+    {
+      "question": "What does 背 mean?",
+      "type": "multiple_choice",
+      "correct": "To carry on back",
+      "options": ["To carry on back", "To carry in hand", "To move objects", "To put down"]
+    },
+    {
+      "question": "Which combination means 'put in a specific place'?",
+      "type": "multiple_choice",
+      "correct": "放在 + place",
+      "options": ["放在 + place", "被 + place", "拿去 + place", "借到 + place"]
+    },
+    {
+      "question": "What does 借给我 mean?",
+      "type": "multiple_choice",
+      "correct": "Lend to me",
+      "options": ["Lend to me", "Return to me", "Take from me", "Give back to me"]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Storing Valuables",
+      "title_chinese": "保管重要的东西",
+      "speakers": {
+        "A": {"name": "小红", "role": "朋友", "gender": "female"},
+        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+      },
+      "lines": [
+        {"speaker": "A", "chinese": "大明，我有重要的东西，你能帮我保管吗？", "pinyin": "Dà Míng, wǒ yǒu zhòng yào de dōng xi, nǐ néng bāng wǒ bǎo guǎn ma?", "english": "Daming, I have something important — can you keep it safe for me?"},
+        {"speaker": "B", "chinese": "可以，你把它放在我这儿吧。", "pinyin": "Kě yǐ, nǐ bǎ tā fàng zài wǒ zhèr ba.", "english": "Sure, put it here with me."},
+        {"speaker": "A", "chinese": "谢谢！要记得放在抽屉里，别丢了。", "pinyin": "Xiè xie! Yào jì de fàng zài chōu ti lǐ, bié diū le.", "english": "Thank you! Remember to put it in the drawer — don't lose it."},
+        {"speaker": "B", "chinese": "放心吧，我会保管好的。你什么时候来拿？", "pinyin": "Fàng xīn ba, wǒ huì bǎo guǎn hǎo de. Nǐ shén me shí hòu lái ná?", "english": "Don't worry, I'll look after it properly. When will you come to get it?"},
+        {"speaker": "A", "chinese": "明天我来拿，到时候还给我就好了。", "pinyin": "Míng tiān wǒ lái ná, dào shí hòu huán gěi wǒ jiù hǎo le.", "english": "I'll come get it tomorrow — just return it to me then."},
+        {"speaker": "B", "chinese": "好的，明天我把东西还给你。", "pinyin": "Hǎo de, míng tiān wǒ bǎ dōng xi huán gěi nǐ.", "english": "OK, I'll give the things back to you tomorrow."}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "A Passive Incident",
+      "title_chinese": "东西被拿走了",
+      "speakers": {
+        "A": {"name": "小红", "role": "朋友", "gender": "female"},
+        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+      },
+      "lines": [
+        {"speaker": "A", "chinese": "大明，你的包呢？找不到了吗？", "pinyin": "Dà Míng, nǐ de bāo ne? Zhǎo bú dào le ma?", "english": "Daming, where's your bag? Can't find it?"},
+        {"speaker": "B", "chinese": "不知道，可能被人拿走了。", "pinyin": "Bù zhī dào, kě néng bèi rén ná zǒu le.", "english": "Not sure — it may have been taken by someone."},
+        {"speaker": "A", "chinese": "里面有重要的东西吗？", "pinyin": "Lǐ miàn yǒu zhòng yào de dōng xi ma?", "english": "Were there important things inside?"},
+        {"speaker": "B", "chinese": "有！钥匙和钱包都在里面，真麻烦。", "pinyin": "Yǒu! Yào shi hé qián bāo dōu zài lǐ miàn, zhēn má fan.", "english": "Yes! The keys and wallet were inside — what a hassle."},
+        {"speaker": "A", "chinese": "以后把重要的东西放在身上，别乱放。", "pinyin": "Yǐ hòu bǎ zhòng yào de dōng xi fàng zài shēn shàng, bié luàn fàng.", "english": "From now on, keep your important things on you — don't leave them around."},
+        {"speaker": "B", "chinese": "你说得对，我以后会注意的。", "pinyin": "Nǐ shuō de duì, wǒ yǐ hòu huì zhù yì de.", "english": "You're right — I'll be more careful from now on."}
+      ]
+    }
+  ]
+}

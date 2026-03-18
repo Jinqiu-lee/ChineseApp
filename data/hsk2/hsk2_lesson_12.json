@@ -1,0 +1,1076 @@
+{
+  "lesson": 12,
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Weather & Social 2",
+  "topic_chinese": "天气与社交（二）",
+  "vocabulary": [
+    {
+      "id": "hsk2_l12_01",
+      "chinese": "穿",
+      "pinyin": "chuān",
+      "tones": [
+        1
+      ],
+      "english": "To wear / To put on",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l12_02",
+      "chinese": "少",
+      "pinyin": "shǎo",
+      "tones": [
+        3
+      ],
+      "english": "Few / Little / Less",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l12_03",
+      "chinese": "冷",
+      "pinyin": "lěng",
+      "tones": [
+        3
+      ],
+      "english": "Cold",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l12_04",
+      "chinese": "热",
+      "pinyin": "rè",
+      "tones": [
+        4
+      ],
+      "english": "Hot",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l12_05",
+      "chinese": "身体",
+      "pinyin": "shēn tǐ",
+      "tones": [
+        1,
+        3
+      ],
+      "english": "Body / Health",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l12_06",
+      "chinese": "休息",
+      "pinyin": "xiū xi",
+      "tones": [
+        1,
+        0
+      ],
+      "english": "To rest",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l12_07",
+      "chinese": "药",
+      "pinyin": "yào",
+      "tones": [
+        4
+      ],
+      "english": "Medicine",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l12_08",
+      "chinese": "生病",
+      "pinyin": "shēng bìng",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "To get sick / To fall ill",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l12_09",
+      "chinese": "累",
+      "pinyin": "lèi",
+      "tones": [
+        4
+      ],
+      "english": "Tired",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l12_10",
+      "chinese": "快",
+      "pinyin": "kuài",
+      "tones": [
+        4
+      ],
+      "english": "Fast / Quick",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l12_11",
+      "chinese": "慢",
+      "pinyin": "màn",
+      "tones": [
+        4
+      ],
+      "english": "Slow",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l12_12",
+      "chinese": "非常",
+      "pinyin": "fēi cháng",
+      "tones": [
+        1,
+        2
+      ],
+      "english": "Very / Extremely",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l12_p01",
+      "chinese": "穿太少了",
+      "pinyin": "chuān tài shǎo le",
+      "tones": [
+        1,
+        4,
+        3,
+        0
+      ],
+      "english": "Wearing too little",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p02",
+      "chinese": "生病了要休息",
+      "pinyin": "shēng bìng le yào xiū xi",
+      "tones": [
+        1,
+        4,
+        0,
+        4,
+        1,
+        0
+      ],
+      "english": "Got sick and need to rest",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p03",
+      "chinese": "好好休息",
+      "pinyin": "hǎo hao xiū xi",
+      "tones": [
+        3,
+        0,
+        1,
+        0
+      ],
+      "english": "Rest well",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p04",
+      "chinese": "吃药",
+      "pinyin": "chī yào",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "Take medicine",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p05",
+      "chinese": "身体不太好",
+      "pinyin": "shēn tǐ bú tài hǎo",
+      "tones": [
+        1,
+        3,
+        2,
+        4,
+        3
+      ],
+      "english": "Not feeling well",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p06",
+      "chinese": "非常累",
+      "pinyin": "fēi cháng lèi",
+      "tones": [
+        1,
+        2,
+        4
+      ],
+      "english": "Extremely tired",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p07",
+      "chinese": "天气太冷了",
+      "pinyin": "tiān qì tài lěng le",
+      "tones": [
+        1,
+        4,
+        4,
+        3,
+        0
+      ],
+      "english": "The weather is too cold",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p08",
+      "chinese": "跑得非常快",
+      "pinyin": "pǎo de fēi cháng kuài",
+      "tones": [
+        3,
+        0,
+        1,
+        2,
+        4
+      ],
+      "english": "Runs extremely fast",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hsk2_l12_p01",
+      "chinese": "穿太少了",
+      "pinyin": "chuān tài shǎo le",
+      "tones": [
+        1,
+        4,
+        3,
+        0
+      ],
+      "english": "Wearing too little",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p02",
+      "chinese": "生病了要休息",
+      "pinyin": "shēng bìng le yào xiū xi",
+      "tones": [
+        1,
+        4,
+        0,
+        4,
+        1,
+        0
+      ],
+      "english": "Got sick and need to rest",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p03",
+      "chinese": "好好休息",
+      "pinyin": "hǎo hao xiū xi",
+      "tones": [
+        3,
+        0,
+        1,
+        0
+      ],
+      "english": "Rest well",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p04",
+      "chinese": "吃药",
+      "pinyin": "chī yào",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "Take medicine",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p05",
+      "chinese": "身体不太好",
+      "pinyin": "shēn tǐ bú tài hǎo",
+      "tones": [
+        1,
+        3,
+        2,
+        4,
+        3
+      ],
+      "english": "Not feeling well",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p06",
+      "chinese": "非常累",
+      "pinyin": "fēi cháng lèi",
+      "tones": [
+        1,
+        2,
+        4
+      ],
+      "english": "Extremely tired",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p07",
+      "chinese": "天气太冷了",
+      "pinyin": "tiān qì tài lěng le",
+      "tones": [
+        1,
+        4,
+        4,
+        3,
+        0
+      ],
+      "english": "The weather is too cold",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l12_p08",
+      "chinese": "跑得非常快",
+      "pinyin": "pǎo de fēi cháng kuài",
+      "tones": [
+        3,
+        0,
+        1,
+        2,
+        4
+      ],
+      "english": "Runs extremely fast",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "id": "hsk2_l12_s01",
+      "chinese": "你穿太少了。",
+      "pinyin": "Nǐ chuān tài shǎo le.",
+      "english": "You wear too little."
+    },
+    {
+      "id": "hsk2_l12_s02",
+      "chinese": "他跑得非常快。",
+      "pinyin": "Tā pǎo de fēi cháng kuài.",
+      "english": "He runs extremely fast."
+    },
+    {
+      "id": "hsk2_l12_s03",
+      "chinese": "今天太冷了，你要多穿一点。",
+      "pinyin": "Jīn tiān tài lěng le, nǐ yào duō chuān yī diǎn.",
+      "english": "It's too cold today; you should wear more."
+    },
+    {
+      "id": "hsk2_l12_s04",
+      "chinese": "她生病了，要休息和吃药。",
+      "pinyin": "Tā shēng bìng le, yào xiū xi hé chī yào.",
+      "english": "She got sick; she needs to rest and take medicine."
+    },
+    {
+      "id": "hsk2_l12_s05",
+      "chinese": "我今天非常累，身体不太好。",
+      "pinyin": "Wǒ jīn tiān fēi cháng lèi, shēn tǐ bú tài hǎo.",
+      "english": "I am extremely tired today; I am not feeling well."
+    },
+    {
+      "id": "hsk2_l12_s06",
+      "chinese": "你走得太慢了！",
+      "pinyin": "Nǐ zǒu de tài màn le!",
+      "english": "You walk too slowly!"
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "程度补语 — Degree Complement V+得+complement",
+      "explanation": "The degree complement describes the degree or result of an action. Formula: Verb + 得 + complement (adjective or adverb phrase). For example: 跑得快 (run fast), 说得好 (speak well). When there is an object, the verb is repeated: 他中文说得很好。",
+      "examples": [
+        {
+          "chinese": "他跑得非常快。",
+          "pinyin": "Tā pǎo de fēi cháng kuài.",
+          "english": "He runs extremely fast."
+        },
+        {
+          "chinese": "她汉语说得很好。",
+          "pinyin": "Tā Hàn yǔ shuō de hěn hǎo.",
+          "english": "She speaks Chinese very well."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hsk2_l12_g1_e1",
+          "question": "Fill in: 他写___很好。(He writes very well.)",
+          "type": "multiple_choice",
+          "correct": "得",
+          "options": [
+            "得",
+            "了",
+            "着",
+            "过"
+          ],
+          "option_pinyin": [
+            "de",
+            "le",
+            "zhe",
+            "guò"
+          ]
+        },
+        {
+          "id": "hsk2_l12_g1_e2",
+          "question": "Which sentence uses the degree complement correctly?",
+          "type": "multiple_choice",
+          "correct": "她跑得很慢。",
+          "options": [
+            "她跑得很慢。",
+            "她很慢跑得。",
+            "她得跑很慢。",
+            "她跑很慢得。"
+          ],
+          "option_pinyin": [
+            "Tā pǎo de hěn màn.",
+            "Tā hěn màn pǎo de.",
+            "Tā de pǎo hěn màn.",
+            "Tā pǎo hěn màn de."
+          ],
+          "correct_pinyin": "Tā pǎo de hěn màn."
+        },
+        {
+          "id": "hsk2_l12_g1_e3",
+          "question": "What is the formula for the degree complement?",
+          "type": "multiple_choice",
+          "correct": "Verb + 得 + complement",
+          "options": [
+            "Verb + 得 + complement",
+            "Subject + 得 + Verb",
+            "得 + Verb + complement",
+            "Complement + 得 + Verb"
+          ]
+        },
+        {
+          "question": "What does 跑得非常快 mean?",
+          "type": "multiple_choice",
+          "correct": "Run extremely fast",
+          "options": [
+            "Run extremely fast",
+            "Walk extremely fast",
+            "Run a bit slowly",
+            "Run quite far"
+          ],
+          "option_pinyin": [
+            "pǎo de fēi cháng kuài",
+            "zǒu de fēi cháng kuài",
+            "pǎo de yǒu diǎnr màn",
+            "pǎo de hěn yuǎn"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "太...了 — Too / Excessively",
+      "explanation": "太...了 expresses that something is excessive or beyond a normal degree. Formula: 太 + Adjective + 了. For example: 太冷了 (too cold), 太快了 (too fast). The 了 at the end is required in this pattern.",
+      "examples": [
+        {
+          "chinese": "你穿太少了。",
+          "pinyin": "Nǐ chuān tài shǎo le.",
+          "english": "You wear too little."
+        },
+        {
+          "chinese": "今天太热了！",
+          "pinyin": "Jīn tiān tài rè le!",
+          "english": "Today is too hot!"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hsk2_l12_g2_e1",
+          "question": "Fill in: 这个___冷了，我不想吃。(This is too cold; I don't want to eat it.)",
+          "type": "multiple_choice",
+          "correct": "太",
+          "options": [
+            "太",
+            "非常",
+            "很",
+            "最"
+          ],
+          "option_pinyin": [
+            "tài",
+            "fēi cháng",
+            "hěn",
+            "zuì"
+          ]
+        },
+        {
+          "id": "hsk2_l12_g2_e2",
+          "question": "Which sentence means 'You walk too slowly'?",
+          "type": "multiple_choice",
+          "correct": "你走得太慢了。",
+          "options": [
+            "你走得太慢了。",
+            "你走得非常慢。",
+            "你太走慢了。",
+            "你走慢太了。"
+          ],
+          "option_pinyin": [
+            "Nǐ zǒu de tài màn le.",
+            "Nǐ zǒu de fēi cháng màn.",
+            "Nǐ tài zǒu màn le.",
+            "Nǐ zǒu màn tài le."
+          ],
+          "correct_pinyin": "Nǐ zǒu de tài màn le."
+        },
+        {
+          "id": "hsk2_l12_g2_e3",
+          "question": "What must come at the end of a 太...了 sentence?",
+          "type": "multiple_choice",
+          "correct": "了",
+          "options": [
+            "了",
+            "吗",
+            "呢",
+            "吧"
+          ]
+        },
+        {
+          "question": "Which phrase means 'the weather is too cold'?",
+          "type": "multiple_choice",
+          "correct": "天气太冷了",
+          "options": [
+            "天气太冷了",
+            "天气太热了",
+            "天气非常累",
+            "天气很少"
+          ],
+          "option_pinyin": [
+            "tiān qì tài lěng le",
+            "tiān qì tài rè le",
+            "tiān qì fēi cháng lèi",
+            "tiān qì hěn shǎo"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "了 indicating change of state",
+      "explanation": "了 placed at the end of a sentence can indicate a change of state — something has become true that was not true before. Formula: Sentence + 了. For example: 她生病了 (She has gotten sick — a new situation). This is different from the 了 that marks a completed action.",
+      "examples": [
+        {
+          "chinese": "她生病了。",
+          "pinyin": "Tā shēng bìng le.",
+          "english": "She has gotten sick."
+        },
+        {
+          "chinese": "天冷了，要多穿衣服。",
+          "pinyin": "Tiān lěng le, yào duō chuān yī fú.",
+          "english": "The weather has turned cold; wear more clothes."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "hsk2_l12_g3_e1",
+          "question": "What does the 了 at the end indicate in: 天热了。",
+          "type": "multiple_choice",
+          "correct": "A change of state (it has become hot)",
+          "options": [
+            "A change of state (it has become hot)",
+            "A completed action",
+            "A future plan",
+            "A question"
+          ]
+        },
+        {
+          "id": "hsk2_l12_g3_e2",
+          "question": "Which sentence means 'I am tired now (new situation)'?",
+          "type": "multiple_choice",
+          "correct": "我累了。",
+          "options": [
+            "我累了。",
+            "我很累。",
+            "我太累。",
+            "我非常累。"
+          ],
+          "option_pinyin": [
+            "Wǒ lèi le.",
+            "Wǒ hěn lèi.",
+            "Wǒ tài lèi.",
+            "Wǒ fēi cháng lèi."
+          ],
+          "correct_pinyin": "Wǒ lèi le."
+        },
+        {
+          "id": "hsk2_l12_g3_e3",
+          "question": "Fill in: 他___病了，要吃药。(He has gotten sick; he needs to take medicine.)",
+          "type": "multiple_choice",
+          "correct": "生",
+          "options": [
+            "生",
+            "有",
+            "是",
+            "在"
+          ],
+          "option_pinyin": [
+            "shēng",
+            "yǒu",
+            "shì",
+            "zài"
+          ]
+        },
+        {
+          "question": "What does 生病了要休息 mean?",
+          "type": "multiple_choice",
+          "correct": "Got sick and need to rest",
+          "options": [
+            "Got sick and need to rest",
+            "Tired and need medicine",
+            "Tired and need to rest",
+            "Got cold and need to sleep"
+          ],
+          "option_pinyin": [
+            "shēng bìng le yào xiū xi",
+            "lèi le yào chī yào",
+            "lèi le yào xiū xi",
+            "lěng le yào shuì jiào"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "hsk2_l12_q01",
+      "question": "What does 穿 mean?",
+      "type": "multiple_choice",
+      "correct": "To wear / To put on",
+      "options": [
+        "To eat",
+        "To wear / To put on",
+        "To buy",
+        "To wash"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q02",
+      "question": "What does 冷 mean?",
+      "type": "multiple_choice",
+      "correct": "Cold",
+      "options": [
+        "Hot",
+        "Cold",
+        "Warm",
+        "Cool"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q03",
+      "question": "What does 身体 mean?",
+      "type": "multiple_choice",
+      "correct": "Body / Health",
+      "options": [
+        "Mind",
+        "Body / Health",
+        "Heart",
+        "Face"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q04",
+      "question": "What does 生病 mean?",
+      "type": "multiple_choice",
+      "correct": "To get sick",
+      "options": [
+        "To get better",
+        "To get sick",
+        "To exercise",
+        "To rest"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q05",
+      "question": "What does 休息 mean?",
+      "type": "multiple_choice",
+      "correct": "To rest",
+      "options": [
+        "To sleep",
+        "To eat",
+        "To rest",
+        "To play"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q06",
+      "question": "What does 药 mean?",
+      "type": "multiple_choice",
+      "correct": "Medicine",
+      "options": [
+        "Food",
+        "Water",
+        "Medicine",
+        "Tea"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q07",
+      "question": "How do you say 'You wear too little' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "你穿太少了。",
+      "options": [
+        "你穿太少了。",
+        "你穿很少了。",
+        "你太穿少了。",
+        "你穿少太了。"
+      ],
+      "option_pinyin": [
+        "Nǐ chuān tài shǎo le.",
+        "Nǐ chuān hěn shǎo le.",
+        "Nǐ tài chuān shǎo le.",
+        "Nǐ chuān shǎo tài le."
+      ],
+      "correct_pinyin": "Nǐ chuān tài shǎo le.",
+      "difficulty": "medium",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q08",
+      "question": "Which sentence uses the degree complement correctly?",
+      "type": "multiple_choice",
+      "correct": "他跑得非常快。",
+      "options": [
+        "他跑得非常快。",
+        "他非常得跑快。",
+        "他快得跑非常。",
+        "他得跑非常快。"
+      ],
+      "option_pinyin": [
+        "Tā pǎo de fēi cháng kuài.",
+        "Tā fēi cháng de pǎo kuài.",
+        "Tā kuài de pǎo fēi cháng.",
+        "Tā de pǎo fēi cháng kuài."
+      ],
+      "correct_pinyin": "Tā pǎo de fēi cháng kuài.",
+      "difficulty": "medium",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q09",
+      "question": "What does 累 mean?",
+      "type": "multiple_choice",
+      "correct": "Tired",
+      "options": [
+        "Happy",
+        "Angry",
+        "Tired",
+        "Sad"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q10",
+      "question": "What does 非常 mean?",
+      "type": "multiple_choice",
+      "correct": "Very / Extremely",
+      "options": [
+        "A little",
+        "Not very",
+        "Very / Extremely",
+        "Sometimes"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q11",
+      "question": "Fill in: 今天___冷了，要多穿衣服。(Today has turned too cold; wear more clothes.)",
+      "question_pinyin": "Jīn tiān ___ lěng le, yào duō chuān yī fú.",
+      "type": "multiple_choice",
+      "correct": "太",
+      "options": [
+        "太",
+        "很",
+        "非常",
+        "最"
+      ],
+      "option_pinyin": [
+        "tài",
+        "hěn",
+        "fēi cháng",
+        "zuì"
+      ],
+      "difficulty": "medium",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q12",
+      "question": "What does the 了 at the end of 她生病了 indicate?",
+      "type": "multiple_choice",
+      "correct": "A change of state (a new situation)",
+      "options": [
+        "A change of state (a new situation)",
+        "A completed action in the past",
+        "A future plan",
+        "A question"
+      ],
+      "difficulty": "hard",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q13",
+      "question": "What does 快 mean?",
+      "type": "multiple_choice",
+      "correct": "Fast / Quick",
+      "options": [
+        "Slow",
+        "Fast / Quick",
+        "Heavy",
+        "Light"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q14",
+      "question": "How do you say 'She got sick; she needs to rest'?",
+      "type": "multiple_choice",
+      "correct": "她生病了，要休息。",
+      "options": [
+        "她生病了，要休息。",
+        "她病生了，要休息。",
+        "她生病，太要休息了。",
+        "她了生病，要休息。"
+      ],
+      "option_pinyin": [
+        "Tā shēng bìng le, yào xiū xi.",
+        "Tā bìng shēng le, yào xiū xi.",
+        "Tā shēng bìng, tài yào xiū xi le.",
+        "Tā le shēng bìng, yào xiū xi."
+      ],
+      "correct_pinyin": "Tā shēng bìng le, yào xiū xi.",
+      "difficulty": "medium",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk2_l12_q15",
+      "question": "What does 慢 mean?",
+      "type": "multiple_choice",
+      "correct": "Slow",
+      "options": [
+        "Fast",
+        "Slow",
+        "Loud",
+        "Quiet"
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 12
+    },
+    {
+      "question": "How do you say 'wearing too little'?",
+      "type": "multiple_choice",
+      "correct": "穿太少了",
+      "options": [
+        "穿太少了",
+        "穿太多了",
+        "穿太冷了",
+        "穿太累了"
+      ]
+    },
+    {
+      "question": "What does 身体不太好 mean?",
+      "type": "multiple_choice",
+      "correct": "Not feeling well",
+      "options": [
+        "Not feeling well",
+        "Very healthy",
+        "Getting better",
+        "Extremely tired"
+      ]
+    },
+    {
+      "question": "How do you say 'the weather is too cold'?",
+      "type": "multiple_choice",
+      "correct": "天气太冷了",
+      "options": [
+        "天气太冷了",
+        "天气太热了",
+        "天气非常累",
+        "天气很少"
+      ]
+    },
+    {
+      "question": "What does 生病了要休息 mean?",
+      "type": "multiple_choice",
+      "correct": "Got sick and need to rest",
+      "options": [
+        "Got sick and need to rest",
+        "Got sick and need medicine",
+        "Tired and need to rest",
+        "Cold and need to wear more"
+      ]
+    },
+    {
+      "question": "Fill in: 今天穿___少了，外面___冷，你要___药。(You wore too little today; it's very cold outside; you need to take medicine.)",
+      "type": "multiple_choice",
+      "correct": "太 / 很 / 吃",
+      "options": [
+        "太 / 很 / 吃",
+        "很 / 非常 / 穿",
+        "非常 / 太 / 休息",
+        "少 / 冷 / 身体"
+      ]
+    },
+    {
+      "question": "What does 穿太少了 mean?",
+      "type": "multiple_choice",
+      "correct": "Wearing too little",
+      "options": [
+        "Wearing too little",
+        "Wearing too much",
+        "Dressed too slowly",
+        "Got dressed quickly"
+      ]
+    },
+    {
+      "question": "How do you say 'good health / rest well'?",
+      "type": "multiple_choice",
+      "correct": "好好休息",
+      "options": [
+        "好好休息",
+        "生病休息",
+        "吃药休息",
+        "太累休息"
+      ]
+    },
+    {
+      "question": "What does 非常累 mean?",
+      "type": "multiple_choice",
+      "correct": "Extremely tired",
+      "options": [
+        "Extremely tired",
+        "Extremely sick",
+        "Extremely cold",
+        "Extremely fast"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Are You Cold?",
+      "title_chinese": "你冷不冷？",
+      "speakers": {
+        "A": {
+          "name": "妈妈",
+          "role": "妈妈",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "儿子",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小明，你穿太少了，外面很冷！",
+          "pinyin": "Xiǎo Míng, nǐ chuān tài shǎo le, wài miàn hěn lěng!",
+          "english": "Xiao Ming, you wear too little; it's very cold outside!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "妈妈，我不冷，我跑得很快，身体很热。",
+          "pinyin": "Māma, wǒ bù lěng, wǒ pǎo de hěn kuài, shēn tǐ hěn rè.",
+          "english": "Mom, I'm not cold; I run very fast and my body feels hot."
+        },
+        {
+          "speaker": "A",
+          "chinese": "要小心！穿太少容易生病。",
+          "pinyin": "Yào xiǎo xīn! Chuān tài shǎo róng yì shēng bìng.",
+          "english": "Be careful! Wearing too little makes it easy to get sick."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好吧，我多穿一件。我有点累了。",
+          "pinyin": "Hǎo ba, wǒ duō chuān yī jiàn. Wǒ yǒu diǎn lèi le.",
+          "english": "Fine, I'll wear one more layer. I'm a bit tired now."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那你好好休息，不舒服就吃药。",
+          "pinyin": "Nà nǐ hǎo hāo xiū xi, bù shū fú jiù chī yào.",
+          "english": "Then rest well; if you feel unwell, take medicine."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Feeling Unwell",
+      "title_chinese": "不舒服",
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大伟",
+          "role": "朋友",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "大伟，你看起来不太好，生病了吗？",
+          "pinyin": "Dà Wěi, nǐ kàn qǐ lái bú tài hǎo, shēng bìng le ma?",
+          "english": "Da Wei, you don't look well. Have you gotten sick?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是的，我昨天穿太少了，今天非常冷。",
+          "pinyin": "Shì de, wǒ zuó tiān chuān tài shǎo le, jīn tiān fēi cháng lěng.",
+          "english": "Yes, I wore too little yesterday; today I feel extremely cold."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你吃药了吗？要好好休息。",
+          "pinyin": "Nǐ chī yào le ma? Yào hǎo hāo xiū xi.",
+          "english": "Have you taken medicine? You need to rest well."
+        },
+        {
+          "speaker": "B",
+          "chinese": "吃了，但我身体还是很累，走得很慢。",
+          "pinyin": "Chī le, dàn wǒ shēn tǐ hái shì hěn lèi, zǒu de hěn màn.",
+          "english": "I have, but my body is still very tired; I walk very slowly."
+        },
+        {
+          "speaker": "A",
+          "chinese": "没关系，慢慢来。身体最重要！",
+          "pinyin": "Méi guān xi, màn màn lái. Shēn tǐ zuì zhòng yào!",
+          "english": "It's okay, take it slow. Health is the most important thing!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢你！以后我不会再穿太少了。",
+          "pinyin": "Xiè xie nǐ! Yǐ hòu wǒ bú huì zài chuān tài shǎo le.",
+          "english": "Thank you! I won't wear too little again in the future."
+        }
+      ]
+    }
+  ]
+}

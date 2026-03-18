@@ -1,0 +1,751 @@
+{
+  "lesson": 1,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Plans & Weekend",
+  "topic_chinese": "周末你有什么计划",
+  "vocabulary": [
+    {
+      "id": "hsk3_l1_01",
+      "chinese": "打算",
+      "pinyin": "dǎ suàn",
+      "tones": [3, 4],
+      "english": "To plan / To intend",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l1_02",
+      "chinese": "计划",
+      "pinyin": "jì huà",
+      "tones": [4, 4],
+      "english": "Plan / Schedule",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk3_l1_03",
+      "chinese": "顺便",
+      "pinyin": "shùn biàn",
+      "tones": [4, 4],
+      "english": "Conveniently / While at it",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l1_04",
+      "chinese": "附近",
+      "pinyin": "fù jìn",
+      "tones": [4, 4],
+      "english": "Nearby / In the vicinity",
+      "part_of_speech": "noun/adjective"
+    },
+    {
+      "id": "hsk3_l1_05",
+      "chinese": "超市",
+      "pinyin": "chāo shì",
+      "tones": [1, 4],
+      "english": "Supermarket",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l1_06",
+      "chinese": "社区",
+      "pinyin": "shè qū",
+      "tones": [4, 1],
+      "english": "Community / Neighbourhood",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l1_07",
+      "chinese": "美发",
+      "pinyin": "měi fǎ",
+      "tones": [3, 4],
+      "english": "Hairdresser / Beauty salon",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l1_08",
+      "chinese": "帮",
+      "pinyin": "bāng",
+      "tones": [1],
+      "english": "To help",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l1_09",
+      "chinese": "趟",
+      "pinyin": "tàng",
+      "tones": [4],
+      "english": "[Measure word for trips/visits]",
+      "part_of_speech": "measure word"
+    },
+    {
+      "id": "hsk3_l1_10",
+      "chinese": "再说",
+      "pinyin": "zài shuō",
+      "tones": [4, 1],
+      "english": "Besides / Moreover / Let's talk later",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l1_11",
+      "chinese": "然后",
+      "pinyin": "rán hòu",
+      "tones": [2, 4],
+      "english": "Then / After that",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l1_12",
+      "chinese": "啊",
+      "pinyin": "a",
+      "tones": [0],
+      "english": "[Sentence particle, softening/exclamation]",
+      "part_of_speech": "particle"
+    },
+    {
+      "id": "hsk3_l1_p01",
+      "chinese": "有什么计划",
+      "pinyin": "yǒu shén me jì huà",
+      "tones": [3, 2, 0, 4, 4],
+      "english": "Have what plans / What are your plans",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l1_p02",
+      "chinese": "打算去超市",
+      "pinyin": "dǎ suàn qù chāo shì",
+      "tones": [3, 4, 4, 1, 4],
+      "english": "Plan to go to the supermarket",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l1_p03",
+      "chinese": "顺便帮我买",
+      "pinyin": "shùn biàn bāng wǒ mǎi",
+      "tones": [4, 4, 1, 3, 3],
+      "english": "Help me buy something while you're at it",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l1_p04",
+      "chinese": "附近的社区",
+      "pinyin": "fù jìn de shè qū",
+      "tones": [4, 4, 0, 4, 1],
+      "english": "The nearby community",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l1_p05",
+      "chinese": "去美发一趟",
+      "pinyin": "qù měi fǎ yī tàng",
+      "tones": [4, 3, 4, 1, 4],
+      "english": "Make a trip to the hairdresser",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l1_p06",
+      "chinese": "再说吧",
+      "pinyin": "zài shuō ba",
+      "tones": [4, 1, 0],
+      "english": "Let's talk about it later / We'll see",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l1_p07",
+      "chinese": "然后去哪儿",
+      "pinyin": "rán hòu qù nǎr",
+      "tones": [2, 4, 4, 3],
+      "english": "Then where to go",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l1_p08",
+      "chinese": "周末打算做什么",
+      "pinyin": "zhōu mò dǎ suàn zuò shén me",
+      "tones": [1, 4, 3, 4, 4, 2, 0],
+      "english": "What do you plan to do on the weekend",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "你周末有什么计划？",
+      "pinyin": "Nǐ zhōu mò yǒu shén me jì huà?",
+      "english": "What are your plans for the weekend?"
+    },
+    {
+      "chinese": "我打算去附近的超市买东西。",
+      "pinyin": "Wǒ dǎ suàn qù fù jìn de chāo shì mǎi dōng xi.",
+      "english": "I plan to go to the nearby supermarket to buy things."
+    },
+    {
+      "chinese": "你能顺便帮我买一瓶水吗？",
+      "pinyin": "Nǐ néng shùn biàn bāng wǒ mǎi yī píng shuǐ ma?",
+      "english": "Can you help me buy a bottle of water while you're at it?"
+    },
+    {
+      "chinese": "我先去美发一趟，然后去社区中心。",
+      "pinyin": "Wǒ xiān qù měi fǎ yī tàng, rán hòu qù shè qū zhōng xīn.",
+      "english": "I'll make a trip to the hairdresser first, then go to the community centre."
+    },
+    {
+      "chinese": "他说不去了，再说吧。",
+      "pinyin": "Tā shuō bú qù le, zài shuō ba.",
+      "english": "He said he's not going anymore; we'll talk about it later."
+    },
+    {
+      "chinese": "周末的计划还没定，再说吧。",
+      "pinyin": "Zhōu mò de jì huà hái méi dìng, zài shuō ba.",
+      "english": "The weekend plans aren't set yet; we'll figure it out later."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "「不」的变调 — Tone Sandhi of bù",
+      "explanation": "不 (bù) is normally tone 4. Before another tone-4 syllable it changes to tone 2: 不去 → bú qù, 不是 → bú shì. Before tones 1, 2, and 3 it stays tone 4: 不来 (bù lái), 不行 (bù xíng), 不好 (bù hǎo). Formula: 不 + Tone 4 syllable → 不 becomes Tone 2.",
+      "examples": [
+        {
+          "chinese": "他不去了。",
+          "pinyin": "Tā bú qù le.",
+          "english": "He's not going anymore."
+        },
+        {
+          "chinese": "这不是我的计划。",
+          "pinyin": "Zhè bú shì wǒ de jì huà.",
+          "english": "This is not my plan."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "How does 不 change in 不去?",
+          "type": "multiple_choice",
+          "correct": "It becomes Tone 2: bú qù",
+          "options": [
+            "It becomes Tone 2: bú qù",
+            "It stays Tone 4: bù qù",
+            "It becomes Tone 1: bū qù",
+            "It becomes Tone 3: bǔ qù"
+          ]
+        },
+        {
+          "question": "Fill in the correct tone change: 我___是。(I am not.)",
+          "type": "multiple_choice",
+          "correct": "bú shì",
+          "options": [
+            "bú shì",
+            "bù shì",
+            "bǔ shì",
+            "bū shì"
+          ]
+        },
+        {
+          "question": "Which tone does 不 stay as when followed by Tone 1, 2, or 3?",
+          "type": "multiple_choice",
+          "correct": "Tone 4",
+          "options": [
+            "Tone 1",
+            "Tone 2",
+            "Tone 3",
+            "Tone 4"
+          ]
+        },
+        {
+          "question": "In the phrase 不好 (bù hǎo), why does 不 stay Tone 4?",
+          "type": "multiple_choice",
+          "correct": "Because 好 is Tone 3",
+          "options": [
+            "Because 好 is Tone 3",
+            "Because 好 is Tone 4",
+            "Because 好 is Tone 1",
+            "Because 好 is Tone 2"
+          ]
+        },
+        {
+          "question": "Which sentence uses correct tone sandhi for 不?",
+          "type": "multiple_choice",
+          "correct": "他bú去了。",
+          "options": [
+            "他bú去了。",
+            "他bù去了。",
+            "他bǔ去了。",
+            "他bū去了。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "否定结构「不…了」— Negative Change: Not Anymore",
+      "explanation": "Subject + 不 + Verb + 了 means 'no longer do something' or 'have stopped doing something'. 了 here signals a change in situation. E.g. 我不去了 = I'm not going anymore. 他不吃了 = He's stopped eating. This is different from a simple negation — it implies a change from a previous state.",
+      "examples": [
+        {
+          "chinese": "我不去了。",
+          "pinyin": "Wǒ bú qù le.",
+          "english": "I'm not going anymore."
+        },
+        {
+          "chinese": "她不打算去超市了。",
+          "pinyin": "Tā bù dǎ suàn qù chāo shì le.",
+          "english": "She's no longer planning to go to the supermarket."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 我不去了 mean?",
+          "type": "multiple_choice",
+          "correct": "I'm not going anymore",
+          "options": [
+            "I'm not going anymore",
+            "I didn't go",
+            "I won't ever go",
+            "I'm going now"
+          ]
+        },
+        {
+          "question": "How do you say 'He's not eating anymore'?",
+          "type": "multiple_choice",
+          "correct": "他不吃了。",
+          "options": [
+            "他不吃了。",
+            "他没吃了。",
+            "他不吃。",
+            "他吃不了。"
+          ],
+          "option_pinyin": [
+            "Tā bù chī le.",
+            "Tā méi chī le.",
+            "Tā bù chī.",
+            "Tā chī bù liǎo."
+          ]
+        },
+        {
+          "question": "What role does 了 play in 不…了?",
+          "type": "multiple_choice",
+          "correct": "It signals a change of situation",
+          "options": [
+            "It signals a change of situation",
+            "It marks a completed action",
+            "It softens the sentence",
+            "It expresses past tense"
+          ]
+        },
+        {
+          "question": "Fill in: 他说___去___，再说吧。(He said he's not going anymore; we'll see.)",
+          "type": "multiple_choice",
+          "correct": "不 / 了",
+          "options": [
+            "不 / 了",
+            "没 / 了",
+            "不 / 吗",
+            "没 / 吧"
+          ]
+        },
+        {
+          "question": "Which sentence means 'She's no longer planning to go'?",
+          "type": "multiple_choice",
+          "correct": "她不打算去了。",
+          "options": [
+            "她不打算去了。",
+            "她没打算去。",
+            "她不去打算了。",
+            "她打算不去。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "先…然后… — First…Then…",
+      "explanation": "Used to sequence two actions in order. Formula: Subject + 先 + Verb1, 然后 + Verb2. 先 means 'first/before' and 然后 means 'then/after that'. E.g. 我先去超市，然后回来 = I'll go to the supermarket first, then come back. Both 先 and 然后 can be used in the same clause or split across two clauses.",
+      "examples": [
+        {
+          "chinese": "我先去美发，然后去社区中心。",
+          "pinyin": "Wǒ xiān qù měi fǎ, rán hòu qù shè qū zhōng xīn.",
+          "english": "I'll go to the hairdresser first, then go to the community centre."
+        },
+        {
+          "chinese": "你先打算好，然后再说。",
+          "pinyin": "Nǐ xiān dǎ suàn hǎo, rán hòu zài shuō.",
+          "english": "Plan it out first, then we'll talk."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 先…然后… express?",
+          "type": "multiple_choice",
+          "correct": "Sequencing two actions: first...then...",
+          "options": [
+            "Sequencing two actions: first...then...",
+            "Two simultaneous actions",
+            "A cause and effect",
+            "A contrast between two things"
+          ]
+        },
+        {
+          "question": "Fill in: 我___去超市，___回家。(I'll go to the supermarket first, then go home.)",
+          "type": "multiple_choice",
+          "correct": "先 / 然后",
+          "options": [
+            "先 / 然后",
+            "然后 / 先",
+            "顺便 / 再说",
+            "再说 / 然后"
+          ]
+        },
+        {
+          "question": "Where does 先 go in the sentence?",
+          "type": "multiple_choice",
+          "correct": "Before the first verb",
+          "options": [
+            "Before the first verb",
+            "After the first verb",
+            "At the end of the sentence",
+            "Before the subject"
+          ]
+        },
+        {
+          "question": "Choose the correct sentence: 'She'll go to the supermarket first, then come back.'",
+          "type": "multiple_choice",
+          "correct": "她先去超市，然后回来。",
+          "options": [
+            "她先去超市，然后回来。",
+            "她然后去超市，先回来。",
+            "她顺便去超市，再说回来。",
+            "她去超市先，然后回来。"
+          ],
+          "option_pinyin": [
+            "Tā xiān qù chāo shì, rán hòu huí lái.",
+            "Tā rán hòu qù chāo shì, xiān huí lái.",
+            "Tā shùn biàn qù chāo shì, zài shuō huí lái.",
+            "Tā qù chāo shì xiān, rán hòu huí lái."
+          ],
+          "correct_pinyin": "Tā xiān qù chāo shì, rán hòu huí lái."
+        },
+        {
+          "question": "What does 然后 mean?",
+          "type": "multiple_choice",
+          "correct": "Then / After that",
+          "options": [
+            "Then / After that",
+            "While at it",
+            "Besides",
+            "Before"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 打算 mean?",
+      "type": "multiple_choice",
+      "correct": "To plan / To intend",
+      "options": [
+        "To plan / To intend",
+        "To help",
+        "To buy",
+        "To go"
+      ]
+    },
+    {
+      "question": "What does 顺便 mean?",
+      "type": "multiple_choice",
+      "correct": "Conveniently / While at it",
+      "options": [
+        "Then / After that",
+        "Conveniently / While at it",
+        "Nearby",
+        "Besides"
+      ]
+    },
+    {
+      "question": "What does 附近 mean?",
+      "type": "multiple_choice",
+      "correct": "Nearby / In the vicinity",
+      "options": [
+        "Supermarket",
+        "Community",
+        "Nearby / In the vicinity",
+        "Beauty salon"
+      ]
+    },
+    {
+      "question": "What does 超市 mean?",
+      "type": "multiple_choice",
+      "correct": "Supermarket",
+      "options": [
+        "Market",
+        "Supermarket",
+        "Community",
+        "Hairdresser"
+      ]
+    },
+    {
+      "question": "What does 然后 mean?",
+      "type": "multiple_choice",
+      "correct": "Then / After that",
+      "options": [
+        "Before",
+        "Besides",
+        "Then / After that",
+        "While at it"
+      ]
+    },
+    {
+      "question": "What does 趟 mean?",
+      "type": "multiple_choice",
+      "correct": "[Measure word for trips/visits]",
+      "options": [
+        "Trip",
+        "[Measure word for trips/visits]",
+        "Time",
+        "Place"
+      ]
+    },
+    {
+      "question": "How do you say 'What are your plans for the weekend?'",
+      "type": "multiple_choice",
+      "correct": "你周末有什么计划？",
+      "options": [
+        "你周末有什么计划？",
+        "你周末打算去哪儿？",
+        "你周末再说吧？",
+        "你周末帮我买吗？"
+      ]
+    },
+    {
+      "question": "Fill in: 我___去超市，___去美发。(I'll go to the supermarket first, then go to the hairdresser.)",
+      "type": "multiple_choice",
+      "correct": "先 / 然后",
+      "options": [
+        "先 / 然后",
+        "然后 / 先",
+        "顺便 / 再说",
+        "帮 / 附近"
+      ]
+    },
+    {
+      "question": "What does 不去了 mean?",
+      "type": "multiple_choice",
+      "correct": "Not going anymore",
+      "options": [
+        "Not going anymore",
+        "Never went",
+        "Going now",
+        "Will go later"
+      ]
+    },
+    {
+      "question": "When does 不 change from Tone 4 to Tone 2?",
+      "type": "multiple_choice",
+      "correct": "Before a Tone 4 syllable",
+      "options": [
+        "Before a Tone 1 syllable",
+        "Before a Tone 2 syllable",
+        "Before a Tone 3 syllable",
+        "Before a Tone 4 syllable"
+      ]
+    },
+    {
+      "question": "What does 社区 mean?",
+      "type": "multiple_choice",
+      "correct": "Community / Neighbourhood",
+      "options": [
+        "Supermarket",
+        "Community / Neighbourhood",
+        "Beauty salon",
+        "Nearby area"
+      ]
+    },
+    {
+      "question": "What does 帮 mean?",
+      "type": "multiple_choice",
+      "correct": "To help",
+      "options": [
+        "To plan",
+        "To buy",
+        "To help",
+        "To go"
+      ]
+    },
+    {
+      "question": "Which sentence is grammatically correct?",
+      "type": "multiple_choice",
+      "correct": "她不打算去了。",
+      "options": [
+        "她不打算去了。",
+        "她打算不去。",
+        "她不去打算了。",
+        "她去不打算了。"
+      ]
+    },
+    {
+      "question": "What does 再说 mean in context?",
+      "type": "multiple_choice",
+      "correct": "Let's talk about it later / We'll see",
+      "options": [
+        "Say it again",
+        "Let's talk about it later / We'll see",
+        "After that say",
+        "Talk first"
+      ]
+    },
+    {
+      "question": "What is the correct pronunciation of 不是?",
+      "type": "multiple_choice",
+      "correct": "bú shì (Tone 2 + Tone 4)",
+      "options": [
+        "bú shì (Tone 2 + Tone 4)",
+        "bù shì (Tone 4 + Tone 4)",
+        "bǔ shì (Tone 3 + Tone 4)",
+        "bū shì (Tone 1 + Tone 4)"
+      ]
+    },
+    {
+      "question": "What does 有什么计划 mean?",
+      "type": "multiple_choice",
+      "correct": "Have what plans / What are your plans",
+      "options": [
+        "Have what plans / What are your plans",
+        "Make a plan",
+        "Plan to go",
+        "No plans"
+      ]
+    },
+    {
+      "question": "What does 打算去超市 mean?",
+      "type": "multiple_choice",
+      "correct": "Plan to go to the supermarket",
+      "options": [
+        "Plan to go to the supermarket",
+        "Go to the community",
+        "Buy at the supermarket",
+        "Plan to come back"
+      ]
+    },
+    {
+      "question": "What does 顺便帮我买 mean?",
+      "type": "multiple_choice",
+      "correct": "Help me buy something while you're at it",
+      "options": [
+        "Help me buy something while you're at it",
+        "Please buy for me",
+        "Conveniently go buy",
+        "Buy nearby"
+      ]
+    },
+    {
+      "question": "What does 去美发一趟 mean?",
+      "type": "multiple_choice",
+      "correct": "Make a trip to the hairdresser",
+      "options": [
+        "Make a trip to the hairdresser",
+        "Go to the supermarket once",
+        "Visit the community",
+        "Take a trip nearby"
+      ]
+    },
+    {
+      "question": "How do you say 'What do you plan to do on the weekend'?",
+      "type": "multiple_choice",
+      "correct": "周末打算做什么",
+      "options": [
+        "周末打算做什么",
+        "周末有什么计划",
+        "周末然后去哪儿",
+        "周末再说吧"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Planning a Weekend Outing",
+      "title_chinese": "计划周末出行",
+      "speakers": {
+        "A": {"name": "小红", "role": "朋友", "gender": "female"},
+        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "大明，你周末有什么计划啊？",
+          "pinyin": "Dà Míng, nǐ zhōu mò yǒu shén me jì huà a?",
+          "english": "Da Ming, what are your plans for the weekend?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我打算去附近的超市买东西，然后回来。",
+          "pinyin": "Wǒ dǎ suàn qù fù jìn de chāo shì mǎi dōng xi, rán hòu huí lái.",
+          "english": "I plan to go to the nearby supermarket to buy things, then come back."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那你能顺便帮我买一瓶水吗？",
+          "pinyin": "Nà nǐ néng shùn biàn bāng wǒ mǎi yī píng shuǐ ma?",
+          "english": "Then can you help me buy a bottle of water while you're at it?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "没问题！你还需要别的吗？",
+          "pinyin": "Méi wèn tí! Nǐ hái xū yào bié de ma?",
+          "english": "No problem! Do you need anything else?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "不用了，谢谢你啊！你几点出发？",
+          "pinyin": "Bú yòng le, xiè xiè nǐ a! Nǐ jǐ diǎn chū fā?",
+          "english": "No need, thank you! What time are you leaving?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我先去美发一趟，然后才去超市，大概下午两点吧。",
+          "pinyin": "Wǒ xiān qù měi fǎ yī tàng, rán hòu cái qù chāo shì, dà gài xià wǔ liǎng diǎn ba.",
+          "english": "I'll make a trip to the hairdresser first, then go to the supermarket, probably around 2 p.m."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Asking a Neighbour for Help",
+      "title_chinese": "请邻居帮忙",
+      "speakers": {
+        "A": {"name": "小丽", "role": "邻居", "gender": "female"},
+        "B": {"name": "小刚", "role": "邻居", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小刚，你打算去社区中心吗？",
+          "pinyin": "Xiǎo Gāng, nǐ dǎ suàn qù shè qū zhōng xīn ma?",
+          "english": "Xiao Gang, are you planning to go to the community centre?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "还不确定，再说吧。你有什么事？",
+          "pinyin": "Hái bù quē dìng, zài shuō ba. Nǐ yǒu shén me shì?",
+          "english": "Not sure yet, we'll see. What do you need?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我要去附近的超市，你能顺便帮我带一样东西吗？",
+          "pinyin": "Wǒ yào qù fù jìn de chāo shì, nǐ néng shùn biàn bāng wǒ dài yī yàng dōng xi ma?",
+          "english": "I'm going to the nearby supermarket; can you bring something for me while you're at it?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "可以啊！我先去超市，然后去社区中心。",
+          "pinyin": "Kě yǐ a! Wǒ xiān qù chāo shì, rán hòu qù shè qū zhōng xīn.",
+          "english": "Sure! I'll go to the supermarket first, then go to the community centre."
+        },
+        {
+          "speaker": "A",
+          "chinese": "太好了！帮我买一袋米，谢谢你啊。",
+          "pinyin": "Tài hǎo le! Bāng wǒ mǎi yī dài mǐ, xiè xiè nǐ a.",
+          "english": "That's great! Help me buy a bag of rice, thank you."
+        }
+      ]
+    }
+  ]
+}

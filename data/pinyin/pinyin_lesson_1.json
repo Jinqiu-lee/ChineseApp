@@ -727,6 +727,62 @@
         "ü",
         "a"
       ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mā",
+      "audio_key": "ma1",
+      "correct": "1",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mǎ",
+      "audio_key": "ma3",
+      "correct": "3",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "mà",
+      "audio_key": "ma4",
+      "correct": "4",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "bō",
+      "audio_key": "init_b",
+      "correct": "b",
+      "choices": ["b", "p", "m", "f"]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "lā",
+      "audio_key": "init_l",
+      "correct": "l",
+      "choices": ["d", "t", "n", "l"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bā",
+      "audio_key": "fin_a",
+      "correct": "a",
+      "choices": ["a", "o", "e", "i"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bī",
+      "audio_key": "fin_i",
+      "correct": "i",
+      "choices": ["a", "o", "e", "i"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "bū",
+      "audio_key": "fin_u",
+      "correct": "u",
+      "choices": ["i", "u", "ü", "a"]
     }
   ]
 }

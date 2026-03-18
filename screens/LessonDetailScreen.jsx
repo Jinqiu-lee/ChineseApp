@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import VocabularySection from '../components/VocabularySection';
 import DialogueSection from '../components/DialogueSection';
@@ -20,12 +20,49 @@ import lesson12 from '../data/hsk1/hsk1_lesson_12.json';
 import lesson13 from '../data/hsk1/hsk1_lesson_13.json';
 import lesson14 from '../data/hsk1/hsk1_lesson_14.json';
 import lesson15 from '../data/hsk1/hsk1_lesson_15.json';
+import hsk2lesson1 from '../data/hsk2/hsk2_lesson_1.json';
+import hsk2lesson2 from '../data/hsk2/hsk2_lesson_2.json';
+import hsk2lesson3 from '../data/hsk2/hsk2_lesson_3.json';
+import hsk2lesson4 from '../data/hsk2/hsk2_lesson_4.json';
+import hsk2lesson5 from '../data/hsk2/hsk2_lesson_5.json';
+import hsk2lesson6 from '../data/hsk2/hsk2_lesson_6.json';
+import hsk2lesson7 from '../data/hsk2/hsk2_lesson_7.json';
+import hsk2lesson8 from '../data/hsk2/hsk2_lesson_8.json';
+import hsk2lesson9 from '../data/hsk2/hsk2_lesson_9.json';
+import hsk2lesson10 from '../data/hsk2/hsk2_lesson_10.json';
+import hsk2lesson11 from '../data/hsk2/hsk2_lesson_11.json';
+import hsk2lesson12 from '../data/hsk2/hsk2_lesson_12.json';
+import hsk2lesson13 from '../data/hsk2/hsk2_lesson_13.json';
+import hsk2lesson14 from '../data/hsk2/hsk2_lesson_14.json';
+import hsk2lesson15 from '../data/hsk2/hsk2_lesson_15.json';
 
-const LESSONS = {
-  1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5,
-  6: lesson6, 7: lesson7, 8: lesson8, 9: lesson9, 10: lesson10,
-  11: lesson11, 12: lesson12, 13: lesson13, 14: lesson14, 15: lesson15,
+const LESSONS_BY_LEVEL = {
+  hsk1: {
+    1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5,
+    6: lesson6, 7: lesson7, 8: lesson8, 9: lesson9, 10: lesson10,
+    11: lesson11, 12: lesson12, 13: lesson13, 14: lesson14, 15: lesson15,
+  },
+  hsk2: {
+    1: hsk2lesson1,
+    2: hsk2lesson2,
+    3: hsk2lesson3,
+    4: hsk2lesson4,
+    5: hsk2lesson5,
+    6: hsk2lesson6,
+    7: hsk2lesson7,
+    8: hsk2lesson8,
+    9: hsk2lesson9,
+    10: hsk2lesson10,
+    11: hsk2lesson11,
+    12: hsk2lesson12,
+    13: hsk2lesson13,
+    14: hsk2lesson14,
+    15: hsk2lesson15,
+  },
 };
+
+// Fallback for callers that don't pass levelId
+const LESSONS = LESSONS_BY_LEVEL.hsk1;
 
 const STAGE_META = [
   { name: 'First Look',      desc: 'Flashcards · Audio · Match',    icon: '👁',  color: '#a29bfe' },
@@ -43,6 +80,7 @@ const ROUND_INFO = {
 
 export default function LessonDetailScreen({
   lessonId,
+  levelId = 'hsk1',
   stageProgress = [],
   currentRound = 1,
   quizUnlocked = false,
@@ -52,7 +90,8 @@ export default function LessonDetailScreen({
   onOpenPinyin,
   onSelectStage,
 }) {
-  const lesson = LESSONS[lessonId];
+  const levelMap = LESSONS_BY_LEVEL[levelId] || LESSONS;
+  const lesson = levelMap[lessonId];
   const [openSection, setOpenSection] = useState(null); // 'words' | 'sentences' | 'grammar' | null
 
   const toggleSection = (key) => setOpenSection(prev => prev === key ? null : key);
@@ -141,27 +180,40 @@ export default function LessonDetailScreen({
             </Text>
           </TouchableOpacity>
 
-          <TouchableOpacity
-            style={[styles.learnBtn, styles.learnBtnPinyin]}
-            onPress={onOpenPinyin}
-            activeOpacity={0.8}
-          >
-            <Text style={styles.learnBtnEmoji}>🎵</Text>
-            <Text style={[styles.learnBtnLabel, styles.learnBtnLabelPinyin]}>
-              Pinyin
-            </Text>
-          </TouchableOpacity>
+          {levelId === 'hsk2' ? (
+            <TouchableOpacity
+              style={[styles.learnBtn, styles.learnBtnCharacters]}
+              onPress={() => Alert.alert('Chinese Characters', 'Chinese Characters learning module coming soon! ✍️')}
+              activeOpacity={0.8}
+            >
+              <Text style={styles.learnBtnEmoji}>✍️</Text>
+              <Text style={[styles.learnBtnLabel, styles.learnBtnLabelCharacters]}>
+                Characters
+              </Text>
+            </TouchableOpacity>
+          ) : (
+            <TouchableOpacity
+              style={[styles.learnBtn, styles.learnBtnPinyin]}
+              onPress={onOpenPinyin}
+              activeOpacity={0.8}
+            >
+              <Text style={styles.learnBtnEmoji}>🎵</Text>
+              <Text style={[styles.learnBtnLabel, styles.learnBtnLabelPinyin]}>
+                Pinyin
+              </Text>
+            </TouchableOpacity>
+          )}
         </View>
 
         {/* Expanded learning content */}
         {openSection === 'words' && (
           <View style={styles.expandedSection}>
-            <VocabularySection vocabulary={lesson.vocabulary} />
+            <VocabularySection vocabulary={lesson.vocabulary} showPinyin={lesson.show_pinyin !== false} />
           </View>
         )}
         {openSection === 'dialogue' && (
           <View style={styles.expandedSection}>
-            <DialogueSection dialogues={lesson.dialogues || []} lessonNumber={lesson.lesson} />
+            <DialogueSection dialogues={lesson.dialogues || []} lessonNumber={lesson.lesson} levelId={levelId} />
           </View>
         )}
         {openSection === 'grammar' && (
@@ -328,11 +380,13 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   learnBtnActive:  { borderColor: '#a29bfe', backgroundColor: 'rgba(162,155,254,0.1)' },
-  learnBtnPinyin:  { borderColor: '#54A0FF', backgroundColor: 'rgba(84,160,255,0.08)' },
+  learnBtnPinyin:      { borderColor: '#54A0FF', backgroundColor: 'rgba(84,160,255,0.08)' },
+  learnBtnCharacters:  { borderColor: '#1DD1A1', backgroundColor: 'rgba(29,209,161,0.08)' },
   learnBtnEmoji: { fontSize: 24 },
   learnBtnLabel: { fontSize: 14, fontWeight: '700', color: '#636e72', textAlign: 'center' },
   learnBtnLabelActive:  { color: '#a29bfe' },
-  learnBtnLabelPinyin:  { color: '#54A0FF' },
+  learnBtnLabelPinyin:      { color: '#54A0FF' },
+  learnBtnLabelCharacters:  { color: '#1DD1A1' },
 
   // Quiz banner (below stages)
   quizBanner: {

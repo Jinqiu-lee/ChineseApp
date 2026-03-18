@@ -1,0 +1,977 @@
+{
+  "lesson": 3,
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Directions",
+  "topic_chinese": "方向与位置",
+  "vocabulary": [
+    {
+      "id": "hsk2_l3_01",
+      "chinese": "件",
+      "pinyin": "jiàn",
+      "tones": [
+        4
+      ],
+      "english": "Item / [measure word for clothing]",
+      "part_of_speech": "measure word"
+    },
+    {
+      "id": "hsk2_l3_02",
+      "chinese": "颜色",
+      "pinyin": "yán sè",
+      "tones": [
+        2,
+        4
+      ],
+      "english": "Colour",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l3_03",
+      "chinese": "红",
+      "pinyin": "hóng",
+      "tones": [
+        2
+      ],
+      "english": "Red",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l3_04",
+      "chinese": "白",
+      "pinyin": "bái",
+      "tones": [
+        2
+      ],
+      "english": "White",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l3_05",
+      "chinese": "黑",
+      "pinyin": "hēi",
+      "tones": [
+        1
+      ],
+      "english": "Black",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l3_06",
+      "chinese": "大",
+      "pinyin": "dà",
+      "tones": [
+        4
+      ],
+      "english": "Big / Large",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l3_07",
+      "chinese": "小",
+      "pinyin": "xiǎo",
+      "tones": [
+        3
+      ],
+      "english": "Small / Little",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l3_08",
+      "chinese": "左边",
+      "pinyin": "zuǒ bian",
+      "tones": [
+        3,
+        0
+      ],
+      "english": "On the left / Left side",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l3_09",
+      "chinese": "右边",
+      "pinyin": "yòu bian",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "On the right / Right side",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l3_10",
+      "chinese": "旁边",
+      "pinyin": "páng biān",
+      "tones": [
+        2,
+        1
+      ],
+      "english": "Next to / Beside",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l3_11",
+      "chinese": "进",
+      "pinyin": "jìn",
+      "tones": [
+        4
+      ],
+      "english": "To enter / To come in",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l3_12",
+      "chinese": "门",
+      "pinyin": "mén",
+      "tones": [
+        2
+      ],
+      "english": "Door / Gate",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l3_p01",
+      "chinese": "左边那件红色的",
+      "pinyin": "zuǒ bian nà jiàn hóng sè de",
+      "tones": [
+        3,
+        0,
+        4,
+        4,
+        2,
+        4,
+        0
+      ],
+      "english": "That red one on the left",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p02",
+      "chinese": "什么颜色",
+      "pinyin": "shén me yán sè",
+      "tones": [
+        2,
+        0,
+        2,
+        4
+      ],
+      "english": "What colour",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p03",
+      "chinese": "进门",
+      "pinyin": "jìn mén",
+      "tones": [
+        4,
+        2
+      ],
+      "english": "Enter through the door",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p04",
+      "chinese": "旁边的门",
+      "pinyin": "páng biān de mén",
+      "tones": [
+        2,
+        1,
+        0,
+        2
+      ],
+      "english": "The door next to it",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p05",
+      "chinese": "黑色的大件",
+      "pinyin": "hēi sè de dà jiàn",
+      "tones": [
+        1,
+        4,
+        0,
+        4,
+        4
+      ],
+      "english": "A large black item",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p06",
+      "chinese": "右边的白色",
+      "pinyin": "yòu bian de bái sè",
+      "tones": [
+        4,
+        0,
+        0,
+        2,
+        4
+      ],
+      "english": "The white one on the right",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p07",
+      "chinese": "大的给他",
+      "pinyin": "dà de gěi tā",
+      "tones": [
+        4,
+        0,
+        3,
+        1
+      ],
+      "english": "Give the big one to him",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p08",
+      "chinese": "小的给我",
+      "pinyin": "xiǎo de gěi wǒ",
+      "tones": [
+        3,
+        0,
+        3,
+        3
+      ],
+      "english": "Give the small one to me",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hsk2_l3_p01",
+      "chinese": "左边那件红色的",
+      "pinyin": "zuǒ bian nà jiàn hóng sè de",
+      "tones": [
+        3,
+        0,
+        4,
+        4,
+        2,
+        4,
+        0
+      ],
+      "english": "That red one on the left",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p02",
+      "chinese": "什么颜色",
+      "pinyin": "shén me yán sè",
+      "tones": [
+        2,
+        0,
+        2,
+        4
+      ],
+      "english": "What colour",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p03",
+      "chinese": "进门",
+      "pinyin": "jìn mén",
+      "tones": [
+        4,
+        2
+      ],
+      "english": "Enter through the door",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p04",
+      "chinese": "旁边的门",
+      "pinyin": "páng biān de mén",
+      "tones": [
+        2,
+        1,
+        0,
+        2
+      ],
+      "english": "The door next to it",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p05",
+      "chinese": "黑色的大件",
+      "pinyin": "hēi sè de dà jiàn",
+      "tones": [
+        1,
+        4,
+        0,
+        4,
+        4
+      ],
+      "english": "A large black item",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p06",
+      "chinese": "右边的白色",
+      "pinyin": "yòu bian de bái sè",
+      "tones": [
+        4,
+        0,
+        0,
+        2,
+        4
+      ],
+      "english": "The white one on the right",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p07",
+      "chinese": "大的给他",
+      "pinyin": "dà de gěi tā",
+      "tones": [
+        4,
+        0,
+        3,
+        1
+      ],
+      "english": "Give the big one to him",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l3_p08",
+      "chinese": "小的给我",
+      "pinyin": "xiǎo de gěi wǒ",
+      "tones": [
+        3,
+        0,
+        3,
+        3
+      ],
+      "english": "Give the small one to me",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "左边那件红色的是我的。",
+      "pinyin": "Zuǒ bian nà jiàn hóng sè de shì wǒ de.",
+      "english": "The red one on the left is mine."
+    },
+    {
+      "chinese": "这件衣服是什么颜色的？",
+      "pinyin": "Zhè jiàn yī fu shì shén me yán sè de?",
+      "english": "What colour is this item of clothing?"
+    },
+    {
+      "chinese": "那件白色的比这件大。",
+      "pinyin": "Nà jiàn bái sè de bǐ zhè jiàn dà.",
+      "english": "That white one is bigger than this one."
+    },
+    {
+      "chinese": "请从旁边的门进来。",
+      "pinyin": "Qǐng cóng páng biān de mén jìn lái.",
+      "english": "Please enter through the door next to it."
+    },
+    {
+      "chinese": "他站在门的右边。",
+      "pinyin": "Tā zhàn zài mén de yòu bian.",
+      "english": "He is standing to the right of the door."
+    },
+    {
+      "chinese": "黑色的那件是大号还是小号？",
+      "pinyin": "Hēi sè de nà jiàn shì dà hào hái shì xiǎo hào?",
+      "english": "Is that black item a large or small size?"
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "「的」字短语 — Nominal Clause with de",
+      "explanation": "When 的 (de) follows an adjective or a modifier, it turns the phrase into a noun equivalent meaning 'the one that is…'. Structure: Adjective/Modifier + 的 = noun phrase. For example: 红色的 means 'the red one'; 我的 means 'mine'. This is used when the noun is clear from context and does not need to be repeated.",
+      "examples": [
+        {
+          "chinese": "左边那件红色的是我的。",
+          "pinyin": "Zuǒ bian nà jiàn hóng sè de shì wǒ de.",
+          "english": "The red one on the left is mine."
+        },
+        {
+          "chinese": "大的给他，小的给我。",
+          "pinyin": "Dà de gěi tā, xiǎo de gěi wǒ.",
+          "english": "Give him the big one; give me the small one."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 红色的 mean when used as a noun phrase?",
+          "type": "multiple_choice",
+          "correct": "The red one",
+          "options": [
+            "The red one",
+            "Red colour",
+            "Very red",
+            "Red door"
+          ]
+        },
+        {
+          "question": "Which sentence uses the '的' nominal phrase correctly?",
+          "type": "multiple_choice",
+          "correct": "白色的是我的。",
+          "options": [
+            "白色的是我的。",
+            "是白色我的。",
+            "我的白色是。",
+            "白色我是的。"
+          ],
+          "correct_pinyin": "Bái sè de shì wǒ de."
+        },
+        {
+          "question": "Fill in: 大___给他，小___给我。(Give him the big one; give me the small one.)",
+          "type": "multiple_choice",
+          "correct": "的 / 的",
+          "options": [
+            "的 / 的",
+            "了 / 了",
+            "着 / 着",
+            "过 / 过"
+          ]
+        },
+        {
+          "question": "How do you say 'the white one on the right'?",
+          "type": "multiple_choice",
+          "correct": "右边的白色",
+          "options": [
+            "右边的白色",
+            "左边的白色",
+            "旁边的白色",
+            "进门的白色"
+          ],
+          "option_pinyin": [
+            "yòu bian de bái sè",
+            "zuǒ bian de bái sè",
+            "páng biān de bái sè",
+            "jìn mén de bái sè"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "结构助词「着」— The Structural Particle zhe",
+      "explanation": "着 (zhe) is placed after a verb to describe an ongoing state or the manner in which an action is performed. Structure: Verb + 着. It is different from 在 + verb (which describes an action in progress). 着 often describes a continuous state: 门开着 (the door is open), 他站着 (he is standing).",
+      "examples": [
+        {
+          "chinese": "门开着，请进来。",
+          "pinyin": "Mén kāi zhe, qǐng jìn lái.",
+          "english": "The door is open; please come in."
+        },
+        {
+          "chinese": "他站着等我。",
+          "pinyin": "Tā zhàn zhe děng wǒ.",
+          "english": "He is standing waiting for me."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 着 (zhe) indicate after a verb?",
+          "type": "multiple_choice",
+          "correct": "An ongoing state or manner",
+          "options": [
+            "An ongoing state or manner",
+            "A completed action",
+            "A future action",
+            "A past repeated action"
+          ]
+        },
+        {
+          "question": "Which sentence means 'The door is open'?",
+          "type": "multiple_choice",
+          "correct": "门开着。",
+          "options": [
+            "门开着。",
+            "门开了。",
+            "门开过。",
+            "门正在开。"
+          ],
+          "correct_pinyin": "Mén kāi zhe."
+        },
+        {
+          "question": "Fill in: 她坐___看书。(She is sitting reading a book.)",
+          "type": "multiple_choice",
+          "correct": "着",
+          "options": [
+            "着",
+            "了",
+            "过",
+            "在"
+          ],
+          "option_pinyin": [
+            "zhe",
+            "le",
+            "guò",
+            "zài"
+          ]
+        },
+        {
+          "question": "Which phrase means 'enter through the door'?",
+          "type": "multiple_choice",
+          "correct": "进门",
+          "options": [
+            "进门",
+            "出门",
+            "开门",
+            "关门"
+          ],
+          "option_pinyin": [
+            "jìn mén",
+            "chū mén",
+            "kāi mén",
+            "guān mén"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "名词谓语句 — Nominal Predicate Sentence",
+      "explanation": "In Chinese, a noun or noun phrase can directly serve as the predicate of a sentence without a verb like 是 (shì). This is mainly used for time, age, price, or other measurable facts. Structure: Subject + Noun Phrase (as predicate). Example: 今天星期三。(Today is Wednesday.) Note: 是 is NOT used in these sentences.",
+      "examples": [
+        {
+          "chinese": "今天星期三。",
+          "pinyin": "Jīn tiān xīng qī sān.",
+          "english": "Today is Wednesday."
+        },
+        {
+          "chinese": "这件衣服一百块钱。",
+          "pinyin": "Zhè jiàn yī fu yī bǎi kuài qián.",
+          "english": "This item of clothing is 100 yuan."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which sentence is a correct nominal predicate sentence?",
+          "type": "multiple_choice",
+          "correct": "今天星期一。",
+          "options": [
+            "今天星期一。",
+            "今天是星期一。",
+            "今天有星期一。",
+            "今天到星期一。"
+          ],
+          "correct_pinyin": "Jīn tiān xīng qī yī."
+        },
+        {
+          "question": "What is mainly expressed with nominal predicate sentences?",
+          "type": "multiple_choice",
+          "correct": "Time, age, price, or measurable facts",
+          "options": [
+            "Time, age, price, or measurable facts",
+            "Actions and movements",
+            "Feelings and emotions",
+            "Questions"
+          ]
+        },
+        {
+          "question": "Fill in: 他___三十岁。(He is thirty years old.) — Which word is NOT needed?",
+          "type": "multiple_choice",
+          "correct": "是 is not needed",
+          "options": [
+            "是 is not needed",
+            "了 is not needed",
+            "的 is not needed",
+            "在 is not needed"
+          ]
+        },
+        {
+          "question": "What does 什么颜色 mean?",
+          "type": "multiple_choice",
+          "correct": "What colour",
+          "options": [
+            "What colour",
+            "Which size",
+            "What style",
+            "Which door"
+          ],
+          "option_pinyin": [
+            "shén me yán sè",
+            "nǎ gè dà xiǎo",
+            "shén me yàng zi",
+            "nǎ gè mén"
+          ]
+        },
+        {
+          "question": "How do you say 'give the small one to me'?",
+          "type": "multiple_choice",
+          "correct": "小的给我",
+          "options": [
+            "小的给我",
+            "大的给我",
+            "小的给他",
+            "红的给我"
+          ],
+          "option_pinyin": [
+            "xiǎo de gěi wǒ",
+            "dà de gěi wǒ",
+            "xiǎo de gěi tā",
+            "hóng de gěi wǒ"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 颜色 mean?",
+      "type": "multiple_choice",
+      "correct": "Colour",
+      "options": [
+        "Size",
+        "Colour",
+        "Price",
+        "Style"
+      ]
+    },
+    {
+      "question": "What does 件 mean?",
+      "type": "multiple_choice",
+      "correct": "Item / [measure word for clothing]",
+      "options": [
+        "Item / [measure word for clothing]",
+        "Colour",
+        "Piece of paper",
+        "Room"
+      ]
+    },
+    {
+      "question": "What does 左边 mean?",
+      "type": "multiple_choice",
+      "correct": "On the left / Left side",
+      "options": [
+        "On the right",
+        "In the middle",
+        "On the left / Left side",
+        "Behind"
+      ]
+    },
+    {
+      "question": "What does 旁边 mean?",
+      "type": "multiple_choice",
+      "correct": "Next to / Beside",
+      "options": [
+        "In front of",
+        "Behind",
+        "Next to / Beside",
+        "Far from"
+      ]
+    },
+    {
+      "question": "Which sentence means 'The red one on the left is mine'?",
+      "type": "multiple_choice",
+      "correct": "左边那件红色的是我的。",
+      "options": [
+        "左边那件红色的是我的。",
+        "右边那件红色的是我的。",
+        "旁边那件红色的是我的。",
+        "进门那件红色的是我的。"
+      ]
+    },
+    {
+      "question": "What does 进 mean?",
+      "type": "multiple_choice",
+      "correct": "To enter / To come in",
+      "options": [
+        "To exit",
+        "To enter / To come in",
+        "To stand",
+        "To sit"
+      ]
+    },
+    {
+      "question": "What colour is 黑?",
+      "type": "multiple_choice",
+      "correct": "Black",
+      "options": [
+        "Red",
+        "White",
+        "Black",
+        "Blue"
+      ]
+    },
+    {
+      "question": "What colour is 白?",
+      "type": "multiple_choice",
+      "correct": "White",
+      "options": [
+        "Red",
+        "White",
+        "Black",
+        "Yellow"
+      ]
+    },
+    {
+      "question": "What does 红色的 mean when used as a noun phrase?",
+      "type": "multiple_choice",
+      "correct": "The red one",
+      "options": [
+        "The red one",
+        "Red colour",
+        "Very red",
+        "A red thing"
+      ]
+    },
+    {
+      "question": "What does 着 indicate after a verb?",
+      "type": "multiple_choice",
+      "correct": "An ongoing state or manner",
+      "options": [
+        "Completed action",
+        "Future action",
+        "An ongoing state or manner",
+        "Past experience"
+      ]
+    },
+    {
+      "question": "What does 右边 mean?",
+      "type": "multiple_choice",
+      "correct": "On the right / Right side",
+      "options": [
+        "On the left",
+        "On the right / Right side",
+        "In the middle",
+        "Above"
+      ]
+    },
+    {
+      "question": "Which sentence is a nominal predicate sentence?",
+      "type": "multiple_choice",
+      "correct": "今天星期三。",
+      "options": [
+        "今天是星期三。",
+        "今天星期三。",
+        "今天有星期三。",
+        "今天到星期三。"
+      ]
+    },
+    {
+      "question": "What does 门 mean?",
+      "type": "multiple_choice",
+      "correct": "Door / Gate",
+      "options": [
+        "Window",
+        "Wall",
+        "Door / Gate",
+        "Floor"
+      ]
+    },
+    {
+      "question": "Which means 'The door is open'?",
+      "type": "multiple_choice",
+      "correct": "门开着。",
+      "options": [
+        "门开了。",
+        "门开过。",
+        "门开着。",
+        "门正开。"
+      ]
+    },
+    {
+      "question": "What does 大小 mean together?",
+      "type": "multiple_choice",
+      "correct": "Size",
+      "options": [
+        "Big and small",
+        "Size",
+        "Large item",
+        "Small door"
+      ]
+    },
+    {
+      "question": "How do you say 'that red one on the left'?",
+      "type": "multiple_choice",
+      "correct": "左边那件红色的",
+      "options": [
+        "左边那件红色的",
+        "右边那件红色的",
+        "旁边那件黑色的",
+        "进门那件白色的"
+      ]
+    },
+    {
+      "question": "What does 右边的白色 mean?",
+      "type": "multiple_choice",
+      "correct": "The white one on the right",
+      "options": [
+        "The white one on the right",
+        "The white one on the left",
+        "The black one on the right",
+        "The red one on the right"
+      ]
+    },
+    {
+      "question": "How do you say 'give the big one to him'?",
+      "type": "multiple_choice",
+      "correct": "大的给他",
+      "options": [
+        "大的给他",
+        "小的给他",
+        "大的给我",
+        "红的给他"
+      ]
+    },
+    {
+      "question": "What does 黑色的大件 mean?",
+      "type": "multiple_choice",
+      "correct": "A large black item",
+      "options": [
+        "A large black item",
+        "A small black item",
+        "A large red item",
+        "A black door"
+      ]
+    },
+    {
+      "question": "Fill in: 你从___门___来。(Enter through the door next to it.)",
+      "type": "multiple_choice",
+      "correct": "旁边的 / 进",
+      "options": [
+        "旁边的 / 进",
+        "左边的 / 进",
+        "大的 / 进",
+        "红色的 / 进"
+      ]
+    },
+    {
+      "question": "What does 左边那件红色的 mean?",
+      "type": "multiple_choice",
+      "correct": "That red one on the left",
+      "options": [
+        "That red one on the left",
+        "That black one on the left",
+        "The red one on the right",
+        "The red door on the left"
+      ]
+    },
+    {
+      "question": "What does 黑色的大件 mean?",
+      "type": "multiple_choice",
+      "correct": "A large black item",
+      "options": [
+        "A large black item",
+        "A small black item",
+        "A large white item",
+        "A black door"
+      ]
+    },
+    {
+      "question": "How do you say 'give the big one to him'?",
+      "type": "multiple_choice",
+      "correct": "大的给他",
+      "options": [
+        "大的给他",
+        "小的给他",
+        "大的给我",
+        "红的给他"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Shopping for Clothes",
+      "title_chinese": "买衣服",
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "顾客",
+          "gender": "female"
+        },
+        "B": {
+          "name": "服务员",
+          "role": "店员",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "请问，左边那件红色的是多少钱？",
+          "pinyin": "Qǐng wèn, zuǒ bian nà jiàn hóng sè de shì duō shǎo qián?",
+          "english": "Excuse me, how much is that red one on the left?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "左边那件红色的是一百块。",
+          "pinyin": "Zuǒ bian nà jiàn hóng sè de shì yī bǎi kuài.",
+          "english": "The red one on the left is 100 yuan."
+        },
+        {
+          "speaker": "A",
+          "chinese": "有白色的吗？我想要白色的。",
+          "pinyin": "Yǒu bái sè de ma? Wǒ xiǎng yào bái sè de.",
+          "english": "Do you have a white one? I'd like the white one."
+        },
+        {
+          "speaker": "B",
+          "chinese": "有，白色的在右边，旁边还有黑色的。",
+          "pinyin": "Yǒu, bái sè de zài yòu bian, páng biān hái yǒu hēi sè de.",
+          "english": "Yes, the white one is on the right; there's also a black one next to it."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我要大号的，请问从哪个门进去？",
+          "pinyin": "Wǒ yào dà hào de, qǐng wèn cóng nǎ gè mén jìn qù?",
+          "english": "I want the large size. Which door do I enter from?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "从旁边那个门进去，里面有大小两种。",
+          "pinyin": "Cóng páng biān nà gè mén jìn qù, lǐ miàn yǒu dà xiǎo liǎng zhǒng.",
+          "english": "Enter through the door next to it; inside there are two sizes."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Describing a Room",
+      "title_chinese": "描述房间",
+      "speakers": {
+        "A": {
+          "name": "小明",
+          "role": "房客",
+          "gender": "male"
+        },
+        "B": {
+          "name": "大卫",
+          "role": "朋友",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "我的房间门开着，你进来吧。",
+          "pinyin": "Wǒ de fáng jiān mén kāi zhe, nǐ jìn lái ba.",
+          "english": "My room door is open; come on in."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好的，你的书在左边还是右边？",
+          "pinyin": "Hǎo de, nǐ de shū zài zuǒ bian hái shì yòu bian?",
+          "english": "Okay, is your book on the left or the right?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "在桌子的右边，旁边有一件黑色的衣服。",
+          "pinyin": "Zài zhuō zi de yòu bian, páng biān yǒu yī jiàn hēi sè de yī fu.",
+          "english": "On the right side of the desk; there's a black piece of clothing next to it."
+        },
+        {
+          "speaker": "B",
+          "chinese": "大的还是小的？",
+          "pinyin": "Dà de hái shì xiǎo de?",
+          "english": "The big one or the small one?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "大的，是我新买的红色衣服旁边那件。",
+          "pinyin": "Dà de, shì wǒ xīn mǎi de hóng sè yī fu páng biān nà jiàn.",
+          "english": "The big one — it's the one next to the red clothes I just bought."
+        }
+      ]
+    }
+  ]
+}

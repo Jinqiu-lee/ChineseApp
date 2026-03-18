@@ -1,0 +1,679 @@
+{
+  "lesson": 15,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "General Expressions",
+  "topic_chinese": "其他都还行没问题",
+  "vocabulary": [
+    {
+      "id": "hsk3_l15_01",
+      "chinese": "其他",
+      "pinyin": "qí tā",
+      "tones": [2, 1],
+      "english": "Other / The rest",
+      "part_of_speech": "pronoun/adjective"
+    },
+    {
+      "id": "hsk3_l15_02",
+      "chinese": "差不多",
+      "pinyin": "chà bu duō",
+      "tones": [4, 0, 1],
+      "english": "Almost / About the same",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l15_03",
+      "chinese": "基本上",
+      "pinyin": "jī běn shàng",
+      "tones": [1, 3, 4],
+      "english": "Basically / Essentially",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l15_04",
+      "chinese": "几乎",
+      "pinyin": "jī hū",
+      "tones": [1, 1],
+      "english": "Almost / Nearly",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l15_05",
+      "chinese": "大概",
+      "pinyin": "dà gài",
+      "tones": [4, 4],
+      "english": "Probably / Approximately",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l15_06",
+      "chinese": "不但",
+      "pinyin": "bù dàn",
+      "tones": [4, 4],
+      "english": "Not only",
+      "part_of_speech": "conjunction"
+    },
+    {
+      "id": "hsk3_l15_07",
+      "chinese": "而且",
+      "pinyin": "ér qiě",
+      "tones": [2, 3],
+      "english": "Moreover / And also",
+      "part_of_speech": "conjunction"
+    },
+    {
+      "id": "hsk3_l15_08",
+      "chinese": "反正",
+      "pinyin": "fǎn zhèng",
+      "tones": [3, 4],
+      "english": "Anyway / In any case",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l15_09",
+      "chinese": "其实",
+      "pinyin": "qí shí",
+      "tones": [2, 2],
+      "english": "Actually / In fact",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l15_10",
+      "chinese": "还行",
+      "pinyin": "hái xíng",
+      "tones": [2, 2],
+      "english": "Not bad / OK / Acceptable",
+      "part_of_speech": "adjective/phrase"
+    },
+    {
+      "id": "hsk3_l15_11",
+      "chinese": "没问题",
+      "pinyin": "méi wèn tí",
+      "tones": [2, 4, 2],
+      "english": "No problem",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l15_12",
+      "chinese": "总的来说",
+      "pinyin": "zǒng de lái shuō",
+      "tones": [3, 0, 2, 1],
+      "english": "Generally speaking",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l15_p01",
+      "chinese": "其他都还行",
+      "pinyin": "qí tā dōu hái xíng",
+      "tones": [2, 1, 1, 2, 2],
+      "english": "The rest are all fine",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l15_p02",
+      "chinese": "基本上没问题",
+      "pinyin": "jī běn shàng méi wèn tí",
+      "tones": [1, 3, 4, 2, 4, 2],
+      "english": "Basically no problem",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l15_p03",
+      "chinese": "差不多一样",
+      "pinyin": "chà bu duō yī yàng",
+      "tones": [4, 0, 1, 1, 4],
+      "english": "Almost the same",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l15_p04",
+      "chinese": "其实挺好的",
+      "pinyin": "qí shí tǐng hǎo de",
+      "tones": [2, 2, 3, 3, 0],
+      "english": "Actually pretty good",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l15_p05",
+      "chinese": "反正都行",
+      "pinyin": "fǎn zhèng dōu xíng",
+      "tones": [3, 4, 1, 2],
+      "english": "Anyway, anything works",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l15_p06",
+      "chinese": "几乎每天",
+      "pinyin": "jī hū měi tiān",
+      "tones": [1, 1, 3, 1],
+      "english": "Almost every day",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l15_p07",
+      "chinese": "不但...而且",
+      "pinyin": "bù dàn... ér qiě",
+      "tones": [4, 4, 2, 3],
+      "english": "Not only...but also",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l15_p08",
+      "chinese": "总的来说不错",
+      "pinyin": "zǒng de lái shuō bú cuò",
+      "tones": [3, 0, 2, 1, 2, 4],
+      "english": "Generally speaking, not bad",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "总的来说，这次旅行的准备基本上没问题，其他都还行。",
+      "pinyin": "Zǒng de lái shuō, zhè cì lǚ xíng de zhǔn bèi jī běn shàng méi wèn tí, qí tā dōu hái xíng.",
+      "english": "Generally speaking, the preparations for this trip are basically fine — the rest are all OK too."
+    },
+    {
+      "chinese": "她不但聪明，而且非常努力，几乎每天都在学习。",
+      "pinyin": "Tā bù dàn cōng míng, ér qiě fēi cháng nǔ lì, jī hū měi tiān dōu zài xué xí.",
+      "english": "She is not only smart but also very hardworking — she studies almost every day."
+    },
+    {
+      "chinese": "其实这个问题差不多一样，反正都能解决。",
+      "pinyin": "Qí shí zhè ge wèn tí chà bu duō yī yàng, fǎn zhèng dōu néng jiě jué.",
+      "english": "Actually this problem is about the same — anyway it can all be solved."
+    },
+    {
+      "chinese": "大概还有三个人没来，其他的人都到了，基本上可以开始了。",
+      "pinyin": "Dà gài hái yǒu sān ge rén méi lái, qí tā de rén dōu dào le, jī běn shàng kě yǐ kāi shǐ le.",
+      "english": "About three people haven't arrived yet — the others are all here, so we can basically start."
+    },
+    {
+      "chinese": "反正我哪里都行，你决定就好，没问题的。",
+      "pinyin": "Fǎn zhèng wǒ nǎ lǐ dōu xíng, nǐ jué dìng jiù hǎo, méi wèn tí de.",
+      "english": "Anyway I'm fine with anywhere — you decide, no problem."
+    },
+    {
+      "chinese": "他几乎什么都会，不但会做饭，而且还会修车，其实挺厉害的。",
+      "pinyin": "Tā jī hū shén me dōu huì, bù dàn huì zuò fàn, ér qiě hái huì xiū chē, qí shí tǐng lì hài de.",
+      "english": "He can do almost everything — not only can he cook, but he can also fix cars. Actually he's pretty impressive."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "几乎 / 基本上 / 差不多 — Near-totality adverbs",
+      "explanation": "Three similar but distinct adverbs of near-totality. 几乎 = almost (very close to 100%, often paired with 都 or 没): 几乎所有人都来了 = Almost everyone came. 基本上 = basically / essentially (most, but acknowledges some exceptions): 基本上完成了 = basically finished. 差不多 = approximately / about the same: 差不多好了 = almost better. 差不多 can also compare two things: A和B差不多 = A and B are about the same. 几乎 is the strongest (closest to 100%); 差不多 is the most approximate.",
+      "examples": [
+        {
+          "chinese": "我几乎每天都锻炼。",
+          "pinyin": "Wǒ jī hū měi tiān dōu duàn liàn.",
+          "english": "I exercise almost every day."
+        },
+        {
+          "chinese": "这件事基本上解决了，其他没问题。",
+          "pinyin": "Zhè jiàn shì jī běn shàng jiě jué le, qí tā méi wèn tí.",
+          "english": "This matter is basically resolved — the rest is fine."
+        },
+        {
+          "chinese": "他和我差不多高。",
+          "pinyin": "Tā hé wǒ chà bu duō gāo.",
+          "english": "He and I are about the same height."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which adverb is closest in meaning to 'almost 100%' and often pairs with 都?",
+          "type": "multiple_choice",
+          "correct": "几乎",
+          "options": ["几乎", "基本上", "差不多", "大概"],
+          "option_pinyin": ["jī hū", "jī běn shàng", "chà bu duō", "dà gài"]
+        },
+        {
+          "question": "Fill in: 这个项目___完成了，还有一点小细节。",
+          "type": "multiple_choice",
+          "correct": "基本上",
+          "options": ["基本上", "几乎", "差不多", "反正"],
+          "option_pinyin": ["jī běn shàng", "jī hū", "chà bu duō", "fǎn zhèng"]
+        },
+        {
+          "question": "What does 他和我差不多高 mean?",
+          "type": "multiple_choice",
+          "correct": "He and I are about the same height.",
+          "options": [
+            "He and I are about the same height.",
+            "He is much taller than me.",
+            "He is almost taller than me.",
+            "We are both very tall."
+          ]
+        },
+        {
+          "question": "Which sentence uses 几乎 correctly?",
+          "type": "multiple_choice",
+          "correct": "她几乎每天都练习汉语。",
+          "options": [
+            "她几乎每天都练习汉语。",
+            "她每天几乎练习都汉语。",
+            "几乎她每天练习汉语都。",
+            "她练习几乎汉语每天。"
+          ],
+          "option_pinyin": [
+            "Tā jī hū měi tiān dōu liàn xí hàn yǔ.",
+            "Tā měi tiān jī hū liàn xí dōu hàn yǔ.",
+            "Jī hū tā měi tiān liàn xí hàn yǔ dōu.",
+            "Tā liàn xí jī hū hàn yǔ měi tiān."
+          ]
+        },
+        {
+          "question": "Which is the best translation of 这两个地方差不多一样?",
+          "type": "multiple_choice",
+          "correct": "These two places are about the same.",
+          "options": [
+            "These two places are about the same.",
+            "These two places are completely identical.",
+            "These two places are almost nothing alike.",
+            "One of these places is much better."
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "不但...而且... — Not only...but also...",
+      "explanation": "Subject + 不但 + A，而且 + (还) + B. The second part (而且) adds a point that goes beyond A. The B element is typically stronger or more impressive than A. 她不但聪明，而且非常努力 = She is not only smart but also very hardworking. You can replace 不但 with 不仅 for a more formal register. Adding 还 before B makes it slightly more colloquial. Both clauses usually share the same subject.",
+      "examples": [
+        {
+          "chinese": "她不但聪明，而且非常努力。",
+          "pinyin": "Tā bù dàn cōng míng, ér qiě fēi cháng nǔ lì.",
+          "english": "She is not only smart but also very hardworking."
+        },
+        {
+          "chinese": "这里不但风景好，而且空气也很新鲜。",
+          "pinyin": "Zhè lǐ bù dàn fēng jǐng hǎo, ér qiě kōng qì yě hěn xīn xiān.",
+          "english": "Not only is the scenery here beautiful, but the air is also very fresh."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: 他不但会说英语，___会说法语。",
+          "type": "multiple_choice",
+          "correct": "而且",
+          "options": ["而且", "但是", "所以", "因为"],
+          "option_pinyin": ["ér qiě", "dàn shì", "suǒ yǐ", "yīn wèi"]
+        },
+        {
+          "question": "Which sentence correctly uses 不但...而且?",
+          "type": "multiple_choice",
+          "correct": "他不但帮了我，而且还教了我很多。",
+          "options": [
+            "他不但帮了我，而且还教了我很多。",
+            "他而且帮了我，不但还教了我很多。",
+            "不但他帮了我，而且教了我很多他。",
+            "他帮了我不但，而且教了我很多。"
+          ],
+          "option_pinyin": [
+            "Tā bù dàn bāng le wǒ, ér qiě hái jiāo le wǒ hěn duō.",
+            "Tā ér qiě bāng le wǒ, bù dàn hái jiāo le wǒ hěn duō.",
+            "Bù dàn tā bāng le wǒ, ér qiě jiāo le wǒ hěn duō tā.",
+            "Tā bāng le wǒ bù dàn, ér qiě jiāo le wǒ hěn duō."
+          ]
+        },
+        {
+          "question": "What can replace 不但 for a more formal register?",
+          "type": "multiple_choice",
+          "correct": "不仅",
+          "options": ["不仅", "虽然", "因为", "如果"],
+          "option_pinyin": ["bù jǐn", "suī rán", "yīn wèi", "rú guǒ"]
+        },
+        {
+          "question": "Translate: 这道菜不但好看，而且非常好吃。",
+          "type": "multiple_choice",
+          "correct": "This dish is not only beautiful but also very delicious.",
+          "options": [
+            "This dish is not only beautiful but also very delicious.",
+            "This dish looks good but doesn't taste good.",
+            "This dish is either beautiful or delicious.",
+            "This dish is beautiful, but it's not very delicious."
+          ]
+        },
+        {
+          "question": "In 不但...而且, which clause is typically more impressive or adds more information?",
+          "type": "multiple_choice",
+          "correct": "The 而且 clause (the second part)",
+          "options": [
+            "The 而且 clause (the second part)",
+            "The 不但 clause (the first part)",
+            "Both clauses are always equal",
+            "The clause that comes after 还"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "疑问代词的灵活运用 — Flexible interrogative pronouns",
+      "explanation": "Question words used with 都 or 也 become indefinite pronouns meaning 'every-' or 'any-'. Positive sentences with 都: 他什么都吃 = He eats everything. 她哪里都去 = She goes everywhere. 谁都可以来 = Anyone can come. Negative sentences with 也: 我什么也不吃 = I'm not eating anything. 他哪里也不想去 = He doesn't want to go anywhere. 反正 often appears with these patterns: 反正我哪里都行 = Anyway, anywhere works for me.",
+      "examples": [
+        {
+          "chinese": "她什么都知道，真厉害。",
+          "pinyin": "Tā shén me dōu zhī dào, zhēn lì hài.",
+          "english": "She knows everything — truly impressive."
+        },
+        {
+          "chinese": "反正我哪里都行，你决定吧。",
+          "pinyin": "Fǎn zhèng wǒ nǎ lǐ dōu xíng, nǐ jué dìng ba.",
+          "english": "Anyway, I'm fine with anywhere — you decide."
+        },
+        {
+          "chinese": "其他人谁都可以来参加。",
+          "pinyin": "Qí tā rén shéi dōu kě yǐ lái cān jiā.",
+          "english": "Anyone else is welcome to come and join."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 他什么都吃 mean?",
+          "type": "multiple_choice",
+          "correct": "He eats everything.",
+          "options": ["He eats everything.", "He eats something.", "He eats nothing.", "What does he eat?"],
+          "option_pinyin": ["Tā shén me dōu chī.", "Tā chī yī xiē.", "Tā shén me yě bù chī.", "Tā chī shén me?"]
+        },
+        {
+          "question": "Fill in: 我今天哪里___不想去，就想待在家里。",
+          "type": "multiple_choice",
+          "correct": "也",
+          "options": ["也", "都", "还", "很"],
+          "option_pinyin": ["yě", "dōu", "hái", "hěn"]
+        },
+        {
+          "question": "Which sentence means 'Anyone can participate'?",
+          "type": "multiple_choice",
+          "correct": "谁都可以参加。",
+          "options": ["谁都可以参加。", "谁也可以参加。", "没有谁可以参加。", "谁参加都不可以。"],
+          "option_pinyin": [
+            "Shéi dōu kě yǐ cān jiā.",
+            "Shéi yě kě yǐ cān jiā.",
+            "Méi yǒu shéi kě yǐ cān jiā.",
+            "Shéi cān jiā dōu bù kě yǐ."
+          ]
+        },
+        {
+          "question": "What is the difference between 什么都 and 什么也不?",
+          "type": "multiple_choice",
+          "correct": "什么都 = everything (positive); 什么也不 = nothing (negative)",
+          "options": [
+            "什么都 = everything (positive); 什么也不 = nothing (negative)",
+            "什么都 = nothing (negative); 什么也不 = everything (positive)",
+            "They both mean 'everything' in different registers",
+            "什么都 is a question; 什么也不 is an answer"
+          ]
+        },
+        {
+          "question": "Translate: 反正她做什么都很好。",
+          "type": "multiple_choice",
+          "correct": "Anyway, everything she does is great.",
+          "options": [
+            "Anyway, everything she does is great.",
+            "She does everything, but not well.",
+            "She does nothing great.",
+            "She doesn't want to do anything."
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 其他 mean?",
+      "type": "multiple_choice",
+      "correct": "Other / The rest",
+      "options": ["Other / The rest", "Actually", "Anyway", "Almost"]
+    },
+    {
+      "question": "What does 差不多 mean?",
+      "type": "multiple_choice",
+      "correct": "Almost / About the same",
+      "options": ["Almost / About the same", "Not at all", "Basically", "No problem"]
+    },
+    {
+      "question": "What does 基本上 mean?",
+      "type": "multiple_choice",
+      "correct": "Basically / Essentially",
+      "options": ["Basically / Essentially", "Almost 100%", "Approximately", "Actually"]
+    },
+    {
+      "question": "What does 几乎 mean?",
+      "type": "multiple_choice",
+      "correct": "Almost / Nearly",
+      "options": ["Almost / Nearly", "Probably", "Anyway", "Actually"]
+    },
+    {
+      "question": "What does 大概 mean?",
+      "type": "multiple_choice",
+      "correct": "Probably / Approximately",
+      "options": ["Probably / Approximately", "Definitely", "Almost", "Obviously"]
+    },
+    {
+      "question": "What does 反正 mean?",
+      "type": "multiple_choice",
+      "correct": "Anyway / In any case",
+      "options": ["Anyway / In any case", "Not only", "Actually", "Moreover"]
+    },
+    {
+      "question": "What does 其实 mean?",
+      "type": "multiple_choice",
+      "correct": "Actually / In fact",
+      "options": ["Anyway", "Actually / In fact", "Basically", "Not only"]
+    },
+    {
+      "question": "What does 还行 mean?",
+      "type": "multiple_choice",
+      "correct": "Not bad / OK / Acceptable",
+      "options": ["Not bad / OK / Acceptable", "Very good", "Terrible", "Impossible"]
+    },
+    {
+      "question": "What does 没问题 mean?",
+      "type": "multiple_choice",
+      "correct": "No problem",
+      "options": ["No problem", "Big problem", "What's the problem?", "Some problems"]
+    },
+    {
+      "question": "What does 总的来说 mean?",
+      "type": "multiple_choice",
+      "correct": "Generally speaking",
+      "options": ["Generally speaking", "As a result", "On the other hand", "In the beginning"]
+    },
+    {
+      "question": "Fill in: 她不但会唱歌，___会弹钢琴。",
+      "type": "multiple_choice",
+      "correct": "而且",
+      "options": ["而且", "但是", "因为", "所以"]
+    },
+    {
+      "question": "Which sentence means 'He knows everything'?",
+      "type": "multiple_choice",
+      "correct": "他什么都知道。",
+      "options": ["他什么都知道。", "他不知道什么。", "他什么也不知道。", "他知道什么？"]
+    },
+    {
+      "question": "Which adverb is used for the closest to 100% approximation?",
+      "type": "multiple_choice",
+      "correct": "几乎",
+      "options": ["几乎", "大概", "差不多", "基本上"]
+    },
+    {
+      "question": "Fill in: 其他的事___没问题，你放心吧。",
+      "type": "multiple_choice",
+      "correct": "基本上",
+      "options": ["基本上", "反正", "其实", "差不多"]
+    },
+    {
+      "question": "Translate: 总的来说不错，其他都还行。",
+      "type": "multiple_choice",
+      "correct": "Generally speaking, not bad — the rest are all fine.",
+      "options": [
+        "Generally speaking, not bad — the rest are all fine.",
+        "Everything is perfect — nothing is wrong.",
+        "Generally it's bad — there are many problems.",
+        "The rest are bad — only one thing is fine."
+      ]
+    },
+    {
+      "question": "What does 几乎每天 mean?",
+      "type": "multiple_choice",
+      "correct": "Almost every day",
+      "options": ["Almost every day", "Every single day", "Once a day", "Several days a week"]
+    },
+    {
+      "question": "Translate: 其实挺好的，你不用担心。",
+      "type": "multiple_choice",
+      "correct": "Actually it's pretty good — you don't need to worry.",
+      "options": [
+        "Actually it's pretty good — you don't need to worry.",
+        "It's really bad — you should worry.",
+        "You don't need it — it's fine.",
+        "It's basically the same as before."
+      ]
+    },
+    {
+      "question": "Which sentence correctly uses 不但...而且?",
+      "type": "multiple_choice",
+      "correct": "他不但聪明，而且很努力。",
+      "options": [
+        "他不但聪明，而且很努力。",
+        "他而且聪明，不但很努力。",
+        "他聪明不但，而且努力。",
+        "他不但，聪明而且很努力。"
+      ]
+    },
+    {
+      "question": "What does 反正都行 mean?",
+      "type": "multiple_choice",
+      "correct": "Anyway, anything works",
+      "options": ["Anyway, anything works", "Nothing works at all", "Only one option is OK", "It depends on the situation"]
+    },
+    {
+      "question": "Translate: 差不多一样，基本上没问题。",
+      "type": "multiple_choice",
+      "correct": "Almost the same — basically no problem.",
+      "options": [
+        "Almost the same — basically no problem.",
+        "Completely different — there are many problems.",
+        "A little different — there are some issues.",
+        "Basically the same — definitely a problem."
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Checking Trip Plans",
+      "title_chinese": "确认旅行计划",
+      "speakers": {
+        "A": {
+          "name": "小明",
+          "role": "朋友",
+          "gender": "male"
+        },
+        "B": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小红，我们去北京旅行的事，你都准备好了吗？",
+          "pinyin": "Xiǎo Hóng, wǒ men qù Běi jīng lǚ xíng de shì, nǐ dōu zhǔn bèi hǎo le ma?",
+          "english": "Xiao Hong, have you got everything ready for our trip to Beijing?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "基本上没问题！机票和酒店都订好了，其他的事差不多也好了。",
+          "pinyin": "Jī běn shàng méi wèn tí! Jī piào hé jiǔ diàn dōu dìng hǎo le, qí tā de shì chà bu duō yě hǎo le.",
+          "english": "Basically no problem! The flights and hotel are all booked — the rest is almost sorted too."
+        },
+        {
+          "speaker": "A",
+          "chinese": "太好了！那行程安排呢？我们去哪里，你有计划吗？",
+          "pinyin": "Tài hǎo le! Nà xíng chéng ān pái ne? Wǒ men qù nǎ lǐ, nǐ yǒu jì huà ma?",
+          "english": "Great! What about the itinerary? Do you have a plan for where we'll go?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "反正我哪里都行，你决定就好。其实故宫不但很有名，而且门票也不贵。",
+          "pinyin": "Fǎn zhèng wǒ nǎ lǐ dōu xíng, nǐ jué dìng jiù hǎo. Qí shí gù gōng bù dàn hěn yǒu míng, ér qiě mén piào yě bù guì.",
+          "english": "Anyway I'm fine with anywhere — you decide. Actually the Forbidden City is not only very famous but the tickets are also not expensive."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好！那我们几乎每天都安排一个景点。总的来说这次旅行应该很棒！",
+          "pinyin": "Hǎo! Nà wǒ men jī hū měi tiān dōu ān pái yī ge jǐng diǎn. Zǒng de lái shuō zhè cì lǚ xíng yīng gāi hěn bàng!",
+          "english": "Great! Then let's plan one attraction almost every day. Generally speaking, this trip should be wonderful!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "总的来说不错！其他的细节我还要再检查一下，但大概没问题。",
+          "pinyin": "Zǒng de lái shuō bú cuò! Qí tā de xì jié wǒ hái yào zài jiǎn chá yī xià, dàn dà gài méi wèn tí.",
+          "english": "Generally speaking, not bad! I still need to double-check some other details, but it's probably fine."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "End of Term Review",
+      "title_chinese": "学期末总结",
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "学生",
+          "gender": "female"
+        },
+        "B": {
+          "name": "李老师",
+          "role": "老师",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "李老师，这个学期我的表现怎么样？",
+          "pinyin": "Lǐ lǎo shī, zhè ge xué qī wǒ de biǎo xiàn zěn me yàng?",
+          "english": "Teacher Li, how was my performance this term?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "总的来说不错！你不但进步了很多，而且几乎每次作业都完成得很好。",
+          "pinyin": "Zǒng de lái shuō bú cuò! Nǐ bù dàn jìn bù le hěn duō, ér qiě jī hū měi cì zuò yè dōu wán chéng de hěn hǎo.",
+          "english": "Generally speaking, not bad! Not only have you improved a lot, but you also completed almost every assignment very well."
+        },
+        {
+          "speaker": "A",
+          "chinese": "谢谢老师！其实我觉得我的口语还行，但是写作还有一些问题。",
+          "pinyin": "Xiè xie lǎo shī! Qí shí wǒ jué de wǒ de kǒu yǔ hái xíng, dàn shi xiě zuò hái yǒu yī xiē wèn tí.",
+          "english": "Thank you, Teacher! Actually I think my speaking is OK, but my writing still has some issues."
+        },
+        {
+          "speaker": "B",
+          "chinese": "你说得对。写作基本上没问题，但其他方面差不多都很好了。",
+          "pinyin": "Nǐ shuō de duì. Xiě zuò jī běn shàng méi wèn tí, dàn qí tā fāng miàn chà bu duō dōu hěn hǎo le.",
+          "english": "You're right. Writing is basically fine, but the other areas are almost all very good now."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那下学期我应该怎么办？反正我什么都想提高。",
+          "pinyin": "Nà xià xué qī wǒ yīng gāi zěn me bàn? Fǎn zhèng wǒ shén me dōu xiǎng tí gāo.",
+          "english": "Then what should I do next term? Anyway I want to improve everything."
+        },
+        {
+          "speaker": "B",
+          "chinese": "大概每周多写一篇文章就可以了。你这样努力，下学期肯定没问题！",
+          "pinyin": "Dà gài měi zhōu duō xiě yī piān wén zhāng jiù kě yǐ le. Nǐ zhè yàng nǔ lì, xià xué qī kěn dìng méi wèn tí!",
+          "english": "Probably just write one extra article per week. Working this hard, you'll definitely have no problems next term!"
+        }
+      ]
+    }
+  ]
+}

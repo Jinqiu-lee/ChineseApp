@@ -76,34 +76,34 @@
         "rule": "The written form always shows yī, but pronunciation changes by context",
         "examples": [
           {
-            "pinyin": "yī gè",
-            "note": "yī + tone 4 → spoken: yí gè (one, a measure word)",
-            "audio_key": "yi1"
+            "pinyin": "yí gè",
+            "note": "yī + tone 4 → yí (one, a measure word)",
+            "audio_key": "yi2_ge4"
           },
           {
-            "pinyin": "yī tiān",
-            "note": "yī + tone 1 → spoken: yì tiān (one day)",
-            "audio_key": "yi1"
+            "pinyin": "yì tiān",
+            "note": "yī + tone 1 → yì (one day)",
+            "audio_key": "yi4_tian1"
           },
           {
-            "pinyin": "yī nián",
-            "note": "yī + tone 2 → spoken: yì nián (one year)",
-            "audio_key": "yi1"
+            "pinyin": "yì qiān",
+            "note": "yī + tone 1 → yì (one thousand)",
+            "audio_key": "yi4_qian1"
           },
           {
-            "pinyin": "yī qǐ",
-            "note": "yī + tone 3 → spoken: yì qǐ (together)",
-            "audio_key": "yi1"
+            "pinyin": "yì qǐ",
+            "note": "yī + tone 3 → yì (together)",
+            "audio_key": "yi4_qi3"
           },
           {
             "pinyin": "dì yī",
             "note": "yī at phrase-end stays yī (first)",
-            "audio_key": "yi1"
+            "audio_key": "di4_yi1"
           },
           {
             "pinyin": "shí yī",
             "note": "yī at phrase-end stays yī (eleven)",
-            "audio_key": "yi1"
+            "audio_key": "shi2_yi1"
           }
         ]
       },
@@ -421,7 +421,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T4, 一 rises to 2nd tone"
+      "hint": "Before T4, 一 rises to 2nd tone",
+      "pinyin_hint": "yī + gè"
     },
     {
       "type": "sandhi_choice",
@@ -433,7 +434,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T1/2/3, 一 falls to 4th tone"
+      "hint": "Before T1/2/3, 一 falls to 4th tone",
+      "pinyin_hint": "yī + tiān"
     },
     {
       "type": "sandhi_choice",
@@ -445,7 +447,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T4, 不 rises to 2nd tone"
+      "hint": "Before T4, 不 rises to 2nd tone",
+      "pinyin_hint": "bù + duì"
     },
     {
       "type": "sandhi_choice",
@@ -457,7 +460,8 @@
         "3",
         "4"
       ],
-      "hint": "Before non-T4, 不 stays 4th tone"
+      "hint": "Before non-T4, 不 stays 4th tone",
+      "pinyin_hint": "bù + hǎo"
     },
     {
       "type": "sandhi_choice",
@@ -469,7 +473,8 @@
         "3",
         "4"
       ],
-      "hint": "Standalone 一 keeps 1st tone"
+      "hint": "Standalone 一 keeps 1st tone",
+      "pinyin_hint": "dì yī"
     },
     {
       "type": "sandhi_choice",
@@ -481,7 +486,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T3, 一→4th tone"
+      "hint": "Before T3, 一→4th tone",
+      "pinyin_hint": "yī + qǐ"
     },
     {
       "type": "sandhi_choice",
@@ -493,7 +499,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T4, 不→2nd tone"
+      "hint": "Before T4, 不→2nd tone",
+      "pinyin_hint": "bù + shì"
     },
     {
       "type": "sandhi_choice",
@@ -505,7 +512,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T2, 一→4th tone"
+      "hint": "Before T2, 一→4th tone",
+      "pinyin_hint": "yī + nián"
     },
     {
       "type": "sandhi_choice",
@@ -517,7 +525,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T2, 不 stays 4th"
+      "hint": "Before T2, 不 stays 4th",
+      "pinyin_hint": "bù + lái"
     },
     {
       "type": "sandhi_choice",
@@ -529,7 +538,8 @@
         "3",
         "4"
       ],
-      "hint": "Standalone/end 一 keeps 1st tone"
+      "hint": "Standalone/end 一 keeps 1st tone",
+      "pinyin_hint": "shí yī"
     },
     {
       "type": "visual_tone",
@@ -598,7 +608,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T4, 一 rises"
+      "hint": "Before T4, 一 rises",
+      "pinyin_hint": "yī + gè"
     },
     {
       "type": "sandhi_choice",
@@ -610,7 +621,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T1, 一 falls"
+      "hint": "Before T1, 一 falls",
+      "pinyin_hint": "yī + tiān"
     },
     {
       "type": "sandhi_choice",
@@ -622,7 +634,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T4, 不 rises"
+      "hint": "Before T4, 不 rises",
+      "pinyin_hint": "bù + duì"
     },
     {
       "type": "sandhi_choice",
@@ -634,7 +647,8 @@
         "3",
         "4"
       ],
-      "hint": "Before T3, 不 stays"
+      "hint": "Before T3, 不 stays",
+      "pinyin_hint": "bù + hǎo"
     },
     {
       "type": "sandhi_choice",
@@ -646,7 +660,8 @@
         "3",
         "4"
       ],
-      "hint": "Standalone stays 1st"
+      "hint": "Standalone stays 1st",
+      "pinyin_hint": "dì yī"
     },
     {
       "type": "visual_tone",
@@ -702,6 +717,41 @@
         "3",
         "4"
       ]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yí gè",
+      "audio_key": "yi2_ge4",
+      "correct": "2",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "yì tiān",
+      "audio_key": "yi4_tian1",
+      "correct": "4",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "bú duì",
+      "audio_key": "bu2_dui4",
+      "correct": "2",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "bù hǎo",
+      "audio_key": "bu4_hao3",
+      "correct": "4",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "dì yī",
+      "audio_key": "di4_yi1",
+      "correct": "1",
+      "choices": ["1", "2", "3", "4"]
     }
   ]
 }

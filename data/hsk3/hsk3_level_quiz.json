@@ -1,0 +1,655 @@
+{
+  "level": "HSK3",
+  "quiz_type": "level_final_assessment",
+  "title": "HSK3 Level Final Quiz",
+  "description": "Comprehensive assessment covering all vocabulary, grammar, and sentence patterns from HSK3 Lessons 1-15",
+  "passing_score": 70,
+  "total_questions": 45,
+  "format": "chinese_characters_with_pinyin",
+  "questions": [
+    {
+      "id": "hsk3_final_01",
+      "question": "我___去图书馆，顺便还书。",
+      "question_pinyin": "Wǒ ___ qù tú shū guǎn, shùn biàn huán shū.",
+      "type": "multiple_choice",
+      "correct": "打算",
+      "options": ["打算", "已经", "刚才", "而且"],
+      "option_pinyin": ["dǎ suàn", "yǐ jīng", "gāng cái", "ér qiě"],
+      "correct_pinyin": "dǎ suàn",
+      "difficulty": "easy",
+      "lesson_reference": 1
+    },
+    {
+      "id": "hsk3_final_02",
+      "question": "What does 顺便 mean?",
+      "type": "multiple_choice",
+      "correct": "While you're at it / Conveniently",
+      "options": ["While you're at it / Conveniently", "On purpose", "By yourself", "Suddenly"],
+      "difficulty": "easy",
+      "lesson_reference": 1
+    },
+    {
+      "id": "hsk3_final_03",
+      "question": "Which sentence correctly uses 不...了 to show a change of plan?",
+      "type": "multiple_choice",
+      "correct": "我不去了，太累了。",
+      "options": [
+        "我不去了，太累了。",
+        "我不去，太累了。",
+        "我去不了，太累了。",
+        "我了不去，太累了。"
+      ],
+      "option_pinyin": [
+        "Wǒ bù qù le, tài lèi le.",
+        "Wǒ bù qù, tài lèi le.",
+        "Wǒ qù bù le, tài lèi le.",
+        "Wǒ le bù qù, tài lèi le."
+      ],
+      "correct_pinyin": "Wǒ bù qù le, tài lèi le.",
+      "difficulty": "medium",
+      "lesson_reference": 1
+    },
+    {
+      "id": "hsk3_final_04",
+      "question": "他___五点回来，差不多还有一个小时。",
+      "question_pinyin": "Tā ___ wǔ diǎn huí lái, chà bu duō hái yǒu yī ge xiǎo shí.",
+      "type": "multiple_choice",
+      "correct": "大约",
+      "options": ["大约", "刚才", "已经", "顺便"],
+      "option_pinyin": ["dà yuē", "gāng cái", "yǐ jīng", "shùn biàn"],
+      "correct_pinyin": "dà yuē",
+      "difficulty": "easy",
+      "lesson_reference": 2
+    },
+    {
+      "id": "hsk3_final_05",
+      "question": "Which sentence uses 把字句 correctly?",
+      "type": "multiple_choice",
+      "correct": "他把书放在桌子上了。",
+      "options": [
+        "他把书放在桌子上了。",
+        "他把放书在桌子上了。",
+        "把他书放在桌子上了。",
+        "他放把书在桌子上了。"
+      ],
+      "option_pinyin": [
+        "Tā bǎ shū fàng zài zhuō zi shàng le.",
+        "Tā bǎ fàng shū zài zhuō zi shàng le.",
+        "Bǎ tā shū fàng zài zhuō zi shàng le.",
+        "Tā fàng bǎ shū zài zhuō zi shàng le."
+      ],
+      "correct_pinyin": "Tā bǎ shū fàng zài zhuō zi shàng le.",
+      "difficulty": "medium",
+      "lesson_reference": 2
+    },
+    {
+      "id": "hsk3_final_06",
+      "question": "Translate: 她总是迟到。",
+      "question_pinyin": "Tā zǒng shì chí dào.",
+      "type": "multiple_choice",
+      "correct": "She is always late.",
+      "options": [
+        "She is always late.",
+        "She is never late.",
+        "She was late once.",
+        "She is sometimes late."
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 2
+    },
+    {
+      "id": "hsk3_final_07",
+      "question": "桌子上___着一本书和两支笔。",
+      "question_pinyin": "Zhuō zi shàng ___ zhe yī běn shū hé liǎng zhī bǐ.",
+      "type": "multiple_choice",
+      "correct": "放",
+      "options": ["放", "有", "看", "走"],
+      "option_pinyin": ["fàng", "yǒu", "kàn", "zǒu"],
+      "correct_pinyin": "fàng",
+      "difficulty": "medium",
+      "lesson_reference": 3
+    },
+    {
+      "id": "hsk3_final_08",
+      "question": "Which sentence uses 就 correctly to mean 'right at / right by'?",
+      "type": "multiple_choice",
+      "correct": "超市就在学校旁边。",
+      "options": [
+        "超市就在学校旁边。",
+        "就超市在学校旁边。",
+        "超市在就学校旁边。",
+        "超市在学校就旁边。"
+      ],
+      "option_pinyin": [
+        "Chāo shì jiù zài xué xiào páng biān.",
+        "Jiù chāo shì zài xué xiào páng biān.",
+        "Chāo shì zài jiù xué xiào páng biān.",
+        "Chāo shì zài xué xiào jiù páng biān."
+      ],
+      "correct_pinyin": "Chāo shì jiù zài xué xiào páng biān.",
+      "difficulty": "medium",
+      "lesson_reference": 3
+    },
+    {
+      "id": "hsk3_final_09",
+      "question": "What measure word goes with 件 (jiàn)?",
+      "type": "multiple_choice",
+      "correct": "Clothing / items of clothing",
+      "options": ["Clothing / items of clothing", "Flat objects like paper", "Long thin objects", "Small round objects"],
+      "difficulty": "medium",
+      "lesson_reference": 3
+    },
+    {
+      "id": "hsk3_final_10",
+      "question": "他刚才___自己做了所有的作业。",
+      "question_pinyin": "Tā gāng cái ___ zì jǐ zuò le suǒ yǒu de zuò yè.",
+      "type": "multiple_choice",
+      "correct": "说",
+      "options": ["说", "让", "帮", "给"],
+      "option_pinyin": ["shuō", "ràng", "bāng", "gěi"],
+      "correct_pinyin": "shuō",
+      "difficulty": "medium",
+      "lesson_reference": 4
+    },
+    {
+      "id": "hsk3_final_11",
+      "question": "What does 自己 mean?",
+      "type": "multiple_choice",
+      "correct": "Oneself / By oneself",
+      "options": ["Oneself / By oneself", "Together", "Each other", "Somebody else"],
+      "difficulty": "easy",
+      "lesson_reference": 4
+    },
+    {
+      "id": "hsk3_final_12",
+      "question": "Which sentence correctly uses 而且 to add information?",
+      "type": "multiple_choice",
+      "correct": "他做得很快，而且做得很好。",
+      "options": [
+        "他做得很快，而且做得很好。",
+        "他而且做得很快，做得很好。",
+        "他做得很快而且，做得很好。",
+        "而且他做得很快，做得很好。"
+      ],
+      "option_pinyin": [
+        "Tā zuò de hěn kuài, ér qiě zuò de hěn hǎo.",
+        "Tā ér qiě zuò de hěn kuài, zuò de hěn hǎo.",
+        "Tā zuò de hěn kuài ér qiě, zuò de hěn hǎo.",
+        "Ér qiě tā zuò de hěn kuài, zuò de hěn hǎo."
+      ],
+      "correct_pinyin": "Tā zuò de hěn kuài, ér qiě zuò de hěn hǎo.",
+      "difficulty": "medium",
+      "lesson_reference": 4
+    },
+    {
+      "id": "hsk3_final_13",
+      "question": "他___越来越胖了，应该少吃一点。",
+      "question_pinyin": "Tā ___ yuè lái yuè pàng le, yīng gāi shǎo chī yī diǎn.",
+      "type": "multiple_choice",
+      "correct": "最近",
+      "options": ["最近", "刚才", "以前", "顺便"],
+      "option_pinyin": ["zuì jìn", "gāng cái", "yǐ qián", "shùn biàn"],
+      "correct_pinyin": "zuì jìn",
+      "difficulty": "easy",
+      "lesson_reference": 5
+    },
+    {
+      "id": "hsk3_final_14",
+      "question": "What does 越...越... mean?",
+      "type": "multiple_choice",
+      "correct": "The more...the more...",
+      "options": ["The more...the more...", "More and more", "Although...but...", "Either...or..."],
+      "difficulty": "medium",
+      "lesson_reference": 5
+    },
+    {
+      "id": "hsk3_final_15",
+      "question": "Translate: 你越学越聪明。",
+      "question_pinyin": "Nǐ yuè xué yuè cōng míng.",
+      "type": "multiple_choice",
+      "correct": "The more you study, the smarter you get.",
+      "options": [
+        "The more you study, the smarter you get.",
+        "You are getting smarter and smarter.",
+        "You should study more to be smarter.",
+        "You study, and you are also smart."
+      ],
+      "difficulty": "hard",
+      "lesson_reference": 5
+    },
+    {
+      "id": "hsk3_final_16",
+      "question": "他找___到那份文件，因为整理得很乱。",
+      "question_pinyin": "Tā zhǎo ___ dào nà fèn wén jiàn, yīn wèi zhěng lǐ de hěn luàn.",
+      "type": "multiple_choice",
+      "correct": "不",
+      "options": ["不", "得", "了", "过"],
+      "option_pinyin": ["bù", "de", "le", "guò"],
+      "correct_pinyin": "bù",
+      "difficulty": "medium",
+      "lesson_reference": 6
+    },
+    {
+      "id": "hsk3_final_17",
+      "question": "Fill in: ___你已经决定了，___就按计划进行吧。",
+      "question_pinyin": "___ nǐ yǐ jīng jué dìng le, ___ jiù àn jì huà jìn xíng ba.",
+      "type": "multiple_choice",
+      "correct": "既然 / 那",
+      "options": ["既然 / 那", "虽然 / 但", "因为 / 所以", "如果 / 就"],
+      "option_pinyin": ["jì rán / nà", "suī rán / dàn", "yīn wèi / suǒ yǐ", "rú guǒ / jiù"],
+      "correct_pinyin": "jì rán / nà",
+      "difficulty": "hard",
+      "lesson_reference": 6
+    },
+    {
+      "id": "hsk3_final_18",
+      "question": "What does 明明 express?",
+      "type": "multiple_choice",
+      "correct": "Obviously / Clearly (used when something contradicts expectations)",
+      "options": [
+        "Obviously / Clearly (used when something contradicts expectations)",
+        "Suddenly / All of a sudden",
+        "Perhaps / Maybe",
+        "Although / Even though"
+      ],
+      "difficulty": "hard",
+      "lesson_reference": 6
+    },
+    {
+      "id": "hsk3_final_19",
+      "question": "他们结婚___五年了，感情还是很好。",
+      "question_pinyin": "Tā men jié hūn ___ wǔ nián le, gǎn qíng hái shì hěn hǎo.",
+      "type": "multiple_choice",
+      "correct": "了",
+      "options": ["了", "过", "着", "得"],
+      "option_pinyin": ["le", "guò", "zhe", "de"],
+      "correct_pinyin": "le",
+      "difficulty": "medium",
+      "lesson_reference": 7
+    },
+    {
+      "id": "hsk3_final_20",
+      "question": "What is the difference between 刚 and 已经 in terms of time?",
+      "type": "multiple_choice",
+      "correct": "刚 = just now (very recent); 已经 = already (at some point before now)",
+      "options": [
+        "刚 = just now (very recent); 已经 = already (at some point before now)",
+        "刚 = already (at some point); 已经 = just now (very recent)",
+        "Both mean 'just now' — they are interchangeable",
+        "刚 is for completed actions; 已经 is for ongoing actions"
+      ],
+      "difficulty": "medium",
+      "lesson_reference": 7
+    },
+    {
+      "id": "hsk3_final_21",
+      "question": "Translate: 他们分手了，大家都很惊讶。",
+      "question_pinyin": "Tā men fēn shǒu le, dà jiā dōu hěn jīng yà.",
+      "type": "multiple_choice",
+      "correct": "They broke up — everyone was very surprised.",
+      "options": [
+        "They broke up — everyone was very surprised.",
+        "They got married — everyone was very surprised.",
+        "They graduated — everyone was very happy.",
+        "They separated for work — everyone understood."
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 7
+    },
+    {
+      "id": "hsk3_final_22",
+      "question": "不管天气怎么样，他___去跑步。",
+      "question_pinyin": "Bù guǎn tiān qì zěn me yàng, tā ___ qù pǎo bù.",
+      "type": "multiple_choice",
+      "correct": "都",
+      "options": ["都", "也", "还", "就"],
+      "option_pinyin": ["dōu", "yě", "hái", "jiù"],
+      "correct_pinyin": "dōu",
+      "difficulty": "medium",
+      "lesson_reference": 8
+    },
+    {
+      "id": "hsk3_final_23",
+      "question": "Fill in: 他一进门___开始做作业。",
+      "question_pinyin": "Tā yī jìn mén ___ kāi shǐ zuò zuò yè.",
+      "type": "multiple_choice",
+      "correct": "就",
+      "options": ["就", "都", "也", "才"],
+      "option_pinyin": ["jiù", "dōu", "yě", "cái"],
+      "correct_pinyin": "jiù",
+      "difficulty": "medium",
+      "lesson_reference": 8
+    },
+    {
+      "id": "hsk3_final_24",
+      "question": "Which sentence correctly uses a question word as an indefinite pronoun?",
+      "type": "multiple_choice",
+      "correct": "她去哪里都不怕。",
+      "options": [
+        "她去哪里都不怕。",
+        "她哪里去都不怕。",
+        "都她去哪里不怕。",
+        "她不怕去都哪里。"
+      ],
+      "option_pinyin": [
+        "Tā qù nǎ lǐ dōu bù pà.",
+        "Tā nǎ lǐ qù dōu bù pà.",
+        "Dōu tā qù nǎ lǐ bù pà.",
+        "Tā bù pà qù dōu nǎ lǐ."
+      ],
+      "correct_pinyin": "Tā qù nǎ lǐ dōu bù pà.",
+      "difficulty": "hard",
+      "lesson_reference": 8
+    },
+    {
+      "id": "hsk3_final_25",
+      "question": "Translate: 他的汉语比我还好。",
+      "question_pinyin": "Tā de hàn yǔ bǐ wǒ hái hǎo.",
+      "type": "multiple_choice",
+      "correct": "His Chinese is even better than mine.",
+      "options": [
+        "His Chinese is even better than mine.",
+        "His Chinese is as good as mine.",
+        "My Chinese is better than his.",
+        "His Chinese is a little better than mine."
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 9
+    },
+    {
+      "id": "hsk3_final_26",
+      "question": "Fill in: 她的汉语说得___中国人___好。",
+      "question_pinyin": "Tā de hàn yǔ shuō de ___ Zhōng guó rén ___ hǎo.",
+      "type": "multiple_choice",
+      "correct": "像 / 一样",
+      "options": ["像 / 一样", "比 / 更", "和 / 一起", "跟 / 差不多"],
+      "option_pinyin": ["xiàng / yī yàng", "bǐ / gèng", "hé / yī qǐ", "gēn / chà bu duō"],
+      "correct_pinyin": "xiàng / yī yàng",
+      "difficulty": "medium",
+      "lesson_reference": 9
+    },
+    {
+      "id": "hsk3_final_27",
+      "question": "What is the correct structure for a degree complement?",
+      "type": "multiple_choice",
+      "correct": "Verb + 得 + Adjective",
+      "options": [
+        "Verb + 得 + Adjective",
+        "Adjective + 得 + Verb",
+        "得 + Verb + Adjective",
+        "Verb + Adjective + 得"
+      ],
+      "difficulty": "medium",
+      "lesson_reference": 9
+    },
+    {
+      "id": "hsk3_final_28",
+      "question": "Fill in: 数学比历史难___，我每天都要复习。",
+      "question_pinyin": "Shù xué bǐ lì shǐ nán ___, wǒ měi tiān dōu yào fù xí.",
+      "type": "multiple_choice",
+      "correct": "多了",
+      "options": ["多了", "很多", "一些", "非常"],
+      "option_pinyin": ["duō le", "hěn duō", "yī xiē", "fēi cháng"],
+      "correct_pinyin": "duō le",
+      "difficulty": "easy",
+      "lesson_reference": 10
+    },
+    {
+      "id": "hsk3_final_29",
+      "question": "What does 容易一些 mean in a comparison?",
+      "type": "multiple_choice",
+      "correct": "A little easier",
+      "options": ["A little easier", "Much easier", "The easiest", "Just as easy"],
+      "difficulty": "easy",
+      "lesson_reference": 10
+    },
+    {
+      "id": "hsk3_final_30",
+      "question": "Which sentence correctly uses a quantitative complement?",
+      "type": "multiple_choice",
+      "correct": "他复习了三个小时。",
+      "options": [
+        "他复习了三个小时。",
+        "他三个小时了复习。",
+        "他了复习三个小时。",
+        "他复习三个小时了。"
+      ],
+      "option_pinyin": [
+        "Tā fù xí le sān ge xiǎo shí.",
+        "Tā sān ge xiǎo shí le fù xí.",
+        "Tā le fù xí sān ge xiǎo shí.",
+        "Tā fù xí sān ge xiǎo shí le."
+      ],
+      "correct_pinyin": "Tā fù xí le sān ge xiǎo shí.",
+      "difficulty": "medium",
+      "lesson_reference": 10
+    },
+    {
+      "id": "hsk3_final_31",
+      "question": "把___关掉，太吵了！",
+      "question_pinyin": "Bǎ ___ guān diào, tài chǎo le!",
+      "type": "multiple_choice",
+      "correct": "音乐",
+      "options": ["音乐", "书", "苹果", "衣服"],
+      "option_pinyin": ["yīn yuè", "shū", "píng guǒ", "yī fu"],
+      "correct_pinyin": "yīn yuè",
+      "difficulty": "easy",
+      "lesson_reference": 11
+    },
+    {
+      "id": "hsk3_final_32",
+      "question": "What does sentence-final 了 (了2) indicate?",
+      "type": "multiple_choice",
+      "correct": "A new situation or change of state",
+      "options": [
+        "A new situation or change of state",
+        "A completed action in the past",
+        "A continuous ongoing action",
+        "A future intention"
+      ],
+      "difficulty": "hard",
+      "lesson_reference": 11
+    },
+    {
+      "id": "hsk3_final_33",
+      "question": "Which sentence uses 别...了 correctly to mean 'stop doing something'?",
+      "type": "multiple_choice",
+      "correct": "别吵了，我在睡觉！",
+      "options": [
+        "别吵了，我在睡觉！",
+        "别了吵，我在睡觉！",
+        "了别吵，我在睡觉！",
+        "吵别了，我在睡觉！"
+      ],
+      "option_pinyin": [
+        "Bié chǎo le, wǒ zài shuì jiào!",
+        "Bié le chǎo, wǒ zài shuì jiào!",
+        "Le bié chǎo, wǒ zài shuì jiào!",
+        "Chǎo bié le, wǒ zài shuì jiào!"
+      ],
+      "correct_pinyin": "Bié chǎo le, wǒ zài shuì jiào!",
+      "difficulty": "easy",
+      "lesson_reference": 11
+    },
+    {
+      "id": "hsk3_final_34",
+      "question": "How does a 被字句 differ from a 把字句?",
+      "type": "multiple_choice",
+      "correct": "被字句 is passive (something happened to the subject); 把字句 is active (subject acts on the object)",
+      "options": [
+        "被字句 is passive (something happened to the subject); 把字句 is active (subject acts on the object)",
+        "被字句 is active; 把字句 is passive",
+        "They mean the same thing — just different word order",
+        "被字句 is only for negative sentences; 把字句 is for positive"
+      ],
+      "difficulty": "hard",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk3_final_35",
+      "question": "Fill in: 那本书___他借走了。",
+      "question_pinyin": "Nà běn shū ___ tā jiè zǒu le.",
+      "type": "multiple_choice",
+      "correct": "被",
+      "options": ["被", "把", "给", "让"],
+      "option_pinyin": ["bèi", "bǎ", "gěi", "ràng"],
+      "correct_pinyin": "bèi",
+      "difficulty": "medium",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk3_final_36",
+      "question": "Translate: 她把钱包放在桌子上了。",
+      "question_pinyin": "Tā bǎ qián bāo fàng zài zhuō zi shàng le.",
+      "type": "multiple_choice",
+      "correct": "She placed her wallet on the table.",
+      "options": [
+        "She placed her wallet on the table.",
+        "Her wallet was taken from the table.",
+        "She found her wallet on the table.",
+        "She lost her wallet on the table."
+      ],
+      "difficulty": "easy",
+      "lesson_reference": 12
+    },
+    {
+      "id": "hsk3_final_37",
+      "question": "Which sentence correctly uses 是...的 to emphasise how an action was done?",
+      "type": "multiple_choice",
+      "correct": "他是坐飞机来的。",
+      "options": [
+        "他是坐飞机来的。",
+        "他坐飞机是来的。",
+        "他是来坐飞机的。",
+        "是他坐飞机来的。"
+      ],
+      "option_pinyin": [
+        "Tā shì zuò fēi jī lái de.",
+        "Tā zuò fēi jī shì lái de.",
+        "Tā shì lái zuò fēi jī de.",
+        "Shì tā zuò fēi jī lái de."
+      ],
+      "correct_pinyin": "Tā shì zuò fēi jī lái de.",
+      "difficulty": "medium",
+      "lesson_reference": 13
+    },
+    {
+      "id": "hsk3_final_38",
+      "question": "Which verb pairs with 地铁 (subway) as the correct transport verb?",
+      "type": "multiple_choice",
+      "correct": "坐",
+      "options": ["坐", "骑", "开", "走"],
+      "option_pinyin": ["zuò", "qí", "kāi", "zǒu"],
+      "correct_pinyin": "zuò",
+      "difficulty": "easy",
+      "lesson_reference": 13
+    },
+    {
+      "id": "hsk3_final_39",
+      "question": "What is the negative form of 是...的?",
+      "type": "multiple_choice",
+      "correct": "不是...的",
+      "options": ["不是...的", "没有...的", "没是...的", "是...不的"],
+      "option_pinyin": ["bù shì ... de", "méi yǒu ... de", "méi shì ... de", "shì ... bù de"],
+      "correct_pinyin": "bù shì ... de",
+      "difficulty": "medium",
+      "lesson_reference": 13
+    },
+    {
+      "id": "hsk3_final_40",
+      "question": "请___，小心！地板很滑。",
+      "question_pinyin": "Qǐng ___, xiǎo xīn! Dì bǎn hěn huá.",
+      "type": "multiple_choice",
+      "correct": "慢点走进来",
+      "options": ["慢点走进来", "走进来慢点", "走慢进来点", "进来慢点走"],
+      "option_pinyin": ["màn diǎn zǒu jìn lái", "zǒu jìn lái màn diǎn", "zǒu màn jìn lái diǎn", "jìn lái màn diǎn zǒu"],
+      "correct_pinyin": "màn diǎn zǒu jìn lái",
+      "difficulty": "hard",
+      "lesson_reference": 14
+    },
+    {
+      "id": "hsk3_final_41",
+      "question": "What does 把椅子搬过来 mean?",
+      "question_pinyin": "Bǎ yǐ zi bān guò lái",
+      "type": "multiple_choice",
+      "correct": "Move the chair over here",
+      "options": [
+        "Move the chair over here",
+        "Put the chair over there",
+        "Bring the chair back",
+        "Take the chair away"
+      ],
+      "difficulty": "medium",
+      "lesson_reference": 14
+    },
+    {
+      "id": "hsk3_final_42",
+      "question": "Which sentence correctly uses 起来 in its special sense of 'starting to do'?",
+      "type": "multiple_choice",
+      "correct": "他突然笑起来了。",
+      "options": [
+        "他突然笑起来了。",
+        "他起来笑突然了。",
+        "他突然起来笑了。",
+        "他笑突然起来了。"
+      ],
+      "option_pinyin": [
+        "Tā tū rán xiào qǐ lái le.",
+        "Tā qǐ lái xiào tū rán le.",
+        "Tā tū rán qǐ lái xiào le.",
+        "Tā xiào tū rán qǐ lái le."
+      ],
+      "correct_pinyin": "Tā tū rán xiào qǐ lái le.",
+      "difficulty": "hard",
+      "lesson_reference": 14
+    },
+    {
+      "id": "hsk3_final_43",
+      "question": "Fill in: 他___每天都去游泳，只有周末休息。",
+      "question_pinyin": "Tā ___ měi tiān dōu qù yóu yǒng, zhǐ yǒu zhōu mò xiū xī.",
+      "type": "multiple_choice",
+      "correct": "几乎",
+      "options": ["几乎", "基本上", "差不多", "总的来说"],
+      "option_pinyin": ["jī hū", "jī běn shàng", "chà bu duō", "zǒng de lái shuō"],
+      "correct_pinyin": "jī hū",
+      "difficulty": "medium",
+      "lesson_reference": 15
+    },
+    {
+      "id": "hsk3_final_44",
+      "question": "Which sentence correctly uses 不但...而且?",
+      "type": "multiple_choice",
+      "correct": "这里不但交通方便，而且环境也很好。",
+      "options": [
+        "这里不但交通方便，而且环境也很好。",
+        "这里而且交通方便，不但环境也很好。",
+        "这里不但，交通方便而且环境也很好。",
+        "不但这里交通方便，环境也很好而且。"
+      ],
+      "option_pinyin": [
+        "Zhè lǐ bù dàn jiāo tōng fāng biàn, ér qiě huán jìng yě hěn hǎo.",
+        "Zhè lǐ ér qiě jiāo tōng fāng biàn, bù dàn huán jìng yě hěn hǎo.",
+        "Zhè lǐ bù dàn, jiāo tōng fāng biàn ér qiě huán jìng yě hěn hǎo.",
+        "Bù dàn zhè lǐ jiāo tōng fāng biàn, huán jìng yě hěn hǎo ér qiě."
+      ],
+      "correct_pinyin": "Zhè lǐ bù dàn jiāo tōng fāng biàn, ér qiě huán jìng yě hěn hǎo.",
+      "difficulty": "medium",
+      "lesson_reference": 15
+    },
+    {
+      "id": "hsk3_final_45",
+      "question": "Translate: 总的来说，这次考试基本上没问题，其他都还行。",
+      "question_pinyin": "Zǒng de lái shuō, zhè cì kǎo shì jī běn shàng méi wèn tí, qí tā dōu hái xíng.",
+      "type": "multiple_choice",
+      "correct": "Generally speaking, this exam was basically fine — the rest were all OK.",
+      "options": [
+        "Generally speaking, this exam was basically fine — the rest were all OK.",
+        "Generally speaking, this exam was very difficult — nothing was OK.",
+        "Speaking generally, this exam was perfect — everything was excellent.",
+        "In general, this exam had many problems — nothing was fine."
+      ],
+      "difficulty": "hard",
+      "lesson_reference": 15
+    }
+  ]
+}

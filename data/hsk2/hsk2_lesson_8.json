@@ -1,0 +1,951 @@
+{
+  "lesson": 8,
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Social Life 1",
+  "topic_chinese": "社交生活（一）",
+  "vocabulary": [
+    {
+      "id": "hsk2_l8_01",
+      "chinese": "让",
+      "pinyin": "ràng",
+      "tones": [
+        4
+      ],
+      "english": "To let / To allow / To make",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l8_02",
+      "chinese": "告诉",
+      "pinyin": "gào su",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "To tell / To inform",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l8_03",
+      "chinese": "说话",
+      "pinyin": "shuō huà",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "To speak / To talk",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l8_04",
+      "chinese": "懂",
+      "pinyin": "dǒng",
+      "tones": [
+        3
+      ],
+      "english": "To understand ",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l8_05",
+      "chinese": "意思",
+      "pinyin": "yì si",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "Meaning / Intention",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l8_06",
+      "chinese": "问",
+      "pinyin": "wèn",
+      "tones": [
+        4
+      ],
+      "english": "To ask",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l8_07",
+      "chinese": "等",
+      "pinyin": "děng",
+      "tones": [
+        3
+      ],
+      "english": "To wait",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l8_08",
+      "chinese": "再",
+      "pinyin": "zài",
+      "tones": [
+        4
+      ],
+      "english": "Again / Then (afterwards)",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l8_09",
+      "chinese": "快",
+      "pinyin": "kuài",
+      "tones": [
+        4
+      ],
+      "english": "Fast / Quick",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l8_10",
+      "chinese": "慢",
+      "pinyin": "màn",
+      "tones": [
+        4
+      ],
+      "english": "Slow",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l8_11",
+      "chinese": "大家",
+      "pinyin": "dà jiā",
+      "tones": [
+        4,
+        1
+      ],
+      "english": "Everyone / Everybody",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk2_l8_12",
+      "chinese": "一起",
+      "pinyin": "yì qǐ",
+      "tones": [
+        4,
+        3
+      ],
+      "english": "Together",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l8_p01",
+      "chinese": "让我想想",
+      "pinyin": "ràng wǒ xiǎng xiǎng",
+      "tones": [
+        4,
+        3,
+        3,
+        0
+      ],
+      "english": "Let me think about it",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p02",
+      "chinese": "慢慢说",
+      "pinyin": "màn màn shuō",
+      "tones": [
+        4,
+        4,
+        1
+      ],
+      "english": "Speak slowly",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p03",
+      "chinese": "什么意思",
+      "pinyin": "shén me yì si",
+      "tones": [
+        2,
+        0,
+        4,
+        0
+      ],
+      "english": "What does it mean?",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p04",
+      "chinese": "等一等",
+      "pinyin": "děng yi děng",
+      "tones": [
+        3,
+        0,
+        3
+      ],
+      "english": "Wait a moment",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p05",
+      "chinese": "大家一起说",
+      "pinyin": "dà jiā yì qǐ shuō",
+      "tones": [
+        4,
+        1,
+        4,
+        3,
+        1
+      ],
+      "english": "Everyone talk together",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p06",
+      "chinese": "听不懂",
+      "pinyin": "tīng bù dǒng",
+      "tones": [
+        1,
+        4,
+        3
+      ],
+      "english": "Cannot understand (by listening)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p07",
+      "chinese": "再告诉你",
+      "pinyin": "zài gào su nǐ",
+      "tones": [
+        4,
+        4,
+        0,
+        3
+      ],
+      "english": "Tell you later or again",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p08",
+      "chinese": "说话太快",
+      "pinyin": "shuō huà tài kuài",
+      "tones": [
+        1,
+        4,
+        4,
+        4
+      ],
+      "english": "Speak too fast",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hsk2_l8_p01",
+      "chinese": "让我想想",
+      "pinyin": "ràng wǒ xiǎng xiǎng",
+      "tones": [
+        4,
+        3,
+        3,
+        0
+      ],
+      "english": "Let me think about it",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p02",
+      "chinese": "慢慢说",
+      "pinyin": "màn màn shuō",
+      "tones": [
+        4,
+        4,
+        1
+      ],
+      "english": "Speak slowly",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p03",
+      "chinese": "什么意思",
+      "pinyin": "shén me yì si",
+      "tones": [
+        2,
+        0,
+        4,
+        0
+      ],
+      "english": "What does it mean?",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p04",
+      "chinese": "等一等",
+      "pinyin": "děng yi děng",
+      "tones": [
+        3,
+        0,
+        3
+      ],
+      "english": "Wait a moment",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p05",
+      "chinese": "大家一起说",
+      "pinyin": "dà jiā yì qǐ shuō",
+      "tones": [
+        4,
+        1,
+        4,
+        3,
+        1
+      ],
+      "english": "Everyone talk together",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p06",
+      "chinese": "听不懂",
+      "pinyin": "tīng bù dǒng",
+      "tones": [
+        1,
+        4,
+        3
+      ],
+      "english": "Cannot understand (by listening)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p07",
+      "chinese": "再告诉你",
+      "pinyin": "zài gào su nǐ",
+      "tones": [
+        4,
+        4,
+        0,
+        3
+      ],
+      "english": "Tell you later / Tell you again",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l8_p08",
+      "chinese": "说话太快",
+      "pinyin": "shuō huà tài kuài",
+      "tones": [
+        1,
+        4,
+        4,
+        4
+      ],
+      "english": "Speak too fast",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "让我想想再告诉你。",
+      "pinyin": "Ràng wǒ xiǎng xiǎng zài gào su nǐ.",
+      "english": "Let me think about it and tell you later."
+    },
+    {
+      "chinese": "请慢慢说，我听不懂。",
+      "pinyin": "Qǐng màn màn shuō, wǒ tīng bù dǒng.",
+      "english": "Please speak slowly; I can't understand."
+    },
+    {
+      "chinese": "这个词是什么意思？",
+      "pinyin": "Zhè gè cí shì shén me yì si?",
+      "english": "What is the meaning of this word?"
+    },
+    {
+      "chinese": "你在做什么呢？",
+      "pinyin": "Nǐ zài zuò shén me ne?",
+      "english": "What are you doing?"
+    },
+    {
+      "chinese": "大家快点儿，我们一起走吧！",
+      "pinyin": "Dà jiā kuài diǎnr, wǒ men yì qǐ zǒu ba!",
+      "english": "Everyone hurry up; let's go together!"
+    },
+    {
+      "chinese": "等一等，我去问一下老师。",
+      "pinyin": "Děng yi děng, wǒ qù wèn yī xià lǎo shī.",
+      "english": "Wait a moment; I'll go ask the teacher."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "让 — Causative Verb",
+      "explanation": "让 (ràng) means 'to let / to allow / to make (someone do something)'. It is a causative verb. Structure: Subject A + 让 + Subject B + Verb. The second subject (B) is the one performing the action. Examples: 让我来 (let me come); 老师让大家说话 (the teacher made everyone speak); 妈妈不让我去 (mum won't let me go).",
+      "examples": [
+        {
+          "chinese": "让我想想再告诉你。",
+          "pinyin": "Ràng wǒ xiǎng xiǎng zài gào su nǐ.",
+          "english": "Let me think about it and then tell you."
+        },
+        {
+          "chinese": "老师让大家慢慢说话。",
+          "pinyin": "Lǎo shī ràng dà jiā màn màn shuō huà.",
+          "english": "The teacher asked everyone to speak slowly."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 让 mean as a causative verb?",
+          "type": "multiple_choice",
+          "correct": "To let / allow / make someone do something",
+          "options": [
+            "To let / allow / make someone do something",
+            "To want to do something",
+            "To hope for something",
+            "To think about something"
+          ]
+        },
+        {
+          "question": "Which sentence correctly uses 让?",
+          "type": "multiple_choice",
+          "correct": "妈妈让我等一下。",
+          "options": [
+            "妈妈让我等一下。",
+            "妈妈我让等一下。",
+            "我让妈妈等一下我。",
+            "让妈妈我等一下。"
+          ],
+          "correct_pinyin": "Māma ràng wǒ děng yī xià."
+        },
+        {
+          "question": "Fill in: 请___我说完，再问问题。(Please let me finish speaking before asking questions.)",
+          "type": "multiple_choice",
+          "correct": "让",
+          "options": [
+            "让",
+            "要",
+            "想",
+            "叫"
+          ],
+          "option_pinyin": [
+            "ràng",
+            "yào",
+            "xiǎng",
+            "jiào"
+          ]
+        },
+        {
+          "question": "What does 让我想想 mean?",
+          "type": "multiple_choice",
+          "correct": "Let me think about it",
+          "options": [
+            "Let me think about it",
+            "Let me tell you",
+            "Let me wait",
+            "Let me ask"
+          ],
+          "option_pinyin": [
+            "ràng wǒ xiǎng xiǎng",
+            "ràng wǒ gào su nǐ",
+            "ràng wǒ děng děng",
+            "ràng wǒ wèn wèn"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "用「呢」的疑问句 — Questions with ne",
+      "explanation": "呢 (ne) is added to the end of a sentence to form a soft question. It has two main uses: (1) follow-up question — after someone has answered, 呢 asks 'And you?': 我很好，你呢？(I'm fine; and you?); (2) ongoing action — Subject + 在/正在 + Verb + 呢 makes it clear that an action is still in progress: 他睡觉呢 (He's sleeping).",
+      "examples": [
+        {
+          "chinese": "我在等朋友，你呢？",
+          "pinyin": "Wǒ zài děng péng you, nǐ ne?",
+          "english": "I'm waiting for a friend; and you?"
+        },
+        {
+          "chinese": "你在做什么呢？",
+          "pinyin": "Nǐ zài zuò shén me ne?",
+          "english": "What are you doing (right now)?"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 呢 do in '我很好，你呢？'",
+          "type": "multiple_choice",
+          "correct": "Asks a follow-up question ('And you?')",
+          "options": [
+            "Asks a follow-up question ('And you?')",
+            "Marks a completed action",
+            "Shows surprise",
+            "Indicates uncertainty"
+          ]
+        },
+        {
+          "question": "How do you ask 'What are you doing?' using 呢?",
+          "type": "multiple_choice",
+          "correct": "你在做什么呢？",
+          "options": [
+            "你在做什么呢？",
+            "你做什么了吗？",
+            "你做什么吧？",
+            "你在做什么吗？"
+          ],
+          "correct_pinyin": "Nǐ zài zuò shén me ne?"
+        },
+        {
+          "question": "Fill in: 我去学校，你___？(I'm going to school; and you?)",
+          "type": "multiple_choice",
+          "correct": "呢",
+          "options": [
+            "呢",
+            "吗",
+            "吧",
+            "了"
+          ],
+          "option_pinyin": [
+            "ne",
+            "ma",
+            "ba",
+            "le"
+          ]
+        },
+        {
+          "question": "What does 大家一起说 mean?",
+          "type": "multiple_choice",
+          "correct": "Everyone talks together",
+          "options": [
+            "Everyone talks together",
+            "Everyone waits together",
+            "Everyone understands",
+            "Everyone asks together"
+          ],
+          "option_pinyin": [
+            "dà jiā yì qǐ shuō",
+            "dà jiā yì qǐ děng",
+            "dà jiā dōu dǒng",
+            "dà jiā yì qǐ wèn"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "动词重叠 — Verb Reduplication",
+      "explanation": "In Chinese, many verbs can be repeated (reduplicated) to soften a request or indicate the action is brief, casual, or just a try. Structure: Verb + Verb (e.g., 想想, 看看, 等等). For two-syllable verbs: ABAB (e.g., 考虑考虑). Reduplication makes the request less demanding. 一 can be inserted: 想一想 = 想想.",
+      "examples": [
+        {
+          "chinese": "让我想想再告诉你。",
+          "pinyin": "Ràng wǒ xiǎng xiǎng zài gào su nǐ.",
+          "english": "Let me think about it and then tell you."
+        },
+        {
+          "chinese": "你等等，我去问一下。",
+          "pinyin": "Nǐ děng děng, wǒ qù wèn yī xià.",
+          "english": "Wait a moment; I'll go ask."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does verb reduplication indicate?",
+          "type": "multiple_choice",
+          "correct": "A brief, casual, or softened action",
+          "options": [
+            "A brief, casual, or softened action",
+            "A completed action",
+            "A repeated action many times",
+            "A negative action"
+          ]
+        },
+        {
+          "question": "Which is correct verb reduplication of 说?",
+          "type": "multiple_choice",
+          "correct": "说说 / 说一说",
+          "options": [
+            "说说 / 说一说",
+            "说了说",
+            "说着说",
+            "说过说"
+          ],
+          "correct_pinyin": "shuō shuō / shuō yī shuō"
+        },
+        {
+          "question": "What is the effect of saying 看看 instead of 看?",
+          "type": "multiple_choice",
+          "correct": "It makes the request softer and more casual",
+          "options": [
+            "It makes the request softer and more casual",
+            "It makes the request more urgent",
+            "It changes the meaning completely",
+            "It indicates the action happened twice"
+          ]
+        },
+        {
+          "question": "What does 慢慢说 mean?",
+          "type": "multiple_choice",
+          "correct": "Speak slowly",
+          "options": [
+            "Speak slowly",
+            "Speak quickly",
+            "Speak loudly",
+            "Speak quietly"
+          ],
+          "option_pinyin": [
+            "màn màn shuō",
+            "kuài kuài shuō",
+            "dà shēng shuō",
+            "xiǎo shēng shuō"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 让 mean as a causative verb?",
+      "type": "multiple_choice",
+      "correct": "To let / allow / make someone do something",
+      "options": [
+        "To want",
+        "To let / allow / make someone do something",
+        "To know",
+        "To understand"
+      ]
+    },
+    {
+      "question": "What does 懂 mean?",
+      "type": "multiple_choice",
+      "correct": "To understand / To comprehend",
+      "options": [
+        "To know a fact",
+        "To understand / To comprehend",
+        "To think",
+        "To tell"
+      ]
+    },
+    {
+      "question": "What does 意思 mean?",
+      "type": "multiple_choice",
+      "correct": "Meaning / Intention",
+      "options": [
+        "Idea",
+        "Meaning / Intention",
+        "Story",
+        "Question"
+      ]
+    },
+    {
+      "question": "What does 说话 mean?",
+      "type": "multiple_choice",
+      "correct": "To speak / To talk",
+      "options": [
+        "To say a word",
+        "To speak / To talk",
+        "To write",
+        "To listen"
+      ]
+    },
+    {
+      "question": "Which sentence means 'Let me think about it and tell you later'?",
+      "type": "multiple_choice",
+      "correct": "让我想想再告诉你。",
+      "options": [
+        "让我想想再告诉你。",
+        "让我知道再告诉你。",
+        "让我问问再告诉你。",
+        "让我等等再告诉你。"
+      ]
+    },
+    {
+      "question": "What does verb reduplication indicate?",
+      "type": "multiple_choice",
+      "correct": "A brief, casual, or softened action",
+      "options": [
+        "A repeated action",
+        "A brief, casual, or softened action",
+        "A future action",
+        "A completed action"
+      ]
+    },
+    {
+      "question": "What does 慢 mean?",
+      "type": "multiple_choice",
+      "correct": "Slow",
+      "options": [
+        "Fast",
+        "Slow",
+        "Long",
+        "Short"
+      ]
+    },
+    {
+      "question": "What does 快 mean?",
+      "type": "multiple_choice",
+      "correct": "Fast / Quick",
+      "options": [
+        "Fast / Quick",
+        "Slow",
+        "Far",
+        "Near"
+      ]
+    },
+    {
+      "question": "What does 呢 do in '我很好，你呢？'",
+      "type": "multiple_choice",
+      "correct": "Asks a follow-up question",
+      "options": [
+        "Marks completed action",
+        "Asks a follow-up question",
+        "Makes a suggestion",
+        "Indicates surprise"
+      ]
+    },
+    {
+      "question": "What does 等 mean?",
+      "type": "multiple_choice",
+      "correct": "To wait",
+      "options": [
+        "To go",
+        "To wait",
+        "To come",
+        "To ask"
+      ]
+    },
+    {
+      "question": "What does 大家 mean?",
+      "type": "multiple_choice",
+      "correct": "Everyone / Everybody",
+      "options": [
+        "Big family",
+        "Everyone / Everybody",
+        "Many people",
+        "My friends"
+      ]
+    },
+    {
+      "question": "What does 问 mean?",
+      "type": "multiple_choice",
+      "correct": "To ask",
+      "options": [
+        "To answer",
+        "To ask",
+        "To tell",
+        "To know"
+      ]
+    },
+    {
+      "question": "How do you say 'Please speak slowly'?",
+      "type": "multiple_choice",
+      "correct": "请慢慢说。",
+      "options": [
+        "请快快说。",
+        "请慢慢说。",
+        "请好好说。",
+        "请大家说。"
+      ]
+    },
+    {
+      "question": "What is 想想 an example of?",
+      "type": "multiple_choice",
+      "correct": "Verb reduplication",
+      "options": [
+        "A compound verb",
+        "Verb reduplication",
+        "An adjective",
+        "A noun phrase"
+      ]
+    },
+    {
+      "question": "What does 一起 mean?",
+      "type": "multiple_choice",
+      "correct": "Together",
+      "options": [
+        "Alone",
+        "Together",
+        "First",
+        "Again"
+      ]
+    },
+    {
+      "question": "How do you say 'let me think about it'?",
+      "type": "multiple_choice",
+      "correct": "让我想想",
+      "options": [
+        "让我想想",
+        "让我告诉你",
+        "让我说话",
+        "让我等等"
+      ]
+    },
+    {
+      "question": "What does 说话太快 mean?",
+      "type": "multiple_choice",
+      "correct": "Speak too fast",
+      "options": [
+        "Speak too fast",
+        "Speak too slowly",
+        "Don't speak",
+        "Everyone speaks"
+      ]
+    },
+    {
+      "question": "How do you say 'cannot understand (by listening)'?",
+      "type": "multiple_choice",
+      "correct": "听不懂",
+      "options": [
+        "听不懂",
+        "说不懂",
+        "看不懂",
+        "问不懂"
+      ]
+    },
+    {
+      "question": "What does 再告诉你 mean?",
+      "type": "multiple_choice",
+      "correct": "Tell you later / Tell you again",
+      "options": [
+        "Tell you later / Tell you again",
+        "Ask you again",
+        "Wait for you",
+        "Understand later"
+      ]
+    },
+    {
+      "question": "Fill in: 请你___慢一点儿，我___不懂。(Please speak a little more slowly; I can't understand.)",
+      "type": "multiple_choice",
+      "correct": "说话 / 听",
+      "options": [
+        "说话 / 听",
+        "等等 / 问",
+        "告诉 / 懂",
+        "大家 / 再"
+      ]
+    },
+    {
+      "question": "What does 什么意思 mean?",
+      "type": "multiple_choice",
+      "correct": "What does it mean",
+      "options": [
+        "What does it mean",
+        "How do you say it",
+        "What is the answer",
+        "What did you say"
+      ]
+    },
+    {
+      "question": "How do you say 'cannot understand (by listening)'?",
+      "type": "multiple_choice",
+      "correct": "听不懂",
+      "options": [
+        "听不懂",
+        "说不懂",
+        "看不懂",
+        "问不懂"
+      ]
+    },
+    {
+      "question": "What does 等一等 mean?",
+      "type": "multiple_choice",
+      "correct": "Wait a moment",
+      "options": [
+        "Wait a moment",
+        "Think about it",
+        "Ask again",
+        "Go slowly"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Can't Understand",
+      "title_chinese": "听不懂",
+      "speakers": {
+        "A": {
+          "name": "玛丽",
+          "role": "学生",
+          "gender": "female"
+        },
+        "B": {
+          "name": "李老师",
+          "role": "老师",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "老师，您说话太快，我听不懂。",
+          "pinyin": "Lǎo shī, nín shuō huà tài kuài, wǒ tīng bù dǒng.",
+          "english": "Teacher, you speak too fast; I can't understand."
+        },
+        {
+          "speaker": "B",
+          "chinese": "对不起，让我慢慢再说一次。",
+          "pinyin": "Duì bu qǐ, ràng wǒ màn màn zài shuō yī cì.",
+          "english": "Sorry, let me say it again slowly."
+        },
+        {
+          "speaker": "A",
+          "chinese": "谢谢！这个词是什么意思？",
+          "pinyin": "Xiè xie! Zhè gè cí shì shén me yì si?",
+          "english": "Thank you! What is the meaning of this word?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "让我想想再告诉你。等一等。",
+          "pinyin": "Ràng wǒ xiǎng xiǎng zài gào su nǐ. Děng yi děng.",
+          "english": "Let me think about it and tell you. Wait a moment."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好的，大家也不懂，我们一起等。",
+          "pinyin": "Hǎo de, dà jiā yě bù dǒng, wǒ men yì qǐ děng.",
+          "english": "Okay; everyone else also doesn't understand; we'll wait together."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Making Plans",
+      "title_chinese": "商量计划",
+      "speakers": {
+        "A": {
+          "name": "小华",
+          "role": "朋友",
+          "gender": "male"
+        },
+        "B": {
+          "name": "小丽",
+          "role": "朋友",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小丽，大家都问你什么时候去旅游？",
+          "pinyin": "Xiǎo Lì, dà jiā dōu wèn nǐ shén me shí hou qù lǚ yóu?",
+          "english": "Xiao Li, everyone is asking when you're going travelling?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "让我想想再告诉大家。",
+          "pinyin": "Ràng wǒ xiǎng xiǎng zài gào su dà jiā.",
+          "english": "Let me think about it and then tell everyone."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好，我们等你。你呢，快还是慢？",
+          "pinyin": "Hǎo, wǒ men děng nǐ. Nǐ ne, kuài hái shì màn?",
+          "english": "Okay, we'll wait for you. And you — fast or slow?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "慢慢来，大家一起去最好。",
+          "pinyin": "Màn màn lái, dà jiā yì qǐ qù zuì hǎo.",
+          "english": "Take it slow; it's best if everyone goes together."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你懂我的意思！就这样，大家一起走！",
+          "pinyin": "Nǐ dǒng wǒ de yì si! Jiù zhè yàng, dà jiā yì qǐ zǒu!",
+          "english": "You understand my meaning! That's it — everyone goes together!"
+        }
+      ]
+    }
+  ]
+}

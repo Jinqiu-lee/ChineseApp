@@ -1,0 +1,983 @@
+{
+  "lesson": 5,
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Shopping & Activities 2",
+  "topic_chinese": "购物与活动（二）",
+  "vocabulary": [
+    {
+      "id": "hsk2_l5_01",
+      "chinese": "穿",
+      "pinyin": "chuān",
+      "tones": [
+        1
+      ],
+      "english": "To wear / To put on",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l5_02",
+      "chinese": "便宜",
+      "pinyin": "pián yi",
+      "tones": [
+        2,
+        0
+      ],
+      "english": "Cheap / Inexpensive",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l5_03",
+      "chinese": "贵",
+      "pinyin": "guì",
+      "tones": [
+        4
+      ],
+      "english": "Expensive",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l5_04",
+      "chinese": "颜色",
+      "pinyin": "yán sè",
+      "tones": [
+        2,
+        4
+      ],
+      "english": "Colour",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l5_05",
+      "chinese": "给",
+      "pinyin": "gěi",
+      "tones": [
+        3
+      ],
+      "english": "To give / For",
+      "part_of_speech": "verb/preposition"
+    },
+    {
+      "id": "hsk2_l5_06",
+      "chinese": "找",
+      "pinyin": "zhǎo",
+      "tones": [
+        3
+      ],
+      "english": "To look for / To find / To give change",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l5_07",
+      "chinese": "送",
+      "pinyin": "sòng",
+      "tones": [
+        4
+      ],
+      "english": "To give (as a present) / To deliver",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l5_08",
+      "chinese": "一下",
+      "pinyin": "yī xià",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "[used after verb] give it a try / a moment",
+      "part_of_speech": "measure word"
+    },
+    {
+      "id": "hsk2_l5_09",
+      "chinese": "卖",
+      "pinyin": "mài",
+      "tones": [
+        4
+      ],
+      "english": "To sell",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l5_10",
+      "chinese": "件",
+      "pinyin": "jiàn",
+      "tones": [
+        4
+      ],
+      "english": "Item / [measure word for clothing]",
+      "part_of_speech": "measure word"
+    },
+    {
+      "id": "hsk2_l5_11",
+      "chinese": "买",
+      "pinyin": "mǎi",
+      "tones": [
+        3
+      ],
+      "english": "To buy",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l5_12",
+      "chinese": "快乐",
+      "pinyin": "kuài lè",
+      "tones": [
+        4,
+        4
+      ],
+      "english": "Happy / Joyful",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l5_p01",
+      "chinese": "穿这件吧",
+      "pinyin": "chuān zhè jiàn ba",
+      "tones": [
+        1,
+        4,
+        4,
+        0
+      ],
+      "english": "Wear this one",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p02",
+      "chinese": "试一下",
+      "pinyin": "shì yī xià",
+      "tones": [
+        4,
+        1,
+        4
+      ],
+      "english": "Try it out",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p03",
+      "chinese": "便宜一点儿",
+      "pinyin": "pián yi yī diǎnr",
+      "tones": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "english": "A little cheaper",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p04",
+      "chinese": "给我看一下",
+      "pinyin": "gěi wǒ kàn yī xià",
+      "tones": [
+        3,
+        3,
+        4,
+        1,
+        4
+      ],
+      "english": "Let me have a look",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p05",
+      "chinese": "送给朋友",
+      "pinyin": "sòng gěi péng you",
+      "tones": [
+        4,
+        3,
+        2,
+        0
+      ],
+      "english": "Give to a friend as a gift",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p06",
+      "chinese": "颜色好看",
+      "pinyin": "yán sè hǎo kàn",
+      "tones": [
+        2,
+        4,
+        3,
+        4
+      ],
+      "english": "The colour looks nice",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p07",
+      "chinese": "买一件",
+      "pinyin": "mǎi yī jiàn",
+      "tones": [
+        3,
+        1,
+        4
+      ],
+      "english": "Buy one (item of clothing)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p08",
+      "chinese": "穿起来快乐",
+      "pinyin": "chuān qǐ lái kuài lè",
+      "tones": [
+        1,
+        3,
+        2,
+        4,
+        4
+      ],
+      "english": "Feel happy wearing it",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hsk2_l5_p01",
+      "chinese": "穿这件吧",
+      "pinyin": "chuān zhè jiàn ba",
+      "tones": [
+        1,
+        4,
+        4,
+        0
+      ],
+      "english": "Wear this one",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p02",
+      "chinese": "试一下",
+      "pinyin": "shì yī xià",
+      "tones": [
+        4,
+        1,
+        4
+      ],
+      "english": "Try it out",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p03",
+      "chinese": "便宜一点儿",
+      "pinyin": "pián yi yī diǎnr",
+      "tones": [
+        2,
+        0,
+        1,
+        3
+      ],
+      "english": "A little cheaper",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p04",
+      "chinese": "给我看一下",
+      "pinyin": "gěi wǒ kàn yī xià",
+      "tones": [
+        3,
+        3,
+        4,
+        1,
+        4
+      ],
+      "english": "Let me have a look",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p05",
+      "chinese": "送给朋友",
+      "pinyin": "sòng gěi péng you",
+      "tones": [
+        4,
+        3,
+        2,
+        0
+      ],
+      "english": "Give to a friend as a gift",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p06",
+      "chinese": "颜色好看",
+      "pinyin": "yán sè hǎo kàn",
+      "tones": [
+        2,
+        4,
+        3,
+        4
+      ],
+      "english": "The colour looks nice",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p07",
+      "chinese": "买一件",
+      "pinyin": "mǎi yī jiàn",
+      "tones": [
+        3,
+        1,
+        4
+      ],
+      "english": "Buy one (item of clothing)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l5_p08",
+      "chinese": "穿起来快乐",
+      "pinyin": "chuān qǐ lái kuài lè",
+      "tones": [
+        1,
+        3,
+        2,
+        4,
+        4
+      ],
+      "english": "Feel happy wearing it",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "拿这件吧，颜色很好看。",
+      "pinyin": "Ná zhè jiàn ba, yán sè hěn hǎo kàn.",
+      "english": "Take this one; the colour is very nice."
+    },
+    {
+      "chinese": "这件衣服贵还是便宜？",
+      "pinyin": "Zhè jiàn yī fu guì hái shì pián yi?",
+      "english": "Is this item of clothing expensive or cheap?"
+    },
+    {
+      "chinese": "给我看一下这件衣服。",
+      "pinyin": "Gěi wǒ kàn yī xià zhè jiàn yī fu.",
+      "english": "Let me have a look at this item of clothing."
+    },
+    {
+      "chinese": "我想送给朋友一件新衣服。",
+      "pinyin": "Wǒ xiǎng sòng gěi péng you yī jiàn xīn yī fu.",
+      "english": "I want to give a new item of clothing to my friend as a gift."
+    },
+    {
+      "chinese": "这里卖的衣服颜色很多。",
+      "pinyin": "Zhè lǐ mài de yī fu yán sè hěn duō.",
+      "english": "The clothes sold here come in many colours."
+    },
+    {
+      "chinese": "买这件吧，穿起来会很快乐！",
+      "pinyin": "Mǎi zhè jiàn ba, chuān qǐ lái huì hěn kuài lè!",
+      "english": "Buy this one; you'll feel so happy wearing it!"
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "语气副词「吧」— The Modal Particle ba",
+      "explanation": "吧 (ba) is added at the end of a sentence to soften suggestions, give mild commands, or seek confirmation. (1) Suggestion: 我们走吧 (Let's go). (2) Confirmation: 你是小明吧？(You're Xiao Ming, right?). (3) Mild command: 快点儿吧 (Hurry up). It makes sentences less direct and more polite.",
+      "examples": [
+        {
+          "chinese": "拿这件吧，颜色很好看。",
+          "pinyin": "Ná zhè jiàn ba, yán sè hěn hǎo kàn.",
+          "english": "Take this one; the colour is very nice."
+        },
+        {
+          "chinese": "我们去买衣服吧！",
+          "pinyin": "Wǒ men qù mǎi yī fu ba!",
+          "english": "Let's go buy clothes!"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 吧 do at the end of a sentence?",
+          "type": "multiple_choice",
+          "correct": "Makes a suggestion or seeks confirmation",
+          "options": [
+            "Makes a suggestion or seeks confirmation",
+            "Marks a completed action",
+            "Asks a direct question",
+            "Indicates past tense"
+          ]
+        },
+        {
+          "question": "Which sentence uses 吧 as a suggestion?",
+          "type": "multiple_choice",
+          "correct": "我们去买吧。",
+          "options": [
+            "我们去买吧。",
+            "我们去买了。",
+            "我们去买吗？",
+            "我们去买的。"
+          ],
+          "correct_pinyin": "Wǒ men qù mǎi ba."
+        },
+        {
+          "question": "Fill in: 这件颜色好看，你买___。(This colour is nice; you should buy it.)",
+          "type": "multiple_choice",
+          "correct": "吧",
+          "options": [
+            "吧",
+            "了",
+            "吗",
+            "的"
+          ],
+          "option_pinyin": [
+            "ba",
+            "le",
+            "ma",
+            "de"
+          ]
+        },
+        {
+          "question": "Which phrase means 'wear this one'?",
+          "type": "multiple_choice",
+          "correct": "穿这件吧",
+          "options": [
+            "穿这件吧",
+            "买这件吧",
+            "卖这件吧",
+            "送这件吧"
+          ],
+          "option_pinyin": [
+            "chuān zhè jiàn ba",
+            "mǎi zhè jiàn ba",
+            "mài zhè jiàn ba",
+            "sòng zhè jiàn ba"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "一下 — Used after a Verb",
+      "explanation": "一下 (yī xià) is placed directly after a verb. It softens the request or action, suggesting it is casual, brief, or tentative — like 'give it a try' or 'just for a moment'. Structure: Verb + 一下. It makes commands and requests sound less harsh. Examples: 看一下 (take a look), 试一下 (try it out), 等一下 (wait a moment).",
+      "examples": [
+        {
+          "chinese": "给我看一下这件衣服。",
+          "pinyin": "Gěi wǒ kàn yī xià zhè jiàn yī fu.",
+          "english": "Let me have a quick look at this piece of clothing."
+        },
+        {
+          "chinese": "你穿一下这件，看看合不合适。",
+          "pinyin": "Nǐ chuān yī xià zhè jiàn, kàn kàn hé bu hé shì.",
+          "english": "Try on this item and see if it fits."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 一下 do when placed after a verb?",
+          "type": "multiple_choice",
+          "correct": "Softens the action, making it brief or casual",
+          "options": [
+            "Softens the action, making it brief or casual",
+            "Makes the action stronger",
+            "Indicates the action is completed",
+            "Asks a question"
+          ]
+        },
+        {
+          "question": "Which sentence correctly uses 一下?",
+          "type": "multiple_choice",
+          "correct": "请等一下。",
+          "options": [
+            "请等一下。",
+            "请一下等。",
+            "请等了一下。",
+            "请一下等了。"
+          ],
+          "correct_pinyin": "Qǐng děng yī xià."
+        },
+        {
+          "question": "Fill in: 你帮我找___这件衣服。(Help me look for this item of clothing for a moment.)",
+          "type": "multiple_choice",
+          "correct": "一下",
+          "options": [
+            "一下",
+            "一件",
+            "一次",
+            "一起"
+          ],
+          "option_pinyin": [
+            "yī xià",
+            "yī jiàn",
+            "yī cì",
+            "yī qǐ"
+          ]
+        },
+        {
+          "question": "What does 试一下 mean?",
+          "type": "multiple_choice",
+          "correct": "Give it a try / Try it on",
+          "options": [
+            "Give it a try / Try it on",
+            "Buy one item",
+            "Find one",
+            "Wait a moment"
+          ],
+          "option_pinyin": [
+            "shì yī xià",
+            "mǎi yī jiàn",
+            "zhǎo yī gè",
+            "děng yī xià"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "给 as Preposition — 'gěi' meaning 'for' or 'to'",
+      "explanation": "给 (gěi) can function as a preposition meaning 'for' or 'to (someone)'. Structure: 给 + Person + Verb, or Verb + 给 + Person + Object. Example: 给我看 (show me / let me see); 送给朋友 (give to a friend). As a verb, 给 means 'to give': 给我一件 (give me one item).",
+      "examples": [
+        {
+          "chinese": "我想送给朋友一件衣服。",
+          "pinyin": "Wǒ xiǎng sòng gěi péng you yī jiàn yī fu.",
+          "english": "I want to give a piece of clothing to my friend."
+        },
+        {
+          "chinese": "给我找一件便宜的吧。",
+          "pinyin": "Gěi wǒ zhǎo yī jiàn pián yi de ba.",
+          "english": "Find me an inexpensive one."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 给 mean as a preposition?",
+          "type": "multiple_choice",
+          "correct": "For / To (someone)",
+          "options": [
+            "For / To (someone)",
+            "From",
+            "With",
+            "Without"
+          ]
+        },
+        {
+          "question": "How do you say 'Give this to me'?",
+          "type": "multiple_choice",
+          "correct": "把这个给我。",
+          "options": [
+            "把这个给我。",
+            "把这个从我。",
+            "把这个对我。",
+            "把这个在我。"
+          ],
+          "correct_pinyin": "Bǎ zhè gè gěi wǒ."
+        },
+        {
+          "question": "Fill in: 她送___妈妈一件新衣服。(She gave her mother a new piece of clothing as a gift.)",
+          "type": "multiple_choice",
+          "correct": "给",
+          "options": [
+            "给",
+            "对",
+            "从",
+            "在"
+          ],
+          "option_pinyin": [
+            "gěi",
+            "duì",
+            "cóng",
+            "zài"
+          ]
+        },
+        {
+          "question": "What does 送给朋友 mean?",
+          "type": "multiple_choice",
+          "correct": "Give to a friend as a gift",
+          "options": [
+            "Give to a friend as a gift",
+            "Sell to a friend",
+            "Buy from a friend",
+            "Look for a friend"
+          ],
+          "option_pinyin": [
+            "sòng gěi péng you",
+            "mài gěi péng you",
+            "cóng péng you mǎi",
+            "zhǎo péng you"
+          ]
+        },
+        {
+          "question": "How do you say 'give me a look' (let me see it)?",
+          "type": "multiple_choice",
+          "correct": "给我看一下",
+          "options": [
+            "给我看一下",
+            "给我穿一下",
+            "给我买一下",
+            "给我找一下"
+          ],
+          "option_pinyin": [
+            "gěi wǒ kàn yī xià",
+            "gěi wǒ chuān yī xià",
+            "gěi wǒ mǎi yī xià",
+            "gěi wǒ zhǎo yī xià"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 穿 mean?",
+      "type": "multiple_choice",
+      "correct": "To wear / To put on",
+      "options": [
+        "To carry",
+        "To wear / To put on",
+        "To buy",
+        "To sell"
+      ]
+    },
+    {
+      "question": "What does 便宜 mean?",
+      "type": "multiple_choice",
+      "correct": "Cheap / Inexpensive",
+      "options": [
+        "Cheap / Inexpensive",
+        "Expensive",
+        "Pretty",
+        "Common"
+      ]
+    },
+    {
+      "question": "What does 贵 mean?",
+      "type": "multiple_choice",
+      "correct": "Expensive",
+      "options": [
+        "Cheap",
+        "Expensive",
+        "Big",
+        "Small"
+      ]
+    },
+    {
+      "question": "What does 给 mean as a preposition?",
+      "type": "multiple_choice",
+      "correct": "For / To (someone)",
+      "options": [
+        "From",
+        "For / To (someone)",
+        "With",
+        "Against"
+      ]
+    },
+    {
+      "question": "What does 送 mean?",
+      "type": "multiple_choice",
+      "correct": "To give as a present / To deliver",
+      "options": [
+        "To sell",
+        "To buy",
+        "To give as a present / To deliver",
+        "To carry"
+      ]
+    },
+    {
+      "question": "What does 一下 do when placed after a verb?",
+      "type": "multiple_choice",
+      "correct": "Softens the action",
+      "options": [
+        "Softens the action",
+        "Completes the action",
+        "Negates the action",
+        "Repeats the action"
+      ]
+    },
+    {
+      "question": "What does 卖 mean?",
+      "type": "multiple_choice",
+      "correct": "To sell",
+      "options": [
+        "To buy",
+        "To sell",
+        "To give",
+        "To find"
+      ]
+    },
+    {
+      "question": "What does 快乐 mean?",
+      "type": "multiple_choice",
+      "correct": "Happy / Joyful",
+      "options": [
+        "Fast",
+        "Happy / Joyful",
+        "Beautiful",
+        "Big"
+      ]
+    },
+    {
+      "question": "What does 吧 at the end of a sentence do?",
+      "type": "multiple_choice",
+      "correct": "Makes a suggestion or seeks confirmation",
+      "options": [
+        "Marks completed action",
+        "Makes a suggestion or seeks confirmation",
+        "Forms a negative",
+        "Asks for information"
+      ]
+    },
+    {
+      "question": "What does 找 mean in a shopping context?",
+      "type": "multiple_choice",
+      "correct": "To give change",
+      "options": [
+        "To find a shop",
+        "To look for clothes",
+        "To give change",
+        "To buy something"
+      ]
+    },
+    {
+      "question": "Which sentence means 'Take this one'?",
+      "type": "multiple_choice",
+      "correct": "拿这件吧。",
+      "options": [
+        "买这件吧。",
+        "卖这件吧。",
+        "拿这件吧。",
+        "穿这件吧。"
+      ]
+    },
+    {
+      "question": "What does 件 mean?",
+      "type": "multiple_choice",
+      "correct": "[measure word for clothing]",
+      "options": [
+        "[measure word for books]",
+        "[measure word for clothing]",
+        "[measure word for people]",
+        "[measure word for animals]"
+      ]
+    },
+    {
+      "question": "How do you say 'Let me have a look'?",
+      "type": "multiple_choice",
+      "correct": "给我看一下。",
+      "options": [
+        "给我看一下。",
+        "给我买一下。",
+        "给我穿一下。",
+        "给我卖一下。"
+      ]
+    },
+    {
+      "question": "Fill in: 这件衣服___便宜。(This item of clothing is quite cheap.) — choose the best option",
+      "type": "multiple_choice",
+      "correct": "很",
+      "options": [
+        "很",
+        "吧",
+        "了",
+        "着"
+      ]
+    },
+    {
+      "question": "What does 颜色 mean?",
+      "type": "multiple_choice",
+      "correct": "Colour",
+      "options": [
+        "Size",
+        "Style",
+        "Colour",
+        "Price"
+      ]
+    },
+    {
+      "question": "How do you say 'wear this one'?",
+      "type": "multiple_choice",
+      "correct": "穿这件吧",
+      "options": [
+        "穿这件吧",
+        "买这件吧",
+        "卖这件吧",
+        "送这件吧"
+      ]
+    },
+    {
+      "question": "What does 颜色好看 mean?",
+      "type": "multiple_choice",
+      "correct": "The colour looks nice",
+      "options": [
+        "The colour looks nice",
+        "The colour is expensive",
+        "The size is nice",
+        "The colour is cheap"
+      ]
+    },
+    {
+      "question": "How do you say 'give to a friend as a gift'?",
+      "type": "multiple_choice",
+      "correct": "送给朋友",
+      "options": [
+        "送给朋友",
+        "买给朋友",
+        "卖给朋友",
+        "找给朋友"
+      ]
+    },
+    {
+      "question": "What does 穿起来快乐 mean?",
+      "type": "multiple_choice",
+      "correct": "Feel happy wearing it",
+      "options": [
+        "Feel happy wearing it",
+        "Happy to buy it",
+        "Find it cheap",
+        "Look beautiful wearing it"
+      ]
+    },
+    {
+      "question": "What does 便宜一点儿 mean?",
+      "type": "multiple_choice",
+      "correct": "A bit cheaper",
+      "options": [
+        "A bit cheaper",
+        "A bit more expensive",
+        "A bit larger",
+        "A bit smaller"
+      ]
+    },
+    {
+      "question": "How do you say 'feel happy wearing it'?",
+      "type": "multiple_choice",
+      "correct": "穿起来快乐",
+      "options": [
+        "穿起来快乐",
+        "买起来快乐",
+        "穿起来便宜",
+        "看起来快乐"
+      ]
+    },
+    {
+      "question": "Which phrase means 'the colour looks nice'?",
+      "type": "multiple_choice",
+      "correct": "颜色好看",
+      "options": [
+        "颜色好看",
+        "颜色很贵",
+        "价格好看",
+        "颜色便宜"
+      ]
+    },
+    {
+      "question": "Fill in: 我想___给朋友一件衣服，你帮我___一下。(I want to give a piece of clothing to my friend; help me look for one.)",
+      "type": "multiple_choice",
+      "correct": "送 / 找",
+      "options": [
+        "送 / 找",
+        "给 / 买",
+        "卖 / 穿",
+        "买 / 送"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "At the Clothing Shop",
+      "title_chinese": "在服装店",
+      "speakers": {
+        "A": {
+          "name": "小美",
+          "role": "顾客",
+          "gender": "female"
+        },
+        "B": {
+          "name": "服务员",
+          "role": "店员",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你好，这件衣服多少钱？",
+          "pinyin": "Nǐ hǎo, zhè jiàn yī fu duō shǎo qián?",
+          "english": "Hello, how much is this item of clothing?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "这件两百块，颜色很好看。",
+          "pinyin": "Zhè jiàn liǎng bǎi kuài, yán sè hěn hǎo kàn.",
+          "english": "This one is 200 yuan; the colour is very nice."
+        },
+        {
+          "speaker": "A",
+          "chinese": "有点儿贵，有没有便宜一点儿的？",
+          "pinyin": "Yǒu diǎnr guì, yǒu méi yǒu pián yi yī diǎnr de?",
+          "english": "It's a little expensive; is there anything cheaper?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "有，拿这件吧，一百二，很便宜。",
+          "pinyin": "Yǒu, ná zhè jiàn ba, yī bǎi èr, hěn pián yi.",
+          "english": "Yes, take this one; it's 120 yuan, very cheap."
+        },
+        {
+          "speaker": "A",
+          "chinese": "给我看一下，我想送给朋友。",
+          "pinyin": "Gěi wǒ kàn yī xià, wǒ xiǎng sòng gěi péng you.",
+          "english": "Let me have a look; I want to give it to a friend as a gift."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好的，穿起来非常好看，你朋友一定很快乐！",
+          "pinyin": "Hǎo de, chuān qǐ lái fēi cháng hǎo kàn, nǐ péng you yī dìng hěn kuài lè!",
+          "english": "Sure; it looks great when worn; your friend will definitely be very happy!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Buying a Gift",
+      "title_chinese": "买礼物",
+      "speakers": {
+        "A": {
+          "name": "小刚",
+          "role": "买家",
+          "gender": "male"
+        },
+        "B": {
+          "name": "小华",
+          "role": "朋友",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "我想给妈妈买一件衣服，你觉得哪件好？",
+          "pinyin": "Wǒ xiǎng gěi māma mǎi yī jiàn yī fu, nǐ jué de nǎ jiàn hǎo?",
+          "english": "I want to buy my mum a piece of clothing; which one do you think is good?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "拿这件吧，颜色好看，也不贵。",
+          "pinyin": "Ná zhè jiàn ba, yán sè hǎo kàn, yě bú guì.",
+          "english": "Take this one; the colour is nice and it's not expensive."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这里卖多少钱？",
+          "pinyin": "Zhè lǐ mài duō shǎo qián?",
+          "english": "How much does it sell for here?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "九十八，很便宜，我也买一件！",
+          "pinyin": "Jiǔ shí bā, hěn pián yi, wǒ yě mǎi yī jiàn!",
+          "english": "Ninety-eight; very cheap — I'll buy one too!"
+        },
+        {
+          "speaker": "A",
+          "chinese": "好，我们一起买，送给妈妈，她一定很快乐！",
+          "pinyin": "Hǎo, wǒ men yī qǐ mǎi, sòng gěi māma, tā yī dìng hěn kuài lè!",
+          "english": "Good, we'll buy together and give it to mum — she will definitely be very happy!"
+        }
+      ]
+    }
+  ]
+}

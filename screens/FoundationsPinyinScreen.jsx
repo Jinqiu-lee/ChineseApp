@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { speakPinyin } from '../utils/tts';
@@ -23,7 +23,7 @@ const TONE_VOWELS = [
   { vowel: 'e', marks: ['ē','é','ě','è'] },
   { vowel: 'i', marks: ['ī','í','ǐ','ì'] },
   { vowel: 'u', marks: ['ū','ú','ǔ','ù'] },
-  { vowel: 'ü', marks: ['ǖ','ǘ','ǚ','ǜ'], audioKeys: ['nv1','nv2','nv3','nv4'] },
+  { vowel: 'ü', marks: ['ǖ','ǘ','ǚ','ǜ'], audioKeys: ['v1','v2','v3','v4'] },
 ];
 
 const INITIALS = [
@@ -68,7 +68,6 @@ function SectionHeader({ emoji, title, sub, open, onToggle, alwaysOpen = false }
 
 // ── Screen ────────────────────────────────────────────────────────────────────
 export default function FoundationsPinyinScreen({ onBack, lessonContext = null, onOpenPinyinSystem }) {
-  const [tonesOpen, setTonesOpen] = useState(false);
 
   return (
     <SafeAreaView style={styles.safe}>
@@ -93,6 +92,18 @@ export default function FoundationsPinyinScreen({ onBack, lessonContext = null, 
           </Text>
         </View>
 
+        {/* Pinyin Learning System CTA */}
+        {onOpenPinyinSystem && (
+          <TouchableOpacity style={styles.systemBtn} onPress={onOpenPinyinSystem} activeOpacity={0.85}>
+            <Text style={styles.systemBtnEmoji}>🎓</Text>
+            <View style={{ flex: 1 }}>
+              <Text style={styles.systemBtnTitle}>Pinyin Learning System</Text>
+              <Text style={styles.systemBtnSub}>10 structured lessons · Quizzes · Progress tracking</Text>
+            </View>
+            <Text style={styles.systemBtnArrow}>→</Text>
+          </TouchableOpacity>
+        )}
+
         {/* Lesson context back-link */}
         {lessonContext && (
           <TouchableOpacity style={styles.contextBanner} onPress={onBack} activeOpacity={0.8}>
@@ -105,90 +116,7 @@ export default function FoundationsPinyinScreen({ onBack, lessonContext = null, 
           </TouchableOpacity>
         )}
 
-        {/* ══ SECTION 1 · TONES (collapsible) ═══════════════════════════════ */}
-        <SectionHeader
-          emoji="🎵" title="The Four Tones" sub="Tap to expand"
-          open={tonesOpen} onToggle={() => setTonesOpen(o => !o)}
-        />
-
-        {tonesOpen && (
-          <View style={styles.sectionBody}>
-
-            <Text style={styles.bodyNote}>
-              Every syllable in Mandarin has a tone. The same syllable with a different tone means a completely different word!
-            </Text>
-
-            {/* 4 tone description cards */}
-            {TONES.map((tone) => (
-              <TouchableOpacity
-                key={tone.num}
-                style={[styles.toneCard, { borderColor: tone.color + '88', backgroundColor: tone.color + '12' }]}
-                onPress={() => speakPinyin(tone.pinyin)}
-                activeOpacity={0.75}
-              >
-                <View style={[styles.toneBadge, { backgroundColor: tone.color }]}>
-                  <Text style={styles.toneBadgeNum}>{tone.num}</Text>
-                </View>
-                <View style={styles.toneCardBody}>
-                  <View style={styles.toneCardTop}>
-                    <Text style={[styles.toneMark, { color: tone.color }]}>{tone.mark}</Text>
-                    <Text style={styles.toneName}>{tone.name}</Text>
-                  </View>
-                  <Text style={styles.toneDesc}>{tone.desc}</Text>
-                  <View style={styles.toneExampleRow}>
-                    <Text style={styles.toneChar}>{tone.example}</Text>
-                    <Text style={styles.tonePinyin}>{tone.pinyin}</Text>
-                    <Text style={styles.toneMeaning}>"{tone.meaning}"</Text>
-                  </View>
-                </View>
-                <Text style={[styles.audioIcon, { color: tone.color }]}>🔊</Text>
-              </TouchableOpacity>
-            ))}
-
-            {/* Tone mark grid — all vowels */}
-            <Text style={styles.gridLabel}>TONE MARKS ON EACH VOWEL — tap to hear</Text>
-            <View style={styles.toneGrid}>
-              {/* Column headers */}
-              <View style={styles.toneGridRow}>
-                <Text style={[styles.toneGridCell, styles.toneGridHeader, styles.toneGridVowelCol]} />
-                {TONE_COLORS.map((c, i) => (
-                  <Text key={i} style={[styles.toneGridCell, styles.toneGridHeader, { color: c }]}>
-                    T{i + 1}
-                  </Text>
-                ))}
-              </View>
-              {/* Rows per vowel */}
-              {TONE_VOWELS.map(({ vowel, marks, audioKeys }) => (
-                <View key={vowel} style={styles.toneGridRow}>
-                  <Text style={[styles.toneGridCell, styles.toneGridVowelCol, styles.toneGridVowelLabel]}>
-                    {vowel}
-                  </Text>
-                  {marks.map((mark, i) => (
-                    <TouchableOpacity
-                      key={i}
-                      style={styles.toneGridCellBtn}
-                      onPress={() => speakPinyin(audioKeys?.[i] ?? mark)}
-                      activeOpacity={0.65}
-                    >
-                      <Text style={[styles.toneGridMark, { color: TONE_COLORS[i] }]}>{mark}</Text>
-                    </TouchableOpacity>
-                  ))}
-                </View>
-              ))}
-            </View>
-
-            {/* Tone rules tip */}
-            <View style={styles.tipBox}>
-              <Text style={styles.tipTitle}>💡 Tone Rules</Text>
-              <Text style={styles.tipText}>• Tone 3 + Tone 3 → first becomes Tone 2  (e.g. 你好 nǐhǎo → níhǎo)</Text>
-              <Text style={styles.tipText}>• 不 bù becomes bú before any Tone 4 word</Text>
-              <Text style={styles.tipText}>• 一 yī changes tone based on what follows it</Text>
-              <Text style={styles.tipText}>• Neutral tone (no mark) is short and light — e.g. 妈妈 māma</Text>
-            </View>
-          </View>
-        )}
-
-        {/* ══ SECTION 2 · INITIALS (always open) ════════════════════════════ */}
+        {/* ══ SECTION 1 · INITIALS (always open) ════════════════════════════ */}
         <SectionHeader emoji="🔤" title="Initials (声母)" alwaysOpen />
         <View style={[styles.sectionBody, { paddingTop: 0 }]}>
           <Text style={styles.bodyNote}>
@@ -234,17 +162,82 @@ export default function FoundationsPinyinScreen({ onBack, lessonContext = null, 
           ))}
         </View>
 
-        {/* Pinyin Learning System CTA */}
-        {onOpenPinyinSystem && (
-          <TouchableOpacity style={styles.systemBtn} onPress={onOpenPinyinSystem} activeOpacity={0.85}>
-            <Text style={styles.systemBtnEmoji}>🎓</Text>
-            <View style={{ flex: 1 }}>
-              <Text style={styles.systemBtnTitle}>Pinyin Learning System</Text>
-              <Text style={styles.systemBtnSub}>10 structured lessons · Quizzes · Progress tracking</Text>
+        {/* ══ SECTION 3 · TONES (always open) ════════════════════════════════ */}
+        <SectionHeader emoji="🎵" title="The Four Tones" alwaysOpen />
+        <View style={styles.sectionBody}>
+
+          <Text style={styles.bodyNote}>
+            Every syllable in Mandarin has a tone. The same syllable with a different tone means a completely different word!
+          </Text>
+
+          {/* 4 tone description cards */}
+          {TONES.map((tone) => (
+            <TouchableOpacity
+              key={tone.num}
+              style={[styles.toneCard, { borderColor: tone.color + '88', backgroundColor: tone.color + '12' }]}
+              onPress={() => speakPinyin(tone.pinyin)}
+              activeOpacity={0.75}
+            >
+              <View style={[styles.toneBadge, { backgroundColor: tone.color }]}>
+                <Text style={styles.toneBadgeNum}>{tone.num}</Text>
+              </View>
+              <View style={styles.toneCardBody}>
+                <View style={styles.toneCardTop}>
+                  <Text style={[styles.toneMark, { color: tone.color }]}>{tone.mark}</Text>
+                  <Text style={styles.toneName}>{tone.name}</Text>
+                </View>
+                <Text style={styles.toneDesc}>{tone.desc}</Text>
+                <View style={styles.toneExampleRow}>
+                  <Text style={styles.toneChar}>{tone.example}</Text>
+                  <Text style={styles.tonePinyin}>{tone.pinyin}</Text>
+                  <Text style={styles.toneMeaning}>"{tone.meaning}"</Text>
+                </View>
+              </View>
+              <Text style={[styles.audioIcon, { color: tone.color }]}>🔊</Text>
+            </TouchableOpacity>
+          ))}
+
+          {/* Tone mark grid — all vowels */}
+          <Text style={styles.gridLabel}>TONE MARKS ON EACH VOWEL — tap to hear</Text>
+          <View style={styles.toneGrid}>
+            {/* Column headers */}
+            <View style={styles.toneGridRow}>
+              <Text style={[styles.toneGridCell, styles.toneGridHeader, styles.toneGridVowelCol]} />
+              {TONE_COLORS.map((c, i) => (
+                <Text key={i} style={[styles.toneGridCell, styles.toneGridHeader, { color: c }]}>
+                  T{i + 1}
+                </Text>
+              ))}
             </View>
-            <Text style={styles.systemBtnArrow}>→</Text>
-          </TouchableOpacity>
-        )}
+            {/* Rows per vowel */}
+            {TONE_VOWELS.map(({ vowel, marks, audioKeys }) => (
+              <View key={vowel} style={styles.toneGridRow}>
+                <Text style={[styles.toneGridCell, styles.toneGridVowelCol, styles.toneGridVowelLabel]}>
+                  {vowel}
+                </Text>
+                {marks.map((mark, i) => (
+                  <TouchableOpacity
+                    key={i}
+                    style={styles.toneGridCellBtn}
+                    onPress={() => speakPinyin(audioKeys?.[i] ?? mark)}
+                    activeOpacity={0.65}
+                  >
+                    <Text style={[styles.toneGridMark, { color: TONE_COLORS[i] }]}>{mark}</Text>
+                  </TouchableOpacity>
+                ))}
+              </View>
+            ))}
+          </View>
+
+          {/* Tone rules tip */}
+          <View style={styles.tipBox}>
+            <Text style={styles.tipTitle}>💡 Tone Rules</Text>
+            <Text style={styles.tipText}>• Tone 3 + Tone 3 → first becomes Tone 2  (e.g. 你好 nǐhǎo → níhǎo)</Text>
+            <Text style={styles.tipText}>• 不 bù becomes bú before any Tone 4 word</Text>
+            <Text style={styles.tipText}>• 一 yī changes tone based on what follows it</Text>
+            <Text style={styles.tipText}>• Neutral tone (no mark) is short and light — e.g. 妈妈 māma</Text>
+          </View>
+        </View>
 
         {/* Practice reminder */}
         <View style={styles.practiceReminder}>

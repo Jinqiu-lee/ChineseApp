@@ -22,18 +22,20 @@ const TYPE_META = {
 const TONE_COLORS = { '1': '#FF6B6B', '2': '#FF9F43', '3': '#1DD1A1', '4': '#54A0FF', '0': '#a29bfe' };
 
 export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
-  const { type, syllable, audio_key, prompt, correct, choices, hint } = exercise;
-  const [selected,  setSelected]  = useState(null);
-  const [answered,  setAnswered]  = useState(false);
-  const [revealed,  setRevealed]  = useState(false);
+  const { type, syllable, audio_key, prompt, correct, choices, hint, pinyin_hint } = exercise;
+  const [selected,   setSelected]   = useState(null);
+  const [answered,   setAnswered]   = useState(false);
+  const [revealed,   setRevealed]   = useState(false);
+  const [showPinyin, setShowPinyin] = useState(false);
 
   const meta = TYPE_META[type] ?? TYPE_META.visual_tone;
   const isListen = meta.showAudio;
 
-  // For initials/finals use the audio_key (isolated sound); for tones/syllables use the syllable itself
+  // For initials/finals use the audio_key (isolated sound); for tones/syllables prefer audio_key
+  // (audio_key may be a compound key like "yi2_ge4" that can't be derived from the display syllable)
   const getPlayTarget = () => {
     if (type === 'listen_initial' || type === 'listen_final') return audio_key;
-    return syllable || audio_key;
+    return audio_key || syllable;
   };
 
   useEffect(() => {
@@ -110,6 +112,26 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
         </View>
       )}
 
+      {/* Show Pinyin — only for exercises with Chinese characters (pinyin_hint field) */}
+      {pinyin_hint && (
+        <View style={styles.showPinyinRow}>
+          <TouchableOpacity
+            style={[styles.showPinyinBtn, showPinyin && styles.showPinyinBtnActive]}
+            onPress={() => setShowPinyin(v => !v)}
+            activeOpacity={0.75}
+          >
+            <Text style={[styles.showPinyinText, showPinyin && styles.showPinyinTextActive]}>
+              👁  Show Pinyin
+            </Text>
+          </TouchableOpacity>
+          {showPinyin && (
+            <View style={styles.pinyinPill}>
+              <Text style={styles.pinyinPillText}>{pinyin_hint}</Text>
+            </View>
+          )}
+        </View>
+      )}
+
       {/* Choices */}
       <View style={styles.choices}>
         {choices.map((choice, i) => (
@@ -181,4 +203,13 @@ const styles = StyleSheet.create({
 
   toneChoiceInner: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   toneDot:         { width: 12, height: 12, borderRadius: 6 },
+
+  // Show Pinyin
+  showPinyinRow:      { flexDirection: 'row', alignItems: 'center', gap: 10, marginBottom: 16 },
+  showPinyinBtn:      { paddingHorizontal: 14, paddingVertical: 8, borderRadius: 20, borderWidth: 1.5, borderColor: '#2d3436' },
+  showPinyinBtnActive:{ borderColor: '#54A0FF', backgroundColor: 'rgba(84,160,255,0.12)' },
+  showPinyinText:     { fontSize: 13, fontWeight: '600', color: '#636e72' },
+  showPinyinTextActive:{ color: '#54A0FF' },
+  pinyinPill:         { backgroundColor: 'rgba(84,160,255,0.12)', borderRadius: 12, paddingHorizontal: 14, paddingVertical: 6, borderWidth: 1, borderColor: '#54A0FF55' },
+  pinyinPillText:     { fontSize: 18, fontWeight: '800', color: '#54A0FF', letterSpacing: 1 },
 });

@@ -13,13 +13,15 @@ const NEXT_LEVEL = {
   hsk5: { emoji: '🎓', name: 'Level 6 – Advanced' },
 };
 
-// Import quiz data - data folder is in root
-import quizData from '../data/hsk1/hsk1_level_quiz.json';
+// Import quiz data for each level
+import hsk1QuizData from '../data/hsk1/hsk1_level_quiz.json';
+import hsk2QuizData from '../data/hsk2/hsk2_level_quiz.json';
 
-/**
- * LevelQuizScreen - HSK1 Final Quiz
- * 30 questions with pinyin support
- */
+const QUIZ_BY_LEVEL = {
+  hsk1: hsk1QuizData,
+  hsk2: hsk2QuizData,
+};
+
 export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -28,6 +30,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
   const [showReview, setShowReview] = useState(false);
   const [score, setScore] = useState(0);
 
+  const quizData = QUIZ_BY_LEVEL[currentLevelId] || hsk1QuizData;
   const question = quizData.questions[currentQuestion];
   const totalQuestions = quizData.total_questions;
   const progress = ((currentQuestion + 1) / totalQuestions) * 100;

@@ -1,0 +1,978 @@
+{
+  "lesson": 6,
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Food & Health",
+  "topic_chinese": "饮食与健康",
+  "vocabulary": [
+    {
+      "id": "hsk2_l6_01",
+      "chinese": "好吃",
+      "pinyin": "hǎo chī",
+      "tones": [
+        3,
+        1
+      ],
+      "english": "Delicious / Tasty",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l6_02",
+      "chinese": "吃完",
+      "pinyin": "chī wán",
+      "tones": [
+        1,
+        2
+      ],
+      "english": "Finish eating / Eat up",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l6_03",
+      "chinese": "饱",
+      "pinyin": "bǎo",
+      "tones": [
+        3
+      ],
+      "english": "Full (after eating)",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l6_04",
+      "chinese": "真",
+      "pinyin": "zhēn",
+      "tones": [
+        1
+      ],
+      "english": "Really / Truly / So (+ adjective)",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l6_05",
+      "chinese": "已经",
+      "pinyin": "yǐ jīng",
+      "tones": [
+        3,
+        1
+      ],
+      "english": "Already",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l6_06",
+      "chinese": "因为",
+      "pinyin": "yīn wèi",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "Because",
+      "part_of_speech": "conjunction"
+    },
+    {
+      "id": "hsk2_l6_07",
+      "chinese": "虽然",
+      "pinyin": "suī rán",
+      "tones": [
+        1,
+        2
+      ],
+      "english": "Although / Even though",
+      "part_of_speech": "conjunction"
+    },
+    {
+      "id": "hsk2_l6_08",
+      "chinese": "但是",
+      "pinyin": "dàn shì",
+      "tones": [
+        4,
+        4
+      ],
+      "english": "But / However",
+      "part_of_speech": "conjunction"
+    },
+    {
+      "id": "hsk2_l6_09",
+      "chinese": "还",
+      "pinyin": "hái",
+      "tones": [
+        2
+      ],
+      "english": "Still / Also / Even",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l6_10",
+      "chinese": "再",
+      "pinyin": "zài",
+      "tones": [
+        4
+      ],
+      "english": "Again / More / Another",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l6_11",
+      "chinese": "碗",
+      "pinyin": "wǎn",
+      "tones": [
+        3
+      ],
+      "english": "Bowl / [measure word for bowls]",
+      "part_of_speech": "noun/measure word"
+    },
+    {
+      "id": "hsk2_l6_12",
+      "chinese": "鸡蛋",
+      "pinyin": "jī dàn",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "Egg (chicken egg)",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l6_p01",
+      "chinese": "真好吃",
+      "pinyin": "zhēn hǎo chī",
+      "tones": [
+        1,
+        3,
+        1
+      ],
+      "english": "Really delicious",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p02",
+      "chinese": "已经吃完了",
+      "pinyin": "yǐ jīng chī wán le",
+      "tones": [
+        3,
+        1,
+        1,
+        2,
+        0
+      ],
+      "english": "Already finished eating",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p03",
+      "chinese": "再吃一碗",
+      "pinyin": "zài chī yī wǎn",
+      "tones": [
+        4,
+        1,
+        1,
+        3
+      ],
+      "english": "Eat another bowl",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p04",
+      "chinese": "因为太饱了",
+      "pinyin": "yīn wèi tài bǎo le",
+      "tones": [
+        1,
+        4,
+        4,
+        3,
+        0
+      ],
+      "english": "Because (I'm) too full",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p05",
+      "chinese": "还没吃完",
+      "pinyin": "hái méi chī wán",
+      "tones": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "english": "Haven't finished eating yet",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p06",
+      "chinese": "虽然好吃但是饱了",
+      "pinyin": "suī rán hǎo chī dàn shì bǎo le",
+      "tones": [
+        1,
+        2,
+        3,
+        1,
+        4,
+        4,
+        3,
+        0
+      ],
+      "english": "Although it's delicious, (I'm) full",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p07",
+      "chinese": "这碗鸡蛋",
+      "pinyin": "zhè wǎn jī dàn",
+      "tones": [
+        4,
+        3,
+        1,
+        4
+      ],
+      "english": "This bowl of eggs",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p08",
+      "chinese": "还想再吃",
+      "pinyin": "hái xiǎng zài chī",
+      "tones": [
+        2,
+        3,
+        4,
+        1
+      ],
+      "english": "Still want to eat more",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hsk2_l6_p01",
+      "chinese": "真好吃",
+      "pinyin": "zhēn hǎo chī",
+      "tones": [
+        1,
+        3,
+        1
+      ],
+      "english": "Really delicious",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p02",
+      "chinese": "已经吃完了",
+      "pinyin": "yǐ jīng chī wán le",
+      "tones": [
+        3,
+        1,
+        1,
+        2,
+        0
+      ],
+      "english": "Already finished eating",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p03",
+      "chinese": "再吃一碗",
+      "pinyin": "zài chī yī wǎn",
+      "tones": [
+        4,
+        1,
+        1,
+        3
+      ],
+      "english": "Eat another bowl",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p04",
+      "chinese": "因为太饱了",
+      "pinyin": "yīn wèi tài bǎo le",
+      "tones": [
+        1,
+        4,
+        4,
+        3,
+        0
+      ],
+      "english": "Because (I'm) too full",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p05",
+      "chinese": "还没吃完",
+      "pinyin": "hái méi chī wán",
+      "tones": [
+        2,
+        2,
+        1,
+        2
+      ],
+      "english": "Haven't finished eating yet",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p06",
+      "chinese": "虽然好吃但是饱了",
+      "pinyin": "suī rán hǎo chī dàn shì bǎo le",
+      "tones": [
+        1,
+        2,
+        3,
+        1,
+        4,
+        4,
+        3,
+        0
+      ],
+      "english": "Although it's delicious, (I'm) full",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p07",
+      "chinese": "这碗鸡蛋",
+      "pinyin": "zhè wǎn jī dàn",
+      "tones": [
+        4,
+        3,
+        1,
+        4
+      ],
+      "english": "This bowl of eggs",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l6_p08",
+      "chinese": "还想再吃",
+      "pinyin": "hái xiǎng zài chī",
+      "tones": [
+        2,
+        3,
+        4,
+        1
+      ],
+      "english": "Still want to eat more",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "为什么不吃了？",
+      "pinyin": "Wèi shén me bù chī le?",
+      "english": "Why don't you eat anymore?"
+    },
+    {
+      "chinese": "虽然很好吃，但是我已经饱了。",
+      "pinyin": "Suī rán hěn hǎo chī, dàn shì wǒ yǐ jīng bǎo le.",
+      "english": "Although it's very delicious, I'm already full."
+    },
+    {
+      "chinese": "因为天气太热，所以我不想吃饭。",
+      "pinyin": "Yīn wèi tiān qì tài rè, suǒ yǐ wǒ bù xiǎng chī fàn.",
+      "english": "Because the weather is too hot, I don't want to eat."
+    },
+    {
+      "chinese": "你再吃一碗鸡蛋面条吧！",
+      "pinyin": "Nǐ zài chī yī wǎn jī dàn miàn tiáo ba!",
+      "english": "Have another bowl of egg noodles!"
+    },
+    {
+      "chinese": "他已经吃完了，还想再吃。",
+      "pinyin": "Tā yǐ jīng chī wán le, hái xiǎng zài chī.",
+      "english": "He has already finished eating but still wants to eat more."
+    },
+    {
+      "chinese": "这碗鸡蛋真好吃！",
+      "pinyin": "Zhè wǎn jī dàn zhēn hǎo chī!",
+      "english": "This bowl of eggs is really delicious!"
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "虽然...但是... — Although...But...",
+      "explanation": "虽然 (suī rán) means 'although / even though' and 但是 (dàn shì) means 'but / however'. They always appear together as a pair. Structure: 虽然 + Clause 1, 但是 + Clause 2. The subject can appear before 虽然 or after it. Note: In Chinese, 但是 must follow even though English can drop 'but'.",
+      "examples": [
+        {
+          "chinese": "虽然很好吃，但是我已经饱了。",
+          "pinyin": "Suī rán hěn hǎo chī, dàn shì wǒ yǐ jīng bǎo le.",
+          "english": "Although it's very delicious, I'm already full."
+        },
+        {
+          "chinese": "虽然贵，但是质量很好。",
+          "pinyin": "Suī rán guì, dàn shì zhì liàng hěn hǎo.",
+          "english": "Although it's expensive, the quality is very good."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 虽然 mean?",
+          "type": "multiple_choice",
+          "correct": "Although / Even though",
+          "options": [
+            "Because",
+            "Although / Even though",
+            "Therefore",
+            "And"
+          ]
+        },
+        {
+          "question": "Which sentence correctly uses 虽然...但是...?",
+          "type": "multiple_choice",
+          "correct": "虽然他忙，但是他来了。",
+          "options": [
+            "虽然他忙，但是他来了。",
+            "因为他忙，但是他来了。",
+            "虽然他忙，所以他来了。",
+            "虽然他忙，他来了。"
+          ],
+          "correct_pinyin": "Suī rán tā máng, dàn shì tā lái le."
+        },
+        {
+          "question": "Fill in: ___这道菜好吃，___我已经饱了。",
+          "type": "multiple_choice",
+          "correct": "虽然 / 但是",
+          "options": [
+            "虽然 / 但是",
+            "因为 / 所以",
+            "如果 / 就",
+            "不但 / 而且"
+          ]
+        },
+        {
+          "question": "Which phrase means 'although it's delicious but I'm full'?",
+          "type": "multiple_choice",
+          "correct": "虽然好吃但是饱了",
+          "options": [
+            "虽然好吃但是饱了",
+            "因为好吃所以饱了",
+            "真好吃已经饱了",
+            "还没吃完已经饱了"
+          ],
+          "option_pinyin": [
+            "suī rán hǎo chī dàn shì bǎo le",
+            "yīn wèi hǎo chī suǒ yǐ bǎo le",
+            "zhēn hǎo chī yǐ jīng bǎo le",
+            "hái méi chī wán yǐ jīng bǎo le"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "因为...所以... — Because...Therefore...",
+      "explanation": "因为 (yīn wèi) means 'because' and 所以 (suǒ yǐ) means 'therefore / so'. They pair together to express cause and effect. Structure: 因为 + Cause, 所以 + Result. Either part can be used alone in context, but together they make the logic very clear.",
+      "examples": [
+        {
+          "chinese": "因为天气太热，所以我不想吃饭。",
+          "pinyin": "Yīn wèi tiān qì tài rè, suǒ yǐ wǒ bù xiǎng chī fàn.",
+          "english": "Because the weather is too hot, I don't want to eat."
+        },
+        {
+          "chinese": "因为他已经饱了，所以不再吃了。",
+          "pinyin": "Yīn wèi tā yǐ jīng bǎo le, suǒ yǐ bù zài chī le.",
+          "english": "Because he is already full, he won't eat anymore."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 所以 mean?",
+          "type": "multiple_choice",
+          "correct": "Therefore / So",
+          "options": [
+            "Although",
+            "But",
+            "Therefore / So",
+            "Because"
+          ]
+        },
+        {
+          "question": "Which sentence correctly uses 因为...所以...?",
+          "type": "multiple_choice",
+          "correct": "因为好吃，所以我多吃了一碗。",
+          "options": [
+            "因为好吃，所以我多吃了一碗。",
+            "虽然好吃，所以我多吃了一碗。",
+            "因为好吃，但是我多吃了一碗。",
+            "所以好吃，因为我多吃了一碗。"
+          ],
+          "correct_pinyin": "Yīn wèi hǎo chī, suǒ yǐ wǒ duō chī le yī wǎn."
+        },
+        {
+          "question": "Fill in: ___他不饿，___不想吃饭。",
+          "type": "multiple_choice",
+          "correct": "因为 / 所以",
+          "options": [
+            "因为 / 所以",
+            "虽然 / 但是",
+            "如果 / 就",
+            "不但 / 而且"
+          ]
+        },
+        {
+          "question": "What does 因为太饱了 mean?",
+          "type": "multiple_choice",
+          "correct": "Because I'm too full",
+          "options": [
+            "Because I'm too full",
+            "Because it's too delicious",
+            "Because I already ate",
+            "Because there's no more"
+          ],
+          "option_pinyin": [
+            "yīn wèi tài bǎo le",
+            "yīn wèi tài hǎo chī le",
+            "yīn wèi yǐ jīng chī le",
+            "yīn wèi méi yǒu le"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "了 indicating Change of State",
+      "explanation": "了 (le) placed at the end of a sentence can indicate a change of state or a new situation. This is different from 了 after a verb (completed action). Sentence-final 了 often translates as 'now', 'already', or signals that something is different. Examples: 我饱了 (I'm full now — I wasn't before); 天黑了 (It's gotten dark); 不吃了 (Not eating anymore — stopping now).",
+      "examples": [
+        {
+          "chinese": "我已经饱了，不吃了。",
+          "pinyin": "Wǒ yǐ jīng bǎo le, bù chī le.",
+          "english": "I'm already full; I'm not eating anymore."
+        },
+        {
+          "chinese": "为什么不吃了？",
+          "pinyin": "Wèi shén me bù chī le?",
+          "english": "Why don't you eat anymore?"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does sentence-final 了 indicate?",
+          "type": "multiple_choice",
+          "correct": "A change of state or new situation",
+          "options": [
+            "A change of state or new situation",
+            "A completed action",
+            "A future plan",
+            "A question"
+          ]
+        },
+        {
+          "question": "What does 我饱了 mean?",
+          "type": "multiple_choice",
+          "correct": "I am full now (change of state)",
+          "options": [
+            "I was full",
+            "I am full now (change of state)",
+            "I will be full",
+            "I am eating"
+          ]
+        },
+        {
+          "question": "Which sentence uses 了 to mark a change of state?",
+          "type": "multiple_choice",
+          "correct": "天气热了。",
+          "options": [
+            "天气热了。",
+            "我吃了饭。",
+            "他来了一次。",
+            "她买了一件。"
+          ],
+          "correct_pinyin": "Tiān qì rè le."
+        },
+        {
+          "question": "What does 还没吃完 mean?",
+          "type": "multiple_choice",
+          "correct": "Haven't finished eating yet",
+          "options": [
+            "Haven't finished eating yet",
+            "Already finished eating",
+            "Ate too much",
+            "Don't want to eat"
+          ],
+          "option_pinyin": [
+            "hái méi chī wán",
+            "yǐ jīng chī wán le",
+            "chī de tài duō",
+            "bù xiǎng chī"
+          ]
+        },
+        {
+          "question": "How do you say 'still want to eat more'?",
+          "type": "multiple_choice",
+          "correct": "还想再吃",
+          "options": [
+            "还想再吃",
+            "不想再吃",
+            "已经吃完了",
+            "因为太饱了"
+          ],
+          "option_pinyin": [
+            "hái xiǎng zài chī",
+            "bù xiǎng zài chī",
+            "yǐ jīng chī wán le",
+            "yīn wèi tài bǎo le"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 好吃 mean?",
+      "type": "multiple_choice",
+      "correct": "Delicious / Tasty",
+      "options": [
+        "Good to drink",
+        "Delicious / Tasty",
+        "Easy to eat",
+        "Favourite food"
+      ]
+    },
+    {
+      "question": "What does 饱 mean?",
+      "type": "multiple_choice",
+      "correct": "Full (after eating)",
+      "options": [
+        "Hungry",
+        "Full (after eating)",
+        "Thirsty",
+        "Tired"
+      ]
+    },
+    {
+      "question": "What does 真 mean?",
+      "type": "multiple_choice",
+      "correct": "Really / Truly / So",
+      "options": [
+        "Very much",
+        "A little",
+        "Really / Truly / So",
+        "Not at all"
+      ]
+    },
+    {
+      "question": "What does 虽然 mean?",
+      "type": "multiple_choice",
+      "correct": "Although / Even though",
+      "options": [
+        "Because",
+        "Therefore",
+        "Although / Even though",
+        "And"
+      ]
+    },
+    {
+      "question": "What does 因为 mean?",
+      "type": "multiple_choice",
+      "correct": "Because",
+      "options": [
+        "Because",
+        "Although",
+        "But",
+        "So"
+      ]
+    },
+    {
+      "question": "Which sentence means 'Why don't you eat anymore'?",
+      "type": "multiple_choice",
+      "correct": "为什么不吃了？",
+      "options": [
+        "为什么不吃了？",
+        "为什么不吃吗？",
+        "为什么不再吃？",
+        "为什么已经吃了？"
+      ]
+    },
+    {
+      "question": "What does 碗 mean?",
+      "type": "multiple_choice",
+      "correct": "Bowl",
+      "options": [
+        "Plate",
+        "Cup",
+        "Bowl",
+        "Chopsticks"
+      ]
+    },
+    {
+      "question": "What does 鸡蛋 mean?",
+      "type": "multiple_choice",
+      "correct": "Egg (chicken egg)",
+      "options": [
+        "Chicken",
+        "Egg (chicken egg)",
+        "Fish",
+        "Meat"
+      ]
+    },
+    {
+      "question": "Fill in: ___好吃，___我已经饱了。(Although delicious, I'm already full.)",
+      "type": "multiple_choice",
+      "correct": "虽然 / 但是",
+      "options": [
+        "虽然 / 但是",
+        "因为 / 所以",
+        "如果 / 就",
+        "不 / 也"
+      ]
+    },
+    {
+      "question": "What does sentence-final 了 indicate?",
+      "type": "multiple_choice",
+      "correct": "A change of state",
+      "options": [
+        "Completed action",
+        "A change of state",
+        "Future plan",
+        "Ongoing action"
+      ]
+    },
+    {
+      "question": "What does 已经 mean?",
+      "type": "multiple_choice",
+      "correct": "Already",
+      "options": [
+        "Not yet",
+        "Still",
+        "Already",
+        "Again"
+      ]
+    },
+    {
+      "question": "What does 再 mean in '再吃一碗'?",
+      "type": "multiple_choice",
+      "correct": "Another / More",
+      "options": [
+        "First",
+        "Also",
+        "Another / More",
+        "Last"
+      ]
+    },
+    {
+      "question": "What does 但是 mean?",
+      "type": "multiple_choice",
+      "correct": "But / However",
+      "options": [
+        "Therefore",
+        "Because",
+        "Although",
+        "But / However"
+      ]
+    },
+    {
+      "question": "Fill in: ___天气热，___我不想跑步。(Because the weather is hot, I don't want to run.)",
+      "type": "multiple_choice",
+      "correct": "因为 / 所以",
+      "options": [
+        "虽然 / 但是",
+        "因为 / 所以",
+        "如果 / 就",
+        "再 / 也"
+      ]
+    },
+    {
+      "question": "What does 还 mean in '还想再吃'?",
+      "type": "multiple_choice",
+      "correct": "Still",
+      "options": [
+        "Already",
+        "Not yet",
+        "Still",
+        "Again"
+      ]
+    },
+    {
+      "question": "What does 还想再吃 mean?",
+      "type": "multiple_choice",
+      "correct": "Still want to eat more",
+      "options": [
+        "Still want to eat more",
+        "Already finished eating",
+        "Don't want to eat",
+        "Eat another bowl"
+      ]
+    },
+    {
+      "question": "How do you say 'already finished eating'?",
+      "type": "multiple_choice",
+      "correct": "已经吃完了",
+      "options": [
+        "已经吃完了",
+        "还没吃完",
+        "再吃一碗",
+        "因为太饱了"
+      ]
+    },
+    {
+      "question": "What does 再吃一碗 mean?",
+      "type": "multiple_choice",
+      "correct": "Eat another bowl",
+      "options": [
+        "Eat another bowl",
+        "Finish this bowl",
+        "Already ate one bowl",
+        "Don't eat anymore"
+      ]
+    },
+    {
+      "question": "How do you say 'this bowl of eggs'?",
+      "type": "multiple_choice",
+      "correct": "这碗鸡蛋",
+      "options": [
+        "这碗鸡蛋",
+        "那碗鸡蛋",
+        "这个鸡蛋",
+        "这件鸡蛋"
+      ]
+    },
+    {
+      "question": "Fill in: ___好吃，___我已经饱了，不___吃了。",
+      "type": "multiple_choice",
+      "correct": "虽然 / 但是 / 再",
+      "options": [
+        "虽然 / 但是 / 再",
+        "因为 / 所以 / 还",
+        "虽然 / 所以 / 已经",
+        "因为 / 但是 / 真"
+      ]
+    },
+    {
+      "question": "What does 真好吃 mean?",
+      "type": "multiple_choice",
+      "correct": "Really delicious",
+      "options": [
+        "Really delicious",
+        "Very full",
+        "Already eaten",
+        "Not delicious"
+      ]
+    },
+    {
+      "question": "How do you say 'already finished eating'?",
+      "type": "multiple_choice",
+      "correct": "已经吃完了",
+      "options": [
+        "已经吃完了",
+        "还没吃完",
+        "再吃一碗",
+        "还想再吃"
+      ]
+    },
+    {
+      "question": "What does 再吃一碗 mean?",
+      "type": "multiple_choice",
+      "correct": "Eat another bowl",
+      "options": [
+        "Eat another bowl",
+        "Already ate a bowl",
+        "Haven't eaten a bowl",
+        "Don't want to eat"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "At the Dinner Table",
+      "title_chinese": "吃饭时",
+      "speakers": {
+        "A": {
+          "name": "妈妈",
+          "role": "母亲",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "儿子",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小明，再吃一碗鸡蛋面条吧！",
+          "pinyin": "Xiǎo Míng, zài chī yī wǎn jī dàn miàn tiáo ba!",
+          "english": "Xiao Ming, have another bowl of egg noodles!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "不了，谢谢，我已经饱了。",
+          "pinyin": "Bù le, xiè xie, wǒ yǐ jīng bǎo le.",
+          "english": "No thanks, I'm already full."
+        },
+        {
+          "speaker": "A",
+          "chinese": "为什么不吃了？这个真好吃！",
+          "pinyin": "Wèi shén me bù chī le? Zhè gè zhēn hǎo chī!",
+          "english": "Why aren't you eating anymore? This is really delicious!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "虽然好吃，但是我已经吃完三碗了。",
+          "pinyin": "Suī rán hǎo chī, dàn shì wǒ yǐ jīng chī wán sān wǎn le.",
+          "english": "Although it's delicious, I've already finished three bowls."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那好，还有鸡蛋，你再吃一个吧。",
+          "pinyin": "Nà hǎo, hái yǒu jī dàn, nǐ zài chī yī gè ba.",
+          "english": "Alright, there are still eggs; have one more."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好吧，因为鸡蛋真好吃！",
+          "pinyin": "Hǎo ba, yīn wèi jī dàn zhēn hǎo chī!",
+          "english": "Okay then, because eggs are really delicious!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Friends Sharing a Meal",
+      "title_chinese": "朋友一起吃饭",
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小华",
+          "role": "朋友",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "这家餐厅的菜真好吃！",
+          "pinyin": "Zhè jiā cān tīng de cài zhēn hǎo chī!",
+          "english": "The food at this restaurant is really delicious!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是啊，虽然贵，但是真的很好吃。",
+          "pinyin": "Shì a, suī rán guì, dàn shì zhēn de hěn hǎo chī.",
+          "english": "Yes, although it's expensive, it's really very delicious."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我还没吃完，你已经饱了吗？",
+          "pinyin": "Wǒ hái méi chī wán, nǐ yǐ jīng bǎo le ma?",
+          "english": "I haven't finished yet; are you already full?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "因为我吃了很多，所以已经饱了。",
+          "pinyin": "Yīn wèi wǒ chī le hěn duō, suǒ yǐ yǐ jīng bǎo le.",
+          "english": "Because I ate a lot, I'm already full."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好，我吃完这碗鸡蛋就不吃了。",
+          "pinyin": "Hǎo, wǒ chī wán zhè wǎn jī dàn jiù bù chī le.",
+          "english": "Okay, I'll finish this bowl of eggs and then stop eating."
+        }
+      ]
+    }
+  ]
+}

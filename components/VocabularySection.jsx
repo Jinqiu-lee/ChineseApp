@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { speakChinese } from '../utils/tts';
 
-export default function VocabularySection({ vocabulary }) {
+export default function VocabularySection({ vocabulary, showPinyin = true }) {
   const words   = (vocabulary || []).filter(v => v.part_of_speech !== 'phrase');
   const phrases = (vocabulary || []).filter(v => v.part_of_speech === 'phrase');
 
   return (
     <View style={styles.container}>
       {words.length > 0 && (
-        <ItemGroup items={words} label="📝 New Words" count={`${words.length} words`} isPhrase={false} />
+        <ItemGroup items={words} label="📝 New Words" count={`${words.length} words`} isPhrase={false} showPinyin={showPinyin} />
       )}
       {phrases.length > 0 && (
-        <ItemGroup items={phrases} label="✨ Key Phrases" count={`${phrases.length} phrases`} isPhrase={true} />
+        <ItemGroup items={phrases} label="✨ Key Phrases" count={`${phrases.length} phrases`} isPhrase={true} showPinyin={showPinyin} />
       )}
     </View>
   );
 }
 
-function ItemGroup({ items, label, count, isPhrase }) {
+function ItemGroup({ items, label, count, isPhrase, showPinyin }) {
   const [expandedId, setExpandedId] = useState(null);
   const toggle = (id) => setExpandedId(prev => prev === id ? null : id);
 
@@ -36,13 +36,14 @@ function ItemGroup({ items, label, count, isPhrase }) {
           isPhrase={isPhrase}
           isExpanded={expandedId === item.id}
           onToggle={() => toggle(item.id)}
+          showPinyin={showPinyin}
         />
       ))}
     </View>
   );
 }
 
-function VocabCard({ item, isPhrase, isExpanded, onToggle }) {
+function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
   return (
     <TouchableOpacity
       style={[styles.card, isPhrase && styles.cardPhrase]}
@@ -54,7 +55,7 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle }) {
           <Text style={[styles.chinese, isPhrase && styles.chinesePhrase]}>
             {item.chinese}
           </Text>
-          <Text style={styles.pinyin}>{item.pinyin}</Text>
+          {showPinyin && <Text style={styles.pinyin}>{item.pinyin}</Text>}
         </View>
 
         <View style={styles.cardRight}>
@@ -72,6 +73,12 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle }) {
 
       {isExpanded && (
         <View style={styles.details}>
+          {!showPinyin && item.pinyin && (
+            <View style={styles.detailRow}>
+              <Text style={styles.detailLabel}>Pinyin:</Text>
+              <Text style={[styles.detailValue, { color: '#a29bfe', fontStyle: 'italic' }]}>{item.pinyin}</Text>
+            </View>
+          )}
           {item.tones?.length > 0 && (
             <View style={styles.detailRow}>
               <Text style={styles.detailLabel}>Tones:</Text>

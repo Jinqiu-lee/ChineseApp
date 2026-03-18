@@ -1,0 +1,974 @@
+{
+  "lesson": 7,
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Commuting & Transportation",
+  "topic_chinese": "通勤与交通",
+  "vocabulary": [
+    {
+      "id": "hsk2_l7_01",
+      "chinese": "离",
+      "pinyin": "lí",
+      "tones": [
+        2
+      ],
+      "english": "To be distant from / Away from",
+      "part_of_speech": "verb/preposition"
+    },
+    {
+      "id": "hsk2_l7_02",
+      "chinese": "远",
+      "pinyin": "yuǎn",
+      "tones": [
+        3
+      ],
+      "english": "Far",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l7_03",
+      "chinese": "近",
+      "pinyin": "jìn",
+      "tones": [
+        4
+      ],
+      "english": "Near / Close",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l7_04",
+      "chinese": "路",
+      "pinyin": "lù",
+      "tones": [
+        4
+      ],
+      "english": "Road / Route",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l7_05",
+      "chinese": "公共汽车",
+      "pinyin": "gōng gòng qì chē",
+      "tones": [
+        1,
+        4,
+        4,
+        1
+      ],
+      "english": "Bus",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l7_06",
+      "chinese": "走",
+      "pinyin": "zǒu",
+      "tones": [
+        3
+      ],
+      "english": "To walk / To go",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l7_07",
+      "chinese": "从",
+      "pinyin": "cóng",
+      "tones": [
+        2
+      ],
+      "english": "From",
+      "part_of_speech": "preposition"
+    },
+    {
+      "id": "hsk2_l7_08",
+      "chinese": "到",
+      "pinyin": "dào",
+      "tones": [
+        4
+      ],
+      "english": "To arrive / To / Until",
+      "part_of_speech": "verb/preposition"
+    },
+    {
+      "id": "hsk2_l7_09",
+      "chinese": "左边",
+      "pinyin": "zuǒ bian",
+      "tones": [
+        3,
+        0
+      ],
+      "english": "On the left",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l7_10",
+      "chinese": "右边",
+      "pinyin": "yòu bian",
+      "tones": [
+        4,
+        0
+      ],
+      "english": "On the right",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l7_11",
+      "chinese": "往",
+      "pinyin": "wǎng",
+      "tones": [
+        3
+      ],
+      "english": "Towards / In the direction of",
+      "part_of_speech": "preposition"
+    },
+    {
+      "id": "hsk2_l7_12",
+      "chinese": "知道",
+      "pinyin": "zhī dào",
+      "tones": [
+        1,
+        4
+      ],
+      "english": "To know / To be aware of",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l7_p01",
+      "chinese": "离公司很近",
+      "pinyin": "lí gōng sī hěn jìn",
+      "tones": [
+        2,
+        1,
+        1,
+        3,
+        4
+      ],
+      "english": "Very close to the company",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p02",
+      "chinese": "从这里到那里",
+      "pinyin": "cóng zhè lǐ dào nà lǐ",
+      "tones": [
+        2,
+        4,
+        3,
+        4,
+        4,
+        3
+      ],
+      "english": "From here to there",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p03",
+      "chinese": "坐公共汽车去",
+      "pinyin": "zuò gōng gòng qì chē qù",
+      "tones": [
+        4,
+        1,
+        4,
+        4,
+        1,
+        4
+      ],
+      "english": "Go by bus",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p04",
+      "chinese": "往左边走",
+      "pinyin": "wǎng zuǒ bian zǒu",
+      "tones": [
+        3,
+        3,
+        0,
+        3
+      ],
+      "english": "Walk to the left",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p05",
+      "chinese": "往右边走",
+      "pinyin": "wǎng yòu bian zǒu",
+      "tones": [
+        3,
+        4,
+        0,
+        3
+      ],
+      "english": "Walk to the right",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p06",
+      "chinese": "走路去",
+      "pinyin": "zǒu lù qù",
+      "tones": [
+        3,
+        4,
+        4
+      ],
+      "english": "Walk there / Go on foot",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p07",
+      "chinese": "离这里很远",
+      "pinyin": "lí zhè lǐ hěn yuǎn",
+      "tones": [
+        2,
+        4,
+        3,
+        3,
+        3
+      ],
+      "english": "Very far from here",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p08",
+      "chinese": "知道怎么走",
+      "pinyin": "zhī dào zěn me zǒu",
+      "tones": [
+        1,
+        4,
+        3,
+        0,
+        3
+      ],
+      "english": "Know how to get there",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hsk2_l7_p01",
+      "chinese": "离公司很近",
+      "pinyin": "lí gōng sī hěn jìn",
+      "tones": [
+        2,
+        1,
+        1,
+        3,
+        4
+      ],
+      "english": "Very close to the company",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p02",
+      "chinese": "从这里到那里",
+      "pinyin": "cóng zhè lǐ dào nà lǐ",
+      "tones": [
+        2,
+        4,
+        3,
+        4,
+        4,
+        3
+      ],
+      "english": "From here to there",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p03",
+      "chinese": "坐公共汽车去",
+      "pinyin": "zuò gōng gòng qì chē qù",
+      "tones": [
+        4,
+        1,
+        4,
+        4,
+        1,
+        4
+      ],
+      "english": "Go by bus",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p04",
+      "chinese": "往左边走",
+      "pinyin": "wǎng zuǒ bian zǒu",
+      "tones": [
+        3,
+        3,
+        0,
+        3
+      ],
+      "english": "Walk to the left",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p05",
+      "chinese": "往右边走",
+      "pinyin": "wǎng yòu bian zǒu",
+      "tones": [
+        3,
+        4,
+        0,
+        3
+      ],
+      "english": "Walk to the right",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p06",
+      "chinese": "走路去",
+      "pinyin": "zǒu lù qù",
+      "tones": [
+        3,
+        4,
+        4
+      ],
+      "english": "Walk there / Go on foot",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p07",
+      "chinese": "离这里很远",
+      "pinyin": "lí zhè lǐ hěn yuǎn",
+      "tones": [
+        2,
+        4,
+        3,
+        3,
+        3
+      ],
+      "english": "Very far from here",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l7_p08",
+      "chinese": "知道怎么走",
+      "pinyin": "zhī dào zěn me zǒu",
+      "tones": [
+        1,
+        4,
+        3,
+        0,
+        3
+      ],
+      "english": "Know how to get there",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "你离公司远吗？",
+      "pinyin": "Nǐ lí gōng sī yuǎn ma?",
+      "english": "Is your company far from you?"
+    },
+    {
+      "chinese": "我家离公司很近，走路只要十分钟。",
+      "pinyin": "Wǒ jiā lí gōng sī hěn jìn, zǒu lù zhǐ yào shí fēn zhōng.",
+      "english": "My home is very close to the company; it only takes ten minutes on foot."
+    },
+    {
+      "chinese": "从火车站到公司怎么走？",
+      "pinyin": "Cóng huǒ chē zhàn dào gōng sī zěn me zǒu?",
+      "english": "How do you get from the train station to the company?"
+    },
+    {
+      "chinese": "你知道怎么坐公共汽车吗？",
+      "pinyin": "Nǐ zhī dào zěn me zuò gōng gòng qì chē ma?",
+      "english": "Do you know how to take the bus?"
+    },
+    {
+      "chinese": "往右边走，在路的左边就到了。",
+      "pinyin": "Wǎng yòu bian zǒu, zài lù de zuǒ bian jiù dào le.",
+      "english": "Walk to the right; it's on the left side of the road."
+    },
+    {
+      "chinese": "从家到学校，我就坐公共汽车去。",
+      "pinyin": "Cóng jiā dào xué xiào, wǒ jiù zuò gōng gòng qì chē qù.",
+      "english": "From home to school, I simply take the bus."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "离 — Expressing Distance",
+      "explanation": "离 (lí) is used to express the distance between two places or two points. Structure: Place A + 离 + Place B + 远/近 (far/close). It can also be followed by a specific measurement. Note: 离 cannot be replaced by 从 in this context. Examples: 我家离学校很近 (My home is close to school); 这里离那里有多远？(How far is it from here to there?)",
+      "examples": [
+        {
+          "chinese": "我家离公司很近。",
+          "pinyin": "Wǒ jiā lí gōng sī hěn jìn.",
+          "english": "My home is very close to the company."
+        },
+        {
+          "chinese": "火车站离这里远不远？",
+          "pinyin": "Huǒ chē zhàn lí zhè lǐ yuǎn bu yuǎn?",
+          "english": "Is the train station far from here?"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which sentence correctly uses 离 to express distance?",
+          "type": "multiple_choice",
+          "correct": "学校离我家很近。",
+          "options": [
+            "学校离我家很近。",
+            "学校从我家很近。",
+            "学校到我家很近。",
+            "学校在我家很近。"
+          ],
+          "correct_pinyin": "Xué xiào lí wǒ jiā hěn jìn."
+        },
+        {
+          "question": "Fill in: 公司___这里远不远？(Is the company far from here?)",
+          "type": "multiple_choice",
+          "correct": "离",
+          "options": [
+            "离",
+            "从",
+            "到",
+            "往"
+          ],
+          "option_pinyin": [
+            "lí",
+            "cóng",
+            "dào",
+            "wǎng"
+          ]
+        },
+        {
+          "question": "What does 离 express in a sentence?",
+          "type": "multiple_choice",
+          "correct": "Distance between two places",
+          "options": [
+            "Distance between two places",
+            "Direction of movement",
+            "Starting point",
+            "Destination"
+          ]
+        },
+        {
+          "question": "What does 离公司很近 mean?",
+          "type": "multiple_choice",
+          "correct": "Very close to the company",
+          "options": [
+            "Very close to the company",
+            "Very far from the company",
+            "Inside the company",
+            "Away from the company"
+          ],
+          "option_pinyin": [
+            "lí gōng sī hěn jìn",
+            "lí gōng sī hěn yuǎn",
+            "zài gōng sī lǐ miàn",
+            "lí kāi gōng sī"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "从...到... — From...To...",
+      "explanation": "从 (cóng) means 'from' and 到 (dào) means 'to'. Together, 从...到... expresses a range of time or place. Structure: 从 + Start + 到 + End + Verb. It can express spatial distance (from place A to place B) or temporal range (from time A to time B). Examples: 从家到公司 (from home to the company); 从早上到晚上 (from morning to evening).",
+      "examples": [
+        {
+          "chinese": "从火车站到公司怎么走？",
+          "pinyin": "Cóng huǒ chē zhàn dào gōng sī zěn me zǒu?",
+          "english": "How do you get from the train station to the company?"
+        },
+        {
+          "chinese": "从早上到晚上，他都在上班。",
+          "pinyin": "Cóng zǎo shang dào wǎn shang, tā dōu zài shàng bān.",
+          "english": "From morning to evening, he is at work."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 从...到... express?",
+          "type": "multiple_choice",
+          "correct": "A range from start to end (place or time)",
+          "options": [
+            "A range from start to end (place or time)",
+            "Distance between two places",
+            "Direction of movement",
+            "The reason for an action"
+          ]
+        },
+        {
+          "question": "How do you say 'from home to school'?",
+          "type": "multiple_choice",
+          "correct": "从家到学校",
+          "options": [
+            "从家到学校",
+            "离家到学校",
+            "往家到学校",
+            "在家到学校"
+          ],
+          "correct_pinyin": "cóng jiā dào xué xiào"
+        },
+        {
+          "question": "Fill in: ___这里___公司，要走多久？(How long does it take to walk from here to the company?)",
+          "type": "multiple_choice",
+          "correct": "从 / 到",
+          "options": [
+            "从 / 到",
+            "离 / 到",
+            "往 / 到",
+            "在 / 到"
+          ]
+        },
+        {
+          "question": "How do you say 'from here to there'?",
+          "type": "multiple_choice",
+          "correct": "从这里到那里",
+          "options": [
+            "从这里到那里",
+            "离这里到那里",
+            "往这里到那里",
+            "在这里到那里"
+          ],
+          "option_pinyin": [
+            "cóng zhè lǐ dào nà lǐ",
+            "lí zhè lǐ dào nà lǐ",
+            "wǎng zhè lǐ dào nà lǐ",
+            "zài zhè lǐ dào nà lǐ"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "副词「就」— The Adverb jiù",
+      "explanation": "就 (jiù) is a versatile adverb with several meanings: (1) 'right away / immediately': 我就去 (I'll go right away); (2) 'only / simply / just': 就这样 (just like this); (3) to connect a condition with a result (with 如果/要是): 如果你来，我就高兴 (If you come, I'll be happy); (4) in directions: 就在那里 (it's right there).",
+      "examples": [
+        {
+          "chinese": "从家到公司，我就坐公共汽车。",
+          "pinyin": "Cóng jiā dào gōng sī, wǒ jiù zuò gōng gòng qì chē.",
+          "english": "From home to the company, I simply take the bus."
+        },
+        {
+          "chinese": "往右边走，就到了。",
+          "pinyin": "Wǎng yòu bian zǒu, jiù dào le.",
+          "english": "Walk to the right and you'll be there."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 就 mean in '往右边走，就到了'?",
+          "type": "multiple_choice",
+          "correct": "Then / And you'll be there",
+          "options": [
+            "Then / And you'll be there",
+            "Again",
+            "Still",
+            "Already"
+          ]
+        },
+        {
+          "question": "Fill in: 你知道路，___不用问了。(If you know the way, then you don't need to ask.)",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": [
+            "就",
+            "还",
+            "再",
+            "也"
+          ],
+          "option_pinyin": [
+            "jiù",
+            "hái",
+            "zài",
+            "yě"
+          ]
+        },
+        {
+          "question": "Which sentence uses 就 to mean 'right away'?",
+          "type": "multiple_choice",
+          "correct": "我就去。",
+          "options": [
+            "我就去。",
+            "我都去。",
+            "我也去。",
+            "我还去。"
+          ],
+          "correct_pinyin": "Wǒ jiù qù."
+        },
+        {
+          "question": "What does 知道怎么走 mean?",
+          "type": "multiple_choice",
+          "correct": "Know how to get there",
+          "options": [
+            "Know how to get there",
+            "Know the road name",
+            "Know how to drive",
+            "Understand the direction"
+          ],
+          "option_pinyin": [
+            "zhī dào zěn me zǒu",
+            "zhī dào lù míng",
+            "zhī dào zěn me kāi chē",
+            "míng bái fāng xiàng"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 离 mean?",
+      "type": "multiple_choice",
+      "correct": "To be distant from / Away from",
+      "options": [
+        "From",
+        "To be distant from / Away from",
+        "Towards",
+        "Until"
+      ]
+    },
+    {
+      "question": "What does 远 mean?",
+      "type": "multiple_choice",
+      "correct": "Far",
+      "options": [
+        "Near",
+        "Far",
+        "Close",
+        "Fast"
+      ]
+    },
+    {
+      "question": "What does 近 mean?",
+      "type": "multiple_choice",
+      "correct": "Near / Close",
+      "options": [
+        "Far",
+        "Slow",
+        "Near / Close",
+        "Long"
+      ]
+    },
+    {
+      "question": "What does 公共汽车 mean?",
+      "type": "multiple_choice",
+      "correct": "Bus",
+      "options": [
+        "Train",
+        "Taxi",
+        "Bus",
+        "Aeroplane"
+      ]
+    },
+    {
+      "question": "How do you say 'Is the company far from you'?",
+      "type": "multiple_choice",
+      "correct": "你离公司远吗？",
+      "options": [
+        "你离公司远吗？",
+        "你从公司远吗？",
+        "你到公司远吗？",
+        "你往公司远吗？"
+      ]
+    },
+    {
+      "question": "What does 往 mean?",
+      "type": "multiple_choice",
+      "correct": "Towards / In the direction of",
+      "options": [
+        "From",
+        "Away from",
+        "Towards / In the direction of",
+        "Until"
+      ]
+    },
+    {
+      "question": "What does 从 mean?",
+      "type": "multiple_choice",
+      "correct": "From",
+      "options": [
+        "To",
+        "From",
+        "Towards",
+        "Away from"
+      ]
+    },
+    {
+      "question": "What does 知道 mean?",
+      "type": "multiple_choice",
+      "correct": "To know / To be aware of",
+      "options": [
+        "To understand",
+        "To see",
+        "To know / To be aware of",
+        "To think"
+      ]
+    },
+    {
+      "question": "Which sentence correctly uses 离?",
+      "type": "multiple_choice",
+      "correct": "学校离我家很近。",
+      "options": [
+        "学校离我家很近。",
+        "学校从我家很近。",
+        "学校到我家很近。",
+        "学校往我家很近。"
+      ]
+    },
+    {
+      "question": "What does 路 mean?",
+      "type": "multiple_choice",
+      "correct": "Road / Route",
+      "options": [
+        "Bridge",
+        "Road / Route",
+        "Street name",
+        "Building"
+      ]
+    },
+    {
+      "question": "How do you say 'from home to school'?",
+      "type": "multiple_choice",
+      "correct": "从家到学校",
+      "options": [
+        "离家到学校",
+        "从家到学校",
+        "往家到学校",
+        "在家到学校"
+      ]
+    },
+    {
+      "question": "What does 走 mean?",
+      "type": "multiple_choice",
+      "correct": "To walk / To go",
+      "options": [
+        "To run",
+        "To walk / To go",
+        "To drive",
+        "To fly"
+      ]
+    },
+    {
+      "question": "Fill in: 往右边___，就到了。(Walk to the right and you'll be there.)",
+      "type": "multiple_choice",
+      "correct": "走",
+      "options": [
+        "走",
+        "到",
+        "离",
+        "从"
+      ]
+    },
+    {
+      "question": "What does 就 express in directions?",
+      "type": "multiple_choice",
+      "correct": "Then / right there",
+      "options": [
+        "Also",
+        "Still",
+        "Then / right there",
+        "Again"
+      ]
+    },
+    {
+      "question": "What does 到 mean?",
+      "type": "multiple_choice",
+      "correct": "To arrive / To",
+      "options": [
+        "From",
+        "Away from",
+        "Towards",
+        "To arrive / To"
+      ]
+    },
+    {
+      "question": "What does 离公司很近 mean?",
+      "type": "multiple_choice",
+      "correct": "Very close to the company",
+      "options": [
+        "Very close to the company",
+        "Very far from the company",
+        "Inside the company",
+        "Near the road"
+      ]
+    },
+    {
+      "question": "How do you say 'go by bus'?",
+      "type": "multiple_choice",
+      "correct": "坐公共汽车去",
+      "options": [
+        "坐公共汽车去",
+        "走路去",
+        "从这里去",
+        "往左边走"
+      ]
+    },
+    {
+      "question": "What does 知道怎么走 mean?",
+      "type": "multiple_choice",
+      "correct": "Know how to get there",
+      "options": [
+        "Know how to get there",
+        "Know how to drive",
+        "Know where it is",
+        "Know the road name"
+      ]
+    },
+    {
+      "question": "How do you say 'walk to the right'?",
+      "type": "multiple_choice",
+      "correct": "往右边走",
+      "options": [
+        "往右边走",
+        "往左边走",
+        "从右边走",
+        "到右边走"
+      ]
+    },
+    {
+      "question": "Fill in: ___这里___公司，我每天___路去。(From here to the company, I walk every day.)",
+      "type": "multiple_choice",
+      "correct": "从 / 到 / 走",
+      "options": [
+        "从 / 到 / 走",
+        "离 / 往 / 坐",
+        "往 / 从 / 到",
+        "到 / 从 / 离"
+      ]
+    },
+    {
+      "question": "What does 坐公共汽车去 mean?",
+      "type": "multiple_choice",
+      "correct": "Go by bus",
+      "options": [
+        "Go by bus",
+        "Walk to work",
+        "Take a taxi",
+        "Drive there"
+      ]
+    },
+    {
+      "question": "What does 离这里很远 mean?",
+      "type": "multiple_choice",
+      "correct": "Very far from here",
+      "options": [
+        "Very far from here",
+        "Very close to here",
+        "Right here",
+        "Not far from here"
+      ]
+    },
+    {
+      "question": "How do you say 'walk to the left'?",
+      "type": "multiple_choice",
+      "correct": "往左边走",
+      "options": [
+        "往左边走",
+        "往右边走",
+        "从左边走",
+        "离左边走"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Asking for Directions",
+      "title_chinese": "问路",
+      "speakers": {
+        "A": {
+          "name": "小明",
+          "role": "路人",
+          "gender": "male"
+        },
+        "B": {
+          "name": "大叔",
+          "role": "当地人",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "请问，这里离火车站远吗？",
+          "pinyin": "Qǐng wèn, zhè lǐ lí huǒ chē zhàn yuǎn ma?",
+          "english": "Excuse me, is the train station far from here?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "不远，从这里到火车站走路十分钟就到了。",
+          "pinyin": "Bù yuǎn, cóng zhè lǐ dào huǒ chē zhàn zǒu lù shí fēn zhōng jiù dào le.",
+          "english": "Not far; from here to the train station is ten minutes on foot."
+        },
+        {
+          "speaker": "A",
+          "chinese": "怎么走？往左边还是右边？",
+          "pinyin": "Zěn me zǒu? Wǎng zuǒ bian hái shì yòu bian?",
+          "english": "How do I get there? To the left or the right?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "往右边走，沿着这条路走，就到了。",
+          "pinyin": "Wǎng yòu bian zǒu, yán zhe zhè tiáo lù zǒu, jiù dào le.",
+          "english": "Walk to the right, follow this road, and you'll be there."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好的，我知道了，谢谢！",
+          "pinyin": "Hǎo de, wǒ zhī dào le, xiè xie!",
+          "english": "Okay, I know now; thank you!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Getting to Work",
+      "title_chinese": "怎么上班",
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "同事",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "同事",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你家离公司远吗？",
+          "pinyin": "Nǐ jiā lí gōng sī yuǎn ma?",
+          "english": "Is your home far from the company?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "比较远，从家到公司要一个小时。",
+          "pinyin": "Bǐ jiào yuǎn, cóng jiā dào gōng sī yào yī gè xiǎo shí.",
+          "english": "It's quite far; from home to the company takes an hour."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你怎么来？坐公共汽车吗？",
+          "pinyin": "Nǐ zěn me lái? Zuò gōng gòng qì chē ma?",
+          "english": "How do you get here? By bus?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是的，我就坐公共汽车来，很方便。",
+          "pinyin": "Shì de, wǒ jiù zuò gōng gòng qì chē lái, hěn fāng biàn.",
+          "english": "Yes, I simply take the bus; it's very convenient."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我家离这里很近，走路就来了。",
+          "pinyin": "Wǒ jiā lí zhè lǐ hěn jìn, zǒu lù jiù lái le.",
+          "english": "My home is very close; I just walk here."
+        },
+        {
+          "speaker": "B",
+          "chinese": "真好，你知道这附近有公共汽车站吗？",
+          "pinyin": "Zhēn hǎo, nǐ zhī dào zhè fù jìn yǒu gōng gòng qì chē zhàn ma?",
+          "english": "That's great. Do you know if there's a bus stop nearby?"
+        }
+      ]
+    }
+  ]
+}

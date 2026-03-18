@@ -1,0 +1,763 @@
+{
+  "lesson": 2,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Timing & Return",
+  "topic_chinese": "他什么时候回来",
+  "vocabulary": [
+    {
+      "id": "hsk3_l2_01",
+      "chinese": "刮风",
+      "pinyin": "guā fēng",
+      "tones": [1, 1],
+      "english": "To be windy / Wind is blowing",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l2_02",
+      "chinese": "风",
+      "pinyin": "fēng",
+      "tones": [1],
+      "english": "Wind",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l2_03",
+      "chinese": "差不多",
+      "pinyin": "chà bu duō",
+      "tones": [4, 0, 1],
+      "english": "Almost / About the same / Approximately",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l2_04",
+      "chinese": "大约",
+      "pinyin": "dà yuē",
+      "tones": [4, 1],
+      "english": "Approximately / About",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l2_05",
+      "chinese": "左右",
+      "pinyin": "zuǒ yòu",
+      "tones": [3, 4],
+      "english": "Around / Approximately (after numbers)",
+      "part_of_speech": "noun/adverb"
+    },
+    {
+      "id": "hsk3_l2_06",
+      "chinese": "总是",
+      "pinyin": "zǒng shì",
+      "tones": [3, 4],
+      "english": "Always / Constantly",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l2_07",
+      "chinese": "习惯",
+      "pinyin": "xí guàn",
+      "tones": [2, 4],
+      "english": "Habit / To be accustomed to",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk3_l2_08",
+      "chinese": "愿意",
+      "pinyin": "yuàn yì",
+      "tones": [4, 4],
+      "english": "Willing to / Would like to",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l2_09",
+      "chinese": "行",
+      "pinyin": "xíng",
+      "tones": [2],
+      "english": "OK / Alright / Fine",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk3_l2_10",
+      "chinese": "进来",
+      "pinyin": "jìn lái",
+      "tones": [4, 2],
+      "english": "Come in / Enter",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l2_11",
+      "chinese": "出去",
+      "pinyin": "chū qù",
+      "tones": [1, 4],
+      "english": "Go out / Exit",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l2_12",
+      "chinese": "回来",
+      "pinyin": "huí lái",
+      "tones": [2, 2],
+      "english": "Come back / Return",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l2_p01",
+      "chinese": "差不多两点",
+      "pinyin": "chà bu duō liǎng diǎn",
+      "tones": [4, 0, 1, 3, 3],
+      "english": "Around two o'clock",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l2_p02",
+      "chinese": "大约五分钟",
+      "pinyin": "dà yuē wǔ fēn zhōng",
+      "tones": [4, 1, 3, 1, 1],
+      "english": "About five minutes",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l2_p03",
+      "chinese": "总是这样",
+      "pinyin": "zǒng shì zhè yàng",
+      "tones": [3, 4, 4, 4],
+      "english": "Always like this",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l2_p04",
+      "chinese": "愿意帮忙",
+      "pinyin": "yuàn yì bāng máng",
+      "tones": [4, 4, 1, 2],
+      "english": "Willing to help",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l2_p05",
+      "chinese": "进来吧",
+      "pinyin": "jìn lái ba",
+      "tones": [4, 2, 0],
+      "english": "Come on in",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l2_p06",
+      "chinese": "什么时候回来",
+      "pinyin": "shén me shí hou huí lái",
+      "tones": [2, 0, 2, 0, 2, 2],
+      "english": "When will (he/she) come back",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l2_p07",
+      "chinese": "习惯了",
+      "pinyin": "xí guàn le",
+      "tones": [2, 4, 0],
+      "english": "Got used to it / Accustomed now",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l2_p08",
+      "chinese": "出去一趟",
+      "pinyin": "chū qù yī tàng",
+      "tones": [1, 4, 1, 4],
+      "english": "Go out for a bit",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "他什么时候回来？",
+      "pinyin": "Tā shén me shí hou huí lái?",
+      "english": "When will he come back?"
+    },
+    {
+      "chinese": "他大约三点左右回来。",
+      "pinyin": "Tā dà yuē sān diǎn zuǒ yòu huí lái.",
+      "english": "He'll come back at around three o'clock."
+    },
+    {
+      "chinese": "今天刮风，差不多五度左右。",
+      "pinyin": "Jīn tiān guā fēng, chà bu duō wǔ dù zuǒ yòu.",
+      "english": "It's windy today, about five degrees or so."
+    },
+    {
+      "chinese": "他总是这么早出去，我已经习惯了。",
+      "pinyin": "Tā zǒng shì zhè me zǎo chū qù, wǒ yǐ jīng xí guàn le.",
+      "english": "He always goes out this early; I'm already used to it."
+    },
+    {
+      "chinese": "你愿意帮我等他回来吗？",
+      "pinyin": "Nǐ yuàn yì bāng wǒ děng tā huí lái ma?",
+      "english": "Are you willing to help me wait for him to come back?"
+    },
+    {
+      "chinese": "行，请进来吧，外面风太大了。",
+      "pinyin": "Xíng, qǐng jìn lái ba, wài miàn fēng tài dà le.",
+      "english": "OK, come on in; the wind outside is too strong."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "把字句（一）— The Bǎ-Sentence Part 1",
+      "explanation": "把 moves the object before the verb to emphasise what happened to it. Formula: Subject + 把 + Object + Verb + Result/Direction Complement. Used when the verb has a result or direction complement attached. E.g. 把门关上 = close the door (emphasis: the door is now closed). 把书放好 = put the book away properly. This structure cannot be used with simple verbs alone — there must be a result or complement.",
+      "examples": [
+        {
+          "chinese": "请把门关上。",
+          "pinyin": "Qǐng bǎ mén guān shàng.",
+          "english": "Please close the door."
+        },
+        {
+          "chinese": "他把书放好了。",
+          "pinyin": "Tā bǎ shū fàng hǎo le.",
+          "english": "He put the book away properly."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does the 把 structure emphasise?",
+          "type": "multiple_choice",
+          "correct": "What happened to the object",
+          "options": [
+            "What happened to the object",
+            "When the action happened",
+            "Who did the action",
+            "How fast the action was"
+          ]
+        },
+        {
+          "question": "How do you say 'Close the window' using 把?",
+          "type": "multiple_choice",
+          "correct": "把窗户关上。",
+          "options": [
+            "把窗户关上。",
+            "关上窗户把。",
+            "窗户关上把。",
+            "关把窗户上。"
+          ],
+          "option_pinyin": [
+            "Bǎ chuāng hu guān shàng.",
+            "Guān shàng chuāng hu bǎ.",
+            "Chuāng hu guān shàng bǎ.",
+            "Guān bǎ chuāng hu shàng."
+          ],
+          "correct_pinyin": "Bǎ chuāng hu guān shàng."
+        },
+        {
+          "question": "Which sentence uses 把 correctly?",
+          "type": "multiple_choice",
+          "correct": "他把书放好了。",
+          "options": [
+            "他把书放好了。",
+            "他把放书好了。",
+            "把他书放好了。",
+            "他放把书好了。"
+          ]
+        },
+        {
+          "question": "What must come after the verb in a 把 sentence?",
+          "type": "multiple_choice",
+          "correct": "A result or direction complement",
+          "options": [
+            "A result or direction complement",
+            "Nothing — the verb stands alone",
+            "The subject",
+            "A time word"
+          ]
+        },
+        {
+          "question": "What does 把门关上 mean?",
+          "type": "multiple_choice",
+          "correct": "Close the door",
+          "options": [
+            "Close the door",
+            "Open the door",
+            "Go through the door",
+            "Lock the door"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "表示「大约」的词语 — Words for Approximate Numbers",
+      "explanation": "Chinese has several words for approximation. 左右 comes AFTER a number/time: 三点左右 (around 3 o'clock), 十个左右 (about ten). 大约 and 差不多 come BEFORE: 大约三点, 差不多三点. 大约 is more formal; 差不多 also means 'almost the same'. You can combine: 大约三点左右 (though slightly redundant, it's used in speech).",
+      "examples": [
+        {
+          "chinese": "他大约五分钟后回来。",
+          "pinyin": "Tā dà yuē wǔ fēn zhōng hòu huí lái.",
+          "english": "He'll be back in about five minutes."
+        },
+        {
+          "chinese": "三点左右他就出去了。",
+          "pinyin": "Sān diǎn zuǒ yòu tā jiù chū qù le.",
+          "english": "He went out at around three o'clock."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Where does 左右 go relative to the number?",
+          "type": "multiple_choice",
+          "correct": "After the number",
+          "options": [
+            "After the number",
+            "Before the number",
+            "Before the verb",
+            "At the start of the sentence"
+          ]
+        },
+        {
+          "question": "How do you say 'About two o'clock'?",
+          "type": "multiple_choice",
+          "correct": "两点左右",
+          "options": [
+            "两点左右",
+            "左右两点",
+            "大约左右两点",
+            "两点差不多"
+          ],
+          "option_pinyin": [
+            "liǎng diǎn zuǒ yòu",
+            "zuǒ yòu liǎng diǎn",
+            "dà yuē zuǒ yòu liǎng diǎn",
+            "liǎng diǎn chà bu duō"
+          ]
+        },
+        {
+          "question": "Which word also means 'almost the same' in addition to 'approximately'?",
+          "type": "multiple_choice",
+          "correct": "差不多",
+          "options": [
+            "差不多",
+            "大约",
+            "左右",
+            "总是"
+          ],
+          "option_pinyin": [
+            "chà bu duō",
+            "dà yuē",
+            "zuǒ yòu",
+            "zǒng shì"
+          ]
+        },
+        {
+          "question": "Fill in: 他___三点___回来。(He came back at around three.)",
+          "type": "multiple_choice",
+          "correct": "大约 / 左右",
+          "options": [
+            "大约 / 左右",
+            "左右 / 大约",
+            "总是 / 差不多",
+            "差不多 / 总是"
+          ]
+        },
+        {
+          "question": "Which sentence correctly uses an approximation word?",
+          "type": "multiple_choice",
+          "correct": "差不多五分钟就好了。",
+          "options": [
+            "差不多五分钟就好了。",
+            "五分钟差不多就好了。",
+            "就好了差不多五分钟。",
+            "五分钟就差不多好了。"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "总是 vs 一直 — Always vs. All Along",
+      "explanation": "总是 (zǒng shì) means 'always' — a habitual or repeated action. 一直 (yī zhí) means 'continuously / all along' — an uninterrupted action or state. 他总是迟到 = He always comes late (habit). 他一直等我 = He waited for me all along (without stopping). 总是 focuses on repetition; 一直 focuses on continuity.",
+      "examples": [
+        {
+          "chinese": "他总是这么早出去。",
+          "pinyin": "Tā zǒng shì zhè me zǎo chū qù.",
+          "english": "He always goes out this early."
+        },
+        {
+          "chinese": "她一直在等他回来。",
+          "pinyin": "Tā yī zhí zài děng tā huí lái.",
+          "english": "She has been waiting all along for him to come back."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which word expresses a habitual/repeated action?",
+          "type": "multiple_choice",
+          "correct": "总是",
+          "options": [
+            "总是",
+            "一直",
+            "大约",
+            "差不多"
+          ],
+          "option_pinyin": [
+            "zǒng shì",
+            "yī zhí",
+            "dà yuē",
+            "chà bu duō"
+          ]
+        },
+        {
+          "question": "What does 他一直等我 mean?",
+          "type": "multiple_choice",
+          "correct": "He waited for me all along (without stopping)",
+          "options": [
+            "He waited for me all along (without stopping)",
+            "He always waits for me",
+            "He approximately waited for me",
+            "He came back to wait for me"
+          ]
+        },
+        {
+          "question": "Fill in: 他___迟到，我已经___他了。(He always comes late; I've gotten used to him [now].)",
+          "type": "multiple_choice",
+          "correct": "总是 / 习惯",
+          "options": [
+            "总是 / 习惯",
+            "一直 / 愿意",
+            "大约 / 进来",
+            "差不多 / 回来"
+          ]
+        },
+        {
+          "question": "Which sentence means 'She is always willing to help'?",
+          "type": "multiple_choice",
+          "correct": "她总是愿意帮忙。",
+          "options": [
+            "她总是愿意帮忙。",
+            "她一直愿意帮忙。",
+            "她大约愿意帮忙。",
+            "她差不多愿意帮忙。"
+          ]
+        },
+        {
+          "question": "Which word focuses on continuity rather than repetition?",
+          "type": "multiple_choice",
+          "correct": "一直",
+          "options": [
+            "一直",
+            "总是",
+            "左右",
+            "习惯"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 刮风 mean?",
+      "type": "multiple_choice",
+      "correct": "To be windy / Wind is blowing",
+      "options": [
+        "To rain",
+        "To be windy / Wind is blowing",
+        "To snow",
+        "To be sunny"
+      ]
+    },
+    {
+      "question": "What does 差不多 mean?",
+      "type": "multiple_choice",
+      "correct": "Almost / About the same / Approximately",
+      "options": [
+        "Always",
+        "Exactly",
+        "Almost / About the same / Approximately",
+        "Never"
+      ]
+    },
+    {
+      "question": "What does 总是 mean?",
+      "type": "multiple_choice",
+      "correct": "Always / Constantly",
+      "options": [
+        "Sometimes",
+        "Always / Constantly",
+        "Never",
+        "Usually"
+      ]
+    },
+    {
+      "question": "What does 愿意 mean?",
+      "type": "multiple_choice",
+      "correct": "Willing to / Would like to",
+      "options": [
+        "Able to",
+        "Willing to / Would like to",
+        "Need to",
+        "Want to"
+      ]
+    },
+    {
+      "question": "What does 回来 mean?",
+      "type": "multiple_choice",
+      "correct": "Come back / Return",
+      "options": [
+        "Go out",
+        "Come in",
+        "Come back / Return",
+        "Go away"
+      ]
+    },
+    {
+      "question": "What does 行 mean in conversation?",
+      "type": "multiple_choice",
+      "correct": "OK / Alright / Fine",
+      "options": [
+        "No",
+        "OK / Alright / Fine",
+        "Maybe",
+        "Please"
+      ]
+    },
+    {
+      "question": "Where does 左右 go in a time expression?",
+      "type": "multiple_choice",
+      "correct": "After the number/time",
+      "options": [
+        "Before the number/time",
+        "After the number/time",
+        "Before the verb",
+        "After the verb"
+      ]
+    },
+    {
+      "question": "How do you say 'When will he come back?'",
+      "type": "multiple_choice",
+      "correct": "他什么时候回来？",
+      "options": [
+        "他什么时候回来？",
+        "他什么时候出去？",
+        "他什么时候进来？",
+        "他什么时候习惯？"
+      ]
+    },
+    {
+      "question": "Which sentence uses 把 correctly?",
+      "type": "multiple_choice",
+      "correct": "把门关上。",
+      "options": [
+        "把门关上。",
+        "门把关上。",
+        "关上把门。",
+        "门关上把。"
+      ]
+    },
+    {
+      "question": "What is the difference between 总是 and 一直?",
+      "type": "multiple_choice",
+      "correct": "总是 = habitual repetition; 一直 = continuous without stopping",
+      "options": [
+        "总是 = habitual repetition; 一直 = continuous without stopping",
+        "总是 = continuous; 一直 = habitual",
+        "They mean exactly the same thing",
+        "总是 = approximately; 一直 = always"
+      ]
+    },
+    {
+      "question": "What does 习惯 mean?",
+      "type": "multiple_choice",
+      "correct": "Habit / To be accustomed to",
+      "options": [
+        "To like",
+        "To know",
+        "Habit / To be accustomed to",
+        "To remember"
+      ]
+    },
+    {
+      "question": "What does 进来 mean?",
+      "type": "multiple_choice",
+      "correct": "Come in / Enter",
+      "options": [
+        "Go out",
+        "Come back",
+        "Come in / Enter",
+        "Exit"
+      ]
+    },
+    {
+      "question": "Fill in: 他___三点左右___来，我一直等他。(He'll come back at around three; I've been waiting.)",
+      "type": "multiple_choice",
+      "correct": "大约 / 回",
+      "options": [
+        "大约 / 回",
+        "总是 / 出",
+        "差不多 / 进",
+        "左右 / 出"
+      ]
+    },
+    {
+      "question": "What does 大约 mean?",
+      "type": "multiple_choice",
+      "correct": "Approximately / About",
+      "options": [
+        "Exactly",
+        "Approximately / About",
+        "Always",
+        "Around (left/right)"
+      ]
+    },
+    {
+      "question": "Which sentence is correct?",
+      "type": "multiple_choice",
+      "correct": "她总是愿意帮忙。",
+      "options": [
+        "她总是愿意帮忙。",
+        "她愿意总是帮忙。",
+        "总是她愿意帮忙。",
+        "她帮忙总是愿意。"
+      ]
+    },
+    {
+      "question": "What does 差不多两点 mean?",
+      "type": "multiple_choice",
+      "correct": "Around two o'clock",
+      "options": [
+        "Around two o'clock",
+        "Two o'clock exactly",
+        "About two hours",
+        "Before two o'clock"
+      ]
+    },
+    {
+      "question": "What does 愿意帮忙 mean?",
+      "type": "multiple_choice",
+      "correct": "Willing to help",
+      "options": [
+        "Willing to help",
+        "Always helping",
+        "Need to help",
+        "Able to help"
+      ]
+    },
+    {
+      "question": "What does 习惯了 mean?",
+      "type": "multiple_choice",
+      "correct": "Got used to it / Accustomed now",
+      "options": [
+        "Still learning",
+        "Got used to it / Accustomed now",
+        "Never used to it",
+        "Starting to learn"
+      ]
+    },
+    {
+      "question": "What does 出去一趟 mean?",
+      "type": "multiple_choice",
+      "correct": "Go out for a bit",
+      "options": [
+        "Come in quickly",
+        "Go out for a bit",
+        "Return immediately",
+        "Go out often"
+      ]
+    },
+    {
+      "question": "What does 进来吧 mean?",
+      "type": "multiple_choice",
+      "correct": "Come on in",
+      "options": [
+        "Go out please",
+        "Come on in",
+        "Come back now",
+        "Stay outside"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Waiting for Someone to Return",
+      "title_chinese": "等人回来",
+      "speakers": {
+        "A": {"name": "小红", "role": "朋友", "gender": "female"},
+        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "大明，你哥哥什么时候回来？",
+          "pinyin": "Dà Míng, nǐ gē ge shén me shí hou huí lái?",
+          "english": "Da Ming, when will your brother come back?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "他说大约三点左右，差不多快到了。",
+          "pinyin": "Tā shuō dà yuē sān diǎn zuǒ yòu, chà bu duō kuài dào le.",
+          "english": "He said around three o'clock; he should be almost here."
+        },
+        {
+          "speaker": "A",
+          "chinese": "他总是这么晚，你不生气吗？",
+          "pinyin": "Tā zǒng shì zhè me wǎn, nǐ bù shēng qì ma?",
+          "english": "He's always this late; aren't you annoyed?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "没办法，我已经习惯了。",
+          "pinyin": "Méi bàn fǎ, wǒ yǐ jīng xí guàn le.",
+          "english": "Can't do anything about it; I'm already used to it."
+        },
+        {
+          "speaker": "A",
+          "chinese": "今天外面刮风，你愿意在这里等他吗？",
+          "pinyin": "Jīn tiān wài miàn guā fēng, nǐ yuàn yì zài zhè lǐ děng tā ma?",
+          "english": "It's windy outside today; are you willing to wait for him here?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "行，进来吧，我们在里面等他回来。",
+          "pinyin": "Xíng, jìn lái ba, wǒ men zài lǐ miàn děng tā huí lái.",
+          "english": "OK, come in, let's wait inside for him to come back."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Asking About the Weather and Plans",
+      "title_chinese": "聊天气和计划",
+      "speakers": {
+        "A": {"name": "小丽", "role": "同学", "gender": "female"},
+        "B": {"name": "小刚", "role": "同学", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "今天好冷啊，外面一直在刮风。",
+          "pinyin": "Jīn tiān hǎo lěng a, wài miàn yī zhí zài guā fēng.",
+          "english": "It's so cold today; it's been windy outside the whole time."
+        },
+        {
+          "speaker": "B",
+          "chinese": "是啊，风太大了。你打算出去吗？",
+          "pinyin": "Shì a, fēng tài dà le. Nǐ dǎ suàn chū qù ma?",
+          "english": "Indeed, the wind is too strong. Are you planning to go out?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "差不多下午两点我要出去一趟，大约半小时就回来。",
+          "pinyin": "Chà bu duō xià wǔ liǎng diǎn wǒ yào chū qù yī tàng, dà yuē bàn xiǎo shí jiù huí lái.",
+          "english": "At around two in the afternoon I'll go out for a bit, and be back in about half an hour."
+        },
+        {
+          "speaker": "B",
+          "chinese": "行，你出去的时候把门关上，外面风很大。",
+          "pinyin": "Xíng, nǐ chū qù de shí hou bǎ mén guān shàng, wài miàn fēng hěn dà.",
+          "english": "OK, when you go out close the door — the wind outside is very strong."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好的，我总是记得关门，放心吧！",
+          "pinyin": "Hǎo de, wǒ zǒng shì jì de guān mén, fàng xīn ba!",
+          "english": "OK, I always remember to close the door — don't worry!"
+        }
+      ]
+    }
+  ]
+}

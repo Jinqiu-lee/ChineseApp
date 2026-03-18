@@ -1,0 +1,971 @@
+{
+  "lesson": 11,
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Leisure Time 1",
+  "topic_chinese": "休闲时光（一）",
+  "vocabulary": [
+    {
+      "id": "hsk2_l11_01",
+      "chinese": "比",
+      "pinyin": "bǐ",
+      "tones": [
+        3
+      ],
+      "english": "To compare / Than",
+      "part_of_speech": "preposition"
+    },
+    {
+      "id": "hsk2_l11_02",
+      "chinese": "高",
+      "pinyin": "gāo",
+      "tones": [
+        1
+      ],
+      "english": "Tall / High",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l11_03",
+      "chinese": "长",
+      "pinyin": "cháng",
+      "tones": [
+        2
+      ],
+      "english": "Long",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l11_04",
+      "chinese": "大",
+      "pinyin": "dà",
+      "tones": [
+        4
+      ],
+      "english": "Big / Old (for age)",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l11_05",
+      "chinese": "小",
+      "pinyin": "xiǎo",
+      "tones": [
+        3
+      ],
+      "english": "Small / Young",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l11_06",
+      "chinese": "多",
+      "pinyin": "duō",
+      "tones": [
+        1
+      ],
+      "english": "Many / More",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l11_07",
+      "chinese": "少",
+      "pinyin": "shǎo",
+      "tones": [
+        3
+      ],
+      "english": "Few / Less",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l11_08",
+      "chinese": "快",
+      "pinyin": "kuài",
+      "tones": [
+        4
+      ],
+      "english": "Fast / Quick",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l11_09",
+      "chinese": "慢",
+      "pinyin": "màn",
+      "tones": [
+        4
+      ],
+      "english": "Slow",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk2_l11_10",
+      "chinese": "早",
+      "pinyin": "zǎo",
+      "tones": [
+        3
+      ],
+      "english": "Early",
+      "part_of_speech": "adjective/adverb"
+    },
+    {
+      "id": "hsk2_l11_11",
+      "chinese": "晚",
+      "pinyin": "wǎn",
+      "tones": [
+        3
+      ],
+      "english": "Late / Evening",
+      "part_of_speech": "adjective/adverb"
+    },
+    {
+      "id": "hsk2_l11_12",
+      "chinese": "男",
+      "pinyin": "nán",
+      "tones": [
+        2
+      ],
+      "english": "Male / Man",
+      "part_of_speech": "distinguishing word"
+    },
+    {
+      "id": "hsk2_l11_p01",
+      "chinese": "比你大三岁",
+      "pinyin": "bǐ nǐ dà sān suì",
+      "tones": [
+        3,
+        3,
+        4,
+        1,
+        4
+      ],
+      "english": "Three years older than you",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p02",
+      "chinese": "比以前高了",
+      "pinyin": "bǐ yǐ qián gāo le",
+      "tones": [
+        3,
+        3,
+        2,
+        1,
+        0
+      ],
+      "english": "Taller than before",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p03",
+      "chinese": "来得比他早",
+      "pinyin": "lái de bǐ tā zǎo",
+      "tones": [
+        2,
+        0,
+        3,
+        1,
+        3
+      ],
+      "english": "Arrived earlier than him",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p04",
+      "chinese": "走得比我快",
+      "pinyin": "zǒu de bǐ wǒ kuài",
+      "tones": [
+        3,
+        0,
+        3,
+        3,
+        4
+      ],
+      "english": "Walk faster than me",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p05",
+      "chinese": "等了两个小时",
+      "pinyin": "děng le liǎng gè xiǎo shí",
+      "tones": [
+        3,
+        0,
+        3,
+        4,
+        3,
+        2
+      ],
+      "english": "Waited for two hours",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p06",
+      "chinese": "比她高一点儿",
+      "pinyin": "bǐ tā gāo yī diǎnr",
+      "tones": [
+        3,
+        1,
+        1,
+        1,
+        3
+      ],
+      "english": "A little taller than her",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p07",
+      "chinese": "男生比女生多",
+      "pinyin": "nán shēng bǐ nǚ shēng duō",
+      "tones": [
+        2,
+        1,
+        3,
+        3,
+        1,
+        1
+      ],
+      "english": "There are more male students than female",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p08",
+      "chinese": "头发比较长",
+      "pinyin": "tóu fa bǐ jiào cháng",
+      "tones": [
+        2,
+        0,
+        3,
+        4,
+        2
+      ],
+      "english": "Hair is relatively long",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hsk2_l11_p01",
+      "chinese": "比你大三岁",
+      "pinyin": "bǐ nǐ dà sān suì",
+      "tones": [
+        3,
+        3,
+        4,
+        1,
+        4
+      ],
+      "english": "Three years older than you",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p02",
+      "chinese": "比以前高了",
+      "pinyin": "bǐ yǐ qián gāo le",
+      "tones": [
+        3,
+        3,
+        2,
+        1,
+        0
+      ],
+      "english": "Taller than before",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p03",
+      "chinese": "来得比他早",
+      "pinyin": "lái de bǐ tā zǎo",
+      "tones": [
+        2,
+        0,
+        3,
+        1,
+        3
+      ],
+      "english": "Arrived earlier than him",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p04",
+      "chinese": "走得比我快",
+      "pinyin": "zǒu de bǐ wǒ kuài",
+      "tones": [
+        3,
+        0,
+        3,
+        3,
+        4
+      ],
+      "english": "Walk faster than me",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p05",
+      "chinese": "等了两个小时",
+      "pinyin": "děng le liǎng gè xiǎo shí",
+      "tones": [
+        3,
+        0,
+        3,
+        4,
+        3,
+        2
+      ],
+      "english": "Waited for two hours",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p06",
+      "chinese": "比她高一点儿",
+      "pinyin": "bǐ tā gāo yī diǎnr",
+      "tones": [
+        3,
+        1,
+        1,
+        1,
+        3
+      ],
+      "english": "A little taller than her",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p07",
+      "chinese": "男生比女生多",
+      "pinyin": "nán shēng bǐ nǚ shēng duō",
+      "tones": [
+        2,
+        1,
+        3,
+        3,
+        1,
+        1
+      ],
+      "english": "There are more male students than female",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l11_p08",
+      "chinese": "头发比较长",
+      "pinyin": "tóu fa bǐ jiào cháng",
+      "tones": [
+        2,
+        0,
+        3,
+        4,
+        2
+      ],
+      "english": "Hair is relatively long",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "他比你大三岁。",
+      "pinyin": "Tā bǐ nǐ dà sān suì.",
+      "english": "He is three years older than you."
+    },
+    {
+      "chinese": "我比她高一点儿。",
+      "pinyin": "Wǒ bǐ tā gāo yī diǎnr.",
+      "english": "I am a little taller than her."
+    },
+    {
+      "chinese": "他走得比我快多了。",
+      "pinyin": "Tā zǒu de bǐ wǒ kuài duō le.",
+      "english": "He walks much faster than me."
+    },
+    {
+      "chinese": "我等了两个小时，他才来。",
+      "pinyin": "Wǒ děng le liǎng gè xiǎo shí, tā cái lái.",
+      "english": "I waited for two hours before he came."
+    },
+    {
+      "chinese": "她来得比他早。",
+      "pinyin": "Tā lái de bǐ tā zǎo.",
+      "english": "She arrived earlier than he did."
+    },
+    {
+      "chinese": "男生比女生跑得快。",
+      "pinyin": "Nán shēng bǐ nǚ shēng pǎo de kuài.",
+      "english": "Male students run faster than female students."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "「比」字句(2) — The bǐ Sentence Summary 2",
+      "explanation": "The 比 sentence is used to make comparisons. Structure: A + 比 + B + Adjective (+ Degree/Amount). To express a specific difference: A + 比 + B + Adjective + Amount (e.g., 他比你大三岁). Negative: A + 没有 + B + Adjective (A is not as … as B). 比 cannot be used with 很/非常. A modifier of degree (多了/一点儿) can follow.",
+      "examples": [
+        {
+          "chinese": "他比你大三岁。",
+          "pinyin": "Tā bǐ nǐ dà sān suì.",
+          "english": "He is three years older than you."
+        },
+        {
+          "chinese": "这条路比那条长多了。",
+          "pinyin": "Zhè tiáo lù bǐ nà tiáo cháng duō le.",
+          "english": "This road is much longer than that one."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "How do you say 'She is 5 cm taller than him'?",
+          "type": "multiple_choice",
+          "correct": "她比他高五厘米。",
+          "options": [
+            "她比他高五厘米。",
+            "她很高比他五厘米。",
+            "她高比他五厘米。",
+            "她比他很高五厘米。"
+          ],
+          "correct_pinyin": "Tā bǐ tā gāo wǔ lí mǐ."
+        },
+        {
+          "question": "What does 没有 mean in comparison sentences?",
+          "type": "multiple_choice",
+          "correct": "Is not as ... as (A is less than B)",
+          "options": [
+            "Is not as ... as (A is less than B)",
+            "Is much more than",
+            "Is the same as",
+            "Is approximately"
+          ]
+        },
+        {
+          "question": "Fill in: 今天___昨天冷多了。(Today is much colder than yesterday.)",
+          "type": "multiple_choice",
+          "correct": "比",
+          "options": [
+            "比",
+            "没有",
+            "很",
+            "和"
+          ],
+          "option_pinyin": [
+            "bǐ",
+            "méi yǒu",
+            "hěn",
+            "hé"
+          ]
+        },
+        {
+          "question": "What does 比你大三岁 mean?",
+          "type": "multiple_choice",
+          "correct": "Three years older than you",
+          "options": [
+            "Three years older than you",
+            "Three years younger than you",
+            "Three centimetres taller than you",
+            "Three times bigger than you"
+          ],
+          "option_pinyin": [
+            "bǐ nǐ dà sān suì",
+            "bǐ nǐ xiǎo sān suì",
+            "bǐ nǐ gāo sān lí mǐ",
+            "bǐ nǐ dà sān bèi"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "时量补语 — Time-Measure Complement",
+      "explanation": "The time-measure complement expresses the duration of an action. Structure: Verb + 了 + Duration. If there is an object, it usually goes between the verb and the duration, or the verb is repeated: Verb + Object + Verb + 了 + Duration. Examples: 我等了两个小时 (I waited for two hours); 她学了三年中文 (She studied Chinese for three years).",
+      "examples": [
+        {
+          "chinese": "我等了两个小时。",
+          "pinyin": "Wǒ děng le liǎng gè xiǎo shí.",
+          "english": "I waited for two hours."
+        },
+        {
+          "chinese": "她学了三年中文。",
+          "pinyin": "Tā xué le sān nián zhōng wén.",
+          "english": "She studied Chinese for three years."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does the time-measure complement express?",
+          "type": "multiple_choice",
+          "correct": "The duration of an action",
+          "options": [
+            "The duration of an action",
+            "When an action happened",
+            "How many times an action happened",
+            "The manner of an action"
+          ]
+        },
+        {
+          "question": "Which sentence correctly uses a time-measure complement?",
+          "type": "multiple_choice",
+          "correct": "他跑了三十分钟。",
+          "options": [
+            "他跑了三十分钟。",
+            "他跑三十分钟了。",
+            "他三十分钟跑了。",
+            "他跑三十分钟。"
+          ],
+          "correct_pinyin": "Tā pǎo le sān shí fēn zhōng."
+        },
+        {
+          "question": "How do you say 'I slept for eight hours'?",
+          "type": "multiple_choice",
+          "correct": "我睡了八个小时。",
+          "options": [
+            "我睡了八个小时。",
+            "我八个小时睡了。",
+            "我睡八个小时了。",
+            "我睡觉了八小时。"
+          ],
+          "correct_pinyin": "Wǒ shuì le bā gè xiǎo shí."
+        },
+        {
+          "question": "What does 等了两个小时 mean?",
+          "type": "multiple_choice",
+          "correct": "Waited for two hours",
+          "options": [
+            "Waited for two hours",
+            "Waited twice",
+            "Waited two days",
+            "Waited a long time"
+          ],
+          "option_pinyin": [
+            "děng le liǎng gè xiǎo shí",
+            "děng le liǎng cì",
+            "děng le liǎng tiān",
+            "děng le hěn jiǔ"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "动量补语 — Action-Measure Complement",
+      "explanation": "The action-measure complement expresses how many times an action occurred. Structure: Verb + 了 + Number + 次/遍/回 (+ Object). 次 (cì) and 遍 (biàn) are the most common measure words for actions. 次 = times (a count); 遍 = times (from start to finish). Examples: 我去了两次 (I went twice); 她读了三遍 (She read it three times through).",
+      "examples": [
+        {
+          "chinese": "我去北京去了两次。",
+          "pinyin": "Wǒ qù Běijīng qù le liǎng cì.",
+          "english": "I went to Beijing twice."
+        },
+        {
+          "chinese": "他说了三遍，我才懂。",
+          "pinyin": "Tā shuō le sān biàn, wǒ cái dǒng.",
+          "english": "He said it three times before I understood."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does the action-measure complement express?",
+          "type": "multiple_choice",
+          "correct": "How many times an action occurred",
+          "options": [
+            "How many times an action occurred",
+            "How long an action lasted",
+            "When an action happened",
+            "Why an action happened"
+          ]
+        },
+        {
+          "question": "Which sentence correctly uses an action-measure complement?",
+          "type": "multiple_choice",
+          "correct": "她打了他三次电话。",
+          "options": [
+            "她打了他三次电话。",
+            "她三次打电话了。",
+            "她打电话了三次。",
+            "她三次了打电话。"
+          ],
+          "correct_pinyin": "Tā dǎ le tā sān cì diàn huà."
+        },
+        {
+          "question": "What is the difference between 次 and 遍?",
+          "type": "multiple_choice",
+          "correct": "次 counts occurrences; 遍 means from beginning to end each time",
+          "options": [
+            "次 counts occurrences; 遍 means from beginning to end each time",
+            "They are exactly the same",
+            "次 is for people; 遍 is for things",
+            "次 is formal; 遍 is casual"
+          ]
+        },
+        {
+          "question": "What does 比以前高了 mean?",
+          "type": "multiple_choice",
+          "correct": "Taller than before",
+          "options": [
+            "Taller than before",
+            "Shorter than before",
+            "Heavier than before",
+            "Older than before"
+          ],
+          "option_pinyin": [
+            "bǐ yǐ qián gāo le",
+            "bǐ yǐ qián ǎi le",
+            "bǐ yǐ qián zhòng le",
+            "bǐ yǐ qián dà le"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 比 mean?",
+      "type": "multiple_choice",
+      "correct": "Than / To compare",
+      "options": [
+        "And",
+        "Also",
+        "Than / To compare",
+        "Very"
+      ]
+    },
+    {
+      "question": "What does 高 mean?",
+      "type": "multiple_choice",
+      "correct": "Tall / High",
+      "options": [
+        "Short",
+        "Wide",
+        "Tall / High",
+        "Long"
+      ]
+    },
+    {
+      "question": "What does 长 mean?",
+      "type": "multiple_choice",
+      "correct": "Long",
+      "options": [
+        "Short",
+        "Long",
+        "Wide",
+        "Narrow"
+      ]
+    },
+    {
+      "question": "How do you say 'He is three years older than you'?",
+      "type": "multiple_choice",
+      "correct": "他比你大三岁。",
+      "options": [
+        "他比你大三岁。",
+        "他很你大三岁。",
+        "他和你大三岁。",
+        "他也大三岁。"
+      ]
+    },
+    {
+      "question": "What does 多 mean?",
+      "type": "multiple_choice",
+      "correct": "Many / More",
+      "options": [
+        "Few",
+        "None",
+        "Many / More",
+        "Some"
+      ]
+    },
+    {
+      "question": "What does 少 mean?",
+      "type": "multiple_choice",
+      "correct": "Few / Less",
+      "options": [
+        "Many",
+        "Few / Less",
+        "None",
+        "Big"
+      ]
+    },
+    {
+      "question": "What does the time-measure complement express?",
+      "type": "multiple_choice",
+      "correct": "Duration of an action",
+      "options": [
+        "Number of times",
+        "Duration of an action",
+        "Manner of action",
+        "When it happened"
+      ]
+    },
+    {
+      "question": "What does 早 mean?",
+      "type": "multiple_choice",
+      "correct": "Early",
+      "options": [
+        "Late",
+        "Early",
+        "Fast",
+        "Before"
+      ]
+    },
+    {
+      "question": "What does 晚 mean?",
+      "type": "multiple_choice",
+      "correct": "Late / Evening",
+      "options": [
+        "Early",
+        "Morning",
+        "Late / Evening",
+        "Night only"
+      ]
+    },
+    {
+      "question": "Which sentence means 'I waited for two hours'?",
+      "type": "multiple_choice",
+      "correct": "我等了两个小时。",
+      "options": [
+        "我等两个小时了。",
+        "我等了两个小时。",
+        "我两个小时等了。",
+        "我等两小时。"
+      ]
+    },
+    {
+      "question": "What does 男 mean?",
+      "type": "multiple_choice",
+      "correct": "Male / Man",
+      "options": [
+        "Female",
+        "Boy",
+        "Male / Man",
+        "Old man"
+      ]
+    },
+    {
+      "question": "Fill in: 她比他___五厘米。(She is 5 cm taller than him.)",
+      "type": "multiple_choice",
+      "correct": "高",
+      "options": [
+        "大",
+        "高",
+        "长",
+        "多"
+      ]
+    },
+    {
+      "question": "What does the action-measure complement express?",
+      "type": "multiple_choice",
+      "correct": "How many times an action happened",
+      "options": [
+        "Duration",
+        "How many times an action happened",
+        "Location",
+        "Reason"
+      ]
+    },
+    {
+      "question": "How do you say 'She walks faster than me'?",
+      "type": "multiple_choice",
+      "correct": "她走得比我快。",
+      "options": [
+        "她走得比我快。",
+        "她比我走很快。",
+        "她走比我快了。",
+        "她比我快走。"
+      ]
+    },
+    {
+      "question": "What does 慢 mean?",
+      "type": "multiple_choice",
+      "correct": "Slow",
+      "options": [
+        "Fast",
+        "Slow",
+        "Early",
+        "Late"
+      ]
+    },
+    {
+      "question": "How do you say 'three years older than you'?",
+      "type": "multiple_choice",
+      "correct": "比你大三岁",
+      "options": [
+        "比你大三岁",
+        "比你小三岁",
+        "你大三岁比",
+        "大三岁比你"
+      ]
+    },
+    {
+      "question": "What does 走得比我快 mean?",
+      "type": "multiple_choice",
+      "correct": "Walk faster than me",
+      "options": [
+        "Walk faster than me",
+        "Walk slower than me",
+        "Walk as fast as me",
+        "Walk quickly"
+      ]
+    },
+    {
+      "question": "How do you say 'arrived earlier than him'?",
+      "type": "multiple_choice",
+      "correct": "来得比他早",
+      "options": [
+        "来得比他早",
+        "来得比他晚",
+        "比他来得多",
+        "他比我来得早"
+      ]
+    },
+    {
+      "question": "What does 男生比女生多 mean?",
+      "type": "multiple_choice",
+      "correct": "There are more male students than female",
+      "options": [
+        "There are more male students than female",
+        "Males are taller than females",
+        "Males run faster than females",
+        "There are fewer males than females"
+      ]
+    },
+    {
+      "question": "Fill in: 他___我___三岁，他___得___我快多了。(He is three years older than me and runs much faster than me.)",
+      "type": "multiple_choice",
+      "correct": "比 / 大 / 跑 / 比",
+      "options": [
+        "比 / 大 / 跑 / 比",
+        "大 / 比 / 比 / 跑",
+        "比 / 高 / 走 / 比",
+        "多 / 快 / 比 / 早"
+      ]
+    },
+    {
+      "question": "What does 比她高一点儿 mean?",
+      "type": "multiple_choice",
+      "correct": "A little taller than her",
+      "options": [
+        "A little taller than her",
+        "Much taller than her",
+        "A little shorter than her",
+        "A little older than her"
+      ]
+    },
+    {
+      "question": "What does 走得比我快 mean?",
+      "type": "multiple_choice",
+      "correct": "Walk faster than me",
+      "options": [
+        "Walk faster than me",
+        "Walk slower than me",
+        "Walk further than me",
+        "Walk as fast as me"
+      ]
+    },
+    {
+      "question": "How do you say 'arrived earlier than him'?",
+      "type": "multiple_choice",
+      "correct": "来得比他早",
+      "options": [
+        "来得比他早",
+        "来得比他晚",
+        "来得比他快",
+        "来得比他多"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Who is Older?",
+      "title_chinese": "谁大一点？",
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "学生",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "学生",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小明，你比你哥哥大还是小？",
+          "pinyin": "Xiǎo Míng, nǐ bǐ nǐ gē ge dà hái shì xiǎo?",
+          "english": "Xiao Ming, are you older or younger than your brother?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "他比我大三岁，他二十五岁了。",
+          "pinyin": "Tā bǐ wǒ dà sān suì, tā èr shí wǔ suì le.",
+          "english": "He is three years older than me; he is twenty-five now."
+        },
+        {
+          "speaker": "A",
+          "chinese": "他比你高吗？",
+          "pinyin": "Tā bǐ nǐ gāo ma?",
+          "english": "Is he taller than you?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "比我高一点儿，他跑步也比我快多了。",
+          "pinyin": "Bǐ wǒ gāo yī diǎnr, tā pǎo bù yě bǐ wǒ kuài duō le.",
+          "english": "A little taller; he also runs much faster than me."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你哥哥很厉害！他每天跑多长时间？",
+          "pinyin": "Nǐ gē ge hěn lì hai! Tā měi tiān pǎo duō cháng shí jiān?",
+          "english": "Your brother is impressive! How long does he run every day?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "他每天跑了一个多小时，我只跑了三十分钟。",
+          "pinyin": "Tā měi tiān pǎo le yī gè duō xiǎo shí, wǒ zhǐ pǎo le sān shí fēn zhōng.",
+          "english": "He runs for over an hour every day; I only run for thirty minutes."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Sports Competition",
+      "title_chinese": "运动比赛",
+      "speakers": {
+        "A": {
+          "name": "教练",
+          "role": "教练",
+          "gender": "male"
+        },
+        "B": {
+          "name": "运动员",
+          "role": "学生运动员",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你今天比昨天来得早！",
+          "pinyin": "Nǐ jīn tiān bǐ zuó tiān lái de zǎo!",
+          "english": "You came earlier today than yesterday!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是的，我早了三十分钟，因为比赛很重要。",
+          "pinyin": "Shì de, wǒ zǎo le sān shí fēn zhōng, yīn wèi bǐ sài hěn zhòng yào.",
+          "english": "Yes, I came thirty minutes earlier because the competition is important."
+        },
+        {
+          "speaker": "A",
+          "chinese": "今天你跑得比上次快多了！",
+          "pinyin": "Jīn tiān nǐ pǎo de bǐ shàng cì kuài duō le!",
+          "english": "Today you ran much faster than last time!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢，我练习了两次，每次一个小时。",
+          "pinyin": "Xiè xie, wǒ liàn xí le liǎng cì, měi cì yī gè xiǎo shí.",
+          "english": "Thank you; I practised twice, one hour each time."
+        },
+        {
+          "speaker": "A",
+          "chinese": "很好，男生女生都要多练习！",
+          "pinyin": "Hěn hǎo, nán shēng nǚ shēng dōu yào duō liàn xí!",
+          "english": "Very good; both male and female students should practise more!"
+        }
+      ]
+    }
+  ]
+}

@@ -145,7 +145,7 @@
     {
       "type": "listen_final",
       "syllable": "jiā",
-      "audio_key": "fin_a",
+      "audio_key": "fin_ia",
       "correct": "ia",
       "choices": [
         "ia",
@@ -157,11 +157,11 @@
     {
       "type": "listen_final",
       "syllable": "qiáo",
-      "audio_key": "fin_ao",
+      "audio_key": "fin_iao",
       "correct": "iao",
       "choices": [
         "iao",
-        "uao",
+        "ia",
         "ao",
         "ou"
       ]
@@ -169,19 +169,19 @@
     {
       "type": "listen_final",
       "syllable": "xiān",
-      "audio_key": "fin_an",
+      "audio_key": "fin_ian",
       "correct": "ian",
       "choices": [
         "ian",
         "uan",
         "an",
-        "en"
+        "in"
       ]
     },
     {
       "type": "listen_final",
       "syllable": "liáng",
-      "audio_key": "fin_ang",
+      "audio_key": "fin_iang",
       "correct": "iang",
       "choices": [
         "iang",
@@ -193,7 +193,7 @@
     {
       "type": "listen_final",
       "syllable": "guā",
-      "audio_key": "fin_a",
+      "audio_key": "fin_ua",
       "correct": "ua",
       "choices": [
         "ia",
@@ -205,7 +205,7 @@
     {
       "type": "listen_final",
       "syllable": "huài",
-      "audio_key": "fin_ai",
+      "audio_key": "fin_uai",
       "correct": "uai",
       "choices": [
         "uai",
@@ -217,11 +217,11 @@
     {
       "type": "listen_final",
       "syllable": "guō",
-      "audio_key": "fin_o",
+      "audio_key": "fin_uo",
       "correct": "uo",
       "choices": [
         "uo",
-        "uo",
+        "o",
         "ao",
         "ou"
       ]
@@ -229,7 +229,7 @@
     {
       "type": "listen_final",
       "syllable": "guān",
-      "audio_key": "fin_an",
+      "audio_key": "fin_uan",
       "correct": "uan",
       "choices": [
         "uan",
@@ -241,7 +241,7 @@
     {
       "type": "listen_final",
       "syllable": "yuán",
-      "audio_key": "fin_an",
+      "audio_key": "fin_van",
       "correct": "üan",
       "choices": [
         "üan",
@@ -662,6 +662,62 @@
         "x",
         "sh"
       ]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "jiā",
+      "audio_key": "fin_ia",
+      "correct": "ia",
+      "choices": ["ia", "ua", "ie", "üe"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "xiān",
+      "audio_key": "fin_ian",
+      "correct": "ian",
+      "choices": ["ian", "uan", "an", "in"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "guā",
+      "audio_key": "fin_ua",
+      "correct": "ua",
+      "choices": ["ia", "ua", "a", "ao"]
+    },
+    {
+      "type": "listen_final",
+      "syllable": "guān",
+      "audio_key": "fin_uan",
+      "correct": "uan",
+      "choices": ["uan", "ian", "an", "un"]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "jiā",
+      "audio_key": "init_j",
+      "correct": "j",
+      "choices": ["j", "q", "x", "zh"]
+    },
+    {
+      "type": "listen_initial",
+      "syllable": "qiáo",
+      "audio_key": "init_q",
+      "correct": "q",
+      "choices": ["j", "q", "x", "ch"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "jiā",
+      "audio_key": "jia1",
+      "correct": "1",
+      "choices": ["1", "2", "3", "4"]
+    },
+    {
+      "type": "listen_tone",
+      "syllable": "liáng",
+      "audio_key": "liang2",
+      "correct": "2",
+      "choices": ["1", "2", "3", "4"]
     }
   ],
   "single_finals": [

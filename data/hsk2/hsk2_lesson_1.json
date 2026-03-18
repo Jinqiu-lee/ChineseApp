@@ -1,139 +1,1019 @@
 {
-  "lesson": 2,
-  "topic": "Travel Time",
-  "topic_chinese": "九月去北京旅游最好",
-  "age_group": "Adults and 10+",
-  "objectives": ["listening","speaking","reading","writing"],
-
+  "lesson": 1,
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Travel & Activities 1",
+  "topic_chinese": "旅游与活动（一）",
   "vocabulary": [
     {
-      "id": "hsk2_l2_01",
-      "chinese": "九月",
-      "pinyin": "jiǔ yuè",
-      "tones": [3,4],
-      "english": "September",
-      "part_of_speech": "noun"
-    },
-    {
-      "id": "hsk2_l2_02",
-      "chinese": "北京",
-      "pinyin": "běi jīng",
-      "tones": [3,1],
-      "english": "Beijing",
-      "part_of_speech": "noun"
-    },
-    {
-      "id": "hsk2_l2_03",
+      "id": "hsk2_l1_01",
       "chinese": "旅游",
       "pinyin": "lǚ yóu",
-      "tones": [3,2],
-      "english": "To travel",
+      "tones": [
+        3,
+        2
+      ],
+      "english": "To travel / Tourism",
       "part_of_speech": "verb"
     },
     {
-      "id": "hsk2_l2_04",
-      "chinese": "最好",
-      "pinyin": "zuì hǎo",
-      "tones": [4,3],
-      "english": "Best",
+      "id": "hsk2_l1_02",
+      "chinese": "觉得",
+      "pinyin": "jué de",
+      "tones": [
+        2,
+        0
+      ],
+      "english": "To think / To feel",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l1_03",
+      "chinese": "最",
+      "pinyin": "zuì",
+      "tones": [
+        4
+      ],
+      "english": "Most / -est",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l1_04",
+      "chinese": "为什么",
+      "pinyin": "wèi shén me",
+      "tones": [
+        4,
+        2,
+        0
+      ],
+      "english": "Why",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk2_l1_05",
+      "chinese": "眼睛",
+      "pinyin": "yǎn jing",
+      "tones": [
+        3,
+        0
+      ],
+      "english": "Eye(s)",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l1_06",
+      "chinese": "也",
+      "pinyin": "yě",
+      "tones": [
+        3
+      ],
+      "english": "Also / Too",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l1_07",
+      "chinese": "要",
+      "pinyin": "yào",
+      "tones": [
+        4
+      ],
+      "english": "Want / Need / Going to",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l1_08",
+      "chinese": "运动",
+      "pinyin": "yùn dòng",
+      "tones": [
+        4,
+        4
+      ],
+      "english": "Sport / Exercise",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk2_l1_09",
+      "chinese": "一起",
+      "pinyin": "yì qǐ",
+      "tones": [
+        4,
+        3
+      ],
+      "english": "Together",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l1_10",
+      "chinese": "踢足球",
+      "pinyin": "tī zú qiú",
+      "tones": [
+        1,
+        2,
+        2
+      ],
+      "english": "To play football / soccer",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l1_11",
+      "chinese": "新",
+      "pinyin": "xīn",
+      "tones": [
+        1
+      ],
+      "english": "New",
       "part_of_speech": "adjective"
     },
     {
-      "id": "hsk2_l2_05",
-      "chinese": "时候",
-      "pinyin": "shí hou",
-      "tones": [2,0],
-      "english": "Time / moment",
-      "part_of_speech": "noun"
+      "id": "hsk2_l1_12",
+      "chinese": "它",
+      "pinyin": "tā",
+      "tones": [
+        1
+      ],
+      "english": "It",
+      "part_of_speech": "pronoun"
     },
     {
-      "id": "hsk2_l2_06",
-      "chinese": "天气",
-      "pinyin": "tiān qì",
-      "tones": [1,4],
-      "english": "Weather",
-      "part_of_speech": "noun"
+      "id": "hsk2_l1_p01",
+      "chinese": "一起去旅游",
+      "pinyin": "yì qǐ qù lǚ yóu",
+      "tones": [
+        4,
+        3,
+        4,
+        3,
+        2
+      ],
+      "english": "Go travelling together",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p02",
+      "chinese": "觉得最好",
+      "pinyin": "jué de zuì hǎo",
+      "tones": [
+        2,
+        0,
+        4,
+        3
+      ],
+      "english": "Think it's the best",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p03",
+      "chinese": "也要去",
+      "pinyin": "yě yào qù",
+      "tones": [
+        3,
+        4,
+        4
+      ],
+      "english": "Also want to go",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p04",
+      "chinese": "一起踢足球",
+      "pinyin": "yì qǐ tī zú qiú",
+      "tones": [
+        4,
+        3,
+        1,
+        2,
+        2
+      ],
+      "english": "Play football together",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p05",
+      "chinese": "最喜欢运动",
+      "pinyin": "zuì xǐ huān yùn dòng",
+      "tones": [
+        4,
+        3,
+        1,
+        4,
+        4
+      ],
+      "english": "Like sports the most",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p06",
+      "chinese": "新的运动",
+      "pinyin": "xīn de yùn dòng",
+      "tones": [
+        1,
+        0,
+        4,
+        4
+      ],
+      "english": "A new sport / activity",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p07",
+      "chinese": "眼睛很大",
+      "pinyin": "yǎn jing hěn dà",
+      "tones": [
+        3,
+        0,
+        3,
+        4
+      ],
+      "english": "Has big eyes",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p08",
+      "chinese": "要去旅游",
+      "pinyin": "yào qù lǚ yóu",
+      "tones": [
+        4,
+        4,
+        3,
+        2
+      ],
+      "english": "Want to go travelling",
+      "part_of_speech": "phrase"
     }
   ],
-
+  "phrases": [
+    {
+      "id": "hsk2_l1_p01",
+      "chinese": "一起去旅游",
+      "pinyin": "yì qǐ qù lǚ yóu",
+      "tones": [
+        4,
+        3,
+        4,
+        3,
+        2
+      ],
+      "english": "Go travelling together",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p02",
+      "chinese": "觉得最好",
+      "pinyin": "jué de zuì hǎo",
+      "tones": [
+        2,
+        0,
+        4,
+        3
+      ],
+      "english": "Think it's the best",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p03",
+      "chinese": "也要去",
+      "pinyin": "yě yào qù",
+      "tones": [
+        3,
+        4,
+        4
+      ],
+      "english": "Also want to go",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p04",
+      "chinese": "一起踢足球",
+      "pinyin": "yì qǐ tī zú qiú",
+      "tones": [
+        4,
+        3,
+        1,
+        2,
+        2
+      ],
+      "english": "Play football together",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p05",
+      "chinese": "最喜欢运动",
+      "pinyin": "zuì xǐ huān yùn dòng",
+      "tones": [
+        4,
+        3,
+        1,
+        4,
+        4
+      ],
+      "english": "Like sports the most",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p06",
+      "chinese": "新的运动",
+      "pinyin": "xīn de yùn dòng",
+      "tones": [
+        1,
+        0,
+        4,
+        4
+      ],
+      "english": "A new sport / activity",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p07",
+      "chinese": "眼睛很大",
+      "pinyin": "yǎn jing hěn dà",
+      "tones": [
+        3,
+        0,
+        3,
+        4
+      ],
+      "english": "Has big eyes",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l1_p08",
+      "chinese": "要去旅游",
+      "pinyin": "yào qù lǚ yóu",
+      "tones": [
+        4,
+        4,
+        3,
+        2
+      ],
+      "english": "Want to go travelling",
+      "part_of_speech": "phrase"
+    }
+  ],
   "key_sentences": [
     {
       "chinese": "九月去北京旅游最好。",
-      "pinyin": "Jiǔ yuè qù Běi jīng lǚ yóu zuì hǎo.",
-      "english": "September is the best time to travel to Beijing."
+      "pinyin": "Jiǔ yuè qù Běijīng lǚ yóu zuì hǎo.",
+      "english": "September is the best time to visit Beijing."
     },
     {
-      "chinese": "北京的天气很好。",
-      "pinyin": "Běi jīng de tiān qì hěn hǎo.",
-      "english": "The weather in Beijing is very good."
+      "chinese": "你为什么要去旅游？",
+      "pinyin": "Nǐ wèi shén me yào qù lǚ yóu?",
+      "english": "Why do you want to go travelling?"
     },
     {
-      "chinese": "什么时候去北京最好？",
-      "pinyin": "Shén me shí hou qù Běi jīng zuì hǎo?",
-      "english": "When is the best time to go to Beijing?"
+      "chinese": "我觉得这个运动最好。",
+      "pinyin": "Wǒ jué de zhè gè yùn dòng zuì hǎo.",
+      "english": "I think this sport is the best."
+    },
+    {
+      "chinese": "他也要一起踢足球。",
+      "pinyin": "Tā yě yào yì qǐ tī zú qiú.",
+      "english": "He also wants to play football together."
+    },
+    {
+      "chinese": "这只小狗的眼睛真大，它最新来的。",
+      "pinyin": "Zhè zhī xiǎo gǒu de yǎn jing zhēn dà, tā zuì xīn lái de.",
+      "english": "This puppy has really big eyes; it's the newest one to arrive."
+    },
+    {
+      "chinese": "我们一起去北京旅游吧！",
+      "pinyin": "Wǒ men yì qǐ qù Běijīng lǚ yóu ba!",
+      "english": "Let's go to Beijing together!"
     }
   ],
-
   "grammar_points": [
     {
       "number": 1,
-      "title": "Using 最 (zuì) for superlative",
-      "explanation": "最 means 'most' or 'best'. It is used before adjectives to form the superlative.",
+      "title": "程度副词「最」— The Adverb of Degree zuì",
+      "explanation": "最 (zuì) means 'most' and is placed directly before an adjective or verb to form the superlative. Formula: Subject + 最 + Adjective/Verb. It cannot be modified by 很 or 非常.",
       "examples": [
         {
           "chinese": "九月去北京旅游最好。",
-          "pinyin": "Jiǔ yuè qù Běi jīng lǚ yóu zuì hǎo.",
-          "english": "September is the best time to travel to Beijing."
+          "pinyin": "Jiǔ yuè qù Běijīng lǚ yóu zuì hǎo.",
+          "english": "September is the best time to visit Beijing."
         },
         {
-          "chinese": "这个地方最好。",
-          "pinyin": "Zhè ge dì fāng zuì hǎo.",
-          "english": "This place is the best."
+          "chinese": "我最喜欢运动。",
+          "pinyin": "Wǒ zuì xǐ huān yùn dòng.",
+          "english": "I like sports the most."
         }
       ],
       "exercises": [
         {
-          "question": "Fill in: 九月去北京旅游___好。",
+          "question": "Fill in: 他___喜欢踢足球。(He likes playing football the most.)",
           "type": "multiple_choice",
           "correct": "最",
-          "options": ["最","很","也","不"]
+          "options": [
+            "最",
+            "很",
+            "也",
+            "要"
+          ],
+          "option_pinyin": [
+            "zuì",
+            "hěn",
+            "yě",
+            "yào"
+          ]
+        },
+        {
+          "question": "Which sentence means 'This is the best sport'?",
+          "type": "multiple_choice",
+          "correct": "这个运动最好。",
+          "options": [
+            "这个运动最好。",
+            "这个运动很好。",
+            "这个运动也好。",
+            "这个运动要好。"
+          ],
+          "option_pinyin": [
+            "Zhè gè yùn dòng zuì hǎo.",
+            "Zhè gè yùn dòng hěn hǎo.",
+            "Zhè gè yùn dòng yě hǎo.",
+            "Zhè gè yùn dòng yào hǎo."
+          ],
+          "correct_pinyin": "Zhè gè yùn dòng zuì hǎo."
+        },
+        {
+          "question": "Where does 最 go in a sentence?",
+          "type": "multiple_choice",
+          "correct": "Before an adjective or verb",
+          "options": [
+            "Before an adjective or verb",
+            "After the verb",
+            "At the end of the sentence",
+            "After the subject"
+          ]
+        },
+        {
+          "question": "What does 觉得最好 mean?",
+          "type": "multiple_choice",
+          "correct": "Think it's the best",
+          "options": [
+            "Think it's the best",
+            "Feel very good",
+            "Know the most",
+            "Like it very much"
+          ],
+          "option_pinyin": [
+            "jué de zuì hǎo",
+            "jué de hěn hǎo",
+            "zhī dào zuì duō",
+            "hěn xǐ huān"
+          ]
+        },
+        {
+          "question": "Fill in: 我___喜欢运动。(I like sports the most.)",
+          "type": "multiple_choice",
+          "correct": "最",
+          "options": [
+            "最",
+            "很",
+            "非常",
+            "也"
+          ],
+          "option_pinyin": [
+            "zuì",
+            "hěn",
+            "fēi cháng",
+            "yě"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "概数表示法「几」、「多」、「来」— Approximate Numbers",
+      "explanation": "Chinese uses specific words to express approximate numbers. 几 (jǐ) means 'several/a few' (usually under 10). 多 (duō) after a number means 'more than'. 来 (lái) after a round number means 'approximately'. Examples: 几个人 (several people), 十多个 (more than ten), 二十来个 (about twenty).",
+      "examples": [
+        {
+          "chinese": "车上有几个人。",
+          "pinyin": "Chē shàng yǒu jǐ gè rén.",
+          "english": "There are several people on the bus."
+        },
+        {
+          "chinese": "他去北京旅游了十多天。",
+          "pinyin": "Tā qù Běijīng lǚ yóu le shí duō tiān.",
+          "english": "He travelled to Beijing for more than ten days."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which word means 'several / a few' (usually under 10)?",
+          "type": "multiple_choice",
+          "correct": "几",
+          "options": [
+            "几",
+            "多",
+            "来",
+            "最"
+          ],
+          "option_pinyin": [
+            "jǐ",
+            "duō",
+            "lái",
+            "zuì"
+          ]
+        },
+        {
+          "question": "How do you say 'more than twenty people'?",
+          "type": "multiple_choice",
+          "correct": "二十多个人",
+          "options": [
+            "二十多个人",
+            "二十几个人",
+            "二十来个人",
+            "最二十个人"
+          ],
+          "option_pinyin": [
+            "èr shí duō gè rén",
+            "èr shí jǐ gè rén",
+            "èr shí lái gè rén",
+            "zuì èr shí gè rén"
+          ],
+          "correct_pinyin": "èr shí duō gè rén"
+        },
+        {
+          "question": "What does 十多天 mean?",
+          "type": "multiple_choice",
+          "correct": "More than ten days",
+          "options": [
+            "Exactly ten days",
+            "More than ten days",
+            "Several days",
+            "About twenty days"
+          ]
+        },
+        {
+          "question": "Which phrase means 'a new sport or activity'?",
+          "type": "multiple_choice",
+          "correct": "新的运动",
+          "options": [
+            "新的运动",
+            "最好的运动",
+            "几个运动",
+            "旅游运动"
+          ],
+          "option_pinyin": [
+            "xīn de yùn dòng",
+            "zuì hǎo de yùn dòng",
+            "jǐ gè yùn dòng",
+            "lǚ yóu yùn dòng"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "副词「要」— The Verb/Adverb yào",
+      "explanation": "要 (yào) has two main uses: (1) to express desire or wanting — Subject + 要 + Verb, meaning 'want to do something'; (2) to express future intention — Subject + 要 + Verb, meaning 'going to do something'. Context determines which meaning is intended.",
+      "examples": [
+        {
+          "chinese": "我要去北京旅游。",
+          "pinyin": "Wǒ yào qù Běijīng lǚ yóu.",
+          "english": "I want to / am going to travel to Beijing."
+        },
+        {
+          "chinese": "他也要一起运动。",
+          "pinyin": "Tā yě yào yì qǐ yùn dòng.",
+          "english": "He also wants to exercise together."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 要 mean in: 我要踢足球。",
+          "type": "multiple_choice",
+          "correct": "Want to / going to",
+          "options": [
+            "Want to / going to",
+            "Already did",
+            "Just finished",
+            "Cannot"
+          ]
+        },
+        {
+          "question": "Choose the correct sentence: 'She also wants to go travelling.'",
+          "type": "multiple_choice",
+          "correct": "她也要去旅游。",
+          "options": [
+            "她也要去旅游。",
+            "她最去旅游。",
+            "她去旅游也。",
+            "她旅游要去。"
+          ],
+          "option_pinyin": [
+            "Tā yě yào qù lǚ yóu.",
+            "Tā zuì qù lǚ yóu.",
+            "Tā qù lǚ yóu yě.",
+            "Tā lǚ yóu yào qù."
+          ],
+          "correct_pinyin": "Tā yě yào qù lǚ yóu."
+        },
+        {
+          "question": "Fill in: 我们___一起踢足球。(We are going to play football together.)",
+          "type": "multiple_choice",
+          "correct": "要",
+          "options": [
+            "要",
+            "最",
+            "也",
+            "它"
+          ],
+          "option_pinyin": [
+            "yào",
+            "zuì",
+            "yě",
+            "tā"
+          ]
+        },
+        {
+          "question": "What does 要去旅游 mean?",
+          "type": "multiple_choice",
+          "correct": "Want to go travelling",
+          "options": [
+            "Want to go travelling",
+            "Already went travelling",
+            "Cannot travel",
+            "Like to travel"
+          ],
+          "option_pinyin": [
+            "yào qù lǚ yóu",
+            "yǐ jīng qù lǚ yóu le",
+            "bù néng lǚ yóu",
+            "xǐ huān lǚ yóu"
+          ]
+        },
+        {
+          "question": "Fill in: 他___去旅游，我___要去。(He also wants to go travelling, and I want to go too.)",
+          "type": "multiple_choice",
+          "correct": "也要 / 也",
+          "options": [
+            "也要 / 也",
+            "最 / 要",
+            "要 / 最",
+            "新 / 它"
+          ]
         }
       ]
     }
   ],
-
   "quiz": [
     {
       "question": "What does 旅游 mean?",
       "type": "multiple_choice",
-      "correct": "To travel",
-      "options": ["To travel","To study","To work","To eat"]
+      "correct": "To travel / Tourism",
+      "options": [
+        "To run",
+        "To travel / Tourism",
+        "To exercise",
+        "To play"
+      ]
     },
     {
-      "question": "What does 最好 mean?",
+      "question": "What does 最 mean?",
       "type": "multiple_choice",
-      "correct": "Best",
-      "options": ["Worst","Best","Small","Fast"]
+      "correct": "Most / -est",
+      "options": [
+        "Also",
+        "Want",
+        "Most / -est",
+        "Together"
+      ]
+    },
+    {
+      "question": "How do you say 'Why do you want to travel?'",
+      "type": "multiple_choice",
+      "correct": "你为什么要去旅游？",
+      "options": [
+        "你为什么要去旅游？",
+        "你最要去旅游？",
+        "你也要去旅游？",
+        "你一起去旅游？"
+      ]
+    },
+    {
+      "question": "What does 觉得 mean?",
+      "type": "multiple_choice",
+      "correct": "To think / To feel",
+      "options": [
+        "To know",
+        "To think / To feel",
+        "To see",
+        "To tell"
+      ]
+    },
+    {
+      "question": "What does 眼睛 mean?",
+      "type": "multiple_choice",
+      "correct": "Eye(s)",
+      "options": [
+        "Nose",
+        "Mouth",
+        "Eye(s)",
+        "Ear"
+      ]
+    },
+    {
+      "question": "Fill in: 我们___一起踢足球吧！(Let's play football together!)",
+      "type": "multiple_choice",
+      "correct": "要",
+      "options": [
+        "最",
+        "要",
+        "也",
+        "觉得"
+      ]
+    },
+    {
+      "question": "What does 一起 mean?",
+      "type": "multiple_choice",
+      "correct": "Together",
+      "options": [
+        "Alone",
+        "Together",
+        "Again",
+        "Also"
+      ]
+    },
+    {
+      "question": "Which sentence means 'September is the best time to visit Beijing'?",
+      "type": "multiple_choice",
+      "correct": "九月去北京旅游最好。",
+      "options": [
+        "九月去北京旅游最好。",
+        "九月去北京旅游很好。",
+        "九月也去北京旅游。",
+        "九月要去北京旅游。"
+      ]
+    },
+    {
+      "question": "What does 它 mean?",
+      "type": "multiple_choice",
+      "correct": "It",
+      "options": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ]
+    },
+    {
+      "question": "What does 新 mean?",
+      "type": "multiple_choice",
+      "correct": "New",
+      "options": [
+        "Old",
+        "Big",
+        "New",
+        "Good"
+      ]
+    },
+    {
+      "question": "How do you say 'He also wants to exercise together'?",
+      "type": "multiple_choice",
+      "correct": "他也要一起运动。",
+      "options": [
+        "他也要一起运动。",
+        "他最要一起运动。",
+        "他一起也运动要。",
+        "他要最一起运动。"
+      ]
+    },
+    {
+      "question": "What does 为什么 mean?",
+      "type": "multiple_choice",
+      "correct": "Why",
+      "options": [
+        "How",
+        "When",
+        "Where",
+        "Why"
+      ]
+    },
+    {
+      "question": "Which word means 'also / too'?",
+      "type": "multiple_choice",
+      "correct": "也",
+      "options": [
+        "最",
+        "要",
+        "也",
+        "新"
+      ]
+    },
+    {
+      "question": "How do you express 'several people' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "几个人",
+      "options": [
+        "几个人",
+        "多个人",
+        "来个人",
+        "最个人"
+      ]
+    },
+    {
+      "question": "What does 运动 mean?",
+      "type": "multiple_choice",
+      "correct": "Sport / Exercise",
+      "options": [
+        "Travel",
+        "Foot",
+        "Sport / Exercise",
+        "Football"
+      ]
+    },
+    {
+      "question": "How do you say 'go travelling together'?",
+      "type": "multiple_choice",
+      "correct": "一起去旅游",
+      "options": [
+        "一起去旅游",
+        "一起运动",
+        "要去旅游",
+        "也要运动"
+      ]
+    },
+    {
+      "question": "What does 也要去 mean?",
+      "type": "multiple_choice",
+      "correct": "Also want to go",
+      "options": [
+        "Also want to go",
+        "Want to go together",
+        "Already went",
+        "Going to travel"
+      ]
+    },
+    {
+      "question": "How do you say 'play football together'?",
+      "type": "multiple_choice",
+      "correct": "一起踢足球",
+      "options": [
+        "一起踢足球",
+        "最喜欢运动",
+        "也要去旅游",
+        "新的运动"
+      ]
+    },
+    {
+      "question": "What does 最喜欢运动 mean?",
+      "type": "multiple_choice",
+      "correct": "Like sports the most",
+      "options": [
+        "Like sports the most",
+        "Sports are the best",
+        "Want to do sports",
+        "Also like sports"
+      ]
+    },
+    {
+      "question": "Fill in: 他___喜欢和朋友___旅游。(He likes going travelling together with friends the most.)",
+      "type": "multiple_choice",
+      "correct": "最 / 一起",
+      "options": [
+        "最 / 一起",
+        "也 / 要",
+        "新 / 去",
+        "要 / 也"
+      ]
+    },
+    {
+      "question": "What does 觉得最好 mean?",
+      "type": "multiple_choice",
+      "correct": "Think it's the best",
+      "options": [
+        "Think it's the best",
+        "Feel very good",
+        "Know the best",
+        "Like the most"
+      ]
+    },
+    {
+      "question": "How do you say 'want to go travelling'?",
+      "type": "multiple_choice",
+      "correct": "要去旅游",
+      "options": [
+        "要去旅游",
+        "一起去旅游",
+        "也要运动",
+        "最喜欢旅游"
+      ]
+    },
+    {
+      "question": "Which phrase means 'like sports the most'?",
+      "type": "multiple_choice",
+      "correct": "最喜欢运动",
+      "options": [
+        "最喜欢运动",
+        "一起踢足球",
+        "也要去旅游",
+        "新的运动"
+      ]
     }
   ],
-
   "dialogues": [
     {
       "id": 1,
-      "title": "Travel Plan",
-      "title_chinese": "旅游计划",
+      "title": "Planning a Trip",
+      "title_chinese": "计划旅游",
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "朋友",
+          "gender": "male"
+        }
+      },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "什么时候去北京最好？",
-          "pinyin": "Shén me shí hou qù Běi jīng zuì hǎo?",
-          "english": "When is the best time to go to Beijing?"
+          "chinese": "大明，你觉得什么时候去北京旅游最好？",
+          "pinyin": "Dà Míng, nǐ jué de shén me shí hou qù Běijīng lǚ yóu zuì hǎo?",
+          "english": "Da Ming, when do you think is the best time to visit Beijing?"
         },
         {
           "speaker": "B",
-          "chinese": "九月去北京旅游最好。",
-          "pinyin": "Jiǔ yuè qù Běi jīng lǚ yóu zuì hǎo.",
-          "english": "September is the best time."
+          "chinese": "我觉得九月最好，天气不太热。",
+          "pinyin": "Wǒ jué de jiǔ yuè zuì hǎo, tiān qì bú tài rè.",
+          "english": "I think September is the best; the weather is not too hot."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好！我们要一起去吗？",
+          "pinyin": "Hǎo! Wǒ men yào yì qǐ qù ma?",
+          "english": "Great! Are we going together?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "当然！他也要一起去，我们可以一起踢足球。",
+          "pinyin": "Dāng rán! Tā yě yào yì qǐ qù, wǒ men kě yǐ yì qǐ tī zú qiú.",
+          "english": "Of course! He also wants to come; we can play football together."
+        },
+        {
+          "speaker": "A",
+          "chinese": "太好了，北京的运动公园最新最大！",
+          "pinyin": "Tài hǎo le, Běijīng de yùn dòng gōng yuán zuì xīn zuì dà!",
+          "english": "That's great! Beijing's sports parks are the newest and biggest!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Talking About Favourite Sports",
+      "title_chinese": "聊运动",
+      "speakers": {
+        "A": {
+          "name": "小丽",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "同学",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你为什么最喜欢踢足球？",
+          "pinyin": "Nǐ wèi shén me zuì xǐ huān tī zú qiú?",
+          "english": "Why do you like playing football the most?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "因为踢足球运动最好，眼睛也会好。",
+          "pinyin": "Yīn wèi tī zú qiú yùn dòng zuì hǎo, yǎn jing yě huì hǎo.",
+          "english": "Because football is the best exercise, and it's also good for the eyes."
+        },
+        {
+          "speaker": "A",
+          "chinese": "真的吗？我也要学踢足球！",
+          "pinyin": "Zhēn de ma? Wǒ yě yào xué tī zú qiú!",
+          "english": "Really? I also want to learn to play football!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "好啊，我们一起运动吧！",
+          "pinyin": "Hǎo a, wǒ men yì qǐ yùn dòng ba!",
+          "english": "Sure, let's exercise together!"
+        },
+        {
+          "speaker": "A",
+          "chinese": "那只新足球是它的吗？",
+          "pinyin": "Nà zhī xīn zú qiú shì tā de ma?",
+          "english": "Is that new football its?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是的，它是我的新足球！",
+          "pinyin": "Shì de, tā shì wǒ de xīn zú qiú!",
+          "english": "Yes, it's my new football!"
         }
       ]
     }

@@ -1,124 +1,995 @@
 {
   "lesson": 2,
-  "topic": "Travel Time",
-  "topic_chinese": "九月去北京旅游最好",
-
+  "level": 2,
+  "show_pinyin": false,
+  "topic": "Daily Routines",
+  "topic_chinese": "日常生活",
   "vocabulary": [
     {
+      "id": "hsk2_l2_01",
+      "chinese": "起床",
+      "pinyin": "qǐ chuáng",
+      "tones": [
+        3,
+        2
+      ],
+      "english": "To get up (out of bed)",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l2_02",
+      "chinese": "每",
+      "pinyin": "měi",
+      "tones": [
+        3
+      ],
+      "english": "Every / Each",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk2_l2_03",
+      "chinese": "早上",
+      "pinyin": "zǎo shang",
+      "tones": [
+        3,
+        0
+      ],
+      "english": "Early morning",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l2_04",
+      "chinese": "上班",
+      "pinyin": "shàng bān",
+      "tones": [
+        4,
+        1
+      ],
+      "english": "To go to work",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk2_l2_05",
+      "chinese": "时候",
+      "pinyin": "shí hou",
+      "tones": [
+        2,
+        0
+      ],
+      "english": "Time / When / Moment",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk2_l2_06",
+      "chinese": "时间",
+      "pinyin": "shí jiān",
+      "tones": [
+        2,
+        1
+      ],
+      "english": "Time",
+      "part_of_speech": "noun"
+    },
+    {
       "id": "hsk2_l2_07",
-      "chinese": "春天",
-      "pinyin": "chūn tiān",
-      "tones": [1,1],
-      "english": "Spring",
+      "chinese": "上午",
+      "pinyin": "shàng wǔ",
+      "tones": [
+        4,
+        3
+      ],
+      "english": "Morning (before noon)",
       "part_of_speech": "noun"
     },
     {
       "id": "hsk2_l2_08",
-      "chinese": "夏天",
-      "pinyin": "xià tiān",
-      "tones": [4,1],
-      "english": "Summer",
+      "chinese": "下午",
+      "pinyin": "xià wǔ",
+      "tones": [
+        4,
+        3
+      ],
+      "english": "Afternoon",
       "part_of_speech": "noun"
     },
     {
       "id": "hsk2_l2_09",
-      "chinese": "秋天",
-      "pinyin": "qiū tiān",
-      "tones": [1,1],
-      "english": "Autumn",
+      "chinese": "晚上",
+      "pinyin": "wǎn shang",
+      "tones": [
+        3,
+        0
+      ],
+      "english": "Evening / Night",
       "part_of_speech": "noun"
     },
     {
       "id": "hsk2_l2_10",
-      "chinese": "冬天",
-      "pinyin": "dōng tiān",
-      "tones": [1,1],
-      "english": "Winter",
+      "chinese": "以前",
+      "pinyin": "yǐ qián",
+      "tones": [
+        3,
+        2
+      ],
+      "english": "Before / Previously",
       "part_of_speech": "noun"
     },
     {
       "id": "hsk2_l2_11",
-      "chinese": "因为",
-      "pinyin": "yīn wèi",
-      "tones": [1,4],
-      "english": "Because",
-      "part_of_speech": "conjunction"
-    }
-  ],
-
-  "key_sentences": [
-    {
-      "chinese": "秋天的北京很漂亮。",
-      "pinyin": "Qiū tiān de Běi jīng hěn piào liang.",
-      "english": "Beijing in autumn is very beautiful."
+      "chinese": "以后",
+      "pinyin": "yǐ hòu",
+      "tones": [
+        3,
+        4
+      ],
+      "english": "After / Later",
+      "part_of_speech": "noun"
     },
     {
-      "chinese": "我想去北京旅游。",
-      "pinyin": "Wǒ xiǎng qù Běi jīng lǚ yóu.",
-      "english": "I want to travel to Beijing."
+      "id": "hsk2_l2_12",
+      "chinese": "再",
+      "pinyin": "zài",
+      "tones": [
+        4
+      ],
+      "english": "Again / Then (afterwards)",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk2_l2_p01",
+      "chinese": "每天早上",
+      "pinyin": "měi tiān zǎo shang",
+      "tones": [
+        3,
+        1,
+        3,
+        0
+      ],
+      "english": "Every morning",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p02",
+      "chinese": "每天起床",
+      "pinyin": "měi tiān qǐ chuáng",
+      "tones": [
+        3,
+        1,
+        3,
+        2
+      ],
+      "english": "Get up every day",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p03",
+      "chinese": "上班以前",
+      "pinyin": "shàng bān yǐ qián",
+      "tones": [
+        4,
+        1,
+        3,
+        2
+      ],
+      "english": "Before going to work",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p04",
+      "chinese": "下午再来",
+      "pinyin": "xià wǔ zài lái",
+      "tones": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "english": "Come again in the afternoon",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p05",
+      "chinese": "没有时间",
+      "pinyin": "méi yǒu shí jiān",
+      "tones": [
+        2,
+        3,
+        2,
+        1
+      ],
+      "english": "Have no time",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p06",
+      "chinese": "以后再说",
+      "pinyin": "yǐ hòu zài shuō",
+      "tones": [
+        3,
+        4,
+        4,
+        1
+      ],
+      "english": "Talk about it later",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p07",
+      "chinese": "上午上班",
+      "pinyin": "shàng wǔ shàng bān",
+      "tones": [
+        4,
+        3,
+        4,
+        1
+      ],
+      "english": "Go to work in the morning",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p08",
+      "chinese": "晚上有时间",
+      "pinyin": "wǎn shang yǒu shí jiān",
+      "tones": [
+        3,
+        0,
+        3,
+        2,
+        1
+      ],
+      "english": "Have time in the evening",
+      "part_of_speech": "phrase"
     }
   ],
-
+  "phrases": [
+    {
+      "id": "hsk2_l2_p01",
+      "chinese": "每天早上",
+      "pinyin": "měi tiān zǎo shang",
+      "tones": [
+        3,
+        1,
+        3,
+        0
+      ],
+      "english": "Every morning",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p02",
+      "chinese": "每天起床",
+      "pinyin": "měi tiān qǐ chuáng",
+      "tones": [
+        3,
+        1,
+        3,
+        2
+      ],
+      "english": "Get up every day",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p03",
+      "chinese": "上班以前",
+      "pinyin": "shàng bān yǐ qián",
+      "tones": [
+        4,
+        1,
+        3,
+        2
+      ],
+      "english": "Before going to work",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p04",
+      "chinese": "下午再来",
+      "pinyin": "xià wǔ zài lái",
+      "tones": [
+        4,
+        3,
+        4,
+        2
+      ],
+      "english": "Come again in the afternoon",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p05",
+      "chinese": "没有时间",
+      "pinyin": "méi yǒu shí jiān",
+      "tones": [
+        2,
+        3,
+        2,
+        1
+      ],
+      "english": "Have no time",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p06",
+      "chinese": "以后再说",
+      "pinyin": "yǐ hòu zài shuō",
+      "tones": [
+        3,
+        4,
+        4,
+        1
+      ],
+      "english": "Talk about it later",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p07",
+      "chinese": "上午上班",
+      "pinyin": "shàng wǔ shàng bān",
+      "tones": [
+        4,
+        3,
+        4,
+        1
+      ],
+      "english": "Go to work in the morning",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk2_l2_p08",
+      "chinese": "晚上有时间",
+      "pinyin": "wǎn shang yǒu shí jiān",
+      "tones": [
+        3,
+        0,
+        3,
+        2,
+        1
+      ],
+      "english": "Have time in the evening",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "我每天六点起床。",
+      "pinyin": "Wǒ měi tiān liù diǎn qǐ chuáng.",
+      "english": "I get up at six every day."
+    },
+    {
+      "chinese": "你早上几点上班？",
+      "pinyin": "Nǐ zǎo shang jǐ diǎn shàng bān?",
+      "english": "What time do you go to work in the morning?"
+    },
+    {
+      "chinese": "你是上午还是下午去？",
+      "pinyin": "Nǐ shì shàng wǔ hái shì xià wǔ qù?",
+      "english": "Are you going in the morning or in the afternoon?"
+    },
+    {
+      "chinese": "你什么时候有时间？",
+      "pinyin": "Nǐ shén me shí hou yǒu shí jiān?",
+      "english": "When do you have time?"
+    },
+    {
+      "chinese": "他以前在北京，以后要去上海。",
+      "pinyin": "Tā yǐ qián zài Běijīng, yǐ hòu yào qù Shànghǎi.",
+      "english": "He used to be in Beijing; later he will go to Shanghai."
+    },
+    {
+      "chinese": "我先吃饭，再去上班。",
+      "pinyin": "Wǒ xiān chī fàn, zài qù shàng bān.",
+      "english": "I'll eat first, then go to work."
+    }
+  ],
   "grammar_points": [
     {
-      "number": 2,
-      "title": "Because – 因为",
-      "explanation": "因为 means 'because'. It introduces the reason for something.",
+      "number": 1,
+      "title": "用「还是」的疑问句 — Questions with háishì",
+      "explanation": "还是 (hái shì) is used to form alternative questions offering two choices (A or B?). Structure: A + 还是 + B? The listener must choose one. This differs from 或者 (or) which is used in statements, not questions.",
       "examples": [
         {
-          "chinese": "因为天气很好。",
-          "pinyin": "Yīn wèi tiān qì hěn hǎo.",
-          "english": "Because the weather is very good."
+          "chinese": "你是上午还是下午去？",
+          "pinyin": "Nǐ shì shàng wǔ hái shì xià wǔ qù?",
+          "english": "Are you going in the morning or in the afternoon?"
         },
         {
-          "chinese": "因为我喜欢北京。",
-          "pinyin": "Yīn wèi wǒ xǐ huān Běi jīng.",
-          "english": "Because I like Beijing."
+          "chinese": "你喝咖啡还是牛奶？",
+          "pinyin": "Nǐ hē kā fēi hái shì niú nǎi?",
+          "english": "Do you drink coffee or milk?"
         }
       ],
       "exercises": [
         {
-          "question": "Fill in: ___天气很好。",
+          "question": "Which word is used to form alternative questions (A or B)?",
           "type": "multiple_choice",
-          "correct": "因为",
-          "options": ["因为","所以","但是","如果"]
+          "correct": "还是",
+          "options": [
+            "还是",
+            "或者",
+            "而且",
+            "但是"
+          ],
+          "option_pinyin": [
+            "hái shì",
+            "huò zhě",
+            "ér qiě",
+            "dàn shì"
+          ]
+        },
+        {
+          "question": "Which sentence is a correct alternative question?",
+          "type": "multiple_choice",
+          "correct": "你上午还是下午来？",
+          "options": [
+            "你上午还是下午来？",
+            "你上午或者下午来。",
+            "你什么上午下午？",
+            "你上午以后下午？"
+          ],
+          "correct_pinyin": "Nǐ shàng wǔ hái shì xià wǔ lái?"
+        },
+        {
+          "question": "Fill in: 你喝茶___喝咖啡？(Do you drink tea or coffee?)",
+          "type": "multiple_choice",
+          "correct": "还是",
+          "options": [
+            "还是",
+            "也",
+            "再",
+            "每"
+          ],
+          "option_pinyin": [
+            "hái shì",
+            "yě",
+            "zài",
+            "měi"
+          ]
+        },
+        {
+          "question": "Which phrase means 'go to work in the morning'?",
+          "type": "multiple_choice",
+          "correct": "上午上班",
+          "options": [
+            "上午上班",
+            "上午起床",
+            "晚上上班",
+            "每天上班"
+          ],
+          "option_pinyin": [
+            "shàng wǔ shàng bān",
+            "shàng wǔ qǐ chuáng",
+            "wǎn shang shàng bān",
+            "měi tiān shàng bān"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "疑问代词 — Interrogative Pronouns",
+      "explanation": "Chinese interrogative pronouns include: 什么 (what), 谁 (who), 哪/哪里 (which/where), 什么时候 (when), 怎么 (how), 为什么 (why), 几 (how many). They stay in the same position in the sentence as the information they replace — no word order inversion is needed.",
+      "examples": [
+        {
+          "chinese": "你什么时候起床？",
+          "pinyin": "Nǐ shén me shí hou qǐ chuáng?",
+          "english": "When do you get up?"
+        },
+        {
+          "chinese": "你每天几点上班？",
+          "pinyin": "Nǐ měi tiān jǐ diǎn shàng bān?",
+          "english": "What time do you go to work every day?"
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which interrogative pronoun means 'when'?",
+          "type": "multiple_choice",
+          "correct": "什么时候",
+          "options": [
+            "什么时候",
+            "什么地方",
+            "怎么",
+            "为什么"
+          ],
+          "option_pinyin": [
+            "shén me shí hou",
+            "shén me dì fang",
+            "zěn me",
+            "wèi shén me"
+          ]
+        },
+        {
+          "question": "How do you ask 'What time do you get up?'",
+          "type": "multiple_choice",
+          "correct": "你几点起床？",
+          "options": [
+            "你几点起床？",
+            "你什么起床？",
+            "你哪里起床？",
+            "你怎么起床？"
+          ],
+          "correct_pinyin": "Nǐ jǐ diǎn qǐ chuáng?"
+        },
+        {
+          "question": "In Chinese, where do interrogative pronouns go?",
+          "type": "multiple_choice",
+          "correct": "In the same position as the answer would be",
+          "options": [
+            "In the same position as the answer would be",
+            "Always at the beginning",
+            "Always at the end",
+            "Always after the verb"
+          ]
+        },
+        {
+          "question": "What does 没有时间 mean?",
+          "type": "multiple_choice",
+          "correct": "Have no time",
+          "options": [
+            "Have no time",
+            "Have a lot of time",
+            "Use the time",
+            "Need more time"
+          ],
+          "option_pinyin": [
+            "méi yǒu shí jiān",
+            "yǒu hěn duō shí jiān",
+            "yòng shí jiān",
+            "xū yào gèng duō shí jiān"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "副词「再」— The Adverb zài",
+      "explanation": "再 (zài) has two key meanings: (1) 'again' for a future repetition — 再说一次 (say it again); (2) 'then/afterwards' in the pattern 先…再… (first…then…). Note: 又 (yòu) is for past repetitions, while 再 is for future or sequential actions.",
+      "examples": [
+        {
+          "chinese": "我先吃饭，再去上班。",
+          "pinyin": "Wǒ xiān chī fàn, zài qù shàng bān.",
+          "english": "I'll eat first, then go to work."
+        },
+        {
+          "chinese": "请你再说一次。",
+          "pinyin": "Qǐng nǐ zài shuō yī cì.",
+          "english": "Please say it again."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Fill in: 我先起床，___吃饭。(I'll get up first, then eat.)",
+          "type": "multiple_choice",
+          "correct": "再",
+          "options": [
+            "再",
+            "还",
+            "也",
+            "每"
+          ],
+          "option_pinyin": [
+            "zài",
+            "hái",
+            "yě",
+            "měi"
+          ]
+        },
+        {
+          "question": "Which sentence correctly uses 再 for a future action?",
+          "type": "multiple_choice",
+          "correct": "下午再来",
+          "options": [
+            "下午再来",
+            "昨天再来了",
+            "他再来了",
+            "已经再来"
+          ],
+          "correct_pinyin": "xià wǔ zài lái"
+        },
+        {
+          "question": "What is the difference between 再 and 又?",
+          "type": "multiple_choice",
+          "correct": "再 is for future/planned repetition; 又 is for past repetition",
+          "options": [
+            "再 is for future/planned repetition; 又 is for past repetition",
+            "They are the same",
+            "再 is for past; 又 is for future",
+            "再 means 'also'; 又 means 'again'"
+          ]
+        },
+        {
+          "question": "What does 下午再来 mean?",
+          "type": "multiple_choice",
+          "correct": "Come again in the afternoon",
+          "options": [
+            "Come again in the afternoon",
+            "Came again this afternoon",
+            "Come in the morning again",
+            "Come back later"
+          ],
+          "option_pinyin": [
+            "xià wǔ zài lái",
+            "xià wǔ yòu lái le",
+            "zǎo shang zài lái",
+            "yǐ hòu zài lái"
+          ]
+        },
+        {
+          "question": "How do you say 'talk about it later'?",
+          "type": "multiple_choice",
+          "correct": "以后再说",
+          "options": [
+            "以后再说",
+            "以前再说",
+            "以后说了",
+            "再以后说"
+          ],
+          "option_pinyin": [
+            "yǐ hòu zài shuō",
+            "yǐ qián zài shuō",
+            "yǐ hòu shuō le",
+            "zài yǐ hòu shuō"
+          ]
         }
       ]
     }
   ],
-
   "quiz": [
     {
-      "question": "What does 秋天 mean?",
+      "question": "What does 起床 mean?",
       "type": "multiple_choice",
-      "correct": "Autumn",
-      "options": ["Spring","Summer","Autumn","Winter"]
+      "correct": "To get up (out of bed)",
+      "options": [
+        "To sleep",
+        "To get up (out of bed)",
+        "To eat",
+        "To work"
+      ]
     },
     {
-      "question": "What does 因为 mean?",
+      "question": "What does 每 mean?",
       "type": "multiple_choice",
-      "correct": "Because",
-      "options": ["Because","If","But","When"]
+      "correct": "Every / Each",
+      "options": [
+        "Some",
+        "Many",
+        "Every / Each",
+        "Few"
+      ]
+    },
+    {
+      "question": "How do you say 'every morning' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "每天早上",
+      "options": [
+        "每天早上",
+        "以前早上",
+        "再早上",
+        "上午以后"
+      ]
+    },
+    {
+      "question": "What does 以前 mean?",
+      "type": "multiple_choice",
+      "correct": "Before / Previously",
+      "options": [
+        "After / Later",
+        "Before / Previously",
+        "Now",
+        "Again"
+      ]
+    },
+    {
+      "question": "What does 以后 mean?",
+      "type": "multiple_choice",
+      "correct": "After / Later",
+      "options": [
+        "Before",
+        "After / Later",
+        "Every day",
+        "Morning"
+      ]
+    },
+    {
+      "question": "Which word forms alternative questions (A or B)?",
+      "type": "multiple_choice",
+      "correct": "还是",
+      "options": [
+        "以后",
+        "再",
+        "还是",
+        "时候"
+      ]
+    },
+    {
+      "question": "What does 晚上 mean?",
+      "type": "multiple_choice",
+      "correct": "Evening / Night",
+      "options": [
+        "Morning",
+        "Afternoon",
+        "Evening / Night",
+        "Noon"
+      ]
+    },
+    {
+      "question": "How do you say 'I get up at six every day'?",
+      "type": "multiple_choice",
+      "correct": "我每天六点起床。",
+      "options": [
+        "我每天六点起床。",
+        "我以前六点起床。",
+        "我再六点起床。",
+        "我上午六点起床了。"
+      ]
+    },
+    {
+      "question": "What does 再 mean?",
+      "type": "multiple_choice",
+      "correct": "Again / Then (afterwards)",
+      "options": [
+        "Before",
+        "Together",
+        "Already",
+        "Again / Then (afterwards)"
+      ]
+    },
+    {
+      "question": "What does 时候 mean?",
+      "type": "multiple_choice",
+      "correct": "Time / When / Moment",
+      "options": [
+        "Clock",
+        "Time / When / Moment",
+        "Hour",
+        "Minute"
+      ]
+    },
+    {
+      "question": "Which sentence asks 'Are you going in the morning or afternoon?'",
+      "type": "multiple_choice",
+      "correct": "你是上午还是下午去？",
+      "options": [
+        "你是上午还是下午去？",
+        "你上午以后下午去？",
+        "你什么时候上午去？",
+        "你再上午去吗？"
+      ]
+    },
+    {
+      "question": "What does 上午 mean?",
+      "type": "multiple_choice",
+      "correct": "Morning (before noon)",
+      "options": [
+        "Evening",
+        "Afternoon",
+        "Morning (before noon)",
+        "Night"
+      ]
+    },
+    {
+      "question": "Fill in: 我先起床，___吃早饭。(I'll get up first, then eat breakfast.)",
+      "type": "multiple_choice",
+      "correct": "再",
+      "options": [
+        "以前",
+        "以后",
+        "再",
+        "每"
+      ]
+    },
+    {
+      "question": "Which interrogative pronoun means 'when'?",
+      "type": "multiple_choice",
+      "correct": "什么时候",
+      "options": [
+        "什么时候",
+        "什么地方",
+        "哪里",
+        "为什么"
+      ]
+    },
+    {
+      "question": "What does 上班 mean?",
+      "type": "multiple_choice",
+      "correct": "To go to work",
+      "options": [
+        "To come home",
+        "To go to school",
+        "To go to work",
+        "To finish work"
+      ]
+    },
+    {
+      "question": "How do you say 'get up every day'?",
+      "type": "multiple_choice",
+      "correct": "每天起床",
+      "options": [
+        "每天起床",
+        "每天上班",
+        "早上起床",
+        "以前起床"
+      ]
+    },
+    {
+      "question": "What does 上班以前 mean?",
+      "type": "multiple_choice",
+      "correct": "Before going to work",
+      "options": [
+        "Before going to work",
+        "After going to work",
+        "During work",
+        "At work"
+      ]
+    },
+    {
+      "question": "How do you say 'have time in the evening'?",
+      "type": "multiple_choice",
+      "correct": "晚上有时间",
+      "options": [
+        "晚上有时间",
+        "下午有时间",
+        "早上有时间",
+        "上午有时间"
+      ]
+    },
+    {
+      "question": "What does 以后再说 mean?",
+      "type": "multiple_choice",
+      "correct": "Talk about it later",
+      "options": [
+        "Talk about it later",
+        "Say it again",
+        "Talk in the afternoon",
+        "Don't talk now"
+      ]
+    },
+    {
+      "question": "Fill in: 他每天___上班，___下班。(He goes to work every morning and comes back every evening.)",
+      "type": "multiple_choice",
+      "correct": "早上 / 晚上",
+      "options": [
+        "早上 / 晚上",
+        "上午 / 下午",
+        "以前 / 以后",
+        "时候 / 时间"
+      ]
+    },
+    {
+      "question": "What does 上班以前 mean?",
+      "type": "multiple_choice",
+      "correct": "Before going to work",
+      "options": [
+        "Before going to work",
+        "After going to work",
+        "At work",
+        "Going to work together"
+      ]
+    },
+    {
+      "question": "How do you say 'get up every day'?",
+      "type": "multiple_choice",
+      "correct": "每天起床",
+      "options": [
+        "每天起床",
+        "每天上班",
+        "以前起床",
+        "晚上起床"
+      ]
+    },
+    {
+      "question": "Which phrase means 'have time in the evening'?",
+      "type": "multiple_choice",
+      "correct": "晚上有时间",
+      "options": [
+        "晚上有时间",
+        "早上有时间",
+        "下午有时间",
+        "没有时间"
+      ]
     }
   ],
-
   "dialogues": [
     {
-      "id": 2,
-      "title": "Why Travel in September",
-      "title_chinese": "为什么九月去北京",
+      "id": 1,
+      "title": "Morning Routine",
+      "title_chinese": "早上的生活",
+      "speakers": {
+        "A": {
+          "name": "小华",
+          "role": "同事",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大卫",
+          "role": "同事",
+          "gender": "male"
+        }
+      },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "你什么时候去北京？",
-          "pinyin": "Nǐ shén me shí hou qù Běi jīng?",
-          "english": "When will you go to Beijing?"
+          "chinese": "大卫，你每天几点起床？",
+          "pinyin": "Dà Wèi, nǐ měi tiān jǐ diǎn qǐ chuáng?",
+          "english": "David, what time do you get up every day?"
         },
         {
           "speaker": "B",
-          "chinese": "九月，因为天气很好。",
-          "pinyin": "Jiǔ yuè, yīn wèi tiān qì hěn hǎo.",
-          "english": "September, because the weather is good."
+          "chinese": "我每天六点起床，七点上班。",
+          "pinyin": "Wǒ měi tiān liù diǎn qǐ chuáng, qī diǎn shàng bān.",
+          "english": "I get up at six every day and go to work at seven."
+        },
+        {
+          "speaker": "A",
+          "chinese": "六点！你早上有时间吃饭吗？",
+          "pinyin": "Liù diǎn! Nǐ zǎo shang yǒu shí jiān chī fàn ma?",
+          "english": "Six o'clock! Do you have time to eat in the morning?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "有，我先吃饭，再去上班。",
+          "pinyin": "Yǒu, wǒ xiān chī fàn, zài qù shàng bān.",
+          "english": "Yes, I eat first, then go to work."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你以前几点起床？",
+          "pinyin": "Nǐ yǐ qián jǐ diǎn qǐ chuáng?",
+          "english": "What time did you use to get up?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "以前七点，以后我想早点儿起床。",
+          "pinyin": "Yǐ qián qī diǎn, yǐ hòu wǒ xiǎng zǎo diǎnr qǐ chuáng.",
+          "english": "Seven before; in the future I want to get up earlier."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Making Plans",
+      "title_chinese": "约定时间",
+      "speakers": {
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小明",
+          "role": "朋友",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小明，你什么时候有时间？",
+          "pinyin": "Xiǎo Míng, nǐ shén me shí hou yǒu shí jiān?",
+          "english": "Xiao Ming, when do you have time?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "你是上午还是下午来？",
+          "pinyin": "Nǐ shì shàng wǔ hái shì xià wǔ lái?",
+          "english": "Are you coming in the morning or in the afternoon?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "上午我上班，下午来好吗？",
+          "pinyin": "Shàng wǔ wǒ shàng bān, xià wǔ lái hǎo ma?",
+          "english": "I work in the morning; is it okay to come in the afternoon?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "好，下午三点来，晚上我们再吃饭。",
+          "pinyin": "Hǎo, xià wǔ sān diǎn lái, wǎn shang wǒ men zài chī fàn.",
+          "english": "Okay, come at three in the afternoon; in the evening we can eat together."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好的，三点见！",
+          "pinyin": "Hǎo de, sān diǎn jiàn!",
+          "english": "Okay, see you at three!"
         }
       ]
     }

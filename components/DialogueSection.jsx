@@ -3,11 +3,15 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { speakChinese } from '../utils/tts';
 
 // ── Dialogue scene images — single consolidated file per level ───────────
-const HSK1_IMAGES = require('../data/hsk1/hsk1_images/hsk1_images.json');
+const IMAGES_BY_LEVEL = {
+  hsk1: require('../data/hsk1/hsk1_images/hsk1_images.json'),
+  hsk2: require('../data/hsk2/hsk2_images/hsk2_images.json'),
+};
 
-function getDialogueImage(dialogueId, lessonNumber) {
+function getDialogueImage(dialogueId, lessonNumber, levelId = 'hsk1') {
   try {
-    const lesson = HSK1_IMAGES.lessons?.[String(lessonNumber || 5)];
+    const imageData = IMAGES_BY_LEVEL[levelId] || IMAGES_BY_LEVEL.hsk1;
+    const lesson = imageData.lessons?.[String(lessonNumber)];
     return lesson?.dialogue_images?.[String(dialogueId)] || null;
   } catch { return null; }
 }
@@ -18,25 +22,25 @@ const PALETTE = {
   male:   { bubble: 'rgba(84,160,255,0.12)',  border: 'rgba(84,160,255,0.3)',  pinyin: '#54A0FF', badge: 'rgba(84,160,255,0.2)',  emoji: '👨' },
 };
 
-export default function DialogueSection({ dialogues = [], lessonNumber }) {
+export default function DialogueSection({ dialogues = [], lessonNumber, levelId = 'hsk1' }) {
   return (
     <View style={styles.container}>
       <Text style={styles.sectionTitle}>💬 Dialogues ({dialogues.length})</Text>
       {dialogues.map(dialogue => (
-        <DialogueCard key={dialogue.id} dialogue={dialogue} lessonNumber={lessonNumber} />
+        <DialogueCard key={dialogue.id} dialogue={dialogue} lessonNumber={lessonNumber} levelId={levelId} />
       ))}
     </View>
   );
 }
 
-function DialogueCard({ dialogue, lessonNumber }) {
+function DialogueCard({ dialogue, lessonNumber, levelId }) {
   const [showPinyin, setShowPinyin] = useState(false);
 
   const speakerA = dialogue.speakers?.A;
   const speakerB = dialogue.speakers?.B;
   const palA = PALETTE[(speakerA?.gender) || 'female'];
   const palB = PALETTE[(speakerB?.gender) || 'male'];
-  const sceneImg = getDialogueImage(dialogue.id, lessonNumber);
+  const sceneImg = getDialogueImage(dialogue.id, lessonNumber, levelId);
 
   return (
     <View style={styles.card}>

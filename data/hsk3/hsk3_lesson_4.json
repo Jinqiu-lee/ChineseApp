@@ -1,0 +1,751 @@
+{
+  "lesson": 4,
+  "level": 3,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Social Behaviour",
+  "topic_chinese": "她总是爱管闲事儿",
+  "vocabulary": [
+    {
+      "id": "hsk3_l4_01",
+      "chinese": "刚才",
+      "pinyin": "gāng cái",
+      "tones": [1, 2],
+      "english": "Just now / A moment ago",
+      "part_of_speech": "time word"
+    },
+    {
+      "id": "hsk3_l4_02",
+      "chinese": "聊天",
+      "pinyin": "liáo tiān",
+      "tones": [2, 1],
+      "english": "To chat",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l4_03",
+      "chinese": "邻居",
+      "pinyin": "lín jū",
+      "tones": [2, 1],
+      "english": "Neighbour",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l4_04",
+      "chinese": "借",
+      "pinyin": "jiè",
+      "tones": [4],
+      "english": "To borrow / To lend",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l4_05",
+      "chinese": "声音",
+      "pinyin": "shēng yīn",
+      "tones": [1, 1],
+      "english": "Sound / Voice",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l4_06",
+      "chinese": "音乐",
+      "pinyin": "yīn yuè",
+      "tones": [1, 4],
+      "english": "Music",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l4_07",
+      "chinese": "管",
+      "pinyin": "guǎn",
+      "tones": [3],
+      "english": "To manage / To interfere / To mind",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk3_l4_08",
+      "chinese": "闲事",
+      "pinyin": "xián shì",
+      "tones": [2, 4],
+      "english": "Other people's business / Unnecessary matters",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l4_09",
+      "chinese": "关系",
+      "pinyin": "guān xi",
+      "tones": [1, 0],
+      "english": "Relationship / Connection",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk3_l4_10",
+      "chinese": "自己",
+      "pinyin": "zì jǐ",
+      "tones": [4, 3],
+      "english": "Oneself / Yourself / Himself",
+      "part_of_speech": "pronoun"
+    },
+    {
+      "id": "hsk3_l4_11",
+      "chinese": "互相",
+      "pinyin": "hù xiāng",
+      "tones": [4, 1],
+      "english": "Each other / Mutually",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk3_l4_12",
+      "chinese": "而且",
+      "pinyin": "ér qiě",
+      "tones": [2, 3],
+      "english": "Moreover / And also / Furthermore",
+      "part_of_speech": "conjunction"
+    },
+    {
+      "id": "hsk3_l4_p01",
+      "chinese": "爱管闲事",
+      "pinyin": "ài guǎn xián shì",
+      "tones": [4, 3, 2, 4],
+      "english": "Like to meddle / Always interfering in others' business",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l4_p02",
+      "chinese": "刚才说的",
+      "pinyin": "gāng cái shuō de",
+      "tones": [1, 2, 1, 0],
+      "english": "What was just said",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l4_p03",
+      "chinese": "互相帮助",
+      "pinyin": "hù xiāng bāng zhù",
+      "tones": [4, 1, 1, 4],
+      "english": "Help each other",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l4_p04",
+      "chinese": "没关系",
+      "pinyin": "méi guān xi",
+      "tones": [2, 1, 0],
+      "english": "It doesn't matter / Never mind",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l4_p05",
+      "chinese": "跟邻居聊天",
+      "pinyin": "gēn lín jū liáo tiān",
+      "tones": [1, 2, 1, 2, 1],
+      "english": "Chat with the neighbour",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l4_p06",
+      "chinese": "自己的事",
+      "pinyin": "zì jǐ de shì",
+      "tones": [4, 3, 0, 4],
+      "english": "One's own business / Affairs",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l4_p07",
+      "chinese": "音乐声音太大",
+      "pinyin": "yīn yuè shēng yīn tài dà",
+      "tones": [1, 4, 1, 1, 4, 4],
+      "english": "The music is too loud",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk3_l4_p08",
+      "chinese": "借给邻居",
+      "pinyin": "jiè gěi lín jū",
+      "tones": [4, 3, 2, 1],
+      "english": "Lend to the neighbour",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "她总是爱管闲事儿，真让人烦。",
+      "pinyin": "Tā zǒng shì ài guǎn xián shì er, zhēn ràng rén fán.",
+      "english": "She always likes to meddle in other people's business; it's really annoying."
+    },
+    {
+      "chinese": "我刚才和邻居在聊天，没什么大事。",
+      "pinyin": "Wǒ gāng cái hé lín jū zài liáo tiān, méi shén me dà shì.",
+      "english": "I was just chatting with the neighbour; nothing important."
+    },
+    {
+      "chinese": "你能把音乐的声音调小一点吗？",
+      "pinyin": "Nǐ néng bǎ yīn yuè de shēng yīn tiáo xiǎo yī diǎn ma?",
+      "english": "Can you turn the music volume down a little?"
+    },
+    {
+      "chinese": "我们是邻居，应该互相帮助。",
+      "pinyin": "Wǒ men shì lín jū, yīng gāi hù xiāng bāng zhù.",
+      "english": "We are neighbours; we should help each other."
+    },
+    {
+      "chinese": "他不但聪明，而且非常努力。",
+      "pinyin": "Tā bú dàn cōng míng, ér qiě fēi cháng nǔ lì.",
+      "english": "He is not only smart, but also extremely hardworking."
+    },
+    {
+      "chinese": "每个人都应该管好自己的事。",
+      "pinyin": "Měi gè rén dōu yīng gāi guǎn hǎo zì jǐ de shì.",
+      "english": "Everyone should take care of their own business."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "伴随结构 — Accompanying Structure with 跟/和",
+      "explanation": "Subject + 跟/和 + Person + Verb = do something with someone. 我跟他聊天 = I chat with him. 她和邻居借东西 = She borrowed things from/with her neighbour. Note: 跟/和 can also link nouns meaning 'and': 他和她 = him and her. Context determines whether 跟/和 means 'with' or 'and'. When followed by a verb phrase it typically means 'with'.",
+      "examples": [
+        {
+          "chinese": "我跟邻居在聊天。",
+          "pinyin": "Wǒ gēn lín jū zài liáo tiān.",
+          "english": "I'm chatting with my neighbour."
+        },
+        {
+          "chinese": "她和朋友互相帮助。",
+          "pinyin": "Tā hé péng yǒu hù xiāng bāng zhù.",
+          "english": "She and her friend help each other."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 我跟他聊天 mean?",
+          "type": "multiple_choice",
+          "correct": "I chat with him",
+          "options": [
+            "I chat with him",
+            "He chats alone",
+            "I and he are the same",
+            "He chatted just now"
+          ]
+        },
+        {
+          "question": "How do you say 'She chats with her neighbour'?",
+          "type": "multiple_choice",
+          "correct": "她跟邻居聊天。",
+          "options": [
+            "她跟邻居聊天。",
+            "她邻居跟聊天。",
+            "跟她邻居聊天。",
+            "她聊天邻居跟。"
+          ],
+          "option_pinyin": [
+            "Tā gēn lín jū liáo tiān.",
+            "Tā lín jū gēn liáo tiān.",
+            "Gēn tā lín jū liáo tiān.",
+            "Tā liáo tiān lín jū gēn."
+          ],
+          "correct_pinyin": "Tā gēn lín jū liáo tiān."
+        },
+        {
+          "question": "When 跟/和 is followed by a verb, it usually means:",
+          "type": "multiple_choice",
+          "correct": "With (someone)",
+          "options": [
+            "With (someone)",
+            "And (linking nouns)",
+            "From",
+            "To"
+          ]
+        },
+        {
+          "question": "Fill in: 我___邻居互相帮助。(My neighbour and I help each other.)",
+          "type": "multiple_choice",
+          "correct": "跟",
+          "options": [
+            "跟",
+            "管",
+            "借",
+            "自己"
+          ]
+        },
+        {
+          "question": "What does 她和邻居借东西 mean?",
+          "type": "multiple_choice",
+          "correct": "She borrowed things from/with her neighbour",
+          "options": [
+            "She borrowed things from/with her neighbour",
+            "She lent things to herself",
+            "Her neighbour borrowed from others",
+            "She doesn't borrow things"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "自己 — Reflexive Pronoun",
+      "explanation": "自己 means 'oneself / yourself / himself / herself' depending on context. It always refers back to the subject. 他自己做 = He does it himself. 照顾自己 = Take care of yourself. 自己的事 = One's own business. 自己 can stand alone or follow the subject pronoun for emphasis: 我自己来 = I'll do it myself.",
+      "examples": [
+        {
+          "chinese": "每个人都要管好自己的事。",
+          "pinyin": "Měi gè rén dōu yào guǎn hǎo zì jǐ de shì.",
+          "english": "Everyone should manage their own affairs well."
+        },
+        {
+          "chinese": "他自己解决了这个问题。",
+          "pinyin": "Tā zì jǐ jiě jué le zhè gè wèn tí.",
+          "english": "He solved this problem by himself."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 自己 mean?",
+          "type": "multiple_choice",
+          "correct": "Oneself / Yourself / Himself",
+          "options": [
+            "Oneself / Yourself / Himself",
+            "Each other",
+            "Together",
+            "Also"
+          ]
+        },
+        {
+          "question": "What does 他自己做 mean?",
+          "type": "multiple_choice",
+          "correct": "He does it himself",
+          "options": [
+            "He does it himself",
+            "He does it with others",
+            "They do it together",
+            "He wants others to do it"
+          ]
+        },
+        {
+          "question": "How do you say 'Take care of yourself'?",
+          "type": "multiple_choice",
+          "correct": "照顾自己",
+          "options": [
+            "照顾自己",
+            "自己照顾他",
+            "互相照顾",
+            "他自己照顾"
+          ],
+          "option_pinyin": [
+            "zhào gù zì jǐ",
+            "zì jǐ zhào gù tā",
+            "hù xiāng zhào gù",
+            "tā zì jǐ zhào gù"
+          ]
+        },
+        {
+          "question": "Fill in: 你要管好___的事，别管别人的。(Take care of your own business; don't mind others'.)",
+          "type": "multiple_choice",
+          "correct": "自己",
+          "options": [
+            "自己",
+            "互相",
+            "邻居",
+            "关系"
+          ]
+        },
+        {
+          "question": "What does 我自己来 mean?",
+          "type": "multiple_choice",
+          "correct": "I'll do it myself",
+          "options": [
+            "I'll do it myself",
+            "I'll come with others",
+            "I just arrived",
+            "I came together"
+          ]
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "而且 — Moreover / Furthermore",
+      "explanation": "而且 is used to add a further point, stronger than 也. Formula: Sentence 1, 而且 + Sentence 2. Often paired with 不但...而且 = not only...but also. 他聪明，而且努力 = He's smart, and moreover hardworking. 不但 goes before the first adjective/verb; 而且 introduces the second stronger point.",
+      "examples": [
+        {
+          "chinese": "她不但爱管闲事，而且声音很大。",
+          "pinyin": "Tā bú dàn ài guǎn xián shì, ér qiě shēng yīn hěn dà.",
+          "english": "She not only likes to meddle, but moreover speaks very loudly."
+        },
+        {
+          "chinese": "这首音乐好听，而且让人放松。",
+          "pinyin": "Zhè shǒu yīn yuè hǎo tīng, ér qiě ràng rén fàng sōng.",
+          "english": "This piece of music sounds good, and moreover it helps people relax."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "What does 而且 mean?",
+          "type": "multiple_choice",
+          "correct": "Moreover / And also / Furthermore",
+          "options": [
+            "Moreover / And also / Furthermore",
+            "But / However",
+            "Because",
+            "Although"
+          ]
+        },
+        {
+          "question": "Which pattern uses 而且 correctly?",
+          "type": "multiple_choice",
+          "correct": "他聪明，而且努力。",
+          "options": [
+            "他聪明，而且努力。",
+            "而且他聪明努力。",
+            "他而且聪明努力。",
+            "他聪明努力而且。"
+          ]
+        },
+        {
+          "question": "What does 不但...而且 mean?",
+          "type": "multiple_choice",
+          "correct": "Not only...but also",
+          "options": [
+            "Not only...but also",
+            "Either...or",
+            "Neither...nor",
+            "Although...but"
+          ]
+        },
+        {
+          "question": "Fill in: 她不但爱聊天，___很爱管闲事。(She not only loves chatting, but also loves meddling.)",
+          "type": "multiple_choice",
+          "correct": "而且",
+          "options": [
+            "而且",
+            "因为",
+            "但是",
+            "虽然"
+          ]
+        },
+        {
+          "question": "How is 而且 stronger than 也?",
+          "type": "multiple_choice",
+          "correct": "而且 adds a further or more emphatic point; 也 simply adds an additional equal point",
+          "options": [
+            "而且 adds a further or more emphatic point; 也 simply adds an additional equal point",
+            "They are exactly the same",
+            "而且 is more polite",
+            "也 is stronger than 而且"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 刚才 mean?",
+      "type": "multiple_choice",
+      "correct": "Just now / A moment ago",
+      "options": [
+        "Later",
+        "Just now / A moment ago",
+        "A long time ago",
+        "Tomorrow"
+      ]
+    },
+    {
+      "question": "What does 聊天 mean?",
+      "type": "multiple_choice",
+      "correct": "To chat",
+      "options": [
+        "To argue",
+        "To chat",
+        "To listen",
+        "To shout"
+      ]
+    },
+    {
+      "question": "What does 邻居 mean?",
+      "type": "multiple_choice",
+      "correct": "Neighbour",
+      "options": [
+        "Friend",
+        "Colleague",
+        "Neighbour",
+        "Stranger"
+      ]
+    },
+    {
+      "question": "What does 借 mean?",
+      "type": "multiple_choice",
+      "correct": "To borrow / To lend",
+      "options": [
+        "To buy",
+        "To borrow / To lend",
+        "To give",
+        "To take"
+      ]
+    },
+    {
+      "question": "What does 自己 mean?",
+      "type": "multiple_choice",
+      "correct": "Oneself / Yourself / Himself",
+      "options": [
+        "Each other",
+        "Oneself / Yourself / Himself",
+        "Together",
+        "Alone"
+      ]
+    },
+    {
+      "question": "What does 互相 mean?",
+      "type": "multiple_choice",
+      "correct": "Each other / Mutually",
+      "options": [
+        "Alone",
+        "Separately",
+        "Each other / Mutually",
+        "Together"
+      ]
+    },
+    {
+      "question": "What does 而且 mean?",
+      "type": "multiple_choice",
+      "correct": "Moreover / And also / Furthermore",
+      "options": [
+        "But / However",
+        "Moreover / And also / Furthermore",
+        "Because",
+        "So / Therefore"
+      ]
+    },
+    {
+      "question": "What does 管 mean in this context?",
+      "type": "multiple_choice",
+      "correct": "To manage / To interfere / To mind",
+      "options": [
+        "To watch",
+        "To manage / To interfere / To mind",
+        "To listen",
+        "To speak"
+      ]
+    },
+    {
+      "question": "How do you say 'I'm chatting with my neighbour'?",
+      "type": "multiple_choice",
+      "correct": "我跟邻居在聊天。",
+      "options": [
+        "我跟邻居在聊天。",
+        "我邻居在聊天。",
+        "我聊天邻居跟。",
+        "邻居跟我。"
+      ]
+    },
+    {
+      "question": "What does 不但...而且 mean?",
+      "type": "multiple_choice",
+      "correct": "Not only...but also",
+      "options": [
+        "Either...or",
+        "Not only...but also",
+        "Although...but",
+        "Because...so"
+      ]
+    },
+    {
+      "question": "What does 声音 mean?",
+      "type": "multiple_choice",
+      "correct": "Sound / Voice",
+      "options": [
+        "Music",
+        "Noise",
+        "Sound / Voice",
+        "Word"
+      ]
+    },
+    {
+      "question": "What does 闲事 mean?",
+      "type": "multiple_choice",
+      "correct": "Other people's business / Unnecessary matters",
+      "options": [
+        "One's own affairs",
+        "Important matters",
+        "Other people's business / Unnecessary matters",
+        "Work matters"
+      ]
+    },
+    {
+      "question": "Which sentence uses 自己 correctly?",
+      "type": "multiple_choice",
+      "correct": "他自己解决了问题。",
+      "options": [
+        "他自己解决了问题。",
+        "自己他解决了问题。",
+        "他解决自己了问题。",
+        "问题自己他解决。"
+      ]
+    },
+    {
+      "question": "What does 关系 mean?",
+      "type": "multiple_choice",
+      "correct": "Relationship / Connection",
+      "options": [
+        "Problem",
+        "Relationship / Connection",
+        "Reason",
+        "Result"
+      ]
+    },
+    {
+      "question": "What does 没关系 mean?",
+      "type": "multiple_choice",
+      "correct": "It doesn't matter / Never mind",
+      "options": [
+        "I have no relationship",
+        "It doesn't matter / Never mind",
+        "There is no connection",
+        "I don't care about relationships"
+      ]
+    },
+    {
+      "question": "What does 爱管闲事 mean?",
+      "type": "multiple_choice",
+      "correct": "Like to meddle / Always interfering in others' business",
+      "options": [
+        "Like to meddle / Always interfering in others' business",
+        "Love chatting with neighbours",
+        "Take care of everything",
+        "Be very responsible"
+      ]
+    },
+    {
+      "question": "What does 互相帮助 mean?",
+      "type": "multiple_choice",
+      "correct": "Help each other",
+      "options": [
+        "Help each other",
+        "Help oneself",
+        "Help a neighbour",
+        "Help all the time"
+      ]
+    },
+    {
+      "question": "What does 音乐声音太大 mean?",
+      "type": "multiple_choice",
+      "correct": "The music is too loud",
+      "options": [
+        "The music is too loud",
+        "The music is very good",
+        "Turn on the music",
+        "The music is too quiet"
+      ]
+    },
+    {
+      "question": "What does 自己的事 mean?",
+      "type": "multiple_choice",
+      "correct": "One's own business / Affairs",
+      "options": [
+        "One's own business / Affairs",
+        "Other people's business",
+        "Family matters",
+        "Work affairs"
+      ]
+    },
+    {
+      "question": "What does 借给邻居 mean?",
+      "type": "multiple_choice",
+      "correct": "Lend to the neighbour",
+      "options": [
+        "Lend to the neighbour",
+        "Borrow from the neighbour",
+        "Give to the neighbour",
+        "Ask the neighbour"
+      ]
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "The Noisy Neighbour",
+      "title_chinese": "吵闹的邻居",
+      "speakers": {
+        "A": {"name": "小红", "role": "邻居", "gender": "female"},
+        "B": {"name": "大明", "role": "邻居", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "大明，你听到刚才那个声音了吗？",
+          "pinyin": "Dà Míng, nǐ tīng dào gāng cái nà gè shēng yīn le ma?",
+          "english": "Da Ming, did you hear that sound just now?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "听到了，是楼上邻居的音乐，声音太大了。",
+          "pinyin": "Tīng dào le, shì lóu shàng lín jū de yīn yuè, shēng yīn tài dà le.",
+          "english": "Yes, it's the upstairs neighbour's music; it's way too loud."
+        },
+        {
+          "speaker": "A",
+          "chinese": "她总是这样，而且每次都到很晚。",
+          "pinyin": "Tā zǒng shì zhè yàng, ér qiě měi cì dōu dào hěn wǎn.",
+          "english": "She's always like this, and moreover it goes until very late every time."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我去跟她说，叫她把声音调小一点。",
+          "pinyin": "Wǒ qù gēn tā shuō, jiào tā bǎ shēng yīn tiáo xiǎo yī diǎn.",
+          "english": "I'll go talk to her and ask her to turn the volume down a bit."
+        },
+        {
+          "speaker": "A",
+          "chinese": "算了，这是她自己的事，你别管闲事了。",
+          "pinyin": "Suàn le, zhè shì tā zì jǐ de shì, nǐ bié guǎn xián shì le.",
+          "english": "Forget it; it's her own business — don't meddle."
+        },
+        {
+          "speaker": "B",
+          "chinese": "但是我们是邻居，应该互相帮助，互相尊重嘛。",
+          "pinyin": "Dàn shì wǒ men shì lín jū, yīng gāi hù xiāng bāng zhù, hù xiāng zūn zhòng ma.",
+          "english": "But we're neighbours; we should help each other and respect each other."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Chatting About a Nosy Person",
+      "title_chinese": "聊多管闲事的人",
+      "speakers": {
+        "A": {"name": "小丽", "role": "朋友", "gender": "female"},
+        "B": {"name": "小刚", "role": "朋友", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你知道吗，刚才王阿姨又来问我的事了。",
+          "pinyin": "Nǐ zhī dào ma, gāng cái Wáng ā yí yòu lái wèn wǒ de shì le.",
+          "english": "You know what, Auntie Wang just came to ask about my business again."
+        },
+        {
+          "speaker": "B",
+          "chinese": "她总是爱管闲事，你别在意。",
+          "pinyin": "Tā zǒng shì ài guǎn xián shì, nǐ bié zài yì.",
+          "english": "She always loves to meddle; don't take it to heart."
+        },
+        {
+          "speaker": "A",
+          "chinese": "而且她还跟其他邻居说我的事，真烦人。",
+          "pinyin": "Ér qiě tā hái gēn qí tā lín jū shuō wǒ de shì, zhēn fán rén.",
+          "english": "Moreover she's been telling other neighbours about my affairs — really annoying."
+        },
+        {
+          "speaker": "B",
+          "chinese": "没关系，我们只要管好自己的事就行了。",
+          "pinyin": "Méi guān xi, wǒ men zhǐ yào guǎn hǎo zì jǐ de shì jiù xíng le.",
+          "english": "Never mind — as long as we take care of our own business, it's fine."
+        },
+        {
+          "speaker": "A",
+          "chinese": "说得对。我们互相帮助，不管别人怎么说。",
+          "pinyin": "Shuō de duì. Wǒ men hù xiāng bāng zhù, bù guǎn bié rén zěn me shuō.",
+          "english": "You're right. We help each other and don't worry about what others say."
+        }
+      ]
+    }
+  ]
+}
