@@ -200,7 +200,7 @@ export default function LessonDetailScreen({
             </Text>
           </TouchableOpacity>
 
-          {levelId === 'hsk2' ? (
+          {levelId !== 'hsk1' ? (
             <TouchableOpacity
               style={[styles.learnBtn, styles.learnBtnCharacters]}
               onPress={() => Alert.alert('Chinese Characters', 'Chinese Characters learning module coming soon! ✍️')}
