@@ -10,7 +10,6 @@
       "id": "hsk3_l13_01",
       "chinese": "走路",
       "pinyin": "zǒu lù",
-      "tones": [3, 4],
       "english": "To walk",
       "part_of_speech": "verb"
     },
@@ -18,7 +17,6 @@
       "id": "hsk3_l13_02",
       "chinese": "骑车",
       "pinyin": "qí chē",
-      "tones": [2, 1],
       "english": "To ride a bike",
       "part_of_speech": "verb"
     },
@@ -26,7 +24,6 @@
       "id": "hsk3_l13_03",
       "chinese": "坐车",
       "pinyin": "zuò chē",
-      "tones": [4, 1],
       "english": "To take a vehicle (bus/train)",
       "part_of_speech": "verb"
     },
@@ -34,7 +31,6 @@
       "id": "hsk3_l13_04",
       "chinese": "开车",
       "pinyin": "kāi chē",
-      "tones": [1, 1],
       "english": "To drive a car",
       "part_of_speech": "verb"
     },
@@ -42,7 +38,6 @@
       "id": "hsk3_l13_05",
       "chinese": "打车",
       "pinyin": "dǎ chē",
-      "tones": [3, 1],
       "english": "To take a taxi / To hail a cab",
       "part_of_speech": "verb"
     },
@@ -50,7 +45,6 @@
       "id": "hsk3_l13_06",
       "chinese": "地铁",
       "pinyin": "dì tiě",
-      "tones": [4, 3],
       "english": "Subway / Metro",
       "part_of_speech": "noun"
     },
@@ -58,7 +52,6 @@
       "id": "hsk3_l13_07",
       "chinese": "公交车",
       "pinyin": "gōng jiāo chē",
-      "tones": [1, 1, 1],
       "english": "Public bus",
       "part_of_speech": "noun"
     },
@@ -66,7 +59,6 @@
       "id": "hsk3_l13_08",
       "chinese": "堵车",
       "pinyin": "dǔ chē",
-      "tones": [3, 1],
       "english": "Traffic jam",
       "part_of_speech": "verb/noun"
     },
@@ -74,7 +66,6 @@
       "id": "hsk3_l13_09",
       "chinese": "方便",
       "pinyin": "fāng biàn",
-      "tones": [1, 4],
       "english": "Convenient",
       "part_of_speech": "adjective"
     },
@@ -82,7 +73,6 @@
       "id": "hsk3_l13_10",
       "chinese": "方式",
       "pinyin": "fāng shì",
-      "tones": [1, 4],
       "english": "Method / Way / Mode",
       "part_of_speech": "noun"
     },
@@ -90,7 +80,6 @@
       "id": "hsk3_l13_11",
       "chinese": "交通",
       "pinyin": "jiāo tōng",
-      "tones": [1, 1],
       "english": "Traffic / Transportation",
       "part_of_speech": "noun"
     },
@@ -98,7 +87,6 @@
       "id": "hsk3_l13_12",
       "chinese": "步行",
       "pinyin": "bù xíng",
-      "tones": [4, 2],
       "english": "To walk on foot / Walking",
       "part_of_speech": "verb/noun"
     },
@@ -106,7 +94,6 @@
       "id": "hsk3_l13_p01",
       "chinese": "是走回来的",
       "pinyin": "shì zǒu huí lái de",
-      "tones": [4, 3, 2, 2, 0],
       "english": "Came back on foot",
       "part_of_speech": "phrase"
     },
@@ -114,7 +101,6 @@
       "id": "hsk3_l13_p02",
       "chinese": "坐地铁去",
       "pinyin": "zuò dì tiě qù",
-      "tones": [4, 4, 3, 4],
       "english": "Go by subway",
       "part_of_speech": "phrase"
     },
@@ -122,7 +108,6 @@
       "id": "hsk3_l13_p03",
       "chinese": "打车比较快",
       "pinyin": "dǎ chē bǐ jiào kuài",
-      "tones": [3, 1, 3, 4, 4],
       "english": "Taking a taxi is faster",
       "part_of_speech": "phrase"
     },
@@ -130,7 +115,6 @@
       "id": "hsk3_l13_p04",
       "chinese": "骑车上班",
       "pinyin": "qí chē shàng bān",
-      "tones": [2, 1, 4, 1],
       "english": "Cycle to work",
       "part_of_speech": "phrase"
     },
@@ -138,7 +122,6 @@
       "id": "hsk3_l13_p05",
       "chinese": "堵车了",
       "pinyin": "dǔ chē le",
-      "tones": [3, 1, 0],
       "english": "There's a traffic jam",
       "part_of_speech": "phrase"
     },
@@ -146,7 +129,6 @@
       "id": "hsk3_l13_p06",
       "chinese": "方便的交通方式",
       "pinyin": "fāng biàn de jiāo tōng fāng shì",
-      "tones": [1, 4, 0, 1, 1, 1, 4],
       "english": "A convenient mode of transport",
       "part_of_speech": "phrase"
     },
@@ -154,7 +136,6 @@
       "id": "hsk3_l13_p07",
       "chinese": "开车去还是坐车",
       "pinyin": "kāi chē qù hái shì zuò chē",
-      "tones": [1, 1, 4, 2, 4, 4, 1],
       "english": "Drive or take a vehicle",
       "part_of_speech": "phrase"
     },
@@ -162,7 +143,6 @@
       "id": "hsk3_l13_p08",
       "chinese": "走路步行",
       "pinyin": "zǒu lù bù xíng",
-      "tones": [3, 4, 4, 2],
       "english": "Walk on foot",
       "part_of_speech": "phrase"
     }
@@ -232,14 +212,29 @@
           "question": "Fill in: 我___走回来的。(I came back on foot.)",
           "type": "multiple_choice",
           "correct": "是",
-          "options": ["是", "被", "把", "在"],
-          "option_pinyin": ["shì", "bèi", "bǎ", "zài"]
+          "options": [
+            "是",
+            "被",
+            "把",
+            "在"
+          ],
+          "option_pinyin": [
+            "shì",
+            "bèi",
+            "bǎ",
+            "zài"
+          ]
         },
         {
           "question": "Which question uses 是...的 correctly?",
           "type": "multiple_choice",
           "correct": "你是怎么来的？",
-          "options": ["你是怎么来的？", "你怎么是来的？", "来的是你怎么？", "的你是怎么来？"],
+          "options": [
+            "你是怎么来的？",
+            "你怎么是来的？",
+            "来的是你怎么？",
+            "的你是怎么来？"
+          ],
           "option_pinyin": [
             "Nǐ shì zěn me lái de?",
             "Nǐ zěn me shì lái de?",
@@ -252,13 +247,23 @@
           "question": "Translate: 他是坐公交车来的。",
           "type": "multiple_choice",
           "correct": "He came by public bus.",
-          "options": ["He came by public bus.", "He is on the bus.", "He wants to take the bus.", "He didn't come by bus."]
+          "options": [
+            "He came by public bus.",
+            "He is on the bus.",
+            "He wants to take the bus.",
+            "He didn't come by bus."
+          ]
         },
         {
           "question": "When using 是...的, what must be true about the action?",
           "type": "multiple_choice",
           "correct": "It has already happened",
-          "options": ["It has already happened", "It will happen in the future", "It is happening right now", "It is a habit"]
+          "options": [
+            "It has already happened",
+            "It will happen in the future",
+            "It is happening right now",
+            "It is a habit"
+          ]
         }
       ]
     },
@@ -283,35 +288,80 @@
           "question": "Which verb is used with 地铁 (subway)?",
           "type": "multiple_choice",
           "correct": "坐",
-          "options": ["坐", "骑", "开", "打"],
-          "option_pinyin": ["zuò", "qí", "kāi", "dǎ"]
+          "options": [
+            "坐",
+            "骑",
+            "开",
+            "打"
+          ],
+          "option_pinyin": [
+            "zuò",
+            "qí",
+            "kāi",
+            "dǎ"
+          ]
         },
         {
           "question": "Which verb is used for riding a bicycle?",
           "type": "multiple_choice",
           "correct": "骑",
-          "options": ["骑", "坐", "开", "走"],
-          "option_pinyin": ["qí", "zuò", "kāi", "zǒu"]
+          "options": [
+            "骑",
+            "坐",
+            "开",
+            "走"
+          ],
+          "option_pinyin": [
+            "qí",
+            "zuò",
+            "kāi",
+            "zǒu"
+          ]
         },
         {
           "question": "How do you say 'take a taxi'?",
           "type": "multiple_choice",
           "correct": "打车",
-          "options": ["打车", "坐车", "骑车", "走车"],
-          "option_pinyin": ["dǎ chē", "zuò chē", "qí chē", "zǒu chē"]
+          "options": [
+            "打车",
+            "坐车",
+            "骑车",
+            "走车"
+          ],
+          "option_pinyin": [
+            "dǎ chē",
+            "zuò chē",
+            "qí chē",
+            "zǒu chē"
+          ]
         },
         {
           "question": "Which is a formal word meaning 'to take any vehicle'?",
           "type": "multiple_choice",
           "correct": "乘",
-          "options": ["乘", "走", "提", "背"],
-          "option_pinyin": ["chéng", "zǒu", "tí", "bēi"]
+          "options": [
+            "乘",
+            "走",
+            "提",
+            "背"
+          ],
+          "option_pinyin": [
+            "chéng",
+            "zǒu",
+            "tí",
+            "bēi"
+          ]
         },
         {
           "question": "Translate: 我们坐公交车去。",
           "type": "multiple_choice",
           "correct": "We'll go by public bus.",
-          "options": ["We'll go by public bus.", "We rode bikes there.", "We walked there.", "We drove there."]
+          "options": [
+            "We'll go by public bus.",
+            "We rode bikes there.",
+            "We walked there.",
+            "We drove there."
+          ]
         }
       ]
     },
@@ -336,20 +386,40 @@
           "question": "How do you negate 是...的?",
           "type": "multiple_choice",
           "correct": "不是...的",
-          "options": ["不是...的", "没是...的", "别是...的", "非是...的"],
-          "option_pinyin": ["bú shì...de", "méi shì...de", "bié shì...de", "fēi shì...de"]
+          "options": [
+            "不是...的",
+            "没是...的",
+            "别是...的",
+            "非是...的"
+          ],
+          "option_pinyin": [
+            "bú shì...de",
+            "méi shì...de",
+            "bié shì...de",
+            "fēi shì...de"
+          ]
         },
         {
           "question": "Translate: 他不是开车来的，是骑车来的。",
           "type": "multiple_choice",
           "correct": "He didn't drive here — he cycled.",
-          "options": ["He didn't drive here — he cycled.", "He drove here, not by bike.", "He came by bus.", "He walked here."]
+          "options": [
+            "He didn't drive here — he cycled.",
+            "He drove here, not by bike.",
+            "He came by bus.",
+            "He walked here."
+          ]
         },
         {
           "question": "Which question asks HOW someone arrived?",
           "type": "multiple_choice",
           "correct": "你是怎么来的？",
-          "options": ["你是怎么来的？", "你来了吗？", "你去哪里？", "你要来吗？"],
+          "options": [
+            "你是怎么来的？",
+            "你来了吗？",
+            "你去哪里？",
+            "你要来吗？"
+          ],
           "option_pinyin": [
             "Nǐ shì zěn me lái de?",
             "Nǐ lái le ma?",
@@ -362,14 +432,29 @@
           "question": "Fill in: 她___坐公交车来的，是打车来的。(She didn't come by bus — she took a taxi.)",
           "type": "multiple_choice",
           "correct": "不是",
-          "options": ["不是", "是", "没有", "别"],
-          "option_pinyin": ["bú shì", "shì", "méi yǒu", "bié"]
+          "options": [
+            "不是",
+            "是",
+            "没有",
+            "别"
+          ],
+          "option_pinyin": [
+            "bú shì",
+            "shì",
+            "méi yǒu",
+            "bié"
+          ]
         },
         {
           "question": "Which is a correct 是...的 yes/no question?",
           "type": "multiple_choice",
           "correct": "你是坐地铁来的吗？",
-          "options": ["你是坐地铁来的吗？", "你坐地铁是来吗？", "你来坐地铁的是？", "是你坐地铁了？"],
+          "options": [
+            "你是坐地铁来的吗？",
+            "你坐地铁是来吗？",
+            "你来坐地铁的是？",
+            "是你坐地铁了？"
+          ],
           "option_pinyin": [
             "Nǐ shì zuò dì tiě lái de ma?",
             "Nǐ zuò dì tiě shì lái ma?",
@@ -386,121 +471,221 @@
       "question": "What does 走路 mean?",
       "type": "multiple_choice",
       "correct": "To walk",
-      "options": ["To walk", "To drive", "To take a taxi", "To ride a bike"]
+      "options": [
+        "To walk",
+        "To drive",
+        "To take a taxi",
+        "To ride a bike"
+      ]
     },
     {
       "question": "What does 骑车 mean?",
       "type": "multiple_choice",
       "correct": "To ride a bike",
-      "options": ["To ride a bike", "To take a bus", "To drive a car", "To take a taxi"]
+      "options": [
+        "To ride a bike",
+        "To take a bus",
+        "To drive a car",
+        "To take a taxi"
+      ]
     },
     {
       "question": "What does 地铁 mean?",
       "type": "multiple_choice",
       "correct": "Subway / Metro",
-      "options": ["Subway / Metro", "Public bus", "Taxi", "Traffic jam"]
+      "options": [
+        "Subway / Metro",
+        "Public bus",
+        "Taxi",
+        "Traffic jam"
+      ]
     },
     {
       "question": "What does 堵车 mean?",
       "type": "multiple_choice",
       "correct": "Traffic jam",
-      "options": ["Traffic jam", "Drive a car", "Take a taxi", "Ride a bike"]
+      "options": [
+        "Traffic jam",
+        "Drive a car",
+        "Take a taxi",
+        "Ride a bike"
+      ]
     },
     {
       "question": "What is the pinyin for 公交车?",
       "type": "multiple_choice",
       "correct": "gōng jiāo chē",
-      "options": ["gōng jiāo chē", "dì tiě", "dǎ chē", "kāi chē"]
+      "options": [
+        "gōng jiāo chē",
+        "dì tiě",
+        "dǎ chē",
+        "kāi chē"
+      ]
     },
     {
       "question": "What does 方便 mean?",
       "type": "multiple_choice",
       "correct": "Convenient",
-      "options": ["Convenient", "Traffic jam", "Method", "Transportation"]
+      "options": [
+        "Convenient",
+        "Traffic jam",
+        "Method",
+        "Transportation"
+      ]
     },
     {
       "question": "Which verb is used for taking a taxi?",
       "type": "multiple_choice",
       "correct": "打",
-      "options": ["打", "坐", "骑", "开"]
+      "options": [
+        "打",
+        "坐",
+        "骑",
+        "开"
+      ]
     },
     {
       "question": "What does 步行 mean?",
       "type": "multiple_choice",
       "correct": "To walk on foot / Walking",
-      "options": ["To walk on foot / Walking", "To drive", "To ride", "Transportation"]
+      "options": [
+        "To walk on foot / Walking",
+        "To drive",
+        "To ride",
+        "Transportation"
+      ]
     },
     {
       "question": "What does 是...的 emphasise in a sentence?",
       "type": "multiple_choice",
       "correct": "Circumstances of a past action",
-      "options": ["Circumstances of a past action", "Future plans", "A change of state", "A passive action"]
+      "options": [
+        "Circumstances of a past action",
+        "Future plans",
+        "A change of state",
+        "A passive action"
+      ]
     },
     {
       "question": "Translate: 我是走回来的。",
       "type": "multiple_choice",
       "correct": "I came back on foot.",
-      "options": ["I came back on foot.", "I drove back.", "I came back by bus.", "I cycled back."]
+      "options": [
+        "I came back on foot.",
+        "I drove back.",
+        "I came back by bus.",
+        "I cycled back."
+      ]
     },
     {
       "question": "Fill in: 我___坐公交车来的。(I came by public bus.)",
       "type": "multiple_choice",
       "correct": "是",
-      "options": ["是", "被", "把", "在"]
+      "options": [
+        "是",
+        "被",
+        "把",
+        "在"
+      ]
     },
     {
       "question": "Which verb is used for riding a bicycle?",
       "type": "multiple_choice",
       "correct": "骑",
-      "options": ["骑", "坐", "走", "开"]
+      "options": [
+        "骑",
+        "坐",
+        "走",
+        "开"
+      ]
     },
     {
       "question": "How do you negate 是...的?",
       "type": "multiple_choice",
       "correct": "不是...的",
-      "options": ["不是...的", "没是...的", "别是...的", "不被...的"]
+      "options": [
+        "不是...的",
+        "没是...的",
+        "别是...的",
+        "不被...的"
+      ]
     },
     {
       "question": "Which verb is used for taking a bus or train?",
       "type": "multiple_choice",
       "correct": "坐",
-      "options": ["坐", "骑", "打", "走"]
+      "options": [
+        "坐",
+        "骑",
+        "打",
+        "走"
+      ]
     },
     {
       "question": "What does 交通 mean?",
       "type": "multiple_choice",
       "correct": "Traffic / Transportation",
-      "options": ["Traffic / Transportation", "Method", "Convenient", "Traffic jam"]
+      "options": [
+        "Traffic / Transportation",
+        "Method",
+        "Convenient",
+        "Traffic jam"
+      ]
     },
     {
       "question": "Translate: 打车比较快",
       "type": "multiple_choice",
       "correct": "Taking a taxi is faster",
-      "options": ["Taking a taxi is faster", "Cycling is faster", "Walking is faster", "The bus is faster"]
+      "options": [
+        "Taking a taxi is faster",
+        "Cycling is faster",
+        "Walking is faster",
+        "The bus is faster"
+      ]
     },
     {
       "question": "Which question asks how someone arrived?",
       "type": "multiple_choice",
       "correct": "你是怎么来的？",
-      "options": ["你是怎么来的？", "你来了吗？", "你去哪里？", "你什么时候走？"]
+      "options": [
+        "你是怎么来的？",
+        "你来了吗？",
+        "你去哪里？",
+        "你什么时候走？"
+      ]
     },
     {
       "question": "What does 方式 mean?",
       "type": "multiple_choice",
       "correct": "Method / Way / Mode",
-      "options": ["Method / Way / Mode", "Convenient", "Transportation", "Traffic jam"]
+      "options": [
+        "Method / Way / Mode",
+        "Convenient",
+        "Transportation",
+        "Traffic jam"
+      ]
     },
     {
       "question": "Translate: 他不是骑车来的，是开车来的。",
       "type": "multiple_choice",
       "correct": "He didn't cycle here — he drove.",
-      "options": ["He didn't cycle here — he drove.", "He cycled and drove.", "He came by taxi.", "He walked here."]
+      "options": [
+        "He didn't cycle here — he drove.",
+        "He cycled and drove.",
+        "He came by taxi.",
+        "He walked here."
+      ]
     },
     {
       "question": "What does 骑车上班 mean?",
       "type": "multiple_choice",
       "correct": "Cycle to work",
-      "options": ["Cycle to work", "Drive to work", "Take the bus to work", "Walk to work"]
+      "options": [
+        "Cycle to work",
+        "Drive to work",
+        "Take the bus to work",
+        "Walk to work"
+      ]
     }
   ],
   "dialogues": [
@@ -509,16 +694,54 @@
       "title": "How Did You Get Home?",
       "title_chinese": "你是怎么回来的？",
       "speakers": {
-        "A": {"name": "小红", "role": "朋友", "gender": "female"},
-        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "朋友",
+          "gender": "male"
+        }
       },
       "lines": [
-        {"speaker": "A", "chinese": "大明，你是怎么回来的？好快啊！", "pinyin": "Dà Míng, nǐ shì zěn me huí lái de? Hǎo kuài a!", "english": "Daming, how did you get back? You were so quick!"},
-        {"speaker": "B", "chinese": "我是骑车回来的，路上没有堵车。", "pinyin": "Wǒ shì qí chē huí lái de, lù shàng méi yǒu dǔ chē.", "english": "I cycled back — there was no traffic jam on the road."},
-        {"speaker": "A", "chinese": "哦，我是坐地铁回来的，等了很久。", "pinyin": "Ó, wǒ shì zuò dì tiě huí lái de, děng le hěn jiǔ.", "english": "Ah, I came back by subway — I waited for a long time."},
-        {"speaker": "B", "chinese": "地铁不是很方便吗？", "pinyin": "Dì tiě bú shì hěn fāng biàn ma?", "english": "Isn't the subway very convenient?"},
-        {"speaker": "A", "chinese": "今天人太多了，骑车确实是个好方式。", "pinyin": "Jīn tiān rén tài duō le, qí chē què shí shì gè hǎo fāng shì.", "english": "There were too many people today — cycling is indeed a good option."},
-        {"speaker": "B", "chinese": "是啊，而且骑车上班又方便又健康！", "pinyin": "Shì a, ér qiě qí chē shàng bān yòu fāng biàn yòu jiàn kāng!", "english": "Indeed — and cycling to work is both convenient and healthy!"}
+        {
+          "speaker": "A",
+          "chinese": "大明，你是怎么回来的？好快啊！",
+          "pinyin": "Dà Míng, nǐ shì zěn me huí lái de? Hǎo kuài a!",
+          "english": "Daming, how did you get back? You were so quick!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我是骑车回来的，路上没有堵车。",
+          "pinyin": "Wǒ shì qí chē huí lái de, lù shàng méi yǒu dǔ chē.",
+          "english": "I cycled back — there was no traffic jam on the road."
+        },
+        {
+          "speaker": "A",
+          "chinese": "哦，我是坐地铁回来的，等了很久。",
+          "pinyin": "Ó, wǒ shì zuò dì tiě huí lái de, děng le hěn jiǔ.",
+          "english": "Ah, I came back by subway — I waited for a long time."
+        },
+        {
+          "speaker": "B",
+          "chinese": "地铁不是很方便吗？",
+          "pinyin": "Dì tiě bú shì hěn fāng biàn ma?",
+          "english": "Isn't the subway very convenient?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "今天人太多了，骑车确实是个好方式。",
+          "pinyin": "Jīn tiān rén tài duō le, qí chē què shí shì gè hǎo fāng shì.",
+          "english": "There were too many people today — cycling is indeed a good option."
+        },
+        {
+          "speaker": "B",
+          "chinese": "是啊，而且骑车上班又方便又健康！",
+          "pinyin": "Shì a, ér qiě qí chē shàng bān yòu fāng biàn yòu jiàn kāng!",
+          "english": "Indeed — and cycling to work is both convenient and healthy!"
+        }
       ]
     },
     {
@@ -526,16 +749,54 @@
       "title": "Discussing Transport Options",
       "title_chinese": "讨论交通方式",
       "speakers": {
-        "A": {"name": "小红", "role": "朋友", "gender": "female"},
-        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "朋友",
+          "gender": "male"
+        }
       },
       "lines": [
-        {"speaker": "A", "chinese": "明天我们去机场，你打算怎么去？", "pinyin": "Míng tiān wǒ men qù jī chǎng, nǐ dǎ suàn zěn me qù?", "english": "We're going to the airport tomorrow — how are you planning to get there?"},
-        {"speaker": "B", "chinese": "开车去还是坐地铁，你觉得哪个方便？", "pinyin": "Kāi chē qù hái shì zuò dì tiě, nǐ jué de nǎ gè fāng biàn?", "english": "Drive or take the subway — which do you think is more convenient?"},
-        {"speaker": "A", "chinese": "开车可能会堵车，坐地铁比较快。", "pinyin": "Kāi chē kě néng huì dǔ chē, zuò dì tiě bǐ jiào kuài.", "english": "Driving might get caught in traffic — the subway is faster."},
-        {"speaker": "B", "chinese": "好，那我们是坐地铁去的吧。", "pinyin": "Hǎo, nà wǒ men shì zuò dì tiě qù de ba.", "english": "OK, so we'll go by subway then."},
-        {"speaker": "A", "chinese": "嗯，地铁是最方便的交通方式了。", "pinyin": "Ń, dì tiě shì zuì fāng biàn de jiāo tōng fāng shì le.", "english": "Yeah, the subway is the most convenient mode of transport."},
-        {"speaker": "B", "chinese": "行，明天早上八点坐地铁出发！", "pinyin": "Xíng, míng tiān zǎo shàng bā diǎn zuò dì tiě chū fā!", "english": "OK, let's take the subway at 8 a.m. tomorrow!"}
+        {
+          "speaker": "A",
+          "chinese": "明天我们去机场，你打算怎么去？",
+          "pinyin": "Míng tiān wǒ men qù jī chǎng, nǐ dǎ suàn zěn me qù?",
+          "english": "We're going to the airport tomorrow — how are you planning to get there?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "开车去还是坐地铁，你觉得哪个方便？",
+          "pinyin": "Kāi chē qù hái shì zuò dì tiě, nǐ jué de nǎ gè fāng biàn?",
+          "english": "Drive or take the subway — which do you think is more convenient?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "开车可能会堵车，坐地铁比较快。",
+          "pinyin": "Kāi chē kě néng huì dǔ chē, zuò dì tiě bǐ jiào kuài.",
+          "english": "Driving might get caught in traffic — the subway is faster."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好，那我们是坐地铁去的吧。",
+          "pinyin": "Hǎo, nà wǒ men shì zuò dì tiě qù de ba.",
+          "english": "OK, so we'll go by subway then."
+        },
+        {
+          "speaker": "A",
+          "chinese": "嗯，地铁是最方便的交通方式了。",
+          "pinyin": "Ń, dì tiě shì zuì fāng biàn de jiāo tōng fāng shì le.",
+          "english": "Yeah, the subway is the most convenient mode of transport."
+        },
+        {
+          "speaker": "B",
+          "chinese": "行，明天早上八点坐地铁出发！",
+          "pinyin": "Xíng, míng tiān zǎo shàng bā diǎn zuò dì tiě chū fā!",
+          "english": "OK, let's take the subway at 8 a.m. tomorrow!"
+        }
       ]
     }
   ]

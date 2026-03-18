@@ -51,20 +51,30 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
       activeOpacity={0.75}
     >
       <View style={styles.cardMain}>
+        {/* Left: Chinese + pinyin stacked, capped width so English has room */}
         <View style={styles.cardLeft}>
-          <Text style={[styles.chinese, isPhrase && styles.chinesePhrase]}>
+          <Text
+            style={[styles.chinese, isPhrase && styles.chinesePhrase]}
+            numberOfLines={1}
+            adjustsFontSizeToFit
+            minimumFontScale={0.6}
+          >
             {item.chinese}
           </Text>
-          {showPinyin && <Text style={styles.pinyin}>{item.pinyin}</Text>}
+          {showPinyin && item.pinyin && (
+            <Text style={styles.pinyin} numberOfLines={1}>
+              {item.pinyin}
+            </Text>
+          )}
         </View>
 
+        {/* Right: English + part-of-speech */}
         <View style={styles.cardRight}>
-          <Text style={styles.english}>{item.english}</Text>
+          <Text style={styles.english} numberOfLines={2}>
+            {item.english}
+          </Text>
           {item.part_of_speech && (
-            <Text style={[
-              styles.pos,
-              item.part_of_speech === 'phrase' && styles.posPhrase,
-            ]}>
+            <Text style={[styles.pos, item.part_of_speech === 'phrase' && styles.posPhrase]}>
               {item.part_of_speech}
             </Text>
           )}
@@ -76,14 +86,8 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
           {!showPinyin && item.pinyin && (
             <View style={styles.detailRow}>
               <Text style={styles.detailLabel}>Pinyin:</Text>
-              <Text style={[styles.detailValue, { color: '#a29bfe', fontStyle: 'italic' }]}>{item.pinyin}</Text>
-            </View>
-          )}
-          {item.tones?.length > 0 && (
-            <View style={styles.detailRow}>
-              <Text style={styles.detailLabel}>Tones:</Text>
-              <Text style={styles.detailValue}>
-                {item.tones.map(t => `Tone ${t}`).join('  ·  ')}
+              <Text style={[styles.detailValue, { color: '#a29bfe', fontStyle: 'italic' }]}>
+                {item.pinyin}
               </Text>
             </View>
           )}
@@ -114,7 +118,8 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: '#16213e',
     borderRadius: 14,
-    padding: 14,
+    paddingVertical: 10,
+    paddingHorizontal: 14,
     marginBottom: 8,
     borderWidth: 1,
     borderColor: '#2d3436',
@@ -123,13 +128,44 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(255,215,0,0.25)',
     backgroundColor: 'rgba(255,215,0,0.04)',
   },
-  cardMain: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  cardLeft: { flex: 1 },
-  chinese: { fontSize: 26, fontWeight: '800', color: '#fff', marginBottom: 3 },
-  chinesePhrase: { fontSize: 22 },
-  pinyin: { fontSize: 14, color: '#a29bfe', fontStyle: 'italic' },
-  cardRight: { alignItems: 'flex-end' },
-  english: { fontSize: 15, fontWeight: '600', color: '#fff', marginBottom: 4, textAlign: 'right' },
+
+  /* Row: Chinese on left, English on right */
+  cardMain: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  /* Chinese side — fixed proportion, won't overflow */
+  cardLeft: {
+    width: '42%',
+    paddingRight: 8,
+  },
+  chinese: {
+    fontSize: 24,
+    fontWeight: '800',
+    color: '#fff',
+    marginBottom: 2,
+  },
+  chinesePhrase: {
+    fontSize: 20,
+  },
+  pinyin: {
+    fontSize: 13,
+    color: '#a29bfe',
+    fontStyle: 'italic',
+  },
+
+  /* English side */
+  cardRight: {
+    flex: 1,
+    alignItems: 'flex-end',
+  },
+  english: {
+    fontSize: 14,
+    fontWeight: '600',
+    color: '#fff',
+    marginBottom: 4,
+    textAlign: 'right',
+  },
   pos: {
     fontSize: 11,
     color: '#636e72',
@@ -144,14 +180,14 @@ const styles = StyleSheet.create({
   },
 
   details: {
-    marginTop: 12,
-    paddingTop: 12,
+    marginTop: 10,
+    paddingTop: 10,
     borderTopWidth: 1,
     borderTopColor: 'rgba(255,255,255,0.08)',
   },
   detailRow: { flexDirection: 'row', marginBottom: 8 },
   detailLabel: { fontSize: 13, fontWeight: '600', color: '#a29bfe', marginRight: 8 },
-  detailValue: { fontSize: 13, color: '#fff' },
+  detailValue: { fontSize: 13, color: '#fff', flex: 1 },
   audioBtn: {
     backgroundColor: 'rgba(162,155,254,0.15)',
     padding: 10,

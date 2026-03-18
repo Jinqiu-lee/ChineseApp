@@ -10,7 +10,6 @@
       "id": "hsk3_l4_01",
       "chinese": "刚才",
       "pinyin": "gāng cái",
-      "tones": [1, 2],
       "english": "Just now / A moment ago",
       "part_of_speech": "time word"
     },
@@ -18,7 +17,6 @@
       "id": "hsk3_l4_02",
       "chinese": "聊天",
       "pinyin": "liáo tiān",
-      "tones": [2, 1],
       "english": "To chat",
       "part_of_speech": "verb"
     },
@@ -26,7 +24,6 @@
       "id": "hsk3_l4_03",
       "chinese": "邻居",
       "pinyin": "lín jū",
-      "tones": [2, 1],
       "english": "Neighbour",
       "part_of_speech": "noun"
     },
@@ -34,7 +31,6 @@
       "id": "hsk3_l4_04",
       "chinese": "借",
       "pinyin": "jiè",
-      "tones": [4],
       "english": "To borrow / To lend",
       "part_of_speech": "verb"
     },
@@ -42,7 +38,6 @@
       "id": "hsk3_l4_05",
       "chinese": "声音",
       "pinyin": "shēng yīn",
-      "tones": [1, 1],
       "english": "Sound / Voice",
       "part_of_speech": "noun"
     },
@@ -50,7 +45,6 @@
       "id": "hsk3_l4_06",
       "chinese": "音乐",
       "pinyin": "yīn yuè",
-      "tones": [1, 4],
       "english": "Music",
       "part_of_speech": "noun"
     },
@@ -58,7 +52,6 @@
       "id": "hsk3_l4_07",
       "chinese": "管",
       "pinyin": "guǎn",
-      "tones": [3],
       "english": "To manage / To interfere / To mind",
       "part_of_speech": "verb"
     },
@@ -66,7 +59,6 @@
       "id": "hsk3_l4_08",
       "chinese": "闲事",
       "pinyin": "xián shì",
-      "tones": [2, 4],
       "english": "Other people's business / Unnecessary matters",
       "part_of_speech": "noun"
     },
@@ -74,7 +66,6 @@
       "id": "hsk3_l4_09",
       "chinese": "关系",
       "pinyin": "guān xi",
-      "tones": [1, 0],
       "english": "Relationship / Connection",
       "part_of_speech": "noun"
     },
@@ -82,7 +73,6 @@
       "id": "hsk3_l4_10",
       "chinese": "自己",
       "pinyin": "zì jǐ",
-      "tones": [4, 3],
       "english": "Oneself / Yourself / Himself",
       "part_of_speech": "pronoun"
     },
@@ -90,7 +80,6 @@
       "id": "hsk3_l4_11",
       "chinese": "互相",
       "pinyin": "hù xiāng",
-      "tones": [4, 1],
       "english": "Each other / Mutually",
       "part_of_speech": "adverb"
     },
@@ -98,7 +87,6 @@
       "id": "hsk3_l4_12",
       "chinese": "而且",
       "pinyin": "ér qiě",
-      "tones": [2, 3],
       "english": "Moreover / And also / Furthermore",
       "part_of_speech": "conjunction"
     },
@@ -106,7 +94,6 @@
       "id": "hsk3_l4_p01",
       "chinese": "爱管闲事",
       "pinyin": "ài guǎn xián shì",
-      "tones": [4, 3, 2, 4],
       "english": "Like to meddle / Always interfering in others' business",
       "part_of_speech": "phrase"
     },
@@ -114,7 +101,6 @@
       "id": "hsk3_l4_p02",
       "chinese": "刚才说的",
       "pinyin": "gāng cái shuō de",
-      "tones": [1, 2, 1, 0],
       "english": "What was just said",
       "part_of_speech": "phrase"
     },
@@ -122,7 +108,6 @@
       "id": "hsk3_l4_p03",
       "chinese": "互相帮助",
       "pinyin": "hù xiāng bāng zhù",
-      "tones": [4, 1, 1, 4],
       "english": "Help each other",
       "part_of_speech": "phrase"
     },
@@ -130,7 +115,6 @@
       "id": "hsk3_l4_p04",
       "chinese": "没关系",
       "pinyin": "méi guān xi",
-      "tones": [2, 1, 0],
       "english": "It doesn't matter / Never mind",
       "part_of_speech": "phrase"
     },
@@ -138,7 +122,6 @@
       "id": "hsk3_l4_p05",
       "chinese": "跟邻居聊天",
       "pinyin": "gēn lín jū liáo tiān",
-      "tones": [1, 2, 1, 2, 1],
       "english": "Chat with the neighbour",
       "part_of_speech": "phrase"
     },
@@ -146,7 +129,6 @@
       "id": "hsk3_l4_p06",
       "chinese": "自己的事",
       "pinyin": "zì jǐ de shì",
-      "tones": [4, 3, 0, 4],
       "english": "One's own business / Affairs",
       "part_of_speech": "phrase"
     },
@@ -154,7 +136,6 @@
       "id": "hsk3_l4_p07",
       "chinese": "音乐声音太大",
       "pinyin": "yīn yuè shēng yīn tài dà",
-      "tones": [1, 4, 1, 1, 4, 4],
       "english": "The music is too loud",
       "part_of_speech": "phrase"
     },
@@ -162,7 +143,6 @@
       "id": "hsk3_l4_p08",
       "chinese": "借给邻居",
       "pinyin": "jiè gěi lín jū",
-      "tones": [4, 3, 2, 1],
       "english": "Lend to the neighbour",
       "part_of_speech": "phrase"
     }
@@ -664,8 +644,16 @@
       "title": "The Noisy Neighbour",
       "title_chinese": "吵闹的邻居",
       "speakers": {
-        "A": {"name": "小红", "role": "邻居", "gender": "female"},
-        "B": {"name": "大明", "role": "邻居", "gender": "male"}
+        "A": {
+          "name": "小红",
+          "role": "邻居",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "邻居",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -711,8 +699,16 @@
       "title": "Chatting About a Nosy Person",
       "title_chinese": "聊多管闲事的人",
       "speakers": {
-        "A": {"name": "小丽", "role": "朋友", "gender": "female"},
-        "B": {"name": "小刚", "role": "朋友", "gender": "male"}
+        "A": {
+          "name": "小丽",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "朋友",
+          "gender": "male"
+        }
       },
       "lines": [
         {

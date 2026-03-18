@@ -10,7 +10,6 @@
       "id": "hsk3_l1_01",
       "chinese": "打算",
       "pinyin": "dǎ suàn",
-      "tones": [3, 4],
       "english": "To plan / To intend",
       "part_of_speech": "verb"
     },
@@ -18,7 +17,6 @@
       "id": "hsk3_l1_02",
       "chinese": "计划",
       "pinyin": "jì huà",
-      "tones": [4, 4],
       "english": "Plan / Schedule",
       "part_of_speech": "noun/verb"
     },
@@ -26,7 +24,6 @@
       "id": "hsk3_l1_03",
       "chinese": "顺便",
       "pinyin": "shùn biàn",
-      "tones": [4, 4],
       "english": "Conveniently / While at it",
       "part_of_speech": "adverb"
     },
@@ -34,7 +31,6 @@
       "id": "hsk3_l1_04",
       "chinese": "附近",
       "pinyin": "fù jìn",
-      "tones": [4, 4],
       "english": "Nearby / In the vicinity",
       "part_of_speech": "noun/adjective"
     },
@@ -42,7 +38,6 @@
       "id": "hsk3_l1_05",
       "chinese": "超市",
       "pinyin": "chāo shì",
-      "tones": [1, 4],
       "english": "Supermarket",
       "part_of_speech": "noun"
     },
@@ -50,7 +45,6 @@
       "id": "hsk3_l1_06",
       "chinese": "社区",
       "pinyin": "shè qū",
-      "tones": [4, 1],
       "english": "Community / Neighbourhood",
       "part_of_speech": "noun"
     },
@@ -58,7 +52,6 @@
       "id": "hsk3_l1_07",
       "chinese": "美发",
       "pinyin": "měi fǎ",
-      "tones": [3, 4],
       "english": "Hairdresser / Beauty salon",
       "part_of_speech": "noun"
     },
@@ -66,7 +59,6 @@
       "id": "hsk3_l1_08",
       "chinese": "帮",
       "pinyin": "bāng",
-      "tones": [1],
       "english": "To help",
       "part_of_speech": "verb"
     },
@@ -74,7 +66,6 @@
       "id": "hsk3_l1_09",
       "chinese": "趟",
       "pinyin": "tàng",
-      "tones": [4],
       "english": "[Measure word for trips/visits]",
       "part_of_speech": "measure word"
     },
@@ -82,7 +73,6 @@
       "id": "hsk3_l1_10",
       "chinese": "再说",
       "pinyin": "zài shuō",
-      "tones": [4, 1],
       "english": "Besides / Moreover / Let's talk later",
       "part_of_speech": "phrase"
     },
@@ -90,7 +80,6 @@
       "id": "hsk3_l1_11",
       "chinese": "然后",
       "pinyin": "rán hòu",
-      "tones": [2, 4],
       "english": "Then / After that",
       "part_of_speech": "adverb"
     },
@@ -98,7 +87,6 @@
       "id": "hsk3_l1_12",
       "chinese": "啊",
       "pinyin": "a",
-      "tones": [0],
       "english": "[Sentence particle, softening/exclamation]",
       "part_of_speech": "particle"
     },
@@ -106,7 +94,6 @@
       "id": "hsk3_l1_p01",
       "chinese": "有什么计划",
       "pinyin": "yǒu shén me jì huà",
-      "tones": [3, 2, 0, 4, 4],
       "english": "Have what plans / What are your plans",
       "part_of_speech": "phrase"
     },
@@ -114,7 +101,6 @@
       "id": "hsk3_l1_p02",
       "chinese": "打算去超市",
       "pinyin": "dǎ suàn qù chāo shì",
-      "tones": [3, 4, 4, 1, 4],
       "english": "Plan to go to the supermarket",
       "part_of_speech": "phrase"
     },
@@ -122,7 +108,6 @@
       "id": "hsk3_l1_p03",
       "chinese": "顺便帮我买",
       "pinyin": "shùn biàn bāng wǒ mǎi",
-      "tones": [4, 4, 1, 3, 3],
       "english": "Help me buy something while you're at it",
       "part_of_speech": "phrase"
     },
@@ -130,7 +115,6 @@
       "id": "hsk3_l1_p04",
       "chinese": "附近的社区",
       "pinyin": "fù jìn de shè qū",
-      "tones": [4, 4, 0, 4, 1],
       "english": "The nearby community",
       "part_of_speech": "phrase"
     },
@@ -138,7 +122,6 @@
       "id": "hsk3_l1_p05",
       "chinese": "去美发一趟",
       "pinyin": "qù měi fǎ yī tàng",
-      "tones": [4, 3, 4, 1, 4],
       "english": "Make a trip to the hairdresser",
       "part_of_speech": "phrase"
     },
@@ -146,7 +129,6 @@
       "id": "hsk3_l1_p06",
       "chinese": "再说吧",
       "pinyin": "zài shuō ba",
-      "tones": [4, 1, 0],
       "english": "Let's talk about it later / We'll see",
       "part_of_speech": "phrase"
     },
@@ -154,7 +136,6 @@
       "id": "hsk3_l1_p07",
       "chinese": "然后去哪儿",
       "pinyin": "rán hòu qù nǎr",
-      "tones": [2, 4, 4, 3],
       "english": "Then where to go",
       "part_of_speech": "phrase"
     },
@@ -162,7 +143,6 @@
       "id": "hsk3_l1_p08",
       "chinese": "周末打算做什么",
       "pinyin": "zhōu mò dǎ suàn zuò shén me",
-      "tones": [1, 4, 3, 4, 4, 2, 0],
       "english": "What do you plan to do on the weekend",
       "part_of_speech": "phrase"
     }
@@ -664,8 +644,16 @@
       "title": "Planning a Weekend Outing",
       "title_chinese": "计划周末出行",
       "speakers": {
-        "A": {"name": "小红", "role": "朋友", "gender": "female"},
-        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "朋友",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -711,8 +699,16 @@
       "title": "Asking a Neighbour for Help",
       "title_chinese": "请邻居帮忙",
       "speakers": {
-        "A": {"name": "小丽", "role": "邻居", "gender": "female"},
-        "B": {"name": "小刚", "role": "邻居", "gender": "male"}
+        "A": {
+          "name": "小丽",
+          "role": "邻居",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "邻居",
+          "gender": "male"
+        }
       },
       "lines": [
         {

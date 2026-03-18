@@ -10,7 +10,6 @@
       "id": "hsk3_l3_01",
       "chinese": "饮料",
       "pinyin": "yǐn liào",
-      "tones": [3, 4],
       "english": "Drink / Beverage",
       "part_of_speech": "noun"
     },
@@ -18,7 +17,6 @@
       "id": "hsk3_l3_02",
       "chinese": "放",
       "pinyin": "fàng",
-      "tones": [4],
       "english": "To put / To place",
       "part_of_speech": "verb"
     },
@@ -26,7 +24,6 @@
       "id": "hsk3_l3_03",
       "chinese": "台",
       "pinyin": "tái",
-      "tones": [2],
       "english": "[Measure word for machines/appliances]",
       "part_of_speech": "measure word"
     },
@@ -34,7 +31,6 @@
       "id": "hsk3_l3_04",
       "chinese": "瓶",
       "pinyin": "píng",
-      "tones": [2],
       "english": "Bottle / [Measure word for bottles]",
       "part_of_speech": "measure word/noun"
     },
@@ -42,7 +38,6 @@
       "id": "hsk3_l3_05",
       "chinese": "果汁",
       "pinyin": "guǒ zhī",
-      "tones": [3, 1],
       "english": "Fruit juice",
       "part_of_speech": "noun"
     },
@@ -50,7 +45,6 @@
       "id": "hsk3_l3_06",
       "chinese": "矿泉水",
       "pinyin": "kuàng quán shuǐ",
-      "tones": [4, 2, 3],
       "english": "Mineral water",
       "part_of_speech": "noun"
     },
@@ -58,7 +52,6 @@
       "id": "hsk3_l3_07",
       "chinese": "就",
       "pinyin": "jiù",
-      "tones": [4],
       "english": "Just / Right there / Exactly",
       "part_of_speech": "adverb"
     },
@@ -66,7 +59,6 @@
       "id": "hsk3_l3_08",
       "chinese": "旁边",
       "pinyin": "páng biān",
-      "tones": [2, 1],
       "english": "Next to / Beside",
       "part_of_speech": "noun"
     },
@@ -74,7 +66,6 @@
       "id": "hsk3_l3_09",
       "chinese": "右边",
       "pinyin": "yòu biān",
-      "tones": [4, 1],
       "english": "Right side / On the right",
       "part_of_speech": "noun"
     },
@@ -82,7 +73,6 @@
       "id": "hsk3_l3_10",
       "chinese": "左边",
       "pinyin": "zuǒ biān",
-      "tones": [3, 1],
       "english": "Left side / On the left",
       "part_of_speech": "noun"
     },
@@ -90,7 +80,6 @@
       "id": "hsk3_l3_11",
       "chinese": "够",
       "pinyin": "gòu",
-      "tones": [4],
       "english": "Enough / Sufficient",
       "part_of_speech": "adjective/verb"
     },
@@ -98,7 +87,6 @@
       "id": "hsk3_l3_12",
       "chinese": "着",
       "pinyin": "zhe",
-      "tones": [0],
       "english": "[Aspect particle: ongoing state]",
       "part_of_speech": "particle"
     },
@@ -106,7 +94,6 @@
       "id": "hsk3_l3_p01",
       "chinese": "放在桌子上",
       "pinyin": "fàng zài zhuō zi shàng",
-      "tones": [4, 4, 1, 0, 4],
       "english": "Placed on the table",
       "part_of_speech": "phrase"
     },
@@ -114,7 +101,6 @@
       "id": "hsk3_l3_p02",
       "chinese": "一瓶果汁",
       "pinyin": "yī píng guǒ zhī",
-      "tones": [1, 2, 3, 1],
       "english": "One bottle of fruit juice",
       "part_of_speech": "phrase"
     },
@@ -122,7 +108,6 @@
       "id": "hsk3_l3_p03",
       "chinese": "够喝了",
       "pinyin": "gòu hē le",
-      "tones": [4, 1, 0],
       "english": "Enough to drink",
       "part_of_speech": "phrase"
     },
@@ -130,7 +115,6 @@
       "id": "hsk3_l3_p04",
       "chinese": "就在旁边",
       "pinyin": "jiù zài páng biān",
-      "tones": [4, 4, 2, 1],
       "english": "Right next to / Right beside",
       "part_of_speech": "phrase"
     },
@@ -138,7 +122,6 @@
       "id": "hsk3_l3_p05",
       "chinese": "放着饮料",
       "pinyin": "fàng zhe yǐn liào",
-      "tones": [4, 0, 3, 4],
       "english": "Drinks placed there (ongoing state)",
       "part_of_speech": "phrase"
     },
@@ -146,7 +129,6 @@
       "id": "hsk3_l3_p06",
       "chinese": "两台电脑",
       "pinyin": "liǎng tái diàn nǎo",
-      "tones": [3, 2, 4, 3],
       "english": "Two computers",
       "part_of_speech": "phrase"
     },
@@ -154,7 +136,6 @@
       "id": "hsk3_l3_p07",
       "chinese": "左边还是右边",
       "pinyin": "zuǒ biān hái shì yòu biān",
-      "tones": [3, 1, 2, 4, 4, 1],
       "english": "Left side or right side",
       "part_of_speech": "phrase"
     },
@@ -162,7 +143,6 @@
       "id": "hsk3_l3_p08",
       "chinese": "矿泉水够不够",
       "pinyin": "kuàng quán shuǐ gòu bu gòu",
-      "tones": [4, 2, 3, 4, 0, 4],
       "english": "Is the mineral water enough",
       "part_of_speech": "phrase"
     }
@@ -669,8 +649,16 @@
       "title": "Setting Up for a Party",
       "title_chinese": "为派对做准备",
       "speakers": {
-        "A": {"name": "小红", "role": "朋友", "gender": "female"},
-        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "朋友",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -716,8 +704,16 @@
       "title": "Looking for Things in the Office",
       "title_chinese": "在办公室找东西",
       "speakers": {
-        "A": {"name": "小丽", "role": "同事", "gender": "female"},
-        "B": {"name": "小刚", "role": "同事", "gender": "male"}
+        "A": {
+          "name": "小丽",
+          "role": "同事",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "同事",
+          "gender": "male"
+        }
       },
       "lines": [
         {

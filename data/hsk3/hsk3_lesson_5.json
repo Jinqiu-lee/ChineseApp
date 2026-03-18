@@ -10,7 +10,6 @@
       "id": "hsk3_l5_01",
       "chinese": "越来越",
       "pinyin": "yuè lái yuè",
-      "tones": [4, 2, 4],
       "english": "More and more / Increasingly",
       "part_of_speech": "adverb"
     },
@@ -18,7 +17,6 @@
       "id": "hsk3_l5_02",
       "chinese": "最近",
       "pinyin": "zuì jìn",
-      "tones": [4, 4],
       "english": "Recently / Lately",
       "part_of_speech": "time word"
     },
@@ -26,7 +24,6 @@
       "id": "hsk3_l5_03",
       "chinese": "胖",
       "pinyin": "pàng",
-      "tones": [4],
       "english": "Fat / Overweight",
       "part_of_speech": "adjective"
     },
@@ -34,7 +31,6 @@
       "id": "hsk3_l5_04",
       "chinese": "锻炼",
       "pinyin": "duàn liàn",
-      "tones": [4, 4],
       "english": "To exercise / To work out",
       "part_of_speech": "verb"
     },
@@ -42,7 +38,6 @@
       "id": "hsk3_l5_05",
       "chinese": "坚持",
       "pinyin": "jiān chí",
-      "tones": [1, 2],
       "english": "To persist / To keep at it",
       "part_of_speech": "verb"
     },
@@ -50,7 +45,6 @@
       "id": "hsk3_l5_06",
       "chinese": "体重",
       "pinyin": "tǐ zhòng",
-      "tones": [3, 4],
       "english": "Body weight",
       "part_of_speech": "noun"
     },
@@ -58,7 +52,6 @@
       "id": "hsk3_l5_07",
       "chinese": "减肥",
       "pinyin": "jiǎn féi",
-      "tones": [3, 2],
       "english": "To lose weight / To diet",
       "part_of_speech": "verb"
     },
@@ -66,7 +59,6 @@
       "id": "hsk3_l5_08",
       "chinese": "健康",
       "pinyin": "jiàn kāng",
-      "tones": [4, 1],
       "english": "Health / Healthy",
       "part_of_speech": "noun/adjective"
     },
@@ -74,7 +66,6 @@
       "id": "hsk3_l5_09",
       "chinese": "比较",
       "pinyin": "bǐ jiào",
-      "tones": [3, 4],
       "english": "Relatively / Comparatively",
       "part_of_speech": "adverb"
     },
@@ -82,7 +73,6 @@
       "id": "hsk3_l5_10",
       "chinese": "这么",
       "pinyin": "zhè me",
-      "tones": [4, 0],
       "english": "So / This / Like this",
       "part_of_speech": "pronoun/adverb"
     },
@@ -90,7 +80,6 @@
       "id": "hsk3_l5_11",
       "chinese": "节食",
       "pinyin": "jié shí",
-      "tones": [2, 2],
       "english": "To diet / To restrict eating",
       "part_of_speech": "verb"
     },
@@ -98,7 +87,6 @@
       "id": "hsk3_l5_12",
       "chinese": "瘦",
       "pinyin": "shòu",
-      "tones": [4],
       "english": "Thin / Slim",
       "part_of_speech": "adjective"
     },
@@ -106,7 +94,6 @@
       "id": "hsk3_l5_p01",
       "chinese": "越来越胖",
       "pinyin": "yuè lái yuè pàng",
-      "tones": [4, 2, 4, 4],
       "english": "Getting fatter and fatter",
       "part_of_speech": "phrase"
     },
@@ -114,7 +101,6 @@
       "id": "hsk3_l5_p02",
       "chinese": "坚持锻炼",
       "pinyin": "jiān chí duàn liàn",
-      "tones": [1, 2, 4, 4],
       "english": "Keep exercising / Persist in working out",
       "part_of_speech": "phrase"
     },
@@ -122,7 +108,6 @@
       "id": "hsk3_l5_p03",
       "chinese": "减肥计划",
       "pinyin": "jiǎn féi jì huà",
-      "tones": [3, 2, 4, 4],
       "english": "Weight loss plan",
       "part_of_speech": "phrase"
     },
@@ -130,7 +115,6 @@
       "id": "hsk3_l5_p04",
       "chinese": "比较健康",
       "pinyin": "bǐ jiào jiàn kāng",
-      "tones": [3, 4, 4, 1],
       "english": "Relatively healthy",
       "part_of_speech": "phrase"
     },
@@ -138,7 +122,6 @@
       "id": "hsk3_l5_p05",
       "chinese": "越吃越胖",
       "pinyin": "yuè chī yuè pàng",
-      "tones": [4, 1, 4, 4],
       "english": "The more you eat, the fatter you get",
       "part_of_speech": "phrase"
     },
@@ -146,7 +129,6 @@
       "id": "hsk3_l5_p06",
       "chinese": "最近体重",
       "pinyin": "zuì jìn tǐ zhòng",
-      "tones": [4, 4, 3, 4],
       "english": "Recent body weight",
       "part_of_speech": "phrase"
     },
@@ -154,7 +136,6 @@
       "id": "hsk3_l5_p07",
       "chinese": "这么瘦",
       "pinyin": "zhè me shòu",
-      "tones": [4, 0, 4],
       "english": "This thin / So slim",
       "part_of_speech": "phrase"
     },
@@ -162,7 +143,6 @@
       "id": "hsk3_l5_p08",
       "chinese": "节食减肥",
       "pinyin": "jié shí jiǎn féi",
-      "tones": [2, 2, 3, 2],
       "english": "Diet to lose weight",
       "part_of_speech": "phrase"
     }
@@ -665,8 +645,16 @@
       "title": "Talking About Weight and Exercise",
       "title_chinese": "聊体重和锻炼",
       "speakers": {
-        "A": {"name": "小红", "role": "朋友", "gender": "female"},
-        "B": {"name": "大明", "role": "朋友", "gender": "male"}
+        "A": {
+          "name": "小红",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大明",
+          "role": "朋友",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -712,8 +700,16 @@
       "title": "Complimenting Someone on Losing Weight",
       "title_chinese": "夸人瘦了",
       "speakers": {
-        "A": {"name": "小丽", "role": "同学", "gender": "female"},
-        "B": {"name": "小刚", "role": "同学", "gender": "male"}
+        "A": {
+          "name": "小丽",
+          "role": "同学",
+          "gender": "female"
+        },
+        "B": {
+          "name": "小刚",
+          "role": "同学",
+          "gender": "male"
+        }
       },
       "lines": [
         {

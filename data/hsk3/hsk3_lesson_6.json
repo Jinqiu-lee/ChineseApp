@@ -10,7 +10,6 @@
       "id": "hsk3_l6_01",
       "chinese": "可能",
       "pinyin": "kě néng",
-      "tones": [3, 2],
       "english": "Possibly / Maybe / Possible",
       "part_of_speech": "adverb/adjective"
     },
@@ -18,7 +17,6 @@
       "id": "hsk3_l6_02",
       "chinese": "忽然",
       "pinyin": "hū rán",
-      "tones": [1, 2],
       "english": "Suddenly / All of a sudden",
       "part_of_speech": "adverb"
     },
@@ -26,7 +24,6 @@
       "id": "hsk3_l6_03",
       "chinese": "或者",
       "pinyin": "huò zhě",
-      "tones": [4, 3],
       "english": "Or (in statements)",
       "part_of_speech": "conjunction"
     },
@@ -34,7 +31,6 @@
       "id": "hsk3_l6_04",
       "chinese": "地方",
       "pinyin": "dì fāng",
-      "tones": [4, 1],
       "english": "Place / Location / Spot",
       "part_of_speech": "noun"
     },
@@ -42,7 +38,6 @@
       "id": "hsk3_l6_05",
       "chinese": "既然",
       "pinyin": "jì rán",
-      "tones": [4, 2],
       "english": "Since / Given that",
       "part_of_speech": "conjunction"
     },
@@ -50,7 +45,6 @@
       "id": "hsk3_l6_06",
       "chinese": "好像",
       "pinyin": "hǎo xiàng",
-      "tones": [3, 4],
       "english": "Seem / Appear / As if",
       "part_of_speech": "adverb"
     },
@@ -58,7 +52,6 @@
       "id": "hsk3_l6_07",
       "chinese": "当然",
       "pinyin": "dāng rán",
-      "tones": [1, 2],
       "english": "Of course / Naturally",
       "part_of_speech": "adverb"
     },
@@ -66,7 +59,6 @@
       "id": "hsk3_l6_08",
       "chinese": "明明",
       "pinyin": "míng míng",
-      "tones": [2, 2],
       "english": "Obviously / Clearly (contrary to what one says)",
       "part_of_speech": "adverb"
     },
@@ -74,7 +66,6 @@
       "id": "hsk3_l6_09",
       "chinese": "丢",
       "pinyin": "diū",
-      "tones": [1],
       "english": "To lose / To misplace",
       "part_of_speech": "verb"
     },
@@ -82,7 +73,6 @@
       "id": "hsk3_l6_10",
       "chinese": "到处",
       "pinyin": "dào chù",
-      "tones": [4, 4],
       "english": "Everywhere / All over",
       "part_of_speech": "adverb"
     },
@@ -90,7 +80,6 @@
       "id": "hsk3_l6_11",
       "chinese": "肯定",
       "pinyin": "kěn dìng",
-      "tones": [3, 4],
       "english": "Certainly / Definitely / Surely",
       "part_of_speech": "adverb"
     },
@@ -98,7 +87,6 @@
       "id": "hsk3_l6_12",
       "chinese": "找",
       "pinyin": "zhǎo",
-      "tones": [3],
       "english": "To look for / To search",
       "part_of_speech": "verb"
     },
@@ -106,7 +94,6 @@
       "id": "hsk3_l6_p01",
       "chinese": "可能在那里",
       "pinyin": "kě néng zài nà lǐ",
-      "tones": [3, 2, 4, 4, 3],
       "english": "Possibly over there",
       "part_of_speech": "phrase"
     },
@@ -114,7 +101,6 @@
       "id": "hsk3_l6_p02",
       "chinese": "忽然不见了",
       "pinyin": "hū rán bú jiàn le",
-      "tones": [1, 2, 2, 4, 0],
       "english": "Suddenly disappeared",
       "part_of_speech": "phrase"
     },
@@ -122,7 +108,6 @@
       "id": "hsk3_l6_p03",
       "chinese": "到处找",
       "pinyin": "dào chù zhǎo",
-      "tones": [4, 4, 3],
       "english": "Search everywhere",
       "part_of_speech": "phrase"
     },
@@ -130,7 +115,6 @@
       "id": "hsk3_l6_p04",
       "chinese": "肯定在这儿",
       "pinyin": "kěn dìng zài zhèr",
-      "tones": [3, 4, 4, 4],
       "english": "Definitely right here",
       "part_of_speech": "phrase"
     },
@@ -138,7 +122,6 @@
       "id": "hsk3_l6_p05",
       "chinese": "好像丢了",
       "pinyin": "hǎo xiàng diū le",
-      "tones": [3, 4, 1, 0],
       "english": "Seems to be lost",
       "part_of_speech": "phrase"
     },
@@ -146,7 +129,6 @@
       "id": "hsk3_l6_p06",
       "chinese": "既然找不到",
       "pinyin": "jì rán zhǎo bu dào",
-      "tones": [4, 2, 3, 0, 4],
       "english": "Since it can't be found",
       "part_of_speech": "phrase"
     },
@@ -154,7 +136,6 @@
       "id": "hsk3_l6_p07",
       "chinese": "当然可以",
       "pinyin": "dāng rán kě yǐ",
-      "tones": [1, 2, 3, 3],
       "english": "Of course it's possible",
       "part_of_speech": "phrase"
     },
@@ -162,7 +143,6 @@
       "id": "hsk3_l6_p08",
       "chinese": "明明放在这里",
       "pinyin": "míng míng fàng zài zhè lǐ",
-      "tones": [2, 2, 4, 4, 4, 3],
       "english": "I clearly put it right here",
       "part_of_speech": "phrase"
     }
@@ -221,8 +201,18 @@
           "question": "Fill in: 他说得太快，我听___清楚。(He speaks too fast — I can't hear clearly.)",
           "type": "multiple_choice",
           "correct": "不",
-          "options": ["不", "得", "了", "到"],
-          "option_pinyin": ["bù", "de", "le", "dào"]
+          "options": [
+            "不",
+            "得",
+            "了",
+            "到"
+          ],
+          "option_pinyin": [
+            "bù",
+            "de",
+            "le",
+            "dào"
+          ]
         },
         {
           "question": "Which sentence means 'She can finish the homework'?",
@@ -256,15 +246,35 @@
           "question": "How do you say 'cannot find it' using a potential complement?",
           "type": "multiple_choice",
           "correct": "找不到",
-          "options": ["找不到", "找得到", "没有找", "不找了"],
-          "option_pinyin": ["zhǎo bu dào", "zhǎo de dào", "méi yǒu zhǎo", "bù zhǎo le"]
+          "options": [
+            "找不到",
+            "找得到",
+            "没有找",
+            "不找了"
+          ],
+          "option_pinyin": [
+            "zhǎo bu dào",
+            "zhǎo de dào",
+            "méi yǒu zhǎo",
+            "bù zhǎo le"
+          ]
         },
         {
           "question": "Fill in: 这个字太难了，我写___好。(This character is too hard — I can't write it well.)",
           "type": "multiple_choice",
           "correct": "不",
-          "options": ["不", "得", "很", "也"],
-          "option_pinyin": ["bù", "de", "hěn", "yě"]
+          "options": [
+            "不",
+            "得",
+            "很",
+            "也"
+          ],
+          "option_pinyin": [
+            "bù",
+            "de",
+            "hěn",
+            "yě"
+          ]
         }
       ]
     },
@@ -289,8 +299,18 @@
           "question": "Which word completes: 既然找不到，___再去买一个。",
           "type": "multiple_choice",
           "correct": "就",
-          "options": ["就", "也", "但", "或者"],
-          "option_pinyin": ["jiù", "yě", "dàn", "huò zhě"]
+          "options": [
+            "就",
+            "也",
+            "但",
+            "或者"
+          ],
+          "option_pinyin": [
+            "jiù",
+            "yě",
+            "dàn",
+            "huò zhě"
+          ]
         },
         {
           "question": "What does 既然 introduce in a sentence?",
@@ -324,8 +344,18 @@
           "question": "Fill in: 既然你不喜欢，___换一个吧。",
           "type": "multiple_choice",
           "correct": "就",
-          "options": ["就", "或者", "肯定", "忽然"],
-          "option_pinyin": ["jiù", "huò zhě", "kěn dìng", "hū rán"]
+          "options": [
+            "就",
+            "或者",
+            "肯定",
+            "忽然"
+          ],
+          "option_pinyin": [
+            "jiù",
+            "huò zhě",
+            "kěn dìng",
+            "hū rán"
+          ]
         },
         {
           "question": "Translate: 既然决定了，就不要再改了。",
@@ -361,15 +391,35 @@
           "question": "Which word expresses certainty that contradicts another claim: 好像 or 明明?",
           "type": "multiple_choice",
           "correct": "明明",
-          "options": ["好像", "明明", "可能", "或者"],
-          "option_pinyin": ["hǎo xiàng", "míng míng", "kě néng", "huò zhě"]
+          "options": [
+            "好像",
+            "明明",
+            "可能",
+            "或者"
+          ],
+          "option_pinyin": [
+            "hǎo xiàng",
+            "míng míng",
+            "kě néng",
+            "huò zhě"
+          ]
         },
         {
           "question": "Fill in: 他___很累，眼睛都红了。(He seems very tired — his eyes are red.)",
           "type": "multiple_choice",
           "correct": "好像",
-          "options": ["好像", "明明", "肯定", "当然"],
-          "option_pinyin": ["hǎo xiàng", "míng míng", "kěn dìng", "dāng rán"]
+          "options": [
+            "好像",
+            "明明",
+            "肯定",
+            "当然"
+          ],
+          "option_pinyin": [
+            "hǎo xiàng",
+            "míng míng",
+            "kěn dìng",
+            "dāng rán"
+          ]
         },
         {
           "question": "Which sentence uses 明明 correctly to show contradiction?",
@@ -386,8 +436,18 @@
           "question": "What does 好像丢了 mean?",
           "type": "multiple_choice",
           "correct": "Seems to be lost",
-          "options": ["Seems to be lost", "Clearly lost it", "Definitely lost", "Suddenly lost"],
-          "option_pinyin": ["hǎo xiàng diū le", "míng míng diū le", "kěn dìng diū le", "hū rán diū le"]
+          "options": [
+            "Seems to be lost",
+            "Clearly lost it",
+            "Definitely lost",
+            "Suddenly lost"
+          ],
+          "option_pinyin": [
+            "hǎo xiàng diū le",
+            "míng míng diū le",
+            "kěn dìng diū le",
+            "hū rán diū le"
+          ]
         },
         {
           "question": "Translate: 他好像认识她，但没说话。",
@@ -408,67 +468,122 @@
       "question": "What does 可能 mean?",
       "type": "multiple_choice",
       "correct": "Possibly / Maybe",
-      "options": ["Definitely", "Possibly / Maybe", "Obviously", "Suddenly"]
+      "options": [
+        "Definitely",
+        "Possibly / Maybe",
+        "Obviously",
+        "Suddenly"
+      ]
     },
     {
       "question": "What does 忽然 mean?",
       "type": "multiple_choice",
       "correct": "Suddenly / All of a sudden",
-      "options": ["Slowly", "Suddenly / All of a sudden", "Of course", "Everywhere"]
+      "options": [
+        "Slowly",
+        "Suddenly / All of a sudden",
+        "Of course",
+        "Everywhere"
+      ]
     },
     {
       "question": "Which word means 'to lose / to misplace'?",
       "type": "multiple_choice",
       "correct": "丢",
-      "options": ["找", "丢", "放", "拿"]
+      "options": [
+        "找",
+        "丢",
+        "放",
+        "拿"
+      ]
     },
     {
       "question": "What does 肯定 mean?",
       "type": "multiple_choice",
       "correct": "Certainly / Definitely",
-      "options": ["Maybe", "Certainly / Definitely", "Suddenly", "Seemingly"]
+      "options": [
+        "Maybe",
+        "Certainly / Definitely",
+        "Suddenly",
+        "Seemingly"
+      ]
     },
     {
       "question": "What does 地方 mean?",
       "type": "multiple_choice",
       "correct": "Place / Location",
-      "options": ["Direction", "Place / Location", "Time", "Reason"]
+      "options": [
+        "Direction",
+        "Place / Location",
+        "Time",
+        "Reason"
+      ]
     },
     {
       "question": "How do you say 'search everywhere'?",
       "type": "multiple_choice",
       "correct": "到处找",
-      "options": ["到处找", "忽然找", "可能找", "当然找"]
+      "options": [
+        "到处找",
+        "忽然找",
+        "可能找",
+        "当然找"
+      ]
     },
     {
       "question": "Which conjunction means 'or' in statements?",
       "type": "multiple_choice",
       "correct": "或者",
-      "options": ["既然", "或者", "好像", "明明"]
+      "options": [
+        "既然",
+        "或者",
+        "好像",
+        "明明"
+      ]
     },
     {
       "question": "Complete: 找___到 = cannot find it",
       "type": "multiple_choice",
       "correct": "不",
-      "options": ["不", "得", "了", "很"]
+      "options": [
+        "不",
+        "得",
+        "了",
+        "很"
+      ]
     },
     {
       "question": "What does 既然 signal in a sentence?",
       "type": "multiple_choice",
       "correct": "A known fact / accepted condition",
-      "options": ["A known fact / accepted condition", "Surprise", "Doubt", "A question"]
+      "options": [
+        "A known fact / accepted condition",
+        "Surprise",
+        "Doubt",
+        "A question"
+      ]
     },
     {
       "question": "Which word pairs with 既然 to form a logical conclusion?",
       "type": "multiple_choice",
       "correct": "就",
-      "options": ["就", "也", "或者", "可能"]
+      "options": [
+        "就",
+        "也",
+        "或者",
+        "可能"
+      ]
     },
     {
       "question": "What does 好像 express?",
       "type": "multiple_choice",
       "correct": "Appearance / seems like (uncertain)",
-      "options": ["Appearance / seems like (uncertain)", "Clear certainty", "Contradiction", "Past action"]
+      "options": [
+        "Appearance / seems like (uncertain)",
+        "Clear certainty",
+        "Contradiction",
+        "Past action"
+      ]
     },
     {
       "question": "What does 明明 express?",
@@ -485,7 +600,12 @@
       "question": "How do you say 'can find it' using a potential complement?",
       "type": "multiple_choice",
       "correct": "找得到",
-      "options": ["找得到", "找不到", "找到了", "没找到"]
+      "options": [
+        "找得到",
+        "找不到",
+        "找到了",
+        "没找到"
+      ]
     },
     {
       "question": "Which sentence is correct: 'Since you're tired, rest a bit.'",
@@ -502,37 +622,67 @@
       "question": "Fill in: 他___在楼上，因为我听见声音了。(He is obviously upstairs because I heard sounds.)",
       "type": "multiple_choice",
       "correct": "明明",
-      "options": ["明明", "好像", "可能", "忽然"]
+      "options": [
+        "明明",
+        "好像",
+        "可能",
+        "忽然"
+      ]
     },
     {
       "question": "What does 可能在那里 mean?",
       "type": "multiple_choice",
       "correct": "Possibly over there",
-      "options": ["Possibly over there", "Definitely over there", "Clearly over there", "Suddenly over there"]
+      "options": [
+        "Possibly over there",
+        "Definitely over there",
+        "Clearly over there",
+        "Suddenly over there"
+      ]
     },
     {
       "question": "What does 好像丢了 mean?",
       "type": "multiple_choice",
       "correct": "Seems to be lost",
-      "options": ["Seems to be lost", "Definitely lost", "Suddenly lost", "Obviously lost"]
+      "options": [
+        "Seems to be lost",
+        "Definitely lost",
+        "Suddenly lost",
+        "Obviously lost"
+      ]
     },
     {
       "question": "What does 当然可以 mean?",
       "type": "multiple_choice",
       "correct": "Of course it's possible",
-      "options": ["Of course it's possible", "Maybe it's possible", "Obviously impossible", "Suddenly possible"]
+      "options": [
+        "Of course it's possible",
+        "Maybe it's possible",
+        "Obviously impossible",
+        "Suddenly possible"
+      ]
     },
     {
       "question": "What does 肯定在这儿 mean?",
       "type": "multiple_choice",
       "correct": "Definitely right here",
-      "options": ["Definitely right here", "Possibly right here", "Seemingly right here", "Suddenly right here"]
+      "options": [
+        "Definitely right here",
+        "Possibly right here",
+        "Seemingly right here",
+        "Suddenly right here"
+      ]
     },
     {
       "question": "What does 既然找不到 mean?",
       "type": "multiple_choice",
       "correct": "Since it can't be found",
-      "options": ["Since it can't be found", "Obviously can't be found", "Suddenly can't be found", "Maybe can't be found"]
+      "options": [
+        "Since it can't be found",
+        "Obviously can't be found",
+        "Suddenly can't be found",
+        "Maybe can't be found"
+      ]
     }
   ],
   "dialogues": [

@@ -10,7 +10,6 @@
       "id": "hsk3_l9_01",
       "chinese": "汉语",
       "pinyin": "hàn yǔ",
-      "tones": [4, 3],
       "english": "Mandarin Chinese (language)",
       "part_of_speech": "noun"
     },
@@ -18,7 +17,6 @@
       "id": "hsk3_l9_02",
       "chinese": "一样",
       "pinyin": "yī yàng",
-      "tones": [1, 4],
       "english": "Same / Alike / As...as",
       "part_of_speech": "adjective/adverb"
     },
@@ -26,7 +24,6 @@
       "id": "hsk3_l9_03",
       "chinese": "像",
       "pinyin": "xiàng",
-      "tones": [4],
       "english": "Like / Similar to / Resemble",
       "part_of_speech": "verb/preposition"
     },
@@ -34,7 +31,6 @@
       "id": "hsk3_l9_04",
       "chinese": "还",
       "pinyin": "hái",
-      "tones": [2],
       "english": "Even more / Still / Also",
       "part_of_speech": "adverb"
     },
@@ -42,7 +38,6 @@
       "id": "hsk3_l9_05",
       "chinese": "更",
       "pinyin": "gèng",
-      "tones": [4],
       "english": "Even more / More",
       "part_of_speech": "adverb"
     },
@@ -50,7 +45,6 @@
       "id": "hsk3_l9_06",
       "chinese": "流利",
       "pinyin": "liú lì",
-      "tones": [2, 4],
       "english": "Fluent / Fluently",
       "part_of_speech": "adjective"
     },
@@ -58,7 +52,6 @@
       "id": "hsk3_l9_07",
       "chinese": "地道",
       "pinyin": "dì dào",
-      "tones": [4, 4],
       "english": "Authentic / Native-like",
       "part_of_speech": "adjective"
     },
@@ -66,7 +59,6 @@
       "id": "hsk3_l9_08",
       "chinese": "厉害",
       "pinyin": "lì hài",
-      "tones": [4, 4],
       "english": "Impressive / Fierce / Awesome",
       "part_of_speech": "adjective"
     },
@@ -74,7 +66,6 @@
       "id": "hsk3_l9_09",
       "chinese": "进步",
       "pinyin": "jìn bù",
-      "tones": [4, 4],
       "english": "Progress / To improve",
       "part_of_speech": "noun/verb"
     },
@@ -82,7 +73,6 @@
       "id": "hsk3_l9_10",
       "chinese": "赞",
       "pinyin": "zàn",
-      "tones": [4],
       "english": "To praise / Thumbs up / Great",
       "part_of_speech": "verb/adjective"
     },
@@ -90,7 +80,6 @@
       "id": "hsk3_l9_11",
       "chinese": "口音",
       "pinyin": "kǒu yīn",
-      "tones": [3, 1],
       "english": "Accent / Pronunciation",
       "part_of_speech": "noun"
     },
@@ -98,7 +87,6 @@
       "id": "hsk3_l9_12",
       "chinese": "母语",
       "pinyin": "mǔ yǔ",
-      "tones": [3, 3],
       "english": "Mother tongue / Native language",
       "part_of_speech": "noun"
     },
@@ -106,7 +94,6 @@
       "id": "hsk3_l9_p01",
       "chinese": "说得很流利",
       "pinyin": "shuō de hěn liú lì",
-      "tones": [1, 0, 3, 2, 4],
       "english": "Speaks very fluently",
       "part_of_speech": "phrase"
     },
@@ -114,7 +101,6 @@
       "id": "hsk3_l9_p02",
       "chinese": "像中国人一样",
       "pinyin": "xiàng Zhōng guó rén yī yàng",
-      "tones": [4, 1, 2, 2, 1, 4],
       "english": "Like a Chinese person",
       "part_of_speech": "phrase"
     },
@@ -122,7 +108,6 @@
       "id": "hsk3_l9_p03",
       "chinese": "比我更好",
       "pinyin": "bǐ wǒ gèng hǎo",
-      "tones": [3, 3, 4, 3],
       "english": "Even better than me",
       "part_of_speech": "phrase"
     },
@@ -130,7 +115,6 @@
       "id": "hsk3_l9_p04",
       "chinese": "进步很大",
       "pinyin": "jìn bù hěn dà",
-      "tones": [4, 4, 3, 4],
       "english": "Great improvement / Made big progress",
       "part_of_speech": "phrase"
     },
@@ -138,7 +122,6 @@
       "id": "hsk3_l9_p05",
       "chinese": "地道的汉语",
       "pinyin": "dì dào de hàn yǔ",
-      "tones": [4, 4, 0, 4, 3],
       "english": "Authentic / Native-level Chinese",
       "part_of_speech": "phrase"
     },
@@ -146,7 +129,6 @@
       "id": "hsk3_l9_p06",
       "chinese": "真厉害",
       "pinyin": "zhēn lì hài",
-      "tones": [1, 4, 4],
       "english": "Truly impressive / So awesome",
       "part_of_speech": "phrase"
     },
@@ -154,7 +136,6 @@
       "id": "hsk3_l9_p07",
       "chinese": "没有口音",
       "pinyin": "méi yǒu kǒu yīn",
-      "tones": [2, 3, 3, 1],
       "english": "No accent",
       "part_of_speech": "phrase"
     },
@@ -162,7 +143,6 @@
       "id": "hsk3_l9_p08",
       "chinese": "一样好",
       "pinyin": "yī yàng hǎo",
-      "tones": [1, 4, 3],
       "english": "Equally good / Just as good",
       "part_of_speech": "phrase"
     }
@@ -221,8 +201,18 @@
           "question": "Fill in: 他的口音比我___好，几乎没有外国口音。",
           "type": "multiple_choice",
           "correct": "还",
-          "options": ["还", "很", "不", "也"],
-          "option_pinyin": ["hái", "hěn", "bù", "yě"]
+          "options": [
+            "还",
+            "很",
+            "不",
+            "也"
+          ],
+          "option_pinyin": [
+            "hái",
+            "hěn",
+            "bù",
+            "yě"
+          ]
         },
         {
           "question": "Which sentence means 'Her progress is even greater than before'?",
@@ -297,15 +287,35 @@
           "question": "Fill in: 她的汉语___母语___流利。(Her Chinese is as fluent as her mother tongue.)",
           "type": "multiple_choice",
           "correct": "像 / 一样",
-          "options": ["像 / 一样", "比 / 还", "和 / 一起", "跟 / 一样"],
-          "option_pinyin": ["xiàng / yī yàng", "bǐ / hái", "hé / yī qǐ", "gēn / yī yàng"]
+          "options": [
+            "像 / 一样",
+            "比 / 还",
+            "和 / 一起",
+            "跟 / 一样"
+          ],
+          "option_pinyin": [
+            "xiàng / yī yàng",
+            "bǐ / hái",
+            "hé / yī qǐ",
+            "gēn / yī yàng"
+          ]
         },
         {
           "question": "What does 像风一样快 mean?",
           "type": "multiple_choice",
           "correct": "As fast as the wind",
-          "options": ["As fast as the wind", "Faster than the wind", "Like the wind, very slow", "Following the wind"],
-          "option_pinyin": ["xiàng fēng yī yàng kuài", "bǐ fēng hái kuài", "xiàng fēng yī yàng màn", "gēn zhe fēng"]
+          "options": [
+            "As fast as the wind",
+            "Faster than the wind",
+            "Like the wind, very slow",
+            "Following the wind"
+          ],
+          "option_pinyin": [
+            "xiàng fēng yī yàng kuài",
+            "bǐ fēng hái kuài",
+            "xiàng fēng yī yàng màn",
+            "gēn zhe fēng"
+          ]
         },
         {
           "question": "Which sentence correctly uses 像...一样?",
@@ -386,15 +396,35 @@
           "question": "Fill in: 他唱歌唱___很好。",
           "type": "multiple_choice",
           "correct": "得",
-          "options": ["得", "了", "过", "着"],
-          "option_pinyin": ["de", "le", "guò", "zhe"]
+          "options": [
+            "得",
+            "了",
+            "过",
+            "着"
+          ],
+          "option_pinyin": [
+            "de",
+            "le",
+            "guò",
+            "zhe"
+          ]
         },
         {
           "question": "What is the negative form of 说得好?",
           "type": "multiple_choice",
           "correct": "说得不好",
-          "options": ["说得不好", "不说得好", "说不得好", "说好得不"],
-          "option_pinyin": ["shuō de bù hǎo", "bù shuō de hǎo", "shuō bù de hǎo", "shuō hǎo de bù"]
+          "options": [
+            "说得不好",
+            "不说得好",
+            "说不得好",
+            "说好得不"
+          ],
+          "option_pinyin": [
+            "shuō de bù hǎo",
+            "bù shuō de hǎo",
+            "shuō bù de hǎo",
+            "shuō hǎo de bù"
+          ]
         },
         {
           "question": "When an object is present, how must the verb be structured?",
@@ -426,103 +456,188 @@
       "question": "What does 汉语 mean?",
       "type": "multiple_choice",
       "correct": "Mandarin Chinese",
-      "options": ["English", "Mandarin Chinese", "Japanese", "Korean"]
+      "options": [
+        "English",
+        "Mandarin Chinese",
+        "Japanese",
+        "Korean"
+      ]
     },
     {
       "question": "What does 流利 mean?",
       "type": "multiple_choice",
       "correct": "Fluent / Fluently",
-      "options": ["Impressive", "Fluent / Fluently", "Authentic", "Native"]
+      "options": [
+        "Impressive",
+        "Fluent / Fluently",
+        "Authentic",
+        "Native"
+      ]
     },
     {
       "question": "What does 地道 mean?",
       "type": "multiple_choice",
       "correct": "Authentic / Native-like",
-      "options": ["Fluent", "Authentic / Native-like", "Impressive", "Perfect"]
+      "options": [
+        "Fluent",
+        "Authentic / Native-like",
+        "Impressive",
+        "Perfect"
+      ]
     },
     {
       "question": "What does 厉害 mean?",
       "type": "multiple_choice",
       "correct": "Impressive / Awesome",
-      "options": ["Fluent", "Easy", "Impressive / Awesome", "Strange"]
+      "options": [
+        "Fluent",
+        "Easy",
+        "Impressive / Awesome",
+        "Strange"
+      ]
     },
     {
       "question": "What does 进步 mean?",
       "type": "multiple_choice",
       "correct": "Progress / To improve",
-      "options": ["Progress / To improve", "Accent", "Mother tongue", "Language"]
+      "options": [
+        "Progress / To improve",
+        "Accent",
+        "Mother tongue",
+        "Language"
+      ]
     },
     {
       "question": "What does 口音 mean?",
       "type": "multiple_choice",
       "correct": "Accent / Pronunciation",
-      "options": ["Volume", "Accent / Pronunciation", "Language", "Tone"]
+      "options": [
+        "Volume",
+        "Accent / Pronunciation",
+        "Language",
+        "Tone"
+      ]
     },
     {
       "question": "What does 母语 mean?",
       "type": "multiple_choice",
       "correct": "Mother tongue / Native language",
-      "options": ["Foreign language", "Mother tongue / Native language", "Second language", "Written language"]
+      "options": [
+        "Foreign language",
+        "Mother tongue / Native language",
+        "Second language",
+        "Written language"
+      ]
     },
     {
       "question": "Which word means 'even more' in a comparison?",
       "type": "multiple_choice",
       "correct": "更",
-      "options": ["像", "一样", "更", "赞"]
+      "options": [
+        "像",
+        "一样",
+        "更",
+        "赞"
+      ]
     },
     {
       "question": "What does 赞 mean informally?",
       "type": "multiple_choice",
       "correct": "Thumbs up / Great / Awesome",
-      "options": ["Boring", "Bad", "Thumbs up / Great / Awesome", "Normal"]
+      "options": [
+        "Boring",
+        "Bad",
+        "Thumbs up / Great / Awesome",
+        "Normal"
+      ]
     },
     {
       "question": "How do you say 'speaks very fluently'?",
       "type": "multiple_choice",
       "correct": "说得很流利",
-      "options": ["说得很流利", "说很流利", "流利地说", "说流利得很"]
+      "options": [
+        "说得很流利",
+        "说很流利",
+        "流利地说",
+        "说流利得很"
+      ]
     },
     {
       "question": "What does 像中国人一样 mean?",
       "type": "multiple_choice",
       "correct": "Like a Chinese person",
-      "options": ["Like a Chinese person", "Better than a Chinese person", "Learning like Chinese", "Speaking to a Chinese person"]
+      "options": [
+        "Like a Chinese person",
+        "Better than a Chinese person",
+        "Learning like Chinese",
+        "Speaking to a Chinese person"
+      ]
     },
     {
       "question": "Fill in: 她的汉语比我___好，进步很大。",
       "type": "multiple_choice",
       "correct": "还",
-      "options": ["还", "不", "很", "最"]
+      "options": [
+        "还",
+        "不",
+        "很",
+        "最"
+      ]
     },
     {
       "question": "Which sentence correctly uses V得?",
       "type": "multiple_choice",
       "correct": "她唱得很好。",
-      "options": ["她唱得很好。", "她很好唱得。", "她唱很好得。", "她得唱好。"]
+      "options": [
+        "她唱得很好。",
+        "她很好唱得。",
+        "她唱很好得。",
+        "她得唱好。"
+      ]
     },
     {
       "question": "What does 进步很大 mean?",
       "type": "multiple_choice",
       "correct": "Made great progress",
-      "options": ["Made great progress", "Is very impressive", "Has no accent", "Speaks fluently"]
+      "options": [
+        "Made great progress",
+        "Is very impressive",
+        "Has no accent",
+        "Speaks fluently"
+      ]
     },
     {
       "question": "What does 没有口音 mean?",
       "type": "multiple_choice",
       "correct": "No accent",
-      "options": ["No accent", "Strong accent", "Native accent", "Foreign accent"]
+      "options": [
+        "No accent",
+        "Strong accent",
+        "Native accent",
+        "Foreign accent"
+      ]
     },
     {
       "question": "What does 真厉害 mean?",
       "type": "multiple_choice",
       "correct": "Truly impressive",
-      "options": ["Truly impressive", "Very fluent", "Really authentic", "No accent"]
+      "options": [
+        "Truly impressive",
+        "Very fluent",
+        "Really authentic",
+        "No accent"
+      ]
     },
     {
       "question": "What does 一样好 mean?",
       "type": "multiple_choice",
       "correct": "Equally good / Just as good",
-      "options": ["Equally good / Just as good", "Even better", "Not as good", "The best"]
+      "options": [
+        "Equally good / Just as good",
+        "Even better",
+        "Not as good",
+        "The best"
+      ]
     },
     {
       "question": "Translate: 她汉语说得像母语一样。",
@@ -539,13 +654,23 @@
       "question": "What does 比我更好 mean?",
       "type": "multiple_choice",
       "correct": "Even better than me",
-      "options": ["Even better than me", "As good as me", "Not as good as me", "The best of all"]
+      "options": [
+        "Even better than me",
+        "As good as me",
+        "Not as good as me",
+        "The best of all"
+      ]
     },
     {
       "question": "What does 地道的汉语 mean?",
       "type": "multiple_choice",
       "correct": "Authentic / Native-level Chinese",
-      "options": ["Authentic / Native-level Chinese", "Broken Chinese", "Written Chinese", "Classical Chinese"]
+      "options": [
+        "Authentic / Native-level Chinese",
+        "Broken Chinese",
+        "Written Chinese",
+        "Classical Chinese"
+      ]
     }
   ],
   "dialogues": [
