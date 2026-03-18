@@ -86,7 +86,7 @@ const STORAGE_KEYS = {
 };
 
 const DEFAULT_LEVEL_STATE = {
-  unlockedLevels: ['hsk1'],
+  unlockedLevels: ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5'],
   completedLevels: [],
   levelSetBy: 'manual',
   levelChangedUsed: false,
@@ -132,7 +132,10 @@ export default function App() {
           setUserData(parsedUser);
           setCurrentScreen('home');
         }
-        if (savedLevel)         setLevelState(JSON.parse(savedLevel));
+        if (savedLevel) {
+          const parsed = JSON.parse(savedLevel);
+          setLevelState({ ...parsed, unlockedLevels: ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5'] });
+        }
         if (savedProgress)      setLessonProgress(JSON.parse(savedProgress));
         if (savedStageProgress) setStageProgress(JSON.parse(savedStageProgress));
         if (savedRoundScores)   setRoundScores(JSON.parse(savedRoundScores));
