@@ -133,9 +133,22 @@ export default function HomeScreen({
   const currentLevelConfig =
     LEVEL_CONFIG.find(l => l.id === result.recommendedLevel) || LEVEL_CONFIG[0];
 
+  const isHsk3Plus = currentLevelConfig.number >= 3;
+
   const handlePinyinSection = () => {
     setShowMenu(false);
-    if (onFoundationsPinyinPress) onFoundationsPinyinPress();
+    if (isHsk3Plus) {
+      Alert.alert(
+        '🔊 Pinyin – HSK 1 & 2',
+        "You've already reached HSK 3! Pinyin is designed for beginners at HSK 1–2 level.\n\nAt your level, focus on Chinese Characters to strengthen your reading and writing skills.",
+        [
+          { text: 'Go to Characters', onPress: () => setFoundationModal('characters'), style: 'default' },
+          { text: 'Open Pinyin Anyway', onPress: () => { if (onFoundationsPinyinPress) onFoundationsPinyinPress(); }, style: 'cancel' },
+        ]
+      );
+    } else {
+      if (onFoundationsPinyinPress) onFoundationsPinyinPress();
+    }
   };
 
   const handleCharactersSection = () => {
@@ -299,15 +312,27 @@ export default function HomeScreen({
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>📖 Chinese Foundations</Text>
           <View style={styles.foundationsRow}>
-            <TouchableOpacity style={styles.foundationCard} onPress={handlePinyinSection} activeOpacity={0.8}>
-              <Text style={styles.foundationEmoji}>🔊</Text>
-              <Text style={styles.foundationTitle}>Pinyin</Text>
-              <Text style={styles.foundationSubtitle}>Sound System</Text>
+            {/* Pinyin card — dimmed for HSK3+ */}
+            <TouchableOpacity
+              style={[styles.foundationCard, isHsk3Plus && styles.foundationCardDimmed]}
+              onPress={handlePinyinSection}
+              activeOpacity={0.8}
+            >
+              <Text style={[styles.foundationEmoji, isHsk3Plus && styles.foundationEmojiDimmed]}>🔊</Text>
+              <Text style={[styles.foundationTitle, isHsk3Plus && styles.foundationTitleDimmed]}>Pinyin</Text>
+              <Text style={[styles.foundationSubtitle, isHsk3Plus && styles.foundationSubtitleDimmed]}>Sound System</Text>
+              {isHsk3Plus && <Text style={styles.foundationLevelTag}>HSK 1–2</Text>}
             </TouchableOpacity>
-            <TouchableOpacity style={styles.foundationCard} onPress={handleCharactersSection} activeOpacity={0.8}>
+            {/* Characters card — highlighted for HSK3+ */}
+            <TouchableOpacity
+              style={[styles.foundationCard, isHsk3Plus && styles.foundationCardHighlighted]}
+              onPress={handleCharactersSection}
+              activeOpacity={0.8}
+            >
               <Text style={styles.foundationEmoji}>✍️</Text>
               <Text style={styles.foundationTitle}>Characters</Text>
               <Text style={styles.foundationSubtitle}>Writing System</Text>
+              {isHsk3Plus && <Text style={styles.foundationRecommendedTag}>Recommended ✦</Text>}
             </TouchableOpacity>
           </View>
         </View>
@@ -402,20 +427,20 @@ export default function HomeScreen({
               <Text style={styles.menuSectionTitle}>📖 Learning Tools</Text>
             </View>
 
-            <TouchableOpacity style={styles.menuItem} onPress={handlePinyinSection}>
+            <TouchableOpacity style={[styles.menuItem, isHsk3Plus && styles.menuItemDimmed]} onPress={handlePinyinSection}>
               <Text style={styles.menuItemEmoji}>🔊</Text>
               <View style={styles.menuItemTextContainer}>
-                <Text style={styles.menuItemText}>Pinyin Learning</Text>
-                <Text style={styles.menuItemSubtext}>Tones & Pronunciation</Text>
+                <Text style={[styles.menuItemText, isHsk3Plus && styles.menuItemTextDimmed]}>Pinyin Learning</Text>
+                <Text style={styles.menuItemSubtext}>{isHsk3Plus ? 'HSK 1–2 · Beginner level' : 'Tones & Pronunciation'}</Text>
               </View>
               <Text style={styles.menuItemArrow}>→</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.menuItem} onPress={handleCharactersSection}>
+            <TouchableOpacity style={[styles.menuItem, isHsk3Plus && styles.menuItemHighlighted]} onPress={handleCharactersSection}>
               <Text style={styles.menuItemEmoji}>✍️</Text>
               <View style={styles.menuItemTextContainer}>
                 <Text style={styles.menuItemText}>Chinese Characters</Text>
-                <Text style={styles.menuItemSubtext}>Stroke Order & Radicals</Text>
+                <Text style={styles.menuItemSubtext}>{isHsk3Plus ? 'Recommended for HSK 3+' : 'Stroke Order & Radicals'}</Text>
               </View>
               <Text style={styles.menuItemArrow}>→</Text>
             </TouchableOpacity>
@@ -566,10 +591,20 @@ const styles = StyleSheet.create({
 
   // Foundations
   foundationsRow:       { flexDirection: 'row', gap: 12 },
-  foundationCard:       { flex: 1, backgroundColor: '#16213e', borderRadius: 20, padding: 20, alignItems: 'center', borderWidth: 1, borderColor: '#2d3436' },
-  foundationEmoji:      { fontSize: 32, marginBottom: 8 },
-  foundationTitle:      { fontSize: 15, fontWeight: '800', color: '#fff', marginBottom: 4 },
-  foundationSubtitle:   { fontSize: 12, color: '#636e72', textAlign: 'center' },
+  foundationCard:              { flex: 1, backgroundColor: '#16213e', borderRadius: 20, padding: 20, alignItems: 'center', borderWidth: 1, borderColor: '#2d3436' },
+  foundationCardDimmed:        { opacity: 0.45 },
+  foundationCardHighlighted:   { borderColor: '#1DD1A1', backgroundColor: 'rgba(29,209,161,0.07)' },
+  foundationEmoji:             { fontSize: 32, marginBottom: 8 },
+  foundationEmojiDimmed:       { opacity: 0.5 },
+  foundationTitle:             { fontSize: 15, fontWeight: '800', color: '#fff', marginBottom: 4 },
+  foundationTitleDimmed:       { color: '#636e72' },
+  foundationSubtitle:          { fontSize: 12, color: '#636e72', textAlign: 'center' },
+  foundationSubtitleDimmed:    { color: '#4a4a4a' },
+  foundationLevelTag:          { marginTop: 8, fontSize: 10, fontWeight: '700', color: '#636e72', backgroundColor: 'rgba(255,255,255,0.06)', paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6 },
+  foundationRecommendedTag:    { marginTop: 8, fontSize: 10, fontWeight: '700', color: '#1DD1A1', backgroundColor: 'rgba(29,209,161,0.15)', paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6 },
+  menuItemDimmed:              { opacity: 0.5 },
+  menuItemTextDimmed:          { color: '#636e72' },
+  menuItemHighlighted:         { borderLeftWidth: 3, borderLeftColor: '#1DD1A1' },
 
   // Chinese Journey path
   pathRow:            { flexDirection: 'row', alignItems: 'flex-start', marginBottom: 0 },
