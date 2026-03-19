@@ -1,0 +1,648 @@
+{
+  "lesson": 7,
+  "level": 4,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Quality & Standards",
+  "topic_chinese": "一分价一分货",
+  "vocabulary": [
+    {
+      "id": "hsk4_l7_01",
+      "chinese": "标准",
+      "pinyin": "biāo zhǔn",
+      "english": "Standard; criterion; standard (adjective: up to standard)",
+      "part_of_speech": "noun/adjective"
+    },
+    {
+      "id": "hsk4_l7_02",
+      "chinese": "合格",
+      "pinyin": "hé gé",
+      "english": "Qualified; up to standard; to pass (a test)",
+      "part_of_speech": "adjective/verb"
+    },
+    {
+      "id": "hsk4_l7_03",
+      "chinese": "符合",
+      "pinyin": "fú hé",
+      "english": "To conform to; to meet (requirements); to comply with",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l7_04",
+      "chinese": "相同",
+      "pinyin": "xiāng tóng",
+      "english": "The same; identical",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l7_05",
+      "chinese": "相反",
+      "pinyin": "xiāng fǎn",
+      "english": "Opposite; contrary",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l7_06",
+      "chinese": "区别",
+      "pinyin": "qū bié",
+      "english": "Difference; to differentiate; to distinguish",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk4_l7_07",
+      "chinese": "普遍",
+      "pinyin": "pǔ biàn",
+      "english": "Common; widespread; universal",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l7_08",
+      "chinese": "实际",
+      "pinyin": "shí jì",
+      "english": "Actual; practical; reality",
+      "part_of_speech": "adjective/noun"
+    },
+    {
+      "id": "hsk4_l7_09",
+      "chinese": "质量",
+      "pinyin": "zhì liàng",
+      "english": "Quality",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l7_10",
+      "chinese": "正确",
+      "pinyin": "zhèng què",
+      "english": "Correct; right",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l7_11",
+      "chinese": "确实",
+      "pinyin": "què shí",
+      "english": "Indeed; truly; certainly",
+      "part_of_speech": "adverb/adjective"
+    },
+    {
+      "id": "hsk4_l7_12",
+      "chinese": "判断",
+      "pinyin": "pàn duàn",
+      "english": "To judge; judgment",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l7_p01",
+      "chinese": "符合标准",
+      "pinyin": "fú hé biāo zhǔn",
+      "english": "To meet the standard",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l7_p02",
+      "chinese": "区别明显",
+      "pinyin": "qū bié míng xiǎn",
+      "english": "The difference is clear/obvious",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l7_p03",
+      "chinese": "相反意见",
+      "pinyin": "xiāng fǎn yì jiàn",
+      "english": "Opposite opinion; contrary view",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l7_p04",
+      "chinese": "实际情况",
+      "pinyin": "shí jì qíng kuàng",
+      "english": "Actual situation; reality",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l7_p05",
+      "chinese": "正确判断",
+      "pinyin": "zhèng què pàn duàn",
+      "english": "Correct judgment",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "不管价格高低，质量都必须符合标准。",
+      "pinyin": "Bù guǎn jià gé gāo dī, zhì liàng dōu bì xū fú hé biāo zhǔn.",
+      "english": "No matter how high or low the price, quality must meet the standard."
+    },
+    {
+      "chinese": "这两种产品表面相同，但实际情况区别明显。",
+      "pinyin": "Zhè liǎng zhǒng chǎn pǐn biǎo miàn xiāng tóng, dàn shí jì qíng kuàng qū bié míng xiǎn.",
+      "english": "These two products look the same on the surface, but the actual situation shows a clear difference."
+    },
+    {
+      "chinese": "他只好接受这个结果，因为商品不符合标准。",
+      "pinyin": "Tā zhǐ hǎo jiē shòu zhè ge jié guǒ, yīn wèi shāng pǐn bù fú hé biāo zhǔn.",
+      "english": "He had no choice but to accept the result, because the product did not meet the standard."
+    },
+    {
+      "chinese": "确实，正确判断质量是购物时最重要的事。",
+      "pinyin": "Què shí, zhèng què pàn duàn zhì liàng shì gòu wù shí zuì zhòng yào de shì.",
+      "english": "Indeed, making a correct judgment about quality is the most important thing when shopping."
+    },
+    {
+      "chinese": "相比之下，合格的产品价格较高，但值得购买。",
+      "pinyin": "Xiāng bǐ zhī xià, hé gé de chǎn pǐn jià gé jiào gāo, dàn zhí de gòu mǎi.",
+      "english": "By comparison, qualified products are more expensive, but worth buying."
+    },
+    {
+      "chinese": "低质量产品的问题在市场上很普遍，消费者要学会判断。",
+      "pinyin": "Dī zhì liàng chǎn pǐn de wèn tí zài shì chǎng shàng hěn pǔ biàn, xiāo fèi zhě yào xué huì pàn duàn.",
+      "english": "The problem of low-quality products is very widespread in the market; consumers need to learn how to judge."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "不管...都... — No matter...still...",
+      "explanation": "不管...都... is used to say that regardless of any condition or situation, the result remains the same. 不管 introduces the variable condition and 都 introduces the fixed outcome. Structure: 不管 + [Variable Condition], Subject + 都 + [Result]. The condition can include question words like 什么、怎么、多么、哪里、谁. Example: 不管天气怎么样，他都去跑步。(No matter what the weather is like, he still goes for a run.)",
+      "examples": [
+        {
+          "chinese": "不管质量好不好，产品都必须符合标准。",
+          "pinyin": "Bù guǎn zhì liàng hǎo bù hǎo, chǎn pǐn dōu bì xū fú hé biāo zhǔn.",
+          "english": "No matter whether the quality is good or bad, products must meet the standard."
+        },
+        {
+          "chinese": "不管实际情况如何，他都做出了正确判断。",
+          "pinyin": "Bù guǎn shí jì qíng kuàng rú hé, tā dōu zuò chū le zhèng què pàn duàn.",
+          "english": "No matter what the actual situation was, he made the correct judgment."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 价格多高，质量都必须合格。",
+          "type": "multiple_choice",
+          "correct": "不管",
+          "options": ["不管", "因为", "虽然", "只要"],
+          "option_pinyin": ["bù guǎn", "yīn wèi", "suī rán", "zhǐ yào"],
+          "word_hints": {"合格": "hé gé", "质量": "zhì liàng"}
+        },
+        {
+          "question": "不管标准多高，他 _____ 努力符合要求。",
+          "type": "multiple_choice",
+          "correct": "都",
+          "options": ["都", "也", "还", "才"],
+          "option_pinyin": ["dōu", "yě", "hái", "cái"],
+          "word_hints": {"标准": "biāo zhǔn", "符合": "fú hé"}
+        },
+        {
+          "question": "Choose the correct sentence with 不管...都...",
+          "type": "multiple_choice",
+          "correct": "不管实际情况怎样，我都要做出正确判断。",
+          "options": [
+            "不管实际情况怎样，我都要做出正确判断。",
+            "实际情况不管怎样，我要做出正确判断都。",
+            "不管，实际情况怎样我都要做出正确判断。",
+            "我不管实际情况怎样，做出都正确判断。"
+          ],
+          "option_pinyin": [
+            "Bù guǎn shí jì qíng kuàng zěn yàng, wǒ dōu yào zuò chū zhèng què pàn duàn.",
+            "Shí jì qíng kuàng bù guǎn zěn yàng, wǒ yào zuò chū zhèng què pàn duàn dōu.",
+            "Bù guǎn, shí jì qíng kuàng zěn yàng wǒ dōu yào zuò chū zhèng què pàn duàn.",
+            "Wǒ bù guǎn shí jì qíng kuàng zěn yàng, zuò chū dōu zhèng què pàn duàn."
+          ],
+          "word_hints": {"实际": "shí jì", "正确": "zhèng què", "判断": "pàn duàn"}
+        },
+        {
+          "question": "不管 is typically followed by:",
+          "type": "multiple_choice",
+          "correct": "A variable condition with question words or contrasting options",
+          "options": [
+            "A variable condition with question words or contrasting options",
+            "A specific confirmed fact",
+            "A purpose or goal",
+            "A time expression"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "不管区别多明显，她 _____ 认为两者相同。",
+          "type": "multiple_choice",
+          "correct": "都",
+          "options": ["都", "但", "或者", "因为"],
+          "option_pinyin": ["dōu", "dàn", "huò zhě", "yīn wèi"],
+          "word_hints": {"区别": "qū bié", "相同": "xiāng tóng"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "只好 — Have no choice but to",
+      "explanation": "只好 is an adverb meaning 'have no choice but to' or 'can only'. It is used when someone is forced to do something because there is no better alternative. Structure: Subject + 只好 + Verb. It often appears after a negative condition or an unfavorable situation. Example: 下雨了，我们只好留在家里。(It rained, so we had no choice but to stay home.)",
+      "examples": [
+        {
+          "chinese": "商品不符合标准，他只好退货。",
+          "pinyin": "Shāng pǐn bù fú hé biāo zhǔn, tā zhǐ hǎo tuì huò.",
+          "english": "The product did not meet the standard, so he had no choice but to return it."
+        },
+        {
+          "chinese": "质量太差，顾客只好选择别的品牌。",
+          "pinyin": "Zhì liàng tài chà, gù kè zhǐ hǎo xuǎn zé bié de pǐn pái.",
+          "english": "The quality was too poor, so the customers had no choice but to choose a different brand."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "商品不合格，我 _____ 要求退款。",
+          "type": "multiple_choice",
+          "correct": "只好",
+          "options": ["只好", "愿意", "当然", "经常"],
+          "option_pinyin": ["zhǐ hǎo", "yuàn yì", "dāng rán", "jīng cháng"],
+          "word_hints": {"合格": "hé gé"}
+        },
+        {
+          "question": "Choose the correct sentence with 只好.",
+          "type": "multiple_choice",
+          "correct": "没有合格的产品，我只好放弃购买。",
+          "options": [
+            "没有合格的产品，我只好放弃购买。",
+            "只好我没有合格的产品，放弃购买。",
+            "我没有合格的产品只好，放弃购买。",
+            "放弃购买，我没有合格的产品只好。"
+          ],
+          "option_pinyin": [
+            "Méi yǒu hé gé de chǎn pǐn, wǒ zhǐ hǎo fàng qì gòu mǎi.",
+            "Zhǐ hǎo wǒ méi yǒu hé gé de chǎn pǐn, fàng qì gòu mǎi.",
+            "Wǒ méi yǒu hé gé de chǎn pǐn zhǐ hǎo, fàng qì gòu mǎi.",
+            "Fàng qì gòu mǎi, wǒ méi yǒu hé gé de chǎn pǐn zhǐ hǎo."
+          ],
+          "word_hints": {"合格": "hé gé"}
+        },
+        {
+          "question": "判断质量的方法太复杂，他 _____ 请专家帮忙。",
+          "type": "multiple_choice",
+          "correct": "只好",
+          "options": ["只好", "继续", "确实", "普遍"],
+          "option_pinyin": ["zhǐ hǎo", "jì xù", "què shí", "pǔ biàn"],
+          "word_hints": {"判断": "pàn duàn", "质量": "zhì liàng"}
+        },
+        {
+          "question": "只好 implies:",
+          "type": "multiple_choice",
+          "correct": "There is no better alternative",
+          "options": [
+            "There is no better alternative",
+            "The person is happy to do something",
+            "Something is done for a specific goal",
+            "Something happens regularly"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "产品不符合标准，他 _____ 承认了这个区别。",
+          "type": "multiple_choice",
+          "correct": "只好",
+          "options": ["只好", "确实", "相反", "普遍"],
+          "option_pinyin": ["zhǐ hǎo", "què shí", "xiāng fǎn", "pǔ biàn"],
+          "word_hints": {"符合": "fú hé", "标准": "biāo zhǔn", "区别": "qū bié"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "相比之下 — By comparison (using 比较)",
+      "explanation": "相比之下 is a fixed phrase meaning 'by comparison' or 'in comparison'. It introduces a contrasting observation. It can appear at the beginning of a sentence or clause. The simpler word 比较 (bǐ jiào) means 'relatively' or 'comparatively' and is placed before an adjective: Subject + 比较 + Adj. Both are used to make comparative statements without stating an explicit standard. Example: 相比之下，这种材料质量更好。(By comparison, this type of material has better quality.) OR: 这家店的产品比较合格。(The products in this shop are relatively up to standard.)",
+      "examples": [
+        {
+          "chinese": "相比之下，合格产品的实际质量更符合标准。",
+          "pinyin": "Xiāng bǐ zhī xià, hé gé chǎn pǐn de shí jì zhì liàng gèng fú hé biāo zhǔn.",
+          "english": "By comparison, the actual quality of qualified products better meets the standard."
+        },
+        {
+          "chinese": "这两种商品区别明显，比较而言，第一种比较普遍。",
+          "pinyin": "Zhè liǎng zhǒng shāng pǐn qū bié míng xiǎn, bǐ jiào ér yán, dì yī zhǒng bǐ jiào pǔ biàn.",
+          "english": "The difference between these two products is obvious; comparatively speaking, the first type is more common."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ ，这种材料质量更好。",
+          "type": "multiple_choice",
+          "correct": "相比之下",
+          "options": ["相比之下", "另外", "虽然", "因为"],
+          "option_pinyin": ["xiāng bǐ zhī xià", "lìng wài", "suī rán", "yīn wèi"],
+          "word_hints": {"质量": "zhì liàng"}
+        },
+        {
+          "question": "这个产品比较 _____ ，很多消费者会选择它。",
+          "type": "multiple_choice",
+          "correct": "普遍",
+          "options": ["普遍", "相反", "区别", "符合"],
+          "option_pinyin": ["pǔ biàn", "xiāng fǎn", "qū bié", "fú hé"],
+          "word_hints": {"普遍": "pǔ biàn"}
+        },
+        {
+          "question": "Choose the correct use of 相比之下.",
+          "type": "multiple_choice",
+          "correct": "相比之下，合格的产品更值得购买。",
+          "options": [
+            "相比之下，合格的产品更值得购买。",
+            "合格的产品相比之下更值得购买相比之下。",
+            "之下相比，合格的产品更值得购买。",
+            "相比合格的产品之下，更值得购买。"
+          ],
+          "option_pinyin": [
+            "Xiāng bǐ zhī xià, hé gé de chǎn pǐn gèng zhí de gòu mǎi.",
+            "Hé gé de chǎn pǐn xiāng bǐ zhī xià gèng zhí de gòu mǎi xiāng bǐ zhī xià.",
+            "Zhī xià xiāng bǐ, hé gé de chǎn pǐn gèng zhí de gòu mǎi.",
+            "Xiāng bǐ hé gé de chǎn pǐn zhī xià, gèng zhí de gòu mǎi."
+          ],
+          "word_hints": {"合格": "hé gé"}
+        },
+        {
+          "question": "比较 is placed where in a comparison sentence?",
+          "type": "multiple_choice",
+          "correct": "Before an adjective",
+          "options": ["Before an adjective", "After the subject", "At the end of the sentence", "Before the object"],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "相比之下，他的判断 _____ 正确。",
+          "type": "multiple_choice",
+          "correct": "更",
+          "options": ["更", "很", "非常", "也"],
+          "option_pinyin": ["gèng", "hěn", "fēi cháng", "yě"],
+          "word_hints": {"判断": "pàn duàn", "正确": "zhèng què"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "Green Food & Organic Living in China",
+      "title_chinese": "绿色食品与有机生活",
+      "content": "In recent decades, food safety has become a major concern for Chinese consumers following a series of high-profile food scandals. This has led to rapid growth in the organic food (有机食品, yǒujī shípǐn) and green food (绿色食品, lǜsè shípǐn) markets. The Chinese government introduced the 绿色食品 certification system (Green Food label) to help consumers identify products meeting strict safety and environmental standards. The certification has three levels: no-pesticide, limited pesticide, and organic. Urban consumers, especially young families, are increasingly willing to pay premium prices for certified organic produce. The concept of quality standards (标准) and compliance (符合) are thus not just commercial but also public health matters in contemporary China.",
+      "idioms": [
+        {
+          "chinese": "货真价实",
+          "pinyin": "huò zhēn jià shí",
+          "english": "Genuine goods at fair prices; what you see is what you get"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 标准 mean?",
+      "type": "multiple_choice",
+      "correct": "Standard; criterion",
+      "options": ["Standard; criterion", "Quality", "Difference", "Actual"],
+      "word_hints": {"标准": "biāo zhǔn"}
+    },
+    {
+      "question": "Which word means 'qualified; up to standard'?",
+      "type": "multiple_choice",
+      "correct": "合格",
+      "options": ["合格", "符合", "标准", "正确"],
+      "word_hints": {"合格": "hé gé", "符合": "fú hé", "标准": "biāo zhǔn", "正确": "zhèng què"}
+    },
+    {
+      "question": "What does 符合 mean?",
+      "type": "multiple_choice",
+      "correct": "To conform to; to meet (requirements)",
+      "options": ["To conform to; to meet (requirements)", "To judge", "To distinguish", "To be the same"],
+      "word_hints": {"符合": "fú hé"}
+    },
+    {
+      "question": "Which word means 'the same; identical'?",
+      "type": "multiple_choice",
+      "correct": "相同",
+      "options": ["相同", "相反", "区别", "普遍"],
+      "word_hints": {"相同": "xiāng tóng", "相反": "xiāng fǎn", "区别": "qū bié", "普遍": "pǔ biàn"}
+    },
+    {
+      "question": "What does 相反 mean?",
+      "type": "multiple_choice",
+      "correct": "Opposite; contrary",
+      "options": ["Opposite; contrary", "The same", "Difference", "Common"],
+      "word_hints": {"相反": "xiāng fǎn"}
+    },
+    {
+      "question": "Which word means 'difference; to differentiate'?",
+      "type": "multiple_choice",
+      "correct": "区别",
+      "options": ["区别", "相同", "标准", "判断"],
+      "word_hints": {"区别": "qū bié", "相同": "xiāng tóng", "标准": "biāo zhǔn", "判断": "pàn duàn"}
+    },
+    {
+      "question": "What does 普遍 mean?",
+      "type": "multiple_choice",
+      "correct": "Common; widespread; universal",
+      "options": ["Common; widespread; universal", "Correct", "Actual", "Standard"],
+      "word_hints": {"普遍": "pǔ biàn"}
+    },
+    {
+      "question": "What does 实际 mean?",
+      "type": "multiple_choice",
+      "correct": "Actual; practical; reality",
+      "options": ["Actual; practical; reality", "Standard", "Correct", "Common"],
+      "word_hints": {"实际": "shí jì"}
+    },
+    {
+      "question": "Which word means 'correct; right'?",
+      "type": "multiple_choice",
+      "correct": "正确",
+      "options": ["正确", "确实", "合格", "符合"],
+      "word_hints": {"正确": "zhèng què", "确实": "què shí", "合格": "hé gé", "符合": "fú hé"}
+    },
+    {
+      "question": "What does 确实 mean?",
+      "type": "multiple_choice",
+      "correct": "Indeed; truly; certainly",
+      "options": ["Indeed; truly; certainly", "Correct", "Standard", "Qualified"],
+      "word_hints": {"确实": "què shí"}
+    },
+    {
+      "question": "Fill in: _____ 价格怎样，质量都要符合标准。",
+      "type": "multiple_choice",
+      "correct": "不管",
+      "options": ["不管", "虽然", "既然", "因为"],
+      "word_hints": {"质量": "zhì liàng", "符合": "fú hé", "标准": "biāo zhǔn"}
+    },
+    {
+      "question": "What does 只好 mean?",
+      "type": "multiple_choice",
+      "correct": "Have no choice but to",
+      "options": ["Have no choice but to", "Willing to", "Happy to", "Used to"],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in: _____ ，这种材料质量更好。",
+      "type": "multiple_choice",
+      "correct": "相比之下",
+      "options": ["相比之下", "另外", "否则", "因此"],
+      "word_hints": {"质量": "zhì liàng"}
+    },
+    {
+      "question": "What does 判断 mean?",
+      "type": "multiple_choice",
+      "correct": "To judge; judgment",
+      "options": ["To judge; judgment", "To distinguish", "To conform", "To compare"],
+      "word_hints": {"判断": "pàn duàn"}
+    },
+    {
+      "question": "Choose the correct use of 不管...都...",
+      "type": "multiple_choice",
+      "correct": "不管天气怎样，他都坚持跑步。",
+      "options": [
+        "不管天气怎样，他都坚持跑步。",
+        "天气不管怎样，都他坚持跑步。",
+        "他不管天气怎样，坚持都跑步。",
+        "不管天气，他怎样都坚持跑步。"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 符合标准 mean?",
+      "type": "multiple_choice",
+      "correct": "To meet the standard",
+      "options": ["To meet the standard", "To judge quality", "To compare products", "To return goods"],
+      "word_hints": {"符合": "fú hé", "标准": "biāo zhǔn"}
+    },
+    {
+      "question": "What does the idiom 货真价实 mean?",
+      "type": "multiple_choice",
+      "correct": "Genuine goods at fair prices",
+      "options": [
+        "Genuine goods at fair prices",
+        "You get what you pay for",
+        "Save money on quality goods",
+        "Compare before buying"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Choose the correct use of 只好.",
+      "type": "multiple_choice",
+      "correct": "商品质量太差，我只好退货。",
+      "options": [
+        "商品质量太差，我只好退货。",
+        "只好商品质量太差，我退货。",
+        "我只好商品质量太差，退货。",
+        "商品只好质量太差，我退货。"
+      ],
+      "word_hints": {"质量": "zhì liàng"}
+    },
+    {
+      "question": "What does the phrase 实际情况 mean?",
+      "type": "multiple_choice",
+      "correct": "Actual situation; reality",
+      "options": ["Actual situation; reality", "Standard requirement", "Correct judgment", "Common difference"],
+      "word_hints": {"实际": "shí jì"}
+    },
+    {
+      "question": "比较 is placed where in a sentence?",
+      "type": "multiple_choice",
+      "correct": "Before an adjective",
+      "options": ["Before an adjective", "After the object", "At the start of the sentence", "After the subject only"],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Comparing Two Products",
+      "title_chinese": "比较两款产品",
+      "speakers": {
+        "A": {"name": "消费者甲", "role": "买家甲", "gender": "female"},
+        "B": {"name": "消费者乙", "role": "买家乙", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你看，这两款产品表面相同，但实际情况区别明显。",
+          "pinyin": "Nǐ kàn, zhè liǎng kuǎn chǎn pǐn biǎo miàn xiāng tóng, dàn shí jì qíng kuàng qū bié míng xiǎn.",
+          "english": "Look, these two products look the same on the surface, but the actual situation shows a clear difference."
+        },
+        {
+          "speaker": "B",
+          "chinese": "相比之下，第一款质量更好，符合标准，但价格高一些。",
+          "pinyin": "Xiāng bǐ zhī xià, dì yī kuǎn zhì liàng gèng hǎo, fú hé biāo zhǔn, dàn jià gé gāo yì xiē.",
+          "english": "By comparison, the first one has better quality and meets the standard, but is a bit more expensive."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你说得对。不管价格多高，质量都应该合格，这是正确的判断。",
+          "pinyin": "Nǐ shuō de duì. Bù guǎn jià gé duō gāo, zhì liàng dōu yīng gāi hé gé, zhè shì zhèng què de pàn duàn.",
+          "english": "You are right. No matter how high the price, quality should always be up to standard — that is the correct judgment."
+        },
+        {
+          "speaker": "B",
+          "chinese": "第二款虽然便宜，但确实不符合标准，我只好不买。",
+          "pinyin": "Dì èr kuǎn suī rán pián yí, dàn què shí bù fú hé biāo zhǔn, wǒ zhǐ hǎo bù mǎi.",
+          "english": "The second one is cheaper, but it truly does not meet the standard. I have no choice but not to buy it."
+        },
+        {
+          "speaker": "A",
+          "chinese": "对，这种低质量产品的问题很普遍，我们要学会区别。",
+          "pinyin": "Duì, zhè zhǒng dī zhì liàng chǎn pǐn de wèn tí hěn pǔ biàn, wǒ men yào xué huì qū bié.",
+          "english": "Right. This type of low-quality product problem is very widespread. We must learn to tell the difference."
+        },
+        {
+          "speaker": "B",
+          "chinese": "所以还是选第一款吧，货真价实，质量确实符合标准。",
+          "pinyin": "Suǒ yǐ hái shì xuǎn dì yī kuǎn ba, huò zhēn jià shí, zhì liàng què shí fú hé biāo zhǔn.",
+          "english": "So let's go with the first one — genuine goods at a fair price, and the quality truly meets the standard."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Quality Check at Work",
+      "title_chinese": "工作中的质量检查",
+      "speakers": {
+        "A": {"name": "主任", "role": "质量主任", "gender": "male"},
+        "B": {"name": "小周", "role": "员工", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小周，这批产品是否符合我们的质量标准？",
+          "pinyin": "Xiǎo Zhōu, zhè pī chǎn pǐn shì fǒu fú hé wǒ men de zhì liàng biāo zhǔn?",
+          "english": "Xiaozhou, do these products meet our quality standard?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我判断了一下，相比之下，这批产品比较合格，但有少数不符合。",
+          "pinyin": "Wǒ pàn duàn le yí xià, xiāng bǐ zhī xià, zhè pī chǎn pǐn bǐ jiào hé gé, dàn yǒu shǎo shù bù fú hé.",
+          "english": "I made a judgment. By comparison, this batch of products is relatively qualified, but a small number do not comply."
+        },
+        {
+          "speaker": "A",
+          "chinese": "不符合标准的只好退回工厂，这是唯一正确的做法。",
+          "pinyin": "Bù fú hé biāo zhǔn de zhǐ hǎo tuì huí gōng chǎng, zhè shì wéi yī zhèng què de zuò fǎ.",
+          "english": "Those that don't meet the standard have no choice but to be returned to the factory. This is the only correct approach."
+        },
+        {
+          "speaker": "B",
+          "chinese": "确实。不管实际情况如何，我们的标准不能改变。",
+          "pinyin": "Què shí. Bù guǎn shí jì qíng kuàng rú hé, wǒ men de biāo zhǔn bù néng gǎi biàn.",
+          "english": "Indeed. No matter what the actual situation is, our standards cannot change."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好，以后区别合格与不合格产品的流程要更加普遍执行。",
+          "pinyin": "Hǎo, yǐ hòu qū bié hé gé yǔ bù hé gé chǎn pǐn de liú chéng yào gèng jiā pǔ biàn zhí xíng.",
+          "english": "Good. Going forward, the process for distinguishing qualified from unqualified products should be implemented more widely."
+        },
+        {
+          "speaker": "B",
+          "chinese": "明白，我会确保每一件产品都符合标准，这是我的责任。",
+          "pinyin": "Míng bái, wǒ huì què bǎo měi yí jiàn chǎn pǐn dōu fú hé biāo zhǔn, zhè shì wǒ de zé rèn.",
+          "english": "Understood. I will ensure every product meets the standard — that is my responsibility."
+        }
+      ]
+    }
+  ]
+}

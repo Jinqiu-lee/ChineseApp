@@ -1,0 +1,637 @@
+{
+  "lesson": 11,
+  "level": 4,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Weather & Change",
+  "topic_chinese": "阳光总在风雨后（一）",
+  "vocabulary": [
+    {
+      "id": "hsk4_l11_01",
+      "chinese": "降低",
+      "pinyin": "jiàng dī",
+      "english": "To lower; to reduce; to decrease",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l11_02",
+      "chinese": "降落",
+      "pinyin": "jiàng luò",
+      "english": "To land; to descend; to fall",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l11_03",
+      "chinese": "出现",
+      "pinyin": "chū xiàn",
+      "english": "To appear; to emerge; to occur",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l11_04",
+      "chinese": "增加",
+      "pinyin": "zēng jiā",
+      "english": "To increase; to add",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l11_05",
+      "chinese": "减少",
+      "pinyin": "jiǎn shǎo",
+      "english": "To reduce; to decrease",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l11_06",
+      "chinese": "发展",
+      "pinyin": "fā zhǎn",
+      "english": "To develop; development",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l11_07",
+      "chinese": "发生",
+      "pinyin": "fā shēng",
+      "english": "To happen; to occur",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l11_08",
+      "chinese": "危险",
+      "pinyin": "wēi xiǎn",
+      "english": "Dangerous; danger",
+      "part_of_speech": "adjective/noun"
+    },
+    {
+      "id": "hsk4_l11_09",
+      "chinese": "暖和",
+      "pinyin": "nuǎn huo",
+      "english": "Warm (pleasant warmth)",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l11_10",
+      "chinese": "凉快",
+      "pinyin": "liáng kuai",
+      "english": "Cool; pleasantly cool",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l11_11",
+      "chinese": "仍然",
+      "pinyin": "réng rán",
+      "english": "Still; yet; as before",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk4_l11_12",
+      "chinese": "担心",
+      "pinyin": "dān xīn",
+      "english": "To worry; to be concerned",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l11_p01",
+      "chinese": "气温降低",
+      "pinyin": "qì wēn jiàng dī",
+      "english": "Temperature drops",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l11_p02",
+      "chinese": "发生变化",
+      "pinyin": "fā shēng biàn huà",
+      "english": "A change occurs",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l11_p03",
+      "chinese": "仍然努力",
+      "pinyin": "réng rán nǔ lì",
+      "english": "To still work hard",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l11_p04",
+      "chinese": "只要坚持",
+      "pinyin": "zhǐ yào jiān chí",
+      "english": "As long as you persist",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l11_p05",
+      "chinese": "增加信心",
+      "pinyin": "zēng jiā xìn xīn",
+      "english": "To increase confidence",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "只要你坚持努力，就一定能看到好结果。",
+      "pinyin": "Zhǐ yào nǐ jiān chí nǔ lì, jiù yī dìng néng kàn dào hǎo jié guǒ.",
+      "english": "As long as you keep working hard, you will definitely see good results."
+    },
+    {
+      "chinese": "气温降低了很多，出现了今年最冷的天气。",
+      "pinyin": "Qì wēn jiàng dī le hěn duō, chū xiàn le jīn nián zuì lěng de tiān qì.",
+      "english": "The temperature has dropped significantly, and the coldest weather of the year has appeared."
+    },
+    {
+      "chinese": "他仍然担心，但增加了信心继续发展自己的能力。",
+      "pinyin": "Tā réng rán dān xīn, dàn zēng jiā le xìn xīn jì xù fā zhǎn zì jǐ de néng lì.",
+      "english": "He is still worried, but he has increased his confidence and continues to develop his abilities."
+    },
+    {
+      "chinese": "只要减少担心，增加行动，问题就会发生变化。",
+      "pinyin": "Zhǐ yào jiǎn shǎo dān xīn, zēng jiā xíng dòng, wèn tí jiù huì fā shēng biàn huà.",
+      "english": "As long as you reduce worry and increase action, problems will undergo change."
+    },
+    {
+      "chinese": "飞机在暖和的天气中顺利降落，大家都松了一口气。",
+      "pinyin": "Fēi jī zài nuǎn huo de tiān qì zhōng shùn lì jiàng luò, dà jiā dōu sōng le yī kǒu qì.",
+      "english": "The airplane landed smoothly in the warm weather, and everyone breathed a sigh of relief."
+    },
+    {
+      "chinese": "天气发生了变化，降低了温度，变得凉快了很多。",
+      "pinyin": "Tiān qì fā shēng le biàn huà, jiàng dī le wēn dù, biàn de liáng kuai le hěn duō.",
+      "english": "The weather has changed, lowering the temperature and becoming much cooler."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "只要...就... — As long as...then...",
+      "explanation": "只要...就... means 'as long as' or 'provided that'. It introduces a sufficient condition: if the condition in 只要 is met, the result in 就 will follow. Structure: 只要 + Condition, (Subject) + 就 + Result. Unlike 如果 (if), 只要 emphasizes that the condition alone is sufficient — nothing else is needed. Example: 只要努力，就能成功。(As long as you work hard, you can succeed.)",
+      "examples": [
+        {
+          "chinese": "只要坚持锻炼，就会增加体力。",
+          "pinyin": "Zhǐ yào jiān chí duàn liàn, jiù huì zēng jiā tǐ lì.",
+          "english": "As long as you persist in exercising, you will increase your physical strength."
+        },
+        {
+          "chinese": "只要减少担心，你就会发现生活变得暖和了。",
+          "pinyin": "Zhǐ yào jiǎn shǎo dān xīn, nǐ jiù huì fā xiàn shēng huó biàn de nuǎn huo le.",
+          "english": "As long as you reduce worry, you will find that life becomes warmer."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 你仍然努力，就一定会成功。",
+          "type": "multiple_choice",
+          "correct": "只要",
+          "options": ["只要", "如果", "既然", "否则"],
+          "option_pinyin": ["zhǐ yào", "rú guǒ", "jì rán", "fǒu zé"],
+          "word_hints": {"仍然": "réng rán"}
+        },
+        {
+          "question": "只要减少担心，_____ 能增加信心。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["就", "但", "也", "还"],
+          "option_pinyin": ["jiù", "dàn", "yě", "hái"],
+          "word_hints": {"担心": "dān xīn", "增加": "zēng jiā"}
+        },
+        {
+          "question": "Choose the correct sentence with 只要...就...",
+          "type": "multiple_choice",
+          "correct": "只要发生变化，就要认真应对。",
+          "options": [
+            "只要发生变化，就要认真应对。",
+            "发生只要变化，就要认真应对。",
+            "只要就发生变化，要认真应对。",
+            "只要发生变化就，认真应对要。"
+          ],
+          "option_pinyin": [
+            "Zhǐ yào fā shēng biàn huà, jiù yào rèn zhēn yìng duì.",
+            "Fā shēng zhǐ yào biàn huà, jiù yào rèn zhēn yìng duì.",
+            "Zhǐ yào jiù fā shēng biàn huà, yào rèn zhēn yìng duì.",
+            "Zhǐ yào fā shēng biàn huà jiù, rèn zhēn yìng duì yào."
+          ],
+          "word_hints": {"发生": "fā shēng"}
+        },
+        {
+          "question": "What is the key difference between 只要 and 如果?",
+          "type": "multiple_choice",
+          "correct": "只要 means the condition alone is sufficient; 如果 simply introduces a condition",
+          "options": [
+            "只要 means the condition alone is sufficient; 如果 simply introduces a condition",
+            "They mean exactly the same thing",
+            "如果 is more emphatic",
+            "只要 is used only in formal writing"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "_____ 气温降低，你就要多穿衣服。",
+          "type": "multiple_choice",
+          "correct": "只要",
+          "options": ["只要", "随着", "由于", "既然"],
+          "option_pinyin": ["zhǐ yào", "suí zhe", "yóu yú", "jì rán"],
+          "word_hints": {"降低": "jiàng dī"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "增加 vs 减少 — Increase vs decrease (comparative expressions)",
+      "explanation": "增加 (zēng jiā) means 'to increase' or 'to add'. 减少 (jiǎn shǎo) means 'to reduce' or 'to decrease'. Both can be used as verbs with objects or in comparative sentences. Structure: Subject + 增加/减少 + Object OR Subject + 增加/减少 + Amount/Degree. They are often used together to make comparisons: 增加了...，减少了... Example: 收入增加了，压力也减少了。(Income increased and stress decreased.)",
+      "examples": [
+        {
+          "chinese": "随着气候变化，降雨量增加了，但阳光减少了。",
+          "pinyin": "Suí zhe qì hòu biàn huà, jiàng yǔ liàng zēng jiā le, dàn yáng guāng jiǎn shǎo le.",
+          "english": "As the climate changes, rainfall has increased but sunshine has decreased."
+        },
+        {
+          "chinese": "只要坚持，就能增加信心，减少担心。",
+          "pinyin": "Zhǐ yào jiān chí, jiù néng zēng jiā xìn xīn, jiǎn shǎo dān xīn.",
+          "english": "As long as you persist, you can increase confidence and reduce worry."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "随着努力，他的信心 _____ 了。",
+          "type": "multiple_choice",
+          "correct": "增加",
+          "options": ["增加", "减少", "降低", "出现"],
+          "option_pinyin": ["zēng jiā", "jiǎn shǎo", "jiàng dī", "chū xiàn"],
+          "word_hints": {}
+        },
+        {
+          "question": "她 _____ 了对危险的担心，仍然继续发展事业。",
+          "type": "multiple_choice",
+          "correct": "减少",
+          "options": ["减少", "增加", "降落", "发生"],
+          "option_pinyin": ["jiǎn shǎo", "zēng jiā", "jiàng luò", "fā shēng"],
+          "word_hints": {"危险": "wēi xiǎn", "担心": "dān xīn", "仍然": "réng rán", "发展": "fā zhǎn"}
+        },
+        {
+          "question": "Choose the sentence that correctly uses both 增加 and 减少.",
+          "type": "multiple_choice",
+          "correct": "他增加了锻炼，减少了担心，身体越来越好。",
+          "options": [
+            "他增加了锻炼，减少了担心，身体越来越好。",
+            "他增加锻炼了减少担心，身体越来越好。",
+            "他了增加锻炼，了减少担心，身体越来越好。",
+            "增加锻炼他，减少担心了，身体越来越好。"
+          ],
+          "option_pinyin": [
+            "Tā zēng jiā le duàn liàn, jiǎn shǎo le dān xīn, shēn tǐ yuè lái yuè hǎo.",
+            "Tā zēng jiā duàn liàn le jiǎn shǎo dān xīn, shēn tǐ yuè lái yuè hǎo.",
+            "Tā le zēng jiā duàn liàn, le jiǎn shǎo dān xīn, shēn tǐ yuè lái yuè hǎo.",
+            "Zēng jiā duàn liàn tā, jiǎn shǎo dān xīn le, shēn tǐ yuè lái yuè hǎo."
+          ],
+          "word_hints": {"担心": "dān xīn"}
+        },
+        {
+          "question": "What does 增加 mean?",
+          "type": "multiple_choice",
+          "correct": "To increase; to add",
+          "options": ["To increase; to add", "To decrease", "To appear", "To develop"],
+          "word_hints": {"增加": "zēng jiā"}
+        },
+        {
+          "question": "气温 _____ ，天气变得凉快了。",
+          "type": "multiple_choice",
+          "correct": "降低",
+          "options": ["降低", "增加", "发生", "出现"],
+          "option_pinyin": ["jiàng dī", "zēng jiā", "fā shēng", "chū xiàn"],
+          "word_hints": {"降低": "jiàng dī", "凉快": "liáng kuai"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "担心 — To worry (common expression patterns)",
+      "explanation": "担心 (dān xīn) means 'to worry' or 'to be concerned'. It can be followed by a noun or a clause (introduced by 的 or directly). Common patterns: (1) Subject + 担心 + Noun: 她担心考试。(She worries about the exam.) (2) Subject + 担心 + Clause: 我担心他不来。(I'm worried he won't come.) (3) Subject + 不用/不要担心: Don't worry. (4) 令人担心: Worrying (to cause worry). It is also used in the negative: 不必担心 (no need to worry).",
+      "examples": [
+        {
+          "chinese": "他仍然担心天气太冷，所以多穿了几件衣服。",
+          "pinyin": "Tā réng rán dān xīn tiān qì tài lěng, suǒ yǐ duō chuān le jǐ jiàn yī fu.",
+          "english": "He is still worried about the cold weather, so he put on a few extra layers."
+        },
+        {
+          "chinese": "只要你坚持努力，就不必担心发展速度太慢。",
+          "pinyin": "Zhǐ yào nǐ jiān chí nǔ lì, jiù bú bì dān xīn fā zhǎn sù dù tài màn.",
+          "english": "As long as you keep working hard, there is no need to worry that your development speed is too slow."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "她 _____ 气温降低，出现危险情况。",
+          "type": "multiple_choice",
+          "correct": "担心",
+          "options": ["担心", "仍然", "发展", "降落"],
+          "option_pinyin": ["dān xīn", "réng rán", "fā zhǎn", "jiàng luò"],
+          "word_hints": {"危险": "wēi xiǎn", "降低": "jiàng dī"}
+        },
+        {
+          "question": "只要你做好准备，就 _____ 了。",
+          "type": "multiple_choice",
+          "correct": "不必担心",
+          "options": ["不必担心", "仍然担心", "增加担心", "发生担心"],
+          "option_pinyin": ["bú bì dān xīn", "réng rán dān xīn", "zēng jiā dān xīn", "fā shēng dān xīn"],
+          "word_hints": {"担心": "dān xīn"}
+        },
+        {
+          "question": "Choose the correct use of 担心.",
+          "type": "multiple_choice",
+          "correct": "我担心飞机不能顺利降落。",
+          "options": [
+            "我担心飞机不能顺利降落。",
+            "担心我飞机不能顺利降落。",
+            "我飞机担心不能顺利降落。",
+            "我不能担心飞机顺利降落。"
+          ],
+          "option_pinyin": [
+            "Wǒ dān xīn fēi jī bù néng shùn lì jiàng luò.",
+            "Dān xīn wǒ fēi jī bù néng shùn lì jiàng luò.",
+            "Wǒ fēi jī dān xīn bù néng shùn lì jiàng luò.",
+            "Wǒ bù néng dān xīn fēi jī shùn lì jiàng luò."
+          ],
+          "word_hints": {"降落": "jiàng luò"}
+        },
+        {
+          "question": "What does 不必担心 mean?",
+          "type": "multiple_choice",
+          "correct": "No need to worry",
+          "options": ["No need to worry", "Still worried", "Very worried", "Don't increase worry"],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {"担心": "dān xīn"}
+        },
+        {
+          "question": "她仍然 _____ 发展太慢，但继续坚持努力。",
+          "type": "multiple_choice",
+          "correct": "担心",
+          "options": ["担心", "仍然", "增加", "减少"],
+          "option_pinyin": ["dān xīn", "réng rán", "zēng jiā", "jiǎn shǎo"],
+          "word_hints": {"仍然": "réng rán", "发展": "fā zhǎn", "坚持": "jiān chí"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "The Secret of Success — 天道酬勤",
+      "title_chinese": "成功的秘密",
+      "content": "In Chinese culture, success is deeply tied to the values of 坚持 (jiānchí — perseverance) and 努力 (nǔlì — hard work). The proverb 天道酬勤 (tiān dào chóu qín — 'Heaven rewards the diligent') expresses the belief that sustained effort will eventually be rewarded. This value is embedded in Chinese education, where long study hours and exam results are central to a student's identity. At the same time, 运气 (yùnqi — luck) is also acknowledged, and many Chinese people balance belief in hard work with practices that attract good fortune (such as carrying lucky charms, choosing auspicious dates, etc.). The song title 阳光总在风雨后 (Sunshine Always Comes After the Rain) captures this cultural philosophy perfectly: endure hardship with patience, and success will follow.",
+      "idioms": [
+        {
+          "chinese": "天道酬勤",
+          "pinyin": "tiān dào chóu qín",
+          "english": "Heaven rewards the diligent"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 降低 mean?",
+      "type": "multiple_choice",
+      "correct": "To lower; to reduce; to decrease",
+      "options": ["To lower; to reduce; to decrease", "To land", "To appear", "To increase"],
+      "word_hints": {"降低": "jiàng dī"}
+    },
+    {
+      "question": "Which word means 'to land; to descend'?",
+      "type": "multiple_choice",
+      "correct": "降落",
+      "options": ["降落", "降低", "出现", "发生"],
+      "word_hints": {"降落": "jiàng luò", "降低": "jiàng dī", "出现": "chū xiàn", "发生": "fā shēng"}
+    },
+    {
+      "question": "What does 出现 mean?",
+      "type": "multiple_choice",
+      "correct": "To appear; to emerge; to occur",
+      "options": ["To appear; to emerge; to occur", "To land", "To happen", "To develop"],
+      "word_hints": {"出现": "chū xiàn"}
+    },
+    {
+      "question": "What does 增加 mean?",
+      "type": "multiple_choice",
+      "correct": "To increase; to add",
+      "options": ["To increase; to add", "To reduce", "To lower", "To appear"],
+      "word_hints": {"增加": "zēng jiā"}
+    },
+    {
+      "question": "Which word means 'to develop; development'?",
+      "type": "multiple_choice",
+      "correct": "发展",
+      "options": ["发展", "发生", "出现", "降低"],
+      "word_hints": {"发展": "fā zhǎn", "发生": "fā shēng", "出现": "chū xiàn", "降低": "jiàng dī"}
+    },
+    {
+      "question": "What does 发生 mean?",
+      "type": "multiple_choice",
+      "correct": "To happen; to occur",
+      "options": ["To happen; to occur", "To develop", "To appear", "To land"],
+      "word_hints": {"发生": "fā shēng"}
+    },
+    {
+      "question": "What does 暖和 mean?",
+      "type": "multiple_choice",
+      "correct": "Warm (pleasant warmth)",
+      "options": ["Warm (pleasant warmth)", "Cool", "Cold", "Hot"],
+      "word_hints": {"暖和": "nuǎn huo"}
+    },
+    {
+      "question": "Which word means 'cool; pleasantly cool'?",
+      "type": "multiple_choice",
+      "correct": "凉快",
+      "options": ["凉快", "暖和", "危险", "仍然"],
+      "word_hints": {"凉快": "liáng kuai", "暖和": "nuǎn huo", "危险": "wēi xiǎn", "仍然": "réng rán"}
+    },
+    {
+      "question": "What does 仍然 mean?",
+      "type": "multiple_choice",
+      "correct": "Still; yet; as before",
+      "options": ["Still; yet; as before", "Already", "Suddenly", "Also"],
+      "word_hints": {"仍然": "réng rán"}
+    },
+    {
+      "question": "What does 担心 mean?",
+      "type": "multiple_choice",
+      "correct": "To worry; to be concerned",
+      "options": ["To worry; to be concerned", "To be careful", "To be happy", "To be tired"],
+      "word_hints": {"担心": "dān xīn"}
+    },
+    {
+      "question": "Fill in: _____ 你坚持努力，就一定能成功。",
+      "type": "multiple_choice",
+      "correct": "只要",
+      "options": ["只要", "如果", "既然", "否则"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 只要...就... mean?",
+      "type": "multiple_choice",
+      "correct": "As long as...then...",
+      "options": ["As long as...then...", "If...then...", "Although...still...", "Since...then..."],
+      "word_hints": {}
+    },
+    {
+      "question": "Choose the correct use of 只要...就...",
+      "type": "multiple_choice",
+      "correct": "只要坚持，就能增加信心。",
+      "options": [
+        "只要坚持，就能增加信心。",
+        "坚持只要，就能增加信心。",
+        "只要就坚持，能增加信心。",
+        "坚持，就只要增加信心能。"
+      ],
+      "word_hints": {"增加": "zēng jiā"}
+    },
+    {
+      "question": "What does 减少 mean?",
+      "type": "multiple_choice",
+      "correct": "To reduce; to decrease",
+      "options": ["To reduce; to decrease", "To increase", "To appear", "To happen"],
+      "word_hints": {"减少": "jiǎn shǎo"}
+    },
+    {
+      "question": "What does the phrase 气温降低 mean?",
+      "type": "multiple_choice",
+      "correct": "Temperature drops",
+      "options": ["Temperature drops", "Temperature rises", "Cool weather appears", "Weather changes"],
+      "word_hints": {"降低": "jiàng dī"}
+    },
+    {
+      "question": "What does the phrase 发生变化 mean?",
+      "type": "multiple_choice",
+      "correct": "A change occurs",
+      "options": ["A change occurs", "Development happens", "Danger appears", "Temperature drops"],
+      "word_hints": {"发生": "fā shēng"}
+    },
+    {
+      "question": "What does the proverb 天道酬勤 mean?",
+      "type": "multiple_choice",
+      "correct": "Heaven rewards the diligent",
+      "options": [
+        "Heaven rewards the diligent",
+        "Sunshine comes after rain",
+        "Hard work reduces worry",
+        "Persistence leads to development"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 不必担心 mean?",
+      "type": "multiple_choice",
+      "correct": "No need to worry",
+      "options": ["No need to worry", "Still worried", "Increase worry", "Develop worries"],
+      "word_hints": {"担心": "dān xīn"}
+    },
+    {
+      "question": "What is the opposite of 增加?",
+      "type": "multiple_choice",
+      "correct": "减少",
+      "options": ["减少", "发生", "降落", "出现"],
+      "word_hints": {"减少": "jiǎn shǎo", "发生": "fā shēng", "降落": "jiàng luò", "出现": "chū xiàn"}
+    },
+    {
+      "question": "What does the phrase 增加信心 mean?",
+      "type": "multiple_choice",
+      "correct": "To increase confidence",
+      "options": ["To increase confidence", "To reduce worry", "To develop skills", "To persist in effort"],
+      "word_hints": {"增加": "zēng jiā"}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Dealing with Cold Weather",
+      "title_chinese": "应对寒冷天气",
+      "speakers": {
+        "A": {"name": "小林", "role": "朋友甲", "gender": "male"},
+        "B": {"name": "小燕", "role": "朋友乙", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小燕，你听说了吗？今天气温降低了很多，出现了今年最冷的天气。",
+          "pinyin": "Xiǎo Yàn, nǐ tīng shuō le ma? Jīn tiān qì wēn jiàng dī le hěn duō, chū xiàn le jīn nián zuì lěng de tiān qì.",
+          "english": "Xiaoyarn, did you hear? Today the temperature dropped significantly, with the coldest weather of the year."
+        },
+        {
+          "speaker": "B",
+          "chinese": "是吗？我仍然穿的夏天的衣服，真的要多穿点了。",
+          "pinyin": "Shì ma? Wǒ réng rán chuān de xià tiān de yī fu, zhēn de yào duō chuān diǎn le.",
+          "english": "Really? I'm still wearing summer clothes. I really need to put on more layers."
+        },
+        {
+          "speaker": "A",
+          "chinese": "只要你加件外套，就不必担心着凉了。",
+          "pinyin": "Zhǐ yào nǐ jiā jiàn wài tào, jiù bú bì dān xīn zháo liáng le.",
+          "english": "As long as you add a jacket, there's no need to worry about catching a cold."
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢！天气发生变化真的很快，从暖和突然变得这么凉快。",
+          "pinyin": "Xiè xie! Tiān qì fā shēng biàn huà zhēn de hěn kuài, cóng nuǎn huo tū rán biàn de zhè me liáng kuai.",
+          "english": "Thanks! The weather changes so quickly — from warm to this cool so suddenly."
+        },
+        {
+          "speaker": "A",
+          "chinese": "据说明天会更冷，降落的气温会继续增加寒意。",
+          "pinyin": "Jù shuō míng tiān huì gèng lěng, jiàng luò de qì wēn huì jì xù zēng jiā hán yì.",
+          "english": "They say it will be even colder tomorrow, as the falling temperature will continue to add to the chill."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好，我会增加保暖措施，减少外出，以防危险。",
+          "pinyin": "Hǎo, wǒ huì zēng jiā bǎo nuǎn cuò shī, jiǎn shǎo wài chū, yǐ fáng wēi xiǎn.",
+          "english": "Okay, I will increase my warmth measures and reduce going out to prevent danger."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Encouraging a Worried Friend",
+      "title_chinese": "鼓励担心的朋友",
+      "speakers": {
+        "A": {"name": "老师", "role": "老师", "gender": "female"},
+        "B": {"name": "学生", "role": "学生", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "老师，我仍然担心考试，感觉发展太慢了，怎么办？",
+          "pinyin": "Lǎo shī, wǒ réng rán dān xīn kǎo shì, gǎn jué fā zhǎn tài màn le, zěn me bàn?",
+          "english": "Teacher, I'm still worried about the exam. I feel my progress is too slow. What should I do?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "只要你坚持努力，就一定能增加信心，不必担心。",
+          "pinyin": "Zhǐ yào nǐ jiān chí nǔ lì, jiù yī dìng néng zēng jiā xìn xīn, bú bì dān xīn.",
+          "english": "As long as you keep working hard, you will definitely increase your confidence. No need to worry."
+        },
+        {
+          "speaker": "B",
+          "chinese": "但是我感觉自己的成绩仍然没有发生变化。",
+          "pinyin": "Dàn shì wǒ gǎn jué zì jǐ de chéng jì réng rán méi yǒu fā shēng biàn huà.",
+          "english": "But I feel my results still haven't changed."
+        },
+        {
+          "speaker": "A",
+          "chinese": "记住，阳光总在风雨后。减少担心，增加行动。",
+          "pinyin": "Jì zhù, yáng guāng zǒng zài fēng yǔ hòu. Jiǎn shǎo dān xīn, zēng jiā xíng dòng.",
+          "english": "Remember — sunshine always comes after the rain. Reduce worry, increase action."
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢老师。天道酬勤，我会仍然坚持努力的。",
+          "pinyin": "Xiè xie lǎo shī. Tiān dào chóu qín, wǒ huì réng rán jiān chí nǔ lì de.",
+          "english": "Thank you, teacher. Heaven rewards the diligent. I will still persist in working hard."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好！只要你不放弃，好结果就会出现的。",
+          "pinyin": "Hǎo! Zhǐ yào nǐ bù fàng qì, hǎo jié guǒ jiù huì chū xiàn de.",
+          "english": "Great! As long as you don't give up, good results will appear."
+        }
+      ]
+    }
+  ]
+}

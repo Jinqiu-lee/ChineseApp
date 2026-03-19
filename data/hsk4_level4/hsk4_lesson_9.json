@@ -1,0 +1,648 @@
+{
+  "lesson": 9,
+  "level": 4,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Lifestyle & Habits",
+  "topic_chinese": "养成好习惯",
+  "vocabulary": [
+    {
+      "id": "hsk4_l9_01",
+      "chinese": "积极",
+      "pinyin": "jī jí",
+      "english": "Active; positive; enthusiastic",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l9_02",
+      "chinese": "积累",
+      "pinyin": "jī lěi",
+      "english": "To accumulate; accumulation",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l9_03",
+      "chinese": "养成",
+      "pinyin": "yǎng chéng",
+      "english": "To form (a habit); to cultivate",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l9_04",
+      "chinese": "坚持",
+      "pinyin": "jiān chí",
+      "english": "To persist; to persevere; to stick to",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l9_05",
+      "chinese": "散步",
+      "pinyin": "sàn bù",
+      "english": "To take a walk; a walk",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l9_06",
+      "chinese": "活动",
+      "pinyin": "huó dòng",
+      "english": "Activity; to move around; to exercise",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk4_l9_07",
+      "chinese": "活泼",
+      "pinyin": "huó po",
+      "english": "Lively; vivacious",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l9_08",
+      "chinese": "偶尔",
+      "pinyin": "ǒu ěr",
+      "english": "Occasionally; once in a while",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk4_l9_09",
+      "chinese": "往往",
+      "pinyin": "wǎng wǎng",
+      "english": "Often; frequently (habitual tendency)",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk4_l9_10",
+      "chinese": "平时",
+      "pinyin": "píng shí",
+      "english": "Usually; in ordinary times",
+      "part_of_speech": "noun/adverb"
+    },
+    {
+      "id": "hsk4_l9_11",
+      "chinese": "减少",
+      "pinyin": "jiǎn shǎo",
+      "english": "To reduce; to decrease",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l9_12",
+      "chinese": "改变",
+      "pinyin": "gǎi biàn",
+      "english": "To change; change",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l9_p01",
+      "chinese": "养成习惯",
+      "pinyin": "yǎng chéng xí guàn",
+      "english": "To form a habit",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l9_p02",
+      "chinese": "积极活动",
+      "pinyin": "jī jí huó dòng",
+      "english": "To actively exercise/move",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l9_p03",
+      "chinese": "偶尔放松",
+      "pinyin": "ǒu ěr fàng sōng",
+      "english": "To occasionally relax",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l9_p04",
+      "chinese": "减少压力",
+      "pinyin": "jiǎn shǎo yā lì",
+      "english": "To reduce stress",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l9_p05",
+      "chinese": "改变生活方式",
+      "pinyin": "gǎi biàn shēng huó fāng shì",
+      "english": "To change one's lifestyle",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "她养成了每天散步的习惯，平时也很积极参加活动。",
+      "pinyin": "Tā yǎng chéng le měi tiān sàn bù de xí guàn, píng shí yě hěn jī jí cān jiā huó dòng.",
+      "english": "She has formed the habit of taking a walk every day and is also usually very active in participating in activities."
+    },
+    {
+      "chinese": "他积累了多年的好习惯，往往比别人更有活力。",
+      "pinyin": "Tā jī lěi le duō nián de hǎo xí guàn, wǎng wǎng bǐ bié rén gèng yǒu huó lì.",
+      "english": "He has accumulated good habits over many years and often has more energy than others."
+    },
+    {
+      "chinese": "偶尔放松是必要的，但坚持好习惯才是关键。",
+      "pinyin": "Ǒu ěr fàng sōng shì bì yào de, dàn jiān chí hǎo xí guàn cái shì guān jiàn.",
+      "english": "Occasionally relaxing is necessary, but persisting in good habits is the key."
+    },
+    {
+      "chinese": "为了减少压力，她改变了生活方式，开始每天散步。",
+      "pinyin": "Wèi le jiǎn shǎo yā lì, tā gǎi biàn le shēng huó fāng shì, kāi shǐ měi tiān sàn bù.",
+      "english": "In order to reduce stress, she changed her lifestyle and started taking a walk every day."
+    },
+    {
+      "chinese": "孩子们活泼可爱，往往在公园里积极地跑来跑去。",
+      "pinyin": "Hái zi men huó po kě ài, wǎng wǎng zài gōng yuán lǐ jī jí de pǎo lái pǎo qù.",
+      "english": "The children are lively and lovely, and they often actively run around in the park."
+    },
+    {
+      "chinese": "平时要积累好习惯，否则改变生活方式会很难。",
+      "pinyin": "Píng shí yào jī lěi hǎo xí guàn, fǒu zé gǎi biàn shēng huó fāng shì huì hěn nán.",
+      "english": "You should accumulate good habits in ordinary times; otherwise, changing your lifestyle will be very difficult."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "养成 — To cultivate / To form a habit",
+      "explanation": "养成 (yǎng chéng) means 'to form' or 'to cultivate', and is almost always used with 习惯 (xíguàn — habit) to mean 'to form a habit'. Structure: Subject + 养成 + 习惯/behavior. The pattern 养成...的习惯 (to form the habit of...) is extremely common. Example: 他养成了早起的习惯。(He formed the habit of getting up early.) Note: 养成 is a resultative verb compound: 养 (to raise/cultivate) + 成 (successfully become).",
+      "examples": [
+        {
+          "chinese": "她养成了每天散步的习惯，非常积极。",
+          "pinyin": "Tā yǎng chéng le měi tiān sàn bù de xí guàn, fēi cháng jī jí.",
+          "english": "She has formed the habit of walking every day — very positive."
+        },
+        {
+          "chinese": "从小养成好习惯，长大后往往更成功。",
+          "pinyin": "Cóng xiǎo yǎng chéng hǎo xí guàn, zhǎng dà hòu wǎng wǎng gèng chéng gōng.",
+          "english": "Forming good habits from childhood often leads to greater success in adulthood."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "她 _____ 了积极参加活动的习惯。",
+          "type": "multiple_choice",
+          "correct": "养成",
+          "options": ["养成", "积累", "改变", "减少"],
+          "option_pinyin": ["yǎng chéng", "jī lěi", "gǎi biàn", "jiǎn shǎo"],
+          "word_hints": {"积极": "jī jí", "活动": "huó dòng"}
+        },
+        {
+          "question": "Choose the correct use of 养成.",
+          "type": "multiple_choice",
+          "correct": "他从小养成了按时睡觉的习惯。",
+          "options": [
+            "他从小养成了按时睡觉的习惯。",
+            "他从小习惯了养成按时睡觉。",
+            "养成从小他，按时睡觉的习惯。",
+            "他养成了从小按时睡觉。"
+          ],
+          "option_pinyin": [
+            "Tā cóng xiǎo yǎng chéng le àn shí shuì jiào de xí guàn.",
+            "Tā cóng xiǎo xí guàn le yǎng chéng àn shí shuì jiào.",
+            "Yǎng chéng cóng xiǎo tā, àn shí shuì jiào de xí guàn.",
+            "Tā yǎng chéng le cóng xiǎo àn shí shuì jiào."
+          ],
+          "word_hints": {}
+        },
+        {
+          "question": "平时 _____ 好习惯，以后改变就容易了。",
+          "type": "multiple_choice",
+          "correct": "养成",
+          "options": ["养成", "散步", "活泼", "往往"],
+          "option_pinyin": ["yǎng chéng", "sàn bù", "huó po", "wǎng wǎng"],
+          "word_hints": {"平时": "píng shí"}
+        },
+        {
+          "question": "养成 is most often used with which word?",
+          "type": "multiple_choice",
+          "correct": "习惯",
+          "options": ["习惯", "方式", "活动", "压力"],
+          "option_pinyin": ["xí guàn", "fāng shì", "huó dòng", "yā lì"],
+          "word_hints": {}
+        },
+        {
+          "question": "她从不浪费时间，_____ 了高效率的生活习惯。",
+          "type": "multiple_choice",
+          "correct": "养成",
+          "options": ["养成", "积极", "偶尔", "往往"],
+          "option_pinyin": ["yǎng chéng", "jī jí", "ǒu ěr", "wǎng wǎng"],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "积累 — To accumulate gradually",
+      "explanation": "积累 (jī lěi) means 'to accumulate' or 'to build up gradually over time'. It implies a slow, consistent process of adding up. It can refer to experience, knowledge, habits, wealth, skills, or any other resource. Structure: Subject + 积累 + Object. Often used with time expressions to emphasize the gradual nature of accumulation. Example: 通过多年的积累，他的知识很丰富。(Through years of accumulation, his knowledge is very rich.)",
+      "examples": [
+        {
+          "chinese": "他每天坚持散步，积累了很多好的生活习惯。",
+          "pinyin": "Tā měi tiān jiān chí sàn bù, jī lěi le hěn duō hǎo de shēng huó xí guàn.",
+          "english": "He persists in walking every day and has accumulated many good life habits."
+        },
+        {
+          "chinese": "平时积累经验，偶尔才能发挥出最好的状态。",
+          "pinyin": "Píng shí jī lěi jīng yàn, ǒu ěr cái néng fā huī chū zuì hǎo de zhuàng tài.",
+          "english": "Accumulate experience in ordinary times, and occasionally you can show your best."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "她平时 _____ 了很多好习惯，生活非常健康。",
+          "type": "multiple_choice",
+          "correct": "积累",
+          "options": ["积累", "养成", "减少", "散步"],
+          "option_pinyin": ["jī lěi", "yǎng chéng", "jiǎn shǎo", "sàn bù"],
+          "word_hints": {"平时": "píng shí"}
+        },
+        {
+          "question": "Choose the correct sentence using 积累.",
+          "type": "multiple_choice",
+          "correct": "通过积累，他的经验越来越丰富。",
+          "options": [
+            "通过积累，他的经验越来越丰富。",
+            "他通过越来越丰富积累，经验。",
+            "积累通过，他的经验越来越丰富。",
+            "他的经验积累，通过越来越丰富。"
+          ],
+          "option_pinyin": [
+            "Tōng guò jī lěi, tā de jīng yàn yuè lái yuè fēng fù.",
+            "Tā tōng guò yuè lái yuè fēng fù jī lěi, jīng yàn.",
+            "Jī lěi tōng guò, tā de jīng yàn yuè lái yuè fēng fù.",
+            "Tā de jīng yàn jī lěi, tōng guò yuè lái yuè fēng fù."
+          ],
+          "word_hints": {}
+        },
+        {
+          "question": "要 _____ 足够的活动经验，才能改变生活方式。",
+          "type": "multiple_choice",
+          "correct": "积累",
+          "options": ["积累", "活泼", "偶尔", "往往"],
+          "option_pinyin": ["jī lěi", "huó po", "ǒu ěr", "wǎng wǎng"],
+          "word_hints": {"活动": "huó dòng", "改变": "gǎi biàn"}
+        },
+        {
+          "question": "积累 implies:",
+          "type": "multiple_choice",
+          "correct": "A gradual, slow build-up over time",
+          "options": [
+            "A gradual, slow build-up over time",
+            "A sudden change",
+            "A one-time event",
+            "A decrease or reduction"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "他坚持每天散步，慢慢 _____ 了健康的生活方式。",
+          "type": "multiple_choice",
+          "correct": "积累",
+          "options": ["积累", "减少", "改变", "活动"],
+          "option_pinyin": ["jī lěi", "jiǎn shǎo", "gǎi biàn", "huó dòng"],
+          "word_hints": {"坚持": "jiān chí", "散步": "sàn bù"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "往往 — Often / Frequently (habitual tendency)",
+      "explanation": "往往 (wǎng wǎng) means 'often' or 'frequently' and specifically indicates a habitual or predictable tendency — something that regularly happens as a pattern. It refers to what usually happens in a given situation and implies a correlation or tendency. It is not the same as 经常 (jīngcháng — often, frequently in a general sense). 往往 implies 'often in such cases' or 'tend to'. Structure: Subject + 往往 + Verb/Adjective. Example: 坚持锻炼的人往往身体很好。(People who persist in exercising tend to be very healthy.)",
+      "examples": [
+        {
+          "chinese": "养成好习惯的人往往比别人更积极。",
+          "pinyin": "Yǎng chéng hǎo xí guàn de rén wǎng wǎng bǐ bié rén gèng jī jí.",
+          "english": "People who form good habits tend to be more positive than others."
+        },
+        {
+          "chinese": "平时不注意健康的人，往往在生病后才后悔。",
+          "pinyin": "Píng shí bù zhù yì jiàn kāng de rén, wǎng wǎng zài shēng bìng hòu cái hòu huǐ.",
+          "english": "People who don't pay attention to health in ordinary times tend to regret it only after falling ill."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "坚持散步的人 _____ 身体比较好。",
+          "type": "multiple_choice",
+          "correct": "往往",
+          "options": ["往往", "偶尔", "从来", "已经"],
+          "option_pinyin": ["wǎng wǎng", "ǒu ěr", "cóng lái", "yǐ jīng"],
+          "word_hints": {"坚持": "jiān chí", "散步": "sàn bù"}
+        },
+        {
+          "question": "Choose the correct sentence with 往往.",
+          "type": "multiple_choice",
+          "correct": "改变习惯往往需要很多时间。",
+          "options": [
+            "改变习惯往往需要很多时间。",
+            "往往改变习惯需要很多时间。",
+            "改变往往习惯需要很多时间。",
+            "改变习惯需要往往很多时间。"
+          ],
+          "option_pinyin": [
+            "Gǎi biàn xí guàn wǎng wǎng xū yào hěn duō shí jiān.",
+            "Wǎng wǎng gǎi biàn xí guàn xū yào hěn duō shí jiān.",
+            "Gǎi biàn wǎng wǎng xí guàn xū yào hěn duō shí jiān.",
+            "Gǎi biàn xí guàn xū yào wǎng wǎng hěn duō shí jiān."
+          ],
+          "word_hints": {"改变": "gǎi biàn"}
+        },
+        {
+          "question": "不注意积累好习惯的人 _____ 会遇到更多困难。",
+          "type": "multiple_choice",
+          "correct": "往往",
+          "options": ["往往", "偶尔", "永远", "已经"],
+          "option_pinyin": ["wǎng wǎng", "ǒu ěr", "yǒng yuǎn", "yǐ jīng"],
+          "word_hints": {"积累": "jī lěi"}
+        },
+        {
+          "question": "What is the key difference between 往往 and 经常?",
+          "type": "multiple_choice",
+          "correct": "往往 implies a habitual tendency in given circumstances; 经常 means simply 'often'",
+          "options": [
+            "往往 implies a habitual tendency in given circumstances; 经常 means simply 'often'",
+            "They are exactly the same",
+            "经常 is more formal",
+            "往往 is used only in writing"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "活泼的孩子 _____ 积极参加各种活动。",
+          "type": "multiple_choice",
+          "correct": "往往",
+          "options": ["往往", "偶尔", "从不", "突然"],
+          "option_pinyin": ["wǎng wǎng", "ǒu ěr", "cóng bù", "tū rán"],
+          "word_hints": {"活泼": "huó po", "积极": "jī jí", "活动": "huó dòng"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "Chinese Health Preservation Culture",
+      "title_chinese": "中国人的养生文化",
+      "content": "养生 (yǎngshēng — health preservation or nurturing life) is a deeply rooted concept in Chinese culture that goes beyond simply avoiding illness. It encompasses a holistic approach to living: maintaining a balanced diet, following regular routines, exercising moderately, and managing one's emotions. Traditional Chinese health wisdom includes: getting up and going to bed early (早睡早起, zǎo shuì zǎo qǐ), eating warm foods rather than cold, taking regular walks especially after meals, avoiding overwork, and practicing breathing exercises or Taichi. Many Chinese parks are filled with elderly people every morning doing group exercises, dancing, or playing badminton — a reflection of this culture. The concept of 养生 values gradual accumulation (积累) over time rather than quick results.",
+      "idioms": [
+        {
+          "chinese": "生命在于运动",
+          "pinyin": "shēng mìng zài yú yùn dòng",
+          "english": "Life lies in movement (exercise is the key to life)"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 积极 mean?",
+      "type": "multiple_choice",
+      "correct": "Active; positive; enthusiastic",
+      "options": ["Active; positive; enthusiastic", "Lively", "Common", "Gradual"],
+      "word_hints": {"积极": "jī jí"}
+    },
+    {
+      "question": "Which word means 'to accumulate; accumulation'?",
+      "type": "multiple_choice",
+      "correct": "积累",
+      "options": ["积累", "养成", "改变", "减少"],
+      "word_hints": {"积累": "jī lěi", "养成": "yǎng chéng", "改变": "gǎi biàn", "减少": "jiǎn shǎo"}
+    },
+    {
+      "question": "What does 养成 mean?",
+      "type": "multiple_choice",
+      "correct": "To form (a habit); to cultivate",
+      "options": ["To form (a habit); to cultivate", "To accumulate", "To reduce", "To persist"],
+      "word_hints": {"养成": "yǎng chéng"}
+    },
+    {
+      "question": "Which word means 'to take a walk'?",
+      "type": "multiple_choice",
+      "correct": "散步",
+      "options": ["散步", "活动", "坚持", "积累"],
+      "word_hints": {"散步": "sàn bù", "活动": "huó dòng", "坚持": "jiān chí", "积累": "jī lěi"}
+    },
+    {
+      "question": "What does 活动 mean?",
+      "type": "multiple_choice",
+      "correct": "Activity; to move around; to exercise",
+      "options": ["Activity; to move around; to exercise", "To take a walk", "Lively", "To persist"],
+      "word_hints": {"活动": "huó dòng"}
+    },
+    {
+      "question": "Which word means 'lively; vivacious'?",
+      "type": "multiple_choice",
+      "correct": "活泼",
+      "options": ["活泼", "积极", "活动", "积累"],
+      "word_hints": {"活泼": "huó po", "积极": "jī jí", "活动": "huó dòng", "积累": "jī lěi"}
+    },
+    {
+      "question": "What does 偶尔 mean?",
+      "type": "multiple_choice",
+      "correct": "Occasionally; once in a while",
+      "options": ["Occasionally; once in a while", "Often", "Always", "Usually"],
+      "word_hints": {"偶尔": "ǒu ěr"}
+    },
+    {
+      "question": "What does 往往 mean?",
+      "type": "multiple_choice",
+      "correct": "Often; frequently (habitual tendency)",
+      "options": ["Often; frequently (habitual tendency)", "Occasionally", "Always", "Never"],
+      "word_hints": {"往往": "wǎng wǎng"}
+    },
+    {
+      "question": "What does 平时 mean?",
+      "type": "multiple_choice",
+      "correct": "Usually; in ordinary times",
+      "options": ["Usually; in ordinary times", "Sometimes", "Never", "Already"],
+      "word_hints": {"平时": "píng shí"}
+    },
+    {
+      "question": "Which word means 'to reduce; to decrease'?",
+      "type": "multiple_choice",
+      "correct": "减少",
+      "options": ["减少", "改变", "积累", "坚持"],
+      "word_hints": {"减少": "jiǎn shǎo", "改变": "gǎi biàn", "积累": "jī lěi", "坚持": "jiān chí"}
+    },
+    {
+      "question": "Fill in: 她 _____ 了每天散步的习惯。",
+      "type": "multiple_choice",
+      "correct": "养成",
+      "options": ["养成", "积累", "改变", "减少"],
+      "word_hints": {"散步": "sàn bù"}
+    },
+    {
+      "question": "What does 改变 mean?",
+      "type": "multiple_choice",
+      "correct": "To change; change",
+      "options": ["To change; change", "To reduce", "To form", "To persist"],
+      "word_hints": {"改变": "gǎi biàn"}
+    },
+    {
+      "question": "养成 is most often used with which word?",
+      "type": "multiple_choice",
+      "correct": "习惯",
+      "options": ["习惯", "经验", "活动", "方法"],
+      "word_hints": {}
+    },
+    {
+      "question": "Choose the correct sentence with 往往.",
+      "type": "multiple_choice",
+      "correct": "坚持锻炼的人往往比较健康。",
+      "options": [
+        "坚持锻炼的人往往比较健康。",
+        "往往坚持锻炼的人比较健康。",
+        "坚持往往锻炼的人比较健康。",
+        "坚持锻炼的人比较往往健康。"
+      ],
+      "word_hints": {"坚持": "jiān chí"}
+    },
+    {
+      "question": "What is the key meaning of 积累?",
+      "type": "multiple_choice",
+      "correct": "Gradual build-up over time",
+      "options": ["Gradual build-up over time", "Sudden change", "Active participation", "Occasional action"],
+      "word_hints": {"积累": "jī lěi"}
+    },
+    {
+      "question": "What does the phrase 减少压力 mean?",
+      "type": "multiple_choice",
+      "correct": "To reduce stress",
+      "options": ["To reduce stress", "To form good habits", "To change lifestyle", "To take a walk"],
+      "word_hints": {"减少": "jiǎn shǎo"}
+    },
+    {
+      "question": "What does the phrase 偶尔放松 mean?",
+      "type": "multiple_choice",
+      "correct": "To occasionally relax",
+      "options": ["To occasionally relax", "To often exercise", "To persist in resting", "To reduce activities"],
+      "word_hints": {"偶尔": "ǒu ěr"}
+    },
+    {
+      "question": "What does the Chinese saying 生命在于运动 mean?",
+      "type": "multiple_choice",
+      "correct": "Life lies in movement / exercise is key to life",
+      "options": [
+        "Life lies in movement / exercise is key to life",
+        "Form good habits from childhood",
+        "Prevention is better than cure",
+        "Rest is more important than exercise"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What is the concept of 养生 in Chinese culture?",
+      "type": "multiple_choice",
+      "correct": "A holistic approach to health preservation through routine, diet, and exercise",
+      "options": [
+        "A holistic approach to health preservation through routine, diet, and exercise",
+        "Traditional Chinese martial arts only",
+        "A modern fitness trend",
+        "A diet program for weight loss"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 养成习惯 mean?",
+      "type": "multiple_choice",
+      "correct": "To form a habit",
+      "options": ["To form a habit", "To accumulate experience", "To change lifestyle", "To persist in activities"],
+      "word_hints": {"养成": "yǎng chéng"}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Building Good Habits",
+      "title_chinese": "养成好习惯",
+      "speakers": {
+        "A": {"name": "妈妈", "role": "母亲", "gender": "female"},
+        "B": {"name": "小文", "role": "儿子", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小文，你平时都不坚持锻炼，这样下去不健康。",
+          "pinyin": "Xiǎo Wén, nǐ píng shí dōu bù jiān chí duàn liàn, zhè yàng xià qù bù jiàn kāng.",
+          "english": "Xiaowen, you usually don't persist in exercising. This is not healthy in the long run."
+        },
+        {
+          "speaker": "B",
+          "chinese": "妈，我知道，但是我往往太累了，没有时间活动。",
+          "pinyin": "Mā, wǒ zhī dào, dàn shì wǒ wǎng wǎng tài lèi le, méi yǒu shí jiān huó dòng.",
+          "english": "Mom, I know, but I tend to be too tired and don't have time to exercise."
+        },
+        {
+          "speaker": "A",
+          "chinese": "从今天开始养成散步的习惯，偶尔放松一下，减少压力。",
+          "pinyin": "Cóng jīn tiān kāi shǐ yǎng chéng sàn bù de xí guàn, ǒu ěr fàng sōng yī xià, jiǎn shǎo yā lì.",
+          "english": "Start forming the habit of walking from today, occasionally relax, and reduce stress."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好的。我积极去试试，不过能积累成一个好习惯吗？",
+          "pinyin": "Hǎo de. Wǒ jī jí qù shì shì, bú guò néng jī lěi chéng yī gè hǎo xí guàn ma?",
+          "english": "Okay. I'll actively try it — but can it really be accumulated into a good habit?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "当然！每天坚持，慢慢积累，习惯就会养成了。",
+          "pinyin": "Dāng rán! Měi tiān jiān chí, màn màn jī lěi, xí guàn jiù huì yǎng chéng le.",
+          "english": "Of course! Persist every day, accumulate slowly, and the habit will form."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我明白了，改变生活方式需要时间，但我会努力的。",
+          "pinyin": "Wǒ míng bái le, gǎi biàn shēng huó fāng shì xū yào shí jiān, dàn wǒ huì nǔ lì de.",
+          "english": "I understand. Changing one's lifestyle takes time, but I will work hard."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Morning Routines",
+      "title_chinese": "晨间活动",
+      "speakers": {
+        "A": {"name": "老李", "role": "邻居甲", "gender": "male"},
+        "B": {"name": "老王", "role": "邻居乙", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "老王！你也来公园散步？你很积极啊！",
+          "pinyin": "Lǎo Wáng! Nǐ yě lái gōng yuán sàn bù? Nǐ hěn jī jí a!",
+          "english": "Lao Wang! You're here for a walk in the park too? You're so active!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是啊，我养成这个习惯已经五年了。平时早上七点就来活动。",
+          "pinyin": "Shì a, wǒ yǎng chéng zhè ge xí guàn yǐ jīng wǔ nián le. Píng shí zǎo shàng qī diǎn jiù lái huó dòng.",
+          "english": "Yes, I've had this habit for five years already. Usually I come to exercise at 7 in the morning."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你往往来得很早！我偶尔来一次，你是天天来。",
+          "pinyin": "Nǐ wǎng wǎng lái de hěn zǎo! Wǒ ǒu ěr lái yī cì, nǐ shì tiān tiān lái.",
+          "english": "You tend to come very early! I only come occasionally once in a while, but you come every day."
+        },
+        {
+          "speaker": "B",
+          "chinese": "坚持才能积累健康，这是我多年的体会。",
+          "pinyin": "Jiān chí cái néng jī lěi jiàn kāng, zhè shì wǒ duō nián de tǐ huì.",
+          "english": "Persistence is what allows health to accumulate. That's what I've learned over many years."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你说得对。我也要改变生活方式，减少熬夜，多活动。",
+          "pinyin": "Nǐ shuō de duì. Wǒ yě yào gǎi biàn shēng huó fāng shì, jiǎn shǎo áo yè, duō huó dòng.",
+          "english": "You're right. I also need to change my lifestyle — reduce staying up late and exercise more."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好！活泼地生活，健康地活动，这就是养生的秘诀！",
+          "pinyin": "Hǎo! Huó po de shēng huó, jiàn kāng de huó dòng, zhè jiù shì yǎng shēng de mì jué!",
+          "english": "Great! Living with vitality and exercising healthily — that is the secret of 养生!"
+        }
+      ]
+    }
+  ]
+}

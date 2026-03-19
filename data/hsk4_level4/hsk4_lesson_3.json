@@ -1,0 +1,644 @@
+{
+  "lesson": 3,
+  "level": 4,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Communication & Expressions",
+  "topic_chinese": "表达与交流",
+  "vocabulary": [
+    {
+      "id": "hsk4_l3_01",
+      "chinese": "交流",
+      "pinyin": "jiāo liú",
+      "english": "To communicate; communication; exchange",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l3_02",
+      "chinese": "对话",
+      "pinyin": "duì huà",
+      "english": "Dialogue; conversation",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l3_03",
+      "chinese": "解释",
+      "pinyin": "jiě shì",
+      "english": "To explain; explanation",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l3_04",
+      "chinese": "礼貌",
+      "pinyin": "lǐ mào",
+      "english": "Polite; politeness",
+      "part_of_speech": "adjective/noun"
+    },
+    {
+      "id": "hsk4_l3_05",
+      "chinese": "表扬",
+      "pinyin": "biǎo yáng",
+      "english": "To praise; praise",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l3_06",
+      "chinese": "批评",
+      "pinyin": "pī píng",
+      "english": "To criticize; criticism",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l3_07",
+      "chinese": "词语",
+      "pinyin": "cí yǔ",
+      "english": "Word; term; expression",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l3_08",
+      "chinese": "说明",
+      "pinyin": "shuō míng",
+      "english": "To explain; to illustrate; explanation",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l3_09",
+      "chinese": "信息",
+      "pinyin": "xìn xī",
+      "english": "Information; news; message",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l3_10",
+      "chinese": "翻译",
+      "pinyin": "fān yì",
+      "english": "To translate; translator; translation",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l3_11",
+      "chinese": "详细",
+      "pinyin": "xiáng xì",
+      "english": "Detailed; in detail",
+      "part_of_speech": "adjective/adverb"
+    },
+    {
+      "id": "hsk4_l3_12",
+      "chinese": "直接",
+      "pinyin": "zhí jiē",
+      "english": "Direct; directly",
+      "part_of_speech": "adjective/adverb"
+    },
+    {
+      "id": "hsk4_l3_p01",
+      "chinese": "直接表达",
+      "pinyin": "zhí jiē biǎo dá",
+      "english": "To express directly",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l3_p02",
+      "chinese": "详细解释",
+      "pinyin": "xiáng xì jiě shì",
+      "english": "To explain in detail",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l3_p03",
+      "chinese": "礼貌回复",
+      "pinyin": "lǐ mào huí fù",
+      "english": "A polite reply",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l3_p04",
+      "chinese": "翻译词语",
+      "pinyin": "fān yì cí yǔ",
+      "english": "To translate words/terms",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l3_p05",
+      "chinese": "批评与表扬",
+      "pinyin": "pī píng yǔ biǎo yáng",
+      "english": "Criticism and praise",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "对于这个词语，老师做了详细的解释。",
+      "pinyin": "Duì yú zhè ge cí yǔ, lǎo shī zuò le xiáng xì de jiě shì.",
+      "english": "Regarding this word, the teacher gave a detailed explanation."
+    },
+    {
+      "chinese": "他很直接，总是直接表达自己的想法。",
+      "pinyin": "Tā hěn zhí jiē, zǒng shì zhí jiē biǎo dá zì jǐ de xiǎng fǎ.",
+      "english": "He is very direct and always expresses his thoughts directly."
+    },
+    {
+      "chinese": "是否需要翻译这段信息，请告诉我。",
+      "pinyin": "Shì fǒu xū yào fān yì zhè duàn xìn xī, qǐng gào sù wǒ.",
+      "english": "Please let me know whether or not you need this message translated."
+    },
+    {
+      "chinese": "她用礼貌的语气说明了情况，大家都很满意。",
+      "pinyin": "Tā yòng lǐ mào de yǔ qì shuō míng le qíng kuàng, dà jiā dōu hěn mǎn yì.",
+      "english": "She explained the situation in a polite tone, and everyone was satisfied."
+    },
+    {
+      "chinese": "批评和表扬都是有效的交流方式。",
+      "pinyin": "Pī píng hé biǎo yáng dōu shì yǒu xiào de jiāo liú fāng shì.",
+      "english": "Both criticism and praise are effective ways of communication."
+    },
+    {
+      "chinese": "通过对话，他们更好地了解了彼此的想法。",
+      "pinyin": "Tōng guò duì huà, tā men gèng hǎo de liǎo jiě le bǐ cǐ de xiǎng fǎ.",
+      "english": "Through dialogue, they better understood each other's thoughts."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "对于 — Regarding / With regard to",
+      "explanation": "对于 is a preposition meaning 'regarding', 'with regard to', or 'as for'. It introduces the topic or object being discussed and is placed before the subject or at the beginning of the sentence. Structure: 对于 + topic/object + Subject + Predicate. It is used to focus attention on a particular topic. Example: 对于这个问题，我有不同的看法。(Regarding this question, I have a different view.)",
+      "examples": [
+        {
+          "chinese": "对于这个词语，我需要更多解释。",
+          "pinyin": "Duì yú zhè ge cí yǔ, wǒ xū yào gèng duō jiě shì.",
+          "english": "Regarding this term, I need more explanation."
+        },
+        {
+          "chinese": "对于交流，她认为礼貌是最重要的。",
+          "pinyin": "Duì yú jiāo liú, tā rèn wéi lǐ mào shì zuì zhòng yào de.",
+          "english": "Regarding communication, she thinks politeness is the most important thing."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 这个信息，他做了详细的说明。",
+          "type": "multiple_choice",
+          "correct": "对于",
+          "options": ["对于", "因为", "虽然", "所以"],
+          "option_pinyin": ["duì yú", "yīn wèi", "suī rán", "suǒ yǐ"],
+          "word_hints": {"信息": "xìn xī", "详细": "xiáng xì"}
+        },
+        {
+          "question": "Choose the correct sentence with 对于.",
+          "type": "multiple_choice",
+          "correct": "对于翻译，她有丰富的经验。",
+          "options": [
+            "对于翻译，她有丰富的经验。",
+            "她对于翻译有丰富的经验对于。",
+            "翻译对于，她有丰富的经验。",
+            "她有对于翻译丰富的经验。"
+          ],
+          "option_pinyin": [
+            "Duì yú fān yì, tā yǒu fēng fù de jīng yàn.",
+            "Tā duì yú fān yì yǒu fēng fù de jīng yàn duì yú.",
+            "Fān yì duì yú, tā yǒu fēng fù de jīng yàn.",
+            "Tā yǒu duì yú fān yì fēng fù de jīng yàn."
+          ],
+          "word_hints": {"翻译": "fān yì"}
+        },
+        {
+          "question": "对于 _____ 问题，我们需要直接表达。",
+          "type": "multiple_choice",
+          "correct": "这个",
+          "options": ["这个", "因为", "所以", "但是"],
+          "option_pinyin": ["zhè ge", "yīn wèi", "suǒ yǐ", "dàn shì"],
+          "word_hints": {"直接": "zhí jiē"}
+        },
+        {
+          "question": "What does 对于 introduce in a sentence?",
+          "type": "multiple_choice",
+          "correct": "The topic or object being discussed",
+          "options": [
+            "The topic or object being discussed",
+            "A cause or reason",
+            "A contrast",
+            "A condition"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "_____ 如何表扬学生，老师有自己的看法。",
+          "type": "multiple_choice",
+          "correct": "对于",
+          "options": ["对于", "通过", "由于", "为了"],
+          "option_pinyin": ["duì yú", "tōng guò", "yóu yú", "wèi le"],
+          "word_hints": {"表扬": "biǎo yáng"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "表示 as a discourse marker — To indicate / To express",
+      "explanation": "表示 (biǎo shì) can function not only as a verb meaning 'to express' or 'to show', but also as a discourse marker indicating what a word, action, or gesture means. In this function, it introduces an explanation: [something] 表示 [meaning]. Structure: Word/Action + 表示 + Meaning. Example: 鞠躬表示尊重。(Bowing shows respect.) In discourse, it is often used to say: 这个词语表示... (This term means / indicates...)",
+      "examples": [
+        {
+          "chinese": "这个词语表示对别人的批评。",
+          "pinyin": "Zhè ge cí yǔ biǎo shì duì bié rén de pī píng.",
+          "english": "This term indicates criticism of others."
+        },
+        {
+          "chinese": "他微笑着，表示他对这次交流很满意。",
+          "pinyin": "Tā wēi xiào zhe, biǎo shì tā duì zhè cì jiāo liú hěn mǎn yì.",
+          "english": "He smiled, indicating that he was very satisfied with this exchange."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "点头 _____ 同意。",
+          "type": "multiple_choice",
+          "correct": "表示",
+          "options": ["表示", "翻译", "说明", "批评"],
+          "option_pinyin": ["biǎo shì", "fān yì", "shuō míng", "pī píng"],
+          "word_hints": {"表示": "biǎo shì"}
+        },
+        {
+          "question": "这个 _____ 表示什么意思？",
+          "type": "multiple_choice",
+          "correct": "词语",
+          "options": ["词语", "对话", "交流", "翻译"],
+          "option_pinyin": ["cí yǔ", "duì huà", "jiāo liú", "fān yì"],
+          "word_hints": {"词语": "cí yǔ", "对话": "duì huà", "交流": "jiāo liú", "翻译": "fān yì"}
+        },
+        {
+          "question": "他送了一束花，_____ 他的感谢。",
+          "type": "multiple_choice",
+          "correct": "表示",
+          "options": ["表示", "批评", "翻译", "解释"],
+          "option_pinyin": ["biǎo shì", "pī píng", "fān yì", "jiě shì"],
+          "word_hints": {}
+        },
+        {
+          "question": "Choose the correct use of 表示 as a discourse marker.",
+          "type": "multiple_choice",
+          "correct": "这个词语表示礼貌。",
+          "options": [
+            "这个词语表示礼貌。",
+            "表示礼貌，这个词语。",
+            "礼貌表示，这个词语。",
+            "词语这个，表示礼貌。"
+          ],
+          "option_pinyin": [
+            "Zhè ge cí yǔ biǎo shì lǐ mào.",
+            "Biǎo shì lǐ mào, zhè ge cí yǔ.",
+            "Lǐ mào biǎo shì, zhè ge cí yǔ.",
+            "Cí yǔ zhè ge, biǎo shì lǐ mào."
+          ],
+          "word_hints": {"词语": "cí yǔ", "礼貌": "lǐ mào"}
+        },
+        {
+          "question": "Which word can function as a discourse marker meaning 'to indicate a meaning'?",
+          "type": "multiple_choice",
+          "correct": "表示",
+          "options": ["表示", "解释", "说明", "批评"],
+          "option_pinyin": ["biǎo shì", "jiě shì", "shuō míng", "pī píng"],
+          "word_hints": {"表示": "biǎo shì", "解释": "jiě shì", "说明": "shuō míng", "批评": "pī píng"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "是否 — Whether or not",
+      "explanation": "是否 is a formal expression meaning 'whether or not' or 'if'. It introduces a yes-or-no question within a sentence and is more formal than 是不是. It is often placed before a verb or adjective. Structure: Subject + 是否 + Verb/Adj OR 是否 + Clause at the start of the sentence. Example: 他是否同意这个方法还不清楚。(Whether or not he agrees with this method is still unclear.)",
+      "examples": [
+        {
+          "chinese": "请说明是否需要翻译这段信息。",
+          "pinyin": "Qǐng shuō míng shì fǒu xū yào fān yì zhè duàn xìn xī.",
+          "english": "Please clarify whether or not this message needs to be translated."
+        },
+        {
+          "chinese": "老师询问学生是否理解了这个词语。",
+          "pinyin": "Lǎo shī xún wèn xué shēng shì fǒu lǐ jiě le zhè ge cí yǔ.",
+          "english": "The teacher asked the students whether or not they understood the word."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "请告诉我 _____ 需要详细解释。",
+          "type": "multiple_choice",
+          "correct": "是否",
+          "options": ["是否", "虽然", "为了", "由于"],
+          "option_pinyin": ["shì fǒu", "suī rán", "wèi le", "yóu yú"],
+          "word_hints": {"详细": "xiáng xì", "解释": "jiě shì"}
+        },
+        {
+          "question": "他 _____ 礼貌，我不太确定。",
+          "type": "multiple_choice",
+          "correct": "是否",
+          "options": ["是否", "一定", "肯定", "当然"],
+          "option_pinyin": ["shì fǒu", "yī dìng", "kěn dìng", "dāng rán"],
+          "word_hints": {"礼貌": "lǐ mào"}
+        },
+        {
+          "question": "Choose the sentence that correctly uses 是否.",
+          "type": "multiple_choice",
+          "correct": "这次交流是否成功，我们还不知道。",
+          "options": [
+            "这次交流是否成功，我们还不知道。",
+            "是否这次交流成功，我们还不知道。",
+            "这次交流，我们是否还不知道成功。",
+            "成功是否，这次交流我们还不知道。"
+          ],
+          "option_pinyin": [
+            "Zhè cì jiāo liú shì fǒu chéng gōng, wǒ men hái bù zhī dào.",
+            "Shì fǒu zhè cì jiāo liú chéng gōng, wǒ men hái bù zhī dào.",
+            "Zhè cì jiāo liú, wǒ men shì fǒu hái bù zhī dào chéng gōng.",
+            "Chéng gōng shì fǒu, zhè cì jiāo liú wǒ men hái bù zhī dào."
+          ],
+          "word_hints": {"交流": "jiāo liú"}
+        },
+        {
+          "question": "是否 is more _____  than 是不是.",
+          "type": "multiple_choice",
+          "correct": "Formal",
+          "options": ["Formal", "Informal", "Negative", "Emphatic"],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "_____ 需要翻译这篇文章，请直接告诉我。",
+          "type": "multiple_choice",
+          "correct": "是否",
+          "options": ["是否", "虽然", "不管", "因为"],
+          "option_pinyin": ["shì fǒu", "suī rán", "bù guǎn", "yīn wèi"],
+          "word_hints": {"翻译": "fān yì", "直接": "zhí jiē"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "Chinese Dining Etiquette",
+      "title_chinese": "中国餐桌礼仪",
+      "content": "Chinese dining etiquette reflects deep Confucian values of respect, hierarchy, and community. At a formal meal, the most honored guest or eldest person is typically seated facing the door, in the seat considered most prestigious. Dishes are shared communally rather than served to individuals, symbolizing togetherness. When toasting (干杯, gān bēi), it is respectful to hold your glass lower than that of someone older or more senior than you. Pouring tea or drinks for others before yourself is expected. Refusing food repeatedly is sometimes considered polite (a signal to insist more), though this custom is changing among younger generations. The act of sharing food and conversation at a meal is seen as an important form of communication and relationship-building.",
+      "idioms": [
+        {
+          "chinese": "礼多人不怪",
+          "pinyin": "lǐ duō rén bú guài",
+          "english": "One is never blamed for being too polite"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 交流 mean?",
+      "type": "multiple_choice",
+      "correct": "To communicate; communication",
+      "options": ["To communicate; communication", "To explain", "To translate", "To praise"],
+      "word_hints": {"交流": "jiāo liú"}
+    },
+    {
+      "question": "Which word means 'dialogue; conversation'?",
+      "type": "multiple_choice",
+      "correct": "对话",
+      "options": ["对话", "词语", "信息", "说明"],
+      "word_hints": {"对话": "duì huà", "词语": "cí yǔ", "信息": "xìn xī", "说明": "shuō míng"}
+    },
+    {
+      "question": "What does 礼貌 mean?",
+      "type": "multiple_choice",
+      "correct": "Polite; politeness",
+      "options": ["Polite; politeness", "Direct", "Detailed", "Humble"],
+      "word_hints": {"礼貌": "lǐ mào"}
+    },
+    {
+      "question": "Which word means 'to criticize'?",
+      "type": "multiple_choice",
+      "correct": "批评",
+      "options": ["批评", "表扬", "解释", "说明"],
+      "word_hints": {"批评": "pī píng", "表扬": "biǎo yáng", "解释": "jiě shì", "说明": "shuō míng"}
+    },
+    {
+      "question": "What does 详细 mean?",
+      "type": "multiple_choice",
+      "correct": "Detailed; in detail",
+      "options": ["Detailed; in detail", "Direct", "Polite", "Correct"],
+      "word_hints": {"详细": "xiáng xì"}
+    },
+    {
+      "question": "Which word means 'to translate'?",
+      "type": "multiple_choice",
+      "correct": "翻译",
+      "options": ["翻译", "解释", "说明", "批评"],
+      "word_hints": {"翻译": "fān yì", "解释": "jiě shì", "说明": "shuō míng", "批评": "pī píng"}
+    },
+    {
+      "question": "What does 信息 mean?",
+      "type": "multiple_choice",
+      "correct": "Information; news; message",
+      "options": ["Information; news; message", "Word; term", "Explanation", "Dialogue"],
+      "word_hints": {"信息": "xìn xī"}
+    },
+    {
+      "question": "What does 直接 mean?",
+      "type": "multiple_choice",
+      "correct": "Direct; directly",
+      "options": ["Direct; directly", "Detailed", "Polite", "Correct"],
+      "word_hints": {"直接": "zhí jiē"}
+    },
+    {
+      "question": "Which word means 'word; term; expression'?",
+      "type": "multiple_choice",
+      "correct": "词语",
+      "options": ["词语", "对话", "信息", "说明"],
+      "word_hints": {"词语": "cí yǔ", "对话": "duì huà", "信息": "xìn xī", "说明": "shuō míng"}
+    },
+    {
+      "question": "What does 表扬 mean?",
+      "type": "multiple_choice",
+      "correct": "To praise; praise",
+      "options": ["To praise; praise", "To criticize", "To explain", "To translate"],
+      "word_hints": {"表扬": "biǎo yáng"}
+    },
+    {
+      "question": "Fill in: _____ 这个词语，老师做了详细的解释。",
+      "type": "multiple_choice",
+      "correct": "对于",
+      "options": ["对于", "为了", "由于", "通过"],
+      "word_hints": {"词语": "cí yǔ", "详细": "xiáng xì", "解释": "jiě shì"}
+    },
+    {
+      "question": "What does 是否 mean?",
+      "type": "multiple_choice",
+      "correct": "Whether or not",
+      "options": ["Whether or not", "In order to", "Regarding", "Although"],
+      "word_hints": {}
+    },
+    {
+      "question": "Choose the correct sentence with 对于.",
+      "type": "multiple_choice",
+      "correct": "对于交流，礼貌非常重要。",
+      "options": [
+        "对于交流，礼貌非常重要。",
+        "交流对于，礼貌非常重要。",
+        "礼貌对于交流，非常重要。",
+        "非常重要，对于礼貌交流。"
+      ],
+      "word_hints": {"交流": "jiāo liú", "礼貌": "lǐ mào"}
+    },
+    {
+      "question": "点头 _____ 同意。(Fill in with the discourse marker.)",
+      "type": "multiple_choice",
+      "correct": "表示",
+      "options": ["表示", "解释", "批评", "翻译"],
+      "word_hints": {}
+    },
+    {
+      "question": "Is 是否 more formal or informal compared to 是不是?",
+      "type": "multiple_choice",
+      "correct": "More formal",
+      "options": ["More formal", "More informal", "The same level", "Only used in speech"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 礼貌回复 mean?",
+      "type": "multiple_choice",
+      "correct": "A polite reply",
+      "options": ["A polite reply", "A detailed explanation", "A direct expression", "A criticism"],
+      "word_hints": {"礼貌": "lǐ mào"}
+    },
+    {
+      "question": "What does 说明 mean?",
+      "type": "multiple_choice",
+      "correct": "To explain; to illustrate",
+      "options": ["To explain; to illustrate", "To praise", "To criticize", "To translate"],
+      "word_hints": {"说明": "shuō míng"}
+    },
+    {
+      "question": "Which Chinese cultural value is reflected in dining etiquette where you pour for others first?",
+      "type": "multiple_choice",
+      "correct": "Respect for elders and guests",
+      "options": [
+        "Respect for elders and guests",
+        "Individual independence",
+        "Competition",
+        "Frugality"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 批评与表扬 mean?",
+      "type": "multiple_choice",
+      "correct": "Criticism and praise",
+      "options": ["Criticism and praise", "Questions and answers", "Communication and dialogue", "Words and terms"],
+      "word_hints": {"批评": "pī píng", "表扬": "biǎo yáng"}
+    },
+    {
+      "question": "What does 解释 mean?",
+      "type": "multiple_choice",
+      "correct": "To explain; explanation",
+      "options": ["To explain; explanation", "To translate", "To communicate", "To criticize"],
+      "word_hints": {"解释": "jiě shì"}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Understanding a New Word",
+      "title_chinese": "理解一个新词语",
+      "speakers": {
+        "A": {"name": "李老师", "role": "老师", "gender": "female"},
+        "B": {"name": "小强", "role": "学生", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "老师，对于「批评」这个词语，我不太明白是什么意思。",
+          "pinyin": "Lǎo shī, duì yú 'pī píng' zhè ge cí yǔ, wǒ bú tài míng bái shì shén me yì si.",
+          "english": "Teacher, regarding the word 'criticism', I don't quite understand its meaning."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好，我来详细解释一下。批评表示对别人的错误提出意见。",
+          "pinyin": "Hǎo, wǒ lái xiáng xì jiě shì yí xià. Pī píng biǎo shì duì bié rén de cuò wù tí chū yì jiàn.",
+          "english": "Good, let me explain in detail. 'Criticism' means pointing out someone's mistakes."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那表扬呢？是否表示相反的意思？",
+          "pinyin": "Nà biǎo yáng ne? Shì fǒu biǎo shì xiāng fǎn de yì si?",
+          "english": "What about 'praise'? Does it indicate the opposite meaning?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "对，表扬表示肯定别人的好行为。这两个词语正好相反。",
+          "pinyin": "Duì, biǎo yáng biǎo shì kěn dìng bié rén de hǎo xíng wéi. Zhè liǎng ge cí yǔ zhèng hǎo xiāng fǎn.",
+          "english": "Right, 'praise' means affirming someone's good behavior. These two words are exact opposites."
+        },
+        {
+          "speaker": "B",
+          "chinese": "明白了。老师，我是否可以直接用这两个词和同学对话？",
+          "pinyin": "Míng bái le. Lǎo shī, wǒ shì fǒu kě yǐ zhí jiē yòng zhè liǎng ge cí hé tóng xué duì huà?",
+          "english": "I understand now. Teacher, can I directly use these two words in conversation with classmates?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "当然可以。不过要礼貌，批评别人的时候要注意说话的方式。",
+          "pinyin": "Dāng rán kě yǐ. Bú guò yào lǐ mào, pī píng bié rén de shí hou yào zhù yì shuō huà de fāng shì.",
+          "english": "Of course. But be polite — when criticizing others, pay attention to your manner of speaking."
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢老师的详细说明，交流真的很重要。",
+          "pinyin": "Xiè xie lǎo shī de xiáng xì shuō míng, jiāo liú zhēn de hěn zhòng yào.",
+          "english": "Thank you for the detailed explanation, teacher. Communication really is important."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Discussing a Translation Project",
+      "title_chinese": "讨论翻译项目",
+      "speakers": {
+        "A": {"name": "张明", "role": "同事甲", "gender": "male"},
+        "B": {"name": "王芳", "role": "同事乙", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "王芳，对于这份信息，你觉得是否需要翻译？",
+          "pinyin": "Wáng Fāng, duì yú zhè fèn xìn xī, nǐ jué de shì fǒu xū yào fān yì?",
+          "english": "Wang Fang, regarding this information, do you think it needs to be translated?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我觉得需要。客户来自国外，直接发中文信息不太礼貌。",
+          "pinyin": "Wǒ jué de xū yào. Kè hù lái zì guó wài, zhí jiē fā zhōng wén xìn xī bú tài lǐ mào.",
+          "english": "I think so. The client is from abroad. Sending information in Chinese directly wouldn't be very polite."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好，你能帮我详细解释一下这些词语的意思吗？",
+          "pinyin": "Hǎo, nǐ néng bāng wǒ xiáng xì jiě shì yī xià zhè xiē cí yǔ de yì si ma?",
+          "english": "Okay, can you help me explain the meaning of these terms in detail?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "当然。这些词语表示不同的产品功能，我来一一说明。",
+          "pinyin": "Dāng rán. Zhè xiē cí yǔ biǎo shì bù tóng de chǎn pǐn gōng néng, wǒ lái yī yī shuō míng.",
+          "english": "Of course. These terms indicate different product features. Let me explain them one by one."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你翻译得非常清楚，我对这次交流很有信心。",
+          "pinyin": "Nǐ fān yì de fēi cháng qīng chǔ, wǒ duì zhè cì jiāo liú hěn yǒu xìn xīn.",
+          "english": "Your translation is very clear. I'm very confident about this communication."
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢你的表扬！直接和清楚地交流，这对工作非常重要。",
+          "pinyin": "Xiè xie nǐ de biǎo yáng! Zhí jiē hé qīng chǔ de jiāo liú, zhè duì gōng zuò fēi cháng zhòng yào.",
+          "english": "Thank you for the praise! Direct and clear communication is very important for work."
+        }
+      ]
+    }
+  ]
+}

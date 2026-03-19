@@ -80,6 +80,23 @@ const LESSONS_BY_LEVEL = {
     { id: 14, title: 'Directional Complements',     topic_chinese: '请把水果拿过来' },
     { id: 15, title: 'General Expressions',         topic_chinese: '其他都还行没问题' },
   ],
+  hsk4: [
+    { id: 1,  title: 'Love & Romance',              topic_chinese: '简单的爱情' },
+    { id: 2,  title: 'Friendship & Trust',          topic_chinese: '真正的朋友' },
+    { id: 3,  title: 'Communication & Expressions', topic_chinese: '表达与交流' },
+    { id: 4,  title: 'Work & Career',               topic_chinese: '职业与成功' },
+    { id: 5,  title: 'Money & Finance',             topic_chinese: '金钱与理财' },
+    { id: 6,  title: 'Smart Shopping',              topic_chinese: '买对的，不买贵的' },
+    { id: 7,  title: 'Quality & Standards',         topic_chinese: '一分价一分货' },
+    { id: 8,  title: 'Health & Medicine',           topic_chinese: '最好的医生是自己' },
+    { id: 9,  title: 'Lifestyle & Habits',          topic_chinese: '养成好习惯' },
+    { id: 10, title: 'Nature & Environment',        topic_chinese: '生活中不乏美景' },
+    { id: 11, title: 'Weather & Change',            topic_chinese: '阳光总在风雨后（一）' },
+    { id: 12, title: 'Perseverance & Achievement',  topic_chinese: '坚持就是胜利' },
+    { id: 13, title: 'Happiness & Contentment',     topic_chinese: '幸福的标准（一）' },
+    { id: 14, title: 'Society & Values',            topic_chinese: '社会与责任' },
+    { id: 15, title: 'Culture, Arts & Idioms',      topic_chinese: '中国文化与艺术' },
+  ],
 };
 
 export default function HomeScreen({

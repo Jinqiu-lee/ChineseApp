@@ -1,0 +1,654 @@
+{
+  "lesson": 8,
+  "level": 4,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Health & Medicine",
+  "topic_chinese": "最好的医生是自己",
+  "vocabulary": [
+    {
+      "id": "hsk4_l8_01",
+      "chinese": "打针",
+      "pinyin": "dǎ zhēn",
+      "english": "To give/receive an injection",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l8_02",
+      "chinese": "咳嗽",
+      "pinyin": "ké sou",
+      "english": "To cough; cough",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l8_03",
+      "chinese": "皮肤",
+      "pinyin": "pí fū",
+      "english": "Skin",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l8_04",
+      "chinese": "大夫",
+      "pinyin": "dài fu",
+      "english": "Doctor (colloquial)",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l8_05",
+      "chinese": "护士",
+      "pinyin": "hù shi",
+      "english": "Nurse",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l8_06",
+      "chinese": "肚子",
+      "pinyin": "dù zi",
+      "english": "Stomach; belly; abdomen",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l8_07",
+      "chinese": "汗",
+      "pinyin": "hàn",
+      "english": "Sweat; perspiration",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l8_08",
+      "chinese": "温度",
+      "pinyin": "wēn dù",
+      "english": "Temperature",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l8_09",
+      "chinese": "危险",
+      "pinyin": "wēi xiǎn",
+      "english": "Dangerous; danger",
+      "part_of_speech": "adjective/noun"
+    },
+    {
+      "id": "hsk4_l8_10",
+      "chinese": "减肥",
+      "pinyin": "jiǎn féi",
+      "english": "To lose weight; to diet",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l8_11",
+      "chinese": "坚持",
+      "pinyin": "jiān chí",
+      "english": "To persist; to persevere; to stick to",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l8_12",
+      "chinese": "耐心",
+      "pinyin": "nài xīn",
+      "english": "Patient; patience",
+      "part_of_speech": "adjective/noun"
+    },
+    {
+      "id": "hsk4_l8_p01",
+      "chinese": "打针吃药",
+      "pinyin": "dǎ zhēn chī yào",
+      "english": "To receive injections and take medicine",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l8_p02",
+      "chinese": "皮肤健康",
+      "pinyin": "pí fū jiàn kāng",
+      "english": "Healthy skin",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l8_p03",
+      "chinese": "减肥计划",
+      "pinyin": "jiǎn féi jì huà",
+      "english": "Weight loss plan",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l8_p04",
+      "chinese": "坚持锻炼",
+      "pinyin": "jiān chí duàn liàn",
+      "english": "To persist in exercising",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l8_p05",
+      "chinese": "危险情况",
+      "pinyin": "wēi xiǎn qíng kuàng",
+      "english": "Dangerous situation",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "如果温度超过三十九度，就应该马上去看大夫。",
+      "pinyin": "Rú guǒ wēn dù chāo guò sān shí jiǔ dù, jiù yīng gāi mǎ shàng qù kàn dài fu.",
+      "english": "If the temperature exceeds 39 degrees, you should see a doctor immediately."
+    },
+    {
+      "chinese": "他咳嗽了好几天，来不及等了，必须打针。",
+      "pinyin": "Tā ké sou le hǎo jǐ tiān, lái bù jí děng le, bì xū dǎ zhēn.",
+      "english": "He has been coughing for several days. There's no time to wait — he must get an injection."
+    },
+    {
+      "chinese": "护士耐心地告诉病人如何保持皮肤健康。",
+      "pinyin": "Hù shi nài xīn de gào sù bìng rén rú hé bǎo chí pí fū jiàn kāng.",
+      "english": "The nurse patiently told the patient how to maintain healthy skin."
+    },
+    {
+      "chinese": "为了减肥，她坚持每天锻炼，流了很多汗。",
+      "pinyin": "Wèi le jiǎn féi, tā jiān chí měi tiān duàn liàn, liú le hěn duō hàn.",
+      "english": "In order to lose weight, she persists in exercising every day and sweats a lot."
+    },
+    {
+      "chinese": "他肚子疼得受不了，只好让护士帮他叫大夫。",
+      "pinyin": "Tā dù zi téng de shòu bù liǎo, zhǐ hǎo ràng hù shi bāng tā jiào dài fu.",
+      "english": "His stomachache was unbearable, so he had no choice but to ask the nurse to call the doctor."
+    },
+    {
+      "chinese": "如果你来得及休息，就不需要打针吃药。",
+      "pinyin": "Rú guǒ nǐ lái de jí xiū xi, jiù bù xū yào dǎ zhēn chī yào.",
+      "english": "If you still have time to rest, you won't need injections and medicine."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "如果...就... — If...then... (advanced usage)",
+      "explanation": "如果...就... is the standard conditional pattern meaning 'if...then...'. At HSK4 level, this pattern is extended by combining with other structures (negation, modal verbs, aspect markers). 如果 introduces the condition; 就 introduces the consequence. The subject can come before or after 如果. Multiple conditions can be chained. Advanced usage: 如果 + 不/没 + condition, 就 + consequence. Example: 如果你不坚持，就不会成功。(If you don't persist, you won't succeed.)",
+      "examples": [
+        {
+          "chinese": "如果体温太高，就必须马上去看大夫。",
+          "pinyin": "Rú guǒ tǐ wēn tài gāo, jiù bì xū mǎ shàng qù kàn dài fu.",
+          "english": "If the body temperature is too high, then you must see a doctor immediately."
+        },
+        {
+          "chinese": "如果你坚持锻炼，就一定能达到你的减肥目标。",
+          "pinyin": "Rú guǒ nǐ jiān chí duàn liàn, jiù yí dìng néng dá dào nǐ de jiǎn féi mù biāo.",
+          "english": "If you persist in exercising, you will definitely be able to reach your weight loss goal."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 你肚子疼，就应该去看大夫。",
+          "type": "multiple_choice",
+          "correct": "如果",
+          "options": ["如果", "虽然", "既然", "既使"],
+          "option_pinyin": ["rú guǒ", "suī rán", "jì rán", "jí shǐ"],
+          "word_hints": {"肚子": "dù zi", "大夫": "dài fu"}
+        },
+        {
+          "question": "如果温度超过三十九度，_____ 非常危险。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["就", "也", "还", "都"],
+          "option_pinyin": ["jiù", "yě", "hái", "dōu"],
+          "word_hints": {"温度": "wēn dù", "危险": "wēi xiǎn"}
+        },
+        {
+          "question": "Choose the correct sentence with 如果...就...",
+          "type": "multiple_choice",
+          "correct": "如果你不坚持减肥，就不会成功。",
+          "options": [
+            "如果你不坚持减肥，就不会成功。",
+            "你如果不坚持减肥，不会成功就。",
+            "就你如果不坚持减肥，不会成功。",
+            "如果不坚持减肥你，就会不成功。"
+          ],
+          "option_pinyin": [
+            "Rú guǒ nǐ bù jiān chí jiǎn féi, jiù bú huì chéng gōng.",
+            "Nǐ rú guǒ bù jiān chí jiǎn féi, bú huì chéng gōng jiù.",
+            "Jiù nǐ rú guǒ bù jiān chí jiǎn féi, bú huì chéng gōng.",
+            "Rú guǒ bù jiān chí jiǎn féi nǐ, jiù huì bù chéng gōng."
+          ],
+          "word_hints": {"坚持": "jiān chí", "减肥": "jiǎn féi"}
+        },
+        {
+          "question": "就 in 如果...就... marks:",
+          "type": "multiple_choice",
+          "correct": "The consequence or result of the condition",
+          "options": [
+            "The consequence or result of the condition",
+            "The beginning of the condition",
+            "A contrast",
+            "A time expression"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "如果咳嗽很严重，_____ 需要打针。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["就", "却", "但", "也"],
+          "option_pinyin": ["jiù", "què", "dàn", "yě"],
+          "word_hints": {"咳嗽": "ké sou", "打针": "dǎ zhēn"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "来不及 / 来得及 — Not enough time / Still have time",
+      "explanation": "来不及 (lái bù jí) means 'there is not enough time' or 'it is too late'. 来得及 (lái de jí) means 'there is still enough time' or 'to make it in time'. Both patterns use the potential complement structure: 来 + 不/得 + 及. They describe whether there is sufficient time to complete an action. Structure: Subject + 来不及 / 来得及 + Verb. Example: 你来得及赶上火车。(You still have time to catch the train.) 我来不及解释了。(There's no time for me to explain.)",
+      "examples": [
+        {
+          "chinese": "他的咳嗽很严重，已经来不及等了，必须马上看大夫。",
+          "pinyin": "Tā de ké sou hěn yán zhòng, yǐ jīng lái bù jí děng le, bì xū mǎ shàng kàn dài fu.",
+          "english": "His cough is very serious. It's already too late to wait — he must see a doctor immediately."
+        },
+        {
+          "chinese": "你来得及休息一会儿，不必马上打针。",
+          "pinyin": "Nǐ lái de jí xiū xi yí huì er, bú bì mǎ shàng dǎ zhēn.",
+          "english": "You still have time to rest a bit — there's no need to get an injection immediately."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "医院快关门了，我们 _____ 去了。",
+          "type": "multiple_choice",
+          "correct": "来不及",
+          "options": ["来不及", "来得及", "来不了", "来得了"],
+          "option_pinyin": ["lái bù jí", "lái de jí", "lái bù liǎo", "lái de liǎo"],
+          "word_hints": {}
+        },
+        {
+          "question": "你快点！还 _____ 赶上护士的检查。",
+          "type": "multiple_choice",
+          "correct": "来得及",
+          "options": ["来得及", "来不及", "来不了", "来得了"],
+          "option_pinyin": ["lái de jí", "lái bù jí", "lái bù liǎo", "lái de liǎo"],
+          "word_hints": {"护士": "hù shi"}
+        },
+        {
+          "question": "Choose the sentence that correctly uses 来不及.",
+          "type": "multiple_choice",
+          "correct": "他肚子太痛了，来不及吃药，只好打针。",
+          "options": [
+            "他肚子太痛了，来不及吃药，只好打针。",
+            "他来不及肚子太痛了，吃药只好打针。",
+            "来不及他肚子太痛了，吃药，只好打针。",
+            "他肚子太痛来不及了，吃药，打针只好。"
+          ],
+          "option_pinyin": [
+            "Tā dù zi tài tòng le, lái bù jí chī yào, zhǐ hǎo dǎ zhēn.",
+            "Tā lái bù jí dù zi tài tòng le, chī yào zhǐ hǎo dǎ zhēn.",
+            "Lái bù jí tā dù zi tài tòng le, chī yào, zhǐ hǎo dǎ zhēn.",
+            "Tā dù zi tài tòng lái bù jí le, chī yào, dǎ zhēn zhǐ hǎo."
+          ],
+          "word_hints": {"肚子": "dù zi", "打针": "dǎ zhēn"}
+        },
+        {
+          "question": "来不及 and 来得及 use which grammatical structure?",
+          "type": "multiple_choice",
+          "correct": "Potential complement (来 + 不/得 + 及)",
+          "options": [
+            "Potential complement (来 + 不/得 + 及)",
+            "Result complement",
+            "Direction complement",
+            "Degree complement"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "你还 _____ 把温度量一下，再决定是否打针。",
+          "type": "multiple_choice",
+          "correct": "来得及",
+          "options": ["来得及", "来不及", "受不了", "说不定"],
+          "option_pinyin": ["lái de jí", "lái bù jí", "shòu bù liǎo", "shuō bù dìng"],
+          "word_hints": {"温度": "wēn dù", "打针": "dǎ zhēn"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "受不了 — Cannot bear / Cannot stand",
+      "explanation": "受不了 (shòu bù liǎo) means 'cannot stand it', 'cannot bear it', or 'it's unbearable'. It is a potential complement: 受 (to endure) + 不了 (cannot complete). It expresses that something is beyond one's tolerance or capacity. Structure: Subject + 受不了 + (situation) OR [Situation] + Subject + 受不了. It is very commonly used in spoken Chinese. Opposite: 受得了 (can bear it). Example: 这个温度太高了，我受不了。(The temperature is too high — I can't stand it.)",
+      "examples": [
+        {
+          "chinese": "他的肚子疼得他受不了，马上让护士打针。",
+          "pinyin": "Tā de dù zi téng de tā shòu bù liǎo, mǎ shàng ràng hù shi dǎ zhēn.",
+          "english": "The stomachache was unbearable, so he immediately asked the nurse to give him an injection."
+        },
+        {
+          "chinese": "减肥太痛苦了，很多人受不了就放弃了。",
+          "pinyin": "Jiǎn féi tài tòng kǔ le, hěn duō rén shòu bù liǎo jiù fàng qì le.",
+          "english": "Losing weight is too painful. Many people can't stand it and give up."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他的咳嗽太严重了，真的 _____ 。",
+          "type": "multiple_choice",
+          "correct": "受不了",
+          "options": ["受不了", "受得了", "来不及", "来得及"],
+          "option_pinyin": ["shòu bù liǎo", "shòu de liǎo", "lái bù jí", "lái de jí"],
+          "word_hints": {"咳嗽": "ké sou"}
+        },
+        {
+          "question": "Choose the correct sentence with 受不了.",
+          "type": "multiple_choice",
+          "correct": "这个温度太高，我受不了。",
+          "options": [
+            "这个温度太高，我受不了。",
+            "受不了这个温度，我太高。",
+            "这个受不了温度太高，我。",
+            "我受不了，太高这个温度。"
+          ],
+          "option_pinyin": [
+            "Zhè ge wēn dù tài gāo, wǒ shòu bù liǎo.",
+            "Shòu bù liǎo zhè ge wēn dù, wǒ tài gāo.",
+            "Zhè ge shòu bù liǎo wēn dù tài gāo, wǒ.",
+            "Wǒ shòu bù liǎo, tài gāo zhè ge wēn dù."
+          ],
+          "word_hints": {"温度": "wēn dù"}
+        },
+        {
+          "question": "流了很多汗，皮肤不舒服，她 _____ 了。",
+          "type": "multiple_choice",
+          "correct": "受不了",
+          "options": ["受不了", "坚持", "耐心", "危险"],
+          "option_pinyin": ["shòu bù liǎo", "jiān chí", "nài xīn", "wēi xiǎn"],
+          "word_hints": {"皮肤": "pí fū", "汗": "hàn"}
+        },
+        {
+          "question": "受不了 expresses that something is:",
+          "type": "multiple_choice",
+          "correct": "Beyond one's tolerance",
+          "options": ["Beyond one's tolerance", "Easy to do", "Already completed", "Done regularly"],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "坚持减肥很难，但如果 _____ ，就要更加耐心。",
+          "type": "multiple_choice",
+          "correct": "受不了",
+          "options": ["受不了", "来不及", "来得及", "受得了"],
+          "option_pinyin": ["shòu bù liǎo", "lái bù jí", "lái de jí", "shòu de liǎo"],
+          "word_hints": {"坚持": "jiān chí", "减肥": "jiǎn féi", "耐心": "nài xīn"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "Taichi and Traditional Chinese Medicine",
+      "title_chinese": "太极和中医",
+      "content": "Traditional Chinese Medicine (中医, zhōngyī) is one of the oldest medical systems in the world, with a history of over 2,000 years. It is based on the philosophy of balance between opposing forces: 阴 (yīn) and 阳 (yáng). When yin and yang are in balance, the body is healthy; illness occurs when the balance is disrupted. Treatments include herbal medicine (中药, zhōngyào), acupuncture (针灸, zhēnjiǔ), and cupping therapy (拔罐, báguàn). Taichi (太极拳, tàijí quán) is a slow, meditative martial art practiced widely in China — especially by the elderly in public parks each morning. It improves balance, flexibility, and mental calm. Unlike Western medicine, which often focuses on treating symptoms, Chinese medicine emphasizes prevention and restoring overall harmony to the body.",
+      "idioms": [
+        {
+          "chinese": "防患于未然",
+          "pinyin": "fáng huàn yú wèi rán",
+          "english": "Prevention is better than cure"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 打针 mean?",
+      "type": "multiple_choice",
+      "correct": "To give/receive an injection",
+      "options": ["To give/receive an injection", "To take medicine", "To cough", "To exercise"],
+      "word_hints": {"打针": "dǎ zhēn"}
+    },
+    {
+      "question": "Which word means 'to cough'?",
+      "type": "multiple_choice",
+      "correct": "咳嗽",
+      "options": ["咳嗽", "打针", "汗", "肚子"],
+      "word_hints": {"咳嗽": "ké sou", "打针": "dǎ zhēn", "汗": "hàn", "肚子": "dù zi"}
+    },
+    {
+      "question": "What does 皮肤 mean?",
+      "type": "multiple_choice",
+      "correct": "Skin",
+      "options": ["Skin", "Stomach", "Temperature", "Sweat"],
+      "word_hints": {"皮肤": "pí fū"}
+    },
+    {
+      "question": "Which word means 'doctor (colloquial)'?",
+      "type": "multiple_choice",
+      "correct": "大夫",
+      "options": ["大夫", "护士", "病人", "教授"],
+      "word_hints": {"大夫": "dài fu", "护士": "hù shi"}
+    },
+    {
+      "question": "What does 护士 mean?",
+      "type": "multiple_choice",
+      "correct": "Nurse",
+      "options": ["Nurse", "Doctor", "Patient", "Professor"],
+      "word_hints": {"护士": "hù shi"}
+    },
+    {
+      "question": "Which word means 'stomach; belly'?",
+      "type": "multiple_choice",
+      "correct": "肚子",
+      "options": ["肚子", "皮肤", "汗", "温度"],
+      "word_hints": {"肚子": "dù zi", "皮肤": "pí fū", "汗": "hàn", "温度": "wēn dù"}
+    },
+    {
+      "question": "What does 汗 mean?",
+      "type": "multiple_choice",
+      "correct": "Sweat; perspiration",
+      "options": ["Sweat; perspiration", "Skin", "Temperature", "Pain"],
+      "word_hints": {"汗": "hàn"}
+    },
+    {
+      "question": "What does 危险 mean?",
+      "type": "multiple_choice",
+      "correct": "Dangerous; danger",
+      "options": ["Dangerous; danger", "Patient", "Healthy", "Common"],
+      "word_hints": {"危险": "wēi xiǎn"}
+    },
+    {
+      "question": "Which word means 'to lose weight'?",
+      "type": "multiple_choice",
+      "correct": "减肥",
+      "options": ["减肥", "坚持", "耐心", "打针"],
+      "word_hints": {"减肥": "jiǎn féi", "坚持": "jiān chí", "耐心": "nài xīn", "打针": "dǎ zhēn"}
+    },
+    {
+      "question": "What does 坚持 mean?",
+      "type": "multiple_choice",
+      "correct": "To persist; to persevere",
+      "options": ["To persist; to persevere", "To lose weight", "To exercise", "To sweat"],
+      "word_hints": {"坚持": "jiān chí"}
+    },
+    {
+      "question": "Fill in: _____ 你肚子疼，就要去看大夫。",
+      "type": "multiple_choice",
+      "correct": "如果",
+      "options": ["如果", "虽然", "既然", "否则"],
+      "word_hints": {"肚子": "dù zi", "大夫": "dài fu"}
+    },
+    {
+      "question": "What does 来不及 mean?",
+      "type": "multiple_choice",
+      "correct": "There is not enough time; too late",
+      "options": ["There is not enough time; too late", "There is still enough time", "Cannot bear it", "No choice but to"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 来得及 mean?",
+      "type": "multiple_choice",
+      "correct": "There is still enough time; to make it in time",
+      "options": ["There is still enough time; to make it in time", "Not enough time", "Cannot bear it", "Must do"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 受不了 mean?",
+      "type": "multiple_choice",
+      "correct": "Cannot stand it; unbearable",
+      "options": ["Cannot stand it; unbearable", "Can stand it", "No time", "Not enough"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 耐心 mean?",
+      "type": "multiple_choice",
+      "correct": "Patient; patience",
+      "options": ["Patient; patience", "Dangerous", "Healthy", "Persistent"],
+      "word_hints": {"耐心": "nài xīn"}
+    },
+    {
+      "question": "Choose the correct use of 受不了.",
+      "type": "multiple_choice",
+      "correct": "温度太高，他受不了。",
+      "options": [
+        "温度太高，他受不了。",
+        "受不了温度，他太高。",
+        "他温度太高，受不了。",
+        "Both A and C are correct"
+      ],
+      "word_hints": {"温度": "wēn dù"}
+    },
+    {
+      "question": "What does 温度 mean?",
+      "type": "multiple_choice",
+      "correct": "Temperature",
+      "options": ["Temperature", "Sweat", "Skin", "Pain"],
+      "word_hints": {"温度": "wēn dù"}
+    },
+    {
+      "question": "What is the Chinese philosophy behind 太极 (Taichi)?",
+      "type": "multiple_choice",
+      "correct": "Balance between yin and yang",
+      "options": [
+        "Balance between yin and yang",
+        "Maximum physical strength",
+        "Fighting enemies",
+        "Speed and power"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the idiom 防患于未然 mean?",
+      "type": "multiple_choice",
+      "correct": "Prevention is better than cure",
+      "options": [
+        "Prevention is better than cure",
+        "Doctors are the best medicine",
+        "Exercise is the key to health",
+        "Medicine heals all illnesses"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 减肥计划 mean?",
+      "type": "multiple_choice",
+      "correct": "Weight loss plan",
+      "options": ["Weight loss plan", "Exercise routine", "Medical treatment", "Healthy diet"],
+      "word_hints": {"减肥": "jiǎn féi"}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "At the Doctor's Office",
+      "title_chinese": "在诊所",
+      "speakers": {
+        "A": {"name": "大夫", "role": "医生", "gender": "male"},
+        "B": {"name": "小王", "role": "病人", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "大夫，我肚子疼，而且咳嗽好几天了，受不了了。",
+          "pinyin": "Dài fu, wǒ dù zi téng, ér qiě ké sou hǎo jǐ tiān le, shòu bù liǎo le.",
+          "english": "Doctor, my stomach hurts and I have been coughing for several days. I can't stand it anymore."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我来量一下你的温度。三十八点五度，有点高，如果超过三十九度就很危险。",
+          "pinyin": "Wǒ lái liáng yī xià nǐ de wēn dù. Sān shí bā diǎn wǔ dù, yǒu diǎn gāo, rú guǒ chāo guò sān shí jiǔ dù jiù hěn wēi xiǎn.",
+          "english": "Let me take your temperature. 38.5 degrees — a bit high. If it exceeds 39 degrees it becomes dangerous."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我来不及休息了，已经工作了很多天，是否需要打针？",
+          "pinyin": "Wǒ lái bù jí xiū xi le, yǐ jīng gōng zuò le hěn duō tiān, shì fǒu xū yào dǎ zhēn?",
+          "english": "I have no time to rest — I have been working for many days. Do I need an injection?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "先吃药试试，如果三天后没有好转，就需要打针了。",
+          "pinyin": "Xiān chī yào shì shì, rú guǒ sān tiān hòu méi yǒu hǎo zhuǎn, jiù xū yào dǎ zhēn le.",
+          "english": "Try medicine first. If there's no improvement after three days, then you will need an injection."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好的。护士也说我的皮肤不太好，是因为流汗太多吗？",
+          "pinyin": "Hǎo de. Hù shi yě shuō wǒ de pí fū bú tài hǎo, shì yīn wèi liú hàn tài duō ma?",
+          "english": "Okay. The nurse also said my skin is not very good. Is it because I sweat too much?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "有可能。你要坚持休息，耐心等待康复，否则情况会更危险。",
+          "pinyin": "Yǒu kě néng. Nǐ yào jiān chí xiū xi, nài xīn děng dài kāng fù, fǒu zé qíng kuàng huì gèng wēi xiǎn.",
+          "english": "Possibly. You need to persist in resting and patiently wait for recovery, otherwise the situation will become more dangerous."
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢大夫，我还来得及好好休息，以后也要坚持锻炼，保持健康。",
+          "pinyin": "Xiè xie dài fu, wǒ hái lái de jí hǎo hǎo xiū xi, yǐ hòu yě yào jiān chí duàn liàn, bǎo chí jiàn kāng.",
+          "english": "Thank you, doctor. I still have time to rest well. I will also persist in exercising to stay healthy."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "A Weight Loss Journey",
+      "title_chinese": "减肥之路",
+      "speakers": {
+        "A": {"name": "美美", "role": "朋友甲", "gender": "female"},
+        "B": {"name": "晓晓", "role": "朋友乙", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "晓晓，你的减肥计划进行得怎么样了？",
+          "pinyin": "Xiǎo Xiǎo, nǐ de jiǎn féi jì huà jìn xíng de zěn me yàng le?",
+          "english": "Xiaoxiao, how is your weight loss plan going?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "很难！每次运动都流很多汗，我真的受不了了。",
+          "pinyin": "Hěn nán! Měi cì yùn dòng dōu liú hěn duō hàn, wǒ zhēn de shòu bù liǎo le.",
+          "english": "It's so hard! Every time I exercise I sweat a lot. I really can't stand it anymore."
+        },
+        {
+          "speaker": "A",
+          "chinese": "如果你坚持下去，一定能看到效果。要有耐心！",
+          "pinyin": "Rú guǒ nǐ jiān chí xià qù, yí dìng néng kàn dào xiào guǒ. Yào yǒu nài xīn!",
+          "english": "If you keep going, you will definitely see results. You need to have patience!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我担心运动太激烈，皮肤也出了问题，是否危险？",
+          "pinyin": "Wǒ dān xīn yùn dòng tài jī liè, pí fū yě chū le wèn tí, shì fǒu wēi xiǎn?",
+          "english": "I'm worried that the exercise is too intense. My skin has also had problems. Is that dangerous?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "如果皮肤不舒服，来得及的话，可以去看大夫检查一下。",
+          "pinyin": "Rú guǒ pí fū bù shū fu, lái de jí de huà, kě yǐ qù kàn dài fu jiǎn chá yī xià.",
+          "english": "If your skin is uncomfortable, if you still have time, you can go see a doctor for a check-up."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好的，我会耐心坚持。减肥真的需要很多毅力！",
+          "pinyin": "Hǎo de, wǒ huì nài xīn jiān chí. Jiǎn féi zhēn de xū yào hěn duō yì lì!",
+          "english": "Okay, I will patiently persist. Losing weight really requires a lot of willpower!"
+        }
+      ]
+    }
+  ]
+}

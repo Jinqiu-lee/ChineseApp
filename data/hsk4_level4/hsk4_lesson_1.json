@@ -1,0 +1,707 @@
+{
+  "lesson": 1,
+  "level": 4,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Love & Romance",
+  "topic_chinese": "简单的爱情",
+  "vocabulary": [
+    {
+      "id": "hsk4_l1_01",
+      "chinese": "爱情",
+      "pinyin": "ài qíng",
+      "english": "Romantic love",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l1_02",
+      "chinese": "感情",
+      "pinyin": "gǎn qíng",
+      "english": "Feelings; affection; relationship",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l1_03",
+      "chinese": "感动",
+      "pinyin": "gǎn dòng",
+      "english": "To be moved (emotionally); touching",
+      "part_of_speech": "verb/adjective"
+    },
+    {
+      "id": "hsk4_l1_04",
+      "chinese": "感觉",
+      "pinyin": "gǎn jué",
+      "english": "Feeling; sense; to feel",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk4_l1_05",
+      "chinese": "浪漫",
+      "pinyin": "làng màn",
+      "english": "Romantic",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l1_06",
+      "chinese": "幸福",
+      "pinyin": "xìng fú",
+      "english": "Happiness; happy; blessed",
+      "part_of_speech": "noun/adjective"
+    },
+    {
+      "id": "hsk4_l1_07",
+      "chinese": "邀请",
+      "pinyin": "yāo qǐng",
+      "english": "To invite; invitation",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l1_08",
+      "chinese": "幽默",
+      "pinyin": "yōu mò",
+      "english": "Humorous; humor",
+      "part_of_speech": "adjective/noun"
+    },
+    {
+      "id": "hsk4_l1_09",
+      "chinese": "约会",
+      "pinyin": "yuē huì",
+      "english": "Date; appointment; to go on a date",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk4_l1_10",
+      "chinese": "骄傲",
+      "pinyin": "jiāo ào",
+      "english": "Proud; arrogant; pride",
+      "part_of_speech": "adjective/noun"
+    },
+    {
+      "id": "hsk4_l1_11",
+      "chinese": "表示",
+      "pinyin": "biǎo shì",
+      "english": "To express; to show; to indicate",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l1_12",
+      "chinese": "抱",
+      "pinyin": "bào",
+      "english": "To hug; to hold in one's arms",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l1_p01",
+      "chinese": "坠入爱河",
+      "pinyin": "zhuì rù ài hé",
+      "english": "To fall in love",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l1_p02",
+      "chinese": "约会成功",
+      "pinyin": "yuē huì chéng gōng",
+      "english": "A successful date",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l1_p03",
+      "chinese": "感动不已",
+      "pinyin": "gǎn dòng bù yǐ",
+      "english": "Deeply moved; endlessly touched",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l1_p04",
+      "chinese": "表示感谢",
+      "pinyin": "biǎo shì gǎn xiè",
+      "english": "To express gratitude",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l1_p05",
+      "chinese": "浪漫约会",
+      "pinyin": "làng màn yuē huì",
+      "english": "A romantic date",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l1_p06",
+      "chinese": "幸福感",
+      "pinyin": "xìng fú gǎn",
+      "english": "A sense of happiness",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "他们的爱情非常简单，却十分真实。",
+      "pinyin": "Tā men de ài qíng fēi cháng jiǎn dān, què shí fēn zhēn shí.",
+      "english": "Their love is very simple, yet truly real."
+    },
+    {
+      "chinese": "他不仅幽默，而且非常体贴。",
+      "pinyin": "Tā bù jǐn yōu mò, ér qiě fēi cháng tǐ tiē.",
+      "english": "He is not only humorous, but also very considerate."
+    },
+    {
+      "chinese": "为了让她感动，他准备了一个浪漫的约会。",
+      "pinyin": "Wèi le ràng tā gǎn dòng, tā zhǔn bèi le yí gè làng màn de yuē huì.",
+      "english": "In order to move her, he prepared a romantic date."
+    },
+    {
+      "chinese": "她的感情很深，却从不轻易表示出来。",
+      "pinyin": "Tā de gǎn qíng hěn shēn, què cóng bù qīng yì biǎo shì chū lái.",
+      "english": "Her feelings run deep, but she never easily shows them."
+    },
+    {
+      "chinese": "他邀请她去看电影，她感觉很幸福。",
+      "pinyin": "Tā yāo qǐng tā qù kàn diàn yǐng, tā gǎn jué hěn xìng fú.",
+      "english": "He invited her to a movie, and she felt very happy."
+    },
+    {
+      "chinese": "两个人紧紧地抱着，感觉彼此的爱情是真实的。",
+      "pinyin": "Liǎng gè rén jǐn jǐn de bào zhe, gǎn jué bǐ cǐ de ài qíng shì zhēn shí de.",
+      "english": "The two held each other tightly, feeling that their love for each other was real."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "不仅...而且... — Not only...but also...",
+      "explanation": "不仅...而且... is used to emphasize that something has more than one quality or characteristic. 不仅 introduces the first point and 而且 introduces the additional, often stronger or more surprising point. Both clauses share the same subject. Example: 他不仅聪明，而且很勤奋。(He is not only smart, but also very hardworking.)",
+      "examples": [
+        {
+          "chinese": "她不仅漂亮，而且非常聪明。",
+          "pinyin": "Tā bù jǐn piào liàng, ér qiě fēi cháng cōng míng.",
+          "english": "She is not only beautiful, but also very smart."
+        },
+        {
+          "chinese": "这个地方不仅安静，而且风景很美。",
+          "pinyin": "Zhè ge dì fāng bù jǐn ān jìng, ér qiě fēng jǐng hěn měi.",
+          "english": "This place is not only quiet, but also has beautiful scenery."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Choose the correct sentence using 不仅...而且...",
+          "type": "multiple_choice",
+          "correct": "他不仅幽默，而且非常体贴。",
+          "options": [
+            "他不仅幽默，而且非常体贴。",
+            "他不仅幽默，所以非常体贴。",
+            "他幽默，不仅而且体贴。",
+            "他幽默不仅，而且体贴。"
+          ],
+          "option_pinyin": [
+            "Tā bù jǐn yōu mò, ér qiě fēi cháng tǐ tiē.",
+            "Tā bù jǐn yōu mò, suǒ yǐ fēi cháng tǐ tiē.",
+            "Tā yōu mò, bù jǐn ér qiě tǐ tiē.",
+            "Tā yōu mò bù jǐn, ér qiě tǐ tiē."
+          ],
+          "word_hints": {"幽默": "yōu mò"}
+        },
+        {
+          "question": "她 _____ 感动了，_____ 哭了起来。",
+          "type": "multiple_choice",
+          "correct": "不仅...而且...",
+          "options": [
+            "不仅...而且...",
+            "虽然...但是...",
+            "因为...所以...",
+            "如果...就..."
+          ],
+          "option_pinyin": [
+            "bù jǐn...ér qiě...",
+            "suī rán...dàn shì...",
+            "yīn wèi...suǒ yǐ...",
+            "rú guǒ...jiù..."
+          ],
+          "word_hints": {"感动": "gǎn dòng"}
+        },
+        {
+          "question": "这次约会 _____ 让她感觉幸福，_____ 让她坠入爱河。",
+          "type": "multiple_choice",
+          "correct": "不仅...而且...",
+          "options": [
+            "不仅...而且...",
+            "既然...就...",
+            "只要...就...",
+            "不管...都..."
+          ],
+          "option_pinyin": [
+            "bù jǐn...ér qiě...",
+            "jì rán...jiù...",
+            "zhǐ yào...jiù...",
+            "bù guǎn...dōu..."
+          ],
+          "word_hints": {"约会": "yuē huì", "感觉": "gǎn jué", "幸福": "xìng fú"}
+        },
+        {
+          "question": "Which part goes in the blank? 他不仅邀请她吃饭，_____ 送给她鲜花。",
+          "type": "multiple_choice",
+          "correct": "而且",
+          "options": ["而且", "但是", "所以", "虽然"],
+          "option_pinyin": ["ér qiě", "dàn shì", "suǒ yǐ", "suī rán"],
+          "word_hints": {"邀请": "yāo qǐng"}
+        },
+        {
+          "question": "What does 不仅...而且... express?",
+          "type": "multiple_choice",
+          "correct": "Adding an extra quality or characteristic",
+          "options": [
+            "Adding an extra quality or characteristic",
+            "Showing a contradiction",
+            "Expressing a condition",
+            "Showing cause and effect"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "为了 — In order to / For the sake of",
+      "explanation": "为了 expresses purpose or motivation. It means 'in order to' or 'for the sake of' and is placed at the beginning of the sentence or before the verb phrase. The subject can come before or after 为了. Structure: 为了 + goal + subject + verb. Example: 为了健康，他每天锻炼。(In order to stay healthy, he exercises every day.)",
+      "examples": [
+        {
+          "chinese": "为了表示感谢，她送给他一份礼物。",
+          "pinyin": "Wèi le biǎo shì gǎn xiè, tā sòng gěi tā yí fèn lǐ wù.",
+          "english": "In order to express gratitude, she gave him a gift."
+        },
+        {
+          "chinese": "为了让她幸福，他愿意做任何事情。",
+          "pinyin": "Wèi le ràng tā xìng fú, tā yuàn yì zuò rèn hé shì qíng.",
+          "english": "In order to make her happy, he is willing to do anything."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "为了 _____ 约会成功，他提前做了很多准备。",
+          "type": "multiple_choice",
+          "correct": "让",
+          "options": ["让", "是", "有", "用"],
+          "option_pinyin": ["ràng", "shì", "yǒu", "yòng"],
+          "word_hints": {"约会": "yuē huì"}
+        },
+        {
+          "question": "Choose the correct sentence with 为了.",
+          "type": "multiple_choice",
+          "correct": "为了感动她，他唱了一首歌。",
+          "options": [
+            "为了感动她，他唱了一首歌。",
+            "他感动她，为了唱了一首歌。",
+            "他唱了，为了一首歌感动她。",
+            "为了他，感动她唱了一首歌。"
+          ],
+          "option_pinyin": [
+            "Wèi le gǎn dòng tā, tā chàng le yì shǒu gē.",
+            "Tā gǎn dòng tā, wèi le chàng le yì shǒu gē.",
+            "Tā chàng le, wèi le yì shǒu gē gǎn dòng tā.",
+            "Wèi le tā, gǎn dòng tā chàng le yì shǒu gē."
+          ],
+          "word_hints": {"感动": "gǎn dòng"}
+        },
+        {
+          "question": "为了表示爱情，他 _____ 。",
+          "type": "multiple_choice",
+          "correct": "紧紧地抱着她",
+          "options": [
+            "紧紧地抱着她",
+            "虽然很骄傲",
+            "但是不幽默",
+            "所以感觉幸福"
+          ],
+          "option_pinyin": [
+            "jǐn jǐn de bào zhe tā",
+            "suī rán hěn jiāo ào",
+            "dàn shì bù yōu mò",
+            "suǒ yǐ gǎn jué xìng fú"
+          ],
+          "word_hints": {"爱情": "ài qíng", "抱": "bào", "骄傲": "jiāo ào", "幽默": "yōu mò", "感觉": "gǎn jué", "幸福": "xìng fú"}
+        },
+        {
+          "question": "What does 为了 indicate in a sentence?",
+          "type": "multiple_choice",
+          "correct": "Purpose or motivation",
+          "options": [
+            "Purpose or motivation",
+            "Contrast or surprise",
+            "Cause and result",
+            "Condition"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "_____ 让感情更深，他们每周都有浪漫约会。",
+          "type": "multiple_choice",
+          "correct": "为了",
+          "options": ["为了", "因为", "虽然", "只要"],
+          "option_pinyin": ["wèi le", "yīn wèi", "suī rán", "zhǐ yào"],
+          "word_hints": {"感情": "gǎn qíng", "浪漫": "làng màn", "约会": "yuē huì"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "却 — But / However (indicating contrast)",
+      "explanation": "却 is an adverb placed directly before a verb or adjective to indicate a contrast or an unexpected result. It is similar to 但是 but 却 appears inside the second clause rather than at the beginning. Structure: Subject + 却 + verb/adjective. It often implies surprise or a result that goes against expectations. Example: 他很忙，却每天给她发短信。(He is very busy, but he still messages her every day.)",
+      "examples": [
+        {
+          "chinese": "她感觉很幸福，却没有表示出来。",
+          "pinyin": "Tā gǎn jué hěn xìng fú, què méi yǒu biǎo shì chū lái.",
+          "english": "She felt very happy, but didn't show it."
+        },
+        {
+          "chinese": "他邀请她约会，她却说没有时间。",
+          "pinyin": "Tā yāo qǐng tā yuē huì, tā què shuō méi yǒu shí jiān.",
+          "english": "He invited her on a date, but she said she had no time."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他很骄傲，_____ 对她非常温柔。",
+          "type": "multiple_choice",
+          "correct": "却",
+          "options": ["却", "所以", "因此", "于是"],
+          "option_pinyin": ["què", "suǒ yǐ", "yīn cǐ", "yú shì"],
+          "word_hints": {"骄傲": "jiāo ào"}
+        },
+        {
+          "question": "Choose the sentence where 却 is used correctly.",
+          "type": "multiple_choice",
+          "correct": "她感动不已，却没有哭。",
+          "options": [
+            "她感动不已，却没有哭。",
+            "却她感动不已，没有哭。",
+            "她感动不已，没有哭却。",
+            "她却，感动不已没有哭。"
+          ],
+          "option_pinyin": [
+            "Tā gǎn dòng bù yǐ, què méi yǒu kū.",
+            "Què tā gǎn dòng bù yǐ, méi yǒu kū.",
+            "Tā gǎn dòng bù yǐ, méi yǒu kū què.",
+            "Tā què, gǎn dòng bù yǐ méi yǒu kū."
+          ],
+          "word_hints": {"感动": "gǎn dòng"}
+        },
+        {
+          "question": "他们的爱情很浪漫，_____ 生活非常简单。",
+          "type": "multiple_choice",
+          "correct": "却",
+          "options": ["却", "而且", "不仅", "因为"],
+          "option_pinyin": ["què", "ér qiě", "bù jǐn", "yīn wèi"],
+          "word_hints": {"爱情": "ài qíng", "浪漫": "làng màn"}
+        },
+        {
+          "question": "What is the position of 却 in a sentence?",
+          "type": "multiple_choice",
+          "correct": "Before the verb or adjective in the second clause",
+          "options": [
+            "Before the verb or adjective in the second clause",
+            "At the very beginning of the sentence",
+            "At the end of the sentence",
+            "After the object"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "他想表示感情，她 _____ 不理解他的意思。",
+          "type": "multiple_choice",
+          "correct": "却",
+          "options": ["却", "也", "都", "还"],
+          "option_pinyin": ["què", "yě", "dōu", "hái"],
+          "word_hints": {"感情": "gǎn qíng"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "Chinese Valentine's Day — Qixi Festival",
+      "title_chinese": "中国情人节——七夕节",
+      "content": "The Qixi Festival (七夕节, Qī Xī Jié) falls on the 7th day of the 7th lunar month and is often called Chinese Valentine's Day. It is based on the legend of the Cowherd (牛郎, Niú Láng) and the Weaver Girl (织女, Zhī Nǚ), two star-crossed lovers separated by the Milky Way. According to the legend, they are only allowed to meet once a year when a flock of magpies forms a bridge across the sky. This festival celebrates romantic love and devotion. In modern China, couples exchange gifts, go on dates, and celebrate their relationships on this day, blending ancient tradition with contemporary romance.",
+      "idioms": [
+        {
+          "chinese": "有情人终成眷属",
+          "pinyin": "yǒu qíng rén zhōng chéng juàn shǔ",
+          "english": "Lovers will eventually get together (said of people who are meant to be)"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 爱情 mean?",
+      "type": "multiple_choice",
+      "correct": "Romantic love",
+      "options": ["Romantic love", "Family love", "Friendship", "Respect"],
+      "word_hints": {"爱情": "ài qíng"}
+    },
+    {
+      "question": "Which word means 'to be moved emotionally'?",
+      "type": "multiple_choice",
+      "correct": "感动",
+      "options": ["感动", "感觉", "感情", "幸福"],
+      "word_hints": {"感动": "gǎn dòng", "感觉": "gǎn jué", "感情": "gǎn qíng", "幸福": "xìng fú"}
+    },
+    {
+      "question": "What does 浪漫 mean?",
+      "type": "multiple_choice",
+      "correct": "Romantic",
+      "options": ["Romantic", "Humorous", "Arrogant", "Brave"],
+      "word_hints": {"浪漫": "làng màn"}
+    },
+    {
+      "question": "Which word means 'to invite'?",
+      "type": "multiple_choice",
+      "correct": "邀请",
+      "options": ["邀请", "约会", "表示", "感动"],
+      "word_hints": {"邀请": "yāo qǐng", "约会": "yuē huì", "表示": "biǎo shì", "感动": "gǎn dòng"}
+    },
+    {
+      "question": "What does 幽默 mean?",
+      "type": "multiple_choice",
+      "correct": "Humorous",
+      "options": ["Humorous", "Romantic", "Proud", "Happy"],
+      "word_hints": {"幽默": "yōu mò"}
+    },
+    {
+      "question": "What does 骄傲 mean?",
+      "type": "multiple_choice",
+      "correct": "Proud / arrogant",
+      "options": ["Proud / arrogant", "Moved / touched", "Romantic", "Happy"],
+      "word_hints": {"骄傲": "jiāo ào"}
+    },
+    {
+      "question": "Which word means 'happiness; happy'?",
+      "type": "multiple_choice",
+      "correct": "幸福",
+      "options": ["幸福", "感觉", "浪漫", "感情"],
+      "word_hints": {"幸福": "xìng fú", "感觉": "gǎn jué", "浪漫": "làng màn", "感情": "gǎn qíng"}
+    },
+    {
+      "question": "What does 约会 mean?",
+      "type": "multiple_choice",
+      "correct": "Date; to go on a date",
+      "options": ["Date; to go on a date", "To invite", "Romantic", "Affection"],
+      "word_hints": {"约会": "yuē huì"}
+    },
+    {
+      "question": "Which word means 'to hug; to hold in arms'?",
+      "type": "multiple_choice",
+      "correct": "抱",
+      "options": ["抱", "表示", "邀请", "感动"],
+      "word_hints": {"抱": "bào", "表示": "biǎo shì", "邀请": "yāo qǐng", "感动": "gǎn dòng"}
+    },
+    {
+      "question": "What does 表示 mean?",
+      "type": "multiple_choice",
+      "correct": "To express; to show",
+      "options": ["To express; to show", "To invite", "To hug", "To feel"],
+      "word_hints": {"表示": "biǎo shì"}
+    },
+    {
+      "question": "What does 坠入爱河 mean?",
+      "type": "multiple_choice",
+      "correct": "To fall in love",
+      "options": ["To fall in love", "To go on a date", "To express love", "To feel happy"],
+      "word_hints": {}
+    },
+    {
+      "question": "Choose the correct use of 不仅...而且...",
+      "type": "multiple_choice",
+      "correct": "他不仅幽默，而且体贴。",
+      "options": [
+        "他不仅幽默，而且体贴。",
+        "他幽默，不仅而且体贴。",
+        "他不仅，幽默而且体贴。",
+        "他幽默不仅，而且体贴。"
+      ],
+      "word_hints": {"幽默": "yōu mò"}
+    },
+    {
+      "question": "What does 为了 mean?",
+      "type": "multiple_choice",
+      "correct": "In order to / for the sake of",
+      "options": [
+        "In order to / for the sake of",
+        "Because of",
+        "Although",
+        "Even if"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Choose the sentence with 却 used correctly.",
+      "type": "multiple_choice",
+      "correct": "她感觉幸福，却没有说出来。",
+      "options": [
+        "她感觉幸福，却没有说出来。",
+        "却她感觉幸福，没有说出来。",
+        "她感觉幸福，没有说出来却。",
+        "她感觉却幸福，没有说出来。"
+      ],
+      "word_hints": {"感觉": "gǎn jué", "幸福": "xìng fú"}
+    },
+    {
+      "question": "Fill in the blank: 为了让她 _____ ，他准备了鲜花。",
+      "type": "multiple_choice",
+      "correct": "感动",
+      "options": ["感动", "骄傲", "幽默", "浪漫"],
+      "word_hints": {"感动": "gǎn dòng", "骄傲": "jiāo ào", "幽默": "yōu mò", "浪漫": "làng màn"}
+    },
+    {
+      "question": "Which grammar pattern adds an extra, stronger quality?",
+      "type": "multiple_choice",
+      "correct": "不仅...而且...",
+      "options": ["不仅...而且...", "虽然...但是...", "因为...所以...", "如果...就..."],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 感情 mean?",
+      "type": "multiple_choice",
+      "correct": "Feelings; affection; relationship",
+      "options": ["Feelings; affection; relationship", "Romantic love", "Happiness", "Date"],
+      "word_hints": {"感情": "gǎn qíng"}
+    },
+    {
+      "question": "The Qixi Festival is based on which legend?",
+      "type": "multiple_choice",
+      "correct": "The Cowherd and the Weaver Girl",
+      "options": [
+        "The Cowherd and the Weaver Girl",
+        "Chang'e and the Moon",
+        "The Dragon and the Phoenix",
+        "The White Snake and Xu Xian"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 表示感谢 mean?",
+      "type": "multiple_choice",
+      "correct": "To express gratitude",
+      "options": ["To express gratitude", "To show love", "To feel happy", "To go on a date"],
+      "word_hints": {"表示": "biǎo shì"}
+    },
+    {
+      "question": "Which adverb indicates contrast and goes before the verb in the second clause?",
+      "type": "multiple_choice",
+      "correct": "却",
+      "options": ["却", "也", "都", "还"],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "A Romantic Invitation",
+      "title_chinese": "浪漫的邀请",
+      "speakers": {
+        "A": {"name": "大伟", "role": "男朋友", "gender": "male"},
+        "B": {"name": "小雨", "role": "女朋友", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小雨，我想邀请你这个周末去看电影，你有时间吗？",
+          "pinyin": "Xiǎo Yǔ, wǒ xiǎng yāo qǐng nǐ zhè ge zhōu mò qù kàn diàn yǐng, nǐ yǒu shí jiān ma?",
+          "english": "Xiaoyu, I'd like to invite you to see a movie this weekend. Are you free?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "当然！我感觉这会是一次很浪漫的约会。",
+          "pinyin": "Dāng rán! Wǒ gǎn jué zhè huì shì yí cì hěn làng màn de yuē huì.",
+          "english": "Of course! I feel this will be a very romantic date."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我不仅订好了电影票，而且还订了一家餐厅。",
+          "pinyin": "Wǒ bù jǐn dìng hǎo le diàn yǐng piào, ér qiě hái dìng le yì jiā cān tīng.",
+          "english": "I not only booked movie tickets, but also reserved a restaurant."
+        },
+        {
+          "speaker": "B",
+          "chinese": "你真的好幽默又体贴！我很感动。",
+          "pinyin": "Nǐ zhēn de hǎo yōu mò yòu tǐ tiē! Wǒ hěn gǎn dòng.",
+          "english": "You are really humorous and considerate! I am so touched."
+        },
+        {
+          "speaker": "A",
+          "chinese": "为了让你幸福，我愿意做任何事。",
+          "pinyin": "Wèi le ràng nǐ xìng fú, wǒ yuàn yì zuò rèn hé shì.",
+          "english": "In order to make you happy, I am willing to do anything."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我们的感情虽然简单，却非常真实，我很珍惜。",
+          "pinyin": "Wǒ men de gǎn qíng suī rán jiǎn dān, què fēi cháng zhēn shí, wǒ hěn zhēn xī.",
+          "english": "Our relationship is simple but very real. I treasure it greatly."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我也是。我想紧紧地抱着你，表示我对你的爱情。",
+          "pinyin": "Wǒ yě shì. Wǒ xiǎng jǐn jǐn de bào zhe nǐ, biǎo shì wǒ duì nǐ de ài qíng.",
+          "english": "Me too. I want to hold you tight and show you my love."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我也坠入爱河了，谢谢你让我感觉这么幸福。",
+          "pinyin": "Wǒ yě zhuì rù ài hé le, xiè xie nǐ ràng wǒ gǎn jué zhè me xìng fú.",
+          "english": "I have fallen in love too. Thank you for making me feel so happy."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "A Heartfelt Conversation",
+      "title_chinese": "真心话",
+      "speakers": {
+        "A": {"name": "明明", "role": "朋友甲", "gender": "male"},
+        "B": {"name": "芳芳", "role": "朋友乙", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "明明，你为什么总是那么骄傲？有时候让人很难接近你。",
+          "pinyin": "Míng Ming, nǐ wèi shén me zǒng shì nà me jiāo ào? Yǒu shí hou ràng rén hěn nán jiē jìn nǐ.",
+          "english": "Mingming, why are you always so arrogant? Sometimes it makes it hard to get close to you."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我知道。我的感情很深，却不善于表示出来。",
+          "pinyin": "Wǒ zhī dào. Wǒ de gǎn qíng hěn shēn, què bù shàn yú biǎo shì chū lái.",
+          "english": "I know. My feelings run deep, but I am not good at expressing them."
+        },
+        {
+          "speaker": "B",
+          "chinese": "其实你不仅聪明，而且有很多优点，你应该多表示出来。",
+          "pinyin": "Qí shí nǐ bù jǐn cōng míng, ér qiě yǒu hěn duō yōu diǎn, nǐ yīng gāi duō biǎo shì chū lái.",
+          "english": "Actually you are not only smart, but also have many good qualities. You should show them more."
+        },
+        {
+          "speaker": "A",
+          "chinese": "谢谢你。为了改变自己，我会努力变得更幽默。",
+          "pinyin": "Xiè xie nǐ. Wèi le gǎi biàn zì jǐ, wǒ huì nǔ lì biàn de gèng yōu mò.",
+          "english": "Thank you. In order to change myself, I will work hard to become more humorous."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我感觉你已经在改变了，这让我很感动。",
+          "pinyin": "Wǒ gǎn jué nǐ yǐ jīng zài gǎi biàn le, zhè ràng wǒ hěn gǎn dòng.",
+          "english": "I feel you are already changing. This really moves me."
+        },
+        {
+          "speaker": "A",
+          "chinese": "有你这样的朋友，我感觉很幸福。",
+          "pinyin": "Yǒu nǐ zhè yàng de péng yǒu, wǒ gǎn jué hěn xìng fú.",
+          "english": "Having a friend like you makes me feel very happy."
+        }
+      ]
+    }
+  ]
+}

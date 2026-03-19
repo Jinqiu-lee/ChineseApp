@@ -1,0 +1,644 @@
+{
+  "lesson": 10,
+  "level": 4,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Nature & Environment",
+  "topic_chinese": "生活中不乏美景",
+  "vocabulary": [
+    {
+      "id": "hsk4_l10_01",
+      "chinese": "海洋",
+      "pinyin": "hǎi yáng",
+      "english": "Ocean; sea",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l10_02",
+      "chinese": "森林",
+      "pinyin": "sēn lín",
+      "english": "Forest",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l10_03",
+      "chinese": "地球",
+      "pinyin": "dì qiú",
+      "english": "Earth; the globe",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l10_04",
+      "chinese": "植物",
+      "pinyin": "zhí wù",
+      "english": "Plant; vegetation",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l10_05",
+      "chinese": "叶子",
+      "pinyin": "yè zi",
+      "english": "Leaf; leaves",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l10_06",
+      "chinese": "云",
+      "pinyin": "yún",
+      "english": "Cloud",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l10_07",
+      "chinese": "阳光",
+      "pinyin": "yáng guāng",
+      "english": "Sunshine; sunlight",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l10_08",
+      "chinese": "气候",
+      "pinyin": "qì hòu",
+      "english": "Climate",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l10_09",
+      "chinese": "污染",
+      "pinyin": "wū rǎn",
+      "english": "Pollution; to pollute",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk4_l10_10",
+      "chinese": "温度",
+      "pinyin": "wēn dù",
+      "english": "Temperature",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l10_11",
+      "chinese": "自然",
+      "pinyin": "zì rán",
+      "english": "Nature; natural; naturally",
+      "part_of_speech": "noun/adjective/adverb"
+    },
+    {
+      "id": "hsk4_l10_12",
+      "chinese": "深",
+      "pinyin": "shēn",
+      "english": "Deep; dark (of color)",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l10_p01",
+      "chinese": "保护环境",
+      "pinyin": "bǎo hù huán jìng",
+      "english": "To protect the environment",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l10_p02",
+      "chinese": "污染严重",
+      "pinyin": "wū rǎn yán zhòng",
+      "english": "Severe pollution",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l10_p03",
+      "chinese": "气候变化",
+      "pinyin": "qì hòu biàn huà",
+      "english": "Climate change",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l10_p04",
+      "chinese": "自然美景",
+      "pinyin": "zì rán měi jǐng",
+      "english": "Natural scenery; beautiful landscape",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l10_p05",
+      "chinese": "阳光充足",
+      "pinyin": "yáng guāng chōng zú",
+      "english": "Abundant sunshine",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "随着污染越来越严重，地球上的气候也发生了变化。",
+      "pinyin": "Suí zhe wū rǎn yuè lái yuè yán zhòng, dì qiú shàng de qì hòu yě fā shēng le biàn huà.",
+      "english": "As pollution becomes more and more serious, the climate on Earth has also undergone changes."
+    },
+    {
+      "chinese": "到处都能看见美丽的自然美景，尤其是森林和海洋。",
+      "pinyin": "Dào chù dōu néng kàn jiàn měi lì de zì rán měi jǐng, yóu qí shì sēn lín hé hǎi yáng.",
+      "english": "Beautiful natural scenery can be seen everywhere, especially forests and oceans."
+    },
+    {
+      "chinese": "由于气温升高，森林里的植物叶子变黄了。",
+      "pinyin": "Yóu yú qì wēn shēng gāo, sēn lín lǐ de zhí wù yè zi biàn huáng le.",
+      "english": "Due to rising temperatures, the leaves of plants in the forest have turned yellow."
+    },
+    {
+      "chinese": "蓝天白云下，阳光充足，温度适宜，真是自然美景。",
+      "pinyin": "Lán tiān bái yún xià, yáng guāng chōng zú, wēn dù shì yí, zhēn shì zì rán měi jǐng.",
+      "english": "Under the blue sky and white clouds, with abundant sunshine and a comfortable temperature, it truly is a beautiful natural scene."
+    },
+    {
+      "chinese": "海洋深处有很多我们不了解的植物和动物。",
+      "pinyin": "Hǎi yáng shēn chù yǒu hěn duō wǒ men bù liǎo jiě de zhí wù hé dòng wù.",
+      "english": "Deep in the ocean there are many plants and animals we don't understand."
+    },
+    {
+      "chinese": "随着人们环保意识的增强，污染严重的情况逐渐改善。",
+      "pinyin": "Suí zhe rén men huán bǎo yì shí de zēng qiáng, wū rǎn yán zhòng de qíng kuàng zhú jiàn gǎi shàn.",
+      "english": "As people's environmental awareness grows, the situation of serious pollution is gradually improving."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "随着 — Along with / As...increases",
+      "explanation": "随着 is a preposition/conjunction meaning 'along with', 'as', or 'with the growth/development of'. It is used to describe how one change accompanies or follows another. Structure: 随着 + [Change/Development], [Result/Consequence]. The first clause describes a change in progress; the second clause describes the accompanying consequence. Example: 随着科技发展，我们的生活越来越方便。(As technology develops, our lives become more and more convenient.)",
+      "examples": [
+        {
+          "chinese": "随着污染加重，海洋里的动植物减少了很多。",
+          "pinyin": "Suí zhe wū rǎn jiā zhòng, hǎi yáng lǐ de dòng zhí wù jiǎn shǎo le hěn duō.",
+          "english": "As pollution worsens, the animals and plants in the ocean have decreased significantly."
+        },
+        {
+          "chinese": "随着气候变化，地球的温度越来越高。",
+          "pinyin": "Suí zhe qì hòu biàn huà, dì qiú de wēn dù yuè lái yuè gāo.",
+          "english": "As the climate changes, the Earth's temperature is getting higher and higher."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 气候变化，自然美景越来越少。",
+          "type": "multiple_choice",
+          "correct": "随着",
+          "options": ["随着", "由于", "通过", "因此"],
+          "option_pinyin": ["suí zhe", "yóu yú", "tōng guò", "yīn cǐ"],
+          "word_hints": {"气候": "qì hòu", "自然": "zì rán"}
+        },
+        {
+          "question": "随着污染 _____ ，森林里的植物也受到了影响。",
+          "type": "multiple_choice",
+          "correct": "加重",
+          "options": ["加重", "减少", "改变", "散步"],
+          "option_pinyin": ["jiā zhòng", "jiǎn shǎo", "gǎi biàn", "sàn bù"],
+          "word_hints": {"污染": "wū rǎn", "森林": "sēn lín", "植物": "zhí wù"}
+        },
+        {
+          "question": "Choose the correct sentence with 随着.",
+          "type": "multiple_choice",
+          "correct": "随着温度升高，叶子变黄了。",
+          "options": [
+            "随着温度升高，叶子变黄了。",
+            "温度随着升高，叶子变黄了。",
+            "叶子随着温度升高，变黄了。",
+            "随着叶子变黄，温度升高了。"
+          ],
+          "option_pinyin": [
+            "Suí zhe wēn dù shēng gāo, yè zi biàn huáng le.",
+            "Wēn dù suí zhe shēng gāo, yè zi biàn huáng le.",
+            "Yè zi suí zhe wēn dù shēng gāo, biàn huáng le.",
+            "Suí zhe yè zi biàn huáng, wēn dù shēng gāo le."
+          ],
+          "word_hints": {"温度": "wēn dù", "叶子": "yè zi"}
+        },
+        {
+          "question": "随着 introduces:",
+          "type": "multiple_choice",
+          "correct": "A change that accompanies or triggers another change",
+          "options": [
+            "A change that accompanies or triggers another change",
+            "A condition",
+            "A contrast",
+            "A purpose"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "_____ 人们保护环境的意识提高，污染越来越少。",
+          "type": "multiple_choice",
+          "correct": "随着",
+          "options": ["随着", "否则", "即使", "虽然"],
+          "option_pinyin": ["suí zhe", "fǒu zé", "jí shǐ", "suī rán"],
+          "word_hints": {"污染": "wū rǎn"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "到处 — Everywhere",
+      "explanation": "到处 (dào chù) is an adverb meaning 'everywhere' or 'all over the place'. It is placed before the verb. Structure: Subject + 到处 + Verb/Verb Phrase. It describes something that exists or happens in many places without exception. Example: 春天来了，到处都是鲜花。(Spring has come; there are flowers everywhere.) Note: 到处 is often combined with 都 for emphasis: 到处都...",
+      "examples": [
+        {
+          "chinese": "在这个森林公园里，到处都能看到美丽的植物和叶子。",
+          "pinyin": "Zài zhè ge sēn lín gōng yuán lǐ, dào chù dōu néng kàn dào měi lì de zhí wù hé yè zi.",
+          "english": "In this forest park, you can see beautiful plants and leaves everywhere."
+        },
+        {
+          "chinese": "由于污染，城市里到处都是灰色的空气。",
+          "pinyin": "Yóu yú wū rǎn, chéng shì lǐ dào chù dōu shì huī sè de kōng qì.",
+          "english": "Due to pollution, the city's air is grey everywhere."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "夏天来了，公园里 _____ 都是阳光和鲜花。",
+          "type": "multiple_choice",
+          "correct": "到处",
+          "options": ["到处", "偶尔", "往往", "平时"],
+          "option_pinyin": ["dào chù", "ǒu ěr", "wǎng wǎng", "píng shí"],
+          "word_hints": {"阳光": "yáng guāng"}
+        },
+        {
+          "question": "Choose the correct sentence with 到处.",
+          "type": "multiple_choice",
+          "correct": "秋天，森林里到处都是红色的叶子。",
+          "options": [
+            "秋天，森林里到处都是红色的叶子。",
+            "秋天，到处森林里都是红色的叶子。",
+            "秋天，森林里红色的到处叶子都是。",
+            "到处秋天，森林里都是红色的叶子。"
+          ],
+          "option_pinyin": [
+            "Qiū tiān, sēn lín lǐ dào chù dōu shì hóng sè de yè zi.",
+            "Qiū tiān, dào chù sēn lín lǐ dōu shì hóng sè de yè zi.",
+            "Qiū tiān, sēn lín lǐ hóng sè de dào chù yè zi dōu shì.",
+            "Dào chù qiū tiān, sēn lín lǐ dōu shì hóng sè de yè zi."
+          ],
+          "word_hints": {"森林": "sēn lín", "叶子": "yè zi"}
+        },
+        {
+          "question": "这里 _____ 都是自然美景，我非常喜欢。",
+          "type": "multiple_choice",
+          "correct": "到处",
+          "options": ["到处", "随着", "由于", "而且"],
+          "option_pinyin": ["dào chù", "suí zhe", "yóu yú", "ér qiě"],
+          "word_hints": {"自然": "zì rán"}
+        },
+        {
+          "question": "到处 is often combined with which word for emphasis?",
+          "type": "multiple_choice",
+          "correct": "都",
+          "options": ["都", "也", "还", "才"],
+          "option_pinyin": ["dōu", "yě", "hái", "cái"],
+          "word_hints": {}
+        },
+        {
+          "question": "污染严重的城市，_____ 都是灰色的天空，看不到阳光。",
+          "type": "multiple_choice",
+          "correct": "到处",
+          "options": ["到处", "偶尔", "随着", "自然"],
+          "option_pinyin": ["dào chù", "ǒu ěr", "suí zhe", "zì rán"],
+          "word_hints": {"污染": "wū rǎn", "阳光": "yáng guāng"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "由于 — Due to / Because of",
+      "explanation": "由于 is a conjunction meaning 'due to', 'because of', or 'owing to'. It introduces the reason or cause and is more formal than 因为. It typically appears at the beginning of the sentence. Structure: 由于 + Cause, (所以) + Result. Unlike 因为, 由于 is usually not paired with 所以 in casual speech, though the combination 由于...所以... is acceptable in formal writing. Example: 由于天气太冷，我们只好待在室内。(Due to the cold weather, we had no choice but to stay indoors.)",
+      "examples": [
+        {
+          "chinese": "由于气候变化，地球上的植物受到了很大影响。",
+          "pinyin": "Yóu yú qì hòu biàn huà, dì qiú shàng de zhí wù shòu dào le hěn dà yǐng xiǎng.",
+          "english": "Due to climate change, plants on Earth have been greatly affected."
+        },
+        {
+          "chinese": "由于海洋污染严重，很多深海植物已经消失了。",
+          "pinyin": "Yóu yú hǎi yáng wū rǎn yán zhòng, hěn duō shēn hǎi zhí wù yǐ jīng xiāo shī le.",
+          "english": "Due to severe ocean pollution, many deep-sea plants have already disappeared."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 温度升高，很多植物叶子变黄了。",
+          "type": "multiple_choice",
+          "correct": "由于",
+          "options": ["由于", "随着", "到处", "自然"],
+          "option_pinyin": ["yóu yú", "suí zhe", "dào chù", "zì rán"],
+          "word_hints": {"温度": "wēn dù", "植物": "zhí wù", "叶子": "yè zi"}
+        },
+        {
+          "question": "Choose the correct sentence with 由于.",
+          "type": "multiple_choice",
+          "correct": "由于污染，海洋里的植物越来越少。",
+          "options": [
+            "由于污染，海洋里的植物越来越少。",
+            "污染由于，海洋里的植物越来越少。",
+            "海洋里由于污染，的植物越来越少。",
+            "由于海洋里越来越少，植物污染。"
+          ],
+          "option_pinyin": [
+            "Yóu yú wū rǎn, hǎi yáng lǐ de zhí wù yuè lái yuè shǎo.",
+            "Wū rǎn yóu yú, hǎi yáng lǐ de zhí wù yuè lái yuè shǎo.",
+            "Hǎi yáng lǐ yóu yú wū rǎn, de zhí wù yuè lái yuè shǎo.",
+            "Yóu yú hǎi yáng lǐ yuè lái yuè shǎo, zhí wù wū rǎn."
+          ],
+          "word_hints": {"污染": "wū rǎn", "海洋": "hǎi yáng", "植物": "zhí wù"}
+        },
+        {
+          "question": "_____ 森林减少，自然界的动植物也越来越少。",
+          "type": "multiple_choice",
+          "correct": "由于",
+          "options": ["由于", "随着", "通过", "不管"],
+          "option_pinyin": ["yóu yú", "suí zhe", "tōng guò", "bù guǎn"],
+          "word_hints": {"森林": "sēn lín", "自然": "zì rán"}
+        },
+        {
+          "question": "What is the key difference between 由于 and 因为?",
+          "type": "multiple_choice",
+          "correct": "由于 is more formal and typically begins the sentence",
+          "options": [
+            "由于 is more formal and typically begins the sentence",
+            "They are exactly the same",
+            "因为 is more formal",
+            "由于 can only be used in spoken Chinese"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "_____ 阳光充足，这里的植物长得非常好。",
+          "type": "multiple_choice",
+          "correct": "由于",
+          "options": ["由于", "到处", "虽然", "随着"],
+          "option_pinyin": ["yóu yú", "dào chù", "suī rán", "suí zhe"],
+          "word_hints": {"阳光": "yáng guāng", "植物": "zhí wù"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "Red and White in Chinese Culture",
+      "title_chinese": "中国人眼中的「红」与「白」",
+      "content": "Color symbolism is deeply embedded in Chinese culture and can be a source of misunderstanding for foreigners. Red (红, hóng) is the most auspicious color in Chinese culture, symbolizing good luck, prosperity, happiness, and celebration. It is used in festivals, weddings, red envelopes (红包), and decorations. White (白, bái), by contrast, is associated with mourning, death, and funerals in traditional Chinese culture — the opposite of its meaning in Western weddings. Wearing white to a celebration or bringing white flowers to someone can be seen as deeply offensive. Green (绿, lǜ) has positive associations with nature and health, but a green hat (绿帽子, lǜ màozi) is a notorious expression meaning one's partner has been unfaithful. Understanding these cultural color associations helps avoid serious social mistakes.",
+      "idioms": [
+        {
+          "chinese": "绿水青山就是金山银山",
+          "pinyin": "lǜ shuǐ qīng shān jiù shì jīn shān yín shān",
+          "english": "Green mountains and clear waters are as valuable as gold and silver (environmental conservation)"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 海洋 mean?",
+      "type": "multiple_choice",
+      "correct": "Ocean; sea",
+      "options": ["Ocean; sea", "Forest", "Earth", "Climate"],
+      "word_hints": {"海洋": "hǎi yáng"}
+    },
+    {
+      "question": "Which word means 'forest'?",
+      "type": "multiple_choice",
+      "correct": "森林",
+      "options": ["森林", "植物", "叶子", "阳光"],
+      "word_hints": {"森林": "sēn lín", "植物": "zhí wù", "叶子": "yè zi", "阳光": "yáng guāng"}
+    },
+    {
+      "question": "What does 地球 mean?",
+      "type": "multiple_choice",
+      "correct": "Earth; the globe",
+      "options": ["Earth; the globe", "Forest", "Ocean", "Climate"],
+      "word_hints": {"地球": "dì qiú"}
+    },
+    {
+      "question": "Which word means 'plant; vegetation'?",
+      "type": "multiple_choice",
+      "correct": "植物",
+      "options": ["植物", "叶子", "云", "阳光"],
+      "word_hints": {"植物": "zhí wù", "叶子": "yè zi", "云": "yún", "阳光": "yáng guāng"}
+    },
+    {
+      "question": "What does 阳光 mean?",
+      "type": "multiple_choice",
+      "correct": "Sunshine; sunlight",
+      "options": ["Sunshine; sunlight", "Cloud", "Temperature", "Leaf"],
+      "word_hints": {"阳光": "yáng guāng"}
+    },
+    {
+      "question": "Which word means 'climate'?",
+      "type": "multiple_choice",
+      "correct": "气候",
+      "options": ["气候", "温度", "自然", "污染"],
+      "word_hints": {"气候": "qì hòu", "温度": "wēn dù", "自然": "zì rán", "污染": "wū rǎn"}
+    },
+    {
+      "question": "What does 污染 mean?",
+      "type": "multiple_choice",
+      "correct": "Pollution; to pollute",
+      "options": ["Pollution; to pollute", "Climate change", "Nature", "Temperature"],
+      "word_hints": {"污染": "wū rǎn"}
+    },
+    {
+      "question": "Which word means 'deep; dark (of color)'?",
+      "type": "multiple_choice",
+      "correct": "深",
+      "options": ["深", "自然", "云", "叶子"],
+      "word_hints": {"深": "shēn", "自然": "zì rán", "云": "yún", "叶子": "yè zi"}
+    },
+    {
+      "question": "What does 自然 mean?",
+      "type": "multiple_choice",
+      "correct": "Nature; natural; naturally",
+      "options": ["Nature; natural; naturally", "Climate", "Earth", "Ocean"],
+      "word_hints": {"自然": "zì rán"}
+    },
+    {
+      "question": "What does 云 mean?",
+      "type": "multiple_choice",
+      "correct": "Cloud",
+      "options": ["Cloud", "Leaf", "Sunshine", "Plant"],
+      "word_hints": {"云": "yún"}
+    },
+    {
+      "question": "Fill in: _____ 气候变化，地球温度越来越高。",
+      "type": "multiple_choice",
+      "correct": "随着",
+      "options": ["随着", "由于", "到处", "因此"],
+      "word_hints": {"气候": "qì hòu", "温度": "wēn dù"}
+    },
+    {
+      "question": "What does 到处 mean?",
+      "type": "multiple_choice",
+      "correct": "Everywhere",
+      "options": ["Everywhere", "Somewhere", "Nowhere", "Occasionally"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 由于 mean?",
+      "type": "multiple_choice",
+      "correct": "Due to; because of",
+      "options": ["Due to; because of", "Along with", "Everywhere", "Although"],
+      "word_hints": {}
+    },
+    {
+      "question": "Choose the correct use of 随着.",
+      "type": "multiple_choice",
+      "correct": "随着污染加重，自然美景越来越少。",
+      "options": [
+        "随着污染加重，自然美景越来越少。",
+        "污染随着加重，自然美景越来越少。",
+        "随着自然美景越来越少，污染加重。",
+        "自然美景越来越少随着，污染加重。"
+      ],
+      "word_hints": {"污染": "wū rǎn", "自然": "zì rán"}
+    },
+    {
+      "question": "What does the phrase 气候变化 mean?",
+      "type": "multiple_choice",
+      "correct": "Climate change",
+      "options": ["Climate change", "Temperature change", "Natural beauty", "Severe pollution"],
+      "word_hints": {"气候": "qì hòu"}
+    },
+    {
+      "question": "What does the phrase 保护环境 mean?",
+      "type": "multiple_choice",
+      "correct": "To protect the environment",
+      "options": ["To protect the environment", "To reduce pollution", "To change the climate", "To preserve nature"],
+      "word_hints": {}
+    },
+    {
+      "question": "In Chinese culture, what does the color 红 (red) symbolize?",
+      "type": "multiple_choice",
+      "correct": "Good luck and prosperity",
+      "options": ["Good luck and prosperity", "Mourning and death", "Nature and health", "Wisdom and age"],
+      "word_hints": {}
+    },
+    {
+      "question": "In Chinese culture, what does the color 白 (white) traditionally symbolize?",
+      "type": "multiple_choice",
+      "correct": "Mourning and death",
+      "options": ["Mourning and death", "Purity and weddings", "Good luck", "Nature"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 叶子 mean?",
+      "type": "multiple_choice",
+      "correct": "Leaf; leaves",
+      "options": ["Leaf; leaves", "Cloud", "Sunshine", "Plant"],
+      "word_hints": {"叶子": "yè zi"}
+    },
+    {
+      "question": "What does the phrase 阳光充足 mean?",
+      "type": "multiple_choice",
+      "correct": "Abundant sunshine",
+      "options": ["Abundant sunshine", "Cloudy sky", "Deep ocean", "Natural beauty"],
+      "word_hints": {"阳光": "yáng guāng"}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "A Nature Walk",
+      "title_chinese": "自然之旅",
+      "speakers": {
+        "A": {"name": "小倩", "role": "朋友甲", "gender": "female"},
+        "B": {"name": "大明", "role": "朋友乙", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "大明，你看！这片森林里到处都是美丽的植物！",
+          "pinyin": "Dà Míng, nǐ kàn! Zhè piàn sēn lín lǐ dào chù dōu shì měi lì de zhí wù!",
+          "english": "Daming, look! This forest is full of beautiful plants everywhere!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是啊，叶子颜色很深，阳光充足，真是自然美景。",
+          "pinyin": "Shì a, yè zi yán sè hěn shēn, yáng guāng chōng zú, zhēn shì zì rán měi jǐng.",
+          "english": "Yes, the leaves are deeply colored, the sunshine is abundant — it's truly a beautiful natural scene."
+        },
+        {
+          "speaker": "A",
+          "chinese": "随着气候变化，这样的美景越来越少了，真可惜。",
+          "pinyin": "Suí zhe qì hòu biàn huà, zhè yàng de měi jǐng yuè lái yuè shǎo le, zhēn kě xī.",
+          "english": "As the climate changes, such beautiful scenery is becoming rarer and rarer — it's such a pity."
+        },
+        {
+          "speaker": "B",
+          "chinese": "由于污染严重，很多地方的温度也升高了，影响了自然界。",
+          "pinyin": "Yóu yú wū rǎn yán zhòng, hěn duō dì fāng de wēn dù yě shēng gāo le, yǐng xiǎng le zì rán jiè.",
+          "english": "Due to serious pollution, temperatures in many places have also risen, affecting the natural world."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我们应该保护环境，不让地球的美景消失。",
+          "pinyin": "Wǒ men yīng gāi bǎo hù huán jìng, bú ràng dì qiú de měi jǐng xiāo shī.",
+          "english": "We should protect the environment and not let the Earth's beautiful scenery disappear."
+        },
+        {
+          "speaker": "B",
+          "chinese": "对！绿水青山就是金山银山，保护自然就是保护我们自己。",
+          "pinyin": "Duì! Lǜ shuǐ qīng shān jiù shì jīn shān yín shān, bǎo hù zì rán jiù shì bǎo hù wǒ men zì jǐ.",
+          "english": "Right! Green mountains and clear waters are as valuable as gold and silver — protecting nature is protecting ourselves."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我们还能看到蓝天白云，海洋那么深那么蓝，多美啊！",
+          "pinyin": "Wǒ men hái néng kàn dào lán tiān bái yún, hǎi yáng nà me shēn nà me lán, duō měi a!",
+          "english": "We can still see blue sky and white clouds; the ocean is so deep and so blue — how beautiful!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Discussing Climate Change",
+      "title_chinese": "讨论气候变化",
+      "speakers": {
+        "A": {"name": "环保老师", "role": "老师", "gender": "female"},
+        "B": {"name": "同学", "role": "学生", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "同学们，随着工业发展，地球上的污染越来越严重。",
+          "pinyin": "Tóng xué men, suí zhe gōng yè fā zhǎn, dì qiú shàng de wū rǎn yuè lái yuè yán zhòng.",
+          "english": "Students, as industrial development continues, pollution on Earth is becoming more and more serious."
+        },
+        {
+          "speaker": "B",
+          "chinese": "老师，由于气候变化，连森林里的植物也受到了影响吗？",
+          "pinyin": "Lǎo shī, yóu yú qì hòu biàn huà, lián sēn lín lǐ de zhí wù yě shòu dào le yǐng xiǎng ma?",
+          "english": "Teacher, due to climate change, have even the plants in forests been affected?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "对。温度升高后，叶子变色的时间也改变了，海洋的温度也在上升。",
+          "pinyin": "Duì. Wēn dù shēng gāo hòu, yè zi biàn sè de shí jiān yě gǎi biàn le, hǎi yáng de wēn dù yě zài shàng shēng.",
+          "english": "Yes. As temperatures rise, the timing of leaves changing color has also changed, and ocean temperatures are also rising."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那我们到处能看到的自然美景，以后可能会消失吗？",
+          "pinyin": "Nà wǒ men dào chù néng kàn dào de zì rán měi jǐng, yǐ hòu kě néng huì xiāo shī ma?",
+          "english": "Then will the natural scenery we can see everywhere possibly disappear in the future?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "如果我们不保护环境，是有这个可能的。所以每个人都有责任减少污染。",
+          "pinyin": "Rú guǒ wǒ men bù bǎo hù huán jìng, shì yǒu zhè ge kě néng de. Suǒ yǐ měi ge rén dōu yǒu zé rèn jiǎn shǎo wū rǎn.",
+          "english": "If we don't protect the environment, that is a possibility. So everyone has the responsibility to reduce pollution."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我明白了，我会从自己做起，为保护地球出一份力。",
+          "pinyin": "Wǒ míng bái le, wǒ huì cóng zì jǐ zuò qǐ, wèi bǎo hù dì qiú chū yí fèn lì.",
+          "english": "I understand. I will start with myself and contribute to protecting the Earth."
+        }
+      ]
+    }
+  ]
+}

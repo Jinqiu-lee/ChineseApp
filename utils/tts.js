@@ -2,23 +2,55 @@ import { Audio } from 'expo-av';
 import * as FileSystem from 'expo-file-system/legacy';
 import { GOOGLE_API_KEY } from '../config/googleApiKey';
 import { PINYIN_AUDIO } from './pinyinAudio';
+import { REPLACE_AUDIO } from './replaceAudio';
 
 const GOOGLE_TTS_API_KEY = GOOGLE_API_KEY;
 
-// Words whose standard Putonghua pronunciation differs from preferred colloquial form.
-// Value is the pinyin tone number string passed to SSML <phoneme>.
+// Character-level overrides: every instance of this character gets the given pinyin.
+// Value is the pinyin tone-number string passed to SSML <phoneme>.
 const PHONEME_OVERRIDES = {
   '谁': 'shei2',
+  // 背 as "carry on back" (bēi, tone 1) — 背包, 背着 etc.
+  '背': 'bei1',
+  // Note: 还 is NOT here — it is polyphonic (hái vs huán) and handled
+  // per-compound in COMPOUND_PHONEME_OVERRIDES below.
+};
+
+// Compound-word overrides: matched BEFORE character-level overrides.
+// Each entry maps a multi-character string → array of [char, pinyin] pairs.
+// Use this for polyphonic characters whose reading depends on the word they appear in.
+// Default TTS reads 还 as hái (still/also) — override only "return" compounds to huán.
+const COMPOUND_PHONEME_OVERRIDES = {
+  '还书': [['还', 'huan2'], ['书', 'shu1']],
+  '还钱': [['还', 'huan2'], ['钱', 'qian2']],
+  '还给': [['还', 'huan2'], ['给', 'gei3']],
+  '还回': [['还', 'huan2'], ['回', 'hui2']],
+  '归还': [['归', 'gui1'], ['还', 'huan2']],
+  '偿还': [['偿', 'chang2'], ['还', 'huan2']],
+  '还款': [['还', 'huan2'], ['款', 'kuan3']],
 };
 
 function buildSSML(text) {
   let inner = text;
+
+  // Step 1: apply compound overrides first (longest-match wins within this map)
+  for (const [compound, chars] of Object.entries(COMPOUND_PHONEME_OVERRIDES)) {
+    if (inner.includes(compound)) {
+      const ssml = chars
+        .map(([ch, ph]) => `<phoneme alphabet="pinyin" ph="${ph}">${ch}</phoneme>`)
+        .join('');
+      inner = inner.replaceAll(compound, ssml);
+    }
+  }
+
+  // Step 2: apply single-character overrides to any remaining bare characters
   for (const [char, pinyin] of Object.entries(PHONEME_OVERRIDES)) {
     inner = inner.replaceAll(
       char,
       `<phoneme alphabet="pinyin" ph="${pinyin}">${char}</phoneme>`,
     );
   }
+
   return `<speak>${inner}</speak>`;
 }
 
@@ -176,6 +208,16 @@ export async function speakPinyin(syllable, gender = 'female') {
 }
 
 export async function speakChinese(text, gender = 'female') {
+  // ── 0. Check for user-uploaded replacement audio (exact match) ───────────
+  if (REPLACE_AUDIO[text]) {
+    try {
+      await playLocalAudio(REPLACE_AUDIO[text]);
+      return;
+    } catch (err) {
+      console.warn('speakChinese: replacement file failed, falling back to TTS:', err);
+    }
+  }
+
   if (!GOOGLE_TTS_API_KEY || GOOGLE_TTS_API_KEY === 'YOUR_GOOGLE_CLOUD_API_KEY_HERE') {
     console.warn('tts.js: Set your GOOGLE_TTS_API_KEY to enable audio.');
     return;

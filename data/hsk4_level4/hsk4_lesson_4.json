@@ -1,0 +1,656 @@
+{
+  "lesson": 4,
+  "level": 4,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Work & Career",
+  "topic_chinese": "职业与成功",
+  "vocabulary": [
+    {
+      "id": "hsk4_l4_01",
+      "chinese": "职业",
+      "pinyin": "zhí yè",
+      "english": "Profession; occupation; career",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l4_02",
+      "chinese": "技术",
+      "pinyin": "jì shù",
+      "english": "Technology; technique; skill",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l4_03",
+      "chinese": "经历",
+      "pinyin": "jīng lì",
+      "english": "Experience; to experience",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk4_l4_04",
+      "chinese": "经验",
+      "pinyin": "jīng yàn",
+      "english": "Experience (gained knowledge)",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l4_05",
+      "chinese": "负责",
+      "pinyin": "fù zé",
+      "english": "To be responsible for; responsible",
+      "part_of_speech": "verb/adjective"
+    },
+    {
+      "id": "hsk4_l4_06",
+      "chinese": "管理",
+      "pinyin": "guǎn lǐ",
+      "english": "To manage; management",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l4_07",
+      "chinese": "成功",
+      "pinyin": "chéng gōng",
+      "english": "Success; to succeed; successful",
+      "part_of_speech": "noun/verb/adjective"
+    },
+    {
+      "id": "hsk4_l4_08",
+      "chinese": "成为",
+      "pinyin": "chéng wéi",
+      "english": "To become",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l4_09",
+      "chinese": "教授",
+      "pinyin": "jiào shòu",
+      "english": "Professor; to teach (advanced level)",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk4_l4_10",
+      "chinese": "记者",
+      "pinyin": "jì zhě",
+      "english": "Reporter; journalist",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l4_11",
+      "chinese": "博士",
+      "pinyin": "bó shì",
+      "english": "PhD; doctor (academic)",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l4_12",
+      "chinese": "招聘",
+      "pinyin": "zhāo pìn",
+      "english": "To recruit; to hire; recruitment",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l4_13",
+      "chinese": "应聘",
+      "pinyin": "yìng pìn",
+      "english": "To apply for a job",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l4_p01",
+      "chinese": "获得经验",
+      "pinyin": "huò dé jīng yàn",
+      "english": "To gain experience",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l4_p02",
+      "chinese": "负责任的人",
+      "pinyin": "fù zé rèn de rén",
+      "english": "A responsible person",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l4_p03",
+      "chinese": "成为专家",
+      "pinyin": "chéng wéi zhuān jiā",
+      "english": "To become an expert",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l4_p04",
+      "chinese": "招聘记者",
+      "pinyin": "zhāo pìn jì zhě",
+      "english": "To recruit a reporter",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l4_p05",
+      "chinese": "职业发展",
+      "pinyin": "zhí yè fā zhǎn",
+      "english": "Career development",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "通过不断积累经验，他终于成为了一名成功的记者。",
+      "pinyin": "Tōng guò bú duàn jī lěi jīng yàn, tā zhōng yú chéng wéi le yì míng chéng gōng de jì zhě.",
+      "english": "Through continuously accumulating experience, he finally became a successful reporter."
+    },
+    {
+      "chinese": "他不仅负责项目管理，而且还负责招聘新员工。",
+      "pinyin": "Tā bù jǐn fù zé xiàng mù guǎn lǐ, ér qiě hái fù zé zhāo pìn xīn yuán gōng.",
+      "english": "He is not only responsible for project management, but also for recruiting new employees."
+    },
+    {
+      "chinese": "她继续提高技术水平，希望成为一名博士。",
+      "pinyin": "Tā jì xù tí gāo jì shù shuǐ píng, xī wàng chéng wéi yì míng bó shì.",
+      "english": "She continues to improve her technical skills, hoping to become a PhD."
+    },
+    {
+      "chinese": "他通过在公司工作获得了宝贵的经历。",
+      "pinyin": "Tā tōng guò zài gōng sī gōng zuò huò dé le bǎo guì de jīng lì.",
+      "english": "He gained valuable experience through working at the company."
+    },
+    {
+      "chinese": "这家公司正在招聘有经验的教授来管理研究团队。",
+      "pinyin": "Zhè jiā gōng sī zhèng zài zhāo pìn yǒu jīng yàn de jiào shòu lái guǎn lǐ yán jiū tuán duì.",
+      "english": "This company is recruiting experienced professors to manage the research team."
+    },
+    {
+      "chinese": "她决定应聘这个职位，因为她对职业发展非常重视。",
+      "pinyin": "Tā jué dìng yìng pìn zhè ge zhí wèi, yīn wèi tā duì zhí yè fā zhǎn fēi cháng zhòng shì.",
+      "english": "She decided to apply for this position because she places great importance on career development."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "通过 — Through / By means of",
+      "explanation": "通过 is a preposition meaning 'through' or 'by means of'. It indicates the method or channel used to achieve something. Structure: 通过 + Method/Channel + Subject + Verb + Result. It can also be used as a verb meaning 'to pass' (e.g., an exam). As a preposition, it answers the question 'How?'. Example: 通过努力，他成功了。(Through hard work, he succeeded.)",
+      "examples": [
+        {
+          "chinese": "通过招聘，公司找到了有技术的员工。",
+          "pinyin": "Tōng guò zhāo pìn, gōng sī zhǎo dào le yǒu jì shù de yuán gōng.",
+          "english": "Through recruitment, the company found technically skilled employees."
+        },
+        {
+          "chinese": "他通过丰富的经历成为了一名成功的管理者。",
+          "pinyin": "Tā tōng guò fēng fù de jīng lì chéng wéi le yì míng chéng gōng de guǎn lǐ zhě.",
+          "english": "Through rich experience, he became a successful manager."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 积累经验，他成为了一名优秀的记者。",
+          "type": "multiple_choice",
+          "correct": "通过",
+          "options": ["通过", "因为", "虽然", "只要"],
+          "option_pinyin": ["tōng guò", "yīn wèi", "suī rán", "zhǐ yào"],
+          "word_hints": {"经验": "jīng yàn", "记者": "jì zhě"}
+        },
+        {
+          "question": "Choose the correct sentence with 通过.",
+          "type": "multiple_choice",
+          "correct": "通过努力学习，她成为了博士。",
+          "options": [
+            "通过努力学习，她成为了博士。",
+            "她通过了努力学习，成为博士。",
+            "努力通过学习，她成为了博士。",
+            "她成为博士通过努力学习。"
+          ],
+          "option_pinyin": [
+            "Tōng guò nǔ lì xué xí, tā chéng wéi le bó shì.",
+            "Tā tōng guò le nǔ lì xué xí, chéng wéi bó shì.",
+            "Nǔ lì tōng guò xué xí, tā chéng wéi le bó shì.",
+            "Tā chéng wéi bó shì tōng guò nǔ lì xué xí."
+          ],
+          "word_hints": {"成为": "chéng wéi", "博士": "bó shì"}
+        },
+        {
+          "question": "她 _____ 应聘成功获得了这份职业。",
+          "type": "multiple_choice",
+          "correct": "通过",
+          "options": ["通过", "为了", "对于", "是否"],
+          "option_pinyin": ["tōng guò", "wèi le", "duì yú", "shì fǒu"],
+          "word_hints": {"应聘": "yìng pìn", "职业": "zhí yè"}
+        },
+        {
+          "question": "通过 answers which question?",
+          "type": "multiple_choice",
+          "correct": "How? (by what means?)",
+          "options": ["How? (by what means?)", "Why?", "When?", "Where?"],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "他 _____ 管理工作积累了很多经验。",
+          "type": "multiple_choice",
+          "correct": "通过",
+          "options": ["通过", "负责", "成功", "成为"],
+          "option_pinyin": ["tōng guò", "fù zé", "chéng gōng", "chéng wéi"],
+          "word_hints": {"管理": "guǎn lǐ", "经验": "jīng yàn"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "继续 — To continue (aspect usage)",
+      "explanation": "继续 means 'to continue' and is placed before a verb to indicate that an action is ongoing or resumes after a pause. Structure: Subject + 继续 + Verb (+ Object). It emphasizes continuation of an action that was already in progress. Example: 他继续工作，没有休息。(He continued working without resting.) 继续 can also appear as a standalone verb: 请继续！(Please continue!)",
+      "examples": [
+        {
+          "chinese": "她继续积累经验，希望职业发展得更好。",
+          "pinyin": "Tā jì xù jī lěi jīng yàn, xī wàng zhí yè fā zhǎn de gèng hǎo.",
+          "english": "She continues to accumulate experience, hoping her career will develop better."
+        },
+        {
+          "chinese": "他继续负责这个项目，直到成功。",
+          "pinyin": "Tā jì xù fù zé zhè ge xiàng mù, zhí dào chéng gōng.",
+          "english": "He continues to be responsible for this project until it succeeds."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "她 _____ 学习新技术，为了成为专家。",
+          "type": "multiple_choice",
+          "correct": "继续",
+          "options": ["继续", "已经", "经常", "有时"],
+          "option_pinyin": ["jì xù", "yǐ jīng", "jīng cháng", "yǒu shí"],
+          "word_hints": {"技术": "jì shù"}
+        },
+        {
+          "question": "Which sentence correctly uses 继续?",
+          "type": "multiple_choice",
+          "correct": "他继续管理公司，不会退休。",
+          "options": [
+            "他继续管理公司，不会退休。",
+            "他管理继续公司，不会退休。",
+            "他继续，管理公司不会退休。",
+            "继续他管理公司，不会退休。"
+          ],
+          "option_pinyin": [
+            "Tā jì xù guǎn lǐ gōng sī, bú huì tuì xiū.",
+            "Tā guǎn lǐ jì xù gōng sī, bú huì tuì xiū.",
+            "Tā jì xù, guǎn lǐ gōng sī bú huì tuì xiū.",
+            "Jì xù tā guǎn lǐ gōng sī, bú huì tuì xiū."
+          ],
+          "word_hints": {"管理": "guǎn lǐ"}
+        },
+        {
+          "question": "他失败了一次，但是 _____ 努力，最终成功了。",
+          "type": "multiple_choice",
+          "correct": "继续",
+          "options": ["继续", "停止", "放弃", "结束"],
+          "option_pinyin": ["jì xù", "tíng zhǐ", "fàng qì", "jié shù"],
+          "word_hints": {"成功": "chéng gōng"}
+        },
+        {
+          "question": "继续 is placed where in a sentence?",
+          "type": "multiple_choice",
+          "correct": "Before the verb",
+          "options": ["Before the verb", "After the verb", "At the end", "Before the subject"],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "请 _____ 你的工作，不要停下来。",
+          "type": "multiple_choice",
+          "correct": "继续",
+          "options": ["继续", "开始", "完成", "检查"],
+          "option_pinyin": ["jì xù", "kāi shǐ", "wán chéng", "jiǎn chá"],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "负责 — To be responsible for",
+      "explanation": "负责 means 'to be responsible for' or 'to take charge of'. It can be followed by a noun object (负责 + task/role) or used predicatively (他很负责 — He is very responsible). Structure: Subject + 负责 + Object/Task OR Subject + 很 + 负责. It often appears in professional contexts. Example: 她负责公司的管理工作。(She is responsible for the company's management work.)",
+      "examples": [
+        {
+          "chinese": "他负责招聘记者，工作非常认真。",
+          "pinyin": "Tā fù zé zhāo pìn jì zhě, gōng zuò fēi cháng rèn zhēn.",
+          "english": "He is responsible for recruiting reporters and works very seriously."
+        },
+        {
+          "chinese": "她是一个很负责的人，从不推卸责任。",
+          "pinyin": "Tā shì yí gè hěn fù zé de rén, cóng bù tuī xiè zé rèn.",
+          "english": "She is a very responsible person who never shirks her responsibilities."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他 _____ 这次项目的管理工作。",
+          "type": "multiple_choice",
+          "correct": "负责",
+          "options": ["负责", "成为", "经历", "招聘"],
+          "option_pinyin": ["fù zé", "chéng wéi", "jīng lì", "zhāo pìn"],
+          "word_hints": {"管理": "guǎn lǐ"}
+        },
+        {
+          "question": "Choose the correct sentence using 负责.",
+          "type": "multiple_choice",
+          "correct": "她负责教授这门技术课程。",
+          "options": [
+            "她负责教授这门技术课程。",
+            "她这门负责教授技术课程。",
+            "教授她负责这门技术课程。",
+            "这门她负责，教授技术课程。"
+          ],
+          "option_pinyin": [
+            "Tā fù zé jiào shòu zhè mén jì shù kè chéng.",
+            "Tā zhè mén fù zé jiào shòu jì shù kè chéng.",
+            "Jiào shòu tā fù zé zhè mén jì shù kè chéng.",
+            "Zhè mén tā fù zé, jiào shòu jì shù kè chéng."
+          ],
+          "word_hints": {"教授": "jiào shòu", "技术": "jì shù"}
+        },
+        {
+          "question": "他是公司里最 _____ 的人，从不出错。",
+          "type": "multiple_choice",
+          "correct": "负责",
+          "options": ["负责", "骄傲", "幽默", "直接"],
+          "option_pinyin": ["fù zé", "jiāo ào", "yōu mò", "zhí jiē"],
+          "word_hints": {"负责": "fù zé"}
+        },
+        {
+          "question": "负责 can be used in which two ways?",
+          "type": "multiple_choice",
+          "correct": "As a verb taking an object, or predicatively as an adjective",
+          "options": [
+            "As a verb taking an object, or predicatively as an adjective",
+            "Only as a verb",
+            "Only as an adjective",
+            "Only in formal writing"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "她 _____ 管理整个团队，非常有经验。",
+          "type": "multiple_choice",
+          "correct": "负责",
+          "options": ["负责", "成功", "职业", "技术"],
+          "option_pinyin": ["fù zé", "chéng gōng", "zhí yè", "jì shù"],
+          "word_hints": {"管理": "guǎn lǐ", "经验": "jīng yàn"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "Teach a Man to Fish",
+      "title_chinese": "授人以鱼不如授人以渔",
+      "content": "The Chinese proverb 授人以鱼不如授人以渔 (Shòu rén yǐ yú bù rú shòu rén yǐ yú) — 'Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime' — reflects the deeply Chinese value of education, self-development, and the transmission of skills over generations. In the workplace, this philosophy shapes how Chinese employers think about training and career development. A good mentor (导师, dǎo shī) is expected not just to assign tasks, but to teach skills and methods. This Confucian principle also underpins the Chinese emphasis on formal education, vocational training, and lifelong learning as keys to professional success.",
+      "idioms": [
+        {
+          "chinese": "授人以鱼不如授人以渔",
+          "pinyin": "shòu rén yǐ yú bù rú shòu rén yǐ yú",
+          "english": "Teaching skills is better than giving handouts"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 职业 mean?",
+      "type": "multiple_choice",
+      "correct": "Profession; occupation; career",
+      "options": ["Profession; occupation; career", "Technology", "Experience", "Management"],
+      "word_hints": {"职业": "zhí yè"}
+    },
+    {
+      "question": "Which word means 'technology; technique; skill'?",
+      "type": "multiple_choice",
+      "correct": "技术",
+      "options": ["技术", "经验", "经历", "管理"],
+      "word_hints": {"技术": "jì shù", "经验": "jīng yàn", "经历": "jīng lì", "管理": "guǎn lǐ"}
+    },
+    {
+      "question": "What is the difference between 经历 and 经验?",
+      "type": "multiple_choice",
+      "correct": "经历 refers to events experienced; 经验 refers to knowledge gained",
+      "options": [
+        "经历 refers to events experienced; 经验 refers to knowledge gained",
+        "They mean exactly the same thing",
+        "经历 is formal; 经验 is informal",
+        "经历 is a verb only; 经验 is a noun only"
+      ],
+      "word_hints": {"经历": "jīng lì", "经验": "jīng yàn"}
+    },
+    {
+      "question": "What does 负责 mean?",
+      "type": "multiple_choice",
+      "correct": "To be responsible for",
+      "options": ["To be responsible for", "To manage", "To recruit", "To succeed"],
+      "word_hints": {"负责": "fù zé"}
+    },
+    {
+      "question": "Which word means 'to manage; management'?",
+      "type": "multiple_choice",
+      "correct": "管理",
+      "options": ["管理", "负责", "成功", "应聘"],
+      "word_hints": {"管理": "guǎn lǐ", "负责": "fù zé", "成功": "chéng gōng", "应聘": "yìng pìn"}
+    },
+    {
+      "question": "What does 成为 mean?",
+      "type": "multiple_choice",
+      "correct": "To become",
+      "options": ["To become", "To succeed", "To recruit", "To manage"],
+      "word_hints": {"成为": "chéng wéi"}
+    },
+    {
+      "question": "Which word means 'reporter; journalist'?",
+      "type": "multiple_choice",
+      "correct": "记者",
+      "options": ["记者", "教授", "博士", "职业"],
+      "word_hints": {"记者": "jì zhě", "教授": "jiào shòu", "博士": "bó shì", "职业": "zhí yè"}
+    },
+    {
+      "question": "What does 招聘 mean?",
+      "type": "multiple_choice",
+      "correct": "To recruit; to hire",
+      "options": ["To recruit; to hire", "To apply for a job", "To manage", "To succeed"],
+      "word_hints": {"招聘": "zhāo pìn"}
+    },
+    {
+      "question": "What does 应聘 mean?",
+      "type": "multiple_choice",
+      "correct": "To apply for a job",
+      "options": ["To apply for a job", "To recruit", "To manage", "To succeed"],
+      "word_hints": {"应聘": "yìng pìn"}
+    },
+    {
+      "question": "What does 博士 mean?",
+      "type": "multiple_choice",
+      "correct": "PhD; doctor (academic)",
+      "options": ["PhD; doctor (academic)", "Professor", "Reporter", "Manager"],
+      "word_hints": {"博士": "bó shì"}
+    },
+    {
+      "question": "Fill in: _____ 积累经验，他终于成功了。",
+      "type": "multiple_choice",
+      "correct": "通过",
+      "options": ["通过", "因为", "虽然", "对于"],
+      "word_hints": {"经验": "jīng yàn", "成功": "chéng gōng"}
+    },
+    {
+      "question": "What does 通过 mean as a preposition?",
+      "type": "multiple_choice",
+      "correct": "Through; by means of",
+      "options": ["Through; by means of", "In order to", "Regarding", "Whether or not"],
+      "word_hints": {}
+    },
+    {
+      "question": "Choose the correct use of 继续.",
+      "type": "multiple_choice",
+      "correct": "她继续学习新技术。",
+      "options": [
+        "她继续学习新技术。",
+        "她学习继续新技术。",
+        "继续她学习新技术。",
+        "她学习新技术继续。"
+      ],
+      "word_hints": {"技术": "jì shù"}
+    },
+    {
+      "question": "He is responsible for managing the team. Which sentence is correct?",
+      "type": "multiple_choice",
+      "correct": "他负责管理团队。",
+      "options": ["他负责管理团队。", "他管理负责团队。", "他团队负责管理。", "负责他管理团队。"],
+      "word_hints": {"负责": "fù zé", "管理": "guǎn lǐ"}
+    },
+    {
+      "question": "What does the phrase 职业发展 mean?",
+      "type": "multiple_choice",
+      "correct": "Career development",
+      "options": ["Career development", "Job recruitment", "Technical skills", "Work experience"],
+      "word_hints": {"职业": "zhí yè"}
+    },
+    {
+      "question": "What does the proverb 授人以鱼不如授人以渔 mean?",
+      "type": "multiple_choice",
+      "correct": "Teaching skills is better than giving handouts",
+      "options": [
+        "Teaching skills is better than giving handouts",
+        "Hard work always leads to success",
+        "Friendship is more important than money",
+        "Education is the key to happiness"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 教授 mean?",
+      "type": "multiple_choice",
+      "correct": "Professor; to teach (advanced level)",
+      "options": ["Professor; to teach (advanced level)", "Doctor", "Reporter", "Manager"],
+      "word_hints": {"教授": "jiào shòu"}
+    },
+    {
+      "question": "Fill in: 她继续 _____ 技术，希望成为专家。",
+      "type": "multiple_choice",
+      "correct": "学习",
+      "options": ["学习", "负责", "招聘", "应聘"],
+      "word_hints": {"技术": "jì shù"}
+    },
+    {
+      "question": "What does 成功 mean?",
+      "type": "multiple_choice",
+      "correct": "Success; to succeed; successful",
+      "options": ["Success; to succeed; successful", "To become", "To manage", "To recruit"],
+      "word_hints": {"成功": "chéng gōng"}
+    },
+    {
+      "question": "What does the phrase 获得经验 mean?",
+      "type": "multiple_choice",
+      "correct": "To gain experience",
+      "options": ["To gain experience", "To become an expert", "To apply for a job", "To develop a career"],
+      "word_hints": {"经验": "jīng yàn"}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "A Job Interview",
+      "title_chinese": "求职面试",
+      "speakers": {
+        "A": {"name": "陈主管", "role": "面试官", "gender": "male"},
+        "B": {"name": "林小玲", "role": "求职者", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "请介绍一下你的工作经历和技术背景。",
+          "pinyin": "Qǐng jiè shào yí xià nǐ de gōng zuò jīng lì hé jì shù bèi jǐng.",
+          "english": "Please introduce your work experience and technical background."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我毕业后通过实习积累了三年的管理经验，现在希望应聘这个职位。",
+          "pinyin": "Wǒ bì yè hòu tōng guò shí xí jī lěi le sān nián de guǎn lǐ jīng yàn, xiàn zài xī wàng yìng pìn zhè ge zhí wèi.",
+          "english": "After graduation, I accumulated three years of management experience through internships, and I now hope to apply for this position."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好的。你是否愿意负责我们的新项目？",
+          "pinyin": "Hǎo de. Nǐ shì fǒu yuàn yì fù zé wǒ men de xīn xiàng mù?",
+          "english": "Good. Are you willing to be responsible for our new project?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "当然愿意！我希望通过这份工作继续提高我的职业技术。",
+          "pinyin": "Dāng rán yuàn yì! Wǒ xī wàng tōng guò zhè fèn gōng zuò jì xù tí gāo wǒ de zhí yè jì shù.",
+          "english": "Of course I am willing! I hope to continue improving my professional skills through this work."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我们也在招聘一名记者来负责对外宣传，你有兴趣吗？",
+          "pinyin": "Wǒ men yě zài zhāo pìn yì míng jì zhě lái fù zé duì wài xuān chuán, nǐ yǒu xìng qù ma?",
+          "english": "We are also recruiting a reporter to handle external publicity. Are you interested?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我更希望成为管理者，但我会继续努力，争取早日成功。",
+          "pinyin": "Wǒ gèng xī wàng chéng wéi guǎn lǐ zhě, dàn wǒ huì jì xù nǔ lì, zhēng qǔ zǎo rì chéng gōng.",
+          "english": "I hope more to become a manager, but I will keep working hard and strive to succeed early."
+        },
+        {
+          "speaker": "A",
+          "chinese": "很好，你是一个很负责任的人，欢迎你加入我们的团队。",
+          "pinyin": "Hěn hǎo, nǐ shì yí gè hěn fù zé rèn de rén, huān yíng nǐ jiā rù wǒ men de tuán duì.",
+          "english": "Very good. You are a very responsible person. Welcome to our team."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Career Advice from a Professor",
+      "title_chinese": "教授的职业建议",
+      "speakers": {
+        "A": {"name": "王教授", "role": "教授", "gender": "male"},
+        "B": {"name": "小李", "role": "学生", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "王教授，我想成为一名博士，但不知道如何开始职业发展。",
+          "pinyin": "Wáng jiào shòu, wǒ xiǎng chéng wéi yì míng bó shì, dàn bù zhī dào rú hé kāi shǐ zhí yè fā zhǎn.",
+          "english": "Professor Wang, I want to become a PhD but I don't know how to begin my career development."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你需要通过研究和学习积累经验，然后继续提高你的技术水平。",
+          "pinyin": "Nǐ xū yào tōng guò yán jiū hé xué xí jī lěi jīng yàn, rán hòu jì xù tí gāo nǐ de jì shù shuǐ píng.",
+          "english": "You need to accumulate experience through research and study, and then continue to improve your technical level."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我应该负责哪些方面的工作？",
+          "pinyin": "Wǒ yīng gāi fù zé nǎ xiē fāng miàn de gōng zuò?",
+          "english": "What aspects of work should I be responsible for?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "先负责基础研究，通过这些经历你会慢慢成长。",
+          "pinyin": "Xiān fù zé jī chǔ yán jiū, tōng guò zhè xiē jīng lì nǐ huì màn màn chéng zhǎng.",
+          "english": "Start by being responsible for basic research. Through these experiences you will grow gradually."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那成功的秘诀是什么？",
+          "pinyin": "Nà chéng gōng de mì jué shì shén me?",
+          "english": "Then what is the secret to success?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "继续努力，保持负责的态度，通过学习不断提高，成功自然就会来。",
+          "pinyin": "Jì xù nǔ lì, bǎo chí fù zé de tài dù, tōng guò xué xí bú duàn tí gāo, chéng gōng zì rán jiù huì lái.",
+          "english": "Keep working hard, maintain a responsible attitude, and keep improving through learning. Success will come naturally."
+        }
+      ]
+    }
+  ]
+}

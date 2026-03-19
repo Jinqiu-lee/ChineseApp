@@ -50,6 +50,21 @@ import hsk3lesson12 from '../data/hsk3/hsk3_lesson_12.json';
 import hsk3lesson13 from '../data/hsk3/hsk3_lesson_13.json';
 import hsk3lesson14 from '../data/hsk3/hsk3_lesson_14.json';
 import hsk3lesson15 from '../data/hsk3/hsk3_lesson_15.json';
+import hsk4lesson1  from '../data/hsk4_level4/hsk4_lesson_1.json';
+import hsk4lesson2  from '../data/hsk4_level4/hsk4_lesson_2.json';
+import hsk4lesson3  from '../data/hsk4_level4/hsk4_lesson_3.json';
+import hsk4lesson4  from '../data/hsk4_level4/hsk4_lesson_4.json';
+import hsk4lesson5  from '../data/hsk4_level4/hsk4_lesson_5.json';
+import hsk4lesson6  from '../data/hsk4_level4/hsk4_lesson_6.json';
+import hsk4lesson7  from '../data/hsk4_level4/hsk4_lesson_7.json';
+import hsk4lesson8  from '../data/hsk4_level4/hsk4_lesson_8.json';
+import hsk4lesson9  from '../data/hsk4_level4/hsk4_lesson_9.json';
+import hsk4lesson10 from '../data/hsk4_level4/hsk4_lesson_10.json';
+import hsk4lesson11 from '../data/hsk4_level4/hsk4_lesson_11.json';
+import hsk4lesson12 from '../data/hsk4_level4/hsk4_lesson_12.json';
+import hsk4lesson13 from '../data/hsk4_level4/hsk4_lesson_13.json';
+import hsk4lesson14 from '../data/hsk4_level4/hsk4_lesson_14.json';
+import hsk4lesson15 from '../data/hsk4_level4/hsk4_lesson_15.json';
 
 const LESSONS_BY_LEVEL = {
   hsk1: {
@@ -79,6 +94,11 @@ const LESSONS_BY_LEVEL = {
     6: hsk3lesson6, 7: hsk3lesson7, 8: hsk3lesson8, 9: hsk3lesson9, 10: hsk3lesson10,
     11: hsk3lesson11, 12: hsk3lesson12, 13: hsk3lesson13, 14: hsk3lesson14, 15: hsk3lesson15,
   },
+  hsk4: {
+    1: hsk4lesson1, 2: hsk4lesson2, 3: hsk4lesson3, 4: hsk4lesson4, 5: hsk4lesson5,
+    6: hsk4lesson6, 7: hsk4lesson7, 8: hsk4lesson8, 9: hsk4lesson9, 10: hsk4lesson10,
+    11: hsk4lesson11, 12: hsk4lesson12, 13: hsk4lesson13, 14: hsk4lesson14, 15: hsk4lesson15,
+  },
 };
 
 // Fallback for callers that don't pass levelId
@@ -104,6 +124,7 @@ export default function LessonDetailScreen({
   stageProgress = [],
   currentRound = 1,
   quizUnlocked = false,
+  devUnlockAll = false,
   onBack,
   onLessonComplete,
   onTakeQuiz,
@@ -129,7 +150,7 @@ export default function LessonDetailScreen({
     );
   }
 
-  const isUnlocked = (i) => i === 0 || stageProgress.includes(i - 1);
+  const isUnlocked = (i) => devUnlockAll || i === 0 || stageProgress.includes(i - 1);
   const isCompleted = (i) => stageProgress.includes(i);
   const completedCount = stageProgress.length;
 
@@ -200,18 +221,7 @@ export default function LessonDetailScreen({
             </Text>
           </TouchableOpacity>
 
-          {levelId !== 'hsk1' ? (
-            <TouchableOpacity
-              style={[styles.learnBtn, styles.learnBtnCharacters]}
-              onPress={() => Alert.alert('Chinese Characters', 'Chinese Characters learning module coming soon! ✍️')}
-              activeOpacity={0.8}
-            >
-              <Text style={styles.learnBtnEmoji}>✍️</Text>
-              <Text style={[styles.learnBtnLabel, styles.learnBtnLabelCharacters]}>
-                Characters
-              </Text>
-            </TouchableOpacity>
-          ) : (
+          {levelId === 'hsk1' ? (
             <TouchableOpacity
               style={[styles.learnBtn, styles.learnBtnPinyin]}
               onPress={onOpenPinyin}
@@ -220,6 +230,28 @@ export default function LessonDetailScreen({
               <Text style={styles.learnBtnEmoji}>🎵</Text>
               <Text style={[styles.learnBtnLabel, styles.learnBtnLabelPinyin]}>
                 Pinyin
+              </Text>
+            </TouchableOpacity>
+          ) : levelId === 'hsk4' || levelId === 'hsk5' ? (
+            <TouchableOpacity
+              style={[styles.learnBtn, styles.learnBtnCulture]}
+              onPress={() => toggleSection('culture')}
+              activeOpacity={0.8}
+            >
+              <Text style={styles.learnBtnEmoji}>🏮</Text>
+              <Text style={[styles.learnBtnLabel, openSection === 'culture' && styles.learnBtnLabelActive]}>
+                Idioms & Culture
+              </Text>
+            </TouchableOpacity>
+          ) : (
+            <TouchableOpacity
+              style={[styles.learnBtn, styles.learnBtnCharacters]}
+              onPress={() => Alert.alert('Chinese Characters', 'Chinese Characters learning module coming soon! ✍️')}
+              activeOpacity={0.8}
+            >
+              <Text style={styles.learnBtnEmoji}>✍️</Text>
+              <Text style={[styles.learnBtnLabel, styles.learnBtnLabelCharacters]}>
+                Characters
               </Text>
             </TouchableOpacity>
           )}
@@ -239,6 +271,29 @@ export default function LessonDetailScreen({
         {openSection === 'grammar' && (
           <View style={styles.expandedSection}>
             <GrammarSection grammarPoints={lesson.grammar_points} />
+          </View>
+        )}
+        {openSection === 'culture' && (
+          <View style={styles.expandedSection}>
+            {(lesson.culture_notes || []).map(note => (
+              <View key={note.id} style={styles.cultureCard}>
+                <Text style={styles.cultureTitleChinese}>{note.title_chinese}</Text>
+                <Text style={styles.cultureTitle}>{note.title}</Text>
+                <Text style={styles.cultureContent}>{note.content}</Text>
+                {note.idioms?.length > 0 && (
+                  <View style={styles.idiomsBlock}>
+                    <Text style={styles.idiomsHeading}>📜 Key Idioms</Text>
+                    {note.idioms.map((idiom, idx) => (
+                      <View key={idx} style={styles.idiomRow}>
+                        <Text style={styles.idiomChinese}>{idiom.chinese}</Text>
+                        <Text style={styles.idiomPinyin}>{idiom.pinyin}</Text>
+                        <Text style={styles.idiomEnglish}>{idiom.english}</Text>
+                      </View>
+                    ))}
+                  </View>
+                )}
+              </View>
+            ))}
           </View>
         )}
 
@@ -402,11 +457,28 @@ const styles = StyleSheet.create({
   learnBtnActive:  { borderColor: '#a29bfe', backgroundColor: 'rgba(162,155,254,0.1)' },
   learnBtnPinyin:      { borderColor: '#54A0FF', backgroundColor: 'rgba(84,160,255,0.08)' },
   learnBtnCharacters:  { borderColor: '#1DD1A1', backgroundColor: 'rgba(29,209,161,0.08)' },
+  learnBtnCulture:     { borderColor: '#FF9F43', backgroundColor: 'rgba(255,159,67,0.08)' },
   learnBtnEmoji: { fontSize: 24 },
   learnBtnLabel: { fontSize: 14, fontWeight: '700', color: '#636e72', textAlign: 'center' },
   learnBtnLabelActive:  { color: '#a29bfe' },
   learnBtnLabelPinyin:      { color: '#54A0FF' },
   learnBtnLabelCharacters:  { color: '#1DD1A1' },
+
+  // Culture / Idioms section
+  cultureCard: {
+    backgroundColor: 'rgba(255,159,67,0.06)', borderRadius: 14,
+    borderWidth: 1, borderColor: 'rgba(255,159,67,0.25)',
+    padding: 16, marginBottom: 16,
+  },
+  cultureTitleChinese: { fontSize: 18, fontWeight: '800', color: '#FF9F43', marginBottom: 2 },
+  cultureTitle:   { fontSize: 13, fontWeight: '600', color: '#b2bec3', marginBottom: 10 },
+  cultureContent: { fontSize: 14, color: '#dfe6e9', lineHeight: 22 },
+  idiomsBlock:    { marginTop: 14, paddingTop: 12, borderTopWidth: 1, borderTopColor: 'rgba(255,159,67,0.2)' },
+  idiomsHeading:  { fontSize: 14, fontWeight: '700', color: '#FF9F43', marginBottom: 10 },
+  idiomRow:       { marginBottom: 10 },
+  idiomChinese:   { fontSize: 16, fontWeight: '800', color: '#fff', marginBottom: 2 },
+  idiomPinyin:    { fontSize: 12, color: '#FF9F43', fontStyle: 'italic', marginBottom: 2 },
+  idiomEnglish:   { fontSize: 13, color: '#b2bec3' },
 
   // Quiz banner (below stages)
   quizBanner: {

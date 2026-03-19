@@ -282,6 +282,18 @@
     },
     {
       "type": "listen_syllable",
+      "syllable": "yún",
+      "audio_key": "yun2",
+      "correct": "yun",
+      "choices": [
+        "yin",
+        "yun",
+        "ying",
+        "yuan"
+      ]
+    },
+    {
+      "type": "listen_syllable",
       "syllable": "yīng",
       "audio_key": "ying1",
       "correct": "ying",
@@ -347,6 +359,12 @@
       "audio_key": "yue4",
       "meaning": "moon/month",
       "chinese": "月"
+    },
+    {
+      "syllable": "yún",
+      "audio_key": "yun2",
+      "meaning": "cloud",
+      "chinese": "云"
     },
     {
       "syllable": "yīng",

@@ -1,0 +1,649 @@
+{
+  "lesson": 13,
+  "level": 4,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Happiness & Contentment",
+  "topic_chinese": "幸福的标准（一）",
+  "vocabulary": [
+    {
+      "id": "hsk4_l13_01",
+      "chinese": "幸福",
+      "pinyin": "xìng fú",
+      "english": "Happiness; happy; blessed",
+      "part_of_speech": "noun/adjective"
+    },
+    {
+      "id": "hsk4_l13_02",
+      "chinese": "愉快",
+      "pinyin": "yú kuài",
+      "english": "Happy; cheerful; pleasant",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l13_03",
+      "chinese": "开心",
+      "pinyin": "kāi xīn",
+      "english": "Happy; joyful (informal, colloquial)",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l13_04",
+      "chinese": "满",
+      "pinyin": "mǎn",
+      "english": "Full; satisfied; whole",
+      "part_of_speech": "adjective/verb"
+    },
+    {
+      "id": "hsk4_l13_05",
+      "chinese": "梦",
+      "pinyin": "mèng",
+      "english": "Dream (noun); to dream",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk4_l13_06",
+      "chinese": "理想",
+      "pinyin": "lǐ xiǎng",
+      "english": "Ideal; dream; aspiration",
+      "part_of_speech": "noun/adjective"
+    },
+    {
+      "id": "hsk4_l13_07",
+      "chinese": "目的",
+      "pinyin": "mù dì",
+      "english": "Purpose; goal; objective",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l13_08",
+      "chinese": "总结",
+      "pinyin": "zǒng jié",
+      "english": "To summarize; summary; in summary",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l13_09",
+      "chinese": "原来",
+      "pinyin": "yuán lái",
+      "english": "Originally; it turns out; as it turns out",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk4_l13_10",
+      "chinese": "原因",
+      "pinyin": "yuán yīn",
+      "english": "Reason; cause",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l13_11",
+      "chinese": "感谢",
+      "pinyin": "gǎn xiè",
+      "english": "To thank; gratitude",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l13_12",
+      "chinese": "轻松",
+      "pinyin": "qīng sōng",
+      "english": "Relaxed; light; easy",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l13_p01",
+      "chinese": "幸福生活",
+      "pinyin": "xìng fú shēng huó",
+      "english": "A happy life",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l13_p02",
+      "chinese": "心情愉快",
+      "pinyin": "xīn qíng yú kuài",
+      "english": "To be in a pleasant mood",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l13_p03",
+      "chinese": "实现理想",
+      "pinyin": "shí xiàn lǐ xiǎng",
+      "english": "To realize one's ideal; to achieve one's dream",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l13_p04",
+      "chinese": "感谢生活",
+      "pinyin": "gǎn xiè shēng huó",
+      "english": "To be grateful for life",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l13_p05",
+      "chinese": "轻松自在",
+      "pinyin": "qīng sōng zì zài",
+      "english": "Relaxed and carefree",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "对他来说，幸福生活就是家人健康、心情愉快。",
+      "pinyin": "Duì tā lái shuō, xìng fú shēng huó jiù shì jiā rén jiàn kāng, xīn qíng yú kuài.",
+      "english": "For him, a happy life means family health and being in a pleasant mood."
+    },
+    {
+      "chinese": "其实，幸福不需要很多，知足常乐是最好的总结。",
+      "pinyin": "Qí shí, xìng fú bù xū yào hěn duō, zhī zú cháng lè shì zuì hǎo de zǒng jié.",
+      "english": "Actually, happiness doesn't require much. Contentment brings lasting joy — that is the best summary."
+    },
+    {
+      "chinese": "她实现了自己的理想，原来幸福就这么简单。",
+      "pinyin": "Tā shí xiàn le zì jǐ de lǐ xiǎng, yuán lái xìng fú jiù zhè me jiǎn dān.",
+      "english": "She achieved her ideal, and it turns out happiness is this simple."
+    },
+    {
+      "chinese": "感谢生活中每一个让我感觉轻松自在的时刻。",
+      "pinyin": "Gǎn xiè shēng huó zhōng měi yī gè ràng wǒ gǎn jué qīng sōng zì zài de shí kè.",
+      "english": "I am grateful for every moment in life that makes me feel relaxed and carefree."
+    },
+    {
+      "chinese": "对于幸福，每个人的理解不同，原因也各有不同。",
+      "pinyin": "Duì yú xìng fú, měi ge rén de lǐ jiě bù tóng, yuán yīn yě gè yǒu bù tóng.",
+      "english": "Regarding happiness, each person's understanding is different, and the reasons are also different."
+    },
+    {
+      "chinese": "总结来说，开心、轻松、心满意足就是幸福的真正含义。",
+      "pinyin": "Zǒng jié lái shuō, kāi xīn, qīng sōng, xīn mǎn yì zú jiù shì xìng fú de zhēn zhèng hán yì.",
+      "english": "In summary, being happy, relaxed, and satisfied is the true meaning of happiness."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "对...来说 — For... / From the perspective of...",
+      "explanation": "对...来说 is a pattern meaning 'for (someone)' or 'from the perspective of (someone/something)'. It introduces whose point of view is being expressed. Structure: 对 + Person/Thing + 来说, + Statement. It is used to specify who is being talked about when making a statement about someone's situation, feelings, or viewpoint. Example: 对孩子来说，玩是最重要的。(For children, playing is the most important thing.)",
+      "examples": [
+        {
+          "chinese": "对她来说，实现理想比什么都重要。",
+          "pinyin": "Duì tā lái shuō, shí xiàn lǐ xiǎng bǐ shén me dōu zhòng yào.",
+          "english": "For her, realizing her ideal is more important than anything."
+        },
+        {
+          "chinese": "对我来说，幸福就是每天心情愉快、轻松生活。",
+          "pinyin": "Duì wǒ lái shuō, xìng fú jiù shì měi tiān xīn qíng yú kuài, qīng sōng shēng huó.",
+          "english": "For me, happiness is being in a pleasant mood every day and living a relaxed life."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 他来说，开心比幸福的定义更重要。",
+          "type": "multiple_choice",
+          "correct": "对",
+          "options": ["对", "为", "在", "用"],
+          "option_pinyin": ["duì", "wèi", "zài", "yòng"],
+          "word_hints": {"开心": "kāi xīn", "幸福": "xìng fú"}
+        },
+        {
+          "question": "对她来说，_____ 理想是人生最大的幸福。",
+          "type": "multiple_choice",
+          "correct": "实现",
+          "options": ["实现", "放弃", "忘记", "减少"],
+          "option_pinyin": ["shí xiàn", "fàng qì", "wàng jì", "jiǎn shǎo"],
+          "word_hints": {"理想": "lǐ xiǎng", "幸福": "xìng fú"}
+        },
+        {
+          "question": "Choose the correct use of 对...来说.",
+          "type": "multiple_choice",
+          "correct": "对老人来说，健康最重要。",
+          "options": [
+            "对老人来说，健康最重要。",
+            "老人对来说，健康最重要。",
+            "来说对老人，健康最重要。",
+            "老人来说对，健康最重要。"
+          ],
+          "option_pinyin": [
+            "Duì lǎo rén lái shuō, jiàn kāng zuì zhòng yào.",
+            "Lǎo rén duì lái shuō, jiàn kāng zuì zhòng yào.",
+            "Lái shuō duì lǎo rén, jiàn kāng zuì zhòng yào.",
+            "Lǎo rén lái shuō duì, jiàn kāng zuì zhòng yào."
+          ],
+          "word_hints": {}
+        },
+        {
+          "question": "What does 对...来说 introduce?",
+          "type": "multiple_choice",
+          "correct": "The perspective or viewpoint of a specific person",
+          "options": [
+            "The perspective or viewpoint of a specific person",
+            "A cause or reason",
+            "A contrast",
+            "A condition"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "对我 _____ ，感谢生活是保持幸福的方法。",
+          "type": "multiple_choice",
+          "correct": "来说",
+          "options": ["来说", "而言", "认为", "看来"],
+          "option_pinyin": ["lái shuō", "ér yán", "rèn wéi", "kàn lái"],
+          "word_hints": {"感谢": "gǎn xiè", "幸福": "xìng fú"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "其实 — Actually / In fact",
+      "explanation": "其实 (qí shí) is an adverb meaning 'actually', 'in fact', or 'as a matter of fact'. It is used to introduce a statement that corrects a misconception, reveals a truth, or contradicts what was previously assumed. Structure: 其实 + [True Statement]. It is placed at the beginning of the sentence or before the verb. Example: 大家以为他很严格，其实他很幽默。(Everyone thought he was very strict; actually, he is very humorous.)",
+      "examples": [
+        {
+          "chinese": "很多人以为幸福很复杂，其实很简单。",
+          "pinyin": "Hěn duō rén yǐ wéi xìng fú hěn fù zá, qí shí hěn jiǎn dān.",
+          "english": "Many people think happiness is complicated; actually it's very simple."
+        },
+        {
+          "chinese": "他看起来不开心，其实内心非常轻松愉快。",
+          "pinyin": "Tā kàn qǐ lái bù kāi xīn, qí shí nèi xīn fēi cháng qīng sōng yú kuài.",
+          "english": "He looks unhappy, but actually his heart is very relaxed and cheerful."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "大家以为实现理想很难，_____ 只要坚持就能做到。",
+          "type": "multiple_choice",
+          "correct": "其实",
+          "options": ["其实", "原来", "竟然", "仍然"],
+          "option_pinyin": ["qí shí", "yuán lái", "jìng rán", "réng rán"],
+          "word_hints": {"理想": "lǐ xiǎng", "坚持": "jiān chí"}
+        },
+        {
+          "question": "她表面上很幸福，_____ 内心有很多担心。",
+          "type": "multiple_choice",
+          "correct": "其实",
+          "options": ["其实", "仍然", "突然", "已经"],
+          "option_pinyin": ["qí shí", "réng rán", "tū rán", "yǐ jīng"],
+          "word_hints": {"幸福": "xìng fú"}
+        },
+        {
+          "question": "Choose the correct use of 其实.",
+          "type": "multiple_choice",
+          "correct": "我以为他不开心，其实他非常轻松。",
+          "options": [
+            "我以为他不开心，其实他非常轻松。",
+            "其实我以为他不开心，他非常轻松。",
+            "我以为其实他不开心，他非常轻松。",
+            "我以为他不开心，他其实非常轻松。"
+          ],
+          "option_pinyin": [
+            "Wǒ yǐ wéi tā bù kāi xīn, qí shí tā fēi cháng qīng sōng.",
+            "Qí shí wǒ yǐ wéi tā bù kāi xīn, tā fēi cháng qīng sōng.",
+            "Wǒ yǐ wéi qí shí tā bù kāi xīn, tā fēi cháng qīng sōng.",
+            "Wǒ yǐ wéi tā bù kāi xīn, tā qí shí fēi cháng qīng sōng."
+          ],
+          "word_hints": {"开心": "kāi xīn", "轻松": "qīng sōng"}
+        },
+        {
+          "question": "其实 is used to:",
+          "type": "multiple_choice",
+          "correct": "Correct a misconception or reveal what is actually true",
+          "options": [
+            "Correct a misconception or reveal what is actually true",
+            "Emphasize a surprising event",
+            "Introduce a condition",
+            "Express a reason"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "幸福感觉很难找，_____ 就在我们身边。",
+          "type": "multiple_choice",
+          "correct": "其实",
+          "options": ["其实", "否则", "由于", "当然"],
+          "option_pinyin": ["qí shí", "fǒu zé", "yóu yú", "dāng rán"],
+          "word_hints": {"幸福": "xìng fú"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "总结 — To summarize / In summary",
+      "explanation": "总结 (zǒng jié) functions as both a verb ('to summarize') and a noun ('a summary'). As a verb: Subject + 总结 + Object. As a discourse marker: 总结来说 or 总结一下 (in summary / to sum up) appears at the beginning of a concluding statement. It signals that what follows is a summary or final conclusion. Example: 总结来说，幸福需要简单的心态。(In summary, happiness requires a simple mindset.)",
+      "examples": [
+        {
+          "chinese": "总结来说，开心、轻松、感谢生活就是幸福的秘诀。",
+          "pinyin": "Zǒng jié lái shuō, kāi xīn, qīng sōng, gǎn xiè shēng huó jiù shì xìng fú de mì jué.",
+          "english": "In summary, being happy, relaxed, and grateful for life is the secret of happiness."
+        },
+        {
+          "chinese": "他总结了幸福的原因，原来都是生活中的小事。",
+          "pinyin": "Tā zǒng jié le xìng fú de yuán yīn, yuán lái dōu shì shēng huó zhōng de xiǎo shì.",
+          "english": "He summarized the reasons for happiness; it turns out they are all the small things in life."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 来说，幸福生活需要轻松的心态。",
+          "type": "multiple_choice",
+          "correct": "总结",
+          "options": ["总结", "其实", "原来", "竟然"],
+          "option_pinyin": ["zǒng jié", "qí shí", "yuán lái", "jìng rán"],
+          "word_hints": {"幸福": "xìng fú", "轻松": "qīng sōng"}
+        },
+        {
+          "question": "Choose the correct use of 总结.",
+          "type": "multiple_choice",
+          "correct": "总结来说，感谢生活是幸福的关键。",
+          "options": [
+            "总结来说，感谢生活是幸福的关键。",
+            "来说总结，感谢生活是幸福的关键。",
+            "感谢生活总结来说，是幸福的关键。",
+            "是幸福的关键，总结来说感谢生活。"
+          ],
+          "option_pinyin": [
+            "Zǒng jié lái shuō, gǎn xiè shēng huó shì xìng fú de guān jiàn.",
+            "Lái shuō zǒng jié, gǎn xiè shēng huó shì xìng fú de guān jiàn.",
+            "Gǎn xiè shēng huó zǒng jié lái shuō, shì xìng fú de guān jiàn.",
+            "Shì xìng fú de guān jiàn, zǒng jié lái shuō gǎn xiè shēng huó."
+          ],
+          "word_hints": {"感谢": "gǎn xiè", "幸福": "xìng fú"}
+        },
+        {
+          "question": "他 _____ 了一年的工作经验，写了一份报告。",
+          "type": "multiple_choice",
+          "correct": "总结",
+          "options": ["总结", "幸福", "开心", "原因"],
+          "option_pinyin": ["zǒng jié", "xìng fú", "kāi xīn", "yuán yīn"],
+          "word_hints": {}
+        },
+        {
+          "question": "总结 can function as:",
+          "type": "multiple_choice",
+          "correct": "Both a verb and a noun",
+          "options": ["Both a verb and a noun", "Only a noun", "Only a verb", "Only an adverb"],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "_____ 一下，她得出了开心是幸福原因的结论。",
+          "type": "multiple_choice",
+          "correct": "总结",
+          "options": ["总结", "感谢", "梦", "满"],
+          "option_pinyin": ["zǒng jié", "gǎn xiè", "mèng", "mǎn"],
+          "word_hints": {"开心": "kāi xīn", "幸福": "xìng fú", "原因": "yuán yīn"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "Contentment Is Happiness — 知足常乐",
+      "title_chinese": "幸福是满足——知足常乐",
+      "content": "The Chinese proverb 知足常乐 (zhī zú cháng lè — 'Knowing contentment brings lasting happiness') is one of the most beloved sayings in Chinese culture, drawing from both Confucian and Taoist philosophy. Taoism especially emphasizes that true happiness comes not from accumulating more, but from appreciating what one already has. This contrasts with the modern consumerist idea that happiness equals acquiring more. In Chinese daily life, this wisdom manifests in many ways: older generations often express gratitude for simple things (health, family, sufficient food), and contentment is seen as a virtue. The concept is particularly relevant today, as rapid economic development has made material wealth more accessible but has also increased stress and dissatisfaction among young people. 知足常乐 serves as a cultural reminder to appreciate the small joys of daily life.",
+      "idioms": [
+        {
+          "chinese": "知足常乐",
+          "pinyin": "zhī zú cháng lè",
+          "english": "Contentment brings lasting happiness; know when enough is enough"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 幸福 mean?",
+      "type": "multiple_choice",
+      "correct": "Happiness; happy; blessed",
+      "options": ["Happiness; happy; blessed", "Joyful", "Relaxed", "Grateful"],
+      "word_hints": {"幸福": "xìng fú"}
+    },
+    {
+      "question": "Which word means 'happy; cheerful; pleasant'?",
+      "type": "multiple_choice",
+      "correct": "愉快",
+      "options": ["愉快", "开心", "轻松", "幸福"],
+      "word_hints": {"愉快": "yú kuài", "开心": "kāi xīn", "轻松": "qīng sōng", "幸福": "xìng fú"}
+    },
+    {
+      "question": "What does 开心 mean?",
+      "type": "multiple_choice",
+      "correct": "Happy; joyful (informal, colloquial)",
+      "options": ["Happy; joyful (informal, colloquial)", "Relaxed", "Satisfied", "Grateful"],
+      "word_hints": {"开心": "kāi xīn"}
+    },
+    {
+      "question": "What does 满 mean?",
+      "type": "multiple_choice",
+      "correct": "Full; satisfied; whole",
+      "options": ["Full; satisfied; whole", "Empty", "Happy", "Worried"],
+      "word_hints": {"满": "mǎn"}
+    },
+    {
+      "question": "What does 理想 mean?",
+      "type": "multiple_choice",
+      "correct": "Ideal; dream; aspiration",
+      "options": ["Ideal; dream; aspiration", "Dream (sleep)", "Goal", "Reality"],
+      "word_hints": {"理想": "lǐ xiǎng"}
+    },
+    {
+      "question": "Which word means 'to summarize; summary'?",
+      "type": "multiple_choice",
+      "correct": "总结",
+      "options": ["总结", "原来", "原因", "感谢"],
+      "word_hints": {"总结": "zǒng jié", "原来": "yuán lái", "原因": "yuán yīn", "感谢": "gǎn xiè"}
+    },
+    {
+      "question": "What does 原来 mean?",
+      "type": "multiple_choice",
+      "correct": "Originally; it turns out; as it turns out",
+      "options": ["Originally; it turns out; as it turns out", "Reason; cause", "Actually", "Unexpectedly"],
+      "word_hints": {"原来": "yuán lái"}
+    },
+    {
+      "question": "What does 原因 mean?",
+      "type": "multiple_choice",
+      "correct": "Reason; cause",
+      "options": ["Reason; cause", "Originally", "Summary", "Gratitude"],
+      "word_hints": {"原因": "yuán yīn"}
+    },
+    {
+      "question": "Which word means 'to thank; gratitude'?",
+      "type": "multiple_choice",
+      "correct": "感谢",
+      "options": ["感谢", "原因", "理想", "梦"],
+      "word_hints": {"感谢": "gǎn xiè", "原因": "yuán yīn", "理想": "lǐ xiǎng", "梦": "mèng"}
+    },
+    {
+      "question": "What does 轻松 mean?",
+      "type": "multiple_choice",
+      "correct": "Relaxed; light; easy",
+      "options": ["Relaxed; light; easy", "Happy", "Satisfied", "Grateful"],
+      "word_hints": {"轻松": "qīng sōng"}
+    },
+    {
+      "question": "Fill in: _____ 她来说，开心是幸福的最重要条件。",
+      "type": "multiple_choice",
+      "correct": "对",
+      "options": ["对", "为", "给", "在"],
+      "word_hints": {"开心": "kāi xīn", "幸福": "xìng fú"}
+    },
+    {
+      "question": "What does 其实 mean?",
+      "type": "multiple_choice",
+      "correct": "Actually; in fact",
+      "options": ["Actually; in fact", "Originally", "Unexpectedly", "In summary"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 总结来说 mean?",
+      "type": "multiple_choice",
+      "correct": "In summary; to sum up",
+      "options": ["In summary; to sum up", "Actually", "Unexpectedly", "For the purpose of"],
+      "word_hints": {"总结": "zǒng jié"}
+    },
+    {
+      "question": "Choose the correct use of 对...来说.",
+      "type": "multiple_choice",
+      "correct": "对他来说，感谢生活是幸福。",
+      "options": [
+        "对他来说，感谢生活是幸福。",
+        "他对来说，感谢生活是幸福。",
+        "来说对他，感谢生活是幸福。",
+        "他来说对，感谢生活是幸福。"
+      ],
+      "word_hints": {"感谢": "gǎn xiè", "幸福": "xìng fú"}
+    },
+    {
+      "question": "What does 梦 mean?",
+      "type": "multiple_choice",
+      "correct": "Dream (noun); to dream",
+      "options": ["Dream (noun); to dream", "Ideal", "Goal", "Hope"],
+      "word_hints": {"梦": "mèng"}
+    },
+    {
+      "question": "What does the phrase 心情愉快 mean?",
+      "type": "multiple_choice",
+      "correct": "To be in a pleasant mood",
+      "options": ["To be in a pleasant mood", "To feel happy", "To be relaxed", "To express gratitude"],
+      "word_hints": {"愉快": "yú kuài"}
+    },
+    {
+      "question": "What does the phrase 轻松自在 mean?",
+      "type": "multiple_choice",
+      "correct": "Relaxed and carefree",
+      "options": ["Relaxed and carefree", "Happy and grateful", "Satisfied and joyful", "Simple and easy"],
+      "word_hints": {"轻松": "qīng sōng"}
+    },
+    {
+      "question": "What does the proverb 知足常乐 mean?",
+      "type": "multiple_choice",
+      "correct": "Contentment brings lasting happiness",
+      "options": [
+        "Contentment brings lasting happiness",
+        "Hard work brings success",
+        "Family is the greatest happiness",
+        "Simple life is the best life"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Which philosophy strongly emphasizes the value of contentment (知足) as the key to happiness?",
+      "type": "multiple_choice",
+      "correct": "Taoism",
+      "options": ["Taoism", "Buddhism", "Christianity", "Confucianism"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 目的 mean?",
+      "type": "multiple_choice",
+      "correct": "Purpose; goal; objective",
+      "options": ["Purpose; goal; objective", "Reason", "Summary", "Ideal"],
+      "word_hints": {"目的": "mù dì"}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "What Is Happiness?",
+      "title_chinese": "幸福是什么？",
+      "speakers": {
+        "A": {"name": "小美", "role": "朋友甲", "gender": "female"},
+        "B": {"name": "阿辉", "role": "朋友乙", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "阿辉，对你来说，幸福是什么？",
+          "pinyin": "Ā Huī, duì nǐ lái shuō, xìng fú shì shén me?",
+          "english": "Ah Hui, what is happiness to you?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "对我来说，幸福就是每天心情愉快，轻松自在地生活。",
+          "pinyin": "Duì wǒ lái shuō, xìng fú jiù shì měi tiān xīn qíng yú kuài, qīng sōng zì zài de shēng huó.",
+          "english": "For me, happiness is being in a pleasant mood every day and living a relaxed, carefree life."
+        },
+        {
+          "speaker": "A",
+          "chinese": "原来你觉得幸福这么简单！我以为你会说是实现理想。",
+          "pinyin": "Yuán lái nǐ jué de xìng fú zhè me jiǎn dān! Wǒ yǐ wéi nǐ huì shuō shì shí xiàn lǐ xiǎng.",
+          "english": "So you think happiness is this simple! I thought you would say it's about realizing your ideal."
+        },
+        {
+          "speaker": "B",
+          "chinese": "其实实现理想当然也开心，但不是幸福的全部原因。",
+          "pinyin": "Qí shí shí xiàn lǐ xiǎng dāng rán yě kāi xīn, dàn bú shì xìng fú de quán bù yuán yīn.",
+          "english": "Actually, realizing one's ideal is of course also joyful, but it's not the whole reason for happiness."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那你认为幸福最重要的原因是什么？",
+          "pinyin": "Nà nǐ rèn wéi xìng fú zuì zhòng yào de yuán yīn shì shén me?",
+          "english": "Then what do you think is the most important reason for happiness?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "感谢生活，知足常乐。总结来说，满足才是幸福的根本。",
+          "pinyin": "Gǎn xiè shēng huó, zhī zú cháng lè. Zǒng jié lái shuō, mǎn zú cái shì xìng fú de gēn běn.",
+          "english": "Be grateful for life, and contentment brings lasting joy. In summary, satisfaction is the root of happiness."
+        },
+        {
+          "speaker": "A",
+          "chinese": "说得太好了！我做了一个关于幸福的梦，原来梦里的道理就是这个。",
+          "pinyin": "Shuō de tài hǎo le! Wǒ zuò le yī gè guān yú xìng fú de mèng, yuán lái mèng lǐ de dào lǐ jiù shì zhè ge.",
+          "english": "Well said! I had a dream about happiness, and it turns out the wisdom in the dream was exactly this."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "A Grandmother's Wisdom",
+      "title_chinese": "奶奶的智慧",
+      "speakers": {
+        "A": {"name": "奶奶", "role": "祖母", "gender": "female"},
+        "B": {"name": "孙子", "role": "孙子", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "奶奶，我有很多理想但还没实现，所以不开心。",
+          "pinyin": "Nǎi nai, wǒ yǒu hěn duō lǐ xiǎng dàn hái méi shí xiàn, suǒ yǐ bù kāi xīn.",
+          "english": "Grandma, I have many ideals but haven't realized them yet, so I'm unhappy."
+        },
+        {
+          "speaker": "A",
+          "chinese": "其实，幸福不只是实现理想，对奶奶来说，你健康就是最大的幸福。",
+          "pinyin": "Qí shí, xìng fú bù zhǐ shì shí xiàn lǐ xiǎng, duì nǎi nai lái shuō, nǐ jiàn kāng jiù shì zuì dà de xìng fú.",
+          "english": "Actually, happiness is not only about realizing ideals. For Grandma, your good health is the greatest happiness."
+        },
+        {
+          "speaker": "B",
+          "chinese": "原来您觉得幸福这么简单，这是您的目的吗？",
+          "pinyin": "Yuán lái nín jué de xìng fú zhè me jiǎn dān, zhè shì nín de mù dì ma?",
+          "english": "So you think happiness is this simple. Is this your purpose?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "知足常乐，感谢生活中每一个愉快的时刻，这就是我的幸福。",
+          "pinyin": "Zhī zú cháng lè, gǎn xiè shēng huó zhōng měi yī gè yú kuài de shí kè, zhè jiù shì wǒ de xìng fú.",
+          "english": "Contentment brings lasting joy. Be grateful for every pleasant moment in life. That is my happiness."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我明白了，总结来说，心满意足，生活就会轻松愉快。",
+          "pinyin": "Wǒ míng bái le, zǒng jié lái shuō, xīn mǎn yì zú, shēng huó jiù huì qīng sōng yú kuài.",
+          "english": "I understand now. In summary, when the heart is satisfied, life will be relaxed and pleasant."
+        },
+        {
+          "speaker": "A",
+          "chinese": "说得对！有梦想是好的，但要感谢你已经拥有的一切。",
+          "pinyin": "Shuō de duì! Yǒu mèng xiǎng shì hǎo de, dàn yào gǎn xiè nǐ yǐ jīng yǒng yǒu de yī qiē.",
+          "english": "Well said! Having dreams is good, but you should be grateful for everything you already have."
+        }
+      ]
+    }
+  ]
+}

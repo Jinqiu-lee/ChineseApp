@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { View, ActivityIndicator, StyleSheet } from 'react-native';
+
+// ── Developer flag ───────────────────────────────────────────
+// TODO: set to false before release
+const DEV_UNLOCK_ALL = true;
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import OnboardingScreen from './screens/OnboardingScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -81,11 +85,27 @@ import hsk3lesson12 from './data/hsk3/hsk3_lesson_12.json';
 import hsk3lesson13 from './data/hsk3/hsk3_lesson_13.json';
 import hsk3lesson14 from './data/hsk3/hsk3_lesson_14.json';
 import hsk3lesson15 from './data/hsk3/hsk3_lesson_15.json';
+import hsk4lesson1  from './data/hsk4_level4/hsk4_lesson_1.json';
+import hsk4lesson2  from './data/hsk4_level4/hsk4_lesson_2.json';
+import hsk4lesson3  from './data/hsk4_level4/hsk4_lesson_3.json';
+import hsk4lesson4  from './data/hsk4_level4/hsk4_lesson_4.json';
+import hsk4lesson5  from './data/hsk4_level4/hsk4_lesson_5.json';
+import hsk4lesson6  from './data/hsk4_level4/hsk4_lesson_6.json';
+import hsk4lesson7  from './data/hsk4_level4/hsk4_lesson_7.json';
+import hsk4lesson8  from './data/hsk4_level4/hsk4_lesson_8.json';
+import hsk4lesson9  from './data/hsk4_level4/hsk4_lesson_9.json';
+import hsk4lesson10 from './data/hsk4_level4/hsk4_lesson_10.json';
+import hsk4lesson11 from './data/hsk4_level4/hsk4_lesson_11.json';
+import hsk4lesson12 from './data/hsk4_level4/hsk4_lesson_12.json';
+import hsk4lesson13 from './data/hsk4_level4/hsk4_lesson_13.json';
+import hsk4lesson14 from './data/hsk4_level4/hsk4_lesson_14.json';
+import hsk4lesson15 from './data/hsk4_level4/hsk4_lesson_15.json';
 
 const LESSONS_BY_LEVEL = {
   hsk1: { 1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5, 6: lesson6, 7: lesson7, 8: lesson8, 9: lesson9, 10: lesson10, 11: lesson11, 12: lesson12, 13: lesson13, 14: lesson14, 15: lesson15 },
   hsk2: { 1: hsk2lesson1, 2: hsk2lesson2, 3: hsk2lesson3, 4: hsk2lesson4, 5: hsk2lesson5, 6: hsk2lesson6, 7: hsk2lesson7, 8: hsk2lesson8, 9: hsk2lesson9, 10: hsk2lesson10, 11: hsk2lesson11, 12: hsk2lesson12, 13: hsk2lesson13, 14: hsk2lesson14, 15: hsk2lesson15 },
   hsk3: { 1: hsk3lesson1, 2: hsk3lesson2, 3: hsk3lesson3, 4: hsk3lesson4, 5: hsk3lesson5, 6: hsk3lesson6, 7: hsk3lesson7, 8: hsk3lesson8, 9: hsk3lesson9, 10: hsk3lesson10, 11: hsk3lesson11, 12: hsk3lesson12, 13: hsk3lesson13, 14: hsk3lesson14, 15: hsk3lesson15 },
+  hsk4: { 1: hsk4lesson1, 2: hsk4lesson2, 3: hsk4lesson3, 4: hsk4lesson4, 5: hsk4lesson5, 6: hsk4lesson6, 7: hsk4lesson7, 8: hsk4lesson8, 9: hsk4lesson9, 10: hsk4lesson10, 11: hsk4lesson11, 12: hsk4lesson12, 13: hsk4lesson13, 14: hsk4lesson14, 15: hsk4lesson15 },
 };
 const LESSONS = LESSONS_BY_LEVEL.hsk1; // keep for backward compat
 
@@ -349,7 +369,7 @@ export default function App() {
 
   const handleLevelQuizComplete = (score) => {
     const levelId = currentQuizLevelId || userData?.result?.recommendedLevel || 'hsk1';
-    if (score >= 60) {
+    if (DEV_UNLOCK_ALL || score >= 60) {
       const idx = ALL_LEVEL_IDS.indexOf(levelId);
       const nextLevel = idx >= 0 && idx < ALL_LEVEL_IDS.length - 1 ? ALL_LEVEL_IDS[idx + 1] : null;
       setLevelState(prev => ({
@@ -418,7 +438,7 @@ export default function App() {
   // Quiz unlocked when: Round 2 all done + ≥90% combined accuracy, OR Round 3 all done
   const r2Done = (stageProgress[`${currentLessonLevelId}_${currentLessonId}_r2`] || []).length >= 5;
   const r3Done = (stageProgress[`${currentLessonLevelId}_${currentLessonId}_r3`] || []).length >= 5;
-  const quizUnlocked = (r2Done && combinedAccuracy >= 90) || r3Done;
+  const quizUnlocked = DEV_UNLOCK_ALL || (r2Done && combinedAccuracy >= 90) || r3Done;
 
   // ── Screens ──────────────────────────────────────────────────
   if (currentScreen === 'onboarding') {
@@ -455,6 +475,7 @@ export default function App() {
         stageProgress={currentStageProgressArr}
         currentRound={currentRound}
         quizUnlocked={quizUnlocked}
+        devUnlockAll={DEV_UNLOCK_ALL}
         onBack={() => handleBackToHome(currentLessonLevelId)}
         onLessonComplete={handleLessonComplete}
         onTakeQuiz={handleTakeQuiz}
@@ -469,6 +490,7 @@ export default function App() {
       <LessonStagesScreen
         lessonData={currentLessonData}
         stageProgress={currentStageProgressArr}
+        devUnlockAll={DEV_UNLOCK_ALL}
         onSelectStage={handleSelectStage}
         onBack={() => setCurrentScreen('lesson')}
       />

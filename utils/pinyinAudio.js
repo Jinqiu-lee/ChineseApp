@@ -657,6 +657,7 @@ export const PINYIN_AUDIO = {
   'ci2':   require('../assets/audio/pinyin/tones/ci2.mp3'),   // cí  词 word
   'ci4':   require('../assets/audio/pinyin/tones/ci4.mp3'),   // cì  次 time/occasion
   'yin1':  require('../assets/audio/pinyin/tones/yin1.mp3'),  // yīn 音 sound/music
+  'yun2':  require('../assets/audio/pinyin/tones/yun2.mp3'),  // yún 云 cloud
   'zhan1': require('../assets/audio/pinyin/tones/zhan1.mp3'), // zhān
   'zhang1':require('../assets/audio/pinyin/tones/zhang1.mp3'), // zhāng  章 chapter
   'chong2':require('../assets/audio/pinyin/tones/chong2.mp3'), // chóng  虫 insect

@@ -1,0 +1,654 @@
+{
+  "lesson": 2,
+  "level": 4,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Friendship & Trust",
+  "topic_chinese": "真正的朋友",
+  "vocabulary": [
+    {
+      "id": "hsk4_l2_01",
+      "chinese": "诚实",
+      "pinyin": "chéng shí",
+      "english": "Honest; honesty",
+      "part_of_speech": "adjective/noun"
+    },
+    {
+      "id": "hsk4_l2_02",
+      "chinese": "信心",
+      "pinyin": "xìn xīn",
+      "english": "Confidence; faith",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l2_03",
+      "chinese": "联系",
+      "pinyin": "lián xì",
+      "english": "To contact; to keep in touch; connection",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l2_04",
+      "chinese": "互相",
+      "pinyin": "hù xiāng",
+      "english": "Mutually; each other",
+      "part_of_speech": "adverb"
+    },
+    {
+      "id": "hsk4_l2_05",
+      "chinese": "共同",
+      "pinyin": "gòng tóng",
+      "english": "Common; shared; together",
+      "part_of_speech": "adjective/adverb"
+    },
+    {
+      "id": "hsk4_l2_06",
+      "chinese": "支持",
+      "pinyin": "zhī chí",
+      "english": "To support; support",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l2_07",
+      "chinese": "鼓励",
+      "pinyin": "gǔ lì",
+      "english": "To encourage; encouragement",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l2_08",
+      "chinese": "友谊",
+      "pinyin": "yǒu yì",
+      "english": "Friendship",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l2_09",
+      "chinese": "友好",
+      "pinyin": "yǒu hǎo",
+      "english": "Friendly; amicable",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l2_10",
+      "chinese": "误会",
+      "pinyin": "wù huì",
+      "english": "Misunderstanding; to misunderstand",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk4_l2_11",
+      "chinese": "道歉",
+      "pinyin": "dào qiàn",
+      "english": "To apologize; apology",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l2_12",
+      "chinese": "抱歉",
+      "pinyin": "bào qiàn",
+      "english": "Sorry; to feel sorry",
+      "part_of_speech": "adjective/verb"
+    },
+    {
+      "id": "hsk4_l2_p01",
+      "chinese": "真正的朋友",
+      "pinyin": "zhēn zhèng de péng yǒu",
+      "english": "A true friend",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l2_p02",
+      "chinese": "互相支持",
+      "pinyin": "hù xiāng zhī chí",
+      "english": "To support each other",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l2_p03",
+      "chinese": "共同进步",
+      "pinyin": "gòng tóng jìn bù",
+      "english": "To make progress together",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l2_p04",
+      "chinese": "道歉和好",
+      "pinyin": "dào qiàn hé hǎo",
+      "english": "To apologize and make up",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l2_p05",
+      "chinese": "保持联系",
+      "pinyin": "bǎo chí lián xì",
+      "english": "To keep in touch",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "真正的朋友会互相支持，共同进步。",
+      "pinyin": "Zhēn zhèng de péng yǒu huì hù xiāng zhī chí, gòng tóng jìn bù.",
+      "english": "True friends support each other and make progress together."
+    },
+    {
+      "chinese": "他从来不对朋友说谎，是一个非常诚实的人。",
+      "pinyin": "Tā cóng lái bú duì péng yǒu shuō huǎng, shì yí gè fēi cháng chéng shí de rén.",
+      "english": "He never lies to his friends; he is a very honest person."
+    },
+    {
+      "chinese": "我们虽然有误会，却没有放弃友谊。",
+      "pinyin": "Wǒ men suī rán yǒu wù huì, què méi yǒu fàng qì yǒu yì.",
+      "english": "Although we had a misunderstanding, we did not give up our friendship."
+    },
+    {
+      "chinese": "他道歉之后，两个人的感情更深了。",
+      "pinyin": "Tā dào qiàn zhī hòu, liǎng gè rén de gǎn qíng gèng shēn le.",
+      "english": "After he apologized, their bond became even deeper."
+    },
+    {
+      "chinese": "无论遇到什么困难，她都会鼓励我继续努力。",
+      "pinyin": "Wú lùn yù dào shén me kùn nán, tā dōu huì gǔ lì wǒ jì xù nǔ lì.",
+      "english": "No matter what difficulties I face, she always encourages me to keep working hard."
+    },
+    {
+      "chinese": "我们分开后仍然保持联系，友谊从未中断。",
+      "pinyin": "Wǒ men fēn kāi hòu réng rán bǎo chí lián xì, yǒu yì cóng wèi zhōng duàn.",
+      "english": "After we parted, we still kept in touch, and our friendship was never interrupted."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "却 — But / However (indicating contrast)",
+      "explanation": "却 is placed directly before a verb or adjective to show contrast or an unexpected result. It appears inside the second clause, not at the start of the sentence. It often signals something surprising or contrary to expectations. The subject of the second clause may be stated or omitted if it is the same as the first. Structure: [Clause 1], Subject + 却 + Verb/Adj.",
+      "examples": [
+        {
+          "chinese": "他们有误会，却互相谅解了。",
+          "pinyin": "Tā men yǒu wù huì, què hù xiāng liàng jiě le.",
+          "english": "They had a misunderstanding, but forgave each other anyway."
+        },
+        {
+          "chinese": "她很忙，却从不忘记联系老朋友。",
+          "pinyin": "Tā hěn máng, què cóng bù wàng jì lián xì lǎo péng yǒu.",
+          "english": "She is very busy, but never forgets to contact old friends."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他们发生了误会，_____ 还是好朋友。",
+          "type": "multiple_choice",
+          "correct": "却",
+          "options": ["却", "所以", "因为", "于是"],
+          "option_pinyin": ["què", "suǒ yǐ", "yīn wèi", "yú shì"],
+          "word_hints": {"误会": "wù huì"}
+        },
+        {
+          "question": "Choose the sentence where 却 is used correctly.",
+          "type": "multiple_choice",
+          "correct": "他抱歉了，友谊却更深了。",
+          "options": [
+            "他抱歉了，友谊却更深了。",
+            "却他抱歉了，友谊更深了。",
+            "他抱歉了，友谊更深了却。",
+            "他抱歉却了，友谊更深了。"
+          ],
+          "option_pinyin": [
+            "Tā bào qiàn le, yǒu yì què gèng shēn le.",
+            "Què tā bào qiàn le, yǒu yì gèng shēn le.",
+            "Tā bào qiàn le, yǒu yì gèng shēn le què.",
+            "Tā bào qiàn què le, yǒu yì gèng shēn le."
+          ],
+          "word_hints": {"抱歉": "bào qiàn", "友谊": "yǒu yì"}
+        },
+        {
+          "question": "她没有信心，_____ 坚持下去了。",
+          "type": "multiple_choice",
+          "correct": "却",
+          "options": ["却", "而且", "不仅", "因此"],
+          "option_pinyin": ["què", "ér qiě", "bù jǐn", "yīn cǐ"],
+          "word_hints": {"信心": "xìn xīn"}
+        },
+        {
+          "question": "What does 却 indicate in a sentence?",
+          "type": "multiple_choice",
+          "correct": "An unexpected contrast",
+          "options": ["An unexpected contrast", "A cause and effect", "A condition", "An addition"],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "他道歉了，她 _____ 没有原谅他。",
+          "type": "multiple_choice",
+          "correct": "却",
+          "options": ["却", "也", "都", "还"],
+          "option_pinyin": ["què", "yě", "dōu", "hái"],
+          "word_hints": {"道歉": "dào qiàn"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "从来 — Never / Always (emphasizing habitual negation or affirmation)",
+      "explanation": "从来 is an adverb meaning 'always' or 'never' in the context of habitual behavior. It is almost always used with negation: 从来不 (never) or 从来没有 (have never). Occasionally it can appear with affirmative verbs in set phrases. Structure: Subject + 从来 + 不/没有 + Verb. Example: 他从来不撒谎。(He never lies.) Note: 从来 emphasizes that something has never happened at any time in the past.",
+      "examples": [
+        {
+          "chinese": "他从来不背叛朋友，是一个诚实的人。",
+          "pinyin": "Tā cóng lái bú bèi pàn péng yǒu, shì yí gè chéng shí de rén.",
+          "english": "He never betrays his friends; he is an honest person."
+        },
+        {
+          "chinese": "她从来没有忘记过我们共同的友谊。",
+          "pinyin": "Tā cóng lái méi yǒu wàng jì guò wǒ men gòng tóng de yǒu yì.",
+          "english": "She has never forgotten our shared friendship."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他 _____ 不对朋友说谎。",
+          "type": "multiple_choice",
+          "correct": "从来",
+          "options": ["从来", "经常", "有时", "偶尔"],
+          "option_pinyin": ["cóng lái", "jīng cháng", "yǒu shí", "ǒu ěr"],
+          "word_hints": {}
+        },
+        {
+          "question": "Which sentence correctly uses 从来不?",
+          "type": "multiple_choice",
+          "correct": "她从来不误会朋友。",
+          "options": [
+            "她从来不误会朋友。",
+            "她不从来误会朋友。",
+            "她误会从来不朋友。",
+            "她不误会从来朋友。"
+          ],
+          "option_pinyin": [
+            "Tā cóng lái bù wù huì péng yǒu.",
+            "Tā bù cóng lái wù huì péng yǒu.",
+            "Tā wù huì cóng lái bù péng yǒu.",
+            "Tā bù wù huì cóng lái péng yǒu."
+          ],
+          "word_hints": {"误会": "wù huì"}
+        },
+        {
+          "question": "他们从来没有 _____ 联系。",
+          "type": "multiple_choice",
+          "correct": "中断",
+          "options": ["中断", "保持", "加强", "建立"],
+          "option_pinyin": ["zhōng duàn", "bǎo chí", "jiā qiáng", "jiàn lì"],
+          "word_hints": {"联系": "lián xì"}
+        },
+        {
+          "question": "从来 is most commonly followed by:",
+          "type": "multiple_choice",
+          "correct": "不 or 没有",
+          "options": ["不 or 没有", "很 or 非常", "也 or 都", "已经 or 还"],
+          "option_pinyin": ["bù or méi yǒu", "hěn or fēi cháng", "yě or dōu", "yǐ jīng or hái"],
+          "word_hints": {}
+        },
+        {
+          "question": "真正的朋友从来 _____ 在困难时离开你。",
+          "type": "multiple_choice",
+          "correct": "不会",
+          "options": ["不会", "会", "也会", "都会"],
+          "option_pinyin": ["bú huì", "huì", "yě huì", "dōu huì"],
+          "word_hints": {"友谊": "yǒu yì"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "互相 — Each other / Mutually",
+      "explanation": "互相 is an adverb meaning 'mutually' or 'each other'. It is placed before a verb to show that two or more people are doing something to or for one another. It cannot be used when only one person is doing an action. Structure: Subject (plural) + 互相 + Verb. Example: 他们互相帮助。(They help each other.) Note: 互相 always refers to two or more subjects performing the same action toward one another.",
+      "examples": [
+        {
+          "chinese": "好朋友应该互相鼓励，共同成长。",
+          "pinyin": "Hǎo péng yǒu yīng gāi hù xiāng gǔ lì, gòng tóng chéng zhǎng.",
+          "english": "Good friends should encourage each other and grow together."
+        },
+        {
+          "chinese": "他们互相支持，友谊越来越深。",
+          "pinyin": "Tā men hù xiāng zhī chí, yǒu yì yuè lái yuè shēn.",
+          "english": "They support each other, and their friendship grows deeper and deeper."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "朋友之间应该 _____ 诚实。",
+          "type": "multiple_choice",
+          "correct": "互相",
+          "options": ["互相", "共同", "一起", "分别"],
+          "option_pinyin": ["hù xiāng", "gòng tóng", "yī qǐ", "fēn bié"],
+          "word_hints": {"诚实": "chéng shí"}
+        },
+        {
+          "question": "Which sentence correctly uses 互相?",
+          "type": "multiple_choice",
+          "correct": "他们互相鼓励，共同进步。",
+          "options": [
+            "他们互相鼓励，共同进步。",
+            "他互相鼓励她。",
+            "互相他们鼓励，共同进步。",
+            "他们鼓励互相，共同进步。"
+          ],
+          "option_pinyin": [
+            "Tā men hù xiāng gǔ lì, gòng tóng jìn bù.",
+            "Tā hù xiāng gǔ lì tā.",
+            "Hù xiāng tā men gǔ lì, gòng tóng jìn bù.",
+            "Tā men gǔ lì hù xiāng, gòng tóng jìn bù."
+          ],
+          "word_hints": {"鼓励": "gǔ lì", "共同": "gòng tóng"}
+        },
+        {
+          "question": "他们 _____ 联系，从来不中断友谊。",
+          "type": "multiple_choice",
+          "correct": "互相",
+          "options": ["互相", "自己", "单独", "各自"],
+          "option_pinyin": ["hù xiāng", "zì jǐ", "dān dú", "gè zì"],
+          "word_hints": {"联系": "lián xì", "友谊": "yǒu yì"}
+        },
+        {
+          "question": "互相 can only be used when:",
+          "type": "multiple_choice",
+          "correct": "Two or more people do the same action toward each other",
+          "options": [
+            "Two or more people do the same action toward each other",
+            "One person does an action by themselves",
+            "Someone does an action in the future",
+            "Someone does an action occasionally"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "朋友要 _____ 支持，这样友谊才能长久。",
+          "type": "multiple_choice",
+          "correct": "互相",
+          "options": ["互相", "努力", "经常", "已经"],
+          "option_pinyin": ["hù xiāng", "nǔ lì", "jīng cháng", "yǐ jīng"],
+          "word_hints": {"支持": "zhī chí", "友谊": "yǒu yì"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "Friendship Proverb — 在外靠朋友",
+      "title_chinese": "在客乡，出门靠朋友",
+      "content": "A well-known Chinese saying goes: 在家靠父母，出门靠朋友 (At home you rely on your parents; outside you rely on your friends). This proverb reflects the central role that social connections play in Chinese culture. While Western culture often emphasizes individual independence, Chinese culture places great value on building and maintaining a network of trusted relationships (关系, guānxi). Friends are expected to help each other in practical ways — not just emotionally. The act of asking for help is seen as an expression of trust, and refusing to help can damage a relationship. Maintaining friendships over time through regular contact and mutual support is considered a virtue.",
+      "idioms": [
+        {
+          "chinese": "患难见真情",
+          "pinyin": "huàn nàn jiàn zhēn qíng",
+          "english": "Adversity reveals true friendship"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 诚实 mean?",
+      "type": "multiple_choice",
+      "correct": "Honest; honesty",
+      "options": ["Honest; honesty", "Friendly", "Mutual", "Brave"],
+      "word_hints": {"诚实": "chéng shí"}
+    },
+    {
+      "question": "Which word means 'confidence; faith'?",
+      "type": "multiple_choice",
+      "correct": "信心",
+      "options": ["信心", "联系", "友谊", "支持"],
+      "word_hints": {"信心": "xìn xīn", "联系": "lián xì", "友谊": "yǒu yì", "支持": "zhī chí"}
+    },
+    {
+      "question": "What does 联系 mean?",
+      "type": "multiple_choice",
+      "correct": "To contact; to keep in touch",
+      "options": ["To contact; to keep in touch", "To encourage", "To misunderstand", "To apologize"],
+      "word_hints": {"联系": "lián xì"}
+    },
+    {
+      "question": "Which word means 'mutually; each other'?",
+      "type": "multiple_choice",
+      "correct": "互相",
+      "options": ["互相", "共同", "友好", "诚实"],
+      "word_hints": {"互相": "hù xiāng", "共同": "gòng tóng", "友好": "yǒu hǎo", "诚实": "chéng shí"}
+    },
+    {
+      "question": "What does 友谊 mean?",
+      "type": "multiple_choice",
+      "correct": "Friendship",
+      "options": ["Friendship", "Friendly", "Confidence", "Misunderstanding"],
+      "word_hints": {"友谊": "yǒu yì"}
+    },
+    {
+      "question": "Which word means 'to encourage'?",
+      "type": "multiple_choice",
+      "correct": "鼓励",
+      "options": ["鼓励", "支持", "联系", "道歉"],
+      "word_hints": {"鼓励": "gǔ lì", "支持": "zhī chí", "联系": "lián xì", "道歉": "dào qiàn"}
+    },
+    {
+      "question": "What does 误会 mean?",
+      "type": "multiple_choice",
+      "correct": "Misunderstanding; to misunderstand",
+      "options": ["Misunderstanding; to misunderstand", "Apology", "Friendship", "Support"],
+      "word_hints": {"误会": "wù huì"}
+    },
+    {
+      "question": "Which word means 'to apologize'?",
+      "type": "multiple_choice",
+      "correct": "道歉",
+      "options": ["道歉", "抱歉", "误会", "支持"],
+      "word_hints": {"道歉": "dào qiàn", "抱歉": "bào qiàn", "误会": "wù huì", "支持": "zhī chí"}
+    },
+    {
+      "question": "What is the difference between 道歉 and 抱歉?",
+      "type": "multiple_choice",
+      "correct": "道歉 is the act of apologizing; 抱歉 is the feeling of being sorry",
+      "options": [
+        "道歉 is the act of apologizing; 抱歉 is the feeling of being sorry",
+        "They mean exactly the same thing",
+        "道歉 means friendship; 抱歉 means honesty",
+        "道歉 is a noun; 抱歉 is a verb only"
+      ],
+      "word_hints": {"道歉": "dào qiàn", "抱歉": "bào qiàn"}
+    },
+    {
+      "question": "What does 共同 mean?",
+      "type": "multiple_choice",
+      "correct": "Common; shared; together",
+      "options": ["Common; shared; together", "Mutual", "Friendly", "Honest"],
+      "word_hints": {"共同": "gòng tóng"}
+    },
+    {
+      "question": "Choose the correct sentence with 从来不.",
+      "type": "multiple_choice",
+      "correct": "他从来不背叛朋友。",
+      "options": [
+        "他从来不背叛朋友。",
+        "他不从来背叛朋友。",
+        "他背叛从来不朋友。",
+        "从来他不背叛朋友。"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 好朋友应该 _____ 鼓励。",
+      "type": "multiple_choice",
+      "correct": "互相",
+      "options": ["互相", "自己", "独自", "别人"],
+      "word_hints": {"鼓励": "gǔ lì"}
+    },
+    {
+      "question": "What does the phrase 保持联系 mean?",
+      "type": "multiple_choice",
+      "correct": "To keep in touch",
+      "options": ["To keep in touch", "To maintain friendship", "To support each other", "To apologize"],
+      "word_hints": {"联系": "lián xì"}
+    },
+    {
+      "question": "What does 却 indicate?",
+      "type": "multiple_choice",
+      "correct": "An unexpected contrast",
+      "options": ["An unexpected contrast", "A result", "A condition", "An addition"],
+      "word_hints": {}
+    },
+    {
+      "question": "Which word means 'friendly; amicable'?",
+      "type": "multiple_choice",
+      "correct": "友好",
+      "options": ["友好", "友谊", "互相", "共同"],
+      "word_hints": {"友好": "yǒu hǎo", "友谊": "yǒu yì", "互相": "hù xiāng", "共同": "gòng tóng"}
+    },
+    {
+      "question": "Which idiom means 'Adversity reveals true friendship'?",
+      "type": "multiple_choice",
+      "correct": "患难见真情",
+      "options": [
+        "患难见真情",
+        "有情人终成眷属",
+        "知足常乐",
+        "天道酬勤"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in: 他们发生了误会，_____ 还是好朋友。",
+      "type": "multiple_choice",
+      "correct": "却",
+      "options": ["却", "所以", "因为", "而且"],
+      "word_hints": {"误会": "wù huì"}
+    },
+    {
+      "question": "What does the phrase 道歉和好 mean?",
+      "type": "multiple_choice",
+      "correct": "To apologize and make up",
+      "options": ["To apologize and make up", "To keep in touch", "To support each other", "To make progress together"],
+      "word_hints": {"道歉": "dào qiàn"}
+    },
+    {
+      "question": "Which cultural value does the proverb 在家靠父母，出门靠朋友 highlight?",
+      "type": "multiple_choice",
+      "correct": "The importance of social connections outside the home",
+      "options": [
+        "The importance of social connections outside the home",
+        "The value of independence",
+        "The importance of money",
+        "The value of education"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 支持 mean?",
+      "type": "multiple_choice",
+      "correct": "To support; support",
+      "options": ["To support; support", "To encourage", "To contact", "To apologize"],
+      "word_hints": {"支持": "zhī chí"}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Making Up After a Misunderstanding",
+      "title_chinese": "误会之后",
+      "speakers": {
+        "A": {"name": "建国", "role": "朋友甲", "gender": "male"},
+        "B": {"name": "小梅", "role": "朋友乙", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小梅，我知道上次的事情让你误会了，我真的很抱歉。",
+          "pinyin": "Xiǎo Méi, wǒ zhī dào shàng cì de shì qíng ràng nǐ wù huì le, wǒ zhēn de hěn bào qiàn.",
+          "english": "Xiaomei, I know what happened last time caused a misunderstanding. I am truly sorry."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我也有点抱歉，我应该先听你解释，而不是生气。",
+          "pinyin": "Wǒ yě yǒu diǎn bào qiàn, wǒ yīng gāi xiān tīng nǐ jiě shì, ér bú shì shēng qì.",
+          "english": "I also feel a bit sorry. I should have listened to your explanation first, instead of getting angry."
+        },
+        {
+          "speaker": "A",
+          "chinese": "真正的朋友应该互相支持，我从来不想伤害你。",
+          "pinyin": "Zhēn zhèng de péng yǒu yīng gāi hù xiāng zhī chí, wǒ cóng lái bù xiǎng shāng hài nǐ.",
+          "english": "True friends should support each other. I never want to hurt you."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我知道。你是一个非常诚实的人，我应该信任你。",
+          "pinyin": "Wǒ zhī dào. Nǐ shì yí gè fēi cháng chéng shí de rén, wǒ yīng gāi xìn rèn nǐ.",
+          "english": "I know. You are a very honest person; I should trust you."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我们互相道歉和好吧，友谊比什么都重要。",
+          "pinyin": "Wǒ men hù xiāng dào qiàn hé hǎo ba, yǒu yì bǐ shén me dōu zhòng yào.",
+          "english": "Let's apologize to each other and make up. Friendship is more important than anything."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好，我们要共同进步，也要保持联系，不管发生什么。",
+          "pinyin": "Hǎo, wǒ men yào gòng tóng jìn bù, yě yào bǎo chí lián xì, bù guǎn fā shēng shén me.",
+          "english": "Okay. We should make progress together and keep in touch, no matter what happens."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我也会给你更多的信心和鼓励，朋友就是要互相帮助。",
+          "pinyin": "Wǒ yě huì gěi nǐ gèng duō de xìn xīn hé gǔ lì, péng yǒu jiù shì yào hù xiāng bāng zhù.",
+          "english": "I will also give you more confidence and encouragement. That's what friends are for — to help each other."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Old Friends Reconnecting",
+      "title_chinese": "老朋友重逢",
+      "speakers": {
+        "A": {"name": "志远", "role": "老同学甲", "gender": "male"},
+        "B": {"name": "丽华", "role": "老同学乙", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "丽华！好久不见，我们已经五年没联系了！",
+          "pinyin": "Lì Huá! Hǎo jiǔ bú jiàn, wǒ men yǐ jīng wǔ nián méi lián xì le!",
+          "english": "Lihua! Long time no see. We haven't been in touch for five years!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是啊！但是我从来没有忘记我们共同的友谊。",
+          "pinyin": "Shì a! Dàn shì wǒ cóng lái méi yǒu wàng jì wǒ men gòng tóng de yǒu yì.",
+          "english": "That's right! But I have never forgotten our shared friendship."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我也是。真正的友谊不会因为时间而消失。",
+          "pinyin": "Wǒ yě shì. Zhēn zhèng de yǒu yì bú huì yīn wèi shí jiān ér xiāo shī.",
+          "english": "Me too. True friendship doesn't disappear with time."
+        },
+        {
+          "speaker": "B",
+          "chinese": "你还是那么友好，一点都没变。我很高兴我们重新联系了。",
+          "pinyin": "Nǐ hái shì nà me yǒu hǎo, yì diǎn dōu méi biàn. Wǒ hěn gāo xìng wǒ men chóng xīn lián xì le.",
+          "english": "You are still just as friendly. You haven't changed at all. I'm glad we reconnected."
+        },
+        {
+          "speaker": "A",
+          "chinese": "以后我们要互相鼓励，对吧？",
+          "pinyin": "Yǐ hòu wǒ men yào hù xiāng gǔ lì, duì ba?",
+          "english": "From now on we should encourage each other, right?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "当然！我们要保持联系，共同进步。",
+          "pinyin": "Dāng rán! Wǒ men yào bǎo chí lián xì, gòng tóng jìn bù.",
+          "english": "Of course! We should keep in touch and make progress together."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,649 @@
+{
+  "lesson": 6,
+  "level": 4,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Smart Shopping",
+  "topic_chinese": "买对的，不买贵的",
+  "vocabulary": [
+    {
+      "id": "hsk4_l6_01",
+      "chinese": "购物",
+      "pinyin": "gòu wù",
+      "english": "Shopping; to shop",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk4_l6_02",
+      "chinese": "打折",
+      "pinyin": "dǎ zhé",
+      "english": "To discount; on sale",
+      "part_of_speech": "verb/adjective"
+    },
+    {
+      "id": "hsk4_l6_03",
+      "chinese": "顾客",
+      "pinyin": "gù kè",
+      "english": "Customer; client",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l6_04",
+      "chinese": "售货员",
+      "pinyin": "shòu huò yuán",
+      "english": "Shop assistant; salesperson",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l6_05",
+      "chinese": "免费",
+      "pinyin": "miǎn fèi",
+      "english": "Free (of charge)",
+      "part_of_speech": "adjective/adverb"
+    },
+    {
+      "id": "hsk4_l6_06",
+      "chinese": "优点",
+      "pinyin": "yōu diǎn",
+      "english": "Advantage; strong point; merit",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l6_07",
+      "chinese": "缺点",
+      "pinyin": "quē diǎn",
+      "english": "Disadvantage; weakness; shortcoming",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l6_08",
+      "chinese": "质量",
+      "pinyin": "zhì liàng",
+      "english": "Quality",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l6_09",
+      "chinese": "材料",
+      "pinyin": "cái liào",
+      "english": "Material; ingredient",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk4_l6_10",
+      "chinese": "逛",
+      "pinyin": "guàng",
+      "english": "To stroll; to browse (shops)",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk4_l6_11",
+      "chinese": "合适",
+      "pinyin": "hé shì",
+      "english": "Suitable; appropriate; right",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk4_l6_12",
+      "chinese": "讨论",
+      "pinyin": "tǎo lùn",
+      "english": "To discuss; discussion",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk4_l6_p01",
+      "chinese": "打折优惠",
+      "pinyin": "dǎ zhé yōu huì",
+      "english": "Discount offer; sale promotion",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l6_p02",
+      "chinese": "质量第一",
+      "pinyin": "zhì liàng dì yī",
+      "english": "Quality first",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l6_p03",
+      "chinese": "售货员服务",
+      "pinyin": "shòu huò yuán fú wù",
+      "english": "Shop assistant service",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l6_p04",
+      "chinese": "讨价还价",
+      "pinyin": "tǎo jià huán jià",
+      "english": "To bargain; to haggle",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l6_p05",
+      "chinese": "免费试用",
+      "pinyin": "miǎn fèi shì yòng",
+      "english": "Free trial; free to try",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "这件衣服的质量很好，值得购买，尤其是现在打折。",
+      "pinyin": "Zhè jiàn yī fu de zhì liàng hěn hǎo, zhí de gòu mǎi, yóu qí shì xiàn zài dǎ zhé.",
+      "english": "The quality of this piece of clothing is very good and worth buying, especially now that it is on sale."
+    },
+    {
+      "chinese": "顾客可以先免费试用，另外我们还提供七天退货服务。",
+      "pinyin": "Gù kè kě yǐ xiān miǎn fèi shì yòng, lìng wài wǒ men hái tí gōng qī tiān tuì huò fú wù.",
+      "english": "Customers can try it for free first; besides, we also offer a seven-day return service."
+    },
+    {
+      "chinese": "这种材料有很多优点，尤其是耐磨耐热。",
+      "pinyin": "Zhè zhǒng cái liào yǒu hěn duō yōu diǎn, yóu qí shì nài mó nài rè.",
+      "english": "This material has many advantages, especially its resistance to wear and heat."
+    },
+    {
+      "chinese": "售货员向顾客详细介绍了商品的优点和缺点。",
+      "pinyin": "Shòu huò yuán xiàng gù kè xiáng xì jiè shào le shāng pǐn de yōu diǎn hé quē diǎn.",
+      "english": "The shop assistant introduced the product's advantages and disadvantages to the customer in detail."
+    },
+    {
+      "chinese": "她喜欢逛商场，另外也经常在网上购物。",
+      "pinyin": "Tā xǐ huān guàng shāng chǎng, lìng wài yě jīng cháng zài wǎng shàng gòu wù.",
+      "english": "She likes to stroll around shopping malls; besides, she also often shops online."
+    },
+    {
+      "chinese": "这双鞋子材料好，价格也合适，值得买。",
+      "pinyin": "Zhè shuāng xié zi cái liào hǎo, jià gé yě hé shì, zhí de mǎi.",
+      "english": "The material of these shoes is good and the price is right. They are worth buying."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "值得 — Worth doing / Worthy of",
+      "explanation": "值得 means 'worth (doing)' or 'deserve'. It is placed before a verb or adjective. Structure: Subject + 值得 + Verb/Adjective. It often appears in recommendations or evaluations. Example: 这本书值得看。(This book is worth reading.) Note: 值得 can only be followed by a verb, not a noun: say 值得购买 (worth buying), NOT 值得这本书 (worth this book).",
+      "examples": [
+        {
+          "chinese": "这个品牌的质量很好，值得购买。",
+          "pinyin": "Zhè ge pǐn pái de zhì liàng hěn hǎo, zhí de gòu mǎi.",
+          "english": "The quality of this brand is very good and worth buying."
+        },
+        {
+          "chinese": "他们的售货员服务非常好，值得表扬。",
+          "pinyin": "Tā men de shòu huò yuán fú wù fēi cháng hǎo, zhí de biǎo yáng.",
+          "english": "Their shop assistant service is excellent and worthy of praise."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "这件商品打折了，_____ 购买。",
+          "type": "multiple_choice",
+          "correct": "值得",
+          "options": ["值得", "免费", "合适", "讨论"],
+          "option_pinyin": ["zhí de", "miǎn fèi", "hé shì", "tǎo lùn"],
+          "word_hints": {"打折": "dǎ zhé"}
+        },
+        {
+          "question": "Choose the correct sentence with 值得.",
+          "type": "multiple_choice",
+          "correct": "这种材料质量好，值得推荐。",
+          "options": [
+            "这种材料质量好，值得推荐。",
+            "这种材料质量好，值得这个商品。",
+            "值得推荐，这种材料质量好。",
+            "这种材料，值得好质量推荐。"
+          ],
+          "option_pinyin": [
+            "Zhè zhǒng cái liào zhì liàng hǎo, zhí de tuī jiàn.",
+            "Zhè zhǒng cái liào zhì liàng hǎo, zhí de zhè ge shāng pǐn.",
+            "Zhí de tuī jiàn, zhè zhǒng cái liào zhì liàng hǎo.",
+            "Zhè zhǒng cái liào, zhí de hǎo zhì liàng tuī jiàn."
+          ],
+          "word_hints": {"材料": "cái liào", "质量": "zhì liàng"}
+        },
+        {
+          "question": "这家店的服务非常好，顾客 _____ 光顾。",
+          "type": "multiple_choice",
+          "correct": "值得",
+          "options": ["值得", "必须", "应该", "喜欢"],
+          "option_pinyin": ["zhí de", "bì xū", "yīng gāi", "xǐ huān"],
+          "word_hints": {"顾客": "gù kè"}
+        },
+        {
+          "question": "值得 must be followed by:",
+          "type": "multiple_choice",
+          "correct": "A verb",
+          "options": ["A verb", "A noun", "An adjective only", "A number"],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "他们提供免费试用，这 _____ 尝试。",
+          "type": "multiple_choice",
+          "correct": "值得",
+          "options": ["值得", "浪费", "缺点", "优点"],
+          "option_pinyin": ["zhí de", "làng fèi", "quē diǎn", "yōu diǎn"],
+          "word_hints": {"免费": "miǎn fèi"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "尤其 — Especially / In particular",
+      "explanation": "尤其 is an adverb meaning 'especially' or 'in particular'. It is used to single out something from a group as particularly notable. It is placed before the specific item being emphasized. Structure: [General statement], 尤其 (是) + [Specific item]. 尤其是 (with 是) is also very common. Example: 她喜欢购物，尤其喜欢买衣服。(She likes shopping, especially buying clothes.)",
+      "examples": [
+        {
+          "chinese": "这家店的商品质量很好，尤其是皮革材料的产品。",
+          "pinyin": "Zhè jiā diàn de shāng pǐn zhì liàng hěn hǎo, yóu qí shì pí gé cái liào de chǎn pǐn.",
+          "english": "The quality of goods in this shop is very good, especially the leather products."
+        },
+        {
+          "chinese": "顾客都很满意，尤其是对售货员的服务。",
+          "pinyin": "Gù kè dōu hěn mǎn yì, yóu qí shì duì shòu huò yuán de fú wù.",
+          "english": "All customers are very satisfied, especially with the shop assistants' service."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "这家商店有很多打折商品，_____ 是衣服。",
+          "type": "multiple_choice",
+          "correct": "尤其",
+          "options": ["尤其", "另外", "虽然", "否则"],
+          "option_pinyin": ["yóu qí", "lìng wài", "suī rán", "fǒu zé"],
+          "word_hints": {"打折": "dǎ zhé"}
+        },
+        {
+          "question": "Choose the correct sentence with 尤其.",
+          "type": "multiple_choice",
+          "correct": "这种材料有优点，尤其是很轻。",
+          "options": [
+            "这种材料有优点，尤其是很轻。",
+            "这种材料有优点，是尤其很轻。",
+            "尤其这种材料有优点，是很轻。",
+            "这种材料，尤其有优点是很轻。"
+          ],
+          "option_pinyin": [
+            "Zhè zhǒng cái liào yǒu yōu diǎn, yóu qí shì hěn qīng.",
+            "Zhè zhǒng cái liào yǒu yōu diǎn, shì yóu qí hěn qīng.",
+            "Yóu qí zhè zhǒng cái liào yǒu yōu diǎn, shì hěn qīng.",
+            "Zhè zhǒng cái liào, yóu qí yǒu yōu diǎn shì hěn qīng."
+          ],
+          "word_hints": {"材料": "cái liào", "优点": "yōu diǎn"}
+        },
+        {
+          "question": "她购物很厉害，_____ 是在打折的时候。",
+          "type": "multiple_choice",
+          "correct": "尤其",
+          "options": ["尤其", "另外", "其次", "总之"],
+          "option_pinyin": ["yóu qí", "lìng wài", "qí cì", "zǒng zhī"],
+          "word_hints": {"购物": "gòu wù", "打折": "dǎ zhé"}
+        },
+        {
+          "question": "What does 尤其 emphasize?",
+          "type": "multiple_choice",
+          "correct": "One thing in particular from a group",
+          "options": [
+            "One thing in particular from a group",
+            "A contrast between two things",
+            "A purpose or goal",
+            "A negative outcome"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "这个商品有很多缺点，_____ 是质量问题。",
+          "type": "multiple_choice",
+          "correct": "尤其",
+          "options": ["尤其", "另外", "而且", "不仅"],
+          "option_pinyin": ["yóu qí", "lìng wài", "ér qiě", "bù jǐn"],
+          "word_hints": {"缺点": "quē diǎn", "质量": "zhì liàng"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "另外 — Besides / In addition",
+      "explanation": "另外 is a conjunction/adverb meaning 'besides', 'in addition', or 'moreover'. It introduces an additional point or piece of information that supplements what has just been said. It is placed at the beginning of the second clause or before the added information. Structure: [First point]. 另外, [Additional point]. It differs from 而且 in that 另外 introduces a new, separate piece of information rather than an intensification. Example: 这家店打折，另外还提供免费送货。(This shop has discounts; besides, it also offers free delivery.)",
+      "examples": [
+        {
+          "chinese": "这件商品质量好，另外材料也很环保。",
+          "pinyin": "Zhè jiàn shāng pǐn zhì liàng hǎo, lìng wài cái liào yě hěn huán bǎo.",
+          "english": "The quality of this product is good; besides, the material is also environmentally friendly."
+        },
+        {
+          "chinese": "我们提供打折优惠，另外顾客还可以免费试用。",
+          "pinyin": "Wǒ men tí gōng dǎ zhé yōu huì, lìng wài gù kè hái kě yǐ miǎn fèi shì yòng.",
+          "english": "We offer discount promotions; additionally, customers can also try products for free."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "这家店商品合适，_____ 售货员的服务也很好。",
+          "type": "multiple_choice",
+          "correct": "另外",
+          "options": ["另外", "但是", "虽然", "因为"],
+          "option_pinyin": ["lìng wài", "dàn shì", "suī rán", "yīn wèi"],
+          "word_hints": {"合适": "hé shì", "售货员": "shòu huò yuán"}
+        },
+        {
+          "question": "Choose the correct sentence with 另外.",
+          "type": "multiple_choice",
+          "correct": "商品打折了，另外还有免费礼物。",
+          "options": [
+            "商品打折了，另外还有免费礼物。",
+            "另外商品打折了，还有免费礼物。",
+            "商品另外打折了，还有免费礼物。",
+            "另外还有免费礼物，打折了商品。"
+          ],
+          "option_pinyin": [
+            "Shāng pǐn dǎ zhé le, lìng wài hái yǒu miǎn fèi lǐ wù.",
+            "Lìng wài shāng pǐn dǎ zhé le, hái yǒu miǎn fèi lǐ wù.",
+            "Shāng pǐn lìng wài dǎ zhé le, hái yǒu miǎn fèi lǐ wù.",
+            "Lìng wài hái yǒu miǎn fèi lǐ wù, dǎ zhé le shāng pǐn."
+          ],
+          "word_hints": {"打折": "dǎ zhé", "免费": "miǎn fèi"}
+        },
+        {
+          "question": "这个包包材料好，_____ 颜色也很漂亮。",
+          "type": "multiple_choice",
+          "correct": "另外",
+          "options": ["另外", "否则", "既然", "尤其"],
+          "option_pinyin": ["lìng wài", "fǒu zé", "jì rán", "yóu qí"],
+          "word_hints": {"材料": "cái liào"}
+        },
+        {
+          "question": "What is the function of 另外?",
+          "type": "multiple_choice",
+          "correct": "To introduce additional, separate information",
+          "options": [
+            "To introduce additional, separate information",
+            "To show contrast",
+            "To explain a cause",
+            "To show a purpose"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "我们可以讨论价格，_____ 还可以谈服务内容。",
+          "type": "multiple_choice",
+          "correct": "另外",
+          "options": ["另外", "否则", "虽然", "但是"],
+          "option_pinyin": ["lìng wài", "fǒu zé", "suī rán", "dàn shì"],
+          "word_hints": {"讨论": "tǎo lùn"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "Bargaining & Shopping Culture in China",
+      "title_chinese": "中国人的购物文化",
+      "content": "Shopping culture in China blends traditional practices with modern trends. Bargaining (讨价还价, tǎo jià huán jià) is common in markets, small shops, and street stalls, where prices are often negotiable. It is a social interaction as much as a financial one — skill at bargaining shows intelligence and is not considered rude. However, in department stores and large chain retailers, prices are fixed. The concept of 关系 (guānxi — relationships) can also influence transactions: knowing the shop owner or having a connection may result in better deals. In recent years, China has become the world's largest e-commerce market. Platforms like Taobao, JD.com, and Pinduoduo have transformed how people shop, with events like Double 11 (光棍节, Guānggùn Jié — November 11th) generating record-breaking sales each year.",
+      "idioms": [
+        {
+          "chinese": "一分价钱一分货",
+          "pinyin": "yì fēn jià qian yì fēn huò",
+          "english": "You get what you pay for"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 购物 mean?",
+      "type": "multiple_choice",
+      "correct": "Shopping; to shop",
+      "options": ["Shopping; to shop", "To bargain", "To browse", "To discount"],
+      "word_hints": {"购物": "gòu wù"}
+    },
+    {
+      "question": "Which word means 'to discount; on sale'?",
+      "type": "multiple_choice",
+      "correct": "打折",
+      "options": ["打折", "免费", "合适", "质量"],
+      "word_hints": {"打折": "dǎ zhé", "免费": "miǎn fèi", "合适": "hé shì", "质量": "zhì liàng"}
+    },
+    {
+      "question": "What does 顾客 mean?",
+      "type": "multiple_choice",
+      "correct": "Customer; client",
+      "options": ["Customer; client", "Shop assistant", "Manager", "Seller"],
+      "word_hints": {"顾客": "gù kè"}
+    },
+    {
+      "question": "Which word means 'shop assistant; salesperson'?",
+      "type": "multiple_choice",
+      "correct": "售货员",
+      "options": ["售货员", "顾客", "管理员", "记者"],
+      "word_hints": {"售货员": "shòu huò yuán", "顾客": "gù kè"}
+    },
+    {
+      "question": "What does 免费 mean?",
+      "type": "multiple_choice",
+      "correct": "Free (of charge)",
+      "options": ["Free (of charge)", "On sale", "Cheap", "Suitable"],
+      "word_hints": {"免费": "miǎn fèi"}
+    },
+    {
+      "question": "What does 优点 mean?",
+      "type": "multiple_choice",
+      "correct": "Advantage; strong point; merit",
+      "options": ["Advantage; strong point; merit", "Disadvantage", "Quality", "Material"],
+      "word_hints": {"优点": "yōu diǎn"}
+    },
+    {
+      "question": "Which word means 'disadvantage; weakness'?",
+      "type": "multiple_choice",
+      "correct": "缺点",
+      "options": ["缺点", "优点", "质量", "材料"],
+      "word_hints": {"缺点": "quē diǎn", "优点": "yōu diǎn", "质量": "zhì liàng", "材料": "cái liào"}
+    },
+    {
+      "question": "What does 质量 mean?",
+      "type": "multiple_choice",
+      "correct": "Quality",
+      "options": ["Quality", "Material", "Advantage", "Price"],
+      "word_hints": {"质量": "zhì liàng"}
+    },
+    {
+      "question": "Which word means 'material; ingredient'?",
+      "type": "multiple_choice",
+      "correct": "材料",
+      "options": ["材料", "质量", "优点", "价格"],
+      "word_hints": {"材料": "cái liào"}
+    },
+    {
+      "question": "What does 合适 mean?",
+      "type": "multiple_choice",
+      "correct": "Suitable; appropriate; right",
+      "options": ["Suitable; appropriate; right", "Free", "On sale", "Quality"],
+      "word_hints": {"合适": "hé shì"}
+    },
+    {
+      "question": "Fill in: 这个商品质量好，_____ 购买。",
+      "type": "multiple_choice",
+      "correct": "值得",
+      "options": ["值得", "免费", "缺点", "材料"],
+      "word_hints": {"质量": "zhì liàng"}
+    },
+    {
+      "question": "What does 尤其 mean?",
+      "type": "multiple_choice",
+      "correct": "Especially; in particular",
+      "options": ["Especially; in particular", "Besides", "Although", "Otherwise"],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in: 这家店打折，_____ 还有免费礼品。",
+      "type": "multiple_choice",
+      "correct": "另外",
+      "options": ["另外", "尤其", "否则", "既然"],
+      "word_hints": {"打折": "dǎ zhé", "免费": "miǎn fèi"}
+    },
+    {
+      "question": "What does 逛 mean?",
+      "type": "multiple_choice",
+      "correct": "To stroll; to browse (shops)",
+      "options": ["To stroll; to browse (shops)", "To buy", "To bargain", "To pay"],
+      "word_hints": {"逛": "guàng"}
+    },
+    {
+      "question": "What does the phrase 讨价还价 mean?",
+      "type": "multiple_choice",
+      "correct": "To bargain; to haggle",
+      "options": ["To bargain; to haggle", "To compare prices", "To pay for goods", "To return goods"],
+      "word_hints": {}
+    },
+    {
+      "question": "值得 must be followed by:",
+      "type": "multiple_choice",
+      "correct": "A verb",
+      "options": ["A verb", "A noun", "A number", "A name"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 讨论 mean?",
+      "type": "multiple_choice",
+      "correct": "To discuss; discussion",
+      "options": ["To discuss; discussion", "To bargain", "To browse", "To translate"],
+      "word_hints": {"讨论": "tǎo lùn"}
+    },
+    {
+      "question": "Choose the correct use of 尤其.",
+      "type": "multiple_choice",
+      "correct": "她喜欢购物，尤其是打折的时候。",
+      "options": [
+        "她喜欢购物，尤其是打折的时候。",
+        "尤其她喜欢购物，是打折的时候。",
+        "她喜欢购物尤其，是打折的时候。",
+        "是打折的时候，她喜欢购物尤其。"
+      ],
+      "word_hints": {"购物": "gòu wù", "打折": "dǎ zhé"}
+    },
+    {
+      "question": "What does the proverb 一分价钱一分货 mean?",
+      "type": "multiple_choice",
+      "correct": "You get what you pay for",
+      "options": [
+        "You get what you pay for",
+        "The cheaper the better",
+        "Always bargain for lower prices",
+        "Save money whenever you can"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 打折优惠 mean?",
+      "type": "multiple_choice",
+      "correct": "Discount offer; sale promotion",
+      "options": ["Discount offer; sale promotion", "Free trial", "Quality guarantee", "Bargaining session"],
+      "word_hints": {"打折": "dǎ zhé"}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Shopping for a Jacket",
+      "title_chinese": "选购外套",
+      "speakers": {
+        "A": {"name": "售货员", "role": "店员", "gender": "female"},
+        "B": {"name": "李明", "role": "顾客", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "你好，我想逛逛，看看有没有合适的外套。",
+          "pinyin": "Nǐ hǎo, wǒ xiǎng guàng guàng, kàn kàn yǒu méi yǒu hé shì de wài tào.",
+          "english": "Hello, I'd like to browse and see if there are any suitable jackets."
+        },
+        {
+          "speaker": "A",
+          "chinese": "欢迎！我们这里的外套质量很好，尤其是这款，材料非常耐穿。",
+          "pinyin": "Huān yíng! Wǒ men zhè lǐ de wài tào zhì liàng hěn hǎo, yóu qí shì zhè kuǎn, cái liào fēi cháng nài chuān.",
+          "english": "Welcome! The quality of our jackets here is very good, especially this style — the material is very durable."
+        },
+        {
+          "speaker": "B",
+          "chinese": "这件有什么优点和缺点？",
+          "pinyin": "Zhè jiàn yǒu shén me yōu diǎn hé quē diǎn?",
+          "english": "What are the advantages and disadvantages of this one?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "优点是质量好，保暖，另外还有打折优惠，现在八折。缺点是颜色只有黑色。",
+          "pinyin": "Yōu diǎn shì zhì liàng hǎo, bǎo nuǎn, lìng wài hái yǒu dǎ zhé yōu huì, xiàn zài bā zhé. Quē diǎn shì yán sè zhǐ yǒu hēi sè.",
+          "english": "The advantages are good quality and warmth; besides, there is also a discount — currently 20% off. The disadvantage is it only comes in black."
+        },
+        {
+          "speaker": "B",
+          "chinese": "价格合适的话，值得买。可以免费试穿吗？",
+          "pinyin": "Jià gé hé shì de huà, zhí de mǎi. Kě yǐ miǎn fèi shì chuān ma?",
+          "english": "If the price is right, it's worth buying. Can I try it on for free?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "当然可以！我们还可以讨论价格，另外如果不合适，七天内可以退货。",
+          "pinyin": "Dāng rán kě yǐ! Wǒ men hái kě yǐ tǎo lùn jià gé, lìng wài rú guǒ bù hé shì, qī tiān nèi kě yǐ tuì huò.",
+          "english": "Of course! We can also discuss the price; besides, if it doesn't fit, you can return it within seven days."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好的，你们的售货员服务真的很周到，值得表扬！",
+          "pinyin": "Hǎo de, nǐ men de shòu huò yuán fú wù zhēn de hěn zhōu dào, zhí de biǎo yáng!",
+          "english": "Great, your shop assistant service is really thoughtful and worthy of praise!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Online Shopping Discussion",
+      "title_chinese": "讨论网购",
+      "speakers": {
+        "A": {"name": "小月", "role": "朋友甲", "gender": "female"},
+        "B": {"name": "阿强", "role": "朋友乙", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "阿强，我最近喜欢网上购物，比逛商场方便多了。",
+          "pinyin": "Ā Qiáng, wǒ zuì jìn xǐ huān wǎng shàng gòu wù, bǐ guàng shāng chǎng fāng biàn duō le.",
+          "english": "Ah Qiang, I've been enjoying online shopping lately. It's much more convenient than going to malls."
+        },
+        {
+          "speaker": "B",
+          "chinese": "网购的缺点是看不到材料，质量不一定有保证。",
+          "pinyin": "Wǎng gòu de quē diǎn shì kàn bú dào cái liào, zhì liàng bù yí dìng yǒu bǎo zhèng.",
+          "english": "The disadvantage of online shopping is that you can't see the material, so quality is not always guaranteed."
+        },
+        {
+          "speaker": "A",
+          "chinese": "但是网上打折多，尤其是双十一，价格非常合适。",
+          "pinyin": "Dàn shì wǎng shàng dǎ zhé duō, yóu qí shì Shuāng Shí yī, jià gé fēi cháng hé shì.",
+          "english": "But there are many discounts online, especially during Double 11 — the prices are very reasonable."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我觉得好的网店值得信任，另外可以先看顾客评价。",
+          "pinyin": "Wǒ jué de hǎo de wǎng diàn zhí de xìn rèn, lìng wài kě yǐ xiān kàn gù kè píng jià.",
+          "english": "I think good online stores are worth trusting; besides, you can first check customer reviews."
+        },
+        {
+          "speaker": "A",
+          "chinese": "对！有些平台还提供免费退货，优点很多。",
+          "pinyin": "Duì! Yǒu xiē píng tái hái tí gōng miǎn fèi tuì huò, yōu diǎn hěn duō.",
+          "english": "Right! Some platforms also offer free returns, so there are many advantages."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好，我们可以一起讨论哪些商品值得在网上买。",
+          "pinyin": "Hǎo, wǒ men kě yǐ yì qǐ tǎo lùn nǎ xiē shāng pǐn zhí de zài wǎng shàng mǎi.",
+          "english": "Good. We can discuss together which products are worth buying online."
+        }
+      ]
+    }
+  ]
+}

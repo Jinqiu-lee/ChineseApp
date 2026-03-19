@@ -10,8 +10,8 @@ const STAGE_META = [
   { name: 'Final Challenge', desc: 'All types · Full review',         icon: '🏆', color: '#FF6B6B' },
 ];
 
-export default function LessonStagesScreen({ lessonData, stageProgress = [], onSelectStage, onBack }) {
-  const isUnlocked = (i) => i === 0 || stageProgress.includes(i - 1);
+export default function LessonStagesScreen({ lessonData, stageProgress = [], devUnlockAll = false, onSelectStage, onBack }) {
+  const isUnlocked = (i) => devUnlockAll || i === 0 || stageProgress.includes(i - 1);
   const isCompleted = (i) => stageProgress.includes(i);
 
   return (
