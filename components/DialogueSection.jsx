@@ -6,6 +6,7 @@ import { speakChinese } from '../utils/tts';
 const IMAGES_BY_LEVEL = {
   hsk1: require('../data/hsk1/hsk1_images/hsk1_images.json'),
   hsk2: require('../data/hsk2/hsk2_images/hsk2_images.json'),
+  hsk3: require('../data/hsk3/hsk3_images/hsk3_images.json'),
   hsk4: require('../data/hsk4_level4/hsk4_level4_images/hsk4_images.json'),
   hsk5: require('../data/hsk4_level5/hsk4_level5_images/hsk5_images.json'),
 };
