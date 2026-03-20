@@ -1,0 +1,673 @@
+{
+  "lesson": 6,
+  "level": 5,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Law & Rights",
+  "topic_chinese": "法律与权利",
+  "vocabulary": [
+    {
+      "id": "hsk5_l6_01",
+      "chinese": "法律",
+      "pinyin": "fǎ lǜ",
+      "english": "Law; laws",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l6_02",
+      "chinese": "权利",
+      "pinyin": "quán lì",
+      "english": "Right; entitlement",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l6_03",
+      "chinese": "义务",
+      "pinyin": "yì wù",
+      "english": "Obligation; duty",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l6_04",
+      "chinese": "合同",
+      "pinyin": "hé tong",
+      "english": "Contract; agreement",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l6_05",
+      "chinese": "违法",
+      "pinyin": "wéi fǎ",
+      "english": "To violate the law; illegal",
+      "part_of_speech": "verb/adj"
+    },
+    {
+      "id": "hsk5_l6_06",
+      "chinese": "律师",
+      "pinyin": "lǜ shī",
+      "english": "Lawyer; attorney",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l6_07",
+      "chinese": "法院",
+      "pinyin": "fǎ yuàn",
+      "english": "Court; law court",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l6_08",
+      "chinese": "诉讼",
+      "pinyin": "sù sòng",
+      "english": "Lawsuit; litigation",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l6_09",
+      "chinese": "证据",
+      "pinyin": "zhèng jù",
+      "english": "Evidence; proof",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l6_10",
+      "chinese": "罚款",
+      "pinyin": "fá kuǎn",
+      "english": "Fine; to impose a fine",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l6_11",
+      "chinese": "保护",
+      "pinyin": "bǎo hù",
+      "english": "To protect; protection",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk5_l6_12",
+      "chinese": "判决",
+      "pinyin": "pàn jué",
+      "english": "Verdict; to pass judgment",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l6_p01",
+      "chinese": "签署合同",
+      "pinyin": "qiān shǔ hé tong",
+      "english": "To sign a contract",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l6_p02",
+      "chinese": "依法保护",
+      "pinyin": "yī fǎ bǎo hù",
+      "english": "To protect according to the law",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l6_p03",
+      "chinese": "提出诉讼",
+      "pinyin": "tí chū sù sòng",
+      "english": "To file a lawsuit",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l6_p04",
+      "chinese": "收集证据",
+      "pinyin": "shōu jí zhèng jù",
+      "english": "To collect evidence",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l6_p05",
+      "chinese": "违反规定",
+      "pinyin": "wéi fǎn guī dìng",
+      "english": "To violate regulations",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l6_p06",
+      "chinese": "维护权利",
+      "pinyin": "wéi hù quán lì",
+      "english": "To safeguard one's rights",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "根据法律，每位公民都有权利得到公平的审判。",
+      "pinyin": "Gēn jù fǎ lǜ, měi wèi gōng mín dōu yǒu quán lì dé dào gōng píng de shěn pàn.",
+      "english": "According to the law, every citizen has the right to a fair trial."
+    },
+    {
+      "chinese": "由于他违反了合同条款，因此被迫支付了一大笔罚款。",
+      "pinyin": "Yóu yú tā wéi fǎn le hé tong tiáo kuǎn, yīn cǐ bèi pò zhī fù le yī dà bǐ fá kuǎn.",
+      "english": "Due to his violation of the contract terms, he was forced to pay a large fine."
+    },
+    {
+      "chinese": "除非律师能提供充分的证据，否则法院不会作出有利的判决。",
+      "pinyin": "Chú fēi lǜ shī néng tí gōng chōng fèn de zhèng jù, fǒu zé fǎ yuàn bú huì zuò chū yǒu lì de pàn jué.",
+      "english": "Unless the lawyer can provide sufficient evidence, the court will not issue a favorable verdict."
+    },
+    {
+      "chinese": "公民有义务遵守法律，同时也有权利受到法律的保护。",
+      "pinyin": "Gōng mín yǒu yì wù zūn shǒu fǎ lǜ, tóng shí yě yǒu quán lì shòu dào fǎ lǜ de bǎo hù.",
+      "english": "Citizens have the obligation to obey the law, and at the same time the right to be protected by it."
+    },
+    {
+      "chinese": "他们聘请了一位经验丰富的律师来处理这场诉讼。",
+      "pinyin": "Tā men pìn qǐng le yī wèi jīng yàn fēng fù de lǜ shī lái chǔ lǐ zhè chǎng sù sòng.",
+      "english": "They hired an experienced lawyer to handle this lawsuit."
+    },
+    {
+      "chinese": "根据合同规定，任何一方违法都需要承担相应的法律责任。",
+      "pinyin": "Gēn jù hé tong guī dìng, rèn hé yī fāng wéi fǎ dōu xū yào chéng dān xiāng yìng de fǎ lǜ zé rèn.",
+      "english": "According to the contract, any party that breaks the law must bear the corresponding legal responsibility."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "根据 — According to / Based on",
+      "explanation": "根据 is a preposition meaning 'according to' or 'based on'. It introduces the source, basis, or standard for an action or judgment. Structure: 根据 + noun/noun phrase + subject + predicate. It is commonly used in formal, legal, and academic contexts. Example: 根据规定，禁止吸烟。(According to the regulations, smoking is prohibited.) Note: 根据 is placed before the subject or at the start of the sentence.",
+      "examples": [
+        {
+          "chinese": "根据法律，所有公民都有受教育的权利。",
+          "pinyin": "Gēn jù fǎ lǜ, suǒ yǒu gōng mín dōu yǒu shòu jiào yù de quán lì.",
+          "english": "According to the law, all citizens have the right to receive education."
+        },
+        {
+          "chinese": "根据合同条款，乙方必须在规定时间内完成任务。",
+          "pinyin": "Gēn jù hé tong tiáo kuǎn, yǐ fāng bì xū zài guī dìng shí jiān nèi wán chéng rèn wù.",
+          "english": "According to the terms of the contract, Party B must complete the task within the stipulated time."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 法律规定，违法者必须接受处罚。",
+          "type": "multiple_choice",
+          "correct": "根据",
+          "options": ["根据", "除非", "由于", "因此"],
+          "option_pinyin": ["gēn jù", "chú fēi", "yóu yú", "yīn cǐ"],
+          "word_hints": {"法律": "fǎ lǜ", "违法": "wéi fǎ"}
+        },
+        {
+          "question": "Choose the sentence that uses 根据 correctly.",
+          "type": "multiple_choice",
+          "correct": "根据证据，律师证明了他的清白。",
+          "options": [
+            "根据证据，律师证明了他的清白。",
+            "律师根据证明了他的清白证据。",
+            "证据根据，律师他的清白证明了。",
+            "律师证明了根据他的清白证据。"
+          ],
+          "option_pinyin": [
+            "Gēn jù zhèng jù, lǜ shī zhèng míng le tā de qīng bái.",
+            "Lǜ shī gēn jù zhèng míng le tā de qīng bái zhèng jù.",
+            "Zhèng jù gēn jù, lǜ shī tā de qīng bái zhèng míng le.",
+            "Lǜ shī zhèng míng le gēn jù tā de qīng bái zhèng jù."
+          ],
+          "word_hints": {"证据": "zhèng jù", "律师": "lǜ shī"}
+        },
+        {
+          "question": "What does 根据 mean?",
+          "type": "multiple_choice",
+          "correct": "According to; based on",
+          "options": [
+            "According to; based on",
+            "Unless; except if",
+            "Although; even though",
+            "Therefore; as a result"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "_____ 判决结果，被告需要赔偿损失。",
+          "type": "multiple_choice",
+          "correct": "根据",
+          "options": ["根据", "因此", "除非", "然而"],
+          "option_pinyin": ["gēn jù", "yīn cǐ", "chú fēi", "rán ér"],
+          "word_hints": {"判决": "pàn jué", "被告": "bèi gào"}
+        },
+        {
+          "question": "Where is 根据 placed in a sentence?",
+          "type": "multiple_choice",
+          "correct": "Before the noun phrase that serves as the basis or source",
+          "options": [
+            "Before the noun phrase that serves as the basis or source",
+            "At the end of the sentence",
+            "Between the subject and the verb",
+            "After the object"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "由于…因此… — Due to… therefore…",
+      "explanation": "This paired conjunction expresses cause and effect in a formal register. 由于 introduces the cause (because of / due to), and 因此 introduces the result (therefore / as a result). Structure: 由于 + cause clause, + 因此 + result clause. Both clauses can have the same or different subjects. This pattern is common in written Chinese, especially in legal and official documents. Example: 由于证据不足，因此法院撤销了诉讼。(Due to insufficient evidence, the court dismissed the lawsuit.)",
+      "examples": [
+        {
+          "chinese": "由于双方未能达成一致，因此合同签署被推迟了。",
+          "pinyin": "Yóu yú shuāng fāng wèi néng dá chéng yī zhì, yīn cǐ hé tong qiān shǔ bèi tuī chí le.",
+          "english": "Due to both parties failing to reach an agreement, the signing of the contract was postponed."
+        },
+        {
+          "chinese": "由于他的行为违法，因此律师建议他尽早自首。",
+          "pinyin": "Yóu yú tā de xíng wéi wéi fǎ, yīn cǐ lǜ shī jiàn yì tā jǐn zǎo zì shǒu.",
+          "english": "Due to his illegal conduct, the lawyer advised him to turn himself in as soon as possible."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "由于证据不足，_____ 法院驳回了这次诉讼。",
+          "type": "multiple_choice",
+          "correct": "因此",
+          "options": ["因此", "除非", "根据", "虽然"],
+          "option_pinyin": ["yīn cǐ", "chú fēi", "gēn jù", "suī rán"],
+          "word_hints": {"证据": "zhèng jù", "诉讼": "sù sòng"}
+        },
+        {
+          "question": "Choose the sentence that correctly uses 由于…因此….",
+          "type": "multiple_choice",
+          "correct": "由于他违反了法律，因此被判处罚款。",
+          "options": [
+            "由于他违反了法律，因此被判处罚款。",
+            "因此他违反了法律，由于被判处罚款。",
+            "他由于违反了法律因此，被判处罚款。",
+            "他被判处罚款，由于因此违反了法律。"
+          ],
+          "option_pinyin": [
+            "Yóu yú tā wéi fǎn le fǎ lǜ, yīn cǐ bèi pàn chǔ fá kuǎn.",
+            "Yīn cǐ tā wéi fǎn le fǎ lǜ, yóu yú bèi pàn chǔ fá kuǎn.",
+            "Tā yóu yú wéi fǎn le fǎ lǜ yīn cǐ, bèi pàn chǔ fá kuǎn.",
+            "Tā bèi pàn chǔ fá kuǎn, yóu yú yīn cǐ wéi fǎn le fǎ lǜ."
+          ],
+          "word_hints": {"罚款": "fá kuǎn", "违反": "wéi fǎn"}
+        },
+        {
+          "question": "What does 由于 introduce in a sentence?",
+          "type": "multiple_choice",
+          "correct": "The cause or reason",
+          "options": [
+            "The cause or reason",
+            "The result or consequence",
+            "A condition",
+            "A contrast"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "由于合同条款不清楚，_____ 双方产生了纠纷。",
+          "type": "multiple_choice",
+          "correct": "因此",
+          "options": ["因此", "除非", "根据", "尽管"],
+          "option_pinyin": ["yīn cǐ", "chú fēi", "gēn jù", "jǐn guǎn"],
+          "word_hints": {"合同": "hé tong", "纠纷": "jiū fēn"}
+        },
+        {
+          "question": "Which word pairs with 由于 to form a cause-effect structure?",
+          "type": "multiple_choice",
+          "correct": "因此",
+          "options": ["因此", "除非", "虽然", "而且"],
+          "option_pinyin": ["yīn cǐ", "chú fēi", "suī rán", "ér qiě"],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "除非 — Unless; only if",
+      "explanation": "除非 means 'unless' or 'only if'. It introduces a condition that is the only exception to the main statement. Structure: 除非 + condition, (否则/不然) + main clause. The second clause often contains 否则 (otherwise) or 不然 (or else) to reinforce the conditional meaning. Example: 除非你有证据，否则法院不会受理。(Unless you have evidence, the court will not accept the case.) 除非 can also appear mid-sentence after the subject.",
+      "examples": [
+        {
+          "chinese": "除非律师能找到新的证据，否则这次判决很难被推翻。",
+          "pinyin": "Chú fēi lǜ shī néng zhǎo dào xīn de zhèng jù, fǒu zé zhè cì pàn jué hěn nán bèi tuī fān.",
+          "english": "Unless the lawyer can find new evidence, this verdict will be very difficult to overturn."
+        },
+        {
+          "chinese": "除非双方都签署了合同，否则任何协议都没有法律效力。",
+          "pinyin": "Chú fēi shuāng fāng dōu qiān shǔ le hé tong, fǒu zé rèn hé xié yì dōu méi yǒu fǎ lǜ xiào lì.",
+          "english": "Unless both parties have signed the contract, any agreement has no legal force."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 你有充分的证据，法院不会受理这个案件。",
+          "type": "multiple_choice",
+          "correct": "除非",
+          "options": ["除非", "根据", "由于", "因此"],
+          "option_pinyin": ["chú fēi", "gēn jù", "yóu yú", "yīn cǐ"],
+          "word_hints": {"证据": "zhèng jù", "法院": "fǎ yuàn"}
+        },
+        {
+          "question": "Choose the sentence that uses 除非 correctly.",
+          "type": "multiple_choice",
+          "correct": "除非你聘请律师，否则你很难赢得诉讼。",
+          "options": [
+            "除非你聘请律师，否则你很难赢得诉讼。",
+            "你除非聘请律师，你很难赢得诉讼否则。",
+            "否则你聘请律师，除非你很难赢得诉讼。",
+            "你很难赢得诉讼，你除非聘请律师否则。"
+          ],
+          "option_pinyin": [
+            "Chú fēi nǐ pìn qǐng lǜ shī, fǒu zé nǐ hěn nán yíng dé sù sòng.",
+            "Nǐ chú fēi pìn qǐng lǜ shī, nǐ hěn nán yíng dé sù sòng fǒu zé.",
+            "Fǒu zé nǐ pìn qǐng lǜ shī, chú fēi nǐ hěn nán yíng dé sù sòng.",
+            "Nǐ hěn nán yíng dé sù sòng, nǐ chú fēi pìn qǐng lǜ shī fǒu zé."
+          ],
+          "word_hints": {"律师": "lǜ shī", "诉讼": "sù sòng"}
+        },
+        {
+          "question": "What does 除非 mean?",
+          "type": "multiple_choice",
+          "correct": "Unless; only if",
+          "options": [
+            "Unless; only if",
+            "Because; due to",
+            "Although; even though",
+            "According to"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "除非他认罪，_____ 律师也很难为他辩护。",
+          "type": "multiple_choice",
+          "correct": "否则",
+          "options": ["否则", "因此", "根据", "由于"],
+          "option_pinyin": ["fǒu zé", "yīn cǐ", "gēn jù", "yóu yú"],
+          "word_hints": {"认罪": "rèn zuì", "律师": "lǜ shī"}
+        },
+        {
+          "question": "Which word often appears in the second clause after 除非?",
+          "type": "multiple_choice",
+          "correct": "否则",
+          "options": ["否则", "因此", "根据", "由于"],
+          "option_pinyin": ["fǒu zé", "yīn cǐ", "gēn jù", "yóu yú"],
+          "word_hints": {}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "China's Legal System and Citizens' Rights",
+      "title_chinese": "中国法律制度与公民权利",
+      "content": "China operates under a civil law system, and its legal framework has developed significantly since the reform era of the 1980s. The Constitution of the People's Republic of China guarantees citizens a range of fundamental rights, including the right to work, education, and the protection of personal property. The country has been steadily professionalising its legal institutions: the number of licensed lawyers (律师, lǜ shī) has grown to over 600,000, and citizens are increasingly aware of using legal channels to protect their interests. Contracts (合同, hé tong) are central to business and civil life, and disputes are typically resolved through mediation, arbitration, or the court system (法院, fǎ yuàn). Legal education and public awareness campaigns continue to promote the principle that everyone is equal before the law.",
+      "idioms": [
+        {
+          "chinese": "以理服人",
+          "pinyin": "yǐ lǐ fú rén",
+          "english": "To convince people with reason — to win an argument through logic rather than force"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 法律 mean?",
+      "type": "multiple_choice",
+      "correct": "Law; laws",
+      "options": ["Law; laws", "Contract", "Court", "Evidence"],
+      "word_hints": {"法律": "fǎ lǜ"}
+    },
+    {
+      "question": "Which word means 'lawyer; attorney'?",
+      "type": "multiple_choice",
+      "correct": "律师",
+      "options": ["法院", "律师", "判决", "诉讼"],
+      "word_hints": {"法院": "fǎ yuàn", "律师": "lǜ shī", "判决": "pàn jué", "诉讼": "sù sòng"}
+    },
+    {
+      "question": "What does 证据 mean?",
+      "type": "multiple_choice",
+      "correct": "Evidence; proof",
+      "options": ["Evidence; proof", "Obligation", "Fine", "Verdict"],
+      "word_hints": {"证据": "zhèng jù"}
+    },
+    {
+      "question": "Which word means 'obligation; duty'?",
+      "type": "multiple_choice",
+      "correct": "义务",
+      "options": ["权利", "义务", "合同", "违法"],
+      "word_hints": {"权利": "quán lì", "义务": "yì wù", "合同": "hé tong", "违法": "wéi fǎ"}
+    },
+    {
+      "question": "What does 罚款 mean?",
+      "type": "multiple_choice",
+      "correct": "Fine; to impose a fine",
+      "options": ["Fine; to impose a fine", "Lawsuit", "Court", "Evidence"],
+      "word_hints": {"罚款": "fá kuǎn"}
+    },
+    {
+      "question": "Which word means 'verdict; to pass judgment'?",
+      "type": "multiple_choice",
+      "correct": "判决",
+      "options": ["保护", "诉讼", "判决", "合同"],
+      "word_hints": {"保护": "bǎo hù", "诉讼": "sù sòng", "判决": "pàn jué", "合同": "hé tong"}
+    },
+    {
+      "question": "What does the phrase 签署合同 mean?",
+      "type": "multiple_choice",
+      "correct": "To sign a contract",
+      "options": ["To sign a contract", "To file a lawsuit", "To collect evidence", "To pay a fine"],
+      "word_hints": {"合同": "hé tong"}
+    },
+    {
+      "question": "Fill in the blank: _____ 法律规定，任何人不得侵犯他人的权利。",
+      "type": "multiple_choice",
+      "correct": "根据",
+      "options": ["根据", "由于", "除非", "因此"],
+      "word_hints": {"权利": "quán lì"}
+    },
+    {
+      "question": "What does 根据 mean?",
+      "type": "multiple_choice",
+      "correct": "According to; based on",
+      "options": ["According to; based on", "Unless; only if", "Due to; because of", "Therefore; as a result"],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 由于证据不充分，_____ 法院无法作出判决。",
+      "type": "multiple_choice",
+      "correct": "因此",
+      "options": ["因此", "根据", "除非", "虽然"],
+      "word_hints": {"证据": "zhèng jù", "判决": "pàn jué"}
+    },
+    {
+      "question": "What does 由于 introduce in a cause-effect sentence?",
+      "type": "multiple_choice",
+      "correct": "The cause or reason",
+      "options": ["The cause or reason", "The result", "A condition", "A contrast"],
+      "word_hints": {}
+    },
+    {
+      "question": "Choose the correct sentence using 除非.",
+      "type": "multiple_choice",
+      "correct": "除非律师出示证据，否则被告会被判有罪。",
+      "options": [
+        "除非律师出示证据，否则被告会被判有罪。",
+        "除非律师出示证据，因此被告会被判有罪。",
+        "根据律师出示证据，除非被告会被判有罪。",
+        "被告会被判有罪，除非因此律师出示证据。"
+      ],
+      "word_hints": {"律师": "lǜ shī", "证据": "zhèng jù"}
+    },
+    {
+      "question": "What does 违法 mean?",
+      "type": "multiple_choice",
+      "correct": "To violate the law; illegal",
+      "options": ["To violate the law; illegal", "To protect", "To sign a contract", "To file a lawsuit"],
+      "word_hints": {"违法": "wéi fǎ"}
+    },
+    {
+      "question": "Which word means 'lawsuit; litigation'?",
+      "type": "multiple_choice",
+      "correct": "诉讼",
+      "options": ["判决", "诉讼", "罚款", "证据"],
+      "word_hints": {"判决": "pàn jué", "诉讼": "sù sòng", "罚款": "fá kuǎn", "证据": "zhèng jù"}
+    },
+    {
+      "question": "What does the phrase 维护权利 mean?",
+      "type": "multiple_choice",
+      "correct": "To safeguard one's rights",
+      "options": ["To safeguard one's rights", "To violate regulations", "To collect evidence", "To sign a contract"],
+      "word_hints": {"权利": "quán lì"}
+    },
+    {
+      "question": "What does 保护 mean?",
+      "type": "multiple_choice",
+      "correct": "To protect; protection",
+      "options": ["To protect; protection", "To punish", "To judge", "To file a case"],
+      "word_hints": {"保护": "bǎo hù"}
+    },
+    {
+      "question": "Which word means 'right; entitlement'?",
+      "type": "multiple_choice",
+      "correct": "权利",
+      "options": ["义务", "权利", "法律", "诉讼"],
+      "word_hints": {"权利": "quán lì", "义务": "yì wù", "法律": "fǎ lǜ", "诉讼": "sù sòng"}
+    },
+    {
+      "question": "According to the culture note, approximately how many licensed lawyers are there in China?",
+      "type": "multiple_choice",
+      "correct": "Over 600,000",
+      "options": ["Over 600,000", "Over 100,000", "Over 1,000,000", "Over 50,000"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 提出诉讼 mean?",
+      "type": "multiple_choice",
+      "correct": "To file a lawsuit",
+      "options": ["To file a lawsuit", "To sign a contract", "To pay a fine", "To protect rights"],
+      "word_hints": {"诉讼": "sù sòng"}
+    },
+    {
+      "question": "Which grammar pattern means 'unless; only if'?",
+      "type": "multiple_choice",
+      "correct": "除非",
+      "options": ["除非", "根据", "由于", "因此"],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Consulting a Lawyer",
+      "title_chinese": "咨询律师",
+      "speakers": {
+        "A": {"name": "王明", "role": "当事人", "gender": "male"},
+        "B": {"name": "李律师", "role": "律师", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "李律师，您好。我和合作方签了合同，但对方没有履行义务，我该怎么办？",
+          "pinyin": "Lǐ lǜ shī, nín hǎo. Wǒ hé hé zuò fāng qiān le hé tong, dàn duì fāng méi yǒu lǚ xíng yì wù, wǒ gāi zěn me bàn?",
+          "english": "Hello, Lawyer Li. I signed a contract with a business partner, but they failed to fulfill their obligations. What should I do?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "根据合同法，对方违反了合同条款，您有权利提出诉讼。",
+          "pinyin": "Gēn jù hé tong fǎ, duì fāng wéi fǎn le hé tong tiáo kuǎn, nín yǒu quán lì tí chū sù sòng.",
+          "english": "According to contract law, the other party has violated the contract terms, and you have the right to file a lawsuit."
+        },
+        {
+          "speaker": "A",
+          "chinese": "但是我担心证据不够充分，法院会不会受理？",
+          "pinyin": "Dàn shì wǒ dān xīn zhèng jù bú gòu chōng fèn, fǎ yuàn huì bú huì shòu lǐ?",
+          "english": "But I'm worried the evidence isn't sufficient. Will the court accept the case?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "除非证据确实不足，否则法院一般都会受理。我们需要先收集相关证据。",
+          "pinyin": "Chú fēi zhèng jù què shí bù zú, fǒu zé fǎ yuàn yī bān dōu huì shòu lǐ. Wǒ men xū yào xiān shōu jí xiāng guān zhèng jù.",
+          "english": "Unless the evidence is truly insufficient, the court will generally accept the case. We first need to collect the relevant evidence."
+        },
+        {
+          "speaker": "A",
+          "chinese": "由于对方一直拖延，因此我们的损失越来越大。",
+          "pinyin": "Yóu yú duì fāng yī zhí tuō yán, yīn cǐ wǒ men de sǔn shī yuè lái yuè dà.",
+          "english": "Due to the other party's continued delays, our losses have been growing larger and larger."
+        },
+        {
+          "speaker": "B",
+          "chinese": "明白了。根据您描述的情况，我认为可以要求对方支付违约金和罚款。",
+          "pinyin": "Míng bai le. Gēn jù nín miáo shù de qíng kuàng, wǒ rèn wéi kě yǐ yāo qiú duì fāng zhī fù wéi yuē jīn hé fá kuǎn.",
+          "english": "I understand. Based on the situation you've described, I think you can demand that the other party pay a penalty and fine."
+        },
+        {
+          "speaker": "A",
+          "chinese": "太好了，那我们下一步应该怎么做？",
+          "pinyin": "Tài hǎo le, nà wǒ men xià yī bù yīng gāi zěn me zuò?",
+          "english": "Excellent. What should our next step be?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "请您把所有合同文件和往来邮件都带来，我来帮您准备诉讼材料。",
+          "pinyin": "Qǐng nín bǎ suǒ yǒu hé tong wén jiàn hé wǎng lái yóu jiàn dōu dài lái, wǒ lái bāng nín zhǔn bèi sù sòng cái liào.",
+          "english": "Please bring all the contract documents and correspondence, and I will help you prepare the litigation materials."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "A Citizen Learns About Their Rights",
+      "title_chinese": "了解自己的权利",
+      "speakers": {
+        "A": {"name": "小张", "role": "市民", "gender": "female"},
+        "B": {"name": "陈老师", "role": "法律顾问", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "陈老师，我听说公民有很多权利，但我不太了解法律，能给我讲讲吗？",
+          "pinyin": "Chén lǎo shī, wǒ tīng shuō gōng mín yǒu hěn duō quán lì, dàn wǒ bú tài liǎo jiě fǎ lǜ, néng gěi wǒ jiǎng jiǎng ma?",
+          "english": "Teacher Chen, I've heard that citizens have many rights, but I don't know much about the law. Could you explain?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "当然可以。根据宪法，每个公民都享有受教育、工作和获得法律保护的权利。",
+          "pinyin": "Dāng rán kě yǐ. Gēn jù xiàn fǎ, měi gè gōng mín dōu xiǎng yǒu shòu jiào yù, gōng zuò hé huò dé fǎ lǜ bǎo hù de quán lì.",
+          "english": "Of course. According to the constitution, every citizen enjoys the right to education, work, and legal protection."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那如果我的权利受到了侵害，应该怎么维护自己？",
+          "pinyin": "Nà rú guǒ wǒ de quán lì shòu dào le qīn hài, yīng gāi zěn me wéi hù zì jǐ?",
+          "english": "Then if my rights are violated, how should I protect myself?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "您可以收集证据，然后去法院提出诉讼，或者请律师帮助您处理。",
+          "pinyin": "Nín kě yǐ shōu jí zhèng jù, rán hòu qù fǎ yuàn tí chū sù sòng, huò zhě qǐng lǜ shī bāng zhù nín chǔ lǐ.",
+          "english": "You can collect evidence, then go to court to file a lawsuit, or hire a lawyer to help you handle it."
+        },
+        {
+          "speaker": "A",
+          "chinese": "由于费用问题，很多人不敢请律师，因此就放弃了维权。",
+          "pinyin": "Yóu yú fèi yòng wèn tí, hěn duō rén bù gǎn qǐng lǜ shī, yīn cǐ jiù fàng qì le wéi quán.",
+          "english": "Due to the cost, many people don't dare to hire a lawyer and therefore give up on protecting their rights."
+        },
+        {
+          "speaker": "B",
+          "chinese": "这种担心可以理解。除非案件非常复杂，否则有些法律援助机构可以提供免费帮助。",
+          "pinyin": "Zhè zhǒng dān xīn kě yǐ lǐ jiě. Chú fēi àn jiàn fēi cháng fù zá, fǒu zé yǒu xiē fǎ lǜ yuán zhù jī gòu kě yǐ tí gōng miǎn fèi bāng zhù.",
+          "english": "That concern is understandable. Unless the case is very complex, some legal aid organisations can provide free assistance."
+        },
+        {
+          "speaker": "A",
+          "chinese": "太好了！看来了解法律真的很重要，每个人都应该懂得保护自己的权利。",
+          "pinyin": "Tài hǎo le! Kàn lái liǎo jiě fǎ lǜ zhēn de hěn zhòng yào, měi gè rén dōu yīng gāi dǒng de bǎo hù zì jǐ de quán lì.",
+          "english": "That's great! It seems that understanding the law is really important, and everyone should know how to protect their own rights."
+        }
+      ]
+    }
+  ]
+}

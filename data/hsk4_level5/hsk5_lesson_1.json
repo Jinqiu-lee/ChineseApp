@@ -1,0 +1,682 @@
+{
+  "lesson": 1,
+  "level": 5,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Travel & Transportation",
+  "topic_chinese": "旅行与交通",
+  "vocabulary": [
+    {
+      "id": "hsk5_l1_01",
+      "chinese": "出差",
+      "pinyin": "chū chāi",
+      "english": "To go on a business trip",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l1_02",
+      "chinese": "出发",
+      "pinyin": "chū fā",
+      "english": "To set off; to depart",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l1_03",
+      "chinese": "航班",
+      "pinyin": "háng bān",
+      "english": "Flight; scheduled flight",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l1_04",
+      "chinese": "乘坐",
+      "pinyin": "chéng zuò",
+      "english": "To ride; to take (a vehicle)",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l1_05",
+      "chinese": "导游",
+      "pinyin": "dǎo yóu",
+      "english": "Tour guide",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l1_06",
+      "chinese": "降落",
+      "pinyin": "jiàng luò",
+      "english": "To land; to descend",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l1_07",
+      "chinese": "签证",
+      "pinyin": "qiān zhèng",
+      "english": "Visa",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l1_08",
+      "chinese": "登机牌",
+      "pinyin": "dēng jī pái",
+      "english": "Boarding pass",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l1_09",
+      "chinese": "高速公路",
+      "pinyin": "gāo sù gōng lù",
+      "english": "Highway; expressway",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l1_10",
+      "chinese": "迷路",
+      "pinyin": "mí lù",
+      "english": "To get lost",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l1_11",
+      "chinese": "大使馆",
+      "pinyin": "dà shǐ guǎn",
+      "english": "Embassy",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l1_12",
+      "chinese": "旅行",
+      "pinyin": "lǚ xíng",
+      "english": "To travel; travel",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk5_l1_p01",
+      "chinese": "顺利降落",
+      "pinyin": "shùn lì jiàng luò",
+      "english": "To land smoothly",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l1_p02",
+      "chinese": "申请签证",
+      "pinyin": "shēn qǐng qiān zhèng",
+      "english": "To apply for a visa",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l1_p03",
+      "chinese": "迷路求助",
+      "pinyin": "mí lù qiú zhù",
+      "english": "To ask for help when lost",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l1_p04",
+      "chinese": "乘坐高铁",
+      "pinyin": "chéng zuò gāo tiě",
+      "english": "To take the high-speed train",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l1_p05",
+      "chinese": "出差归来",
+      "pinyin": "chū chāi guī lái",
+      "english": "To return from a business trip",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l1_p06",
+      "chinese": "旅行计划",
+      "pinyin": "lǚ xíng jì huà",
+      "english": "Travel plan",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "我明天要出差，顺便去拜访一位老朋友。",
+      "pinyin": "Wǒ míng tiān yào chū chāi, shùn biàn qù bài fǎng yí wèi lǎo péng yǒu.",
+      "english": "I have a business trip tomorrow; I'll also take the chance to visit an old friend."
+    },
+    {
+      "chinese": "飞机已经顺利降落，乘客们都松了一口气。",
+      "pinyin": "Fēi jī yǐ jīng shùn lì jiàng luò, chéng kè men dōu sōng le yì kǒu qì.",
+      "english": "The plane has landed safely; all the passengers breathed a sigh of relief."
+    },
+    {
+      "chinese": "如果来不及申请签证，这次旅行就要推迟了。",
+      "pinyin": "Rú guǒ lái bù jí shēn qǐng qiān zhèng, zhè cì lǚ xíng jiù yào tuī chí le.",
+      "english": "If there is no time to apply for a visa, this trip will have to be postponed."
+    },
+    {
+      "chinese": "她在陌生的城市迷路了，只好向路人求助。",
+      "pinyin": "Tā zài mò shēng de chéng shì mí lù le, zhǐ hǎo xiàng lù rén qiú zhù.",
+      "english": "She got lost in the unfamiliar city and had to ask strangers for help."
+    },
+    {
+      "chinese": "乘坐高铁旅行，既快又舒适，是很多人的首选。",
+      "pinyin": "Chéng zuò gāo tiě lǚ xíng, jì kuài yòu shū shì, shì hěn duō rén de shǒu xuǎn.",
+      "english": "Travelling by high-speed rail is both fast and comfortable, and is the first choice for many people."
+    },
+    {
+      "chinese": "出发前，别忘了检查登机牌和护照。",
+      "pinyin": "Chū fā qián, bié wàng le jiǎn chá dēng jī pái hé hù zhào.",
+      "english": "Before setting off, don't forget to check your boarding pass and passport."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "顺便 — While you're at it / At the same time",
+      "explanation": "顺便 means to do something as a secondary action while doing something else — 'while you're at it' or 'in passing'. It is placed before the verb of the secondary action. Structure: main action + 顺便 + secondary action. Example: 我去超市，顺便给你买点东西。(I'm going to the supermarket; I'll pick something up for you while I'm at it.)",
+      "examples": [
+        {
+          "chinese": "他去机场接朋友，顺便把行李也带过来了。",
+          "pinyin": "Tā qù jī chǎng jiē péng yǒu, shùn biàn bǎ xíng li yě dài guò lái le.",
+          "english": "He went to the airport to pick up his friend and brought the luggage over while he was at it."
+        },
+        {
+          "chinese": "我去大使馆办签证，顺便了解一下当地文化。",
+          "pinyin": "Wǒ qù dà shǐ guǎn bàn qiān zhèng, shùn biàn liǎo jiě yī xià dāng dì wén huà.",
+          "english": "I went to the embassy to handle the visa and also learned about the local culture while I was there."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "我去买登机牌，_____ 帮你问一下航班时间。",
+          "type": "multiple_choice",
+          "correct": "顺便",
+          "options": ["顺便", "虽然", "因此", "推迟"],
+          "option_pinyin": ["shùn biàn", "suī rán", "yīn cǐ", "tuī chí"],
+          "word_hints": {"登机牌": "dēng jī pái", "航班": "háng bān"}
+        },
+        {
+          "question": "Choose the sentence that uses 顺便 correctly.",
+          "type": "multiple_choice",
+          "correct": "他出差，顺便去参观了当地的名胜。",
+          "options": [
+            "他出差，顺便去参观了当地的名胜。",
+            "顺便他出差，去参观了当地的名胜。",
+            "他出差去参观，顺便了当地的名胜。",
+            "他顺便，出差去参观了当地的名胜。"
+          ],
+          "option_pinyin": [
+            "Tā chū chāi, shùn biàn qù cān guān le dāng dì de míng shèng.",
+            "Shùn biàn tā chū chāi, qù cān guān le dāng dì de míng shèng.",
+            "Tā chū chāi qù cān guān, shùn biàn le dāng dì de míng shèng.",
+            "Tā shùn biàn, chū chāi qù cān guān le dāng dì de míng shèng."
+          ],
+          "word_hints": {"出差": "chū chāi"}
+        },
+        {
+          "question": "What does 顺便 indicate in a sentence?",
+          "type": "multiple_choice",
+          "correct": "Doing something extra while doing the main action",
+          "options": [
+            "Doing something extra while doing the main action",
+            "Showing a contrast between two events",
+            "Expressing a condition",
+            "Indicating a sequence of steps"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "她去导游公司预定行程，_____ 查看了签证要求。",
+          "type": "multiple_choice",
+          "correct": "顺便",
+          "options": ["顺便", "但是", "只要", "因为"],
+          "option_pinyin": ["shùn biàn", "dàn shì", "zhǐ yào", "yīn wèi"],
+          "word_hints": {"导游": "dǎo yóu", "签证": "qiān zhèng"}
+        },
+        {
+          "question": "Which position does 顺便 go in the sentence?",
+          "type": "multiple_choice",
+          "correct": "Before the secondary/extra action verb",
+          "options": [
+            "Before the secondary/extra action verb",
+            "At the very beginning of the sentence",
+            "After the object of the sentence",
+            "At the end of the sentence"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "来不及 / 来得及 — No time / Still have time",
+      "explanation": "来不及 means there is not enough time to do something. 来得及 means there is still time. Both are placed after the subject and before the action. Structure: Subject + 来不及/来得及 + verb. Example: 我们来不及赶飞机了。(We don't have time to catch the plane.) / 别急，还来得及。(Don't rush, there's still time.)",
+      "examples": [
+        {
+          "chinese": "航班马上就要起飞了，我们来不及办理登机手续了。",
+          "pinyin": "Háng bān mǎ shàng jiù yào qǐ fēi le, wǒ men lái bù jí bàn lǐ dēng jī shǒu xù le.",
+          "english": "The flight is about to take off; we don't have time to check in anymore."
+        },
+        {
+          "chinese": "别担心，现在出发还来得及，航班还有两个小时。",
+          "pinyin": "Bié dān xīn, xiàn zài chū fā hái lái de jí, háng bān hái yǒu liǎng gè xiǎo shí.",
+          "english": "Don't worry, if we leave now there's still time; the flight is in two hours."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "飞机一小时后起飞，我们还 _____ 取登机牌吗？",
+          "type": "multiple_choice",
+          "correct": "来得及",
+          "options": ["来得及", "来不及", "推迟", "出发"],
+          "option_pinyin": ["lái de jí", "lái bù jí", "tuī chí", "chū fā"],
+          "word_hints": {"登机牌": "dēng jī pái"}
+        },
+        {
+          "question": "签证还没申请，出发时间太近，我们 _____ 准备好了。",
+          "type": "multiple_choice",
+          "correct": "来不及",
+          "options": ["来不及", "来得及", "顺便", "降落"],
+          "option_pinyin": ["lái bù jí", "lái de jí", "shùn biàn", "jiàng luò"],
+          "word_hints": {"签证": "qiān zhèng", "申请": "shēn qǐng"}
+        },
+        {
+          "question": "What does 来不及 mean?",
+          "type": "multiple_choice",
+          "correct": "There is not enough time",
+          "options": [
+            "There is not enough time",
+            "There is still enough time",
+            "To arrive on time",
+            "To postpone"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "Choose the correct sentence.",
+          "type": "multiple_choice",
+          "correct": "现在出发还来得及赶上这趟航班。",
+          "options": [
+            "现在出发还来得及赶上这趟航班。",
+            "现在出发还来不及赶上这趟航班。",
+            "现在来得及出发还赶上这趟航班。",
+            "现在还出发来得及这趟航班赶上。"
+          ],
+          "option_pinyin": [
+            "Xiàn zài chū fā hái lái de jí gǎn shàng zhè tàng háng bān.",
+            "Xiàn zài chū fā hái lái bù jí gǎn shàng zhè tàng háng bān.",
+            "Xiàn zài lái de jí chū fā hái gǎn shàng zhè tàng háng bān.",
+            "Xiàn zài hái chū fā lái de jí zhè tàng háng bān gǎn shàng."
+          ],
+          "word_hints": {"航班": "háng bān"}
+        },
+        {
+          "question": "导游说已经 _____ 改变路线了，必须走高速公路。",
+          "type": "multiple_choice",
+          "correct": "来不及",
+          "options": ["来不及", "来得及", "顺便", "出发"],
+          "option_pinyin": ["lái bù jí", "lái de jí", "shùn biàn", "chū fā"],
+          "word_hints": {"导游": "dǎo yóu", "高速公路": "gāo sù gōng lù"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "推迟 — To postpone / To delay",
+      "explanation": "推迟 means to put something off to a later time. It is typically used with activities, events, or plans. Structure: Subject + 把 + plan + 推迟 + (到 + new time) / or Subject + 推迟 + verb phrase. Example: 会议推迟到下周了。(The meeting has been postponed to next week.) / 他们推迟了出发时间。(They delayed the departure time.)",
+      "examples": [
+        {
+          "chinese": "由于天气原因，航班被推迟了两个小时。",
+          "pinyin": "Yóu yú tiān qì yuán yīn, háng bān bèi tuī chí le liǎng gè xiǎo shí.",
+          "english": "Due to weather conditions, the flight was delayed by two hours."
+        },
+        {
+          "chinese": "他们把旅行计划推迟到下个月，等签证办好再出发。",
+          "pinyin": "Tā men bǎ lǚ xíng jì huà tuī chí dào xià gè yuè, děng qiān zhèng bàn hǎo zài chū fā.",
+          "english": "They postponed their travel plan to next month, waiting until the visa is ready before departing."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "因为导游生病了，这次旅游只能 _____ 了。",
+          "type": "multiple_choice",
+          "correct": "推迟",
+          "options": ["推迟", "出发", "降落", "迷路"],
+          "option_pinyin": ["tuī chí", "chū fā", "jiàng luò", "mí lù"],
+          "word_hints": {"导游": "dǎo yóu"}
+        },
+        {
+          "question": "Choose the correct use of 推迟.",
+          "type": "multiple_choice",
+          "correct": "会议推迟到下周举行。",
+          "options": [
+            "会议推迟到下周举行。",
+            "推迟会议到下周举行。",
+            "会议到下周推迟举行。",
+            "推迟到下周，会议举行。"
+          ],
+          "option_pinyin": [
+            "Huì yì tuī chí dào xià zhōu jǔ xíng.",
+            "Tuī chí huì yì dào xià zhōu jǔ xíng.",
+            "Huì yì dào xià zhōu tuī chí jǔ xíng.",
+            "Tuī chí dào xià zhōu, huì yì jǔ xíng."
+          ],
+          "word_hints": {}
+        },
+        {
+          "question": "What does 推迟 mean?",
+          "type": "multiple_choice",
+          "correct": "To postpone or delay",
+          "options": [
+            "To postpone or delay",
+            "To cancel permanently",
+            "To arrive early",
+            "To speed up"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "他没来得及申请签证，所以只好把出差 _____ 了。",
+          "type": "multiple_choice",
+          "correct": "推迟",
+          "options": ["推迟", "降落", "迷路", "乘坐"],
+          "option_pinyin": ["tuī chí", "jiàng luò", "mí lù", "chéng zuò"],
+          "word_hints": {"签证": "qiān zhèng", "出差": "chū chāi"}
+        },
+        {
+          "question": "Which structure is correct with 推迟?",
+          "type": "multiple_choice",
+          "correct": "把计划推迟到下周",
+          "options": [
+            "把计划推迟到下周",
+            "推迟把计划到下周",
+            "到下周把推迟计划",
+            "计划把到下周推迟"
+          ],
+          "option_pinyin": [
+            "bǎ jì huà tuī chí dào xià zhōu",
+            "tuī chí bǎ jì huà dào xià zhōu",
+            "dào xià zhōu bǎ tuī chí jì huà",
+            "jì huà bǎ dào xià zhōu tuī chí"
+          ],
+          "word_hints": {}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "China's High-Speed Rail — The World's Largest Network",
+      "title_chinese": "中国高铁——世界最大铁路网",
+      "content": "China operates the world's largest high-speed rail (高铁, gāo tiě) network, spanning over 40,000 kilometres. Trains such as the 复兴号 (Fùxīng Hào, 'Rejuvenation') reach speeds of up to 350 km/h, connecting major cities across the country in hours rather than days. The network has transformed domestic travel, often making high-speed rail a faster and more convenient alternative to flying for distances under 1,000 km. Passengers appreciate the spacious seats, punctuality, and city-centre stations that eliminate the need for long airport commutes. The expansion of 高铁 reflects China's broader push for modern infrastructure and has become a source of national pride.",
+      "idioms": [
+        {
+          "chinese": "一路顺风",
+          "pinyin": "yī lù shùn fēng",
+          "english": "Have a smooth journey (a common farewell to travellers)"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 出差 mean?",
+      "type": "multiple_choice",
+      "correct": "To go on a business trip",
+      "options": ["To go on a business trip", "To travel for fun", "To get lost", "To depart"],
+      "word_hints": {"出差": "chū chāi"}
+    },
+    {
+      "question": "Which word means 'boarding pass'?",
+      "type": "multiple_choice",
+      "correct": "登机牌",
+      "options": ["签证", "登机牌", "航班", "导游"],
+      "word_hints": {"签证": "qiān zhèng", "登机牌": "dēng jī pái", "航班": "háng bān", "导游": "dǎo yóu"}
+    },
+    {
+      "question": "What does 降落 mean?",
+      "type": "multiple_choice",
+      "correct": "To land; to descend",
+      "options": ["To land; to descend", "To take off", "To board", "To depart"],
+      "word_hints": {"降落": "jiàng luò"}
+    },
+    {
+      "question": "Which word means 'visa'?",
+      "type": "multiple_choice",
+      "correct": "签证",
+      "options": ["航班", "导游", "签证", "登机牌"],
+      "word_hints": {"签证": "qiān zhèng", "航班": "háng bān", "导游": "dǎo yóu", "登机牌": "dēng jī pái"}
+    },
+    {
+      "question": "What does 迷路 mean?",
+      "type": "multiple_choice",
+      "correct": "To get lost",
+      "options": ["To get lost", "To travel", "To ride a train", "To ask for help"],
+      "word_hints": {"迷路": "mí lù"}
+    },
+    {
+      "question": "Which word means 'highway; expressway'?",
+      "type": "multiple_choice",
+      "correct": "高速公路",
+      "options": ["大使馆", "高速公路", "乘坐", "出发"],
+      "word_hints": {"高速公路": "gāo sù gōng lù", "大使馆": "dà shǐ guǎn"}
+    },
+    {
+      "question": "What does 大使馆 mean?",
+      "type": "multiple_choice",
+      "correct": "Embassy",
+      "options": ["Hotel", "Embassy", "Airport", "Train station"],
+      "word_hints": {"大使馆": "dà shǐ guǎn"}
+    },
+    {
+      "question": "What does 航班 mean?",
+      "type": "multiple_choice",
+      "correct": "Flight; scheduled flight",
+      "options": ["Flight; scheduled flight", "Boarding pass", "Tour guide", "Visa"],
+      "word_hints": {"航班": "háng bān"}
+    },
+    {
+      "question": "What does 顺便 mean in a sentence?",
+      "type": "multiple_choice",
+      "correct": "While you're at it; doing something extra in passing",
+      "options": [
+        "While you're at it; doing something extra in passing",
+        "In order to achieve a goal",
+        "Although something is true",
+        "Causing something to happen"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 签证还没办，我们 _____ 赶上这次旅行了。",
+      "type": "multiple_choice",
+      "correct": "来不及",
+      "options": ["来不及", "来得及", "推迟", "顺便"],
+      "word_hints": {"签证": "qiān zhèng"}
+    },
+    {
+      "question": "What does 来得及 mean?",
+      "type": "multiple_choice",
+      "correct": "There is still time",
+      "options": ["There is still time", "There is no time", "To be late", "To hurry up"],
+      "word_hints": {}
+    },
+    {
+      "question": "Choose the correct sentence using 推迟.",
+      "type": "multiple_choice",
+      "correct": "由于天气，航班被推迟了。",
+      "options": [
+        "由于天气，航班被推迟了。",
+        "由于天气，航班推迟被了。",
+        "航班由于天气，推迟被了。",
+        "航班推迟，由于天气被了。"
+      ],
+      "word_hints": {"航班": "háng bān"}
+    },
+    {
+      "question": "What does 乘坐 mean?",
+      "type": "multiple_choice",
+      "correct": "To ride; to take (a vehicle)",
+      "options": ["To ride; to take (a vehicle)", "To drive", "To fly", "To walk"],
+      "word_hints": {"乘坐": "chéng zuò"}
+    },
+    {
+      "question": "What does the phrase 旅行计划 mean?",
+      "type": "multiple_choice",
+      "correct": "Travel plan",
+      "options": ["Travel plan", "Flight schedule", "Tour guide fee", "Visa application"],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 去机场前，他 _____ 在银行取了钱。",
+      "type": "multiple_choice",
+      "correct": "顺便",
+      "options": ["顺便", "推迟", "来不及", "降落"],
+      "word_hints": {}
+    },
+    {
+      "question": "Which phrase means 'to apply for a visa'?",
+      "type": "multiple_choice",
+      "correct": "申请签证",
+      "options": ["申请签证", "顺利降落", "乘坐高铁", "出差归来"],
+      "word_hints": {"签证": "qiān zhèng"}
+    },
+    {
+      "question": "What does 导游 mean?",
+      "type": "multiple_choice",
+      "correct": "Tour guide",
+      "options": ["Tour guide", "Flight attendant", "Taxi driver", "Hotel manager"],
+      "word_hints": {"导游": "dǎo yóu"}
+    },
+    {
+      "question": "China's high-speed train 复兴号 can reach a speed of up to:",
+      "type": "multiple_choice",
+      "correct": "350 km/h",
+      "options": ["350 km/h", "250 km/h", "180 km/h", "420 km/h"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 出差归来 mean?",
+      "type": "multiple_choice",
+      "correct": "To return from a business trip",
+      "options": ["To return from a business trip", "To leave on a business trip", "To get lost on a trip", "To plan a business trip"],
+      "word_hints": {"出差": "chū chāi"}
+    },
+    {
+      "question": "Which grammar pattern means 'while you're at it'?",
+      "type": "multiple_choice",
+      "correct": "顺便",
+      "options": ["顺便", "推迟", "来不及", "只好"],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "At the Airport",
+      "title_chinese": "在机场",
+      "speakers": {
+        "A": {"name": "建国", "role": "旅客", "gender": "male"},
+        "B": {"name": "小林", "role": "地勤人员", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "您好，我的航班是CA302，请问还来得及办理登机手续吗？",
+          "pinyin": "Nín hǎo, wǒ de háng bān shì CA302, qǐng wèn hái lái de jí bàn lǐ dēng jī shǒu xù ma?",
+          "english": "Hello, my flight is CA302. Is there still time to check in?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "来得及，还有四十分钟。请把您的登机牌和护照给我看一下。",
+          "pinyin": "Lái de jí, hái yǒu sì shí fēn zhōng. Qǐng bǎ nín de dēng jī pái hé hù zhào gěi wǒ kàn yī xià.",
+          "english": "Yes, there are still forty minutes. Please show me your boarding pass and passport."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好的，给您。我这次是出差，签证是公司帮我申请的。",
+          "pinyin": "Hǎo de, gěi nín. Wǒ zhè cì shì chū chāi, qiān zhèng shì gōng sī bāng wǒ shēn qǐng de.",
+          "english": "Here you are. I'm on a business trip this time; the company applied for the visa on my behalf."
+        },
+        {
+          "speaker": "B",
+          "chinese": "明白了。请问您有几件行李要托运？",
+          "pinyin": "Míng bai le. Qǐng wèn nín yǒu jǐ jiàn xíng li yào tuō yùn?",
+          "english": "I see. How many bags would you like to check in?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "只有一件。对了，我想顺便问一下，飞机会准时出发吗？",
+          "pinyin": "Zhǐ yǒu yī jiàn. Duì le, wǒ xiǎng shùn biàn wèn yī xià, fēi jī huì zhǔn shí chū fā ma?",
+          "english": "Just one. By the way, I'd like to ask — will the plane depart on time?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "目前没有推迟，预计准时起飞。祝您旅行顺利！",
+          "pinyin": "Mù qián méi yǒu tuī chí, yù jì zhǔn shí qǐ fēi. Zhù nín lǚ xíng shùn lì!",
+          "english": "There are no delays at the moment; it is expected to take off on time. Have a smooth trip!"
+        },
+        {
+          "speaker": "A",
+          "chinese": "太好了，谢谢您！希望能顺利降落，平安抵达。",
+          "pinyin": "Tài hǎo le, xiè xie nín! Xī wàng néng shùn lì jiàng luò, píng ān dǐ dá.",
+          "english": "Great, thank you! I hope we land safely and arrive without any problems."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Lost in a New City",
+      "title_chinese": "在陌生城市迷路了",
+      "speakers": {
+        "A": {"name": "小美", "role": "游客", "gender": "female"},
+        "B": {"name": "大叔", "role": "路人", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "打扰一下，我好像迷路了。请问大使馆怎么走？",
+          "pinyin": "Dǎ rǎo yī xià, wǒ hǎo xiàng mí lù le. Qǐng wèn dà shǐ guǎn zěn me zǒu?",
+          "english": "Excuse me, I think I'm lost. How do I get to the embassy?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "大使馆在高速公路旁边，从这里走大概二十分钟。",
+          "pinyin": "Dà shǐ guǎn zài gāo sù gōng lù páng biān, cóng zhè lǐ zǒu dà gài èr shí fēn zhōng.",
+          "english": "The embassy is next to the highway; it's about a twenty-minute walk from here."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我乘坐地铁来的，没想到出站口找错了，就迷路了。",
+          "pinyin": "Wǒ chéng zuò dì tiě lái de, méi xiǎng dào chū zhàn kǒu zhǎo cuò le, jiù mí lù le.",
+          "english": "I came by subway but accidentally took the wrong exit and got lost."
+        },
+        {
+          "speaker": "B",
+          "chinese": "没关系。你可以先坐公共汽车到高速公路出口，再步行五分钟。",
+          "pinyin": "Méi guān xi. Nǐ kě yǐ xiān zuò gōng gòng qì chē dào gāo sù gōng lù chū kǒu, zài bù xíng wǔ fēn zhōng.",
+          "english": "No problem. You can take a bus to the highway exit and then walk five minutes."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我是来申请旅行签证的，导游说要带很多证明文件。",
+          "pinyin": "Wǒ shì lái shēn qǐng lǚ xíng qiān zhèng de, dǎo yóu shuō yào dài hěn duō zhèng míng wén jiàn.",
+          "english": "I'm here to apply for a travel visa; the tour guide said I need to bring many supporting documents."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那你要抓紧时间，大使馆下午五点关门，来不及的话就要明天再来了。",
+          "pinyin": "Nà nǐ yào zhuā jǐn shí jiān, dà shǐ guǎn xià wǔ wǔ diǎn guān mén, lái bù jí de huà jiù yào míng tiān zài lái le.",
+          "english": "Then you should hurry; the embassy closes at 5 p.m. If you run out of time, you'll have to come back tomorrow."
+        },
+        {
+          "speaker": "A",
+          "chinese": "谢谢您！我这就出发，希望还来得及！",
+          "pinyin": "Xiè xie nín! Wǒ zhè jiù chū fā, xī wàng hái lái de jí!",
+          "english": "Thank you! I'll head off right now — I hope there's still time!"
+        }
+      ]
+    }
+  ]
+}

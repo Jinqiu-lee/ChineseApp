@@ -1,0 +1,682 @@
+{
+  "lesson": 10,
+  "level": 5,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Urban Life",
+  "topic_chinese": "城市生活",
+  "vocabulary": [
+    {
+      "id": "hsk5_l10_01",
+      "chinese": "交通",
+      "pinyin": "jiāo tōng",
+      "english": "Traffic; transportation",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l10_02",
+      "chinese": "拥挤",
+      "pinyin": "yōng jǐ",
+      "english": "Crowded; congested",
+      "part_of_speech": "adj/verb"
+    },
+    {
+      "id": "hsk5_l10_03",
+      "chinese": "社区",
+      "pinyin": "shè qū",
+      "english": "Community; neighbourhood",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l10_04",
+      "chinese": "设施",
+      "pinyin": "shè shī",
+      "english": "Facilities; infrastructure",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l10_05",
+      "chinese": "环境",
+      "pinyin": "huán jìng",
+      "english": "Environment; surroundings",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l10_06",
+      "chinese": "便利",
+      "pinyin": "biàn lì",
+      "english": "Convenient; convenience",
+      "part_of_speech": "adj/noun"
+    },
+    {
+      "id": "hsk5_l10_07",
+      "chinese": "压力",
+      "pinyin": "yā lì",
+      "english": "Pressure; stress",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l10_08",
+      "chinese": "节奏",
+      "pinyin": "jié zòu",
+      "english": "Rhythm; pace",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l10_09",
+      "chinese": "污染",
+      "pinyin": "wū rǎn",
+      "english": "Pollution; to pollute",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l10_10",
+      "chinese": "绿化",
+      "pinyin": "lǜ huà",
+      "english": "Greening; afforestation; green spaces",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l10_11",
+      "chinese": "规划",
+      "pinyin": "guī huà",
+      "english": "Planning; urban planning; to plan",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l10_12",
+      "chinese": "公共交通",
+      "pinyin": "gōng gòng jiāo tōng",
+      "english": "Public transportation",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l10_p01",
+      "chinese": "城市规划",
+      "pinyin": "chéng shì guī huà",
+      "english": "Urban planning",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l10_p02",
+      "chinese": "缓解压力",
+      "pinyin": "huǎn jiě yā lì",
+      "english": "To relieve stress",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l10_p03",
+      "chinese": "改善环境",
+      "pinyin": "gǎi shàn huán jìng",
+      "english": "To improve the environment",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l10_p04",
+      "chinese": "生活节奏",
+      "pinyin": "shēng huó jié zòu",
+      "english": "Pace of life",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l10_p05",
+      "chinese": "公共设施",
+      "pinyin": "gōng gòng shè shī",
+      "english": "Public facilities",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l10_p06",
+      "chinese": "空气污染",
+      "pinyin": "kōng qì wū rǎn",
+      "english": "Air pollution",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "随着城市化进程加快，越来越多的人涌入城市，交通变得越来越拥挤。",
+      "pinyin": "Suí zhe chéng shì huà jìn chéng jiā kuài, yuè lái yuè duō de rén yǒng rù chéng shì, jiāo tōng biàn de yuè lái yuè yōng jǐ.",
+      "english": "As urbanisation accelerates, more and more people are flooding into cities, and traffic has become increasingly congested."
+    },
+    {
+      "chinese": "由于城市发展过快，部分社区的公共设施严重不足。",
+      "pinyin": "Yóu yú chéng shì fā zhǎn guò kuài, bù fèn shè qū de gōng gòng shè shī yán zhòng bù zú.",
+      "english": "Due to the excessively rapid development of cities, public facilities in some communities are seriously inadequate."
+    },
+    {
+      "chinese": "尽管城市生活节奏很快、压力很大，但便利的设施让很多人不愿离开。",
+      "pinyin": "Jǐn guǎn chéng shì shēng huó jié zòu hěn kuài, yā lì hěn dà, dàn biàn lì de shè shī ràng hěn duō rén bú yuàn lí kāi.",
+      "english": "Although the pace of city life is fast and stressful, the convenient facilities make many people reluctant to leave."
+    },
+    {
+      "chinese": "随着绿化面积不断扩大，城市的生态环境得到了明显改善。",
+      "pinyin": "Suí zhe lǜ huà miàn jī bú duàn kuò dà, chéng shì de shēng tài huán jìng dé dào le míng xiǎn gǎi shàn.",
+      "english": "As green spaces continue to expand, the ecological environment of cities has been significantly improved."
+    },
+    {
+      "chinese": "由于空气污染严重，市政府加大了对城市规划和绿化的投入。",
+      "pinyin": "Yóu yú kōng qì wū rǎn yán zhòng, shì zhèng fǔ jiā dà le duì chéng shì guī huà hé lǜ huà de tóu rù.",
+      "english": "Due to serious air pollution, the municipal government has increased investment in urban planning and greening."
+    },
+    {
+      "chinese": "尽管公共交通系统不断完善，但高峰期的拥挤问题依然难以完全解决。",
+      "pinyin": "Jǐn guǎn gōng gòng jiāo tōng xì tǒng bú duàn wán shàn, dàn gāo fēng qī de yōng jǐ wèn tí yī rán nán yǐ wán quán jiě jué.",
+      "english": "Although the public transportation system continues to improve, the problem of congestion during peak hours remains difficult to fully resolve."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "随着 — As; along with; as… increases",
+      "explanation": "随着 is a preposition meaning 'as', 'along with', or 'following'. It introduces a changing condition or situation, and the main clause describes what happens as a result of that change. Structure: 随着 + noun/verb phrase (the changing factor), + subject + main clause. It is most naturally used with gradual changes or trends. Example: 随着科技发展，生活越来越便利。(As technology develops, life becomes more and more convenient.) Note: 随着 differs from 由于 in that it describes ongoing or gradual change rather than a completed cause.",
+      "examples": [
+        {
+          "chinese": "随着城市人口增加，对公共交通的需求也越来越大。",
+          "pinyin": "Suí zhe chéng shì rén kǒu zēng jiā, duì gōng gòng jiāo tōng de xū qiú yě yuè lái yuè dà.",
+          "english": "As the urban population increases, the demand for public transportation is also growing."
+        },
+        {
+          "chinese": "随着社区设施不断改善，居民的生活质量明显提高了。",
+          "pinyin": "Suí zhe shè qū shè shī bú duàn gǎi shàn, jū mín de shēng huó zhì liàng míng xiǎn tí gāo le.",
+          "english": "As community facilities continue to improve, residents' quality of life has improved noticeably."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 城市绿化面积扩大，空气污染问题逐渐得到改善。",
+          "type": "multiple_choice",
+          "correct": "随着",
+          "options": ["随着", "由于", "尽管", "因此"],
+          "option_pinyin": ["suí zhe", "yóu yú", "jǐn guǎn", "yīn cǐ"],
+          "word_hints": {"绿化": "lǜ huà", "污染": "wū rǎn"}
+        },
+        {
+          "question": "Choose the sentence that uses 随着 correctly.",
+          "type": "multiple_choice",
+          "correct": "随着生活节奏加快，城市居民的压力也越来越大。",
+          "options": [
+            "随着生活节奏加快，城市居民的压力也越来越大。",
+            "由于生活节奏加快随着，城市居民的压力也越来越大。",
+            "城市居民随着生活节奏，压力也越来越大加快。",
+            "随着城市居民的压力，生活节奏也越来越加快。"
+          ],
+          "option_pinyin": [
+            "Suí zhe shēng huó jié zòu jiā kuài, chéng shì jū mín de yā lì yě yuè lái yuè dà.",
+            "Yóu yú shēng huó jié zòu jiā kuài suí zhe, chéng shì jū mín de yā lì yě yuè lái yuè dà.",
+            "Chéng shì jū mín suí zhe shēng huó jié zòu, yā lì yě yuè lái yuè dà jiā kuài.",
+            "Suí zhe chéng shì jū mín de yā lì, shēng huó jié zòu yě yuè lái yuè jiā kuài."
+          ],
+          "word_hints": {"节奏": "jié zòu", "压力": "yā lì"}
+        },
+        {
+          "question": "What does 随着 mean?",
+          "type": "multiple_choice",
+          "correct": "As; along with; following a change",
+          "options": [
+            "As; along with; following a change",
+            "Although; even though",
+            "Due to; because of",
+            "Therefore; as a result"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "_____ 公共交通网络不断扩大，越来越多的市民选择乘坐地铁上班。",
+          "type": "multiple_choice",
+          "correct": "随着",
+          "options": ["随着", "尽管", "由于", "因此"],
+          "option_pinyin": ["suí zhe", "jǐn guǎn", "yóu yú", "yīn cǐ"],
+          "word_hints": {"交通": "jiāo tōng"}
+        },
+        {
+          "question": "What kind of change does 随着 typically describe?",
+          "type": "multiple_choice",
+          "correct": "A gradual or ongoing change or trend",
+          "options": [
+            "A gradual or ongoing change or trend",
+            "A sudden or unexpected event",
+            "A condition that must be met",
+            "A contrast between two situations"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "由于 — Due to; because of",
+      "explanation": "由于 is a preposition/conjunction meaning 'due to', 'because of', or 'owing to'. It introduces a cause or reason for the situation described in the main clause. Structure: 由于 + cause noun/clause, + result clause (often with 因此, 所以, or 导致). 由于 is more formal than 因为 and typically appears in written or official language. It can appear at the start of a sentence or mid-sentence after the subject. Example: 由于污染严重，政府制定了新的环保规定。(Due to serious pollution, the government formulated new environmental regulations.)",
+      "examples": [
+        {
+          "chinese": "由于城市规划不合理，部分地区的交通拥挤问题十分严重。",
+          "pinyin": "Yóu yú chéng shì guī huà bù hé lǐ, bù fèn dì qū de jiāo tōng yōng jǐ wèn tí shí fēn yán zhòng.",
+          "english": "Due to unreasonable urban planning, the traffic congestion problem in some areas is very severe."
+        },
+        {
+          "chinese": "由于缺乏绿化，这个社区的空气质量远远低于标准。",
+          "pinyin": "Yóu yú quē fá lǜ huà, zhè gè shè qū de kōng qì zhì liàng yuǎn yuǎn dī yú biāo zhǔn.",
+          "english": "Due to a lack of green spaces, the air quality in this community is far below standard."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 空气污染严重，市民们呼吁政府加强环境规划。",
+          "type": "multiple_choice",
+          "correct": "由于",
+          "options": ["由于", "随着", "尽管", "即使"],
+          "option_pinyin": ["yóu yú", "suí zhe", "jǐn guǎn", "jí shǐ"],
+          "word_hints": {"污染": "wū rǎn", "规划": "guī huà"}
+        },
+        {
+          "question": "Choose the sentence that uses 由于 correctly.",
+          "type": "multiple_choice",
+          "correct": "由于设施不完善，居民们对这个社区颇有抱怨。",
+          "options": [
+            "由于设施不完善，居民们对这个社区颇有抱怨。",
+            "设施由于不完善，居民们对这个社区颇有抱怨。",
+            "居民们由于，设施不完善对这个社区颇有抱怨。",
+            "由于居民们，设施不完善这个社区颇有抱怨。"
+          ],
+          "option_pinyin": [
+            "Yóu yú shè shī bù wán shàn, jū mín men duì zhè gè shè qū pō yǒu bào yuàn.",
+            "Shè shī yóu yú bù wán shàn, jū mín men duì zhè gè shè qū pō yǒu bào yuàn.",
+            "Jū mín men yóu yú, shè shī bù wán shàn duì zhè gè shè qū pō yǒu bào yuàn.",
+            "Yóu yú jū mín men, shè shī bù wán shàn zhè gè shè qū pō yǒu bào yuàn."
+          ],
+          "word_hints": {"设施": "shè shī", "社区": "shè qū"}
+        },
+        {
+          "question": "What does 由于 mean?",
+          "type": "multiple_choice",
+          "correct": "Due to; because of; owing to",
+          "options": [
+            "Due to; because of; owing to",
+            "As; along with",
+            "Although; even though",
+            "No matter; regardless"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "_____ 交通压力过大，政府决定扩建公共交通系统。",
+          "type": "multiple_choice",
+          "correct": "由于",
+          "options": ["由于", "随着", "尽管", "除非"],
+          "option_pinyin": ["yóu yú", "suí zhe", "jǐn guǎn", "chú fēi"],
+          "word_hints": {"交通": "jiāo tōng", "公共交通": "gōng gòng jiāo tōng"}
+        },
+        {
+          "question": "What conjunction commonly follows 由于 in the result clause?",
+          "type": "multiple_choice",
+          "correct": "因此/所以",
+          "options": ["因此/所以", "但是", "随着", "无论"],
+          "option_pinyin": ["yīn cǐ / suǒ yǐ", "dàn shì", "suí zhe", "wú lùn"],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "尽管 — Although; even though",
+      "explanation": "尽管 is a conjunction meaning 'although', 'even though', or 'despite the fact that'. It introduces a fact that one might expect to prevent or alter the outcome, but the result in the main clause is contrary to that expectation. Structure: 尽管 + concessive clause, + (但/但是/还是) + main clause. Like 虽然, 尽管 acknowledges a fact but overrides its expected consequence. 尽管 is slightly more formal and emphatic than 虽然. Example: 尽管生活节奏快，他每天坚持锻炼。(Although the pace of life is fast, he exercises every day.)",
+      "examples": [
+        {
+          "chinese": "尽管城市的公共设施很完善，但生活压力依然让很多人感到疲惫。",
+          "pinyin": "Jǐn guǎn chéng shì de gōng gòng shè shī hěn wán shàn, dàn shēng huó yā lì yī rán ràng hěn duō rén gǎn dào pí bèi.",
+          "english": "Although the city's public facilities are well developed, the pressure of life still makes many people feel exhausted."
+        },
+        {
+          "chinese": "尽管交通拥挤，城市依然吸引了大批年轻人来此工作和生活。",
+          "pinyin": "Jǐn guǎn jiāo tōng yōng jǐ, chéng shì yī rán xī yǐn le dà pī nián qīng rén lái cǐ gōng zuò hé shēng huó.",
+          "english": "Although traffic is congested, cities still attract a large number of young people to work and live here."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 这个社区环境嘈杂，设施却非常便利。",
+          "type": "multiple_choice",
+          "correct": "尽管",
+          "options": ["尽管", "随着", "由于", "因此"],
+          "option_pinyin": ["jǐn guǎn", "suí zhe", "yóu yú", "yīn cǐ"],
+          "word_hints": {"社区": "shè qū", "设施": "shè shī", "便利": "biàn lì"}
+        },
+        {
+          "question": "Choose the sentence that uses 尽管 correctly.",
+          "type": "multiple_choice",
+          "correct": "尽管空气污染严重，很多人仍选择在城市生活。",
+          "options": [
+            "尽管空气污染严重，很多人仍选择在城市生活。",
+            "由于空气污染尽管严重，很多人仍选择在城市生活。",
+            "很多人尽管，空气污染严重仍选择在城市生活。",
+            "空气污染尽管严重，很多人在城市生活仍选择。"
+          ],
+          "option_pinyin": [
+            "Jǐn guǎn kōng qì wū rǎn yán zhòng, hěn duō rén réng xuǎn zé zài chéng shì shēng huó.",
+            "Yóu yú kōng qì wū rǎn jǐn guǎn yán zhòng, hěn duō rén réng xuǎn zé zài chéng shì shēng huó.",
+            "Hěn duō rén jǐn guǎn, kōng qì wū rǎn yán zhòng réng xuǎn zé zài chéng shì shēng huó.",
+            "Kōng qì wū rǎn jǐn guǎn yán zhòng, hěn duō rén zài chéng shì shēng huó réng xuǎn zé."
+          ],
+          "word_hints": {"污染": "wū rǎn"}
+        },
+        {
+          "question": "What does 尽管 mean?",
+          "type": "multiple_choice",
+          "correct": "Although; even though; despite the fact that",
+          "options": [
+            "Although; even though; despite the fact that",
+            "As; along with",
+            "Due to; because of",
+            "No matter; regardless"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "尽管城市绿化做得不错，_____ 空气质量还需要进一步改善。",
+          "type": "multiple_choice",
+          "correct": "但",
+          "options": ["但", "因此", "随着", "由于"],
+          "option_pinyin": ["dàn", "yīn cǐ", "suí zhe", "yóu yú"],
+          "word_hints": {"绿化": "lǜ huà", "环境": "huán jìng"}
+        },
+        {
+          "question": "How does 尽管 differ from 由于?",
+          "type": "multiple_choice",
+          "correct": "尽管 introduces a concession; 由于 introduces a cause",
+          "options": [
+            "尽管 introduces a concession; 由于 introduces a cause",
+            "尽管 introduces a cause; 由于 introduces a concession",
+            "They have the same meaning",
+            "尽管 is only used for urban topics; 由于 is general"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "China's Rapid Urbanisation and Smart City Development",
+      "title_chinese": "中国城镇化与智慧城市建设",
+      "content": "China has undergone one of the fastest urbanisation processes in human history. In 1980, less than 20% of China's population lived in cities; by 2023, that figure had risen to over 65%. This dramatic shift has created enormous demand for urban infrastructure (设施, shè shī), public transportation (公共交通, gōng gòng jiāo tōng), housing, and green spaces (绿化, lǜ huà). Chinese cities have responded with ambitious urban planning (城市规划, chéng shì guī huà) initiatives. Beijing, Shanghai, and Shenzhen are among the world's leading 'smart cities', using big data, artificial intelligence, and sensors to manage traffic, reduce pollution (污染, wū rǎn), and improve residents' daily lives. Despite these advances, challenges remain: the fast pace of life (生活节奏, shēng huó jié zòu), traffic congestion, housing pressure, and air quality continue to concern city dwellers. In response, China is expanding metro networks, investing in electric vehicles, and creating large urban parks to improve the quality of life in its booming cities.",
+      "idioms": [
+        {
+          "chinese": "与时俱进",
+          "pinyin": "yǔ shí jù jìn",
+          "english": "To advance with the times; to keep pace with modern developments"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 交通 mean?",
+      "type": "multiple_choice",
+      "correct": "Traffic; transportation",
+      "options": ["Traffic; transportation", "Community", "Facilities", "Environment"],
+      "word_hints": {"交通": "jiāo tōng"}
+    },
+    {
+      "question": "Which word means 'crowded; congested'?",
+      "type": "multiple_choice",
+      "correct": "拥挤",
+      "options": ["便利", "拥挤", "污染", "节奏"],
+      "word_hints": {"便利": "biàn lì", "拥挤": "yōng jǐ", "污染": "wū rǎn", "节奏": "jié zòu"}
+    },
+    {
+      "question": "What does 污染 mean?",
+      "type": "multiple_choice",
+      "correct": "Pollution; to pollute",
+      "options": ["Pollution; to pollute", "Greening", "Planning", "Pressure"],
+      "word_hints": {"污染": "wū rǎn"}
+    },
+    {
+      "question": "Which word means 'community; neighbourhood'?",
+      "type": "multiple_choice",
+      "correct": "社区",
+      "options": ["设施", "社区", "环境", "规划"],
+      "word_hints": {"设施": "shè shī", "社区": "shè qū", "环境": "huán jìng", "规划": "guī huà"}
+    },
+    {
+      "question": "What does 绿化 mean?",
+      "type": "multiple_choice",
+      "correct": "Greening; afforestation; green spaces",
+      "options": ["Greening; afforestation; green spaces", "Pollution", "Pressure", "Rhythm"],
+      "word_hints": {"绿化": "lǜ huà"}
+    },
+    {
+      "question": "Which word means 'planning; urban planning; to plan'?",
+      "type": "multiple_choice",
+      "correct": "规划",
+      "options": ["压力", "节奏", "规划", "环境"],
+      "word_hints": {"压力": "yā lì", "节奏": "jié zòu", "规划": "guī huà", "环境": "huán jìng"}
+    },
+    {
+      "question": "What does the phrase 生活节奏 mean?",
+      "type": "multiple_choice",
+      "correct": "Pace of life",
+      "options": ["Pace of life", "Urban planning", "Public facilities", "Air pollution"],
+      "word_hints": {"节奏": "jié zòu"}
+    },
+    {
+      "question": "Fill in the blank: _____ 城市人口增加，公共交通需求也越来越大。",
+      "type": "multiple_choice",
+      "correct": "随着",
+      "options": ["随着", "由于", "尽管", "因此"],
+      "word_hints": {"交通": "jiāo tōng"}
+    },
+    {
+      "question": "What does 随着 mean?",
+      "type": "multiple_choice",
+      "correct": "As; along with; following a change",
+      "options": ["As; along with; following a change", "Although; even though", "Due to; because of", "No matter; regardless"],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: _____ 空气污染严重，市政府加大了绿化投入。",
+      "type": "multiple_choice",
+      "correct": "由于",
+      "options": ["由于", "随着", "尽管", "除非"],
+      "word_hints": {"污染": "wū rǎn", "绿化": "lǜ huà"}
+    },
+    {
+      "question": "What does 由于 introduce in a sentence?",
+      "type": "multiple_choice",
+      "correct": "A cause or reason for the main clause",
+      "options": [
+        "A cause or reason for the main clause",
+        "A gradual change or trend",
+        "A contrast or concession",
+        "A condition that must be met"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Choose the correct sentence using 尽管.",
+      "type": "multiple_choice",
+      "correct": "尽管城市节奏很快，很多人还是喜欢城市生活。",
+      "options": [
+        "尽管城市节奏很快，很多人还是喜欢城市生活。",
+        "由于城市节奏尽管很快，很多人还是喜欢城市生活。",
+        "城市节奏尽管很快，城市生活很多人还是喜欢。",
+        "很多人尽管城市节奏很快，还是喜欢城市生活。"
+      ],
+      "word_hints": {"节奏": "jié zòu"}
+    },
+    {
+      "question": "What does 便利 mean?",
+      "type": "multiple_choice",
+      "correct": "Convenient; convenience",
+      "options": ["Convenient; convenience", "Crowded", "Stressful", "Polluted"],
+      "word_hints": {"便利": "biàn lì"}
+    },
+    {
+      "question": "What does 压力 mean?",
+      "type": "multiple_choice",
+      "correct": "Pressure; stress",
+      "options": ["Pressure; stress", "Environment", "Rhythm", "Planning"],
+      "word_hints": {"压力": "yā lì"}
+    },
+    {
+      "question": "What does the phrase 城市规划 mean?",
+      "type": "multiple_choice",
+      "correct": "Urban planning",
+      "options": ["Urban planning", "Public transportation", "Pace of life", "Air pollution"],
+      "word_hints": {"规划": "guī huà"}
+    },
+    {
+      "question": "Which word means 'facilities; infrastructure'?",
+      "type": "multiple_choice",
+      "correct": "设施",
+      "options": ["社区", "设施", "绿化", "规划"],
+      "word_hints": {"社区": "shè qū", "设施": "shè shī", "绿化": "lǜ huà", "规划": "guī huà"}
+    },
+    {
+      "question": "What does the phrase 缓解压力 mean?",
+      "type": "multiple_choice",
+      "correct": "To relieve stress",
+      "options": ["To relieve stress", "To improve the environment", "To expand green spaces", "To plan the city"],
+      "word_hints": {"压力": "yā lì"}
+    },
+    {
+      "question": "According to the culture note, what percentage of China's population lived in cities by 2023?",
+      "type": "multiple_choice",
+      "correct": "Over 65%",
+      "options": ["Over 65%", "Under 20%", "Around 40%", "Exactly 50%"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 空气污染 mean?",
+      "type": "multiple_choice",
+      "correct": "Air pollution",
+      "options": ["Air pollution", "Urban planning", "Public facilities", "Pace of life"],
+      "word_hints": {"污染": "wū rǎn"}
+    },
+    {
+      "question": "What does the idiom 与时俱进 mean?",
+      "type": "multiple_choice",
+      "correct": "To advance with the times; to keep pace with modern developments",
+      "options": [
+        "To advance with the times; to keep pace with modern developments",
+        "To build a greener city",
+        "To reduce traffic congestion",
+        "To live a slower, healthier life"
+      ],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Urban vs Rural Life",
+      "title_chinese": "城市生活与农村生活",
+      "speakers": {
+        "A": {"name": "小玲", "role": "城市居民", "gender": "female"},
+        "B": {"name": "大强", "role": "从农村来的朋友", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "小玲，你住在城市这么多年，觉得城市生活怎么样？",
+          "pinyin": "Xiǎo Líng, nǐ zhù zài chéng shì zhè me duō nián, jué de chéng shì shēng huó zěn me yàng?",
+          "english": "Xiaoling, you've been living in the city for so many years. How do you find city life?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "随着城市不断发展，生活确实越来越便利了，公共交通和各种设施都很完善。",
+          "pinyin": "Suí zhe chéng shì bú duàn fā zhǎn, shēng huó què shí yuè lái yuè biàn lì le, gōng gòng jiāo tōng hé gè zhǒng shè shī dōu hěn wán shàn.",
+          "english": "As the city continues to develop, life has indeed become more and more convenient. Public transportation and all kinds of facilities are very well developed."
+        },
+        {
+          "speaker": "B",
+          "chinese": "但是城市的交通那么拥挤，压力也很大，你不觉得很累吗？",
+          "pinyin": "Dàn shì chéng shì de jiāo tōng nà me yōng jǐ, yā lì yě hěn dà, nǐ bù jué de hěn lèi ma?",
+          "english": "But the city traffic is so congested and there's so much pressure. Don't you feel very tired?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "尽管生活节奏很快，压力不小，但城市的工作机会多，我还是很喜欢这里。",
+          "pinyin": "Jǐn guǎn shēng huó jié zòu hěn kuài, yā lì bù xiǎo, dàn chéng shì de gōng zuò jī huì duō, wǒ hái shì hěn xǐ huān zhè lǐ.",
+          "english": "Although the pace of life is fast and there is considerable pressure, the city has many job opportunities, and I still like it here very much."
+        },
+        {
+          "speaker": "B",
+          "chinese": "由于空气污染，我总是觉得城市的环境比农村差多了。",
+          "pinyin": "Yóu yú kōng qì wū rǎn, wǒ zǒng shì jué de chéng shì de huán jìng bǐ nóng cūn chà duō le.",
+          "english": "Due to air pollution, I always feel that the city environment is much worse than the countryside."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你说得有道理。随着政府加大绿化投入，空气质量在慢慢改善，很多社区现在都有漂亮的公园。",
+          "pinyin": "Nǐ shuō de yǒu dào lǐ. Suí zhe zhèng fǔ jiā dà lǜ huà tóu rù, kōng qì zhì liàng zài màn màn gǎi shàn, hěn duō shè qū xiàn zài dōu yǒu piào liang de gōng yuán.",
+          "english": "You have a point. As the government increases investment in greening, air quality is slowly improving, and many communities now have beautiful parks."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那很好！尽管城市有不少问题，但只要规划合理，城市生活是可以越来越好的！",
+          "pinyin": "Nà hěn hǎo! Jǐn guǎn chéng shì yǒu bù shǎo wèn tí, dàn zhǐ yào guī huà hé lǐ, chéng shì shēng huó shì kě yǐ yuè lái yuè hǎo de!",
+          "english": "That's great! Although cities have quite a few problems, as long as planning is reasonable, city life can keep getting better!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "A Discussion About Urban Planning",
+      "title_chinese": "讨论城市规划",
+      "speakers": {
+        "A": {"name": "陈教授", "role": "城市规划专家", "gender": "male"},
+        "B": {"name": "记者", "role": "记者", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "陈教授，随着中国城市化进程加快，城市面临哪些主要挑战？",
+          "pinyin": "Chén jiào shòu, suí zhe Zhōng guó chéng shì huà jìn chéng jiā kuài, chéng shì miàn lín nǎ xiē zhǔ yào tiǎo zhàn?",
+          "english": "Professor Chen, as China's urbanisation process accelerates, what are the main challenges cities face?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "主要挑战有三个：交通拥挤、环境污染和公共设施不足。",
+          "pinyin": "Zhǔ yào tiǎo zhàn yǒu sān gè: jiāo tōng yōng jǐ, huán jìng wū rǎn hé gōng gòng shè shī bù zú.",
+          "english": "There are three main challenges: traffic congestion, environmental pollution, and insufficient public facilities."
+        },
+        {
+          "speaker": "B",
+          "chinese": "由于人口大量涌入城市，这些问题会越来越严重吗？",
+          "pinyin": "Yóu yú rén kǒu dà liàng yǒng rù chéng shì, zhè xiē wèn tí huì yuè lái yuè yán zhòng ma?",
+          "english": "Due to the massive influx of people into cities, will these problems become increasingly serious?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "不一定。随着科技发展，智慧城市建设可以大大缓解这些压力。",
+          "pinyin": "Bù yī dìng. Suí zhe kē jì fā zhǎn, zhì huì chéng shì jiàn shè kě yǐ dà dà huǎn jiě zhè xiē yā lì.",
+          "english": "Not necessarily. As technology develops, smart city construction can greatly relieve these pressures."
+        },
+        {
+          "speaker": "B",
+          "chinese": "尽管智慧城市概念很好，但很多老旧社区的设施还是难以改善，怎么办？",
+          "pinyin": "Jǐn guǎn zhì huì chéng shì gài niàn hěn hǎo, dàn hěn duō lǎo jiù shè qū de shè shī hái shì nán yǐ gǎi shàn, zěn me bàn?",
+          "english": "Although the smart city concept is good, many old communities still find it hard to improve their facilities. What can be done?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "这就需要合理的城市规划。由于历史遗留问题，改造需要时间，但政府正在逐步推进绿化和设施更新。",
+          "pinyin": "Zhè jiù xū yào hé lǐ de chéng shì guī huà. Yóu yú lì shǐ yí liú wèn tí, gǎi zào xū yào shí jiān, dàn zhèng fǔ zhèng zài zhú bù tuī jìn lǜ huà hé shè shī gēng xīn.",
+          "english": "This requires reasonable urban planning. Due to historical legacy issues, renovation takes time, but the government is gradually advancing greening and facility upgrades."
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢您的分析！希望中国的城市能与时俱进，越来越宜居！",
+          "pinyin": "Xiè xie nín de fēn xī! Xī wàng Zhōng guó de chéng shì néng yǔ shí jù jìn, yuè lái yuè yí jū!",
+          "english": "Thank you for your analysis! I hope China's cities can advance with the times and become more and more liveable!"
+        }
+      ]
+    }
+  ]
+}

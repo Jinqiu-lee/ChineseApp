@@ -1,0 +1,678 @@
+{
+  "lesson": 5,
+  "level": 5,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Sports & Fitness",
+  "topic_chinese": "体育与健身",
+  "vocabulary": [
+    {
+      "id": "hsk5_l5_01",
+      "chinese": "运动员",
+      "pinyin": "yùn dòng yuán",
+      "english": "Athlete; sportsperson",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l5_02",
+      "chinese": "比赛",
+      "pinyin": "bǐ sài",
+      "english": "Competition; match; to compete",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l5_03",
+      "chinese": "训练",
+      "pinyin": "xùn liàn",
+      "english": "Training; to train",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l5_04",
+      "chinese": "体能",
+      "pinyin": "tǐ néng",
+      "english": "Physical fitness; physical ability",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l5_05",
+      "chinese": "冠军",
+      "pinyin": "guàn jūn",
+      "english": "Champion; championship",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l5_06",
+      "chinese": "赛场",
+      "pinyin": "sài chǎng",
+      "english": "Competition venue; arena",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l5_07",
+      "chinese": "教练",
+      "pinyin": "jiào liàn",
+      "english": "Coach; trainer",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l5_08",
+      "chinese": "坚持",
+      "pinyin": "jiān chí",
+      "english": "To persist; to keep at it",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l5_09",
+      "chinese": "竞争",
+      "pinyin": "jìng zhēng",
+      "english": "Competition; to compete",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l5_10",
+      "chinese": "成绩",
+      "pinyin": "chéng jī",
+      "english": "Result; score; achievement",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l5_11",
+      "chinese": "记录",
+      "pinyin": "jì lù",
+      "english": "Record; to record",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l5_12",
+      "chinese": "体育馆",
+      "pinyin": "tǐ yù guǎn",
+      "english": "Gymnasium; sports hall",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l5_p01",
+      "chinese": "刻苦训练",
+      "pinyin": "kè kǔ xùn liàn",
+      "english": "To train hard; to train rigorously",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l5_p02",
+      "chinese": "赢得冠军",
+      "pinyin": "yíng dé guàn jūn",
+      "english": "To win the championship",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l5_p03",
+      "chinese": "打破记录",
+      "pinyin": "dǎ pò jì lù",
+      "english": "To break a record",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l5_p04",
+      "chinese": "坚持锻炼",
+      "pinyin": "jiān chí duàn liàn",
+      "english": "To keep exercising regularly",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l5_p05",
+      "chinese": "参加比赛",
+      "pinyin": "cān jiā bǐ sài",
+      "english": "To participate in a competition",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l5_p06",
+      "chinese": "提高体能",
+      "pinyin": "tí gāo tǐ néng",
+      "english": "To improve physical fitness",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "只要坚持每天训练，就能不断提高体能和比赛成绩。",
+      "pinyin": "Zhǐ yào jiān chí měi tiān xùn liàn, jiù néng bù duàn tí gāo tǐ néng hé bǐ sài chéng jī.",
+      "english": "As long as you persist in training every day, you can continuously improve your physical fitness and competition results."
+    },
+    {
+      "chinese": "尽管训练非常辛苦，这位运动员还是坚持到了最后，赢得了冠军。",
+      "pinyin": "Jǐn guǎn xùn liàn fēi cháng xīn kǔ, zhè wèi yùn dòng yuán hái shì jiān chí dào le zuì hòu, yíng dé le guàn jūn.",
+      "english": "Even though the training was very gruelling, this athlete still persisted to the end and won the championship."
+    },
+    {
+      "chinese": "教练一宣布比赛成绩，运动员们就欢呼起来，因为他们打破了记录。",
+      "pinyin": "Jiào liàn yī xuān bù bǐ sài chéng jī, yùn dòng yuán men jiù huān hū qǐ lái, yīn wèi tā men dǎ pò le jì lù.",
+      "english": "As soon as the coach announced the competition results, the athletes cheered, because they had broken a record."
+    },
+    {
+      "chinese": "只要在体育馆里认真训练，就一定能提高体能。",
+      "pinyin": "Zhǐ yào zài tǐ yù guǎn lǐ rèn zhēn xùn liàn, jiù yī dìng néng tí gāo tǐ néng.",
+      "english": "As long as you train seriously in the gymnasium, you will definitely be able to improve your physical fitness."
+    },
+    {
+      "chinese": "尽管赛场上的竞争十分激烈，他还是保持了冷静的态度。",
+      "pinyin": "Jǐn guǎn sài chǎng shàng de jìng zhēng shí fēn jī liè, tā hái shì bǎo chí le lěng jìng de tài dù.",
+      "english": "Even though the competition at the venue was fierce, he still maintained a calm attitude."
+    },
+    {
+      "chinese": "这位运动员一到赛场，就立刻进入了比赛状态，展示出了超强的体能。",
+      "pinyin": "Zhè wèi yùn dòng yuán yī dào sài chǎng, jiù lì kè jìn rù le bǐ sài zhuàng tài, zhǎn shì chū le chāo qiáng de tǐ néng.",
+      "english": "As soon as this athlete arrived at the competition venue, she immediately got into the zone and displayed outstanding physical ability."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "只要...就... — As long as...then... (e.g. 只要训练，就能进步)",
+      "explanation": "只要...就... expresses a sufficient condition: as long as the first condition is met, the result will follow. 只要 introduces the condition, and 就 introduces the result. Structure: 只要 + condition + 就 + result. Example: 只要坚持锻炼，就会越来越健康。(As long as you keep exercising, you will get healthier and healthier.)",
+      "examples": [
+        {
+          "chinese": "只要运动员认真训练，就能在比赛中取得好成绩。",
+          "pinyin": "Zhǐ yào yùn dòng yuán rèn zhēn xùn liàn, jiù néng zài bǐ sài zhōng qǔ dé hǎo chéng jī.",
+          "english": "As long as athletes train seriously, they can achieve good results in competition."
+        },
+        {
+          "chinese": "只要坚持在体育馆锻炼，就一定能提高体能。",
+          "pinyin": "Zhǐ yào jiān chí zài tǐ yù guǎn duàn liàn, jiù yī dìng néng tí gāo tǐ néng.",
+          "english": "As long as you persist in working out at the gymnasium, you will definitely be able to improve your physical fitness."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "只要坚持每天训练，_____ 能提高体能。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["就", "才", "都", "也"],
+          "option_pinyin": ["jiù", "cái", "dōu", "yě"],
+          "word_hints": {"训练": "xùn liàn", "体能": "tǐ néng"}
+        },
+        {
+          "question": "Choose the sentence that uses 只要...就... correctly.",
+          "type": "multiple_choice",
+          "correct": "只要参加比赛，就能积累宝贵的经验。",
+          "options": [
+            "只要参加比赛，就能积累宝贵的经验。",
+            "就参加比赛，只要能积累宝贵的经验。",
+            "参加只要比赛，能积累就宝贵的经验。",
+            "只要就参加比赛，能积累宝贵的经验。"
+          ],
+          "option_pinyin": [
+            "Zhǐ yào cān jiā bǐ sài, jiù néng jī lěi bǎo guì de jīng yàn.",
+            "Jiù cān jiā bǐ sài, zhǐ yào néng jī lěi bǎo guì de jīng yàn.",
+            "Cān jiā zhǐ yào bǐ sài, néng jī lěi jiù bǎo guì de jīng yàn.",
+            "Zhǐ yào jiù cān jiā bǐ sài, néng jī lěi bǎo guì de jīng yàn."
+          ],
+          "word_hints": {"比赛": "bǐ sài"}
+        },
+        {
+          "question": "What does 只要...就... express?",
+          "type": "multiple_choice",
+          "correct": "A sufficient condition — as long as X happens, Y will follow",
+          "options": [
+            "A sufficient condition — as long as X happens, Y will follow",
+            "A result that holds true regardless of any condition",
+            "Something happening progressively over time",
+            "A contrast between two situations"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "只要教练认真指导，运动员 _____ 能打破记录。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["就", "才", "只", "也"],
+          "option_pinyin": ["jiù", "cái", "zhǐ", "yě"],
+          "word_hints": {"教练": "jiào liàn", "记录": "jì lù"}
+        },
+        {
+          "question": "Which word fills in the blank: _____ 在体育馆刻苦训练，就有机会赢得冠军。",
+          "type": "multiple_choice",
+          "correct": "只要",
+          "options": ["只要", "尽管", "虽然", "因为"],
+          "option_pinyin": ["zhǐ yào", "jǐn guǎn", "suī rán", "yīn wèi"],
+          "word_hints": {"体育馆": "tǐ yù guǎn", "冠军": "guàn jūn"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "尽管...还是... — Even though...still... (e.g. 尽管很累，还是坚持)",
+      "explanation": "尽管...还是... expresses a concession: even though the first clause presents a difficulty or obstacle, the result in the second clause still holds. 尽管 introduces the concessive clause, and 还是 introduces the consistent outcome. Structure: 尽管 + obstacle/difficulty + 还是 + result. Example: 尽管比赛很难，他还是赢了。(Even though the competition was very difficult, he still won.)",
+      "examples": [
+        {
+          "chinese": "尽管训练非常辛苦，这位运动员还是坚持完成了所有课程。",
+          "pinyin": "Jǐn guǎn xùn liàn fēi cháng xīn kǔ, zhè wèi yùn dòng yuán hái shì jiān chí wán chéng le suǒ yǒu kè chéng.",
+          "english": "Even though the training was very tough, this athlete still persisted and completed all the sessions."
+        },
+        {
+          "chinese": "尽管赛场上竞争激烈，她还是发挥出了最好的体能水平。",
+          "pinyin": "Jǐn guǎn sài chǎng shàng jìng zhēng jī liè, tā hái shì fā huī chū le zuì hǎo de tǐ néng shuǐ píng.",
+          "english": "Even though the competition at the arena was fierce, she still performed at her best physical level."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "尽管比赛成绩不理想，他 _____ 没有放弃训练。",
+          "type": "multiple_choice",
+          "correct": "还是",
+          "options": ["还是", "才", "就", "都"],
+          "option_pinyin": ["hái shì", "cái", "jiù", "dōu"],
+          "word_hints": {"成绩": "chéng jī", "训练": "xùn liàn"}
+        },
+        {
+          "question": "Choose the sentence that uses 尽管...还是... correctly.",
+          "type": "multiple_choice",
+          "correct": "尽管体育馆很远，他还是每天坚持去锻炼。",
+          "options": [
+            "尽管体育馆很远，他还是每天坚持去锻炼。",
+            "还是体育馆很远，他尽管每天坚持去锻炼。",
+            "他体育馆尽管很远，每天还是坚持去锻炼。",
+            "尽管他还是，体育馆很远每天坚持去锻炼。"
+          ],
+          "option_pinyin": [
+            "Jǐn guǎn tǐ yù guǎn hěn yuǎn, tā hái shì měi tiān jiān chí qù duàn liàn.",
+            "Hái shì tǐ yù guǎn hěn yuǎn, tā jǐn guǎn měi tiān jiān chí qù duàn liàn.",
+            "Tā tǐ yù guǎn jǐn guǎn hěn yuǎn, měi tiān hái shì jiān chí qù duàn liàn.",
+            "Jǐn guǎn tā hái shì, tǐ yù guǎn hěn yuǎn měi tiān jiān chí qù duàn liàn."
+          ],
+          "word_hints": {"体育馆": "tǐ yù guǎn", "坚持": "jiān chí"}
+        },
+        {
+          "question": "What does 尽管...还是... express?",
+          "type": "multiple_choice",
+          "correct": "A concession — even though there is an obstacle, the result still holds",
+          "options": [
+            "A concession — even though there is an obstacle, the result still holds",
+            "A sufficient condition for a result",
+            "Something happening as soon as another thing happens",
+            "A progressive change over time"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "尽管教练的训练方法很严格，运动员 _____ 认可他的方式。",
+          "type": "multiple_choice",
+          "correct": "还是",
+          "options": ["还是", "就", "才", "只"],
+          "option_pinyin": ["hái shì", "jiù", "cái", "zhǐ"],
+          "word_hints": {"教练": "jiào liàn", "训练": "xùn liàn", "运动员": "yùn dòng yuán"}
+        },
+        {
+          "question": "Which word goes in the blank: _____ 没有打破记录，这位运动员还是为自己的表现感到自豪。",
+          "type": "multiple_choice",
+          "correct": "尽管",
+          "options": ["尽管", "只要", "不管", "因为"],
+          "option_pinyin": ["jǐn guǎn", "zhǐ yào", "bù guǎn", "yīn wèi"],
+          "word_hints": {"记录": "jì lù", "运动员": "yùn dòng yuán"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "一...就... — As soon as...then... (e.g. 一到赛场，就紧张)",
+      "explanation": "一...就... expresses that one action immediately triggers or follows another. 一 introduces the first action (often a trigger or arrival), and 就 introduces the immediate result. Structure: 一 + verb/situation + 就 + result. Example: 他一开始训练，就忘记了时间。(As soon as he started training, he forgot about time.)",
+      "examples": [
+        {
+          "chinese": "运动员一进入赛场，就感受到了紧张的竞争气氛。",
+          "pinyin": "Yùn dòng yuán yī jìn rù sài chǎng, jiù gǎn shòu dào le jǐn zhāng de jìng zhēng qì fēn.",
+          "english": "As soon as the athlete entered the competition arena, she felt the tense atmosphere of competition."
+        },
+        {
+          "chinese": "教练一宣布训练计划，运动员们就立刻开始准备了。",
+          "pinyin": "Jiào liàn yī xuān bù xùn liàn jì huà, yùn dòng yuán men jiù lì kè kāi shǐ zhǔn bèi le.",
+          "english": "As soon as the coach announced the training plan, the athletes immediately started preparing."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他 _____ 到体育馆，_____ 开始认真训练了。",
+          "type": "multiple_choice",
+          "correct": "一…就…",
+          "options": ["一…就…", "尽管…还是…", "只要…就…", "不管…都…"],
+          "option_pinyin": ["yī...jiù...", "jǐn guǎn...hái shì...", "zhǐ yào...jiù...", "bù guǎn...dōu..."],
+          "word_hints": {"体育馆": "tǐ yù guǎn", "训练": "xùn liàn"}
+        },
+        {
+          "question": "Choose the sentence that uses 一...就... correctly.",
+          "type": "multiple_choice",
+          "correct": "运动员一听到结果，就高兴得跳了起来。",
+          "options": [
+            "运动员一听到结果，就高兴得跳了起来。",
+            "运动员听到一结果，高兴就得跳了起来。",
+            "一运动员听到结果，高兴得跳了起来就。",
+            "运动员一高兴，就听到结果得跳了起来。"
+          ],
+          "option_pinyin": [
+            "Yùn dòng yuán yī tīng dào jié guǒ, jiù gāo xìng de tiào le qǐ lái.",
+            "Yùn dòng yuán tīng dào yī jié guǒ, gāo xìng jiù de tiào le qǐ lái.",
+            "Yī yùn dòng yuán tīng dào jié guǒ, gāo xìng de tiào le qǐ lái jiù.",
+            "Yùn dòng yuán yī gāo xìng, jiù tīng dào jié guǒ de tiào le qǐ lái."
+          ],
+          "word_hints": {"运动员": "yùn dòng yuán"}
+        },
+        {
+          "question": "What does 一...就... express?",
+          "type": "multiple_choice",
+          "correct": "One action immediately triggers another",
+          "options": [
+            "One action immediately triggers another",
+            "A condition and a delayed result",
+            "Two things happening at the same time",
+            "An obstacle that doesn't prevent a result"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "教练 _____ 到赛场，_____ 开始检查运动员的准备情况。",
+          "type": "multiple_choice",
+          "correct": "一…就…",
+          "options": ["一…就…", "只要…就…", "尽管…还是…", "不管…都…"],
+          "option_pinyin": ["yī...jiù...", "zhǐ yào...jiù...", "jǐn guǎn...hái shì...", "bù guǎn...dōu..."],
+          "word_hints": {"教练": "jiào liàn", "赛场": "sài chǎng", "运动员": "yùn dòng yuán"}
+        },
+        {
+          "question": "Which structure is correct with 一...就...?",
+          "type": "multiple_choice",
+          "correct": "一 + first action/event + 就 + immediate result",
+          "options": [
+            "一 + first action/event + 就 + immediate result",
+            "就 + first action/event + 一 + immediate result",
+            "一 + immediate result + 就 + first action/event",
+            "Subject + 一 + object + 就 + verb"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "China's Sports Culture and the Olympic Legacy",
+      "title_chinese": "中国体育文化与奥运精神",
+      "content": "China has a rich sports culture that blends ancient tradition with modern competitive achievement. Traditional martial arts such as 武术 (wǔ shù) and 太极拳 (Tài Jí Quán) remain popular forms of daily exercise in parks and community spaces. At the competitive level, China has become one of the world's leading sports nations. Hosting the 2008 Beijing Summer Olympics was a defining moment — China topped the gold medal tally, demonstrating exceptional 运动员 (athletes) and rigorous 训练 (training) systems. The 2022 Beijing Winter Olympics further highlighted China's growing strength in winter sports. Chinese athletes are known for their dedication (坚持) and discipline, often training from a young age under experienced 教练 (coaches) at dedicated sports schools.",
+      "idioms": [
+        {
+          "chinese": "更快、更高、更强",
+          "pinyin": "gèng kuài, gèng gāo, gèng qiáng",
+          "english": "Faster, higher, stronger (the Olympic motto)"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 运动员 mean?",
+      "type": "multiple_choice",
+      "correct": "Athlete; sportsperson",
+      "options": ["Athlete; sportsperson", "Coach", "Champion", "Referee"],
+      "word_hints": {"运动员": "yùn dòng yuán"}
+    },
+    {
+      "question": "Which word means 'training; to train'?",
+      "type": "multiple_choice",
+      "correct": "训练",
+      "options": ["比赛", "训练", "竞争", "坚持"],
+      "word_hints": {"比赛": "bǐ sài", "训练": "xùn liàn", "竞争": "jìng zhēng", "坚持": "jiān chí"}
+    },
+    {
+      "question": "What does 冠军 mean?",
+      "type": "multiple_choice",
+      "correct": "Champion; championship",
+      "options": ["Champion; championship", "Record", "Athlete", "Coach"],
+      "word_hints": {"冠军": "guàn jūn"}
+    },
+    {
+      "question": "Which word means 'coach; trainer'?",
+      "type": "multiple_choice",
+      "correct": "教练",
+      "options": ["运动员", "教练", "记录", "体能"],
+      "word_hints": {"运动员": "yùn dòng yuán", "教练": "jiào liàn", "记录": "jì lù", "体能": "tǐ néng"}
+    },
+    {
+      "question": "What does 坚持 mean?",
+      "type": "multiple_choice",
+      "correct": "To persist; to keep at it",
+      "options": ["To persist; to keep at it", "To compete", "To win", "To break a record"],
+      "word_hints": {"坚持": "jiān chí"}
+    },
+    {
+      "question": "Which word means 'competition venue; arena'?",
+      "type": "multiple_choice",
+      "correct": "赛场",
+      "options": ["体育馆", "赛场", "记录", "冠军"],
+      "word_hints": {"体育馆": "tǐ yù guǎn", "赛场": "sài chǎng", "记录": "jì lù", "冠军": "guàn jūn"}
+    },
+    {
+      "question": "What does 体能 mean?",
+      "type": "multiple_choice",
+      "correct": "Physical fitness; physical ability",
+      "options": ["Physical fitness; physical ability", "Competition", "Training", "Record"],
+      "word_hints": {"体能": "tǐ néng"}
+    },
+    {
+      "question": "What does 体育馆 mean?",
+      "type": "multiple_choice",
+      "correct": "Gymnasium; sports hall",
+      "options": ["Gymnasium; sports hall", "Competition arena", "Training field", "Swimming pool"],
+      "word_hints": {"体育馆": "tǐ yù guǎn"}
+    },
+    {
+      "question": "Fill in the blank: 只要认真训练，_____ 能提高体能。",
+      "type": "multiple_choice",
+      "correct": "就",
+      "options": ["就", "才", "都", "也"],
+      "word_hints": {"训练": "xùn liàn", "体能": "tǐ néng"}
+    },
+    {
+      "question": "What does 只要...就... express?",
+      "type": "multiple_choice",
+      "correct": "A sufficient condition — as long as X happens, Y follows",
+      "options": [
+        "A sufficient condition — as long as X happens, Y follows",
+        "An obstacle that doesn't prevent the result",
+        "One action immediately triggering another",
+        "Something unchanging regardless of conditions"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 尽管比赛很艰难，她 _____ 坚持到了终点。",
+      "type": "multiple_choice",
+      "correct": "还是",
+      "options": ["还是", "就", "才", "只"],
+      "word_hints": {"比赛": "bǐ sài", "坚持": "jiān chí"}
+    },
+    {
+      "question": "What does 尽管...还是... express?",
+      "type": "multiple_choice",
+      "correct": "Even though there is an obstacle, the result still holds",
+      "options": [
+        "Even though there is an obstacle, the result still holds",
+        "As long as a condition is met, a result follows",
+        "One action immediately triggers another",
+        "Something getting progressively more so"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 运动员 _____ 到赛场，_____ 开始做热身运动。",
+      "type": "multiple_choice",
+      "correct": "一…就…",
+      "options": ["一…就…", "只要…就…", "尽管…还是…", "不管…都…"],
+      "word_hints": {"运动员": "yùn dòng yuán", "赛场": "sài chǎng"}
+    },
+    {
+      "question": "What does 记录 mean?",
+      "type": "multiple_choice",
+      "correct": "Record; to record",
+      "options": ["Record; to record", "Result", "Competition", "Training"],
+      "word_hints": {"记录": "jì lù"}
+    },
+    {
+      "question": "What does the phrase 刻苦训练 mean?",
+      "type": "multiple_choice",
+      "correct": "To train hard; to train rigorously",
+      "options": ["To train hard; to train rigorously", "To win the championship", "To break a record", "To keep exercising"],
+      "word_hints": {"训练": "xùn liàn"}
+    },
+    {
+      "question": "What does 竞争 mean?",
+      "type": "multiple_choice",
+      "correct": "Competition; to compete",
+      "options": ["Competition; to compete", "Training", "Record", "Persistence"],
+      "word_hints": {"竞争": "jìng zhēng"}
+    },
+    {
+      "question": "Which phrase means 'to break a record'?",
+      "type": "multiple_choice",
+      "correct": "打破记录",
+      "options": ["打破记录", "赢得冠军", "坚持锻炼", "参加比赛"],
+      "word_hints": {"记录": "jì lù"}
+    },
+    {
+      "question": "At the 2008 Beijing Olympics, which position did China finish in the gold medal standings?",
+      "type": "multiple_choice",
+      "correct": "First (topped the gold medal tally)",
+      "options": ["First (topped the gold medal tally)", "Second", "Third", "Fifth"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 提高体能 mean?",
+      "type": "multiple_choice",
+      "correct": "To improve physical fitness",
+      "options": ["To improve physical fitness", "To win a match", "To break a record", "To attend training"],
+      "word_hints": {"体能": "tǐ néng"}
+    },
+    {
+      "question": "Which grammar pattern means 'as soon as...then...'?",
+      "type": "multiple_choice",
+      "correct": "一...就...",
+      "options": ["一...就...", "只要...就...", "尽管...还是...", "不管...都..."],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Before the Competition",
+      "title_chinese": "比赛前",
+      "speakers": {
+        "A": {"name": "志远", "role": "运动员", "gender": "male"},
+        "B": {"name": "陈教练", "role": "教练", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "陈教练，明天就是比赛了，我有点紧张。",
+          "pinyin": "Chén jiào liàn, míng tiān jiù shì bǐ sài le, wǒ yǒu diǎn jǐn zhāng.",
+          "english": "Coach Chen, the competition is tomorrow — I'm a little nervous."
+        },
+        {
+          "speaker": "B",
+          "chinese": "紧张是正常的。只要你发挥出平时训练的水平，就一定能取得好成绩。",
+          "pinyin": "Jǐn zhāng shì zhèng cháng de. Zhǐ yào nǐ fā huī chū píng shí xùn liàn de shuǐ píng, jiù yī dìng néng qǔ dé hǎo chéng jī.",
+          "english": "It's normal to be nervous. As long as you perform at the level you've trained to, you will definitely achieve a good result."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这次赛场上的竞争很激烈，对手的体能也很强。",
+          "pinyin": "Zhè cì sài chǎng shàng de jìng zhēng hěn jī liè, duì shǒu de tǐ néng yě hěn qiáng.",
+          "english": "The competition at the arena this time is very intense, and the opponents also have strong physical fitness."
+        },
+        {
+          "speaker": "B",
+          "chinese": "尽管对手很强，你还是要相信自己。你一到赛场就会进入状态的。",
+          "pinyin": "Jǐn guǎn duì shǒu hěn qiáng, nǐ hái shì yào xiāng xìn zì jǐ. Nǐ yī dào sài chǎng jiù huì jìn rù zhuàng tài de.",
+          "english": "Even though the opponents are strong, you still need to believe in yourself. As soon as you get to the arena, you'll get into the zone."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这几个月的刻苦训练，希望能帮助我打破个人记录。",
+          "pinyin": "Zhè jǐ gè yuè de kè kǔ xùn liàn, xī wàng néng bāng zhù wǒ dǎ pò gè rén jì lù.",
+          "english": "These months of rigorous training — I hope they will help me break my personal record."
+        },
+        {
+          "speaker": "B",
+          "chinese": "只要你坚持，就有机会赢得冠军。我们在体育馆里准备了充分，你有实力的！",
+          "pinyin": "Zhǐ yào nǐ jiān chí, jiù yǒu jī huì yíng dé guàn jūn. Wǒ men zài tǐ yù guǎn lǐ zhǔn bèi le chōng fèn, nǐ yǒu shí lì de!",
+          "english": "As long as you persist, you have a chance to win the championship. We prepared thoroughly in the gymnasium — you have what it takes!"
+        },
+        {
+          "speaker": "A",
+          "chinese": "谢谢教练！尽管比赛结果怎样，我都会全力以赴，不留遗憾。",
+          "pinyin": "Xiè xie jiào liàn! Jǐn guǎn bǐ sài jié guǒ zěn yàng, wǒ dōu huì quán lì yǐ fù, bù liú yí hàn.",
+          "english": "Thank you, Coach! No matter what the result is, I will give my all and leave no regrets."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好！一上赛场，就忘掉压力，享受比赛的过程！加油！",
+          "pinyin": "Hǎo! Yī shàng sài chǎng, jiù wàng diào yā lì, xiǎng shòu bǐ sài de guò chéng! Jiā yóu!",
+          "english": "Good! As soon as you step onto the arena, forget the pressure and enjoy the competition process! Go for it!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Discussing Fitness Goals",
+      "title_chinese": "讨论健身目标",
+      "speakers": {
+        "A": {"name": "小雪", "role": "健身爱好者", "gender": "female"},
+        "B": {"name": "阿强", "role": "朋友", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "阿强，你最近每天去体育馆训练，感觉体能提高了吗？",
+          "pinyin": "Ā qiáng, nǐ zuì jìn měi tiān qù tǐ yù guǎn xùn liàn, gǎn jué tǐ néng tí gāo le ma?",
+          "english": "Aqiang, you've been going to the gymnasium to train every day lately — do you feel your physical fitness has improved?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "确实，我坚持了两个月，感觉越来越好了。只要坚持，就一定有效果。",
+          "pinyin": "Què shí, wǒ jiān chí le liǎng gè yuè, gǎn jué yuè lái yuè hǎo le. Zhǐ yào jiān chí, jiù yī dìng yǒu xiào guǒ.",
+          "english": "Indeed — I've persisted for two months and feel better and better. As long as you persist, there will definitely be results."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我想参加下个月的健身比赛，但感觉自己的体能还不够。",
+          "pinyin": "Wǒ xiǎng cān jiā xià gè yuè de jiàn shēn bǐ sài, dàn gǎn jué zì jǐ de tǐ néng hái bú gòu.",
+          "english": "I want to enter next month's fitness competition, but I feel my physical fitness isn't good enough yet."
+        },
+        {
+          "speaker": "B",
+          "chinese": "尽管时间短，还是可以集中训练提高的。你有没有找教练指导？",
+          "pinyin": "Jǐn guǎn shí jiān duǎn, hái shì kě yǐ jí zhōng xùn liàn tí gāo de. Nǐ yǒu méi yǒu zhǎo jiào liàn zhǐ dǎo?",
+          "english": "Even though time is short, you can still improve through intensive training. Have you found a coach to guide you?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "还没有。你觉得只要有好教练，成绩就能提高吗？",
+          "pinyin": "Hái méi yǒu. Nǐ jué de zhǐ yào yǒu hǎo jiào liàn, chéng jī jiù néng tí gāo ma?",
+          "english": "Not yet. Do you think that as long as you have a good coach, results can improve?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "教练很重要，但最关键的还是自己要坚持。我一到体育馆，就会忘掉所有烦恼。",
+          "pinyin": "Jiào liàn hěn zhòng yào, dàn zuì guān jiàn de hái shì zì jǐ yào jiān chí. Wǒ yī dào tǐ yù guǎn, jiù huì wàng diào suǒ yǒu fán nǎo.",
+          "english": "A coach is important, but the most key thing is still to persist yourself. As soon as I get to the gymnasium, I forget all my worries."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那我决定了，从今天开始，每天去体育馆训练，争取打破自己的记录！",
+          "pinyin": "Nà wǒ jué dìng le, cóng jīn tiān kāi shǐ, měi tiān qù tǐ yù guǎn xùn liàn, zhēng qǔ dǎ pò zì jǐ de jì lù!",
+          "english": "Then I've made up my mind — starting from today, I'll go to the gymnasium every day and strive to break my own record!"
+        }
+      ]
+    }
+  ]
+}

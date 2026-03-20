@@ -13,8 +13,18 @@
       "question_pinyin": "Wǒ ___ qù tú shū guǎn, shùn biàn huán shū.",
       "type": "multiple_choice",
       "correct": "打算",
-      "options": ["打算", "已经", "刚才", "而且"],
-      "option_pinyin": ["dǎ suàn", "yǐ jīng", "gāng cái", "ér qiě"],
+      "options": [
+        "刚才",
+        "打算",
+        "已经",
+        "而且"
+      ],
+      "option_pinyin": [
+        "gāng cái",
+        "dǎ suàn",
+        "yǐ jīng",
+        "ér qiě"
+      ],
       "correct_pinyin": "dǎ suàn",
       "difficulty": "easy",
       "lesson_reference": 1
@@ -24,7 +34,12 @@
       "question": "What does 顺便 mean?",
       "type": "multiple_choice",
       "correct": "While you're at it / Conveniently",
-      "options": ["While you're at it / Conveniently", "On purpose", "By yourself", "Suddenly"],
+      "options": [
+        "Suddenly",
+        "By yourself",
+        "While you're at it / Conveniently",
+        "On purpose"
+      ],
       "difficulty": "easy",
       "lesson_reference": 1
     },
@@ -34,16 +49,16 @@
       "type": "multiple_choice",
       "correct": "我不去了，太累了。",
       "options": [
-        "我不去了，太累了。",
-        "我不去，太累了。",
         "我去不了，太累了。",
-        "我了不去，太累了。"
+        "我了不去，太累了。",
+        "我不去了，太累了。",
+        "我不去，太累了。"
       ],
       "option_pinyin": [
-        "Wǒ bú qù le, tài lèi le.",
-        "Wǒ bú qù, tài lèi le.",
         "Wǒ qù bù le, tài lèi le.",
-        "Wǒ le bú qù, tài lèi le."
+        "Wǒ le bú qù, tài lèi le.",
+        "Wǒ bú qù le, tài lèi le.",
+        "Wǒ bú qù, tài lèi le."
       ],
       "correct_pinyin": "Wǒ bú qù le, tài lèi le.",
       "difficulty": "medium",
@@ -55,8 +70,18 @@
       "question_pinyin": "Tā ___ wǔ diǎn huí lái, chà bu duō hái yǒu yí ge xiǎo shí.",
       "type": "multiple_choice",
       "correct": "大约",
-      "options": ["大约", "刚才", "已经", "顺便"],
-      "option_pinyin": ["dà yuē", "gāng cái", "yǐ jīng", "shùn biàn"],
+      "options": [
+        "刚才",
+        "大约",
+        "已经",
+        "顺便"
+      ],
+      "option_pinyin": [
+        "gāng cái",
+        "dà yuē",
+        "yǐ jīng",
+        "shùn biàn"
+      ],
       "correct_pinyin": "dà yuē",
       "difficulty": "easy",
       "lesson_reference": 2
@@ -67,15 +92,15 @@
       "type": "multiple_choice",
       "correct": "他把书放在桌子上了。",
       "options": [
-        "他把书放在桌子上了。",
-        "他把放书在桌子上了。",
         "把他书放在桌子上了。",
+        "他把放书在桌子上了。",
+        "他把书放在桌子上了。",
         "他放把书在桌子上了。"
       ],
       "option_pinyin": [
-        "Tā bǎ shū fàng zài zhuō zi shàng le.",
-        "Tā bǎ fàng shū zài zhuō zi shàng le.",
         "Bǎ tā shū fàng zài zhuō zi shàng le.",
+        "Tā bǎ fàng shū zài zhuō zi shàng le.",
+        "Tā bǎ shū fàng zài zhuō zi shàng le.",
         "Tā fàng bǎ shū zài zhuō zi shàng le."
       ],
       "correct_pinyin": "Tā bǎ shū fàng zài zhuō zi shàng le.",
@@ -90,9 +115,9 @@
       "correct": "She is always late.",
       "options": [
         "She is always late.",
-        "She is never late.",
         "She was late once.",
-        "She is sometimes late."
+        "She is sometimes late.",
+        "She is never late."
       ],
       "difficulty": "easy",
       "lesson_reference": 2
@@ -103,8 +128,18 @@
       "question_pinyin": "Zhuō zi shàng ___ zhe yī běn shū hé liǎng zhī bǐ.",
       "type": "multiple_choice",
       "correct": "放",
-      "options": ["放", "有", "看", "走"],
-      "option_pinyin": ["fàng", "yǒu", "kàn", "zǒu"],
+      "options": [
+        "看",
+        "走",
+        "放",
+        "有"
+      ],
+      "option_pinyin": [
+        "kàn",
+        "zǒu",
+        "fàng",
+        "yǒu"
+      ],
       "correct_pinyin": "fàng",
       "difficulty": "medium",
       "lesson_reference": 3
@@ -116,15 +151,15 @@
       "correct": "超市就在学校旁边。",
       "options": [
         "超市就在学校旁边。",
-        "就超市在学校旁边。",
+        "超市在学校就旁边。",
         "超市在就学校旁边。",
-        "超市在学校就旁边。"
+        "就超市在学校旁边。"
       ],
       "option_pinyin": [
         "Chāo shì jiù zài xué xiào páng biān.",
-        "Jiù chāo shì zài xué xiào páng biān.",
+        "Chāo shì zài xué xiào jiù páng biān.",
         "Chāo shì zài jiù xué xiào páng biān.",
-        "Chāo shì zài xué xiào jiù páng biān."
+        "Jiù chāo shì zài xué xiào páng biān."
       ],
       "correct_pinyin": "Chāo shì jiù zài xué xiào páng biān.",
       "difficulty": "medium",
@@ -135,7 +170,12 @@
       "question": "What measure word goes with 件 (jiàn)?",
       "type": "multiple_choice",
       "correct": "Clothing / items of clothing",
-      "options": ["Clothing / items of clothing", "Flat objects like paper", "Long thin objects", "Small round objects"],
+      "options": [
+        "Flat objects like paper",
+        "Small round objects",
+        "Long thin objects",
+        "Clothing / items of clothing"
+      ],
       "difficulty": "medium",
       "lesson_reference": 3
     },
@@ -145,8 +185,18 @@
       "question_pinyin": "Tā gāng cái ___ zì jǐ zuò le suǒ yǒu de zuò yè.",
       "type": "multiple_choice",
       "correct": "说",
-      "options": ["说", "让", "帮", "给"],
-      "option_pinyin": ["shuō", "ràng", "bāng", "gěi"],
+      "options": [
+        "说",
+        "帮",
+        "让",
+        "给"
+      ],
+      "option_pinyin": [
+        "shuō",
+        "bāng",
+        "ràng",
+        "gěi"
+      ],
       "correct_pinyin": "shuō",
       "difficulty": "medium",
       "lesson_reference": 4
@@ -156,7 +206,12 @@
       "question": "What does 自己 mean?",
       "type": "multiple_choice",
       "correct": "Oneself / By oneself",
-      "options": ["Oneself / By oneself", "Together", "Each other", "Somebody else"],
+      "options": [
+        "Each other",
+        "Somebody else",
+        "Together",
+        "Oneself / By oneself"
+      ],
       "difficulty": "easy",
       "lesson_reference": 4
     },
@@ -166,15 +221,15 @@
       "type": "multiple_choice",
       "correct": "他做得很快，而且做得很好。",
       "options": [
-        "他做得很快，而且做得很好。",
-        "他而且做得很快，做得很好。",
         "他做得很快而且，做得很好。",
+        "他而且做得很快，做得很好。",
+        "他做得很快，而且做得很好。",
         "而且他做得很快，做得很好。"
       ],
       "option_pinyin": [
-        "Tā zuò de hěn kuài, ér qiě zuò de hěn hǎo.",
-        "Tā ér qiě zuò de hěn kuài, zuò de hěn hǎo.",
         "Tā zuò de hěn kuài ér qiě, zuò de hěn hǎo.",
+        "Tā ér qiě zuò de hěn kuài, zuò de hěn hǎo.",
+        "Tā zuò de hěn kuài, ér qiě zuò de hěn hǎo.",
         "Ér qiě tā zuò de hěn kuài, zuò de hěn hǎo."
       ],
       "correct_pinyin": "Tā zuò de hěn kuài, ér qiě zuò de hěn hǎo.",
@@ -187,8 +242,18 @@
       "question_pinyin": "Tā ___ yuè lái yuè pàng le, yīng gāi shǎo chī yì diǎn.",
       "type": "multiple_choice",
       "correct": "最近",
-      "options": ["最近", "刚才", "以前", "顺便"],
-      "option_pinyin": ["zuì jìn", "gāng cái", "yǐ qián", "shùn biàn"],
+      "options": [
+        "以前",
+        "顺便",
+        "刚才",
+        "最近"
+      ],
+      "option_pinyin": [
+        "yǐ qián",
+        "shùn biàn",
+        "gāng cái",
+        "zuì jìn"
+      ],
       "correct_pinyin": "zuì jìn",
       "difficulty": "easy",
       "lesson_reference": 5
@@ -198,7 +263,12 @@
       "question": "What does 越...越... mean?",
       "type": "multiple_choice",
       "correct": "The more...the more...",
-      "options": ["The more...the more...", "More and more", "Although...but...", "Either...or..."],
+      "options": [
+        "Although...but...",
+        "More and more",
+        "The more...the more...",
+        "Either...or..."
+      ],
       "difficulty": "medium",
       "lesson_reference": 5
     },
@@ -209,10 +279,10 @@
       "type": "multiple_choice",
       "correct": "The more you study, the smarter you get.",
       "options": [
-        "The more you study, the smarter you get.",
-        "You are getting smarter and smarter.",
+        "You study, and you are also smart.",
         "You should study more to be smarter.",
-        "You study, and you are also smart."
+        "The more you study, the smarter you get.",
+        "You are getting smarter and smarter."
       ],
       "difficulty": "hard",
       "lesson_reference": 5
@@ -223,8 +293,18 @@
       "question_pinyin": "Tā zhǎo ___ dào nà fèn wén jiàn, yīn wèi zhěng lǐ de hěn luàn.",
       "type": "multiple_choice",
       "correct": "不",
-      "options": ["不", "得", "了", "过"],
-      "option_pinyin": ["bù", "de", "le", "guò"],
+      "options": [
+        "得",
+        "不",
+        "了",
+        "过"
+      ],
+      "option_pinyin": [
+        "de",
+        "bù",
+        "le",
+        "guò"
+      ],
       "correct_pinyin": "bù",
       "difficulty": "medium",
       "lesson_reference": 6
@@ -235,8 +315,18 @@
       "question_pinyin": "___ nǐ yǐ jīng jué dìng le, ___ jiù àn jì huà jìn xíng ba.",
       "type": "multiple_choice",
       "correct": "既然 / 那",
-      "options": ["既然 / 那", "虽然 / 但", "因为 / 所以", "如果 / 就"],
-      "option_pinyin": ["jì rán / nà", "suī rán / dàn", "yīn wèi / suǒ yǐ", "rú guǒ / jiù"],
+      "options": [
+        "如果 / 就",
+        "因为 / 所以",
+        "既然 / 那",
+        "虽然 / 但"
+      ],
+      "option_pinyin": [
+        "rú guǒ / jiù",
+        "yīn wèi / suǒ yǐ",
+        "jì rán / nà",
+        "suī rán / dàn"
+      ],
       "correct_pinyin": "jì rán / nà",
       "difficulty": "hard",
       "lesson_reference": 6
@@ -247,10 +337,10 @@
       "type": "multiple_choice",
       "correct": "Obviously / Clearly (used when something contradicts expectations)",
       "options": [
-        "Obviously / Clearly (used when something contradicts expectations)",
-        "Suddenly / All of a sudden",
         "Perhaps / Maybe",
-        "Although / Even though"
+        "Suddenly / All of a sudden",
+        "Although / Even though",
+        "Obviously / Clearly (used when something contradicts expectations)"
       ],
       "difficulty": "hard",
       "lesson_reference": 6
@@ -261,8 +351,18 @@
       "question_pinyin": "Tā men jié hūn ___ wǔ nián le, gǎn qíng hái shì hěn hǎo.",
       "type": "multiple_choice",
       "correct": "了",
-      "options": ["了", "过", "着", "得"],
-      "option_pinyin": ["le", "guò", "zhe", "de"],
+      "options": [
+        "着",
+        "过",
+        "了",
+        "得"
+      ],
+      "option_pinyin": [
+        "zhe",
+        "guò",
+        "le",
+        "de"
+      ],
       "correct_pinyin": "le",
       "difficulty": "medium",
       "lesson_reference": 7
@@ -273,10 +373,10 @@
       "type": "multiple_choice",
       "correct": "刚 = just now (very recent); 已经 = already (at some point before now)",
       "options": [
-        "刚 = just now (very recent); 已经 = already (at some point before now)",
-        "刚 = already (at some point); 已经 = just now (very recent)",
         "Both mean 'just now' — they are interchangeable",
-        "刚 is for completed actions; 已经 is for ongoing actions"
+        "刚 = already (at some point); 已经 = just now (very recent)",
+        "刚 is for completed actions; 已经 is for ongoing actions",
+        "刚 = just now (very recent); 已经 = already (at some point before now)"
       ],
       "difficulty": "medium",
       "lesson_reference": 7
@@ -288,10 +388,10 @@
       "type": "multiple_choice",
       "correct": "They broke up — everyone was very surprised.",
       "options": [
-        "They broke up — everyone was very surprised.",
-        "They got married — everyone was very surprised.",
+        "They separated for work — everyone understood.",
         "They graduated — everyone was very happy.",
-        "They separated for work — everyone understood."
+        "They got married — everyone was very surprised.",
+        "They broke up — everyone was very surprised."
       ],
       "difficulty": "easy",
       "lesson_reference": 7
@@ -302,8 +402,18 @@
       "question_pinyin": "Bù guǎn tiān qì zěn me yàng, tā ___ qù pǎo bù.",
       "type": "multiple_choice",
       "correct": "都",
-      "options": ["都", "也", "还", "就"],
-      "option_pinyin": ["dōu", "yě", "hái", "jiù"],
+      "options": [
+        "都",
+        "就",
+        "还",
+        "也"
+      ],
+      "option_pinyin": [
+        "dōu",
+        "jiù",
+        "hái",
+        "yě"
+      ],
       "correct_pinyin": "dōu",
       "difficulty": "medium",
       "lesson_reference": 8
@@ -314,8 +424,18 @@
       "question_pinyin": "Tā yī jìn mén ___ kāi shǐ zuò zuò yè.",
       "type": "multiple_choice",
       "correct": "就",
-      "options": ["就", "都", "也", "才"],
-      "option_pinyin": ["jiù", "dōu", "yě", "cái"],
+      "options": [
+        "才",
+        "也",
+        "就",
+        "都"
+      ],
+      "option_pinyin": [
+        "cái",
+        "yě",
+        "jiù",
+        "dōu"
+      ],
       "correct_pinyin": "jiù",
       "difficulty": "medium",
       "lesson_reference": 8
@@ -327,14 +447,14 @@
       "correct": "她去哪里都不怕。",
       "options": [
         "她去哪里都不怕。",
-        "她哪里去都不怕。",
         "都她去哪里不怕。",
+        "她哪里去都不怕。",
         "她不怕去都哪里。"
       ],
       "option_pinyin": [
         "Tā qù nǎ lǐ dōu bù pà.",
-        "Tā nǎ lǐ qù dōu bù pà.",
         "Dōu tā qù nǎ lǐ bù pà.",
+        "Tā nǎ lǐ qù dōu bù pà.",
         "Tā bù pà qù dōu nǎ lǐ."
       ],
       "correct_pinyin": "Tā qù nǎ lǐ dōu bù pà.",
@@ -349,9 +469,9 @@
       "correct": "His Chinese is even better than mine.",
       "options": [
         "His Chinese is even better than mine.",
-        "His Chinese is as good as mine.",
         "My Chinese is better than his.",
-        "His Chinese is a little better than mine."
+        "His Chinese is a little better than mine.",
+        "His Chinese is as good as mine."
       ],
       "difficulty": "easy",
       "lesson_reference": 9
@@ -362,8 +482,18 @@
       "question_pinyin": "Tā de hàn yǔ shuō de ___ Zhōng guó rén ___ hǎo.",
       "type": "multiple_choice",
       "correct": "像 / 一样",
-      "options": ["像 / 一样", "比 / 更", "和 / 一起", "跟 / 差不多"],
-      "option_pinyin": ["xiàng / yí yàng", "bǐ / gèng", "hé / yì qǐ", "gēn / chà bu duō"],
+      "options": [
+        "比 / 更",
+        "和 / 一起",
+        "跟 / 差不多",
+        "像 / 一样"
+      ],
+      "option_pinyin": [
+        "bǐ / gèng",
+        "hé / yì qǐ",
+        "gēn / chà bu duō",
+        "xiàng / yí yàng"
+      ],
       "correct_pinyin": "xiàng / yí yàng",
       "difficulty": "medium",
       "lesson_reference": 9
@@ -374,9 +504,9 @@
       "type": "multiple_choice",
       "correct": "Verb + 得 + Adjective",
       "options": [
-        "Verb + 得 + Adjective",
         "Adjective + 得 + Verb",
         "得 + Verb + Adjective",
+        "Verb + 得 + Adjective",
         "Verb + Adjective + 得"
       ],
       "difficulty": "medium",
@@ -388,8 +518,18 @@
       "question_pinyin": "Shù xué bǐ lì shǐ nán ___, wǒ měi tiān dōu yào fù xí.",
       "type": "multiple_choice",
       "correct": "多了",
-      "options": ["多了", "很多", "一些", "非常"],
-      "option_pinyin": ["duō le", "hěn duō", "yì xiē", "fēi cháng"],
+      "options": [
+        "一些",
+        "很多",
+        "非常",
+        "多了"
+      ],
+      "option_pinyin": [
+        "yì xiē",
+        "hěn duō",
+        "fēi cháng",
+        "duō le"
+      ],
       "correct_pinyin": "duō le",
       "difficulty": "easy",
       "lesson_reference": 10
@@ -399,7 +539,12 @@
       "question": "What does 容易一些 mean in a comparison?",
       "type": "multiple_choice",
       "correct": "A little easier",
-      "options": ["A little easier", "Much easier", "The easiest", "Just as easy"],
+      "options": [
+        "The easiest",
+        "Just as easy",
+        "A little easier",
+        "Much easier"
+      ],
       "difficulty": "easy",
       "lesson_reference": 10
     },
@@ -409,16 +554,16 @@
       "type": "multiple_choice",
       "correct": "他复习了三个小时。",
       "options": [
-        "他复习了三个小时。",
-        "他三个小时了复习。",
         "他了复习三个小时。",
-        "他复习三个小时了。"
+        "他复习三个小时了。",
+        "他复习了三个小时。",
+        "他三个小时了复习。"
       ],
       "option_pinyin": [
-        "Tā fù xí le sān ge xiǎo shí.",
-        "Tā sān ge xiǎo shí le fù xí.",
         "Tā le fù xí sān ge xiǎo shí.",
-        "Tā fù xí sān ge xiǎo shí le."
+        "Tā fù xí sān ge xiǎo shí le.",
+        "Tā fù xí le sān ge xiǎo shí.",
+        "Tā sān ge xiǎo shí le fù xí."
       ],
       "correct_pinyin": "Tā fù xí le sān ge xiǎo shí.",
       "difficulty": "medium",
@@ -430,8 +575,18 @@
       "question_pinyin": "Bǎ ___ guān diào, tài chǎo le!",
       "type": "multiple_choice",
       "correct": "音乐",
-      "options": ["音乐", "书", "苹果", "衣服"],
-      "option_pinyin": ["yīn yuè", "shū", "píng guǒ", "yī fu"],
+      "options": [
+        "苹果",
+        "书",
+        "音乐",
+        "衣服"
+      ],
+      "option_pinyin": [
+        "píng guǒ",
+        "shū",
+        "yīn yuè",
+        "yī fu"
+      ],
       "correct_pinyin": "yīn yuè",
       "difficulty": "easy",
       "lesson_reference": 11
@@ -442,10 +597,10 @@
       "type": "multiple_choice",
       "correct": "A new situation or change of state",
       "options": [
-        "A new situation or change of state",
-        "A completed action in the past",
         "A continuous ongoing action",
-        "A future intention"
+        "A future intention",
+        "A completed action in the past",
+        "A new situation or change of state"
       ],
       "difficulty": "hard",
       "lesson_reference": 11
@@ -456,16 +611,16 @@
       "type": "multiple_choice",
       "correct": "别吵了，我在睡觉！",
       "options": [
-        "别吵了，我在睡觉！",
+        "吵别了，我在睡觉！",
         "别了吵，我在睡觉！",
         "了别吵，我在睡觉！",
-        "吵别了，我在睡觉！"
+        "别吵了，我在睡觉！"
       ],
       "option_pinyin": [
-        "Bié chǎo le, wǒ zài shuì jiào!",
+        "Chǎo bié le, wǒ zài shuì jiào!",
         "Bié le chǎo, wǒ zài shuì jiào!",
         "Le bié chǎo, wǒ zài shuì jiào!",
-        "Chǎo bié le, wǒ zài shuì jiào!"
+        "Bié chǎo le, wǒ zài shuì jiào!"
       ],
       "correct_pinyin": "Bié chǎo le, wǒ zài shuì jiào!",
       "difficulty": "easy",
@@ -477,10 +632,10 @@
       "type": "multiple_choice",
       "correct": "被字句 is passive (something happened to the subject); 把字句 is active (subject acts on the object)",
       "options": [
-        "被字句 is passive (something happened to the subject); 把字句 is active (subject acts on the object)",
         "被字句 is active; 把字句 is passive",
+        "被字句 is only for negative sentences; 把字句 is for positive",
         "They mean the same thing — just different word order",
-        "被字句 is only for negative sentences; 把字句 is for positive"
+        "被字句 is passive (something happened to the subject); 把字句 is active (subject acts on the object)"
       ],
       "difficulty": "hard",
       "lesson_reference": 12
@@ -491,8 +646,18 @@
       "question_pinyin": "Nà běn shū ___ tā jiè zǒu le.",
       "type": "multiple_choice",
       "correct": "被",
-      "options": ["被", "把", "给", "让"],
-      "option_pinyin": ["bèi", "bǎ", "gěi", "ràng"],
+      "options": [
+        "让",
+        "把",
+        "被",
+        "给"
+      ],
+      "option_pinyin": [
+        "ràng",
+        "bǎ",
+        "bèi",
+        "gěi"
+      ],
       "correct_pinyin": "bèi",
       "difficulty": "medium",
       "lesson_reference": 12
@@ -505,8 +670,8 @@
       "correct": "She placed her wallet on the table.",
       "options": [
         "She placed her wallet on the table.",
-        "Her wallet was taken from the table.",
         "She found her wallet on the table.",
+        "Her wallet was taken from the table.",
         "She lost her wallet on the table."
       ],
       "difficulty": "easy",
@@ -519,14 +684,14 @@
       "correct": "他是坐飞机来的。",
       "options": [
         "他是坐飞机来的。",
-        "他坐飞机是来的。",
         "他是来坐飞机的。",
+        "他坐飞机是来的。",
         "是他坐飞机来的。"
       ],
       "option_pinyin": [
         "Tā shì zuò fēi jī lái de.",
-        "Tā zuò fēi jī shì lái de.",
         "Tā shì lái zuò fēi jī de.",
+        "Tā zuò fēi jī shì lái de.",
         "Shì tā zuò fēi jī lái de."
       ],
       "correct_pinyin": "Tā shì zuò fēi jī lái de.",
@@ -538,8 +703,18 @@
       "question": "Which verb pairs with 地铁 (subway) as the correct transport verb?",
       "type": "multiple_choice",
       "correct": "坐",
-      "options": ["坐", "骑", "开", "走"],
-      "option_pinyin": ["zuò", "qí", "kāi", "zǒu"],
+      "options": [
+        "骑",
+        "开",
+        "走",
+        "坐"
+      ],
+      "option_pinyin": [
+        "qí",
+        "kāi",
+        "zǒu",
+        "zuò"
+      ],
       "correct_pinyin": "zuò",
       "difficulty": "easy",
       "lesson_reference": 13
@@ -549,8 +724,18 @@
       "question": "What is the negative form of 是...的?",
       "type": "multiple_choice",
       "correct": "不是...的",
-      "options": ["不是...的", "没有...的", "没是...的", "是...不的"],
-      "option_pinyin": ["bú shì ... de", "méi yǒu ... de", "méi shì ... de", "shì ... bù de"],
+      "options": [
+        "不是...的",
+        "没有...的",
+        "是...不的",
+        "没是...的"
+      ],
+      "option_pinyin": [
+        "bú shì ... de",
+        "méi yǒu ... de",
+        "shì ... bù de",
+        "méi shì ... de"
+      ],
       "correct_pinyin": "bú shì ... de",
       "difficulty": "medium",
       "lesson_reference": 13
@@ -561,8 +746,18 @@
       "question_pinyin": "Qǐng ___, xiǎo xīn! Dì bǎn hěn huá.",
       "type": "multiple_choice",
       "correct": "慢点走进来",
-      "options": ["慢点走进来", "走进来慢点", "走慢进来点", "进来慢点走"],
-      "option_pinyin": ["màn diǎn zǒu jìn lái", "zǒu jìn lái màn diǎn", "zǒu màn jìn lái diǎn", "jìn lái màn diǎn zǒu"],
+      "options": [
+        "走慢进来点",
+        "走进来慢点",
+        "慢点走进来",
+        "进来慢点走"
+      ],
+      "option_pinyin": [
+        "zǒu màn jìn lái diǎn",
+        "zǒu jìn lái màn diǎn",
+        "màn diǎn zǒu jìn lái",
+        "jìn lái màn diǎn zǒu"
+      ],
       "correct_pinyin": "màn diǎn zǒu jìn lái",
       "difficulty": "hard",
       "lesson_reference": 14
@@ -575,9 +770,9 @@
       "correct": "Move the chair over here",
       "options": [
         "Move the chair over here",
-        "Put the chair over there",
+        "Take the chair away",
         "Bring the chair back",
-        "Take the chair away"
+        "Put the chair over there"
       ],
       "difficulty": "medium",
       "lesson_reference": 14
@@ -588,16 +783,16 @@
       "type": "multiple_choice",
       "correct": "他突然笑起来了。",
       "options": [
-        "他突然笑起来了。",
+        "他笑突然起来了。",
         "他起来笑突然了。",
         "他突然起来笑了。",
-        "他笑突然起来了。"
+        "他突然笑起来了。"
       ],
       "option_pinyin": [
-        "Tā tū rán xiào qǐ lái le.",
+        "Tā xiào tū rán qǐ lái le.",
         "Tā qǐ lái xiào tū rán le.",
         "Tā tū rán qǐ lái xiào le.",
-        "Tā xiào tū rán qǐ lái le."
+        "Tā tū rán xiào qǐ lái le."
       ],
       "correct_pinyin": "Tā tū rán xiào qǐ lái le.",
       "difficulty": "hard",
@@ -609,8 +804,18 @@
       "question_pinyin": "Tā ___ měi tiān dōu qù yóu yǒng, zhǐ yǒu zhōu mò xiū xī.",
       "type": "multiple_choice",
       "correct": "几乎",
-      "options": ["几乎", "基本上", "差不多", "总的来说"],
-      "option_pinyin": ["jī hū", "jī běn shàng", "chà bu duō", "zǒng de lái shuō"],
+      "options": [
+        "总的来说",
+        "几乎",
+        "差不多",
+        "基本上"
+      ],
+      "option_pinyin": [
+        "zǒng de lái shuō",
+        "jī hū",
+        "chà bu duō",
+        "jī běn shàng"
+      ],
       "correct_pinyin": "jī hū",
       "difficulty": "medium",
       "lesson_reference": 15
@@ -622,14 +827,14 @@
       "correct": "这里不但交通方便，而且环境也很好。",
       "options": [
         "这里不但交通方便，而且环境也很好。",
-        "这里而且交通方便，不但环境也很好。",
         "这里不但，交通方便而且环境也很好。",
+        "这里而且交通方便，不但环境也很好。",
         "不但这里交通方便，环境也很好而且。"
       ],
       "option_pinyin": [
         "Zhè lǐ bú dàn jiāo tōng fāng biàn, ér qiě huán jìng yě hěn hǎo.",
-        "Zhè lǐ ér qiě jiāo tōng fāng biàn, bú dàn huán jìng yě hěn hǎo.",
         "Zhè lǐ bú dàn, jiāo tōng fāng biàn ér qiě huán jìng yě hěn hǎo.",
+        "Zhè lǐ ér qiě jiāo tōng fāng biàn, bú dàn huán jìng yě hěn hǎo.",
         "Bù dàn zhè lǐ jiāo tōng fāng biàn, huán jìng yě hěn hǎo ér qiě."
       ],
       "correct_pinyin": "Zhè lǐ bú dàn jiāo tōng fāng biàn, ér qiě huán jìng yě hěn hǎo.",
@@ -643,10 +848,10 @@
       "type": "multiple_choice",
       "correct": "Generally speaking, this exam was basically fine — the rest were all OK.",
       "options": [
-        "Generally speaking, this exam was basically fine — the rest were all OK.",
-        "Generally speaking, this exam was very difficult — nothing was OK.",
+        "In general, this exam had many problems — nothing was fine.",
         "Speaking generally, this exam was perfect — everything was excellent.",
-        "In general, this exam had many problems — nothing was fine."
+        "Generally speaking, this exam was very difficult — nothing was OK.",
+        "Generally speaking, this exam was basically fine — the rest were all OK."
       ],
       "difficulty": "hard",
       "lesson_reference": 15

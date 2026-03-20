@@ -1,0 +1,684 @@
+{
+  "lesson": 3,
+  "level": 5,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Media & Technology",
+  "topic_chinese": "媒体与科技",
+  "vocabulary": [
+    {
+      "id": "hsk5_l3_01",
+      "chinese": "网络",
+      "pinyin": "wǎng luò",
+      "english": "Internet; network",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l3_02",
+      "chinese": "软件",
+      "pinyin": "ruǎn jiàn",
+      "english": "Software; app",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l3_03",
+      "chinese": "下载",
+      "pinyin": "xià zài",
+      "english": "To download",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l3_04",
+      "chinese": "视频",
+      "pinyin": "shì pín",
+      "english": "Video",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l3_05",
+      "chinese": "直播",
+      "pinyin": "zhí bō",
+      "english": "Live stream; to broadcast live",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l3_06",
+      "chinese": "评论",
+      "pinyin": "píng lùn",
+      "english": "Comment; to comment; review",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l3_07",
+      "chinese": "平台",
+      "pinyin": "píng tái",
+      "english": "Platform",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l3_08",
+      "chinese": "智能手机",
+      "pinyin": "zhì néng shǒu jī",
+      "english": "Smartphone",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l3_09",
+      "chinese": "人工智能",
+      "pinyin": "rén gōng zhì néng",
+      "english": "Artificial intelligence (AI)",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l3_10",
+      "chinese": "数据",
+      "pinyin": "shù jù",
+      "english": "Data",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l3_11",
+      "chinese": "社交媒体",
+      "pinyin": "shè jiāo méi tǐ",
+      "english": "Social media",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l3_12",
+      "chinese": "更新",
+      "pinyin": "gēng xīn",
+      "english": "To update; update",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk5_l3_p01",
+      "chinese": "下载软件",
+      "pinyin": "xià zài ruǎn jiàn",
+      "english": "To download software",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l3_p02",
+      "chinese": "发布视频",
+      "pinyin": "fā bù shì pín",
+      "english": "To post a video",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l3_p03",
+      "chinese": "网络平台",
+      "pinyin": "wǎng luò píng tái",
+      "english": "Online platform",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l3_p04",
+      "chinese": "人工智能技术",
+      "pinyin": "rén gōng zhì néng jì shù",
+      "english": "Artificial intelligence technology",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l3_p05",
+      "chinese": "社交媒体账号",
+      "pinyin": "shè jiāo méi tǐ zhàng hào",
+      "english": "Social media account",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l3_p06",
+      "chinese": "分析数据",
+      "pinyin": "fēn xī shù jù",
+      "english": "To analyse data",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "随着智能手机的普及，社交媒体已经成为人们日常生活的一部分。",
+      "pinyin": "Suí zhe zhì néng shǒu jī de pǔ jí, shè jiāo méi tǐ yǐ jīng chéng wéi rén men rì cháng shēng huó de yī bù fèn.",
+      "english": "As smartphones have become widespread, social media has become a part of people's daily lives."
+    },
+    {
+      "chinese": "这个视频平台不仅如此，还提供直播和在线课程功能。",
+      "pinyin": "Zhè gè shì pín píng tái bù jǐn rú cǐ, hái tí gōng zhí bō hé zài xiàn kè chéng gōng néng.",
+      "english": "This video platform not only does that, but also provides live streaming and online course features."
+    },
+    {
+      "chinese": "我们可以通过分析数据来了解用户的使用习惯。",
+      "pinyin": "Wǒ men kě yǐ tōng guò fēn xī shù jù lái liǎo jiě yòng hù de shǐ yòng xí guàn.",
+      "english": "We can use data analysis to understand users' usage habits."
+    },
+    {
+      "chinese": "他每天更新社交媒体，分享生活中的点点滴滴。",
+      "pinyin": "Tā měi tiān gēng xīn shè jiāo méi tǐ, fēn xiǎng shēng huó zhōng de diǎn diǎn dī dī.",
+      "english": "He updates his social media every day, sharing little details of his life."
+    },
+    {
+      "chinese": "随着人工智能技术的发展，很多传统工作正在发生变化。",
+      "pinyin": "Suí zhe rén gōng zhì néng jì shù de fā zhǎn, hěn duō chuán tǒng gōng zuò zhèng zài fā shēng biàn huà.",
+      "english": "As artificial intelligence technology develops, many traditional jobs are undergoing changes."
+    },
+    {
+      "chinese": "这款软件通过收集用户数据来提供个性化的推荐内容。",
+      "pinyin": "Zhè kuǎn ruǎn jiàn tōng guò shōu jí yòng hù shù jù lái tí gōng gè xìng huà de tuī jiàn nèi róng.",
+      "english": "This software collects user data to provide personalised recommended content."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "随着 — Along with; as (e.g. 随着科技的发展)",
+      "explanation": "随着 introduces a changing condition or development that drives another change. It means 'as' or 'along with' and is used to show that one thing changes in parallel with another. Structure: 随着 + noun phrase/change + (comma) + result clause. Example: 随着经济的发展，人们的生活水平提高了。(As the economy develops, people's living standards have improved.)",
+      "examples": [
+        {
+          "chinese": "随着网络的普及，人们越来越依赖智能手机。",
+          "pinyin": "Suí zhe wǎng luò de pǔ jí, rén men yuè lái yuè yī lài zhì néng shǒu jī.",
+          "english": "As the internet has become widespread, people have become increasingly reliant on smartphones."
+        },
+        {
+          "chinese": "随着人工智能技术的进步，软件的功能变得越来越强大。",
+          "pinyin": "Suí zhe rén gōng zhì néng jì shù de jìn bù, ruǎn jiàn de gōng néng biàn de yuè lái yuè qiáng dà.",
+          "english": "As artificial intelligence technology advances, software features have become more and more powerful."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 社交媒体的发展，越来越多的人开始网络直播。",
+          "type": "multiple_choice",
+          "correct": "随着",
+          "options": ["随着", "通过", "不仅如此", "虽然"],
+          "option_pinyin": ["suí zhe", "tōng guò", "bù jǐn rú cǐ", "suī rán"],
+          "word_hints": {"社交媒体": "shè jiāo méi tǐ", "直播": "zhí bō"}
+        },
+        {
+          "question": "Choose the sentence that uses 随着 correctly.",
+          "type": "multiple_choice",
+          "correct": "随着数据量的增加，分析工作变得更复杂了。",
+          "options": [
+            "随着数据量的增加，分析工作变得更复杂了。",
+            "数据量随着的增加，分析工作变得更复杂了。",
+            "分析工作随着变得更复杂了，数据量的增加。",
+            "随着分析工作变得，数据量的增加更复杂了。"
+          ],
+          "option_pinyin": [
+            "Suí zhe shù jù liàng de zēng jiā, fēn xī gōng zuò biàn de gèng fù zá le.",
+            "Shù jù liàng suí zhe de zēng jiā, fēn xī gōng zuò biàn de gèng fù zá le.",
+            "Fēn xī gōng zuò suí zhe biàn de gèng fù zá le, shù jù liàng de zēng jiā.",
+            "Suí zhe fēn xī gōng zuò biàn de, shù jù liàng de zēng jiā gèng fù zá le."
+          ],
+          "word_hints": {"数据": "shù jù"}
+        },
+        {
+          "question": "What does 随着 indicate in a sentence?",
+          "type": "multiple_choice",
+          "correct": "One thing changes in parallel with another developing situation",
+          "options": [
+            "One thing changes in parallel with another developing situation",
+            "A contrast between two opposite situations",
+            "A necessary condition that must be met first",
+            "An action done at the same time as another for convenience"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "随着智能手机的普及，人们用网络平台购物越来越 _____。",
+          "type": "multiple_choice",
+          "correct": "频繁",
+          "options": ["频繁", "随着", "不仅", "通过"],
+          "option_pinyin": ["pín fán", "suí zhe", "bù jǐn", "tōng guò"],
+          "word_hints": {"智能手机": "zhì néng shǒu jī", "网络平台": "wǎng luò píng tái"}
+        },
+        {
+          "question": "Which structure is correct with 随着?",
+          "type": "multiple_choice",
+          "correct": "随着 + changing condition + result clause",
+          "options": [
+            "随着 + changing condition + result clause",
+            "Result clause + 随着 + changing condition",
+            "随着 + result clause + changing condition",
+            "Changing condition + 随着 + result clause"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "不仅如此 — Not only that; moreover (e.g. 不仅如此，还有更多功能)",
+      "explanation": "不仅如此 is a connecting phrase meaning 'not only that' or 'moreover'. It is used to add a further point that goes beyond what was just said. It typically appears at the beginning of a new clause. Structure: Statement 1. 不仅如此，+ additional point. Example: 这款软件可以翻译文字。不仅如此，它还能识别图片。(This software can translate text. Not only that, it can also recognise images.)",
+      "examples": [
+        {
+          "chinese": "这个平台可以发布视频。不仅如此，用户还可以进行直播。",
+          "pinyin": "Zhè gè píng tái kě yǐ fā bù shì pín. Bù jǐn rú cǐ, yòng hù hái kě yǐ jìn xíng zhí bō.",
+          "english": "This platform allows users to post videos. Not only that, users can also do live streams."
+        },
+        {
+          "chinese": "人工智能可以分析大量数据。不仅如此，它还能自动生成评论报告。",
+          "pinyin": "Rén gōng zhì néng kě yǐ fēn xī dà liàng shù jù. Bù jǐn rú cǐ, tā hái néng zì dòng shēng chéng píng lùn bào gào.",
+          "english": "Artificial intelligence can analyse large amounts of data. Not only that, it can also automatically generate comment reports."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "这款软件可以下载视频。_____, 它还支持离线播放。",
+          "type": "multiple_choice",
+          "correct": "不仅如此",
+          "options": ["不仅如此", "随着", "因此", "虽然"],
+          "option_pinyin": ["bù jǐn rú cǐ", "suí zhe", "yīn cǐ", "suī rán"],
+          "word_hints": {"软件": "ruǎn jiàn", "视频": "shì pín"}
+        },
+        {
+          "question": "Choose the correct use of 不仅如此.",
+          "type": "multiple_choice",
+          "correct": "这个平台用户很多。不仅如此，它的功能也非常丰富。",
+          "options": [
+            "这个平台用户很多。不仅如此，它的功能也非常丰富。",
+            "不仅如此这个平台用户很多，它的功能也非常丰富。",
+            "这个平台不仅如此用户很多，功能也非常丰富。",
+            "它的功能非常丰富。不仅如此，这个平台用户很多。"
+          ],
+          "option_pinyin": [
+            "Zhè gè píng tái yòng hù hěn duō. Bù jǐn rú cǐ, tā de gōng néng yě fēi cháng fēng fù.",
+            "Bù jǐn rú cǐ zhè gè píng tái yòng hù hěn duō, tā de gōng néng yě fēi cháng fēng fù.",
+            "Zhè gè píng tái bù jǐn rú cǐ yòng hù hěn duō, gōng néng yě fēi cháng fēng fù.",
+            "Tā de gōng néng fēi cháng fēng fù. Bù jǐn rú cǐ, zhè gè píng tái yòng hù hěn duō."
+          ],
+          "word_hints": {"平台": "píng tái"}
+        },
+        {
+          "question": "What does 不仅如此 mean?",
+          "type": "multiple_choice",
+          "correct": "Not only that; moreover",
+          "options": [
+            "Not only that; moreover",
+            "As a result; therefore",
+            "No matter what",
+            "Only if; then"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "社交媒体让人们保持联系。_____, 它也成为了一个重要的信息平台。",
+          "type": "multiple_choice",
+          "correct": "不仅如此",
+          "options": ["不仅如此", "随着", "只要", "不管"],
+          "option_pinyin": ["bù jǐn rú cǐ", "suí zhe", "zhǐ yào", "bù guǎn"],
+          "word_hints": {"社交媒体": "shè jiāo méi tǐ", "平台": "píng tái"}
+        },
+        {
+          "question": "Where does 不仅如此 typically appear in a text?",
+          "type": "multiple_choice",
+          "correct": "At the beginning of a new clause, adding to the previous point",
+          "options": [
+            "At the beginning of a new clause, adding to the previous point",
+            "In the middle of a sentence before the main verb",
+            "At the end of a sentence to summarise",
+            "Before the subject of the main clause"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "通过...来... — By means of; through... (e.g. 通过数据来了解用户)",
+      "explanation": "通过...来... expresses the method or means by which something is achieved. 通过 introduces the method or channel, and 来 links it to the action or goal. Structure: 通过 + method + 来 + action/goal. Example: 他通过练习来提高汉语水平。(He improves his Chinese level through practice.)",
+      "examples": [
+        {
+          "chinese": "这家公司通过分析用户数据来改进软件功能。",
+          "pinyin": "Zhè jiā gōng sī tōng guò fēn xī yòng hù shù jù lái gǎi jìn ruǎn jiàn gōng néng.",
+          "english": "This company improves software features by analysing user data."
+        },
+        {
+          "chinese": "他通过在社交媒体上发布视频来推广自己的品牌。",
+          "pinyin": "Tā tōng guò zài shè jiāo méi tǐ shàng fā bù shì pín lái tuī guǎng zì jǐ de pǐn pái.",
+          "english": "He promotes his brand by posting videos on social media."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "她 _____ 每天更新社交媒体来吸引更多粉丝。",
+          "type": "multiple_choice",
+          "correct": "通过",
+          "options": ["通过", "随着", "不仅如此", "虽然"],
+          "option_pinyin": ["tōng guò", "suí zhe", "bù jǐn rú cǐ", "suī rán"],
+          "word_hints": {"社交媒体": "shè jiāo méi tǐ"}
+        },
+        {
+          "question": "Choose the correct sentence using 通过...来...",
+          "type": "multiple_choice",
+          "correct": "他通过下载软件来学习新技能。",
+          "options": [
+            "他通过下载软件来学习新技能。",
+            "他来通过下载软件学习新技能。",
+            "他下载软件通过来学习新技能。",
+            "通过来他下载软件学习新技能。"
+          ],
+          "option_pinyin": [
+            "Tā tōng guò xià zài ruǎn jiàn lái xué xí xīn jì néng.",
+            "Tā lái tōng guò xià zài ruǎn jiàn xué xí xīn jì néng.",
+            "Tā xià zài ruǎn jiàn tōng guò lái xué xí xīn jì néng.",
+            "Tōng guò lái tā xià zài ruǎn jiàn xué xí xīn jì néng."
+          ],
+          "word_hints": {"软件": "ruǎn jiàn"}
+        },
+        {
+          "question": "What does 通过...来... express?",
+          "type": "multiple_choice",
+          "correct": "The method or means used to achieve something",
+          "options": [
+            "The method or means used to achieve something",
+            "A progressive change happening over time",
+            "A contrast between two actions",
+            "A condition that must be met first"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "这个平台通过收集用户评论 _____ 优化推荐算法。",
+          "type": "multiple_choice",
+          "correct": "来",
+          "options": ["来", "才", "都", "也"],
+          "option_pinyin": ["lái", "cái", "dōu", "yě"],
+          "word_hints": {"平台": "píng tái", "评论": "píng lùn"}
+        },
+        {
+          "question": "Which word fills in the blank: 人工智能 _____ 分析大量数据来做出预测。",
+          "type": "multiple_choice",
+          "correct": "通过",
+          "options": ["通过", "随着", "不仅如此", "不管"],
+          "option_pinyin": ["tōng guò", "suí zhe", "bù jǐn rú cǐ", "bù guǎn"],
+          "word_hints": {"人工智能": "rén gōng zhì néng", "数据": "shù jù"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "China's Digital Ecosystem — A World of Its Own",
+      "title_chinese": "中国数字生态系统——自成一体的网络世界",
+      "content": "China has developed one of the world's most distinctive digital ecosystems. Platforms like WeChat (微信, Wēixìn), Weibo (微博, Wēibó), and Douyin (抖音, Dǒuyīn) serve hundreds of millions of users and have become deeply integrated into daily life — used for everything from messaging and shopping to paying bills and booking transport. Unlike many global tech giants, these Chinese platforms offer a wide range of services in one app. The rise of 直播 (live streaming) has also transformed e-commerce, with influencers selling products to millions of viewers in real time. Meanwhile, China's rapid advances in 人工智能 (artificial intelligence) have positioned it as a major global competitor in the tech industry.",
+      "idioms": [
+        {
+          "chinese": "与时俱进",
+          "pinyin": "yǔ shí jù jìn",
+          "english": "To keep up with the times; to advance with the era"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 网络 mean?",
+      "type": "multiple_choice",
+      "correct": "Internet; network",
+      "options": ["Internet; network", "Software", "Data", "Platform"],
+      "word_hints": {"网络": "wǎng luò"}
+    },
+    {
+      "question": "Which word means 'to download'?",
+      "type": "multiple_choice",
+      "correct": "下载",
+      "options": ["更新", "直播", "下载", "评论"],
+      "word_hints": {"更新": "gēng xīn", "直播": "zhí bō", "下载": "xià zài", "评论": "píng lùn"}
+    },
+    {
+      "question": "What does 直播 mean?",
+      "type": "multiple_choice",
+      "correct": "Live stream; to broadcast live",
+      "options": ["Live stream; to broadcast live", "To download", "To comment", "To update"],
+      "word_hints": {"直播": "zhí bō"}
+    },
+    {
+      "question": "Which word means 'data'?",
+      "type": "multiple_choice",
+      "correct": "数据",
+      "options": ["软件", "视频", "数据", "平台"],
+      "word_hints": {"软件": "ruǎn jiàn", "视频": "shì pín", "数据": "shù jù", "平台": "píng tái"}
+    },
+    {
+      "question": "What does 评论 mean?",
+      "type": "multiple_choice",
+      "correct": "Comment; to comment; review",
+      "options": ["Comment; to comment; review", "To share", "To update", "To broadcast"],
+      "word_hints": {"评论": "píng lùn"}
+    },
+    {
+      "question": "Which word means 'software; app'?",
+      "type": "multiple_choice",
+      "correct": "软件",
+      "options": ["平台", "软件", "网络", "数据"],
+      "word_hints": {"平台": "píng tái", "软件": "ruǎn jiàn", "网络": "wǎng luò", "数据": "shù jù"}
+    },
+    {
+      "question": "What does 人工智能 mean?",
+      "type": "multiple_choice",
+      "correct": "Artificial intelligence (AI)",
+      "options": ["Artificial intelligence (AI)", "Smartphone", "Social media", "Online platform"],
+      "word_hints": {"人工智能": "rén gōng zhì néng"}
+    },
+    {
+      "question": "What does 更新 mean?",
+      "type": "multiple_choice",
+      "correct": "To update; update",
+      "options": ["To update; update", "To download", "To delete", "To upload"],
+      "word_hints": {"更新": "gēng xīn"}
+    },
+    {
+      "question": "Fill in the blank: _____ 智能手机的普及，社交媒体越来越重要。",
+      "type": "multiple_choice",
+      "correct": "随着",
+      "options": ["随着", "通过", "不仅如此", "因为"],
+      "word_hints": {"智能手机": "zhì néng shǒu jī", "社交媒体": "shè jiāo méi tǐ"}
+    },
+    {
+      "question": "What does 随着 indicate?",
+      "type": "multiple_choice",
+      "correct": "One thing changes in parallel with a developing situation",
+      "options": [
+        "One thing changes in parallel with a developing situation",
+        "A necessary condition for a result",
+        "An additional point beyond what was said",
+        "The method used to achieve something"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 这个平台可以发布视频。_____, 它还支持直播功能。",
+      "type": "multiple_choice",
+      "correct": "不仅如此",
+      "options": ["不仅如此", "随着", "通过", "只有"],
+      "word_hints": {"平台": "píng tái", "视频": "shì pín", "直播": "zhí bō"}
+    },
+    {
+      "question": "What does 不仅如此 mean?",
+      "type": "multiple_choice",
+      "correct": "Not only that; moreover",
+      "options": ["Not only that; moreover", "As a result", "No matter what", "Only if"],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 他通过分析数据 _____ 了解用户习惯。",
+      "type": "multiple_choice",
+      "correct": "来",
+      "options": ["来", "才", "都", "就"],
+      "word_hints": {"数据": "shù jù"}
+    },
+    {
+      "question": "What does 社交媒体 mean?",
+      "type": "multiple_choice",
+      "correct": "Social media",
+      "options": ["Social media", "Online platform", "Smartphone", "Video website"],
+      "word_hints": {"社交媒体": "shè jiāo méi tǐ"}
+    },
+    {
+      "question": "What does the phrase 分析数据 mean?",
+      "type": "multiple_choice",
+      "correct": "To analyse data",
+      "options": ["To analyse data", "To post a video", "To update software", "To download an app"],
+      "word_hints": {"数据": "shù jù"}
+    },
+    {
+      "question": "What does 平台 mean?",
+      "type": "multiple_choice",
+      "correct": "Platform",
+      "options": ["Platform", "Account", "Software", "Network"],
+      "word_hints": {"平台": "píng tái"}
+    },
+    {
+      "question": "Which phrase means 'to post a video'?",
+      "type": "multiple_choice",
+      "correct": "发布视频",
+      "options": ["发布视频", "下载软件", "分析数据", "网络平台"],
+      "word_hints": {"视频": "shì pín"}
+    },
+    {
+      "question": "Which Chinese platform is known for short video content and live streaming?",
+      "type": "multiple_choice",
+      "correct": "抖音 (Dǒuyīn)",
+      "options": ["抖音 (Dǒuyīn)", "高铁 (Gāotiě)", "高考 (Gāokǎo)", "微博 (Wēibó)"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 网络平台 mean?",
+      "type": "multiple_choice",
+      "correct": "Online platform",
+      "options": ["Online platform", "Social media account", "AI technology", "Video download"],
+      "word_hints": {"网络": "wǎng luò", "平台": "píng tái"}
+    },
+    {
+      "question": "Which grammar pattern means 'by means of; through'?",
+      "type": "multiple_choice",
+      "correct": "通过...来...",
+      "options": ["通过...来...", "随着", "不仅如此", "不管...都..."],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Discussing Social Media",
+      "title_chinese": "讨论社交媒体",
+      "speakers": {
+        "A": {"name": "子涵", "role": "大学生", "gender": "female"},
+        "B": {"name": "建明", "role": "同学", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "建明，你最近有没有看那个博主的直播？他的视频越来越有意思。",
+          "pinyin": "Jiàn míng, nǐ zuì jìn yǒu méi yǒu kàn nà gè bó zhǔ de zhí bō? Tā de shì pín yuè lái yuè yǒu yì si.",
+          "english": "Jianming, have you been watching that blogger's live streams lately? His videos are getting more and more interesting."
+        },
+        {
+          "speaker": "B",
+          "chinese": "看过几次。他通过直播来卖东西，不仅如此，他还教大家怎么使用新软件。",
+          "pinyin": "Kàn guò jǐ cì. Tā tōng guò zhí bō lái mài dōng xi, bù jǐn rú cǐ, tā hái jiāo dà jiā zěn me shǐ yòng xīn ruǎn jiàn.",
+          "english": "I've watched a few times. He sells things through live streaming; not only that, he also teaches everyone how to use new software."
+        },
+        {
+          "speaker": "A",
+          "chinese": "随着这个网络平台用户越来越多，做直播的人也越来越多了。",
+          "pinyin": "Suí zhe zhè gè wǎng luò píng tái yòng hù yuè lái yuè duō, zuò zhí bō de rén yě yuè lái yuè duō le.",
+          "english": "As this online platform has more and more users, the number of people doing live streams is also growing."
+        },
+        {
+          "speaker": "B",
+          "chinese": "是啊。我看到有些博主通过分析评论数据来决定下次直播的主题。",
+          "pinyin": "Shì a. Wǒ kàn dào yǒu xiē bó zhǔ tōng guò fēn xī píng lùn shù jù lái jué dìng xià cì zhí bō de zhǔ tí.",
+          "english": "Right. I've seen some bloggers analyse comment data to decide the theme of their next live stream."
+        },
+        {
+          "speaker": "A",
+          "chinese": "人工智能现在也能帮助这些平台分析数据，真的很厉害。",
+          "pinyin": "Rén gōng zhì néng xiàn zài yě néng bāng zhù zhè xiē píng tái fēn xī shù jù, zhēn de hěn lì hài.",
+          "english": "Artificial intelligence can now also help these platforms analyse data — it's really impressive."
+        },
+        {
+          "speaker": "B",
+          "chinese": "对。不仅如此，AI 还能自动给视频生成字幕，节省了很多时间。",
+          "pinyin": "Duì. Bù jǐn rú cǐ, AI hái néng zì dòng gěi shì pín shēng chéng zì mù, jié shěng le hěn duō shí jiān.",
+          "english": "Exactly. Not only that, AI can also automatically generate subtitles for videos, saving a lot of time."
+        },
+        {
+          "speaker": "A",
+          "chinese": "随着科技的进步，我们的生活方式真的变化越来越大了。",
+          "pinyin": "Suí zhe kē jì de jìn bù, wǒ men de shēng huó fāng shì zhēn de biàn huà yuè lái yuè dà le.",
+          "english": "As technology advances, our way of life is really changing more and more."
+        },
+        {
+          "speaker": "B",
+          "chinese": "没错，所以我们也要不断学习，更新自己的知识和技能才行。",
+          "pinyin": "Méi cuò, suǒ yǐ wǒ men yě yào bù duàn xué xí, gēng xīn zì jǐ de zhī shi hé jì néng cái xíng.",
+          "english": "Exactly, so we also need to keep learning and updating our own knowledge and skills."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "AI and the Future of Work",
+      "title_chinese": "人工智能与未来的工作",
+      "speakers": {
+        "A": {"name": "晓雯", "role": "记者", "gender": "female"},
+        "B": {"name": "王教授", "role": "科技专家", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "王教授，随着人工智能技术的发展，您认为未来的工作会发生什么变化？",
+          "pinyin": "Wáng jiào shòu, suí zhe rén gōng zhì néng jì shù de fā zhǎn, nín rèn wéi wèi lái de gōng zuò huì fā shēng shén me biàn huà?",
+          "english": "Professor Wang, as artificial intelligence technology develops, what changes do you think will happen to work in the future?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "很多重复性的工作会被软件和AI代替。不仅如此，新的工作岗位也会随之出现。",
+          "pinyin": "Hěn duō chóng fù xìng de gōng zuò huì bèi ruǎn jiàn hé AI dài tì. Bù jǐn rú cǐ, xīn de gōng zuò gǎng wèi yě huì suí zhī chū xiàn.",
+          "english": "Many repetitive jobs will be replaced by software and AI. Not only that, new job positions will also emerge alongside this."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那企业通过什么方式来提高工作效率呢？",
+          "pinyin": "Nà qǐ yè tōng guò shén me fāng shì lái tí gāo gōng zuò xiào lǜ ne?",
+          "english": "So how do companies improve work efficiency?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "主要是通过分析大量数据来帮助管理者做更好的决策。",
+          "pinyin": "Zhǔ yào shì tōng guò fēn xī dà liàng shù jù lái bāng zhù guǎn lǐ zhě zuò gèng hǎo de jué cè.",
+          "english": "Mainly by analysing large amounts of data to help managers make better decisions."
+        },
+        {
+          "speaker": "A",
+          "chinese": "社交媒体对商业的影响越来越大，您怎么看？",
+          "pinyin": "Shè jiāo méi tǐ duì shāng yè de yǐng xiǎng yuè lái yuè dà, nín zěn me kàn?",
+          "english": "Social media's influence on business is growing more and more — what's your view on that?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "随着平台用户的增加，商家越来越多地通过直播和视频来推广产品。",
+          "pinyin": "Suí zhe píng tái yòng hù de zēng jiā, shāng jiā yuè lái yuè duō de tōng guò zhí bō hé shì pín lái tuī guǎng chǎn pǐn.",
+          "english": "As platform users grow, businesses are increasingly promoting their products through live streams and videos."
+        },
+        {
+          "speaker": "A",
+          "chinese": "感谢您的分享。最后，您对年轻人有什么建议？",
+          "pinyin": "Gǎn xiè nín de fēn xiǎng. Zuì hòu, nín duì nián qīng rén yǒu shén me jiàn yì?",
+          "english": "Thank you for sharing. Finally, what advice do you have for young people?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "要不断学习新技术，通过了解人工智能和数据分析来让自己更有竞争力。",
+          "pinyin": "Yào bù duàn xué xí xīn jì shù, tōng guò liǎo jiě rén gōng zhì néng hé shù jù fēn xī lái ràng zì jǐ gèng yǒu jìng zhēng lì.",
+          "english": "Keep learning new technologies; make yourself more competitive by understanding artificial intelligence and data analysis."
+        }
+      ]
+    }
+  ]
+}

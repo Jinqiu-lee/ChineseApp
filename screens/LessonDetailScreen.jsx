@@ -65,6 +65,21 @@ import hsk4lesson12 from '../data/hsk4_level4/hsk4_lesson_12.json';
 import hsk4lesson13 from '../data/hsk4_level4/hsk4_lesson_13.json';
 import hsk4lesson14 from '../data/hsk4_level4/hsk4_lesson_14.json';
 import hsk4lesson15 from '../data/hsk4_level4/hsk4_lesson_15.json';
+import hsk5lesson1  from '../data/hsk4_level5/hsk5_lesson_1.json';
+import hsk5lesson2  from '../data/hsk4_level5/hsk5_lesson_2.json';
+import hsk5lesson3  from '../data/hsk4_level5/hsk5_lesson_3.json';
+import hsk5lesson4  from '../data/hsk4_level5/hsk5_lesson_4.json';
+import hsk5lesson5  from '../data/hsk4_level5/hsk5_lesson_5.json';
+import hsk5lesson6  from '../data/hsk4_level5/hsk5_lesson_6.json';
+import hsk5lesson7  from '../data/hsk4_level5/hsk5_lesson_7.json';
+import hsk5lesson8  from '../data/hsk4_level5/hsk5_lesson_8.json';
+import hsk5lesson9  from '../data/hsk4_level5/hsk5_lesson_9.json';
+import hsk5lesson10 from '../data/hsk4_level5/hsk5_lesson_10.json';
+import hsk5lesson11 from '../data/hsk4_level5/hsk5_lesson_11.json';
+import hsk5lesson12 from '../data/hsk4_level5/hsk5_lesson_12.json';
+import hsk5lesson13 from '../data/hsk4_level5/hsk5_lesson_13.json';
+import hsk5lesson14 from '../data/hsk4_level5/hsk5_lesson_14.json';
+import hsk5lesson15 from '../data/hsk4_level5/hsk5_lesson_15.json';
 
 const LESSONS_BY_LEVEL = {
   hsk1: {
@@ -98,6 +113,11 @@ const LESSONS_BY_LEVEL = {
     1: hsk4lesson1, 2: hsk4lesson2, 3: hsk4lesson3, 4: hsk4lesson4, 5: hsk4lesson5,
     6: hsk4lesson6, 7: hsk4lesson7, 8: hsk4lesson8, 9: hsk4lesson9, 10: hsk4lesson10,
     11: hsk4lesson11, 12: hsk4lesson12, 13: hsk4lesson13, 14: hsk4lesson14, 15: hsk4lesson15,
+  },
+  hsk5: {
+    1: hsk5lesson1, 2: hsk5lesson2, 3: hsk5lesson3, 4: hsk5lesson4, 5: hsk5lesson5,
+    6: hsk5lesson6, 7: hsk5lesson7, 8: hsk5lesson8, 9: hsk5lesson9, 10: hsk5lesson10,
+    11: hsk5lesson11, 12: hsk5lesson12, 13: hsk5lesson13, 14: hsk5lesson14, 15: hsk5lesson15,
   },
 };
 

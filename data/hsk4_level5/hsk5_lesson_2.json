@@ -1,0 +1,678 @@
+{
+  "lesson": 2,
+  "level": 5,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Education & Learning",
+  "topic_chinese": "教育与学习",
+  "vocabulary": [
+    {
+      "id": "hsk5_l2_01",
+      "chinese": "努力",
+      "pinyin": "nǔ lì",
+      "english": "To work hard; diligent",
+      "part_of_speech": "verb/adjective"
+    },
+    {
+      "id": "hsk5_l2_02",
+      "chinese": "成绩",
+      "pinyin": "chéng jī",
+      "english": "Grade; result; achievement",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l2_03",
+      "chinese": "考试",
+      "pinyin": "kǎo shì",
+      "english": "Exam; to take an exam",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l2_04",
+      "chinese": "复习",
+      "pinyin": "fù xí",
+      "english": "To review; to revise",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l2_05",
+      "chinese": "奖学金",
+      "pinyin": "jiǎng xué jīn",
+      "english": "Scholarship",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l2_06",
+      "chinese": "毕业",
+      "pinyin": "bì yè",
+      "english": "To graduate",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l2_07",
+      "chinese": "专业",
+      "pinyin": "zhuān yè",
+      "english": "Major; specialisation",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l2_08",
+      "chinese": "教授",
+      "pinyin": "jiào shòu",
+      "english": "Professor",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l2_09",
+      "chinese": "学期",
+      "pinyin": "xué qī",
+      "english": "Semester; school term",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l2_10",
+      "chinese": "图书馆",
+      "pinyin": "tú shū guǎn",
+      "english": "Library",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l2_11",
+      "chinese": "笔记",
+      "pinyin": "bǐ jì",
+      "english": "Notes; to take notes",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l2_12",
+      "chinese": "课程",
+      "pinyin": "kè chéng",
+      "english": "Course; curriculum",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l2_p01",
+      "chinese": "努力学习",
+      "pinyin": "nǔ lì xué xí",
+      "english": "To study hard",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l2_p02",
+      "chinese": "申请奖学金",
+      "pinyin": "shēn qǐng jiǎng xué jīn",
+      "english": "To apply for a scholarship",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l2_p03",
+      "chinese": "复习功课",
+      "pinyin": "fù xí gōng kè",
+      "english": "To review lessons",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l2_p04",
+      "chinese": "记笔记",
+      "pinyin": "jì bǐ jì",
+      "english": "To take notes",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l2_p05",
+      "chinese": "选修课程",
+      "pinyin": "xuǎn xiū kè chéng",
+      "english": "To select elective courses",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l2_p06",
+      "chinese": "顺利毕业",
+      "pinyin": "shùn lì bì yè",
+      "english": "To graduate smoothly",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "只有努力复习，才能在考试中取得好成绩。",
+      "pinyin": "Zhǐ yǒu nǔ lì fù xí, cái néng zài kǎo shì zhōng qǔ dé hǎo chéng jī.",
+      "english": "Only by studying hard can you achieve good results in the exam."
+    },
+    {
+      "chinese": "她的成绩越来越好，教授对她非常满意。",
+      "pinyin": "Tā de chéng jī yuè lái yuè hǎo, jiào shòu duì tā fēi cháng mǎn yì.",
+      "english": "Her grades are getting better and better; the professor is very pleased with her."
+    },
+    {
+      "chinese": "不管课程多难，他都坚持认真记笔记。",
+      "pinyin": "Bù guǎn kè chéng duō nán, tā dōu jiān chí rèn zhēn jì bǐ jì.",
+      "english": "No matter how difficult the course is, he always persists in taking careful notes."
+    },
+    {
+      "chinese": "他在图书馆里复习到深夜，希望能申请到奖学金。",
+      "pinyin": "Tā zài tú shū guǎn lǐ fù xí dào shēn yè, xī wàng néng shēn qǐng dào jiǎng xué jīn.",
+      "english": "He studied in the library until late at night, hoping to be awarded a scholarship."
+    },
+    {
+      "chinese": "这个学期的课程很多，同学们都觉得压力很大。",
+      "pinyin": "Zhè gè xué qī de kè chéng hěn duō, tóng xué men dōu jué de yā lì hěn dà.",
+      "english": "There are many courses this semester, and all the students feel a lot of pressure."
+    },
+    {
+      "chinese": "只有选对专业，才能在毕业后找到满意的工作。",
+      "pinyin": "Zhǐ yǒu xuǎn duì zhuān yè, cái néng zài bì yè hòu zhǎo dào mǎn yì de gōng zuò.",
+      "english": "Only by choosing the right major can you find a satisfying job after graduation."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "只有...才... — Only if...then... (e.g. 只有努力，才能成功)",
+      "explanation": "只有...才... expresses a necessary condition: only if the first condition is met can the result happen. 只有 introduces the required condition, and 才 introduces the result that follows. Structure: 只有 + condition + 才 + result. Example: 只有努力学习，才能考上好大学。(Only by studying hard can you get into a good university.)",
+      "examples": [
+        {
+          "chinese": "只有认真复习，才能在考试中取得好成绩。",
+          "pinyin": "Zhǐ yǒu rèn zhēn fù xí, cái néng zài kǎo shì zhōng qǔ dé hǎo chéng jī.",
+          "english": "Only by reviewing carefully can you get good grades in the exam."
+        },
+        {
+          "chinese": "只有选对专业，才能在毕业后顺利找到工作。",
+          "pinyin": "Zhǐ yǒu xuǎn duì zhuān yè, cái néng zài bì yè hòu shùn lì zhǎo dào gōng zuò.",
+          "english": "Only by choosing the right major can you smoothly find a job after graduation."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "只有努力复习，_____ 能在考试中取得好成绩。",
+          "type": "multiple_choice",
+          "correct": "才",
+          "options": ["才", "就", "也", "都"],
+          "option_pinyin": ["cái", "jiù", "yě", "dōu"],
+          "word_hints": {"复习": "fù xí", "考试": "kǎo shì", "成绩": "chéng jī"}
+        },
+        {
+          "question": "Choose the sentence that uses 只有...才... correctly.",
+          "type": "multiple_choice",
+          "correct": "只有申请奖学金，才能减轻家里的负担。",
+          "options": [
+            "只有申请奖学金，才能减轻家里的负担。",
+            "才申请奖学金，只有能减轻家里的负担。",
+            "只有才能申请奖学金，减轻家里的负担。",
+            "申请只有奖学金，减轻才家里的负担。"
+          ],
+          "option_pinyin": [
+            "Zhǐ yǒu shēn qǐng jiǎng xué jīn, cái néng jiǎn qīng jiā lǐ de fù dān.",
+            "Cái shēn qǐng jiǎng xué jīn, zhǐ yǒu néng jiǎn qīng jiā lǐ de fù dān.",
+            "Zhǐ yǒu cái néng shēn qǐng jiǎng xué jīn, jiǎn qīng jiā lǐ de fù dān.",
+            "Shēn qǐng zhǐ yǒu jiǎng xué jīn, jiǎn qīng cái jiā lǐ de fù dān."
+          ],
+          "word_hints": {"奖学金": "jiǎng xué jīn"}
+        },
+        {
+          "question": "What does 只有...才... express?",
+          "type": "multiple_choice",
+          "correct": "A necessary condition — only if X, then Y",
+          "options": [
+            "A necessary condition — only if X, then Y",
+            "A contrast between two situations",
+            "A sequence of events happening one after another",
+            "A reason for something happening"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "只有在图书馆认真学习，_____ 能通过这门课程。",
+          "type": "multiple_choice",
+          "correct": "才",
+          "options": ["才", "也", "还", "又"],
+          "option_pinyin": ["cái", "yě", "hái", "yòu"],
+          "word_hints": {"图书馆": "tú shū guǎn", "课程": "kè chéng"}
+        },
+        {
+          "question": "Which word fills in the blank: _____ 毕业成绩优秀，才有机会申请奖学金。",
+          "type": "multiple_choice",
+          "correct": "只有",
+          "options": ["只有", "虽然", "因为", "不管"],
+          "option_pinyin": ["zhǐ yǒu", "suī rán", "yīn wèi", "bù guǎn"],
+          "word_hints": {"毕业": "bì yè", "奖学金": "jiǎng xué jīn"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "越来越 — More and more (e.g. 成绩越来越好)",
+      "explanation": "越来越 is placed before an adjective or verb to indicate that something is progressively increasing or changing. It means 'more and more' or 'increasingly'. Structure: Subject + 越来越 + adjective/verb. Example: 她的汉语越来越流利。(Her Chinese is becoming more and more fluent.)",
+      "examples": [
+        {
+          "chinese": "这学期的课程越来越难，同学们都感到压力很大。",
+          "pinyin": "Zhè xué qī de kè chéng yuè lái yuè nán, tóng xué men dōu gǎn dào yā lì hěn dà.",
+          "english": "The courses this semester are getting harder and harder; all the students feel under great pressure."
+        },
+        {
+          "chinese": "他坚持每天去图书馆复习，成绩越来越好。",
+          "pinyin": "Tā jiān chí měi tiān qù tú shū guǎn fù xí, chéng jī yuè lái yuè hǎo.",
+          "english": "He persists in going to the library to review every day, and his grades are getting better and better."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "她每天努力学习，成绩 _____ 好。",
+          "type": "multiple_choice",
+          "correct": "越来越",
+          "options": ["越来越", "不管", "只有", "虽然"],
+          "option_pinyin": ["yuè lái yuè", "bù guǎn", "zhǐ yǒu", "suī rán"],
+          "word_hints": {"成绩": "chéng jī"}
+        },
+        {
+          "question": "Choose the correct sentence with 越来越.",
+          "type": "multiple_choice",
+          "correct": "同学们越来越喜欢这位教授的课。",
+          "options": [
+            "同学们越来越喜欢这位教授的课。",
+            "同学们喜欢越来越这位教授的课。",
+            "越来越同学们喜欢这位教授的课。",
+            "这位教授的课越来越同学们喜欢。"
+          ],
+          "option_pinyin": [
+            "Tóng xué men yuè lái yuè xǐ huān zhè wèi jiào shòu de kè.",
+            "Tóng xué men xǐ huān yuè lái yuè zhè wèi jiào shòu de kè.",
+            "Yuè lái yuè tóng xué men xǐ huān zhè wèi jiào shòu de kè.",
+            "Zhè wèi jiào shòu de kè yuè lái yuè tóng xué men xǐ huān."
+          ],
+          "word_hints": {"教授": "jiào shòu"}
+        },
+        {
+          "question": "What does 越来越 mean?",
+          "type": "multiple_choice",
+          "correct": "More and more; increasingly",
+          "options": [
+            "More and more; increasingly",
+            "Less and less",
+            "At the same time",
+            "Only then"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "进入大学后，他感到压力 _____ 大。",
+          "type": "multiple_choice",
+          "correct": "越来越",
+          "options": ["越来越", "才能", "不管", "只有"],
+          "option_pinyin": ["yuè lái yuè", "cái néng", "bù guǎn", "zhǐ yǒu"],
+          "word_hints": {}
+        },
+        {
+          "question": "Where does 越来越 appear in the sentence?",
+          "type": "multiple_choice",
+          "correct": "Before the adjective or verb that describes the change",
+          "options": [
+            "Before the adjective or verb that describes the change",
+            "At the very beginning of the sentence",
+            "After the subject and object",
+            "At the end of the sentence"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "不管...都... — No matter...still... (e.g. 不管多难，都要坚持)",
+      "explanation": "不管...都... expresses that the result holds true regardless of the condition. 不管 introduces the variable or changing condition, and 都 introduces the consistent outcome. Structure: 不管 + condition + 都 + result. Example: 不管天气怎么样，他都坚持跑步。(No matter what the weather is like, he still insists on running.)",
+      "examples": [
+        {
+          "chinese": "不管课程多难，她都认真完成每一次作业。",
+          "pinyin": "Bù guǎn kè chéng duō nán, tā dōu rèn zhēn wán chéng měi yī cì zuò yè.",
+          "english": "No matter how difficult the coursework is, she always completes every assignment carefully."
+        },
+        {
+          "chinese": "不管考试结果怎么样，他都努力做到最好。",
+          "pinyin": "Bù guǎn kǎo shì jié guǒ zěn me yàng, tā dōu nǔ lì zuò dào zuì hǎo.",
+          "english": "No matter what the exam result is, he always tries his best."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "不管这门课程多难，他 _____ 认真听讲。",
+          "type": "multiple_choice",
+          "correct": "都",
+          "options": ["都", "才", "就", "又"],
+          "option_pinyin": ["dōu", "cái", "jiù", "yòu"],
+          "word_hints": {"课程": "kè chéng"}
+        },
+        {
+          "question": "Choose the sentence that uses 不管...都... correctly.",
+          "type": "multiple_choice",
+          "correct": "不管成绩好不好，都要继续努力。",
+          "options": [
+            "不管成绩好不好，都要继续努力。",
+            "都不管成绩好不好，要继续努力。",
+            "成绩不管好不好，要都继续努力。",
+            "不管都成绩好不好，要继续努力。"
+          ],
+          "option_pinyin": [
+            "Bù guǎn chéng jī hǎo bù hǎo, dōu yào jì xù nǔ lì.",
+            "Dōu bù guǎn chéng jī hǎo bù hǎo, yào jì xù nǔ lì.",
+            "Chéng jī bù guǎn hǎo bù hǎo, yào dōu jì xù nǔ lì.",
+            "Bù guǎn dōu chéng jī hǎo bù hǎo, yào jì xù nǔ lì."
+          ],
+          "word_hints": {"成绩": "chéng jī"}
+        },
+        {
+          "question": "What does 不管...都... express?",
+          "type": "multiple_choice",
+          "correct": "A result that is true regardless of any condition",
+          "options": [
+            "A result that is true regardless of any condition",
+            "A necessary condition for something to happen",
+            "An increasing change over time",
+            "A reason why something happened"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "不管图书馆关得多早，她 _____ 坚持复习到最后一刻。",
+          "type": "multiple_choice",
+          "correct": "都",
+          "options": ["都", "才", "只", "也"],
+          "option_pinyin": ["dōu", "cái", "zhǐ", "yě"],
+          "word_hints": {"图书馆": "tú shū guǎn", "复习": "fù xí"}
+        },
+        {
+          "question": "Which word goes in the blank: _____ 学期有多少课，他都认真记笔记。",
+          "type": "multiple_choice",
+          "correct": "不管",
+          "options": ["不管", "只有", "越来越", "因为"],
+          "option_pinyin": ["bù guǎn", "zhǐ yǒu", "yuè lái yuè", "yīn wèi"],
+          "word_hints": {"学期": "xué qī", "笔记": "bǐ jì"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "The Gaokao — China's National College Entrance Exam",
+      "title_chinese": "高考——中国全国高考",
+      "content": "The 高考 (gāo kǎo, National College Entrance Examination) is one of the most important events in a young Chinese person's life. Taken at the end of high school, it determines which university a student can attend. Preparation often begins years in advance, with students attending extra tutoring sessions and spending long hours in the library reviewing notes. Scoring well on the 高考 can open doors to prestigious universities and, by extension, better career prospects. The exam is highly competitive — millions of students sit it each year — and family and social expectations place enormous pressure on students to perform well. In recent years, education reform discussions have highlighted the need to balance academic rigour with student wellbeing.",
+      "idioms": [
+        {
+          "chinese": "学无止境",
+          "pinyin": "xué wú zhǐ jìng",
+          "english": "Learning has no limits (there is always more to learn)"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 努力 mean?",
+      "type": "multiple_choice",
+      "correct": "To work hard; diligent",
+      "options": ["To work hard; diligent", "To graduate", "To review", "To take notes"],
+      "word_hints": {"努力": "nǔ lì"}
+    },
+    {
+      "question": "Which word means 'scholarship'?",
+      "type": "multiple_choice",
+      "correct": "奖学金",
+      "options": ["专业", "奖学金", "课程", "学期"],
+      "word_hints": {"专业": "zhuān yè", "奖学金": "jiǎng xué jīn", "课程": "kè chéng", "学期": "xué qī"}
+    },
+    {
+      "question": "What does 复习 mean?",
+      "type": "multiple_choice",
+      "correct": "To review; to revise",
+      "options": ["To review; to revise", "To take an exam", "To graduate", "To choose a major"],
+      "word_hints": {"复习": "fù xí"}
+    },
+    {
+      "question": "Which word means 'professor'?",
+      "type": "multiple_choice",
+      "correct": "教授",
+      "options": ["学期", "笔记", "教授", "图书馆"],
+      "word_hints": {"教授": "jiào shòu", "学期": "xué qī", "笔记": "bǐ jì", "图书馆": "tú shū guǎn"}
+    },
+    {
+      "question": "What does 毕业 mean?",
+      "type": "multiple_choice",
+      "correct": "To graduate",
+      "options": ["To graduate", "To enroll", "To take notes", "To apply"],
+      "word_hints": {"毕业": "bì yè"}
+    },
+    {
+      "question": "Which word means 'semester; school term'?",
+      "type": "multiple_choice",
+      "correct": "学期",
+      "options": ["成绩", "考试", "学期", "课程"],
+      "word_hints": {"成绩": "chéng jī", "考试": "kǎo shì", "学期": "xué qī", "课程": "kè chéng"}
+    },
+    {
+      "question": "What does 专业 mean?",
+      "type": "multiple_choice",
+      "correct": "Major; specialisation",
+      "options": ["Major; specialisation", "Library", "Grade", "Professor"],
+      "word_hints": {"专业": "zhuān yè"}
+    },
+    {
+      "question": "What does 图书馆 mean?",
+      "type": "multiple_choice",
+      "correct": "Library",
+      "options": ["Library", "Classroom", "Canteen", "Dormitory"],
+      "word_hints": {"图书馆": "tú shū guǎn"}
+    },
+    {
+      "question": "Fill in the blank: 只有认真复习，_____ 能取得好成绩。",
+      "type": "multiple_choice",
+      "correct": "才",
+      "options": ["才", "都", "也", "就"],
+      "word_hints": {"复习": "fù xí", "成绩": "chéng jī"}
+    },
+    {
+      "question": "What does 只有...才... express?",
+      "type": "multiple_choice",
+      "correct": "Only if a condition is met can the result happen",
+      "options": [
+        "Only if a condition is met can the result happen",
+        "No matter what happens, the result is always the same",
+        "Something is getting progressively more so",
+        "Two things happening at the same time"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 她的成绩 _____ 好，教授非常满意。",
+      "type": "multiple_choice",
+      "correct": "越来越",
+      "options": ["越来越", "只有", "不管", "才能"],
+      "word_hints": {"成绩": "chéng jī", "教授": "jiào shòu"}
+    },
+    {
+      "question": "What does 越来越 mean?",
+      "type": "multiple_choice",
+      "correct": "More and more; increasingly",
+      "options": ["More and more; increasingly", "Less and less", "Only if", "No matter"],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 不管课程多难，他 _____ 坚持完成作业。",
+      "type": "multiple_choice",
+      "correct": "都",
+      "options": ["都", "才", "只", "就"],
+      "word_hints": {"课程": "kè chéng"}
+    },
+    {
+      "question": "What does 笔记 mean?",
+      "type": "multiple_choice",
+      "correct": "Notes; to take notes",
+      "options": ["Notes; to take notes", "Textbook", "Exam paper", "Report"],
+      "word_hints": {"笔记": "bǐ jì"}
+    },
+    {
+      "question": "What does the phrase 努力学习 mean?",
+      "type": "multiple_choice",
+      "correct": "To study hard",
+      "options": ["To study hard", "To choose a major", "To review lessons", "To apply for a scholarship"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 成绩 mean?",
+      "type": "multiple_choice",
+      "correct": "Grade; result; achievement",
+      "options": ["Grade; result; achievement", "Course", "Scholarship", "Semester"],
+      "word_hints": {"成绩": "chéng jī"}
+    },
+    {
+      "question": "Which phrase means 'to apply for a scholarship'?",
+      "type": "multiple_choice",
+      "correct": "申请奖学金",
+      "options": ["申请奖学金", "记笔记", "复习功课", "顺利毕业"],
+      "word_hints": {"奖学金": "jiǎng xué jīn"}
+    },
+    {
+      "question": "What is the 高考?",
+      "type": "multiple_choice",
+      "correct": "China's National College Entrance Examination",
+      "options": [
+        "China's National College Entrance Examination",
+        "A university graduation ceremony",
+        "A scholarship application process",
+        "A national teaching qualification test"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 顺利毕业 mean?",
+      "type": "multiple_choice",
+      "correct": "To graduate smoothly",
+      "options": ["To graduate smoothly", "To fail a course", "To drop out of school", "To transfer universities"],
+      "word_hints": {"毕业": "bì yè"}
+    },
+    {
+      "question": "Which grammar pattern means 'no matter...still...'?",
+      "type": "multiple_choice",
+      "correct": "不管...都...",
+      "options": ["不管...都...", "只有...才...", "越来越", "顺便"],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Preparing for Exams",
+      "title_chinese": "备考",
+      "speakers": {
+        "A": {"name": "小华", "role": "大学生", "gender": "male"},
+        "B": {"name": "雨桐", "role": "同学", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "雨桐，你最近每天都在图书馆复习，成绩一定越来越好了吧？",
+          "pinyin": "Yǔ tóng, nǐ zuì jìn měi tiān dōu zài tú shū guǎn fù xí, chéng jī yī dìng yuè lái yuè hǎo le ba?",
+          "english": "Yutong, you've been reviewing in the library every day recently — your grades must be getting better and better, right?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "希望吧。这学期的课程很难，不管我多努力，还是觉得有些地方没学好。",
+          "pinyin": "Xī wàng ba. Zhè xué qī de kè chéng hěn nán, bù guǎn wǒ duō nǔ lì, hái shì jué de yǒu xiē dì fāng méi xué hǎo.",
+          "english": "I hope so. The courses this semester are very difficult; no matter how hard I work, I still feel there are some areas I haven't mastered."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你有没有认真记笔记？只有课上记好笔记，考试前复习才更有效率。",
+          "pinyin": "Nǐ yǒu méi yǒu rèn zhēn jì bǐ jì? Zhǐ yǒu kè shàng jì hǎo bǐ jì, kǎo shì qián fù xí cái gèng yǒu xiào lǜ.",
+          "english": "Have you been taking careful notes? Only by taking good notes in class can your revision before the exam be more effective."
+        },
+        {
+          "speaker": "B",
+          "chinese": "有，教授讲课很快，我每节课都记了很多笔记。你打算申请奖学金吗？",
+          "pinyin": "Yǒu, jiào shòu jiǎng kè hěn kuài, wǒ měi jié kè dōu jì le hěn duō bǐ jì. Nǐ dǎ suàn shēn qǐng jiǎng xué jīn ma?",
+          "english": "Yes, the professor lectures very quickly and I take lots of notes every class. Are you planning to apply for a scholarship?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "想申请，但只有这学期的成绩达到要求，才有资格提交申请。",
+          "pinyin": "Xiǎng shēn qǐng, dàn zhǐ yǒu zhè xué qī de chéng jī dá dào yāo qiú, cái yǒu zī gé tí jiāo shēn qǐng.",
+          "english": "I'd like to, but only if my grades this semester meet the requirements will I be eligible to submit an application."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那你的专业成绩怎么样？我觉得你一直很努力。",
+          "pinyin": "Nà nǐ de zhuān yè chéng jī zěn me yàng? Wǒ jué de nǐ yī zhí hěn nǔ lì.",
+          "english": "So how are your grades in your major? I think you've always worked very hard."
+        },
+        {
+          "speaker": "A",
+          "chinese": "还不错，但我希望继续努力，争取顺利毕业后能找到好工作。",
+          "pinyin": "Hái bú cuò, dàn wǒ xī wàng jì xù nǔ lì, zhēng qǔ shùn lì bì yè hòu néng zhǎo dào hǎo gōng zuò.",
+          "english": "Not bad, but I hope to keep working hard and strive to find a good job after graduating smoothly."
+        },
+        {
+          "speaker": "B",
+          "chinese": "加油！不管结果怎么样，努力过就不会后悔的。",
+          "pinyin": "Jiā yóu! Bù guǎn jié guǒ zěn me yàng, nǔ lì guò jiù bú huì hòu huǐ de.",
+          "english": "Keep it up! No matter what the result is, you won't regret having worked hard."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Choosing a Major",
+      "title_chinese": "选择专业",
+      "speakers": {
+        "A": {"name": "明轩", "role": "高中生", "gender": "male"},
+        "B": {"name": "李教授", "role": "大学教授", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "李教授，我想请您帮我分析一下，我应该选什么专业。",
+          "pinyin": "Lǐ jiào shòu, wǒ xiǎng qǐng nín bāng wǒ fēn xī yī xià, wǒ yīng gāi xuǎn shén me zhuān yè.",
+          "english": "Professor Li, I'd like to ask you to help me analyse what major I should choose."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好的。你考试成绩怎么样？哪些课程你觉得学起来越来越有兴趣？",
+          "pinyin": "Hǎo de. Nǐ kǎo shì chéng jī zěn me yàng? Nǎ xiē kè chéng nǐ jué de xué qǐ lái yuè lái yuè yǒu xìng qù?",
+          "english": "Sure. How are your exam results? Which courses do you find increasingly interesting to study?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我数学成绩很好，但语文课程也不错。我不太确定选理科还是文科。",
+          "pinyin": "Wǒ shù xué chéng jī hěn hǎo, dàn yǔ wén kè chéng yě bú cuò. Wǒ bú tài què dìng xuǎn lǐ kē hái shì wén kē.",
+          "english": "My maths grades are very good, but my Chinese language course is also solid. I'm not sure whether to choose science or humanities."
+        },
+        {
+          "speaker": "B",
+          "chinese": "只有真正了解自己的兴趣，才能选出最合适的专业。你将来想做什么工作？",
+          "pinyin": "Zhǐ yǒu zhēn zhèng liǎo jiě zì jǐ de xìng qù, cái néng xuǎn chū zuì hé shì de zhuān yè. Nǐ jiāng lái xiǎng zuò shén me gōng zuò?",
+          "english": "Only by truly understanding your own interests can you choose the most suitable major. What kind of work do you want to do in the future?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我想做工程师。不管工作多辛苦，我都愿意努力。",
+          "pinyin": "Wǒ xiǎng zuò gōng chéng shī. Bù guǎn gōng zuò duō xīn kǔ, wǒ dōu yuàn yì nǔ lì.",
+          "english": "I want to be an engineer. No matter how hard the work is, I am willing to put in the effort."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那选理工类专业很合适。大学第一学期要认真记笔记，打好基础。",
+          "pinyin": "Nà xuǎn lǐ gōng lèi zhuān yè hěn hé shì. Dà xué dì yī xué qī yào rèn zhēn jì bǐ jì, dǎ hǎo jī chǔ.",
+          "english": "Then choosing an engineering major would suit you well. In the first semester of university, take careful notes and build a solid foundation."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我会的。我打算每天去图书馆自习，争取申请到奖学金。",
+          "pinyin": "Wǒ huì de. Wǒ dǎ suàn měi tiān qù tú shū guǎn zì xí, zhēng qǔ shēn qǐng dào jiǎng xué jīn.",
+          "english": "I will. I plan to go to the library to self-study every day and strive to be awarded a scholarship."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,693 @@
+{
+  "lesson": 15,
+  "level": 5,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Achievement & Success",
+  "topic_chinese": "成就与成功",
+  "vocabulary": [
+    {
+      "id": "hsk5_l15_01",
+      "chinese": "成就",
+      "pinyin": "chéng jiù",
+      "english": "Achievement; accomplishment",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l15_02",
+      "chinese": "目标",
+      "pinyin": "mù biāo",
+      "english": "Goal; target; objective",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l15_03",
+      "chinese": "努力",
+      "pinyin": "nǔ lì",
+      "english": "To work hard; hard-working; effort",
+      "part_of_speech": "verb/adjective/noun"
+    },
+    {
+      "id": "hsk5_l15_04",
+      "chinese": "坚持",
+      "pinyin": "jiān chí",
+      "english": "To persist; to persevere",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l15_05",
+      "chinese": "克服",
+      "pinyin": "kè fú",
+      "english": "To overcome; to surmount",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l15_06",
+      "chinese": "挑战",
+      "pinyin": "tiǎo zhàn",
+      "english": "Challenge; to challenge",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l15_07",
+      "chinese": "突破",
+      "pinyin": "tū pò",
+      "english": "Breakthrough; to break through",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l15_08",
+      "chinese": "成功",
+      "pinyin": "chéng gōng",
+      "english": "Success; to succeed; successful",
+      "part_of_speech": "noun/verb/adjective"
+    },
+    {
+      "id": "hsk5_l15_09",
+      "chinese": "自豪",
+      "pinyin": "zì háo",
+      "english": "Proud; to feel proud",
+      "part_of_speech": "adjective/verb"
+    },
+    {
+      "id": "hsk5_l15_10",
+      "chinese": "激励",
+      "pinyin": "jī lì",
+      "english": "To inspire; to motivate; motivation",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk5_l15_11",
+      "chinese": "奋斗",
+      "pinyin": "fèn dòu",
+      "english": "To strive; to struggle; to fight for",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l15_12",
+      "chinese": "实现",
+      "pinyin": "shí xiàn",
+      "english": "To realize; to achieve; to fulfil",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l15_p01",
+      "chinese": "实现目标",
+      "pinyin": "shí xiàn mù biāo",
+      "english": "To achieve one's goal",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l15_p02",
+      "chinese": "克服挑战",
+      "pinyin": "kè fú tiǎo zhàn",
+      "english": "To overcome challenges",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l15_p03",
+      "chinese": "取得突破",
+      "pinyin": "qǔ dé tū pò",
+      "english": "To achieve a breakthrough",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l15_p04",
+      "chinese": "为梦想奋斗",
+      "pinyin": "wèi mèng xiǎng fèn dòu",
+      "english": "To strive for one's dream",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l15_p05",
+      "chinese": "感到自豪",
+      "pinyin": "gǎn dào zì háo",
+      "english": "To feel proud",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l15_p06",
+      "chinese": "激励他人",
+      "pinyin": "jī lì tā rén",
+      "english": "To inspire others",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "凭借坚强的意志力和不懈的努力，他终于克服了所有挑战，实现了目标。",
+      "pinyin": "Píng jiè jiān qiáng de yì zhì lì hé bù xiè de nǔ lì, tā zhōng yú kè fú le suǒ yǒu tiǎo zhàn, shí xiàn le mù biāo.",
+      "english": "Relying on strong willpower and tireless effort, he finally overcame all challenges and achieved his goal."
+    },
+    {
+      "chinese": "不论遇到多大的困难，她都不放弃，始终为梦想而奋斗。",
+      "pinyin": "Bú lùn yù dào duō dà de kùn nán, tā dōu bú fàng qì, shǐ zhōng wèi mèng xiǎng ér fèn dòu.",
+      "english": "Regardless of how great the difficulties she encountered, she never gave up and always strove for her dream."
+    },
+    {
+      "chinese": "他尽力完成了每一个任务，最终取得了令人骄傲的成就。",
+      "pinyin": "Tā jìn lì wán chéng le měi yí gè rèn wù, zuì zhōng qǔ dé le lìng rén jiāo ào de chéng jiù.",
+      "english": "He did his best to complete every task and ultimately achieved accomplishments that made everyone proud."
+    },
+    {
+      "chinese": "这次突破不仅让她感到自豪，也激励了周围很多人努力奋斗。",
+      "pinyin": "Zhè cì tū pò bù jǐn ràng tā gǎn dào zì háo, yě jī lì le zhōu wéi hěn duō rén nǔ lì fèn dòu.",
+      "english": "This breakthrough not only made her feel proud but also inspired many people around her to work hard and strive."
+    },
+    {
+      "chinese": "不论结果如何，只要尽力了，就值得为自己感到自豪。",
+      "pinyin": "Bú lùn jié guǒ rú hé, zhǐ yào jìn lì le, jiù zhí de wèi zì jǐ gǎn dào zì háo.",
+      "english": "Regardless of the outcome, as long as you have done your best, you deserve to feel proud of yourself."
+    },
+    {
+      "chinese": "凭借团队的力量，他们克服了一个又一个挑战，最终成功实现了目标。",
+      "pinyin": "Píng jiè tuán duì de lì liàng, tā men kè fú le yí gè yòu yí gè tiǎo zhàn, zuì zhōng chéng gōng shí xiàn le mù biāo.",
+      "english": "By relying on the strength of their team, they overcame one challenge after another and ultimately achieved their goal."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "凭借 — By means of; relying on",
+      "explanation": "凭借 means 'by means of', 'relying on', or 'thanks to'. It introduces the resource, quality, or means that enables someone to achieve something. Structure: 凭借 + noun/noun phrase + (subject) + result. It is similar to 通过 but focuses more on the asset or ability used, rather than the process. Example: 凭借努力和才华，他成功了。(Relying on hard work and talent, he succeeded.)",
+      "examples": [
+        {
+          "chinese": "她凭借出色的能力和坚持不懈的努力，实现了自己的目标。",
+          "pinyin": "Tā píng jiè chū sè de néng lì hé jiān chí bù xiè de nǔ lì, shí xiàn le zì jǐ de mù biāo.",
+          "english": "Relying on her outstanding ability and persistent effort, she achieved her goal."
+        },
+        {
+          "chinese": "凭借多年积累的经验，他终于在这个领域取得了重大突破。",
+          "pinyin": "Píng jiè duō nián jī lěi de jīng yàn, tā zhōng yú zài zhè ge lǐng yù qǔ dé le zhòng dà tū pò.",
+          "english": "Relying on years of accumulated experience, he finally made a major breakthrough in this field."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他 _____ 团队合作和个人努力，克服了这次挑战。",
+          "type": "multiple_choice",
+          "correct": "凭借",
+          "options": ["凭借", "尽力", "不论", "自豪"],
+          "option_pinyin": ["píng jiè", "jìn lì", "bú lùn", "zì háo"],
+          "word_hints": {"挑战": "tiǎo zhàn", "克服": "kè fú"}
+        },
+        {
+          "question": "Choose the correct sentence using 凭借.",
+          "type": "multiple_choice",
+          "correct": "凭借坚强的意志，她实现了所有人都认为不可能的目标。",
+          "options": [
+            "凭借坚强的意志，她实现了所有人都认为不可能的目标。",
+            "她凭借实现了坚强的意志，所有人都认为不可能的目标。",
+            "实现了凭借坚强的意志，她所有人都认为不可能的目标。",
+            "所有人凭借坚强的意志，她都认为不可能的目标实现了。"
+          ],
+          "option_pinyin": [
+            "Píng jiè jiān qiáng de yì zhì, tā shí xiàn le suǒ yǒu rén dōu rèn wéi bù kě néng de mù biāo.",
+            "Tā píng jiè shí xiàn le jiān qiáng de yì zhì, suǒ yǒu rén dōu rèn wéi bù kě néng de mù biāo.",
+            "Shí xiàn le píng jiè jiān qiáng de yì zhì, tā suǒ yǒu rén dōu rèn wéi bù kě néng de mù biāo.",
+            "Suǒ yǒu rén píng jiè jiān qiáng de yì zhì, tā dōu rèn wéi bù kě néng de mù biāo shí xiàn le."
+          ],
+          "word_hints": {"目标": "mù biāo", "实现": "shí xiàn"}
+        },
+        {
+          "question": "What does 凭借 mean?",
+          "type": "multiple_choice",
+          "correct": "By means of; relying on",
+          "options": [
+            "By means of; relying on",
+            "Regardless of; no matter what",
+            "So as to avoid",
+            "In spite of"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "她 _____ 过人的才华和努力，取得了巨大的成就。",
+          "type": "multiple_choice",
+          "correct": "凭借",
+          "options": ["凭借", "不论", "尽力", "突破"],
+          "option_pinyin": ["píng jiè", "bú lùn", "jìn lì", "tū pò"],
+          "word_hints": {"成就": "chéng jiù", "努力": "nǔ lì"}
+        },
+        {
+          "question": "凭借 introduces which element in a sentence?",
+          "type": "multiple_choice",
+          "correct": "The resource, quality, or ability used to achieve something",
+          "options": [
+            "The resource, quality, or ability used to achieve something",
+            "The time when something happened",
+            "An undesirable outcome to avoid",
+            "A contrast with another action"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "尽力 — To do one's best; to try one's hardest",
+      "explanation": "尽力 means 'to do one's best' or 'to try as hard as possible'. It is placed before a verb to indicate maximum effort. Structure: Subject + 尽力 + verb (+ object). It can also appear alone as a predicate: 我会尽力。(I will do my best.) A common related phrase is 尽力而为 (jìn lì ér wéi), meaning 'to do everything within one's power'. Example: 他尽力完成了任务。(He did his best to complete the task.)",
+      "examples": [
+        {
+          "chinese": "不论结果怎样，你只要尽力奋斗，就值得为自己感到自豪。",
+          "pinyin": "Bú lùn jié guǒ zěn yàng, nǐ zhǐ yào jìn lì fèn dòu, jiù zhí de wèi zì jǐ gǎn dào zì háo.",
+          "english": "Regardless of the outcome, as long as you strive with all your might, you deserve to feel proud of yourself."
+        },
+        {
+          "chinese": "她尽力克服了每一个挑战，最终实现了她的目标。",
+          "pinyin": "Tā jìn lì kè fú le měi yí gè tiǎo zhàn, zuì zhōng shí xiàn le tā de mù biāo.",
+          "english": "She did her best to overcome every challenge and ultimately achieved her goal."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "无论结果如何，你都应该 _____ 去完成每一件事。",
+          "type": "multiple_choice",
+          "correct": "尽力",
+          "options": ["尽力", "凭借", "不论", "激励"],
+          "option_pinyin": ["jìn lì", "píng jiè", "bú lùn", "jī lì"],
+          "word_hints": {}
+        },
+        {
+          "question": "Choose the correct sentence using 尽力.",
+          "type": "multiple_choice",
+          "correct": "他尽力克服了困难，最终取得了成就。",
+          "options": [
+            "他尽力克服了困难，最终取得了成就。",
+            "他克服了尽力困难，最终取得了成就。",
+            "尽力他最终克服了困难，取得了成就。",
+            "他最终克服了困难，尽力取得了成就。"
+          ],
+          "option_pinyin": [
+            "Tā jìn lì kè fú le kùn nán, zuì zhōng qǔ dé le chéng jiù.",
+            "Tā kè fú le jìn lì kùn nán, zuì zhōng qǔ dé le chéng jiù.",
+            "Jìn lì tā zuì zhōng kè fú le kùn nán, qǔ dé le chéng jiù.",
+            "Tā zuì zhōng kè fú le kùn nán, jìn lì qǔ dé le chéng jiù."
+          ],
+          "word_hints": {"克服": "kè fú", "成就": "chéng jiù"}
+        },
+        {
+          "question": "What does 尽力 mean?",
+          "type": "multiple_choice",
+          "correct": "To do one's best; to try one's hardest",
+          "options": [
+            "To do one's best; to try one's hardest",
+            "To give up easily",
+            "To rely on others",
+            "To achieve a breakthrough"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "虽然失败了，但他已经 _____ ，这本身就是一种成就。",
+          "type": "multiple_choice",
+          "correct": "尽力",
+          "options": ["尽力", "奋斗", "突破", "自豪"],
+          "option_pinyin": ["jìn lì", "fèn dòu", "tū pò", "zì háo"],
+          "word_hints": {"成就": "chéng jiù", "失败": "shī bài"}
+        },
+        {
+          "question": "尽力 is placed where in a sentence?",
+          "type": "multiple_choice",
+          "correct": "Before the verb, after the subject",
+          "options": [
+            "Before the verb, after the subject",
+            "At the very end of the sentence",
+            "Before the subject",
+            "After the object"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "不论…都… — Regardless of…; no matter… all…",
+      "explanation": "不论…都… means 'regardless of' or 'no matter what/how'. It stresses that the result in the second clause holds true in all situations, irrespective of the condition in the first clause. Structure: 不论 + condition + (subject) + 都 + result. Similar to 无论, 不论 can be followed by question words such as 什么, 怎样, 多, 是否. Example: 不论天气如何，他都坚持锻炼。(No matter what the weather, he always exercises.)",
+      "examples": [
+        {
+          "chinese": "不论遇到多大的挑战，她都凭借坚持和努力克服了困难。",
+          "pinyin": "Bú lùn yù dào duō dà de tiǎo zhàn, tā dōu píng jiè jiān chí hé nǔ lì kè fú le kùn nán.",
+          "english": "No matter how great the challenge she encountered, she always overcame difficulties by relying on perseverance and effort."
+        },
+        {
+          "chinese": "不论成功还是失败，他都把每次经历当作激励自己的机会。",
+          "pinyin": "Bú lùn chéng gōng hái shì shī bài, tā dōu bǎ měi cì jīng lì dāng zuò jī lì zì jǐ de jī huì.",
+          "english": "Regardless of success or failure, he always treats every experience as an opportunity to motivate himself."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 结果怎样，她 _____ 对自己的努力感到自豪。",
+          "type": "multiple_choice",
+          "correct": "不论…都…",
+          "options": ["不论…都…", "虽然…但是…", "因为…所以…", "与其…不如…"],
+          "option_pinyin": ["bú lùn…dōu…", "suī rán…dàn shì…", "yīn wèi…suǒ yǐ…", "yǔ qí…bù rú…"],
+          "word_hints": {"自豪": "zì háo", "努力": "nǔ lì"}
+        },
+        {
+          "question": "Choose the correct sentence using 不论…都…",
+          "type": "multiple_choice",
+          "correct": "不论面对什么困难，他都尽力去克服。",
+          "options": [
+            "不论面对什么困难，他都尽力去克服。",
+            "面对不论什么困难，他都尽力去克服。",
+            "他不论都面对什么困难，尽力去克服。",
+            "尽力克服不论，他都面对什么困难。"
+          ],
+          "option_pinyin": [
+            "Bú lùn miàn duì shén me kùn nán, tā dōu jìn lì qù kè fú.",
+            "Miàn duì bú lùn shén me kùn nán, tā dōu jìn lì qù kè fú.",
+            "Tā bú lùn dōu miàn duì shén me kùn nán, jìn lì qù kè fú.",
+            "Jìn lì kè fú bú lùn, tā dōu miàn duì shén me kùn nán."
+          ],
+          "word_hints": {"克服": "kè fú", "尽力": "jìn lì"}
+        },
+        {
+          "question": "What does 不论…都… express?",
+          "type": "multiple_choice",
+          "correct": "The result holds true regardless of the condition",
+          "options": [
+            "The result holds true regardless of the condition",
+            "A cause and its effect",
+            "A choice between two options",
+            "A contrast between two situations"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "不论他多么努力，_____ 会有失败的时候，但重要的是不放弃。",
+          "type": "multiple_choice",
+          "correct": "都",
+          "options": ["都", "才", "就", "还"],
+          "option_pinyin": ["dōu", "cái", "jiù", "hái"],
+          "word_hints": {"努力": "nǔ lì"}
+        },
+        {
+          "question": "不论 can be followed by which type of word to introduce the condition?",
+          "type": "multiple_choice",
+          "correct": "Question words such as 什么, 怎样, 多, 是否",
+          "options": [
+            "Question words such as 什么, 怎样, 多, 是否",
+            "Only time expressions",
+            "Only place words",
+            "Only adjectives"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "The Spirit of Striving in Chinese Culture",
+      "title_chinese": "中国文化中的奋斗精神",
+      "content": "The concept of 奋斗 (fèn dòu, striving or struggling towards a goal) holds a deeply honoured place in Chinese culture and society. From the ancient saying 天道酬勤 (tiān dào chóu qín, 'Heaven rewards the diligent') to modern national narratives, the idea that persistent effort leads to achievement (成就, chéng jiù) is central to how success is understood. Chinese education and family culture strongly emphasise setting clear goals (目标, mù biāo) and working tenaciously towards them. Many popular role models in Chinese public life — from athletes to scientists — are celebrated specifically for their spirit of overcoming challenges (克服挑战, kè fú tiǎo zhàn) rather than for innate talent alone. The national slogan 撸起袖子加油干 (lū qǐ xiù zi jiā yóu gàn, 'Roll up your sleeves and work hard') and phrases such as 不怕吃苦 (bù pà chī kǔ, 'Not afraid of hardship') reflect a cultural admiration for those who strive regardless of obstacles.",
+      "idioms": [
+        {
+          "chinese": "天道酬勤",
+          "pinyin": "tiān dào chóu qín",
+          "english": "Heaven rewards the diligent — hard work is always rewarded in the end"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 成就 mean?",
+      "type": "multiple_choice",
+      "correct": "Achievement; accomplishment",
+      "options": ["Achievement; accomplishment", "Goal; target", "Challenge", "Breakthrough"],
+      "word_hints": {"成就": "chéng jiù"}
+    },
+    {
+      "question": "Which word means 'goal; target; objective'?",
+      "type": "multiple_choice",
+      "correct": "目标",
+      "options": ["目标", "成就", "挑战", "突破"],
+      "word_hints": {"目标": "mù biāo", "成就": "chéng jiù", "挑战": "tiǎo zhàn", "突破": "tū pò"}
+    },
+    {
+      "question": "What does 克服 mean?",
+      "type": "multiple_choice",
+      "correct": "To overcome; to surmount",
+      "options": ["To overcome; to surmount", "To strive; to struggle", "To inspire; to motivate", "To realize; to achieve"],
+      "word_hints": {"克服": "kè fú"}
+    },
+    {
+      "question": "Which word means 'breakthrough; to break through'?",
+      "type": "multiple_choice",
+      "correct": "突破",
+      "options": ["突破", "奋斗", "激励", "自豪"],
+      "word_hints": {"突破": "tū pò", "奋斗": "fèn dòu", "激励": "jī lì", "自豪": "zì háo"}
+    },
+    {
+      "question": "What does 自豪 mean?",
+      "type": "multiple_choice",
+      "correct": "Proud; to feel proud",
+      "options": ["Proud; to feel proud", "To inspire; to motivate", "To strive; to struggle", "To overcome"],
+      "word_hints": {"自豪": "zì háo"}
+    },
+    {
+      "question": "What does 奋斗 mean?",
+      "type": "multiple_choice",
+      "correct": "To strive; to struggle; to fight for",
+      "options": ["To strive; to struggle; to fight for", "To persist; to persevere", "To overcome", "To achieve"],
+      "word_hints": {"奋斗": "fèn dòu"}
+    },
+    {
+      "question": "Which word means 'to inspire; to motivate'?",
+      "type": "multiple_choice",
+      "correct": "激励",
+      "options": ["激励", "实现", "坚持", "努力"],
+      "word_hints": {"激励": "jī lì", "实现": "shí xiàn", "坚持": "jiān chí", "努力": "nǔ lì"}
+    },
+    {
+      "question": "What does 实现 mean?",
+      "type": "multiple_choice",
+      "correct": "To realize; to achieve; to fulfil",
+      "options": ["To realize; to achieve; to fulfil", "To strive; to fight for", "To feel proud", "To inspire others"],
+      "word_hints": {"实现": "shí xiàn"}
+    },
+    {
+      "question": "Fill in the blank: 她 _____ 多年的努力和才华，终于实现了目标。",
+      "type": "multiple_choice",
+      "correct": "凭借",
+      "options": ["凭借", "不论", "尽力", "自豪"],
+      "word_hints": {"目标": "mù biāo", "努力": "nǔ lì"}
+    },
+    {
+      "question": "What does 凭借 mean?",
+      "type": "multiple_choice",
+      "correct": "By means of; relying on",
+      "options": [
+        "By means of; relying on",
+        "Regardless of; no matter what",
+        "So as to avoid",
+        "As time goes by"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: _____ 遇到多大的困难，他 _____ 坚持奋斗。",
+      "type": "multiple_choice",
+      "correct": "不论…都…",
+      "options": ["不论…都…", "虽然…但是…", "因为…所以…", "与其…不如…"],
+      "word_hints": {"奋斗": "fèn dòu", "坚持": "jiān chí"}
+    },
+    {
+      "question": "Choose the correct sentence using 尽力.",
+      "type": "multiple_choice",
+      "correct": "她尽力克服了所有挑战，感到非常自豪。",
+      "options": [
+        "她尽力克服了所有挑战，感到非常自豪。",
+        "她克服了尽力所有挑战，感到非常自豪。",
+        "所有挑战她尽力克服了，非常自豪感到。",
+        "非常自豪她尽力，所有挑战克服了感到。"
+      ],
+      "word_hints": {"克服": "kè fú", "挑战": "tiǎo zhàn", "自豪": "zì háo"}
+    },
+    {
+      "question": "What does 坚持 mean?",
+      "type": "multiple_choice",
+      "correct": "To persist; to persevere",
+      "options": ["To persist; to persevere", "To overcome", "To feel proud", "To achieve a breakthrough"],
+      "word_hints": {"坚持": "jiān chí"}
+    },
+    {
+      "question": "What does the phrase 实现目标 mean?",
+      "type": "multiple_choice",
+      "correct": "To achieve one's goal",
+      "options": ["To achieve one's goal", "To overcome a challenge", "To inspire others", "To feel proud"],
+      "word_hints": {"实现": "shí xiàn", "目标": "mù biāo"}
+    },
+    {
+      "question": "What does 挑战 mean?",
+      "type": "multiple_choice",
+      "correct": "Challenge; to challenge",
+      "options": ["Challenge; to challenge", "Breakthrough", "Achievement", "Motivation"],
+      "word_hints": {"挑战": "tiǎo zhàn"}
+    },
+    {
+      "question": "Which phrase means 'to strive for one's dream'?",
+      "type": "multiple_choice",
+      "correct": "为梦想奋斗",
+      "options": ["为梦想奋斗", "感到自豪", "激励他人", "克服挑战"],
+      "word_hints": {"奋斗": "fèn dòu"}
+    },
+    {
+      "question": "What does 努力 mean?",
+      "type": "multiple_choice",
+      "correct": "To work hard; hard-working; effort",
+      "options": ["To work hard; hard-working; effort", "To overcome", "To inspire", "To strive"],
+      "word_hints": {"努力": "nǔ lì"}
+    },
+    {
+      "question": "The idiom 天道酬勤 means:",
+      "type": "multiple_choice",
+      "correct": "Heaven rewards the diligent — hard work is always rewarded",
+      "options": [
+        "Heaven rewards the diligent — hard work is always rewarded",
+        "Success comes only from natural talent",
+        "Challenges are impossible to overcome",
+        "Hard work leads to exhaustion"
+      ],
+      "word_hints": {"天道酬勤": "tiān dào chóu qín"}
+    },
+    {
+      "question": "What does the phrase 感到自豪 mean?",
+      "type": "multiple_choice",
+      "correct": "To feel proud",
+      "options": ["To feel proud", "To feel inspired", "To feel challenged", "To feel motivated"],
+      "word_hints": {"自豪": "zì háo"}
+    },
+    {
+      "question": "Which grammar pattern means 'regardless of; no matter what, all…'?",
+      "type": "multiple_choice",
+      "correct": "不论…都…",
+      "options": ["不论…都…", "凭借", "尽力", "为梦想奋斗"],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "A Team's Big Achievement",
+      "title_chinese": "团队的重大成就",
+      "speakers": {
+        "A": {"name": "海涛", "role": "项目经理", "gender": "male"},
+        "B": {"name": "小芳", "role": "团队成员", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "小芳，我们团队这次成功取得了突破，完成了这么大的项目，你有什么感受？",
+          "pinyin": "Xiǎo Fāng, wǒ men tuán duì zhè cì chéng gōng qǔ dé le tū pò, wán chéng le zhè me dà de xiàng mù, nǐ yǒu shén me gǎn shòu?",
+          "english": "Xiaoafang, our team successfully achieved a breakthrough and completed such a big project. How do you feel?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我感到非常自豪！不论遇到多少挑战，大家都坚持下来了，真了不起。",
+          "pinyin": "Wǒ gǎn dào fēi cháng zì háo! Bú lùn yù dào duō shǎo tiǎo zhàn, dà jiā dōu jiān chí xià lái le, zhēn liǎo bù qǐ.",
+          "english": "I feel very proud! No matter how many challenges we encountered, everyone persisted — truly remarkable."
+        },
+        {
+          "speaker": "A",
+          "chinese": "是啊，凭借团队的力量和每个人的努力，我们克服了一个又一个难题。",
+          "pinyin": "Shì a, píng jiè tuán duì de lì liàng hé měi gè rén de nǔ lì, wǒ men kè fú le yí gè yòu yí gè nán tí.",
+          "english": "Yes, relying on the team's strength and everyone's effort, we overcame one difficulty after another."
+        },
+        {
+          "speaker": "B",
+          "chinese": "这次的成就也激励了我，让我知道只要尽力奋斗，就能实现目标。",
+          "pinyin": "Zhè cì de chéng jiù yě jī lì le wǒ, ràng wǒ zhī dào zhǐ yào jìn lì fèn dòu, jiù néng shí xiàn mù biāo.",
+          "english": "This achievement has also motivated me, making me understand that as long as you strive with all your effort, you can achieve your goal."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你在整个过程中一直尽力，这是大家都看得到的。",
+          "pinyin": "Nǐ zài zhěng gè guò chéng zhōng yī zhí jìn lì, zhè shì dà jiā dōu kàn dé dào de.",
+          "english": "Throughout the whole process you always gave your best — everyone could see that."
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢海涛！这次突破也让我对未来的挑战更有信心了。",
+          "pinyin": "Xiè xie Hǎi Tāo! Zhè cì tū pò yě ràng wǒ duì wèi lái de tiǎo zhàn gèng yǒu xìn xīn le.",
+          "english": "Thank you, Haitao! This breakthrough has also given me more confidence to face future challenges."
+        },
+        {
+          "speaker": "A",
+          "chinese": "很好！不论未来遇到什么困难，只要我们继续努力奋斗，就一定能取得更大的成就。",
+          "pinyin": "Hěn hǎo! Bú lùn wèi lái yù dào shén me kùn nán, zhǐ yào wǒ men jì xù nǔ lì fèn dòu, jiù yí dìng néng qǔ dé gèng dà de chéng jiù.",
+          "english": "Excellent! Regardless of what difficulties we face in the future, as long as we continue to work hard and strive, we will definitely achieve even greater accomplishments."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "An Athlete's Journey",
+      "title_chinese": "一位运动员的奋斗之路",
+      "speakers": {
+        "A": {"name": "记者", "role": "记者", "gender": "female"},
+        "B": {"name": "李强", "role": "运动员", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "李强，你这次赢得了冠军，取得了这么大的成就，能分享一下你的奋斗历程吗？",
+          "pinyin": "Lǐ Qiáng, nǐ zhè cì yíng dé le guàn jūn, qǔ dé le zhè me dà de chéng jiù, néng fēn xiǎng yī xià nǐ de fèn dòu lì chéng ma?",
+          "english": "Li Qiang, you won the championship this time and achieved such a great accomplishment. Could you share your journey of striving?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "当然！其实这条路很艰辛。不论遇到多大的挫折，我都坚持训练，从不轻言放弃。",
+          "pinyin": "Dāng rán! Qí shí zhè tiáo lù hěn jiān xīn. Bú lùn yù dào duō dà de cuò zhé, wǒ dōu jiān chí xùn liàn, cóng bù qīng yán fàng qì.",
+          "english": "Of course! Actually this path was very tough. No matter how great the setbacks I encountered, I always kept training and never easily talked about giving up."
+        },
+        {
+          "speaker": "A",
+          "chinese": "您是凭借什么克服那些挑战的呢？",
+          "pinyin": "Nín shì píng jiè shén me kè fú nà xiē tiǎo zhàn de ne?",
+          "english": "What did you rely on to overcome those challenges?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "主要是凭借对目标的坚定信念，以及教练和家人的支持。他们一直激励着我。",
+          "pinyin": "Zhǔ yào shì píng jiè duì mù biāo de jiān dìng xìn niàn, yǐ jí jiào liàn hé jiā rén de zhī chí. Tā men yī zhí jī lì zhe wǒ.",
+          "english": "Mainly by relying on my firm belief in my goal, as well as the support of my coach and family. They always inspired me."
+        },
+        {
+          "speaker": "A",
+          "chinese": "取得这次突破，你一定感到非常自豪吧？",
+          "pinyin": "Qǔ dé zhè cì tū pò, nǐ yī dìng gǎn dào fēi cháng zì háo ba?",
+          "english": "Having achieved this breakthrough, you must feel very proud, right?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "是的，非常自豪！但更重要的是，我希望我的经历能激励更多年轻人为梦想奋斗。",
+          "pinyin": "Shì de, fēi cháng zì háo! Dàn gèng zhòng yào de shì, wǒ xī wàng wǒ de jīng lì néng jī lì gèng duō nián qīng rén wèi mèng xiǎng fèn dòu.",
+          "english": "Yes, very proud! But more importantly, I hope my experience can inspire more young people to strive for their dreams."
+        },
+        {
+          "speaker": "A",
+          "chinese": "最后，您想对那些正在追求目标的年轻人说什么？",
+          "pinyin": "Zuì hòu, nín xiǎng duì nà xiē zhèng zài zhuī qiú mù biāo de nián qīng rén shuō shén me?",
+          "english": "Finally, what would you like to say to young people who are currently pursuing their goals?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "不论遇到什么困难，都要尽力去克服。只要坚持努力，就一定能实现目标，取得属于自己的成就！",
+          "pinyin": "Bú lùn yù dào shén me kùn nán, dōu yào jìn lì qù kè fú. Zhǐ yào jiān chí nǔ lì, jiù yí dìng néng shí xiàn mù biāo, qǔ dé shǔ yú zì jǐ de chéng jiù!",
+          "english": "No matter what difficulties you encounter, do your best to overcome them. As long as you persist and work hard, you will definitely achieve your goal and attain the accomplishments that belong to you!"
+        }
+      ]
+    }
+  ]
+}

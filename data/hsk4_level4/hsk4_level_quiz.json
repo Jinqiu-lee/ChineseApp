@@ -9,12 +9,22 @@
   "questions": [
     {
       "id": "hsk4_final_01",
-      "question": "他们第一次见面就___了，很快就开始约会。",
-      "question_pinyin": "Tā men dì yī cì jiàn miàn jiù ___ le, hěn kuài jiù kāi shǐ yuē huì.",
+      "question": "他们第一次见面就觉得很___，很快就开始约会。",
+      "question_pinyin": "Tā men dì yī cì jiàn miàn jiù jué de hěn ___, hěn kuài jiù kāi shǐ yuē huì.",
       "type": "multiple_choice",
       "correct": "感动",
-      "options": ["感动", "骄傲", "抱", "表示"],
-      "option_pinyin": ["gǎn dòng", "jiāo ào", "bào", "biǎo shì"],
+      "options": [
+        "抱",
+        "骄傲",
+        "表示",
+        "感动"
+      ],
+      "option_pinyin": [
+        "bào",
+        "jiāo ào",
+        "biǎo shì",
+        "gǎn dòng"
+      ],
       "correct_pinyin": "gǎn dòng",
       "difficulty": "easy",
       "lesson_reference": 1
@@ -24,7 +34,12 @@
       "question": "What does 浪漫 mean?",
       "type": "multiple_choice",
       "correct": "Romantic",
-      "options": ["Romantic", "Lonely", "Brave", "Generous"],
+      "options": [
+        "Generous",
+        "Brave",
+        "Romantic",
+        "Lonely"
+      ],
       "difficulty": "easy",
       "lesson_reference": 1
     },
@@ -34,16 +49,16 @@
       "type": "multiple_choice",
       "correct": "他不仅幽默，而且非常体贴。",
       "options": [
-        "他不仅幽默，而且非常体贴。",
         "他不仅幽默，但是非常体贴。",
+        "他不仅幽默，然后非常体贴。",
         "他幽默不仅，而且非常体贴。",
-        "他不仅幽默，然后非常体贴。"
+        "他不仅幽默，而且非常体贴。"
       ],
       "option_pinyin": [
-        "Tā bù jǐn yōu mò, ér qiě fēi cháng tǐ tiē.",
         "Tā bù jǐn yōu mò, dàn shì fēi cháng tǐ tiē.",
+        "Tā bù jǐn yōu mò, rán hòu fēi cháng tǐ tiē.",
         "Tā yōu mò bù jǐn, ér qiě fēi cháng tǐ tiē.",
-        "Tā bù jǐn yōu mò, rán hòu fēi cháng tǐ tiē."
+        "Tā bù jǐn yōu mò, ér qiě fēi cháng tǐ tiē."
       ],
       "correct_pinyin": "Tā bù jǐn yōu mò, ér qiě fēi cháng tǐ tiē.",
       "difficulty": "hard",
@@ -51,12 +66,22 @@
     },
     {
       "id": "hsk4_final_04",
-      "question": "他从来不___别人，总是说实话。",
-      "question_pinyin": "Tā cóng lái bù ___ bié rén, zǒng shì shuō shí huà.",
+      "question": "他从来不会___别人，总是说实话。",
+      "question_pinyin": "Tā cóng lái bú huì ___ bié rén, zǒng shì shuō shí huà.",
       "type": "multiple_choice",
       "correct": "误会",
-      "options": ["误会", "道歉", "联系", "支持"],
-      "option_pinyin": ["wù huì", "dào qiàn", "lián xì", "zhī chí"],
+      "options": [
+        "道歉",
+        "联系",
+        "误会",
+        "支持"
+      ],
+      "option_pinyin": [
+        "dào qiàn",
+        "lián xì",
+        "wù huì",
+        "zhī chí"
+      ],
       "correct_pinyin": "wù huì",
       "difficulty": "easy",
       "lesson_reference": 2
@@ -66,7 +91,12 @@
       "question": "What does 诚实 mean?",
       "type": "multiple_choice",
       "correct": "Honest",
-      "options": ["Honest", "Stubborn", "Friendly", "Careful"],
+      "options": [
+        "Stubborn",
+        "Friendly",
+        "Careful",
+        "Honest"
+      ],
       "difficulty": "easy",
       "lesson_reference": 2
     },
@@ -76,16 +106,16 @@
       "type": "multiple_choice",
       "correct": "他答应来，却没有出现。",
       "options": [
-        "他答应来，却没有出现。",
         "他答应来，却是没有出现。",
+        "他答应来，但却了没有出现。",
         "他却答应来，没有出现。",
-        "他答应来，但却了没有出现。"
+        "他答应来，却没有出现。"
       ],
       "option_pinyin": [
-        "Tā dā ying lái, què méi yǒu chū xiàn.",
         "Tā dā ying lái, què shì méi yǒu chū xiàn.",
+        "Tā dā ying lái, dàn què le méi yǒu chū xiàn.",
         "Tā què dā ying lái, méi yǒu chū xiàn.",
-        "Tā dā ying lái, dàn què le méi yǒu chū xiàn."
+        "Tā dā ying lái, què méi yǒu chū xiàn."
       ],
       "correct_pinyin": "Tā dā ying lái, què méi yǒu chū xiàn.",
       "difficulty": "medium",
@@ -97,8 +127,18 @@
       "question_pinyin": "Zài huì yì shàng, tā ___ le zì jǐ de jì huà, dà jiā dōu tīng dǒng le.",
       "type": "multiple_choice",
       "correct": "说明",
-      "options": ["说明", "翻译", "批评", "表扬"],
-      "option_pinyin": ["shuō míng", "fān yì", "pī píng", "biǎo yáng"],
+      "options": [
+        "批评",
+        "翻译",
+        "说明",
+        "表扬"
+      ],
+      "option_pinyin": [
+        "pī píng",
+        "fān yì",
+        "shuō míng",
+        "biǎo yáng"
+      ],
       "correct_pinyin": "shuō míng",
       "difficulty": "easy",
       "lesson_reference": 3
@@ -108,7 +148,12 @@
       "question": "What does 礼貌 mean?",
       "type": "multiple_choice",
       "correct": "Polite / Politeness",
-      "options": ["Polite / Politeness", "Direct", "Detailed", "Patient"],
+      "options": [
+        "Direct",
+        "Patient",
+        "Polite / Politeness",
+        "Detailed"
+      ],
       "difficulty": "easy",
       "lesson_reference": 3
     },
@@ -119,14 +164,14 @@
       "correct": "请问您是否方便现在接听电话？",
       "options": [
         "请问您是否方便现在接听电话？",
-        "请问您是否的方便现在接听电话？",
         "请问您是否了方便现在接听电话？",
+        "请问您是否的方便现在接听电话？",
         "请问您方便是否现在接听电话？"
       ],
       "option_pinyin": [
         "Qǐng wèn nín shì fǒu fāng biàn xiàn zài jiē tīng diàn huà?",
-        "Qǐng wèn nín shì fǒu de fāng biàn xiàn zài jiē tīng diàn huà?",
         "Qǐng wèn nín shì fǒu le fāng biàn xiàn zài jiē tīng diàn huà?",
+        "Qǐng wèn nín shì fǒu de fāng biàn xiàn zài jiē tīng diàn huà?",
         "Qǐng wèn nín fāng biàn shì fǒu xiàn zài jiē tīng diàn huà?"
       ],
       "correct_pinyin": "Qǐng wèn nín shì fǒu fāng biàn xiàn zài jiē tīng diàn huà?",
@@ -135,12 +180,22 @@
     },
     {
       "id": "hsk4_final_10",
-      "question": "他通过努力学习，终于___成为了一名医生。",
-      "question_pinyin": "Tā tōng guò nǔ lì xué xí, zhōng yú ___ chéng wéi le yī míng yī shēng.",
+      "question": "他通过努力学习，终于___地成为了一名医生。",
+      "question_pinyin": "Tā tōng guò nǔ lì xué xí, zhōng yú ___ de chéng wéi le yī míng yī shēng.",
       "type": "multiple_choice",
       "correct": "成功",
-      "options": ["成功", "招聘", "应聘", "负责"],
-      "option_pinyin": ["chéng gōng", "zhāo pìn", "yìng pìn", "fù zé"],
+      "options": [
+        "应聘",
+        "负责",
+        "成功",
+        "招聘"
+      ],
+      "option_pinyin": [
+        "yìng pìn",
+        "fù zé",
+        "chéng gōng",
+        "zhāo pìn"
+      ],
       "correct_pinyin": "chéng gōng",
       "difficulty": "easy",
       "lesson_reference": 4
@@ -150,7 +205,12 @@
       "question": "What does 经验 mean?",
       "type": "multiple_choice",
       "correct": "Experience (accumulated)",
-      "options": ["Experience (accumulated)", "Career", "Responsibility", "Technology"],
+      "options": [
+        "Responsibility",
+        "Career",
+        "Technology",
+        "Experience (accumulated)"
+      ],
       "difficulty": "easy",
       "lesson_reference": 4
     },
@@ -160,16 +220,16 @@
       "type": "multiple_choice",
       "correct": "他负责管理这个项目。",
       "options": [
-        "他负责管理这个项目。",
-        "他负责的管理这个项目。",
+        "他是负责了管理这个项目。",
         "他管理负责这个项目。",
-        "他是负责了管理这个项目。"
+        "他负责的管理这个项目。",
+        "他负责管理这个项目。"
       ],
       "option_pinyin": [
-        "Tā fù zé guǎn lǐ zhè ge xiàng mù.",
-        "Tā fù zé de guǎn lǐ zhè ge xiàng mù.",
+        "Tā shì fù zé le guǎn lǐ zhè ge xiàng mù.",
         "Tā guǎn lǐ fù zé zhè ge xiàng mù.",
-        "Tā shì fù zé le guǎn lǐ zhè ge xiàng mù."
+        "Tā fù zé de guǎn lǐ zhè ge xiàng mù.",
+        "Tā fù zé guǎn lǐ zhè ge xiàng mù."
       ],
       "correct_pinyin": "Tā fù zé guǎn lǐ zhè ge xiàng mù.",
       "difficulty": "medium",
@@ -177,12 +237,22 @@
     },
     {
       "id": "hsk4_final_13",
-      "question": "他每个月___了一部分工资，准备买房子。",
-      "question_pinyin": "Tā měi ge yuè ___ le yī bù fen gōng zī, zhǔn bèi mǎi fáng zi.",
+      "question": "他每个月 ___ 一部分工资，准备买房子。",
+      "question_pinyin": "Tā měi ge yuè ___ yī bù fen gōng zī, zhǔn bèi mǎi fáng zi.",
       "type": "multiple_choice",
       "correct": "存",
-      "options": ["存", "赚", "浪费", "付款"],
-      "option_pinyin": ["cún", "zhuàn", "làng fèi", "fù kuǎn"],
+      "options": [
+        "付款",
+        "赚",
+        "存",
+        "浪费"
+      ],
+      "option_pinyin": [
+        "fù kuǎn",
+        "zhuàn",
+        "cún",
+        "làng fèi"
+      ],
       "correct_pinyin": "cún",
       "difficulty": "easy",
       "lesson_reference": 5
@@ -192,7 +262,12 @@
       "question": "What does 奖金 mean?",
       "type": "multiple_choice",
       "correct": "Bonus",
-      "options": ["Bonus", "Salary", "Income", "Change (coins)"],
+      "options": [
+        "Income",
+        "Change (coins)",
+        "Salary",
+        "Bonus"
+      ],
       "difficulty": "easy",
       "lesson_reference": 5
     },
@@ -204,14 +279,14 @@
       "options": [
         "既然你已经决定了，就不要后悔。",
         "既然你已经决定了，但就不要后悔。",
-        "你既然已经决定了，不就要后悔。",
-        "既然你已经决定，就了不要后悔。"
+        "既然你已经决定，就了不要后悔。",
+        "你既然已经决定了，不就要后悔。"
       ],
       "option_pinyin": [
         "Jì rán nǐ yǐ jīng jué dìng le, jiù bú yào hòu huǐ.",
         "Jì rán nǐ yǐ jīng jué dìng le, dàn jiù bú yào hòu huǐ.",
-        "Nǐ jì rán yǐ jīng jué dìng le, bù jiù yào hòu huǐ.",
-        "Jì rán nǐ yǐ jīng jué dìng, jiù le bú yào hòu huǐ."
+        "Jì rán nǐ yǐ jīng jué dìng, jiù le bú yào hòu huǐ.",
+        "Nǐ jì rán yǐ jīng jué dìng le, bù jiù yào hòu huǐ."
       ],
       "correct_pinyin": "Jì rán nǐ yǐ jīng jué dìng le, jiù bú yào hòu huǐ.",
       "difficulty": "hard",
@@ -223,8 +298,18 @@
       "question_pinyin": "Zhè jiàn yī fu ___ le, yuán lái bā bǎi yuán, xiàn zài zhǐ yào liù bǎi.",
       "type": "multiple_choice",
       "correct": "打折",
-      "options": ["打折", "免费", "合适", "逛"],
-      "option_pinyin": ["dǎ zhé", "miǎn fèi", "hé shì", "guàng"],
+      "options": [
+        "逛",
+        "打折",
+        "合适",
+        "免费"
+      ],
+      "option_pinyin": [
+        "guàng",
+        "dǎ zhé",
+        "hé shì",
+        "miǎn fèi"
+      ],
       "correct_pinyin": "dǎ zhé",
       "difficulty": "easy",
       "lesson_reference": 6
@@ -234,7 +319,12 @@
       "question": "What does 缺点 mean?",
       "type": "multiple_choice",
       "correct": "Disadvantage / Shortcoming",
-      "options": ["Disadvantage / Shortcoming", "Advantage", "Quality", "Material"],
+      "options": [
+        "Advantage",
+        "Material",
+        "Quality",
+        "Disadvantage / Shortcoming"
+      ],
       "difficulty": "easy",
       "lesson_reference": 6
     },
@@ -244,16 +334,16 @@
       "type": "multiple_choice",
       "correct": "这本书值得一读，内容非常有趣。",
       "options": [
-        "这本书值得一读，内容非常有趣。",
         "这本书值得了一读，内容非常有趣。",
-        "这本书是值得读一，内容非常有趣。",
-        "这本书值得，内容非常有趣，一读。"
+        "这本书值得，内容非常有趣，一读。",
+        "这本书值得一读，内容非常有趣。",
+        "这本书是值得读一，内容非常有趣。"
       ],
       "option_pinyin": [
-        "Zhè běn shū zhí dé yī dú, nèi róng fēi cháng yǒu qù.",
-        "Zhè běn shū zhí dé le yī dú, nèi róng fēi cháng yǒu qù.",
-        "Zhè běn shū shì zhí dé dú yī, nèi róng fēi cháng yǒu qù.",
-        "Zhè běn shū zhí dé, nèi róng fēi cháng yǒu qù, yī dú."
+        "Zhè běn shū zhí dé le yì dú, nèi róng fēi cháng yǒu qù.",
+        "Zhè běn shū zhí dé, nèi róng fēi cháng yǒu qù, yì dú.",
+        "Zhè běn shū zhí dé yì dú, nèi róng fēi cháng yǒu qù.",
+        "Zhè běn shū shì zhí dé dú yì, nèi róng fēi cháng yǒu qù."
       ],
       "correct_pinyin": "Zhè běn shū zhí dé yī dú, nèi róng fēi cháng yǒu qù.",
       "difficulty": "medium",
@@ -265,8 +355,18 @@
       "question_pinyin": "Zhè ge chǎn pǐn ___ guó jiā biāo zhǔn, kě yǐ fàng xīn shǐ yòng.",
       "type": "multiple_choice",
       "correct": "符合",
-      "options": ["符合", "判断", "区别", "相反"],
-      "option_pinyin": ["fú hé", "pàn duàn", "qū bié", "xiāng fǎn"],
+      "options": [
+        "相反",
+        "区别",
+        "判断",
+        "符合"
+      ],
+      "option_pinyin": [
+        "xiāng fǎn",
+        "qū bié",
+        "pàn duàn",
+        "fú hé"
+      ],
       "correct_pinyin": "fú hé",
       "difficulty": "easy",
       "lesson_reference": 7
@@ -276,7 +376,12 @@
       "question": "What does 确实 mean?",
       "type": "multiple_choice",
       "correct": "Indeed / Truly",
-      "options": ["Indeed / Truly", "Possibly", "Generally", "Correctly"],
+      "options": [
+        "Indeed / Truly",
+        "Possibly",
+        "Generally",
+        "Correctly"
+      ],
       "difficulty": "easy",
       "lesson_reference": 7
     },
@@ -287,15 +392,15 @@
       "correct": "不管天气怎么样，他都会去跑步。",
       "options": [
         "不管天气怎么样，他都会去跑步。",
-        "不管天气怎么样，他也会去跑步。",
         "不管天气怎么样都，他会去跑步。",
-        "他不管天气怎么样，都了去跑步。"
+        "他不管天气怎么样，都了去跑步。",
+        "不管天气怎么样，他也会去跑步。"
       ],
       "option_pinyin": [
         "Bù guǎn tiān qì zěn me yàng, tā dōu huì qù pǎo bù.",
-        "Bù guǎn tiān qì zěn me yàng, tā yě huì qù pǎo bù.",
         "Bù guǎn tiān qì zěn me yàng dōu, tā huì qù pǎo bù.",
-        "Tā bù guǎn tiān qì zěn me yàng, dōu le qù pǎo bù."
+        "Tā bù guǎn tiān qì zěn me yàng, dōu le qù pǎo bù.",
+        "Bù guǎn tiān qì zěn me yàng, tā yě huì qù pǎo bù."
       ],
       "correct_pinyin": "Bù guǎn tiān qì zěn me yàng, tā dōu huì qù pǎo bù.",
       "difficulty": "hard",
@@ -303,12 +408,22 @@
     },
     {
       "id": "hsk4_final_22",
-      "question": "孩子发烧了，妈妈带他去___打针。",
-      "question_pinyin": "Hái zi fā shāo le, mā ma dài tā qù ___ dǎ zhēn.",
+      "question": "孩子发烧了，妈妈带他去找___打针。",
+      "question_pinyin": "Hái zi fā shāo le, mā ma dài tā qù zhǎo ___ dǎ zhēn.",
       "type": "multiple_choice",
       "correct": "大夫",
-      "options": ["大夫", "护士", "皮肤", "肚子"],
-      "option_pinyin": ["dài fu", "hù shi", "pí fū", "dù zi"],
+      "options": [
+        "大夫",
+        "肚子",
+        "皮肤",
+        "护士"
+      ],
+      "option_pinyin": [
+        "dài fu",
+        "dù zi",
+        "pí fū",
+        "hù shi"
+      ],
       "correct_pinyin": "dài fu",
       "difficulty": "easy",
       "lesson_reference": 8
@@ -318,7 +433,12 @@
       "question": "What does 减肥 mean?",
       "type": "multiple_choice",
       "correct": "To lose weight",
-      "options": ["To lose weight", "To exercise", "To rest", "To sweat"],
+      "options": [
+        "To exercise",
+        "To sweat",
+        "To rest",
+        "To lose weight"
+      ],
       "difficulty": "easy",
       "lesson_reference": 8
     },
@@ -328,16 +448,16 @@
       "type": "multiple_choice",
       "correct": "已经八点了，我来不及吃早饭了。",
       "options": [
-        "已经八点了，我来不及吃早饭了。",
-        "已经八点了，我不来及吃早饭了。",
         "已经八点了，我来得及不吃早饭了。",
-        "已经八点了，我来不及了吃早饭。"
+        "已经八点了，我来不及了吃早饭。",
+        "已经八点了，我来不及吃早饭了。",
+        "已经八点了，我不来及吃早饭了。"
       ],
       "option_pinyin": [
-        "Yǐ jīng bā diǎn le, wǒ lái bu jí chī zǎo fàn le.",
-        "Yǐ jīng bā diǎn le, wǒ bù lái jí chī zǎo fàn le.",
         "Yǐ jīng bā diǎn le, wǒ lái de jí bù chī zǎo fàn le.",
-        "Yǐ jīng bā diǎn le, wǒ lái bu jí le chī zǎo fàn."
+        "Yǐ jīng bā diǎn le, wǒ lái bu jí le chī zǎo fàn.",
+        "Yǐ jīng bā diǎn le, wǒ lái bu jí chī zǎo fàn le.",
+        "Yǐ jīng bā diǎn le, wǒ bù lái jí chī zǎo fàn le."
       ],
       "correct_pinyin": "Yǐ jīng bā diǎn le, wǒ lái bu jí chī zǎo fàn le.",
       "difficulty": "medium",
@@ -345,12 +465,22 @@
     },
     {
       "id": "hsk4_final_25",
-      "question": "她___每天早起锻炼，已经坚持了一年。",
-      "question_pinyin": "Tā ___ měi tiān zǎo qǐ duàn liàn, yǐ jīng jiān chí le yī nián.",
+      "question": "她___每天早起锻炼的习惯，已经坚持了一年。",
+      "question_pinyin": "Tā ___ měi tiān zǎo qǐ duàn liàn de xí guàn, yǐ jīng jiān chí le yī nián.",
       "type": "multiple_choice",
       "correct": "养成",
-      "options": ["养成", "改变", "减少", "积累"],
-      "option_pinyin": ["yǎng chéng", "gǎi biàn", "jiǎn shǎo", "jī lěi"],
+      "options": [
+        "减少",
+        "养成",
+        "改变",
+        "积累"
+      ],
+      "option_pinyin": [
+        "jiǎn shǎo",
+        "yǎng chéng",
+        "gǎi biàn",
+        "jī lěi"
+      ],
       "correct_pinyin": "yǎng chéng",
       "difficulty": "easy",
       "lesson_reference": 9
@@ -360,7 +490,12 @@
       "question": "What does 偶尔 mean?",
       "type": "multiple_choice",
       "correct": "Occasionally / Once in a while",
-      "options": ["Occasionally / Once in a while", "Always", "Never", "Often"],
+      "options": [
+        "Always",
+        "Often",
+        "Occasionally / Once in a while",
+        "Never"
+      ],
       "difficulty": "easy",
       "lesson_reference": 9
     },
@@ -370,16 +505,16 @@
       "type": "multiple_choice",
       "correct": "他往往在压力大的时候去散步。",
       "options": [
-        "他往往在压力大的时候去散步。",
-        "他往往了在压力大的时候去散步。",
+        "他去散步往往在压力大的时候。",
         "他在往往压力大的时候去散步。",
-        "他去散步往往在压力大的时候。"
+        "他往往了在压力大的时候去散步。",
+        "他往往在压力大的时候去散步。"
       ],
       "option_pinyin": [
-        "Tā wǎng wǎng zài yā lì dà de shí hòu qù sàn bù.",
-        "Tā wǎng wǎng le zài yā lì dà de shí hòu qù sàn bù.",
+        "Tā qù sàn bù wǎng wǎng zài yā lì dà de shí hòu.",
         "Tā zài wǎng wǎng yā lì dà de shí hòu qù sàn bù.",
-        "Tā qù sàn bù wǎng wǎng zài yā lì dà de shí hòu."
+        "Tā wǎng wǎng le zài yā lì dà de shí hòu qù sàn bù.",
+        "Tā wǎng wǎng zài yā lì dà de shí hòu qù sàn bù."
       ],
       "correct_pinyin": "Tā wǎng wǎng zài yā lì dà de shí hòu qù sàn bù.",
       "difficulty": "medium",
@@ -387,12 +522,22 @@
     },
     {
       "id": "hsk4_final_28",
-      "question": "___破坏越来越严重，地球的温度不断升高。",
-      "question_pinyin": "___ pò huài yuè lái yuè yán zhòng, dì qiú de wēn dù bù duàn shēng gāo.",
+      "question": "环境___越来越严重，地球的温度不断升高。",
+      "question_pinyin": "huán jìng ___ yuè lái yuè yán zhòng, dì qiú de wēn dù bù duàn shēng gāo.",
       "type": "multiple_choice",
       "correct": "污染",
-      "options": ["污染", "阳光", "森林", "云"],
-      "option_pinyin": ["wū rǎn", "yáng guāng", "sēn lín", "yún"],
+      "options": [
+        "阳光",
+        "云",
+        "污染",
+        "森林"
+      ],
+      "option_pinyin": [
+        "yáng guāng",
+        "yún",
+        "wū rǎn",
+        "sēn lín"
+      ],
       "correct_pinyin": "wū rǎn",
       "difficulty": "easy",
       "lesson_reference": 10
@@ -402,7 +547,12 @@
       "question": "What does 气候 mean?",
       "type": "multiple_choice",
       "correct": "Climate",
-      "options": ["Climate", "Temperature", "Ocean", "Natural"],
+      "options": [
+        "Natural",
+        "Temperature",
+        "Climate",
+        "Ocean"
+      ],
       "difficulty": "easy",
       "lesson_reference": 10
     },
@@ -433,8 +583,18 @@
       "question_pinyin": "Zuì jìn qì wēn ___ le hěn duō, dà jiā yào duō jiā yī fu.",
       "type": "multiple_choice",
       "correct": "降低",
-      "options": ["降低", "增加", "发展", "出现"],
-      "option_pinyin": ["jiàng dī", "zēng jiā", "fā zhǎn", "chū xiàn"],
+      "options": [
+        "发展",
+        "降低",
+        "出现",
+        "增加"
+      ],
+      "option_pinyin": [
+        "fā zhǎn",
+        "jiàng dī",
+        "chū xiàn",
+        "zēng jiā"
+      ],
       "correct_pinyin": "jiàng dī",
       "difficulty": "easy",
       "lesson_reference": 11
@@ -444,7 +604,12 @@
       "question": "What does 仍然 mean?",
       "type": "multiple_choice",
       "correct": "Still / As before",
-      "options": ["Still / As before", "Suddenly", "Already", "Perhaps"],
+      "options": [
+        "Still / As before",
+        "Perhaps",
+        "Already",
+        "Suddenly"
+      ],
       "difficulty": "easy",
       "lesson_reference": 11
     },
@@ -460,12 +625,12 @@
         "只要你坚持练习，就一定进步了会。"
       ],
       "option_pinyin": [
-        "Zhǐ yào nǐ jiān chí liàn xí, jiù yī dìng huì jìn bù.",
-        "Zhǐ yào nǐ jiān chí liàn xí, yě yī dìng huì jìn bù.",
-        "Nǐ zhǐ yào jiān chí liàn xí, dàn jiù yī dìng huì jìn bù.",
-        "Zhǐ yào nǐ jiān chí liàn xí, jiù yī dìng jìn bù le huì."
+        "Zhǐ yào nǐ jiān chí liàn xí, jiù yí dìng huì jìn bù.",
+        "Zhǐ yào nǐ jiān chí liàn xí, yě yí dìng huì jìn bù.",
+        "Nǐ zhǐ yào jiān chí liàn xí, dàn jiù yí dìng huì jìn bù.",
+        "Zhǐ yào nǐ jiān chí liàn xí, jiù yí dìng jìn bù le huì."
       ],
-      "correct_pinyin": "Zhǐ yào nǐ jiān chí liàn xí, jiù yī dìng huì jìn bù.",
+      "correct_pinyin": "Zhǐ yào nǐ jiān chí liàn xí, jiù yí dìng huì jìn bù.",
       "difficulty": "medium",
       "lesson_reference": 11
     },
@@ -475,8 +640,18 @@
       "question_pinyin": "Tā zài bǐ sài zhōng ___ le dì yī míng, dà jiā dōu wèi tā gǔ zhǎng.",
       "type": "multiple_choice",
       "correct": "获得",
-      "options": ["获得", "失败", "竟然", "重视"],
-      "option_pinyin": ["huò dé", "shī bài", "jìng rán", "zhòng shì"],
+      "options": [
+        "失败",
+        "重视",
+        "获得",
+        "竟然"
+      ],
+      "option_pinyin": [
+        "shī bài",
+        "zhòng shì",
+        "huò dé",
+        "jìng rán"
+      ],
       "correct_pinyin": "huò dé",
       "difficulty": "easy",
       "lesson_reference": 12
@@ -486,7 +661,12 @@
       "question": "What does 勇敢 mean?",
       "type": "multiple_choice",
       "correct": "Brave / Courageous",
-      "options": ["Brave / Courageous", "Persistent", "Positive", "Successful"],
+      "options": [
+        "Persistent",
+        "Positive",
+        "Brave / Courageous",
+        "Successful"
+      ],
       "difficulty": "easy",
       "lesson_reference": 12
     },
@@ -496,16 +676,16 @@
       "type": "multiple_choice",
       "correct": "即使遇到困难，他也不会放弃。",
       "options": [
-        "即使遇到困难，他也不会放弃。",
         "即使遇到困难，他就不会放弃。",
         "即使遇到了困难，他不也会放弃。",
-        "即使遇到困难，他还不会也放弃。"
+        "即使遇到困难，他还不会也放弃。",
+        "即使遇到困难，他也不会放弃。"
       ],
       "option_pinyin": [
-        "Jí shǐ yù dào kùn nán, tā yě bú huì fàng qì.",
         "Jí shǐ yù dào kùn nán, tā jiù bú huì fàng qì.",
         "Jí shǐ yù dào le kùn nán, tā bù yě huì fàng qì.",
-        "Jí shǐ yù dào kùn nán, tā hái bú huì yě fàng qì."
+        "Jí shǐ yù dào kùn nán, tā hái bú huì yě fàng qì.",
+        "Jí shǐ yù dào kùn nán, tā yě bú huì fàng qì."
       ],
       "correct_pinyin": "Jí shǐ yù dào kùn nán, tā yě bú huì fàng qì.",
       "difficulty": "hard",
@@ -514,11 +694,21 @@
     {
       "id": "hsk4_final_37",
       "question": "和家人在一起，她感到非常___。",
-      "question_pinyin": "Hé jiā rén zài yī qǐ, tā gǎn dào fēi cháng ___.",
+      "question_pinyin": "Hé jiā rén zài yì qǐ, tā gǎn dào fēi cháng ___.",
       "type": "multiple_choice",
       "correct": "幸福",
-      "options": ["幸福", "总结", "原来", "梦"],
-      "option_pinyin": ["xìng fú", "zǒng jié", "yuán lái", "mèng"],
+      "options": [
+        "总结",
+        "幸福",
+        "原来",
+        "梦"
+      ],
+      "option_pinyin": [
+        "zǒng jié",
+        "xìng fú",
+        "yuán lái",
+        "mèng"
+      ],
       "correct_pinyin": "xìng fú",
       "difficulty": "easy",
       "lesson_reference": 13
@@ -528,7 +718,12 @@
       "question": "What does 轻松 mean?",
       "type": "multiple_choice",
       "correct": "Relaxed / Easy",
-      "options": ["Relaxed / Easy", "Happy", "Grateful", "Ideal"],
+      "options": [
+        "Relaxed / Easy",
+        "Grateful",
+        "Happy",
+        "Ideal"
+      ],
       "difficulty": "easy",
       "lesson_reference": 13
     },
@@ -538,16 +733,16 @@
       "type": "multiple_choice",
       "correct": "对我来说，健康比金钱更重要。",
       "options": [
-        "对我来说，健康比金钱更重要。",
         "对于我来说，健康比金钱更重要的。",
-        "对我说来，健康比金钱更重要。",
-        "来对我说，健康比金钱更重要。"
+        "对我来说，健康比金钱更重要。",
+        "来对我说，健康比金钱更重要。",
+        "对我说来，健康比金钱更重要。"
       ],
       "option_pinyin": [
-        "Duì wǒ lái shuō, jiàn kāng bǐ jīn qián gèng zhòng yào.",
         "Duì yú wǒ lái shuō, jiàn kāng bǐ jīn qián gèng zhòng yào de.",
-        "Duì wǒ shuō lái, jiàn kāng bǐ jīn qián gèng zhòng yào.",
-        "Lái duì wǒ shuō, jiàn kāng bǐ jīn qián gèng zhòng yào."
+        "Duì wǒ lái shuō, jiàn kāng bǐ jīn qián gèng zhòng yào.",
+        "Lái duì wǒ shuō, jiàn kāng bǐ jīn qián gèng zhòng yào.",
+        "Duì wǒ shuō lái, jiàn kāng bǐ jīn qián gèng zhòng yào."
       ],
       "correct_pinyin": "Duì wǒ lái shuō, jiàn kāng bǐ jīn qián gèng zhòng yào.",
       "difficulty": "medium",
@@ -559,8 +754,18 @@
       "question_pinyin": "Měi ge gōng mín dōu yīng gāi zūn shǒu ___, bǎo hù tā rén de quán lì.",
       "type": "multiple_choice",
       "correct": "法律",
-      "options": ["法律", "责任", "知识", "艺术"],
-      "option_pinyin": ["fǎ lǜ", "zé rèn", "zhī shi", "yì shù"],
+      "options": [
+        "艺术",
+        "责任",
+        "知识",
+        "法律"
+      ],
+      "option_pinyin": [
+        "yì shù",
+        "zé rèn",
+        "zhī shi",
+        "fǎ lǜ"
+      ],
       "correct_pinyin": "fǎ lǜ",
       "difficulty": "easy",
       "lesson_reference": 14
@@ -570,7 +775,12 @@
       "question": "What does 民族 mean?",
       "type": "multiple_choice",
       "correct": "Ethnic group / Nation",
-      "options": ["Ethnic group / Nation", "Society", "Education", "International"],
+      "options": [
+        "International",
+        "Society",
+        "Ethnic group / Nation",
+        "Education"
+      ],
       "difficulty": "easy",
       "lesson_reference": 14
     },
@@ -580,15 +790,15 @@
       "type": "multiple_choice",
       "correct": "无论发生什么，我们都不能放弃责任。",
       "options": [
-        "无论发生什么，我们都不能放弃责任。",
-        "无论发生什么，我们也不能放弃责任。",
         "无论发生什么都，我们不能放弃责任。",
+        "无论发生什么，我们也不能放弃责任。",
+        "无论发生什么，我们都不能放弃责任。",
         "我们无论发生什么，都了不能放弃责任。"
       ],
       "option_pinyin": [
-        "Wú lùn fā shēng shén me, wǒ men dōu bù néng fàng qì zé rèn.",
-        "Wú lùn fā shēng shén me, wǒ men yě bù néng fàng qì zé rèn.",
         "Wú lùn fā shēng shén me dōu, wǒ men bù néng fàng qì zé rèn.",
+        "Wú lùn fā shēng shén me, wǒ men yě bù néng fàng qì zé rèn.",
+        "Wú lùn fā shēng shén me, wǒ men dōu bù néng fàng qì zé rèn.",
         "Wǒ men wú lùn fā shēng shén me, dōu le bù néng fàng qì zé rèn."
       ],
       "correct_pinyin": "Wú lùn fā shēng shén me, wǒ men dōu bù néng fàng qì zé rèn.",
@@ -597,12 +807,22 @@
     },
     {
       "id": "hsk4_final_43",
-      "question": "这部___非常___，吸引了很多观众来观看。",
-      "question_pinyin": "Zhè bù ___ fēi cháng ___, xī yǐn le hěn duō guān zhòng lái guān kàn.",
+      "question": "这场___非常___，吸引了很多观众来观看。",
+      "question_pinyin": "Zhè chǎng ___ fēi cháng ___, xī yǐn le hěn duō guān zhòng lái guān kàn.",
       "type": "multiple_choice",
       "correct": "演出 / 精彩",
-      "options": ["演出 / 精彩", "小说 / 著名", "功夫 / 优点", "杂志 / 合适"],
-      "option_pinyin": ["yǎn chū / jīng cǎi", "xiǎo shuō / zhù míng", "gōng fu / yōu diǎn", "zá zhì / hé shì"],
+      "options": [
+        "杂志 / 合适",
+        "小说 / 著名",
+        "功夫 / 优点",
+        "演出 / 精彩"
+      ],
+      "option_pinyin": [
+        "zá zhì / hé shì",
+        "xiǎo shuō / zhù míng",
+        "gōng fu / yōu diǎn",
+        "yǎn chū / jīng cǎi"
+      ],
       "correct_pinyin": "yǎn chū / jīng cǎi",
       "difficulty": "easy",
       "lesson_reference": 15
@@ -612,7 +832,12 @@
       "question": "What does 吸引 mean?",
       "type": "multiple_choice",
       "correct": "To attract",
-      "options": ["To attract", "To perform", "To read", "To publish"],
+      "options": [
+        "To publish",
+        "To attract",
+        "To read",
+        "To perform"
+      ],
       "difficulty": "easy",
       "lesson_reference": 15
     },
@@ -622,16 +847,16 @@
       "type": "multiple_choice",
       "correct": "她喜欢各种艺术，尤其是京剧。",
       "options": [
-        "她喜欢各种艺术，尤其是京剧。",
         "她喜欢各种艺术，尤其京剧是。",
-        "她尤其喜欢，各种艺术是京剧。",
-        "她喜欢各种艺术，是尤其京剧。"
+        "她喜欢各种艺术，尤其是京剧。",
+        "她喜欢各种艺术，是尤其京剧。",
+        "她尤其喜欢，各种艺术是京剧。"
       ],
       "option_pinyin": [
-        "Tā xǐ huan gè zhǒng yì shù, yóu qí shì jīng jù.",
         "Tā xǐ huan gè zhǒng yì shù, yóu qí jīng jù shì.",
-        "Tā yóu qí xǐ huan, gè zhǒng yì shù shì jīng jù.",
-        "Tā xǐ huan gè zhǒng yì shù, shì yóu qí jīng jù."
+        "Tā xǐ huan gè zhǒng yì shù, yóu qí shì jīng jù.",
+        "Tā xǐ huan gè zhǒng yì shù, shì yóu qí jīng jù.",
+        "Tā yóu qí xǐ huan, gè zhǒng yì shù shì jīng jù."
       ],
       "correct_pinyin": "Tā xǐ huan gè zhǒng yì shù, yóu qí shì jīng jù.",
       "difficulty": "medium",

@@ -1,0 +1,693 @@
+{
+  "lesson": 4,
+  "level": 5,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Food & Cuisine",
+  "topic_chinese": "饮食与美食",
+  "vocabulary": [
+    {
+      "id": "hsk5_l4_01",
+      "chinese": "菜肴",
+      "pinyin": "cài yáo",
+      "english": "Dish; prepared food",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l4_02",
+      "chinese": "食材",
+      "pinyin": "shí cái",
+      "english": "Ingredient; foodstuff",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l4_03",
+      "chinese": "调味",
+      "pinyin": "tiáo wèi",
+      "english": "To season; to flavour",
+      "part_of_speech": "verb"
+    },
+    {
+      "id": "hsk5_l4_04",
+      "chinese": "厨师",
+      "pinyin": "chú shī",
+      "english": "Chef; cook",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l4_05",
+      "chinese": "饮食",
+      "pinyin": "yǐn shí",
+      "english": "Diet; eating habits; food and drink",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l4_06",
+      "chinese": "营养",
+      "pinyin": "yíng yǎng",
+      "english": "Nutrition; nutritious",
+      "part_of_speech": "noun/adjective"
+    },
+    {
+      "id": "hsk5_l4_07",
+      "chinese": "口味",
+      "pinyin": "kǒu wèi",
+      "english": "Taste preference; flavour",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l4_08",
+      "chinese": "特色",
+      "pinyin": "tè sè",
+      "english": "Characteristic; special feature",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l4_09",
+      "chinese": "烹饪",
+      "pinyin": "pēng rèn",
+      "english": "Cooking; culinary arts",
+      "part_of_speech": "noun/verb"
+    },
+    {
+      "id": "hsk5_l4_10",
+      "chinese": "新鲜",
+      "pinyin": "xīn xiān",
+      "english": "Fresh",
+      "part_of_speech": "adjective"
+    },
+    {
+      "id": "hsk5_l4_11",
+      "chinese": "食谱",
+      "pinyin": "shí pǔ",
+      "english": "Recipe; cookbook",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l4_12",
+      "chinese": "美食",
+      "pinyin": "měi shí",
+      "english": "Delicious food; gourmet food",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l4_p01",
+      "chinese": "特色菜肴",
+      "pinyin": "tè sè cài yáo",
+      "english": "Signature dish; specialty dish",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l4_p02",
+      "chinese": "新鲜食材",
+      "pinyin": "xīn xiān shí cái",
+      "english": "Fresh ingredients",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l4_p03",
+      "chinese": "均衡饮食",
+      "pinyin": "jūn héng yǐn shí",
+      "english": "Balanced diet",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l4_p04",
+      "chinese": "烹饪技术",
+      "pinyin": "pēng rèn jì shù",
+      "english": "Cooking technique",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l4_p05",
+      "chinese": "品尝美食",
+      "pinyin": "pǐn cháng měi shí",
+      "english": "To taste delicious food",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l4_p06",
+      "chinese": "按照食谱做菜",
+      "pinyin": "àn zhào shí pǔ zuò cài",
+      "english": "To cook following a recipe",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "这道菜肴既新鲜又营养，是餐厅最受欢迎的特色菜。",
+      "pinyin": "Zhè dào cài yáo jì xīn xiān yòu yíng yǎng, shì cān tīng zuì shòu huān yíng de tè sè cài.",
+      "english": "This dish is both fresh and nutritious; it is the restaurant's most popular signature dish."
+    },
+    {
+      "chinese": "越用新鲜食材，菜的口味越好，这是厨师的基本原则。",
+      "pinyin": "Yuè yòng xīn xiān shí cái, cài de kǒu wèi yuè hǎo, zhè shì chú shī de jī běn yuán zé.",
+      "english": "The fresher the ingredients used, the better the flavour of the dish — this is a chef's basic principle."
+    },
+    {
+      "chinese": "厨师把食材切好以后，再按照食谱调味，最后大火翻炒。",
+      "pinyin": "Chú shī bǎ shí cái qiē hǎo yǐ hòu, zài àn zhào shí pǔ tiáo wèi, zuì hòu dà huǒ fān chǎo.",
+      "english": "After the chef cuts the ingredients, he seasons them according to the recipe, then stir-fries them over high heat."
+    },
+    {
+      "chinese": "均衡的饮食既能满足口味，又能保证每天所需的营养。",
+      "pinyin": "Jūn héng de yǐn shí jì néng mǎn zú kǒu wèi, yòu néng bǎo zhèng měi tiān suǒ xū de yíng yǎng.",
+      "english": "A balanced diet can both satisfy taste preferences and ensure the nutrition needed each day."
+    },
+    {
+      "chinese": "越了解烹饪技术，做出来的菜肴越有特色。",
+      "pinyin": "Yuè liǎo jiě pēng rèn jì shù, zuò chū lái de cài yáo yuè yǒu tè sè.",
+      "english": "The more you understand cooking techniques, the more distinctive the dishes you produce."
+    },
+    {
+      "chinese": "她把新鲜食材一一清洗干净，准备按照食谱烹饪一道传统美食。",
+      "pinyin": "Tā bǎ xīn xiān shí cái yī yī qīng xǐ gān jìng, zhǔn bèi àn zhào shí pǔ pēng rèn yī dào chuán tǒng měi shí.",
+      "english": "She washed all the fresh ingredients one by one and prepared to cook a traditional dish following a recipe."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "既...又... — Both...and... (e.g. 既新鲜又营养)",
+      "explanation": "既...又... is used to say that something has two positive qualities or characteristics at the same time. Both 既 and 又 are followed by adjectives or verbs. It is similar to 'both...and...' in English. Structure: Subject + 既 + quality A + 又 + quality B. Example: 这道菜既好吃又便宜。(This dish is both delicious and cheap.)",
+      "examples": [
+        {
+          "chinese": "这道菜肴既营养又美味，非常适合作为家常菜。",
+          "pinyin": "Zhè dào cài yáo jì yíng yǎng yòu měi wèi, fēi cháng shì hé zuò wéi jiā cháng cài.",
+          "english": "This dish is both nutritious and delicious; it is very suitable as a home-cooked meal."
+        },
+        {
+          "chinese": "均衡饮食既能保持健康，又能让人精力充沛。",
+          "pinyin": "Jūn héng yǐn shí jì néng bǎo chí jiàn kāng, yòu néng ràng rén jīng lì chōng pèi.",
+          "english": "A balanced diet can both maintain good health and keep a person full of energy."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "这道特色菜肴 _____ 好看 _____ 好吃，深受食客喜爱。",
+          "type": "multiple_choice",
+          "correct": "既…又…",
+          "options": ["既…又…", "不管…都…", "只有…才…", "随着…越来越…"],
+          "option_pinyin": ["jì...yòu...", "bù guǎn...dōu...", "zhǐ yǒu...cái...", "suí zhe...yuè lái yuè..."],
+          "word_hints": {"菜肴": "cài yáo", "特色": "tè sè"}
+        },
+        {
+          "question": "Choose the sentence that uses 既...又... correctly.",
+          "type": "multiple_choice",
+          "correct": "这家餐厅的菜肴既有特色又实惠。",
+          "options": [
+            "这家餐厅的菜肴既有特色又实惠。",
+            "这家餐厅的菜肴有特色既又实惠。",
+            "既这家餐厅的菜肴有特色，实惠又。",
+            "这家餐厅的菜肴，既实惠有特色又。"
+          ],
+          "option_pinyin": [
+            "Zhè jiā cān tīng de cài yáo jì yǒu tè sè yòu shí huì.",
+            "Zhè jiā cān tīng de cài yáo yǒu tè sè jì yòu shí huì.",
+            "Jì zhè jiā cān tīng de cài yáo yǒu tè sè, shí huì yòu.",
+            "Zhè jiā cān tīng de cài yáo, jì shí huì yǒu tè sè yòu."
+          ],
+          "word_hints": {"菜肴": "cài yáo", "特色": "tè sè"}
+        },
+        {
+          "question": "What does 既...又... express?",
+          "type": "multiple_choice",
+          "correct": "Two qualities or conditions that both exist at the same time",
+          "options": [
+            "Two qualities or conditions that both exist at the same time",
+            "A contrast between two opposite qualities",
+            "A condition and its result",
+            "Something happening increasingly over time"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "均衡的饮食 _____ 能补充营养，_____ 能让人保持健康。",
+          "type": "multiple_choice",
+          "correct": "既…又…",
+          "options": ["既…又…", "不管…都…", "通过…来…", "随着…越来越…"],
+          "option_pinyin": ["jì...yòu...", "bù guǎn...dōu...", "tōng guò...lái...", "suí zhe...yuè lái yuè..."],
+          "word_hints": {"饮食": "yǐn shí", "营养": "yíng yǎng"}
+        },
+        {
+          "question": "Which structure is correct with 既...又...?",
+          "type": "multiple_choice",
+          "correct": "Subject + 既 + adjective/verb A + 又 + adjective/verb B",
+          "options": [
+            "Subject + 既 + adjective/verb A + 又 + adjective/verb B",
+            "既 + Subject + adjective/verb A + 又 + adjective/verb B",
+            "Subject + adjective/verb A + 既 + adjective/verb B + 又",
+            "Subject + 又 + adjective/verb A + 既 + adjective/verb B"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "越...越... — The more...the more... (e.g. 越新鲜越好吃)",
+      "explanation": "越...越... expresses that as one quality or action increases, another quality or result also increases proportionally. Structure: 越 + verb/adjective A + 越 + verb/adjective B. The subject can be shared or different. Example: 食材越新鲜，菜肴越好吃。(The fresher the ingredients, the more delicious the dish.)",
+      "examples": [
+        {
+          "chinese": "厨师的烹饪技术越高，做出来的菜肴口味越好。",
+          "pinyin": "Chú shī de pēng rèn jì shù yuè gāo, zuò chū lái de cài yáo kǒu wèi yuè hǎo.",
+          "english": "The higher a chef's cooking skill, the better the flavour of the dishes produced."
+        },
+        {
+          "chinese": "他越按照食谱做菜，越能掌握调味的方法。",
+          "pinyin": "Tā yuè àn zhào shí pǔ zuò cài, yuè néng zhǎng wò tiáo wèi de fāng fǎ.",
+          "english": "The more he cooks following the recipe, the better he masters the methods of seasoning."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "食材 _____ 新鲜，菜肴 _____ 好吃。",
+          "type": "multiple_choice",
+          "correct": "越…越…",
+          "options": ["越…越…", "既…又…", "不管…都…", "只有…才…"],
+          "option_pinyin": ["yuè...yuè...", "jì...yòu...", "bù guǎn...dōu...", "zhǐ yǒu...cái..."],
+          "word_hints": {"食材": "shí cái", "菜肴": "cài yáo"}
+        },
+        {
+          "question": "Choose the correct sentence using 越...越...",
+          "type": "multiple_choice",
+          "correct": "他越了解烹饪，越喜欢做菜。",
+          "options": [
+            "他越了解烹饪，越喜欢做菜。",
+            "他了解越烹饪，越喜欢做菜。",
+            "越他了解烹饪，喜欢越做菜。",
+            "他越烹饪了解，越喜欢做菜。"
+          ],
+          "option_pinyin": [
+            "Tā yuè liǎo jiě pēng rèn, yuè xǐ huān zuò cài.",
+            "Tā liǎo jiě yuè pēng rèn, yuè xǐ huān zuò cài.",
+            "Yuè tā liǎo jiě pēng rèn, xǐ huān yuè zuò cài.",
+            "Tā yuè pēng rèn liǎo jiě, yuè xǐ huān zuò cài."
+          ],
+          "word_hints": {"烹饪": "pēng rèn"}
+        },
+        {
+          "question": "What does 越...越... express?",
+          "type": "multiple_choice",
+          "correct": "As one thing increases, another thing increases proportionally",
+          "options": [
+            "As one thing increases, another thing increases proportionally",
+            "Two qualities existing at the same time",
+            "A condition and its necessary result",
+            "Something unchanging regardless of circumstances"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "这道菜的口味越特别，越 _____ 食客的兴趣。",
+          "type": "multiple_choice",
+          "correct": "能吸引",
+          "options": ["能吸引", "食材", "调味", "食谱"],
+          "option_pinyin": ["néng xī yǐn", "shí cái", "tiáo wèi", "shí pǔ"],
+          "word_hints": {"口味": "kǒu wèi", "特色": "tè sè"}
+        },
+        {
+          "question": "Where does 越...越... appear relative to the verbs/adjectives?",
+          "type": "multiple_choice",
+          "correct": "越 appears directly before each of the two verbs/adjectives",
+          "options": [
+            "越 appears directly before each of the two verbs/adjectives",
+            "越 appears after the subject and before the object",
+            "越 appears only at the end of the sentence",
+            "越 appears only once at the beginning of the sentence"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "把 construction for cooking — 把 + ingredient + action (e.g. 把食材切好)",
+      "explanation": "The 把 construction is very common in cooking contexts. It places the object (usually the ingredient or dish) before the verb to emphasise the result or transformation. Structure: 把 + ingredient/object + verb + result complement. Example: 把蔬菜切好。(Cut the vegetables into shape.) 把汤煮热。(Heat the soup.) The focus is on what is done to the object.",
+      "examples": [
+        {
+          "chinese": "厨师把新鲜食材清洗干净，然后开始按照食谱调味。",
+          "pinyin": "Chú shī bǎ xīn xiān shí cái qīng xǐ gān jìng, rán hòu kāi shǐ àn zhào shí pǔ tiáo wèi.",
+          "english": "The chef washed the fresh ingredients clean, then began seasoning according to the recipe."
+        },
+        {
+          "chinese": "她把那道特色菜肴做得非常好，营养与口味都兼顾到了。",
+          "pinyin": "Tā bǎ nà dào tè sè cài yáo zuò de fēi cháng hǎo, yíng yǎng yǔ kǒu wèi dōu jiān gù dào le.",
+          "english": "She prepared that signature dish extremely well, balancing both nutrition and flavour."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "厨师 _____ 食材切成小块，然后下锅翻炒。",
+          "type": "multiple_choice",
+          "correct": "把",
+          "options": ["把", "被", "让", "给"],
+          "option_pinyin": ["bǎ", "bèi", "ràng", "gěi"],
+          "word_hints": {"食材": "shí cái", "厨师": "chú shī"}
+        },
+        {
+          "question": "Choose the correct sentence using the 把 construction.",
+          "type": "multiple_choice",
+          "correct": "她把这道菜肴调味得恰到好处。",
+          "options": [
+            "她把这道菜肴调味得恰到好处。",
+            "她这道菜肴把调味得恰到好处。",
+            "把她这道菜肴调味恰到好处得。",
+            "她调味这道菜肴把得恰到好处。"
+          ],
+          "option_pinyin": [
+            "Tā bǎ zhè dào cài yáo tiáo wèi de qià dào hǎo chù.",
+            "Tā zhè dào cài yáo bǎ tiáo wèi de qià dào hǎo chù.",
+            "Bǎ tā zhè dào cài yáo tiáo wèi qià dào hǎo chù de.",
+            "Tā tiáo wèi zhè dào cài yáo bǎ de qià dào hǎo chù."
+          ],
+          "word_hints": {"菜肴": "cài yáo", "调味": "tiáo wèi"}
+        },
+        {
+          "question": "What does the 把 construction emphasise in cooking contexts?",
+          "type": "multiple_choice",
+          "correct": "The result or transformation done to the ingredient/object",
+          "options": [
+            "The result or transformation done to the ingredient/object",
+            "The time at which the cooking happened",
+            "The person who is doing the cooking",
+            "The reason the food was cooked"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "他 _____ 那道美食的食谱记在了本子上，方便以后再做。",
+          "type": "multiple_choice",
+          "correct": "把",
+          "options": ["把", "被", "用", "对"],
+          "option_pinyin": ["bǎ", "bèi", "yòng", "duì"],
+          "word_hints": {"食谱": "shí pǔ", "美食": "měi shí"}
+        },
+        {
+          "question": "Which sentence uses the 把 construction correctly for a cooking context?",
+          "type": "multiple_choice",
+          "correct": "她把汤煮好了，端到桌上。",
+          "options": [
+            "她把汤煮好了，端到桌上。",
+            "汤她把煮好了，端到桌上。",
+            "她煮把汤好了，端到桌上。",
+            "煮好了她把汤，端到桌上。"
+          ],
+          "option_pinyin": [
+            "Tā bǎ tāng zhǔ hǎo le, duān dào zhuō shàng.",
+            "Tāng tā bǎ zhǔ hǎo le, duān dào zhuō shàng.",
+            "Tā zhǔ bǎ tāng hǎo le, duān dào zhuō shàng.",
+            "Zhǔ hǎo le tā bǎ tāng, duān dào zhuō shàng."
+          ],
+          "word_hints": {}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "The Eight Great Cuisines of China",
+      "title_chinese": "中国八大菜系",
+      "content": "China's culinary tradition is one of the richest in the world, and Chinese cuisine is typically categorised into eight regional styles known as the 八大菜系 (bā dà cài xì, Eight Great Cuisines). These include Sichuan (四川), Cantonese (粤菜), Shandong (鲁菜), Jiangsu (苏菜), Zhejiang (浙菜), Fujian (闽菜), Hunan (湘菜), and Anhui (徽菜) cuisines. Each has its own distinct ingredients, cooking techniques (烹饪技术), and flavour profiles (口味). For example, Sichuan cuisine is famous for its bold and spicy flavours, while Cantonese cuisine prioritises the freshness (新鲜) of ingredients and lighter seasoning. Understanding these regional differences is key to appreciating the full depth of Chinese food culture.",
+      "idioms": [
+        {
+          "chinese": "民以食为天",
+          "pinyin": "mín yǐ shí wéi tiān",
+          "english": "Food is the most important thing to the people (food is of paramount importance)"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 菜肴 mean?",
+      "type": "multiple_choice",
+      "correct": "Dish; prepared food",
+      "options": ["Dish; prepared food", "Ingredient", "Recipe", "Seasoning"],
+      "word_hints": {"菜肴": "cài yáo"}
+    },
+    {
+      "question": "Which word means 'ingredient; foodstuff'?",
+      "type": "multiple_choice",
+      "correct": "食材",
+      "options": ["食谱", "食材", "美食", "饮食"],
+      "word_hints": {"食谱": "shí pǔ", "食材": "shí cái", "美食": "měi shí", "饮食": "yǐn shí"}
+    },
+    {
+      "question": "What does 调味 mean?",
+      "type": "multiple_choice",
+      "correct": "To season; to flavour",
+      "options": ["To season; to flavour", "To cook", "To taste", "To cut"],
+      "word_hints": {"调味": "tiáo wèi"}
+    },
+    {
+      "question": "Which word means 'chef; cook'?",
+      "type": "multiple_choice",
+      "correct": "厨师",
+      "options": ["特色", "厨师", "口味", "营养"],
+      "word_hints": {"厨师": "chú shī", "特色": "tè sè", "口味": "kǒu wèi", "营养": "yíng yǎng"}
+    },
+    {
+      "question": "What does 营养 mean?",
+      "type": "multiple_choice",
+      "correct": "Nutrition; nutritious",
+      "options": ["Nutrition; nutritious", "Fresh", "Flavour", "Cooking"],
+      "word_hints": {"营养": "yíng yǎng"}
+    },
+    {
+      "question": "Which word means 'fresh'?",
+      "type": "multiple_choice",
+      "correct": "新鲜",
+      "options": ["特色", "新鲜", "口味", "美食"],
+      "word_hints": {"特色": "tè sè", "新鲜": "xīn xiān", "口味": "kǒu wèi", "美食": "měi shí"}
+    },
+    {
+      "question": "What does 烹饪 mean?",
+      "type": "multiple_choice",
+      "correct": "Cooking; culinary arts",
+      "options": ["Cooking; culinary arts", "Recipe", "Ingredient", "Diet"],
+      "word_hints": {"烹饪": "pēng rèn"}
+    },
+    {
+      "question": "What does 食谱 mean?",
+      "type": "multiple_choice",
+      "correct": "Recipe; cookbook",
+      "options": ["Recipe; cookbook", "Ingredient", "Dish", "Seasoning"],
+      "word_hints": {"食谱": "shí pǔ"}
+    },
+    {
+      "question": "Fill in the blank: 这道菜肴 _____ 营养 _____ 美味，非常受欢迎。",
+      "type": "multiple_choice",
+      "correct": "既…又…",
+      "options": ["既…又…", "越…越…", "不管…都…", "只有…才…"],
+      "word_hints": {"菜肴": "cài yáo", "营养": "yíng yǎng"}
+    },
+    {
+      "question": "What does 既...又... express?",
+      "type": "multiple_choice",
+      "correct": "Two qualities or conditions that both exist simultaneously",
+      "options": [
+        "Two qualities or conditions that both exist simultaneously",
+        "A proportional relationship between two changing things",
+        "A condition and its necessary result",
+        "A contrast between two opposites"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 食材 _____ 新鲜，菜肴口味 _____ 好。",
+      "type": "multiple_choice",
+      "correct": "越…越…",
+      "options": ["越…越…", "既…又…", "不管…都…", "只有…才…"],
+      "word_hints": {"食材": "shí cái", "菜肴": "cài yáo", "口味": "kǒu wèi"}
+    },
+    {
+      "question": "What does 越...越... express?",
+      "type": "multiple_choice",
+      "correct": "As one thing increases, another increases proportionally",
+      "options": [
+        "As one thing increases, another increases proportionally",
+        "Two things happening at the same time",
+        "A condition and its result",
+        "Something that doesn't change"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 厨师 _____ 食材切成小块，然后按照食谱调味。",
+      "type": "multiple_choice",
+      "correct": "把",
+      "options": ["把", "被", "让", "叫"],
+      "word_hints": {"食材": "shí cái", "食谱": "shí pǔ", "调味": "tiáo wèi"}
+    },
+    {
+      "question": "What does 口味 mean?",
+      "type": "multiple_choice",
+      "correct": "Taste preference; flavour",
+      "options": ["Taste preference; flavour", "Nutrition", "Ingredient", "Recipe"],
+      "word_hints": {"口味": "kǒu wèi"}
+    },
+    {
+      "question": "What does the phrase 特色菜肴 mean?",
+      "type": "multiple_choice",
+      "correct": "Signature dish; specialty dish",
+      "options": ["Signature dish; specialty dish", "Fresh ingredients", "Balanced diet", "Cooking technique"],
+      "word_hints": {"特色": "tè sè", "菜肴": "cài yáo"}
+    },
+    {
+      "question": "What does 饮食 mean?",
+      "type": "multiple_choice",
+      "correct": "Diet; eating habits; food and drink",
+      "options": ["Diet; eating habits; food and drink", "Recipe", "Cooking skill", "Gourmet food"],
+      "word_hints": {"饮食": "yǐn shí"}
+    },
+    {
+      "question": "Which phrase means 'balanced diet'?",
+      "type": "multiple_choice",
+      "correct": "均衡饮食",
+      "options": ["均衡饮食", "特色菜肴", "烹饪技术", "新鲜食材"],
+      "word_hints": {"饮食": "yǐn shí"}
+    },
+    {
+      "question": "How many regional cuisine styles are traditionally recognised in China (the Eight Great Cuisines)?",
+      "type": "multiple_choice",
+      "correct": "8",
+      "options": ["8", "4", "6", "10"],
+      "word_hints": {}
+    },
+    {
+      "question": "What does the phrase 品尝美食 mean?",
+      "type": "multiple_choice",
+      "correct": "To taste delicious food",
+      "options": ["To taste delicious food", "To cook a dish", "To follow a recipe", "To buy ingredients"],
+      "word_hints": {"美食": "měi shí"}
+    },
+    {
+      "question": "Which grammar pattern means 'both...and...' in describing two simultaneous qualities?",
+      "type": "multiple_choice",
+      "correct": "既...又...",
+      "options": ["既...又...", "越...越...", "把...好", "不管...都..."],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Learning to Cook",
+      "title_chinese": "学做菜",
+      "speakers": {
+        "A": {"name": "晓菲", "role": "学生", "gender": "female"},
+        "B": {"name": "王师傅", "role": "厨师", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "王师傅，我想学烹饪，应该从哪里开始？",
+          "pinyin": "Wáng shī fu, wǒ xiǎng xué pēng rèn, yīng gāi cóng nǎ lǐ kāi shǐ?",
+          "english": "Master Wang, I want to learn cooking — where should I start?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "先要学会选择食材。食材越新鲜，做出来的菜肴口味越好。",
+          "pinyin": "Xiān yào xué huì xuǎn zé shí cái. Shí cái yuè xīn xiān, zuò chū lái de cài yáo kǒu wèi yuè hǎo.",
+          "english": "First you need to learn how to choose ingredients. The fresher the ingredients, the better the flavour of the dish."
+        },
+        {
+          "speaker": "A",
+          "chinese": "明白了。那调味怎么学？我按照食谱做，但总是感觉味道不对。",
+          "pinyin": "Míng bai le. Nà tiáo wèi zěn me xué? Wǒ àn zhào shí pǔ zuò, dàn zǒng shì gǎn jué wèi dào bú duì.",
+          "english": "I understand. How do I learn to season properly? I follow the recipe but the flavour always seems off."
+        },
+        {
+          "speaker": "B",
+          "chinese": "调味要靠经验。你越做越有感觉，把食材、调料的比例掌握好就行了。",
+          "pinyin": "Tiáo wèi yào kào jīng yàn. Nǐ yuè zuò yuè yǒu gǎn jué, bǎ shí cái, tiáo liào de bǐ lì zhǎng wò hǎo jiù xíng le.",
+          "english": "Seasoning relies on experience. The more you cook, the better your feel for it; just master the ratio of ingredients and seasonings."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这道特色菜肴既营养又美味，是怎么做的？",
+          "pinyin": "Zhè dào tè sè cài yáo jì yíng yǎng yòu měi wèi, shì zěn me zuò de?",
+          "english": "This signature dish is both nutritious and delicious — how is it made?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "先把新鲜食材洗干净，然后按照食谱一步一步做，掌握好火候就好了。",
+          "pinyin": "Xiān bǎ xīn xiān shí cái xǐ gān jìng, rán hòu àn zhào shí pǔ yī bù yī bù zuò, zhǎng wò hǎo huǒ hòu jiù hǎo le.",
+          "english": "First wash the fresh ingredients clean, then follow the recipe step by step, and control the heat well."
+        },
+        {
+          "speaker": "A",
+          "chinese": "好的，我一定要认真学，争取做出既有特色又营养的美食！",
+          "pinyin": "Hǎo de, wǒ yī dìng yào rèn zhēn xué, zhēng qǔ zuò chū jì yǒu tè sè yòu yíng yǎng de měi shí!",
+          "english": "Sure, I'll study seriously and strive to cook dishes that are both distinctive and nutritious!"
+        },
+        {
+          "speaker": "B",
+          "chinese": "加油！记住，越喜欢烹饪，越容易做出好的菜肴。享受这个过程！",
+          "pinyin": "Jiā yóu! Jì zhù, yuè xǐ huān pēng rèn, yuè róng yì zuò chū hǎo de cài yáo. Xiǎng shòu zhè gè guò chéng!",
+          "english": "Keep it up! Remember, the more you enjoy cooking, the easier it is to produce great dishes. Enjoy the process!"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Discussing Regional Chinese Cuisine",
+      "title_chinese": "讨论中国各地美食",
+      "speakers": {
+        "A": {"name": "小林", "role": "美食爱好者", "gender": "male"},
+        "B": {"name": "阿梅", "role": "朋友", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "阿梅，你最喜欢哪种中国菜？川菜还是粤菜？",
+          "pinyin": "Ā méi, nǐ zuì xǐ huān nǎ zhǒng Zhōng guó cài? Chuān cài hái shì Yuè cài?",
+          "english": "Amei, which type of Chinese food do you like most? Sichuan cuisine or Cantonese cuisine?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我比较喜欢粤菜，因为粤菜的食材既新鲜又注重营养，口味比较清淡。",
+          "pinyin": "Wǒ bǐ jiào xǐ huān Yuè cài, yīn wèi Yuè cài de shí cái jì xīn xiān yòu zhù zhòng yíng yǎng, kǒu wèi bǐ jiào qīng dàn.",
+          "english": "I prefer Cantonese cuisine because its ingredients are both fresh and nutritious, and the flavour is relatively mild."
+        },
+        {
+          "speaker": "A",
+          "chinese": "川菜的特色是麻辣，越吃越过瘾。厨师们把各种食材和调料搭配得非常有创意。",
+          "pinyin": "Chuān cài de tè sè shì má là, yuè chī yuè guò yǐn. Chú shī men bǎ gè zhǒng shí cái hé tiáo liào dā pèi de fēi cháng yǒu chuàng yì.",
+          "english": "The characteristic of Sichuan cuisine is its numbing spiciness — the more you eat, the more you crave it. The chefs match various ingredients and seasonings very creatively."
+        },
+        {
+          "speaker": "B",
+          "chinese": "中国有八大菜系，每种菜系都有自己的烹饪技术和特色菜肴，真的很了不起。",
+          "pinyin": "Zhōng guó yǒu bā dà cài xì, měi zhǒng cài xì dōu yǒu zì jǐ de pēng rèn jì shù hé tè sè cài yáo, zhēn de hěn liǎo bù qǐ.",
+          "english": "China has eight great regional cuisines, each with its own cooking techniques and signature dishes — it's truly remarkable."
+        },
+        {
+          "speaker": "A",
+          "chinese": "对。我最近在研究各地的食谱，想试试按照食谱做不同地方的美食。",
+          "pinyin": "Duì. Wǒ zuì jìn zài yán jiū gè dì de shí pǔ, xiǎng shì shi àn zhào shí pǔ zuò bù tóng dì fāng de měi shí.",
+          "english": "Right. I've been studying recipes from different regions recently and want to try cooking dishes from various places by following the recipes."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那很有意思！记得把食材选新鲜的，这样做出来的菜肴口味才能好。",
+          "pinyin": "Nà hěn yǒu yì si! Jì de bǎ shí cái xuǎn xīn xiān de, zhè yàng zuò chū lái de cài yáo kǒu wèi cái néng hǎo.",
+          "english": "That sounds fun! Remember to choose fresh ingredients — that way the flavour of the dishes you make will be good."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你说得对！均衡饮食，既注重口味，又注意营养，这才是真正的美食之道。",
+          "pinyin": "Nǐ shuō de duì! Jūn héng yǐn shí, jì zhù zhòng kǒu wèi, yòu zhù yì yíng yǎng, zhè cái shì zhēn zhèng de měi shí zhī dào.",
+          "english": "You're right! A balanced diet, one that both values flavour and pays attention to nutrition — that is truly the way of gourmet food."
+        }
+      ]
+    }
+  ]
+}

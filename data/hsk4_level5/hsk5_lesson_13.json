@@ -1,0 +1,688 @@
+{
+  "lesson": 13,
+  "level": 5,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Health & Medicine",
+  "topic_chinese": "健康与医疗",
+  "vocabulary": [
+    {
+      "id": "hsk5_l13_01",
+      "chinese": "健康",
+      "pinyin": "jiàn kāng",
+      "english": "Healthy; health",
+      "part_of_speech": "adjective/noun"
+    },
+    {
+      "id": "hsk5_l13_02",
+      "chinese": "症状",
+      "pinyin": "zhèng zhuàng",
+      "english": "Symptom(s)",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l13_03",
+      "chinese": "治疗",
+      "pinyin": "zhì liáo",
+      "english": "To treat; treatment",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk5_l13_04",
+      "chinese": "预防",
+      "pinyin": "yù fáng",
+      "english": "To prevent; prevention",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk5_l13_05",
+      "chinese": "营养",
+      "pinyin": "yíng yǎng",
+      "english": "Nutrition; nutritious",
+      "part_of_speech": "noun/adjective"
+    },
+    {
+      "id": "hsk5_l13_06",
+      "chinese": "检查",
+      "pinyin": "jiǎn chá",
+      "english": "To check; to examine; check-up",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk5_l13_07",
+      "chinese": "医疗",
+      "pinyin": "yī liáo",
+      "english": "Medical treatment; healthcare",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l13_08",
+      "chinese": "手术",
+      "pinyin": "shǒu shù",
+      "english": "Surgery; operation",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l13_09",
+      "chinese": "康复",
+      "pinyin": "kāng fù",
+      "english": "To recover; recovery",
+      "part_of_speech": "verb/noun"
+    },
+    {
+      "id": "hsk5_l13_10",
+      "chinese": "药物",
+      "pinyin": "yào wù",
+      "english": "Medicine; medication; drug",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l13_11",
+      "chinese": "饮食习惯",
+      "pinyin": "yǐn shí xí guàn",
+      "english": "Dietary habits; eating habits",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l13_12",
+      "chinese": "免疫力",
+      "pinyin": "miǎn yì lì",
+      "english": "Immunity; immune system strength",
+      "part_of_speech": "noun"
+    },
+    {
+      "id": "hsk5_l13_p01",
+      "chinese": "定期检查",
+      "pinyin": "dìng qī jiǎn chá",
+      "english": "Regular check-up",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l13_p02",
+      "chinese": "预防疾病",
+      "pinyin": "yù fáng jí bìng",
+      "english": "To prevent illness",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l13_p03",
+      "chinese": "均衡营养",
+      "pinyin": "jūn héng yíng yǎng",
+      "english": "Balanced nutrition",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l13_p04",
+      "chinese": "提高免疫力",
+      "pinyin": "tí gāo miǎn yì lì",
+      "english": "To boost immunity",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l13_p05",
+      "chinese": "术后康复",
+      "pinyin": "shù hòu kāng fù",
+      "english": "Post-surgery recovery",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l13_p06",
+      "chinese": "良好的饮食习惯",
+      "pinyin": "liáng hǎo de yǐn shí xí guàn",
+      "english": "Good dietary habits",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "我们应该注意饮食习惯，以免营养不均衡影响健康。",
+      "pinyin": "Wǒ men yīng gāi zhù yì yǐn shí xí guàn, yǐ miǎn yíng yǎng bù jūn héng yǐng xiǎng jiàn kāng.",
+      "english": "We should pay attention to our dietary habits so as to avoid unbalanced nutrition affecting our health."
+    },
+    {
+      "chinese": "定期检查有助于早期发现症状，及时进行治疗。",
+      "pinyin": "Dìng qī jiǎn chá yǒu zhù yú zǎo qī fā xiàn zhèng zhuàng, jí shí jìn xíng zhì liáo.",
+      "english": "Regular check-ups help with early detection of symptoms so that treatment can be given promptly."
+    },
+    {
+      "chinese": "只有保持良好的饮食习惯，才能真正提高免疫力。",
+      "pinyin": "Zhǐ yǒu bǎo chí liáng hǎo de yǐn shí xí guàn, cái néng zhēn zhèng tí gāo miǎn yì lì.",
+      "english": "Only by maintaining good dietary habits can one truly boost their immunity."
+    },
+    {
+      "chinese": "手术后，医生建议他多休息，以便尽快康复。",
+      "pinyin": "Shǒu shù hòu, yī shēng jiàn yì tā duō xiū xi, yǐ biàn jǐn kuài kāng fù.",
+      "english": "After the surgery, the doctor advised him to rest more so as to recover as soon as possible."
+    },
+    {
+      "chinese": "预防疾病有助于减轻医疗系统的压力，也对个人健康有益。",
+      "pinyin": "Yù fáng jí bìng yǒu zhù yú jiǎn qīng yī liáo xì tǒng de yā lì, yě duì gè rén jiàn kāng yǒu yì.",
+      "english": "Preventing illness helps reduce the pressure on the healthcare system and is also beneficial to personal health."
+    },
+    {
+      "chinese": "只有按时服用药物，才能确保治疗效果。",
+      "pinyin": "Zhǐ yǒu àn shí fú yòng yào wù, cái néng què bǎo zhì liáo xiào guǒ.",
+      "english": "Only by taking medication on time can the effectiveness of the treatment be ensured."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "以免 — So as to avoid; lest",
+      "explanation": "以免 means 'so as to avoid' or 'in order to prevent'. It introduces an undesirable consequence that the speaker wants to prevent. Structure: main action + 以免 + undesirable outcome. It is similar to 'lest' in formal English. Example: 出门带伞，以免下雨淋湿。(Take an umbrella when you go out so as to avoid getting wet in the rain.)",
+      "examples": [
+        {
+          "chinese": "手术前要禁食，以免麻醉时出现危险。",
+          "pinyin": "Shǒu shù qián yào jìn shí, yǐ miǎn má zuì shí chū xiàn wēi xiǎn.",
+          "english": "You must fast before surgery so as to avoid danger during anaesthesia."
+        },
+        {
+          "chinese": "每天要按时服药，以免症状复发。",
+          "pinyin": "Měi tiān yào àn shí fú yào, yǐ miǎn zhèng zhuàng fù fā.",
+          "english": "You must take your medicine on time every day so as to avoid the symptoms recurring."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "出门前要检查好药物，_____ 出门后才发现忘带了。",
+          "type": "multiple_choice",
+          "correct": "以免",
+          "options": ["以免", "只有", "有助于", "才能"],
+          "option_pinyin": ["yǐ miǎn", "zhǐ yǒu", "yǒu zhù yú", "cái néng"],
+          "word_hints": {"药物": "yào wù", "检查": "jiǎn chá"}
+        },
+        {
+          "question": "Choose the correct sentence using 以免.",
+          "type": "multiple_choice",
+          "correct": "要注意饮食，以免营养不均衡影响健康。",
+          "options": [
+            "要注意饮食，以免营养不均衡影响健康。",
+            "以免要注意饮食，营养不均衡影响健康。",
+            "营养不均衡以免，要注意饮食影响健康。",
+            "影响健康要注意，以免饮食营养不均衡。"
+          ],
+          "option_pinyin": [
+            "Yào zhù yì yǐn shí, yǐ miǎn yíng yǎng bù jūn héng yǐng xiǎng jiàn kāng.",
+            "Yǐ miǎn yào zhù yì yǐn shí, yíng yǎng bù jūn héng yǐng xiǎng jiàn kāng.",
+            "Yíng yǎng bù jūn héng yǐ miǎn, yào zhù yì yǐn shí yǐng xiǎng jiàn kāng.",
+            "Yǐng xiǎng jiàn kāng yào zhù yì, yǐ miǎn yǐn shí yíng yǎng bù jūn héng."
+          ],
+          "word_hints": {"营养": "yíng yǎng", "健康": "jiàn kāng"}
+        },
+        {
+          "question": "What does 以免 mean?",
+          "type": "multiple_choice",
+          "correct": "So as to avoid; lest",
+          "options": [
+            "So as to avoid; lest",
+            "Because of",
+            "In spite of",
+            "As a result of"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "手术后要认真休息，_____ 影响康复进度。",
+          "type": "multiple_choice",
+          "correct": "以免",
+          "options": ["以免", "只有", "有助于", "症状"],
+          "option_pinyin": ["yǐ miǎn", "zhǐ yǒu", "yǒu zhù yú", "zhèng zhuàng"],
+          "word_hints": {"手术": "shǒu shù", "康复": "kāng fù"}
+        },
+        {
+          "question": "以免 introduces which element in a sentence?",
+          "type": "multiple_choice",
+          "correct": "An undesirable outcome to be prevented",
+          "options": [
+            "An undesirable outcome to be prevented",
+            "A positive goal to be achieved",
+            "A condition that must be met",
+            "A contrast with another action"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "有助于 — Be helpful to; contribute to",
+      "explanation": "有助于 means 'to be helpful to', 'to contribute to', or 'to promote'. It introduces a beneficial outcome. Structure: action/thing + 有助于 + beneficial outcome/noun. Example: 运动有助于身体健康。(Exercise is helpful to physical health.)",
+      "examples": [
+        {
+          "chinese": "多喝水有助于提高免疫力，减少生病的机会。",
+          "pinyin": "Duō hē shuǐ yǒu zhù yú tí gāo miǎn yì lì, jiǎn shǎo shēng bìng de jī huì.",
+          "english": "Drinking plenty of water helps boost immunity and reduces the chances of falling ill."
+        },
+        {
+          "chinese": "定期体检有助于早期发现疾病，及时进行医疗干预。",
+          "pinyin": "Dìng qī tǐ jiǎn yǒu zhù yú zǎo qī fā xiàn jí bìng, jí shí jìn xíng yī liáo gān yù.",
+          "english": "Regular physical examinations help with early detection of illness and timely medical intervention."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "均衡的营养 _____ 身体康复，也能提高免疫力。",
+          "type": "multiple_choice",
+          "correct": "有助于",
+          "options": ["有助于", "以免", "只有", "才能"],
+          "option_pinyin": ["yǒu zhù yú", "yǐ miǎn", "zhǐ yǒu", "cái néng"],
+          "word_hints": {"营养": "yíng yǎng", "康复": "kāng fù", "免疫力": "miǎn yì lì"}
+        },
+        {
+          "question": "Choose the correct sentence using 有助于.",
+          "type": "multiple_choice",
+          "correct": "良好的饮食习惯有助于预防很多疾病。",
+          "options": [
+            "良好的饮食习惯有助于预防很多疾病。",
+            "良好的饮食习惯预防有助于很多疾病。",
+            "预防很多疾病，良好的饮食有助于习惯。",
+            "有助于良好的饮食习惯，预防很多疾病。"
+          ],
+          "option_pinyin": [
+            "Liáng hǎo de yǐn shí xí guàn yǒu zhù yú yù fáng hěn duō jí bìng.",
+            "Liáng hǎo de yǐn shí xí guàn yù fáng yǒu zhù yú hěn duō jí bìng.",
+            "Yù fáng hěn duō jí bìng, liáng hǎo de yǐn shí yǒu zhù yú xí guàn.",
+            "Yǒu zhù yú liáng hǎo de yǐn shí xí guàn, yù fáng hěn duō jí bìng."
+          ],
+          "word_hints": {"饮食习惯": "yǐn shí xí guàn", "预防": "yù fáng"}
+        },
+        {
+          "question": "What does 有助于 mean?",
+          "type": "multiple_choice",
+          "correct": "To be helpful to; to contribute to",
+          "options": [
+            "To be helpful to; to contribute to",
+            "To prevent; to avoid",
+            "To cause harm to",
+            "To be unrelated to"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "坚持运动 _____ 保持身体健康，减少去医院的次数。",
+          "type": "multiple_choice",
+          "correct": "有助于",
+          "options": ["有助于", "以免", "检查", "手术"],
+          "option_pinyin": ["yǒu zhù yú", "yǐ miǎn", "jiǎn chá", "shǒu shù"],
+          "word_hints": {"健康": "jiàn kāng"}
+        },
+        {
+          "question": "有助于 is placed where in a sentence?",
+          "type": "multiple_choice",
+          "correct": "Between the cause/action and the beneficial outcome",
+          "options": [
+            "Between the cause/action and the beneficial outcome",
+            "At the very beginning of the sentence",
+            "After the subject and before the cause",
+            "At the end of the sentence"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "只有…才… — Only if… then…",
+      "explanation": "只有…才… expresses that the result in the second clause can only be achieved if the condition in the first clause is met. Structure: 只有 + condition + (subject) + 才 + result. It is stronger than 如果…就… because it stresses that the condition is the one and only way. Example: 只有努力才能成功。(Only through hard work can one succeed.)",
+      "examples": [
+        {
+          "chinese": "只有坚持锻炼，才能保持身体健康，减少生病。",
+          "pinyin": "Zhǐ yǒu jiān chí duàn liàn, cái néng bǎo chí shēn tǐ jiàn kāng, jiǎn shǎo shēng bìng.",
+          "english": "Only by persisting with exercise can one maintain physical health and fall ill less often."
+        },
+        {
+          "chinese": "只有按照医生的指示服用药物，治疗才会有效果。",
+          "pinyin": "Zhǐ yǒu àn zhào yī shēng de zhǐ shì fú yòng yào wù, zhì liáo cái huì yǒu xiào guǒ.",
+          "english": "Only by taking medication according to the doctor's instructions will the treatment be effective."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 定期做身体检查，_____ 能早期发现症状。",
+          "type": "multiple_choice",
+          "correct": "只有…才…",
+          "options": ["只有…才…", "虽然…但是…", "因为…所以…", "如果…也…"],
+          "option_pinyin": ["zhǐ yǒu…cái…", "suī rán…dàn shì…", "yīn wèi…suǒ yǐ…", "rú guǒ…yě…"],
+          "word_hints": {"检查": "jiǎn chá", "症状": "zhèng zhuàng"}
+        },
+        {
+          "question": "Choose the correct sentence using 只有…才…",
+          "type": "multiple_choice",
+          "correct": "只有注意饮食习惯，才能真正保持健康。",
+          "options": [
+            "只有注意饮食习惯，才能真正保持健康。",
+            "只有才注意饮食习惯，能真正保持健康。",
+            "注意饮食习惯只有，才能真正保持健康。",
+            "才能真正保持健康，只有注意饮食习惯。"
+          ],
+          "option_pinyin": [
+            "Zhǐ yǒu zhù yì yǐn shí xí guàn, cái néng zhēn zhèng bǎo chí jiàn kāng.",
+            "Zhǐ yǒu cái zhù yì yǐn shí xí guàn, néng zhēn zhèng bǎo chí jiàn kāng.",
+            "Zhù yì yǐn shí xí guàn zhǐ yǒu, cái néng zhēn zhèng bǎo chí jiàn kāng.",
+            "Cái néng zhēn zhèng bǎo chí jiàn kāng, zhǐ yǒu zhù yì yǐn shí xí guàn."
+          ],
+          "word_hints": {"饮食习惯": "yǐn shí xí guàn", "健康": "jiàn kāng"}
+        },
+        {
+          "question": "What does 只有…才… express?",
+          "type": "multiple_choice",
+          "correct": "Only if this condition is met can the result happen",
+          "options": [
+            "Only if this condition is met can the result happen",
+            "Even though the condition exists, the result does not follow",
+            "Because the condition exists, the result always follows",
+            "The result happens regardless of the condition"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "只有提高免疫力，_____ 能减少生病的次数。",
+          "type": "multiple_choice",
+          "correct": "才",
+          "options": ["才", "就", "也", "都"],
+          "option_pinyin": ["cái", "jiù", "yě", "dōu"],
+          "word_hints": {"免疫力": "miǎn yì lì"}
+        },
+        {
+          "question": "只有…才… is stronger than 如果…就… because:",
+          "type": "multiple_choice",
+          "correct": "It stresses that the condition is the only way to achieve the result",
+          "options": [
+            "It stresses that the condition is the only way to achieve the result",
+            "It is used for negative sentences only",
+            "It is more polite",
+            "It can be used without a condition"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "id": 1,
+      "title": "Traditional Chinese Medicine and Modern Healthcare",
+      "title_chinese": "中医与现代医疗",
+      "content": "China has a long tradition of medicine that dates back thousands of years. Traditional Chinese Medicine (中医, Zhōng yī) encompasses practices such as acupuncture (针灸, zhēn jiǔ), herbal remedies (草药, cǎo yào), and cupping therapy (拔罐, bá guàn). These approaches focus on restoring balance and harmony within the body rather than simply treating individual symptoms (症状, zhèng zhuàng). Today, China operates a dual healthcare system where patients can choose between Western medicine (西医, Xī yī) and traditional Chinese medicine, or even a combination of both. Many Chinese people believe that prevention (预防, yù fáng) is more important than cure, following the principle 上医治未病 (shàng yī zhì wèi bìng), meaning 'the best doctor treats illness before it occurs'. This preventative philosophy encourages good dietary habits (饮食习惯, yǐn shí xí guàn) and regular physical activity to maintain immunity and overall wellbeing.",
+      "idioms": [
+        {
+          "chinese": "防患于未然",
+          "pinyin": "fáng huàn yú wèi rán",
+          "english": "Prevent trouble before it happens — a stitch in time saves nine"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 症状 mean?",
+      "type": "multiple_choice",
+      "correct": "Symptom(s)",
+      "options": ["Symptom(s)", "Treatment", "Medicine", "Surgery"],
+      "word_hints": {"症状": "zhèng zhuàng"}
+    },
+    {
+      "question": "Which word means 'to prevent; prevention'?",
+      "type": "multiple_choice",
+      "correct": "预防",
+      "options": ["预防", "治疗", "检查", "康复"],
+      "word_hints": {"预防": "yù fáng", "治疗": "zhì liáo", "检查": "jiǎn chá", "康复": "kāng fù"}
+    },
+    {
+      "question": "What does 免疫力 mean?",
+      "type": "multiple_choice",
+      "correct": "Immunity; immune system strength",
+      "options": ["Immunity; immune system strength", "Surgery", "Nutrition", "Medication"],
+      "word_hints": {"免疫力": "miǎn yì lì"}
+    },
+    {
+      "question": "Which word means 'surgery; operation'?",
+      "type": "multiple_choice",
+      "correct": "手术",
+      "options": ["手术", "检查", "药物", "医疗"],
+      "word_hints": {"手术": "shǒu shù", "检查": "jiǎn chá", "药物": "yào wù", "医疗": "yī liáo"}
+    },
+    {
+      "question": "What does 营养 mean?",
+      "type": "multiple_choice",
+      "correct": "Nutrition; nutritious",
+      "options": ["Nutrition; nutritious", "Symptom", "Recovery", "Medication"],
+      "word_hints": {"营养": "yíng yǎng"}
+    },
+    {
+      "question": "What does 康复 mean?",
+      "type": "multiple_choice",
+      "correct": "To recover; recovery",
+      "options": ["To recover; recovery", "To treat", "To prevent", "To examine"],
+      "word_hints": {"康复": "kāng fù"}
+    },
+    {
+      "question": "Which word means 'dietary habits; eating habits'?",
+      "type": "multiple_choice",
+      "correct": "饮食习惯",
+      "options": ["饮食习惯", "免疫力", "营养", "医疗"],
+      "word_hints": {"饮食习惯": "yǐn shí xí guàn", "免疫力": "miǎn yì lì"}
+    },
+    {
+      "question": "What does 治疗 mean?",
+      "type": "multiple_choice",
+      "correct": "To treat; treatment",
+      "options": ["To treat; treatment", "To recover", "To prevent", "To examine"],
+      "word_hints": {"治疗": "zhì liáo"}
+    },
+    {
+      "question": "Fill in the blank: 出门前带好药物，_____ 出去后找不到药。",
+      "type": "multiple_choice",
+      "correct": "以免",
+      "options": ["以免", "有助于", "只有", "才能"],
+      "word_hints": {"药物": "yào wù"}
+    },
+    {
+      "question": "What does 以免 mean?",
+      "type": "multiple_choice",
+      "correct": "So as to avoid; lest",
+      "options": ["So as to avoid; lest", "Because of", "Contributing to", "Only if"],
+      "word_hints": {}
+    },
+    {
+      "question": "Fill in the blank: 定期检查 _____ 早期发现疾病。",
+      "type": "multiple_choice",
+      "correct": "有助于",
+      "options": ["有助于", "以免", "只有", "才能"],
+      "word_hints": {"检查": "jiǎn chá"}
+    },
+    {
+      "question": "Choose the correct sentence using 只有…才…",
+      "type": "multiple_choice",
+      "correct": "只有按时服药，才能保证治疗效果。",
+      "options": [
+        "只有按时服药，才能保证治疗效果。",
+        "才能按时服药，只有保证治疗效果。",
+        "只才有按时服药，能保证治疗效果。",
+        "按时服药保证，只有才能治疗效果。"
+      ],
+      "word_hints": {"治疗": "zhì liáo", "药物": "yào wù"}
+    },
+    {
+      "question": "What does 检查 mean?",
+      "type": "multiple_choice",
+      "correct": "To check; to examine; check-up",
+      "options": ["To check; to examine; check-up", "To treat", "To recover", "To prevent"],
+      "word_hints": {"检查": "jiǎn chá"}
+    },
+    {
+      "question": "What does the phrase 定期检查 mean?",
+      "type": "multiple_choice",
+      "correct": "Regular check-up",
+      "options": ["Regular check-up", "Emergency surgery", "Daily medication", "Dietary habits"],
+      "word_hints": {"定期检查": "dìng qī jiǎn chá"}
+    },
+    {
+      "question": "What does 医疗 mean?",
+      "type": "multiple_choice",
+      "correct": "Medical treatment; healthcare",
+      "options": ["Medical treatment; healthcare", "Surgery", "Immunity", "Symptom"],
+      "word_hints": {"医疗": "yī liáo"}
+    },
+    {
+      "question": "Which phrase means 'to boost immunity'?",
+      "type": "multiple_choice",
+      "correct": "提高免疫力",
+      "options": ["提高免疫力", "预防疾病", "定期检查", "术后康复"],
+      "word_hints": {"免疫力": "miǎn yì lì"}
+    },
+    {
+      "question": "What does 药物 mean?",
+      "type": "multiple_choice",
+      "correct": "Medicine; medication; drug",
+      "options": ["Medicine; medication; drug", "Surgery", "Immunity", "Check-up"],
+      "word_hints": {"药物": "yào wù"}
+    },
+    {
+      "question": "The idiom 防患于未然 means:",
+      "type": "multiple_choice",
+      "correct": "Prevent trouble before it happens",
+      "options": [
+        "Prevent trouble before it happens",
+        "Treat an illness after it becomes serious",
+        "Recover quickly after surgery",
+        "Take medicine every day"
+      ],
+      "word_hints": {"防患于未然": "fáng huàn yú wèi rán"}
+    },
+    {
+      "question": "What does the phrase 术后康复 mean?",
+      "type": "multiple_choice",
+      "correct": "Post-surgery recovery",
+      "options": ["Post-surgery recovery", "Pre-surgery check-up", "Daily medication", "Boosting immunity"],
+      "word_hints": {"康复": "kāng fù", "手术": "shǒu shù"}
+    },
+    {
+      "question": "Which grammar pattern means 'only if… then…'?",
+      "type": "multiple_choice",
+      "correct": "只有…才…",
+      "options": ["只有…才…", "以免", "有助于", "与其…不如…"],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "At the Doctor's Office",
+      "title_chinese": "在诊所",
+      "speakers": {
+        "A": {"name": "张医生", "role": "医生", "gender": "female"},
+        "B": {"name": "老王", "role": "病人", "gender": "male"}
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "张医生，我最近总是头疼，还有点发烧，这些症状已经有三天了。",
+          "pinyin": "Zhāng yī shēng, wǒ zuì jìn zǒng shì tóu téng, hái yǒu diǎn fā shāo, zhè xiē zhèng zhuàng yǐ jīng yǒu sān tiān le.",
+          "english": "Dr Zhang, I've been having constant headaches and a slight fever recently; these symptoms have been going on for three days."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我先帮您做个检查。您最近的饮食习惯怎么样？有没有按时吃饭、多喝水？",
+          "pinyin": "Wǒ xiān bāng nín zuò gè jiǎn chá. Nín zuì jìn de yǐn shí xí guàn zěn me yàng? Yǒu méi yǒu àn shí chī fàn, duō hē shuǐ?",
+          "english": "Let me do a check-up for you first. How have your dietary habits been recently? Have you been eating on time and drinking plenty of water?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "不太规律，工作忙的时候经常不吃早饭，营养也不均衡。",
+          "pinyin": "Bú tài guī lǜ, gōng zuò máng de shí hou jīng cháng bù chī zǎo fàn, yíng yǎng yě bù jūn héng.",
+          "english": "Not very regular. When work is busy I often skip breakfast, and my nutrition is unbalanced too."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这样不好，只有保持良好的饮食习惯，才能真正提高免疫力。",
+          "pinyin": "Zhè yàng bù hǎo, zhǐ yǒu bǎo chí liáng hǎo de yǐn shí xí guàn, cái néng zhēn zhèng tí gāo miǎn yì lì.",
+          "english": "That's not good. Only by maintaining good dietary habits can you truly boost your immunity."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我明白了。那我这次需要吃药物治疗吗？",
+          "pinyin": "Wǒ míng bai le. Nà wǒ zhè cì xū yào chī yào wù zhì liáo ma?",
+          "english": "I understand. Do I need medication treatment this time?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我给您开一些药，记得按时服用，以免症状加重。",
+          "pinyin": "Wǒ gěi nín kāi yī xiē yào, jì de àn shí fú yòng, yǐ miǎn zhèng zhuàng jiā zhòng.",
+          "english": "I'll prescribe some medicine for you; remember to take it on time so as to avoid the symptoms worsening."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好的，谢谢张医生！我一定会注意饮食，也会定期来检查。",
+          "pinyin": "Hǎo de, xiè xie Zhāng yī shēng! Wǒ yī dìng huì zhù yì yǐn shí, yě huì dìng qī lái jiǎn chá.",
+          "english": "Thank you, Dr Zhang! I will definitely pay attention to my diet and come for regular check-ups."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Recovering After Surgery",
+      "title_chinese": "手术后康复",
+      "speakers": {
+        "A": {"name": "护士小刘", "role": "护士", "gender": "female"},
+        "B": {"name": "李阿姨", "role": "病人", "gender": "female"}
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "李阿姨，您的手术很成功，现在正处于康复阶段，需要好好休息。",
+          "pinyin": "Lǐ ā yí, nín de shǒu shù hěn chéng gōng, xiàn zài zhèng chǔ yú kāng fù jiē duàn, xū yào hǎo hǎo xiū xi.",
+          "english": "Auntie Li, your surgery was very successful; you are now in the recovery phase and need to rest well."
+        },
+        {
+          "speaker": "B",
+          "chinese": "谢谢你！我可以吃东西了吗？之前一直禁食，感觉很没有力气。",
+          "pinyin": "Xiè xie nǐ! Wǒ kě yǐ chī dōng xi le ma? Zhī qián yī zhí jìn shí, gǎn jué hěn méi yǒu lì qi.",
+          "english": "Thank you! Can I eat now? I've been fasting all this time and feel very weak."
+        },
+        {
+          "speaker": "A",
+          "chinese": "可以了，但要先从清淡的食物开始，以免给肠胃增加负担。",
+          "pinyin": "Kě yǐ le, dàn yào xiān cóng qīng dàn de shí wù kāi shǐ, yǐ miǎn gěi cháng wèi zēng jiā fù dān.",
+          "english": "You can, but start with light foods first so as to avoid putting too much burden on your digestive system."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我知道了。医生说均衡营养有助于手术后的恢复，是吗？",
+          "pinyin": "Wǒ zhī dào le. Yī shēng shuō jūn héng yíng yǎng yǒu zhù yú shǒu shù hòu de huī fù, shì ma?",
+          "english": "I understand. The doctor said balanced nutrition is helpful for recovery after surgery — is that right?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "是的，营养均衡非常重要，有助于提高免疫力，促进伤口愈合。",
+          "pinyin": "Shì de, yíng yǎng jūn héng fēi cháng zhòng yào, yǒu zhù yú tí gāo miǎn yì lì, cù jìn shāng kǒu yù hé.",
+          "english": "Yes, balanced nutrition is very important; it helps boost immunity and promotes wound healing."
+        },
+        {
+          "speaker": "B",
+          "chinese": "还有什么需要注意的吗？",
+          "pinyin": "Hái yǒu shén me xū yào zhù yì de ma?",
+          "english": "Is there anything else I need to pay attention to?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "记得按时服用医生开的药物，以免影响康复进度。出院后也要定期来检查。",
+          "pinyin": "Jì de àn shí fú yòng yī shēng kāi de yào wù, yǐ miǎn yǐng xiǎng kāng fù jìn dù. Chū yuàn hòu yě yào dìng qī lái jiǎn chá.",
+          "english": "Remember to take your prescribed medication on time so as not to affect your recovery. After leaving hospital, come for regular check-ups too."
+        },
+        {
+          "speaker": "B",
+          "chinese": "好的，谢谢你的细心照顾，我一定好好配合治疗！",
+          "pinyin": "Hǎo de, xiè xie nǐ de xì xīn zhào gù, wǒ yī dìng hǎo hǎo pèi hé zhì liáo!",
+          "english": "Thank you for your attentive care! I will definitely cooperate fully with the treatment!"
+        }
+      ]
+    }
+  ]
+}
