@@ -11,84 +11,108 @@
       "chinese": "出差",
       "pinyin": "chū chāi",
       "english": "To go on a business trip",
-      "part_of_speech": "verb"
+      "part_of_speech": "verb",
+      "example":"我明天去北京出差",
+      "translation":"I will go on a business trip in Beijing tomorrow"
     },
     {
       "id": "hsk5_l1_02",
       "chinese": "出发",
       "pinyin": "chū fā",
       "english": "To set off; to depart",
-      "part_of_speech": "verb"
+      "part_of_speech": "verb",
+      "example":"出发前，别忘了检查登机牌和护照。",
+      "translation":"Before setting off, don't forget to check your boarding pass and passport."
     },
     {
       "id": "hsk5_l1_03",
       "chinese": "航班",
       "pinyin": "háng bān",
       "english": "Flight; scheduled flight",
-      "part_of_speech": "noun"
+      "part_of_speech": "noun",
+      "example":"你乘坐的航班号是什么？",
+      "translation":"What's the flight number that you're taking?"
     },
     {
       "id": "hsk5_l1_04",
       "chinese": "乘坐",
       "pinyin": "chéng zuò",
       "english": "To ride; to take (a vehicle)",
-      "part_of_speech": "verb"
+      "part_of_speech": "verb",
+      "example":"你乘坐的航班号是什么？",
+      "translation":"What's the flight number that you're taking?"
     },
     {
       "id": "hsk5_l1_05",
       "chinese": "导游",
       "pinyin": "dǎo yóu",
       "english": "Tour guide",
-      "part_of_speech": "noun"
+      "part_of_speech": "noun",
+      "example": "我是来申请旅行签证的，导游说要带很多证明文件。",
+      "translation": "I'm here to apply for a travel visa; the tour guide said I need to bring many supporting documents."
     },
     {
       "id": "hsk5_l1_06",
       "chinese": "降落",
       "pinyin": "jiàng luò",
       "english": "To land; to descend",
-      "part_of_speech": "verb"
+      "part_of_speech": "verb",
+      "example": "飞机已经顺利降落，乘客们都松了一口气。",
+      "translation": "The plane has landed safely; all the passengers breathed a sigh of relief."
     },
     {
       "id": "hsk5_l1_07",
       "chinese": "签证",
       "pinyin": "qiān zhèng",
       "english": "Visa",
-      "part_of_speech": "noun"
+      "part_of_speech": "noun",
+      "example": "如果来不及申请签证，这次旅行就要推迟了。",
+      "translation": "If there is no time to apply for a visa, this trip will have to be postponed."
     },
     {
       "id": "hsk5_l1_08",
       "chinese": "登机牌",
       "pinyin": "dēng jī pái",
       "english": "Boarding pass",
-      "part_of_speech": "noun"
+      "part_of_speech": "noun",
+      "example": "出发前，别忘了检查登机牌和护照。",
+      "translation": "Before setting off, don't forget to check your boarding pass and passport."
     },
     {
       "id": "hsk5_l1_09",
       "chinese": "高速公路",
       "pinyin": "gāo sù gōng lù",
       "english": "Highway; expressway",
-      "part_of_speech": "noun"
+      "part_of_speech": "noun",
+      "example": "大使馆在高速公路旁边，从这里走大概二十分钟。",
+      "translation": "The embassy is next to the highway; it's about a twenty-minute walk from here."
     },
     {
       "id": "hsk5_l1_10",
       "chinese": "迷路",
       "pinyin": "mí lù",
       "english": "To get lost",
-      "part_of_speech": "verb"
+      "part_of_speech": "verb",
+      "example": "她在陌生的城市迷路了，只好向路人求助。",
+      "translation": "She got lost in the unfamiliar city and had to ask strangers for help."
     },
     {
       "id": "hsk5_l1_11",
       "chinese": "大使馆",
       "pinyin": "dà shǐ guǎn",
       "english": "Embassy",
-      "part_of_speech": "noun"
+      "part_of_speech": "noun",
+      "example": "打扰一下，我好像迷路了，请问大使馆怎么走？",
+      "translation": "Excuse me, I think I'm lost — how do I get to the embassy?"
     },
     {
       "id": "hsk5_l1_12",
       "chinese": "旅行",
       "pinyin": "lǚ xíng",
       "english": "To travel; travel",
-      "part_of_speech": "verb/noun"
+      "part_of_speech": "verb/noun",
+      "example": "乘坐高铁旅行，既快又舒适，是很多人的首选。",
+      "translation": "Travelling by high-speed rail is both fast and comfortable, and is the first choice for many people."
     },
     {
       "id": "hsk5_l1_p01",
@@ -271,7 +295,7 @@
           "word_hints": {"登机牌": "dēng jī pái"}
         },
         {
-          "question": "签证还没申请，出发时间太近，我们 _____ 准备好了。",
+          "question": "签证还没申请，出发时间太近，我们 _____ 准备了。",
           "type": "multiple_choice",
           "correct": "来不及",
           "options": ["来不及", "来得及", "顺便", "降落"],
@@ -294,12 +318,12 @@
         {
           "question": "Choose the correct sentence.",
           "type": "multiple_choice",
-          "correct": "现在出发还来得及赶上这趟航班。",
+          "correct": "现在出发,还来得及赶上这趟航班。",
           "options": [
-            "现在出发还来得及赶上这趟航班。",
-            "现在出发还来不及赶上这趟航班。",
-            "现在来得及出发还赶上这趟航班。",
-            "现在还出发来得及这趟航班赶上。"
+            "现在出发,还来得及赶上这趟航班。",
+            "现在出发,还来不及赶上这趟航班。",
+            "现在来得及出发,还赶上这趟航班。",
+            "现在还出发,来得及这趟航班赶上。"
           ],
           "option_pinyin": [
             "Xiàn zài chū fā hái lái de jí gǎn shàng zhè tàng háng bān.",
