@@ -150,7 +150,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
                       question.difficulty === 'hard' && styles.difficultyHard,
                     ]}>
                       <Text style={styles.difficultyText}>
-                        {question.difficulty.toUpperCase()}
+                        {(question.difficulty || 'medium').toUpperCase()}
                       </Text>
                     </View>
                   </View>
@@ -357,7 +357,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
           question.difficulty === 'hard' && styles.difficultyHard,
         ]}>
           <Text style={styles.difficultyText}>
-            {question.difficulty.toUpperCase()}
+            {(question.difficulty || 'medium').toUpperCase()}
           </Text>
         </View>
 

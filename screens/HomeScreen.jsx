@@ -97,6 +97,23 @@ const LESSONS_BY_LEVEL = {
     { id: 14, title: 'Society & Values',            topic_chinese: '社会与责任' },
     { id: 15, title: 'Culture, Arts & Idioms',      topic_chinese: '中国文化与艺术' },
   ],
+  hsk5: [
+    { id: 1,  title: 'Travel & Transportation', topic_chinese: '旅行与交通' },
+    { id: 2,  title: 'Education & Learning',    topic_chinese: '教育与学习' },
+    { id: 3,  title: 'Media & Technology',      topic_chinese: '媒体与科技' },
+    { id: 4,  title: 'Food & Cuisine',          topic_chinese: '饮食与美食' },
+    { id: 5,  title: 'Sports & Fitness',        topic_chinese: '体育与健身' },
+    { id: 6,  title: 'Law & Rights',            topic_chinese: '法律与权利' },
+    { id: 7,  title: 'Business & Economy',      topic_chinese: '商业与经济' },
+    { id: 8,  title: 'Family & Relationships',  topic_chinese: '家庭与人际关系' },
+    { id: 9,  title: 'Language & Communication',topic_chinese: '语言与交流' },
+    { id: 10, title: 'Urban Life',              topic_chinese: '城市生活' },
+    { id: 11, title: 'Arts & Culture',          topic_chinese: '艺术与文化' },
+    { id: 12, title: 'Character & Personality', topic_chinese: '性格与品质' },
+    { id: 13, title: 'Health & Medicine',       topic_chinese: '健康与医疗' },
+    { id: 14, title: 'Time & Life Stages',      topic_chinese: '时间与人生阶段' },
+    { id: 15, title: 'Achievement & Success',   topic_chinese: '成就与成功' },
+  ],
 };
 
 export default function HomeScreen({
