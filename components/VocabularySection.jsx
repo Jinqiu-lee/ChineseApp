@@ -91,6 +91,14 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
               </Text>
             </View>
           )}
+          {item.example && (
+            <View style={styles.exampleBox}>
+              <Text style={styles.exampleChinese}>{item.example}</Text>
+              {item.translation && (
+                <Text style={styles.exampleTranslation}>{item.translation}</Text>
+              )}
+            </View>
+          )}
           <TouchableOpacity
             style={[styles.audioBtn, isPhrase && styles.audioBtnPhrase]}
             onPress={() => speakChinese(item.chinese)}
@@ -188,6 +196,26 @@ const styles = StyleSheet.create({
   detailRow: { flexDirection: 'row', marginBottom: 8 },
   detailLabel: { fontSize: 13, fontWeight: '600', color: '#a29bfe', marginRight: 8 },
   detailValue: { fontSize: 13, color: '#fff', flex: 1 },
+  exampleBox: {
+    backgroundColor: 'rgba(255,255,255,0.04)',
+    borderLeftWidth: 3,
+    borderLeftColor: '#a29bfe',
+    borderRadius: 8,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    marginBottom: 10,
+  },
+  exampleChinese: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: '#fff',
+    marginBottom: 4,
+  },
+  exampleTranslation: {
+    fontSize: 13,
+    color: '#b2bec3',
+    fontStyle: 'italic',
+  },
   audioBtn: {
     backgroundColor: 'rgba(162,155,254,0.15)',
     padding: 10,
