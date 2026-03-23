@@ -93,7 +93,15 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
           )}
           {item.example && (
             <View style={styles.exampleBox}>
-              <Text style={styles.exampleChinese}>{item.example}</Text>
+              <View style={styles.exampleHeader}>
+                <Text style={styles.exampleChinese}>{item.example}</Text>
+                <TouchableOpacity
+                  style={styles.exampleAudioBtn}
+                  onPress={(e) => { e.stopPropagation(); speakChinese(item.example); }}
+                >
+                  <Text style={styles.exampleAudioBtnText}>🔊</Text>
+                </TouchableOpacity>
+              </View>
               {item.translation && (
                 <Text style={styles.exampleTranslation}>{item.translation}</Text>
               )}
@@ -103,7 +111,7 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
             style={[styles.audioBtn, isPhrase && styles.audioBtnPhrase]}
             onPress={() => speakChinese(item.chinese)}
           >
-            <Text style={styles.audioBtnText}>🔊 Play Audio</Text>
+            <Text style={styles.audioBtnText}>🔊 Play Word</Text>
           </TouchableOpacity>
         </View>
       )}
@@ -205,11 +213,27 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     marginBottom: 10,
   },
+  exampleHeader: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    marginBottom: 4,
+  },
   exampleChinese: {
     fontSize: 15,
     fontWeight: '600',
     color: '#fff',
-    marginBottom: 4,
+    flex: 1,
+    marginRight: 8,
+  },
+  exampleAudioBtn: {
+    backgroundColor: 'rgba(162,155,254,0.2)',
+    borderRadius: 8,
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+  },
+  exampleAudioBtnText: {
+    fontSize: 14,
   },
   exampleTranslation: {
     fontSize: 13,

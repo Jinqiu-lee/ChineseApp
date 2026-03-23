@@ -12,6 +12,8 @@ const PHONEME_OVERRIDES = {
   '谁': 'shei2',
   // 背 as "carry on back" (bēi, tone 1) — 背包, 背着 etc.
   '背': 'bei1',
+  // 说 — Google TTS zh-CN misreads this as shui4; force shuō (tone 1)
+  '说': 'shuo1',
   // Note: 还 is NOT here — it is polyphonic (hái vs huán) and handled
   // per-compound in COMPOUND_PHONEME_OVERRIDES below.
 };
