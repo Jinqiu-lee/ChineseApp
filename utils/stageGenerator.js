@@ -93,13 +93,56 @@ function makeListenToImage(vocabItem, allVocab, lessonNumber, imageIndex = 0) {
   return { ...base, subtype: 'listen_to_picture' };
 }
 
+// ── Supplemental word list ────────────────────────────────────────────────
+// Words that must always be kept as a unit during tokenization even when they
+// are not in the lesson's own vocabulary.  Sorted longest-first so that
+// three-character entries (来不及, 来得及 …) are tried before two-character
+// sub-strings (来, 不 …).
+const SUPPLEMENT_WORDS = [
+  // 3-char compounds
+  '来不及','来得及','不得不','不得了','了不起','差不多','没关系',
+  '没问题','不一定','不知道','不应该','不可以','不需要',
+  // Conjunctions & connectives
+  '不仅仅','不仅是',
+  // 2-char conjunctions / adverbs
+  '不仅','不但','而且','虽然','但是','因为','所以','如果','因此',
+  '即使','尽管','随着','由于','通过','既然','否则','然而','不过',
+  '况且','何况','甚至','反而','其实','事实','总之','总的','毕竟',
+  '除非','只要','只有','无论','不管','尽管','相反',
+  // Common adverbs / auxiliary verbs
+  '已经','刚才','马上','立刻','突然','仍然','依然','竟然','居然',
+  '果然','当然','确实','真正','真的','几乎','大约','可能','也许',
+  '应该','需要','可以','能够','必须','愿意','打算','计划','希望',
+  '觉得','认为','知道','发现','相信','担心','害怕','决定','选择',
+  '继续','开始','结束','完成','实现','达到','满足','超过','减少',
+  '增加','提高','改变','发展','解决','处理','分析','研究','管理',
+  '控制','保持','保证','负责','注意','了解','关心','支持','帮助',
+  '参加','提供','建议','检查','安排','准备','推迟','取消','举办',
+  '进行','影响','联系','表示','表达','翻译','解释','说明','描述',
+  // Common 2-char nouns & verb-object compounds
+  '项目','员工','合理','安排','赚钱','打针','已经','工作','学习',
+  '生活','运动','锻炼','休息','旅行','购物','做饭','打扫','洗衣',
+  '上班','下班','上课','下课','回家','出门','出发','到达','离开',
+  '经济','社会','政府','环境','问题','情况','原因','结果','方法',
+  '方式','效果','影响','条件','要求','标准','质量','内容','关系',
+  '态度','习惯','能力','机会','责任','目标','计划','未来','过去',
+  '现在','以前','以后','刚刚','总是','经常','偶尔','从来','永远',
+  '完全','基本','一般','特别','非常','十分','相当','比较','有点',
+  '一些','有些','各种','所有','全部','部分','许多','大量','少量',
+  '更加','越来','不再','再次','又一','另外','此外','其中','其他',
+  '以及','并且','而且','或者','还是','就是','不是','正是','都是',
+  '互相','彼此','自己','自然','当时','同时','经过','通过','关于',
+  '对于','根据','按照','除了','包括','比如','例如','尤其','特别',
+  '主要','重要','必要','可能','实际','真实','直接','间接',
+].sort((a, b) => b.length - a.length);
+
 // ── Tokenizer (same logic as SentenceBuilder) ───────────────────────────
 function tokenizeSentence(chineseSentence, vocab) {
   if (!chineseSentence) return [];
-  const knownWords = vocab
-    .map(v => v.chinese)
-    .filter(Boolean)
-    .sort((a, b) => b.length - a.length);
+  const knownWords = [
+    ...SUPPLEMENT_WORDS,
+    ...vocab.map(v => v.chinese).filter(Boolean),
+  ].sort((a, b) => b.length - a.length);
 
   const tokens = [];
   let i = 0;
