@@ -3,11 +3,11 @@ import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const STAGE_META = [
-  { name: 'First Look',      desc: 'Flashcards · Audio · Matching',  icon: '👁',  color: '#a29bfe' },
-  { name: 'Listen & Choose', desc: 'Audio quiz · Fill in the blank',  icon: '🎧', color: '#54A0FF' },
-  { name: 'Build Sentences', desc: 'Arrange words · Fill blanks',     icon: '🧩', color: '#1DD1A1' },
-  { name: 'Match & Review',  desc: 'Matching pairs · Audio recall',   icon: '🔄', color: '#FF9F43' },
-  { name: 'Final Challenge', desc: 'All types · Full review',         icon: '🏆', color: '#FF6B6B' },
+  { name: 'First Look',      desc: 'Flashcards · Audio · Matching',  icon: '👁',  color: '#E0B04B' },
+  { name: 'Listen & Choose', desc: 'Audio quiz · Fill in the blank',  icon: '🎧', color: '#7BA7D4' },
+  { name: 'Build Sentences', desc: 'Arrange words · Fill blanks',     icon: '🧩', color: '#8DBF6E' },
+  { name: 'Match & Review',  desc: 'Matching pairs · Audio recall',   icon: '🔄', color: '#D98C2B' },
+  { name: 'Final Challenge', desc: 'All types · Full review',         icon: '🏆', color: '#F4C542' },
 ];
 
 export default function LessonStagesScreen({ lessonData, stageProgress = [], devUnlockAll = false, onSelectStage, onBack }) {
@@ -88,49 +88,51 @@ export default function LessonStagesScreen({ lessonData, stageProgress = [], dev
   );
 }
 
+const VG = {
+  bg: '#1C2A44', card: '#243454',
+  cream: '#F7F3E9', creamMid: '#C5B99A', creamMuted: '#8A7E6E',
+  gold: '#E0B04B', yellow: '#F4C542',
+  success: '#7DC47A',
+  border: 'rgba(244,197,66,0.13)', borderMid: 'rgba(244,197,66,0.28)',
+};
+
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#1a1a2e' },
-  header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 20,
-    paddingVertical: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255,255,255,0.08)',
+  safe:        { flex: 1, backgroundColor: VG.bg },
+  header:      {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
+    paddingHorizontal: 20, paddingVertical: 13,
+    borderBottomWidth: 1, borderBottomColor: VG.border,
   },
-  backBtn: { paddingVertical: 8, paddingRight: 12 },
-  backText: { fontSize: 16, fontWeight: '600', color: '#a29bfe' },
-  headerTitle: { fontSize: 16, fontWeight: '700', color: '#fff' },
-  lessonInfo: { alignItems: 'center', paddingVertical: 20, paddingHorizontal: 20 },
-  lessonChinese: { fontSize: 36, fontWeight: '900', color: '#fff', marginBottom: 4 },
-  lessonTopic: { fontSize: 16, color: '#a29bfe', marginBottom: 4 },
-  lessonMeta: { fontSize: 13, color: '#636e72' },
-  dotsRow: { flexDirection: 'row', justifyContent: 'center', gap: 8, marginBottom: 20 },
-  dot: { width: 10, height: 10, borderRadius: 5, backgroundColor: '#2d3436' },
-  dotUnlocked: { backgroundColor: '#636e72' },
-  dotDone: { backgroundColor: '#1DD1A1' },
+  backBtn:     { paddingVertical: 8, paddingRight: 12 },
+  backText:    { fontSize: 16, fontWeight: '600', color: VG.gold },
+  headerTitle: { fontSize: 16, fontWeight: '700', color: VG.cream },
+
+  lessonInfo:    { alignItems: 'center', paddingVertical: 20, paddingHorizontal: 20 },
+  lessonChinese: { fontSize: 36, fontWeight: '900', color: VG.cream, marginBottom: 4 },
+  lessonTopic:   { fontSize: 16, color: VG.gold, marginBottom: 4 },
+  lessonMeta:    { fontSize: 13, color: VG.creamMuted },
+
+  dotsRow:    { flexDirection: 'row', justifyContent: 'center', gap: 8, marginBottom: 20 },
+  dot:        { width: 10, height: 10, borderRadius: 5, backgroundColor: 'rgba(255,255,255,0.1)' },
+  dotUnlocked:{ backgroundColor: VG.creamMuted },
+  dotDone:    { backgroundColor: VG.success },
+
   scroll: { paddingHorizontal: 20 },
   card: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#16213e',
-    borderRadius: 18,
-    padding: 16,
-    marginBottom: 12,
-    borderWidth: 1,
-    borderColor: '#2d3436',
-    gap: 14,
+    flexDirection: 'row', alignItems: 'center',
+    backgroundColor: VG.card, borderRadius: 18,
+    padding: 16, marginBottom: 12,
+    borderWidth: 1, borderColor: VG.border, gap: 14,
   },
-  cardLocked: { opacity: 0.45 },
-  iconBubble: { width: 54, height: 54, borderRadius: 27, alignItems: 'center', justifyContent: 'center' },
-  stageIcon: { fontSize: 26 },
-  cardInfo: { flex: 1 },
-  stageName: { fontSize: 16, fontWeight: '700', color: '#fff', marginBottom: 3 },
-  stageDesc: { fontSize: 13, color: '#636e72' },
-  textMuted: { color: '#636e72' },
-  statusCol: { width: 36, alignItems: 'center' },
-  checkmark: { fontSize: 22 },
-  startBadge: { width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
-  startArrow: { fontSize: 16, fontWeight: '900', color: '#fff' },
+  cardLocked:  { opacity: 0.42 },
+  iconBubble:  { width: 54, height: 54, borderRadius: 27, alignItems: 'center', justifyContent: 'center' },
+  stageIcon:   { fontSize: 26 },
+  cardInfo:    { flex: 1 },
+  stageName:   { fontSize: 16, fontWeight: '700', color: VG.cream, marginBottom: 3 },
+  stageDesc:   { fontSize: 13, color: VG.creamMuted },
+  textMuted:   { color: VG.creamMuted },
+  statusCol:   { width: 36, alignItems: 'center' },
+  checkmark:   { fontSize: 22 },
+  startBadge:  { width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
+  startArrow:  { fontSize: 16, fontWeight: '900', color: VG.bg },
 });
