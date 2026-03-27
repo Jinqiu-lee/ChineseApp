@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import WaveBackground from '../components/WaveBackground';
+import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 
 const STAGE_META = [
@@ -18,7 +19,8 @@ export default function LessonStagesScreen({ lessonData, stageProgress = [], dev
   const isCompleted = (i) => stageProgress.includes(i);
 
   return (
-    <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
+    <ScreenBackground>
+      <SafeAreaView style={styles.safe}>
       <StatusBar barStyle={T.statusBar} />
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
 
@@ -88,7 +90,8 @@ export default function LessonStagesScreen({ lessonData, stageProgress = [], dev
         })}
         <View style={{ height: 32 }} />
       </ScrollView>
-    </SafeAreaView>
+      </SafeAreaView>
+    </ScreenBackground>
   );
 }
 

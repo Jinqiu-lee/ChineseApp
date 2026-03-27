@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import WaveBackground from '../components/WaveBackground';
+import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 
 const ROUND_LABELS = { 1: 'Round 1 · Learn', 2: 'Round 2 · Practice', 3: 'Round 3 · Master' };
@@ -23,7 +24,8 @@ export default function RoundCompleteScreen({
   const highAccuracy = currentRound === 2 && combinedAccuracy >= 90;
 
   return (
-    <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
+    <ScreenBackground>
+      <SafeAreaView style={styles.safe}>
       <StatusBar barStyle={T.statusBar} />
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
       <View style={styles.container}>
@@ -86,7 +88,8 @@ export default function RoundCompleteScreen({
         </View>
 
       </View>
-    </SafeAreaView>
+      </SafeAreaView>
+    </ScreenBackground>
   );
 }
 

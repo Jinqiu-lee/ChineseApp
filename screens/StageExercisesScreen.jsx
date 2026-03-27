@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, Alert, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import WaveBackground from '../components/WaveBackground';
+import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 import { generateRounds } from '../utils/stageGenerator';
 import FlashcardExercise from '../components/exercises/FlashcardExercise';
@@ -57,12 +58,14 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
 
   if (exercises.length === 0) {
     return (
-      <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
-        <StatusBar barStyle={T.statusBar} />
-        <View style={styles.center}>
-          <Text style={[styles.loadingText, { color: T.onBgMuted }]}>Loading exercises...</Text>
-        </View>
-      </SafeAreaView>
+      <ScreenBackground>
+        <SafeAreaView style={styles.safe}>
+          <StatusBar barStyle={T.statusBar} />
+          <View style={styles.center}>
+            <Text style={[styles.loadingText, { color: T.onBgMuted }]}>Loading exercises...</Text>
+          </View>
+        </SafeAreaView>
+      </ScreenBackground>
     );
   }
 
@@ -72,24 +75,26 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
     const stars = score >= total - 1 ? 3 : score >= Math.floor(total * 0.6) ? 2 : 1;
     const messages = ['加油！Keep practicing!', '很好！Great job!', '完美！Perfect!'];
     return (
-      <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
-        <StatusBar barStyle={T.statusBar} />
-        {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
-        <View style={styles.completion}>
-          <Text style={styles.starsText}>{'⭐'.repeat(stars)}</Text>
-          <Text style={[styles.doneTitle, { color: T.onBg }]}>Stage Complete!</Text>
-          <Text style={[styles.doneStageName, { color: T.gold }]}>{STAGE_NAMES[stageIndex]}</Text>
-          <Text style={[styles.doneScore, { color: T.success }]}>{score} / {total} correct</Text>
-          <Text style={[styles.doneMessage, { color: T.onBgMuted }]}>{messages[stars - 1]}</Text>
-          <TouchableOpacity
-            style={[styles.continueBtn, { backgroundColor: T.accent, shadowColor: T.shadow }]}
-            onPress={() => onComplete(stageIndex, score, exercises.length)}
-            activeOpacity={0.85}
-          >
-            <Text style={[styles.continueBtnText, { color: T.accentText }]}>Continue →</Text>
-          </TouchableOpacity>
-        </View>
-      </SafeAreaView>
+      <ScreenBackground>
+        <SafeAreaView style={styles.safe}>
+          <StatusBar barStyle={T.statusBar} />
+          {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
+          <View style={styles.completion}>
+            <Text style={styles.starsText}>{'⭐'.repeat(stars)}</Text>
+            <Text style={[styles.doneTitle, { color: T.onBg }]}>Stage Complete!</Text>
+            <Text style={[styles.doneStageName, { color: T.gold }]}>{STAGE_NAMES[stageIndex]}</Text>
+            <Text style={[styles.doneScore, { color: T.success }]}>{score} / {total} correct</Text>
+            <Text style={[styles.doneMessage, { color: T.onBgMuted }]}>{messages[stars - 1]}</Text>
+            <TouchableOpacity
+              style={[styles.continueBtn, { backgroundColor: T.accent, shadowColor: T.shadow }]}
+              onPress={() => onComplete(stageIndex, score, exercises.length)}
+              activeOpacity={0.85}
+            >
+              <Text style={[styles.continueBtnText, { color: T.accentText }]}>Continue →</Text>
+            </TouchableOpacity>
+          </View>
+        </SafeAreaView>
+      </ScreenBackground>
     );
   }
 
@@ -98,94 +103,96 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
   const progressPct = (currentIndex / exercises.length) * 100;
 
   return (
-    <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
-      <StatusBar barStyle={T.statusBar} />
-      {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
-      {/* Progress header */}
-      <View style={[styles.header, { borderBottomColor: T.border }]}>
-        <TouchableOpacity onPress={handleExit} style={styles.closeBtn}>
-          <Text style={[styles.closeText, { color: T.onBgMuted }]}>✕</Text>
-        </TouchableOpacity>
-        <View style={styles.progressBg}>
-          <View style={[styles.progressFill, { width: `${progressPct}%`, backgroundColor: T.progressFill }]} />
+    <ScreenBackground>
+      <SafeAreaView style={styles.safe}>
+        <StatusBar barStyle={T.statusBar} />
+        {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
+        {/* Progress header */}
+        <View style={[styles.header, { borderBottomColor: T.border }]}>
+          <TouchableOpacity onPress={handleExit} style={styles.closeBtn}>
+            <Text style={[styles.closeText, { color: T.onBgMuted }]}>✕</Text>
+          </TouchableOpacity>
+          <View style={styles.progressBg}>
+            <View style={[styles.progressFill, { width: `${progressPct}%`, backgroundColor: T.progressFill }]} />
+          </View>
+          <Text style={[styles.counter, { color: T.onBgMuted }]}>{currentIndex + 1}/{exercises.length}</Text>
         </View>
-        <Text style={[styles.counter, { color: T.onBgMuted }]}>{currentIndex + 1}/{exercises.length}</Text>
-      </View>
 
-      {/* Exercise content */}
-      <ScrollView
-        style={styles.scroll}
-        contentContainerStyle={styles.scrollContent}
-        keyboardShouldPersistTaps="handled"
-        showsVerticalScrollIndicator={false}
-      >
-        {exercise.type === 'flashcard' && (
-          <FlashcardExercise
-            key={currentIndex}
-            exercise={exercise}
-            onKnow={() => advance(true)}
-            onDontKnow={() => advance(false)}
-          />
-        )}
-        {exercise.type === 'audio_choice' && (
-          <AudioChoiceExercise
-            key={currentIndex}
-            exercise={exercise}
-            onCorrect={() => advance(true)}
-            onWrong={() => advance(false)}
-            avatarId={avatarId}
-          />
-        )}
-        {exercise.type === 'fill_blank' && (
-          <FillBlankExercise
-            key={currentIndex}
-            exercise={exercise}
-            onCorrect={() => advance(true)}
-            onWrong={() => advance(false)}
-          />
-        )}
-        {exercise.type === 'arrange' && (
-          <ArrangeSentenceExercise
-            key={currentIndex}
-            exercise={exercise}
-            onCorrect={() => advance(true)}
-            onWrong={() => advance(false)}
-          />
-        )}
-        {exercise.type === 'match_pairs' && (
-          <MatchPairsExercise
-            key={currentIndex}
-            exercise={exercise}
-            onComplete={(allCorrect) => advance(allCorrect)}
-          />
-        )}
-        {exercise.type === 'speak' && (
-          <SpeakExercise
-            key={currentIndex}
-            exercise={exercise}
-            onCorrect={() => advance(true)}
-            onWrong={() => advance(false)}
-            avatarId={avatarId}
-          />
-        )}
-        {exercise.type === 'image_exercise' && (
-          <ImageExercise
-            key={currentIndex}
-            exercise={exercise}
-            onCorrect={() => advance(true)}
-            onWrong={() => advance(false)}
-          />
-        )}
-        {exercise.type === 'pinyin_exercise' && (
-          <PinyinExercise
-            key={currentIndex}
-            exercise={exercise}
-            onCorrect={() => advance(true)}
-            onWrong={() => advance(false)}
-          />
-        )}
-      </ScrollView>
-    </SafeAreaView>
+        {/* Exercise content */}
+        <ScrollView
+          style={styles.scroll}
+          contentContainerStyle={styles.scrollContent}
+          keyboardShouldPersistTaps="handled"
+          showsVerticalScrollIndicator={false}
+        >
+          {exercise.type === 'flashcard' && (
+            <FlashcardExercise
+              key={currentIndex}
+              exercise={exercise}
+              onKnow={() => advance(true)}
+              onDontKnow={() => advance(false)}
+            />
+          )}
+          {exercise.type === 'audio_choice' && (
+            <AudioChoiceExercise
+              key={currentIndex}
+              exercise={exercise}
+              onCorrect={() => advance(true)}
+              onWrong={() => advance(false)}
+              avatarId={avatarId}
+            />
+          )}
+          {exercise.type === 'fill_blank' && (
+            <FillBlankExercise
+              key={currentIndex}
+              exercise={exercise}
+              onCorrect={() => advance(true)}
+              onWrong={() => advance(false)}
+            />
+          )}
+          {exercise.type === 'arrange' && (
+            <ArrangeSentenceExercise
+              key={currentIndex}
+              exercise={exercise}
+              onCorrect={() => advance(true)}
+              onWrong={() => advance(false)}
+            />
+          )}
+          {exercise.type === 'match_pairs' && (
+            <MatchPairsExercise
+              key={currentIndex}
+              exercise={exercise}
+              onComplete={(allCorrect) => advance(allCorrect)}
+            />
+          )}
+          {exercise.type === 'speak' && (
+            <SpeakExercise
+              key={currentIndex}
+              exercise={exercise}
+              onCorrect={() => advance(true)}
+              onWrong={() => advance(false)}
+              avatarId={avatarId}
+            />
+          )}
+          {exercise.type === 'image_exercise' && (
+            <ImageExercise
+              key={currentIndex}
+              exercise={exercise}
+              onCorrect={() => advance(true)}
+              onWrong={() => advance(false)}
+            />
+          )}
+          {exercise.type === 'pinyin_exercise' && (
+            <PinyinExercise
+              key={currentIndex}
+              exercise={exercise}
+              onCorrect={() => advance(true)}
+              onWrong={() => advance(false)}
+            />
+          )}
+        </ScrollView>
+      </SafeAreaView>
+    </ScreenBackground>
   );
 }
 

@@ -4,6 +4,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import WaveBackground from '../components/WaveBackground';
+import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 
 import { generateQuizRound } from '../utils/stageGenerator';
@@ -86,7 +87,8 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
     const needReview = pct < REVIEW_SCORE;
 
     return (
-      <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
+      <ScreenBackground>
+        <SafeAreaView style={styles.safe}>
         <StatusBar barStyle={T.statusBar} />
         {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
         <ScrollView contentContainerStyle={styles.resultsContainer}>
@@ -152,21 +154,24 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
           </View>
 
         </ScrollView>
-      </SafeAreaView>
+        </SafeAreaView>
+      </ScreenBackground>
     );
   }
 
   // ── Empty guard ────────────────────────────────────────────────────────────
   if (!exercise) {
     return (
-      <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
-        <View style={styles.center}>
-          <Text style={[styles.emptyText, { color: T.onBgMuted }]}>No quiz exercises available.</Text>
-          <TouchableOpacity style={[styles.doneButton, { borderColor: T.gold }]} onPress={onBack}>
-            <Text style={[styles.doneButtonText, { color: T.gold }]}>← Go Back</Text>
-          </TouchableOpacity>
-        </View>
-      </SafeAreaView>
+      <ScreenBackground>
+        <SafeAreaView style={styles.safe}>
+          <View style={styles.center}>
+            <Text style={[styles.emptyText, { color: T.onBgMuted }]}>No quiz exercises available.</Text>
+            <TouchableOpacity style={[styles.doneButton, { borderColor: T.gold }]} onPress={onBack}>
+              <Text style={[styles.doneButtonText, { color: T.gold }]}>← Go Back</Text>
+            </TouchableOpacity>
+          </View>
+        </SafeAreaView>
+      </ScreenBackground>
     );
   }
 
@@ -184,7 +189,8 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
   const typeLabel = TYPE_LABELS[exercise.type] ?? '📝 Quiz';
 
   return (
-    <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
+    <ScreenBackground>
+      <SafeAreaView style={styles.safe}>
       <StatusBar barStyle={T.statusBar} />
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
 
@@ -270,7 +276,8 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
           />
         )}
       </ScrollView>
-    </SafeAreaView>
+      </SafeAreaView>
+    </ScreenBackground>
   );
 }
 

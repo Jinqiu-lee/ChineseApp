@@ -7,6 +7,7 @@ import GrammarSection from '../components/GrammarSection';
 import AvatarCharacter from '../components/AvatarCharacter';
 import { getAvatarForLesson } from '../config/lessonAvatarMap';
 import WaveBackground from '../components/WaveBackground';
+import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 
 import lesson1 from '../data/hsk1/hsk1_lesson_1.json';
@@ -165,14 +166,16 @@ export default function LessonDetailScreen({
 
   if (!lesson) {
     return (
-      <SafeAreaView style={styles.safe}>
-        <View style={styles.errorContainer}>
-          <Text style={styles.errorText}>❌ Lesson {lessonId} not found</Text>
-          <TouchableOpacity onPress={onBack}>
-            <Text style={styles.backButtonText}>← Go Back</Text>
-          </TouchableOpacity>
-        </View>
-      </SafeAreaView>
+      <ScreenBackground>
+        <SafeAreaView style={styles.safe}>
+          <View style={styles.errorContainer}>
+            <Text style={styles.errorText}>❌ Lesson {lessonId} not found</Text>
+            <TouchableOpacity onPress={onBack}>
+              <Text style={styles.backButtonText}>← Go Back</Text>
+            </TouchableOpacity>
+          </View>
+        </SafeAreaView>
+      </ScreenBackground>
     );
   }
 
@@ -181,7 +184,8 @@ export default function LessonDetailScreen({
   const completedCount = stageProgress.length;
 
   return (
-    <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
+    <ScreenBackground>
+      <SafeAreaView style={styles.safe}>
       <StatusBar barStyle={T.statusBar} />
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
 
@@ -428,7 +432,8 @@ export default function LessonDetailScreen({
 
         <View style={{ height: 40 }} />
       </ScrollView>
-    </SafeAreaView>
+      </SafeAreaView>
+    </ScreenBackground>
   );
 }
 
