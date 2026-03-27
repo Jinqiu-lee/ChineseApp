@@ -19,7 +19,7 @@ export default function LessonStagesScreen({ lessonData, stageProgress = [], dev
   const isCompleted = (i) => stageProgress.includes(i);
 
   return (
-    <ScreenBackground>
+    <ScreenBackground levelId={levelId}>
       <SafeAreaView style={styles.safe}>
       <StatusBar barStyle={T.statusBar} />
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}

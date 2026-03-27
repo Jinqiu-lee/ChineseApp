@@ -2,6 +2,27 @@
 // Blue (night sky) + Yellow (lantern/sunlight) = the core visual signature.
 // Keep UI elements sharp and flat. Backgrounds carry the painterly mood.
 
+// ── Per-level Van Gogh painting backgrounds ───────────────────────────────────
+// Each HSK level maps to a specific Van Gogh painting used as the screen bg.
+// require() calls must be static strings — no dynamic paths in React Native.
+const LEVEL_BACKGROUND_IMAGES = {
+  hsk1: require('../assets/UI_design_images/Sunflowers-level1.jpg'),
+  hsk2: require('../assets/UI_design_images/The-Cafe-Terrace-at-Night-1888-level2.jpg'),
+  hsk3: require('../assets/UI_design_images/Wheat-Field_level3.webp'),
+  hsk4: require('../assets/UI_design_images/Van-Gogh-Homes-level4_reference.jpg'),
+  hsk5: require('../assets/UI_design_images/Starry_Night_level5.webp'),
+  hsk6: require('../assets/UI_design_images/images_level6.avif'),
+  default: require('../assets/UI_design_images/abstarct_expressive_yellow_brush_strokes_oncanvas_background .jpeg'),
+};
+
+/**
+ * Returns the ImageBackground source for the given HSK level.
+ * Falls back to the warm canvas texture if levelId is unknown.
+ */
+export function getLevelBackground(levelId) {
+  return LEVEL_BACKGROUND_IMAGES[levelId] ?? LEVEL_BACKGROUND_IMAGES.default;
+}
+
 // ── Per-level full-screen palettes ───────────────────────────────────────────
 // Used by lesson flow screens (LessonDetail, Stages, Quiz, RoundComplete).
 // Each level maps to a Van Gogh painting mood.
@@ -36,29 +57,29 @@ export const LEVEL_SCREEN_PALETTES = {
     waveEnabled:  false,
   },
 
-  // ── Level 2: Sunflowers (1888) ──────────────────────────────────────────────
-  // Canvas bg + deep amber-orange accent — sunflower warmth
+  // ── Level 2: Café Terrace at Night ─────────────────────────────────────────
+  // Dark night-blue painting — needs LIGHT text, gold/amber accents
   hsk2: {
     bg:           'transparent',
     card:         '#FFFFFF',
     cardDark:     'rgba(255,255,255,0.88)',
-    titleText:    '#5C3A00',
-    onBg:         '#5C3A00',     // dark amber-brown on canvas
-    onBgMuted:    '#8A5E20',
+    titleText:    '#F7F3E9',
+    onBg:         '#F7F3E9',     // light cream on dark painting
+    onBgMuted:    '#C5B99A',
     onCard:       '#1A1200',
     onCardMuted:  '#6B5030',
-    accent:       '#C8790A',     // deep amber — sunflower core
-    accentText:   '#FFFFFF',
-    altAccent:    '#5C3A00',     // dark brown secondary
-    altAccentText:'#FFFFFF',
-    gold:         '#A07010',
-    border:       'rgba(80,50,0,0.18)',
-    cardBorder:   'rgba(80,50,0,0.12)',
-    shadow:       'rgba(80,50,0,0.22)',
-    progressFill: '#C8790A',
-    success:      '#2D7A4A',
-    error:        '#C4503A',
-    statusBar:    'dark-content',
+    accent:       '#F4C542',     // bright lantern yellow CTA
+    accentText:   '#1C2A44',
+    altAccent:    '#D98C2B',     // amber secondary
+    altAccentText:'#1C2A44',
+    gold:         '#E0B04B',
+    border:       'rgba(244,197,66,0.30)',
+    cardBorder:   'rgba(217,140,43,0.25)',
+    shadow:       'rgba(0,0,0,0.35)',
+    progressFill: '#F4C542',
+    success:      '#7DC47A',
+    error:        '#D9634E',
+    statusBar:    'light-content',
     waveEnabled:  false,
   },
 
@@ -95,7 +116,8 @@ export const LEVEL_SCREEN_PALETTES = {
 
   // Fallback for hsk4/hsk5 — canvas bg + deep blue-purple accent
   hsk4: { bg:'transparent',card:'#FFFFFF',cardDark:'rgba(255,255,255,0.88)',titleText:'#2C1040',onBg:'#2C1040',onBgMuted:'#5A3A7A',onCard:'#1A1200',onCardMuted:'#6B5030',accent:'#5C3A9E',accentText:'#FFFFFF',altAccent:'#C8790A',altAccentText:'#FFFFFF',gold:'#8B7010',border:'rgba(80,50,0,0.18)',cardBorder:'rgba(80,50,0,0.12)',shadow:'rgba(80,50,0,0.22)',progressFill:'#5C3A9E',success:'#2D7A4A',error:'#C4503A',statusBar:'dark-content',waveEnabled:false },
-  hsk5: { bg:'transparent',card:'#FFFFFF',cardDark:'rgba(255,255,255,0.88)',titleText:'#0A2040',onBg:'#0A2040',onBgMuted:'#2A4A6A',onCard:'#1A1200',onCardMuted:'#6B5030',accent:'#1C5C8A',accentText:'#FFFFFF',altAccent:'#C8790A',altAccentText:'#FFFFFF',gold:'#8B7010',border:'rgba(80,50,0,0.18)',cardBorder:'rgba(80,50,0,0.12)',shadow:'rgba(80,50,0,0.22)',progressFill:'#1C5C8A',success:'#2D7A4A',error:'#C4503A',statusBar:'dark-content',waveEnabled:false },
+  // hsk5: Starry Night — dark blue painting, needs light text
+  hsk5: { bg:'transparent',card:'#FFFFFF',cardDark:'rgba(255,255,255,0.88)',titleText:'#F7F3E9',onBg:'#F7F3E9',onBgMuted:'#C5B99A',onCard:'#1A1200',onCardMuted:'#6B5030',accent:'#7BA7D4',accentText:'#0A1A3A',altAccent:'#F4C542',altAccentText:'#0A1A3A',gold:'#7BA7D4',border:'rgba(123,167,212,0.35)',cardBorder:'rgba(123,167,212,0.25)',shadow:'rgba(0,0,0,0.35)',progressFill:'#7BA7D4',success:'#7DC47A',error:'#D9634E',statusBar:'light-content',waveEnabled:false },
 };
 
 export const VG = {

@@ -24,7 +24,7 @@ export default function RoundCompleteScreen({
   const highAccuracy = currentRound === 2 && combinedAccuracy >= 90;
 
   return (
-    <ScreenBackground>
+    <ScreenBackground levelId={levelId}>
       <SafeAreaView style={styles.safe}>
       <StatusBar barStyle={T.statusBar} />
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}

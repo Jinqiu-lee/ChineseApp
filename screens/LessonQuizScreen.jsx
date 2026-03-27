@@ -87,7 +87,7 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
     const needReview = pct < REVIEW_SCORE;
 
     return (
-      <ScreenBackground>
+      <ScreenBackground levelId={levelId}>
         <SafeAreaView style={styles.safe}>
         <StatusBar barStyle={T.statusBar} />
         {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
@@ -162,7 +162,7 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
   // ── Empty guard ────────────────────────────────────────────────────────────
   if (!exercise) {
     return (
-      <ScreenBackground>
+      <ScreenBackground levelId={levelId}>
         <SafeAreaView style={styles.safe}>
           <View style={styles.center}>
             <Text style={[styles.emptyText, { color: T.onBgMuted }]}>No quiz exercises available.</Text>
@@ -189,7 +189,7 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
   const typeLabel = TYPE_LABELS[exercise.type] ?? '📝 Quiz';
 
   return (
-    <ScreenBackground>
+    <ScreenBackground levelId={levelId}>
       <SafeAreaView style={styles.safe}>
       <StatusBar barStyle={T.statusBar} />
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}

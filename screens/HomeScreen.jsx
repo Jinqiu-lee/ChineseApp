@@ -319,7 +319,7 @@ export default function HomeScreen({
   if (selectedLevel) {
     const lessons = LESSONS_BY_LEVEL[selectedLevel.id] || [];
     return (
-      <ScreenBackground>
+      <ScreenBackground levelId={selectedLevel.id}>
       <SafeAreaView style={styles.safe}>
         <StatusBar barStyle="dark-content" />
 
@@ -417,7 +417,7 @@ export default function HomeScreen({
 
   // ── Hub view ────────────────────────────────────────────────────
   return (
-    <ScreenBackground>
+    <ScreenBackground levelId={currentLevelConfig.id}>
     <SafeAreaView style={styles.safe}>
       <StatusBar barStyle="dark-content" />
 

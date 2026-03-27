@@ -1,14 +1,17 @@
 import React from 'react';
-import { ImageBackground, StyleSheet } from 'react-native';
+import { ImageBackground, View, StyleSheet } from 'react-native';
+import { getLevelBackground } from '../config/vanGoghTheme';
 
-// Warm golden oil-paint canvas — used as universal screen background.
-// Filename has a leading space before .jpeg — must match exactly.
-const CANVAS_BG = require('../assets/UI_design_images/abstarct_expressive_yellow_brush_strokes_oncanvas_background .jpeg');
-
-export default function ScreenBackground({ children, style }) {
+/**
+ * Full-screen painting background.
+ * Pass `levelId` to use the Van Gogh painting for that HSK level.
+ * Falls back to the warm canvas texture when levelId is omitted or unknown.
+ */
+export default function ScreenBackground({ children, levelId, style }) {
+  const source = getLevelBackground(levelId);
   return (
     <ImageBackground
-      source={CANVAS_BG}
+      source={source}
       style={[styles.root, style]}
       resizeMode="cover"
     >

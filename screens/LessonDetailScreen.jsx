@@ -166,7 +166,7 @@ export default function LessonDetailScreen({
 
   if (!lesson) {
     return (
-      <ScreenBackground>
+      <ScreenBackground levelId={levelId}>
         <SafeAreaView style={styles.safe}>
           <View style={styles.errorContainer}>
             <Text style={styles.errorText}>❌ Lesson {lessonId} not found</Text>
@@ -184,7 +184,7 @@ export default function LessonDetailScreen({
   const completedCount = stageProgress.length;
 
   return (
-    <ScreenBackground>
+    <ScreenBackground levelId={levelId}>
       <SafeAreaView style={styles.safe}>
       <StatusBar barStyle={T.statusBar} />
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}

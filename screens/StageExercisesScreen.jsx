@@ -58,7 +58,7 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
 
   if (exercises.length === 0) {
     return (
-      <ScreenBackground>
+      <ScreenBackground levelId={levelId}>
         <SafeAreaView style={styles.safe}>
           <StatusBar barStyle={T.statusBar} />
           <View style={styles.center}>
@@ -75,7 +75,7 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
     const stars = score >= total - 1 ? 3 : score >= Math.floor(total * 0.6) ? 2 : 1;
     const messages = ['加油！Keep practicing!', '很好！Great job!', '完美！Perfect!'];
     return (
-      <ScreenBackground>
+      <ScreenBackground levelId={levelId}>
         <SafeAreaView style={styles.safe}>
           <StatusBar barStyle={T.statusBar} />
           {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
@@ -103,7 +103,7 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
   const progressPct = (currentIndex / exercises.length) * 100;
 
   return (
-    <ScreenBackground>
+    <ScreenBackground levelId={levelId}>
       <SafeAreaView style={styles.safe}>
         <StatusBar barStyle={T.statusBar} />
         {T.waveEnabled && <WaveBackground colors={T.waveColors} />}

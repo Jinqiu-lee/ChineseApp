@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import ScreenBackground from '../components/ScreenBackground';
+import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 
 const PASS_SCORE = 60;
 const REVIEW_SCORE = 50;
@@ -29,6 +31,7 @@ const QUIZ_BY_LEVEL = {
 };
 
 export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) {
+  const T = LEVEL_SCREEN_PALETTES[currentLevelId] || LEVEL_SCREEN_PALETTES.hsk1;
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [answers, setAnswers] = useState({});
@@ -103,8 +106,9 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
     });
 
     return (
+      <ScreenBackground levelId={currentLevelId}>
       <SafeAreaView style={styles.safe}>
-        <StatusBar barStyle="light-content" />
+        <StatusBar barStyle={T.statusBar} />
         
         <View style={styles.header}>
           <TouchableOpacity onPress={() => setShowReview(false)} style={styles.backButton}>
@@ -195,6 +199,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
           )}
         </ScrollView>
       </SafeAreaView>
+      </ScreenBackground>
     );
   }
 
@@ -206,8 +211,9 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
     const nextLevel = NEXT_LEVEL[currentLevelId];
 
     return (
+      <ScreenBackground levelId={currentLevelId}>
       <SafeAreaView style={styles.safe}>
-        <StatusBar barStyle="light-content" />
+        <StatusBar barStyle={T.statusBar} />
         <ScrollView contentContainerStyle={styles.resultsContainer}>
 
           {/* Unlock celebration (passed only) */}
@@ -319,13 +325,15 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
           </View>
         </ScrollView>
       </SafeAreaView>
+      </ScreenBackground>
     );
   }
 
   // Quiz Screen
   return (
+    <ScreenBackground levelId={currentLevelId}>
     <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle={T.statusBar} />
       
       {/* Header */}
       <View style={styles.header}>
@@ -425,11 +433,12 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
         </TouchableOpacity>
       </View>
     </SafeAreaView>
+    </ScreenBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#1a1a2e' },
+  safe: { flex: 1, backgroundColor: 'transparent' },
   header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 20, paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.1)' },
   backButton: { paddingVertical: 8, paddingRight: 12 },
   backButtonText: { fontSize: 16, fontWeight: '600', color: '#FF6B6B' },
