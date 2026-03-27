@@ -127,17 +127,17 @@ const LESSONS_BY_LEVEL = {
 const LESSONS = LESSONS_BY_LEVEL.hsk1;
 
 const STAGE_META = [
-  { name: 'First Look',      desc: 'Flashcards · Audio · Match',    icon: '👁',  color: '#a29bfe' },
-  { name: 'Listen & Choose', desc: 'Audio quiz · Fill in the blank', icon: '🎧', color: '#54A0FF' },
-  { name: 'Build Sentences', desc: 'Arrange words · Fill blanks',    icon: '🧩', color: '#1DD1A1' },
-  { name: 'Match & Review',  desc: 'Matching pairs · Audio recall',  icon: '🔄', color: '#FF9F43' },
-  { name: 'Final Challenge', desc: 'All types · Full review',        icon: '🏆', color: '#FF6B6B' },
+  { name: 'First Look',      desc: 'Flashcards · Audio · Match',    icon: '👁',  color: '#E0B04B' },
+  { name: 'Listen & Choose', desc: 'Audio quiz · Fill in the blank', icon: '🎧', color: '#7BA7D4' },
+  { name: 'Build Sentences', desc: 'Arrange words · Fill blanks',    icon: '🧩', color: '#8DBF6E' },
+  { name: 'Match & Review',  desc: 'Matching pairs · Audio recall',  icon: '🔄', color: '#D98C2B' },
+  { name: 'Final Challenge', desc: 'All types · Full review',        icon: '🏆', color: '#F4C542' },
 ];
 
 const ROUND_INFO = {
-  1: { label: 'Round 1', sub: 'Learn', color: '#a29bfe' },
-  2: { label: 'Round 2', sub: 'Practice', color: '#54A0FF' },
-  3: { label: 'Round 3', sub: 'Master', color: '#1DD1A1' },
+  1: { label: 'Round 1', sub: 'Learn',    color: '#E0B04B' },
+  2: { label: 'Round 2', sub: 'Practice', color: '#D98C2B' },
+  3: { label: 'Round 3', sub: 'Master',   color: '#F4C542' },
 };
 
 export default function LessonDetailScreen({
@@ -428,149 +428,184 @@ export default function LessonDetailScreen({
   );
 }
 
+// ── Café Terrace palette (warm cream cards on night-blue bg) ──────────────────
+const VG = {
+  bg:          '#1C2A44',   // night sky
+  card:        '#F5EDD8',   // warm parchment — café glow
+  cardHover:   '#FFF8EC',   // lighter parchment — active/hover
+  cardDark:    '#243454',   // dark card variant
+  onCard:      '#1C2A44',   // dark text on cream cards
+  onCardMid:   '#5C4A2A',   // warm brown secondary
+  onCardMuted: '#9A8A6A',   // muted warm grey
+  yellow:      '#F4C542',   // sunlight / primary CTA
+  gold:        '#E0B04B',   // lantern / secondary
+  orange:      '#D98C2B',   // amber deep
+  cream:       '#F7F3E9',   // screen-level text (on dark bg)
+  creamMid:    '#C5B99A',
+  creamMuted:  '#8A7E6E',
+  success:     '#5A9E5A',   // warm sage green
+  border:      'rgba(244,197,66,0.15)',
+  borderMid:   'rgba(244,197,66,0.30)',
+  shadow:      '#A0700A',   // amber shadow for glow
+};
+
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#1a1a2e' },
-  scroll: { flex: 1 },
+  safe:    { flex: 1, backgroundColor: VG.bg },
+  scroll:  { flex: 1 },
   content: { padding: 20 },
 
+  // ── Header ────────────────────────────────────────────────────────────────
   header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: 20,
-    paddingVertical: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: 'rgba(255,255,255,0.08)',
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
+    paddingHorizontal: 20, paddingVertical: 13,
+    borderBottomWidth: 1, borderBottomColor: VG.border,
   },
-  backBtn: { paddingVertical: 8, paddingRight: 12 },
-  backBtnText: { fontSize: 16, fontWeight: '600', color: '#a29bfe' },
-  headerTitle: { fontSize: 16, fontWeight: '700', color: '#fff' },
+  backBtn:     { paddingVertical: 8, paddingRight: 12 },
+  backBtnText: { fontSize: 16, fontWeight: '600', color: VG.gold },
+  headerTitle: { fontSize: 16, fontWeight: '700', color: VG.cream },
 
-  // Title card
+  // ── Title card — cream warm glow ──────────────────────────────────────────
   titleCard: {
-    backgroundColor: '#16213e',
-    borderRadius: 20,
+    backgroundColor: VG.card,
+    borderRadius: 22,
     padding: 24,
     alignItems: 'center',
     marginBottom: 24,
     borderWidth: 1,
-    borderColor: '#2d3436',
+    borderColor: 'rgba(217,140,43,0.2)',
+    shadowColor: VG.shadow,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.18,
+    shadowRadius: 14,
+    elevation: 6,
   },
-  topicChinese: { fontSize: 36, fontWeight: '900', color: '#fff', marginBottom: 6 },
-  topicEnglish: { fontSize: 18, fontWeight: '600', color: '#a29bfe', marginBottom: 4 },
-  topicMeta: { fontSize: 13, color: '#636e72' },
+  topicChinese: { fontSize: 36, fontWeight: '900', color: VG.onCard,    marginBottom: 6 },
+  topicEnglish: { fontSize: 18, fontWeight: '600', color: VG.orange,    marginBottom: 4 },
+  topicMeta:    { fontSize: 13,                    color: VG.onCardMuted },
 
-  // Section headers
+  // ── Section headers ───────────────────────────────────────────────────────
   sectionHeader: { flexDirection: 'row', alignItems: 'center', marginBottom: 14, gap: 8 },
-  sectionDot: { width: 8, height: 8, borderRadius: 4, backgroundColor: '#a29bfe' },
-  sectionTitle: { fontSize: 18, fontWeight: '800', color: '#fff', flex: 1 },
-  stageCount: { fontSize: 13, color: '#636e72', fontWeight: '600' },
+  sectionDot:    { width: 8, height: 8, borderRadius: 4, backgroundColor: VG.gold },
+  sectionTitle:  { fontSize: 18, fontWeight: '800', color: VG.cream, flex: 1 },
+  stageCount:    { fontSize: 13, color: VG.creamMuted, fontWeight: '600' },
 
-  // Learning 2×2 grid
+  // ── Learning 2×2 grid ─────────────────────────────────────────────────────
   learnGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginBottom: 8 },
   learnBtn: {
     width: '48%',
-    backgroundColor: '#16213e',
+    backgroundColor: VG.card,
     borderRadius: 14,
     padding: 16,
     alignItems: 'center',
     borderWidth: 1.5,
-    borderColor: '#2d3436',
+    borderColor: 'rgba(217,140,43,0.2)',
     gap: 6,
+    shadowColor: VG.shadow,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.12,
+    shadowRadius: 8,
+    elevation: 3,
   },
-  learnBtnActive:  { borderColor: '#a29bfe', backgroundColor: 'rgba(162,155,254,0.1)' },
-  learnBtnPinyin:      { borderColor: '#54A0FF', backgroundColor: 'rgba(84,160,255,0.08)' },
-  learnBtnCharacters:  { borderColor: '#1DD1A1', backgroundColor: 'rgba(29,209,161,0.08)' },
-  learnBtnCulture:     { borderColor: '#FF9F43', backgroundColor: 'rgba(255,159,67,0.08)' },
-  learnBtnEmoji: { fontSize: 24 },
-  learnBtnLabel: { fontSize: 14, fontWeight: '700', color: '#636e72', textAlign: 'center' },
-  learnBtnLabelActive:  { color: '#a29bfe' },
-  learnBtnLabelPinyin:      { color: '#54A0FF' },
-  learnBtnLabelCharacters:  { color: '#1DD1A1' },
+  learnBtnActive:     { borderColor: VG.gold,   backgroundColor: VG.cardHover },
+  learnBtnPinyin:     { borderColor: '#7BA7D4', backgroundColor: 'rgba(123,167,212,0.08)' },
+  learnBtnCharacters: { borderColor: VG.gold,   backgroundColor: VG.card },
+  learnBtnCulture:    { borderColor: VG.orange, backgroundColor: VG.card },
+  learnBtnEmoji:      { fontSize: 24 },
+  learnBtnLabel:      { fontSize: 14, fontWeight: '700', color: VG.onCardMid,   textAlign: 'center' },
+  learnBtnLabelActive:     { color: VG.orange },
+  learnBtnLabelPinyin:     { color: '#4A80AA' },
+  learnBtnLabelCharacters: { color: VG.orange },
 
-  // Culture / Idioms section
+  // ── Culture / Idioms ──────────────────────────────────────────────────────
   cultureCard: {
-    backgroundColor: 'rgba(255,159,67,0.06)', borderRadius: 14,
-    borderWidth: 1, borderColor: 'rgba(255,159,67,0.25)',
+    backgroundColor: VG.card, borderRadius: 14,
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.25)',
     padding: 16, marginBottom: 16,
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.12, shadowRadius: 8, elevation: 3,
   },
-  cultureTitleChinese: { fontSize: 18, fontWeight: '800', color: '#FF9F43', marginBottom: 2 },
-  cultureTitle:   { fontSize: 13, fontWeight: '600', color: '#b2bec3', marginBottom: 10 },
-  cultureContent: { fontSize: 14, color: '#dfe6e9', lineHeight: 22 },
-  idiomsBlock:    { marginTop: 14, paddingTop: 12, borderTopWidth: 1, borderTopColor: 'rgba(255,159,67,0.2)' },
-  idiomsHeading:  { fontSize: 14, fontWeight: '700', color: '#FF9F43', marginBottom: 10 },
+  cultureTitleChinese: { fontSize: 18, fontWeight: '800', color: VG.orange,     marginBottom: 2 },
+  cultureTitle:        { fontSize: 13, fontWeight: '600', color: VG.onCardMid,  marginBottom: 10 },
+  cultureContent:      { fontSize: 14,                    color: VG.onCard,      lineHeight: 22 },
+  idiomsBlock:    { marginTop: 14, paddingTop: 12, borderTopWidth: 1, borderTopColor: 'rgba(217,140,43,0.2)' },
+  idiomsHeading:  { fontSize: 14, fontWeight: '700', color: VG.orange,    marginBottom: 10 },
   idiomRow:       { marginBottom: 10 },
-  idiomChinese:   { fontSize: 16, fontWeight: '800', color: '#fff', marginBottom: 2 },
-  idiomPinyin:    { fontSize: 12, color: '#FF9F43', fontStyle: 'italic', marginBottom: 2 },
-  idiomEnglish:   { fontSize: 13, color: '#b2bec3' },
+  idiomChinese:   { fontSize: 16, fontWeight: '800', color: VG.onCard,    marginBottom: 2 },
+  idiomPinyin:    { fontSize: 12, color: VG.orange, fontStyle: 'italic',  marginBottom: 2 },
+  idiomEnglish:   { fontSize: 13,                    color: VG.onCardMid },
 
-  // Quiz banner (below stages)
+  // ── Quiz banner ───────────────────────────────────────────────────────────
   quizBanner: {
     flexDirection: 'row', alignItems: 'center', borderRadius: 16,
     padding: 16, marginBottom: 20, borderWidth: 1.5, gap: 12,
   },
-  quizBannerUnlocked: { borderColor: '#FF6B6B', backgroundColor: 'rgba(255,107,107,0.08)' },
-  quizBannerLocked:   { borderColor: '#2d3436', backgroundColor: 'rgba(255,255,255,0.03)', opacity: 0.6 },
-  quizBannerEmoji: { fontSize: 28 },
-  quizBannerTitle: { fontSize: 15, fontWeight: '700', color: '#fff', marginBottom: 3 },
-  quizBannerSub:   { fontSize: 12, color: '#636e72', lineHeight: 17 },
-  quizBannerArrow: { fontSize: 18, color: '#FF6B6B', fontWeight: '700' },
+  quizBannerUnlocked: {
+    borderColor: VG.orange, backgroundColor: VG.card,
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.15, shadowRadius: 10, elevation: 4,
+  },
+  quizBannerLocked:   { borderColor: VG.border, backgroundColor: 'rgba(255,255,255,0.03)', opacity: 0.55 },
+  quizBannerEmoji:    { fontSize: 28 },
+  quizBannerTitle:    { fontSize: 15, fontWeight: '700', color: VG.onCard,    marginBottom: 3 },
+  quizBannerSub:      { fontSize: 12,                    color: VG.onCardMuted, lineHeight: 17 },
+  quizBannerArrow:    { fontSize: 18, fontWeight: '700', color: VG.orange },
 
-  // Expanded section
+  // ── Expanded section ──────────────────────────────────────────────────────
   expandedSection: { marginBottom: 24, marginTop: 4 },
 
-  // Round badge
+  // ── Round badge ───────────────────────────────────────────────────────────
   roundBadge: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    borderRadius: 12,
-    borderWidth: 1,
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-    marginBottom: 12,
-    gap: 8,
+    flexDirection: 'row', alignItems: 'center',
+    borderRadius: 12, borderWidth: 1,
+    paddingHorizontal: 14, paddingVertical: 10,
+    marginBottom: 12, gap: 8,
   },
-  roundDot: { width: 8, height: 8, borderRadius: 4 },
-  roundBadgeText: { fontSize: 14, fontWeight: '800', flex: 1 },
-  roundDots: { flexDirection: 'row', gap: 4 },
-  roundPip: { width: 8, height: 8, borderRadius: 4 },
+  roundDot:      { width: 8, height: 8, borderRadius: 4 },
+  roundBadgeText:{ fontSize: 14, fontWeight: '800', flex: 1 },
+  roundDots:     { flexDirection: 'row', gap: 4 },
+  roundPip:      { width: 8, height: 8, borderRadius: 4 },
 
-  // Stage cards
+  // ── Stage cards ───────────────────────────────────────────────────────────
   stageCard: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#16213e',
-    borderRadius: 16,
-    padding: 14,
-    marginBottom: 10,
-    borderWidth: 1,
-    borderColor: '#2d3436',
+    flexDirection: 'row', alignItems: 'center',
+    backgroundColor: VG.card,
+    borderRadius: 16, padding: 14, marginBottom: 10,
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.2)',
     gap: 12,
+    shadowColor: VG.shadow,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.12,
+    shadowRadius: 8,
+    elevation: 3,
   },
-  stageCardLocked: { opacity: 0.4 },
+  stageCardLocked: { opacity: 0.42 },
   stageIconBubble: { width: 48, height: 48, borderRadius: 24, alignItems: 'center', justifyContent: 'center' },
-  stageIcon: { fontSize: 22 },
-  stageInfo: { flex: 1 },
-  stageName: { fontSize: 15, fontWeight: '700', color: '#fff', marginBottom: 2 },
-  stageDesc: { fontSize: 12, color: '#636e72' },
-  textMuted: { color: '#636e72' },
-  stageStatus: { width: 32, alignItems: 'center' },
-  stageDone: { fontSize: 20 },
-  stageArrow: { width: 28, height: 28, borderRadius: 14, alignItems: 'center', justifyContent: 'center' },
-  stageArrowText: { fontSize: 14, fontWeight: '900', color: '#fff' },
+  stageIcon:       { fontSize: 22 },
+  stageInfo:       { flex: 1 },
+  stageName:       { fontSize: 15, fontWeight: '700', color: VG.onCard,    marginBottom: 2 },
+  stageDesc:       { fontSize: 12,                    color: VG.onCardMuted },
+  textMuted:       { color: VG.onCardMuted },
+  stageStatus:     { width: 32, alignItems: 'center' },
+  stageDone:       { fontSize: 20 },
+  stageArrow:      { width: 28, height: 28, borderRadius: 14, alignItems: 'center', justifyContent: 'center' },
+  stageArrowText:  { fontSize: 14, fontWeight: '900', color: VG.bg },
 
-  // Complete button
+  // ── Complete button — warm glowing yellow ─────────────────────────────────
   completeBtn: {
-    backgroundColor: '#1DD1A1',
+    backgroundColor: VG.yellow,
     borderRadius: 16,
     padding: 16,
     alignItems: 'center',
-    marginTop: 20,
-    marginBottom: 12,
+    marginTop: 20, marginBottom: 12,
+    shadowColor: VG.shadow,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.28,
+    shadowRadius: 12,
+    elevation: 6,
   },
-  completeBtnText: { fontSize: 16, fontWeight: '900', color: '#fff', letterSpacing: 0.5 },
+  completeBtnText: { fontSize: 16, fontWeight: '900', color: VG.bg, letterSpacing: 0.5 },
 
   errorContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20 },
-  errorText: { fontSize: 20, fontWeight: '700', color: '#FF6B6B', marginBottom: 16 },
-  backButtonText: { fontSize: 16, fontWeight: '600', color: '#a29bfe' },
+  errorText:      { fontSize: 20, fontWeight: '700', color: '#D9634E', marginBottom: 16 },
+  backButtonText: { fontSize: 16, fontWeight: '600', color: VG.gold },
 });

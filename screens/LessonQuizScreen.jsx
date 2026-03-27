@@ -269,69 +269,95 @@ export default function LessonQuizScreen({ lessonData, onBack }) {
   );
 }
 
+const VG = {
+  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
+  onCard: '#1C2A44', onCardMid: '#5C4A2A', onCardMuted: '#9A8A6A',
+  yellow: '#F4C542', gold: '#E0B04B', orange: '#D98C2B',
+  cream: '#F7F3E9', creamMid: '#C5B99A', creamMuted: '#8A7E6E',
+  success: '#5A9E5A', error: '#C4503A',
+  border: 'rgba(244,197,66,0.15)', shadow: '#A0700A',
+};
+
 const styles = StyleSheet.create({
-  safe:   { flex: 1, backgroundColor: '#1a1a2e' },
+  safe:   { flex: 1, backgroundColor: VG.bg },
   center: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 32 },
 
-  // Header
+  // ── Header ────────────────────────────────────────────────────────────────
   header: {
     flexDirection: 'row', alignItems: 'center',
     paddingHorizontal: 16, paddingVertical: 12, gap: 12,
+    borderBottomWidth: 1, borderBottomColor: VG.border,
   },
   exitBtn:      { width: 32, height: 32, alignItems: 'center', justifyContent: 'center' },
-  exitText:     { fontSize: 18, color: '#636e72', fontWeight: '700' },
-  progressBg:   { flex: 1, height: 8, backgroundColor: '#2d3436', borderRadius: 4, overflow: 'hidden' },
-  progressFill: { height: '100%', backgroundColor: '#FF6B6B', borderRadius: 4 },
-  counter:      { fontSize: 13, color: '#636e72', fontWeight: '600', minWidth: 36, textAlign: 'right' },
+  exitText:     { fontSize: 18, color: VG.creamMuted, fontWeight: '700' },
+  progressBg:   { flex: 1, height: 7, backgroundColor: 'rgba(255,255,255,0.08)', borderRadius: 4, overflow: 'hidden' },
+  progressFill: { height: '100%', backgroundColor: VG.yellow, borderRadius: 4 },
+  counter:      { fontSize: 13, color: VG.creamMuted, fontWeight: '600', minWidth: 36, textAlign: 'right' },
 
   typeRow: {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
     paddingHorizontal: 16, paddingBottom: 10,
-    borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.06)',
+    borderBottomWidth: 1, borderBottomColor: VG.border,
   },
-  typeLabel:   { fontSize: 14, fontWeight: '700', color: '#FF6B6B' },
-  lessonLabel: { fontSize: 12, color: '#636e72', flex: 1, textAlign: 'right' },
+  typeLabel:   { fontSize: 14, fontWeight: '700', color: VG.gold },
+  lessonLabel: { fontSize: 12, color: VG.creamMuted, flex: 1, textAlign: 'right' },
 
   scroll:        { flex: 1 },
   scrollContent: { padding: 16, flexGrow: 1 },
 
-  emptyText: { fontSize: 16, color: '#636e72', marginBottom: 24, textAlign: 'center' },
+  emptyText: { fontSize: 16, color: VG.creamMuted, marginBottom: 24, textAlign: 'center' },
 
-  // Results
+  // ── Results ───────────────────────────────────────────────────────────────
   resultsContainer: { flexGrow: 1, padding: 20, justifyContent: 'center' },
   resultsCard: {
-    backgroundColor: '#16213e', borderRadius: 24, padding: 32, alignItems: 'center',
-    marginBottom: 20, borderWidth: 1, borderColor: '#2d3436',
+    backgroundColor: VG.card,
+    borderRadius: 24, padding: 32, alignItems: 'center',
+    marginBottom: 20,
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.2)',
+    shadowColor: VG.shadow,
+    shadowOffset: { width: 0, height: 5 },
+    shadowOpacity: 0.2, shadowRadius: 16, elevation: 7,
   },
   resultsEmoji:    { fontSize: 64, marginBottom: 16 },
-  resultsTitle:    { fontSize: 28, fontWeight: '900', color: '#fff', marginBottom: 8 },
-  resultsSubtitle: { fontSize: 16, color: '#a29bfe', marginBottom: 24 },
+  resultsTitle:    { fontSize: 28, fontWeight: '900', color: VG.onCard,  marginBottom: 8 },
+  resultsSubtitle: { fontSize: 16,                    color: VG.orange,  marginBottom: 24 },
 
   scoreCircle: {
     width: 140, height: 140, borderRadius: 70,
-    backgroundColor: 'rgba(255,255,255,0.05)', alignItems: 'center', justifyContent: 'center',
-    marginBottom: 24, borderWidth: 3, borderColor: 'rgba(255,255,255,0.1)',
+    backgroundColor: 'rgba(28,42,68,0.07)',
+    alignItems: 'center', justifyContent: 'center',
+    marginBottom: 24,
+    borderWidth: 3, borderColor: 'rgba(217,140,43,0.3)',
   },
   scoreText:  { fontSize: 42, fontWeight: '900' },
-  scoreLabel: { fontSize: 13, color: '#636e72', marginTop: 4 },
+  scoreLabel: { fontSize: 13, color: VG.onCardMuted, marginTop: 4 },
 
   statsBox: {
     flexDirection: 'row', alignItems: 'center',
-    backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: 16, padding: 20,
+    backgroundColor: 'rgba(28,42,68,0.06)', borderRadius: 16, padding: 20,
     width: '100%', marginBottom: 16,
   },
   statItem:   { flex: 1, alignItems: 'center' },
-  statNumber: { fontSize: 24, fontWeight: '800', color: '#fff', marginBottom: 4 },
-  statLabel:  { fontSize: 12, color: '#636e72' },
-  statDivider:{ width: 1, height: 40, backgroundColor: 'rgba(255,255,255,0.1)' },
+  statNumber: { fontSize: 24, fontWeight: '800', color: VG.onCard, marginBottom: 4 },
+  statLabel:  { fontSize: 12, color: VG.onCardMuted },
+  statDivider:{ width: 1, height: 40, backgroundColor: 'rgba(28,42,68,0.1)' },
 
-  passingText:       { fontSize: 13, color: '#636e72', marginBottom: 16 },
-  encouragementBox:  { backgroundColor: 'rgba(255,159,67,0.2)', padding: 16, borderRadius: 12, width: '100%' },
-  encouragementText: { fontSize: 14, color: '#FF9F43', textAlign: 'center', lineHeight: 20 },
+  passingText:       { fontSize: 13, color: VG.onCardMuted, marginBottom: 16 },
+  encouragementBox:  { backgroundColor: 'rgba(217,140,43,0.15)', padding: 16, borderRadius: 12, width: '100%' },
+  encouragementText: { fontSize: 14, color: VG.orange, textAlign: 'center', lineHeight: 20 },
 
-  resultsActions: { gap: 12 },
-  retryButton:    { backgroundColor: '#FF9F43', padding: 16, borderRadius: 16, alignItems: 'center' },
-  actionButtonText:{ fontSize: 16, fontWeight: '800', color: '#fff' },
-  doneButton:     { backgroundColor: '#16213e', padding: 16, borderRadius: 16, alignItems: 'center', borderWidth: 1, borderColor: '#2d3436' },
-  doneButtonText: { fontSize: 16, fontWeight: '600', color: '#fff' },
+  resultsActions:   { gap: 12 },
+  retryButton:      {
+    backgroundColor: VG.yellow,
+    padding: 16, borderRadius: 16, alignItems: 'center',
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.25, shadowRadius: 10, elevation: 5,
+  },
+  actionButtonText: { fontSize: 16, fontWeight: '800', color: VG.bg },
+  doneButton:       {
+    backgroundColor: 'transparent',
+    padding: 16, borderRadius: 16, alignItems: 'center',
+    borderWidth: 1.5, borderColor: VG.gold,
+  },
+  doneButtonText:   { fontSize: 16, fontWeight: '600', color: VG.gold },
 });

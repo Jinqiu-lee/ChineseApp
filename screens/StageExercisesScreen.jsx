@@ -181,41 +181,50 @@ export default function StageExercisesScreen({ lessonData, stageIndex, roundInde
   );
 }
 
+const VG = {
+  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
+  onCard: '#1C2A44', onCardMid: '#5C4A2A', onCardMuted: '#9A8A6A',
+  yellow: '#F4C542', gold: '#E0B04B', orange: '#D98C2B',
+  cream: '#F7F3E9', creamMuted: '#8A7E6E',
+  success: '#7DC47A',
+  border: 'rgba(244,197,66,0.15)', shadow: '#A0700A',
+};
+
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#1a1a2e' },
-  center: { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  loadingText: { color: '#636e72', fontSize: 16 },
+  safe:        { flex: 1, backgroundColor: VG.bg },
+  center:      { flex: 1, alignItems: 'center', justifyContent: 'center' },
+  loadingText: { color: VG.creamMuted, fontSize: 16 },
 
-  // Header
+  // ── Progress header ───────────────────────────────────────────────────────
   header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    gap: 12,
+    flexDirection: 'row', alignItems: 'center',
+    paddingHorizontal: 16, paddingVertical: 12, gap: 12,
+    borderBottomWidth: 1, borderBottomColor: VG.border,
   },
-  closeBtn: { width: 32, height: 32, alignItems: 'center', justifyContent: 'center' },
-  closeText: { fontSize: 18, color: '#636e72', fontWeight: '700' },
-  progressBg: { flex: 1, height: 8, backgroundColor: '#2d3436', borderRadius: 4, overflow: 'hidden' },
-  progressFill: { height: '100%', backgroundColor: '#a29bfe', borderRadius: 4 },
-  counter: { fontSize: 13, color: '#636e72', fontWeight: '600', minWidth: 36, textAlign: 'right' },
+  closeBtn:    { width: 32, height: 32, alignItems: 'center', justifyContent: 'center' },
+  closeText:   { fontSize: 18, color: VG.creamMuted, fontWeight: '700' },
+  progressBg:  { flex: 1, height: 7, backgroundColor: 'rgba(255,255,255,0.08)', borderRadius: 4, overflow: 'hidden' },
+  progressFill:{ height: '100%', backgroundColor: VG.yellow, borderRadius: 4 },
+  counter:     { fontSize: 13, color: VG.creamMuted, fontWeight: '600', minWidth: 36, textAlign: 'right' },
 
-  // Exercise area
-  scroll: { flex: 1 },
+  // ── Exercise area ──────────────────────────────────────────────────────────
+  scroll:        { flex: 1 },
   scrollContent: { padding: 16, flexGrow: 1 },
 
-  // Completion
-  completion: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 32 },
-  starsText: { fontSize: 52, marginBottom: 20 },
-  doneTitle: { fontSize: 32, fontWeight: '900', color: '#fff', marginBottom: 6 },
-  doneStageName: { fontSize: 16, color: '#a29bfe', marginBottom: 16 },
-  doneScore: { fontSize: 22, fontWeight: '700', color: '#1DD1A1', marginBottom: 8 },
-  doneMessage: { fontSize: 16, color: '#636e72', marginBottom: 44, textAlign: 'center' },
+  // ── Completion screen ──────────────────────────────────────────────────────
+  completion: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 32, gap: 8 },
+  starsText:  { fontSize: 52, marginBottom: 12 },
+  doneTitle:  { fontSize: 32, fontWeight: '900', color: VG.cream,    marginBottom: 4 },
+  doneStageName: { fontSize: 16, color: VG.gold, marginBottom: 12 },
+  doneScore:  { fontSize: 22, fontWeight: '700', color: VG.success, marginBottom: 6 },
+  doneMessage:{ fontSize: 16, color: VG.creamMuted, marginBottom: 40, textAlign: 'center', lineHeight: 24 },
   continueBtn: {
-    backgroundColor: '#a29bfe',
+    backgroundColor: VG.yellow,
     borderRadius: 18,
-    paddingHorizontal: 56,
-    paddingVertical: 16,
+    paddingHorizontal: 56, paddingVertical: 16,
+    shadowColor: VG.shadow,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.28, shadowRadius: 12, elevation: 6,
   },
-  continueBtnText: { fontSize: 18, fontWeight: '800', color: '#fff' },
+  continueBtnText: { fontSize: 18, fontWeight: '800', color: VG.bg },
 });
