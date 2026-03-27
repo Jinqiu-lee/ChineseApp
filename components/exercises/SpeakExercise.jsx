@@ -212,7 +212,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
       <View style={styles.container}>
         <AvatarCharacter avatarId={avatarId} expression="think" size={120} />
         <View style={styles.processingCard}>
-          <ActivityIndicator size="large" color="#a29bfe" />
+          <ActivityIndicator size="large" color="#E0B04B" />
           <Text style={styles.processingText}>Analyzing your pronunciation...</Text>
         </View>
       </View>
@@ -325,136 +325,158 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
   );
 }
 
+const VG = {
+  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
+  onCard: '#1C2A44', onCardMid: '#5C4A2A', onCardMuted: '#9A8A6A',
+  yellow: '#F4C542', gold: '#E0B04B', orange: '#D98C2B',
+  cream: '#F7F3E9', creamMuted: '#8A7E6E',
+  success: '#5A9E5A', error: '#C4503A',
+  border: 'rgba(244,197,66,0.2)', shadow: '#A0700A',
+};
+
 const styles = StyleSheet.create({
   container: {
     flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20, gap: 16,
   },
-  instruction: { fontSize: 18, fontWeight: '700', color: '#a29bfe', textAlign: 'center' },
+  instruction: { fontSize: 18, fontWeight: '700', color: VG.gold, textAlign: 'center' },
 
   emojiRefCard: {
-    backgroundColor: 'rgba(162,155,254,0.08)', borderRadius: 20,
-    borderWidth: 1, borderColor: 'rgba(162,155,254,0.25)',
+    backgroundColor: 'rgba(244,197,66,0.07)', borderRadius: 20,
+    borderWidth: 1, borderColor: VG.border,
     paddingVertical: 16, paddingHorizontal: 24,
     alignItems: 'center', width: '100%', gap: 6,
   },
   emojiRefIcon:  { fontSize: 64 },
-  emojiRefLabel: { fontSize: 12, fontWeight: '600', color: '#a29bfe', letterSpacing: 0.5 },
+  emojiRefLabel: { fontSize: 12, fontWeight: '600', color: VG.gold, letterSpacing: 0.5 },
 
   promptCard: {
-    backgroundColor: '#16213e', borderRadius: 20, padding: 24,
-    alignItems: 'center', width: '100%', borderWidth: 1, borderColor: '#2d3436', gap: 8,
+    backgroundColor: VG.card, borderRadius: 20, padding: 24,
+    alignItems: 'center', width: '100%',
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.25)', gap: 8,
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.18, shadowRadius: 12, elevation: 5,
   },
-  questionLabel: { fontSize: 12, fontWeight: '700', color: '#636e72', textTransform: 'uppercase', letterSpacing: 0.8 },
-  chinese: { fontSize: 44, fontWeight: '900', color: '#fff' },
-  pinyin:  { fontSize: 17, color: '#a29bfe', fontStyle: 'italic' },
-  english: { fontSize: 20, fontWeight: '700', color: '#fff', textAlign: 'center' },
-  divider: { width: '100%', height: 1, backgroundColor: 'rgba(255,255,255,0.08)', marginVertical: 8 },
+  questionLabel: { fontSize: 12, fontWeight: '700', color: VG.onCardMuted, textTransform: 'uppercase', letterSpacing: 0.8 },
+  chinese: { fontSize: 44, fontWeight: '900', color: VG.onCard },
+  pinyin:  { fontSize: 17, color: VG.orange, fontStyle: 'italic' },
+  english: { fontSize: 20, fontWeight: '700', color: VG.onCard, textAlign: 'center' },
+  divider: { width: '100%', height: 1, backgroundColor: 'rgba(28,42,68,0.1)', marginVertical: 8 },
   listenBtn: {
-    marginTop: 4, backgroundColor: 'rgba(162,155,254,0.15)',
+    marginTop: 4, backgroundColor: 'rgba(217,140,43,0.1)',
     paddingHorizontal: 20, paddingVertical: 10, borderRadius: 12,
-    borderWidth: 1, borderColor: 'rgba(162,155,254,0.3)',
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.35)',
   },
-  listenBtnText: { fontSize: 15, fontWeight: '700', color: '#a29bfe' },
+  listenBtnText: { fontSize: 15, fontWeight: '700', color: VG.orange },
 
   // Hint
   hintToggle: {
     paddingHorizontal: 16, paddingVertical: 8, borderRadius: 20,
-    borderWidth: 1, borderColor: '#2d3436', backgroundColor: 'rgba(255,255,255,0.04)',
+    borderWidth: 1, borderColor: VG.border, backgroundColor: VG.cardDark,
   },
-  hintToggleOn: { borderColor: '#FFD700', backgroundColor: 'rgba(255,215,0,0.08)' },
-  hintToggleText: { fontSize: 14, fontWeight: '600', color: '#636e72' },
-  hintToggleTextOn: { color: '#FFD700' },
+  hintToggleOn: { borderColor: VG.yellow, backgroundColor: 'rgba(244,197,66,0.12)' },
+  hintToggleText: { fontSize: 14, fontWeight: '600', color: VG.creamMuted },
+  hintToggleTextOn: { color: VG.yellow },
   hintBox: {
-    backgroundColor: 'rgba(255,215,0,0.06)', borderRadius: 14,
-    borderWidth: 1, borderColor: 'rgba(255,215,0,0.25)',
+    backgroundColor: 'rgba(244,197,66,0.07)', borderRadius: 14,
+    borderWidth: 1, borderColor: VG.border,
     padding: 16, width: '100%', alignItems: 'center', gap: 4,
   },
-  hintLabel:   { fontSize: 11, fontWeight: '700', color: '#FFD700', textTransform: 'uppercase', letterSpacing: 0.8 },
-  hintPinyin:  { fontSize: 18, color: '#fff', fontStyle: 'italic', textAlign: 'center' },
-  hintChinese: { fontSize: 28, fontWeight: '900', color: '#fff', textAlign: 'center' },
-  hintEnglish: { fontSize: 14, color: '#636e72', textAlign: 'center' },
+  hintLabel:   { fontSize: 11, fontWeight: '700', color: VG.gold, textTransform: 'uppercase', letterSpacing: 0.8 },
+  hintPinyin:  { fontSize: 18, color: VG.cream, fontStyle: 'italic', textAlign: 'center' },
+  hintChinese: { fontSize: 28, fontWeight: '900', color: VG.cream, textAlign: 'center' },
+  hintEnglish: { fontSize: 14, color: VG.creamMuted, textAlign: 'center' },
 
-  attemptsText: { fontSize: 13, color: '#636e72' },
+  attemptsText: { fontSize: 13, color: VG.creamMuted },
 
   micBtn: {
-    backgroundColor: '#a29bfe', borderRadius: 60,
+    backgroundColor: VG.yellow, borderRadius: 60,
     paddingHorizontal: 40, paddingVertical: 20,
     alignItems: 'center', gap: 6, width: 200,
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25, shadowRadius: 10, elevation: 5,
   },
   micIcon: { fontSize: 36 },
-  micBtnText: { fontSize: 16, fontWeight: '800', color: '#fff' },
+  micBtnText: { fontSize: 16, fontWeight: '800', color: VG.bg },
 
   recordingCard: {
-    backgroundColor: 'rgba(255,107,107,0.1)', borderRadius: 20, padding: 32,
+    backgroundColor: 'rgba(196,80,58,0.1)', borderRadius: 20, padding: 32,
     alignItems: 'center', width: '100%', borderWidth: 1,
-    borderColor: 'rgba(255,107,107,0.3)', gap: 12,
+    borderColor: 'rgba(196,80,58,0.3)', gap: 12,
   },
   recordingIcon: { fontSize: 52 },
-  recordingHint: { fontSize: 14, color: '#FF6B6B', fontWeight: '600' },
+  recordingHint: { fontSize: 14, color: VG.error, fontWeight: '600' },
 
   stopBtn: {
-    backgroundColor: '#FF6B6B', borderRadius: 14, paddingHorizontal: 40, paddingVertical: 14,
+    backgroundColor: VG.error, borderRadius: 14, paddingHorizontal: 40, paddingVertical: 14,
   },
-  stopBtnText: { fontSize: 16, fontWeight: '800', color: '#fff' },
+  stopBtnText: { fontSize: 16, fontWeight: '800', color: VG.cream },
 
   processingCard: {
-    backgroundColor: '#16213e', borderRadius: 20, padding: 40,
-    alignItems: 'center', width: '100%', borderWidth: 1, borderColor: '#2d3436', gap: 16,
+    backgroundColor: VG.cardDark, borderRadius: 20, padding: 40,
+    alignItems: 'center', width: '100%', borderWidth: 1, borderColor: VG.border, gap: 16,
   },
-  processingText: { fontSize: 15, color: '#636e72' },
+  processingText: { fontSize: 15, color: VG.creamMuted },
 
   resultCard: {
-    backgroundColor: '#16213e', borderRadius: 20, padding: 24,
-    alignItems: 'center', width: '100%', borderWidth: 1, borderColor: '#2d3436', gap: 8,
+    backgroundColor: VG.card, borderRadius: 20, padding: 24,
+    alignItems: 'center', width: '100%',
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.25)', gap: 8,
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.18, shadowRadius: 12, elevation: 5,
   },
   resultIcon:   { fontSize: 40 },
   accuracyPct:  { fontSize: 52, fontWeight: '900' },
-  resultMsg:    { fontSize: 17, fontWeight: '700', color: '#fff', textAlign: 'center' },
+  resultMsg:    { fontSize: 17, fontWeight: '700', color: VG.onCard, textAlign: 'center' },
   resultAnswer: {
     marginTop: 12, alignItems: 'center', paddingTop: 16,
-    borderTopWidth: 1, borderTopColor: 'rgba(255,255,255,0.08)', width: '100%', gap: 4,
+    borderTopWidth: 1, borderTopColor: 'rgba(28,42,68,0.1)', width: '100%', gap: 4,
   },
-  resultLabel:      { fontSize: 12, color: '#636e72', marginBottom: 4 },
-  resultChinese:    { fontSize: 32, fontWeight: '900', color: '#fff' },
-  resultPinyin:     { fontSize: 15, color: '#a29bfe', fontStyle: 'italic' },
-  resultFullAnswer: { fontSize: 14, color: 'rgba(255,255,255,0.45)', textAlign: 'center', marginTop: 2 },
-  resultEnglish:    { fontSize: 13, color: '#636e72', textAlign: 'center' },
+  resultLabel:      { fontSize: 12, color: VG.onCardMuted, marginBottom: 4 },
+  resultChinese:    { fontSize: 32, fontWeight: '900', color: VG.onCard },
+  resultPinyin:     { fontSize: 15, color: VG.orange, fontStyle: 'italic' },
+  resultFullAnswer: { fontSize: 14, color: 'rgba(28,42,68,0.45)', textAlign: 'center', marginTop: 2 },
+  resultEnglish:    { fontSize: 13, color: VG.onCardMuted, textAlign: 'center' },
   replayBtn: {
-    marginTop: 8, backgroundColor: 'rgba(162,155,254,0.15)',
+    marginTop: 8, backgroundColor: 'rgba(217,140,43,0.12)',
     paddingHorizontal: 16, paddingVertical: 8, borderRadius: 10,
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.35)',
   },
-  replayBtnText: { fontSize: 14, fontWeight: '600', color: '#a29bfe' },
+  replayBtnText: { fontSize: 14, fontWeight: '600', color: VG.orange },
 
   nextBtn: {
-    backgroundColor: '#1DD1A1', borderRadius: 14, paddingHorizontal: 48, paddingVertical: 14,
+    backgroundColor: VG.yellow, borderRadius: 14, paddingHorizontal: 48, paddingVertical: 14,
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.22, shadowRadius: 8, elevation: 4,
   },
-  nextBtnText: { fontSize: 16, fontWeight: '800', color: '#fff' },
+  nextBtnText: { fontSize: 16, fontWeight: '800', color: VG.bg },
 
   retryBtn: {
-    backgroundColor: '#a29bfe', borderRadius: 14, paddingHorizontal: 32, paddingVertical: 14,
+    backgroundColor: VG.cardDark, borderRadius: 14, paddingHorizontal: 32, paddingVertical: 14,
+    borderWidth: 1.5, borderColor: VG.gold,
   },
-  retryBtnText: { fontSize: 15, fontWeight: '800', color: '#fff' },
+  retryBtnText: { fontSize: 15, fontWeight: '800', color: VG.gold },
 
   maxCard: {
-    backgroundColor: '#16213e', borderRadius: 20, padding: 28,
+    backgroundColor: VG.cardDark, borderRadius: 20, padding: 28,
     alignItems: 'center', width: '100%',
-    borderWidth: 1, borderColor: 'rgba(255,107,107,0.3)', gap: 8,
+    borderWidth: 1, borderColor: 'rgba(196,80,58,0.3)', gap: 8,
   },
   maxIcon:   { fontSize: 44 },
-  maxTitle:  { fontSize: 20, fontWeight: '900', color: '#FF6B6B', textAlign: 'center' },
-  maxSub:    { fontSize: 14, color: '#636e72', textAlign: 'center' },
+  maxTitle:  { fontSize: 20, fontWeight: '900', color: VG.error, textAlign: 'center' },
+  maxSub:    { fontSize: 14, color: VG.creamMuted, textAlign: 'center' },
   maxAnswer: { marginTop: 12, alignItems: 'center', gap: 4 },
 
   maxActions: { flexDirection: 'row', gap: 12, width: '100%' },
   reviewBtn: {
-    flex: 1, backgroundColor: 'rgba(162,155,254,0.15)', borderRadius: 14,
+    flex: 1, backgroundColor: 'rgba(224,176,75,0.12)', borderRadius: 14,
     paddingVertical: 14, alignItems: 'center',
-    borderWidth: 1, borderColor: 'rgba(162,155,254,0.3)',
+    borderWidth: 1, borderColor: VG.gold,
   },
-  reviewBtnText: { fontSize: 15, fontWeight: '700', color: '#a29bfe' },
+  reviewBtnText: { fontSize: 15, fontWeight: '700', color: VG.gold },
   skipBtn: {
-    flex: 1, backgroundColor: '#2d3436', borderRadius: 14,
+    flex: 1, backgroundColor: VG.cardDark, borderRadius: 14,
     paddingVertical: 14, alignItems: 'center',
+    borderWidth: 1, borderColor: VG.border,
   },
-  skipBtnText: { fontSize: 15, fontWeight: '700', color: '#636e72' },
+  skipBtnText: { fontSize: 15, fontWeight: '700', color: VG.creamMuted },
 });

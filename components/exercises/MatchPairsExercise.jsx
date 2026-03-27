@@ -118,23 +118,31 @@ export default function MatchPairsExercise({ exercise, onComplete }) {
   );
 }
 
+const VG = {
+  bg: '#1C2A44', cardDark: '#243454',
+  gold: '#E0B04B', orange: '#D98C2B',
+  cream: '#F7F3E9', creamMuted: '#8A7E6E',
+  success: '#5A9E5A', error: '#C4503A',
+  border: 'rgba(244,197,66,0.2)',
+};
+
 const styles = StyleSheet.create({
   container: { flex: 1, paddingTop: 8, paddingHorizontal: 8 },
   topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 },
-  instruction: { fontSize: 17, fontWeight: '700', color: '#fff' },
-  pinyinToggle: { paddingHorizontal: 12, paddingVertical: 6, borderRadius: 10, borderWidth: 1.5, borderColor: '#2d3436', backgroundColor: '#16213e' },
-  pinyinToggleOn: { borderColor: '#a29bfe', backgroundColor: 'rgba(162,155,254,0.15)' },
-  pinyinToggleText: { fontSize: 13, fontWeight: '600', color: '#636e72' },
-  pinyinToggleTextOn: { color: '#a29bfe' },
-  progress: { fontSize: 13, color: '#a29bfe', marginBottom: 20 },
+  instruction: { fontSize: 17, fontWeight: '700', color: VG.cream },
+  pinyinToggle: { paddingHorizontal: 12, paddingVertical: 6, borderRadius: 10, borderWidth: 1.5, borderColor: VG.border, backgroundColor: VG.cardDark },
+  pinyinToggleOn: { borderColor: VG.gold, backgroundColor: 'rgba(224,176,75,0.15)' },
+  pinyinToggleText: { fontSize: 13, fontWeight: '600', color: VG.creamMuted },
+  pinyinToggleTextOn: { color: VG.gold },
+  progress: { fontSize: 13, color: VG.gold, marginBottom: 20 },
   grid: { flexDirection: 'row' },
   col: { flex: 1, gap: 10 },
   divider: { width: 12 },
-  cell: { backgroundColor: '#16213e', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: '#2d3436', minHeight: 64 },
-  cellSelected: { backgroundColor: 'rgba(162,155,254,0.15)', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: '#a29bfe', minHeight: 64 },
-  cellMatched: { backgroundColor: 'rgba(29,209,161,0.15)', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: '#1DD1A1', minHeight: 64, opacity: 0.5 },
-  cellWrong: { backgroundColor: 'rgba(255,107,107,0.15)', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: '#FF6B6B', minHeight: 64 },
-  cellChinese: { fontSize: 26, fontWeight: '800', color: '#fff' },
-  cellPinyin: { fontSize: 11, color: '#a29bfe', fontStyle: 'italic', marginTop: 3 },
-  cellEnglish: { fontSize: 13, fontWeight: '600', color: '#fff', textAlign: 'center', lineHeight: 18 },
+  cell:         { backgroundColor: VG.cardDark, borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 1.5, borderColor: VG.border, minHeight: 64 },
+  cellSelected: { backgroundColor: 'rgba(224,176,75,0.15)', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.gold, minHeight: 64 },
+  cellMatched:  { backgroundColor: 'rgba(90,158,90,0.15)', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.success, minHeight: 64, opacity: 0.6 },
+  cellWrong:    { backgroundColor: 'rgba(196,80,58,0.15)', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.error, minHeight: 64 },
+  cellChinese: { fontSize: 26, fontWeight: '800', color: VG.cream },
+  cellPinyin:  { fontSize: 11, color: VG.orange, fontStyle: 'italic', marginTop: 3 },
+  cellEnglish: { fontSize: 13, fontWeight: '600', color: VG.cream, textAlign: 'center', lineHeight: 18 },
 });

@@ -227,24 +227,33 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
   return null;
 }
 
+const VG = {
+  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
+  onCard: '#1C2A44', onCardMuted: '#9A8A6A',
+  gold: '#E0B04B', orange: '#D98C2B',
+  cream: '#F7F3E9', creamMuted: '#8A7E6E',
+  success: '#5A9E5A', error: '#C4503A',
+  border: 'rgba(244,197,66,0.2)', shadow: '#A0700A',
+};
+
 const styles = StyleSheet.create({
   container: { flex: 1, alignItems: 'center', paddingVertical: 16, gap: 20 },
 
-  prompt: { fontSize: 16, color: '#b2bec3', fontWeight: '600', textAlign: 'center' },
+  prompt: { fontSize: 16, color: VG.cream, fontWeight: '600', textAlign: 'center' },
 
   // Big image for picture_to_word
   bigImageWrap: {
     width: 220, height: 220,
     borderRadius: 24,
     overflow: 'hidden',
-    borderWidth: 2, borderColor: '#2d3436',
+    borderWidth: 1.5, borderColor: 'rgba(217,140,43,0.3)',
   },
   bigPhoto: { width: '100%', height: '100%' },
   bigEmoji: {
     flex: 1, alignItems: 'center', justifyContent: 'center', gap: 8, padding: 16,
   },
   bigEmojiText:  { fontSize: 72 },
-  bigEmojiLabel: { fontSize: 22, fontWeight: '800', color: '#fff' },
+  bigEmojiLabel: { fontSize: 22, fontWeight: '800', color: VG.cream },
 
   // Word choices 2×2 for picture_to_word
   wordGrid: {
@@ -255,45 +264,50 @@ const styles = StyleSheet.create({
     width: 148, borderRadius: 16,
     paddingVertical: 14, paddingHorizontal: 12,
     borderWidth: 1.5, alignItems: 'center', gap: 2,
+    backgroundColor: VG.cardDark, borderColor: VG.border,
   },
-  wordChinese: { fontSize: 26, fontWeight: '800', color: '#fff' },
-  wordPinyin:  { fontSize: 13, color: '#a29bfe', fontStyle: 'italic' },
-  wordEnglish: { fontSize: 12, color: '#636e72' },
+  wordChinese: { fontSize: 26, fontWeight: '800', color: VG.cream },
+  wordPinyin:  { fontSize: 13, color: VG.orange, fontStyle: 'italic' },
+  wordEnglish: { fontSize: 12, color: VG.creamMuted },
 
   // Word display for word_to_picture / listen_to_picture
   wordDisplay: {
-    backgroundColor: '#16213e',
+    backgroundColor: VG.card,
     borderRadius: 18, paddingVertical: 18, paddingHorizontal: 32,
     alignItems: 'center', gap: 4,
-    borderWidth: 1, borderColor: '#2d3436',
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.25)',
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.16, shadowRadius: 10, elevation: 4,
   },
-  wordDisplayChinese: { fontSize: 44, fontWeight: '900', color: '#fff' },
-  wordDisplayPinyin:  { fontSize: 18, color: '#a29bfe', fontStyle: 'italic' },
-  wordDisplayEnglish: { fontSize: 14, color: '#636e72' },
+  wordDisplayChinese: { fontSize: 44, fontWeight: '900', color: VG.onCard },
+  wordDisplayPinyin:  { fontSize: 18, color: VG.orange, fontStyle: 'italic' },
+  wordDisplayEnglish: { fontSize: 14, color: VG.onCardMuted },
 
   // Sentence display
   sentenceDisplay: {
-    backgroundColor: '#16213e', borderRadius: 18,
+    backgroundColor: VG.card, borderRadius: 18,
     paddingVertical: 14, paddingHorizontal: 20,
     alignItems: 'center', gap: 4,
-    borderWidth: 1, borderColor: '#2d3436', width: '100%',
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.25)', width: '100%',
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.14, shadowRadius: 8, elevation: 3,
   },
   sentenceRow:    { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  sentenceChinese:{ fontSize: 26, fontWeight: '800', color: '#fff' },
-  sentencePinyin: { fontSize: 14, color: '#a29bfe', fontStyle: 'italic' },
-  sentenceEnglish:{ fontSize: 13, color: '#636e72' },
+  sentenceChinese:{ fontSize: 26, fontWeight: '800', color: VG.onCard },
+  sentencePinyin: { fontSize: 14, color: VG.orange, fontStyle: 'italic' },
+  sentenceEnglish:{ fontSize: 13, color: VG.onCardMuted },
   speakBtn:  { padding: 4 },
   speakBtnText: { fontSize: 20 },
 
   // Listen button
   listenBtn: {
     flexDirection: 'row', alignItems: 'center', gap: 12,
-    backgroundColor: '#16213e', borderRadius: 18,
+    backgroundColor: VG.cardDark, borderRadius: 18,
     paddingVertical: 20, paddingHorizontal: 40,
-    borderWidth: 1.5, borderColor: '#a29bfe',
+    borderWidth: 1.5, borderColor: VG.gold,
   },
   listenBtnIcon: { fontSize: 36 },
-  listenBtnText: { fontSize: 18, fontWeight: '700', color: '#a29bfe' },
+  listenBtnText: { fontSize: 18, fontWeight: '700', color: VG.gold },
 
   // Image grid 2×2
   imageGrid: {
@@ -321,5 +335,5 @@ const styles = StyleSheet.create({
     position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
     alignItems: 'center', justifyContent: 'center',
   },
-  resultIcon: { fontSize: 40, fontWeight: '900', color: '#1DD1A1' },
+  resultIcon: { fontSize: 40, fontWeight: '900', color: VG.success },
 });

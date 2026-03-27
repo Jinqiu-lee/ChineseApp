@@ -75,6 +75,15 @@ export default function PinyinExercise({ exercise, onCorrect, onWrong }) {
   );
 }
 
+const VG = {
+  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
+  onCard: '#1C2A44', onCardMuted: '#9A8A6A',
+  gold: '#E0B04B', orange: '#D98C2B',
+  cream: '#F7F3E9', creamMuted: '#8A7E6E',
+  success: '#5A9E5A', error: '#C4503A',
+  border: 'rgba(244,197,66,0.2)', shadow: '#A0700A',
+};
+
 const styles = StyleSheet.create({
   container: { flex: 1, paddingTop: 8, paddingHorizontal: 8 },
 
@@ -82,28 +91,30 @@ const styles = StyleSheet.create({
     flexDirection: 'row', alignItems: 'center',
     justifyContent: 'space-between', marginBottom: 20,
   },
-  instruction: { fontSize: 17, fontWeight: '700', color: '#fff', flex: 1 },
+  instruction: { fontSize: 17, fontWeight: '700', color: VG.cream, flex: 1 },
   typeBadge: {
-    backgroundColor: 'rgba(84,160,255,0.2)', borderRadius: 8,
-    paddingHorizontal: 10, paddingVertical: 4, borderWidth: 1, borderColor: '#54A0FF',
+    backgroundColor: 'rgba(224,176,75,0.15)', borderRadius: 8,
+    paddingHorizontal: 10, paddingVertical: 4, borderWidth: 1, borderColor: VG.gold,
   },
-  typeBadgeText: { fontSize: 11, fontWeight: '800', color: '#54A0FF', letterSpacing: 0.5 },
+  typeBadgeText: { fontSize: 11, fontWeight: '800', color: VG.gold, letterSpacing: 0.5 },
 
   syllableCard: {
-    backgroundColor: '#16213e', borderRadius: 20, padding: 28,
+    backgroundColor: VG.card, borderRadius: 20, padding: 28,
     alignItems: 'center', marginBottom: 28,
-    borderWidth: 2, borderColor: '#54A0FF', gap: 6,
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.3)', gap: 6,
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.18, shadowRadius: 12, elevation: 5,
   },
   audioIcon:   { fontSize: 20, marginBottom: 4 },
-  syllable:    { fontSize: 52, fontWeight: '900', color: '#54A0FF', letterSpacing: 2 },
-  chinese:     { fontSize: 28, fontWeight: '900', color: '#fff', marginTop: 4 },
-  english:     { fontSize: 15, color: '#636e72', fontStyle: 'italic' },
-  noAudioHint: { fontSize: 13, color: '#636e72' },
+  syllable:    { fontSize: 52, fontWeight: '900', color: VG.orange, letterSpacing: 2 },
+  chinese:     { fontSize: 28, fontWeight: '900', color: VG.onCard, marginTop: 4 },
+  english:     { fontSize: 15, color: VG.onCardMuted, fontStyle: 'italic' },
+  noAudioHint: { fontSize: 13, color: VG.onCardMuted },
 
   choices: { gap: 12 },
-  choice:       { backgroundColor: '#16213e', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: '#2d3436' },
-  choiceCorrect:{ backgroundColor: 'rgba(29,209,161,0.2)', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: '#1DD1A1' },
-  choiceWrong:  { backgroundColor: 'rgba(255,107,107,0.2)', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: '#FF6B6B' },
-  choiceDimmed: { backgroundColor: '#16213e', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: '#2d3436', opacity: 0.4 },
-  choiceText:   { fontSize: 17, fontWeight: '700', color: '#fff', textAlign: 'center' },
+  choice:       { backgroundColor: VG.cardDark, borderRadius: 14, padding: 18, borderWidth: 1.5, borderColor: VG.border },
+  choiceCorrect:{ backgroundColor: 'rgba(90,158,90,0.2)', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: VG.success },
+  choiceWrong:  { backgroundColor: 'rgba(196,80,58,0.2)', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: VG.error },
+  choiceDimmed: { backgroundColor: VG.cardDark, borderRadius: 14, padding: 18, borderWidth: 1.5, borderColor: VG.border, opacity: 0.4 },
+  choiceText:   { fontSize: 17, fontWeight: '700', color: VG.cream, textAlign: 'center' },
 });
