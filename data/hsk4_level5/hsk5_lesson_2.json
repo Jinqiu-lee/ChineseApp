@@ -211,9 +211,23 @@
           "question": "只有努力复习，_____ 能在考试中取得好成绩。",
           "type": "multiple_choice",
           "correct": "才",
-          "options": ["才", "就", "也", "都"],
-          "option_pinyin": ["cái", "jiù", "yě", "dōu"],
-          "word_hints": {"复习": "fù xí", "考试": "kǎo shì", "成绩": "chéng jī"}
+          "options": [
+            "才",
+            "就",
+            "也",
+            "都"
+          ],
+          "option_pinyin": [
+            "cái",
+            "jiù",
+            "yě",
+            "dōu"
+          ],
+          "word_hints": {
+            "复习": "fù xí",
+            "考试": "kǎo shì",
+            "成绩": "chéng jī"
+          }
         },
         {
           "question": "Choose the sentence that uses 只有...才... correctly.",
@@ -231,7 +245,9 @@
             "Zhǐ yǒu cái néng shēn qǐng jiǎng xué jīn, jiǎn qīng jiā lǐ de fù dān.",
             "Shēn qǐng zhǐ yǒu jiǎng xué jīn, jiǎn qīng cái jiā lǐ de fù dān."
           ],
-          "word_hints": {"奖学金": "jiǎng xué jīn"}
+          "word_hints": {
+            "奖学金": "jiǎng xué jīn"
+          }
         },
         {
           "question": "What does 只有...才... express?",
@@ -243,24 +259,55 @@
             "A sequence of events happening one after another",
             "A reason for something happening"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "只有在图书馆认真学习，_____ 能通过这门课程。",
           "type": "multiple_choice",
           "correct": "才",
-          "options": ["才", "也", "还", "又"],
-          "option_pinyin": ["cái", "yě", "hái", "yòu"],
-          "word_hints": {"图书馆": "tú shū guǎn", "课程": "kè chéng"}
+          "options": [
+            "才",
+            "也",
+            "还",
+            "又"
+          ],
+          "option_pinyin": [
+            "cái",
+            "yě",
+            "hái",
+            "yòu"
+          ],
+          "word_hints": {
+            "图书馆": "tú shū guǎn",
+            "课程": "kè chéng"
+          }
         },
         {
           "question": "Which word fills in the blank: _____ 毕业成绩优秀，才有机会申请奖学金。",
           "type": "multiple_choice",
           "correct": "只有",
-          "options": ["只有", "虽然", "因为", "不管"],
-          "option_pinyin": ["zhǐ yǒu", "suī rán", "yīn wèi", "bù guǎn"],
-          "word_hints": {"毕业": "bì yè", "奖学金": "jiǎng xué jīn"}
+          "options": [
+            "只有",
+            "虽然",
+            "因为",
+            "不管"
+          ],
+          "option_pinyin": [
+            "zhǐ yǒu",
+            "suī rán",
+            "yīn wèi",
+            "bù guǎn"
+          ],
+          "word_hints": {
+            "毕业": "bì yè",
+            "奖学金": "jiǎng xué jīn"
+          }
         }
       ]
     },
@@ -285,9 +332,21 @@
           "question": "她每天努力学习，成绩 _____ 好。",
           "type": "multiple_choice",
           "correct": "越来越",
-          "options": ["越来越", "不管", "只有", "虽然"],
-          "option_pinyin": ["yuè lái yuè", "bù guǎn", "zhǐ yǒu", "suī rán"],
-          "word_hints": {"成绩": "chéng jī"}
+          "options": [
+            "越来越",
+            "不管",
+            "只有",
+            "虽然"
+          ],
+          "option_pinyin": [
+            "yuè lái yuè",
+            "bù guǎn",
+            "zhǐ yǒu",
+            "suī rán"
+          ],
+          "word_hints": {
+            "成绩": "chéng jī"
+          }
         },
         {
           "question": "Choose the correct sentence with 越来越.",
@@ -305,7 +364,9 @@
             "Yuè lái yuè tóng xué men xǐ huān zhè wèi jiào shòu de kè.",
             "Zhè wèi jiào shòu de kè yuè lái yuè tóng xué men xǐ huān."
           ],
-          "word_hints": {"教授": "jiào shòu"}
+          "word_hints": {
+            "教授": "jiào shòu"
+          }
         },
         {
           "question": "What does 越来越 mean?",
@@ -317,15 +378,30 @@
             "At the same time",
             "Only then"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "进入大学后，他感到压力 _____ 大。",
           "type": "multiple_choice",
           "correct": "越来越",
-          "options": ["越来越", "才能", "不管", "只有"],
-          "option_pinyin": ["yuè lái yuè", "cái néng", "bù guǎn", "zhǐ yǒu"],
+          "options": [
+            "越来越",
+            "才能",
+            "不管",
+            "只有"
+          ],
+          "option_pinyin": [
+            "yuè lái yuè",
+            "cái néng",
+            "bù guǎn",
+            "zhǐ yǒu"
+          ],
           "word_hints": {}
         },
         {
@@ -338,7 +414,12 @@
             "After the subject and object",
             "At the end of the sentence"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -364,9 +445,21 @@
           "question": "不管这门课程多难，他 _____ 认真听讲。",
           "type": "multiple_choice",
           "correct": "都",
-          "options": ["都", "才", "就", "又"],
-          "option_pinyin": ["dōu", "cái", "jiù", "yòu"],
-          "word_hints": {"课程": "kè chéng"}
+          "options": [
+            "都",
+            "才",
+            "就",
+            "又"
+          ],
+          "option_pinyin": [
+            "dōu",
+            "cái",
+            "jiù",
+            "yòu"
+          ],
+          "word_hints": {
+            "课程": "kè chéng"
+          }
         },
         {
           "question": "Choose the sentence that uses 不管...都... correctly.",
@@ -384,7 +477,9 @@
             "Chéng jī bù guǎn hǎo bù hǎo, yào dōu jì xù nǔ lì.",
             "Bù guǎn dōu chéng jī hǎo bù hǎo, yào jì xù nǔ lì."
           ],
-          "word_hints": {"成绩": "chéng jī"}
+          "word_hints": {
+            "成绩": "chéng jī"
+          }
         },
         {
           "question": "What does 不管...都... express?",
@@ -396,24 +491,55 @@
             "An increasing change over time",
             "A reason why something happened"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "不管图书馆关得多早，她 _____ 坚持复习到最后一刻。",
           "type": "multiple_choice",
           "correct": "都",
-          "options": ["都", "才", "只", "也"],
-          "option_pinyin": ["dōu", "cái", "zhǐ", "yě"],
-          "word_hints": {"图书馆": "tú shū guǎn", "复习": "fù xí"}
+          "options": [
+            "都",
+            "才",
+            "只",
+            "也"
+          ],
+          "option_pinyin": [
+            "dōu",
+            "cái",
+            "zhǐ",
+            "yě"
+          ],
+          "word_hints": {
+            "图书馆": "tú shū guǎn",
+            "复习": "fù xí"
+          }
         },
         {
           "question": "Which word goes in the blank: _____ 学期有多少课，他都认真记笔记。",
           "type": "multiple_choice",
           "correct": "不管",
-          "options": ["不管", "只有", "越来越", "因为"],
-          "option_pinyin": ["bù guǎn", "zhǐ yǒu", "yuè lái yuè", "yīn wèi"],
-          "word_hints": {"学期": "xué qī", "笔记": "bǐ jì"}
+          "options": [
+            "不管",
+            "只有",
+            "越来越",
+            "因为"
+          ],
+          "option_pinyin": [
+            "bù guǎn",
+            "zhǐ yǒu",
+            "yuè lái yuè",
+            "yīn wèi"
+          ],
+          "word_hints": {
+            "学期": "xué qī",
+            "笔记": "bǐ jì"
+          }
         }
       ]
     }
@@ -438,64 +564,137 @@
       "question": "What does 努力 mean?",
       "type": "multiple_choice",
       "correct": "To work hard; diligent",
-      "options": ["To work hard; diligent", "To graduate", "To review", "To take notes"],
-      "word_hints": {"努力": "nǔ lì"}
+      "options": [
+        "To work hard; diligent",
+        "To graduate",
+        "To review",
+        "To take notes"
+      ],
+      "word_hints": {
+        "努力": "nǔ lì"
+      }
     },
     {
       "question": "Which word means 'scholarship'?",
       "type": "multiple_choice",
       "correct": "奖学金",
-      "options": ["专业", "奖学金", "课程", "学期"],
-      "word_hints": {"专业": "zhuān yè", "奖学金": "jiǎng xué jīn", "课程": "kè chéng", "学期": "xué qī"}
+      "options": [
+        "专业",
+        "奖学金",
+        "课程",
+        "学期"
+      ],
+      "word_hints": {
+        "专业": "zhuān yè",
+        "奖学金": "jiǎng xué jīn",
+        "课程": "kè chéng",
+        "学期": "xué qī"
+      }
     },
     {
       "question": "What does 复习 mean?",
       "type": "multiple_choice",
       "correct": "To review; to revise",
-      "options": ["To review; to revise", "To take an exam", "To graduate", "To choose a major"],
-      "word_hints": {"复习": "fù xí"}
+      "options": [
+        "To review; to revise",
+        "To take an exam",
+        "To graduate",
+        "To choose a major"
+      ],
+      "word_hints": {
+        "复习": "fù xí"
+      }
     },
     {
       "question": "Which word means 'professor'?",
       "type": "multiple_choice",
       "correct": "教授",
-      "options": ["学期", "笔记", "教授", "图书馆"],
-      "word_hints": {"教授": "jiào shòu", "学期": "xué qī", "笔记": "bǐ jì", "图书馆": "tú shū guǎn"}
+      "options": [
+        "学期",
+        "笔记",
+        "教授",
+        "图书馆"
+      ],
+      "word_hints": {
+        "教授": "jiào shòu",
+        "学期": "xué qī",
+        "笔记": "bǐ jì",
+        "图书馆": "tú shū guǎn"
+      }
     },
     {
       "question": "What does 毕业 mean?",
       "type": "multiple_choice",
       "correct": "To graduate",
-      "options": ["To graduate", "To enroll", "To take notes", "To apply"],
-      "word_hints": {"毕业": "bì yè"}
+      "options": [
+        "To graduate",
+        "To enroll",
+        "To take notes",
+        "To apply"
+      ],
+      "word_hints": {
+        "毕业": "bì yè"
+      }
     },
     {
       "question": "Which word means 'semester; school term'?",
       "type": "multiple_choice",
       "correct": "学期",
-      "options": ["成绩", "考试", "学期", "课程"],
-      "word_hints": {"成绩": "chéng jī", "考试": "kǎo shì", "学期": "xué qī", "课程": "kè chéng"}
+      "options": [
+        "成绩",
+        "考试",
+        "学期",
+        "课程"
+      ],
+      "word_hints": {
+        "成绩": "chéng jī",
+        "考试": "kǎo shì",
+        "学期": "xué qī",
+        "课程": "kè chéng"
+      }
     },
     {
       "question": "What does 专业 mean?",
       "type": "multiple_choice",
       "correct": "Major; specialisation",
-      "options": ["Major; specialisation", "Library", "Grade", "Professor"],
-      "word_hints": {"专业": "zhuān yè"}
+      "options": [
+        "Major; specialisation",
+        "Library",
+        "Grade",
+        "Professor"
+      ],
+      "word_hints": {
+        "专业": "zhuān yè"
+      }
     },
     {
       "question": "What does 图书馆 mean?",
       "type": "multiple_choice",
       "correct": "Library",
-      "options": ["Library", "Classroom", "Canteen", "Dormitory"],
-      "word_hints": {"图书馆": "tú shū guǎn"}
+      "options": [
+        "Library",
+        "Classroom",
+        "Canteen",
+        "Dormitory"
+      ],
+      "word_hints": {
+        "图书馆": "tú shū guǎn"
+      }
     },
     {
       "question": "Fill in the blank: 只有认真复习，_____ 能取得好成绩。",
       "type": "multiple_choice",
       "correct": "才",
-      "options": ["才", "都", "也", "就"],
-      "word_hints": {"复习": "fù xí", "成绩": "chéng jī"}
+      "options": [
+        "才",
+        "都",
+        "也",
+        "就"
+      ],
+      "word_hints": {
+        "复习": "fù xí",
+        "成绩": "chéng jī"
+      }
     },
     {
       "question": "What does 只有...才... express?",
@@ -513,50 +712,96 @@
       "question": "Fill in the blank: 她的成绩 _____ 好，教授非常满意。",
       "type": "multiple_choice",
       "correct": "越来越",
-      "options": ["越来越", "只有", "不管", "才能"],
-      "word_hints": {"成绩": "chéng jī", "教授": "jiào shòu"}
+      "options": [
+        "越来越",
+        "只有",
+        "不管",
+        "才能"
+      ],
+      "word_hints": {
+        "成绩": "chéng jī",
+        "教授": "jiào shòu"
+      }
     },
     {
       "question": "What does 越来越 mean?",
       "type": "multiple_choice",
       "correct": "More and more; increasingly",
-      "options": ["More and more; increasingly", "Less and less", "Only if", "No matter"],
+      "options": [
+        "More and more; increasingly",
+        "Less and less",
+        "Only if",
+        "No matter"
+      ],
       "word_hints": {}
     },
     {
       "question": "Fill in the blank: 不管课程多难，他 _____ 坚持完成作业。",
       "type": "multiple_choice",
       "correct": "都",
-      "options": ["都", "才", "只", "就"],
-      "word_hints": {"课程": "kè chéng"}
+      "options": [
+        "都",
+        "才",
+        "只",
+        "就"
+      ],
+      "word_hints": {
+        "课程": "kè chéng"
+      }
     },
     {
       "question": "What does 笔记 mean?",
       "type": "multiple_choice",
       "correct": "Notes; to take notes",
-      "options": ["Notes; to take notes", "Textbook", "Exam paper", "Report"],
-      "word_hints": {"笔记": "bǐ jì"}
+      "options": [
+        "Notes; to take notes",
+        "Textbook",
+        "Exam paper",
+        "Report"
+      ],
+      "word_hints": {
+        "笔记": "bǐ jì"
+      }
     },
     {
       "question": "What does the phrase 努力学习 mean?",
       "type": "multiple_choice",
       "correct": "To study hard",
-      "options": ["To study hard", "To choose a major", "To review lessons", "To apply for a scholarship"],
+      "options": [
+        "To study hard",
+        "To choose a major",
+        "To review lessons",
+        "To apply for a scholarship"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does 成绩 mean?",
       "type": "multiple_choice",
       "correct": "Grade; result; achievement",
-      "options": ["Grade; result; achievement", "Course", "Scholarship", "Semester"],
-      "word_hints": {"成绩": "chéng jī"}
+      "options": [
+        "Grade; result; achievement",
+        "Course",
+        "Scholarship",
+        "Semester"
+      ],
+      "word_hints": {
+        "成绩": "chéng jī"
+      }
     },
     {
       "question": "Which phrase means 'to apply for a scholarship'?",
       "type": "multiple_choice",
       "correct": "申请奖学金",
-      "options": ["申请奖学金", "记笔记", "复习功课", "顺利毕业"],
-      "word_hints": {"奖学金": "jiǎng xué jīn"}
+      "options": [
+        "申请奖学金",
+        "记笔记",
+        "复习功课",
+        "顺利毕业"
+      ],
+      "word_hints": {
+        "奖学金": "jiǎng xué jīn"
+      }
     },
     {
       "question": "What is the 高考?",
@@ -574,14 +819,26 @@
       "question": "What does the phrase 顺利毕业 mean?",
       "type": "multiple_choice",
       "correct": "To graduate smoothly",
-      "options": ["To graduate smoothly", "To fail a course", "To drop out of school", "To transfer universities"],
-      "word_hints": {"毕业": "bì yè"}
+      "options": [
+        "To graduate smoothly",
+        "To fail a course",
+        "To drop out of school",
+        "To transfer universities"
+      ],
+      "word_hints": {
+        "毕业": "bì yè"
+      }
     },
     {
       "question": "Which grammar pattern means 'no matter...still...'?",
       "type": "multiple_choice",
       "correct": "不管...都...",
-      "options": ["不管...都...", "只有...才...", "越来越", "顺便"],
+      "options": [
+        "不管...都...",
+        "只有...才...",
+        "越来越",
+        "顺便"
+      ],
       "word_hints": {}
     }
   ],
@@ -591,13 +848,21 @@
       "title": "Preparing for Exams",
       "title_chinese": "备考",
       "speakers": {
-        "A": {"name": "小华", "role": "大学生", "gender": "male"},
-        "B": {"name": "雨桐", "role": "同学", "gender": "female"}
+        "A": {
+          "name": "毕加索",
+          "role": "大学生",
+          "gender": "male"
+        },
+        "B": {
+          "name": "严歌苓",
+          "role": "同学",
+          "gender": "female"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "雨桐，你最近每天都在图书馆复习，成绩一定越来越好了吧？",
+          "chinese": "严歌苓，你最近每天都在图书馆复习，成绩一定越来越好了吧？",
           "pinyin": "Yǔ tóng, nǐ zuì jìn měi tiān dōu zài tú shū guǎn fù xí, chéng jī yī dìng yuè lái yuè hǎo le ba?",
           "english": "Yutong, you've been reviewing in the library every day recently — your grades must be getting better and better, right?"
         },
@@ -650,8 +915,16 @@
       "title": "Choosing a Major",
       "title_chinese": "选择专业",
       "speakers": {
-        "A": {"name": "明轩", "role": "高中生", "gender": "male"},
-        "B": {"name": "李教授", "role": "大学教授", "gender": "male"}
+        "A": {
+          "name": "加缪",
+          "role": "高中生",
+          "gender": "male"
+        },
+        "B": {
+          "name": "李教授",
+          "role": "大学教授",
+          "gender": "male"
+        }
       },
       "lines": [
         {

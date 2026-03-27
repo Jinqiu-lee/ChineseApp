@@ -211,9 +211,22 @@
           "question": "尽管这个品牌知名度不高，_____ 销售业绩非常好。",
           "type": "multiple_choice",
           "correct": "但",
-          "options": ["但", "因此", "以便", "相比之下"],
-          "option_pinyin": ["dàn", "yīn cǐ", "yǐ biàn", "xiāng bǐ zhī xià"],
-          "word_hints": {"品牌": "pǐn pái", "销售": "xiāo shòu"}
+          "options": [
+            "但",
+            "因此",
+            "以便",
+            "相比之下"
+          ],
+          "option_pinyin": [
+            "dàn",
+            "yīn cǐ",
+            "yǐ biàn",
+            "xiāng bǐ zhī xià"
+          ],
+          "word_hints": {
+            "品牌": "pǐn pái",
+            "销售": "xiāo shòu"
+          }
         },
         {
           "question": "Choose the sentence that uses 尽管…但… correctly.",
@@ -231,7 +244,10 @@
             "Jìng zhēng jī liè jǐn guǎn, zhè jiā qǐ yè de shì chǎng fèn é dàn bú duàn kuò dà.",
             "Zhè jiā qǐ yè jǐn guǎn jìng zhēng jī liè dàn, shì chǎng fèn é bú duàn kuò dà."
           ],
-          "word_hints": {"竞争": "jìng zhēng", "市场": "shì chǎng"}
+          "word_hints": {
+            "竞争": "jìng zhēng",
+            "市场": "shì chǎng"
+          }
         },
         {
           "question": "What does 尽管 mean?",
@@ -243,23 +259,51 @@
             "In order to",
             "By comparison"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "尽管投资风险较高，_____ 他们还是决定进入这个市场。",
           "type": "multiple_choice",
           "correct": "但",
-          "options": ["但", "以便", "因此", "根据"],
-          "option_pinyin": ["dàn", "yǐ biàn", "yīn cǐ", "gēn jù"],
-          "word_hints": {"投资": "tóu zī", "市场": "shì chǎng"}
+          "options": [
+            "但",
+            "以便",
+            "因此",
+            "根据"
+          ],
+          "option_pinyin": [
+            "dàn",
+            "yǐ biàn",
+            "yīn cǐ",
+            "gēn jù"
+          ],
+          "word_hints": {
+            "投资": "tóu zī",
+            "市场": "shì chǎng"
+          }
         },
         {
           "question": "Which word typically follows 尽管 in the second clause?",
           "type": "multiple_choice",
           "correct": "但/但是",
-          "options": ["但/但是", "因此", "以便", "根据"],
-          "option_pinyin": ["dàn / dàn shì", "yīn cǐ", "yǐ biàn", "gēn jù"],
+          "options": [
+            "但/但是",
+            "因此",
+            "以便",
+            "根据"
+          ],
+          "option_pinyin": [
+            "dàn / dàn shì",
+            "yīn cǐ",
+            "yǐ biàn",
+            "gēn jù"
+          ],
           "word_hints": {}
         }
       ]
@@ -285,9 +329,22 @@
           "question": "这家企业的利润很低，_____, 竞争对手的收益却非常可观。",
           "type": "multiple_choice",
           "correct": "相比之下",
-          "options": ["相比之下", "尽管", "以便", "因此"],
-          "option_pinyin": ["xiāng bǐ zhī xià", "jǐn guǎn", "yǐ biàn", "yīn cǐ"],
-          "word_hints": {"利润": "lì rùn", "竞争": "jìng zhēng"}
+          "options": [
+            "相比之下",
+            "尽管",
+            "以便",
+            "因此"
+          ],
+          "option_pinyin": [
+            "xiāng bǐ zhī xià",
+            "jǐn guǎn",
+            "yǐ biàn",
+            "yīn cǐ"
+          ],
+          "word_hints": {
+            "利润": "lì rùn",
+            "竞争": "jìng zhēng"
+          }
         },
         {
           "question": "Choose the sentence that uses 相比之下 correctly.",
@@ -305,7 +362,9 @@
             "Xiāng bǐ zhī xià guó nèi shì chǎng, zēng zhǎng huǎn màn hǎi wài shì chǎng fā zhǎn xùn sù.",
             "Hǎi wài shì chǎng fā zhǎn xùn sù xiāng bǐ zhī xià, guó nèi shì chǎng zēng zhǎng huǎn màn."
           ],
-          "word_hints": {"市场": "shì chǎng"}
+          "word_hints": {
+            "市场": "shì chǎng"
+          }
         },
         {
           "question": "What does 相比之下 mean?",
@@ -317,16 +376,34 @@
             "In order to",
             "According to"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "A品牌的销售额下降了，_____, B品牌的市场占有率大幅提升。",
           "type": "multiple_choice",
           "correct": "相比之下",
-          "options": ["相比之下", "以便", "尽管", "除非"],
-          "option_pinyin": ["xiāng bǐ zhī xià", "yǐ biàn", "jǐn guǎn", "chú fēi"],
-          "word_hints": {"销售": "xiāo shòu", "品牌": "pǐn pái"}
+          "options": [
+            "相比之下",
+            "以便",
+            "尽管",
+            "除非"
+          ],
+          "option_pinyin": [
+            "xiāng bǐ zhī xià",
+            "yǐ biàn",
+            "jǐn guǎn",
+            "chú fēi"
+          ],
+          "word_hints": {
+            "销售": "xiāo shòu",
+            "品牌": "pǐn pái"
+          }
         },
         {
           "question": "Where is 相比之下 typically placed in a sentence?",
@@ -338,7 +415,12 @@
             "Between the subject and verb",
             "After the object"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -364,9 +446,22 @@
           "question": "企业加大了对研发的投资，_____ 开发出更具竞争力的产品。",
           "type": "multiple_choice",
           "correct": "以便",
-          "options": ["以便", "尽管", "相比之下", "由于"],
-          "option_pinyin": ["yǐ biàn", "jǐn guǎn", "xiāng bǐ zhī xià", "yóu yú"],
-          "word_hints": {"投资": "tóu zī", "竞争": "jìng zhēng"}
+          "options": [
+            "以便",
+            "尽管",
+            "相比之下",
+            "由于"
+          ],
+          "option_pinyin": [
+            "yǐ biàn",
+            "jǐn guǎn",
+            "xiāng bǐ zhī xià",
+            "yóu yú"
+          ],
+          "word_hints": {
+            "投资": "tóu zī",
+            "竞争": "jìng zhēng"
+          }
         },
         {
           "question": "Choose the sentence that uses 以便 correctly.",
@@ -384,7 +479,10 @@
             "Tā men yǐ biàn tí qián, zhǎn kāi tán pàn jǐn zǎo qiān dìng hé tong.",
             "Jǐn zǎo qiān dìng hé tong, tā men yǐ biàn tí qián zhǎn kāi tán pàn."
           ],
-          "word_hints": {"谈判": "tán pàn", "合同": "hé tong"}
+          "word_hints": {
+            "谈判": "tán pàn",
+            "合同": "hé tong"
+          }
         },
         {
           "question": "What does 以便 mean?",
@@ -396,16 +494,34 @@
             "By comparison",
             "Unless"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "他们打造了强大的品牌形象，_____ 在竞争中占据有利地位。",
           "type": "multiple_choice",
           "correct": "以便",
-          "options": ["以便", "尽管", "但", "相比之下"],
-          "option_pinyin": ["yǐ biàn", "jǐn guǎn", "dàn", "xiāng bǐ zhī xià"],
-          "word_hints": {"品牌": "pǐn pái", "竞争": "jìng zhēng"}
+          "options": [
+            "以便",
+            "尽管",
+            "但",
+            "相比之下"
+          ],
+          "option_pinyin": [
+            "yǐ biàn",
+            "jǐn guǎn",
+            "dàn",
+            "xiāng bǐ zhī xià"
+          ],
+          "word_hints": {
+            "品牌": "pǐn pái",
+            "竞争": "jìng zhēng"
+          }
         },
         {
           "question": "Which statement about 以便 is correct?",
@@ -417,7 +533,12 @@
             "It expresses a contrast between two facts",
             "It introduces a cause or reason"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -443,57 +564,122 @@
       "question": "What does 经济 mean?",
       "type": "multiple_choice",
       "correct": "Economy; economics",
-      "options": ["Economy; economics", "Contract", "Strategy", "Profit"],
-      "word_hints": {"经济": "jīng jì"}
+      "options": [
+        "Economy; economics",
+        "Contract",
+        "Strategy",
+        "Profit"
+      ],
+      "word_hints": {
+        "经济": "jīng jì"
+      }
     },
     {
       "question": "Which word means 'competition; to compete'?",
       "type": "multiple_choice",
       "correct": "竞争",
-      "options": ["合作", "竞争", "谈判", "投资"],
-      "word_hints": {"合作": "hé zuò", "竞争": "jìng zhēng", "谈判": "tán pàn", "投资": "tóu zī"}
+      "options": [
+        "合作",
+        "竞争",
+        "谈判",
+        "投资"
+      ],
+      "word_hints": {
+        "合作": "hé zuò",
+        "竞争": "jìng zhēng",
+        "谈判": "tán pàn",
+        "投资": "tóu zī"
+      }
     },
     {
       "question": "What does 利润 mean?",
       "type": "multiple_choice",
       "correct": "Profit; margin",
-      "options": ["Profit; margin", "Strategy", "Brand", "Sales"],
-      "word_hints": {"利润": "lì rùn"}
+      "options": [
+        "Profit; margin",
+        "Strategy",
+        "Brand",
+        "Sales"
+      ],
+      "word_hints": {
+        "利润": "lì rùn"
+      }
     },
     {
       "question": "Which word means 'enterprise; company; business'?",
       "type": "multiple_choice",
       "correct": "企业",
-      "options": ["市场", "品牌", "企业", "策略"],
-      "word_hints": {"市场": "shì chǎng", "品牌": "pǐn pái", "企业": "qǐ yè", "策略": "cè lüè"}
+      "options": [
+        "市场",
+        "品牌",
+        "企业",
+        "策略"
+      ],
+      "word_hints": {
+        "市场": "shì chǎng",
+        "品牌": "pǐn pái",
+        "企业": "qǐ yè",
+        "策略": "cè lüè"
+      }
     },
     {
       "question": "What does 品牌 mean?",
       "type": "multiple_choice",
       "correct": "Brand",
-      "options": ["Contract", "Market", "Brand", "Investment"],
-      "word_hints": {"品牌": "pǐn pái"}
+      "options": [
+        "Contract",
+        "Market",
+        "Brand",
+        "Investment"
+      ],
+      "word_hints": {
+        "品牌": "pǐn pái"
+      }
     },
     {
       "question": "Which word means 'negotiation; to negotiate'?",
       "type": "multiple_choice",
       "correct": "谈判",
-      "options": ["销售", "利润", "合同", "谈判"],
-      "word_hints": {"销售": "xiāo shòu", "利润": "lì rùn", "合同": "hé tong", "谈判": "tán pàn"}
+      "options": [
+        "销售",
+        "利润",
+        "合同",
+        "谈判"
+      ],
+      "word_hints": {
+        "销售": "xiāo shòu",
+        "利润": "lì rùn",
+        "合同": "hé tong",
+        "谈判": "tán pàn"
+      }
     },
     {
       "question": "What does the phrase 开拓市场 mean?",
       "type": "multiple_choice",
       "correct": "To develop/open up the market",
-      "options": ["To develop/open up the market", "To attract investment", "To build a brand", "To increase profits"],
-      "word_hints": {"市场": "shì chǎng"}
+      "options": [
+        "To develop/open up the market",
+        "To attract investment",
+        "To build a brand",
+        "To increase profits"
+      ],
+      "word_hints": {
+        "市场": "shì chǎng"
+      }
     },
     {
       "question": "Fill in the blank: 尽管谈判很艰难，_____ 双方最终达成了协议。",
       "type": "multiple_choice",
       "correct": "但",
-      "options": ["但", "以便", "相比之下", "因此"],
-      "word_hints": {"谈判": "tán pàn"}
+      "options": [
+        "但",
+        "以便",
+        "相比之下",
+        "因此"
+      ],
+      "word_hints": {
+        "谈判": "tán pàn"
+      }
     },
     {
       "question": "What does 尽管…但… express?",
@@ -511,8 +697,15 @@
       "question": "Fill in the blank: 他们早做准备，_____ 在竞争中占据优势。",
       "type": "multiple_choice",
       "correct": "以便",
-      "options": ["以便", "尽管", "相比之下", "但"],
-      "word_hints": {"竞争": "jìng zhēng"}
+      "options": [
+        "以便",
+        "尽管",
+        "相比之下",
+        "但"
+      ],
+      "word_hints": {
+        "竞争": "jìng zhēng"
+      }
     },
     {
       "question": "What does 以便 introduce?",
@@ -542,56 +735,111 @@
       "question": "What does 销售 mean?",
       "type": "multiple_choice",
       "correct": "Sales; to sell",
-      "options": ["Sales; to sell", "Strategy", "Market", "Cooperation"],
-      "word_hints": {"销售": "xiāo shòu"}
+      "options": [
+        "Sales; to sell",
+        "Strategy",
+        "Market",
+        "Cooperation"
+      ],
+      "word_hints": {
+        "销售": "xiāo shòu"
+      }
     },
     {
       "question": "What does the phrase 吸引投资 mean?",
       "type": "multiple_choice",
       "correct": "To attract investment",
-      "options": ["To attract investment", "To launch negotiations", "To build a brand", "To sign a contract"],
-      "word_hints": {"投资": "tóu zī"}
+      "options": [
+        "To attract investment",
+        "To launch negotiations",
+        "To build a brand",
+        "To sign a contract"
+      ],
+      "word_hints": {
+        "投资": "tóu zī"
+      }
     },
     {
       "question": "What does 策略 mean?",
       "type": "multiple_choice",
       "correct": "Strategy; tactic",
-      "options": ["Strategy; tactic", "Cooperation", "Profit", "Market"],
-      "word_hints": {"策略": "cè lüè"}
+      "options": [
+        "Strategy; tactic",
+        "Cooperation",
+        "Profit",
+        "Market"
+      ],
+      "word_hints": {
+        "策略": "cè lüè"
+      }
     },
     {
       "question": "Which word means 'cooperation; to cooperate'?",
       "type": "multiple_choice",
       "correct": "合作",
-      "options": ["竞争", "合作", "谈判", "投资"],
-      "word_hints": {"竞争": "jìng zhēng", "合作": "hé zuò", "谈判": "tán pàn", "投资": "tóu zī"}
+      "options": [
+        "竞争",
+        "合作",
+        "谈判",
+        "投资"
+      ],
+      "word_hints": {
+        "竞争": "jìng zhēng",
+        "合作": "hé zuò",
+        "谈判": "tán pàn",
+        "投资": "tóu zī"
+      }
     },
     {
       "question": "What does the phrase 签订合同 mean?",
       "type": "multiple_choice",
       "correct": "To conclude a contract",
-      "options": ["To conclude a contract", "To launch negotiations", "To attract investment", "To build a brand"],
-      "word_hints": {"合同": "hé tong"}
+      "options": [
+        "To conclude a contract",
+        "To launch negotiations",
+        "To attract investment",
+        "To build a brand"
+      ],
+      "word_hints": {
+        "合同": "hé tong"
+      }
     },
     {
       "question": "According to the culture note, which Chinese brand is mentioned as having achieved international recognition?",
       "type": "multiple_choice",
       "correct": "Huawei",
-      "options": ["Huawei", "Toyota", "Samsung", "Apple"],
+      "options": [
+        "Huawei",
+        "Toyota",
+        "Samsung",
+        "Apple"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does the phrase 打造品牌 mean?",
       "type": "multiple_choice",
       "correct": "To build a brand",
-      "options": ["To build a brand", "To open up the market", "To attract investment", "To sign a contract"],
-      "word_hints": {"品牌": "pǐn pái"}
+      "options": [
+        "To build a brand",
+        "To open up the market",
+        "To attract investment",
+        "To sign a contract"
+      ],
+      "word_hints": {
+        "品牌": "pǐn pái"
+      }
     },
     {
       "question": "What does the idiom 互利共赢 mean?",
       "type": "multiple_choice",
       "correct": "Mutual benefit and shared success",
-      "options": ["Mutual benefit and shared success", "Competition leads to progress", "Economy first", "Strategy wins markets"],
+      "options": [
+        "Mutual benefit and shared success",
+        "Competition leads to progress",
+        "Economy first",
+        "Strategy wins markets"
+      ],
       "word_hints": {}
     }
   ],
@@ -601,8 +849,16 @@
       "title": "A Business Negotiation",
       "title_chinese": "商务谈判",
       "speakers": {
-        "A": {"name": "张总", "role": "企业代表", "gender": "male"},
-        "B": {"name": "林经理", "role": "合作方代表", "gender": "female"}
+        "A": {
+          "name": "张总",
+          "role": "企业代表",
+          "gender": "male"
+        },
+        "B": {
+          "name": "林经理",
+          "role": "合作方代表",
+          "gender": "female"
+        }
       },
       "lines": [
         {
@@ -654,8 +910,16 @@
       "title": "Discussing Investment Plans",
       "title_chinese": "讨论投资计划",
       "speakers": {
-        "A": {"name": "小陈", "role": "创业者", "gender": "female"},
-        "B": {"name": "王顾问", "role": "经济顾问", "gender": "male"}
+        "A": {
+          "name": "毕加索",
+          "role": "创业者",
+          "gender": "female"
+        },
+        "B": {
+          "name": "王顾问",
+          "role": "经济顾问",
+          "gender": "male"
+        }
       },
       "lines": [
         {

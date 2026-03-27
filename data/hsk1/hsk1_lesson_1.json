@@ -958,25 +958,25 @@
         },
         {
           "speaker": "A",
-          "chinese": "我叫小丽，你呢？",
-          "pinyin": "Wǒ jiào Xiǎo Lì, nǐ ne?",
-          "english": "My name is Xiao Li, and you?"
+          "chinese": "我叫奥斯汀，你呢？",
+          "pinyin": "Wǒ jiào Ào Sī Tīng, nǐ ne?",
+          "english": "My name is Ao Siting, and you?"
         },
         {
           "speaker": "B",
-          "chinese": "我叫小明。",
-          "pinyin": "Wǒ jiào Xiǎo Míng.",
-          "english": "My name is Xiao Ming."
+          "chinese": "我叫但丁。",
+          "pinyin": "Wǒ jiào Dàn Dīng.",
+          "english": "My name is Dan Ding."
         }
       ],
       "speakers": {
         "A": {
-          "name": "小丽",
+          "name": "奥斯汀",
           "role": "新同学",
           "gender": "female"
         },
         "B": {
-          "name": "小明",
+          "name": "但丁",
           "role": "同学",
           "gender": "male"
         }
@@ -1007,19 +1007,19 @@
         },
         {
           "speaker": "B",
-          "chinese": "她叫小华。",
-          "pinyin": "Tā jiào Xiǎo Huá.",
-          "english": "Her name is Xiao Hua."
+          "chinese": "她叫毕加索。",
+          "pinyin": "Tā jiào Bì Jiā Suǒ.",
+          "english": "Her name is Picasso."
         }
       ],
       "speakers": {
         "A": {
-          "name": "小华",
+          "name": "毕加索",
           "role": "同学",
           "gender": "female"
         },
         "B": {
-          "name": "大卫",
+          "name": "鲁迅",
           "role": "新朋友",
           "gender": "male"
         }
@@ -1032,9 +1032,9 @@
       "lines": [
         {
           "speaker": "A",
-          "chinese": "小明，你好吗？",
-          "pinyin": "Xiǎo Míng, nǐ hǎo ma?",
-          "english": "Xiao Ming, how are you?"
+          "chinese": "但丁，你好吗？",
+          "pinyin": "Dàn Dīng, nǐ hǎo ma?",
+          "english": "Dan Ding, how are you?"
         },
         {
           "speaker": "B",
@@ -1051,12 +1051,12 @@
       ],
       "speakers": {
         "A": {
-          "name": "小丽",
+          "name": "奥斯汀",
           "role": "同学",
           "gender": "female"
         },
         "B": {
-          "name": "小明",
+          "name": "但丁",
           "role": "同学",
           "gender": "male"
         }

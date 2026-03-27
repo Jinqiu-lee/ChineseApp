@@ -211,9 +211,22 @@
           "question": "_____ 法律规定，违法者必须接受处罚。",
           "type": "multiple_choice",
           "correct": "根据",
-          "options": ["根据", "除非", "由于", "因此"],
-          "option_pinyin": ["gēn jù", "chú fēi", "yóu yú", "yīn cǐ"],
-          "word_hints": {"法律": "fǎ lǜ", "违法": "wéi fǎ"}
+          "options": [
+            "根据",
+            "除非",
+            "由于",
+            "因此"
+          ],
+          "option_pinyin": [
+            "gēn jù",
+            "chú fēi",
+            "yóu yú",
+            "yīn cǐ"
+          ],
+          "word_hints": {
+            "法律": "fǎ lǜ",
+            "违法": "wéi fǎ"
+          }
         },
         {
           "question": "Choose the sentence that uses 根据 correctly.",
@@ -231,7 +244,10 @@
             "Zhèng jù gēn jù, lǜ shī tā de qīng bái zhèng míng le.",
             "Lǜ shī zhèng míng le gēn jù tā de qīng bái zhèng jù."
           ],
-          "word_hints": {"证据": "zhèng jù", "律师": "lǜ shī"}
+          "word_hints": {
+            "证据": "zhèng jù",
+            "律师": "lǜ shī"
+          }
         },
         {
           "question": "What does 根据 mean?",
@@ -243,16 +259,34 @@
             "Although; even though",
             "Therefore; as a result"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "_____ 判决结果，被告需要赔偿损失。",
           "type": "multiple_choice",
           "correct": "根据",
-          "options": ["根据", "因此", "除非", "然而"],
-          "option_pinyin": ["gēn jù", "yīn cǐ", "chú fēi", "rán ér"],
-          "word_hints": {"判决": "pàn jué", "被告": "bèi gào"}
+          "options": [
+            "根据",
+            "因此",
+            "除非",
+            "然而"
+          ],
+          "option_pinyin": [
+            "gēn jù",
+            "yīn cǐ",
+            "chú fēi",
+            "rán ér"
+          ],
+          "word_hints": {
+            "判决": "pàn jué",
+            "被告": "bèi gào"
+          }
         },
         {
           "question": "Where is 根据 placed in a sentence?",
@@ -264,7 +298,12 @@
             "Between the subject and the verb",
             "After the object"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -290,9 +329,22 @@
           "question": "由于证据不足，_____ 法院驳回了这次诉讼。",
           "type": "multiple_choice",
           "correct": "因此",
-          "options": ["因此", "除非", "根据", "虽然"],
-          "option_pinyin": ["yīn cǐ", "chú fēi", "gēn jù", "suī rán"],
-          "word_hints": {"证据": "zhèng jù", "诉讼": "sù sòng"}
+          "options": [
+            "因此",
+            "除非",
+            "根据",
+            "虽然"
+          ],
+          "option_pinyin": [
+            "yīn cǐ",
+            "chú fēi",
+            "gēn jù",
+            "suī rán"
+          ],
+          "word_hints": {
+            "证据": "zhèng jù",
+            "诉讼": "sù sòng"
+          }
         },
         {
           "question": "Choose the sentence that correctly uses 由于…因此….",
@@ -310,7 +362,10 @@
             "Tā yóu yú wéi fǎn le fǎ lǜ yīn cǐ, bèi pàn chǔ fá kuǎn.",
             "Tā bèi pàn chǔ fá kuǎn, yóu yú yīn cǐ wéi fǎn le fǎ lǜ."
           ],
-          "word_hints": {"罚款": "fá kuǎn", "违反": "wéi fǎn"}
+          "word_hints": {
+            "罚款": "fá kuǎn",
+            "违反": "wéi fǎn"
+          }
         },
         {
           "question": "What does 由于 introduce in a sentence?",
@@ -322,23 +377,51 @@
             "A condition",
             "A contrast"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "由于合同条款不清楚，_____ 双方产生了纠纷。",
           "type": "multiple_choice",
           "correct": "因此",
-          "options": ["因此", "除非", "根据", "尽管"],
-          "option_pinyin": ["yīn cǐ", "chú fēi", "gēn jù", "jǐn guǎn"],
-          "word_hints": {"合同": "hé tong", "纠纷": "jiū fēn"}
+          "options": [
+            "因此",
+            "除非",
+            "根据",
+            "尽管"
+          ],
+          "option_pinyin": [
+            "yīn cǐ",
+            "chú fēi",
+            "gēn jù",
+            "jǐn guǎn"
+          ],
+          "word_hints": {
+            "合同": "hé tong",
+            "纠纷": "jiū fēn"
+          }
         },
         {
           "question": "Which word pairs with 由于 to form a cause-effect structure?",
           "type": "multiple_choice",
           "correct": "因此",
-          "options": ["因此", "除非", "虽然", "而且"],
-          "option_pinyin": ["yīn cǐ", "chú fēi", "suī rán", "ér qiě"],
+          "options": [
+            "因此",
+            "除非",
+            "虽然",
+            "而且"
+          ],
+          "option_pinyin": [
+            "yīn cǐ",
+            "chú fēi",
+            "suī rán",
+            "ér qiě"
+          ],
           "word_hints": {}
         }
       ]
@@ -364,9 +447,22 @@
           "question": "_____ 你有充分的证据，法院不会受理这个案件。",
           "type": "multiple_choice",
           "correct": "除非",
-          "options": ["除非", "根据", "由于", "因此"],
-          "option_pinyin": ["chú fēi", "gēn jù", "yóu yú", "yīn cǐ"],
-          "word_hints": {"证据": "zhèng jù", "法院": "fǎ yuàn"}
+          "options": [
+            "除非",
+            "根据",
+            "由于",
+            "因此"
+          ],
+          "option_pinyin": [
+            "chú fēi",
+            "gēn jù",
+            "yóu yú",
+            "yīn cǐ"
+          ],
+          "word_hints": {
+            "证据": "zhèng jù",
+            "法院": "fǎ yuàn"
+          }
         },
         {
           "question": "Choose the sentence that uses 除非 correctly.",
@@ -384,7 +480,10 @@
             "Fǒu zé nǐ pìn qǐng lǜ shī, chú fēi nǐ hěn nán yíng dé sù sòng.",
             "Nǐ hěn nán yíng dé sù sòng, nǐ chú fēi pìn qǐng lǜ shī fǒu zé."
           ],
-          "word_hints": {"律师": "lǜ shī", "诉讼": "sù sòng"}
+          "word_hints": {
+            "律师": "lǜ shī",
+            "诉讼": "sù sòng"
+          }
         },
         {
           "question": "What does 除非 mean?",
@@ -396,23 +495,51 @@
             "Although; even though",
             "According to"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "除非他认罪，_____ 律师也很难为他辩护。",
           "type": "multiple_choice",
           "correct": "否则",
-          "options": ["否则", "因此", "根据", "由于"],
-          "option_pinyin": ["fǒu zé", "yīn cǐ", "gēn jù", "yóu yú"],
-          "word_hints": {"认罪": "rèn zuì", "律师": "lǜ shī"}
+          "options": [
+            "否则",
+            "因此",
+            "根据",
+            "由于"
+          ],
+          "option_pinyin": [
+            "fǒu zé",
+            "yīn cǐ",
+            "gēn jù",
+            "yóu yú"
+          ],
+          "word_hints": {
+            "认罪": "rèn zuì",
+            "律师": "lǜ shī"
+          }
         },
         {
           "question": "Which word often appears in the second clause after 除非?",
           "type": "multiple_choice",
           "correct": "否则",
-          "options": ["否则", "因此", "根据", "由于"],
-          "option_pinyin": ["fǒu zé", "yīn cǐ", "gēn jù", "yóu yú"],
+          "options": [
+            "否则",
+            "因此",
+            "根据",
+            "由于"
+          ],
+          "option_pinyin": [
+            "fǒu zé",
+            "yīn cǐ",
+            "gēn jù",
+            "yóu yú"
+          ],
           "word_hints": {}
         }
       ]
@@ -438,77 +565,160 @@
       "question": "What does 法律 mean?",
       "type": "multiple_choice",
       "correct": "Law; laws",
-      "options": ["Law; laws", "Contract", "Court", "Evidence"],
-      "word_hints": {"法律": "fǎ lǜ"}
+      "options": [
+        "Law; laws",
+        "Contract",
+        "Court",
+        "Evidence"
+      ],
+      "word_hints": {
+        "法律": "fǎ lǜ"
+      }
     },
     {
       "question": "Which word means 'lawyer; attorney'?",
       "type": "multiple_choice",
       "correct": "律师",
-      "options": ["法院", "律师", "判决", "诉讼"],
-      "word_hints": {"法院": "fǎ yuàn", "律师": "lǜ shī", "判决": "pàn jué", "诉讼": "sù sòng"}
+      "options": [
+        "法院",
+        "律师",
+        "判决",
+        "诉讼"
+      ],
+      "word_hints": {
+        "法院": "fǎ yuàn",
+        "律师": "lǜ shī",
+        "判决": "pàn jué",
+        "诉讼": "sù sòng"
+      }
     },
     {
       "question": "What does 证据 mean?",
       "type": "multiple_choice",
       "correct": "Evidence; proof",
-      "options": ["Evidence; proof", "Obligation", "Fine", "Verdict"],
-      "word_hints": {"证据": "zhèng jù"}
+      "options": [
+        "Evidence; proof",
+        "Obligation",
+        "Fine",
+        "Verdict"
+      ],
+      "word_hints": {
+        "证据": "zhèng jù"
+      }
     },
     {
       "question": "Which word means 'obligation; duty'?",
       "type": "multiple_choice",
       "correct": "义务",
-      "options": ["权利", "义务", "合同", "违法"],
-      "word_hints": {"权利": "quán lì", "义务": "yì wù", "合同": "hé tong", "违法": "wéi fǎ"}
+      "options": [
+        "权利",
+        "义务",
+        "合同",
+        "违法"
+      ],
+      "word_hints": {
+        "权利": "quán lì",
+        "义务": "yì wù",
+        "合同": "hé tong",
+        "违法": "wéi fǎ"
+      }
     },
     {
       "question": "What does 罚款 mean?",
       "type": "multiple_choice",
       "correct": "Fine; to impose a fine",
-      "options": ["Fine; to impose a fine", "Lawsuit", "Court", "Evidence"],
-      "word_hints": {"罚款": "fá kuǎn"}
+      "options": [
+        "Fine; to impose a fine",
+        "Lawsuit",
+        "Court",
+        "Evidence"
+      ],
+      "word_hints": {
+        "罚款": "fá kuǎn"
+      }
     },
     {
       "question": "Which word means 'verdict; to pass judgment'?",
       "type": "multiple_choice",
       "correct": "判决",
-      "options": ["保护", "诉讼", "判决", "合同"],
-      "word_hints": {"保护": "bǎo hù", "诉讼": "sù sòng", "判决": "pàn jué", "合同": "hé tong"}
+      "options": [
+        "保护",
+        "诉讼",
+        "判决",
+        "合同"
+      ],
+      "word_hints": {
+        "保护": "bǎo hù",
+        "诉讼": "sù sòng",
+        "判决": "pàn jué",
+        "合同": "hé tong"
+      }
     },
     {
       "question": "What does the phrase 签署合同 mean?",
       "type": "multiple_choice",
       "correct": "To sign a contract",
-      "options": ["To sign a contract", "To file a lawsuit", "To collect evidence", "To pay a fine"],
-      "word_hints": {"合同": "hé tong"}
+      "options": [
+        "To sign a contract",
+        "To file a lawsuit",
+        "To collect evidence",
+        "To pay a fine"
+      ],
+      "word_hints": {
+        "合同": "hé tong"
+      }
     },
     {
       "question": "Fill in the blank: _____ 法律规定，任何人不得侵犯他人的权利。",
       "type": "multiple_choice",
       "correct": "根据",
-      "options": ["根据", "由于", "除非", "因此"],
-      "word_hints": {"权利": "quán lì"}
+      "options": [
+        "根据",
+        "由于",
+        "除非",
+        "因此"
+      ],
+      "word_hints": {
+        "权利": "quán lì"
+      }
     },
     {
       "question": "What does 根据 mean?",
       "type": "multiple_choice",
       "correct": "According to; based on",
-      "options": ["According to; based on", "Unless; only if", "Due to; because of", "Therefore; as a result"],
+      "options": [
+        "According to; based on",
+        "Unless; only if",
+        "Due to; because of",
+        "Therefore; as a result"
+      ],
       "word_hints": {}
     },
     {
       "question": "Fill in the blank: 由于证据不充分，_____ 法院无法作出判决。",
       "type": "multiple_choice",
       "correct": "因此",
-      "options": ["因此", "根据", "除非", "虽然"],
-      "word_hints": {"证据": "zhèng jù", "判决": "pàn jué"}
+      "options": [
+        "因此",
+        "根据",
+        "除非",
+        "虽然"
+      ],
+      "word_hints": {
+        "证据": "zhèng jù",
+        "判决": "pàn jué"
+      }
     },
     {
       "question": "What does 由于 introduce in a cause-effect sentence?",
       "type": "multiple_choice",
       "correct": "The cause or reason",
-      "options": ["The cause or reason", "The result", "A condition", "A contrast"],
+      "options": [
+        "The cause or reason",
+        "The result",
+        "A condition",
+        "A contrast"
+      ],
       "word_hints": {}
     },
     {
@@ -521,62 +731,123 @@
         "根据律师出示证据，除非被告会被判有罪。",
         "被告会被判有罪，除非因此律师出示证据。"
       ],
-      "word_hints": {"律师": "lǜ shī", "证据": "zhèng jù"}
+      "word_hints": {
+        "律师": "lǜ shī",
+        "证据": "zhèng jù"
+      }
     },
     {
       "question": "What does 违法 mean?",
       "type": "multiple_choice",
       "correct": "To violate the law; illegal",
-      "options": ["To violate the law; illegal", "To protect", "To sign a contract", "To file a lawsuit"],
-      "word_hints": {"违法": "wéi fǎ"}
+      "options": [
+        "To violate the law; illegal",
+        "To protect",
+        "To sign a contract",
+        "To file a lawsuit"
+      ],
+      "word_hints": {
+        "违法": "wéi fǎ"
+      }
     },
     {
       "question": "Which word means 'lawsuit; litigation'?",
       "type": "multiple_choice",
       "correct": "诉讼",
-      "options": ["判决", "诉讼", "罚款", "证据"],
-      "word_hints": {"判决": "pàn jué", "诉讼": "sù sòng", "罚款": "fá kuǎn", "证据": "zhèng jù"}
+      "options": [
+        "判决",
+        "诉讼",
+        "罚款",
+        "证据"
+      ],
+      "word_hints": {
+        "判决": "pàn jué",
+        "诉讼": "sù sòng",
+        "罚款": "fá kuǎn",
+        "证据": "zhèng jù"
+      }
     },
     {
       "question": "What does the phrase 维护权利 mean?",
       "type": "multiple_choice",
       "correct": "To safeguard one's rights",
-      "options": ["To safeguard one's rights", "To violate regulations", "To collect evidence", "To sign a contract"],
-      "word_hints": {"权利": "quán lì"}
+      "options": [
+        "To safeguard one's rights",
+        "To violate regulations",
+        "To collect evidence",
+        "To sign a contract"
+      ],
+      "word_hints": {
+        "权利": "quán lì"
+      }
     },
     {
       "question": "What does 保护 mean?",
       "type": "multiple_choice",
       "correct": "To protect; protection",
-      "options": ["To protect; protection", "To punish", "To judge", "To file a case"],
-      "word_hints": {"保护": "bǎo hù"}
+      "options": [
+        "To protect; protection",
+        "To punish",
+        "To judge",
+        "To file a case"
+      ],
+      "word_hints": {
+        "保护": "bǎo hù"
+      }
     },
     {
       "question": "Which word means 'right; entitlement'?",
       "type": "multiple_choice",
       "correct": "权利",
-      "options": ["义务", "权利", "法律", "诉讼"],
-      "word_hints": {"权利": "quán lì", "义务": "yì wù", "法律": "fǎ lǜ", "诉讼": "sù sòng"}
+      "options": [
+        "义务",
+        "权利",
+        "法律",
+        "诉讼"
+      ],
+      "word_hints": {
+        "权利": "quán lì",
+        "义务": "yì wù",
+        "法律": "fǎ lǜ",
+        "诉讼": "sù sòng"
+      }
     },
     {
       "question": "According to the culture note, approximately how many licensed lawyers are there in China?",
       "type": "multiple_choice",
       "correct": "Over 600,000",
-      "options": ["Over 600,000", "Over 100,000", "Over 1,000,000", "Over 50,000"],
+      "options": [
+        "Over 600,000",
+        "Over 100,000",
+        "Over 1,000,000",
+        "Over 50,000"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does the phrase 提出诉讼 mean?",
       "type": "multiple_choice",
       "correct": "To file a lawsuit",
-      "options": ["To file a lawsuit", "To sign a contract", "To pay a fine", "To protect rights"],
-      "word_hints": {"诉讼": "sù sòng"}
+      "options": [
+        "To file a lawsuit",
+        "To sign a contract",
+        "To pay a fine",
+        "To protect rights"
+      ],
+      "word_hints": {
+        "诉讼": "sù sòng"
+      }
     },
     {
       "question": "Which grammar pattern means 'unless; only if'?",
       "type": "multiple_choice",
       "correct": "除非",
-      "options": ["除非", "根据", "由于", "因此"],
+      "options": [
+        "除非",
+        "根据",
+        "由于",
+        "因此"
+      ],
       "word_hints": {}
     }
   ],
@@ -586,8 +857,16 @@
       "title": "Consulting a Lawyer",
       "title_chinese": "咨询律师",
       "speakers": {
-        "A": {"name": "王明", "role": "当事人", "gender": "male"},
-        "B": {"name": "李律师", "role": "律师", "gender": "female"}
+        "A": {
+          "name": "李白",
+          "role": "当事人",
+          "gender": "male"
+        },
+        "B": {
+          "name": "李律师",
+          "role": "律师",
+          "gender": "female"
+        }
       },
       "lines": [
         {
@@ -645,8 +924,16 @@
       "title": "A Citizen Learns About Their Rights",
       "title_chinese": "了解自己的权利",
       "speakers": {
-        "A": {"name": "小张", "role": "市民", "gender": "female"},
-        "B": {"name": "陈老师", "role": "法律顾问", "gender": "male"}
+        "A": {
+          "name": "萨特",
+          "role": "市民",
+          "gender": "female"
+        },
+        "B": {
+          "name": "陈老师",
+          "role": "法律顾问",
+          "gender": "male"
+        }
       },
       "lines": [
         {

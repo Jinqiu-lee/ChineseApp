@@ -211,9 +211,21 @@
           "question": "_____ 语法多难，他都坚持学习，从不放弃。",
           "type": "multiple_choice",
           "correct": "无论",
-          "options": ["无论", "借助", "从而", "因此"],
-          "option_pinyin": ["wú lùn", "jiè zhù", "cóng ér", "yīn cǐ"],
-          "word_hints": {"语法": "yǔ fǎ"}
+          "options": [
+            "无论",
+            "借助",
+            "从而",
+            "因此"
+          ],
+          "option_pinyin": [
+            "wú lùn",
+            "jiè zhù",
+            "cóng ér",
+            "yīn cǐ"
+          ],
+          "word_hints": {
+            "语法": "yǔ fǎ"
+          }
         },
         {
           "question": "Choose the sentence that uses 无论…都… correctly.",
@@ -231,7 +243,9 @@
             "Wú lùn tā yù dào shén me kùn nán, wài yǔ xué xí fàng qì dōu bú huì.",
             "Yù dào kùn nán wú lùn shén me, tā dōu bú huì fàng qì xué xí wài yǔ."
           ],
-          "word_hints": {"外语": "wài yǔ"}
+          "word_hints": {
+            "外语": "wài yǔ"
+          }
         },
         {
           "question": "What does 无论 mean?",
@@ -243,23 +257,51 @@
             "Thereby; and thus",
             "According to"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "无论使用哪种翻译方法，准确理解原文 _____ 是最重要的。",
           "type": "multiple_choice",
           "correct": "都",
-          "options": ["都", "从而", "借助", "也就"],
-          "option_pinyin": ["dōu", "cóng ér", "jiè zhù", "yě jiù"],
-          "word_hints": {"翻译": "fān yì", "理解": "lǐ jiě"}
+          "options": [
+            "都",
+            "从而",
+            "借助",
+            "也就"
+          ],
+          "option_pinyin": [
+            "dōu",
+            "cóng ér",
+            "jiè zhù",
+            "yě jiù"
+          ],
+          "word_hints": {
+            "翻译": "fān yì",
+            "理解": "lǐ jiě"
+          }
         },
         {
           "question": "Which word follows 无论 in the result clause to complete the pattern?",
           "type": "multiple_choice",
           "correct": "都/也",
-          "options": ["都/也", "从而", "借助", "因为"],
-          "option_pinyin": ["dōu / yě", "cóng ér", "jiè zhù", "yīn wèi"],
+          "options": [
+            "都/也",
+            "从而",
+            "借助",
+            "因为"
+          ],
+          "option_pinyin": [
+            "dōu / yě",
+            "cóng ér",
+            "jiè zhù",
+            "yīn wèi"
+          ],
           "word_hints": {}
         }
       ]
@@ -285,9 +327,21 @@
           "question": "她 _____ 字典，查清楚了每个词汇的用法。",
           "type": "multiple_choice",
           "correct": "借助",
-          "options": ["借助", "无论", "从而", "因此"],
-          "option_pinyin": ["jiè zhù", "wú lùn", "cóng ér", "yīn cǐ"],
-          "word_hints": {"词汇": "cí huì"}
+          "options": [
+            "借助",
+            "无论",
+            "从而",
+            "因此"
+          ],
+          "option_pinyin": [
+            "jiè zhù",
+            "wú lùn",
+            "cóng ér",
+            "yīn cǐ"
+          ],
+          "word_hints": {
+            "词汇": "cí huì"
+          }
         },
         {
           "question": "Choose the sentence that uses 借助 correctly.",
@@ -305,7 +359,10 @@
             "Fān yì gōng jù jiè zhù, yǔ yán jiāo liú tā kè fú le zhàng ài.",
             "Yǔ yán jiāo liú jiè zhù fān yì gōng jù, tā zhàng ài kè fú le."
           ],
-          "word_hints": {"翻译": "fān yì", "沟通": "gōu tōng"}
+          "word_hints": {
+            "翻译": "fān yì",
+            "沟通": "gōu tōng"
+          }
         },
         {
           "question": "What does 借助 mean?",
@@ -317,16 +374,33 @@
             "Thereby; and thus",
             "According to"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "他们 _____ 语言交流，增进了彼此之间的了解。",
           "type": "multiple_choice",
           "correct": "借助",
-          "options": ["借助", "无论", "从而", "除非"],
-          "option_pinyin": ["jiè zhù", "wú lùn", "cóng ér", "chú fēi"],
-          "word_hints": {"交流": "jiāo liú"}
+          "options": [
+            "借助",
+            "无论",
+            "从而",
+            "除非"
+          ],
+          "option_pinyin": [
+            "jiè zhù",
+            "wú lùn",
+            "cóng ér",
+            "chú fēi"
+          ],
+          "word_hints": {
+            "交流": "jiāo liú"
+          }
         },
         {
           "question": "What does 借助 emphasise compared to the simpler word 用?",
@@ -338,7 +412,12 @@
             "The result was unexpected",
             "The action involves two parties"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -364,9 +443,22 @@
           "question": "他积累了丰富的词汇，_____ 能够流利地表达自己的想法。",
           "type": "multiple_choice",
           "correct": "从而",
-          "options": ["从而", "借助", "无论", "尽管"],
-          "option_pinyin": ["cóng ér", "jiè zhù", "wú lùn", "jǐn guǎn"],
-          "word_hints": {"词汇": "cí huì", "表达": "biǎo dá"}
+          "options": [
+            "从而",
+            "借助",
+            "无论",
+            "尽管"
+          ],
+          "option_pinyin": [
+            "cóng ér",
+            "jiè zhù",
+            "wú lùn",
+            "jǐn guǎn"
+          ],
+          "word_hints": {
+            "词汇": "cí huì",
+            "表达": "biǎo dá"
+          }
         },
         {
           "question": "Choose the sentence that uses 从而 correctly.",
@@ -384,7 +476,10 @@
             "Tā cóng ér nǔ lì gǎi jìn, fā yīn jiǎn shǎo le yǔ rén gōu tōng shí de wù jiě.",
             "Jiǎn shǎo le wù jiě cóng ér, tā nǔ lì gǎi jìn fā yīn gōu tōng shí."
           ],
-          "word_hints": {"发音": "fā yīn", "沟通": "gōu tōng"}
+          "word_hints": {
+            "发音": "fā yīn",
+            "沟通": "gōu tōng"
+          }
         },
         {
           "question": "What does 从而 mean?",
@@ -396,16 +491,34 @@
             "No matter; regardless",
             "Although; even though"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "学生借助工具书扩大了词汇量，_____ 提高了翻译水平。",
           "type": "multiple_choice",
           "correct": "从而",
-          "options": ["从而", "无论", "借助", "除非"],
-          "option_pinyin": ["cóng ér", "wú lùn", "jiè zhù", "chú fēi"],
-          "word_hints": {"词汇": "cí huì", "翻译": "fān yì"}
+          "options": [
+            "从而",
+            "无论",
+            "借助",
+            "除非"
+          ],
+          "option_pinyin": [
+            "cóng ér",
+            "wú lùn",
+            "jiè zhù",
+            "chú fēi"
+          ],
+          "word_hints": {
+            "词汇": "cí huì",
+            "翻译": "fān yì"
+          }
         },
         {
           "question": "Where does 从而 appear in a sentence?",
@@ -417,7 +530,12 @@
             "After the object of the sentence",
             "Between the subject and the verb"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -443,71 +561,145 @@
       "question": "What does 表达 mean?",
       "type": "multiple_choice",
       "correct": "To express; expression",
-      "options": ["To express; expression", "To translate", "To communicate", "To understand"],
-      "word_hints": {"表达": "biǎo dá"}
+      "options": [
+        "To express; expression",
+        "To translate",
+        "To communicate",
+        "To understand"
+      ],
+      "word_hints": {
+        "表达": "biǎo dá"
+      }
     },
     {
       "question": "Which word means 'dialect; regional language'?",
       "type": "multiple_choice",
       "correct": "方言",
-      "options": ["母语", "外语", "方言", "词汇"],
-      "word_hints": {"母语": "mǔ yǔ", "外语": "wài yǔ", "方言": "fāng yán", "词汇": "cí huì"}
+      "options": [
+        "母语",
+        "外语",
+        "方言",
+        "词汇"
+      ],
+      "word_hints": {
+        "母语": "mǔ yǔ",
+        "外语": "wài yǔ",
+        "方言": "fāng yán",
+        "词汇": "cí huì"
+      }
     },
     {
       "question": "What does 词汇 mean?",
       "type": "multiple_choice",
       "correct": "Vocabulary; lexicon",
-      "options": ["Grammar", "Vocabulary; lexicon", "Pronunciation", "Dialect"],
-      "word_hints": {"词汇": "cí huì"}
+      "options": [
+        "Grammar",
+        "Vocabulary; lexicon",
+        "Pronunciation",
+        "Dialect"
+      ],
+      "word_hints": {
+        "词汇": "cí huì"
+      }
     },
     {
       "question": "Which word means 'mother tongue; native language'?",
       "type": "multiple_choice",
       "correct": "母语",
-      "options": ["外语", "母语", "方言", "沟通"],
-      "word_hints": {"外语": "wài yǔ", "母语": "mǔ yǔ", "方言": "fāng yán", "沟通": "gōu tōng"}
+      "options": [
+        "外语",
+        "母语",
+        "方言",
+        "沟通"
+      ],
+      "word_hints": {
+        "外语": "wài yǔ",
+        "母语": "mǔ yǔ",
+        "方言": "fāng yán",
+        "沟通": "gōu tōng"
+      }
     },
     {
       "question": "What does 发音 mean?",
       "type": "multiple_choice",
       "correct": "Pronunciation; to pronounce",
-      "options": ["Pronunciation; to pronounce", "Vocabulary", "Grammar", "Expression"],
-      "word_hints": {"发音": "fā yīn"}
+      "options": [
+        "Pronunciation; to pronounce",
+        "Vocabulary",
+        "Grammar",
+        "Expression"
+      ],
+      "word_hints": {
+        "发音": "fā yīn"
+      }
     },
     {
       "question": "Which word means 'cultural difference; cultural gap'?",
       "type": "multiple_choice",
       "correct": "文化差异",
-      "options": ["语言交流", "文化差异", "母语干扰", "文化背景"],
-      "word_hints": {"文化差异": "wén huà chā yì"}
+      "options": [
+        "语言交流",
+        "文化差异",
+        "母语干扰",
+        "文化背景"
+      ],
+      "word_hints": {
+        "文化差异": "wén huà chā yì"
+      }
     },
     {
       "question": "What does 无论 mean?",
       "type": "multiple_choice",
       "correct": "No matter; regardless of",
-      "options": ["No matter; regardless of", "With the help of", "Thereby; and thus", "In order to"],
+      "options": [
+        "No matter; regardless of",
+        "With the help of",
+        "Thereby; and thus",
+        "In order to"
+      ],
       "word_hints": {}
     },
     {
       "question": "Fill in the blank: _____ 语言障碍多大，真诚的沟通都能帮助理解。",
       "type": "multiple_choice",
       "correct": "无论",
-      "options": ["无论", "借助", "从而", "除非"],
-      "word_hints": {"沟通": "gōu tōng", "理解": "lǐ jiě"}
+      "options": [
+        "无论",
+        "借助",
+        "从而",
+        "除非"
+      ],
+      "word_hints": {
+        "沟通": "gōu tōng",
+        "理解": "lǐ jiě"
+      }
     },
     {
       "question": "What does 借助 mean?",
       "type": "multiple_choice",
       "correct": "With the help of; by means of",
-      "options": ["With the help of; by means of", "No matter; regardless", "Thereby; and thus", "Unless; only if"],
+      "options": [
+        "With the help of; by means of",
+        "No matter; regardless",
+        "Thereby; and thus",
+        "Unless; only if"
+      ],
       "word_hints": {}
     },
     {
       "question": "Fill in the blank: 她 _____ 翻译软件，成功与外国客户沟通了。",
       "type": "multiple_choice",
       "correct": "借助",
-      "options": ["借助", "无论", "从而", "但"],
-      "word_hints": {"翻译": "fān yì", "沟通": "gōu tōng"}
+      "options": [
+        "借助",
+        "无论",
+        "从而",
+        "但"
+      ],
+      "word_hints": {
+        "翻译": "fān yì",
+        "沟通": "gōu tōng"
+      }
     },
     {
       "question": "What does 从而 introduce in a sentence?",
@@ -531,55 +723,103 @@
         "他坚持从而练习发音，大幅提高了口语水平。",
         "大幅提高了口语水平从而，他坚持练习发音。"
       ],
-      "word_hints": {"发音": "fā yīn"}
+      "word_hints": {
+        "发音": "fā yīn"
+      }
     },
     {
       "question": "What does 翻译 mean?",
       "type": "multiple_choice",
       "correct": "To translate; translation; translator",
-      "options": ["To translate; translation; translator", "To understand", "To communicate", "To express"],
-      "word_hints": {"翻译": "fān yì"}
+      "options": [
+        "To translate; translation; translator",
+        "To understand",
+        "To communicate",
+        "To express"
+      ],
+      "word_hints": {
+        "翻译": "fān yì"
+      }
     },
     {
       "question": "What does the phrase 克服语言障碍 mean?",
       "type": "multiple_choice",
       "correct": "To overcome language barriers",
-      "options": ["To overcome language barriers", "To learn a foreign language", "To use translation tools", "To study grammar"],
+      "options": [
+        "To overcome language barriers",
+        "To learn a foreign language",
+        "To use translation tools",
+        "To study grammar"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does 语法 mean?",
       "type": "multiple_choice",
       "correct": "Grammar",
-      "options": ["Vocabulary", "Pronunciation", "Grammar", "Dialect"],
-      "word_hints": {"语法": "yǔ fǎ"}
+      "options": [
+        "Vocabulary",
+        "Pronunciation",
+        "Grammar",
+        "Dialect"
+      ],
+      "word_hints": {
+        "语法": "yǔ fǎ"
+      }
     },
     {
       "question": "Which word means 'foreign language'?",
       "type": "multiple_choice",
       "correct": "外语",
-      "options": ["母语", "方言", "外语", "沟通"],
-      "word_hints": {"母语": "mǔ yǔ", "方言": "fāng yán", "外语": "wài yǔ", "沟通": "gōu tōng"}
+      "options": [
+        "母语",
+        "方言",
+        "外语",
+        "沟通"
+      ],
+      "word_hints": {
+        "母语": "mǔ yǔ",
+        "方言": "fāng yán",
+        "外语": "wài yǔ",
+        "沟通": "gōu tōng"
+      }
     },
     {
       "question": "What does the phrase 母语干扰 mean?",
       "type": "multiple_choice",
       "correct": "Mother tongue interference",
-      "options": ["Mother tongue interference", "Cultural background", "Language communication", "Accurate translation"],
-      "word_hints": {"母语": "mǔ yǔ"}
+      "options": [
+        "Mother tongue interference",
+        "Cultural background",
+        "Language communication",
+        "Accurate translation"
+      ],
+      "word_hints": {
+        "母语": "mǔ yǔ"
+      }
     },
     {
       "question": "According to the culture note, which dialect is spoken in Guangdong and Hong Kong?",
       "type": "multiple_choice",
       "correct": "Cantonese (粤语)",
-      "options": ["Cantonese (粤语)", "Shanghainese (上海话)", "Hokkien (闽南语)", "Mandarin (普通话)"],
+      "options": [
+        "Cantonese (粤语)",
+        "Shanghainese (上海话)",
+        "Hokkien (闽南语)",
+        "Mandarin (普通话)"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does the phrase 语言交流 mean?",
       "type": "multiple_choice",
       "correct": "Language communication; linguistic exchange",
-      "options": ["Language communication; linguistic exchange", "Accurate translation", "Cultural background", "Fluent expression"],
+      "options": [
+        "Language communication; linguistic exchange",
+        "Accurate translation",
+        "Cultural background",
+        "Fluent expression"
+      ],
       "word_hints": {}
     },
     {
@@ -601,14 +841,22 @@
       "title": "Discussing Language Learning Challenges",
       "title_chinese": "讨论语言学习的挑战",
       "speakers": {
-        "A": {"name": "大卫", "role": "外国留学生", "gender": "male"},
-        "B": {"name": "小雪", "role": "中国学生", "gender": "female"}
+        "A": {
+          "name": "鲁迅",
+          "role": "外国留学生",
+          "gender": "male"
+        },
+        "B": {
+          "name": "奥斯汀",
+          "role": "中国学生",
+          "gender": "female"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "小雪，我发现中文的发音和词汇对我来说很难，有什么好方法吗？",
-          "pinyin": "Xiǎo Xuě, wǒ fā xiàn Zhōng wén de fā yīn hé cí huì duì wǒ lái shuō hěn nán, yǒu shén me hǎo fāng fǎ ma?",
+          "chinese": "奥斯汀，我发现中文的发音和词汇对我来说很难，有什么好方法吗？",
+          "pinyin": "Ào Sī Tīng, wǒ fā xiàn Zhōng wén de fā yīn hé cí huì duì wǒ lái shuō hěn nán, yǒu shén me hǎo fāng fǎ ma?",
           "english": "Xiaoxue, I find Chinese pronunciation and vocabulary very difficult for me. Do you have any good methods?"
         },
         {
@@ -654,8 +902,16 @@
       "title": "A Translator Discusses Their Work",
       "title_chinese": "翻译谈工作体会",
       "speakers": {
-        "A": {"name": "记者", "role": "记者", "gender": "female"},
-        "B": {"name": "林翻译", "role": "职业翻译", "gender": "male"}
+        "A": {
+          "name": "记者",
+          "role": "记者",
+          "gender": "female"
+        },
+        "B": {
+          "name": "林翻译",
+          "role": "职业翻译",
+          "gender": "male"
+        }
       },
       "lines": [
         {

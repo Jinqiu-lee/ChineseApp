@@ -2,8 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet, ActivityIndicator,
 } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { speakChinese } from '../../utils/tts';
 import { startRecording, stopAndTranscribe, calculateAccuracy } from '../../utils/speechRecognition';
+import AvatarCharacter from '../AvatarCharacter';
 
 const MAX_ATTEMPTS = 5;
 
@@ -15,13 +17,20 @@ function getFeedback(accuracy) {
   return { msg: "Hmm, couldn't quite catch that 🤔", icon: '🎤', color: '#FF6B6B', pass: false };
 }
 
-export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
+export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: avatarIdProp }) {
   const [phase, setPhase] = useState('idle');
   const [attempts, setAttempts] = useState(0);
   const [accuracy, setAccuracy] = useState(null);
   const [showHint, setShowHint] = useState(false);
+  const [avatarId, setAvatarId] = useState(avatarIdProp || 'eileen');
   const recordingRef = useRef(null);
   const timerRef = useRef(null);
+
+  useEffect(() => {
+    if (!avatarIdProp) {
+      AsyncStorage.getItem('avatarId').then(val => { if (val) setAvatarId(val); }).catch(() => {});
+    }
+  }, []);
 
   const { subtype } = exercise;
   const isRepeat    = subtype === 'repeat';
@@ -31,6 +40,14 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
   // The Chinese text we compare the recording against
   const expectedChinese = isRespond ? exercise.answerChinese : exercise.chinese;
   const expectedPinyin  = isRespond ? exercise.answerPinyin  : exercise.pinyin;
+
+  // For respond exercises: show full answer as reference in result/review
+  const fullAnswerChinese = isRespond ? (exercise.fullAnswerChinese || exercise.answerChinese) : exercise.chinese;
+  const fullAnswerPinyin  = isRespond ? (exercise.fullAnswerPinyin  || exercise.answerPinyin)  : exercise.pinyin;
+
+  // L1/L2 show pinyin hint; L3-L5 show Chinese characters hint
+  const hskLevel = exercise.hskLevel || 1;
+  const hintShowPinyin = hskLevel <= 2;
 
   useEffect(() => {
     return () => {
@@ -79,12 +96,22 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
     return (
       <View style={styles.container}>
 
+        <AvatarCharacter avatarId={avatarId} expression="neutral" size={120} />
+
         {/* Instruction */}
         <Text style={styles.instruction}>
           {isRepeat   ? '🎤 Listen, then repeat in Chinese' :
            isTranslate ? '🎤 Say this in Chinese' :
                         '🎧 Listen to the question, then answer'}
         </Text>
+
+        {/* Image reference card for respond exercises */}
+        {isRespond && exercise.emoji && (
+          <View style={styles.emojiRefCard}>
+            <Text style={styles.emojiRefIcon}>{exercise.emoji}</Text>
+            <Text style={styles.emojiRefLabel}>Think about your answer</Text>
+          </View>
+        )}
 
         {/* Prompt card */}
         <View style={styles.promptCard}>
@@ -138,7 +165,11 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
             {isRespond && (
               <>
                 <Text style={styles.hintLabel}>Suggested answer:</Text>
-                <Text style={styles.hintPinyin}>{exercise.answerPinyin}</Text>
+                {hintShowPinyin ? (
+                  <Text style={styles.hintPinyin}>{expectedPinyin}</Text>
+                ) : (
+                  <Text style={styles.hintChinese}>{expectedChinese}</Text>
+                )}
                 <Text style={styles.hintEnglish}>{exercise.answerEnglish}</Text>
               </>
             )}
@@ -162,6 +193,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
   if (phase === 'recording') {
     return (
       <View style={styles.container}>
+        <AvatarCharacter avatarId={avatarId} expression="think" size={120} />
         <Text style={styles.instruction}>🔴 Recording... speak now</Text>
         <View style={styles.recordingCard}>
           <Text style={styles.recordingIcon}>🎙</Text>
@@ -178,6 +210,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
   if (phase === 'processing') {
     return (
       <View style={styles.container}>
+        <AvatarCharacter avatarId={avatarId} expression="think" size={120} />
         <View style={styles.processingCard}>
           <ActivityIndicator size="large" color="#a29bfe" />
           <Text style={styles.processingText}>Analyzing your pronunciation...</Text>
@@ -189,8 +222,10 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
   // ── RESULT ────────────────────────────────────────────────────────────
   if (phase === 'result') {
     const feedback = getFeedback(accuracy);
+    const resultExpression = accuracy >= 60 ? 'happy' : (attempts >= MAX_ATTEMPTS ? 'encourage' : 'sad');
     return (
       <View style={styles.container}>
+        <AvatarCharacter avatarId={avatarId} expression={resultExpression} size={120} />
         <View style={styles.resultCard}>
           <Text style={styles.resultIcon}>{feedback.icon}</Text>
           <Text style={[styles.accuracyPct, { color: feedback.color }]}>{accuracy}%</Text>
@@ -200,10 +235,13 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
             <Text style={styles.resultLabel}>{isRespond ? 'Suggested answer:' : 'Correct:'}</Text>
             <Text style={styles.resultChinese}>{expectedChinese}</Text>
             <Text style={styles.resultPinyin}>{expectedPinyin}</Text>
+            {isRespond && fullAnswerChinese !== expectedChinese && (
+              <Text style={styles.resultFullAnswer}>{fullAnswerChinese}</Text>
+            )}
             {isRespond && (
               <Text style={styles.resultEnglish}>{exercise.answerEnglish}</Text>
             )}
-            <TouchableOpacity onPress={() => speakChinese(expectedChinese)} style={styles.replayBtn}>
+            <TouchableOpacity onPress={() => speakChinese(fullAnswerChinese)} style={styles.replayBtn}>
               <Text style={styles.replayBtnText}>🔊 Hear it</Text>
             </TouchableOpacity>
           </View>
@@ -244,11 +282,11 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
               <Text style={styles.questionLabel}>Answer:</Text>
             </>
           )}
-          <Text style={styles.chinese}>{expectedChinese}</Text>
-          <Text style={styles.pinyin}>{expectedPinyin}</Text>
+          <Text style={styles.chinese}>{isRespond ? fullAnswerChinese : expectedChinese}</Text>
+          <Text style={styles.pinyin}>{isRespond ? fullAnswerPinyin : expectedPinyin}</Text>
           {isRespond && <Text style={styles.english}>{exercise.answerEnglish}</Text>}
           {!isRespond && <Text style={styles.english}>{exercise.english}</Text>}
-          <TouchableOpacity style={styles.listenBtn} onPress={() => speakChinese(expectedChinese)}>
+          <TouchableOpacity style={styles.listenBtn} onPress={() => speakChinese(isRespond ? fullAnswerChinese : expectedChinese)}>
             <Text style={styles.listenBtnText}>🔊 Play Audio</Text>
           </TouchableOpacity>
         </View>
@@ -262,6 +300,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong }) {
   // ── MAX ATTEMPTS ──────────────────────────────────────────────────────
   return (
     <View style={styles.container}>
+      <AvatarCharacter avatarId={avatarId} expression="encourage" size={120} />
       <View style={styles.maxCard}>
         <Text style={styles.maxIcon}>😅</Text>
         <Text style={styles.maxTitle}>Maximum Attempts Reached</Text>
@@ -292,6 +331,15 @@ const styles = StyleSheet.create({
   },
   instruction: { fontSize: 18, fontWeight: '700', color: '#a29bfe', textAlign: 'center' },
 
+  emojiRefCard: {
+    backgroundColor: 'rgba(162,155,254,0.08)', borderRadius: 20,
+    borderWidth: 1, borderColor: 'rgba(162,155,254,0.25)',
+    paddingVertical: 16, paddingHorizontal: 24,
+    alignItems: 'center', width: '100%', gap: 6,
+  },
+  emojiRefIcon:  { fontSize: 64 },
+  emojiRefLabel: { fontSize: 12, fontWeight: '600', color: '#a29bfe', letterSpacing: 0.5 },
+
   promptCard: {
     backgroundColor: '#16213e', borderRadius: 20, padding: 24,
     alignItems: 'center', width: '100%', borderWidth: 1, borderColor: '#2d3436', gap: 8,
@@ -321,9 +369,10 @@ const styles = StyleSheet.create({
     borderWidth: 1, borderColor: 'rgba(255,215,0,0.25)',
     padding: 16, width: '100%', alignItems: 'center', gap: 4,
   },
-  hintLabel:  { fontSize: 11, fontWeight: '700', color: '#FFD700', textTransform: 'uppercase', letterSpacing: 0.8 },
-  hintPinyin: { fontSize: 18, color: '#fff', fontStyle: 'italic', textAlign: 'center' },
-  hintEnglish:{ fontSize: 14, color: '#636e72', textAlign: 'center' },
+  hintLabel:   { fontSize: 11, fontWeight: '700', color: '#FFD700', textTransform: 'uppercase', letterSpacing: 0.8 },
+  hintPinyin:  { fontSize: 18, color: '#fff', fontStyle: 'italic', textAlign: 'center' },
+  hintChinese: { fontSize: 28, fontWeight: '900', color: '#fff', textAlign: 'center' },
+  hintEnglish: { fontSize: 14, color: '#636e72', textAlign: 'center' },
 
   attemptsText: { fontSize: 13, color: '#636e72' },
 
@@ -365,10 +414,11 @@ const styles = StyleSheet.create({
     marginTop: 12, alignItems: 'center', paddingTop: 16,
     borderTopWidth: 1, borderTopColor: 'rgba(255,255,255,0.08)', width: '100%', gap: 4,
   },
-  resultLabel:   { fontSize: 12, color: '#636e72', marginBottom: 4 },
-  resultChinese: { fontSize: 32, fontWeight: '900', color: '#fff' },
-  resultPinyin:  { fontSize: 15, color: '#a29bfe', fontStyle: 'italic' },
-  resultEnglish: { fontSize: 13, color: '#636e72', textAlign: 'center' },
+  resultLabel:      { fontSize: 12, color: '#636e72', marginBottom: 4 },
+  resultChinese:    { fontSize: 32, fontWeight: '900', color: '#fff' },
+  resultPinyin:     { fontSize: 15, color: '#a29bfe', fontStyle: 'italic' },
+  resultFullAnswer: { fontSize: 14, color: 'rgba(255,255,255,0.45)', textAlign: 'center', marginTop: 2 },
+  resultEnglish:    { fontSize: 13, color: '#636e72', textAlign: 'center' },
   replayBtn: {
     marginTop: 8, backgroundColor: 'rgba(162,155,254,0.15)',
     paddingHorizontal: 16, paddingVertical: 8, borderRadius: 10,

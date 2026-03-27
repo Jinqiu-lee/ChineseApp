@@ -204,9 +204,21 @@
           "question": "这件商品打折了，_____ 购买。",
           "type": "multiple_choice",
           "correct": "值得",
-          "options": ["值得", "免费", "合适", "讨论"],
-          "option_pinyin": ["zhí de", "miǎn fèi", "hé shì", "tǎo lùn"],
-          "word_hints": {"打折": "dǎ zhé"}
+          "options": [
+            "值得",
+            "免费",
+            "合适",
+            "讨论"
+          ],
+          "option_pinyin": [
+            "zhí de",
+            "miǎn fèi",
+            "hé shì",
+            "tǎo lùn"
+          ],
+          "word_hints": {
+            "打折": "dǎ zhé"
+          }
         },
         {
           "question": "Choose the correct sentence with 值得.",
@@ -224,31 +236,68 @@
             "Zhí de tuī jiàn, zhè zhǒng cái liào zhì liàng hǎo.",
             "Zhè zhǒng cái liào, zhí de hǎo zhì liàng tuī jiàn."
           ],
-          "word_hints": {"材料": "cái liào", "质量": "zhì liàng"}
+          "word_hints": {
+            "材料": "cái liào",
+            "质量": "zhì liàng"
+          }
         },
         {
           "question": "这家店的服务非常好，顾客 _____ 光顾。",
           "type": "multiple_choice",
           "correct": "值得",
-          "options": ["值得", "必须", "应该", "喜欢"],
-          "option_pinyin": ["zhí de", "bì xū", "yīng gāi", "xǐ huān"],
-          "word_hints": {"顾客": "gù kè"}
+          "options": [
+            "值得",
+            "必须",
+            "应该",
+            "喜欢"
+          ],
+          "option_pinyin": [
+            "zhí de",
+            "bì xū",
+            "yīng gāi",
+            "xǐ huān"
+          ],
+          "word_hints": {
+            "顾客": "gù kè"
+          }
         },
         {
           "question": "值得 must be followed by:",
           "type": "multiple_choice",
           "correct": "A verb",
-          "options": ["A verb", "A noun", "An adjective only", "A number"],
-          "option_pinyin": ["", "", "", ""],
+          "options": [
+            "A verb",
+            "A noun",
+            "An adjective only",
+            "A number"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "他们提供免费试用，这 _____ 尝试。",
           "type": "multiple_choice",
           "correct": "值得",
-          "options": ["值得", "浪费", "缺点", "优点"],
-          "option_pinyin": ["zhí de", "làng fèi", "quē diǎn", "yōu diǎn"],
-          "word_hints": {"免费": "miǎn fèi"}
+          "options": [
+            "值得",
+            "浪费",
+            "缺点",
+            "优点"
+          ],
+          "option_pinyin": [
+            "zhí de",
+            "làng fèi",
+            "quē diǎn",
+            "yōu diǎn"
+          ],
+          "word_hints": {
+            "免费": "miǎn fèi"
+          }
         }
       ]
     },
@@ -273,9 +322,21 @@
           "question": "这家商店有很多打折商品，_____ 是衣服。",
           "type": "multiple_choice",
           "correct": "尤其",
-          "options": ["尤其", "另外", "虽然", "否则"],
-          "option_pinyin": ["yóu qí", "lìng wài", "suī rán", "fǒu zé"],
-          "word_hints": {"打折": "dǎ zhé"}
+          "options": [
+            "尤其",
+            "另外",
+            "虽然",
+            "否则"
+          ],
+          "option_pinyin": [
+            "yóu qí",
+            "lìng wài",
+            "suī rán",
+            "fǒu zé"
+          ],
+          "word_hints": {
+            "打折": "dǎ zhé"
+          }
         },
         {
           "question": "Choose the correct sentence with 尤其.",
@@ -293,15 +354,31 @@
             "Yóu qí zhè zhǒng cái liào yǒu yōu diǎn, shì hěn qīng.",
             "Zhè zhǒng cái liào, yóu qí yǒu yōu diǎn shì hěn qīng."
           ],
-          "word_hints": {"材料": "cái liào", "优点": "yōu diǎn"}
+          "word_hints": {
+            "材料": "cái liào",
+            "优点": "yōu diǎn"
+          }
         },
         {
           "question": "她购物很厉害，_____ 是在打折的时候。",
           "type": "multiple_choice",
           "correct": "尤其",
-          "options": ["尤其", "另外", "其次", "总之"],
-          "option_pinyin": ["yóu qí", "lìng wài", "qí cì", "zǒng zhī"],
-          "word_hints": {"购物": "gòu wù", "打折": "dǎ zhé"}
+          "options": [
+            "尤其",
+            "另外",
+            "其次",
+            "总之"
+          ],
+          "option_pinyin": [
+            "yóu qí",
+            "lìng wài",
+            "qí cì",
+            "zǒng zhī"
+          ],
+          "word_hints": {
+            "购物": "gòu wù",
+            "打折": "dǎ zhé"
+          }
         },
         {
           "question": "What does 尤其 emphasize?",
@@ -313,16 +390,34 @@
             "A purpose or goal",
             "A negative outcome"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "这个商品有很多缺点，_____ 是质量问题。",
           "type": "multiple_choice",
           "correct": "尤其",
-          "options": ["尤其", "另外", "而且", "不仅"],
-          "option_pinyin": ["yóu qí", "lìng wài", "ér qiě", "bù jǐn"],
-          "word_hints": {"缺点": "quē diǎn", "质量": "zhì liàng"}
+          "options": [
+            "尤其",
+            "另外",
+            "而且",
+            "不仅"
+          ],
+          "option_pinyin": [
+            "yóu qí",
+            "lìng wài",
+            "ér qiě",
+            "bù jǐn"
+          ],
+          "word_hints": {
+            "缺点": "quē diǎn",
+            "质量": "zhì liàng"
+          }
         }
       ]
     },
@@ -347,9 +442,22 @@
           "question": "这家店商品合适，_____ 售货员的服务也很好。",
           "type": "multiple_choice",
           "correct": "另外",
-          "options": ["另外", "但是", "虽然", "因为"],
-          "option_pinyin": ["lìng wài", "dàn shì", "suī rán", "yīn wèi"],
-          "word_hints": {"合适": "hé shì", "售货员": "shòu huò yuán"}
+          "options": [
+            "另外",
+            "但是",
+            "虽然",
+            "因为"
+          ],
+          "option_pinyin": [
+            "lìng wài",
+            "dàn shì",
+            "suī rán",
+            "yīn wèi"
+          ],
+          "word_hints": {
+            "合适": "hé shì",
+            "售货员": "shòu huò yuán"
+          }
         },
         {
           "question": "Choose the correct sentence with 另外.",
@@ -367,15 +475,30 @@
             "Shāng pǐn lìng wài dǎ zhé le, hái yǒu miǎn fèi lǐ wù.",
             "Lìng wài hái yǒu miǎn fèi lǐ wù, dǎ zhé le shāng pǐn."
           ],
-          "word_hints": {"打折": "dǎ zhé", "免费": "miǎn fèi"}
+          "word_hints": {
+            "打折": "dǎ zhé",
+            "免费": "miǎn fèi"
+          }
         },
         {
           "question": "这个包包材料好，_____ 颜色也很漂亮。",
           "type": "multiple_choice",
           "correct": "另外",
-          "options": ["另外", "否则", "既然", "尤其"],
-          "option_pinyin": ["lìng wài", "fǒu zé", "jì rán", "yóu qí"],
-          "word_hints": {"材料": "cái liào"}
+          "options": [
+            "另外",
+            "否则",
+            "既然",
+            "尤其"
+          ],
+          "option_pinyin": [
+            "lìng wài",
+            "fǒu zé",
+            "jì rán",
+            "yóu qí"
+          ],
+          "word_hints": {
+            "材料": "cái liào"
+          }
         },
         {
           "question": "What is the function of 另外?",
@@ -387,16 +510,33 @@
             "To explain a cause",
             "To show a purpose"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "我们可以讨论价格，_____ 还可以谈服务内容。",
           "type": "multiple_choice",
           "correct": "另外",
-          "options": ["另外", "否则", "虽然", "但是"],
-          "option_pinyin": ["lìng wài", "fǒu zé", "suī rán", "dàn shì"],
-          "word_hints": {"讨论": "tǎo lùn"}
+          "options": [
+            "另外",
+            "否则",
+            "虽然",
+            "但是"
+          ],
+          "option_pinyin": [
+            "lìng wài",
+            "fǒu zé",
+            "suī rán",
+            "dàn shì"
+          ],
+          "word_hints": {
+            "讨论": "tǎo lùn"
+          }
         }
       ]
     }
@@ -421,120 +561,241 @@
       "question": "What does 购物 mean?",
       "type": "multiple_choice",
       "correct": "Shopping; to shop",
-      "options": ["Shopping; to shop", "To bargain", "To browse", "To discount"],
-      "word_hints": {"购物": "gòu wù"}
+      "options": [
+        "Shopping; to shop",
+        "To bargain",
+        "To browse",
+        "To discount"
+      ],
+      "word_hints": {
+        "购物": "gòu wù"
+      }
     },
     {
       "question": "Which word means 'to discount; on sale'?",
       "type": "multiple_choice",
       "correct": "打折",
-      "options": ["打折", "免费", "合适", "质量"],
-      "word_hints": {"打折": "dǎ zhé", "免费": "miǎn fèi", "合适": "hé shì", "质量": "zhì liàng"}
+      "options": [
+        "打折",
+        "免费",
+        "合适",
+        "质量"
+      ],
+      "word_hints": {
+        "打折": "dǎ zhé",
+        "免费": "miǎn fèi",
+        "合适": "hé shì",
+        "质量": "zhì liàng"
+      }
     },
     {
       "question": "What does 顾客 mean?",
       "type": "multiple_choice",
       "correct": "Customer; client",
-      "options": ["Customer; client", "Shop assistant", "Manager", "Seller"],
-      "word_hints": {"顾客": "gù kè"}
+      "options": [
+        "Customer; client",
+        "Shop assistant",
+        "Manager",
+        "Seller"
+      ],
+      "word_hints": {
+        "顾客": "gù kè"
+      }
     },
     {
       "question": "Which word means 'shop assistant; salesperson'?",
       "type": "multiple_choice",
       "correct": "售货员",
-      "options": ["售货员", "顾客", "管理员", "记者"],
-      "word_hints": {"售货员": "shòu huò yuán", "顾客": "gù kè"}
+      "options": [
+        "售货员",
+        "顾客",
+        "管理员",
+        "记者"
+      ],
+      "word_hints": {
+        "售货员": "shòu huò yuán",
+        "顾客": "gù kè"
+      }
     },
     {
       "question": "What does 免费 mean?",
       "type": "multiple_choice",
       "correct": "Free (of charge)",
-      "options": ["Free (of charge)", "On sale", "Cheap", "Suitable"],
-      "word_hints": {"免费": "miǎn fèi"}
+      "options": [
+        "Free (of charge)",
+        "On sale",
+        "Cheap",
+        "Suitable"
+      ],
+      "word_hints": {
+        "免费": "miǎn fèi"
+      }
     },
     {
       "question": "What does 优点 mean?",
       "type": "multiple_choice",
       "correct": "Advantage; strong point; merit",
-      "options": ["Advantage; strong point; merit", "Disadvantage", "Quality", "Material"],
-      "word_hints": {"优点": "yōu diǎn"}
+      "options": [
+        "Advantage; strong point; merit",
+        "Disadvantage",
+        "Quality",
+        "Material"
+      ],
+      "word_hints": {
+        "优点": "yōu diǎn"
+      }
     },
     {
       "question": "Which word means 'disadvantage; weakness'?",
       "type": "multiple_choice",
       "correct": "缺点",
-      "options": ["缺点", "优点", "质量", "材料"],
-      "word_hints": {"缺点": "quē diǎn", "优点": "yōu diǎn", "质量": "zhì liàng", "材料": "cái liào"}
+      "options": [
+        "缺点",
+        "优点",
+        "质量",
+        "材料"
+      ],
+      "word_hints": {
+        "缺点": "quē diǎn",
+        "优点": "yōu diǎn",
+        "质量": "zhì liàng",
+        "材料": "cái liào"
+      }
     },
     {
       "question": "What does 质量 mean?",
       "type": "multiple_choice",
       "correct": "Quality",
-      "options": ["Quality", "Material", "Advantage", "Price"],
-      "word_hints": {"质量": "zhì liàng"}
+      "options": [
+        "Quality",
+        "Material",
+        "Advantage",
+        "Price"
+      ],
+      "word_hints": {
+        "质量": "zhì liàng"
+      }
     },
     {
       "question": "Which word means 'material; ingredient'?",
       "type": "multiple_choice",
       "correct": "材料",
-      "options": ["材料", "质量", "优点", "价格"],
-      "word_hints": {"材料": "cái liào"}
+      "options": [
+        "材料",
+        "质量",
+        "优点",
+        "价格"
+      ],
+      "word_hints": {
+        "材料": "cái liào"
+      }
     },
     {
       "question": "What does 合适 mean?",
       "type": "multiple_choice",
       "correct": "Suitable; appropriate; right",
-      "options": ["Suitable; appropriate; right", "Free", "On sale", "Quality"],
-      "word_hints": {"合适": "hé shì"}
+      "options": [
+        "Suitable; appropriate; right",
+        "Free",
+        "On sale",
+        "Quality"
+      ],
+      "word_hints": {
+        "合适": "hé shì"
+      }
     },
     {
       "question": "Fill in: 这个商品质量好，_____ 购买。",
       "type": "multiple_choice",
       "correct": "值得",
-      "options": ["值得", "免费", "缺点", "材料"],
-      "word_hints": {"质量": "zhì liàng"}
+      "options": [
+        "值得",
+        "免费",
+        "缺点",
+        "材料"
+      ],
+      "word_hints": {
+        "质量": "zhì liàng"
+      }
     },
     {
       "question": "What does 尤其 mean?",
       "type": "multiple_choice",
       "correct": "Especially; in particular",
-      "options": ["Especially; in particular", "Besides", "Although", "Otherwise"],
+      "options": [
+        "Especially; in particular",
+        "Besides",
+        "Although",
+        "Otherwise"
+      ],
       "word_hints": {}
     },
     {
       "question": "Fill in: 这家店打折，_____ 还有免费礼品。",
       "type": "multiple_choice",
       "correct": "另外",
-      "options": ["另外", "尤其", "否则", "既然"],
-      "word_hints": {"打折": "dǎ zhé", "免费": "miǎn fèi"}
+      "options": [
+        "另外",
+        "尤其",
+        "否则",
+        "既然"
+      ],
+      "word_hints": {
+        "打折": "dǎ zhé",
+        "免费": "miǎn fèi"
+      }
     },
     {
       "question": "What does 逛 mean?",
       "type": "multiple_choice",
       "correct": "To stroll; to browse (shops)",
-      "options": ["To stroll; to browse (shops)", "To buy", "To bargain", "To pay"],
-      "word_hints": {"逛": "guàng"}
+      "options": [
+        "To stroll; to browse (shops)",
+        "To buy",
+        "To bargain",
+        "To pay"
+      ],
+      "word_hints": {
+        "逛": "guàng"
+      }
     },
     {
       "question": "What does the phrase 讨价还价 mean?",
       "type": "multiple_choice",
       "correct": "To bargain; to haggle",
-      "options": ["To bargain; to haggle", "To compare prices", "To pay for goods", "To return goods"],
+      "options": [
+        "To bargain; to haggle",
+        "To compare prices",
+        "To pay for goods",
+        "To return goods"
+      ],
       "word_hints": {}
     },
     {
       "question": "值得 must be followed by:",
       "type": "multiple_choice",
       "correct": "A verb",
-      "options": ["A verb", "A noun", "A number", "A name"],
+      "options": [
+        "A verb",
+        "A noun",
+        "A number",
+        "A name"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does 讨论 mean?",
       "type": "multiple_choice",
       "correct": "To discuss; discussion",
-      "options": ["To discuss; discussion", "To bargain", "To browse", "To translate"],
-      "word_hints": {"讨论": "tǎo lùn"}
+      "options": [
+        "To discuss; discussion",
+        "To bargain",
+        "To browse",
+        "To translate"
+      ],
+      "word_hints": {
+        "讨论": "tǎo lùn"
+      }
     },
     {
       "question": "Choose the correct use of 尤其.",
@@ -546,7 +807,10 @@
         "她喜欢购物尤其，是打折的时候。",
         "是打折的时候，她喜欢购物尤其。"
       ],
-      "word_hints": {"购物": "gòu wù", "打折": "dǎ zhé"}
+      "word_hints": {
+        "购物": "gòu wù",
+        "打折": "dǎ zhé"
+      }
     },
     {
       "question": "What does the proverb 一分价钱一分货 mean?",
@@ -564,8 +828,15 @@
       "question": "What does the phrase 打折优惠 mean?",
       "type": "multiple_choice",
       "correct": "Discount offer; sale promotion",
-      "options": ["Discount offer; sale promotion", "Free trial", "Quality guarantee", "Bargaining session"],
-      "word_hints": {"打折": "dǎ zhé"}
+      "options": [
+        "Discount offer; sale promotion",
+        "Free trial",
+        "Quality guarantee",
+        "Bargaining session"
+      ],
+      "word_hints": {
+        "打折": "dǎ zhé"
+      }
     }
   ],
   "dialogues": [
@@ -574,8 +845,16 @@
       "title": "Shopping for a Jacket",
       "title_chinese": "选购外套",
       "speakers": {
-        "A": {"name": "售货员", "role": "店员", "gender": "female"},
-        "B": {"name": "李明", "role": "顾客", "gender": "male"}
+        "A": {
+          "name": "售货员",
+          "role": "店员",
+          "gender": "female"
+        },
+        "B": {
+          "name": "毕加索",
+          "role": "顾客",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -627,14 +906,22 @@
       "title": "Online Shopping Discussion",
       "title_chinese": "讨论网购",
       "speakers": {
-        "A": {"name": "小月", "role": "朋友甲", "gender": "female"},
-        "B": {"name": "阿强", "role": "朋友乙", "gender": "male"}
+        "A": {
+          "name": "严歌苓",
+          "role": "朋友甲",
+          "gender": "female"
+        },
+        "B": {
+          "name": "梵高",
+          "role": "朋友乙",
+          "gender": "male"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "阿强，我最近喜欢网上购物，比逛商场方便多了。",
-          "pinyin": "Ā Qiáng, wǒ zuì jìn xǐ huān wǎng shàng gòu wù, bǐ guàng shāng chǎng fāng biàn duō le.",
+          "chinese": "梵高，我最近喜欢网上购物，比逛商场方便多了。",
+          "pinyin": "Fàn Gāo, wǒ zuì jìn xǐ huān wǎng shàng gòu wù, bǐ guàng shāng chǎng fāng biàn duō le.",
           "english": "Ah Qiang, I've been enjoying online shopping lately. It's much more convenient than going to malls."
         },
         {

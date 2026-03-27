@@ -204,17 +204,43 @@
           "question": "_____ 价格多高，质量都必须合格。",
           "type": "multiple_choice",
           "correct": "不管",
-          "options": ["不管", "因为", "虽然", "只要"],
-          "option_pinyin": ["bù guǎn", "yīn wèi", "suī rán", "zhǐ yào"],
-          "word_hints": {"合格": "hé gé", "质量": "zhì liàng"}
+          "options": [
+            "不管",
+            "因为",
+            "虽然",
+            "只要"
+          ],
+          "option_pinyin": [
+            "bù guǎn",
+            "yīn wèi",
+            "suī rán",
+            "zhǐ yào"
+          ],
+          "word_hints": {
+            "合格": "hé gé",
+            "质量": "zhì liàng"
+          }
         },
         {
           "question": "不管标准多高，他 _____ 努力符合要求。",
           "type": "multiple_choice",
           "correct": "都",
-          "options": ["都", "也", "还", "才"],
-          "option_pinyin": ["dōu", "yě", "hái", "cái"],
-          "word_hints": {"标准": "biāo zhǔn", "符合": "fú hé"}
+          "options": [
+            "都",
+            "也",
+            "还",
+            "才"
+          ],
+          "option_pinyin": [
+            "dōu",
+            "yě",
+            "hái",
+            "cái"
+          ],
+          "word_hints": {
+            "标准": "biāo zhǔn",
+            "符合": "fú hé"
+          }
         },
         {
           "question": "Choose the correct sentence with 不管...都...",
@@ -232,7 +258,11 @@
             "Bù guǎn, shí jì qíng kuàng zěn yàng wǒ dōu yào zuò chū zhèng què pàn duàn.",
             "Wǒ bù guǎn shí jì qíng kuàng zěn yàng, zuò chū dōu zhèng què pàn duàn."
           ],
-          "word_hints": {"实际": "shí jì", "正确": "zhèng què", "判断": "pàn duàn"}
+          "word_hints": {
+            "实际": "shí jì",
+            "正确": "zhèng què",
+            "判断": "pàn duàn"
+          }
         },
         {
           "question": "不管 is typically followed by:",
@@ -244,16 +274,34 @@
             "A purpose or goal",
             "A time expression"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "不管区别多明显，她 _____ 认为两者相同。",
           "type": "multiple_choice",
           "correct": "都",
-          "options": ["都", "但", "或者", "因为"],
-          "option_pinyin": ["dōu", "dàn", "huò zhě", "yīn wèi"],
-          "word_hints": {"区别": "qū bié", "相同": "xiāng tóng"}
+          "options": [
+            "都",
+            "但",
+            "或者",
+            "因为"
+          ],
+          "option_pinyin": [
+            "dōu",
+            "dàn",
+            "huò zhě",
+            "yīn wèi"
+          ],
+          "word_hints": {
+            "区别": "qū bié",
+            "相同": "xiāng tóng"
+          }
         }
       ]
     },
@@ -278,9 +326,21 @@
           "question": "商品不合格，我 _____ 要求退款。",
           "type": "multiple_choice",
           "correct": "只好",
-          "options": ["只好", "愿意", "当然", "经常"],
-          "option_pinyin": ["zhǐ hǎo", "yuàn yì", "dāng rán", "jīng cháng"],
-          "word_hints": {"合格": "hé gé"}
+          "options": [
+            "只好",
+            "愿意",
+            "当然",
+            "经常"
+          ],
+          "option_pinyin": [
+            "zhǐ hǎo",
+            "yuàn yì",
+            "dāng rán",
+            "jīng cháng"
+          ],
+          "word_hints": {
+            "合格": "hé gé"
+          }
         },
         {
           "question": "Choose the correct sentence with 只好.",
@@ -298,15 +358,30 @@
             "Wǒ méi yǒu hé gé de chǎn pǐn zhǐ hǎo, fàng qì gòu mǎi.",
             "Fàng qì gòu mǎi, wǒ méi yǒu hé gé de chǎn pǐn zhǐ hǎo."
           ],
-          "word_hints": {"合格": "hé gé"}
+          "word_hints": {
+            "合格": "hé gé"
+          }
         },
         {
           "question": "判断质量的方法太复杂，他 _____ 请专家帮忙。",
           "type": "multiple_choice",
           "correct": "只好",
-          "options": ["只好", "继续", "确实", "普遍"],
-          "option_pinyin": ["zhǐ hǎo", "jì xù", "què shí", "pǔ biàn"],
-          "word_hints": {"判断": "pàn duàn", "质量": "zhì liàng"}
+          "options": [
+            "只好",
+            "继续",
+            "确实",
+            "普遍"
+          ],
+          "option_pinyin": [
+            "zhǐ hǎo",
+            "jì xù",
+            "què shí",
+            "pǔ biàn"
+          ],
+          "word_hints": {
+            "判断": "pàn duàn",
+            "质量": "zhì liàng"
+          }
         },
         {
           "question": "只好 implies:",
@@ -318,16 +393,35 @@
             "Something is done for a specific goal",
             "Something happens regularly"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "产品不符合标准，他 _____ 承认了这个区别。",
           "type": "multiple_choice",
           "correct": "只好",
-          "options": ["只好", "确实", "相反", "普遍"],
-          "option_pinyin": ["zhǐ hǎo", "què shí", "xiāng fǎn", "pǔ biàn"],
-          "word_hints": {"符合": "fú hé", "标准": "biāo zhǔn", "区别": "qū bié"}
+          "options": [
+            "只好",
+            "确实",
+            "相反",
+            "普遍"
+          ],
+          "option_pinyin": [
+            "zhǐ hǎo",
+            "què shí",
+            "xiāng fǎn",
+            "pǔ biàn"
+          ],
+          "word_hints": {
+            "符合": "fú hé",
+            "标准": "biāo zhǔn",
+            "区别": "qū bié"
+          }
         }
       ]
     },
@@ -352,17 +446,41 @@
           "question": "_____ ，这种材料质量更好。",
           "type": "multiple_choice",
           "correct": "相比之下",
-          "options": ["相比之下", "另外", "虽然", "因为"],
-          "option_pinyin": ["xiāng bǐ zhī xià", "lìng wài", "suī rán", "yīn wèi"],
-          "word_hints": {"质量": "zhì liàng"}
+          "options": [
+            "相比之下",
+            "另外",
+            "虽然",
+            "因为"
+          ],
+          "option_pinyin": [
+            "xiāng bǐ zhī xià",
+            "lìng wài",
+            "suī rán",
+            "yīn wèi"
+          ],
+          "word_hints": {
+            "质量": "zhì liàng"
+          }
         },
         {
           "question": "这个产品比较 _____ ，很多消费者会选择它。",
           "type": "multiple_choice",
           "correct": "普遍",
-          "options": ["普遍", "相反", "区别", "符合"],
-          "option_pinyin": ["pǔ biàn", "xiāng fǎn", "qū bié", "fú hé"],
-          "word_hints": {"普遍": "pǔ biàn"}
+          "options": [
+            "普遍",
+            "相反",
+            "区别",
+            "符合"
+          ],
+          "option_pinyin": [
+            "pǔ biàn",
+            "xiāng fǎn",
+            "qū bié",
+            "fú hé"
+          ],
+          "word_hints": {
+            "普遍": "pǔ biàn"
+          }
         },
         {
           "question": "Choose the correct use of 相比之下.",
@@ -380,23 +498,48 @@
             "Zhī xià xiāng bǐ, hé gé de chǎn pǐn gèng zhí de gòu mǎi.",
             "Xiāng bǐ hé gé de chǎn pǐn zhī xià, gèng zhí de gòu mǎi."
           ],
-          "word_hints": {"合格": "hé gé"}
+          "word_hints": {
+            "合格": "hé gé"
+          }
         },
         {
           "question": "比较 is placed where in a comparison sentence?",
           "type": "multiple_choice",
           "correct": "Before an adjective",
-          "options": ["Before an adjective", "After the subject", "At the end of the sentence", "Before the object"],
-          "option_pinyin": ["", "", "", ""],
+          "options": [
+            "Before an adjective",
+            "After the subject",
+            "At the end of the sentence",
+            "Before the object"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "相比之下，他的判断 _____ 正确。",
           "type": "multiple_choice",
           "correct": "更",
-          "options": ["更", "很", "非常", "也"],
-          "option_pinyin": ["gèng", "hěn", "fēi cháng", "yě"],
-          "word_hints": {"判断": "pàn duàn", "正确": "zhèng què"}
+          "options": [
+            "更",
+            "很",
+            "非常",
+            "也"
+          ],
+          "option_pinyin": [
+            "gèng",
+            "hěn",
+            "fēi cháng",
+            "yě"
+          ],
+          "word_hints": {
+            "判断": "pàn duàn",
+            "正确": "zhèng què"
+          }
         }
       ]
     }
@@ -421,99 +564,209 @@
       "question": "What does 标准 mean?",
       "type": "multiple_choice",
       "correct": "Standard; criterion",
-      "options": ["Standard; criterion", "Quality", "Difference", "Actual"],
-      "word_hints": {"标准": "biāo zhǔn"}
+      "options": [
+        "Standard; criterion",
+        "Quality",
+        "Difference",
+        "Actual"
+      ],
+      "word_hints": {
+        "标准": "biāo zhǔn"
+      }
     },
     {
       "question": "Which word means 'qualified; up to standard'?",
       "type": "multiple_choice",
       "correct": "合格",
-      "options": ["合格", "符合", "标准", "正确"],
-      "word_hints": {"合格": "hé gé", "符合": "fú hé", "标准": "biāo zhǔn", "正确": "zhèng què"}
+      "options": [
+        "合格",
+        "符合",
+        "标准",
+        "正确"
+      ],
+      "word_hints": {
+        "合格": "hé gé",
+        "符合": "fú hé",
+        "标准": "biāo zhǔn",
+        "正确": "zhèng què"
+      }
     },
     {
       "question": "What does 符合 mean?",
       "type": "multiple_choice",
       "correct": "To conform to; to meet (requirements)",
-      "options": ["To conform to; to meet (requirements)", "To judge", "To distinguish", "To be the same"],
-      "word_hints": {"符合": "fú hé"}
+      "options": [
+        "To conform to; to meet (requirements)",
+        "To judge",
+        "To distinguish",
+        "To be the same"
+      ],
+      "word_hints": {
+        "符合": "fú hé"
+      }
     },
     {
       "question": "Which word means 'the same; identical'?",
       "type": "multiple_choice",
       "correct": "相同",
-      "options": ["相同", "相反", "区别", "普遍"],
-      "word_hints": {"相同": "xiāng tóng", "相反": "xiāng fǎn", "区别": "qū bié", "普遍": "pǔ biàn"}
+      "options": [
+        "相同",
+        "相反",
+        "区别",
+        "普遍"
+      ],
+      "word_hints": {
+        "相同": "xiāng tóng",
+        "相反": "xiāng fǎn",
+        "区别": "qū bié",
+        "普遍": "pǔ biàn"
+      }
     },
     {
       "question": "What does 相反 mean?",
       "type": "multiple_choice",
       "correct": "Opposite; contrary",
-      "options": ["Opposite; contrary", "The same", "Difference", "Common"],
-      "word_hints": {"相反": "xiāng fǎn"}
+      "options": [
+        "Opposite; contrary",
+        "The same",
+        "Difference",
+        "Common"
+      ],
+      "word_hints": {
+        "相反": "xiāng fǎn"
+      }
     },
     {
       "question": "Which word means 'difference; to differentiate'?",
       "type": "multiple_choice",
       "correct": "区别",
-      "options": ["区别", "相同", "标准", "判断"],
-      "word_hints": {"区别": "qū bié", "相同": "xiāng tóng", "标准": "biāo zhǔn", "判断": "pàn duàn"}
+      "options": [
+        "区别",
+        "相同",
+        "标准",
+        "判断"
+      ],
+      "word_hints": {
+        "区别": "qū bié",
+        "相同": "xiāng tóng",
+        "标准": "biāo zhǔn",
+        "判断": "pàn duàn"
+      }
     },
     {
       "question": "What does 普遍 mean?",
       "type": "multiple_choice",
       "correct": "Common; widespread; universal",
-      "options": ["Common; widespread; universal", "Correct", "Actual", "Standard"],
-      "word_hints": {"普遍": "pǔ biàn"}
+      "options": [
+        "Common; widespread; universal",
+        "Correct",
+        "Actual",
+        "Standard"
+      ],
+      "word_hints": {
+        "普遍": "pǔ biàn"
+      }
     },
     {
       "question": "What does 实际 mean?",
       "type": "multiple_choice",
       "correct": "Actual; practical; reality",
-      "options": ["Actual; practical; reality", "Standard", "Correct", "Common"],
-      "word_hints": {"实际": "shí jì"}
+      "options": [
+        "Actual; practical; reality",
+        "Standard",
+        "Correct",
+        "Common"
+      ],
+      "word_hints": {
+        "实际": "shí jì"
+      }
     },
     {
       "question": "Which word means 'correct; right'?",
       "type": "multiple_choice",
       "correct": "正确",
-      "options": ["正确", "确实", "合格", "符合"],
-      "word_hints": {"正确": "zhèng què", "确实": "què shí", "合格": "hé gé", "符合": "fú hé"}
+      "options": [
+        "正确",
+        "确实",
+        "合格",
+        "符合"
+      ],
+      "word_hints": {
+        "正确": "zhèng què",
+        "确实": "què shí",
+        "合格": "hé gé",
+        "符合": "fú hé"
+      }
     },
     {
       "question": "What does 确实 mean?",
       "type": "multiple_choice",
       "correct": "Indeed; truly; certainly",
-      "options": ["Indeed; truly; certainly", "Correct", "Standard", "Qualified"],
-      "word_hints": {"确实": "què shí"}
+      "options": [
+        "Indeed; truly; certainly",
+        "Correct",
+        "Standard",
+        "Qualified"
+      ],
+      "word_hints": {
+        "确实": "què shí"
+      }
     },
     {
       "question": "Fill in: _____ 价格怎样，质量都要符合标准。",
       "type": "multiple_choice",
       "correct": "不管",
-      "options": ["不管", "虽然", "既然", "因为"],
-      "word_hints": {"质量": "zhì liàng", "符合": "fú hé", "标准": "biāo zhǔn"}
+      "options": [
+        "不管",
+        "虽然",
+        "既然",
+        "因为"
+      ],
+      "word_hints": {
+        "质量": "zhì liàng",
+        "符合": "fú hé",
+        "标准": "biāo zhǔn"
+      }
     },
     {
       "question": "What does 只好 mean?",
       "type": "multiple_choice",
       "correct": "Have no choice but to",
-      "options": ["Have no choice but to", "Willing to", "Happy to", "Used to"],
+      "options": [
+        "Have no choice but to",
+        "Willing to",
+        "Happy to",
+        "Used to"
+      ],
       "word_hints": {}
     },
     {
       "question": "Fill in: _____ ，这种材料质量更好。",
       "type": "multiple_choice",
       "correct": "相比之下",
-      "options": ["相比之下", "另外", "否则", "因此"],
-      "word_hints": {"质量": "zhì liàng"}
+      "options": [
+        "相比之下",
+        "另外",
+        "否则",
+        "因此"
+      ],
+      "word_hints": {
+        "质量": "zhì liàng"
+      }
     },
     {
       "question": "What does 判断 mean?",
       "type": "multiple_choice",
       "correct": "To judge; judgment",
-      "options": ["To judge; judgment", "To distinguish", "To conform", "To compare"],
-      "word_hints": {"判断": "pàn duàn"}
+      "options": [
+        "To judge; judgment",
+        "To distinguish",
+        "To conform",
+        "To compare"
+      ],
+      "word_hints": {
+        "判断": "pàn duàn"
+      }
     },
     {
       "question": "Choose the correct use of 不管...都...",
@@ -531,8 +784,16 @@
       "question": "What does the phrase 符合标准 mean?",
       "type": "multiple_choice",
       "correct": "To meet the standard",
-      "options": ["To meet the standard", "To judge quality", "To compare products", "To return goods"],
-      "word_hints": {"符合": "fú hé", "标准": "biāo zhǔn"}
+      "options": [
+        "To meet the standard",
+        "To judge quality",
+        "To compare products",
+        "To return goods"
+      ],
+      "word_hints": {
+        "符合": "fú hé",
+        "标准": "biāo zhǔn"
+      }
     },
     {
       "question": "What does the idiom 货真价实 mean?",
@@ -556,20 +817,34 @@
         "我只好商品质量太差，退货。",
         "商品只好质量太差，我退货。"
       ],
-      "word_hints": {"质量": "zhì liàng"}
+      "word_hints": {
+        "质量": "zhì liàng"
+      }
     },
     {
       "question": "What does the phrase 实际情况 mean?",
       "type": "multiple_choice",
       "correct": "Actual situation; reality",
-      "options": ["Actual situation; reality", "Standard requirement", "Correct judgment", "Common difference"],
-      "word_hints": {"实际": "shí jì"}
+      "options": [
+        "Actual situation; reality",
+        "Standard requirement",
+        "Correct judgment",
+        "Common difference"
+      ],
+      "word_hints": {
+        "实际": "shí jì"
+      }
     },
     {
       "question": "比较 is placed where in a sentence?",
       "type": "multiple_choice",
       "correct": "Before an adjective",
-      "options": ["Before an adjective", "After the object", "At the start of the sentence", "After the subject only"],
+      "options": [
+        "Before an adjective",
+        "After the object",
+        "At the start of the sentence",
+        "After the subject only"
+      ],
       "word_hints": {}
     }
   ],
@@ -579,8 +854,16 @@
       "title": "Comparing Two Products",
       "title_chinese": "比较两款产品",
       "speakers": {
-        "A": {"name": "消费者甲", "role": "买家甲", "gender": "female"},
-        "B": {"name": "消费者乙", "role": "买家乙", "gender": "male"}
+        "A": {
+          "name": "消费者甲",
+          "role": "买家甲",
+          "gender": "female"
+        },
+        "B": {
+          "name": "消费者乙",
+          "role": "买家乙",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -626,14 +909,22 @@
       "title": "Quality Check at Work",
       "title_chinese": "工作中的质量检查",
       "speakers": {
-        "A": {"name": "主任", "role": "质量主任", "gender": "male"},
-        "B": {"name": "小周", "role": "员工", "gender": "female"}
+        "A": {
+          "name": "主任",
+          "role": "质量主任",
+          "gender": "male"
+        },
+        "B": {
+          "name": "苏轼",
+          "role": "员工",
+          "gender": "female"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "小周，这批产品是否符合我们的质量标准？",
-          "pinyin": "Xiǎo Zhōu, zhè pī chǎn pǐn shì fǒu fú hé wǒ men de zhì liàng biāo zhǔn?",
+          "chinese": "苏轼，这批产品是否符合我们的质量标准？",
+          "pinyin": "Sū Shì, zhè pī chǎn pǐn shì fǒu fú hé wǒ men de zhì liàng biāo zhǔn?",
           "english": "Xiaozhou, do these products meet our quality standard?"
         },
         {

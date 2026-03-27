@@ -204,9 +204,22 @@
           "question": "_____ 这个信息，他做了详细的说明。",
           "type": "multiple_choice",
           "correct": "对于",
-          "options": ["对于", "因为", "虽然", "所以"],
-          "option_pinyin": ["duì yú", "yīn wèi", "suī rán", "suǒ yǐ"],
-          "word_hints": {"信息": "xìn xī", "详细": "xiáng xì"}
+          "options": [
+            "对于",
+            "因为",
+            "虽然",
+            "所以"
+          ],
+          "option_pinyin": [
+            "duì yú",
+            "yīn wèi",
+            "suī rán",
+            "suǒ yǐ"
+          ],
+          "word_hints": {
+            "信息": "xìn xī",
+            "详细": "xiáng xì"
+          }
         },
         {
           "question": "Choose the correct sentence with 对于.",
@@ -224,15 +237,29 @@
             "Fān yì duì yú, tā yǒu fēng fù de jīng yàn.",
             "Tā yǒu duì yú fān yì fēng fù de jīng yàn."
           ],
-          "word_hints": {"翻译": "fān yì"}
+          "word_hints": {
+            "翻译": "fān yì"
+          }
         },
         {
           "question": "对于 _____ 问题，我们需要直接表达。",
           "type": "multiple_choice",
           "correct": "这个",
-          "options": ["这个", "因为", "所以", "但是"],
-          "option_pinyin": ["zhè ge", "yīn wèi", "suǒ yǐ", "dàn shì"],
-          "word_hints": {"直接": "zhí jiē"}
+          "options": [
+            "这个",
+            "因为",
+            "所以",
+            "但是"
+          ],
+          "option_pinyin": [
+            "zhè ge",
+            "yīn wèi",
+            "suǒ yǐ",
+            "dàn shì"
+          ],
+          "word_hints": {
+            "直接": "zhí jiē"
+          }
         },
         {
           "question": "What does 对于 introduce in a sentence?",
@@ -244,16 +271,33 @@
             "A contrast",
             "A condition"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "_____ 如何表扬学生，老师有自己的看法。",
           "type": "multiple_choice",
           "correct": "对于",
-          "options": ["对于", "通过", "由于", "为了"],
-          "option_pinyin": ["duì yú", "tōng guò", "yóu yú", "wèi le"],
-          "word_hints": {"表扬": "biǎo yáng"}
+          "options": [
+            "对于",
+            "通过",
+            "由于",
+            "为了"
+          ],
+          "option_pinyin": [
+            "duì yú",
+            "tōng guò",
+            "yóu yú",
+            "wèi le"
+          ],
+          "word_hints": {
+            "表扬": "biǎo yáng"
+          }
         }
       ]
     },
@@ -278,24 +322,61 @@
           "question": "点头 _____ 同意。",
           "type": "multiple_choice",
           "correct": "表示",
-          "options": ["表示", "翻译", "说明", "批评"],
-          "option_pinyin": ["biǎo shì", "fān yì", "shuō míng", "pī píng"],
-          "word_hints": {"表示": "biǎo shì"}
+          "options": [
+            "表示",
+            "翻译",
+            "说明",
+            "批评"
+          ],
+          "option_pinyin": [
+            "biǎo shì",
+            "fān yì",
+            "shuō míng",
+            "pī píng"
+          ],
+          "word_hints": {
+            "表示": "biǎo shì"
+          }
         },
         {
           "question": "这个 _____ 表示什么意思？",
           "type": "multiple_choice",
           "correct": "词语",
-          "options": ["词语", "对话", "交流", "翻译"],
-          "option_pinyin": ["cí yǔ", "duì huà", "jiāo liú", "fān yì"],
-          "word_hints": {"词语": "cí yǔ", "对话": "duì huà", "交流": "jiāo liú", "翻译": "fān yì"}
+          "options": [
+            "词语",
+            "对话",
+            "交流",
+            "翻译"
+          ],
+          "option_pinyin": [
+            "cí yǔ",
+            "duì huà",
+            "jiāo liú",
+            "fān yì"
+          ],
+          "word_hints": {
+            "词语": "cí yǔ",
+            "对话": "duì huà",
+            "交流": "jiāo liú",
+            "翻译": "fān yì"
+          }
         },
         {
           "question": "他送了一束花，_____ 他的感谢。",
           "type": "multiple_choice",
           "correct": "表示",
-          "options": ["表示", "批评", "翻译", "解释"],
-          "option_pinyin": ["biǎo shì", "pī píng", "fān yì", "jiě shì"],
+          "options": [
+            "表示",
+            "批评",
+            "翻译",
+            "解释"
+          ],
+          "option_pinyin": [
+            "biǎo shì",
+            "pī píng",
+            "fān yì",
+            "jiě shì"
+          ],
           "word_hints": {}
         },
         {
@@ -314,15 +395,33 @@
             "Lǐ mào biǎo shì, zhè ge cí yǔ.",
             "Cí yǔ zhè ge, biǎo shì lǐ mào."
           ],
-          "word_hints": {"词语": "cí yǔ", "礼貌": "lǐ mào"}
+          "word_hints": {
+            "词语": "cí yǔ",
+            "礼貌": "lǐ mào"
+          }
         },
         {
           "question": "Which word can function as a discourse marker meaning 'to indicate a meaning'?",
           "type": "multiple_choice",
           "correct": "表示",
-          "options": ["表示", "解释", "说明", "批评"],
-          "option_pinyin": ["biǎo shì", "jiě shì", "shuō míng", "pī píng"],
-          "word_hints": {"表示": "biǎo shì", "解释": "jiě shì", "说明": "shuō míng", "批评": "pī píng"}
+          "options": [
+            "表示",
+            "解释",
+            "说明",
+            "批评"
+          ],
+          "option_pinyin": [
+            "biǎo shì",
+            "jiě shì",
+            "shuō míng",
+            "pī píng"
+          ],
+          "word_hints": {
+            "表示": "biǎo shì",
+            "解释": "jiě shì",
+            "说明": "shuō míng",
+            "批评": "pī píng"
+          }
         }
       ]
     },
@@ -347,17 +446,42 @@
           "question": "请告诉我 _____ 需要详细解释。",
           "type": "multiple_choice",
           "correct": "是否",
-          "options": ["是否", "虽然", "为了", "由于"],
-          "option_pinyin": ["shì fǒu", "suī rán", "wèi le", "yóu yú"],
-          "word_hints": {"详细": "xiáng xì", "解释": "jiě shì"}
+          "options": [
+            "是否",
+            "虽然",
+            "为了",
+            "由于"
+          ],
+          "option_pinyin": [
+            "shì fǒu",
+            "suī rán",
+            "wèi le",
+            "yóu yú"
+          ],
+          "word_hints": {
+            "详细": "xiáng xì",
+            "解释": "jiě shì"
+          }
         },
         {
           "question": "他 _____ 礼貌，我不太确定。",
           "type": "multiple_choice",
           "correct": "是否",
-          "options": ["是否", "一定", "肯定", "当然"],
-          "option_pinyin": ["shì fǒu", "yī dìng", "kěn dìng", "dāng rán"],
-          "word_hints": {"礼貌": "lǐ mào"}
+          "options": [
+            "是否",
+            "一定",
+            "肯定",
+            "当然"
+          ],
+          "option_pinyin": [
+            "shì fǒu",
+            "yī dìng",
+            "kěn dìng",
+            "dāng rán"
+          ],
+          "word_hints": {
+            "礼貌": "lǐ mào"
+          }
         },
         {
           "question": "Choose the sentence that correctly uses 是否.",
@@ -375,23 +499,48 @@
             "Zhè cì jiāo liú, wǒ men shì fǒu hái bù zhī dào chéng gōng.",
             "Chéng gōng shì fǒu, zhè cì jiāo liú wǒ men hái bù zhī dào."
           ],
-          "word_hints": {"交流": "jiāo liú"}
+          "word_hints": {
+            "交流": "jiāo liú"
+          }
         },
         {
           "question": "是否 is more _____  than 是不是.",
           "type": "multiple_choice",
           "correct": "Formal",
-          "options": ["Formal", "Informal", "Negative", "Emphatic"],
-          "option_pinyin": ["", "", "", ""],
+          "options": [
+            "Formal",
+            "Informal",
+            "Negative",
+            "Emphatic"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "_____ 需要翻译这篇文章，请直接告诉我。",
           "type": "multiple_choice",
           "correct": "是否",
-          "options": ["是否", "虽然", "不管", "因为"],
-          "option_pinyin": ["shì fǒu", "suī rán", "bù guǎn", "yīn wèi"],
-          "word_hints": {"翻译": "fān yì", "直接": "zhí jiē"}
+          "options": [
+            "是否",
+            "虽然",
+            "不管",
+            "因为"
+          ],
+          "option_pinyin": [
+            "shì fǒu",
+            "suī rán",
+            "bù guǎn",
+            "yīn wèi"
+          ],
+          "word_hints": {
+            "翻译": "fān yì",
+            "直接": "zhí jiē"
+          }
         }
       ]
     }
@@ -416,84 +565,180 @@
       "question": "What does 交流 mean?",
       "type": "multiple_choice",
       "correct": "To communicate; communication",
-      "options": ["To communicate; communication", "To explain", "To translate", "To praise"],
-      "word_hints": {"交流": "jiāo liú"}
+      "options": [
+        "To communicate; communication",
+        "To explain",
+        "To translate",
+        "To praise"
+      ],
+      "word_hints": {
+        "交流": "jiāo liú"
+      }
     },
     {
       "question": "Which word means 'dialogue; conversation'?",
       "type": "multiple_choice",
       "correct": "对话",
-      "options": ["对话", "词语", "信息", "说明"],
-      "word_hints": {"对话": "duì huà", "词语": "cí yǔ", "信息": "xìn xī", "说明": "shuō míng"}
+      "options": [
+        "对话",
+        "词语",
+        "信息",
+        "说明"
+      ],
+      "word_hints": {
+        "对话": "duì huà",
+        "词语": "cí yǔ",
+        "信息": "xìn xī",
+        "说明": "shuō míng"
+      }
     },
     {
       "question": "What does 礼貌 mean?",
       "type": "multiple_choice",
       "correct": "Polite; politeness",
-      "options": ["Polite; politeness", "Direct", "Detailed", "Humble"],
-      "word_hints": {"礼貌": "lǐ mào"}
+      "options": [
+        "Polite; politeness",
+        "Direct",
+        "Detailed",
+        "Humble"
+      ],
+      "word_hints": {
+        "礼貌": "lǐ mào"
+      }
     },
     {
       "question": "Which word means 'to criticize'?",
       "type": "multiple_choice",
       "correct": "批评",
-      "options": ["批评", "表扬", "解释", "说明"],
-      "word_hints": {"批评": "pī píng", "表扬": "biǎo yáng", "解释": "jiě shì", "说明": "shuō míng"}
+      "options": [
+        "批评",
+        "表扬",
+        "解释",
+        "说明"
+      ],
+      "word_hints": {
+        "批评": "pī píng",
+        "表扬": "biǎo yáng",
+        "解释": "jiě shì",
+        "说明": "shuō míng"
+      }
     },
     {
       "question": "What does 详细 mean?",
       "type": "multiple_choice",
       "correct": "Detailed; in detail",
-      "options": ["Detailed; in detail", "Direct", "Polite", "Correct"],
-      "word_hints": {"详细": "xiáng xì"}
+      "options": [
+        "Detailed; in detail",
+        "Direct",
+        "Polite",
+        "Correct"
+      ],
+      "word_hints": {
+        "详细": "xiáng xì"
+      }
     },
     {
       "question": "Which word means 'to translate'?",
       "type": "multiple_choice",
       "correct": "翻译",
-      "options": ["翻译", "解释", "说明", "批评"],
-      "word_hints": {"翻译": "fān yì", "解释": "jiě shì", "说明": "shuō míng", "批评": "pī píng"}
+      "options": [
+        "翻译",
+        "解释",
+        "说明",
+        "批评"
+      ],
+      "word_hints": {
+        "翻译": "fān yì",
+        "解释": "jiě shì",
+        "说明": "shuō míng",
+        "批评": "pī píng"
+      }
     },
     {
       "question": "What does 信息 mean?",
       "type": "multiple_choice",
       "correct": "Information; news; message",
-      "options": ["Information; news; message", "Word; term", "Explanation", "Dialogue"],
-      "word_hints": {"信息": "xìn xī"}
+      "options": [
+        "Information; news; message",
+        "Word; term",
+        "Explanation",
+        "Dialogue"
+      ],
+      "word_hints": {
+        "信息": "xìn xī"
+      }
     },
     {
       "question": "What does 直接 mean?",
       "type": "multiple_choice",
       "correct": "Direct; directly",
-      "options": ["Direct; directly", "Detailed", "Polite", "Correct"],
-      "word_hints": {"直接": "zhí jiē"}
+      "options": [
+        "Direct; directly",
+        "Detailed",
+        "Polite",
+        "Correct"
+      ],
+      "word_hints": {
+        "直接": "zhí jiē"
+      }
     },
     {
       "question": "Which word means 'word; term; expression'?",
       "type": "multiple_choice",
       "correct": "词语",
-      "options": ["词语", "对话", "信息", "说明"],
-      "word_hints": {"词语": "cí yǔ", "对话": "duì huà", "信息": "xìn xī", "说明": "shuō míng"}
+      "options": [
+        "词语",
+        "对话",
+        "信息",
+        "说明"
+      ],
+      "word_hints": {
+        "词语": "cí yǔ",
+        "对话": "duì huà",
+        "信息": "xìn xī",
+        "说明": "shuō míng"
+      }
     },
     {
       "question": "What does 表扬 mean?",
       "type": "multiple_choice",
       "correct": "To praise; praise",
-      "options": ["To praise; praise", "To criticize", "To explain", "To translate"],
-      "word_hints": {"表扬": "biǎo yáng"}
+      "options": [
+        "To praise; praise",
+        "To criticize",
+        "To explain",
+        "To translate"
+      ],
+      "word_hints": {
+        "表扬": "biǎo yáng"
+      }
     },
     {
       "question": "Fill in: _____ 这个词语，老师做了详细的解释。",
       "type": "multiple_choice",
       "correct": "对于",
-      "options": ["对于", "为了", "由于", "通过"],
-      "word_hints": {"词语": "cí yǔ", "详细": "xiáng xì", "解释": "jiě shì"}
+      "options": [
+        "对于",
+        "为了",
+        "由于",
+        "通过"
+      ],
+      "word_hints": {
+        "词语": "cí yǔ",
+        "详细": "xiáng xì",
+        "解释": "jiě shì"
+      }
     },
     {
       "question": "What does 是否 mean?",
       "type": "multiple_choice",
       "correct": "Whether or not",
-      "options": ["Whether or not", "In order to", "Regarding", "Although"],
+      "options": [
+        "Whether or not",
+        "In order to",
+        "Regarding",
+        "Although"
+      ],
       "word_hints": {}
     },
     {
@@ -506,35 +751,62 @@
         "礼貌对于交流，非常重要。",
         "非常重要，对于礼貌交流。"
       ],
-      "word_hints": {"交流": "jiāo liú", "礼貌": "lǐ mào"}
+      "word_hints": {
+        "交流": "jiāo liú",
+        "礼貌": "lǐ mào"
+      }
     },
     {
       "question": "点头 _____ 同意。(Fill in with the discourse marker.)",
       "type": "multiple_choice",
       "correct": "表示",
-      "options": ["表示", "解释", "批评", "翻译"],
+      "options": [
+        "表示",
+        "解释",
+        "批评",
+        "翻译"
+      ],
       "word_hints": {}
     },
     {
       "question": "Is 是否 more formal or informal compared to 是不是?",
       "type": "multiple_choice",
       "correct": "More formal",
-      "options": ["More formal", "More informal", "The same level", "Only used in speech"],
+      "options": [
+        "More formal",
+        "More informal",
+        "The same level",
+        "Only used in speech"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does the phrase 礼貌回复 mean?",
       "type": "multiple_choice",
       "correct": "A polite reply",
-      "options": ["A polite reply", "A detailed explanation", "A direct expression", "A criticism"],
-      "word_hints": {"礼貌": "lǐ mào"}
+      "options": [
+        "A polite reply",
+        "A detailed explanation",
+        "A direct expression",
+        "A criticism"
+      ],
+      "word_hints": {
+        "礼貌": "lǐ mào"
+      }
     },
     {
       "question": "What does 说明 mean?",
       "type": "multiple_choice",
       "correct": "To explain; to illustrate",
-      "options": ["To explain; to illustrate", "To praise", "To criticize", "To translate"],
-      "word_hints": {"说明": "shuō míng"}
+      "options": [
+        "To explain; to illustrate",
+        "To praise",
+        "To criticize",
+        "To translate"
+      ],
+      "word_hints": {
+        "说明": "shuō míng"
+      }
     },
     {
       "question": "Which Chinese cultural value is reflected in dining etiquette where you pour for others first?",
@@ -552,15 +824,30 @@
       "question": "What does the phrase 批评与表扬 mean?",
       "type": "multiple_choice",
       "correct": "Criticism and praise",
-      "options": ["Criticism and praise", "Questions and answers", "Communication and dialogue", "Words and terms"],
-      "word_hints": {"批评": "pī píng", "表扬": "biǎo yáng"}
+      "options": [
+        "Criticism and praise",
+        "Questions and answers",
+        "Communication and dialogue",
+        "Words and terms"
+      ],
+      "word_hints": {
+        "批评": "pī píng",
+        "表扬": "biǎo yáng"
+      }
     },
     {
       "question": "What does 解释 mean?",
       "type": "multiple_choice",
       "correct": "To explain; explanation",
-      "options": ["To explain; explanation", "To translate", "To communicate", "To criticize"],
-      "word_hints": {"解释": "jiě shì"}
+      "options": [
+        "To explain; explanation",
+        "To translate",
+        "To communicate",
+        "To criticize"
+      ],
+      "word_hints": {
+        "解释": "jiě shì"
+      }
     }
   ],
   "dialogues": [
@@ -569,8 +856,16 @@
       "title": "Understanding a New Word",
       "title_chinese": "理解一个新词语",
       "speakers": {
-        "A": {"name": "李老师", "role": "老师", "gender": "female"},
-        "B": {"name": "小强", "role": "学生", "gender": "male"}
+        "A": {
+          "name": "李老师",
+          "role": "老师",
+          "gender": "female"
+        },
+        "B": {
+          "name": "李白",
+          "role": "学生",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -622,15 +917,23 @@
       "title": "Discussing a Translation Project",
       "title_chinese": "讨论翻译项目",
       "speakers": {
-        "A": {"name": "张明", "role": "同事甲", "gender": "male"},
-        "B": {"name": "王芳", "role": "同事乙", "gender": "female"}
+        "A": {
+          "name": "李白",
+          "role": "同事甲",
+          "gender": "male"
+        },
+        "B": {
+          "name": "爱玲",
+          "role": "同事乙",
+          "gender": "female"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "王芳，对于这份信息，你觉得是否需要翻译？",
-          "pinyin": "Wáng Fāng, duì yú zhè fèn xìn xī, nǐ jué de shì fǒu xū yào fān yì?",
-          "english": "Wang Fang, regarding this information, do you think it needs to be translated?"
+          "chinese": "爱玲，对于这份信息，你觉得是否需要翻译？",
+          "pinyin": "Ài Líng, duì yú zhè fèn xìn xī, nǐ jué de shì fǒu xū yào fān yì?",
+          "english": "Ai Ling, regarding this information, do you think it needs to be translated?"
         },
         {
           "speaker": "B",

@@ -230,7 +230,7 @@ export const BASIC_QUESTIONS_YOUNG = [
     {
       id: "a10", type: "mc",
       question: "What does 我不会说中文 mean?",
-      questionPinyin: "wǒ bù huì shuō zhōngwén",
+      questionPinyin: "wǒ bú huì shuō zhōngwén",
       options: ["I can speak Chinese", "I don't speak Chinese", "I want to learn Chinese", "Do you speak Chinese?"],
       correct: "I don't speak Chinese",
     },

@@ -195,9 +195,78 @@ const SUPPLEMENT_WORDS = [
   '绿化','环保','节约','节食','营养','菜肴','烹饪','调味','食谱',
   '符合','笔记','聊天','阅读','杂志','邻居','闲事','随手','随便',
   '降低','降落','更新','最近','期间','材料','积累',
+  // Animals, body parts, common concrete nouns
+  '动物','昆虫','鸟类','鱼类','兽类','爬虫','哺乳','家禽','野生',
+  '头发','眼睛','耳朵','嘴巴','鼻子','手腕','手指','脚趾','脖子','肚子',
+  // People / groups
+  '人们','人民','人类','大人','小孩','儿童','青年','老人','妇女','男人','女人',
+  '大家','各位','他人','本人','本身','自身','对方','双方','一方','另一方',
+  // Location / directional compounds
+  '深处','远处','近处','高处','低处','上面','下面','前面','后面','里面','外面',
+  '中间','之间','当中','其中','附近','周围','四周','各地','各处','到处',
   // People names (recurring characters in lessons)
   '大明','小红','小刚','小明','王明','李华',
+  // Nature, environment & weather
+  '蓝天','白云','大地','天空','气温','大气','土地','山川','河流',
+  '草原','草地','沙漠','冰雪','彩虹','暴雨','洪水','台风','地震',
+  '海拔','湖泊','峡谷','平原','丘陵','岛屿','湿地','冻土',
+  // Adjectives — state / quality
+  '适宜','充足','充分','严重','干净','整洁','干燥','潮湿','凉爽','炎热',
+  '寒冷','明亮','清晰','清楚','宽阔','遥远','美丽','优美','茂盛',
+  '丰富','复杂','简单','新颖','独特','典型','先进','落后','严格',
+  '模糊','完整','整齐','新鲜','正确','错误','合法','违法','公平',
+  '安全','危险','轻松','紧张','愉快','悲伤','难过','生气','担心',
+  // Verbs — environment / society / process
+  '改善','增强','减弱','维持','维护','破坏','恢复','重建','保障',
+  '逐渐','逐步','不断','渐渐','慢慢','迅速','快速','缓慢',
+  '促进','推动','实施','执行','完善','开展','加强','加深','扩大',
+  '缩小','消除','避免','预防','减轻','加重','克服','应对',
+  '升高','升温','降温','高温','低温','变黄','变绿','变红','变白','变暗',
+  '变大','变小','变多','变少','变强','变弱','变好','变坏','变快','变慢',
+  '意识','认识','了解','掌握','运用','发挥','体现','反映','表现',
+  '参与','承担','履行','遵守','违反','执行','监督','管理',
+  // Nouns — society / concepts
+  '意义','作用','结果','原因','现象','规律','程度','步骤','过程',
+  '方向','方案','目标','任务','计划','策略','措施','方针','政策',
+  '季节','冬天','夏天','春天','秋天','冬季','夏季','春季','秋季',
+  '公民','居民','市民','村民','百姓','工人','农民','士兵',
+  '水分','植被','资源','能源','矿产','粮食','物资','产量',
+  '进展','状态','局面','形势','趋势','变化','差异','联系',
+  '因素','影响','条件','基础','规模','范围','比例','数量',
+  '种类','类型','方式','手段','途径','渠道','模式','体系','制度',
+  // Common VO phrases
+  '看电影','看电视','看书','看报','看病','看新闻','看比赛',
+  '吃早饭','吃午饭','吃晚饭','吃早餐','吃午餐','吃晚餐','吃药','吃饺子',
+  '喝水','喝茶','喝酒','喝咖啡','喝饮料','喝果汁',
+  '打篮球','打排球','打网球','打乒乓球','打太极','打球',
+  '踢足球','踢球',
+  '骑车','骑自行车',
+  '买东西','买菜','买票','买水果',
+  '发邮件','发消息','发短信',
+  '做作业','做运动','做游戏',
+  '去公园','去超市','去医院','去图书馆','去机场','去车站','去餐厅',
+  // 3-char noun / adj compounds
+  '咖啡店','咖啡馆','便利店',
+  '年轻人','老年人','中年人',
+  '好习惯','坏习惯','好主意',
+  '有活力','有意思','有意义','有经验',
+  '保护环境',
+  '新年好','生日快乐',
 ].sort((a, b) => b.length - a.length);
+
+// Characters that must remain as single-character tokens even when unmatched.
+// Only pronouns, sentence-final particles, structural particles, and single-char
+// prepositions qualify. Everything else should be merged with adjacent singles.
+const ALWAYS_SINGLE = new Set([
+  // Pronouns
+  '我','你','他','她','它','您','咱',
+  // Sentence-final / modal particles
+  '了','吗','呢','啊','吧','嘛','哦','哈','嗯',
+  // Structural particles
+  '的','地','得','着','过',
+  // Single-char prepositions / coverbs
+  '在','给','从','跟','把','被','对','向','往','用','比','以','于','替','和',
+]);
 
 // ── Tokenizer (same logic as SentenceBuilder) ───────────────────────────
 function tokenizeSentence(chineseSentence, vocab) {
@@ -207,30 +276,42 @@ function tokenizeSentence(chineseSentence, vocab) {
     ...vocab.map(v => v.chinese).filter(Boolean),
   ].sort((a, b) => b.length - a.length);
 
-  const tokens = [];
+  // Pass 1: greedy longest-match
+  const raw = [];
   let i = 0;
   while (i < chineseSentence.length) {
     const ch = chineseSentence[i];
     if (ch === ' ' || ch === '　') { i++; continue; }
-
+    if (/[\u3000-\u303f\uff00-\uffef，。！？、；：""''（）【】《》…—~·]/.test(ch)) {
+      i++; continue;
+    }
     let matched = false;
     for (const word of knownWords) {
       if (word.length > 1 && chineseSentence.startsWith(word, i)) {
-        tokens.push(word);
+        raw.push(word);
         i += word.length;
         matched = true;
         break;
       }
     }
-    if (!matched) {
-      if (/[\u3000-\u303f\uff00-\uffef，。！？、；：""''（）【】《》…—~·]/.test(ch)) {
-        i++;
-      } else {
-        tokens.push(ch);
-        i++;
-      }
+    if (!matched) { raw.push(ch); i++; }
+  }
+
+  // Pass 2: merge consecutive non-functional single characters into words.
+  // Any single char NOT in ALWAYS_SINGLE should not stand alone — group with
+  // adjacent unknown singles to reconstruct the original multi-char word.
+  const tokens = [];
+  let buf = '';
+  for (const t of raw) {
+    if (t.length === 1 && !ALWAYS_SINGLE.has(t)) {
+      buf += t;
+    } else {
+      if (buf) { tokens.push(buf); buf = ''; }
+      tokens.push(t);
     }
   }
+  if (buf) tokens.push(buf);
+
   return tokens;
 }
 
@@ -358,16 +439,28 @@ export function buildPinyinExercises(lessonData) {
   const initials     = pf.initials_focus  || pf.initials_review  || [];
   const finals       = pf.finals_focus    || pf.finals_review    || [];
 
-  // Build vocab lookup: stripped-pinyin → vocabItem
-  const vocabByPinyin = {};
+  // Build vocab lookup: exact full-pinyin key first (preserves tone disambiguation),
+  // then stripped-pinyin as fallback for syllables that differ only by tone.
+  const vocabByExact   = {};
+  const vocabByStripped = {};
   (lessonData.vocabulary || []).forEach(v => {
-    if (v.pinyin) vocabByPinyin[stripTones(v.pinyin.toLowerCase().trim())] = v;
+    if (!v.pinyin) return;
+    const exact   = v.pinyin.toLowerCase().trim();
+    const stripped = stripTones(exact);
+    vocabByExact[exact] = v;
+    if (!vocabByStripped[stripped]) vocabByStripped[stripped] = v; // first-wins for stripped
   });
 
   const exercises = [];
   for (const syllable of tonePractice) {
-    const key = stripTones(syllable.toLowerCase().trim());
-    const vocabItem = vocabByPinyin[key] || vocabByPinyin[stripTones(syllable.split(' ')[0].toLowerCase())] || null;
+    const exact      = syllable.toLowerCase().trim();
+    const stripped   = stripTones(exact);
+    const firstExact = syllable.split(' ')[0].toLowerCase();
+    const vocabItem  = vocabByExact[exact]
+                    || vocabByExact[firstExact]
+                    || vocabByStripped[stripped]
+                    || vocabByStripped[stripTones(firstExact)]
+                    || null;
 
     const toneEx   = makePinyinToneId(syllable, vocabItem);
     if (toneEx) exercises.push(toneEx);
@@ -437,6 +530,9 @@ function makeFillBlank(sentence, allVocab) {
 function makeArrange(sentence, allVocab) {
   const tokens = tokenizeSentence(sentence.chinese, allVocab);
   if (tokens.length < 2) return null;
+  // Reject if more than 30% of tiles are single characters — too many fragments
+  const singleCount = tokens.filter(t => t.length === 1).length;
+  if (tokens.length > 3 && singleCount / tokens.length > 0.3) return null;
   const pinyinMap = buildPinyinMap(allVocab);
   return {
     type: 'arrange',
@@ -475,15 +571,148 @@ function makeSpeakTranslate(vocabItem) {
   };
 }
 
-function makeSpeakRespond(qaPair) {
+// Return a contextual emoji for a respond exercise based on the ANSWER text
+function getRespondEmoji(answerChinese) {
+  if (!answerChinese) return '💬';
+  const a = answerChinese;
+  // Travel by plane / airport / trip / departing urgently
+  if (/飞机|机场|旅游|旅行|出国|登机牌|护照|行李|托运|降落|我这就出发|希望还来得及/.test(a)) return '✈️';
+  // Transport / vehicle
+  if (/坐火车|坐地铁|坐公共汽车|坐公交|骑车|骑自行车|开车|打车|打的/.test(a)) return '🚗';
+  // Health / hospital / medical / surgery recovery
+  if (/医院|看病|生病|感冒|发烧|头疼|肚子疼|身体|不舒服|节食|减肥|吃药|药|治疗|检查|免疫力|康复|皮肤|禁食|手术|均衡营养.*恢复|医生说.*营养|还有什么需要注意/.test(a)) return '🏥';
+  // Date: month+day pattern
+  if (/[一二三四五六七八九十百\d]+月[一二三四五六七八九十百\d]+[号日]/.test(a)) return '📅';
+  // Weekday
+  if (/星期[一二三四五六天日]/.test(a)) return '📅';
+  // Clock / time of day
+  if (/[两一二三四五六七八九十零\d]+点/.test(a)) return '🕐';
+  // Weather / climate / season dressing
+  if (/下雨|下雪|刮风|晴天|阴天|天气|温度|冷|热|气候|保暖|穿.*衣服|加.*外套|着凉/.test(a)) return '⛅';
+  // Age / birthday
+  if (/[一二三四五六七八九十百\d]+岁|生日|年龄/.test(a)) return '🎂';
+  // Shopping / supermarket / buying
+  if (/超市|商店|购物|买东西|买.*东西|逛街|打折|多少钱|网购|顾客评价|售货员|网店/.test(a)) return '🛍️';
+  // Clothes / quality / fabric / product shopping
+  if (/外套|质量|材料|款式|耐穿|符合标准|试穿|退货|价格.*值得|这件/.test(a)) return '🛍️';
+  // Money / saving / finance / payment / invoice
+  if (/存钱|买房|消费习惯|手机支付|零钱|工资|节省|浪费|违约金|罚款|开发票|付款.*发票/.test(a)) return '💰';
+  // Cooking / food preparation / cuisine / diet
+  if (/食材|调料|菜肴|做菜|烹饪|食谱|火候|味道|营养均衡|饮食习惯|美食之道|特色.*美食|清淡.*食物|肠胃/.test(a)) return '👨‍🍳';
+  // Food / eating / drinks
+  if (/吃饭|点菜|餐厅|饭馆|水果|苹果|饺子|面条|米饭|喝.*咖啡|喝.*茶|喝.*牛奶|喝.*水|喝.*饮料/.test(a)) return '🍽️';
+  // Drinks without eating context
+  if (/喝|咖啡|茶|牛奶|果汁|饮料/.test(a)) return '🍽️';
+  // Romance / love / relationship / dating
+  if (/感情|爱情|浪漫|约会|坠入爱河|爱河|幸福.*感|体贴|珍惜.*感情|爱意|真爱/.test(a)) return '💕';
+  // Nature / environment / ecology
+  if (/森林|植物|自然|环境|污染|蓝天|白云|绿水|保护地球|生态|气温.*升|自然美景/.test(a)) return '🌿';
+  // City / urban development / smart city
+  if (/城市.*规划|城市.*发展|公共交通|绿化|宜居|城镇化|智慧城市|智能.*城市|城市.*科技|人口.*城市/.test(a)) return '🏙️';
+  // Culture / art / history / museum / exhibition
+  if (/文化|艺术|雕塑|遗产|博物馆|展览|历史|民间.*艺术|传统.*文化|书法|名著|小说.*文化/.test(a)) return '🏛️';
+  // Martial arts / performance / entertainment show
+  if (/功夫|武术|表演.*精彩|演员|演出.*精彩|魅力|出神入化/.test(a)) return '🎭';
+  // Technology / internet / AI / social media
+  if (/AI|人工智能|网络平台|直播|视频.*字幕|软件|科技.*进步|互联网|数字化|大数据/.test(a)) return '💻';
+  // Law / rights / contracts / legal
+  if (/法律|合同|维权|律师|法院|案件|诉讼|证据|受理|违约|权利.*受到|法律援助|拖延.*损失|对方.*拖延/.test(a)) return '⚖️';
+  // Business / market / sales / marketing / data analytics
+  if (/市场|销售|品牌|营销|商家|投资|利润|产品.*推广|销售策略|知名度|经济形势|数据.*分析|分析.*数据.*管理者|这批产品|产品.*合格|流程.*执行|标准.*不能|社交媒体.*商业/.test(a)) return '📊';
+  // Perseverance / goals / motivation / success / character / self-improvement
+  if (/坚持|奋斗|梦想|目标|努力.*成功|激励|克服|突破.*记录|拼搏|榜样|信心|不放弃|阳光总在风雨后|天道酬勤|坚持就是胜利|意志力|乐观.*心态|谦虚|自信|勇敢|勇气|加油|不后悔|尽力|宝贵.*经验|失败是成功之母|自豪|感到.*自豪|改变自己.*幽默|优点.*多表示|成熟|每个人生阶段|总结.*经验.*做得更好/.test(a)) return '💪';
+  // Job / career / application / work performance
+  if (/面试|加入.*团队|负责任.*人|欢迎.*团队|应聘|实习|职位|管理经验|毕业.*工作|基础研究.*成长|细心.*耐心.*问题|细心和耐心|困难问题/.test(a)) return '💼';
+  // Sports / exercise / training / healthy habits
+  if (/打篮球|踢足球|游泳|跑步|锻炼|运动|打球|骑车|健身|体育馆|训练|散步|体能|好习惯|积累.*习惯|改变.*生活方式|天天来.*活动|太累.*活动|往往来得很早|天天来/.test(a)) return '🏃';
+  // Sports match / competition
+  if (/比赛|赢|输了|冠军|足球队|篮球队|赛场|竞技/.test(a)) return '⚽';
+  // Movies / TV / entertainment
+  if (/看电影|看电视|看剧|节目|演出|电影院/.test(a)) return '🎬';
+  // Study / school / exam / growth / books
+  if (/在学校|去学校|上课|学习|复习|考试|做作业|图书馆|成绩|作业|记笔记|打好基础|学期|这本书|带.*书|阅读|读.*书|书.*吸引|是哪本书|想看.*书/.test(a)) return '📚';
+  // Language learning / communication skills
+  if (/说汉语|说中文|普通话|学中文|学汉语|母语|口音|多听多说|词汇|语感|语言.*学习|多积累|犯错误/.test(a)) return '🗣️';
+  // Communication / etiquette / social skills / explaining vocabulary
+  if (/礼貌|批评.*方式|说话.*方式|交流.*重要|沟通|批评.*意思|批评表示|解释.*一下|两个词.*对话|直接.*对话/.test(a)) return '🗣️';
+  // Friendship / bonds / keeping in touch / mutual encouragement / apology
+  if (/友谊|真正的朋友|共同进步|保持联系|互相支持|彼此理解|信任.*朋友|互相鼓励|信任你|有点抱歉|应该先听.*解释|商品值得/.test(a)) return '🤝';
+  // Work / occupation / career
+  if (/是老师|是医生|是护士|是工程师|是司机|是厨师|是律师|上班|公司|同事|工作|项目/.test(a)) return '💼';
+  // Pets / animals
+  if (/猫|狗|鸟|宠物|鱼|兔子|养了/.test(a)) return '🐾';
+  // Family members / parenting / family care
+  if (/爸爸|妈妈|哥哥|姐姐|弟弟|妹妹|爷爷|奶奶|家人|家里人|口人|父母|外婆|外公|打电话.*妈|每周.*打.*电话|家庭关系|家和万事兴|担心你.*电话|确认.*没事|妈，我知道|太累了.*时间/.test(a)) return '👨‍👩‍👧‍👦';
+  // Social responsibility / values
+  if (/社会责任|集体主义|个人主义|价值观|孝顺|家庭责任/.test(a)) return '🤲';
+  // Plans / intention / future / life direction
+  if (/打算|准备|计划|规划.*未来|找到.*方向|迷茫/.test(a)) return '🗓️';
+  // Home / house / moving / life habits
+  if (/在家|回家|家里|新家|搬家|房子|出门|养生|减少熬夜|减少压力/.test(a)) return '🏠';
+  // Location / place
+  if (/在.*里|在.*旁边|在.*附近|在.*前面|在.*后面|在北京|在上海|在中国/.test(a)) return '📍';
+  // Travel destination / abroad
+  if (/去北京|去上海|去中国|去外国|出国|去旅游|去旅行|暑假.*外婆|童年/.test(a)) return '🌏';
+  // Gifts / celebration / festival
+  if (/礼物|送给|新年|节日|庆祝|生日快乐/.test(a)) return '🎁';
+  // Identity / nationality / origin
+  if (/是中国人|是美国人|是英国人|是日本人|来自|哪国人/.test(a)) return '🌏';
+  // Name / introduction
+  if (/我叫|我的名字|我姓/.test(a)) return '👋';
+  // Positive feelings / happiness / life satisfaction / life wisdom
+  if (/很高兴|很开心|很难过|很生气|很紧张|很激动|很累|很满意|不高兴|不开心|幸福|知足常乐|满足|人生.*意义|珍惜.*阶段|轻松愉快|心满意足|感动|感动了|这让我.*感动|随着时间.*成熟|时间.*推移.*影响/.test(a)) return '😊';
+  // Hobby / likes / passion
+  if (/喜欢|爱好|兴趣/.test(a)) return '❤️';
+  // Words / meaning / vocabulary
+  if (/意思|词语|句子|发音|怎么说/.test(a)) return '📖';
+  // Homework / exam result
+  if (/做完了|做对了|考了|考得|作业做/.test(a)) return '📝';
+  // Neighbours / community
+  if (/邻居|社区/.test(a)) return '🏘️';
+  // Helping / request outcome
+  if (/帮了|帮我|谢谢你帮/.test(a)) return '🤝';
+  // Default conversational
+  return '💬';
+}
+
+// Derive HSK level (1-5) from lessonData vocabulary IDs
+function getHskLevel(lessonData) {
+  const id = lessonData?.vocabulary?.[0]?.id || '';
+  const match = id.match(/^hsk(\d)/);
+  return match ? parseInt(match[1], 10) : 1;
+}
+
+// Shorten a Chinese answer to the first clause (up to first punctuation mark)
+function shortenChinese(text) {
+  if (!text) return text;
+  const first = text.split(/[，。！？；…]/)[0];
+  return first.length > 0 ? first : text;
+}
+
+// Shorten pinyin to match the character count of the shortened Chinese
+function shortenPinyin(pinyin, chineseLen) {
+  if (!pinyin) return pinyin;
+  const first = pinyin.split(/[,，.。!！?？;；]/)[0].trim();
+  const syllables = first.split(/\s+/);
+  if (syllables.length <= chineseLen) return first;
+  return syllables.slice(0, chineseLen).join(' ');
+}
+
+function makeSpeakRespond(qaPair, hskLevel) {
+  const shortChinese = shortenChinese(qaPair.answerChinese);
+  const shortPinyin  = shortenPinyin(qaPair.answerPinyin, [...shortChinese].length);
   return {
     type: 'speak',
     subtype: 'respond',
-    questionChinese: qaPair.questionChinese,
-    questionPinyin:  qaPair.questionPinyin,
-    answerChinese:   qaPair.answerChinese,
-    answerPinyin:    qaPair.answerPinyin,
-    answerEnglish:   qaPair.answerEnglish,
+    hskLevel,
+    emoji:              getRespondEmoji(qaPair.answerChinese),
+    questionChinese:    qaPair.questionChinese,
+    questionPinyin:     qaPair.questionPinyin,
+    answerChinese:      shortChinese,
+    answerPinyin:       shortPinyin,
+    answerEnglish:      qaPair.answerEnglish,
+    fullAnswerChinese:  qaPair.answerChinese,
+    fullAnswerPinyin:   qaPair.answerPinyin,
   };
 }
 
@@ -694,10 +923,11 @@ export function generateQuizRound(lessonData) {
   const pool      = buildSpeakPool(vocab, sentences);
   const qaPairs   = extractQAPairs(lessonData);
   const L         = lessonData.lesson || 5;
+  const hskLevel  = getHskLevel(lessonData);
 
   const respondOrFallback = (i) =>
     qaPairs.length > 0
-      ? makeSpeakRespond(qaPairs[i % qaPairs.length])
+      ? makeSpeakRespond(qaPairs[i % qaPairs.length], hskLevel)
       : makeSpeakRepeat(p(pool, i));
 
   // Pick up to 3 pinyin exercises from the lesson
@@ -741,11 +971,12 @@ export function generateRounds(lessonData) {
   const pool = buildSpeakPool(vocab, sentences);
   const qaPairs = extractQAPairs(lessonData);
   const L = lessonData.lesson || 5; // lesson number for image lookup
+  const hskLevel = getHskLevel(lessonData);
 
   // Helper: pick a Q&A respond exercise, fall back to speak_repeat if none available
   const respondOrFallback = (i) =>
     qaPairs.length > 0
-      ? makeSpeakRespond(qaPairs[i % qaPairs.length])
+      ? makeSpeakRespond(qaPairs[i % qaPairs.length], hskLevel)
       : makeSpeakRepeat(p(pool, i));
 
   const rounds = [

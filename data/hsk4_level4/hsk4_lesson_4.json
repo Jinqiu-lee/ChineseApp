@@ -222,9 +222,22 @@
           "question": "_____ 积累经验，他成为了一名优秀的记者。",
           "type": "multiple_choice",
           "correct": "通过",
-          "options": ["通过", "因为", "虽然", "只要"],
-          "option_pinyin": ["tōng guò", "yīn wèi", "suī rán", "zhǐ yào"],
-          "word_hints": {"经验": "jīng yàn", "记者": "jì zhě"}
+          "options": [
+            "通过",
+            "因为",
+            "虽然",
+            "只要"
+          ],
+          "option_pinyin": [
+            "tōng guò",
+            "yīn wèi",
+            "suī rán",
+            "zhǐ yào"
+          ],
+          "word_hints": {
+            "经验": "jīng yàn",
+            "记者": "jì zhě"
+          }
         },
         {
           "question": "Choose the correct sentence with 通过.",
@@ -242,31 +255,70 @@
             "Nǔ lì tōng guò xué xí, tā chéng wéi le bó shì.",
             "Tā chéng wéi bó shì tōng guò nǔ lì xué xí."
           ],
-          "word_hints": {"成为": "chéng wéi", "博士": "bó shì"}
+          "word_hints": {
+            "成为": "chéng wéi",
+            "博士": "bó shì"
+          }
         },
         {
           "question": "她 _____ 应聘成功获得了这份职业。",
           "type": "multiple_choice",
           "correct": "通过",
-          "options": ["通过", "为了", "对于", "是否"],
-          "option_pinyin": ["tōng guò", "wèi le", "duì yú", "shì fǒu"],
-          "word_hints": {"应聘": "yìng pìn", "职业": "zhí yè"}
+          "options": [
+            "通过",
+            "为了",
+            "对于",
+            "是否"
+          ],
+          "option_pinyin": [
+            "tōng guò",
+            "wèi le",
+            "duì yú",
+            "shì fǒu"
+          ],
+          "word_hints": {
+            "应聘": "yìng pìn",
+            "职业": "zhí yè"
+          }
         },
         {
           "question": "通过 answers which question?",
           "type": "multiple_choice",
           "correct": "How? (by what means?)",
-          "options": ["How? (by what means?)", "Why?", "When?", "Where?"],
-          "option_pinyin": ["", "", "", ""],
+          "options": [
+            "How? (by what means?)",
+            "Why?",
+            "When?",
+            "Where?"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "他 _____ 管理工作积累了很多经验。",
           "type": "multiple_choice",
           "correct": "通过",
-          "options": ["通过", "负责", "成功", "成为"],
-          "option_pinyin": ["tōng guò", "fù zé", "chéng gōng", "chéng wéi"],
-          "word_hints": {"管理": "guǎn lǐ", "经验": "jīng yàn"}
+          "options": [
+            "通过",
+            "负责",
+            "成功",
+            "成为"
+          ],
+          "option_pinyin": [
+            "tōng guò",
+            "fù zé",
+            "chéng gōng",
+            "chéng wéi"
+          ],
+          "word_hints": {
+            "管理": "guǎn lǐ",
+            "经验": "jīng yàn"
+          }
         }
       ]
     },
@@ -291,9 +343,21 @@
           "question": "她 _____ 学习新技术，为了成为专家。",
           "type": "multiple_choice",
           "correct": "继续",
-          "options": ["继续", "已经", "经常", "有时"],
-          "option_pinyin": ["jì xù", "yǐ jīng", "jīng cháng", "yǒu shí"],
-          "word_hints": {"技术": "jì shù"}
+          "options": [
+            "继续",
+            "已经",
+            "经常",
+            "有时"
+          ],
+          "option_pinyin": [
+            "jì xù",
+            "yǐ jīng",
+            "jīng cháng",
+            "yǒu shí"
+          ],
+          "word_hints": {
+            "技术": "jì shù"
+          }
         },
         {
           "question": "Which sentence correctly uses 继续?",
@@ -311,30 +375,64 @@
             "Tā jì xù, guǎn lǐ gōng sī bú huì tuì xiū.",
             "Jì xù tā guǎn lǐ gōng sī, bú huì tuì xiū."
           ],
-          "word_hints": {"管理": "guǎn lǐ"}
+          "word_hints": {
+            "管理": "guǎn lǐ"
+          }
         },
         {
           "question": "他失败了一次，但是 _____ 努力，最终成功了。",
           "type": "multiple_choice",
           "correct": "继续",
-          "options": ["继续", "停止", "放弃", "结束"],
-          "option_pinyin": ["jì xù", "tíng zhǐ", "fàng qì", "jié shù"],
-          "word_hints": {"成功": "chéng gōng"}
+          "options": [
+            "继续",
+            "停止",
+            "放弃",
+            "结束"
+          ],
+          "option_pinyin": [
+            "jì xù",
+            "tíng zhǐ",
+            "fàng qì",
+            "jié shù"
+          ],
+          "word_hints": {
+            "成功": "chéng gōng"
+          }
         },
         {
           "question": "继续 is placed where in a sentence?",
           "type": "multiple_choice",
           "correct": "Before the verb",
-          "options": ["Before the verb", "After the verb", "At the end", "Before the subject"],
-          "option_pinyin": ["", "", "", ""],
+          "options": [
+            "Before the verb",
+            "After the verb",
+            "At the end",
+            "Before the subject"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "请 _____ 你的工作，不要停下来。",
           "type": "multiple_choice",
           "correct": "继续",
-          "options": ["继续", "开始", "完成", "检查"],
-          "option_pinyin": ["jì xù", "kāi shǐ", "wán chéng", "jiǎn chá"],
+          "options": [
+            "继续",
+            "开始",
+            "完成",
+            "检查"
+          ],
+          "option_pinyin": [
+            "jì xù",
+            "kāi shǐ",
+            "wán chéng",
+            "jiǎn chá"
+          ],
           "word_hints": {}
         }
       ]
@@ -360,9 +458,21 @@
           "question": "他 _____ 这次项目的管理工作。",
           "type": "multiple_choice",
           "correct": "负责",
-          "options": ["负责", "成为", "经历", "招聘"],
-          "option_pinyin": ["fù zé", "chéng wéi", "jīng lì", "zhāo pìn"],
-          "word_hints": {"管理": "guǎn lǐ"}
+          "options": [
+            "负责",
+            "成为",
+            "经历",
+            "招聘"
+          ],
+          "option_pinyin": [
+            "fù zé",
+            "chéng wéi",
+            "jīng lì",
+            "zhāo pìn"
+          ],
+          "word_hints": {
+            "管理": "guǎn lǐ"
+          }
         },
         {
           "question": "Choose the correct sentence using 负责.",
@@ -380,15 +490,30 @@
             "Jiào shòu tā fù zé zhè mén jì shù kè chéng.",
             "Zhè mén tā fù zé, jiào shòu jì shù kè chéng."
           ],
-          "word_hints": {"教授": "jiào shòu", "技术": "jì shù"}
+          "word_hints": {
+            "教授": "jiào shòu",
+            "技术": "jì shù"
+          }
         },
         {
           "question": "他是公司里最 _____ 的人，从不出错。",
           "type": "multiple_choice",
           "correct": "负责",
-          "options": ["负责", "骄傲", "幽默", "直接"],
-          "option_pinyin": ["fù zé", "jiāo ào", "yōu mò", "zhí jiē"],
-          "word_hints": {"负责": "fù zé"}
+          "options": [
+            "负责",
+            "骄傲",
+            "幽默",
+            "直接"
+          ],
+          "option_pinyin": [
+            "fù zé",
+            "jiāo ào",
+            "yōu mò",
+            "zhí jiē"
+          ],
+          "word_hints": {
+            "负责": "fù zé"
+          }
         },
         {
           "question": "负责 can be used in which two ways?",
@@ -400,16 +525,34 @@
             "Only as an adjective",
             "Only in formal writing"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "她 _____ 管理整个团队，非常有经验。",
           "type": "multiple_choice",
           "correct": "负责",
-          "options": ["负责", "成功", "职业", "技术"],
-          "option_pinyin": ["fù zé", "chéng gōng", "zhí yè", "jì shù"],
-          "word_hints": {"管理": "guǎn lǐ", "经验": "jīng yàn"}
+          "options": [
+            "负责",
+            "成功",
+            "职业",
+            "技术"
+          ],
+          "option_pinyin": [
+            "fù zé",
+            "chéng gōng",
+            "zhí yè",
+            "jì shù"
+          ],
+          "word_hints": {
+            "管理": "guǎn lǐ",
+            "经验": "jīng yàn"
+          }
         }
       ]
     }
@@ -434,15 +577,32 @@
       "question": "What does 职业 mean?",
       "type": "multiple_choice",
       "correct": "Profession; occupation; career",
-      "options": ["Profession; occupation; career", "Technology", "Experience", "Management"],
-      "word_hints": {"职业": "zhí yè"}
+      "options": [
+        "Profession; occupation; career",
+        "Technology",
+        "Experience",
+        "Management"
+      ],
+      "word_hints": {
+        "职业": "zhí yè"
+      }
     },
     {
       "question": "Which word means 'technology; technique; skill'?",
       "type": "multiple_choice",
       "correct": "技术",
-      "options": ["技术", "经验", "经历", "管理"],
-      "word_hints": {"技术": "jì shù", "经验": "jīng yàn", "经历": "jīng lì", "管理": "guǎn lǐ"}
+      "options": [
+        "技术",
+        "经验",
+        "经历",
+        "管理"
+      ],
+      "word_hints": {
+        "技术": "jì shù",
+        "经验": "jīng yàn",
+        "经历": "jīng lì",
+        "管理": "guǎn lǐ"
+      }
     },
     {
       "question": "What is the difference between 经历 and 经验?",
@@ -454,69 +614,140 @@
         "经历 is formal; 经验 is informal",
         "经历 is a verb only; 经验 is a noun only"
       ],
-      "word_hints": {"经历": "jīng lì", "经验": "jīng yàn"}
+      "word_hints": {
+        "经历": "jīng lì",
+        "经验": "jīng yàn"
+      }
     },
     {
       "question": "What does 负责 mean?",
       "type": "multiple_choice",
       "correct": "To be responsible for",
-      "options": ["To be responsible for", "To manage", "To recruit", "To succeed"],
-      "word_hints": {"负责": "fù zé"}
+      "options": [
+        "To be responsible for",
+        "To manage",
+        "To recruit",
+        "To succeed"
+      ],
+      "word_hints": {
+        "负责": "fù zé"
+      }
     },
     {
       "question": "Which word means 'to manage; management'?",
       "type": "multiple_choice",
       "correct": "管理",
-      "options": ["管理", "负责", "成功", "应聘"],
-      "word_hints": {"管理": "guǎn lǐ", "负责": "fù zé", "成功": "chéng gōng", "应聘": "yìng pìn"}
+      "options": [
+        "管理",
+        "负责",
+        "成功",
+        "应聘"
+      ],
+      "word_hints": {
+        "管理": "guǎn lǐ",
+        "负责": "fù zé",
+        "成功": "chéng gōng",
+        "应聘": "yìng pìn"
+      }
     },
     {
       "question": "What does 成为 mean?",
       "type": "multiple_choice",
       "correct": "To become",
-      "options": ["To become", "To succeed", "To recruit", "To manage"],
-      "word_hints": {"成为": "chéng wéi"}
+      "options": [
+        "To become",
+        "To succeed",
+        "To recruit",
+        "To manage"
+      ],
+      "word_hints": {
+        "成为": "chéng wéi"
+      }
     },
     {
       "question": "Which word means 'reporter; journalist'?",
       "type": "multiple_choice",
       "correct": "记者",
-      "options": ["记者", "教授", "博士", "职业"],
-      "word_hints": {"记者": "jì zhě", "教授": "jiào shòu", "博士": "bó shì", "职业": "zhí yè"}
+      "options": [
+        "记者",
+        "教授",
+        "博士",
+        "职业"
+      ],
+      "word_hints": {
+        "记者": "jì zhě",
+        "教授": "jiào shòu",
+        "博士": "bó shì",
+        "职业": "zhí yè"
+      }
     },
     {
       "question": "What does 招聘 mean?",
       "type": "multiple_choice",
       "correct": "To recruit; to hire",
-      "options": ["To recruit; to hire", "To apply for a job", "To manage", "To succeed"],
-      "word_hints": {"招聘": "zhāo pìn"}
+      "options": [
+        "To recruit; to hire",
+        "To apply for a job",
+        "To manage",
+        "To succeed"
+      ],
+      "word_hints": {
+        "招聘": "zhāo pìn"
+      }
     },
     {
       "question": "What does 应聘 mean?",
       "type": "multiple_choice",
       "correct": "To apply for a job",
-      "options": ["To apply for a job", "To recruit", "To manage", "To succeed"],
-      "word_hints": {"应聘": "yìng pìn"}
+      "options": [
+        "To apply for a job",
+        "To recruit",
+        "To manage",
+        "To succeed"
+      ],
+      "word_hints": {
+        "应聘": "yìng pìn"
+      }
     },
     {
       "question": "What does 博士 mean?",
       "type": "multiple_choice",
       "correct": "PhD; doctor (academic)",
-      "options": ["PhD; doctor (academic)", "Professor", "Reporter", "Manager"],
-      "word_hints": {"博士": "bó shì"}
+      "options": [
+        "PhD; doctor (academic)",
+        "Professor",
+        "Reporter",
+        "Manager"
+      ],
+      "word_hints": {
+        "博士": "bó shì"
+      }
     },
     {
       "question": "Fill in: _____ 积累经验，他终于成功了。",
       "type": "multiple_choice",
       "correct": "通过",
-      "options": ["通过", "因为", "虽然", "对于"],
-      "word_hints": {"经验": "jīng yàn", "成功": "chéng gōng"}
+      "options": [
+        "通过",
+        "因为",
+        "虽然",
+        "对于"
+      ],
+      "word_hints": {
+        "经验": "jīng yàn",
+        "成功": "chéng gōng"
+      }
     },
     {
       "question": "What does 通过 mean as a preposition?",
       "type": "multiple_choice",
       "correct": "Through; by means of",
-      "options": ["Through; by means of", "In order to", "Regarding", "Whether or not"],
+      "options": [
+        "Through; by means of",
+        "In order to",
+        "Regarding",
+        "Whether or not"
+      ],
       "word_hints": {}
     },
     {
@@ -529,21 +760,38 @@
         "继续她学习新技术。",
         "她学习新技术继续。"
       ],
-      "word_hints": {"技术": "jì shù"}
+      "word_hints": {
+        "技术": "jì shù"
+      }
     },
     {
       "question": "He is responsible for managing the team. Which sentence is correct?",
       "type": "multiple_choice",
       "correct": "他负责管理团队。",
-      "options": ["他负责管理团队。", "他管理负责团队。", "他团队负责管理。", "负责他管理团队。"],
-      "word_hints": {"负责": "fù zé", "管理": "guǎn lǐ"}
+      "options": [
+        "他负责管理团队。",
+        "他管理负责团队。",
+        "他团队负责管理。",
+        "负责他管理团队。"
+      ],
+      "word_hints": {
+        "负责": "fù zé",
+        "管理": "guǎn lǐ"
+      }
     },
     {
       "question": "What does the phrase 职业发展 mean?",
       "type": "multiple_choice",
       "correct": "Career development",
-      "options": ["Career development", "Job recruitment", "Technical skills", "Work experience"],
-      "word_hints": {"职业": "zhí yè"}
+      "options": [
+        "Career development",
+        "Job recruitment",
+        "Technical skills",
+        "Work experience"
+      ],
+      "word_hints": {
+        "职业": "zhí yè"
+      }
     },
     {
       "question": "What does the proverb 授人以鱼不如授人以渔 mean?",
@@ -561,29 +809,57 @@
       "question": "What does 教授 mean?",
       "type": "multiple_choice",
       "correct": "Professor; to teach (advanced level)",
-      "options": ["Professor; to teach (advanced level)", "Doctor", "Reporter", "Manager"],
-      "word_hints": {"教授": "jiào shòu"}
+      "options": [
+        "Professor; to teach (advanced level)",
+        "Doctor",
+        "Reporter",
+        "Manager"
+      ],
+      "word_hints": {
+        "教授": "jiào shòu"
+      }
     },
     {
       "question": "Fill in: 她继续 _____ 技术，希望成为专家。",
       "type": "multiple_choice",
       "correct": "学习",
-      "options": ["学习", "负责", "招聘", "应聘"],
-      "word_hints": {"技术": "jì shù"}
+      "options": [
+        "学习",
+        "负责",
+        "招聘",
+        "应聘"
+      ],
+      "word_hints": {
+        "技术": "jì shù"
+      }
     },
     {
       "question": "What does 成功 mean?",
       "type": "multiple_choice",
       "correct": "Success; to succeed; successful",
-      "options": ["Success; to succeed; successful", "To become", "To manage", "To recruit"],
-      "word_hints": {"成功": "chéng gōng"}
+      "options": [
+        "Success; to succeed; successful",
+        "To become",
+        "To manage",
+        "To recruit"
+      ],
+      "word_hints": {
+        "成功": "chéng gōng"
+      }
     },
     {
       "question": "What does the phrase 获得经验 mean?",
       "type": "multiple_choice",
       "correct": "To gain experience",
-      "options": ["To gain experience", "To become an expert", "To apply for a job", "To develop a career"],
-      "word_hints": {"经验": "jīng yàn"}
+      "options": [
+        "To gain experience",
+        "To become an expert",
+        "To apply for a job",
+        "To develop a career"
+      ],
+      "word_hints": {
+        "经验": "jīng yàn"
+      }
     }
   ],
   "dialogues": [
@@ -592,8 +868,16 @@
       "title": "A Job Interview",
       "title_chinese": "求职面试",
       "speakers": {
-        "A": {"name": "陈主管", "role": "面试官", "gender": "male"},
-        "B": {"name": "林小玲", "role": "求职者", "gender": "female"}
+        "A": {
+          "name": "陈主管",
+          "role": "面试官",
+          "gender": "male"
+        },
+        "B": {
+          "name": "林小玲",
+          "role": "求职者",
+          "gender": "female"
+        }
       },
       "lines": [
         {
@@ -645,8 +929,16 @@
       "title": "Career Advice from a Professor",
       "title_chinese": "教授的职业建议",
       "speakers": {
-        "A": {"name": "王教授", "role": "教授", "gender": "male"},
-        "B": {"name": "小李", "role": "学生", "gender": "male"}
+        "A": {
+          "name": "王教授",
+          "role": "教授",
+          "gender": "male"
+        },
+        "B": {
+          "name": "加缪",
+          "role": "学生",
+          "gender": "male"
+        }
       },
       "lines": [
         {

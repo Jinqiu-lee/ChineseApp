@@ -204,17 +204,43 @@
           "question": "_____ 条件很差，她也坚持进行训练。",
           "type": "multiple_choice",
           "correct": "即使",
-          "options": ["即使", "只要", "如果", "虽然"],
-          "option_pinyin": ["jí shǐ", "zhǐ yào", "rú guǒ", "suī rán"],
-          "word_hints": {"坚持": "jiān chí", "进行": "jìn xíng"}
+          "options": [
+            "即使",
+            "只要",
+            "如果",
+            "虽然"
+          ],
+          "option_pinyin": [
+            "jí shǐ",
+            "zhǐ yào",
+            "rú guǒ",
+            "suī rán"
+          ],
+          "word_hints": {
+            "坚持": "jiān chí",
+            "进行": "jìn xíng"
+          }
         },
         {
           "question": "即使失败多次，他 _____ 勇敢面对。",
           "type": "multiple_choice",
           "correct": "也",
-          "options": ["也", "就", "才", "都"],
-          "option_pinyin": ["yě", "jiù", "cái", "dōu"],
-          "word_hints": {"失败": "shī bài", "勇敢": "yǒng gǎn"}
+          "options": [
+            "也",
+            "就",
+            "才",
+            "都"
+          ],
+          "option_pinyin": [
+            "yě",
+            "jiù",
+            "cái",
+            "dōu"
+          ],
+          "word_hints": {
+            "失败": "shī bài",
+            "勇敢": "yǒng gǎn"
+          }
         },
         {
           "question": "Choose the correct sentence with 即使...也...",
@@ -232,7 +258,10 @@
             "Jí shǐ tā yě huì zhòng shì guò chéng, jié guǒ bù hǎo.",
             "Tā jí shǐ jié guǒ bù hǎo, zhòng shì guò chéng yě huì."
           ],
-          "word_hints": {"结果": "jié guǒ", "重视": "zhòng shì"}
+          "word_hints": {
+            "结果": "jié guǒ",
+            "重视": "zhòng shì"
+          }
         },
         {
           "question": "即使...也... expresses:",
@@ -244,16 +273,35 @@
             "A purpose or goal",
             "A surprising result"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "_____ 获得失败的结果，她也积极进取。",
           "type": "multiple_choice",
           "correct": "即使",
-          "options": ["即使", "否则", "既然", "因为"],
-          "option_pinyin": ["jí shǐ", "fǒu zé", "jì rán", "yīn wèi"],
-          "word_hints": {"失败": "shī bài", "结果": "jié guǒ", "积极": "jī jí"}
+          "options": [
+            "即使",
+            "否则",
+            "既然",
+            "因为"
+          ],
+          "option_pinyin": [
+            "jí shǐ",
+            "fǒu zé",
+            "jì rán",
+            "yīn wèi"
+          ],
+          "word_hints": {
+            "失败": "shī bài",
+            "结果": "jié guǒ",
+            "积极": "jī jí"
+          }
         }
       ]
     },
@@ -278,9 +326,21 @@
           "question": "他第一次参加比赛，_____ 就赢了。",
           "type": "multiple_choice",
           "correct": "竟然",
-          "options": ["竟然", "仍然", "当然", "果然"],
-          "option_pinyin": ["jìng rán", "réng rán", "dāng rán", "guǒ rán"],
-          "word_hints": {"赢": "yíng"}
+          "options": [
+            "竟然",
+            "仍然",
+            "当然",
+            "果然"
+          ],
+          "option_pinyin": [
+            "jìng rán",
+            "réng rán",
+            "dāng rán",
+            "guǒ rán"
+          ],
+          "word_hints": {
+            "赢": "yíng"
+          }
         },
         {
           "question": "Choose the correct use of 竟然.",
@@ -298,14 +358,27 @@
             "Jìng rán tā yī cì jiù huò dé le chéng gōng.",
             "Tā yī cì huò dé le jìng rán chéng gōng."
           ],
-          "word_hints": {"获得": "huò dé", "成功": "chéng gōng"}
+          "word_hints": {
+            "获得": "huò dé",
+            "成功": "chéng gōng"
+          }
         },
         {
           "question": "他 _____ 放弃了，大家都很失望。",
           "type": "multiple_choice",
           "correct": "竟然",
-          "options": ["竟然", "仍然", "确实", "往往"],
-          "option_pinyin": ["jìng rán", "réng rán", "què shí", "wǎng wǎng"],
+          "options": [
+            "竟然",
+            "仍然",
+            "确实",
+            "往往"
+          ],
+          "option_pinyin": [
+            "jìng rán",
+            "réng rán",
+            "què shí",
+            "wǎng wǎng"
+          ],
           "word_hints": {}
         },
         {
@@ -318,16 +391,35 @@
             "Worried about a condition",
             "Indifferent to the result"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "她失败了这么多次，_____ 还是坚持下来了，真的很勇敢。",
           "type": "multiple_choice",
           "correct": "竟然",
-          "options": ["竟然", "从来", "确实", "普遍"],
-          "option_pinyin": ["jìng rán", "cóng lái", "què shí", "pǔ biàn"],
-          "word_hints": {"失败": "shī bài", "坚持": "jiān chí", "勇敢": "yǒng gǎn"}
+          "options": [
+            "竟然",
+            "从来",
+            "确实",
+            "普遍"
+          ],
+          "option_pinyin": [
+            "jìng rán",
+            "cóng lái",
+            "què shí",
+            "pǔ biàn"
+          ],
+          "word_hints": {
+            "失败": "shī bài",
+            "坚持": "jiān chí",
+            "勇敢": "yǒng gǎn"
+          }
         }
       ]
     },
@@ -352,8 +444,18 @@
           "question": "他 _____ 了今年的最佳员工奖。",
           "type": "multiple_choice",
           "correct": "获得",
-          "options": ["获得", "赢", "坚持", "进行"],
-          "option_pinyin": ["huò dé", "yíng", "jiān chí", "jìn xíng"],
+          "options": [
+            "获得",
+            "赢",
+            "坚持",
+            "进行"
+          ],
+          "option_pinyin": [
+            "huò dé",
+            "yíng",
+            "jiān chí",
+            "jìn xíng"
+          ],
           "word_hints": {}
         },
         {
@@ -372,15 +474,29 @@
             "Tōng guò nǔ lì tā chéng gōng le huò dé.",
             "Tā nǔ lì huò dé tōng guò le chéng gōng."
           ],
-          "word_hints": {"成功": "chéng gōng"}
+          "word_hints": {
+            "成功": "chéng gōng"
+          }
         },
         {
           "question": "即使失败多次，他也 _____ 了宝贵的经验。",
           "type": "multiple_choice",
           "correct": "获得",
-          "options": ["获得", "失败", "赢", "重视"],
-          "option_pinyin": ["huò dé", "shī bài", "yíng", "zhòng shì"],
-          "word_hints": {"失败": "shī bài"}
+          "options": [
+            "获得",
+            "失败",
+            "赢",
+            "重视"
+          ],
+          "option_pinyin": [
+            "huò dé",
+            "shī bài",
+            "yíng",
+            "zhòng shì"
+          ],
+          "word_hints": {
+            "失败": "shī bài"
+          }
         },
         {
           "question": "获得 is typically used with which type of object?",
@@ -392,16 +508,34 @@
             "People",
             "Places"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "她坚持到底，_____ 了她渴望的结果。",
           "type": "multiple_choice",
           "correct": "获得",
-          "options": ["获得", "进行", "失败", "竟然"],
-          "option_pinyin": ["huò dé", "jìn xíng", "shī bài", "jìng rán"],
-          "word_hints": {"坚持": "jiān chí", "结果": "jié guǒ"}
+          "options": [
+            "获得",
+            "进行",
+            "失败",
+            "竟然"
+          ],
+          "option_pinyin": [
+            "huò dé",
+            "jìn xíng",
+            "shī bài",
+            "jìng rán"
+          ],
+          "word_hints": {
+            "坚持": "jiān chí",
+            "结果": "jié guǒ"
+          }
         }
       ]
     }
@@ -426,106 +560,220 @@
       "question": "What does 坚持 mean?",
       "type": "multiple_choice",
       "correct": "To persist; to persevere",
-      "options": ["To persist; to persevere", "To win", "To obtain", "To fail"],
-      "word_hints": {"坚持": "jiān chí"}
+      "options": [
+        "To persist; to persevere",
+        "To win",
+        "To obtain",
+        "To fail"
+      ],
+      "word_hints": {
+        "坚持": "jiān chí"
+      }
     },
     {
       "question": "Which word means 'brave; courageous'?",
       "type": "multiple_choice",
       "correct": "勇敢",
-      "options": ["勇敢", "积极", "重视", "竟然"],
-      "word_hints": {"勇敢": "yǒng gǎn", "积极": "jī jí", "重视": "zhòng shì", "竟然": "jìng rán"}
+      "options": [
+        "勇敢",
+        "积极",
+        "重视",
+        "竟然"
+      ],
+      "word_hints": {
+        "勇敢": "yǒng gǎn",
+        "积极": "jī jí",
+        "重视": "zhòng shì",
+        "竟然": "jìng rán"
+      }
     },
     {
       "question": "What does 获得 mean?",
       "type": "multiple_choice",
       "correct": "To obtain; to achieve; to gain",
-      "options": ["To obtain; to achieve; to gain", "To win", "To fail", "To carry out"],
-      "word_hints": {"获得": "huò dé"}
+      "options": [
+        "To obtain; to achieve; to gain",
+        "To win",
+        "To fail",
+        "To carry out"
+      ],
+      "word_hints": {
+        "获得": "huò dé"
+      }
     },
     {
       "question": "What does 赢 mean?",
       "type": "multiple_choice",
       "correct": "To win; to beat",
-      "options": ["To win; to beat", "To fail", "To obtain", "To persist"],
-      "word_hints": {"赢": "yíng"}
+      "options": [
+        "To win; to beat",
+        "To fail",
+        "To obtain",
+        "To persist"
+      ],
+      "word_hints": {
+        "赢": "yíng"
+      }
     },
     {
       "question": "Which word means 'to fail; failure'?",
       "type": "multiple_choice",
       "correct": "失败",
-      "options": ["失败", "成功", "赢", "获得"],
-      "word_hints": {"失败": "shī bài", "成功": "chéng gōng", "赢": "yíng", "获得": "huò dé"}
+      "options": [
+        "失败",
+        "成功",
+        "赢",
+        "获得"
+      ],
+      "word_hints": {
+        "失败": "shī bài",
+        "成功": "chéng gōng",
+        "赢": "yíng",
+        "获得": "huò dé"
+      }
     },
     {
       "question": "What does 竟然 mean?",
       "type": "multiple_choice",
       "correct": "Unexpectedly; to one's surprise",
-      "options": ["Unexpectedly; to one's surprise", "Still", "Indeed", "Usually"],
-      "word_hints": {"竟然": "jìng rán"}
+      "options": [
+        "Unexpectedly; to one's surprise",
+        "Still",
+        "Indeed",
+        "Usually"
+      ],
+      "word_hints": {
+        "竟然": "jìng rán"
+      }
     },
     {
       "question": "What does 重视 mean?",
       "type": "multiple_choice",
       "correct": "To attach importance to; to value",
-      "options": ["To attach importance to; to value", "To obtain", "To carry out", "To proceed"],
-      "word_hints": {"重视": "zhòng shì"}
+      "options": [
+        "To attach importance to; to value",
+        "To obtain",
+        "To carry out",
+        "To proceed"
+      ],
+      "word_hints": {
+        "重视": "zhòng shì"
+      }
     },
     {
       "question": "Which word means 'to carry out; to conduct; to proceed'?",
       "type": "multiple_choice",
       "correct": "进行",
-      "options": ["进行", "获得", "坚持", "赢"],
-      "word_hints": {"进行": "jìn xíng", "获得": "huò dé", "坚持": "jiān chí", "赢": "yíng"}
+      "options": [
+        "进行",
+        "获得",
+        "坚持",
+        "赢"
+      ],
+      "word_hints": {
+        "进行": "jìn xíng",
+        "获得": "huò dé",
+        "坚持": "jiān chí",
+        "赢": "yíng"
+      }
     },
     {
       "question": "What does 结果 mean?",
       "type": "multiple_choice",
       "correct": "Result; outcome; finally",
-      "options": ["Result; outcome; finally", "Purpose", "Process", "Effort"],
-      "word_hints": {"结果": "jié guǒ"}
+      "options": [
+        "Result; outcome; finally",
+        "Purpose",
+        "Process",
+        "Effort"
+      ],
+      "word_hints": {
+        "结果": "jié guǒ"
+      }
     },
     {
       "question": "What does 目的 mean?",
       "type": "multiple_choice",
       "correct": "Purpose; goal; objective",
-      "options": ["Purpose; goal; objective", "Result", "Process", "Method"],
-      "word_hints": {"目的": "mù dì"}
+      "options": [
+        "Purpose; goal; objective",
+        "Result",
+        "Process",
+        "Method"
+      ],
+      "word_hints": {
+        "目的": "mù dì"
+      }
     },
     {
       "question": "Fill in: _____ 失败多次，他也坚持到底。",
       "type": "multiple_choice",
       "correct": "即使",
-      "options": ["即使", "只要", "如果", "既然"],
-      "word_hints": {"失败": "shī bài", "坚持": "jiān chí"}
+      "options": [
+        "即使",
+        "只要",
+        "如果",
+        "既然"
+      ],
+      "word_hints": {
+        "失败": "shī bài",
+        "坚持": "jiān chí"
+      }
     },
     {
       "question": "What does 即使...也... mean?",
       "type": "multiple_choice",
       "correct": "Even if...still...",
-      "options": ["Even if...still...", "As long as...then...", "If...then...", "Since...then..."],
+      "options": [
+        "Even if...still...",
+        "As long as...then...",
+        "If...then...",
+        "Since...then..."
+      ],
       "word_hints": {}
     },
     {
       "question": "Choose the correct use of 竟然.",
       "type": "multiple_choice",
       "correct": "她竟然赢了第一名！",
-      "options": ["她竟然赢了第一名！", "她赢了竟然第一名！", "竟然赢了她第一名！", "她赢竟然了第一名！"],
-      "word_hints": {"赢": "yíng"}
+      "options": [
+        "她竟然赢了第一名！",
+        "她赢了竟然第一名！",
+        "竟然赢了她第一名！",
+        "她赢竟然了第一名！"
+      ],
+      "word_hints": {
+        "赢": "yíng"
+      }
     },
     {
       "question": "What does 获得成功 mean?",
       "type": "multiple_choice",
       "correct": "To achieve success",
-      "options": ["To achieve success", "To obtain a prize", "To fail bravely", "To carry out a plan"],
-      "word_hints": {"获得": "huò dé", "成功": "chéng gōng"}
+      "options": [
+        "To achieve success",
+        "To obtain a prize",
+        "To fail bravely",
+        "To carry out a plan"
+      ],
+      "word_hints": {
+        "获得": "huò dé",
+        "成功": "chéng gōng"
+      }
     },
     {
       "question": "What does the phrase 坚持到底 mean?",
       "type": "multiple_choice",
       "correct": "To persist to the end; to see it through",
-      "options": ["To persist to the end; to see it through", "To give up at the end", "To fail bravely", "To achieve suddenly"],
-      "word_hints": {"坚持": "jiān chí"}
+      "options": [
+        "To persist to the end; to see it through",
+        "To give up at the end",
+        "To fail bravely",
+        "To achieve suddenly"
+      ],
+      "word_hints": {
+        "坚持": "jiān chí"
+      }
     },
     {
       "question": "What does 即使 introduce in a sentence?",
@@ -561,21 +809,38 @@
         "Failure is always bad",
         "Persistence defeats failure"
       ],
-      "word_hints": {"失败": "shī bài", "成功": "chéng gōng"}
+      "word_hints": {
+        "失败": "shī bài",
+        "成功": "chéng gōng"
+      }
     },
     {
       "question": "What does 积极 mean?",
       "type": "multiple_choice",
       "correct": "Active; positive; enthusiastic",
-      "options": ["Active; positive; enthusiastic", "Brave", "Unexpected", "Persistent"],
-      "word_hints": {"积极": "jī jí"}
+      "options": [
+        "Active; positive; enthusiastic",
+        "Brave",
+        "Unexpected",
+        "Persistent"
+      ],
+      "word_hints": {
+        "积极": "jī jí"
+      }
     },
     {
       "question": "What does the phrase 勇敢面对 mean?",
       "type": "multiple_choice",
       "correct": "To face bravely",
-      "options": ["To face bravely", "To win unexpectedly", "To carry out persistently", "To obtain success"],
-      "word_hints": {"勇敢": "yǒng gǎn"}
+      "options": [
+        "To face bravely",
+        "To win unexpectedly",
+        "To carry out persistently",
+        "To obtain success"
+      ],
+      "word_hints": {
+        "勇敢": "yǒng gǎn"
+      }
     }
   ],
   "dialogues": [
@@ -584,8 +849,16 @@
       "title": "After Losing a Competition",
       "title_chinese": "比赛失败后",
       "speakers": {
-        "A": {"name": "教练", "role": "教练", "gender": "male"},
-        "B": {"name": "小明", "role": "运动员", "gender": "male"}
+        "A": {
+          "name": "教练",
+          "role": "教练",
+          "gender": "male"
+        },
+        "B": {
+          "name": "但丁",
+          "role": "运动员",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -637,15 +910,23 @@
       "title": "A Surprising Achievement",
       "title_chinese": "意外的成功",
       "speakers": {
-        "A": {"name": "同事甲", "role": "同事", "gender": "female"},
-        "B": {"name": "同事乙", "role": "同事", "gender": "male"}
+        "A": {
+          "name": "同事甲",
+          "role": "同事",
+          "gender": "female"
+        },
+        "B": {
+          "name": "同事乙",
+          "role": "同事",
+          "gender": "male"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "你听说了吗？小李竟然获得了这次比赛的第一名！",
-          "pinyin": "Nǐ tīng shuō le ma? Xiǎo Lǐ jìng rán huò dé le zhè cì bǐ sài de dì yī míng!",
-          "english": "Did you hear? Xiao Li surprisingly won first place in this competition!"
+          "chinese": "你听说了吗？加缪竟然获得了这次比赛的第一名！",
+          "pinyin": "Nǐ tīng shuō le ma? Jiā Móu jìng rán huò dé le zhè cì bǐ sài de dì yī míng!",
+          "english": "Did you hear? Jia Mou surprisingly won first place in this competition!"
         },
         {
           "speaker": "B",
@@ -673,9 +954,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "说得对，坚持就是胜利，小李是我们的榜样！",
-          "pinyin": "Shuō de duì, jiān chí jiù shì shèng lì, Xiǎo Lǐ shì wǒ men de bǎng yàng!",
-          "english": "Well said. Persistence is victory. Xiao Li is our role model!"
+          "chinese": "说得对，坚持就是胜利，加缪是我们的榜样！",
+          "pinyin": "Shuō de duì, jiān chí jiù shì shèng lì, Jiā Móu shì wǒ men de bǎng yàng!",
+          "english": "Well said. Persistence is victory. Jia Mou is our role model!"
         }
       ]
     }

@@ -4,6 +4,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import VocabularySection from '../components/VocabularySection';
 import DialogueSection from '../components/DialogueSection';
 import GrammarSection from '../components/GrammarSection';
+import AvatarCharacter from '../components/AvatarCharacter';
+import { getAvatarForLesson } from '../config/lessonAvatarMap';
 
 import lesson1 from '../data/hsk1/hsk1_lesson_1.json';
 import lesson2 from '../data/hsk1/hsk1_lesson_2.json';
@@ -153,6 +155,7 @@ export default function LessonDetailScreen({
 }) {
   const levelMap = LESSONS_BY_LEVEL[levelId] || LESSONS;
   const lesson = levelMap[lessonId];
+  const avatarId = lesson ? getAvatarForLesson(lesson.topic, lesson.topic_chinese) : 'eileen';
   const [openSection, setOpenSection] = useState(null); // 'words' | 'sentences' | 'grammar' | null
 
   const toggleSection = (key) => setOpenSection(prev => prev === key ? null : key);
@@ -194,6 +197,7 @@ export default function LessonDetailScreen({
       >
         {/* Title card */}
         <View style={styles.titleCard}>
+          <AvatarCharacter avatarId={avatarId} expression="idle" size={88} />
           <Text style={styles.topicChinese}>{lesson.topic_chinese}</Text>
           <Text style={styles.topicEnglish}>{lesson.topic}</Text>
           <Text style={styles.topicMeta}>{lesson.vocabulary?.length || 0} words · {lesson.dialogues?.length || 0} dialogues</Text>
@@ -285,7 +289,7 @@ export default function LessonDetailScreen({
         )}
         {openSection === 'dialogue' && (
           <View style={styles.expandedSection}>
-            <DialogueSection dialogues={lesson.dialogues || []} lessonNumber={lesson.lesson} levelId={levelId} />
+            <DialogueSection dialogues={lesson.dialogues || []} lessonNumber={lesson.lesson} levelId={levelId} avatarId={avatarId} />
           </View>
         )}
         {openSection === 'grammar' && (

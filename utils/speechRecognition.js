@@ -106,3 +106,4 @@ export function calculateAccuracy(transcribed, expected) {
 
   return Math.round((matches / e.length) * 100);
 }
+

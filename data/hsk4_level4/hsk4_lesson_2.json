@@ -204,9 +204,21 @@
           "question": "他们发生了误会，_____ 还是好朋友。",
           "type": "multiple_choice",
           "correct": "却",
-          "options": ["却", "所以", "因为", "于是"],
-          "option_pinyin": ["què", "suǒ yǐ", "yīn wèi", "yú shì"],
-          "word_hints": {"误会": "wù huì"}
+          "options": [
+            "却",
+            "所以",
+            "因为",
+            "于是"
+          ],
+          "option_pinyin": [
+            "què",
+            "suǒ yǐ",
+            "yīn wèi",
+            "yú shì"
+          ],
+          "word_hints": {
+            "误会": "wù huì"
+          }
         },
         {
           "question": "Choose the sentence where 却 is used correctly.",
@@ -224,31 +236,68 @@
             "Tā bào qiàn le, yǒu yì gèng shēn le què.",
             "Tā bào qiàn què le, yǒu yì gèng shēn le."
           ],
-          "word_hints": {"抱歉": "bào qiàn", "友谊": "yǒu yì"}
+          "word_hints": {
+            "抱歉": "bào qiàn",
+            "友谊": "yǒu yì"
+          }
         },
         {
           "question": "她没有信心，_____ 坚持下去了。",
           "type": "multiple_choice",
           "correct": "却",
-          "options": ["却", "而且", "不仅", "因此"],
-          "option_pinyin": ["què", "ér qiě", "bù jǐn", "yīn cǐ"],
-          "word_hints": {"信心": "xìn xīn"}
+          "options": [
+            "却",
+            "而且",
+            "不仅",
+            "因此"
+          ],
+          "option_pinyin": [
+            "què",
+            "ér qiě",
+            "bù jǐn",
+            "yīn cǐ"
+          ],
+          "word_hints": {
+            "信心": "xìn xīn"
+          }
         },
         {
           "question": "What does 却 indicate in a sentence?",
           "type": "multiple_choice",
           "correct": "An unexpected contrast",
-          "options": ["An unexpected contrast", "A cause and effect", "A condition", "An addition"],
-          "option_pinyin": ["", "", "", ""],
+          "options": [
+            "An unexpected contrast",
+            "A cause and effect",
+            "A condition",
+            "An addition"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "他道歉了，她 _____ 没有原谅他。",
           "type": "multiple_choice",
           "correct": "却",
-          "options": ["却", "也", "都", "还"],
-          "option_pinyin": ["què", "yě", "dōu", "hái"],
-          "word_hints": {"道歉": "dào qiàn"}
+          "options": [
+            "却",
+            "也",
+            "都",
+            "还"
+          ],
+          "option_pinyin": [
+            "què",
+            "yě",
+            "dōu",
+            "hái"
+          ],
+          "word_hints": {
+            "道歉": "dào qiàn"
+          }
         }
       ]
     },
@@ -273,8 +322,18 @@
           "question": "他 _____ 不对朋友说谎。",
           "type": "multiple_choice",
           "correct": "从来",
-          "options": ["从来", "经常", "有时", "偶尔"],
-          "option_pinyin": ["cóng lái", "jīng cháng", "yǒu shí", "ǒu ěr"],
+          "options": [
+            "从来",
+            "经常",
+            "有时",
+            "偶尔"
+          ],
+          "option_pinyin": [
+            "cóng lái",
+            "jīng cháng",
+            "yǒu shí",
+            "ǒu ěr"
+          ],
           "word_hints": {}
         },
         {
@@ -293,31 +352,67 @@
             "Tā wù huì cóng lái bù péng yǒu.",
             "Tā bù wù huì cóng lái péng yǒu."
           ],
-          "word_hints": {"误会": "wù huì"}
+          "word_hints": {
+            "误会": "wù huì"
+          }
         },
         {
           "question": "他们从来没有 _____ 联系。",
           "type": "multiple_choice",
           "correct": "中断",
-          "options": ["中断", "保持", "加强", "建立"],
-          "option_pinyin": ["zhōng duàn", "bǎo chí", "jiā qiáng", "jiàn lì"],
-          "word_hints": {"联系": "lián xì"}
+          "options": [
+            "中断",
+            "保持",
+            "加强",
+            "建立"
+          ],
+          "option_pinyin": [
+            "zhōng duàn",
+            "bǎo chí",
+            "jiā qiáng",
+            "jiàn lì"
+          ],
+          "word_hints": {
+            "联系": "lián xì"
+          }
         },
         {
           "question": "从来 is most commonly followed by:",
           "type": "multiple_choice",
           "correct": "不 or 没有",
-          "options": ["不 or 没有", "很 or 非常", "也 or 都", "已经 or 还"],
-          "option_pinyin": ["bù or méi yǒu", "hěn or fēi cháng", "yě or dōu", "yǐ jīng or hái"],
+          "options": [
+            "不 or 没有",
+            "很 or 非常",
+            "也 or 都",
+            "已经 or 还"
+          ],
+          "option_pinyin": [
+            "bù or méi yǒu",
+            "hěn or fēi cháng",
+            "yě or dōu",
+            "yǐ jīng or hái"
+          ],
           "word_hints": {}
         },
         {
           "question": "真正的朋友从来 _____ 在困难时离开你。",
           "type": "multiple_choice",
           "correct": "不会",
-          "options": ["不会", "会", "也会", "都会"],
-          "option_pinyin": ["bú huì", "huì", "yě huì", "dōu huì"],
-          "word_hints": {"友谊": "yǒu yì"}
+          "options": [
+            "不会",
+            "会",
+            "也会",
+            "都会"
+          ],
+          "option_pinyin": [
+            "bú huì",
+            "huì",
+            "yě huì",
+            "dōu huì"
+          ],
+          "word_hints": {
+            "友谊": "yǒu yì"
+          }
         }
       ]
     },
@@ -342,9 +437,21 @@
           "question": "朋友之间应该 _____ 诚实。",
           "type": "multiple_choice",
           "correct": "互相",
-          "options": ["互相", "共同", "一起", "分别"],
-          "option_pinyin": ["hù xiāng", "gòng tóng", "yī qǐ", "fēn bié"],
-          "word_hints": {"诚实": "chéng shí"}
+          "options": [
+            "互相",
+            "共同",
+            "一起",
+            "分别"
+          ],
+          "option_pinyin": [
+            "hù xiāng",
+            "gòng tóng",
+            "yī qǐ",
+            "fēn bié"
+          ],
+          "word_hints": {
+            "诚实": "chéng shí"
+          }
         },
         {
           "question": "Which sentence correctly uses 互相?",
@@ -362,15 +469,31 @@
             "Hù xiāng tā men gǔ lì, gòng tóng jìn bù.",
             "Tā men gǔ lì hù xiāng, gòng tóng jìn bù."
           ],
-          "word_hints": {"鼓励": "gǔ lì", "共同": "gòng tóng"}
+          "word_hints": {
+            "鼓励": "gǔ lì",
+            "共同": "gòng tóng"
+          }
         },
         {
           "question": "他们 _____ 联系，从来不中断友谊。",
           "type": "multiple_choice",
           "correct": "互相",
-          "options": ["互相", "自己", "单独", "各自"],
-          "option_pinyin": ["hù xiāng", "zì jǐ", "dān dú", "gè zì"],
-          "word_hints": {"联系": "lián xì", "友谊": "yǒu yì"}
+          "options": [
+            "互相",
+            "自己",
+            "单独",
+            "各自"
+          ],
+          "option_pinyin": [
+            "hù xiāng",
+            "zì jǐ",
+            "dān dú",
+            "gè zì"
+          ],
+          "word_hints": {
+            "联系": "lián xì",
+            "友谊": "yǒu yì"
+          }
         },
         {
           "question": "互相 can only be used when:",
@@ -382,16 +505,34 @@
             "Someone does an action in the future",
             "Someone does an action occasionally"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "朋友要 _____ 支持，这样友谊才能长久。",
           "type": "multiple_choice",
           "correct": "互相",
-          "options": ["互相", "努力", "经常", "已经"],
-          "option_pinyin": ["hù xiāng", "nǔ lì", "jīng cháng", "yǐ jīng"],
-          "word_hints": {"支持": "zhī chí", "友谊": "yǒu yì"}
+          "options": [
+            "互相",
+            "努力",
+            "经常",
+            "已经"
+          ],
+          "option_pinyin": [
+            "hù xiāng",
+            "nǔ lì",
+            "jīng cháng",
+            "yǐ jīng"
+          ],
+          "word_hints": {
+            "支持": "zhī chí",
+            "友谊": "yǒu yì"
+          }
         }
       ]
     }
@@ -416,57 +557,125 @@
       "question": "What does 诚实 mean?",
       "type": "multiple_choice",
       "correct": "Honest; honesty",
-      "options": ["Honest; honesty", "Friendly", "Mutual", "Brave"],
-      "word_hints": {"诚实": "chéng shí"}
+      "options": [
+        "Honest; honesty",
+        "Friendly",
+        "Mutual",
+        "Brave"
+      ],
+      "word_hints": {
+        "诚实": "chéng shí"
+      }
     },
     {
       "question": "Which word means 'confidence; faith'?",
       "type": "multiple_choice",
       "correct": "信心",
-      "options": ["信心", "联系", "友谊", "支持"],
-      "word_hints": {"信心": "xìn xīn", "联系": "lián xì", "友谊": "yǒu yì", "支持": "zhī chí"}
+      "options": [
+        "信心",
+        "联系",
+        "友谊",
+        "支持"
+      ],
+      "word_hints": {
+        "信心": "xìn xīn",
+        "联系": "lián xì",
+        "友谊": "yǒu yì",
+        "支持": "zhī chí"
+      }
     },
     {
       "question": "What does 联系 mean?",
       "type": "multiple_choice",
       "correct": "To contact; to keep in touch",
-      "options": ["To contact; to keep in touch", "To encourage", "To misunderstand", "To apologize"],
-      "word_hints": {"联系": "lián xì"}
+      "options": [
+        "To contact; to keep in touch",
+        "To encourage",
+        "To misunderstand",
+        "To apologize"
+      ],
+      "word_hints": {
+        "联系": "lián xì"
+      }
     },
     {
       "question": "Which word means 'mutually; each other'?",
       "type": "multiple_choice",
       "correct": "互相",
-      "options": ["互相", "共同", "友好", "诚实"],
-      "word_hints": {"互相": "hù xiāng", "共同": "gòng tóng", "友好": "yǒu hǎo", "诚实": "chéng shí"}
+      "options": [
+        "互相",
+        "共同",
+        "友好",
+        "诚实"
+      ],
+      "word_hints": {
+        "互相": "hù xiāng",
+        "共同": "gòng tóng",
+        "友好": "yǒu hǎo",
+        "诚实": "chéng shí"
+      }
     },
     {
       "question": "What does 友谊 mean?",
       "type": "multiple_choice",
       "correct": "Friendship",
-      "options": ["Friendship", "Friendly", "Confidence", "Misunderstanding"],
-      "word_hints": {"友谊": "yǒu yì"}
+      "options": [
+        "Friendship",
+        "Friendly",
+        "Confidence",
+        "Misunderstanding"
+      ],
+      "word_hints": {
+        "友谊": "yǒu yì"
+      }
     },
     {
       "question": "Which word means 'to encourage'?",
       "type": "multiple_choice",
       "correct": "鼓励",
-      "options": ["鼓励", "支持", "联系", "道歉"],
-      "word_hints": {"鼓励": "gǔ lì", "支持": "zhī chí", "联系": "lián xì", "道歉": "dào qiàn"}
+      "options": [
+        "鼓励",
+        "支持",
+        "联系",
+        "道歉"
+      ],
+      "word_hints": {
+        "鼓励": "gǔ lì",
+        "支持": "zhī chí",
+        "联系": "lián xì",
+        "道歉": "dào qiàn"
+      }
     },
     {
       "question": "What does 误会 mean?",
       "type": "multiple_choice",
       "correct": "Misunderstanding; to misunderstand",
-      "options": ["Misunderstanding; to misunderstand", "Apology", "Friendship", "Support"],
-      "word_hints": {"误会": "wù huì"}
+      "options": [
+        "Misunderstanding; to misunderstand",
+        "Apology",
+        "Friendship",
+        "Support"
+      ],
+      "word_hints": {
+        "误会": "wù huì"
+      }
     },
     {
       "question": "Which word means 'to apologize'?",
       "type": "multiple_choice",
       "correct": "道歉",
-      "options": ["道歉", "抱歉", "误会", "支持"],
-      "word_hints": {"道歉": "dào qiàn", "抱歉": "bào qiàn", "误会": "wù huì", "支持": "zhī chí"}
+      "options": [
+        "道歉",
+        "抱歉",
+        "误会",
+        "支持"
+      ],
+      "word_hints": {
+        "道歉": "dào qiàn",
+        "抱歉": "bào qiàn",
+        "误会": "wù huì",
+        "支持": "zhī chí"
+      }
     },
     {
       "question": "What is the difference between 道歉 and 抱歉?",
@@ -478,14 +687,24 @@
         "道歉 means friendship; 抱歉 means honesty",
         "道歉 is a noun; 抱歉 is a verb only"
       ],
-      "word_hints": {"道歉": "dào qiàn", "抱歉": "bào qiàn"}
+      "word_hints": {
+        "道歉": "dào qiàn",
+        "抱歉": "bào qiàn"
+      }
     },
     {
       "question": "What does 共同 mean?",
       "type": "multiple_choice",
       "correct": "Common; shared; together",
-      "options": ["Common; shared; together", "Mutual", "Friendly", "Honest"],
-      "word_hints": {"共同": "gòng tóng"}
+      "options": [
+        "Common; shared; together",
+        "Mutual",
+        "Friendly",
+        "Honest"
+      ],
+      "word_hints": {
+        "共同": "gòng tóng"
+      }
     },
     {
       "question": "Choose the correct sentence with 从来不.",
@@ -503,29 +722,58 @@
       "question": "Fill in the blank: 好朋友应该 _____ 鼓励。",
       "type": "multiple_choice",
       "correct": "互相",
-      "options": ["互相", "自己", "独自", "别人"],
-      "word_hints": {"鼓励": "gǔ lì"}
+      "options": [
+        "互相",
+        "自己",
+        "独自",
+        "别人"
+      ],
+      "word_hints": {
+        "鼓励": "gǔ lì"
+      }
     },
     {
       "question": "What does the phrase 保持联系 mean?",
       "type": "multiple_choice",
       "correct": "To keep in touch",
-      "options": ["To keep in touch", "To maintain friendship", "To support each other", "To apologize"],
-      "word_hints": {"联系": "lián xì"}
+      "options": [
+        "To keep in touch",
+        "To maintain friendship",
+        "To support each other",
+        "To apologize"
+      ],
+      "word_hints": {
+        "联系": "lián xì"
+      }
     },
     {
       "question": "What does 却 indicate?",
       "type": "multiple_choice",
       "correct": "An unexpected contrast",
-      "options": ["An unexpected contrast", "A result", "A condition", "An addition"],
+      "options": [
+        "An unexpected contrast",
+        "A result",
+        "A condition",
+        "An addition"
+      ],
       "word_hints": {}
     },
     {
       "question": "Which word means 'friendly; amicable'?",
       "type": "multiple_choice",
       "correct": "友好",
-      "options": ["友好", "友谊", "互相", "共同"],
-      "word_hints": {"友好": "yǒu hǎo", "友谊": "yǒu yì", "互相": "hù xiāng", "共同": "gòng tóng"}
+      "options": [
+        "友好",
+        "友谊",
+        "互相",
+        "共同"
+      ],
+      "word_hints": {
+        "友好": "yǒu hǎo",
+        "友谊": "yǒu yì",
+        "互相": "hù xiāng",
+        "共同": "gòng tóng"
+      }
     },
     {
       "question": "Which idiom means 'Adversity reveals true friendship'?",
@@ -543,15 +791,29 @@
       "question": "Fill in: 他们发生了误会，_____ 还是好朋友。",
       "type": "multiple_choice",
       "correct": "却",
-      "options": ["却", "所以", "因为", "而且"],
-      "word_hints": {"误会": "wù huì"}
+      "options": [
+        "却",
+        "所以",
+        "因为",
+        "而且"
+      ],
+      "word_hints": {
+        "误会": "wù huì"
+      }
     },
     {
       "question": "What does the phrase 道歉和好 mean?",
       "type": "multiple_choice",
       "correct": "To apologize and make up",
-      "options": ["To apologize and make up", "To keep in touch", "To support each other", "To make progress together"],
-      "word_hints": {"道歉": "dào qiàn"}
+      "options": [
+        "To apologize and make up",
+        "To keep in touch",
+        "To support each other",
+        "To make progress together"
+      ],
+      "word_hints": {
+        "道歉": "dào qiàn"
+      }
     },
     {
       "question": "Which cultural value does the proverb 在家靠父母，出门靠朋友 highlight?",
@@ -569,8 +831,15 @@
       "question": "What does 支持 mean?",
       "type": "multiple_choice",
       "correct": "To support; support",
-      "options": ["To support; support", "To encourage", "To contact", "To apologize"],
-      "word_hints": {"支持": "zhī chí"}
+      "options": [
+        "To support; support",
+        "To encourage",
+        "To contact",
+        "To apologize"
+      ],
+      "word_hints": {
+        "支持": "zhī chí"
+      }
     }
   ],
   "dialogues": [
@@ -579,14 +848,22 @@
       "title": "Making Up After a Misunderstanding",
       "title_chinese": "误会之后",
       "speakers": {
-        "A": {"name": "建国", "role": "朋友甲", "gender": "male"},
-        "B": {"name": "小梅", "role": "朋友乙", "gender": "female"}
+        "A": {
+          "name": "苏轼",
+          "role": "朋友甲",
+          "gender": "male"
+        },
+        "B": {
+          "name": "爱玲",
+          "role": "朋友乙",
+          "gender": "female"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "小梅，我知道上次的事情让你误会了，我真的很抱歉。",
-          "pinyin": "Xiǎo Méi, wǒ zhī dào shàng cì de shì qíng ràng nǐ wù huì le, wǒ zhēn de hěn bào qiàn.",
+          "chinese": "爱玲，我知道上次的事情让你误会了，我真的很抱歉。",
+          "pinyin": "Ài Líng, wǒ zhī dào shàng cì de shì qíng ràng nǐ wù huì le, wǒ zhēn de hěn bào qiàn.",
           "english": "Xiaomei, I know what happened last time caused a misunderstanding. I am truly sorry."
         },
         {
@@ -632,14 +909,22 @@
       "title": "Old Friends Reconnecting",
       "title_chinese": "老朋友重逢",
       "speakers": {
-        "A": {"name": "志远", "role": "老同学甲", "gender": "male"},
-        "B": {"name": "丽华", "role": "老同学乙", "gender": "female"}
+        "A": {
+          "name": "鲁迅",
+          "role": "老同学甲",
+          "gender": "male"
+        },
+        "B": {
+          "name": "爱玲",
+          "role": "老同学乙",
+          "gender": "female"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "丽华！好久不见，我们已经五年没联系了！",
-          "pinyin": "Lì Huá! Hǎo jiǔ bú jiàn, wǒ men yǐ jīng wǔ nián méi lián xì le!",
+          "chinese": "爱玲！好久不见，我们已经五年没联系了！",
+          "pinyin": "Ài Líng! Hǎo jiǔ bú jiàn, wǒ men yǐ jīng wǔ nián méi lián xì le!",
           "english": "Lihua! Long time no see. We haven't been in touch for five years!"
         },
         {

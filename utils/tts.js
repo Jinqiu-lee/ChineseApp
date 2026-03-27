@@ -22,6 +22,7 @@ const PHONEME_OVERRIDES = {
 // Each entry maps a multi-character string → array of [char, pinyin] pairs.
 // Use this for polyphonic characters whose reading depends on the word they appear in.
 // Default TTS reads 还 as hái (still/also) — override only "return" compounds to huán.
+// 不了 as a sentence-final particle is read as bù le (neutral tone), not bù liǎo.
 const COMPOUND_PHONEME_OVERRIDES = {
   '还书': [['还', 'huan2'], ['书', 'shu1']],
   '还钱': [['还', 'huan2'], ['钱', 'qian2']],
@@ -30,6 +31,7 @@ const COMPOUND_PHONEME_OVERRIDES = {
   '归还': [['归', 'gui1'], ['还', 'huan2']],
   '偿还': [['偿', 'chang2'], ['还', 'huan2']],
   '还款': [['还', 'huan2'], ['款', 'kuan3']],
+  '不了': [['不', 'bu4'], ['了', 'le0']],
 };
 
 function buildSSML(text) {
@@ -206,6 +208,84 @@ export async function speakPinyin(syllable, gender = 'female') {
     sound.setOnPlaybackStatusUpdate((s) => { if (s.didJustFinish) sound.unloadAsync(); });
   } catch (err) {
     console.error('speakPinyin error:', err);
+  }
+}
+
+// ── Avatar voice configs ─────────────────────────────────────────────────
+// Pitch range: -20 to +20 semitones. Rate range: 0.25–4.0 (1.0 = normal).
+// Each avatar is tuned to be clearly distinct from the others.
+const AVATAR_VOICE_CONFIG = {
+  // Li Bai — bright, fast, exclamatory poet: highest pitch + fastest rate
+  libai:  { ssmlGender: 'MALE',   pitch:  7,  speakingRate: 1.08 },
+  // Lu Xun — stern, blunt, deliberate: noticeably low pitch + slow
+  luxun:  { ssmlGender: 'MALE',   pitch: -5,  speakingRate: 0.80 },
+  // Eileen Chang — intimate, natural
+  eileen: { ssmlGender: 'FEMALE', pitch: -1,  speakingRate: 0.80 },
+  // Jane Austen
+  jane:   { ssmlGender: 'FEMALE', pitch:  2,  speakingRate: 0.95 },
+  // Camus — calm, even, measured: mildly low male + moderately slow
+  camus:    { ssmlGender: 'MALE',   pitch: -2,  speakingRate: 0.87 },
+  // Dante — deep, grave, solemn: lowest pitch + slowest male rate
+  dante:    { ssmlGender: 'MALE',   pitch: -8,  speakingRate: 0.76 },
+  // Elena Ferrante — soft, medium-low female, slow and thoughtful, intimate
+  elena:    { ssmlGender: 'FEMALE', pitch: -3,  speakingRate: 0.75 },
+  // Liu Cixin — calm, slightly deep male, emotionally restrained, vast
+  liucixin: { ssmlGender: 'MALE',   pitch: -4,  speakingRate: 0.82 },
+};
+
+// Speak text using the avatar's personalised voice profile.
+// Falls back to speakChinese() if the API key is missing or the call fails.
+export async function speakAsAvatar(text, avatarId = 'eileen') {
+  if (!GOOGLE_TTS_API_KEY || GOOGLE_TTS_API_KEY === 'YOUR_GOOGLE_CLOUD_API_KEY_HERE') {
+    return speakChinese(text);
+  }
+
+  const vc = AVATAR_VOICE_CONFIG[avatarId];
+  if (!vc) return speakChinese(text);
+
+  const cacheKey = `avatar_v4:${avatarId}:${text}`;
+
+  try {
+    let base64Audio = audioCache.get(cacheKey);
+
+    if (!base64Audio) {
+      const res = await fetch(
+        `https://texttospeech.googleapis.com/v1/text:synthesize?key=${GOOGLE_TTS_API_KEY}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            input: { ssml: buildSSML(text) },
+            voice: {
+              languageCode: 'zh-CN',
+              ssmlGender: vc.ssmlGender,
+            },
+            audioConfig: {
+              audioEncoding: 'MP3',
+              speakingRate: vc.speakingRate,
+              pitch: vc.pitch,
+            },
+          }),
+        },
+      );
+
+      const json = await res.json();
+      if (!json.audioContent) {
+        console.warn(`speakAsAvatar: API error for ${avatarId}, falling back:`, JSON.stringify(json));
+        return speakChinese(text);
+      }
+      base64Audio = json.audioContent;
+      audioCache.set(cacheKey, base64Audio);
+    }
+
+    await FileSystem.writeAsStringAsync(TMP_FILE, base64Audio, { encoding: 'base64' });
+    await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
+    const { sound } = await Audio.Sound.createAsync({ uri: TMP_FILE });
+    await sound.playAsync();
+    sound.setOnPlaybackStatusUpdate((s) => { if (s.didJustFinish) sound.unloadAsync(); });
+  } catch (err) {
+    console.warn('speakAsAvatar error, falling back to speakChinese:', err);
+    return speakChinese(text);
   }
 }
 

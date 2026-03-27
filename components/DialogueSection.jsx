@@ -1,6 +1,58 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
-import { speakChinese } from '../utils/tts';
+import { speakAsAvatar } from '../utils/tts';
+import AvatarCharacter from './AvatarCharacter';
+import { getAvatar } from '../config/avatarConfig';
+import {
+  getPairForDialogue,
+  shortName,
+  shouldPreserveDialogue,
+  swapDialogueLine,
+} from '../utils/applyAvatarNames';
+
+// Replaces dialogue speaker roles with the correct avatar pair for this dialogue's
+// position in the lesson. Dialogue 0 uses the primary pair, dialogue 1 the alternate
+// pair from the same group — so a lesson with 2 dialogues shows 4 distinct avatars.
+// Also replaces character names in chinese, pinyin, and english fields.
+// Family/medical dialogues are left unchanged.
+function replaceDialogueRoles(dialogue, primaryAvatarId, dialogueIndex = 0) {
+  if (shouldPreserveDialogue(dialogue)) return dialogue;
+
+  const [idA, idB] = getPairForDialogue(primaryAvatarId, dialogueIndex);
+  const avatarA = getAvatar(idA);
+  const avatarB = getAvatar(idB);
+
+  const nameA = shortName(avatarA.chineseName);
+  const nameB = shortName(avatarB.chineseName);
+
+  const origNameA = dialogue.speakers?.A?.name || '';
+  const origNameB = dialogue.speakers?.B?.name || '';
+
+  return {
+    ...dialogue,
+    lines: dialogue.lines.map(line => {
+      let l = swapDialogueLine(line, origNameA, nameA);
+      l = swapDialogueLine(l, origNameB, nameB);
+      return l;
+    }),
+    speakers: {
+      A: {
+        name: nameA,
+        role: avatarA.englishName,
+        gender: avatarA.gender,
+        isAvatar: true,
+        avatarId: idA,
+      },
+      B: {
+        name: nameB,
+        role: avatarB.englishName,
+        gender: avatarB.gender,
+        isAvatar: true,
+        avatarId: idB,
+      },
+    },
+  };
+}
 
 // ── Dialogue scene images — single consolidated file per level ───────────
 const IMAGES_BY_LEVEL = {
@@ -25,18 +77,24 @@ const PALETTE = {
   male:   { bubble: 'rgba(84,160,255,0.12)',  border: 'rgba(84,160,255,0.3)',  pinyin: '#54A0FF', badge: 'rgba(84,160,255,0.2)',  emoji: '👨' },
 };
 
-export default function DialogueSection({ dialogues = [], lessonNumber, levelId = 'hsk1' }) {
+export default function DialogueSection({ dialogues = [], lessonNumber, levelId = 'hsk1', avatarId = 'eileen' }) {
   return (
     <View style={styles.container}>
       <Text style={styles.sectionTitle}>💬 Dialogues ({dialogues.length})</Text>
-      {dialogues.map(dialogue => (
-        <DialogueCard key={dialogue.id} dialogue={dialogue} lessonNumber={lessonNumber} levelId={levelId} />
+      {dialogues.map((dialogue, idx) => (
+        <DialogueCard
+          key={dialogue.id}
+          dialogue={replaceDialogueRoles(dialogue, avatarId, idx)}
+          lessonNumber={lessonNumber}
+          levelId={levelId}
+          avatarId={avatarId}
+        />
       ))}
     </View>
   );
 }
 
-function DialogueCard({ dialogue, lessonNumber, levelId }) {
+function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
   const [showPinyin, setShowPinyin] = useState(false);
 
   const speakerA = dialogue.speakers?.A;
@@ -80,9 +138,15 @@ function DialogueCard({ dialogue, lessonNumber, levelId }) {
         {/* Speaker name cards */}
         {(speakerA || speakerB) && (
           <View style={styles.speakerRow}>
-            {speakerA && <SpeakerTag info={speakerA} pal={palA} />}
+            {speakerA && (speakerA.isAvatar
+              ? <AvatarSpeakerTag info={speakerA} pal={palA} avatarId={speakerA.avatarId} />
+              : <SpeakerTag info={speakerA} pal={palA} />
+            )}
             <Text style={styles.vsText}>vs</Text>
-            {speakerB && <SpeakerTag info={speakerB} pal={palB} />}
+            {speakerB && (speakerB.isAvatar
+              ? <AvatarSpeakerTag info={speakerB} pal={palB} avatarId={speakerB.avatarId} />
+              : <SpeakerTag info={speakerB} pal={palB} />
+            )}
           </View>
         )}
       </View>
@@ -96,9 +160,13 @@ function DialogueCard({ dialogue, lessonNumber, levelId }) {
           return (
             <View key={i} style={[styles.lineRow, isA ? styles.lineRowA : styles.lineRowB]}>
 
-              {/* Avatar badge */}
-              <View style={[styles.avatarBadge, { backgroundColor: pal.badge }]}>
-                <Text style={styles.avatarEmoji}>{pal.emoji}</Text>
+              {/* Avatar badge — avatar image for replaced roles, emoji for preserved */}
+              <View style={info?.isAvatar ? styles.avatarBadgeChar : styles.avatarBadge}>
+                {info?.isAvatar ? (
+                  <AvatarCharacter avatarId={info.avatarId} expression="neutral" size={48} />
+                ) : (
+                  <Text style={styles.avatarEmoji}>{pal.emoji}</Text>
+                )}
                 <Text style={styles.avatarName}>{info?.name || line.speaker}</Text>
               </View>
 
@@ -106,7 +174,10 @@ function DialogueCard({ dialogue, lessonNumber, levelId }) {
               <View style={[styles.bubble, { backgroundColor: pal.bubble, borderColor: pal.border }]}>
                 <View style={styles.bubbleTop}>
                   <Text style={styles.bubbleChinese}>{line.chinese}</Text>
-                  <TouchableOpacity onPress={() => speakChinese(line.chinese, info?.gender)} style={styles.speakBtn}>
+                  <TouchableOpacity
+                  onPress={() => speakAsAvatar(line.chinese, info?.avatarId || avatarId)}
+                  style={styles.speakBtn}
+                >
                     <Text style={styles.speakBtnText}>🔊</Text>
                   </TouchableOpacity>
                 </View>
@@ -131,6 +202,18 @@ function SpeakerTag({ info, pal }) {
       <Text style={styles.speakerTagEmoji}>{pal.emoji}</Text>
       <View>
         <Text style={[styles.speakerTagName, { color: pal.pinyin }]}>{info.name}</Text>
+        <Text style={styles.speakerTagRole}>{info.role}</Text>
+      </View>
+    </View>
+  );
+}
+
+function AvatarSpeakerTag({ info, pal, avatarId }) {
+  return (
+    <View style={[styles.speakerTag, styles.speakerTagAvatar, { borderColor: '#a29bfe' }]}>
+      <AvatarCharacter avatarId={avatarId} expression="neutral" size={36} />
+      <View>
+        <Text style={[styles.speakerTagName, { color: '#a29bfe' }]}>{info.name}</Text>
         <Text style={styles.speakerTagRole}>{info.role}</Text>
       </View>
     </View>
@@ -211,6 +294,7 @@ const styles = StyleSheet.create({
   speakerTagEmoji: { fontSize: 20 },
   speakerTagName:  { fontSize: 14, fontWeight: '800' },
   speakerTagRole:  { fontSize: 11, color: '#636e72' },
+  speakerTagAvatar: { backgroundColor: 'rgba(162,155,254,0.1)' },
 
   // Lines
   lines:    { padding: 14, gap: 12 },
@@ -218,7 +302,7 @@ const styles = StyleSheet.create({
   lineRowA: { flexDirection: 'row' },
   lineRowB: { flexDirection: 'row-reverse' },
 
-  // Avatar badge (replaces the old letter circle)
+  // Avatar badge (emoji variant — for student speaker B)
   avatarBadge: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -231,6 +315,14 @@ const styles = StyleSheet.create({
   },
   avatarEmoji: { fontSize: 20 },
   avatarName:  { fontSize: 10, fontWeight: '800', color: '#fff', marginTop: 2 },
+  // Avatar badge using AvatarCharacter image (for speaker A / avatar)
+  avatarBadgeChar: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexShrink: 0,
+    marginTop: 2,
+    width: 52,
+  },
 
   // Bubble
   bubble: {

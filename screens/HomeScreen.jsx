@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal } from 'react-native';
+import React, { useState, useEffect, useRef } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal, Animated } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import ConfettiCannon from 'react-native-confetti-cannon';
 import LevelChangeModal from '../components/LevelChangeModal';
+import AvatarCharacter from '../components/AvatarCharacter';
+import AvatarPicker from '../components/AvatarPicker';
+import useProgress from '../hooks/useProgress';
 
 const LEVEL_CONFIG = [
   { id: 'hsk1', number: 1, emoji: '🌱', title: 'Beginner',              subtitle: 'HSK 1', color: '#00D2D3' },
@@ -127,12 +132,106 @@ export default function HomeScreen({
   onRetakeTest,
   onFoundationsPinyinPress,
 }) {
+  const { xp, streak } = useProgress();
+
   const [showMenu, setShowMenu] = useState(false);
   const [selectedLevel, setSelectedLevel] = useState(
     () => returnLevelId ? LEVEL_CONFIG.find(l => l.id === returnLevelId) ?? null : null
   );
   const [showLevelChangeModal, setShowLevelChangeModal] = useState(false);
   const [foundationModal, setFoundationModal] = useState(null); // 'pinyin' | 'characters' | null
+  const [avatarId, setAvatarId] = useState('eileen');
+
+  const confettiRef = useRef(null);
+  const avatarBounce = useRef(new Animated.Value(1)).current;
+  const prevStreakRef = useRef(streak);
+
+  // Fire confetti + bounce when streak increases
+  useEffect(() => {
+    if (streak > prevStreakRef.current) {
+      confettiRef.current?.start();
+      Animated.sequence([
+        Animated.spring(avatarBounce, { toValue: 1.25, useNativeDriver: true }),
+        Animated.spring(avatarBounce, { toValue: 0.92, useNativeDriver: true }),
+        Animated.spring(avatarBounce, { toValue: 1.08, useNativeDriver: true }),
+        Animated.spring(avatarBounce, { toValue: 1.0,  useNativeDriver: true }),
+      ]).start();
+    }
+    prevStreakRef.current = streak;
+  }, [streak]);
+
+  useEffect(() => {
+    AsyncStorage.getItem('avatarId').then(val => { if (val) setAvatarId(val); }).catch(() => {});
+  }, []);
+
+  const handleSelectAvatar = (id) => {
+    setAvatarId(id);
+    AsyncStorage.setItem('avatarId', id).catch(() => {});
+  };
+
+  // Daily encouraging message — rotates by day of week, one per avatar personality
+  const DAILY_MESSAGES = {
+    eileen: [
+      "Some stories are worth telling twice\u2026 start yours again today.",
+      "Perhaps learning is the only thing that truly stays with us.",
+      "A little melancholy, a little beauty \u2014 that\u2019s a good study day.",
+      "Words, once learned, become a part of you forever.",
+      "The world outside is rushing. In here, take your time.",
+      "Something about today feels like it\u2019s meant for quiet learning.",
+      "Even half a lesson is more than none at all.",
+    ],
+    libai: [
+      "The moon is bright \u2014 perfect for learning something new! \uD83C\uDF15",
+      "A thousand miles begin with one character. Let\u2019s go!",
+      "Wine and poetry can wait \u2014 first, one more lesson! \uD83C\uDF77",
+      "Even rivers flow one wave at a time. Study on!",
+      "The mountains don\u2019t rush, and neither do we. But we do study! \u26F0\uFE0F",
+      "Stars appear one by one \u2014 like the words you\u2019re learning. \u2728",
+      "Today the wind is good. A fine day for adventure and Chinese!",
+    ],
+    luxun: [
+      "The only way forward is through the work.",
+      "Others complain about difficulty. You just study.",
+      "Reality doesn\u2019t wait. Neither should you.",
+      "No lesson is wasted, even if it feels that way.",
+      "Progress is quiet. Excuses are loud.",
+      "You studied yesterday. That\u2019s the only reason to study again today.",
+      "The path is made by walking it. Keep walking.",
+    ],
+    dante: [
+      "Through knowledge, we ascend. Begin today\u2019s lesson.",
+      "Every great journey starts with a single purposeful step.",
+      "The structured mind learns well. Be structured.",
+      "Wisdom is built lesson by lesson. Do not skip a day.",
+      "What you learn today becomes the guide for tomorrow.",
+      "In the pursuit of mastery, there are no shortcuts \u2014 only steps.",
+      "Your future self will thank you for the discipline you show today.",
+    ],
+    camus: [
+      "You don\u2019t need a reason to learn. Showing up is enough.",
+      "One lesson. That\u2019s all. Then the rest takes care of itself.",
+      "Life is uncertain. Your progress, however, is in your hands.",
+      "There is quiet freedom in choosing to study today.",
+      "Small and steady. That\u2019s all it takes.",
+      "Today feels like a good day to understand one more thing.",
+      "The habit of learning is itself a kind of happiness.",
+    ],
+    jane: [
+      "It is a truth universally acknowledged \u2014 study is better with a good mood!",
+      "A little effort today makes for a very elegant tomorrow. \u2615",
+      "Practice makes perfect, and perfection makes for wonderful conversation.",
+      "What a fine occasion to impress oneself with one\u2019s own progress!",
+      "One does not simply skip a lesson without at least a twinge of guilt.",
+      "Today\u2019s lesson is the foundation of tomorrow\u2019s wit. Shall we begin?",
+      "Even the best parties are improved by someone who speaks Chinese. \uD83C\uDF89",
+    ],
+  };
+
+  const todayMessage = (() => {
+    const day = new Date().getDay(); // 0 (Sun) – 6 (Sat)
+    const msgs = DAILY_MESSAGES[avatarId] || DAILY_MESSAGES.eileen;
+    return msgs[day];
+  })();
 
   const FOUNDATION_CONTENT = {
     pinyin: {
@@ -341,6 +440,43 @@ export default function HomeScreen({
             </Text>
           </View>
         </View>
+
+        {/* Avatar + Picker */}
+        <View style={styles.avatarSection}>
+          <Animated.View style={{ transform: [{ scale: avatarBounce }] }}>
+            <AvatarCharacter avatarId={avatarId} expression="idle" size={160} />
+          </Animated.View>
+
+          {/* Daily message */}
+          <View style={styles.avatarMessageBubble}>
+            <Text style={styles.avatarMessageText}>{todayMessage}</Text>
+          </View>
+
+          {/* Streak + XP row */}
+          <View style={styles.statsRow}>
+            <View style={styles.statBadge}>
+              <Text style={styles.statBadgeIcon}>🔥</Text>
+              <Text style={styles.statBadgeValue}>{streak}</Text>
+              <Text style={styles.statBadgeLabel}>day streak</Text>
+            </View>
+            <View style={[styles.statBadge, styles.statBadgeXP]}>
+              <Text style={styles.statBadgeIcon}>⭐</Text>
+              <Text style={styles.statBadgeValue}>{xp}</Text>
+              <Text style={styles.statBadgeLabel}>XP</Text>
+            </View>
+          </View>
+
+          <AvatarPicker selectedId={avatarId} onSelect={handleSelectAvatar} />
+        </View>
+
+        {/* Confetti — fires on streak increase */}
+        <ConfettiCannon
+          ref={confettiRef}
+          count={80}
+          origin={{ x: 200, y: 0 }}
+          autoStart={false}
+          fadeOut
+        />
 
         {/* Chinese Foundations */}
         <View style={styles.section}>
@@ -613,7 +749,46 @@ const styles = StyleSheet.create({
   container:       { flex: 1 },
   contentContainer:{ padding: 20 },
 
-  header:          { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 28 },
+  header:          { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 },
+  avatarSection:   { alignItems: 'center', marginBottom: 24, gap: 12 },
+  avatarMessageBubble: {
+    backgroundColor: 'rgba(162,155,254,0.1)',
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: 'rgba(162,155,254,0.25)',
+    paddingHorizontal: 18,
+    paddingVertical: 10,
+    maxWidth: 300,
+  },
+  avatarMessageText: {
+    color: '#dfe6e9',
+    fontSize: 13,
+    fontStyle: 'italic',
+    textAlign: 'center',
+    lineHeight: 19,
+  },
+  statsRow: {
+    flexDirection: 'row',
+    gap: 12,
+  },
+  statBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    backgroundColor: 'rgba(255,107,107,0.1)',
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: 'rgba(255,107,107,0.3)',
+    paddingHorizontal: 14,
+    paddingVertical: 7,
+  },
+  statBadgeXP: {
+    backgroundColor: 'rgba(255,215,0,0.1)',
+    borderColor: 'rgba(255,215,0,0.3)',
+  },
+  statBadgeIcon:  { fontSize: 16 },
+  statBadgeValue: { fontSize: 17, fontWeight: '800', color: '#fff' },
+  statBadgeLabel: { fontSize: 11, color: '#b2bec3', fontWeight: '600' },
   greeting:        { fontSize: 28, fontWeight: '900', color: '#fff', marginBottom: 4 },
   subtitle:        { fontSize: 14, color: '#636e72' },
   levelBadge:      { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 12, paddingVertical: 8, borderRadius: 12, borderWidth: 2, gap: 6 },

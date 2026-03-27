@@ -12,8 +12,8 @@
       "pinyin": "chū chāi",
       "english": "To go on a business trip",
       "part_of_speech": "verb",
-      "example":"我明天去北京出差",
-      "translation":"I will go on a business trip in Beijing tomorrow"
+      "example": "我明天去北京出差",
+      "translation": "I will go on a business trip in Beijing tomorrow"
     },
     {
       "id": "hsk5_l1_02",
@@ -21,8 +21,8 @@
       "pinyin": "chū fā",
       "english": "To set off; to depart",
       "part_of_speech": "verb",
-      "example":"出发前，别忘了检查登机牌和护照。",
-      "translation":"Before setting off, don't forget to check your boarding pass and passport."
+      "example": "出发前，别忘了检查登机牌和护照。",
+      "translation": "Before setting off, don't forget to check your boarding pass and passport."
     },
     {
       "id": "hsk5_l1_03",
@@ -30,8 +30,8 @@
       "pinyin": "háng bān",
       "english": "Flight; scheduled flight",
       "part_of_speech": "noun",
-      "example":"你乘坐的航班号是什么？",
-      "translation":"What's the flight number that you're taking?"
+      "example": "你乘坐的航班号是什么？",
+      "translation": "What's the flight number that you're taking?"
     },
     {
       "id": "hsk5_l1_04",
@@ -39,8 +39,8 @@
       "pinyin": "chéng zuò",
       "english": "To ride; to take (a vehicle)",
       "part_of_speech": "verb",
-      "example":"你乘坐的航班号是什么？",
-      "translation":"What's the flight number that you're taking?"
+      "example": "你乘坐的航班号是什么？",
+      "translation": "What's the flight number that you're taking?"
     },
     {
       "id": "hsk5_l1_05",
@@ -211,9 +211,22 @@
           "question": "我去买登机牌，_____ 帮你问一下航班时间。",
           "type": "multiple_choice",
           "correct": "顺便",
-          "options": ["顺便", "虽然", "因此", "推迟"],
-          "option_pinyin": ["shùn biàn", "suī rán", "yīn cǐ", "tuī chí"],
-          "word_hints": {"登机牌": "dēng jī pái", "航班": "háng bān"}
+          "options": [
+            "顺便",
+            "虽然",
+            "因此",
+            "推迟"
+          ],
+          "option_pinyin": [
+            "shùn biàn",
+            "suī rán",
+            "yīn cǐ",
+            "tuī chí"
+          ],
+          "word_hints": {
+            "登机牌": "dēng jī pái",
+            "航班": "háng bān"
+          }
         },
         {
           "question": "Choose the sentence that uses 顺便 correctly.",
@@ -231,7 +244,9 @@
             "Tā chū chāi qù cān guān, shùn biàn le dāng dì de míng shèng.",
             "Tā shùn biàn, chū chāi qù cān guān le dāng dì de míng shèng."
           ],
-          "word_hints": {"出差": "chū chāi"}
+          "word_hints": {
+            "出差": "chū chāi"
+          }
         },
         {
           "question": "What does 顺便 indicate in a sentence?",
@@ -243,16 +258,34 @@
             "Expressing a condition",
             "Indicating a sequence of steps"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "她去导游公司预定行程，_____ 查看了签证要求。",
           "type": "multiple_choice",
           "correct": "顺便",
-          "options": ["顺便", "但是", "只要", "因为"],
-          "option_pinyin": ["shùn biàn", "dàn shì", "zhǐ yào", "yīn wèi"],
-          "word_hints": {"导游": "dǎo yóu", "签证": "qiān zhèng"}
+          "options": [
+            "顺便",
+            "但是",
+            "只要",
+            "因为"
+          ],
+          "option_pinyin": [
+            "shùn biàn",
+            "dàn shì",
+            "zhǐ yào",
+            "yīn wèi"
+          ],
+          "word_hints": {
+            "导游": "dǎo yóu",
+            "签证": "qiān zhèng"
+          }
         },
         {
           "question": "Which position does 顺便 go in the sentence?",
@@ -264,7 +297,12 @@
             "After the object of the sentence",
             "At the end of the sentence"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -290,17 +328,42 @@
           "question": "飞机一小时后起飞，我们还 _____ 取登机牌吗？",
           "type": "multiple_choice",
           "correct": "来得及",
-          "options": ["来得及", "来不及", "推迟", "出发"],
-          "option_pinyin": ["lái de jí", "lái bù jí", "tuī chí", "chū fā"],
-          "word_hints": {"登机牌": "dēng jī pái"}
+          "options": [
+            "来得及",
+            "来不及",
+            "推迟",
+            "出发"
+          ],
+          "option_pinyin": [
+            "lái de jí",
+            "lái bù jí",
+            "tuī chí",
+            "chū fā"
+          ],
+          "word_hints": {
+            "登机牌": "dēng jī pái"
+          }
         },
         {
           "question": "签证还没申请，出发时间太近，我们 _____ 准备了。",
           "type": "multiple_choice",
           "correct": "来不及",
-          "options": ["来不及", "来得及", "顺便", "降落"],
-          "option_pinyin": ["lái bù jí", "lái de jí", "shùn biàn", "jiàng luò"],
-          "word_hints": {"签证": "qiān zhèng", "申请": "shēn qǐng"}
+          "options": [
+            "来不及",
+            "来得及",
+            "顺便",
+            "降落"
+          ],
+          "option_pinyin": [
+            "lái bù jí",
+            "lái de jí",
+            "shùn biàn",
+            "jiàng luò"
+          ],
+          "word_hints": {
+            "签证": "qiān zhèng",
+            "申请": "shēn qǐng"
+          }
         },
         {
           "question": "What does 来不及 mean?",
@@ -312,7 +375,12 @@
             "To arrive on time",
             "To postpone"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
@@ -331,15 +399,30 @@
             "Xiàn zài lái de jí chū fā hái gǎn shàng zhè tàng háng bān.",
             "Xiàn zài hái chū fā lái de jí zhè tàng háng bān gǎn shàng."
           ],
-          "word_hints": {"航班": "háng bān"}
+          "word_hints": {
+            "航班": "háng bān"
+          }
         },
         {
           "question": "导游说已经 _____ 改变路线了，必须走高速公路。",
           "type": "multiple_choice",
           "correct": "来不及",
-          "options": ["来不及", "来得及", "顺便", "出发"],
-          "option_pinyin": ["lái bù jí", "lái de jí", "shùn biàn", "chū fā"],
-          "word_hints": {"导游": "dǎo yóu", "高速公路": "gāo sù gōng lù"}
+          "options": [
+            "来不及",
+            "来得及",
+            "顺便",
+            "出发"
+          ],
+          "option_pinyin": [
+            "lái bù jí",
+            "lái de jí",
+            "shùn biàn",
+            "chū fā"
+          ],
+          "word_hints": {
+            "导游": "dǎo yóu",
+            "高速公路": "gāo sù gōng lù"
+          }
         }
       ]
     },
@@ -364,9 +447,21 @@
           "question": "因为导游生病了，这次旅游只能 _____ 了。",
           "type": "multiple_choice",
           "correct": "推迟",
-          "options": ["推迟", "出发", "降落", "迷路"],
-          "option_pinyin": ["tuī chí", "chū fā", "jiàng luò", "mí lù"],
-          "word_hints": {"导游": "dǎo yóu"}
+          "options": [
+            "推迟",
+            "出发",
+            "降落",
+            "迷路"
+          ],
+          "option_pinyin": [
+            "tuī chí",
+            "chū fā",
+            "jiàng luò",
+            "mí lù"
+          ],
+          "word_hints": {
+            "导游": "dǎo yóu"
+          }
         },
         {
           "question": "Choose the correct use of 推迟.",
@@ -396,16 +491,34 @@
             "To arrive early",
             "To speed up"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "他没来得及申请签证，所以只好把出差 _____ 了。",
           "type": "multiple_choice",
           "correct": "推迟",
-          "options": ["推迟", "降落", "迷路", "乘坐"],
-          "option_pinyin": ["tuī chí", "jiàng luò", "mí lù", "chéng zuò"],
-          "word_hints": {"签证": "qiān zhèng", "出差": "chū chāi"}
+          "options": [
+            "推迟",
+            "降落",
+            "迷路",
+            "乘坐"
+          ],
+          "option_pinyin": [
+            "tuī chí",
+            "jiàng luò",
+            "mí lù",
+            "chéng zuò"
+          ],
+          "word_hints": {
+            "签证": "qiān zhèng",
+            "出差": "chū chāi"
+          }
         },
         {
           "question": "Which structure is correct with 推迟?",
@@ -448,57 +561,120 @@
       "question": "What does 出差 mean?",
       "type": "multiple_choice",
       "correct": "To go on a business trip",
-      "options": ["To go on a business trip", "To travel for fun", "To get lost", "To depart"],
-      "word_hints": {"出差": "chū chāi"}
+      "options": [
+        "To go on a business trip",
+        "To travel for fun",
+        "To get lost",
+        "To depart"
+      ],
+      "word_hints": {
+        "出差": "chū chāi"
+      }
     },
     {
       "question": "Which word means 'boarding pass'?",
       "type": "multiple_choice",
       "correct": "登机牌",
-      "options": ["签证", "登机牌", "航班", "导游"],
-      "word_hints": {"签证": "qiān zhèng", "登机牌": "dēng jī pái", "航班": "háng bān", "导游": "dǎo yóu"}
+      "options": [
+        "签证",
+        "登机牌",
+        "航班",
+        "导游"
+      ],
+      "word_hints": {
+        "签证": "qiān zhèng",
+        "登机牌": "dēng jī pái",
+        "航班": "háng bān",
+        "导游": "dǎo yóu"
+      }
     },
     {
       "question": "What does 降落 mean?",
       "type": "multiple_choice",
       "correct": "To land; to descend",
-      "options": ["To land; to descend", "To take off", "To board", "To depart"],
-      "word_hints": {"降落": "jiàng luò"}
+      "options": [
+        "To land; to descend",
+        "To take off",
+        "To board",
+        "To depart"
+      ],
+      "word_hints": {
+        "降落": "jiàng luò"
+      }
     },
     {
       "question": "Which word means 'visa'?",
       "type": "multiple_choice",
       "correct": "签证",
-      "options": ["航班", "导游", "签证", "登机牌"],
-      "word_hints": {"签证": "qiān zhèng", "航班": "háng bān", "导游": "dǎo yóu", "登机牌": "dēng jī pái"}
+      "options": [
+        "航班",
+        "导游",
+        "签证",
+        "登机牌"
+      ],
+      "word_hints": {
+        "签证": "qiān zhèng",
+        "航班": "háng bān",
+        "导游": "dǎo yóu",
+        "登机牌": "dēng jī pái"
+      }
     },
     {
       "question": "What does 迷路 mean?",
       "type": "multiple_choice",
       "correct": "To get lost",
-      "options": ["To get lost", "To travel", "To ride a train", "To ask for help"],
-      "word_hints": {"迷路": "mí lù"}
+      "options": [
+        "To get lost",
+        "To travel",
+        "To ride a train",
+        "To ask for help"
+      ],
+      "word_hints": {
+        "迷路": "mí lù"
+      }
     },
     {
       "question": "Which word means 'highway; expressway'?",
       "type": "multiple_choice",
       "correct": "高速公路",
-      "options": ["大使馆", "高速公路", "乘坐", "出发"],
-      "word_hints": {"高速公路": "gāo sù gōng lù", "大使馆": "dà shǐ guǎn"}
+      "options": [
+        "大使馆",
+        "高速公路",
+        "乘坐",
+        "出发"
+      ],
+      "word_hints": {
+        "高速公路": "gāo sù gōng lù",
+        "大使馆": "dà shǐ guǎn"
+      }
     },
     {
       "question": "What does 大使馆 mean?",
       "type": "multiple_choice",
       "correct": "Embassy",
-      "options": ["Hotel", "Embassy", "Airport", "Train station"],
-      "word_hints": {"大使馆": "dà shǐ guǎn"}
+      "options": [
+        "Hotel",
+        "Embassy",
+        "Airport",
+        "Train station"
+      ],
+      "word_hints": {
+        "大使馆": "dà shǐ guǎn"
+      }
     },
     {
       "question": "What does 航班 mean?",
       "type": "multiple_choice",
       "correct": "Flight; scheduled flight",
-      "options": ["Flight; scheduled flight", "Boarding pass", "Tour guide", "Visa"],
-      "word_hints": {"航班": "háng bān"}
+      "options": [
+        "Flight; scheduled flight",
+        "Boarding pass",
+        "Tour guide",
+        "Visa"
+      ],
+      "word_hints": {
+        "航班": "háng bān"
+      }
     },
     {
       "question": "What does 顺便 mean in a sentence?",
@@ -516,14 +692,26 @@
       "question": "Fill in the blank: 签证还没办，我们 _____ 赶上这次旅行了。",
       "type": "multiple_choice",
       "correct": "来不及",
-      "options": ["来不及", "来得及", "推迟", "顺便"],
-      "word_hints": {"签证": "qiān zhèng"}
+      "options": [
+        "来不及",
+        "来得及",
+        "推迟",
+        "顺便"
+      ],
+      "word_hints": {
+        "签证": "qiān zhèng"
+      }
     },
     {
       "question": "What does 来得及 mean?",
       "type": "multiple_choice",
       "correct": "There is still time",
-      "options": ["There is still time", "There is no time", "To be late", "To hurry up"],
+      "options": [
+        "There is still time",
+        "There is no time",
+        "To be late",
+        "To hurry up"
+      ],
       "word_hints": {}
     },
     {
@@ -536,62 +724,112 @@
         "航班由于天气，推迟被了。",
         "航班推迟，由于天气被了。"
       ],
-      "word_hints": {"航班": "háng bān"}
+      "word_hints": {
+        "航班": "háng bān"
+      }
     },
     {
       "question": "What does 乘坐 mean?",
       "type": "multiple_choice",
       "correct": "To ride; to take (a vehicle)",
-      "options": ["To ride; to take (a vehicle)", "To drive", "To fly", "To walk"],
-      "word_hints": {"乘坐": "chéng zuò"}
+      "options": [
+        "To ride; to take (a vehicle)",
+        "To drive",
+        "To fly",
+        "To walk"
+      ],
+      "word_hints": {
+        "乘坐": "chéng zuò"
+      }
     },
     {
       "question": "What does the phrase 旅行计划 mean?",
       "type": "multiple_choice",
       "correct": "Travel plan",
-      "options": ["Travel plan", "Flight schedule", "Tour guide fee", "Visa application"],
+      "options": [
+        "Travel plan",
+        "Flight schedule",
+        "Tour guide fee",
+        "Visa application"
+      ],
       "word_hints": {}
     },
     {
       "question": "Fill in the blank: 去机场前，他 _____ 在银行取了钱。",
       "type": "multiple_choice",
       "correct": "顺便",
-      "options": ["顺便", "推迟", "来不及", "降落"],
+      "options": [
+        "顺便",
+        "推迟",
+        "来不及",
+        "降落"
+      ],
       "word_hints": {}
     },
     {
       "question": "Which phrase means 'to apply for a visa'?",
       "type": "multiple_choice",
       "correct": "申请签证",
-      "options": ["申请签证", "顺利降落", "乘坐高铁", "出差归来"],
-      "word_hints": {"签证": "qiān zhèng"}
+      "options": [
+        "申请签证",
+        "顺利降落",
+        "乘坐高铁",
+        "出差归来"
+      ],
+      "word_hints": {
+        "签证": "qiān zhèng"
+      }
     },
     {
       "question": "What does 导游 mean?",
       "type": "multiple_choice",
       "correct": "Tour guide",
-      "options": ["Tour guide", "Flight attendant", "Taxi driver", "Hotel manager"],
-      "word_hints": {"导游": "dǎo yóu"}
+      "options": [
+        "Tour guide",
+        "Flight attendant",
+        "Taxi driver",
+        "Hotel manager"
+      ],
+      "word_hints": {
+        "导游": "dǎo yóu"
+      }
     },
     {
       "question": "China's high-speed train 复兴号 can reach a speed of up to:",
       "type": "multiple_choice",
       "correct": "350 km/h",
-      "options": ["350 km/h", "250 km/h", "180 km/h", "420 km/h"],
+      "options": [
+        "350 km/h",
+        "250 km/h",
+        "180 km/h",
+        "420 km/h"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does the phrase 出差归来 mean?",
       "type": "multiple_choice",
       "correct": "To return from a business trip",
-      "options": ["To return from a business trip", "To leave on a business trip", "To get lost on a trip", "To plan a business trip"],
-      "word_hints": {"出差": "chū chāi"}
+      "options": [
+        "To return from a business trip",
+        "To leave on a business trip",
+        "To get lost on a trip",
+        "To plan a business trip"
+      ],
+      "word_hints": {
+        "出差": "chū chāi"
+      }
     },
     {
       "question": "Which grammar pattern means 'while you're at it'?",
       "type": "multiple_choice",
       "correct": "顺便",
-      "options": ["顺便", "推迟", "来不及", "只好"],
+      "options": [
+        "顺便",
+        "推迟",
+        "来不及",
+        "只好"
+      ],
       "word_hints": {}
     }
   ],
@@ -601,8 +839,16 @@
       "title": "At the Airport",
       "title_chinese": "在机场",
       "speakers": {
-        "A": {"name": "建国", "role": "旅客", "gender": "male"},
-        "B": {"name": "小林", "role": "地勤人员", "gender": "female"}
+        "A": {
+          "name": "苏轼",
+          "role": "旅客",
+          "gender": "male"
+        },
+        "B": {
+          "name": "慈欣",
+          "role": "地勤人员",
+          "gender": "female"
+        }
       },
       "lines": [
         {
@@ -654,8 +900,16 @@
       "title": "Lost in a New City",
       "title_chinese": "在陌生城市迷路了",
       "speakers": {
-        "A": {"name": "小美", "role": "游客", "gender": "female"},
-        "B": {"name": "大叔", "role": "路人", "gender": "male"}
+        "A": {
+          "name": "伍尔夫",
+          "role": "游客",
+          "gender": "female"
+        },
+        "B": {
+          "name": "大叔",
+          "role": "路人",
+          "gender": "male"
+        }
       },
       "lines": [
         {

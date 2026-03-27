@@ -204,17 +204,44 @@
           "question": "_____ 气候变化，自然美景越来越少。",
           "type": "multiple_choice",
           "correct": "随着",
-          "options": ["随着", "由于", "通过", "因此"],
-          "option_pinyin": ["suí zhe", "yóu yú", "tōng guò", "yīn cǐ"],
-          "word_hints": {"气候": "qì hòu", "自然": "zì rán"}
+          "options": [
+            "随着",
+            "由于",
+            "通过",
+            "因此"
+          ],
+          "option_pinyin": [
+            "suí zhe",
+            "yóu yú",
+            "tōng guò",
+            "yīn cǐ"
+          ],
+          "word_hints": {
+            "气候": "qì hòu",
+            "自然": "zì rán"
+          }
         },
         {
           "question": "随着污染 _____ ，森林里的植物也受到了影响。",
           "type": "multiple_choice",
           "correct": "加重",
-          "options": ["加重", "减少", "改变", "散步"],
-          "option_pinyin": ["jiā zhòng", "jiǎn shǎo", "gǎi biàn", "sàn bù"],
-          "word_hints": {"污染": "wū rǎn", "森林": "sēn lín", "植物": "zhí wù"}
+          "options": [
+            "加重",
+            "减少",
+            "改变",
+            "散步"
+          ],
+          "option_pinyin": [
+            "jiā zhòng",
+            "jiǎn shǎo",
+            "gǎi biàn",
+            "sàn bù"
+          ],
+          "word_hints": {
+            "污染": "wū rǎn",
+            "森林": "sēn lín",
+            "植物": "zhí wù"
+          }
         },
         {
           "question": "Choose the correct sentence with 随着.",
@@ -232,7 +259,10 @@
             "Yè zi suí zhe wēn dù shēng gāo, biàn huáng le.",
             "Suí zhe yè zi biàn huáng, wēn dù shēng gāo le."
           ],
-          "word_hints": {"温度": "wēn dù", "叶子": "yè zi"}
+          "word_hints": {
+            "温度": "wēn dù",
+            "叶子": "yè zi"
+          }
         },
         {
           "question": "随着 introduces:",
@@ -244,16 +274,33 @@
             "A contrast",
             "A purpose"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "_____ 人们保护环境的意识提高，污染越来越少。",
           "type": "multiple_choice",
           "correct": "随着",
-          "options": ["随着", "否则", "即使", "虽然"],
-          "option_pinyin": ["suí zhe", "fǒu zé", "jí shǐ", "suī rán"],
-          "word_hints": {"污染": "wū rǎn"}
+          "options": [
+            "随着",
+            "否则",
+            "即使",
+            "虽然"
+          ],
+          "option_pinyin": [
+            "suí zhe",
+            "fǒu zé",
+            "jí shǐ",
+            "suī rán"
+          ],
+          "word_hints": {
+            "污染": "wū rǎn"
+          }
         }
       ]
     },
@@ -278,9 +325,21 @@
           "question": "夏天来了，公园里 _____ 都是阳光和鲜花。",
           "type": "multiple_choice",
           "correct": "到处",
-          "options": ["到处", "偶尔", "往往", "平时"],
-          "option_pinyin": ["dào chù", "ǒu ěr", "wǎng wǎng", "píng shí"],
-          "word_hints": {"阳光": "yáng guāng"}
+          "options": [
+            "到处",
+            "偶尔",
+            "往往",
+            "平时"
+          ],
+          "option_pinyin": [
+            "dào chù",
+            "ǒu ěr",
+            "wǎng wǎng",
+            "píng shí"
+          ],
+          "word_hints": {
+            "阳光": "yáng guāng"
+          }
         },
         {
           "question": "Choose the correct sentence with 到处.",
@@ -298,31 +357,69 @@
             "Qiū tiān, sēn lín lǐ hóng sè de dào chù yè zi dōu shì.",
             "Dào chù qiū tiān, sēn lín lǐ dōu shì hóng sè de yè zi."
           ],
-          "word_hints": {"森林": "sēn lín", "叶子": "yè zi"}
+          "word_hints": {
+            "森林": "sēn lín",
+            "叶子": "yè zi"
+          }
         },
         {
           "question": "这里 _____ 都是自然美景，我非常喜欢。",
           "type": "multiple_choice",
           "correct": "到处",
-          "options": ["到处", "随着", "由于", "而且"],
-          "option_pinyin": ["dào chù", "suí zhe", "yóu yú", "ér qiě"],
-          "word_hints": {"自然": "zì rán"}
+          "options": [
+            "到处",
+            "随着",
+            "由于",
+            "而且"
+          ],
+          "option_pinyin": [
+            "dào chù",
+            "suí zhe",
+            "yóu yú",
+            "ér qiě"
+          ],
+          "word_hints": {
+            "自然": "zì rán"
+          }
         },
         {
           "question": "到处 is often combined with which word for emphasis?",
           "type": "multiple_choice",
           "correct": "都",
-          "options": ["都", "也", "还", "才"],
-          "option_pinyin": ["dōu", "yě", "hái", "cái"],
+          "options": [
+            "都",
+            "也",
+            "还",
+            "才"
+          ],
+          "option_pinyin": [
+            "dōu",
+            "yě",
+            "hái",
+            "cái"
+          ],
           "word_hints": {}
         },
         {
           "question": "污染严重的城市，_____ 都是灰色的天空，看不到阳光。",
           "type": "multiple_choice",
           "correct": "到处",
-          "options": ["到处", "偶尔", "随着", "自然"],
-          "option_pinyin": ["dào chù", "ǒu ěr", "suí zhe", "zì rán"],
-          "word_hints": {"污染": "wū rǎn", "阳光": "yáng guāng"}
+          "options": [
+            "到处",
+            "偶尔",
+            "随着",
+            "自然"
+          ],
+          "option_pinyin": [
+            "dào chù",
+            "ǒu ěr",
+            "suí zhe",
+            "zì rán"
+          ],
+          "word_hints": {
+            "污染": "wū rǎn",
+            "阳光": "yáng guāng"
+          }
         }
       ]
     },
@@ -347,9 +444,23 @@
           "question": "_____ 温度升高，很多植物叶子变黄了。",
           "type": "multiple_choice",
           "correct": "由于",
-          "options": ["由于", "随着", "到处", "自然"],
-          "option_pinyin": ["yóu yú", "suí zhe", "dào chù", "zì rán"],
-          "word_hints": {"温度": "wēn dù", "植物": "zhí wù", "叶子": "yè zi"}
+          "options": [
+            "由于",
+            "随着",
+            "到处",
+            "自然"
+          ],
+          "option_pinyin": [
+            "yóu yú",
+            "suí zhe",
+            "dào chù",
+            "zì rán"
+          ],
+          "word_hints": {
+            "温度": "wēn dù",
+            "植物": "zhí wù",
+            "叶子": "yè zi"
+          }
         },
         {
           "question": "Choose the correct sentence with 由于.",
@@ -367,15 +478,32 @@
             "Hǎi yáng lǐ yóu yú wū rǎn, de zhí wù yuè lái yuè shǎo.",
             "Yóu yú hǎi yáng lǐ yuè lái yuè shǎo, zhí wù wū rǎn."
           ],
-          "word_hints": {"污染": "wū rǎn", "海洋": "hǎi yáng", "植物": "zhí wù"}
+          "word_hints": {
+            "污染": "wū rǎn",
+            "海洋": "hǎi yáng",
+            "植物": "zhí wù"
+          }
         },
         {
           "question": "_____ 森林减少，自然界的动植物也越来越少。",
           "type": "multiple_choice",
           "correct": "由于",
-          "options": ["由于", "随着", "通过", "不管"],
-          "option_pinyin": ["yóu yú", "suí zhe", "tōng guò", "bù guǎn"],
-          "word_hints": {"森林": "sēn lín", "自然": "zì rán"}
+          "options": [
+            "由于",
+            "随着",
+            "通过",
+            "不管"
+          ],
+          "option_pinyin": [
+            "yóu yú",
+            "suí zhe",
+            "tōng guò",
+            "bù guǎn"
+          ],
+          "word_hints": {
+            "森林": "sēn lín",
+            "自然": "zì rán"
+          }
         },
         {
           "question": "What is the key difference between 由于 and 因为?",
@@ -387,16 +515,34 @@
             "因为 is more formal",
             "由于 can only be used in spoken Chinese"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "_____ 阳光充足，这里的植物长得非常好。",
           "type": "multiple_choice",
           "correct": "由于",
-          "options": ["由于", "到处", "虽然", "随着"],
-          "option_pinyin": ["yóu yú", "dào chù", "suī rán", "suí zhe"],
-          "word_hints": {"阳光": "yáng guāng", "植物": "zhí wù"}
+          "options": [
+            "由于",
+            "到处",
+            "虽然",
+            "随着"
+          ],
+          "option_pinyin": [
+            "yóu yú",
+            "dào chù",
+            "suī rán",
+            "suí zhe"
+          ],
+          "word_hints": {
+            "阳光": "yáng guāng",
+            "植物": "zhí wù"
+          }
         }
       ]
     }
@@ -421,91 +567,191 @@
       "question": "What does 海洋 mean?",
       "type": "multiple_choice",
       "correct": "Ocean; sea",
-      "options": ["Ocean; sea", "Forest", "Earth", "Climate"],
-      "word_hints": {"海洋": "hǎi yáng"}
+      "options": [
+        "Ocean; sea",
+        "Forest",
+        "Earth",
+        "Climate"
+      ],
+      "word_hints": {
+        "海洋": "hǎi yáng"
+      }
     },
     {
       "question": "Which word means 'forest'?",
       "type": "multiple_choice",
       "correct": "森林",
-      "options": ["森林", "植物", "叶子", "阳光"],
-      "word_hints": {"森林": "sēn lín", "植物": "zhí wù", "叶子": "yè zi", "阳光": "yáng guāng"}
+      "options": [
+        "森林",
+        "植物",
+        "叶子",
+        "阳光"
+      ],
+      "word_hints": {
+        "森林": "sēn lín",
+        "植物": "zhí wù",
+        "叶子": "yè zi",
+        "阳光": "yáng guāng"
+      }
     },
     {
       "question": "What does 地球 mean?",
       "type": "multiple_choice",
       "correct": "Earth; the globe",
-      "options": ["Earth; the globe", "Forest", "Ocean", "Climate"],
-      "word_hints": {"地球": "dì qiú"}
+      "options": [
+        "Earth; the globe",
+        "Forest",
+        "Ocean",
+        "Climate"
+      ],
+      "word_hints": {
+        "地球": "dì qiú"
+      }
     },
     {
       "question": "Which word means 'plant; vegetation'?",
       "type": "multiple_choice",
       "correct": "植物",
-      "options": ["植物", "叶子", "云", "阳光"],
-      "word_hints": {"植物": "zhí wù", "叶子": "yè zi", "云": "yún", "阳光": "yáng guāng"}
+      "options": [
+        "植物",
+        "叶子",
+        "云",
+        "阳光"
+      ],
+      "word_hints": {
+        "植物": "zhí wù",
+        "叶子": "yè zi",
+        "云": "yún",
+        "阳光": "yáng guāng"
+      }
     },
     {
       "question": "What does 阳光 mean?",
       "type": "multiple_choice",
       "correct": "Sunshine; sunlight",
-      "options": ["Sunshine; sunlight", "Cloud", "Temperature", "Leaf"],
-      "word_hints": {"阳光": "yáng guāng"}
+      "options": [
+        "Sunshine; sunlight",
+        "Cloud",
+        "Temperature",
+        "Leaf"
+      ],
+      "word_hints": {
+        "阳光": "yáng guāng"
+      }
     },
     {
       "question": "Which word means 'climate'?",
       "type": "multiple_choice",
       "correct": "气候",
-      "options": ["气候", "温度", "自然", "污染"],
-      "word_hints": {"气候": "qì hòu", "温度": "wēn dù", "自然": "zì rán", "污染": "wū rǎn"}
+      "options": [
+        "气候",
+        "温度",
+        "自然",
+        "污染"
+      ],
+      "word_hints": {
+        "气候": "qì hòu",
+        "温度": "wēn dù",
+        "自然": "zì rán",
+        "污染": "wū rǎn"
+      }
     },
     {
       "question": "What does 污染 mean?",
       "type": "multiple_choice",
       "correct": "Pollution; to pollute",
-      "options": ["Pollution; to pollute", "Climate change", "Nature", "Temperature"],
-      "word_hints": {"污染": "wū rǎn"}
+      "options": [
+        "Pollution; to pollute",
+        "Climate change",
+        "Nature",
+        "Temperature"
+      ],
+      "word_hints": {
+        "污染": "wū rǎn"
+      }
     },
     {
       "question": "Which word means 'deep; dark (of color)'?",
       "type": "multiple_choice",
       "correct": "深",
-      "options": ["深", "自然", "云", "叶子"],
-      "word_hints": {"深": "shēn", "自然": "zì rán", "云": "yún", "叶子": "yè zi"}
+      "options": [
+        "深",
+        "自然",
+        "云",
+        "叶子"
+      ],
+      "word_hints": {
+        "深": "shēn",
+        "自然": "zì rán",
+        "云": "yún",
+        "叶子": "yè zi"
+      }
     },
     {
       "question": "What does 自然 mean?",
       "type": "multiple_choice",
       "correct": "Nature; natural; naturally",
-      "options": ["Nature; natural; naturally", "Climate", "Earth", "Ocean"],
-      "word_hints": {"自然": "zì rán"}
+      "options": [
+        "Nature; natural; naturally",
+        "Climate",
+        "Earth",
+        "Ocean"
+      ],
+      "word_hints": {
+        "自然": "zì rán"
+      }
     },
     {
       "question": "What does 云 mean?",
       "type": "multiple_choice",
       "correct": "Cloud",
-      "options": ["Cloud", "Leaf", "Sunshine", "Plant"],
-      "word_hints": {"云": "yún"}
+      "options": [
+        "Cloud",
+        "Leaf",
+        "Sunshine",
+        "Plant"
+      ],
+      "word_hints": {
+        "云": "yún"
+      }
     },
     {
       "question": "Fill in: _____ 气候变化，地球温度越来越高。",
       "type": "multiple_choice",
       "correct": "随着",
-      "options": ["随着", "由于", "到处", "因此"],
-      "word_hints": {"气候": "qì hòu", "温度": "wēn dù"}
+      "options": [
+        "随着",
+        "由于",
+        "到处",
+        "因此"
+      ],
+      "word_hints": {
+        "气候": "qì hòu",
+        "温度": "wēn dù"
+      }
     },
     {
       "question": "What does 到处 mean?",
       "type": "multiple_choice",
       "correct": "Everywhere",
-      "options": ["Everywhere", "Somewhere", "Nowhere", "Occasionally"],
+      "options": [
+        "Everywhere",
+        "Somewhere",
+        "Nowhere",
+        "Occasionally"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does 由于 mean?",
       "type": "multiple_choice",
       "correct": "Due to; because of",
-      "options": ["Due to; because of", "Along with", "Everywhere", "Although"],
+      "options": [
+        "Due to; because of",
+        "Along with",
+        "Everywhere",
+        "Although"
+      ],
       "word_hints": {}
     },
     {
@@ -518,49 +764,88 @@
         "随着自然美景越来越少，污染加重。",
         "自然美景越来越少随着，污染加重。"
       ],
-      "word_hints": {"污染": "wū rǎn", "自然": "zì rán"}
+      "word_hints": {
+        "污染": "wū rǎn",
+        "自然": "zì rán"
+      }
     },
     {
       "question": "What does the phrase 气候变化 mean?",
       "type": "multiple_choice",
       "correct": "Climate change",
-      "options": ["Climate change", "Temperature change", "Natural beauty", "Severe pollution"],
-      "word_hints": {"气候": "qì hòu"}
+      "options": [
+        "Climate change",
+        "Temperature change",
+        "Natural beauty",
+        "Severe pollution"
+      ],
+      "word_hints": {
+        "气候": "qì hòu"
+      }
     },
     {
       "question": "What does the phrase 保护环境 mean?",
       "type": "multiple_choice",
       "correct": "To protect the environment",
-      "options": ["To protect the environment", "To reduce pollution", "To change the climate", "To preserve nature"],
+      "options": [
+        "To protect the environment",
+        "To reduce pollution",
+        "To change the climate",
+        "To preserve nature"
+      ],
       "word_hints": {}
     },
     {
       "question": "In Chinese culture, what does the color 红 (red) symbolize?",
       "type": "multiple_choice",
       "correct": "Good luck and prosperity",
-      "options": ["Good luck and prosperity", "Mourning and death", "Nature and health", "Wisdom and age"],
+      "options": [
+        "Good luck and prosperity",
+        "Mourning and death",
+        "Nature and health",
+        "Wisdom and age"
+      ],
       "word_hints": {}
     },
     {
       "question": "In Chinese culture, what does the color 白 (white) traditionally symbolize?",
       "type": "multiple_choice",
       "correct": "Mourning and death",
-      "options": ["Mourning and death", "Purity and weddings", "Good luck", "Nature"],
+      "options": [
+        "Mourning and death",
+        "Purity and weddings",
+        "Good luck",
+        "Nature"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does 叶子 mean?",
       "type": "multiple_choice",
       "correct": "Leaf; leaves",
-      "options": ["Leaf; leaves", "Cloud", "Sunshine", "Plant"],
-      "word_hints": {"叶子": "yè zi"}
+      "options": [
+        "Leaf; leaves",
+        "Cloud",
+        "Sunshine",
+        "Plant"
+      ],
+      "word_hints": {
+        "叶子": "yè zi"
+      }
     },
     {
       "question": "What does the phrase 阳光充足 mean?",
       "type": "multiple_choice",
       "correct": "Abundant sunshine",
-      "options": ["Abundant sunshine", "Cloudy sky", "Deep ocean", "Natural beauty"],
-      "word_hints": {"阳光": "yáng guāng"}
+      "options": [
+        "Abundant sunshine",
+        "Cloudy sky",
+        "Deep ocean",
+        "Natural beauty"
+      ],
+      "word_hints": {
+        "阳光": "yáng guāng"
+      }
     }
   ],
   "dialogues": [
@@ -569,14 +854,22 @@
       "title": "A Nature Walk",
       "title_chinese": "自然之旅",
       "speakers": {
-        "A": {"name": "小倩", "role": "朋友甲", "gender": "female"},
-        "B": {"name": "大明", "role": "朋友乙", "gender": "male"}
+        "A": {
+          "name": "波伏娃",
+          "role": "朋友甲",
+          "gender": "female"
+        },
+        "B": {
+          "name": "加缪",
+          "role": "朋友乙",
+          "gender": "male"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "大明，你看！这片森林里到处都是美丽的植物！",
-          "pinyin": "Dà Míng, nǐ kàn! Zhè piàn sēn lín lǐ dào chù dōu shì měi lì de zhí wù!",
+          "chinese": "加缪，你看！这片森林里到处都是美丽的植物！",
+          "pinyin": "Jiā Móu, nǐ kàn! Zhè piàn sēn lín lǐ dào chù dōu shì měi lì de zhí wù!",
           "english": "Daming, look! This forest is full of beautiful plants everywhere!"
         },
         {
@@ -622,8 +915,16 @@
       "title": "Discussing Climate Change",
       "title_chinese": "讨论气候变化",
       "speakers": {
-        "A": {"name": "环保老师", "role": "老师", "gender": "female"},
-        "B": {"name": "同学", "role": "学生", "gender": "male"}
+        "A": {
+          "name": "环保老师",
+          "role": "老师",
+          "gender": "female"
+        },
+        "B": {
+          "name": "同学",
+          "role": "学生",
+          "gender": "male"
+        }
       },
       "lines": [
         {

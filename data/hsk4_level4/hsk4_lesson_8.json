@@ -204,17 +204,43 @@
           "question": "_____ 你肚子疼，就应该去看大夫。",
           "type": "multiple_choice",
           "correct": "如果",
-          "options": ["如果", "虽然", "既然", "既使"],
-          "option_pinyin": ["rú guǒ", "suī rán", "jì rán", "jí shǐ"],
-          "word_hints": {"肚子": "dù zi", "大夫": "dài fu"}
+          "options": [
+            "如果",
+            "虽然",
+            "既然",
+            "既使"
+          ],
+          "option_pinyin": [
+            "rú guǒ",
+            "suī rán",
+            "jì rán",
+            "jí shǐ"
+          ],
+          "word_hints": {
+            "肚子": "dù zi",
+            "大夫": "dài fu"
+          }
         },
         {
           "question": "如果温度超过三十九度，_____ 非常危险。",
           "type": "multiple_choice",
           "correct": "就",
-          "options": ["就", "也", "还", "都"],
-          "option_pinyin": ["jiù", "yě", "hái", "dōu"],
-          "word_hints": {"温度": "wēn dù", "危险": "wēi xiǎn"}
+          "options": [
+            "就",
+            "也",
+            "还",
+            "都"
+          ],
+          "option_pinyin": [
+            "jiù",
+            "yě",
+            "hái",
+            "dōu"
+          ],
+          "word_hints": {
+            "温度": "wēn dù",
+            "危险": "wēi xiǎn"
+          }
         },
         {
           "question": "Choose the correct sentence with 如果...就...",
@@ -232,7 +258,10 @@
             "Jiù nǐ rú guǒ bù jiān chí jiǎn féi, bú huì chéng gōng.",
             "Rú guǒ bù jiān chí jiǎn féi nǐ, jiù huì bù chéng gōng."
           ],
-          "word_hints": {"坚持": "jiān chí", "减肥": "jiǎn féi"}
+          "word_hints": {
+            "坚持": "jiān chí",
+            "减肥": "jiǎn féi"
+          }
         },
         {
           "question": "就 in 如果...就... marks:",
@@ -244,16 +273,34 @@
             "A contrast",
             "A time expression"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "如果咳嗽很严重，_____ 需要打针。",
           "type": "multiple_choice",
           "correct": "就",
-          "options": ["就", "却", "但", "也"],
-          "option_pinyin": ["jiù", "què", "dàn", "yě"],
-          "word_hints": {"咳嗽": "ké sou", "打针": "dǎ zhēn"}
+          "options": [
+            "就",
+            "却",
+            "但",
+            "也"
+          ],
+          "option_pinyin": [
+            "jiù",
+            "què",
+            "dàn",
+            "yě"
+          ],
+          "word_hints": {
+            "咳嗽": "ké sou",
+            "打针": "dǎ zhēn"
+          }
         }
       ]
     },
@@ -278,17 +325,39 @@
           "question": "医院快关门了，我们 _____ 去了。",
           "type": "multiple_choice",
           "correct": "来不及",
-          "options": ["来不及", "来得及", "来不了", "来得了"],
-          "option_pinyin": ["lái bù jí", "lái de jí", "lái bù liǎo", "lái de liǎo"],
+          "options": [
+            "来不及",
+            "来得及",
+            "来不了",
+            "来得了"
+          ],
+          "option_pinyin": [
+            "lái bù jí",
+            "lái de jí",
+            "lái bù liǎo",
+            "lái de liǎo"
+          ],
           "word_hints": {}
         },
         {
           "question": "你快点！还 _____ 赶上护士的检查。",
           "type": "multiple_choice",
           "correct": "来得及",
-          "options": ["来得及", "来不及", "来不了", "来得了"],
-          "option_pinyin": ["lái de jí", "lái bù jí", "lái bù liǎo", "lái de liǎo"],
-          "word_hints": {"护士": "hù shi"}
+          "options": [
+            "来得及",
+            "来不及",
+            "来不了",
+            "来得了"
+          ],
+          "option_pinyin": [
+            "lái de jí",
+            "lái bù jí",
+            "lái bù liǎo",
+            "lái de liǎo"
+          ],
+          "word_hints": {
+            "护士": "hù shi"
+          }
         },
         {
           "question": "Choose the sentence that correctly uses 来不及.",
@@ -306,7 +375,10 @@
             "Lái bù jí tā dù zi tài tòng le, chī yào, zhǐ hǎo dǎ zhēn.",
             "Tā dù zi tài tòng lái bù jí le, chī yào, dǎ zhēn zhǐ hǎo."
           ],
-          "word_hints": {"肚子": "dù zi", "打针": "dǎ zhēn"}
+          "word_hints": {
+            "肚子": "dù zi",
+            "打针": "dǎ zhēn"
+          }
         },
         {
           "question": "来不及 and 来得及 use which grammatical structure?",
@@ -318,16 +390,34 @@
             "Direction complement",
             "Degree complement"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "你还 _____ 把温度量一下，再决定是否打针。",
           "type": "multiple_choice",
           "correct": "来得及",
-          "options": ["来得及", "来不及", "受不了", "说不定"],
-          "option_pinyin": ["lái de jí", "lái bù jí", "shòu bù liǎo", "shuō bù dìng"],
-          "word_hints": {"温度": "wēn dù", "打针": "dǎ zhēn"}
+          "options": [
+            "来得及",
+            "来不及",
+            "受不了",
+            "说不定"
+          ],
+          "option_pinyin": [
+            "lái de jí",
+            "lái bù jí",
+            "shòu bù liǎo",
+            "shuō bù dìng"
+          ],
+          "word_hints": {
+            "温度": "wēn dù",
+            "打针": "dǎ zhēn"
+          }
         }
       ]
     },
@@ -352,9 +442,21 @@
           "question": "他的咳嗽太严重了，真的 _____ 。",
           "type": "multiple_choice",
           "correct": "受不了",
-          "options": ["受不了", "受得了", "来不及", "来得及"],
-          "option_pinyin": ["shòu bù liǎo", "shòu de liǎo", "lái bù jí", "lái de jí"],
-          "word_hints": {"咳嗽": "ké sou"}
+          "options": [
+            "受不了",
+            "受得了",
+            "来不及",
+            "来得及"
+          ],
+          "option_pinyin": [
+            "shòu bù liǎo",
+            "shòu de liǎo",
+            "lái bù jí",
+            "lái de jí"
+          ],
+          "word_hints": {
+            "咳嗽": "ké sou"
+          }
         },
         {
           "question": "Choose the correct sentence with 受不了.",
@@ -372,31 +474,70 @@
             "Zhè ge shòu bù liǎo wēn dù tài gāo, wǒ.",
             "Wǒ shòu bù liǎo, tài gāo zhè ge wēn dù."
           ],
-          "word_hints": {"温度": "wēn dù"}
+          "word_hints": {
+            "温度": "wēn dù"
+          }
         },
         {
           "question": "流了很多汗，皮肤不舒服，她 _____ 了。",
           "type": "multiple_choice",
           "correct": "受不了",
-          "options": ["受不了", "坚持", "耐心", "危险"],
-          "option_pinyin": ["shòu bù liǎo", "jiān chí", "nài xīn", "wēi xiǎn"],
-          "word_hints": {"皮肤": "pí fū", "汗": "hàn"}
+          "options": [
+            "受不了",
+            "坚持",
+            "耐心",
+            "危险"
+          ],
+          "option_pinyin": [
+            "shòu bù liǎo",
+            "jiān chí",
+            "nài xīn",
+            "wēi xiǎn"
+          ],
+          "word_hints": {
+            "皮肤": "pí fū",
+            "汗": "hàn"
+          }
         },
         {
           "question": "受不了 expresses that something is:",
           "type": "multiple_choice",
           "correct": "Beyond one's tolerance",
-          "options": ["Beyond one's tolerance", "Easy to do", "Already completed", "Done regularly"],
-          "option_pinyin": ["", "", "", ""],
+          "options": [
+            "Beyond one's tolerance",
+            "Easy to do",
+            "Already completed",
+            "Done regularly"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "坚持减肥很难，但如果 _____ ，就要更加耐心。",
           "type": "multiple_choice",
           "correct": "受不了",
-          "options": ["受不了", "来不及", "来得及", "受得了"],
-          "option_pinyin": ["shòu bù liǎo", "lái bù jí", "lái de jí", "shòu de liǎo"],
-          "word_hints": {"坚持": "jiān chí", "减肥": "jiǎn féi", "耐心": "nài xīn"}
+          "options": [
+            "受不了",
+            "来不及",
+            "来得及",
+            "受得了"
+          ],
+          "option_pinyin": [
+            "shòu bù liǎo",
+            "lái bù jí",
+            "lái de jí",
+            "shòu de liǎo"
+          ],
+          "word_hints": {
+            "坚持": "jiān chí",
+            "减肥": "jiǎn féi",
+            "耐心": "nài xīn"
+          }
         }
       ]
     }
@@ -421,106 +562,216 @@
       "question": "What does 打针 mean?",
       "type": "multiple_choice",
       "correct": "To give/receive an injection",
-      "options": ["To give/receive an injection", "To take medicine", "To cough", "To exercise"],
-      "word_hints": {"打针": "dǎ zhēn"}
+      "options": [
+        "To give/receive an injection",
+        "To take medicine",
+        "To cough",
+        "To exercise"
+      ],
+      "word_hints": {
+        "打针": "dǎ zhēn"
+      }
     },
     {
       "question": "Which word means 'to cough'?",
       "type": "multiple_choice",
       "correct": "咳嗽",
-      "options": ["咳嗽", "打针", "汗", "肚子"],
-      "word_hints": {"咳嗽": "ké sou", "打针": "dǎ zhēn", "汗": "hàn", "肚子": "dù zi"}
+      "options": [
+        "咳嗽",
+        "打针",
+        "汗",
+        "肚子"
+      ],
+      "word_hints": {
+        "咳嗽": "ké sou",
+        "打针": "dǎ zhēn",
+        "汗": "hàn",
+        "肚子": "dù zi"
+      }
     },
     {
       "question": "What does 皮肤 mean?",
       "type": "multiple_choice",
       "correct": "Skin",
-      "options": ["Skin", "Stomach", "Temperature", "Sweat"],
-      "word_hints": {"皮肤": "pí fū"}
+      "options": [
+        "Skin",
+        "Stomach",
+        "Temperature",
+        "Sweat"
+      ],
+      "word_hints": {
+        "皮肤": "pí fū"
+      }
     },
     {
       "question": "Which word means 'doctor (colloquial)'?",
       "type": "multiple_choice",
       "correct": "大夫",
-      "options": ["大夫", "护士", "病人", "教授"],
-      "word_hints": {"大夫": "dài fu", "护士": "hù shi"}
+      "options": [
+        "大夫",
+        "护士",
+        "病人",
+        "教授"
+      ],
+      "word_hints": {
+        "大夫": "dài fu",
+        "护士": "hù shi"
+      }
     },
     {
       "question": "What does 护士 mean?",
       "type": "multiple_choice",
       "correct": "Nurse",
-      "options": ["Nurse", "Doctor", "Patient", "Professor"],
-      "word_hints": {"护士": "hù shi"}
+      "options": [
+        "Nurse",
+        "Doctor",
+        "Patient",
+        "Professor"
+      ],
+      "word_hints": {
+        "护士": "hù shi"
+      }
     },
     {
       "question": "Which word means 'stomach; belly'?",
       "type": "multiple_choice",
       "correct": "肚子",
-      "options": ["肚子", "皮肤", "汗", "温度"],
-      "word_hints": {"肚子": "dù zi", "皮肤": "pí fū", "汗": "hàn", "温度": "wēn dù"}
+      "options": [
+        "肚子",
+        "皮肤",
+        "汗",
+        "温度"
+      ],
+      "word_hints": {
+        "肚子": "dù zi",
+        "皮肤": "pí fū",
+        "汗": "hàn",
+        "温度": "wēn dù"
+      }
     },
     {
       "question": "What does 汗 mean?",
       "type": "multiple_choice",
       "correct": "Sweat; perspiration",
-      "options": ["Sweat; perspiration", "Skin", "Temperature", "Pain"],
-      "word_hints": {"汗": "hàn"}
+      "options": [
+        "Sweat; perspiration",
+        "Skin",
+        "Temperature",
+        "Pain"
+      ],
+      "word_hints": {
+        "汗": "hàn"
+      }
     },
     {
       "question": "What does 危险 mean?",
       "type": "multiple_choice",
       "correct": "Dangerous; danger",
-      "options": ["Dangerous; danger", "Patient", "Healthy", "Common"],
-      "word_hints": {"危险": "wēi xiǎn"}
+      "options": [
+        "Dangerous; danger",
+        "Patient",
+        "Healthy",
+        "Common"
+      ],
+      "word_hints": {
+        "危险": "wēi xiǎn"
+      }
     },
     {
       "question": "Which word means 'to lose weight'?",
       "type": "multiple_choice",
       "correct": "减肥",
-      "options": ["减肥", "坚持", "耐心", "打针"],
-      "word_hints": {"减肥": "jiǎn féi", "坚持": "jiān chí", "耐心": "nài xīn", "打针": "dǎ zhēn"}
+      "options": [
+        "减肥",
+        "坚持",
+        "耐心",
+        "打针"
+      ],
+      "word_hints": {
+        "减肥": "jiǎn féi",
+        "坚持": "jiān chí",
+        "耐心": "nài xīn",
+        "打针": "dǎ zhēn"
+      }
     },
     {
       "question": "What does 坚持 mean?",
       "type": "multiple_choice",
       "correct": "To persist; to persevere",
-      "options": ["To persist; to persevere", "To lose weight", "To exercise", "To sweat"],
-      "word_hints": {"坚持": "jiān chí"}
+      "options": [
+        "To persist; to persevere",
+        "To lose weight",
+        "To exercise",
+        "To sweat"
+      ],
+      "word_hints": {
+        "坚持": "jiān chí"
+      }
     },
     {
       "question": "Fill in: _____ 你肚子疼，就要去看大夫。",
       "type": "multiple_choice",
       "correct": "如果",
-      "options": ["如果", "虽然", "既然", "否则"],
-      "word_hints": {"肚子": "dù zi", "大夫": "dài fu"}
+      "options": [
+        "如果",
+        "虽然",
+        "既然",
+        "否则"
+      ],
+      "word_hints": {
+        "肚子": "dù zi",
+        "大夫": "dài fu"
+      }
     },
     {
       "question": "What does 来不及 mean?",
       "type": "multiple_choice",
       "correct": "There is not enough time; too late",
-      "options": ["There is not enough time; too late", "There is still enough time", "Cannot bear it", "No choice but to"],
+      "options": [
+        "There is not enough time; too late",
+        "There is still enough time",
+        "Cannot bear it",
+        "No choice but to"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does 来得及 mean?",
       "type": "multiple_choice",
       "correct": "There is still enough time; to make it in time",
-      "options": ["There is still enough time; to make it in time", "Not enough time", "Cannot bear it", "Must do"],
+      "options": [
+        "There is still enough time; to make it in time",
+        "Not enough time",
+        "Cannot bear it",
+        "Must do"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does 受不了 mean?",
       "type": "multiple_choice",
       "correct": "Cannot stand it; unbearable",
-      "options": ["Cannot stand it; unbearable", "Can stand it", "No time", "Not enough"],
+      "options": [
+        "Cannot stand it; unbearable",
+        "Can stand it",
+        "No time",
+        "Not enough"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does 耐心 mean?",
       "type": "multiple_choice",
       "correct": "Patient; patience",
-      "options": ["Patient; patience", "Dangerous", "Healthy", "Persistent"],
-      "word_hints": {"耐心": "nài xīn"}
+      "options": [
+        "Patient; patience",
+        "Dangerous",
+        "Healthy",
+        "Persistent"
+      ],
+      "word_hints": {
+        "耐心": "nài xīn"
+      }
     },
     {
       "question": "Choose the correct use of 受不了.",
@@ -532,14 +783,23 @@
         "他温度太高，受不了。",
         "Both A and C are correct"
       ],
-      "word_hints": {"温度": "wēn dù"}
+      "word_hints": {
+        "温度": "wēn dù"
+      }
     },
     {
       "question": "What does 温度 mean?",
       "type": "multiple_choice",
       "correct": "Temperature",
-      "options": ["Temperature", "Sweat", "Skin", "Pain"],
-      "word_hints": {"温度": "wēn dù"}
+      "options": [
+        "Temperature",
+        "Sweat",
+        "Skin",
+        "Pain"
+      ],
+      "word_hints": {
+        "温度": "wēn dù"
+      }
     },
     {
       "question": "What is the Chinese philosophy behind 太极 (Taichi)?",
@@ -569,8 +829,15 @@
       "question": "What does the phrase 减肥计划 mean?",
       "type": "multiple_choice",
       "correct": "Weight loss plan",
-      "options": ["Weight loss plan", "Exercise routine", "Medical treatment", "Healthy diet"],
-      "word_hints": {"减肥": "jiǎn féi"}
+      "options": [
+        "Weight loss plan",
+        "Exercise routine",
+        "Medical treatment",
+        "Healthy diet"
+      ],
+      "word_hints": {
+        "减肥": "jiǎn féi"
+      }
     }
   ],
   "dialogues": [
@@ -579,8 +846,16 @@
       "title": "At the Doctor's Office",
       "title_chinese": "在诊所",
       "speakers": {
-        "A": {"name": "大夫", "role": "医生", "gender": "male"},
-        "B": {"name": "小王", "role": "病人", "gender": "female"}
+        "A": {
+          "name": "大夫",
+          "role": "医生",
+          "gender": "male"
+        },
+        "B": {
+          "name": "小王",
+          "role": "病人",
+          "gender": "female"
+        }
       },
       "lines": [
         {
@@ -632,14 +907,22 @@
       "title": "A Weight Loss Journey",
       "title_chinese": "减肥之路",
       "speakers": {
-        "A": {"name": "美美", "role": "朋友甲", "gender": "female"},
-        "B": {"name": "晓晓", "role": "朋友乙", "gender": "female"}
+        "A": {
+          "name": "兰特",
+          "role": "朋友甲",
+          "gender": "female"
+        },
+        "B": {
+          "name": "慈欣",
+          "role": "朋友乙",
+          "gender": "female"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "晓晓，你的减肥计划进行得怎么样了？",
-          "pinyin": "Xiǎo Xiǎo, nǐ de jiǎn féi jì huà jìn xíng de zěn me yàng le?",
+          "chinese": "慈欣，你的减肥计划进行得怎么样了？",
+          "pinyin": "Cí Xīn, nǐ de jiǎn féi jì huà jìn xíng de zěn me yàng le?",
           "english": "Xiaoxiao, how is your weight loss plan going?"
         },
         {

@@ -211,9 +211,21 @@
           "question": "_____ 在家里烦恼，_____ 出去运动，保持积极的心态。",
           "type": "multiple_choice",
           "correct": "与其…不如…",
-          "options": ["与其…不如…", "虽然…但是…", "不但…而且…", "因为…所以…"],
-          "option_pinyin": ["yǔ qí…bù rú…", "suī rán…dàn shì…", "bú dàn…ér qiě…", "yīn wèi…suǒ yǐ…"],
-          "word_hints": {"积极": "jī jí"}
+          "options": [
+            "与其…不如…",
+            "虽然…但是…",
+            "不但…而且…",
+            "因为…所以…"
+          ],
+          "option_pinyin": [
+            "yǔ qí…bù rú…",
+            "suī rán…dàn shì…",
+            "bú dàn…ér qiě…",
+            "yīn wèi…suǒ yǐ…"
+          ],
+          "word_hints": {
+            "积极": "jī jí"
+          }
         },
         {
           "question": "Choose the sentence that uses 与其…不如… correctly.",
@@ -231,7 +243,10 @@
             "Yǔ qí yǒng gǎn de miàn duì wèn tí, bù rú táo bì zé rèn.",
             "Yǒng gǎn yǔ qí, bù rú miàn duì wèn tí táo bì zé rèn."
           ],
-          "word_hints": {"勇敢": "yǒng gǎn", "责任": "zé rèn"}
+          "word_hints": {
+            "勇敢": "yǒng gǎn",
+            "责任": "zé rèn"
+          }
         },
         {
           "question": "What does 与其…不如… express?",
@@ -243,15 +258,30 @@
             "Neither A nor B is acceptable",
             "A is better than B"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "与其一直担心，_____ 想办法解决问题。",
           "type": "multiple_choice",
           "correct": "不如",
-          "options": ["不如", "而且", "但是", "因为"],
-          "option_pinyin": ["bù rú", "ér qiě", "dàn shì", "yīn wèi"],
+          "options": [
+            "不如",
+            "而且",
+            "但是",
+            "因为"
+          ],
+          "option_pinyin": [
+            "bù rú",
+            "ér qiě",
+            "dàn shì",
+            "yīn wèi"
+          ],
           "word_hints": {}
         },
         {
@@ -264,7 +294,12 @@
             "Both options equally",
             "Neither option"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -290,9 +325,21 @@
           "question": "_____ ，你都应该对自己的行为负责任。",
           "type": "multiple_choice",
           "correct": "无论如何",
-          "options": ["无论如何", "与其", "不如", "而且"],
-          "option_pinyin": ["wú lùn rú hé", "yǔ qí", "bù rú", "ér qiě"],
-          "word_hints": {"负责任": "fù zé rèn"}
+          "options": [
+            "无论如何",
+            "与其",
+            "不如",
+            "而且"
+          ],
+          "option_pinyin": [
+            "wú lùn rú hé",
+            "yǔ qí",
+            "bù rú",
+            "ér qiě"
+          ],
+          "word_hints": {
+            "负责任": "fù zé rèn"
+          }
         },
         {
           "question": "Choose the correct sentence using 无论如何.",
@@ -310,7 +357,9 @@
             "Wú lùn tā rú hé, dōu bú huì duì péng yǒu bù chéng shí.",
             "Tā dōu bú huì, wú lùn rú hé duì péng yǒu bù chéng shí."
           ],
-          "word_hints": {"诚实": "chéng shí"}
+          "word_hints": {
+            "诚实": "chéng shí"
+          }
         },
         {
           "question": "What does 无论如何 mean?",
@@ -322,15 +371,30 @@
             "In contrast",
             "As a result"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "无论如何，我们都要保持 _____ 的心态。",
           "type": "multiple_choice",
           "correct": "乐观",
-          "options": ["乐观", "抱怨", "逃避", "消极"],
-          "option_pinyin": ["lè guān", "bào yuàn", "táo bì", "xiāo jí"],
+          "options": [
+            "乐观",
+            "抱怨",
+            "逃避",
+            "消极"
+          ],
+          "option_pinyin": [
+            "lè guān",
+            "bào yuàn",
+            "táo bì",
+            "xiāo jí"
+          ],
           "word_hints": {}
         },
         {
@@ -343,7 +407,12 @@
             "A contrast between two situations",
             "A condition that must be met"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -369,9 +438,21 @@
           "question": "她在紧急情况下 _____ 了很强的意志力。",
           "type": "multiple_choice",
           "correct": "表现出",
-          "options": ["表现出", "无论如何", "与其", "不如"],
-          "option_pinyin": ["biǎo xiàn chū", "wú lùn rú hé", "yǔ qí", "bù rú"],
-          "word_hints": {"意志力": "yì zhì lì"}
+          "options": [
+            "表现出",
+            "无论如何",
+            "与其",
+            "不如"
+          ],
+          "option_pinyin": [
+            "biǎo xiàn chū",
+            "wú lùn rú hé",
+            "yǔ qí",
+            "bù rú"
+          ],
+          "word_hints": {
+            "意志力": "yì zhì lì"
+          }
         },
         {
           "question": "Choose the correct sentence using 表现出.",
@@ -389,7 +470,9 @@
             "Jí dà de yǒng qì tā zài bǐ sài zhōng biǎo xiàn chū le.",
             "Zài bǐ sài biǎo xiàn chū le tā zhōng jí dà de yǒng qì."
           ],
-          "word_hints": {"勇气": "yǒng qì"}
+          "word_hints": {
+            "勇气": "yǒng qì"
+          }
         },
         {
           "question": "What does 表现出 mean?",
@@ -401,16 +484,33 @@
             "To lose a quality",
             "To demand something"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "她对学生非常耐心，_____ 了一名好老师应有的品质。",
           "type": "multiple_choice",
           "correct": "表现出",
-          "options": ["表现出", "无论如何", "诚实", "积极"],
-          "option_pinyin": ["biǎo xiàn chū", "wú lùn rú hé", "chéng shí", "jī jí"],
-          "word_hints": {"耐心": "nài xīn"}
+          "options": [
+            "表现出",
+            "无论如何",
+            "诚实",
+            "积极"
+          ],
+          "option_pinyin": [
+            "biǎo xiàn chū",
+            "wú lùn rú hé",
+            "chéng shí",
+            "jī jí"
+          ],
+          "word_hints": {
+            "耐心": "nài xīn"
+          }
         },
         {
           "question": "Which follows directly after 表现出 in a sentence?",
@@ -422,7 +522,12 @@
             "A place word",
             "A question word"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -448,64 +553,136 @@
       "question": "What does 诚实 mean?",
       "type": "multiple_choice",
       "correct": "Honest; honesty",
-      "options": ["Honest; honesty", "Brave; courageous", "Patient; patience", "Confident"],
-      "word_hints": {"诚实": "chéng shí"}
+      "options": [
+        "Honest; honesty",
+        "Brave; courageous",
+        "Patient; patience",
+        "Confident"
+      ],
+      "word_hints": {
+        "诚实": "chéng shí"
+      }
     },
     {
       "question": "Which word means 'modest; humble'?",
       "type": "multiple_choice",
       "correct": "谦虚",
-      "options": ["谦虚", "自信", "坚强", "善良"],
-      "word_hints": {"谦虚": "qiān xū", "自信": "zì xìn", "坚强": "jiān qiáng", "善良": "shàn liáng"}
+      "options": [
+        "谦虚",
+        "自信",
+        "坚强",
+        "善良"
+      ],
+      "word_hints": {
+        "谦虚": "qiān xū",
+        "自信": "zì xìn",
+        "坚强": "jiān qiáng",
+        "善良": "shàn liáng"
+      }
     },
     {
       "question": "What does 意志力 mean?",
       "type": "multiple_choice",
       "correct": "Willpower; strength of will",
-      "options": ["Willpower; strength of will", "Confidence", "Optimism", "Patience"],
-      "word_hints": {"意志力": "yì zhì lì"}
+      "options": [
+        "Willpower; strength of will",
+        "Confidence",
+        "Optimism",
+        "Patience"
+      ],
+      "word_hints": {
+        "意志力": "yì zhì lì"
+      }
     },
     {
       "question": "Which word means 'kind-hearted; good-natured'?",
       "type": "multiple_choice",
       "correct": "善良",
-      "options": ["善良", "细心", "积极", "耐心"],
-      "word_hints": {"善良": "shàn liáng", "细心": "xì xīn", "积极": "jī jí", "耐心": "nài xīn"}
+      "options": [
+        "善良",
+        "细心",
+        "积极",
+        "耐心"
+      ],
+      "word_hints": {
+        "善良": "shàn liáng",
+        "细心": "xì xīn",
+        "积极": "jī jí",
+        "耐心": "nài xīn"
+      }
     },
     {
       "question": "What does 积极 mean?",
       "type": "multiple_choice",
       "correct": "Positive; proactive; enthusiastic",
-      "options": ["Positive; proactive; enthusiastic", "Negative; passive", "Careful; attentive", "Brave; courageous"],
-      "word_hints": {"积极": "jī jí"}
+      "options": [
+        "Positive; proactive; enthusiastic",
+        "Negative; passive",
+        "Careful; attentive",
+        "Brave; courageous"
+      ],
+      "word_hints": {
+        "积极": "jī jí"
+      }
     },
     {
       "question": "What does 负责任 mean?",
       "type": "multiple_choice",
       "correct": "Responsible; to take responsibility",
-      "options": ["Responsible; to take responsibility", "Irresponsible", "Patient", "Honest"],
-      "word_hints": {"负责任": "fù zé rèn"}
+      "options": [
+        "Responsible; to take responsibility",
+        "Irresponsible",
+        "Patient",
+        "Honest"
+      ],
+      "word_hints": {
+        "负责任": "fù zé rèn"
+      }
     },
     {
       "question": "Which word means 'optimistic'?",
       "type": "multiple_choice",
       "correct": "乐观",
-      "options": ["乐观", "自信", "诚实", "勇敢"],
-      "word_hints": {"乐观": "lè guān", "自信": "zì xìn", "诚实": "chéng shí", "勇敢": "yǒng gǎn"}
+      "options": [
+        "乐观",
+        "自信",
+        "诚实",
+        "勇敢"
+      ],
+      "word_hints": {
+        "乐观": "lè guān",
+        "自信": "zì xìn",
+        "诚实": "chéng shí",
+        "勇敢": "yǒng gǎn"
+      }
     },
     {
       "question": "What does 细心 mean?",
       "type": "multiple_choice",
       "correct": "Careful; attentive",
-      "options": ["Careful; attentive", "Strong-willed", "Brave", "Humble"],
-      "word_hints": {"细心": "xì xīn"}
+      "options": [
+        "Careful; attentive",
+        "Strong-willed",
+        "Brave",
+        "Humble"
+      ],
+      "word_hints": {
+        "细心": "xì xīn"
+      }
     },
     {
       "question": "Fill in the blank: _____ 抱怨，不如积极地解决问题。",
       "type": "multiple_choice",
       "correct": "与其",
-      "options": ["与其", "无论如何", "不但", "表现出"],
-      "word_hints": {"积极": "jī jí"}
+      "options": [
+        "与其",
+        "无论如何",
+        "不但",
+        "表现出"
+      ],
+      "word_hints": {
+        "积极": "jī jí"
+      }
     },
     {
       "question": "What does 与其…不如… express?",
@@ -523,8 +700,15 @@
       "question": "Fill in the blank: _____ ，你都要保持诚实。",
       "type": "multiple_choice",
       "correct": "无论如何",
-      "options": ["无论如何", "与其", "不如", "细心"],
-      "word_hints": {"诚实": "chéng shí"}
+      "options": [
+        "无论如何",
+        "与其",
+        "不如",
+        "细心"
+      ],
+      "word_hints": {
+        "诚实": "chéng shí"
+      }
     },
     {
       "question": "Choose the correct sentence using 表现出.",
@@ -536,42 +720,80 @@
         "坚强表现出了她在困难时意志力。",
         "意志力在困难时她表现出了坚强。"
       ],
-      "word_hints": {"意志力": "yì zhì lì", "坚强": "jiān qiáng"}
+      "word_hints": {
+        "意志力": "yì zhì lì",
+        "坚强": "jiān qiáng"
+      }
     },
     {
       "question": "What does 勇敢 mean?",
       "type": "multiple_choice",
       "correct": "Brave; courageous",
-      "options": ["Brave; courageous", "Modest; humble", "Patient", "Careful"],
-      "word_hints": {"勇敢": "yǒng gǎn"}
+      "options": [
+        "Brave; courageous",
+        "Modest; humble",
+        "Patient",
+        "Careful"
+      ],
+      "word_hints": {
+        "勇敢": "yǒng gǎn"
+      }
     },
     {
       "question": "What does the phrase 充满自信 mean?",
       "type": "multiple_choice",
       "correct": "Full of confidence",
-      "options": ["Full of confidence", "Lacking confidence", "Being responsible", "Showing patience"],
-      "word_hints": {"自信": "zì xìn"}
+      "options": [
+        "Full of confidence",
+        "Lacking confidence",
+        "Being responsible",
+        "Showing patience"
+      ],
+      "word_hints": {
+        "自信": "zì xìn"
+      }
     },
     {
       "question": "What does 坚强 mean?",
       "type": "multiple_choice",
       "correct": "Strong-willed; resilient",
-      "options": ["Strong-willed; resilient", "Kind-hearted", "Optimistic", "Attentive"],
-      "word_hints": {"坚强": "jiān qiáng"}
+      "options": [
+        "Strong-willed; resilient",
+        "Kind-hearted",
+        "Optimistic",
+        "Attentive"
+      ],
+      "word_hints": {
+        "坚强": "jiān qiáng"
+      }
     },
     {
       "question": "Which phrase means 'a responsible attitude'?",
       "type": "multiple_choice",
       "correct": "负责任的态度",
-      "options": ["负责任的态度", "积极乐观", "充满自信", "诚实守信"],
-      "word_hints": {"负责任": "fù zé rèn"}
+      "options": [
+        "负责任的态度",
+        "积极乐观",
+        "充满自信",
+        "诚实守信"
+      ],
+      "word_hints": {
+        "负责任": "fù zé rèn"
+      }
     },
     {
       "question": "What does 耐心 mean?",
       "type": "multiple_choice",
       "correct": "Patient; patience",
-      "options": ["Patient; patience", "Brave; courageous", "Confident", "Optimistic"],
-      "word_hints": {"耐心": "nài xīn"}
+      "options": [
+        "Patient; patience",
+        "Brave; courageous",
+        "Confident",
+        "Optimistic"
+      ],
+      "word_hints": {
+        "耐心": "nài xīn"
+      }
     },
     {
       "question": "The idiom 以德服人 means:",
@@ -583,20 +805,35 @@
         "To use money to gain respect",
         "To show off one's achievements"
       ],
-      "word_hints": {"以德服人": "yǐ dé fú rén"}
+      "word_hints": {
+        "以德服人": "yǐ dé fú rén"
+      }
     },
     {
       "question": "What does the phrase 积极乐观 mean?",
       "type": "multiple_choice",
       "correct": "Positive and optimistic",
-      "options": ["Positive and optimistic", "Careful and patient", "Honest and brave", "Strong and confident"],
-      "word_hints": {"积极": "jī jí", "乐观": "lè guān"}
+      "options": [
+        "Positive and optimistic",
+        "Careful and patient",
+        "Honest and brave",
+        "Strong and confident"
+      ],
+      "word_hints": {
+        "积极": "jī jí",
+        "乐观": "lè guān"
+      }
     },
     {
       "question": "Which grammar pattern means 'no matter what; anyway'?",
       "type": "multiple_choice",
       "correct": "无论如何",
-      "options": ["无论如何", "与其…不如…", "表现出", "积极乐观"],
+      "options": [
+        "无论如何",
+        "与其…不如…",
+        "表现出",
+        "积极乐观"
+      ],
       "word_hints": {}
     }
   ],
@@ -606,14 +843,22 @@
       "title": "Talking About a Good Friend",
       "title_chinese": "谈论一位好朋友",
       "speakers": {
-        "A": {"name": "小明", "role": "大学生", "gender": "male"},
-        "B": {"name": "晓燕", "role": "同学", "gender": "female"}
+        "A": {
+          "name": "但丁",
+          "role": "大学生",
+          "gender": "male"
+        },
+        "B": {
+          "name": "兰特",
+          "role": "同学",
+          "gender": "female"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "你认识小刚吗？他真的是一个非常诚实负责任的人。",
-          "pinyin": "Nǐ rèn shi Xiǎo Gāng ma? Tā zhēn de shì yí gè fēi cháng chéng shí fù zé rèn de rén.",
+          "chinese": "你认识梵高吗？他真的是一个非常诚实负责任的人。",
+          "pinyin": "Nǐ rèn shi Fàn Gāo ma? Tā zhēn de shì yí gè fēi cháng chéng shí fù zé rèn de rén.",
           "english": "Do you know Xiaogang? He is truly a very honest and responsible person."
         },
         {
@@ -659,8 +904,16 @@
       "title": "A Job Interview Reflection",
       "title_chinese": "面试后的反思",
       "speakers": {
-        "A": {"name": "志远", "role": "求职者", "gender": "male"},
-        "B": {"name": "王老师", "role": "导师", "gender": "female"}
+        "A": {
+          "name": "鲁迅",
+          "role": "求职者",
+          "gender": "male"
+        },
+        "B": {
+          "name": "王老师",
+          "role": "导师",
+          "gender": "female"
+        }
       },
       "lines": [
         {

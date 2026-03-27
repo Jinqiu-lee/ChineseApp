@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { speakChinese } from '../../utils/tts';
+import { speakAsAvatar } from '../../utils/tts';
 
-export default function AudioChoiceExercise({ exercise, onCorrect, onWrong }) {
+export default function AudioChoiceExercise({ exercise, onCorrect, onWrong, avatarId }) {
   const { chinese, pinyin, correct, choices } = exercise;
   const [selected, setSelected] = useState(null);
   const [answered, setAnswered] = useState(false);
   const [showPinyin, setShowPinyin] = useState(false);
 
   useEffect(() => {
-    speakChinese(chinese);
+    speakAsAvatar(chinese, avatarId);
   }, []);
 
   const handleSelect = (choice) => {
@@ -44,7 +44,7 @@ export default function AudioChoiceExercise({ exercise, onCorrect, onWrong }) {
 
       <TouchableOpacity
         style={styles.audioBtn}
-        onPress={() => speakChinese(chinese)}
+        onPress={() => speakAsAvatar(chinese, avatarId)}
         activeOpacity={0.8}
       >
         <Text style={styles.audioEmoji}>🔊</Text>

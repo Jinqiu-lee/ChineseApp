@@ -211,9 +211,22 @@
           "question": "只要坚持每天训练，_____ 能提高体能。",
           "type": "multiple_choice",
           "correct": "就",
-          "options": ["就", "才", "都", "也"],
-          "option_pinyin": ["jiù", "cái", "dōu", "yě"],
-          "word_hints": {"训练": "xùn liàn", "体能": "tǐ néng"}
+          "options": [
+            "就",
+            "才",
+            "都",
+            "也"
+          ],
+          "option_pinyin": [
+            "jiù",
+            "cái",
+            "dōu",
+            "yě"
+          ],
+          "word_hints": {
+            "训练": "xùn liàn",
+            "体能": "tǐ néng"
+          }
         },
         {
           "question": "Choose the sentence that uses 只要...就... correctly.",
@@ -231,7 +244,9 @@
             "Cān jiā zhǐ yào bǐ sài, néng jī lěi jiù bǎo guì de jīng yàn.",
             "Zhǐ yào jiù cān jiā bǐ sài, néng jī lěi bǎo guì de jīng yàn."
           ],
-          "word_hints": {"比赛": "bǐ sài"}
+          "word_hints": {
+            "比赛": "bǐ sài"
+          }
         },
         {
           "question": "What does 只要...就... express?",
@@ -243,24 +258,55 @@
             "Something happening progressively over time",
             "A contrast between two situations"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "只要教练认真指导，运动员 _____ 能打破记录。",
           "type": "multiple_choice",
           "correct": "就",
-          "options": ["就", "才", "只", "也"],
-          "option_pinyin": ["jiù", "cái", "zhǐ", "yě"],
-          "word_hints": {"教练": "jiào liàn", "记录": "jì lù"}
+          "options": [
+            "就",
+            "才",
+            "只",
+            "也"
+          ],
+          "option_pinyin": [
+            "jiù",
+            "cái",
+            "zhǐ",
+            "yě"
+          ],
+          "word_hints": {
+            "教练": "jiào liàn",
+            "记录": "jì lù"
+          }
         },
         {
           "question": "Which word fills in the blank: _____ 在体育馆刻苦训练，就有机会赢得冠军。",
           "type": "multiple_choice",
           "correct": "只要",
-          "options": ["只要", "尽管", "虽然", "因为"],
-          "option_pinyin": ["zhǐ yào", "jǐn guǎn", "suī rán", "yīn wèi"],
-          "word_hints": {"体育馆": "tǐ yù guǎn", "冠军": "guàn jūn"}
+          "options": [
+            "只要",
+            "尽管",
+            "虽然",
+            "因为"
+          ],
+          "option_pinyin": [
+            "zhǐ yào",
+            "jǐn guǎn",
+            "suī rán",
+            "yīn wèi"
+          ],
+          "word_hints": {
+            "体育馆": "tǐ yù guǎn",
+            "冠军": "guàn jūn"
+          }
         }
       ]
     },
@@ -285,9 +331,22 @@
           "question": "尽管比赛成绩不理想，他 _____ 没有放弃训练。",
           "type": "multiple_choice",
           "correct": "还是",
-          "options": ["还是", "才", "就", "都"],
-          "option_pinyin": ["hái shì", "cái", "jiù", "dōu"],
-          "word_hints": {"成绩": "chéng jī", "训练": "xùn liàn"}
+          "options": [
+            "还是",
+            "才",
+            "就",
+            "都"
+          ],
+          "option_pinyin": [
+            "hái shì",
+            "cái",
+            "jiù",
+            "dōu"
+          ],
+          "word_hints": {
+            "成绩": "chéng jī",
+            "训练": "xùn liàn"
+          }
         },
         {
           "question": "Choose the sentence that uses 尽管...还是... correctly.",
@@ -305,7 +364,10 @@
             "Tā tǐ yù guǎn jǐn guǎn hěn yuǎn, měi tiān hái shì jiān chí qù duàn liàn.",
             "Jǐn guǎn tā hái shì, tǐ yù guǎn hěn yuǎn měi tiān jiān chí qù duàn liàn."
           ],
-          "word_hints": {"体育馆": "tǐ yù guǎn", "坚持": "jiān chí"}
+          "word_hints": {
+            "体育馆": "tǐ yù guǎn",
+            "坚持": "jiān chí"
+          }
         },
         {
           "question": "What does 尽管...还是... express?",
@@ -317,24 +379,56 @@
             "Something happening as soon as another thing happens",
             "A progressive change over time"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "尽管教练的训练方法很严格，运动员 _____ 认可他的方式。",
           "type": "multiple_choice",
           "correct": "还是",
-          "options": ["还是", "就", "才", "只"],
-          "option_pinyin": ["hái shì", "jiù", "cái", "zhǐ"],
-          "word_hints": {"教练": "jiào liàn", "训练": "xùn liàn", "运动员": "yùn dòng yuán"}
+          "options": [
+            "还是",
+            "就",
+            "才",
+            "只"
+          ],
+          "option_pinyin": [
+            "hái shì",
+            "jiù",
+            "cái",
+            "zhǐ"
+          ],
+          "word_hints": {
+            "教练": "jiào liàn",
+            "训练": "xùn liàn",
+            "运动员": "yùn dòng yuán"
+          }
         },
         {
           "question": "Which word goes in the blank: _____ 没有打破记录，这位运动员还是为自己的表现感到自豪。",
           "type": "multiple_choice",
           "correct": "尽管",
-          "options": ["尽管", "只要", "不管", "因为"],
-          "option_pinyin": ["jǐn guǎn", "zhǐ yào", "bù guǎn", "yīn wèi"],
-          "word_hints": {"记录": "jì lù", "运动员": "yùn dòng yuán"}
+          "options": [
+            "尽管",
+            "只要",
+            "不管",
+            "因为"
+          ],
+          "option_pinyin": [
+            "jǐn guǎn",
+            "zhǐ yào",
+            "bù guǎn",
+            "yīn wèi"
+          ],
+          "word_hints": {
+            "记录": "jì lù",
+            "运动员": "yùn dòng yuán"
+          }
         }
       ]
     },
@@ -359,9 +453,22 @@
           "question": "他 _____ 到体育馆，_____ 开始认真训练了。",
           "type": "multiple_choice",
           "correct": "一…就…",
-          "options": ["一…就…", "尽管…还是…", "只要…就…", "不管…都…"],
-          "option_pinyin": ["yī...jiù...", "jǐn guǎn...hái shì...", "zhǐ yào...jiù...", "bù guǎn...dōu..."],
-          "word_hints": {"体育馆": "tǐ yù guǎn", "训练": "xùn liàn"}
+          "options": [
+            "一…就…",
+            "尽管…还是…",
+            "只要…就…",
+            "不管…都…"
+          ],
+          "option_pinyin": [
+            "yī...jiù...",
+            "jǐn guǎn...hái shì...",
+            "zhǐ yào...jiù...",
+            "bù guǎn...dōu..."
+          ],
+          "word_hints": {
+            "体育馆": "tǐ yù guǎn",
+            "训练": "xùn liàn"
+          }
         },
         {
           "question": "Choose the sentence that uses 一...就... correctly.",
@@ -379,7 +486,9 @@
             "Yī yùn dòng yuán tīng dào jié guǒ, gāo xìng de tiào le qǐ lái jiù.",
             "Yùn dòng yuán yī gāo xìng, jiù tīng dào jié guǒ de tiào le qǐ lái."
           ],
-          "word_hints": {"运动员": "yùn dòng yuán"}
+          "word_hints": {
+            "运动员": "yùn dòng yuán"
+          }
         },
         {
           "question": "What does 一...就... express?",
@@ -391,16 +500,35 @@
             "Two things happening at the same time",
             "An obstacle that doesn't prevent a result"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "教练 _____ 到赛场，_____ 开始检查运动员的准备情况。",
           "type": "multiple_choice",
           "correct": "一…就…",
-          "options": ["一…就…", "只要…就…", "尽管…还是…", "不管…都…"],
-          "option_pinyin": ["yī...jiù...", "zhǐ yào...jiù...", "jǐn guǎn...hái shì...", "bù guǎn...dōu..."],
-          "word_hints": {"教练": "jiào liàn", "赛场": "sài chǎng", "运动员": "yùn dòng yuán"}
+          "options": [
+            "一…就…",
+            "只要…就…",
+            "尽管…还是…",
+            "不管…都…"
+          ],
+          "option_pinyin": [
+            "yī...jiù...",
+            "zhǐ yào...jiù...",
+            "jǐn guǎn...hái shì...",
+            "bù guǎn...dōu..."
+          ],
+          "word_hints": {
+            "教练": "jiào liàn",
+            "赛场": "sài chǎng",
+            "运动员": "yùn dòng yuán"
+          }
         },
         {
           "question": "Which structure is correct with 一...就...?",
@@ -412,7 +540,12 @@
             "一 + immediate result + 就 + first action/event",
             "Subject + 一 + object + 就 + verb"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -438,64 +571,137 @@
       "question": "What does 运动员 mean?",
       "type": "multiple_choice",
       "correct": "Athlete; sportsperson",
-      "options": ["Athlete; sportsperson", "Coach", "Champion", "Referee"],
-      "word_hints": {"运动员": "yùn dòng yuán"}
+      "options": [
+        "Athlete; sportsperson",
+        "Coach",
+        "Champion",
+        "Referee"
+      ],
+      "word_hints": {
+        "运动员": "yùn dòng yuán"
+      }
     },
     {
       "question": "Which word means 'training; to train'?",
       "type": "multiple_choice",
       "correct": "训练",
-      "options": ["比赛", "训练", "竞争", "坚持"],
-      "word_hints": {"比赛": "bǐ sài", "训练": "xùn liàn", "竞争": "jìng zhēng", "坚持": "jiān chí"}
+      "options": [
+        "比赛",
+        "训练",
+        "竞争",
+        "坚持"
+      ],
+      "word_hints": {
+        "比赛": "bǐ sài",
+        "训练": "xùn liàn",
+        "竞争": "jìng zhēng",
+        "坚持": "jiān chí"
+      }
     },
     {
       "question": "What does 冠军 mean?",
       "type": "multiple_choice",
       "correct": "Champion; championship",
-      "options": ["Champion; championship", "Record", "Athlete", "Coach"],
-      "word_hints": {"冠军": "guàn jūn"}
+      "options": [
+        "Champion; championship",
+        "Record",
+        "Athlete",
+        "Coach"
+      ],
+      "word_hints": {
+        "冠军": "guàn jūn"
+      }
     },
     {
       "question": "Which word means 'coach; trainer'?",
       "type": "multiple_choice",
       "correct": "教练",
-      "options": ["运动员", "教练", "记录", "体能"],
-      "word_hints": {"运动员": "yùn dòng yuán", "教练": "jiào liàn", "记录": "jì lù", "体能": "tǐ néng"}
+      "options": [
+        "运动员",
+        "教练",
+        "记录",
+        "体能"
+      ],
+      "word_hints": {
+        "运动员": "yùn dòng yuán",
+        "教练": "jiào liàn",
+        "记录": "jì lù",
+        "体能": "tǐ néng"
+      }
     },
     {
       "question": "What does 坚持 mean?",
       "type": "multiple_choice",
       "correct": "To persist; to keep at it",
-      "options": ["To persist; to keep at it", "To compete", "To win", "To break a record"],
-      "word_hints": {"坚持": "jiān chí"}
+      "options": [
+        "To persist; to keep at it",
+        "To compete",
+        "To win",
+        "To break a record"
+      ],
+      "word_hints": {
+        "坚持": "jiān chí"
+      }
     },
     {
       "question": "Which word means 'competition venue; arena'?",
       "type": "multiple_choice",
       "correct": "赛场",
-      "options": ["体育馆", "赛场", "记录", "冠军"],
-      "word_hints": {"体育馆": "tǐ yù guǎn", "赛场": "sài chǎng", "记录": "jì lù", "冠军": "guàn jūn"}
+      "options": [
+        "体育馆",
+        "赛场",
+        "记录",
+        "冠军"
+      ],
+      "word_hints": {
+        "体育馆": "tǐ yù guǎn",
+        "赛场": "sài chǎng",
+        "记录": "jì lù",
+        "冠军": "guàn jūn"
+      }
     },
     {
       "question": "What does 体能 mean?",
       "type": "multiple_choice",
       "correct": "Physical fitness; physical ability",
-      "options": ["Physical fitness; physical ability", "Competition", "Training", "Record"],
-      "word_hints": {"体能": "tǐ néng"}
+      "options": [
+        "Physical fitness; physical ability",
+        "Competition",
+        "Training",
+        "Record"
+      ],
+      "word_hints": {
+        "体能": "tǐ néng"
+      }
     },
     {
       "question": "What does 体育馆 mean?",
       "type": "multiple_choice",
       "correct": "Gymnasium; sports hall",
-      "options": ["Gymnasium; sports hall", "Competition arena", "Training field", "Swimming pool"],
-      "word_hints": {"体育馆": "tǐ yù guǎn"}
+      "options": [
+        "Gymnasium; sports hall",
+        "Competition arena",
+        "Training field",
+        "Swimming pool"
+      ],
+      "word_hints": {
+        "体育馆": "tǐ yù guǎn"
+      }
     },
     {
       "question": "Fill in the blank: 只要认真训练，_____ 能提高体能。",
       "type": "multiple_choice",
       "correct": "就",
-      "options": ["就", "才", "都", "也"],
-      "word_hints": {"训练": "xùn liàn", "体能": "tǐ néng"}
+      "options": [
+        "就",
+        "才",
+        "都",
+        "也"
+      ],
+      "word_hints": {
+        "训练": "xùn liàn",
+        "体能": "tǐ néng"
+      }
     },
     {
       "question": "What does 只要...就... express?",
@@ -513,8 +719,16 @@
       "question": "Fill in the blank: 尽管比赛很艰难，她 _____ 坚持到了终点。",
       "type": "multiple_choice",
       "correct": "还是",
-      "options": ["还是", "就", "才", "只"],
-      "word_hints": {"比赛": "bǐ sài", "坚持": "jiān chí"}
+      "options": [
+        "还是",
+        "就",
+        "才",
+        "只"
+      ],
+      "word_hints": {
+        "比赛": "bǐ sài",
+        "坚持": "jiān chí"
+      }
     },
     {
       "question": "What does 尽管...还是... express?",
@@ -532,56 +746,109 @@
       "question": "Fill in the blank: 运动员 _____ 到赛场，_____ 开始做热身运动。",
       "type": "multiple_choice",
       "correct": "一…就…",
-      "options": ["一…就…", "只要…就…", "尽管…还是…", "不管…都…"],
-      "word_hints": {"运动员": "yùn dòng yuán", "赛场": "sài chǎng"}
+      "options": [
+        "一…就…",
+        "只要…就…",
+        "尽管…还是…",
+        "不管…都…"
+      ],
+      "word_hints": {
+        "运动员": "yùn dòng yuán",
+        "赛场": "sài chǎng"
+      }
     },
     {
       "question": "What does 记录 mean?",
       "type": "multiple_choice",
       "correct": "Record; to record",
-      "options": ["Record; to record", "Result", "Competition", "Training"],
-      "word_hints": {"记录": "jì lù"}
+      "options": [
+        "Record; to record",
+        "Result",
+        "Competition",
+        "Training"
+      ],
+      "word_hints": {
+        "记录": "jì lù"
+      }
     },
     {
       "question": "What does the phrase 刻苦训练 mean?",
       "type": "multiple_choice",
       "correct": "To train hard; to train rigorously",
-      "options": ["To train hard; to train rigorously", "To win the championship", "To break a record", "To keep exercising"],
-      "word_hints": {"训练": "xùn liàn"}
+      "options": [
+        "To train hard; to train rigorously",
+        "To win the championship",
+        "To break a record",
+        "To keep exercising"
+      ],
+      "word_hints": {
+        "训练": "xùn liàn"
+      }
     },
     {
       "question": "What does 竞争 mean?",
       "type": "multiple_choice",
       "correct": "Competition; to compete",
-      "options": ["Competition; to compete", "Training", "Record", "Persistence"],
-      "word_hints": {"竞争": "jìng zhēng"}
+      "options": [
+        "Competition; to compete",
+        "Training",
+        "Record",
+        "Persistence"
+      ],
+      "word_hints": {
+        "竞争": "jìng zhēng"
+      }
     },
     {
       "question": "Which phrase means 'to break a record'?",
       "type": "multiple_choice",
       "correct": "打破记录",
-      "options": ["打破记录", "赢得冠军", "坚持锻炼", "参加比赛"],
-      "word_hints": {"记录": "jì lù"}
+      "options": [
+        "打破记录",
+        "赢得冠军",
+        "坚持锻炼",
+        "参加比赛"
+      ],
+      "word_hints": {
+        "记录": "jì lù"
+      }
     },
     {
       "question": "At the 2008 Beijing Olympics, which position did China finish in the gold medal standings?",
       "type": "multiple_choice",
       "correct": "First (topped the gold medal tally)",
-      "options": ["First (topped the gold medal tally)", "Second", "Third", "Fifth"],
+      "options": [
+        "First (topped the gold medal tally)",
+        "Second",
+        "Third",
+        "Fifth"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does the phrase 提高体能 mean?",
       "type": "multiple_choice",
       "correct": "To improve physical fitness",
-      "options": ["To improve physical fitness", "To win a match", "To break a record", "To attend training"],
-      "word_hints": {"体能": "tǐ néng"}
+      "options": [
+        "To improve physical fitness",
+        "To win a match",
+        "To break a record",
+        "To attend training"
+      ],
+      "word_hints": {
+        "体能": "tǐ néng"
+      }
     },
     {
       "question": "Which grammar pattern means 'as soon as...then...'?",
       "type": "multiple_choice",
       "correct": "一...就...",
-      "options": ["一...就...", "只要...就...", "尽管...还是...", "不管...都..."],
+      "options": [
+        "一...就...",
+        "只要...就...",
+        "尽管...还是...",
+        "不管...都..."
+      ],
       "word_hints": {}
     }
   ],
@@ -591,8 +858,16 @@
       "title": "Before the Competition",
       "title_chinese": "比赛前",
       "speakers": {
-        "A": {"name": "志远", "role": "运动员", "gender": "male"},
-        "B": {"name": "陈教练", "role": "教练", "gender": "male"}
+        "A": {
+          "name": "鲁迅",
+          "role": "运动员",
+          "gender": "male"
+        },
+        "B": {
+          "name": "陈教练",
+          "role": "教练",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -650,13 +925,21 @@
       "title": "Discussing Fitness Goals",
       "title_chinese": "讨论健身目标",
       "speakers": {
-        "A": {"name": "小雪", "role": "健身爱好者", "gender": "female"},
-        "B": {"name": "阿强", "role": "朋友", "gender": "male"}
+        "A": {
+          "name": "奥斯汀",
+          "role": "健身爱好者",
+          "gender": "female"
+        },
+        "B": {
+          "name": "梵高",
+          "role": "朋友",
+          "gender": "male"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "阿强，你最近每天去体育馆训练，感觉体能提高了吗？",
+          "chinese": "梵高，你最近每天去体育馆训练，感觉体能提高了吗？",
           "pinyin": "Ā qiáng, nǐ zuì jìn měi tiān qù tǐ yù guǎn xùn liàn, gǎn jué tǐ néng tí gāo le ma?",
           "english": "Aqiang, you've been going to the gymnasium to train every day lately — do you feel your physical fitness has improved?"
         },

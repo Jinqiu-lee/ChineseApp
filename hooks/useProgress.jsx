@@ -177,6 +177,29 @@ export default function useProgress() {
     });
   }, []);
 
+  // ── Simple XP + streak update (no lesson/level tracking) ──────
+  // Updates streak: yesterday → increment, today → no change, older → reset to 1
+  const addXP = useCallback((amount) => {
+    setProgress((prev) => {
+      const today = todayString();
+      let newStreak = prev.streak;
+      if (prev.lastPlayedDate !== today) {
+        newStreak = prev.lastPlayedDate === yesterdayString() ? prev.streak + 1 : 1;
+      }
+      return {
+        ...prev,
+        totalXP: prev.totalXP + amount,
+        streak: newStreak,
+        lastPlayedDate: today,
+      };
+    });
+  }, []);
+
+  // ── Complete a lesson: awards 10 XP and updates streak ────────
+  const completeLesson = useCallback(() => {
+    addXP(10);
+  }, [addXP]);
+
   const resetProgress = useCallback(async () => {
     setProgress(DEFAULT_PROGRESS);
     await AsyncStorage.removeItem(STORAGE_KEY);
@@ -184,9 +207,16 @@ export default function useProgress() {
 
   return {
     progress, loaded,
+    // existing API
     awardXP, recordLessonScore,
     completeOnboarding, redoOnboarding,
     changeLevel, poorLessonAlert, dismissPoorAlert,
     resetProgress, getRank, getXPToNextRank,
+    // Session 1: simple XP & streak API
+    addXP,
+    completeLesson,
+    xp: progress.totalXP,
+    streak: progress.streak,
+    lastActiveDate: progress.lastPlayedDate,
   };
 }

@@ -204,17 +204,43 @@
           "question": "_____ 遇到什么困难，社会责任都不能逃避。",
           "type": "multiple_choice",
           "correct": "无论",
-          "options": ["无论", "通过", "随着", "因此"],
-          "option_pinyin": ["wú lùn", "tōng guò", "suí zhe", "yīn cǐ"],
-          "word_hints": {"社会": "shè huì", "责任": "zé rèn"}
+          "options": [
+            "无论",
+            "通过",
+            "随着",
+            "因此"
+          ],
+          "option_pinyin": [
+            "wú lùn",
+            "tōng guò",
+            "suí zhe",
+            "yīn cǐ"
+          ],
+          "word_hints": {
+            "社会": "shè huì",
+            "责任": "zé rèn"
+          }
         },
         {
           "question": "无论国际交流多么频繁，民族文化 _____ 应该被保护。",
           "type": "multiple_choice",
           "correct": "都",
-          "options": ["都", "但", "也", "才"],
-          "option_pinyin": ["dōu", "dàn", "yě", "cái"],
-          "word_hints": {"国际": "guó jì", "民族": "mín zú"}
+          "options": [
+            "都",
+            "但",
+            "也",
+            "才"
+          ],
+          "option_pinyin": [
+            "dōu",
+            "dàn",
+            "yě",
+            "cái"
+          ],
+          "word_hints": {
+            "国际": "guó jì",
+            "民族": "mín zú"
+          }
         },
         {
           "question": "Choose the correct sentence with 无论...都...",
@@ -232,7 +258,10 @@
             "Wú lùn dōu shén me yǔ yán, yǒu qí dú tè de yì shù jià zhí.",
             "Wú lùn shén me yǔ yán yǒu, qí dú tè de yì shù jià zhí dōu."
           ],
-          "word_hints": {"语言": "yǔ yán", "艺术": "yì shù"}
+          "word_hints": {
+            "语言": "yǔ yán",
+            "艺术": "yì shù"
+          }
         },
         {
           "question": "What is the difference between 无论 and 不管?",
@@ -244,16 +273,35 @@
             "不管 is more formal",
             "无论 can only be used in writing"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "_____ 教育发展得多快，学生都要重视知识。",
           "type": "multiple_choice",
           "correct": "无论",
-          "options": ["无论", "既然", "否则", "为了"],
-          "option_pinyin": ["wú lùn", "jì rán", "fǒu zé", "wèi le"],
-          "word_hints": {"教育": "jiào yù", "发展": "fā zhǎn", "知识": "zhī shi"}
+          "options": [
+            "无论",
+            "既然",
+            "否则",
+            "为了"
+          ],
+          "option_pinyin": [
+            "wú lùn",
+            "jì rán",
+            "fǒu zé",
+            "wèi le"
+          ],
+          "word_hints": {
+            "教育": "jiào yù",
+            "发展": "fā zhǎn",
+            "知识": "zhī shi"
+          }
         }
       ]
     },
@@ -278,9 +326,23 @@
           "question": "这个法律知识课程 _____ 专家教授来讲解。",
           "type": "multiple_choice",
           "correct": "由",
-          "options": ["由", "给", "让", "对"],
-          "option_pinyin": ["yóu", "gěi", "ràng", "duì"],
-          "word_hints": {"法律": "fǎ lǜ", "知识": "zhī shi", "教授": "jiào shòu"}
+          "options": [
+            "由",
+            "给",
+            "让",
+            "对"
+          ],
+          "option_pinyin": [
+            "yóu",
+            "gěi",
+            "ràng",
+            "duì"
+          ],
+          "word_hints": {
+            "法律": "fǎ lǜ",
+            "知识": "zhī shi",
+            "教授": "jiào shòu"
+          }
         },
         {
           "question": "Choose the correct sentence with 由 as an agent marker.",
@@ -298,31 +360,68 @@
             "Yóu zhè cì guó jì jiāo liú liǎng guó dà shǐ fù zé.",
             "Zhè cì guó jì jiāo liú fù zé yóu liǎng guó dà shǐ."
           ],
-          "word_hints": {"国际": "guó jì"}
+          "word_hints": {
+            "国际": "guó jì"
+          }
         },
         {
           "question": "民族艺术的传承 _____ 年轻一代来负责。",
           "type": "multiple_choice",
           "correct": "由",
-          "options": ["由", "通过", "对于", "虽然"],
-          "option_pinyin": ["yóu", "tōng guò", "duì yú", "suī rán"],
-          "word_hints": {"民族": "mín zú", "艺术": "yì shù"}
+          "options": [
+            "由",
+            "通过",
+            "对于",
+            "虽然"
+          ],
+          "option_pinyin": [
+            "yóu",
+            "tōng guò",
+            "duì yú",
+            "suī rán"
+          ],
+          "word_hints": {
+            "民族": "mín zú",
+            "艺术": "yì shù"
+          }
         },
         {
           "question": "由 as an agent marker answers which question?",
           "type": "multiple_choice",
           "correct": "By whom?",
-          "options": ["By whom?", "How?", "When?", "Why?"],
-          "option_pinyin": ["", "", "", ""],
+          "options": [
+            "By whom?",
+            "How?",
+            "When?",
+            "Why?"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "这个科学项目 _____ 研究团队来完成。",
           "type": "multiple_choice",
           "correct": "由",
-          "options": ["由", "因为", "虽然", "但是"],
-          "option_pinyin": ["yóu", "yīn wèi", "suī rán", "dàn shì"],
-          "word_hints": {"科学": "kē xué"}
+          "options": [
+            "由",
+            "因为",
+            "虽然",
+            "但是"
+          ],
+          "option_pinyin": [
+            "yóu",
+            "yīn wèi",
+            "suī rán",
+            "dàn shì"
+          ],
+          "word_hints": {
+            "科学": "kē xué"
+          }
         }
       ]
     },
@@ -347,9 +446,22 @@
           "question": "_____ 民族都有自己独特的艺术文化。",
           "type": "multiple_choice",
           "correct": "任何",
-          "options": ["任何", "很多", "一些", "少数"],
-          "option_pinyin": ["rèn hé", "hěn duō", "yī xiē", "shǎo shù"],
-          "word_hints": {"民族": "mín zú", "艺术": "yì shù"}
+          "options": [
+            "任何",
+            "很多",
+            "一些",
+            "少数"
+          ],
+          "option_pinyin": [
+            "rèn hé",
+            "hěn duō",
+            "yī xiē",
+            "shǎo shù"
+          ],
+          "word_hints": {
+            "民族": "mín zú",
+            "艺术": "yì shù"
+          }
         },
         {
           "question": "Choose the correct use of 任何.",
@@ -367,31 +479,69 @@
             "Rèn hé dōu rén yǒu xué xí zhī shi de quán lì.",
             "Yǒu xué xí zhī shi de quán lì rèn hé rén dōu."
           ],
-          "word_hints": {"知识": "zhī shi"}
+          "word_hints": {
+            "知识": "zhī shi"
+          }
         },
         {
           "question": "_____ 科学发现都对社会发展有贡献。",
           "type": "multiple_choice",
           "correct": "任何",
-          "options": ["任何", "所有", "大量", "部分"],
-          "option_pinyin": ["rèn hé", "suǒ yǒu", "dà liàng", "bù fèn"],
-          "word_hints": {"科学": "kē xué", "社会": "shè huì", "发展": "fā zhǎn"}
+          "options": [
+            "任何",
+            "所有",
+            "大量",
+            "部分"
+          ],
+          "option_pinyin": [
+            "rèn hé",
+            "suǒ yǒu",
+            "dà liàng",
+            "bù fèn"
+          ],
+          "word_hints": {
+            "科学": "kē xué",
+            "社会": "shè huì",
+            "发展": "fā zhǎn"
+          }
         },
         {
           "question": "任何 must be followed by:",
           "type": "multiple_choice",
           "correct": "A noun",
-          "options": ["A noun", "A verb", "An adjective", "A number"],
-          "option_pinyin": ["", "", "", ""],
+          "options": [
+            "A noun",
+            "A verb",
+            "An adjective",
+            "A number"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "教育是 _____ 人都应该重视的事情。",
           "type": "multiple_choice",
           "correct": "任何",
-          "options": ["任何", "每一", "这些", "那些"],
-          "option_pinyin": ["rèn hé", "měi yī", "zhè xiē", "nà xiē"],
-          "word_hints": {"教育": "jiào yù"}
+          "options": [
+            "任何",
+            "每一",
+            "这些",
+            "那些"
+          ],
+          "option_pinyin": [
+            "rèn hé",
+            "měi yī",
+            "zhè xiē",
+            "nà xiē"
+          ],
+          "word_hints": {
+            "教育": "jiào yù"
+          }
         }
       ]
     }
@@ -416,98 +566,205 @@
       "question": "What does 社会 mean?",
       "type": "multiple_choice",
       "correct": "Society",
-      "options": ["Society", "Education", "Science", "Law"],
-      "word_hints": {"社会": "shè huì"}
+      "options": [
+        "Society",
+        "Education",
+        "Science",
+        "Law"
+      ],
+      "word_hints": {
+        "社会": "shè huì"
+      }
     },
     {
       "question": "Which word means 'responsibility; duty'?",
       "type": "multiple_choice",
       "correct": "责任",
-      "options": ["责任", "社会", "法律", "教育"],
-      "word_hints": {"责任": "zé rèn", "社会": "shè huì", "法律": "fǎ lǜ", "教育": "jiào yù"}
+      "options": [
+        "责任",
+        "社会",
+        "法律",
+        "教育"
+      ],
+      "word_hints": {
+        "责任": "zé rèn",
+        "社会": "shè huì",
+        "法律": "fǎ lǜ",
+        "教育": "jiào yù"
+      }
     },
     {
       "question": "What does 法律 mean?",
       "type": "multiple_choice",
       "correct": "Law; legislation",
-      "options": ["Law; legislation", "Education", "Science", "Society"],
-      "word_hints": {"法律": "fǎ lǜ"}
+      "options": [
+        "Law; legislation",
+        "Education",
+        "Science",
+        "Society"
+      ],
+      "word_hints": {
+        "法律": "fǎ lǜ"
+      }
     },
     {
       "question": "Which word means 'knowledge'?",
       "type": "multiple_choice",
       "correct": "知识",
-      "options": ["知识", "语言", "艺术", "科学"],
-      "word_hints": {"知识": "zhī shi", "语言": "yǔ yán", "艺术": "yì shù", "科学": "kē xué"}
+      "options": [
+        "知识",
+        "语言",
+        "艺术",
+        "科学"
+      ],
+      "word_hints": {
+        "知识": "zhī shi",
+        "语言": "yǔ yán",
+        "艺术": "yì shù",
+        "科学": "kē xué"
+      }
     },
     {
       "question": "What does 科学 mean?",
       "type": "multiple_choice",
       "correct": "Science; scientific",
-      "options": ["Science; scientific", "Art", "Language", "Society"],
-      "word_hints": {"科学": "kē xué"}
+      "options": [
+        "Science; scientific",
+        "Art",
+        "Language",
+        "Society"
+      ],
+      "word_hints": {
+        "科学": "kē xué"
+      }
     },
     {
       "question": "Which word means 'language'?",
       "type": "multiple_choice",
       "correct": "语言",
-      "options": ["语言", "艺术", "民族", "知识"],
-      "word_hints": {"语言": "yǔ yán", "艺术": "yì shù", "民族": "mín zú", "知识": "zhī shi"}
+      "options": [
+        "语言",
+        "艺术",
+        "民族",
+        "知识"
+      ],
+      "word_hints": {
+        "语言": "yǔ yán",
+        "艺术": "yì shù",
+        "民族": "mín zú",
+        "知识": "zhī shi"
+      }
     },
     {
       "question": "What does 艺术 mean?",
       "type": "multiple_choice",
       "correct": "Art; the arts",
-      "options": ["Art; the arts", "Science", "Knowledge", "Language"],
-      "word_hints": {"艺术": "yì shù"}
+      "options": [
+        "Art; the arts",
+        "Science",
+        "Knowledge",
+        "Language"
+      ],
+      "word_hints": {
+        "艺术": "yì shù"
+      }
     },
     {
       "question": "What does 民族 mean?",
       "type": "multiple_choice",
       "correct": "Ethnic group; nationality; nation",
-      "options": ["Ethnic group; nationality; nation", "Society", "International", "Responsibility"],
-      "word_hints": {"民族": "mín zú"}
+      "options": [
+        "Ethnic group; nationality; nation",
+        "Society",
+        "International",
+        "Responsibility"
+      ],
+      "word_hints": {
+        "民族": "mín zú"
+      }
     },
     {
       "question": "Which word means 'international'?",
       "type": "multiple_choice",
       "correct": "国际",
-      "options": ["国际", "社会", "民族", "科学"],
-      "word_hints": {"国际": "guó jì", "社会": "shè huì", "民族": "mín zú", "科学": "kē xué"}
+      "options": [
+        "国际",
+        "社会",
+        "民族",
+        "科学"
+      ],
+      "word_hints": {
+        "国际": "guó jì",
+        "社会": "shè huì",
+        "民族": "mín zú",
+        "科学": "kē xué"
+      }
     },
     {
       "question": "What does 重视 mean?",
       "type": "multiple_choice",
       "correct": "To attach importance to; to value",
-      "options": ["To attach importance to; to value", "To develop", "To educate", "To understand"],
-      "word_hints": {"重视": "zhòng shì"}
+      "options": [
+        "To attach importance to; to value",
+        "To develop",
+        "To educate",
+        "To understand"
+      ],
+      "word_hints": {
+        "重视": "zhòng shì"
+      }
     },
     {
       "question": "Fill in: _____ 遇到什么困难，都要承担社会责任。",
       "type": "multiple_choice",
       "correct": "无论",
-      "options": ["无论", "不管", "只要", "虽然"],
-      "word_hints": {"社会": "shè huì", "责任": "zé rèn"}
+      "options": [
+        "无论",
+        "不管",
+        "只要",
+        "虽然"
+      ],
+      "word_hints": {
+        "社会": "shè huì",
+        "责任": "zé rèn"
+      }
     },
     {
       "question": "What does 无论 mean?",
       "type": "multiple_choice",
       "correct": "No matter what; regardless",
-      "options": ["No matter what; regardless", "As long as", "Since", "Although"],
+      "options": [
+        "No matter what; regardless",
+        "As long as",
+        "Since",
+        "Although"
+      ],
       "word_hints": {}
     },
     {
       "question": "Fill in: 这个项目 _____ 科学团队来负责。",
       "type": "multiple_choice",
       "correct": "由",
-      "options": ["由", "让", "通过", "随着"],
-      "word_hints": {"科学": "kē xué"}
+      "options": [
+        "由",
+        "让",
+        "通过",
+        "随着"
+      ],
+      "word_hints": {
+        "科学": "kē xué"
+      }
     },
     {
       "question": "What does 任何 mean?",
       "type": "multiple_choice",
       "correct": "Any; whichever (no exceptions)",
-      "options": ["Any; whichever (no exceptions)", "Every", "Some", "Most"],
+      "options": [
+        "Any; whichever (no exceptions)",
+        "Every",
+        "Some",
+        "Most"
+      ],
       "word_hints": {}
     },
     {
@@ -520,14 +777,24 @@
         "任何都应该人遵守法律。",
         "应该遵守任何法律人都。"
       ],
-      "word_hints": {"法律": "fǎ lǜ"}
+      "word_hints": {
+        "法律": "fǎ lǜ"
+      }
     },
     {
       "question": "What does the phrase 社会责任 mean?",
       "type": "multiple_choice",
       "correct": "Social responsibility",
-      "options": ["Social responsibility", "Educational duty", "Legal obligation", "National identity"],
-      "word_hints": {"社会": "shè huì", "责任": "zé rèn"}
+      "options": [
+        "Social responsibility",
+        "Educational duty",
+        "Legal obligation",
+        "National identity"
+      ],
+      "word_hints": {
+        "社会": "shè huì",
+        "责任": "zé rèn"
+      }
     },
     {
       "question": "What does 孝顺 mean in Chinese culture?",
@@ -545,21 +812,40 @@
       "question": "What does 教育 mean?",
       "type": "multiple_choice",
       "correct": "Education; to educate",
-      "options": ["Education; to educate", "Knowledge", "Science", "Society"],
-      "word_hints": {"教育": "jiào yù"}
+      "options": [
+        "Education; to educate",
+        "Knowledge",
+        "Science",
+        "Society"
+      ],
+      "word_hints": {
+        "教育": "jiào yù"
+      }
     },
     {
       "question": "What does the phrase 国际交流 mean?",
       "type": "multiple_choice",
       "correct": "International exchange; international communication",
-      "options": ["International exchange; international communication", "Social responsibility", "Educational development", "Legal knowledge"],
-      "word_hints": {"国际": "guó jì"}
+      "options": [
+        "International exchange; international communication",
+        "Social responsibility",
+        "Educational development",
+        "Legal knowledge"
+      ],
+      "word_hints": {
+        "国际": "guó jì"
+      }
     },
     {
       "question": "任何 must always be followed by:",
       "type": "multiple_choice",
       "correct": "A noun",
-      "options": ["A noun", "A verb", "An adjective", "A number"],
+      "options": [
+        "A noun",
+        "A verb",
+        "An adjective",
+        "A number"
+      ],
       "word_hints": {}
     }
   ],
@@ -569,8 +855,16 @@
       "title": "Discussion on Social Responsibility",
       "title_chinese": "讨论社会责任",
       "speakers": {
-        "A": {"name": "老师", "role": "老师", "gender": "female"},
-        "B": {"name": "学生", "role": "学生", "gender": "male"}
+        "A": {
+          "name": "老师",
+          "role": "老师",
+          "gender": "female"
+        },
+        "B": {
+          "name": "学生",
+          "role": "学生",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -622,14 +916,22 @@
       "title": "Talking About Chinese Values",
       "title_chinese": "谈谈中国价值观",
       "speakers": {
-        "A": {"name": "大卫", "role": "外国朋友", "gender": "male"},
-        "B": {"name": "小芳", "role": "中国朋友", "gender": "female"}
+        "A": {
+          "name": "鲁迅",
+          "role": "外国朋友",
+          "gender": "male"
+        },
+        "B": {
+          "name": "严歌苓",
+          "role": "中国朋友",
+          "gender": "female"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "小芳，我发现中国人非常重视家庭，这是为什么？",
-          "pinyin": "Xiǎo Fāng, wǒ fā xiàn zhōng guó rén fēi cháng zhòng shì jiā tíng, zhè shì wèi shén me?",
+          "chinese": "严歌苓，我发现中国人非常重视家庭，这是为什么？",
+          "pinyin": "Yán Gē Líng, wǒ fā xiàn zhōng guó rén fēi cháng zhòng shì jiā tíng, zhè shì wèi shén me?",
           "english": "Xiaofang, I notice that Chinese people value family very much. Why is that?"
         },
         {

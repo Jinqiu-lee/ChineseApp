@@ -204,17 +204,44 @@
           "question": "这位___演员曾在国家大剧院演出过。(formal context — choose the correct word)",
           "type": "multiple_choice",
           "correct": "著名",
-          "options": ["著名", "很有名", "非常有名", "很著名"],
-          "option_pinyin": ["zhù míng", "hěn yǒu míng", "fēi cháng yǒu míng", "hěn zhù míng"],
-          "word_hints": {"演员": "yǎn yuán", "演出": "yǎn chū"}
+          "options": [
+            "著名",
+            "很有名",
+            "非常有名",
+            "很著名"
+          ],
+          "option_pinyin": [
+            "zhù míng",
+            "hěn yǒu míng",
+            "fēi cháng yǒu míng",
+            "hěn zhù míng"
+          ],
+          "word_hints": {
+            "演员": "yǎn yuán",
+            "演出": "yǎn chū"
+          }
         },
         {
           "question": "这个功夫表演在网上___，吸引了几百万人观看。",
           "type": "multiple_choice",
           "correct": "很有名",
-          "options": ["很有名", "著名", "很著名", "著名的"],
-          "option_pinyin": ["hěn yǒu míng", "zhù míng", "hěn zhù míng", "zhù míng de"],
-          "word_hints": {"功夫": "gōng fu", "表演": "biǎo yǎn", "吸引": "xī yǐn"}
+          "options": [
+            "很有名",
+            "著名",
+            "很著名",
+            "著名的"
+          ],
+          "option_pinyin": [
+            "hěn yǒu míng",
+            "zhù míng",
+            "hěn zhù míng",
+            "zhù míng de"
+          ],
+          "word_hints": {
+            "功夫": "gōng fu",
+            "表演": "biǎo yǎn",
+            "吸引": "xī yǐn"
+          }
         },
         {
           "question": "Which sentence uses 著名 correctly?",
@@ -232,7 +259,9 @@
             "Tā hěn zhù míng yì shù jiā, zuò pǐn biàn bù quán guó.",
             "Tā zhù míng hěn yì shù jiā, zuò pǐn biàn bù quán guó."
           ],
-          "word_hints": {"艺术": "yì shù"}
+          "word_hints": {
+            "艺术": "yì shù"
+          }
         },
         {
           "question": "What is the key grammatical difference between 著名 and 有名?",
@@ -244,16 +273,33 @@
             "They are grammatically identical",
             "著名 can only appear after 很"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "这部___小说被翻译成了三十多种语言。",
           "type": "multiple_choice",
           "correct": "著名",
-          "options": ["著名", "有名", "很有名", "非常"],
-          "option_pinyin": ["zhù míng", "yǒu míng", "hěn yǒu míng", "fēi cháng"],
-          "word_hints": {"小说": "xiǎo shuō"}
+          "options": [
+            "著名",
+            "有名",
+            "很有名",
+            "非常"
+          ],
+          "option_pinyin": [
+            "zhù míng",
+            "yǒu míng",
+            "hěn yǒu míng",
+            "fēi cháng"
+          ],
+          "word_hints": {
+            "小说": "xiǎo shuō"
+          }
         }
       ]
     },
@@ -278,17 +324,46 @@
           "question": "他对艺术很感兴趣，___是功夫表演。",
           "type": "multiple_choice",
           "correct": "尤其",
-          "options": ["尤其", "因此", "虽然", "反而"],
-          "option_pinyin": ["yóu qí", "yīn cǐ", "suī rán", "fǎn ér"],
-          "word_hints": {"艺术": "yì shù", "功夫": "gōng fu", "表演": "biǎo yǎn"}
+          "options": [
+            "尤其",
+            "因此",
+            "虽然",
+            "反而"
+          ],
+          "option_pinyin": [
+            "yóu qí",
+            "yīn cǐ",
+            "suī rán",
+            "fǎn ér"
+          ],
+          "word_hints": {
+            "艺术": "yì shù",
+            "功夫": "gōng fu",
+            "表演": "biǎo yǎn"
+          }
         },
         {
           "question": "这场演出非常精彩，___是那位著名演员的段落。",
           "type": "multiple_choice",
           "correct": "尤其",
-          "options": ["尤其", "而且", "所以", "不过"],
-          "option_pinyin": ["yóu qí", "ér qiě", "suǒ yǐ", "bú guò"],
-          "word_hints": {"演出": "yǎn chū", "精彩": "jīng cǎi", "著名": "zhù míng", "演员": "yǎn yuán"}
+          "options": [
+            "尤其",
+            "而且",
+            "所以",
+            "不过"
+          ],
+          "option_pinyin": [
+            "yóu qí",
+            "ér qiě",
+            "suǒ yǐ",
+            "bú guò"
+          ],
+          "word_hints": {
+            "演出": "yǎn chū",
+            "精彩": "jīng cǎi",
+            "著名": "zhù míng",
+            "演员": "yǎn yuán"
+          }
         },
         {
           "question": "Choose the sentence that uses 尤其 correctly.",
@@ -306,7 +381,10 @@
             "Tā yóu qí xǐ huan, shì lì shǐ xiǎo shuō yuè dú.",
             "Tā xǐ huan yóu qí yuè dú lì shǐ xiǎo shuō."
           ],
-          "word_hints": {"阅读": "yuè dú", "小说": "xiǎo shuō"}
+          "word_hints": {
+            "阅读": "yuè dú",
+            "小说": "xiǎo shuō"
+          }
         },
         {
           "question": "What is the difference between 尤其 and 特别?",
@@ -318,16 +396,36 @@
             "They have completely different meanings",
             "尤其 can only appear at the start of a sentence"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "这位著名演员吸引了很多粉丝，___是喜欢京剧的观众。",
           "type": "multiple_choice",
           "correct": "尤其",
-          "options": ["尤其", "并且", "但是", "即使"],
-          "option_pinyin": ["yóu qí", "bìng qiě", "dàn shì", "jí shǐ"],
-          "word_hints": {"著名": "zhù míng", "演员": "yǎn yuán", "吸引": "xī yǐn", "京剧": "jīng jù"}
+          "options": [
+            "尤其",
+            "并且",
+            "但是",
+            "即使"
+          ],
+          "option_pinyin": [
+            "yóu qí",
+            "bìng qiě",
+            "dàn shì",
+            "jí shǐ"
+          ],
+          "word_hints": {
+            "著名": "zhù míng",
+            "演员": "yǎn yuán",
+            "吸引": "xī yǐn",
+            "京剧": "jīng jù"
+          }
         }
       ]
     },
@@ -352,17 +450,49 @@
           "question": "这本著名小说___了全世界的读者。",
           "type": "multiple_choice",
           "correct": "吸引",
-          "options": ["吸引", "重视", "表演", "阅读"],
-          "option_pinyin": ["xī yǐn", "zhòng shì", "biǎo yǎn", "yuè dú"],
-          "word_hints": {"著名": "zhù míng", "小说": "xiǎo shuō", "吸引": "xī yǐn", "表演": "biǎo yǎn", "阅读": "yuè dú"}
+          "options": [
+            "吸引",
+            "重视",
+            "表演",
+            "阅读"
+          ],
+          "option_pinyin": [
+            "xī yǐn",
+            "zhòng shì",
+            "biǎo yǎn",
+            "yuè dú"
+          ],
+          "word_hints": {
+            "著名": "zhù míng",
+            "小说": "xiǎo shuō",
+            "吸引": "xī yǐn",
+            "表演": "biǎo yǎn",
+            "阅读": "yuè dú"
+          }
         },
         {
           "question": "我___京剧演员的精彩表演深深吸引住了。",
           "type": "multiple_choice",
           "correct": "被",
-          "options": ["被", "把", "让", "给"],
-          "option_pinyin": ["bèi", "bǎ", "ràng", "gěi"],
-          "word_hints": {"京剧": "jīng jù", "演员": "yǎn yuán", "精彩": "jīng cǎi", "表演": "biǎo yǎn", "吸引": "xī yǐn"}
+          "options": [
+            "被",
+            "把",
+            "让",
+            "给"
+          ],
+          "option_pinyin": [
+            "bèi",
+            "bǎ",
+            "ràng",
+            "gěi"
+          ],
+          "word_hints": {
+            "京剧": "jīng jù",
+            "演员": "yǎn yuán",
+            "精彩": "jīng cǎi",
+            "表演": "biǎo yǎn",
+            "吸引": "xī yǐn"
+          }
         },
         {
           "question": "Choose the correct sentence using 吸引.",
@@ -380,23 +510,56 @@
             "Zhè bù yì shù zá zhì hěn yǒu duì nián qīng rén xī yǐn lì.",
             "Duì zhè bù yì shù zá zhì nián qīng rén xī yǐn lì hěn yǒu."
           ],
-          "word_hints": {"艺术": "yì shù", "杂志": "zá zhì", "吸引": "xī yǐn"}
+          "word_hints": {
+            "艺术": "yì shù",
+            "杂志": "zá zhì",
+            "吸引": "xī yǐn"
+          }
         },
         {
           "question": "Which pattern is most natural when describing being captivated by a performance?",
           "type": "multiple_choice",
           "correct": "被...吸引住了",
-          "options": ["被...吸引住了", "吸引被...住了", "对...很吸引", "让...吸引力"],
-          "option_pinyin": ["bèi...xī yǐn zhù le", "xī yǐn bèi...zhù le", "duì...hěn xī yǐn", "ràng...xī yǐn lì"],
-          "word_hints": {"吸引": "xī yǐn"}
+          "options": [
+            "被...吸引住了",
+            "吸引被...住了",
+            "对...很吸引",
+            "让...吸引力"
+          ],
+          "option_pinyin": [
+            "bèi...xī yǐn zhù le",
+            "xī yǐn bèi...zhù le",
+            "duì...hěn xī yǐn",
+            "ràng...xī yǐn lì"
+          ],
+          "word_hints": {
+            "吸引": "xī yǐn"
+          }
         },
         {
           "question": "这场京剧演出的精彩___了很多从未看过京剧的外国人。",
           "type": "multiple_choice",
           "correct": "吸引",
-          "options": ["吸引", "著名", "表演", "演出"],
-          "option_pinyin": ["xī yǐn", "zhù míng", "biǎo yǎn", "yǎn chū"],
-          "word_hints": {"京剧": "jīng jù", "演出": "yǎn chū", "精彩": "jīng cǎi", "吸引": "xī yǐn", "著名": "zhù míng", "表演": "biǎo yǎn"}
+          "options": [
+            "吸引",
+            "著名",
+            "表演",
+            "演出"
+          ],
+          "option_pinyin": [
+            "xī yǐn",
+            "zhù míng",
+            "biǎo yǎn",
+            "yǎn chū"
+          ],
+          "word_hints": {
+            "京剧": "jīng jù",
+            "演出": "yǎn chū",
+            "精彩": "jīng cǎi",
+            "吸引": "xī yǐn",
+            "著名": "zhù míng",
+            "表演": "biǎo yǎn"
+          }
         }
       ]
     }
@@ -426,78 +589,168 @@
       "question": "What does 京剧 mean?",
       "type": "multiple_choice",
       "correct": "Peking Opera",
-      "options": ["Peking Opera", "Kung fu", "Art", "Performance"],
-      "word_hints": {"京剧": "jīng jù"}
+      "options": [
+        "Peking Opera",
+        "Kung fu",
+        "Art",
+        "Performance"
+      ],
+      "word_hints": {
+        "京剧": "jīng jù"
+      }
     },
     {
       "question": "Which word means 'brilliant; spectacular'?",
       "type": "multiple_choice",
       "correct": "精彩",
-      "options": ["精彩", "著名", "艺术", "吸引"],
-      "word_hints": {"精彩": "jīng cǎi", "著名": "zhù míng", "艺术": "yì shù", "吸引": "xī yǐn"}
+      "options": [
+        "精彩",
+        "著名",
+        "艺术",
+        "吸引"
+      ],
+      "word_hints": {
+        "精彩": "jīng cǎi",
+        "著名": "zhù míng",
+        "艺术": "yì shù",
+        "吸引": "xī yǐn"
+      }
     },
     {
       "question": "What does 著名 mean?",
       "type": "multiple_choice",
       "correct": "Famous; renowned",
-      "options": ["Famous; renowned", "Brilliant", "To attract", "To perform"],
-      "word_hints": {"著名": "zhù míng"}
+      "options": [
+        "Famous; renowned",
+        "Brilliant",
+        "To attract",
+        "To perform"
+      ],
+      "word_hints": {
+        "著名": "zhù míng"
+      }
     },
     {
       "question": "Which word means 'to attract'?",
       "type": "multiple_choice",
       "correct": "吸引",
-      "options": ["吸引", "阅读", "表演", "演出"],
-      "word_hints": {"吸引": "xī yǐn", "阅读": "yuè dú", "表演": "biǎo yǎn", "演出": "yǎn chū"}
+      "options": [
+        "吸引",
+        "阅读",
+        "表演",
+        "演出"
+      ],
+      "word_hints": {
+        "吸引": "xī yǐn",
+        "阅读": "yuè dú",
+        "表演": "biǎo yǎn",
+        "演出": "yǎn chū"
+      }
     },
     {
       "question": "What does 小说 mean?",
       "type": "multiple_choice",
       "correct": "Novel; fiction",
-      "options": ["Novel; fiction", "Magazine", "Art", "Reading"],
-      "word_hints": {"小说": "xiǎo shuō"}
+      "options": [
+        "Novel; fiction",
+        "Magazine",
+        "Art",
+        "Reading"
+      ],
+      "word_hints": {
+        "小说": "xiǎo shuō"
+      }
     },
     {
       "question": "Which word means 'magazine'?",
       "type": "multiple_choice",
       "correct": "杂志",
-      "options": ["杂志", "小说", "演员", "功夫"],
-      "word_hints": {"杂志": "zá zhì", "小说": "xiǎo shuō", "演员": "yǎn yuán", "功夫": "gōng fu"}
+      "options": [
+        "杂志",
+        "小说",
+        "演员",
+        "功夫"
+      ],
+      "word_hints": {
+        "杂志": "zá zhì",
+        "小说": "xiǎo shuō",
+        "演员": "yǎn yuán",
+        "功夫": "gōng fu"
+      }
     },
     {
       "question": "What does the phrase 精彩演出 mean?",
       "type": "multiple_choice",
       "correct": "Brilliant performance",
-      "options": ["Brilliant performance", "Famous actor", "Kung fu show", "Attract the audience"],
-      "word_hints": {"精彩": "jīng cǎi", "演出": "yǎn chū"}
+      "options": [
+        "Brilliant performance",
+        "Famous actor",
+        "Kung fu show",
+        "Attract the audience"
+      ],
+      "word_hints": {
+        "精彩": "jīng cǎi",
+        "演出": "yǎn chū"
+      }
     },
     {
       "question": "What does the phrase 著名演员 mean?",
       "type": "multiple_choice",
       "correct": "Famous actor",
-      "options": ["Famous actor", "Brilliant performance", "Kung fu performance", "Read a novel"],
-      "word_hints": {"著名": "zhù míng", "演员": "yǎn yuán"}
+      "options": [
+        "Famous actor",
+        "Brilliant performance",
+        "Kung fu performance",
+        "Read a novel"
+      ],
+      "word_hints": {
+        "著名": "zhù míng",
+        "演员": "yǎn yuán"
+      }
     },
     {
       "question": "What does the phrase 功夫表演 mean?",
       "type": "multiple_choice",
       "correct": "Kung fu performance",
-      "options": ["Kung fu performance", "Famous actor", "Brilliant performance", "Attract the audience"],
-      "word_hints": {"功夫": "gōng fu", "表演": "biǎo yǎn"}
+      "options": [
+        "Kung fu performance",
+        "Famous actor",
+        "Brilliant performance",
+        "Attract the audience"
+      ],
+      "word_hints": {
+        "功夫": "gōng fu",
+        "表演": "biǎo yǎn"
+      }
     },
     {
       "question": "What does the phrase 吸引观众 mean?",
       "type": "multiple_choice",
       "correct": "Attract the audience",
-      "options": ["Attract the audience", "Read a novel", "Brilliant performance", "Famous actor"],
-      "word_hints": {"吸引": "xī yǐn"}
+      "options": [
+        "Attract the audience",
+        "Read a novel",
+        "Brilliant performance",
+        "Famous actor"
+      ],
+      "word_hints": {
+        "吸引": "xī yǐn"
+      }
     },
     {
       "question": "Fill in: 他喜欢艺术，___是京剧。",
       "type": "multiple_choice",
       "correct": "尤其",
-      "options": ["尤其", "因此", "虽然", "反而"],
-      "word_hints": {"艺术": "yì shù", "京剧": "jīng jù"}
+      "options": [
+        "尤其",
+        "因此",
+        "虽然",
+        "反而"
+      ],
+      "word_hints": {
+        "艺术": "yì shù",
+        "京剧": "jīng jù"
+      }
     },
     {
       "question": "Which sentence uses 著名 correctly in a formal context?",
@@ -509,20 +762,42 @@
         "她著名是演员，演出过很多精彩的京剧。",
         "她是演员著名，演出过很多精彩的京剧。"
       ],
-      "word_hints": {"著名": "zhù míng", "演员": "yǎn yuán", "演出": "yǎn chū", "精彩": "jīng cǎi", "京剧": "jīng jù"}
+      "word_hints": {
+        "著名": "zhù míng",
+        "演员": "yǎn yuán",
+        "演出": "yǎn chū",
+        "精彩": "jīng cǎi",
+        "京剧": "jīng jù"
+      }
     },
     {
       "question": "Fill in: 我___那位著名演员的功夫表演完全吸引住了。",
       "type": "multiple_choice",
       "correct": "被",
-      "options": ["被", "把", "让", "由"],
-      "word_hints": {"著名": "zhù míng", "演员": "yǎn yuán", "功夫": "gōng fu", "表演": "biǎo yǎn", "吸引": "xī yǐn"}
+      "options": [
+        "被",
+        "把",
+        "让",
+        "由"
+      ],
+      "word_hints": {
+        "著名": "zhù míng",
+        "演员": "yǎn yuán",
+        "功夫": "gōng fu",
+        "表演": "biǎo yǎn",
+        "吸引": "xī yǐn"
+      }
     },
     {
       "question": "What does 尤其 mean?",
       "type": "multiple_choice",
       "correct": "Especially; in particular",
-      "options": ["Especially; in particular", "No matter what", "Any", "Although"],
+      "options": [
+        "Especially; in particular",
+        "No matter what",
+        "Any",
+        "Although"
+      ],
       "word_hints": {}
     },
     {
@@ -535,20 +810,36 @@
         "这本艺术杂志尤其吸引了，很多人是喜欢阅读小说的读者。",
         "这本艺术杂志吸引了尤其很多人喜欢阅读小说的读者。"
       ],
-      "word_hints": {"艺术": "yì shù", "杂志": "zá zhì", "吸引": "xī yǐn", "阅读": "yuè dú", "小说": "xiǎo shuō"}
+      "word_hints": {
+        "艺术": "yì shù",
+        "杂志": "zá zhì",
+        "吸引": "xī yǐn",
+        "阅读": "yuè dú",
+        "小说": "xiǎo shuō"
+      }
     },
     {
       "question": "What are the four main role types in Peking Opera?",
       "type": "multiple_choice",
       "correct": "生、旦、净、丑",
-      "options": ["生、旦、净、丑", "文、武、旦、净", "生、旦、文、武", "净、丑、武、文"],
+      "options": [
+        "生、旦、净、丑",
+        "文、武、旦、净",
+        "生、旦、文、武",
+        "净、丑、武、文"
+      ],
       "word_hints": {}
     },
     {
       "question": "In Peking Opera face paint, what does the colour red represent?",
       "type": "multiple_choice",
       "correct": "Loyalty and bravery",
-      "options": ["Loyalty and bravery", "Cunning and treachery", "Uprightness and integrity", "Supernatural power"],
+      "options": [
+        "Loyalty and bravery",
+        "Cunning and treachery",
+        "Uprightness and integrity",
+        "Supernatural power"
+      ],
       "word_hints": {}
     },
     {
@@ -561,7 +852,12 @@
         "Many audience members performed brilliantly in this kung fu show.",
         "The kung fu performance was famous and attracted the audience."
       ],
-      "word_hints": {"精彩": "jīng cǎi", "功夫": "gōng fu", "表演": "biǎo yǎn", "吸引": "xī yǐn"}
+      "word_hints": {
+        "精彩": "jīng cǎi",
+        "功夫": "gōng fu",
+        "表演": "biǎo yǎn",
+        "吸引": "xī yǐn"
+      }
     },
     {
       "question": "Translate: 我被著名演员的京剧演出深深吸引了。",
@@ -573,7 +869,13 @@
         "I deeply attracted the famous actor with my Peking Opera performance.",
         "The Peking Opera deeply attracted the famous actor's performance."
       ],
-      "word_hints": {"著名": "zhù míng", "演员": "yǎn yuán", "京剧": "jīng jù", "演出": "yǎn chū", "吸引": "xī yǐn"}
+      "word_hints": {
+        "著名": "zhù míng",
+        "演员": "yǎn yuán",
+        "京剧": "jīng jù",
+        "演出": "yǎn chū",
+        "吸引": "xī yǐn"
+      }
     },
     {
       "question": "Translate: 他喜欢阅读各种小说，尤其是著名作家写的历史小说。",
@@ -585,7 +887,11 @@
         "He especially enjoys writing novels, in particular historical ones by famous authors.",
         "Famous authors especially write all kinds of historical novels for him to read."
       ],
-      "word_hints": {"阅读": "yuè dú", "小说": "xiǎo shuō", "著名": "zhù míng"}
+      "word_hints": {
+        "阅读": "yuè dú",
+        "小说": "xiǎo shuō",
+        "著名": "zhù míng"
+      }
     }
   ],
   "dialogues": [
@@ -594,14 +900,22 @@
       "title": "Discussing a Peking Opera Performance",
       "title_chinese": "谈论一场京剧演出",
       "speakers": {
-        "A": {"name": "小明", "role": "学生", "gender": "male"},
-        "B": {"name": "小红", "role": "学生", "gender": "female"}
+        "A": {
+          "name": "但丁",
+          "role": "学生",
+          "gender": "male"
+        },
+        "B": {
+          "name": "波伏娃",
+          "role": "学生",
+          "gender": "female"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "小红，你昨晚去看京剧了吗？那场演出怎么样？",
-          "pinyin": "Xiǎo Hóng, nǐ zuó wǎn qù kàn jīng jù le ma? Nà chǎng yǎn chū zěn me yàng?",
+          "chinese": "波伏娃，你昨晚去看京剧了吗？那场演出怎么样？",
+          "pinyin": "Bō Fú Wá, nǐ zuó wǎn qù kàn jīng jù le ma? Nà chǎng yǎn chū zěn me yàng?",
           "english": "Xiaohong, did you go to see the Peking Opera last night? How was that performance?"
         },
         {
@@ -653,8 +967,16 @@
       "title": "A Student Asks About Chinese Arts and Culture",
       "title_chinese": "学生询问中国艺术与文化",
       "speakers": {
-        "A": {"name": "学生", "role": "学生", "gender": "female"},
-        "B": {"name": "王教授", "role": "教授", "gender": "male"}
+        "A": {
+          "name": "学生",
+          "role": "学生",
+          "gender": "female"
+        },
+        "B": {
+          "name": "王教授",
+          "role": "教授",
+          "gender": "male"
+        }
       },
       "lines": [
         {

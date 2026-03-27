@@ -10,19 +10,23 @@ import MatchPairsExercise from '../components/exercises/MatchPairsExercise';
 import SpeakExercise from '../components/exercises/SpeakExercise';
 import ImageExercise from '../components/exercises/ImageExercise';
 import PinyinExercise from '../components/exercises/PinyinExercise';
+import { getAvatarForLesson } from '../config/lessonAvatarMap';
+import { applyAvatarNames } from '../utils/applyAvatarNames';
 
 const STAGE_NAMES = [
   'First Look', 'Listen & Choose', 'Build Sentences', 'Match & Review', 'Final Challenge',
 ];
 
 export default function StageExercisesScreen({ lessonData, stageIndex, roundIndex = 0, onComplete, onBack }) {
+  const avatarId = getAvatarForLesson(lessonData?.topic, lessonData?.topic_chinese);
   const [exercises, setExercises] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [done, setDone] = useState(false);
 
   useEffect(() => {
-    const rounds = generateRounds(lessonData);
+    const processedData = applyAvatarNames(lessonData, avatarId);
+    const rounds = generateRounds(processedData);
     const round = rounds[roundIndex] || rounds[0];
     setExercises(round[stageIndex] || []);
   }, []);
@@ -121,6 +125,7 @@ export default function StageExercisesScreen({ lessonData, stageIndex, roundInde
             exercise={exercise}
             onCorrect={() => advance(true)}
             onWrong={() => advance(false)}
+            avatarId={avatarId}
           />
         )}
         {exercise.type === 'fill_blank' && (
@@ -152,6 +157,7 @@ export default function StageExercisesScreen({ lessonData, stageIndex, roundInde
             exercise={exercise}
             onCorrect={() => advance(true)}
             onWrong={() => advance(false)}
+            avatarId={avatarId}
           />
         )}
         {exercise.type === 'image_exercise' && (

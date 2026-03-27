@@ -86,8 +86,8 @@
     },
     {
       "id": "hsk2_final_08",
-      "question": "这双鞋___多少钱？",
-      "question_pinyin": "Zhè shuāng xié ___ duōshao qián?",
+      "question": "这双鞋多少钱？",
+      "question_pinyin": "Zhè shuāng xié duōshao qián?",
       "type": "multiple_choice",
       "correct": "How much do these shoes cost?",
       "options": ["Where can I buy these shoes?", "How many shoes do you have?", "How much do these shoes cost?", "What color are these shoes?"],
@@ -96,7 +96,7 @@
     },
     {
       "id": "hsk2_final_09",
-      "question": "Use 多少 or 几: How do you ask 'How many people?'",
+      "question": "Use 多少 or 几: How do you ask 'How many people?(less than 10)'",
       "type": "multiple_choice",
       "correct": "几个人？",
       "options": ["多少个人？", "几个人？", "多人？", "几人多少？"],
@@ -175,8 +175,8 @@
     },
     {
       "id": "hsk2_final_16",
-      "question": "请___！我要点菜。(Waiter! I'd like to order)",
-      "question_pinyin": "Qǐng ___! Wǒ yào diǎn cài.",
+      "question": "你好！___ ！我要点菜。(Waiter! I'd like to order)",
+      "question_pinyin": "Nǐ hǎo ___! Wǒ yào diǎn cài.",
       "type": "multiple_choice",
       "correct": "服务员",
       "options": ["老师", "服务员", "医生", "同学"],
@@ -370,7 +370,7 @@
     },
     {
       "id": "hsk2_final_33",
-      "question": "妈妈___我早点回家。(Mom wants me to come home early)",
+      "question": "妈妈___我早点回家。(Mom lets/wants me to come home early)",
       "question_pinyin": "Māma ___ wǒ zǎo diǎn huí jiā.",
       "type": "multiple_choice",
       "correct": "让",

@@ -12,6 +12,8 @@ import MatchPairsExercise    from '../components/exercises/MatchPairsExercise';
 import SpeakExercise         from '../components/exercises/SpeakExercise';
 import ImageExercise         from '../components/exercises/ImageExercise';
 import PinyinExercise        from '../components/exercises/PinyinExercise';
+import { getAvatarForLesson } from '../config/lessonAvatarMap';
+import { applyAvatarNames } from '../utils/applyAvatarNames';
 
 const PASS_SCORE   = 60;
 const REVIEW_SCORE = 50;
@@ -27,8 +29,12 @@ const TYPE_LABELS = {
 };
 
 export default function LessonQuizScreen({ lessonData, onBack }) {
-  // Generate once per mount
-  const exercises = useMemo(() => generateQuizRound(lessonData), [lessonData]);
+  const avatarId = getAvatarForLesson(lessonData?.topic, lessonData?.topic_chinese);
+  // Generate once per mount, with character names swapped to match the lesson avatar
+  const exercises = useMemo(
+    () => generateQuizRound(applyAvatarNames(lessonData, avatarId)),
+    [lessonData],
+  );
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score,        setScore]        = useState(0);
@@ -207,6 +213,7 @@ export default function LessonQuizScreen({ lessonData, onBack }) {
             exercise={exercise}
             onCorrect={() => advance(true)}
             onWrong={() => advance(false)}
+            avatarId={avatarId}
           />
         )}
         {exercise.type === 'fill_blank' && (
@@ -238,6 +245,7 @@ export default function LessonQuizScreen({ lessonData, onBack }) {
             exercise={exercise}
             onCorrect={() => advance(true)}
             onWrong={() => advance(false)}
+            avatarId={avatarId}
           />
         )}
         {exercise.type === 'image_exercise' && (

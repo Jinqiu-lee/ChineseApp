@@ -211,9 +211,21 @@
           "question": "这次展览非常精彩，_____ 去看看。",
           "type": "multiple_choice",
           "correct": "值得",
-          "options": ["值得", "通过", "不但", "传统"],
-          "option_pinyin": ["zhí de", "tōng guò", "bú dàn", "chuán tǒng"],
-          "word_hints": {"展览": "zhǎn lǎn"}
+          "options": [
+            "值得",
+            "通过",
+            "不但",
+            "传统"
+          ],
+          "option_pinyin": [
+            "zhí de",
+            "tōng guò",
+            "bú dàn",
+            "chuán tǒng"
+          ],
+          "word_hints": {
+            "展览": "zhǎn lǎn"
+          }
         },
         {
           "question": "Choose the sentence that uses 值得 correctly.",
@@ -231,7 +243,11 @@
             "Zhè wèi yì shù jiā zhí de de zuò pǐn xīn shǎng.",
             "Xīn shǎng zhè wèi zhí de yì shù jiā de zuò pǐn."
           ],
-          "word_hints": {"艺术家": "yì shù jiā", "作品": "zuò pǐn", "欣赏": "xīn shǎng"}
+          "word_hints": {
+            "艺术家": "yì shù jiā",
+            "作品": "zuò pǐn",
+            "欣赏": "xīn shǎng"
+          }
         },
         {
           "question": "What does 值得 mean?",
@@ -243,16 +259,33 @@
             "Forced to do",
             "Finished doing"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "这件雕塑虽然简单，但 _____ 细细品味。",
           "type": "multiple_choice",
           "correct": "值得",
-          "options": ["值得", "创作", "表演", "通过"],
-          "option_pinyin": ["zhí de", "chuàng zuò", "biǎo yǎn", "tōng guò"],
-          "word_hints": {"雕塑": "diāo sù"}
+          "options": [
+            "值得",
+            "创作",
+            "表演",
+            "通过"
+          ],
+          "option_pinyin": [
+            "zhí de",
+            "chuàng zuò",
+            "biǎo yǎn",
+            "tōng guò"
+          ],
+          "word_hints": {
+            "雕塑": "diāo sù"
+          }
         },
         {
           "question": "Which position does 值得 go in the sentence?",
@@ -264,7 +297,12 @@
             "After the object",
             "Between subject and object"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -290,9 +328,22 @@
           "question": "她 _____ 喜欢民间艺术，_____ 自己也开始学习创作。",
           "type": "multiple_choice",
           "correct": "不但…而且…",
-          "options": ["不但…而且…", "虽然…但是…", "因为…所以…", "如果…就…"],
-          "option_pinyin": ["bú dàn…ér qiě…", "suī rán…dàn shì…", "yīn wèi…suǒ yǐ…", "rú guǒ…jiù…"],
-          "word_hints": {"民间艺术": "mín jiān yì shù", "创作": "chuàng zuò"}
+          "options": [
+            "不但…而且…",
+            "虽然…但是…",
+            "因为…所以…",
+            "如果…就…"
+          ],
+          "option_pinyin": [
+            "bú dàn…ér qiě…",
+            "suī rán…dàn shì…",
+            "yīn wèi…suǒ yǐ…",
+            "rú guǒ…jiù…"
+          ],
+          "word_hints": {
+            "民间艺术": "mín jiān yì shù",
+            "创作": "chuàng zuò"
+          }
         },
         {
           "question": "Choose the correct sentence using 不但…而且…",
@@ -310,7 +361,9 @@
             "Ér qiě zhè wèi wǔ dǎo jiā biǎo yǎn jīng cǎi, bú dàn fēi cháng qiān xū.",
             "Zhè wèi wǔ dǎo jiā biǎo yǎn jīng cǎi bú dàn, fēi cháng qiān xū ér qiě."
           ],
-          "word_hints": {"表演": "biǎo yǎn"}
+          "word_hints": {
+            "表演": "biǎo yǎn"
+          }
         },
         {
           "question": "What does 不但…而且… express?",
@@ -322,23 +375,50 @@
             "Because… therefore…",
             "If… then…"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "这个展览不但吸引了本地观众，_____ 吸引了很多外国游客。",
           "type": "multiple_choice",
           "correct": "而且",
-          "options": ["而且", "但是", "虽然", "所以"],
-          "option_pinyin": ["ér qiě", "dàn shì", "suī rán", "suǒ yǐ"],
-          "word_hints": {"展览": "zhǎn lǎn"}
+          "options": [
+            "而且",
+            "但是",
+            "虽然",
+            "所以"
+          ],
+          "option_pinyin": [
+            "ér qiě",
+            "dàn shì",
+            "suī rán",
+            "suǒ yǐ"
+          ],
+          "word_hints": {
+            "展览": "zhǎn lǎn"
+          }
         },
         {
           "question": "Which word correctly pairs with 不但 in the pattern 不但…_____…?",
           "type": "multiple_choice",
           "correct": "而且",
-          "options": ["而且", "但是", "可是", "然而"],
-          "option_pinyin": ["ér qiě", "dàn shì", "kě shì", "rán ér"],
+          "options": [
+            "而且",
+            "但是",
+            "可是",
+            "然而"
+          ],
+          "option_pinyin": [
+            "ér qiě",
+            "dàn shì",
+            "kě shì",
+            "rán ér"
+          ],
           "word_hints": {}
         }
       ]
@@ -364,9 +444,22 @@
           "question": "_____ 参观博物馆，我们了解了很多文化遗产的故事。",
           "type": "multiple_choice",
           "correct": "通过",
-          "options": ["通过", "值得", "展览", "创作"],
-          "option_pinyin": ["tōng guò", "zhí de", "zhǎn lǎn", "chuàng zuò"],
-          "word_hints": {"博物馆": "bó wù guǎn", "文化遗产": "wén huà yí chǎn"}
+          "options": [
+            "通过",
+            "值得",
+            "展览",
+            "创作"
+          ],
+          "option_pinyin": [
+            "tōng guò",
+            "zhí de",
+            "zhǎn lǎn",
+            "chuàng zuò"
+          ],
+          "word_hints": {
+            "博物馆": "bó wù guǎn",
+            "文化遗产": "wén huà yí chǎn"
+          }
         },
         {
           "question": "Choose the correct use of 通过.",
@@ -384,7 +477,9 @@
             "Liǎng guó tōng guò, wén huà jiāo liú zhè cì hé zuò gèng jiā mì qiē le.",
             "Wén huà jiāo liú tōng guò mì qiē, zhè cì hé zuò liǎng guó le."
           ],
-          "word_hints": {"文化": "wén huà"}
+          "word_hints": {
+            "文化": "wén huà"
+          }
         },
         {
           "question": "What does 通过 mean in 通过努力, he succeeded?",
@@ -396,16 +491,34 @@
             "Because of",
             "Without"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "她 _____ 学习民间舞蹈，深深爱上了中国传统文化。",
           "type": "multiple_choice",
           "correct": "通过",
-          "options": ["通过", "不但", "值得", "风格"],
-          "option_pinyin": ["tōng guò", "bú dàn", "zhí de", "fēng gé"],
-          "word_hints": {"民间": "mín jiān", "传统文化": "chuán tǒng wén huà"}
+          "options": [
+            "通过",
+            "不但",
+            "值得",
+            "风格"
+          ],
+          "option_pinyin": [
+            "tōng guò",
+            "bú dàn",
+            "zhí de",
+            "fēng gé"
+          ],
+          "word_hints": {
+            "民间": "mín jiān",
+            "传统文化": "chuán tǒng wén huà"
+          }
         },
         {
           "question": "通过 introduces which element in a sentence?",
@@ -417,7 +530,12 @@
             "The time when something happened",
             "The place where something happened"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -443,77 +561,159 @@
       "question": "What does 艺术 mean?",
       "type": "multiple_choice",
       "correct": "Art; the arts",
-      "options": ["Art; the arts", "History", "Science", "Literature"],
-      "word_hints": {"艺术": "yì shù"}
+      "options": [
+        "Art; the arts",
+        "History",
+        "Science",
+        "Literature"
+      ],
+      "word_hints": {
+        "艺术": "yì shù"
+      }
     },
     {
       "question": "Which word means 'exhibition; to exhibit'?",
       "type": "multiple_choice",
       "correct": "展览",
-      "options": ["展览", "欣赏", "创作", "表演"],
-      "word_hints": {"展览": "zhǎn lǎn", "欣赏": "xīn shǎng", "创作": "chuàng zuò", "表演": "biǎo yǎn"}
+      "options": [
+        "展览",
+        "欣赏",
+        "创作",
+        "表演"
+      ],
+      "word_hints": {
+        "展览": "zhǎn lǎn",
+        "欣赏": "xīn shǎng",
+        "创作": "chuàng zuò",
+        "表演": "biǎo yǎn"
+      }
     },
     {
       "question": "What does 欣赏 mean?",
       "type": "multiple_choice",
       "correct": "To appreciate; to enjoy",
-      "options": ["To appreciate; to enjoy", "To create", "To perform", "To exhibit"],
-      "word_hints": {"欣赏": "xīn shǎng"}
+      "options": [
+        "To appreciate; to enjoy",
+        "To create",
+        "To perform",
+        "To exhibit"
+      ],
+      "word_hints": {
+        "欣赏": "xīn shǎng"
+      }
     },
     {
       "question": "Which word means 'sculpture; to sculpt'?",
       "type": "multiple_choice",
       "correct": "雕塑",
-      "options": ["雕塑", "作品", "风格", "传统"],
-      "word_hints": {"雕塑": "diāo sù", "作品": "zuò pǐn", "风格": "fēng gé", "传统": "chuán tǒng"}
+      "options": [
+        "雕塑",
+        "作品",
+        "风格",
+        "传统"
+      ],
+      "word_hints": {
+        "雕塑": "diāo sù",
+        "作品": "zuò pǐn",
+        "风格": "fēng gé",
+        "传统": "chuán tǒng"
+      }
     },
     {
       "question": "What does 文化遗产 mean?",
       "type": "multiple_choice",
       "correct": "Cultural heritage",
-      "options": ["Cultural heritage", "Folk art", "Artistic style", "Traditional dance"],
-      "word_hints": {"文化遗产": "wén huà yí chǎn"}
+      "options": [
+        "Cultural heritage",
+        "Folk art",
+        "Artistic style",
+        "Traditional dance"
+      ],
+      "word_hints": {
+        "文化遗产": "wén huà yí chǎn"
+      }
     },
     {
       "question": "Which word means 'folk; among the people'?",
       "type": "multiple_choice",
       "correct": "民间",
-      "options": ["民间", "博物馆", "传统", "展览"],
-      "word_hints": {"民间": "mín jiān", "博物馆": "bó wù guǎn", "传统": "chuán tǒng", "展览": "zhǎn lǎn"}
+      "options": [
+        "民间",
+        "博物馆",
+        "传统",
+        "展览"
+      ],
+      "word_hints": {
+        "民间": "mín jiān",
+        "博物馆": "bó wù guǎn",
+        "传统": "chuán tǒng",
+        "展览": "zhǎn lǎn"
+      }
     },
     {
       "question": "What does 博物馆 mean?",
       "type": "multiple_choice",
       "correct": "Museum",
-      "options": ["Museum", "Gallery", "Theatre", "Library"],
-      "word_hints": {"博物馆": "bó wù guǎn"}
+      "options": [
+        "Museum",
+        "Gallery",
+        "Theatre",
+        "Library"
+      ],
+      "word_hints": {
+        "博物馆": "bó wù guǎn"
+      }
     },
     {
       "question": "What does 传统 mean?",
       "type": "multiple_choice",
       "correct": "Tradition; traditional",
-      "options": ["Tradition; traditional", "Modern; contemporary", "Style; manner", "Heritage; legacy"],
-      "word_hints": {"传统": "chuán tǒng"}
+      "options": [
+        "Tradition; traditional",
+        "Modern; contemporary",
+        "Style; manner",
+        "Heritage; legacy"
+      ],
+      "word_hints": {
+        "传统": "chuán tǒng"
+      }
     },
     {
       "question": "Fill in the blank: 这幅画 _____ 仔细欣赏，每一个细节都很精彩。",
       "type": "multiple_choice",
       "correct": "值得",
-      "options": ["值得", "通过", "不但", "而且"],
-      "word_hints": {"欣赏": "xīn shǎng"}
+      "options": [
+        "值得",
+        "通过",
+        "不但",
+        "而且"
+      ],
+      "word_hints": {
+        "欣赏": "xīn shǎng"
+      }
     },
     {
       "question": "What does 值得 mean?",
       "type": "multiple_choice",
       "correct": "Worth doing",
-      "options": ["Worth doing", "Not permitted", "Must do", "Already done"],
+      "options": [
+        "Worth doing",
+        "Not permitted",
+        "Must do",
+        "Already done"
+      ],
       "word_hints": {}
     },
     {
       "question": "Fill in the blank: 他 _____ 擅长绘画，_____ 在音乐方面也很有才华。",
       "type": "multiple_choice",
       "correct": "不但…而且…",
-      "options": ["不但…而且…", "虽然…但是…", "因为…所以…", "如果…就…"],
+      "options": [
+        "不但…而且…",
+        "虽然…但是…",
+        "因为…所以…",
+        "如果…就…"
+      ],
       "word_hints": {}
     },
     {
@@ -526,42 +726,80 @@
         "我们通过，这次展览文化遗产了解了。",
         "文化遗产通过了解，我们这次展览了。"
       ],
-      "word_hints": {"展览": "zhǎn lǎn", "文化遗产": "wén huà yí chǎn"}
+      "word_hints": {
+        "展览": "zhǎn lǎn",
+        "文化遗产": "wén huà yí chǎn"
+      }
     },
     {
       "question": "What does 创作 mean?",
       "type": "multiple_choice",
       "correct": "To create; creative work",
-      "options": ["To create; creative work", "To perform", "To exhibit", "To appreciate"],
-      "word_hints": {"创作": "chuàng zuò"}
+      "options": [
+        "To create; creative work",
+        "To perform",
+        "To exhibit",
+        "To appreciate"
+      ],
+      "word_hints": {
+        "创作": "chuàng zuò"
+      }
     },
     {
       "question": "What does the phrase 艺术风格 mean?",
       "type": "multiple_choice",
       "correct": "Artistic style",
-      "options": ["Artistic style", "Folk art", "Cultural heritage", "Art exhibition"],
-      "word_hints": {"艺术风格": "yì shù fēng gé"}
+      "options": [
+        "Artistic style",
+        "Folk art",
+        "Cultural heritage",
+        "Art exhibition"
+      ],
+      "word_hints": {
+        "艺术风格": "yì shù fēng gé"
+      }
     },
     {
       "question": "What does 表演 mean?",
       "type": "multiple_choice",
       "correct": "To perform; performance",
-      "options": ["To perform; performance", "To sculpt", "To appreciate", "To exhibit"],
-      "word_hints": {"表演": "biǎo yǎn"}
+      "options": [
+        "To perform; performance",
+        "To sculpt",
+        "To appreciate",
+        "To exhibit"
+      ],
+      "word_hints": {
+        "表演": "biǎo yǎn"
+      }
     },
     {
       "question": "Which phrase means 'to visit an exhibition'?",
       "type": "multiple_choice",
       "correct": "参观展览",
-      "options": ["参观展览", "欣赏作品", "保护遗产", "民间艺术"],
-      "word_hints": {"展览": "zhǎn lǎn"}
+      "options": [
+        "参观展览",
+        "欣赏作品",
+        "保护遗产",
+        "民间艺术"
+      ],
+      "word_hints": {
+        "展览": "zhǎn lǎn"
+      }
     },
     {
       "question": "What does 作品 mean?",
       "type": "multiple_choice",
       "correct": "Work; piece (of art or literature)",
-      "options": ["Work; piece (of art or literature)", "Style", "Tradition", "Exhibition"],
-      "word_hints": {"作品": "zuò pǐn"}
+      "options": [
+        "Work; piece (of art or literature)",
+        "Style",
+        "Tradition",
+        "Exhibition"
+      ],
+      "word_hints": {
+        "作品": "zuò pǐn"
+      }
     },
     {
       "question": "The idiom 百花齐放 refers to:",
@@ -573,20 +811,34 @@
         "Competing against each other",
         "Protecting endangered plants"
       ],
-      "word_hints": {"百花齐放": "bǎi huā qí fàng"}
+      "word_hints": {
+        "百花齐放": "bǎi huā qí fàng"
+      }
     },
     {
       "question": "What does the phrase 民间艺术 mean?",
       "type": "multiple_choice",
       "correct": "Folk art",
-      "options": ["Folk art", "Modern art", "Artistic museum", "Cultural heritage"],
-      "word_hints": {"民间艺术": "mín jiān yì shù"}
+      "options": [
+        "Folk art",
+        "Modern art",
+        "Artistic museum",
+        "Cultural heritage"
+      ],
+      "word_hints": {
+        "民间艺术": "mín jiān yì shù"
+      }
     },
     {
       "question": "Which grammar pattern means 'by means of; through'?",
       "type": "multiple_choice",
       "correct": "通过",
-      "options": ["通过", "值得", "不但", "风格"],
+      "options": [
+        "通过",
+        "值得",
+        "不但",
+        "风格"
+      ],
       "word_hints": {}
     }
   ],
@@ -596,8 +848,16 @@
       "title": "At the Art Museum",
       "title_chinese": "在艺术博物馆",
       "speakers": {
-        "A": {"name": "晓雯", "role": "大学生", "gender": "female"},
-        "B": {"name": "陈老师", "role": "艺术讲解员", "gender": "male"}
+        "A": {
+          "name": "伍尔夫",
+          "role": "大学生",
+          "gender": "female"
+        },
+        "B": {
+          "name": "陈老师",
+          "role": "艺术讲解员",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -649,15 +909,23 @@
       "title": "Discussing a Traditional Performance",
       "title_chinese": "谈论传统表演",
       "speakers": {
-        "A": {"name": "大卫", "role": "外国留学生", "gender": "male"},
-        "B": {"name": "李梅", "role": "中国朋友", "gender": "female"}
+        "A": {
+          "name": "鲁迅",
+          "role": "外国留学生",
+          "gender": "male"
+        },
+        "B": {
+          "name": "严歌苓",
+          "role": "中国朋友",
+          "gender": "female"
+        }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "李梅，昨晚的京剧表演太精彩了！我之前从来没看过这种艺术形式。",
-          "pinyin": "Lǐ Méi, zuó wǎn de Jīng jù biǎo yǎn tài jīng cǎi le! Wǒ zhī qián cóng lái méi kàn guò zhè zhǒng yì shù xíng shì.",
-          "english": "Li Mei, last night's Peking Opera performance was amazing! I had never seen this art form before."
+          "chinese": "严歌苓，昨晚的京剧表演太精彩了！我之前从来没看过这种艺术形式。",
+          "pinyin": "Yán Gē Líng, zuó wǎn de Jīng jù biǎo yǎn tài jīng cǎi le! Wǒ zhī qián cóng lái méi kàn guò zhè zhǒng yì shù xíng shì.",
+          "english": "Yan Geling, last night's Peking Opera performance was amazing! I had never seen this art form before."
         },
         {
           "speaker": "B",
