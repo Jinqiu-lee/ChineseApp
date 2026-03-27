@@ -459,7 +459,7 @@ const VG = {
 };
 
 const styles = StyleSheet.create({
-  safe:    { flex: 1, backgroundColor: VG.bg },
+  safe:    { flex: 1, backgroundColor: 'transparent' },
   scroll:  { flex: 1 },
   content: { padding: 20 },
 

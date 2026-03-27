@@ -104,7 +104,7 @@ const VG = {
 };
 
 const styles = StyleSheet.create({
-  safe:        { flex: 1, backgroundColor: VG.bg },
+  safe:        { flex: 1, backgroundColor: 'transparent' },
   header:      {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
     paddingHorizontal: 20, paddingVertical: 13,

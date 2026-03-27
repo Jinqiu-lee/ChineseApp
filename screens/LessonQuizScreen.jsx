@@ -291,7 +291,7 @@ const VG = {
 };
 
 const styles = StyleSheet.create({
-  safe:   { flex: 1, backgroundColor: VG.bg },
+  safe:   { flex: 1, backgroundColor: 'transparent' },
   center: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 32 },
 
   // ── Header ────────────────────────────────────────────────────────────────

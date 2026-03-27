@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal, Animated } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal, Animated, ImageBackground } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import ScreenBackground from '../components/ScreenBackground';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import ConfettiCannon from 'react-native-confetti-cannon';
 import LevelChangeModal from '../components/LevelChangeModal';
@@ -318,8 +319,9 @@ export default function HomeScreen({
   if (selectedLevel) {
     const lessons = LESSONS_BY_LEVEL[selectedLevel.id] || [];
     return (
+      <ScreenBackground>
       <SafeAreaView style={styles.safe}>
-        <StatusBar barStyle="light-content" />
+        <StatusBar barStyle="dark-content" />
 
         <View style={styles.topHeader}>
           <TouchableOpacity style={styles.menuButton} onPress={() => setSelectedLevel(null)}>
@@ -409,13 +411,15 @@ export default function HomeScreen({
           <View style={{ height: 40 }} />
         </ScrollView>
       </SafeAreaView>
+      </ScreenBackground>
     );
   }
 
   // ── Hub view ────────────────────────────────────────────────────
   return (
+    <ScreenBackground>
     <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="dark-content" />
 
       <View style={styles.topHeader}>
         <TouchableOpacity style={styles.menuButton} onPress={() => setShowMenu(true)}>
@@ -737,25 +741,26 @@ export default function HomeScreen({
       </Modal>
 
     </SafeAreaView>
+    </ScreenBackground>
   );
 }
 
-// ── Van Gogh palette (inline for this screen) ─────────────────────────────────
+// ── Canvas-friendly palette — warm golden oil-paint background ────────────────
 const VG = {
-  bg:           '#1C2A44',
-  card:         '#243454',
-  cardElevated: '#2C3F62',
+  bg:           'transparent',   // canvas handles background
+  card:         '#FFFFFF',       // clean white cards
+  cardElevated: '#FFFDF5',       // near-white elevated
   yellow:       '#F4C542',
-  gold:         '#E0B04B',
-  orange:       '#D98C2B',
-  cream:        '#F7F3E9',
-  creamMid:     '#C5B99A',
-  creamMuted:   '#8A7E6E',
-  success:      '#7DC47A',
-  border:        'rgba(244,197,66,0.13)',
-  borderMid:     'rgba(244,197,66,0.28)',
-  borderStrong:  'rgba(244,197,66,0.50)',
-  overlay:       'rgba(20,32,56,0.88)',
+  gold:         '#A07010',       // darker gold, readable on canvas
+  orange:       '#C8790A',
+  cream:        '#1C1A00',       // dark near-black — primary text on canvas
+  creamMid:     '#5A4020',       // medium dark warm — secondary text
+  creamMuted:   '#7A5530',       // muted text on canvas
+  success:      '#2D7A4A',
+  border:        'rgba(80,50,0,0.15)',
+  borderMid:     'rgba(80,50,0,0.28)',
+  borderStrong:  'rgba(80,50,0,0.50)',
+  overlay:       'rgba(20,10,0,0.88)',
 };
 
 const styles = StyleSheet.create({
@@ -783,7 +788,7 @@ const styles = StyleSheet.create({
   // ── Avatar section ─────────────────────────────────────────────────────────
   avatarSection:    { alignItems: 'center', marginBottom: 24, gap: 12 },
   avatarMessageBubble: {
-    backgroundColor: 'rgba(247,243,233,0.07)',
+    backgroundColor: 'rgba(255,255,255,0.80)',
     borderRadius: 16,
     borderWidth: 1,
     borderColor: VG.borderMid,
@@ -803,14 +808,14 @@ const styles = StyleSheet.create({
   statsRow:     { flexDirection: 'row', gap: 12 },
   statBadge: {
     flexDirection: 'row', alignItems: 'center', gap: 5,
-    backgroundColor: 'rgba(217,140,43,0.13)',
+    backgroundColor: 'rgba(255,255,255,0.75)',
     borderRadius: 20, borderWidth: 1,
-    borderColor: 'rgba(217,140,43,0.32)',
+    borderColor: 'rgba(80,50,0,0.20)',
     paddingHorizontal: 14, paddingVertical: 7,
   },
   statBadgeXP: {
-    backgroundColor: 'rgba(244,197,66,0.13)',
-    borderColor: 'rgba(244,197,66,0.32)',
+    backgroundColor: 'rgba(255,255,255,0.75)',
+    borderColor: 'rgba(80,50,0,0.20)',
   },
   statBadgeIcon:  { fontSize: 16 },
   statBadgeValue: { fontSize: 17, fontWeight: '800', color: VG.cream },
@@ -833,7 +838,7 @@ const styles = StyleSheet.create({
   foundationSubtitleDimmed:  { color: '#5A5040' },
   foundationLevelTag:        {
     marginTop: 8, fontSize: 10, fontWeight: '700', color: VG.creamMuted,
-    backgroundColor: 'rgba(255,255,255,0.06)',
+    backgroundColor: 'rgba(0,0,0,0.07)',
     paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6,
   },
   foundationRecommendedTag:  {
@@ -866,7 +871,7 @@ const styles = StyleSheet.create({
   pathCompletedLabel: { fontSize: 11, fontWeight: '700', color: VG.success },
   pathSoonLabel:      {
     fontSize: 10, fontWeight: '700', color: VG.creamMuted,
-    backgroundColor: 'rgba(255,255,255,0.07)',
+    backgroundColor: 'rgba(0,0,0,0.08)',
     paddingHorizontal: 6, paddingVertical: 2, borderRadius: 6,
   },
   pathLockIcon:       { fontSize: 14 },
@@ -888,7 +893,7 @@ const styles = StyleSheet.create({
   progressHeader:   { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 },
   progressTitle:    { fontSize: 14, fontWeight: '700', color: VG.cream },
   progressCount:    { fontSize: 13, fontWeight: '800' },
-  progressBarBg:    { height: 8, backgroundColor: 'rgba(255,255,255,0.08)', borderRadius: 4, overflow: 'hidden', marginBottom: 8 },
+  progressBarBg:    { height: 8, backgroundColor: 'rgba(0,0,0,0.10)', borderRadius: 4, overflow: 'hidden', marginBottom: 8 },
   progressBarFill:  { height: '100%', borderRadius: 4 },
   progressWords:    { fontSize: 13, color: VG.creamMuted, textAlign: 'right' },
 
