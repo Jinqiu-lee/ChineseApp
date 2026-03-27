@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import VocabularySection from '../components/VocabularySection';
@@ -6,6 +6,8 @@ import DialogueSection from '../components/DialogueSection';
 import GrammarSection from '../components/GrammarSection';
 import AvatarCharacter from '../components/AvatarCharacter';
 import { getAvatarForLesson } from '../config/lessonAvatarMap';
+import WaveBackground from '../components/WaveBackground';
+import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 
 import lesson1 from '../data/hsk1/hsk1_lesson_1.json';
 import lesson2 from '../data/hsk1/hsk1_lesson_2.json';
@@ -153,6 +155,7 @@ export default function LessonDetailScreen({
   onOpenPinyin,
   onSelectStage,
 }) {
+  const T = LEVEL_SCREEN_PALETTES[levelId] || LEVEL_SCREEN_PALETTES.hsk1;
   const levelMap = LESSONS_BY_LEVEL[levelId] || LESSONS;
   const lesson = levelMap[lessonId];
   const avatarId = lesson ? getAvatarForLesson(lesson.topic, lesson.topic_chinese) : 'eileen';
@@ -178,15 +181,16 @@ export default function LessonDetailScreen({
   const completedCount = stageProgress.length;
 
   return (
-    <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" />
+    <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
+      <StatusBar barStyle={T.statusBar} />
+      {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
 
       {/* Header */}
-      <View style={styles.header}>
+      <View style={[styles.header, { borderBottomColor: T.border }]}>
         <TouchableOpacity onPress={onBack} style={styles.backBtn}>
-          <Text style={styles.backBtnText}>← Back</Text>
+          <Text style={[styles.backBtnText, { color: T.gold }]}>← Back</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Lesson {lesson.lesson}</Text>
+        <Text style={[styles.headerTitle, { color: T.onBg }]}>Lesson {lesson.lesson}</Text>
         <View style={{ width: 60 }} />
       </View>
 
@@ -196,19 +200,19 @@ export default function LessonDetailScreen({
         showsVerticalScrollIndicator={false}
       >
         {/* Title card */}
-        <View style={styles.titleCard}>
+        <View style={[styles.titleCard, { backgroundColor: T.card, shadowColor: T.shadow }]}>
           <AvatarCharacter avatarId={avatarId} expression="idle" size={88} />
-          <Text style={styles.topicChinese}>{lesson.topic_chinese}</Text>
-          <Text style={styles.topicEnglish}>{lesson.topic}</Text>
-          <Text style={styles.topicMeta}>{lesson.vocabulary?.length || 0} words · {lesson.dialogues?.length || 0} dialogues</Text>
+          <Text style={[styles.topicChinese, { color: T.titleText }]}>{lesson.topic_chinese}</Text>
+          <Text style={[styles.topicEnglish, { color: T.onCard }]}>{lesson.topic}</Text>
+          <Text style={[styles.topicMeta, { color: T.onCardMuted }]}>{lesson.vocabulary?.length || 0} words · {lesson.dialogues?.length || 0} dialogues</Text>
         </View>
 
         {/* ─────────────────────────────────────────── */}
         {/* SECTION 1: LEARNING                        */}
         {/* ─────────────────────────────────────────── */}
         <View style={styles.sectionHeader}>
-          <View style={styles.sectionDot} />
-          <Text style={styles.sectionTitle}>Learning</Text>
+          <View style={[styles.sectionDot, { backgroundColor: T.gold }]} />
+          <Text style={[styles.sectionTitle, { color: T.onBg }]}>Learning</Text>
         </View>
 
         <View style={styles.learnGrid}>
@@ -325,9 +329,9 @@ export default function LessonDetailScreen({
         {/* SECTION 2: PRACTICE STAGES                 */}
         {/* ─────────────────────────────────────────── */}
         <View style={styles.sectionHeader}>
-          <View style={[styles.sectionDot, { backgroundColor: '#1DD1A1' }]} />
-          <Text style={styles.sectionTitle}>Practice Stages</Text>
-          <Text style={styles.stageCount}>{completedCount}/5 done</Text>
+          <View style={[styles.sectionDot, { backgroundColor: T.success }]} />
+          <Text style={[styles.sectionTitle, { color: T.onBg }]}>Practice Stages</Text>
+          <Text style={[styles.stageCount, { color: T.onBgMuted }]}>{completedCount}/5 done</Text>
         </View>
 
         {/* Round badge */}
@@ -391,8 +395,8 @@ export default function LessonDetailScreen({
 
         {/* Lesson Quiz — unlocked after Round 2 with ≥90% */}
         <View style={styles.sectionHeader}>
-          <View style={[styles.sectionDot, { backgroundColor: '#FF6B6B' }]} />
-          <Text style={styles.sectionTitle}>Lesson Quiz</Text>
+          <View style={[styles.sectionDot, { backgroundColor: T.error }]} />
+          <Text style={[styles.sectionTitle, { color: T.onBg }]}>Lesson Quiz</Text>
         </View>
         <TouchableOpacity
           style={[styles.quizBanner, quizUnlocked ? styles.quizBannerUnlocked : styles.quizBannerLocked]}
@@ -415,11 +419,11 @@ export default function LessonDetailScreen({
 
         {/* Complete lesson */}
         <TouchableOpacity
-          style={styles.completeBtn}
+          style={[styles.completeBtn, { backgroundColor: T.accent }]}
           onPress={() => onLessonComplete(lessonId)}
           activeOpacity={0.85}
         >
-          <Text style={styles.completeBtnText}>✓ Complete Lesson</Text>
+          <Text style={[styles.completeBtnText, { color: T.accentText }]}>✓ Complete Lesson</Text>
         </TouchableOpacity>
 
         <View style={{ height: 40 }} />

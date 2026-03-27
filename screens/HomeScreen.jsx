@@ -9,9 +9,9 @@ import AvatarPicker from '../components/AvatarPicker';
 import useProgress from '../hooks/useProgress';
 
 const LEVEL_CONFIG = [
-  { id: 'hsk1', number: 1, emoji: '🌻', title: 'Sunflower Fields',    subtitle: 'HSK 1', color: '#F4C542' },
-  { id: 'hsk2', number: 2, emoji: '☕', title: 'Café Terrace',        subtitle: 'HSK 2', color: '#E8B84B' },
-  { id: 'hsk3', number: 3, emoji: '🌾', title: 'Wheat Fields',        subtitle: 'HSK 3', color: '#8DBF6E' },
+  { id: 'hsk1', number: 1, emoji: '☕', title: 'Café Terrace',        subtitle: 'HSK 1', color: '#E0B04B' },
+  { id: 'hsk2', number: 2, emoji: '🌻', title: 'Sunflower Fields',    subtitle: 'HSK 2', color: '#F5A623' },
+  { id: 'hsk3', number: 3, emoji: '🌾', title: 'Wheat Fields',        subtitle: 'HSK 3', color: '#4A90D9' },
   { id: 'hsk4', number: 4, emoji: '🏡', title: 'Homes & Villages',    subtitle: 'HSK 4', color: '#C4703A' },
   { id: 'hsk5', number: 5, emoji: '🌌', title: 'Starry Night',        subtitle: 'HSK 5', color: '#7BA7D4' },
   { id: 'hsk6', number: 6, emoji: '🌼', title: 'Irises in Bloom',     subtitle: 'HSK 6', color: '#A87DC8' },

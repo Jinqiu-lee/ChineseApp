@@ -3,6 +3,8 @@ import {
   View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import WaveBackground from '../components/WaveBackground';
+import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 
 import { generateQuizRound } from '../utils/stageGenerator';
 import AudioChoiceExercise   from '../components/exercises/AudioChoiceExercise';
@@ -28,7 +30,8 @@ const TYPE_LABELS = {
   pinyin_exercise: '🎵 Pinyin Focus',
 };
 
-export default function LessonQuizScreen({ lessonData, onBack }) {
+export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack }) {
+  const T = LEVEL_SCREEN_PALETTES[levelId] || LEVEL_SCREEN_PALETTES.hsk1;
   const avatarId = getAvatarForLesson(lessonData?.topic, lessonData?.topic_chinese);
   // Generate once per mount, with character names swapped to match the lesson avatar
   const exercises = useMemo(
@@ -83,14 +86,15 @@ export default function LessonQuizScreen({ lessonData, onBack }) {
     const needReview = pct < REVIEW_SCORE;
 
     return (
-      <SafeAreaView style={styles.safe}>
-        <StatusBar barStyle="light-content" />
+      <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
+        <StatusBar barStyle={T.statusBar} />
+        {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
         <ScrollView contentContainerStyle={styles.resultsContainer}>
 
-          <View style={styles.resultsCard}>
+          <View style={[styles.resultsCard, { backgroundColor: T.card, shadowColor: T.shadow }]}>
             <Text style={styles.resultsEmoji}>{passed ? '🏆' : '📚'}</Text>
-            <Text style={styles.resultsTitle}>{passed ? 'Quiz Passed!' : 'Keep Practicing!'}</Text>
-            <Text style={styles.resultsSubtitle}>
+            <Text style={[styles.resultsTitle, { color: T.onCard }]}>{passed ? 'Quiz Passed!' : 'Keep Practicing!'}</Text>
+            <Text style={[styles.resultsSubtitle, { color: T.altAccent ?? T.gold }]}>
               {passed ? '太棒了！Tài bàng le!' : '加油！Jiā yóu!'}
             </Text>
 
@@ -139,11 +143,11 @@ export default function LessonQuizScreen({ lessonData, onBack }) {
           </View>
 
           <View style={styles.resultsActions}>
-            <TouchableOpacity style={styles.retryButton} onPress={handleRestart}>
-              <Text style={styles.actionButtonText}>🔄 Try Again</Text>
+            <TouchableOpacity style={[styles.retryButton, { backgroundColor: T.accent, shadowColor: T.shadow }]} onPress={handleRestart}>
+              <Text style={[styles.actionButtonText, { color: T.accentText }]}>🔄 Try Again</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.doneButton} onPress={onBack}>
-              <Text style={styles.doneButtonText}>← Back to Lesson</Text>
+            <TouchableOpacity style={[styles.doneButton, { borderColor: T.gold }]} onPress={onBack}>
+              <Text style={[styles.doneButtonText, { color: T.gold }]}>← Back to Lesson</Text>
             </TouchableOpacity>
           </View>
 
@@ -155,11 +159,11 @@ export default function LessonQuizScreen({ lessonData, onBack }) {
   // ── Empty guard ────────────────────────────────────────────────────────────
   if (!exercise) {
     return (
-      <SafeAreaView style={styles.safe}>
+      <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
         <View style={styles.center}>
-          <Text style={styles.emptyText}>No quiz exercises available.</Text>
-          <TouchableOpacity style={styles.doneButton} onPress={onBack}>
-            <Text style={styles.doneButtonText}>← Go Back</Text>
+          <Text style={[styles.emptyText, { color: T.onBgMuted }]}>No quiz exercises available.</Text>
+          <TouchableOpacity style={[styles.doneButton, { borderColor: T.gold }]} onPress={onBack}>
+            <Text style={[styles.doneButtonText, { color: T.gold }]}>← Go Back</Text>
           </TouchableOpacity>
         </View>
       </SafeAreaView>
@@ -180,24 +184,25 @@ export default function LessonQuizScreen({ lessonData, onBack }) {
   const typeLabel = TYPE_LABELS[exercise.type] ?? '📝 Quiz';
 
   return (
-    <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" />
+    <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
+      <StatusBar barStyle={T.statusBar} />
+      {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
 
       {/* Header */}
-      <View style={styles.header}>
+      <View style={[styles.header, { borderBottomColor: T.border }]}>
         <TouchableOpacity onPress={handleExit} style={styles.exitBtn}>
-          <Text style={styles.exitText}>✕</Text>
+          <Text style={[styles.exitText, { color: T.onBgMuted }]}>✕</Text>
         </TouchableOpacity>
         <View style={styles.progressBg}>
-          <View style={[styles.progressFill, { width: `${progress}%` }]} />
+          <View style={[styles.progressFill, { width: `${progress}%`, backgroundColor: T.progressFill }]} />
         </View>
-        <Text style={styles.counter}>{currentIndex + 1}/{total}</Text>
+        <Text style={[styles.counter, { color: T.onBgMuted }]}>{currentIndex + 1}/{total}</Text>
       </View>
 
       {/* Type label + lesson name */}
-      <View style={styles.typeRow}>
-        <Text style={styles.typeLabel}>{typeLabel}</Text>
-        <Text style={styles.lessonLabel} numberOfLines={1}>{lessonName}</Text>
+      <View style={[styles.typeRow, { borderBottomColor: T.border }]}>
+        <Text style={[styles.typeLabel, { color: T.gold }]}>{typeLabel}</Text>
+        <Text style={[styles.lessonLabel, { color: T.onBgMuted }]} numberOfLines={1}>{lessonName}</Text>
       </View>
 
       {/* Exercise */}

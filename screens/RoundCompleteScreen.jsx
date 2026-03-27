@@ -1,6 +1,8 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import WaveBackground from '../components/WaveBackground';
+import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 
 const ROUND_LABELS = { 1: 'Round 1 · Learn', 2: 'Round 2 · Practice', 3: 'Round 3 · Master' };
 const ROUND_EMOJIS = { 1: '🎉', 2: '🌟', 3: '🏆' };
@@ -11,7 +13,9 @@ export default function RoundCompleteScreen({
   combinedAccuracy = 0,
   onContinue,
   onTakeQuiz,
+  levelId = 'hsk1',
 }) {
+  const T = LEVEL_SCREEN_PALETTES[levelId] || LEVEL_SCREEN_PALETTES.hsk1;
   const accuracy = roundScore.total > 0
     ? Math.round((roundScore.score / roundScore.total) * 100)
     : 0;
@@ -19,26 +23,28 @@ export default function RoundCompleteScreen({
   const highAccuracy = currentRound === 2 && combinedAccuracy >= 90;
 
   return (
-    <SafeAreaView style={styles.safe}>
+    <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
+      <StatusBar barStyle={T.statusBar} />
+      {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
       <View style={styles.container}>
 
         {/* Header */}
         <Text style={styles.emoji}>{ROUND_EMOJIS[currentRound]}</Text>
-        <Text style={styles.title}>{ROUND_LABELS[currentRound]} Complete!</Text>
+        <Text style={[styles.title, { color: T.onBg }]}>{ROUND_LABELS[currentRound]} Complete!</Text>
         <Text style={styles.stars}>{'⭐'.repeat(stars)}</Text>
 
         {/* Score card */}
-        <View style={styles.scoreCard}>
-          <Text style={styles.scoreLabel}>Round {currentRound} Score</Text>
-          <Text style={styles.scorePct}>{accuracy}%</Text>
-          <Text style={styles.scoreDetail}>{roundScore.score} / {roundScore.total} correct</Text>
+        <View style={[styles.scoreCard, { backgroundColor: T.card, shadowColor: T.shadow }]}>
+          <Text style={[styles.scoreLabel, { color: T.onCardMuted }]}>Round {currentRound} Score</Text>
+          <Text style={[styles.scorePct, { color: T.altAccent ?? T.gold }]}>{accuracy}%</Text>
+          <Text style={[styles.scoreDetail, { color: T.onCard }]}>{roundScore.score} / {roundScore.total} correct</Text>
         </View>
 
         {/* Combined accuracy row — only shown after round 2 */}
         {currentRound === 2 && (
-          <View style={styles.combinedRow}>
-            <Text style={styles.combinedLabel}>Rounds 1 + 2 combined:</Text>
-            <Text style={[styles.combinedPct, { color: highAccuracy ? '#1DD1A1' : '#FF9F43' }]}>
+          <View style={[styles.combinedRow, { borderColor: T.border }]}>
+            <Text style={[styles.combinedLabel, { color: T.onBgMuted }]}>Rounds 1 + 2 combined:</Text>
+            <Text style={[styles.combinedPct, { color: highAccuracy ? T.success : T.gold }]}>
               {combinedAccuracy}%
             </Text>
           </View>
@@ -46,33 +52,33 @@ export default function RoundCompleteScreen({
 
         {/* Message */}
         {currentRound === 3 && (
-          <Text style={styles.message}>Outstanding! You've mastered all 3 rounds! 💪</Text>
+          <Text style={[styles.message, { color: T.onBgMuted }]}>Outstanding! You've mastered all 3 rounds! 💪</Text>
         )}
         {currentRound === 2 && highAccuracy && (
-          <Text style={styles.message}>Excellent work! You can take the quiz now or keep practicing.</Text>
+          <Text style={[styles.message, { color: T.onBgMuted }]}>Excellent work! You can take the quiz now or keep practicing.</Text>
         )}
         {currentRound === 2 && !highAccuracy && (
-          <Text style={styles.message}>Great effort! One more round to solidify your skills.</Text>
+          <Text style={[styles.message, { color: T.onBgMuted }]}>Great effort! One more round to solidify your skills.</Text>
         )}
 
         {/* Action buttons */}
         <View style={styles.actions}>
           {currentRound === 3 ? (
-            <TouchableOpacity style={styles.quizBtn} onPress={onTakeQuiz} activeOpacity={0.85}>
-              <Text style={styles.quizBtnText}>🏆 Take Lesson Quiz</Text>
+            <TouchableOpacity style={[styles.quizBtn, { backgroundColor: T.altAccent ?? T.gold, shadowColor: T.shadow }]} onPress={onTakeQuiz} activeOpacity={0.85}>
+              <Text style={[styles.quizBtnText, { color: T.altAccentText ?? T.accentText }]}>🏆 Take Lesson Quiz</Text>
             </TouchableOpacity>
           ) : currentRound === 2 && highAccuracy ? (
             <>
-              <TouchableOpacity style={styles.quizBtn} onPress={onTakeQuiz} activeOpacity={0.85}>
-                <Text style={styles.quizBtnText}>📝 Take Lesson Quiz</Text>
+              <TouchableOpacity style={[styles.quizBtn, { backgroundColor: T.altAccent ?? T.gold, shadowColor: T.shadow }]} onPress={onTakeQuiz} activeOpacity={0.85}>
+                <Text style={[styles.quizBtnText, { color: T.altAccentText ?? T.accentText }]}>📝 Take Lesson Quiz</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles.continueBtn} onPress={onContinue} activeOpacity={0.85}>
-                <Text style={styles.continueBtnText}>Continue to Round 3 →</Text>
+              <TouchableOpacity style={[styles.continueBtn, { backgroundColor: T.accent, shadowColor: T.shadow }]} onPress={onContinue} activeOpacity={0.85}>
+                <Text style={[styles.continueBtnText, { color: T.accentText }]}>Continue to Round 3 →</Text>
               </TouchableOpacity>
             </>
           ) : (
-            <TouchableOpacity style={styles.continueBtn} onPress={onContinue} activeOpacity={0.85}>
-              <Text style={styles.continueBtnText}>
+            <TouchableOpacity style={[styles.continueBtn, { backgroundColor: T.accent, shadowColor: T.shadow }]} onPress={onContinue} activeOpacity={0.85}>
+              <Text style={[styles.continueBtnText, { color: T.accentText }]}>
                 {currentRound === 1 ? 'Start Round 2 →' : 'Start Round 3 →'}
               </Text>
             </TouchableOpacity>

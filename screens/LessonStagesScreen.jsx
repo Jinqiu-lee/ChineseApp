@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import WaveBackground from '../components/WaveBackground';
+import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 
 const STAGE_META = [
   { name: 'First Look',      desc: 'Flashcards · Audio · Matching',  icon: '👁',  color: '#E0B04B' },
@@ -10,26 +12,28 @@ const STAGE_META = [
   { name: 'Final Challenge', desc: 'All types · Full review',         icon: '🏆', color: '#F4C542' },
 ];
 
-export default function LessonStagesScreen({ lessonData, stageProgress = [], devUnlockAll = false, onSelectStage, onBack }) {
+export default function LessonStagesScreen({ lessonData, stageProgress = [], devUnlockAll = false, onSelectStage, onBack, levelId = 'hsk1' }) {
+  const T = LEVEL_SCREEN_PALETTES[levelId] || LEVEL_SCREEN_PALETTES.hsk1;
   const isUnlocked = (i) => devUnlockAll || i === 0 || stageProgress.includes(i - 1);
   const isCompleted = (i) => stageProgress.includes(i);
 
   return (
-    <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" />
+    <SafeAreaView style={[styles.safe, { backgroundColor: T.bg }]}>
+      <StatusBar barStyle={T.statusBar} />
+      {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
 
-      <View style={styles.header}>
+      <View style={[styles.header, { borderBottomColor: T.border }]}>
         <TouchableOpacity onPress={onBack} style={styles.backBtn}>
-          <Text style={styles.backText}>← Back</Text>
+          <Text style={[styles.backText, { color: T.gold }]}>← Back</Text>
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Practice Stages</Text>
+        <Text style={[styles.headerTitle, { color: T.onBg }]}>Practice Stages</Text>
         <View style={{ width: 60 }} />
       </View>
 
       <View style={styles.lessonInfo}>
-        <Text style={styles.lessonChinese}>{lessonData?.topic_chinese}</Text>
-        <Text style={styles.lessonTopic}>{lessonData?.topic}</Text>
-        <Text style={styles.lessonMeta}>5 stages · 10 exercises each</Text>
+        <Text style={[styles.lessonChinese, { color: T.onBg }]}>{lessonData?.topic_chinese}</Text>
+        <Text style={[styles.lessonTopic, { color: T.gold }]}>{lessonData?.topic}</Text>
+        <Text style={[styles.lessonMeta, { color: T.onBgMuted }]}>5 stages · 10 exercises each</Text>
       </View>
 
       {/* Overall progress dots */}
@@ -37,7 +41,7 @@ export default function LessonStagesScreen({ lessonData, stageProgress = [], dev
         {STAGE_META.map((_, i) => (
           <View
             key={i}
-            style={[styles.dot, isCompleted(i) && styles.dotDone, isUnlocked(i) && !isCompleted(i) && styles.dotUnlocked]}
+            style={[styles.dot, isCompleted(i) && { backgroundColor: T.success }, isUnlocked(i) && !isCompleted(i) && { backgroundColor: T.onBgMuted }]}
           />
         ))}
       </View>
@@ -50,22 +54,22 @@ export default function LessonStagesScreen({ lessonData, stageProgress = [], dev
           return (
             <TouchableOpacity
               key={i}
-              style={[styles.card, !unlocked && styles.cardLocked]}
+              style={[styles.card, { backgroundColor: T.cardDark, borderColor: T.border }, !unlocked && styles.cardLocked]}
               onPress={() => unlocked && onSelectStage(i)}
               activeOpacity={unlocked ? 0.8 : 1}
             >
               <View style={[
                 styles.iconBubble,
-                { backgroundColor: unlocked ? `${stage.color}22` : 'rgba(255,255,255,0.04)' },
+                { backgroundColor: unlocked ? `${stage.color}22` : 'rgba(128,128,128,0.08)' },
               ]}>
                 <Text style={styles.stageIcon}>{unlocked ? stage.icon : '🔒'}</Text>
               </View>
 
               <View style={styles.cardInfo}>
-                <Text style={[styles.stageName, !unlocked && styles.textMuted]}>
+                <Text style={[styles.stageName, { color: T.onBg }, !unlocked && { color: T.onBgMuted }]}>
                   Stage {i + 1}: {stage.name}
                 </Text>
-                <Text style={[styles.stageDesc, !unlocked && styles.textMuted]}>
+                <Text style={[styles.stageDesc, { color: T.onBgMuted }]}>
                   {stage.desc}
                 </Text>
               </View>
@@ -74,8 +78,8 @@ export default function LessonStagesScreen({ lessonData, stageProgress = [], dev
                 {completed ? (
                   <Text style={styles.checkmark}>✅</Text>
                 ) : unlocked ? (
-                  <View style={[styles.startBadge, { backgroundColor: stage.color }]}>
-                    <Text style={styles.startArrow}>→</Text>
+                  <View style={[styles.startBadge, { backgroundColor: T.accent }]}>
+                    <Text style={[styles.startArrow, { color: T.accentText }]}>→</Text>
                   </View>
                 ) : null}
               </View>

@@ -505,6 +505,7 @@ export default function App() {
     return (
       <LessonStagesScreen
         lessonData={currentLessonData}
+        levelId={currentLessonLevelId}
         stageProgress={currentStageProgressArr}
         devUnlockAll={DEV_UNLOCK_ALL}
         onSelectStage={handleSelectStage}
@@ -517,6 +518,7 @@ export default function App() {
     return (
       <StageExercisesScreen
         lessonData={currentLessonData}
+        levelId={currentLessonLevelId}
         stageIndex={currentStageIndex}
         roundIndex={currentRound - 1}
         onComplete={handleStageComplete}
@@ -531,6 +533,7 @@ export default function App() {
     return (
       <RoundCompleteScreen
         currentRound={currentRound}
+        levelId={currentLessonLevelId}
         roundScore={currentRoundScore}
         combinedAccuracy={combinedAccuracy}
         onContinue={handleRoundAdvance}
@@ -543,6 +546,7 @@ export default function App() {
     return (
       <LessonQuizScreen
         lessonData={currentLessonData}
+        levelId={currentLessonLevelId}
         onBack={() => setCurrentScreen('lesson')}
       />
     );
