@@ -45,20 +45,27 @@ function SentencesSection({ sentences }) {
   );
 }
 
+const VG = {
+  cardDark: '#243454',
+  gold: '#E0B04B', orange: '#D98C2B',
+  cream: '#F7F3E9', creamMuted: '#8A7E6E',
+  border: 'rgba(244,197,66,0.18)',
+};
+
 const styles = StyleSheet.create({
   container: { marginBottom: 24 },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 },
-  title: { fontSize: 20, fontWeight: '800', color: '#fff' },
-  count: { fontSize: 14, fontWeight: '600', color: '#636e72', backgroundColor: 'rgba(255,255,255,0.05)', paddingHorizontal: 10, paddingVertical: 4, borderRadius: 8 },
+  title: { fontSize: 20, fontWeight: '800', color: VG.cream },
+  count: { fontSize: 14, fontWeight: '600', color: VG.creamMuted, backgroundColor: 'rgba(255,255,255,0.05)', paddingHorizontal: 10, paddingVertical: 4, borderRadius: 8 },
   list: { gap: 12 },
-  sentenceCard: { flexDirection: 'row', alignItems: 'flex-start', backgroundColor: '#16213e', borderRadius: 16, padding: 16, borderWidth: 1, borderColor: '#2d3436', gap: 12 },
-  sentenceNumber: { width: 32, height: 32, borderRadius: 16, backgroundColor: 'rgba(162, 155, 254, 0.2)', alignItems: 'center', justifyContent: 'center' },
-  sentenceNumberText: { fontSize: 14, fontWeight: '800', color: '#a29bfe' },
+  sentenceCard: { flexDirection: 'row', alignItems: 'flex-start', backgroundColor: VG.cardDark, borderRadius: 16, padding: 16, borderWidth: 1, borderColor: VG.border, gap: 12 },
+  sentenceNumber: { width: 32, height: 32, borderRadius: 16, backgroundColor: 'rgba(224,176,75,0.18)', alignItems: 'center', justifyContent: 'center' },
+  sentenceNumberText: { fontSize: 14, fontWeight: '800', color: VG.gold },
   sentenceContent: { flex: 1 },
-  sentenceChinese: { fontSize: 20, fontWeight: '700', color: '#fff', marginBottom: 6, lineHeight: 28 },
-  sentencePinyin: { fontSize: 15, color: '#a29bfe', fontStyle: 'italic', marginBottom: 6, lineHeight: 22 },
-  sentenceEnglish: { fontSize: 15, color: '#dfe6e9', lineHeight: 22 },
-  audioIcon: { width: 36, height: 36, borderRadius: 18, backgroundColor: 'rgba(162, 155, 254, 0.15)', alignItems: 'center', justifyContent: 'center' },
+  sentenceChinese: { fontSize: 20, fontWeight: '700', color: VG.cream, marginBottom: 6, lineHeight: 28 },
+  sentencePinyin: { fontSize: 15, color: VG.orange, fontStyle: 'italic', marginBottom: 6, lineHeight: 22 },
+  sentenceEnglish: { fontSize: 15, color: VG.creamMuted, lineHeight: 22 },
+  audioIcon: { width: 36, height: 36, borderRadius: 18, backgroundColor: 'rgba(224,176,75,0.15)', alignItems: 'center', justifyContent: 'center' },
   audioIconText: { fontSize: 18 },
 });
 

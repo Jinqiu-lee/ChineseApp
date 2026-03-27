@@ -119,6 +119,14 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
   );
 }
 
+const VG = {
+  cardDark: '#243454',
+  onCard: '#1C2A44', onCardMuted: '#9A8A6A',
+  gold: '#E0B04B', orange: '#D98C2B', yellow: '#F4C542',
+  cream: '#F7F3E9', creamMuted: '#8A7E6E',
+  border: 'rgba(244,197,66,0.18)',
+};
+
 const styles = StyleSheet.create({
   container: { marginBottom: 24 },
   group: { marginBottom: 20 },
@@ -128,21 +136,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 10,
   },
-  groupTitle: { fontSize: 18, fontWeight: '800', color: '#fff' },
-  groupCount: { fontSize: 13, fontWeight: '600', color: '#636e72' },
+  groupTitle: { fontSize: 18, fontWeight: '800', color: VG.cream },
+  groupCount: { fontSize: 13, fontWeight: '600', color: VG.creamMuted },
 
   card: {
-    backgroundColor: '#16213e',
+    backgroundColor: VG.cardDark,
     borderRadius: 14,
     paddingVertical: 10,
     paddingHorizontal: 14,
     marginBottom: 8,
     borderWidth: 1,
-    borderColor: '#2d3436',
+    borderColor: VG.border,
   },
   cardPhrase: {
-    borderColor: 'rgba(255,215,0,0.25)',
-    backgroundColor: 'rgba(255,215,0,0.04)',
+    borderColor: 'rgba(244,197,66,0.3)',
+    backgroundColor: 'rgba(244,197,66,0.04)',
   },
 
   /* Row: Chinese on left, English on right */
@@ -158,7 +166,7 @@ const styles = StyleSheet.create({
   chinese: {
     fontSize: 24,
     fontWeight: '800',
-    color: '#fff',
+    color: VG.cream,
     marginBottom: 2,
   },
   chinesePhrase: {
@@ -166,7 +174,7 @@ const styles = StyleSheet.create({
   },
   pinyin: {
     fontSize: 13,
-    color: '#a29bfe',
+    color: VG.orange,
     fontStyle: 'italic',
   },
 
@@ -178,36 +186,36 @@ const styles = StyleSheet.create({
   english: {
     fontSize: 14,
     fontWeight: '600',
-    color: '#fff',
+    color: VG.cream,
     marginBottom: 4,
     textAlign: 'right',
   },
   pos: {
     fontSize: 11,
-    color: '#636e72',
-    backgroundColor: 'rgba(255,255,255,0.05)',
+    color: VG.creamMuted,
+    backgroundColor: 'rgba(255,255,255,0.06)',
     paddingHorizontal: 8,
     paddingVertical: 3,
     borderRadius: 6,
   },
   posPhrase: {
-    color: '#FFD700',
-    backgroundColor: 'rgba(255,215,0,0.1)',
+    color: VG.yellow,
+    backgroundColor: 'rgba(244,197,66,0.1)',
   },
 
   details: {
     marginTop: 10,
     paddingTop: 10,
     borderTopWidth: 1,
-    borderTopColor: 'rgba(255,255,255,0.08)',
+    borderTopColor: 'rgba(255,255,255,0.06)',
   },
   detailRow: { flexDirection: 'row', marginBottom: 8 },
-  detailLabel: { fontSize: 13, fontWeight: '600', color: '#a29bfe', marginRight: 8 },
-  detailValue: { fontSize: 13, color: '#fff', flex: 1 },
+  detailLabel: { fontSize: 13, fontWeight: '600', color: VG.gold, marginRight: 8 },
+  detailValue: { fontSize: 13, color: VG.cream, flex: 1 },
   exampleBox: {
     backgroundColor: 'rgba(255,255,255,0.04)',
     borderLeftWidth: 3,
-    borderLeftColor: '#a29bfe',
+    borderLeftColor: VG.gold,
     borderRadius: 8,
     paddingVertical: 8,
     paddingHorizontal: 12,
@@ -222,12 +230,12 @@ const styles = StyleSheet.create({
   exampleChinese: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#fff',
+    color: VG.cream,
     flex: 1,
     marginRight: 8,
   },
   exampleAudioBtn: {
-    backgroundColor: 'rgba(162,155,254,0.2)',
+    backgroundColor: 'rgba(224,176,75,0.18)',
     borderRadius: 8,
     paddingHorizontal: 8,
     paddingVertical: 4,
@@ -237,21 +245,21 @@ const styles = StyleSheet.create({
   },
   exampleTranslation: {
     fontSize: 13,
-    color: '#b2bec3',
+    color: VG.creamMuted,
     fontStyle: 'italic',
   },
   audioBtn: {
-    backgroundColor: 'rgba(162,155,254,0.15)',
+    backgroundColor: 'rgba(224,176,75,0.12)',
     padding: 10,
     borderRadius: 10,
     alignItems: 'center',
     marginTop: 4,
     borderWidth: 1,
-    borderColor: 'rgba(162,155,254,0.3)',
+    borderColor: 'rgba(224,176,75,0.3)',
   },
   audioBtnPhrase: {
-    backgroundColor: 'rgba(255,215,0,0.1)',
-    borderColor: 'rgba(255,215,0,0.3)',
+    backgroundColor: 'rgba(244,197,66,0.1)',
+    borderColor: 'rgba(244,197,66,0.3)',
   },
-  audioBtnText: { fontSize: 14, fontWeight: '600', color: '#a29bfe' },
+  audioBtnText: { fontSize: 14, fontWeight: '600', color: VG.gold },
 });

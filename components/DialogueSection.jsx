@@ -220,17 +220,24 @@ function AvatarSpeakerTag({ info, pal, avatarId }) {
   );
 }
 
+const VG = {
+  cardDark: '#243454',
+  gold: '#E0B04B', orange: '#D98C2B',
+  cream: '#F7F3E9', creamMuted: '#8A7E6E',
+  border: 'rgba(244,197,66,0.18)',
+};
+
 const styles = StyleSheet.create({
   container:    { marginBottom: 24 },
-  sectionTitle: { fontSize: 20, fontWeight: '800', color: '#fff', marginBottom: 14 },
+  sectionTitle: { fontSize: 20, fontWeight: '800', color: VG.cream, marginBottom: 14 },
 
   card: {
-    backgroundColor: '#16213e',
+    backgroundColor: VG.cardDark,
     borderRadius: 18,
     marginBottom: 14,
     overflow: 'hidden',
     borderWidth: 1,
-    borderColor: '#2d3436',
+    borderColor: VG.border,
   },
 
   // Scene banner (above card header)
@@ -247,13 +254,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.45)',
     paddingVertical: 4, paddingHorizontal: 12,
   },
-  sceneLabel: { fontSize: 13, fontWeight: '700', color: '#fff' },
+  sceneLabel: { fontSize: 13, fontWeight: '700', color: VG.cream },
   cardHeader: {
     paddingHorizontal: 16,
     paddingVertical: 12,
-    backgroundColor: 'rgba(255,255,255,0.04)',
+    backgroundColor: 'rgba(255,255,255,0.03)',
     borderBottomWidth: 1,
-    borderBottomColor: '#2d3436',
+    borderBottomColor: VG.border,
     gap: 10,
   },
   headerTop: {
@@ -261,17 +268,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
-  cardTitleChinese: { fontSize: 16, fontWeight: '800', color: '#fff' },
-  cardTitleEnglish: { fontSize: 12, color: '#636e72', marginTop: 2 },
+  cardTitleChinese: { fontSize: 16, fontWeight: '800', color: VG.cream },
+  cardTitleEnglish: { fontSize: 12, color: VG.creamMuted, marginTop: 2 },
 
   pinyinToggle: {
     paddingHorizontal: 12, paddingVertical: 6,
     borderRadius: 10, borderWidth: 1.5,
-    borderColor: '#2d3436', backgroundColor: 'rgba(255,255,255,0.04)',
+    borderColor: VG.border, backgroundColor: 'rgba(255,255,255,0.04)',
   },
-  pinyinToggleOn:     { borderColor: '#a29bfe', backgroundColor: 'rgba(162,155,254,0.15)' },
-  pinyinToggleText:   { fontSize: 14, fontWeight: '700', color: '#636e72' },
-  pinyinToggleTextOn: { color: '#a29bfe' },
+  pinyinToggleOn:     { borderColor: VG.gold, backgroundColor: 'rgba(224,176,75,0.15)' },
+  pinyinToggleText:   { fontSize: 14, fontWeight: '700', color: VG.creamMuted },
+  pinyinToggleTextOn: { color: VG.gold },
 
   // Speaker name row
   speakerRow: {
@@ -279,7 +286,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
   },
-  vsText: { fontSize: 11, fontWeight: '700', color: '#636e72' },
+  vsText: { fontSize: 11, fontWeight: '700', color: VG.creamMuted },
   speakerTag: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -293,8 +300,8 @@ const styles = StyleSheet.create({
   },
   speakerTagEmoji: { fontSize: 20 },
   speakerTagName:  { fontSize: 14, fontWeight: '800' },
-  speakerTagRole:  { fontSize: 11, color: '#636e72' },
-  speakerTagAvatar: { backgroundColor: 'rgba(162,155,254,0.1)' },
+  speakerTagRole:  { fontSize: 11, color: VG.creamMuted },
+  speakerTagAvatar: { backgroundColor: 'rgba(224,176,75,0.1)' },
 
   // Lines
   lines:    { padding: 14, gap: 12 },
@@ -314,7 +321,7 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   avatarEmoji: { fontSize: 20 },
-  avatarName:  { fontSize: 10, fontWeight: '800', color: '#fff', marginTop: 2 },
+  avatarName:  { fontSize: 10, fontWeight: '800', color: VG.cream, marginTop: 2 },
   // Avatar badge using AvatarCharacter image (for speaker A / avatar)
   avatarBadgeChar: {
     alignItems: 'center',
@@ -330,9 +337,9 @@ const styles = StyleSheet.create({
     maxWidth: '85%', borderWidth: 1,
   },
   bubbleTop:    { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' },
-  bubbleChinese:{ fontSize: 18, fontWeight: '700', color: '#fff', flex: 1, lineHeight: 26 },
+  bubbleChinese:{ fontSize: 18, fontWeight: '700', color: VG.cream, flex: 1, lineHeight: 26 },
   speakBtn:     { paddingLeft: 8, paddingTop: 2 },
   speakBtnText: { fontSize: 16 },
   bubblePinyin: { fontSize: 13, fontStyle: 'italic', marginTop: 4, marginBottom: 2 },
-  bubbleEnglish:{ fontSize: 13, color: '#636e72', marginTop: 4, lineHeight: 18 },
+  bubbleEnglish:{ fontSize: 13, color: VG.creamMuted, marginTop: 4, lineHeight: 18 },
 });
