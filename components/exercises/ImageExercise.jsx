@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet, Animated } from 'react-native';
 import { speakChinese } from '../../utils/tts';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 
 // ── ImageCard ──────────────────────────────────────────────────────────────
 // Renders one image option: real photo if url present, else emoji + color bg
 function ImageCard({ image, selected, correct, showResult, onPress, size = 140 }) {
   const borderColor = showResult
-    ? correct ? '#1DD1A1' : selected ? '#ff7675' : '#2d3436'
-    : selected ? '#a29bfe' : '#2d3436';
+    ? correct ? SUCCESS : selected ? ERROR : SLATE_TEAL
+    : selected ? WARM_ORANGE : SLATE_TEAL;
 
   const overlayColor = showResult
-    ? correct ? 'rgba(29,209,161,0.18)' : selected ? 'rgba(255,118,117,0.18)' : 'transparent'
-    : selected ? 'rgba(162,155,254,0.18)' : 'transparent';
+    ? correct ? 'rgba(45,122,74,0.18)' : selected ? 'rgba(196,80,58,0.18)' : 'transparent'
+    : selected ? 'rgba(232,82,42,0.18)' : 'transparent';
 
   return (
     <TouchableOpacity
@@ -27,7 +28,7 @@ function ImageCard({ image, selected, correct, showResult, onPress, size = 140 }
           resizeMode="cover"
         />
       ) : (
-        <View style={[styles.cardEmoji, { backgroundColor: image?.color || '#2d3436' }]}>
+        <View style={[styles.cardEmoji, { backgroundColor: image?.color || SLATE_TEAL }]}>
           <Text style={styles.cardEmojiText}>{image?.emoji || '🖼️'}</Text>
         </View>
       )}
@@ -41,7 +42,7 @@ function ImageCard({ image, selected, correct, showResult, onPress, size = 140 }
       {showResult && (
         <View style={[styles.resultOverlay, { backgroundColor: overlayColor }]}>
           {correct && <Text style={styles.resultIcon}>✓</Text>}
-          {!correct && selected && <Text style={[styles.resultIcon, { color: '#ff7675' }]}>✗</Text>}
+          {!correct && selected && <Text style={[styles.resultIcon, { color: ERROR }]}>✗</Text>}
         </View>
       )}
     </TouchableOpacity>
@@ -85,7 +86,7 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
           {exercise.image?.url ? (
             <Image source={{ uri: exercise.image.url }} style={styles.bigPhoto} resizeMode="cover" />
           ) : (
-            <View style={[styles.bigEmoji, { backgroundColor: exercise.image?.color || '#2d3436' }]}>
+            <View style={[styles.bigEmoji, { backgroundColor: exercise.image?.color || SLATE_TEAL }]}>
               <Text style={styles.bigEmojiText}>{exercise.image?.emoji || '🖼️'}</Text>
               <Text style={styles.bigEmojiLabel}>{exercise.image?.label}</Text>
             </View>
@@ -98,11 +99,11 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
             const isSelected = selected?.chinese === choice.chinese;
             const isCorrect  = choice.chinese === exercise.correct;
             const borderColor = showResult
-              ? isCorrect ? '#1DD1A1' : isSelected ? '#ff7675' : '#2d3436'
-              : isSelected ? '#a29bfe' : '#2d3436';
+              ? isCorrect ? SUCCESS : isSelected ? ERROR : SLATE_TEAL
+              : isSelected ? WARM_ORANGE : SLATE_TEAL;
             const bgColor = showResult
-              ? isCorrect ? 'rgba(29,209,161,0.15)' : isSelected ? 'rgba(255,118,117,0.12)' : 'rgba(255,255,255,0.04)'
-              : isSelected ? 'rgba(162,155,254,0.12)' : 'rgba(255,255,255,0.04)';
+              ? isCorrect ? '#e8f5e9' : isSelected ? '#fde8e8' : CARD_WHITE
+              : CARD_WHITE;
 
             return (
               <TouchableOpacity
@@ -228,24 +229,25 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
 }
 
 const VG = {
-  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
-  onCard: '#1C2A44', onCardMuted: '#9A8A6A',
-  gold: '#E0B04B', orange: '#D98C2B',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  success: '#5A9E5A', error: '#C4503A',
-  border: 'rgba(244,197,66,0.2)', shadow: '#A0700A',
+  bg: 'transparent', card: CARD_WHITE, cardDark: CARD_WHITE,
+  onCard: DEEP_NAVY, onCardMuted: WARM_BROWN,
+  gold: WARM_BROWN, orange: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  success: SUCCESS, error: ERROR,
+  border: 'rgba(155,104,70,0.22)', shadow: 'rgba(28,42,68,0.18)',
 };
 
 const styles = StyleSheet.create({
   container: { flex: 1, alignItems: 'center', paddingVertical: 16, gap: 20 },
 
-  prompt: { fontSize: 16, color: VG.cream, fontWeight: '600', textAlign: 'center' },
+  prompt: { fontSize: 16, color: VG.cream, fontWeight: '600', textAlign: 'center', backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, alignSelf: 'center' },
 
   // Big image for picture_to_word
   bigImageWrap: {
     width: 220, height: 220,
     borderRadius: 24,
     overflow: 'hidden',
+    backgroundColor: CARD_WHITE,
     borderWidth: 1.5, borderColor: 'rgba(217,140,43,0.3)',
   },
   bigPhoto: { width: '100%', height: '100%' },
@@ -329,7 +331,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(0,0,0,0.55)',
     paddingVertical: 4, paddingHorizontal: 6,
   },
-  cardLabel: { fontSize: 12, fontWeight: '700', color: '#fff', textAlign: 'center' },
+  cardLabel: { fontSize: 12, fontWeight: '700', color: CARD_WHITE, textAlign: 'center' },
 
   resultOverlay: {
     position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,

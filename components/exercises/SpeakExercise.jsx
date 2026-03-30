@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet, ActivityIndicator,
 } from 'react-native';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { speakChinese } from '../../utils/tts';
 import { startRecording, stopAndTranscribe, calculateAccuracy } from '../../utils/speechRecognition';
@@ -10,11 +11,11 @@ import AvatarCharacter from '../AvatarCharacter';
 const MAX_ATTEMPTS = 5;
 
 function getFeedback(accuracy) {
-  if (accuracy === 100) return { msg: 'Perfect! 完美！', icon: '⭐', color: '#FFD700', pass: true };
-  if (accuracy >= 90)  return { msg: 'Excellent! 🎉',   icon: '🏆', color: '#1DD1A1', pass: true };
-  if (accuracy >= 80)  return { msg: 'Bravo! 🌟',        icon: '🌟', color: '#54A0FF', pass: true };
-  if (accuracy >= 60)  return { msg: 'Good! Keep practicing 👍', icon: '👍', color: '#FF9F43', pass: true };
-  return { msg: "Hmm, couldn't quite catch that 🤔", icon: '🎤', color: '#FF6B6B', pass: false };
+  if (accuracy === 100) return { msg: 'Perfect! 完美！', icon: '⭐', color: WARM_ORANGE, pass: true };
+  if (accuracy >= 90)  return { msg: 'Excellent! 🎉',   icon: '🏆', color: SUCCESS,     pass: true };
+  if (accuracy >= 80)  return { msg: 'Bravo! 🌟',        icon: '🌟', color: SLATE_TEAL,  pass: true };
+  if (accuracy >= 60)  return { msg: 'Good! Keep practicing 👍', icon: '👍', color: WARM_BROWN, pass: true };
+  return { msg: "Hmm, couldn't quite catch that 🤔", icon: '🎤', color: ERROR, pass: false };
 }
 
 export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: avatarIdProp }) {
@@ -326,22 +327,22 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
 }
 
 const VG = {
-  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
-  onCard: '#1C2A44', onCardMid: '#5C4A2A', onCardMuted: '#9A8A6A',
-  yellow: '#F4C542', gold: '#E0B04B', orange: '#D98C2B',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  success: '#5A9E5A', error: '#C4503A',
-  border: 'rgba(244,197,66,0.2)', shadow: '#A0700A',
+  bg: 'transparent', card: CARD_WHITE, cardDark: CARD_WHITE,
+  onCard: DEEP_NAVY, onCardMid: WARM_BROWN, onCardMuted: WARM_BROWN,
+  yellow: WARM_ORANGE, gold: WARM_BROWN, orange: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  success: SUCCESS, error: ERROR,
+  border: 'rgba(155,104,70,0.22)', shadow: 'rgba(28,42,68,0.18)',
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20, gap: 16,
   },
-  instruction: { fontSize: 18, fontWeight: '700', color: VG.gold, textAlign: 'center' },
+  instruction: { fontSize: 18, fontWeight: '700', color: VG.gold, textAlign: 'center', backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, alignSelf: 'center' },
 
   emojiRefCard: {
-    backgroundColor: 'rgba(244,197,66,0.07)', borderRadius: 20,
+    backgroundColor: CARD_WHITE, borderRadius: 20,
     borderWidth: 1, borderColor: VG.border,
     paddingVertical: 16, paddingHorizontal: 24,
     alignItems: 'center', width: '100%', gap: 6,
@@ -362,9 +363,9 @@ const styles = StyleSheet.create({
   english: { fontSize: 20, fontWeight: '700', color: VG.onCard, textAlign: 'center' },
   divider: { width: '100%', height: 1, backgroundColor: 'rgba(28,42,68,0.1)', marginVertical: 8 },
   listenBtn: {
-    marginTop: 4, backgroundColor: 'rgba(217,140,43,0.1)',
+    marginTop: 4, backgroundColor: '#FFF8ED',
     paddingHorizontal: 20, paddingVertical: 10, borderRadius: 12,
-    borderWidth: 1, borderColor: 'rgba(217,140,43,0.35)',
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.50)',
   },
   listenBtnText: { fontSize: 15, fontWeight: '700', color: VG.orange },
 
@@ -373,11 +374,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16, paddingVertical: 8, borderRadius: 20,
     borderWidth: 1, borderColor: VG.border, backgroundColor: VG.cardDark,
   },
-  hintToggleOn: { borderColor: VG.yellow, backgroundColor: 'rgba(244,197,66,0.12)' },
+  hintToggleOn: { borderColor: VG.yellow, backgroundColor: '#FFF8ED' },
   hintToggleText: { fontSize: 14, fontWeight: '600', color: VG.creamMuted },
   hintToggleTextOn: { color: VG.yellow },
   hintBox: {
-    backgroundColor: 'rgba(244,197,66,0.07)', borderRadius: 14,
+    backgroundColor: '#FFF8ED', borderRadius: 14,
     borderWidth: 1, borderColor: VG.border,
     padding: 16, width: '100%', alignItems: 'center', gap: 4,
   },
@@ -399,7 +400,7 @@ const styles = StyleSheet.create({
   micBtnText: { fontSize: 16, fontWeight: '800', color: VG.bg },
 
   recordingCard: {
-    backgroundColor: 'rgba(196,80,58,0.1)', borderRadius: 20, padding: 32,
+    backgroundColor: '#fde8e8', borderRadius: 20, padding: 32,
     alignItems: 'center', width: '100%', borderWidth: 1,
     borderColor: 'rgba(196,80,58,0.3)', gap: 12,
   },
@@ -437,9 +438,9 @@ const styles = StyleSheet.create({
   resultFullAnswer: { fontSize: 14, color: 'rgba(28,42,68,0.45)', textAlign: 'center', marginTop: 2 },
   resultEnglish:    { fontSize: 13, color: VG.onCardMuted, textAlign: 'center' },
   replayBtn: {
-    marginTop: 8, backgroundColor: 'rgba(217,140,43,0.12)',
+    marginTop: 8, backgroundColor: '#FFF8ED',
     paddingHorizontal: 16, paddingVertical: 8, borderRadius: 10,
-    borderWidth: 1, borderColor: 'rgba(217,140,43,0.35)',
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.50)',
   },
   replayBtnText: { fontSize: 14, fontWeight: '600', color: VG.orange },
 
@@ -468,7 +469,7 @@ const styles = StyleSheet.create({
 
   maxActions: { flexDirection: 'row', gap: 12, width: '100%' },
   reviewBtn: {
-    flex: 1, backgroundColor: 'rgba(224,176,75,0.12)', borderRadius: 14,
+    flex: 1, backgroundColor: '#FFF8ED', borderRadius: 14,
     paddingVertical: 14, alignItems: 'center',
     borderWidth: 1, borderColor: VG.gold,
   },

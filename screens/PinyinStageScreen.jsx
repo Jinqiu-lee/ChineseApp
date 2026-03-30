@@ -4,11 +4,13 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { speakPinyin } from '../utils/tts';
 import PinyinLessonExercise from '../components/exercises/PinyinLessonExercise';
 import { buildStage1, buildStage2, buildStage3 } from '../utils/pinyinLessonGenerator';
+import ScreenBackground from '../components/ScreenBackground';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
 const STAGE_META = [
   { title: 'Stage 1 · Listen & Identify', icon: '🔊', color: '#FF9F43' },
   { title: 'Stage 2 · Read & Repeat',     icon: '🗣️',  color: '#1DD1A1' },
-  { title: 'Stage 3 · Visual Spelling',   icon: '✏️',  color: '#a29bfe' },
+  { title: 'Stage 3 · Visual Spelling',   icon: '✏️',  color: WARM_BROWN },
 ];
 
 export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, onBack }) {
@@ -71,19 +73,23 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
     const pct = exercises.length > 0 ? Math.round((score / exercises.length) * 100) : 100;
     const isSpeakStage = stageIndex === 1;
     return (
-      <SafeAreaView style={styles.safe}>
-        <View style={styles.doneContainer}>
-          <Text style={styles.doneEmoji}>{pct >= 70 ? '🎉' : '💪'}</Text>
-          <Text style={styles.doneTitle}>{meta.title}</Text>
-          <Text style={styles.doneTitle}>Complete!</Text>
-          {!isSpeakStage && (
-            <Text style={styles.doneScore}>{score}/{exercises.length} correct · {pct}%</Text>
-          )}
-          <TouchableOpacity style={styles.doneBtn} onPress={() => onComplete(score, exercises.length)} activeOpacity={0.85}>
-            <Text style={styles.doneBtnText}>← Back to Lesson</Text>
-          </TouchableOpacity>
-        </View>
-      </SafeAreaView>
+      <ScreenBackground levelId="pinyin">
+        <SafeAreaView style={styles.safe}>
+          <View style={styles.doneContainer}>
+            <Text style={styles.doneEmoji}>{pct >= 70 ? '🎉' : '💪'}</Text>
+            <View style={styles.doneCard}>
+              <Text style={styles.doneTitle}>{meta.title}</Text>
+              <Text style={styles.doneTitle}>Complete!</Text>
+              {!isSpeakStage && (
+                <Text style={styles.doneScore}>{score}/{exercises.length} correct · {pct}%</Text>
+              )}
+              <TouchableOpacity style={styles.doneBtn} onPress={() => onComplete(score, exercises.length)} activeOpacity={0.85}>
+                <Text style={styles.doneBtnText}>← Back to Lesson</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </SafeAreaView>
+      </ScreenBackground>
     );
   }
 
@@ -91,84 +97,88 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
   const isSpeakStage = stageIndex === 1;
 
   return (
-    <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" />
+    <ScreenBackground levelId="pinyin">
+      <SafeAreaView style={styles.safe}>
+        <StatusBar barStyle="dark-content" />
 
-      {/* Header */}
-      <View style={styles.header}>
-        <TouchableOpacity onPress={onBack} style={styles.exitBtn}>
-          <Text style={styles.exitText}>✕</Text>
-        </TouchableOpacity>
-        <View style={styles.progressBg}>
-          <View style={[styles.progressFill, { width: `${progress}%`, backgroundColor: meta.color }]} />
+        {/* Header */}
+        <View style={styles.header}>
+          <TouchableOpacity onPress={onBack} style={styles.exitBtn}>
+            <Text style={styles.exitText}>✕</Text>
+          </TouchableOpacity>
+          <View style={styles.progressBg}>
+            <View style={[styles.progressFill, { width: `${progress}%`, backgroundColor: meta.color }]} />
+          </View>
+          <Text style={styles.counter}>{current + 1}/{exercises.length}</Text>
         </View>
-        <Text style={styles.counter}>{current + 1}/{exercises.length}</Text>
-      </View>
 
-      {/* Stage label */}
-      <View style={[styles.stageBanner, { borderColor: meta.color + '44' }]}>
-        <Text style={[styles.stageBannerText, { color: meta.color }]}>{meta.icon} {meta.title}</Text>
-      </View>
-
-      {/* Exercise */}
-      {isSpeakStage ? (
-        <View style={styles.speakWrapper}>
-          {renderSpeakCard()}
+        {/* Stage label */}
+        <View style={[styles.stageBanner, { borderColor: meta.color + '44' }]}>
+          <Text style={[styles.stageBannerText, { color: meta.color }]}>{meta.icon} {meta.title}</Text>
         </View>
-      ) : (
-        <ScrollView
-          style={{ flex: 1 }}
-          contentContainerStyle={{ padding: 16, flexGrow: 1 }}
-          keyboardShouldPersistTaps="handled"
-          showsVerticalScrollIndicator={false}
-        >
-          {exercise && (
-            <PinyinLessonExercise
-              key={current}
-              exercise={exercise}
-              onCorrect={() => advance(true)}
-              onWrong={() => advance(false)}
-            />
-          )}
-        </ScrollView>
-      )}
-    </SafeAreaView>
+
+        {/* Exercise */}
+        {isSpeakStage ? (
+          <View style={styles.speakWrapper}>
+            {renderSpeakCard()}
+          </View>
+        ) : (
+          <ScrollView
+            style={{ flex: 1 }}
+            contentContainerStyle={{ padding: 16, flexGrow: 1 }}
+            keyboardShouldPersistTaps="handled"
+            showsVerticalScrollIndicator={false}
+          >
+            {exercise && (
+              <PinyinLessonExercise
+                key={current}
+                exercise={exercise}
+                onCorrect={() => advance(true)}
+                onWrong={() => advance(false)}
+              />
+            )}
+          </ScrollView>
+        )}
+      </SafeAreaView>
+    </ScreenBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#1a1a2e' },
+  safe: { flex: 1, backgroundColor: 'transparent' },
 
   header: {
     flexDirection: 'row', alignItems: 'center',
     paddingHorizontal: 16, paddingVertical: 12, gap: 12,
+    backgroundColor: CARD_WHITE,
+    borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)',
   },
   exitBtn:      { width: 32, height: 32, alignItems: 'center', justifyContent: 'center' },
-  exitText:     { fontSize: 18, color: '#636e72', fontWeight: '700' },
-  progressBg:   { flex: 1, height: 8, backgroundColor: '#2d3436', borderRadius: 4, overflow: 'hidden' },
+  exitText:     { fontSize: 18, color: SLATE_TEAL, fontWeight: '700' },
+  progressBg:   { flex: 1, height: 8, backgroundColor: 'rgba(55,73,80,0.22)', borderRadius: 4, overflow: 'hidden' },
   progressFill: { height: '100%', borderRadius: 4 },
-  counter:      { fontSize: 13, color: '#636e72', fontWeight: '600', minWidth: 36, textAlign: 'right' },
+  counter:      { fontSize: 13, color: SLATE_TEAL, fontWeight: '600', minWidth: 36, textAlign: 'right' },
 
   stageBanner: {
     paddingHorizontal: 20, paddingVertical: 8,
     borderBottomWidth: 1, borderTopWidth: 1,
-    borderColor: '#a29bfe22',
-    backgroundColor: 'rgba(255,255,255,0.02)',
+    backgroundColor: CARD_WHITE,
+    borderColor: 'rgba(155,104,70,0.18)',
   },
   stageBannerText: { fontSize: 13, fontWeight: '700' },
 
   // Speak card
   speakWrapper: { flex: 1, justifyContent: 'center', padding: 20 },
   speakCard: {
-    backgroundColor: '#16213e', borderRadius: 24, padding: 28, alignItems: 'center', gap: 12,
-    borderWidth: 1.5, borderColor: '#1DD1A155',
+    backgroundColor: CARD_WHITE, borderRadius: 24, padding: 28, alignItems: 'center', gap: 12,
+    borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.25)',
   },
-  speakCardInstr:   { fontSize: 14, color: '#636e72' },
-  speakCardChinese: { fontSize: 48, fontWeight: '900', color: '#fff' },
+  speakCardInstr:   { fontSize: 14, color: SLATE_TEAL },
+  speakCardChinese: { fontSize: 48, fontWeight: '900', color: DEEP_NAVY },
   speakCardSyllable:{ fontSize: 32, fontWeight: '800', color: '#1DD1A1', letterSpacing: 2 },
-  speakCardMeaning: { fontSize: 15, color: '#b2bec3', fontStyle: 'italic' },
+  speakCardMeaning: { fontSize: 15, color: SLATE_TEAL, fontStyle: 'italic' },
   playBtn: {
-    marginTop: 8, backgroundColor: 'rgba(29,209,161,0.15)', borderRadius: 14,
+    marginTop: 8, backgroundColor: 'rgba(29,209,161,0.12)', borderRadius: 14,
     paddingHorizontal: 24, paddingVertical: 14, borderWidth: 1.5, borderColor: '#1DD1A1',
   },
   playBtnText: { fontSize: 16, fontWeight: '700', color: '#1DD1A1' },
@@ -176,16 +186,21 @@ const styles = StyleSheet.create({
     width: '100%', backgroundColor: '#1DD1A1', borderRadius: 16,
     paddingVertical: 16, alignItems: 'center', marginTop: 4,
   },
-  gotItText: { fontSize: 16, fontWeight: '800', color: '#fff' },
+  gotItText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 
   // Done
   doneContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 32 },
-  doneEmoji:     { fontSize: 64, marginBottom: 12 },
-  doneTitle:     { fontSize: 26, fontWeight: '900', color: '#fff', textAlign: 'center' },
-  doneScore:     { fontSize: 18, color: '#1DD1A1', fontWeight: '700', marginTop: 8, marginBottom: 32 },
-  doneBtn: {
-    backgroundColor: '#54A0FF', borderRadius: 16,
-    paddingHorizontal: 32, paddingVertical: 16, marginTop: 24,
+  doneEmoji:     { fontSize: 64, marginBottom: 16 },
+  doneCard: {
+    backgroundColor: CARD_WHITE, borderRadius: 24, padding: 28,
+    alignItems: 'center', width: '100%', gap: 8,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)',
   },
-  doneBtnText: { fontSize: 16, fontWeight: '800', color: '#fff' },
+  doneTitle:     { fontSize: 26, fontWeight: '900', color: DEEP_NAVY, textAlign: 'center' },
+  doneScore:     { fontSize: 18, color: '#1DD1A1', fontWeight: '700', marginTop: 4 },
+  doneBtn: {
+    backgroundColor: SLATE_TEAL, borderRadius: 16,
+    paddingHorizontal: 32, paddingVertical: 16, marginTop: 16, width: '100%', alignItems: 'center',
+  },
+  doneBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 });

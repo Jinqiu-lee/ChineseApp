@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 
 function shuffle(arr) {
   const a = [...arr];
@@ -119,29 +120,29 @@ export default function MatchPairsExercise({ exercise, onComplete }) {
 }
 
 const VG = {
-  bg: '#1C2A44', cardDark: '#243454',
-  gold: '#E0B04B', orange: '#D98C2B',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  success: '#5A9E5A', error: '#C4503A',
-  border: 'rgba(244,197,66,0.2)',
+  bg: 'transparent', card: CARD_WHITE, cardDark: CARD_WHITE,
+  gold: WARM_BROWN, orange: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  success: SUCCESS, error: ERROR,
+  border: 'rgba(155,104,70,0.22)',
 };
 
 const styles = StyleSheet.create({
   container: { flex: 1, paddingTop: 8, paddingHorizontal: 8 },
-  topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 },
+  topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12, backgroundColor: CARD_WHITE, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 10 },
   instruction: { fontSize: 17, fontWeight: '700', color: VG.cream },
   pinyinToggle: { paddingHorizontal: 12, paddingVertical: 6, borderRadius: 10, borderWidth: 1.5, borderColor: VG.border, backgroundColor: VG.cardDark },
-  pinyinToggleOn: { borderColor: VG.gold, backgroundColor: 'rgba(224,176,75,0.15)' },
+  pinyinToggleOn: { borderColor: VG.gold, backgroundColor: '#FFF8ED' },
   pinyinToggleText: { fontSize: 13, fontWeight: '600', color: VG.creamMuted },
   pinyinToggleTextOn: { color: VG.gold },
-  progress: { fontSize: 13, color: VG.gold, marginBottom: 20 },
+  progress: { fontSize: 13, color: DEEP_NAVY, fontWeight: '700', marginBottom: 20, backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 12, paddingVertical: 6, alignSelf: 'flex-start' },
   grid: { flexDirection: 'row' },
   col: { flex: 1, gap: 10 },
   divider: { width: 12 },
   cell:         { backgroundColor: VG.cardDark, borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 1.5, borderColor: VG.border, minHeight: 64 },
-  cellSelected: { backgroundColor: 'rgba(224,176,75,0.15)', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.gold, minHeight: 64 },
-  cellMatched:  { backgroundColor: 'rgba(90,158,90,0.15)', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.success, minHeight: 64, opacity: 0.6 },
-  cellWrong:    { backgroundColor: 'rgba(196,80,58,0.15)', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.error, minHeight: 64 },
+  cellSelected: { backgroundColor: '#FFF8ED', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.gold, minHeight: 64 },
+  cellMatched:  { backgroundColor: '#e8f5e9', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.success, minHeight: 64 },
+  cellWrong:    { backgroundColor: '#fde8e8', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.error, minHeight: 64 },
   cellChinese: { fontSize: 26, fontWeight: '800', color: VG.cream },
   cellPinyin:  { fontSize: 11, color: VG.orange, fontStyle: 'italic', marginTop: 3 },
   cellEnglish: { fontSize: 13, fontWeight: '600', color: VG.cream, textAlign: 'center', lineHeight: 18 },

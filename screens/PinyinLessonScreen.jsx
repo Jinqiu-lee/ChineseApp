@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { speakPinyin } from '../utils/tts';
+import ScreenBackground from '../components/ScreenBackground';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
 const TONE_COLORS = ['#FF6B6B', '#FF9F43', '#1DD1A1', '#54A0FF'];
 const TONE_NAMES  = ['1st Tone ā', '2nd Tone á', '3rd Tone ǎ', '4th Tone à'];
@@ -40,6 +42,8 @@ export default function PinyinLessonScreen({
   const [selectedFinal, setSelectedFinal] = useState(null);  // opens tone popup
 
   if (!lessonData) return null;
+
+  const STAGE_COLORS = ['#296614', '#f99e27', '#943012'];
 
   const stages = [
     { index: 0, title: 'Stage 1 · Listen & Identify', desc: 'Hear audio → pick tone, initial, or final', icon: '🔊' },
@@ -248,7 +252,12 @@ export default function PinyinLessonScreen({
             activeOpacity={0.85}
           >
             <View style={styles.stageLeft}>
-              <Text style={styles.stageIcon}>{done ? '✅' : stage.icon}</Text>
+              <View style={[styles.stageDot, { backgroundColor: STAGE_COLORS[stage.index] }]}>
+                {done
+                  ? <Text style={styles.stageDotCheck}>✓</Text>
+                  : <Text style={styles.stageDotNum}>{stage.index + 1}</Text>
+                }
+              </View>
               <View style={{ flex: 1 }}>
                 <Text style={styles.stageTitle}>{stage.title}</Text>
                 <Text style={styles.stageDesc}>{stage.desc}</Text>
@@ -286,218 +295,228 @@ export default function PinyinLessonScreen({
   );
 
   return (
-    <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" />
+    <ScreenBackground levelId="pinyin">
+      <SafeAreaView style={styles.safe}>
+        <StatusBar barStyle="dark-content" />
 
-      <View style={styles.header}>
-        <TouchableOpacity onPress={onBack} style={styles.backBtn}>
-          <Text style={styles.backBtnText}>← Back</Text>
-        </TouchableOpacity>
-        <Text style={styles.headerTitle} numberOfLines={1}>
-          {lessonData.emoji} Lesson {lessonData.id}
-        </Text>
-        <View style={{ width: 60 }} />
-      </View>
-
-      {/* Lesson title card */}
-      <View style={styles.lessonBanner}>
-        <Text style={styles.bannerTitle}>{lessonData.title}</Text>
-        <Text style={styles.bannerSub}>{lessonData.subtitle}</Text>
-        <Text style={styles.bannerDesc}>{lessonData.description}</Text>
-      </View>
-
-      {/* Tabs */}
-      <View style={styles.tabs}>
-        {['learn','practice'].map(t => (
-          <TouchableOpacity
-            key={t}
-            style={[styles.tab, tab === t && styles.tabActive]}
-            onPress={() => setTab(t)}
-          >
-            <Text style={[styles.tabText, tab === t && styles.tabTextActive]}>
-              {t === 'learn' ? '📖 Learn' : '🎯 Practice'}
-            </Text>
+        <View style={styles.header}>
+          <TouchableOpacity onPress={onBack} style={styles.backBtn}>
+            <Text style={styles.backBtnText}>← Back</Text>
           </TouchableOpacity>
-        ))}
-      </View>
-
-      {tab === 'learn' ? renderLearnTab() : renderPracticeTab()}
-
-      {/* Final Tones Popup */}
-      <Modal
-        visible={!!selectedFinal}
-        transparent
-        animationType="slide"
-        onRequestClose={() => setSelectedFinal(null)}
-      >
-        <View style={styles.modalOverlay}>
-          <View style={styles.modalCard}>
-            <View style={styles.modalHeader}>
-              <Text style={styles.modalTitle}>
-                Tones for: <Text style={styles.modalFinal}>{selectedFinal}</Text>
-              </Text>
-              <TouchableOpacity onPress={() => setSelectedFinal(null)} style={styles.modalCloseBtn}>
-                <Text style={styles.modalCloseText}>✕</Text>
-              </TouchableOpacity>
-            </View>
-            <Text style={styles.modalSub}>Tap each card to hear the tone</Text>
-
-            {(FINAL_TONES[selectedFinal] || []).map((mark, i) => (
-              <TouchableOpacity
-                key={i}
-                style={[styles.modalToneCard, { borderColor: TONE_COLORS[i] + '99', backgroundColor: TONE_COLORS[i] + '15' }]}
-                onPress={() => speakPinyin(mark)}
-                activeOpacity={0.75}
-              >
-                <View style={[styles.modalToneBadge, { backgroundColor: TONE_COLORS[i] }]}>
-                  <Text style={styles.modalToneBadgeNum}>{i + 1}</Text>
-                </View>
-                <Text style={[styles.modalToneMark, { color: TONE_COLORS[i] }]}>{mark}</Text>
-                <Text style={styles.modalToneName}>{TONE_NAMES[i]}</Text>
-                <Text style={styles.modalAudioIcon}>🔊</Text>
-              </TouchableOpacity>
-            ))}
-
-            {!FINAL_TONES[selectedFinal] && (
-              <Text style={styles.modalNoTones}>Tone variants not available for this final.</Text>
-            )}
-          </View>
+          <Text style={styles.headerTitle} numberOfLines={1}>
+            {lessonData.emoji} Lesson {lessonData.id}
+          </Text>
+          <View style={{ width: 60 }} />
         </View>
-      </Modal>
-    </SafeAreaView>
+
+        {/* Lesson title card */}
+        <View style={styles.lessonBanner}>
+          <Text style={styles.bannerTitle}>{lessonData.title}</Text>
+          <Text style={styles.bannerSub}>{lessonData.subtitle}</Text>
+          <Text style={styles.bannerDesc}>{lessonData.description}</Text>
+        </View>
+
+        {/* Tabs */}
+        <View style={styles.tabs}>
+          {['learn','practice'].map(t => (
+            <TouchableOpacity
+              key={t}
+              style={[styles.tab, tab === t && styles.tabActive]}
+              onPress={() => setTab(t)}
+            >
+              <Text style={[styles.tabText, tab === t && styles.tabTextActive]}>
+                {t === 'learn' ? '📖 Learn' : '🎯 Practice'}
+              </Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+
+        {tab === 'learn' ? renderLearnTab() : renderPracticeTab()}
+
+        {/* Final Tones Popup */}
+        <Modal
+          visible={!!selectedFinal}
+          transparent
+          animationType="slide"
+          onRequestClose={() => setSelectedFinal(null)}
+        >
+          <View style={styles.modalOverlay}>
+            <View style={styles.modalCard}>
+              <View style={styles.modalHeader}>
+                <Text style={styles.modalTitle}>
+                  Tones for: <Text style={styles.modalFinal}>{selectedFinal}</Text>
+                </Text>
+                <TouchableOpacity onPress={() => setSelectedFinal(null)} style={styles.modalCloseBtn}>
+                  <Text style={styles.modalCloseText}>✕</Text>
+                </TouchableOpacity>
+              </View>
+              <Text style={styles.modalSub}>Tap each card to hear the tone</Text>
+
+              {(FINAL_TONES[selectedFinal] || []).map((mark, i) => (
+                <TouchableOpacity
+                  key={i}
+                  style={[styles.modalToneCard, { borderColor: TONE_COLORS[i] + '99', backgroundColor: TONE_COLORS[i] + '15' }]}
+                  onPress={() => speakPinyin(mark)}
+                  activeOpacity={0.75}
+                >
+                  <View style={[styles.modalToneBadge, { backgroundColor: TONE_COLORS[i] }]}>
+                    <Text style={styles.modalToneBadgeNum}>{i + 1}</Text>
+                  </View>
+                  <Text style={[styles.modalToneMark, { color: TONE_COLORS[i] }]}>{mark}</Text>
+                  <Text style={styles.modalToneName}>{TONE_NAMES[i]}</Text>
+                  <Text style={styles.modalAudioIcon}>🔊</Text>
+                </TouchableOpacity>
+              ))}
+
+              {!FINAL_TONES[selectedFinal] && (
+                <Text style={styles.modalNoTones}>Tone variants not available for this final.</Text>
+              )}
+            </View>
+          </View>
+        </Modal>
+      </SafeAreaView>
+    </ScreenBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: '#1a1a2e' },
+  safe: { flex: 1, backgroundColor: 'transparent' },
 
   header: {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
     paddingHorizontal: 20, paddingVertical: 12,
-    borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.08)',
+    backgroundColor: CARD_WHITE,
+    borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)',
   },
   backBtn:     { paddingVertical: 8, paddingRight: 12 },
-  backBtnText: { fontSize: 16, fontWeight: '600', color: '#a29bfe' },
-  headerTitle: { fontSize: 15, fontWeight: '700', color: '#fff', flex: 1, textAlign: 'center' },
+  backBtnText: { fontSize: 16, fontWeight: '600', color: WARM_BROWN },
+  headerTitle: { fontSize: 15, fontWeight: '700', color: DEEP_NAVY, flex: 1, textAlign: 'center' },
 
   lessonBanner: {
     paddingHorizontal: 20, paddingVertical: 16,
-    borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.06)',
-    backgroundColor: '#16213e',
+    borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)',
+    backgroundColor: CARD_WHITE,
   },
-  bannerTitle: { fontSize: 18, fontWeight: '900', color: '#fff', marginBottom: 2 },
-  bannerSub:   { fontSize: 13, color: '#54A0FF', marginBottom: 4 },
-  bannerDesc:  { fontSize: 13, color: '#b2bec3', lineHeight: 18 },
+  bannerTitle: { fontSize: 18, fontWeight: '900', color: DEEP_NAVY, marginBottom: 2 },
+  bannerSub:   { fontSize: 13, color: SLATE_TEAL, marginBottom: 4 },
+  bannerDesc:  { fontSize: 13, color: SLATE_TEAL, lineHeight: 18 },
 
-  tabs: { flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.08)' },
+  tabs: { flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)', backgroundColor: CARD_WHITE },
   tab:          { flex: 1, paddingVertical: 14, alignItems: 'center' },
-  tabActive:    { borderBottomWidth: 2, borderBottomColor: '#54A0FF' },
-  tabText:      { fontSize: 14, fontWeight: '700', color: '#636e72' },
-  tabTextActive:{ color: '#54A0FF' },
+  tabActive:    { borderBottomWidth: 2, borderBottomColor: WARM_ORANGE },
+  tabText:      { fontSize: 14, fontWeight: '700', color: SLATE_TEAL },
+  tabTextActive:{ color: WARM_ORANGE },
 
   tabContent: { padding: 20 },
 
   sectionLabel: {
-    fontSize: 11, fontWeight: '800', color: '#636e72',
+    fontSize: 11, fontWeight: '800', color: SLATE_TEAL,
     letterSpacing: 1.5, marginBottom: 10,
+    backgroundColor: CARD_WHITE, paddingHorizontal: 12, paddingVertical: 5,
+    borderRadius: 8, alignSelf: 'flex-start',
   },
 
   // Tone rows
   toneRow: {
     flexDirection: 'row', alignItems: 'center', gap: 12,
-    backgroundColor: '#16213e', borderRadius: 16, padding: 14,
+    backgroundColor: CARD_WHITE, borderRadius: 16, padding: 14,
     marginBottom: 10, borderWidth: 1.5,
   },
   toneBadge:     { width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center' },
-  toneBadgeText: { fontSize: 18, fontWeight: '900', color: '#fff' },
+  toneBadgeText: { fontSize: 18, fontWeight: '900', color: CARD_WHITE },
   toneInfo:      { flex: 1, gap: 2 },
   toneMark:      { fontSize: 22, fontWeight: '900' },
-  toneName:      { fontSize: 14, fontWeight: '700', color: '#fff' },
-  toneDesc:      { fontSize: 12, color: '#b2bec3' },
-  toneExample:   { fontSize: 12, color: '#636e72' },
+  toneName:      { fontSize: 14, fontWeight: '700', color: DEEP_NAVY },
+  toneDesc:      { fontSize: 12, color: SLATE_TEAL },
+  toneExample:   { fontSize: 12, color: SLATE_TEAL },
   audioBtn:      { fontSize: 20 },
 
   // Chips
-  chipsRow:       { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  chipInitial:     { backgroundColor: '#16213e', borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, borderWidth: 1.5, borderColor: '#a29bfe55' },
-  chipInitialText: { fontSize: 16, fontWeight: '700', color: '#a29bfe' },
-  chipFinal:       { backgroundColor: '#16213e', borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, borderWidth: 1.5, borderColor: '#1DD1A155' },
-  chipFinalText:   { fontSize: 16, fontWeight: '700', color: '#1DD1A1' },
-  chipWhole:       { backgroundColor: '#16213e', borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, borderWidth: 1.5, borderColor: '#54A0FF55' },
-  chipWholeText:   { fontSize: 16, fontWeight: '700', color: '#54A0FF' },
+  chipsRow:           { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  chipInitial:        { backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.30)' },
+  chipInitialText:    { fontSize: 16, fontWeight: '700', color: WARM_BROWN },
+  chipFinalTappable:  { flexDirection: 'row', alignItems: 'center', gap: 4, backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, borderWidth: 1.5, borderColor: 'rgba(55,73,80,0.30)' },
+  chipFinalText:      { fontSize: 16, fontWeight: '700', color: SLATE_TEAL },
+  chipFinalArrow:     { fontSize: 11, color: SLATE_TEAL, fontWeight: '700' },
+  chipWhole:          { backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, borderWidth: 1.5, borderColor: 'rgba(28,42,68,0.20)' },
+  chipWholeText:      { fontSize: 16, fontWeight: '700', color: DEEP_NAVY },
 
   // Rules
   rulesBox: {
-    backgroundColor: 'rgba(162,155,254,0.08)', borderRadius: 16, padding: 16,
-    borderWidth: 1, borderColor: '#a29bfe33', gap: 8,
+    backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)', gap: 8,
   },
-  ruleText: { fontSize: 13, color: '#b2bec3', lineHeight: 20 },
+  ruleText: { fontSize: 13, color: SLATE_TEAL, lineHeight: 20 },
 
   // Sandhi
-  sandhiBox:  { backgroundColor: '#16213e', borderRadius: 16, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: '#54A0FF33' },
-  sandhiTitle:{ fontSize: 16, fontWeight: '800', color: '#54A0FF', marginBottom: 8 },
+  sandhiBox:  { backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)' },
+  sandhiTitle:{ fontSize: 16, fontWeight: '800', color: SLATE_TEAL, marginBottom: 8 },
   sandhiRow:  { flexDirection: 'row', gap: 8, marginBottom: 4 },
-  sandhiArrow:{ color: '#FF9F43', fontWeight: '700' },
-  sandhiRule: { fontSize: 13, color: '#b2bec3', flex: 1 },
+  sandhiArrow:{ color: WARM_ORANGE, fontWeight: '700' },
+  sandhiRule: { fontSize: 13, color: SLATE_TEAL, flex: 1 },
 
   // Word grid
   wordGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
   wordCard: {
-    backgroundColor: '#16213e', borderRadius: 12, padding: 12,
-    borderWidth: 1, borderColor: '#a29bfe33', alignItems: 'center', minWidth: '30%',
+    backgroundColor: CARD_WHITE, borderRadius: 12, padding: 12,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)', alignItems: 'center', minWidth: '30%',
   },
-  wordChinese: { fontSize: 22, fontWeight: '900', color: '#fff', marginBottom: 2 },
-  wordPinyin:  { fontSize: 13, color: '#54A0FF', marginBottom: 2 },
-  wordMeaning: { fontSize: 11, color: '#636e72' },
+  wordChinese: { fontSize: 22, fontWeight: '900', color: DEEP_NAVY, marginBottom: 2 },
+  wordPinyin:  { fontSize: 13, color: SLATE_TEAL, marginBottom: 2 },
+  wordMeaning: { fontSize: 11, color: SLATE_TEAL },
 
   // Practice tab
-  practiceIntro: { fontSize: 13, color: '#b2bec3', lineHeight: 20, marginBottom: 20 },
+  practiceIntro: {
+    fontSize: 13, color: SLATE_TEAL, lineHeight: 20, marginBottom: 20,
+    backgroundColor: CARD_WHITE, borderRadius: 12, padding: 14,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)',
+  },
 
   stageCard: {
     flexDirection: 'row', alignItems: 'center',
-    backgroundColor: '#16213e', borderRadius: 16, padding: 16,
-    marginBottom: 12, borderWidth: 1.5, borderColor: '#a29bfe22', gap: 12,
+    backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16,
+    marginBottom: 12, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.20)', gap: 12,
   },
-  stageCardDone: { borderColor: '#1DD1A155' },
+  stageCardDone: { borderColor: 'rgba(41,102,20,0.45)' },
   stageLeft:     { flex: 1, flexDirection: 'row', alignItems: 'center', gap: 12 },
-  stageIcon:     { fontSize: 26 },
-  stageTitle:    { fontSize: 15, fontWeight: '800', color: '#fff', marginBottom: 2 },
-  stageDesc:     { fontSize: 12, color: '#636e72' },
-  stageArrow:    { fontSize: 18, color: '#a29bfe', fontWeight: '700' },
+  stageDot:      { width: 40, height: 40, borderRadius: 20, alignItems: 'center', justifyContent: 'center', flexShrink: 0 },
+  stageDotCheck: { fontSize: 17, fontWeight: '900', color: '#FFFFFF' },
+  stageDotNum:   { fontSize: 15, fontWeight: '900', color: '#FFFFFF' },
+  stageTitle:    { fontSize: 15, fontWeight: '800', color: DEEP_NAVY, marginBottom: 2 },
+  stageDesc:     { fontSize: 12, color: SLATE_TEAL },
+  stageArrow:    { fontSize: 18, color: WARM_BROWN, fontWeight: '700' },
 
   quizBtn: {
     flexDirection: 'row', alignItems: 'center', gap: 12,
-    backgroundColor: '#54A0FF', borderRadius: 18, padding: 20, marginTop: 8,
+    backgroundColor: SLATE_TEAL, borderRadius: 18, padding: 20, marginTop: 8,
   },
-  quizBtnLocked: { backgroundColor: '#16213e', borderWidth: 1.5, borderColor: '#2d3436' },
+  quizBtnLocked: { backgroundColor: CARD_WHITE, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.20)' },
   quizBtnEmoji:  { fontSize: 28 },
-  quizBtnTitle:  { fontSize: 16, fontWeight: '800', color: '#fff', marginBottom: 2 },
-  quizBtnSub:    { fontSize: 12, color: 'rgba(255,255,255,0.7)' },
-  lockedText:    { color: '#4a4a6a' },
+  quizBtnTitle:  { fontSize: 16, fontWeight: '800', color: CARD_WHITE, marginBottom: 2 },
+  quizBtnSub:    { fontSize: 12, color: 'rgba(255,255,255,0.75)' },
+  lockedText:    { color: 'rgba(55,73,80,0.45)' },
 
-  // Finals tappable chip
-  finalHint:          { fontSize: 11, color: '#636e72', marginBottom: 8, fontStyle: 'italic' },
-  chipFinalTappable:  { flexDirection: 'row', alignItems: 'center', gap: 4, backgroundColor: '#16213e', borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, borderWidth: 1.5, borderColor: '#1DD1A188' },
-  chipFinalArrow:     { fontSize: 11, color: '#1DD1A1', fontWeight: '700' },
+  // Finals hint
+  finalHint: { fontSize: 11, color: SLATE_TEAL, marginBottom: 8, fontStyle: 'italic', backgroundColor: CARD_WHITE, paddingHorizontal: 10, paddingVertical: 4, borderRadius: 6, alignSelf: 'flex-start' },
 
   // Tone popup modal
   modalOverlay: {
-    flex: 1, backgroundColor: 'rgba(0,0,0,0.65)',
+    flex: 1, backgroundColor: 'rgba(0,0,0,0.50)',
     justifyContent: 'flex-end',
   },
   modalCard: {
-    backgroundColor: '#16213e', borderTopLeftRadius: 28, borderTopRightRadius: 28,
+    backgroundColor: CARD_WHITE, borderTopLeftRadius: 28, borderTopRightRadius: 28,
     padding: 24, paddingBottom: 40, gap: 12,
-    borderTopWidth: 1, borderColor: '#a29bfe33',
+    borderTopWidth: 1, borderColor: 'rgba(155,104,70,0.25)',
   },
   modalHeader: {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 4,
   },
-  modalTitle:    { fontSize: 17, fontWeight: '800', color: '#fff' },
-  modalFinal:    { color: '#1DD1A1', fontSize: 20 },
+  modalTitle:    { fontSize: 17, fontWeight: '800', color: DEEP_NAVY },
+  modalFinal:    { color: SLATE_TEAL, fontSize: 20 },
   modalCloseBtn: { width: 32, height: 32, alignItems: 'center', justifyContent: 'center' },
-  modalCloseText:{ fontSize: 18, color: '#636e72', fontWeight: '700' },
-  modalSub:      { fontSize: 12, color: '#636e72', marginBottom: 4 },
+  modalCloseText:{ fontSize: 18, color: SLATE_TEAL, fontWeight: '700' },
+  modalSub:      { fontSize: 12, color: SLATE_TEAL, marginBottom: 4 },
   modalToneCard: {
     flexDirection: 'row', alignItems: 'center', gap: 14,
     borderRadius: 14, padding: 14, borderWidth: 1.5,
@@ -505,22 +524,18 @@ const styles = StyleSheet.create({
   modalToneBadge: {
     width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center',
   },
-  modalToneBadgeNum: { fontSize: 16, fontWeight: '900', color: '#fff' },
+  modalToneBadgeNum: { fontSize: 16, fontWeight: '900', color: CARD_WHITE },
   modalToneMark:     { fontSize: 32, fontWeight: '900', flex: 1 },
-  modalToneName:     { fontSize: 12, color: '#b2bec3', flex: 2 },
+  modalToneName:     { fontSize: 12, color: SLATE_TEAL, flex: 2 },
   modalAudioIcon:    { fontSize: 20 },
-  modalNoTones:      { fontSize: 14, color: '#636e72', textAlign: 'center', padding: 20 },
+  modalNoTones:      { fontSize: 14, color: SLATE_TEAL, textAlign: 'center', padding: 20 },
 
   // Spelling section
-  spellingHeader:     { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 24, marginBottom: 0 },
-  spellingChevron:    { fontSize: 11, color: '#636e72' },
-  spellingPlaceholder:{ backgroundColor: '#16213e', borderRadius: 14, padding: 20, alignItems: 'center', marginTop: 10 },
-  spellingPlaceholderText: { fontSize: 13, color: '#636e72' },
-  spellingRule:       { backgroundColor: '#16213e', borderRadius: 14, padding: 16, marginTop: 10, borderWidth: 1, borderColor: '#a29bfe33' },
-  spellingRuleTitle:  { fontSize: 15, fontWeight: '800', color: '#fff', marginBottom: 4 },
-  spellingRuleText:   { fontSize: 13, color: '#b2bec3', lineHeight: 19, marginBottom: 10 },
-  spellingExample:    { flexDirection: 'row', alignItems: 'center', gap: 8, backgroundColor: 'rgba(162,155,254,0.08)', borderRadius: 10, padding: 10, marginBottom: 6 },
-  spellingExPinyin:   { fontSize: 15, fontWeight: '700', color: '#a29bfe', flex: 1 },
-  spellingExNote:     { fontSize: 12, color: '#636e72', flex: 2 },
+  spellingRule:       { backgroundColor: CARD_WHITE, borderRadius: 14, padding: 16, marginTop: 10, borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)' },
+  spellingRuleTitle:  { fontSize: 15, fontWeight: '800', color: DEEP_NAVY, marginBottom: 4 },
+  spellingRuleText:   { fontSize: 13, color: SLATE_TEAL, lineHeight: 19, marginBottom: 10 },
+  spellingExample:    { flexDirection: 'row', alignItems: 'center', gap: 8, backgroundColor: CARD_WHITE, borderRadius: 10, padding: 10, marginBottom: 6, borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)' },
+  spellingExPinyin:   { fontSize: 15, fontWeight: '700', color: WARM_BROWN, flex: 1 },
+  spellingExNote:     { fontSize: 12, color: SLATE_TEAL, flex: 2 },
   spellingExAudio:    { fontSize: 18 },
 });

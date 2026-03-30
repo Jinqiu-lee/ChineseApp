@@ -1,6 +1,10 @@
 // ── Van Gogh Design System ────────────────────────────────────────────────────
 // Blue (night sky) + Yellow (lantern/sunlight) = the core visual signature.
 // Keep UI elements sharp and flat. Backgrounds carry the painterly mood.
+import {
+  DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON,
+  CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR,
+} from '../constants/colors';
 
 // ── Per-level Van Gogh painting backgrounds ───────────────────────────────────
 // Each HSK level maps to a specific Van Gogh painting used as the screen bg.
@@ -9,9 +13,10 @@ const LEVEL_BACKGROUND_IMAGES = {
   hsk1: require('../assets/UI_design_images/Sunflowers-level1.jpg'),
   hsk2: require('../assets/UI_design_images/The-Cafe-Terrace-at-Night-1888-level2.jpg'),
   hsk3: require('../assets/UI_design_images/Wheat-Field_level3.webp'),
-  hsk4: require('../assets/UI_design_images/Van-Gogh-Homes-level4_reference.jpg'),
+  hsk4: require('../assets/UI_design_images/villiages_homes_level4.avif'),
   hsk5: require('../assets/UI_design_images/Starry_Night_level5.webp'),
   hsk6: require('../assets/UI_design_images/images_level6.avif'),
+  pinyin: require('../assets/UI_design_images/Avenue-with-flowering_Pinyin.jpg'),
   default: require('../assets/UI_design_images/abstarct_expressive_yellow_brush_strokes_oncanvas_background .jpeg'),
 };
 
@@ -23,131 +28,128 @@ export function getLevelBackground(levelId) {
   return LEVEL_BACKGROUND_IMAGES[levelId] ?? LEVEL_BACKGROUND_IMAGES.default;
 }
 
+// ── Shared palette bases ───────────────────────────────────────────────────────
+const _CARD_BASE = {
+  bg:          'transparent',
+  card:        CARD_WHITE,
+  cardDark:    'rgba(255,255,255,0.92)',
+  onCard:      DEEP_NAVY,
+  onCardMuted: WARM_BROWN,
+  cardBorder:  `rgba(155,104,70,0.14)`,
+  shadow:      `rgba(28,42,68,0.18)`,
+  success:     SUCCESS,
+  error:       ERROR,
+  waveEnabled: false,
+};
+
+// Bright painting levels — dark text on warm canvas
+const _BRIGHT = {
+  ..._CARD_BASE,
+  titleText:    DEEP_NAVY,
+  onBg:         DEEP_NAVY,
+  onBgMuted:    SLATE_TEAL,
+  gold:         WARM_BROWN,
+  border:       `rgba(155,104,70,0.20)`,
+  progressFill: SLATE_TEAL,
+  statusBar:    'dark-content',
+};
+
+// Dark painting levels — light text on dark canvas
+const _DARK = {
+  ..._CARD_BASE,
+  titleText:    TEXT_LIGHT,
+  onBg:         TEXT_LIGHT,
+  onBgMuted:    MUTED_LIGHT,
+  gold:         MUTED_LIGHT,
+  border:       `rgba(197,184,168,0.30)`,
+  progressFill: WARM_ORANGE,
+  statusBar:    'light-content',
+};
+
 // ── Per-level full-screen palettes ───────────────────────────────────────────
-// Used by lesson flow screens (LessonDetail, Stages, Quiz, RoundComplete).
-// Each level maps to a Van Gogh painting mood.
-// ── Canvas background palette ─────────────────────────────────────────────────
-// All lesson-flow screens use the warm oil-paint canvas JPEG as background.
-// bg is 'transparent' so the image shows through the SafeAreaView.
-// Cards are clean white. Text is dark warm. Buttons are strong per-level colors.
+// bg is 'transparent' so the painting image shows through SafeAreaView.
+// Cards are clean white. Text contrasts against the painting mood.
 export const LEVEL_SCREEN_PALETTES = {
-  // ── Level 1: Café Terrace at Night ─────────────────────────────────────────
-  // Canvas bg + deep navy accent — like the night-sky of Café Terrace
+  // hsk1: Sunflowers — bright warm canvas, dark navy text
   hsk1: {
-    bg:           'transparent',
-    card:         '#FFFFFF',
-    cardDark:     'rgba(255,255,255,0.88)',
-    titleText:    '#1C2A44',
-    onBg:         '#1C2A44',     // deep navy on warm canvas
-    onBgMuted:    '#4A5A7A',
-    onCard:       '#1A1200',
-    onCardMuted:  '#6B5030',
-    accent:       '#1C2A44',     // navy — night sky as CTA
-    accentText:   '#F5C840',     // golden text on navy
-    altAccent:    '#C8790A',     // amber-orange secondary
-    altAccentText:'#FFFFFF',
-    gold:         '#B8860B',
-    border:       'rgba(80,50,0,0.18)',
-    cardBorder:   'rgba(80,50,0,0.12)',
-    shadow:       'rgba(80,50,0,0.22)',
-    progressFill: '#1C2A44',
-    success:      '#2D7A4A',
-    error:        '#C4503A',
-    statusBar:    'dark-content',
-    waveEnabled:  false,
+    ..._BRIGHT,
+    accent:       SLATE_TEAL,
+    accentText:   CARD_WHITE,
+    altAccent:    WARM_ORANGE,
+    altAccentText: CARD_WHITE,
   },
 
-  // ── Level 2: Café Terrace at Night ─────────────────────────────────────────
-  // Dark night-blue painting — needs LIGHT text, gold/amber accents
+  // hsk2: Café Terrace at Night — dark painting, light text, orange CTA
   hsk2: {
-    bg:           'transparent',
-    card:         '#FFFFFF',
-    cardDark:     'rgba(255,255,255,0.88)',
-    titleText:    '#F7F3E9',
-    onBg:         '#F7F3E9',     // light cream on dark painting
-    onBgMuted:    '#C5B99A',
-    onCard:       '#1A1200',
-    onCardMuted:  '#6B5030',
-    accent:       '#F4C542',     // bright lantern yellow CTA
-    accentText:   '#1C2A44',
-    altAccent:    '#D98C2B',     // amber secondary
-    altAccentText:'#1C2A44',
-    gold:         '#E0B04B',
-    border:       'rgba(244,197,66,0.30)',
-    cardBorder:   'rgba(217,140,43,0.25)',
-    shadow:       'rgba(0,0,0,0.35)',
-    progressFill: '#F4C542',
-    success:      '#7DC47A',
-    error:        '#D9634E',
-    statusBar:    'light-content',
-    waveEnabled:  false,
+    ..._DARK,
+    accent:       WARM_ORANGE,
+    accentText:   CARD_WHITE,
+    altAccent:    WARM_BROWN,
+    altAccentText: CARD_WHITE,
   },
 
-  // ── Level 3: Wheat Fields (1888) ────────────────────────────────────────────
-  // Canvas bg + deep forest-green accent — wheat field growth, with wave animation
+  // hsk3: Wheat Fields — bright painting, dark text, teal CTA, wave animation
   hsk3: {
-    bg:           'transparent',
-    card:         '#FFFFFF',
-    cardDark:     'rgba(255,255,255,0.88)',
-    titleText:    '#1A3A2A',
-    onBg:         '#1A3A2A',     // dark forest green on canvas
-    onBgMuted:    '#3A6A3A',
-    onCard:       '#1A1200',
-    onCardMuted:  '#6B5030',
-    accent:       '#2D6A4F',     // deep forest green CTA
-    accentText:   '#FFFFFF',
-    altAccent:    '#C8A836',     // wheat gold secondary
-    altAccentText:'#1A3A2A',
-    gold:         '#8B7010',
-    border:       'rgba(80,50,0,0.18)',
-    cardBorder:   'rgba(80,50,0,0.12)',
-    shadow:       'rgba(80,50,0,0.22)',
-    progressFill: '#2D6A4F',
-    success:      '#2D7A4A',
-    error:        '#C4503A',
-    statusBar:    'dark-content',
+    ..._BRIGHT,
+    accent:       SLATE_TEAL,
+    accentText:   CARD_WHITE,
+    altAccent:    WARM_ORANGE,
+    altAccentText: CARD_WHITE,
     waveEnabled:  true,
     waveColors: {
-      wave1: 'rgba(200,168,54,0.38)',   // golden wheat — stronger on canvas
-      wave2: 'rgba(80,150,80,0.26)',    // field green
-      wave3: 'rgba(74,144,217,0.18)',   // sky tint
+      wave1: 'rgba(200,168,54,0.35)',
+      wave2: 'rgba(80,150,80,0.22)',
+      wave3: 'rgba(74,144,217,0.15)',
     },
   },
 
-  // Fallback for hsk4/hsk5 — canvas bg + deep blue-purple accent
-  hsk4: { bg:'transparent',card:'#FFFFFF',cardDark:'rgba(255,255,255,0.88)',titleText:'#2C1040',onBg:'#2C1040',onBgMuted:'#5A3A7A',onCard:'#1A1200',onCardMuted:'#6B5030',accent:'#5C3A9E',accentText:'#FFFFFF',altAccent:'#C8790A',altAccentText:'#FFFFFF',gold:'#8B7010',border:'rgba(80,50,0,0.18)',cardBorder:'rgba(80,50,0,0.12)',shadow:'rgba(80,50,0,0.22)',progressFill:'#5C3A9E',success:'#2D7A4A',error:'#C4503A',statusBar:'dark-content',waveEnabled:false },
-  // hsk5: Starry Night — dark blue painting, needs light text
-  hsk5: { bg:'transparent',card:'#FFFFFF',cardDark:'rgba(255,255,255,0.88)',titleText:'#F7F3E9',onBg:'#F7F3E9',onBgMuted:'#C5B99A',onCard:'#1A1200',onCardMuted:'#6B5030',accent:'#7BA7D4',accentText:'#0A1A3A',altAccent:'#F4C542',altAccentText:'#0A1A3A',gold:'#7BA7D4',border:'rgba(123,167,212,0.35)',cardBorder:'rgba(123,167,212,0.25)',shadow:'rgba(0,0,0,0.35)',progressFill:'#7BA7D4',success:'#7DC47A',error:'#D9634E',statusBar:'light-content',waveEnabled:false },
+  // hsk4: Homes/Farmhouse — bright warm painting, dark text, deep navy CTA
+  hsk4: {
+    ..._BRIGHT,
+    accent:       DEEP_NAVY,
+    accentText:   CARD_WHITE,
+    altAccent:    WARM_ORANGE,
+    altAccentText: CARD_WHITE,
+  },
+
+  // hsk5: Starry Night — dark blue painting, light text, orange CTA
+  hsk5: {
+    ..._DARK,
+    accent:       WARM_ORANGE,
+    accentText:   CARD_WHITE,
+    altAccent:    SOFT_SALMON,
+    altAccentText: CARD_WHITE,
+  },
 };
 
 export const VG = {
   // ── Backgrounds ─────────────────────────────────────────────────────────────
-  bg:           '#1C2A44',   // deep night-sky blue — safe area / screen bg
-  card:         '#243454',   // card surface — slightly lighter
-  cardElevated: '#2C3F62',   // elevated card / selected state
-  cardInset:    '#1A2E4A',   // inset / pressed feel
+  bg:           DEEP_NAVY,
+  card:         CARD_WHITE,
+  cardElevated: CARD_WHITE,
+  cardInset:    CARD_WHITE,
 
   // ── Accent — warmth & light ─────────────────────────────────────────────────
-  yellow:       '#F4C542',   // sunflower / lantern — primary accent
-  gold:         '#E0B04B',   // soft gold — secondary accent
-  orange:       '#D98C2B',   // amber — CTA / strong action
+  yellow:       WARM_ORANGE,
+  gold:         WARM_BROWN,
+  orange:       WARM_ORANGE,
 
   // ── Text ────────────────────────────────────────────────────────────────────
-  cream:        '#F7F3E9',   // warm white — primary text
-  creamMid:     '#C5B99A',   // warm grey — secondary text
-  creamMuted:   '#8A7E6E',   // muted — placeholder / disabled
+  cream:        TEXT_LIGHT,
+  creamMid:     MUTED_LIGHT,
+  creamMuted:   SLATE_TEAL,
 
   // ── Semantic ────────────────────────────────────────────────────────────────
-  success:      '#7DC47A',   // warm sage green
-  successBg:    'rgba(125,196,122,0.12)',
-  error:        '#D9634E',   // terracotta red
-  errorBg:      'rgba(217,99,78,0.12)',
+  success:      SUCCESS,
+  successBg:    'rgba(45,122,74,0.12)',
+  error:        ERROR,
+  errorBg:      'rgba(196,80,58,0.12)',
 
   // ── Borders & overlays ──────────────────────────────────────────────────────
-  border:        'rgba(244,197,66,0.13)',   // barely-there gold border
-  borderMid:     'rgba(244,197,66,0.28)',   // visible gold border
-  borderStrong:  'rgba(244,197,66,0.50)',   // strong gold border
-  overlay:       'rgba(20,32,56,0.88)',     // modal backdrop
+  border:        'rgba(155,104,70,0.18)',
+  borderMid:     'rgba(155,104,70,0.32)',
+  borderStrong:  'rgba(155,104,70,0.55)',
+  overlay:       'rgba(28,42,68,0.88)',
 };
 
 // ── Level-specific palettes ──────────────────────────────────────────────────

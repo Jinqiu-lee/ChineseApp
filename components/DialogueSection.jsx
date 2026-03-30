@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 import { speakAsAvatar } from '../utils/tts';
 import AvatarCharacter from './AvatarCharacter';
 import { getAvatar } from '../config/avatarConfig';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 import {
   getPairForDialogue,
   shortName,
@@ -108,7 +109,7 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
 
       {/* Scene banner – emoji or real photo */}
       {sceneImg && (
-        <View style={[styles.sceneBanner, { backgroundColor: sceneImg.color || '#16213e' }]}>
+        <View style={[styles.sceneBanner, { backgroundColor: sceneImg.color || SLATE_TEAL }]}>
           {sceneImg.url ? (
             <Image source={{ uri: sceneImg.url }} style={styles.scenePhoto} resizeMode="cover" />
           ) : (
@@ -210,10 +211,10 @@ function SpeakerTag({ info, pal }) {
 
 function AvatarSpeakerTag({ info, pal, avatarId }) {
   return (
-    <View style={[styles.speakerTag, styles.speakerTagAvatar, { borderColor: '#a29bfe' }]}>
+    <View style={[styles.speakerTag, styles.speakerTagAvatar, { borderColor: WARM_ORANGE }]}>
       <AvatarCharacter avatarId={avatarId} expression="neutral" size={36} />
       <View>
-        <Text style={[styles.speakerTagName, { color: '#a29bfe' }]}>{info.name}</Text>
+        <Text style={[styles.speakerTagName, { color: WARM_ORANGE }]}>{info.name}</Text>
         <Text style={styles.speakerTagRole}>{info.role}</Text>
       </View>
     </View>
@@ -221,10 +222,10 @@ function AvatarSpeakerTag({ info, pal, avatarId }) {
 }
 
 const VG = {
-  cardDark: '#243454',
-  gold: '#E0B04B', orange: '#D98C2B',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  border: 'rgba(244,197,66,0.18)',
+  cardDark: 'rgba(255,255,255,0.92)',
+  gold: WARM_BROWN, orange: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  border: 'rgba(155,104,70,0.20)',
 };
 
 const styles = StyleSheet.create({
@@ -251,14 +252,14 @@ const styles = StyleSheet.create({
   sceneEmoji:   { fontSize: 44 },
   sceneLabelWrap: {
     position: 'absolute', bottom: 0, left: 0, right: 0,
-    backgroundColor: 'rgba(0,0,0,0.45)',
+    backgroundColor: 'rgba(28,42,68,0.72)',
     paddingVertical: 4, paddingHorizontal: 12,
   },
   sceneLabel: { fontSize: 13, fontWeight: '700', color: VG.cream },
   cardHeader: {
     paddingHorizontal: 16,
     paddingVertical: 12,
-    backgroundColor: 'rgba(255,255,255,0.03)',
+    backgroundColor: 'rgba(247,240,232,0.95)',
     borderBottomWidth: 1,
     borderBottomColor: VG.border,
     gap: 10,
@@ -274,7 +275,7 @@ const styles = StyleSheet.create({
   pinyinToggle: {
     paddingHorizontal: 12, paddingVertical: 6,
     borderRadius: 10, borderWidth: 1.5,
-    borderColor: VG.border, backgroundColor: 'rgba(255,255,255,0.04)',
+    borderColor: VG.border, backgroundColor: CARD_WHITE,
   },
   pinyinToggleOn:     { borderColor: VG.gold, backgroundColor: 'rgba(224,176,75,0.15)' },
   pinyinToggleText:   { fontSize: 14, fontWeight: '700', color: VG.creamMuted },

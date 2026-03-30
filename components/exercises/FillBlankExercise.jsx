@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 
 export default function FillBlankExercise({ exercise, onCorrect, onWrong }) {
   const { displayText, sentence_pinyin, correct, choices, choices_pinyin, hint } = exercise;
@@ -74,23 +75,23 @@ export default function FillBlankExercise({ exercise, onCorrect, onWrong }) {
 }
 
 const VG = {
-  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
-  onCard: '#1C2A44', onCardMuted: '#9A8A6A',
-  gold: '#E0B04B', orange: '#D98C2B',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  success: '#5A9E5A', error: '#C4503A',
-  border: 'rgba(244,197,66,0.2)', shadow: '#A0700A',
+  bg: 'transparent', card: CARD_WHITE, cardDark: CARD_WHITE,
+  onCard: DEEP_NAVY, onCardMuted: WARM_BROWN,
+  gold: WARM_BROWN, orange: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  success: SUCCESS, error: ERROR,
+  border: 'rgba(155,104,70,0.22)', shadow: 'rgba(28,42,68,0.18)',
 };
 
 const styles = StyleSheet.create({
   container: { flex: 1, paddingTop: 8, paddingHorizontal: 8 },
-  topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 12 },
+  topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16, backgroundColor: CARD_WHITE, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 10 },
   instruction: { fontSize: 17, fontWeight: '700', color: VG.cream },
   pinyinToggle: { paddingHorizontal: 12, paddingVertical: 6, borderRadius: 10, borderWidth: 1.5, borderColor: VG.border, backgroundColor: VG.cardDark },
-  pinyinToggleOn: { borderColor: VG.gold, backgroundColor: 'rgba(224,176,75,0.15)' },
+  pinyinToggleOn: { borderColor: VG.gold, backgroundColor: '#FFF8ED' },
   pinyinToggleText: { fontSize: 13, fontWeight: '600', color: VG.creamMuted },
   pinyinToggleTextOn: { color: VG.gold },
-  hint: { fontSize: 13, color: VG.creamMuted, fontStyle: 'italic', marginBottom: 16 },
+  hint: { fontSize: 13, color: DEEP_NAVY, fontStyle: 'italic', fontWeight: '600', marginBottom: 16, backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, alignSelf: 'flex-start' },
   sentenceBox: {
     backgroundColor: VG.card, borderRadius: 20, padding: 24,
     alignItems: 'center', marginBottom: 24, borderWidth: 1, borderColor: 'rgba(217,140,43,0.25)',
@@ -104,9 +105,9 @@ const styles = StyleSheet.create({
   feedbackWrong:   { color: VG.error },
   choices: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, justifyContent: 'center' },
   choice:       { backgroundColor: VG.cardDark, borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 1.5, borderColor: VG.border, minWidth: '42%', alignItems: 'center' },
-  choiceCorrect:{ backgroundColor: 'rgba(90,158,90,0.2)', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.success, minWidth: '42%', alignItems: 'center' },
-  choiceWrong:  { backgroundColor: 'rgba(196,80,58,0.2)', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.error, minWidth: '42%', alignItems: 'center' },
-  choiceDimmed: { backgroundColor: VG.cardDark, borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 1.5, borderColor: VG.border, minWidth: '42%', alignItems: 'center', opacity: 0.4 },
+  choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.success, minWidth: '42%', alignItems: 'center' },
+  choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.error, minWidth: '42%', alignItems: 'center' },
+  choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.10)', minWidth: '42%', alignItems: 'center' },
   choiceText: { fontSize: 22, fontWeight: '800', color: VG.cream },
   choicePinyin: { fontSize: 12, color: VG.gold, fontStyle: 'italic', marginTop: 4 },
 });

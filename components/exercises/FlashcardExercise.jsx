@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 
 export default function FlashcardExercise({ exercise, onKnow, onDontKnow }) {
   const { vocabItem } = exercise;
@@ -46,17 +47,17 @@ export default function FlashcardExercise({ exercise, onKnow, onDontKnow }) {
 }
 
 const VG = {
-  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
-  onCard: '#1C2A44', onCardMuted: '#9A8A6A',
-  yellow: '#F4C542', gold: '#E0B04B', orange: '#D98C2B',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  success: '#5A9E5A', error: '#C4503A',
-  shadow: '#A0700A',
+  bg: 'transparent', card: CARD_WHITE, cardDark: CARD_WHITE,
+  onCard: DEEP_NAVY, onCardMuted: WARM_BROWN,
+  yellow: WARM_ORANGE, gold: WARM_BROWN, orange: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  success: SUCCESS, error: ERROR,
+  border: 'rgba(155,104,70,0.22)', shadow: 'rgba(28,42,68,0.18)',
 };
 
 const styles = StyleSheet.create({
   container: { flex: 1, alignItems: 'center', paddingTop: 24, paddingHorizontal: 8 },
-  instruction: { fontSize: 16, color: VG.gold, marginBottom: 24, fontWeight: '600' },
+  instruction: { fontSize: 16, color: VG.gold, marginBottom: 20, fontWeight: '600', backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, alignSelf: 'center' },
   card: {
     width: '100%',
     minHeight: 220,
@@ -82,7 +83,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: VG.onCardMuted,
     marginTop: 12,
-    backgroundColor: 'rgba(28,42,68,0.07)',
+    backgroundColor: '#F0EDE8',
     paddingHorizontal: 12,
     paddingVertical: 4,
     borderRadius: 8,

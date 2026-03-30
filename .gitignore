@@ -1,47 +1,59 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# ── Dependencies ──────────────────────────────────────────────────────────────
 node_modules/
 
-# Expo
+# ── Expo ──────────────────────────────────────────────────────────────────────
 .expo/
 dist/
 web-build/
 expo-env.d.ts
 
-# Native
+# ── Native generated folders ──────────────────────────────────────────────────
+/ios
+/android
 .kotlin/
+
+# ── Secrets — NEVER commit real API keys ─────────────────────────────────────
+.env
+.env*.local
+
+# ── Python environment & data tooling ────────────────────────────────────────
+venv/
+notebook/
+.ipynb_checkpoints/
+*.csv
+
+# ── Design references & issue screenshots (not used by the app) ──────────────
+assets/UI_design_images/
+assets/issues/
+
+# ── Backups ───────────────────────────────────────────────────────────────────
+backup/
+
+# ── Editor ────────────────────────────────────────────────────────────────────
+.vscode/
+
+# ── Claude Code session state (personal, not project) ────────────────────────
+.claude/
+
+# ── OS metadata ───────────────────────────────────────────────────────────────
+.DS_Store
 *.orig.*
+
+# ── Certificates & keys ───────────────────────────────────────────────────────
+*.pem
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
 
-# Metro
+# ── Metro bundler ─────────────────────────────────────────────────────────────
 .metro-health-check*
 
-# debug
+# ── Debug logs ────────────────────────────────────────────────────────────────
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# macOS
-.DS_Store
-*.pem
-
-# local env files — never commit real API keys
-.env
-.env*.local
-
-# typescript
+# ── TypeScript ────────────────────────────────────────────────────────────────
 *.tsbuildinfo
-
-# generated native folders
-/ios
-/android
-
-
-backup/
-*.csv
-.ipynb_checkpoints/

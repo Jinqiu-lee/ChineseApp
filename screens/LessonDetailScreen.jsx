@@ -9,6 +9,7 @@ import { getAvatarForLesson } from '../config/lessonAvatarMap';
 import WaveBackground from '../components/WaveBackground';
 import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR } from '../constants/colors';
 
 import lesson1 from '../data/hsk1/hsk1_lesson_1.json';
 import lesson2 from '../data/hsk1/hsk1_lesson_2.json';
@@ -130,17 +131,17 @@ const LESSONS_BY_LEVEL = {
 const LESSONS = LESSONS_BY_LEVEL.hsk1;
 
 const STAGE_META = [
-  { name: 'First Look',      desc: 'Flashcards · Audio · Match',    icon: '👁',  color: '#E0B04B' },
-  { name: 'Listen & Choose', desc: 'Audio quiz · Fill in the blank', icon: '🎧', color: '#7BA7D4' },
-  { name: 'Build Sentences', desc: 'Arrange words · Fill blanks',    icon: '🧩', color: '#8DBF6E' },
-  { name: 'Match & Review',  desc: 'Matching pairs · Audio recall',  icon: '🔄', color: '#D98C2B' },
-  { name: 'Final Challenge', desc: 'All types · Full review',        icon: '🏆', color: '#F4C542' },
+  { name: 'First Look',      desc: 'Flashcards · Audio · Match',    icon: '👁',  color: '#5E789F' },
+  { name: 'Listen & Choose', desc: 'Audio quiz · Fill in the blank', icon: '🎧', color: '#38529D' },
+  { name: 'Build Sentences', desc: 'Arrange words · Fill blanks',    icon: '🧩', color: '#25523D' },
+  { name: 'Match & Review',  desc: 'Matching pairs · Audio recall',  icon: '🔄', color: '#b87243' },
+  { name: 'Final Challenge', desc: 'All types · Full review',        icon: '🏆', color: WARM_ORANGE },
 ];
 
 const ROUND_INFO = {
-  1: { label: 'Round 1', sub: 'Learn',    color: '#E0B04B' },
-  2: { label: 'Round 2', sub: 'Practice', color: '#D98C2B' },
-  3: { label: 'Round 3', sub: 'Master',   color: '#F4C542' },
+  1: { label: 'Round 1', sub: 'Learn',    color: WARM_BROWN },
+  2: { label: 'Round 2', sub: 'Practice', color: WARM_ORANGE },
+  3: { label: 'Round 3', sub: 'Master',   color: WARM_ORANGE },
 };
 
 export default function LessonDetailScreen({
@@ -190,11 +191,11 @@ export default function LessonDetailScreen({
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
 
       {/* Header */}
-      <View style={[styles.header, { borderBottomColor: T.border }]}>
+      <View style={styles.header}>
         <TouchableOpacity onPress={onBack} style={styles.backBtn}>
-          <Text style={[styles.backBtnText, { color: T.gold }]}>← Back</Text>
+          <Text style={styles.backBtnText}>← Back</Text>
         </TouchableOpacity>
-        <Text style={[styles.headerTitle, { color: T.onBg }]}>Lesson {lesson.lesson}</Text>
+        <Text style={styles.headerTitle}>Lesson {lesson.lesson}</Text>
         <View style={{ width: 60 }} />
       </View>
 
@@ -206,7 +207,7 @@ export default function LessonDetailScreen({
         {/* Title card */}
         <View style={[styles.titleCard, { backgroundColor: T.card, shadowColor: T.shadow }]}>
           <AvatarCharacter avatarId={avatarId} expression="idle" size={88} />
-          <Text style={[styles.topicChinese, { color: T.titleText }]}>{lesson.topic_chinese}</Text>
+          <Text style={[styles.topicChinese, { color: T.onCard }]}>{lesson.topic_chinese}</Text>
           <Text style={[styles.topicEnglish, { color: T.onCard }]}>{lesson.topic}</Text>
           <Text style={[styles.topicMeta, { color: T.onCardMuted }]}>{lesson.vocabulary?.length || 0} words · {lesson.dialogues?.length || 0} dialogues</Text>
         </View>
@@ -342,12 +343,12 @@ export default function LessonDetailScreen({
         {(() => {
           const r = ROUND_INFO[currentRound] || ROUND_INFO[1];
           return (
-            <View style={[styles.roundBadge, { borderColor: `${r.color}55`, backgroundColor: `${r.color}18` }]}>
+            <View style={[styles.roundBadge, { borderColor: r.color, backgroundColor: CARD_WHITE }]}>
               <View style={[styles.roundDot, { backgroundColor: r.color }]} />
               <Text style={[styles.roundBadgeText, { color: r.color }]}>{r.label} · {r.sub}</Text>
               <View style={styles.roundDots}>
                 {[1, 2, 3].map(n => (
-                  <View key={n} style={[styles.roundPip, { backgroundColor: n <= currentRound ? r.color : '#2d3436' }]} />
+                  <View key={n} style={[styles.roundPip, { backgroundColor: n <= currentRound ? r.color : SLATE_TEAL }]} />
                 ))}
               </View>
             </View>
@@ -368,7 +369,7 @@ export default function LessonDetailScreen({
               {/* Left: icon bubble */}
               <View style={[
                 styles.stageIconBubble,
-                { backgroundColor: unlocked ? `${stage.color}22` : 'rgba(255,255,255,0.04)' },
+                { backgroundColor: unlocked ? stage.color : 'rgba(55,73,80,0.18)' },
               ]}>
                 <Text style={styles.stageIcon}>{unlocked ? stage.icon : '🔒'}</Text>
               </View>
@@ -437,25 +438,25 @@ export default function LessonDetailScreen({
   );
 }
 
-// ── Café Terrace palette (warm cream cards on night-blue bg) ──────────────────
+// ── Canvas palette — warm painting backgrounds, white cards, dark text ──────────
 const VG = {
-  bg:          '#1C2A44',   // night sky
-  card:        '#F5EDD8',   // warm parchment — café glow
-  cardHover:   '#FFF8EC',   // lighter parchment — active/hover
-  cardDark:    '#243454',   // dark card variant
-  onCard:      '#1C2A44',   // dark text on cream cards
-  onCardMid:   '#5C4A2A',   // warm brown secondary
-  onCardMuted: '#9A8A6A',   // muted warm grey
-  yellow:      '#F4C542',   // sunlight / primary CTA
-  gold:        '#E0B04B',   // lantern / secondary
-  orange:      '#D98C2B',   // amber deep
-  cream:       '#F7F3E9',   // screen-level text (on dark bg)
-  creamMid:    '#C5B99A',
-  creamMuted:  '#8A7E6E',
-  success:     '#5A9E5A',   // warm sage green
-  border:      'rgba(244,197,66,0.15)',
-  borderMid:   'rgba(244,197,66,0.30)',
-  shadow:      '#A0700A',   // amber shadow for glow
+  bg:          'transparent',
+  card:        CARD_WHITE,
+  cardHover:   CARD_WHITE,
+  cardDark:    'rgba(255,255,255,0.92)',
+  onCard:      DEEP_NAVY,
+  onCardMid:   WARM_BROWN,
+  onCardMuted: WARM_BROWN,
+  yellow:      WARM_ORANGE,
+  gold:        WARM_BROWN,
+  orange:      WARM_ORANGE,
+  cream:       DEEP_NAVY,
+  creamMid:    SLATE_TEAL,
+  creamMuted:  SLATE_TEAL,
+  success:     SUCCESS,
+  border:      'rgba(155,104,70,0.18)',
+  borderMid:   'rgba(155,104,70,0.32)',
+  shadow:      'rgba(28,42,68,0.18)',
 };
 
 const styles = StyleSheet.create({
@@ -467,11 +468,12 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
     paddingHorizontal: 20, paddingVertical: 13,
-    borderBottomWidth: 1, borderBottomColor: VG.border,
+    backgroundColor: VG.card,
+    borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)',
   },
   backBtn:     { paddingVertical: 8, paddingRight: 12 },
-  backBtnText: { fontSize: 16, fontWeight: '600', color: VG.gold },
-  headerTitle: { fontSize: 16, fontWeight: '700', color: VG.cream },
+  backBtnText: { fontSize: 16, fontWeight: '600', color: VG.onCardMuted },
+  headerTitle: { fontSize: 16, fontWeight: '700', color: VG.onCard },
 
   // ── Title card — cream warm glow ──────────────────────────────────────────
   titleCard: {
@@ -516,13 +518,13 @@ const styles = StyleSheet.create({
     elevation: 3,
   },
   learnBtnActive:     { borderColor: VG.gold,   backgroundColor: VG.cardHover },
-  learnBtnPinyin:     { borderColor: '#7BA7D4', backgroundColor: 'rgba(123,167,212,0.08)' },
+  learnBtnPinyin:     { borderColor: SLATE_TEAL, backgroundColor: 'rgba(55,73,80,0.14)' },
   learnBtnCharacters: { borderColor: VG.gold,   backgroundColor: VG.card },
   learnBtnCulture:    { borderColor: VG.orange, backgroundColor: VG.card },
   learnBtnEmoji:      { fontSize: 24 },
   learnBtnLabel:      { fontSize: 14, fontWeight: '700', color: VG.onCardMid,   textAlign: 'center' },
   learnBtnLabelActive:     { color: VG.orange },
-  learnBtnLabelPinyin:     { color: '#4A80AA' },
+  learnBtnLabelPinyin:     { color: SLATE_TEAL },
   learnBtnLabelCharacters: { color: VG.orange },
 
   // ── Culture / Idioms ──────────────────────────────────────────────────────
@@ -553,7 +555,7 @@ const styles = StyleSheet.create({
     shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.15, shadowRadius: 10, elevation: 4,
   },
-  quizBannerLocked:   { borderColor: VG.border, backgroundColor: 'rgba(255,255,255,0.03)', opacity: 0.55 },
+  quizBannerLocked:   { borderColor: VG.border, backgroundColor: CARD_WHITE, opacity: 0.65 },
   quizBannerEmoji:    { fontSize: 28 },
   quizBannerTitle:    { fontSize: 15, fontWeight: '700', color: VG.onCard,    marginBottom: 3 },
   quizBannerSub:      { fontSize: 12,                    color: VG.onCardMuted, lineHeight: 17 },
@@ -587,7 +589,7 @@ const styles = StyleSheet.create({
     shadowRadius: 8,
     elevation: 3,
   },
-  stageCardLocked: { opacity: 0.42 },
+  stageCardLocked: { opacity: 0.65 },
   stageIconBubble: { width: 48, height: 48, borderRadius: 24, alignItems: 'center', justifyContent: 'center' },
   stageIcon:       { fontSize: 22 },
   stageInfo:       { flex: 1 },
@@ -615,6 +617,6 @@ const styles = StyleSheet.create({
   completeBtnText: { fontSize: 16, fontWeight: '900', color: VG.bg, letterSpacing: 0.5 },
 
   errorContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20 },
-  errorText:      { fontSize: 20, fontWeight: '700', color: '#D9634E', marginBottom: 16 },
+  errorText:      { fontSize: 20, fontWeight: '700', color: ERROR, marginBottom: 16 },
   backButtonText: { fontSize: 16, fontWeight: '600', color: VG.gold },
 });

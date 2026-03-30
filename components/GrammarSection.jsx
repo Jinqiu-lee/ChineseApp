@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
 export default function GrammarSection({ grammarPoints }) {
   const [expandedPoints, setExpandedPoints] = useState([0]);
@@ -61,10 +62,10 @@ function GrammarPointCard({ point, isExpanded, onToggle }) {
 }
 
 const VG = {
-  cardDark: '#243454',
-  gold: '#E0B04B', orange: '#D98C2B', yellow: '#F4C542',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  border: 'rgba(244,197,66,0.18)',
+  cardDark: 'rgba(255,255,255,0.92)',
+  gold: WARM_BROWN, orange: WARM_ORANGE, yellow: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  border: 'rgba(155,104,70,0.20)',
 };
 
 const styles = StyleSheet.create({
@@ -84,14 +85,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: 16,
-    backgroundColor: 'rgba(224,176,75,0.07)',
+    backgroundColor: 'rgba(155,104,70,0.10)',
   },
   cardHeaderText: { fontSize: 15, fontWeight: '700', color: VG.cream, flex: 1, paddingRight: 8 },
   expandIcon: { fontSize: 14, color: VG.gold },
 
   cardContent: { padding: 16 },
   explanationBox: {
-    backgroundColor: 'rgba(224,176,75,0.08)',
+    backgroundColor: 'rgba(247,240,232,0.95)',
     borderLeftWidth: 3,
     borderLeftColor: VG.gold,
     padding: 12,
@@ -102,7 +103,7 @@ const styles = StyleSheet.create({
 
   sectionLabel: { fontSize: 13, fontWeight: '700', color: VG.gold, marginBottom: 10, textTransform: 'uppercase', letterSpacing: 0.5 },
   exampleItem: {
-    backgroundColor: 'rgba(255,255,255,0.04)',
+    backgroundColor: 'rgba(247,240,232,0.95)',
     padding: 12,
     borderRadius: 10,
     marginBottom: 8,

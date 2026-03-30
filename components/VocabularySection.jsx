@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { speakChinese } from '../utils/tts';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
 export default function VocabularySection({ vocabulary, showPinyin = true }) {
   const words   = (vocabulary || []).filter(v => v.part_of_speech !== 'phrase');
@@ -86,7 +87,7 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
           {!showPinyin && item.pinyin && (
             <View style={styles.detailRow}>
               <Text style={styles.detailLabel}>Pinyin:</Text>
-              <Text style={[styles.detailValue, { color: '#a29bfe', fontStyle: 'italic' }]}>
+              <Text style={[styles.detailValue, { color: WARM_ORANGE, fontStyle: 'italic' }]}>
                 {item.pinyin}
               </Text>
             </View>
@@ -120,11 +121,11 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
 }
 
 const VG = {
-  cardDark: '#243454',
-  onCard: '#1C2A44', onCardMuted: '#9A8A6A',
-  gold: '#E0B04B', orange: '#D98C2B', yellow: '#F4C542',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  border: 'rgba(244,197,66,0.18)',
+  cardDark: 'rgba(255,255,255,0.92)',
+  onCard: DEEP_NAVY, onCardMuted: WARM_BROWN,
+  gold: WARM_BROWN, orange: WARM_ORANGE, yellow: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  border: 'rgba(155,104,70,0.20)',
 };
 
 const styles = StyleSheet.create({
@@ -149,8 +150,8 @@ const styles = StyleSheet.create({
     borderColor: VG.border,
   },
   cardPhrase: {
-    borderColor: 'rgba(244,197,66,0.3)',
-    backgroundColor: 'rgba(244,197,66,0.04)',
+    borderColor: 'rgba(224,176,75,0.35)',
+    backgroundColor: CARD_WHITE,
   },
 
   /* Row: Chinese on left, English on right */
@@ -192,28 +193,28 @@ const styles = StyleSheet.create({
   },
   pos: {
     fontSize: 11,
-    color: VG.creamMuted,
-    backgroundColor: 'rgba(255,255,255,0.06)',
+    color: SLATE_TEAL,
+    backgroundColor: 'rgba(55,73,80,0.14)',
     paddingHorizontal: 8,
     paddingVertical: 3,
     borderRadius: 6,
   },
   posPhrase: {
-    color: VG.yellow,
-    backgroundColor: 'rgba(244,197,66,0.1)',
+    color: WARM_ORANGE,
+    backgroundColor: 'rgba(155,104,70,0.15)',
   },
 
   details: {
     marginTop: 10,
     paddingTop: 10,
     borderTopWidth: 1,
-    borderTopColor: 'rgba(255,255,255,0.06)',
+    borderTopColor: 'rgba(55,73,80,0.15)',
   },
   detailRow: { flexDirection: 'row', marginBottom: 8 },
   detailLabel: { fontSize: 13, fontWeight: '600', color: VG.gold, marginRight: 8 },
   detailValue: { fontSize: 13, color: VG.cream, flex: 1 },
   exampleBox: {
-    backgroundColor: 'rgba(255,255,255,0.04)',
+    backgroundColor: 'rgba(247,240,232,0.95)',
     borderLeftWidth: 3,
     borderLeftColor: VG.gold,
     borderRadius: 8,

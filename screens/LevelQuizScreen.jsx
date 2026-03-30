@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert 
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR } from '../constants/colors';
 
 const PASS_SCORE = 60;
 const REVIEW_SCORE = 50;
@@ -242,7 +243,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
             </Text>
 
             <View style={styles.scoreCircle}>
-              <Text style={[styles.scoreText, { color: passed ? '#1DD1A1' : '#FF6B6B' }]}>
+              <Text style={[styles.scoreText, { color: passed ? SUCCESS : ERROR }]}>
                 {score}%
               </Text>
               <Text style={styles.scoreLabel}>Score</Text>
@@ -439,114 +440,114 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: 'transparent' },
-  header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 20, paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.1)' },
+  header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 20, paddingVertical: 12, backgroundColor: CARD_WHITE, borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.20)' },
   backButton: { paddingVertical: 8, paddingRight: 12 },
-  backButtonText: { fontSize: 16, fontWeight: '600', color: '#FF6B6B' },
+  backButtonText: { fontSize: 16, fontWeight: '600', color: WARM_ORANGE },
   headerCenter: { flex: 1, alignItems: 'center' },
-  quizTitle: { fontSize: 16, fontWeight: '700', color: '#fff' },
-  
-  progressContainer: { paddingHorizontal: 20, paddingVertical: 16 },
-  progressBarBg: { height: 8, backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: 4, overflow: 'hidden', marginBottom: 8 },
-  progressBarFill: { height: '100%', backgroundColor: '#1DD1A1', borderRadius: 4 },
-  progressText: { fontSize: 13, color: '#636e72', textAlign: 'center' },
-  
+  quizTitle: { fontSize: 16, fontWeight: '700', color: DEEP_NAVY },
+
+  progressContainer: { paddingHorizontal: 20, paddingVertical: 16, backgroundColor: CARD_WHITE, borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.12)' },
+  progressBarBg: { height: 8, backgroundColor: 'rgba(55,73,80,0.22)', borderRadius: 4, overflow: 'hidden', marginBottom: 8 },
+  progressBarFill: { height: '100%', backgroundColor: SUCCESS, borderRadius: 4 },
+  progressText: { fontSize: 13, color: SLATE_TEAL, textAlign: 'center' },
+
   scrollView: { flex: 1 },
   contentContainer: { padding: 20, paddingBottom: 40 },
-  
+
   difficultyBadge: { alignSelf: 'flex-start', paddingHorizontal: 12, paddingVertical: 6, borderRadius: 12, marginBottom: 16 },
-  difficultyEasy: { backgroundColor: 'rgba(29, 209, 161, 0.2)' },
-  difficultyMedium: { backgroundColor: 'rgba(255, 159, 67, 0.2)' },
-  difficultyHard: { backgroundColor: 'rgba(255, 107, 107, 0.2)' },
-  difficultyText: { fontSize: 11, fontWeight: '800', color: '#fff', letterSpacing: 0.5 },
-  
-  questionCard: { backgroundColor: '#16213e', borderRadius: 20, padding: 24, marginBottom: 24, borderWidth: 1, borderColor: '#2d3436' },
-  questionText: { fontSize: 18, fontWeight: '700', color: '#fff', lineHeight: 28 },
-  questionPinyin: { fontSize: 15, color: '#a29bfe', fontStyle: 'italic', marginTop: 8 },
-  
+  difficultyEasy: { backgroundColor: '#e8f5e9' },
+  difficultyMedium: { backgroundColor: '#fff3ee' },
+  difficultyHard: { backgroundColor: '#fde8e8' },
+  difficultyText: { fontSize: 11, fontWeight: '800', color: DEEP_NAVY, letterSpacing: 0.5 },
+
+  questionCard: { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 24, marginBottom: 24, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
+  questionText: { fontSize: 18, fontWeight: '700', color: DEEP_NAVY, lineHeight: 28 },
+  questionPinyin: { fontSize: 15, color: WARM_ORANGE, fontStyle: 'italic', marginTop: 8 },
+
   optionsContainer: { gap: 12, marginBottom: 20 },
-  optionButton: { backgroundColor: '#16213e', borderRadius: 16, padding: 18, borderWidth: 2, borderColor: '#2d3436' },
-  optionButtonSelected: { borderColor: '#1DD1A1', backgroundColor: 'rgba(29, 209, 161, 0.1)' },
+  optionButton: { backgroundColor: CARD_WHITE, borderRadius: 16, padding: 18, borderWidth: 2, borderColor: 'rgba(155,104,70,0.22)' },
+  optionButtonSelected: { borderColor: SUCCESS, backgroundColor: '#e8f5e9' },
   optionContent: { flex: 1 },
-  optionText: { fontSize: 16, fontWeight: '600', color: '#fff' },
-  optionTextSelected: { color: '#1DD1A1' },
-  optionPinyin: { fontSize: 14, color: '#FFD700', fontStyle: 'italic', marginTop: 6, fontWeight: '500', backgroundColor: 'rgba(0,0,0,0.3)', paddingHorizontal: 4, paddingVertical: 2, borderRadius: 4, alignSelf: 'flex-start' },
-  optionPinyinSelected: { color: '#1DD1A1', backgroundColor: 'rgba(29, 209, 161, 0.2)' },
-  
-  lessonRef: { fontSize: 12, color: '#636e72', textAlign: 'center', fontStyle: 'italic' },
-  
-  footer: { paddingHorizontal: 20, paddingVertical: 16, borderTopWidth: 1, borderTopColor: 'rgba(255,255,255,0.1)' },
-  nextButton: { backgroundColor: '#1DD1A1', padding: 16, borderRadius: 16, alignItems: 'center' },
-  nextButtonDisabled: { backgroundColor: '#636e72', opacity: 0.5 },
-  nextButtonText: { fontSize: 16, fontWeight: '800', color: '#fff' },
-  
+  optionText: { fontSize: 16, fontWeight: '600', color: DEEP_NAVY },
+  optionTextSelected: { color: SUCCESS },
+  optionPinyin: { fontSize: 14, color: WARM_BROWN, fontStyle: 'italic', marginTop: 6, fontWeight: '500', backgroundColor: '#FFF8ED', paddingHorizontal: 4, paddingVertical: 2, borderRadius: 4, alignSelf: 'flex-start' },
+  optionPinyinSelected: { color: SUCCESS, backgroundColor: '#e8f5e9' },
+
+  lessonRef: { fontSize: 12, color: SLATE_TEAL, textAlign: 'center', fontStyle: 'italic' },
+
+  footer: { paddingHorizontal: 20, paddingVertical: 16, backgroundColor: CARD_WHITE, borderTopWidth: 1, borderTopColor: 'rgba(155,104,70,0.18)' },
+  nextButton: { backgroundColor: SUCCESS, padding: 16, borderRadius: 16, alignItems: 'center' },
+  nextButtonDisabled: { backgroundColor: SLATE_TEAL, opacity: 0.5 },
+  nextButtonText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
+
   // Results
   // Unlock celebration card
-  unlockCard:       { backgroundColor: 'rgba(29,209,161,0.12)', borderRadius: 24, padding: 28, alignItems: 'center', marginBottom: 16, borderWidth: 2, borderColor: '#1DD1A1' },
+  unlockCard:       { backgroundColor: '#e8f5e9', borderRadius: 24, padding: 28, alignItems: 'center', marginBottom: 16, borderWidth: 2, borderColor: SUCCESS },
   unlockEmoji:      { fontSize: 52, marginBottom: 8 },
-  unlockTitle:      { fontSize: 28, fontWeight: '900', color: '#1DD1A1', marginBottom: 12 },
+  unlockTitle:      { fontSize: 28, fontWeight: '900', color: SUCCESS, marginBottom: 12 },
   unlockLevelRow:   { alignItems: 'center', gap: 6 },
-  unlockLabel:      { fontSize: 14, color: '#b2bec3', fontWeight: '600' },
-  unlockLevelBadge: { backgroundColor: 'rgba(255,255,255,0.1)', borderRadius: 12, paddingHorizontal: 16, paddingVertical: 8, marginTop: 4 },
-  unlockLevelText:  { fontSize: 18, fontWeight: '800', color: '#fff' },
+  unlockLabel:      { fontSize: 14, color: SLATE_TEAL, fontWeight: '600' },
+  unlockLevelBadge: { backgroundColor: CARD_WHITE, borderRadius: 12, paddingHorizontal: 16, paddingVertical: 8, marginTop: 4 },
+  unlockLevelText:  { fontSize: 18, fontWeight: '800', color: DEEP_NAVY },
 
   resultsContainer: { flexGrow: 1, padding: 20, justifyContent: 'center' },
-  resultsCard: { backgroundColor: '#16213e', borderRadius: 24, padding: 32, alignItems: 'center', marginBottom: 20, borderWidth: 1, borderColor: '#2d3436' },
+  resultsCard: { backgroundColor: CARD_WHITE, borderRadius: 24, padding: 32, alignItems: 'center', marginBottom: 20, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
   resultsEmoji: { fontSize: 64, marginBottom: 16 },
-  resultsTitle: { fontSize: 28, fontWeight: '900', color: '#fff', marginBottom: 8 },
-  resultsSubtitle: { fontSize: 16, color: '#a29bfe', marginBottom: 24 },
-  
-  scoreCircle: { width: 140, height: 140, borderRadius: 70, backgroundColor: 'rgba(255,255,255,0.05)', alignItems: 'center', justifyContent: 'center', marginBottom: 24, borderWidth: 3, borderColor: 'rgba(255,255,255,0.1)' },
+  resultsTitle: { fontSize: 28, fontWeight: '900', color: DEEP_NAVY, marginBottom: 8 },
+  resultsSubtitle: { fontSize: 16, color: WARM_ORANGE, marginBottom: 24 },
+
+  scoreCircle: { width: 140, height: 140, borderRadius: 70, backgroundColor: CARD_WHITE, alignItems: 'center', justifyContent: 'center', marginBottom: 24, borderWidth: 3, borderColor: 'rgba(155,104,70,0.22)' },
   scoreText: { fontSize: 42, fontWeight: '900' },
-  scoreLabel: { fontSize: 13, color: '#636e72', marginTop: 4 },
-  
-  statsBox: { flexDirection: 'row', alignItems: 'center', backgroundColor: 'rgba(255,255,255,0.05)', borderRadius: 16, padding: 20, width: '100%', marginBottom: 16 },
+  scoreLabel: { fontSize: 13, color: SLATE_TEAL, marginTop: 4 },
+
+  statsBox: { flexDirection: 'row', alignItems: 'center', backgroundColor: CARD_WHITE, borderRadius: 16, padding: 20, width: '100%', marginBottom: 16, borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)' },
   statItem: { flex: 1, alignItems: 'center' },
-  statNumber: { fontSize: 24, fontWeight: '800', color: '#fff', marginBottom: 4 },
-  statLabel: { fontSize: 12, color: '#636e72' },
-  statDivider: { width: 1, height: 40, backgroundColor: 'rgba(255,255,255,0.1)' },
-  
-  passingText: { fontSize: 13, color: '#636e72', marginBottom: 16 },
-  
-  passedBox: { backgroundColor: 'rgba(29, 209, 161, 0.2)', padding: 16, borderRadius: 12, width: '100%' },
-  passedText: { fontSize: 15, fontWeight: '600', color: '#1DD1A1', textAlign: 'center' },
-  
-  encouragementBox: { backgroundColor: 'rgba(255, 159, 67, 0.2)', padding: 16, borderRadius: 12, width: '100%' },
-  encouragementText: { fontSize: 14, color: '#FF9F43', textAlign: 'center', lineHeight: 20 },
-  
+  statNumber: { fontSize: 24, fontWeight: '800', color: DEEP_NAVY, marginBottom: 4 },
+  statLabel: { fontSize: 12, color: SLATE_TEAL },
+  statDivider: { width: 1, height: 40, backgroundColor: 'rgba(155,104,70,0.20)' },
+
+  passingText: { fontSize: 13, color: SLATE_TEAL, marginBottom: 16 },
+
+  passedBox: { backgroundColor: '#e8f5e9', padding: 16, borderRadius: 12, width: '100%' },
+  passedText: { fontSize: 15, fontWeight: '600', color: SUCCESS, textAlign: 'center' },
+
+  encouragementBox: { backgroundColor: '#FFF8ED', padding: 16, borderRadius: 12, width: '100%' },
+  encouragementText: { fontSize: 14, color: WARM_ORANGE, textAlign: 'center', lineHeight: 20 },
+
   resultsActions: { gap: 12 },
-  nextLevelButton: { backgroundColor: '#1DD1A1', padding: 16, borderRadius: 16, alignItems: 'center' },
-  nextLevelButtonText: { fontSize: 16, fontWeight: '800', color: '#fff' },
-  reviewExerciseButton: { backgroundColor: '#FF9F43', padding: 16, borderRadius: 16, alignItems: 'center' },
-  reviewButton: { backgroundColor: '#a29bfe', padding: 16, borderRadius: 16, alignItems: 'center' },
-  reviewButtonText: { fontSize: 16, fontWeight: '800', color: '#fff' },
-  retryButton: { backgroundColor: '#FF9F43', padding: 16, borderRadius: 16, alignItems: 'center' },
-  retryButtonText: { fontSize: 16, fontWeight: '800', color: '#fff' },
-  doneButton: { backgroundColor: '#16213e', padding: 16, borderRadius: 16, alignItems: 'center', borderWidth: 1, borderColor: '#2d3436' },
-  doneButtonText: { fontSize: 16, fontWeight: '600', color: '#fff' },
-  
+  nextLevelButton: { backgroundColor: SUCCESS, padding: 16, borderRadius: 16, alignItems: 'center' },
+  nextLevelButtonText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
+  reviewExerciseButton: { backgroundColor: WARM_ORANGE, padding: 16, borderRadius: 16, alignItems: 'center' },
+  reviewButton: { backgroundColor: SLATE_TEAL, padding: 16, borderRadius: 16, alignItems: 'center' },
+  reviewButtonText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
+  retryButton: { backgroundColor: WARM_ORANGE, padding: 16, borderRadius: 16, alignItems: 'center' },
+  retryButtonText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
+  doneButton: { backgroundColor: CARD_WHITE, padding: 16, borderRadius: 16, alignItems: 'center', borderWidth: 1, borderColor: 'rgba(155,104,70,0.22)' },
+  doneButtonText: { fontSize: 16, fontWeight: '600', color: DEEP_NAVY },
+
   // Review Screen
-  reviewHeader: { backgroundColor: '#16213e', borderRadius: 20, padding: 24, marginBottom: 24, alignItems: 'center', borderWidth: 1, borderColor: '#2d3436' },
-  reviewTitle: { fontSize: 24, fontWeight: '900', color: '#fff', marginBottom: 8 },
-  reviewSubtitle: { fontSize: 14, color: '#636e72' },
-  
-  perfectScore: { backgroundColor: '#16213e', borderRadius: 20, padding: 40, alignItems: 'center', borderWidth: 1, borderColor: '#2d3436' },
+  reviewHeader: { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 24, marginBottom: 24, alignItems: 'center', borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
+  reviewTitle: { fontSize: 24, fontWeight: '900', color: DEEP_NAVY, marginBottom: 8 },
+  reviewSubtitle: { fontSize: 14, color: SLATE_TEAL },
+
+  perfectScore: { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 40, alignItems: 'center', borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
   perfectScoreEmoji: { fontSize: 64, marginBottom: 16 },
-  perfectScoreText: { fontSize: 24, fontWeight: '900', color: '#1DD1A1', marginBottom: 8 },
-  perfectScoreSubtext: { fontSize: 14, color: '#636e72' },
-  
-  reviewQuestionCard: { backgroundColor: '#16213e', borderRadius: 20, padding: 20, marginBottom: 20, borderWidth: 1, borderColor: '#2d3436' },
+  perfectScoreText: { fontSize: 24, fontWeight: '900', color: SUCCESS, marginBottom: 8 },
+  perfectScoreSubtext: { fontSize: 14, color: SLATE_TEAL },
+
+  reviewQuestionCard: { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20, marginBottom: 20, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
   reviewQuestionHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 },
-  reviewQuestionNumber: { fontSize: 16, fontWeight: '800', color: '#fff' },
-  reviewQuestionText: { marginBottom: 20, paddingBottom: 20, borderBottomWidth: 1, borderBottomColor: 'rgba(255,255,255,0.1)' },
-  
+  reviewQuestionNumber: { fontSize: 16, fontWeight: '800', color: DEEP_NAVY },
+  reviewQuestionText: { marginBottom: 20, paddingBottom: 20, borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)' },
+
   reviewAnswerSection: { marginBottom: 16 },
-  reviewLabel: { fontSize: 14, fontWeight: '700', color: '#fff', marginBottom: 8 },
-  
-  wrongAnswerBox: { backgroundColor: 'rgba(255, 107, 107, 0.2)', borderRadius: 12, padding: 14, borderWidth: 2, borderColor: '#FF6B6B' },
-  wrongAnswerText: { fontSize: 15, fontWeight: '600', color: '#FF6B6B' },
-  wrongAnswerPinyin: { fontSize: 13, color: '#FF6B6B', fontStyle: 'italic', marginTop: 4, opacity: 0.8 },
-  
-  correctAnswerBox: { backgroundColor: 'rgba(29, 209, 161, 0.2)', borderRadius: 12, padding: 14, borderWidth: 2, borderColor: '#1DD1A1' },
-  correctAnswerText: { fontSize: 15, fontWeight: '600', color: '#1DD1A1' },
-  correctAnswerPinyin: { fontSize: 13, color: '#1DD1A1', fontStyle: 'italic', marginTop: 4, opacity: 0.8 },
+  reviewLabel: { fontSize: 14, fontWeight: '700', color: DEEP_NAVY, marginBottom: 8 },
+
+  wrongAnswerBox: { backgroundColor: 'rgba(196,80,58,0.10)', borderRadius: 12, padding: 14, borderWidth: 2, borderColor: ERROR },
+  wrongAnswerText: { fontSize: 15, fontWeight: '600', color: ERROR },
+  wrongAnswerPinyin: { fontSize: 13, color: ERROR, fontStyle: 'italic', marginTop: 4, opacity: 0.8 },
+
+  correctAnswerBox: { backgroundColor: 'rgba(45,122,74,0.10)', borderRadius: 12, padding: 14, borderWidth: 2, borderColor: SUCCESS },
+  correctAnswerText: { fontSize: 15, fontWeight: '600', color: SUCCESS },
+  correctAnswerPinyin: { fontSize: 13, color: SUCCESS, fontStyle: 'italic', marginTop: 4, opacity: 0.8 },
 });

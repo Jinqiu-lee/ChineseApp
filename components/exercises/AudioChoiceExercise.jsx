@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { speakAsAvatar } from '../../utils/tts';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 
 export default function AudioChoiceExercise({ exercise, onCorrect, onWrong, avatarId }) {
   const { chinese, pinyin, correct, choices } = exercise;
@@ -74,17 +75,17 @@ export default function AudioChoiceExercise({ exercise, onCorrect, onWrong, avat
 }
 
 const VG = {
-  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
-  onCard: '#1C2A44', onCardMuted: '#9A8A6A',
-  gold: '#E0B04B', orange: '#D98C2B',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  success: '#5A9E5A', error: '#C4503A',
-  border: 'rgba(244,197,66,0.2)', shadow: '#A0700A',
+  bg: 'transparent', card: CARD_WHITE, cardDark: CARD_WHITE,
+  onCard: DEEP_NAVY, onCardMuted: WARM_BROWN,
+  gold: WARM_BROWN, orange: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  success: SUCCESS, error: ERROR,
+  border: 'rgba(155,104,70,0.22)', shadow: 'rgba(28,42,68,0.18)',
 };
 
 const styles = StyleSheet.create({
   container: { flex: 1, paddingTop: 8, paddingHorizontal: 8 },
-  topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 20 },
+  topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16, backgroundColor: CARD_WHITE, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 10 },
   instruction: { fontSize: 17, fontWeight: '700', color: VG.cream },
   pinyinToggle: {
     paddingHorizontal: 12,
@@ -94,7 +95,7 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(244,197,66,0.2)',
     backgroundColor: VG.cardDark,
   },
-  pinyinToggleOn: { borderColor: VG.gold, backgroundColor: 'rgba(224,176,75,0.15)' },
+  pinyinToggleOn: { borderColor: VG.gold, backgroundColor: '#FFF8ED' },
   pinyinToggleText: { fontSize: 13, fontWeight: '600', color: VG.creamMuted },
   pinyinToggleTextOn: { color: VG.gold },
   audioBtn: {
@@ -115,8 +116,8 @@ const styles = StyleSheet.create({
   replayHint: { fontSize: 13, color: VG.onCardMuted },
   choices: { gap: 12 },
   choice:       { backgroundColor: VG.cardDark, borderRadius: 14, padding: 18, borderWidth: 1.5, borderColor: VG.border },
-  choiceCorrect:{ backgroundColor: 'rgba(90,158,90,0.2)', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: VG.success },
-  choiceWrong:  { backgroundColor: 'rgba(196,80,58,0.2)', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: VG.error },
-  choiceDimmed: { backgroundColor: VG.cardDark, borderRadius: 14, padding: 18, borderWidth: 1.5, borderColor: VG.border, opacity: 0.4 },
+  choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: VG.success },
+  choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: VG.error },
+  choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, padding: 18, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.10)' },
   choiceText: { fontSize: 16, fontWeight: '600', color: VG.cream, textAlign: 'center' },
 });

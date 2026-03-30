@@ -3,6 +3,7 @@ import {
   Modal, View, Text, TouchableOpacity,
   StyleSheet, Animated, ScrollView, Pressable, SafeAreaView,
 } from "react-native";
+import { DEEP_NAVY, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from "../constants/colors";
 
 const ALL_LEVELS = [
   { id: "hsk1", label: "Level 1 – Beginner",             badge: "🌱", color: "#00D2D3", desc: "Complete beginner, starting from scratch" },
@@ -132,7 +133,7 @@ export default function LevelChangeModal({
                     >
                       <Text style={m.listEmoji}>{lvl.badge}</Text>
                       <View style={m.listInfo}>
-                        <Text style={[m.listLabel, { color: isCurrent ? lvl.color : "#fff" }]}>
+                        <Text style={[m.listLabel, { color: isCurrent ? lvl.color : DEEP_NAVY }]}>
                           {lvl.label} {isCurrent ? "← current" : ""}
                         </Text>
                         <Text style={m.listDesc}>{lvl.desc}</Text>
@@ -154,47 +155,42 @@ export default function LevelChangeModal({
 
 const m = StyleSheet.create({
   overlay:       { flex: 1, justifyContent: "flex-end" },
-  backdrop:      { ...StyleSheet.absoluteFillObject, backgroundColor: "rgba(0,0,0,0.6)" },
-  sheet:         { backgroundColor: "#16213e", borderTopLeftRadius: 28, borderTopRightRadius: 28, paddingHorizontal: 20, paddingBottom: 8, maxHeight: "85%" },
-  handle:        { width: 40, height: 4, backgroundColor: "rgba(255,255,255,0.2)", borderRadius: 2, alignSelf: "center", marginTop: 12, marginBottom: 16 },
+  backdrop:      { ...StyleSheet.absoluteFillObject, backgroundColor: "rgba(0,0,0,0.55)" },
+  sheet:         { backgroundColor: CARD_WHITE, borderTopLeftRadius: 28, borderTopRightRadius: 28, paddingHorizontal: 20, paddingBottom: 8, maxHeight: "85%" },
+  handle:        { width: 40, height: 4, backgroundColor: "rgba(155,104,70,0.25)", borderRadius: 2, alignSelf: "center", marginTop: 12, marginBottom: 16 },
 
-  // Suggest mode
-  suggestBanner: { flexDirection: "row", alignItems: "flex-start", backgroundColor: "rgba(255,107,107,0.12)", borderRadius: 16, padding: 14, marginBottom: 16, gap: 12 },
+  suggestBanner: { flexDirection: "row", alignItems: "flex-start", backgroundColor: "rgba(232,82,42,0.08)", borderRadius: 16, padding: 14, marginBottom: 16, gap: 12, borderWidth: 1, borderColor: "rgba(232,82,42,0.20)" },
   suggestEmoji:  { fontSize: 32 },
   suggestText:   { flex: 1 },
-  suggestTitle:  { fontSize: 17, fontWeight: "800", color: "#fff", marginBottom: 4 },
-  suggestSub:    { fontSize: 13, color: "#636e72", lineHeight: 20 },
+  suggestTitle:  { fontSize: 17, fontWeight: "800", color: DEEP_NAVY, marginBottom: 4 },
+  suggestSub:    { fontSize: 13, color: SLATE_TEAL, lineHeight: 20 },
 
-  // Manual mode
   manualHeader:  { marginBottom: 16 },
-  manualTitle:   { fontSize: 20, fontWeight: "800", color: "#fff", marginBottom: 4 },
-  manualSub:     { fontSize: 13, color: "#636e72" },
+  manualTitle:   { fontSize: 20, fontWeight: "800", color: DEEP_NAVY, marginBottom: 4 },
+  manualSub:     { fontSize: 13, color: SLATE_TEAL },
 
-  // Current level row
   currentRow:    { flexDirection: "row", alignItems: "center", gap: 10, marginBottom: 16 },
-  currentLabel:  { fontSize: 13, color: "#636e72" },
+  currentLabel:  { fontSize: 13, color: SLATE_TEAL },
   currentBadge:  { paddingHorizontal: 10, paddingVertical: 4, borderRadius: 10 },
-  currentBadgeText: { fontSize: 13, fontWeight: "800", color: "#fff" },
+  currentBadgeText: { fontSize: 13, fontWeight: "800", color: CARD_WHITE },
 
-  // Suggest options
   suggestOptions:{ gap: 10, marginBottom: 8 },
-  suggestBtn:    { flexDirection: "row", alignItems: "center", backgroundColor: "rgba(255,255,255,0.05)", borderRadius: 16, padding: 16, borderWidth: 2, gap: 12 },
+  suggestBtn:    { flexDirection: "row", alignItems: "center", backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16, borderWidth: 2, gap: 12 },
   suggestBtnEmoji: { fontSize: 28 },
   suggestBtnInfo:  { flex: 1 },
   suggestBtnLabel: { fontSize: 17, fontWeight: "800" },
-  suggestBtnDesc:  { fontSize: 12, color: "#636e72", marginTop: 2 },
+  suggestBtnDesc:  { fontSize: 12, color: SLATE_TEAL, marginTop: 2 },
   suggestBtnArrow: { fontSize: 20, fontWeight: "700" },
   keepBtn:       { padding: 16, alignItems: "center" },
-  keepBtnText:   { fontSize: 14, color: "#636e72", fontWeight: "600" },
+  keepBtnText:   { fontSize: 14, color: WARM_BROWN, fontWeight: "600" },
 
-  // Manual list
   listScroll:    { maxHeight: 400 },
-  listItem:      { flexDirection: "row", alignItems: "center", backgroundColor: "rgba(255,255,255,0.04)", borderRadius: 14, padding: 14, marginBottom: 8, borderWidth: 1.5, gap: 12 },
-  listItemCurrent: { backgroundColor: "rgba(255,255,255,0.08)" },
+  listItem:      { flexDirection: "row", alignItems: "center", backgroundColor: CARD_WHITE, borderRadius: 14, padding: 14, marginBottom: 8, borderWidth: 1.5, borderColor: "rgba(155,104,70,0.20)", gap: 12 },
+  listItemCurrent: { backgroundColor: "rgba(155,104,70,0.08)" },
   listEmoji:     { fontSize: 24, width: 32, textAlign: "center" },
   listInfo:      { flex: 1 },
   listLabel:     { fontSize: 15, fontWeight: "700" },
-  listDesc:      { fontSize: 11, color: "#636e72", marginTop: 2 },
+  listDesc:      { fontSize: 11, color: SLATE_TEAL, marginTop: 2 },
   listArrow:     { fontSize: 18, fontWeight: "700" },
   activeDot:     { width: 8, height: 8, borderRadius: 4 },
 });

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { speakPinyin } from '../../utils/tts';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 
 // Handles all exercise types in the Pinyin Learning System:
 //  listen_tone, listen_initial, listen_final, listen_syllable → audio first, pick answer
@@ -19,7 +20,7 @@ const TYPE_META = {
   neutral_choice: { instruction: '💨 Neutral Tone & Erhua — choose the answer', showAudio: false, hideLabel: false },
 };
 
-const TONE_COLORS = { '1': '#FF6B6B', '2': '#FF9F43', '3': '#1DD1A1', '4': '#54A0FF', '0': '#a29bfe' };
+const TONE_COLORS = { '1': ERROR, '2': WARM_ORANGE, '3': SUCCESS, '4': SLATE_TEAL, '0': WARM_BROWN };
 
 export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
   const { type, syllable, audio_key, prompt, correct, choices, hint, pinyin_hint } = exercise;
@@ -64,9 +65,9 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
 
   const getChoiceTextStyle = (choice) => {
     if (!answered) return styles.choiceText;
-    if (choice === correct)  return [styles.choiceText, { color: '#1DD1A1' }];
-    if (choice === selected) return [styles.choiceText, { color: '#FF6B6B' }];
-    return [styles.choiceText, { opacity: 0.5 }];
+    if (choice === correct)  return [styles.choiceText, { color: SUCCESS }];
+    if (choice === selected) return [styles.choiceText, { color: ERROR }];
+    return [styles.choiceText, { color: 'rgba(28,42,68,0.4)' }];
   };
 
   // For tone choices, show colored tone indicators
@@ -162,54 +163,54 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
 const styles = StyleSheet.create({
   container: { flex: 1, paddingTop: 8, paddingHorizontal: 8 },
 
-  topRow: { marginBottom: 20 },
-  instruction: { fontSize: 16, fontWeight: '700', color: '#fff' },
+  topRow: { marginBottom: 20, backgroundColor: CARD_WHITE, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 10 },
+  instruction: { fontSize: 16, fontWeight: '700', color: DEEP_NAVY },
 
   // Listen card
   listenCard: {
-    backgroundColor: '#16213e', borderRadius: 20, padding: 32,
+    backgroundColor: CARD_WHITE, borderRadius: 20, padding: 32,
     alignItems: 'center', marginBottom: 28,
-    borderWidth: 2, borderColor: '#54A0FF', gap: 8,
+    borderWidth: 2, borderColor: SLATE_TEAL, gap: 8,
   },
   listenIcon: { fontSize: 48 },
-  listenTap:  { fontSize: 13, color: '#636e72' },
+  listenTap:  { fontSize: 13, color: SLATE_TEAL },
   revealedBox:     { marginTop: 12, alignItems: 'center', gap: 4 },
-  revealedLabel:   { fontSize: 11, color: '#636e72', textTransform: 'uppercase', letterSpacing: 1 },
-  revealedSyllable:{ fontSize: 36, fontWeight: '900', color: '#54A0FF', letterSpacing: 2 },
+  revealedLabel:   { fontSize: 11, color: SLATE_TEAL, textTransform: 'uppercase', letterSpacing: 1 },
+  revealedSyllable:{ fontSize: 36, fontWeight: '900', color: SLATE_TEAL, letterSpacing: 2 },
 
   // Prompt card (sandhi / neutral)
   promptCard: {
-    backgroundColor: '#16213e', borderRadius: 20, padding: 24,
-    marginBottom: 28, borderWidth: 1.5, borderColor: '#a29bfe55', gap: 10,
+    backgroundColor: CARD_WHITE, borderRadius: 20, padding: 24,
+    marginBottom: 28, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.25)', gap: 10,
   },
-  promptText: { fontSize: 18, fontWeight: '700', color: '#fff', lineHeight: 26 },
-  hintText:   { fontSize: 13, color: '#a29bfe', lineHeight: 20 },
+  promptText: { fontSize: 18, fontWeight: '700', color: DEEP_NAVY, lineHeight: 26 },
+  hintText:   { fontSize: 13, color: WARM_BROWN, lineHeight: 20 },
 
   // Visual syllable card
   syllableCard: {
-    backgroundColor: '#16213e', borderRadius: 20, padding: 28,
+    backgroundColor: CARD_WHITE, borderRadius: 20, padding: 28,
     alignItems: 'center', marginBottom: 28,
-    borderWidth: 2, borderColor: '#54A0FF', gap: 6,
+    borderWidth: 2, borderColor: SLATE_TEAL, gap: 6,
   },
-  syllableText: { fontSize: 52, fontWeight: '900', color: '#54A0FF', letterSpacing: 2 },
+  syllableText: { fontSize: 52, fontWeight: '900', color: SLATE_TEAL, letterSpacing: 2 },
 
   // Choices
   choices:      { gap: 10 },
-  choice:       { backgroundColor: '#16213e', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: '#2d3436', alignItems: 'center' },
-  choiceCorrect:{ backgroundColor: 'rgba(29,209,161,0.15)', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: '#1DD1A1', alignItems: 'center' },
-  choiceWrong:  { backgroundColor: 'rgba(255,107,107,0.15)', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: '#FF6B6B', alignItems: 'center' },
-  choiceDimmed: { backgroundColor: '#16213e', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: '#2d3436', alignItems: 'center', opacity: 0.4 },
-  choiceText:   { fontSize: 17, fontWeight: '700', color: '#fff', textAlign: 'center' },
+  choice:       { backgroundColor: CARD_WHITE, borderRadius: 14, padding: 16, borderWidth: 2, borderColor: 'rgba(155,104,70,0.22)', alignItems: 'center' },
+  choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: SUCCESS, alignItems: 'center' },
+  choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: ERROR, alignItems: 'center' },
+  choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: 'rgba(155,104,70,0.10)', alignItems: 'center' },
+  choiceText:   { fontSize: 17, fontWeight: '700', color: DEEP_NAVY, textAlign: 'center' },
 
   toneChoiceInner: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   toneDot:         { width: 12, height: 12, borderRadius: 6 },
 
   // Show Pinyin
   showPinyinRow:      { flexDirection: 'row', alignItems: 'center', gap: 10, marginBottom: 16 },
-  showPinyinBtn:      { paddingHorizontal: 14, paddingVertical: 8, borderRadius: 20, borderWidth: 1.5, borderColor: '#2d3436' },
-  showPinyinBtnActive:{ borderColor: '#54A0FF', backgroundColor: 'rgba(84,160,255,0.12)' },
-  showPinyinText:     { fontSize: 13, fontWeight: '600', color: '#636e72' },
-  showPinyinTextActive:{ color: '#54A0FF' },
-  pinyinPill:         { backgroundColor: 'rgba(84,160,255,0.12)', borderRadius: 12, paddingHorizontal: 14, paddingVertical: 6, borderWidth: 1, borderColor: '#54A0FF55' },
-  pinyinPillText:     { fontSize: 18, fontWeight: '800', color: '#54A0FF', letterSpacing: 1 },
+  showPinyinBtn:      { paddingHorizontal: 14, paddingVertical: 8, borderRadius: 20, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.25)' },
+  showPinyinBtnActive:{ borderColor: SLATE_TEAL, backgroundColor: '#eaf2f3' },
+  showPinyinText:     { fontSize: 13, fontWeight: '600', color: SLATE_TEAL },
+  showPinyinTextActive:{ color: SLATE_TEAL },
+  pinyinPill:         { backgroundColor: '#eaf2f3', borderRadius: 12, paddingHorizontal: 14, paddingVertical: 6, borderWidth: 1, borderColor: 'rgba(55,73,80,0.30)' },
+  pinyinPillText:     { fontSize: 18, fontWeight: '800', color: SLATE_TEAL, letterSpacing: 1 },
 });

@@ -4,13 +4,14 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import WaveBackground from '../components/WaveBackground';
 import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
 
 const STAGE_META = [
-  { name: 'First Look',      desc: 'Flashcards · Audio · Matching',  icon: '👁',  color: '#E0B04B' },
-  { name: 'Listen & Choose', desc: 'Audio quiz · Fill in the blank',  icon: '🎧', color: '#7BA7D4' },
-  { name: 'Build Sentences', desc: 'Arrange words · Fill blanks',     icon: '🧩', color: '#8DBF6E' },
-  { name: 'Match & Review',  desc: 'Matching pairs · Audio recall',   icon: '🔄', color: '#D98C2B' },
-  { name: 'Final Challenge', desc: 'All types · Full review',         icon: '🏆', color: '#F4C542' },
+  { name: 'First Look',      desc: 'Flashcards · Audio · Matching',  icon: '👁',  color: '#5E789F' },
+  { name: 'Listen & Choose', desc: 'Audio quiz · Fill in the blank',  icon: '🎧', color: '#38529D' },
+  { name: 'Build Sentences', desc: 'Arrange words · Fill blanks',     icon: '🧩', color: '#25523D' },
+  { name: 'Match & Review',  desc: 'Matching pairs · Audio recall',   icon: '🔄', color: '#b87243' },
+  { name: 'Final Challenge', desc: 'All types · Full review',         icon: '🏆', color: WARM_ORANGE },
 ];
 
 export default function LessonStagesScreen({ lessonData, stageProgress = [], devUnlockAll = false, onSelectStage, onBack, levelId = 'hsk1' }) {
@@ -24,18 +25,18 @@ export default function LessonStagesScreen({ lessonData, stageProgress = [], dev
       <StatusBar barStyle={T.statusBar} />
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
 
-      <View style={[styles.header, { borderBottomColor: T.border }]}>
+      <View style={styles.header}>
         <TouchableOpacity onPress={onBack} style={styles.backBtn}>
-          <Text style={[styles.backText, { color: T.gold }]}>← Back</Text>
+          <Text style={styles.backText}>← Back</Text>
         </TouchableOpacity>
-        <Text style={[styles.headerTitle, { color: T.onBg }]}>Practice Stages</Text>
+        <Text style={styles.headerTitle}>Practice Stages</Text>
         <View style={{ width: 60 }} />
       </View>
 
       <View style={styles.lessonInfo}>
-        <Text style={[styles.lessonChinese, { color: T.onBg }]}>{lessonData?.topic_chinese}</Text>
-        <Text style={[styles.lessonTopic, { color: T.gold }]}>{lessonData?.topic}</Text>
-        <Text style={[styles.lessonMeta, { color: T.onBgMuted }]}>5 stages · 10 exercises each</Text>
+        <Text style={styles.lessonChinese}>{lessonData?.topic_chinese}</Text>
+        <Text style={styles.lessonTopic}>{lessonData?.topic}</Text>
+        <Text style={styles.lessonMeta}>5 stages · 10 exercises each</Text>
       </View>
 
       {/* Overall progress dots */}
@@ -43,7 +44,7 @@ export default function LessonStagesScreen({ lessonData, stageProgress = [], dev
         {STAGE_META.map((_, i) => (
           <View
             key={i}
-            style={[styles.dot, isCompleted(i) && { backgroundColor: T.success }, isUnlocked(i) && !isCompleted(i) && { backgroundColor: T.onBgMuted }]}
+            style={[styles.dot, isCompleted(i) && { backgroundColor: T.success }, isUnlocked(i) && !isCompleted(i) && { backgroundColor: SLATE_TEAL }]}
           />
         ))}
       </View>
@@ -56,22 +57,22 @@ export default function LessonStagesScreen({ lessonData, stageProgress = [], dev
           return (
             <TouchableOpacity
               key={i}
-              style={[styles.card, { backgroundColor: T.cardDark, borderColor: T.border }, !unlocked && styles.cardLocked]}
+              style={[styles.card, { backgroundColor: T.card, borderColor: T.cardBorder }, !unlocked && styles.cardLocked]}
               onPress={() => unlocked && onSelectStage(i)}
               activeOpacity={unlocked ? 0.8 : 1}
             >
               <View style={[
                 styles.iconBubble,
-                { backgroundColor: unlocked ? `${stage.color}22` : 'rgba(128,128,128,0.08)' },
+                { backgroundColor: unlocked ? stage.color : 'rgba(55,73,80,0.18)' },
               ]}>
                 <Text style={styles.stageIcon}>{unlocked ? stage.icon : '🔒'}</Text>
               </View>
 
               <View style={styles.cardInfo}>
-                <Text style={[styles.stageName, { color: T.onBg }, !unlocked && { color: T.onBgMuted }]}>
+                <Text style={[styles.stageName, !unlocked && styles.stageNameLocked]}>
                   Stage {i + 1}: {stage.name}
                 </Text>
-                <Text style={[styles.stageDesc, { color: T.onBgMuted }]}>
+                <Text style={styles.stageDesc}>
                   {stage.desc}
                 </Text>
               </View>
@@ -96,11 +97,11 @@ export default function LessonStagesScreen({ lessonData, stageProgress = [], dev
 }
 
 const VG = {
-  bg: '#1C2A44', card: '#243454',
-  cream: '#F7F3E9', creamMid: '#C5B99A', creamMuted: '#8A7E6E',
-  gold: '#E0B04B', yellow: '#F4C542',
-  success: '#7DC47A',
-  border: 'rgba(244,197,66,0.13)', borderMid: 'rgba(244,197,66,0.28)',
+  bg: 'transparent', card: CARD_WHITE,
+  cream: DEEP_NAVY, creamMid: SLATE_TEAL, creamMuted: SLATE_TEAL,
+  gold: WARM_BROWN, yellow: WARM_ORANGE,
+  success: SUCCESS,
+  border: 'rgba(155,104,70,0.18)', borderMid: 'rgba(155,104,70,0.32)',
 };
 
 const styles = StyleSheet.create({
@@ -108,19 +109,20 @@ const styles = StyleSheet.create({
   header:      {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
     paddingHorizontal: 20, paddingVertical: 13,
-    borderBottomWidth: 1, borderBottomColor: VG.border,
+    backgroundColor: CARD_WHITE,
+    borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)',
   },
   backBtn:     { paddingVertical: 8, paddingRight: 12 },
-  backText:    { fontSize: 16, fontWeight: '600', color: VG.gold },
-  headerTitle: { fontSize: 16, fontWeight: '700', color: VG.cream },
+  backText:    { fontSize: 16, fontWeight: '600', color: WARM_BROWN },
+  headerTitle: { fontSize: 16, fontWeight: '700', color: DEEP_NAVY },
 
-  lessonInfo:    { alignItems: 'center', paddingVertical: 20, paddingHorizontal: 20 },
-  lessonChinese: { fontSize: 36, fontWeight: '900', color: VG.cream, marginBottom: 4 },
-  lessonTopic:   { fontSize: 16, color: VG.gold, marginBottom: 4 },
-  lessonMeta:    { fontSize: 13, color: VG.creamMuted },
+  lessonInfo:    { alignItems: 'center', paddingVertical: 16, paddingHorizontal: 20, backgroundColor: CARD_WHITE },
+  lessonChinese: { fontSize: 36, fontWeight: '900', color: DEEP_NAVY, marginBottom: 4 },
+  lessonTopic:   { fontSize: 16, color: WARM_BROWN, marginBottom: 4 },
+  lessonMeta:    { fontSize: 13, color: SLATE_TEAL },
 
-  dotsRow:    { flexDirection: 'row', justifyContent: 'center', gap: 8, marginBottom: 20 },
-  dot:        { width: 10, height: 10, borderRadius: 5, backgroundColor: 'rgba(255,255,255,0.1)' },
+  dotsRow:    { flexDirection: 'row', justifyContent: 'center', gap: 8, marginBottom: 0, paddingVertical: 10, paddingBottom: 16, backgroundColor: CARD_WHITE, borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)' },
+  dot:        { width: 10, height: 10, borderRadius: 5, backgroundColor: 'rgba(55,73,80,0.28)' },
   dotUnlocked:{ backgroundColor: VG.creamMuted },
   dotDone:    { backgroundColor: VG.success },
 
@@ -131,13 +133,14 @@ const styles = StyleSheet.create({
     padding: 16, marginBottom: 12,
     borderWidth: 1, borderColor: VG.border, gap: 14,
   },
-  cardLocked:  { opacity: 0.42 },
+  cardLocked:  { opacity: 0.65 },
   iconBubble:  { width: 54, height: 54, borderRadius: 27, alignItems: 'center', justifyContent: 'center' },
   stageIcon:   { fontSize: 26 },
   cardInfo:    { flex: 1 },
-  stageName:   { fontSize: 16, fontWeight: '700', color: VG.cream, marginBottom: 3 },
-  stageDesc:   { fontSize: 13, color: VG.creamMuted },
-  textMuted:   { color: VG.creamMuted },
+  stageName:        { fontSize: 16, fontWeight: '700', color: DEEP_NAVY, marginBottom: 3 },
+  stageNameLocked:  { color: SLATE_TEAL },
+  stageDesc:        { fontSize: 13, color: SLATE_TEAL },
+  textMuted:        { color: SLATE_TEAL },
   statusCol:   { width: 36, alignItems: 'center' },
   checkmark:   { fontSize: 22 },
   startBadge:  { width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },

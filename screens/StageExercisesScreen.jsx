@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import WaveBackground from '../components/WaveBackground';
 import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../constants/colors';
 import { generateRounds } from '../utils/stageGenerator';
 import FlashcardExercise from '../components/exercises/FlashcardExercise';
 import AudioChoiceExercise from '../components/exercises/AudioChoiceExercise';
@@ -62,7 +63,7 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
         <SafeAreaView style={styles.safe}>
           <StatusBar barStyle={T.statusBar} />
           <View style={styles.center}>
-            <Text style={[styles.loadingText, { color: T.onBgMuted }]}>Loading exercises...</Text>
+            <Text style={styles.loadingText}>Loading exercises...</Text>
           </View>
         </SafeAreaView>
       </ScreenBackground>
@@ -80,11 +81,13 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
           <StatusBar barStyle={T.statusBar} />
           {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
           <View style={styles.completion}>
-            <Text style={styles.starsText}>{'⭐'.repeat(stars)}</Text>
-            <Text style={[styles.doneTitle, { color: T.onBg }]}>Stage Complete!</Text>
-            <Text style={[styles.doneStageName, { color: T.gold }]}>{STAGE_NAMES[stageIndex]}</Text>
-            <Text style={[styles.doneScore, { color: T.success }]}>{score} / {total} correct</Text>
-            <Text style={[styles.doneMessage, { color: T.onBgMuted }]}>{messages[stars - 1]}</Text>
+            <View style={styles.completionCard}>
+              <Text style={styles.starsText}>{'⭐'.repeat(stars)}</Text>
+              <Text style={styles.doneTitle}>Stage Complete!</Text>
+              <Text style={styles.doneStageName}>{STAGE_NAMES[stageIndex]}</Text>
+              <Text style={styles.doneScore}>{score} / {total} correct</Text>
+              <Text style={styles.doneMessage}>{messages[stars - 1]}</Text>
+            </View>
             <TouchableOpacity
               style={[styles.continueBtn, { backgroundColor: T.accent, shadowColor: T.shadow }]}
               onPress={() => onComplete(stageIndex, score, exercises.length)}
@@ -110,12 +113,12 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
         {/* Progress header */}
         <View style={[styles.header, { borderBottomColor: T.border }]}>
           <TouchableOpacity onPress={handleExit} style={styles.closeBtn}>
-            <Text style={[styles.closeText, { color: T.onBgMuted }]}>✕</Text>
+            <Text style={styles.closeText}>✕</Text>
           </TouchableOpacity>
           <View style={styles.progressBg}>
             <View style={[styles.progressFill, { width: `${progressPct}%`, backgroundColor: T.progressFill }]} />
           </View>
-          <Text style={[styles.counter, { color: T.onBgMuted }]}>{currentIndex + 1}/{exercises.length}</Text>
+          <Text style={styles.counter}>{currentIndex + 1}/{exercises.length}</Text>
         </View>
 
         {/* Exercise content */}
@@ -197,42 +200,50 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
 }
 
 const VG = {
-  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
-  onCard: '#1C2A44', onCardMid: '#5C4A2A', onCardMuted: '#9A8A6A',
-  yellow: '#F4C542', gold: '#E0B04B', orange: '#D98C2B',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  success: '#7DC47A',
-  border: 'rgba(244,197,66,0.15)', shadow: '#A0700A',
+  bg: 'transparent', card: CARD_WHITE, cardDark: CARD_WHITE,
+  onCard: DEEP_NAVY, onCardMid: WARM_BROWN, onCardMuted: WARM_BROWN,
+  yellow: WARM_ORANGE, gold: WARM_BROWN, orange: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  success: SUCCESS,
+  border: 'rgba(155,104,70,0.18)', shadow: 'rgba(28,42,68,0.18)',
 };
 
 const styles = StyleSheet.create({
   safe:        { flex: 1, backgroundColor: 'transparent' },
   center:      { flex: 1, alignItems: 'center', justifyContent: 'center' },
-  loadingText: { color: VG.creamMuted, fontSize: 16 },
+  loadingText: { color: SLATE_TEAL, fontSize: 16, backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8 },
 
   // ── Progress header ───────────────────────────────────────────────────────
   header: {
     flexDirection: 'row', alignItems: 'center',
     paddingHorizontal: 16, paddingVertical: 12, gap: 12,
+    backgroundColor: CARD_WHITE,
     borderBottomWidth: 1, borderBottomColor: VG.border,
   },
   closeBtn:    { width: 32, height: 32, alignItems: 'center', justifyContent: 'center' },
-  closeText:   { fontSize: 18, color: VG.creamMuted, fontWeight: '700' },
-  progressBg:  { flex: 1, height: 7, backgroundColor: 'rgba(255,255,255,0.08)', borderRadius: 4, overflow: 'hidden' },
+  closeText:   { fontSize: 18, color: WARM_BROWN, fontWeight: '700' },
+  progressBg:  { flex: 1, height: 7, backgroundColor: 'rgba(55,73,80,0.22)', borderRadius: 4, overflow: 'hidden' },
   progressFill:{ height: '100%', backgroundColor: VG.yellow, borderRadius: 4 },
-  counter:     { fontSize: 13, color: VG.creamMuted, fontWeight: '600', minWidth: 36, textAlign: 'right' },
+  counter:     { fontSize: 13, color: WARM_BROWN, fontWeight: '600', minWidth: 36, textAlign: 'right' },
 
   // ── Exercise area ──────────────────────────────────────────────────────────
   scroll:        { flex: 1 },
   scrollContent: { padding: 16, flexGrow: 1 },
 
   // ── Completion screen ──────────────────────────────────────────────────────
-  completion: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 32, gap: 8 },
-  starsText:  { fontSize: 52, marginBottom: 12 },
-  doneTitle:  { fontSize: 32, fontWeight: '900', color: VG.cream,    marginBottom: 4 },
-  doneStageName: { fontSize: 16, color: VG.gold, marginBottom: 12 },
-  doneScore:  { fontSize: 22, fontWeight: '700', color: VG.success, marginBottom: 6 },
-  doneMessage:{ fontSize: 16, color: VG.creamMuted, marginBottom: 40, textAlign: 'center', lineHeight: 24 },
+  completion: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 32, gap: 20 },
+  completionCard: {
+    backgroundColor: CARD_WHITE, borderRadius: 24, padding: 32,
+    alignItems: 'center', gap: 8, width: '100%',
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.18, shadowRadius: 16, elevation: 6,
+    borderWidth: 1, borderColor: VG.border,
+  },
+  starsText:  { fontSize: 52, marginBottom: 8 },
+  doneTitle:  { fontSize: 32, fontWeight: '900', color: DEEP_NAVY, marginBottom: 4 },
+  doneStageName: { fontSize: 16, color: WARM_BROWN, marginBottom: 8 },
+  doneScore:  { fontSize: 22, fontWeight: '700', color: SUCCESS, marginBottom: 4 },
+  doneMessage:{ fontSize: 16, color: SLATE_TEAL, textAlign: 'center', lineHeight: 24 },
   continueBtn: {
     backgroundColor: VG.yellow,
     borderRadius: 18,

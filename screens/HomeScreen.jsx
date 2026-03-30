@@ -1,21 +1,23 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal, Animated, ImageBackground } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal, Animated, ImageBackground, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScreenBackground from '../components/ScreenBackground';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR } from '../constants/colors';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import ConfettiCannon from 'react-native-confetti-cannon';
 import LevelChangeModal from '../components/LevelChangeModal';
 import AvatarCharacter from '../components/AvatarCharacter';
 import AvatarPicker from '../components/AvatarPicker';
 import useProgress from '../hooks/useProgress';
+import { LEVEL_WELCOME, LEVEL_QUOTES } from '../data/emotionalContent';
 
 const LEVEL_CONFIG = [
-  { id: 'hsk1', number: 1, emoji: '☕', title: 'Café Terrace',        subtitle: 'HSK 1', color: '#E0B04B' },
-  { id: 'hsk2', number: 2, emoji: '🌻', title: 'Sunflower Fields',    subtitle: 'HSK 2', color: '#F5A623' },
-  { id: 'hsk3', number: 3, emoji: '🌾', title: 'Wheat Fields',        subtitle: 'HSK 3', color: '#4A90D9' },
-  { id: 'hsk4', number: 4, emoji: '🏡', title: 'Homes & Villages',    subtitle: 'HSK 4', color: '#C4703A' },
-  { id: 'hsk5', number: 5, emoji: '🌌', title: 'Starry Night',        subtitle: 'HSK 5', color: '#7BA7D4' },
-  { id: 'hsk6', number: 6, emoji: '🌼', title: 'Irises in Bloom',     subtitle: 'HSK 6', color: '#A87DC8' },
+  { id: 'hsk1', number: 1, emoji: '🌻', title: 'Sunflower Fields',    subtitle: 'HSK 1', color: WARM_BROWN,   tagline: 'Your warm beginning',        welcomeColor: '#1C2A44' },
+  { id: 'hsk2', number: 2, emoji: '☕', title: 'Café Terrace',        subtitle: 'HSK 2', color: WARM_ORANGE,  tagline: 'Relax, you\'re doing great',  welcomeColor: '#FFFFFF' },
+  { id: 'hsk3', number: 3, emoji: '🌾', title: 'Wheat Fields',        subtitle: 'HSK 3', color: '#0c6e16',    tagline: 'You\'re getting somewhere',   welcomeColor: '#822a14' },
+  { id: 'hsk4', number: 4, emoji: '🏡', title: 'Homes & Villages',    subtitle: 'HSK 4', color: SOFT_SALMON,  tagline: 'Real life, real Chinese',     welcomeColor: '#FFFFFF' },
+  { id: 'hsk5', number: 5, emoji: '🌌', title: 'Starry Night',        subtitle: 'HSK 5', color: '#384fa3',    tagline: 'You\'re starting to feel it', welcomeColor: '#F5C210' },
+  { id: 'hsk6', number: 6, emoji: '🌼', title: 'Irises in Bloom',     subtitle: 'HSK 6', color: '#f7c80c',    tagline: 'You are becoming fluent',     welcomeColor: '#FFFFFF' },
 ];
 
 const LEVEL_WORD_DATA = {
@@ -122,6 +124,7 @@ const LESSONS_BY_LEVEL = {
   ],
 };
 
+
 export default function HomeScreen({
   userData,
   levelState,
@@ -170,69 +173,6 @@ export default function HomeScreen({
     AsyncStorage.setItem('avatarId', id).catch(() => {});
   };
 
-  // Daily encouraging message — rotates by day of week, one per avatar personality
-  const DAILY_MESSAGES = {
-    eileen: [
-      "Some stories are worth telling twice\u2026 start yours again today.",
-      "Perhaps learning is the only thing that truly stays with us.",
-      "A little melancholy, a little beauty \u2014 that\u2019s a good study day.",
-      "Words, once learned, become a part of you forever.",
-      "The world outside is rushing. In here, take your time.",
-      "Something about today feels like it\u2019s meant for quiet learning.",
-      "Even half a lesson is more than none at all.",
-    ],
-    libai: [
-      "The moon is bright \u2014 perfect for learning something new! \uD83C\uDF15",
-      "A thousand miles begin with one character. Let\u2019s go!",
-      "Wine and poetry can wait \u2014 first, one more lesson! \uD83C\uDF77",
-      "Even rivers flow one wave at a time. Study on!",
-      "The mountains don\u2019t rush, and neither do we. But we do study! \u26F0\uFE0F",
-      "Stars appear one by one \u2014 like the words you\u2019re learning. \u2728",
-      "Today the wind is good. A fine day for adventure and Chinese!",
-    ],
-    luxun: [
-      "The only way forward is through the work.",
-      "Others complain about difficulty. You just study.",
-      "Reality doesn\u2019t wait. Neither should you.",
-      "No lesson is wasted, even if it feels that way.",
-      "Progress is quiet. Excuses are loud.",
-      "You studied yesterday. That\u2019s the only reason to study again today.",
-      "The path is made by walking it. Keep walking.",
-    ],
-    dante: [
-      "Through knowledge, we ascend. Begin today\u2019s lesson.",
-      "Every great journey starts with a single purposeful step.",
-      "The structured mind learns well. Be structured.",
-      "Wisdom is built lesson by lesson. Do not skip a day.",
-      "What you learn today becomes the guide for tomorrow.",
-      "In the pursuit of mastery, there are no shortcuts \u2014 only steps.",
-      "Your future self will thank you for the discipline you show today.",
-    ],
-    camus: [
-      "You don\u2019t need a reason to learn. Showing up is enough.",
-      "One lesson. That\u2019s all. Then the rest takes care of itself.",
-      "Life is uncertain. Your progress, however, is in your hands.",
-      "There is quiet freedom in choosing to study today.",
-      "Small and steady. That\u2019s all it takes.",
-      "Today feels like a good day to understand one more thing.",
-      "The habit of learning is itself a kind of happiness.",
-    ],
-    jane: [
-      "It is a truth universally acknowledged \u2014 study is better with a good mood!",
-      "A little effort today makes for a very elegant tomorrow. \u2615",
-      "Practice makes perfect, and perfection makes for wonderful conversation.",
-      "What a fine occasion to impress oneself with one\u2019s own progress!",
-      "One does not simply skip a lesson without at least a twinge of guilt.",
-      "Today\u2019s lesson is the foundation of tomorrow\u2019s wit. Shall we begin?",
-      "Even the best parties are improved by someone who speaks Chinese. \uD83C\uDF89",
-    ],
-  };
-
-  const todayMessage = (() => {
-    const day = new Date().getDay(); // 0 (Sun) – 6 (Sat)
-    const msgs = DAILY_MESSAGES[avatarId] || DAILY_MESSAGES.eileen;
-    return msgs[day];
-  })();
 
   const FOUNDATION_CONTENT = {
     pinyin: {
@@ -240,7 +180,7 @@ export default function HomeScreen({
       title: 'Pinyin – Master Chinese Sounds',
       tagline: 'Unlock the sound system of Chinese! 🎧',
       body: 'Learn Pinyin, tones, and pronunciation so you can read and say Chinese words correctly. Train your ears and voice to sound like a real Chinese speaker!',
-      color: '#54A0FF',
+      color: SLATE_TEAL,
       bullets: [
         { icon: '🎵', text: 'Four tones & pronunciation rules' },
         { icon: '🔤', text: 'Initials, finals, and combinations' },
@@ -253,7 +193,7 @@ export default function HomeScreen({
       title: 'Chinese Characters – Discover the Writing System',
       tagline: 'Explore the world of Chinese characters! ✨',
       body: 'Learn strokes, radicals, and basic characters step by step. Start reading and writing the building blocks of Chinese.',
-      color: '#1DD1A1',
+      color: SUCCESS,
       bullets: [
         { icon: '✏️', text: 'Stroke order & writing technique' },
         { icon: '🧩', text: 'Radicals — the building blocks' },
@@ -266,6 +206,13 @@ export default function HomeScreen({
   const { result } = userData;
   const currentLevelConfig =
     LEVEL_CONFIG.find(l => l.id === result.recommendedLevel) || LEVEL_CONFIG[0];
+
+  const todayMessage = (() => {
+    const day = new Date().getDay(); // 0 (Sun) – 6 (Sat)
+    const levelPool = LEVEL_QUOTES[result.recommendedLevel] || LEVEL_QUOTES.hsk1;
+    const msgs = levelPool[avatarId] || levelPool.eileen;
+    return msgs[day];
+  })();
 
   const isHsk3Plus = currentLevelConfig.number >= 3;
 
@@ -332,7 +279,7 @@ export default function HomeScreen({
         </View>
 
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-          <View style={[styles.levelDetailBadge, { backgroundColor: selectedLevel.color + '22', borderColor: selectedLevel.color }]}>
+          <View style={[styles.levelDetailBadge, { borderColor: selectedLevel.color }]}>
             <Text style={styles.levelDetailEmoji}>{selectedLevel.emoji}</Text>
             <View>
               <Text style={[styles.levelDetailTitle, { color: selectedLevel.color }]}>
@@ -341,6 +288,11 @@ export default function HomeScreen({
               <Text style={styles.levelDetailSubtitle}>{selectedLevel.subtitle}</Text>
             </View>
           </View>
+
+          {/* Level welcome — only on current level */}
+          {selectedLevel.id === result.recommendedLevel && LEVEL_WELCOME[selectedLevel.id] && (
+            <Text style={[styles.levelWelcome, { color: selectedLevel.welcomeColor }]}>{LEVEL_WELCOME[selectedLevel.id]}</Text>
+          )}
 
           {/* Progress bar */}
           {(() => {
@@ -378,14 +330,14 @@ export default function HomeScreen({
                 onPress={() => onLessonPress(selectedLevel.id, lesson.id)}
                 activeOpacity={0.7}
               >
-                <View style={[styles.lessonNumber, { backgroundColor: selectedLevel.color + '33' }]}>
-                  <Text style={[styles.lessonNumberText, { color: selectedLevel.color }]}>{lesson.id}</Text>
+                <View style={[styles.lessonNumber, { backgroundColor: selectedLevel.color }]}>
+                  <Text style={[styles.lessonNumberText, { color: CARD_WHITE }]}>{lesson.id}</Text>
                 </View>
                 <View style={styles.lessonInfo}>
                   <Text style={styles.lessonTitle}>{lesson.title}</Text>
                   <Text style={styles.lessonChinese}>{lesson.topic_chinese}</Text>
                 </View>
-                <Text style={[styles.lessonArrow, isDone && { color: '#1DD1A1' }]}>
+                <Text style={[styles.lessonArrow, isDone && { color: SUCCESS }]}>
                   {isDone ? '✓' : '→'}
                 </Text>
               </TouchableOpacity>
@@ -437,7 +389,7 @@ export default function HomeScreen({
             <Text style={styles.greeting}>你好！Hello!</Text>
             <Text style={styles.subtitle}>Ready to learn Chinese?</Text>
           </View>
-          <View style={[styles.levelBadge, { backgroundColor: currentLevelConfig.color + '22', borderColor: currentLevelConfig.color }]}>
+          <View style={[styles.levelBadge, { borderColor: currentLevelConfig.color }]}>
             <Text style={styles.levelBadgeEmoji}>{currentLevelConfig.emoji}</Text>
             <Text style={[styles.levelBadgeText, { color: currentLevelConfig.color }]}>
               Lv {currentLevelConfig.number}
@@ -495,6 +447,7 @@ export default function HomeScreen({
               <Text style={[styles.foundationEmoji, isHsk3Plus && styles.foundationEmojiDimmed]}>🔊</Text>
               <Text style={[styles.foundationTitle, isHsk3Plus && styles.foundationTitleDimmed]}>Pinyin</Text>
               <Text style={[styles.foundationSubtitle, isHsk3Plus && styles.foundationSubtitleDimmed]}>Sound System</Text>
+              <Text style={[styles.foundationPoetic, isHsk3Plus && styles.foundationSubtitleDimmed]}>The path you walk</Text>
               {isHsk3Plus && <Text style={styles.foundationLevelTag}>HSK 1–2</Text>}
             </TouchableOpacity>
             {/* Characters card — highlighted for HSK3+ */}
@@ -506,6 +459,7 @@ export default function HomeScreen({
               <Text style={styles.foundationEmoji}>✍️</Text>
               <Text style={styles.foundationTitle}>Characters</Text>
               <Text style={styles.foundationSubtitle}>Writing System</Text>
+              <Text style={styles.foundationPoetic}>The structure you build</Text>
               {isHsk3Plus && <Text style={styles.foundationRecommendedTag}>Recommended ✦</Text>}
             </TouchableOpacity>
           </View>
@@ -520,7 +474,7 @@ export default function HomeScreen({
             const isLocked = isComingSoon || !levelState.unlockedLevels.includes(level.id);
             const isCompleted = levelState.completedLevels.includes(level.id);
             const isLast = index === LEVEL_CONFIG.length - 1;
-            const dotColor = isCompleted ? '#1DD1A1' : isLocked ? '#2d3436' : level.color;
+            const dotColor = isCompleted ? SUCCESS : isLocked ? SLATE_TEAL : level.color;
 
             return (
               <View key={level.id} style={styles.pathRow}>
@@ -530,25 +484,26 @@ export default function HomeScreen({
                     {isCompleted && <Text style={styles.pathDotCheck}>✓</Text>}
                     {isCurrent && !isCompleted && <View style={[styles.pathDotInner, { backgroundColor: level.color }]} />}
                   </View>
-                  {!isLast && <View style={[styles.pathLine, { backgroundColor: isCompleted ? '#1DD1A1' : '#2d3436' }]} />}
+                  {!isLast && <View style={[styles.pathLine, { backgroundColor: isCompleted ? SUCCESS : SLATE_TEAL }]} />}
                 </View>
 
                 {/* Card */}
                 <TouchableOpacity
                   style={[
                     styles.pathCard,
-                    isCurrent && { backgroundColor: level.color + '15', borderColor: level.color },
-                    isCompleted && { borderColor: '#1DD1A1' + '88' },
+                    isCurrent && { backgroundColor: CARD_WHITE, borderColor: level.color, borderWidth: 2 },
+                    isCompleted && { borderColor: SUCCESS + '88' },
                   ]}
                   onPress={() => handleLevelPress(level)}
                   activeOpacity={0.8}
                 >
                   <Text style={[styles.pathEmoji, isLocked && !isComingSoon && styles.dimmed]}>{level.emoji}</Text>
                   <View style={styles.pathInfo}>
-                    <Text style={[styles.pathLevelNum, { color: isLocked ? '#636e72' : level.color }]}>
+                    <Text style={[styles.pathLevelNum, { color: isLocked ? SLATE_TEAL : level.color }]}>
                       Level {level.number}
                     </Text>
                     <Text style={[styles.pathTitle, isLocked && !isComingSoon && styles.dimmed]}>{level.title}</Text>
+                    <Text style={styles.pathTagline}>{level.tagline}</Text>
                   </View>
                   <View style={styles.pathStatusCol}>
                     {isCurrent && !isCompleted && (
@@ -745,22 +700,22 @@ export default function HomeScreen({
   );
 }
 
-// ── Canvas-friendly palette — warm golden oil-paint background ────────────────
+// ── Canvas palette — painting background, white cards, dark readable text ────────
 const VG = {
-  bg:           'transparent',   // canvas handles background
-  card:         '#FFFFFF',       // clean white cards
-  cardElevated: '#FFFDF5',       // near-white elevated
-  yellow:       '#F4C542',
-  gold:         '#A07010',       // darker gold, readable on canvas
-  orange:       '#C8790A',
-  cream:        '#1C1A00',       // dark near-black — primary text on canvas
-  creamMid:     '#5A4020',       // medium dark warm — secondary text
-  creamMuted:   '#7A5530',       // muted text on canvas
-  success:      '#2D7A4A',
-  border:        'rgba(80,50,0,0.15)',
-  borderMid:     'rgba(80,50,0,0.28)',
-  borderStrong:  'rgba(80,50,0,0.50)',
-  overlay:       'rgba(20,10,0,0.88)',
+  bg:           'transparent',
+  card:         CARD_WHITE,
+  cardElevated: CARD_WHITE,
+  yellow:       WARM_ORANGE,
+  gold:         WARM_BROWN,
+  orange:       WARM_ORANGE,
+  cream:        DEEP_NAVY,
+  creamMid:     SLATE_TEAL,
+  creamMuted:   SLATE_TEAL,
+  success:      SUCCESS,
+  border:        'rgba(155,104,70,0.18)',
+  borderMid:     'rgba(155,104,70,0.32)',
+  borderStrong:  'rgba(155,104,70,0.55)',
+  overlay:       'rgba(28,42,68,0.88)',
 };
 
 const styles = StyleSheet.create({
@@ -769,6 +724,7 @@ const styles = StyleSheet.create({
   topHeader:        {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
     paddingHorizontal: 20, paddingVertical: 13,
+    backgroundColor: CARD_WHITE,
     borderBottomWidth: 1, borderBottomColor: VG.border,
   },
   menuButton:       { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
@@ -778,17 +734,17 @@ const styles = StyleSheet.create({
   contentContainer: { padding: 20 },
 
   // ── Home hub header ────────────────────────────────────────────────────────
-  header:           { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 },
-  greeting:         { fontSize: 28, fontWeight: '900', color: VG.cream, marginBottom: 4 },
+  header:           { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16, backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16 },
+  greeting:         { fontSize: 26, fontWeight: '900', color: VG.cream, marginBottom: 4 },
   subtitle:         { fontSize: 14, color: VG.creamMuted },
-  levelBadge:       { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 12, paddingVertical: 8, borderRadius: 12, borderWidth: 2, gap: 6 },
+  levelBadge:       { flexDirection: 'row', alignItems: 'center', paddingHorizontal: 12, paddingVertical: 8, borderRadius: 12, borderWidth: 2, gap: 6, backgroundColor: CARD_WHITE },
   levelBadgeEmoji:  { fontSize: 20 },
   levelBadgeText:   { fontSize: 16, fontWeight: '800' },
 
   // ── Avatar section ─────────────────────────────────────────────────────────
   avatarSection:    { alignItems: 'center', marginBottom: 24, gap: 12 },
   avatarMessageBubble: {
-    backgroundColor: 'rgba(255,255,255,0.80)',
+    backgroundColor: CARD_WHITE,
     borderRadius: 16,
     borderWidth: 1,
     borderColor: VG.borderMid,
@@ -808,13 +764,13 @@ const styles = StyleSheet.create({
   statsRow:     { flexDirection: 'row', gap: 12 },
   statBadge: {
     flexDirection: 'row', alignItems: 'center', gap: 5,
-    backgroundColor: 'rgba(255,255,255,0.75)',
+    backgroundColor: CARD_WHITE,
     borderRadius: 20, borderWidth: 1,
     borderColor: 'rgba(80,50,0,0.20)',
     paddingHorizontal: 14, paddingVertical: 7,
   },
   statBadgeXP: {
-    backgroundColor: 'rgba(255,255,255,0.75)',
+    backgroundColor: CARD_WHITE,
     borderColor: 'rgba(80,50,0,0.20)',
   },
   statBadgeIcon:  { fontSize: 16 },
@@ -823,22 +779,27 @@ const styles = StyleSheet.create({
 
   // ── Section headings ───────────────────────────────────────────────────────
   section:      { marginBottom: 28 },
-  sectionTitle: { fontSize: 18, fontWeight: '800', color: VG.cream, marginBottom: 14, letterSpacing: 0.2 },
+  sectionTitle: {
+    fontSize: 18, fontWeight: '800', color: VG.cream, marginBottom: 14, letterSpacing: 0.2,
+    backgroundColor: CARD_WHITE, paddingHorizontal: 14, paddingVertical: 8,
+    borderRadius: 10, alignSelf: 'flex-start',
+  },
 
   // ── Chinese Foundations cards ──────────────────────────────────────────────
   foundationsRow:            { flexDirection: 'row', gap: 12 },
   foundationCard:            { flex: 1, backgroundColor: VG.card, borderRadius: 20, padding: 20, alignItems: 'center', borderWidth: 1, borderColor: VG.border },
-  foundationCardDimmed:      { opacity: 0.45 },
-  foundationCardHighlighted: { borderColor: VG.gold, backgroundColor: 'rgba(224,176,75,0.09)' },
+  foundationCardDimmed:      { opacity: 0.65 },
+  foundationCardHighlighted: { borderColor: VG.gold, backgroundColor: CARD_WHITE },
   foundationEmoji:           { fontSize: 32, marginBottom: 8 },
   foundationEmojiDimmed:     { opacity: 0.5 },
   foundationTitle:           { fontSize: 15, fontWeight: '800', color: VG.cream, marginBottom: 4 },
   foundationTitleDimmed:     { color: VG.creamMuted },
   foundationSubtitle:        { fontSize: 12, color: VG.creamMuted, textAlign: 'center' },
-  foundationSubtitleDimmed:  { color: '#5A5040' },
+  foundationPoetic:          { fontSize: 11, color: VG.creamMuted, textAlign: 'center', fontStyle: 'italic', marginTop: 4 },
+  foundationSubtitleDimmed:  { color: SLATE_TEAL },
   foundationLevelTag:        {
-    marginTop: 8, fontSize: 10, fontWeight: '700', color: VG.creamMuted,
-    backgroundColor: 'rgba(0,0,0,0.07)',
+    marginTop: 8, fontSize: 10, fontWeight: '700', color: SLATE_TEAL,
+    backgroundColor: 'rgba(55,73,80,0.15)',
     paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6,
   },
   foundationRecommendedTag:  {
@@ -846,7 +807,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(224,176,75,0.16)',
     paddingHorizontal: 8, paddingVertical: 3, borderRadius: 6,
   },
-  menuItemDimmed:            { opacity: 0.5 },
+  menuItemDimmed:            { opacity: 0.65 },
   menuItemTextDimmed:        { color: VG.creamMuted },
   menuItemHighlighted:       { borderLeftWidth: 3, borderLeftColor: VG.gold },
 
@@ -866,17 +827,18 @@ const styles = StyleSheet.create({
   pathInfo:           { flex: 1 },
   pathLevelNum:       { fontSize: 12, fontWeight: '800', letterSpacing: 0.5, marginBottom: 2 },
   pathTitle:          { fontSize: 15, fontWeight: '700', color: VG.cream },
+  pathTagline:        { fontSize: 11, fontWeight: '500', color: SLATE_TEAL, marginTop: 2, fontStyle: 'italic' },
   pathStatusCol:      { alignItems: 'flex-end', minWidth: 70 },
   pathCurrentLabel:   { fontSize: 11, fontWeight: '800' },
   pathCompletedLabel: { fontSize: 11, fontWeight: '700', color: VG.success },
   pathSoonLabel:      {
-    fontSize: 10, fontWeight: '700', color: VG.creamMuted,
-    backgroundColor: 'rgba(0,0,0,0.08)',
+    fontSize: 10, fontWeight: '700', color: SLATE_TEAL,
+    backgroundColor: 'rgba(55,73,80,0.15)',
     paddingHorizontal: 6, paddingVertical: 2, borderRadius: 6,
   },
   pathLockIcon:       { fontSize: 14 },
-  dimmed:             { opacity: 0.4 },
-  menuItemDisabled:   { opacity: 0.5 },
+  dimmed:             { opacity: 0.6 },
+  menuItemDisabled:   { opacity: 0.65 },
   menuItemTextDisabled: { color: VG.creamMuted },
 
   // ── Level lessons view ─────────────────────────────────────────────────────
@@ -887,13 +849,14 @@ const styles = StyleSheet.create({
   levelDetailEmoji:    { fontSize: 40 },
   levelDetailTitle:    { fontSize: 18, fontWeight: '800', marginBottom: 3 },
   levelDetailSubtitle: { fontSize: 13, color: VG.creamMuted },
+  levelWelcome: { fontSize: 15, fontStyle: 'italic', textAlign: 'center', marginBottom: 12, paddingHorizontal: 8 },
 
   // ── Progress bar ───────────────────────────────────────────────────────────
   progressSection:  { backgroundColor: VG.card, borderRadius: 16, padding: 16, marginBottom: 20, borderWidth: 1, borderColor: VG.border },
   progressHeader:   { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 },
   progressTitle:    { fontSize: 14, fontWeight: '700', color: VG.cream },
   progressCount:    { fontSize: 13, fontWeight: '800' },
-  progressBarBg:    { height: 8, backgroundColor: 'rgba(0,0,0,0.10)', borderRadius: 4, overflow: 'hidden', marginBottom: 8 },
+  progressBarBg:    { height: 8, backgroundColor: 'rgba(55,73,80,0.18)', borderRadius: 4, overflow: 'hidden', marginBottom: 8 },
   progressBarFill:  { height: '100%', borderRadius: 4 },
   progressWords:    { fontSize: 13, color: VG.creamMuted, textAlign: 'right' },
 
@@ -936,7 +899,7 @@ const styles = StyleSheet.create({
   menuLevelCard:     {
     flexDirection: 'row', alignItems: 'center',
     margin: 20, padding: 16,
-    backgroundColor: 'rgba(244,197,66,0.06)',
+    backgroundColor: CARD_WHITE,
     borderRadius: 16, borderWidth: 2, gap: 12,
   },
   menuLevelEmoji:    { fontSize: 32 },

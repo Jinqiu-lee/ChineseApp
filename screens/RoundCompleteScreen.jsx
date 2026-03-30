@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import WaveBackground from '../components/WaveBackground';
 import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
 
 const ROUND_LABELS = { 1: 'Round 1 · Learn', 2: 'Round 2 · Practice', 3: 'Round 3 · Master' };
 const ROUND_EMOJIS = { 1: '🎉', 2: '🌟', 3: '🏆' };
@@ -31,9 +32,11 @@ export default function RoundCompleteScreen({
       <View style={styles.container}>
 
         {/* Header */}
-        <Text style={styles.emoji}>{ROUND_EMOJIS[currentRound]}</Text>
-        <Text style={[styles.title, { color: T.onBg }]}>{ROUND_LABELS[currentRound]} Complete!</Text>
-        <Text style={styles.stars}>{'⭐'.repeat(stars)}</Text>
+        <View style={styles.headerCard}>
+          <Text style={styles.emoji}>{ROUND_EMOJIS[currentRound]}</Text>
+          <Text style={[styles.title, { color: T.onBg }]}>{ROUND_LABELS[currentRound]} Complete!</Text>
+          <Text style={styles.stars}>{'⭐'.repeat(stars)}</Text>
+        </View>
 
         {/* Score card */}
         <View style={[styles.scoreCard, { backgroundColor: T.card, shadowColor: T.shadow }]}>
@@ -54,13 +57,19 @@ export default function RoundCompleteScreen({
 
         {/* Message */}
         {currentRound === 3 && (
-          <Text style={[styles.message, { color: T.onBgMuted }]}>Outstanding! You've mastered all 3 rounds! 💪</Text>
+          <View style={styles.messageCard}>
+            <Text style={[styles.message, { color: T.onBg }]}>Outstanding! You've mastered all 3 rounds! 💪</Text>
+          </View>
         )}
         {currentRound === 2 && highAccuracy && (
-          <Text style={[styles.message, { color: T.onBgMuted }]}>Excellent work! You can take the quiz now or keep practicing.</Text>
+          <View style={styles.messageCard}>
+            <Text style={[styles.message, { color: T.onBg }]}>Excellent work! You can take the quiz now or keep practicing.</Text>
+          </View>
         )}
         {currentRound === 2 && !highAccuracy && (
-          <Text style={[styles.message, { color: T.onBgMuted }]}>Great effort! One more round to solidify your skills.</Text>
+          <View style={styles.messageCard}>
+            <Text style={[styles.message, { color: T.onBg }]}>Great effort! One more round to solidify your skills.</Text>
+          </View>
         )}
 
         {/* Action buttons */}
@@ -94,12 +103,12 @@ export default function RoundCompleteScreen({
 }
 
 const VG = {
-  bg: '#1C2A44', card: '#F5EDD8',
-  onCard: '#1C2A44', onCardMid: '#5C4A2A', onCardMuted: '#9A8A6A',
-  yellow: '#F4C542', gold: '#E0B04B', orange: '#D98C2B',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  success: '#5A9E5A',
-  border: 'rgba(244,197,66,0.15)', shadow: '#A0700A',
+  bg: 'transparent', card: CARD_WHITE,
+  onCard: DEEP_NAVY, onCardMid: WARM_BROWN, onCardMuted: WARM_BROWN,
+  yellow: WARM_ORANGE, gold: WARM_BROWN, orange: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  success: SUCCESS,
+  border: 'rgba(155,104,70,0.18)', shadow: 'rgba(28,42,68,0.18)',
 };
 
 const styles = StyleSheet.create({
@@ -109,9 +118,18 @@ const styles = StyleSheet.create({
     padding: 32, gap: 16,
   },
 
-  emoji: { fontSize: 56, marginBottom: 4 },
+  headerCard: {
+    backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20,
+    alignItems: 'center', width: '100%', gap: 4,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
+  },
+  emoji: { fontSize: 56 },
   title: { fontSize: 26, fontWeight: '900', color: VG.cream, textAlign: 'center' },
-  stars: { fontSize: 36, marginBottom: 4 },
+  stars: { fontSize: 36 },
+  messageCard: {
+    backgroundColor: CARD_WHITE, borderRadius: 14,
+    paddingHorizontal: 18, paddingVertical: 12, width: '100%',
+  },
 
   // ── Score card — warm cream glow ──────────────────────────────────────────
   scoreCard: {
@@ -130,7 +148,7 @@ const styles = StyleSheet.create({
 
   combinedRow: {
     flexDirection: 'row', alignItems: 'center', gap: 8,
-    backgroundColor: 'rgba(244,197,66,0.07)',
+    backgroundColor: CARD_WHITE,
     borderRadius: 12, paddingHorizontal: 16, paddingVertical: 10,
     width: '100%', justifyContent: 'space-between',
     borderWidth: 1, borderColor: VG.border,
@@ -138,7 +156,7 @@ const styles = StyleSheet.create({
   combinedLabel: { fontSize: 14, color: VG.creamMuted, fontWeight: '600' },
   combinedPct:   { fontSize: 18, fontWeight: '900' },
 
-  message: { fontSize: 15, color: VG.creamMuted, textAlign: 'center', lineHeight: 22 },
+  message: { fontSize: 15, color: VG.onCard, textAlign: 'center', lineHeight: 22 },
 
   actions: { width: '100%', gap: 12, marginTop: 8 },
 

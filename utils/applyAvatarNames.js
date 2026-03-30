@@ -113,6 +113,7 @@ export const NAME_LOOKUP = {
   '苏轼':  { pinyin: 'Sū Shì',     english: 'Su Shi'     },
   '萨特':  { pinyin: 'Sà Tè',      english: 'Sartre'     },
   '波伏娃':{ pinyin: 'Bō Fú Wá',   english: 'de Beauvoir'},
+  '西蒙娜':{ pinyin: 'Xī Méng Nà', english: 'Simone'     },
   '伍尔夫':{ pinyin: 'Wǔ Ěr Fū',   english: 'Woolf'      },
   '严歌苓':{ pinyin: 'Yán Gē Líng',english: 'Yan Geling' },
 };

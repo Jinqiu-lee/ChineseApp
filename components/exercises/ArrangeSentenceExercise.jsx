@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 
 export default function ArrangeSentenceExercise({ exercise, onCorrect, onWrong }) {
   const { correctTokens, shuffledTokens, token_pinyin_map = {}, hint } = exercise;
@@ -113,20 +114,20 @@ export default function ArrangeSentenceExercise({ exercise, onCorrect, onWrong }
 }
 
 const VG = {
-  bg: '#1C2A44', card: '#F5EDD8', cardDark: '#243454',
-  onCard: '#1C2A44', onCardMuted: '#9A8A6A',
-  yellow: '#F4C542', gold: '#E0B04B', orange: '#D98C2B',
-  cream: '#F7F3E9', creamMuted: '#8A7E6E',
-  success: '#5A9E5A', error: '#C4503A',
-  border: 'rgba(244,197,66,0.22)', shadow: '#A0700A',
+  bg: 'transparent', card: CARD_WHITE, cardDark: CARD_WHITE,
+  onCard: DEEP_NAVY, onCardMuted: WARM_BROWN,
+  yellow: WARM_ORANGE, gold: WARM_BROWN, orange: WARM_ORANGE,
+  cream: DEEP_NAVY, creamMuted: SLATE_TEAL,
+  success: SUCCESS, error: ERROR,
+  border: 'rgba(155,104,70,0.22)', shadow: 'rgba(28,42,68,0.18)',
 };
 
 const styles = StyleSheet.create({
   container: { flex: 1, paddingTop: 8, paddingHorizontal: 8 },
-  topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 },
+  topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16, backgroundColor: CARD_WHITE, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 10 },
   instruction: { fontSize: 17, fontWeight: '700', color: VG.cream },
   pinyinToggle: { paddingHorizontal: 12, paddingVertical: 6, borderRadius: 10, borderWidth: 1.5, borderColor: VG.border, backgroundColor: VG.cardDark },
-  pinyinToggleOn: { borderColor: VG.gold, backgroundColor: 'rgba(224,176,75,0.15)' },
+  pinyinToggleOn: { borderColor: VG.gold, backgroundColor: '#FFF8ED' },
   pinyinToggleText: { fontSize: 13, fontWeight: '600', color: VG.creamMuted },
   pinyinToggleTextOn: { color: VG.gold },
   hint: { fontSize: 13, color: VG.creamMuted, fontStyle: 'italic', marginBottom: 16 },
@@ -145,7 +146,7 @@ const styles = StyleSheet.create({
   tile: { backgroundColor: VG.card, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 10, borderWidth: 1.5, borderColor: 'rgba(217,140,43,0.3)', alignItems: 'center',
     shadowColor: VG.shadow, shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.12, shadowRadius: 6, elevation: 3,
   },
-  tileInTray:  { borderWidth: 2, borderColor: VG.gold, backgroundColor: 'rgba(224,176,75,0.15)' },
+  tileInTray:  { borderWidth: 2, borderColor: VG.gold, backgroundColor: '#FFF8ED' },
   tilePlaced:  { backgroundColor: VG.cardDark, borderColor: VG.border },
   tileSuccess: { backgroundColor: VG.success, borderColor: VG.success },
   tileFail:    { backgroundColor: VG.error,   borderColor: VG.error },

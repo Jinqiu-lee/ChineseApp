@@ -1,45 +1,47 @@
 import { useState, useRef } from "react";
 import {
   View, Text, TouchableOpacity, StyleSheet,
-  ScrollView, TextInput, Animated, Modal,
+  ScrollView, TextInput, Animated, Modal, StatusBar,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
   BASIC_QUESTIONS_ADULT,
   ADVANCED_QUESTIONS, getPlacementResult,
 } from "../data/placementQuestions";
+import ScreenBackground from "../components/ScreenBackground";
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from "../constants/colors";
 
 const LEVELS_MANUAL = [
-  { id: "hsk1", label: "Level 1 – Beginner",             badge: "🌱", color: "#00D2D3", desc: "Complete beginner, starting from scratch" },
-  { id: "hsk2", label: "Level 2 – Explorer",             badge: "🚶", color: "#54A0FF", desc: "Know basics, ready to build vocabulary" },
-  { id: "hsk3", label: "Level 3 – Conversation Builder", badge: "🗣",  color: "#1DD1A1", desc: "Can hold simple conversations" },
-  { id: "hsk4", label: "Level 4 – Confident Speaker",    badge: "🌟", color: "#FF9F43", desc: "Comfortable with everyday Chinese" },
-  { id: "hsk5", label: "Level 5 – Communicator",         badge: "🔥", color: "#a29bfe", desc: "Advanced, near-fluent communication" },
-  { id: "hsk6", label: "Level 6 – Advanced",             badge: "🎓", color: "#fd79a8", desc: "Coming soon!", comingSoon: true },
+  { id: "hsk1", label: "Level 1 – Beginner",             badge: "🌻", color: "#9B6846", desc: "Complete beginner, starting from scratch" },
+  { id: "hsk2", label: "Level 2 – Explorer",             badge: "☕", color: "#E8522A", desc: "Know basics, ready to build vocabulary" },
+  { id: "hsk3", label: "Level 3 – Conversation Builder", badge: "🌾", color: "#0c6e16", desc: "Can hold simple conversations" },
+  { id: "hsk4", label: "Level 4 – Confident Speaker",    badge: "🏡", color: "#BE7A62", desc: "Comfortable with everyday Chinese" },
+  { id: "hsk5", label: "Level 5 – Communicator",         badge: "🌌", color: "#384fa3", desc: "Advanced, near-fluent communication" },
+  { id: "hsk6", label: "Level 6 – Advanced",             badge: "🌼", color: "#374950", desc: "Coming soon!", comingSoon: true },
 ];
 
 const MANUAL_RANK_MAP = {
-  hsk1: { level: "Beginner",             levelChinese: "初级", badge: "🌱", color: "#00D2D3", recommendedLevel: "hsk1", recommendedLabel: "Level 1 – Beginner",             message: "Great! We'll start you at Level 1 – Beginner." },
-  hsk2: { level: "Explorer",             levelChinese: "基础", badge: "🚶", color: "#54A0FF", recommendedLevel: "hsk2", recommendedLabel: "Level 2 – Explorer",             message: "Great! We'll start you at Level 2 – Explorer." },
-  hsk3: { level: "Conversation Builder", levelChinese: "中级", badge: "🗣",  color: "#1DD1A1", recommendedLevel: "hsk3", recommendedLabel: "Level 3 – Conversation Builder", message: "Great! We'll start you at Level 3 – Conversation Builder." },
-  hsk4: { level: "Confident Speaker",    levelChinese: "高级", badge: "🌟", color: "#FF9F43", recommendedLevel: "hsk4", recommendedLabel: "Level 4 – Confident Speaker",    message: "Great! We'll start you at Level 4 – Confident Speaker." },
-  hsk5: { level: "Communicator",         levelChinese: "精通", badge: "🔥", color: "#a29bfe", recommendedLevel: "hsk5", recommendedLabel: "Level 5 – Communicator",         message: "Great! We'll start you at Level 5 – Communicator." },
-  hsk6: { level: "Advanced",             levelChinese: "高端", badge: "🎓", color: "#fd79a8", recommendedLevel: "hsk6", recommendedLabel: "Level 6 – Advanced",             message: "Level 6 is coming soon!", comingSoon: true },
+  hsk1: { level: "Beginner",             levelChinese: "初级", badge: "🌻", color: "#9B6846", recommendedLevel: "hsk1", recommendedLabel: "Level 1 – Beginner",             message: "Great! We'll start you at Level 1 – Beginner." },
+  hsk2: { level: "Explorer",             levelChinese: "基础", badge: "☕", color: "#E8522A", recommendedLevel: "hsk2", recommendedLabel: "Level 2 – Explorer",             message: "Great! We'll start you at Level 2 – Explorer." },
+  hsk3: { level: "Conversation Builder", levelChinese: "中级", badge: "🌾", color: "#0c6e16", recommendedLevel: "hsk3", recommendedLabel: "Level 3 – Conversation Builder", message: "Great! We'll start you at Level 3 – Conversation Builder." },
+  hsk4: { level: "Confident Speaker",    levelChinese: "高级", badge: "🏡", color: "#BE7A62", recommendedLevel: "hsk4", recommendedLabel: "Level 4 – Confident Speaker",    message: "Great! We'll start you at Level 4 – Confident Speaker." },
+  hsk5: { level: "Communicator",         levelChinese: "精通", badge: "🌌", color: "#384fa3", recommendedLevel: "hsk5", recommendedLabel: "Level 5 – Communicator",         message: "Great! We'll start you at Level 5 – Communicator." },
+  hsk6: { level: "Advanced",             levelChinese: "高端", badge: "🌼", color: "#374950", recommendedLevel: "hsk6", recommendedLabel: "Level 6 – Advanced",             message: "Level 6 is coming soon!", comingSoon: true },
 };
 
 // ── CEFR level details (for results screen & levels panel) ───────
 const LEVEL_DETAILS = [
-  { id: "hsk1", number: 1, cefrLabel: "Beginner",           cefr: "A1",  emoji: "🌱", color: "#00D2D3",
+  { id: "hsk1", number: 1, cefrLabel: "Beginner",           cefr: "A1",  emoji: "🌻", color: "#9B6846",
     willLearn: ["Introduce yourself in Chinese", "Use basic greetings and farewells", "Count numbers and tell the time", "Understand ~150 Chinese words"] },
-  { id: "hsk2", number: 2, cefrLabel: "Elementary",         cefr: "A1",  emoji: "🚶", color: "#54A0FF",
+  { id: "hsk2", number: 2, cefrLabel: "Elementary",         cefr: "A1",  emoji: "☕", color: "#E8522A",
     willLearn: ["Talk about daily life and simple activities", "Understand short conversations", "Vocabulary: 250–300 words"] },
-  { id: "hsk3", number: 3, cefrLabel: "Lower Intermediate", cefr: "A2",  emoji: "🗣",  color: "#1DD1A1",
+  { id: "hsk3", number: 3, cefrLabel: "Lower Intermediate", cefr: "A2",  emoji: "🌾", color: "#0c6e16",
     willLearn: ["Talk about plans, experiences, and opinions", "Hold longer conversations", "Vocabulary: 500–600 words"] },
-  { id: "hsk4", number: 4, cefrLabel: "Intermediate",       cefr: "B1",  emoji: "🌟", color: "#FF9F43",
+  { id: "hsk4", number: 4, cefrLabel: "Intermediate",       cefr: "B1",  emoji: "🏡", color: "#BE7A62",
     willLearn: ["Discuss work, travel, and study", "Understand longer conversations", "Vocabulary: 800–900 words"] },
-  { id: "hsk5", number: 5, cefrLabel: "Upper Intermediate", cefr: "B1+", emoji: "🔥", color: "#a29bfe",
+  { id: "hsk5", number: 5, cefrLabel: "Upper Intermediate", cefr: "B1+", emoji: "🌌", color: "#384fa3",
     willLearn: ["Discuss love, friendship, careers, and health", "Interact with more complex topics", "Vocabulary: ~1,200 words"] },
-  { id: "hsk6", number: 6, cefrLabel: "Advanced",           cefr: "B2",  emoji: "🎓", color: "#fd79a8",
+  { id: "hsk6", number: 6, cefrLabel: "Advanced",           cefr: "B2",  emoji: "🌼", color: "#374950",
     willLearn: ["Read Chinese newspapers and novels", "Watch Chinese films without subtitles", "Communicate fluently with native speakers", "Use 2,500+ Chinese words"] },
 ];
 const LEVEL_DETAILS_MAP = Object.fromEntries(LEVEL_DETAILS.map(l => [l.id, l]));
@@ -52,9 +54,9 @@ const STEP_RESULTS= "results";
 
 // ── Type badge labels ─────────────────────────────────────────────
 const TYPE_LABELS = {
-  mc:     { label: "💬 Multiple Choice", bg: "rgba(84,160,255,0.2)" },
-  match:  { label: "🔤 Character Match",  bg: "rgba(29,209,161,0.2)" },
-  pinyin: { label: "🔈 Pinyin",           bg: "rgba(162,155,254,0.2)" },
+  mc:     { label: "💬 Multiple Choice", bg: "#e8f4ff" },
+  match:  { label: "🔤 Character Match",  bg: "#e8faf4" },
+  pinyin: { label: "🔈 Pinyin",           bg: "#f0eeff" },
 };
 
 export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
@@ -149,7 +151,9 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
   const totalQ = questions.length;
 
   return (
-    <SafeAreaView style={s.safe}>
+    <ScreenBackground levelId="default">
+      <SafeAreaView style={s.safe}>
+        <StatusBar barStyle="dark-content" />
       <Animated.View style={[s.container, { opacity: fadeAnim }]}>
 
         {/* ── AGE ── */}
@@ -215,8 +219,10 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
             <TouchableOpacity onPress={() => fade(() => setStep(STEP_PATH))}>
               <Text style={s.backBtn}>← Back</Text>
             </TouchableOpacity>
-            <Text style={s.title}>Choose Your Level</Text>
-            <Text style={s.subtitle}>Pick the level that best matches you</Text>
+            <View style={s.titleCard}>
+              <Text style={s.title}>Choose Your Level</Text>
+              <Text style={s.subtitle}>Pick the level that best matches you</Text>
+            </View>
             {LEVELS_MANUAL.map((lvl) => (
               <TouchableOpacity key={lvl.id} style={[s.levelCard, { borderColor: lvl.comingSoon ? "#2d3436" : lvl.color }, lvl.comingSoon && s.levelCardDimmed]} onPress={() => handleManualPick(lvl)} activeOpacity={0.8}>
                 <Text style={s.levelEmoji}>{lvl.badge}</Text>
@@ -374,9 +380,11 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
               >
                 <Text style={s.backBtn}>← Back</Text>
               </TouchableOpacity>
-              <Text style={s.testCompleteTitle}>
-                {result.source === "test" ? "🎉 Test Complete!" : "🎉 Great Choice!"}
-              </Text>
+              <View style={s.titleCard}>
+                <Text style={s.testCompleteTitle}>
+                  {result.source === "test" ? "🎉 Test Complete!" : "🎉 Great Choice!"}
+                </Text>
+              </View>
 
               {/* Main result card */}
               <View style={[s.resultCard2, { borderColor: detail.color }]}>
@@ -449,7 +457,7 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
                     key={lvl.id}
                     style={[
                       s.levelsItem,
-                      isCurrent && { backgroundColor: lvl.color + "18", borderColor: lvl.color },
+                      isCurrent && { backgroundColor: CARD_WHITE, borderColor: lvl.color, borderWidth: 2 },
                     ]}
                     onPress={() => isAdvanced && alert("🎓 Advanced level is coming soon!\n\nKeep working through the earlier levels. 加油！")}
                     activeOpacity={isAdvanced ? 0.7 : 1}
@@ -485,124 +493,119 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
         </View>
       </Modal>
 
-    </SafeAreaView>
+      </SafeAreaView>
+    </ScreenBackground>
   );
 }
 
 const s = StyleSheet.create({
-  safe:         { flex: 1, backgroundColor: "#1a1a2e" },
+  safe:         { flex: 1, backgroundColor: "transparent" },
   container:    { flex: 1 },
   centered:     { flexGrow: 1, alignItems: "center", justifyContent: "center", padding: 24 },
   scrollPad:    { padding: 24, paddingBottom: 48 },
   bigEmoji:     { fontSize: 64, marginBottom: 16 },
-  title:        { fontSize: 26, fontWeight: "800", color: "#fff", textAlign: "center", marginBottom: 8 },
-  subtitle:     { fontSize: 14, color: "#636e72", textAlign: "center", marginBottom: 28 },
-  label:        { fontSize: 16, fontWeight: "600", color: "#a29bfe", marginBottom: 10 },
-  input:        { backgroundColor: "#16213e", color: "#fff", fontSize: 22, fontWeight: "700", textAlign: "center", padding: 16, borderRadius: 16, width: "60%", marginBottom: 8, borderWidth: 2, borderColor: "#2d3436" },
+  title:        { fontSize: 26, fontWeight: "800", color: DEEP_NAVY, textAlign: "center", marginBottom: 8 },
+  subtitle:     { fontSize: 14, color: SLATE_TEAL, textAlign: "center", marginBottom: 28 },
+  label:        { fontSize: 16, fontWeight: "600", color: WARM_BROWN, marginBottom: 10 },
+  input:        { backgroundColor: CARD_WHITE, color: DEEP_NAVY, fontSize: 22, fontWeight: "700", textAlign: "center", padding: 16, borderRadius: 16, width: "60%", marginBottom: 8, borderWidth: 2, borderColor: "rgba(155,104,70,0.25)" },
   errorText:    { color: "#FF6B6B", fontSize: 13, marginBottom: 8 },
-  primaryBtn:   { backgroundColor: "#FF6B6B", paddingVertical: 16, paddingHorizontal: 40, borderRadius: 16, marginTop: 12 },
-  primaryBtnText:{ fontSize: 16, fontWeight: "800", color: "#fff" },
+  primaryBtn:   { backgroundColor: WARM_ORANGE, paddingVertical: 16, paddingHorizontal: 40, borderRadius: 16, marginTop: 12 },
+  primaryBtnText:{ fontSize: 16, fontWeight: "800", color: CARD_WHITE },
 
-  pathCard:     { flexDirection: "row", alignItems: "center", backgroundColor: "#16213e", borderRadius: 20, padding: 20, width: "100%", marginBottom: 12, borderWidth: 2, borderColor: "#FF6B6B" },
-  pathCardAlt:  { borderColor: "#54A0FF" },
+  pathCard:     { flexDirection: "row", alignItems: "center", backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20, width: "100%", marginBottom: 12, borderWidth: 2, borderColor: WARM_ORANGE },
+  pathCardAlt:  { borderColor: SLATE_TEAL },
   pathEmoji:    { fontSize: 32, marginRight: 14 },
   pathInfo:     { flex: 1 },
-  pathTitle:    { fontSize: 17, fontWeight: "800", color: "#fff", marginBottom: 4 },
-  pathDesc:     { fontSize: 12, color: "#636e72", lineHeight: 18 },
-  pathArrow:    { fontSize: 20, color: "#636e72" },
-  orDivider:    { color: "#636e72", fontSize: 13, marginVertical: 8 },
+  pathTitle:    { fontSize: 17, fontWeight: "800", color: DEEP_NAVY, marginBottom: 4 },
+  pathDesc:     { fontSize: 12, color: SLATE_TEAL, lineHeight: 18 },
+  pathArrow:    { fontSize: 20, color: WARM_BROWN },
+  orDivider:    { color: SLATE_TEAL, fontSize: 13, marginVertical: 8 },
 
+  titleCard:    { backgroundColor: CARD_WHITE, borderRadius: 16, paddingHorizontal: 20, paddingVertical: 14, width: "100%", alignItems: "center", marginBottom: 16 },
   pathBackBtn:  { alignSelf: "flex-start", marginBottom: 8 },
-  backBtn:      { color: "#636e72", fontSize: 15, fontWeight: "500", marginBottom: 16 },
-  levelCard:    { flexDirection: "row", alignItems: "center", backgroundColor: "#16213e", borderRadius: 16, padding: 16, marginBottom: 10, borderWidth: 2 },
-  levelCardDimmed: { opacity: 0.5 },
-  levelSoonTag: { fontSize: 10, fontWeight: "700", color: "#636e72", backgroundColor: "rgba(255,255,255,0.08)", paddingHorizontal: 7, paddingVertical: 3, borderRadius: 6 },
+  backBtn:      { color: DEEP_NAVY, fontSize: 15, fontWeight: "700", marginBottom: 16, backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 12, paddingVertical: 6 },
+  levelCard:    { flexDirection: "row", alignItems: "center", backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16, marginBottom: 10, borderWidth: 2 },
+  levelCardDimmed: { opacity: 0.65 },
+  levelSoonTag: { fontSize: 10, fontWeight: "700", color: SLATE_TEAL, backgroundColor: "#FFF8ED", paddingHorizontal: 7, paddingVertical: 3, borderRadius: 6 },
   levelEmoji:   { fontSize: 28, marginRight: 14, width: 40, textAlign: "center" },
   levelInfo:    { flex: 1 },
   levelLabel:   { fontSize: 18, fontWeight: "800" },
-  levelDesc:    { fontSize: 12, color: "#636e72", marginTop: 2 },
+  levelDesc:    { fontSize: 12, color: SLATE_TEAL, marginTop: 2 },
   levelArrow:   { fontSize: 18, fontWeight: "700" },
 
-  // Test header — FIX 1
   testContainer:  { flex: 1 },
-  testHeader:     { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 16, paddingTop: 12, paddingBottom: 6 },
+  testHeader:     { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 16, paddingTop: 12, paddingBottom: 6, backgroundColor: CARD_WHITE, borderBottomWidth: 1, borderBottomColor: "rgba(155,104,70,0.15)" },
   testBackBtn:    { paddingVertical: 6, paddingRight: 12 },
-  testBackText:   { color: "#636e72", fontSize: 15, fontWeight: "600" },
-  testPhase:      { fontSize: 13, color: "#636e72", fontWeight: "600" },
-  testProgressBg: { height: 5, backgroundColor: "rgba(255,255,255,0.08)", marginHorizontal: 16, borderRadius: 3, overflow: "hidden", marginBottom: 4 },
-  testProgressFill:{ height: "100%", backgroundColor: "#FF6B6B", borderRadius: 3 },
+  testBackText:   { color: WARM_BROWN, fontSize: 15, fontWeight: "600" },
+  testPhase:      { fontSize: 13, color: SLATE_TEAL, fontWeight: "600" },
+  testProgressBg: { height: 5, backgroundColor: "rgba(55,73,80,0.22)", marginHorizontal: 16, borderRadius: 3, overflow: "hidden", marginBottom: 4 },
+  testProgressFill:{ height: "100%", backgroundColor: WARM_ORANGE, borderRadius: 3 },
   testBody:       { padding: 16, paddingBottom: 48 },
 
   typeBadge:      { alignSelf: "flex-start", paddingHorizontal: 10, paddingVertical: 5, borderRadius: 10, marginBottom: 12 },
-  typeBadgeText:  { fontSize: 12, fontWeight: "700", color: "#fff" },
+  typeBadgeText:  { fontSize: 12, fontWeight: "700", color: DEEP_NAVY },
 
-  questionBox:    { backgroundColor: "#16213e", borderRadius: 20, padding: 20, marginBottom: 16, borderWidth: 2, borderColor: "#2d3436" },
-  questionText:   { fontSize: 18, fontWeight: "700", color: "#fff", lineHeight: 26 },
-  // FIX 2: pinyin below question
-  questionPinyin: { fontSize: 14, color: "#a29bfe", marginTop: 8, fontStyle: "italic" },
-  questionHint:   { fontSize: 13, color: "#a29bfe", marginTop: 8 },
-  // FIX 3: big character for pinyin questions
-  pinyinCharDisplay: { fontSize: 64, color: "#fff", fontWeight: "800", textAlign: "center", marginTop: 12 },
+  questionBox:    { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20, marginBottom: 16, borderWidth: 2, borderColor: "rgba(155,104,70,0.22)" },
+  questionText:   { fontSize: 18, fontWeight: "700", color: DEEP_NAVY, lineHeight: 26 },
+  questionPinyin: { fontSize: 14, color: WARM_BROWN, marginTop: 8, fontStyle: "italic" },
+  questionHint:   { fontSize: 13, color: WARM_BROWN, marginTop: 8 },
+  pinyinCharDisplay: { fontSize: 64, color: DEEP_NAVY, fontWeight: "800", textAlign: "center", marginTop: 12 },
 
   mcList:         { gap: 10, marginBottom: 12 },
-  mcBtn:          { backgroundColor: "#16213e", borderRadius: 14, padding: 16, borderWidth: 1.5, borderColor: "#2d3436" },
-  mcBtnText:      { fontSize: 15, color: "#fff", fontWeight: "600" },
-  // FIX 2: pinyin under options
-  optionPinyinText:  { fontSize: 12, color: "#a29bfe", marginTop: 3, fontStyle: "italic" },
-  optionPinyinWhite: { color: "rgba(255,255,255,0.75)" },
+  mcBtn:          { backgroundColor: CARD_WHITE, borderRadius: 14, padding: 16, borderWidth: 1.5, borderColor: "rgba(155,104,70,0.22)" },
+  mcBtnText:      { fontSize: 15, color: DEEP_NAVY, fontWeight: "600" },
+  optionPinyinText:  { fontSize: 12, color: WARM_BROWN, marginTop: 3, fontStyle: "italic" },
+  optionPinyinWhite: { color: CARD_WHITE },
 
   matchGrid:      { flexDirection: "row", flexWrap: "wrap", gap: 10, marginBottom: 12 },
-  matchBtn:       { width: "47%", backgroundColor: "#16213e", borderRadius: 14, padding: 20, borderWidth: 1.5, borderColor: "#2d3436", alignItems: "center" },
-  matchBtnText:   { fontSize: 26, fontWeight: "800", color: "#fff" },
+  matchBtn:       { width: "47%", backgroundColor: CARD_WHITE, borderRadius: 14, padding: 20, borderWidth: 1.5, borderColor: "rgba(155,104,70,0.22)", alignItems: "center" },
+  matchBtnText:   { fontSize: 26, fontWeight: "800", color: DEEP_NAVY },
 
-  btnSelected:    { borderColor: "#a29bfe", backgroundColor: "rgba(162,155,254,0.15)" },
+  btnSelected:    { borderColor: WARM_BROWN, backgroundColor: "rgba(155,104,70,0.12)" },
   btnCorrect:     { backgroundColor: "#1DD1A1", borderColor: "#1DD1A1" },
   btnWrong:       { backgroundColor: "#FF6B6B", borderColor: "#FF6B6B" },
-  btnTextWhite:   { color: "#fff" },
+  btnTextWhite:   { color: CARD_WHITE },
 
   feedbackBox:    { borderRadius: 12, padding: 14, marginBottom: 12 },
-  feedbackText:   { fontSize: 14, fontWeight: "700", color: "#2d3436" },
-  nextBtn:        { backgroundColor: "#FF6B6B", padding: 16, borderRadius: 14, alignItems: "center" },
-  nextBtnText:    { color: "#fff", fontWeight: "800", fontSize: 15 },
+  feedbackText:   { fontSize: 14, fontWeight: "700", color: DEEP_NAVY },
+  nextBtn:        { backgroundColor: WARM_ORANGE, padding: 16, borderRadius: 14, alignItems: "center" },
+  nextBtnText:    { color: CARD_WHITE, fontWeight: "800", fontSize: 15 },
 
-  // Enhanced result card
-  testCompleteTitle: { fontSize: 26, fontWeight: "900", color: "#fff", textAlign: "center", marginBottom: 20 },
-  resultCard2:       { backgroundColor: "#16213e", borderRadius: 24, padding: 24, marginBottom: 16, borderWidth: 2, width: "100%" },
+  testCompleteTitle: { fontSize: 26, fontWeight: "900", color: DEEP_NAVY, textAlign: "center" },
+  resultCard2:       { backgroundColor: CARD_WHITE, borderRadius: 24, padding: 24, marginBottom: 16, borderWidth: 2, width: "100%" },
   resultCard2Top:    { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 },
   resultCard2LevelNum: { fontSize: 22, fontWeight: "900" },
-  resultCard2Cefr:   { fontSize: 13, color: "#636e72", marginTop: 4 },
+  resultCard2Cefr:   { fontSize: 13, color: SLATE_TEAL, marginTop: 4 },
   resultCard2Emoji:  { fontSize: 52 },
   resultCard2Name:   { fontSize: 20, fontWeight: "800" },
 
-  // You will learn
-  willLearnBox:   { backgroundColor: "#16213e", borderRadius: 20, padding: 20, marginBottom: 16, width: "100%" },
-  willLearnTitle: { fontSize: 15, fontWeight: "800", color: "#fff", marginBottom: 12 },
+  willLearnBox:   { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20, marginBottom: 16, width: "100%" },
+  willLearnTitle: { fontSize: 15, fontWeight: "800", color: DEEP_NAVY, marginBottom: 12 },
   willLearnRow:   { flexDirection: "row", alignItems: "flex-start", marginBottom: 8, gap: 8 },
   willLearnCheck: { fontSize: 14, fontWeight: "800", marginTop: 1 },
-  willLearnText:  { fontSize: 14, color: "#b2bec3", flex: 1, lineHeight: 20 },
+  willLearnText:  { fontSize: 14, color: SLATE_TEAL, flex: 1, lineHeight: 20 },
 
-  scoreBreakdown: { backgroundColor: "#16213e", borderRadius: 16, padding: 16, marginBottom: 16, width: "100%" },
-  scoreBreakdownTitle: { fontSize: 13, fontWeight: "700", color: "#a29bfe", marginBottom: 8 },
-  scoreBreakdownLine: { fontSize: 14, color: "#636e72", marginBottom: 4 },
+  scoreBreakdown: { backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16, marginBottom: 16, width: "100%" },
+  scoreBreakdownTitle: { fontSize: 13, fontWeight: "700", color: WARM_BROWN, marginBottom: 8 },
+  scoreBreakdownLine: { fontSize: 14, color: SLATE_TEAL, marginBottom: 4 },
 
-  showLevelsBtn:     { borderWidth: 1.5, borderColor: "#a29bfe", borderRadius: 14, paddingVertical: 13, paddingHorizontal: 24, marginBottom: 12, width: "100%", alignItems: "center" },
-  showLevelsBtnText: { fontSize: 15, fontWeight: "700", color: "#a29bfe" },
+  showLevelsBtn:     { borderWidth: 1.5, borderColor: WARM_BROWN, borderRadius: 14, paddingVertical: 13, paddingHorizontal: 24, marginBottom: 12, width: "100%", alignItems: "center" },
+  showLevelsBtnText: { fontSize: 15, fontWeight: "700", color: WARM_BROWN },
 
-  // Language Levels Modal
-  levelsOverlay:      { flex: 1, backgroundColor: "rgba(0,0,0,0.65)", justifyContent: "flex-end" },
-  levelsSheet:        { backgroundColor: "#16213e", borderTopLeftRadius: 28, borderTopRightRadius: 28, paddingHorizontal: 20, paddingTop: 16, maxHeight: "80%" },
+  levelsOverlay:      { flex: 1, backgroundColor: "rgba(0,0,0,0.55)", justifyContent: "flex-end" },
+  levelsSheet:        { backgroundColor: CARD_WHITE, borderTopLeftRadius: 28, borderTopRightRadius: 28, paddingHorizontal: 20, paddingTop: 16, maxHeight: "80%" },
   levelsSheetHeader:  { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 20 },
-  levelsSheetTitle:   { fontSize: 20, fontWeight: "800", color: "#fff" },
-  levelsSheetClose:   { fontSize: 22, color: "#636e72", paddingHorizontal: 4 },
-  levelsItem:         { flexDirection: "row", alignItems: "center", borderRadius: 16, padding: 14, marginBottom: 8, borderWidth: 1.5, borderColor: "rgba(255,255,255,0.07)", gap: 12 },
+  levelsSheetTitle:   { fontSize: 20, fontWeight: "800", color: DEEP_NAVY },
+  levelsSheetClose:   { fontSize: 22, color: SLATE_TEAL, paddingHorizontal: 4 },
+  levelsItem:         { flexDirection: "row", alignItems: "center", backgroundColor: CARD_WHITE, borderRadius: 16, padding: 14, marginBottom: 8, borderWidth: 1.5, borderColor: "rgba(155,104,70,0.15)", gap: 12 },
   levelsItemEmoji:    { fontSize: 26, width: 32, textAlign: "center" },
   levelsItemInfo:     { flex: 1 },
   levelsItemRow:      { flexDirection: "row", alignItems: "center", gap: 8, marginBottom: 3 },
   levelsItemNum:      { fontSize: 13, fontWeight: "800" },
-  levelsItemCefr:     { fontSize: 12, color: "#636e72", fontWeight: "600" },
+  levelsItemCefr:     { fontSize: 12, color: SLATE_TEAL, fontWeight: "600" },
   levelsCurrentBadge: { paddingHorizontal: 7, paddingVertical: 2, borderRadius: 6 },
-  levelsCurrentBadgeText: { fontSize: 9, fontWeight: "900", color: "#fff", letterSpacing: 0.5 },
-  levelsSoonBadge:    { paddingHorizontal: 7, paddingVertical: 2, borderRadius: 6, backgroundColor: "rgba(255,255,255,0.08)" },
-  levelsSoonText:     { fontSize: 9, fontWeight: "700", color: "#636e72", letterSpacing: 0.5 },
-  levelsItemName:     { fontSize: 15, color: "#dfe6e9", fontWeight: "600" },
+  levelsCurrentBadgeText: { fontSize: 9, fontWeight: "900", color: CARD_WHITE, letterSpacing: 0.5 },
+  levelsSoonBadge:    { paddingHorizontal: 7, paddingVertical: 2, borderRadius: 6, backgroundColor: "#FFF8ED" },
+  levelsSoonText:     { fontSize: 9, fontWeight: "700", color: SLATE_TEAL, letterSpacing: 0.5 },
+  levelsItemName:     { fontSize: 15, color: DEEP_NAVY, fontWeight: "600" },
 });

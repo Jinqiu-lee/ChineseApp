@@ -1,7 +1,8 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert,
 } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import WaveBackground from '../components/WaveBackground';
 import ScreenBackground from '../components/ScreenBackground';
@@ -17,6 +18,8 @@ import ImageExercise         from '../components/exercises/ImageExercise';
 import PinyinExercise        from '../components/exercises/PinyinExercise';
 import { getAvatarForLesson } from '../config/lessonAvatarMap';
 import { applyAvatarNames } from '../utils/applyAvatarNames';
+import AvatarCharacter from '../components/AvatarCharacter';
+import { getCompletionMessage } from '../data/emotionalContent';
 
 const PASS_SCORE   = 60;
 const REVIEW_SCORE = 50;
@@ -40,9 +43,14 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
     [lessonData],
   );
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [score,        setScore]        = useState(0);
-  const [showResults,  setShowResults]  = useState(false);
+  const [currentIndex,  setCurrentIndex]  = useState(0);
+  const [score,         setScore]         = useState(0);
+  const [showResults,   setShowResults]   = useState(false);
+  const [userAvatarId,  setUserAvatarId]  = useState('eileen');
+
+  useEffect(() => {
+    AsyncStorage.getItem('avatarId').then(id => { if (id) setUserAvatarId(id); });
+  }, []);
 
   const total    = exercises.length;
   const exercise = exercises[currentIndex];
@@ -124,6 +132,16 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
               </View>
             </View>
 
+            {/* Avatar completion message */}
+            <View style={styles.completionAvatarRow}>
+              <AvatarCharacter avatarId={userAvatarId} expression={pct >= 60 ? 'happy' : 'idle'} size={72} />
+              <View style={styles.completionBubble}>
+                <Text style={[styles.completionMessage, { color: T.onCard }]}>
+                  {getCompletionMessage(levelId, userAvatarId, pct)}
+                </Text>
+              </View>
+            </View>
+
             <Text style={styles.passingText}>
               Pass threshold: {PASS_SCORE}% · You scored: {pct}%
             </Text>
@@ -195,20 +213,20 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
 
       {/* Header */}
-      <View style={[styles.header, { borderBottomColor: T.border }]}>
+      <View style={styles.header}>
         <TouchableOpacity onPress={handleExit} style={styles.exitBtn}>
-          <Text style={[styles.exitText, { color: T.onBgMuted }]}>✕</Text>
+          <Text style={styles.exitText}>✕</Text>
         </TouchableOpacity>
         <View style={styles.progressBg}>
           <View style={[styles.progressFill, { width: `${progress}%`, backgroundColor: T.progressFill }]} />
         </View>
-        <Text style={[styles.counter, { color: T.onBgMuted }]}>{currentIndex + 1}/{total}</Text>
+        <Text style={styles.counter}>{currentIndex + 1}/{total}</Text>
       </View>
 
       {/* Type label + lesson name */}
-      <View style={[styles.typeRow, { borderBottomColor: T.border }]}>
-        <Text style={[styles.typeLabel, { color: T.gold }]}>{typeLabel}</Text>
-        <Text style={[styles.lessonLabel, { color: T.onBgMuted }]} numberOfLines={1}>{lessonName}</Text>
+      <View style={styles.typeRow}>
+        <Text style={styles.typeLabel}>{typeLabel}</Text>
+        <Text style={styles.lessonLabel} numberOfLines={1}>{lessonName}</Text>
       </View>
 
       {/* Exercise */}
@@ -298,21 +316,23 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row', alignItems: 'center',
     paddingHorizontal: 16, paddingVertical: 12, gap: 12,
-    borderBottomWidth: 1, borderBottomColor: VG.border,
+    backgroundColor: VG.card,
+    borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)',
   },
   exitBtn:      { width: 32, height: 32, alignItems: 'center', justifyContent: 'center' },
-  exitText:     { fontSize: 18, color: VG.creamMuted, fontWeight: '700' },
-  progressBg:   { flex: 1, height: 7, backgroundColor: 'rgba(255,255,255,0.08)', borderRadius: 4, overflow: 'hidden' },
+  exitText:     { fontSize: 18, color: VG.onCard, fontWeight: '700' },
+  progressBg:   { flex: 1, height: 7, backgroundColor: 'rgba(55,73,80,0.22)', borderRadius: 4, overflow: 'hidden' },
   progressFill: { height: '100%', backgroundColor: VG.yellow, borderRadius: 4 },
-  counter:      { fontSize: 13, color: VG.creamMuted, fontWeight: '600', minWidth: 36, textAlign: 'right' },
+  counter:      { fontSize: 13, color: VG.onCardMuted, fontWeight: '600', minWidth: 36, textAlign: 'right' },
 
   typeRow: {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
-    paddingHorizontal: 16, paddingBottom: 10,
-    borderBottomWidth: 1, borderBottomColor: VG.border,
+    paddingHorizontal: 16, paddingBottom: 10, paddingTop: 10,
+    backgroundColor: VG.card,
+    borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)',
   },
-  typeLabel:   { fontSize: 14, fontWeight: '700', color: VG.gold },
-  lessonLabel: { fontSize: 12, color: VG.creamMuted, flex: 1, textAlign: 'right' },
+  typeLabel:   { fontSize: 14, fontWeight: '700', color: VG.onCardMid },
+  lessonLabel: { fontSize: 12, color: VG.onCardMuted, flex: 1, textAlign: 'right' },
 
   scroll:        { flex: 1 },
   scrollContent: { padding: 16, flexGrow: 1 },
@@ -336,7 +356,7 @@ const styles = StyleSheet.create({
 
   scoreCircle: {
     width: 140, height: 140, borderRadius: 70,
-    backgroundColor: 'rgba(28,42,68,0.07)',
+    backgroundColor: VG.card,
     alignItems: 'center', justifyContent: 'center',
     marginBottom: 24,
     borderWidth: 3, borderColor: 'rgba(217,140,43,0.3)',
@@ -346,16 +366,28 @@ const styles = StyleSheet.create({
 
   statsBox: {
     flexDirection: 'row', alignItems: 'center',
-    backgroundColor: 'rgba(28,42,68,0.06)', borderRadius: 16, padding: 20,
+    backgroundColor: VG.card, borderRadius: 16, padding: 20,
     width: '100%', marginBottom: 16,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)',
   },
   statItem:   { flex: 1, alignItems: 'center' },
   statNumber: { fontSize: 24, fontWeight: '800', color: VG.onCard, marginBottom: 4 },
   statLabel:  { fontSize: 12, color: VG.onCardMuted },
   statDivider:{ width: 1, height: 40, backgroundColor: 'rgba(28,42,68,0.1)' },
 
+  completionAvatarRow: {
+    flexDirection: 'row', alignItems: 'flex-end', gap: 12,
+    width: '100%', marginBottom: 20,
+  },
+  completionBubble: {
+    flex: 1, backgroundColor: '#FFF8ED', borderRadius: 14,
+    paddingHorizontal: 14, paddingVertical: 12,
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.2)',
+  },
+  completionMessage: { fontSize: 14, lineHeight: 20, fontStyle: 'italic' },
+
   passingText:       { fontSize: 13, color: VG.onCardMuted, marginBottom: 16 },
-  encouragementBox:  { backgroundColor: 'rgba(217,140,43,0.15)', padding: 16, borderRadius: 12, width: '100%' },
+  encouragementBox:  { backgroundColor: '#FFF8ED', padding: 16, borderRadius: 12, width: '100%' },
   encouragementText: { fontSize: 14, color: VG.orange, textAlign: 'center', lineHeight: 20 },
 
   resultsActions:   { gap: 12 },
@@ -367,7 +399,7 @@ const styles = StyleSheet.create({
   },
   actionButtonText: { fontSize: 16, fontWeight: '800', color: VG.bg },
   doneButton:       {
-    backgroundColor: 'transparent',
+    backgroundColor: VG.card,
     padding: 16, borderRadius: 16, alignItems: 'center',
     borderWidth: 1.5, borderColor: VG.gold,
   },
