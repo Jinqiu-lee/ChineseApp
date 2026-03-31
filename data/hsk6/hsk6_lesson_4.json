@@ -1,0 +1,623 @@
+{
+  "lesson": 4,
+  "level": 6,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Everything Can Change",
+  "topic_chinese": "一切皆可改变",
+  "vocabulary": [
+    {
+      "id": "hsk6_l4_01",
+      "chinese": "改变",
+      "pinyin": "gǎi biàn",
+      "english": "To change; change",
+      "part_of_speech": "verb/noun",
+      "example": "改变思维方式，往往是解决问题的第一步。",
+      "translation": "Changing the way you think is often the first step in solving a problem."
+    },
+    {
+      "id": "hsk6_l4_02",
+      "chinese": "态度",
+      "pinyin": "tài dù",
+      "english": "Attitude; stance",
+      "part_of_speech": "noun",
+      "example": "改变对失败的态度，你就会发现失败也是一种学习。",
+      "translation": "Change your attitude toward failure and you will find that failure is also a form of learning."
+    },
+    {
+      "id": "hsk6_l4_03",
+      "chinese": "环境",
+      "pinyin": "huán jìng",
+      "english": "Environment; surroundings",
+      "part_of_speech": "noun",
+      "example": "到了一个新的工作环境，他很快就适应了。",
+      "translation": "He quickly adapted when he arrived at a new work environment."
+    },
+    {
+      "id": "hsk6_l4_04",
+      "chinese": "适应",
+      "pinyin": "shì yìng",
+      "english": "To adapt; to adjust to",
+      "part_of_speech": "verb",
+      "example": "刚来到这个城市时，她花了一些时间适应新的生活节奏。",
+      "translation": "When she first arrived in this city, it took her some time to adapt to the new pace of life."
+    },
+    {
+      "id": "hsk6_l4_05",
+      "chinese": "习惯",
+      "pinyin": "xí guàn",
+      "english": "Habit; to be accustomed to",
+      "part_of_speech": "noun/verb",
+      "example": "养成每天读书的习惯，对个人成长非常有益。",
+      "translation": "Developing the habit of reading every day is very beneficial for personal growth."
+    },
+    {
+      "id": "hsk6_l4_06",
+      "chinese": "主动",
+      "pinyin": "zhǔ dòng",
+      "english": "Proactive; on one's own initiative",
+      "part_of_speech": "adjective/adverb",
+      "example": "她主动向领导提出了改进工作流程的建议。",
+      "translation": "She proactively suggested improvements to the work process to her manager."
+    },
+    {
+      "id": "hsk6_l4_07",
+      "chinese": "被动",
+      "pinyin": "bèi dòng",
+      "english": "Passive; reactive",
+      "part_of_speech": "adjective",
+      "example": "总是被动地等待别人的安排，很难有所突破。",
+      "translation": "Always passively waiting for others to arrange things makes it hard to achieve any breakthrough."
+    },
+    {
+      "id": "hsk6_l4_08",
+      "chinese": "突破",
+      "pinyin": "tū pò",
+      "english": "To break through; breakthrough",
+      "part_of_speech": "verb/noun",
+      "example": "经过长期训练，她终于在技术上取得了重大突破。",
+      "translation": "After long-term training, she finally achieved a major breakthrough in her technique."
+    },
+    {
+      "id": "hsk6_l4_09",
+      "chinese": "转变",
+      "pinyin": "zhuǎn biàn",
+      "english": "To transform; transformation",
+      "part_of_speech": "verb/noun",
+      "example": "经历了那次挫折，他完成了从依赖到独立的转变。",
+      "translation": "After going through that setback, he completed the transformation from dependence to independence."
+    },
+    {
+      "id": "hsk6_l4_10",
+      "chinese": "成长",
+      "pinyin": "chéng zhǎng",
+      "english": "To grow; to develop",
+      "part_of_speech": "verb",
+      "example": "困难和挑战往往是一个人成长最快的时候。",
+      "translation": "Difficulties and challenges are often the times when a person grows the fastest."
+    },
+    {
+      "id": "hsk6_l4_11",
+      "chinese": "经历",
+      "pinyin": "jīng lì",
+      "english": "Experience; to experience",
+      "part_of_speech": "noun/verb",
+      "example": "那段在海外生活的经历，彻底改变了她对世界的看法。",
+      "translation": "That experience of living abroad completely changed her view of the world."
+    },
+    {
+      "id": "hsk6_l4_12",
+      "chinese": "关键",
+      "pinyin": "guān jiàn",
+      "english": "Key factor; crucial",
+      "part_of_speech": "noun/adjective",
+      "example": "保持积极的态度，是成功适应新环境的关键。",
+      "translation": "Maintaining a positive attitude is the key to successfully adapting to a new environment."
+    },
+    {
+      "id": "hsk6_l4_13",
+      "chinese": "潜力",
+      "pinyin": "qián lì",
+      "english": "Potential; latent ability",
+      "part_of_speech": "noun",
+      "example": "每个人身上都有尚未被发现的潜力，等待被激发。",
+      "translation": "Every person has untapped potential waiting to be awakened."
+    },
+    {
+      "id": "hsk6_l4_14",
+      "chinese": "一旦",
+      "pinyin": "yí dàn",
+      "english": "Once; as soon as (a condition is met)",
+      "part_of_speech": "conjunction",
+      "example": "一旦下定决心改变，就不要再拖延，立刻行动。",
+      "translation": "Once you make up your mind to change, don't delay any longer — take action immediately."
+    },
+    {
+      "id": "hsk6_l4_15",
+      "chinese": "不断",
+      "pinyin": "bù duàn",
+      "english": "Continuously; unceasingly",
+      "part_of_speech": "adverb",
+      "example": "只有不断学习，才能跟上时代的步伐。",
+      "translation": "Only by continuously learning can you keep up with the times."
+    },
+    {
+      "id": "hsk6_l4_p01",
+      "chinese": "主动改变",
+      "pinyin": "zhǔ dòng gǎi biàn",
+      "english": "To proactively change",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l4_p02",
+      "chinese": "不断成长",
+      "pinyin": "bù duàn chéng zhǎng",
+      "english": "To continuously grow",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l4_p03",
+      "chinese": "突破自我",
+      "pinyin": "tū pò zì wǒ",
+      "english": "To break through one's own limits",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l4_p04",
+      "chinese": "适应环境",
+      "pinyin": "shì yìng huán jìng",
+      "english": "To adapt to the environment",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l4_p05",
+      "chinese": "一旦下定决心",
+      "pinyin": "yí dàn xià dìng jué xīn",
+      "english": "Once you make up your mind",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "一旦下定决心改变，就没有什么能真正阻止你。",
+      "pinyin": "Yí dàn xià dìng jué xīn gǎi biàn, jiù méi yǒu shén me néng zhēn zhèng zǔ zhǐ nǐ.",
+      "english": "Once you make up your mind to change, nothing can truly stop you."
+    },
+    {
+      "chinese": "与其被动地等待环境改变，不如主动去适应和突破。",
+      "pinyin": "Yǔ qí bèi dòng de děng dài huán jìng gǎi biàn, bù rú zhǔ dòng qù shì yìng hé tū pò.",
+      "english": "Rather than passively waiting for the environment to change, it is better to proactively adapt and break through."
+    },
+    {
+      "chinese": "改变态度是成长的关键，也是突破自我的第一步。",
+      "pinyin": "Gǎi biàn tài dù shì chéng zhǎng de guān jiàn, yě shì tū pò zì wǒ de dì yī bù.",
+      "english": "Changing one's attitude is the key to growth, and also the first step to breaking through one's own limits."
+    },
+    {
+      "chinese": "面对激烈的竞争，他不得不不断提升自己的能力和潜力。",
+      "pinyin": "Miàn duì jī liè de jìng zhēng, tā bù dé bù bù duàn tí shēng zì jǐ de néng lì hé qián lì.",
+      "english": "Faced with fierce competition, he had no choice but to continuously improve his abilities and develop his potential."
+    },
+    {
+      "chinese": "那段艰难的经历让她完成了一次深刻的转变，重新养成了更好的习惯。",
+      "pinyin": "Nà duàn jiān nán de jīng lì ràng tā wán chéng le yī cì shēn kè de zhuǎn biàn, chóng xīn yǎng chéng le gèng hǎo de xí guàn.",
+      "english": "That difficult experience led her to undergo a profound transformation, and she formed better habits anew."
+    },
+    {
+      "chinese": "每个人都有无限的潜力，关键在于是否愿意主动去改变和成长。",
+      "pinyin": "Měi gè rén dōu yǒu wú xiàn de qián lì, guān jiàn zài yú shì fǒu yuàn yì zhǔ dòng qù gǎi biàn hé chéng zhǎng.",
+      "english": "Everyone has unlimited potential; the key lies in whether you are willing to proactively change and grow."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "一旦 — Once (a condition is met)",
+      "explanation": "一旦 is a conjunction meaning 'once' or 'as soon as a certain condition is met.' It is used to describe a situation where, as soon as a particular condition occurs, a consequence will follow — often quickly or inevitably. Structure: 一旦 + condition, (Subject +) 就/便 + result. 一旦 implies that the condition may happen at some point, and once it does, the result follows without delay. It can carry either a positive or a cautionary tone depending on context. Example: 一旦下定决心，就没有什么能阻止你了。(Once you make up your mind, nothing can stop you.)",
+      "examples": [
+        {
+          "chinese": "一旦下定决心，就没有什么能阻止你了。",
+          "pinyin": "Yí dàn xià dìng jué xīn, jiù méi yǒu shén me néng zǔ zhǐ nǐ le.",
+          "english": "Once you make up your mind, nothing can stop you."
+        },
+        {
+          "chinese": "一旦养成了懒惰的习惯，就很难再改变了。",
+          "pinyin": "Yí dàn yǎng chéng le lǎn duò de xí guàn, jiù hěn nán zài gǎi biàn le.",
+          "english": "Once you have formed a lazy habit, it becomes very difficult to change."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 适应了新环境，他的工作效率就大大提高了。",
+          "type": "multiple_choice",
+          "correct": "一旦",
+          "options": ["一旦", "尽管", "宁可", "既然"],
+          "option_pinyin": ["yí dàn", "jǐn guǎn", "nìng kě", "jì rán"],
+          "word_hints": {
+            "工作效率": "work efficiency",
+            "大大": "greatly; significantly"
+          }
+        },
+        {
+          "question": "一旦决定主动改变，_____ 要做好克服困难的准备。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["就", "才", "都", "也"],
+          "option_pinyin": ["jiù", "cái", "dōu", "yě"],
+          "word_hints": {
+            "克服": "to overcome"
+          }
+        },
+        {
+          "question": "Which sentence uses 一旦 correctly?",
+          "type": "multiple_choice",
+          "correct": "一旦你突破了自我，就会发现潜力是无限的。",
+          "options": [
+            "一旦你突破了自我，就会发现潜力是无限的。",
+            "一旦你突破了自我，但潜力还是有限的。",
+            "你突破了自我，一旦潜力是无限的。",
+            "一旦你突破了自我，才会发现潜力有限。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {
+            "无限": "unlimited; boundless"
+          }
+        },
+        {
+          "question": "一旦公司的环境变得不稳定，很多人_____ 开始考虑离职。",
+          "type": "multiple_choice",
+          "correct": "就会",
+          "options": ["就会", "还是", "虽然", "已经"],
+          "option_pinyin": ["jiù huì", "hái shì", "suī rán", "yǐ jīng"],
+          "word_hints": {
+            "离职": "to resign; to leave a job"
+          }
+        },
+        {
+          "question": "一旦你改变了对失败的态度，_____ 每一次失败都变成了成长的机会。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["就", "却", "但", "所以"],
+          "option_pinyin": ["jiù", "què", "dàn", "suǒ yǐ"],
+          "word_hints": {
+            "失败": "failure"
+          }
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "与其…不如 — Rather than…better to",
+      "explanation": "与其…不如 compares two options and recommends one over the other. Structure: 与其 + [less preferred option] + 不如 + [more preferred option]. The speaker is saying that the second option is wiser, more effective, or more worthwhile than the first. This pattern is stronger than just saying 'I prefer X to Y' — it has a persuasive or conclusive tone. Example: 与其抱怨现状，不如主动去改变。(Rather than complaining about the situation, it is better to actively change it.)",
+      "examples": [
+        {
+          "chinese": "与其抱怨现状，不如主动去改变。",
+          "pinyin": "Yǔ qí bào yuàn xiàn zhuàng, bù rú zhǔ dòng qù gǎi biàn.",
+          "english": "Rather than complaining about the situation, it is better to actively change it."
+        },
+        {
+          "chinese": "与其被动地等待机会，不如主动创造机会。",
+          "pinyin": "Yǔ qí bèi dòng de děng dài jī huì, bù rú zhǔ dòng chuàng zào jī huì.",
+          "english": "Rather than passively waiting for opportunities, it is better to proactively create them."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "与其花时间担心失败，_____ 认真准备，提高成功的可能性。",
+          "type": "multiple_choice",
+          "correct": "不如",
+          "options": ["不如", "不得", "不会", "不用"],
+          "option_pinyin": ["bù rú", "bù dé", "bú huì", "bù yòng"],
+          "word_hints": {
+            "担心": "to worry about",
+            "可能性": "possibility; likelihood"
+          }
+        },
+        {
+          "question": "_____ 依赖别人帮你改变，不如自己主动突破。",
+          "type": "multiple_choice",
+          "correct": "与其",
+          "options": ["与其", "尽管", "一旦", "不管"],
+          "option_pinyin": ["yǔ qí", "jǐn guǎn", "yí dàn", "bù guǎn"],
+          "word_hints": {
+            "依赖": "to rely on; to depend on"
+          }
+        },
+        {
+          "question": "Which sentence uses 与其…不如 correctly?",
+          "type": "multiple_choice",
+          "correct": "与其被动接受环境，不如主动适应并成长。",
+          "options": [
+            "与其被动接受环境，不如主动适应并成长。",
+            "与其被动接受环境，所以主动适应并成长。",
+            "尽管被动接受环境，不如主动适应并成长。",
+            "与其被动接受环境，还是被动适应并成长。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {
+            "接受": "to accept"
+          }
+        },
+        {
+          "question": "与其整天抱怨习惯难以改变，_____ 从今天开始付诸行动。",
+          "type": "multiple_choice",
+          "correct": "不如",
+          "options": ["不如", "才能", "虽然", "即使"],
+          "option_pinyin": ["bù rú", "cái néng", "suī rán", "jí shǐ"],
+          "word_hints": {
+            "付诸行动": "to put into action; to act on it"
+          }
+        },
+        {
+          "question": "与其担心潜力不够，_____ 努力不断地发掘和提升自己。",
+          "type": "multiple_choice",
+          "correct": "不如",
+          "options": ["不如", "反而", "而且", "除非"],
+          "option_pinyin": ["bù rú", "fǎn ér", "ér qiě", "chú fēi"],
+          "word_hints": {
+            "发掘": "to discover; to unearth",
+            "提升": "to improve; to elevate"
+          }
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "不得不 — Have no choice but to; cannot help but",
+      "explanation": "不得不 expresses that someone is compelled or forced to do something by circumstances — they have no other option. Structure: Subject + 不得不 + verb. Unlike 必须 (must, by rule or necessity) or 应该 (should, by moral obligation), 不得不 specifically emphasizes that external pressure leaves no alternative. It often carries a tone of reluctance or resignation. Example: 面对激烈的竞争，他不得不提升自己的能力。(Faced with fierce competition, he had no choice but to improve his abilities.)",
+      "examples": [
+        {
+          "chinese": "面对激烈的竞争，他不得不提升自己的能力。",
+          "pinyin": "Miàn duì jī liè de jìng zhēng, tā bù dé bù tí shēng zì jǐ de néng lì.",
+          "english": "Faced with fierce competition, he had no choice but to improve his abilities."
+        },
+        {
+          "chinese": "环境变化太快，公司不得不主动调整发展策略。",
+          "pinyin": "Huán jìng biàn huà tài kuài, gōng sī bù dé bù zhǔ dòng tiáo zhěng fā zhǎn cè lüè.",
+          "english": "The environment changed too quickly, and the company had no choice but to proactively adjust its development strategy."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "由于新的工作环境压力很大，她_____ 改变自己的工作习惯。",
+          "type": "multiple_choice",
+          "correct": "不得不",
+          "options": ["不得不", "不用", "不能不不", "用不着"],
+          "option_pinyin": ["bù dé bù", "bù yòng", "bù néng bù bù", "yòng bù zháo"],
+          "word_hints": {
+            "由于": "due to; because of",
+            "压力": "pressure; stress"
+          }
+        },
+        {
+          "question": "Which sentence uses 不得不 correctly?",
+          "type": "multiple_choice",
+          "correct": "为了适应变化，他不得不不断学习新技能。",
+          "options": [
+            "为了适应变化，他不得不不断学习新技能。",
+            "为了适应变化，他不得不已经学习了新技能。",
+            "他不得不想学习新技能。",
+            "不得不他学习了新技能。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {
+            "技能": "skill"
+          }
+        },
+        {
+          "question": "他一开始很被动，但现实迫使他_____ 主动去改变。",
+          "type": "multiple_choice",
+          "correct": "不得不",
+          "options": ["不得不", "不愿意", "不一定", "不只是"],
+          "option_pinyin": ["bù dé bù", "bú yuàn yì", "bù yī dìng", "bù zhǐ shì"],
+          "word_hints": {
+            "迫使": "to force; to compel"
+          }
+        },
+        {
+          "question": "市场竞争越来越激烈，企业_____ 不断创新才能生存。",
+          "type": "multiple_choice",
+          "correct": "不得不",
+          "options": ["不得不", "不应该", "不可能", "不一定"],
+          "option_pinyin": ["bù dé bù", "bù yīng gāi", "bù kě néng", "bù yī dìng"],
+          "word_hints": {
+            "创新": "innovation; to innovate",
+            "生存": "to survive"
+          }
+        },
+        {
+          "question": "尽管她已经很努力了，面对新的挑战，她还是_____ 继续突破自己。",
+          "type": "multiple_choice",
+          "correct": "不得不",
+          "options": ["不得不", "一旦", "宁可", "尽管"],
+          "option_pinyin": ["bù dé bù", "yí dàn", "nìng kě", "jǐn guǎn"],
+          "word_hints": {
+            "挑战": "challenge"
+          }
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "title": "变则通，不变则亡 — The Chinese Philosophy of Change",
+      "title_chinese": "变则通，不变则亡",
+      "content": "One of the oldest and most enduring ideas in Chinese philosophy is that change is not something to be feared — it is the very nature of existence. This thinking is rooted in the 《易经》(Yì Jīng — the I Ching, or Book of Changes), one of the oldest texts in the world, which holds that the universe is in a state of constant, cyclical transformation. The name 易经 itself contains the character 易, meaning 'change.' The core message: those who adapt to change will thrive; those who resist it will decline.\n\nThis idea is captured in the classical phrase 变则通，不变则亡 — 'Change and you will find a way through; refuse to change and you will perish.' It is not a warning to be reckless, but an encouragement to remain flexible, open-minded, and responsive to the shifting world around you.\n\nIn modern Chinese culture, this spirit of transformation is often expressed through the metaphor of 破茧成蝶 — 'to emerge from a cocoon as a butterfly.' Just as a caterpillar must endure a painful process of dissolution inside its cocoon before it can transform into a butterfly, human growth often requires going through difficulty and discomfort before something new and better can emerge.\n\nThis connects directly to the lesson: changing yourself is rarely easy. It demands that you first let go of who you were — your old habits, attitudes, and comfort zones. But this is precisely what makes personal transformation meaningful. As the I Ching teaches, change is not a disruption of life. It is the rhythm of life itself.",
+      "idioms": [
+        {
+          "chinese": "破茧成蝶",
+          "pinyin": "pò jiǎn chéng dié",
+          "english": "To emerge from the cocoon as a butterfly; to transform through difficulty"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which word means 'to continuously do something without stopping'?",
+      "type": "multiple_choice",
+      "correct": "不断",
+      "options": ["不断", "一旦", "主动", "突破"],
+      "word_hints": {
+        "不断": "bù duàn",
+        "一旦": "yí dàn",
+        "主动": "zhǔ dòng",
+        "突破": "tū pò"
+      }
+    },
+    {
+      "question": "Complete the sentence: _____ 你适应了新环境，就会越来越有自信。",
+      "type": "multiple_choice",
+      "correct": "一旦",
+      "options": ["一旦", "尽管", "宁可", "与其"],
+      "word_hints": {
+        "自信": "zì xìn — confidence"
+      }
+    },
+    {
+      "question": "Which sentence uses 与其…不如 correctly?",
+      "type": "multiple_choice",
+      "correct": "与其被动等待机会，不如主动创造机会。",
+      "options": [
+        "与其被动等待机会，不如主动创造机会。",
+        "与其被动等待机会，就主动创造机会。",
+        "一旦被动等待机会，不如主动创造机会。",
+        "与其主动创造机会，不如被动等待机会。"
+      ],
+      "word_hints": {
+        "与其": "yǔ qí — rather than",
+        "不如": "bù rú — better to"
+      }
+    },
+    {
+      "question": "What does 破茧成蝶 literally describe, and what does it symbolize?",
+      "type": "multiple_choice",
+      "correct": "A butterfly emerging from its cocoon — symbolizing personal transformation through hardship.",
+      "options": [
+        "A butterfly emerging from its cocoon — symbolizing personal transformation through hardship.",
+        "A bird breaking free from a cage — symbolizing freedom from society.",
+        "A seed sprouting from the earth — symbolizing new beginnings after rest.",
+        "A river breaking through a dam — symbolizing unstoppable progress."
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "面对新的挑战，她_____ 改变自己原来被动的工作态度。",
+      "type": "multiple_choice",
+      "correct": "不得不",
+      "options": ["不得不", "不愿意", "不只是", "不一定"],
+      "word_hints": {
+        "挑战": "tiǎo zhàn — challenge",
+        "被动": "bèi dòng — passive"
+      }
+    },
+    {
+      "question": "What is the core message of the I Ching (《易经》) as described in the culture note?",
+      "type": "multiple_choice",
+      "correct": "The universe is in constant transformation; those who adapt will thrive.",
+      "options": [
+        "The universe is in constant transformation; those who adapt will thrive.",
+        "Stability is the greatest virtue; avoid unnecessary change.",
+        "Only external circumstances can force a person to truly change.",
+        "Change is always painful and should only be attempted when necessary."
+      ],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Starting Over",
+      "title_chinese": "重新开始",
+      "speakers": {
+        "A": { "name": "加缪", "role": "philosophical friend", "gender": "male" },
+        "B": { "name": "爱玲", "role": "literary friend", "gender": "female" }
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "你听说了吗？张明辞掉了那份稳定的工作，决定重新开始，改变自己的人生方向。",
+          "pinyin": "Nǐ tīng shuō le ma? Zhāng Míng cí diào le nà fèn wěn dìng de gōng zuò, jué dìng chóng xīn kāi shǐ, gǎi biàn zì jǐ de rén shēng fāng xiàng.",
+          "english": "Did you hear? Zhang Ming quit his stable job and decided to start over, changing his life's direction."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我知道。一旦一个人下定决心改变，周围人的眼光就不再重要了。",
+          "pinyin": "Wǒ zhī dào. Yí dàn yī gè rén xià dìng jué xīn gǎi biàn, zhōu wéi rén de yǎn guāng jiù bú zài zhòng yào le.",
+          "english": "I know. Once a person makes up their mind to change, the opinions of those around them no longer matter."
+        },
+        {
+          "speaker": "B",
+          "chinese": "但是他真的能适应那种完全不同的新环境吗？改变的代价有时候太大了。",
+          "pinyin": "Dàn shì tā zhēn de néng shì yìng nà zhǒng wán quán bù tóng de xīn huán jìng ma? Gǎi biàn de dài jià yǒu shí hòu tài dà le.",
+          "english": "But can he really adapt to that completely different new environment? The cost of change is sometimes too great."
+        },
+        {
+          "speaker": "A",
+          "chinese": "人的潜力往往比我们想象的要大得多。他只需要时间不断成长，慢慢适应就好了。",
+          "pinyin": "Rén de qián lì wǎng wǎng bǐ wǒ men xiǎng xiàng de yào dà de duō. Tā zhǐ xū yào shí jiān bù duàn chéng zhǎng, màn màn shì yìng jiù hǎo le.",
+          "english": "A person's potential is often far greater than we imagine. He just needs time to keep growing and gradually adapt."
+        },
+        {
+          "speaker": "B",
+          "chinese": "你说得有道理。那段经历无论结果如何，都会让他完成一次重要的转变。",
+          "pinyin": "Nǐ shuō de yǒu dào lǐ. Nà duàn jīng lì wú lùn jié guǒ rú hé, dōu huì ràng tā wán chéng yī cì zhòng yào de zhuǎn biàn.",
+          "english": "You make a good point. That experience, whatever the outcome, will lead him to complete an important transformation."
+        },
+        {
+          "speaker": "A",
+          "chinese": "正是。改变从来都不是失去什么，而是发现了一个更真实的自己。",
+          "pinyin": "Zhèng shì. Gǎi biàn cóng lái dōu bú shì shī qù shén me, ér shì fā xiàn le yī gè gèng zhēn shí de zì jǐ.",
+          "english": "Exactly. Change is never about losing something — it is about discovering a more authentic version of yourself."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Passive or Proactive?",
+      "title_chinese": "被动还是主动",
+      "speakers": {
+        "A": { "name": "加缪", "role": "philosophical writer", "gender": "male" },
+        "B": { "name": "慈欣", "role": "analytical thinker", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "你觉得人真的会主动改变吗？还是说，人只有在被迫的情况下才会改变？",
+          "pinyin": "Nǐ jué de rén zhēn de huì zhǔ dòng gǎi biàn ma? Hái shì shuō, rén zhǐ yǒu zài bèi pò de qíng kuàng xià cái huì gǎi biàn?",
+          "english": "Do you think people truly change proactively? Or do people only change when they are forced to?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "从数据上看，大多数人确实是被动的，在压力下不得不改变。但也有少数人，是真正主动突破自我的。",
+          "pinyin": "Cóng shù jù shàng kàn, dà duō shù rén què shí shì bèi dòng de, zài yā lì xià bù dé bù gǎi biàn. Dàn yě yǒu shǎo shù rén, shì zhēn zhèng zhǔ dòng tū pò zì wǒ de.",
+          "english": "From a data perspective, most people are indeed passive — they have no choice but to change under pressure. But there are also a minority who genuinely and proactively break through their own limits."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那个区别在哪里呢？",
+          "pinyin": "Nà gè qū bié zài nǎ lǐ ne?",
+          "english": "Where does that difference lie?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "我认为，关键在于态度。与其等待环境逼你改变，不如主动去改变自己的思维方式和习惯。",
+          "pinyin": "Wǒ rèn wéi, guān jiàn zài yú tài dù. Yǔ qí děng dài huán jìng bī nǐ gǎi biàn, bù rú zhǔ dòng qù gǎi biàn zì jǐ de sī wéi fāng shì hé xí guàn.",
+          "english": "I think the key lies in attitude. Rather than waiting for the environment to force you to change, it is better to proactively change your own mindset and habits."
+        },
+        {
+          "speaker": "B",
+          "chinese": "这在理论上说得通，但现实中，主动改变需要很强的内在动力，不是每个人都有这种能力。",
+          "pinyin": "Zhè zài lǐ lùn shàng shuō de tōng, dàn xiàn shí zhōng, zhǔ dòng gǎi biàn xū yào hěn qiáng de nèi zài dòng lì, bú shì měi gè rén dōu yǒu zhè zhǒng néng lì.",
+          "english": "That makes sense in theory, but in practice, proactive change requires strong internal motivation — not everyone has that capacity."
+        },
+        {
+          "speaker": "A",
+          "chinese": "也许不是每个人天生就有，但每个人都可以不断地培养它。潜力从来不是固定的。",
+          "pinyin": "Yě xǔ bú shì měi gè rén tiān shēng jiù yǒu, dàn měi gè rén dōu kě yǐ bù duàn de péi yǎng tā. Qián lì cóng lái bú shì gù dìng de.",
+          "english": "Perhaps not everyone is born with it, but everyone can continuously cultivate it. Potential is never fixed."
+        }
+      ]
+    }
+  ]
+}

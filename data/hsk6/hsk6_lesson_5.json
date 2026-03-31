@@ -1,0 +1,590 @@
+{
+  "lesson": 5,
+  "level": 6,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "The Art of Debate",
+  "topic_chinese": "争论的奇迹（一）",
+  "vocabulary": [
+    {
+      "id": "hsk6_l5_01",
+      "chinese": "争论",
+      "pinyin": "zhēng lùn",
+      "english": "To argue, debate; dispute",
+      "part_of_speech": "verb/noun",
+      "example": "一场有意义的争论，能让双方都获得新的认识。",
+      "translation": "A meaningful debate can give both sides new understanding."
+    },
+    {
+      "id": "hsk6_l5_02",
+      "chinese": "奇迹",
+      "pinyin": "qí jì",
+      "english": "Miracle, wonder",
+      "part_of_speech": "noun",
+      "example": "谁也没想到，这场激烈的争论最终创造了一个奇迹——双方达成了共识。",
+      "translation": "No one expected that this intense debate would ultimately create a miracle — both sides reached a consensus."
+    },
+    {
+      "id": "hsk6_l5_03",
+      "chinese": "毕竟",
+      "pinyin": "bì jìng",
+      "english": "After all, in the end",
+      "part_of_speech": "adv",
+      "example": "毕竟，争论是帮助我们成长的重要方式之一。",
+      "translation": "After all, debate is one of the important ways that helps us grow."
+    },
+    {
+      "id": "hsk6_l5_04",
+      "chinese": "逐渐",
+      "pinyin": "zhú jiàn",
+      "english": "Gradually, step by step",
+      "part_of_speech": "adv",
+      "example": "经过多次讨论，他们逐渐开始理解彼此的立场。",
+      "translation": "After many discussions, they gradually began to understand each other's positions."
+    },
+    {
+      "id": "hsk6_l5_05",
+      "chinese": "或许",
+      "pinyin": "huò xǔ",
+      "english": "Perhaps, maybe (formal)",
+      "part_of_speech": "adv",
+      "example": "或许对方的观点也有它的道理，值得我们认真考虑。",
+      "translation": "Perhaps the other side's viewpoint also has its merits and deserves our serious consideration."
+    },
+    {
+      "id": "hsk6_l5_06",
+      "chinese": "观点",
+      "pinyin": "guān diǎn",
+      "english": "Viewpoint, perspective",
+      "part_of_speech": "noun",
+      "example": "在这次讨论中，每个人都分享了不同的观点。",
+      "translation": "In this discussion, everyone shared different viewpoints."
+    },
+    {
+      "id": "hsk6_l5_07",
+      "chinese": "意见",
+      "pinyin": "yì jiàn",
+      "english": "Opinion, view; suggestion",
+      "part_of_speech": "noun",
+      "example": "他鼓励每位成员大胆表达自己的意见。",
+      "translation": "He encouraged every member to boldly express their own opinions."
+    },
+    {
+      "id": "hsk6_l5_08",
+      "chinese": "沟通",
+      "pinyin": "gōu tōng",
+      "english": "To communicate",
+      "part_of_speech": "verb",
+      "example": "有效的沟通可以避免很多不必要的误解。",
+      "translation": "Effective communication can prevent many unnecessary misunderstandings."
+    },
+    {
+      "id": "hsk6_l5_09",
+      "chinese": "互相",
+      "pinyin": "hù xiāng",
+      "english": "Mutually, each other",
+      "part_of_speech": "adv",
+      "example": "只有互相尊重，才能真正做到有效沟通。",
+      "translation": "Only by respecting each other can one truly achieve effective communication."
+    },
+    {
+      "id": "hsk6_l5_10",
+      "chinese": "理解",
+      "pinyin": "lǐ jiě",
+      "english": "To understand; understanding",
+      "part_of_speech": "verb/noun",
+      "example": "理解他人的立场，是解决争论的第一步。",
+      "translation": "Understanding the other person's position is the first step in resolving a dispute."
+    },
+    {
+      "id": "hsk6_l5_11",
+      "chinese": "立场",
+      "pinyin": "lì chǎng",
+      "english": "Position, standpoint",
+      "part_of_speech": "noun",
+      "example": "无论压力多大，他都坚守自己的立场。",
+      "translation": "No matter how great the pressure, he always held firm to his own position."
+    },
+    {
+      "id": "hsk6_l5_12",
+      "chinese": "承认",
+      "pinyin": "chéng rèn",
+      "english": "To admit, acknowledge",
+      "part_of_speech": "verb",
+      "example": "能够承认自己的错误，是一种难得的品质。",
+      "translation": "Being able to admit one's mistakes is a rare and admirable quality."
+    },
+    {
+      "id": "hsk6_l5_13",
+      "chinese": "说服",
+      "pinyin": "shuō fú",
+      "english": "To persuade, convince",
+      "part_of_speech": "verb",
+      "example": "他用充分的理由和耐心说服了同事改变计划。",
+      "translation": "He persuaded his colleague to change the plan with solid reasoning and patience."
+    },
+    {
+      "id": "hsk6_l5_14",
+      "chinese": "坚持",
+      "pinyin": "jiān chí",
+      "english": "To persist, maintain (a position)",
+      "part_of_speech": "verb",
+      "example": "即使遇到反对，他依然坚持自己的观点。",
+      "translation": "Even when faced with opposition, he still persisted with his own viewpoint."
+    },
+    {
+      "id": "hsk6_l5_15",
+      "chinese": "思维",
+      "pinyin": "sī wéi",
+      "english": "Thinking, thought process",
+      "part_of_speech": "noun",
+      "example": "多接触不同的观点，有助于拓宽我们的思维。",
+      "translation": "Exposure to different viewpoints helps broaden our thinking."
+    },
+    {
+      "id": "hsk6_l5_p01",
+      "chinese": "各抒己见",
+      "pinyin": "gè shū jǐ jiàn",
+      "english": "Each person expresses their own view",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l5_p02",
+      "chinese": "争论不休",
+      "pinyin": "zhēng lùn bù xiū",
+      "english": "To argue endlessly",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l5_p03",
+      "chinese": "说服对方",
+      "pinyin": "shuō fú duì fāng",
+      "english": "To persuade the other side",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l5_p04",
+      "chinese": "毕竟如此",
+      "pinyin": "bì jìng rú cǐ",
+      "english": "After all, it is so",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l5_p05",
+      "chinese": "逐渐理解",
+      "pinyin": "zhú jiàn lǐ jiě",
+      "english": "To gradually understand",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "毕竟，一场真诚的争论能帮助双方更好地了解彼此的观点。",
+      "pinyin": "Bì jìng, yì chǎng zhēn chéng de zhēng lùn néng bāng zhù shuāng fāng gèng hǎo de liǎo jiě bǐ cǐ de guān diǎn.",
+      "english": "After all, a sincere debate can help both sides better understand each other's viewpoints."
+    },
+    {
+      "chinese": "通过不断沟通，他们逐渐找到了彼此都能接受的解决方案。",
+      "pinyin": "Tōng guò bú duàn gōu tōng, tā men zhú jiàn zhǎo dào le bǐ cǐ dōu néng jiē shòu de jiě jué fāng àn.",
+      "english": "Through continuous communication, they gradually found a solution that both sides could accept."
+    },
+    {
+      "chinese": "或许他的立场与我不同，但这并不意味着他是错的。",
+      "pinyin": "Huò xǔ tā de lì chǎng yǔ wǒ bù tóng, dàn zhè bìng bù yì wèi zhe tā shì cuò de.",
+      "english": "Perhaps his position differs from mine, but that doesn't mean he is wrong."
+    },
+    {
+      "chinese": "能够互相理解、承认分歧，是成熟沟通的表现。",
+      "pinyin": "Néng gòu hù xiāng lǐ jiě, chéng rèn fēn qí, shì chéng shú gōu tōng de biǎo xiàn.",
+      "english": "Being able to understand each other and acknowledge differences is a sign of mature communication."
+    },
+    {
+      "chinese": "他坚持自己的意见，却也愿意倾听对方的理由。",
+      "pinyin": "Tā jiān chí zì jǐ de yì jiàn, què yě yuàn yì qīng tīng duì fāng de lǐ yóu.",
+      "english": "He held firm to his own opinion, yet was also willing to listen to the other side's reasons."
+    },
+    {
+      "chinese": "说服对方不是靠强迫，而是靠清晰的思维和有力的论据。",
+      "pinyin": "Shuō fú duì fāng bú shì kào qiǎng pò, ér shì kào qīng xī de sī wéi hé yǒu lì de lùn jù.",
+      "english": "Persuading the other side is not achieved through force, but through clear thinking and compelling arguments."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "毕竟 — After all; in the final analysis",
+      "explanation": "毕竟 is an adverb meaning 'after all' or 'when all is said and done'. It introduces an underlying truth or reality that cannot be ignored, often used to justify or explain something. Structure: Subject + 毕竟 + [underlying truth/reality]. Note: 毕竟 differs from 到底 — 到底 is used in questions to press for a final answer, while 毕竟 draws a conclusion from facts. Example: 他毕竟是第一次参加这种讨论，紧张是正常的。(After all, it was his first time participating in this kind of discussion; being nervous is normal.)",
+      "examples": [
+        {
+          "chinese": "他毕竟是第一次参加这种讨论，紧张是正常的。",
+          "pinyin": "Tā bì jìng shì dì yī cì cān jiā zhè zhǒng tǎo lùn, jǐn zhāng shì zhèng cháng de.",
+          "english": "After all, it was his first time participating in this kind of discussion; being nervous is normal."
+        },
+        {
+          "chinese": "我们毕竟是朋友，遇到争论应该互相理解。",
+          "pinyin": "Wǒ men bì jìng shì péng yǒu, yù dào zhēng lùn yīng gāi hù xiāng lǐ jiě.",
+          "english": "After all, we are friends; when we have a dispute, we should try to understand each other."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他_____ 年纪还小，有些想法不成熟是可以理解的。",
+          "type": "multiple_choice",
+          "correct": "毕竟",
+          "options": ["毕竟", "或许", "逐渐", "互相"],
+          "option_pinyin": ["bì jìng", "huò xǔ", "zhú jiàn", "hù xiāng"],
+          "word_hints": { "年纪": "niánjì", "不成熟": "bù chéngshú" }
+        },
+        {
+          "question": "Choose the sentence that uses 毕竟 correctly.",
+          "type": "multiple_choice",
+          "correct": "这个项目毕竟是他负责的，他最有发言权。",
+          "options": [
+            "这个项目毕竟是他负责的，他最有发言权。",
+            "毕竟他没有来，所以会议取消了。",
+            "他毕竟来了，但是迟到了。",
+            "毕竟如果你同意，我们就开始吧。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": { "发言权": "fāyánquán" }
+        },
+        {
+          "question": "What is the main function of 毕竟 in a sentence?",
+          "type": "multiple_choice",
+          "correct": "To acknowledge an underlying truth that justifies a situation",
+          "options": [
+            "To acknowledge an underlying truth that justifies a situation",
+            "To express doubt about a future event",
+            "To show that one action happens before another",
+            "To ask for a definitive answer to a question"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "她毕竟努力了这么多年，_____。",
+          "type": "multiple_choice",
+          "correct": "成功是应该的",
+          "options": [
+            "成功是应该的",
+            "但是她很懒",
+            "虽然从未努力",
+            "因此她放弃了"
+          ],
+          "option_pinyin": ["chénggōng shì yīnggāi de", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "How does 毕竟 differ from 到底?",
+          "type": "multiple_choice",
+          "correct": "毕竟 draws a conclusion; 到底 presses for a final answer in questions",
+          "options": [
+            "毕竟 draws a conclusion; 到底 presses for a final answer in questions",
+            "They are interchangeable in all contexts",
+            "毕竟 is used only in negative sentences",
+            "到底 expresses an underlying truth while 毕竟 asks a question"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "逐渐 — Gradually / Step by step",
+      "explanation": "逐渐 is an adverb meaning 'gradually' or 'step by step'. It describes a change that happens slowly over time. Structure: Subject + 逐渐 + [change verb/state]. Compared with similar words: 慢慢 emphasizes a slow pace; 渐渐 is similar to 逐渐 but slightly more literary and often describes natural processes; 逐渐 is neutral and common in both written and spoken Chinese. Example: 通过多次争论，他们逐渐找到了共同点。(Through multiple debates, they gradually found common ground.)",
+      "examples": [
+        {
+          "chinese": "通过多次争论，他们逐渐找到了共同点。",
+          "pinyin": "Tōng guò duō cì zhēng lùn, tā men zhú jiàn zhǎo dào le gòng tóng diǎn.",
+          "english": "Through multiple debates, they gradually found common ground."
+        },
+        {
+          "chinese": "他逐渐意识到，坚持自己的立场并不意味着拒绝沟通。",
+          "pinyin": "Tā zhú jiàn yì shí dào, jiān chí zì jǐ de lì chǎng bìng bù yì wèi zhe jù jué gōu tōng.",
+          "english": "He gradually realized that holding firm to his own position does not mean refusing to communicate."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "经过几个月的练习，她的思维能力_____ 提高了。",
+          "type": "multiple_choice",
+          "correct": "逐渐",
+          "options": ["逐渐", "毕竟", "或许", "坚持"],
+          "option_pinyin": ["zhú jiàn", "bì jìng", "huò xǔ", "jiān chí"],
+          "word_hints": { "思维能力": "sīwéi nénglì" }
+        },
+        {
+          "question": "Which sentence uses 逐渐 most naturally?",
+          "type": "multiple_choice",
+          "correct": "随着时间推移，他们逐渐理解了彼此的观点。",
+          "options": [
+            "随着时间推移，他们逐渐理解了彼此的观点。",
+            "他逐渐昨天去了图书馆。",
+            "逐渐我不喜欢争论。",
+            "她逐渐但是同意了。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": { "随着": "suízhe", "时间推移": "shíjiān tuīyí" }
+        },
+        {
+          "question": "What is the key difference between 逐渐 and 慢慢?",
+          "type": "multiple_choice",
+          "correct": "逐渐 focuses on gradual change over time; 慢慢 emphasizes a slow pace of action",
+          "options": [
+            "逐渐 focuses on gradual change over time; 慢慢 emphasizes a slow pace of action",
+            "They have completely opposite meanings",
+            "慢慢 can only be used with negative sentences",
+            "逐渐 is only used in questions"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "他起初不接受批评，但后来_____ 学会了从善如流。",
+          "type": "multiple_choice",
+          "correct": "逐渐",
+          "options": ["逐渐", "毕竟", "互相", "承认"],
+          "option_pinyin": ["zhú jiàn", "bì jìng", "hù xiāng", "chéng rèn"],
+          "word_hints": { "从善如流": "cóng shàn rú liú" }
+        },
+        {
+          "question": "Which word is most interchangeable with 逐渐 in a literary context?",
+          "type": "multiple_choice",
+          "correct": "渐渐",
+          "options": ["渐渐", "突然", "始终", "立刻"],
+          "option_pinyin": ["jiàn jiàn", "tū rán", "shǐ zhōng", "lì kè"],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "或许 — Perhaps / Maybe (formal)",
+      "explanation": "或许 is a formal adverb meaning 'perhaps' or 'maybe'. It expresses possibility with a reflective or tentative tone, and is common in written Chinese and formal speech. Compared with similar words: 也许 — everyday spoken Chinese, casual and common; 或许 — more formal and literary, often used in essays and speeches; 可能 — focuses on probability or likelihood ('it is possible that...'). Structure: 或许 + [proposition/assessment]. Example: 或许争论本身并不重要，重要的是彼此了解。(Perhaps the debate itself is not important; what matters is understanding each other.)",
+      "examples": [
+        {
+          "chinese": "或许争论本身并不重要，重要的是彼此了解。",
+          "pinyin": "Huò xǔ zhēng lùn běn shēn bìng bù zhòng yào, zhòng yào de shì bǐ cǐ liǎo jiě.",
+          "english": "Perhaps the debate itself is not important; what matters is understanding each other."
+        },
+        {
+          "chinese": "或许他的沉默并不代表他同意，只是他还在思考。",
+          "pinyin": "Huò xǔ tā de chén mò bìng bù dài biǎo tā tóng yì, zhǐ shì tā hái zài sī kǎo.",
+          "english": "Perhaps his silence doesn't mean he agrees; he may simply still be thinking."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 我们对这个问题的理解还不够深入。",
+          "type": "multiple_choice",
+          "correct": "或许",
+          "options": ["或许", "毕竟", "互相", "逐渐"],
+          "option_pinyin": ["huò xǔ", "bì jìng", "hù xiāng", "zhú jiàn"],
+          "word_hints": { "深入": "shēnrù" }
+        },
+        {
+          "question": "Which context is 或许 most appropriate for?",
+          "type": "multiple_choice",
+          "correct": "A formal essay or speech",
+          "options": [
+            "A formal essay or speech",
+            "Casual text messages with friends",
+            "Giving an urgent command",
+            "Stating a known fact"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "How does 或许 differ from 可能?",
+          "type": "multiple_choice",
+          "correct": "或许 reflects a tentative tone; 可能 focuses on probability or likelihood",
+          "options": [
+            "或许 reflects a tentative tone; 可能 focuses on probability or likelihood",
+            "They are identical in meaning and register",
+            "可能 is more formal than 或许",
+            "或许 is only used in negative sentences"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "这个方法_____ 不是最好的，但在目前的条件下是可行的。",
+          "type": "multiple_choice",
+          "correct": "或许",
+          "options": ["或许", "坚持", "说服", "承认"],
+          "option_pinyin": ["huò xǔ", "jiān chí", "shuō fú", "chéng rèn"],
+          "word_hints": { "可行": "kěxíng" }
+        },
+        {
+          "question": "Choose the most natural substitute for 或许 in everyday conversation.",
+          "type": "multiple_choice",
+          "correct": "也许",
+          "options": ["也许", "毕竟", "逐渐", "互相"],
+          "option_pinyin": ["yě xǔ", "bì jìng", "zhú jiàn", "hù xiāng"],
+          "word_hints": {}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "title": "朝三暮四 — A Tale of Clever Deception",
+      "title_chinese": "朝三暮四的古今义",
+      "content": "The idiom 朝三暮四 (zhāo sān mù sì) comes from a famous story in the Zhuangzi, the classic Taoist text. A monkey keeper was running low on food and told his monkeys: 'From now on, you will get three chestnuts in the morning and four in the evening.' The monkeys were furious. So he said: 'All right, I will give you four in the morning and three in the evening.' The monkeys were delighted — even though the total number of chestnuts was exactly the same. Zhuangzi used this story to illustrate how people can be deceived by superficial changes, focusing on appearances rather than substance. In its original context, 朝三暮四 describes being fooled by trivial differences. Over time, the meaning shifted: in modern Chinese, 朝三暮四 most commonly means to be fickle, inconsistent, or unreliable — like someone who constantly changes their mind or their position. In a debate, a person who is 朝三暮四 — who flip-flops between opposing views without reason — quickly loses the respect and trust of their audience. A consistent and well-reasoned立场 (position) is essential for credibility in any discussion.",
+      "idioms": [
+        {
+          "chinese": "朝三暮四",
+          "pinyin": "zhāo sān mù sì",
+          "english": "Fickle; inconsistent; changing positions frequently (lit. three in the morning, four in the evening)"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which word means 'after all' and acknowledges an underlying truth?",
+      "type": "multiple_choice",
+      "correct": "毕竟",
+      "options": ["毕竟", "逐渐", "互相", "或许"],
+      "word_hints": {}
+    },
+    {
+      "question": "他们的关系_____ 得到了改善，争论反而拉近了他们的距离。",
+      "type": "multiple_choice",
+      "correct": "逐渐",
+      "options": ["逐渐", "坚持", "承认", "说服"],
+      "word_hints": { "改善": "gǎishàn", "距离": "jùlí" }
+    },
+    {
+      "question": "_____ 这个问题没有标准答案，每个人都有权表达自己的观点。",
+      "type": "multiple_choice",
+      "correct": "毕竟",
+      "options": ["毕竟", "逐渐", "沟通", "立场"],
+      "word_hints": { "标准答案": "biāozhǔn dá'àn" }
+    },
+    {
+      "question": "What does the idiom 朝三暮四 mean in modern Chinese?",
+      "type": "multiple_choice",
+      "correct": "To be fickle and keep changing one's mind",
+      "options": [
+        "To be fickle and keep changing one's mind",
+        "To be very generous",
+        "To work hard morning and evening",
+        "To be extremely logical"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "他无论如何都不愿意_____ 自己当初的判断是错误的。",
+      "type": "multiple_choice",
+      "correct": "承认",
+      "options": ["承认", "说服", "坚持", "沟通"],
+      "word_hints": { "判断": "pànduàn" }
+    },
+    {
+      "question": "Which phrase best describes a debate where everyone can share their own views?",
+      "type": "multiple_choice",
+      "correct": "各抒己见",
+      "options": ["各抒己见", "争论不休", "毕竟如此", "逐渐理解"],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Is Debate Useful?",
+      "title_chinese": "争论有用吗？",
+      "speakers": {
+        "A": { "name": "但丁", "role": "philosopher", "gender": "male" },
+        "B": { "name": "鲁迅", "role": "writer", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你觉得争论真的有用吗？还是只会制造冲突？",
+          "pinyin": "Nǐ jué de zhēng lùn zhēn de yǒu yòng ma? Hái shì zhǐ huì zhì zào chōng tū?",
+          "english": "Do you think debate is truly useful? Or does it only create conflict?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "毕竟，人们的观点各不相同，争论是不可避免的。",
+          "pinyin": "Bì jìng, rén men de guān diǎn gè bù xiāng tóng, zhēng lùn shì bù kě bì miǎn de.",
+          "english": "After all, people's viewpoints differ greatly; debate is unavoidable."
+        },
+        {
+          "speaker": "A",
+          "chinese": "但有时候争论不休，双方都不愿意让步，这有什么意义呢？",
+          "pinyin": "Dàn yǒu shí hòu zhēng lùn bù xiū, shuāng fāng dōu bú yuàn yì ràng bù, zhè yǒu shén me yì yì ne?",
+          "english": "But sometimes people argue endlessly, and neither side is willing to give ground — what is the point of that?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "关键不在于谁赢，而在于通过争论真正了解对方的观点。",
+          "pinyin": "Guān jiàn bú zài yú shuí yíng, ér zài yú tōng guò zhēng lùn zhēn zhèng liǎo jiě duì fāng de guān diǎn.",
+          "english": "The key is not about who wins, but about truly understanding the other side's viewpoint through debate."
+        },
+        {
+          "speaker": "A",
+          "chinese": "所以你认为，即使争论激烈，也可能产生积极的结果？",
+          "pinyin": "Suǒ yǐ nǐ rèn wéi, jí shǐ zhēng lùn jī liè, yě kě néng chǎn shēng jī jí de jié guǒ?",
+          "english": "So you think that even if a debate is intense, it can still produce positive results?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "正是如此。真正的奇迹在于，争论有时能让两个对立的人走得更近。",
+          "pinyin": "Zhèng shì rú cǐ. Zhēn zhèng de qí jì zài yú, zhēng lùn yǒu shí néng ràng liǎng gè duì lì de rén zǒu de gèng jìn.",
+          "english": "Exactly. The real miracle is that debate can sometimes bring two opposing people closer together."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Changing My Mind",
+      "title_chinese": "改变了想法",
+      "speakers": {
+        "A": { "name": "但丁", "role": "philosopher", "gender": "male" },
+        "B": { "name": "加缪", "role": "writer", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你有没有经历过一次争论，让你真正改变了自己的想法？",
+          "pinyin": "Nǐ yǒu méi yǒu jīng lì guò yí cì zhēng lùn, ràng nǐ zhēn zhèng gǎi biàn le zì jǐ de xiǎng fǎ?",
+          "english": "Have you ever had a debate that truly changed your mind?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "有过。起初我坚持认为个人自由比集体利益更重要，但对方的论点让我逐渐动摇了。",
+          "pinyin": "Yǒu guò. Qǐ chū wǒ jiān chí rèn wéi gè rén zì yóu bǐ jí tǐ lì yì gèng zhòng yào, dàn duì fāng de lùn diǎn ràng wǒ zhú jiàn dòng yáo le.",
+          "english": "Yes. At first I firmly believed that individual freedom was more important than collective interests, but the other side's arguments gradually made me waver."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你最终承认了自己的看法不够全面吗？",
+          "pinyin": "Nǐ zuì zhōng chéng rèn le zì jǐ de kàn fǎ bú gòu quán miàn ma?",
+          "english": "Did you ultimately admit that your view was not comprehensive enough?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "承认了。我意识到，接受新的观点并不代表软弱，而是一种成长。",
+          "pinyin": "Chéng rèn le. Wǒ yì shí dào, jiē shòu xīn de guān diǎn bìng bù dài biǎo ruǎn ruò, ér shì yì zhǒng chéng zhǎng.",
+          "english": "I did. I realized that accepting new viewpoints does not represent weakness, but rather a form of growth."
+        },
+        {
+          "speaker": "A",
+          "chinese": "所以是对方说服了你，还是你自己逐渐想通了？",
+          "pinyin": "Suǒ yǐ shì duì fāng shuō fú le nǐ, hái shì nǐ zì jǐ zhú jiàn xiǎng tōng le?",
+          "english": "So was it the other side that persuaded you, or did you gradually work it out yourself?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "两者都有。被说服的过程，其实就是思维逐渐拓展的过程。",
+          "pinyin": "Liǎng zhě dōu yǒu. Bèi shuō fú de guò chéng, qí shí jiù shì sī wéi zhú jiàn tuò zhǎn de guò chéng.",
+          "english": "Both. The process of being persuaded is, in essence, the process of one's thinking gradually expanding."
+        }
+      ]
+    }
+  ]
+}

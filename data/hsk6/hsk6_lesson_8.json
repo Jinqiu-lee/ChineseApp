@@ -1,0 +1,595 @@
+{
+  "lesson": 8,
+  "level": 6,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Technology and Wellbeing",
+  "topic_chinese": "闹钟的危害（二）",
+  "vocabulary": [
+    {
+      "id": "hsk6_l8_01",
+      "chinese": "科技",
+      "pinyin": "kē jì",
+      "english": "Technology; science and technology",
+      "part_of_speech": "noun",
+      "example": "现代科技改变了人们的睡眠方式。",
+      "translation": "Modern technology has changed people's sleep habits."
+    },
+    {
+      "id": "hsk6_l8_02",
+      "chinese": "依赖",
+      "pinyin": "yī lài",
+      "english": "To depend on; to rely on",
+      "part_of_speech": "verb",
+      "example": "很多人太依赖闹钟，反而失去了自然醒来的能力。",
+      "translation": "Many people rely too much on alarm clocks and lose the ability to wake up naturally."
+    },
+    {
+      "id": "hsk6_l8_03",
+      "chinese": "醒来",
+      "pinyin": "xǐng lái",
+      "english": "To wake up",
+      "part_of_speech": "verb",
+      "example": "如果能自然醒来，人的状态会好得多。",
+      "translation": "If one can wake up naturally, the person's condition will be much better."
+    },
+    {
+      "id": "hsk6_l8_04",
+      "chinese": "温和",
+      "pinyin": "wēn hé",
+      "english": "Gentle; mild; moderate",
+      "part_of_speech": "adjective",
+      "example": "用温和的音乐代替刺耳的闹铃，起床会更舒服。",
+      "translation": "Using gentle music instead of a harsh alarm tone makes getting up more comfortable."
+    },
+    {
+      "id": "hsk6_l8_05",
+      "chinese": "光线",
+      "pinyin": "guāng xiàn",
+      "english": "Light; rays of light",
+      "part_of_speech": "noun",
+      "example": "早晨的自然光线能帮助调节人体的生物钟。",
+      "translation": "Morning natural light can help regulate the body's biological clock."
+    },
+    {
+      "id": "hsk6_l8_06",
+      "chinese": "刺激",
+      "pinyin": "cì jī",
+      "english": "To stimulate; stimulus; stimulating",
+      "part_of_speech": "verb/noun",
+      "example": "突然的噪音是对大脑的强烈刺激，会引起应激反应。",
+      "translation": "Sudden noise is a strong stimulus to the brain and can trigger a stress response."
+    },
+    {
+      "id": "hsk6_l8_07",
+      "chinese": "代替",
+      "pinyin": "dài tì",
+      "english": "To replace; to substitute",
+      "part_of_speech": "verb",
+      "example": "有人尝试用光照闹钟代替传统的声音闹钟。",
+      "translation": "Some people try using light-based alarm clocks to replace traditional sound alarms."
+    },
+    {
+      "id": "hsk6_l8_08",
+      "chinese": "改善",
+      "pinyin": "gǎi shàn",
+      "english": "To improve; to make better",
+      "part_of_speech": "verb",
+      "example": "养成规律的作息习惯可以有效改善睡眠质量。",
+      "translation": "Developing regular sleep habits can effectively improve sleep quality."
+    },
+    {
+      "id": "hsk6_l8_09",
+      "chinese": "方式",
+      "pinyin": "fāng shì",
+      "english": "Method; way; approach",
+      "part_of_speech": "noun",
+      "example": "每个人可以根据自己的情况找到最适合的起床方式。",
+      "translation": "Each person can find the most suitable way to wake up based on their own situation."
+    },
+    {
+      "id": "hsk6_l8_10",
+      "chinese": "建议",
+      "pinyin": "jiàn yì",
+      "english": "To suggest; recommendation; suggestion",
+      "part_of_speech": "verb/noun",
+      "example": "专家建议，尽量在同一时间入睡和起床。",
+      "translation": "Experts suggest going to sleep and waking up at the same time as much as possible."
+    },
+    {
+      "id": "hsk6_l8_11",
+      "chinese": "压力",
+      "pinyin": "yā lì",
+      "english": "Pressure; stress",
+      "part_of_speech": "noun",
+      "example": "减少早晨的压力，有助于开始愉快的一天。",
+      "translation": "Reducing morning stress helps to start the day on a pleasant note."
+    },
+    {
+      "id": "hsk6_l8_12",
+      "chinese": "逐步",
+      "pinyin": "zhú bù",
+      "english": "Step by step; gradually (planned/deliberate)",
+      "part_of_speech": "adverb",
+      "example": "改变睡眠习惯需要时间，应该逐步调整，不能操之过急。",
+      "translation": "Changing sleep habits takes time; one should adjust step by step and not rush."
+    },
+    {
+      "id": "hsk6_l8_13",
+      "chinese": "质量",
+      "pinyin": "zhì liàng",
+      "english": "Quality",
+      "part_of_speech": "noun",
+      "example": "睡眠质量比睡眠时间更重要。",
+      "translation": "Sleep quality is more important than sleep duration."
+    },
+    {
+      "id": "hsk6_l8_14",
+      "chinese": "反而",
+      "pinyin": "fǎn ér",
+      "english": "On the contrary; instead; unexpectedly the opposite",
+      "part_of_speech": "adverb",
+      "example": "他以为多睡会解决疲劳，反而让他整天昏昏沉沉。",
+      "translation": "He thought sleeping more would solve his fatigue, but on the contrary it left him groggy all day."
+    },
+    {
+      "id": "hsk6_l8_15",
+      "chinese": "及时",
+      "pinyin": "jí shí",
+      "english": "Timely; promptly; in time",
+      "part_of_speech": "adjective/adverb",
+      "example": "感到疲劳时，应该及时休息，不要硬撑。",
+      "translation": "When feeling tired, one should rest promptly and not force oneself to keep going."
+    },
+    {
+      "id": "hsk6_l8_p01",
+      "chinese": "改善睡眠质量",
+      "pinyin": "gǎi shàn shuì mián zhì liàng",
+      "english": "To improve sleep quality",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l8_p02",
+      "chinese": "逐步调整",
+      "pinyin": "zhú bù tiáo zhěng",
+      "english": "To adjust gradually / step by step",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l8_p03",
+      "chinese": "自然光线",
+      "pinyin": "zì rán guāng xiàn",
+      "english": "Natural light",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l8_p04",
+      "chinese": "反而更累",
+      "pinyin": "fǎn ér gèng lèi",
+      "english": "On the contrary, even more tired",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l8_p05",
+      "chinese": "建议使用",
+      "pinyin": "jiàn yì shǐ yòng",
+      "english": "To recommend using",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "与其依赖刺耳的闹钟，不如逐步培养规律的作息习惯。",
+      "pinyin": "Yǔ qí yī lài cì ěr de nào zhōng, bù rú zhú bù péi yǎng guī lǜ de zuò xī xí guàn.",
+      "english": "Rather than relying on a jarring alarm clock, it is better to gradually develop regular sleep habits."
+    },
+    {
+      "chinese": "自然光线能温和地刺激大脑，帮助人更舒适地醒来。",
+      "pinyin": "Zì rán guāng xiàn néng wēn hé de cì jī dà nǎo, bāng zhù rén gèng shū shì de xǐng lái.",
+      "english": "Natural light can gently stimulate the brain and help a person wake up more comfortably."
+    },
+    {
+      "chinese": "睡眠质量比睡眠时长更重要，反而追求时间却忽视了质量。",
+      "pinyin": "Shuì mián zhì liàng bǐ shuì mián shí cháng gèng zhòng yào, fǎn ér zhuī qiú shí jiān què hū shì le zhì liàng.",
+      "english": "Sleep quality is more important than sleep duration; chasing more hours while ignoring quality is counterproductive."
+    },
+    {
+      "chinese": "专家建议用光照闹钟代替传统声音闹钟，以减少早晨压力。",
+      "pinyin": "Zhuān jiā jiàn yì yòng guāng zhào nào zhōng dài tì chuán tǒng shēng yīn nào zhōng, yǐ jiǎn shǎo zǎo chén yā lì.",
+      "english": "Experts recommend using light-based alarm clocks to replace traditional sound alarms in order to reduce morning stress."
+    },
+    {
+      "chinese": "感到疲劳时应该及时休息，而不是靠咖啡或闹钟强制保持清醒。",
+      "pinyin": "Gǎn dào pí láo shí yīng gāi jí shí xiū xi, ér bú shì kào kā fēi huò nào zhōng qiáng zhì bǎo chí qīng xǐng.",
+      "english": "When feeling fatigued, one should rest promptly rather than relying on coffee or alarms to force oneself to stay awake."
+    },
+    {
+      "chinese": "改变睡眠习惯需要逐步进行，一下子改变反而可能适得其反。",
+      "pinyin": "Gǎi biàn shuì mián xí guàn xū yào zhú bù jìn xíng, yī xià zi gǎi biàn fǎn ér kě néng shì dé qí fǎn.",
+      "english": "Changing sleep habits needs to be done step by step; changing everything all at once may on the contrary be counterproductive."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "反而 — On the contrary; instead (opposite of expectation)",
+      "explanation": "反而 is used when the actual result is the opposite of what was expected or desired. It highlights a surprising reversal. Structure: [Expected situation / condition] + 反而 + [Opposite/unexpected actual result]. Often combined with 却 for added emphasis. Compare with 倒是 (mild contrast) — 反而 implies a more dramatic, often negative reversal. Example: 他多睡了两小时，反而感觉更累了。(He slept two more hours; on the contrary, he felt even more tired.)",
+      "examples": [
+        {
+          "chinese": "他以为早点睡会精神好，反而睡得更差。",
+          "pinyin": "Tā yǐ wéi zǎo diǎn shuì huì jīng shén hǎo, fǎn ér shuì de gèng chà.",
+          "english": "He thought sleeping earlier would make him feel better; on the contrary, he slept even worse."
+        },
+        {
+          "chinese": "用了那个新方法，工作效率反而降低了。",
+          "pinyin": "Yòng le nà ge xīn fāng fǎ, gōng zuò xiào lǜ fǎn ér jiàng dī le.",
+          "english": "After using that new method, work efficiency actually decreased instead."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他本来想早点睡觉，结果看了两个小时手机，_____ 睡得更晚了。",
+          "type": "multiple_choice",
+          "correct": "反而",
+          "options": ["反而", "因此", "顺便", "逐渐"],
+          "option_pinyin": ["fǎn ér", "yīn cǐ", "shùn biàn", "zhú jiàn"],
+          "word_hints": {"手机": "shǒu jī"}
+        },
+        {
+          "question": "Choose the sentence that correctly uses 反而.",
+          "type": "multiple_choice",
+          "correct": "他喝了很多水，口渴反而更严重了。",
+          "options": [
+            "他喝了很多水，口渴反而更严重了。",
+            "反而他喝了很多水，口渴更严重了。",
+            "他喝了很多水，反而口渴是严重了。",
+            "他喝了很多反而水，口渴更严重了。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {"口渴": "kǒu kě"}
+        },
+        {
+          "question": "What does 反而 indicate in a sentence?",
+          "type": "multiple_choice",
+          "correct": "The result is the opposite of what was expected",
+          "options": [
+            "The result is the opposite of what was expected",
+            "The result is the same as expected",
+            "The result happened gradually",
+            "The result happened because of an external cause"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "减少用闹钟本来是为了减压，结果他 _____ 更焦虑了，担心睡过头。",
+          "type": "multiple_choice",
+          "correct": "反而",
+          "options": ["反而", "从而", "尽管", "虽然"],
+          "option_pinyin": ["fǎn ér", "cóng ér", "jǐn guǎn", "suī rán"],
+          "word_hints": {"焦虑": "jiāo lǜ", "睡过头": "shuì guò tóu"}
+        },
+        {
+          "question": "多休息本来应该让人精力充沛，但他 _____ 变得更懒了。",
+          "type": "multiple_choice",
+          "correct": "反而",
+          "options": ["反而", "因而", "仍然", "竟然"],
+          "option_pinyin": ["fǎn ér", "yīn ér", "réng rán", "jìng rán"],
+          "word_hints": {"精力充沛": "jīng lì chōng pèi"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "与其…不如 — Rather than…it is better to",
+      "explanation": "与其…不如 is used to compare two options and recommend one over the other. Structure: 与其 + [less preferred / less effective option] + 不如 + [better / recommended option]. This pattern expresses a preference or recommendation by showing that option B is superior to option A. Example: 与其每天依赖闹钟，不如培养自然醒来的生物节律。(Rather than relying on an alarm clock every day, it is better to develop a natural waking rhythm.)",
+      "examples": [
+        {
+          "chinese": "与其睡前玩手机，不如看一本书让自己放松。",
+          "pinyin": "Yǔ qí shuì qián wán shǒu jī, bù rú kàn yì běn shū ràng zì jǐ fàng sōng.",
+          "english": "Rather than playing on your phone before sleep, it is better to read a book to relax."
+        },
+        {
+          "chinese": "与其用药物改善睡眠，不如从根本上调整生活习惯。",
+          "pinyin": "Yǔ qí yòng yào wù gǎi shàn shuì mián, bù rú cóng gēn běn shàng tiáo zhěng shēng huó xí guàn.",
+          "english": "Rather than using medication to improve sleep, it is better to fundamentally adjust one's lifestyle habits."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "与其每天喝咖啡提神，_____ 保证充足的睡眠。",
+          "type": "multiple_choice",
+          "correct": "不如",
+          "options": ["不如", "不是", "不好", "不对"],
+          "option_pinyin": ["bù rú", "bú shì", "bù hǎo", "bú duì"],
+          "word_hints": {"提神": "tí shén", "充足": "chōng zú"}
+        },
+        {
+          "question": "Choose the correctly structured 与其…不如 sentence.",
+          "type": "multiple_choice",
+          "correct": "与其抱怨睡不好，不如改变睡前习惯。",
+          "options": [
+            "与其抱怨睡不好，不如改变睡前习惯。",
+            "不如抱怨睡不好，与其改变睡前习惯。",
+            "与其不如抱怨睡不好，改变睡前习惯。",
+            "抱怨与其睡不好，改变不如睡前习惯。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {"抱怨": "bào yuàn"}
+        },
+        {
+          "question": "What is the function of 与其…不如?",
+          "type": "multiple_choice",
+          "correct": "To compare two options and recommend one over the other",
+          "options": [
+            "To compare two options and recommend one over the other",
+            "To express a contrast between past and present",
+            "To show two things happening at the same time",
+            "To indicate a cause-and-effect relationship"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "与其用刺激性的闹钟吵醒自己，_____ 尝试光照闹钟。",
+          "type": "multiple_choice",
+          "correct": "不如",
+          "options": ["不如", "不过", "不但", "不管"],
+          "option_pinyin": ["bù rú", "bú guò", "bú dàn", "bù guǎn"],
+          "word_hints": {"刺激性": "cì jī xìng", "光照": "guāng zhào"}
+        },
+        {
+          "question": "_____ 强迫自己早起，不如让身体慢慢适应新的作息时间。",
+          "type": "multiple_choice",
+          "correct": "与其",
+          "options": ["与其", "既然", "虽然", "尽管"],
+          "option_pinyin": ["yǔ qí", "jì rán", "suī rán", "jǐn guǎn"],
+          "word_hints": {"强迫": "qiǎng pò", "适应": "shì yìng"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "逐步 vs 逐渐 — Step by step (deliberate) vs Gradually (natural)",
+      "explanation": "Both 逐步 and 逐渐 describe gradual change, but with a key difference: 逐步 (zhú bù) emphasizes deliberate, planned, step-by-step progress — each step is intentional. It is often used with verbs of purposeful action. 逐渐 (zhú jiàn) describes a natural, unplanned gradual change — things change on their own over time. Structure: both are used as adverbs before a verb. Examples: 逐步 — 我们需要逐步改变作息规律。(We need to change sleep patterns step by step — deliberate plan.) 逐渐 — 他的睡眠质量逐渐改善了。(His sleep quality gradually improved — natural process.)",
+      "examples": [
+        {
+          "chinese": "专家建议逐步减少使用闹钟的次数，而不是一下子停用。",
+          "pinyin": "Zhuān jiā jiàn yì zhú bù jiǎn shǎo shǐ yòng nào zhōng de cì shù, ér bú shì yī xià zi tíng yòng.",
+          "english": "Experts suggest gradually reducing the number of alarms step by step, rather than stopping all at once."
+        },
+        {
+          "chinese": "坚持三周后，他的生物钟逐渐恢复了正常节奏。",
+          "pinyin": "Jiān chí sān zhōu hòu, tā de shēng wù zhōng zhú jiàn huī fù le zhèng cháng jiē zòu.",
+          "english": "After persisting for three weeks, his biological clock gradually returned to a normal rhythm."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "我们制定了计划，要_____ 把睡觉时间提前到11点。",
+          "type": "multiple_choice",
+          "correct": "逐步",
+          "options": ["逐步", "逐渐", "慢慢地", "突然"],
+          "option_pinyin": ["zhú bù", "zhú jiàn", "màn màn de", "tū rán"],
+          "word_hints": {"提前": "tí qián"}
+        },
+        {
+          "question": "经过几个月不用闹钟的训练，她的睡眠质量_____ 有所提升。",
+          "type": "multiple_choice",
+          "correct": "逐渐",
+          "options": ["逐渐", "逐步", "及时", "突然"],
+          "option_pinyin": ["zhú jiàn", "zhú bù", "jí shí", "tū rán"],
+          "word_hints": {"提升": "tí shēng"}
+        },
+        {
+          "question": "Which sentence uses 逐步 correctly?",
+          "type": "multiple_choice",
+          "correct": "他们按照计划逐步减少了对咖啡因的依赖。",
+          "options": [
+            "他们按照计划逐步减少了对咖啡因的依赖。",
+            "天气逐步变暖了，春天来了。",
+            "他逐步喜欢上了古典音乐。",
+            "时间逐步过去，他忘记了那件事。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {"咖啡因": "kā fēi yīn", "依赖": "yī lài"}
+        },
+        {
+          "question": "What is the key difference between 逐步 and 逐渐?",
+          "type": "multiple_choice",
+          "correct": "逐步 implies deliberate planned steps; 逐渐 implies natural change over time",
+          "options": [
+            "逐步 implies deliberate planned steps; 逐渐 implies natural change over time",
+            "逐步 is used for things; 逐渐 is used for people",
+            "逐步 is formal; 逐渐 is casual",
+            "逐步 indicates fast change; 逐渐 indicates slow change"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "随着年龄增长，他的睡眠时间_____ 缩短了。",
+          "type": "multiple_choice",
+          "correct": "逐渐",
+          "options": ["逐渐", "逐步", "及时", "突然"],
+          "option_pinyin": ["zhú jiàn", "zhú bù", "jí shí", "tū rán"],
+          "word_hints": {"缩短": "suō duǎn"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "title": "Beijing's Quadrangle Courtyards — Traditional Spaces for Living and Rest",
+      "title_chinese": "北京的四合院",
+      "content": "The 四合院 (sìhéyuàn) is the most iconic form of traditional civilian residence in Beijing and northern China. The name literally means 'four-sided enclosure' — four buildings arranged around a central open courtyard, forming a square. The layout follows Confucian hierarchy: the main hall (正房) faces south and is reserved for senior family members, while side rooms (厢房) house younger family members. The gate house (倒座房) faces north at the south wall.\n\nThe courtyard itself was the heart of daily life. Families would cook, eat, exercise, and socialize in the shared open space. The design allowed natural light into every room, provided airflow for ventilation, and created a quiet, enclosed environment protected from street noise — ideal conditions for rest and sleep. The thick walls insulated against both summer heat and winter cold.\n\nIn contrast to modern high-rise apartment living, the siheyuan lifestyle encouraged physical activity through daily use of shared spaces and promoted communal eating habits. Neighbors knew each other and shared resources. This traditional design reflects a way of life deeply connected to natural rhythms — sleeping when it gets dark, rising with the sun, eating together as a family. These habits supported both physical and mental health in ways that modern urban living often cannot replicate.",
+      "idioms": [
+        {
+          "chinese": "四世同堂",
+          "pinyin": "sì shì tóng táng",
+          "english": "Four generations living under one roof; representing traditional Chinese multi-generational family life"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 依赖 mean?",
+      "type": "multiple_choice",
+      "correct": "To depend on; to rely on",
+      "options": [
+        "To depend on; to rely on",
+        "To improve; to make better",
+        "To replace; to substitute",
+        "To stimulate"
+      ],
+      "word_hints": {"依赖": "yī lài"}
+    },
+    {
+      "question": "Which word means 'quality'?",
+      "type": "multiple_choice",
+      "correct": "质量",
+      "options": ["压力", "质量", "光线", "方式"],
+      "word_hints": {"压力": "yā lì", "质量": "zhì liàng", "光线": "guāng xiàn", "方式": "fāng shì"}
+    },
+    {
+      "question": "Choose the correct use of 反而.",
+      "type": "multiple_choice",
+      "correct": "他休息了一天，反而更累了。",
+      "options": [
+        "他休息了一天，反而更累了。",
+        "他反而休息一天，更累了。",
+        "反而他休息了一天更累了。",
+        "他更累了，反而休息一天。"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 及时 mean?",
+      "type": "multiple_choice",
+      "correct": "Timely; promptly; in time",
+      "options": [
+        "Timely; promptly; in time",
+        "Step by step; gradually",
+        "On the contrary",
+        "To replace; substitute"
+      ],
+      "word_hints": {"及时": "jí shí"}
+    },
+    {
+      "question": "_____ 依赖闹钟，不如培养自然醒来的习惯。",
+      "type": "multiple_choice",
+      "correct": "与其",
+      "options": ["与其", "既然", "由于", "虽然"],
+      "word_hints": {"依赖": "yī lài", "培养": "péi yǎng"}
+    },
+    {
+      "question": "Which sentence correctly uses 逐步?",
+      "type": "multiple_choice",
+      "correct": "他按计划逐步减少咖啡的摄入量。",
+      "options": [
+        "他按计划逐步减少咖啡的摄入量。",
+        "春天来了，天气逐步变暖。",
+        "他逐步喜欢上了这首歌。",
+        "时间逐步流逝，他的记忆也模糊了。"
+      ],
+      "word_hints": {"摄入量": "shè rù liàng"}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "A Better Way to Wake Up",
+      "title_chinese": "更好的起床方式",
+      "speakers": {
+        "A": { "name": "慈欣", "role": "科技爱好者", "gender": "male" },
+        "B": { "name": "加缪", "role": "朋友", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你知道吗？研究发现，传统闹钟对身体的刺激太强烈了，很多人早上醒来反而更疲惫。",
+          "pinyin": "Nǐ zhī dào ma? Yán jiū fā xiàn, chuán tǒng nào zhōng duì shēn tǐ de cì jī tài qiáng liè le, hěn duō rén zǎo shàng xǐng lái fǎn ér gèng pí bèi.",
+          "english": "Did you know? Research has found that traditional alarm clocks are too strong a stimulus for the body — many people feel even more exhausted when they wake up."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我深有同感。我每次被闹钟吵醒，脑子里一片混乱，压力很大。",
+          "pinyin": "Wǒ shēn yǒu tóng gǎn. Wǒ měi cì bèi nào zhōng chǎo xǐng, nǎo zi lǐ yī piàn hùn luàn, yā lì hěn dà.",
+          "english": "I completely agree. Every time I'm woken by an alarm, my mind is in chaos and I feel a lot of pressure."
+        },
+        {
+          "speaker": "A",
+          "chinese": "所以与其用刺激性的闹钟，不如试试光照闹钟——它用逐渐变亮的光线来代替声音。",
+          "pinyin": "Suǒ yǐ yǔ qí yòng cì jī xìng de nào zhōng, bù rú shì shi guāng zhào nào zhōng — tā yòng zhú jiàn biàn liàng de guāng xiàn lái dài tì shēng yīn.",
+          "english": "So rather than using a jarring alarm clock, why not try a light-based alarm — it uses gradually brightening light to replace sound."
+        },
+        {
+          "speaker": "B",
+          "chinese": "有意思！自然光线能模拟日出，帮助大脑慢慢醒来，而不是突然受到刺激。",
+          "pinyin": "Yǒu yì si! Zì rán guāng xiàn néng mó nǐ rì chū, bāng zhù dà nǎo màn màn xǐng lái, ér bú shì tū rán shòu dào cì jī.",
+          "english": "Interesting! Natural light can simulate sunrise, helping the brain wake up slowly rather than being suddenly stimulated."
+        },
+        {
+          "speaker": "A",
+          "chinese": "对。专家建议逐步改变作息习惯，同时也及时调整睡觉时间，这样才能真正改善睡眠质量。",
+          "pinyin": "Duì. Zhuān jiā jiàn yì zhú bù gǎi biàn zuò xī xí guàn, tóng shí yě jí shí tiáo zhěng shuì jiào shí jiān, zhè yàng cái néng zhēn zhèng gǎi shàn shuì mián zhì liàng.",
+          "english": "Right. Experts suggest changing sleep habits step by step and also adjusting bedtime promptly — only then can you truly improve sleep quality."
+        },
+        {
+          "speaker": "B",
+          "chinese": "看来依赖闹钟并不是解决问题的好方法，真正的改变需要从生活习惯入手。",
+          "pinyin": "Kàn lái yī lài nào zhōng bìng bú shì jiě jué wèn tí de hǎo fāng fǎ, zhēn zhèng de gǎi biàn xū yào cóng shēng huó xí guàn rù shǒu.",
+          "english": "It seems that relying on alarm clocks is not the best solution; real change needs to start from lifestyle habits."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Changing Habits Gradually",
+      "title_chinese": "逐步改变习惯",
+      "speakers": {
+        "A": { "name": "慈欣", "role": "科技研究者", "gender": "male" },
+        "B": { "name": "奥斯汀", "role": "朋友", "gender": "female" }
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "我最近想改善睡眠，但不知道从哪里开始，你有什么建议吗？",
+          "pinyin": "Wǒ zuì jìn xiǎng gǎi shàn shuì mián, dàn bù zhī dào cóng nǎ lǐ kāi shǐ, nǐ yǒu shén me jiàn yì ma?",
+          "english": "I've been wanting to improve my sleep lately, but I don't know where to start. Do you have any suggestions?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "首先要明白，改变习惯需要逐步来，不能操之过急，否则反而会有压力。",
+          "pinyin": "Shǒu xiān yào míng bái, gǎi biàn xí guàn xū yào zhú bù lái, bù néng cāo zhī guò jí, fǒu zé fǎn ér huì yǒu yā lì.",
+          "english": "First you need to understand that changing habits must be done step by step — don't rush it, otherwise it will on the contrary create pressure."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那具体怎么做呢？我现在完全依赖闹钟，早上离不开它。",
+          "pinyin": "Nà jù tǐ zěn me zuò ne? Wǒ xiàn zài wán quán yī lài nào zhōng, zǎo shàng lí bù kāi tā.",
+          "english": "What specifically should I do? I currently rely completely on an alarm clock; I can't do without it in the morning."
+        },
+        {
+          "speaker": "A",
+          "chinese": "可以试试每周把睡觉时间提前十五分钟，同时减少睡前玩手机的时间。",
+          "pinyin": "Kě yǐ shì shi měi zhōu bǎ shuì jiào shí jiān tí qián shí wǔ fēn zhōng, tóng shí jiǎn shǎo shuì qián wán shǒu jī de shí jiān.",
+          "english": "You could try moving your bedtime fifteen minutes earlier each week, while also reducing the time you spend on your phone before sleep."
+        },
+        {
+          "speaker": "B",
+          "chinese": "这个方法听起来很温和，不会太难坚持。光线闹钟真的有效果吗？",
+          "pinyin": "Zhège fāng fǎ tīng qǐ lái hěn wēn hé, bú huì tài nán jiān chí. Guāng xiàn nào zhōng zhēn de yǒu xiào guǒ ma?",
+          "english": "This method sounds gentle and won't be too hard to stick to. Do light alarm clocks really work?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "效果因人而异，但很多人用了之后，及时感受到了改善，早上醒来感觉质量好多了。",
+          "pinyin": "Xiào guǒ yīn rén ér yì, dàn hěn duō rén yòng le zhī hòu, jí shí gǎn shòu dào le gǎi shàn, zǎo shàng xǐng lái gǎn jué zhì liàng hǎo duō le.",
+          "english": "Results vary from person to person, but many people felt improvement promptly after using one, and woke up feeling much better in the morning."
+        }
+      ]
+    }
+  ]
+}

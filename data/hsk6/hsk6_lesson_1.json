@@ -1,0 +1,555 @@
+{
+  "lesson": 1,
+  "level": 6,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Love's Small Gestures",
+  "topic_chinese": "爱的细节（一）",
+  "vocabulary": [
+    {
+      "id": "hsk6_l1_01",
+      "chinese": "细节",
+      "pinyin": "xì jié",
+      "english": "detail, particulars",
+      "part_of_speech": "noun",
+      "example": "他总是注意到生活中爱的细节，让她感到非常温暖。",
+      "translation": "He always notices the small details of love in daily life, making her feel very warm."
+    },
+    {
+      "id": "hsk6_l1_02",
+      "chinese": "电台",
+      "pinyin": "diàn tái",
+      "english": "radio station",
+      "part_of_speech": "noun",
+      "example": "他们每晚睡前都会一起听同一个电台的节目。",
+      "translation": "Every night before bed, they listen to the same radio station program together."
+    },
+    {
+      "id": "hsk6_l1_03",
+      "chinese": "恩爱",
+      "pinyin": "ēn ài",
+      "english": "loving, affectionate (of couples)",
+      "part_of_speech": "adjective",
+      "example": "他们结婚二十年了，依然像新婚一样恩爱。",
+      "translation": "They have been married for twenty years and are still as loving and affectionate as newlyweds."
+    },
+    {
+      "id": "hsk6_l1_04",
+      "chinese": "居然",
+      "pinyin": "jū rán",
+      "english": "surprisingly, unexpectedly",
+      "part_of_speech": "adverb",
+      "example": "他居然记得她第一次提到的那家小咖啡馆的名字。",
+      "translation": "He surprisingly remembered the name of that little coffee shop she mentioned once."
+    },
+    {
+      "id": "hsk6_l1_05",
+      "chinese": "如何",
+      "pinyin": "rú hé",
+      "english": "how; in what way (formal)",
+      "part_of_speech": "pronoun",
+      "example": "我一直在思考如何更好地向他表达我的爱意。",
+      "translation": "I have been thinking about how to better express my love to him."
+    },
+    {
+      "id": "hsk6_l1_06",
+      "chinese": "夫妻",
+      "pinyin": "fū qī",
+      "english": "husband and wife, married couple",
+      "part_of_speech": "noun",
+      "example": "这对夫妻养成了每天散步聊天的习惯。",
+      "translation": "This married couple has developed the habit of walking and chatting together every day."
+    },
+    {
+      "id": "hsk6_l1_07",
+      "chinese": "感受",
+      "pinyin": "gǎn shòu",
+      "english": "to feel; feeling, experience",
+      "part_of_speech": "verb/noun",
+      "example": "她说，陪伴是她在这段关系中最深刻的感受。",
+      "translation": "She said that companionship is the most profound feeling she has in this relationship."
+    },
+    {
+      "id": "hsk6_l1_08",
+      "chinese": "表达",
+      "pinyin": "biǎo dá",
+      "english": "to express",
+      "part_of_speech": "verb",
+      "example": "有些人不擅长用语言表达感情，但会通过行动来表示关心。",
+      "translation": "Some people are not good at expressing feelings with words, but show care through their actions."
+    },
+    {
+      "id": "hsk6_l1_09",
+      "chinese": "温馨",
+      "pinyin": "wēn xīn",
+      "english": "warm and cozy, heartwarming",
+      "part_of_speech": "adjective",
+      "example": "窗外下着雪，屋内的烛光让整个房间显得格外温馨。",
+      "translation": "Snow was falling outside, and the candlelight inside made the whole room feel especially warm and cozy."
+    },
+    {
+      "id": "hsk6_l1_10",
+      "chinese": "陪伴",
+      "pinyin": "péi bàn",
+      "english": "to accompany, keep company",
+      "part_of_speech": "verb",
+      "example": "在她最难过的时候，他一直默默地陪伴着她。",
+      "translation": "During her saddest moments, he quietly stayed by her side and kept her company."
+    },
+    {
+      "id": "hsk6_l1_11",
+      "chinese": "倾听",
+      "pinyin": "qīng tīng",
+      "english": "to listen attentively",
+      "part_of_speech": "verb",
+      "example": "她很感激他愿意倾听她说那些琐碎的小事。",
+      "translation": "She was very grateful that he was willing to listen attentively to her talk about trivial little things."
+    },
+    {
+      "id": "hsk6_l1_12",
+      "chinese": "默契",
+      "pinyin": "mò qì",
+      "english": "tacit understanding, unspoken harmony",
+      "part_of_speech": "noun",
+      "example": "多年的相处让他们之间有了一种无需言说的默契。",
+      "translation": "Years of being together gave them an unspoken harmony that needed no words."
+    },
+    {
+      "id": "hsk6_l1_13",
+      "chinese": "偶尔",
+      "pinyin": "ǒu ěr",
+      "english": "occasionally, sometimes",
+      "part_of_speech": "adverb",
+      "example": "他们偶尔会在路边停下来，只是静静地看着夕阳。",
+      "translation": "Occasionally they would stop on the roadside and quietly watch the sunset together."
+    },
+    {
+      "id": "hsk6_l1_14",
+      "chinese": "珍惜",
+      "pinyin": "zhēn xī",
+      "english": "to cherish, treasure",
+      "part_of_speech": "verb",
+      "example": "我们应该珍惜在一起的每一个平凡的时刻。",
+      "translation": "We should cherish every ordinary moment we spend together."
+    },
+    {
+      "id": "hsk6_l1_15",
+      "chinese": "体贴",
+      "pinyin": "tǐ tiē",
+      "english": "considerate, thoughtful",
+      "part_of_speech": "adjective/verb",
+      "example": "他总是很体贴，在她下班回家前就把晚饭做好了。",
+      "translation": "He is always very thoughtful — he would have dinner ready before she came home from work."
+    },
+    {
+      "id": "hsk6_l1_p1",
+      "chinese": "爱的细节",
+      "pinyin": "ài de xì jié",
+      "english": "details of love",
+      "part_of_speech": "phrase",
+      "example": "真正的爱往往藏在那些微小的爱的细节之中。",
+      "translation": "True love is often hidden within those tiny details of love."
+    },
+    {
+      "id": "hsk6_l1_p2",
+      "chinese": "默契配合",
+      "pinyin": "mò qì pèi hé",
+      "english": "tacit coordination, silent teamwork",
+      "part_of_speech": "phrase",
+      "example": "做家务的时候，他们总是默契配合，从不需要商量。",
+      "translation": "When doing household chores, they always coordinate silently and never need to discuss it."
+    },
+    {
+      "id": "hsk6_l1_p3",
+      "chinese": "温馨时刻",
+      "pinyin": "wēn xīn shí kè",
+      "english": "heartwarming moment",
+      "part_of_speech": "phrase",
+      "example": "除夕夜全家围坐在一起，是一年中最温馨的时刻。",
+      "translation": "The whole family sitting together on New Year's Eve is the most heartwarming moment of the year."
+    },
+    {
+      "id": "hsk6_l1_p4",
+      "chinese": "相互陪伴",
+      "pinyin": "xiāng hù péi bàn",
+      "english": "keeping each other company",
+      "part_of_speech": "phrase",
+      "example": "无论生活多么艰难，他们都坚持相互陪伴，共同面对。",
+      "translation": "No matter how difficult life became, they always kept each other company and faced it together."
+    },
+    {
+      "id": "hsk6_l1_p5",
+      "chinese": "用心倾听",
+      "pinyin": "yòng xīn qīng tīng",
+      "english": "to listen wholeheartedly",
+      "part_of_speech": "phrase",
+      "example": "他每次都会放下手机，用心倾听她说话。",
+      "translation": "Every time, he would put down his phone and listen wholeheartedly to what she had to say."
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "他居然还记得我们第一次见面时我穿的衣服的颜色。",
+      "pinyin": "Tā jū rán hái jì de wǒmen dì yī cì jiànmiàn shí wǒ chuān de yīfu de yánsè.",
+      "english": "He surprisingly still remembered the color of the clothes I was wearing when we first met."
+    },
+    {
+      "chinese": "这对夫妻每天清晨都会一起在公园散步，从不间断。",
+      "pinyin": "Zhè duì fū qī měi tiān qīngchén dōu huì yīqǐ zài gōngyuán sànbù, cóng bù jiànduàn.",
+      "english": "This couple takes a walk in the park together every morning without exception."
+    },
+    {
+      "chinese": "她如何表达对他的感激，他总能第一时间感受到。",
+      "pinyin": "Tā rú hé biǎodá duì tā de gǎnjī, tā zǒng néng dì yī shíjiān gǎnshòu dào.",
+      "english": "However she expresses gratitude toward him, he always senses it right away."
+    },
+    {
+      "chinese": "珍惜眼前人，才是最温馨的爱的细节。",
+      "pinyin": "Zhēnxī yǎnqián rén, cái shì zuì wēnxīn de ài de xì jié.",
+      "english": "Cherishing the person in front of you is the most heartwarming detail of love."
+    },
+    {
+      "chinese": "他们之间的默契，是多年陪伴慢慢积累起来的。",
+      "pinyin": "Tāmen zhī jiān de mòqì, shì duō nián péibàn màn man jīlěi qǐlái de.",
+      "english": "The unspoken harmony between them was built up gradually through years of companionship."
+    },
+    {
+      "chinese": "既然你已经知道她喜欢什么，就用心去体贴她吧。",
+      "pinyin": "Jì rán nǐ yǐjīng zhīdào tā xǐhuān shénme, jiù yòng xīn qù tǐtiē tā ba.",
+      "english": "Since you already know what she likes, then be thoughtful and caring toward her."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "居然 — Surprisingly / Unexpectedly",
+      "explanation": "居然 is an adverb placed before the verb to express that something happened contrary to the speaker's expectation — often with a sense of surprise or disbelief. Structure: Subject + 居然 + verb phrase. It can be used for positive or negative surprises. Example: 他居然哭了。(He actually cried — I didn't expect that.) Another example: 这么难的题她居然做对了。(She surprisingly got such a difficult question right.)",
+      "examples": [
+        {
+          "chinese": "他居然记住了我所有朋友的名字。",
+          "pinyin": "Tā jū rán jì zhù le wǒ suǒyǒu péngyǒu de míngzi.",
+          "english": "He surprisingly remembered the names of all my friends."
+        },
+        {
+          "chinese": "他们分开了这么多年，居然还保持着联系。",
+          "pinyin": "Tāmen fēnkāi le zhème duō nián, jū rán hái bǎochí zhe liánxì.",
+          "english": "After so many years apart, they surprisingly still kept in touch."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "她平时很内向，____ 主动来找我倾诉心情。",
+          "type": "multiple_choice",
+          "correct": "居然",
+          "options": ["偶尔", "居然", "如何", "既然"],
+          "option_pinyin": ["ǒu ěr", "jū rán", "rú hé", "jì rán"],
+          "word_hints": { "内向": "nèi xiàng", "倾诉": "qīng sù" }
+        },
+        {
+          "question": "他们已经分手五年了，____ 还记得彼此的生日。",
+          "type": "multiple_choice",
+          "correct": "居然",
+          "options": ["体贴", "居然", "温馨", "珍惜"],
+          "option_pinyin": ["tǐ tiē", "jū rán", "wēn xīn", "zhēn xī"],
+          "word_hints": { "分手": "fēn shǒu", "彼此": "bǐ cǐ" }
+        },
+        {
+          "question": "Which sentence uses 居然 correctly?",
+          "type": "multiple_choice",
+          "correct": "他居然一个人吃完了整个蛋糕。",
+          "options": ["他居然一个人吃完了整个蛋糕。", "他居然喜欢吃蛋糕，因为蛋糕很甜。", "居然他明天去上班。", "他吃蛋糕居然很甜。"],
+          "option_pinyin": ["tā jū rán yīgè rén chī wán le zhěnggè dàngāo.", "tā jū rán xǐhuān chī dàngāo, yīnwèi dàngāo hěn tián.", "jū rán tā míngtiān qù shàngbān.", "tā chī dàngāo jū rán hěn tián."],
+          "word_hints": { "整个": "zhěng gè" }
+        },
+        {
+          "question": "那个体贴的人 ____ 是她第一次见面的陌生人。",
+          "type": "multiple_choice",
+          "correct": "居然",
+          "options": ["偶尔", "如何", "居然", "默契"],
+          "option_pinyin": ["ǒu ěr", "rú hé", "jū rán", "mò qì"],
+          "word_hints": { "陌生人": "mò shēng rén" }
+        },
+        {
+          "question": "他 ____ 在这么短的时间内学会了如何表达感情，让大家都很惊讶。",
+          "type": "multiple_choice",
+          "correct": "居然",
+          "options": ["温馨", "居然", "珍惜", "陪伴"],
+          "option_pinyin": ["wēn xīn", "jū rán", "zhēn xī", "péi bàn"],
+          "word_hints": { "惊讶": "jīng yà" }
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "如何 — How / In what way (formal)",
+      "explanation": "如何 is a formal question word equivalent to 怎么 (how) or 怎样 (in what way). It is more commonly used in written Chinese, formal speech, or serious/literary contexts. Structure: Subject + 如何 + verb / 如何 + verb phrase (at the start). Unlike 怎么, 如何 can also follow the topic as a predicate: 情况如何？(How is the situation?) It often appears in set phrases and essay writing. Example: 我不知道如何是好。(I don't know what to do — lit. how it would be good.) Another: 不管结果如何，我都会支持你。(No matter what the result is, I will support you.)",
+      "examples": [
+        {
+          "chinese": "我们应该思考如何更好地珍惜彼此。",
+          "pinyin": "Wǒmen yīnggāi sīkǎo rú hé gèng hǎo de zhēnxī bǐcǐ.",
+          "english": "We should think about how to better cherish each other."
+        },
+        {
+          "chinese": "不管生活如何变化，他们始终相互陪伴。",
+          "pinyin": "Bùguǎn shēnghuó rú hé biànhuà, tāmen shǐzhōng xiānghù péibàn.",
+          "english": "No matter how life changes, they have always kept each other company."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他不知道 ____ 向她表达自己的感受。",
+          "type": "multiple_choice",
+          "correct": "如何",
+          "options": ["偶尔", "居然", "如何", "默契"],
+          "option_pinyin": ["ǒu ěr", "jū rán", "rú hé", "mò qì"],
+          "word_hints": { "向": "xiàng" }
+        },
+        {
+          "question": "不管结果 ____，我都会珍惜这段感情。",
+          "type": "multiple_choice",
+          "correct": "如何",
+          "options": ["如何", "居然", "偶尔", "体贴"],
+          "option_pinyin": ["rú hé", "jū rán", "ǒu ěr", "tǐ tiē"],
+          "word_hints": { "结果": "jié guǒ", "感情": "gǎn qíng" }
+        },
+        {
+          "question": "Which sentence uses 如何 correctly?",
+          "type": "multiple_choice",
+          "correct": "我想了解如何做一个体贴的伴侣。",
+          "options": ["我想了解如何做一个体贴的伴侣。", "如何他喜欢她。", "他如何很体贴。", "如何她居然来了。"],
+          "option_pinyin": ["wǒ xiǎng liǎojiě rú hé zuò yīgè tǐtiē de bànlǚ.", "rú hé tā xǐhuān tā.", "tā rú hé hěn tǐtiē.", "rú hé tā jū rán lái le."],
+          "word_hints": { "伴侣": "bàn lǚ" }
+        },
+        {
+          "question": "这段夫妻关系 ____ 能维持这么久，让朋友们都很好奇。",
+          "type": "multiple_choice",
+          "correct": "如何",
+          "options": ["居然", "如何", "偶尔", "温馨"],
+          "option_pinyin": ["jū rán", "rú hé", "ǒu ěr", "wēn xīn"],
+          "word_hints": { "维持": "wéi chí", "好奇": "hào qí" }
+        },
+        {
+          "question": "她开始思考，____ 才算是真正地倾听一个人。",
+          "type": "multiple_choice",
+          "correct": "如何",
+          "options": ["偶尔", "如何", "恩爱", "居然"],
+          "option_pinyin": ["ǒu ěr", "rú hé", "ēn ài", "jū rán"],
+          "word_hints": { "真正": "zhēn zhèng" }
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "既然…就 — Since…then",
+      "explanation": "既然…就 is a cause-and-effect connective structure meaning 'since [a situation is already the case], then [conclusion or action follows].' Structure: 既然 + reason/given situation, Subject + 就 + conclusion/action. The 既然 clause presents an already-established fact or condition; the 就 clause draws a logical next step. This differs from 因为…所以 in that 既然 emphasizes an accepted premise, not a discovered reason. Example: 既然你爱她，就应该告诉她。(Since you love her, you should tell her.) Another: 既然决定了，就不要后悔。(Since the decision has been made, don't regret it.)",
+      "examples": [
+        {
+          "chinese": "既然你已经感受到她的体贴，就应该好好珍惜她。",
+          "pinyin": "Jì rán nǐ yǐjīng gǎnshòu dào tā de tǐtiē, jiù yīnggāi hǎohǎo zhēnxī tā.",
+          "english": "Since you have already felt her thoughtfulness, you should truly cherish her."
+        },
+        {
+          "chinese": "既然这段关系让你温馨快乐，就不要轻易放弃。",
+          "pinyin": "Jì rán zhè duàn guānxi ràng nǐ wēnxīn kuàilè, jiù bú yào qīngyì fàngqì.",
+          "english": "Since this relationship makes you feel warm and happy, don't give it up easily."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "____ 你决定陪伴她，____ 要做到始终如一。",
+          "type": "multiple_choice",
+          "correct": "既然……就",
+          "options": ["虽然……但", "既然……就", "因为……所以", "如果……就"],
+          "option_pinyin": ["suī rán……dàn", "jì rán……jiù", "yīn wèi……suǒ yǐ", "rú guǒ……jiù"],
+          "word_hints": { "始终如一": "shǐ zhōng rú yī" }
+        },
+        {
+          "question": "既然他已经向你表达了感情，你 ____ 给他一个明确的回答。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["才", "就", "都", "也"],
+          "option_pinyin": ["cái", "jiù", "dōu", "yě"],
+          "word_hints": { "明确": "míng què", "回答": "huí dá" }
+        },
+        {
+          "question": "Which sentence correctly uses 既然…就?",
+          "type": "multiple_choice",
+          "correct": "既然你们有如此深厚的默契，就应该好好在一起。",
+          "options": ["既然你们有如此深厚的默契，就应该好好在一起。", "既然他很体贴，但她不喜欢他。", "既然我就珍惜你。", "你既然，就来了吗？"],
+          "option_pinyin": ["jì rán nǐmen yǒu rúcǐ shēnhòu de mòqì, jiù yīnggāi hǎohǎo zài yīqǐ.", "jì rán tā hěn tǐtiē, dàn tā bù xǐhuān tā.", "jì rán wǒ jiù zhēnxī nǐ.", "nǐ jì rán, jiù lái le ma?"],
+          "word_hints": { "如此": "rú cǐ", "深厚": "shēn hòu" }
+        },
+        {
+          "question": "既然他们已经是多年的恩爱夫妻，____ 一定有很深的感情基础。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["但", "就", "还", "虽"],
+          "option_pinyin": ["dàn", "jiù", "hái", "suī"],
+          "word_hints": { "基础": "jī chǔ" }
+        },
+        {
+          "question": "既然你无法用语言表达，____ 试试用行动来体贴她吧。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["也", "都", "就", "才"],
+          "option_pinyin": ["yě", "dōu", "jiù", "cái"],
+          "word_hints": { "行动": "xíng dòng" }
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "title": "The Origin of Chúxī — Chinese New Year's Eve",
+      "title_chinese": "除夕的由来",
+      "content": "Long ago, according to Chinese legend, a fearsome monster called 夕 (Xī) roamed the earth at the end of every year. Every New Year's Eve, it would descend from the mountains and terrorize villages — eating livestock, destroying crops, and frightening families. People were powerless against it and lived in dread of this one night each year.\n\nOne day, a wise elder discovered that the monster 夕 had three great fears: loud noises, bright fire, and the color red. Armed with this knowledge, people began hanging red lanterns and red paper couplets (对联) on their doors, setting off firecrackers (鞭炮), and lighting bonfires. They stayed up through the night to keep the fires burning — a practice that became known as 守岁 (shǒu suì), or 'keeping the year.' The monster was driven away, never to return.\n\nThis legend gave birth to the beloved traditions of Chinese New Year's Eve: red decorations, fireworks, and families staying up together until midnight. In the context of love, 除夕 holds a special tenderness. For Chinese families, gathering around the table on this night — sharing a meal, watching the Spring Festival Gala, listening to fireworks outside — is one of the most intimate and heartwarming 'details of love' in all of Chinese culture. To accompany (陪伴) someone through the turn of the year is considered one of the greatest expressions of affection.",
+      "idioms": [
+        {
+          "chinese": "辞旧迎新",
+          "pinyin": "cí jiù yíng xīn",
+          "english": "bid farewell to the old and welcome the new"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which word means 'tacit understanding' or 'unspoken harmony'?",
+      "type": "multiple_choice",
+      "correct": "默契",
+      "options": ["温馨", "恩爱", "默契", "细节"],
+      "word_hints": { "默契": "mò qì", "温馨": "wēn xīn", "恩爱": "ēn ài", "细节": "xì jié" }
+    },
+    {
+      "question": "Fill in the blank: 她 ____ 记得我们第一次见面的日期，让我非常感动。",
+      "type": "multiple_choice",
+      "correct": "居然",
+      "options": ["偶尔", "居然", "如何", "体贴"],
+      "word_hints": { "感动": "gǎn dòng" }
+    },
+    {
+      "question": "Which word is most appropriate? 这个房间布置得很____，让人感到非常舒适。",
+      "type": "multiple_choice",
+      "correct": "温馨",
+      "options": ["恩爱", "居然", "温馨", "夫妻"],
+      "word_hints": { "布置": "bù zhì", "舒适": "shū shì" }
+    },
+    {
+      "question": "____你已经知道如何表达感情，就不要再犹豫了。",
+      "type": "multiple_choice",
+      "correct": "既然",
+      "options": ["虽然", "既然", "居然", "偶尔"],
+      "word_hints": { "犹豫": "yóu yù" }
+    },
+    {
+      "question": "What does 陪伴 mean?",
+      "type": "multiple_choice",
+      "correct": "to accompany, keep company",
+      "options": ["to express", "to cherish", "to accompany, keep company", "to listen attentively"],
+      "word_hints": {}
+    },
+    {
+      "question": "He is always considerate — he remembers every small detail. Which word best describes him?",
+      "type": "multiple_choice",
+      "correct": "体贴",
+      "options": ["恩爱", "偶尔", "表达", "体贴"],
+      "word_hints": { "体贴": "tǐ tiē", "恩爱": "ēn ài", "偶尔": "ǒu ěr", "表达": "biǎo dá" }
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Noticing the Details",
+      "title_chinese": "注意细节",
+      "speakers": {
+        "A": { "name": "爱玲", "role": "friend", "gender": "female" },
+        "B": { "name": "李白", "role": "friend", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你知道吗，他居然还记得我第一次提到喜欢玫瑰是在三年前。",
+          "pinyin": "Nǐ zhīdào ma, tā jū rán hái jì de wǒ dì yī cì tídào xǐhuān méiguī shì zài sān nián qián.",
+          "english": "You know, he surprisingly still remembered that the first time I mentioned liking roses was three years ago."
+        },
+        {
+          "speaker": "B",
+          "chinese": "哇，这就是爱的细节啊。这样的人真的很体贴。",
+          "pinyin": "Wā, zhè jiù shì ài de xì jié a. Zhèyàng de rén zhēn de hěn tǐtiē.",
+          "english": "Wow, that's exactly the detail of love. Someone like that is truly thoughtful."
+        },
+        {
+          "speaker": "A",
+          "chinese": "是啊。我一直在想，如何回应他的这种细心，才能让他也感受到我的心意。",
+          "pinyin": "Shì a. Wǒ yīzhí zài xiǎng, rú hé huíyìng tā de zhè zhǒng xìxīn, cái néng ràng tā yě gǎnshòu dào wǒ de xīnyì.",
+          "english": "Yeah. I've been thinking about how to respond to his attentiveness so that he can also feel my feelings."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我觉得，最重要的是用心倾听他说话。这也是一种很深的陪伴。",
+          "pinyin": "Wǒ juéde, zuì zhòngyào de shì yòng xīn qīngtīng tā shuōhuà. Zhè yě shì yī zhǒng hěn shēn de péibàn.",
+          "english": "I think the most important thing is to listen wholeheartedly when he speaks. That is also a very deep form of companionship."
+        },
+        {
+          "speaker": "A",
+          "chinese": "说得对。偶尔不说话，就静静地陪在彼此身边，其实也是一种默契吧。",
+          "pinyin": "Shuō de duì. Ǒu ěr bù shuōhuà, jiù jìngjìng de péi zài bǐcǐ shēnbiān, qíshí yě shì yī zhǒng mòqì ba.",
+          "english": "That's true. Occasionally saying nothing and just quietly staying by each other's side — that's also a kind of unspoken harmony, isn't it."
+        },
+        {
+          "speaker": "B",
+          "chinese": "对，既然有这样恩爱的关系，就要好好珍惜，不是吗？",
+          "pinyin": "Duì, jì rán yǒu zhèyàng ēn ài de guānxi, jiù yào hǎohǎo zhēnxī, bú shì ma?",
+          "english": "Right — since you have such a loving relationship, you should truly cherish it, shouldn't you?"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Listening to the Radio Together",
+      "title_chinese": "一起听电台",
+      "speakers": {
+        "A": { "name": "爱玲", "role": "friend", "gender": "female" },
+        "B": { "name": "李白", "role": "friend", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "我最近养成了一个习惯，每晚睡前听同一个电台，感觉很温馨。",
+          "pinyin": "Wǒ zuìjìn yǎngchéng le yīgè xíguàn, měi wǎn shuì qián tīng tóngyīgè diàntái, gǎnjué hěn wēnxīn.",
+          "english": "I've recently developed a habit of listening to the same radio station before bed every night — it feels very warm and cozy."
+        },
+        {
+          "speaker": "A",
+          "chinese": "是一个人听，还是和她一起？",
+          "pinyin": "Shì yīgè rén tīng, háishì hé tā yīqǐ?",
+          "english": "Do you listen alone, or together with her?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "一起。我们各自在家，但同时听一样的节目。这也算是一种相互陪伴吧。",
+          "pinyin": "Yīqǐ. Wǒmen gèzì zài jiā, dàn tóngshí tīng yīyàng de jiémù. Zhè yě suàn shì yī zhǒng xiānghù péibàn ba.",
+          "english": "Together. We are each at home but listening to the same program at the same time. That counts as a kind of keeping each other company."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这个想法真好。特别是在两地分隔的时候，能有这样的温馨时刻很难得。",
+          "pinyin": "Zhège xiǎngfǎ zhēn hǎo. Tèbié shì zài liǎngdì fēngé de shíhou, néng yǒu zhèyàng de wēnxīn shíkè hěn nándé.",
+          "english": "What a lovely idea. Especially when you're in different places, having such a heartwarming moment is truly precious."
+        },
+        {
+          "speaker": "B",
+          "chinese": "嗯，我们偶尔还会发信息说，\"这首歌好听\"，或者\"主持人今天说得真有道理\"。",
+          "pinyin": "Ń, wǒmen ǒu ěr hái huì fā xìnxī shuō, 'zhè shǒu gē hǎotīng', huòzhě 'zhǔchírén jīntiān shuō de zhēn yǒu dàolǐ'.",
+          "english": "Yeah, we would occasionally also send messages saying 'this song is beautiful' or 'the host said something really insightful today.'"
+        },
+        {
+          "speaker": "A",
+          "chinese": "这就是爱的细节。不需要多复杂，只要用心，就能让对方感受到你的陪伴。",
+          "pinyin": "Zhè jiù shì ài de xì jié. Bù xūyào duō fùzá, zhǐyào yòng xīn, jiù néng ràng duìfāng gǎnshòu dào nǐ de péibàn.",
+          "english": "That's the detail of love right there. It doesn't need to be complicated — as long as you are sincere, the other person will feel your companionship."
+        }
+      ]
+    }
+  ]
+}

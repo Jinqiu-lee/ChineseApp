@@ -1,0 +1,780 @@
+{
+  "lesson": 11,
+  "level": 6,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Body Weight and Diet",
+  "topic_chinese": "体重与节食（一）",
+  "vocabulary": [
+    {
+      "id": "hsk6_l11_01",
+      "chinese": "体重",
+      "pinyin": "tǐ zhòng",
+      "english": "body weight",
+      "part_of_speech": "noun",
+      "example": "他每天早上起床后都会量一下体重，了解自己的身体变化。",
+      "translation": "Every morning after getting up, he weighs himself to understand the changes in his body."
+    },
+    {
+      "id": "hsk6_l11_02",
+      "chinese": "节食",
+      "pinyin": "jié shí",
+      "english": "to diet, reduce food intake; dieting",
+      "part_of_speech": "verb/noun",
+      "example": "医生建议她通过合理节食和适量运动来改善健康状况。",
+      "translation": "The doctor recommended that she improve her health through sensible dieting and appropriate exercise."
+    },
+    {
+      "id": "hsk6_l11_03",
+      "chinese": "减肥",
+      "pinyin": "jiǎn féi",
+      "english": "to lose weight",
+      "part_of_speech": "verb",
+      "example": "她一直努力减肥，但医生提醒她不能操之过急。",
+      "translation": "She has been working hard to lose weight, but the doctor reminded her not to rush the process."
+    },
+    {
+      "id": "hsk6_l11_04",
+      "chinese": "营养",
+      "pinyin": "yíng yǎng",
+      "english": "nutrition, nutrients",
+      "part_of_speech": "noun",
+      "example": "孩子成长阶段需要充足的营养，家长应该注意饮食的多样性。",
+      "translation": "Children need adequate nutrition during their growth stages, and parents should pay attention to dietary variety."
+    },
+    {
+      "id": "hsk6_l11_05",
+      "chinese": "均衡",
+      "pinyin": "jūn héng",
+      "english": "balanced, proportional",
+      "part_of_speech": "adjective",
+      "example": "营养师建议她保持均衡的饮食，不要偏食某一类食物。",
+      "translation": "The nutritionist advised her to maintain a balanced diet and not to favor one type of food over others."
+    },
+    {
+      "id": "hsk6_l11_06",
+      "chinese": "摄入",
+      "pinyin": "shè rù",
+      "english": "to intake, consume (food/nutrients)",
+      "part_of_speech": "verb",
+      "example": "减肥期间应该控制热量的摄入，但不能完全不吃碳水化合物。",
+      "translation": "During weight loss, one should control calorie intake, but not completely eliminate carbohydrates."
+    },
+    {
+      "id": "hsk6_l11_07",
+      "chinese": "代谢",
+      "pinyin": "dài xiè",
+      "english": "to metabolize; metabolism",
+      "part_of_speech": "verb/noun",
+      "example": "年纪越大，身体的代谢速度往往会逐渐变慢。",
+      "translation": "As one gets older, the body's metabolic rate tends to slow down gradually."
+    },
+    {
+      "id": "hsk6_l11_08",
+      "chinese": "能量",
+      "pinyin": "néng liàng",
+      "english": "energy, caloric energy",
+      "part_of_speech": "noun",
+      "example": "食物中的碳水化合物是人体最主要的能量来源之一。",
+      "translation": "Carbohydrates in food are one of the most important sources of energy for the human body."
+    },
+    {
+      "id": "hsk6_l11_09",
+      "chinese": "合理",
+      "pinyin": "hé lǐ",
+      "english": "reasonable, rational",
+      "part_of_speech": "adjective",
+      "example": "只要饮食习惯合理，不需要刻意节食也能维持健康的体重。",
+      "translation": "As long as eating habits are reasonable, one can maintain a healthy weight without deliberately dieting."
+    },
+    {
+      "id": "hsk6_l11_10",
+      "chinese": "标准",
+      "pinyin": "biāo zhǔn",
+      "english": "standard, criterion; standard",
+      "part_of_speech": "noun/adjective",
+      "example": "BMI是目前国际上评估体重是否健康的常用标准之一。",
+      "translation": "BMI is currently one of the commonly used international standards for assessing whether body weight is healthy."
+    },
+    {
+      "id": "hsk6_l11_11",
+      "chinese": "过度",
+      "pinyin": "guò dù",
+      "english": "excessively, overly; excessive",
+      "part_of_speech": "adverb/adjective",
+      "example": "过度减肥不仅无法持续，还可能对身体造成不可逆的伤害。",
+      "translation": "Excessive dieting is not only unsustainable, but may also cause irreversible harm to the body."
+    },
+    {
+      "id": "hsk6_l11_12",
+      "chinese": "危险",
+      "pinyin": "wēi xiǎn",
+      "english": "danger, risk; dangerous",
+      "part_of_speech": "noun/adjective",
+      "example": "极端节食对身体存在很大的危险，尤其是对正在发育的青少年。",
+      "translation": "Extreme dieting poses great danger to the body, especially for adolescents who are still developing."
+    },
+    {
+      "id": "hsk6_l11_13",
+      "chinese": "科学",
+      "pinyin": "kē xué",
+      "english": "science; scientific",
+      "part_of_speech": "noun/adjective",
+      "example": "采用科学的方法减肥，比盲目跟风节食要安全有效得多。",
+      "translation": "Using a scientific approach to lose weight is much safer and more effective than blindly following diet trends."
+    },
+    {
+      "id": "hsk6_l11_14",
+      "chinese": "保持",
+      "pinyin": "bǎo chí",
+      "english": "to maintain, keep",
+      "part_of_speech": "verb",
+      "example": "她通过规律运动和合理饮食，多年来一直保持着健康的体重。",
+      "translation": "Through regular exercise and sensible eating, she has maintained a healthy weight for many years."
+    },
+    {
+      "id": "hsk6_l11_15",
+      "chinese": "适量",
+      "pinyin": "shì liàng",
+      "english": "in appropriate amounts, moderately",
+      "part_of_speech": "adverb",
+      "example": "每餐适量进食，既能满足身体所需，又不会造成热量过剩。",
+      "translation": "Eating an appropriate amount at each meal can meet the body's needs without causing excess calories."
+    },
+    {
+      "id": "hsk6_l11_p1",
+      "chinese": "均衡饮食",
+      "pinyin": "jūn héng yǐn shí",
+      "english": "balanced diet",
+      "part_of_speech": "phrase",
+      "example": "坚持均衡饮食是预防慢性疾病的最基本方法。",
+      "translation": "Maintaining a balanced diet is the most fundamental way to prevent chronic diseases."
+    },
+    {
+      "id": "hsk6_l11_p2",
+      "chinese": "过度节食",
+      "pinyin": "guò dù jié shí",
+      "english": "excessive dieting",
+      "part_of_speech": "phrase",
+      "example": "营养师警告说，过度节食会导致身体缺乏必要的营养素。",
+      "translation": "The nutritionist warned that excessive dieting can cause the body to lack essential nutrients."
+    },
+    {
+      "id": "hsk6_l11_p3",
+      "chinese": "保持体重",
+      "pinyin": "bǎo chí tǐ zhòng",
+      "english": "to maintain body weight",
+      "part_of_speech": "phrase",
+      "example": "要保持体重，关键在于能量的摄入与消耗之间的平衡。",
+      "translation": "The key to maintaining body weight lies in balancing energy intake and expenditure."
+    },
+    {
+      "id": "hsk6_l11_p4",
+      "chinese": "科学减肥",
+      "pinyin": "kē xué jiǎn féi",
+      "english": "scientific approach to weight loss",
+      "part_of_speech": "phrase",
+      "example": "科学减肥强调循序渐进，而不是通过极端手段快速瘦身。",
+      "translation": "Scientific weight loss emphasizes gradual progress rather than rapid slimming through extreme measures."
+    },
+    {
+      "id": "hsk6_l11_p5",
+      "chinese": "适量运动",
+      "pinyin": "shì liàng yùn dòng",
+      "english": "appropriate amount of exercise",
+      "part_of_speech": "phrase",
+      "example": "每天坚持适量运动，有助于加快代谢、保持健康体重。",
+      "translation": "Sticking to an appropriate amount of exercise every day helps speed up metabolism and maintain a healthy weight."
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "想要减肥，应该尽量减少高热量食物的摄入，同时增加适量运动。",
+      "pinyin": "Xiǎng yào jiǎn féi, yīnggāi jǐnliàng jiǎnshǎo gāo rèliàng shíwù de shè rù, tóngshí zēngjiā shì liàng yùndòng.",
+      "english": "If you want to lose weight, you should try as much as possible to reduce the intake of high-calorie foods while increasing appropriate exercise."
+    },
+    {
+      "chinese": "过度节食会导致身体代谢减慢，反而不利于长期保持体重。",
+      "pinyin": "Guòdù jié shí huì dǎozhì shēntǐ dài xiè jiǎn màn, fǎn'ér bú lìyú chángqī bǎo chí tǐ zhòng.",
+      "english": "Excessive dieting can slow down the body's metabolism, which is actually counterproductive for maintaining weight long-term."
+    },
+    {
+      "chinese": "均衡饮食一方面为身体提供充足的营养，另一方面也有助于维持标准体重。",
+      "pinyin": "Jūn héng yǐn shí yī fāngmiàn wèi shēntǐ tígōng chōngzú de yíng yǎng, lìng yī fāngmiàn yě yǒuzhù yú wéichí biāo zhǔn tǐ zhòng.",
+      "english": "A balanced diet on one hand provides the body with sufficient nutrition, and on the other hand also helps maintain a standard body weight."
+    },
+    {
+      "chinese": "科学减肥的核心是合理控制能量的摄入与消耗，而不是单纯地不吃饭。",
+      "pinyin": "Kē xué jiǎn féi de héxīn shì hé lǐ kòngzhì néng liàng de shè rù yǔ xiāohào, ér bú shì dāncún de bù chī fàn.",
+      "english": "The core of scientific weight loss is rationally controlling energy intake and expenditure, not simply skipping meals."
+    },
+    {
+      "chinese": "适当的运动加上均衡的饮食，是保持健康体重的最佳方式。",
+      "pinyin": "Shìdàng de yùndòng jiā shàng jūn héng de yǐn shí, shì bǎo chí jiànkāng tǐ zhòng de zuì jiā fāngshì.",
+      "english": "Appropriate exercise combined with a balanced diet is the best way to maintain a healthy body weight."
+    },
+    {
+      "chinese": "营养师建议，每天适量摄入蛋白质有助于维持代谢和保持体力。",
+      "pinyin": "Yíngyǎngshī jiànyì, měi tiān shì liàng shè rù dànbáizhì yǒuzhù yú wéichí dài xiè hé bǎo chí tǐlì.",
+      "english": "Nutritionists recommend that moderate daily intake of protein helps maintain metabolism and physical energy."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "尽量 — As much as possible",
+      "explanation": "尽量 is an adverb meaning 'as much as possible' or 'to the greatest extent possible.' It is placed directly before the verb phrase and indicates that the subject should try their best to do something, though perfection is not required. Structure: Subject + 尽量 + verb phrase. It conveys effort and intention without absolute obligation. Compare with 尽力 (do one's utmost) which suggests maximum effort, while 尽量 is softer and more practical. Example: 你尽量早点来。(Try to come as early as possible.)",
+      "examples": [
+        {
+          "chinese": "想要减肥，应该尽量减少高热量食物的摄入。",
+          "pinyin": "Xiǎng yào jiǎn féi, yīnggāi jǐnliàng jiǎnshǎo gāo rèliàng shíwù de shè rù.",
+          "english": "If you want to lose weight, you should try as much as possible to reduce the intake of high-calorie foods."
+        },
+        {
+          "chinese": "为了保持体重，她尽量不在晚上十点以后吃东西。",
+          "pinyin": "Wèile bǎo chí tǐ zhòng, tā jǐnliàng bù zài wǎnshàng shí diǎn yǐhòu chī dōngxi.",
+          "english": "To maintain her weight, she tries as much as possible not to eat after ten o'clock at night."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which sentence correctly uses 尽量?",
+          "type": "multiple_choice",
+          "correct": "我们尽量选择营养均衡的食物。",
+          "options": [
+            "我们尽量选择营养均衡的食物。",
+            "我们尽量了健康的饮食。",
+            "尽量我每天都运动。",
+            "她尽量因为想减肥。"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {}
+        },
+        {
+          "question": "Fill in the blank: 为了健康，你应该___减少零食的摄入。",
+          "type": "multiple_choice",
+          "correct": "尽量",
+          "options": [
+            "尽量",
+            "居然",
+            "适当",
+            "过度"
+          ],
+          "option_pinyin": [
+            "jǐn liàng",
+            "jū rán",
+            "shì dàng",
+            "guò dù"
+          ],
+          "word_hints": {
+            "摄入": "shè rù — intake"
+          }
+        },
+        {
+          "question": "Which is the best translation of '她尽量避免吃油炸食品'?",
+          "type": "multiple_choice",
+          "correct": "She tries as much as possible to avoid eating fried foods.",
+          "options": [
+            "She tries as much as possible to avoid eating fried foods.",
+            "She is forced to avoid fried foods.",
+            "She has never eaten fried foods.",
+            "She sometimes eats fried foods."
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "油炸食品": "yóuzhá shípǐn — fried foods"
+          }
+        },
+        {
+          "question": "Arrange these words into a correct sentence: 运动 / 尽量 / 每天 / 坚持 / 他",
+          "type": "multiple_choice",
+          "correct": "他每天尽量坚持运动。",
+          "options": [
+            "他每天尽量坚持运动。",
+            "他尽量每天运动坚持。",
+            "尽量他每天坚持运动。",
+            "每天他运动尽量坚持。"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "坚持": "jiān chí — to persist, keep up"
+          }
+        },
+        {
+          "question": "Which sentence uses 尽量 appropriately in the context of dieting?",
+          "type": "multiple_choice",
+          "correct": "节食期间，要尽量保证蛋白质的摄入。",
+          "options": [
+            "节食期间，要尽量保证蛋白质的摄入。",
+            "节食尽量了很多体重。",
+            "尽量体重标准是健康的。",
+            "她的代谢尽量很快。"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "蛋白质": "dànbáizhì — protein"
+          }
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "适当 — Appropriate; suitable; in moderation",
+      "explanation": "适当 can function as both an adjective (before a noun) and an adverb (before a verb). It means 'appropriate,' 'suitable,' or 'in moderation.' Compare with: 合适 (suitable for a specific purpose or situation, often used for objects and people) and 合理 (rational, reasonable, often used for plans, methods, and logic). 适当 emphasizes doing something to the right degree — not too much, not too little. Structure as adjective: 适当的 + noun. Structure as adverb: 适当 + verb. Example: 适当休息很重要。(Appropriate rest is very important.)",
+      "examples": [
+        {
+          "chinese": "适当的运动加上均衡的饮食是保持健康体重的最佳方式。",
+          "pinyin": "Shìdàng de yùndòng jiā shàng jūn héng de yǐn shí shì bǎo chí jiànkāng tǐ zhòng de zuì jiā fāngshì.",
+          "english": "Appropriate exercise combined with a balanced diet is the best way to maintain a healthy body weight."
+        },
+        {
+          "chinese": "医生建议他适当减少盐分的摄入，以控制血压。",
+          "pinyin": "Yīshēng jiànyì tā shìdàng jiǎnshǎo yánfèn de shè rù, yǐ kòngzhì xuèyā.",
+          "english": "The doctor advised him to appropriately reduce his salt intake in order to control his blood pressure."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which word best fills the blank: '___的节食计划才不会伤害身体。'",
+          "type": "multiple_choice",
+          "correct": "适当",
+          "options": [
+            "适当",
+            "过度",
+            "危险",
+            "均衡"
+          ],
+          "option_pinyin": [
+            "shì dàng",
+            "guò dù",
+            "wēi xiǎn",
+            "jūn héng"
+          ],
+          "word_hints": {
+            "节食计划": "jié shí jìhuà — diet plan"
+          }
+        },
+        {
+          "question": "Which sentence uses 适当 correctly?",
+          "type": "multiple_choice",
+          "correct": "她每天适当地控制饮食，不暴饮暴食。",
+          "options": [
+            "她每天适当地控制饮食，不暴饮暴食。",
+            "她的体重适当了很多。",
+            "这件事适当了我的健康。",
+            "适当因为她减肥成功。"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "暴饮暴食": "bào yǐn bào shí — binge eating and drinking"
+          }
+        },
+        {
+          "question": "What is the difference between 适当 and 合适?",
+          "type": "multiple_choice",
+          "correct": "适当 means doing something in moderation/to the right degree; 合适 means suitable for a specific purpose.",
+          "options": [
+            "适当 means doing something in moderation/to the right degree; 合适 means suitable for a specific purpose.",
+            "They are completely interchangeable in all contexts.",
+            "适当 refers only to food; 合适 refers only to exercise.",
+            "合适 is more formal than 适当."
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {}
+        },
+        {
+          "question": "Fill in the blank: '这个减肥方法很___，不会对身体造成伤害。' (Use 合理 or 适当?)",
+          "type": "multiple_choice",
+          "correct": "合理",
+          "options": [
+            "合理",
+            "适当",
+            "过度",
+            "均衡"
+          ],
+          "option_pinyin": [
+            "hé lǐ",
+            "shì dàng",
+            "guò dù",
+            "jūn héng"
+          ],
+          "word_hints": {}
+        },
+        {
+          "question": "Which is the best translation of '适当休息是保持健康的重要方法'?",
+          "type": "multiple_choice",
+          "correct": "Appropriate rest is an important method for maintaining health.",
+          "options": [
+            "Appropriate rest is an important method for maintaining health.",
+            "Excessive rest is key to staying healthy.",
+            "You must rest to lose weight.",
+            "Rest is more important than diet."
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "一方面…另一方面 — On one hand…on the other hand",
+      "explanation": "The structure 一方面…另一方面 is used to present two sides, aspects, or perspectives of an issue simultaneously. It is equivalent to 'on one hand…on the other hand' in English. Structure: 一方面 + [first aspect/clause], 另一方面 + [second aspect/clause]. This pattern can appear within a single sentence or across two sentences. It is commonly used in argumentative or analytical contexts to show balance or contrast. Example: 工作一方面让人充实，另一方面也会带来压力。(Work on one hand gives people fulfillment; on the other hand, it also brings pressure.)",
+      "examples": [
+        {
+          "chinese": "节食一方面可以帮助减肥，另一方面过度节食却会伤害身体健康。",
+          "pinyin": "Jié shí yī fāngmiàn kěyǐ bāngzhù jiǎn féi, lìng yī fāngmiàn guòdù jié shí què huì shānghài shēntǐ jiànkāng.",
+          "english": "Dieting can help with weight loss on one hand; on the other hand, excessive dieting can harm one's health."
+        },
+        {
+          "chinese": "均衡饮食一方面保证了身体所需的营养，另一方面也有助于维持标准体重。",
+          "pinyin": "Jūn héng yǐn shí yī fāngmiàn bǎozhèng le shēntǐ suǒ xū de yíng yǎng, lìng yī fāngmiàn yě yǒuzhù yú wéichí biāo zhǔn tǐ zhòng.",
+          "english": "A balanced diet on one hand ensures the nutrition the body needs, and on the other hand also helps maintain a standard body weight."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Which sentence correctly uses 一方面…另一方面?",
+          "type": "multiple_choice",
+          "correct": "运动一方面消耗热量，另一方面也能增强体质。",
+          "options": [
+            "运动一方面消耗热量，另一方面也能增强体质。",
+            "一方面运动，另一方面体重。",
+            "她一方面了，另一方面减肥了。",
+            "一方面因为运动，另一方面所以减肥。"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "体质": "tǐ zhì — physical constitution"
+          }
+        },
+        {
+          "question": "Fill in the blank: '过度减肥___可能导致营养不良，___会引起代谢紊乱。'",
+          "type": "multiple_choice",
+          "correct": "一方面 / 另一方面",
+          "options": [
+            "一方面 / 另一方面",
+            "虽然 / 但是",
+            "因为 / 所以",
+            "不仅 / 而且"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "代谢紊乱": "dài xiè wěnluàn — metabolic disorder"
+          }
+        },
+        {
+          "question": "What is the main function of 一方面…另一方面 in a sentence?",
+          "type": "multiple_choice",
+          "correct": "To present two aspects or sides of a topic simultaneously.",
+          "options": [
+            "To present two aspects or sides of a topic simultaneously.",
+            "To show a cause-and-effect relationship.",
+            "To express surprise or unexpectedness.",
+            "To compare two completely unrelated topics."
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {}
+        },
+        {
+          "question": "Which best completes: '节食一方面有助于减肥，另一方面___。'",
+          "type": "multiple_choice",
+          "correct": "过度节食却可能损害健康",
+          "options": [
+            "过度节食却可能损害健康",
+            "节食是最好的方法",
+            "不需要运动了",
+            "体重一定会下降"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {}
+        },
+        {
+          "question": "Translate: 'On one hand, maintaining weight requires diet control; on the other hand, appropriate exercise is also essential.'",
+          "type": "multiple_choice",
+          "correct": "保持体重一方面需要控制饮食，另一方面也需要适量运动。",
+          "options": [
+            "保持体重一方面需要控制饮食，另一方面也需要适量运动。",
+            "保持体重因为控制饮食，所以需要运动。",
+            "一方面体重，另一方面饮食。",
+            "体重一方面控制，另一方面不运动。"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "title": "Food as Medicine: The Chinese Principle of 药食同源",
+      "title_chinese": "药食同源",
+      "content": "药食同源 (yào shí tóng yuán) literally means \"medicine and food share the same origin.\" This ancient concept from Traditional Chinese Medicine (中医 zhōng yī) holds that many foods serve as medicine, and that the distinction between food and remedy is not absolute.\n\nIn Chinese culture, food is not merely fuel — it is also a way to maintain balance, prevent illness, and restore health. Foods are categorized by their nature (性质 xìngzhì): warm (温 wēn), cool (凉 liáng), hot (热 rè), or cold (寒 hán), and their flavor (味 wèi): sweet (甜 tián), sour (酸 suān), bitter (苦 kǔ), spicy (辣 là), salty (咸 xián).\n\nFor example, ginger (生姜 shēng jiāng) is considered warming and is used to treat colds. Green tea (绿茶 lǜ chá) is cooling and said to clear internal heat. Red dates (红枣 hóng zǎo) are sweet and nourishing for the blood.\n\nThis philosophy has shaped Chinese cooking for thousands of years. A skilled Chinese cook considers not just taste, but the health effects of each ingredient. Seasonal eating, congee (粥 zhōu) for recovery, and soup-based meals are all expressions of this wisdom.",
+      "vocabulary_highlight": [
+        "药食同源",
+        "中医",
+        "性质",
+        "生姜",
+        "红枣",
+        "绿茶"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "What does 节食 mean?",
+      "type": "multiple_choice",
+      "correct": "To diet; to reduce food intake",
+      "options": [
+        "To diet; to reduce food intake",
+        "To exercise regularly",
+        "To count calories",
+        "To gain weight"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Which word means 'metabolism'?",
+      "type": "multiple_choice",
+      "correct": "代谢",
+      "options": [
+        "代谢",
+        "营养",
+        "能量",
+        "摄入"
+      ],
+      "word_hints": {
+        "代谢": "dài xiè",
+        "营养": "yíng yǎng",
+        "能量": "néng liàng",
+        "摄入": "shè rù"
+      }
+    },
+    {
+      "question": "Fill in the blank: '为了保持健康，我们应该___饮食，不要挑食。'",
+      "type": "multiple_choice",
+      "correct": "均衡",
+      "options": [
+        "均衡",
+        "过度",
+        "危险",
+        "合理"
+      ],
+      "word_hints": {
+        "挑食": "tiāo shí — to be picky about food"
+      }
+    },
+    {
+      "question": "Which sentence correctly uses 一方面…另一方面?",
+      "type": "multiple_choice",
+      "correct": "节食一方面帮助减肥，另一方面过度节食会伤身。",
+      "options": [
+        "节食一方面帮助减肥，另一方面过度节食会伤身。",
+        "一方面节食，另一方面运动因为。",
+        "她一方面了节食，另一方面减肥了。",
+        "一方面因为节食，另一方面所以健康。"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "What does 摄入 mean in a diet context?",
+      "type": "multiple_choice",
+      "correct": "To intake or consume (food/nutrients)",
+      "options": [
+        "To intake or consume (food/nutrients)",
+        "To exercise vigorously",
+        "To lose weight",
+        "To measure body weight"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "Which adverb means 'as much as possible' when advising someone about healthy eating?",
+      "type": "multiple_choice",
+      "correct": "尽量",
+      "options": [
+        "尽量",
+        "居然",
+        "过度",
+        "适量"
+      ],
+      "word_hints": {
+        "尽量": "jǐn liàng",
+        "居然": "jū rán",
+        "过度": "guò dù",
+        "适量": "shì liàng"
+      }
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Is Dieting Necessary?",
+      "title_chinese": "节食有必要吗？",
+      "speakers": {
+        "A": {
+          "name": "奥斯汀",
+          "role": "believes exercise is more important than dieting",
+          "gender": "female"
+        },
+        "B": {
+          "name": "兰特",
+          "role": "believes diet control is essential for managing weight",
+          "gender": "female"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你觉得减肥一定要节食吗？我觉得尽量多运动比控制饮食更有效。",
+          "pinyin": "Nǐ juéde jiǎn féi yīdìng yào jié shí ma? Wǒ juéde jǐnliàng duō yùndòng bǐ kòngzhì yǐn shí gèng yǒuxiào.",
+          "english": "Do you think dieting is necessary for losing weight? I think trying to exercise more is more effective than controlling what you eat."
+        },
+        {
+          "speaker": "B",
+          "chinese": "我不这么认为。节食一方面可以直接减少热量的摄入，另一方面也能培养更健康的饮食习惯。",
+          "pinyin": "Wǒ bù zhème rènwéi. Jié shí yī fāngmiàn kěyǐ zhíjiē jiǎnshǎo rèliàng de shè rù, lìng yī fāngmiàn yě néng péiyǎng gèng jiànkāng de yǐn shí xíguàn.",
+          "english": "I don't think so. Dieting on one hand can directly reduce calorie intake, and on the other hand can also cultivate healthier eating habits."
+        },
+        {
+          "speaker": "A",
+          "chinese": "但是过度节食很危险吧？我们应该尽量通过自然的方式保持体重。",
+          "pinyin": "Dànshì guòdù jié shí hěn wēi xiǎn ba? Wǒmen yīnggāi jǐnliàng tōngguò zìrán de fāngshì bǎo chí tǐ zhòng.",
+          "english": "But isn't excessive dieting dangerous? We should try as much as possible to maintain our weight through natural means."
+        },
+        {
+          "speaker": "B",
+          "chinese": "当然，我说的不是极端节食，而是合理地控制饮食，配合适量运动。",
+          "pinyin": "Dāngrán, wǒ shuō de bú shì jíduān jié shí, ér shì hé lǐ de kòngzhì yǐn shí, pèihé shì liàng yùndòng.",
+          "english": "Of course, I'm not talking about extreme dieting, but rather rationally controlling food intake combined with appropriate exercise."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这样我就同意了。关键是科学减肥，而不是为了快速出结果就什么都不吃。",
+          "pinyin": "Zhèyàng wǒ jiù tóngyì le. Guānjiàn shì kē xué jiǎn féi, ér bú shì wèile kuàisù chū jiéguǒ jiù shénme dōu bù chī.",
+          "english": "In that case I agree. The key is scientific weight loss, not refusing to eat anything just to see quick results."
+        },
+        {
+          "speaker": "B",
+          "chinese": "对，均衡饮食加上适量运动，才是真正对身体好的方法。",
+          "pinyin": "Duì, jūn héng yǐn shí jiā shàng shì liàng yùndòng, cái shì zhēnzhèng duì shēntǐ hǎo de fāngfǎ.",
+          "english": "Exactly. A balanced diet together with appropriate exercise is the truly body-friendly approach."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "What Does 'Healthy Weight' Mean?",
+      "title_chinese": "什么是健康体重？",
+      "speakers": {
+        "A": {
+          "name": "奥斯汀",
+          "role": "questions whether numbers alone define health",
+          "gender": "female"
+        },
+        "B": {
+          "name": "加缪",
+          "role": "reflects philosophically on health beyond appearance",
+          "gender": "male"
+        }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "加缪，你觉得什么才算是健康的体重？有什么科学的标准吗？",
+          "pinyin": "Jiā móu, nǐ juéde shénme cái suàn shì jiànkāng de tǐ zhòng? Yǒu shénme kē xué de biāo zhǔn ma?",
+          "english": "Camus, what do you think counts as a healthy body weight? Is there a scientific standard?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "BMI是常用的参考标准，但它只是一个数字。科学告诉我们，健康比体重更复杂。",
+          "pinyin": "BMI shì cháng yòng de cānkǎo biāo zhǔn, dàn tā zhǐ shì yí gè shùzì. Kē xué gàosù wǒmen, jiànkāng bǐ tǐ zhòng gèng fùzá.",
+          "english": "BMI is a commonly used reference standard, but it is just a number. Science tells us that health is more complex than body weight."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那什么才是真正的健康？只靠体重来判断是不是太简单了？",
+          "pinyin": "Nà shénme cái shì zhēnzhèng de jiànkāng? Zhǐ kào tǐ zhòng lái pànduàn shì bú shì tài jiǎndān le?",
+          "english": "Then what does true health really mean? Isn't it too simplistic to judge only by body weight?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "的确如此。适当的体重只是健康的一个方面，精神状态、睡眠质量和饮食的均衡同样重要。",
+          "pinyin": "Díquè rúcǐ. Shìdàng de tǐ zhòng zhǐ shì jiànkāng de yí gè fāngmiàn, jīngshén zhuàngtài, shuìmián zhìliàng hé yǐn shí de jūn héng tóngyàng zhòngyào.",
+          "english": "That is indeed the case. Appropriate body weight is just one aspect of health; mental state, sleep quality, and dietary balance are equally important."
+        },
+        {
+          "speaker": "A",
+          "chinese": "所以不应该只为了追求某个标准体重而过度节食，对吗？",
+          "pinyin": "Suǒyǐ bù yīnggāi zhǐ wèile zhuīqiú mǒu gè biāo zhǔn tǐ zhòng ér guòdù jié shí, duì ma?",
+          "english": "So one shouldn't excessively diet just to chase a certain standard body weight, right?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "正是。科学减肥的目的不是达到某个数字，而是让身体真正地感到有活力、有力量。",
+          "pinyin": "Zhèng shì. Kē xué jiǎn féi de mùdì bú shì dádào mǒu gè shùzì, ér shì ràng shēntǐ zhēnzhèng de gǎndào yǒu huólì, yǒu lìliàng.",
+          "english": "Exactly. The purpose of scientific weight loss is not to reach a certain number, but to truly make the body feel energetic and strong."
+        }
+      ]
+    }
+  ]
+}

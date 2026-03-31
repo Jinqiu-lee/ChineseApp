@@ -1,0 +1,601 @@
+{
+  "lesson": 6,
+  "level": 6,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "The Power of Words in Debate",
+  "topic_chinese": "争论的奇迹（二）",
+  "vocabulary": [
+    {
+      "id": "hsk6_l6_01",
+      "chinese": "显示",
+      "pinyin": "xiǎn shì",
+      "english": "To show, demonstrate, display (objective/data-based)",
+      "part_of_speech": "verb",
+      "example": "数据显示，参加辩论训练的学生逻辑思维更强。",
+      "translation": "Data shows that students who receive debate training have stronger logical thinking."
+    },
+    {
+      "id": "hsk6_l6_02",
+      "chinese": "显得",
+      "pinyin": "xiǎn de",
+      "english": "To appear, seem, look (subjective impression)",
+      "part_of_speech": "verb",
+      "example": "她在辩论台上显得非常自信，让对手感到了压力。",
+      "translation": "She appeared very confident on the debate stage, putting pressure on her opponent."
+    },
+    {
+      "id": "hsk6_l6_03",
+      "chinese": "围绕",
+      "pinyin": "wéi rào",
+      "english": "To revolve around, center on",
+      "part_of_speech": "verb/prep",
+      "example": "这次讨论围绕着教育公平这一核心议题展开。",
+      "translation": "This discussion centered on the core issue of educational equality."
+    },
+    {
+      "id": "hsk6_l6_04",
+      "chinese": "效果",
+      "pinyin": "xiào guǒ",
+      "english": "Effect, result, outcome",
+      "part_of_speech": "noun",
+      "example": "这种沟通方式的效果很好，双方都表示满意。",
+      "translation": "This communication method achieved good results; both sides expressed satisfaction."
+    },
+    {
+      "id": "hsk6_l6_05",
+      "chinese": "逻辑",
+      "pinyin": "luó jí",
+      "english": "Logic",
+      "part_of_speech": "noun",
+      "example": "他的论点逻辑清晰，很难被反驳。",
+      "translation": "His argument was logically clear and difficult to refute."
+    },
+    {
+      "id": "hsk6_l6_06",
+      "chinese": "反驳",
+      "pinyin": "fǎn bó",
+      "english": "To refute, rebut",
+      "part_of_speech": "verb",
+      "example": "她冷静地反驳了对方提出的每一个论点。",
+      "translation": "She calmly refuted every argument put forward by the other side."
+    },
+    {
+      "id": "hsk6_l6_07",
+      "chinese": "提出",
+      "pinyin": "tí chū",
+      "english": "To put forward, propose",
+      "part_of_speech": "verb",
+      "example": "他在会议上提出了一个新颖的解决方案。",
+      "translation": "He put forward an innovative solution at the meeting."
+    },
+    {
+      "id": "hsk6_l6_08",
+      "chinese": "针对",
+      "pinyin": "zhēn duì",
+      "english": "To aim at, target; regarding",
+      "part_of_speech": "verb/prep",
+      "example": "针对对方的论点，他提出了三条有力的反驳意见。",
+      "translation": "In response to the other side's argument, he raised three powerful rebuttals."
+    },
+    {
+      "id": "hsk6_l6_09",
+      "chinese": "证明",
+      "pinyin": "zhèng míng",
+      "english": "To prove, demonstrate",
+      "part_of_speech": "verb",
+      "english_extended": "To prove, demonstrate",
+      "example": "他用具体事例证明了自己的观点是正确的。",
+      "translation": "He used concrete examples to prove that his viewpoint was correct."
+    },
+    {
+      "id": "hsk6_l6_10",
+      "chinese": "合理",
+      "pinyin": "hé lǐ",
+      "english": "Reasonable, rational, justified",
+      "part_of_speech": "adj",
+      "example": "他的要求完全合理，没有人能提出反对意见。",
+      "translation": "His demands were completely reasonable, and no one could raise any objections."
+    },
+    {
+      "id": "hsk6_l6_11",
+      "chinese": "态度",
+      "pinyin": "tài dù",
+      "english": "Attitude, manner",
+      "part_of_speech": "noun",
+      "example": "在争论中保持冷静的态度，往往比激动更有说服力。",
+      "translation": "Maintaining a calm attitude in a debate is often more persuasive than becoming emotional."
+    },
+    {
+      "id": "hsk6_l6_12",
+      "chinese": "有效",
+      "pinyin": "yǒu xiào",
+      "english": "Effective, valid",
+      "part_of_speech": "adj",
+      "example": "找到有效的沟通方式，是解决分歧的关键。",
+      "translation": "Finding an effective way to communicate is the key to resolving disagreements."
+    },
+    {
+      "id": "hsk6_l6_13",
+      "chinese": "实际",
+      "pinyin": "shí jì",
+      "english": "Actual, practical; reality",
+      "part_of_speech": "adj/noun",
+      "example": "理论再好，也要考虑实际情况才能真正解决问题。",
+      "translation": "No matter how good the theory, one must consider practical conditions to truly solve problems."
+    },
+    {
+      "id": "hsk6_l6_14",
+      "chinese": "原则",
+      "pinyin": "yuán zé",
+      "english": "Principle, rule",
+      "part_of_speech": "noun",
+      "example": "在争论中，他始终坚守自己的道德原则，从不妥协。",
+      "translation": "In debates, he always upheld his moral principles and never compromised."
+    },
+    {
+      "id": "hsk6_l6_15",
+      "chinese": "解决",
+      "pinyin": "jiě jué",
+      "english": "To solve, resolve",
+      "part_of_speech": "verb",
+      "example": "双方经过坦诚的交流，最终解决了长期存在的分歧。",
+      "translation": "After frank communication, both sides ultimately resolved the long-standing disagreement."
+    },
+    {
+      "id": "hsk6_l6_p01",
+      "chinese": "显示出差异",
+      "pinyin": "xiǎn shì chū chā yì",
+      "english": "To show/demonstrate differences",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l6_p02",
+      "chinese": "有效沟通",
+      "pinyin": "yǒu xiào gōu tōng",
+      "english": "Effective communication",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l6_p03",
+      "chinese": "围绕主题",
+      "pinyin": "wéi rào zhǔ tí",
+      "english": "To revolve around the topic",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l6_p04",
+      "chinese": "提出证据",
+      "pinyin": "tí chū zhèng jù",
+      "english": "To present evidence",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l6_p05",
+      "chinese": "合理解释",
+      "pinyin": "hé lǐ jiě shì",
+      "english": "A reasonable explanation",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "研究显示，掌握良好逻辑能力的人，在争论中往往更有说服力。",
+      "pinyin": "Yán jiū xiǎn shì, zhǎng wò liáng hǎo luó jí néng lì de rén, zài zhēng lùn zhōng wǎng wǎng gèng yǒu shuō fú lì.",
+      "english": "Research shows that people with strong logical reasoning are often more persuasive in debates."
+    },
+    {
+      "chinese": "他在辩论中显得格外沉着，即使面对激烈的反驳也没有慌乱。",
+      "pinyin": "Tā zài biàn lùn zhōng xiǎn de gé wài chén zhuó, jí shǐ miàn duì jī liè de fǎn bó yě méi yǒu huāng luàn.",
+      "english": "He appeared exceptionally composed during the debate, not showing any panic even when faced with intense rebuttals."
+    },
+    {
+      "chinese": "整场讨论都围绕着如何提高有效沟通这一核心问题展开。",
+      "pinyin": "Zhěng chǎng tǎo lùn dōu wéi rào zhe rú hé tí gāo yǒu xiào gōu tōng zhè yī hé xīn wèn tí zhǎn kāi.",
+      "english": "The entire discussion revolved around the core question of how to improve effective communication."
+    },
+    {
+      "chinese": "针对对方提出的质疑，她给出了合理的解释和充分的证明。",
+      "pinyin": "Zhēn duì duì fāng tí chū de zhì yí, tā gěi chū le hé lǐ de jiě shì hé chōng fèn de zhèng míng.",
+      "english": "In response to the questions raised by the other side, she provided a reasonable explanation and ample proof."
+    },
+    {
+      "chinese": "一个好的辩手不仅要坚守原则，还要懂得如何有效解决争议。",
+      "pinyin": "Yí gè hǎo de biàn shǒu bù jǐn yào jiān shǒu yuán zé, hái yào dǒng de rú hé yǒu xiào jiě jué zhēng yì.",
+      "english": "A good debater must not only uphold principles but also know how to effectively resolve disputes."
+    },
+    {
+      "chinese": "实际上，态度和逻辑同样重要——失去任何一个，说服力都会大打折扣。",
+      "pinyin": "Shí jì shang, tài dù hé luó jí tóng yàng zhòng yào — shī qù rèn hé yī gè, shuō fú lì dōu huì dà dǎ zhé kòu.",
+      "english": "In reality, attitude and logic are equally important — lose either one, and your persuasiveness is greatly diminished."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "显示 vs 显得 — To show (objective) vs to appear/seem (subjective)",
+      "explanation": "显示 and 显得 are easily confused but have distinct uses. 显示 (xiǎn shì): To show or demonstrate something objective — facts, data, results. The subject is typically data, research, events, or things. Structure: [Data/Subject] + 显示 + [objective fact]. 显得 (xiǎn de): To appear or seem a certain way — a subjective impression or perception. The subject is typically a person or thing that gives a certain impression. Structure: [Person/Thing] + 显得 + [adjective/state]. Examples: 研究显示，争论能提升人的思维能力。(Research shows that debate can improve people's thinking.) / 他在争论中显得非常自信。(He appeared very confident in the debate.)",
+      "examples": [
+        {
+          "chinese": "研究显示，争论能提升人的思维能力。",
+          "pinyin": "Yán jiū xiǎn shì, zhēng lùn néng tí shēng rén de sī wéi néng lì.",
+          "english": "Research shows that debate can improve people's thinking ability."
+        },
+        {
+          "chinese": "他在争论中显得非常自信。",
+          "pinyin": "Tā zài zhēng lùn zhōng xiǎn de fēi cháng zì xìn.",
+          "english": "He appeared very confident in the debate."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "数据_____ 这种教学方法的效果非常显著。",
+          "type": "multiple_choice",
+          "correct": "显示",
+          "options": ["显示", "显得", "围绕", "针对"],
+          "option_pinyin": ["xiǎn shì", "xiǎn de", "wéi rào", "zhēn duì"],
+          "word_hints": { "显著": "xiǎnzhù", "效果": "xiàoguǒ" }
+        },
+        {
+          "question": "她第一次上台演讲，有些紧张，_____不太自然。",
+          "type": "multiple_choice",
+          "correct": "显得",
+          "options": ["显得", "显示", "提出", "证明"],
+          "option_pinyin": ["xiǎn de", "xiǎn shì", "tí chū", "zhèng míng"],
+          "word_hints": {}
+        },
+        {
+          "question": "Which sentence uses 显示 correctly?",
+          "type": "multiple_choice",
+          "correct": "调查结果显示，大多数学生支持这项改革。",
+          "options": [
+            "调查结果显示，大多数学生支持这项改革。",
+            "他显示很疲惫，需要休息。",
+            "她显示非常聪明。",
+            "这件衣服显示很漂亮。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": { "调查结果": "diàochá jiéguǒ" }
+        },
+        {
+          "question": "Which sentence uses 显得 correctly?",
+          "type": "multiple_choice",
+          "correct": "在那套正式的西装下，他显得更加成熟。",
+          "options": [
+            "在那套正式的西装下，他显得更加成熟。",
+            "数据显得问题严重。",
+            "报告显得了新的趋势。",
+            "结果显得我们成功了。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": { "成熟": "chéngshú" }
+        },
+        {
+          "question": "What is the key difference between 显示 and 显得?",
+          "type": "multiple_choice",
+          "correct": "显示 presents objective facts/data; 显得 expresses a subjective impression",
+          "options": [
+            "显示 presents objective facts/data; 显得 expresses a subjective impression",
+            "They are interchangeable in all sentences",
+            "显得 is only used with numbers and statistics",
+            "显示 can only describe people"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "围绕 — Revolving around / Centering on",
+      "explanation": "围绕 (wéi rào) means 'to revolve around' or 'to center on'. It describes how a discussion, work, activity, or thought is organized around a central theme or topic. Structure: 围绕 + [topic/theme] + verb phrase. It can also appear as 围绕着 + topic for a slightly more continuous sense. 围绕 can be used as a verb or a preposition. Example: 针对这个问题，大家围绕着三个核心议题展开了讨论。(Regarding this issue, everyone had a discussion centered on three core topics.)",
+      "examples": [
+        {
+          "chinese": "这场辩论围绕着教育改革这一核心议题展开。",
+          "pinyin": "Zhè chǎng biàn lùn wéi rào zhe jiào yù gǎi gé zhè yī hé xīn yì tí zhǎn kāi.",
+          "english": "This debate unfolded around the core topic of educational reform."
+        },
+        {
+          "chinese": "他的所有论点都围绕着一个基本原则：公平比效率更重要。",
+          "pinyin": "Tā de suǒ yǒu lùn diǎn dōu wéi rào zhe yī gè jī běn yuán zé: gōng píng bǐ xiào lǜ gèng zhòng yào.",
+          "english": "All of his arguments revolved around one basic principle: fairness is more important than efficiency."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "今天的讨论_____ 如何改善城市交通这一主题展开。",
+          "type": "multiple_choice",
+          "correct": "围绕",
+          "options": ["围绕", "针对", "反驳", "显示"],
+          "option_pinyin": ["wéi rào", "zhēn duì", "fǎn bó", "xiǎn shì"],
+          "word_hints": { "改善": "gǎishàn" }
+        },
+        {
+          "question": "Which sentence uses 围绕 correctly?",
+          "type": "multiple_choice",
+          "correct": "他们的争论一直围绕着同一个问题，始终没有解决。",
+          "options": [
+            "他们的争论一直围绕着同一个问题，始终没有解决。",
+            "围绕她很聪明，所以大家都喜欢她。",
+            "他围绕说了一句话。",
+            "数据围绕显示了新结果。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "What does 围绕 describe in a sentence?",
+          "type": "multiple_choice",
+          "correct": "How an activity or discussion is organized around a central theme",
+          "options": [
+            "How an activity or discussion is organized around a central theme",
+            "The speed at which something happens",
+            "A contrast between two opposing ideas",
+            "The reason something occurred"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "这篇文章_____ 逻辑与情感在辩论中的作用这一主题写成。",
+          "type": "multiple_choice",
+          "correct": "围绕",
+          "options": ["围绕", "显得", "提出", "解决"],
+          "option_pinyin": ["wéi rào", "xiǎn de", "tí chū", "jiě jué"],
+          "word_hints": { "情感": "qínggǎn" }
+        },
+        {
+          "question": "围绕着 and 围绕 are related. When would you more likely use 围绕着?",
+          "type": "multiple_choice",
+          "correct": "To emphasize an ongoing or sustained focus on a topic",
+          "options": [
+            "To emphasize an ongoing or sustained focus on a topic",
+            "When describing a sudden change of direction",
+            "Only when the subject is a person",
+            "When the sentence is negative"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "针对 — Targeting / In response to / Regarding",
+      "explanation": "针对 (zhēn duì) means 'to aim at', 'to target', or 'in response to'. It is used to describe an action specifically directed at a person, issue, or problem. Structure: 针对 + [issue/person/problem] + verb phrase. 针对 can function as a verb or a preposition. As a preposition, it introduces the specific target before the main action. Example: 针对这个问题，他提出了三点建议。(In response to this issue, he put forward three suggestions.)",
+      "examples": [
+        {
+          "chinese": "针对这个问题，他提出了三点建议。",
+          "pinyin": "Zhēn duì zhè ge wèn tí, tā tí chū le sān diǎn jiàn yì.",
+          "english": "In response to this issue, he put forward three suggestions."
+        },
+        {
+          "chinese": "针对对方的核心论点，她提供了充分的证明材料。",
+          "pinyin": "Zhēn duì duì fāng de hé xīn lùn diǎn, tā tí gōng le chōng fèn de zhèng míng cái liào.",
+          "english": "In response to the other side's core argument, she provided ample supporting evidence."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 这次调查结果，委员会提出了新的改进方案。",
+          "type": "multiple_choice",
+          "correct": "针对",
+          "options": ["针对", "围绕", "显得", "逐渐"],
+          "option_pinyin": ["zhēn duì", "wéi rào", "xiǎn de", "zhú jiàn"],
+          "word_hints": { "委员会": "wěiyuánhuì", "改进方案": "gǎijìn fāng'àn" }
+        },
+        {
+          "question": "Which sentence uses 针对 most correctly?",
+          "type": "multiple_choice",
+          "correct": "针对市场需求的变化，公司及时调整了产品策略。",
+          "options": [
+            "针对市场需求的变化，公司及时调整了产品策略。",
+            "她针对了非常聪明。",
+            "针对他很高兴地同意了。",
+            "这件事针对很合理。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": { "市场需求": "shìchǎng xūqiú", "产品策略": "chǎnpǐn cèlüè" }
+        },
+        {
+          "question": "What is the main function of 针对 in a sentence?",
+          "type": "multiple_choice",
+          "correct": "To indicate that an action is specifically directed at a particular issue or target",
+          "options": [
+            "To indicate that an action is specifically directed at a particular issue or target",
+            "To describe how something changes gradually over time",
+            "To show that two things are happening simultaneously",
+            "To express a conditional relationship"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "他_____ 对方的质疑，逐条进行了反驳。",
+          "type": "multiple_choice",
+          "correct": "针对",
+          "options": ["针对", "显示", "有效", "合理"],
+          "option_pinyin": ["zhēn duì", "xiǎn shì", "yǒu xiào", "hé lǐ"],
+          "word_hints": { "逐条": "zhú tiáo", "质疑": "zhìyí" }
+        },
+        {
+          "question": "针对 and 关于 can both mean 'regarding'. What is a key difference?",
+          "type": "multiple_choice",
+          "correct": "针对 implies targeted action in response; 关于 is neutral and simply indicates the topic",
+          "options": [
+            "针对 implies targeted action in response; 关于 is neutral and simply indicates the topic",
+            "关于 always implies a negative response",
+            "针对 is only used in written Chinese",
+            "They are completely interchangeable"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "title": "Debate in Chinese Tradition",
+      "title_chinese": "辩论的中国传统",
+      "content": "China has a rich tradition of intellectual debate stretching back over two thousand years. The period known as the Spring and Autumn Period and the Warring States Period (roughly 770–221 BCE) gave rise to one of the most remarkable intellectual flowerings in human history: 百家争鸣 (bǎi jiā zhēng míng), literally 'a hundred schools of thought contending'. During this era, philosophers from vastly different traditions — Confucianists (儒家), Taoists (道家), Legalists (法家), Mohists (墨家), and many others — debated fundamental questions about society, governance, human nature, and the cosmos. These thinkers traveled between states, argued in royal courts, and wrote treatises challenging each other's ideas. It was China's golden age of philosophical debate. Confucius emphasized moral cultivation and ritual propriety; Mozi argued for universal love and practical utility; Han Feizi championed strict law and centralized power. Each school refined its arguments in response to the others. This tradition of structured intellectual debate continues in modern China through formal debate competitions (辩论赛, biàn lùn sài), which are popular at universities across China and Taiwan. The style emphasizes logic (逻辑), evidence (证据), and the ability to effectively refute (反驳) the opposing side — skills that connect directly to the ancient tradition of 百家争鸣.",
+      "idioms": [
+        {
+          "chinese": "百家争鸣",
+          "pinyin": "bǎi jiā zhēng míng",
+          "english": "A hundred schools of thought contend; a lively debate among many schools of thought"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which word means 'to refute or rebut an argument'?",
+      "type": "multiple_choice",
+      "correct": "反驳",
+      "options": ["反驳", "显示", "围绕", "解决"],
+      "word_hints": {}
+    },
+    {
+      "question": "_____ 对方观点中的逻辑漏洞，她提出了有力的反驳。",
+      "type": "multiple_choice",
+      "correct": "针对",
+      "options": ["针对", "显得", "有效", "实际"],
+      "word_hints": { "逻辑漏洞": "luójí lòudòng" }
+    },
+    {
+      "question": "Which sentence correctly uses 显示?",
+      "type": "multiple_choice",
+      "correct": "实验结果显示，这种方法非常有效。",
+      "options": [
+        "实验结果显示，这种方法非常有效。",
+        "他显示很紧张。",
+        "她的表情显示非常自信。",
+        "今天的天气显示很好。"
+      ],
+      "word_hints": { "实验结果": "shíyàn jiéguǒ" }
+    },
+    {
+      "question": "What does the idiom 百家争鸣 refer to?",
+      "type": "multiple_choice",
+      "correct": "The flourishing of many competing philosophical schools in ancient China",
+      "options": [
+        "The flourishing of many competing philosophical schools in ancient China",
+        "A modern Chinese debate competition format",
+        "A method of teaching logic in universities",
+        "A famous story from the Zhuangzi"
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "整场讨论都_____ 如何提升辩论技巧这一主题展开。",
+      "type": "multiple_choice",
+      "correct": "围绕",
+      "options": ["围绕", "反驳", "显得", "针对"],
+      "word_hints": { "辩论技巧": "biànlùn jìqiǎo" }
+    },
+    {
+      "question": "在那个紧张的场合，她依然_____ 非常从容，让所有人都很佩服。",
+      "type": "multiple_choice",
+      "correct": "显得",
+      "options": ["显得", "显示", "提出", "证明"],
+      "word_hints": { "从容": "cóngróng" }
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "The Logic of the Argument",
+      "title_chinese": "论点的逻辑",
+      "speakers": {
+        "A": { "name": "但丁", "role": "philosopher", "gender": "male" },
+        "B": { "name": "奥斯汀", "role": "writer", "gender": "female" }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你有没有想过，为什么有些论点让人信服，而另一些则毫无效果？",
+          "pinyin": "Nǐ yǒu méi yǒu xiǎng guò, wèi shén me yǒu xiē lùn diǎn ràng rén xìn fú, ér lìng yī xiē zé háo wú xiào guǒ?",
+          "english": "Have you ever thought about why some arguments are convincing while others have no effect at all?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我觉得关键在于逻辑。一个论点如果逻辑混乱，很容易被反驳。",
+          "pinyin": "Wǒ jué de guān jiàn zài yú luó jí. Yī gè lùn diǎn rú guǒ luó jí hùn luàn, hěn róng yì bèi fǎn bó.",
+          "english": "I think the key lies in logic. If an argument's logic is muddled, it is easily refuted."
+        },
+        {
+          "speaker": "A",
+          "chinese": "同意。但我发现，有时候人们的讨论根本没有围绕核心问题，只是在兜圈子。",
+          "pinyin": "Tóng yì. Dàn wǒ fā xiàn, yǒu shí hòu rén men de tǎo lùn gēn běn méi yǒu wéi rào hé xīn wèn tí, zhǐ shì zài dōu quān zi.",
+          "english": "Agreed. But I've noticed that sometimes people's discussions don't revolve around the core issue at all — they just go in circles."
+        },
+        {
+          "speaker": "B",
+          "chinese": "正是。好的辩手会确保每一点论据都合理，都紧扣主题。",
+          "pinyin": "Zhèng shì. Hǎo de biàn shǒu huì què bǎo měi yī diǎn lùn jù dōu hé lǐ, dōu jǐn kòu zhǔ tí.",
+          "english": "Exactly. A good debater ensures that every piece of evidence is reasonable and closely tied to the main topic."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那态度呢？如果逻辑严密但态度傲慢，还能说服人吗？",
+          "pinyin": "Nà tài dù ne? Rú guǒ luó jí yán mì dàn tài dù ào màn, hái néng shuō fú rén ma?",
+          "english": "What about attitude? If the logic is airtight but the attitude is arrogant, can it still persuade people?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "很难。围绕逻辑固然重要，但态度决定了对方是否愿意倾听。",
+          "pinyin": "Hěn nán. Wéi rào luó jí gù rán zhòng yào, dàn tài dù jué dìng le duì fāng shì fǒu yuàn yì qīng tīng.",
+          "english": "Very rarely. Centering on logic is certainly important, but attitude determines whether the other side is even willing to listen."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Showing vs. Seeming",
+      "title_chinese": "展示与显现",
+      "speakers": {
+        "A": { "name": "但丁", "role": "philosopher", "gender": "male" },
+        "B": { "name": "慈欣", "role": "science writer", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "我注意到，有些人在辩论中显得很自信，但却拿不出任何证据。",
+          "pinyin": "Wǒ zhù yì dào, yǒu xiē rén zài biàn lùn zhōng xiǎn de hěn zì xìn, dàn què ná bù chū rèn hé zhèng jù.",
+          "english": "I've noticed that some people appear very confident in debates, but cannot produce any evidence."
+        },
+        {
+          "speaker": "B",
+          "chinese": "这就是显得和显示的区别——显得只是印象，显示才是真正的证明。",
+          "pinyin": "Zhè jiù shì xiǎn de hé xiǎn shì de qū bié — xiǎn de zhǐ shì yìn xiàng, xiǎn shì cái shì zhēn zhèng de zhèng míng.",
+          "english": "That is precisely the difference between 'appearing' and 'showing' — appearing is just an impression, while showing is genuine proof."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你的意思是，数据显示的结果要比个人显得自信更有说服力？",
+          "pinyin": "Nǐ de yì si shì, shù jù xiǎn shì de jié guǒ yào bǐ gè rén xiǎn de zì xìn gèng yǒu shuō fú lì?",
+          "english": "You mean that results shown by data are more persuasive than a person merely appearing confident?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "正是。针对任何一个论点，最终还是要靠事实和逻辑，而不是表面印象。",
+          "pinyin": "Zhèng shì. Zhēn duì rèn hé yī gè lùn diǎn, zuì zhōng hái shì yào kào shì shí hé luó jí, ér bú shì biǎo miàn yìn xiàng.",
+          "english": "Exactly. In response to any argument, one must ultimately rely on facts and logic, not surface impressions."
+        },
+        {
+          "speaker": "A",
+          "chinese": "那如果既有数据支撑，又显得沉稳冷静，岂不是最理想的状态？",
+          "pinyin": "Nà rú guǒ jì yǒu shù jù zhī chēng, yòu xiǎn de chén wěn lěng jìng, qǐ bú shì zuì lǐ xiǎng de zhuàng tài?",
+          "english": "Then if one both has data to back them up and appears calm and composed, isn't that the most ideal state?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "完全正确。显示出事实，显得有原则——这才是真正有效的辩论。",
+          "pinyin": "Wán quán zhèng què. Xiǎn shì chū shì shí, xiǎn de yǒu yuán zé — zhè cái shì zhēn zhèng yǒu xiào de biàn lùn.",
+          "english": "Exactly right. Showing the facts and appearing principled — that is truly effective debating."
+        }
+      ]
+    }
+  ]
+}

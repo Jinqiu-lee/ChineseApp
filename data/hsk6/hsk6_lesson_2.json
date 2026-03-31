@@ -1,0 +1,555 @@
+{
+  "lesson": 2,
+  "level": 6,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "The Language of Love",
+  "topic_chinese": "爱的细节（二）",
+  "vocabulary": [
+    {
+      "id": "hsk6_l2_01",
+      "chinese": "靠",
+      "pinyin": "kào",
+      "english": "to lean on; to rely on; to be next to",
+      "part_of_speech": "verb",
+      "example": "她说，在最脆弱的时候，她只想靠着他，什么都不用说。",
+      "translation": "She said that in her most vulnerable moments, she just wanted to lean on him without saying anything."
+    },
+    {
+      "id": "hsk6_l2_02",
+      "chinese": "原来",
+      "pinyin": "yuán lái",
+      "english": "originally; as it turns out",
+      "part_of_speech": "adverb",
+      "example": "她原来以为爱是轰轰烈烈的，后来才明白真正的爱很安静。",
+      "translation": "She originally thought love was passionate and dramatic, but later realized that true love is quiet."
+    },
+    {
+      "id": "hsk6_l2_03",
+      "chinese": "竟然",
+      "pinyin": "jìng rán",
+      "english": "actually; unexpectedly (stronger than 居然)",
+      "part_of_speech": "adverb",
+      "example": "他竟然在她最忙的时候，悄悄把她桌上的咖啡换成了热茶。",
+      "translation": "He actually, when she was at her busiest, quietly replaced the coffee on her desk with hot tea."
+    },
+    {
+      "id": "hsk6_l2_04",
+      "chinese": "平静",
+      "pinyin": "píng jìng",
+      "english": "calm, peaceful, tranquil",
+      "part_of_speech": "adjective",
+      "example": "每次心情烦躁的时候，只要听到他的声音，她就会慢慢平静下来。",
+      "translation": "Every time she was feeling restless, she would gradually calm down just by hearing his voice."
+    },
+    {
+      "id": "hsk6_l2_05",
+      "chinese": "关心",
+      "pinyin": "guān xīn",
+      "english": "to care about; concern",
+      "part_of_speech": "verb/noun",
+      "example": "他对她的关心从不是大起大落的，而是每天细水长流的问候。",
+      "translation": "His care for her was never dramatic — it was the steady, daily warmth of small greetings."
+    },
+    {
+      "id": "hsk6_l2_06",
+      "chinese": "心情",
+      "pinyin": "xīn qíng",
+      "english": "mood, state of mind",
+      "part_of_speech": "noun",
+      "example": "只要收到他发来的一条消息，她的心情就会好上许多。",
+      "translation": "Just receiving one message from him would lift her mood considerably."
+    },
+    {
+      "id": "hsk6_l2_07",
+      "chinese": "自然",
+      "pinyin": "zì rán",
+      "english": "natural; naturally",
+      "part_of_speech": "adjective/adverb",
+      "example": "他们在一起说话从来不会觉得尴尬，一切都那么自然。",
+      "translation": "They never felt awkward talking to each other — everything felt so natural."
+    },
+    {
+      "id": "hsk6_l2_08",
+      "chinese": "浪漫",
+      "pinyin": "làng màn",
+      "english": "romantic",
+      "part_of_speech": "adjective",
+      "example": "他在她生日那天悄悄买了她提过一次的那本书，她觉得这比鲜花更浪漫。",
+      "translation": "On her birthday he quietly bought the book she had mentioned once — she found that more romantic than flowers."
+    },
+    {
+      "id": "hsk6_l2_09",
+      "chinese": "沉默",
+      "pinyin": "chén mò",
+      "english": "silence; to be silent",
+      "part_of_speech": "noun/verb",
+      "example": "两个人坐在那里沉默着，却感到彼此之间从未如此亲近。",
+      "translation": "The two of them sat there in silence, yet felt closer to each other than ever before."
+    },
+    {
+      "id": "hsk6_l2_10",
+      "chinese": "安慰",
+      "pinyin": "ān wèi",
+      "english": "to comfort, console",
+      "part_of_speech": "verb",
+      "example": "她失意的时候，他不说大道理，只是静静地陪着她，轻声安慰她。",
+      "translation": "When she was discouraged, he didn't lecture her — he simply stayed quietly beside her and gently comforted her."
+    },
+    {
+      "id": "hsk6_l2_11",
+      "chinese": "依赖",
+      "pinyin": "yī lài",
+      "english": "to depend on, rely on",
+      "part_of_speech": "verb",
+      "example": "健康的爱不是互相依赖到无法独立，而是选择在一起。",
+      "translation": "Healthy love is not depending on each other to the point of losing independence — it is choosing to be together."
+    },
+    {
+      "id": "hsk6_l2_12",
+      "chinese": "感激",
+      "pinyin": "gǎn jī",
+      "english": "to be grateful, feel gratitude",
+      "part_of_speech": "verb",
+      "example": "她感激他多年来一直包容她的小脾气，从未抱怨。",
+      "translation": "She was grateful that he had tolerated her little temper for so many years without ever complaining."
+    },
+    {
+      "id": "hsk6_l2_13",
+      "chinese": "真诚",
+      "pinyin": "zhēn chéng",
+      "english": "sincere, genuine",
+      "part_of_speech": "adjective",
+      "example": "她觉得，真诚地说出自己的感受，比任何礼物都有价值。",
+      "translation": "She felt that sincerely expressing your feelings is more valuable than any gift."
+    },
+    {
+      "id": "hsk6_l2_14",
+      "chinese": "摩擦",
+      "pinyin": "mó cā",
+      "english": "friction, conflict (metaphorical)",
+      "part_of_speech": "noun",
+      "example": "任何关系都难免有摩擦，关键是如何在摩擦后更好地理解彼此。",
+      "translation": "Friction is unavoidable in any relationship — the key is how to understand each other better after it."
+    },
+    {
+      "id": "hsk6_l2_15",
+      "chinese": "包容",
+      "pinyin": "bāo róng",
+      "english": "to tolerate, be inclusive of",
+      "part_of_speech": "verb",
+      "example": "真正的爱需要双方互相包容，接受彼此的不完美。",
+      "translation": "True love requires both people to tolerate each other and accept each other's imperfections."
+    },
+    {
+      "id": "hsk6_l2_p1",
+      "chinese": "靠在一起",
+      "pinyin": "kào zài yīqǐ",
+      "english": "to lean on each other",
+      "part_of_speech": "phrase",
+      "example": "他们靠在一起看完了整部电影，一句话都没有说。",
+      "translation": "They leaned on each other and watched the entire film without saying a single word."
+    },
+    {
+      "id": "hsk6_l2_p2",
+      "chinese": "真诚交流",
+      "pinyin": "zhēn chéng jiāo liú",
+      "english": "to communicate sincerely",
+      "part_of_speech": "phrase",
+      "example": "关系中最重要的一件事，就是真诚交流，不要隐藏自己的感受。",
+      "translation": "The most important thing in a relationship is to communicate sincerely and not hide your feelings."
+    },
+    {
+      "id": "hsk6_l2_p3",
+      "chinese": "不知不觉",
+      "pinyin": "bù zhī bù jué",
+      "english": "without realizing it, unconsciously",
+      "part_of_speech": "phrase",
+      "example": "不知不觉，他们已经在一起三年了。",
+      "translation": "Without realizing it, they had already been together for three years."
+    },
+    {
+      "id": "hsk6_l2_p4",
+      "chinese": "互相包容",
+      "pinyin": "hù xiāng bāo róng",
+      "english": "to tolerate each other",
+      "part_of_speech": "phrase",
+      "example": "长久的感情需要两个人互相包容，互相成长。",
+      "translation": "A lasting relationship requires both people to tolerate each other and grow together."
+    },
+    {
+      "id": "hsk6_l2_p5",
+      "chinese": "心情平静",
+      "pinyin": "xīn qíng píng jìng",
+      "english": "feeling calm and peaceful",
+      "part_of_speech": "phrase",
+      "example": "每次和他通话之后，她都会感到心情平静，不再焦虑。",
+      "translation": "After every phone call with him, she would feel calm and peaceful, no longer anxious."
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "她原来以为浪漫是惊天动地的，但原来爱倒是藏在那些细小的关心里。",
+      "pinyin": "Tā yuánlái yǐwéi làngmàn shì jīngtiāndòngdì de, dàn yuánlái ài dào shì cáng zài nàxiē xì xiǎo de guānxīn lǐ.",
+      "english": "She originally thought romance was earth-shattering, but as it turns out, love is hidden in those small acts of care."
+    },
+    {
+      "chinese": "他们不知不觉地靠在一起，沉默着，却感到无比温暖。",
+      "pinyin": "Tāmen bù zhī bù jué de kào zài yīqǐ, chénmò zhe, què gǎndào wúbǐ wēnnuǎn.",
+      "english": "Without realizing it, they had leaned against each other in silence, yet felt infinitely warm."
+    },
+    {
+      "chinese": "真正的陪伴，倒是不需要多少语言，一个自然的眼神就足够了。",
+      "pinyin": "Zhēnzhèng de péibàn, dào shì bù xūyào duōshǎo yǔyán, yīgè zìrán de yǎnshén jiù zúgòu le.",
+      "english": "True companionship actually doesn't require many words — a natural glance is enough."
+    },
+    {
+      "chinese": "她竟然没有注意到，他每次她心情不好时都会悄悄出现。",
+      "pinyin": "Tā jìng rán méiyǒu zhùyì dào, tā měi cì tā xīnqíng bù hǎo shí dōu huì qiāoqiāo chūxiàn.",
+      "english": "She had actually never noticed that he would quietly appear every time her mood was low."
+    },
+    {
+      "chinese": "互相包容，真诚交流，才是一段感情能长久的真正原因。",
+      "pinyin": "Hùxiāng bāoróng, zhēnchéng jiāoliú, cái shì yī duàn gǎnqíng néng chángjiǔ de zhēnzhèng yuányīn.",
+      "english": "Tolerating each other and communicating sincerely — that is the true reason a relationship can last."
+    },
+    {
+      "chinese": "依赖一个人并不可耻；感激他的存在，才是最美的表达。",
+      "pinyin": "Yīlài yīgè rén bìng bù kěchǐ; gǎnjī tā de cúnzài, cái shì zuì měi de biǎodá.",
+      "english": "Relying on someone is not shameful; being grateful for their presence is the most beautiful expression of all."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "靠 — To lean on / To rely on / To depend on",
+      "explanation": "靠 is a versatile verb with three main meanings: (1) Physical: to lean against something — 靠着墙 (leaning against the wall); (2) Reliance: to rely on or depend on someone/something — 靠朋友 (rely on a friend); (3) Proximity: to be next to or close to — 靠近 (to approach, be near). The structure is: Subject + 靠 + Object. When meaning 'lean against,' it is often followed by 着 to indicate a continuous state: 她靠着他的肩膀。(She was leaning against his shoulder.) Another example: 这件事只能靠自己。(For this matter, you can only rely on yourself.)",
+      "examples": [
+        {
+          "chinese": "她累了，靠在他肩上睡着了。",
+          "pinyin": "Tā lèi le, kào zài tā jiān shàng shuìzháo le.",
+          "english": "She was tired and fell asleep leaning on his shoulder."
+        },
+        {
+          "chinese": "在最困难的时候，我最靠得住的人就是他。",
+          "pinyin": "Zài zuì kùnnán de shíhou, wǒ zuì kào de zhù de rén jiù shì tā.",
+          "english": "In the most difficult times, the person I can rely on most is him."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "她在沙发上 ____ 着他的肩膀，看完了那部电影。",
+          "type": "multiple_choice",
+          "correct": "靠",
+          "options": ["靠", "用", "沿", "跟"],
+          "option_pinyin": ["kào", "yòng", "yán", "gēn"],
+          "word_hints": { "沙发": "shā fā" }
+        },
+        {
+          "question": "Which sentence uses 靠 to mean 'rely on'?",
+          "type": "multiple_choice",
+          "correct": "遇到困难，我总是靠他帮我想办法。",
+          "options": ["她靠着墙站着。", "遇到困难，我总是靠他帮我想办法。", "他们靠近了那棵大树。", "桌子靠窗放着。"],
+          "option_pinyin": ["tā kào zhe qiáng zhànzhe.", "yù dào kùnnán, wǒ zǒng shì kào tā bāng wǒ xiǎng bànfǎ.", "tāmen kào jìn le nà kē dà shù.", "zhuōzi kào chuāng fàng zhe."],
+          "word_hints": { "办法": "bàn fǎ" }
+        },
+        {
+          "question": "在感情中，我们既需要互相包容，也需要 ____ 自己的判断。",
+          "type": "multiple_choice",
+          "correct": "靠",
+          "options": ["用", "靠", "跟", "被"],
+          "option_pinyin": ["yòng", "kào", "gēn", "bèi"],
+          "word_hints": { "判断": "pàn duàn" }
+        },
+        {
+          "question": "他们 ____ 在一起看星星，不知不觉过了好几个小时。",
+          "type": "multiple_choice",
+          "correct": "靠",
+          "options": ["站", "靠", "坐", "走"],
+          "option_pinyin": ["zhàn", "kào", "zuò", "zǒu"],
+          "word_hints": { "星星": "xīng xing" }
+        },
+        {
+          "question": "真正的感情不是 ____ 对方解决你所有的问题，而是一起面对。",
+          "type": "multiple_choice",
+          "correct": "靠",
+          "options": ["靠", "用", "叫", "让"],
+          "option_pinyin": ["kào", "yòng", "jiào", "ràng"],
+          "word_hints": { "解决": "jiě jué" }
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "倒是 — Actually; on the contrary; surprisingly",
+      "explanation": "倒是 is an adverb used to note that something is contrary to expectations, or to add a contrasting observation. It often introduces a nuanced or surprising truth, and can soften a contradiction. Structure: Subject + 倒是 + [unexpected or contrasting statement]. It can also be used to express concession: 他话不多，倒是很体贴。(He doesn't say much, but he is actually quite thoughtful.) It can express mild irony or pleasant surprise. Another example: 我以为他会生气，他倒是笑了。(I thought he would be angry — he actually laughed.) Compare with 但是: 倒是 is more nuanced and conversational.",
+      "examples": [
+        {
+          "chinese": "她不喜欢收花，倒是很喜欢他给她做的一顿便饭。",
+          "pinyin": "Tā bù xǐhuān shōu huā, dào shì hěn xǐhuān tā gěi tā zuò de yī dùn biànfàn.",
+          "english": "She doesn't like receiving flowers — she actually loves the simple meal he cooks for her."
+        },
+        {
+          "chinese": "他沉默寡言，倒是在最关键的时候总说出最正确的话。",
+          "pinyin": "Tā chénmò guǎyán, dào shì zài zuì guānjiàn de shíhou zǒng shuō chū zuì zhèngquè de huà.",
+          "english": "He is a man of few words, but actually always says exactly the right thing at the most important moments."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他不常说\"我爱你\"，____ 很注意生活中的每一个细节。",
+          "type": "multiple_choice",
+          "correct": "倒是",
+          "options": ["因为", "倒是", "所以", "虽然"],
+          "option_pinyin": ["yīn wèi", "dào shì", "suǒ yǐ", "suī rán"],
+          "word_hints": {}
+        },
+        {
+          "question": "她以为他会忘记，他 ____ 提前一个月就开始准备了。",
+          "type": "multiple_choice",
+          "correct": "倒是",
+          "options": ["竟然", "倒是", "虽然", "既然"],
+          "option_pinyin": ["jìng rán", "dào shì", "suī rán", "jì rán"],
+          "word_hints": { "提前": "tí qián" }
+        },
+        {
+          "question": "Which sentence uses 倒是 correctly?",
+          "type": "multiple_choice",
+          "correct": "我以为她会不高兴，她倒是笑着说没关系。",
+          "options": ["我以为她会不高兴，她倒是笑着说没关系。", "他倒是爱她，因为他倒是体贴。", "倒是她很美。", "他倒是，去了。"],
+          "option_pinyin": ["wǒ yǐwéi tā huì bù gāoxìng, tā dào shì xiào zhe shuō méiguānxi.", "tā dào shì ài tā, yīnwèi tā dào shì tǐtiē.", "dào shì tā hěn měi.", "tā dào shì, qù le."],
+          "word_hints": {}
+        },
+        {
+          "question": "大家都以为她喜欢浪漫的礼物，她 ____ 更欣赏真诚的表达。",
+          "type": "multiple_choice",
+          "correct": "倒是",
+          "options": ["居然", "但是", "倒是", "原来"],
+          "option_pinyin": ["jū rán", "dàn shì", "dào shì", "yuán lái"],
+          "word_hints": { "欣赏": "xīn shǎng" }
+        },
+        {
+          "question": "他看起来很严肃，____ 私下里特别幽默，总能让她心情变好。",
+          "type": "multiple_choice",
+          "correct": "倒是",
+          "options": ["倒是", "因此", "虽然", "既然"],
+          "option_pinyin": ["dào shì", "yīn cǐ", "suī rán", "jì rán"],
+          "word_hints": { "严肃": "yán sù", "幽默": "yōu mò" }
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "不知不觉 — Without realizing; unconsciously",
+      "explanation": "不知不觉 is a four-character phrase (成语 structure) meaning 'without being aware of it' or 'before one knows it.' It describes something that happens gradually or unnoticed. Structure: 不知不觉 + (地) + verb phrase, or 不知不觉 + a duration of time has passed. The optional 地 makes it a more formal adverbial modifier. It often conveys a gentle, wistful tone — time or feelings that crept up without notice. Example: 不知不觉，天黑了。(Without realizing, it had grown dark.) Another: 他们不知不觉地爱上了对方。(Without realizing it, they fell in love with each other.)",
+      "examples": [
+        {
+          "chinese": "不知不觉，他们在公园里聊了整整三个小时。",
+          "pinyin": "Bù zhī bù jué, tāmen zài gōngyuán lǐ liáo le zhěngzhěng sān gè xiǎoshí.",
+          "english": "Without realizing it, they had been talking in the park for a full three hours."
+        },
+        {
+          "chinese": "她不知不觉地开始依赖他的每日一条问候消息。",
+          "pinyin": "Tā bù zhī bù jué de kāishǐ yīlài tā de měirì yī tiáo wènhòu xiāoxi.",
+          "english": "Without realizing it, she began to rely on his daily greeting message."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他们坐在河边聊天，____ 夜幕降临了。",
+          "type": "multiple_choice",
+          "correct": "不知不觉",
+          "options": ["居然", "不知不觉", "原来", "偶尔"],
+          "option_pinyin": ["jū rán", "bù zhī bù jué", "yuán lái", "ǒu ěr"],
+          "word_hints": { "夜幕降临": "yè mù jiàng lín" }
+        },
+        {
+          "question": "她 ____ 爱上了他，直到有一天他不在，才发现心里空了一块。",
+          "type": "multiple_choice",
+          "correct": "不知不觉地",
+          "options": ["竟然", "倒是", "不知不觉地", "平静地"],
+          "option_pinyin": ["jìng rán", "dào shì", "bù zhī bù jué de", "píng jìng de"],
+          "word_hints": {}
+        },
+        {
+          "question": "Which sentence uses 不知不觉 correctly?",
+          "type": "multiple_choice",
+          "correct": "不知不觉，他们已经在一起十年了。",
+          "options": ["不知不觉，他们已经在一起十年了。", "不知不觉他很体贴。", "他不知不觉地，他喜欢她。", "不知不觉是好事。"],
+          "option_pinyin": ["bù zhī bù jué, tāmen yǐjīng zài yīqǐ shí nián le.", "bù zhī bù jué tā hěn tǐtiē.", "tā bù zhī bù jué de, tā xǐhuān tā.", "bù zhī bù jué shì hǎoshì."],
+          "word_hints": {}
+        },
+        {
+          "question": "他们 ____ 养成了每天互相安慰的习惯，感情越来越深。",
+          "type": "multiple_choice",
+          "correct": "不知不觉",
+          "options": ["偶尔", "不知不觉", "竟然", "原来"],
+          "option_pinyin": ["ǒu ěr", "bù zhī bù jué", "jìng rán", "yuán lái"],
+          "word_hints": {}
+        },
+        {
+          "question": "聊着聊着，____，咖啡已经凉了，但他们还不想停下来。",
+          "type": "multiple_choice",
+          "correct": "不知不觉",
+          "options": ["倒是", "不知不觉", "原来", "真诚"],
+          "option_pinyin": ["dào shì", "bù zhī bù jué", "yuán lái", "zhēn chéng"],
+          "word_hints": { "凉": "liáng" }
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "title": "Qixi Festival — The Chinese Valentine's Day",
+      "title_chinese": "七夕节",
+      "content": "Every year on the 7th day of the 7th lunar month, China celebrates 七夕节 (Qīxī Jié) — often called the Chinese Valentine's Day. The festival is rooted in one of China's most enduring love legends: the story of 织女 (Zhī Nǚ), the Weaver Girl, a celestial fairy, and 牛郎 (Niú Láng), the Cowherd, a humble mortal. The two fell deeply in love and married, but the Goddess of Heaven forbade their union, forcing them to be separated by the Milky Way (银河, yín hé) for eternity.\n\nMoved by their devotion, a flock of magpies (喜鹊, xǐquè) forms a bridge across the Milky Way once a year, allowing the couple to reunite for a single night. This bridge is known as the 鹊桥 (Quèqiáo) — the Magpie Bridge. On this night, young women traditionally prayed for skill in weaving and needlework, and lovers would gaze together at the stars Vega and Altair, which represent the two lovers.\n\nThe story of 牛郎织女 resonates deeply with the theme of love's details. Their once-a-year reunion, brief and bittersweet, reminds us that true love is not about grand declarations but about quiet longing, faithful waiting, and cherishing every moment together. In Chinese culture, the magpie bridge has become a symbol of connection across distance — a reminder that even when two people are apart, love finds a way to bring them together.",
+      "idioms": [
+        {
+          "chinese": "牛郎织女",
+          "pinyin": "Niú Láng Zhī Nǚ",
+          "english": "the Cowherd and the Weaver Girl; a devoted couple kept apart by circumstances"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which word means 'to be grateful or feel gratitude'?",
+      "type": "multiple_choice",
+      "correct": "感激",
+      "options": ["关心", "安慰", "感激", "依赖"],
+      "word_hints": { "感激": "gǎn jī", "关心": "guān xīn", "安慰": "ān wèi", "依赖": "yī lài" }
+    },
+    {
+      "question": "Fill in the blank: 他话很少，____ 在关键时刻总说出最贴心的话。",
+      "type": "multiple_choice",
+      "correct": "倒是",
+      "options": ["因为", "竟然", "倒是", "虽然"],
+      "word_hints": { "贴心": "tiē xīn" }
+    },
+    {
+      "question": "Which phrase means 'without realizing it'?",
+      "type": "multiple_choice",
+      "correct": "不知不觉",
+      "options": ["真诚交流", "靠在一起", "不知不觉", "互相包容"],
+      "word_hints": {}
+    },
+    {
+      "question": "她 ____ 以为他不在意，结果他早就悄悄准备好了一切。",
+      "type": "multiple_choice",
+      "correct": "原来",
+      "options": ["平静", "原来", "浪漫", "沉默"],
+      "word_hints": { "悄悄": "qiāo qiāo" }
+    },
+    {
+      "question": "What does 摩擦 mean in the context of relationships?",
+      "type": "multiple_choice",
+      "correct": "friction, conflict",
+      "options": ["silence", "friction, conflict", "comfort", "gratitude"],
+      "word_hints": { "摩擦": "mó cā" }
+    },
+    {
+      "question": "他 ____ 把她最喜欢的零食放在了她的包里，让她在上班路上有个惊喜。",
+      "type": "multiple_choice",
+      "correct": "竟然",
+      "options": ["自然", "平静", "竟然", "真诚"],
+      "word_hints": { "零食": "líng shí", "惊喜": "jīng xǐ" }
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "A Comfortable Silence",
+      "title_chinese": "舒适的沉默",
+      "speakers": {
+        "A": { "name": "爱玲", "role": "friend", "gender": "female" },
+        "B": { "name": "兰特", "role": "friend", "gender": "female" }
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "你有没有发现，和一个真正亲近的人在一起，沉默也不会让你觉得尴尬？",
+          "pinyin": "Nǐ yǒu méiyǒu fāxiàn, hé yīgè zhēnzhèng qīnjìn de rén zài yīqǐ, chénmò yě bú huì ràng nǐ juéde gāngà?",
+          "english": "Have you ever noticed that when you're with someone you're truly close to, silence doesn't feel awkward at all?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "太有共鸣了。有时候我们两个坐在那里，谁都不说话，但感觉非常自然。",
+          "pinyin": "Tài yǒu gòngmíng le. Yǒu shíhou wǒmen liǎng gè zuò zài nàlǐ, shuí dōu bù shuōhuà, dàn gǎnjué fēicháng zìrán.",
+          "english": "That resonates so much. Sometimes we both just sit there without saying anything, and it feels completely natural."
+        },
+        {
+          "speaker": "B",
+          "chinese": "不知不觉，那种沉默反而变成了一种陪伴——比说很多话更亲密。",
+          "pinyin": "Bù zhī bù jué, nà zhǒng chénmò fǎn'ér biànchéng le yī zhǒng péibàn — bǐ shuō hěn duō huà gèng qīnmì.",
+          "english": "Without realizing it, that silence actually becomes a form of companionship — more intimate than many words."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我觉得能和一个人舒适地沉默，是一种很难得的默契。",
+          "pinyin": "Wǒ juéde néng hé yīgè rén shūshì de chénmò, shì yī zhǒng hěn nándé de mòqì.",
+          "english": "I think being able to sit in comfortable silence with someone is a very rare kind of unspoken understanding."
+        },
+        {
+          "speaker": "B",
+          "chinese": "对啊，不知不觉地，那种平静就成了你们关系最温柔的部分。",
+          "pinyin": "Duì a, bù zhī bù jué de, nà zhǒng píng jìng jiù chéng le nǐmen guānxi zuì wēnróu de bùfen.",
+          "english": "Exactly — without realizing it, that sense of calm becomes the most tender part of your relationship."
+        },
+        {
+          "speaker": "A",
+          "chinese": "所以说，爱的语言，有时候是沉默，有时候才是最自然的表达。",
+          "pinyin": "Suǒyǐ shuō, ài de yǔyán, yǒu shíhou shì chénmò, yǒu shíhou cái shì zuì zìrán de biǎodá.",
+          "english": "So, the language of love is sometimes silence — and silence is sometimes the most natural expression of all."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "What Does 'Romantic' Mean?",
+      "title_chinese": "\"浪漫\"是什么意思",
+      "speakers": {
+        "A": { "name": "爱玲", "role": "friend", "gender": "female" },
+        "B": { "name": "奥斯汀", "role": "friend", "gender": "female" }
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "我觉得浪漫就是那种大场面——玫瑰花、烛光晚餐、在人群中的惊喜表白。",
+          "pinyin": "Wǒ juéde làngmàn jiù shì nà zhǒng dà chǎngmiàn — méiguihuā, zhúguāng wǎncān, zài rénqún zhōng de jīngxǐ biǎobái.",
+          "english": "I think romance is about the big moments — roses, candlelit dinners, a surprise declaration in a crowd."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你说的那些倒是很美，但我觉得浪漫更多是在细节里。",
+          "pinyin": "Nǐ shuō de nàxiē dào shì hěn měi, dàn wǒ juéde làngmàn gèngduō shì zài xì jié lǐ.",
+          "english": "What you describe is actually very beautiful, but I think romance lives more in the details."
+        },
+        {
+          "speaker": "B",
+          "chinese": "比如什么？",
+          "pinyin": "Bǐrú shénme?",
+          "english": "Like what?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "比如他知道你不喜欢香菜，点餐时总帮你说\"不要香菜\"。这种真诚的关心，比任何大场面都浪漫。",
+          "pinyin": "Bǐrú tā zhīdào nǐ bù xǐhuān xiāngcài, diǎn cān shí zǒng bāng nǐ shuō 'bú yào xiāngcài'. Zhè zhǒng zhēnchéng de guānxīn, bǐ rènhé dà chǎngmiàn dōu làngmàn.",
+          "english": "Like, he knows you don't like cilantro, so he always tells the waiter 'no cilantro' when ordering. That kind of sincere care is more romantic than any grand gesture."
+        },
+        {
+          "speaker": "B",
+          "chinese": "哈，这个例子倒是很接地气。不过我觉得两者都重要——平时真诚体贴，偶尔也要浪漫一下。",
+          "pinyin": "Hā, zhège lìzi dào shì hěn jiē dì qì. Búguò wǒ juéde liǎng zhě dōu zhòngyào — píngshí zhēnchéng tǐtiē, ǒu ěr yě yào làngmàn yīxià.",
+          "english": "Ha, that example is actually very down-to-earth. But I think both matter — sincere and thoughtful day-to-day, with a romantic gesture now and then."
+        },
+        {
+          "speaker": "A",
+          "chinese": "说得也对！浪漫和真诚，倒是不矛盾——只要是用心的，都算是爱的语言。",
+          "pinyin": "Shuō de yě duì! Làngmàn hé zhēnchéng, dào shì bù máodùn — zhǐyào shì yòng xīn de, dōu suàn shì ài de yǔyán.",
+          "english": "That's fair! Romance and sincerity are actually not contradictory — as long as it comes from the heart, it all counts as the language of love."
+        }
+      ]
+    }
+  ]
+}

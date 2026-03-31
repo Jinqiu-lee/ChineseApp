@@ -1,0 +1,555 @@
+{
+  "lesson": 7,
+  "level": 6,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Sleep and the Biological Clock",
+  "topic_chinese": "闹钟的危害（一）",
+  "vocabulary": [
+    {
+      "id": "hsk6_l7_01",
+      "chinese": "闹钟",
+      "pinyin": "nào zhōng",
+      "english": "alarm clock",
+      "part_of_speech": "noun",
+      "example": "他每天早上都依赖闹钟起床，从来没有自然醒过。",
+      "translation": "He relies on an alarm clock to wake up every morning and has never woken naturally."
+    },
+    {
+      "id": "hsk6_l7_02",
+      "chinese": "危害",
+      "pinyin": "wēi hài",
+      "english": "harm, danger; to harm",
+      "part_of_speech": "noun/verb",
+      "example": "长期缺乏睡眠对身体健康的危害不可忽视。",
+      "translation": "The harm of chronic sleep deprivation to physical health cannot be ignored."
+    },
+    {
+      "id": "hsk6_l7_03",
+      "chinese": "生物钟",
+      "pinyin": "shēng wù zhōng",
+      "english": "biological clock, circadian rhythm",
+      "part_of_speech": "noun",
+      "example": "频繁倒时差会打乱一个人的生物钟，使身体长时间处于不适状态。",
+      "translation": "Frequent jet lag can disrupt a person's biological clock, leaving the body in discomfort for a long time."
+    },
+    {
+      "id": "hsk6_l7_04",
+      "chinese": "睡眠",
+      "pinyin": "shuì mián",
+      "english": "sleep",
+      "part_of_speech": "noun",
+      "example": "良好的睡眠对恢复体力和保持健康至关重要。",
+      "translation": "Good sleep is essential for restoring energy and maintaining health."
+    },
+    {
+      "id": "hsk6_l7_05",
+      "chinese": "规律",
+      "pinyin": "guī lǜ",
+      "english": "pattern, regularity; regular",
+      "part_of_speech": "noun/adjective",
+      "example": "保持规律的睡眠时间有助于提高睡眠质量。",
+      "translation": "Maintaining regular sleep hours helps improve the quality of sleep."
+    },
+    {
+      "id": "hsk6_l7_06",
+      "chinese": "突然",
+      "pinyin": "tū rán",
+      "english": "suddenly, abruptly",
+      "part_of_speech": "adverb",
+      "example": "在深度睡眠中被闹钟突然吵醒，会让人感到头晕、疲惫。",
+      "translation": "Being suddenly woken by an alarm clock during deep sleep makes a person feel dizzy and exhausted."
+    },
+    {
+      "id": "hsk6_l7_07",
+      "chinese": "影响",
+      "pinyin": "yǐng xiǎng",
+      "english": "to affect; influence",
+      "part_of_speech": "verb/noun",
+      "example": "睡眠不足会严重影响白天的工作效率和情绪状态。",
+      "translation": "Insufficient sleep can seriously affect daytime work efficiency and emotional state."
+    },
+    {
+      "id": "hsk6_l7_08",
+      "chinese": "自然",
+      "pinyin": "zì rán",
+      "english": "natural; naturally",
+      "part_of_speech": "adjective/adverb",
+      "example": "如果每天在固定时间睡觉，身体会自然地在同一时间醒来。",
+      "translation": "If you go to sleep at a fixed time every day, your body will naturally wake up at the same time."
+    },
+    {
+      "id": "hsk6_l7_09",
+      "chinese": "机制",
+      "pinyin": "jī zhì",
+      "english": "mechanism, system",
+      "part_of_speech": "noun",
+      "example": "人体的自我修复机制在深度睡眠阶段最为活跃。",
+      "translation": "The body's self-repair mechanism is most active during the deep sleep stage."
+    },
+    {
+      "id": "hsk6_l7_10",
+      "chinese": "激素",
+      "pinyin": "jī sù",
+      "english": "hormone",
+      "part_of_speech": "noun",
+      "example": "睡眠期间，身体会分泌多种对健康有益的激素。",
+      "translation": "During sleep, the body secretes various hormones that are beneficial to health."
+    },
+    {
+      "id": "hsk6_l7_11",
+      "chinese": "疲劳",
+      "pinyin": "pí láo",
+      "english": "tired, fatigued; fatigue",
+      "part_of_speech": "adjective/noun",
+      "example": "长期睡眠不规律会导致慢性疲劳，严重影响生活质量。",
+      "translation": "Long-term irregular sleep can lead to chronic fatigue, seriously affecting quality of life."
+    },
+    {
+      "id": "hsk6_l7_12",
+      "chinese": "充足",
+      "pinyin": "chōng zú",
+      "english": "sufficient, adequate",
+      "part_of_speech": "adjective",
+      "example": "每晚保证充足的睡眠是维持健康的基本条件之一。",
+      "translation": "Ensuring adequate sleep every night is one of the basic conditions for maintaining good health."
+    },
+    {
+      "id": "hsk6_l7_13",
+      "chinese": "必要",
+      "pinyin": "bì yào",
+      "english": "necessary, essential",
+      "part_of_speech": "adjective",
+      "example": "有人认为闹钟是现代生活中不可缺少的必要工具，但也有人持不同看法。",
+      "translation": "Some people consider alarm clocks a necessary tool in modern life, but others hold a different view."
+    },
+    {
+      "id": "hsk6_l7_14",
+      "chinese": "实验",
+      "pinyin": "shí yàn",
+      "english": "experiment; to experiment",
+      "part_of_speech": "noun/verb",
+      "example": "研究人员通过实验证明，被闹钟强行唤醒会干扰睡眠周期。",
+      "translation": "Researchers proved through experiments that being forcibly awakened by an alarm clock disrupts sleep cycles."
+    },
+    {
+      "id": "hsk6_l7_15",
+      "chinese": "过渡",
+      "pinyin": "guò dù",
+      "english": "to transition; transition (period)",
+      "part_of_speech": "verb/noun",
+      "example": "从睡眠到清醒需要一个自然的过渡阶段，而闹钟往往会打断这一过程。",
+      "translation": "There needs to be a natural transition phase from sleep to wakefulness, and alarm clocks often interrupt this process."
+    },
+    {
+      "id": "hsk6_l7_16",
+      "chinese": "生物钟紊乱",
+      "pinyin": "shēng wù zhōng wěn luàn",
+      "english": "disruption of the biological clock",
+      "part_of_speech": "phrase",
+      "example": "长期使用闹钟是导致生物钟紊乱的重要原因之一。",
+      "translation": "Long-term use of alarm clocks is one of the important causes of biological clock disruption."
+    },
+    {
+      "id": "hsk6_l7_17",
+      "chinese": "充足的睡眠",
+      "pinyin": "chōng zú de shuì mián",
+      "english": "sufficient sleep",
+      "part_of_speech": "phrase",
+      "example": "医生建议成年人每天保证充足的睡眠，最好不少于七到八小时。",
+      "translation": "Doctors recommend that adults get sufficient sleep every day, ideally no less than seven to eight hours."
+    },
+    {
+      "id": "hsk6_l7_18",
+      "chinese": "影响健康",
+      "pinyin": "yǐng xiǎng jiàn kāng",
+      "english": "to affect health",
+      "part_of_speech": "phrase",
+      "example": "不良的睡眠习惯会从多方面影响健康，包括免疫力和情绪。",
+      "translation": "Poor sleep habits can affect health in multiple ways, including immunity and mood."
+    },
+    {
+      "id": "hsk6_l7_19",
+      "chinese": "自然醒来",
+      "pinyin": "zì rán xǐng lái",
+      "english": "to wake up naturally",
+      "part_of_speech": "phrase",
+      "example": "研究显示，能够自然醒来的人比被闹钟吵醒的人精力更充沛。",
+      "translation": "Studies show that people who can wake up naturally have more energy than those woken by an alarm clock."
+    },
+    {
+      "id": "hsk6_l7_20",
+      "chinese": "规律作息",
+      "pinyin": "guī lǜ zuò xī",
+      "english": "regular daily schedule / regular rest pattern",
+      "part_of_speech": "phrase",
+      "example": "保持规律作息是改善睡眠质量最有效的方法之一。",
+      "translation": "Maintaining a regular daily schedule is one of the most effective ways to improve sleep quality."
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "就算你每天睡足八小时，被闹钟突然吵醒也会让身体感到疲劳。",
+      "pinyin": "Jiù suàn nǐ měi tiān shuì zú bā xiǎoshí, bèi nào zhōng tū rán chǎo xǐng yě huì ràng shēntǐ gǎndào pí láo.",
+      "english": "Even if you sleep a full eight hours every day, being suddenly woken by an alarm clock will still make your body feel fatigued."
+    },
+    {
+      "chinese": "人体的生物钟是一种精密的自然机制，负责调节睡眠与清醒的循环。",
+      "pinyin": "Réntǐ de shēng wù zhōng shì yī zhǒng jīngmì de zì rán jī zhì, fùzé tiáojié shuì mián yǔ qīngxǐng de xúnhuán.",
+      "english": "The human biological clock is a precise natural mechanism responsible for regulating the sleep-wake cycle."
+    },
+    {
+      "chinese": "为了准时上班，很多人不得不依赖闹钟，即使这会打乱他们的睡眠规律。",
+      "pinyin": "Wèile zhǔnshí shàngbān, hěn duō rén bùdébù yīlài nào zhōng, jíshǐ zhè huì dǎluàn tāmen de shuì mián guī lǜ.",
+      "english": "In order to get to work on time, many people have no choice but to rely on alarm clocks, even though this disrupts their sleep patterns."
+    },
+    {
+      "chinese": "闹钟强制打断了自然睡眠，从而影响了激素的正常分泌和身体的恢复过程。",
+      "pinyin": "Nào zhōng qiángzhì dǎduàn le zì rán shuì mián, cóng ér yǐng xiǎng le jī sù de zhèngcháng fēnmì hé shēntǐ de huīfù guòchéng.",
+      "english": "Alarm clocks forcibly interrupt natural sleep, thereby affecting the normal secretion of hormones and the body's recovery process."
+    },
+    {
+      "chinese": "保持规律作息是让生物钟恢复正常运作的最根本方法。",
+      "pinyin": "Bǎochí guī lǜ zuò xī shì ràng shēng wù zhōng huīfù zhèngcháng yùnzuò de zuì gēnběn fāngfǎ.",
+      "english": "Maintaining a regular daily schedule is the most fundamental method for restoring the biological clock to normal function."
+    },
+    {
+      "chinese": "充足的睡眠不仅能减轻疲劳，还能促进激素的平衡分泌，对整体健康十分有益。",
+      "pinyin": "Chōng zú de shuì mián bùjǐn néng jiǎnqīng pí láo, hái néng cùjìn jī sù de pínghéng fēnmì, duì zhěngtǐ jiànkāng shífēn yǒuyì.",
+      "english": "Sufficient sleep not only reduces fatigue, but also promotes balanced hormone secretion, which is very beneficial for overall health."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "就算…也 — Even if…still",
+      "explanation": "Structure: 就算 + [hypothetical condition], Subject + 也 + [result still holds]. Meaning: Even under the most extreme condition, the result does not change. 就算…也 is more emphatic than 即使…也, often used to emphasize that no exception exists. The hypothetical condition does not need to be true — it is used to show that even if it were true, the conclusion would remain the same.",
+      "examples": [
+        {
+          "chinese": "就算你睡了八个小时，被闹钟突然吵醒，身体也得不到充分休息。",
+          "pinyin": "Jiù suàn nǐ shuì le bā gè xiǎoshí, bèi nào zhōng tū rán chǎo xǐng, shēntǐ yě dé bú dào chōngfèn xiūxi.",
+          "english": "Even if you slept eight hours, being woken abruptly by an alarm clock means your body still did not get adequate rest."
+        },
+        {
+          "chinese": "就算他每天坚持锻炼，睡眠不足也会让他感到疲劳。",
+          "pinyin": "Jiù suàn tā měi tiān jiānchí duànliàn, shuì mián bù zú yě huì ràng tā gǎndào pí láo.",
+          "english": "Even if he exercises every day, insufficient sleep will still make him feel fatigued."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "选择正确的句子：就算生物钟紊乱，______。",
+          "type": "multiple_choice",
+          "correct": "身体也会出现各种不适症状",
+          "options": ["身体也会出现各种不适症状", "身体不会有任何影响", "可以完全靠意志力克服", "睡眠质量自然会变好"],
+          "option_pinyin": ["shēntǐ yě huì chūxiàn gèzhǒng bù shì zhèngzhuàng", "shēntǐ bú huì yǒu rènhé yǐng xiǎng", "kěyǐ wánquán kào yìzhì lì kèfú", "shuì mián zhìliàng zì rán huì biàn hǎo"],
+          "word_hints": {"就算": "even if", "生物钟紊乱": "biological clock disruption", "也": "still"}
+        },
+        {
+          "question": "用\"就算…也\"完成句子：就算工作再忙，______。",
+          "type": "multiple_choice",
+          "correct": "也应该保证充足的睡眠",
+          "options": ["也应该保证充足的睡眠", "就不需要休息了", "睡眠自然会变好", "生物钟不会受影响"],
+          "option_pinyin": ["yě yīnggāi bǎozhèng chōng zú de shuì mián", "jiù bú xūyào xiūxi le", "shuì mián zì rán huì biàn hǎo", "shēng wù zhōng bú huì shòu yǐng xiǎng"],
+          "word_hints": {"就算": "even if", "也": "still/also"}
+        },
+        {
+          "question": "哪一句使用了\"就算…也\"结构？",
+          "type": "multiple_choice",
+          "correct": "就算他睡得很晚，早上也会准时醒来",
+          "options": ["就算他睡得很晚，早上也会准时醒来", "他虽然睡得晚，但是早上起得来", "因为睡得晚，所以他早上很疲劳", "他睡得晚，而且早上也很晚起来"],
+          "option_pinyin": ["jiù suàn tā shuì de hěn wǎn, zǎoshang yě huì zhǔnshí xǐng lái", "tā suīrán shuì de wǎn, dànshì zǎoshang qǐ de lái", "yīnwèi shuì de wǎn, suǒyǐ tā zǎoshang hěn pí láo", "tā shuì de wǎn, érqiě zǎoshang yě hěn wǎn qǐlái"],
+          "word_hints": {"就算…也": "even if…still"}
+        },
+        {
+          "question": "就算不用闹钟，______规律的作息也能保证准时起床。",
+          "type": "multiple_choice",
+          "correct": "只要保持",
+          "options": ["只要保持", "由于有了", "虽然没有", "但是因为"],
+          "option_pinyin": ["zhǐyào bǎochí", "yóuyú yǒu le", "suīrán méiyǒu", "dànshì yīnwèi"],
+          "word_hints": {"就算": "even if", "规律的作息": "regular schedule"}
+        },
+        {
+          "question": "就算医生______，他还是坚持每天用闹钟。",
+          "type": "multiple_choice",
+          "correct": "警告了他闹钟的危害，他也",
+          "options": ["警告了他闹钟的危害，他也", "说了，所以他不", "建议，于是他也", "允许，他才"],
+          "option_pinyin": ["jǐnggào le tā nào zhōng de wēi hài, tā yě", "shuō le, suǒyǐ tā bù", "jiànyì, yúshì tā yě", "yǔnxǔ, tā cái"],
+          "word_hints": {"就算": "even if", "也": "still"}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "不得不 — Cannot help but; have no choice but to",
+      "explanation": "Structure: Subject + 不得不 + verb phrase. Meaning: Forced by external circumstances to do something against one's preference or original intent. It conveys reluctant necessity — the subject would prefer not to do the action but has no alternative. It is stronger than 必须 (must) because it implies external pressure rather than just obligation.",
+      "examples": [
+        {
+          "chinese": "为了早上准时起床，很多人不得不依赖闹钟。",
+          "pinyin": "Wèile zǎoshang zhǔnshí qǐchuáng, hěn duō rén bùdébù yīlài nào zhōng.",
+          "english": "To get up on time in the morning, many people have no choice but to rely on alarm clocks."
+        },
+        {
+          "chinese": "由于睡眠严重不足，他不得不在会议中途去喝了杯咖啡提神。",
+          "pinyin": "Yóuyú shuì mián yánzhòng bù zú, tā bùdébù zài huìyì zhōngtú qù hē le bēi kāfēi tí shén.",
+          "english": "Due to severe sleep deprivation, he had no choice but to step out mid-meeting to get a coffee to stay alert."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "选择正确的用法：因为身体太疲劳，她______请假休息。",
+          "type": "multiple_choice",
+          "correct": "不得不",
+          "options": ["不得不", "不必", "不会", "不该"],
+          "option_pinyin": ["bùdébù", "bù bì", "bú huì", "bù gāi"],
+          "word_hints": {"疲劳": "fatigue", "请假": "take time off"}
+        },
+        {
+          "question": "哪一句正确使用了\"不得不\"？",
+          "type": "multiple_choice",
+          "correct": "他虽然不想用闹钟，但不得不每天定好闹钟",
+          "options": ["他虽然不想用闹钟，但不得不每天定好闹钟", "他很喜欢闹钟，所以不得不买了一个", "他不得不认为闹钟是有好处的", "他不得不很高兴地用了闹钟"],
+          "option_pinyin": ["tā suīrán bù xiǎng yòng nào zhōng, dàn bùdébù měi tiān dìng hǎo nào zhōng", "tā hěn xǐhuān nào zhōng, suǒyǐ bùdébù mǎi le yī gè", "tā bùdébù rènwéi nào zhōng shì yǒu hǎochù de", "tā bùdébù hěn gāoxìng de yòng le nào zhōng"],
+          "word_hints": {"不得不": "have no choice but to"}
+        },
+        {
+          "question": "生物钟紊乱之后，他______去医院检查。",
+          "type": "multiple_choice",
+          "correct": "不得不",
+          "options": ["不得不", "应该不", "不必要", "无法不"],
+          "option_pinyin": ["bùdébù", "yīnggāi bù", "bù bìyào", "wúfǎ bù"],
+          "word_hints": {"生物钟紊乱": "biological clock disruption"}
+        },
+        {
+          "question": "选择最合适的句子来表达\"被迫做某事\"：",
+          "type": "multiple_choice",
+          "correct": "为了赶早班飞机，他不得不四点就起床了",
+          "options": ["为了赶早班飞机，他不得不四点就起床了", "他很乐意四点起床赶早班飞机", "赶早班飞机让他觉得很轻松", "他决定自愿四点起床"],
+          "option_pinyin": ["wèile gǎn zǎobān fēijī, tā bùdébù sì diǎn jiù qǐchuáng le", "tā hěn lèyì sì diǎn qǐchuáng gǎn zǎobān fēijī", "gǎn zǎobān fēijī ràng tā juéde hěn qīngsōng", "tā juédìng zìyuàn sì diǎn qǐchuáng"],
+          "word_hints": {"不得不": "have no choice but to"}
+        },
+        {
+          "question": "由于没有养成规律作息的习惯，他______每天晚上定多个闹钟。",
+          "type": "multiple_choice",
+          "correct": "不得不",
+          "options": ["不得不", "愿意", "渴望", "能够"],
+          "option_pinyin": ["bùdébù", "yuànyì", "kěwàng", "nénggòu"],
+          "word_hints": {"规律作息": "regular schedule", "不得不": "have no choice but to"}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "从而 — Thus; thereby; and as a result",
+      "explanation": "Structure: [cause/action] + 从而 + [result/consequence]. 从而 is a formal connective used to express that the first clause leads to or enables the second. It is more formal than 所以 and is commonly found in written Chinese, academic texts, and formal speech. The second clause introduced by 从而 is often a further development or consequence of the first.",
+      "examples": [
+        {
+          "chinese": "闹钟强制打断了自然睡眠，从而影响了身体的恢复过程。",
+          "pinyin": "Nào zhōng qiángzhì dǎduàn le zì rán shuì mián, cóng ér yǐng xiǎng le shēntǐ de huīfù guòchéng.",
+          "english": "Alarm clocks forcibly interrupt natural sleep, thereby affecting the body's recovery process."
+        },
+        {
+          "chinese": "保持规律的作息时间可以稳定生物钟，从而提高整体睡眠质量。",
+          "pinyin": "Bǎochí guī lǜ de zuòxī shíjiān kěyǐ wěndìng shēng wù zhōng, cóng ér tígāo zhěngtǐ shuì mián zhìliàng.",
+          "english": "Maintaining regular rest hours can stabilize the biological clock, thereby improving overall sleep quality."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "选择合适的词填空：长期睡眠不足损害了他的免疫系统，______导致他经常生病。",
+          "type": "multiple_choice",
+          "correct": "从而",
+          "options": ["从而", "虽然", "即使", "反而"],
+          "option_pinyin": ["cóng ér", "suīrán", "jíshǐ", "fǎn ér"],
+          "word_hints": {"从而": "thereby", "免疫系统": "immune system"}
+        },
+        {
+          "question": "哪一句正确使用了\"从而\"？",
+          "type": "multiple_choice",
+          "correct": "他坚持规律作息，从而改善了睡眠质量",
+          "options": ["他坚持规律作息，从而改善了睡眠质量", "从而他坚持规律作息，改善了睡眠质量", "他从而坚持规律作息改善睡眠质量", "他改善了睡眠质量，从而坚持规律作息"],
+          "option_pinyin": ["tā jiānchí guī lǜ zuòxī, cóng ér gǎishàn le shuì mián zhìliàng", "cóng ér tā jiānchí guī lǜ zuòxī, gǎishàn le shuì mián zhìliàng", "tā cóng ér jiānchí guī lǜ zuòxī gǎishàn shuì mián zhìliàng", "tā gǎishàn le shuì mián zhìliàng, cóng ér jiānchí guī lǜ zuòxī"],
+          "word_hints": {"从而": "thereby, and as a result"}
+        },
+        {
+          "question": "实验证明，被闹钟打断睡眠会影响激素分泌，______对身体造成危害。",
+          "type": "multiple_choice",
+          "correct": "从而",
+          "options": ["从而", "但是", "虽然", "如果"],
+          "option_pinyin": ["cóng ér", "dànshì", "suīrán", "rúguǒ"],
+          "word_hints": {"激素分泌": "hormone secretion", "危害": "harm"}
+        },
+        {
+          "question": "\"从而\"最适合用于哪种语境？",
+          "type": "multiple_choice",
+          "correct": "正式书面语或学术写作",
+          "options": ["正式书面语或学术写作", "日常口语对话", "表达转折关系", "表达假设条件"],
+          "option_pinyin": ["zhèngshì shūmiàn yǔ huò xuéshù xiězuò", "rìcháng kǒuyǔ duìhuà", "biǎodá zhuǎnzhé guānxi", "biǎodá jiǎshè tiáojiàn"],
+          "word_hints": {"从而": "thereby"}
+        },
+        {
+          "question": "选择正确的句子：",
+          "type": "multiple_choice",
+          "correct": "良好的睡眠习惯能够稳定生物钟，从而减少疲劳感",
+          "options": ["良好的睡眠习惯能够稳定生物钟，从而减少疲劳感", "从而良好的睡眠习惯稳定了生物钟", "他疲劳了，从而需要睡觉", "从而他不喜欢用闹钟"],
+          "option_pinyin": ["liánghǎo de shuì mián xíguàn nénggòu wěndìng shēng wù zhōng, cóng ér jiǎnshǎo pí láo gǎn", "cóng ér liánghǎo de shuì mián xíguàn wěndìng le shēng wù zhōng", "tā pí láo le, cóng ér xūyào shuìjiào", "cóng ér tā bù xǐhuān yòng nào zhōng"],
+          "word_hints": {"从而": "thereby", "稳定": "stabilize"}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "title": "Traditional Chinese Views on Daily Rhythms",
+      "title_chinese": "中国传统的作息观",
+      "content": "Traditional Chinese medicine (中医, zhōng yī) has long emphasized the importance of living in harmony with nature's rhythms. The concept of 顺应自然 (shùn yìng zì rán) — going along with nature — is a foundational principle of Chinese health philosophy. According to this worldview, health is maintained not by fighting against natural cycles, but by aligning one's daily activities with the rhythms of the heavens and earth.\n\nOne of the most sophisticated expressions of this idea is the 子午流注 (zǐ wǔ liú zhù) system in traditional Chinese medicine, which associates each two-hour period of the 24-hour day with a specific organ system. For example, the hours from 11 PM to 1 AM (子时) are associated with the gallbladder; 1 AM to 3 AM (丑时) with the liver. According to this system, sleeping during these hours allows those organs to rest and regenerate. Disrupting these windows — as alarm clocks often do — was considered harmful to the corresponding organ.\n\nThe value of early rising has deep roots in Chinese culture. The saying 早睡早起身体好 (zǎo shuì zǎo qǐ shēntǐ hǎo — 'sleep early, rise early, and the body will be well') reflects a long-standing belief that aligning with sunrise and sunset is natural and healthy. In agricultural society, this was practical wisdom; today, it is increasingly recognized by modern sleep science as well. The 生物钟 (biological clock) concept in modern science echoes what Chinese tradition has valued for centuries.",
+      "idioms": [
+        {
+          "chinese": "日出而作，日落而息",
+          "pinyin": "rì chū ér zuò, rì luò ér xī",
+          "english": "Work at sunrise, rest at sunset — to live in harmony with nature's rhythms"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "下列哪个词的意思是\"身体内部调节作息的自然系统\"？",
+      "type": "multiple_choice",
+      "correct": "生物钟",
+      "options": ["生物钟", "闹钟", "激素", "机制"],
+      "word_hints": {"调节": "regulate", "作息": "daily schedule"}
+    },
+    {
+      "question": "选择正确的句子：就算你睡了八小时，______也得不到充分休息。",
+      "type": "multiple_choice",
+      "correct": "被闹钟突然吵醒，身体",
+      "options": ["被闹钟突然吵醒，身体", "自然醒来，身体", "保持规律作息，身体", "睡眠充足，身体"],
+      "word_hints": {"就算…也": "even if…still"}
+    },
+    {
+      "question": "\"不得不\"表达的含义是：",
+      "type": "multiple_choice",
+      "correct": "被迫做某事，没有其他选择",
+      "options": ["被迫做某事，没有其他选择", "主动选择做某事", "希望做某事", "拒绝做某事"],
+      "word_hints": {"不得不": "have no choice but to"}
+    },
+    {
+      "question": "闹钟打断了深度睡眠，______影响了激素的正常分泌。",
+      "type": "multiple_choice",
+      "correct": "从而",
+      "options": ["从而", "虽然", "即使", "就算"],
+      "word_hints": {"激素": "hormone", "从而": "thereby"}
+    },
+    {
+      "question": "中医中的\"子午流注\"认为：",
+      "type": "multiple_choice",
+      "correct": "一天中不同时段与不同器官的运作有关",
+      "options": ["一天中不同时段与不同器官的运作有关", "闹钟对健康没有影响", "每天必须睡十个小时", "激素只在白天分泌"],
+      "word_hints": {"子午流注": "24-hour organ cycle in TCM", "器官": "organ"}
+    },
+    {
+      "question": "\"规律作息\"的意思是：",
+      "type": "multiple_choice",
+      "correct": "有固定规律地安排每天的起居和休息时间",
+      "options": ["有固定规律地安排每天的起居和休息时间", "每天随意决定睡眠时间", "只在周末规律作息", "用闹钟控制作息时间"],
+      "word_hints": {"规律": "regularity, regular", "作息": "daily schedule"}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Do You Use an Alarm?",
+      "title_chinese": "你用闹钟吗？",
+      "speakers": {
+        "A": { "name": "慈欣", "role": "科幻作家", "gender": "male" },
+        "B": { "name": "鲁迅", "role": "作家", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你平时用闹钟吗？我最近在研究闹钟对睡眠的危害。",
+          "pinyin": "Nǐ píngshí yòng nào zhōng ma? Wǒ zuìjìn zài yánjiū nào zhōng duì shuì mián de wēi hài.",
+          "english": "Do you normally use an alarm clock? I've been researching the harm alarm clocks cause to sleep."
+        },
+        {
+          "speaker": "B",
+          "chinese": "以前用，后来发现被突然吵醒之后，一整天都提不起精神。",
+          "pinyin": "Yǐqián yòng, hòulái fāxiàn bèi tū rán chǎo xǐng zhīhòu, yī zhěng tiān dōu tí bù qǐ jīngshén.",
+          "english": "I used to, but later I found that after being suddenly woken up, I couldn't find my energy for the whole day."
+        },
+        {
+          "speaker": "A",
+          "chinese": "对，这就是生物钟被打乱的结果。现在你怎么起床？",
+          "pinyin": "Duì, zhè jiùshì shēng wù zhōng bèi dǎluàn de jiéguǒ. Xiànzài nǐ zěnme qǐchuáng?",
+          "english": "Exactly, that's the result of the biological clock being disrupted. How do you get up now?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我养成了规律的作息习惯，每天差不多同一时间自然醒来，反而更精神。",
+          "pinyin": "Wǒ yǎngchéng le guī lǜ de zuòxī xíguàn, měi tiān chàbuduō tóngyī shíjiān zì rán xǐng lái, fǎn ér gèng jīngshén.",
+          "english": "I developed regular daily habits. I wake up naturally at about the same time every day, and I actually feel more alert."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这正好说明了身体有自我调节的机制。不依赖外力，反而效果更好。",
+          "pinyin": "Zhè zhènghǎo shuōmíng le shēntǐ yǒu zìwǒ tiáojié de jī zhì. Bù yīlài wài lì, fǎn ér xiàoguǒ gèng hǎo.",
+          "english": "This perfectly illustrates that the body has a self-regulating mechanism. Without relying on external force, the result is actually better."
+        },
+        {
+          "speaker": "B",
+          "chinese": "是的，但现代社会的压力让很多人不得不继续用闹钟，这真是个矛盾。",
+          "pinyin": "Shì de, dàn xiàndài shèhuì de yālì ràng hěn duō rén bùdébù jìxù yòng nào zhōng, zhè zhēnshi gè máodùn.",
+          "english": "True, but the pressure of modern society forces many people to keep using alarm clocks — it's really a contradiction."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Sleep Research",
+      "title_chinese": "睡眠研究",
+      "speakers": {
+        "A": { "name": "慈欣", "role": "科幻作家", "gender": "male" },
+        "B": { "name": "李白", "role": "诗人", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "我刚读了一个有趣的实验报告，关于生物钟和睡眠周期的。",
+          "pinyin": "Wǒ gāng dú le yī gè yǒuqù de shí yàn bàogào, guānyú shēng wù zhōng hé shuì mián zhōuqī de.",
+          "english": "I just read an interesting experimental report about the biological clock and sleep cycles."
+        },
+        {
+          "speaker": "B",
+          "chinese": "哦？实验说了什么？我对这种研究很感兴趣！",
+          "pinyin": "Ó? Shí yàn shuō le shénme? Wǒ duì zhè zhǒng yánjiū hěn gǎn xìngqù!",
+          "english": "Oh? What did the experiment say? I'm very interested in this kind of research!"
+        },
+        {
+          "speaker": "A",
+          "chinese": "研究人员让受试者在没有闹钟的环境中生活两周，从而观察生物钟的自然运作规律。",
+          "pinyin": "Yánjiū rényuán ràng shòushì zhě zài méiyǒu nào zhōng de huánjìng zhōng shēnghuó liǎng zhōu, cóng ér guānchá shēng wù zhōng de zì rán yùnzuò guī lǜ.",
+          "english": "Researchers had the subjects live in an environment without alarm clocks for two weeks, thereby observing the natural operating patterns of the biological clock."
+        },
+        {
+          "speaker": "B",
+          "chinese": "那结果怎么样？他们的睡眠有变化吗？",
+          "pinyin": "Nà jiéguǒ zěnmeyàng? Tāmen de shuì mián yǒu biànhuà ma?",
+          "english": "And what were the results? Did their sleep change?"
+        },
+        {
+          "speaker": "A",
+          "chinese": "几天之后，受试者的生物钟自然地恢复了规律，睡眠质量明显提高，疲劳感也减少了。",
+          "pinyin": "Jǐ tiān zhīhòu, shòushì zhě de shēng wù zhōng zì rán de huīfù le guī lǜ, shuì mián zhìliàng míngxiǎn tígāo, pí láo gǎn yě jiǎnshǎo le.",
+          "english": "After a few days, the subjects' biological clocks naturally returned to a regular rhythm, sleep quality noticeably improved, and feelings of fatigue also decreased."
+        },
+        {
+          "speaker": "B",
+          "chinese": "真是太神奇了！看来顺应自然才是最好的生活方式，就像古人说的那样。",
+          "pinyin": "Zhēnshi tài shénqí le! Kànlái shùn yìng zì rán cái shì zuì hǎo de shēnghuó fāngshì, jiù xiàng gǔrén shuō de nàyàng.",
+          "english": "That's truly amazing! It seems that going with nature is the best way to live, just as the ancients said."
+        }
+      ]
+    }
+  ]
+}

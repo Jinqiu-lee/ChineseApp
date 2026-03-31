@@ -1,0 +1,441 @@
+{
+  "lesson": 10,
+  "level": 6,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Digital China",
+  "topic_chinese": "数字中国的影响",
+  "vocabulary": [
+    {
+      "id": "hsk6_l10_01",
+      "chinese": "影响",
+      "pinyin": "yǐng xiǎng",
+      "english": "influence, impact",
+      "part_of_speech": "verb/noun",
+      "example": "微信的出现深刻地影响了人们的日常沟通方式。",
+      "translation": "The emergence of WeChat has profoundly influenced how people communicate daily."
+    },
+    {
+      "id": "hsk6_l10_02",
+      "chinese": "平台",
+      "pinyin": "píng tái",
+      "english": "platform",
+      "part_of_speech": "noun",
+      "example": "这个平台为海外华人提供了展示自己文化的机会。",
+      "translation": "This platform provides overseas Chinese with the opportunity to showcase their culture."
+    },
+    {
+      "id": "hsk6_l10_03",
+      "chinese": "内容",
+      "pinyin": "nèi róng",
+      "english": "content",
+      "part_of_speech": "noun",
+      "example": "优质的内容是吸引用户的关键。",
+      "translation": "High-quality content is the key to attracting users."
+    },
+    {
+      "id": "hsk6_l10_04",
+      "chinese": "分享",
+      "pinyin": "fēn xiǎng",
+      "english": "to share",
+      "part_of_speech": "verb",
+      "example": "她喜欢在朋友圈分享自己在海外的生活。",
+      "translation": "She likes to share her life abroad on Moments."
+    },
+    {
+      "id": "hsk6_l10_05",
+      "chinese": "交流",
+      "pinyin": "jiāo liú",
+      "english": "to communicate, exchange",
+      "part_of_speech": "verb/noun",
+      "example": "数字技术让跨国交流变得更加便捷。",
+      "translation": "Digital technology has made cross-border communication much more convenient."
+    },
+    {
+      "id": "hsk6_l10_06",
+      "chinese": "功能",
+      "pinyin": "gōng néng",
+      "english": "function, feature",
+      "part_of_speech": "noun",
+      "example": "微信的支付功能在国内几乎人人都在使用。",
+      "translation": "WeChat's payment feature is used by almost everyone in China."
+    },
+    {
+      "id": "hsk6_l10_07",
+      "chinese": "便利",
+      "pinyin": "biàn lì",
+      "english": "convenient, convenience",
+      "part_of_speech": "adjective/noun",
+      "example": "移动支付给人们的生活带来了极大的便利。",
+      "translation": "Mobile payment has brought great convenience to people's lives."
+    },
+    {
+      "id": "hsk6_l10_08",
+      "chinese": "商业",
+      "pinyin": "shāng yè",
+      "english": "commerce, business",
+      "part_of_speech": "noun",
+      "example": "不少中小商业都开始使用微信进行营销。",
+      "translation": "Many small and medium businesses have started using WeChat for marketing."
+    },
+    {
+      "id": "hsk6_l10_09",
+      "chinese": "支付",
+      "pinyin": "zhī fù",
+      "english": "to pay, payment",
+      "part_of_speech": "verb/noun",
+      "example": "在中国，扫码支付已经成为最常见的消费方式之一。",
+      "translation": "In China, scanning codes for payment has become one of the most common consumption methods."
+    },
+    {
+      "id": "hsk6_l10_10",
+      "chinese": "全球",
+      "pinyin": "quán qiú",
+      "english": "global, worldwide",
+      "part_of_speech": "adjective/noun",
+      "example": "中国的数字经济在全球范围内具有重要影响力。",
+      "translation": "China's digital economy has important influence on a global scale."
+    },
+    {
+      "id": "hsk6_l10_11",
+      "chinese": "推广",
+      "pinyin": "tuī guǎng",
+      "english": "to promote, to spread",
+      "part_of_speech": "verb",
+      "example": "政府积极推广数字经济，以促进社会发展。",
+      "translation": "The government actively promotes the digital economy to advance social development."
+    },
+    {
+      "id": "hsk6_l10_12",
+      "chinese": "认同",
+      "pinyin": "rèn tóng",
+      "english": "to identify with, to approve",
+      "part_of_speech": "verb",
+      "example": "海外华人通过微信寻找文化认同感。",
+      "translation": "Overseas Chinese seek a sense of cultural identity through WeChat."
+    },
+    {
+      "id": "hsk6_l10_13",
+      "chinese": "数据",
+      "pinyin": "shù jù",
+      "english": "data",
+      "part_of_speech": "noun",
+      "example": "根据最新数据，微信每天的活跃用户超过十亿。",
+      "translation": "According to the latest data, WeChat has more than one billion daily active users."
+    },
+    {
+      "id": "hsk6_l10_14",
+      "chinese": "创新",
+      "pinyin": "chuàng xīn",
+      "english": "innovation, to innovate",
+      "part_of_speech": "noun/verb",
+      "example": "技术创新是推动数字经济发展的核心动力。",
+      "translation": "Technological innovation is the core driving force behind the development of the digital economy."
+    },
+    {
+      "id": "hsk6_l10_15",
+      "chinese": "趋势",
+      "pinyin": "qū shì",
+      "english": "trend, tendency",
+      "part_of_speech": "noun",
+      "example": "数字化已经成为全球经济发展的重要趋势。",
+      "translation": "Digitalization has become an important trend in global economic development."
+    }
+  ],
+  "phrases": [
+    {
+      "id": "hsk6_l10_p01",
+      "chinese": "数字经济",
+      "pinyin": "shù zì jīng jì",
+      "english": "digital economy",
+      "example": "中国的数字经济规模居全球前列。",
+      "translation": "China's digital economy ranks among the top in the world."
+    },
+    {
+      "id": "hsk6_l10_p02",
+      "chinese": "移动支付",
+      "pinyin": "yí dòng zhī fù",
+      "english": "mobile payment",
+      "example": "中国的移动支付技术已经走向国际市场。",
+      "translation": "China's mobile payment technology has entered the international market."
+    },
+    {
+      "id": "hsk6_l10_p03",
+      "chinese": "跨文化交流",
+      "pinyin": "kuà wén huà jiāo liú",
+      "english": "cross-cultural communication",
+      "example": "网络工具促进了全球范围内的跨文化交流。",
+      "translation": "Online tools have promoted cross-cultural communication on a global scale."
+    },
+    {
+      "id": "hsk6_l10_p04",
+      "chinese": "用户体验",
+      "pinyin": "yòng hù tǐ yàn",
+      "english": "user experience",
+      "example": "良好的用户体验是产品成功的重要因素。",
+      "translation": "A good user experience is an important factor in the success of a product."
+    },
+    {
+      "id": "hsk6_l10_p05",
+      "chinese": "社交媒体",
+      "pinyin": "shè jiāo méi tǐ",
+      "english": "social media",
+      "example": "社交媒体已成为人们了解世界的重要渠道。",
+      "translation": "Social media has become an important channel through which people understand the world."
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "微信不仅改变了人们的沟通方式，而且深刻影响了商业模式。",
+      "pinyin": "Wēi xìn bù jǐn gǎi biàn le rén men de gōu tōng fāng shì, ér qiě shēn kè yǐng xiǎng le shāng yè mó shì.",
+      "english": "WeChat has not only changed the way people communicate, but also profoundly influenced business models."
+    },
+    {
+      "chinese": "由于技术的快速发展，数字经济已经渗透到生活的各个角落。",
+      "pinyin": "Yóu yú jì shù de kuài sù fā zhǎn, shù zì jīng jì yǐ jīng shèn tòu dào shēng huó de gè gè jiǎo luò.",
+      "english": "Due to the rapid development of technology, the digital economy has permeated every corner of life."
+    },
+    {
+      "chinese": "究竟是技术塑造了文化，还是文化推动了技术？这是一个值得思考的问题。",
+      "pinyin": "Jiū jìng shì jì shù sù zào le wén huà, hái shì wén huà tuī dòng le jì shù? Zhè shì yī gè zhí de sī kǎo de wèn tí.",
+      "english": "Is it exactly technology that shapes culture, or culture that drives technology? This is a question worth pondering."
+    },
+    {
+      "chinese": "这个平台不仅提供了便利的支付功能，而且创造了全新的商业生态。",
+      "pinyin": "Zhè gè píng tái bù jǐn tí gōng le biàn lì de zhī fù gōng néng, ér qiě chuàng zào le quán xīn de shāng yè shēng tài.",
+      "english": "This platform not only provides a convenient payment function, but also creates a brand-new business ecosystem."
+    },
+    {
+      "chinese": "由于海外用户的增加，中文内容的国际传播变得越来越重要。",
+      "pinyin": "Yóu yú hǎi wài yòng hù de zēng jiā, zhōng wén nèi róng de guó jì chuán bō biàn de yuè lái yuè zhòng yào.",
+      "english": "Due to the increase in overseas users, the international dissemination of Chinese content has become increasingly important."
+    },
+    {
+      "chinese": "究竟哪种商业模式更适合全球推广，各方还在积极探索中。",
+      "pinyin": "Jiū jìng nǎ zhǒng shāng yè mó shì gèng shì hé quán qiú tuī guǎng, gè fāng hái zài jī jí tàn suǒ zhōng.",
+      "english": "Exactly which business model is more suitable for global promotion is still being actively explored by all parties."
+    }
+  ],
+  "grammar_points": [
+    {
+      "id": "hsk6_l10_g1",
+      "pattern": "不仅…而且…",
+      "meaning": "Not only … but also …",
+      "explanation": "Used to connect two parallel ideas where the second extends or intensifies the first. 不仅 introduces the first point; 而且 introduces the additional, often more significant point.",
+      "examples": [
+        "她不仅会说中文，而且能写一手漂亮的汉字。",
+        "这款应用不仅操作简单，而且功能十分强大。"
+      ],
+      "exercises": [
+        {
+          "question": "选择正确的搭配：这次活动___吸引了本地居民，___吸引了很多外国游客。",
+          "choices": ["不仅…而且", "虽然…但是", "既然…就", "尽管…还是"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Which sentence uses 不仅…而且 correctly?",
+          "choices": [
+            "他不仅去了北京，而且还去了上海。",
+            "不仅他去了北京，而且他没有去上海。",
+            "他不仅学习，而且他很累。",
+            "不仅因为他累，而且他不想去。"
+          ],
+          "correct_answer": 0
+        },
+        {
+          "question": "Complete: 微信___改变了通讯方式，___影响了人们的购物习惯。",
+          "choices": ["不仅…而且", "宁可…也不", "虽然…但是", "一旦…就"],
+          "correct_answer": 0
+        },
+        {
+          "question": "不仅…而且 is best used when:",
+          "choices": [
+            "Adding a further positive point to a previous one",
+            "Expressing contrast between two ideas",
+            "Showing a condition and its result",
+            "Expressing a concession"
+          ],
+          "correct_answer": 0
+        },
+        {
+          "question": "Which is the most natural sentence?",
+          "choices": [
+            "她不仅聪明，而且非常努力。",
+            "她不仅聪明，而且她很懒。",
+            "她不仅很努力，而且她不聪明。",
+            "她不仅不聪明，而且非常努力。"
+          ],
+          "correct_answer": 0
+        }
+      ]
+    },
+    {
+      "id": "hsk6_l10_g2",
+      "pattern": "由于",
+      "meaning": "Due to, owing to, because of",
+      "explanation": "由于 introduces a reason or cause, similar to 因为 but slightly more formal. It often appears at the beginning of a clause or sentence. Unlike 因为…所以, 由于 usually does not pair with 所以 in formal writing.",
+      "examples": [
+        "由于天气原因，比赛被推迟了。",
+        "由于缺乏资金，这个项目无法继续进行。"
+      ],
+      "exercises": [
+        {
+          "question": "Choose the best completion: ___语言障碍，很多海外用户很难完全融入当地社会。",
+          "choices": ["由于", "虽然", "尽管", "不仅"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Which sentence uses 由于 correctly?",
+          "choices": [
+            "由于技术进步，生活变得更加便利。",
+            "由于他很聪明，但是考试没过。",
+            "他由于去了北京。",
+            "由于去北京，他很开心所以。"
+          ],
+          "correct_answer": 0
+        },
+        {
+          "question": "由于 is closest in meaning to:",
+          "choices": ["因为", "虽然", "即使", "如果"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Fill in: ___移动支付的普及，现金使用越来越少。",
+          "choices": ["由于", "尽管", "既然", "一旦"],
+          "correct_answer": 0
+        },
+        {
+          "question": "In formal writing, 由于 is typically followed by:",
+          "choices": [
+            "A reason or cause clause",
+            "A contrast clause",
+            "A conditional clause",
+            "A concession clause"
+          ],
+          "correct_answer": 0
+        }
+      ]
+    },
+    {
+      "id": "hsk6_l10_g3",
+      "pattern": "究竟",
+      "meaning": "Exactly, after all, in the end",
+      "explanation": "究竟 is used in questions to express a desire to get to the bottom of something — 'exactly what/who/how'. It adds emphasis and urgency to a question. In statements it can mean 'after all' or 'in the end'.",
+      "examples": [
+        "你究竟想要什么？",
+        "这件事究竟是谁的责任，大家都不清楚。"
+      ],
+      "exercises": [
+        {
+          "question": "Choose the best completion: 他___为什么不来参加会议，没有人知道。",
+          "choices": ["究竟", "不仅", "由于", "逐渐"],
+          "correct_answer": 0
+        },
+        {
+          "question": "究竟 is used to:",
+          "choices": [
+            "Emphasize the desire to find the true answer",
+            "Express a condition",
+            "Show a sequence of events",
+            "Indicate contrast"
+          ],
+          "correct_answer": 0
+        },
+        {
+          "question": "Which sentence uses 究竟 correctly?",
+          "choices": [
+            "这个问题究竟有没有答案，很难说。",
+            "究竟因为他很忙，所以没来。",
+            "她究竟去了北京所以很开心。",
+            "究竟她聪明，也很努力。"
+          ],
+          "correct_answer": 0
+        },
+        {
+          "question": "In the sentence 这究竟是谁的错, 究竟 means:",
+          "choices": ["exactly/after all", "due to", "not only", "gradually"],
+          "correct_answer": 0
+        },
+        {
+          "question": "Fill in: 你___要去还是不去，请给我一个明确的回答。",
+          "choices": ["究竟", "逐步", "从而", "反而"],
+          "correct_answer": 0
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "title": "China's Four Great Inventions and the Digital Age",
+      "title_chinese": "中国古代四大发明与数字时代",
+      "content": "Ancient China gave the world four transformative inventions: papermaking (造纸术 zào zhǐ shù), printing (印刷术 yìn shuā shù), gunpowder (火药 huǒ yào), and the compass (指南针 zhǐ nán zhēn). These innovations fundamentally shaped human civilization and spread across the world via the Silk Road.\n\nToday, many observers draw a parallel to a 'new four great inventions' (新四大发明) attributed to modern China: high-speed rail (高铁 gāotiě), mobile payment (移动支付 yídòng zhīfù), online shopping (网购 wǎnggòu), and shared bikes (共享单车 gòngxiǎng dānchē). These innovations, while not exclusively Chinese in origin, have been developed and scaled in China at an unprecedented pace.\n\nMobile payment in particular — powered by platforms like WeChat Pay (微信支付) and Alipay (支付宝 Zhīfùbǎo) — has transformed daily life in Chinese cities to a degree unmatched elsewhere. Smartphone payments are used for everything from street food vendors to luxury goods. This seamless integration of technology into daily commerce reflects both China's rapid urbanization and a culture of practical innovation.",
+      "vocabulary_highlight": ["造纸术", "印刷术", "火药", "指南针", "移动支付", "共享单车"]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "不仅…而且 is used to:",
+      "choices": ["Add a further point extending the first", "Show contrast", "Express a condition", "Indicate cause and effect"],
+      "correct_answer": 0
+    },
+    {
+      "question": "Choose the correct sentence using 由于:",
+      "choices": [
+        "由于工作繁忙，他没时间锻炼。",
+        "由于他很聪明，但是没有通过考试。",
+        "他由于很努力。",
+        "由于她去了，所以因此她回来了。"
+      ],
+      "correct_answer": 0
+    },
+    {
+      "question": "What does 究竟 add to a question?",
+      "choices": ["Emphasis, seeking the true answer", "Politeness", "Uncertainty", "Regret"],
+      "correct_answer": 0
+    },
+    {
+      "question": "What are the 'new four great inventions' of modern China?",
+      "choices": [
+        "High-speed rail, mobile payment, online shopping, shared bikes",
+        "Paper, printing, gunpowder, compass",
+        "WeChat, Alipay, Baidu, Alibaba",
+        "Smartphones, AI, EVs, solar panels"
+      ],
+      "correct_answer": 0
+    },
+    {
+      "question": "Which word means 'platform'?",
+      "choices": ["平台", "功能", "趋势", "内容"],
+      "correct_answer": 0
+    },
+    {
+      "question": "Fill in: 这款应用___使用方便，___价格低廉。",
+      "choices": ["不仅…而且", "虽然…但是", "既然…就", "尽管…还是"],
+      "correct_answer": 0
+    }
+  ],
+  "dialogues": [
+    {
+      "title": "Talking about tech and culture",
+      "speakers": ["慈欣", "兰特"],
+      "lines": [
+        { "speaker": "慈欣", "chinese": "兰特，你现在在欧洲也用微信吗？", "pinyin": "Lán tè, nǐ xiàn zài zài Ōu zhōu yě yòng Wēi xìn ma?", "english": "Elana, do you also use WeChat in Europe now?" },
+        { "speaker": "兰特", "chinese": "当然用！它不仅能联系家人，而且可以看很多中文内容。", "pinyin": "Dāng rán yòng! Tā bù jǐn néng lián xì jiā rén, ér qiě kě yǐ kàn hěn duō zhōng wén nèi róng.", "english": "Of course! It can not only keep in touch with family, but also access lots of Chinese content." },
+        { "speaker": "慈欣", "chinese": "由于语言不同，很多外国人究竟能不能真正融入中文平台？", "pinyin": "Yóu yú yǔ yán bù tóng, hěn duō wài guó rén jiū jìng néng bù néng zhēn zhèng róng rù zhōng wén píng tái?", "english": "Due to language differences, can foreigners truly integrate into Chinese platforms after all?" },
+        { "speaker": "兰特", "chinese": "我觉得这正是跨文化交流的魅力所在——我们都在学习彼此的表达方式。", "pinyin": "Wǒ jué de zhè zhèng shì kuà wén huà jiāo liú de mèi lì suǒ zài — wǒ men dōu zài xué xí bǐ cǐ de biǎo dá fāng shì.", "english": "I think this is precisely the charm of cross-cultural exchange — we are all learning each other's ways of expression." },
+        { "speaker": "慈欣", "chinese": "说得对。数字平台正在慢慢创造一种新的全球文化认同。", "pinyin": "Shuō de duì. Shù zì píng tái zhèng zài màn màn chuàng zào yī zhǒng xīn de quán qiú wén huà rèn tóng.", "english": "Well said. Digital platforms are slowly creating a new global cultural identity." }
+      ]
+    },
+    {
+      "title": "Mobile payment and daily life",
+      "speakers": ["慈欣", "兰特"],
+      "lines": [
+        { "speaker": "兰特", "chinese": "我上次去上海，几乎所有地方都能移动支付，真的太方便了！", "pinyin": "Wǒ shàng cì qù Shàng hǎi, jī hū suǒ yǒu dì fāng dōu néng yí dòng zhī fù, zhēn de tài fāng biàn le!", "english": "Last time I went to Shanghai, almost everywhere accepted mobile payment — it was so convenient!" },
+        { "speaker": "慈欣", "chinese": "对，由于移动支付的普及，很多地方甚至已经不接受现金了。", "pinyin": "Duì, yóu yú yí dòng zhī fù de pǔ jí, hěn duō dì fāng shèn zhì yǐ jīng bú jiē shòu xiàn jīn le.", "english": "Right, due to the widespread adoption of mobile payment, many places no longer even accept cash." },
+        { "speaker": "兰特", "chinese": "这对外国游客来说究竟是便利还是障碍呢？", "pinyin": "Zhè duì wài guó yóu kè lái shuō jiū jìng shì biàn lì hái shì zhàng ài ne?", "english": "For foreign tourists, is this exactly convenient or a barrier?" },
+        { "speaker": "慈欣", "chinese": "确实是个问题。不仅外国人不习惯，而且有些老年人也觉得困难。", "pinyin": "Quē shí shì gè wèn tí. Bù jǐn wài guó rén bù xí guàn, ér qiě yǒu xiē lǎo nián rén yě jué de kùn nan.", "english": "It is indeed a problem. Not only are foreigners unfamiliar with it, but some elderly people also find it difficult." },
+        { "speaker": "兰特", "chinese": "所以创新也需要考虑到所有用户的体验，这才是真正的用户友好。", "pinyin": "Suǒ yǐ chuàng xīn yě xū yào kǎo lǜ dào suǒ yǒu yòng hù de tǐ yàn, zhè cái shì zhēn zhèng de yòng hù yǒu hǎo.", "english": "So innovation also needs to consider the experience of all users — that is what true user-friendliness means." }
+      ]
+    }
+  ]
+}

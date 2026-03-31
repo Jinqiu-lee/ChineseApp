@@ -22,6 +22,7 @@ import hsk2QuizData from '../data/hsk2/hsk2_level_quiz.json';
 import hsk3QuizData from '../data/hsk3/hsk3_level_quiz.json';
 import hsk4QuizData from '../data/hsk4_level4/hsk4_level_quiz.json';
 import hsk5QuizData from '../data/hsk4_level5/hsk5_level_quiz.json';
+import hsk6QuizData from '../data/hsk6/hsk6_level_quiz.json';
 
 const QUIZ_BY_LEVEL = {
   hsk1: hsk1QuizData,
@@ -29,6 +30,7 @@ const QUIZ_BY_LEVEL = {
   hsk3: hsk3QuizData,
   hsk4: hsk4QuizData,
   hsk5: hsk5QuizData,
+  hsk6: hsk6QuizData,
 };
 
 export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) {

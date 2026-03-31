@@ -1,0 +1,614 @@
+{
+  "lesson": 3,
+  "level": 6,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "Facing Life's Choices",
+  "topic_chinese": "人生有选择（一）",
+  "vocabulary": [
+    {
+      "id": "hsk6_l3_01",
+      "chinese": "选择",
+      "pinyin": "xuǎn zé",
+      "english": "To choose; choice",
+      "part_of_speech": "verb/noun",
+      "example": "面对人生中重要的选择，我们都需要认真思考。",
+      "translation": "When facing an important life choice, we all need to think carefully."
+    },
+    {
+      "id": "hsk6_l3_02",
+      "chinese": "人生",
+      "pinyin": "rén shēng",
+      "english": "Life; one's lifetime",
+      "part_of_speech": "noun",
+      "example": "人生的道路有很多条，你选择哪一条取决于自己。",
+      "translation": "There are many paths in life; which one you choose depends on yourself."
+    },
+    {
+      "id": "hsk6_l3_03",
+      "chinese": "稳定",
+      "pinyin": "wěn dìng",
+      "english": "Stable; steady",
+      "part_of_speech": "adjective",
+      "example": "很多人毕业后都希望找到一份稳定的工作。",
+      "translation": "Many people hope to find stable work after they graduate."
+    },
+    {
+      "id": "hsk6_l3_04",
+      "chinese": "待遇",
+      "pinyin": "dài yù",
+      "english": "Pay; benefits; treatment",
+      "part_of_speech": "noun",
+      "example": "这两家公司的待遇差不多，但发展空间不同。",
+      "translation": "The benefits at these two companies are similar, but their development opportunities differ."
+    },
+    {
+      "id": "hsk6_l3_05",
+      "chinese": "发愁",
+      "pinyin": "fā chóu",
+      "english": "To worry; to feel anxious",
+      "part_of_speech": "verb",
+      "example": "他为该接受哪个职位发愁了好几天。",
+      "translation": "He spent several days worrying about which position to accept."
+    },
+    {
+      "id": "hsk6_l3_06",
+      "chinese": "机会",
+      "pinyin": "jī huì",
+      "english": "Opportunity; chance",
+      "part_of_speech": "noun",
+      "example": "好的机会不常有，遇到了就要抓住。",
+      "translation": "Good opportunities don't come often — when you encounter one, you must seize it."
+    },
+    {
+      "id": "hsk6_l3_07",
+      "chinese": "勇气",
+      "pinyin": "yǒng qì",
+      "english": "Courage; bravery",
+      "part_of_speech": "noun",
+      "example": "放弃稳定的生活去追求梦想，需要很大的勇气。",
+      "translation": "It takes great courage to give up a stable life to pursue one's dreams."
+    },
+    {
+      "id": "hsk6_l3_08",
+      "chinese": "理想",
+      "pinyin": "lǐ xiǎng",
+      "english": "Ideal; dream; aspiration",
+      "part_of_speech": "noun/adjective",
+      "example": "他从小就有一个理想，希望有一天能成为一名作家。",
+      "translation": "He has had a dream since childhood — to one day become a writer."
+    },
+    {
+      "id": "hsk6_l3_09",
+      "chinese": "现实",
+      "pinyin": "xiàn shí",
+      "english": "Reality; realistic",
+      "part_of_speech": "noun/adjective",
+      "example": "理想很美好，但我们也必须面对现实。",
+      "translation": "Ideals are wonderful, but we must also face reality."
+    },
+    {
+      "id": "hsk6_l3_10",
+      "chinese": "放弃",
+      "pinyin": "fàng qì",
+      "english": "To give up; to abandon",
+      "part_of_speech": "verb",
+      "example": "无论遇到多少困难，她都没有放弃自己的梦想。",
+      "translation": "No matter how many difficulties she encountered, she never gave up on her dreams."
+    },
+    {
+      "id": "hsk6_l3_11",
+      "chinese": "坚持",
+      "pinyin": "jiān chí",
+      "english": "To persist; to persevere",
+      "part_of_speech": "verb",
+      "example": "只要坚持下去，终有一天你会看到努力的结果。",
+      "translation": "As long as you keep going, one day you will see the results of your efforts."
+    },
+    {
+      "id": "hsk6_l3_12",
+      "chinese": "后悔",
+      "pinyin": "hòu huǐ",
+      "english": "To regret",
+      "part_of_speech": "verb",
+      "example": "他后悔当初没有抓住那次难得的机会。",
+      "translation": "He regrets not having seized that rare opportunity back then."
+    },
+    {
+      "id": "hsk6_l3_13",
+      "chinese": "犹豫",
+      "pinyin": "yóu yù",
+      "english": "To hesitate; to waver",
+      "part_of_speech": "verb",
+      "example": "她在两个工作机会之间犹豫了很久，迟迟无法做出决定。",
+      "translation": "She hesitated between two job opportunities for a long time, unable to make a decision."
+    },
+    {
+      "id": "hsk6_l3_14",
+      "chinese": "成功",
+      "pinyin": "chéng gōng",
+      "english": "To succeed; success",
+      "part_of_speech": "verb/noun",
+      "example": "经过多年的坚持，他终于在自己热爱的领域取得了成功。",
+      "translation": "After years of perseverance, he finally achieved success in the field he loves."
+    },
+    {
+      "id": "hsk6_l3_15",
+      "chinese": "目标",
+      "pinyin": "mù biāo",
+      "english": "Goal; target; objective",
+      "part_of_speech": "noun",
+      "example": "设定清晰的目标，是迈向成功的第一步。",
+      "translation": "Setting clear goals is the first step toward success."
+    },
+    {
+      "id": "hsk6_l3_p01",
+      "chinese": "面临选择",
+      "pinyin": "miàn lín xuǎn zé",
+      "english": "To face a choice",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l3_p02",
+      "chinese": "坚持理想",
+      "pinyin": "jiān chí lǐ xiǎng",
+      "english": "To hold onto one's ideals",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l3_p03",
+      "chinese": "勇敢放手",
+      "pinyin": "yǒng gǎn fàng shǒu",
+      "english": "To bravely let go",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l3_p04",
+      "chinese": "后悔莫及",
+      "pinyin": "hòu huǐ mò jí",
+      "english": "Too late to regret",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l3_p05",
+      "chinese": "把握机会",
+      "pinyin": "bǎ wò jī huì",
+      "english": "To seize an opportunity",
+      "part_of_speech": "phrase"
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "人生中面临选择时，既要考虑现实，也不能完全放弃理想。",
+      "pinyin": "Rén shēng zhōng miàn lín xuǎn zé shí, jì yào kǎo lǜ xiàn shí, yě bù néng wán quán fàng qì lǐ xiǎng.",
+      "english": "When facing choices in life, you must consider reality while also not completely giving up on your ideals."
+    },
+    {
+      "chinese": "既然已经做了决定，就不要再犹豫，勇敢地走下去。",
+      "pinyin": "Jì rán yǐ jīng zuò le jué dìng, jiù bú yào zài yóu yù, yǒng gǎn de zǒu xià qù.",
+      "english": "Since you've already made the decision, don't hesitate anymore — move forward bravely."
+    },
+    {
+      "chinese": "我宁可放弃高薪的待遇，也不愿意放弃自己的目标和理想。",
+      "pinyin": "Wǒ nìng kě fàng qì gāo xīn de dài yù, yě bú yuàn yì fàng qì zì jǐ de mù biāo hé lǐ xiǎng.",
+      "english": "I would rather give up a high salary and good benefits than give up my goals and ideals."
+    },
+    {
+      "chinese": "好的机会不等人，错过了很可能后悔莫及。",
+      "pinyin": "Hǎo de jī huì bù děng rén, cuò guò le hěn kě néng hòu huǐ mò jí.",
+      "english": "Good opportunities wait for no one — miss them and you may regret it for the rest of your life."
+    },
+    {
+      "chinese": "尽管前途未知，他还是选择了自己喜欢的行业，坚持着那份勇气。",
+      "pinyin": "Jǐn guǎn qián tú wèi zhī, tā hái shì xuǎn zé le zì jǐ xǐ huān de háng yè, jiān chí zhe nà fèn yǒng qì.",
+      "english": "Even though the future was uncertain, he still chose the industry he loved, holding on to that courage."
+    },
+    {
+      "chinese": "为了选择哪条人生道路发愁是正常的，但不能一直犹豫不决。",
+      "pinyin": "Wèi le xuǎn zé nǎ tiáo rén shēng dào lù fā chóu shì zhèng cháng de, dàn bù néng yī zhí yóu yù bù jué.",
+      "english": "It is normal to worry about which path in life to choose, but you cannot remain indecisive forever."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "既然…就 — Since (that's the case)…then",
+      "explanation": "既然…就 is used when acknowledging an established fact or situation and drawing a logical conclusion from it. Structure: 既然 + [acknowledged fact/condition], (Subject +) 就 + [logical conclusion/action]. The first clause introduces something already true or decided; the second clause presents what naturally follows. This pattern is stronger than 因为…所以 because it implies the situation is already fixed and the speaker is simply acting on it. Example: 既然你已经做了决定，就不要再犹豫了。(Since you've already made the decision, don't hesitate anymore.)",
+      "examples": [
+        {
+          "chinese": "既然你已经做了决定，就不要再犹豫了。",
+          "pinyin": "Jì rán nǐ yǐ jīng zuò le jué dìng, jiù bú yào zài yóu yù le.",
+          "english": "Since you've already made the decision, don't hesitate anymore."
+        },
+        {
+          "chinese": "既然这份工作的待遇那么好，你就应该好好珍惜。",
+          "pinyin": "Jì rán zhè fèn gōng zuò de dài yù nà me hǎo, nǐ jiù yīng gāi hǎo hǎo zhēn xī.",
+          "english": "Since this job's benefits are so good, you should treasure it."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 你已经下定了目标，就应该全力以赴，不要半途放弃。",
+          "type": "multiple_choice",
+          "correct": "既然",
+          "options": ["既然", "虽然", "尽管", "要是"],
+          "option_pinyin": ["jì rán", "suī rán", "jǐn guǎn", "yào shì"],
+          "word_hints": {
+            "全力以赴": "to give one's all",
+            "半途": "halfway"
+          }
+        },
+        {
+          "question": "既然他已经后悔了，_____ 给他一次改正的机会吧。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["就", "才", "都", "还"],
+          "option_pinyin": ["jiù", "cái", "dōu", "hái"],
+          "word_hints": {
+            "改正": "to correct; to make amends"
+          }
+        },
+        {
+          "question": "既然这次机会这么难得，_____ 不要犹豫，赶快把握住。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["就", "也", "却", "但"],
+          "option_pinyin": ["jiù", "yě", "què", "dàn"],
+          "word_hints": {
+            "难得": "rare; hard to come by",
+            "把握": "to grasp; to seize"
+          }
+        },
+        {
+          "question": "Which sentence uses 既然…就 correctly?",
+          "type": "multiple_choice",
+          "correct": "既然你不喜欢这份工作，就早点换一个吧。",
+          "options": [
+            "既然你不喜欢这份工作，就早点换一个吧。",
+            "既然你不喜欢这份工作，但还是继续做下去吧。",
+            "虽然你不喜欢这份工作，就早点换一个吧。",
+            "既然你不喜欢这份工作，才换一个吧。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "既然你选择了坚持理想，_____ 要做好面对困难的准备。",
+          "type": "multiple_choice",
+          "correct": "就",
+          "options": ["就", "才", "虽", "连"],
+          "option_pinyin": ["jiù", "cái", "suī", "lián"],
+          "word_hints": {
+            "面对": "to face",
+            "准备": "to prepare; preparation"
+          }
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "宁可…也不 — Would rather…than",
+      "explanation": "宁可…也不 expresses a preference for one option over another, even if the preferred option involves some sacrifice or difficulty. Structure: Subject + 宁可 + [preferred but possibly harder option] + 也不 + [rejected option]. The speaker actively chooses hardship over an easier but undesirable alternative. Example: 我宁可放弃高薪工作，也不愿意放弃自己的理想。(I would rather give up a high-paying job than give up my ideals.)",
+      "examples": [
+        {
+          "chinese": "我宁可放弃高薪工作，也不愿意放弃自己的理想。",
+          "pinyin": "Wǒ nìng kě fàng qì gāo xīn gōng zuò, yě bú yuàn yì fàng qì zì jǐ de lǐ xiǎng.",
+          "english": "I would rather give up a high-paying job than give up my ideals."
+        },
+        {
+          "chinese": "她宁可每天发愁，也不愿意在一份没有意义的工作上浪费时间。",
+          "pinyin": "Tā nìng kě měi tiān fā chóu, yě bú yuàn yì zài yī fèn méi yǒu yì yì de gōng zuò shàng làng fèi shí jiān.",
+          "english": "She would rather worry every day than waste her time on a meaningless job."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "他宁可选择待遇差的工作，_____ 愿意在不稳定的公司受委屈。",
+          "type": "multiple_choice",
+          "correct": "也不",
+          "options": ["也不", "也就", "才不", "还不"],
+          "option_pinyin": ["yě bù", "yě jiù", "cái bù", "hái bù"],
+          "word_hints": {
+            "受委屈": "to be treated unfairly; to feel wronged"
+          }
+        },
+        {
+          "question": "_____ 后悔莫及，也不愿意在做决定前再多想一想，真是太冲动了。",
+          "type": "multiple_choice",
+          "correct": "宁可",
+          "options": ["宁可", "既然", "尽管", "虽然"],
+          "option_pinyin": ["nìng kě", "jì rán", "jǐn guǎn", "suī rán"],
+          "word_hints": {
+            "冲动": "impulsive"
+          }
+        },
+        {
+          "question": "Which sentence uses 宁可…也不 correctly?",
+          "type": "multiple_choice",
+          "correct": "我宁可努力坚持，也不轻易放弃目标。",
+          "options": [
+            "我宁可努力坚持，也不轻易放弃目标。",
+            "我宁可努力坚持，所以不轻易放弃目标。",
+            "我宁可努力坚持，就不轻易放弃目标。",
+            "我宁可努力坚持，但不轻易放弃目标。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "她宁可一个人发愁，_____ 跟别人分享自己的烦恼。",
+          "type": "multiple_choice",
+          "correct": "也不愿意",
+          "options": ["也不愿意", "就愿意", "也愿意", "才愿意"],
+          "option_pinyin": ["yě bú yuàn yì", "jiù yuàn yì", "yě yuàn yì", "cái yuàn yì"],
+          "word_hints": {
+            "烦恼": "worries; troubles"
+          }
+        },
+        {
+          "question": "他宁可放弃成功的机会，_____ 违背自己的良心。",
+          "type": "multiple_choice",
+          "correct": "也不",
+          "options": ["也不", "不也", "也就", "就不"],
+          "option_pinyin": ["yě bù", "bù yě", "yě jiù", "jiù bù"],
+          "word_hints": {
+            "违背": "to go against; to violate",
+            "良心": "conscience"
+          }
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "尽管…还是/仍然 — Even though…still",
+      "explanation": "尽管…还是/仍然 introduces a strong concession and emphasizes that the result occurs despite the concession. Structure: 尽管 + [strong concession], Subject + 还是/仍然 + [result that happens anyway]. Unlike 虽然, which is neutral, 尽管 often implies the concession is more extreme or unexpected — making the persistence of the result even more striking. Example: 尽管前途未知，他还是选择了自己喜欢的行业。(Even though the future was uncertain, he still chose the industry he loved.)",
+      "examples": [
+        {
+          "chinese": "尽管前途未知，他还是选择了自己喜欢的行业。",
+          "pinyin": "Jǐn guǎn qián tú wèi zhī, tā hái shì xuǎn zé le zì jǐ xǐ huān de háng yè.",
+          "english": "Even though the future was uncertain, he still chose the industry he loved."
+        },
+        {
+          "chinese": "尽管家人反对，她仍然坚持追求自己的目标。",
+          "pinyin": "Jǐn guǎn jiā rén fǎn duì, tā réng rán jiān chí zhuī qiú zì jǐ de mù biāo.",
+          "english": "Even though her family objected, she still persisted in pursuing her goals."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "_____ 这份工作的待遇不高，他还是决定留下来，因为他热爱这个行业。",
+          "type": "multiple_choice",
+          "correct": "尽管",
+          "options": ["尽管", "既然", "宁可", "要不然"],
+          "option_pinyin": ["jǐn guǎn", "jì rán", "nìng kě", "yào bù rán"],
+          "word_hints": {
+            "热爱": "to love deeply; to be passionate about"
+          }
+        },
+        {
+          "question": "尽管她已经后悔了，_____ 没有勇气重新做出选择。",
+          "type": "multiple_choice",
+          "correct": "还是",
+          "options": ["还是", "就是", "既然", "才是"],
+          "option_pinyin": ["hái shì", "jiù shì", "jì rán", "cái shì"],
+          "word_hints": {
+            "重新": "again; anew"
+          }
+        },
+        {
+          "question": "尽管成功的道路上充满了挑战，他仍然_____ 坚持下去的信心。",
+          "type": "multiple_choice",
+          "correct": "保持着",
+          "options": ["保持着", "放弃了", "失去了", "结束了"],
+          "option_pinyin": ["bǎo chí zhe", "fàng qì le", "shī qù le", "jié shù le"],
+          "word_hints": {
+            "充满": "full of; filled with",
+            "挑战": "challenge"
+          }
+        },
+        {
+          "question": "Which sentence uses 尽管…还是 correctly?",
+          "type": "multiple_choice",
+          "correct": "尽管她很犹豫，还是做出了那个艰难的选择。",
+          "options": [
+            "尽管她很犹豫，还是做出了那个艰难的选择。",
+            "尽管她很犹豫，才做出了那个艰难的选择。",
+            "尽管她很犹豫，所以做出了那个艰难的选择。",
+            "尽管她很犹豫，就不做那个艰难的选择。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {
+            "艰难": "difficult; hard"
+          }
+        },
+        {
+          "question": "尽管他为未来的目标发愁了很久，_____ 没有选择放弃。",
+          "type": "multiple_choice",
+          "correct": "仍然",
+          "options": ["仍然", "竟然", "偶尔", "忽然"],
+          "option_pinyin": ["réng rán", "jìng rán", "ǒu ěr", "hū rán"],
+          "word_hints": {}
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "title": "纸上谈兵 — The Danger of Theory Without Practice",
+      "title_chinese": "纸上谈兵",
+      "content": "During the Warring States Period (战国时代), the state of Zhao (赵国) had a general named Zhao She (赵奢) who was a brilliant military strategist. His son, Zhao Kuo (赵括), grew up reading every book on military theory and could discuss battle tactics endlessly. He could defeat his own father in theoretical debate — and yet he had never actually fought in a battle.\n\nIn 260 BC, Zhao Kuo was put in command of 400,000 soldiers at the Battle of Changping (长平之战) against the state of Qin (秦国). Confident in his book knowledge, he charged into battle using textbook strategies — but real warfare demanded quick judgment, experience, and adaptability that no book could teach. The result was catastrophic: almost all 400,000 soldiers were killed or surrendered. It was one of the deadliest battles in Chinese history.\n\nThe idiom 纸上谈兵 (literally: 'talking strategy on paper') was born from this story. It describes someone who can theorize brilliantly but fails completely when faced with real-world challenges.\n\nThis lesson applies directly to facing life's choices: it is not enough to plan, analyze, and deliberate endlessly. At some point, you must act. The only way to truly know if a choice is right is to live it. Even a well-thought-out choice may fail — and an impulsive one may succeed. What matters is having the courage to move from theory into action, and to adjust as you go.",
+      "idioms": [
+        {
+          "chinese": "纸上谈兵",
+          "pinyin": "zhǐ shàng tán bīng",
+          "english": "Armchair strategy; to theorize without practical experience"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which word means 'to hesitate or waver between options'?",
+      "type": "multiple_choice",
+      "correct": "犹豫",
+      "options": ["犹豫", "发愁", "坚持", "放弃"],
+      "word_hints": {
+        "犹豫": "yóu yù",
+        "发愁": "fā chóu",
+        "坚持": "jiān chí",
+        "放弃": "fàng qì"
+      }
+    },
+    {
+      "question": "Complete the sentence: 既然你已经知道答案了，_____ 直接说出来吧。",
+      "type": "multiple_choice",
+      "correct": "就",
+      "options": ["就", "才", "还", "都"],
+      "word_hints": {
+        "答案": "dá àn — answer"
+      }
+    },
+    {
+      "question": "What does 后悔莫及 mean?",
+      "type": "multiple_choice",
+      "correct": "Too late to regret",
+      "options": ["Too late to regret", "To regret deeply", "A chance to start over", "To hesitate too much"],
+      "word_hints": {
+        "后悔莫及": "hòu huǐ mò jí"
+      }
+    },
+    {
+      "question": "Which sentence uses 宁可…也不 correctly?",
+      "type": "multiple_choice",
+      "correct": "他宁可失去稳定的工作，也不放弃自己的理想。",
+      "options": [
+        "他宁可失去稳定的工作，也不放弃自己的理想。",
+        "他宁可失去稳定的工作，所以放弃自己的理想。",
+        "他宁可失去稳定的工作，就放弃自己的理想。",
+        "既然失去稳定的工作，他也不放弃理想。"
+      ],
+      "word_hints": {
+        "宁可": "nìng kě — would rather",
+        "稳定": "wěn dìng — stable"
+      }
+    },
+    {
+      "question": "What is the historical lesson behind the idiom 纸上谈兵?",
+      "type": "multiple_choice",
+      "correct": "Zhao Kuo was skilled in military theory but failed in real battle, losing 400,000 soldiers.",
+      "options": [
+        "Zhao Kuo was skilled in military theory but failed in real battle, losing 400,000 soldiers.",
+        "A general who refused to read military books eventually won a great battle.",
+        "A student who studied hard succeeded in becoming a top official.",
+        "An emperor who ignored his generals lost his kingdom."
+      ],
+      "word_hints": {}
+    },
+    {
+      "question": "尽管她非常发愁，_____ 没有放弃坚持自己的目标。",
+      "type": "multiple_choice",
+      "correct": "还是",
+      "options": ["还是", "既然", "宁可", "所以"],
+      "word_hints": {
+        "发愁": "fā chóu — to worry",
+        "放弃": "fàng qì — to give up"
+      }
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Should I Change Jobs?",
+      "title_chinese": "要不要换工作",
+      "speakers": {
+        "A": { "name": "加缪", "role": "philosophical friend", "gender": "male" },
+        "B": { "name": "但丁", "role": "cautious friend", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "B",
+          "chinese": "我现在的工作很稳定，待遇也不错，但是一点都不是我想做的事情。",
+          "pinyin": "Wǒ xiàn zài de gōng zuò hěn wěn dìng, dài yù yě bú cuò, dàn shì yī diǎn dōu bú shì wǒ xiǎng zuò de shì qíng.",
+          "english": "My current job is very stable and the benefits are good, but it's not at all what I want to do."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你已经为这个问题发愁多久了？",
+          "pinyin": "Nǐ yǐ jīng wèi zhè ge wèn tí fā chóu duō jiǔ le?",
+          "english": "How long have you been worrying about this?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "快两年了。我一直犹豫，不知道该放弃稳定还是坚持追求自己的理想。",
+          "pinyin": "Kuài liǎng nián le. Wǒ yī zhí yóu yù, bù zhī dào gāi fàng qì wěn dìng hái shì jiān chí zhuī qiú zì jǐ de lǐ xiǎng.",
+          "english": "Almost two years. I keep hesitating — I don't know whether to give up stability or keep pursuing my ideals."
+        },
+        {
+          "speaker": "A",
+          "chinese": "我宁可选择一份有意义的工作，也不愿意在一份让自己后悔的工作上虚度时光。",
+          "pinyin": "Wǒ nìng kě xuǎn zé yī fèn yǒu yì yì de gōng zuò, yě bú yuàn yì zài yī fèn ràng zì jǐ hòu huǐ de gōng zuò shàng xū dù shí guāng.",
+          "english": "I would rather choose a meaningful job than waste my time in a job that I will come to regret."
+        },
+        {
+          "speaker": "B",
+          "chinese": "但我怕万一失败了，就真的后悔莫及了。",
+          "pinyin": "Dàn wǒ pà wàn yī shī bài le, jiù zhēn de hòu huǐ mò jí le.",
+          "english": "But I'm afraid that if I fail, it will be too late to regret it."
+        },
+        {
+          "speaker": "A",
+          "chinese": "人生最大的遗憾，不是失败，而是从来没有去尝试。要有勇气，把握机会。",
+          "pinyin": "Rén shēng zuì dà de yí hàn, bú shì shī bài, ér shì cóng lái méi yǒu qù cháng shì. Yào yǒu yǒng qì, bǎ wò jī huì.",
+          "english": "The greatest regret in life is not failure, but never having tried. Have courage and seize the opportunity."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Holding On to Ideals",
+      "title_chinese": "坚守理想",
+      "speakers": {
+        "A": { "name": "加缪", "role": "philosophical writer", "gender": "male" },
+        "B": { "name": "鲁迅", "role": "sharp realist", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你觉得，一个人应该为了现实而妥协，还是坚持理想？",
+          "pinyin": "Nǐ jué de, yī gè rén yīng gāi wèi le xiàn shí ér tuǒ xié, hái shì jiān chí lǐ xiǎng?",
+          "english": "Do you think a person should compromise for the sake of reality, or hold on to their ideals?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "现实是不能忽视的。但一个人若没有理想，便只是在活着，而不是在生活。",
+          "pinyin": "Xiàn shí shì bù néng hū shì de. Dàn yī gè rén ruò méi yǒu lǐ xiǎng, biàn zhǐ shì zài huó zhe, ér bú shì zài shēng huó.",
+          "english": "Reality cannot be ignored. But a person without ideals is merely existing, not truly living."
+        },
+        {
+          "speaker": "A",
+          "chinese": "说得好。既然我们都知道理想的重要，就更应该为它而坚持，哪怕前途未知。",
+          "pinyin": "Shuō de hǎo. Jì rán wǒ men dōu zhī dào lǐ xiǎng de zhòng yào, jiù gèng yīng gāi wèi tā ér jiān chí, nǎ pà qián tú wèi zhī.",
+          "english": "Well said. Since we all know how important ideals are, we should persevere for them all the more — even if the future is uncertain."
+        },
+        {
+          "speaker": "B",
+          "chinese": "不过，现实和理想从来不是完全对立的。聪明的人知道如何在两者之间找到平衡。",
+          "pinyin": "Bú guò, xiàn shí hé lǐ xiǎng cóng lái bú shì wán quán duì lì de. Cōng míng de rén zhī dào rú hé zài liǎng zhě zhī jiān zhǎo dào píng héng.",
+          "english": "However, reality and ideals are never completely opposed. Wise people know how to find balance between the two."
+        },
+        {
+          "speaker": "A",
+          "chinese": "你说得有道理。也许坚持理想，并不意味着忽视现实，而是在现实中找到通向理想的路。",
+          "pinyin": "Nǐ shuō de yǒu dào lǐ. Yě xǔ jiān chí lǐ xiǎng, bìng bù yì wèi zhe hū shì xiàn shí, ér shì zài xiàn shí zhōng zhǎo dào tōng xiàng lǐ xiǎng de lù.",
+          "english": "You make a good point. Perhaps holding onto ideals doesn't mean ignoring reality, but finding a path toward your ideals within reality."
+        },
+        {
+          "speaker": "B",
+          "chinese": "正是。既然人生充满选择，就要在每一次选择中，既不丢失自己，也不脱离现实。",
+          "pinyin": "Zhèng shì. Jì rán rén shēng chōng mǎn xuǎn zé, jiù yào zài měi yī cì xuǎn zé zhōng, jì bù diū shī zì jǐ, yě bù tuō lí xiàn shí.",
+          "english": "Exactly. Since life is full of choices, in each choice you must neither lose yourself nor lose touch with reality."
+        }
+      ]
+    }
+  ]
+}

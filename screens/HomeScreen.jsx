@@ -122,6 +122,22 @@ const LESSONS_BY_LEVEL = {
     { id: 14, title: 'Time & Life Stages',      topic_chinese: '时间与人生阶段' },
     { id: 15, title: 'Achievement & Success',   topic_chinese: '成就与成功' },
   ],
+  hsk6: [
+    { id: 1,  title: "Love's Small Gestures",        topic_chinese: '爱的细节（一）' },
+    { id: 2,  title: 'The Language of Love',          topic_chinese: '爱的细节（二）' },
+    { id: 3,  title: "Facing Life's Choices",         topic_chinese: '人生有选择（一）' },
+    { id: 4,  title: 'Everything Can Change',         topic_chinese: '一切皆可改变' },
+    { id: 5,  title: 'The Art of Debate',             topic_chinese: '争论的奇迹（一）' },
+    { id: 6,  title: 'The Power of Words in Debate',  topic_chinese: '争论的奇迹（二）' },
+    { id: 7,  title: 'Sleep and the Biological Clock',topic_chinese: '闹钟的危害（一）' },
+    { id: 8,  title: 'Technology and Wellbeing',      topic_chinese: '闹钟的危害（二）' },
+    { id: 9,  title: 'WeChat Goes Global',            topic_chinese: '海外用户玩微信（一）' },
+    { id: 10, title: 'Digital China',                 topic_chinese: '数字中国的影响' },
+    { id: 11, title: 'Body Weight and Diet',          topic_chinese: '体重与节食（一）' },
+    { id: 12, title: 'The Science of Healthy Eating', topic_chinese: '科学饮食与健康' },
+    { id: 13, title: 'What Is Abstract Art?',         topic_chinese: '抽象艺术美不美（一）' },
+    { id: 14, title: 'Beauty and Aesthetic Perception',topic_chinese: '审美与艺术表达' },
+  ],
 };
 
 
@@ -240,10 +256,6 @@ export default function HomeScreen({
   const canChangeLevel = levelState.levelSetBy === 'manual' && !levelState.levelChangedUsed;
 
   const handleLevelPress = (level) => {
-    if (level.id === 'hsk6') {
-      alert('🎓 Level 6: Advanced\n\nThis advanced level is coming soon!\nKeep working through the earlier levels. 加油！');
-      return;
-    }
     const isLocked = !levelState.unlockedLevels.includes(level.id);
     if (isLocked) {
       const quest = UNLOCK_QUESTS[level.id];
@@ -470,8 +482,8 @@ export default function HomeScreen({
           <Text style={styles.sectionTitle}>🗺 Chinese Journey</Text>
           {LEVEL_CONFIG.map((level, index) => {
             const isCurrent = level.id === result.recommendedLevel;
-            const isComingSoon = level.id === 'hsk6';
-            const isLocked = isComingSoon || !levelState.unlockedLevels.includes(level.id);
+            const isComingSoon = false;
+            const isLocked = !levelState.unlockedLevels.includes(level.id);
             const isCompleted = levelState.completedLevels.includes(level.id);
             const isLast = index === LEVEL_CONFIG.length - 1;
             const dotColor = isCompleted ? SUCCESS : isLocked ? SLATE_TEAL : level.color;

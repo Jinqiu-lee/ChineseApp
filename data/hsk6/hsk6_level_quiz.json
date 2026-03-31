@@ -1,0 +1,476 @@
+{
+  "level": "hsk6",
+  "quiz_type": "level_quiz",
+  "title": "HSK 6 Level Quiz",
+  "description": "Test your mastery of advanced Chinese — vocabulary, grammar, idioms, and cultural knowledge from HSK 6.",
+  "passing_score": 60,
+  "total_questions": 40,
+  "format": "multiple_choice",
+  "questions": [
+    {
+      "id": "hsk6_q01",
+      "type": "multiple_choice",
+      "question": "Which word means 'overseas / abroad'?",
+      "correct": "海外",
+      "options": ["海外", "境内", "国内", "沿海"],
+      "word_hints": { "海外": "hǎi wài", "境内": "jìng nèi", "国内": "guó nèi", "沿海": "yán hǎi" },
+      "difficulty": "easy"
+    },
+    {
+      "id": "hsk6_q02",
+      "type": "multiple_choice",
+      "question": "Which sentence uses 居然 correctly?",
+      "correct": "他居然在考试前一天才开始复习，真让人意外。",
+      "options": [
+        "他居然在考试前一天才开始复习，真让人意外。",
+        "居然他每天努力学习。",
+        "他居然因为很聪明，所以成功了。",
+        "居然是，他去了北京。"
+      ],
+      "word_hints": {},
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q03",
+      "type": "multiple_choice",
+      "question": "What does 细节 mean?",
+      "correct": "detail",
+      "options": ["detail", "summary", "outline", "example"],
+      "word_hints": { "细节": "xì jié" },
+      "difficulty": "easy"
+    },
+    {
+      "id": "hsk6_q04",
+      "type": "multiple_choice",
+      "question": "既然…就 is used to express:",
+      "correct": "Given that X is already the case, Y should follow",
+      "options": [
+        "Given that X is already the case, Y should follow",
+        "Although X, still Y",
+        "Not only X, but also Y",
+        "If X were to happen, then Y"
+      ],
+      "word_hints": {},
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q05",
+      "type": "multiple_choice",
+      "question": "Which word means 'to gradually increase'?",
+      "correct": "逐渐",
+      "options": ["逐渐", "突然", "立刻", "偶尔"],
+      "word_hints": { "逐渐": "zhú jiàn", "突然": "tū rán", "立刻": "lì kè", "偶尔": "ǒu ěr" },
+      "difficulty": "easy"
+    },
+    {
+      "id": "hsk6_q06",
+      "type": "multiple_choice",
+      "question": "What does 朝三暮四 mean?",
+      "correct": "Fickle, always changing one's mind",
+      "options": [
+        "Fickle, always changing one's mind",
+        "Working hard from morning to night",
+        "Planning ahead for the future",
+        "Changing from bad to good"
+      ],
+      "word_hints": { "朝三暮四": "zhāo sān mù sì" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q07",
+      "type": "multiple_choice",
+      "question": "Which sentence uses 宁可…也不 correctly?",
+      "correct": "她宁可步行上班，也不坐拥挤的公交。",
+      "options": [
+        "她宁可步行上班，也不坐拥挤的公交。",
+        "宁可他去了，也不因为很累。",
+        "他宁可，虽然很累，也不回家。",
+        "宁可她学习，也不因为很晚了。"
+      ],
+      "word_hints": {},
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q08",
+      "type": "multiple_choice",
+      "question": "Which word means 'to debate / debate'?",
+      "correct": "争论",
+      "options": ["争论", "讨论", "建议", "比较"],
+      "word_hints": { "争论": "zhēng lùn", "讨论": "tǎo lùn", "建议": "jiàn yì", "比较": "bǐ jiào" },
+      "difficulty": "easy"
+    },
+    {
+      "id": "hsk6_q09",
+      "type": "multiple_choice",
+      "question": "What does 毕竟 mean?",
+      "correct": "after all, in the end",
+      "options": ["after all, in the end", "however, but", "therefore", "moreover"],
+      "word_hints": { "毕竟": "bì jìng" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q10",
+      "type": "multiple_choice",
+      "question": "Which sentence uses 或许 correctly?",
+      "correct": "或许他明天会来，但我不确定。",
+      "options": [
+        "或许他明天会来，但我不确定。",
+        "或许因为他来了，所以很开心。",
+        "他或许，虽然努力，但是失败了。",
+        "或许是，他去了北京。"
+      ],
+      "word_hints": {},
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q11",
+      "type": "multiple_choice",
+      "question": "What does 危害 mean?",
+      "correct": "harm, hazard",
+      "options": ["harm, hazard", "benefit, advantage", "change, transformation", "influence, effect"],
+      "word_hints": { "危害": "wēi hài" },
+      "difficulty": "easy"
+    },
+    {
+      "id": "hsk6_q12",
+      "type": "multiple_choice",
+      "question": "就算…也 is best translated as:",
+      "correct": "Even if … still …",
+      "options": [
+        "Even if … still …",
+        "Not only … but also …",
+        "Given that … then …",
+        "Rather than … better to …"
+      ],
+      "word_hints": {},
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q13",
+      "type": "multiple_choice",
+      "question": "Which word means 'biological clock'?",
+      "correct": "生物钟",
+      "options": ["生物钟", "时间表", "日历", "作息时间"],
+      "word_hints": { "生物钟": "shēng wù zhōng", "时间表": "shí jiān biǎo", "日历": "rì lì", "作息时间": "zuò xī shí jiān" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q14",
+      "type": "multiple_choice",
+      "question": "Which sentence uses 反而 correctly?",
+      "correct": "他休息了一天，反而觉得更累了。",
+      "options": [
+        "他休息了一天，反而觉得更累了。",
+        "反而他很努力，所以成功了。",
+        "他反而，因为很忙，没有来。",
+        "反而是，他去了上海。"
+      ],
+      "word_hints": {},
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q15",
+      "type": "multiple_choice",
+      "question": "Which is the correct difference between 逐步 and 逐渐?",
+      "correct": "逐步 implies deliberate steps; 逐渐 implies natural gradual change",
+      "options": [
+        "逐步 implies deliberate steps; 逐渐 implies natural gradual change",
+        "逐步 is faster; 逐渐 is slower",
+        "逐步 is for things; 逐渐 is for people",
+        "They are completely interchangeable in all contexts"
+      ],
+      "word_hints": { "逐步": "zhú bù", "逐渐": "zhú jiàn" },
+      "difficulty": "hard"
+    },
+    {
+      "id": "hsk6_q16",
+      "type": "multiple_choice",
+      "question": "What does 传播 mean?",
+      "correct": "to spread, disseminate",
+      "options": ["to spread, disseminate", "to block, stop", "to receive, accept", "to create, produce"],
+      "word_hints": { "传播": "chuán bō" },
+      "difficulty": "easy"
+    },
+    {
+      "id": "hsk6_q17",
+      "type": "multiple_choice",
+      "question": "What does 别样鲁迅 (a different side of Lu Xun) refer to?",
+      "correct": "Lu Xun's personal life, humor, and warmth beyond his serious literary image",
+      "options": [
+        "Lu Xun's personal life, humor, and warmth beyond his serious literary image",
+        "Lu Xun's political activism",
+        "Lu Xun's scientific research",
+        "Lu Xun's foreign travel experiences"
+      ],
+      "word_hints": {},
+      "difficulty": "hard"
+    },
+    {
+      "id": "hsk6_q18",
+      "type": "multiple_choice",
+      "question": "Which word means 'platform (digital)'?",
+      "correct": "平台",
+      "options": ["平台", "网站", "软件", "频道"],
+      "word_hints": { "平台": "píng tái", "网站": "wǎng zhàn", "软件": "ruǎn jiàn", "频道": "pín dào" },
+      "difficulty": "easy"
+    },
+    {
+      "id": "hsk6_q19",
+      "type": "multiple_choice",
+      "question": "不仅…而且 is best used when:",
+      "correct": "Adding a further positive or extending point to the first",
+      "options": [
+        "Adding a further positive or extending point to the first",
+        "Expressing a contrast between two ideas",
+        "Showing a condition and its result",
+        "Expressing a concession"
+      ],
+      "word_hints": {},
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q20",
+      "type": "multiple_choice",
+      "question": "What does 究竟 add to a question?",
+      "correct": "Emphasis — seeking the true or precise answer",
+      "options": [
+        "Emphasis — seeking the true or precise answer",
+        "Politeness",
+        "Surprise",
+        "Regret"
+      ],
+      "word_hints": { "究竟": "jiū jìng" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q21",
+      "type": "multiple_choice",
+      "question": "What does 体重 mean?",
+      "correct": "body weight",
+      "options": ["body weight", "height", "age", "physical strength"],
+      "word_hints": { "体重": "tǐ zhòng" },
+      "difficulty": "easy"
+    },
+    {
+      "id": "hsk6_q22",
+      "type": "multiple_choice",
+      "question": "关键在于 is used to:",
+      "correct": "Highlight the most essential factor in a situation",
+      "options": [
+        "Highlight the most essential factor in a situation",
+        "Express contrast",
+        "Introduce a condition",
+        "Describe a sequence"
+      ],
+      "word_hints": {},
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q23",
+      "type": "multiple_choice",
+      "question": "What does 药食同源 mean?",
+      "correct": "Medicine and food share the same origin",
+      "options": [
+        "Medicine and food share the same origin",
+        "Eating too much causes illness",
+        "Food should always be natural",
+        "Vitamins replace real food"
+      ],
+      "word_hints": { "药食同源": "yào shí tóng yuán" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q24",
+      "type": "multiple_choice",
+      "question": "宁可…也不 expresses:",
+      "correct": "A preference — choosing one thing even at cost over another",
+      "options": [
+        "A preference — choosing one thing even at cost over another",
+        "A gradual change",
+        "A cause and effect",
+        "Surprise or unexpectedness"
+      ],
+      "word_hints": {},
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q25",
+      "type": "multiple_choice",
+      "question": "Which word means 'to digest / digestion'?",
+      "correct": "消化",
+      "options": ["消化", "代谢", "摄入", "营养"],
+      "word_hints": { "消化": "xiāo huà", "代谢": "dài xiè", "摄入": "shè rù", "营养": "yíng yǎng" },
+      "difficulty": "easy"
+    },
+    {
+      "id": "hsk6_q26",
+      "type": "multiple_choice",
+      "question": "What does 抽象 mean?",
+      "correct": "abstract",
+      "options": ["abstract", "concrete", "specific", "realistic"],
+      "word_hints": { "抽象": "chōu xiàng" },
+      "difficulty": "easy"
+    },
+    {
+      "id": "hsk6_q27",
+      "type": "multiple_choice",
+      "question": "在于 is used to say:",
+      "correct": "Where the essence or key of something lies",
+      "options": [
+        "Where the essence or key of something lies",
+        "The time something happens",
+        "A contrast between two things",
+        "A cause-and-effect relationship"
+      ],
+      "word_hints": {},
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q28",
+      "type": "multiple_choice",
+      "question": "所谓 can express:",
+      "correct": "A definition or gentle skepticism about a term",
+      "options": [
+        "A definition or gentle skepticism about a term",
+        "Only strong praise",
+        "A condition followed by result",
+        "Time sequence"
+      ],
+      "word_hints": { "所谓": "suǒ wèi" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q29",
+      "type": "multiple_choice",
+      "question": "In '这不过是一幅普通的画', 不过 means:",
+      "correct": "only / merely",
+      "options": ["only / merely", "however", "moreover", "due to"],
+      "word_hints": { "不过": "bú guò" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q30",
+      "type": "multiple_choice",
+      "question": "What is the main feature of Chinese ink painting (水墨画)?",
+      "correct": "Black ink on rice paper; blank space (留白) is meaningful",
+      "options": [
+        "Black ink on rice paper; blank space (留白) is meaningful",
+        "Bright colors depicting daily life",
+        "Abstract geometric shapes",
+        "Gold ink on silk"
+      ],
+      "word_hints": { "水墨画": "shuǐ mò huà", "留白": "liú bái" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q31",
+      "type": "multiple_choice",
+      "question": "以…为 means:",
+      "correct": "To take … as a standard, goal, or basis",
+      "options": [
+        "To take … as a standard, goal, or basis",
+        "To contrast two things",
+        "To cause something to happen",
+        "To describe a gradual change"
+      ],
+      "word_hints": {},
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q32",
+      "type": "multiple_choice",
+      "question": "正是 adds emphasis meaning:",
+      "correct": "It is precisely / exactly this",
+      "options": ["It is precisely / exactly this", "However", "Due to", "Furthermore"],
+      "word_hints": { "正是": "zhèng shì" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q33",
+      "type": "multiple_choice",
+      "question": "What does 共鸣 mean?",
+      "correct": "resonance, to resonate emotionally",
+      "options": ["resonance, to resonate emotionally", "conflict, disagreement", "surprise, shock", "confusion, misunderstanding"],
+      "word_hints": { "共鸣": "gòng míng" },
+      "difficulty": "easy"
+    },
+    {
+      "id": "hsk6_q34",
+      "type": "multiple_choice",
+      "question": "What are the 文房四宝 (four treasures of the study)?",
+      "correct": "Brush, ink, paper, inkstone",
+      "options": [
+        "Brush, ink, paper, inkstone",
+        "Canvas, paint, palette, brush",
+        "Pen, ink, silk, stamp",
+        "Brush, water, rice paper, pigment"
+      ],
+      "word_hints": { "文房四宝": "wén fáng sì bǎo" },
+      "difficulty": "hard"
+    },
+    {
+      "id": "hsk6_q35",
+      "type": "multiple_choice",
+      "question": "From the context of Chinese New Year culture, 除夕 refers to:",
+      "correct": "Chinese New Year's Eve",
+      "options": [
+        "Chinese New Year's Eve",
+        "The Lantern Festival",
+        "The Mid-Autumn Festival",
+        "The Dragon Boat Festival"
+      ],
+      "word_hints": { "除夕": "Chú xī" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q36",
+      "type": "multiple_choice",
+      "question": "What does 纸上谈兵 mean?",
+      "correct": "Armchair strategist — only theory, no practice",
+      "options": [
+        "Armchair strategist — only theory, no practice",
+        "Writing a letter to a soldier",
+        "Planning a military campaign carefully",
+        "Winning a battle with words"
+      ],
+      "word_hints": { "纸上谈兵": "zhǐ shàng tán bīng" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q37",
+      "type": "multiple_choice",
+      "question": "Which word means 'to transcend, to surpass'?",
+      "correct": "超越",
+      "options": ["超越", "超过", "经过", "跨越"],
+      "word_hints": { "超越": "chāo yuè", "超过": "chāo guò", "经过": "jīng guò", "跨越": "kuà yuè" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q38",
+      "type": "multiple_choice",
+      "question": "不仅如此 is closest in meaning to:",
+      "correct": "Furthermore / moreover",
+      "options": ["Furthermore / moreover", "However", "Although", "Because of this"],
+      "word_hints": { "不仅如此": "bù jǐn rú cǐ" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q39",
+      "type": "multiple_choice",
+      "question": "Which word means 'to immerse / immersion'?",
+      "correct": "沉浸",
+      "options": ["沉浸", "沉默", "沉重", "沉着"],
+      "word_hints": { "沉浸": "chén jìn", "沉默": "chén mò", "沉重": "chén zhòng", "沉着": "chén zhuó" },
+      "difficulty": "medium"
+    },
+    {
+      "id": "hsk6_q40",
+      "type": "multiple_choice",
+      "question": "Fill in: ___文化角度___，每个习俗都有其独特的历史渊源。",
+      "correct": "从…来看",
+      "options": ["从…来看", "以…为…", "关键在于", "正是…使"],
+      "word_hints": {},
+      "difficulty": "hard"
+    }
+  ]
+}

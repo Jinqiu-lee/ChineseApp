@@ -1,0 +1,590 @@
+{
+  "lesson": 9,
+  "level": 6,
+  "show_pinyin": false,
+  "pinyin_mode": "new_words_only",
+  "topic": "WeChat Goes Global",
+  "topic_chinese": "海外用户玩微信（一）",
+  "vocabulary": [
+    {
+      "id": "hsk6_l9_01",
+      "chinese": "海外",
+      "pinyin": "hǎi wài",
+      "english": "overseas, abroad",
+      "part_of_speech": "noun",
+      "example": "许多在海外生活的中国人都靠微信与家人保持联系。",
+      "translation": "Many Chinese living overseas rely on WeChat to stay in touch with their families."
+    },
+    {
+      "id": "hsk6_l9_02",
+      "chinese": "用户",
+      "pinyin": "yòng hù",
+      "english": "user (of software/app)",
+      "part_of_speech": "noun",
+      "example": "微信在全球的用户数量已经超过十亿。",
+      "translation": "WeChat's number of users worldwide has already exceeded one billion."
+    },
+    {
+      "id": "hsk6_l9_03",
+      "chinese": "传播",
+      "pinyin": "chuán bō",
+      "english": "to spread, disseminate",
+      "part_of_speech": "verb",
+      "example": "这款应用通过口耳相传迅速在全球传播开来。",
+      "translation": "This app spread rapidly around the world through word of mouth."
+    },
+    {
+      "id": "hsk6_l9_04",
+      "chinese": "软件",
+      "pinyin": "ruǎn jiàn",
+      "english": "software, application",
+      "part_of_speech": "noun",
+      "example": "智能手机上安装了各种各样的软件，方便人们的生活。",
+      "translation": "Smartphones have all kinds of software installed that make people's lives more convenient."
+    },
+    {
+      "id": "hsk6_l9_05",
+      "chinese": "功能",
+      "pinyin": "gōng néng",
+      "english": "function, feature",
+      "part_of_speech": "noun",
+      "example": "微信拥有通话、支付、购物等多种功能，深受用户喜爱。",
+      "translation": "WeChat has many functions including calls, payments, and shopping, and is deeply loved by users."
+    },
+    {
+      "id": "hsk6_l9_06",
+      "chinese": "便利",
+      "pinyin": "biàn lì",
+      "english": "convenient, handy",
+      "part_of_speech": "adjective",
+      "example": "即时通讯工具让远距离沟通变得更加便利。",
+      "translation": "Instant messaging tools make long-distance communication much more convenient."
+    },
+    {
+      "id": "hsk6_l9_07",
+      "chinese": "社交",
+      "pinyin": "shè jiāo",
+      "english": "social interaction; social",
+      "part_of_speech": "noun/adjective",
+      "example": "很多人每天都要花大量时间使用社交软件。",
+      "translation": "Many people spend a large amount of time every day using social apps."
+    },
+    {
+      "id": "hsk6_l9_08",
+      "chinese": "联系",
+      "pinyin": "lián xì",
+      "english": "to contact, keep in touch; contact",
+      "part_of_speech": "verb/noun",
+      "example": "出国后，他每周都通过视频通话与父母联系。",
+      "translation": "After going abroad, he keeps in touch with his parents every week via video call."
+    },
+    {
+      "id": "hsk6_l9_09",
+      "chinese": "平台",
+      "pinyin": "píng tái",
+      "english": "platform (digital/social)",
+      "part_of_speech": "noun",
+      "example": "微博和微信是中国最受欢迎的两个社交平台。",
+      "translation": "Weibo and WeChat are the two most popular social platforms in China."
+    },
+    {
+      "id": "hsk6_l9_10",
+      "chinese": "流行",
+      "pinyin": "liú xíng",
+      "english": "to be popular; popular, trendy",
+      "part_of_speech": "verb/adjective",
+      "example": "这款应用在年轻人中非常流行，几乎人手一个。",
+      "translation": "This app is very popular among young people — almost everyone has it."
+    },
+    {
+      "id": "hsk6_l9_11",
+      "chinese": "账号",
+      "pinyin": "zhàng hào",
+      "english": "account (user account)",
+      "part_of_speech": "noun",
+      "example": "要使用这个软件，首先需要注册一个账号。",
+      "translation": "To use this software, you first need to register an account."
+    },
+    {
+      "id": "hsk6_l9_12",
+      "chinese": "交流",
+      "pinyin": "jiāo liú",
+      "english": "to communicate, exchange; communication",
+      "part_of_speech": "verb/noun",
+      "example": "微信为不同国家的用户提供了跨文化交流的机会。",
+      "translation": "WeChat provides users from different countries with opportunities for cross-cultural exchange."
+    },
+    {
+      "id": "hsk6_l9_13",
+      "chinese": "随时",
+      "pinyin": "suí shí",
+      "english": "at any time, anytime",
+      "part_of_speech": "adverb",
+      "example": "有了手机，我们可以随时随地与朋友联系。",
+      "translation": "With a mobile phone, we can get in touch with friends anytime and anywhere."
+    },
+    {
+      "id": "hsk6_l9_14",
+      "chinese": "普及",
+      "pinyin": "pǔ jí",
+      "english": "to spread widely, popularize",
+      "part_of_speech": "verb",
+      "example": "智能手机的普及让移动应用的使用变得十分广泛。",
+      "translation": "The widespread adoption of smartphones has made mobile app usage very extensive."
+    },
+    {
+      "id": "hsk6_l9_15",
+      "chinese": "方便",
+      "pinyin": "fāng biàn",
+      "english": "convenient",
+      "part_of_speech": "adjective",
+      "example": "与打电话相比，发消息更加方便，也不会打扰对方。",
+      "translation": "Compared to making phone calls, sending messages is more convenient and won't disturb the other person."
+    },
+    {
+      "id": "hsk6_l9_p1",
+      "chinese": "随时联系",
+      "pinyin": "suí shí lián xì",
+      "english": "to stay in touch at any time",
+      "part_of_speech": "phrase",
+      "example": "微信让家人之间可以随时联系，不受地域限制。",
+      "translation": "WeChat allows family members to stay in touch at any time, regardless of geographical distance."
+    },
+    {
+      "id": "hsk6_l9_p2",
+      "chinese": "广泛传播",
+      "pinyin": "guǎng fàn chuán bō",
+      "english": "to spread widely",
+      "part_of_speech": "phrase",
+      "example": "这个消息通过社交媒体广泛传播，引起了很多人的关注。",
+      "translation": "This news spread widely through social media and attracted a lot of attention."
+    },
+    {
+      "id": "hsk6_l9_p3",
+      "chinese": "多种功能",
+      "pinyin": "duō zhǒng gōng néng",
+      "english": "multiple functions/features",
+      "part_of_speech": "phrase",
+      "example": "这款应用拥有多种功能，满足用户的不同需求。",
+      "translation": "This app has multiple functions to meet the different needs of users."
+    },
+    {
+      "id": "hsk6_l9_p4",
+      "chinese": "社交平台",
+      "pinyin": "shè jiāo píng tái",
+      "english": "social media platform",
+      "part_of_speech": "phrase",
+      "example": "她在多个社交平台上分享自己的日常生活。",
+      "translation": "She shares her daily life on multiple social media platforms."
+    },
+    {
+      "id": "hsk6_l9_p5",
+      "chinese": "用户数量",
+      "pinyin": "yòng hù shù liàng",
+      "english": "number of users",
+      "part_of_speech": "phrase",
+      "example": "微信的用户数量每年都在持续增长。",
+      "translation": "The number of WeChat users continues to grow every year."
+    }
+  ],
+  "key_sentences": [
+    {
+      "chinese": "许多在海外生活的华人把微信当作与家人保持联系的主要工具。",
+      "pinyin": "Xǔ duō zài hǎi wài shēng huó de huá rén bǎ Wēi xìn dàng zuò yǔ jiā rén bǎo chí lián xì de zhǔ yào gōng jù.",
+      "english": "Many overseas Chinese regard WeChat as the primary tool for staying in touch with family."
+    },
+    {
+      "chinese": "微信提供即时通讯、支付功能以及小程序等多种服务，深受用户喜爱。",
+      "pinyin": "Wēi xìn tí gōng jí shí tōng xùn、zhī fù gōng néng yǐ jí xiǎo chéng xù děng duō zhǒng fú wù，shēn shòu yòng hù xǐ ài.",
+      "english": "WeChat provides many services including instant messaging, payment functions, and mini-programs, which are deeply loved by users."
+    },
+    {
+      "chinese": "微信在海外迅速普及，从而帮助海外华人随时与家人交流。",
+      "pinyin": "Wēi xìn zài hǎi wài xùn sù pǔ jí，cóng ér bāng zhù hǎi wài huá rén suí shí yǔ jiā rén jiāo liú.",
+      "english": "WeChat spread rapidly overseas, thereby helping overseas Chinese communicate with their families at any time."
+    },
+    {
+      "chinese": "对于很多在外国生活的中国人来说，微信是日常生活中不可缺少的软件。",
+      "pinyin": "Duì yú hěn duō zài wài guó shēng huó de zhōng guó rén lái shuō，Wēi xìn shì rì cháng shēng huó zhōng bù kě quē shǎo de ruǎn jiàn.",
+      "english": "For many Chinese living abroad, WeChat is indispensable software in daily life."
+    },
+    {
+      "chinese": "这款应用因其便利的功能和简单的操作，在全球范围内广泛传播。",
+      "pinyin": "Zhè kuǎn yìng yòng yīn qí biàn lì de gōng néng hé jiǎn dān de cāo zuò，zài quán qiú fàn wéi nèi guǎng fàn chuán bō.",
+      "english": "This app has spread widely around the world due to its convenient features and simple operation."
+    },
+    {
+      "chinese": "无论身处哪个国家，用户都可以通过这个社交平台随时联系朋友和家人。",
+      "pinyin": "Wú lùn shēn chǔ nǎ gè guó jiā，yòng hù dōu kě yǐ tōng guò zhè gè shè jiāo píng tái suí shí lián xì péng yǒu hé jiā rén.",
+      "english": "No matter which country you are in, users can stay in touch with friends and family at any time through this social platform."
+    }
+  ],
+  "grammar_points": [
+    {
+      "number": 1,
+      "title": "以及 — As well as; and (formal listing)",
+      "explanation": "以及 is a formal conjunction used to connect words, phrases, or clauses in a list. It is more formal than 和 or 还有 and is commonly used in written Chinese. The structure is: A + 以及 + B (and possibly C). It often appears at the end of a list just before the final item, similar to 'as well as' in English. It can link nouns, verb phrases, or even clauses.",
+      "examples": [
+        {
+          "chinese": "微信提供即时通讯、支付功能以及小程序等多种服务。",
+          "pinyin": "Wēi xìn tí gōng jí shí tōng xùn、zhī fù gōng néng yǐ jí xiǎo chéng xù děng duō zhǒng fú wù.",
+          "english": "WeChat provides instant messaging, payment functions, as well as mini-programs and many other services."
+        },
+        {
+          "chinese": "这次会议讨论了环境保护、经济发展以及社会公平等重要问题。",
+          "pinyin": "Zhè cì huì yì tǎo lùn le huán jìng bǎo hù、jīng jì fā zhǎn yǐ jí shè huì gōng píng děng zhòng yào wèn tí.",
+          "english": "This conference discussed important issues including environmental protection, economic development, as well as social equity."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Choose the most appropriate word to complete the sentence: 这款软件具有通话、视频___文件传输等功能。",
+          "type": "multiple_choice",
+          "correct": "以及",
+          "options": ["以及", "虽然", "因为", "但是"],
+          "option_pinyin": ["yǐ jí", "suī rán", "yīn wèi", "dàn shì"],
+          "word_hints": { "具有": "to possess/have", "文件传输": "file transfer" }
+        },
+        {
+          "question": "Which sentence uses 以及 correctly?",
+          "type": "multiple_choice",
+          "correct": "这个平台吸引了来自中国、日本以及韩国的用户。",
+          "options": [
+            "这个平台吸引了来自中国、日本以及韩国的用户。",
+            "他以及不喜欢使用社交软件。",
+            "以及他每天都用微信联系家人。",
+            "我以及去过海外工作。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": { "吸引": "to attract", "平台": "platform" }
+        },
+        {
+          "question": "以及 is most similar in meaning to which of the following?",
+          "type": "multiple_choice",
+          "correct": "和（正式书面语）",
+          "options": ["和（正式书面语）", "但是", "因此", "虽然"],
+          "option_pinyin": ["hé (zhèng shì shū miàn yǔ)", "dàn shì", "yīn cǐ", "suī rán"],
+          "word_hints": { "书面语": "written language/formal style" }
+        },
+        {
+          "question": "Fill in the blank: 他的工作包括翻译文件、接待客户___处理日常事务。",
+          "type": "multiple_choice",
+          "correct": "以及",
+          "options": ["以及", "或者", "而且", "可是"],
+          "option_pinyin": ["yǐ jí", "huò zhě", "ér qiě", "kě shì"],
+          "word_hints": { "接待": "to receive/welcome", "日常事务": "daily affairs" }
+        },
+        {
+          "question": "Which best describes the usage of 以及?",
+          "type": "multiple_choice",
+          "correct": "It connects items in a formal list, similar to 'as well as' in English.",
+          "options": [
+            "It connects items in a formal list, similar to 'as well as' in English.",
+            "It expresses contrast between two ideas.",
+            "It introduces a cause-and-effect relationship.",
+            "It indicates a time sequence."
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "从而 — Thus; thereby; consequently",
+      "explanation": "从而 is a formal written conjunction that expresses a logical consequence. The structure is: [action/cause] + 从而 + [result/consequence]. It shows that the result follows naturally or logically from the preceding action. 从而 is more formal than 所以 and is mainly used in written Chinese, official reports, or academic language. It cannot begin a sentence on its own.",
+      "examples": [
+        {
+          "chinese": "微信在海外快速普及，从而帮助许多海外华人保持与家人的联系。",
+          "pinyin": "Wēi xìn zài hǎi wài kuài sù pǔ jí，cóng ér bāng zhù xǔ duō hǎi wài huá rén bǎo chí yǔ jiā rén de lián xì.",
+          "english": "WeChat spread rapidly overseas, thereby helping many overseas Chinese maintain contact with their families."
+        },
+        {
+          "chinese": "她坚持每天练习中文，从而大幅提高了自己的口语水平。",
+          "pinyin": "Tā jiān chí měi tiān liàn xí zhōng wén，cóng ér dà fú tí gāo le zì jǐ de kǒu yǔ shuǐ píng.",
+          "english": "She persisted in practicing Chinese every day, thereby greatly improving her spoken language level."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Choose the word that best completes the sentence: 这家公司改进了产品质量，___赢得了更多客户的信任。",
+          "type": "multiple_choice",
+          "correct": "从而",
+          "options": ["从而", "虽然", "但是", "或者"],
+          "option_pinyin": ["cóng ér", "suī rán", "dàn shì", "huò zhě"],
+          "word_hints": { "改进": "to improve", "赢得": "to win/gain" }
+        },
+        {
+          "question": "Which sentence uses 从而 correctly?",
+          "type": "multiple_choice",
+          "correct": "他努力学习，从而考上了理想的大学。",
+          "options": [
+            "他努力学习，从而考上了理想的大学。",
+            "从而他每天都很努力。",
+            "他从而喜欢打篮球。",
+            "从而这个问题很难解决。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": { "考上": "to pass an exam and get into (a school)" }
+        },
+        {
+          "question": "从而 is used to express which relationship between two clauses?",
+          "type": "multiple_choice",
+          "correct": "Cause leading to consequence",
+          "options": [
+            "Cause leading to consequence",
+            "Contrast between two ideas",
+            "Two simultaneous actions",
+            "A condition and its exception"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "Fill in the blank: 该公司加大了研发投入，___开发出了新一代产品。",
+          "type": "multiple_choice",
+          "correct": "从而",
+          "options": ["从而", "因为", "尽管", "然而"],
+          "option_pinyin": ["cóng ér", "yīn wèi", "jǐn guǎn", "rán ér"],
+          "word_hints": { "研发投入": "R&D investment", "开发": "to develop" }
+        },
+        {
+          "question": "Which pair of words is most similar in meaning to 从而?",
+          "type": "multiple_choice",
+          "correct": "因此 / 进而",
+          "options": ["因此 / 进而", "虽然 / 但是", "只要 / 就", "无论 / 都"],
+          "option_pinyin": ["yīn cǐ / jìn ér", "suī rán / dàn shì", "zhǐ yào / jiù", "wú lùn / dōu"],
+          "word_hints": {}
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "对于 — Regarding; for; as for",
+      "explanation": "对于 introduces the topic, subject, or person being discussed or evaluated. The structure is: 对于 + [topic/person] + [comment or verb phrase]. It is often followed by 来说 (for… / speaking from the perspective of…) to make the topic even more explicit, as in 对于…来说. 对于 is used to frame the subject of a discussion before giving an opinion or statement about it. It is more formal than 对 in many cases.",
+      "examples": [
+        {
+          "chinese": "对于很多在外国生活的中国人来说，微信是与家人保持联系的主要工具。",
+          "pinyin": "Duì yú hěn duō zài wài guó shēng huó de zhōng guó rén lái shuō，Wēi xìn shì yǔ jiā rén bǎo chí lián xì de zhǔ yào gōng jù.",
+          "english": "For many Chinese living abroad, WeChat is the primary tool for staying in touch with family."
+        },
+        {
+          "chinese": "对于这款软件的新功能，用户们反应不一。",
+          "pinyin": "Duì yú zhè kuǎn ruǎn jiàn de xīn gōng néng，yòng hù men fǎn yìng bù yī.",
+          "english": "Regarding the new features of this software, users have mixed reactions."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "Choose the correct word to complete the sentence: ___初学者来说，这本教材非常适合。",
+          "type": "multiple_choice",
+          "correct": "对于",
+          "options": ["对于", "关于", "由于", "至于"],
+          "option_pinyin": ["duì yú", "guān yú", "yóu yú", "zhì yú"],
+          "word_hints": { "初学者": "beginner", "教材": "textbook" }
+        },
+        {
+          "question": "Which sentence correctly uses 对于…来说?",
+          "type": "multiple_choice",
+          "correct": "对于海外用户来说，微信是保持联系的最好工具。",
+          "options": [
+            "对于海外用户来说，微信是保持联系的最好工具。",
+            "对于他每天都使用微信。",
+            "来说对于这件事他不感兴趣。",
+            "他对于来说觉得这个功能很有用。"
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "对于 is most similar in function to which English phrase?",
+          "type": "multiple_choice",
+          "correct": "As for / Regarding",
+          "options": ["As for / Regarding", "Because of", "In spite of", "As soon as"],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": {}
+        },
+        {
+          "question": "Fill in the blank: ___这个问题，专家们提出了不同的解决方案。",
+          "type": "multiple_choice",
+          "correct": "对于",
+          "options": ["对于", "通过", "由于", "尽管"],
+          "option_pinyin": ["duì yú", "tōng guò", "yóu yú", "jǐn guǎn"],
+          "word_hints": { "解决方案": "solution" }
+        },
+        {
+          "question": "Which is the best translation of: 对于很多人来说，手机已经是生活中不可缺少的工具。",
+          "type": "multiple_choice",
+          "correct": "For many people, mobile phones have already become an indispensable tool in life.",
+          "options": [
+            "For many people, mobile phones have already become an indispensable tool in life.",
+            "Because of many people, mobile phones are important.",
+            "Many people think mobile phones are useful tools.",
+            "Mobile phones were invented for many people."
+          ],
+          "option_pinyin": ["", "", "", ""],
+          "word_hints": { "不可缺少": "indispensable" }
+        }
+      ]
+    }
+  ],
+  "culture_notes": [
+    {
+      "title": "The Lu Xun You Don't Know",
+      "title_chinese": "别样鲁迅",
+      "content": "鲁迅（1881–1936）is one of China's most celebrated and influential writers. His works — including 《阿Q正传》and 《狂人日记》— are famous for their searing critiques of feudal society and the weaknesses of human nature. In the popular imagination, Lu Xun is a stern, serious figure, always glaring at the world with sharp eyes.\n\nBut there is another side to Lu Xun that few people know: he was a passionate lover of food. He kept meticulous records in his diary of the restaurants he visited, the dishes he tasted, and the snacks he bought. He wrote warmly about the flavors of his hometown Shaoxing — especially the local rice wine, preserved vegetables, and sweet osmanthus cakes. He was also famously fond of sweets and would go out of his way to find good local snacks.\n\nThis warmer, more personal Lu Xun stands in striking contrast to his public image. His diaries reveal a man who found genuine pleasure and comfort in food, even while writing some of the most pointed social criticism in Chinese literary history.\n\nToday, people use WeChat to share food photos, post restaurant reviews, and recommend local snacks to friends near and far. One can't help but wonder: if Lu Xun had WeChat, what would he have shared? Perhaps photos of Shaoxing rice wine, a morning bowl of 豆浆, or a late-night plate of stir-fried greens after a long night of writing.",
+      "idioms": [
+        {
+          "chinese": "横眉冷对千夫指，俯首甘为孺子牛",
+          "pinyin": "héng méi lěng duì qiān fū zhǐ，fǔ shǒu gān wéi rú zǐ niú",
+          "english": "Glaring coldly at a thousand accusing fingers, I willingly bow like an ox to serve the children — Lu Xun's famous lines expressing his defiance of critics and dedication to the people"
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "question": "Which word means 'to spread or disseminate' information or an app?",
+      "type": "multiple_choice",
+      "correct": "传播",
+      "options": ["传播", "联系", "普及", "流行"],
+      "word_hints": { "传播": "chuán bō", "联系": "lián xì", "普及": "pǔ jí", "流行": "liú xíng" }
+    },
+    {
+      "question": "Which formal conjunction is used to connect items in a list, similar to 'as well as'?",
+      "type": "multiple_choice",
+      "correct": "以及",
+      "options": ["以及", "从而", "对于", "因此"],
+      "word_hints": { "以及": "yǐ jí", "从而": "cóng ér", "对于": "duì yú", "因此": "yīn cǐ" }
+    },
+    {
+      "question": "Complete the sentence: 他努力工作，___获得了晋升的机会。",
+      "type": "multiple_choice",
+      "correct": "从而",
+      "options": ["从而", "以及", "对于", "虽然"],
+      "word_hints": { "晋升": "promotion", "获得": "to obtain" }
+    },
+    {
+      "question": "Which sentence correctly uses 对于…来说?",
+      "type": "multiple_choice",
+      "correct": "对于海外华人来说，微信是保持联系的重要工具。",
+      "options": [
+        "对于海外华人来说，微信是保持联系的重要工具。",
+        "对于他从而每天用微信。",
+        "微信对于以及很流行。",
+        "他对于来说不喜欢用软件。"
+      ],
+      "word_hints": { "华人": "ethnic Chinese" }
+    },
+    {
+      "question": "What does 账号 mean?",
+      "type": "multiple_choice",
+      "correct": "User account",
+      "options": ["User account", "Password", "Software", "Platform"],
+      "word_hints": { "账号": "zhàng hào" }
+    },
+    {
+      "question": "Which of the following is mentioned in the culture note as something Lu Xun was passionate about?",
+      "type": "multiple_choice",
+      "correct": "Food and local snacks",
+      "options": ["Food and local snacks", "Mobile apps and technology", "International travel", "Photography"],
+      "word_hints": {}
+    }
+  ],
+  "dialogues": [
+    {
+      "id": 1,
+      "title": "Using WeChat Abroad",
+      "title_chinese": "在国外用微信",
+      "speakers": {
+        "A": { "name": "慈欣", "role": "technology enthusiast living abroad", "gender": "male" },
+        "B": { "name": "兰特", "role": "expat writer adjusting to life overseas", "gender": "female" }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你来海外以后，还经常跟家人联系吗？",
+          "pinyin": "Nǐ lái hǎi wài yǐ hòu，hái jīng cháng gēn jiā rén lián xì ma?",
+          "english": "After coming overseas, do you still often keep in touch with your family?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "当然！我每天都用微信和他们视频通话，真的非常便利。",
+          "pinyin": "Dāng rán！Wǒ měi tiān dōu yòng Wēi xìn hé tā men shì pín tōng huà，zhēn de fēi cháng biàn lì.",
+          "english": "Of course! I video call them every day using WeChat — it's really very convenient."
+        },
+        {
+          "speaker": "A",
+          "chinese": "是啊，在海外生活，微信真的很重要。不只是联系家人，还可以看新闻、发红包。",
+          "pinyin": "Shì a，zài hǎi wài shēng huó，Wēi xìn zhēn de hěn zhòng yào. Bù zhǐ shì lián xì jiā rén，hái kě yǐ kàn xīn wén、fā hóng bāo.",
+          "english": "That's right, when living overseas, WeChat is really important. Not just for contacting family — you can also read news and send red envelopes."
+        },
+        {
+          "speaker": "B",
+          "chinese": "没错。不过刚来的时候，我觉得要适应在国外用微信支付有点难，这边很多商店不支持。",
+          "pinyin": "Méi cuò. Bú guò gāng lái de shí hòu，wǒ juéde yào shì yìng zài guó wài yòng Wēi xìn zhī fù yǒu diǎn nán，zhè biān hěn duō shāng diàn bù zhī chí.",
+          "english": "That's true. But when I first arrived, I found it a bit hard to adjust to using WeChat Pay abroad — many shops here don't support it."
+        },
+        {
+          "speaker": "A",
+          "chinese": "对，支付功能在国内最便利。不过用来联系海外的朋友，用户数量越来越多，功能也越来越强。",
+          "pinyin": "Duì，zhī fù gōng néng zài guó nèi zuì biàn lì. Bú guò yòng lái lián xì hǎi wài de péng yǒu，yòng hù shù liàng yuè lái yuè duō，gōng néng yě yuè lái yuè qiáng.",
+          "english": "Right, the payment feature is most convenient in China. But for keeping in touch with friends overseas, the number of users is growing more and more, and the features are getting stronger."
+        },
+        {
+          "speaker": "B",
+          "chinese": "同意。对于我们这些在海外生活的人来说，微信就像是一条连接家乡的线。",
+          "pinyin": "Tóng yì. Duì yú wǒ men zhè xiē zài hǎi wài shēng huó de rén lái shuō，Wēi xìn jiù xiàng shì yī tiáo lián jiē jiā xiāng de xiàn.",
+          "english": "Agreed. For those of us living overseas, WeChat is like a thread connecting us to home."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "How WeChat Spread",
+      "title_chinese": "微信是怎么传播的",
+      "speakers": {
+        "A": { "name": "慈欣", "role": "technology analyst", "gender": "male" },
+        "B": { "name": "鲁迅", "role": "sharp cultural critic", "gender": "male" }
+      },
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你有没有想过，微信是怎么从中国传播到全世界的？",
+          "pinyin": "Nǐ yǒu méi yǒu xiǎng guò，Wēi xìn shì zěn me cóng zhōng guó chuán bō dào quán shì jiè de?",
+          "english": "Have you ever wondered how WeChat spread from China to the whole world?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我觉得主要是因为大量中国留学生以及商务人士出国，把这个软件带了出去。",
+          "pinyin": "Wǒ juéde zhǔ yào shì yīn wèi dà liàng zhōng guó liú xué shēng yǐ jí shāng wù rén shì chū guó，bǎ zhè gè ruǎn jiàn dài le chū qù.",
+          "english": "I think it's mainly because large numbers of Chinese students as well as business people went abroad and brought this software with them."
+        },
+        {
+          "speaker": "A",
+          "chinese": "对。而且微信的功能非常丰富，包括通话、视频以及支付，很快吸引了很多非中国用户。",
+          "pinyin": "Duì. Ér qiě Wēi xìn de gōng néng fēi cháng fēng fù，bāo kuò tōng huà、shì pín yǐ jí zhī fù，hěn kuài xī yǐn le hěn duō fēi zhōng guó yòng hù.",
+          "english": "That's right. And WeChat's features are very rich, including calls, video, as well as payments, which quickly attracted many non-Chinese users."
+        },
+        {
+          "speaker": "B",
+          "chinese": "不过，社会现象的传播从来不只是靠技术好。人们需要它，从而它才会真正流行起来。",
+          "pinyin": "Bú guò，shè huì xiàn xiàng de chuán bō cóng lái bù zhǐ shì kào jì shù hǎo. Rén men xū yào tā，cóng ér tā cái huì zhēn zhèng liú xíng qǐ lái.",
+          "english": "However, the spread of social phenomena has never been just about good technology. People need it — thereby it truly becomes popular."
+        },
+        {
+          "speaker": "A",
+          "chinese": "说得有道理。海外华人渴望与家乡保持联系，从而推动了微信在全球的普及。",
+          "pinyin": "Shuō de yǒu dào lǐ. Hǎi wài huá rén kě wàng yǔ jiā xiāng bǎo chí lián xì，cóng ér tuī dòng le Wēi xìn zài quán qiú de pǔ jí.",
+          "english": "Well said. Overseas Chinese longed to stay connected to home, thereby driving WeChat's global adoption."
+        },
+        {
+          "speaker": "B",
+          "chinese": "是的。技术只是工具，真正的力量来自人心，以及那份对家乡和家人永远的牵挂。",
+          "pinyin": "Shì de. Jì shù zhǐ shì gōng jù，zhēn zhèng de lì liàng lái zì rén xīn，yǐ jí nà fèn duì jiā xiāng hé jiā rén yǒng yuǎn de qiān guà.",
+          "english": "Yes. Technology is just a tool — the real power comes from the human heart, as well as that eternal longing for home and family."
+        }
+      ]
+    }
+  ]
+}

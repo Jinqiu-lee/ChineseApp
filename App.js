@@ -116,16 +116,32 @@ import hsk5lesson13 from './data/hsk4_level5/hsk5_lesson_13.json';
 import hsk5lesson14 from './data/hsk4_level5/hsk5_lesson_14.json';
 import hsk5lesson15 from './data/hsk4_level5/hsk5_lesson_15.json';
 
+import hsk6lesson1  from './data/hsk6/hsk6_lesson_1.json';
+import hsk6lesson2  from './data/hsk6/hsk6_lesson_2.json';
+import hsk6lesson3  from './data/hsk6/hsk6_lesson_3.json';
+import hsk6lesson4  from './data/hsk6/hsk6_lesson_4.json';
+import hsk6lesson5  from './data/hsk6/hsk6_lesson_5.json';
+import hsk6lesson6  from './data/hsk6/hsk6_lesson_6.json';
+import hsk6lesson7  from './data/hsk6/hsk6_lesson_7.json';
+import hsk6lesson8  from './data/hsk6/hsk6_lesson_8.json';
+import hsk6lesson9  from './data/hsk6/hsk6_lesson_9.json';
+import hsk6lesson10 from './data/hsk6/hsk6_lesson_10.json';
+import hsk6lesson11 from './data/hsk6/hsk6_lesson_11.json';
+import hsk6lesson12 from './data/hsk6/hsk6_lesson_12.json';
+import hsk6lesson13 from './data/hsk6/hsk6_lesson_13.json';
+import hsk6lesson14 from './data/hsk6/hsk6_lesson_14.json';
+
 const LESSONS_BY_LEVEL = {
   hsk1: { 1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5, 6: lesson6, 7: lesson7, 8: lesson8, 9: lesson9, 10: lesson10, 11: lesson11, 12: lesson12, 13: lesson13, 14: lesson14, 15: lesson15 },
   hsk2: { 1: hsk2lesson1, 2: hsk2lesson2, 3: hsk2lesson3, 4: hsk2lesson4, 5: hsk2lesson5, 6: hsk2lesson6, 7: hsk2lesson7, 8: hsk2lesson8, 9: hsk2lesson9, 10: hsk2lesson10, 11: hsk2lesson11, 12: hsk2lesson12, 13: hsk2lesson13, 14: hsk2lesson14, 15: hsk2lesson15 },
   hsk3: { 1: hsk3lesson1, 2: hsk3lesson2, 3: hsk3lesson3, 4: hsk3lesson4, 5: hsk3lesson5, 6: hsk3lesson6, 7: hsk3lesson7, 8: hsk3lesson8, 9: hsk3lesson9, 10: hsk3lesson10, 11: hsk3lesson11, 12: hsk3lesson12, 13: hsk3lesson13, 14: hsk3lesson14, 15: hsk3lesson15 },
   hsk4: { 1: hsk4lesson1, 2: hsk4lesson2, 3: hsk4lesson3, 4: hsk4lesson4, 5: hsk4lesson5, 6: hsk4lesson6, 7: hsk4lesson7, 8: hsk4lesson8, 9: hsk4lesson9, 10: hsk4lesson10, 11: hsk4lesson11, 12: hsk4lesson12, 13: hsk4lesson13, 14: hsk4lesson14, 15: hsk4lesson15 },
   hsk5: { 1: hsk5lesson1, 2: hsk5lesson2, 3: hsk5lesson3, 4: hsk5lesson4, 5: hsk5lesson5, 6: hsk5lesson6, 7: hsk5lesson7, 8: hsk5lesson8, 9: hsk5lesson9, 10: hsk5lesson10, 11: hsk5lesson11, 12: hsk5lesson12, 13: hsk5lesson13, 14: hsk5lesson14, 15: hsk5lesson15 },
+  hsk6: { 1: hsk6lesson1, 2: hsk6lesson2, 3: hsk6lesson3, 4: hsk6lesson4, 5: hsk6lesson5, 6: hsk6lesson6, 7: hsk6lesson7, 8: hsk6lesson8, 9: hsk6lesson9, 10: hsk6lesson10, 11: hsk6lesson11, 12: hsk6lesson12, 13: hsk6lesson13, 14: hsk6lesson14 },
 };
 const LESSONS = LESSONS_BY_LEVEL.hsk1; // keep for backward compat
 
-const ALL_LEVEL_IDS = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5'];
+const ALL_LEVEL_IDS = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6'];
 
 const STORAGE_KEYS = {
   userData:           '@chineseapp:userData',
@@ -138,7 +154,7 @@ const STORAGE_KEYS = {
 };
 
 const DEFAULT_LEVEL_STATE = {
-  unlockedLevels: ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5'],
+  unlockedLevels: ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6'],
   completedLevels: [],
   levelSetBy: 'manual',
   levelChangedUsed: false,
@@ -186,7 +202,7 @@ export default function App() {
         }
         if (savedLevel) {
           const parsed = JSON.parse(savedLevel);
-          setLevelState({ ...parsed, unlockedLevels: ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5'] });
+          setLevelState({ ...parsed, unlockedLevels: ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6'] });
         }
         if (savedProgress)      setLessonProgress(JSON.parse(savedProgress));
         if (savedStageProgress) setStageProgress(JSON.parse(savedStageProgress));
