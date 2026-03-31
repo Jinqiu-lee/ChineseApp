@@ -17,7 +17,7 @@ const LEVELS_MANUAL = [
   { id: "hsk3", label: "Level 3 – Conversation Builder", badge: "🌾", color: "#0c6e16", desc: "Can hold simple conversations" },
   { id: "hsk4", label: "Level 4 – Confident Speaker",    badge: "🏡", color: "#BE7A62", desc: "Comfortable with everyday Chinese" },
   { id: "hsk5", label: "Level 5 – Communicator",         badge: "🌌", color: "#384fa3", desc: "Advanced, near-fluent communication" },
-  { id: "hsk6", label: "Level 6 – Advanced",             badge: "🌼", color: "#374950", desc: "Coming soon!", comingSoon: true },
+  { id: "hsk6", label: "Level 6 – Advanced",             badge: "🌼", color: "#374950", desc: "Advanced fluency — HSK 6" },
 ];
 
 const MANUAL_RANK_MAP = {
@@ -26,7 +26,7 @@ const MANUAL_RANK_MAP = {
   hsk3: { level: "Conversation Builder", levelChinese: "中级", badge: "🌾", color: "#0c6e16", recommendedLevel: "hsk3", recommendedLabel: "Level 3 – Conversation Builder", message: "Great! We'll start you at Level 3 – Conversation Builder." },
   hsk4: { level: "Confident Speaker",    levelChinese: "高级", badge: "🏡", color: "#BE7A62", recommendedLevel: "hsk4", recommendedLabel: "Level 4 – Confident Speaker",    message: "Great! We'll start you at Level 4 – Confident Speaker." },
   hsk5: { level: "Communicator",         levelChinese: "精通", badge: "🌌", color: "#384fa3", recommendedLevel: "hsk5", recommendedLabel: "Level 5 – Communicator",         message: "Great! We'll start you at Level 5 – Communicator." },
-  hsk6: { level: "Advanced",             levelChinese: "高端", badge: "🌼", color: "#374950", recommendedLevel: "hsk6", recommendedLabel: "Level 6 – Advanced",             message: "Level 6 is coming soon!", comingSoon: true },
+  hsk6: { level: "Advanced",             levelChinese: "高端", badge: "🌼", color: "#374950", recommendedLevel: "hsk6", recommendedLabel: "Level 6 – Advanced",             message: "Great! We'll start you at Level 6 – Advanced." },
 };
 
 // ── CEFR level details (for results screen & levels panel) ───────
@@ -140,10 +140,6 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
   };
 
   const handleDone = () => {
-    if (result?.comingSoon) {
-      alert("🎓 Level 6: Advanced\n\nThis level is coming soon!\nPlease choose a lower level for now. 加油！");
-      return;
-    }
     onComplete({ age: parseInt(age, 10), result });
   };
 
@@ -451,7 +447,7 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
             <ScrollView showsVerticalScrollIndicator={false}>
               {LEVEL_DETAILS.map((lvl) => {
                 const isCurrent = result && lvl.id === result.recommendedLevel;
-                const isAdvanced = lvl.number === 6;
+                const isAdvanced = false;
                 return (
                   <TouchableOpacity
                     key={lvl.id}
@@ -459,8 +455,8 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
                       s.levelsItem,
                       isCurrent && { backgroundColor: CARD_WHITE, borderColor: lvl.color, borderWidth: 2 },
                     ]}
-                    onPress={() => isAdvanced && alert("🎓 Advanced level is coming soon!\n\nKeep working through the earlier levels. 加油！")}
-                    activeOpacity={isAdvanced ? 0.7 : 1}
+                    onPress={() => {}}
+                    activeOpacity={1}
                   >
                     <Text style={[s.levelsItemEmoji, !isCurrent && !isAdvanced && { opacity: 0.7 }]}>{lvl.emoji}</Text>
                     <View style={s.levelsItemInfo}>
