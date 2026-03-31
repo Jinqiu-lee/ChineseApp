@@ -62,6 +62,7 @@ const IMAGES_BY_LEVEL = {
   hsk3: require('../data/hsk3/hsk3_images/hsk3_images.json'),
   hsk4: require('../data/hsk4_level4/hsk4_level4_images/hsk4_images.json'),
   hsk5: require('../data/hsk4_level5/hsk4_level5_images/hsk5_images.json'),
+  hsk6: require('../data/hsk6/hsk6_images/hsk6_images.json'),
 };
 
 function getDialogueImage(dialogueId, lessonNumber, levelId = 'hsk1') {
