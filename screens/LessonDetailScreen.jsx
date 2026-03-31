@@ -87,6 +87,21 @@ import hsk5lesson13 from '../data/hsk4_level5/hsk5_lesson_13.json';
 import hsk5lesson14 from '../data/hsk4_level5/hsk5_lesson_14.json';
 import hsk5lesson15 from '../data/hsk4_level5/hsk5_lesson_15.json';
 
+import hsk6lesson1  from '../data/hsk6/hsk6_lesson_1.json';
+import hsk6lesson2  from '../data/hsk6/hsk6_lesson_2.json';
+import hsk6lesson3  from '../data/hsk6/hsk6_lesson_3.json';
+import hsk6lesson4  from '../data/hsk6/hsk6_lesson_4.json';
+import hsk6lesson5  from '../data/hsk6/hsk6_lesson_5.json';
+import hsk6lesson6  from '../data/hsk6/hsk6_lesson_6.json';
+import hsk6lesson7  from '../data/hsk6/hsk6_lesson_7.json';
+import hsk6lesson8  from '../data/hsk6/hsk6_lesson_8.json';
+import hsk6lesson9  from '../data/hsk6/hsk6_lesson_9.json';
+import hsk6lesson10 from '../data/hsk6/hsk6_lesson_10.json';
+import hsk6lesson11 from '../data/hsk6/hsk6_lesson_11.json';
+import hsk6lesson12 from '../data/hsk6/hsk6_lesson_12.json';
+import hsk6lesson13 from '../data/hsk6/hsk6_lesson_13.json';
+import hsk6lesson14 from '../data/hsk6/hsk6_lesson_14.json';
+
 const LESSONS_BY_LEVEL = {
   hsk1: {
     1: lesson1, 2: lesson2, 3: lesson3, 4: lesson4, 5: lesson5,
@@ -124,6 +139,11 @@ const LESSONS_BY_LEVEL = {
     1: hsk5lesson1, 2: hsk5lesson2, 3: hsk5lesson3, 4: hsk5lesson4, 5: hsk5lesson5,
     6: hsk5lesson6, 7: hsk5lesson7, 8: hsk5lesson8, 9: hsk5lesson9, 10: hsk5lesson10,
     11: hsk5lesson11, 12: hsk5lesson12, 13: hsk5lesson13, 14: hsk5lesson14, 15: hsk5lesson15,
+  },
+  hsk6: {
+    1: hsk6lesson1, 2: hsk6lesson2, 3: hsk6lesson3, 4: hsk6lesson4, 5: hsk6lesson5,
+    6: hsk6lesson6, 7: hsk6lesson7, 8: hsk6lesson8, 9: hsk6lesson9, 10: hsk6lesson10,
+    11: hsk6lesson11, 12: hsk6lesson12, 13: hsk6lesson13, 14: hsk6lesson14,
   },
 };
 
@@ -265,7 +285,7 @@ export default function LessonDetailScreen({
                 Pinyin
               </Text>
             </TouchableOpacity>
-          ) : levelId === 'hsk4' || levelId === 'hsk5' ? (
+          ) : levelId === 'hsk4' || levelId === 'hsk5' || levelId === 'hsk6' ? (
             <TouchableOpacity
               style={[styles.learnBtn, styles.learnBtnCulture]}
               onPress={() => toggleSection('culture')}
