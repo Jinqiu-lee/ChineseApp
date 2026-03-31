@@ -619,7 +619,7 @@ const styles = StyleSheet.create({
   stageStatus:     { width: 32, alignItems: 'center' },
   stageDone:       { fontSize: 20 },
   stageArrow:      { width: 28, height: 28, borderRadius: 14, alignItems: 'center', justifyContent: 'center' },
-  stageArrowText:  { fontSize: 14, fontWeight: '900', color: VG.bg },
+  stageArrowText:  { fontSize: 14, fontWeight: '900', color: CARD_WHITE },
 
   // ── Complete button — warm glowing yellow ─────────────────────────────────
   completeBtn: {

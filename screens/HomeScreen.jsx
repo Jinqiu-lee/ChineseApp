@@ -828,7 +828,7 @@ const styles = StyleSheet.create({
   pathConnectorCol:   { alignItems: 'center', width: 32, marginRight: 10, marginTop: 14 },
   pathDot:            { width: 18, height: 18, borderRadius: 9, borderWidth: 2, alignItems: 'center', justifyContent: 'center' },
   pathDotInner:       { width: 8, height: 8, borderRadius: 4 },
-  pathDotCheck:       { fontSize: 10, color: VG.bg, fontWeight: '900' },
+  pathDotCheck:       { fontSize: 10, color: CARD_WHITE, fontWeight: '900' },
   pathLine:           { width: 2, flex: 1, minHeight: 20, marginVertical: 2 },
   pathCard:           {
     flex: 1, flexDirection: 'row', alignItems: 'center',

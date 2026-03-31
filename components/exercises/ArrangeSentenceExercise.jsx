@@ -158,5 +158,5 @@ const styles = StyleSheet.create({
     backgroundColor: VG.yellow, borderRadius: 16, padding: 16, alignItems: 'center', marginTop: 16,
     shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 }, shadowOpacity: 0.22, shadowRadius: 8, elevation: 4,
   },
-  checkBtnText: { fontSize: 16, fontWeight: '800', color: VG.bg },
+  checkBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 });

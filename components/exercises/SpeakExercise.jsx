@@ -397,7 +397,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25, shadowRadius: 10, elevation: 5,
   },
   micIcon: { fontSize: 36 },
-  micBtnText: { fontSize: 16, fontWeight: '800', color: VG.bg },
+  micBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 
   recordingCard: {
     backgroundColor: '#fde8e8', borderRadius: 20, padding: 32,
@@ -449,7 +449,7 @@ const styles = StyleSheet.create({
     shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.22, shadowRadius: 8, elevation: 4,
   },
-  nextBtnText: { fontSize: 16, fontWeight: '800', color: VG.bg },
+  nextBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 
   retryBtn: {
     backgroundColor: VG.cardDark, borderRadius: 14, paddingHorizontal: 32, paddingVertical: 14,
