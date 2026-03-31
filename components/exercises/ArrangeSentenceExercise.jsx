@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
   pinyinToggleOn: { borderColor: VG.gold, backgroundColor: '#FFF8ED' },
   pinyinToggleText: { fontSize: 13, fontWeight: '600', color: VG.creamMuted },
   pinyinToggleTextOn: { color: VG.gold },
-  hint: { fontSize: 13, color: VG.creamMuted, fontStyle: 'italic', marginBottom: 16 },
+  hint: { fontSize: 13, color: DEEP_NAVY, fontStyle: 'italic', fontWeight: '600', marginBottom: 16, backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, alignSelf: 'flex-start' },
   tray: {
     minHeight: 72, backgroundColor: VG.cardDark, borderRadius: 16, padding: 14,
     marginBottom: 16, borderWidth: 1.5, borderColor: VG.border, borderStyle: 'dashed',

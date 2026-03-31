@@ -196,6 +196,32 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
       <View style={styles.container}>
         <AvatarCharacter avatarId={avatarId} expression="think" size={120} />
         <Text style={styles.instruction}>🔴 Recording... speak now</Text>
+
+        {/* Reference card — keeps the prompt visible while recording */}
+        <View style={styles.recordingRefCard}>
+          {isRepeat && (
+            <>
+              <Text style={styles.recordingRefLabel}>SAY THIS</Text>
+              <Text style={styles.recordingRefChinese}>{exercise.chinese}</Text>
+              <Text style={styles.recordingRefPinyin}>{exercise.pinyin}</Text>
+            </>
+          )}
+          {isTranslate && (
+            <>
+              <Text style={styles.recordingRefLabel}>TRANSLATE</Text>
+              <Text style={styles.recordingRefEnglish}>{exercise.english}</Text>
+              <Text style={styles.recordingRefPinyin}>{exercise.pinyin}</Text>
+            </>
+          )}
+          {isRespond && (
+            <>
+              <Text style={styles.recordingRefLabel}>QUESTION</Text>
+              <Text style={styles.recordingRefChinese}>{exercise.questionChinese}</Text>
+              <Text style={styles.recordingRefPinyin}>{exercise.questionPinyin}</Text>
+            </>
+          )}
+        </View>
+
         <View style={styles.recordingCard}>
           <Text style={styles.recordingIcon}>🎙</Text>
           <Text style={styles.recordingHint}>Tap Stop when you're done</Text>
@@ -398,6 +424,18 @@ const styles = StyleSheet.create({
   },
   micIcon: { fontSize: 36 },
   micBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
+
+  recordingRefCard: {
+    backgroundColor: CARD_WHITE, borderRadius: 16, paddingHorizontal: 20, paddingVertical: 14,
+    width: '100%', alignItems: 'center', gap: 4,
+    borderWidth: 1, borderColor: 'rgba(217,140,43,0.25)',
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.12, shadowRadius: 8, elevation: 3,
+  },
+  recordingRefLabel:   { fontSize: 10, fontWeight: '800', color: VG.orange, letterSpacing: 1, marginBottom: 2 },
+  recordingRefChinese: { fontSize: 28, fontWeight: '900', color: VG.onCard, textAlign: 'center' },
+  recordingRefPinyin:  { fontSize: 14, color: VG.orange, fontStyle: 'italic', textAlign: 'center' },
+  recordingRefEnglish: { fontSize: 14, fontWeight: '600', color: VG.onCardMid, textAlign: 'center', lineHeight: 20 },
 
   recordingCard: {
     backgroundColor: '#fde8e8', borderRadius: 20, padding: 32,
