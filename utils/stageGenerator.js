@@ -689,16 +689,21 @@ function getHskLevel(lessonData) {
 }
 
 // Shorten a Chinese answer to the first clause (up to first punctuation mark)
-function shortenChinese(text) {
+function shortenChinese(text, maxChars = 20) {
   if (!text) return text;
-  const first = text.split(/[，。！？；…]/)[0];
-  return first.length > 0 ? first : text;
+  const first = text.split(/[，。！？；…]|——/)[0];
+  const result = first.length > 0 ? first : text;
+  // Hard cap for long answers with no internal punctuation
+  if ([...result].length > maxChars) {
+    return [...result].slice(0, maxChars).join('');
+  }
+  return result;
 }
 
 // Shorten pinyin to match the character count of the shortened Chinese
 function shortenPinyin(pinyin, chineseLen) {
   if (!pinyin) return pinyin;
-  const first = pinyin.split(/[,，.。!！?？;；]/)[0].trim();
+  const first = pinyin.split(/[,，.。!！?？;；]|——/)[0].trim();
   const syllables = first.split(/\s+/);
   if (syllables.length <= chineseLen) return first;
   return syllables.slice(0, chineseLen).join(' ');
