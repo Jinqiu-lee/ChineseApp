@@ -357,7 +357,7 @@ const TONE_STRIP = {
   'ū':'u','ú':'u','ǔ':'u','ù':'u',
   'ǖ':'u','ǘ':'u','ǚ':'u','ǜ':'u',
 };
-const TONE_LABELS = ['1st tone (ā)', '2nd tone (á)', '3rd tone (ǎ)', '4th tone (à)'];
+const TONE_LABELS = ['1st tone', '2nd tone', '3rd tone', '4th tone'];
 const INITIALS_ORDERED = ['zh','ch','sh','b','p','m','f','d','t','n','l','g','k','h','j','q','x','r','z','c','s','y','w'];
 
 function detectTone(syllable) {

@@ -22,7 +22,7 @@
 // ──────────────────────────────────────────────────────────────────────────
 
 export const REPLACE_AUDIO = {
-  // Add entries here as you record corrections, e.g.:
-  // '背包': require('../assets/audio/replace_audios/bei1bao1.mp3'),
-  // '还书': require('../assets/audio/replace_audios/huan2shu1.mp3'),
+  // 姐姐 — Google TTS mispronounces the neutral tone on the second syllable;
+  // use the local recording which has jie3_jie0 (3rd tone + neutral) correctly.
+  '姐姐': require('../assets/audio/pinyin/tones/jie3_jie0.mp3'),
 };
