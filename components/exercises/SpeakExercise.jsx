@@ -8,7 +8,7 @@ import { speakChinese } from '../../utils/tts';
 import { startRecording, stopAndTranscribe, calculateAccuracy } from '../../utils/speechRecognition';
 import AvatarCharacter from '../AvatarCharacter';
 
-const MAX_ATTEMPTS = 5;
+const MAX_ATTEMPTS = 3;
 
 function getFeedback(accuracy) {
   if (accuracy === 100) return { msg: 'Perfect! 完美！', icon: '⭐', color: WARM_ORANGE, pass: true };
@@ -90,7 +90,8 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
     setPhase(attempts >= MAX_ATTEMPTS ? 'max_attempts' : 'idle');
   };
 
-  const handleNext = (passed) => (passed ? onCorrect() : onWrong());
+  // Always mark correct — speech recognition accuracy is unreliable
+  const handleNext = () => onCorrect();
 
   // ── IDLE ──────────────────────────────────────────────────────────────
   if (phase === 'idle') {
@@ -274,18 +275,19 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
           </View>
         </View>
 
-        {feedback.pass ? (
-          <TouchableOpacity style={styles.nextBtn} onPress={() => handleNext(true)} activeOpacity={0.85}>
+        {attempts >= MAX_ATTEMPTS ? (
+          <TouchableOpacity style={styles.nextBtn} onPress={handleNext} activeOpacity={0.85}>
             <Text style={styles.nextBtnText}>Next →</Text>
           </TouchableOpacity>
-        ) : attempts >= MAX_ATTEMPTS ? (
-          <TouchableOpacity style={styles.stopBtn} onPress={() => setPhase('max_attempts')} activeOpacity={0.85}>
-            <Text style={styles.stopBtnText}>See options</Text>
-          </TouchableOpacity>
         ) : (
-          <TouchableOpacity style={styles.retryBtn} onPress={handleRetry} activeOpacity={0.85}>
-            <Text style={styles.retryBtnText}>🎤 Try Again ({MAX_ATTEMPTS - attempts} left)</Text>
-          </TouchableOpacity>
+          <View style={styles.resultActions}>
+            <TouchableOpacity style={styles.retryBtn} onPress={handleRetry} activeOpacity={0.85}>
+              <Text style={styles.retryBtnText}>🎤 Try Again ({MAX_ATTEMPTS - attempts} left)</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.nextBtn} onPress={handleNext} activeOpacity={0.85}>
+              <Text style={styles.nextBtnText}>Next →</Text>
+            </TouchableOpacity>
+          </View>
         )}
       </View>
     );
@@ -317,7 +319,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
             <Text style={styles.listenBtnText}>🔊 Play Audio</Text>
           </TouchableOpacity>
         </View>
-        <TouchableOpacity style={styles.nextBtn} onPress={() => handleNext(false)} activeOpacity={0.85}>
+        <TouchableOpacity style={styles.nextBtn} onPress={handleNext} activeOpacity={0.85}>
           <Text style={styles.nextBtnText}>Got it, Next →</Text>
         </TouchableOpacity>
       </View>
@@ -344,8 +346,8 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
         <TouchableOpacity style={styles.reviewBtn} onPress={() => setPhase('review')} activeOpacity={0.85}>
           <Text style={styles.reviewBtnText}>📖 Review</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.skipBtn} onPress={() => handleNext(false)} activeOpacity={0.85}>
-          <Text style={styles.skipBtnText}>Skip →</Text>
+        <TouchableOpacity style={styles.skipBtn} onPress={handleNext} activeOpacity={0.85}>
+          <Text style={styles.skipBtnText}>Next →</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -482,6 +484,7 @@ const styles = StyleSheet.create({
   },
   replayBtnText: { fontSize: 14, fontWeight: '600', color: VG.orange },
 
+  resultActions: { gap: 10, width: '100%', alignItems: 'center' },
   nextBtn: {
     backgroundColor: VG.yellow, borderRadius: 14, paddingHorizontal: 48, paddingVertical: 14,
     shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 },
