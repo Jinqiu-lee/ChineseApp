@@ -72,7 +72,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
     if (!recordingRef.current) return;
     setPhase('processing');
     try {
-      const transcript = await stopAndTranscribe(recordingRef.current);
+      const transcript = await stopAndTranscribe(recordingRef.current, expectedChinese);
       recordingRef.current = null;
       setAccuracy(calculateAccuracy(transcript, expectedChinese));
       setAttempts(prev => prev + 1);
