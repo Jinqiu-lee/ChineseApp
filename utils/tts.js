@@ -10,10 +10,10 @@ const GOOGLE_TTS_API_KEY = GOOGLE_API_KEY;
 // Value is the pinyin tone-number string passed to SSML <phoneme>.
 const PHONEME_OVERRIDES = {
   '谁': 'shei2',
-  // 背 as "carry on back" (bēi, tone 1) — 背包, 背着 etc.
-  '背': 'bei1',
   // 说 — Google TTS zh-CN misreads this as shui4; force shuō (tone 1)
   '说': 'shuo1',
+  // Note: 背 is polyphonic (bēi = carry on back, bèi = background/memorize)
+  // and handled per-compound in COMPOUND_PHONEME_OVERRIDES below.
   // Note: 还 is NOT here — it is polyphonic (hái vs huán) and handled
   // per-compound in COMPOUND_PHONEME_OVERRIDES below.
 };
@@ -24,6 +24,7 @@ const PHONEME_OVERRIDES = {
 // Default TTS reads 还 as hái (still/also) — override only "return" compounds to huán.
 // 不了 as a sentence-final particle is read as bù le (neutral tone), not bù liǎo.
 const COMPOUND_PHONEME_OVERRIDES = {
+  // 还 huán (return) — default TTS reads hái, so override return-meaning compounds only
   '还书': [['还', 'huan2'], ['书', 'shu1']],
   '还钱': [['还', 'huan2'], ['钱', 'qian2']],
   '还给': [['还', 'huan2'], ['给', 'gei3']],
@@ -31,6 +32,18 @@ const COMPOUND_PHONEME_OVERRIDES = {
   '归还': [['归', 'gui1'], ['还', 'huan2']],
   '偿还': [['偿', 'chang2'], ['还', 'huan2']],
   '还款': [['还', 'huan2'], ['款', 'kuan3']],
+  // 背 — polyphonic: bēi (carry on back) vs bèi (background / memorize / back of body)
+  // bèi4 compounds:
+  '背景': [['背', 'bei4'], ['景', 'jing3']],
+  '背诵': [['背', 'bei4'], ['诵', 'song4']],
+  '违背': [['违', 'wei2'], ['背', 'bei4']],
+  '后背': [['后', 'hou4'], ['背', 'bei4']],
+  '背叛': [['背', 'bei4'], ['叛', 'pan4']],
+  // bēi1 compounds:
+  '背包': [['背', 'bei1'], ['包', 'bao1']],
+  '背着': [['背', 'bei1'], ['着', 'zhe0']],
+  '背负': [['背', 'bei1'], ['负', 'fu4']],
+  // 不了 as a sentence-final particle is read as bù le (neutral tone), not bù liǎo.
   '不了': [['不', 'bu4'], ['了', 'le0']],
 };
 

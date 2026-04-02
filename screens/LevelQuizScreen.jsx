@@ -9,6 +9,9 @@ import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE
 const PASS_SCORE = 60;
 const REVIEW_SCORE = 50;
 
+// Chinese-only levels (hsk5 & hsk6) — avatar messages show no English
+const CHINESE_ONLY_LEVELS = new Set(['hsk5', 'hsk6']);
+
 const NEXT_LEVEL = {
   hsk1: { emoji: '🚶', name: 'Level 2 – Explorer' },
   hsk2: { emoji: '🗣',  name: 'Level 3 – Conversation Builder' },
@@ -44,56 +47,57 @@ function shuffleArray(arr) {
   return a;
 }
 
-// ── HSK6 avatar congratulations messages ────────────────────────────────────
-// Tiers: 'pass' = 60-74%, 'mid' = 75-89%, 'high' = 90-99%, 100 = 100%
+// ── Avatar congratulations messages ────────────────────────────────────────
+// Tiers: 'pass'=60-74%, 'mid'=75-89%, 'high'=90-99%, 100=100%
+// Each message has { zh, en }. English is omitted for hsk5/hsk6.
 const AVATAR_CONGRATS = {
   eileen: {
-    100:  "完美无缺。你的中文已如诗如画，字字珠玑。我为你感到欣慰。",
-    high: "你的努力让语言有了灵魂。继续保持这份执着与敏感。",
-    mid:  "有些东西需要慢慢沉淀，就像好的文字一样。再深入一层吧。",
-    pass: "已经过关了。但语言的深处，还有更多等待你去发现。",
+    100:  { zh: '完美无缺。你的中文已如诗如画，字字珠玑。我为你感到欣慰。', en: 'Flawless. Your Chinese has the precision of the finest prose. I am proud of you.' },
+    high: { zh: '你的努力让语言有了灵魂。继续保持这份执着与敏感。', en: 'Your effort has given language a soul. Keep this dedication and sensitivity.' },
+    mid:  { zh: '有些东西需要慢慢沉淀，就像好的文字一样。再深入一层吧。', en: 'Some things take time to settle — like good writing. Go one layer deeper.' },
+    pass: { zh: '已经过关了。但语言的深处，还有更多等待你去发现。', en: "You've passed. But the depths of language still have more waiting for you." },
   },
   libai: {
-    100:  "满分！今日你如诗仙，举杯共邀明月，何其快哉！干杯！",
-    high: "好！好！学问如美酒，越品越有味。你已快达巅峰！",
-    mid:  "不必灰心！千里之行始于足下，再饮一杯，再战！",
-    pass: "过了！过了！今日小胜，明日再图大志，继续加油！",
+    100:  { zh: '满分！今日你如诗仙，举杯共邀明月，何其快哉！干杯！', en: 'A perfect score! Today you are like the Poetry Immortal — raise a cup to the moon. What joy!' },
+    high: { zh: '好！好！学问如美酒，越品越有味。你已快达巅峰！', en: 'Excellent! Knowledge is like fine wine — the more you taste, the richer it gets. You are near the peak!' },
+    mid:  { zh: '不必灰心！千里之行始于足下，再饮一杯，再战！', en: "Don't be discouraged! Every great journey begins underfoot. Have a drink and try again!" },
+    pass: { zh: '过了！过了！今日小胜，明日再图大志，继续加油！', en: 'Passed! A small victory today — aim for greater ambitions tomorrow. Keep going!' },
   },
   luxun: {
-    100:  "满分。这才是真正的掌握。中文之路，你已走到尽头的起点。",
-    high: "做得不错。但不要因为高分而停止反思——语言的力量在于精准。",
-    mid:  "成绩尚可，但要记住：学语言不是应付考试，而是理解思想。继续钻研。",
-    pass: "勉强通过。不要满足于此，真正的学习才刚刚开始。",
+    100:  { zh: '满分。这才是真正的掌握。中文之路，你已走到尽头的起点。', en: 'A perfect score. This is true mastery. The end of one road is the beginning of another.' },
+    high: { zh: '做得不错。但不要因为高分而停止反思——语言的力量在于精准。', en: 'Well done. But do not stop reflecting because of a high score — the power of language lies in precision.' },
+    mid:  { zh: '成绩尚可，但要记住：学语言不是应付考试，而是理解思想。继续钻研。', en: 'Acceptable results. But remember: learning a language is not about passing tests — it is about understanding thought.' },
+    pass: { zh: '勉强通过。不要满足于此，真正的学习才刚刚开始。', en: 'Barely passed. Do not be satisfied — real learning has only just begun.' },
   },
   dante: {
-    100:  "Perfect! You have crossed from shadow into light. Your Chinese mastery is complete — a journey worthy of any epic.",
-    high: "Excellent! You stand at the very edge of paradise. A few more steps and the summit is yours.",
-    mid:  "You have passed through the gates. But the ascent continues — persevere, and paradise awaits.",
-    pass: "You have crossed the threshold. Now begins the real climb — review, reflect, rise higher.",
+    100:  { zh: '完美！你已从黑暗走向光明。你的中文旅程已成一部壮丽的史诗。', en: 'Perfect! You have crossed from shadow into light. Your journey is now a magnificent epic.' },
+    high: { zh: '出色！你站在天堂的边缘。再走几步，山顶便是你的。', en: 'Excellent! You stand at the very edge of paradise. A few more steps and the summit is yours.' },
+    mid:  { zh: '你已穿越了门槛。但攀登还在继续——坚持，天堂等待着你。', en: 'You have crossed the threshold. The ascent continues — persevere, and paradise awaits.' },
+    pass: { zh: '你已跨越了门槛。现在，真正的攀登才刚刚开始——回顾，反思，继续向上。', en: 'You have crossed the threshold. Now the real climb begins — review, reflect, rise higher.' },
   },
   camus: {
-    100:  "One hundred percent. Despite the absurdity of it all, you persisted — and that persistence is everything.",
-    high: "Excellent. The struggle itself is enough. But reaching the summit? That's even better. Well done.",
-    mid:  "You passed. In the face of the infinite complexity of language, simply showing up is an act of rebellion. Keep going.",
-    pass: "You made it through. Remember — we must imagine Sisyphus happy. And today, you should be too.",
+    100:  { zh: '一百分。面对这一切的荒诞，你坚持下来了——而这坚持，就是一切。', en: 'One hundred percent. Despite the absurdity of it all, you persisted — and that persistence is everything.' },
+    high: { zh: '出色。斗争本身就已足够。但到达山顶？那更好。', en: 'Excellent. The struggle itself is enough. But reaching the summit? That is even better.' },
+    mid:  { zh: '你通过了。面对语言的无限复杂，坚持本身就是一种反抗。继续前行。', en: 'You passed. Against the infinite complexity of language, persisting is itself an act of rebellion. Keep going.' },
+    pass: { zh: '你撑过来了。我们必须想象西西弗斯是幸福的。你今天也应该如此。', en: 'You made it through. We must imagine Sisyphus happy. And today, so should you be.' },
   },
   jane: {
-    100:  "A perfect score! How delightfully accomplished. Your Chinese is as elegant as your manners — quite the achievement.",
-    high: "Splendid! You are quite the scholar. A little more practice and you shall be insufferably impressive.",
-    mid:  "A commendable effort! Though I must note, there is always room for refinement — especially in matters of grammar.",
-    pass: "Well done — just barely, but done nonetheless. Perseverance is a virtue I greatly admire.",
+    100:  { zh: '满分！何其出色。你的中文，就像你的举止一样优雅——成就斐然。', en: 'A perfect score! How delightfully accomplished. Your Chinese is as elegant as the finest manners.' },
+    high: { zh: '精彩！你颇有学者风范。再多加练习，你将令人无可挑剔地印象深刻。', en: 'Splendid! You are quite the scholar. A little more practice and you shall be insufferably impressive.' },
+    mid:  { zh: '表现可嘉！不过我要指出，还有改进的空间——尤其是在语法和细节方面。', en: 'Commendable! Though I must note, there is always room for improvement — especially in grammar and particulars.' },
+    pass: { zh: '干得好——刚好通过，但终究通过了。坚韧，是我极为欣赏的美德。', en: 'Well done — just barely, but done nonetheless. Perseverance is a virtue I greatly admire.' },
   },
   elena: {
-    100:  "One hundred percent. You fought for this knowledge, and it shows. Language earned this way belongs to you forever.",
-    high: "Beautiful. The effort you've put in — I can feel it. Don't stop now. You're so close to the top.",
-    mid:  "You passed. But I know you can do better. Go back, revisit what you missed — don't be afraid of the difficulty.",
-    pass: "You got through. Learning is messy and hard. So is life. Keep going anyway.",
+    100:  { zh: '一百分。你为这份知识而战，而且这看得出来。这样赢得的语言，永远属于你。', en: 'One hundred percent. You fought for this knowledge, and it shows. Language earned this way belongs to you forever.' },
+    high: { zh: '美极了。你投入的努力——我感受得到。不要停下来。', en: 'Beautiful. The effort you have put in — I can feel it. Do not stop now.' },
+    mid:  { zh: '你通过了。但我知道你能做得更好。回去，重温错误，不要畏惧困难。', en: 'You passed. But I know you can do better. Go back, revisit what you missed — do not fear the difficulty.' },
+    pass: { zh: '你挺过来了。学习是混乱而艰难的。生活也是。继续前行吧。', en: 'You got through. Learning is messy and hard. So is life. Keep going anyway.' },
   },
   liucixin: {
-    100:  "100% efficiency. Statistically remarkable. Your linguistic neural pathways have been fully optimized.",
-    high: "Impressive score. At this trajectory, fluency follows an exponential curve. The ceiling is within reach.",
-    mid:  "Acceptable performance. The universe is vast — so is Chinese. Recalibrate and re-engage.",
-    pass: "Passed. Consider this a checkpoint in a long journey. The stars are far — so is true fluency. But you are moving forward.",
+    100:  { zh: '一百分。从统计学角度来看，相当卓越。你的语言神经网络已完全优化。', en: '100% efficiency. Statistically remarkable. Your linguistic neural pathways have been fully optimized.' },
+    high: { zh: '分数令人印象深刻。按照这个轨迹，流利度遵循指数曲线。终点线近在咫尺。', en: 'Impressive score. At this trajectory, fluency follows an exponential curve. The finish line is within reach.' },
+    mid:  { zh: '表现尚可。宇宙浩瀚——中文亦然。重新校准，再次出发。', en: 'Acceptable performance. The universe is vast — so is Chinese. Recalibrate and re-engage.' },
+    pass: { zh: '通过了。将此视为漫长旅途中的一个检查点。星星遥远——真正的流利亦然。但你在前进。', en: 'Passed. Consider this a checkpoint in a long journey. The stars are far — so is true fluency. But you are moving forward.' },
   },
 };
 
@@ -107,19 +111,37 @@ function getScoreTier(score) {
 }
 
 const TIER_HEADERS = {
-  100:  { emoji: '🏆', title: '满分！Perfect Score!', subtitle: '你已达到HSK 6的巅峰 · You have mastered HSK 6', color: '#d4a017' },
-  high: { emoji: '🌟', title: 'Outstanding!', subtitle: '出色的表现！Your Chinese is truly advanced.', color: SUCCESS },
-  mid:  { emoji: '🎓', title: 'Well Done!', subtitle: '干得好！A solid pass — keep pushing higher.', color: WARM_ORANGE },
-  pass: { emoji: '✅', title: 'Level Passed!', subtitle: '恭喜通过！You\'ve completed HSK 6.', color: SLATE_TEAL },
+  100:  { emoji: '🏆', title: '满分！Perfect Score!',   subtitle: '你已达到顶峰 · You have reached the peak', color: '#d4a017' },
+  high: { emoji: '🌟', title: 'Outstanding!',            subtitle: '出色的表现！Your Chinese is truly advanced.', color: SUCCESS },
+  mid:  { emoji: '🎓', title: 'Well Done!',              subtitle: '干得好！A solid pass — keep pushing higher.', color: WARM_ORANGE },
+  pass: { emoji: '✅', title: 'Level Passed!',           subtitle: '恭喜通过！Keep going!', color: SLATE_TEAL },
 };
 
-// ── HSK6 Final Congratulations Screen ───────────────────────────────────────
-function Hsk6FinalScreen({ score, correctCount, totalQuestions, answers, quizData, onStudyAgain, onReview }) {
-  const tier  = getScoreTier(score);
-  const header = TIER_HEADERS[tier];
+// ── Avatar Final Screen (used for ALL levels on pass) ───────────────────────
+function AvatarFinalScreen({ score, correctCount, totalQuestions, levelId, onStudyAgain, onContinue, onReview }) {
+  const tier      = getScoreTier(score);
+  const header    = TIER_HEADERS[tier];
+  const nextLevel = NEXT_LEVEL[levelId];
+  const chineseOnly = CHINESE_ONLY_LEVELS.has(levelId);
+  const isLastLevel = levelId === 'hsk6';
 
   return (
     <ScrollView contentContainerStyle={styles.resultsContainer}>
+
+      {/* Unlock celebration (hsk1-hsk5 only) */}
+      {nextLevel && (
+        <View style={styles.unlockCard}>
+          <Text style={styles.unlockEmoji}>🎉</Text>
+          <Text style={styles.unlockTitle}>Congratulations!</Text>
+          <View style={styles.unlockLevelRow}>
+            <Text style={styles.unlockLabel}>You unlocked</Text>
+            <View style={styles.unlockLevelBadge}>
+              <Text style={styles.unlockLevelText}>{nextLevel.emoji} {nextLevel.name}</Text>
+            </View>
+          </View>
+        </View>
+      )}
+
       {/* Score header */}
       <View style={[styles.hsk6HeroCard, { borderColor: header.color }]}>
         <Text style={styles.hsk6HeroEmoji}>{header.emoji}</Text>
@@ -154,15 +176,18 @@ function Hsk6FinalScreen({ score, correctCount, totalQuestions, answers, quizDat
       <View style={styles.avatarGrid}>
         {AVATAR_ORDER.map(id => {
           const av  = getAvatar(id);
-          const msg = AVATAR_CONGRATS[id]?.[tier] ?? AVATAR_CONGRATS[id]?.pass ?? '';
-          const img = tier === 'pass'
-            ? av.images.neutral
-            : (tier === 'mid' ? av.images.encourage : av.images.happy ?? av.images.encourage);
+          const msg = AVATAR_CONGRATS[id]?.[tier] ?? AVATAR_CONGRATS[id]?.pass;
+          const img = (tier === 'pass' || tier === 'mid')
+            ? av.images.encourage
+            : (av.images.neutral ?? av.images.encourage);
           return (
             <View key={id} style={styles.avatarCard}>
               <Image source={img} style={styles.avatarImg} resizeMode="cover" />
               <Text style={styles.avatarName}>{av.englishName}</Text>
-              <Text style={styles.avatarMsg}>{msg}</Text>
+              <Text style={styles.avatarMsgZh}>{msg?.zh}</Text>
+              {!chineseOnly && msg?.en && (
+                <Text style={styles.avatarMsgEn}>{msg.en}</Text>
+              )}
             </View>
           );
         })}
@@ -170,6 +195,11 @@ function Hsk6FinalScreen({ score, correctCount, totalQuestions, answers, quizDat
 
       {/* Actions */}
       <View style={styles.resultsActions}>
+        {!isLastLevel && (
+          <TouchableOpacity style={styles.nextLevelButton} onPress={onContinue} activeOpacity={0.85}>
+            <Text style={styles.nextLevelButtonText}>Continue →</Text>
+          </TouchableOpacity>
+        )}
         <TouchableOpacity style={styles.studyAgainButton} onPress={onStudyAgain} activeOpacity={0.85}>
           <Text style={styles.studyAgainButtonText}>📚 Study Again</Text>
         </TouchableOpacity>
@@ -294,30 +324,30 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
               <Text style={styles.perfectScoreSubtext}>You got all questions correct!</Text>
             </View>
           ) : (
-            incorrectQuestions.map((question) => {
-              const answer = answers[question.id];
-              const questionNumber = quizData.questions.findIndex(q => q.id === question.id) + 1;
+            incorrectQuestions.map((q) => {
+              const answer = answers[q.id];
+              const questionNumber = quizData.questions.findIndex(item => item.id === q.id) + 1;
 
               return (
-                <View key={question.id} style={styles.reviewQuestionCard}>
+                <View key={q.id} style={styles.reviewQuestionCard}>
                   <View style={styles.reviewQuestionHeader}>
                     <Text style={styles.reviewQuestionNumber}>Question {questionNumber}</Text>
                     <View style={[
                       styles.difficultyBadge,
-                      question.difficulty === 'easy' && styles.difficultyEasy,
-                      question.difficulty === 'medium' && styles.difficultyMedium,
-                      question.difficulty === 'hard' && styles.difficultyHard,
+                      q.difficulty === 'easy'   && styles.difficultyEasy,
+                      q.difficulty === 'medium' && styles.difficultyMedium,
+                      q.difficulty === 'hard'   && styles.difficultyHard,
                     ]}>
                       <Text style={styles.difficultyText}>
-                        {(question.difficulty || 'medium').toUpperCase()}
+                        {(q.difficulty || 'medium').toUpperCase()}
                       </Text>
                     </View>
                   </View>
 
                   <View style={styles.reviewQuestionText}>
-                    <Text style={styles.questionText}>{question.question}</Text>
-                    {question.question_pinyin && (
-                      <Text style={styles.questionPinyin}>{question.question_pinyin}</Text>
+                    <Text style={styles.questionText}>{q.question}</Text>
+                    {q.question_pinyin && (
+                      <Text style={styles.questionPinyin}>{q.question_pinyin}</Text>
                     )}
                   </View>
 
@@ -325,26 +355,18 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
                     <Text style={styles.reviewLabel}>❌ Your Answer:</Text>
                     <View style={styles.wrongAnswerBox}>
                       <Text style={styles.wrongAnswerText}>{answer.selected}</Text>
-                      {question.option_pinyin && (
-                        <Text style={styles.wrongAnswerPinyin}>
-                          {question.option_pinyin[question.options.indexOf(answer.selected)]}
-                        </Text>
-                      )}
                     </View>
                   </View>
 
                   <View style={styles.reviewAnswerSection}>
                     <Text style={styles.reviewLabel}>✅ Correct Answer:</Text>
                     <View style={styles.correctAnswerBox}>
-                      <Text style={styles.correctAnswerText}>{question.correct}</Text>
-                      {question.correct_pinyin && (
-                        <Text style={styles.correctAnswerPinyin}>{question.correct_pinyin}</Text>
-                      )}
+                      <Text style={styles.correctAnswerText}>{q.correct}</Text>
                     </View>
                   </View>
 
                   <Text style={styles.lessonRef}>
-                    From Lesson {question.lesson_reference}
+                    From Lesson {q.lesson_reference}
                   </Text>
                 </View>
               );
@@ -361,21 +383,20 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
     const passed = getPassed();
     const review = needsReview();
     const correctCount = Object.values(answers).filter(a => a.isCorrect).length;
-    const nextLevel = NEXT_LEVEL[currentLevelId];
 
-    // HSK6: special final screen with all avatars
-    if (currentLevelId === 'hsk6' && passed) {
+    // Passed → avatar final screen for ALL levels
+    if (passed) {
       return (
         <ScreenBackground levelId={currentLevelId}>
         <SafeAreaView style={styles.safe}>
           <StatusBar barStyle={T.statusBar} />
-          <Hsk6FinalScreen
+          <AvatarFinalScreen
             score={score}
             correctCount={correctCount}
             totalQuestions={totalQuestions}
-            answers={answers}
-            quizData={quizData}
+            levelId={currentLevelId}
             onStudyAgain={onBack}
+            onContinue={() => onComplete(score)}
             onReview={() => setShowReview(true)}
           />
         </SafeAreaView>
@@ -383,40 +404,20 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
       );
     }
 
+    // Failed → existing keep-practicing screen
     return (
       <ScreenBackground levelId={currentLevelId}>
       <SafeAreaView style={styles.safe}>
         <StatusBar barStyle={T.statusBar} />
         <ScrollView contentContainerStyle={styles.resultsContainer}>
 
-          {passed && (
-            <View style={styles.unlockCard}>
-              <Text style={styles.unlockEmoji}>🎉</Text>
-              <Text style={styles.unlockTitle}>Congratulations!</Text>
-              {nextLevel && (
-                <View style={styles.unlockLevelRow}>
-                  <Text style={styles.unlockLabel}>You unlocked</Text>
-                  <View style={styles.unlockLevelBadge}>
-                    <Text style={styles.unlockLevelText}>{nextLevel.emoji} {nextLevel.name}</Text>
-                  </View>
-                </View>
-              )}
-            </View>
-          )}
-
           <View style={styles.resultsCard}>
-            <Text style={styles.resultsEmoji}>{passed ? '🏆' : '📚'}</Text>
-            <Text style={styles.resultsTitle}>
-              {passed ? 'Level Passed!' : 'Keep Practicing!'}
-            </Text>
-            <Text style={styles.resultsSubtitle}>
-              {passed ? '恭喜！Gōng xǐ!' : '加油！Jiā yóu!'}
-            </Text>
+            <Text style={styles.resultsEmoji}>📚</Text>
+            <Text style={styles.resultsTitle}>Keep Practicing!</Text>
+            <Text style={styles.resultsSubtitle}>加油！Jiā yóu!</Text>
 
             <View style={styles.scoreCircle}>
-              <Text style={[styles.scoreText, { color: passed ? SUCCESS : ERROR }]}>
-                {score}%
-              </Text>
+              <Text style={[styles.scoreText, { color: ERROR }]}>{score}%</Text>
               <Text style={styles.scoreLabel}>Score</Text>
             </View>
 
@@ -441,7 +442,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
               Pass threshold: {PASS_SCORE}% · You scored: {score}%
             </Text>
 
-            {!passed && review && (
+            {review && (
               <View style={styles.encouragementBox}>
                 <Text style={styles.encouragementText}>
                   Your score is below 50%. Please review the exercises based on your mistakes, then try again!
@@ -449,7 +450,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
               </View>
             )}
 
-            {!passed && !review && (
+            {!review && (
               <View style={styles.encouragementBox}>
                 <Text style={styles.encouragementText}>
                   So close! You need 60% to advance. Review and try again! 💪
@@ -459,16 +460,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
           </View>
 
           <View style={styles.resultsActions}>
-            {passed && (
-              <TouchableOpacity
-                style={styles.nextLevelButton}
-                onPress={() => onComplete(score)}
-              >
-                <Text style={styles.nextLevelButtonText}>Continue →</Text>
-              </TouchableOpacity>
-            )}
-
-            {!passed && review && (
+            {review && (
               <TouchableOpacity
                 style={styles.reviewExerciseButton}
                 onPress={handleShowReviewExercise}
@@ -477,7 +469,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
               </TouchableOpacity>
             )}
 
-            {!passed && !review && (
+            {!review && (
               <TouchableOpacity style={styles.retryButton} onPress={handleRestart}>
                 <Text style={styles.retryButtonText}>🔄 Try Again</Text>
               </TouchableOpacity>
@@ -528,9 +520,9 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
       <ScrollView style={styles.scrollView} contentContainerStyle={styles.contentContainer}>
         <View style={[
           styles.difficultyBadge,
-          question.difficulty === 'easy' && styles.difficultyEasy,
+          question.difficulty === 'easy'   && styles.difficultyEasy,
           question.difficulty === 'medium' && styles.difficultyMedium,
-          question.difficulty === 'hard' && styles.difficultyHard,
+          question.difficulty === 'hard'   && styles.difficultyHard,
         ]}>
           <Text style={styles.difficultyText}>
             {(question.difficulty || 'medium').toUpperCase()}
@@ -643,7 +635,7 @@ const styles = StyleSheet.create({
   nextButtonDisabled: { backgroundColor: SLATE_TEAL, opacity: 0.5 },
   nextButtonText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 
-  // Results
+  // Unlock card
   unlockCard:       { backgroundColor: '#e8f5e9', borderRadius: 24, padding: 28, alignItems: 'center', marginBottom: 16, borderWidth: 2, borderColor: SUCCESS },
   unlockEmoji:      { fontSize: 52, marginBottom: 8 },
   unlockTitle:      { fontSize: 28, fontWeight: '900', color: SUCCESS, marginBottom: 12 },
@@ -652,6 +644,7 @@ const styles = StyleSheet.create({
   unlockLevelBadge: { backgroundColor: CARD_WHITE, borderRadius: 12, paddingHorizontal: 16, paddingVertical: 8, marginTop: 4 },
   unlockLevelText:  { fontSize: 18, fontWeight: '800', color: DEEP_NAVY },
 
+  // Results container
   resultsContainer: { flexGrow: 1, padding: 20, paddingBottom: 40 },
   resultsCard: { backgroundColor: CARD_WHITE, borderRadius: 24, padding: 32, alignItems: 'center', marginBottom: 20, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
   resultsEmoji: { fontSize: 64, marginBottom: 16 },
@@ -704,41 +697,38 @@ const styles = StyleSheet.create({
 
   wrongAnswerBox: { backgroundColor: 'rgba(196,80,58,0.10)', borderRadius: 12, padding: 14, borderWidth: 2, borderColor: ERROR },
   wrongAnswerText: { fontSize: 15, fontWeight: '600', color: ERROR },
-  wrongAnswerPinyin: { fontSize: 13, color: ERROR, fontStyle: 'italic', marginTop: 4, opacity: 0.8 },
 
   correctAnswerBox: { backgroundColor: 'rgba(45,122,74,0.10)', borderRadius: 12, padding: 14, borderWidth: 2, borderColor: SUCCESS },
   correctAnswerText: { fontSize: 15, fontWeight: '600', color: SUCCESS },
-  correctAnswerPinyin: { fontSize: 13, color: SUCCESS, fontStyle: 'italic', marginTop: 4, opacity: 0.8 },
 
-  // HSK6 Final Screen
+  // Avatar Final Screen
   hsk6HeroCard: {
     backgroundColor: CARD_WHITE, borderRadius: 24, padding: 28, alignItems: 'center',
     marginBottom: 24, borderWidth: 2,
     shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.10, shadowRadius: 12, elevation: 6,
   },
   hsk6HeroEmoji:    { fontSize: 60, marginBottom: 10 },
-  hsk6HeroTitle:    { fontSize: 30, fontWeight: '900', marginBottom: 6, textAlign: 'center' },
+  hsk6HeroTitle:    { fontSize: 28, fontWeight: '900', marginBottom: 6, textAlign: 'center' },
   hsk6HeroSubtitle: { fontSize: 14, color: SLATE_TEAL, textAlign: 'center', marginBottom: 24, lineHeight: 20 },
 
   avatarSectionTitle: {
-    fontSize: 16, fontWeight: '800', color: DEEP_NAVY,
-    textAlign: 'center', marginBottom: 16, letterSpacing: 0.5,
+    fontSize: 15, fontWeight: '800', color: DEEP_NAVY,
+    textAlign: 'center', marginBottom: 14, letterSpacing: 0.5,
   },
-  avatarGrid: {
-    flexDirection: 'row', flexWrap: 'wrap', gap: 12, marginBottom: 24,
-  },
+  avatarGrid:  { flexDirection: 'row', flexWrap: 'wrap', gap: 12, marginBottom: 24 },
   avatarCard: {
-    width: '47%', backgroundColor: CARD_WHITE, borderRadius: 18, padding: 14,
+    width: '47%', backgroundColor: CARD_WHITE, borderRadius: 18, padding: 12,
     alignItems: 'center', borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
     shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.08, shadowRadius: 6, elevation: 3,
   },
-  avatarImg:  { width: 80, height: 80, borderRadius: 40, marginBottom: 8, backgroundColor: '#f0ebe3' },
-  avatarName: { fontSize: 12, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center', marginBottom: 6 },
-  avatarMsg:  { fontSize: 11, color: SLATE_TEAL, textAlign: 'center', lineHeight: 16, fontStyle: 'italic' },
+  avatarImg:    { width: 72, height: 72, borderRadius: 36, marginBottom: 8, backgroundColor: '#f0ebe3' },
+  avatarName:   { fontSize: 11, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center', marginBottom: 5 },
+  avatarMsgZh:  { fontSize: 11, color: DEEP_NAVY, textAlign: 'center', lineHeight: 16, marginBottom: 4 },
+  avatarMsgEn:  { fontSize: 10, color: SLATE_TEAL, textAlign: 'center', lineHeight: 14, fontStyle: 'italic' },
 
   studyAgainButton: {
-    backgroundColor: WARM_ORANGE, padding: 18, borderRadius: 16, alignItems: 'center',
+    backgroundColor: WARM_ORANGE, padding: 16, borderRadius: 16, alignItems: 'center',
     shadowColor: '#000', shadowOffset: { width: 0, height: 3 }, shadowOpacity: 0.15, shadowRadius: 8, elevation: 4,
   },
-  studyAgainButtonText: { fontSize: 17, fontWeight: '900', color: CARD_WHITE },
+  studyAgainButtonText: { fontSize: 16, fontWeight: '900', color: CARD_WHITE },
 });
