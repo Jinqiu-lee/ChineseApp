@@ -229,7 +229,12 @@
       "exercises": [
         {
           "question": "Fill in: 这所学校___学生的全面发展___教育目标。",
-          "choices": ["以…为", "把…当作", "将…作", "用…成"],
+          "choices": [
+            "以…为",
+            "把…当作",
+            "将…作",
+            "用…成"
+          ],
           "correct_answer": 0
         },
         {
@@ -264,7 +269,12 @@
         },
         {
           "question": "Complete: 这位艺术家___自然为灵感来源，创作了许多美丽的作品。",
-          "choices": ["以", "用", "因为", "由于"],
+          "choices": [
+            "以",
+            "用",
+            "因为",
+            "由于"
+          ],
           "correct_answer": 0
         }
       ]
@@ -281,7 +291,12 @@
       "exercises": [
         {
           "question": "Fill in: ___心理学___，人们对美的感知因个体差异而不同。",
-          "choices": ["从…角度来看", "用…的方式看", "以…观点为", "因为…所以"],
+          "choices": [
+            "从…角度来看",
+            "用…的方式看",
+            "以…观点为",
+            "因为…所以"
+          ],
           "correct_answer": 0
         },
         {
@@ -306,7 +321,12 @@
         },
         {
           "question": "Which word can replace 角度 in 从这个角度来看?",
-          "choices": ["视角", "原因", "时间", "方法"],
+          "choices": [
+            "视角",
+            "原因",
+            "时间",
+            "方法"
+          ],
           "correct_answer": 0
         },
         {
@@ -333,12 +353,22 @@
       "exercises": [
         {
           "question": "Fill in: ___这些不同的文化观念，让世界艺术变得如此丰富。",
-          "choices": ["正是", "不仅", "由于", "究竟"],
+          "choices": [
+            "正是",
+            "不仅",
+            "由于",
+            "究竟"
+          ],
           "correct_answer": 0
         },
         {
           "question": "正是 emphasizes:",
-          "choices": ["That something is the precise/defining element", "A contrast", "Cause and effect", "A gradual change"],
+          "choices": [
+            "That something is the precise/defining element",
+            "A contrast",
+            "Cause and effect",
+            "A gradual change"
+          ],
           "correct_answer": 0
         },
         {
@@ -363,7 +393,12 @@
         },
         {
           "question": "正是 is most similar in meaning to:",
-          "choices": ["Precisely / exactly", "However", "Moreover", "Due to"],
+          "choices": [
+            "Precisely / exactly",
+            "However",
+            "Moreover",
+            "Due to"
+          ],
           "correct_answer": 0
         }
       ]
@@ -374,13 +409,25 @@
       "title": "The Art of Chinese Calligraphy",
       "title_chinese": "中国书法艺术",
       "content": "中国书法 (Zhōngguó shūfǎ), Chinese calligraphy, is one of the highest art forms in Chinese culture. Unlike in Western art where writing is functional, in China, the act of writing Chinese characters has been elevated to a fine art for over two thousand years.\n\nCalligraphy is not merely about legibility — it is about expressing the writer's character, emotion, and spirit through the brush. The four treasures of the study (文房四宝 wénfáng sìbǎo) — brush (笔 bǐ), ink (墨 mò), paper (纸 zhǐ), and inkstone (砚 yàn) — are the classical tools of the calligrapher.\n\nThere are five main script styles: Seal Script (篆书 zhuànshū), Clerical Script (隶书 lìshū), Regular Script (楷书 kǎishū), Running Script (行书 xíngshū), and Cursive Script (草书 cǎoshū). Each has its own beauty — from the precise elegance of 楷书 to the fluid, almost abstract expressiveness of 草书.\n\nIn Chinese aesthetics, calligraphy shares the same values as painting: the importance of 气韵 (qìyùn, spirit and rhythm), 意境 (yìjìng, artistic conception), and the balance between movement and stillness. A great calligrapher, like a great artist, expresses something that transcends the written word itself.",
-      "vocabulary_highlight": ["书法", "文房四宝", "楷书", "草书", "气韵", "意境"]
+      "vocabulary_highlight": [
+        "书法",
+        "文房四宝",
+        "楷书",
+        "草书",
+        "气韵",
+        "意境"
+      ]
     }
   ],
   "quiz": [
     {
       "question": "以…为 is used to:",
-      "choices": ["Take something as a standard or criterion", "Show a contrast", "Indicate a cause", "Describe a sequence"],
+      "choices": [
+        "Take something as a standard or criterion",
+        "Show a contrast",
+        "Indicate a cause",
+        "Describe a sequence"
+      ],
       "correct_answer": 0
     },
     {
@@ -395,7 +442,12 @@
     },
     {
       "question": "正是 adds emphasis meaning:",
-      "choices": ["It is precisely / exactly this", "However", "Due to", "Furthermore"],
+      "choices": [
+        "It is precisely / exactly this",
+        "However",
+        "Due to",
+        "Furthermore"
+      ],
       "correct_answer": 0
     },
     {
@@ -410,37 +462,121 @@
     },
     {
       "question": "Which word means 'to resonate / resonance'?",
-      "choices": ["共鸣", "感知", "传达", "联想"],
+      "choices": [
+        "共鸣",
+        "感知",
+        "传达",
+        "联想"
+      ],
       "correct_answer": 0
     },
     {
       "question": "Fill in: ___这种包容的态度，她能够欣赏不同风格的艺术。",
-      "choices": ["正是", "不过", "由于", "究竟"],
+      "choices": [
+        "正是",
+        "不过",
+        "由于",
+        "究竟"
+      ],
       "correct_answer": 0
     }
   ],
   "dialogues": [
     {
       "title": "The nature of beauty",
-      "speakers": ["奥斯汀", "兰特"],
+      "speakers": {
+        "A": {
+          "name": "奥斯汀",
+          "role": "friend",
+          "gender": "female"
+        },
+        "B": {
+          "name": "兰特",
+          "role": "friend",
+          "gender": "female"
+        }
+      },
       "lines": [
-        { "speaker": "奥斯汀", "chinese": "兰特，你觉得美有没有客观标准？", "pinyin": "Lán tè, nǐ jué de měi yǒu méi yǒu kè guān biāo zhǔn?", "english": "Elana, do you think there is an objective standard for beauty?" },
-        { "speaker": "兰特", "chinese": "我认为美是以感知为基础的，从心理角度来看，它与个人经历密切相关。", "pinyin": "Wǒ rèn wéi měi shì yǐ gǎn zhī wéi jī chǔ de, cóng xīn lǐ jiǎo dù lái kàn, tā yǔ gè rén jīng lì mì qiē xiāng guān.", "english": "I believe beauty is based on perception. From a psychological perspective, it is closely related to personal experience." },
-        { "speaker": "奥斯汀", "chinese": "但中国传统美学以和谐自然为美，这是不是某种共同的感受？", "pinyin": "Dàn Zhōng guó chuán tǒng měi xué yǐ hé xié zì rán wéi měi, zhè shì bú shì mǒu zhǒng gòng tóng de gǎn shòu?", "english": "But traditional Chinese aesthetics takes harmonious nature as beautiful — isn't that a kind of shared feeling?" },
-        { "speaker": "兰特", "chinese": "对，正是对自然的共鸣，让不同文化的人都能欣赏山水画的意境。", "pinyin": "Duì, zhèng shì duì zì rán de gòng míng, ràng bù tóng wén huà de rén dōu néng xīn shǎng shān shuǐ huà de yì jìng.", "english": "Right — it is precisely the resonance with nature that allows people from different cultures to appreciate the artistic conception of landscape paintings." },
-        { "speaker": "奥斯汀", "chinese": "也许美不需要解释——只需要沉浸其中，就能感受到它的力量。", "pinyin": "Yě xǔ měi bù xū yào jiě shì — zhǐ xū yào chén jìn qí zhōng, jiù néng gǎn shòu dào tā de lì liàng.", "english": "Perhaps beauty needs no explanation — just immerse yourself in it, and you can feel its power." }
-      ]
+        {
+          "speaker": "A",
+          "chinese": "兰特，你觉得美有没有客观标准？",
+          "pinyin": "Lán tè, nǐ jué de měi yǒu méi yǒu kè guān biāo zhǔn?",
+          "english": "Elena, do you think there is an objective standard for beauty?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我认为美是以感知为基础的，从心理角度来看，它与个人经历密切相关。",
+          "pinyin": "Wǒ rèn wéi měi shì yǐ gǎn zhī wéi jī chǔ de, cóng xīn lǐ jiǎo dù lái kàn, tā yǔ gè rén jīng lì mì qiē xiāng guān.",
+          "english": "I believe beauty is based on perception. From a psychological perspective, it is closely related to personal experience."
+        },
+        {
+          "speaker": "A",
+          "chinese": "但中国传统美学以和谐自然为美，这是不是某种共同的感受？",
+          "pinyin": "Dàn Zhōng guó chuán tǒng měi xué yǐ hé xié zì rán wéi měi, zhè shì bú shì mǒu zhǒng gòng tóng de gǎn shòu?",
+          "english": "But traditional Chinese aesthetics takes harmonious nature as beautiful — isn't that a kind of shared feeling?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "对，正是对自然的共鸣，让不同文化的人都能欣赏山水画的意境。",
+          "pinyin": "Duì, zhèng shì duì zì rán de gòng míng, ràng bù tóng wén huà de rén dōu néng xīn shǎng shān shuǐ huà de yì jìng.",
+          "english": "Right — it is precisely the resonance with nature that allows people from different cultures to appreciate the artistic conception of landscape paintings."
+        },
+        {
+          "speaker": "A",
+          "chinese": "也许美不需要解释——只需要沉浸其中，就能感受到它的力量。",
+          "pinyin": "Yě xǔ měi bù xū yào jiě shì — zhǐ xū yào chén jìn qí zhōng, jiù néng gǎn shòu dào tā de lì liàng.",
+          "english": "Perhaps beauty needs no explanation — just immerse yourself in it, and you can feel its power."
+        }
+      ],
+      "id": 1
     },
     {
       "title": "On calligraphy and expression",
-      "speakers": ["奥斯汀", "兰特"],
+      "speakers": {
+        "A": {
+          "name": "奥斯汀",
+          "role": "friend",
+          "gender": "female"
+        },
+        "B": {
+          "name": "兰特",
+          "role": "friend",
+          "gender": "female"
+        }
+      },
       "lines": [
-        { "speaker": "兰特", "chinese": "我最近开始学书法，才发现每一笔都蕴含了书写者的情感。", "pinyin": "Wǒ zuì jìn kāi shǐ xué shū fǎ, cái fā xiàn měi yī bǐ dōu yùn hán le shū xiě zhě de qíng gǎn.", "english": "I recently started learning calligraphy, and only then did I discover that every brushstroke contains the writer's emotions." },
-        { "speaker": "奥斯汀", "chinese": "是啊，从艺术角度来看，书法和绘画其实有同样的精神追求。", "pinyin": "Shì a, cóng yì shù jiǎo dù lái kàn, shū fǎ hé huì huà qí shí yǒu tóng yàng de jīng shén zhuī qiú.", "english": "Indeed, from an artistic perspective, calligraphy and painting actually share the same spiritual aspiration." },
-        { "speaker": "兰特", "chinese": "草书看起来像抽象画，正是那种自由的线条让人产生独特的联想。", "pinyin": "Cǎo shū kàn qǐ lái xiàng chōu xiàng huà, zhèng shì nà zhǒng zì yóu de xiàn tiáo ràng rén chǎn shēng dú tè de lián xiǎng.", "english": "Cursive script looks like abstract art — it is precisely those free-flowing strokes that give rise to unique associations." },
-        { "speaker": "奥斯汀", "chinese": "这让我想到，无论是书法还是抽象画，都以情感传达为核心。", "pinyin": "Zhè ràng wǒ xiǎng dào, wú lùn shì shū fǎ hái shì chōu xiàng huà, dōu yǐ qíng gǎn chuán dá wéi hé xīn.", "english": "This makes me think — whether it's calligraphy or abstract art, both take emotional expression as the core." },
-        { "speaker": "兰特", "chinese": "对，艺术的最高境界，就是超越语言和形式，直接触动人心。", "pinyin": "Duì, yì shù de zuì gāo jìng jiè, jiù shì chāo yuè yǔ yán hé xíng shì, zhí jiē chù dòng rén xīn.", "english": "Right — the highest realm of art is to transcend language and form, and touch the heart directly." }
-      ]
+        {
+          "speaker": "B",
+          "chinese": "我最近开始学书法，才发现每一笔都蕴含了书写者的情感。",
+          "pinyin": "Wǒ zuì jìn kāi shǐ xué shū fǎ, cái fā xiàn měi yī bǐ dōu yùn hán le shū xiě zhě de qíng gǎn.",
+          "english": "I recently started learning calligraphy, and only then did I discover that every brushstroke contains the writer's emotions."
+        },
+        {
+          "speaker": "A",
+          "chinese": "是啊，从艺术角度来看，书法和绘画其实有同样的精神追求。",
+          "pinyin": "Shì a, cóng yì shù jiǎo dù lái kàn, shū fǎ hé huì huà qí shí yǒu tóng yàng de jīng shén zhuī qiú.",
+          "english": "Indeed, from an artistic perspective, calligraphy and painting actually share the same spiritual aspiration."
+        },
+        {
+          "speaker": "B",
+          "chinese": "草书看起来像抽象画，正是那种自由的线条让人产生独特的联想。",
+          "pinyin": "Cǎo shū kàn qǐ lái xiàng chōu xiàng huà, zhèng shì nà zhǒng zì yóu de xiàn tiáo ràng rén chǎn shēng dú tè de lián xiǎng.",
+          "english": "Cursive script looks like abstract art — it is precisely those free-flowing strokes that give rise to unique associations."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这让我想到，无论是书法还是抽象画，都以情感传达为核心。",
+          "pinyin": "Zhè ràng wǒ xiǎng dào, wú lùn shì shū fǎ hái shì chōu xiàng huà, dōu yǐ qíng gǎn chuán dá wéi hé xīn.",
+          "english": "This makes me think — whether it's calligraphy or abstract art, both take emotional expression as the core."
+        },
+        {
+          "speaker": "B",
+          "chinese": "对，艺术的最高境界，就是超越语言和形式，直接触动人心。",
+          "pinyin": "Duì, yì shù de zuì gāo jìng jiè, jiù shì chāo yuè yǔ yán hé xíng shì, zhí jiē chù dòng rén xīn.",
+          "english": "Right — the highest realm of art is to transcend language and form, and touch the heart directly."
+        }
+      ],
+      "id": 2
     }
   ]
 }

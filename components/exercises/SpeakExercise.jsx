@@ -300,7 +300,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
           {isRespond && (
             <>
               <Text style={styles.questionLabel}>Question:</Text>
-              <Text style={[styles.chinese, { fontSize: 28 }]}>{exercise.questionChinese}</Text>
+              <Text style={[styles.chinese, { fontSize: 22 }]}>{exercise.questionChinese}</Text>
               <Text style={styles.pinyin}>{exercise.questionPinyin}</Text>
               <TouchableOpacity style={styles.listenBtn} onPress={() => speakChinese(exercise.questionChinese)}>
                 <Text style={styles.listenBtnText}>🔊 Play question</Text>
@@ -365,7 +365,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20, gap: 16,
   },
-  instruction: { fontSize: 18, fontWeight: '700', color: VG.gold, textAlign: 'center', backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, alignSelf: 'center' },
+  instruction: { fontSize: 14, fontWeight: '700', color: VG.gold, textAlign: 'center', backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, alignSelf: 'center' },
 
   emojiRefCard: {
     backgroundColor: CARD_WHITE, borderRadius: 20,
@@ -383,10 +383,10 @@ const styles = StyleSheet.create({
     shadowColor: VG.shadow, shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.18, shadowRadius: 12, elevation: 5,
   },
-  questionLabel: { fontSize: 12, fontWeight: '700', color: VG.onCardMuted, textTransform: 'uppercase', letterSpacing: 0.8 },
-  chinese: { fontSize: 44, fontWeight: '900', color: VG.onCard },
-  pinyin:  { fontSize: 17, color: VG.orange, fontStyle: 'italic' },
-  english: { fontSize: 20, fontWeight: '700', color: VG.onCard, textAlign: 'center' },
+  questionLabel: { fontSize: 11, fontWeight: '700', color: VG.onCardMuted, textTransform: 'uppercase', letterSpacing: 0.8 },
+  chinese: { fontSize: 26, fontWeight: '900', color: VG.onCard },
+  pinyin:  { fontSize: 14, color: VG.orange, fontStyle: 'italic' },
+  english: { fontSize: 16, fontWeight: '700', color: VG.onCard, textAlign: 'center' },
   divider: { width: '100%', height: 1, backgroundColor: 'rgba(28,42,68,0.1)', marginVertical: 8 },
   listenBtn: {
     marginTop: 4, backgroundColor: '#FFF8ED',
@@ -410,7 +410,7 @@ const styles = StyleSheet.create({
   },
   hintLabel:   { fontSize: 11, fontWeight: '700', color: VG.gold, textTransform: 'uppercase', letterSpacing: 0.8 },
   hintPinyin:  { fontSize: 18, color: VG.cream, fontStyle: 'italic', textAlign: 'center' },
-  hintChinese: { fontSize: 28, fontWeight: '900', color: VG.cream, textAlign: 'center' },
+  hintChinese: { fontSize: 24, fontWeight: '900', color: VG.cream, textAlign: 'center' },
   hintEnglish: { fontSize: 14, color: VG.creamMuted, textAlign: 'center' },
 
   attemptsText: { fontSize: 13, color: VG.creamMuted },
@@ -422,8 +422,8 @@ const styles = StyleSheet.create({
     shadowColor: VG.shadow, shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.25, shadowRadius: 10, elevation: 5,
   },
-  micIcon: { fontSize: 36 },
-  micBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
+  micIcon: { fontSize: 28 },
+  micBtnText: { fontSize: 15, fontWeight: '800', color: CARD_WHITE },
 
   recordingRefCard: {
     backgroundColor: CARD_WHITE, borderRadius: 16, paddingHorizontal: 20, paddingVertical: 14,
@@ -433,16 +433,16 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.12, shadowRadius: 8, elevation: 3,
   },
   recordingRefLabel:   { fontSize: 10, fontWeight: '800', color: VG.orange, letterSpacing: 1, marginBottom: 2 },
-  recordingRefChinese: { fontSize: 28, fontWeight: '900', color: VG.onCard, textAlign: 'center' },
-  recordingRefPinyin:  { fontSize: 14, color: VG.orange, fontStyle: 'italic', textAlign: 'center' },
-  recordingRefEnglish: { fontSize: 14, fontWeight: '600', color: VG.onCardMid, textAlign: 'center', lineHeight: 20 },
+  recordingRefChinese: { fontSize: 18, fontWeight: '900', color: VG.onCard, textAlign: 'center' },
+  recordingRefPinyin:  { fontSize: 12, color: VG.orange, fontStyle: 'italic', textAlign: 'center' },
+  recordingRefEnglish: { fontSize: 13, fontWeight: '600', color: VG.onCardMid, textAlign: 'center', lineHeight: 18 },
 
   recordingCard: {
     backgroundColor: '#fde8e8', borderRadius: 20, padding: 32,
     alignItems: 'center', width: '100%', borderWidth: 1,
     borderColor: 'rgba(196,80,58,0.3)', gap: 12,
   },
-  recordingIcon: { fontSize: 52 },
+  recordingIcon: { fontSize: 40 },
   recordingHint: { fontSize: 14, color: VG.error, fontWeight: '600' },
 
   stopBtn: {
@@ -463,16 +463,16 @@ const styles = StyleSheet.create({
     shadowColor: VG.shadow, shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.18, shadowRadius: 12, elevation: 5,
   },
-  resultIcon:   { fontSize: 40 },
-  accuracyPct:  { fontSize: 52, fontWeight: '900' },
-  resultMsg:    { fontSize: 17, fontWeight: '700', color: VG.onCard, textAlign: 'center' },
+  resultIcon:   { fontSize: 32 },
+  accuracyPct:  { fontSize: 40, fontWeight: '900' },
+  resultMsg:    { fontSize: 15, fontWeight: '700', color: VG.onCard, textAlign: 'center' },
   resultAnswer: {
     marginTop: 12, alignItems: 'center', paddingTop: 16,
     borderTopWidth: 1, borderTopColor: 'rgba(28,42,68,0.1)', width: '100%', gap: 4,
   },
   resultLabel:      { fontSize: 12, color: VG.onCardMuted, marginBottom: 4 },
-  resultChinese:    { fontSize: 32, fontWeight: '900', color: VG.onCard },
-  resultPinyin:     { fontSize: 15, color: VG.orange, fontStyle: 'italic' },
+  resultChinese:    { fontSize: 22, fontWeight: '900', color: VG.onCard },
+  resultPinyin:     { fontSize: 13, color: VG.orange, fontStyle: 'italic' },
   resultFullAnswer: { fontSize: 14, color: 'rgba(28,42,68,0.45)', textAlign: 'center', marginTop: 2 },
   resultEnglish:    { fontSize: 13, color: VG.onCardMuted, textAlign: 'center' },
   replayBtn: {

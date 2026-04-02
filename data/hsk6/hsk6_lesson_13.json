@@ -229,7 +229,12 @@
       "exercises": [
         {
           "question": "Fill in: 教育的目的___培养学生的独立思考能力。",
-          "choices": ["在于", "来自", "属于", "取决"],
+          "choices": [
+            "在于",
+            "来自",
+            "属于",
+            "取决"
+          ],
           "correct_answer": 0
         },
         {
@@ -264,7 +269,12 @@
         },
         {
           "question": "Complete: 艺术的价值___触动人心，而不在于技法的复杂。",
-          "choices": ["在于", "来自", "取决于是否", "原因是"],
+          "choices": [
+            "在于",
+            "来自",
+            "取决于是否",
+            "原因是"
+          ],
           "correct_answer": 0
         }
       ]
@@ -301,17 +311,32 @@
         },
         {
           "question": "In the sentence '所谓的专家，其实什么都不懂', 所谓 expresses:",
-          "choices": ["Skepticism or irony", "Genuine respect", "A definition", "A sequence"],
+          "choices": [
+            "Skepticism or irony",
+            "Genuine respect",
+            "A definition",
+            "A sequence"
+          ],
           "correct_answer": 0
         },
         {
           "question": "Fill in: ___美，其实因人而异，没有统一标准。",
-          "choices": ["所谓", "究竟", "不仅", "由于"],
+          "choices": [
+            "所谓",
+            "究竟",
+            "不仅",
+            "由于"
+          ],
           "correct_answer": 0
         },
         {
           "question": "所谓 is closest in meaning to:",
-          "choices": ["what is called / the so-called", "especially", "furthermore", "after all"],
+          "choices": [
+            "what is called / the so-called",
+            "especially",
+            "furthermore",
+            "after all"
+          ],
           "correct_answer": 0
         }
       ]
@@ -328,12 +353,22 @@
       "exercises": [
         {
           "question": "In '这不过是一幅普通的画', 不过 means:",
-          "choices": ["Only / merely", "However", "Moreover", "Due to"],
+          "choices": [
+            "Only / merely",
+            "However",
+            "Moreover",
+            "Due to"
+          ],
           "correct_answer": 0
         },
         {
           "question": "In '我同意你的观点，不过有一点我想补充', 不过 means:",
-          "choices": ["However", "Only", "Due to", "Moreover"],
+          "choices": [
+            "However",
+            "Only",
+            "Due to",
+            "Moreover"
+          ],
           "correct_answer": 0
         },
         {
@@ -358,7 +393,12 @@
         },
         {
           "question": "Fill in: 抽象画看起来复杂，___其实表达的是最简单的情感。",
-          "choices": ["不过", "由于", "究竟", "所谓"],
+          "choices": [
+            "不过",
+            "由于",
+            "究竟",
+            "所谓"
+          ],
           "correct_answer": 0
         }
       ]
@@ -369,23 +409,45 @@
       "title": "Chinese Ink Painting: Art in Simplicity",
       "title_chinese": "中国水墨画",
       "content": "中国水墨画 (Zhōngguó shuǐmò huà), Chinese ink painting, is one of the oldest and most distinguished art forms in the world, dating back over a thousand years. Using only black ink (and sometimes light washes of color) on rice paper, Chinese painters create works of remarkable depth and expressiveness.\n\nThe philosophy behind ink painting is deeply influenced by Taoism (道家 Dàojiā) and Zen Buddhism (禅宗 Chánzōng): the idea that emptiness (空白 kòngbái) is as meaningful as what is painted. The unpainted space in an ink painting is not an omission — it is an invitation for the viewer's imagination to complete the scene.\n\nFamous subjects include mountains and rivers (山水 shānshuǐ), bamboo (竹 zhú), plum blossoms (梅花 méihuā), and birds. Each carries symbolic meaning: bamboo represents resilience and integrity; plum blossoms bloom in winter, symbolizing perseverance.\n\nIn this way, Chinese ink painting shares a philosophy with abstract art — both invite the viewer to find personal meaning. Both also challenge the idea that beauty must look like reality.",
-      "vocabulary_highlight": ["水墨画", "空白", "山水", "竹", "梅花", "道家"]
+      "vocabulary_highlight": [
+        "水墨画",
+        "空白",
+        "山水",
+        "竹",
+        "梅花",
+        "道家"
+      ]
     }
   ],
   "quiz": [
     {
       "question": "在于 is used to indicate:",
-      "choices": ["Where the essence or key of something lies", "Cause and effect", "A contrast", "A sequence"],
+      "choices": [
+        "Where the essence or key of something lies",
+        "Cause and effect",
+        "A contrast",
+        "A sequence"
+      ],
       "correct_answer": 0
     },
     {
       "question": "所谓 can express:",
-      "choices": ["A definition or gentle skepticism about a term", "Only strong praise", "A condition", "A time expression"],
+      "choices": [
+        "A definition or gentle skepticism about a term",
+        "Only strong praise",
+        "A condition",
+        "A time expression"
+      ],
       "correct_answer": 0
     },
     {
       "question": "In '这不过是一种风格', 不过 means:",
-      "choices": ["Only / merely", "However", "Moreover", "Due to"],
+      "choices": [
+        "Only / merely",
+        "However",
+        "Moreover",
+        "Due to"
+      ],
       "correct_answer": 0
     },
     {
@@ -400,37 +462,121 @@
     },
     {
       "question": "Which word means 'subjective'?",
-      "choices": ["主观", "抽象", "具体", "形式"],
+      "choices": [
+        "主观",
+        "抽象",
+        "具体",
+        "形式"
+      ],
       "correct_answer": 0
     },
     {
       "question": "Fill in: 美的定义___个人的感受，每个人的标准都不同。",
-      "choices": ["在于", "取决", "来自于", "属于"],
+      "choices": [
+        "在于",
+        "取决",
+        "来自于",
+        "属于"
+      ],
       "correct_answer": 0
     }
   ],
   "dialogues": [
     {
       "title": "What makes something beautiful?",
-      "speakers": ["奥斯汀", "但丁"],
+      "speakers": {
+        "A": {
+          "name": "奥斯汀",
+          "role": "friend",
+          "gender": "female"
+        },
+        "B": {
+          "name": "但丁",
+          "role": "friend",
+          "gender": "male"
+        }
+      },
       "lines": [
-        { "speaker": "奥斯汀", "chinese": "但丁，你觉得抽象艺术算不算真正的艺术？", "pinyin": "Dàn dīng, nǐ jué de chōu xiàng yì shù suàn bú suàn zhēn zhèng de yì shù?", "english": "Dante, do you think abstract art counts as true art?" },
-        { "speaker": "但丁", "chinese": "我觉得艺术的本质在于表达，而不在于形式是否具体。", "pinyin": "Wǒ jué de yì shù de běn zhì zài yú biǎo dá, ér bú zài yú xíng shì shì fǒu jù tǐ.", "english": "I think the essence of art lies in expression, not in whether the form is concrete or not." },
-        { "speaker": "奥斯汀", "chinese": "不过，很多人看不懂抽象画，觉得不过是随意涂鸦而已。", "pinyin": "Bú guò, hěn duō rén kàn bù dǒng chōu xiàng huà, jué de bú guò shì suí yì tú yā ér yǐ.", "english": "However, many people can't understand abstract paintings and feel they're only random scribbles." },
-        { "speaker": "但丁", "chinese": "所谓的'看不懂'，其实是欣赏方式不同。抽象艺术需要用感受去理解，而不是用眼睛去辨认。", "pinyin": "Suǒ wèi de 'kàn bù dǒng', qí shí shì xīn shǎng fāng shì bù tóng. Chōu xiàng yì shù xū yào yòng gǎn shòu qù lǐ jiě, ér bú shì yòng yǎn jīng qù biàn rèn.", "english": "The so-called 'inability to understand' is actually just a different way of appreciating. Abstract art needs to be understood through feeling, not through recognizing what you see." },
-        { "speaker": "奥斯汀", "chinese": "这倒是。不过我还是更喜欢水墨山水那种意境。", "pinyin": "Zhè dào shì. Bú guò wǒ hái shì gèng xǐ huān shuǐ mò shān shuǐ nà zhǒng yì jìng.", "english": "That makes sense. But I still prefer the kind of artistic mood found in ink landscape paintings." }
-      ]
+        {
+          "speaker": "A",
+          "chinese": "但丁，你觉得抽象艺术算不算真正的艺术？",
+          "pinyin": "Dàn dīng, nǐ jué de chōu xiàng yì shù suàn bú suàn zhēn zhèng de yì shù?",
+          "english": "Dante, do you think abstract art counts as true art?"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我觉得艺术的本质在于表达，而不在于形式是否具体。",
+          "pinyin": "Wǒ jué de yì shù de běn zhì zài yú biǎo dá, ér bú zài yú xíng shì shì fǒu jù tǐ.",
+          "english": "I think the essence of art lies in expression, not in whether the form is concrete or not."
+        },
+        {
+          "speaker": "A",
+          "chinese": "不过，很多人看不懂抽象画，觉得不过是随意涂鸦而已。",
+          "pinyin": "Bú guò, hěn duō rén kàn bù dǒng chōu xiàng huà, jué de bú guò shì suí yì tú yā ér yǐ.",
+          "english": "However, many people can't understand abstract paintings and feel they're only random scribbles."
+        },
+        {
+          "speaker": "B",
+          "chinese": "所谓的'看不懂'，其实是欣赏方式不同。抽象艺术需要用感受去理解，而不是用眼睛去辨认。",
+          "pinyin": "Suǒ wèi de 'kàn bù dǒng', qí shí shì xīn shǎng fāng shì bù tóng. Chōu xiàng yì shù xū yào yòng gǎn shòu qù lǐ jiě, ér bú shì yòng yǎn jīng qù biàn rèn.",
+          "english": "The so-called 'inability to understand' is actually just a different way of appreciating. Abstract art needs to be understood through feeling, not through recognizing what you see."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这倒是。不过我还是更喜欢水墨山水那种意境。",
+          "pinyin": "Zhè dào shì. Bú guò wǒ hái shì gèng xǐ huān shuǐ mò shān shuǐ nà zhǒng yì jìng.",
+          "english": "That makes sense. But I still prefer the kind of artistic mood found in ink landscape paintings."
+        }
+      ],
+      "id": 1
     },
     {
       "title": "Discussing Chinese ink painting",
-      "speakers": ["奥斯汀", "但丁"],
+      "speakers": {
+        "A": {
+          "name": "奥斯汀",
+          "role": "friend",
+          "gender": "female"
+        },
+        "B": {
+          "name": "但丁",
+          "role": "friend",
+          "gender": "male"
+        }
+      },
       "lines": [
-        { "speaker": "但丁", "chinese": "我最近迷上了中国水墨画，觉得它和西方抽象艺术有相通之处。", "pinyin": "Wǒ zuì jìn mí shàng le Zhōng guó shuǐ mò huà, jué de tā hé Xī fāng chōu xiàng yì shù yǒu xiāng tōng zhī chù.", "english": "I've recently become fascinated with Chinese ink painting — I feel it has something in common with Western abstract art." },
-        { "speaker": "奥斯汀", "chinese": "对，水墨画里的空白也是一种表达，这在于画家对'无'的理解。", "pinyin": "Duì, shuǐ mò huà lǐ de kòng bái yě shì yī zhǒng biǎo dá, zhè zài yú huà jiā duì 'wú' de lǐ jiě.", "english": "Right, the blank space in ink paintings is also a form of expression — it lies in the painter's understanding of 'emptiness'." },
-        { "speaker": "但丁", "chinese": "所谓留白，不过是让观者用自己的想象力去填补空间。", "pinyin": "Suǒ wèi liú bái, bú guò shì ràng guān zhě yòng zì jǐ de xiǎng xiàng lì qù tián bǔ kōng jiān.", "english": "The so-called 'leaving space blank' is only inviting the viewer to fill the space with their own imagination." },
-        { "speaker": "奥斯汀", "chinese": "这和抽象艺术的核心理念真的非常接近——艺术的意义在于每个人的独特解读。", "pinyin": "Zhè hé chōu xiàng yì shù de hé xīn lǐ niàn zhēn de fēi cháng jiē jìn — yì shù de yì yì zài yú měi gè rén de dú tè jiě dú.", "english": "This is really very close to the core concept of abstract art — the meaning of art lies in each person's unique interpretation." },
-        { "speaker": "但丁", "chinese": "不过，欣赏任何艺术都需要一颗开放的心，这才是最重要的。", "pinyin": "Bú guò, xīn shǎng rèn hé yì shù dōu xū yào yī kē kāi fàng de xīn, zhè cái shì zuì zhòng yào de.", "english": "However, appreciating any art requires an open heart — that is the most important thing." }
-      ]
+        {
+          "speaker": "B",
+          "chinese": "我最近迷上了中国水墨画，觉得它和西方抽象艺术有相通之处。",
+          "pinyin": "Wǒ zuì jìn mí shàng le Zhōng guó shuǐ mò huà, jué de tā hé Xī fāng chōu xiàng yì shù yǒu xiāng tōng zhī chù.",
+          "english": "I've recently become fascinated with Chinese ink painting — I feel it has something in common with Western abstract art."
+        },
+        {
+          "speaker": "A",
+          "chinese": "对，水墨画里的空白也是一种表达，这在于画家对'无'的理解。",
+          "pinyin": "Duì, shuǐ mò huà lǐ de kòng bái yě shì yī zhǒng biǎo dá, zhè zài yú huà jiā duì 'wú' de lǐ jiě.",
+          "english": "Right, the blank space in ink paintings is also a form of expression — it lies in the painter's understanding of 'emptiness'."
+        },
+        {
+          "speaker": "B",
+          "chinese": "所谓留白，不过是让观者用自己的想象力去填补空间。",
+          "pinyin": "Suǒ wèi liú bái, bú guò shì ràng guān zhě yòng zì jǐ de xiǎng xiàng lì qù tián bǔ kōng jiān.",
+          "english": "The so-called 'leaving space blank' is only inviting the viewer to fill the space with their own imagination."
+        },
+        {
+          "speaker": "A",
+          "chinese": "这和抽象艺术的核心理念真的非常接近——艺术的意义在于每个人的独特解读。",
+          "pinyin": "Zhè hé chōu xiàng yì shù de hé xīn lǐ niàn zhēn de fēi cháng jiē jìn — yì shù de yì yì zài yú měi gè rén de dú tè jiě dú.",
+          "english": "This is really very close to the core concept of abstract art — the meaning of art lies in each person's unique interpretation."
+        },
+        {
+          "speaker": "B",
+          "chinese": "不过，欣赏任何艺术都需要一颗开放的心，这才是最重要的。",
+          "pinyin": "Bú guò, xīn shǎng rèn hé yì shù dōu xū yào yī kē kāi fàng de xīn, zhè cái shì zuì zhòng yào de.",
+          "english": "However, appreciating any art requires an open heart — that is the most important thing."
+        }
+      ],
+      "id": 2
     }
   ]
 }

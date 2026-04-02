@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
     shadowColor: VG.shadow, shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.18, shadowRadius: 12, elevation: 5,
   },
-  sentence: { fontSize: 28, fontWeight: '800', color: VG.onCard, textAlign: 'center', lineHeight: 38 },
+  sentence: { fontSize: 24, fontWeight: '800', color: VG.onCard, textAlign: 'center', lineHeight: 34 },
   sentencePinyin: { fontSize: 14, color: VG.orange, fontStyle: 'italic', marginTop: 8, textAlign: 'center' },
   feedback: { fontSize: 14, marginTop: 10, fontWeight: '600' },
   feedbackCorrect: { color: VG.success },
@@ -108,6 +108,6 @@ const styles = StyleSheet.create({
   choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.success, minWidth: '42%', alignItems: 'center' },
   choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.error, minWidth: '42%', alignItems: 'center' },
   choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.10)', minWidth: '42%', alignItems: 'center' },
-  choiceText: { fontSize: 22, fontWeight: '800', color: VG.cream },
+  choiceText: { fontSize: 18, fontWeight: '800', color: VG.cream },
   choicePinyin: { fontSize: 12, color: VG.gold, fontStyle: 'italic', marginTop: 4 },
 });

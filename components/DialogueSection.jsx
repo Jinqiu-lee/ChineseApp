@@ -85,7 +85,7 @@ export default function DialogueSection({ dialogues = [], lessonNumber, levelId 
       <Text style={styles.sectionTitle}>💬 Dialogues ({dialogues.length})</Text>
       {dialogues.map((dialogue, idx) => (
         <DialogueCard
-          key={dialogue.id}
+          key={dialogue.id ?? idx}
           dialogue={replaceDialogueRoles(dialogue, avatarId, idx)}
           lessonNumber={lessonNumber}
           levelId={levelId}

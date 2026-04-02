@@ -103,12 +103,15 @@ export const NAME_LOOKUP = {
   '李白':  { pinyin: 'Lǐ Bái',     english: 'Li Bai'     },
   '鲁迅':  { pinyin: 'Lǔ Xùn',     english: 'Lu Xun'     },
   '但丁':  { pinyin: 'Dàn Dīng',   english: 'Dan Ding'   },
-  '加缪':  { pinyin: 'Jiā Móu',    english: 'Jia Mou'    },
+  '加缪':  { pinyin: 'Jiā Móu',    english: 'Camus'      },
   '奥斯汀':{ pinyin: 'Ào Sī Tīng', english: 'Ao Siting'  },
   '兰特':  { pinyin: 'Lán Tè',     english: 'Ferrante'   },
   '慈欣':  { pinyin: 'Cí Xīn',     english: 'Cixin'      },
+  // Titles used as character names in dialogue lines
+  '李教授':{ pinyin: 'Lǐ jiào shòu', english: 'Professor Li' },
+  '王顾问':{ pinyin: 'Wáng gù wèn',  english: 'Advisor Wang' },
   // Famous artists and writers (used as replacement names in JSON data)
-  '梵高':  { pinyin: 'Fán Gāo',    english: 'Van Gogh'   },
+  '梵高':  { pinyin: 'Fàn Gāo',    english: 'Van Gogh'   },
   '毕加索':{ pinyin: 'Bì Jiā Suǒ', english: 'Picasso'    },
   '苏轼':  { pinyin: 'Sū Shì',     english: 'Su Shi'     },
   '萨特':  { pinyin: 'Sà Tè',      english: 'Sartre'     },

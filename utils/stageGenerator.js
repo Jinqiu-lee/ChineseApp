@@ -282,6 +282,7 @@ function tokenizeSentence(chineseSentence, vocab) {
   while (i < chineseSentence.length) {
     const ch = chineseSentence[i];
     if (ch === ' ' || ch === '　') { i++; continue; }
+    if (ch === '，') { raw.push('，'); i++; continue; } // keep comma as its own tile
     if (/[\u3000-\u303f\uff00-\uffef，。！？、；：""''（）【】《》…—~·]/.test(ch)) {
       i++; continue;
     }
@@ -303,7 +304,10 @@ function tokenizeSentence(chineseSentence, vocab) {
   const tokens = [];
   let buf = '';
   for (const t of raw) {
-    if (t.length === 1 && !ALWAYS_SINGLE.has(t)) {
+    if (t === '，') {
+      if (buf) { tokens.push(buf); buf = ''; }
+      tokens.push(t);
+    } else if (t.length === 1 && !ALWAYS_SINGLE.has(t)) {
       buf += t;
     } else {
       if (buf) { tokens.push(buf); buf = ''; }
@@ -531,8 +535,10 @@ function makeArrange(sentence, allVocab) {
   const tokens = tokenizeSentence(sentence.chinese, allVocab);
   if (tokens.length < 2) return null;
   // Reject if more than 30% of tiles are single characters — too many fragments
-  const singleCount = tokens.filter(t => t.length === 1).length;
-  if (tokens.length > 3 && singleCount / tokens.length > 0.3) return null;
+  // Exclude punctuation tiles (，) from the fragment count
+  const wordTokens = tokens.filter(t => t !== '，');
+  const singleCount = wordTokens.filter(t => t.length === 1).length;
+  if (wordTokens.length > 3 && singleCount / wordTokens.length > 0.3) return null;
   const pinyinMap = buildPinyinMap(allVocab);
   return {
     type: 'arrange',

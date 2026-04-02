@@ -194,6 +194,7 @@ function tokenizeSentence(chineseSentence, vocab) {
   while (i < chineseSentence.length) {
     const ch = chineseSentence[i];
     if (ch === " " || ch === "　") { i++; continue; }
+    if (ch === '，') { raw.push('，'); i++; continue; } // keep comma as its own tile
     if (/[\u3000-\u303f\uff00-\uffef，。！？、；：""''（）【】《》…—~·]/.test(ch)) {
       i++; continue;
     }
@@ -215,7 +216,10 @@ function tokenizeSentence(chineseSentence, vocab) {
   const tokens = [];
   let buf = "";
   for (const t of raw) {
-    if (t.length === 1 && !ALWAYS_SINGLE.has(t)) {
+    if (t === '，') {
+      if (buf) { tokens.push(buf); buf = ""; }
+      tokens.push(t);
+    } else if (t.length === 1 && !ALWAYS_SINGLE.has(t)) {
       buf += t;
     } else {
       if (buf) { tokens.push(buf); buf = ""; }
