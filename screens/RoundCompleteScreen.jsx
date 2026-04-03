@@ -1,10 +1,11 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, StatusBar } from 'react-native';
+import React, { useState, useEffect, useRef } from 'react';
+import { View, Text, Image, TouchableOpacity, StyleSheet, StatusBar, Animated } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import WaveBackground from '../components/WaveBackground';
 import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
+import { getVanGoghMessage } from '../data/vanGoghMessages';
 
 const ROUND_LABELS = { 1: 'Round 1 · Learn', 2: 'Round 2 · Practice', 3: 'Round 3 · Master' };
 const ROUND_EMOJIS = { 1: '🎉', 2: '🌟', 3: '🏆' };
@@ -18,6 +19,22 @@ export default function RoundCompleteScreen({
   levelId = 'hsk1',
 }) {
   const T = LEVEL_SCREEN_PALETTES[levelId] || LEVEL_SCREEN_PALETTES.hsk1;
+
+  const [vanGoghMsg, setVanGoghMsg] = useState(null);
+  const vgOpacity = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    setVanGoghMsg(getVanGoghMessage('lessonComplete'));
+    const timer = setTimeout(() => {
+      Animated.timing(vgOpacity, {
+        toValue: 1,
+        duration: 600,
+        useNativeDriver: true,
+      }).start();
+    }, 400);
+    return () => clearTimeout(timer);
+  }, []);
+
   const accuracy = roundScore.total > 0
     ? Math.round((roundScore.score / roundScore.total) * 100)
     : 0;
@@ -95,6 +112,18 @@ export default function RoundCompleteScreen({
             </TouchableOpacity>
           )}
         </View>
+
+        {/* Van Gogh lesson completion message */}
+        {vanGoghMsg && (
+          <Animated.View style={[styles.vgBlock, { opacity: vgOpacity }]}>
+            <Image
+              source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_portrait_in_fields.png')}
+              style={styles.vgAvatar}
+            />
+            <Text style={styles.vgText}>{vanGoghMsg.text}</Text>
+            <Text style={styles.vgSignature}>— Vincent</Text>
+          </Animated.View>
+        )}
 
       </View>
       </SafeAreaView>
@@ -179,4 +208,30 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.28, shadowRadius: 12, elevation: 6,
   },
   continueBtnText: { fontSize: 17, fontWeight: '900', color: VG.bg },
+
+  // ── Van Gogh completion message ───────────────────────────────────────────
+  vgBlock: {
+    marginTop: 24,
+    alignItems: 'center',
+    width: '100%',
+    gap: 10,
+  },
+  vgAvatar: {
+    width: 44,
+    height: 44,
+  },
+  vgText: {
+    fontSize: 15,
+    fontStyle: 'italic',
+    fontFamily: 'Georgia',
+    color: 'rgba(255,255,255,0.92)',
+    textAlign: 'center',
+    paddingHorizontal: 28,
+    lineHeight: 23,
+  },
+  vgSignature: {
+    fontSize: 12,
+    color: 'rgba(255,255,255,0.55)',
+    textAlign: 'center',
+  },
 });
