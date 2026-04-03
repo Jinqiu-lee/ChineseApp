@@ -446,15 +446,13 @@ export default function HomeScreen({
         {/* Van Gogh daily greeting */}
         {vanGoghGreeting && (
           <View style={styles.vgCard}>
-            <View style={styles.vgCardInner}>
-              <View style={styles.vgAvatar}>
-                {/* Swap Image for the require() once vangogh_avatar.png is added */}
-                <Text style={styles.vgAvatarInitials}>VG</Text>
-              </View>
-              <View style={styles.vgTextBlock}>
-                <Text style={styles.vgMessageText}>{vanGoghGreeting.text}</Text>
-                <Text style={styles.vgSignature}>— Vincent</Text>
-              </View>
+            <Image
+              source={require('../assets/avatar/Van_Gogh_梵高/van_gogh_portrait_2.png')}
+              style={styles.vgAvatarImage}
+            />
+            <View style={styles.vgTextBlock}>
+              <Text style={styles.vgMessageText}>{vanGoghGreeting.text}</Text>
+              <Text style={styles.vgSignature}>— Vincent</Text>
             </View>
           </View>
         )}
@@ -813,39 +811,22 @@ const styles = StyleSheet.create({
 
   // ── Van Gogh greeting card ─────────────────────────────────────────────────
   vgCard: {
-    marginBottom: 24,
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    gap: 12,
+    marginHorizontal: 16,
+    marginTop: 12,
+    marginBottom: 12,
+    paddingHorizontal: 20,
+    paddingVertical: 14,
     borderRadius: 12,
     borderLeftWidth: 3,
     borderLeftColor: '#E8A838',
-    backgroundColor: 'rgba(255,255,255,0.15)',
-    overflow: 'hidden',
-  },
-  vgCardInner: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    paddingVertical: 14,
-    paddingHorizontal: 14,
-    gap: 12,
-  },
-  vgAvatar: {
-    width: 38,
-    height: 38,
-    borderRadius: 19,
-    backgroundColor: '#E8A838',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexShrink: 0,
-  },
-  vgAvatarInitials: {
-    fontSize: 13,
-    fontWeight: '800',
-    color: '#FFFFFF',
-    letterSpacing: 0.5,
+    backgroundColor: 'rgba(255,255,255,0.12)',
   },
   vgAvatarImage: {
-    width: 38,
-    height: 38,
-    borderRadius: 19,
+    width: 52,
+    height: 52,
   },
   vgTextBlock: {
     flex: 1,
