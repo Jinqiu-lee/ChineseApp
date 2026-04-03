@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal, Animated, ImageBackground, Alert } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal, Animated, ImageBackground, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScreenBackground from '../components/ScreenBackground';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR } from '../constants/colors';
@@ -10,6 +10,7 @@ import AvatarCharacter from '../components/AvatarCharacter';
 import AvatarPicker from '../components/AvatarPicker';
 import useProgress from '../hooks/useProgress';
 import { LEVEL_WELCOME, LEVEL_QUOTES } from '../data/emotionalContent';
+import { getVanGoghMessage } from '../data/vanGoghMessages';
 
 const LEVEL_CONFIG = [
   { id: 'hsk1', number: 1, emoji: '🌻', title: 'Sunflower Fields',    subtitle: 'HSK 1', color: WARM_BROWN,   tagline: 'Your warm beginning',        welcomeColor: '#1C2A44' },
@@ -161,6 +162,7 @@ export default function HomeScreen({
   const [showLevelChangeModal, setShowLevelChangeModal] = useState(false);
   const [foundationModal, setFoundationModal] = useState(null); // 'pinyin' | 'characters' | null
   const [avatarId, setAvatarId] = useState('eileen');
+  const [vanGoghGreeting, setVanGoghGreeting] = useState(null);
 
   const confettiRef = useRef(null);
   const avatarBounce = useRef(new Animated.Value(1)).current;
@@ -182,6 +184,10 @@ export default function HomeScreen({
 
   useEffect(() => {
     AsyncStorage.getItem('avatarId').then(val => { if (val) setAvatarId(val); }).catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    setVanGoghGreeting(getVanGoghMessage('dailyGreeting'));
   }, []);
 
   const handleSelectAvatar = (id) => {
@@ -436,6 +442,22 @@ export default function HomeScreen({
 
           <AvatarPicker selectedId={avatarId} onSelect={handleSelectAvatar} />
         </View>
+
+        {/* Van Gogh daily greeting */}
+        {vanGoghGreeting && (
+          <View style={styles.vgCard}>
+            <View style={styles.vgCardInner}>
+              <View style={styles.vgAvatar}>
+                {/* Swap Image for the require() once vangogh_avatar.png is added */}
+                <Text style={styles.vgAvatarInitials}>VG</Text>
+              </View>
+              <View style={styles.vgTextBlock}>
+                <Text style={styles.vgMessageText}>{vanGoghGreeting.text}</Text>
+                <Text style={styles.vgSignature}>— Vincent</Text>
+              </View>
+            </View>
+          </View>
+        )}
 
         {/* Confetti — fires on streak increase */}
         <ConfettiCannon
@@ -788,6 +810,60 @@ const styles = StyleSheet.create({
   statBadgeIcon:  { fontSize: 16 },
   statBadgeValue: { fontSize: 17, fontWeight: '800', color: VG.cream },
   statBadgeLabel: { fontSize: 11, color: VG.creamMuted, fontWeight: '600' },
+
+  // ── Van Gogh greeting card ─────────────────────────────────────────────────
+  vgCard: {
+    marginBottom: 24,
+    borderRadius: 12,
+    borderLeftWidth: 3,
+    borderLeftColor: '#E8A838',
+    backgroundColor: 'rgba(255,255,255,0.15)',
+    overflow: 'hidden',
+  },
+  vgCardInner: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    paddingVertical: 14,
+    paddingHorizontal: 14,
+    gap: 12,
+  },
+  vgAvatar: {
+    width: 38,
+    height: 38,
+    borderRadius: 19,
+    backgroundColor: '#E8A838',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexShrink: 0,
+  },
+  vgAvatarInitials: {
+    fontSize: 13,
+    fontWeight: '800',
+    color: '#FFFFFF',
+    letterSpacing: 0.5,
+  },
+  vgAvatarImage: {
+    width: 38,
+    height: 38,
+    borderRadius: 19,
+  },
+  vgTextBlock: {
+    flex: 1,
+    gap: 6,
+  },
+  vgMessageText: {
+    fontSize: 15,
+    fontStyle: 'italic',
+    fontFamily: 'Georgia',
+    color: WARM_BROWN,
+    lineHeight: 23,
+  },
+  vgSignature: {
+    fontSize: 12,
+    color: SLATE_TEAL,
+    fontWeight: '500',
+    letterSpacing: 0.3,
+  },
 
   // ── Section headings ───────────────────────────────────────────────────────
   section:      { marginBottom: 28 },
