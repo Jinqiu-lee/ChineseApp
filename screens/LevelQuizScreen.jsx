@@ -1,10 +1,11 @@
-import React, { useState, useMemo } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert, Image } from 'react-native';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert, Image, Animated } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 import { getAvatar } from '../config/avatarConfig';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR } from '../constants/colors';
+import { getVanGoghMessage } from '../data/vanGoghMessages';
 
 const PASS_SCORE = 60;
 const REVIEW_SCORE = 50;
@@ -125,6 +126,21 @@ function AvatarFinalScreen({ score, correctCount, totalQuestions, levelId, onStu
   const chineseOnly = CHINESE_ONLY_LEVELS.has(levelId);
   const isLastLevel = levelId === 'hsk6';
 
+  const [vanGoghMsg, setVanGoghMsg] = useState(null);
+  const vgOpacity = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    setVanGoghMsg(getVanGoghMessage('quizPassed'));
+    const timer = setTimeout(() => {
+      Animated.timing(vgOpacity, {
+        toValue: 1,
+        duration: 500,
+        useNativeDriver: true,
+      }).start();
+    }, 300);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <ScrollView contentContainerStyle={styles.resultsContainer}>
 
@@ -207,6 +223,21 @@ function AvatarFinalScreen({ score, correctCount, totalQuestions, levelId, onStu
           <Text style={styles.reviewButtonText}>📋 Review Incorrect Answers</Text>
         </TouchableOpacity>
       </View>
+
+      {/* Van Gogh quiz passed message */}
+      {vanGoghMsg && (
+        <Animated.View style={[styles.vgPassBlock, { opacity: vgOpacity }]}>
+          <Image
+            source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_portrait_in_fields.png')}
+            style={styles.vgPassAvatar}
+          />
+          <View style={styles.vgPassTextBlock}>
+            <Text style={styles.vgPassText}>{vanGoghMsg.text}</Text>
+            <Text style={styles.vgPassSignature}>— Vincent</Text>
+          </View>
+        </Animated.View>
+      )}
+
     </ScrollView>
   );
 }
@@ -731,4 +762,33 @@ const styles = StyleSheet.create({
     shadowColor: '#000', shadowOffset: { width: 0, height: 3 }, shadowOpacity: 0.15, shadowRadius: 8, elevation: 4,
   },
   studyAgainButtonText: { fontSize: 16, fontWeight: '900', color: CARD_WHITE },
+
+  // ── Van Gogh quiz passed message ──────────────────────────────────────────
+  vgPassBlock: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    paddingHorizontal: 24,
+    paddingTop: 20,
+    gap: 12,
+  },
+  vgPassAvatar: {
+    width: 40,
+    height: 40,
+  },
+  vgPassTextBlock: {
+    flex: 1,
+    gap: 6,
+  },
+  vgPassText: {
+    fontSize: 14,
+    fontStyle: 'italic',
+    fontFamily: 'Georgia',
+    color: WARM_BROWN,
+    lineHeight: 22,
+  },
+  vgPassSignature: {
+    fontSize: 12,
+    color: SLATE_TEAL,
+    textAlign: 'right',
+  },
 });
