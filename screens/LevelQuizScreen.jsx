@@ -1,11 +1,14 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert, Image, Animated } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Image, Animated } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 import { getAvatar } from '../config/avatarConfig';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR } from '../constants/colors';
 import { getVanGoghMessage } from '../data/vanGoghMessages';
+import { recordQuizAttempt, loadQuizProgress, shouldShowComeBackTomorrow } from '../utils/quizProgressStorage';
+import ReviewMistakesScreen from './ReviewMistakesScreen';
+import VanGoghMessageModal from '../components/VanGoghMessageModal';
 
 const PASS_SCORE = 60;
 const REVIEW_SCORE = 50;
@@ -128,6 +131,8 @@ function AvatarFinalScreen({ score, correctCount, totalQuestions, levelId, onStu
 
   const [vanGoghMsg, setVanGoghMsg] = useState(null);
   const vgOpacity = useRef(new Animated.Value(0)).current;
+  const [vanGoghLevelMsg, setVanGoghLevelMsg] = useState(null);
+  const vgLevelOpacity = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     setVanGoghMsg(getVanGoghMessage('quizPassed'));
@@ -138,6 +143,19 @@ function AvatarFinalScreen({ score, correctCount, totalQuestions, levelId, onStu
         useNativeDriver: true,
       }).start();
     }, 300);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const msg = getVanGoghMessage('levelUp', { level: levelId });
+    setVanGoghLevelMsg(msg);
+    const timer = setTimeout(() => {
+      Animated.timing(vgLevelOpacity, {
+        toValue: 1,
+        duration: 700,
+        useNativeDriver: true,
+      }).start();
+    }, 600);
     return () => clearTimeout(timer);
   }, []);
 
@@ -209,6 +227,18 @@ function AvatarFinalScreen({ score, correctCount, totalQuestions, levelId, onStu
         })}
       </View>
 
+      {/* Van Gogh level-up message */}
+      {vanGoghLevelMsg && (
+        <Animated.View style={[styles.vgLevelBlock, { opacity: vgLevelOpacity }]}>
+          <Image
+            source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_portrait_in_fields.png')}
+            style={styles.vgLevelAvatar}
+          />
+          <Text style={styles.vgLevelText}>{vanGoghLevelMsg.text}</Text>
+          <Text style={styles.vgLevelSignature}>— Vincent, on {vanGoghLevelMsg.painting}</Text>
+        </Animated.View>
+      )}
+
       {/* Actions */}
       <View style={styles.resultsActions}>
         {!isLastLevel && (
@@ -249,22 +279,60 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
   const [answers, setAnswers] = useState({});
   const [showResults, setShowResults] = useState(false);
   const [showReview, setShowReview] = useState(false);
+  const [showReviewMistakes, setShowReviewMistakes] = useState(false);
+  const [isRetry, setIsRetry] = useState(false);
+  const [retryQuestions, setRetryQuestions] = useState(null);
+  const [lastWrongIds, setLastWrongIds] = useState([]);
   const [score, setScore] = useState(0);
+  const [quizProgress, setQuizProgress] = useState(null);
+  const [vgModal, setVgModal] = useState({ visible: false, message: null, onContinue: null, buttonLabel: undefined });
+  const [vanGoghFailedMsg, setVanGoghFailedMsg] = useState(null);
+  const vgFailedOpacity = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    if (showResults && score < PASS_SCORE) {
+      setVanGoghFailedMsg(getVanGoghMessage('quizFailed'));
+      const timer = setTimeout(() => {
+        Animated.timing(vgFailedOpacity, {
+          toValue: 1,
+          duration: 500,
+          useNativeDriver: true,
+        }).start();
+      }, 200);
+      return () => clearTimeout(timer);
+    }
+  }, [showResults, score]);
 
   const quizData = QUIZ_BY_LEVEL[currentLevelId] || hsk1QuizData;
-  const totalQuestions = quizData.total_questions;
+  const quizId = `${quizData.level || currentLevelId.toUpperCase()}_Level_Quiz`;
 
-  // Shuffle options once on mount so correct answer isn't always option A
+  // Load existing progress on mount
+  useEffect(() => {
+    loadQuizProgress(quizId).then(setQuizProgress).catch(() => {});
+  }, [quizId]);
+
+  // Shuffle options once on mount — keep each option paired with its pinyin
   const shuffledQuestions = useMemo(() =>
-    quizData.questions.map(q => ({
-      ...q,
-      options: shuffleArray(q.options),
-    })),
+    quizData.questions.map(q => {
+      const pairs = q.options.map((text, i) => ({
+        text,
+        pinyin: q.option_pinyin?.[i] ?? null,
+      }));
+      const shuffled = shuffleArray(pairs);
+      return {
+        ...q,
+        options: shuffled.map(p => p.text),
+        option_pinyin: shuffled.map(p => p.pinyin),
+      };
+    }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     []
   );
 
-  const question = shuffledQuestions[currentQuestion];
+  // Use retryQuestions if set (after Review → Retry), otherwise the normal shuffled set
+  const activeQuestions = retryQuestions ?? shuffledQuestions;
+  const totalQuestions = activeQuestions.length;
+  const question = activeQuestions[currentQuestion];
   const progress = ((currentQuestion + 1) / totalQuestions) * 100;
 
   const handleSelectAnswer = (answer) => {
@@ -289,8 +357,27 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
     } else {
       const correctCount = Object.values(newAnswers).filter(a => a.isCorrect).length;
       const finalScore = Math.round((correctCount / totalQuestions) * 100);
+      const wrongIds = Object.entries(newAnswers)
+        .filter(([, a]) => !a.isCorrect)
+        .map(([id]) => id);
+      setLastWrongIds(wrongIds);
       setScore(finalScore);
-      setShowResults(true);
+      recordQuizAttempt(quizId, {
+        score: finalScore,
+        wrongQuestionIds: wrongIds,
+        passScore: PASS_SCORE,
+      }).then(saved => {
+        if (saved) setQuizProgress(saved);
+        // After a retry attempt that fails: go back to ReviewMistakesScreen
+        if (isRetry && finalScore < PASS_SCORE) {
+          setShowResults(false);
+          setShowReviewMistakes(true);
+        } else {
+          setShowResults(true);
+        }
+      }).catch(() => {
+        setShowResults(true);
+      });
     }
   };
 
@@ -299,26 +386,54 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
     setSelectedAnswer(null);
     setAnswers({});
     setShowResults(false);
+    setShowReviewMistakes(false);
+    setRetryQuestions(null);
+    setIsRetry(false);
     setScore(0);
+    setLastWrongIds([]);
+    loadQuizProgress(quizId).then(setQuizProgress).catch(() => {});
+  };
+
+  // Called by ReviewMistakesScreen when student taps "Retry Quiz"
+  const handleRetryFromReview = (newQuestions) => {
+    setRetryQuestions(newQuestions);
+    setCurrentQuestion(0);
+    setSelectedAnswer(null);
+    setAnswers({});
+    setScore(0);
+    setShowReviewMistakes(false);
+    setShowResults(false);
+    setIsRetry(true);
   };
 
   const getPassed = () => score >= PASS_SCORE;
   const needsReview = () => score < REVIEW_SCORE;
 
-  const handleShowReviewExercise = () => {
-    const incorrectQuestions = quizData.questions.filter(q => answers[q.id] && !answers[q.id].isCorrect);
-    const mistakeList = incorrectQuestions
-      .slice(0, 5)
-      .map(q => `• ${q.question}`)
-      .join('\n');
-    Alert.alert(
-      'Review Exercise',
-      `You scored ${score}%. Let's review what you missed:\n\n${mistakeList}\n\nGo over these lessons and then retake the quiz. You need 60% to advance!`,
-      [{ text: 'Retake Quiz', onPress: handleRestart }],
-    );
+  const showVgThen = (category, buttonLabel, afterFn) => {
+    const msg = getVanGoghMessage(category);
+    setVgModal({ visible: true, message: msg, buttonLabel, onContinue: afterFn });
   };
+  const dismissVgModal = () => setVgModal(v => ({ ...v, visible: false }));
 
-  // Review Screen
+  // ReviewMistakesScreen — shown after failure, one card at a time, then Retry
+  if (showReviewMistakes) {
+    const wrongIds = lastWrongIds.length > 0
+      ? lastWrongIds
+      : (quizProgress?.wrongQuestionIds ?? []);
+    return (
+      <ReviewMistakesScreen
+        wrongQuestionIds={wrongIds}
+        allQuestions={quizData.questions}
+        answers={answers}
+        currentLevelId={currentLevelId}
+        attemptCount={quizProgress?.attempts ?? 1}
+        onRetry={handleRetryFromReview}
+        onBack={() => setShowReviewMistakes(false)}
+      />
+    );
+  }
+
+  // Review Screen (pass-side "Review Incorrect Answers")
   if (showReview) {
     const incorrectQuestions = quizData.questions.filter(q => {
       const answer = answers[q.id];
@@ -435,21 +550,37 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
       );
     }
 
-    // Failed → existing keep-practicing screen
+    // Failed → keep-practicing screen with progress history
+    const bestScore   = quizProgress?.bestScore  ?? score;
+    const attempts    = quizProgress?.attempts    ?? 1;
+    const showTomorrow = shouldShowComeBackTomorrow(quizProgress);
+
     return (
       <ScreenBackground levelId={currentLevelId}>
       <SafeAreaView style={styles.safe}>
         <StatusBar barStyle={T.statusBar} />
         <ScrollView contentContainerStyle={styles.resultsContainer}>
 
+          {/* Score card */}
           <View style={styles.resultsCard}>
             <Text style={styles.resultsEmoji}>📚</Text>
             <Text style={styles.resultsTitle}>Keep Practicing!</Text>
             <Text style={styles.resultsSubtitle}>加油！Jiā yóu!</Text>
 
-            <View style={styles.scoreCircle}>
-              <Text style={[styles.scoreText, { color: ERROR }]}>{score}%</Text>
-              <Text style={styles.scoreLabel}>Score</Text>
+            {/* Two score circles side by side */}
+            <View style={styles.scorePairRow}>
+              <View style={styles.scorePairItem}>
+                <View style={[styles.scoreCircle, { borderColor: ERROR }]}>
+                  <Text style={[styles.scoreText, { color: ERROR }]}>{score}%</Text>
+                  <Text style={styles.scoreLabel}>This Try</Text>
+                </View>
+              </View>
+              <View style={styles.scorePairItem}>
+                <View style={[styles.scoreCircle, { borderColor: WARM_ORANGE }]}>
+                  <Text style={[styles.scoreText, { color: WARM_ORANGE }]}>{bestScore}%</Text>
+                  <Text style={styles.scoreLabel}>Best</Text>
+                </View>
+              </View>
             </View>
 
             <View style={styles.statsBox}>
@@ -464,60 +595,76 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
               </View>
               <View style={styles.statDivider} />
               <View style={styles.statItem}>
-                <Text style={styles.statNumber}>{totalQuestions}</Text>
-                <Text style={styles.statLabel}>Total</Text>
+                <Text style={styles.statNumber}>{attempts}</Text>
+                <Text style={styles.statLabel}>Attempts</Text>
               </View>
             </View>
 
             <Text style={styles.passingText}>
-              Pass threshold: {PASS_SCORE}% · You scored: {score}%
+              Pass threshold: {PASS_SCORE}% · You need {PASS_SCORE - score} more points
             </Text>
 
-            {review && (
-              <View style={styles.encouragementBox}>
-                <Text style={styles.encouragementText}>
-                  Your score is below 50%. Please review the exercises based on your mistakes, then try again!
-                </Text>
-              </View>
-            )}
+            <View style={styles.encouragementBox}>
+              <Text style={styles.encouragementText}>
+                You need {PASS_SCORE}% to advance. Review your mistakes and try again! 💪
+              </Text>
+            </View>
 
-            {!review && (
-              <View style={styles.encouragementBox}>
-                <Text style={styles.encouragementText}>
-                  So close! You need 60% to advance. Review and try again! 💪
+            {/* Come back tomorrow message */}
+            {showTomorrow && (
+              <TouchableOpacity
+                style={styles.tomorrowBox}
+                onPress={() => showVgThen('comeBackTomorrow', 'I\'ll rest and return 🌙', dismissVgModal)}
+                activeOpacity={0.8}
+              >
+                <Text style={styles.tomorrowEmoji}>🌙</Text>
+                <Text style={styles.tomorrowText}>
+                  You've tried {attempts} times today. Your brain needs rest — come back tomorrow! Tap to hear from Vincent.
                 </Text>
-              </View>
+              </TouchableOpacity>
             )}
           </View>
 
           <View style={styles.resultsActions}>
-            {review && (
-              <TouchableOpacity
-                style={styles.reviewExerciseButton}
-                onPress={handleShowReviewExercise}
-              >
-                <Text style={styles.reviewButtonText}>📋 Review Exercise + Retake</Text>
-              </TouchableOpacity>
-            )}
-
-            {!review && (
-              <TouchableOpacity style={styles.retryButton} onPress={handleRestart}>
-                <Text style={styles.retryButtonText}>🔄 Try Again</Text>
-              </TouchableOpacity>
-            )}
-
             <TouchableOpacity
-              style={styles.reviewButton}
-              onPress={() => setShowReview(true)}
+              style={styles.reviewMistakesButton}
+              onPress={() => showVgThen('reviewMistakes', 'Let\'s review →', () => {
+                dismissVgModal();
+                setShowReviewMistakes(true);
+              })}
             >
-              <Text style={styles.reviewButtonText}>📋 Review Incorrect Answers</Text>
+              <Text style={styles.reviewMistakesButtonText}>📋 Review Mistakes</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.retryButton} onPress={handleRestart}>
+              <Text style={styles.retryButtonText}>🔄 Try Again</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.doneButton} onPress={onBack}>
               <Text style={styles.doneButtonText}>← Back to Home</Text>
             </TouchableOpacity>
           </View>
+
+          {vanGoghFailedMsg && (
+            <Animated.View style={[styles.vgFailedBlock, { opacity: vgFailedOpacity }]}>
+              <Image
+                source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_Potrait_1.png')}
+                style={styles.vgFailedAvatar}
+              />
+              <View style={styles.vgFailedTextBlock}>
+                <Text style={styles.vgFailedText}>{vanGoghFailedMsg.text}</Text>
+                <Text style={styles.vgFailedSignature}>— Vincent</Text>
+              </View>
+            </Animated.View>
+          )}
         </ScrollView>
+        <VanGoghMessageModal
+          visible={vgModal.visible}
+          message={vgModal.message}
+          buttonLabel={vgModal.buttonLabel}
+          onContinue={() => vgModal.onContinue?.()}
+          onDismiss={dismissVgModal}
+        />
       </SafeAreaView>
       </ScreenBackground>
     );
@@ -697,10 +844,22 @@ const styles = StyleSheet.create({
   encouragementBox: { backgroundColor: '#FFF8ED', padding: 16, borderRadius: 12, width: '100%' },
   encouragementText: { fontSize: 14, color: WARM_ORANGE, textAlign: 'center', lineHeight: 20 },
 
+  scorePairRow: { flexDirection: 'row', gap: 20, marginBottom: 24 },
+  scorePairItem: { flex: 1, alignItems: 'center' },
+
+  tomorrowBox: {
+    marginTop: 12, backgroundColor: '#eef2ff', borderRadius: 12, padding: 16,
+    width: '100%', borderWidth: 1, borderColor: 'rgba(100,116,255,0.3)',
+    flexDirection: 'row', alignItems: 'flex-start', gap: 10,
+  },
+  tomorrowEmoji: { fontSize: 24 },
+  tomorrowText: { flex: 1, fontSize: 13, color: '#4a5568', lineHeight: 20 },
+
   resultsActions: { gap: 12 },
   nextLevelButton: { backgroundColor: SUCCESS, padding: 16, borderRadius: 16, alignItems: 'center' },
   nextLevelButtonText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
-  reviewExerciseButton: { backgroundColor: WARM_ORANGE, padding: 16, borderRadius: 16, alignItems: 'center' },
+  reviewMistakesButton: { backgroundColor: DEEP_NAVY, padding: 16, borderRadius: 16, alignItems: 'center' },
+  reviewMistakesButtonText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
   reviewButton: { backgroundColor: SLATE_TEAL, padding: 16, borderRadius: 16, alignItems: 'center' },
   reviewButtonText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
   retryButton: { backgroundColor: WARM_ORANGE, padding: 16, borderRadius: 16, alignItems: 'center' },
@@ -763,6 +922,41 @@ const styles = StyleSheet.create({
   },
   studyAgainButtonText: { fontSize: 16, fontWeight: '900', color: CARD_WHITE },
 
+  // ── Van Gogh level-up message ─────────────────────────────────────────────
+  vgLevelBlock: {
+    alignItems: 'center',
+    marginTop: 20,
+    marginBottom: 8,
+    marginHorizontal: 16,
+    paddingHorizontal: 28,
+    paddingVertical: 20,
+    borderRadius: 16,
+    backgroundColor: 'rgba(255,255,255,0.18)',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.25)',
+  },
+  vgLevelAvatar: {
+    width: 56,
+    height: 56,
+    borderRadius: 28,
+    marginBottom: 12,
+  },
+  vgLevelText: {
+    fontSize: 16,
+    fontStyle: 'italic',
+    fontFamily: 'Georgia',
+    color: 'rgba(255,255,255,0.92)',
+    textAlign: 'center',
+    lineHeight: 24,
+  },
+  vgLevelSignature: {
+    fontSize: 12,
+    fontStyle: 'italic',
+    color: 'rgba(255,255,255,0.50)',
+    textAlign: 'center',
+    marginTop: 6,
+  },
+
   // ── Van Gogh quiz passed message ──────────────────────────────────────────
   vgPassBlock: {
     flexDirection: 'row',
@@ -787,6 +981,35 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
   vgPassSignature: {
+    fontSize: 12,
+    color: SLATE_TEAL,
+    textAlign: 'right',
+  },
+
+  // ── Van Gogh quiz failed message ──────────────────────────────────────────
+  vgFailedBlock: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    paddingHorizontal: 24,
+    paddingTop: 20,
+    gap: 12,
+  },
+  vgFailedAvatar: {
+    width: 40,
+    height: 40,
+  },
+  vgFailedTextBlock: {
+    flex: 1,
+    gap: 6,
+  },
+  vgFailedText: {
+    fontSize: 14,
+    fontStyle: 'italic',
+    fontFamily: 'Georgia',
+    color: WARM_BROWN,
+    lineHeight: 22,
+  },
+  vgFailedSignature: {
     fontSize: 12,
     color: SLATE_TEAL,
     textAlign: 'right',

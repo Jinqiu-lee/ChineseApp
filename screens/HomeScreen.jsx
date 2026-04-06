@@ -11,6 +11,7 @@ import AvatarPicker from '../components/AvatarPicker';
 import useProgress from '../hooks/useProgress';
 import { LEVEL_WELCOME, LEVEL_QUOTES } from '../data/emotionalContent';
 import { getVanGoghMessage } from '../data/vanGoghMessages';
+import { loadQuizProgress } from '../utils/quizProgressStorage';
 
 const LEVEL_CONFIG = [
   { id: 'hsk1', number: 1, emoji: '🌻', title: 'Sunflower Fields',    subtitle: 'HSK 1', color: WARM_BROWN,   tagline: 'Your warm beginning',        welcomeColor: '#1C2A44' },
@@ -142,6 +143,44 @@ const LESSONS_BY_LEVEL = {
 };
 
 
+// ── Quiz Progress Badge ───────────────────────────────────────────────────────
+// Small indicator shown on the Level Final Quiz card.
+//   passed + unlockedNext → green checkmark
+//   attempts > 0, not passed → flame + bestScore%
+//   attempts === 0 (or no data) → lock icon
+function QuizProgressBadge({ progress, color }) {
+  if (!progress || progress.attempts === 0) {
+    return (
+      <View style={qpStyles.lockBadge}>
+        <Text style={qpStyles.lockIcon}>🔒</Text>
+      </View>
+    );
+  }
+  if (progress.passed || progress.unlockedNext) {
+    return (
+      <View style={qpStyles.passBadge}>
+        <Text style={qpStyles.passIcon}>✓</Text>
+      </View>
+    );
+  }
+  return (
+    <View style={qpStyles.retryBadge}>
+      <Text style={qpStyles.retryIcon}>🔥</Text>
+      <Text style={qpStyles.retryScore}>{progress.bestScore}%</Text>
+    </View>
+  );
+}
+
+const qpStyles = StyleSheet.create({
+  lockBadge:  { alignItems: 'center', justifyContent: 'center', minWidth: 36 },
+  lockIcon:   { fontSize: 20 },
+  passBadge:  { width: 32, height: 32, borderRadius: 16, backgroundColor: SUCCESS, alignItems: 'center', justifyContent: 'center' },
+  passIcon:   { fontSize: 16, fontWeight: '900', color: '#fff' },
+  retryBadge: { alignItems: 'center', justifyContent: 'center', gap: 2, minWidth: 40 },
+  retryIcon:  { fontSize: 18 },
+  retryScore: { fontSize: 11, fontWeight: '800', color: WARM_ORANGE },
+});
+
 export default function HomeScreen({
   userData,
   levelState,
@@ -163,13 +202,22 @@ export default function HomeScreen({
   const [foundationModal, setFoundationModal] = useState(null); // 'pinyin' | 'characters' | null
   const [avatarId, setAvatarId] = useState('eileen');
   const [vanGoghGreeting, setVanGoghGreeting] = useState(null);
+  const [vanGoghAvatar, setVanGoghAvatar] = useState(require('../assets/avatar/Van_Gogh_梵高/van_gogh_portrait_2.png'));
+  const [vanGoghStreakMsg, setVanGoghStreakMsg] = useState(null);
+  const [levelQuizProgress, setLevelQuizProgress] = useState(null);
 
   const confettiRef = useRef(null);
   const avatarBounce = useRef(new Animated.Value(1)).current;
-  const prevStreakRef = useRef(streak);
+  // null = initial load not yet seen; skip confetti on first AsyncStorage load
+  const prevStreakRef = useRef(null);
 
-  // Fire confetti + bounce when streak increases
+  // Fire confetti + bounce only when streak genuinely increases mid-session
   useEffect(() => {
+    if (prevStreakRef.current === null) {
+      // First load — set baseline, do not fire confetti
+      prevStreakRef.current = streak;
+      return;
+    }
     if (streak > prevStreakRef.current) {
       confettiRef.current?.start();
       Animated.sequence([
@@ -187,8 +235,45 @@ export default function HomeScreen({
   }, []);
 
   useEffect(() => {
-    setVanGoghGreeting(getVanGoghMessage('dailyGreeting'));
+    const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+    AsyncStorage.getItem('last_active_date').then(lastDate => {
+      let category = 'dailyGreeting';
+      let avatar = require('../assets/avatar/Van_Gogh_梵高/van_gogh_portrait_2.png');
+      if (lastDate && lastDate !== today) {
+        const msPerDay = 24 * 60 * 60 * 1000;
+        const daysDiff = Math.round((new Date(today) - new Date(lastDate)) / msPerDay);
+        if (daysDiff >= 7) {
+          category = 'welcomeBackLong';
+          avatar = require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_background.png');
+        } else if (daysDiff >= 1) {
+          category = 'welcomeBackShort';
+          avatar = require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_background.png');
+        }
+      }
+      setVanGoghGreeting(getVanGoghMessage(category));
+      setVanGoghAvatar(avatar);
+      AsyncStorage.setItem('last_active_date', today).catch(() => {});
+    }).catch(() => {
+      setVanGoghGreeting(getVanGoghMessage('dailyGreeting'));
+    });
   }, []);
+
+  useEffect(() => {
+    if (streak >= 2) {
+      setVanGoghStreakMsg(getVanGoghMessage('streakActive', { days: streak }));
+    } else {
+      setVanGoghStreakMsg(null);
+    }
+  }, [streak]);
+
+  // Load quiz progress whenever the user opens a level's lesson list
+  useEffect(() => {
+    if (!selectedLevel) { setLevelQuizProgress(null); return; }
+    const quizId = `${selectedLevel.id.toUpperCase()}_Level_Quiz`;
+    loadQuizProgress(quizId)
+      .then(setLevelQuizProgress)
+      .catch(() => setLevelQuizProgress(null));
+  }, [selectedLevel]);
 
   const handleSelectAvatar = (id) => {
     setAvatarId(id);
@@ -374,7 +459,7 @@ export default function HomeScreen({
                 <Text style={styles.quizTitle}>Level Final Quiz</Text>
                 <Text style={styles.quizDesc}>Test your knowledge · 30 questions</Text>
               </View>
-              <Text style={[styles.quizArrow, { color: selectedLevel.color }]}>→</Text>
+              <QuizProgressBadge progress={levelQuizProgress} color={selectedLevel.color} />
             </TouchableOpacity>
           </View>
 
@@ -447,7 +532,7 @@ export default function HomeScreen({
         {vanGoghGreeting && (
           <View style={styles.vgCard}>
             <Image
-              source={require('../assets/avatar/Van_Gogh_梵高/van_gogh_portrait_2.png')}
+              source={vanGoghAvatar}
               style={styles.vgAvatarImage}
             />
             <View style={styles.vgTextBlock}>
@@ -456,15 +541,16 @@ export default function HomeScreen({
             </View>
           </View>
         )}
+        {vanGoghStreakMsg && (
+          <View style={styles.vgStreakRow}>
+            <Image
+              source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_Potrait_1.png')}
+              style={styles.vgStreakAvatar}
+            />
+            <Text style={styles.vgStreakLine}>{vanGoghStreakMsg.text}</Text>
+          </View>
+        )}
 
-        {/* Confetti — fires on streak increase */}
-        <ConfettiCannon
-          ref={confettiRef}
-          count={80}
-          origin={{ x: 200, y: 0 }}
-          autoStart={false}
-          fadeOut
-        />
 
         {/* Chinese Foundations */}
         <View style={styles.section}>
@@ -553,6 +639,15 @@ export default function HomeScreen({
 
         <View style={{ height: 40 }} />
       </ScrollView>
+
+      {/* Confetti — rendered outside ScrollView so particles overlay the full screen */}
+      <ConfettiCannon
+        ref={confettiRef}
+        count={80}
+        origin={{ x: 200, y: 0 }}
+        autoStart={false}
+        fadeOut
+      />
 
       {/* Menu Modal */}
       <Modal
@@ -822,7 +917,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     borderLeftWidth: 3,
     borderLeftColor: '#E8A838',
-    backgroundColor: 'rgba(255,255,255,0.12)',
+    backgroundColor: 'rgba(255,255,255,0.88)',
   },
   vgAvatarImage: {
     width: 52,
@@ -844,6 +939,30 @@ const styles = StyleSheet.create({
     color: SLATE_TEAL,
     fontWeight: '500',
     letterSpacing: 0.3,
+  },
+  vgStreakRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginHorizontal: 16,
+    marginTop: 4,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    gap: 10,
+    borderRadius: 10,
+    backgroundColor: 'rgba(255,255,255,0.88)',
+  },
+  vgStreakAvatar: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    opacity: 0.85,
+  },
+  vgStreakLine: {
+    flex: 1,
+    fontSize: 13,
+    fontStyle: 'italic',
+    fontFamily: 'Georgia',
+    color: SLATE_TEAL,
   },
 
   // ── Section headings ───────────────────────────────────────────────────────

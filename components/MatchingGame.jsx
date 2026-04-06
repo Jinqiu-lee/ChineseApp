@@ -608,9 +608,9 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   cardInner: { alignItems: "center" },
-  cardChinese: { fontSize: 22, fontWeight: "800", letterSpacing: 1 },
-  cardPinyin:  { fontSize: 12, marginTop: 3, fontWeight: "500" },
-  cardEnglish: { fontSize: 14, fontWeight: "600", textAlign: "center", lineHeight: 20 },
+  cardChinese: { fontSize: 18, fontWeight: "800", letterSpacing: 1 },
+  cardPinyin:  { fontSize: 10, marginTop: 3, fontWeight: "500" },
+  cardEnglish: { fontSize: 12, fontWeight: "600", textAlign: "center", lineHeight: 17 },
 
   stageBreakdown: {
     width: "100%", backgroundColor: "#fff", borderRadius: 16,

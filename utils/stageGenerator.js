@@ -386,31 +386,95 @@ function extractFinal(syllable) {
 
 // ── Pinyin exercise factories ─────────────────────────────────────────────
 
+// Extract only the first syllable from a compound pinyin string (with or without spaces).
+// Strategy: find the first tone-marked vowel (the syllable's "peak"), then continue
+// through any trailing vowels and final consonants (n / ng / r) until the next initial.
+//
+// Examples:
+//   "tiānqì"    → "tiān"     "gōngzuò"  → "gōng"
+//   "piàoliang" → "piào"     "fēnzhōng" → "fēn"
+//   "zěnmeyàng" → "zěn"      "xuéxí"    → "xué"
+//   "yīshēng"   → "yī"       "péngyou"  → "péng"
+function extractFirstPinyinSyllable(pinyin) {
+  if (!pinyin) return pinyin;
+  // Find the first tone-marked character
+  let toneIdx = -1;
+  for (let i = 0; i < pinyin.length; i++) {
+    if (TONE_NUM[pinyin[i]]) { toneIdx = i; break; }
+  }
+  if (toneIdx === -1) return pinyin; // no tone mark, return as-is
+
+  // After the tone vowel, continue consuming characters still in this syllable:
+  //   · more vowels (diphthong / triphthong)
+  //   · final nasal 'n' (but NOT when followed by a vowel — that 'n' starts the next syllable)
+  //   · 'ng' ending (n + g)
+  //   · erhua 'r'
+  const rest     = pinyin.slice(toneIdx + 1);
+  const restBase = stripTones(rest.toLowerCase());
+  let extra = 0;
+  for (let i = 0; i < restBase.length; i++) {
+    const ch   = restBase[i];
+    const next = restBase[i + 1];
+    if ('aeiouv'.includes(ch)) {
+      extra++;                          // still in the same vowel group
+    } else if (ch === 'n') {
+      if (next && 'aeiouv'.includes(next)) break; // 'n' begins the next syllable
+      extra++;                          // final -n
+      if (next === 'g') extra++;        // final -ng: consume the 'g' too
+      break;
+    } else if (ch === 'r' && i === 0) {
+      extra++;                          // erhua
+      break;
+    } else {
+      break;                            // consonant of the next syllable
+    }
+  }
+  return pinyin.slice(0, toneIdx + 1 + extra);
+}
+
+// Return { syl, char } containing only the FIRST syllable and FIRST character.
+// Handles: explicit separators (space / apostrophe) AND seamless compounds ("tiānqì").
+function splitFirstSyllable(syllable, chinese) {
+  const charsArr = chinese ? [...chinese] : [];
+  const hasExplicitSep = /[\s']/.test(syllable);
+  const isMulti = hasExplicitSep || charsArr.length > 1;
+
+  if (!isMulti) return { syl: syllable, char: chinese ?? null };
+
+  const firstChar = charsArr[0] ?? null;
+  if (hasExplicitSep) {
+    return { syl: syllable.split(/[\s']+/)[0], char: firstChar };
+  }
+  // Seamless compound — split by tone-mark analysis
+  return { syl: extractFirstPinyinSyllable(syllable), char: firstChar };
+}
+
 function makePinyinToneId(syllable, vocabItem = null) {
-  const toneNum = detectTone(syllable);
+  const { syl, char } = splitFirstSyllable(syllable, vocabItem?.chinese ?? null);
+  const toneNum = detectTone(syl);
   if (!toneNum) return null; // skip neutral / undetected
   return {
     type: 'pinyin_exercise',
     subtype: 'tone_id',
-    syllable,
-    chinese: vocabItem?.chinese ?? null,
+    syllable: syl,
+    chinese: char,
     english: vocabItem?.english ?? null,
     correct: TONE_LABELS[toneNum - 1],
-    choices: TONE_LABELS.slice(),
+    choices: shuffle(TONE_LABELS.slice()),
   };
 }
 
 function makePinyinInitialId(syllable, initialsPool, vocabItem = null) {
-  const firstSyl = syllable.split(' ')[0];
-  const correct = extractInitial(firstSyl);
+  const { syl, char } = splitFirstSyllable(syllable, vocabItem?.chinese ?? null);
+  const correct = extractInitial(syl);
   if (!correct || !initialsPool.includes(correct)) return null;
   const others = shuffle(initialsPool.filter(i => i !== correct)).slice(0, 3);
   if (others.length < 2) return null;
   return {
     type: 'pinyin_exercise',
     subtype: 'initial_id',
-    syllable: firstSyl,
-    chinese: vocabItem?.chinese ?? null,
+    syllable: syl,
+    chinese: char,
     english: vocabItem?.english ?? null,
     correct,
     choices: shuffle([correct, ...others]),
@@ -418,16 +482,16 @@ function makePinyinInitialId(syllable, initialsPool, vocabItem = null) {
 }
 
 function makePinyinFinalId(syllable, finalsPool, vocabItem = null) {
-  const firstSyl = syllable.split(' ')[0];
-  const correct = extractFinal(firstSyl);
+  const { syl, char } = splitFirstSyllable(syllable, vocabItem?.chinese ?? null);
+  const correct = extractFinal(syl);
   if (!correct || !finalsPool.includes(correct)) return null;
   const others = shuffle(finalsPool.filter(f => f !== correct)).slice(0, 3);
   if (others.length < 2) return null;
   return {
     type: 'pinyin_exercise',
     subtype: 'final_id',
-    syllable: firstSyl,
-    chinese: vocabItem?.chinese ?? null,
+    syllable: syl,
+    chinese: char,
     english: vocabItem?.english ?? null,
     correct,
     choices: shuffle([correct, ...others]),

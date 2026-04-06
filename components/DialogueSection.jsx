@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
-import { speakAsAvatar } from '../utils/tts';
+import { speakAsAvatar, speakChinese } from '../utils/tts';
 import AvatarCharacter from './AvatarCharacter';
 import { getAvatar } from '../config/avatarConfig';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
@@ -177,7 +177,11 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
                 <View style={styles.bubbleTop}>
                   <Text style={styles.bubbleChinese}>{line.chinese}</Text>
                   <TouchableOpacity
-                  onPress={() => speakAsAvatar(line.chinese, info?.avatarId || avatarId)}
+                  onPress={() =>
+                    info?.avatarId
+                      ? speakAsAvatar(line.chinese, info.avatarId)
+                      : speakChinese(line.chinese, info?.gender || 'female')
+                  }
                   style={styles.speakBtn}
                 >
                     <Text style={styles.speakBtnText}>🔊</Text>

@@ -14,7 +14,7 @@ function getFeedback(accuracy) {
   if (accuracy === 100) return { msg: 'Perfect! 完美！', icon: '⭐', color: WARM_ORANGE, pass: true };
   if (accuracy >= 90)  return { msg: 'Excellent! 🎉',   icon: '🏆', color: SUCCESS,     pass: true };
   if (accuracy >= 80)  return { msg: 'Bravo! 🌟',        icon: '🌟', color: SLATE_TEAL,  pass: true };
-  if (accuracy >= 60)  return { msg: 'Good! Keep practicing 👍', icon: '👍', color: WARM_BROWN, pass: true };
+  if (accuracy >= 50)  return { msg: 'Good! Keep practicing 👍', icon: '👍', color: WARM_BROWN, pass: true };
   return { msg: "Hmm, couldn't quite catch that 🤔", icon: '🎤', color: ERROR, pass: false };
 }
 
@@ -90,8 +90,10 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
     setPhase(attempts >= MAX_ATTEMPTS ? 'max_attempts' : 'idle');
   };
 
-  // Always mark correct — speech recognition accuracy is unreliable
-  const handleNext = () => onCorrect();
+  const handleNext = () => {
+    const fb = accuracy !== null ? getFeedback(accuracy) : null;
+    fb?.pass ? onCorrect() : onWrong();
+  };
 
   // ── IDLE ──────────────────────────────────────────────────────────────
   if (phase === 'idle') {
@@ -106,14 +108,6 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
            isTranslate ? '🎤 Say this in Chinese' :
                         '🎧 Listen to the question, then answer'}
         </Text>
-
-        {/* Image reference card for respond exercises */}
-        {isRespond && exercise.emoji && (
-          <View style={styles.emojiRefCard}>
-            <Text style={styles.emojiRefIcon}>{exercise.emoji}</Text>
-            <Text style={styles.emojiRefLabel}>Think about your answer</Text>
-          </View>
-        )}
 
         {/* Prompt card */}
         <View style={styles.promptCard}>
@@ -139,6 +133,12 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
               <TouchableOpacity style={styles.listenBtn} onPress={() => speakChinese(exercise.questionChinese)}>
                 <Text style={styles.listenBtnText}>🔊 Play question</Text>
               </TouchableOpacity>
+              {exercise.answerEnglish ? (
+                <View style={styles.answerEnglishBox}>
+                  <Text style={styles.answerEnglishLabel}>Your answer:</Text>
+                  <Text style={styles.answerEnglishText}>{exercise.answerEnglish}</Text>
+                </View>
+              ) : null}
             </>
           )}
         </View>
@@ -166,13 +166,8 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
             )}
             {isRespond && (
               <>
-                <Text style={styles.hintLabel}>Suggested answer:</Text>
-                {hintShowPinyin ? (
-                  <Text style={styles.hintPinyin}>{expectedPinyin}</Text>
-                ) : (
-                  <Text style={styles.hintChinese}>{expectedChinese}</Text>
-                )}
-                <Text style={styles.hintEnglish}>{exercise.answerEnglish}</Text>
+                <Text style={styles.hintLabel}>Pinyin:</Text>
+                <Text style={styles.hintPinyin}>{expectedPinyin}</Text>
               </>
             )}
           </View>
@@ -216,9 +211,9 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
           )}
           {isRespond && (
             <>
-              <Text style={styles.recordingRefLabel}>QUESTION</Text>
-              <Text style={styles.recordingRefChinese}>{exercise.questionChinese}</Text>
-              <Text style={styles.recordingRefPinyin}>{exercise.questionPinyin}</Text>
+              <Text style={styles.recordingRefLabel}>YOUR ANSWER</Text>
+              <Text style={styles.recordingRefEnglish}>{exercise.answerEnglish}</Text>
+              <Text style={styles.recordingRefPinyin}>{expectedPinyin}</Text>
             </>
           )}
         </View>
@@ -414,6 +409,13 @@ const styles = StyleSheet.create({
   hintPinyin:  { fontSize: 18, color: VG.cream, fontStyle: 'italic', textAlign: 'center' },
   hintChinese: { fontSize: 24, fontWeight: '900', color: VG.cream, textAlign: 'center' },
   hintEnglish: { fontSize: 14, color: VG.creamMuted, textAlign: 'center' },
+  answerEnglishBox: {
+    marginTop: 12, paddingTop: 12,
+    borderTopWidth: 1, borderTopColor: 'rgba(28,42,68,0.1)',
+    width: '100%', alignItems: 'center', gap: 2,
+  },
+  answerEnglishLabel: { fontSize: 11, fontWeight: '700', color: VG.onCardMuted, textTransform: 'uppercase', letterSpacing: 0.8 },
+  answerEnglishText:  { fontSize: 16, fontWeight: '700', color: VG.onCard, textAlign: 'center' },
 
   attemptsText: { fontSize: 13, color: VG.creamMuted },
 

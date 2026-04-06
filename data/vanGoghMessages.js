@@ -234,6 +234,40 @@ const vanGoghMessages = {
     },
   ],
 
+  // ── REVIEW MISTAKES ───────────────────────────────────────────
+  // Shown when student taps "Review Mistakes" after failing a quiz
+  reviewMistakes: [
+    {
+      id: "rm_01",
+      text: "I kept a drawer of failed sketches. Each one taught me something the finished painting could not. Let us look at what yours are telling you.",
+    },
+    {
+      id: "rm_02",
+      text: "The mistakes are not the failures — they are an honest map of where understanding has not yet been. Study the map carefully.",
+    },
+    {
+      id: "rm_03",
+      text: "I revisited the same motif again and again — the chair, the sunflowers, the field. Each return revealed something new. Go back. Look again.",
+    },
+  ],
+
+  // ── COME BACK TOMORROW ────────────────────────────────────────
+  // Shown when student taps the "Come back tomorrow" rest reminder
+  comeBackTomorrow: [
+    {
+      id: "cbt_01",
+      text: "Even I could not paint without sleep. The mind must rest so it can see clearly again. Come back tomorrow — the characters will wait for you.",
+    },
+    {
+      id: "cbt_02",
+      text: "I often set a canvas aside when I had been staring too long. Distance is a kind of understanding. Let tomorrow bring fresh eyes.",
+    },
+    {
+      id: "cbt_03",
+      text: "You have done enough for today. That is not surrender — it is wisdom. Rest, and return when the light is right.",
+    },
+  ],
+
 };
 
 // ── Helper ────────────────────────────────────────────────────────────────────
