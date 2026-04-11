@@ -345,14 +345,14 @@
         {
           "question": "Which sentence correctly uses 虽然...但是...?",
           "type": "multiple_choice",
-          "correct": "虽然他忙，但是他来了。",
+          "correct": "虽然他忙，但是他还是来了。",
           "options": [
-            "虽然他忙，但是他来了。",
+            "虽然他忙，但是他还是来了。",
             "因为他忙，但是他来了。",
             "虽然他忙，所以他来了。",
             "虽然他忙，他来了。"
           ],
-          "correct_pinyin": "Suī rán tā máng, dàn shì tā lái le."
+          "correct_pinyin": "Suī rán tā máng, dàn shì tā hái shì lái le."
         },
         {
           "question": "Fill in: ___这道菜好吃，___我已经饱了。",
@@ -368,15 +368,15 @@
         {
           "question": "Which phrase means 'although it's delicious but I'm full'?",
           "type": "multiple_choice",
-          "correct": "虽然好吃但是饱了",
+          "correct": "虽然好吃，但是我饱了",
           "options": [
-            "虽然好吃但是饱了",
-            "因为好吃所以饱了",
-            "真好吃已经饱了",
-            "还没吃完已经饱了"
+            "虽然好吃，但是我饱了",
+            "因为好吃，所以饱了",
+            "真好吃，已经饱了",
+            "还没吃完，已经饱了"
           ],
           "option_pinyin": [
-            "suī rán hǎo chī dàn shì bǎo le",
+            "suī rán hǎo chī dàn shì wǒ bǎo le",
             "yīn wèi hǎo chī suǒ yǐ bǎo le",
             "zhēn hǎo chī yǐ jīng bǎo le",
             "hái méi chī wán yǐ jīng bǎo le"
@@ -753,7 +753,7 @@
       ]
     },
     {
-      "question": "Fill in: ___好吃，___我已经饱了，不___吃了。",
+      "question": "Fill in: ___好吃，___我已经饱了，不想___吃了。",
       "type": "multiple_choice",
       "correct": "虽然 / 但是 / 再",
       "options": [

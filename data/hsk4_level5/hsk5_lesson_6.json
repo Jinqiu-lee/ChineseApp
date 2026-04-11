@@ -289,14 +289,14 @@
           }
         },
         {
-          "question": "Where is 根据 placed in a sentence?",
+          "question": "Which sentence uses 根据 correctly?",
           "type": "multiple_choice",
-          "correct": "Before the noun phrase that serves as the basis or source",
+          "correct": "根据天气预报，明天会下雨。",
           "options": [
-            "Before the noun phrase that serves as the basis or source",
-            "At the end of the sentence",
-            "Between the subject and the verb",
-            "After the object"
+            "根据天气预报，明天会下雨。",
+            "天气预报根据，明天会下雨。",
+            "明天会下雨根据天气预报。",
+            "天气预报，明天根据会下雨。"
           ],
           "option_pinyin": [
             "",

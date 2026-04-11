@@ -6,15 +6,18 @@ export default function FillBlankExercise({ exercise, onCorrect, onWrong }) {
   const { displayText, sentence_pinyin, correct, choices, choices_pinyin, hint } = exercise;
   const [selected, setSelected] = useState(null);
   const [answered, setAnswered] = useState(false);
+  const [showContinue, setShowContinue] = useState(false);
   const [showPinyin, setShowPinyin] = useState(false);
 
   const handleSelect = (choice) => {
     if (answered) return;
     setSelected(choice);
     setAnswered(true);
-    setTimeout(() => {
-      choice === correct ? onCorrect() : onWrong();
-    }, 1200);
+    if (choice === correct) {
+      setTimeout(() => onCorrect(), 1200);
+    } else {
+      setShowContinue(true);
+    }
   };
 
   const displayFilled = answered ? displayText.replace('____', selected) : displayText;
@@ -70,6 +73,12 @@ export default function FillBlankExercise({ exercise, onCorrect, onWrong }) {
           </TouchableOpacity>
         ))}
       </View>
+
+      {showContinue && (
+        <TouchableOpacity style={styles.continueBtn} onPress={onWrong} activeOpacity={0.85}>
+          <Text style={styles.continueBtnText}>Continue →</Text>
+        </TouchableOpacity>
+      )}
     </View>
   );
 }
@@ -108,6 +117,13 @@ const styles = StyleSheet.create({
   choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.success, minWidth: '42%', alignItems: 'center' },
   choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.error, minWidth: '42%', alignItems: 'center' },
   choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.10)', minWidth: '42%', alignItems: 'center' },
-  choiceText: { fontSize: 18, fontWeight: '800', color: VG.cream },
+  choiceText: { fontSize: 20, fontWeight: '800', color: VG.cream },
   choicePinyin: { fontSize: 12, color: VG.gold, fontStyle: 'italic', marginTop: 4 },
+  continueBtn: {
+    marginTop: 16, backgroundColor: DEEP_NAVY, borderRadius: 14,
+    padding: 16, alignItems: 'center',
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.22, shadowRadius: 8, elevation: 4,
+  },
+  continueBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 });

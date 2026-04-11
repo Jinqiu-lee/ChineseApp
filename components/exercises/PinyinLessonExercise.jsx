@@ -24,10 +24,11 @@ const TONE_COLORS = { '1': ERROR, '2': WARM_ORANGE, '3': SUCCESS, '4': SLATE_TEA
 
 export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
   const { type, syllable, audio_key, prompt, correct, choices, hint, pinyin_hint } = exercise;
-  const [selected,   setSelected]   = useState(null);
-  const [answered,   setAnswered]   = useState(false);
-  const [revealed,   setRevealed]   = useState(false);
-  const [showPinyin, setShowPinyin] = useState(false);
+  const [selected,     setSelected]     = useState(null);
+  const [answered,     setAnswered]     = useState(false);
+  const [revealed,     setRevealed]     = useState(false);
+  const [showContinue, setShowContinue] = useState(false);
+  const [showPinyin,   setShowPinyin]   = useState(false);
 
   const meta = TYPE_META[type] ?? TYPE_META.visual_tone;
   const isListen = meta.showAudio;
@@ -51,9 +52,11 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
     setSelected(choice);
     setAnswered(true);
     setRevealed(true);
-    setTimeout(() => {
-      choice === correct ? onCorrect() : onWrong();
-    }, 1400);
+    if (choice === correct) {
+      setTimeout(() => onCorrect(), 1400);
+    } else {
+      setShowContinue(true);
+    }
   };
 
   const getChoiceStyle = (choice) => {
@@ -72,7 +75,7 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
 
   // For tone choices, show colored tone indicators
   const isToneChoice = type === 'visual_tone' || type === 'listen_tone';
-  const toneMarkMap = { '1': 'ā / ā', '2': 'á / á', '3': 'ǎ / ǎ', '4': 'à / à', '0': '· neutral' };
+  const toneOrdinal = { '1': '1st Tone', '2': '2nd Tone', '3': '3rd Tone', '4': '4th Tone', '0': 'Neutral Tone' };
 
   return (
     <View style={styles.container}>
@@ -147,7 +150,7 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
               <View style={styles.toneChoiceInner}>
                 <View style={[styles.toneDot, { backgroundColor: TONE_COLORS[choice] }]} />
                 <Text style={getChoiceTextStyle(choice)}>
-                  {choice === '0' ? 'Tone 0 · neutral' : `Tone ${choice}`}
+                  {toneOrdinal[choice] ?? `Tone ${choice}`}
                 </Text>
               </View>
             ) : (
@@ -156,6 +159,12 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
           </TouchableOpacity>
         ))}
       </View>
+
+      {showContinue && (
+        <TouchableOpacity style={styles.continueBtn} onPress={onWrong} activeOpacity={0.85}>
+          <Text style={styles.continueBtnText}>Continue →</Text>
+        </TouchableOpacity>
+      )}
     </View>
   );
 }
@@ -192,7 +201,7 @@ const styles = StyleSheet.create({
     alignItems: 'center', marginBottom: 28,
     borderWidth: 2, borderColor: SLATE_TEAL, gap: 6,
   },
-  syllableText: { fontSize: 52, fontWeight: '900', color: SLATE_TEAL, letterSpacing: 2 },
+  syllableText: { fontSize: 44, fontWeight: '900', color: WARM_BROWN, letterSpacing: 2 },
 
   // Choices
   choices:      { gap: 10 },
@@ -213,4 +222,11 @@ const styles = StyleSheet.create({
   showPinyinTextActive:{ color: SLATE_TEAL },
   pinyinPill:         { backgroundColor: '#eaf2f3', borderRadius: 12, paddingHorizontal: 14, paddingVertical: 6, borderWidth: 1, borderColor: 'rgba(55,73,80,0.30)' },
   pinyinPillText:     { fontSize: 18, fontWeight: '800', color: SLATE_TEAL, letterSpacing: 1 },
+  continueBtn: {
+    marginTop: 16, backgroundColor: DEEP_NAVY, borderRadius: 14,
+    padding: 16, alignItems: 'center',
+    shadowColor: 'rgba(28,42,68,0.18)', shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.22, shadowRadius: 8, elevation: 4,
+  },
+  continueBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 });

@@ -308,14 +308,14 @@
           "word_hints": {"养育": "yǎng yù"}
         },
         {
-          "question": "What does 宁可…也不… express?",
+          "question": "Which sentence uses 宁可…也不… correctly?",
           "type": "multiple_choice",
-          "correct": "A strong preference for one option over another",
+          "correct": "他宁可多花时间，也不愿意降低质量。",
           "options": [
-            "A strong preference for one option over another",
-            "A cause-and-effect relationship",
-            "Mutual reciprocal actions",
-            "The reason why something happened"
+            "他宁可多花时间，也不愿意降低质量。",
+            "他也不宁可多花时间，愿意降低质量。",
+            "宁可他多花时间，也不愿意降低质量。",
+            "他宁可愿意降低质量，也不多花时间。"
           ],
           "option_pinyin": ["", "", "", ""],
           "word_hints": {}
@@ -329,14 +329,14 @@
           "word_hints": {"关系": "guān xi"}
         },
         {
-          "question": "Where does 宁可 appear in the sentence structure?",
+          "question": "Which sentence uses 宁可 correctly?",
           "type": "multiple_choice",
-          "correct": "Before the chosen/preferred option",
+          "correct": "他宁可走路，也不想坐公交车。",
           "options": [
-            "Before the chosen/preferred option",
-            "At the very end of the sentence",
-            "Before the rejected option",
-            "After the subject and object"
+            "他宁可走路，也不想坐公交车。",
+            "宁可他走路，也不想坐公交车。",
+            "他走路宁可，也不想坐公交车。",
+            "他宁可也不想走路，坐公交车。"
           ],
           "option_pinyin": ["", "", "", ""],
           "word_hints": {}
@@ -387,14 +387,14 @@
           "word_hints": {"尊重": "zūn zhòng"}
         },
         {
-          "question": "What does 之所以…是因为… emphasise?",
+          "question": "Which sentence uses 之所以...是因为... correctly?",
           "type": "multiple_choice",
-          "correct": "The explanation or reason for a known situation",
+          "correct": "他之所以成功，是因为坚持不懈地努力。",
           "options": [
-            "The explanation or reason for a known situation",
-            "A preference between two options",
-            "A reciprocal action between people",
-            "A contrast between two events"
+            "他之所以成功，是因为坚持不懈地努力。",
+            "是因为他之所以成功，坚持不懈地努力。",
+            "他成功之所以，是因为坚持不懈地努力。",
+            "他之所以是因为成功，坚持不懈地努力。"
           ],
           "option_pinyin": ["", "", "", ""],
           "word_hints": {}
@@ -510,14 +510,14 @@
       "word_hints": {}
     },
     {
-      "question": "What does 宁可…也不… express?",
+      "question": "Which sentence uses 宁可…也不… correctly?",
       "type": "multiple_choice",
-      "correct": "A strong preference for one option over another",
+      "correct": "他宁可自己少睡，也不让朋友失望。",
       "options": [
-        "A strong preference for one option over another",
-        "Mutual actions between people",
-        "The reason for a situation",
-        "A contrast between two facts"
+        "他宁可自己少睡，也不让朋友失望。",
+        "也不他宁可自己少睡，让朋友失望。",
+        "他宁可让朋友失望，也不自己少睡。",
+        "他也不自己少睡，宁可让朋友失望。"
       ],
       "word_hints": {}
     },

@@ -90,7 +90,7 @@
     {
       "id": "hsk5_l5_10",
       "chinese": "成绩",
-      "pinyin": "chéng jī",
+      "pinyin": "chéng jì",
       "english": "Result; score; achievement",
       "part_of_speech": "noun",
       "example": "教练一宣布比赛成绩，运动员们就欢呼起来，因为他们打破了记录。",
@@ -160,7 +160,7 @@
   "key_sentences": [
     {
       "chinese": "只要坚持每天训练，就能不断提高体能和比赛成绩。",
-      "pinyin": "Zhǐ yào jiān chí měi tiān xùn liàn, jiù néng bù duàn tí gāo tǐ néng hé bǐ sài chéng jī.",
+      "pinyin": "Zhǐ yào jiān chí měi tiān xùn liàn, jiù néng bù duàn tí gāo tǐ néng hé bǐ sài chéng jì.",
       "english": "As long as you persist in training every day, you can continuously improve your physical fitness and competition results."
     },
     {
@@ -170,7 +170,7 @@
     },
     {
       "chinese": "教练一宣布比赛成绩，运动员们就欢呼起来，因为他们打破了记录。",
-      "pinyin": "Jiào liàn yī xuān bù bǐ sài chéng jī, yùn dòng yuán men jiù huān hū qǐ lái, yīn wèi tā men dǎ pò le jì lù.",
+      "pinyin": "Jiào liàn yī xuān bù bǐ sài chéng jì, yùn dòng yuán men jiù huān hū qǐ lái, yīn wèi tā men dǎ pò le jì lù.",
       "english": "As soon as the coach announced the competition results, the athletes cheered, because they had broken a record."
     },
     {
@@ -197,7 +197,7 @@
       "examples": [
         {
           "chinese": "只要运动员认真训练，就能在比赛中取得好成绩。",
-          "pinyin": "Zhǐ yào yùn dòng yuán rèn zhēn xùn liàn, jiù néng zài bǐ sài zhōng qǔ dé hǎo chéng jī.",
+          "pinyin": "Zhǐ yào yùn dòng yuán rèn zhēn xùn liàn, jiù néng zài bǐ sài zhōng qǔ dé hǎo chéng jì.",
           "english": "As long as athletes train seriously, they can achieve good results in competition."
         },
         {
@@ -249,14 +249,14 @@
           }
         },
         {
-          "question": "What does 只要...就... express?",
+          "question": "Which sentence uses 只要...就... correctly?",
           "type": "multiple_choice",
-          "correct": "A sufficient condition — as long as X happens, Y will follow",
+          "correct": "只要坚持练习，就能不断进步。",
           "options": [
-            "A sufficient condition — as long as X happens, Y will follow",
-            "A result that holds true regardless of any condition",
-            "Something happening progressively over time",
-            "A contrast between two situations"
+            "只要坚持练习，就能不断进步。",
+            "就坚持练习，只要能不断进步。",
+            "只要能不断进步，就坚持练习。",
+            "坚持只要练习，能就不断进步。"
           ],
           "option_pinyin": [
             "",
@@ -344,7 +344,7 @@
             "dōu"
           ],
           "word_hints": {
-            "成绩": "chéng jī",
+            "成绩": "chéng jì",
             "训练": "xùn liàn"
           }
         },
@@ -531,14 +531,14 @@
           }
         },
         {
-          "question": "Which structure is correct with 一...就...?",
+          "question": "Which sentence uses 一...就... correctly?",
           "type": "multiple_choice",
-          "correct": "一 + first action/event + 就 + immediate result",
+          "correct": "他一回家就开始做作业。",
           "options": [
-            "一 + first action/event + 就 + immediate result",
-            "就 + first action/event + 一 + immediate result",
-            "一 + immediate result + 就 + first action/event",
-            "Subject + 一 + object + 就 + verb"
+            "他一回家就开始做作业。",
+            "他就一回家开始做作业。",
+            "他一开始做作业就回家。",
+            "他回家一就开始做作业。"
           ],
           "option_pinyin": [
             "",
@@ -879,7 +879,7 @@
         {
           "speaker": "B",
           "chinese": "紧张是正常的。只要你发挥出平时训练的水平，就一定能取得好成绩。",
-          "pinyin": "Jǐn zhāng shì zhèng cháng de. Zhǐ yào nǐ fā huī chū píng shí xùn liàn de shuǐ píng, jiù yī dìng néng qǔ dé hǎo chéng jī.",
+          "pinyin": "Jǐn zhāng shì zhèng cháng de. Zhǐ yào nǐ fā huī chū píng shí xùn liàn de shuǐ píng, jiù yī dìng néng qǔ dé hǎo chéng jì.",
           "english": "It's normal to be nervous. As long as you perform at the level you've trained to, you will definitely achieve a good result."
         },
         {
@@ -964,7 +964,7 @@
         {
           "speaker": "A",
           "chinese": "还没有。你觉得只要有好教练，成绩就能提高吗？",
-          "pinyin": "Hái méi yǒu. Nǐ jué de zhǐ yào yǒu hǎo jiào liàn, chéng jī jiù néng tí gāo ma?",
+          "pinyin": "Hái méi yǒu. Nǐ jué de zhǐ yào yǒu hǎo jiào liàn, chéng jì jiù néng tí gāo ma?",
           "english": "Not yet. Do you think that as long as you have a good coach, results can improve?"
         },
         {

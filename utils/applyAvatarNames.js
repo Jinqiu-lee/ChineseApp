@@ -33,12 +33,15 @@ export function shortName(chineseName) {
 export const PRESERVE_ROLE_KEYWORDS = [
   '爸','妈','父','母','儿子','女儿','孩子','宝','祖','孙',
   '医生','大夫','护士','病人','患者',
+  '老师','教授','教师','校长','老板','经理','顾问','律师',
 ];
 
 export function shouldPreserveDialogue(dialogue) {
   const speakers = Object.values(dialogue.speakers || {});
+  // Only check the speaker's NAME — role-keywords in the role field alone (e.g. 加缪 with
+  // role="老师") should NOT trigger preservation; only real role-names like 王老师 or 李医生 do.
   return speakers.some(sp =>
-    PRESERVE_ROLE_KEYWORDS.some(k => ((sp.name || '') + (sp.role || '')).includes(k))
+    PRESERVE_ROLE_KEYWORDS.some(k => (sp.name || '').includes(k))
   );
 }
 
@@ -115,7 +118,7 @@ export const NAME_LOOKUP = {
   '毕加索':{ pinyin: 'Bì Jiā Suǒ', english: 'Picasso'    },
   '苏轼':  { pinyin: 'Sū Shì',     english: 'Su Shi'     },
   '萨特':  { pinyin: 'Sà Tè',      english: 'Sartre'     },
-  '波伏娃':{ pinyin: 'Bō Fú Wá',   english: 'de Beauvoir'},
+  '波伏娃':{ pinyin: 'Bō Fú Wá',   english: 'Beauvoir'   },
   '西蒙娜':{ pinyin: 'Xī Méng Nà', english: 'Simone'     },
   '伍尔夫':{ pinyin: 'Wǔ Ěr Fū',   english: 'Woolf'      },
   '严歌苓':{ pinyin: 'Yán Gē Líng',english: 'Yan Geling' },

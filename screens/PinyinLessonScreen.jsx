@@ -6,7 +6,7 @@ import ScreenBackground from '../components/ScreenBackground';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
 const TONE_COLORS = ['#FF6B6B', '#FF9F43', '#1DD1A1', '#54A0FF'];
-const TONE_NAMES  = ['1st Tone ā', '2nd Tone á', '3rd Tone ǎ', '4th Tone à'];
+const TONE_NAMES  = ['1st Tone', '2nd Tone', '3rd Tone', '4th Tone'];
 
 // Diacritic tone marks for each final — used in the tones popup
 const FINAL_TONES = {

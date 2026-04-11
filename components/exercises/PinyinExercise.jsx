@@ -10,21 +10,25 @@ const SUBTYPE_META = {
 };
 
 export default function PinyinExercise({ exercise, onCorrect, onWrong }) {
-  const { subtype, syllable, chinese, english, correct, choices } = exercise;
-  const [selected, setSelected]   = useState(null);
-  const [answered, setAnswered]   = useState(false);
+  const { subtype, syllable, audio_syllable, chinese, english, correct, choices } = exercise;
+  const audioTarget = audio_syllable ?? syllable;
+  const [selected, setSelected]     = useState(null);
+  const [answered, setAnswered]     = useState(false);
+  const [showContinue, setShowContinue] = useState(false);
 
   useEffect(() => {
-    speakPinyin(syllable);
+    speakPinyin(audioTarget);
   }, []);
 
   const handleSelect = (choice) => {
     if (answered) return;
     setSelected(choice);
     setAnswered(true);
-    setTimeout(() => {
-      choice === correct ? onCorrect() : onWrong();
-    }, 1200);
+    if (choice === correct) {
+      setTimeout(() => onCorrect(), 1200);
+    } else {
+      setShowContinue(true);
+    }
   };
 
   const getStyle = (choice) => {
@@ -49,12 +53,12 @@ export default function PinyinExercise({ exercise, onCorrect, onWrong }) {
       {/* Syllable card */}
       <TouchableOpacity
         style={styles.syllableCard}
-        onPress={() => speakPinyin(syllable)}
+        onPress={() => speakPinyin(audioTarget)}
         activeOpacity={0.75}
       >
         <Text style={styles.audioIcon}>🔊</Text>
-        <Text style={styles.syllable}>{syllable}</Text>
         {chinese && <Text style={styles.chinese}>{chinese}</Text>}
+        <Text style={styles.syllable}>{syllable}</Text>
         {english  && <Text style={styles.english}>{english}</Text>}
       </TouchableOpacity>
 
@@ -72,6 +76,12 @@ export default function PinyinExercise({ exercise, onCorrect, onWrong }) {
           </TouchableOpacity>
         ))}
       </View>
+
+      {showContinue && (
+        <TouchableOpacity style={styles.continueBtn} onPress={onWrong} activeOpacity={0.85}>
+          <Text style={styles.continueBtnText}>Continue →</Text>
+        </TouchableOpacity>
+      )}
     </View>
   );
 }
@@ -109,8 +119,8 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.18, shadowRadius: 12, elevation: 5,
   },
   audioIcon:   { fontSize: 20, marginBottom: 4 },
-  syllable:    { fontSize: 52, fontWeight: '900', color: VG.orange, letterSpacing: 2 },
-  chinese:     { fontSize: 28, fontWeight: '900', color: VG.onCard, marginTop: 4 },
+  syllable:    { fontSize: 36, fontWeight: '800', color: VG.orange, letterSpacing: 2 },
+  chinese:     { fontSize: 52, fontWeight: '900', color: VG.onCard, marginTop: 2 },
   english:     { fontSize: 15, color: VG.onCardMuted, fontStyle: 'italic' },
   noAudioHint: { fontSize: 13, color: VG.onCardMuted },
 
@@ -120,4 +130,11 @@ const styles = StyleSheet.create({
   choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: VG.error },
   choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, padding: 18, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.10)' },
   choiceText:   { fontSize: 17, fontWeight: '700', color: VG.cream, textAlign: 'center' },
+  continueBtn: {
+    marginTop: 16, backgroundColor: DEEP_NAVY, borderRadius: 14,
+    padding: 16, alignItems: 'center',
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.22, shadowRadius: 8, elevation: 4,
+  },
+  continueBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 });

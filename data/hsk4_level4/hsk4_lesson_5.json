@@ -48,8 +48,8 @@
       "pinyin": "qióng",
       "english": "Poor; poverty-stricken",
       "part_of_speech": "adjective",
-      "example": "否则乱花钱，你的收入再高也会变穷。",
-      "translation": "Otherwise, if you spend money carelessly, no matter how high your income is you will still end up poor."
+      "example": "乱花钱，你的收入再高也会变穷。",
+      "translation": "If you spend money carelessly, no matter how high your income is you will still end up poor."
     },
     {
       "id": "hsk4_l5_06",
@@ -75,7 +75,7 @@
       "pinyin": "jiǎng jīn",
       "english": "Bonus; prize money",
       "part_of_speech": "noun",
-      "example": "年底公司发了奖金丰厚，大家都很高兴。",
+      "example": "年底公司发了丰厚的奖金，大家都很高兴。",
       "translation": "At year-end, the company paid a generous bonus, and everyone was very happy."
     },
     {
@@ -93,8 +93,8 @@
       "pinyin": "jià gé",
       "english": "Price",
       "part_of_speech": "noun",
-      "example": "他估计这件商品的价格大概是一千块。",
-      "translation": "He estimates the price of this item is around one thousand yuan."
+      "example": "他估计这件商品的价格是一千块。",
+      "translation": "He estimates the price of this item is one thousand yuan."
     },
     {
       "id": "hsk4_l5_11",
@@ -102,8 +102,8 @@
       "pinyin": "gū jì",
       "english": "To estimate; estimate",
       "part_of_speech": "verb/noun",
-      "example": "他估计这件商品的价格大概是一千块。",
-      "translation": "He estimates the price of this item is around one thousand yuan."
+      "example": "他估计这件商品的价格是一千块。",
+      "translation": "He estimates the price of this item is one thousand yuan."
     },
     {
       "id": "hsk4_l5_12",
@@ -162,18 +162,18 @@
       "english": "Since you have already earned enough money, you should manage your income wisely."
     },
     {
-      "chinese": "否则乱花钱，你的收入再高也会变穷。",
-      "pinyin": "Fǒu zé luàn huā qián, nǐ de shōu rù zài gāo yě huì biàn qióng.",
-      "english": "Otherwise, if you spend money carelessly, no matter how high your income is you will still end up poor."
+      "chinese": "乱花钱，你的收入再高也会变穷。",
+      "pinyin": "Luàn huā qián, nǐ de shōu rù zài gāo yě huì biàn qióng.",
+      "english": "If you spend money carelessly, no matter how high your income is you will still end up poor."
     },
     {
-      "chinese": "他估计这件商品的价格大概是一千块。",
-      "pinyin": "Tā gū jì zhè jiàn shāng pǐn de jià gé dà gài shì yì qiān kuài.",
-      "english": "He estimates the price of this item is around one thousand yuan."
+      "chinese": "他估计这件商品的价格是一千块。",
+      "pinyin": "Tā gū jì zhè jiàn shāng pǐn de jià gé shì yì qiān kuài.",
+      "english": "He estimates the price of this item is one thousand yuan."
     },
     {
-      "chinese": "年底公司发了奖金丰厚，大家都很高兴。",
-      "pinyin": "Nián dǐ gōng sī fā le jiǎng jīn fēng hòu, dà jiā dōu hěn gāo xìng.",
+      "chinese": "年底公司发了丰厚的奖金，大家都很高兴。",
+      "pinyin": "Nián dǐ gōng sī fā le fēng hòu de jiǎng jīn , dà jiā dōu hěn gāo xìng.",
       "english": "At year-end, the company paid a generous bonus, and everyone was very happy."
     },
     {
@@ -204,9 +204,21 @@
           "question": "_____ 赚更多钱，他找了第二份工作。",
           "type": "multiple_choice",
           "correct": "为了",
-          "options": ["为了", "因为", "虽然", "既然"],
-          "option_pinyin": ["wèi le", "yīn wèi", "suī rán", "jì rán"],
-          "word_hints": {"赚": "zhuàn"}
+          "options": [
+            "为了",
+            "因为",
+            "虽然",
+            "既然"
+          ],
+          "option_pinyin": [
+            "wèi le",
+            "yīn wèi",
+            "suī rán",
+            "jì rán"
+          ],
+          "word_hints": {
+            "赚": "zhuàn"
+          }
         },
         {
           "question": "Choose the correct sentence using 为了.",
@@ -224,35 +236,64 @@
             "Tā bú làng fèi wèi le, zǐ xì gū jì le jià gé.",
             "Bú làng fèi wèi le tā, zǐ xì gū jì le jià gé."
           ],
-          "word_hints": {"浪费": "làng fèi", "估计": "gū jì", "价格": "jià gé"}
+          "word_hints": {
+            "浪费": "làng fèi",
+            "估计": "gū jì",
+            "价格": "jià gé"
+          }
         },
         {
           "question": "她每个月都存钱，_____ 以后可以买房。",
           "type": "multiple_choice",
           "correct": "为了",
-          "options": ["为了", "否则", "既然", "即使"],
-          "option_pinyin": ["wèi le", "fǒu zé", "jì rán", "jí shǐ"],
+          "options": [
+            "为了",
+            "否则",
+            "既然",
+            "即使"
+          ],
+          "option_pinyin": [
+            "wèi le",
+            "fǒu zé",
+            "jì rán",
+            "jí shǐ"
+          ],
           "word_hints": {}
         },
         {
-          "question": "为了 is placed where in a sentence?",
+          "question": "Which sentence uses 为了 correctly?",
           "type": "multiple_choice",
-          "correct": "At the beginning of the sentence or before the goal phrase",
+          "correct": "为了学好中文，他每天练习两个小时。",
           "options": [
-            "At the beginning of the sentence or before the goal phrase",
-            "After the main verb",
-            "At the end of the sentence",
-            "Only before the subject"
+            "为了学好中文，他每天练习两个小时。",
+            "他每天练习两个小时，为了学好中文的。",
+            "他为了每天练习学好中文两个小时。",
+            "他学好中文每天练习为了两个小时。"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "他 _____ 节省开支，每天带饭上班。",
           "type": "multiple_choice",
           "correct": "为了",
-          "options": ["为了", "通过", "对于", "从来"],
-          "option_pinyin": ["wèi le", "tōng guò", "duì yú", "cóng lái"],
+          "options": [
+            "为了",
+            "通过",
+            "对于",
+            "从来"
+          ],
+          "option_pinyin": [
+            "wèi le",
+            "tōng guò",
+            "duì yú",
+            "cóng lái"
+          ],
           "word_hints": {}
         }
       ]
@@ -278,17 +319,41 @@
           "question": "_____ 你工资很高，就应该认真存钱。",
           "type": "multiple_choice",
           "correct": "既然",
-          "options": ["既然", "虽然", "为了", "否则"],
-          "option_pinyin": ["jì rán", "suī rán", "wèi le", "fǒu zé"],
-          "word_hints": {"工资": "gōng zī"}
+          "options": [
+            "既然",
+            "虽然",
+            "为了",
+            "否则"
+          ],
+          "option_pinyin": [
+            "jì rán",
+            "suī rán",
+            "wèi le",
+            "fǒu zé"
+          ],
+          "word_hints": {
+            "工资": "gōng zī"
+          }
         },
         {
           "question": "既然他赚了足够的钱，_____ 不必担心了。",
           "type": "multiple_choice",
           "correct": "就",
-          "options": ["就", "都", "也", "还"],
-          "option_pinyin": ["jiù", "dōu", "yě", "hái"],
-          "word_hints": {"赚": "zhuàn"}
+          "options": [
+            "就",
+            "都",
+            "也",
+            "还"
+          ],
+          "option_pinyin": [
+            "jiù",
+            "dōu",
+            "yě",
+            "hái"
+          ],
+          "word_hints": {
+            "赚": "zhuàn"
+          }
         },
         {
           "question": "Choose the correct sentence with 既然.",
@@ -306,7 +371,9 @@
             "Jì rán, jià gé tài gāo jiù huàn yī jiā pián yí de.",
             "Jiù jì rán jià gé tài gāo, huàn yī jiā pián yí de."
           ],
-          "word_hints": {"价格": "jià gé"}
+          "word_hints": {
+            "价格": "jià gé"
+          }
         },
         {
           "question": "What is the key difference between 既然 and 因为?",
@@ -318,16 +385,34 @@
             "既然 is more formal",
             "因为 comes first in the sentence"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "_____ 你不喜欢浪费，就应该好好管理收入。",
           "type": "multiple_choice",
           "correct": "既然",
-          "options": ["既然", "通过", "对于", "而且"],
-          "option_pinyin": ["jì rán", "tōng guò", "duì yú", "ér qiě"],
-          "word_hints": {"浪费": "làng fèi", "收入": "shōu rù"}
+          "options": [
+            "既然",
+            "通过",
+            "对于",
+            "而且"
+          ],
+          "option_pinyin": [
+            "jì rán",
+            "tōng guò",
+            "duì yú",
+            "ér qiě"
+          ],
+          "word_hints": {
+            "浪费": "làng fèi",
+            "收入": "shōu rù"
+          }
         }
       ]
     },
@@ -352,8 +437,18 @@
           "question": "你要认真存钱，_____ 以后买不起房子。",
           "type": "multiple_choice",
           "correct": "否则",
-          "options": ["否则", "既然", "为了", "通过"],
-          "option_pinyin": ["fǒu zé", "jì rán", "wèi le", "tōng guò"],
+          "options": [
+            "否则",
+            "既然",
+            "为了",
+            "通过"
+          ],
+          "option_pinyin": [
+            "fǒu zé",
+            "jì rán",
+            "wèi le",
+            "tōng guò"
+          ],
           "word_hints": {}
         },
         {
@@ -372,15 +467,31 @@
             "Nián dǐ fǒu zé méi yǒu cún kuǎn, bié làng fèi gōng zī.",
             "Bié làng fèi fǒu zé gōng zī, nián dǐ méi yǒu cún kuǎn."
           ],
-          "word_hints": {"浪费": "làng fèi", "工资": "gōng zī"}
+          "word_hints": {
+            "浪费": "làng fèi",
+            "工资": "gōng zī"
+          }
         },
         {
           "question": "他必须提高收入，_____ 无法支付这么高的价格。",
           "type": "multiple_choice",
           "correct": "否则",
-          "options": ["否则", "既然", "因为", "虽然"],
-          "option_pinyin": ["fǒu zé", "jì rán", "yīn wèi", "suī rán"],
-          "word_hints": {"收入": "shōu rù", "价格": "jià gé"}
+          "options": [
+            "否则",
+            "既然",
+            "因为",
+            "虽然"
+          ],
+          "option_pinyin": [
+            "fǒu zé",
+            "jì rán",
+            "yīn wèi",
+            "suī rán"
+          ],
+          "word_hints": {
+            "收入": "shōu rù",
+            "价格": "jià gé"
+          }
         },
         {
           "question": "What does 否则 introduce?",
@@ -392,16 +503,33 @@
             "A purpose or goal",
             "A contrast or surprise"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "快去付款，_____ 商品就卖完了。",
           "type": "multiple_choice",
           "correct": "否则",
-          "options": ["否则", "既然", "为了", "只要"],
-          "option_pinyin": ["fǒu zé", "jì rán", "wèi le", "zhǐ yào"],
-          "word_hints": {"付款": "fù kuǎn"}
+          "options": [
+            "否则",
+            "既然",
+            "为了",
+            "只要"
+          ],
+          "option_pinyin": [
+            "fǒu zé",
+            "jì rán",
+            "wèi le",
+            "zhǐ yào"
+          ],
+          "word_hints": {
+            "付款": "fù kuǎn"
+          }
         }
       ]
     }
@@ -426,84 +554,178 @@
       "question": "What does 工资 mean?",
       "type": "multiple_choice",
       "correct": "Salary; wages",
-      "options": ["Salary; wages", "Income", "Bonus", "Price"],
-      "word_hints": {"工资": "gōng zī"}
+      "options": [
+        "Salary; wages",
+        "Income",
+        "Bonus",
+        "Price"
+      ],
+      "word_hints": {
+        "工资": "gōng zī"
+      }
     },
     {
       "question": "Which word means 'income; earnings'?",
       "type": "multiple_choice",
       "correct": "收入",
-      "options": ["收入", "工资", "奖金", "零钱"],
-      "word_hints": {"收入": "shōu rù", "工资": "gōng zī", "奖金": "jiǎng jīn", "零钱": "líng qián"}
+      "options": [
+        "收入",
+        "工资",
+        "奖金",
+        "零钱"
+      ],
+      "word_hints": {
+        "收入": "shōu rù",
+        "工资": "gōng zī",
+        "奖金": "jiǎng jīn",
+        "零钱": "líng qián"
+      }
     },
     {
       "question": "What does 富 mean?",
       "type": "multiple_choice",
       "correct": "Rich; wealthy",
-      "options": ["Rich; wealthy", "Poor", "Wasteful", "Estimated"],
-      "word_hints": {"富": "fù"}
+      "options": [
+        "Rich; wealthy",
+        "Poor",
+        "Wasteful",
+        "Estimated"
+      ],
+      "word_hints": {
+        "富": "fù"
+      }
     },
     {
       "question": "Which word means 'poor; poverty-stricken'?",
       "type": "multiple_choice",
       "correct": "穷",
-      "options": ["穷", "富", "存", "赚"],
-      "word_hints": {"穷": "qióng", "富": "fù", "存": "cún", "赚": "zhuàn"}
+      "options": [
+        "穷",
+        "富",
+        "存",
+        "赚"
+      ],
+      "word_hints": {
+        "穷": "qióng",
+        "富": "fù",
+        "存": "cún",
+        "赚": "zhuàn"
+      }
     },
     {
       "question": "What does 赚 mean?",
       "type": "multiple_choice",
       "correct": "To earn; to make (money)",
-      "options": ["To earn; to make (money)", "To save", "To pay", "To waste"],
-      "word_hints": {"赚": "zhuàn"}
+      "options": [
+        "To earn; to make (money)",
+        "To save",
+        "To pay",
+        "To waste"
+      ],
+      "word_hints": {
+        "赚": "zhuàn"
+      }
     },
     {
       "question": "Which word means 'to save (money); to deposit'?",
       "type": "multiple_choice",
       "correct": "存",
-      "options": ["存", "赚", "付款", "浪费"],
-      "word_hints": {"存": "cún", "赚": "zhuàn", "付款": "fù kuǎn", "浪费": "làng fèi"}
+      "options": [
+        "存",
+        "赚",
+        "付款",
+        "浪费"
+      ],
+      "word_hints": {
+        "存": "cún",
+        "赚": "zhuàn",
+        "付款": "fù kuǎn",
+        "浪费": "làng fèi"
+      }
     },
     {
       "question": "What does 奖金 mean?",
       "type": "multiple_choice",
       "correct": "Bonus; prize money",
-      "options": ["Bonus; prize money", "Salary", "Income", "Change"],
-      "word_hints": {"奖金": "jiǎng jīn"}
+      "options": [
+        "Bonus; prize money",
+        "Salary",
+        "Income",
+        "Change"
+      ],
+      "word_hints": {
+        "奖金": "jiǎng jīn"
+      }
     },
     {
       "question": "Which word means 'price'?",
       "type": "multiple_choice",
       "correct": "价格",
-      "options": ["价格", "零钱", "收入", "工资"],
-      "word_hints": {"价格": "jià gé", "零钱": "líng qián", "收入": "shōu rù", "工资": "gōng zī"}
+      "options": [
+        "价格",
+        "零钱",
+        "收入",
+        "工资"
+      ],
+      "word_hints": {
+        "价格": "jià gé",
+        "零钱": "líng qián",
+        "收入": "shōu rù",
+        "工资": "gōng zī"
+      }
     },
     {
       "question": "What does 估计 mean?",
       "type": "multiple_choice",
       "correct": "To estimate; estimate",
-      "options": ["To estimate; estimate", "To waste", "To save", "To pay"],
-      "word_hints": {"估计": "gū jì"}
+      "options": [
+        "To estimate; estimate",
+        "To waste",
+        "To save",
+        "To pay"
+      ],
+      "word_hints": {
+        "估计": "gū jì"
+      }
     },
     {
       "question": "What does 浪费 mean?",
       "type": "multiple_choice",
       "correct": "To waste; wasteful",
-      "options": ["To waste; wasteful", "To save", "To earn", "To estimate"],
-      "word_hints": {"浪费": "làng fèi"}
+      "options": [
+        "To waste; wasteful",
+        "To save",
+        "To earn",
+        "To estimate"
+      ],
+      "word_hints": {
+        "浪费": "làng fèi"
+      }
     },
     {
       "question": "Fill in: _____ 存钱买房，他每月把工资存起来。",
       "type": "multiple_choice",
       "correct": "为了",
-      "options": ["为了", "既然", "否则", "通过"],
-      "word_hints": {"工资": "gōng zī"}
+      "options": [
+        "为了",
+        "既然",
+        "否则",
+        "通过"
+      ],
+      "word_hints": {
+        "工资": "gōng zī"
+      }
     },
     {
       "question": "What does 既然 mean?",
       "type": "multiple_choice",
       "correct": "Since; given that",
-      "options": ["Since; given that", "Otherwise", "In order to", "Although"],
+      "options": [
+        "Since; given that",
+        "Otherwise",
+        "In order to",
+        "Although"
+      ],
       "word_hints": {}
     },
     {
@@ -516,41 +738,72 @@
         "你要否则存钱，以后会很穷。",
         "以后你要存钱，很穷否则。"
       ],
-      "word_hints": {"穷": "qióng"}
+      "word_hints": {
+        "穷": "qióng"
+      }
     },
     {
       "question": "What does 零钱 mean?",
       "type": "multiple_choice",
       "correct": "Change (small coins); pocket money",
-      "options": ["Change (small coins); pocket money", "Bonus", "Salary", "Savings"],
-      "word_hints": {"零钱": "líng qián"}
+      "options": [
+        "Change (small coins); pocket money",
+        "Bonus",
+        "Salary",
+        "Savings"
+      ],
+      "word_hints": {
+        "零钱": "líng qián"
+      }
     },
     {
       "question": "What does 付款 mean?",
       "type": "multiple_choice",
       "correct": "To pay; payment",
-      "options": ["To pay; payment", "To save", "To earn", "To waste"],
-      "word_hints": {"付款": "fù kuǎn"}
+      "options": [
+        "To pay; payment",
+        "To save",
+        "To earn",
+        "To waste"
+      ],
+      "word_hints": {
+        "付款": "fù kuǎn"
+      }
     },
     {
       "question": "既然 is followed by which word to complete the conclusion?",
       "type": "multiple_choice",
       "correct": "就",
-      "options": ["就", "而且", "但是", "因为"],
+      "options": [
+        "就",
+        "而且",
+        "但是",
+        "因为"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does the phrase 存钱买房 mean?",
       "type": "multiple_choice",
       "correct": "To save money to buy a house",
-      "options": ["To save money to buy a house", "To pay for housing", "To waste money on a house", "To earn money from housing"],
+      "options": [
+        "To save money to buy a house",
+        "To pay for housing",
+        "To waste money on a house",
+        "To earn money from housing"
+      ],
       "word_hints": {}
     },
     {
       "question": "In Chinese culture, which number in a red envelope is considered lucky because it sounds like 'prosperity'?",
       "type": "multiple_choice",
       "correct": "8 (八)",
-      "options": ["8 (八)", "4 (四)", "3 (三)", "7 (七)"],
+      "options": [
+        "8 (八)",
+        "4 (四)",
+        "3 (三)",
+        "7 (七)"
+      ],
       "word_hints": {}
     },
     {
@@ -563,14 +816,23 @@
         "既然就收入高，要好好存钱。",
         "收入高，就既然要好好存钱。"
       ],
-      "word_hints": {"收入": "shōu rù"}
+      "word_hints": {
+        "收入": "shōu rù"
+      }
     },
     {
       "question": "What does the phrase 付款方式 mean?",
       "type": "multiple_choice",
       "correct": "Payment method",
-      "options": ["Payment method", "Salary increase", "Price estimate", "Bonus system"],
-      "word_hints": {"付款": "fù kuǎn"}
+      "options": [
+        "Payment method",
+        "Salary increase",
+        "Price estimate",
+        "Bonus system"
+      ],
+      "word_hints": {
+        "付款": "fù kuǎn"
+      }
     }
   ],
   "dialogues": [
@@ -579,20 +841,28 @@
       "title": "Saving Money for a House",
       "title_chinese": "存钱买房",
       "speakers": {
-        "A": {"name": "老张", "role": "父亲", "gender": "male"},
-        "B": {"name": "小张", "role": "儿子", "gender": "male"}
+        "A": {
+          "name": "爱玲",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "李白",
+          "role": "朋友",
+          "gender": "male"
+        }
       },
       "lines": [
         {
           "speaker": "B",
-          "chinese": "爸，我想买一套新房子，但是价格太高了。",
-          "pinyin": "Bà, wǒ xiǎng mǎi yí tào xīn fáng zi, dàn shì jià gé tài gāo le.",
-          "english": "Dad, I want to buy a new apartment, but the price is too high."
+          "chinese": "我想买一套新房子，但是价格太高了。",
+          "pinyin": "Wǒ xiǎng mǎi yí tào xīn fáng zi, dàn shì jià gé tài gāo le.",
+          "english": "I want to buy a new apartment, but the price is too high."
         },
         {
           "speaker": "A",
-          "chinese": "你现在的工资怎么样？你每个月能存多少钱？",
-          "pinyin": "Nǐ xiàn zài de gōng zī zěn me yàng? Nǐ měi ge yuè néng cún duō shǎo qián?",
+          "chinese": "你现在的工资怎么样？每个月能存多少钱？",
+          "pinyin": "Nǐ xiàn zài de gōng zī zěn me yàng? Měi ge yuè néng cún duō shǎo qián?",
           "english": "How is your salary now? How much can you save each month?"
         },
         {
@@ -621,9 +891,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "今年年底公司估计会发奖金，我打算把零钱和奖金都存起来。",
-          "pinyin": "Jīn nián nián dǐ gōng sī gū jì huì fā jiǎng jīn, wǒ dǎ suàn bǎ líng qián hé jiǎng jīn dōu cún qǐ lái.",
-          "english": "The company is estimated to pay a bonus at year-end. I plan to save both the small change and the bonus."
+          "chinese": "今年年底公司估计会发奖金，我打算把奖金都存起来。",
+          "pinyin": "Jīn nián nián dǐ gōng sī gū jì huì fā jiǎng jīn, wǒ dǎ suàn bǎ jiǎng jīn dōu cún qǐ lái.",
+          "english": "The company is estimated to pay a bonus at year-end. I plan to save all the bonus."
         }
       ]
     },
@@ -632,8 +902,16 @@
       "title": "Paying at the Shop",
       "title_chinese": "在商店付款",
       "speakers": {
-        "A": {"name": "售货员", "role": "店员", "gender": "female"},
-        "B": {"name": "顾客", "role": "顾客", "gender": "male"}
+        "A": {
+          "name": "售货员",
+          "role": "店员",
+          "gender": "female"
+        },
+        "B": {
+          "name": "顾客",
+          "role": "顾客",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -644,20 +922,20 @@
         },
         {
           "speaker": "B",
-          "chinese": "我用手机支付，不带零钱。",
-          "pinyin": "Wǒ yòng shǒu jī zhī fù, bú dài líng qián.",
-          "english": "I'll pay by mobile. I don't carry small change."
+          "chinese": "我用手机支付，没有零钱。",
+          "pinyin": "Wǒ yòng shǒu jī zhī fù, méi yǒu líng qián.",
+          "english": "I'll pay by mobile. I don't have small change."
         },
         {
           "speaker": "A",
-          "chinese": "好的，我们支持手机付款。您估计一下，是否需要开发票？",
-          "pinyin": "Hǎo de, wǒ men zhī chí shǒu jī fù kuǎn. Nín gū jì yí xià, shì fǒu xū yào kāi fā piào?",
-          "english": "Okay, we support mobile payment. Would you like to estimate whether you need a receipt?"
+          "chinese": "好的，我们支持手机付款。您是否需要开发票？",
+          "pinyin": "Hǎo de, wǒ men zhī chí shǒu jī fù kuǎn. Nín shì fǒu xū yào kāi fā piào?",
+          "english": "Okay, we support mobile payment. Do you need a receipt?"
         },
         {
           "speaker": "B",
-          "chinese": "需要，我把这次购物的收入作为工作开支来报销。",
-          "pinyin": "Xū yào, wǒ bǎ zhè cì gòu wù de shōu rù zuò wéi gōng zuò kāi zhī lái bào xiāo.",
+          "chinese": "需要，我把这次购物的金额作为工作开支来报销。",
+          "pinyin": "Xū yào, wǒ bǎ zhè cì gòu wù de jīn é zuò wéi gōng zuò kāi zhī lái bào xiāo.",
           "english": "Yes please. I will submit this purchase as a work expense for reimbursement."
         },
         {
@@ -668,8 +946,8 @@
         },
         {
           "speaker": "B",
-          "chinese": "哈哈，我父亲教我，否则工资全花光，到老什么都没有。",
-          "pinyin": "Hā hā, wǒ fù qīn jiāo wǒ, fǒu zé gōng zī quán huā guāng, dào lǎo shén me dōu méi yǒu.",
+          "chinese": "哈哈，我父亲教我的，否则工资全花光，到老了什么都没有。",
+          "pinyin": "Hā hā, wǒ fù qīn jiāo wǒ de, fǒu zé gōng zī quán huā guāng, dào lǎo le shén me dōu méi yǒu.",
           "english": "Haha, my father taught me. Otherwise you spend your whole salary and have nothing in old age."
         }
       ]

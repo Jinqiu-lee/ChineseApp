@@ -406,14 +406,14 @@
           }
         },
         {
-          "question": "Where is 相比之下 typically placed in a sentence?",
+          "question": "Which sentence uses 相比之下 correctly?",
           "type": "multiple_choice",
-          "correct": "At the beginning of the clause being compared",
+          "correct": "相比之下，这家餐厅的价格更合理。",
           "options": [
-            "At the beginning of the clause being compared",
-            "At the very end of the sentence",
-            "Between the subject and verb",
-            "After the object"
+            "相比之下，这家餐厅的价格更合理。",
+            "这家餐厅的价格更合理，相比之下。",
+            "这家餐厅相比之下的价格更合理。",
+            "这家餐厅的价格更相比之下合理。"
           ],
           "option_pinyin": [
             "",
@@ -708,14 +708,14 @@
       }
     },
     {
-      "question": "What does 以便 introduce?",
+      "question": "Which sentence uses 以便 correctly?",
       "type": "multiple_choice",
-      "correct": "A purpose or intended benefit",
+      "correct": "请提前发邮件，以便我做好准备。",
       "options": [
-        "A purpose or intended benefit",
-        "A contrast between two facts",
-        "A cause or reason",
-        "A condition"
+        "请提前发邮件，以便我做好准备。",
+        "以便请提前发邮件，我做好准备。",
+        "请提前以便发邮件，我做好准备。",
+        "请提前发邮件我做好准备，以便。"
       ],
       "word_hints": {}
     },

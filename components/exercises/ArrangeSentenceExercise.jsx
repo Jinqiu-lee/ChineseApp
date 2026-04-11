@@ -38,7 +38,18 @@ function TileView({ tile, inTray, showPinyin, pinyin, checked, isCorrect, isDrag
 }
 
 // ── Main exercise ─────────────────────────────────────────────────────────────
-export default function ArrangeSentenceExercise({ exercise, onCorrect, onWrong }) {
+// High-contrast "WORD BANK" pill colors per level background painting
+const BANK_LABEL_COLORS = {
+  hsk1: { bg: '#1C2A44', text: '#FFE082' }, // dark navy on sunflower gold
+  hsk2: { bg: '#FFD166', text: '#1C2A44' }, // amber on dark café night
+  hsk3: { bg: '#1C2A44', text: '#A8E6A3' }, // dark navy on wheat-field green
+  hsk4: { bg: '#FFFFFF', text: '#1C2A44' }, // white on warm farmhouse
+  hsk5: { bg: '#FFD166', text: '#0D1B3E' }, // amber on starry deep blue
+  hsk6: { bg: '#4A148C', text: '#FFE082' }, // deep purple on irises yellow
+};
+const BANK_LABEL_DEFAULT = { bg: '#1C2A44', text: '#FFFFFF' };
+
+export default function ArrangeSentenceExercise({ exercise, onCorrect, onWrong, levelId = 'hsk1' }) {
   const { correctTokens, shuffledTokens, token_pinyin_map = {}, hint } = exercise;
 
   const [tiles, setTiles]         = useState(() =>
@@ -311,7 +322,10 @@ export default function ArrangeSentenceExercise({ exercise, onCorrect, onWrong }
       {/* Word bank */}
       {!checked && (
         <>
-          <Text style={styles.bankLabel}>WORD BANK</Text>
+          <Text style={[styles.bankLabel, {
+            backgroundColor: (BANK_LABEL_COLORS[levelId] ?? BANK_LABEL_DEFAULT).bg,
+            color: (BANK_LABEL_COLORS[levelId] ?? BANK_LABEL_DEFAULT).text,
+          }]}>WORD BANK</Text>
           <View style={styles.tileRow}>
             {tiles.map(tile => {
               const pan = getOrCreatePan(tile.id);
@@ -420,7 +434,7 @@ const styles = StyleSheet.create({
   tileTextCorrectReveal: { color: '#0f3d22', fontWeight: '800' },
   tilePinyinReveal: { fontSize: 10, color: '#1a5c2f', fontStyle: 'italic', marginTop: 2 },
 
-  bankLabel: { fontSize: 11, color: VG.gold, fontWeight: '700', letterSpacing: 0.5, marginBottom: 10 },
+  bankLabel: { fontSize: 11, fontWeight: '800', letterSpacing: 1, marginBottom: 10, alignSelf: 'flex-start', paddingHorizontal: 10, paddingVertical: 4, borderRadius: 8, overflow: 'hidden' },
   tileRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 8 },
 
   tile: {

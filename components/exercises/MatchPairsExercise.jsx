@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
   cellSelected: { backgroundColor: '#FFF8ED', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.gold, minHeight: 64 },
   cellMatched:  { backgroundColor: '#e8f5e9', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.success, minHeight: 64 },
   cellWrong:    { backgroundColor: '#fde8e8', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.error, minHeight: 64 },
-  cellChinese: { fontSize: 20, fontWeight: '800', color: VG.cream },
+  cellChinese: { fontSize: 22, fontWeight: '800', color: VG.cream },
   cellPinyin:  { fontSize: 9, color: VG.orange, fontStyle: 'italic', marginTop: 3 },
-  cellEnglish: { fontSize: 11, fontWeight: '600', color: VG.cream, textAlign: 'center', lineHeight: 15 },
+  cellEnglish: { fontSize: 13, fontWeight: '800', color: VG.cream, textAlign: 'center', lineHeight: 18 },
 });

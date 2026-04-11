@@ -228,7 +228,7 @@
           }
         },
         {
-          "question": "她 _____ 感动了，_____ 哭了起来。",
+          "question": "她_____很感动，_____还哭了起来。",
           "type": "multiple_choice",
           "correct": "不仅...而且...",
           "options": [
@@ -491,7 +491,7 @@
           }
         },
         {
-          "question": "他们的爱情很浪漫，_____ 生活非常简单。",
+          "question": "他们的爱情很浪漫，生活_____非常简单。",
           "type": "multiple_choice",
           "correct": "却",
           "options": [
@@ -512,14 +512,14 @@
           }
         },
         {
-          "question": "What is the position of 却 in a sentence?",
+          "question": "Which sentence uses 却 correctly?",
           "type": "multiple_choice",
-          "correct": "Before the verb or adjective in the second clause",
+          "correct": "他很努力，成绩却不太好。",
           "options": [
-            "Before the verb or adjective in the second clause",
-            "At the very beginning of the sentence",
-            "At the end of the sentence",
-            "After the object"
+            "他很努力，成绩却不太好。",
+            "却他很努力，成绩不太好。",
+            "他很努力，成绩不却太好。",
+            "他很努力，成绩不太好却。"
           ],
           "option_pinyin": [
             "",
@@ -862,61 +862,61 @@
       "title_chinese": "浪漫的邀请",
       "speakers": {
         "A": {
-          "name": "李白",
-          "role": "男朋友",
-          "gender": "male"
-        },
-        "B": {
           "name": "爱玲",
           "role": "女朋友",
           "gender": "female"
+        },
+        "B": {
+          "name": "李白",
+          "role": "男朋友",
+          "gender": "male"
         }
       },
       "lines": [
         {
-          "speaker": "A",
+          "speaker": "B",
           "chinese": "爱玲，我想邀请你这个周末去看电影，你有时间吗？",
           "pinyin": "Ài Líng, wǒ xiǎng yāo qǐng nǐ zhè ge zhōu mò qù kàn diàn yǐng, nǐ yǒu shí jiān ma?",
           "english": "Eileen, I'd like to invite you to see a movie this weekend. Are you free?"
         },
         {
-          "speaker": "B",
+          "speaker": "A",
           "chinese": "当然！我感觉这会是一次很浪漫的约会。",
           "pinyin": "Dāng rán! Wǒ gǎn jué zhè huì shì yí cì hěn làng màn de yuē huì.",
           "english": "Of course! I feel this will be a very romantic date."
         },
         {
-          "speaker": "A",
+          "speaker": "B",
           "chinese": "我不仅订好了电影票，而且还订了一家餐厅。",
           "pinyin": "Wǒ bù jǐn dìng hǎo le diàn yǐng piào, ér qiě hái dìng le yì jiā cān tīng.",
           "english": "I not only booked movie tickets, but also reserved a restaurant."
         },
         {
-          "speaker": "B",
+          "speaker": "A",
           "chinese": "你真的好幽默又体贴！我很感动。",
           "pinyin": "Nǐ zhēn de hǎo yōu mò yòu tǐ tiē! Wǒ hěn gǎn dòng.",
           "english": "You are really humorous and considerate! I am so touched."
         },
         {
-          "speaker": "A",
+          "speaker": "B",
           "chinese": "为了让你幸福，我愿意做任何事。",
           "pinyin": "Wèi le ràng nǐ xìng fú, wǒ yuàn yì zuò rèn hé shì.",
           "english": "In order to make you happy, I am willing to do anything."
         },
         {
-          "speaker": "B",
+          "speaker": "A",
           "chinese": "我们的感情虽然简单，却非常真实，我很珍惜。",
           "pinyin": "Wǒ men de gǎn qíng suī rán jiǎn dān, què fēi cháng zhēn shí, wǒ hěn zhēn xī.",
           "english": "Our relationship is simple but very real. I treasure it greatly."
         },
         {
-          "speaker": "A",
+          "speaker": "B",
           "chinese": "我也是。我想紧紧地抱着你，表示我对你的爱情。",
           "pinyin": "Wǒ yě shì. Wǒ xiǎng jǐn jǐn de bào zhe nǐ, biǎo shì wǒ duì nǐ de ài qíng.",
           "english": "Me too. I want to hold you tight and show you my love."
         },
         {
-          "speaker": "B",
+          "speaker": "A",
           "chinese": "我也坠入爱河了，谢谢你让我感觉这么幸福。",
           "pinyin": "Wǒ yě zhuì rù ài hé le, xiè xie nǐ ràng wǒ gǎn jué zhè me xìng fú.",
           "english": "I have fallen in love too. Thank you for making me feel so happy."
@@ -943,7 +943,7 @@
         {
           "speaker": "B",
           "chinese": "但丁，你为什么总是那么骄傲？有时候让人很难接近你。",
-          "pinyin": "Míng Ming, nǐ wèi shén me zǒng shì nà me jiāo ào? Yǒu shí hou ràng rén hěn nán jiē jìn nǐ.",
+          "pinyin": "Lán tè, nǐ wèi shén me zǒng shì nà me jiāo ào? Yǒu shí hou ràng rén hěn nán jiē jìn nǐ.",
           "english": "Dante, why are you always so arrogant? Sometimes it makes it hard to get close to you."
         },
         {

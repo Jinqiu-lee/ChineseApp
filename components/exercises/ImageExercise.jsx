@@ -53,6 +53,7 @@ function ImageCard({ image, selected, correct, showResult, onPress, size = 140 }
 export default function ImageExercise({ exercise, onCorrect, onWrong }) {
   const [selected, setSelected] = useState(null);
   const [showResult, setShowResult] = useState(false);
+  const [showContinue, setShowContinue] = useState(false);
 
   useEffect(() => {
     // For listen_to_picture: auto-play audio on mount
@@ -70,9 +71,11 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
       ? choice.chinese === exercise.correct
       : choice.isCorrect;
 
-    setTimeout(() => {
-      correct ? onCorrect() : onWrong();
-    }, 900);
+    if (correct) {
+      setTimeout(() => onCorrect(), 900);
+    } else {
+      setShowContinue(true);
+    }
   };
 
   // ── picture_to_word ───────────────────────────────────────────────────
@@ -120,6 +123,12 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
             );
           })}
         </View>
+
+        {showContinue && (
+          <TouchableOpacity style={styles.continueBtn} onPress={onWrong} activeOpacity={0.85}>
+            <Text style={styles.continueBtnText}>Continue →</Text>
+          </TouchableOpacity>
+        )}
       </View>
     );
   }
@@ -151,6 +160,12 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
             />
           ))}
         </View>
+
+        {showContinue && (
+          <TouchableOpacity style={styles.continueBtn} onPress={onWrong} activeOpacity={0.85}>
+            <Text style={styles.continueBtnText}>Continue →</Text>
+          </TouchableOpacity>
+        )}
       </View>
     );
   }
@@ -187,6 +202,12 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
             />
           ))}
         </View>
+
+        {showContinue && (
+          <TouchableOpacity style={styles.continueBtn} onPress={onWrong} activeOpacity={0.85}>
+            <Text style={styles.continueBtnText}>Continue →</Text>
+          </TouchableOpacity>
+        )}
       </View>
     );
   }
@@ -221,6 +242,12 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
             />
           ))}
         </View>
+
+        {showContinue && (
+          <TouchableOpacity style={styles.continueBtn} onPress={onWrong} activeOpacity={0.85}>
+            <Text style={styles.continueBtnText}>Continue →</Text>
+          </TouchableOpacity>
+        )}
       </View>
     );
   }
@@ -338,4 +365,11 @@ const styles = StyleSheet.create({
     alignItems: 'center', justifyContent: 'center',
   },
   resultIcon: { fontSize: 40, fontWeight: '900', color: VG.success },
+  continueBtn: {
+    marginTop: 8, backgroundColor: DEEP_NAVY, borderRadius: 14,
+    paddingVertical: 14, paddingHorizontal: 40, alignItems: 'center',
+    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.22, shadowRadius: 8, elevation: 4,
+  },
+  continueBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 });

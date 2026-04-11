@@ -262,14 +262,14 @@
           }
         },
         {
-          "question": "What does 对于 introduce in a sentence?",
+          "question": "Which sentence uses 对于 correctly?",
           "type": "multiple_choice",
-          "correct": "The topic or object being discussed",
+          "correct": "对于这个问题，大家有不同的看法。",
           "options": [
-            "The topic or object being discussed",
-            "A cause or reason",
-            "A contrast",
-            "A condition"
+            "对于这个问题，大家有不同的看法。",
+            "大家对于有不同的看法，这个问题。",
+            "这个问题，对于大家有不同的看法。",
+            "大家有不同的对于看法，这个问题。"
           ],
           "option_pinyin": [
             "",
@@ -362,7 +362,7 @@
           }
         },
         {
-          "question": "他送了一束花，_____ 他的感谢。",
+          "question": "他送了一束花，_____ 感谢。",
           "type": "multiple_choice",
           "correct": "表示",
           "options": [

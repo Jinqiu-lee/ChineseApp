@@ -255,14 +255,14 @@
           "word_hints": {"手术": "shǒu shù", "康复": "kāng fù"}
         },
         {
-          "question": "以免 introduces which element in a sentence?",
+          "question": "Which sentence uses 以免 correctly?",
           "type": "multiple_choice",
-          "correct": "An undesirable outcome to be prevented",
+          "correct": "出门前检查一下，以免忘带钥匙。",
           "options": [
-            "An undesirable outcome to be prevented",
-            "A positive goal to be achieved",
-            "A condition that must be met",
-            "A contrast with another action"
+            "出门前检查一下，以免忘带钥匙。",
+            "以免出门前检查一下，忘带钥匙。",
+            "出门前以免检查一下，忘带钥匙。",
+            "出门前检查一下忘带钥匙，以免。"
           ],
           "option_pinyin": ["", "", "", ""],
           "word_hints": {}
@@ -334,14 +334,14 @@
           "word_hints": {"健康": "jiàn kāng"}
         },
         {
-          "question": "有助于 is placed where in a sentence?",
+          "question": "Which sentence uses 有助于 correctly?",
           "type": "multiple_choice",
-          "correct": "Between the cause/action and the beneficial outcome",
+          "correct": "每天跑步有助于保持健康。",
           "options": [
-            "Between the cause/action and the beneficial outcome",
-            "At the very beginning of the sentence",
-            "After the subject and before the cause",
-            "At the end of the sentence"
+            "每天跑步有助于保持健康。",
+            "有助于每天跑步保持健康。",
+            "每天跑步保持有助于健康。",
+            "每天跑步保持健康有助于。"
           ],
           "option_pinyin": ["", "", "", ""],
           "word_hints": {}

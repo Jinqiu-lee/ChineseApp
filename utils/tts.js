@@ -45,6 +45,23 @@ const COMPOUND_PHONEME_OVERRIDES = {
   '背负': [['背', 'bei1'], ['负', 'fu4']],
   // 不了 as a sentence-final particle is read as bù le (neutral tone), not bù liǎo.
   '不了': [['不', 'bu4'], ['了', 'le0']],
+  // 加缪 — surname 缪 is read miu4 (not miao4) for the name Camus
+  '加缪': [['加', 'jia1'], ['缪', 'miu4']],
+  // 大夫 — colloquial word for doctor: 大 is dài (dai4), not dà (da4)
+  '大夫': [['大', 'dai4'], ['夫', 'fu0']],
+  // 量 — polyphonic: liáng (liang2) as verb "to measure", liàng (liang4) as noun "quantity/amount"
+  // Verb compounds (liang2):
+  '量体温': [['量', 'liang2'], ['体', 'ti3'], ['温', 'wen1']],
+  '量一下': [['量', 'liang2'], ['一', 'yi1'], ['下', 'xia4']],
+  '商量':   [['商', 'shang1'], ['量', 'liang2']],
+  // Noun compounds (liang4):
+  '数量':   [['数', 'shu4'], ['量', 'liang4']],
+  '重量':   [['重', 'zhong4'], ['量', 'liang4']],
+  '质量':   [['质', 'zhi4'], ['量', 'liang4']],
+  '力量':   [['力', 'li4'], ['量', 'liang4']],
+  '能量':   [['能', 'neng2'], ['量', 'liang4']],
+  '用量':   [['用', 'yong4'], ['量', 'liang4']],
+  '剂量':   [['剂', 'ji4'], ['量', 'liang4']],
 };
 
 function buildSSML(text) {

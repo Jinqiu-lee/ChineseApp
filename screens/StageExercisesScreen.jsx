@@ -157,6 +157,7 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
             <ArrangeSentenceExercise
               key={currentIndex}
               exercise={exercise}
+              levelId={levelId}
               onCorrect={() => advance(true)}
               onWrong={() => advance(false)}
             />

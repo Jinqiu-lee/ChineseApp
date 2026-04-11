@@ -18,7 +18,7 @@
     {
       "id": "hsk5_l2_02",
       "chinese": "成绩",
-      "pinyin": "chéng jī",
+      "pinyin": "chéng jì",
       "english": "Grade; result; achievement",
       "part_of_speech": "noun",
       "example": "她的成绩越来越好，教授对她非常满意。",
@@ -165,7 +165,7 @@
     },
     {
       "chinese": "她的成绩越来越好，教授对她非常满意。",
-      "pinyin": "Tā de chéng jī yuè lái yuè hǎo, jiào shòu duì tā fēi cháng mǎn yì.",
+      "pinyin": "Tā de chéng jì yuè lái yuè hǎo, jiào shòu duì tā fēi cháng mǎn yì.",
       "english": "Her grades are getting better and better; the professor is very pleased with her."
     },
     {
@@ -197,7 +197,7 @@
       "examples": [
         {
           "chinese": "只有认真复习，才能在考试中取得好成绩。",
-          "pinyin": "Zhǐ yǒu rèn zhēn fù xí, cái néng zài kǎo shì zhōng qǔ dé hǎo chéng jī.",
+          "pinyin": "Zhǐ yǒu rèn zhēn fù xí, cái néng zài kǎo shì zhōng qǔ dé hǎo chéng jì.",
           "english": "Only by reviewing carefully can you get good grades in the exam."
         },
         {
@@ -226,7 +226,7 @@
           "word_hints": {
             "复习": "fù xí",
             "考试": "kǎo shì",
-            "成绩": "chéng jī"
+            "成绩": "chéng jì"
           }
         },
         {
@@ -250,14 +250,14 @@
           }
         },
         {
-          "question": "What does 只有...才... express?",
+          "question": "Which sentence uses 只有...才... correctly?",
           "type": "multiple_choice",
-          "correct": "A necessary condition — only if X, then Y",
+          "correct": "只有努力复习，才能取得好成绩。",
           "options": [
-            "A necessary condition — only if X, then Y",
-            "A contrast between two situations",
-            "A sequence of events happening one after another",
-            "A reason for something happening"
+            "只有努力复习，才能取得好成绩。",
+            "只有才能取得好成绩，努力复习。",
+            "才能努力复习，只有取得好成绩。",
+            "只有取得好成绩，才能努力复习。"
           ],
           "option_pinyin": [
             "",
@@ -405,14 +405,14 @@
           "word_hints": {}
         },
         {
-          "question": "Where does 越来越 appear in the sentence?",
+          "question": "Which sentence uses 越来越 correctly?",
           "type": "multiple_choice",
-          "correct": "Before the adjective or verb that describes the change",
+          "correct": "天气越来越冷了，要多穿衣服。",
           "options": [
-            "Before the adjective or verb that describes the change",
-            "At the very beginning of the sentence",
-            "After the subject and object",
-            "At the end of the sentence"
+            "天气越来越冷了，要多穿衣服。",
+            "天气冷越来越了，要多穿衣服。",
+            "越来越天气冷了，要多穿衣服。",
+            "天气越来越了冷，要多穿衣服。"
           ],
           "option_pinyin": [
             "",
@@ -472,7 +472,7 @@
             "不管都成绩好不好，要继续努力。"
           ],
           "option_pinyin": [
-            "Bù guǎn chéng jī hǎo bù hǎo, dōu yào jì xù nǔ lì.",
+            "Bù guǎn chéng jì hǎo bù hǎo, dōu yào jì xù nǔ lì.",
             "Dōu bù guǎn chéng jī hǎo bù hǎo, yào jì xù nǔ lì.",
             "Chéng jī bù guǎn hǎo bù hǎo, yào dōu jì xù nǔ lì.",
             "Bù guǎn dōu chéng jī hǎo bù hǎo, yào jì xù nǔ lì."
@@ -482,14 +482,14 @@
           }
         },
         {
-          "question": "What does 不管...都... express?",
+          "question": "Which sentence uses 不管...都... correctly?",
           "type": "multiple_choice",
-          "correct": "A result that is true regardless of any condition",
+          "correct": "不管天气怎么样，他都坚持跑步。",
           "options": [
-            "A result that is true regardless of any condition",
-            "A necessary condition for something to happen",
-            "An increasing change over time",
-            "A reason why something happened"
+            "不管天气怎么样，他都坚持跑步。",
+            "天气不管怎么样，他都坚持跑步的。",
+            "不管他都坚持跑步，天气怎么样。",
+            "天气怎么样不管，都他坚持跑步。"
           ],
           "option_pinyin": [
             "",

@@ -73,6 +73,21 @@ function getDialogueImage(dialogueId, lessonNumber, levelId = 'hsk1') {
   } catch { return null; }
 }
 
+// Literary/artistic figure names that may appear as role placeholders in lesson JSON.
+// For preserved (non-avatar-replaced) dialogues, display the speaker's role instead of this name.
+const LITERARY_FIGURE_NAMES = new Set([
+  '张爱玲','爱玲','李白','鲁迅','但丁','加缪',
+  '简奥斯汀','奥斯汀','费兰特','兰特','刘慈欣','慈欣',
+  '梵高','毕加索','苏轼','萨特','波伏娃','西蒙娜','伍尔夫','严歌苓',
+]);
+
+function getDisplayName(info) {
+  if (!info) return '';
+  if (info.isAvatar) return info.name;
+  if (LITERARY_FIGURE_NAMES.has(info.name) && info.role) return info.role;
+  return info.name;
+}
+
 // Gender-based palette
 const PALETTE = {
   female: { bubble: 'rgba(253,121,168,0.12)', border: 'rgba(253,121,168,0.3)', pinyin: '#fd79a8', badge: 'rgba(253,121,168,0.2)', emoji: '👩' },
@@ -169,13 +184,15 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
                 ) : (
                   <Text style={styles.avatarEmoji}>{pal.emoji}</Text>
                 )}
-                <Text style={styles.avatarName}>{info?.name || line.speaker}</Text>
+                <Text style={styles.avatarName}>{getDisplayName(info) || line.speaker}</Text>
               </View>
 
               {/* Bubble */}
               <View style={[styles.bubble, { backgroundColor: pal.bubble, borderColor: pal.border }]}>
                 <View style={styles.bubbleTop}>
-                  <Text style={styles.bubbleChinese}>{line.chinese}</Text>
+                  <View style={{ flex: 1 }}>
+                    <Text style={styles.bubbleChinese}>{line.chinese}</Text>
+                  </View>
                   <TouchableOpacity
                   onPress={() =>
                     info?.avatarId
@@ -207,7 +224,7 @@ function SpeakerTag({ info, pal }) {
     <View style={[styles.speakerTag, { backgroundColor: pal.badge, borderColor: pal.border }]}>
       <Text style={styles.speakerTagEmoji}>{pal.emoji}</Text>
       <View>
-        <Text style={[styles.speakerTagName, { color: pal.pinyin }]}>{info.name}</Text>
+        <Text style={[styles.speakerTagName, { color: pal.pinyin }]}>{getDisplayName(info)}</Text>
         <Text style={styles.speakerTagRole}>{info.role}</Text>
       </View>
     </View>
@@ -343,7 +360,7 @@ const styles = StyleSheet.create({
     maxWidth: '85%', borderWidth: 1,
   },
   bubbleTop:    { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' },
-  bubbleChinese:{ fontSize: 18, fontWeight: '700', color: VG.cream, flex: 1, lineHeight: 26 },
+  bubbleChinese:{ fontSize: 18, fontWeight: '700', color: VG.cream, lineHeight: 26 },
   speakBtn:     { paddingLeft: 8, paddingTop: 2 },
   speakBtnText: { fontSize: 16 },
   bubblePinyin: { fontSize: 13, fontStyle: 'italic', marginTop: 4, marginBottom: 2 },

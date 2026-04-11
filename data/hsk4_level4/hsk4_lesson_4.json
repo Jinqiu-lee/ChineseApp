@@ -212,9 +212,9 @@
           "english": "Through recruitment, the company found technically skilled employees."
         },
         {
-          "chinese": "他通过丰富的经历成为了一名成功的管理者。",
-          "pinyin": "Tā tōng guò fēng fù de jīng lì chéng wéi le yì míng chéng gōng de guǎn lǐ zhě.",
-          "english": "Through rich experience, he became a successful manager."
+          "chinese": "他通过丰富的工作经历成为了一名成功的管理者。",
+          "pinyin": "Tā tōng guò fēng fù de gōng zuò jīng lì chéng wéi le yì míng chéng gōng de guǎn lǐ zhě.",
+          "english": "Through rich work experience, he became a successful manager."
         }
       ],
       "exercises": [
@@ -261,7 +261,7 @@
           }
         },
         {
-          "question": "她 _____ 应聘成功获得了这份职业。",
+          "question": "她 _____ 应聘, 成功获得了这份职业。",
           "type": "multiple_choice",
           "correct": "通过",
           "options": [
@@ -340,7 +340,7 @@
       ],
       "exercises": [
         {
-          "question": "她 _____ 学习新技术，为了成为专家。",
+          "question": "为了成为专家，她 _____ 学习新技术。",
           "type": "multiple_choice",
           "correct": "继续",
           "options": [
@@ -380,7 +380,7 @@
           }
         },
         {
-          "question": "他失败了一次，但是 _____ 努力，最终成功了。",
+          "question": "他失败了一次，但是通过 _____ 努力，最终成功了。",
           "type": "multiple_choice",
           "correct": "继续",
           "options": [
@@ -400,14 +400,14 @@
           }
         },
         {
-          "question": "继续 is placed where in a sentence?",
+          "question": "Which sentence uses 继续 correctly?",
           "type": "multiple_choice",
-          "correct": "Before the verb",
+          "correct": "他继续努力学习中文。",
           "options": [
-            "Before the verb",
-            "After the verb",
-            "At the end",
-            "Before the subject"
+            "他继续努力学习中文。",
+            "他努力学习继续中文。",
+            "继续他努力学习中文。",
+            "他努力学习中文继续。"
           ],
           "option_pinyin": [
             "",
@@ -888,7 +888,7 @@
         },
         {
           "speaker": "B",
-          "chinese": "我毕业后通过实习积累了三年的管理经验，现在希望应聘这个职位。",
+          "chinese": "我毕业后通过实习，积累了三年的管理经验，现在希望应聘这个职位。",
           "pinyin": "Wǒ bì yè hòu tōng guò shí xí jī lěi le sān nián de guǎn lǐ jīng yàn, xiàn zài xī wàng yìng pìn zhè ge zhí wèi.",
           "english": "After graduation, I accumulated three years of management experience through internships, and I now hope to apply for this position."
         },

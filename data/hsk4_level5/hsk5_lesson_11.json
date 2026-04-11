@@ -288,14 +288,14 @@
           }
         },
         {
-          "question": "Which position does 值得 go in the sentence?",
+          "question": "Which sentence uses 值得 correctly?",
           "type": "multiple_choice",
-          "correct": "Before the verb or verb phrase",
+          "correct": "这部电影值得看，故事很感人。",
           "options": [
-            "Before the verb or verb phrase",
-            "At the very end of the sentence",
-            "After the object",
-            "Between subject and object"
+            "这部电影值得看，故事很感人。",
+            "这部电影看值得，故事很感人。",
+            "值得这部电影看，故事很感人。",
+            "这部值得电影看，故事很感人。"
           ],
           "option_pinyin": [
             "",
@@ -521,14 +521,14 @@
           }
         },
         {
-          "question": "通过 introduces which element in a sentence?",
+          "question": "Which sentence uses 通过 correctly?",
           "type": "multiple_choice",
-          "correct": "The method or means by which something is achieved",
+          "correct": "他通过大量阅读，提高了语言能力。",
           "options": [
-            "The method or means by which something is achieved",
-            "The reason why something happened",
-            "The time when something happened",
-            "The place where something happened"
+            "他通过大量阅读，提高了语言能力。",
+            "通过他大量阅读，提高了语言能力。",
+            "他大量阅读通过，提高了语言能力。",
+            "他通过提高了语言能力，大量阅读。"
           ],
           "option_pinyin": [
             "",

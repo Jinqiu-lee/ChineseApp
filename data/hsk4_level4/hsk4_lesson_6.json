@@ -194,8 +194,8 @@
           "english": "The quality of this brand is very good and worth buying."
         },
         {
-          "chinese": "他们的售货员服务非常好，值得表扬。",
-          "pinyin": "Tā men de shòu huò yuán fú wù fēi cháng hǎo, zhí de biǎo yáng.",
+          "chinese": "他们的售货服务非常好，值得表扬。",
+          "pinyin": "Tā men de shòu huò fú wù fēi cháng hǎo, zhí de biǎo yáng.",
           "english": "Their shop assistant service is excellent and worthy of praise."
         }
       ],
@@ -242,7 +242,7 @@
           }
         },
         {
-          "question": "这家店的服务非常好，顾客 _____ 光顾。",
+          "question": "这家店的服务非常好，____光顾。",
           "type": "multiple_choice",
           "correct": "值得",
           "options": [
@@ -258,7 +258,7 @@
             "xǐ huān"
           ],
           "word_hints": {
-            "顾客": "gù kè"
+            "光顾": "guāng gù"
           }
         },
         {
@@ -280,7 +280,7 @@
           "word_hints": {}
         },
         {
-          "question": "他们提供免费试用，这 _____ 尝试。",
+          "question": "他们提供免费试用，这____尝试。",
           "type": "multiple_choice",
           "correct": "值得",
           "options": [
@@ -319,7 +319,7 @@
       ],
       "exercises": [
         {
-          "question": "这家商店有很多打折商品，_____ 是衣服。",
+          "question": "这家商店有很多打折商品，____是衣服。",
           "type": "multiple_choice",
           "correct": "尤其",
           "options": [
@@ -341,17 +341,17 @@
         {
           "question": "Choose the correct sentence with 尤其.",
           "type": "multiple_choice",
-          "correct": "这种材料有优点，尤其是很轻。",
+          "correct": "这种材料有很多优点，尤其是重量，很轻。",
           "options": [
-            "这种材料有优点，尤其是很轻。",
-            "这种材料有优点，是尤其很轻。",
-            "尤其这种材料有优点，是很轻。",
+            "这种材料有很多优点，尤其是重量，很轻。",
+            "这种材料有很多优点，是尤其重量，很轻。",
+            "尤其这种材料有优点，是重量很轻。",
             "这种材料，尤其有优点是很轻。"
           ],
           "option_pinyin": [
-            "Zhè zhǒng cái liào yǒu yōu diǎn, yóu qí shì hěn qīng.",
-            "Zhè zhǒng cái liào yǒu yōu diǎn, shì yóu qí hěn qīng.",
-            "Yóu qí zhè zhǒng cái liào yǒu yōu diǎn, shì hěn qīng.",
+            "Zhè zhǒng cái liào yǒu hěn duō yōu diǎn, yóu qí shì zhòng liàng, hěn qīng.",
+            "Zhè zhǒng cái liào yǒu hěn duō yōu diǎn, shì yóu qí zhòng liàng, hěn qīng.",
+            "Yóu qí zhè zhǒng cái liào yǒu yōu diǎn, shì zhòng liàng hěn qīng.",
             "Zhè zhǒng cái liào, yóu qí yǒu yōu diǎn shì hěn qīng."
           ],
           "word_hints": {
@@ -381,14 +381,14 @@
           }
         },
         {
-          "question": "What does 尤其 emphasize?",
+          "question": "Which sentence uses 尤其 correctly?",
           "type": "multiple_choice",
-          "correct": "One thing in particular from a group",
+          "correct": "他喜欢运动，尤其喜欢游泳。",
           "options": [
-            "One thing in particular from a group",
-            "A contrast between two things",
-            "A purpose or goal",
-            "A negative outcome"
+            "他喜欢运动，尤其喜欢游泳。",
+            "他尤其喜欢运动，游泳。",
+            "尤其他喜欢运动，喜欢游泳。",
+            "他喜欢游泳尤其，也喜欢运动。"
           ],
           "option_pinyin": [
             "",
@@ -731,7 +731,7 @@
       "word_hints": {}
     },
     {
-      "question": "Fill in: 这家店打折，_____ 还有免费礼品。",
+      "question": "Fill in: 这家店打折，_____还有免费礼品。",
       "type": "multiple_choice",
       "correct": "另外",
       "options": [
@@ -865,9 +865,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "欢迎！我们这里的外套质量很好，尤其是这款，材料非常耐穿。",
-          "pinyin": "Huān yíng! Wǒ men zhè lǐ de wài tào zhì liàng hěn hǎo, yóu qí shì zhè kuǎn, cái liào fēi cháng nài chuān.",
-          "english": "Welcome! The quality of our jackets here is very good, especially this style — the material is very durable."
+          "chinese": "欢迎！我们这里的外套质量很好，尤其是这款，非常耐穿。",
+          "pinyin": "Huān yíng! Wǒ men zhè lǐ de wài tào zhì liàng hěn hǎo, yóu qí shì zhè kuǎn, fēi cháng nài chuān.",
+          "english": "Welcome! The quality of our jackets here is very good, especially this style — very durable."
         },
         {
           "speaker": "B",
@@ -895,8 +895,8 @@
         },
         {
           "speaker": "B",
-          "chinese": "好的，你们的售货员服务真的很周到，值得表扬！",
-          "pinyin": "Hǎo de, nǐ men de shòu huò yuán fú wù zhēn de hěn zhōu dào, zhí de biǎo yáng!",
+          "chinese": "好的，你们的售货服务真的很周到，值得表扬！",
+          "pinyin": "Hǎo de, nǐ men de shòu huò fú wù zhēn de hěn zhōu dào, zhí de biǎo yáng!",
           "english": "Great, your shop assistant service is really thoughtful and worthy of praise!"
         }
       ]

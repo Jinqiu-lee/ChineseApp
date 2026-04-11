@@ -497,14 +497,14 @@
         {
           "question": "Which sentence correctly uses an action-measure complement?",
           "type": "multiple_choice",
-          "correct": "她打了他三次电话。",
+          "correct": "她给打了三次电话。",
           "options": [
-            "她打了他三次电话。",
+            "她给他打了三次电话。",
             "她三次打电话了。",
             "她打电话了三次。",
             "她三次了打电话。"
           ],
-          "correct_pinyin": "Tā dǎ le tā sān cì diàn huà."
+          "correct_pinyin": "Tā gěi tā dǎ le sān cì diàn huà."
         },
         {
           "question": "What is the difference between 次 and 遍?",
@@ -842,8 +842,8 @@
         },
         {
           "speaker": "B",
-          "chinese": "他每天跑了一个多小时，我只跑了三十分钟。",
-          "pinyin": "Tā měi tiān pǎo le yí gè duō xiǎo shí, wǒ zhǐ pǎo le sān shí fēn zhōng.",
+          "chinese": "他每天跑一个多小时，我只跑三十分钟。",
+          "pinyin": "Tā měi tiān pǎo yí gè duō xiǎo shí, wǒ zhǐ pǎo sān shí fēn zhōng.",
           "english": "He runs for over an hour every day; I only run for thirty minutes."
         }
       ]

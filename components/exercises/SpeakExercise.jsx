@@ -38,9 +38,34 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
   const isTranslate = subtype === 'translate';
   const isRespond   = subtype === 'respond';
 
+  // Count Chinese characters only (exclude spaces, punctuation, ASCII).
+  function countChineseChars(str) {
+    return (str || '').replace(/[^\u4e00-\u9fff\u3400-\u4dbf]/g, '').length;
+  }
+
+  // For respond exercises: if answerChinese has fewer than 3 Chinese characters,
+  // split fullAnswerChinese on ，。！？ and take the first two segments —
+  // long enough to evaluate a recording without being overwhelming.
+  // Otherwise use answerChinese / answerPinyin as-is.
+  function resolveRespondTarget(ex) {
+    const shortChinese = ex.answerChinese || '';
+    if (countChineseChars(shortChinese) >= 3) {
+      return { chinese: shortChinese, pinyin: ex.answerPinyin || '' };
+    }
+    const full      = ex.fullAnswerChinese || shortChinese;
+    const fullPinyin = ex.fullAnswerPinyin  || ex.answerPinyin || '';
+    const segs  = full.split(/[，。！？]/).map(s => s.trim()).filter(Boolean);
+    const pySegs = fullPinyin.split(/[,，.。!！?？]/).map(s => s.trim()).filter(Boolean);
+    return {
+      chinese: segs.slice(0, 2).join(''),
+      pinyin:  pySegs.slice(0, 2).join(' '),
+    };
+  }
+
   // The Chinese text we compare the recording against
-  const expectedChinese = isRespond ? exercise.answerChinese : exercise.chinese;
-  const expectedPinyin  = isRespond ? exercise.answerPinyin  : exercise.pinyin;
+  const { chinese: expectedChinese, pinyin: expectedPinyin } = isRespond
+    ? resolveRespondTarget(exercise)
+    : { chinese: exercise.chinese, pinyin: exercise.pinyin };
 
   // For respond exercises: show full answer as reference in result/review
   const fullAnswerChinese = isRespond ? (exercise.fullAnswerChinese || exercise.answerChinese) : exercise.chinese;

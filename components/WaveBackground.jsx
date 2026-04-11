@@ -20,22 +20,30 @@ export default function WaveBackground({ colors }) {
             toValue: distance,
             duration,
             easing: Easing.inOut(Easing.sin),
-            useNativeDriver: true,
+            useNativeDriver: false,
           }),
           Animated.timing(val, {
             toValue: -distance,
             duration,
             easing: Easing.inOut(Easing.sin),
-            useNativeDriver: true,
+            useNativeDriver: false,
           }),
         ])
       );
 
-    sway(w1, 4200, 22).start();   // wheat wave — slow
-    sway(w2, 3100, 18).start();   // field wave — medium
-    sway(w3, 5400, 14).start();   // sky tint  — slowest
+    const anim1 = sway(w1, 4200, 22);
+    const anim2 = sway(w2, 3100, 18);
+    const anim3 = sway(w3, 5400, 14);
 
-    return () => { w1.stopAnimation(); w2.stopAnimation(); w3.stopAnimation(); };
+    anim1.start();
+    anim2.start();
+    anim3.start();
+
+    return () => {
+      anim1.stop();
+      anim2.stop();
+      anim3.stop();
+    };
   }, []);
 
   return (

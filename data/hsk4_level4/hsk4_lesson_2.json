@@ -75,14 +75,14 @@
       "pinyin": "yǒu yì",
       "english": "Friendship",
       "part_of_speech": "noun",
-      "example": "我们虽然有误会，却没有放弃友谊。",
-      "translation": "Although we had a misunderstanding, we did not give up our friendship."
+      "example": "我们虽然有误会，却没有影响友谊。",
+      "translation": "Although we had a misunderstanding, it didn't influence our friendship."
     },
     {
       "id": "hsk4_l2_09",
       "chinese": "友好",
       "pinyin": "yǒu hǎo",
-      "english": "Friendly; amicable",
+      "english": "Friendly",
       "part_of_speech": "adjective",
       "example": "你还是那么友好，一点都没变。",
       "translation": "You are still just as friendly. You haven't changed at all."
@@ -93,8 +93,8 @@
       "pinyin": "wù huì",
       "english": "Misunderstanding; to misunderstand",
       "part_of_speech": "noun/verb",
-      "example": "我们虽然有误会，却没有放弃友谊。",
-      "translation": "Although we had a misunderstanding, we did not give up our friendship."
+      "example": "我们虽然有误会，却没有影响友谊。",
+      "translation": "Although we had a misunderstanding, it didn't influence our friendship."
     },
     {
       "id": "hsk4_l2_11",
@@ -162,9 +162,9 @@
       "english": "He never lies to his friends; he is a very honest person."
     },
     {
-      "chinese": "我们虽然有误会，却没有放弃友谊。",
-      "pinyin": "Wǒ men suī rán yǒu wù huì, què méi yǒu fàng qì yǒu yì.",
-      "english": "Although we had a misunderstanding, we did not give up our friendship."
+      "chinese": "我们虽然有误会，却没有影响友谊。",
+      "pinyin": "Wǒ men suī rán yǒu wù huì, què méi yǒu yǐng xiǎng yǒu yì.",
+      "english": "Although we had a misunderstanding, it did not influence our friendship."
     },
     {
       "chinese": "他道歉之后，两个人的感情更深了。",
@@ -223,21 +223,21 @@
         {
           "question": "Choose the sentence where 却 is used correctly.",
           "type": "multiple_choice",
-          "correct": "他抱歉了，友谊却更深了。",
+          "correct": "他道歉了，友谊却更淡了。",
           "options": [
-            "他抱歉了，友谊却更深了。",
-            "却他抱歉了，友谊更深了。",
-            "他抱歉了，友谊更深了却。",
-            "他抱歉却了，友谊更深了。"
+            "他道歉了，友谊却更淡了。",
+            "却他道歉了，友谊更淡了。",
+            "他道歉了，友谊更淡了却。",
+            "他道歉却了，友谊更淡了。"
           ],
           "option_pinyin": [
-            "Tā bào qiàn le, yǒu yì què gèng shēn le.",
-            "Què tā bào qiàn le, yǒu yì gèng shēn le.",
-            "Tā bào qiàn le, yǒu yì gèng shēn le què.",
-            "Tā bào qiàn què le, yǒu yì gèng shēn le."
+            "Tā dào qiàn le, yǒu yì què gèng dàn le.",
+            "Què tā dào qiàn le, yǒu yì gèng dàn le.",
+            "Tā dào qiàn le, yǒu yì gèng dàn le què.",
+            "Tā dào qiàn què le, yǒu yì gèng dàn le."
           ],
           "word_hints": {
-            "抱歉": "bào qiàn",
+            "道歉": "dào qiàn",
             "友谊": "yǒu yì"
           }
         },
@@ -434,7 +434,7 @@
       ],
       "exercises": [
         {
-          "question": "朋友之间应该 _____ 诚实。",
+          "question": "朋友之间应该 _____ 鼓励。",
           "type": "multiple_choice",
           "correct": "互相",
           "options": [
@@ -475,7 +475,7 @@
           }
         },
         {
-          "question": "他们 _____ 联系，从来不中断友谊。",
+          "question": "他们 _____ 联系，从来没有中断过友谊。",
           "type": "multiple_choice",
           "correct": "互相",
           "options": [
@@ -709,11 +709,11 @@
     {
       "question": "Choose the correct sentence with 从来不.",
       "type": "multiple_choice",
-      "correct": "他从来不背叛朋友。",
+      "correct": "他从来没背叛过朋友。",
       "options": [
-        "他从来不背叛朋友。",
-        "他不从来背叛朋友。",
-        "他背叛从来不朋友。",
+        "他从来没背叛过朋友。",
+        "他没从来背叛朋友。",
+        "他背叛从来没朋友。",
         "从来他不背叛朋友。"
       ],
       "word_hints": {}
@@ -759,7 +759,7 @@
       "word_hints": {}
     },
     {
-      "question": "Which word means 'friendly; amicable'?",
+      "question": "Which word means 'friendly'?",
       "type": "multiple_choice",
       "correct": "友好",
       "options": [
@@ -929,9 +929,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "是啊！但是我从来没有忘记我们共同的友谊。",
-          "pinyin": "Shì a! Dàn shì wǒ cóng lái méi yǒu wàng jì wǒ men gòng tóng de yǒu yì.",
-          "english": "That's right! But I have never forgotten our shared friendship."
+          "chinese": "是啊！但是我从来没有忘记我们的友谊。",
+          "pinyin": "Shì a! Dàn shì wǒ cóng lái méi yǒu wàng jì wǒ men de yǒu yì.",
+          "english": "That's right! But I have never forgotten our friendship."
         },
         {
           "speaker": "A",

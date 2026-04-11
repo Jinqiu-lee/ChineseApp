@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { speakChinese } from '../utils/tts';
+import { speakChinese, speakPinyin } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
 export default function VocabularySection({ vocabulary, showPinyin = true }) {
@@ -110,7 +110,11 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
           )}
           <TouchableOpacity
             style={[styles.audioBtn, isPhrase && styles.audioBtnPhrase]}
-            onPress={() => speakChinese(item.chinese)}
+            onPress={() =>
+              item.chinese.length === 1 && item.pinyin
+                ? speakPinyin(item.pinyin)
+                : speakChinese(item.chinese)
+            }
           >
             <Text style={styles.audioBtnText}>🔊 Play Word</Text>
           </TouchableOpacity>

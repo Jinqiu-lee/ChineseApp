@@ -521,14 +521,14 @@
           }
         },
         {
-          "question": "Where does 从而 appear in a sentence?",
+          "question": "Which sentence uses 从而 correctly?",
           "type": "multiple_choice",
-          "correct": "After the cause clause, before the result clause",
+          "correct": "他坚持每天练习，从而提高了口语水平。",
           "options": [
-            "After the cause clause, before the result clause",
-            "At the very beginning of the sentence",
-            "After the object of the sentence",
-            "Between the subject and the verb"
+            "他坚持每天练习，从而提高了口语水平。",
+            "从而他坚持每天练习，提高了口语水平。",
+            "他坚持每天练习，提高从而了口语水平。",
+            "他从而坚持每天练习提高了口语水平。"
           ],
           "option_pinyin": [
             "",
@@ -702,14 +702,14 @@
       }
     },
     {
-      "question": "What does 从而 introduce in a sentence?",
+      "question": "Which sentence uses 从而 correctly?",
       "type": "multiple_choice",
-      "correct": "A result that naturally follows from a previous action",
+      "correct": "他每天锻炼，从而提高了身体素质。",
       "options": [
-        "A result that naturally follows from a previous action",
-        "A condition that must be met",
-        "A contrast between two situations",
-        "A cause or reason"
+        "他每天锻炼，从而提高了身体素质。",
+        "从而他每天锻炼，提高了身体素质。",
+        "他每天锻炼，提高了从而身体素质。",
+        "他从而提高了身体素质每天锻炼。"
       ],
       "word_hints": {}
     },

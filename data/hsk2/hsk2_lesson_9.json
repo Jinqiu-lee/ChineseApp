@@ -282,9 +282,9 @@
   ],
   "key_sentences": [
     {
-      "chinese": "那里问题太多，问了也没用。",
-      "pinyin": "Nà lǐ wèn tí tài duō, wèn le yě méi yòng.",
-      "english": "There were too many questions there; asking was useless."
+      "chinese": "问题太多了，问了也没用。",
+      "pinyin": "Wèn tí tài duō le, wèn le yě méi yòng.",
+      "english": "There were too many questions; asking was useless."
     },
     {
       "chinese": "这次考试非常难，我做错了两道题。",
@@ -307,9 +307,9 @@
       "english": "He wrote the answer to the first question correctly."
     },
     {
-      "chinese": "不管怎么问，他什么都不懂。",
-      "pinyin": "Bù guǎn zěn me wèn, tā shén me dōu bù dǒng.",
-      "english": "No matter how you ask, he doesn't understand anything."
+      "chinese": "不管怎么问，他也什么都不懂。",
+      "pinyin": "Bù guǎn zěn me wèn, tā yě shén me dōu bù dǒng.",
+      "english": "No matter how you ask, he still doesn't understand anything."
     }
   ],
   "grammar_points": [
@@ -344,14 +344,14 @@
         {
           "question": "Which sentence means 'Everyone is going'?",
           "type": "multiple_choice",
-          "correct": "谁都去。",
+          "correct": "谁都会去。",
           "options": [
-            "谁都去。",
+            "谁都会去。",
             "谁都不去。",
             "谁去了？",
             "谁要去？"
           ],
-          "correct_pinyin": "Shéi dōu qù."
+          "correct_pinyin": "Shéi dōu huì qù."
         },
         {
           "question": "Fill in: 她___都懂，非常聪明。(She understands everything; very smart.)",
@@ -465,9 +465,9 @@
       "explanation": "The 把 (bǎ) sentence is used when the action has a specific effect or result on the object. Structure: Subject + 把 + Object + Verb + Result/Complement. The object must be definite (known). 把 moves the object before the verb to emphasise what happens to it. The verb cannot stand alone — it needs a complement or 了. Example: 他把书看完了 (He finished reading the book).",
       "examples": [
         {
-          "chinese": "他把第一题的答案写对了。",
-          "pinyin": "Tā bǎ dì yì tí de dá àn xiě duì le.",
-          "english": "He wrote the answer to the first question correctly."
+          "chinese": "他把第一题的答案写错了。",
+          "pinyin": "Tā bǎ dì yì tí de dá àn xiě cuò le.",
+          "english": "He wrote the wrong answer to the first question."
         },
         {
           "chinese": "我把考试题做完了。",
@@ -747,7 +747,7 @@
       ]
     },
     {
-      "question": "Fill in: 这次___非常难，我做___了两道题，___已经改完了。",
+      "question": "Fill in: 这次___非常难，我做___了两道题，已经改___了。",
       "type": "multiple_choice",
       "correct": "考试 / 错 / 完",
       "options": [

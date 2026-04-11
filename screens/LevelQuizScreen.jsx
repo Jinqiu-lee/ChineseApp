@@ -13,8 +13,23 @@ import VanGoghMessageModal from '../components/VanGoghMessageModal';
 const PASS_SCORE = 60;
 const REVIEW_SCORE = 50;
 
+// Per-level contrast colors for unframed Van Gogh quote blocks
+// bg → solid pill background; text → quote text; sig → signature / muted line
+const VG_QUOTE_COLORS = {
+  hsk1: { bg: 'rgba(28,42,68,0.88)',   text: '#FFE082', sig: 'rgba(255,224,130,0.60)' }, // navy on sunflowers
+  hsk2: { bg: 'rgba(255,209,102,0.92)', text: '#1C2A44', sig: 'rgba(28,42,68,0.55)'   }, // amber on dark café
+  hsk3: { bg: 'rgba(28,42,68,0.88)',   text: '#A8E6A3', sig: 'rgba(168,230,163,0.55)' }, // navy on wheat fields
+  hsk4: { bg: 'rgba(255,255,255,0.90)', text: '#1C2A44', sig: 'rgba(28,42,68,0.50)'   }, // white on farmhouse
+  hsk5: { bg: 'rgba(255,209,102,0.92)', text: '#0D1B3E', sig: 'rgba(13,27,62,0.55)'   }, // amber on starry night
+  hsk6: { bg: 'rgba(74,20,140,0.88)',  text: '#FFE082', sig: 'rgba(255,224,130,0.60)' }, // purple on irises
+};
+const VG_QUOTE_DEFAULT = { bg: 'rgba(28,42,68,0.88)', text: '#FFFFFF', sig: 'rgba(255,255,255,0.55)' };
+
 // Chinese-only levels (hsk5 & hsk6) — avatar messages show no English
 const CHINESE_ONLY_LEVELS = new Set(['hsk5', 'hsk6']);
+
+// Levels where pinyin is hidden in answer choices by default (hint button available)
+const PINYIN_HINT_LEVELS = new Set(['hsk2', 'hsk3', 'hsk4', 'hsk5']);
 
 const NEXT_LEVEL = {
   hsk1: { emoji: '🚶', name: 'Level 2 – Explorer' },
@@ -228,16 +243,19 @@ function AvatarFinalScreen({ score, correctCount, totalQuestions, levelId, onStu
       </View>
 
       {/* Van Gogh level-up message */}
-      {vanGoghLevelMsg && (
-        <Animated.View style={[styles.vgLevelBlock, { opacity: vgLevelOpacity }]}>
-          <Image
-            source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_portrait_in_fields.png')}
-            style={styles.vgLevelAvatar}
-          />
-          <Text style={styles.vgLevelText}>{vanGoghLevelMsg.text}</Text>
-          <Text style={styles.vgLevelSignature}>— Vincent, on {vanGoghLevelMsg.painting}</Text>
-        </Animated.View>
-      )}
+      {vanGoghLevelMsg && (() => {
+        const vgC = VG_QUOTE_COLORS[levelId] ?? VG_QUOTE_DEFAULT;
+        return (
+          <Animated.View style={[styles.vgLevelBlock, { opacity: vgLevelOpacity, backgroundColor: vgC.bg, borderColor: 'transparent' }]}>
+            <Image
+              source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_portrait_in_fields.png')}
+              style={styles.vgLevelAvatar}
+            />
+            <Text style={[styles.vgLevelText, { color: vgC.text }]}>{vanGoghLevelMsg.text}</Text>
+            <Text style={[styles.vgLevelSignature, { color: vgC.sig }]}>— Vincent, on {vanGoghLevelMsg.painting}</Text>
+          </Animated.View>
+        );
+      })()}
 
       {/* Actions */}
       <View style={styles.resultsActions}>
@@ -255,18 +273,21 @@ function AvatarFinalScreen({ score, correctCount, totalQuestions, levelId, onStu
       </View>
 
       {/* Van Gogh quiz passed message */}
-      {vanGoghMsg && (
-        <Animated.View style={[styles.vgPassBlock, { opacity: vgOpacity }]}>
-          <Image
-            source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_portrait_in_fields.png')}
-            style={styles.vgPassAvatar}
-          />
-          <View style={styles.vgPassTextBlock}>
-            <Text style={styles.vgPassText}>{vanGoghMsg.text}</Text>
-            <Text style={styles.vgPassSignature}>— Vincent</Text>
-          </View>
-        </Animated.View>
-      )}
+      {vanGoghMsg && (() => {
+        const vgC = VG_QUOTE_COLORS[levelId] ?? VG_QUOTE_DEFAULT;
+        return (
+          <Animated.View style={[styles.vgPassBlock, { opacity: vgOpacity, backgroundColor: vgC.bg }]}>
+            <Image
+              source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_portrait_in_fields.png')}
+              style={styles.vgPassAvatar}
+            />
+            <View style={styles.vgPassTextBlock}>
+              <Text style={[styles.vgPassText, { color: vgC.text }]}>{vanGoghMsg.text}</Text>
+              <Text style={[styles.vgPassSignature, { color: vgC.sig }]}>— Vincent</Text>
+            </View>
+          </Animated.View>
+        );
+      })()}
 
     </ScrollView>
   );
@@ -287,6 +308,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
   const [quizProgress, setQuizProgress] = useState(null);
   const [vgModal, setVgModal] = useState({ visible: false, message: null, onContinue: null, buttonLabel: undefined });
   const [vanGoghFailedMsg, setVanGoghFailedMsg] = useState(null);
+  const [showHint, setShowHint] = useState(false);
   const vgFailedOpacity = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
@@ -334,6 +356,9 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
   const totalQuestions = activeQuestions.length;
   const question = activeQuestions[currentQuestion];
   const progress = ((currentQuestion + 1) / totalQuestions) * 100;
+
+  // Reset pinyin hint when moving to a new question
+  useEffect(() => { setShowHint(false); }, [currentQuestion]);
 
   const handleSelectAnswer = (answer) => {
     setSelectedAnswer(answer);
@@ -645,18 +670,21 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
             </TouchableOpacity>
           </View>
 
-          {vanGoghFailedMsg && (
-            <Animated.View style={[styles.vgFailedBlock, { opacity: vgFailedOpacity }]}>
+          {vanGoghFailedMsg && (() => {
+            const vgC = VG_QUOTE_COLORS[currentLevelId] ?? VG_QUOTE_DEFAULT;
+            return (
+            <Animated.View style={[styles.vgFailedBlock, { opacity: vgFailedOpacity, backgroundColor: vgC.bg }]}>
               <Image
                 source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_Potrait_1.png')}
                 style={styles.vgFailedAvatar}
               />
               <View style={styles.vgFailedTextBlock}>
-                <Text style={styles.vgFailedText}>{vanGoghFailedMsg.text}</Text>
-                <Text style={styles.vgFailedSignature}>— Vincent</Text>
+                <Text style={[styles.vgFailedText, { color: vgC.text }]}>{vanGoghFailedMsg.text}</Text>
+                <Text style={[styles.vgFailedSignature, { color: vgC.sig }]}>— Vincent</Text>
               </View>
             </Animated.View>
-          )}
+            );
+          })()}
         </ScrollView>
         <VanGoghMessageModal
           visible={vgModal.visible}
@@ -714,10 +742,24 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
           )}
         </View>
 
+        {/* Pinyin hint button — only for hsk2-hsk5 */}
+        {PINYIN_HINT_LEVELS.has(currentLevelId) && question.option_pinyin?.some(Boolean) && (
+          <TouchableOpacity
+            style={[styles.hintButton, showHint && styles.hintButtonActive]}
+            onPress={() => setShowHint(v => !v)}
+            activeOpacity={0.75}
+          >
+            <Text style={[styles.hintButtonText, showHint && styles.hintButtonTextActive]}>
+              {showHint ? '🙈 Hide Pinyin' : '💡 Show Pinyin Hint'}
+            </Text>
+          </TouchableOpacity>
+        )}
+
         <View style={styles.optionsContainer}>
           {question.options.map((option, idx) => {
             const isSelected = selectedAnswer === option;
             const optionPinyin = question.option_pinyin?.[idx];
+            const displayPinyin = PINYIN_HINT_LEVELS.has(currentLevelId) ? (showHint && optionPinyin) : optionPinyin;
 
             return (
               <TouchableOpacity
@@ -736,12 +778,12 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
                   ]}>
                     {option}
                   </Text>
-                  {optionPinyin && (
+                  {displayPinyin && (
                     <Text style={[
                       styles.optionPinyin,
                       isSelected && styles.optionPinyinSelected
                     ]}>
-                      {optionPinyin}
+                      {displayPinyin}
                     </Text>
                   )}
                 </View>
@@ -794,8 +836,13 @@ const styles = StyleSheet.create({
   difficultyText: { fontSize: 11, fontWeight: '800', color: DEEP_NAVY, letterSpacing: 0.5 },
 
   questionCard: { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 24, marginBottom: 24, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
-  questionText: { fontSize: 18, fontWeight: '700', color: DEEP_NAVY, lineHeight: 28 },
+  questionText: { fontSize: 16, fontWeight: '700', color: DEEP_NAVY, lineHeight: 26 },
   questionPinyin: { fontSize: 15, color: WARM_ORANGE, fontStyle: 'italic', marginTop: 8 },
+
+  hintButton: { alignSelf: 'flex-end', marginBottom: 10, paddingHorizontal: 14, paddingVertical: 7, borderRadius: 20, borderWidth: 1.5, borderColor: 'rgba(224,176,75,0.5)', backgroundColor: 'rgba(255,248,237,0.9)' },
+  hintButtonActive: { borderColor: WARM_ORANGE, backgroundColor: 'rgba(224,176,75,0.15)' },
+  hintButtonText: { fontSize: 13, fontWeight: '700', color: WARM_BROWN },
+  hintButtonTextActive: { color: WARM_ORANGE },
 
   optionsContainer: { gap: 12, marginBottom: 20 },
   optionButton: { backgroundColor: CARD_WHITE, borderRadius: 16, padding: 18, borderWidth: 2, borderColor: 'rgba(155,104,70,0.22)' },
@@ -931,9 +978,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 28,
     paddingVertical: 20,
     borderRadius: 16,
-    backgroundColor: 'rgba(255,255,255,0.18)',
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.25)',
   },
   vgLevelAvatar: {
     width: 56,
@@ -945,14 +989,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontStyle: 'italic',
     fontFamily: 'Georgia',
-    color: 'rgba(255,255,255,0.92)',
     textAlign: 'center',
     lineHeight: 24,
   },
   vgLevelSignature: {
     fontSize: 12,
     fontStyle: 'italic',
-    color: 'rgba(255,255,255,0.50)',
     textAlign: 'center',
     marginTop: 6,
   },
@@ -961,13 +1003,18 @@ const styles = StyleSheet.create({
   vgPassBlock: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    paddingHorizontal: 24,
-    paddingTop: 20,
+    marginHorizontal: 16,
+    marginTop: 16,
+    marginBottom: 8,
+    paddingHorizontal: 18,
+    paddingVertical: 16,
+    borderRadius: 16,
     gap: 12,
   },
   vgPassAvatar: {
     width: 40,
     height: 40,
+    borderRadius: 20,
   },
   vgPassTextBlock: {
     flex: 1,
@@ -977,12 +1024,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontStyle: 'italic',
     fontFamily: 'Georgia',
-    color: WARM_BROWN,
     lineHeight: 22,
   },
   vgPassSignature: {
     fontSize: 12,
-    color: SLATE_TEAL,
     textAlign: 'right',
   },
 
@@ -990,13 +1035,18 @@ const styles = StyleSheet.create({
   vgFailedBlock: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    paddingHorizontal: 24,
-    paddingTop: 20,
+    marginHorizontal: 16,
+    marginTop: 16,
+    marginBottom: 8,
+    paddingHorizontal: 18,
+    paddingVertical: 16,
+    borderRadius: 16,
     gap: 12,
   },
   vgFailedAvatar: {
     width: 40,
     height: 40,
+    borderRadius: 20,
   },
   vgFailedTextBlock: {
     flex: 1,
@@ -1006,12 +1056,10 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontStyle: 'italic',
     fontFamily: 'Georgia',
-    color: WARM_BROWN,
     lineHeight: 22,
   },
   vgFailedSignature: {
     fontSize: 12,
-    color: SLATE_TEAL,
     textAlign: 'right',
   },
 });

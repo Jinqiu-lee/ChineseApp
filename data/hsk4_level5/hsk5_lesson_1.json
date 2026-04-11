@@ -208,7 +208,7 @@
       ],
       "exercises": [
         {
-          "question": "我去买登机牌，_____ 帮你问一下航班时间。",
+          "question": "我去取登机牌，_____帮你问一下航班时间。",
           "type": "multiple_choice",
           "correct": "顺便",
           "options": [
@@ -288,14 +288,14 @@
           }
         },
         {
-          "question": "Which position does 顺便 go in the sentence?",
+          "question": "Which sentence uses 顺便 correctly?",
           "type": "multiple_choice",
-          "correct": "Before the secondary/extra action verb",
+          "correct": "我去超市，顺便帮你买瓶水。",
           "options": [
-            "Before the secondary/extra action verb",
-            "At the very beginning of the sentence",
-            "After the object of the sentence",
-            "At the end of the sentence"
+            "我去超市，顺便帮你买瓶水。",
+            "顺便我去超市帮你买瓶水。",
+            "我去超市帮你买瓶水顺便。",
+            "我顺便去了超市，帮你买了瓶水的。"
           ],
           "option_pinyin": [
             "",
@@ -521,14 +521,14 @@
           }
         },
         {
-          "question": "Which structure is correct with 推迟?",
+          "question": "Which sentence uses 推迟 correctly?",
           "type": "multiple_choice",
-          "correct": "把计划推迟到下周",
+          "correct": "因为天气原因，比赛被推迟到下周了。",
           "options": [
-            "把计划推迟到下周",
-            "推迟把计划到下周",
-            "到下周把推迟计划",
-            "计划把到下周推迟"
+            "因为天气原因，比赛被推迟到下周了。",
+            "因为天气原因，推迟比赛被到下周了。",
+            "因为天气原因，到下周被推迟比赛了。",
+            "因为天气原因，比赛到下周被了推迟。"
           ],
           "option_pinyin": [
             "bǎ jì huà tuī chí dào xià zhōu",

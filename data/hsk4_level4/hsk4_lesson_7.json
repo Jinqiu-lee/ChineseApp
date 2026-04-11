@@ -39,8 +39,8 @@
       "pinyin": "xiāng tóng",
       "english": "The same; identical",
       "part_of_speech": "adjective",
-      "example": "这两种产品表面相同，但实际情况区别明显。",
-      "translation": "These two products look the same on the surface, but the actual situation shows a clear difference."
+      "example": "这两种产品表面相同，但实际区别明显。",
+      "translation": "These two products look the same on the surface, but the reality shows a clear difference."
     },
     {
       "id": "hsk4_l7_05",
@@ -57,8 +57,8 @@
       "pinyin": "qū bié",
       "english": "Difference; to differentiate; to distinguish",
       "part_of_speech": "noun/verb",
-      "example": "低质量产品的问题很普遍，消费者要学会区别。",
-      "translation": "The problem of low-quality products is very widespread; consumers need to learn to tell the difference."
+      "example": "低质量产品很普遍，消费者要学会区别。",
+      "translation": "Low-quality products are very widespread; consumers need to learn to tell the difference."
     },
     {
       "id": "hsk4_l7_07",
@@ -66,8 +66,8 @@
       "pinyin": "pǔ biàn",
       "english": "Common; widespread; universal",
       "part_of_speech": "adjective",
-      "example": "低质量产品的问题在市场上很普遍，消费者要学会判断。",
-      "translation": "The problem of low-quality products is very widespread in the market; consumers need to learn how to judge."
+      "example": "低质量产品在市场上很普遍，消费者要学会判断。",
+      "translation": "Low-quality products are very widespread in the market; consumers need to learn how to judge."
     },
     {
       "id": "hsk4_l7_08",
@@ -157,9 +157,9 @@
       "english": "No matter how high or low the price, quality must meet the standard."
     },
     {
-      "chinese": "这两种产品表面相同，但实际情况区别明显。",
-      "pinyin": "Zhè liǎng zhǒng chǎn pǐn biǎo miàn xiāng tóng, dàn shí jì qíng kuàng qū bié míng xiǎn.",
-      "english": "These two products look the same on the surface, but the actual situation shows a clear difference."
+      "chinese": "这两种产品表面相同，但实际区别明显。",
+      "pinyin": "Zhè liǎng zhǒng chǎn pǐn biǎo miàn xiāng tóng, dàn shí jì  qū bié míng xiǎn.",
+      "english": "These two products look the same on the surface, but it actually shows a clear difference."
     },
     {
       "chinese": "他只好接受这个结果，因为商品不符合标准。",
@@ -177,9 +177,9 @@
       "english": "By comparison, qualified products are more expensive, but worth buying."
     },
     {
-      "chinese": "低质量产品的问题在市场上很普遍，消费者要学会判断。",
-      "pinyin": "Dī zhì liàng chǎn pǐn de wèn tí zài shì chǎng shàng hěn pǔ biàn, xiāo fèi zhě yào xué huì pàn duàn.",
-      "english": "The problem of low-quality products is very widespread in the market; consumers need to learn how to judge."
+      "chinese": "低质量产品在市场上很普遍，消费者要学会判断。",
+      "pinyin": "Dī zhì liàng chǎn pǐn zài shì chǎng shàng hěn pǔ biàn, xiāo fèi zhě yào xué huì pàn duàn.",
+      "english": "Low-quality products are very widespread in the market; consumers need to learn how to judge."
     }
   ],
   "grammar_points": [
@@ -201,7 +201,7 @@
       ],
       "exercises": [
         {
-          "question": "_____ 价格多高，质量都必须合格。",
+          "question": "____价格如何，质量都必须合格。",
           "type": "multiple_choice",
           "correct": "不管",
           "options": [
@@ -222,7 +222,7 @@
           }
         },
         {
-          "question": "不管标准多高，他 _____ 努力符合要求。",
+          "question": "不管标准多高，他____努力符合要求。",
           "type": "multiple_choice",
           "correct": "都",
           "options": [
@@ -283,7 +283,7 @@
           "word_hints": {}
         },
         {
-          "question": "不管区别多明显，她 _____ 认为两者相同。",
+          "question": "不管区别多明显，她_____认为两者相同。",
           "type": "multiple_choice",
           "correct": "都",
           "options": [
@@ -323,7 +323,7 @@
       ],
       "exercises": [
         {
-          "question": "商品不合格，我 _____ 要求退款。",
+          "question": "商品不合格，我____要求退款。",
           "type": "multiple_choice",
           "correct": "只好",
           "options": [
@@ -363,7 +363,7 @@
           }
         },
         {
-          "question": "判断质量的方法太复杂，他 _____ 请专家帮忙。",
+          "question": "判断质量的方法太复杂，他____请专家帮忙。",
           "type": "multiple_choice",
           "correct": "只好",
           "options": [
@@ -402,7 +402,7 @@
           "word_hints": {}
         },
         {
-          "question": "产品不符合标准，他 _____ 承认了这个区别。",
+          "question": "产品不符合标准，他____承认这个区别。",
           "type": "multiple_choice",
           "correct": "只好",
           "options": [
@@ -443,7 +443,7 @@
       ],
       "exercises": [
         {
-          "question": "_____ ，这种材料质量更好。",
+          "question": "_____，这种材料质量更好。",
           "type": "multiple_choice",
           "correct": "相比之下",
           "options": [
@@ -463,7 +463,7 @@
           }
         },
         {
-          "question": "这个产品比较 _____ ，很多消费者会选择它。",
+          "question": "这个产品比较_____，很多消费者会选择它。",
           "type": "multiple_choice",
           "correct": "普遍",
           "options": [
@@ -503,14 +503,14 @@
           }
         },
         {
-          "question": "比较 is placed where in a comparison sentence?",
+          "question": "Which sentence uses 比较 correctly?",
           "type": "multiple_choice",
-          "correct": "Before an adjective",
+          "correct": "这道题比较难，我需要多想想。",
           "options": [
-            "Before an adjective",
-            "After the subject",
-            "At the end of the sentence",
-            "Before the object"
+            "这道题比较难，我需要多想想。",
+            "这道题难比较，我需要多想想。",
+            "比较这道题难，我需要多想想。",
+            "这道比较题难，我需要多想想。"
           ],
           "option_pinyin": [
             "",
@@ -521,7 +521,7 @@
           "word_hints": {}
         },
         {
-          "question": "相比之下，他的判断 _____ 正确。",
+          "question": "相比之下，他的判断_____正确。",
           "type": "multiple_choice",
           "correct": "更",
           "options": [
@@ -713,7 +713,7 @@
       }
     },
     {
-      "question": "Fill in: _____ 价格怎样，质量都要符合标准。",
+      "question": "Fill in: _____价格怎样，质量都要符合标准。",
       "type": "multiple_choice",
       "correct": "不管",
       "options": [
@@ -741,7 +741,7 @@
       "word_hints": {}
     },
     {
-      "question": "Fill in: _____ ，这种材料质量更好。",
+      "question": "Fill in: _____，这种材料质量更好。",
       "type": "multiple_choice",
       "correct": "相比之下",
       "options": [
@@ -836,14 +836,14 @@
       }
     },
     {
-      "question": "比较 is placed where in a sentence?",
+      "question": "Which sentence uses 比较 correctly?",
       "type": "multiple_choice",
-      "correct": "Before an adjective",
+      "correct": "这家餐厅的价格比较合理。",
       "options": [
-        "Before an adjective",
-        "After the object",
-        "At the start of the sentence",
-        "After the subject only"
+        "这家餐厅的价格比较合理。",
+        "这家餐厅的价格合理比较。",
+        "比较这家餐厅的价格合理。",
+        "这家餐厅的比较价格合理。"
       ],
       "word_hints": {}
     }
@@ -880,9 +880,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "你说得对。不管价格多高，质量都应该合格，这是正确的判断。",
-          "pinyin": "Nǐ shuō de duì. Bù guǎn jià gé duō gāo, zhì liàng dōu yīng gāi hé gé, zhè shì zhèng què de pàn duàn.",
-          "english": "You are right. No matter how high the price, quality should always be up to standard — that is the correct judgment."
+          "chinese": "你说得对。不管价格怎么样，质量都应该合格，这是正确的判断。",
+          "pinyin": "Nǐ shuō de duì. Bù guǎn jià gé duō zěn me yàng, zhì liàng dōu yīng gāi hé gé, zhè shì zhèng què de pàn duàn.",
+          "english": "You are right. No matter how much the price is, quality should always be up to standard — that is the correct judgment."
         },
         {
           "speaker": "B",
@@ -917,7 +917,7 @@
         "B": {
           "name": "苏轼",
           "role": "员工",
-          "gender": "female"
+          "gender": "male"
         }
       },
       "lines": [
