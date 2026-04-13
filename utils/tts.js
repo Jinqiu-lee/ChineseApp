@@ -290,8 +290,9 @@ export async function speakAsAvatar(text, avatarId = 'eileen') {
     const voiceEntry = AVATAR_VOICES[avatarId];
     const voiceId = voiceEntry?.voiceId || DEFAULT_ELEVEN_VOICE_ID;
 
-    // null voiceId means "skip ElevenLabs for this avatar, use Google TTS below"
-    if (voiceId && voiceId !== 'PLACEHOLDER_default' && !voiceId.startsWith('PLACEHOLDER_')) {
+    // null voiceId means "skip ElevenLabs for this avatar, use Google TTS below".
+    // Also skip if voiceId is still an unfilled placeholder string.
+    if (voiceId && !voiceId.startsWith('PLACEHOLDER')) {
       const cacheKey = `eleven_v1:${avatarId}:${text}`;
       try {
         let audioUri = audioCache.get(cacheKey);

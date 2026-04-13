@@ -4,6 +4,8 @@ import { View, ActivityIndicator, StyleSheet } from 'react-native';
 // ── Developer flag ───────────────────────────────────────────
 // TODO: set to false before release
 const DEV_UNLOCK_ALL = true;
+import { logAvatarVoices } from './config/avatarVoices';
+if (DEV_UNLOCK_ALL) logAvatarVoices();
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import OnboardingScreen from './screens/OnboardingScreen';
 import HomeScreen from './screens/HomeScreen';
