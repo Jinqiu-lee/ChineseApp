@@ -182,6 +182,7 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
             <ImageExercise
               key={currentIndex}
               exercise={exercise}
+              avatarId={avatarId}
               onCorrect={() => advance(true)}
               onWrong={() => advance(false)}
             />

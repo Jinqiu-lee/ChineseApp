@@ -4,7 +4,7 @@ import {
 } from 'react-native';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { speakChinese } from '../../utils/tts';
+import { speakAsAvatar } from '../../utils/tts';
 import { startRecording, stopAndTranscribe, calculateAccuracy } from '../../utils/speechRecognition';
 import AvatarCharacter from '../AvatarCharacter';
 
@@ -140,7 +140,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
             <>
               <Text style={styles.chinese}>{exercise.chinese}</Text>
               <Text style={styles.pinyin}>{exercise.pinyin}</Text>
-              <TouchableOpacity style={styles.listenBtn} onPress={() => speakChinese(exercise.chinese)}>
+              <TouchableOpacity style={styles.listenBtn} onPress={() => speakAsAvatar(exercise.chinese, avatarId)}>
                 <Text style={styles.listenBtnText}>🔊 Listen</Text>
               </TouchableOpacity>
             </>
@@ -155,7 +155,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
               <Text style={styles.questionLabel}>Question:</Text>
               <Text style={styles.chinese}>{exercise.questionChinese}</Text>
               <Text style={styles.pinyin}>{exercise.questionPinyin}</Text>
-              <TouchableOpacity style={styles.listenBtn} onPress={() => speakChinese(exercise.questionChinese)}>
+              <TouchableOpacity style={styles.listenBtn} onPress={() => speakAsAvatar(exercise.questionChinese, avatarId)}>
                 <Text style={styles.listenBtnText}>🔊 Play question</Text>
               </TouchableOpacity>
               {exercise.answerEnglish ? (
@@ -289,7 +289,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
             {isRespond && (
               <Text style={styles.resultEnglish}>{exercise.answerEnglish}</Text>
             )}
-            <TouchableOpacity onPress={() => speakChinese(fullAnswerChinese)} style={styles.replayBtn}>
+            <TouchableOpacity onPress={() => speakAsAvatar(fullAnswerChinese, avatarId)} style={styles.replayBtn}>
               <Text style={styles.replayBtnText}>🔊 Hear it</Text>
             </TouchableOpacity>
           </View>
@@ -324,7 +324,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
               <Text style={styles.questionLabel}>Question:</Text>
               <Text style={[styles.chinese, { fontSize: 22 }]}>{exercise.questionChinese}</Text>
               <Text style={styles.pinyin}>{exercise.questionPinyin}</Text>
-              <TouchableOpacity style={styles.listenBtn} onPress={() => speakChinese(exercise.questionChinese)}>
+              <TouchableOpacity style={styles.listenBtn} onPress={() => speakAsAvatar(exercise.questionChinese, avatarId)}>
                 <Text style={styles.listenBtnText}>🔊 Play question</Text>
               </TouchableOpacity>
               <View style={styles.divider} />
@@ -335,7 +335,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
           <Text style={styles.pinyin}>{isRespond ? fullAnswerPinyin : expectedPinyin}</Text>
           {isRespond && <Text style={styles.english}>{exercise.answerEnglish}</Text>}
           {!isRespond && <Text style={styles.english}>{exercise.english}</Text>}
-          <TouchableOpacity style={styles.listenBtn} onPress={() => speakChinese(isRespond ? fullAnswerChinese : expectedChinese)}>
+          <TouchableOpacity style={styles.listenBtn} onPress={() => speakAsAvatar(isRespond ? fullAnswerChinese : expectedChinese, avatarId)}>
             <Text style={styles.listenBtnText}>🔊 Play Audio</Text>
           </TouchableOpacity>
         </View>
@@ -357,7 +357,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
         <View style={styles.maxAnswer}>
           <Text style={styles.resultChinese}>{expectedChinese}</Text>
           <Text style={styles.resultPinyin}>{expectedPinyin}</Text>
-          <TouchableOpacity onPress={() => speakChinese(expectedChinese)} style={styles.replayBtn}>
+          <TouchableOpacity onPress={() => speakAsAvatar(expectedChinese, avatarId)} style={styles.replayBtn}>
             <Text style={styles.replayBtnText}>🔊 Hear it</Text>
           </TouchableOpacity>
         </View>

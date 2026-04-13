@@ -282,6 +282,7 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
           <ImageExercise
             key={currentIndex}
             exercise={exercise}
+            avatarId={avatarId}
             onCorrect={() => advance(true)}
             onWrong={() => advance(false)}
           />

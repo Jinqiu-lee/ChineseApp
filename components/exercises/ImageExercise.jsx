@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet, Animated } from 'react-native';
-import { speakChinese } from '../../utils/tts';
+import { speakAsAvatar } from '../../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 
 // ── ImageCard ──────────────────────────────────────────────────────────────
@@ -50,7 +50,7 @@ function ImageCard({ image, selected, correct, showResult, onPress, size = 140 }
 }
 
 // ── ImageExercise ──────────────────────────────────────────────────────────
-export default function ImageExercise({ exercise, onCorrect, onWrong }) {
+export default function ImageExercise({ exercise, onCorrect, onWrong, avatarId = 'eileen' }) {
   const [selected, setSelected] = useState(null);
   const [showResult, setShowResult] = useState(false);
   const [showContinue, setShowContinue] = useState(false);
@@ -58,7 +58,7 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
   useEffect(() => {
     // For listen_to_picture: auto-play audio on mount
     if (exercise.subtype === 'listen_to_picture' && exercise.chinese) {
-      const t = setTimeout(() => speakChinese(exercise.chinese), 400);
+      const t = setTimeout(() => speakAsAvatar(exercise.chinese, avatarId), 400);
       return () => clearTimeout(t);
     }
   }, []);
@@ -180,7 +180,7 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
         <View style={styles.sentenceDisplay}>
           <View style={styles.sentenceRow}>
             <Text style={styles.sentenceChinese}>{exercise.chinese}</Text>
-            <TouchableOpacity onPress={() => speakChinese(exercise.chinese)} style={styles.speakBtn}>
+            <TouchableOpacity onPress={() => speakAsAvatar(exercise.chinese, avatarId)} style={styles.speakBtn}>
               <Text style={styles.speakBtnText}>🔊</Text>
             </TouchableOpacity>
           </View>
@@ -221,7 +221,7 @@ export default function ImageExercise({ exercise, onCorrect, onWrong }) {
         {/* Audio button */}
         <TouchableOpacity
           style={styles.listenBtn}
-          onPress={() => speakChinese(exercise.chinese)}
+          onPress={() => speakAsAvatar(exercise.chinese, avatarId)}
           activeOpacity={0.8}
         >
           <Text style={styles.listenBtnIcon}>🔊</Text>
