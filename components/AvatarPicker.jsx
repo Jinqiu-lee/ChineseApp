@@ -2,6 +2,11 @@ import React from 'react';
 import { View, Text, Image, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
 import AVATARS from '../config/avatarConfig';
 
+// Only the original 8 story avatars are selectable by the user.
+// Dialogue-only avatars (Van Gogh, Sartre, etc.) appear in lessons but not in the picker.
+const SELECTABLE_IDS = new Set(['eileen','libai','luxun','dante','camus','jane','elena','liucixin']);
+const SELECTABLE_AVATARS = AVATARS.filter(a => SELECTABLE_IDS.has(a.id));
+
 export default function AvatarPicker({ selectedId = 'eileen', onSelect }) {
   return (
     <ScrollView
@@ -9,7 +14,7 @@ export default function AvatarPicker({ selectedId = 'eileen', onSelect }) {
       showsHorizontalScrollIndicator={false}
       contentContainerStyle={styles.row}
     >
-      {AVATARS.map((avatar) => {
+      {SELECTABLE_AVATARS.map((avatar) => {
         const isSelected = avatar.id === selectedId;
         return (
           <TouchableOpacity

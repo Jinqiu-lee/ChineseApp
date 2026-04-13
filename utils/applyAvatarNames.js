@@ -35,9 +35,8 @@ export const PRESERVE_ROLE_KEYWORDS = [
   '奶奶','爷爷','外婆','外公','姥姥','姥爷',
   '医生','大夫','护士','病人','患者',
   '老师','教授','教师','校长','老板','经理','顾问','律师',
-  // Named literary figures used directly as dialogue speakers
+  // Named literary figures used directly as dialogue speakers (dialogue-only avatars)
   '梵高','毕加索','苏轼','萨特','波伏娃','西蒙娜','伍尔夫','杨绛',
-  '但丁','加缪','鲁迅','李白',
 ];
 
 // Map from the Chinese name used in lesson JSON → avatarId in avatarConfig

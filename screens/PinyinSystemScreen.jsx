@@ -5,6 +5,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import ScreenBackground from '../components/ScreenBackground';
 import AvatarCharacter from '../components/AvatarCharacter';
 import AVATARS from '../config/avatarConfig';
+const SELECTABLE_AVATARS = AVATARS.filter(a =>
+  ['eileen','libai','luxun','dante','camus','jane','elena','liucixin'].includes(a.id)
+);
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
 // Pinyin quote pool — keyed by avatarId, 7 quotes each (one per day of week).
@@ -167,10 +170,10 @@ export default function PinyinSystemScreen({ onBack, onSelectLesson, onFinalQuiz
               10 structured lessons covering all initials, finals, tones, and special rules. Pass each lesson quiz to unlock the next.
             </Text>
 
-            {/* All 8 avatars — tap to choose your guide */}
+            {/* Original 8 avatars — tap to choose your guide */}
             <Text style={styles.avatarGridLabel}>Choose your guide</Text>
             <View style={styles.avatarGrid}>
-              {AVATARS.map(av => (
+              {SELECTABLE_AVATARS.map(av => (
                 <TouchableOpacity
                   key={av.id}
                   style={[styles.avatarGridItem, av.id === avatarId && styles.avatarGridItemSelected]}
