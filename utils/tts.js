@@ -1,8 +1,12 @@
 import { Audio } from 'expo-av';
 import * as FileSystem from 'expo-file-system/legacy';
 import { GOOGLE_API_KEY } from '../config/googleApiKey';
+import AVATAR_VOICES, { DEFAULT_ELEVEN_VOICE_ID } from '../config/avatarVoices';
 import { PINYIN_AUDIO } from './pinyinAudio';
 import { REPLACE_AUDIO } from './replaceAudio';
+
+// Set your ElevenLabs API key here (or load from a secrets file like googleApiKey.js).
+const ELEVENLABS_API_KEY = 'YOUR_ELEVENLABS_API_KEY_HERE';
 
 const GOOGLE_TTS_API_KEY = GOOGLE_API_KEY;
 
@@ -278,8 +282,71 @@ const AVATAR_VOICE_CONFIG = {
 };
 
 // Speak text using the avatar's personalised voice profile.
-// Falls back to speakChinese() if the API key is missing or the call fails.
+// Tries ElevenLabs first (if key + voiceId are set), then falls back to Google TTS,
+// then falls back to speakChinese().
 export async function speakAsAvatar(text, avatarId = 'eileen') {
+  // ── 1. ElevenLabs path ──────────────────────────────────────────────────
+  if (ELEVENLABS_API_KEY && ELEVENLABS_API_KEY !== 'YOUR_ELEVENLABS_API_KEY_HERE') {
+    const voiceEntry = AVATAR_VOICES[avatarId];
+    const voiceId = voiceEntry?.voiceId || DEFAULT_ELEVEN_VOICE_ID;
+
+    // null voiceId means "skip ElevenLabs for this avatar, use Google TTS below"
+    if (voiceId && voiceId !== 'PLACEHOLDER_default' && !voiceId.startsWith('PLACEHOLDER_')) {
+      const cacheKey = `eleven_v1:${avatarId}:${text}`;
+      try {
+        let audioUri = audioCache.get(cacheKey);
+
+        if (!audioUri) {
+          const res = await fetch(
+            `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
+            {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'xi-api-key': ELEVENLABS_API_KEY,
+              },
+              body: JSON.stringify({
+                text,
+                model_id: 'eleven_multilingual_v2',
+                voice_settings: { stability: 0.5, similarity_boost: 0.75 },
+              }),
+            },
+          );
+
+          if (!res.ok) {
+            console.warn(`speakAsAvatar ElevenLabs error for ${avatarId}:`, res.status);
+            // fall through to Google TTS below
+          } else {
+            // ElevenLabs returns raw MP3 bytes — save to disk and play
+            const blob = await res.blob();
+            const reader = new FileReader();
+            const base64 = await new Promise((resolve, reject) => {
+              reader.onloadend = () => resolve(reader.result.split(',')[1]);
+              reader.onerror = reject;
+              reader.readAsDataURL(blob);
+            });
+            await FileSystem.writeAsStringAsync(TMP_FILE, base64, { encoding: 'base64' });
+            audioCache.set(cacheKey, TMP_FILE);
+            audioUri = TMP_FILE;
+          }
+        } else {
+          await FileSystem.writeAsStringAsync(TMP_FILE, audioCache.get(`eleven_b64:${avatarId}:${text}`) || '', { encoding: 'base64' });
+        }
+
+        if (audioUri) {
+          await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
+          const { sound } = await Audio.Sound.createAsync({ uri: TMP_FILE });
+          await sound.playAsync();
+          sound.setOnPlaybackStatusUpdate((s) => { if (s.didJustFinish) sound.unloadAsync(); });
+          return;
+        }
+      } catch (err) {
+        console.warn('speakAsAvatar ElevenLabs error, falling through to Google TTS:', err);
+      }
+    }
+  }
+
+  // ── 2. Google TTS path ──────────────────────────────────────────────────
   if (!GOOGLE_TTS_API_KEY || GOOGLE_TTS_API_KEY === 'YOUR_GOOGLE_CLOUD_API_KEY_HERE') {
     return speakChinese(text);
   }
