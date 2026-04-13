@@ -152,9 +152,9 @@
   ],
   "key_sentences": [
     {
-      "chinese": "对他来说，幸福生活就是家人健康、心情愉快。",
-      "pinyin": "Duì tā lái shuō, xìng fú shēng huó jiù shì jiā rén jiàn kāng, xīn qíng yú kuài.",
-      "english": "For him, a happy life means family health and being in a pleasant mood."
+      "chinese": "对他来说，幸福就是家人健康、心情愉快。",
+      "pinyin": "Duì tā lái shuō, xìng fú jiù shì jiā rén jiàn kāng, xīn qíng yú kuài.",
+      "english": "For him, happiness means family health and being in a pleasant mood."
     },
     {
       "chinese": "其实，幸福不需要很多，知足常乐是最好的总结。",
@@ -364,20 +364,20 @@
           "type": "multiple_choice",
           "correct": "我以为他不开心，其实他非常轻松。",
           "options": [
-            "我以为他不开心，其实他非常轻松。",
-            "其实我以为他不开心，他非常轻松。",
-            "我以为其实他不开心，他非常轻松。",
-            "我以为他不开心，他其实非常轻松。"
+            "我以为他不开心，其实他非常愉快。",
+            "其实我以为他不开心，他非常愉快。",
+            "我以为其实他不开心，他非常愉快。",
+            "我以为他不开心，他其实非常愉快。"
           ],
           "option_pinyin": [
-            "Wǒ yǐ wéi tā bù kāi xīn, qí shí tā fēi cháng qīng sōng.",
-            "Qí shí wǒ yǐ wéi tā bù kāi xīn, tā fēi cháng qīng sōng.",
-            "Wǒ yǐ wéi qí shí tā bù kāi xīn, tā fēi cháng qīng sōng.",
-            "Wǒ yǐ wéi tā bù kāi xīn, tā qí shí fēi cháng qīng sōng."
+            "Wǒ yǐ wéi tā bù kāi xīn, qí shí tā fēi cháng yú kuài.",
+            "Qí shí wǒ yǐ wéi tā bù kāi xīn, tā fēi cháng yú kuài.",
+            "Wǒ yǐ wéi qí shí tā bù kāi xīn, tā fēi cháng yú kuài.",
+            "Wǒ yǐ wéi tā bù kāi xīn, tā qí shí fēi cháng yú kuài."
           ],
           "word_hints": {
             "开心": "kāi xīn",
-            "轻松": "qīng sōng"
+            "愉快": "yú kuài"
           }
         },
         {
@@ -399,7 +399,7 @@
           "word_hints": {}
         },
         {
-          "question": "幸福感觉很难找，_____ 就在我们身边。",
+          "question": "幸福感觉很难找，但_____ 就在我们身边。",
           "type": "multiple_choice",
           "correct": "其实",
           "options": [
@@ -461,18 +461,18 @@
         {
           "question": "Choose the correct use of 总结.",
           "type": "multiple_choice",
-          "correct": "总结来说，感谢生活是幸福的关键。",
+          "correct": "总结来说，懂得感谢是幸福的关键。",
           "options": [
-            "总结来说，感谢生活是幸福的关键。",
-            "来说总结，感谢生活是幸福的关键。",
-            "感谢生活总结来说，是幸福的关键。",
+            "总结来说，懂得感谢是幸福的关键。",
+            "来说总结，懂得感谢是幸福的关键。",
+            "懂得感谢总结来说，是幸福的关键。",
             "是幸福的关键，总结来说感谢生活。"
           ],
           "option_pinyin": [
-            "Zǒng jié lái shuō, gǎn xiè shēng huó shì xìng fú de guān jiàn.",
-            "Lái shuō zǒng jié, gǎn xiè shēng huó shì xìng fú de guān jiàn.",
-            "Gǎn xiè shēng huó zǒng jié lái shuō, shì xìng fú de guān jiàn.",
-            "Shì xìng fú de guān jiàn, zǒng jié lái shuō gǎn xiè shēng huó."
+            "Zǒng jié lái shuō, dǒng dé gǎn xiè shì xìng fú de guān jiàn.",
+            "Lái shuō zǒng jié, dǒng dé gǎn xiè shì xìng fú de guān jiàn.",
+            "Dǒng dé gǎn xiè zǒng jié lái shuō, shì xìng fú de guān jiàn.",
+            "Shì xìng fú de guān jiàn, zǒng jié lái shuō dǒng dé gǎn xiè shēng huó."
           ],
           "word_hints": {
             "感谢": "gǎn xiè",
@@ -516,7 +516,7 @@
           "word_hints": {}
         },
         {
-          "question": "_____ 一下，她得出了开心是幸福原因的结论。",
+          "question": "经过_____，她得出了开心是幸福原因的结论。",
           "type": "multiple_choice",
           "correct": "总结",
           "options": [
@@ -935,9 +935,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "原来您觉得幸福这么简单，这是您的目的吗？",
-          "pinyin": "Yuán lái nín jué de xìng fú zhè me jiǎn dān, zhè shì nín de mù dì ma?",
-          "english": "So you think happiness is this simple. Is this your purpose?"
+          "chinese": "原来您觉得幸福这么简单！",
+          "pinyin": "Yuán lái nín jué de xìng fú zhè me jiǎn dān！",
+          "english": "So you think happiness is this simple！"
         },
         {
           "speaker": "A",

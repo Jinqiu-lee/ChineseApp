@@ -9,6 +9,7 @@ import {
   shortName,
   shouldPreserveDialogue,
   swapDialogueLine,
+  augmentSpeakerWithAvatar,
 } from '../utils/applyAvatarNames';
 
 // Replaces dialogue speaker roles with the correct avatar pair for this dialogue's
@@ -17,7 +18,16 @@ import {
 // Also replaces character names in chinese, pinyin, and english fields.
 // Family/medical dialogues are left unchanged.
 function replaceDialogueRoles(dialogue, primaryAvatarId, dialogueIndex = 0) {
-  if (shouldPreserveDialogue(dialogue)) return dialogue;
+  if (shouldPreserveDialogue(dialogue)) {
+    // For preserved dialogues, still augment any speakers that match known literary avatars
+    // so they get their own image and voice instead of just an emoji.
+    const rawA = dialogue.speakers?.A;
+    const rawB = dialogue.speakers?.B;
+    const augA = augmentSpeakerWithAvatar(rawA);
+    const augB = augmentSpeakerWithAvatar(rawB);
+    if (augA === rawA && augB === rawB) return dialogue; // nothing changed
+    return { ...dialogue, speakers: { A: augA, B: augB } };
+  }
 
   const [idA, idB] = getPairForDialogue(primaryAvatarId, dialogueIndex);
   const avatarA = getAvatar(idA);
@@ -78,7 +88,7 @@ function getDialogueImage(dialogueId, lessonNumber, levelId = 'hsk1') {
 const LITERARY_FIGURE_NAMES = new Set([
   '张爱玲','爱玲','李白','鲁迅','但丁','加缪',
   '简奥斯汀','奥斯汀','费兰特','兰特','刘慈欣','慈欣',
-  '梵高','毕加索','苏轼','萨特','波伏娃','西蒙娜','伍尔夫','严歌苓',
+  '梵高','毕加索','苏轼','萨特','波伏娃','西蒙娜','伍尔夫','杨绛',
 ]);
 
 function getDisplayName(info) {

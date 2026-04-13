@@ -500,7 +500,7 @@
           "word_hints": {}
         },
         {
-          "question": "不管图书馆关得多早，她 _____ 坚持复习到最后一刻。",
+          "question": "不管图书馆几点关门，她 _____ 坚持复习到最后一刻。",
           "type": "multiple_choice",
           "correct": "都",
           "options": [
@@ -854,7 +854,7 @@
           "gender": "male"
         },
         "B": {
-          "name": "严歌苓",
+          "name": "杨绛",
           "role": "同学",
           "gender": "female"
         }
@@ -862,7 +862,7 @@
       "lines": [
         {
           "speaker": "A",
-          "chinese": "严歌苓，你最近每天都在图书馆复习，成绩一定越来越好了吧？",
+          "chinese": "杨绛，你最近每天都在图书馆复习，成绩一定越来越好了吧？",
           "pinyin": "Yán Gē Líng, nǐ zuì jìn měi tiān dōu zài tú shū guǎn fù xí, chéng jī yī dìng yuè lái yuè hǎo le ba?",
           "english": "Yan Geling, you've been reviewing in the library every day recently — your grades must be getting better and better, right?"
         },
@@ -941,9 +941,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "我数学成绩很好，但语文课程也不错。我不太确定选理科还是文科。",
-          "pinyin": "Wǒ shù xué chéng jī hěn hǎo, dàn yǔ wén kè chéng yě bú cuò. Wǒ bú tài què dìng xuǎn lǐ kē hái shì wén kē.",
-          "english": "My maths grades are very good, but my Chinese language course is also solid. I'm not sure whether to choose science or humanities."
+          "chinese": "我数学成绩很好，语文也不错。我不太确定选理科还是文科。",
+          "pinyin": "Wǒ shù xué chéng jī hěn hǎo, yǔ wén yě bú cuò. Wǒ bú tài què dìng xuǎn lǐ kē hái shì wén kē.",
+          "english": "My maths grades are very good, Chinese language course is also solid. I'm not sure whether to choose science or humanities."
         },
         {
           "speaker": "B",

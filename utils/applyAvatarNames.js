@@ -32,9 +32,51 @@ export function shortName(chineseName) {
 // ── Family / medical role detection ─────────────────────────────────────────
 export const PRESERVE_ROLE_KEYWORDS = [
   '爸','妈','父','母','儿子','女儿','孩子','宝','祖','孙',
+  '奶奶','爷爷','外婆','外公','姥姥','姥爷',
   '医生','大夫','护士','病人','患者',
   '老师','教授','教师','校长','老板','经理','顾问','律师',
+  // Named literary figures used directly as dialogue speakers
+  '梵高','毕加索','苏轼','萨特','波伏娃','西蒙娜','伍尔夫','杨绛',
+  '但丁','加缪','鲁迅','李白',
 ];
+
+// Map from the Chinese name used in lesson JSON → avatarId in avatarConfig
+export const LITERARY_AVATAR_MAP = {
+  '梵高':  'vangogh',
+  '毕加索':'picasso',
+  '苏轼':  'sushi',
+  '萨特':  'sartre',
+  '波伏娃':'beauvoir',
+  '西蒙娜':'beauvoir',
+  '伍尔夫':'woolf',
+  '杨绛':  'yangjiang',
+  '但丁':  'dante',
+  '加缪':  'camus',
+  '鲁迅':  'luxun',
+  '李白':  'libai',
+  '爱玲':  'eileen',
+  '张爱玲':'eileen',
+  '奥斯汀':'jane',
+  '简奥斯汀':'jane',
+  '兰特':  'elena',
+  '费兰特':'elena',
+  '慈欣':  'liucixin',
+  '刘慈欣':'liucixin',
+};
+
+// Augment a single speaker record with avatar info if their name matches a known literary avatar.
+export function augmentSpeakerWithAvatar(speakerInfo) {
+  if (!speakerInfo) return speakerInfo;
+  const avatarId = LITERARY_AVATAR_MAP[speakerInfo.name];
+  if (!avatarId) return speakerInfo;
+  const avatar = getAvatar(avatarId);
+  return {
+    ...speakerInfo,
+    isAvatar: true,
+    avatarId,
+    gender: avatar.gender,
+  };
+}
 
 export function shouldPreserveDialogue(dialogue) {
   const speakers = Object.values(dialogue.speakers || {});

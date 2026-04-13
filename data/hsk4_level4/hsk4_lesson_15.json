@@ -66,7 +66,7 @@
       "pinyin": "zhù míng",
       "english": "Famous; renowned",
       "part_of_speech": "adjective",
-      "example": "我被这本著名小说完全吸引住了，一口气读完了全书。",
+      "example": "我被这本著名小说完全吸引了，一口气读完了全书。",
       "translation": "I was completely captivated by this famous novel and read the whole book in one go."
     },
     {
@@ -228,13 +228,13 @@
           "options": [
             "很有名",
             "著名",
-            "很著名",
+            "不著名",
             "著名的"
           ],
           "option_pinyin": [
             "hěn yǒu míng",
             "zhù míng",
-            "hěn zhù míng",
+            "bú zhù míng",
             "zhù míng de"
           ],
           "word_hints": {
@@ -309,9 +309,9 @@
       "explanation": "尤其 (yóu qí) means 'especially' or 'in particular'. It singles out one item from a group already mentioned. Typical structure: Subject + Verb + Object, 尤其是 + [Specific Item]. 尤其 appears after the main clause and before or after the subject of the secondary clause. Contrast with 特别: 特别 can go directly before adjectives and verbs (特别好, 特别喜欢), while 尤其 typically introduces a noun or clause and usually follows 是. Both can combine: 尤其特别 is possible for emphasis but rare.",
       "examples": [
         {
-          "chinese": "她喜欢中国艺术，尤其是京剧的精彩表演。",
-          "pinyin": "Tā xǐ huan zhōng guó yì shù, yóu qí shì jīng jù de jīng cǎi biǎo yǎn.",
-          "english": "She loves Chinese art, especially the brilliant performances of Peking Opera."
+          "chinese": "她喜欢中国艺术，尤其是京剧。",
+          "pinyin": "Tā xǐ huan zhōng guó yì shù, yóu qí shì jīng jù.",
+          "english": "She loves Chinese art, especially Peking Opera."
         },
         {
           "chinese": "这本杂志吸引了很多读者，尤其是喜欢阅读小说的年轻人。",
@@ -916,7 +916,7 @@
           "speaker": "A",
           "chinese": "波伏娃，你昨晚去看京剧了吗？那场演出怎么样？",
           "pinyin": "Bō Fú Wá, nǐ zuó wǎn qù kàn jīng jù le ma? Nà chǎng yǎn chū zěn me yàng?",
-          "english": "Xiaohong, did you go to see the Peking Opera last night? How was that performance?"
+          "english": "Camus, did you go to see the Peking Opera last night? How was that performance?"
         },
         {
           "speaker": "B",
@@ -956,7 +956,7 @@
         },
         {
           "speaker": "B",
-          "chinese": "下次我把那本书带来给你，你yídìng会被它吸引的。",
+          "chinese": "下次我把那本书带来给你，你一定会被它吸引的。",
           "pinyin": "Xià cì wǒ bǎ nà běn shū dài lái gěi nǐ, nǐ yí dìng huì bèi tā xī yǐn de.",
           "english": "Next time I will bring the book for you — you will definitely be captivated by it."
         }
@@ -981,7 +981,7 @@
       "lines": [
         {
           "speaker": "A",
-          "chinese": "王教授，我想了解更多关于中国艺术的知识，您能给我yīdiǎn建议吗？",
+          "chinese": "王教授，我想了解更多关于中国艺术的知识，您能给我一点建议吗？",
           "pinyin": "Wáng jiào shòu, wǒ xiǎng liǎo jiě gèng duō guān yú zhōng guó yì shù de zhī shi, nín néng gěi wǒ yì diǎn jiàn yì ma?",
           "english": "Professor Wang, I would like to learn more about Chinese art. Could you give me some advice?"
         },
@@ -993,7 +993,7 @@
         },
         {
           "speaker": "A",
-          "chinese": "我以前看过yīcì功夫表演，真的非常精彩，把我完全吸引住了。",
+          "chinese": "我以前看过一次功夫表演，真的非常精彩，把我完全吸引住了。",
           "pinyin": "Wǒ yǐ qián kàn guò yí cì gōng fu biǎo yǎn, zhēn de fēi cháng jīng cǎi, bǎ wǒ wán quán xī yǐn zhù le.",
           "english": "I once saw a kung fu performance — it was truly brilliant and completely captivated me."
         },

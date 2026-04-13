@@ -261,6 +261,20 @@ const AVATAR_VOICE_CONFIG = {
   elena:    { ssmlGender: 'FEMALE', pitch: -3,  speakingRate: 0.75 },
   // Liu Cixin — calm, slightly deep male, emotionally restrained, vast
   liucixin: { ssmlGender: 'MALE',   pitch: -4,  speakingRate: 0.82 },
+  // Van Gogh — impassioned, intense, slightly unpredictable artist
+  vangogh:  { ssmlGender: 'MALE',   pitch:  3,  speakingRate: 0.92 },
+  // Simone de Beauvoir — 40s, wise, lower, steady and passionate
+  beauvoir: { ssmlGender: 'FEMALE', pitch: -4,  speakingRate: 0.82 },
+  // Virginia Woolf — 30s, lyrical, lower key, slightly slower than Austen
+  woolf:    { ssmlGender: 'FEMALE', pitch: -2,  speakingRate: 0.88 },
+  // Picasso — 50s, witty, humorous, faster with Spanish-flavoured passion
+  picasso:  { ssmlGender: 'MALE',   pitch:  4,  speakingRate: 1.00 },
+  // Sartre — philosophical, deliberate, deep
+  sartre:   { ssmlGender: 'MALE',   pitch: -3,  speakingRate: 0.80 },
+  // Su Shi — 50s, wisdom, lower and slower than Li Bai
+  sushi:    { ssmlGender: 'MALE',   pitch: -3,  speakingRate: 0.82 },
+  // Yang Jiang — 70s, lower, slower, wise and elegant like a graceful elder
+  yangjiang:{ ssmlGender: 'FEMALE', pitch: -6,  speakingRate: 0.70 },
 };
 
 // Speak text using the avatar's personalised voice profile.

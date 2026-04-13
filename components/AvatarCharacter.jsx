@@ -58,10 +58,10 @@ export default function AvatarCharacter({ avatarId = 'eileen', expression = 'idl
     }
   }, [expression]);
 
-  const isVideo = VIDEO_EXPRESSIONS.includes(expression);
+  const isVideo = VIDEO_EXPRESSIONS.includes(expression) && !!avatar.videos?.[expression];
   const source  = isVideo
     ? avatar.videos[expression]
-    : (avatar.images[expression] || avatar.images.neutral);
+    : (avatar.images?.[expression] || avatar.images?.neutral);
 
   // Combine scale animations (bounce + pulse both affect scale)
   const scaleAnim = Animated.multiply(bounceAnim, pulseAnim);

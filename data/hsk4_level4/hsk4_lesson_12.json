@@ -30,7 +30,7 @@
       "pinyin": "huò dé",
       "english": "To obtain; to achieve; to gain",
       "part_of_speech": "verb",
-      "example": "他积极进行比赛，结果获得了第一名。",
+      "example": "他积极参加比赛，结果获得了第一名。",
       "translation": "He actively participated in the competition and as a result obtained first place."
     },
     {
@@ -282,7 +282,7 @@
           "word_hints": {}
         },
         {
-          "question": "_____ 获得失败的结果，她也积极进取。",
+          "question": "_____ 是失败，她也积极进取。",
           "type": "multiple_choice",
           "correct": "即使",
           "options": [
@@ -299,7 +299,6 @@
           ],
           "word_hints": {
             "失败": "shī bài",
-            "结果": "jié guǒ",
             "积极": "jī jí"
           }
         }
@@ -434,8 +433,8 @@
           "english": "Through persistence and courage, she ultimately achieved her goal."
         },
         {
-          "chinese": "他积极进行比赛，结果获得了第一名。",
-          "pinyin": "Tā jī jí jìn xíng bǐ sài, jié guǒ huò dé le dì yī míng.",
+          "chinese": "他积极参加比赛，结果获得了第一名。",
+          "pinyin": "Tā jī jí cān jiā bǐ sài, jié guǒ huò dé le dì yī míng.",
           "english": "He actively participated in the competition and as a result obtained first place."
         }
       ],
@@ -517,7 +516,7 @@
           "word_hints": {}
         },
         {
-          "question": "她坚持到底，_____ 了她渴望的结果。",
+          "question": "她坚持到底，终于_____ 了她渴望的结果。",
           "type": "multiple_choice",
           "correct": "获得",
           "options": [
@@ -533,6 +532,7 @@
             "jìng rán"
           ],
           "word_hints": {
+            "终于":"zhōng yú",
             "坚持": "jiān chí",
             "结果": "jié guǒ"
           }
@@ -863,9 +863,9 @@
       "lines": [
         {
           "speaker": "B",
-          "chinese": "教练，我失败了，我竟然连决赛都没进入，太丢人了。",
-          "pinyin": "Jiào liàn, wǒ shī bài le, wǒ jìng rán lián jué sài dōu méi jìn rù, tài diū rén le.",
-          "english": "Coach, I failed. I surprisingly didn't even make it to the finals. It's so embarrassing."
+          "chinese": "加缪，我失败了，我竟然连决赛都没进入，太丢人了。",
+          "pinyin": "Jiā miù, wǒ shī bài le, wǒ jìng rán lián jué sài dōu méi jìn rù, tài diū rén le.",
+          "english": "Camus, I failed. I surprisingly didn't even make it to the finals. It's so embarrassing."
         },
         {
           "speaker": "A",
@@ -899,9 +899,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "谢谢教练，坚持就是胜利，我记住了！",
-          "pinyin": "Xiè xie jiào liàn, jiān chí jiù shì shèng lì, wǒ jì zhù le!",
-          "english": "Thank you, coach. Persistence is victory — I'll remember that!"
+          "chinese": "谢谢，坚持就是胜利，我记住了！",
+          "pinyin": "Xiè xie, jiān chí jiù shì shèng lì, wǒ jì zhù le!",
+          "english": "Thank you. Persistence is victory — I'll remember that!"
         }
       ]
     },

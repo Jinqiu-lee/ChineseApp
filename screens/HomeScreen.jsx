@@ -186,6 +186,7 @@ export default function HomeScreen({
   levelState,
   lessonProgress,
   returnLevelId = null,
+  returnLessonId = null,
   onLessonPress,
   onLevelQuizPress,
   onChangeLevelConfirm,
@@ -208,6 +209,22 @@ export default function HomeScreen({
 
   const confettiRef = useRef(null);
   const avatarBounce = useRef(new Animated.Value(1)).current;
+  const lessonScrollViewRef = useRef(null);
+  const lessonsSectionYRef = useRef(0);
+  const lessonYOffsetsRef = useRef({});
+
+  // Scroll to the lesson the user came from when returning to lesson list
+  useEffect(() => {
+    if (!returnLessonId || !selectedLevel) return;
+    const handle = setTimeout(() => {
+      const sectionY = lessonsSectionYRef.current;
+      const lessonY = lessonYOffsetsRef.current[returnLessonId];
+      if (lessonY !== undefined && lessonScrollViewRef.current) {
+        lessonScrollViewRef.current.scrollTo({ y: Math.max(0, sectionY + lessonY - 16), animated: false });
+      }
+    }, 80);
+    return () => clearTimeout(handle);
+  }, [returnLessonId, selectedLevel?.id]);
   // null = initial load not yet seen; skip confetti on first AsyncStorage load
   const prevStreakRef = useRef(null);
 
@@ -381,7 +398,7 @@ export default function HomeScreen({
           <View style={{ width: 44 }} />
         </View>
 
-        <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+        <ScrollView ref={lessonScrollViewRef} style={styles.container} contentContainerStyle={styles.contentContainer}>
           <View style={[styles.levelDetailBadge, { borderColor: selectedLevel.color }]}>
             <Text style={styles.levelDetailEmoji}>{selectedLevel.emoji}</Text>
             <View>
@@ -422,7 +439,10 @@ export default function HomeScreen({
             ) : null;
           })()}
 
-          <View style={styles.lessonsSection}>
+          <View
+            style={styles.lessonsSection}
+            onLayout={(e) => { lessonsSectionYRef.current = e.nativeEvent.layout.y; }}
+          >
             <Text style={styles.sectionTitle}>📚 Lessons</Text>
             {lessons.map((lesson) => {
               const isDone = (lessonProgress[selectedLevel.id] || []).includes(lesson.id);
@@ -431,6 +451,7 @@ export default function HomeScreen({
                 key={lesson.id}
                 style={[styles.lessonCard, isDone && styles.lessonCardDone]}
                 onPress={() => onLessonPress(selectedLevel.id, lesson.id)}
+                onLayout={(e) => { lessonYOffsetsRef.current[lesson.id] = e.nativeEvent.layout.y; }}
                 activeOpacity={0.7}
               >
                 <View style={[styles.lessonNumber, { backgroundColor: selectedLevel.color }]}>

@@ -174,6 +174,7 @@ export default function App() {
   const [levelState, setLevelState] = useState(DEFAULT_LEVEL_STATE);
   const [currentRound, setCurrentRound] = useState(1);    // 1 | 2 | 3
   const [returnLevelId, setReturnLevelId] = useState(null); // which level list to return to on back
+  const [returnLessonId, setReturnLessonId] = useState(null); // which lesson to scroll to on back
   const [pinyinReturnTo, setPinyinReturnTo] = useState('home'); // 'home' | 'lessonPinyin'
   // Pinyin Learning System state
   const [currentPinyinLessonId, setCurrentPinyinLessonId] = useState(null);
@@ -300,6 +301,7 @@ export default function App() {
 
   const handleBackToHome = (levelId = null) => {
     setReturnLevelId(levelId);
+    setReturnLessonId(currentLessonId);
     setCurrentScreen('home');
     setCurrentLessonId(null);
     setCurrentQuizLevelId(null);
@@ -490,6 +492,7 @@ export default function App() {
         levelState={levelState}
         lessonProgress={lessonProgress}
         returnLevelId={returnLevelId}
+        returnLessonId={returnLessonId}
         onLessonPress={handleLessonPress}
         onLevelQuizPress={handleLevelQuizPress}
         onChangeLevelConfirm={handleChangeLevelConfirm}

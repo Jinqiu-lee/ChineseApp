@@ -184,6 +184,13 @@ export default function LessonDetailScreen({
   const [openSection, setOpenSection] = useState(null); // 'words' | 'sentences' | 'grammar' | null
 
   const toggleSection = (key) => setOpenSection(prev => prev === key ? null : key);
+  const handleBack = () => {
+    if (openSection !== null) {
+      setOpenSection(null);
+    } else {
+      onBack();
+    }
+  };
 
   if (!lesson) {
     return (
@@ -191,7 +198,7 @@ export default function LessonDetailScreen({
         <SafeAreaView style={styles.safe}>
           <View style={styles.errorContainer}>
             <Text style={styles.errorText}>❌ Lesson {lessonId} not found</Text>
-            <TouchableOpacity onPress={onBack}>
+            <TouchableOpacity onPress={handleBack}>
               <Text style={styles.backButtonText}>← Go Back</Text>
             </TouchableOpacity>
           </View>
@@ -212,7 +219,7 @@ export default function LessonDetailScreen({
 
       {/* Header */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={onBack} style={styles.backBtn}>
+        <TouchableOpacity onPress={handleBack} style={styles.backBtn}>
           <Text style={styles.backBtnText}>← Back</Text>
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Lesson {lesson.lesson}</Text>
