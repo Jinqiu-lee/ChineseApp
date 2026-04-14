@@ -36,13 +36,11 @@ export const PRESERVE_ROLE_KEYWORDS = [
   '医生','大夫','护士','病人','患者',
   '老师','教授','教师','校长','老板','经理','顾问','律师',
   // Named literary figures used directly as dialogue speakers (dialogue-only avatars)
-  '梵高','毕加索','苏轼','萨特','波伏娃','西蒙娜','伍尔夫','杨绛',
+  '苏轼','萨特','波伏娃','西蒙娜','伍尔夫','杨绛',
 ];
 
 // Map from the Chinese name used in lesson JSON → avatarId in avatarConfig
 export const LITERARY_AVATAR_MAP = {
-  '梵高':  'vangogh',
-  '毕加索':'picasso',
   '苏轼':  'sushi',
   '萨特':  'sartre',
   '波伏娃':'beauvoir',
@@ -155,8 +153,6 @@ export const NAME_LOOKUP = {
   '李教授':{ pinyin: 'Lǐ jiào shòu', english: 'Professor Li' },
   '王顾问':{ pinyin: 'Wáng gù wèn',  english: 'Advisor Wang' },
   // Famous artists and writers (used as replacement names in JSON data)
-  '梵高':  { pinyin: 'Fàn Gāo',    english: 'Van Gogh'   },
-  '毕加索':{ pinyin: 'Bì Jiā Suǒ', english: 'Picasso'    },
   '苏轼':  { pinyin: 'Sū Shì',     english: 'Su Shi'     },
   '萨特':  { pinyin: 'Sà Tè',      english: 'Sartre'     },
   '波伏娃':{ pinyin: 'Bō Fú Wá',   english: 'Beauvoir'   },

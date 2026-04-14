@@ -8,50 +8,50 @@
 export const DEFAULT_ELEVEN_VOICE_ID = 'PLACEHOLDER_default';
 
 const AVATAR_VOICES = {
-  // Eileen Chang — intimate, natural, literary Shanghai voice
-  eileen:    { voiceId: 'Ul9WvCihLg49MLu44xfj' },
+  // Eileen Chang — intimate, natural; Google TTS FEMALE pitch -1, rate 0.80
+  eileen:    { voiceId: null },
 
-  // Li Bai — bright, exclamatory, classic Tang poet
-  libai:     { voiceId: 'U9IusOUvPHFbqRQIHkVh' },
+  // Li Bai — Google TTS cmn-CN-Wavenet-C, pitch 10, rate 1.05
+  libai:     { voiceId: null },
 
-  // Lu Xun — stern, blunt, deliberate; modern Chinese realist
-  luxun:     { voiceId: '0NR5Z8eaUqhg0D1A34Kk' },
+  // Lu Xun — Google TTS cmn-CN-Wavenet-B
+  luxun:     { voiceId: null },
 
-  // Dante Alighieri — deep, grave, solemn; UNCHANGED (keep existing voice)
+  // Dante Alighieri — Google TTS cmn-CN-Wavenet-C
   dante:     { voiceId: null },
 
-  // Albert Camus — calm, measured, philosophical; French-Algerian warmth
-  camus:     { voiceId: 'LR6e92zZ1KBeAEoE1I9J' },
+  // Albert Camus — Google TTS cmn-CN-Wavenet-D
+  camus:     { voiceId: null },
 
-  // Jane Austen — bright, witty, precise; crisp Regency English cadence
-  jane:      { voiceId: 'JRFjU1coKyrPTR37RTqR' },
+  // Jane Austen — bright, witty, precise; Google TTS FEMALE pitch +2, rate 0.95
+  jane:      { voiceId: null },
 
-  // Elena Ferrante — soft, intimate, introspective; UNCHANGED (keep existing voice)
+  // Elena Ferrante — Google TTS cmn-CN-Wavenet-A
   elena:     { voiceId: null },
 
   // Liu Cixin — calm, restrained, vast; UNCHANGED (keep existing voice)
   liucixin:  { voiceId: null },
 
-  // Vincent van Gogh — impassioned, intense, slightly unpredictable
-  vangogh:   { voiceId: 'VqRZ6BFefek5cPzVm5MN' },
+  // Vincent van Gogh — removed from dialogues; no ElevenLabs voice needed
+  vangogh:   { voiceId: null },
 
-  // Simone de Beauvoir — wise, lower, steady and passionate
-  beauvoir:  { voiceId: 'eJb7rGmurZw1QsQcctjy' },
+  // Simone de Beauvoir — Google TTS cmn-CN-Wavenet-E
+  beauvoir:  { voiceId: null },
 
-  // Virginia Woolf — lyrical, lower key, slightly slower; stream-of-consciousness
-  woolf:     { voiceId: 'Tzf8K1T8bC5nay312fzF' },
+  // Virginia Woolf — Google TTS cmn-CN-Wavenet-A, pitch 0, rate 0.90
+  woolf:     { voiceId: null },
 
-  // Pablo Picasso — witty, humorous, faster; Mediterranean energy
-  picasso:   { voiceId: 'Tcg63YwW0LxikmdRNXoy' },
+  // Pablo Picasso — removed from dialogues; no ElevenLabs voice needed
+  picasso:   { voiceId: null },
 
-  // Jean-Paul Sartre — philosophical, deliberate, world-weary
-  sartre:    { voiceId: 'IhXgclqv7cpik4fmbuFY' },
+  // Jean-Paul Sartre — Google TTS cmn-CN-Wavenet-B
+  sartre:    { voiceId: null },
 
-  // Yang Jiang — elder, slow, wise and elegant; graceful 70s female
-  yangjiang: { voiceId: 'kn53b2ZipRDVLK5bBxva' },
+  // Yang Jiang — Google TTS cmn-CN-Wavenet-E, pitch -15, rate 0.80
+  yangjiang: { voiceId: null },
 
-  // Su Shi — 50s, wisdom; lower and slower than Li Bai
-  sushi:     { voiceId: 'sxvGmyDpdgNtznrLkg1W' },
+  // Su Shi — deep, grave; Google TTS MALE pitch -8, rate 0.76
+  sushi:     { voiceId: null },
 };
 
 export default AVATAR_VOICES;

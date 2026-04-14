@@ -88,7 +88,7 @@ function getDialogueImage(dialogueId, lessonNumber, levelId = 'hsk1') {
 const LITERARY_FIGURE_NAMES = new Set([
   '张爱玲','爱玲','李白','鲁迅','但丁','加缪',
   '简奥斯汀','奥斯汀','费兰特','兰特','刘慈欣','慈欣',
-  '梵高','毕加索','苏轼','萨特','波伏娃','西蒙娜','伍尔夫','杨绛',
+  '苏轼','萨特','波伏娃','西蒙娜','伍尔夫','杨绛',
 ]);
 
 function getDisplayName(info) {

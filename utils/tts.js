@@ -1,12 +1,11 @@
 import { Audio } from 'expo-av';
 import * as FileSystem from 'expo-file-system/legacy';
 import { GOOGLE_API_KEY } from '../config/googleApiKey';
-import AVATAR_VOICES, { DEFAULT_ELEVEN_VOICE_ID } from '../config/avatarVoices';
+import AVATAR_VOICES from '../config/avatarVoices';
 import { PINYIN_AUDIO } from './pinyinAudio';
 import { REPLACE_AUDIO } from './replaceAudio';
 
-// Set your ElevenLabs API key here (or load from a secrets file like googleApiKey.js).
-const ELEVENLABS_API_KEY = 'YOUR_ELEVENLABS_API_KEY_HERE';
+const ELEVENLABS_API_KEY = process.env.EXPO_PUBLIC_ELEVENLABS_API_KEY || '';
 
 const GOOGLE_TTS_API_KEY = GOOGLE_API_KEY;
 
@@ -68,6 +67,81 @@ const COMPOUND_PHONEME_OVERRIDES = {
   '剂量':   [['剂', 'ji4'], ['量', 'liang4']],
 };
 
+// ── Polyphonic context resolver ──────────────────────────────────────────────
+// Scans a plain-text string for known polyphonic characters and wraps each
+// bare occurrence (i.e. not already inside an SSML tag) with the correct
+// <phoneme> reading, determined by surrounding characters.
+//
+// Rules (checked after compound overrides, so recognised multi-char words like
+// 归还/还书/重量 are already wrapped and skipped here):
+//   还 — followed by 是/有/好/可/要/会/需/值/得/行 → hái (still/also)
+//         otherwise → huán (return)
+//   长 — followed by 大/高/胖/进/出 or preceded by 成/生/茁/院/拔 → zhǎng (grow)
+//         otherwise → cháng (long)
+//   行 — preceded by 银/商/旅/同/业 → háng (profession/row)
+//         otherwise → xíng (ok/travel)
+//   重 — followed by 新/复/来/做/写/试 → chóng (repeat)
+//         otherwise → zhòng (heavy/important)
+const POLYPHONIC_RULES = [
+  {
+    char: '还',
+    resolve: (chars, i) => {
+      const next = chars[i + 1] || '';
+      return '是有好可要会需值得行'.includes(next) ? 'hai2' : 'huan2';
+    },
+  },
+  {
+    char: '长',
+    resolve: (chars, i) => {
+      const next = chars[i + 1] || '';
+      const prev = chars[i - 1] || '';
+      if ('大高胖进出'.includes(next)) return 'zhang3';
+      if ('成生茁院拔'.includes(prev)) return 'zhang3';
+      return 'chang2';
+    },
+  },
+  {
+    char: '行',
+    resolve: (chars, i) => {
+      const prev = chars[i - 1] || '';
+      return '银商旅同业'.includes(prev) ? 'hang2' : 'xing2';
+    },
+  },
+  {
+    char: '重',
+    resolve: (chars, i) => {
+      const next = chars[i + 1] || '';
+      return '新复来做写试'.includes(next) ? 'chong2' : 'zhong4';
+    },
+  },
+];
+
+// Returns true if position i in the string is inside an SSML tag.
+function insideTag(str, i) {
+  const before = str.lastIndexOf('<', i);
+  const close  = str.lastIndexOf('>', i);
+  return before > close; // inside a tag if < comes after the last >
+}
+
+function resolvePolyphonic(text) {
+  let result = text;
+  for (const { char, resolve } of POLYPHONIC_RULES) {
+    // Rebuild on each pass so tag offsets stay accurate.
+    let out = '';
+    const chars = [...result]; // unicode-safe split
+    let skip = 0; // chars to skip (already consumed by tag traversal)
+    for (let i = 0; i < chars.length; i++) {
+      if (chars[i] !== char) { out += chars[i]; continue; }
+      // If this char is inside an existing SSML tag, leave it untouched.
+      if (insideTag(out, out.length)) { out += chars[i]; continue; }
+      const pinyin = resolve(chars, i);
+      out += `<phoneme alphabet="pinyin" ph="${pinyin}">${char}</phoneme>`;
+    }
+    result = out;
+  }
+  return result;
+}
+
 function buildSSML(text) {
   let inner = text;
 
@@ -81,7 +155,11 @@ function buildSSML(text) {
     }
   }
 
-  // Step 2: apply single-character overrides to any remaining bare characters
+  // Step 2: context-aware polyphonic resolver for 还/长/行/重
+  // Runs after compound overrides so already-wrapped chars are skipped.
+  inner = resolvePolyphonic(inner);
+
+  // Step 3: apply single-character overrides to any remaining bare characters
   for (const [char, pinyin] of Object.entries(PHONEME_OVERRIDES)) {
     inner = inner.replaceAll(
       char,
@@ -249,12 +327,12 @@ export async function speakPinyin(syllable, gender = 'female') {
 // Pitch range: -20 to +20 semitones. Rate range: 0.25–4.0 (1.0 = normal).
 // Each avatar is tuned to be clearly distinct from the others.
 const AVATAR_VOICE_CONFIG = {
-  // Li Bai — bright, fast, exclamatory poet: highest pitch + fastest rate
-  libai:  { ssmlGender: 'MALE',   pitch:  7,  speakingRate: 1.08 },
+  // Li Bai — young, bright, passionate; cmn-CN-Wavenet-C
+  libai:  { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-C', pitch:  5,  speakingRate: 1.03 },
   // Lu Xun — stern, blunt, deliberate: noticeably low pitch + slow
   luxun:  { ssmlGender: 'MALE',   pitch: -5,  speakingRate: 0.80 },
-  // Eileen Chang — intimate, natural
-  eileen: { ssmlGender: 'FEMALE', pitch: -1,  speakingRate: 0.80 },
+  // Eileen Chang — controlled, precise, cool; cmn-CN-Wavenet-A
+  eileen: { ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch:  0,  speakingRate: 0.90 },
   // Jane Austen
   jane:   { ssmlGender: 'FEMALE', pitch:  2,  speakingRate: 0.95 },
   // Camus — calm, even, measured: mildly low male + moderately slow
@@ -269,16 +347,16 @@ const AVATAR_VOICE_CONFIG = {
   vangogh:  { ssmlGender: 'MALE',   pitch:  3,  speakingRate: 0.92 },
   // Simone de Beauvoir — 40s, wise, lower, steady and passionate
   beauvoir: { ssmlGender: 'FEMALE', pitch: -4,  speakingRate: 0.82 },
-  // Virginia Woolf — 30s, lyrical, lower key, slightly slower than Austen
-  woolf:    { ssmlGender: 'FEMALE', pitch: -2,  speakingRate: 0.88 },
+  // Virginia Woolf — controlled, precise, cool; cmn-CN-Wavenet-A
+  woolf:    { ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch:  0,  speakingRate: 0.90 },
   // Picasso — 50s, witty, humorous, faster with Spanish-flavoured passion
   picasso:  { ssmlGender: 'MALE',   pitch:  4,  speakingRate: 1.00 },
   // Sartre — philosophical, deliberate, deep
   sartre:   { ssmlGender: 'MALE',   pitch: -3,  speakingRate: 0.80 },
-  // Su Shi — 50s, wisdom, lower and slower than Li Bai
-  sushi:    { ssmlGender: 'MALE',   pitch: -3,  speakingRate: 0.82 },
-  // Yang Jiang — 70s, lower, slower, wise and elegant like a graceful elder
-  yangjiang:{ ssmlGender: 'FEMALE', pitch: -6,  speakingRate: 0.70 },
+  // Su Shi — mid-age, warm, grounded; cmn-CN-Wavenet-B
+  sushi:    { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-B', pitch: -5,  speakingRate: 0.90 },
+  // Yang Jiang — elder, slow, serene, wise; cmn-CN-Wavenet-E
+  yangjiang:{ ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-E', pitch: -15, speakingRate: 0.80 },
 };
 
 // Speak text using the avatar's personalised voice profile.
@@ -288,16 +366,18 @@ export async function speakAsAvatar(text, avatarId = 'eileen') {
   // ── 1. ElevenLabs path ──────────────────────────────────────────────────
   if (ELEVENLABS_API_KEY && ELEVENLABS_API_KEY !== 'YOUR_ELEVENLABS_API_KEY_HERE') {
     const voiceEntry = AVATAR_VOICES[avatarId];
-    const voiceId = voiceEntry?.voiceId || DEFAULT_ELEVEN_VOICE_ID;
+    // voiceId: null means "skip ElevenLabs, fall back to Google TTS" (dante, elena, liucixin).
+    // voiceId: undefined (avatar not in config) also skips ElevenLabs.
+    // Also skip if voiceId is an unfilled placeholder string.
+    const voiceId = voiceEntry?.voiceId ?? null;
 
-    // null voiceId means "skip ElevenLabs for this avatar, use Google TTS below".
-    // Also skip if voiceId is still an unfilled placeholder string.
-    if (voiceId && !voiceId.startsWith('PLACEHOLDER')) {
+    if (voiceId !== null && !voiceId.startsWith('PLACEHOLDER')) {
+      // Cache stores base64 string (same pattern as Google TTS path)
       const cacheKey = `eleven_v1:${avatarId}:${text}`;
       try {
-        let audioUri = audioCache.get(cacheKey);
+        let base64Audio = audioCache.get(cacheKey);
 
-        if (!audioUri) {
+        if (!base64Audio) {
           const res = await fetch(
             `https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`,
             {
@@ -318,23 +398,18 @@ export async function speakAsAvatar(text, avatarId = 'eileen') {
             console.warn(`speakAsAvatar ElevenLabs error for ${avatarId}:`, res.status);
             // fall through to Google TTS below
           } else {
-            // ElevenLabs returns raw MP3 bytes — save to disk and play
-            const blob = await res.blob();
-            const reader = new FileReader();
-            const base64 = await new Promise((resolve, reject) => {
-              reader.onloadend = () => resolve(reader.result.split(',')[1]);
-              reader.onerror = reject;
-              reader.readAsDataURL(blob);
-            });
-            await FileSystem.writeAsStringAsync(TMP_FILE, base64, { encoding: 'base64' });
-            audioCache.set(cacheKey, TMP_FILE);
-            audioUri = TMP_FILE;
+            // ElevenLabs returns raw MP3 bytes — convert to base64 for FileSystem
+            const arrayBuffer = await res.arrayBuffer();
+            const uint8 = new Uint8Array(arrayBuffer);
+            let binary = '';
+            for (let i = 0; i < uint8.byteLength; i++) binary += String.fromCharCode(uint8[i]);
+            base64Audio = btoa(binary);
+            audioCache.set(cacheKey, base64Audio);
           }
-        } else {
-          await FileSystem.writeAsStringAsync(TMP_FILE, audioCache.get(`eleven_b64:${avatarId}:${text}`) || '', { encoding: 'base64' });
         }
 
-        if (audioUri) {
+        if (base64Audio) {
+          await FileSystem.writeAsStringAsync(TMP_FILE, base64Audio, { encoding: 'base64' });
           await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
           const { sound } = await Audio.Sound.createAsync({ uri: TMP_FILE });
           await sound.playAsync();
@@ -371,6 +446,7 @@ export async function speakAsAvatar(text, avatarId = 'eileen') {
             voice: {
               languageCode: 'zh-CN',
               ssmlGender: vc.ssmlGender,
+              ...(vc.voiceName ? { name: vc.voiceName } : {}),
             },
             audioConfig: {
               audioEncoding: 'MP3',

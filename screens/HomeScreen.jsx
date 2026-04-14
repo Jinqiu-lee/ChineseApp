@@ -12,6 +12,7 @@ import useProgress from '../hooks/useProgress';
 import { LEVEL_WELCOME, LEVEL_QUOTES } from '../data/emotionalContent';
 import { getVanGoghMessage } from '../data/vanGoghMessages';
 import { loadQuizProgress } from '../utils/quizProgressStorage';
+const DEV_UNLOCK_ALL = true; // mirrors App.js — set false for production
 
 const LEVEL_CONFIG = [
   { id: 'hsk1', number: 1, emoji: '🌻', title: 'Sunflower Fields',    subtitle: 'HSK 1', color: WARM_BROWN,   tagline: 'Your warm beginning',        welcomeColor: '#1C2A44' },
@@ -547,6 +548,8 @@ export default function HomeScreen({
           </View>
 
           <AvatarPicker selectedId={avatarId} onSelect={handleSelectAvatar} />
+
+
         </View>
 
         {/* Van Gogh daily greeting */}
@@ -891,6 +894,8 @@ const styles = StyleSheet.create({
 
   // ── Avatar section ─────────────────────────────────────────────────────────
   avatarSection:    { alignItems: 'center', marginBottom: 24, gap: 12 },
+  devTestButton:    { marginTop: 4, paddingVertical: 8, paddingHorizontal: 18, borderRadius: 10, backgroundColor: 'rgba(84,160,255,0.15)', borderWidth: 1, borderColor: 'rgba(84,160,255,0.4)' },
+  devTestButtonText:{ fontSize: 13, fontWeight: '700', color: '#54A0FF' },
   avatarMessageBubble: {
     backgroundColor: CARD_WHITE,
     borderRadius: 16,
