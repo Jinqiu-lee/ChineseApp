@@ -697,5 +697,19 @@
       "correct": "4",
       "choices": ["1", "2", "3", "4"]
     }
+  ],
+  "stage4_pool": [
+    { "type": "listen_record", "syllable": "sān", "audio_key": "san1", "chinese": "三", "meaning": "three" },
+    { "type": "listen_record", "syllable": "zài", "audio_key": "zai4", "chinese": "在", "meaning": "at/exist" },
+    { "type": "listen_record", "syllable": "mén", "audio_key": "men2", "chinese": "门", "meaning": "door" },
+    { "type": "listen_record", "syllable": "fēn", "audio_key": "fen1", "chinese": "分", "meaning": "minute/cent" },
+    { "type": "listen_record", "syllable": "xīn", "audio_key": "xin1", "chinese": "心", "meaning": "heart" },
+    { "type": "listen_record", "syllable": "cūn", "audio_key": "cun1", "chinese": "村", "meaning": "village" },
+    { "type": "listen_record", "syllable": "jūn", "audio_key": "jun1", "chinese": "军", "meaning": "army" },
+    { "type": "listen_record", "syllable": "bān", "audio_key": "ban1", "chinese": "班", "meaning": "class" },
+    { "type": "listen_record", "syllable": "rén", "audio_key": "ren2", "chinese": "人", "meaning": "person" },
+    { "type": "listen_record", "syllable": "nín", "audio_key": "nin2", "chinese": "您", "meaning": "you (formal)" },
+    { "type": "listen_record", "syllable": "cóng", "audio_key": "cong2", "chinese": "从", "meaning": "from" },
+    { "type": "listen_record", "syllable": "shàng", "audio_key": "shang4", "chinese": "上", "meaning": "above/up" }
   ]
 }

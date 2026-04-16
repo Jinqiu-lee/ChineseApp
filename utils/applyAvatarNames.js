@@ -37,6 +37,8 @@ export const PRESERVE_ROLE_KEYWORDS = [
   '老师','教授','教师','校长','老板','经理','顾问','律师',
   // Named literary figures used directly as dialogue speakers (dialogue-only avatars)
   '苏轼','萨特','波伏娃','西蒙娜','伍尔夫','杨绛',
+  '但丁','加缪','鲁迅','李白','爱玲','张爱玲',
+  '奥斯汀','简奥斯汀','兰特','费兰特','慈欣','刘慈欣',
 ];
 
 // Map from the Chinese name used in lesson JSON → avatarId in avatarConfig

@@ -16,7 +16,7 @@ const LEVEL_BACKGROUND_IMAGES = {
   hsk4: require('../assets/UI_design_images/villiages_homes_level4.avif'),
   hsk5: require('../assets/UI_design_images/Starry_Night_level5.webp'),
   hsk6: require('../assets/UI_design_images/images_level6.avif'),
-  pinyin: require('../assets/UI_design_images/Avenue-with-flowering_Pinyin.jpg'),
+  pinyin: require('../assets/UI_design_images/Pinyin_background.avif'),
   default: require('../assets/UI_design_images/abstarct_expressive_yellow_brush_strokes_oncanvas_background .jpeg'),
 };
 

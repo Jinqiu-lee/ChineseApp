@@ -195,7 +195,7 @@
     },
     {
       "chinese": "面对激烈的竞争，他不得不不断提升自己的能力和潜力。",
-      "pinyin": "Miàn duì jī liè de jìng zhēng, tā bù dé bù bù duàn tí shēng zì jǐ de néng lì hé qián lì.",
+      "pinyin": "Miàn duì jī liè de jìng zhēng, tā bù dé bù bú duàn tí shēng zì jǐ de néng lì hé qián lì.",
       "english": "Faced with fierce competition, he had no choice but to continuously improve his abilities and develop his potential."
     },
     {
@@ -274,7 +274,7 @@
           }
         },
         {
-          "question": "一旦你改变了对失败的态度，_____ 每一次失败都变成了成长的机会。",
+          "question": "一旦你改变了对失败的态度，每一次失败 _____ 都变成了成长的机会。",
           "type": "multiple_choice",
           "correct": "就",
           "options": ["就", "却", "但", "所以"],
@@ -349,7 +349,7 @@
           }
         },
         {
-          "question": "与其担心潜力不够，_____ 努力不断地发掘和提升自己。",
+          "question": "与其担心潜力不够，_____ 努力发掘潜力和提升自己。",
           "type": "multiple_choice",
           "correct": "不如",
           "options": ["不如", "反而", "而且", "除非"],
@@ -405,7 +405,7 @@
           }
         },
         {
-          "question": "他一开始很被动，但现实迫使他_____ 主动去改变。",
+          "question": "他一开始很被动，但现实让他_____ 主动去改变。",
           "type": "multiple_choice",
           "correct": "不得不",
           "options": ["不得不", "不愿意", "不一定", "不只是"],
@@ -536,9 +536,9 @@
       "lines": [
         {
           "speaker": "B",
-          "chinese": "你听说了吗？张明辞掉了那份稳定的工作，决定重新开始，改变自己的人生方向。",
-          "pinyin": "Nǐ tīng shuō le ma? Zhāng Míng cí diào le nà fèn wěn dìng de gōng zuò, jué dìng chóng xīn kāi shǐ, gǎi biàn zì jǐ de rén shēng fāng xiàng.",
-          "english": "Did you hear? Zhang Ming quit his stable job and decided to start over, changing his life's direction."
+          "chinese": "你听说了吗？梵高辞掉了那份稳定的工作，决定重新开始，改变自己的人生方向。",
+          "pinyin": "Nǐ tīng shuō le ma? Fàn gāo cí diào le nà fèn wěn dìng de gōng zuò, jué dìng chóng xīn kāi shǐ, gǎi biàn zì jǐ de rén shēng fāng xiàng.",
+          "english": "Did you hear? Van Gogh quit his stable job and decided to start over, changing his life's direction."
         },
         {
           "speaker": "A",

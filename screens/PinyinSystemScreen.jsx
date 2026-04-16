@@ -201,7 +201,7 @@ export default function PinyinSystemScreen({ onBack, onSelectLesson, onFinalQuiz
               </View>
               <View style={styles.heroStatDivider} />
               <View style={styles.heroStat}>
-                <Text style={styles.heroStatNum}>3</Text>
+                <Text style={styles.heroStatNum}>4</Text>
                 <Text style={styles.heroStatLabel}>Stages / Lesson</Text>
               </View>
               <View style={styles.heroStatDivider} />
@@ -244,7 +244,7 @@ export default function PinyinSystemScreen({ onBack, onSelectLesson, onFinalQuiz
                       {lesson.subtitle}
                     </Text>
                     {unlocked && !completed && stages > 0 && (
-                      <Text style={[styles.lessonProgress, { color: dotColor }]}>{stages}/3 stages done</Text>
+                      <Text style={[styles.lessonProgress, { color: dotColor }]}>{stages}/4 stages done</Text>
                     )}
                     {!unlocked && (
                       <Text style={styles.lockHint}>Pass Lesson {lesson.id - 1} quiz to unlock</Text>

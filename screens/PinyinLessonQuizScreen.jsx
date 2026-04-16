@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import PinyinLessonExercise from '../components/exercises/PinyinLessonExercise';
+import PinyinRecordExercise from '../components/exercises/PinyinRecordExercise';
 import { buildLessonQuiz } from '../utils/pinyinLessonGenerator';
 import ScreenBackground from '../components/ScreenBackground';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
@@ -97,12 +98,21 @@ export default function PinyinLessonQuizScreen({ lessonData, onPass, onFail, onB
           showsVerticalScrollIndicator={false}
         >
           {question && (
-            <PinyinLessonExercise
-              key={current}
-              exercise={question}
-              onCorrect={() => advance(true)}
-              onWrong={() => advance(false)}
-            />
+            question.type === 'listen_record' || question.type === 'speak_record' ? (
+              <PinyinRecordExercise
+                key={current}
+                exercise={question}
+                onCorrect={() => advance(true)}
+                onWrong={() => advance(false)}
+              />
+            ) : (
+              <PinyinLessonExercise
+                key={current}
+                exercise={question}
+                onCorrect={() => advance(true)}
+                onWrong={() => advance(false)}
+              />
+            )
           )}
         </ScrollView>
       </SafeAreaView>

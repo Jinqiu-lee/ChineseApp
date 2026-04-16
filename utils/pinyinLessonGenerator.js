@@ -52,12 +52,25 @@ export function buildStage3(lessonData, count = 12) {
   return pickN(pool, Math.min(count, pool.length));
 }
 
-// ── Lesson Quiz ────────────────────────────────────────────────────────────
-// 10 questions from quiz_pool, shuffled
-export function buildLessonQuiz(lessonData, count = 10) {
-  const pool = lessonData.quiz_pool || [];
+// ── Stage 4: Listen & Speak (recording exercises) ─────────────────────────
+// Items with listen_record or speak_record type — audio + microphone
+export function buildStage4(lessonData, count = 12) {
+  const pool = (lessonData.stage4_pool || []).filter(item =>
+    item.type === 'listen_record' || item.type === 'speak_record',
+  );
   if (pool.length === 0) return [];
   return pickN(pool, Math.min(count, pool.length));
+}
+
+// ── Lesson Quiz ────────────────────────────────────────────────────────────
+// Mix of quiz_pool (standard) + stage4_pool (recording) questions
+export function buildLessonQuiz(lessonData, count = 10) {
+  const mainPool   = lessonData.quiz_pool   || [];
+  const stage4Pool = lessonData.stage4_pool || [];
+  // Pull up to 7 standard + up to 3 recording questions
+  const fromMain   = pickN(mainPool,   Math.min(7, mainPool.length));
+  const fromStage4 = pickN(stage4Pool, Math.min(3, stage4Pool.length));
+  return shuffle([...fromMain, ...fromStage4]).slice(0, count);
 }
 
 // ── Final Review Quiz ──────────────────────────────────────────────────────

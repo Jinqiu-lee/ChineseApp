@@ -43,15 +43,16 @@ export default function PinyinLessonScreen({
 
   if (!lessonData) return null;
 
-  const STAGE_COLORS = ['#296614', '#f99e27', '#943012'];
+  const STAGE_COLORS = ['#296614', '#f99e27', '#943012', '#03396c'];
 
   const stages = [
-    { index: 0, title: 'Stage 1 · Listen & Identify', desc: 'Hear audio → pick tone, initial, or final', icon: '🔊' },
-    { index: 1, title: 'Stage 2 · Read & Repeat',     desc: 'See the syllable, listen and repeat aloud',   icon: '🗣️' },
-    { index: 2, title: 'Stage 3 · Visual Spelling',   desc: 'See written syllable → identify tone/parts',   icon: '✏️' },
+    { index: 0, title: 'Stage 1 · Listen & Identify', desc: 'Hear audio → pick tone, initial, or final',      icon: '🔊' },
+    { index: 1, title: 'Stage 2 · Read & Repeat',     desc: 'See the syllable, listen and repeat aloud',      icon: '🗣️' },
+    { index: 2, title: 'Stage 3 · Visual Spelling',   desc: 'See written syllable → identify tone/parts',     icon: '✏️' },
+    { index: 3, title: 'Stage 4 · Listen & Speak',    desc: 'Hear the audio, record yourself saying it back', icon: '🎙️' },
   ];
 
-  const allStagesDone = stageProgress.length >= 3;
+  const allStagesDone = stageProgress.length >= 4;
 
   const renderLearnTab = () => {
     const content = lessonData.learn_content || {};
@@ -239,7 +240,7 @@ export default function PinyinLessonScreen({
   const renderPracticeTab = () => (
     <ScrollView contentContainerStyle={styles.tabContent} showsVerticalScrollIndicator={false}>
       <Text style={styles.practiceIntro}>
-        Complete all 3 stages, then take the Lesson Quiz to unlock the next lesson.
+        Complete all 4 stages, then take the Lesson Quiz to unlock the next lesson.
       </Text>
 
       {stages.map(stage => {
@@ -284,7 +285,7 @@ export default function PinyinLessonScreen({
               ? 'Passed! 🎉'
               : allStagesDone
                 ? '10 questions · Need 60% to pass'
-                : 'Complete all 3 stages first'}
+                : 'Complete all 4 stages first'}
           </Text>
         </View>
         {allStagesDone && !quizPassed && <Text style={styles.stageArrow}>→</Text>}

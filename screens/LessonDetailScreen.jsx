@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import VocabularySection from '../components/VocabularySection';
@@ -10,6 +10,7 @@ import WaveBackground from '../components/WaveBackground';
 import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR } from '../constants/colors';
+import { stopAudio } from '../utils/tts';
 
 import lesson1 from '../data/hsk1/hsk1_lesson_1.json';
 import lesson2 from '../data/hsk1/hsk1_lesson_2.json';
@@ -183,8 +184,12 @@ export default function LessonDetailScreen({
   const avatarId = lesson ? getAvatarForLesson(lesson.topic, lesson.topic_chinese) : 'eileen';
   const [openSection, setOpenSection] = useState(null); // 'words' | 'sentences' | 'grammar' | null
 
-  const toggleSection = (key) => setOpenSection(prev => prev === key ? null : key);
+  // Stop any playing audio when this screen unmounts
+  useEffect(() => { return () => { stopAudio(); }; }, []);
+
+  const toggleSection = (key) => { stopAudio(); setOpenSection(prev => prev === key ? null : key); };
   const handleBack = () => {
+    stopAudio();
     if (openSection !== null) {
       setOpenSection(null);
     } else {
@@ -284,7 +289,7 @@ export default function LessonDetailScreen({
           {levelId === 'hsk1' ? (
             <TouchableOpacity
               style={[styles.learnBtn, styles.learnBtnPinyin]}
-              onPress={onOpenPinyin}
+              onPress={() => { stopAudio(); onOpenPinyin(); }}
               activeOpacity={0.8}
             >
               <Text style={styles.learnBtnEmoji}>🎵</Text>
@@ -390,7 +395,7 @@ export default function LessonDetailScreen({
             <TouchableOpacity
               key={i}
               style={[styles.stageCard, !unlocked && styles.stageCardLocked]}
-              onPress={() => unlocked && onSelectStage(i)}
+              onPress={() => unlocked && (stopAudio(), onSelectStage(i))}
               activeOpacity={unlocked ? 0.8 : 1}
             >
               {/* Left: icon bubble */}
@@ -432,7 +437,7 @@ export default function LessonDetailScreen({
         </View>
         <TouchableOpacity
           style={[styles.quizBanner, quizUnlocked ? styles.quizBannerUnlocked : styles.quizBannerLocked]}
-          onPress={quizUnlocked ? onTakeQuiz : undefined}
+          onPress={quizUnlocked ? () => { stopAudio(); onTakeQuiz(); } : undefined}
           activeOpacity={quizUnlocked ? 0.8 : 1}
         >
           <Text style={styles.quizBannerEmoji}>{quizUnlocked ? '📋' : '🔒'}</Text>
@@ -452,7 +457,7 @@ export default function LessonDetailScreen({
         {/* Complete lesson */}
         <TouchableOpacity
           style={[styles.completeBtn, { backgroundColor: T.accent }]}
-          onPress={() => onLessonComplete(lessonId)}
+          onPress={() => { stopAudio(); onLessonComplete(lessonId); }}
           activeOpacity={0.85}
         >
           <Text style={[styles.completeBtnText, { color: T.accentText }]}>✓ Complete Lesson</Text>

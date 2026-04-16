@@ -760,5 +760,19 @@
       "correct": "4",
       "choices": ["1", "2", "3", "4"]
     }
+  ],
+  "stage4_pool": [
+    { "type": "listen_record", "syllable": "māma", "audio_key": "ma1_ma0", "chinese": "妈妈", "meaning": "mom" },
+    { "type": "listen_record", "syllable": "bàba", "audio_key": "ba4_ba0", "chinese": "爸爸", "meaning": "dad" },
+    { "type": "listen_record", "syllable": "gēge", "audio_key": "ge1_ge0", "chinese": "哥哥", "meaning": "older brother" },
+    { "type": "listen_record", "syllable": "jiějie", "audio_key": "jie3_jie0", "chinese": "姐姐", "meaning": "older sister" },
+    { "type": "listen_record", "syllable": "dìdi", "audio_key": "di4_di0", "chinese": "弟弟", "meaning": "younger brother" },
+    { "type": "listen_record", "syllable": "mèimei", "audio_key": "mei4_mei0", "chinese": "妹妹", "meaning": "younger sister" },
+    { "type": "listen_record", "syllable": "péngyou", "audio_key": "pengyou2", "chinese": "朋友", "meaning": "friend" },
+    { "type": "listen_record", "syllable": "nǎr", "audio_key": "nar3", "chinese": "哪儿", "meaning": "where" },
+    { "type": "listen_record", "syllable": "zhèr", "audio_key": "zher4", "chinese": "这儿", "meaning": "here" },
+    { "type": "listen_record", "syllable": "nàr", "audio_key": "nar4", "chinese": "那儿", "meaning": "there" },
+    { "type": "listen_record", "syllable": "gē", "audio_key": "ge1", "chinese": "歌", "meaning": "song" },
+    { "type": "listen_record", "syllable": "jī", "audio_key": "ji1", "chinese": "鸡", "meaning": "chicken" }
   ]
 }

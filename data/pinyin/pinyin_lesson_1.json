@@ -784,5 +784,19 @@
       "correct": "u",
       "choices": ["i", "u", "ü", "a"]
     }
+  ],
+  "stage4_pool": [
+    { "type": "listen_record", "syllable": "mǎ", "audio_key": "ma3", "chinese": "马", "meaning": "horse" },
+    { "type": "listen_record", "syllable": "mà", "audio_key": "ma4", "chinese": "骂", "meaning": "scold" },
+    { "type": "listen_record", "syllable": "māma", "audio_key": "ma1_ma0", "chinese": "妈妈", "meaning": "mom" },
+    { "type": "listen_record", "syllable": "bàba", "audio_key": "ba4_ba0", "chinese": "爸爸", "meaning": "dad" },
+    { "type": "listen_record", "syllable": "bā", "audio_key": "ba1", "chinese": "八", "meaning": "eight" },
+    { "type": "listen_record", "syllable": "bǐ", "audio_key": "bi3", "chinese": "笔", "meaning": "pen" },
+    { "type": "listen_record", "syllable": "nǚ", "audio_key": "nv3", "chinese": "女", "meaning": "female" },
+    { "type": "listen_record", "syllable": "dà", "audio_key": "da4", "chinese": "大", "meaning": "big" },
+    { "type": "listen_record", "syllable": "tā", "audio_key": "ta1", "chinese": "他", "meaning": "he" },
+    { "type": "listen_record", "syllable": "nǐ", "audio_key": "ni3", "chinese": "你", "meaning": "you" },
+    { "type": "listen_record", "syllable": "lā", "audio_key": "la1", "chinese": "拉", "meaning": "pull" },
+    { "type": "listen_record", "syllable": "bō", "audio_key": "bo1", "chinese": "波", "meaning": "wave" }
   ]
 }

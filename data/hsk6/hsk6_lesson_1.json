@@ -57,7 +57,7 @@
       "pinyin": "fū qī",
       "english": "husband and wife, married couple",
       "part_of_speech": "noun",
-      "example": "这对夫妻养成了每天散步聊天的习惯。",
+      "example": "这对夫妻养成了每天一起散步聊天的习惯。",
       "translation": "This married couple has developed the habit of walking and chatting together every day."
     },
     {
@@ -138,8 +138,8 @@
       "pinyin": "tǐ tiē",
       "english": "considerate, thoughtful",
       "part_of_speech": "adjective/verb",
-      "example": "他总是很体贴，在她下班回家前就把晚饭做好了。",
-      "translation": "He is always very thoughtful — he would have dinner ready before she came home from work."
+      "example": "他很体贴，总是在她下班回家前就把晚饭做好了。",
+      "translation": "He is very thoughtful — he would have dinner ready always before she came home from work."
     },
     {
       "id": "hsk6_l1_p1",
@@ -199,8 +199,8 @@
       "english": "This couple takes a walk in the park together every morning without exception."
     },
     {
-      "chinese": "她如何表达对他的感激，他总能第一时间感受到。",
-      "pinyin": "Tā rú hé biǎodá duì tā de gǎnjī, tā zǒng néng dì yī shíjiān gǎnshòu dào.",
+      "chinese": "无论她如何表达对他的感激，他总能第一时间感受到。",
+      "pinyin": "Wú lùn tā rú hé biǎodá duì tā de gǎnjī, tā zǒng néng dì yī shíjiān gǎnshòu dào.",
       "english": "However she expresses gratitude toward him, he always senses it right away."
     },
     {
@@ -214,9 +214,9 @@
       "english": "The unspoken harmony between them was built up gradually through years of companionship."
     },
     {
-      "chinese": "既然你已经知道她喜欢什么，就用心去体贴她吧。",
-      "pinyin": "Jì rán nǐ yǐjīng zhīdào tā xǐhuān shénme, jiù yòng xīn qù tǐtiē tā ba.",
-      "english": "Since you already know what she likes, then be thoughtful and caring toward her."
+      "chinese": "既然你已经知道她喜欢什么，就用心去为她准备吧！",
+      "pinyin": "Jì rán nǐ yǐjīng zhīdào tā xǐhuān shénme, jiù yòng xīn qù wèi tā zhǔn bèi ba.",
+      "english": "Since you already know what she likes, then just prepare for her thoughtfully."
     }
   ],
   "grammar_points": [
@@ -238,7 +238,7 @@
       ],
       "exercises": [
         {
-          "question": "她平时很内向，____ 主动来找我倾诉心情。",
+          "question": "她平时很内向, 今天 ____ 主动来找我倾诉心情。",
           "type": "multiple_choice",
           "correct": "居然",
           "options": ["偶尔", "居然", "如何", "既然"],
@@ -323,7 +323,7 @@
         {
           "question": "这段夫妻关系 ____ 能维持这么久，让朋友们都很好奇。",
           "type": "multiple_choice",
-          "correct": "如何",
+          "correct": "居然",
           "options": ["居然", "如何", "偶尔", "温馨"],
           "option_pinyin": ["jū rán", "rú hé", "ǒu ěr", "wēn xīn"],
           "word_hints": { "维持": "wéi chí", "好奇": "hào qí" }
@@ -380,7 +380,7 @@
           "word_hints": { "如此": "rú cǐ", "深厚": "shēn hòu" }
         },
         {
-          "question": "既然他们已经是多年的恩爱夫妻，____ 一定有很深的感情基础。",
+          "question": "既然他们已经是多年的恩爱夫妻，____ 应该有很深的感情基础。",
           "type": "multiple_choice",
           "correct": "就",
           "options": ["但", "就", "还", "虽"],
@@ -492,9 +492,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "说得对。偶尔不说话，就静静地陪在彼此身边，其实也是一种默契吧。",
-          "pinyin": "Shuō de duì. Ǒu ěr bù shuōhuà, jiù jìngjìng de péi zài bǐcǐ shēnbiān, qíshí yě shì yī zhǒng mòqì ba.",
-          "english": "That's true. Occasionally saying nothing and just quietly staying by each other's side — that's also a kind of unspoken harmony, isn't it."
+          "chinese": "说得对。其实偶尔不说话，就静静地陪在彼此身边，也是一种默契！",
+          "pinyin": "Shuō de duì. Qí shí ǒu ěr bù shuōhuà, jiù jìngjìng de péi zài bǐcǐ shēnbiān, yě shì yī zhǒng mòqì ba.",
+          "english": "That's true. Actually saying nothing occasionally and just quietly staying by each other's side — that's also a kind of unspoken harmony, isn't it."
         },
         {
           "speaker": "B",

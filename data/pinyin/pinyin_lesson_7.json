@@ -632,5 +632,19 @@
       "correct": "yue",
       "choices": ["ye", "yue", "yuan", "yun"]
     }
+  ],
+  "stage4_pool": [
+    { "type": "listen_record", "syllable": "zhī", "audio_key": "zhi1", "chinese": "知", "meaning": "know" },
+    { "type": "listen_record", "syllable": "chī", "audio_key": "chi1", "chinese": "吃", "meaning": "eat" },
+    { "type": "listen_record", "syllable": "shī", "audio_key": "shi1", "chinese": "诗", "meaning": "poem" },
+    { "type": "listen_record", "syllable": "rì", "audio_key": "ri4", "chinese": "日", "meaning": "sun/day" },
+    { "type": "listen_record", "syllable": "zì", "audio_key": "zi4", "chinese": "字", "meaning": "character/word" },
+    { "type": "listen_record", "syllable": "sì", "audio_key": "si4", "chinese": "四", "meaning": "four" },
+    { "type": "listen_record", "syllable": "yī", "audio_key": "yi1", "chinese": "一", "meaning": "one" },
+    { "type": "listen_record", "syllable": "yú", "audio_key": "yu2", "chinese": "鱼", "meaning": "fish" },
+    { "type": "listen_record", "syllable": "yuè", "audio_key": "yue4", "chinese": "月", "meaning": "moon/month" },
+    { "type": "listen_record", "syllable": "yún", "audio_key": "yun2", "chinese": "云", "meaning": "cloud" },
+    { "type": "listen_record", "syllable": "yīng", "audio_key": "ying1", "chinese": "应", "meaning": "should" },
+    { "type": "listen_record", "syllable": "yè", "audio_key": "ye4", "chinese": "夜", "meaning": "night" }
   ]
 }

@@ -708,5 +708,19 @@
       "correct": "iu",
       "choices": ["ao", "ou", "iu", "ui"]
     }
+  ],
+  "stage4_pool": [
+    { "type": "listen_record", "syllable": "nǐhǎo", "audio_key": "ni3_hao3", "chinese": "你好", "meaning": "hello" },
+    { "type": "listen_record", "syllable": "guì", "audio_key": "gui4", "chinese": "贵", "meaning": "expensive" },
+    { "type": "listen_record", "syllable": "fēi", "audio_key": "fei1", "chinese": "飞", "meaning": "fly" },
+    { "type": "listen_record", "syllable": "gāo", "audio_key": "gao1", "chinese": "高", "meaning": "tall" },
+    { "type": "listen_record", "syllable": "hǎo", "audio_key": "hao3", "chinese": "好", "meaning": "good" },
+    { "type": "listen_record", "syllable": "māo", "audio_key": "mao1", "chinese": "猫", "meaning": "cat" },
+    { "type": "listen_record", "syllable": "gǒu", "audio_key": "gou3", "chinese": "狗", "meaning": "dog" },
+    { "type": "listen_record", "syllable": "qī", "audio_key": "qi1", "chinese": "七", "meaning": "seven" },
+    { "type": "listen_record", "syllable": "xǐ", "audio_key": "xi3", "chinese": "洗", "meaning": "wash" },
+    { "type": "listen_record", "syllable": "bēi", "audio_key": "bei1", "chinese": "杯", "meaning": "cup" },
+    { "type": "listen_record", "syllable": "jiā", "audio_key": "jia1", "chinese": "家", "meaning": "home" },
+    { "type": "listen_record", "syllable": "guó", "audio_key": "guo2", "chinese": "国", "meaning": "country" }
   ]
 }

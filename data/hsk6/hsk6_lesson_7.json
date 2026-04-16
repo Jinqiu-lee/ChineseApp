@@ -39,7 +39,7 @@
       "pinyin": "shuì mián",
       "english": "sleep",
       "part_of_speech": "noun",
-      "example": "良好的睡眠对恢复体力和保持健康至关重要。",
+      "example": "良好的睡眠对恢复体力和保持健康起着至关重要的作用。",
       "translation": "Good sleep is essential for restoring energy and maintaining health."
     },
     {
@@ -156,8 +156,8 @@
       "pinyin": "chōng zú de shuì mián",
       "english": "sufficient sleep",
       "part_of_speech": "phrase",
-      "example": "医生建议成年人每天保证充足的睡眠，最好不少于七到八小时。",
-      "translation": "Doctors recommend that adults get sufficient sleep every day, ideally no less than seven to eight hours."
+      "example": "医生建议成年人每天保证充足的睡眠，最好不少于七小时。",
+      "translation": "Doctors recommend that adults get sufficient sleep every day, ideally no less than seven hours."
     },
     {
       "id": "hsk6_l7_18",
@@ -214,8 +214,8 @@
       "english": "Maintaining a regular daily schedule is the most fundamental method for restoring the biological clock to normal function."
     },
     {
-      "chinese": "充足的睡眠不仅能减轻疲劳，还能促进激素的平衡分泌，对整体健康十分有益。",
-      "pinyin": "Chōng zú de shuì mián bùjǐn néng jiǎnqīng pí láo, hái néng cùjìn jī sù de pínghéng fēnmì, duì zhěngtǐ jiànkāng shífēn yǒuyì.",
+      "chinese": "充足的睡眠不仅能减轻疲劳，还能促进激素的平衡分泌，对整体的健康十分有益。",
+      "pinyin": "Chōng zú de shuì mián bùjǐn néng jiǎnqīng pí láo, hái néng cùjìn jī sù de pínghéng fēnmì, duì zhěngtǐ de jiànkāng shífēn yǒuyì.",
       "english": "Sufficient sleep not only reduces fatigue, but also promotes balanced hormone secretion, which is very beneficial for overall health."
     }
   ],
@@ -238,7 +238,7 @@
       ],
       "exercises": [
         {
-          "question": "选择正确的句子：就算生物钟紊乱，______。",
+          "question": "选择正确的句子：如果生物钟紊乱，就算没有被闹钟吵醒，______。",
           "type": "multiple_choice",
           "correct": "身体也会出现各种不适症状",
           "options": ["身体也会出现各种不适症状", "身体不会有任何影响", "可以完全靠意志力克服", "睡眠质量自然会变好"],
@@ -262,7 +262,7 @@
           "word_hints": {"就算…也": "even if…still"}
         },
         {
-          "question": "就算不用闹钟，______规律的作息也能保证准时起床。",
+          "question": "就算不用闹钟，______规律的作息，也能保证准时起床。",
           "type": "multiple_choice",
           "correct": "只要保持",
           "options": ["只要保持", "由于有了", "虽然没有", "但是因为"],
@@ -498,8 +498,8 @@
         },
         {
           "speaker": "B",
-          "chinese": "是的，但现代社会的压力让很多人不得不继续用闹钟，这真是个矛盾。",
-          "pinyin": "Shì de, dàn xiàndài shèhuì de yālì ràng hěn duō rén bùdébù jìxù yòng nào zhōng, zhè zhēnshi gè máodùn.",
+          "chinese": "是的，但现代社会的压力让很多人不得不继续用闹钟，这真是矛盾。",
+          "pinyin": "Shì de, dàn xiàndài shèhuì de yālì ràng hěn duō rén bùdébù jìxù yòng nào zhōng, zhè zhēnshì máodùn.",
           "english": "True, but the pressure of modern society forces many people to keep using alarm clocks — it's really a contradiction."
         }
       ]
@@ -545,9 +545,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "真是太神奇了！看来顺应自然才是最好的生活方式，就像古人说的那样。",
-          "pinyin": "Zhēnshi tài shénqí le! Kànlái shùn yìng zì rán cái shì zuì hǎo de shēnghuó fāngshì, jiù xiàng gǔrén shuō de nàyàng.",
-          "english": "That's truly amazing! It seems that going with nature is the best way to live, just as the ancients said."
+          "chinese": "真是太神奇了！看来就像古人说的那样，顺应自然才是最好的生活方式。",
+          "pinyin": "Zhēnshi tài shénqí le! Kànlái jiù xiàng gǔrén shuō de nàyàng, shùn yìng zì rán cái shì zuì hǎo de shēnghuó fāngshì.",
+          "english": "That's truly amazing! It seems just as the ancients said : Going with nature is the best way to live."
         }
       ]
     }

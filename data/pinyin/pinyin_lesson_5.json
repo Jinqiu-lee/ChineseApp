@@ -687,5 +687,19 @@
       "correct": "1",
       "choices": ["1", "2", "3", "4"]
     }
+  ],
+  "stage4_pool": [
+    { "type": "listen_record", "syllable": "yáng", "audio_key": "yang2", "chinese": "羊", "meaning": "sheep" },
+    { "type": "listen_record", "syllable": "wáng", "audio_key": "wang2", "chinese": "王", "meaning": "king" },
+    { "type": "listen_record", "syllable": "yīng", "audio_key": "ying1", "chinese": "英", "meaning": "hero" },
+    { "type": "listen_record", "syllable": "zhōng", "audio_key": "zhong1", "chinese": "中", "meaning": "middle" },
+    { "type": "listen_record", "syllable": "dōng", "audio_key": "dong1", "chinese": "东", "meaning": "east" },
+    { "type": "listen_record", "syllable": "péngyou", "audio_key": "peng2_you0", "chinese": "朋友", "meaning": "friend" },
+    { "type": "listen_record", "syllable": "shāng", "audio_key": "shang1", "chinese": "商", "meaning": "commerce" },
+    { "type": "listen_record", "syllable": "wèng", "audio_key": "weng4", "chinese": "瓮", "meaning": "jar" },
+    { "type": "listen_record", "syllable": "míng", "audio_key": "ming2", "chinese": "名", "meaning": "name" },
+    { "type": "listen_record", "syllable": "néng", "audio_key": "neng2", "chinese": "能", "meaning": "can/able" },
+    { "type": "listen_record", "syllable": "shàng", "audio_key": "shang4", "chinese": "上", "meaning": "above/up" },
+    { "type": "listen_record", "syllable": "yīng", "audio_key": "ying1", "chinese": "应", "meaning": "should" }
   ]
 }

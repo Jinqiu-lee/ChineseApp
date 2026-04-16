@@ -10,7 +10,7 @@
       "id": "hsk6_l2_01",
       "chinese": "靠",
       "pinyin": "kào",
-      "english": "to lean on; to rely on; to be next to",
+      "english": "to lean on; to rely on",
       "part_of_speech": "verb",
       "example": "她说，在最脆弱的时候，她只想靠着他，什么都不用说。",
       "translation": "She said that in her most vulnerable moments, she just wanted to lean on him without saying anything."
@@ -57,7 +57,7 @@
       "pinyin": "xīn qíng",
       "english": "mood, state of mind",
       "part_of_speech": "noun",
-      "example": "只要收到他发来的一条消息，她的心情就会好上许多。",
+      "example": "只要收到他发来的一条消息，她的心情就会好许多。",
       "translation": "Just receiving one message from him would lift her mood considerably."
     },
     {
@@ -75,8 +75,8 @@
       "pinyin": "làng màn",
       "english": "romantic",
       "part_of_speech": "adjective",
-      "example": "他在她生日那天悄悄买了她提过一次的那本书，她觉得这比鲜花更浪漫。",
-      "translation": "On her birthday he quietly bought the book she had mentioned once — she found that more romantic than flowers."
+      "example": "他在她生日那天悄悄买了她提过一次的那本书，她觉得这种用心比鲜花更浪漫。",
+      "translation": "On her birthday he quietly bought the book she had mentioned once — she found that dedication is more romantic than flowers."
     },
     {
       "id": "hsk6_l2_09",
@@ -84,8 +84,8 @@
       "pinyin": "chén mò",
       "english": "silence; to be silent",
       "part_of_speech": "noun/verb",
-      "example": "两个人坐在那里沉默着，却感到彼此之间从未如此亲近。",
-      "translation": "The two of them sat there in silence, yet felt closer to each other than ever before."
+      "example": "两个人坐在那里沉默着，却感到彼此之间如此亲近。",
+      "translation": "The two of them sat there in silence, yet felt so close to each other."
     },
     {
       "id": "hsk6_l2_10",
@@ -189,8 +189,8 @@
   ],
   "key_sentences": [
     {
-      "chinese": "她原来以为浪漫是惊天动地的，但原来爱倒是藏在那些细小的关心里。",
-      "pinyin": "Tā yuánlái yǐwéi làngmàn shì jīngtiāndòngdì de, dàn yuánlái ài dào shì cáng zài nàxiē xì xiǎo de guānxīn lǐ.",
+      "chinese": "她原来以为浪漫是惊天动地的，但原来爱是藏在那些细小的关心里。",
+      "pinyin": "Tā yuánlái yǐwéi làngmàn shì jīngtiāndòngdì de, dàn yuánlái ài shì cáng zài nàxiē xì xiǎo de guānxīn lǐ.",
       "english": "She originally thought romance was earth-shattering, but as it turns out, love is hidden in those small acts of care."
     },
     {
@@ -254,7 +254,7 @@
           "word_hints": { "办法": "bàn fǎ" }
         },
         {
-          "question": "在感情中，我们既需要互相包容，也需要 ____ 自己的判断。",
+          "question": "一段感情，既需要互相包容，也需要 ____ 自己的判断选择对的人。",
           "type": "multiple_choice",
           "correct": "靠",
           "options": ["用", "靠", "跟", "被"],
@@ -329,7 +329,7 @@
           "word_hints": { "欣赏": "xīn shǎng" }
         },
         {
-          "question": "他看起来很严肃，____ 私下里特别幽默，总能让她心情变好。",
+          "question": "他看起来很严肃，私下里 ____ 特别幽默，总能让她心情变好。",
           "type": "multiple_choice",
           "correct": "倒是",
           "options": ["倒是", "因此", "虽然", "既然"],
@@ -380,7 +380,7 @@
           "word_hints": {}
         },
         {
-          "question": "他们 ____ 养成了每天互相安慰的习惯，感情越来越深。",
+          "question": "他们 ____ 地养成了每天互相安慰的习惯，感情越来越深。",
           "type": "multiple_choice",
           "correct": "不知不觉",
           "options": ["偶尔", "不知不觉", "竟然", "原来"],
@@ -498,8 +498,8 @@
         },
         {
           "speaker": "A",
-          "chinese": "所以说，爱的语言，有时候是沉默，有时候才是最自然的表达。",
-          "pinyin": "Suǒyǐ shuō, ài de yǔyán, yǒu shíhou shì chénmò, yǒu shíhou cái shì zuì zìrán de biǎodá.",
+          "chinese": "所以说，爱的语言是沉默，沉默有时候才是最自然的表达。",
+          "pinyin": "Suǒyǐ shuō, ài de yǔyán shì chénmò, chénmò yǒu shíhou cái shì zuì zìrán de biǎodá.",
           "english": "So, the language of love is sometimes silence — and silence is sometimes the most natural expression of all."
         }
       ]
@@ -515,7 +515,7 @@
       "lines": [
         {
           "speaker": "B",
-          "chinese": "我觉得浪漫就是那种大场面——玫瑰花、烛光晚餐、在人群中的惊喜表白。",
+          "chinese": "我觉得浪漫就是那种大场面 —— 玫瑰花、烛光晚餐、在人群中的惊喜表白。",
           "pinyin": "Wǒ juéde làngmàn jiù shì nà zhǒng dà chǎngmiàn — méiguihuā, zhúguāng wǎncān, zài rénqún zhōng de jīngxǐ biǎobái.",
           "english": "I think romance is about the big moments — roses, candlelit dinners, a surprise declaration in a crowd."
         },
@@ -527,8 +527,8 @@
         },
         {
           "speaker": "B",
-          "chinese": "比如什么？",
-          "pinyin": "Bǐrú shénme?",
+          "chinese": "比如呢？",
+          "pinyin": "Bǐrú 呢?",
           "english": "Like what?"
         },
         {
@@ -539,13 +539,13 @@
         },
         {
           "speaker": "B",
-          "chinese": "哈，这个例子倒是很接地气。不过我觉得两者都重要——平时真诚体贴，偶尔也要浪漫一下。",
+          "chinese": "哈，这个例子倒是很接地气。不过我觉得两者都重要 —— 平时真诚体贴，偶尔也要浪漫一下。",
           "pinyin": "Hā, zhège lìzi dào shì hěn jiē dì qì. Búguò wǒ juéde liǎng zhě dōu zhòngyào — píngshí zhēnchéng tǐtiē, ǒu ěr yě yào làngmàn yīxià.",
           "english": "Ha, that example is actually very down-to-earth. But I think both matter — sincere and thoughtful day-to-day, with a romantic gesture now and then."
         },
         {
           "speaker": "A",
-          "chinese": "说得也对！浪漫和真诚，倒是不矛盾——只要是用心的，都算是爱的语言。",
+          "chinese": "说得也对！浪漫和真诚，倒是不矛盾 —— 只要是用心的，都算是爱的语言。",
           "pinyin": "Shuō de yě duì! Làngmàn hé zhēnchéng, dào shì bù máodùn — zhǐyào shì yòng xīn de, dōu suàn shì ài de yǔyán.",
           "english": "That's fair! Romance and sincerity are actually not contradictory — as long as it comes from the heart, it all counts as the language of love."
         }

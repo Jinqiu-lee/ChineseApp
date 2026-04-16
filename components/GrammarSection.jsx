@@ -17,7 +17,7 @@ export default function GrammarSection({ grammarPoints }) {
 
       {grammarPoints.map((point, index) => (
         <GrammarPointCard
-          key={point.number}
+          key={point.id ?? point.number ?? index}
           point={point}
           isExpanded={expandedPoints.includes(index)}
           onToggle={() => togglePoint(index)}
@@ -36,7 +36,9 @@ function GrammarPointCard({ point, isExpanded, onToggle }) {
         activeOpacity={0.7}
       >
         <Text style={styles.cardHeaderText}>
-          {point.number}. {point.title}
+          {point.pattern
+            ? `${point.pattern}  —  ${point.meaning}`
+            : `${point.number}. ${point.title}`}
         </Text>
         <Text style={styles.expandIcon}>{isExpanded ? '▼' : '▶'}</Text>
       </TouchableOpacity>
@@ -50,9 +52,15 @@ function GrammarPointCard({ point, isExpanded, onToggle }) {
           <Text style={styles.sectionLabel}>Examples:</Text>
           {point.examples.map((example, idx) => (
             <View key={idx} style={styles.exampleItem}>
-              <Text style={styles.exampleChinese}>{example.chinese}</Text>
-              <Text style={styles.examplePinyin}>{example.pinyin}</Text>
-              <Text style={styles.exampleEnglish}>"{example.english}"</Text>
+              {typeof example === 'string' ? (
+                <Text style={styles.exampleChinese}>{example}</Text>
+              ) : (
+                <>
+                  <Text style={styles.exampleChinese}>{example.chinese}</Text>
+                  <Text style={styles.examplePinyin}>{example.pinyin}</Text>
+                  <Text style={styles.exampleEnglish}>"{example.english}"</Text>
+                </>
+              )}
             </View>
           ))}
         </View>

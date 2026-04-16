@@ -35,6 +35,9 @@ const COMPOUND_PHONEME_OVERRIDES = {
   '归还': [['归', 'gui1'], ['还', 'huan2']],
   '偿还': [['偿', 'chang2'], ['还', 'huan2']],
   '还款': [['还', 'huan2'], ['款', 'kuan3']],
+  '还原': [['还', 'huan2'], ['原', 'yuan2']],
+  '还清': [['还', 'huan2'], ['清', 'qing1']],
+  '还债': [['还', 'huan2'], ['债', 'zhai4']],
   // 背 — polyphonic: bēi (carry on back) vs bèi (background / memorize / back of body)
   // bèi4 compounds:
   '背景': [['背', 'bei4'], ['景', 'jing3']],
@@ -52,6 +55,14 @@ const COMPOUND_PHONEME_OVERRIDES = {
   '加缪': [['加', 'jia1'], ['缪', 'miu4']],
   // 大夫 — colloquial word for doctor: 大 is dài (dai4), not dà (da4)
   '大夫': [['大', 'dai4'], ['夫', 'fu0']],
+  // 体重 — always zhòng4 (body weight); prevents word-boundary false trigger
+  // (e.g. "体重来判断" — 重 followed by 来 would wrongly fire chóng rule)
+  '体重': [['体', 'ti3'], ['重', 'zhong4']],
+  // Other 重=zhòng4 compounds that could appear before a chóng-trigger character
+  '严重': [['严', 'yan2'], ['重', 'zhong4']],
+  '尊重': [['尊', 'zun1'], ['重', 'zhong4']],
+  '沉重': [['沉', 'chen2'], ['重', 'zhong4']],
+  '繁重': [['繁', 'fan2'], ['重', 'zhong4']],
   // 量 — polyphonic: liáng (liang2) as verb "to measure", liàng (liang4) as noun "quantity/amount"
   // Verb compounds (liang2):
   '量体温': [['量', 'liang2'], ['体', 'ti3'], ['温', 'wen1']],
@@ -87,7 +98,12 @@ const POLYPHONIC_RULES = [
     char: '还',
     resolve: (chars, i) => {
       const next = chars[i + 1] || '';
-      return '是有好可要会需值得行'.includes(next) ? 'hai2' : 'huan2';
+      // huan2 only when followed by personal pronouns (还他/她/你/我 = return to sb)
+      // Specific huán compounds (还书/还钱/还款/还原/还清/还债 etc.)
+      // are handled in COMPOUND_PHONEME_OVERRIDES above.
+      if ('他她你我'.includes(next)) return 'huan2';
+      // Everything else → hái (still/also/even) — the vastly more common reading
+      return 'hai2';
     },
   },
   {
@@ -111,7 +127,12 @@ const POLYPHONIC_RULES = [
     char: '重',
     resolve: (chars, i) => {
       const next = chars[i + 1] || '';
-      return '新复来做写试'.includes(next) ? 'chong2' : 'zhong4';
+      const prev = chars[i - 1] || '';
+      // When 重 follows these chars it's always zhòng4 regardless of what comes next
+      if ('体严尊郑轻繁沉'.includes(prev)) return 'zhong4';
+      // chóng before these action verbs (重新/重来/重复/重做/重写/重试)
+      if ('新复来做写试'.includes(next)) return 'chong2';
+      return 'zhong4';
     },
   },
 ];
@@ -174,6 +195,63 @@ function buildSSML(text) {
 const audioCache = new Map();
 
 const TMP_FILE = FileSystem.cacheDirectory + 'tts_temp.mp3';
+
+// ── Active-sound tracker ─────────────────────────────────────────────────────
+// Keeps a reference to the currently playing sound so we can:
+//  • stop it before starting a new one
+//  • toggle (stop) it when the same text is clicked again
+//  • await full playback completion for sequential dialogue auto-play
+let _activeSound   = null;
+let _activeText    = null;
+let _resolveActive = null; // resolves the Promise returned by _playFromUri
+
+async function _stopActive() {
+  if (_activeSound) {
+    try { await _activeSound.stopAsync();   } catch (_) {}
+    try { await _activeSound.unloadAsync(); } catch (_) {}
+    _activeSound = null;
+    _activeText  = null;
+  }
+  // Resolve any awaiting caller so it doesn't hang
+  if (_resolveActive) { _resolveActive(false); _resolveActive = null; }
+}
+
+// Shared playback helper used by all speak paths.
+// Returns a Promise that resolves to:
+//   false  — toggled off (same text stopped) or stopped externally
+//   true   — playback finished naturally
+async function _playFromUri(uri, text) {
+  // Toggle: clicking the same audio again stops it
+  if (_activeText === text && _activeSound) {
+    await _stopActive();
+    return false;
+  }
+  await _stopActive();
+
+  await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
+  const { sound } = await Audio.Sound.createAsync({ uri });
+  _activeSound = sound;
+  _activeText  = text;
+  await sound.playAsync();
+
+  return new Promise((resolve) => {
+    _resolveActive = resolve;
+    sound.setOnPlaybackStatusUpdate((s) => {
+      if (s.didJustFinish) {
+        sound.unloadAsync();
+        if (_activeSound === sound) { _activeSound = null; _activeText = null; }
+        if (_resolveActive === resolve) { _resolveActive = null; }
+        resolve(true);
+      }
+    });
+  });
+}
+
+// Stop whatever is currently playing. Resolves the awaiting Promise so any
+// sequential playback loop is unblocked and can exit cleanly.
+export async function stopAudio() {
+  await _stopActive();
+}
 
 // Voice configs by gender
 // Male: higher pitch + slower rate → soft, young, non-aggressive
@@ -251,11 +329,31 @@ function getPinyinAudioKey(syllable) {
 }
 
 // Play a bundled local MP3 asset (from the require() map).
-async function playLocalAudio(assetModule) {
+// Returns a Promise that resolves when playback finishes or is stopped.
+async function playLocalAudio(assetModule, text = null) {
+  if (text && _activeText === text && _activeSound) {
+    await _stopActive();
+    return false;
+  }
+  await _stopActive();
+
   await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
   const { sound } = await Audio.Sound.createAsync(assetModule);
+  _activeSound = sound;
+  _activeText  = text;
   await sound.playAsync();
-  sound.setOnPlaybackStatusUpdate((s) => { if (s.didJustFinish) sound.unloadAsync(); });
+
+  return new Promise((resolve) => {
+    _resolveActive = resolve;
+    sound.setOnPlaybackStatusUpdate((s) => {
+      if (s.didJustFinish) {
+        sound.unloadAsync();
+        if (_activeSound === sound) { _activeSound = null; _activeText = null; }
+        if (_resolveActive === resolve) { _resolveActive = null; }
+        resolve(true);
+      }
+    });
+  });
 }
 
 // Speak a pinyin syllable. Uses your recorded MP3 if available, falls back to TTS.
@@ -266,7 +364,7 @@ export async function speakPinyin(syllable, gender = 'female') {
   const localAsset = PINYIN_AUDIO[key];
   if (localAsset) {
     try {
-      await playLocalAudio(localAsset);
+      await playLocalAudio(localAsset, `py:${syllable}`);
       return;
     } catch (err) {
       console.warn('speakPinyin: local file failed, falling back to TTS:', err);
@@ -314,10 +412,7 @@ export async function speakPinyin(syllable, gender = 'female') {
       audioCache.set(cacheKey, base64Audio);
     }
     await FileSystem.writeAsStringAsync(TMP_FILE, base64Audio, { encoding: 'base64' });
-    await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
-    const { sound } = await Audio.Sound.createAsync({ uri: TMP_FILE });
-    await sound.playAsync();
-    sound.setOnPlaybackStatusUpdate((s) => { if (s.didJustFinish) sound.unloadAsync(); });
+    await _playFromUri(TMP_FILE, `py:${syllable}`);
   } catch (err) {
     console.error('speakPinyin error:', err);
   }
@@ -355,8 +450,18 @@ const AVATAR_VOICE_CONFIG = {
   sartre:   { ssmlGender: 'MALE',   pitch: -3,  speakingRate: 0.80 },
   // Su Shi — mid-age, warm, grounded; cmn-CN-Wavenet-B
   sushi:    { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-B', pitch: -5,  speakingRate: 0.90 },
-  // Yang Jiang — elder, slow, serene, wise; cmn-CN-Wavenet-E
-  yangjiang:{ ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-E', pitch: -15, speakingRate: 0.80 },
+  // Yang Jiang — elderly grandmother; deeper mature female, maximum low pitch, very slow
+  yangjiang:{ ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch: -15, speakingRate: 0.75 },
+
+  // ── Grandparent voices (shared across all dialogues with 奶奶/外婆 or 爷爷/外公) ──
+  // Grandma (奶奶/外婆): same profile as Yang Jiang — warm, slow, elderly female
+  grandma:  { ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch: -15, speakingRate: 0.75 },
+  // Grandpa (爷爷/外公): deep elderly male — low pitch, very slow, measured
+  grandpa:  { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-B', pitch: -10, speakingRate: 0.74 },
+  // Auntie / Mum (阿姨/妈妈): middle-aged woman 40–50 — warm mature female, moderately low, slightly slow
+  auntie:   { ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch:  -6, speakingRate: 0.83 },
+  // Uncle / Dad (叔叔/爸爸): middle-aged man 40–50 — steady mature male, moderately low, slightly slow
+  uncle:    { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-B', pitch:  -5, speakingRate: 0.83 },
 };
 
 // Speak text using the avatar's personalised voice profile.
@@ -410,11 +515,7 @@ export async function speakAsAvatar(text, avatarId = 'eileen') {
 
         if (base64Audio) {
           await FileSystem.writeAsStringAsync(TMP_FILE, base64Audio, { encoding: 'base64' });
-          await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
-          const { sound } = await Audio.Sound.createAsync({ uri: TMP_FILE });
-          await sound.playAsync();
-          sound.setOnPlaybackStatusUpdate((s) => { if (s.didJustFinish) sound.unloadAsync(); });
-          return;
+          return await _playFromUri(TMP_FILE, text);
         }
       } catch (err) {
         console.warn('speakAsAvatar ElevenLabs error, falling through to Google TTS:', err);
@@ -467,10 +568,7 @@ export async function speakAsAvatar(text, avatarId = 'eileen') {
     }
 
     await FileSystem.writeAsStringAsync(TMP_FILE, base64Audio, { encoding: 'base64' });
-    await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
-    const { sound } = await Audio.Sound.createAsync({ uri: TMP_FILE });
-    await sound.playAsync();
-    sound.setOnPlaybackStatusUpdate((s) => { if (s.didJustFinish) sound.unloadAsync(); });
+    return await _playFromUri(TMP_FILE, text);
   } catch (err) {
     console.warn('speakAsAvatar error, falling back to speakChinese:', err);
     return speakChinese(text);
@@ -481,8 +579,7 @@ export async function speakChinese(text, gender = 'female') {
   // ── 0. Check for user-uploaded replacement audio (exact match) ───────────
   if (REPLACE_AUDIO[text]) {
     try {
-      await playLocalAudio(REPLACE_AUDIO[text]);
-      return;
+      return await playLocalAudio(REPLACE_AUDIO[text], text);
     } catch (err) {
       console.warn('speakChinese: replacement file failed, falling back to TTS:', err);
     }
@@ -529,18 +626,8 @@ export async function speakChinese(text, gender = 'female') {
       audioCache.set(cacheKey, base64Audio);
     }
 
-    // Write base64 MP3 to a temp file then play it
-    await FileSystem.writeAsStringAsync(TMP_FILE, base64Audio, {
-      encoding: 'base64',
-    });
-
-    await Audio.setAudioModeAsync({ playsInSilentModeIOS: true });
-    const { sound } = await Audio.Sound.createAsync({ uri: TMP_FILE });
-    await sound.playAsync();
-    // Unload after playback to free memory
-    sound.setOnPlaybackStatusUpdate((status) => {
-      if (status.didJustFinish) sound.unloadAsync();
-    });
+    await FileSystem.writeAsStringAsync(TMP_FILE, base64Audio, { encoding: 'base64' });
+    return await _playFromUri(TMP_FILE, text);
   } catch (err) {
     console.error('speakChinese error:', err);
   }

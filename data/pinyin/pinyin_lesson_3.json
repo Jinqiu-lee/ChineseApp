@@ -663,5 +663,19 @@
       "correct": "4",
       "choices": ["1", "2", "3", "4"]
     }
+  ],
+  "stage4_pool": [
+    { "type": "listen_record", "syllable": "zhè", "audio_key": "zhe4", "chinese": "这", "meaning": "this" },
+    { "type": "listen_record", "syllable": "chī", "audio_key": "chi1", "chinese": "吃", "meaning": "eat" },
+    { "type": "listen_record", "syllable": "shū", "audio_key": "shu1", "chinese": "书", "meaning": "book" },
+    { "type": "listen_record", "syllable": "rè", "audio_key": "re4", "chinese": "热", "meaning": "hot" },
+    { "type": "listen_record", "syllable": "jiě", "audio_key": "jie3", "chinese": "姐", "meaning": "older sister" },
+    { "type": "listen_record", "syllable": "yuè", "audio_key": "yue4", "chinese": "月", "meaning": "moon/month" },
+    { "type": "listen_record", "syllable": "ér", "audio_key": "er2", "chinese": "儿", "meaning": "child" },
+    { "type": "listen_record", "syllable": "xiě", "audio_key": "xie3", "chinese": "写", "meaning": "write" },
+    { "type": "listen_record", "syllable": "zhōng", "audio_key": "zhong1", "chinese": "中", "meaning": "middle" },
+    { "type": "listen_record", "syllable": "chūzūchē", "audio_key": "chu1_zu1_che1", "chinese": "出租车", "meaning": "taxi" },
+    { "type": "listen_record", "syllable": "rì", "audio_key": "ri4", "chinese": "日", "meaning": "sun/day" },
+    { "type": "listen_record", "syllable": "rén", "audio_key": "ren2", "chinese": "人", "meaning": "person" }
   ]
 }

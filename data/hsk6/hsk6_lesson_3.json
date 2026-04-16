@@ -21,7 +21,7 @@
       "pinyin": "rén shēng",
       "english": "Life; one's lifetime",
       "part_of_speech": "noun",
-      "example": "人生的道路有很多条，你选择哪一条取决于自己。",
+      "example": "人生的道路有很多条，选择哪一条取决于你自己。",
       "translation": "There are many paths in life; which one you choose depends on yourself."
     },
     {
@@ -75,8 +75,8 @@
       "pinyin": "lǐ xiǎng",
       "english": "Ideal; dream; aspiration",
       "part_of_speech": "noun/adjective",
-      "example": "他从小就有一个理想，希望有一天能成为一名作家。",
-      "translation": "He has had a dream since childhood — to one day become a writer."
+      "example": "他从小就有这个理想，希望有一天能成为一名作家。",
+      "translation": "He has had this dream since childhood — to one day become a writer."
     },
     {
       "id": "hsk6_l3_09",
@@ -228,7 +228,7 @@
       ],
       "exercises": [
         {
-          "question": "_____ 你已经下定了目标，就应该全力以赴，不要半途放弃。",
+          "question": "_____ 你已经设定了目标，就应该全力以赴，不要半途放弃。",
           "type": "multiple_choice",
           "correct": "既然",
           "options": ["既然", "虽然", "尽管", "要是"],
@@ -313,7 +313,7 @@
           }
         },
         {
-          "question": "_____ 后悔莫及，也不愿意在做决定前再多想一想，真是太冲动了。",
+          "question": "_____ 后悔莫及，也不愿意在做决定前多想一想，真是太冲动了。",
           "type": "multiple_choice",
           "correct": "宁可",
           "options": ["宁可", "既然", "尽管", "虽然"],
@@ -325,12 +325,12 @@
         {
           "question": "Which sentence uses 宁可…也不 correctly?",
           "type": "multiple_choice",
-          "correct": "我宁可努力坚持，也不轻易放弃目标。",
+          "correct": "我宁可咬牙坚持，也不轻易放弃目标。",
           "options": [
-            "我宁可努力坚持，也不轻易放弃目标。",
-            "我宁可努力坚持，所以不轻易放弃目标。",
-            "我宁可努力坚持，就不轻易放弃目标。",
-            "我宁可努力坚持，但不轻易放弃目标。"
+            "我宁可咬牙坚持，也不轻易放弃目标。",
+            "我宁可咬牙坚持，所以不轻易放弃目标。",
+            "我宁可咬牙坚持，就不轻易放弃目标。",
+            "我宁可咬牙坚持，但不轻易放弃目标。"
           ],
           "option_pinyin": ["", "", "", ""],
           "word_hints": {}
@@ -386,7 +386,7 @@
           }
         },
         {
-          "question": "尽管她已经后悔了，_____ 没有勇气重新做出选择。",
+          "question": "尽管她已经后悔了，但 _____ 没有勇气重新做出选择。",
           "type": "multiple_choice",
           "correct": "还是",
           "options": ["还是", "就是", "既然", "才是"],
@@ -422,7 +422,7 @@
           }
         },
         {
-          "question": "尽管他为未来的目标发愁了很久，_____ 没有选择放弃。",
+          "question": "尽管他为未来的目标发愁了很久，但 _____ 没有选择放弃。",
           "type": "multiple_choice",
           "correct": "仍然",
           "options": ["仍然", "竟然", "偶尔", "忽然"],
@@ -505,7 +505,7 @@
       "word_hints": {}
     },
     {
-      "question": "尽管她非常发愁，_____ 没有放弃坚持自己的目标。",
+      "question": "尽管非常发愁，她 _____ 没有放弃坚持目标。",
       "type": "multiple_choice",
       "correct": "还是",
       "options": ["还是", "既然", "宁可", "所以"],

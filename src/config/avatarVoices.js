@@ -7,7 +7,7 @@ const AVATAR_VOICES = {
   libai:     { engine: 'fish', referenceId: 'db7e3bf0eddf45488dfee820b3a4f3ce' },  // 李白
   eileen:    { engine: 'fish', referenceId: '00e50f51f9154834aba8397fa04495e2' },  // 张爱玲
   sushi:     { engine: 'fish', referenceId: '55d76b087bd84a05b03071dfc5998985' },  // 苏轼
-  yangjiang: { engine: 'fish', referenceId: '7f2971da451e40288ebbd262c2e0c1d8' },  // 杨绛
+  yangjiang: { engine: 'google', voiceId: 'cmn-CN-Wavenet-A', pitch: -20, rate: 0.75 },  // elderly, wise grandmother
 
   // === FISH AUDIO — Foreign avatars (staying on Fish Audio) ===
   jane:      { engine: 'fish', referenceId: '4f92780a8d704799804914e3d2808f53' },  // 简·奥斯汀

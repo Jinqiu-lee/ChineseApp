@@ -3,7 +3,8 @@ import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { speakPinyin } from '../utils/tts';
 import PinyinLessonExercise from '../components/exercises/PinyinLessonExercise';
-import { buildStage1, buildStage2, buildStage3 } from '../utils/pinyinLessonGenerator';
+import PinyinRecordExercise from '../components/exercises/PinyinRecordExercise';
+import { buildStage1, buildStage2, buildStage3, buildStage4 } from '../utils/pinyinLessonGenerator';
 import ScreenBackground from '../components/ScreenBackground';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
@@ -11,6 +12,7 @@ const STAGE_META = [
   { title: 'Stage 1 · Listen & Identify', icon: '🔊', color: '#FF9F43' },
   { title: 'Stage 2 · Read & Repeat',     icon: '🗣️',  color: '#1DD1A1' },
   { title: 'Stage 3 · Visual Spelling',   icon: '✏️',  color: WARM_BROWN },
+  { title: 'Stage 4 · Listen & Speak',    icon: '🎙️',  color: '#03396c' },
 ];
 
 export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, onBack }) {
@@ -18,7 +20,8 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
     if (!lessonData) return [];
     if (stageIndex === 0) return buildStage1(lessonData);
     if (stageIndex === 1) return buildStage2(lessonData);
-    return buildStage3(lessonData);
+    if (stageIndex === 2) return buildStage3(lessonData);
+    return buildStage4(lessonData);
   }, [lessonData, stageIndex]);
 
   const [current, setCurrent] = useState(0);
@@ -93,8 +96,9 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
     );
   }
 
-  const progress = exercises.length > 0 ? (current / exercises.length) * 100 : 0;
-  const isSpeakStage = stageIndex === 1;
+  const progress      = exercises.length > 0 ? (current / exercises.length) * 100 : 0;
+  const isSpeakStage  = stageIndex === 1;
+  const isRecordStage = stageIndex === 3;
 
   return (
     <ScreenBackground levelId="pinyin">
@@ -122,6 +126,22 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
           <View style={styles.speakWrapper}>
             {renderSpeakCard()}
           </View>
+        ) : isRecordStage ? (
+          <ScrollView
+            style={{ flex: 1 }}
+            contentContainerStyle={{ padding: 16, flexGrow: 1 }}
+            keyboardShouldPersistTaps="handled"
+            showsVerticalScrollIndicator={false}
+          >
+            {exercise && (
+              <PinyinRecordExercise
+                key={current}
+                exercise={exercise}
+                onCorrect={() => advance(true)}
+                onWrong={() => advance(false)}
+              />
+            )}
+          </ScrollView>
         ) : (
           <ScrollView
             style={{ flex: 1 }}

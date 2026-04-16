@@ -129,7 +129,7 @@
       "pinyin": "fǎn ér",
       "english": "On the contrary; instead; unexpectedly the opposite",
       "part_of_speech": "adverb",
-      "example": "他以为多睡会解决疲劳，反而让他整天昏昏沉沉。",
+      "example": "他以为多睡会解决疲劳，但反而让他整天昏昏沉沉。",
       "translation": "He thought sleeping more would solve his fatigue, but on the contrary it left him groggy all day."
     },
     {
@@ -189,9 +189,9 @@
       "english": "Natural light can gently stimulate the brain and help a person wake up more comfortably."
     },
     {
-      "chinese": "睡眠质量比睡眠时长更重要，反而追求时间却忽视了质量。",
-      "pinyin": "Shuì mián zhì liàng bǐ shuì mián shí cháng gèng zhòng yào, fǎn ér zhuī qiú shí jiān què hū shì le zhì liàng.",
-      "english": "Sleep quality is more important than sleep duration; chasing more hours while ignoring quality is counterproductive."
+      "chinese": "睡眠质量比睡眠时长更重要，很多人追求时间却忽视了质量。",
+      "pinyin": "Shuì mián zhì liàng bǐ shuì mián shí cháng gèng zhòng yào, hěn duō rén zhuī qiú shí jiān què hū shì le zhì liàng.",
+      "english": "Sleep quality is more important than sleep duration; Many people are chasing more hours while ignoring quality."
     },
     {
       "chinese": "专家建议用光照闹钟代替传统声音闹钟，以减少早晨压力。",
@@ -204,8 +204,8 @@
       "english": "When feeling fatigued, one should rest promptly rather than relying on coffee or alarms to force oneself to stay awake."
     },
     {
-      "chinese": "改变睡眠习惯需要逐步进行，一下子改变反而可能适得其反。",
-      "pinyin": "Gǎi biàn shuì mián xí guàn xū yào zhú bù jìn xíng, yī xià zi gǎi biàn fǎn ér kě néng shì dé qí fǎn.",
+      "chinese": "改变睡眠习惯需要逐步进行，一下子改变反而会适得其反。",
+      "pinyin": "Gǎi biàn shuì mián xí guàn xū yào zhú bù jìn xíng, yī xià zi gǎi biàn fǎn ér huì shì dé qí fǎn.",
       "english": "Changing sleep habits needs to be done step by step; changing everything all at once may on the contrary be counterproductive."
     }
   ],
@@ -216,8 +216,8 @@
       "explanation": "反而 is used when the actual result is the opposite of what was expected or desired. It highlights a surprising reversal. Structure: [Expected situation / condition] + 反而 + [Opposite/unexpected actual result]. Often combined with 却 for added emphasis. Compare with 倒是 (mild contrast) — 反而 implies a more dramatic, often negative reversal. Example: 他多睡了两小时，反而感觉更累了。(He slept two more hours; on the contrary, he felt even more tired.)",
       "examples": [
         {
-          "chinese": "他以为早点睡会精神好，反而睡得更差。",
-          "pinyin": "Tā yǐ wéi zǎo diǎn shuì huì jīng shén hǎo, fǎn ér shuì de gèng chà.",
+          "chinese": "他以为早点睡会精神好，但反而睡得更差。",
+          "pinyin": "Tā yǐ wéi zǎo diǎn shuì huì jīng shén hǎo, dàn fǎn ér shuì de gèng chà.",
           "english": "He thought sleeping earlier would make him feel better; on the contrary, he slept even worse."
         },
         {
@@ -262,7 +262,7 @@
           "word_hints": {}
         },
         {
-          "question": "减少用闹钟本来是为了减压，结果他 _____ 更焦虑了，担心睡过头。",
+          "question": "减少用闹钟本来是为了减压，结果他 _____ 更焦虑了。",
           "type": "multiple_choice",
           "correct": "反而",
           "options": ["反而", "从而", "尽管", "虽然"],
@@ -374,7 +374,7 @@
           "word_hints": {"提前": "tí qián"}
         },
         {
-          "question": "经过几个月不用闹钟的训练，她的睡眠质量_____ 有所提升。",
+          "question": "经过几个月不用闹钟的训练，她的睡眠质量 _____ 提升。",
           "type": "multiple_choice",
           "correct": "逐渐",
           "options": ["逐渐", "逐步", "及时", "突然"],
@@ -520,7 +520,7 @@
         },
         {
           "speaker": "A",
-          "chinese": "所以与其用刺激性的闹钟，不如试试光照闹钟——它用逐渐变亮的光线来代替声音。",
+          "chinese": "所以与其用刺激性的闹钟，不如试试光照闹钟 —— 它用逐渐变亮的光线来代替声音。",
           "pinyin": "Suǒ yǐ yǔ qí yòng cì jī xìng de nào zhōng, bù rú shì shi guāng zhào nào zhōng — tā yòng zhú jiàn biàn liàng de guāng xiàn lái dài tì shēng yīn.",
           "english": "So rather than using a jarring alarm clock, why not try a light-based alarm — it uses gradually brightening light to replace sound."
         },

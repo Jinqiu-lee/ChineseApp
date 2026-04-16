@@ -39,8 +39,8 @@
       "pinyin": "xīn shǎng",
       "english": "To appreciate; to enjoy",
       "part_of_speech": "verb",
-      "example": "这幅画值得仔细欣赏，每一处细节都充满了艺术感。",
-      "translation": "This painting is worth appreciating carefully; every detail is full of artistic feeling."
+      "example": "这幅画值得慢慢欣赏，每一处细节都充满了艺术感。",
+      "translation": "This painting is worth appreciating slowly; every detail is full of artistic feeling."
     },
     {
       "id": "hsk5_l11_05",
@@ -159,9 +159,9 @@
   ],
   "key_sentences": [
     {
-      "chinese": "这幅画值得仔细欣赏，每一处细节都充满了艺术感。",
-      "pinyin": "Zhè fú huà zhí de zǐ xì xīn shǎng, měi yī chù xì jié dōu chōng mǎn le yì shù gǎn.",
-      "english": "This painting is worth appreciating carefully; every detail is full of artistic feeling."
+      "chinese": "这幅画值得慢慢欣赏，每一处细节都充满了艺术感。",
+      "pinyin": "Zhè fú huà zhí de màn man xīn shǎng, měi yī chù xì jié dōu chōng mǎn le yì shù gǎn.",
+      "english": "This painting is worth appreciating slowly; every detail is full of artistic feeling."
     },
     {
       "chinese": "他不但擅长传统绘画，而且在雕塑方面也很有才华。",
@@ -384,7 +384,7 @@
           "word_hints": {}
         },
         {
-          "question": "这个展览不但吸引了本地观众，_____ 吸引了很多外国游客。",
+          "question": "这个展览不但吸引了本地观众，_____ 还吸引了很多外国游客。",
           "type": "multiple_choice",
           "correct": "而且",
           "options": [
@@ -500,7 +500,7 @@
           "word_hints": {}
         },
         {
-          "question": "她 _____ 学习民间舞蹈，深深爱上了中国传统文化。",
+          "question": "_____ 学习民间舞蹈，她深深爱上了中国传统文化。",
           "type": "multiple_choice",
           "correct": "通过",
           "options": [
@@ -679,7 +679,7 @@
       }
     },
     {
-      "question": "Fill in the blank: 这幅画 _____ 仔细欣赏，每一个细节都很精彩。",
+      "question": "Fill in the blank: 这幅画 _____ 慢慢欣赏，每一个细节都很精彩。",
       "type": "multiple_choice",
       "correct": "值得",
       "options": [
@@ -910,7 +910,7 @@
       "title_chinese": "谈论传统表演",
       "speakers": {
         "A": {
-          "name": "鲁迅",
+          "name": "加缪",
           "role": "外国留学生",
           "gender": "male"
         },
@@ -924,8 +924,8 @@
         {
           "speaker": "A",
           "chinese": "杨绛，昨晚的京剧表演太精彩了！我之前从来没看过这种艺术形式。",
-          "pinyin": "Yán Gē Líng, zuó wǎn de Jīng jù biǎo yǎn tài jīng cǎi le! Wǒ zhī qián cóng lái méi kàn guò zhè zhǒng yì shù xíng shì.",
-          "english": "Yan Geling, last night's Peking Opera performance was amazing! I had never seen this art form before."
+          "pinyin": "Yáng Jiàng, zuó wǎn de Jīng jù biǎo yǎn tài jīng cǎi le! Wǒ zhī qián cóng lái méi kàn guò zhè zhǒng yì shù xíng shì.",
+          "english": "Yang Jiang, last night's Peking Opera performance was amazing! I had never seen this art form before."
         },
         {
           "speaker": "B",
@@ -953,8 +953,8 @@
         },
         {
           "speaker": "B",
-          "chinese": "我很高兴你喜欢！下次有机会，我带你去博物馆看看京剧的历史文物。",
-          "pinyin": "Wǒ hěn gāo xìng nǐ xǐ huan! Xià cì yǒu jī huì, wǒ dài nǐ qù bó wù guǎn kàn kan Jīng jù de lì shǐ wén wù.",
+          "chinese": "我很高兴你喜欢！下次有机会，我带你去博物馆看看关于京剧的历史文物。",
+          "pinyin": "Wǒ hěn gāo xìng nǐ xǐ huan! Xià cì yǒu jī huì, wǒ dài nǐ qù bó wù guǎn kàn kan guān yú Jīng jù de lì shǐ wén wù.",
           "english": "I'm so glad you enjoy it! Next time there's a chance, I'll take you to the museum to see Peking Opera's historical artefacts."
         },
         {

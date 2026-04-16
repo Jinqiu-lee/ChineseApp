@@ -800,5 +800,19 @@
       "correct": "3",
       "choices": ["1", "2", "3", "4"]
     }
+  ],
+  "stage4_pool": [
+    { "type": "listen_record", "syllable": "nǐhǎo", "audio_key": "ni3_hao3", "chinese": "你好", "meaning": "hello" },
+    { "type": "listen_record", "syllable": "xièxiè", "audio_key": "xie4_xie4", "chinese": "谢谢", "meaning": "thank you" },
+    { "type": "listen_record", "syllable": "zàijiàn", "audio_key": "zai4_jian4", "chinese": "再见", "meaning": "goodbye" },
+    { "type": "listen_record", "syllable": "duìbuqǐ", "audio_key": "dui4_bu4_qi3", "chinese": "对不起", "meaning": "sorry" },
+    { "type": "listen_record", "syllable": "méiguānxi", "audio_key": "mei2_guan1_xi0", "chinese": "没关系", "meaning": "no problem" },
+    { "type": "listen_record", "syllable": "Zhōngguó", "audio_key": "zhong1_guo2", "chinese": "中国", "meaning": "China" },
+    { "type": "listen_record", "syllable": "xuéxí", "audio_key": "xuexi2", "chinese": "学习", "meaning": "study" },
+    { "type": "listen_record", "syllable": "péngyou", "audio_key": "pengyou2", "chinese": "朋友", "meaning": "friend" },
+    { "type": "listen_record", "syllable": "māma", "audio_key": "ma1_ma0", "chinese": "妈妈", "meaning": "mom" },
+    { "type": "listen_record", "syllable": "bàba", "audio_key": "ba4_ba0", "chinese": "爸爸", "meaning": "dad" },
+    { "type": "listen_record", "syllable": "gē", "audio_key": "ge1", "chinese": "歌", "meaning": "song" },
+    { "type": "listen_record", "syllable": "jī", "audio_key": "ji1", "chinese": "鸡", "meaning": "chicken" }
   ]
 }

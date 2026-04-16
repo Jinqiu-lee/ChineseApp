@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
-import { speakAsAvatar, speakChinese } from '../utils/tts';
+import { speakAsAvatar, speakChinese, stopAudio } from '../utils/tts';
 import AvatarCharacter from './AvatarCharacter';
 import { getAvatar } from '../config/avatarConfig';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
@@ -98,6 +98,25 @@ function getDisplayName(info) {
   return info.name;
 }
 
+// Role-based voice routing: maps speaker name/role to a pseudo-avatar ID
+// so family/social role characters share a consistent voice across all dialogues.
+const GRANDMA_KEYWORDS = ['奶奶', '外婆', '姥姥', '祖母'];
+const GRANDPA_KEYWORDS = ['爷爷', '外公', '姥爷', '祖父'];
+
+function getElderAvatarId(info) {
+  if (!info) return null;
+  const name = info.name || '';
+  const role = info.role || '';
+  const text = `${name} ${role}`;
+  if (GRANDMA_KEYWORDS.some(k => text.includes(k))) return 'grandma';
+  if (GRANDPA_KEYWORDS.some(k => text.includes(k))) return 'grandpa';
+  // Middle-aged woman: 妈妈, or any name/role ending with 阿姨
+  if (name === '妈妈' || role === '妈妈' || name.endsWith('阿姨') || role.endsWith('阿姨')) return 'auntie';
+  // Middle-aged man: 爸爸, or any name/role ending with 叔叔
+  if (name === '爸爸' || role === '爸爸' || name.endsWith('叔叔') || role.endsWith('叔叔')) return 'uncle';
+  return null;
+}
+
 // Gender-based palette
 const PALETTE = {
   female: { bubble: 'rgba(253,121,168,0.12)', border: 'rgba(253,121,168,0.3)', pinyin: '#fd79a8', badge: 'rgba(253,121,168,0.2)', emoji: '👩' },
@@ -123,12 +142,65 @@ export default function DialogueSection({ dialogues = [], lessonNumber, levelId 
 
 function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
   const [showPinyin, setShowPinyin] = useState(false);
+  const [playingLine, setPlayingLine] = useState(null); // index of currently playing line
+  const sessionRef = useRef(0); // incremented on each new play session to cancel old ones
+
+  // Stop audio when this card unmounts (section closed, screen navigated away, etc.)
+  React.useEffect(() => {
+    return () => { stopAudio(); };
+  }, []);
 
   const speakerA = dialogue.speakers?.A;
   const speakerB = dialogue.speakers?.B;
   const palA = PALETTE[(speakerA?.gender) || 'female'];
   const palB = PALETTE[(speakerB?.gender) || 'male'];
   const sceneImg = getDialogueImage(dialogue.id, lessonNumber, levelId);
+
+  // Play from `startIndex` through to the end of the dialogue, one line at a time.
+  // If the user clicks the line that's already playing, stop.
+  const handleSpeak = async (startIndex) => {
+    const lines = dialogue.lines;
+
+    // Toggle: clicking the currently-playing line stops everything
+    if (playingLine === startIndex) {
+      sessionRef.current += 1;
+      setPlayingLine(null);
+      await stopAudio();
+      return;
+    }
+
+    // Start a new session (cancels any running auto-play loop)
+    sessionRef.current += 1;
+    const session = sessionRef.current;
+    await stopAudio();
+    setPlayingLine(null);
+
+    for (let i = startIndex; i < lines.length; i++) {
+      if (sessionRef.current !== session) break; // cancelled by another click
+
+      const line = lines[i];
+      const isA  = line.speaker === 'A';
+      const info = isA ? speakerA : speakerB;
+
+      setPlayingLine(i);
+
+      const elderVoiceId = getElderAvatarId(info);
+      const voiceId = elderVoiceId || info?.avatarId || null;
+      const finished = voiceId
+        ? await speakAsAvatar(line.chinese, voiceId)
+        : await speakChinese(line.chinese, info?.gender || 'female');
+
+      // If stopped externally (toggle / new click), exit loop
+      if (!finished || sessionRef.current !== session) break;
+
+      // Short pause between lines (skip after the last one)
+      if (i < lines.length - 1) {
+        await new Promise(r => setTimeout(r, 350));
+      }
+    }
+
+    if (sessionRef.current === session) setPlayingLine(null);
+  };
 
   return (
     <View style={styles.card}>
@@ -204,14 +276,12 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
                     <Text style={styles.bubbleChinese}>{line.chinese}</Text>
                   </View>
                   <TouchableOpacity
-                  onPress={() =>
-                    info?.avatarId
-                      ? speakAsAvatar(line.chinese, info.avatarId)
-                      : speakChinese(line.chinese, info?.gender || 'female')
-                  }
-                  style={styles.speakBtn}
-                >
-                    <Text style={styles.speakBtnText}>🔊</Text>
+                    onPress={() => handleSpeak(i)}
+                    style={styles.speakBtn}
+                  >
+                    <Text style={styles.speakBtnText}>
+                      {playingLine === i ? '⏹' : '🔊'}
+                    </Text>
                   </TouchableOpacity>
                 </View>
                 {showPinyin && (
