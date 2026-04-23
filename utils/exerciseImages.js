@@ -97,7 +97,7 @@ const EXERCISE_IMAGES = {
   'ji_4': require('../assets/exercise_images/几号？.jpeg'),        // 几号？
 
   // ── 叫 ────────────────────────────────────────────────────────────────────
-  'jiao_1': require('../assets/exercise_images/叫jiào.png'),       // 叫
+  'jiao_1': require('../assets/exercise_images/叫.png'),            // 叫
   'jiao_2': require('../assets/exercise_images/你叫什么？.jpeg'),  // 你叫什么？
 
   // ── 今天 ──────────────────────────────────────────────────────────────────
