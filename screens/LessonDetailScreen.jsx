@@ -462,7 +462,7 @@ export default function LessonDetailScreen({
           <View style={[styles.completeBtn, styles.completeBtnDone]}>
             <Text style={styles.completeBtnDoneText}>✓ Lesson Completed</Text>
           </View>
-        ) : (r2Done && lessonQuizPassed) ? (
+        ) : (
           <TouchableOpacity
             style={[styles.completeBtn, { backgroundColor: T.accent }]}
             onPress={() => { stopAudio(); onLessonComplete(lessonId); }}
@@ -470,12 +470,6 @@ export default function LessonDetailScreen({
           >
             <Text style={[styles.completeBtnText, { color: T.accentText }]}>✓ Complete Lesson</Text>
           </TouchableOpacity>
-        ) : (
-          <View style={[styles.completeBtn, styles.completeBtnLocked]}>
-            <Text style={styles.completeBtnLockedText}>
-              🔒 Complete 2 practice rounds + pass the quiz to finish this lesson
-            </Text>
-          </View>
         )}
 
         <View style={{ height: 40 }} />
@@ -668,15 +662,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.18,
   },
   completeBtnDoneText: { fontSize: 16, fontWeight: '900', color: CARD_WHITE, letterSpacing: 0.5 },
-
-  completeBtnLocked: {
-    backgroundColor: CARD_WHITE,
-    borderWidth: 1.5,
-    borderColor: 'rgba(155,104,70,0.25)',
-    shadowOpacity: 0,
-    elevation: 0,
-  },
-  completeBtnLockedText: { fontSize: 13, fontWeight: '600', color: SLATE_TEAL, textAlign: 'center' },
 
   errorContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20 },
   errorText:      { fontSize: 20, fontWeight: '700', color: ERROR, marginBottom: 16 },

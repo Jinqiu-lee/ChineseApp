@@ -266,6 +266,17 @@ export default function App() {
     AsyncStorage.setItem(STORAGE_KEYS.quizPassedLessons, JSON.stringify(quizPassedLessons)).catch(console.warn);
   }, [quizPassedLessons, isLoading]);
 
+  // Auto-complete lesson when 2 practice rounds + quiz are done
+  useEffect(() => {
+    if (!currentLessonId || !currentLessonLevelId) return;
+    const r2 = (stageProgress[`${currentLessonLevelId}_${currentLessonId}_r2`] || []).length >= 5;
+    const quizPassed = (quizPassedLessons[currentLessonLevelId] || []).includes(currentLessonId);
+    const alreadyDone = (lessonProgress[currentLessonLevelId] || []).includes(currentLessonId);
+    if (r2 && quizPassed && !alreadyDone) {
+      handleLessonComplete(currentLessonId);
+    }
+  }, [stageProgress, quizPassedLessons, currentLessonId, currentLessonLevelId]);
+
   // ── Splash while loading ─────────────────────────────────────
   if (isLoading) {
     return (
