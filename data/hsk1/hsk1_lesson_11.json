@@ -469,15 +469,15 @@
         },
         {
           "speaker": "B",
-          "chinese": "是，我明年一月一日去。",
-          "pinyin": "Shì, wǒ míngnián yīyuè yí rì qù.",
-          "english": "Yes, I'm going on January 1st next year."
+          "chinese": "不，我明年一月一日去。",
+          "pinyin": "Bù, wǒ míngnián yīyuè yí rì qù.",
+          "english": "No, I'm going on January 1st next year."
         },
         {
           "speaker": "A",
-          "chinese": "太好了！等一下，我打电话给你。",
-          "pinyin": "Tài hǎo le! Děng yí xià, wǒ dǎ diànhuà gěi nǐ.",
-          "english": "Great! Wait, I'll call you."
+          "chinese": "太好了!我会打电话给你。",
+          "pinyin": "Tài hǎo le! wǒ huì dǎ diànhuà gěi nǐ.",
+          "english": "Great! I'll call you."
         }
       ],
       "speakers": {
@@ -530,7 +530,7 @@
     {
       "number": 1,
       "title": "Telling Clock Time: X点Y分",
-      "explanation": "To tell clock time: [Time of day] + [Number] + 点 + [Minutes] + 分. Minutes are optional if on the hour. 半 (bàn) = half past. Examples: 三点 (3:00), 三点半 (3:30), 三点十分 (3:10).",
+      "explanation": "To tell clock time: [Time of day] + [Number] + 点(diǎn) + [Minutes] + 分(fēn). Minutes are optional if on the hour. 半(bàn) = half past. Examples: 三(sān)点(3:00), 三(sān)点(diǎn)半(3:30), 三(sān)点(diǎn)十(shí)分(3:10).",
       "examples": [
         {
           "chinese": "现在下午三点半。",
@@ -559,7 +559,7 @@
     {
       "number": 2,
       "title": "什么时候 (shénme shíhou) — When",
-      "explanation": "什么时候 asks about when something happens. It is placed before the verb, like all time expressions in Chinese. Formula: Subject + 什么时候 + Verb?",
+      "explanation": "什么时候(shénme shíhou) asks about when something happens. It is placed before the verb, like all time expressions in Chinese. Formula: Subject + 什么时候(shénme shíhou) + Verb?",
       "examples": [
         {
           "chinese": "你什么时候去中国？",
@@ -588,7 +588,7 @@
     {
       "number": 3,
       "title": "Days of the Week: 星期 + Number",
-      "explanation": "星期 + 1-6 = Monday to Saturday. 星期天/日 = Sunday. 星期几? = What day of the week? Numbers 1-6 go after 星期.",
+      "explanation": "星期(xīngqī) + 1-6 = Monday to Saturday. 星期(xīngqī)天(tiān)/日(rì) = Sunday. 星期(xīngqī)几(jǐ)? = What day of the week? Numbers 1-6 go after 星期(xīngqī).",
       "examples": [
         {
           "chinese": "今天星期一。",

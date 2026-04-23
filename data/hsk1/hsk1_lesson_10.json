@@ -381,9 +381,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "好！谢谢你。",
-          "pinyin": "Hǎo! Xièxie nǐ.",
-          "english": "Great! Thank you."
+          "chinese": "好！谢谢妈妈。",
+          "pinyin": "Hǎo! Xièxie māma.",
+          "english": "Great! Thanks, mon."
         }
       ],
       "speakers": {
@@ -411,14 +411,14 @@
       "lines": [
         {
           "speaker": "A",
-          "chinese": "下雨了！你有没有？",
-          "pinyin": "Xià yǔ le! Nǐ yǒu méiyǒu?",
-          "english": "It's raining! Do you have one?"
+          "chinese": "下雨了！你有没有雨伞？",
+          "pinyin": "Xià yǔ le! Nǐ yǒu méiyǒu yǔ sǎn?",
+          "english": "It's raining! Do you have umbrella?"
         },
         {
           "speaker": "B",
-          "chinese": "没有。今天下大雨！",
-          "pinyin": "Méiyǒu. Jīntiān xià dàyǔ!",
+          "chinese": "没有。今天雨很大！",
+          "pinyin": "Méiyǒu. Jīntiān yǔ hěn dà!",
           "english": "No. It's raining heavily today!"
         },
         {
@@ -473,17 +473,17 @@
       "speakers": {
         "A": {
           "name": "伍尔夫",
-          "role": "服务员",
+          "role": "朋友",
           "gender": "female",
           "name_pinyin": "Wú ěr fū",
-          "role_pinyin": "fú wù yuán"
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "加缪",
-          "role": "顾客",
+          "role": "朋友",
           "gender": "male",
           "name_pinyin": "Jiā miù",
-          "role_pinyin": "gù kè"
+          "role_pinyin": "péng yǒu"
         }
       },
       "title_pinyin": "Dà hái shì xiǎo"
@@ -520,7 +520,7 @@
     {
       "number": 1,
       "title": "怎么样 (zěnmeyàng) — How / What's it like",
-      "explanation": "怎么样 asks for a description or opinion. Formula: Subject + 怎么样? It can also follow a topic: 天气怎么样? (How is the weather?). More open-ended than yes/no 吗 questions.",
+      "explanation": "怎么样(zěnmeyàng) asks for a description or opinion. Formula: Subject + 怎么样(zěnmeyàng)? It can also follow a topic: 天气怎么样(tiānqì zěnmeyàng)? (How is the weather?). More open-ended than yes/no 吗(ma) questions.",
       "examples": [
         {
           "chinese": "天气怎么样？",
@@ -549,7 +549,7 @@
     {
       "number": 2,
       "title": "太...了 (tài...le) — Too / Excessively",
-      "explanation": "太 + Adjective + 了 expresses excess. 太 alone without 了 can mean 'very' in casual speech, but 太...了 emphasizes too much. Formula: Subject + 太 + Adjective + 了.",
+      "explanation": "太(tài) + Adjective + 了(le) expresses excess. 太(tài) alone without 了(le) can mean 'very' in casual speech, but 太(tài)...了(le) emphasizes too much. Formula: Subject + 太(tài) + Adjective + 了(le).",
       "examples": [
         {
           "chinese": "今天太热了！",
@@ -578,7 +578,7 @@
     {
       "number": 3,
       "title": "和 (hé) — And (connecting nouns)",
-      "explanation": "和 connects two nouns or pronouns. It cannot connect verbs or sentences (unlike English 'and'). Formula: Noun A + 和 + Noun B. Example: 你和我 (you and I).",
+      "explanation": "和(hé) connects two nouns or pronouns. It cannot connect verbs or sentences (unlike English 'and'). Formula: Noun A + 和(hé) + Noun B. Example: 你和我(you and I).",
       "examples": [
         {
           "chinese": "你和我都是学生。",

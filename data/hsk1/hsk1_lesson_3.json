@@ -525,7 +525,7 @@
     {
       "number": 1,
       "title": "Date expressions: Year-Month-Date order",
-      "explanation": "Chinese dates go from largest to smallest unit: 年(year) → 月(month) → 号(date). This is opposite to British English (15 March 2024) and different from American English (March 15, 2024). Formula: [Year]年 + [Month]月 + [Date]号",
+      "explanation": "Chinese dates go from largest to smallest unit: 年(year) → 月(month) → 号(date). This is opposite to British English (15 March 2024) and different from American English (March 15, 2024). Formula: [Year]年(nián) + [Month]月(yuè) + [Date]号(hào)",
       "examples": [
         {
           "chinese": "2024年6月1号",
@@ -564,7 +564,7 @@
     {
       "number": 2,
       "title": "Time expressions with 点 (diǎn) and 分 (fēn)",
-      "explanation": "点 means 'o'clock' and 分 means 'minute'. Time format: [Time of day] + [Hour]点 + [Minutes]分. Time of day comes first: 上午/下午/晚上. Use 半 (bàn) for 'half past'.",
+      "explanation": "点(diǎn) means 'o'clock' and 分(fēn) means 'minute'. Time format: [Time of day] + [Hour]点(diǎn) + [Minutes]分(fēn). Time of day comes first: 上午(shàng wǔ)/下午(xià wǔ)/晚上(wǎn shang). Use 半(bàn) for 'half past'.",
       "examples": [
         {
           "chinese": "上午十点二十分",
@@ -603,7 +603,7 @@
     {
       "number": 3,
       "title": "Time words: 今天, 明天, 昨天",
-      "explanation": "These three words describe days relative to today. 今天 (jīn tiān) = today, 明天 (míng tiān) = tomorrow, 昨天 (zuó tiān) = yesterday. They can be used alone or with dates/times.",
+      "explanation": "These three words describe days relative to today. 今天(jīn tiān) = today, 明天(míng tiān) = tomorrow, 昨天(zuó tiān) = yesterday. They can be used alone or with dates/times.",
       "examples": [
         {
           "chinese": "今天是星期一。",

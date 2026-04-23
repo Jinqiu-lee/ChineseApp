@@ -153,6 +153,7 @@ const STORAGE_KEYS = {
   roundScores:        '@chineseapp:roundScores',
   pinyinQuizPassed:   '@chineseapp:pinyinQuizPassed',
   pinyinStageProgress:'@chineseapp:pinyinStageProgress',
+  quizPassedLessons:  '@chineseapp:quizPassedLessons',
 };
 
 const DEFAULT_LEVEL_STATE = {
@@ -183,13 +184,14 @@ export default function App() {
   const [currentPinyinStageIndex, setCurrentPinyinStageIndex] = useState(null);
   const [pinyinQuizPassed, setPinyinQuizPassed] = useState([]);       // [1,2,3,...] lesson IDs passed
   const [pinyinStageProgress, setPinyinStageProgress] = useState({}); // { "pinyin_1": [0,1,2] }
+  const [quizPassedLessons, setQuizPassedLessons] = useState({});     // { "hsk1": [1,2,...], "hsk2": [...] }
   const [pinyinLessonInitialTab, setPinyinLessonInitialTab] = useState('learn');
 
   // ── Load saved data on startup ──────────────────────────────
   useEffect(() => {
     const load = async () => {
       try {
-        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage] = await Promise.all([
+        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage, savedQuizPassedLessons] = await Promise.all([
           AsyncStorage.getItem(STORAGE_KEYS.userData),
           AsyncStorage.getItem(STORAGE_KEYS.levelState),
           AsyncStorage.getItem(STORAGE_KEYS.lessonProgress),
@@ -197,6 +199,7 @@ export default function App() {
           AsyncStorage.getItem(STORAGE_KEYS.roundScores),
           AsyncStorage.getItem(STORAGE_KEYS.pinyinQuizPassed),
           AsyncStorage.getItem(STORAGE_KEYS.pinyinStageProgress),
+          AsyncStorage.getItem(STORAGE_KEYS.quizPassedLessons),
         ]);
         const parsedUser = savedUser ? JSON.parse(savedUser) : null;
         if (parsedUser) {
@@ -211,7 +214,8 @@ export default function App() {
         if (savedStageProgress) setStageProgress(JSON.parse(savedStageProgress));
         if (savedRoundScores)   setRoundScores(JSON.parse(savedRoundScores));
         if (savedPinyinQuiz)    setPinyinQuizPassed(JSON.parse(savedPinyinQuiz));
-        if (savedPinyinStage)   setPinyinStageProgress(JSON.parse(savedPinyinStage));
+        if (savedPinyinStage)        setPinyinStageProgress(JSON.parse(savedPinyinStage));
+        if (savedQuizPassedLessons)  setQuizPassedLessons(JSON.parse(savedQuizPassedLessons));
       } catch (e) {
         console.warn('Failed to restore saved data:', e);
       } finally {
@@ -257,6 +261,11 @@ export default function App() {
     AsyncStorage.setItem(STORAGE_KEYS.pinyinStageProgress, JSON.stringify(pinyinStageProgress)).catch(console.warn);
   }, [pinyinStageProgress, isLoading]);
 
+  useEffect(() => {
+    if (isLoading) return;
+    AsyncStorage.setItem(STORAGE_KEYS.quizPassedLessons, JSON.stringify(quizPassedLessons)).catch(console.warn);
+  }, [quizPassedLessons, isLoading]);
+
   // ── Splash while loading ─────────────────────────────────────
   if (isLoading) {
     return (
@@ -288,6 +297,17 @@ export default function App() {
     const r2Done = (stageProgress[`${levelId}_${lessonId}_r2`] || []).length >= 5;
     setCurrentRound(r1Done && r2Done ? 3 : r1Done ? 2 : 1);
     setCurrentScreen('lesson');
+  };
+
+  const handleQuizPass = () => {
+    const levelId = currentLessonLevelId;
+    const lessonId = currentLessonId;
+    if (!levelId || !lessonId) return;
+    setQuizPassedLessons(prev => {
+      const existing = prev[levelId] || [];
+      if (existing.includes(lessonId)) return prev;
+      return { ...prev, [levelId]: [...existing, lessonId] };
+    });
   };
 
   const handleLessonComplete = (lessonId) => {
@@ -475,6 +495,8 @@ export default function App() {
   const r2Done = (stageProgress[`${currentLessonLevelId}_${currentLessonId}_r2`] || []).length >= 5;
   const r3Done = (stageProgress[`${currentLessonLevelId}_${currentLessonId}_r3`] || []).length >= 5;
   const quizUnlocked = DEV_UNLOCK_ALL || (r2Done && combinedAccuracy >= 90) || r3Done;
+  const lessonQuizPassed = (quizPassedLessons[currentLessonLevelId] || []).includes(currentLessonId);
+  const lessonAlreadyCompleted = (lessonProgress[currentLessonLevelId] || []).includes(currentLessonId);
 
   // ── Screens ──────────────────────────────────────────────────
   if (currentScreen === 'onboarding') {
@@ -513,6 +535,9 @@ export default function App() {
         currentRound={currentRound}
         quizUnlocked={quizUnlocked}
         devUnlockAll={DEV_UNLOCK_ALL}
+        r2Done={r2Done}
+        lessonQuizPassed={lessonQuizPassed}
+        lessonCompleted={lessonAlreadyCompleted}
         onBack={() => handleBackToHome(currentLessonLevelId)}
         onLessonComplete={handleLessonComplete}
         onTakeQuiz={handleTakeQuiz}
@@ -569,6 +594,7 @@ export default function App() {
         lessonData={currentLessonData}
         levelId={currentLessonLevelId}
         onBack={() => setCurrentScreen('lesson')}
+        onQuizPass={handleQuizPass}
       />
     );
   }

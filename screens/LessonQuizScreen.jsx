@@ -34,7 +34,7 @@ const TYPE_LABELS = {
   pinyin_exercise: '🎵 Pinyin Focus',
 };
 
-export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack }) {
+export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack, onQuizPass }) {
   const T = LEVEL_SCREEN_PALETTES[levelId] || LEVEL_SCREEN_PALETTES.hsk1;
   const avatarId = getAvatarForLesson(lessonData?.topic, lessonData?.topic_chinese);
   // Generate once per mount, with character names swapped to match the lesson avatar
@@ -87,6 +87,18 @@ export default function LessonQuizScreen({ lessonData, levelId = 'hsk1', onBack 
       ],
     );
   };
+
+  // Notify parent once when quiz is passed
+  const passNotifiedRef = React.useRef(false);
+  useEffect(() => {
+    if (showResults) {
+      const pct = Math.round((score / total) * 100);
+      if (pct >= PASS_SCORE && !passNotifiedRef.current) {
+        passNotifiedRef.current = true;
+        onQuizPass?.();
+      }
+    }
+  }, [showResults]);
 
   // ── Results Screen ─────────────────────────────────────────────────────────
   if (showResults) {
