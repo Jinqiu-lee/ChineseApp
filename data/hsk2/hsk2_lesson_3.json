@@ -470,7 +470,7 @@
         },
         {
           "chinese": "这件衣服一百块钱。",
-          "pinyin": "Zhè jiàn yī fu yī bǎi kuài qián.",
+          "pinyin": "Zhè jiàn yī fu yì bǎi kuài qián.",
           "english": "This item of clothing is 100 yuan."
         }
       ],
@@ -810,12 +810,16 @@
         "A": {
           "name": "波伏娃",
           "role": "顾客",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "gù kè"
         },
         "B": {
           "name": "服务员",
           "role": "店员",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "fú wù yuán",
+          "role_pinyin": "diàn yuán"
         }
       },
       "lines": [
@@ -828,7 +832,7 @@
         {
           "speaker": "B",
           "chinese": "左边那件红色的是一百块。",
-          "pinyin": "Zuǒ bian nà jiàn hóng sè de shì yī bǎi kuài.",
+          "pinyin": "Zuǒ bian nà jiàn hóng sè de shì yì bǎi kuài.",
           "english": "The red one on the left is 100 yuan."
         },
         {
@@ -855,7 +859,8 @@
           "pinyin": "Cóng páng biān nà gè mén jìn qù, lǐ miàn yǒu dà xiǎo liǎng zhǒng.",
           "english": "Enter through the door next to it; inside there are two sizes."
         }
-      ]
+      ],
+      "title_pinyin": "Mǎi yī fú"
     },
     {
       "id": 2,
@@ -865,12 +870,16 @@
         "A": {
           "name": "但丁",
           "role": "房客",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "fáng kè"
         },
         "B": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -904,7 +913,8 @@
           "pinyin": "Dà de, shì wǒ xīn mǎi de hóng sè yī fu páng biān nà jiàn.",
           "english": "The big one — it's the one next to the red clothes I just bought."
         }
-      ]
+      ],
+      "title_pinyin": "Miáo shù fáng jiān"
     }
   ]
 }

@@ -238,7 +238,7 @@
     {
       "id": "hsk1_l12_p07",
       "chinese": "一只猫",
-      "pinyin": "yī zhī māo",
+      "pinyin": "yì zhī māo",
       "tones": [
         1,
         1,
@@ -250,7 +250,7 @@
     {
       "id": "hsk1_l12_p08",
       "chinese": "一只狗",
-      "pinyin": "yī zhī gǒu",
+      "pinyin": "yì zhī gǒu",
       "tones": [
         1,
         1,
@@ -330,7 +330,7 @@
         {
           "speaker": "A",
           "chinese": "太好了！我们一起学习。",
-          "pinyin": "Tài hǎo le! Wǒmen yīqǐ xuéxí.",
+          "pinyin": "Tài hǎo le! Wǒmen yì qǐ xuéxí.",
           "english": "Great! Let's study together."
         }
       ],
@@ -338,14 +338,19 @@
         "A": {
           "name": "奥斯汀",
           "role": "同学",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "tóng xué"
         },
         "B": {
           "name": "但丁",
           "role": "同学",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "tóng xué"
         }
-      }
+      },
+      "title_pinyin": "Nǐ néng lái ma"
     },
     {
       "id": 2,
@@ -361,7 +366,7 @@
         {
           "speaker": "B",
           "chinese": "我有一只猫和一只狗，都很漂亮！",
-          "pinyin": "Wǒ yǒu yī zhī māo hé yī zhī gǒu, dōu hěn piàoliang!",
+          "pinyin": "Wǒ yǒu yì zhī māo hé yì zhī gǒu, dōu hěn piàoliang!",
           "english": "I have one cat and one dog, both are very beautiful!"
         },
         {
@@ -381,14 +386,19 @@
         "A": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "苏轼",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Nǐ yǒu chǒng wù ma"
     },
     {
       "id": 3,
@@ -424,14 +434,19 @@
         "A": {
           "name": "伍尔夫",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Wú ěr fū",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "加缪",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Jiā miù",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Tā hěn piào liang"
     },
     {
       "id": 4,
@@ -467,14 +482,19 @@
         "A": {
           "name": "奥斯汀",
           "role": "学生",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "xué shēng"
         },
         "B": {
           "name": "王先生",
           "role": "老师",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Wáng xiān shēng",
+          "role_pinyin": "lǎo shī"
         }
-      }
+      },
+      "title_pinyin": "Zěn me xué xí"
     }
   ],
   "key_sentences": [
@@ -485,7 +505,7 @@
     },
     {
       "chinese": "我有一只猫。",
-      "pinyin": "Wǒ yǒu yī zhī māo.",
+      "pinyin": "Wǒ yǒu yì zhī māo.",
       "english": "I have one cat."
     },
     {

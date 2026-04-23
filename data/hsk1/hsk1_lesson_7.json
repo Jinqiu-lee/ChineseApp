@@ -790,15 +790,20 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "路人",
-          "gender": "female"
+          "role": "同学",
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "tóng xué"
         },
         "B": {
           "name": "加缪",
-          "role": "本地人",
-          "gender": "male"
+          "role": "同学",
+          "gender": "male",
+          "name_pinyin": "Jiā miù",
+          "role_pinyin": "tóng xué"
         }
-      }
+      },
+      "title_pinyin": "Nǐ zài nǎ er"
     },
     {
       "id": 2,
@@ -833,15 +838,20 @@
       "speakers": {
         "A": {
           "name": "鲁迅",
-          "role": "同事",
-          "gender": "male"
+          "role": "路人",
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "lù rén"
         },
         "B": {
           "name": "但丁",
-          "role": "同事",
-          "gender": "male"
+          "role": "路人",
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "lù rén"
         }
-      }
+      },
+      "title_pinyin": "Yī yuàn zài nǎ er"
     },
     {
       "id": 3,
@@ -870,15 +880,20 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "学生",
-          "gender": "female"
+          "role": "同学",
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "tóng xué"
         },
         "B": {
           "name": "加缪",
-          "role": "老师",
-          "gender": "male"
+          "role": "同学",
+          "gender": "male",
+          "name_pinyin": "Jiā miù",
+          "role_pinyin": "tóng xué"
         }
-      }
+      },
+      "title_pinyin": "Shū zài nǎ er"
     }
   ]
 }

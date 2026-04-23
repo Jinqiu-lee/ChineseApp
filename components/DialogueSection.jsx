@@ -35,6 +35,8 @@ function replaceDialogueRoles(dialogue, primaryAvatarId, dialogueIndex = 0) {
 
   const nameA = shortName(avatarA.chineseName);
   const nameB = shortName(avatarB.chineseName);
+  const namePinyinA = avatarA.shortNamePinyin || '';
+  const namePinyinB = avatarB.shortNamePinyin || '';
 
   const origNameA = dialogue.speakers?.A?.name || '';
   const origNameB = dialogue.speakers?.B?.name || '';
@@ -49,6 +51,7 @@ function replaceDialogueRoles(dialogue, primaryAvatarId, dialogueIndex = 0) {
     speakers: {
       A: {
         name: nameA,
+        name_pinyin: namePinyinA,
         role: avatarA.englishName,
         gender: avatarA.gender,
         isAvatar: true,
@@ -56,6 +59,7 @@ function replaceDialogueRoles(dialogue, primaryAvatarId, dialogueIndex = 0) {
       },
       B: {
         name: nameB,
+        name_pinyin: namePinyinB,
         role: avatarB.englishName,
         gender: avatarB.gender,
         isAvatar: true,
@@ -224,6 +228,9 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
         <View style={styles.headerTop}>
           <View>
             <Text style={styles.cardTitleChinese}>{dialogue.title_chinese}</Text>
+            {showPinyin && dialogue.title_pinyin ? (
+              <Text style={styles.cardTitlePinyin}>{dialogue.title_pinyin}</Text>
+            ) : null}
             <Text style={styles.cardTitleEnglish}>{dialogue.title}</Text>
           </View>
           <TouchableOpacity
@@ -238,13 +245,13 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
         {(speakerA || speakerB) && (
           <View style={styles.speakerRow}>
             {speakerA && (speakerA.isAvatar
-              ? <AvatarSpeakerTag info={speakerA} pal={palA} avatarId={speakerA.avatarId} />
-              : <SpeakerTag info={speakerA} pal={palA} />
+              ? <AvatarSpeakerTag info={speakerA} pal={palA} avatarId={speakerA.avatarId} showPinyin={showPinyin} />
+              : <SpeakerTag info={speakerA} pal={palA} showPinyin={showPinyin} />
             )}
             <Text style={styles.vsText}>vs</Text>
             {speakerB && (speakerB.isAvatar
-              ? <AvatarSpeakerTag info={speakerB} pal={palB} avatarId={speakerB.avatarId} />
-              : <SpeakerTag info={speakerB} pal={palB} />
+              ? <AvatarSpeakerTag info={speakerB} pal={palB} avatarId={speakerB.avatarId} showPinyin={showPinyin} />
+              : <SpeakerTag info={speakerB} pal={palB} showPinyin={showPinyin} />
             )}
           </View>
         )}
@@ -299,25 +306,37 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
   );
 }
 
-function SpeakerTag({ info, pal }) {
+function SpeakerTag({ info, pal, showPinyin }) {
   return (
     <View style={[styles.speakerTag, { backgroundColor: pal.badge, borderColor: pal.border }]}>
       <Text style={styles.speakerTagEmoji}>{pal.emoji}</Text>
       <View>
         <Text style={[styles.speakerTagName, { color: pal.pinyin }]}>{getDisplayName(info)}</Text>
+        {showPinyin && info.name_pinyin ? (
+          <Text style={[styles.speakerTagPinyin, { color: pal.pinyin }]}>{info.name_pinyin}</Text>
+        ) : null}
         <Text style={styles.speakerTagRole}>{info.role}</Text>
+        {showPinyin && info.role_pinyin ? (
+          <Text style={styles.speakerTagPinyin}>{info.role_pinyin}</Text>
+        ) : null}
       </View>
     </View>
   );
 }
 
-function AvatarSpeakerTag({ info, pal, avatarId }) {
+function AvatarSpeakerTag({ info, pal, avatarId, showPinyin }) {
   return (
     <View style={[styles.speakerTag, styles.speakerTagAvatar, { borderColor: WARM_ORANGE }]}>
       <AvatarCharacter avatarId={avatarId} expression="neutral" size={36} />
       <View>
         <Text style={[styles.speakerTagName, { color: WARM_ORANGE }]}>{info.name}</Text>
+        {showPinyin && info.name_pinyin ? (
+          <Text style={[styles.speakerTagPinyin, { color: WARM_ORANGE }]}>{info.name_pinyin}</Text>
+        ) : null}
         <Text style={styles.speakerTagRole}>{info.role}</Text>
+        {showPinyin && info.role_pinyin ? (
+          <Text style={styles.speakerTagPinyin}>{info.role_pinyin}</Text>
+        ) : null}
       </View>
     </View>
   );
@@ -372,6 +391,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   cardTitleChinese: { fontSize: 16, fontWeight: '800', color: VG.cream },
+  cardTitlePinyin:  { fontSize: 12, color: VG.orange, fontStyle: 'italic', marginTop: 1 },
   cardTitleEnglish: { fontSize: 12, color: VG.creamMuted, marginTop: 2 },
 
   pinyinToggle: {
@@ -401,9 +421,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
   },
-  speakerTagEmoji: { fontSize: 20 },
-  speakerTagName:  { fontSize: 14, fontWeight: '800' },
-  speakerTagRole:  { fontSize: 11, color: VG.creamMuted },
+  speakerTagEmoji:  { fontSize: 20 },
+  speakerTagName:   { fontSize: 14, fontWeight: '800' },
+  speakerTagPinyin: { fontSize: 10, color: VG.creamMuted, fontStyle: 'italic' },
+  speakerTagRole:   { fontSize: 11, color: VG.creamMuted },
   speakerTagAvatar: { backgroundColor: 'rgba(224,176,75,0.1)' },
 
   // Lines

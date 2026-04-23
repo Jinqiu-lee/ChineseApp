@@ -196,7 +196,7 @@
     {
       "id": "hsk1_l6_p05",
       "chinese": "一块钱",
-      "pinyin": "yī kuài qián",
+      "pinyin": "yí kuài qián",
       "tones": [
         1,
         4,
@@ -220,7 +220,7 @@
     {
       "id": "hsk1_l6_p07",
       "chinese": "一本书",
-      "pinyin": "yī běn shū",
+      "pinyin": "yì běn shū",
       "tones": [
         1,
         3,
@@ -406,7 +406,7 @@
       "examples": [
         {
           "chinese": "一本书",
-          "pinyin": "yī běn shū",
+          "pinyin": "yì běn shū",
           "english": "One book"
         },
         {
@@ -782,14 +782,19 @@
         "A": {
           "name": "伍尔夫",
           "role": "店员",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Wú ěr fū",
+          "role_pinyin": "diàn yuán"
         },
         "B": {
           "name": "苏轼",
           "role": "顾客",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "gù kè"
         }
-      }
+      },
+      "title_pinyin": "Duō shao qián"
     },
     {
       "id": 2,
@@ -824,15 +829,20 @@
       "speakers": {
         "A": {
           "name": "波伏娃",
-          "role": "顾客",
-          "gender": "female"
+          "role": "店员",
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "diàn yuán"
         },
         "B": {
           "name": "但丁",
-          "role": "店员",
-          "gender": "male"
+          "role": "顾客",
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "gù kè"
         }
-      }
+      },
+      "title_pinyin": "Mǎi shū"
     },
     {
       "id": 3,
@@ -854,7 +864,7 @@
         {
           "speaker": "B",
           "chinese": "不贵，我买！",
-          "pinyin": "Bù guì, wǒ mǎi!",
+          "pinyin": "Bú guì, wǒ mǎi!",
           "english": "Not expensive, I'll buy it!"
         }
       ],
@@ -862,14 +872,19 @@
         "A": {
           "name": "伍尔夫",
           "role": "店员",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Wú ěr fū",
+          "role_pinyin": "diàn yuán"
         },
         "B": {
           "name": "鲁迅",
           "role": "顾客",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "gù kè"
         }
-      }
+      },
+      "title_pinyin": "Pián yi ma"
     }
   ]
 }

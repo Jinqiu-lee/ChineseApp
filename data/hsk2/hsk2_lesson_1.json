@@ -850,12 +850,16 @@
         "A": {
           "name": "波伏娃",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "加缪",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Jiā miù",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -889,7 +893,8 @@
           "pinyin": "Tài hǎo le, Běijīng de yùn dòng gōng yuán zuì xīn zuì dà!",
           "english": "That's great! Beijing's sports parks are the newest and biggest!"
         }
-      ]
+      ],
+      "title_pinyin": "Jì huà lǚ yóu"
     },
     {
       "id": 2,
@@ -899,12 +904,16 @@
         "A": {
           "name": "奥斯汀",
           "role": "同学",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "tóng xué"
         },
         "B": {
           "name": "苏轼",
           "role": "同学",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "tóng xué"
         }
       },
       "lines": [
@@ -944,7 +953,8 @@
           "pinyin": "Shì de, tā shì wǒ de xīn zú qiú!",
           "english": "Yes, it's my new football!"
         }
-      ]
+      ],
+      "title_pinyin": "Liáo yùn dòng"
     }
   ]
 }

@@ -21,12 +21,10 @@ function ImageCard({ image, selected, correct, showResult, onPress, size = 140 }
       disabled={showResult}
       style={[styles.imageCard, { width: size, height: size, borderColor }]}
     >
-      {image?.url ? (
-        <Image
-          source={{ uri: image.url }}
-          style={styles.cardPhoto}
-          resizeMode="cover"
-        />
+      {image?.localAsset != null ? (
+        <Image source={image.localAsset} style={styles.cardPhoto} resizeMode="cover" />
+      ) : image?.url ? (
+        <Image source={{ uri: image.url }} style={styles.cardPhoto} resizeMode="cover" />
       ) : (
         <View style={[styles.cardEmoji, { backgroundColor: image?.color || SLATE_TEAL }]}>
           <Text style={styles.cardEmojiText}>{image?.emoji || '🖼️'}</Text>
@@ -86,7 +84,9 @@ export default function ImageExercise({ exercise, onCorrect, onWrong, avatarId =
 
         {/* Big image */}
         <View style={styles.bigImageWrap}>
-          {exercise.image?.url ? (
+          {exercise.image?.localAsset != null ? (
+            <Image source={exercise.image.localAsset} style={styles.bigPhoto} resizeMode="cover" />
+          ) : exercise.image?.url ? (
             <Image source={{ uri: exercise.image.url }} style={styles.bigPhoto} resizeMode="cover" />
           ) : (
             <View style={[styles.bigEmoji, { backgroundColor: exercise.image?.color || SLATE_TEAL }]}>

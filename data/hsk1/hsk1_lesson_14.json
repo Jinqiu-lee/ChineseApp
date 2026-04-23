@@ -347,14 +347,19 @@
         "A": {
           "name": "妈妈",
           "role": "妈妈",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "māma",
+          "role_pinyin": "māma"
         },
         "B": {
           "name": "小丽",
           "role": "女儿",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Xiǎo lì",
+          "role_pinyin": "nǚ ér"
         }
-      }
+      },
+      "title_pinyin": "Tā mǎi le yī fú"
     },
     {
       "id": 2,
@@ -382,7 +387,7 @@
         {
           "speaker": "B",
           "chinese": "我和你一起去！",
-          "pinyin": "Wǒ hé nǐ yīqǐ qù!",
+          "pinyin": "Wǒ hé nǐ yì qǐ qù!",
           "english": "I'll go with you!"
         }
       ],
@@ -390,14 +395,19 @@
         "A": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "但丁",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Nǐ chī le ma"
     },
     {
       "id": 3,
@@ -427,14 +437,19 @@
         "A": {
           "name": "李太太",
           "role": "邻居",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Lǐ tài tai",
+          "role_pinyin": "lín jū"
         },
         "B": {
           "name": "王先生",
           "role": "父亲",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Wáng xiān shēng",
+          "role_pinyin": "fù qīn"
         }
-      }
+      },
+      "title_pinyin": "Wǒ ér zi shì yī shēng"
     },
     {
       "id": 4,
@@ -470,14 +485,19 @@
         "A": {
           "name": "奥斯汀",
           "role": "学生",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "xué shēng"
         },
         "B": {
           "name": "加缪",
           "role": "老师",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Jiā miù",
+          "role_pinyin": "lǎo shī"
         }
-      }
+      },
+      "title_pinyin": "Yǐ qián hé yǐ hòu"
     }
   ],
   "key_sentences": [

@@ -826,12 +826,16 @@
         "A": {
           "name": "鲁迅",
           "role": "同事",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "tóng shì"
         },
         "B": {
           "name": "鲁迅",
           "role": "同事",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "tóng shì"
         }
       },
       "lines": [
@@ -871,7 +875,8 @@
           "pinyin": "Yǐ qián qī diǎn, yǐ hòu wǒ xiǎng zǎo diǎnr qǐ chuáng.",
           "english": "Seven before; in the future I want to get up earlier."
         }
-      ]
+      ],
+      "title_pinyin": "Zǎo shang de shēng huó"
     },
     {
       "id": 2,
@@ -881,12 +886,16 @@
         "A": {
           "name": "波伏娃",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "但丁",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -920,7 +929,8 @@
           "pinyin": "Hǎo de, sān diǎn jiàn!",
           "english": "Okay, see you at three!"
         }
-      ]
+      ],
+      "title_pinyin": "Yuē dìng shí jiān"
     }
   ]
 }

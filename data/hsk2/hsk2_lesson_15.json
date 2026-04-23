@@ -964,12 +964,16 @@
         "A": {
           "name": "但丁",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "奥斯汀",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -1003,7 +1007,8 @@
           "pinyin": "Shì a! Wǒ men yì qǐ guò jié, zhēn kāi xīn! Míng nián nǐ děi zài lái!",
           "english": "Indeed! Celebrating together is truly joyful! You must come again next year!"
         }
-      ]
+      ],
+      "title_pinyin": "Xīn nián zhù fú"
     },
     {
       "id": 2,
@@ -1013,12 +1018,16 @@
         "A": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -1058,7 +1067,8 @@
           "pinyin": "Nǐ zhēn hǎo! Zhù dà jiā jié rì kuài lè, xī wàng jīn nián yí qiè shùn lì!",
           "english": "You're so kind! Wishing everyone a happy holiday, and I hope this year goes smoothly for all!"
         }
-      ]
+      ],
+      "title_pinyin": "Zhǔn bèi guò jié"
     }
   ]
 }

@@ -294,7 +294,7 @@
     {
       "id": "hsk1_l9_p11",
       "chinese": "一起学习",
-      "pinyin": "yīqǐ xuéxí",
+      "pinyin": "yì qǐ xuéxí",
       "tones": [
         1,
         3,
@@ -353,14 +353,19 @@
         "A": {
           "name": "奥斯汀",
           "role": "学生",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "xué shēng"
         },
         "B": {
           "name": "加缪",
           "role": "学生",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Jiā miù",
+          "role_pinyin": "xué shēng"
         }
-      }
+      },
+      "title_pinyin": "Rèn shi nǐ hěn gāo xìng"
     },
     {
       "id": 2,
@@ -376,13 +381,13 @@
         {
           "speaker": "B",
           "chinese": "会，我会说一点汉语。你呢？",
-          "pinyin": "Huì, wǒ huì shuō yīdiǎn Hànyǔ. Nǐ ne?",
+          "pinyin": "Huì, wǒ huì shuō yì diǎn Hànyǔ. Nǐ ne?",
           "english": "Yes, I can speak a little Chinese. What about you?"
         },
         {
           "speaker": "A",
           "chinese": "我也会说汉语。我们一起学习！",
-          "pinyin": "Wǒ yě huì shuō Hànyǔ. Wǒmen yīqǐ xuéxí!",
+          "pinyin": "Wǒ yě huì shuō Hànyǔ. Wǒmen yì qǐ xuéxí!",
           "english": "I can speak Chinese too. Let's study together!"
         }
       ],
@@ -390,14 +395,19 @@
         "A": {
           "name": "鲁迅",
           "role": "老师",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "lǎo shī"
         },
         "B": {
           "name": "但丁",
           "role": "学生",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "xué shēng"
         }
-      }
+      },
+      "title_pinyin": "Nǐ huì shuō hàn yǔ ma"
     },
     {
       "id": 3,
@@ -425,7 +435,7 @@
         {
           "speaker": "B",
           "chinese": "好！我们一起学习，好朋友！",
-          "pinyin": "Hǎo! Wǒmen yīqǐ xuéxí, hǎo péngyou!",
+          "pinyin": "Hǎo! Wǒmen yì qǐ xuéxí, hǎo péngyou!",
           "english": "Great! Let's study together, good friend!"
         }
       ],
@@ -433,14 +443,19 @@
         "A": {
           "name": "伍尔夫",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Wú ěr fū",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "苏轼",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Nǐ shì zhōng guó rén ma"
     },
     {
       "id": 4,
@@ -476,14 +491,19 @@
         "A": {
           "name": "奥斯汀",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "王先生",
           "role": "先生",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Wáng xiān shēng",
+          "role_pinyin": "xiān shēng"
         }
-      }
+      },
+      "title_pinyin": "Duì bù qǐ"
     }
   ],
   "key_sentences": [
@@ -509,7 +529,7 @@
     },
     {
       "chinese": "我们一起学习！",
-      "pinyin": "Wǒmen yīqǐ xuéxí!",
+      "pinyin": "Wǒmen yì qǐ xuéxí!",
       "english": "Let's study together!"
     }
   ],

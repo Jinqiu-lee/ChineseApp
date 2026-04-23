@@ -164,7 +164,7 @@
     {
       "id": "hsk1_l3_13",
       "chinese": "一月",
-      "pinyin": "yī yuè",
+      "pinyin": "yí yuè",
       "tones": [
         1,
         4
@@ -294,7 +294,7 @@
     {
       "id": "hsk1_l3_23",
       "chinese": "十一月",
-      "pinyin": "shí yī yuè",
+      "pinyin": "shí yí yuè",
       "tones": [
         2,
         1,
@@ -450,7 +450,7 @@
     {
       "id": "hsk1_l3_p11",
       "chinese": "一月一号",
-      "pinyin": "yī yuè yī hào",
+      "pinyin": "yí yuè yí hào",
       "tones": [
         1,
         4,
@@ -529,12 +529,12 @@
       "examples": [
         {
           "chinese": "2024年6月1号",
-          "pinyin": "Èr líng èr sì nián liù yuè yī hào",
+          "pinyin": "Èr líng èr sì nián liù yuè yí hào",
           "english": "June 1, 2024"
         },
         {
           "chinese": "2025年12月31号",
-          "pinyin": "Èr líng èr wǔ nián shí èr yuè sān shí yī hào",
+          "pinyin": "Èr líng èr wǔ nián shí èr yuè sān shí yí hào",
           "english": "December 31, 2025"
         }
       ],
@@ -1016,16 +1016,21 @@
       ],
       "speakers": {
         "A": {
-          "name": "王老师",
-          "role": "老师",
-          "gender": "female"
+          "name": "李白",
+          "role": "朋友",
+          "gender": "male",
+          "name_pinyin": "Lǐ Bái",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "苏轼",
-          "role": "学生",
-          "gender": "male"
+          "role": "朋友",
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Jīn tiān jǐ hào"
     },
     {
       "id": 2,
@@ -1055,14 +1060,19 @@
         "A": {
           "name": "奥斯汀",
           "role": "同事",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "tóng shì"
         },
         "B": {
           "name": "但丁",
           "role": "同事",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "tóng shì"
         }
-      }
+      },
+      "title_pinyin": "Xiàn zài jǐ diǎn"
     },
     {
       "id": 3,
@@ -1090,16 +1100,21 @@
       ],
       "speakers": {
         "A": {
-          "name": "王老师",
-          "role": "老师",
-          "gender": "female"
+          "name": "李白",
+          "role": "朋友",
+          "gender": "male",
+          "name_pinyin": "Lǐ Bái",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "苏轼",
-          "role": "学生",
-          "gender": "male"
+          "role": "朋友",
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Zǎo shang hái shì wǎn shàng"
     }
   ]
 }

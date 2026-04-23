@@ -25,4 +25,6 @@ export const REPLACE_AUDIO = {
   // 姐姐 — Google TTS mispronounces the neutral tone on the second syllable;
   // use the local recording which has jie3_jie0 (3rd tone + neutral) correctly.
   '姐姐': require('../assets/audio/pinyin/tones/jie3_jie0.mp3'),
+  // 有 — use local you3.mp3 for accurate 3rd-tone pronunciation
+  '有': require('../assets/audio/pinyin/tones/you3.mp3'),
 };

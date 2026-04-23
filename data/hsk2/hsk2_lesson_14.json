@@ -970,12 +970,16 @@
         "A": {
           "name": "但丁",
           "role": "同学",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "tóng xué"
         },
         "B": {
           "name": "波伏娃",
           "role": "同学",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "tóng xué"
         }
       },
       "lines": [
@@ -1015,7 +1019,8 @@
           "pinyin": "Qù! Suī rán wǒ kàn guò le, dàn shì wǒ xiǎng zài kàn yí cì!",
           "english": "I'll go! Even though I've seen it, I want to watch it one more time!"
         }
-      ]
+      ],
+      "title_pinyin": "Nǐ kàn guò ma"
     },
     {
       "id": 2,
@@ -1025,12 +1030,16 @@
         "A": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "奥斯汀",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -1061,10 +1070,11 @@
         {
           "speaker": "A",
           "chinese": "不贵，我已经买好了，你的票我帮你买了。",
-          "pinyin": "Bù guì, wǒ yǐ jīng mǎi hǎo le, nǐ de piào wǒ bāng nǐ mǎi le.",
+          "pinyin": "Bú guì, wǒ yǐ jīng mǎi hǎo le, nǐ de piào wǒ bāng nǐ mǎi le.",
           "english": "Not expensive. I've already bought them; I bought your ticket for you."
         }
-      ]
+      ],
+      "title_pinyin": "Tuī jiàn diàn yǐng"
     }
   ]
 }

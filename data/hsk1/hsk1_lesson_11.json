@@ -151,7 +151,7 @@
     {
       "id": "hsk1_l11_12",
       "chinese": "等一下",
-      "pinyin": "děng yīxià",
+      "pinyin": "děng yí xià",
       "tones": [
         3,
         1,
@@ -346,14 +346,19 @@
         "A": {
           "name": "奥斯汀",
           "role": "学生",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "xué shēng"
         },
         "B": {
           "name": "王先生",
           "role": "路人",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Wáng xiān shēng",
+          "role_pinyin": "lù rén"
         }
-      }
+      },
+      "title_pinyin": "Xiàn zài jǐ diǎn"
     },
     {
       "id": 2,
@@ -389,14 +394,19 @@
         "A": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "但丁",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Dǎ diàn huà"
     },
     {
       "id": 3,
@@ -424,7 +434,7 @@
         {
           "speaker": "B",
           "chinese": "有。我们中午一起吃饭吧！",
-          "pinyin": "Yǒu. Wǒmen zhōngwǔ yīqǐ chīfàn ba!",
+          "pinyin": "Yǒu. Wǒmen zhōngwǔ yì qǐ chīfàn ba!",
           "english": "Yes. Let's have lunch together!"
         }
       ],
@@ -432,14 +442,19 @@
         "A": {
           "name": "伍尔夫",
           "role": "同学",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Wú ěr fū",
+          "role_pinyin": "tóng xué"
         },
         "B": {
           "name": "苏轼",
           "role": "同学",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "tóng xué"
         }
-      }
+      },
+      "title_pinyin": "Jīn tiān xīng qī jǐ"
     },
     {
       "id": 4,
@@ -455,13 +470,13 @@
         {
           "speaker": "B",
           "chinese": "是，我明年一月一日去。",
-          "pinyin": "Shì, wǒ míngnián yīyuè yī rì qù.",
+          "pinyin": "Shì, wǒ míngnián yīyuè yí rì qù.",
           "english": "Yes, I'm going on January 1st next year."
         },
         {
           "speaker": "A",
           "chinese": "太好了！等一下，我打电话给你。",
-          "pinyin": "Tài hǎo le! Děng yīxià, wǒ dǎ diànhuà gěi nǐ.",
+          "pinyin": "Tài hǎo le! Děng yí xià, wǒ dǎ diànhuà gěi nǐ.",
           "english": "Great! Wait, I'll call you."
         }
       ],
@@ -469,14 +484,19 @@
         "A": {
           "name": "奥斯汀",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "加缪",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Jiā miù",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Tīng shuō"
     }
   ],
   "key_sentences": [

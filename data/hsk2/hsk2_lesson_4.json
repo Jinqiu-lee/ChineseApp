@@ -800,12 +800,16 @@
         "A": {
           "name": "加缪",
           "role": "新同事",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Jiā miù",
+          "role_pinyin": "xīn tóng shì"
         },
         "B": {
           "name": "王经理",
           "role": "经理",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Wáng jīng lǐ",
+          "role_pinyin": "jīng lǐ"
         }
       },
       "lines": [
@@ -845,7 +849,8 @@
           "pinyin": "Hǎo, rú guǒ yǒu wèn tí, duì wǒ shuō jiù hǎo le.",
           "english": "Good — if you have any problems, just tell me."
         }
-      ]
+      ],
+      "title_pinyin": "Dì yì tiān shàng bān"
     },
     {
       "id": 2,
@@ -855,12 +860,16 @@
         "A": {
           "name": "波伏娃",
           "role": "同事",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "tóng shì"
         },
         "B": {
           "name": "伍尔夫",
           "role": "新同事",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Wú ěr fū",
+          "role_pinyin": "xīn tóng shì"
         }
       },
       "lines": [
@@ -894,7 +903,8 @@
           "pinyin": "Méi wèn tí, wǒ lái gào su nǐ gōng sī de qíng kuàng.",
           "english": "No problem — I'll tell you about the company."
         }
-      ]
+      ],
+      "title_pinyin": "Rèn shi xīn tóng shì"
     }
   ]
 }

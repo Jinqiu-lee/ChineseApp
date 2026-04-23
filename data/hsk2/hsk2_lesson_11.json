@@ -801,12 +801,16 @@
         "A": {
           "name": "奥斯汀",
           "role": "学生",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "xué shēng"
         },
         "B": {
           "name": "但丁",
           "role": "学生",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "xué shēng"
         }
       },
       "lines": [
@@ -846,7 +850,8 @@
           "pinyin": "Tā měi tiān pǎo yí gè duō xiǎo shí, wǒ zhǐ pǎo sān shí fēn zhōng.",
           "english": "He runs for over an hour every day; I only run for thirty minutes."
         }
-      ]
+      ],
+      "title_pinyin": "Shuí dà yì diǎn"
     },
     {
       "id": 2,
@@ -856,12 +861,16 @@
         "A": {
           "name": "教练",
           "role": "教练",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "jiào liàn",
+          "role_pinyin": "jiào liàn"
         },
         "B": {
           "name": "运动员",
           "role": "学生运动员",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "yùn dòng yuán",
+          "role_pinyin": "xué shēng yùn dòng yuán"
         }
       },
       "lines": [
@@ -895,7 +904,8 @@
           "pinyin": "Hěn hǎo, nán shēng nǚ shēng dōu yào duō liàn xí!",
           "english": "Very good; both male and female students should practise more!"
         }
-      ]
+      ],
+      "title_pinyin": "Yùn dòng bǐ sài"
     }
   ]
 }

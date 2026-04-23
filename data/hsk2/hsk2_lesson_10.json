@@ -387,7 +387,7 @@
       "examples": [
         {
           "chinese": "桌子上有一本书。",
-          "pinyin": "Zhuō zi shàng yǒu yī běn shū.",
+          "pinyin": "Zhuō zi shàng yǒu yì běn shū.",
           "english": "On the table there is a book."
         },
         {
@@ -797,12 +797,16 @@
         "A": {
           "name": "但丁",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "波伏娃",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -836,7 +840,8 @@
           "pinyin": "Zhǎo dào le! Xiè xie, wǒ děng nǐ, xiān jìn qù ba.",
           "english": "Found it! Thank you; I'll wait for you — go in first."
         }
-      ]
+      ],
+      "title_pinyin": "Zhǎo shǒu jī"
     },
     {
       "id": 2,
@@ -846,12 +851,16 @@
         "A": {
           "name": "鲁迅",
           "role": "访客",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "fǎng kè"
         },
         "B": {
           "name": "前台",
           "role": "接待员",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "qián tái",
+          "role_pinyin": "jiē dài yuán"
         }
       },
       "lines": [
@@ -891,7 +900,8 @@
           "pinyin": "Yǒu, mén páng biān jiù yǒu yì zhāng dà zhuō zi.",
           "english": "Yes; right next to the door there is a large table."
         }
-      ]
+      ],
+      "title_pinyin": "Dào le gōng sī"
     }
   ]
 }

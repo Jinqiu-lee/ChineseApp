@@ -6,6 +6,7 @@ const AVATARS = [
   {
     id: 'eileen',
     chineseName: '张爱玲',
+    shortNamePinyin: 'Ài líng',
     englishName: 'Eileen Chang',
     gender: 'female',
     videos: {
@@ -23,6 +24,7 @@ const AVATARS = [
   {
     id: 'libai',
     chineseName: '李白',
+    shortNamePinyin: 'Lǐ Bái',
     englishName: 'Li Bai',
     gender: 'male',
     videos: {
@@ -40,6 +42,7 @@ const AVATARS = [
   {
     id: 'luxun',
     chineseName: '鲁迅',
+    shortNamePinyin: 'Lǔ Xùn',
     englishName: 'Lu Xun',
     gender: 'male',
     videos: {
@@ -57,6 +60,7 @@ const AVATARS = [
   {
     id: 'dante',
     chineseName: '但丁',
+    shortNamePinyin: 'Dàn dīng',
     englishName: 'Dante Alighieri',
     gender: 'male',
     videos: {
@@ -74,6 +78,7 @@ const AVATARS = [
   {
     id: 'camus',
     chineseName: '加缪',
+    shortNamePinyin: 'Jiā miù',
     englishName: 'Albert Camus',
     gender: 'male',
     videos: {
@@ -91,6 +96,7 @@ const AVATARS = [
   {
     id: 'jane',
     chineseName: '简奥斯汀',
+    shortNamePinyin: 'Ào sī tīng',
     englishName: 'Jane Austen',
     gender: 'female',
     videos: {
@@ -108,6 +114,7 @@ const AVATARS = [
   {
     id: 'elena',
     chineseName: '费兰特',
+    shortNamePinyin: 'Lán tè',
     englishName: 'Elena Ferrante',
     gender: 'female',
     videos: {
@@ -125,6 +132,7 @@ const AVATARS = [
   {
     id: 'liucixin',
     chineseName: '刘慈欣',
+    shortNamePinyin: 'Cí xīn',
     englishName: 'Liu Cixin',
     gender: 'male',
     videos: {
@@ -144,6 +152,7 @@ const AVATARS = [
   {
     id: 'vangogh',
     chineseName: '梵高',
+    shortNamePinyin: 'Fàn gāo',
     englishName: 'Vincent van Gogh',
     gender: 'male',
     videos: null,
@@ -158,6 +167,7 @@ const AVATARS = [
   {
     id: 'beauvoir',
     chineseName: '波伏娃',
+    shortNamePinyin: 'Fú wá',
     englishName: 'Simone de Beauvoir',
     gender: 'female',
     videos: null,
@@ -172,6 +182,7 @@ const AVATARS = [
   {
     id: 'woolf',
     chineseName: '伍尔夫',
+    shortNamePinyin: 'Ěr fū',
     englishName: 'Virginia Woolf',
     gender: 'female',
     videos: null,
@@ -186,6 +197,7 @@ const AVATARS = [
   {
     id: 'picasso',
     chineseName: '毕加索',
+    shortNamePinyin: 'Jiā suǒ',
     englishName: 'Pablo Picasso',
     gender: 'male',
     videos: null,
@@ -200,6 +212,7 @@ const AVATARS = [
   {
     id: 'sartre',
     chineseName: '萨特',
+    shortNamePinyin: 'Sà tè',
     englishName: 'Jean-Paul Sartre',
     gender: 'male',
     videos: null,
@@ -214,6 +227,7 @@ const AVATARS = [
   {
     id: 'yangjiang',
     chineseName: '杨绛',
+    shortNamePinyin: 'Yáng jiàng',
     englishName: 'Yang Jiang',
     gender: 'female',
     videos: null,
@@ -228,6 +242,7 @@ const AVATARS = [
   {
     id: 'sushi',
     chineseName: '苏轼',
+    shortNamePinyin: 'Sū Shì',
     englishName: 'Su Shi',
     gender: 'male',
     videos: null,

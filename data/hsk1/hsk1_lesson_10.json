@@ -149,7 +149,7 @@
     {
       "id": "hsk1_l10_12",
       "chinese": "一些",
-      "pinyin": "yīxiē",
+      "pinyin": "yì xiē",
       "tones": [
         1,
         1
@@ -238,7 +238,7 @@
     {
       "id": "hsk1_l10_p07",
       "chinese": "多一点",
-      "pinyin": "duō yīdiǎn",
+      "pinyin": "duō yì diǎn",
       "tones": [
         1,
         1,
@@ -250,7 +250,7 @@
     {
       "id": "hsk1_l10_p08",
       "chinese": "少一点",
-      "pinyin": "shǎo yīdiǎn",
+      "pinyin": "shǎo yì diǎn",
       "tones": [
         3,
         1,
@@ -274,7 +274,7 @@
     {
       "id": "hsk1_l10_p10",
       "chinese": "一些水果",
-      "pinyin": "yīxiē shuǐguǒ",
+      "pinyin": "yì xiē shuǐguǒ",
       "tones": [
         1,
         1,
@@ -342,14 +342,19 @@
         "A": {
           "name": "奥斯汀",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "但丁",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Tiān qì zěn me yàng"
     },
     {
       "id": 2,
@@ -371,7 +376,7 @@
         {
           "speaker": "A",
           "chinese": "你喝一些热茶吧。",
-          "pinyin": "Nǐ hē yīxiē rè chá ba.",
+          "pinyin": "Nǐ hē yì xiē rè chá ba.",
           "english": "Have some hot tea."
         },
         {
@@ -385,14 +390,19 @@
         "A": {
           "name": "妈妈",
           "role": "妈妈",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "māma",
+          "role_pinyin": "māma"
         },
         "B": {
           "name": "小刚",
           "role": "儿子",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Xiǎo gāng",
+          "role_pinyin": "ér zi"
         }
-      }
+      },
+      "title_pinyin": "Tài lěng le"
     },
     {
       "id": 3,
@@ -414,7 +424,7 @@
         {
           "speaker": "A",
           "chinese": "我们一起走吧。",
-          "pinyin": "Wǒmen yīqǐ zǒu ba.",
+          "pinyin": "Wǒmen yì qǐ zǒu ba.",
           "english": "Let's go together."
         }
       ],
@@ -422,14 +432,19 @@
         "A": {
           "name": "鲁迅",
           "role": "同学",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "tóng xué"
         },
         "B": {
           "name": "但丁",
           "role": "同学",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "tóng xué"
         }
-      }
+      },
+      "title_pinyin": "Xià yǔ le"
     },
     {
       "id": 4,
@@ -445,13 +460,13 @@
         {
           "speaker": "B",
           "chinese": "我想要大的。多一点。",
-          "pinyin": "Wǒ xiǎng yào dà de. Duō yīdiǎn.",
+          "pinyin": "Wǒ xiǎng yào dà de. Duō yì diǎn.",
           "english": "I want the big one. A little more."
         },
         {
           "speaker": "A",
           "chinese": "好的。你和我一起吃吧！",
-          "pinyin": "Hǎo de. Nǐ hé wǒ yīqǐ chī ba!",
+          "pinyin": "Hǎo de. Nǐ hé wǒ yì qǐ chī ba!",
           "english": "Okay. Let's eat together!"
         }
       ],
@@ -459,14 +474,19 @@
         "A": {
           "name": "伍尔夫",
           "role": "服务员",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Wú ěr fū",
+          "role_pinyin": "fú wù yuán"
         },
         "B": {
           "name": "加缪",
           "role": "顾客",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Jiā miù",
+          "role_pinyin": "gù kè"
         }
-      }
+      },
+      "title_pinyin": "Dà hái shì xiǎo"
     }
   ],
   "key_sentences": [
@@ -492,7 +512,7 @@
     },
     {
       "chinese": "多一点，少一点。",
-      "pinyin": "Duō yīdiǎn, shǎo yīdiǎn.",
+      "pinyin": "Duō yì diǎn, shǎo yì diǎn.",
       "english": "A little more, a little less."
     }
   ],

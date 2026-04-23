@@ -806,12 +806,16 @@
         "A": {
           "name": "妈妈",
           "role": "母亲",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "māma",
+          "role_pinyin": "mǔ qīn"
         },
         "B": {
           "name": "小明",
           "role": "儿子",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Xiǎo míng",
+          "role_pinyin": "ér zi"
         }
       },
       "lines": [
@@ -851,7 +855,8 @@
           "pinyin": "Hǎo ba, yīn wèi jī dàn zhēn hǎo chī!",
           "english": "Okay then, because eggs are really delicious!"
         }
-      ]
+      ],
+      "title_pinyin": "Chī fàn shí"
     },
     {
       "id": 2,
@@ -861,12 +866,16 @@
         "A": {
           "name": "奥斯汀",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -900,7 +909,8 @@
           "pinyin": "Hǎo, wǒ chī wán zhè wǎn jī dàn jiù bù chī le.",
           "english": "Okay, I'll finish this bowl of eggs and then stop eating."
         }
-      ]
+      ],
+      "title_pinyin": "Péng yǒu yì qǐ chī fàn"
     }
   ]
 }

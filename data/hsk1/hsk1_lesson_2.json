@@ -272,7 +272,7 @@
     {
       "id": "hsk1_l2_p07",
       "chinese": "一二三",
-      "pinyin": "yī èr sān",
+      "pinyin": "yí èr sān",
       "tones": [
         1,
         2,
@@ -871,14 +871,19 @@
         "A": {
           "name": "波伏娃",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Nǐ duō dà"
     },
     {
       "id": 2,
@@ -908,14 +913,19 @@
         "A": {
           "name": "波伏娃",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Jǐ gè péng yǒu"
     },
     {
       "id": 3,
@@ -945,14 +955,19 @@
         "A": {
           "name": "波伏娃",
           "role": "同学",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "tóng xué"
         },
         "B": {
           "name": "但丁",
           "role": "同学",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "tóng xué"
         }
-      }
+      },
+      "title_pinyin": "Shuō shù zì"
     }
   ]
 }

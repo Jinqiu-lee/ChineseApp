@@ -1,5 +1,6 @@
 // ── Image data — single consolidated file per level ──────────────────────
 const HSK1_IMAGES = require('../data/hsk1/hsk1_images/hsk1_images.json');
+const { EXERCISE_IMAGES } = require('./exerciseImages');
 
 const _imageCache = {};
 function getImageData(lessonNumber) {
@@ -14,6 +15,13 @@ function getImageData(lessonNumber) {
   return _imageCache[key];
 }
 
+// Attach localAsset if a bundled image exists for this image entry's id.
+function withLocalAsset(img) {
+  if (!img) return img;
+  const asset = EXERCISE_IMAGES[img.id];
+  return asset != null ? { ...img, localAsset: asset } : img;
+}
+
 // ── Image exercise factories ──────────────────────────────────────────────
 // Returns one "image" entry for a vocab word (picks by imageIndex for variety)
 function pickImage(chinese, lessonNumber, imageIndex = 0) {
@@ -21,7 +29,7 @@ function pickImage(chinese, lessonNumber, imageIndex = 0) {
   const entry = imgData[chinese];
   if (!entry || !entry.images || entry.images.length === 0) return null;
   const img = entry.images[imageIndex % entry.images.length];
-  return { ...img, color: entry.color };
+  return withLocalAsset({ ...img, color: entry.color });
 }
 
 function pickRandomImage(chinese, lessonNumber) {
@@ -29,7 +37,7 @@ function pickRandomImage(chinese, lessonNumber) {
   const entry = imgData[chinese];
   if (!entry || !entry.images || entry.images.length === 0) return null;
   const img = entry.images[Math.floor(Math.random() * entry.images.length)];
-  return { ...img, color: entry.color };
+  return withLocalAsset({ ...img, color: entry.color });
 }
 
 function makeImageToWord(vocabItem, allVocab, lessonNumber, imageIndex = 0) {

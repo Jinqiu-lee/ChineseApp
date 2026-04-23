@@ -327,15 +327,20 @@
       "speakers": {
         "A": {
           "name": "伍尔夫",
-          "role": "服务员",
-          "gender": "female"
+          "role": "朋友",
+          "gender": "female",
+          "name_pinyin": "Wú ěr fū",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "苏轼",
-          "role": "顾客",
-          "gender": "male"
+          "role": "朋友",
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "péng yǒu"
         }
-      }
+      },
+      "title_pinyin": "Zài cān tīng"
     },
     {
       "id": 2,
@@ -364,15 +369,20 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "朋友",
-          "gender": "female"
+          "role": "主人",
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "zhǔ rén"
         },
         "B": {
           "name": "但丁",
-          "role": "朋友",
-          "gender": "male"
+          "role": "客人",
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "kè rén"
         }
-      }
+      },
+      "title_pinyin": "Hē shén me"
     },
     {
       "id": 3,
@@ -402,14 +412,19 @@
         "A": {
           "name": "鲁迅",
           "role": "主人",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "zhǔ rén"
         },
         "B": {
           "name": "加缪",
           "role": "客人",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Jiā miù",
+          "role_pinyin": "kè rén"
         }
-      }
+      },
+      "title_pinyin": "Qǐng hē chá"
     },
     {
       "id": 4,
@@ -439,14 +454,19 @@
         "A": {
           "name": "奥斯汀",
           "role": "同学",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "tóng xué"
         },
         "B": {
           "name": "苏轼",
           "role": "同学",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "tóng xué"
         }
-      }
+      },
+      "title_pinyin": "Xiǎng chī shén me"
     },
     {
       "id": 5,
@@ -476,14 +496,19 @@
         "A": {
           "name": "伍尔夫",
           "role": "咖啡师",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Wú ěr fū",
+          "role_pinyin": "kā fēi shī"
         },
         "B": {
           "name": "但丁",
           "role": "顾客",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "gù kè"
         }
-      }
+      },
+      "title_pinyin": "Yì bēi kā fēi"
     },
     {
       "id": 6,
@@ -513,14 +538,19 @@
         "A": {
           "name": "妈妈",
           "role": "妈妈",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "māma",
+          "role_pinyin": "māma"
         },
         "B": {
           "name": "小刚",
           "role": "儿子",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Xiǎo gāng",
+          "role_pinyin": "ér zi"
         }
-      }
+      },
+      "title_pinyin": "Chī cài hē shuǐ"
     }
   ],
   "key_sentences": [
@@ -551,7 +581,7 @@
     },
     {
       "chinese": "一杯咖啡",
-      "pinyin": "Yī bēi kā fēi",
+      "pinyin": "Yì bēi kā fēi",
       "english": "A cup of coffee"
     }
   ],

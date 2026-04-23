@@ -910,12 +910,16 @@
         "A": {
           "name": "妈妈",
           "role": "妈妈",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "māma",
+          "role_pinyin": "māma"
         },
         "B": {
           "name": "小明",
           "role": "儿子",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Xiǎo míng",
+          "role_pinyin": "ér zi"
         }
       },
       "lines": [
@@ -949,7 +953,8 @@
           "pinyin": "Nà nǐ hǎo hāo xiū xi, bù shū fú jiù chī yào.",
           "english": "Then rest well; if you feel unwell, take medicine."
         }
-      ]
+      ],
+      "title_pinyin": "Nǐ lěng bù lěng"
     },
     {
       "id": 2,
@@ -959,12 +964,16 @@
         "A": {
           "name": "波伏娃",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "李白",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǐ Bái",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -1004,7 +1013,8 @@
           "pinyin": "Xiè xie nǐ! Yǐ hòu wǒ bú huì zài chuān tài shǎo le.",
           "english": "Thank you! I won't wear too little again in the future."
         }
-      ]
+      ],
+      "title_pinyin": "Bù shū fú"
     }
   ]
 }

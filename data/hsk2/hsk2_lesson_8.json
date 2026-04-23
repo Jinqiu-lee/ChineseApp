@@ -794,12 +794,16 @@
         "A": {
           "name": "奥斯汀",
           "role": "学生",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "xué shēng"
         },
         "B": {
           "name": "李老师",
           "role": "老师",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Lǐ lǎo shī",
+          "role_pinyin": "lǎo shī"
         }
       },
       "lines": [
@@ -833,7 +837,8 @@
           "pinyin": "Hǎo de, dà jiā yě bù dǒng, wǒ men yì qǐ děng.",
           "english": "Okay; everyone else also doesn't understand; we'll wait together."
         }
-      ]
+      ],
+      "title_pinyin": "Tīng bù dǒng"
     },
     {
       "id": 2,
@@ -843,12 +848,16 @@
         "A": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "奥斯汀",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -882,7 +891,8 @@
           "pinyin": "Nǐ dǒng wǒ de yì si! duì, dà jiā yì qǐ qù!",
           "english": "You understand my meaning! Yes — everyone goes together!"
         }
-      ]
+      ],
+      "title_pinyin": "Shāng liáng jì huà"
     }
   ]
 }

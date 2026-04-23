@@ -800,12 +800,16 @@
         "A": {
           "name": "但丁",
           "role": "学生",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Dàn dīng",
+          "role_pinyin": "xué shēng"
         },
         "B": {
           "name": "奥斯汀",
           "role": "学生",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "xué shēng"
         }
       },
       "lines": [
@@ -845,7 +849,8 @@
           "pinyin": "Xià cì kǎo shì qián, dà jiā yì qǐ fù xí ba!",
           "english": "Before the next exam, let's all study together!"
         }
-      ]
+      ],
+      "title_pinyin": "Kǎo shì yǐ hòu"
     },
     {
       "id": 2,
@@ -855,12 +860,16 @@
         "A": {
           "name": "鲁迅",
           "role": "学生",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "xué shēng"
         },
         "B": {
           "name": "苏轼",
           "role": "学生",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "xué shēng"
         }
       },
       "lines": [
@@ -894,7 +903,8 @@
           "pinyin": "Xiè xie, wǒ dǒng le! Wǒ bǎ dá àn gǎi wán jiù hǎo le.",
           "english": "Thank you; I understand now! Once I've corrected the answer, it'll be fine."
         }
-      ]
+      ],
+      "title_pinyin": "Bāng zhù tóng xué"
     }
   ]
 }

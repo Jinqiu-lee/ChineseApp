@@ -821,12 +821,16 @@
         "A": {
           "name": "伍尔夫",
           "role": "顾客",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Wú ěr fū",
+          "role_pinyin": "gù kè"
         },
         "B": {
           "name": "服务员",
           "role": "店员",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "fú wù yuán",
+          "role_pinyin": "diàn yuán"
         }
       },
       "lines": [
@@ -851,7 +855,7 @@
         {
           "speaker": "B",
           "chinese": "有，拿这件吧，一百二，很便宜。",
-          "pinyin": "Yǒu, ná zhè jiàn ba, yī bǎi èr, hěn pián yi.",
+          "pinyin": "Yǒu, ná zhè jiàn ba, yì bǎi èr, hěn pián yi.",
           "english": "Yes, take this one; it's 120 yuan, very cheap."
         },
         {
@@ -866,7 +870,8 @@
           "pinyin": "Hǎo de, chuān qǐ lái fēi cháng hǎo kàn, nǐ péng you yí dìng hěn kuài lè!",
           "english": "Sure; it looks great when worn; your friend will definitely be very happy!"
         }
-      ]
+      ],
+      "title_pinyin": "Zài fú zhuāng diàn"
     },
     {
       "id": 2,
@@ -876,12 +881,16 @@
         "A": {
           "name": "苏轼",
           "role": "买家",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "mǎi jiā"
         },
         "B": {
           "name": "鲁迅",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -915,7 +924,8 @@
           "pinyin": "Hǎo, wǒ men yì qǐ mǎi, sòng gěi māma, tā yí dìng hěn kuài lè!",
           "english": "Good, we'll buy together and give it to mum — she will definitely be very happy!"
         }
-      ]
+      ],
+      "title_pinyin": "Mǎi lǐ wù"
     }
   ]
 }

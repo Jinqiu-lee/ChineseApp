@@ -144,6 +144,6 @@ const styles = StyleSheet.create({
   cellMatched:  { backgroundColor: '#e8f5e9', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.success, minHeight: 64 },
   cellWrong:    { backgroundColor: '#fde8e8', borderRadius: 14, padding: 14, alignItems: 'center', justifyContent: 'center', borderWidth: 2, borderColor: VG.error, minHeight: 64 },
   cellChinese: { fontSize: 22, fontWeight: '800', color: VG.cream },
-  cellPinyin:  { fontSize: 9, color: VG.orange, fontStyle: 'italic', marginTop: 3 },
+  cellPinyin:  { fontSize: 12, color: VG.orange, fontStyle: 'italic', marginTop: 3 },
   cellEnglish: { fontSize: 13, fontWeight: '800', color: VG.cream, textAlign: 'center', lineHeight: 18 },
 });

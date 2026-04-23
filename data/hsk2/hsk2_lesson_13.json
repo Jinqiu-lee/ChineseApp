@@ -906,12 +906,16 @@
         "A": {
           "name": "波伏娃",
           "role": "朋友",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Bō fú wá",
+          "role_pinyin": "péng yǒu"
         },
         "B": {
           "name": "加缪",
           "role": "朋友",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Jiā miù",
+          "role_pinyin": "péng yǒu"
         }
       },
       "lines": [
@@ -945,7 +949,8 @@
           "pinyin": "Dēng kāi zhe. Nǐ zuò zhe děng yí xià, wǒ qù kàn kàn.",
           "english": "The light is on. Sit and wait a moment; I'll go check."
         }
-      ]
+      ],
+      "title_pinyin": "Shén me kāi zhe"
     },
     {
       "id": 2,
@@ -955,12 +960,16 @@
         "A": {
           "name": "奥斯汀",
           "role": "同学",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ào sī tīng",
+          "role_pinyin": "tóng xué"
         },
         "B": {
           "name": "苏轼",
           "role": "同学",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Sū Shì",
+          "role_pinyin": "tóng xué"
         }
       },
       "lines": [
@@ -979,7 +988,7 @@
         {
           "speaker": "A",
           "chinese": "还没来。你写字吧，别站着什么都不做。",
-          "pinyin": "Hái méi lái. Nǐ xiě zì ba, bié zhàn zhe shén me dōu bù zuò.",
+          "pinyin": "Hái méi lái. Nǐ xiě zì ba, bié zhàn zhe shén me dōu bú zuò.",
           "english": "Not yet. Write something; don't just stand there doing nothing."
         },
         {
@@ -1000,7 +1009,8 @@
           "pinyin": "Ò, kàn jiàn le! Xiè xie nǐ.",
           "english": "Oh, I see it now! Thank you."
         }
-      ]
+      ],
+      "title_pinyin": "Děng péng yǒu"
     }
   ]
 }
