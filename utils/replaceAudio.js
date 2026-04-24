@@ -27,4 +27,7 @@ export const REPLACE_AUDIO = {
   '姐姐': require('../assets/audio/pinyin/tones/jie3_jie0.mp3'),
   // 有 — use local you3.mp3 for accurate 3rd-tone pronunciation
   '有': require('../assets/audio/pinyin/tones/you3.mp3'),
+  // 给 — Google TTS sometimes mispronounces as jǐ (classical/formal reading);
+  // use local gei3.mp3 to ensure correct gěi (give) pronunciation
+  '给': require('../assets/audio/pinyin/tones/gei3.mp3'),
 };
