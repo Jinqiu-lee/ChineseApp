@@ -53,6 +53,10 @@ const COMPOUND_PHONEME_OVERRIDES = {
   '不了': [['不', 'bu4'], ['了', 'le0']],
   // 加缪 — surname 缪 is read miu4 (not miao4) for the name Camus
   '加缪': [['加', 'jia1'], ['缪', 'miu4']],
+  // 旅行 — travel; 行 = xíng (xing2), not háng.
+  // POLYPHONIC_RULES default excludes 旅 from háng triggers, but this compound
+  // override is an extra safeguard so buildSSML always forces xing2 explicitly.
+  '旅行': [['旅', 'lv3'], ['行', 'xing2']],
   // 大夫 — colloquial word for doctor: 大 is dài (dai4), not dà (da4)
   '大夫': [['大', 'dai4'], ['夫', 'fu0']],
   // 体重 — always zhòng4 (body weight); prevents word-boundary false trigger
@@ -120,7 +124,9 @@ const POLYPHONIC_RULES = [
     char: '行',
     resolve: (chars, i) => {
       const prev = chars[i - 1] || '';
-      return '银商旅同业'.includes(prev) ? 'hang2' : 'xing2';
+      // háng only when preceded by 银(bank)/商(firm)/同(same trade)
+      // NOTE: 旅 is intentionally excluded — 旅行 is always xíng (travel), never háng.
+      return '银商同'.includes(prev) ? 'hang2' : 'xing2';
     },
   },
   {

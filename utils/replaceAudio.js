@@ -42,6 +42,17 @@ export const REPLACE_AUDIO = {
   // 背 — polyphonic (bēi = carry on back vs bèi = back/memorise); standalone 背 → bēi.
   // Google TTS defaults to bèi in isolation; use pre-generated file.
   '背': require('../assets/audio/replace_audios/bei1_standalone.mp3'),
+  // 旅行 — POLYPHONIC_RULES wrongly triggered háng (旅 was in the háng-prev set).
+  // Fixed in POLYPHONIC_RULES and COMPOUND_PHONEME_OVERRIDES, but pre-generated
+  // audio is also provided since Google TTS ignores phoneme tags for 行.
+  '旅行': require('../assets/audio/replace_audios/lvxing2.mp3'),
+  '旅行计划': require('../assets/audio/replace_audios/lvxing2_jihua.mp3'),
+  // hsk3 L15 D1 lines — 但丁 (dante) voice
+  '波伏娃，我们去北京旅行的事，你都准备好了吗？': require('../assets/audio/replace_audios/lvxing_bfwa_line1.mp3'),
+  '好！那我们几乎每天都安排了一个景点。总的来说这次旅行应该很棒！': require('../assets/audio/replace_audios/lvxing_bfwa_line2.mp3'),
+  // hsk5 L1 dialogue lines
+  '目前没有推迟，预计准时起飞。祝您旅行顺利！': require('../assets/audio/replace_audios/lvxing_cixin_line.mp3'),
+  '我是来申请旅行签证的，导游说要带很多证明文件。': require('../assets/audio/replace_audios/lvxing_woolf_line.mp3'),
   // hsk3 L9 D1: 地道 should be dì dào (authentic), not de+dào.
   '哪里！你的进步很大，已经说得很地道了，真赞！': require('../assets/audio/replace_audios/didao_line.mp3'),
   // 够喝了 — 喝 is hē (drink) not hè (shout); Google TTS defaults to hè here.
