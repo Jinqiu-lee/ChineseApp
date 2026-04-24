@@ -30,6 +30,9 @@ export const REPLACE_AUDIO = {
   // 给 — Google TTS sometimes mispronounces as jǐ (classical/formal reading);
   // use user-recorded gei3_user.mp3 for correct gěi (give) pronunciation
   '给': require('../assets/audio/replace_audios/gei3_user.mp3'),
+  // 行 — polyphonic (xíng = ok/travel vs háng = profession/row); standalone 行 means "ok" → xíng (xing2).
+  // Google TTS defaults to háng in isolation; use pre-generated file.
+  '行': require('../assets/audio/replace_audios/xing2.mp3'),
   // 长 — polyphonic (cháng = long vs zhǎng = grow); standalone 长 here means "long" → cháng (chang2).
   // Google TTS defaults to zhǎng in isolation; use pre-generated file.
   '长': require('../assets/audio/replace_audios/chang2.mp3'),
