@@ -21,8 +21,8 @@
       "pinyin": "guò qù",
       "english": "Go over (away from speaker)",
       "part_of_speech": "directional complement",
-      "example": "你走进来之后，往左边走过去。",
-      "translation": "After you walk in, go over to the left."
+      "example": "你走进来之后，从左边走过去。",
+      "translation": "After you walk in, go over through the left."
     },
     {
       "id": "hsk3_l14_03",
@@ -57,7 +57,7 @@
       "pinyin": "chū qù",
       "english": "Go out",
       "part_of_speech": "directional complement",
-      "example": "她走出去了，去买东西。",
+      "example": "她走出去买东西了。",
       "translation": "She went out to buy things."
     },
     {
@@ -212,7 +212,7 @@
         {
           "chinese": "他跑进来了。",
           "pinyin": "Tā pǎo jìn lái le.",
-          "english": "He ran in (towards me)."
+          "english": "He ran inside (towards me)."
         },
         {
           "chinese": "她走出去了。",
@@ -233,7 +233,7 @@
           ]
         },
         {
-          "question": "Which means 'go in (away from speaker)'?",
+          "question": "Which means 'go in (away from speaker or enter somewhere)'?",
           "type": "multiple_choice",
           "correct": "进去",
           "options": [
@@ -250,7 +250,7 @@
           ]
         },
         {
-          "question": "Fill in: 他跑___了。(He ran in towards me.)",
+          "question": "Fill in: 他跑___了。(He ran inside. (towards me))",
           "type": "multiple_choice",
           "correct": "进来",
           "options": [
@@ -748,14 +748,16 @@
       "title_chinese": "在楼里指路",
       "speakers": {
         "A": {
-          "name": "波伏娃",
+          "name": "爱玲",
           "role": "同事",
-          "gender": "female"
+          "gender": "female",
+          "name_pinyin": "Ài líng"
         },
         "B": {
-          "name": "加缪",
+          "name": "鲁迅",
           "role": "同事",
-          "gender": "male"
+          "gender": "male",
+          "name_pinyin": "Lǔ Xùn"
         }
       },
       "lines": [
