@@ -30,6 +30,11 @@ export const REPLACE_AUDIO = {
   // 给 — Google TTS sometimes mispronounces as jǐ (classical/formal reading);
   // use user-recorded gei3_user.mp3 for correct gěi (give) pronunciation
   '给': require('../assets/audio/replace_audios/gei3_user.mp3'),
+  // 长 — polyphonic (cháng = long vs zhǎng = grow); standalone 长 here means "long" → cháng (chang2).
+  // Google TTS defaults to zhǎng in isolation; use pre-generated file.
+  '长': require('../assets/audio/replace_audios/chang2.mp3'),
+  // 头发比较长 — 长 = cháng (long hair); force cháng so TTS doesn't read it as zhǎng.
+  '头发比较长': require('../assets/audio/replace_audios/toufa_bijiao_chang2.mp3'),
   // 还 — polyphonic (hái vs huán); here standalone 还 means "still/also" → hái (hai2).
   // Google TTS ignores the phoneme tag override in some contexts; use pre-generated file.
   '还': require('../assets/audio/replace_audios/hai2.mp3'),
