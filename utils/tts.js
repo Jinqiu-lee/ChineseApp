@@ -3,7 +3,7 @@ import * as FileSystem from 'expo-file-system/legacy';
 import { GOOGLE_API_KEY } from '../config/googleApiKey';
 import AVATAR_VOICES from '../config/avatarVoices';
 import { PINYIN_AUDIO } from './pinyinAudio';
-import { REPLACE_AUDIO } from './replaceAudio';
+import { REPLACE_AUDIO, REPLACE_AUDIO_BY_PINYIN } from './replaceAudio';
 
 const ELEVENLABS_API_KEY = process.env.EXPO_PUBLIC_ELEVENLABS_API_KEY || '';
 
@@ -586,8 +586,27 @@ export async function speakAsAvatar(text, avatarId = 'eileen') {
   }
 }
 
-export async function speakChinese(text, gender = 'female') {
-  // ── 0. Check for user-uploaded replacement audio (exact match) ───────────
+// speakChinese(text, gender, pinyinHint)
+// pinyinHint — optional diacritic pinyin string from the vocabulary entry
+// (e.g. 'hái', 'huán'). Used to disambiguate polyphonic single-character
+// vocabulary words via REPLACE_AUDIO_BY_PINYIN before falling back to TTS.
+export async function speakChinese(text, gender = 'female', pinyinHint = null) {
+  // ── 0a. Pinyin-keyed replacement (polyphonic vocab disambiguation) ────────
+  if (pinyinHint) {
+    // Build lookup key: join numbered form of each syllable with '_'
+    const numbered = pinyinHint.trim().split(/\s+/).map(pinyinToNumbered).join('_');
+    const key = `${text}_${numbered}`;
+    const asset = REPLACE_AUDIO_BY_PINYIN[key];
+    if (asset) {
+      try {
+        return await playLocalAudio(asset, text);
+      } catch (err) {
+        console.warn('speakChinese: pinyin-keyed replacement failed, falling through:', err);
+      }
+    }
+  }
+
+  // ── 0b. Check for replacement audio (exact text match) ───────────────────
   if (REPLACE_AUDIO[text]) {
     try {
       return await playLocalAudio(REPLACE_AUDIO[text], text);

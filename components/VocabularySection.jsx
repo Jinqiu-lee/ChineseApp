@@ -110,7 +110,7 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
           )}
           <TouchableOpacity
             style={[styles.audioBtn, isPhrase && styles.audioBtnPhrase]}
-            onPress={() => speakChinese(item.chinese)}
+            onPress={() => speakChinese(item.chinese, 'female', item.pinyin)}
           >
             <Text style={styles.audioBtnText}>🔊 Play Word</Text>
           </TouchableOpacity>
