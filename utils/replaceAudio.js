@@ -30,4 +30,11 @@ export const REPLACE_AUDIO = {
   // 给 — Google TTS sometimes mispronounces as jǐ (classical/formal reading);
   // use user-recorded gei3_user.mp3 for correct gěi (give) pronunciation
   '给': require('../assets/audio/replace_audios/gei3_user.mp3'),
+  // 还 — polyphonic (hái vs huán); here standalone 还 means "still/also" → hái (hai2).
+  // Google TTS ignores the phoneme tag override in some contexts; use pre-generated file.
+  '还': require('../assets/audio/replace_audios/hai2.mp3'),
+  // 不了，谢谢，我已经饱了。 — 不了 as declining particle must be bù le (bu4+le0),
+  // not bù liǎo (potential complement). Google TTS ignores le0 phoneme tag for 了,
+  // so use pre-generated audio with the correct reading.
+  '不了，谢谢，我已经饱了。': require('../assets/audio/replace_audios/bu4_le_xiexi.mp3'),
 };
