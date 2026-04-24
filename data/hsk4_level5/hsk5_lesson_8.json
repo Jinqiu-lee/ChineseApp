@@ -175,7 +175,7 @@
     },
     {
       "chinese": "祖孙之间的代沟需要彼此多一些耐心和理解才能跨越。",
-      "pinyin": "Zǔ sūn zhī jiān de dài gōu xū yào bǐ cǐ duō yī xiē nài xīn hé lǐ jiě cái néng kuà yuè.",
+      "pinyin": "Zǔ sūn zhī jiān de dài gōu xū yào bǐ cǐ duō yì xiē nài xīn hé lǐ jiě cái néng kuà yuè.",
       "english": "The generation gap between grandparents and grandchildren requires mutual patience and understanding to bridge."
     },
     {
@@ -185,7 +185,7 @@
     },
     {
       "chinese": "他宁可一个人承担所有压力，也不愿让家人为自己担心。",
-      "pinyin": "Tā nìng kě yī gè rén chéng dān suǒ yǒu yā lì, yě bú yuàn ràng jiā rén wèi zì jǐ dān xīn.",
+      "pinyin": "Tā nìng kě yí gè rén chéng dān suǒ yǒu yā lì, yě bú yuàn ràng jiā rén wèi zì jǐ dān xīn.",
       "english": "He would rather bear all the pressure alone than let his family worry about him."
     }
   ],
@@ -211,9 +211,22 @@
           "question": "两代人之间需要 _____ 包容，才能减少代沟的影响。",
           "type": "multiple_choice",
           "correct": "彼此",
-          "options": ["彼此", "宁可", "之所以", "是因为"],
-          "option_pinyin": ["bǐ cǐ", "nìng kě", "zhī suǒ yǐ", "shì yīn wèi"],
-          "word_hints": {"包容": "bāo róng", "代沟": "dài gōu"}
+          "options": [
+            "彼此",
+            "宁可",
+            "之所以",
+            "是因为"
+          ],
+          "option_pinyin": [
+            "bǐ cǐ",
+            "nìng kě",
+            "zhī suǒ yǐ",
+            "shì yīn wèi"
+          ],
+          "word_hints": {
+            "包容": "bāo róng",
+            "代沟": "dài gōu"
+          }
         },
         {
           "question": "Choose the sentence that uses 彼此 correctly.",
@@ -231,7 +244,10 @@
             "Tā men xìn rèn bǐ cǐ cóng lái, bù chǎn shēng máo dùn.",
             "Cóng lái bù chǎn shēng máo dùn, bǐ cǐ tā men xìn rèn."
           ],
-          "word_hints": {"矛盾": "máo dùn", "信任": "xìn rèn"}
+          "word_hints": {
+            "矛盾": "máo dùn",
+            "信任": "xìn rèn"
+          }
         },
         {
           "question": "What does 彼此 mean?",
@@ -243,23 +259,51 @@
             "The reason why",
             "Tolerance"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "亲戚之间 _____ 理解，才能保持良好的关系。",
           "type": "multiple_choice",
           "correct": "彼此",
-          "options": ["彼此", "宁可", "之所以", "除非"],
-          "option_pinyin": ["bǐ cǐ", "nìng kě", "zhī suǒ yǐ", "chú fēi"],
-          "word_hints": {"亲戚": "qīn qi", "关系": "guān xi"}
+          "options": [
+            "彼此",
+            "宁可",
+            "之所以",
+            "除非"
+          ],
+          "option_pinyin": [
+            "bǐ cǐ",
+            "nìng kě",
+            "zhī suǒ yǐ",
+            "chú fēi"
+          ],
+          "word_hints": {
+            "亲戚": "qīn qi",
+            "关系": "guān xi"
+          }
         },
         {
           "question": "Which word is 彼此 most similar to in meaning?",
           "type": "multiple_choice",
           "correct": "互相",
-          "options": ["互相", "自己", "彼岸", "各自"],
-          "option_pinyin": ["hù xiāng", "zì jǐ", "bǐ àn", "gè zì"],
+          "options": [
+            "互相",
+            "自己",
+            "彼岸",
+            "各自"
+          ],
+          "option_pinyin": [
+            "hù xiāng",
+            "zì jǐ",
+            "bǐ àn",
+            "gè zì"
+          ],
           "word_hints": {}
         }
       ]
@@ -285,9 +329,21 @@
           "question": "她 _____ 一个人解决矛盾，也不愿意让父母操心。",
           "type": "multiple_choice",
           "correct": "宁可",
-          "options": ["宁可", "彼此", "之所以", "是因为"],
-          "option_pinyin": ["nìng kě", "bǐ cǐ", "zhī suǒ yǐ", "shì yīn wèi"],
-          "word_hints": {"矛盾": "máo dùn"}
+          "options": [
+            "宁可",
+            "彼此",
+            "之所以",
+            "是因为"
+          ],
+          "option_pinyin": [
+            "nìng kě",
+            "bǐ cǐ",
+            "zhī suǒ yǐ",
+            "shì yīn wèi"
+          ],
+          "word_hints": {
+            "矛盾": "máo dùn"
+          }
         },
         {
           "question": "Choose the correct sentence using 宁可…也不….",
@@ -305,7 +361,9 @@
             "Fù mǔ yě bú nìng kě, zì jǐ xīn kǔ ràng hái zi shòu kǔ.",
             "Ràng hái zi shòu kǔ fù mǔ, nìng kě yě bú zì jǐ xīn kǔ."
           ],
-          "word_hints": {"养育": "yǎng yù"}
+          "word_hints": {
+            "养育": "yǎng yù"
+          }
         },
         {
           "question": "Which sentence uses 宁可…也不… correctly?",
@@ -317,16 +375,33 @@
             "宁可他多花时间，也不愿意降低质量。",
             "他宁可愿意降低质量，也不多花时间。"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "他宁可减少娱乐时间，_____ 让家庭关系受到影响。",
           "type": "multiple_choice",
           "correct": "也不",
-          "options": ["也不", "彼此", "之所以", "是因为"],
-          "option_pinyin": ["yě bù", "bǐ cǐ", "zhī suǒ yǐ", "shì yīn wèi"],
-          "word_hints": {"关系": "guān xi"}
+          "options": [
+            "也不",
+            "彼此",
+            "之所以",
+            "是因为"
+          ],
+          "option_pinyin": [
+            "yě bù",
+            "bǐ cǐ",
+            "zhī suǒ yǐ",
+            "shì yīn wèi"
+          ],
+          "word_hints": {
+            "关系": "guān xi"
+          }
         },
         {
           "question": "Which sentence uses 宁可 correctly?",
@@ -338,7 +413,12 @@
             "他走路宁可，也不想坐公交车。",
             "他宁可也不想走路，坐公交车。"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -364,9 +444,22 @@
           "question": "他们 _____ 产生矛盾，是因为沟通太少了。",
           "type": "multiple_choice",
           "correct": "之所以",
-          "options": ["之所以", "彼此", "宁可", "也不"],
-          "option_pinyin": ["zhī suǒ yǐ", "bǐ cǐ", "nìng kě", "yě bù"],
-          "word_hints": {"矛盾": "máo dùn", "沟通": "gōu tōng"}
+          "options": [
+            "之所以",
+            "彼此",
+            "宁可",
+            "也不"
+          ],
+          "option_pinyin": [
+            "zhī suǒ yǐ",
+            "bǐ cǐ",
+            "nìng kě",
+            "yě bù"
+          ],
+          "word_hints": {
+            "矛盾": "máo dùn",
+            "沟通": "gōu tōng"
+          }
         },
         {
           "question": "Choose the sentence that uses 之所以…是因为… correctly.",
@@ -384,7 +477,9 @@
             "Tā zhè me zūn zhòng zhǎng bèi zhī suǒ yǐ, cóng xiǎo shì yīn wèi bèi jiào yù yào xiào shùn.",
             "Cóng xiǎo bèi jiào yù yào xiào shùn, tā zhī suǒ yǐ zhè me shì yīn wèi zūn zhòng zhǎng bèi."
           ],
-          "word_hints": {"尊重": "zūn zhòng"}
+          "word_hints": {
+            "尊重": "zūn zhòng"
+          }
         },
         {
           "question": "Which sentence uses 之所以...是因为... correctly?",
@@ -396,16 +491,33 @@
             "他成功之所以，是因为坚持不懈地努力。",
             "他之所以是因为成功，坚持不懈地努力。"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "父母之所以这么辛苦养育孩子，_____ 他们希望孩子有美好的未来。",
           "type": "multiple_choice",
           "correct": "是因为",
-          "options": ["是因为", "也不", "彼此", "宁可"],
-          "option_pinyin": ["shì yīn wèi", "yě bù", "bǐ cǐ", "nìng kě"],
-          "word_hints": {"养育": "yǎng yù"}
+          "options": [
+            "是因为",
+            "也不",
+            "彼此",
+            "宁可"
+          ],
+          "option_pinyin": [
+            "shì yīn wèi",
+            "yě bù",
+            "bǐ cǐ",
+            "nìng kě"
+          ],
+          "word_hints": {
+            "养育": "yǎng yù"
+          }
         },
         {
           "question": "Which part of the 之所以…是因为… structure contains the outcome or known result?",
@@ -417,7 +529,12 @@
             "The subject of the sentence",
             "The final clause of the sentence"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -443,70 +560,145 @@
       "question": "What does 亲戚 mean?",
       "type": "multiple_choice",
       "correct": "Relative; family member",
-      "options": ["Relative; family member", "Neighbour", "Friend", "Colleague"],
-      "word_hints": {"亲戚": "qīn qi"}
+      "options": [
+        "Relative; family member",
+        "Neighbour",
+        "Friend",
+        "Colleague"
+      ],
+      "word_hints": {
+        "亲戚": "qīn qi"
+      }
     },
     {
       "question": "Which word means 'contradiction; conflict; disagreement'?",
       "type": "multiple_choice",
       "correct": "矛盾",
-      "options": ["沟通", "矛盾", "理解", "包容"],
-      "word_hints": {"沟通": "gōu tōng", "矛盾": "máo dùn", "理解": "lǐ jiě", "包容": "bāo róng"}
+      "options": [
+        "沟通",
+        "矛盾",
+        "理解",
+        "包容"
+      ],
+      "word_hints": {
+        "沟通": "gōu tōng",
+        "矛盾": "máo dùn",
+        "理解": "lǐ jiě",
+        "包容": "bāo róng"
+      }
     },
     {
       "question": "What does 代沟 mean?",
       "type": "multiple_choice",
       "correct": "Generation gap",
-      "options": ["Generation gap", "Family harmony", "Responsibility", "Communication"],
-      "word_hints": {"代沟": "dài gōu"}
+      "options": [
+        "Generation gap",
+        "Family harmony",
+        "Responsibility",
+        "Communication"
+      ],
+      "word_hints": {
+        "代沟": "dài gōu"
+      }
     },
     {
       "question": "Which word means 'to respect; respect'?",
       "type": "multiple_choice",
       "correct": "尊重",
-      "options": ["信任", "尊重", "理解", "养育"],
-      "word_hints": {"信任": "xìn rèn", "尊重": "zūn zhòng", "理解": "lǐ jiě", "养育": "yǎng yù"}
+      "options": [
+        "信任",
+        "尊重",
+        "理解",
+        "养育"
+      ],
+      "word_hints": {
+        "信任": "xìn rèn",
+        "尊重": "zūn zhòng",
+        "理解": "lǐ jiě",
+        "养育": "yǎng yù"
+      }
     },
     {
       "question": "What does 包容 mean?",
       "type": "multiple_choice",
       "correct": "Tolerance; to be tolerant of",
-      "options": ["Tolerance; to be tolerant of", "Responsibility", "Trust", "Relationship"],
-      "word_hints": {"包容": "bāo róng"}
+      "options": [
+        "Tolerance; to be tolerant of",
+        "Responsibility",
+        "Trust",
+        "Relationship"
+      ],
+      "word_hints": {
+        "包容": "bāo róng"
+      }
     },
     {
       "question": "Which word means 'to raise and educate; to nurture'?",
       "type": "multiple_choice",
       "correct": "养育",
-      "options": ["沟通", "责任", "养育", "和睦"],
-      "word_hints": {"沟通": "gōu tōng", "责任": "zé rèn", "养育": "yǎng yù", "和睦": "hé mù"}
+      "options": [
+        "沟通",
+        "责任",
+        "养育",
+        "和睦"
+      ],
+      "word_hints": {
+        "沟通": "gōu tōng",
+        "责任": "zé rèn",
+        "养育": "yǎng yù",
+        "和睦": "hé mù"
+      }
     },
     {
       "question": "What does the phrase 家庭和睦 mean?",
       "type": "multiple_choice",
       "correct": "Family harmony",
-      "options": ["Family harmony", "Generation gap", "Mutual understanding", "Building trust"],
-      "word_hints": {"和睦": "hé mù"}
+      "options": [
+        "Family harmony",
+        "Generation gap",
+        "Mutual understanding",
+        "Building trust"
+      ],
+      "word_hints": {
+        "和睦": "hé mù"
+      }
     },
     {
       "question": "Fill in the blank: 兄弟姐妹之间需要 _____ 理解，才能减少矛盾。",
       "type": "multiple_choice",
       "correct": "彼此",
-      "options": ["彼此", "宁可", "之所以", "是因为"],
-      "word_hints": {"矛盾": "máo dùn"}
+      "options": [
+        "彼此",
+        "宁可",
+        "之所以",
+        "是因为"
+      ],
+      "word_hints": {
+        "矛盾": "máo dùn"
+      }
     },
     {
       "question": "What does 彼此 mean?",
       "type": "multiple_choice",
       "correct": "Each other; mutually",
-      "options": ["Each other; mutually", "Would rather", "The reason why", "Responsibility"],
+      "options": [
+        "Each other; mutually",
+        "Would rather",
+        "The reason why",
+        "Responsibility"
+      ],
       "word_hints": {}
     },
     {
       "question": "Fill in the blank: 他 _____ 自己受委屈，也不让父母担心。",
       "type": "multiple_choice",
       "correct": "宁可",
-      "options": ["宁可", "彼此", "之所以", "也不"],
+      "options": [
+        "宁可",
+        "彼此",
+        "之所以",
+        "也不"
+      ],
       "word_hints": {}
     },
     {
@@ -531,56 +723,108 @@
         "他们感情好之所以，彼此是因为信任。",
         "彼此信任他们，之所以是因为感情好。"
       ],
-      "word_hints": {"信任": "xìn rèn"}
+      "word_hints": {
+        "信任": "xìn rèn"
+      }
     },
     {
       "question": "What does 责任 mean?",
       "type": "multiple_choice",
       "correct": "Responsibility; duty",
-      "options": ["Responsibility; duty", "Conflict", "Trust", "Communication"],
-      "word_hints": {"责任": "zé rèn"}
+      "options": [
+        "Responsibility; duty",
+        "Conflict",
+        "Trust",
+        "Communication"
+      ],
+      "word_hints": {
+        "责任": "zé rèn"
+      }
     },
     {
       "question": "What does the phrase 解决矛盾 mean?",
       "type": "multiple_choice",
       "correct": "To resolve a conflict",
-      "options": ["To resolve a conflict", "To build trust", "To strengthen the emotional bond", "To take on responsibility"],
-      "word_hints": {"矛盾": "máo dùn"}
+      "options": [
+        "To resolve a conflict",
+        "To build trust",
+        "To strengthen the emotional bond",
+        "To take on responsibility"
+      ],
+      "word_hints": {
+        "矛盾": "máo dùn"
+      }
     },
     {
       "question": "What does 和睦 mean?",
       "type": "multiple_choice",
       "correct": "Harmonious; on good terms",
-      "options": ["Harmonious; on good terms", "Tolerant", "Respectful", "Responsible"],
-      "word_hints": {"和睦": "hé mù"}
+      "options": [
+        "Harmonious; on good terms",
+        "Tolerant",
+        "Respectful",
+        "Responsible"
+      ],
+      "word_hints": {
+        "和睦": "hé mù"
+      }
     },
     {
       "question": "Which word means 'to trust; trust'?",
       "type": "multiple_choice",
       "correct": "信任",
-      "options": ["尊重", "信任", "理解", "包容"],
-      "word_hints": {"尊重": "zūn zhòng", "信任": "xìn rèn", "理解": "lǐ jiě", "包容": "bāo róng"}
+      "options": [
+        "尊重",
+        "信任",
+        "理解",
+        "包容"
+      ],
+      "word_hints": {
+        "尊重": "zūn zhòng",
+        "信任": "xìn rèn",
+        "理解": "lǐ jiě",
+        "包容": "bāo róng"
+      }
     },
     {
       "question": "What does the phrase 承担责任 mean?",
       "type": "multiple_choice",
       "correct": "To take on responsibility",
-      "options": ["To take on responsibility", "To resolve a conflict", "To build trust", "To strengthen bonds"],
-      "word_hints": {"责任": "zé rèn"}
+      "options": [
+        "To take on responsibility",
+        "To resolve a conflict",
+        "To build trust",
+        "To strengthen bonds"
+      ],
+      "word_hints": {
+        "责任": "zé rèn"
+      }
     },
     {
       "question": "According to the culture note, what Chinese festival is mentioned as a time when family gatherings are deeply cherished?",
       "type": "multiple_choice",
       "correct": "Spring Festival",
-      "options": ["Spring Festival", "Mid-Autumn Festival", "Dragon Boat Festival", "Lantern Festival"],
+      "options": [
+        "Spring Festival",
+        "Mid-Autumn Festival",
+        "Dragon Boat Festival",
+        "Lantern Festival"
+      ],
       "word_hints": {}
     },
     {
       "question": "What does the phrase 建立信任 mean?",
       "type": "multiple_choice",
       "correct": "To build trust",
-      "options": ["To build trust", "To resolve a conflict", "To take on responsibility", "To strengthen bonds"],
-      "word_hints": {"信任": "xìn rèn"}
+      "options": [
+        "To build trust",
+        "To resolve a conflict",
+        "To take on responsibility",
+        "To strengthen bonds"
+      ],
+      "word_hints": {
+        "信任": "xìn rèn"
+      }
     },
     {
       "question": "What does the idiom 家和万事兴 mean?",
@@ -601,8 +845,16 @@
       "title": "Bridging the Generation Gap",
       "title_chinese": "跨越代沟",
       "speakers": {
-        "A": {"name": "小云", "role": "孙女", "gender": "female"},
-        "B": {"name": "奶奶", "role": "祖母", "gender": "female"}
+        "A": {
+          "name": "小云",
+          "role": "孙女",
+          "gender": "female"
+        },
+        "B": {
+          "name": "奶奶",
+          "role": "祖母",
+          "gender": "female"
+        }
       },
       "lines": [
         {
@@ -620,7 +872,7 @@
         {
           "speaker": "A",
           "chinese": "奶奶，之所以我们有时候意见不同，是因为我们成长的时代不一样。",
-          "pinyin": "Nǎi nai, zhī suǒ yǐ wǒ men yǒu shí hou yì jiàn bù tóng, shì yīn wèi wǒ men chéng zhǎng de shí dài bù yī yàng.",
+          "pinyin": "Nǎi nai, zhī suǒ yǐ wǒ men yǒu shí hou yì jiàn bù tóng, shì yīn wèi wǒ men chéng zhǎng de shí dài bù yí yàng.",
           "english": "Grandma, the reason we sometimes disagree is that we grew up in different eras."
         },
         {
@@ -638,13 +890,13 @@
         {
           "speaker": "B",
           "chinese": "好孩子！只要我们彼此包容，家里就会一直和和睦睦的。",
-          "pinyin": "Hǎo hái zi! Zhǐ yào wǒ men bǐ cǐ bāo róng, jiā lǐ jiù huì yī zhí hé he mù mù de.",
+          "pinyin": "Hǎo hái zi! Zhǐ yào wǒ men bǐ cǐ bāo róng, jiā lǐ jiù huì yì zhí hé he mù mù de.",
           "english": "Good child! As long as we are tolerant of each other, the family will always remain harmonious."
         },
         {
           "speaker": "A",
           "chinese": "对，家和万事兴，我们一起努力维护好我们的家庭关系。",
-          "pinyin": "Duì, jiā hé wàn shì xīng, wǒ men yī qǐ nǔ lì wéi hù hǎo wǒ men de jiā tíng guān xi.",
+          "pinyin": "Duì, jiā hé wàn shì xīng, wǒ men yì qǐ nǔ lì wéi hù hǎo wǒ men de jiā tíng guān xi.",
           "english": "Exactly — when the family is in harmony, all things prosper. Let's work together to maintain our family relationship."
         }
       ]
@@ -654,8 +906,16 @@
       "title": "Resolving a Family Conflict",
       "title_chinese": "化解家庭矛盾",
       "speakers": {
-        "A": {"name": "大明", "role": "儿子", "gender": "male"},
-        "B": {"name": "妈妈", "role": "母亲", "gender": "female"}
+        "A": {
+          "name": "大明",
+          "role": "儿子",
+          "gender": "male"
+        },
+        "B": {
+          "name": "妈妈",
+          "role": "母亲",
+          "gender": "female"
+        }
       },
       "lines": [
         {
@@ -673,13 +933,13 @@
         {
           "speaker": "A",
           "chinese": "妈，我明白您的心意。我宁可少睡几个小时，也要每周给您打一次电话。",
-          "pinyin": "Mā, wǒ míng bai nín de xīn yì. Wǒ nìng kě shǎo shuì jǐ gè xiǎo shí, yě yào měi zhōu gěi nín dǎ yī cì diàn huà.",
+          "pinyin": "Mā, wǒ míng bai nín de xīn yì. Wǒ nìng kě shǎo shuì jǐ gè xiǎo shí, yě yào měi zhōu gěi nín dǎ yí cì diàn huà.",
           "english": "Mum, I understand your feelings. I would rather sleep a few hours less to call you once a week."
         },
         {
           "speaker": "B",
           "chinese": "好孩子，其实我只是希望我们彼此之间沟通更多一点。",
-          "pinyin": "Hǎo hái zi, qí shí wǒ zhǐ shì xī wàng wǒ men bǐ cǐ zhī jiān gōu tōng gèng duō yī diǎn.",
+          "pinyin": "Hǎo hái zi, qí shí wǒ zhǐ shì xī wàng wǒ men bǐ cǐ zhī jiān gōu tōng gèng duō yì diǎn.",
           "english": "Good child. Actually, I just hope we can communicate a little more with each other."
         },
         {
@@ -697,7 +957,7 @@
         {
           "speaker": "A",
           "chinese": "谢谢妈妈！下个月我一定回家，我们一起好好聊聊，增进一下感情。",
-          "pinyin": "Xiè xie mā ma! Xià gè yuè wǒ yī dìng huí jiā, wǒ men yī qǐ hǎo hao liáo liáo, zēng jìn yī xià gǎn qíng.",
+          "pinyin": "Xiè xie mā ma! Xià gè yuè wǒ yí dìng huí jiā, wǒ men yì qǐ hǎo hao liáo liáo, zēng jìn yí xià gǎn qíng.",
           "english": "Thank you, Mum! I'll definitely come home next month; we can have a good talk and strengthen our bond."
         }
       ]
