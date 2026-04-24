@@ -46,6 +46,9 @@ export const REPLACE_AUDIO = {
   // 还 — polyphonic (hái vs huán); here standalone 还 means "still/also" → hái (hai2).
   // Google TTS ignores the phoneme tag override in some contexts; use pre-generated file.
   '还': require('../assets/audio/replace_audios/hai2.mp3'),
+  // 够喝了 — 喝 is polyphonic: hē (drink) vs hè (shout/scold). Here it means "drink" → he1.
+  // Google TTS defaults to hè in this context; use pre-generated file.
+  '够喝了': require('../assets/audio/replace_audios/gou4_he1_le.mp3'),
   // 不了，谢谢，我已经饱了。 — 不了 as declining particle must be bù le (bu4+le0),
   // not bù liǎo (potential complement). Google TTS ignores le0 phoneme tag for 了,
   // so use pre-generated audio with the correct reading.
