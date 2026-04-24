@@ -33,6 +33,11 @@ export const REPLACE_AUDIO = {
   // 行 — polyphonic (xíng = ok/travel vs háng = profession/row); standalone 行 means "ok" → xíng (xing2).
   // Google TTS defaults to háng in isolation; use pre-generated file.
   '行': require('../assets/audio/replace_audios/xing2.mp3'),
+  // hsk3 L2 dialogue lines where ElevenLabs reads 行 as háng instead of xíng.
+  // speakAsAvatar now checks REPLACE_AUDIO first, so these pre-generated files
+  // (with correct phoneme SSML and the character's avatar voice config) take priority.
+  '行，进去吧，我们在里面等他回来。': require('../assets/audio/replace_audios/xing2_line1.mp3'),
+  '行，你出去的时候把门关上，外面风很大。': require('../assets/audio/replace_audios/xing2_line2.mp3'),
   // 长 — polyphonic (cháng = long vs zhǎng = grow); standalone 长 here means "long" → cháng (chang2).
   // Google TTS defaults to zhǎng in isolation; use pre-generated file.
   '长': require('../assets/audio/replace_audios/chang2.mp3'),

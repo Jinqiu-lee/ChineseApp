@@ -468,6 +468,17 @@ const AVATAR_VOICE_CONFIG = {
 // Tries ElevenLabs first (if key + voiceId are set), then falls back to Google TTS,
 // then falls back to speakChinese().
 export async function speakAsAvatar(text, avatarId = 'eileen') {
+  // ── 0. Check REPLACE_AUDIO first (exact match) ───────────────────────────
+  // ElevenLabs sends raw text so phoneme overrides don't apply; pre-generated
+  // files in REPLACE_AUDIO let us fix specific lines with wrong readings.
+  if (REPLACE_AUDIO[text]) {
+    try {
+      return await playLocalAudio(REPLACE_AUDIO[text], text);
+    } catch (err) {
+      console.warn('speakAsAvatar: replacement file failed, falling through:', err);
+    }
+  }
+
   // ── 1. ElevenLabs path ──────────────────────────────────────────────────
   if (ELEVENLABS_API_KEY && ELEVENLABS_API_KEY !== 'YOUR_ELEVENLABS_API_KEY_HERE') {
     const voiceEntry = AVATAR_VOICES[avatarId];
