@@ -28,6 +28,6 @@ export const REPLACE_AUDIO = {
   // 有 — use local you3.mp3 for accurate 3rd-tone pronunciation
   '有': require('../assets/audio/pinyin/tones/you3.mp3'),
   // 给 — Google TTS sometimes mispronounces as jǐ (classical/formal reading);
-  // use local gei3.mp3 to ensure correct gěi (give) pronunciation
-  '给': require('../assets/audio/pinyin/tones/gei3.mp3'),
+  // use user-recorded gei3_user.mp3 for correct gěi (give) pronunciation
+  '给': require('../assets/audio/replace_audios/gei3_user.mp3'),
 };
