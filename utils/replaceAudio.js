@@ -46,6 +46,9 @@ export const REPLACE_AUDIO = {
   // 还 — polyphonic (hái vs huán); here standalone 还 means "still/also" → hái (hai2).
   // Google TTS ignores the phoneme tag override in some contexts; use pre-generated file.
   '还': require('../assets/audio/replace_audios/hai2.mp3'),
+  // hsk3 L9 D1: 地道 should be dì dào (di4+dao4 = authentic), not de+dào.
+  // 地 is misread as the structural particle "de" because ElevenLabs sees raw text.
+  '哪里！你的进步很大，已经说得很地道了，真赞！': require('../assets/audio/replace_audios/didao_line.mp3'),
   // 够喝了 — 喝 is polyphonic: hē (drink) vs hè (shout/scold). Here it means "drink" → he1.
   // Google TTS defaults to hè in this context; use pre-generated file.
   '够喝了': require('../assets/audio/replace_audios/gou4_he1_le.mp3'),
