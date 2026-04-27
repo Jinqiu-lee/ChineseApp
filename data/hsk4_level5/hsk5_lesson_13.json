@@ -157,24 +157,10 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk5_l13_p07",
-      "chinese": "预防疾病",
-      "pinyin": "yù fáng jí bìng",
-      "english": "Prevent illness",
-      "part_of_speech": "phrase"
-    },
-    {
       "id": "hsk5_l13_p08",
       "chinese": "康复治疗",
       "pinyin": "kāng fù zhì liáo",
       "english": "Rehabilitation treatment",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk5_l13_p09",
-      "chinese": "均衡营养",
-      "pinyin": "jūn héng yíng yǎng",
-      "english": "Balanced nutrition",
       "part_of_speech": "phrase"
     }
   ],
@@ -880,21 +866,6 @@
         "与其…不如…"
       ],
       "word_hints": {}
-    },
-    {
-      "question": "What does '预防疾病' mean?",
-      "type": "multiple_choice",
-      "correct": "Prevent illness",
-      "options": [
-        "Prevent illness",
-        "Rehabilitation treatment",
-        "Balanced nutrition",
-        "Take medication"
-      ],
-      "word_hints": {
-        "预防": "yù fáng",
-        "疾病": "jí bìng"
-      }
     },
     {
       "question": "What does '康复治疗' mean?",

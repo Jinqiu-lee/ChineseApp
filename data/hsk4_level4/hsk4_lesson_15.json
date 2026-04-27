@@ -158,16 +158,9 @@
     },
     {
       "id": "hsk4_l15_p07",
-      "chinese": "著名演员",
-      "pinyin": "zhù míng yǎn yuán",
-      "english": "Famous actor/actress",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk4_l15_p08",
-      "chinese": "功夫表演",
-      "pinyin": "gōng fu biǎo yǎn",
-      "english": "Kung fu performance",
+      "chinese": "中国艺术",
+      "pinyin": "zhōng guó yì shù",
+      "english": "Chinese art",
       "part_of_speech": "phrase"
     }
   ],
@@ -730,36 +723,6 @@
       }
     },
     {
-      "question": "What does the phrase 著名演员 mean?",
-      "type": "multiple_choice",
-      "correct": "Famous actor",
-      "options": [
-        "Famous actor",
-        "Brilliant performance",
-        "Kung fu performance",
-        "Read a novel"
-      ],
-      "word_hints": {
-        "著名": "zhù míng",
-        "演员": "yǎn yuán"
-      }
-    },
-    {
-      "question": "What does the phrase 功夫表演 mean?",
-      "type": "multiple_choice",
-      "correct": "Kung fu performance",
-      "options": [
-        "Kung fu performance",
-        "Famous actor",
-        "Brilliant performance",
-        "Attract the audience"
-      ],
-      "word_hints": {
-        "功夫": "gōng fu",
-        "表演": "biǎo yǎn"
-      }
-    },
-    {
       "question": "What does the phrase 吸引观众 mean?",
       "type": "multiple_choice",
       "correct": "Attract the audience",
@@ -945,21 +908,6 @@
       }
     },
     {
-      "question": "What does '著名演员' mean?",
-      "type": "multiple_choice",
-      "correct": "Famous actor/actress",
-      "options": [
-        "Famous actor/actress",
-        "Appreciate Peking Opera",
-        "Kung fu performance",
-        "Art exhibition"
-      ],
-      "word_hints": {
-        "著名": "zhù míng",
-        "演员": "yǎn yuán"
-      }
-    },
-    {
       "question": "Fill in: 欣赏京剧是了解中国文化 _____ 的好方法。",
       "type": "multiple_choice",
       "correct": "艺术",
@@ -972,6 +920,20 @@
       "word_hints": {
         "京剧": "jīng jù",
         "了解": "liǎo jiě"
+      }
+    },
+    {
+      "question": "What does the phrase '中国艺术' mean?",
+      "type": "multiple_choice",
+      "correct": "Chinese art",
+      "options": [
+        "Chinese art",
+        "Famous actor",
+        "Kung fu performance",
+        "Stage performance"
+      ],
+      "word_hints": {
+        "艺术": "yì shù"
       }
     }
   ],

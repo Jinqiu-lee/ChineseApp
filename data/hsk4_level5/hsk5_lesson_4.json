@@ -157,20 +157,6 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk5_l4_p07",
-      "chinese": "特色菜肴",
-      "pinyin": "tè sè cài yáo",
-      "english": "Specialty dish",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk5_l4_p08",
-      "chinese": "新鲜食材",
-      "pinyin": "xīn xiān shí cái",
-      "english": "Fresh ingredients",
-      "part_of_speech": "phrase"
-    },
-    {
       "id": "hsk5_l4_p09",
       "chinese": "烹饪技巧",
       "pinyin": "pēng rèn jì qiǎo",
@@ -803,21 +789,6 @@
       }
     },
     {
-      "question": "What does the phrase 特色菜肴 mean?",
-      "type": "multiple_choice",
-      "correct": "Signature dish; specialty dish",
-      "options": [
-        "Signature dish; specialty dish",
-        "Fresh ingredients",
-        "Balanced diet",
-        "Cooking technique"
-      ],
-      "word_hints": {
-        "特色": "tè sè",
-        "菜肴": "cài yáo"
-      }
-    },
-    {
       "question": "What does 饮食 mean?",
       "type": "multiple_choice",
       "correct": "Diet; eating habits; food and drink",
@@ -882,36 +853,6 @@
         "不管...都..."
       ],
       "word_hints": {}
-    },
-    {
-      "question": "What does '特色菜肴' mean?",
-      "type": "multiple_choice",
-      "correct": "Specialty dish",
-      "options": [
-        "Specialty dish",
-        "Fresh ingredients",
-        "Cooking technique",
-        "Healthy diet"
-      ],
-      "word_hints": {
-        "特色": "tè sè",
-        "菜肴": "cài yáo"
-      }
-    },
-    {
-      "question": "What does '新鲜食材' mean?",
-      "type": "multiple_choice",
-      "correct": "Fresh ingredients",
-      "options": [
-        "Fresh ingredients",
-        "Specialty dish",
-        "Cooking technique",
-        "Unique flavor"
-      ],
-      "word_hints": {
-        "新鲜": "xīn xiān",
-        "食材": "shí cái"
-      }
     },
     {
       "question": "Fill in: 好的厨师会利用新鲜食材来烹饪 _____ 菜肴。",

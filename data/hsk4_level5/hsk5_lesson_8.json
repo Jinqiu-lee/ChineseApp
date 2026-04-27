@@ -157,24 +157,10 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk5_l8_p07",
-      "chinese": "解决矛盾",
-      "pinyin": "jiě jué máo dùn",
-      "english": "Resolve conflicts",
-      "part_of_speech": "phrase"
-    },
-    {
       "id": "hsk5_l8_p08",
       "chinese": "相互尊重",
       "pinyin": "xiāng hù zūn zhòng",
       "english": "Mutual respect",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk5_l8_p09",
-      "chinese": "家庭和睦",
-      "pinyin": "jiā tíng hé mù",
-      "english": "Family harmony",
       "part_of_speech": "phrase"
     }
   ],
@@ -686,20 +672,6 @@
       }
     },
     {
-      "question": "What does the phrase 家庭和睦 mean?",
-      "type": "multiple_choice",
-      "correct": "Family harmony",
-      "options": [
-        "Family harmony",
-        "Generation gap",
-        "Mutual understanding",
-        "Building trust"
-      ],
-      "word_hints": {
-        "和睦": "hé mù"
-      }
-    },
-    {
       "question": "Fill in the blank: 兄弟姐妹之间需要 _____ 理解，才能减少矛盾。",
       "type": "multiple_choice",
       "correct": "彼此",
@@ -775,20 +747,6 @@
       ],
       "word_hints": {
         "责任": "zé rèn"
-      }
-    },
-    {
-      "question": "What does the phrase 解决矛盾 mean?",
-      "type": "multiple_choice",
-      "correct": "To resolve a conflict",
-      "options": [
-        "To resolve a conflict",
-        "To build trust",
-        "To strengthen the emotional bond",
-        "To take on responsibility"
-      ],
-      "word_hints": {
-        "矛盾": "máo dùn"
       }
     },
     {
@@ -873,36 +831,6 @@
         "Hard work brings family prosperity"
       ],
       "word_hints": {}
-    },
-    {
-      "question": "What does '解决矛盾' mean?",
-      "type": "multiple_choice",
-      "correct": "Resolve conflicts",
-      "options": [
-        "Resolve conflicts",
-        "Mutual respect",
-        "Family harmony",
-        "Bridge the gap"
-      ],
-      "word_hints": {
-        "解决": "jiě jué",
-        "矛盾": "máo dùn"
-      }
-    },
-    {
-      "question": "What does '家庭和睦' mean?",
-      "type": "multiple_choice",
-      "correct": "Family harmony",
-      "options": [
-        "Family harmony",
-        "Resolve conflicts",
-        "Mutual respect",
-        "Show responsibility"
-      ],
-      "word_hints": {
-        "家庭": "jiā tíng",
-        "和睦": "hé mù"
-      }
     },
     {
       "question": "Fill in: 沟通是解决家庭矛盾、消除 _____ 的最好方式。",

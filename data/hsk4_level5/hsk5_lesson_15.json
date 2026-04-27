@@ -158,23 +158,9 @@
     },
     {
       "id": "hsk5_l15_p07",
-      "chinese": "克服挑战",
-      "pinyin": "kè fú tiǎo zhàn",
-      "english": "Overcome challenges",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk5_l15_p08",
-      "chinese": "实现目标",
-      "pinyin": "shí xiàn mù biāo",
-      "english": "Achieve goals",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk5_l15_p09",
-      "chinese": "激励他人",
-      "pinyin": "jī lì tā rén",
-      "english": "Inspire others",
+      "chinese": "坚持努力",
+      "pinyin": "jiān chí nǔ lì",
+      "english": "Persist and work hard",
       "part_of_speech": "phrase"
     }
   ],
@@ -787,21 +773,6 @@
       }
     },
     {
-      "question": "What does the phrase 实现目标 mean?",
-      "type": "multiple_choice",
-      "correct": "To achieve one's goal",
-      "options": [
-        "To achieve one's goal",
-        "To overcome a challenge",
-        "To inspire others",
-        "To feel proud"
-      ],
-      "word_hints": {
-        "实现": "shí xiàn",
-        "目标": "mù biāo"
-      }
-    },
-    {
       "question": "What does 挑战 mean?",
       "type": "multiple_choice",
       "correct": "Challenge; to challenge",
@@ -884,36 +855,6 @@
       "word_hints": {}
     },
     {
-      "question": "What does '克服挑战' mean?",
-      "type": "multiple_choice",
-      "correct": "Overcome challenges",
-      "options": [
-        "Overcome challenges",
-        "Achieve goals",
-        "Inspire others",
-        "Feel proud"
-      ],
-      "word_hints": {
-        "克服": "kè fú",
-        "挑战": "tiǎo zhàn"
-      }
-    },
-    {
-      "question": "What does '实现目标' mean?",
-      "type": "multiple_choice",
-      "correct": "Achieve goals",
-      "options": [
-        "Achieve goals",
-        "Overcome challenges",
-        "Inspire others",
-        "Make a breakthrough"
-      ],
-      "word_hints": {
-        "实现": "shí xiàn",
-        "目标": "mù biāo"
-      }
-    },
-    {
       "question": "Fill in: 她取得的成就让她感到自豪，也 _____ 了身边的人。",
       "type": "multiple_choice",
       "correct": "激励",
@@ -926,6 +867,21 @@
       "word_hints": {
         "成就": "chéng jiù",
         "自豪": "zì háo"
+      }
+    },
+    {
+      "question": "What does the phrase '坚持努力' mean?",
+      "type": "multiple_choice",
+      "correct": "Persist and work hard",
+      "options": [
+        "Persist and work hard",
+        "Achieve a goal",
+        "Overcome challenges",
+        "Inspire others"
+      ],
+      "word_hints": {
+        "坚持": "jiān chí",
+        "努力": "nǔ lì"
       }
     }
   ],

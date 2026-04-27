@@ -157,13 +157,6 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk4_l11_p07",
-      "chinese": "气温降低",
-      "pinyin": "qì wēn jiàng dī",
-      "english": "Temperature drops",
-      "part_of_speech": "phrase"
-    },
-    {
       "id": "hsk4_l11_p08",
       "chinese": "突然发生",
       "pinyin": "tū rán fā shēng",
@@ -792,20 +785,6 @@
       }
     },
     {
-      "question": "What does the phrase 气温降低 mean?",
-      "type": "multiple_choice",
-      "correct": "Temperature drops",
-      "options": [
-        "Temperature drops",
-        "Temperature rises",
-        "Cool weather appears",
-        "Weather changes"
-      ],
-      "word_hints": {
-        "降低": "jiàng dī"
-      }
-    },
-    {
       "question": "What does the phrase 发生变化 mean?",
       "type": "multiple_choice",
       "correct": "A change occurs",
@@ -874,21 +853,6 @@
       ],
       "word_hints": {
         "增加": "zēng jiā"
-      }
-    },
-    {
-      "question": "What does '气温降低' mean?",
-      "type": "multiple_choice",
-      "correct": "Temperature drops",
-      "options": [
-        "Temperature drops",
-        "Danger increases",
-        "Happen suddenly",
-        "Climate develops"
-      ],
-      "word_hints": {
-        "气温": "qì wēn",
-        "降低": "jiàng dī"
       }
     },
     {

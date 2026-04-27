@@ -157,13 +157,6 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk4_l10_p07",
-      "chinese": "气候变化",
-      "pinyin": "qì hòu biàn huà",
-      "english": "Climate change",
-      "part_of_speech": "phrase"
-    },
-    {
       "id": "hsk4_l10_p08",
       "chinese": "森林植物",
       "pinyin": "sēn lín zhí wù",
@@ -806,20 +799,6 @@
       }
     },
     {
-      "question": "What does the phrase 气候变化 mean?",
-      "type": "multiple_choice",
-      "correct": "Climate change",
-      "options": [
-        "Climate change",
-        "Temperature change",
-        "Natural beauty",
-        "Severe pollution"
-      ],
-      "word_hints": {
-        "气候": "qì hòu"
-      }
-    },
-    {
       "question": "What does the phrase 保护环境 mean?",
       "type": "multiple_choice",
       "correct": "To protect the environment",
@@ -896,21 +875,6 @@
       "word_hints": {
         "保护": "bǎo hù",
         "地球": "dì qiú"
-      }
-    },
-    {
-      "question": "What does '气候变化' mean?",
-      "type": "multiple_choice",
-      "correct": "Climate change",
-      "options": [
-        "Climate change",
-        "Protect the earth",
-        "Forest plants",
-        "Sunlight effect"
-      ],
-      "word_hints": {
-        "气候": "qì hòu",
-        "变化": "biàn huà"
       }
     },
     {

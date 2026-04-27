@@ -150,13 +150,6 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk4_l7_p06",
-      "chinese": "符合标准",
-      "pinyin": "fú hé biāo zhǔn",
-      "english": "Meet the standard",
-      "part_of_speech": "phrase"
-    },
-    {
       "id": "hsk4_l7_p07",
       "chinese": "区别对待",
       "pinyin": "qū bié duì dài",
@@ -165,9 +158,9 @@
     },
     {
       "id": "hsk4_l7_p08",
-      "chinese": "实际情况",
-      "pinyin": "shí jì qíng kuàng",
-      "english": "Actual situation",
+      "chinese": "普遍现象",
+      "pinyin": "pǔ biàn xiàn xiàng",
+      "english": "Common / widespread phenomenon",
       "part_of_speech": "phrase"
     }
   ],
@@ -817,21 +810,6 @@
       "word_hints": {}
     },
     {
-      "question": "What does the phrase 符合标准 mean?",
-      "type": "multiple_choice",
-      "correct": "To meet the standard",
-      "options": [
-        "To meet the standard",
-        "To judge quality",
-        "To compare products",
-        "To return goods"
-      ],
-      "word_hints": {
-        "符合": "fú hé",
-        "标准": "biāo zhǔn"
-      }
-    },
-    {
       "question": "What does the idiom 货真价实 mean?",
       "type": "multiple_choice",
       "correct": "Genuine goods at fair prices",
@@ -858,20 +836,6 @@
       }
     },
     {
-      "question": "What does the phrase 实际情况 mean?",
-      "type": "multiple_choice",
-      "correct": "Actual situation; reality",
-      "options": [
-        "Actual situation; reality",
-        "Standard requirement",
-        "Correct judgment",
-        "Common difference"
-      ],
-      "word_hints": {
-        "实际": "shí jì"
-      }
-    },
-    {
       "question": "Which sentence uses 比较 correctly?",
       "type": "multiple_choice",
       "correct": "这家餐厅的价格比较合理。",
@@ -882,36 +846,6 @@
         "这家餐厅的比较价格合理。"
       ],
       "word_hints": {}
-    },
-    {
-      "question": "What does '符合标准' mean?",
-      "type": "multiple_choice",
-      "correct": "Meet the standard",
-      "options": [
-        "Meet the standard",
-        "Treat differently",
-        "Actual situation",
-        "Reach the goal"
-      ],
-      "word_hints": {
-        "符合": "fú hé",
-        "标准": "biāo zhǔn"
-      }
-    },
-    {
-      "question": "What does '实际情况' mean?",
-      "type": "multiple_choice",
-      "correct": "Actual situation",
-      "options": [
-        "Actual situation",
-        "Meet the standard",
-        "Treat differently",
-        "Common case"
-      ],
-      "word_hints": {
-        "实际": "shí jì",
-        "情况": "qíng kuàng"
-      }
     },
     {
       "question": "Fill in: 产品必须 _____ 国家标准，否则不能出售。",
@@ -926,6 +860,21 @@
       "word_hints": {
         "产品": "chǎn pǐn",
         "标准": "biāo zhǔn"
+      }
+    },
+    {
+      "question": "What does the phrase '普遍现象' mean?",
+      "type": "multiple_choice",
+      "correct": "Common / widespread phenomenon",
+      "options": [
+        "Common / widespread phenomenon",
+        "Meeting a standard",
+        "Obvious difference",
+        "Actual situation"
+      ],
+      "word_hints": {
+        "普遍": "pǔ biàn",
+        "现象": "xiàn xiàng"
       }
     }
   ],
