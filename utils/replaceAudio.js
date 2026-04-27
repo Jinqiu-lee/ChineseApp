@@ -42,6 +42,9 @@ export const REPLACE_AUDIO = {
   // 背 — polyphonic (bēi = carry on back vs bèi = back/memorise); standalone 背 → bēi.
   // Google TTS defaults to bèi in isolation; use pre-generated file.
   '背': require('../assets/audio/replace_audios/bei1_standalone.mp3'),
+  // 讨价还价 — bargain/haggle; 还 = huán (huan2). POLYPHONIC_RULES wrongly returns hai2
+  // (next char 价 not in trigger set). Pre-generated with explicit huan2 phoneme.
+  '讨价还价': require('../assets/audio/replace_audios/taojia_huanjia.mp3'),
   // 旅行 — POLYPHONIC_RULES wrongly triggered háng (旅 was in the háng-prev set).
   // Fixed in POLYPHONIC_RULES and COMPOUND_PHONEME_OVERRIDES, but pre-generated
   // audio is also provided since Google TTS ignores phoneme tags for 行.
