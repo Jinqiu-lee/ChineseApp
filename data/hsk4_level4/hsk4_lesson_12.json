@@ -148,6 +148,27 @@
       "pinyin": "zhòng shì jié guǒ",
       "english": "To value the outcome",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l12_p06",
+      "chinese": "勇敢面对失败",
+      "pinyin": "yǒng gǎn miàn duì shī bài",
+      "english": "Bravely face failure",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l12_p07",
+      "chinese": "坚持获得成功",
+      "pinyin": "jiān chí huò dé chéng gōng",
+      "english": "Persist to achieve success",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l12_p08",
+      "chinese": "重视每次经历",
+      "pinyin": "zhòng shì měi cì jīng lì",
+      "english": "Value every experience",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "坚持就是胜利——只要不放弃，最终都会获得好结果。",
       "pinyin": "Jiān chí jiù shì shèng lì — zhǐ yào bú fàng qì, zuì zhōng dōu huì huò dé hǎo jié guǒ.",
       "english": "Persistence is victory — as long as you don't give up, you will ultimately obtain a good result."
+    },
+    {
+      "chinese": "他勇敢地面对失败，最终坚持获得了成功。",
+      "pinyin": "Tā yǒng gǎn de miàn duì shī bài, zuì zhōng jiān chí huò dé le chéng gōng.",
+      "english": "He bravely faced failure and ultimately persisted to achieve success."
+    },
+    {
+      "chinese": "竟然连续失败三次，他依然重视每次的经历。",
+      "pinyin": "Jìng rán lián xù shī bài sān cì, tā yī rán zhòng shì měi cì de jīng lì.",
+      "english": "Even after failing three times in a row, he still valued each experience."
+    },
+    {
+      "chinese": "成功需要勇敢坚持，不能轻易放弃。",
+      "pinyin": "Chéng gōng xū yào yǒng gǎn jiān chí, bù néng qīng yì fàng qì.",
+      "english": "Success requires brave persistence; you cannot give up easily."
     }
   ],
   "grammar_points": [
@@ -840,6 +876,51 @@
       ],
       "word_hints": {
         "勇敢": "yǒng gǎn"
+      }
+    },
+    {
+      "question": "What does '勇敢面对失败' mean?",
+      "type": "multiple_choice",
+      "correct": "Bravely face failure",
+      "options": [
+        "Bravely face failure",
+        "Persist to achieve success",
+        "Value every experience",
+        "Win the prize"
+      ],
+      "word_hints": {
+        "勇敢": "yǒng gǎn",
+        "失败": "shī bài"
+      }
+    },
+    {
+      "question": "What does '坚持获得成功' mean?",
+      "type": "multiple_choice",
+      "correct": "Persist to achieve success",
+      "options": [
+        "Persist to achieve success",
+        "Bravely face failure",
+        "Value every experience",
+        "Win bravely"
+      ],
+      "word_hints": {
+        "坚持": "jiān chí",
+        "成功": "chéng gōng"
+      }
+    },
+    {
+      "question": "Fill in: 成功需要勇敢坚持，不能轻易 _____。",
+      "type": "multiple_choice",
+      "correct": "放弃",
+      "options": [
+        "放弃",
+        "获得",
+        "赢",
+        "竟然"
+      ],
+      "word_hints": {
+        "成功": "chéng gōng",
+        "坚持": "jiān chí"
       }
     }
   ],

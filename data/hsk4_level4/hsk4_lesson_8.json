@@ -148,6 +148,27 @@
       "pinyin": "wēi xiǎn qíng kuàng",
       "english": "Dangerous situation",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l8_p06",
+      "chinese": "量体温",
+      "pinyin": "liáng tǐ wēn",
+      "english": "Take temperature",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l8_p07",
+      "chinese": "皮肤过敏",
+      "pinyin": "pí fū guò mǐn",
+      "english": "Skin allergy",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l8_p08",
+      "chinese": "护士打针",
+      "pinyin": "hù shi dǎ zhēn",
+      "english": "Nurse gives injection",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "如果来得及休息，就不需要打针吃药。",
       "pinyin": "Rú guǒ lái de jí xiū xi, jiù bù xū yào dǎ zhēn chī yào.",
       "english": "If there is enough time to rest, you won't need injections and medicine."
+    },
+    {
+      "chinese": "大夫先给他量了体温，然后检查了皮肤。",
+      "pinyin": "Dài fu xiān gěi tā liáng le tǐ wēn, rán hòu jiǎn chá le pí fū.",
+      "english": "The doctor first took his temperature, then examined his skin."
+    },
+    {
+      "chinese": "护士说他需要打针，因为咳嗽很严重。",
+      "pinyin": "Hù shi shuō tā xū yào dǎ zhēn, yīn wèi ké sòu hěn yán zhòng.",
+      "english": "The nurse said he needs an injection because the cough is very serious."
+    },
+    {
+      "chinese": "肚子疼的时候，应该马上去找大夫检查。",
+      "pinyin": "Dù zi téng de shí hou, yīng gāi mǎ shàng qù zhǎo dài fu jiǎn chá.",
+      "english": "When you have a stomachache, you should immediately go see a doctor for an examination."
     }
   ],
   "grammar_points": [
@@ -837,6 +873,51 @@
       ],
       "word_hints": {
         "减肥": "jiǎn féi"
+      }
+    },
+    {
+      "question": "What does '量体温' mean?",
+      "type": "multiple_choice",
+      "correct": "Take temperature",
+      "options": [
+        "Take temperature",
+        "Skin allergy",
+        "Nurse gives injection",
+        "Check pulse"
+      ],
+      "word_hints": {
+        "量": "liáng",
+        "体温": "tǐ wēn"
+      }
+    },
+    {
+      "question": "What does '皮肤过敏' mean?",
+      "type": "multiple_choice",
+      "correct": "Skin allergy",
+      "options": [
+        "Skin allergy",
+        "Take temperature",
+        "Nurse gives injection",
+        "Stomach pain"
+      ],
+      "word_hints": {
+        "皮肤": "pí fū",
+        "过敏": "guò mǐn"
+      }
+    },
+    {
+      "question": "Fill in: 护士说他需要打针，因为 _____ 很严重。",
+      "type": "multiple_choice",
+      "correct": "咳嗽",
+      "options": [
+        "咳嗽",
+        "汗",
+        "皮肤",
+        "肚子"
+      ],
+      "word_hints": {
+        "护士": "hù shi",
+        "打针": "dǎ zhēn"
       }
     }
   ],

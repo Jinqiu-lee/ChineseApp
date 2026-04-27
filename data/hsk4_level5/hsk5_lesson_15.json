@@ -155,6 +155,27 @@
       "pinyin": "jī lì tā rén",
       "english": "To inspire others",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l15_p07",
+      "chinese": "克服挑战",
+      "pinyin": "kè fú tiǎo zhàn",
+      "english": "Overcome challenges",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l15_p08",
+      "chinese": "实现目标",
+      "pinyin": "shí xiàn mù biāo",
+      "english": "Achieve goals",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l15_p09",
+      "chinese": "激励他人",
+      "pinyin": "jī lì tā rén",
+      "english": "Inspire others",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "凭借团队的力量，他们克服了一个又一个挑战，最终成功实现了目标。",
       "pinyin": "Píng jiè tuán duì de lì liàng, tā men kè fú le yí gè yòu yí gè tiǎo zhàn, zuì zhōng chéng gōng shí xiàn le mù biāo.",
       "english": "By relying on the strength of their team, they overcame one challenge after another and ultimately achieved their goal."
+    },
+    {
+      "chinese": "他通过坚持努力，克服了各种挑战，最终实现了目标。",
+      "pinyin": "Tā tōng guò jiān chí nǔ lì, kè fú le gè zhǒng tiǎo zhàn, zuì zhōng shí xiàn le mù biāo.",
+      "english": "Through persistent effort, he overcame various challenges and ultimately achieved his goals."
+    },
+    {
+      "chinese": "她取得的成就让她感到自豪，也激励了身边的人。",
+      "pinyin": "Tā qǔ dé de chéng jiù ràng tā gǎn dào zì háo, yě jī lì le shēn biān de rén.",
+      "english": "Her achievements made her feel proud and also inspired the people around her."
+    },
+    {
+      "chinese": "突破自己的局限，才能在挑战中取得真正的成功。",
+      "pinyin": "Tū pò zì jǐ de jú xiàn, cái néng zài tiǎo zhàn zhōng qǔ dé zhēn zhèng de chéng gōng.",
+      "english": "Only by breaking through one's own limitations can one achieve true success in the face of challenges."
     }
   ],
   "grammar_points": [
@@ -846,6 +882,51 @@
         "为梦想奋斗"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '克服挑战' mean?",
+      "type": "multiple_choice",
+      "correct": "Overcome challenges",
+      "options": [
+        "Overcome challenges",
+        "Achieve goals",
+        "Inspire others",
+        "Feel proud"
+      ],
+      "word_hints": {
+        "克服": "kè fú",
+        "挑战": "tiǎo zhàn"
+      }
+    },
+    {
+      "question": "What does '实现目标' mean?",
+      "type": "multiple_choice",
+      "correct": "Achieve goals",
+      "options": [
+        "Achieve goals",
+        "Overcome challenges",
+        "Inspire others",
+        "Make a breakthrough"
+      ],
+      "word_hints": {
+        "实现": "shí xiàn",
+        "目标": "mù biāo"
+      }
+    },
+    {
+      "question": "Fill in: 她取得的成就让她感到自豪，也 _____ 了身边的人。",
+      "type": "multiple_choice",
+      "correct": "激励",
+      "options": [
+        "激励",
+        "突破",
+        "克服",
+        "坚持"
+      ],
+      "word_hints": {
+        "成就": "chéng jiù",
+        "自豪": "zì háo"
+      }
     }
   ],
   "dialogues": [

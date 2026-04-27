@@ -148,6 +148,27 @@
       "pinyin": "miǎn fèi shì yòng",
       "english": "Free trial; free to try",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l6_p06",
+      "chinese": "打折优惠",
+      "pinyin": "dǎ zhé yōu huì",
+      "english": "Discount offer",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l6_p07",
+      "chinese": "比较质量",
+      "pinyin": "bǐ jiào zhì liàng",
+      "english": "Compare quality",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l6_p08",
+      "chinese": "顾客满意",
+      "pinyin": "gù kè mǎn yì",
+      "english": "Customer satisfaction",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "这双鞋子材料好，价格也合适，值得买。",
       "pinyin": "Zhè shuāng xié zi cái liào hǎo, jià gé yě hé shì, zhí de mǎi.",
       "english": "The material of these shoes is good and the price is right. They are worth buying."
+    },
+    {
+      "chinese": "购物时要比较质量和价格，不能只看打折。",
+      "pinyin": "Gòu wù shí yào bǐ jiào zhì liàng hé jià gé, bù néng zhǐ kàn dǎ zhé.",
+      "english": "When shopping, compare quality and price; don't only look at discounts."
+    },
+    {
+      "chinese": "售货员说这款商品有打折优惠，顾客非常感兴趣。",
+      "pinyin": "Shòu huò yuán shuō zhè kuǎn shāng pǐn yǒu dǎ zhé yōu huì, gù kè fēi cháng gǎn xìng qù.",
+      "english": "The salesperson said this product has a discount offer, and the customer was very interested."
+    },
+    {
+      "chinese": "免费服务提高了顾客的满意度，也增加了销量。",
+      "pinyin": "Miǎn fèi fú wù tí gāo le gù kè de mǎn yì dù, yě zēng jiā le xiāo liàng.",
+      "english": "Free service improved customer satisfaction and also increased sales."
     }
   ],
   "grammar_points": [
@@ -837,6 +873,51 @@
       "word_hints": {
         "打折": "dǎ zhé"
       }
+    },
+    {
+      "question": "What does '打折优惠' mean?",
+      "type": "multiple_choice",
+      "correct": "Discount offer",
+      "options": [
+        "Discount offer",
+        "Compare quality",
+        "Customer satisfaction",
+        "Free service"
+      ],
+      "word_hints": {
+        "打折": "dǎ zhé",
+        "优惠": "yōu huì"
+      }
+    },
+    {
+      "question": "What does '比较质量' mean?",
+      "type": "multiple_choice",
+      "correct": "Compare quality",
+      "options": [
+        "Compare quality",
+        "Discount offer",
+        "Customer satisfaction",
+        "Shop freely"
+      ],
+      "word_hints": {
+        "比较": "bǐ jiào",
+        "质量": "zhì liàng"
+      }
+    },
+    {
+      "question": "Fill in: 购物时要比较质量和价格，不能只看 _____。",
+      "type": "multiple_choice",
+      "correct": "打折",
+      "options": [
+        "打折",
+        "免费",
+        "优点",
+        "缺点"
+      ],
+      "word_hints": {
+        "购物": "gòu wù",
+        "质量": "zhì liàng"
+      }
     }
   ],
   "dialogues": [
@@ -889,9 +970,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "当然可以！我们还可以讨论价格，另外如果不合适，七天内可以退货。",
-          "pinyin": "Dāng rán kě yǐ! Wǒ men hái kě yǐ tǎo lùn jià gé, lìng wài rú guǒ bù hé shì, qī tiān nèi kě yǐ tuì huò.",
-          "english": "Of course! We can also discuss the price; besides, if it doesn't fit, you can return it within seven days."
+          "chinese": "当然可以! 另外如果不合适，七天内可以退货。",
+          "pinyin": "Dāng rán kě yǐ! lìng wài rú guǒ bù hé shì, qī tiān nèi kě yǐ tuì huò.",
+          "english": "Of course!  besides, if it doesn't fit, you can return it within seven days."
         },
         {
           "speaker": "B",

@@ -148,6 +148,27 @@
       "pinyin": "gǎi biàn shēng huó fāng shì",
       "english": "To change one's lifestyle",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l9_p06",
+      "chinese": "坚持散步",
+      "pinyin": "jiān chí sàn bù",
+      "english": "Persist in walking",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l9_p07",
+      "chinese": "积极参与活动",
+      "pinyin": "jī jí cān yù huó dòng",
+      "english": "Actively participate in activities",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l9_p08",
+      "chinese": "养成好习惯",
+      "pinyin": "yǎng chéng hǎo xí guàn",
+      "english": "Develop good habits",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "平时要积累好习惯，否则改变生活方式会很难。",
       "pinyin": "Píng shí yào jī lěi hǎo xí guàn, fǒu zé gǎi biàn shēng huó fāng shì huì hěn nán.",
       "english": "You should accumulate good habits in ordinary times; otherwise, changing your lifestyle will be very difficult."
+    },
+    {
+      "chinese": "他每天坚持散步，积累了很多健康经验。",
+      "pinyin": "Tā měi tiān jiān chí sàn bù, jī lěi le hěn duō jiàn kāng jīng yàn.",
+      "english": "He persists in walking every day and has accumulated a lot of health experience."
+    },
+    {
+      "chinese": "养成积极参与活动的好习惯，对生活很有帮助。",
+      "pinyin": "Yǎng chéng jī jí cān yù huó dòng de hǎo xí guàn, duì shēng huó hěn yǒu bāng zhù.",
+      "english": "Developing the good habit of actively participating in activities is very helpful in life."
+    },
+    {
+      "chinese": "偶尔改变一下生活方式，也能让心情变得更活泼。",
+      "pinyin": "Ǒu ěr gǎi biàn yī xià shēng huó fāng shì, yě néng ràng xīn qíng biàn de gèng huó pō.",
+      "english": "Occasionally changing your lifestyle can also make your mood more lively."
     }
   ],
   "grammar_points": [
@@ -835,6 +871,51 @@
       ],
       "word_hints": {
         "养成": "yǎng chéng"
+      }
+    },
+    {
+      "question": "What does '坚持散步' mean?",
+      "type": "multiple_choice",
+      "correct": "Persist in walking",
+      "options": [
+        "Persist in walking",
+        "Develop good habits",
+        "Actively participate in activities",
+        "Occasional exercise"
+      ],
+      "word_hints": {
+        "坚持": "jiān chí",
+        "散步": "sàn bù"
+      }
+    },
+    {
+      "question": "What does '养成好习惯' mean?",
+      "type": "multiple_choice",
+      "correct": "Develop good habits",
+      "options": [
+        "Develop good habits",
+        "Persist in walking",
+        "Actively participate in activities",
+        "Accumulate experience"
+      ],
+      "word_hints": {
+        "养成": "yǎng chéng",
+        "习惯": "xí guàn"
+      }
+    },
+    {
+      "question": "Fill in: 他每天 _____ 散步，积累了很多健康经验。",
+      "type": "multiple_choice",
+      "correct": "坚持",
+      "options": [
+        "坚持",
+        "积极",
+        "偶尔",
+        "活泼"
+      ],
+      "word_hints": {
+        "散步": "sàn bù",
+        "积累": "jī lěi"
       }
     }
   ],

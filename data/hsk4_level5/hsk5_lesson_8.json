@@ -155,6 +155,27 @@
       "pinyin": "chéng dān zé rèn",
       "english": "To take on responsibility",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l8_p07",
+      "chinese": "解决矛盾",
+      "pinyin": "jiě jué máo dùn",
+      "english": "Resolve conflicts",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l8_p08",
+      "chinese": "相互尊重",
+      "pinyin": "xiāng hù zūn zhòng",
+      "english": "Mutual respect",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l8_p09",
+      "chinese": "家庭和睦",
+      "pinyin": "jiā tíng hé mù",
+      "english": "Family harmony",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "他宁可一个人承担所有压力，也不愿让家人为自己担心。",
       "pinyin": "Tā nìng kě yí gè rén chéng dān suǒ yǒu yā lì, yě bú yuàn ràng jiā rén wèi zì jǐ dān xīn.",
       "english": "He would rather bear all the pressure alone than let his family worry about him."
+    },
+    {
+      "chinese": "家庭成员之间需要相互尊重，才能保持和睦的关系。",
+      "pinyin": "Jiā tíng chéng yuán zhī jiān xū yào xiāng hù zūn zhòng, cái néng bǎo chí hé mù de guān xì.",
+      "english": "Family members need to respect each other in order to maintain harmonious relationships."
+    },
+    {
+      "chinese": "沟通是解决家庭矛盾、消除代沟的最好方式。",
+      "pinyin": "Gōu tōng shì jiě jué jiā tíng máo dùn, xiāo chú dài gōu de zuì hǎo fāng shì.",
+      "english": "Communication is the best way to resolve family conflicts and bridge the generation gap."
+    },
+    {
+      "chinese": "他们通过理解和信任，建立起了和睦的家庭氛围。",
+      "pinyin": "Tā men tōng guò lǐ jiě hé xìn rèn, jiàn lì qǐ le hé mù de jiā tíng fēn wéi.",
+      "english": "Through understanding and trust, they established a harmonious family atmosphere."
     }
   ],
   "grammar_points": [
@@ -837,6 +873,51 @@
         "Hard work brings family prosperity"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '解决矛盾' mean?",
+      "type": "multiple_choice",
+      "correct": "Resolve conflicts",
+      "options": [
+        "Resolve conflicts",
+        "Mutual respect",
+        "Family harmony",
+        "Bridge the gap"
+      ],
+      "word_hints": {
+        "解决": "jiě jué",
+        "矛盾": "máo dùn"
+      }
+    },
+    {
+      "question": "What does '家庭和睦' mean?",
+      "type": "multiple_choice",
+      "correct": "Family harmony",
+      "options": [
+        "Family harmony",
+        "Resolve conflicts",
+        "Mutual respect",
+        "Show responsibility"
+      ],
+      "word_hints": {
+        "家庭": "jiā tíng",
+        "和睦": "hé mù"
+      }
+    },
+    {
+      "question": "Fill in: 沟通是解决家庭矛盾、消除 _____ 的最好方式。",
+      "type": "multiple_choice",
+      "correct": "代沟",
+      "options": [
+        "代沟",
+        "责任",
+        "尊重",
+        "关系"
+      ],
+      "word_hints": {
+        "矛盾": "máo dùn",
+        "沟通": "gōu tōng"
+      }
     }
   ],
   "dialogues": [

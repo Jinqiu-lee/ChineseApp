@@ -155,6 +155,27 @@
       "pinyin": "zhǎn kāi tán pàn",
       "english": "To launch negotiations",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l7_p07",
+      "chinese": "市场竞争",
+      "pinyin": "shì chǎng jìng zhēng",
+      "english": "Market competition",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l7_p08",
+      "chinese": "投资利润",
+      "pinyin": "tóu zī lì rùn",
+      "english": "Investment profit",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l7_p09",
+      "chinese": "品牌策略",
+      "pinyin": "pǐn pái cè lüè",
+      "english": "Brand strategy",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "选择合作而非竞争往往能带来更大的经济效益。",
       "pinyin": "Xuǎn zé hé zuò ér fēi jìng zhēng wǎng wǎng néng dài lái gèng dà de jīng jì xiào yì.",
       "english": "Choosing cooperation over competition often leads to greater economic benefits."
+    },
+    {
+      "chinese": "企业在激烈的市场竞争中，需要制定有效的品牌策略。",
+      "pinyin": "Qǐ yè zài jī liè de shì chǎng jìng zhēng zhōng, xū yào zhì dìng yǒu xiào de pǐn pái cè lüè.",
+      "english": "In fierce market competition, enterprises need to formulate effective brand strategies."
+    },
+    {
+      "chinese": "通过合作谈判，双方达成了协议，提高了投资利润。",
+      "pinyin": "Tōng guò hé zuò tán pàn, shuāng fāng dá chéng le xié yì, tí gāo le tóu zī lì rùn.",
+      "english": "Through cooperative negotiations, both parties reached an agreement and increased investment profits."
+    },
+    {
+      "chinese": "经济的发展离不开市场竞争和企业之间的合作。",
+      "pinyin": "Jīng jì de fā zhǎn lí bù kāi shì chǎng jìng zhēng hé qǐ yè zhī jiān de hé zuò.",
+      "english": "Economic development cannot do without market competition and cooperation between enterprises."
     }
   ],
   "grammar_points": [
@@ -841,6 +877,51 @@
         "Strategy wins markets"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '市场竞争' mean?",
+      "type": "multiple_choice",
+      "correct": "Market competition",
+      "options": [
+        "Market competition",
+        "Investment profit",
+        "Brand strategy",
+        "Business negotiation"
+      ],
+      "word_hints": {
+        "市场": "shì chǎng",
+        "竞争": "jìng zhēng"
+      }
+    },
+    {
+      "question": "What does '品牌策略' mean?",
+      "type": "multiple_choice",
+      "correct": "Brand strategy",
+      "options": [
+        "Brand strategy",
+        "Market competition",
+        "Investment profit",
+        "Economic cooperation"
+      ],
+      "word_hints": {
+        "品牌": "pǐn pái",
+        "策略": "cè lüè"
+      }
+    },
+    {
+      "question": "Fill in: 企业在激烈的市场竞争中，需要制定有效的 _____ 策略。",
+      "type": "multiple_choice",
+      "correct": "品牌",
+      "options": [
+        "品牌",
+        "经济",
+        "利润",
+        "投资"
+      ],
+      "word_hints": {
+        "企业": "qǐ yè",
+        "竞争": "jìng zhēng"
+      }
     }
   ],
   "dialogues": [

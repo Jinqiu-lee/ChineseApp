@@ -148,6 +148,27 @@
       "pinyin": "zēng jiā xìn xīn",
       "english": "To increase confidence",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l11_p06",
+      "chinese": "危险增加",
+      "pinyin": "wēi xiǎn zēng jiā",
+      "english": "Danger increases",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l11_p07",
+      "chinese": "气温降低",
+      "pinyin": "qì wēn jiàng dī",
+      "english": "Temperature drops",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l11_p08",
+      "chinese": "突然发生",
+      "pinyin": "tū rán fā shēng",
+      "english": "Happen suddenly",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "天气发生了变化，温度降低了，变得凉快了很多。",
       "pinyin": "Tiān qì fā shēng le biàn huà, wēn dù jiàng dī le , biàn de liáng kuai le hěn duō.",
       "english": "The weather has changed, temperature lowered and is becoming much cooler."
+    },
+    {
+      "chinese": "气温突然降低，危险也随之增加了。",
+      "pinyin": "Qì wēn tū rán jiàng dī, wēi xiǎn yě suí zhī zēng jiā le.",
+      "english": "The temperature suddenly dropped, and danger increased along with it."
+    },
+    {
+      "chinese": "发展过快会导致各种危险情况发生。",
+      "pinyin": "Fā zhǎn guò kuài huì dǎo zhì gè zhǒng wēi xiǎn qíng kuàng fā shēng.",
+      "english": "Developing too fast can lead to various dangerous situations occurring."
+    },
+    {
+      "chinese": "我们必须减少危险，防止更多问题出现。",
+      "pinyin": "Wǒ men bì xū jiǎn shǎo wēi xiǎn, fáng zhǐ gèng duō wèn tí chū xiàn.",
+      "english": "We must reduce dangers and prevent more problems from appearing."
     }
   ],
   "grammar_points": [
@@ -838,6 +874,51 @@
       ],
       "word_hints": {
         "增加": "zēng jiā"
+      }
+    },
+    {
+      "question": "What does '气温降低' mean?",
+      "type": "multiple_choice",
+      "correct": "Temperature drops",
+      "options": [
+        "Temperature drops",
+        "Danger increases",
+        "Happen suddenly",
+        "Climate develops"
+      ],
+      "word_hints": {
+        "气温": "qì wēn",
+        "降低": "jiàng dī"
+      }
+    },
+    {
+      "question": "What does '突然发生' mean?",
+      "type": "multiple_choice",
+      "correct": "Happen suddenly",
+      "options": [
+        "Happen suddenly",
+        "Temperature drops",
+        "Danger increases",
+        "Reduce gradually"
+      ],
+      "word_hints": {
+        "突然": "tū rán",
+        "发生": "fā shēng"
+      }
+    },
+    {
+      "question": "Fill in: 气温突然降低，_____ 也随之增加了。",
+      "type": "multiple_choice",
+      "correct": "危险",
+      "options": [
+        "危险",
+        "发展",
+        "减少",
+        "出现"
+      ],
+      "word_hints": {
+        "气温": "qì wēn",
+        "降低": "jiàng dī"
       }
     }
   ],

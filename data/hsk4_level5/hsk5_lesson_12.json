@@ -155,6 +155,27 @@
       "pinyin": "fù zé rèn de tài dù",
       "english": "A responsible attitude",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l12_p07",
+      "chinese": "诚实守信",
+      "pinyin": "chéng shí shǒu xìn",
+      "english": "Honest and trustworthy",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l12_p08",
+      "chinese": "勇敢自信",
+      "pinyin": "yǒng gǎn zì xìn",
+      "english": "Brave and confident",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l12_p09",
+      "chinese": "积极负责任",
+      "pinyin": "jī jí fù zé rèn",
+      "english": "Positive and responsible",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "保持乐观的态度，与其担心未来，不如好好把握现在。",
       "pinyin": "Bǎo chí lè guān de tài dù, yǔ qí dān xīn wèi lái, bù rú hǎo hǎo bǎ wò xiàn zài.",
       "english": "Maintain an optimistic attitude — rather than worrying about the future, it is better to make the most of the present."
+    },
+    {
+      "chinese": "一个诚实守信、积极负责任的人在社会上会受到尊重。",
+      "pinyin": "Yī gè chéng shí shǒu xìn, jī jí fù zé rèn de rén zài shè huì shàng huì shòu dào zūn zhòng.",
+      "english": "A person who is honest, trustworthy, positive, and responsible will be respected in society."
+    },
+    {
+      "chinese": "她勇敢自信地面对困难，展现了良好的个人品格。",
+      "pinyin": "Tā yǒng gǎn zì xìn de miàn duì kùn nán, zhǎn xiàn le liáng hǎo de gè rén pǐn gé.",
+      "english": "She faced difficulties bravely and confidently, demonstrating good personal character."
+    },
+    {
+      "chinese": "细心和耐心是一个善良负责任的人应该具备的品质。",
+      "pinyin": "Xì xīn hé nài xīn shì yī gè shàn liáng fù zé rèn de rén yīng gāi jù bèi de pǐn zhì.",
+      "english": "Carefulness and patience are qualities that a kind and responsible person should possess."
     }
   ],
   "grammar_points": [
@@ -835,6 +871,51 @@
         "积极乐观"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '诚实守信' mean?",
+      "type": "multiple_choice",
+      "correct": "Honest and trustworthy",
+      "options": [
+        "Honest and trustworthy",
+        "Brave and confident",
+        "Positive and responsible",
+        "Kind and patient"
+      ],
+      "word_hints": {
+        "诚实": "chéng shí",
+        "守信": "shǒu xìn"
+      }
+    },
+    {
+      "question": "What does '勇敢自信' mean?",
+      "type": "multiple_choice",
+      "correct": "Brave and confident",
+      "options": [
+        "Brave and confident",
+        "Honest and trustworthy",
+        "Positive and responsible",
+        "Humble and careful"
+      ],
+      "word_hints": {
+        "勇敢": "yǒng gǎn",
+        "自信": "zì xìn"
+      }
+    },
+    {
+      "question": "Fill in: 细心和耐心是一个善良 _____ 的人应该具备的品质。",
+      "type": "multiple_choice",
+      "correct": "负责任",
+      "options": [
+        "负责任",
+        "谦虚",
+        "坚强",
+        "积极"
+      ],
+      "word_hints": {
+        "细心": "xì xīn",
+        "善良": "shàn liáng"
+      }
     }
   ],
   "dialogues": [

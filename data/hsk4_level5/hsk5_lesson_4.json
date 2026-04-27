@@ -155,6 +155,27 @@
       "pinyin": "àn zhào shí pǔ zuò cài",
       "english": "To cook following a recipe",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l4_p07",
+      "chinese": "特色菜肴",
+      "pinyin": "tè sè cài yáo",
+      "english": "Specialty dish",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l4_p08",
+      "chinese": "新鲜食材",
+      "pinyin": "xīn xiān shí cái",
+      "english": "Fresh ingredients",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l4_p09",
+      "chinese": "烹饪技巧",
+      "pinyin": "pēng rèn jì qiǎo",
+      "english": "Cooking technique",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "她把新鲜食材一一清洗干净，准备按照食谱烹饪一道传统美食。",
       "pinyin": "Tā bǎ xīn xiān shí cái yí yì qīng xǐ gān jìng, zhǔn bèi àn zhào shí pǔ pēng rèn yí dào chuán tǒng měi shí.",
       "english": "She washed all the fresh ingredients one by one and prepared to cook a traditional dish following a recipe."
+    },
+    {
+      "chinese": "好的厨师会利用新鲜食材来烹饪特色菜肴。",
+      "pinyin": "Hǎo de chú shī huì lì yòng xīn xiān shí cái lái pēng rèn tè sè cài yáo.",
+      "english": "A good chef uses fresh ingredients to cook specialty dishes."
+    },
+    {
+      "chinese": "这道菜的营养丰富，口味独特，是本店的特色。",
+      "pinyin": "Zhè dào cài de yíng yǎng fēng fù, kǒu wèi dú tè, shì běn diàn de tè sè.",
+      "english": "This dish is nutritious and has a unique taste; it is the specialty of this restaurant."
+    },
+    {
+      "chinese": "厨师通过调味和烹饪技巧，让食物的味道更加美味。",
+      "pinyin": "Chú shī tōng guò tiáo wèi hé pēng rèn jì qiǎo, ràng shí wù de wèi dào gèng jiā měi wèi.",
+      "english": "Through seasoning and cooking techniques, the chef makes the food taste even more delicious."
     }
   ],
   "grammar_points": [
@@ -846,6 +882,51 @@
         "不管...都..."
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '特色菜肴' mean?",
+      "type": "multiple_choice",
+      "correct": "Specialty dish",
+      "options": [
+        "Specialty dish",
+        "Fresh ingredients",
+        "Cooking technique",
+        "Healthy diet"
+      ],
+      "word_hints": {
+        "特色": "tè sè",
+        "菜肴": "cài yáo"
+      }
+    },
+    {
+      "question": "What does '新鲜食材' mean?",
+      "type": "multiple_choice",
+      "correct": "Fresh ingredients",
+      "options": [
+        "Fresh ingredients",
+        "Specialty dish",
+        "Cooking technique",
+        "Unique flavor"
+      ],
+      "word_hints": {
+        "新鲜": "xīn xiān",
+        "食材": "shí cái"
+      }
+    },
+    {
+      "question": "Fill in: 好的厨师会利用新鲜食材来烹饪 _____ 菜肴。",
+      "type": "multiple_choice",
+      "correct": "特色",
+      "options": [
+        "特色",
+        "营养",
+        "口味",
+        "调味"
+      ],
+      "word_hints": {
+        "厨师": "chú shī",
+        "烹饪": "pēng rèn"
+      }
     }
   ],
   "dialogues": [

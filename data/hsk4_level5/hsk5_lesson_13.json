@@ -155,6 +155,27 @@
       "pinyin": "liáng hǎo de yǐn shí xí guàn",
       "english": "Good dietary habits",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l13_p07",
+      "chinese": "预防疾病",
+      "pinyin": "yù fáng jí bìng",
+      "english": "Prevent illness",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l13_p08",
+      "chinese": "康复治疗",
+      "pinyin": "kāng fù zhì liáo",
+      "english": "Rehabilitation treatment",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l13_p09",
+      "chinese": "均衡营养",
+      "pinyin": "jūn héng yíng yǎng",
+      "english": "Balanced nutrition",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "只有按时服用药物，才能确保治疗效果。",
       "pinyin": "Zhǐ yǒu àn shí fú yòng yào wù, cái néng què bǎo zhì liáo xiào guǒ.",
       "english": "Only by taking medication on time can the effectiveness of the treatment be ensured."
+    },
+    {
+      "chinese": "医生建议均衡营养是预防多种疾病的有效方法。",
+      "pinyin": "Yī shēng jiàn yì jūn héng yíng yǎng shì yù fáng duō zhǒng jí bìng de yǒu xiào fāng fǎ.",
+      "english": "The doctor advised that balanced nutrition is an effective way to prevent many illnesses."
+    },
+    {
+      "chinese": "手术后需要进行系统的康复治疗，才能恢复健康。",
+      "pinyin": "Shǒu shù hòu xū yào jìn xíng xì tǒng de kāng fù zhì liáo, cái néng huī fù jiàn kāng.",
+      "english": "After surgery, systematic rehabilitation treatment is needed to restore health."
+    },
+    {
+      "chinese": "定期检查和及时治疗症状，是保持健康的关键。",
+      "pinyin": "Dìng qī jiǎn chá hé jí shí zhì liáo zhèng zhuàng, shì bǎo chí jiàn kāng de guān jiàn.",
+      "english": "Regular checkups and timely treatment of symptoms are the key to maintaining health."
     }
   ],
   "grammar_points": [
@@ -844,6 +880,51 @@
         "与其…不如…"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '预防疾病' mean?",
+      "type": "multiple_choice",
+      "correct": "Prevent illness",
+      "options": [
+        "Prevent illness",
+        "Rehabilitation treatment",
+        "Balanced nutrition",
+        "Take medication"
+      ],
+      "word_hints": {
+        "预防": "yù fáng",
+        "疾病": "jí bìng"
+      }
+    },
+    {
+      "question": "What does '康复治疗' mean?",
+      "type": "multiple_choice",
+      "correct": "Rehabilitation treatment",
+      "options": [
+        "Rehabilitation treatment",
+        "Prevent illness",
+        "Balanced nutrition",
+        "Medical checkup"
+      ],
+      "word_hints": {
+        "康复": "kāng fù",
+        "治疗": "zhì liáo"
+      }
+    },
+    {
+      "question": "Fill in: 手术后需要进行系统的 _____ 治疗，才能恢复健康。",
+      "type": "multiple_choice",
+      "correct": "康复",
+      "options": [
+        "康复",
+        "预防",
+        "营养",
+        "药物"
+      ],
+      "word_hints": {
+        "手术": "shǒu shù",
+        "健康": "jiàn kāng"
+      }
     }
   ],
   "dialogues": [

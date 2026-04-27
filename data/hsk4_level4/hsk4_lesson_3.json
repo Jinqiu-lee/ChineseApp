@@ -148,6 +148,27 @@
       "pinyin": "pī píng yǔ biǎo yáng",
       "english": "Criticism and praise",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l3_p06",
+      "chinese": "有礼貌地交流",
+      "pinyin": "yǒu lǐ mào de jiāo liú",
+      "english": "Communicate politely",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l3_p07",
+      "chinese": "接受批评",
+      "pinyin": "jiē shòu pī píng",
+      "english": "To accept criticism",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l3_p08",
+      "chinese": "解释原因",
+      "pinyin": "jiě shì yuán yīn",
+      "english": "Explain the reason",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "通过对话，他们更好地了解了彼此的想法。",
       "pinyin": "Tōng guò duì huà, tā men gèng hǎo de liǎo jiě le bǐ cǐ de xiǎng fǎ.",
       "english": "Through dialogue, they better understood each other's thoughts."
+    },
+    {
+      "chinese": "礼貌地交流能帮助我们解释误会。",
+      "pinyin": "Lǐ mào de jiāo liú néng bāng zhù wǒ men jiě shì wù huì.",
+      "english": "Communicating politely can help us explain misunderstandings."
+    },
+    {
+      "chinese": "他对批评非常开放，并且认真解释了自己的想法。",
+      "pinyin": "Tā duì pī píng fēi cháng kāi fàng, bìng qiě rèn zhēn jiě shì le zì jǐ de xiǎng fǎ.",
+      "english": "He is very open to criticism and carefully explained his own thinking."
+    },
+    {
+      "chinese": "通过对话，他们解决了很多交流上的问题。",
+      "pinyin": "Tōng guò duì huà, tā men jiě jué le hěn duō jiāo liú shàng de wèn tí.",
+      "english": "Through dialogue, they resolved many communication problems."
     }
   ],
   "grammar_points": [
@@ -847,6 +883,51 @@
       ],
       "word_hints": {
         "解释": "jiě shì"
+      }
+    },
+    {
+      "question": "What does '有礼貌地交流' mean?",
+      "type": "multiple_choice",
+      "correct": "Communicate politely",
+      "options": [
+        "Communicate politely",
+        "Accept criticism",
+        "Explain the reason",
+        "Start a dialogue"
+      ],
+      "word_hints": {
+        "礼貌": "lǐ mào",
+        "交流": "jiāo liú"
+      }
+    },
+    {
+      "question": "What does '接受批评' mean?",
+      "type": "multiple_choice",
+      "correct": "To accept criticism",
+      "options": [
+        "To accept criticism",
+        "Communicate politely",
+        "Explain the reason",
+        "Offer praise"
+      ],
+      "word_hints": {
+        "接受": "jiē shòu",
+        "批评": "pī píng"
+      }
+    },
+    {
+      "question": "Fill in: 通过 _____，他们解决了很多交流上的问题。",
+      "type": "multiple_choice",
+      "correct": "对话",
+      "options": [
+        "对话",
+        "批评",
+        "表扬",
+        "词语"
+      ],
+      "word_hints": {
+        "交流": "jiāo liú",
+        "解决": "jiě jué"
       }
     }
   ],

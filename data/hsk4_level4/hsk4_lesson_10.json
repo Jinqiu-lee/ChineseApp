@@ -148,6 +148,27 @@
       "pinyin": "yáng guāng chōng zú",
       "english": "Abundant sunshine",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l10_p06",
+      "chinese": "保护地球",
+      "pinyin": "bǎo hù dì qiú",
+      "english": "Protect the earth",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l10_p07",
+      "chinese": "气候变化",
+      "pinyin": "qì hòu biàn huà",
+      "english": "Climate change",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l10_p08",
+      "chinese": "森林植物",
+      "pinyin": "sēn lín zhí wù",
+      "english": "Forest plants",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "随着人们环保意识的增强，污染严重的情况逐渐改善。",
       "pinyin": "Suí zhe rén men huán bǎo yì shí de zēng qiáng, wū rǎn yán zhòng de qíng kuàng zhú jiàn gǎi shàn.",
       "english": "As people's environmental awareness grows, the situation of serious pollution is gradually improving."
+    },
+    {
+      "chinese": "气候变化对海洋和森林里的植物影响很大。",
+      "pinyin": "Qì hòu biàn huà duì hǎi yáng hé sēn lín lǐ de zhí wù yǐng xiǎng hěn dà.",
+      "english": "Climate change has a great impact on oceans and forest plants."
+    },
+    {
+      "chinese": "阳光和云对地球气候的变化有很重要的作用。",
+      "pinyin": "Yáng guāng hé yún duì dì qiú qì hòu de biàn huà yǒu hěn zhòng yào de zuò yòng.",
+      "english": "Sunlight and clouds play a very important role in the changes of the earth's climate."
+    },
+    {
+      "chinese": "我们应该保护地球上的每一片森林和海洋。",
+      "pinyin": "Wǒ men yīng gāi bǎo hù dì qiú shàng de měi yī piàn sēn lín hé hǎi yáng.",
+      "english": "We should protect every forest and ocean on earth."
     }
   ],
   "grammar_points": [
@@ -845,6 +881,51 @@
       ],
       "word_hints": {
         "阳光": "yáng guāng"
+      }
+    },
+    {
+      "question": "What does '保护地球' mean?",
+      "type": "multiple_choice",
+      "correct": "Protect the earth",
+      "options": [
+        "Protect the earth",
+        "Climate change",
+        "Forest plants",
+        "Ocean life"
+      ],
+      "word_hints": {
+        "保护": "bǎo hù",
+        "地球": "dì qiú"
+      }
+    },
+    {
+      "question": "What does '气候变化' mean?",
+      "type": "multiple_choice",
+      "correct": "Climate change",
+      "options": [
+        "Climate change",
+        "Protect the earth",
+        "Forest plants",
+        "Sunlight effect"
+      ],
+      "word_hints": {
+        "气候": "qì hòu",
+        "变化": "biàn huà"
+      }
+    },
+    {
+      "question": "Fill in: 气候变化对海洋和森林里的 _____ 影响很大。",
+      "type": "multiple_choice",
+      "correct": "植物",
+      "options": [
+        "植物",
+        "阳光",
+        "叶子",
+        "云"
+      ],
+      "word_hints": {
+        "气候": "qì hòu",
+        "森林": "sēn lín"
       }
     }
   ],

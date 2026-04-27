@@ -148,6 +148,27 @@
       "pinyin": "zhèng què pàn duàn",
       "english": "Correct judgment",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l7_p06",
+      "chinese": "符合标准",
+      "pinyin": "fú hé biāo zhǔn",
+      "english": "Meet the standard",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l7_p07",
+      "chinese": "区别对待",
+      "pinyin": "qū bié duì dài",
+      "english": "Treat differently",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l7_p08",
+      "chinese": "实际情况",
+      "pinyin": "shí jì qíng kuàng",
+      "english": "Actual situation",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "低质量产品在市场上很普遍，消费者要学会判断。",
       "pinyin": "Dī zhì liàng chǎn pǐn zài shì chǎng shàng hěn pǔ biàn, xiāo fèi zhě yào xué huì pàn duàn.",
       "english": "Low-quality products are very widespread in the market; consumers need to learn how to judge."
+    },
+    {
+      "chinese": "产品必须符合国家标准，否则不能出售。",
+      "pinyin": "Chǎn pǐn bì xū fú hé guó jiā biāo zhǔn, fǒu zé bù néng chū shòu.",
+      "english": "Products must meet national standards; otherwise they cannot be sold."
+    },
+    {
+      "chinese": "虽然两件商品相同，但实际情况有很大区别。",
+      "pinyin": "Suī rán liǎng jiàn shāng pǐn xiāng tóng, dàn shí jì qíng kuàng yǒu hěn dà qū bié.",
+      "english": "Although the two products look the same, the actual situation has big differences."
+    },
+    {
+      "chinese": "他认为标准应该根据实际情况来调整。",
+      "pinyin": "Tā rèn wéi biāo zhǔn yīng gāi gēn jù shí jì qíng kuàng lái tiáo zhěng.",
+      "english": "He believes standards should be adjusted according to the actual situation."
     }
   ],
   "grammar_points": [
@@ -846,6 +882,51 @@
         "这家餐厅的比较价格合理。"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '符合标准' mean?",
+      "type": "multiple_choice",
+      "correct": "Meet the standard",
+      "options": [
+        "Meet the standard",
+        "Treat differently",
+        "Actual situation",
+        "Reach the goal"
+      ],
+      "word_hints": {
+        "符合": "fú hé",
+        "标准": "biāo zhǔn"
+      }
+    },
+    {
+      "question": "What does '实际情况' mean?",
+      "type": "multiple_choice",
+      "correct": "Actual situation",
+      "options": [
+        "Actual situation",
+        "Meet the standard",
+        "Treat differently",
+        "Common case"
+      ],
+      "word_hints": {
+        "实际": "shí jì",
+        "情况": "qíng kuàng"
+      }
+    },
+    {
+      "question": "Fill in: 产品必须 _____ 国家标准，否则不能出售。",
+      "type": "multiple_choice",
+      "correct": "符合",
+      "options": [
+        "符合",
+        "区别",
+        "相同",
+        "合格"
+      ],
+      "word_hints": {
+        "产品": "chǎn pǐn",
+        "标准": "biāo zhǔn"
+      }
     }
   ],
   "dialogues": [
@@ -880,9 +961,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "你说得对。不管价格怎么样，质量都应该合格，这是正确的判断。",
-          "pinyin": "Nǐ shuō de duì. Bù guǎn jià gé duō zěn me yàng, zhì liàng dōu yīng gāi hé gé, zhè shì zhèng què de pàn duàn.",
-          "english": "You are right. No matter how much the price is, quality should always be up to standard — that is the correct judgment."
+          "chinese": "你说得对。不管价格怎么样，质量都应该合格。",
+          "pinyin": "Nǐ shuō de duì. Bù guǎn jià gé duō zěn me yàng, zhì liàng dōu yīng gāi hé gé.",
+          "english": "You are right. No matter how much the price is, quality should always be up to standard."
         },
         {
           "speaker": "B",
@@ -892,9 +973,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "对，这种低质量产品的问题很普遍，我们要学会区别。",
-          "pinyin": "Duì, zhè zhǒng dī zhì liàng chǎn pǐn de wèn tí hěn pǔ biàn, wǒ men yào xué huì qū bié.",
-          "english": "Right. This type of low-quality product problem is very widespread. We must learn to tell the difference."
+          "chinese": "对，这种低质量产品的问题很普遍，我们要学会区别和判断。",
+          "pinyin": "Duì, zhè zhǒng dī zhì liàng chǎn pǐn de wèn tí hěn pǔ biàn, wǒ men yào xué huì qū bié hé pàn duàn.",
+          "english": "Right. This type of low-quality product problem is very widespread. We must learn to distinguish and judge."
         },
         {
           "speaker": "B",
@@ -929,9 +1010,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "我判断了一下，相比之下，这批产品比较合格，但有少数不符合。",
-          "pinyin": "Wǒ pàn duàn le yí xià, xiāng bǐ zhī xià, zhè pī chǎn pǐn bǐ jiào hé gé, dàn yǒu shǎo shù bù fú hé.",
-          "english": "I made a judgment. By comparison, this batch of products is relatively qualified, but a small number do not comply."
+          "chinese": "我判断了一下，相比之下，这批产品比较合格，但还是有少数不符合。",
+          "pinyin": "Wǒ pàn duàn le yí xià, xiāng bǐ zhī xià, zhè pī chǎn pǐn bǐ jiào hé gé, dàn hái shì yǒu shǎo shù bù fú hé.",
+          "english": "I made a judgment. By comparison, this batch of products is relatively qualified, but still a small number do not comply."
         },
         {
           "speaker": "A",
@@ -947,9 +1028,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "好，以后区别合格与不合格产品的流程要更加普遍执行。",
-          "pinyin": "Hǎo, yǐ hòu qū bié hé gé yǔ bù hé gé chǎn pǐn de liú chéng yào gèng jiā pǔ biàn zhí xíng.",
-          "english": "Good. Going forward, the process for distinguishing qualified from unqualified products should be implemented more widely."
+          "chinese": "好，以后区别合格与不合格产品的流程要普遍执行。",
+          "pinyin": "Hǎo, yǐ hòu qū bié hé gé yǔ bù hé gé chǎn pǐn de liú chéng yào pǔ biàn zhí xíng.",
+          "english": "Good. Going forward, the process for distinguishing qualified from unqualified products should be implemented  widely."
         },
         {
           "speaker": "B",

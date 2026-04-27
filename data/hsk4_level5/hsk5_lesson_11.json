@@ -155,6 +155,27 @@
       "pinyin": "bǎo hù yí chǎn",
       "english": "To protect heritage",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l11_p07",
+      "chinese": "欣赏作品",
+      "pinyin": "xīn shǎng zuò pǐn",
+      "english": "Appreciate artworks",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l11_p08",
+      "chinese": "传统文化遗产",
+      "pinyin": "chuán tǒng wén huà yí chǎn",
+      "english": "Traditional cultural heritage",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l11_p09",
+      "chinese": "博物馆展览",
+      "pinyin": "bó wù guǎn zhǎn lǎn",
+      "english": "Museum exhibition",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "博物馆里的表演让游客感受到了传统文化的魅力。",
       "pinyin": "Bó wù guǎn lǐ de biǎo yǎn ràng yóu kè gǎn shòu dào le chuán tǒng wén huà de mèi lì.",
       "english": "The performance in the museum allowed visitors to experience the charm of traditional culture."
+    },
+    {
+      "chinese": "参观博物馆展览是欣赏传统文化遗产的好方法。",
+      "pinyin": "Cān guān bó wù guǎn zhǎn lǎn shì xīn shǎng chuán tǒng wén huà yí chǎn de hǎo fāng fǎ.",
+      "english": "Visiting museum exhibitions is a good way to appreciate traditional cultural heritage."
+    },
+    {
+      "chinese": "艺术家的创作风格体现在他每一件展出的作品中。",
+      "pinyin": "Yì shù jiā de chuàng zuò fēng gé tǐ xiàn zài tā měi yī jiàn zhǎn chū de zuò pǐn zhōng.",
+      "english": "The artist's creative style is reflected in every exhibited artwork of his."
+    },
+    {
+      "chinese": "通过表演和展览，人们更好地了解了中国的文化遗产。",
+      "pinyin": "Tōng guò biǎo yǎn hé zhǎn lǎn, rén men gèng hǎo de liǎo jiě le Zhōng guó de wén huà yí chǎn.",
+      "english": "Through performances and exhibitions, people have gained a better understanding of China's cultural heritage."
     }
   ],
   "grammar_points": [
@@ -840,6 +876,51 @@
         "风格"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '欣赏作品' mean?",
+      "type": "multiple_choice",
+      "correct": "Appreciate artworks",
+      "options": [
+        "Appreciate artworks",
+        "Traditional cultural heritage",
+        "Museum exhibition",
+        "Creative style"
+      ],
+      "word_hints": {
+        "欣赏": "xīn shǎng",
+        "作品": "zuò pǐn"
+      }
+    },
+    {
+      "question": "What does '博物馆展览' mean?",
+      "type": "multiple_choice",
+      "correct": "Museum exhibition",
+      "options": [
+        "Museum exhibition",
+        "Appreciate artworks",
+        "Traditional cultural heritage",
+        "Art performance"
+      ],
+      "word_hints": {
+        "博物馆": "bó wù guǎn",
+        "展览": "zhǎn lǎn"
+      }
+    },
+    {
+      "question": "Fill in: 参观博物馆展览是欣赏传统文化 _____ 的好方法。",
+      "type": "multiple_choice",
+      "correct": "遗产",
+      "options": [
+        "遗产",
+        "风格",
+        "作品",
+        "创作"
+      ],
+      "word_hints": {
+        "博物馆": "bó wù guǎn",
+        "传统": "chuán tǒng"
+      }
     }
   ],
   "dialogues": [

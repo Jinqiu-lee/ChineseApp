@@ -148,6 +148,27 @@
       "pinyin": "qīng sōng zì zài",
       "english": "Relaxed and carefree",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l13_p06",
+      "chinese": "实现理想",
+      "pinyin": "shí xiàn lǐ xiǎng",
+      "english": "Realize one's ideal",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l13_p07",
+      "chinese": "感到愉快",
+      "pinyin": "gǎn dào yú kuài",
+      "english": "Feel pleasant",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l13_p08",
+      "chinese": "总结经验教训",
+      "pinyin": "zǒng jié jīng yàn jiào xùn",
+      "english": "Summarize lessons learned",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "总结来说，开心、轻松、心满意足就是幸福的真正含义。",
       "pinyin": "Zǒng jié lái shuō, kāi xīn, qīng sōng, xīn mǎn yì zú jiù shì xìng fú de zhēn zhèng hán yì.",
       "english": "In summary, being happy, relaxed, and satisfied is the true meaning of happiness."
+    },
+    {
+      "chinese": "当她实现了理想，心里感到非常愉快和幸福。",
+      "pinyin": "Dāng tā shí xiàn le lǐ xiǎng, xīn lǐ gǎn dào fēi cháng yú kuài hé xìng fú.",
+      "english": "When she realized her ideal, she felt very pleasant and happy inside."
+    },
+    {
+      "chinese": "他总结经验教训，终于找到了实现目的的方法。",
+      "pinyin": "Tā zǒng jié jīng yàn jiào xùn, zhōng yú zhǎo dào le shí xiàn mù dì de fāng fǎ.",
+      "english": "He summarized the lessons learned and finally found a way to achieve his goal."
+    },
+    {
+      "chinese": "开心的梦让他感到幸福，帮助他保持满足感。",
+      "pinyin": "Kāi xīn de mèng ràng tā gǎn dào xìng fú, bāng zhù tā bǎo chí mǎn zú gǎn.",
+      "english": "A happy dream made him feel blessed and helped him maintain a sense of contentment."
     }
   ],
   "grammar_points": [
@@ -839,6 +875,51 @@
       ],
       "word_hints": {
         "目的": "mù dì"
+      }
+    },
+    {
+      "question": "What does '实现理想' mean?",
+      "type": "multiple_choice",
+      "correct": "Realize one's ideal",
+      "options": [
+        "Realize one's ideal",
+        "Feel pleasant",
+        "Summarize lessons learned",
+        "Achieve happiness"
+      ],
+      "word_hints": {
+        "实现": "shí xiàn",
+        "理想": "lǐ xiǎng"
+      }
+    },
+    {
+      "question": "What does '感到愉快' mean?",
+      "type": "multiple_choice",
+      "correct": "Feel pleasant",
+      "options": [
+        "Feel pleasant",
+        "Realize one's ideal",
+        "Summarize lessons learned",
+        "Feel content"
+      ],
+      "word_hints": {
+        "感到": "gǎn dào",
+        "愉快": "yú kuài"
+      }
+    },
+    {
+      "question": "Fill in: 当她实现了理想，心里感到非常 _____ 和幸福。",
+      "type": "multiple_choice",
+      "correct": "愉快",
+      "options": [
+        "愉快",
+        "满",
+        "开心",
+        "梦"
+      ],
+      "word_hints": {
+        "理想": "lǐ xiǎng",
+        "幸福": "xìng fú"
       }
     }
   ],

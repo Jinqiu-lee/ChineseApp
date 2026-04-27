@@ -155,6 +155,27 @@
       "pinyin": "xìng fú gǎn",
       "english": "A sense of happiness",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l1_p07",
+      "chinese": "真实的感情",
+      "pinyin": "zhēn shí de gǎn qíng",
+      "english": "Genuine feelings",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l1_p08",
+      "chinese": "幸福的约会",
+      "pinyin": "xìng fú de yuē huì",
+      "english": "A happy date",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l1_p09",
+      "chinese": "浪漫的爱情",
+      "pinyin": "làng màn de ài qíng",
+      "english": "Romantic love",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -184,9 +205,24 @@
       "english": "He invited her to a movie, and she felt very happy."
     },
     {
-      "chinese": "两个人紧紧地抱着，感觉彼此的爱情是真实的。",
-      "pinyin": "Liǎng gè rén jǐn jǐn de bào zhe, gǎn jué bǐ cǐ de ài qíng shì zhēn shí de.",
+      "chinese": "两个人紧紧地抱着，感觉彼此的爱是真实的。",
+      "pinyin": "Liǎng gè rén jǐn jǐn de bào zhe, gǎn jué bǐ cǐ de ài shì zhēn shí de.",
       "english": "The two held each other tightly, feeling that their love for each other was real."
+    },
+    {
+      "chinese": "他们的感情非常真实，幸福而又浪漫。",
+      "pinyin": "Tā men de gǎn qíng fēi cháng zhēn shí, xìng fú ér yòu làng màn.",
+      "english": "Their feelings are very genuine, happy and romantic."
+    },
+    {
+      "chinese": "她感觉非常幸福，因为他准备了一个浪漫的约会。",
+      "pinyin": "Tā gǎn jué fēi cháng xìng fú, yīn wèi tā zhǔn bèi le yí gè làng màn de yuē huì.",
+      "english": "She felt very happy because he prepared a romantic date."
+    },
+    {
+      "chinese": "他邀请她参加约会，感动了她的心。",
+      "pinyin": "Tā yāo qǐng tā cān jiā yuē huì, gǎn dòng le tā de xīn.",
+      "english": "He invited her on a date and touched her heart."
     }
   ],
   "grammar_points": [
@@ -248,7 +284,7 @@
           }
         },
         {
-          "question": "这次约会 _____ 让她感觉幸福，_____ 让她坠入爱河。",
+          "question": "这次约会 _____ 让她感觉开心，_____ 让她很快坠入爱河。",
           "type": "multiple_choice",
           "correct": "不仅...而且...",
           "options": [
@@ -266,11 +302,11 @@
           "word_hints": {
             "约会": "yuē huì",
             "感觉": "gǎn jué",
-            "幸福": "xìng fú"
+            "开心": "kāi xīn"
           }
         },
         {
-          "question": "Which part goes in the blank? 他不仅邀请她吃饭，_____ 送给她鲜花。",
+          "question": "Which part goes in the blank? 他不仅邀请她吃饭，_____还送她鲜花。",
           "type": "multiple_choice",
           "correct": "而且",
           "options": [
@@ -367,7 +403,7 @@
           }
         },
         {
-          "question": "为了表示爱情，他 _____ 。",
+          "question": "为了让她安心，他 _____ 。",
           "type": "multiple_choice",
           "correct": "紧紧地抱着她",
           "options": [
@@ -383,7 +419,7 @@
             "suǒ yǐ gǎn jué xìng fú"
           ],
           "word_hints": {
-            "爱情": "ài qíng",
+            "放心": "ān xīn",
             "抱": "bào",
             "骄傲": "jiāo ào",
             "幽默": "yōu mò",
@@ -410,7 +446,7 @@
           "word_hints": {}
         },
         {
-          "question": "_____ 让感情更深，他们每周都有浪漫约会。",
+          "question": "_____ 维持感情，他们每周都有一个浪漫的约会。",
           "type": "multiple_choice",
           "correct": "为了",
           "options": [
@@ -444,9 +480,9 @@
           "english": "She felt very happy, but didn't show it."
         },
         {
-          "chinese": "他邀请她约会，她却说没有时间。",
-          "pinyin": "Tā yāo qǐng tā yuē huì, tā què shuō méi yǒu shí jiān.",
-          "english": "He invited her on a date, but she said she had no time."
+          "chinese": "他邀请她吃晚饭，她却说没有时间。",
+          "pinyin": "Tā yāo qǐng tā chī wǎn fàn, tā què shuō méi yǒu shí jiān.",
+          "english": "He invited her for dinner, but she said she had no time."
         }
       ],
       "exercises": [
@@ -530,7 +566,7 @@
           "word_hints": {}
         },
         {
-          "question": "他想表示感情，她 _____ 不理解他的意思。",
+          "question": "他想表示他坠入爱河了，她 _____ 不理解他的意思。",
           "type": "multiple_choice",
           "correct": "却",
           "options": [
@@ -546,7 +582,8 @@
             "hái"
           ],
           "word_hints": {
-            "感情": "gǎn qíng"
+            "表示": "biǎo shì",
+            "坠入爱河": "zhuì rù ài hé"
           }
         }
       ]
@@ -853,6 +890,51 @@
         "还"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does the phrase '真实的感情' mean?",
+      "type": "multiple_choice",
+      "correct": "Genuine feelings",
+      "options": [
+        "Genuine feelings",
+        "Romantic love",
+        "A happy date",
+        "Deep friendship"
+      ],
+      "word_hints": {
+        "真实": "zhēn shí",
+        "感情": "gǎn qíng"
+      }
+    },
+    {
+      "question": "What does the phrase '幸福的约会' mean?",
+      "type": "multiple_choice",
+      "correct": "A happy date",
+      "options": [
+        "A happy date",
+        "Genuine feelings",
+        "Romantic love",
+        "A boring evening"
+      ],
+      "word_hints": {
+        "幸福": "xìng fú",
+        "约会": "yuē huì"
+      }
+    },
+    {
+      "question": "Fill in: 她感觉非常幸福，因为他准备了一个 _____ 的约会。",
+      "type": "multiple_choice",
+      "correct": "浪漫",
+      "options": [
+        "浪漫",
+        "骄傲",
+        "幽默",
+        "感动"
+      ],
+      "word_hints": {
+        "约会": "yuē huì",
+        "幸福": "xìng fú"
+      }
     }
   ],
   "dialogues": [
@@ -911,15 +993,15 @@
         },
         {
           "speaker": "B",
-          "chinese": "我也是。我想紧紧地抱着你，表示我对你的爱情。",
-          "pinyin": "Wǒ yě shì. Wǒ xiǎng jǐn jǐn de bào zhe nǐ, biǎo shì wǒ duì nǐ de ài qíng.",
-          "english": "Me too. I want to hold you tight and show you my love."
+          "chinese": "我也是。我总是想紧紧地抱着你。",
+          "pinyin": "Wǒ yě shì. Wǒ zǒng shì xiǎng jǐn jǐn de bào zhe nǐ.",
+          "english": "Me too. I want to hold you tight all the time."
         },
         {
           "speaker": "A",
-          "chinese": "我也坠入爱河了，谢谢你让我感觉这么幸福。",
-          "pinyin": "Wǒ yě zhuì rù ài hé le, xiè xie nǐ ràng wǒ gǎn jué zhè me xìng fú.",
-          "english": "I have fallen in love too. Thank you for making me feel so happy."
+          "chinese": "谢谢你让我感觉这么幸福。",
+          "pinyin": "Xiè xie nǐ ràng wǒ gǎn jué zhè me xìng fú.",
+          "english": "Thank you for making me feel so happy."
         }
       ]
     },
@@ -960,9 +1042,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "谢谢你。为了改变自己，我会努力变得更幽默。",
-          "pinyin": "Xiè xie nǐ. Wèi le gǎi biàn zì jǐ, wǒ huì nǔ lì biàn de gèng yōu mò.",
-          "english": "Thank you. In order to change myself, I will work hard to become more humorous."
+          "chinese": "谢谢你，我会努力变得更幽默。",
+          "pinyin": "Xiè xie nǐ， wǒ huì nǔ lì biàn de gèng yōu mò.",
+          "english": "Thank you. I will work hard to become more humorous."
         },
         {
           "speaker": "B",

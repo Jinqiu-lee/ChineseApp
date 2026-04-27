@@ -155,6 +155,27 @@
       "pinyin": "wéi hù quán lì",
       "english": "To safeguard one's rights",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l6_p07",
+      "chinese": "违反法律",
+      "pinyin": "wéi fǎn fǎ lǜ",
+      "english": "Violate the law",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l6_p08",
+      "chinese": "签订合同",
+      "pinyin": "qiān dìng hé tong",
+      "english": "Sign a contract",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l6_p09",
+      "chinese": "提供证据",
+      "pinyin": "tí gōng zhèng jù",
+      "english": "Provide evidence",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "根据合同规定，任何一方违法都需要承担相应的法律责任。",
       "pinyin": "Gēn jù hé tong guī dìng, rèn hé yì fāng wéi fǎ dōu xū yào chéng dān xiāng yìng de fǎ lǜ zé rèn.",
       "english": "According to the contract, any party that breaks the law must bear the corresponding legal responsibility."
+    },
+    {
+      "chinese": "律师要求当事人提供证据，以便在法院解决诉讼问题。",
+      "pinyin": "Lǜ shī yāo qiú dāng shì rén tí gōng zhèng jù, yǐ biàn zài fǎ yuàn jiě jué sù sòng wèn tí.",
+      "english": "The lawyer required the parties to provide evidence in order to resolve litigation issues in court."
+    },
+    {
+      "chinese": "如果违反了合同规定，可能会面临法律制裁和罚款。",
+      "pinyin": "Rú guǒ wéi fǎn le hé tong guī dìng, kě néng huì miàn lín fǎ lǜ zhì cái hé fá kuǎn.",
+      "english": "If contract terms are violated, one may face legal sanctions and fines."
+    },
+    {
+      "chinese": "每个公民都有权利签订合同，也有义务遵守法律。",
+      "pinyin": "Měi gè gōng mín dōu yǒu quán lì qiān dìng hé tong, yě yǒu yì wù zūn shǒu fǎ lǜ.",
+      "english": "Every citizen has the right to sign contracts and also the obligation to obey the law."
     }
   ],
   "grammar_points": [
@@ -849,6 +885,51 @@
         "因此"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '违反法律' mean?",
+      "type": "multiple_choice",
+      "correct": "Violate the law",
+      "options": [
+        "Violate the law",
+        "Sign a contract",
+        "Provide evidence",
+        "Pay a fine"
+      ],
+      "word_hints": {
+        "违反": "wéi fǎn",
+        "法律": "fǎ lǜ"
+      }
+    },
+    {
+      "question": "What does '签订合同' mean?",
+      "type": "multiple_choice",
+      "correct": "Sign a contract",
+      "options": [
+        "Sign a contract",
+        "Violate the law",
+        "Provide evidence",
+        "File a lawsuit"
+      ],
+      "word_hints": {
+        "签订": "qiān dìng",
+        "合同": "hé tong"
+      }
+    },
+    {
+      "question": "Fill in: 律师要求当事人 _____ 证据，以便在法院解决问题。",
+      "type": "multiple_choice",
+      "correct": "提供",
+      "options": [
+        "提供",
+        "违法",
+        "罚款",
+        "义务"
+      ],
+      "word_hints": {
+        "律师": "lǜ shī",
+        "法院": "fǎ yuàn"
+      }
     }
   ],
   "dialogues": [

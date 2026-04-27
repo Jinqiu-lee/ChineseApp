@@ -155,6 +155,27 @@
       "pinyin": "fēn xī shù jù",
       "english": "To analyse data",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l3_p07",
+      "chinese": "下载软件",
+      "pinyin": "xià zài ruǎn jiàn",
+      "english": "Download software",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l3_p08",
+      "chinese": "网络直播",
+      "pinyin": "wǎng luò zhí bō",
+      "english": "Online live streaming",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l3_p09",
+      "chinese": "人工智能数据",
+      "pinyin": "rén gōng zhì néng shù jù",
+      "english": "Artificial intelligence data",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "这款软件通过收集用户数据来提供个性化的推荐内容。",
       "pinyin": "Zhè kuǎn ruǎn jiàn tōng guò shōu jí yòng hù shù jù lái tí gōng gè xìng huà de tuī jiàn nèi róng.",
       "english": "This software collects user data to provide personalised recommended content."
+    },
+    {
+      "chinese": "他下载了新软件，方便在平台上观看网络直播。",
+      "pinyin": "Tā xià zài le xīn ruǎn jiàn, fāng biàn zài píng tái shàng guān kàn wǎng luò zhí bō.",
+      "english": "He downloaded new software, making it convenient to watch online live streams on the platform."
+    },
+    {
+      "chinese": "人工智能正在利用大量数据来改进视频评论功能。",
+      "pinyin": "Rén gōng zhì néng zhèng zài lì yòng dà liàng shù jù lái gǎi jìn shì pín píng lùn gōng néng.",
+      "english": "Artificial intelligence is using large amounts of data to improve video comment features."
+    },
+    {
+      "chinese": "智能手机让网络和视频平台的使用变得更加方便。",
+      "pinyin": "Zhì néng shǒu jī ràng wǎng luò hé shì pín píng tái de shǐ yòng biàn de gèng jiā fāng biàn.",
+      "english": "Smartphones have made using the internet and video platforms even more convenient."
     }
   ],
   "grammar_points": [
@@ -844,6 +880,51 @@
         "不管...都..."
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '网络直播' mean?",
+      "type": "multiple_choice",
+      "correct": "Online live streaming",
+      "options": [
+        "Online live streaming",
+        "Download software",
+        "Artificial intelligence data",
+        "Video review"
+      ],
+      "word_hints": {
+        "网络": "wǎng luò",
+        "直播": "zhí bō"
+      }
+    },
+    {
+      "question": "What does '下载软件' mean?",
+      "type": "multiple_choice",
+      "correct": "Download software",
+      "options": [
+        "Download software",
+        "Online live streaming",
+        "Artificial intelligence data",
+        "Post a comment"
+      ],
+      "word_hints": {
+        "下载": "xià zài",
+        "软件": "ruǎn jiàn"
+      }
+    },
+    {
+      "question": "Fill in: 人工智能正在利用大量 _____ 来改进视频评论功能。",
+      "type": "multiple_choice",
+      "correct": "数据",
+      "options": [
+        "数据",
+        "软件",
+        "平台",
+        "网络"
+      ],
+      "word_hints": {
+        "人工智能": "rén gōng zhì néng",
+        "视频": "shì pín"
+      }
     }
   ],
   "dialogues": [

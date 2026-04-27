@@ -155,6 +155,27 @@
       "pinyin": "kōng qì wū rǎn",
       "english": "Air pollution",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l10_p07",
+      "chinese": "交通拥挤",
+      "pinyin": "jiāo tōng yōng jǐ",
+      "english": "Traffic congestion",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l10_p08",
+      "chinese": "城市污染",
+      "pinyin": "chéng shì wū rǎn",
+      "english": "Urban pollution",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l10_p09",
+      "chinese": "改善环境",
+      "pinyin": "gǎi shàn huán jìng",
+      "english": "Improve the environment",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "尽管公共交通系统不断完善，但高峰期的拥挤问题依然难以完全解决。",
       "pinyin": "Jǐn guǎn gōng gòng jiāo tōng xì tǒng bú duàn wán shàn, dàn gāo fēng qī de yōng jǐ wèn tí yī rán nán yǐ wán quán jiě jué.",
       "english": "Although the public transportation system continues to improve, the problem of congestion during peak hours remains difficult to fully resolve."
+    },
+    {
+      "chinese": "城市的交通拥挤和污染问题需要通过改善设施来解决。",
+      "pinyin": "Chéng shì de jiāo tōng yōng jǐ hé wū rǎn wèn tí xū yào tōng guò gǎi shàn shè shī lái jiě jué.",
+      "english": "The problems of urban traffic congestion and pollution need to be solved by improving facilities."
+    },
+    {
+      "chinese": "社区绿化可以有效改善城市环境，减少污染带来的压力。",
+      "pinyin": "Shè qū lǜ huà kě yǐ yǒu xiào gǎi shàn chéng shì huán jìng, jiǎn shǎo wū rǎn dài lái de yā lì.",
+      "english": "Community greening can effectively improve the urban environment and reduce the pressure caused by pollution."
+    },
+    {
+      "chinese": "快节奏的城市生活让居民感到便利，但也带来了很多压力。",
+      "pinyin": "Kuài jié zòu de chéng shì shēng huó ràng jū mín gǎn dào biàn lì, dàn yě dài lái le hěn duō yā lì.",
+      "english": "The fast-paced urban life makes residents feel convenient, but also brings a lot of pressure."
     }
   ],
   "grammar_points": [
@@ -844,6 +880,51 @@
         "To live a slower, healthier life"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '交通拥挤' mean?",
+      "type": "multiple_choice",
+      "correct": "Traffic congestion",
+      "options": [
+        "Traffic congestion",
+        "Urban pollution",
+        "Improve the environment",
+        "City pressure"
+      ],
+      "word_hints": {
+        "交通": "jiāo tōng",
+        "拥挤": "yōng jǐ"
+      }
+    },
+    {
+      "question": "What does '城市污染' mean?",
+      "type": "multiple_choice",
+      "correct": "Urban pollution",
+      "options": [
+        "Urban pollution",
+        "Traffic congestion",
+        "Improve the environment",
+        "Community facility"
+      ],
+      "word_hints": {
+        "城市": "chéng shì",
+        "污染": "wū rǎn"
+      }
+    },
+    {
+      "question": "Fill in: 社区绿化可以有效 _____ 城市环境，减少污染带来的压力。",
+      "type": "multiple_choice",
+      "correct": "改善",
+      "options": [
+        "改善",
+        "拥挤",
+        "便利",
+        "节奏"
+      ],
+      "word_hints": {
+        "环境": "huán jìng",
+        "污染": "wū rǎn"
+      }
     }
   ],
   "dialogues": [

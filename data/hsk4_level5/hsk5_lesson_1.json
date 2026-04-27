@@ -155,6 +155,27 @@
       "pinyin": "lǚ xíng jì huà",
       "english": "Travel plan",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l1_p07",
+      "chinese": "出发前准备",
+      "pinyin": "chū fā qián zhǔn bèi",
+      "english": "Preparation before departure",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l1_p08",
+      "chinese": "顺利降落",
+      "pinyin": "shùn lì jiàng luò",
+      "english": "Land smoothly",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l1_p09",
+      "chinese": "申请签证",
+      "pinyin": "shēn qǐng qiān zhèng",
+      "english": "Apply for a visa",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "出发前，别忘了检查登机牌和护照。",
       "pinyin": "Chū fā qián, bié wàng le jiǎn chá dēng jī pái hé hù zhào.",
       "english": "Before setting off, don't forget to check your boarding pass and passport."
+    },
+    {
+      "chinese": "出发前，他认真准备了签证和登机牌。",
+      "pinyin": "Chū fā qián, tā rèn zhēn zhǔn bèi le qiān zhèng hé dēng jī pái.",
+      "english": "Before departure, he carefully prepared his visa and boarding pass."
+    },
+    {
+      "chinese": "航班顺利降落后，导游带大家去了酒店。",
+      "pinyin": "Háng bān shùn lì jiàng luò hòu, dǎo yóu dài dà jiā qù le jiǔ diàn.",
+      "english": "After the flight landed smoothly, the tour guide took everyone to the hotel."
+    },
+    {
+      "chinese": "出差去北京需要提前申请签证，乘坐早班航班。",
+      "pinyin": "Chū chāi qù Běijīng xū yào tí qián shēn qǐng qiān zhèng, chéng zuò zǎo bān háng bān.",
+      "english": "A business trip to Beijing requires applying for a visa in advance and taking an early flight."
     }
   ],
   "grammar_points": [
@@ -831,6 +867,51 @@
         "只好"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '顺利降落' mean?",
+      "type": "multiple_choice",
+      "correct": "Land smoothly",
+      "options": [
+        "Land smoothly",
+        "Preparation before departure",
+        "Apply for a visa",
+        "Board the flight"
+      ],
+      "word_hints": {
+        "顺利": "shùn lì",
+        "降落": "jiàng luò"
+      }
+    },
+    {
+      "question": "What does '申请签证' mean?",
+      "type": "multiple_choice",
+      "correct": "Apply for a visa",
+      "options": [
+        "Apply for a visa",
+        "Land smoothly",
+        "Preparation before departure",
+        "Take a flight"
+      ],
+      "word_hints": {
+        "申请": "shēn qǐng",
+        "签证": "qiān zhèng"
+      }
+    },
+    {
+      "question": "Fill in: 出发前，他认真准备了签证和 _____。",
+      "type": "multiple_choice",
+      "correct": "登机牌",
+      "options": [
+        "登机牌",
+        "导游",
+        "高速公路",
+        "航班"
+      ],
+      "word_hints": {
+        "出发": "chū fā",
+        "签证": "qiān zhèng"
+      }
     }
   ],
   "dialogues": [

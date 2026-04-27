@@ -148,6 +148,27 @@
       "pinyin": "yuè dú xiǎo shuō",
       "english": "Read a novel",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l15_p06",
+      "chinese": "欣赏京剧",
+      "pinyin": "xīn shǎng jīng jù",
+      "english": "Appreciate Peking Opera",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l15_p07",
+      "chinese": "著名演员",
+      "pinyin": "zhù míng yǎn yuán",
+      "english": "Famous actor/actress",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l15_p08",
+      "chinese": "功夫表演",
+      "pinyin": "gōng fu biǎo yǎn",
+      "english": "Kung fu performance",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "阅读小说是了解一个民族文化最精彩的方式之一。",
       "pinyin": "Yuè dú xiǎo shuō shì liǎo jiě yī ge mín zú wén huà zuì jīng cǎi de fāng shì zhī yī.",
       "english": "Reading novels is one of the most brilliant ways to understand an ethnic group's culture."
+    },
+    {
+      "chinese": "这位著名演员擅长京剧和功夫表演，让观众非常感动。",
+      "pinyin": "Zhè wèi zhù míng yǎn yuán shàn cháng jīng jù hé gōng fu biǎo yǎn, ràng guān zhòng fēi cháng gǎn dòng.",
+      "english": "This famous actor excels in Peking Opera and kung fu performances, deeply moving the audience."
+    },
+    {
+      "chinese": "欣赏京剧是了解中国文化艺术的好方法。",
+      "pinyin": "Xīn shǎng jīng jù shì liǎo jiě Zhōng guó wén huà yì shù de hǎo fāng fǎ.",
+      "english": "Appreciating Peking Opera is a good way to understand Chinese cultural arts."
+    },
+    {
+      "chinese": "通过阅读，她了解了很多著名演员的故事和艺术经历。",
+      "pinyin": "Tōng guò yuè dú, tā liǎo jiě le hěn duō zhù míng yǎn yuán de gù shì hé yì shù jīng lì.",
+      "english": "Through reading, she learned about the stories and artistic experiences of many famous actors."
     }
   ],
   "grammar_points": [
@@ -891,6 +927,51 @@
         "阅读": "yuè dú",
         "小说": "xiǎo shuō",
         "著名": "zhù míng"
+      }
+    },
+    {
+      "question": "What does '欣赏京剧' mean?",
+      "type": "multiple_choice",
+      "correct": "Appreciate Peking Opera",
+      "options": [
+        "Appreciate Peking Opera",
+        "Famous actor/actress",
+        "Kung fu performance",
+        "Read about culture"
+      ],
+      "word_hints": {
+        "欣赏": "xīn shǎng",
+        "京剧": "jīng jù"
+      }
+    },
+    {
+      "question": "What does '著名演员' mean?",
+      "type": "multiple_choice",
+      "correct": "Famous actor/actress",
+      "options": [
+        "Famous actor/actress",
+        "Appreciate Peking Opera",
+        "Kung fu performance",
+        "Art exhibition"
+      ],
+      "word_hints": {
+        "著名": "zhù míng",
+        "演员": "yǎn yuán"
+      }
+    },
+    {
+      "question": "Fill in: 欣赏京剧是了解中国文化 _____ 的好方法。",
+      "type": "multiple_choice",
+      "correct": "艺术",
+      "options": [
+        "艺术",
+        "功夫",
+        "阅读",
+        "演出"
+      ],
+      "word_hints": {
+        "京剧": "jīng jù",
+        "了解": "liǎo jiě"
       }
     }
   ],

@@ -148,6 +148,27 @@
       "pinyin": "làng fèi jīn qián",
       "english": "To waste money",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l5_p06",
+      "chinese": "增加收入",
+      "pinyin": "zēng jiā shōu rù",
+      "english": "Increase income",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l5_p07",
+      "chinese": "合理消费",
+      "pinyin": "hé lǐ xiāo fèi",
+      "english": "Rational spending",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l5_p08",
+      "chinese": "省钱存款",
+      "pinyin": "shěng qián cún kuǎn",
+      "english": "Save money and deposit",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "请问您用什么付款方式？现金还是手机支付？",
       "pinyin": "Qǐng wèn nín yòng shén me fù kuǎn fāng shì? Xiàn jīn hái shì shǒu jī zhī fù?",
       "english": "May I ask what payment method you will use? Cash or mobile payment?"
+    },
+    {
+      "chinese": "他希望通过努力工作来增加收入，改善生活。",
+      "pinyin": "Tā xī wàng tōng guò nǔ lì gōng zuò lái zēng jiā shōu rù, gǎi shàn shēng huó.",
+      "english": "He hopes to increase his income through hard work and improve his life."
+    },
+    {
+      "chinese": "合理消费是管理个人财务的重要方法。",
+      "pinyin": "Hé lǐ xiāo fèi shì guǎn lǐ gè rén cái wù de zhòng yào fāng fǎ.",
+      "english": "Rational spending is an important method for managing personal finances."
+    },
+    {
+      "chinese": "她每个月存一部分工资，养成了省钱的好习惯。",
+      "pinyin": "Tā měi gè yuè cún yī bù fen gōng zī, yǎng chéng le shěng qián de hǎo xí guàn.",
+      "english": "She saves part of her salary every month, forming a good habit of saving money."
     }
   ],
   "grammar_points": [
@@ -832,6 +868,51 @@
       ],
       "word_hints": {
         "付款": "fù kuǎn"
+      }
+    },
+    {
+      "question": "What does '增加收入' mean?",
+      "type": "multiple_choice",
+      "correct": "Increase income",
+      "options": [
+        "Increase income",
+        "Rational spending",
+        "Save money and deposit",
+        "Pay salary"
+      ],
+      "word_hints": {
+        "增加": "zēng jiā",
+        "收入": "shōu rù"
+      }
+    },
+    {
+      "question": "What does '合理消费' mean?",
+      "type": "multiple_choice",
+      "correct": "Rational spending",
+      "options": [
+        "Rational spending",
+        "Increase income",
+        "Save money and deposit",
+        "Earn a bonus"
+      ],
+      "word_hints": {
+        "合理": "hé lǐ",
+        "消费": "xiāo fèi"
+      }
+    },
+    {
+      "question": "Fill in: 她每个月 _____ 一部分工资，养成了省钱的好习惯。",
+      "type": "multiple_choice",
+      "correct": "存",
+      "options": [
+        "存",
+        "赚",
+        "付",
+        "穷"
+      ],
+      "word_hints": {
+        "工资": "gōng zī",
+        "习惯": "xí guàn"
       }
     }
   ],

@@ -155,6 +155,27 @@
       "pinyin": "nán wàng de huí yì",
       "english": "Unforgettable memories",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l14_p07",
+      "chinese": "珍惜机会",
+      "pinyin": "zhēn xī jī huì",
+      "english": "Cherish opportunities",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l14_p08",
+      "chinese": "青春回忆",
+      "pinyin": "qīng chūn huí yì",
+      "english": "Youth memories",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l14_p09",
+      "chinese": "人生阶段",
+      "pinyin": "rén shēng jiē duàn",
+      "english": "Life stage",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "趁现在还有时间，好好陪伴家人，不要留下遗憾。",
       "pinyin": "Chèn xiàn zài hái yǒu shí jiān, hǎo hǎo péi bàn jiā rén, bú yào liú xià yí hàn.",
       "english": "While there is still time now, spend quality time with family and don't leave regrets."
+    },
+    {
+      "chinese": "童年和青春是人生中最美好的阶段，需要珍惜。",
+      "pinyin": "Tóng nián hé qīng chūn shì rén shēng zhōng zuì měi hǎo de jiē duàn, xū yào zhēn xī.",
+      "english": "Childhood and youth are the most beautiful stages in life and should be cherished."
+    },
+    {
+      "chinese": "她回忆起成长的经历，感到每一个人生阶段都有价值。",
+      "pinyin": "Tā huí yì qǐ chéng zhǎng de jīng lì, gǎn dào měi yī gè rén shēng jiē duàn dōu yǒu jià zhí.",
+      "english": "She recalled her growing-up experiences, feeling that every life stage has value."
+    },
+    {
+      "chinese": "珍惜机会、把握未来是每个人在成长过程中应该学会的道理。",
+      "pinyin": "Zhēn xī jī huì, bǎ wò wèi lái shì měi gè rén zài chéng zhǎng guò chéng zhōng yīng gāi xué huì de dào lǐ.",
+      "english": "Cherishing opportunities and seizing the future is a lesson everyone should learn during their growth."
     }
   ],
   "grammar_points": [
@@ -842,6 +878,51 @@
         "珍惜"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '珍惜机会' mean?",
+      "type": "multiple_choice",
+      "correct": "Cherish opportunities",
+      "options": [
+        "Cherish opportunities",
+        "Youth memories",
+        "Life stage",
+        "Recall the past"
+      ],
+      "word_hints": {
+        "珍惜": "zhēn xī",
+        "机会": "jī huì"
+      }
+    },
+    {
+      "question": "What does '青春回忆' mean?",
+      "type": "multiple_choice",
+      "correct": "Youth memories",
+      "options": [
+        "Youth memories",
+        "Cherish opportunities",
+        "Life stage",
+        "Future plans"
+      ],
+      "word_hints": {
+        "青春": "qīng chūn",
+        "回忆": "huí yì"
+      }
+    },
+    {
+      "question": "Fill in: 童年和青春是人生中最美好的 _____，需要珍惜。",
+      "type": "multiple_choice",
+      "correct": "阶段",
+      "options": [
+        "阶段",
+        "回忆",
+        "经历",
+        "机会"
+      ],
+      "word_hints": {
+        "人生": "rén shēng",
+        "珍惜": "zhēn xī"
+      }
     }
   ],
   "dialogues": [

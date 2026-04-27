@@ -148,6 +148,27 @@
       "pinyin": "yì shù wén huà",
       "english": "Arts and culture",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l14_p06",
+      "chinese": "承担社会责任",
+      "pinyin": "chéng dān shè huì zé rèn",
+      "english": "Take social responsibility",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l14_p07",
+      "chinese": "尊重法律",
+      "pinyin": "zūn zhòng fǎ lǜ",
+      "english": "Respect the law",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l14_p08",
+      "chinese": "传播知识",
+      "pinyin": "chuán bō zhī shi",
+      "english": "Spread knowledge",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "语言是文化传承的工具，任何语言都值得重视和保护。",
       "pinyin": "Yǔ yán shì wén huà chuán chéng de gōng jù, rèn hé yǔ yán dōu zhí de zhòng shì hé bǎo hù.",
       "english": "Language is a tool for cultural heritage; any language is worthy of valuing and protecting."
+    },
+    {
+      "chinese": "教育帮助人们传播知识，也增强了他们的社会责任感。",
+      "pinyin": "Jiào yù bāng zhù rén men chuán bō zhī shi, yě zēng qiáng le tā men de shè huì zé rèn gǎn.",
+      "english": "Education helps people spread knowledge and also strengthens their sense of social responsibility."
+    },
+    {
+      "chinese": "每个公民都应该尊重法律，承担自己的社会责任。",
+      "pinyin": "Měi gè gōng mín dōu yīng gāi zūn zhòng fǎ lǜ, chéng dān zì jǐ de shè huì zé rèn.",
+      "english": "Every citizen should respect the law and take on their own social responsibility."
+    },
+    {
+      "chinese": "科学和艺术都是传播知识的重要方式。",
+      "pinyin": "Kē xué hé yì shù dōu shì chuán bō zhī shi de zhòng yào fāng shì.",
+      "english": "Science and art are both important ways to spread knowledge."
     }
   ],
   "grammar_points": [
@@ -847,6 +883,51 @@
         "A number"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '承担社会责任' mean?",
+      "type": "multiple_choice",
+      "correct": "Take social responsibility",
+      "options": [
+        "Take social responsibility",
+        "Respect the law",
+        "Spread knowledge",
+        "Promote education"
+      ],
+      "word_hints": {
+        "承担": "chéng dān",
+        "责任": "zé rèn"
+      }
+    },
+    {
+      "question": "What does '传播知识' mean?",
+      "type": "multiple_choice",
+      "correct": "Spread knowledge",
+      "options": [
+        "Spread knowledge",
+        "Take social responsibility",
+        "Respect the law",
+        "Learn a language"
+      ],
+      "word_hints": {
+        "传播": "chuán bō",
+        "知识": "zhī shi"
+      }
+    },
+    {
+      "question": "Fill in: 每个公民都应该 _____ 法律，承担自己的社会责任。",
+      "type": "multiple_choice",
+      "correct": "尊重",
+      "options": [
+        "尊重",
+        "教育",
+        "科学",
+        "语言"
+      ],
+      "word_hints": {
+        "法律": "fǎ lǜ",
+        "责任": "zé rèn"
+      }
     }
   ],
   "dialogues": [

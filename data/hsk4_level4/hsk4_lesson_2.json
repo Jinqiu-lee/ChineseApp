@@ -148,6 +148,27 @@
       "pinyin": "bǎo chí lián xì",
       "english": "To keep in touch",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l2_p06",
+      "chinese": "互相支持",
+      "pinyin": "hù xiāng zhī chí",
+      "english": "Mutual support",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l2_p07",
+      "chinese": "深厚的友谊",
+      "pinyin": "shēn hòu de yǒu yì",
+      "english": "Deep friendship",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l2_p08",
+      "chinese": "诚实守信",
+      "pinyin": "chéng shí shǒu xìn",
+      "english": "Honest and trustworthy",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -180,6 +201,21 @@
       "chinese": "我们分开后仍然保持联系，友谊从未中断。",
       "pinyin": "Wǒ men fēn kāi hòu réng rán bǎo chí lián xì, yǒu yì cóng wèi zhōng duàn.",
       "english": "After we parted, we still kept in touch, and our friendship was never interrupted."
+    },
+    {
+      "chinese": "真正的友谊需要互相支持和诚实。",
+      "pinyin": "Zhēn zhèng de yǒu yì xū yào hù xiāng zhī chí hé chéng shí.",
+      "english": "True friendship requires mutual support and honesty."
+    },
+    {
+      "chinese": "他们共同经历了很多，友谊越来越深厚。",
+      "pinyin": "Tā men gòng tóng jīng lì le hěn duō, yǒu yì yuè lái yuè shēn hòu.",
+      "english": "They experienced a lot together, and their friendship grew deeper and deeper."
+    },
+    {
+      "chinese": "她鼓励他要诚实，这让他们的关系更加信任。",
+      "pinyin": "Tā gǔ lì tā yào chéng shí, zhè ràng tā men de guān xì gèng jiā xìn rèn.",
+      "english": "She encouraged him to be honest, which made their relationship more trusting."
     }
   ],
   "grammar_points": [
@@ -840,6 +876,51 @@
       "word_hints": {
         "支持": "zhī chí"
       }
+    },
+    {
+      "question": "What does '互相支持' mean?",
+      "type": "multiple_choice",
+      "correct": "Mutual support",
+      "options": [
+        "Mutual support",
+        "Deep friendship",
+        "Honest and trustworthy",
+        "Common goal"
+      ],
+      "word_hints": {
+        "互相": "hù xiāng",
+        "支持": "zhī chí"
+      }
+    },
+    {
+      "question": "What does '深厚的友谊' mean?",
+      "type": "multiple_choice",
+      "correct": "Deep friendship",
+      "options": [
+        "Deep friendship",
+        "Mutual support",
+        "Honest and trustworthy",
+        "Strong trust"
+      ],
+      "word_hints": {
+        "深厚": "shēn hòu",
+        "友谊": "yǒu yì"
+      }
+    },
+    {
+      "question": "Translate: True friendship requires mutual support — which is correct?",
+      "type": "multiple_choice",
+      "correct": "真正的友谊需要互相支持和诚实。",
+      "options": [
+        "真正的友谊需要互相支持和诚实。",
+        "互相支持需要友谊和诚实。",
+        "友谊互相支持需要真正诚实。",
+        "诚实友谊需要支持互相。"
+      ],
+      "word_hints": {
+        "友谊": "yǒu yì",
+        "诚实": "chéng shí"
+      }
     }
   ],
   "dialogues": [
@@ -886,15 +967,15 @@
         },
         {
           "speaker": "A",
-          "chinese": "我们互相道歉和好吧，友谊比什么都重要。",
-          "pinyin": "Wǒ men hù xiāng dào qiàn hé hǎo ba, yǒu yì bǐ shén me dōu zhòng yào.",
-          "english": "Let's apologize to each other and make up. Friendship is more important than anything."
+          "chinese": "我们和好吧，友谊比什么都重要。",
+          "pinyin": "Wǒ men hé hǎo ba, yǒu yì bǐ shén me dōu zhòng yào.",
+          "english": "Let's make up. Friendship is more important than anything."
         },
         {
           "speaker": "B",
-          "chinese": "好，我们要共同进步，也要保持联系，不管发生什么。",
-          "pinyin": "Hǎo, wǒ men yào gòng tóng jìn bù, yě yào bǎo chí lián xì, bù guǎn fā shēng shén me.",
-          "english": "Okay. We should make progress together and keep in touch, no matter what happens."
+          "chinese": "好，不管发生什么，我们都要保持联系，也要共同进步",
+          "pinyin": "Hǎo,  bù guǎn fā shēng shén me，wǒ men dōu bǎo chí lián xì,yě yào gòng tóng jìn bù.",
+          "english": "Okay. no matter what happens, we will keep in touch and also make progress together."
         },
         {
           "speaker": "A",
@@ -947,15 +1028,15 @@
         },
         {
           "speaker": "A",
-          "chinese": "以后我们要互相鼓励，对吧？",
-          "pinyin": "Yǐ hòu wǒ men yào hù xiāng gǔ lì, duì ba?",
-          "english": "From now on we should encourage each other, right?"
+          "chinese": "以后我们要保持联系，我很怀念以前，每次都有说不完的话的时光。",
+          "pinyin": "Yǐ hòu wǒ men yào bǎo chí lián xì, wǒ hěn huái niàn yǐ qián ， měi cì dōu yǒu shuō bù wán de huà de shí guāng",
+          "english": "From now on we should keep contact,I miss the old days that we always had so many stories to tell!"
         },
         {
           "speaker": "B",
-          "chinese": "当然！我们要保持联系，共同进步。",
-          "pinyin": "Dāng rán! Wǒ men yào bǎo chí lián xì, gòng tóng jìn bù.",
-          "english": "Of course! We should keep in touch and make progress together."
+          "chinese": "当然！有一段真正的友谊，是多么不容易！",
+          "pinyin": "Dāng rán! Yǒu yí duàn zhēn zhèng de yǒu yì ， shì duō me bù róng yì.",
+          "english": "Of course! It is very precious to have a genuine friendship."
         }
       ]
     }

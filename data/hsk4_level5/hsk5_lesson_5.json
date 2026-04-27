@@ -155,6 +155,27 @@
       "pinyin": "tí gāo tǐ néng",
       "english": "To improve physical fitness",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l5_p07",
+      "chinese": "刻苦训练",
+      "pinyin": "kè kǔ xùn liàn",
+      "english": "Train hard and diligently",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l5_p08",
+      "chinese": "夺得冠军",
+      "pinyin": "duó dé guàn jūn",
+      "english": "Win the championship",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l5_p09",
+      "chinese": "教练指导",
+      "pinyin": "jiào liàn zhǐ dǎo",
+      "english": "Coach's guidance",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "这位运动员一到赛场，就立刻进入了比赛状态，展示出了超强的体能。",
       "pinyin": "Zhè wèi yùn dòng yuán yí dào sài chǎng, jiù lì kè jìn rù le bǐ sài zhuàng tài, zhǎn shì chū le chāo qiáng de tǐ néng.",
       "english": "As soon as this athlete arrived at the competition venue, she immediately got into the zone and displayed outstanding physical ability."
+    },
+    {
+      "chinese": "在教练的指导下，运动员刻苦训练，最终夺得了冠军。",
+      "pinyin": "Zài jiào liàn de zhǐ dǎo xià, yùn dòng yuán kè kǔ xùn liàn, zuì zhōng duó dé le guàn jūn.",
+      "english": "Under the coach's guidance, the athlete trained diligently and ultimately won the championship."
+    },
+    {
+      "chinese": "比赛中的激烈竞争让运动员更加坚持训练。",
+      "pinyin": "Bǐ sài zhōng de jī liè jìng zhēng ràng yùn dòng yuán gèng jiā jiān chí xùn liàn.",
+      "english": "The intense competition in the match made the athletes persist more in their training."
+    },
+    {
+      "chinese": "成绩好的运动员都是通过坚持和努力在赛场上获得成功的。",
+      "pinyin": "Chéng jì hǎo de yùn dòng yuán dōu shì tōng guò jiān chí hé nǔ lì zài sài chǎng shàng huò dé chéng gōng de.",
+      "english": "Athletes with good results all achieve success on the field through persistence and hard work."
     }
   ],
   "grammar_points": [
@@ -850,6 +886,51 @@
         "不管...都..."
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '刻苦训练' mean?",
+      "type": "multiple_choice",
+      "correct": "Train hard and diligently",
+      "options": [
+        "Train hard and diligently",
+        "Win the championship",
+        "Coach's guidance",
+        "Compete in a match"
+      ],
+      "word_hints": {
+        "刻苦": "kè kǔ",
+        "训练": "xùn liàn"
+      }
+    },
+    {
+      "question": "What does '夺得冠军' mean?",
+      "type": "multiple_choice",
+      "correct": "Win the championship",
+      "options": [
+        "Win the championship",
+        "Train hard and diligently",
+        "Coach's guidance",
+        "Achieve good results"
+      ],
+      "word_hints": {
+        "夺得": "duó dé",
+        "冠军": "guàn jūn"
+      }
+    },
+    {
+      "question": "Fill in: 在教练的指导下，运动员刻苦训练，最终 _____ 了冠军。",
+      "type": "multiple_choice",
+      "correct": "夺得",
+      "options": [
+        "夺得",
+        "坚持",
+        "竞争",
+        "训练"
+      ],
+      "word_hints": {
+        "教练": "jiào liàn",
+        "冠军": "guàn jūn"
+      }
     }
   ],
   "dialogues": [

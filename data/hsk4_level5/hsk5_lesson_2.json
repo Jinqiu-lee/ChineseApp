@@ -155,6 +155,27 @@
       "pinyin": "shùn lì bì yè",
       "english": "To graduate smoothly",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l2_p07",
+      "chinese": "努力备考",
+      "pinyin": "nǔ lì bèi kǎo",
+      "english": "Study hard for exams",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l2_p08",
+      "chinese": "申请奖学金",
+      "pinyin": "shēn qǐng jiǎng xué jīn",
+      "english": "Apply for a scholarship",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l2_p09",
+      "chinese": "顺利毕业",
+      "pinyin": "shùn lì bì yè",
+      "english": "Graduate smoothly",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "只有选对专业，才能在毕业后找到满意的工作。",
       "pinyin": "Zhǐ yǒu xuǎn duì zhuān yè, cái néng zài bì yè hòu zhǎo dào mǎn yì de gōng zuò.",
       "english": "Only by choosing the right major can you find a satisfying job after graduation."
+    },
+    {
+      "chinese": "他努力复习，终于在考试中取得了好成绩。",
+      "pinyin": "Tā nǔ lì fù xí, zhōng yú zài kǎo shì zhōng qǔ dé le hǎo chéng jì.",
+      "english": "He studied hard and finally achieved good results in the exam."
+    },
+    {
+      "chinese": "她申请了奖学金，希望能继续在大学完成专业学习。",
+      "pinyin": "Tā shēn qǐng le jiǎng xué jīn, xī wàng néng jì xù zài dà xué wán chéng zhuān yè xué xí.",
+      "english": "She applied for a scholarship, hoping to continue completing her professional studies at university."
+    },
+    {
+      "chinese": "教授帮助学生制定学习计划，以便顺利毕业。",
+      "pinyin": "Jiào shòu bāng zhù xué shēng zhì dìng xué xí jì huà, yǐ biàn shùn lì bì yè.",
+      "english": "The professor helped students make study plans so they could graduate smoothly."
     }
   ],
   "grammar_points": [
@@ -840,6 +876,51 @@
         "顺便"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '努力备考' mean?",
+      "type": "multiple_choice",
+      "correct": "Study hard for exams",
+      "options": [
+        "Study hard for exams",
+        "Apply for a scholarship",
+        "Graduate smoothly",
+        "Join a class"
+      ],
+      "word_hints": {
+        "努力": "nǔ lì",
+        "备考": "bèi kǎo"
+      }
+    },
+    {
+      "question": "What does '申请奖学金' mean?",
+      "type": "multiple_choice",
+      "correct": "Apply for a scholarship",
+      "options": [
+        "Apply for a scholarship",
+        "Study hard for exams",
+        "Graduate smoothly",
+        "Pass the test"
+      ],
+      "word_hints": {
+        "申请": "shēn qǐng",
+        "奖学金": "jiǎng xué jīn"
+      }
+    },
+    {
+      "question": "Fill in: 他努力复习，终于在考试中取得了好 _____。",
+      "type": "multiple_choice",
+      "correct": "成绩",
+      "options": [
+        "成绩",
+        "奖学金",
+        "毕业",
+        "专业"
+      ],
+      "word_hints": {
+        "复习": "fù xí",
+        "考试": "kǎo shì"
+      }
     }
   ],
   "dialogues": [

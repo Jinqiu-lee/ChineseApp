@@ -155,6 +155,27 @@
       "pinyin": "mǔ yǔ gān rǎo",
       "english": "Mother tongue interference",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l9_p07",
+      "chinese": "母语表达",
+      "pinyin": "mǔ yǔ biǎo dá",
+      "english": "Express in mother tongue",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l9_p08",
+      "chinese": "翻译词汇",
+      "pinyin": "fān yì cí huì",
+      "english": "Translate vocabulary",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk5_l9_p09",
+      "chinese": "方言交流",
+      "pinyin": "fāng yán jiāo liú",
+      "english": "Communicate in dialect",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -187,6 +208,21 @@
       "chinese": "无论文化差异有多大，真诚的沟通都能帮助人们互相理解。",
       "pinyin": "Wú lùn wén huà chā yì yǒu duō dà, zhēn chéng de gōu tōng dōu néng bāng zhù rén men hù xiāng lǐ jiě.",
       "english": "No matter how great the cultural differences, sincere communication can always help people understand each other."
+    },
+    {
+      "chinese": "翻译不仅需要掌握词汇，还要了解语法和发音。",
+      "pinyin": "Fān yì bù jǐn xū yào zhǎng wò cí huì, hái yào liǎo jiě yǔ fǎ hé fā yīn.",
+      "english": "Translation requires not only mastering vocabulary, but also understanding grammar and pronunciation."
+    },
+    {
+      "chinese": "用母语表达情感比用外语更加自然和真实。",
+      "pinyin": "Yòng mǔ yǔ biǎo dá qíng gǎn bǐ yòng wài yǔ gèng jiā zì rán hé zhēn shí.",
+      "english": "Expressing emotions in one's mother tongue is more natural and genuine than in a foreign language."
+    },
+    {
+      "chinese": "他能用方言和普通话交流，沟通能力非常强。",
+      "pinyin": "Tā néng yòng fāng yán hé pǔ tōng huà jiāo liú, gōu tōng néng lì fēi cháng qiáng.",
+      "english": "He can communicate in both dialect and Mandarin, and has very strong communication skills."
     }
   ],
   "grammar_points": [
@@ -833,6 +869,51 @@
         "Using complicated language"
       ],
       "word_hints": {}
+    },
+    {
+      "question": "What does '母语表达' mean?",
+      "type": "multiple_choice",
+      "correct": "Express in mother tongue",
+      "options": [
+        "Express in mother tongue",
+        "Translate vocabulary",
+        "Communicate in dialect",
+        "Learn grammar"
+      ],
+      "word_hints": {
+        "母语": "mǔ yǔ",
+        "表达": "biǎo dá"
+      }
+    },
+    {
+      "question": "What does '翻译词汇' mean?",
+      "type": "multiple_choice",
+      "correct": "Translate vocabulary",
+      "options": [
+        "Translate vocabulary",
+        "Express in mother tongue",
+        "Communicate in dialect",
+        "Improve pronunciation"
+      ],
+      "word_hints": {
+        "翻译": "fān yì",
+        "词汇": "cí huì"
+      }
+    },
+    {
+      "question": "Fill in: 翻译不仅需要掌握词汇，还要了解语法和 _____。",
+      "type": "multiple_choice",
+      "correct": "发音",
+      "options": [
+        "发音",
+        "方言",
+        "母语",
+        "沟通"
+      ],
+      "word_hints": {
+        "词汇": "cí huì",
+        "语法": "yǔ fǎ"
+      }
     }
   ],
   "dialogues": [
