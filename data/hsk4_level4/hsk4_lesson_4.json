@@ -133,6 +133,15 @@
       "translation": "Please introduce your work experience and technical background."
     },
     {
+      "id": "hsk4_l4_15",
+      "chinese": "项目",
+      "pinyin": "xiàng mù",
+      "english": "Project; program; item",
+      "part_of_speech": "noun",
+      "example": "他负责公司最重要的项目，压力非常大。",
+      "translation": "He is responsible for the company's most important project, which puts him under a lot of pressure."
+    },
+    {
       "id": "hsk4_l4_p01",
       "chinese": "获得经验",
       "pinyin": "huò dé jīng yàn",
@@ -165,6 +174,20 @@
       "chinese": "职业发展",
       "pinyin": "zhí yè fā zhǎn",
       "english": "Career development",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l4_p06",
+      "chinese": "项目管理",
+      "pinyin": "xiàng mù guǎn lǐ",
+      "english": "Project management",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l4_p07",
+      "chinese": "负责项目",
+      "pinyin": "fù zé xiàng mù",
+      "english": "To be in charge of a project",
       "part_of_speech": "phrase"
     }
   ],
@@ -912,9 +935,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "我更希望成为管理者，但我会继续努力，争取早日成功。",
-          "pinyin": "Wǒ gèng xī wàng chéng wéi guǎn lǐ zhě, dàn wǒ huì jì xù nǔ lì, zhēng qǔ zǎo rì chéng gōng.",
-          "english": "I hope more to become a manager, but I will keep working hard and strive to succeed early."
+          "chinese": "我更希望成为项目管理者，这比较符合我的经验和背景.",
+          "pinyin": "Wǒ gèng xī wàng chéng wéi xiàng mù guǎn lǐ zhě, zhè bǐ jiào fú hé wǒ de jīng yàn hé bèi jǐng ",
+          "english": "I hope more to become a project manager, This aligns better with my experience and background."
         },
         {
           "speaker": "A",
@@ -949,9 +972,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "你需要通过研究和学习积累经验，然后继续提高你的技术水平。",
-          "pinyin": "Nǐ xū yào tōng guò yán jiū hé xué xí jī lěi jīng yàn, rán hòu jì xù tí gāo nǐ de jì shù shuǐ píng.",
-          "english": "You need to accumulate experience through research and study, and then continue to improve your technical level."
+          "chinese": "你需要通过学习和研究继续提高你的技术水平, 积累经验。",
+          "pinyin": "nǐ xū yào tōng guò xué xí hé yán jiū jì xù tí gāo nǐ de jì shù shuǐ píng , jī lěi jīng yàn",
+          "english": "You need to continue to improve your technical level and accumulate experience through research and study."
         },
         {
           "speaker": "B",
