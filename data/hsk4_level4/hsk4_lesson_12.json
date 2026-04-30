@@ -93,7 +93,7 @@
       "pinyin": "jìn xíng",
       "english": "To carry out; to conduct; to proceed",
       "part_of_speech": "verb",
-      "example": "即使别人都觉得他不行，他也积极进行了准备。",
+      "example": "即使别人都觉得他不行，他也积极进行准备。",
       "translation": "Even though others thought he wasn't good enough, he actively made preparations."
     },
     {
@@ -102,7 +102,7 @@
       "pinyin": "jié guǒ",
       "english": "Result; outcome; finally; as a result",
       "part_of_speech": "noun/adverb",
-      "example": "他的目的是赢，结果却是失败，他真的很难过。",
+      "example": "他的目的是赢，结果却失败了，他真的很难过。",
       "translation": "His goal was to win, and the result was failure. He was truly sad."
     },
     {
@@ -115,10 +115,19 @@
       "translation": "She bravely faced failure, actively moved to the next step, with the goal of achieving success."
     },
     {
+      "id": "hsk4_l12_13",
+      "chinese": "目标",
+      "pinyin": "mù biāo",
+      "english": "Goal; target",
+      "part_of_speech": "noun",
+      "example": "她希望可以尽快实现自己的目标。",
+      "translation": "She hopes to achieve her goal as soon as possible."
+    },
+    {
       "id": "hsk4_l12_p01",
-      "chinese": "获得成功",
-      "pinyin": "huò dé chéng gōng",
-      "english": "To achieve success",
+      "chinese": "达到目的",
+      "pinyin": "dá dào mù dì",
+      "english": "To achieve goal",
       "part_of_speech": "phrase"
     },
     {
@@ -158,9 +167,9 @@
     },
     {
       "id": "hsk4_l12_p07",
-      "chinese": "坚持获得成功",
-      "pinyin": "jiān chí huò dé chéng gōng",
-      "english": "Persist to achieve success",
+      "chinese": "实现目标",
+      "pinyin": "shí xiàn mù biāo",
+      "english": "Acheive the goal",
       "part_of_speech": "phrase"
     },
     {
@@ -198,19 +207,19 @@
       "english": "Even if the conditions were poor, he actively carried out training and bravely faced challenges."
     },
     {
-      "chinese": "坚持就是胜利——只要不放弃，最终都会获得好结果。",
+      "chinese": "坚持就是胜利 —— 只要不放弃，最终都会获得好结果。",
       "pinyin": "Jiān chí jiù shì shèng lì — zhǐ yào bú fàng qì, zuì zhōng dōu huì huò dé hǎo jié guǒ.",
       "english": "Persistence is victory — as long as you don't give up, you will ultimately obtain a good result."
     },
     {
-      "chinese": "他勇敢地面对失败，最终坚持获得了成功。",
-      "pinyin": "Tā yǒng gǎn de miàn duì shī bài, zuì zhōng jiān chí huò dé le chéng gōng.",
-      "english": "He bravely faced failure and ultimately persisted to achieve success."
+      "chinese": "他勇敢地面对失败，最终获得了成功。",
+      "pinyin": "Tā yǒng gǎn de miàn duì shī bài, zuì zhōng huò dé le chéng gōng.",
+      "english": "He bravely faced failure and ultimately achieved success."
     },
     {
-      "chinese": "竟然连续失败三次，他依然重视每次的经历。",
-      "pinyin": "Jìng rán lián xù shī bài sān cì, tā yī rán zhòng shì měi cì de jīng lì.",
-      "english": "Even after failing three times in a row, he still valued each experience."
+      "chinese": "虽然连续失败三次，但他依然重视每次的经历。",
+      "pinyin": "Suī rán lián xù shī bài sān cì, dàn tā yī rán zhòng shì měi cì de jīng lì.",
+      "english": "Even if failing three times in a row, he still valued each experience."
     },
     {
       "chinese": "成功需要勇敢坚持，不能轻易放弃。",
@@ -225,14 +234,14 @@
       "explanation": "即使...也... means 'even if' or 'even though'. It introduces a hypothetical or real concession and states that the result does not change. 即使 introduces the concession; 也 introduces the unchanging result. Structure: 即使 + [Concession/Condition], Subject + 也 + [Unchanged Result]. It is used for both real and hypothetical situations. Example: 即使很累，他也坚持跑步。(Even if he is very tired, he still insists on running.)",
       "examples": [
         {
-          "chinese": "即使失败了，她也不会放弃目的。",
-          "pinyin": "Jí shǐ shī bài le, tā yě bú huì fàng qì mù dì.",
+          "chinese": "即使失败了，她也不会放弃自己的目标。",
+          "pinyin": "Jí shǐ shī bài le, tā yě bú huì fàng qì zì jí de mù biāo.",
           "english": "Even if she fails, she will not give up her goal."
         },
         {
-          "chinese": "即使结果不好，他也会积极面对，继续进行。",
-          "pinyin": "Jí shǐ jié guǒ bù hǎo, tā yě huì jī jí miàn duì, jì xù jìn xíng.",
-          "english": "Even if the result is not good, he will face it positively and continue moving forward."
+          "chinese": "即使结果不好，他也会积极面对。",
+          "pinyin": "Jí shǐ jié guǒ bù hǎo, tā yě huì jī jí miàn duì.",
+          "english": "Even if the result is not good, he will face it positively."
         }
       ],
       "exercises": [
@@ -318,7 +327,7 @@
           "word_hints": {}
         },
         {
-          "question": "_____ 是失败，她也积极进取。",
+          "question": "_____ 失败了，她也积极进取。",
           "type": "multiple_choice",
           "correct": "即使",
           "options": [
@@ -351,9 +360,9 @@
           "english": "She unexpectedly achieved success at the most difficult moment — truly admirable."
         },
         {
-          "chinese": "他竟然一次都没有失败过，目的明确使他很积极。",
-          "pinyin": "Tā jìng rán yí cì dōu méi yǒu shī bài guò, mù dì míng què shǐ tā hěn jī jí.",
-          "english": "He has surprisingly never failed even once. His clear purpose keeps him very motivated."
+          "chinese": "他竟然一次都没有失败过，目标明确使他很积极。",
+          "pinyin": "Tā jìng rán yí cì dōu méi yǒu shī bài guò, mù biāo míng què shǐ tā hěn jī jí.",
+          "english": "He has surprisingly never failed even once. His clear goals keep him very motivated."
         }
       ],
       "exercises": [
@@ -464,8 +473,8 @@
       "explanation": "获得 (huò dé) means 'to obtain', 'to gain', or 'to achieve'. It is a formal verb often used for abstract or significant gains: awards, success, experience, information, etc. Structure: Subject + 获得 + Object (often abstract). It is more formal than 得到 (dédào) which can be used for more concrete things. Common collocations: 获得成功 (achieve success), 获得奖励 (obtain a reward), 获得信心 (gain confidence), 获得经验 (gain experience).",
       "examples": [
         {
-          "chinese": "通过坚持和勇敢，她最终获得了她的目的。",
-          "pinyin": "Tōng guò jiān chí hé yǒng gǎn, tā zuì zhōng huò dé le tā de mù dì.",
+          "chinese": "通过坚持和勇敢，她最终达到了她的目的。",
+          "pinyin": "Tōng guò jiān chí hé yǒng gǎn, tā zuì zhōng dá dào le tā de mù dì.",
           "english": "Through persistence and courage, she ultimately achieved her goal."
         },
         {
@@ -956,8 +965,8 @@
         },
         {
           "speaker": "B",
-          "chinese": "但是我的目的是赢，结果却是失败，我真的很难过。",
-          "pinyin": "Dàn shì wǒ de mù dì shì yíng, jié guǒ què shì shī bài, wǒ zhēn de hěn nán guò.",
+          "chinese": "但是我的目的是赢，结果却失败了，我真的很难过。",
+          "pinyin": "Dàn shì wǒ de mù dì shì yíng, jié guǒ què shī bài le, wǒ zhēn de hěn nán guò.",
           "english": "But my goal was to win, and the result was failure. I am truly sad."
         },
         {
@@ -1017,21 +1026,21 @@
         },
         {
           "speaker": "A",
-          "chinese": "是啊，即使别人都觉得他不行，他也积极进行了准备。",
-          "pinyin": "Shì a, jí shǐ bié rén dōu jué de tā bù xíng, tā yě jī jí jìn xíng le zhǔn bèi.",
-          "english": "Yes, even though others thought he wasn't good enough, he actively made preparations."
+          "chinese": "是啊，即使别人都觉得他不行，他还是积极进行了准备。",
+          "pinyin": "Shì a, jí shǐ bié rén dōu jué de tā bù xíng, tā hái shì jī jí jìn xíng le zhǔn bèi.",
+          "english": "Yes, even though others thought he wasn't good enough, he still actively made preparations."
         },
         {
           "speaker": "B",
-          "chinese": "他非常重视结果，但也一直坚持到底，真的很佩服。",
-          "pinyin": "Tā fēi cháng zhòng shì jié guǒ, dàn yě yì zhí jiān chí dào dǐ, zhēn de hěn pèi fú.",
-          "english": "He values results greatly, but also always persists to the end. Truly admirable."
+          "chinese": "他非常重视结果，也一直坚持到底，真的很佩服。",
+          "pinyin": "Tā fēi cháng zhòng shì jié guǒ, yě yì zhí jiān chí dào dǐ, zhēn de hěn pèi fú.",
+          "english": "He values results greatly, and also always persists to the end. Truly admirable."
         },
         {
           "speaker": "A",
-          "chinese": "失败是成功之母！他之前失败了几次，但勇敢地继续目的没有改变。",
-          "pinyin": "Shī bài shì chéng gōng zhī mǔ! Tā zhī qián shī bài le jǐ cì, dàn yǒng gǎn de jì xù mù dì méi yǒu gǎi biàn.",
-          "english": "Failure is the mother of success! He failed several times before, but bravely continued and his goal never changed."
+          "chinese": "失败是成功之母！他之前失败了几次，但目标没有改变过。",
+          "pinyin": "Shī bài shì chéng gōng zhī mǔ! Tā zhī qián shī bài le jǐ cì, dàn mù biāo méi yǒu gǎi biàn guò.",
+          "english": "Failure is the mother of success! He failed several times before, but his goal never changed."
         },
         {
           "speaker": "B",

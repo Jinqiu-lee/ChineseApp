@@ -148,6 +148,11 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
   const [showPinyin, setShowPinyin] = useState(false);
   const [playingLine, setPlayingLine] = useState(null); // index of currently playing line
   const sessionRef = useRef(0); // incremented on each new play session to cancel old ones
+  // Yoga under-measures multi-line text on first render when content appears conditionally
+  // (e.g. toggling the Dialogue section open). Force one synchronous re-render after mount
+  // so Yoga gets a second layout pass with finalised container sizes — fixes invisible last lines.
+  const [, forceLayout] = useState(0);
+  React.useLayoutEffect(() => { forceLayout(1); }, []);
 
   // Stop audio when this card unmounts (section closed, screen navigated away, etc.)
   React.useEffect(() => {
@@ -278,19 +283,15 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
 
               {/* Bubble */}
               <View style={[styles.bubble, { backgroundColor: pal.bubble, borderColor: pal.border }]}>
-                <View style={styles.bubbleTop}>
-                  <View style={{ flex: 1 }}>
-                    <Text style={styles.bubbleChinese}>{line.chinese}</Text>
-                  </View>
-                  <TouchableOpacity
-                    onPress={() => handleSpeak(i)}
-                    style={styles.speakBtn}
-                  >
-                    <Text style={styles.speakBtnText}>
-                      {playingLine === i ? '⏹' : '🔊'}
-                    </Text>
-                  </TouchableOpacity>
-                </View>
+                <Text style={styles.bubbleChinese}>{line.chinese}</Text>
+                <TouchableOpacity
+                  onPress={() => handleSpeak(i)}
+                  style={styles.speakBtn}
+                >
+                  <Text style={styles.speakBtnText}>
+                    {playingLine === i ? '⏹' : '🔊'}
+                  </Text>
+                </TouchableOpacity>
                 {showPinyin && (
                   <Text style={[styles.bubblePinyin, { color: pal.pinyin }]}>{line.pinyin}</Text>
                 )}
@@ -349,6 +350,7 @@ const VG = {
   border: 'rgba(155,104,70,0.20)',
 };
 
+
 const styles = StyleSheet.create({
   container:    { marginBottom: 24 },
   sectionTitle: { fontSize: 20, fontWeight: '800', color: VG.cream, marginBottom: 14 },
@@ -357,7 +359,6 @@ const styles = StyleSheet.create({
     backgroundColor: VG.cardDark,
     borderRadius: 18,
     marginBottom: 14,
-    overflow: 'hidden',
     borderWidth: 1,
     borderColor: VG.border,
   },
@@ -368,6 +369,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     position: 'relative',
+    overflow: 'hidden',
+    borderTopLeftRadius: 18,
+    borderTopRightRadius: 18,
   },
   scenePhoto:   { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
   sceneEmoji:   { fontSize: 44 },
@@ -427,9 +431,10 @@ const styles = StyleSheet.create({
   speakerTagRole:   { fontSize: 11, color: VG.creamMuted },
   speakerTagAvatar: { backgroundColor: 'rgba(224,176,75,0.1)' },
 
-  // Lines
-  lines:    { padding: 14, gap: 12 },
-  lineRow:  { flexDirection: 'row', alignItems: 'flex-start', gap: 10 },
+  // Lines — overflow:visible so that if Yoga under-measures a bubble height on first
+  // render, the text renders visibly in the gap rather than being silently clipped.
+  lines:    { padding: 14, gap: 12, overflow: 'visible' },
+  lineRow:  { flexDirection: 'row', alignItems: 'flex-start', gap: 10, overflow: 'visible' },
   lineRowA: { flexDirection: 'row' },
   lineRowB: { flexDirection: 'row-reverse' },
 
@@ -455,14 +460,15 @@ const styles = StyleSheet.create({
     width: 52,
   },
 
-  // Bubble
   bubble: {
-    flex: 1, borderRadius: 14, padding: 12,
-    maxWidth: '85%', borderWidth: 1,
+    flexShrink: 1,
+    borderRadius: 14,
+    paddingTop: 12, paddingBottom: 12, paddingLeft: 12, paddingRight: 40,
+    borderWidth: 1,
+    overflow: 'visible',
   },
-  bubbleTop:    { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' },
   bubbleChinese:{ fontSize: 18, fontWeight: '700', color: VG.cream, lineHeight: 26 },
-  speakBtn:     { paddingLeft: 8, paddingTop: 2 },
+  speakBtn:     { position: 'absolute', top: 10, right: 10, width: 26, alignItems: 'center' },
   speakBtnText: { fontSize: 16 },
   bubblePinyin: { fontSize: 13, fontStyle: 'italic', marginTop: 4, marginBottom: 2 },
   bubbleEnglish:{ fontSize: 13, color: VG.creamMuted, marginTop: 4, lineHeight: 18 },

@@ -62,12 +62,21 @@
     },
     {
       "id": "hsk4_l13_07",
-      "chinese": "目的",
-      "pinyin": "mù dì",
-      "english": "Purpose; goal; objective",
-      "part_of_speech": "noun",
-      "example": "原来您觉得幸福这么简单，这是您的目的吗？",
-      "translation": "So you think happiness is this simple. Is this your purpose?"
+      "chinese": "永远",
+      "pinyin": "yǒng yuǎn",
+      "english": "Forever; always; permanently",
+      "part_of_speech": "adverb",
+      "example": "对我来说，家人的幸福永远是最重要的事。",
+      "translation": "For me, the happiness of my family is always the most important thing."
+    },
+    {
+      "id": "hsk4_l13_07b",
+      "chinese": "关键",
+      "pinyin": "guān jiàn",
+      "english": "Key; crucial; the key point",
+      "part_of_speech": "noun/adjective",
+      "example": "总结来说，感谢生活是保持幸福的关键。",
+      "translation": "In summary, being grateful for life is the key to maintaining happiness."
     },
     {
       "id": "hsk4_l13_08",
@@ -162,6 +171,20 @@
       "pinyin": "zǒng jié jīng yàn jiào xùn",
       "english": "Summarize lessons learned",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l13_p09",
+      "chinese": "永远幸福",
+      "pinyin": "yǒng yuǎn xìng fú",
+      "english": "Forever happy; lasting happiness",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk4_l13_p10",
+      "chinese": "关键问题",
+      "pinyin": "guān jiàn wèn tí",
+      "english": "Key issue; crucial question",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -201,9 +224,14 @@
       "english": "When she realized her ideal, she felt very pleasant and happy inside."
     },
     {
-      "chinese": "他总结经验教训，终于找到了实现目的的方法。",
-      "pinyin": "Tā zǒng jié jīng yàn jiào xùn, zhōng yú zhǎo dào le shí xiàn mù dì de fāng fǎ.",
-      "english": "He summarized the lessons learned and finally found a way to achieve his goal."
+      "chinese": "他总结了幸福的含义，原来关键就是知足常乐。",
+      "pinyin": "Tā zǒng jié le xìng fú de hán yì, yuán lái guān jiàn jiù shì zhī zú cháng lè.",
+      "english": "He summarized the meaning of happiness; it turns out the key is contentment brings lasting joy."
+    },
+    {
+      "chinese": "对我来说，家人的健康永远是最重要的事。",
+      "pinyin": "Duì wǒ lái shuō, jiā rén de jiàn kāng yǒng yuǎn shì zuì zhòng yào de shì.",
+      "english": "For me, my family's health is always the most important thing."
     },
     {
       "chinese": "开心的梦让他感到幸福，帮助他保持满足感。",
@@ -857,17 +885,31 @@
       "word_hints": {}
     },
     {
-      "question": "What does 目的 mean?",
+      "question": "What does 永远 mean?",
       "type": "multiple_choice",
-      "correct": "Purpose; goal; objective",
+      "correct": "Forever; always; permanently",
       "options": [
-        "Purpose; goal; objective",
-        "Reason",
-        "Summary",
-        "Ideal"
+        "Forever; always; permanently",
+        "Actually; in fact",
+        "Originally; it turns out",
+        "In summary"
       ],
       "word_hints": {
-        "目的": "mù dì"
+        "永远": "yǒng yuǎn"
+      }
+    },
+    {
+      "question": "What does 关键 mean?",
+      "type": "multiple_choice",
+      "correct": "Key; crucial; the key point",
+      "options": [
+        "Key; crucial; the key point",
+        "Reason; cause",
+        "Summary",
+        "Dream"
+      ],
+      "word_hints": {
+        "关键": "guān jiàn"
       }
     },
     {
@@ -939,9 +981,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "其实实现理想当然也开心，但不是幸福的全部原因。",
-          "pinyin": "Qí shí shí xiàn lǐ xiǎng dāng rán yě kāi xīn, dàn bú shì xìng fú de quán bù yuán yīn.",
-          "english": "Actually, realizing one's ideal is of course also joyful, but it's not the whole reason for happiness."
+          "chinese": "实现理想当然也开心，但不是幸福的全部原因。",
+          "pinyin": "Shí xiàn lǐ xiǎng dāng rán yě kāi xīn, dàn bú shì xìng fú de quán bù yuán yīn.",
+          "english": "Realizing one's ideal is of course also joyful, but it's not the whole reason for happiness."
         },
         {
           "speaker": "A",

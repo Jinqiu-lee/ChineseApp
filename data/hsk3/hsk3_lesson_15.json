@@ -30,8 +30,8 @@
       "pinyin": "jī běn shàng",
       "english": "Basically / Essentially",
       "part_of_speech": "adverb",
-      "example": "这件事基本上解决了，其他的没问题。",
-      "translation": "This matter is basically resolved — the rest is fine."
+      "example": "这件事基本上解决了",
+      "translation": "This matter is basically resolved."
     },
     {
       "id": "hsk3_l15_04",
@@ -75,8 +75,8 @@
       "pinyin": "fǎn zhèng",
       "english": "Anyway / In any case",
       "part_of_speech": "adverb",
-      "example": "反正我哪里都行，你决定就好。",
-      "translation": "Anyway I'm fine with anywhere — you decide."
+      "example": "反正我去哪里都行，你决定就好。",
+      "translation": "Anyway I'm fine with going anywhere — you decide."
     },
     {
       "id": "hsk3_l15_09",
@@ -84,8 +84,8 @@
       "pinyin": "qí shí",
       "english": "Actually / In fact",
       "part_of_speech": "adverb",
-      "example": "其实这两个问题差不多是一样的，反正都能解决。",
-      "translation": "Actually these two problems are about the same — anyway they both can be solved."
+      "example": "其实这两个问题差不多是一样的。",
+      "translation": "Actually these two problems are about the same。"
     },
     {
       "id": "hsk3_l15_10",
@@ -179,24 +179,24 @@
       "english": "She is not only smart but also very hardworking — she studies almost every day."
     },
     {
-      "chinese": "其实这两个问题差不多是一样的，反正都能解决。",
-      "pinyin": "Qí shí zhè liǎng ge wèn tí chà bu duō shì yí yàng de, fǎn zhèng dōu néng jiě jué.",
-      "english": "Actually these two problems are about the same — anyway they both can be solved."
+      "chinese": "其实这两个问题差不多是一样的。",
+      "pinyin": "Qí shí zhè liǎng ge wèn tí chà bu duō shì yí yàng de.",
+      "english": "Actually these two problems are about the same."
     },
     {
-      "chinese": "大概还有三个人没来，其他的人都到了，可以开始了。",
-      "pinyin": "Dà gài hái yǒu sān ge rén méi lái, qí tā de rén dōu dào le,kě yǐ kāi shǐ le.",
-      "english": "About three people haven't arrived yet — the others are all here, so we can start."
+      "chinese": "还有三个人没来，其他的人都到了，可以开始了。",
+      "pinyin": "Hái yǒu sān ge rén méi lái, qí tā de rén dōu dào le,kě yǐ kāi shǐ le.",
+      "english": "Three people haven't arrived yet, the others are all here, we can start."
     },
     {
-      "chinese": "反正我哪里都行，你决定就好，没问题的。",
-      "pinyin": "Fǎn zhèng wǒ nǎ lǐ dōu xíng, nǐ jué dìng jiù hǎo, méi wèn tí de.",
-      "english": "Anyway I'm fine with anywhere — you decide, no problem."
+      "chinese": "反正我去哪里都行，你决定就好，没问题的。",
+      "pinyin": "Fǎn zhèng wǒ qù nǎ lǐ dōu xíng, nǐ jué dìng jiù hǎo, méi wèn tí de.",
+      "english": "Anyway I'm fine with going anywhere — you decide, no problem."
     },
     {
-      "chinese": "他几乎什么都会，不但会做饭，而且还会修车，其实挺厉害的。",
-      "pinyin": "Tā jī hū shén me dōu huì, bú dàn huì zuò fàn, ér qiě hái huì xiū chē, qí shí tǐng lì hài de.",
-      "english": "He can do almost everything — not only can he cook, but he can also fix cars. Actually he's pretty impressive."
+      "chinese": "他几乎什么都会，不但会做饭，而且还会修车，挺厉害的。",
+      "pinyin": "Tā jī hū shén me dōu huì, bú dàn huì zuò fàn, ér qiě hái huì xiū chē, tǐng lì hài de.",
+      "english": "He can do almost everything — not only can he cook, but he can also fix cars. he's pretty impressive."
     }
   ],
   "grammar_points": [
@@ -211,9 +211,9 @@
           "english": "I exercise almost every day."
         },
         {
-          "chinese": "这件事基本上解决了，其他没问题。",
-          "pinyin": "Zhè jiàn shì jī běn shàng jiě jué le, qí tā méi wèn tí.",
-          "english": "This matter is basically resolved — the rest is fine."
+          "chinese": "这件事基本上解决了",
+          "pinyin": "Zhè jiàn shì jī běn shàng jiě jué le.",
+          "english": "This matter is basically resolved."
         },
         {
           "chinese": "他和我差不多高。",
@@ -240,7 +240,7 @@
           ]
         },
         {
-          "question": "Fill in: 这个项目___完成了，还有一点小细节。",
+          "question": "Fill in: 这个项目___已经完成了，还有一点小细节。",
           "type": "multiple_choice",
           "correct": "基本上",
           "options": [
@@ -434,13 +434,13 @@
           "correct": "也",
           "options": [
             "也",
-            "都",
+            "是",
             "还",
             "很"
           ],
           "option_pinyin": [
             "yě",
-            "dōu",
+            "shì",
             "hái",
             "hěn"
           ]
@@ -474,11 +474,11 @@
           ]
         },
         {
-          "question": "Translate: 反正她做什么都很好。",
+          "question": "Translate: 她做什么都做得很好。",
           "type": "multiple_choice",
-          "correct": "Anyway, everything she does is great.",
+          "correct": "Everything she does is great.",
           "options": [
-            "Anyway, everything she does is great.",
+            "Everything she does is great.",
             "She does everything, but not well.",
             "She does nothing great.",
             "She doesn't want to do anything."
@@ -632,7 +632,7 @@
       ]
     },
     {
-      "question": "Fill in: 其他的事___没问题，你放心吧。",
+      "question": "Fill in: 其他的___没问题，你放心吧。",
       "type": "multiple_choice",
       "correct": "基本上",
       "options": [
@@ -643,7 +643,7 @@
       ]
     },
     {
-      "question": "Translate: 总的来说不错，其他都还行。",
+      "question": "Translate: 总的来说还不错，其他都还行。",
       "type": "multiple_choice",
       "correct": "Generally speaking, not bad — the rest are all fine.",
       "options": [
@@ -729,14 +729,14 @@
       "lines": [
         {
           "speaker": "A",
-          "chinese": "波伏娃，我们去北京旅行的事，你都准备好了吗？",
-          "pinyin": "Bō Fú Wá, wǒ men qù Běi jīng lǚ xíng de shì, nǐ dōu zhǔn bèi hǎo le ma?",
+          "chinese": "波伏娃，我们去北京旅行的东西，你都准备好了吗？",
+          "pinyin": "Bō Fú Wá, wǒ men qù Běi jīng lǚ xíng de dōng xi, nǐ dōu zhǔn bèi hǎo le ma?",
           "english": "Beauvoir, have you got everything ready for our trip to Beijing?"
         },
         {
           "speaker": "B",
-          "chinese": "基本上没问题！机票和酒店都订好了，其他的事差不多也好了。",
-          "pinyin": "Jī běn shàng méi wèn tí! Jī piào hé jiǔ diàn dōu dìng hǎo le, qí tā de shì chà bù duō yě hǎo le.",
+          "chinese": "基本上没问题！机票和酒店都订好了，其他的差不多也好了。",
+          "pinyin": "Jī běn shàng méi wèn tí! Jī piào hé jiǔ diàn dōu dìng hǎo le, qí tā de chà bù duō yě hǎo le.",
           "english": "Basically no problem! The flights and hotel are all booked — the rest is almost sorted too."
         },
         {
@@ -747,21 +747,21 @@
         },
         {
           "speaker": "B",
-          "chinese": "反正我哪里都行，你决定就好。其实故宫不但很有名，而且门票也不贵。",
-          "pinyin": "Fǎn zhèng wǒ nǎ lǐ dōu xíng, nǐ jué dìng jiù hǎo. Qí shí gù gōng bú dàn hěn yǒu míng, ér qiě mén piào yě bú guì.",
-          "english": "Anyway I'm fine with anywhere — you decide. Actually the Forbidden City is not only very famous but the tickets are also not expensive."
+          "chinese": "反正我哪里都行，你决定就好。故宫不但很有名，而且门票也不贵。",
+          "pinyin": "Fǎn zhèng wǒ nǎ lǐ dōu xíng, nǐ jué dìng jiù hǎo. Gù gōng bú dàn hěn yǒu míng, ér qiě mén piào yě bú guì.",
+          "english": "Anyway I'm fine with anywhere — you decide. The Forbidden City is not only very famous but the tickets are also not expensive."
         },
         {
           "speaker": "A",
-          "chinese": "好！那我们几乎每天都安排了一个景点。总的来说这次旅行应该很棒！",
-          "pinyin": "Hǎo! Nà wǒ men jī hū měi tiān dōu ān pái le yī ge jǐng diǎn. Zǒng de lái shuō zhè cì lǚ xíng yīng gāi hěn bàng!",
-          "english": "Great! then we have planed one attraction almost every day. Generally speaking, this trip should be wonderful!"
+          "chinese": "好！那我们几乎每天都安排了一个景点。这次旅行应该很棒！",
+          "pinyin": "Hǎo! Nà wǒ men jī hū měi tiān dōu ān pái le yī ge jǐng diǎn. Zhè cì lǚ xíng yīng gāi hěn bàng!",
+          "english": "Great! then we have planed one attraction almost every day. This trip should be wonderful!"
         },
         {
           "speaker": "B",
-          "chinese": "总的来说不错！其他的细节我还要再检查一下，但大概是没问题的。",
-          "pinyin": "Zǒng de lái shuō bú cuò! Qí tā de xì jié wǒ hái yào zài jiǎn chá yí xià, dàn dà gài shì méi wèn tí de .",
-          "english": "Generally speaking, not bad! I still need to double-check some other details, but it's probably fine."
+          "chinese": "总的来说不错！细节我还要再检查一下，但大概是没问题的。",
+          "pinyin": "Zǒng de lái shuō bú cuò! Xì jié wǒ hái yào zài jiǎn chá yí xià, dàn dà gài shì méi wèn tí de .",
+          "english": "Generally speaking, not bad! I still need to double-check some details, but it's probably fine."
         }
       ]
     },
@@ -802,14 +802,14 @@
         },
         {
           "speaker": "B",
-          "chinese": "写作基本上没太大问题，其他方面也都很好。",
-          "pinyin": "Xiě zuò jī běn shàng méi tài dà wèn tí, dàn qí tā fāng miàn yě dōu hěn hǎo.",
-          "english": "Writing is basically fine, the other areas are also very good."
+          "chinese": "写作没太大问题，其他各个方面也都很好。",
+          "pinyin": "Xiě zuò méi tài dà wèn tí, dàn qí tā gè ge fāng miàn yě dōu hěn hǎo.",
+          "english": "Writing is basically fine, all the other areas are also very good."
         },
         {
           "speaker": "A",
-          "chinese": "那下学期我应该怎么办？反正我什么都想提高。",
-          "pinyin": "Nà xià xué qī wǒ yīng gāi zěn me bàn? Fǎn zhèng wǒ shén me dōu xiǎng tí gāo.",
+          "chinese": "那下学期我应该怎么做？我什么都想提高。",
+          "pinyin": "Nà xià xué qī wǒ yīng gāi zěn me zuò? Wǒ shén me dōu xiǎng tí gāo.",
           "english": "Then what should I do next term? Anyway I want to improve everything."
         },
         {

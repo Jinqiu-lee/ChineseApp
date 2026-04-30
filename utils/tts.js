@@ -434,7 +434,7 @@ const AVATAR_VOICE_CONFIG = {
   // Li Bai — young, bright, passionate; cmn-CN-Wavenet-C
   libai:  { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-C', pitch:  5,  speakingRate: 1.03 },
   // Lu Xun — stern, blunt, deliberate: noticeably low pitch + slow
-  luxun:  { ssmlGender: 'MALE',   pitch: -5,  speakingRate: 0.80 },
+  luxun:  { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-B', pitch: -9,  speakingRate: 0.75, volumeGainDb: -1.5 },
   // Eileen Chang — controlled, precise, cool; cmn-CN-Wavenet-A
   eileen: { ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch:  0,  speakingRate: 0.90 },
   // Jane Austen
@@ -573,6 +573,7 @@ export async function speakAsAvatar(text, avatarId = 'eileen') {
               audioEncoding: 'MP3',
               speakingRate: vc.speakingRate,
               pitch: vc.pitch,
+              ...(vc.volumeGainDb != null ? { volumeGainDb: vc.volumeGainDb } : {}),
             },
           }),
         },
@@ -646,11 +647,13 @@ export async function speakChinese(text, gender = 'female', pinyinHint = null) {
             voice: {
               languageCode: 'zh-CN',
               ssmlGender: vc.ssmlGender,
+              ...(vc.voiceName ? { name: vc.voiceName } : {}),
             },
             audioConfig: {
               audioEncoding: 'MP3',
               speakingRate: vc.speakingRate,
               pitch: vc.pitch,
+              ...(vc.volumeGainDb != null ? { volumeGainDb: vc.volumeGainDb } : {}),
             },
           }),
         },
