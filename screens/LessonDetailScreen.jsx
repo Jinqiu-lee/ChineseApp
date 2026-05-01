@@ -184,7 +184,7 @@ export default function LessonDetailScreen({
   const T = LEVEL_SCREEN_PALETTES[levelId] || LEVEL_SCREEN_PALETTES.hsk1;
   const levelMap = LESSONS_BY_LEVEL[levelId] || LESSONS;
   const lesson = levelMap[lessonId];
-  const avatarId = lesson ? getAvatarForLesson(lesson.topic, lesson.topic_chinese) : 'eileen';
+  const avatarId = lesson ? getAvatarForLesson(levelId, lesson.lesson, lesson.topic, lesson.topic_chinese) : 'eileen';
   const [openSection, setOpenSection] = useState(null); // 'words' | 'sentences' | 'grammar' | null
 
   // Stop any playing audio when this screen unmounts
@@ -328,7 +328,7 @@ export default function LessonDetailScreen({
         {/* Expanded learning content */}
         {openSection === 'words' && (
           <View style={styles.expandedSection}>
-            <VocabularySection vocabulary={lesson.vocabulary} showPinyin={lesson.show_pinyin !== false} />
+            <VocabularySection vocabulary={lesson.vocabulary} showPinyin={lesson.show_pinyin !== false} avatarId={avatarId} />
           </View>
         )}
         {openSection === 'dialogue' && (

@@ -70,6 +70,10 @@ const COMPOUND_PHONEME_OVERRIDES = {
   '尊重': [['尊', 'zun1'], ['重', 'zhong4']],
   '沉重': [['沉', 'chen2'], ['重', 'zhong4']],
   '繁重': [['繁', 'fan2'], ['重', 'zhong4']],
+  // 差 — polyphonic: chā (cha1) = difference/error, chà (cha4) = bad/inferior, chāi (chai1) = errand
+  // Default TTS reads chā1; override chà4 compounds explicitly.
+  '变差': [['变', 'bian4'], ['差', 'cha4']],
+  '差劲': [['差', 'cha4'], ['劲', 'jin4']],
   // 量 — polyphonic: liáng (liang2) as verb "to measure", liàng (liang4) as noun "quantity/amount"
   // Verb compounds (liang2):
   '量体温': [['量', 'liang2'], ['体', 'ti3'], ['温', 'wen1']],
@@ -432,9 +436,10 @@ export async function speakPinyin(syllable, gender = 'female') {
 // Each avatar is tuned to be clearly distinct from the others.
 const AVATAR_VOICE_CONFIG = {
   // Li Bai — young, bright, passionate; cmn-CN-Wavenet-C
-  libai:  { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-C', pitch:  5,  speakingRate: 1.03 },
+  // Li Bai — mature, resonant, unhurried poet; Wavenet-B for depth, slight pitch drop, relaxed pace
+  libai:  { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-B', pitch: -1,  speakingRate: 0.90 },
   // Lu Xun — stern, blunt, deliberate: noticeably low pitch + slow
-  luxun:  { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-B', pitch: -9,  speakingRate: 0.75, volumeGainDb: -1.5 },
+  luxun:  { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-B', pitch: -9,  speakingRate: 0.80, volumeGainDb: -1.5 },
   // Eileen Chang — controlled, precise, cool; cmn-CN-Wavenet-A
   eileen: { ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch:  0,  speakingRate: 0.90 },
   // Jane Austen
@@ -460,7 +465,7 @@ const AVATAR_VOICE_CONFIG = {
   // Su Shi — mid-age, warm, grounded; cmn-CN-Wavenet-B
   sushi:    { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-B', pitch: -5,  speakingRate: 0.90 },
   // Yang Jiang — elderly grandmother; deeper mature female, maximum low pitch, very slow
-  yangjiang:{ ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch: -15, speakingRate: 0.75 },
+  yangjiang:{ ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch: -15, speakingRate: 0.79 },
 
   // ── Grandparent voices (shared across all dialogues with 奶奶/外婆 or 爷爷/外公) ──
   // Grandma (奶奶/外婆): same profile as Yang Jiang — warm, slow, elderly female
@@ -471,6 +476,10 @@ const AVATAR_VOICE_CONFIG = {
   auntie:   { ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch:  -6, speakingRate: 0.83 },
   // Uncle / Dad (叔叔/爸爸): middle-aged man 40–50 — steady mature male, moderately low, slightly slow
   uncle:    { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-B', pitch:  -5, speakingRate: 0.83 },
+  // Teacher / Professor female (老师/教授): calm, warm, authoritative — slightly lower than young female, gentle pace
+  teacher_f: { ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch: -4, speakingRate: 0.85 },
+  // Teacher / Professor male (老师/教授): measured, steady, authoritative — moderately low, calm pace
+  teacher_m: { ssmlGender: 'MALE',   voiceName: 'cmn-CN-Wavenet-B', pitch: -3, speakingRate: 0.85 },
 };
 
 // Speak text using the avatar's personalised voice profile.

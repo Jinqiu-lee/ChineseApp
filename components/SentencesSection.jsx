@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
-import { speakChinese } from '../utils/tts';
+import { speakAsAvatar } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
 /**
  * SentencesSection Component - DEFAULT EXPORT
  */
-function SentencesSection({ sentences }) {
+function SentencesSection({ sentences, avatarId = 'eileen' }) {
   const renderSentence = ({ item, index }) => (
     <View style={styles.sentenceCard}>
       <View style={styles.sentenceNumber}>
@@ -21,7 +21,7 @@ function SentencesSection({ sentences }) {
 
       <TouchableOpacity
         style={styles.audioIcon}
-        onPress={() => speakChinese(item.chinese)}
+        onPress={() => speakAsAvatar(item.chinese, avatarId)}
       >
         <Text style={styles.audioIconText}>🔊</Text>
       </TouchableOpacity>

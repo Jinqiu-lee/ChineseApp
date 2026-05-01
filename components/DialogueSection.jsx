@@ -107,10 +107,13 @@ function getDisplayName(info) {
 const GRANDMA_KEYWORDS = ['奶奶', '外婆', '姥姥', '祖母'];
 const GRANDPA_KEYWORDS = ['爷爷', '外公', '姥爷', '祖父'];
 
+const TEACHER_KEYWORDS = ['老师', '教授', '博士', '主任', '院长', '经理', '老板', '领导', '医生', '律师', '顾问'];
+
 function getElderAvatarId(info) {
   if (!info) return null;
   const name = info.name || '';
   const role = info.role || '';
+  const gender = info.gender || 'female';
   const text = `${name} ${role}`;
   if (GRANDMA_KEYWORDS.some(k => text.includes(k))) return 'grandma';
   if (GRANDPA_KEYWORDS.some(k => text.includes(k))) return 'grandpa';
@@ -118,13 +121,21 @@ function getElderAvatarId(info) {
   if (name === '妈妈' || role === '妈妈' || name.endsWith('阿姨') || role.endsWith('阿姨')) return 'auntie';
   // Middle-aged man: 爸爸, or any name/role ending with 叔叔
   if (name === '爸爸' || role === '爸爸' || name.endsWith('叔叔') || role.endsWith('叔叔')) return 'uncle';
+  // Professional/authority roles — calm, slightly lower pitch, measured pace
+  if (TEACHER_KEYWORDS.some(k => text.includes(k))) return gender === 'female' ? 'teacher_f' : 'teacher_m';
+  // 老 + single surname (e.g. 老王, 老李) — informal address for middle-aged adults
+  if (name.startsWith('老') && name.length === 2) return gender === 'female' ? 'teacher_f' : 'teacher_m';
   return null;
 }
 
-// Gender-based palette
+// Gender-based palette.
+// _alt variants are used for Speaker B when both speakers share the same gender,
+// so same-gender pairs get visually distinct bubbles while text stays readable.
 const PALETTE = {
-  female: { bubble: 'rgba(253,121,168,0.12)', border: 'rgba(253,121,168,0.3)', pinyin: '#fd79a8', badge: 'rgba(253,121,168,0.2)', emoji: '👩' },
-  male:   { bubble: 'rgba(84,160,255,0.12)',  border: 'rgba(84,160,255,0.3)',  pinyin: '#54A0FF', badge: 'rgba(84,160,255,0.2)',  emoji: '👨' },
+  female:     { bubble: 'rgba(253,121,168,0.13)', border: 'rgba(253,121,168,0.32)', pinyin: '#fd79a8', badge: 'rgba(253,121,168,0.20)', emoji: '👩' },
+  female_alt: { bubble: 'rgba(255,182,213,0.22)', border: 'rgba(210,70,110,0.28)',  pinyin: '#c94070', badge: 'rgba(255,182,213,0.28)', emoji: '👩' },
+  male:       { bubble: 'rgba(84,160,255,0.12)',  border: 'rgba(84,160,255,0.30)',  pinyin: '#54A0FF', badge: 'rgba(84,160,255,0.20)',  emoji: '👨' },
+  male_alt:   { bubble: 'rgba(130,210,255,0.18)', border: 'rgba(50,150,230,0.28)',  pinyin: '#2196f3', badge: 'rgba(130,210,255,0.25)', emoji: '👨' },
 };
 
 export default function DialogueSection({ dialogues = [], lessonNumber, levelId = 'hsk1', avatarId = 'eileen' }) {
@@ -148,11 +159,16 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
   const [showPinyin, setShowPinyin] = useState(false);
   const [playingLine, setPlayingLine] = useState(null); // index of currently playing line
   const sessionRef = useRef(0); // incremented on each new play session to cancel old ones
-  // Yoga under-measures multi-line text on first render when content appears conditionally
-  // (e.g. toggling the Dialogue section open). Force one synchronous re-render after mount
-  // so Yoga gets a second layout pass with finalised container sizes — fixes invisible last lines.
+  // Yoga under-measures multi-line text when content appears conditionally.
+  // Pass 1 (useLayoutEffect): fires before paint — prevents flash for simple cases.
+  // Pass 2 (useEffect + setTimeout 0): fires after native layout commits — fixes
+  // measurement errors that survive the first pass (e.g. last lines of dialogue 1).
   const [, forceLayout] = useState(0);
-  React.useLayoutEffect(() => { forceLayout(1); }, []);
+  React.useLayoutEffect(() => { forceLayout(v => v + 1); }, []);
+  React.useEffect(() => {
+    const t = setTimeout(() => forceLayout(v => v + 1), 0);
+    return () => clearTimeout(t);
+  }, []);
 
   // Stop audio when this card unmounts (section closed, screen navigated away, etc.)
   React.useEffect(() => {
@@ -161,8 +177,11 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
 
   const speakerA = dialogue.speakers?.A;
   const speakerB = dialogue.speakers?.B;
-  const palA = PALETTE[(speakerA?.gender) || 'female'];
-  const palB = PALETTE[(speakerB?.gender) || 'male'];
+  const genderA = speakerA?.gender || 'female';
+  const genderB = speakerB?.gender || 'male';
+  const sameGender = genderA === genderB;
+  const palA = PALETTE[genderA];
+  const palB = sameGender ? PALETTE[`${genderB}_alt`] : PALETTE[genderB];
   const sceneImg = getDialogueImage(dialogue.id, lessonNumber, levelId);
 
   // Play from `startIndex` through to the end of the dialogue, one line at a time.
@@ -213,53 +232,54 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
 
   return (
     <View style={styles.card}>
-
-      {/* Scene banner – emoji or real photo */}
-      {sceneImg && (
-        <View style={[styles.sceneBanner, { backgroundColor: sceneImg.color || SLATE_TEAL }]}>
-          {sceneImg.url ? (
-            <Image source={{ uri: sceneImg.url }} style={styles.scenePhoto} resizeMode="cover" />
-          ) : (
-            <Text style={styles.sceneEmoji}>{sceneImg.emoji}</Text>
-          )}
-          <View style={styles.sceneLabelWrap}>
-            <Text style={styles.sceneLabel}>{sceneImg.label}</Text>
-          </View>
-        </View>
-      )}
-
-      {/* Card header */}
-      <View style={styles.cardHeader}>
-        <View style={styles.headerTop}>
-          <View>
-            <Text style={styles.cardTitleChinese}>{dialogue.title_chinese}</Text>
-            {showPinyin && dialogue.title_pinyin ? (
-              <Text style={styles.cardTitlePinyin}>{dialogue.title_pinyin}</Text>
-            ) : null}
-            <Text style={styles.cardTitleEnglish}>{dialogue.title}</Text>
-          </View>
-          <TouchableOpacity
-            style={[styles.pinyinToggle, showPinyin && styles.pinyinToggleOn]}
-            onPress={() => setShowPinyin(v => !v)}
-          >
-            <Text style={[styles.pinyinToggleText, showPinyin && styles.pinyinToggleTextOn]}>拼</Text>
-          </TouchableOpacity>
-        </View>
-
-        {/* Speaker name cards */}
-        {(speakerA || speakerB) && (
-          <View style={styles.speakerRow}>
-            {speakerA && (speakerA.isAvatar
-              ? <AvatarSpeakerTag info={speakerA} pal={palA} avatarId={speakerA.avatarId} showPinyin={showPinyin} />
-              : <SpeakerTag info={speakerA} pal={palA} showPinyin={showPinyin} />
+      <View style={{ overflow: 'visible' }}>
+        {/* Scene banner – emoji or real photo */}
+        {sceneImg && (
+          <View style={[styles.sceneBanner, { backgroundColor: sceneImg.color || SLATE_TEAL }]}>
+            {sceneImg.url ? (
+              <Image source={{ uri: sceneImg.url }} style={styles.scenePhoto} resizeMode="cover" />
+            ) : (
+              <Text style={styles.sceneEmoji}>{sceneImg.emoji}</Text>
             )}
-            <Text style={styles.vsText}>vs</Text>
-            {speakerB && (speakerB.isAvatar
-              ? <AvatarSpeakerTag info={speakerB} pal={palB} avatarId={speakerB.avatarId} showPinyin={showPinyin} />
-              : <SpeakerTag info={speakerB} pal={palB} showPinyin={showPinyin} />
-            )}
+            <View style={styles.sceneLabelWrap}>
+              <Text style={styles.sceneLabel}>{sceneImg.label}</Text>
+            </View>
           </View>
         )}
+
+        {/* Card header */}
+        <View style={styles.cardHeader}>
+          <View style={styles.headerTop}>
+            <View>
+              <Text style={styles.cardTitleChinese}>{dialogue.title_chinese}</Text>
+              {showPinyin && dialogue.title_pinyin ? (
+                <Text style={styles.cardTitlePinyin}>{dialogue.title_pinyin}</Text>
+              ) : null}
+              <Text style={styles.cardTitleEnglish}>{dialogue.title}</Text>
+            </View>
+            <TouchableOpacity
+              style={[styles.pinyinToggle, showPinyin && styles.pinyinToggleOn]}
+              onPress={() => setShowPinyin(v => !v)}
+            >
+              <Text style={[styles.pinyinToggleText, showPinyin && styles.pinyinToggleTextOn]}>拼</Text>
+            </TouchableOpacity>
+          </View>
+
+          {/* Speaker name cards */}
+          {(speakerA || speakerB) && (
+            <View style={styles.speakerRow}>
+              {speakerA && (speakerA.isAvatar
+                ? <AvatarSpeakerTag info={speakerA} pal={palA} avatarId={speakerA.avatarId} showPinyin={showPinyin} />
+                : <SpeakerTag info={speakerA} pal={palA} showPinyin={showPinyin} />
+              )}
+              <Text style={styles.vsText}>vs</Text>
+              {speakerB && (speakerB.isAvatar
+                ? <AvatarSpeakerTag info={speakerB} pal={palB} avatarId={speakerB.avatarId} showPinyin={showPinyin} />
+                : <SpeakerTag info={speakerB} pal={palB} showPinyin={showPinyin} />
+              )}
+            </View>
+          )}
+        </View>
       </View>
 
       {/* Dialogue lines */}
@@ -283,19 +303,19 @@ function DialogueCard({ dialogue, lessonNumber, levelId, avatarId }) {
 
               {/* Bubble */}
               <View style={[styles.bubble, { backgroundColor: pal.bubble, borderColor: pal.border }]}>
-                <Text style={styles.bubbleChinese}>{line.chinese}</Text>
-                <TouchableOpacity
-                  onPress={() => handleSpeak(i)}
-                  style={styles.speakBtn}
-                >
-                  <Text style={styles.speakBtnText}>
-                    {playingLine === i ? '⏹' : '🔊'}
-                  </Text>
-                </TouchableOpacity>
+                <Text style={styles.bubbleChinese} allowFontScaling={false}>{line.chinese}</Text>
                 {showPinyin && (
                   <Text style={[styles.bubblePinyin, { color: pal.pinyin }]}>{line.pinyin}</Text>
                 )}
-                <Text style={styles.bubbleEnglish}>{line.english}</Text>
+                <Text style={styles.bubbleEnglish} allowFontScaling={false}>{line.english}</Text>
+                <TouchableOpacity
+                    onPress={() => handleSpeak(i)}
+                    style={styles.speakBtn}
+                  >
+                    <Text style={styles.speakBtnText}>
+                      {playingLine === i ? '⏹' : '🔊'}
+                    </Text>
+                </TouchableOpacity>
               </View>
 
             </View>
@@ -361,6 +381,7 @@ const styles = StyleSheet.create({
     marginBottom: 14,
     borderWidth: 1,
     borderColor: VG.border,
+    overflow: 'visible',
   },
 
   // Scene banner (above card header)
@@ -434,7 +455,7 @@ const styles = StyleSheet.create({
   // Lines — overflow:visible so that if Yoga under-measures a bubble height on first
   // render, the text renders visibly in the gap rather than being silently clipped.
   lines:    { padding: 14, gap: 12, overflow: 'visible' },
-  lineRow:  { flexDirection: 'row', alignItems: 'flex-start', gap: 10, overflow: 'visible' },
+  lineRow:  { flexDirection: 'row', alignItems: 'flex-start', gap: 10, overflow: 'visible',flexWrap:'nowrap' },
   lineRowA: { flexDirection: 'row' },
   lineRowB: { flexDirection: 'row-reverse' },
 
@@ -462,14 +483,16 @@ const styles = StyleSheet.create({
 
   bubble: {
     flexShrink: 1,
+    alignSelf: 'stretch',
     borderRadius: 14,
     paddingTop: 12, paddingBottom: 12, paddingLeft: 12, paddingRight: 40,
     borderWidth: 1,
     overflow: 'visible',
   },
-  bubbleChinese:{ fontSize: 18, fontWeight: '700', color: VG.cream, lineHeight: 26 },
+  bubbleChinese:{ flexShrink: 1, flexWrap: 'wrap', width: '100%', fontSize: 20, fontSize: 18, fontWeight: '700', color: VG.cream },
   speakBtn:     { position: 'absolute', top: 10, right: 10, width: 26, alignItems: 'center' },
   speakBtnText: { fontSize: 16 },
   bubblePinyin: { fontSize: 13, fontStyle: 'italic', marginTop: 4, marginBottom: 2 },
-  bubbleEnglish:{ fontSize: 13, color: VG.creamMuted, marginTop: 4, lineHeight: 18 },
+  bubbleEnglish:{ fontSize: 13, color: VG.creamMuted, marginTop: 4, lineHeight: 22, flexShrink: 1 },
 });
+

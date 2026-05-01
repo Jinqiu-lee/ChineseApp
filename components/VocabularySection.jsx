@@ -1,25 +1,25 @@
 import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { speakChinese } from '../utils/tts';
+import { speakAsAvatar } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
-export default function VocabularySection({ vocabulary, showPinyin = true }) {
+export default function VocabularySection({ vocabulary, showPinyin = true, avatarId = 'eileen' }) {
   const words   = (vocabulary || []).filter(v => v.part_of_speech !== 'phrase');
   const phrases = (vocabulary || []).filter(v => v.part_of_speech === 'phrase');
 
   return (
     <View style={styles.container}>
       {words.length > 0 && (
-        <ItemGroup items={words} label="📝 New Words" count={`${words.length} words`} isPhrase={false} showPinyin={showPinyin} />
+        <ItemGroup items={words} label="📝 New Words" count={`${words.length} words`} isPhrase={false} showPinyin={showPinyin} avatarId={avatarId} />
       )}
       {phrases.length > 0 && (
-        <ItemGroup items={phrases} label="✨ Key Phrases" count={`${phrases.length} phrases`} isPhrase={true} showPinyin={showPinyin} />
+        <ItemGroup items={phrases} label="✨ Key Phrases" count={`${phrases.length} phrases`} isPhrase={true} showPinyin={showPinyin} avatarId={avatarId} />
       )}
     </View>
   );
 }
 
-function ItemGroup({ items, label, count, isPhrase, showPinyin }) {
+function ItemGroup({ items, label, count, isPhrase, showPinyin, avatarId }) {
   const [expandedId, setExpandedId] = useState(null);
   const toggle = (id) => setExpandedId(prev => prev === id ? null : id);
 
@@ -38,13 +38,14 @@ function ItemGroup({ items, label, count, isPhrase, showPinyin }) {
           isExpanded={expandedId === item.id}
           onToggle={() => toggle(item.id)}
           showPinyin={showPinyin}
+          avatarId={avatarId}
         />
       ))}
     </View>
   );
 }
 
-function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
+function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin, avatarId }) {
   return (
     <TouchableOpacity
       style={[styles.card, isPhrase && styles.cardPhrase]}
@@ -98,7 +99,7 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
                 <Text style={styles.exampleChinese}>{item.example}</Text>
                 <TouchableOpacity
                   style={styles.exampleAudioBtn}
-                  onPress={(e) => { e.stopPropagation(); speakChinese(item.example); }}
+                  onPress={(e) => { e.stopPropagation(); speakAsAvatar(item.example, avatarId); }}
                 >
                   <Text style={styles.exampleAudioBtnText}>🔊</Text>
                 </TouchableOpacity>
@@ -110,7 +111,7 @@ function VocabCard({ item, isPhrase, isExpanded, onToggle, showPinyin }) {
           )}
           <TouchableOpacity
             style={[styles.audioBtn, isPhrase && styles.audioBtnPhrase]}
-            onPress={() => speakChinese(item.chinese, 'female', item.pinyin)}
+            onPress={() => speakAsAvatar(item.chinese, avatarId)}
           >
             <Text style={styles.audioBtnText}>🔊 Play Word</Text>
           </TouchableOpacity>
