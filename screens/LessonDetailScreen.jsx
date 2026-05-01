@@ -343,8 +343,8 @@ export default function LessonDetailScreen({
         )}
         {openSection === 'culture' && (
           <View style={styles.expandedSection}>
-            {(lesson.culture_notes || []).map(note => (
-              <View key={note.id} style={styles.cultureCard}>
+            {(lesson.culture_notes || []).map((note, noteIdx) => (
+              <View key={note.id ?? noteIdx} style={styles.cultureCard}>
                 <Text style={styles.cultureTitleChinese}>{note.title_chinese}</Text>
                 <Text style={styles.cultureTitle}>{note.title}</Text>
                 <Text style={styles.cultureContent}>{note.content}</Text>

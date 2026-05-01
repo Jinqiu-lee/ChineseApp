@@ -357,8 +357,9 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
   const question = activeQuestions[currentQuestion];
   const progress = ((currentQuestion + 1) / totalQuestions) * 100;
 
-  // Reset pinyin hint when moving to a new question
+  // Reset per-question UI state whenever the question index changes
   useEffect(() => { setShowHint(false); }, [currentQuestion]);
+  useEffect(() => { setSelectedAnswer(null); }, [currentQuestion]);
 
   const handleSelectAnswer = (answer) => {
     setSelectedAnswer(answer);
@@ -763,7 +764,7 @@ export default function LevelQuizScreen({ currentLevelId, onBack, onComplete }) 
 
             return (
               <TouchableOpacity
-                key={idx}
+                key={`${currentQuestion}-${idx}`}
                 style={[
                   styles.optionButton,
                   isSelected && styles.optionButtonSelected

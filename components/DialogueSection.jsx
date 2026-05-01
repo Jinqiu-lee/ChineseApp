@@ -132,10 +132,14 @@ function getElderAvatarId(info) {
 // _alt variants are used for Speaker B when both speakers share the same gender,
 // so same-gender pairs get visually distinct bubbles while text stays readable.
 const PALETTE = {
+  // Mixed-gender: blue for male, pink for female (unchanged)
   female:     { bubble: 'rgba(253,121,168,0.13)', border: 'rgba(253,121,168,0.32)', pinyin: '#fd79a8', badge: 'rgba(253,121,168,0.20)', emoji: '👩' },
-  female_alt: { bubble: 'rgba(255,182,213,0.22)', border: 'rgba(210,70,110,0.28)',  pinyin: '#c94070', badge: 'rgba(255,182,213,0.28)', emoji: '👩' },
   male:       { bubble: 'rgba(84,160,255,0.12)',  border: 'rgba(84,160,255,0.30)',  pinyin: '#54A0FF', badge: 'rgba(84,160,255,0.20)',  emoji: '👨' },
-  male_alt:   { bubble: 'rgba(130,210,255,0.18)', border: 'rgba(50,150,230,0.28)',  pinyin: '#2196f3', badge: 'rgba(130,210,255,0.25)', emoji: '👨' },
+  // Same-gender Speaker B: clearly different hue so the two bubbles are visually distinct
+  // Female B → purple/lavender (distinct from pink)
+  female_alt: { bubble: 'rgba(168,100,255,0.11)', border: 'rgba(168,100,255,0.38)', pinyin: '#9b59b6', badge: 'rgba(168,100,255,0.18)', emoji: '👩' },
+  // Male B → teal (distinct from blue)
+  male_alt:   { bubble: 'rgba(26,210,190,0.11)',  border: 'rgba(26,210,190,0.40)',  pinyin: '#00b4aa', badge: 'rgba(26,210,190,0.18)',  emoji: '👨' },
 };
 
 export default function DialogueSection({ dialogues = [], lessonNumber, levelId = 'hsk1', avatarId = 'eileen' }) {

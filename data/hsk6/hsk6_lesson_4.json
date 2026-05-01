@@ -530,15 +530,15 @@
       "title": "Starting Over",
       "title_chinese": "重新开始",
       "speakers": {
-        "A": { "name": "加缪", "role": "philosophical friend", "gender": "male" },
-        "B": { "name": "爱玲", "role": "literary friend", "gender": "female" }
+        "A": { "name": "加缪", "role": "哲学派", "gender": "male" },
+        "B": { "name": "爱玲", "role": "文学派", "gender": "female" }
       },
       "lines": [
         {
           "speaker": "B",
-          "chinese": "你听说了吗？梵高辞掉了那份稳定的工作，决定重新开始，改变自己的人生方向。",
-          "pinyin": "Nǐ tīng shuō le ma? Fàn gāo cí diào le nà fèn wěn dìng de gōng zuò, jué dìng chóng xīn kāi shǐ, gǎi biàn zì jǐ de rén shēng fāng xiàng.",
-          "english": "Did you hear? Van Gogh quit his stable job and decided to start over, changing his life's direction."
+          "chinese": "你听说了吗？梵高辞掉了那份稳定的工作，决定重新开始，改变自己的人生方向，他要画画！",
+          "pinyin": "Nǐ tīng shuō le ma? Fàn gāo cí diào le nà fèn wěn dìng de gōng zuò, jué dìng chóng xīn kāi shǐ, gǎi biàn zì jǐ de rén shēng fāng xiàng, tā yào huàhuà.",
+          "english": "Did you hear? Van Gogh quit his stable job and decided to start over, changing his life's direction, he wants to paint."
         },
         {
           "speaker": "A",
@@ -554,9 +554,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "人的潜力往往比我们想象的要大得多。他只需要时间不断成长，慢慢适应就好了。",
-          "pinyin": "Rén de qián lì wǎng wǎng bǐ wǒ men xiǎng xiàng de yào dà de duō. Tā zhǐ xū yào shí jiān bù duàn chéng zhǎng, màn màn shì yìng jiù hǎo le.",
-          "english": "A person's potential is often far greater than we imagine. He just needs time to keep growing and gradually adapt."
+          "chinese": "人的潜力往往比我们想象的要大得多。他是一个绘画天才，只需要时间不断成长，慢慢适应就好了。",
+          "pinyin": "Rén de qián lì wǎng wǎng bǐ wǒ men xiǎng xiàng de yào dà de duō. Tā shì yígè huì huà tiān cái, zhǐ xū yào shí jiān bù duàn chéng zhǎng, màn màn shì yìng jiù hǎo le.",
+          "english": "A person's potential is often far greater than we imagine. He is a painting genius, just needs time to keep growing and gradually adapt."
         },
         {
           "speaker": "B",
@@ -566,8 +566,8 @@
         },
         {
           "speaker": "A",
-          "chinese": "正是。改变从来都不是失去什么，而是发现了一个更真实的自己。",
-          "pinyin": "Zhèng shì. Gǎi biàn cóng lái dōu bú shì shī qù shén me, ér shì fā xiàn le yī gè gèng zhēn shí de zì jǐ.",
+          "chinese": "正是。改变从来都不是失去什么，而是发现一个更真实的自己。",
+          "pinyin": "Zhèng shì. Gǎi biàn cóng lái dōu bú shì shī qù shén me, ér shì fā xiàn yí gè gèng zhēn shí de zì jǐ.",
           "english": "Exactly. Change is never about losing something — it is about discovering a more authentic version of yourself."
         }
       ]
@@ -577,8 +577,8 @@
       "title": "Passive or Proactive?",
       "title_chinese": "被动还是主动",
       "speakers": {
-        "A": { "name": "加缪", "role": "philosophical writer", "gender": "male" },
-        "B": { "name": "慈欣", "role": "analytical thinker", "gender": "male" }
+        "A": { "name": "加缪", "role": "哲学作家", "gender": "male" },
+        "B": { "name": "慈欣", "role": "分析派", "gender": "male" }
       },
       "lines": [
         {
@@ -589,9 +589,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "从数据上看，大多数人确实是被动的，在压力下不得不改变。但也有少数人，是真正主动突破自我的。",
-          "pinyin": "Cóng shù jù shàng kàn, dà duō shù rén què shí shì bèi dòng de, zài yā lì xià bù dé bù gǎi biàn. Dàn yě yǒu shǎo shù rén, shì zhēn zhèng zhǔ dòng tū pò zì wǒ de.",
-          "english": "From a data perspective, most people are indeed passive — they have no choice but to change under pressure. But there are also a minority who genuinely and proactively break through their own limits."
+          "chinese": "从数据上看，大多数人确实是被动的，在压力下不得不改变。但也有少数人，是真正主动突破自我的。就像梵高！",
+          "pinyin": "Cóng shù jù shàng kàn, dà duō shù rén què shí shì bèi dòng de, zài yā lì xià bù dé bù gǎi biàn. Dàn yě yǒu shǎo shù rén, shì zhēn zhèng zhǔ dòng tū pò zì wǒ de. Jiù xiàng fàn gāo.",
+          "english": "From a data perspective, most people are indeed passive — they have no choice but to change under pressure. But there are also a minority who genuinely and proactively break through their own limits, such as Van Gogh."
         },
         {
           "speaker": "B",
@@ -613,8 +613,8 @@
         },
         {
           "speaker": "A",
-          "chinese": "也许不是每个人天生就有，但每个人都可以不断地培养它。潜力从来不是固定的。",
-          "pinyin": "Yě xǔ bú shì měi gè rén tiān shēng jiù yǒu, dàn měi gè rén dōu kě yǐ bù duàn de péi yǎng tā. Qián lì cóng lái bú shì gù dìng de.",
+          "chinese": "也许不是每个人天生就有，但都可以不断地培养它。潜力从来不是固定的。",
+          "pinyin": "Yě xǔ bú shì měi gè rén tiān shēng jiù yǒu, dàn dōu kě yǐ bù duàn de péi yǎng tā. Qián lì cóng lái bú shì gù dìng de.",
           "english": "Perhaps not everyone is born with it, but everyone can continuously cultivate it. Potential is never fixed."
         }
       ]

@@ -61,15 +61,6 @@
       "translation": "In this discussion, everyone shared different viewpoints."
     },
     {
-      "id": "hsk6_l5_07",
-      "chinese": "意见",
-      "pinyin": "yì jiàn",
-      "english": "Opinion, view; suggestion",
-      "part_of_speech": "noun",
-      "example": "他鼓励每位成员大胆表达自己的意见。",
-      "translation": "He encouraged every member to boldly express their own opinions."
-    },
-    {
       "id": "hsk6_l5_08",
       "chinese": "沟通",
       "pinyin": "gōu tōng",
@@ -77,15 +68,6 @@
       "part_of_speech": "verb",
       "example": "有效的沟通可以避免很多不必要的误解。",
       "translation": "Effective communication can prevent many unnecessary misunderstandings."
-    },
-    {
-      "id": "hsk6_l5_09",
-      "chinese": "互相",
-      "pinyin": "hù xiāng",
-      "english": "Mutually, each other",
-      "part_of_speech": "adv",
-      "example": "只有互相尊重，才能真正做到有效沟通。",
-      "translation": "Only by respecting each other can one truly achieve effective communication."
     },
     {
       "id": "hsk6_l5_10",
@@ -124,15 +106,6 @@
       "translation": "He persuaded his colleague to change the plan with solid reasoning and patience."
     },
     {
-      "id": "hsk6_l5_14",
-      "chinese": "坚持",
-      "pinyin": "jiān chí",
-      "english": "To persist, maintain (a position)",
-      "part_of_speech": "verb",
-      "example": "即使遇到反对，他依然坚持自己的观点。",
-      "translation": "Even when faced with opposition, he still persisted with his own viewpoint."
-    },
-    {
       "id": "hsk6_l5_15",
       "chinese": "思维",
       "pinyin": "sī wéi",
@@ -140,6 +113,33 @@
       "part_of_speech": "noun",
       "example": "多接触不同的观点，有助于拓宽我们的思维。",
       "translation": "Exposure to different viewpoints helps broaden our thinking."
+    },
+    {
+      "id": "hsk6_l5_16",
+      "chinese": "荒诞",
+      "pinyin": "huāng dàn",
+      "english": "Absurd, grotesque; surreal and unreasonable",
+      "part_of_speech": "adj",
+      "example": "加缪认为，荒诞是人类理性与世界沉默之间永恒的冲突。",
+      "translation": "Camus believed that the absurd is the eternal conflict between human reason and the silence of the world."
+    },
+    {
+      "id": "hsk6_l5_17",
+      "chinese": "冷漠",
+      "pinyin": "lěng mò",
+      "english": "Indifferent, cold, apathetic",
+      "part_of_speech": "adj",
+      "example": "面对他人的痛苦选择冷漠，是一种道德上的失责。",
+      "translation": "Choosing indifference in the face of others' suffering is a moral failure."
+    },
+    {
+      "id": "hsk6_l5_18",
+      "chinese": "反抗",
+      "pinyin": "fǎn kàng",
+      "english": "To resist, rebel; resistance",
+      "part_of_speech": "verb/noun",
+      "example": "面对不公正，沉默是纵容，而反抗才是责任。",
+      "translation": "In the face of injustice, silence is complicity, and resistance is responsibility."
     },
     {
       "id": "hsk6_l5_p01",
@@ -175,6 +175,34 @@
       "pinyin": "zhú jiàn lǐ jiě",
       "english": "To gradually understand",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l5_p06",
+      "chinese": "春秋战国",
+      "pinyin": "chūn qiū zhàn guó",
+      "english": "Spring and Autumn and Warring States periods (770–221 BC)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l5_p07",
+      "chinese": "百家争鸣",
+      "pinyin": "bǎi jiā zhēng míng",
+      "english": "A hundred schools of thought contend; an era of great intellectual flourishing",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l5_p08",
+      "chinese": "荒诞不经",
+      "pinyin": "huāng dàn bù jīng",
+      "english": "Absurd and irrational; bizarre and preposterous",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l5_p09",
+      "chinese": "奋起反抗",
+      "pinyin": "fèn qǐ fǎn kàng",
+      "english": "To rise up and resist; to fight back courageously",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -194,19 +222,24 @@
       "english": "Perhaps his position differs from mine, but that doesn't mean he is wrong."
     },
     {
-      "chinese": "能够互相理解、承认分歧，是成熟沟通的表现。",
-      "pinyin": "Néng gòu hù xiāng lǐ jiě, chéng rèn fēn qí, shì chéng shú gōu tōng de biǎo xiàn.",
-      "english": "Being able to understand each other and acknowledge differences is a sign of mature communication."
-    },
-    {
-      "chinese": "他坚持自己的意见，却也愿意倾听对方的理由。",
-      "pinyin": "Tā jiān chí zì jǐ de yì jiàn, què yě yuàn yì qīng tīng duì fāng de lǐ yóu.",
-      "english": "He held firm to his own opinion, yet was also willing to listen to the other side's reasons."
-    },
-    {
       "chinese": "说服对方不是靠强迫，而是靠清晰的思维和有力的论据。",
       "pinyin": "Shuō fú duì fāng bú shì kào qiǎng pò, ér shì kào qīng xī de sī wéi hé yǒu lì de lùn jù.",
       "english": "Persuading the other side is not achieved through force, but through clear thinking and compelling arguments."
+    },
+    {
+      "chinese": "春秋战国时代，百家争鸣，各种思想在碰撞与争论中逐渐形成了中国哲学的基础。",
+      "pinyin": "Chūn qiū zhàn guó shí dài, bǎi jiā zhēng míng, gè zhǒng sī xiǎng zài pèng zhuàng yǔ zhēng lùn zhōng zhú jiàn xíng chéng le zhōng guó zhé xué de jī chǔ.",
+      "english": "During the Spring and Autumn and Warring States era, a hundred schools of thought contended; various ideas gradually formed the foundation of Chinese philosophy through collision and debate."
+    },
+    {
+      "chinese": "加缪认为，面对荒诞的命运，人应该奋起反抗，而不是选择冷漠地接受。",
+      "pinyin": "Jiā móu rèn wéi, miàn duì huāng dàn de mìng yùn, rén yīng gāi fèn qǐ fǎn kàng, ér bú shì xuǎn zé lěng mò de jiē shòu.",
+      "english": "Camus believed that when faced with an absurd fate, one should rise up and resist rather than choose indifferent acceptance."
+    },
+    {
+      "chinese": "对于荒诞的世界，冷漠是最大的妥协，而反抗则是思考者最真实的回应。",
+      "pinyin": "Duì yú huāng dàn de shì jiè, lěng mò shì zuì dà de tuǒ xié, ér fǎn kàng zé shì sī kǎo zhě zuì zhēn shí de huí yìng.",
+      "english": "In the face of an absurd world, indifference is the greatest compromise, while resistance is the most authentic response of a thinker."
     }
   ],
   "grammar_points": [
@@ -444,10 +477,10 @@
   ],
   "quiz": [
     {
-      "question": "Which word means 'after all' and acknowledges an underlying truth?",
+      "question": "What does 荒诞 mean?",
       "type": "multiple_choice",
-      "correct": "毕竟",
-      "options": ["毕竟", "逐渐", "互相", "或许"],
+      "correct": "Absurd; grotesque and surreal",
+      "options": ["Absurd; grotesque and surreal", "Indifferent; apathetic", "To resist; rebel", "Gradually, step by step"],
       "word_hints": {}
     },
     {
@@ -458,11 +491,11 @@
       "word_hints": { "改善": "gǎishàn", "距离": "jùlí" }
     },
     {
-      "question": "_____ 这个问题没有标准答案，每个人都有权表达自己的观点。",
+      "question": "春秋战国时代，_____，各种哲学思想在争论与碰撞中蓬勃发展。",
       "type": "multiple_choice",
-      "correct": "毕竟",
-      "options": ["毕竟", "逐渐", "沟通", "立场"],
-      "word_hints": { "标准答案": "biāozhǔn dá'àn" }
+      "correct": "百家争鸣",
+      "options": ["百家争鸣", "争论不休", "各抒己见", "荒诞不经"],
+      "word_hints": { "蓬勃发展": "péngbó fāzhǎn" }
     },
     {
       "question": "What does the idiom 朝三暮四 mean in modern Chinese?",
@@ -477,6 +510,13 @@
       "word_hints": {}
     },
     {
+      "question": "面对他人的痛苦，他始终_____，既不批评也不同情。",
+      "type": "multiple_choice",
+      "correct": "冷漠",
+      "options": ["冷漠", "荒诞", "反抗", "奇迹"],
+      "word_hints": { "痛苦": "tòngkǔ", "同情": "tóngqíng" }
+    },
+    {
       "question": "他无论如何都不愿意_____ 自己当初的判断是错误的。",
       "type": "multiple_choice",
       "correct": "承认",
@@ -484,10 +524,24 @@
       "word_hints": { "判断": "pànduàn" }
     },
     {
+      "question": "加缪认为，即使命运荒诞，人也应该清醒地_____，而不是放弃或逃避。",
+      "type": "multiple_choice",
+      "correct": "反抗",
+      "options": ["反抗", "冷漠", "承认", "逐渐"],
+      "word_hints": { "命运": "mìngyùn", "清醒": "qīngxǐng" }
+    },
+    {
       "question": "Which phrase best describes a debate where everyone can share their own views?",
       "type": "multiple_choice",
       "correct": "各抒己见",
-      "options": ["各抒己见", "争论不休", "毕竟如此", "逐渐理解"],
+      "options": ["各抒己见", "争论不休", "百家争鸣", "荒诞不经"],
+      "word_hints": {}
+    },
+    {
+      "question": "Which word means 'after all' and acknowledges an underlying truth?",
+      "type": "multiple_choice",
+      "correct": "毕竟",
+      "options": ["毕竟", "逐渐", "荒诞", "或许"],
       "word_hints": {}
     }
   ],
@@ -497,8 +551,8 @@
       "title": "Is Debate Useful?",
       "title_chinese": "争论有用吗？",
       "speakers": {
-        "A": { "name": "但丁", "role": "philosopher", "gender": "male" },
-        "B": { "name": "鲁迅", "role": "writer", "gender": "male" }
+        "A": { "name": "但丁", "role": "哲学家", "gender": "male" },
+        "B": { "name": "鲁迅", "role": "作家", "gender": "male" }
       },
       "lines": [
         {
@@ -509,15 +563,15 @@
         },
         {
           "speaker": "B",
-          "chinese": "争论是不可避免的，毕竟，人们的观点各不相同。",
-          "pinyin": "Zhēng lùn shì bù kě bì miǎn de, bì jìng, rén men de guān diǎn gè bù xiāng tóng.",
-          "english": "Debate is unavoidable, after all, people's viewpoints differ greatly."
+          "chinese": "争论是不可避免的，毕竟，人们的观点各不相同。中国最有创造力的时代就是春秋战国，百家争鸣时期！",
+          "pinyin": "Zhēng lùn shì bù kě bì miǎn de, bì jìng, rén men de guān diǎn gè bù xiāng tóng.zhōng guó zuì yǒu chuàng zào lì de shí dài jiù shì chūn qiū zhàn guó, bǎi jiā zhēng míng shí qī.",
+          "english": "Debate is unavoidable, after all, people's viewpoints differ greatly. The most creative era in Chinese history was the Spring and Autumn and Warring States periods, a time of intellectual ferment among a hundred schools of thought!"
         },
         {
           "speaker": "A",
-          "chinese": "但有时候争论不休，双方都不愿意让步，这有什么意义呢？",
-          "pinyin": "Dàn yǒu shí hòu zhēng lùn bù xiū, shuāng fāng dōu bú yuàn yì ràng bù, zhè yǒu shén me yì yì ne?",
-          "english": "But sometimes people argue endlessly, and neither side is willing to give ground — what is the point of that?"
+          "chinese": "但有时候争论不休，双方各抒已见，都不愿意让步，这有什么意义呢？",
+          "pinyin": "Dàn yǒu shí hòu zhēng lùn bù xiū, shuāng fāng shuāng fāng gè shū yǐ jiàn, dōu bú yuàn yì ràng bù, zhè yǒu shén me yì yì ne?",
+          "english": "But sometimes people argue endlessly, both sides expressed their opinions, neither side is willing to give ground — what is the point of that?"
         },
         {
           "speaker": "B",
@@ -544,8 +598,8 @@
       "title": "Changing My Mind",
       "title_chinese": "改变了想法",
       "speakers": {
-        "A": { "name": "但丁", "role": "philosopher", "gender": "male" },
-        "B": { "name": "加缪", "role": "writer", "gender": "male" }
+        "A": { "name": "但丁", "role": "哲学家", "gender": "male" },
+        "B": { "name": "加缪", "role": "哲学作家", "gender": "male" }
       },
       "lines": [
         {
@@ -556,9 +610,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "有过。起初我坚持认为个人自由比集体利益更重要，但对方的论点让我逐渐动摇了。",
-          "pinyin": "Yǒu guò. Qǐ chū wǒ jiān chí rèn wéi gè rén zì yóu bǐ jí tǐ lì yì gèng zhòng yào, dàn duì fāng de lùn diǎn ràng wǒ zhú jiàn dòng yáo le.",
-          "english": "Yes. At first I firmly believed that individual freedom was more important than collective interests, but the other side's arguments gradually made me waver."
+          "chinese": "有过。起初我坚持认为世界很荒诞，冷漠，不值得反抗，但对方的论点让我逐渐动摇了。",
+          "pinyin": "Yǒu guò. Qǐ chū wǒ jiān chí rèn wéi shì jiè hěn huāng dàn, lěng mò, bù zhídé fǎnkàng, dàn duì fāng de lùn diǎn ràng wǒ zhú jiàn dòng yáo le.",
+          "english": "Yes. At first I insisted that the world was absurd, indifferent, and not worth resisting, but the other side's arguments gradually made me waver."
         },
         {
           "speaker": "A",
@@ -568,21 +622,21 @@
         },
         {
           "speaker": "B",
-          "chinese": "承认了。我意识到，接受新的观点并不代表软弱，而是一种成长。",
-          "pinyin": "Chéng rèn le. Wǒ yì shí dào, jiē shòu xīn de guān diǎn bìng bù dài biǎo ruǎn ruò, ér shì yì zhǒng chéng zhǎng.",
-          "english": "I did. I realized that accepting new viewpoints does not represent weakness, but rather a form of growth."
+          "chinese": "承认了。我意识到，接受新的观点并不代表软弱，而是一种成长。所以我写出了《反抗者》。",
+          "pinyin": "Chéng rèn le. Wǒ yì shí dào, jiē shòu xīn de guān diǎn bìng bù dài biǎo ruǎn ruò, ér shì yì zhǒng chéng zhǎng. Suǒ yǐ wǒ xiě chū le fǎn kàng zhě",
+          "english": "I did. I realized that accepting new viewpoints does not represent weakness, but rather a form of growth. That's why I wrote <The Rebel>."
         },
         {
           "speaker": "A",
-          "chinese": "所以是对方说服了你，还是你自己逐渐想通了？",
-          "pinyin": "Suǒ yǐ shì duì fāng shuō fú le nǐ, hái shì nǐ zì jǐ zhú jiàn xiǎng tōng le?",
-          "english": "So was it the other side that persuaded you, or did you gradually work it out yourself?"
+          "chinese": "所以你说面对荒诞的命运，不应逃避，而应清醒地反抗。是对方说服了你，还是你自己逐渐想通了？",
+          "pinyin": "Suǒ yǐ suǒ yǐ nǐ shuō miàn duì huāng dàn de mìng yùn, bù yīng táo bì, ér yīng qīng xǐng de fǎn kàng. Shì duì fāng shuō fú le nǐ, hái shì nǐ zì jǐ zhú jiàn xiǎng tōng le?",
+          "english": "Therefore, you say that when faced with an absurd fate, one should not run away, but rather soberly resist it. Was it the other side that persuaded you, or did you gradually work it out yourself?"
         },
         {
           "speaker": "B",
-          "chinese": "两者都有。被说服的过程，其实就是思维逐渐拓展的过程。",
-          "pinyin": "Liǎng zhě dōu yǒu. Bèi shuō fú de guò chéng, qí shí jiù shì sī wéi zhú jiàn tuò zhǎn de guò chéng.",
-          "english": "Both. The process of being persuaded is, in essence, the process of one's thinking gradually expanding."
+          "chinese": "两者都有。被说服的过程，写作思辨的过程，其实就是思维逐渐拓展的过程。",
+          "pinyin": "Liǎng zhě dōu yǒu. Bèi shuō fú de guò chéng, xiě zuò sī biàn de guò chéng, qí shí jiù shì sī wéi zhú jiàn tuò zhǎn de guò chéng.",
+          "english": "Both. The process of being persuaded is, the process of writing and critical thinking is actually a process of gradually expanding one's thinking."
         }
       ]
     }

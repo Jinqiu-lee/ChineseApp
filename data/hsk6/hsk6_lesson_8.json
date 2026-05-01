@@ -142,6 +142,15 @@
       "translation": "When feeling tired, one should rest promptly and not force oneself to keep going."
     },
     {
+      "id": "hsk6_l8_16",
+      "chinese": "精神",
+      "pinyin": "jīng shén",
+      "english": "Mental energy; spirit; vitality; vigor",
+      "part_of_speech": "noun/adj",
+      "example": "早晨自然醒来，精神状态往往比被闹钟惊醒好得多。",
+      "translation": "Waking up naturally in the morning, one's mental state tends to be much better than being startled awake by an alarm."
+    },
+    {
       "id": "hsk6_l8_p01",
       "chinese": "改善睡眠质量",
       "pinyin": "gǎi shàn shuì mián zhì liàng",
@@ -171,9 +180,16 @@
     },
     {
       "id": "hsk6_l8_p05",
-      "chinese": "建议使用",
-      "pinyin": "jiàn yì shǐ yòng",
-      "english": "To recommend using",
+      "chinese": "因人而异",
+      "pinyin": "yīn rén ér yì",
+      "english": "To vary from person to person; different for everyone",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l8_p06",
+      "chinese": "适得其反",
+      "pinyin": "shì dé qí fǎn",
+      "english": "To achieve the opposite of the desired effect; to backfire; counterproductive",
       "part_of_speech": "phrase"
     }
   ],
@@ -434,23 +450,11 @@
   ],
   "quiz": [
     {
-      "question": "What does 依赖 mean?",
+      "question": "光照闹钟的效果_____，有些人觉得帮助很大，有些人则改变不明显。",
       "type": "multiple_choice",
-      "correct": "To depend on; to rely on",
-      "options": [
-        "To depend on; to rely on",
-        "To improve; to make better",
-        "To replace; to substitute",
-        "To stimulate"
-      ],
-      "word_hints": {"依赖": "yī lài"}
-    },
-    {
-      "question": "Which word means 'quality'?",
-      "type": "multiple_choice",
-      "correct": "质量",
-      "options": ["压力", "质量", "光线", "方式"],
-      "word_hints": {"压力": "yā lì", "质量": "zhì liàng", "光线": "guāng xiàn", "方式": "fāng shì"}
+      "correct": "因人而异",
+      "options": ["因人而异", "适得其反", "逐步调整", "改善质量"],
+      "word_hints": {"光照": "guāng zhào"}
     },
     {
       "question": "Choose the correct use of 反而.",
@@ -465,6 +469,58 @@
       "word_hints": {}
     },
     {
+      "question": "早上被闹钟惊醒的人，往往比自然醒来的人_____更差。",
+      "type": "multiple_choice",
+      "correct": "精神",
+      "options": ["精神", "质量", "压力", "方式"],
+      "word_hints": {"惊醒": "jīng xǐng"}
+    },
+    {
+      "question": "What does 依赖 mean?",
+      "type": "multiple_choice",
+      "correct": "To depend on; to rely on",
+      "options": [
+        "To depend on; to rely on",
+        "To improve; to make better",
+        "To replace; to substitute",
+        "To stimulate"
+      ],
+      "word_hints": {"依赖": "yī lài"}
+    },
+    {
+      "question": "What does the phrase 适得其反 mean?",
+      "type": "multiple_choice",
+      "correct": "To achieve the opposite of what was intended; to backfire",
+      "options": [
+        "To achieve the opposite of what was intended; to backfire",
+        "To improve gradually, step by step",
+        "To depend on external support",
+        "To reach the goal on time"
+      ],
+      "word_hints": {"适得其反": "shì dé qí fǎn"}
+    },
+    {
+      "question": "Which word means 'quality'?",
+      "type": "multiple_choice",
+      "correct": "质量",
+      "options": ["压力", "质量", "光线", "方式"],
+      "word_hints": {"压力": "yā lì", "质量": "zhì liàng", "光线": "guāng xiàn", "方式": "fāng shì"}
+    },
+    {
+      "question": "_____ 依赖闹钟，不如培养自然醒来的习惯。",
+      "type": "multiple_choice",
+      "correct": "与其",
+      "options": ["与其", "既然", "由于", "虽然"],
+      "word_hints": {"依赖": "yī lài", "培养": "péi yǎng"}
+    },
+    {
+      "question": "改变睡眠习惯如果太急于求成，反而会_____，让睡眠质量更差。",
+      "type": "multiple_choice",
+      "correct": "适得其反",
+      "options": ["适得其反", "逐步调整", "及时改善", "因人而异"],
+      "word_hints": {"急于求成": "jí yú qiú chéng"}
+    },
+    {
       "question": "What does 及时 mean?",
       "type": "multiple_choice",
       "correct": "Timely; promptly; in time",
@@ -475,13 +531,6 @@
         "To replace; substitute"
       ],
       "word_hints": {"及时": "jí shí"}
-    },
-    {
-      "question": "_____ 依赖闹钟，不如培养自然醒来的习惯。",
-      "type": "multiple_choice",
-      "correct": "与其",
-      "options": ["与其", "既然", "由于", "虽然"],
-      "word_hints": {"依赖": "yī lài", "培养": "péi yǎng"}
     },
     {
       "question": "Which sentence correctly uses 逐步?",
@@ -561,9 +610,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "首先要明白，改变习惯需要逐步来，不能操之过急，否则反而会有压力。",
-          "pinyin": "Shǒu xiān yào míng bái, gǎi biàn xí guàn xū yào zhú bù lái, bù néng cāo zhī guò jí, fǒu zé fǎn ér huì yǒu yā lì.",
-          "english": "First you need to understand that changing habits must be done step by step — don't rush it, otherwise it will on the contrary create pressure."
+          "chinese": "首先要明白，改变习惯需要逐步来，不能操之过急，否则可能会适得其反。",
+          "pinyin": "Shǒu xiān yào míng bái, gǎi biàn xí guàn xū yào zhú bù lái, bù néng cāo zhī guò jí, fǒu zé kě néng huì shì dé qí fǎn.",
+          "english": "First you need to understand that changing habits must be done step by step — don't rush it, otherwise it may backfire."
         },
         {
           "speaker": "B",
@@ -585,8 +634,8 @@
         },
         {
           "speaker": "A",
-          "chinese": "效果因人而异，但很多人用了之后，及时感受到了改善，早上醒来感觉质量好多了。",
-          "pinyin": "Xiào guǒ yīn rén ér yì, dàn hěn duō rén yòng le zhī hòu, jí shí gǎn shòu dào le gǎi shàn, zǎo shàng xǐng lái gǎn jué zhì liàng hǎo duō le.",
+          "chinese": "效果因人而异，但很多人用了之后，及时得到了改善，早上醒来感觉精神好多了。",
+          "pinyin": "Xiào guǒ yīn rén ér yì, dàn hěn duō rén yòng le zhī hòu, jí shí dé dào le gǎi shàn, zǎo shàng xǐng lái gǎn jué jīng shén hǎo duō le.",
           "english": "Results vary from person to person, but many people felt improvement promptly after using one, and woke up feeling much better in the morning."
         }
       ]

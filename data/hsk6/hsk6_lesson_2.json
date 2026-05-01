@@ -189,9 +189,9 @@
   ],
   "key_sentences": [
     {
-      "chinese": "她原来以为浪漫是惊天动地的，但原来爱是藏在那些细小的关心里。",
-      "pinyin": "Tā yuánlái yǐwéi làngmàn shì jīngtiāndòngdì de, dàn yuánlái ài shì cáng zài nàxiē xì xiǎo de guānxīn lǐ.",
-      "english": "She originally thought romance was earth-shattering, but as it turns out, love is hidden in those small acts of care."
+      "chinese": "她原来以为浪漫是惊天动地的，但其实爱是藏在那些细小的关心里。",
+      "pinyin": "Tā yuánlái yǐwéi làngmàn shì jīngtiāndòngdì de, dàn qí shí ài shì cáng zài nàxiē xì xiǎo de guānxīn lǐ.",
+      "english": "She originally thought romance was earth-shattering, but actually love is hidden in those small acts of care."
     },
     {
       "chinese": "他们不知不觉地靠在一起，沉默着，却感到无比温暖。",
@@ -204,8 +204,8 @@
       "english": "True companionship actually doesn't require many words — a natural glance is enough."
     },
     {
-      "chinese": "她竟然没有注意到，他每次她心情不好时都会悄悄出现。",
-      "pinyin": "Tā jìng rán méiyǒu zhùyì dào, tā měi cì tā xīnqíng bù hǎo shí dōu huì qiāoqiāo chūxiàn.",
+      "chinese": "她竟然没有注意到，每次她心情不好时，他都会悄悄出现。",
+      "pinyin": "Tā jìng rán méiyǒu zhùyì dào, měi cì tā xīnqíng bù hǎo shí, tā dōu huì qiāoqiāo chūxiàn.",
       "english": "She had actually never noticed that he would quietly appear every time her mood was low."
     },
     {
@@ -285,9 +285,9 @@
       "explanation": "倒是 is an adverb used to note that something is contrary to expectations, or to add a contrasting observation. It often introduces a nuanced or surprising truth, and can soften a contradiction. Structure: Subject + 倒是 + [unexpected or contrasting statement]. It can also be used to express concession: 他话不多，倒是很体贴。(He doesn't say much, but he is actually quite thoughtful.) It can express mild irony or pleasant surprise. Another example: 我以为他会生气，他倒是笑了。(I thought he would be angry — he actually laughed.) Compare with 但是: 倒是 is more nuanced and conversational.",
       "examples": [
         {
-          "chinese": "她不喜欢收花，倒是很喜欢他给她做的一顿便饭。",
-          "pinyin": "Tā bù xǐhuān shōu huā, dào shì hěn xǐhuān tā gěi tā zuò de yī dùn biànfàn.",
-          "english": "She doesn't like receiving flowers — she actually loves the simple meal he cooks for her."
+          "chinese": "她不喜欢收花，倒是很喜欢他给她做的饭。",
+          "pinyin": "Tā bù xǐhuān shōu huā, dào shì hěn xǐhuān tā gěi tā zuò de fàn.",
+          "english": "She doesn't like receiving flowers — she actually loves the meal he cooks for her."
         },
         {
           "chinese": "他沉默寡言，倒是在最关键的时候总说出最正确的话。",
@@ -356,7 +356,7 @@
       ],
       "exercises": [
         {
-          "question": "他们坐在河边聊天，____ 夜幕降临了。",
+          "question": "他们坐在河边聊天，____ ，夜幕降临了。",
           "type": "multiple_choice",
           "correct": "不知不觉",
           "options": ["居然", "不知不觉", "原来", "偶尔"],
@@ -462,8 +462,8 @@
       "title": "A Comfortable Silence",
       "title_chinese": "舒适的沉默",
       "speakers": {
-        "A": { "name": "爱玲", "role": "friend", "gender": "female" },
-        "B": { "name": "兰特", "role": "friend", "gender": "female" }
+        "A": { "name": "爱玲", "role": "朋友", "gender": "female" },
+        "B": { "name": "兰特", "role": "朋友", "gender": "female" }
       },
       "lines": [
         {
@@ -492,8 +492,8 @@
         },
         {
           "speaker": "B",
-          "chinese": "对啊，不知不觉地，那种平静就成了你们关系最温柔的部分。",
-          "pinyin": "Duì a, bù zhī bù jué de, nà zhǒng píng jìng jiù chéng le nǐmen guānxi zuì wēnróu de bùfen.",
+          "chinese": "对啊，不知不觉中，那种平静就成了你们关系最温柔的部分。",
+          "pinyin": "Duì a, bù zhī bù jué zhōng, nà zhǒng píng jìng jiù chéng le nǐmen guānxi zuì wēnróu de bùfen.",
           "english": "Exactly — without realizing it, that sense of calm becomes the most tender part of your relationship."
         },
         {
@@ -509,8 +509,8 @@
       "title": "What Does 'Romantic' Mean?",
       "title_chinese": "\"浪漫\"是什么意思",
       "speakers": {
-        "A": { "name": "爱玲", "role": "friend", "gender": "female" },
-        "B": { "name": "奥斯汀", "role": "friend", "gender": "female" }
+        "A": { "name": "爱玲", "role": "朋友", "gender": "female" },
+        "B": { "name": "奥斯汀", "role": "朋友", "gender": "female" }
       },
       "lines": [
         {
@@ -521,9 +521,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "你说的那些倒是很美，但我觉得浪漫更多是在细节里。",
-          "pinyin": "Nǐ shuō de nàxiē dào shì hěn měi, dàn wǒ juéde làngmàn gèngduō shì zài xì jié lǐ.",
-          "english": "What you describe is actually very beautiful, but I think romance lives more in the details."
+          "chinese": "你说的那些是很美，但我觉得浪漫更多是在细节里。",
+          "pinyin": "Nǐ shuō de nàxiē shì hěn měi, dàn wǒ juéde làngmàn gèngduō shì zài xì jié lǐ.",
+          "english": "What you describe is very beautiful, but I think romance lives more in the details."
         },
         {
           "speaker": "B",
@@ -539,14 +539,14 @@
         },
         {
           "speaker": "B",
-          "chinese": "哈，这个例子倒是很接地气。不过我觉得两者都重要 —— 平时真诚体贴，偶尔也要浪漫一下。",
-          "pinyin": "Hā, zhège lìzi dào shì hěn jiē dì qì. Búguò wǒ juéde liǎng zhě dōu zhòngyào — píngshí zhēnchéng tǐtiē, ǒu ěr yě yào làngmàn yīxià.",
+          "chinese": "哈，这个例子倒是很接地气。不过我觉得两者都重要 —— 平时真诚体贴，偶尔浪漫一下。",
+          "pinyin": "Hā, zhège lìzi dào shì hěn jiē dì qì. Búguò wǒ juéde liǎng zhě dōu zhòngyào — píngshí zhēnchéng tǐtiē, ǒu ěr làngmàn yīxià.",
           "english": "Ha, that example is actually very down-to-earth. But I think both matter — sincere and thoughtful day-to-day, with a romantic gesture now and then."
         },
         {
           "speaker": "A",
-          "chinese": "说得也对！浪漫和真诚，倒是不矛盾 —— 只要是用心的，都算是爱的语言。",
-          "pinyin": "Shuō de yě duì! Làngmàn hé zhēnchéng, dào shì bù máodùn — zhǐyào shì yòng xīn de, dōu suàn shì ài de yǔyán.",
+          "chinese": "说得也对！浪漫和真诚，倒是不矛盾 —— 只要是用心的，都是爱的语言。",
+          "pinyin": "Shuō de yě duì! Làngmàn hé zhēnchéng, dào shì bù máodùn — zhǐyào shì yòng xīn de, dōu shì ài de yǔyán.",
           "english": "That's fair! Romance and sincerity are actually not contradictory — as long as it comes from the heart, it all counts as the language of love."
         }
       ]
