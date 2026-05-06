@@ -46,10 +46,10 @@ export default function PinyinLessonScreen({
   const STAGE_COLORS = ['#296614', '#f99e27', '#943012', '#03396c'];
 
   const stages = [
-    { index: 0, title: 'Stage 1 · Listen & Identify', desc: 'Hear audio → pick tone, initial, or final',      icon: '🔊' },
-    { index: 1, title: 'Stage 2 · Read & Repeat',     desc: 'See the syllable, listen and repeat aloud',      icon: '🗣️' },
-    { index: 2, title: 'Stage 3 · Visual Spelling',   desc: 'See written syllable → identify tone/parts',     icon: '✏️' },
-    { index: 3, title: 'Stage 4 · Listen & Speak',    desc: 'Hear the audio, record yourself saying it back', icon: '🎙️' },
+    { index: 0, title: 'Stage 1 · Listen & Identify', desc: 'Hear audio → pick tone, initial, or final',            icon: '🔊' },
+    { index: 1, title: 'Stage 2 · Listen & Repeat',   desc: 'Listen to the syllable, then record yourself saying it', icon: '🎙️' },
+    { index: 2, title: 'Stage 3 · Visual Spelling',   desc: 'See written syllable → identify tone/parts',            icon: '✏️' },
+    { index: 3, title: 'Stage 4 · Read & Speak',      desc: 'See the words and record yourself saying them',         icon: '🗣️' },
   ];
 
   const allStagesDone = stageProgress.length >= 4;

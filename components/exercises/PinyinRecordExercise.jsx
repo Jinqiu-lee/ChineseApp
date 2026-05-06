@@ -10,7 +10,7 @@ import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ER
 
 const PASS_ACCURACY = 70;
 
-export default function PinyinRecordExercise({ exercise, onCorrect, onWrong }) {
+export default function PinyinRecordExercise({ exercise, onCorrect, onWrong, noAutoPlay = false }) {
   const { type, syllable, audio_key, chinese, meaning } = exercise;
 
   const [recording,    setRecording]    = useState(null);
@@ -19,9 +19,9 @@ export default function PinyinRecordExercise({ exercise, onCorrect, onWrong }) {
   const [result,       setResult]       = useState(null); // { accuracy, transcribed, passed }
   const [answered,     setAnswered]     = useState(false);
 
-  // Auto-play audio for listen_record exercises
+  // Auto-play audio for listen_record exercises (unless disabled)
   useEffect(() => {
-    if (type === 'listen_record') {
+    if (!noAutoPlay && type === 'listen_record') {
       const key = audio_key || syllable;
       if (key) speakPinyin(key);
     }

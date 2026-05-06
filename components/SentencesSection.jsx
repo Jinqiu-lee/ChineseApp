@@ -1,21 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, FlatList } from 'react-native';
 import { speakAsAvatar } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
-/**
- * SentencesSection Component - DEFAULT EXPORT
- */
 function SentencesSection({ sentences, avatarId = 'eileen' }) {
+  const [showPinyin, setShowPinyin] = useState(false);
+
   const renderSentence = ({ item, index }) => (
     <View style={styles.sentenceCard}>
       <View style={styles.sentenceNumber}>
         <Text style={styles.sentenceNumberText}>{index + 1}</Text>
       </View>
-      
+
       <View style={styles.sentenceContent}>
         <Text style={styles.sentenceChinese}>{item.chinese}</Text>
-        <Text style={styles.sentencePinyin}>{item.pinyin}</Text>
+        {showPinyin && <Text style={styles.sentencePinyin}>{item.pinyin}</Text>}
         <Text style={styles.sentenceEnglish}>"{item.english}"</Text>
       </View>
 
@@ -32,9 +31,20 @@ function SentencesSection({ sentences, avatarId = 'eileen' }) {
     <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>💬 Key Sentences</Text>
-        <Text style={styles.count}>{sentences.length}</Text>
+        <View style={styles.headerRight}>
+          <TouchableOpacity
+            style={[styles.pinyinToggle, showPinyin && styles.pinyinToggleActive]}
+            onPress={() => setShowPinyin(p => !p)}
+            activeOpacity={0.8}
+          >
+            <Text style={[styles.pinyinToggleText, showPinyin && styles.pinyinToggleTextActive]}>
+              {showPinyin ? 'Hide Pinyin' : 'Show Pinyin'}
+            </Text>
+          </TouchableOpacity>
+          <Text style={styles.count}>{sentences.length}</Text>
+        </View>
       </View>
-      
+
       <FlatList
         data={sentences}
         renderItem={renderSentence}
@@ -56,8 +66,13 @@ const VG = {
 const styles = StyleSheet.create({
   container: { marginBottom: 24 },
   header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 },
+  headerRight: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   title: { fontSize: 20, fontWeight: '800', color: VG.cream },
   count: { fontSize: 14, fontWeight: '600', color: SLATE_TEAL, backgroundColor: 'rgba(55,73,80,0.14)', paddingHorizontal: 10, paddingVertical: 4, borderRadius: 8 },
+  pinyinToggle: { paddingHorizontal: 10, paddingVertical: 4, borderRadius: 8, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.5)', backgroundColor: 'rgba(155,104,70,0.5)' },
+  pinyinToggleActive: { backgroundColor: VG.gold, borderColor: VG.gold },
+  pinyinToggleText: { fontSize: 13, fontWeight: '600', color: CARD_WHITE },
+  pinyinToggleTextActive: { color: CARD_WHITE },
   list: { gap: 12 },
   sentenceCard: { flexDirection: 'row', alignItems: 'flex-start', backgroundColor: VG.cardDark, borderRadius: 16, padding: 16, borderWidth: 1, borderColor: VG.border, gap: 12 },
   sentenceNumber: { width: 32, height: 32, borderRadius: 16, backgroundColor: WARM_BROWN, alignItems: 'center', justifyContent: 'center' },

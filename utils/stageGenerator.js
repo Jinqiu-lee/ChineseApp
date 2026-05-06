@@ -821,6 +821,19 @@ function extractQAPairs(lessonData) {
   return pairs;
 }
 
+// ── Grammar / Culture content extractors ─────────────────────────────────
+function extractGrammarSentences(lessonData) {
+  return (lessonData.grammar_points || [])
+    .flatMap(g => g.examples || [])
+    .filter(e => e?.chinese);
+}
+
+function extractIdiomItems(lessonData) {
+  return (lessonData.culture_notes || [])
+    .flatMap(n => n.idioms || [])
+    .filter(i => i?.chinese);
+}
+
 // ── Stage builder helpers ────────────────────────────────────────────────
 function fallbackAudio(i, vocab) {
   return makeAudioChoice(vocab[i % vocab.length], vocab);
@@ -848,51 +861,71 @@ function s(sentences, i) { return sentences[i % sentences.length]; }
 function p(pool, i) { return pool[i % pool.length]; }
 
 // ── Round 1 – Learn: recognition & introduction ──────────────────────────
-function buildLearnRound(vocab, sentences, pool, L) {
+// Stage 1 & 2: vocabulary + images only (no sentences, no speaking)
+// Stage 3-5:   sentences + grammar sentences + vocabulary mixed
+function buildLearnRound(vocab, sentences, gramSentences, pool, L) {
+  // Combined sentence pool for stages 3-5 (key sentences + grammar examples)
+  const allSent = shuffle([...sentences, ...gramSentences]).filter(Boolean);
+  const sentFill = (i) => allSent.length > 0
+    ? fillOrFallback(allSent[i % allSent.length], i, vocab)
+    : fallbackAudio(i, vocab);
+  const sentArr = (i) => allSent.length > 0
+    ? arrangeOrFallback(allSent[i % allSent.length], i, vocab)
+    : fallbackAudio(i, vocab);
+
+  // Stage 1: First Look — flashcards + images + audio + match (vocab only)
   const s1 = [
     makeFlashcard(v(vocab, 0)),
     makeFlashcard(v(vocab, 1)),
     makeFlashcard(v(vocab, 2)),
-    makeImageToWord(v(vocab, 0), vocab, L, 0),   // 🖼️ picture → word
+    makeFlashcard(v(vocab, 3)),
+    makeImageToWord(v(vocab, 0), vocab, L, 0),
     makeImageToWord(v(vocab, 1), vocab, L, 0),
     makeImageToWord(v(vocab, 2), vocab, L, 0),
+    makeAudioChoice(v(vocab, 4), vocab),
     makeAudioChoice(v(vocab, 5), vocab),
-    makeAudioChoice(v(vocab, 6), vocab),
-    makeMatchPairs(shuffle([...vocab])),
     makeMatchPairs(shuffle([...vocab])),
   ];
+  // Stage 2: Listen & Choose — audio + listen-to-image + match (vocab only)
   const s2 = [
-    ...Array.from({ length: 3 }, (_, i) => makeAudioChoice(v(vocab, i), vocab)),
-    makeListenToImage(v(vocab, 3), vocab, L, 0),  // 🔊 listen → picture
+    makeAudioChoice(v(vocab, 0), vocab),
+    makeAudioChoice(v(vocab, 1), vocab),
+    makeAudioChoice(v(vocab, 2), vocab),
+    makeListenToImage(v(vocab, 3), vocab, L, 0),
     makeListenToImage(v(vocab, 4), vocab, L, 0),
     makeListenToImage(v(vocab, 5), vocab, L, 0),
-    ...Array.from({ length: 2 }, (_, i) => fillOrFallback(s(sentences, i), i + 5, vocab)),
-    makeSpeakRepeat(p(pool, 0)),
-    makeSpeakRepeat(p(pool, 1)),
+    makeAudioChoice(v(vocab, 6), vocab),
+    makeAudioChoice(v(vocab, 7), vocab),
+    makeMatchPairs(shuffle([...vocab])),
+    makeMatchPairs(shuffle([...vocab])),
   ];
+  // Stage 3: Build Sentences — sentences + grammar + vocab
   const s3 = [
-    makeImageToWord(v(vocab, 3), vocab, L, 1),   // different image variant
+    makeImageToWord(v(vocab, 3), vocab, L, 1),
     makeImageToWord(v(vocab, 4), vocab, L, 1),
-    ...Array.from({ length: 3 }, (_, i) => arrangeOrFallback(s(sentences, i), i, vocab)),
-    ...Array.from({ length: 3 }, (_, i) => fillOrFallback(s(sentences, i + 1), i + 4, vocab)),
+    sentArr(0), sentArr(1), sentArr(2),
+    sentFill(1), sentFill(2), sentFill(3),
     makeSpeakTranslate(p(pool, 2)),
     makeSpeakTranslate(p(pool, 3)),
   ];
+  // Stage 4: Match & Review — match + audio + sentences + speak
   const s4 = [
-    ...Array.from({ length: 4 }, (_, i) =>
+    ...Array.from({ length: 3 }, (_, i) =>
       makeMatchPairs(Array.from({ length: 4 }, (_, j) => v(vocab, i * 4 + j)))),
-    makeListenToImage(v(vocab, 6), vocab, L, 0),  // 🔊 listen → picture
+    makeListenToImage(v(vocab, 6), vocab, L, 0),
     makeListenToImage(v(vocab, 7), vocab, L, 0),
-    ...Array.from({ length: 2 }, (_, i) => makeAudioChoice(v(vocab, i + 7), vocab)),
+    sentFill(4), sentFill(5),
+    makeAudioChoice(v(vocab, 8), vocab),
     makeSpeakRepeat(p(pool, 4)),
     makeSpeakRepeat(p(pool, 5)),
   ];
+  // Stage 5: Final Challenge — full mix with sentences + grammar
   const s5 = [
     makeImageToWord(v(vocab, 5), vocab, L, 2),
     makeImageToWord(v(vocab, 6), vocab, L, 2),
     makeAudioChoice(v(vocab, 10), vocab),
-    fillOrFallback(s(sentences, 4), 4, vocab),
-    arrangeOrFallback(s(sentences, 0), 5, vocab),
+    sentFill(6),
+    sentArr(3),
     makeMatchPairs(shuffle([...vocab])),
     makeSpeakRepeat(p(pool, 6)),
     makeSpeakRepeat(p(pool, 7)),
@@ -1051,21 +1084,27 @@ export function generateQuizRound(lessonData) {
 export function generateRounds(lessonData) {
   const vocab = lessonData.vocabulary || [];
   const sentences = (lessonData.key_sentences || []).filter(s => s?.chinese);
+  const gramSentences = extractGrammarSentences(lessonData);
+  const idiomItems = extractIdiomItems(lessonData);
   const pool = buildSpeakPool(vocab, sentences);
   const qaPairs = extractQAPairs(lessonData);
   const L = lessonData.lesson || 5; // lesson number for image lookup
   const hskLevel = getHskLevel(lessonData);
 
+  // Extended content for Rounds 2 & 3: mix sentences + grammar + idioms
+  const extSentences = shuffle([...sentences, ...gramSentences]).filter(Boolean);
+  const extPool = buildSpeakPool([...vocab], [...sentences, ...gramSentences, ...idiomItems]);
+
   // Helper: pick a Q&A respond exercise, fall back to speak_repeat if none available
   const respondOrFallback = (i) =>
     qaPairs.length > 0
       ? makeSpeakRespond(qaPairs[i % qaPairs.length], hskLevel)
-      : makeSpeakRepeat(p(pool, i));
+      : makeSpeakRepeat(p(extPool, i));
 
   const rounds = [
-    buildLearnRound(vocab, sentences, pool, L),
-    buildPracticeRound(vocab, sentences, pool, respondOrFallback, L),
-    buildMasteryRound(vocab, sentences, pool, respondOrFallback, L),
+    buildLearnRound(vocab, sentences, gramSentences, pool, L),
+    buildPracticeRound(vocab, extSentences.length > 0 ? extSentences : sentences, extPool, respondOrFallback, L),
+    buildMasteryRound(vocab, extSentences.length > 0 ? extSentences : sentences, extPool, respondOrFallback, L),
   ];
 
   // Inject pinyin exercises: 1 into stage 2 (Listen & Choose) + 1 into stage 5 (Final Challenge)

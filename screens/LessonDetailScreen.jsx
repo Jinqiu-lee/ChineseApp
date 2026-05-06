@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import VocabularySection from '../components/VocabularySection';
@@ -11,6 +11,7 @@ import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR } from '../constants/colors';
 import { stopAudio } from '../utils/tts';
+import SentencesSection from '../components/SentencesSection';
 
 import lesson1 from '../data/hsk1/hsk1_lesson_1.json';
 import lesson2 from '../data/hsk1/hsk1_lesson_2.json';
@@ -175,6 +176,9 @@ export default function LessonDetailScreen({
   r2Done = false,
   lessonQuizPassed = false,
   lessonCompleted = false,
+  round1Done = false,
+  sectionDone = {},
+  onSectionComplete,
   onBack,
   onLessonComplete,
   onTakeQuiz,
@@ -186,11 +190,63 @@ export default function LessonDetailScreen({
   const lesson = levelMap[lessonId];
   const avatarId = lesson ? getAvatarForLesson(levelId, lesson.lesson, lesson.topic, lesson.topic_chinese) : 'eileen';
   const [openSection, setOpenSection] = useState(null); // 'words' | 'sentences' | 'grammar' | null
+  const [activeTab, setActiveTab] = useState('learning');
+  const [toast, setToast] = useState(null);
+  const [highlightPhase2, setHighlightPhase2] = useState(false);
+
+  // Refs: scroll target + one-shot nav guards (initialized to skip if already satisfied)
+  const scrollRef      = useRef(null);
+  const dialogueCardY  = useRef(0);
+  const phase1NavDone  = useRef(!!(sectionDone?.newwords && sectionDone?.sentences && sectionDone?.grammar));
+  const stage12NavDone = useRef(stageProgress.includes(0) && stageProgress.includes(1));
 
   // Stop any playing audio when this screen unmounts
   useEffect(() => { return () => { stopAudio(); }; }, []);
 
+  // Auto-navigate to Practice when all Phase 1 sections (New Words, Grammar, Sentences) are visited
+  useEffect(() => {
+    if (phase1NavDone.current) return;
+    if (!(sectionDone?.newwords && sectionDone?.sentences && sectionDone?.grammar)) return;
+    if (sectionDone?.dialogue || sectionDone?.culture) return; // already reached Phase 2
+    phase1NavDone.current = true;
+    const t1 = setTimeout(() => {
+      setToast("Great job! Time to practice what you've learned 🎯");
+      switchTab('practice');
+    }, 800);
+    const t2 = setTimeout(() => setToast(null), 3600);
+    return () => { clearTimeout(t1); clearTimeout(t2); };
+  }, [sectionDone?.newwords, sectionDone?.sentences, sectionDone?.grammar]);
+
+  // Auto-navigate back to Learning (Phase 2) after completing Round 1 Stages 1 & 2
+  useEffect(() => {
+    if (stage12NavDone.current) return;
+    if (currentRound !== 1) return;
+    if (!stageProgress.includes(0) || !stageProgress.includes(1)) return;
+    if (sectionDone?.dialogue || sectionDone?.culture) return; // Phase 2 already visited
+    stage12NavDone.current = true;
+    const t1 = setTimeout(() => {
+      setToast("Now explore Dialogue and Idioms & Culture 📖");
+      switchTab('learning');
+      setHighlightPhase2(true);
+      setTimeout(() => {
+        if (scrollRef.current && dialogueCardY.current > 0) {
+          scrollRef.current.scrollTo({ y: dialogueCardY.current - 20, animated: true });
+        }
+      }, 300);
+    }, 800);
+    const t2 = setTimeout(() => setToast(null), 3800);
+    const t3 = setTimeout(() => setHighlightPhase2(false), 4300);
+    return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); };
+  }, [stageProgress, currentRound]);
+
   const toggleSection = (key) => { stopAudio(); setOpenSection(prev => prev === key ? null : key); };
+  const handleToggleSection = (sectionId) => {
+    toggleSection(sectionId);
+  };
+  const handleSectionDone = (sectionKey) => {
+    if (onSectionComplete) onSectionComplete(sectionKey);
+  };
+  const switchTab = (tab) => { stopAudio(); setOpenSection(null); setActiveTab(tab); };
   const handleBack = () => {
     stopAudio();
     if (openSection !== null) {
@@ -215,7 +271,14 @@ export default function LessonDetailScreen({
     );
   }
 
-  const isUnlocked = (i) => devUnlockAll || i === 0 || stageProgress.includes(i - 1);
+  const isUnlocked = (i) => {
+    if (devUnlockAll) return true;
+    if (currentRound === 1) {
+      if (i === 0 || i === 1) return !!sectionDone?.newwords;
+      return !!(sectionDone?.sentences || sectionDone?.grammar);
+    }
+    return i === 0 || stageProgress.includes(i - 1);
+  };
   const isCompleted = (i) => stageProgress.includes(i);
   const completedCount = stageProgress.length;
 
@@ -234,7 +297,33 @@ export default function LessonDetailScreen({
         <View style={{ width: 60 }} />
       </View>
 
+      {/* Tab bar */}
+      <View style={styles.tabBar}>
+        <TouchableOpacity
+          style={[styles.tabBtn, activeTab === 'learning' && styles.tabBtnActive]}
+          onPress={() => switchTab('learning')}
+          activeOpacity={0.8}
+        >
+          <Text style={[styles.tabBtnText, activeTab === 'learning' && styles.tabBtnTextActive]}>Learning</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.tabBtn, activeTab === 'practice' && styles.tabBtnActive]}
+          onPress={() => switchTab('practice')}
+          activeOpacity={0.8}
+        >
+          <Text style={[styles.tabBtnText, activeTab === 'practice' && styles.tabBtnTextActive]}>Practice</Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Toast banner */}
+      {toast && (
+        <View style={styles.toastBanner}>
+          <Text style={styles.toastText}>{toast}</Text>
+        </View>
+      )}
+
       <ScrollView
+        ref={scrollRef}
         style={styles.scroll}
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}
@@ -247,127 +336,263 @@ export default function LessonDetailScreen({
           <Text style={[styles.topicMeta, { color: T.onCardMuted }]}>{lesson.vocabulary?.length || 0} words · {lesson.dialogues?.length || 0} dialogues</Text>
         </View>
 
-        {/* ─────────────────────────────────────────── */}
-        {/* SECTION 1: LEARNING                        */}
-        {/* ─────────────────────────────────────────── */}
-        <View style={styles.sectionHeader}>
-          <View style={[styles.sectionDot, { backgroundColor: T.gold }]} />
-          <Text style={[styles.sectionTitle, { color: T.onBg }]}>Learning</Text>
-        </View>
+        {activeTab === 'learning' && (<>
 
-        <View style={styles.learnGrid}>
-          <TouchableOpacity
-            style={[styles.learnBtn, openSection === 'words' && styles.learnBtnActive]}
-            onPress={() => toggleSection('words')}
-            activeOpacity={0.8}
-          >
-            <Text style={styles.learnBtnEmoji}>📝</Text>
-            <Text style={[styles.learnBtnLabel, openSection === 'words' && styles.learnBtnLabelActive]}>
-              New Words
-            </Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={[styles.learnBtn, openSection === 'dialogue' && styles.learnBtnActive]}
-            onPress={() => toggleSection('dialogue')}
-            activeOpacity={0.8}
-          >
-            <Text style={styles.learnBtnEmoji}>💬</Text>
-            <Text style={[styles.learnBtnLabel, openSection === 'dialogue' && styles.learnBtnLabelActive]}>
-              Dialogue
-            </Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={[styles.learnBtn, openSection === 'grammar' && styles.learnBtnActive]}
-            onPress={() => toggleSection('grammar')}
-            activeOpacity={0.8}
-          >
-            <Text style={styles.learnBtnEmoji}>📚</Text>
-            <Text style={[styles.learnBtnLabel, openSection === 'grammar' && styles.learnBtnLabelActive]}>
-              Grammar
-            </Text>
-          </TouchableOpacity>
-
-          {levelId === 'hsk1' ? (
-            <TouchableOpacity
-              style={[styles.learnBtn, styles.learnBtnPinyin]}
-              onPress={() => { stopAudio(); onOpenPinyin(); }}
-              activeOpacity={0.8}
-            >
-              <Text style={styles.learnBtnEmoji}>🎵</Text>
-              <Text style={[styles.learnBtnLabel, styles.learnBtnLabelPinyin]}>
-                Pinyin
-              </Text>
-            </TouchableOpacity>
-          ) : levelId === 'hsk4' || levelId === 'hsk5' || levelId === 'hsk6' ? (
-            <TouchableOpacity
-              style={[styles.learnBtn, styles.learnBtnCulture]}
-              onPress={() => toggleSection('culture')}
-              activeOpacity={0.8}
-            >
-              <Text style={styles.learnBtnEmoji}>🏮</Text>
-              <Text style={[styles.learnBtnLabel, openSection === 'culture' && styles.learnBtnLabelActive]}>
-                Idioms & Culture
-              </Text>
-            </TouchableOpacity>
-          ) : (
-            <TouchableOpacity
-              style={[styles.learnBtn, styles.learnBtnCharacters]}
-              onPress={() => Alert.alert('Chinese Characters', 'Chinese Characters learning module coming soon! ✍️')}
-              activeOpacity={0.8}
-            >
-              <Text style={styles.learnBtnEmoji}>✍️</Text>
-              <Text style={[styles.learnBtnLabel, styles.learnBtnLabelCharacters]}>
-                Characters
-              </Text>
-            </TouchableOpacity>
-          )}
-        </View>
-
-        {/* Expanded learning content */}
+        {/* 1. New Words */}
+        <TouchableOpacity
+          style={[styles.stageCard, openSection === 'words' && styles.learnCardActive]}
+          onPress={() => handleToggleSection('words')}
+          activeOpacity={0.8}
+        >
+          <View style={[styles.stageIconBubble, { backgroundColor: '#5E789F' }]}>
+            <Text style={styles.stageIcon}>📝</Text>
+          </View>
+          <View style={styles.stageInfo}>
+            <Text style={styles.stageName}>New Words</Text>
+            <Text style={styles.stageDesc}>Vocabulary · Audio · Pinyin</Text>
+          </View>
+          <View style={styles.stageStatus}>
+            {sectionDone?.newwords ? (
+              <Text style={styles.stageDone}>✅</Text>
+            ) : (
+              <View style={[styles.stageArrow, { backgroundColor: '#5E789F' }]}>
+                <Text style={styles.stageArrowText}>{openSection === 'words' ? '↓' : '→'}</Text>
+              </View>
+            )}
+          </View>
+        </TouchableOpacity>
         {openSection === 'words' && (
           <View style={styles.expandedSection}>
-            <VocabularySection vocabulary={lesson.vocabulary} showPinyin={lesson.show_pinyin !== false} avatarId={avatarId} />
+            <VocabularySection vocabulary={(lesson.vocabulary || []).filter(v => v.part_of_speech !== 'phrase')} showPinyin={lesson.show_pinyin !== false} avatarId={avatarId} />
+            {!sectionDone?.newwords && (
+              <TouchableOpacity style={styles.sectionDoneBtn} onPress={() => handleSectionDone('newwords')} activeOpacity={0.85}>
+                <Text style={styles.sectionDoneBtnText}>✓  I've reviewed New Words</Text>
+              </TouchableOpacity>
+            )}
           </View>
         )}
-        {openSection === 'dialogue' && (
-          <View style={styles.expandedSection}>
-            <DialogueSection dialogues={lesson.dialogues || []} lessonNumber={lesson.lesson} levelId={levelId} avatarId={avatarId} />
+
+        {/* 2. Grammar */}
+        <TouchableOpacity
+          style={[styles.stageCard, openSection === 'grammar' && styles.learnCardActive]}
+          onPress={() => handleToggleSection('grammar')}
+          activeOpacity={0.8}
+        >
+          <View style={[styles.stageIconBubble, { backgroundColor: '#38529D' }]}>
+            <Text style={styles.stageIcon}>📚</Text>
           </View>
-        )}
+          <View style={styles.stageInfo}>
+            <Text style={styles.stageName}>Grammar</Text>
+            <Text style={styles.stageDesc}>Patterns · Usage · Examples</Text>
+          </View>
+          <View style={styles.stageStatus}>
+            {sectionDone?.grammar ? (
+              <Text style={styles.stageDone}>✅</Text>
+            ) : (
+              <View style={[styles.stageArrow, { backgroundColor: '#38529D' }]}>
+                <Text style={styles.stageArrowText}>{openSection === 'grammar' ? '↓' : '→'}</Text>
+              </View>
+            )}
+          </View>
+        </TouchableOpacity>
         {openSection === 'grammar' && (
           <View style={styles.expandedSection}>
             <GrammarSection grammarPoints={lesson.grammar_points} />
-          </View>
-        )}
-        {openSection === 'culture' && (
-          <View style={styles.expandedSection}>
-            {(lesson.culture_notes || []).map((note, noteIdx) => (
-              <View key={note.id ?? noteIdx} style={styles.cultureCard}>
-                <Text style={styles.cultureTitleChinese}>{note.title_chinese}</Text>
-                <Text style={styles.cultureTitle}>{note.title}</Text>
-                <Text style={styles.cultureContent}>{note.content}</Text>
-                {note.idioms?.length > 0 && (
-                  <View style={styles.idiomsBlock}>
-                    <Text style={styles.idiomsHeading}>📜 Key Idioms</Text>
-                    {note.idioms.map((idiom, idx) => (
-                      <View key={idx} style={styles.idiomRow}>
-                        <Text style={styles.idiomChinese}>{idiom.chinese}</Text>
-                        <Text style={styles.idiomPinyin}>{idiom.pinyin}</Text>
-                        <Text style={styles.idiomEnglish}>{idiom.english}</Text>
-                      </View>
-                    ))}
-                  </View>
-                )}
-              </View>
-            ))}
+            {!sectionDone?.grammar && (
+              <TouchableOpacity style={styles.sectionDoneBtn} onPress={() => handleSectionDone('grammar')} activeOpacity={0.85}>
+                <Text style={styles.sectionDoneBtnText}>✓  I've reviewed Grammar</Text>
+              </TouchableOpacity>
+            )}
           </View>
         )}
 
-        {/* ─────────────────────────────────────────── */}
-        {/* SECTION 2: PRACTICE STAGES                 */}
-        {/* ─────────────────────────────────────────── */}
+        {/* 3. Sentences */}
+        <TouchableOpacity
+          style={[styles.stageCard, openSection === 'phrases' && styles.learnCardActive]}
+          onPress={() => handleToggleSection('phrases')}
+          activeOpacity={0.8}
+        >
+          <View style={[styles.stageIconBubble, { backgroundColor: '#25523D' }]}>
+            <Text style={styles.stageIcon}>✨</Text>
+          </View>
+          <View style={styles.stageInfo}>
+            <Text style={styles.stageName}>Sentences</Text>
+            <Text style={styles.stageDesc}>Key phrases · Key sentences</Text>
+          </View>
+          <View style={styles.stageStatus}>
+            {sectionDone?.sentences ? (
+              <Text style={styles.stageDone}>✅</Text>
+            ) : (
+              <View style={[styles.stageArrow, { backgroundColor: '#25523D' }]}>
+                <Text style={styles.stageArrowText}>{openSection === 'phrases' ? '↓' : '→'}</Text>
+              </View>
+            )}
+          </View>
+        </TouchableOpacity>
+        {openSection === 'phrases' && (
+          <View style={styles.expandedSection}>
+            {lesson.vocabulary?.some(v => v.part_of_speech === 'phrase') && (
+              <VocabularySection
+                vocabulary={(lesson.vocabulary || []).filter(v => v.part_of_speech === 'phrase')}
+                showPinyin={lesson.show_pinyin !== false}
+                avatarId={avatarId}
+              />
+            )}
+            {lesson.key_sentences?.length > 0 && (
+              <SentencesSection sentences={lesson.key_sentences} avatarId={avatarId} />
+            )}
+            {!sectionDone?.sentences && (
+              <TouchableOpacity style={styles.sectionDoneBtn} onPress={() => handleSectionDone('sentences')} activeOpacity={0.85}>
+                <Text style={styles.sectionDoneBtnText}>✓  I've reviewed Sentences</Text>
+              </TouchableOpacity>
+            )}
+          </View>
+        )}
+
+        {/* 4. Dialogue — Phase 2: locked until Round 1 done */}
+        <TouchableOpacity
+          onLayout={(e) => { dialogueCardY.current = e.nativeEvent.layout.y; }}
+          style={[styles.stageCard, openSection === 'dialogue' && styles.learnCardActive, !round1Done && styles.learnCardLocked, highlightPhase2 && round1Done && styles.learnCardHighlight]}
+          onPress={() => {
+            if (!round1Done) {
+              Alert.alert('Locked', 'Complete Round 1 practice to unlock Dialogue.');
+              return;
+            }
+            handleToggleSection('dialogue');
+          }}
+          activeOpacity={0.8}
+        >
+          <View style={[styles.stageIconBubble, { backgroundColor: round1Done ? '#b87243' : 'rgba(55,73,80,0.18)' }]}>
+            <Text style={styles.stageIcon}>{round1Done ? '💬' : '🔒'}</Text>
+          </View>
+          <View style={styles.stageInfo}>
+            <Text style={[styles.stageName, !round1Done && styles.textMuted]}>Dialogue</Text>
+            <Text style={[styles.stageDesc, !round1Done && styles.textMuted]}>
+              {round1Done ? 'Conversations · Roleplay' : 'Complete Round 1 to unlock'}
+            </Text>
+          </View>
+          <View style={styles.stageStatus}>
+            {round1Done && (
+              <View style={[styles.stageArrow, { backgroundColor: '#b87243' }]}>
+                <Text style={styles.stageArrowText}>{openSection === 'dialogue' ? '↓' : '→'}</Text>
+              </View>
+            )}
+          </View>
+        </TouchableOpacity>
+        {openSection === 'dialogue' && round1Done && (
+          <View style={styles.expandedSection}>
+            <DialogueSection dialogues={lesson.dialogues || []} lessonNumber={lesson.lesson} levelId={levelId} avatarId={avatarId} />
+            {!sectionDone?.dialogue && (
+              <TouchableOpacity style={styles.sectionDoneBtn} onPress={() => handleSectionDone('dialogue')} activeOpacity={0.85}>
+                <Text style={styles.sectionDoneBtnText}>✓  I've reviewed Dialogue</Text>
+              </TouchableOpacity>
+            )}
+          </View>
+        )}
+
+        {/* 5. Idioms & Culture / Characters / Pinyin */}
+        {levelId === 'hsk1' ? (
+          <TouchableOpacity
+            style={styles.stageCard}
+            onPress={() => { stopAudio(); onOpenPinyin(); }}
+            activeOpacity={0.8}
+          >
+            <View style={[styles.stageIconBubble, { backgroundColor: SLATE_TEAL }]}>
+              <Text style={styles.stageIcon}>🎵</Text>
+            </View>
+            <View style={styles.stageInfo}>
+              <Text style={styles.stageName}>Pinyin</Text>
+              <Text style={styles.stageDesc}>Tones · Pronunciation · Practice</Text>
+            </View>
+            <View style={styles.stageStatus}>
+              <View style={[styles.stageArrow, { backgroundColor: SLATE_TEAL }]}>
+                <Text style={styles.stageArrowText}>→</Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        ) : levelId === 'hsk4' || levelId === 'hsk5' || levelId === 'hsk6' ? (
+          <>
+            {/* 5. Idioms & Culture — Phase 2: locked until Round 1 done */}
+            <TouchableOpacity
+              style={[styles.stageCard, openSection === 'culture' && styles.learnCardActive, !round1Done && styles.learnCardLocked, highlightPhase2 && round1Done && styles.learnCardHighlight]}
+              onPress={() => {
+                if (!round1Done) {
+                  Alert.alert('Locked', 'Complete Round 1 practice to unlock Idioms & Culture.');
+                  return;
+                }
+                handleToggleSection('culture');
+              }}
+              activeOpacity={0.8}
+            >
+              <View style={[styles.stageIconBubble, { backgroundColor: round1Done ? WARM_ORANGE : 'rgba(55,73,80,0.18)' }]}>
+                <Text style={styles.stageIcon}>{round1Done ? '🏮' : '🔒'}</Text>
+              </View>
+              <View style={styles.stageInfo}>
+                <Text style={[styles.stageName, !round1Done && styles.textMuted]}>Idioms & Culture</Text>
+                <Text style={[styles.stageDesc, !round1Done && styles.textMuted]}>
+                  {round1Done ? 'Idioms · Cultural notes' : 'Complete Round 1 to unlock'}
+                </Text>
+              </View>
+              <View style={styles.stageStatus}>
+                {round1Done && (
+                  <View style={[styles.stageArrow, { backgroundColor: WARM_ORANGE }]}>
+                    <Text style={styles.stageArrowText}>{openSection === 'culture' ? '↓' : '→'}</Text>
+                  </View>
+                )}
+              </View>
+            </TouchableOpacity>
+            {openSection === 'culture' && round1Done && (
+              <View style={styles.expandedSection}>
+                {(lesson.culture_notes || []).map((note, noteIdx) => (
+                  <View key={note.id ?? noteIdx} style={styles.cultureCard}>
+                    <Text style={styles.cultureTitleChinese}>{note.title_chinese}</Text>
+                    <Text style={styles.cultureTitle}>{note.title}</Text>
+                    <Text style={styles.cultureContent}>{note.content}</Text>
+                    {note.idioms?.length > 0 && (
+                      <View style={styles.idiomsBlock}>
+                        <Text style={styles.idiomsHeading}>📜 Key Idioms</Text>
+                        {note.idioms.map((idiom, idx) => (
+                          <View key={idx} style={styles.idiomRow}>
+                            <Text style={styles.idiomChinese}>{idiom.chinese}</Text>
+                            <Text style={styles.idiomPinyin}>{idiom.pinyin}</Text>
+                            <Text style={styles.idiomEnglish}>{idiom.english}</Text>
+                          </View>
+                        ))}
+                      </View>
+                    )}
+                  </View>
+                ))}
+                {!sectionDone?.culture && (
+                  <TouchableOpacity style={styles.sectionDoneBtn} onPress={() => handleSectionDone('culture')} activeOpacity={0.85}>
+                    <Text style={styles.sectionDoneBtnText}>✓  I've reviewed Idioms & Culture</Text>
+                  </TouchableOpacity>
+                )}
+              </View>
+            )}
+          </>
+        ) : (
+          <TouchableOpacity
+            style={styles.stageCard}
+            onPress={() => Alert.alert('Chinese Characters', 'Chinese Characters learning module coming soon! ✍️')}
+            activeOpacity={0.8}
+          >
+            <View style={[styles.stageIconBubble, { backgroundColor: WARM_BROWN }]}>
+              <Text style={styles.stageIcon}>✍️</Text>
+            </View>
+            <View style={styles.stageInfo}>
+              <Text style={styles.stageName}>Characters</Text>
+              <Text style={styles.stageDesc}>Stroke order · Writing · Recognition</Text>
+            </View>
+            <View style={styles.stageStatus}>
+              <View style={[styles.stageArrow, { backgroundColor: WARM_BROWN }]}>
+                <Text style={styles.stageArrowText}>→</Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+        )}
+        </>)}
+
+        {activeTab === 'practice' && (<>
         <View style={styles.sectionHeader}>
           <View style={[styles.sectionDot, { backgroundColor: T.success }]} />
           <Text style={[styles.sectionTitle, { color: T.onBg }]}>Practice Stages</Text>
@@ -472,6 +697,7 @@ export default function LessonDetailScreen({
           </TouchableOpacity>
         )}
 
+        </>)}
         <View style={{ height: 40 }} />
       </ScrollView>
       </SafeAreaView>
@@ -541,6 +767,33 @@ const styles = StyleSheet.create({
   sectionTitle:  { fontSize: 18, fontWeight: '800', color: VG.cream, flex: 1 },
   stageCount:    { fontSize: 13, color: VG.creamMuted, fontWeight: '600' },
 
+  // ── Tab bar ───────────────────────────────────────────────────────────────
+  tabBar: {
+    flexDirection: 'row',
+    backgroundColor: VG.card,
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(155,104,70,0.15)',
+    paddingHorizontal: 20,
+  },
+  tabBtn: {
+    flex: 1,
+    paddingVertical: 13,
+    alignItems: 'center',
+    borderBottomWidth: 2.5,
+    borderBottomColor: 'transparent',
+  },
+  tabBtnActive: {
+    borderBottomColor: WARM_ORANGE,
+  },
+  tabBtnText: {
+    fontSize: 15,
+    fontWeight: '700',
+    color: VG.onCardMuted,
+  },
+  tabBtnTextActive: {
+    color: WARM_ORANGE,
+  },
+
   // ── Learning 2×2 grid ─────────────────────────────────────────────────────
   learnGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginBottom: 8 },
   learnBtn: {
@@ -562,11 +815,33 @@ const styles = StyleSheet.create({
   learnBtnPinyin:     { borderColor: SLATE_TEAL, backgroundColor: 'rgba(55,73,80,0.14)' },
   learnBtnCharacters: { borderColor: VG.gold,   backgroundColor: VG.card },
   learnBtnCulture:    { borderColor: VG.orange, backgroundColor: VG.card },
+  learnBtnPhrase:     { width: '48%', borderColor: SLATE_TEAL, backgroundColor: VG.card },
+  learnBtnVideo:      { borderColor: '#7B5EA7', backgroundColor: VG.card },
+  learnBtnLabelVideo: { color: '#7B5EA7' },
   learnBtnEmoji:      { fontSize: 24 },
   learnBtnLabel:      { fontSize: 14, fontWeight: '700', color: VG.onCardMid,   textAlign: 'center' },
   learnBtnLabelActive:     { color: VG.orange },
   learnBtnLabelPinyin:     { color: SLATE_TEAL },
   learnBtnLabelCharacters: { color: VG.orange },
+
+  // ── Learn card active / locked / highlight states ────────────────────────
+  learnCardActive:    { borderColor: VG.orange, borderWidth: 1.5 },
+  learnCardLocked:    { opacity: 0.55 },
+  learnCardHighlight: {
+    borderColor: '#1DD1A1', borderWidth: 2,
+    shadowColor: '#1DD1A1', shadowOpacity: 0.35, shadowRadius: 10, elevation: 6,
+  },
+
+  // ── Toast banner ──────────────────────────────────────────────────────────
+  toastBanner: {
+    marginHorizontal: 16, marginTop: 10, marginBottom: -4,
+    backgroundColor: WARM_ORANGE, borderRadius: 14,
+    paddingHorizontal: 18, paddingVertical: 13,
+    alignItems: 'center',
+    shadowColor: WARM_ORANGE, shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.32, shadowRadius: 10, elevation: 6,
+  },
+  toastText: { fontSize: 14, fontWeight: '700', color: CARD_WHITE, textAlign: 'center', lineHeight: 20 },
 
   // ── Culture / Idioms ──────────────────────────────────────────────────────
   cultureCard: {
@@ -604,6 +879,14 @@ const styles = StyleSheet.create({
 
   // ── Expanded section ──────────────────────────────────────────────────────
   expandedSection: { marginBottom: 24, marginTop: 4 },
+  sectionDoneBtn: {
+    marginTop: 16, borderRadius: 14,
+    backgroundColor: SLATE_TEAL,
+    paddingVertical: 14, alignItems: 'center',
+    shadowColor: SLATE_TEAL, shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.22, shadowRadius: 8, elevation: 4,
+  },
+  sectionDoneBtnText: { fontSize: 15, fontWeight: '800', color: CARD_WHITE },
 
   // ── Round badge ───────────────────────────────────────────────────────────
   roundBadge: {

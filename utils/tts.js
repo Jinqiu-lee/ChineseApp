@@ -443,13 +443,13 @@ const AVATAR_VOICE_CONFIG = {
   // Eileen Chang — controlled, precise, cool; cmn-CN-Wavenet-A
   eileen: { ssmlGender: 'FEMALE', voiceName: 'cmn-CN-Wavenet-A', pitch:  0,  speakingRate: 0.90 },
   // Jane Austen
-  jane:   { ssmlGender: 'FEMALE', pitch:  2,  speakingRate: 0.95 },
+  jane:   { ssmlGender: 'FEMALE', pitch:  2,  speakingRate: 0.85 },
   // Camus — calm, even, measured: mildly low male + moderately slow
   camus:    { ssmlGender: 'MALE',   pitch: -2,  speakingRate: 0.87 },
   // Dante — deep, grave, solemn: lowest pitch + slowest male rate
   dante:    { ssmlGender: 'MALE',   pitch: -8,  speakingRate: 0.76 },
-  // Elena Ferrante — soft, medium-low female, slow and thoughtful, intimate
-  elena:    { ssmlGender: 'FEMALE', pitch: -3,  speakingRate: 0.75 },
+  // Elena Ferrante — soft, medium-low female, thoughtful, intimate
+  elena:    { ssmlGender: 'FEMALE', pitch: -2.5, speakingRate: 0.85 },
   // Liu Cixin — calm, slightly deep male, emotionally restrained, vast
   liucixin: { ssmlGender: 'MALE',   pitch: -4,  speakingRate: 0.82 },
   // Van Gogh — impassioned, intense, slightly unpredictable artist

@@ -140,48 +140,41 @@
       "part_of_speech": "verb",
       "example": "每位表演者都以自己的方式诠释了这首作品的意境。",
       "translation": "Each performer interpreted the artistic conception of this work in their own way."
-    }
-  ],
-  "phrases": [
+    },
     {
       "id": "hsk6_l14_p01",
       "chinese": "以…为美",
       "pinyin": "yǐ … wéi měi",
       "english": "to consider … as beautiful",
-      "example": "中国传统美学以自然和谐为美。",
-      "translation": "Traditional Chinese aesthetics considers harmony with nature as beautiful."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l14_p02",
       "chinese": "从…角度",
       "pinyin": "cóng … jiǎo dù",
       "english": "from the perspective/angle of …",
-      "example": "从心理学角度来看，人对美的感知与情感密切相关。",
-      "translation": "From a psychological perspective, human perception of beauty is closely related to emotion."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l14_p03",
       "chinese": "引发共鸣",
       "pinyin": "yǐn fā gòng míng",
       "english": "to provoke resonance / to resonate with",
-      "example": "这部电影深刻地描绘了人的孤独，引发了广泛的共鸣。",
-      "translation": "This film depicts human loneliness profoundly, resonating with a wide audience."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l14_p04",
       "chinese": "精神境界",
       "pinyin": "jīng shén jìng jiè",
       "english": "spiritual realm / level",
-      "example": "艺术能将人带入更高的精神境界，超越日常烦恼。",
-      "translation": "Art can bring a person to a higher spiritual realm, transcending everyday worries."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l14_p05",
       "chinese": "独特视角",
       "pinyin": "dú tè shì jiǎo",
       "english": "unique perspective",
-      "example": "艺术家以独特视角重新诠释了日常生活中的普通事物。",
-      "translation": "The artist reinterpreted ordinary things in daily life from a unique perspective."
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -487,12 +480,12 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "friend",
+          "role": "朋友", 
           "gender": "female"
         },
         "B": {
           "name": "兰特",
-          "role": "friend",
+          "role": "朋友",
           "gender": "female"
         }
       },
@@ -505,8 +498,8 @@
         },
         {
           "speaker": "B",
-          "chinese": "我认为美是以感知为基础的，从心理角度来看，它与个人经历密切相关。",
-          "pinyin": "Wǒ rèn wéi měi shì yǐ gǎn zhī wéi jī chǔ de, cóng xīn lǐ jiǎo dù lái kàn, tā yǔ gè rén jīng lì mì qiē xiāng guān.",
+          "chinese": "我认为美是以感知为基础的，从心理学角度来看，它与个人经历密切相关。",
+          "pinyin": "Wǒ rèn wéi měi shì yǐ gǎn zhī wéi jī chǔ de, cóng xīn lǐ xué jiǎo dù lái kàn, tā yǔ gè rén jīng lì mì qiē xiāng guān.",
           "english": "I believe beauty is based on perception. From a psychological perspective, it is closely related to personal experience."
         },
         {
@@ -535,20 +528,20 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "friend",
+          "role": "朋友",
           "gender": "female"
         },
         "B": {
           "name": "兰特",
-          "role": "friend",
+          "role": "朋友",
           "gender": "female"
         }
       },
       "lines": [
         {
           "speaker": "B",
-          "chinese": "我最近开始学书法，才发现每一笔都蕴含了书写者的情感。",
-          "pinyin": "Wǒ zuì jìn kāi shǐ xué shū fǎ, cái fā xiàn měi yī bǐ dōu yùn hán le shū xiě zhě de qíng gǎn.",
+          "chinese": "我最近开始学书法，才发现汉字的每一笔都蕴含了书写者的情感。",
+          "pinyin": "Wǒ zuì jìn kāi shǐ xué shū fǎ, cái fā xiàn hàn zì de měi yī bǐ dōu yùn hán le shū xiě zhě de qíng gǎn.",
           "english": "I recently started learning calligraphy, and only then did I discover that every brushstroke contains the writer's emotions."
         },
         {
@@ -559,9 +552,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "草书看起来像抽象画，正是那种自由的线条让人产生独特的联想。",
-          "pinyin": "Cǎo shū kàn qǐ lái xiàng chōu xiàng huà, zhèng shì nà zhǒng zì yóu de xiàn tiáo ràng rén chǎn shēng dú tè de lián xiǎng.",
-          "english": "Cursive script looks like abstract art — it is precisely those free-flowing strokes that give rise to unique associations."
+          "chinese": "草书看起来像抽象画，正是那种自由和看似杂乱的线条让人产生独特的联想。",
+          "pinyin": "Cǎo shū kàn qǐ lái xiàng chōu xiàng huà, zhèng shì nà zhǒng zì yóu hé kàn sì zá luàn de xiàn tiáo ràng rén chǎn shēng dú tè de lián xiǎng.",
+          "english": "Cursive script looks like abstract art — it is precisely those free-flowing and seemdingly chaotic strokes that give rise to unique associations."
         },
         {
           "speaker": "A",

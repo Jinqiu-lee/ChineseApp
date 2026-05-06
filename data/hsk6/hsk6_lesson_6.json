@@ -143,6 +143,24 @@
       "translation": "After frank communication, both sides ultimately resolved the long-standing disagreement."
     },
     {
+      "id": "hsk6_l6_16",
+      "chinese": "论点",
+      "pinyin": "lùn diǎn",
+      "english": "Argument, point of argument; thesis",
+      "part_of_speech": "noun",
+      "example": "一个好的论点必须有充分的证据支撑，才能让人信服。",
+      "translation": "A good argument must be supported by sufficient evidence to be convincing."
+    },
+    {
+      "id": "hsk6_l6_17",
+      "chinese": "证据",
+      "pinyin": "zhèng jù",
+      "english": "Evidence, proof",
+      "part_of_speech": "noun",
+      "example": "没有证据的指控是站不住脚的，辩论中更是如此。",
+      "translation": "An accusation without evidence cannot stand, and this is especially true in debate."
+    },
+    {
       "id": "hsk6_l6_p01",
       "chinese": "显示出差异",
       "pinyin": "xiǎn shì chū chā yì",
@@ -208,6 +226,21 @@
       "chinese": "实际上，态度和逻辑同样重要——失去任何一个，说服力都会大打折扣。",
       "pinyin": "Shí jì shang, tài dù hé luó jí tóng yàng zhòng yào — shī qù rèn hé yī gè, shuō fú lì dōu huì dà dǎ zhé kòu.",
       "english": "In reality, attitude and logic are equally important — lose either one, and your persuasiveness is greatly diminished."
+    },
+    {
+      "chinese": "一个有力的论点必须围绕核心主题，并以充分的证据加以支撑。",
+      "pinyin": "Yī gè yǒu lì de lùn diǎn bì xū wéi rào hé xīn zhǔ tí, bìng yǐ chōng fèn de zhèng jù jiā yǐ zhī chēng.",
+      "english": "A powerful argument must revolve around the core topic and be supported by sufficient evidence."
+    },
+    {
+      "chinese": "针对对方的论点，提出有逻辑、有证据的反驳，才是真正有效的辩论方式。",
+      "pinyin": "Zhēn duì duì fāng de lùn diǎn, tí chū yǒu luó jí, yǒu zhèng jù de fǎn bó, cái shì zhēn zhèng yǒu xiào de biàn lùn fāng shì.",
+      "english": "Responding to the other side's arguments with logical, evidence-based rebuttals is the truly effective way to debate."
+    },
+    {
+      "chinese": "数据显示，能够清晰表达论点并提供可靠证据的辩手，说服力远超只依赖情绪的人。",
+      "pinyin": "Shù jù xiǎn shì, néng gòu qīng xī biǎo dá lùn diǎn bìng tí gōng kě kào zhèng jù de biàn shǒu, shuō fú lì yuǎn chāo zhǐ yī lài qíng xù de rén.",
+      "english": "Data shows that debaters who can clearly express their arguments and provide reliable evidence are far more persuasive than those who rely only on emotion."
     }
   ],
   "grammar_points": [
@@ -450,18 +483,11 @@
   ],
   "quiz": [
     {
-      "question": "Which word means 'to refute or rebut an argument'?",
+      "question": "她冷静地针对对方的每一个_____，逐一提出了有力的反驳。",
       "type": "multiple_choice",
-      "correct": "反驳",
-      "options": ["反驳", "显示", "围绕", "解决"],
-      "word_hints": {}
-    },
-    {
-      "question": "_____ 对方观点中的逻辑漏洞，她提出了有力的反驳。",
-      "type": "multiple_choice",
-      "correct": "针对",
-      "options": ["针对", "显得", "有效", "实际"],
-      "word_hints": { "逻辑漏洞": "luójí lòudòng" }
+      "correct": "论点",
+      "options": ["论点", "态度", "效果", "原则"],
+      "word_hints": { "逐一": "zhú yī" }
     },
     {
       "question": "Which sentence correctly uses 显示?",
@@ -476,6 +502,20 @@
       "word_hints": { "实验结果": "shíyàn jiéguǒ" }
     },
     {
+      "question": "在辩论中，没有_____支撑的论点很容易被反驳，显得没有说服力。",
+      "type": "multiple_choice",
+      "correct": "证据",
+      "options": ["证据", "逻辑", "原则", "效果"],
+      "word_hints": { "支撑": "zhīchēng" }
+    },
+    {
+      "question": "_____ 对方观点中的逻辑漏洞，她提出了有力的反驳。",
+      "type": "multiple_choice",
+      "correct": "针对",
+      "options": ["针对", "显得", "有效", "实际"],
+      "word_hints": { "逻辑漏洞": "luójí lòudòng" }
+    },
+    {
       "question": "What does the idiom 百家争鸣 refer to?",
       "type": "multiple_choice",
       "correct": "The flourishing of many competing philosophical schools in ancient China",
@@ -485,6 +525,13 @@
         "A method of teaching logic in universities",
         "A famous story from the Zhuangzi"
       ],
+      "word_hints": {}
+    },
+    {
+      "question": "Which word means 'to refute or rebut an argument'?",
+      "type": "multiple_choice",
+      "correct": "反驳",
+      "options": ["反驳", "显示", "围绕", "解决"],
       "word_hints": {}
     },
     {
@@ -498,7 +545,7 @@
       "question": "在那个紧张的场合，她依然_____ 非常从容，让所有人都很佩服。",
       "type": "multiple_choice",
       "correct": "显得",
-      "options": ["显得", "显示", "提出", "证明"],
+      "options": ["显得", "显示", "论点", "证据"],
       "word_hints": { "从容": "cóngróng" }
     }
   ],
@@ -591,9 +638,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "完全正确。显示出事实，显得有原则——这才是真正有效的辩论。",
-          "pinyin": "Wán quán zhèng què. Xiǎn shì chū shì shí, xiǎn de yǒu yuán zé — zhè cái shì zhēn zhèng yǒu xiào de biàn lùn.",
-          "english": "Exactly right. Showing the facts and appearing principled — that is truly effective debating."
+          "chinese": "完全正确。显示事实，论点的证据充分，显得有原则——这才是真正有效的辩论。",
+          "pinyin": "Wán quán zhèng què. Xiǎn shì shì shí, lùn diǎn de zhèng jù chōng fèn, xiǎn de yǒu yuán zé — zhè cái shì zhēn zhèng yǒu xiào de biàn lùn.",
+          "english": "Exactly right. Showing the facts, the evidence for the argument is sufficient, and appearing principled — that is truly effective debating."
         }
       ]
     }

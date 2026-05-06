@@ -7,24 +7,6 @@
   "topic_chinese": "科学饮食与健康",
   "vocabulary": [
     {
-      "id": "hsk6_l12_01",
-      "chinese": "营养",
-      "pinyin": "yíng yǎng",
-      "english": "nutrition, nourishment",
-      "part_of_speech": "noun",
-      "example": "均衡的营养是维持健康的基础。",
-      "translation": "Balanced nutrition is the foundation for maintaining health."
-    },
-    {
-      "id": "hsk6_l12_02",
-      "chinese": "均衡",
-      "pinyin": "jūn héng",
-      "english": "balanced, equilibrium",
-      "part_of_speech": "adjective",
-      "example": "饮食均衡比单纯节食更有利于健康。",
-      "translation": "A balanced diet is more beneficial to health than simply dieting."
-    },
-    {
       "id": "hsk6_l12_03",
       "chinese": "消化",
       "pinyin": "xiāo huà",
@@ -32,15 +14,6 @@
       "part_of_speech": "verb/noun",
       "example": "细嚼慢咽有助于食物的消化和吸收。",
       "translation": "Chewing slowly helps with the digestion and absorption of food."
-    },
-    {
-      "id": "hsk6_l12_04",
-      "chinese": "摄入",
-      "pinyin": "shè rù",
-      "english": "to ingest, intake",
-      "part_of_speech": "verb/noun",
-      "example": "减少糖分摄入是控制体重的有效方法。",
-      "translation": "Reducing sugar intake is an effective method for controlling body weight."
     },
     {
       "id": "hsk6_l12_05",
@@ -70,15 +43,6 @@
       "translation": "Eating more vegetables and fruits can supplement the vitamins the body needs."
     },
     {
-      "id": "hsk6_l12_08",
-      "chinese": "代谢",
-      "pinyin": "dài xiè",
-      "english": "metabolism",
-      "part_of_speech": "noun/verb",
-      "example": "适量运动能够加速新陈代谢，帮助消耗多余的热量。",
-      "translation": "Moderate exercise can speed up metabolism and help burn excess calories."
-    },
-    {
       "id": "hsk6_l12_09",
       "chinese": "热量",
       "pinyin": "rè liàng",
@@ -95,15 +59,6 @@
       "part_of_speech": "verb/noun",
       "example": "合理的食物搭配能够提高营养的吸收效率。",
       "translation": "A reasonable food combination can improve the efficiency of nutrient absorption."
-    },
-    {
-      "id": "hsk6_l12_11",
-      "chinese": "科学",
-      "pinyin": "kē xué",
-      "english": "science, scientific",
-      "part_of_speech": "noun/adjective",
-      "example": "科学的饮食方式需要根据个人的身体状况来制定。",
-      "translation": "A scientific approach to diet needs to be tailored to an individual's physical condition."
     },
     {
       "id": "hsk6_l12_12",
@@ -140,48 +95,91 @@
       "part_of_speech": "verb/noun",
       "example": "长期依赖营养补充剂不如从天然食物中获取营养。",
       "translation": "Long-term reliance on nutritional supplements is not as good as obtaining nutrients from natural foods."
-    }
-  ],
-  "phrases": [
+    },
+    {
+      "id": "hsk6_l12_16",
+      "chinese": "糖分",
+      "pinyin": "táng fèn",
+      "english": "sugar; sugar content",
+      "part_of_speech": "noun",
+      "example": "很多加工食品含有大量隐藏的糖分，长期摄入不利于健康。",
+      "translation": "Many processed foods contain large amounts of hidden sugar; long-term consumption is harmful to health."
+    },
+    {
+      "id": "hsk6_l12_17",
+      "chinese": "矿物质",
+      "pinyin": "kuàng wù zhì",
+      "english": "minerals (dietary)",
+      "part_of_speech": "noun",
+      "example": "牛奶和绿叶蔬菜是补充钙等矿物质的良好来源。",
+      "translation": "Milk and leafy vegetables are good sources of minerals such as calcium."
+    },
+    {
+      "id": "hsk6_l12_18",
+      "chinese": "纤维",
+      "pinyin": "xiān wéi",
+      "english": "fiber (dietary)",
+      "part_of_speech": "noun",
+      "example": "多吃富含纤维的食物有助于消化和预防便秘。",
+      "translation": "Eating more fiber-rich foods helps with digestion and prevents constipation."
+    },
+    {
+      "id": "hsk6_l12_19",
+      "chinese": "谷物",
+      "pinyin": "gǔ wù",
+      "english": "grains; cereals",
+      "part_of_speech": "noun",
+      "example": "全谷物比精制谷物含有更多的纤维和微量元素。",
+      "translation": "Whole grains contain more fiber and trace elements than refined grains."
+    },
     {
       "id": "hsk6_l12_p01",
       "chinese": "饮食均衡",
       "pinyin": "yǐn shí jūn héng",
       "english": "balanced diet",
-      "example": "饮食均衡是健康生活方式的核心。",
-      "translation": "A balanced diet is the core of a healthy lifestyle."
-    },
-    {
-      "id": "hsk6_l12_p02",
-      "chinese": "新陈代谢",
-      "pinyin": "xīn chén dài xiè",
-      "english": "metabolism",
-      "example": "年轻人的新陈代谢通常比老年人快。",
-      "translation": "Young people's metabolism is usually faster than that of the elderly."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l12_p03",
       "chinese": "合理搭配",
       "pinyin": "hé lǐ dā pèi",
       "english": "reasonable food combination",
-      "example": "合理搭配食物可以帮助补充各种营养素。",
-      "translation": "Combining foods in a reasonable way can help supplement various nutrients."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l12_p04",
       "chinese": "摄入量",
       "pinyin": "shè rù liàng",
       "english": "intake amount",
-      "example": "专家建议每天盐的摄入量不应超过五克。",
-      "translation": "Experts recommend that daily salt intake should not exceed five grams."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l12_p05",
       "chinese": "天然食品",
       "pinyin": "tiān rán shí pǐn",
       "english": "natural food",
-      "example": "天然食品中的营养往往比加工食品更加丰富。",
-      "translation": "Nutrients in natural foods are often richer than those in processed foods."
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l12_p06",
+      "chinese": "碳水化合物",
+      "pinyin": "tàn shuǐ huà hé wù",
+      "english": "carbohydrates",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l12_p07",
+      "chinese": "微量元素",
+      "pinyin": "wēi liàng yuán sù",
+      "english": "trace elements; micronutrients",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk6_l12_p08",
+      "chinese": "膳食纤维",
+      "pinyin": "shàn shí xiān wéi",
+      "english": "dietary fiber",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -214,6 +212,31 @@
       "chinese": "不仅如此，过度节食还可能导致新陈代谢减慢，反而不利于减重。",
       "pinyin": "Bù jǐn rú cǐ, guò dù jié shí hái kě néng dǎo zhì xīn chén dài xiè jiǎn màn, fǎn ér bú lì yú jiǎn zhòng.",
       "english": "Moreover, excessive dieting may also slow down metabolism, which is actually not conducive to weight loss."
+    },
+    {
+      "chinese": "谷物中富含膳食纤维，有助于促进消化、控制血糖，是健康饮食的重要组成部分。",
+      "pinyin": "Gǔ wù zhōng fù hán shàn shí xiān wéi, yǒu zhù yú cù jìn xiāo huà, kòng zhì xuè táng, shì jiàn kāng yǐn shí de zhòng yào zǔ chéng bù fèn.",
+      "english": "Grains are rich in dietary fiber, which promotes digestion and controls blood sugar — they are an important component of a healthy diet."
+    },
+    {
+      "chinese": "过量摄入糖分会加快热量积累，不仅如此，还会增加患慢性病的风险。",
+      "pinyin": "Guò liàng shè rù táng fèn huì jiā kuài rè liàng jī lěi, bù jǐn rú cǐ, hái huì zēng jiā huàn màn xìng bìng de fēng xiǎn.",
+      "english": "Excessive intake of sugar accelerates calorie accumulation; moreover, it also increases the risk of developing chronic diseases."
+    },
+    {
+      "chinese": "矿物质和微量元素虽然需要量少，但对维持正常生理功能不可或缺。",
+      "pinyin": "Kuàng wù zhì hé wēi liàng yuán sù suī rán xū yào liàng shǎo, dàn duì wéi chí zhèng cháng shēng lǐ gōng néng bù kě huò quē.",
+      "english": "Although minerals and trace elements are needed in small amounts, they are indispensable for maintaining normal physiological functions."
+    },
+    {
+      "chinese": "碳水化合物是人体能量的主要来源，关键在于选择谷物等富含纤维的天然食物。",
+      "pinyin": "Tàn shuǐ huà hé wù shì rén tǐ néng liàng de zhǔ yào lái yuán, guān jiàn zài yú xuǎn zé gǔ wù děng fù hán xiān wéi de tiān rán shí wù.",
+      "english": "Carbohydrates are the main source of energy for the human body; the key lies in choosing natural foods rich in fiber, such as grains."
+    },
+    {
+      "chinese": "合理搭配蛋白质、脂肪、碳水化合物及矿物质，是预防慢性病、维持长期健康的科学基础。",
+      "pinyin": "Hé lǐ dā pèi dàn bái zhì, zhī fáng, tàn shuǐ huà hé wù jí kuàng wù zhì, shì yù fáng màn xìng bìng, wéi chí cháng qī jiàn kāng de kē xué jī chǔ.",
+      "english": "Properly combining proteins, fats, carbohydrates, and minerals is the scientific foundation for preventing chronic diseases and maintaining long-term health."
     }
   ],
   "grammar_points": [
@@ -421,6 +444,16 @@
   ],
   "quiz": [
     {
+      "question": "过量摄入_____会加速热量积累，增加患慢性病的风险。",
+      "choices": [
+        "糖分",
+        "蛋白质",
+        "膳食纤维",
+        "矿物质"
+      ],
+      "correct_answer": 0
+    },
+    {
       "question": "关键在于 is used to:",
       "choices": [
         "Highlight the most essential factor",
@@ -431,12 +464,32 @@
       "correct_answer": 0
     },
     {
+      "question": "碳水化合物是人体能量的主要来源，其中_____含有丰富的膳食纤维。",
+      "choices": [
+        "谷物",
+        "脂肪",
+        "维生素",
+        "热量"
+      ],
+      "correct_answer": 0
+    },
+    {
       "question": "Choose the correct sentence using 不仅如此:",
       "choices": [
         "这种方法有效，不仅如此，副作用也很少。",
         "不仅如此他很累，所以去睡了。",
         "他不仅如此，虽然努力了。",
         "不仅如此，因为他来了。"
+      ],
+      "correct_answer": 0
+    },
+    {
+      "question": "Which phrase refers to nutrients the body needs only in very small amounts, such as iron and zinc?",
+      "choices": [
+        "微量元素",
+        "碳水化合物",
+        "膳食纤维",
+        "蛋白质"
       ],
       "correct_answer": 0
     },
@@ -487,12 +540,12 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "friend",
+          "role": "朋友",
           "gender": "female"
         },
         "B": {
           "name": "加缪",
-          "role": "friend",
+          "role": "朋友",
           "gender": "male"
         }
       },
@@ -505,15 +558,15 @@
         },
         {
           "speaker": "B",
-          "chinese": "有啊，我开始注重蛋白质的摄入，减少脂肪和糖分。关键在于均衡，而不是单纯少吃。",
-          "pinyin": "Yǒu a, wǒ kāi shǐ zhù zhòng dàn bái zhì de shè rù, jiǎn shǎo zhī fáng hé táng fēn. Guān jiàn zài yú jūn héng, ér bú shì dān chún shǎo chī.",
-          "english": "Yes, I've started paying more attention to protein intake and reducing fat and sugar. The key lies in balance, not just eating less."
+          "chinese": "有啊，我开始注重蛋白质、维生素和膳食纤维的摄入，减少脂肪和糖分。关键在于均衡，而不是单纯少吃。",
+          "pinyin": "Yǒu a, wǒ kāi shǐ zhù zhòng dàn bái zhì, wéi shēng sù hé shàn shí xiān wéi de shè rù, jiǎn shǎo zhī fáng hé táng fēn. Guān jiàn zài yú jūn héng, ér bú shì dān chún shǎo chī.",
+          "english": "Yes, I've started paying more attention to protein, vitamins and dietary fiber intake and reducing fat and sugar. The key lies in balance, not just eating less."
         },
         {
           "speaker": "A",
-          "chinese": "不仅如此，你的睡眠和压力管理也很重要吧？",
-          "pinyin": "Bù jǐn rú cǐ, nǐ de shuì mián hé yā lì guǎn lǐ yě hěn zhòng yào ba?",
-          "english": "Moreover, your sleep and stress management are also important, right?"
+          "chinese": "不仅如此，还有微量元素，比如钙、铁、锰、钾等。以及运动、睡眠和压力管理，这些都很重要吧？",
+          "pinyin": "Bù jǐn rú cǐ, hái yǒu wēi liàng yuán sù, bǐ rú gài tiě měng jiǎ děng, yǐ jí yùn dòng, shuì mián hé yā lì guǎn lǐ, zhè xiē dōu hěn zhòng yào ba?",
+          "english": "Moreover, also important are trace elements such as calcium, iron, manganese, and potassium. And exercise, sleep, and stress management are also crucial, right?"
         },
         {
           "speaker": "B",
@@ -535,12 +588,12 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "friend",
+          "role": "朋友",
           "gender": "female"
         },
         "B": {
           "name": "加缪",
-          "role": "friend",
+          "role": "朋友",
           "gender": "male"
         }
       },
@@ -565,8 +618,8 @@
         },
         {
           "speaker": "A",
-          "chinese": "这让我想起祖母总说冬天要多吃生姜，夏天多喝绿茶。原来都有科学依据。",
-          "pinyin": "Zhè ràng wǒ xiǎng qǐ zǔ mǔ zǒng shuō dōng tiān yào duō chī shēng jiāng, xià tiān duō hē lǜ chá. Yuán lái dōu yǒu kē xué yī jù.",
+          "chinese": "这让我想起祖母，她总说冬天要多吃生姜，夏天多喝绿茶。原来都有科学依据。",
+          "pinyin": "Zhè ràng wǒ xiǎng qǐ zǔ mǔ,tā zǒng shuō dōng tiān yào duō chī shēng jiāng, xià tiān duō hē lǜ chá. Yuán lái dōu yǒu kē xué yī jù.",
           "english": "That reminds me — my grandmother always said to eat more ginger in winter and drink more green tea in summer. Turns out there's scientific reasoning behind it all."
         },
         {

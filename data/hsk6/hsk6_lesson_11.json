@@ -185,6 +185,13 @@
       "part_of_speech": "phrase",
       "example": "每天坚持适量运动，有助于加快代谢、保持健康体重。",
       "translation": "Sticking to an appropriate amount of exercise every day helps speed up metabolism and maintain a healthy weight."
+    },
+    {
+      "id": "hsk6_l11_p6",
+      "chinese": "新陈代谢",
+      "pinyin": "xīn chén dài xiè",
+      "english": "metabolism (lit. the new replacing the old)",
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -217,6 +224,11 @@
       "chinese": "营养师建议，每天适量摄入蛋白质有助于维持代谢和保持体力。",
       "pinyin": "Yíngyǎngshī jiànyì, měi tiān shì liàng shè rù dànbáizhì yǒuzhù yú wéichí dài xiè hé bǎo chí tǐlì.",
       "english": "Nutritionists recommend that moderate daily intake of protein helps maintain metabolism and physical energy."
+    },
+    {
+      "chinese": "规律的作息和适量运动可以加快新陈代谢，有助于维持健康体重。",
+      "pinyin": "Guī lǜ de zuò xī hé shì liàng yùn dòng kě yǐ jiā kuài xīn chén dài xiè, yǒu zhù yú wéi chí jiàn kāng tǐ zhòng.",
+      "english": "Regular sleep schedules and appropriate exercise can speed up metabolism, helping to maintain a healthy body weight."
     }
   ],
   "grammar_points": [
@@ -610,6 +622,13 @@
       }
     },
     {
+      "question": "运动和健康饮食能够加快_____，帮助身体更有效地消耗热量。",
+      "type": "multiple_choice",
+      "correct": "新陈代谢",
+      "options": ["新陈代谢", "均衡饮食", "过度节食", "适量摄入"],
+      "word_hints": { "消耗": "xiāohào" }
+    },
+    {
       "question": "Fill in the blank: '为了保持健康，我们应该___饮食，不要挑食。'",
       "type": "multiple_choice",
       "correct": "均衡",
@@ -673,12 +692,12 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "believes exercise is more important than dieting",
+          "role": "锻炼>节食",
           "gender": "female"
         },
         "B": {
           "name": "兰特",
-          "role": "believes diet control is essential for managing weight",
+          "role": "节食>锻炼",
           "gender": "female"
         }
       },
@@ -709,9 +728,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "这样我就同意了。关键是科学减肥，而不是为了快速出结果就什么都不吃。",
-          "pinyin": "Zhèyàng wǒ jiù tóngyì le. Guānjiàn shì kē xué jiǎn féi, ér bú shì wèile kuàisù chū jiéguǒ jiù shénme dōu bù chī.",
-          "english": "In that case I agree. The key is scientific weight loss, not refusing to eat anything just to see quick results."
+          "chinese": "这样我就同意了。因为运动能提高新陈代谢，好的代谢可以帮助消化食物，这是科学减肥，而不是为了快速出结果就什么都不吃。",
+          "pinyin": "Zhèyàng wǒ jiù tóngyì le. Yīn wèi yùn dòng néng tí gāo xīn chén dài xiè ， hǎo de dài xiè kě yǐ bāng zhù xiāo huà shí wù, zhè shì kē xué jiǎn féi, ér bú shì wèile kuàisù chū jiéguǒ jiù shénme dōu bù chī.",
+          "english": "In that case I agree. Because exercise can boost metabolism, and a good metabolism helps digest food. It is scientific weight loss, not refusing to eat anything just to see quick results."
         },
         {
           "speaker": "B",
@@ -728,12 +747,12 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "questions whether numbers alone define health",
+          "role": "体重=健康",
           "gender": "female"
         },
         "B": {
           "name": "加缪",
-          "role": "reflects philosophically on health beyond appearance",
+          "role": "健康>体重",
           "gender": "male"
         }
       },
@@ -758,15 +777,15 @@
         },
         {
           "speaker": "B",
-          "chinese": "的确如此。适当的体重只是健康的一个方面，精神状态、睡眠质量和饮食的均衡同样重要。",
-          "pinyin": "Díquè rúcǐ. Shìdàng de tǐ zhòng zhǐ shì jiànkāng de yí gè fāngmiàn, jīngshén zhuàngtài, shuìmián zhìliàng hé yǐn shí de jūn héng tóngyàng zhòngyào.",
-          "english": "That is indeed the case. Appropriate body weight is just one aspect of health; mental state, sleep quality, and dietary balance are equally important."
+          "chinese": "的确如此。适当的体重只是健康的一个方面，精神状态、睡眠质量、压力程度和饮食的均衡同样重要。",
+          "pinyin": "Díquè rúcǐ. Shìdàng de tǐ zhòng zhǐ shì jiànkāng de yí gè fāngmiàn, jīngshén zhuàngtài, shuìmián zhìliàng,yā lì chéng dù hé yǐn shí de jūn héng tóngyàng zhòngyào.",
+          "english": "That is indeed the case. Appropriate body weight is just one aspect of health; mental state, sleep quality, stress level and dietary balance are equally important."
         },
         {
           "speaker": "A",
-          "chinese": "所以不应该只为了追求某个标准体重而过度节食，对吗？",
-          "pinyin": "Suǒyǐ bù yīnggāi zhǐ wèile zhuīqiú mǒu gè biāo zhǔn tǐ zhòng ér guòdù jié shí, duì ma?",
-          "english": "So one shouldn't excessively diet just to chase a certain standard body weight, right?"
+          "chinese": "所以不应该只为了追求某个标准体重而过度追求减肥，对吗？",
+          "pinyin": "Suǒyǐ bù yīnggāi zhǐ wèile zhuīqiú mǒu gè biāo zhǔn tǐ zhòng ér guòdù zhuī qiú jiãn fěi, duì ma?",
+          "english": "So one shouldn't excessively pursuing weight loss just to chase a certain standard body weight, right?"
         },
         {
           "speaker": "B",

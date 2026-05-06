@@ -140,48 +140,41 @@
       "part_of_speech": "adjective",
       "example": "艺术欣赏带有很强的主观性，没有绝对的对错之分。",
       "translation": "Art appreciation is highly subjective — there is no absolute right or wrong."
-    }
-  ],
-  "phrases": [
+    },
     {
       "id": "hsk6_l13_p01",
       "chinese": "艺术欣赏",
       "pinyin": "yì shù xīn shǎng",
       "english": "art appreciation",
-      "example": "艺术欣赏可以培养人的创造力和情感表达能力。",
-      "translation": "Art appreciation can cultivate a person's creativity and emotional expression."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l13_p02",
       "chinese": "审美观念",
       "pinyin": "shěn měi guān niàn",
       "english": "aesthetic concept",
-      "example": "随着时代变化，人们的审美观念也在不断演变。",
-      "translation": "As times change, people's aesthetic concepts are also constantly evolving."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l13_p03",
       "chinese": "色彩搭配",
       "pinyin": "sè cǎi dā pèi",
       "english": "color combination",
-      "example": "合理的色彩搭配是设计中非常重要的一环。",
-      "translation": "A good color combination is a very important aspect of design."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l13_p04",
       "chinese": "艺术创作",
       "pinyin": "yì shù chuàng zuò",
       "english": "artistic creation",
-      "example": "艺术创作是人类独有的一种表达和沟通方式。",
-      "translation": "Artistic creation is a uniquely human form of expression and communication."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l13_p05",
       "chinese": "所谓美感",
       "pinyin": "suǒ wèi měi gǎn",
       "english": "the so-called sense of beauty",
-      "example": "所谓美感，其实因人而异，并没有统一的标准。",
-      "translation": "The so-called sense of beauty actually varies from person to person — there is no universal standard."
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -487,12 +480,12 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "friend",
+          "role": "作家朋友",
           "gender": "female"
         },
         "B": {
           "name": "但丁",
-          "role": "friend",
+          "role": "哲学作家朋友",
           "gender": "male"
         }
       },
@@ -505,9 +498,9 @@
         },
         {
           "speaker": "B",
-          "chinese": "我觉得艺术的本质在于表达，而不在于形式是否具体。",
-          "pinyin": "Wǒ jué de yì shù de běn zhì zài yú biǎo dá, ér bú zài yú xíng shì shì fǒu jù tǐ.",
-          "english": "I think the essence of art lies in expression, not in whether the form is concrete or not."
+          "chinese": "我觉得艺术的本质在于表达，而不在于具体的形式是什么。",
+          "pinyin": "Wǒ jué de yì shù de běn zhì zài yú biǎo dá, ér bú zài yú jù tǐ de xíng shì shì shén me .",
+          "english": "I think the essence of art lies in expression, it doesn't matter what the specific form is.."
         },
         {
           "speaker": "A",
@@ -523,8 +516,8 @@
         },
         {
           "speaker": "A",
-          "chinese": "这倒是。不过我还是更喜欢水墨山水那种意境。",
-          "pinyin": "Zhè dào shì. Bú guò wǒ hái shì gèng xǐ huān shuǐ mò shān shuǐ nà zhǒng yì jìng.",
+          "chinese": "这倒是。不过我还是更喜欢水墨山水画那种意境。",
+          "pinyin": "Zhè dào shì. Bú guò wǒ hái shì gèng xǐ huān shuǐ mò shān shuǐ huà nà zhǒng yì jìng.",
           "english": "That makes sense. But I still prefer the kind of artistic mood found in ink landscape paintings."
         }
       ],
@@ -535,12 +528,12 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "friend",
+          "role": "朋友",
           "gender": "female"
         },
         "B": {
           "name": "但丁",
-          "role": "friend",
+          "role": "朋友",
           "gender": "male"
         }
       },

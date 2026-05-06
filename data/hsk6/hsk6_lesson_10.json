@@ -140,48 +140,41 @@
       "part_of_speech": "noun",
       "example": "数字化已经成为全球经济发展的重要趋势。",
       "translation": "Digitalization has become an important trend in global economic development."
-    }
-  ],
-  "phrases": [
+    },
     {
       "id": "hsk6_l10_p01",
       "chinese": "数字经济",
       "pinyin": "shù zì jīng jì",
       "english": "digital economy",
-      "example": "中国的数字经济规模居全球前列。",
-      "translation": "China's digital economy ranks among the top in the world."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l10_p02",
       "chinese": "移动支付",
       "pinyin": "yí dòng zhī fù",
       "english": "mobile payment",
-      "example": "中国的移动支付技术已经走向国际市场。",
-      "translation": "China's mobile payment technology has entered the international market."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l10_p03",
       "chinese": "跨文化交流",
       "pinyin": "kuà wén huà jiāo liú",
       "english": "cross-cultural communication",
-      "example": "网络工具促进了全球范围内的跨文化交流。",
-      "translation": "Online tools have promoted cross-cultural communication on a global scale."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l10_p04",
       "chinese": "用户体验",
       "pinyin": "yòng hù tǐ yàn",
       "english": "user experience",
-      "example": "良好的用户体验是产品成功的重要因素。",
-      "translation": "A good user experience is an important factor in the success of a product."
+      "part_of_speech": "phrase"
     },
     {
       "id": "hsk6_l10_p05",
       "chinese": "社交媒体",
       "pinyin": "shè jiāo méi tǐ",
       "english": "social media",
-      "example": "社交媒体已成为人们了解世界的重要渠道。",
-      "translation": "Social media has become an important channel through which people understand the world."
+      "part_of_speech": "phrase"
     }
   ],
   "key_sentences": [
@@ -487,33 +480,33 @@
       "speakers": {
         "A": {
           "name": "慈欣",
-          "role": "friend",
+          "role": "朋友",
           "gender": "male"
         },
         "B": {
           "name": "兰特",
-          "role": "friend",
+          "role": "朋友",
           "gender": "female"
         }
       },
       "lines": [
         {
           "speaker": "A",
-          "chinese": "兰特，你现在在欧洲也用微信吗？",
-          "pinyin": "Lán tè, nǐ xiàn zài zài Ōu zhōu yě yòng Wēi xìn ma?",
-          "english": "Elena, do you also use WeChat in Europe now?"
+          "chinese": "兰特，你现在回欧洲了，在意大利还继续用微信吗？",
+          "pinyin": "Lán tè, nǐ xiàn zài zài huí ōu zhōu le, zài yì dà lì hái jì xù yòng Wēi xìn ma?",
+          "english": "Elena, You have been back to Europe, do you still continue to use WeChat in Italy now?"
         },
         {
           "speaker": "B",
-          "chinese": "当然用！它不仅能联系家人，而且可以看很多中文内容。",
-          "pinyin": "Dāng rán yòng! Tā bù jǐn néng lián xì jiā rén, ér qiě kě yǐ kàn hěn duō zhōng wén nèi róng.",
-          "english": "Of course! It can not only keep in touch with family, but also access lots of Chinese content."
+          "chinese": "当然用！它不仅能联系我在中国的朋友，而且可以看很多中国的新闻和其他中文内容。",
+          "pinyin": "Dāng rán yòng! Tā bù jǐn néng lián xì jiā rén, ér qiě kě yǐ kàn hěn duō zhōng guó de xīn wén hé qí tā zhōng wén nèi róng.",
+          "english": "Of course! It can not only keep in touch with family, but also access to Chinese news and other other Chinese contents ."
         },
         {
           "speaker": "A",
-          "chinese": "由于语言不同，很多外国人究竟能不能真正融入中文平台？",
-          "pinyin": "Yóu yú yǔ yán bù tóng, hěn duō wài guó rén jiū jìng néng bù néng zhēn zhèng róng rù zhōng wén píng tái?",
-          "english": "Due to language differences, can foreigners truly integrate into Chinese platforms after all?"
+          "chinese": "由于语言文化不同，你觉得很多使用微信的外国人究竟能不能真正融入中文平台呢？",
+          "pinyin": "Yóu yú yǔ yán wén huà bù tóng, hěn duō shǐ yòng wēi xìn de wài guó rén jiū jìng néng bù néng zhēn zhèng róng rù zhōng wén píng tái ne?",
+          "english": "Due to language and cuture differences, Do you think the foreigners who's using wechat can truly integrate into Chinese platforms after all?"
         },
         {
           "speaker": "B",
@@ -523,8 +516,8 @@
         },
         {
           "speaker": "A",
-          "chinese": "说得对。数字平台正在慢慢创造一种新的全球文化认同。",
-          "pinyin": "Shuō de duì. Shù zì píng tái zhèng zài màn màn chuàng zào yī zhǒng xīn de quán qiú wén huà rèn tóng.",
+          "chinese": "说得也对。数字平台正在慢慢创造一种新的全球文化认同。",
+          "pinyin": "Shuō de yě duì. Shù zì píng tái zhèng zài màn màn chuàng zào yī zhǒng xīn de quán qiú wén huà rèn tóng.",
           "english": "Well said. Digital platforms are slowly creating a new global cultural identity."
         }
       ],
@@ -535,12 +528,12 @@
       "speakers": {
         "A": {
           "name": "慈欣",
-          "role": "friend",
+          "role": "朋友",
           "gender": "male"
         },
         "B": {
           "name": "兰特",
-          "role": "friend",
+          "role": "朋友",
           "gender": "female"
         }
       },
@@ -553,9 +546,9 @@
         },
         {
           "speaker": "A",
-          "chinese": "对，由于移动支付的普及，很多地方甚至已经不接受现金了。",
-          "pinyin": "Duì, yóu yú yí dòng zhī fù de pǔ jí, hěn duō dì fāng shèn zhì yǐ jīng bú jiē shòu xiàn jīn le.",
-          "english": "Right, due to the widespread adoption of mobile payment, many places no longer even accept cash."
+          "chinese": "对，由于移动支付的普及，很多地方甚至已经不接受现金了，他们没有那么多小额现金找零。",
+          "pinyin": "Duì, yóu yú yí dòng zhī fù de pǔ jí, hěn duō dì fāng shèn zhì yǐ jīng bú jiē shòu xiàn jīn le，tā men méi yǒu nà me duō xiǎo é xiàn jīn zhǎo líng。",
+          "english": "Right, due to the widespread adoption of mobile payment, many places no longer even accept cash， They don't have that many small amounts of cash to give change。 "
         },
         {
           "speaker": "B",
@@ -571,8 +564,8 @@
         },
         {
           "speaker": "B",
-          "chinese": "所以创新也需要考虑到所有用户的体验，这才是真正的用户友好。",
-          "pinyin": "Suǒ yǐ chuàng xīn yě xū yào kǎo lǜ dào suǒ yǒu yòng hù de tǐ yàn, zhè cái shì zhēn zhèng de yòng hù yǒu hǎo.",
+          "chinese": "所以创新也需要考虑到所有用户的体验，这才是真正的对用户友好。",
+          "pinyin": "Suǒ yǐ chuàng xīn yě xū yào kǎo lǜ dào suǒ yǒu yòng hù de tǐ yàn, zhè cái shì zhēn zhèng de duì yòng hù yǒu hǎo.",
           "english": "So innovation also needs to consider the experience of all users — that is what true user-friendliness means."
         }
       ],

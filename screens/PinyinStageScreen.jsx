@@ -1,18 +1,19 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, ActivityIndicator } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { speakPinyin } from '../utils/tts';
 import PinyinLessonExercise from '../components/exercises/PinyinLessonExercise';
 import PinyinRecordExercise from '../components/exercises/PinyinRecordExercise';
 import { buildStage1, buildStage2, buildStage3, buildStage4 } from '../utils/pinyinLessonGenerator';
+import { startRecording, stopAndTranscribe, calculateAccuracy } from '../utils/speechRecognition';
 import ScreenBackground from '../components/ScreenBackground';
-import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../constants/colors';
 
 const STAGE_META = [
   { title: 'Stage 1 · Listen & Identify', icon: '🔊', color: '#FF9F43' },
-  { title: 'Stage 2 · Read & Repeat',     icon: '🗣️',  color: '#1DD1A1' },
+  { title: 'Stage 2 · Listen & Repeat',   icon: '🎙️', color: '#1DD1A1' },
   { title: 'Stage 3 · Visual Spelling',   icon: '✏️',  color: WARM_BROWN },
-  { title: 'Stage 4 · Listen & Speak',    icon: '🎙️',  color: '#03396c' },
+  { title: 'Stage 4 · Read & Speak',      icon: '🗣️',  color: '#03396c' },
 ];
 
 export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, onBack }) {
@@ -28,13 +29,23 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
   const [score,   setScore]   = useState(0);
   const [done,    setDone]    = useState(false);
 
+  // Stage 2 recording state
+  const [speakRec,          setSpeakRec]          = useState(null);
+  const [speakIsRecording,  setSpeakIsRecording]  = useState(false);
+  const [speakIsProcessing, setSpeakIsProcessing] = useState(false);
+  const [speakResult,       setSpeakResult]       = useState(null);
+
   const meta = STAGE_META[stageIndex] ?? STAGE_META[0];
   const exercise = exercises[current];
 
-  // Auto-play audio when Stage 2 card changes
+  // Auto-play audio when Stage 2 card changes; reset recording state
   useEffect(() => {
-    if (stageIndex === 1 && exercise) {
-      speakPinyin(exercise.audio_key || exercise.syllable);
+    if (stageIndex === 1) {
+      setSpeakRec(null);
+      setSpeakIsRecording(false);
+      setSpeakIsProcessing(false);
+      setSpeakResult(null);
+      if (exercise) speakPinyin(exercise.audio_key || exercise.syllable);
     }
   }, [current, stageIndex]);
 
@@ -45,18 +56,45 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
     else setCurrent(next);
   };
 
-  // Stage 2 speak cards — simple display with "Got it" button
+  const handleSpeakRecord = async () => {
+    if (speakIsRecording) {
+      setSpeakIsRecording(false);
+      setSpeakIsProcessing(true);
+      try {
+        const item       = exercises[current];
+        const hint       = item?.chinese || item?.syllable || '';
+        const transcribed = await stopAndTranscribe(speakRec, hint);
+        const accuracy    = calculateAccuracy(transcribed, hint);
+        setSpeakResult({ accuracy, transcribed, passed: accuracy >= 70 });
+      } catch {
+        setSpeakResult({ accuracy: 0, transcribed: '', passed: false });
+      } finally {
+        setSpeakIsProcessing(false);
+      }
+    } else {
+      try {
+        const rec = await startRecording();
+        setSpeakRec(rec);
+        setSpeakIsRecording(true);
+      } catch (e) {
+        console.warn('Microphone error:', e);
+      }
+    }
+  };
+
+  // Stage 2 speak cards — listen, then record yourself repeating
   const renderSpeakCard = () => {
     const item = exercises[current];
     if (!item) return null;
     return (
       <View style={styles.speakCard}>
-        <Text style={styles.speakCardInstr}>🗣️ Listen and repeat aloud</Text>
+        <Text style={styles.speakCardInstr}>🎧 Listen, then record yourself repeating</Text>
         {item.chinese ? (
           <Text style={styles.speakCardChinese}>{item.chinese}</Text>
         ) : null}
         <Text style={styles.speakCardSyllable}>{item.syllable}</Text>
         <Text style={styles.speakCardMeaning}>{item.meaning}</Text>
+
         <TouchableOpacity
           style={styles.playBtn}
           onPress={() => speakPinyin(item.audio_key || item.syllable)}
@@ -64,8 +102,39 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
         >
           <Text style={styles.playBtnText}>🔊  Play Audio</Text>
         </TouchableOpacity>
+
+        {/* Record button */}
+        {!speakResult && (
+          <TouchableOpacity
+            style={[styles.recordBtn, speakIsRecording && styles.recordBtnActive]}
+            onPress={handleSpeakRecord}
+            disabled={speakIsProcessing}
+            activeOpacity={0.85}
+          >
+            {speakIsProcessing ? (
+              <ActivityIndicator color={CARD_WHITE} size="small" />
+            ) : (
+              <Text style={styles.recordBtnText}>
+                {speakIsRecording ? '⏹  Stop & Check' : '🎙️  Record'}
+              </Text>
+            )}
+          </TouchableOpacity>
+        )}
+
+        {/* Recording result */}
+        {speakResult && (
+          <View style={[styles.speakResultCard, speakResult.passed ? styles.resultPass : styles.resultFail]}>
+            <Text style={[styles.speakResultAccuracy, { color: speakResult.passed ? SUCCESS : ERROR }]}>
+              {speakResult.passed ? '✓ ' : '✗ '}{speakResult.accuracy}%
+            </Text>
+            <Text style={styles.speakResultMsg}>
+              {speakResult.passed ? 'Great pronunciation!' : 'Keep practicing!'}
+            </Text>
+          </View>
+        )}
+
         <TouchableOpacity style={styles.gotItBtn} onPress={() => advance(true)} activeOpacity={0.85}>
-          <Text style={styles.gotItText}>✓  Got it — Next</Text>
+          <Text style={styles.gotItText}>✓  Next</Text>
         </TouchableOpacity>
       </View>
     );
@@ -139,6 +208,7 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
                 exercise={exercise}
                 onCorrect={() => advance(true)}
                 onWrong={() => advance(false)}
+                noAutoPlay
               />
             )}
           </ScrollView>
@@ -202,6 +272,17 @@ const styles = StyleSheet.create({
     paddingHorizontal: 24, paddingVertical: 14, borderWidth: 1.5, borderColor: '#1DD1A1',
   },
   playBtnText: { fontSize: 16, fontWeight: '700', color: '#1DD1A1' },
+  recordBtn: {
+    width: '100%', flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
+    backgroundColor: '#03396c', borderRadius: 16, paddingVertical: 14, marginTop: 4,
+  },
+  recordBtnActive: { backgroundColor: ERROR },
+  recordBtnText:   { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
+  speakResultCard: { width: '100%', borderRadius: 14, padding: 14, alignItems: 'center', borderWidth: 2, gap: 4 },
+  resultPass:      { backgroundColor: '#e8f5e9', borderColor: SUCCESS },
+  resultFail:      { backgroundColor: '#fde8e8', borderColor: ERROR },
+  speakResultAccuracy: { fontSize: 22, fontWeight: '900' },
+  speakResultMsg:      { fontSize: 13, color: DEEP_NAVY },
   gotItBtn: {
     width: '100%', backgroundColor: '#1DD1A1', borderRadius: 16,
     paddingVertical: 16, alignItems: 'center', marginTop: 4,
