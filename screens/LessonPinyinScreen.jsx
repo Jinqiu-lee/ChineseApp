@@ -259,14 +259,14 @@ const styles = StyleSheet.create({
   sectionHint: { fontSize: 12, color: SLATE_TEAL },
 
   // Tone cards
-  tonesGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginBottom: 28 },
+  tonesGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 28 },
   toneCard:  {
-    width: '47%', borderRadius: 16, padding: 16, alignItems: 'center',
-    borderWidth: 2, gap: 4,
+    width: '30%', borderRadius: 12, padding: 10, alignItems: 'center',
+    borderWidth: 2, gap: 3,
   },
-  toneCardIcon: { fontSize: 16 },
-  toneCardSyl:  { fontSize: 32, fontWeight: '900', letterSpacing: 2 },
-  toneCardName: { fontSize: 11, fontWeight: '700' },
+  toneCardIcon: { fontSize: 12 },
+  toneCardSyl:  { fontSize: 20, fontWeight: '900', letterSpacing: 1 },
+  toneCardName: { fontSize: 10, fontWeight: '700' },
 
   // Chips
   chipsRow:     { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 28 },
