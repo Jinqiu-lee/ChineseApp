@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet, StatusBar, Animated } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet, StatusBar, Animated, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import WaveBackground from '../components/WaveBackground';
 import ScreenBackground from '../components/ScreenBackground';
@@ -46,7 +46,11 @@ export default function RoundCompleteScreen({
       <SafeAreaView style={styles.safe}>
       <StatusBar barStyle={T.statusBar} />
       {T.waveEnabled && <WaveBackground colors={T.waveColors} />}
-      <View style={styles.container}>
+      <ScrollView
+        contentContainerStyle={styles.container}
+        showsVerticalScrollIndicator={false}
+        keyboardShouldPersistTaps="handled"
+      >
 
         {/* Header */}
         <View style={styles.headerCard}>
@@ -125,7 +129,7 @@ export default function RoundCompleteScreen({
           </Animated.View>
         )}
 
-      </View>
+      </ScrollView>
       </SafeAreaView>
     </ScreenBackground>
   );
@@ -143,7 +147,7 @@ const VG = {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: 'transparent' },
   container: {
-    flex: 1, alignItems: 'center', justifyContent: 'center',
+    flexGrow: 1, alignItems: 'center', justifyContent: 'center',
     padding: 32, gap: 16,
   },
 

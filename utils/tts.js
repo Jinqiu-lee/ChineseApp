@@ -332,6 +332,11 @@ function getPinyinAudioKey(syllable) {
   const normalized = lower.replace(/ü/g, 'v').replace(/'/g, '');
   if (INITIAL_CANONICAL_PY[normalized] || INITIAL_CANONICAL_PY[lower]) return `init_${normalized}`;
   if (FINAL_CANONICAL_PY[normalized] || FINAL_CANONICAL_PY[lower])   return `fin_${normalized}`;
+  // Multi-syllable input (e.g. "bà ba", "mā ma") → join with underscore (matches filename convention)
+  if (normalized.includes(' ')) {
+    const multiKey = normalized.trim().split(/\s+/).map(pinyinToNumbered).join('_');
+    return multiKey;
+  }
   // Tone-practice syllable → numbered form (e.g. "mā" → "ma1", "nǚ'ér" → "nuer2")
   const numbered = pinyinToNumbered(normalized);
   if (PINYIN_AUDIO[numbered]) return numbered;

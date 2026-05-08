@@ -178,6 +178,8 @@ export default function LessonDetailScreen({
   lessonCompleted = false,
   round1Done = false,
   sectionDone = {},
+  initialTab = 'learning',
+  initialOpenSection = null,
   onSectionComplete,
   onBack,
   onLessonComplete,
@@ -189,8 +191,8 @@ export default function LessonDetailScreen({
   const levelMap = LESSONS_BY_LEVEL[levelId] || LESSONS;
   const lesson = levelMap[lessonId];
   const avatarId = lesson ? getAvatarForLesson(levelId, lesson.lesson, lesson.topic, lesson.topic_chinese) : 'eileen';
-  const [openSection, setOpenSection] = useState(null); // 'words' | 'sentences' | 'grammar' | null
-  const [activeTab, setActiveTab] = useState('learning');
+  const [openSection, setOpenSection] = useState(initialOpenSection || null); // 'words' | 'sentences' | 'grammar' | 'dialogue' | null
+  const [activeTab, setActiveTab] = useState(initialTab);
   const [toast, setToast] = useState(null);
   const [highlightPhase2, setHighlightPhase2] = useState(false);
 
@@ -245,6 +247,7 @@ export default function LessonDetailScreen({
   };
   const handleSectionDone = (sectionKey) => {
     if (onSectionComplete) onSectionComplete(sectionKey);
+    setOpenSection(null);
   };
   const switchTab = (tab) => { stopAudio(); setOpenSection(null); setActiveTab(tab); };
   const handleBack = () => {
@@ -275,11 +278,22 @@ export default function LessonDetailScreen({
     if (devUnlockAll) return true;
     if (currentRound === 1) {
       if (i === 0 || i === 1) return !!sectionDone?.newwords;
-      return !!(sectionDone?.sentences || sectionDone?.grammar);
+      return !!(sectionDone?.sentences && sectionDone?.grammar);
     }
     return i === 0 || stageProgress.includes(i - 1);
   };
   const isCompleted = (i) => stageProgress.includes(i);
+
+  const handleStartPractice = () => {
+    for (let i = 0; i < 5; i++) {
+      if (isUnlocked(i) && !isCompleted(i)) {
+        stopAudio();
+        onSelectStage(i);
+        return;
+      }
+    }
+    switchTab('practice');
+  };
   const completedCount = stageProgress.length;
 
   return (
@@ -590,6 +604,16 @@ export default function LessonDetailScreen({
             </View>
           </TouchableOpacity>
         )}
+
+        {/* Start Practice button — jumps to first unlocked incomplete stage */}
+        <TouchableOpacity
+          style={styles.startPracticeBtn}
+          onPress={handleStartPractice}
+          activeOpacity={0.85}
+        >
+          <Text style={styles.startPracticeBtnText}>🎯 Start Practice</Text>
+          <Text style={styles.startPracticeBtnSub}>Jump to Practice Stages →</Text>
+        </TouchableOpacity>
         </>)}
 
         {activeTab === 'practice' && (<>
@@ -640,7 +664,9 @@ export default function LessonDetailScreen({
                   Stage {i + 1}: {stage.name}
                 </Text>
                 <Text style={[styles.stageDesc, !unlocked && styles.textMuted]}>
-                  {stage.desc}
+                  {!unlocked && currentRound === 1
+                    ? (i < 2 ? 'Complete New Words to unlock' : 'Complete Grammar & Sentences to unlock')
+                    : stage.desc}
                 </Text>
               </View>
 
@@ -949,4 +975,13 @@ const styles = StyleSheet.create({
   errorContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 20 },
   errorText:      { fontSize: 20, fontWeight: '700', color: ERROR, marginBottom: 16 },
   backButtonText: { fontSize: 16, fontWeight: '600', color: VG.gold },
+
+  startPracticeBtn: {
+    backgroundColor: SLATE_TEAL, borderRadius: 18, padding: 20,
+    alignItems: 'center', marginTop: 20,
+    shadowColor: SLATE_TEAL, shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25, shadowRadius: 10, elevation: 5,
+  },
+  startPracticeBtnText: { fontSize: 17, fontWeight: '800', color: CARD_WHITE },
+  startPracticeBtnSub:  { fontSize: 13, color: 'rgba(255,255,255,0.75)', marginTop: 4 },
 });

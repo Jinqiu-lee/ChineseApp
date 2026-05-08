@@ -160,7 +160,7 @@ export default function LessonPinyinScreen({ lessonData, onBack, onOpenFoundatio
                       activeOpacity={0.75}
                     >
                       <Text style={styles.toneCardIcon}>🔊</Text>
-                      <Text style={[styles.toneCardSyl, { color }]}>{syl}</Text>
+                      <Text style={[styles.toneCardSyl, { color }]} adjustsFontSizeToFit numberOfLines={2}>{syl}</Text>
                       {toneNum > 0 && <Text style={[styles.toneCardName, { color }]}>{TONE_NAMES[toneNum]}</Text>}
                     </TouchableOpacity>
                   );
@@ -261,12 +261,12 @@ const styles = StyleSheet.create({
   // Tone cards
   tonesGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 28 },
   toneCard:  {
-    width: '30%', borderRadius: 12, padding: 10, alignItems: 'center',
-    borderWidth: 2, gap: 3,
+    width: '30%', height: 88, borderRadius: 12, padding: 10, alignItems: 'center',
+    justifyContent: 'center', borderWidth: 2, gap: 3,
   },
   toneCardIcon: { fontSize: 12 },
-  toneCardSyl:  { fontSize: 20, fontWeight: '900', letterSpacing: 1 },
-  toneCardName: { fontSize: 10, fontWeight: '700' },
+  toneCardSyl:  { fontSize: 20, fontWeight: '900', textAlign: 'center' },
+  toneCardName: { fontSize: 10, fontWeight: '700', textAlign: 'center' },
 
   // Chips
   chipsRow:     { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 28 },

@@ -368,7 +368,7 @@
     {
       "number": 1,
       "title": "Using 是 (shì) - The verb 'to be'",
-      "explanation": "是(shì) is used to link the subject with a noun or pronoun. It works like 'am/is/are' in English. Formula: Subject + 是(shì) + Noun/Pronoun.",
+      "explanation": "是(shì) is used to link the subject with a noun or pronoun. It works like 'am/is/are' in English. Formula: Subject + 是(shì) + Noun/Pronoun. For negative form , add 不(bù) before 是。 Formula: Subject + 不是(bú shì) + Noun/Pronoun ",
       "examples": [
         {
           "chinese": "我是学生。",
@@ -379,6 +379,21 @@
           "chinese": "他是老师。",
           "pinyin": "Tā shì lǎo shī.",
           "english": "He is a teacher."
+        },
+        {
+          "chinese": "她是谁？",
+          "pinyin": "Tā shì shéi ?",
+          "english": "Who is she ?"
+        },
+        {
+          "chinese": "我不是中国人",
+          "pinyin": "Wǒ bú shì zhōng guó rén",
+          "english": "I am not Chinese."
+        },
+        {
+          "chinese": "他不是老师。",
+          "pinyin": "Tā bú shì lǎo shī.",
+          "english": "He is not a teacher."
         }
       ],
       "exercises": [
@@ -429,22 +444,22 @@
           ]
         },
         {
-          "question": "Choose the correct sentence: 'He is a student'",
+          "question": "Choose the correct sentence: 'He is not a student'",
           "type": "multiple_choice",
-          "correct": "他是学生。",
+          "correct": "他不是学生。",
           "options": [
-            "他是学生。",
-            "他有学生。",
-            "他在学生。",
-            "学生他是。"
+            "他不是学生。",
+            "他没有学生。",
+            "他不在学生。",
+            "学生他不是。"
           ],
           "option_pinyin": [
-            "Tā shì xué shēng.",
-            "Tā yǒu xué shēng.",
-            "Tā zài xué shēng.",
-            "Xué shēng tā shì."
+            "Tā bú shì xué shēng.",
+            "Tā méi yǒu xué shēng.",
+            "Tā bú zài xué shēng.",
+            "Xué shēng tā bú shì."
           ],
-          "correct_pinyin": "Tā shì xué shēng."
+          "correct_pinyin": "Tā bú shì xué shēng."
         }
       ]
     },

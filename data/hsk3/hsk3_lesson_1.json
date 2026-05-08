@@ -63,7 +63,7 @@
     {
       "id": "hsk3_l1_07",
       "chinese": "美发",
-      "pinyin": "měi fǎ",
+      "pinyin": "měi fà",
       "english": "Hairdresser / Beauty salon",
       "part_of_speech": "noun",
       "example": "我先去美发一趟，然后去社区中心。",
@@ -143,7 +143,7 @@
     {
       "id": "hsk3_l1_p05",
       "chinese": "去美发一趟",
-      "pinyin": "qù měi fǎ yí tàng",
+      "pinyin": "qù měi fà yí tàng",
       "english": "Make a trip to the hairdresser",
       "part_of_speech": "phrase"
     },
@@ -187,7 +187,7 @@
     },
     {
       "chinese": "我先去美发一趟，然后去社区中心。",
-      "pinyin": "Wǒ xiān qù měi fǎ yí tàng, rán hòu qù shè qū zhōng xīn.",
+      "pinyin": "Wǒ xiān qù měi fà yí tàng, rán hòu qù shè qū zhōng xīn.",
       "english": "I'll make a trip to the hairdresser first, then go to the community centre."
     },
     {
@@ -205,7 +205,7 @@
     {
       "number": 1,
       "title": "「不」的变调 — Tone Sandhi of bù",
-      "explanation": "不 (bù) is normally tone 4. Before another tone-4 syllable it changes to tone 2: 不去 → bú qù, 不是 → bú shì. Before tones 1, 2, and 3 it stays tone 4: 不来 (bù lái), 不行 (bù xíng), 不好 (bù hǎo). Formula: 不 + Tone 4 syllable → 不 becomes Tone 2.",
+      "explanation": "不 (bù) is normally 4th tone. Before another tone-4 syllable it changes to tone 2: 不去 → bú qù, 不是 → bú shì. Before tones 1, 2, and 3 it stays tone 4: 不来(bù lái), 不行(bù xíng), 不好(bù hǎo), 不说(bù shuō). Formula: 不 + Tone 4 syllable → 不 becomes Tone 2 - bú.",
       "examples": [
         {
           "chinese": "他不去了。",
@@ -216,6 +216,11 @@
           "chinese": "这不是我的计划。",
           "pinyin": "Zhè bú shì wǒ de jì huà.",
           "english": "This is not my plan."
+        },
+        {
+          "chinese": "你不可以坐在这里。",
+          "pinyin": "Nǐ bù kě yǐ zuò zài zhè lǐ.",
+          "english": "You can't sit here."
         }
       ],
       "exercises": [
@@ -279,7 +284,7 @@
     {
       "number": 2,
       "title": "否定结构「不…了」— Negative Change: Not Anymore",
-      "explanation": "Subject + 不 + Verb + 了 means 'no longer do something' or 'have stopped doing something'. 了 here signals a change in situation. E.g. 我不去了 = I'm not going anymore. 他不吃了 = He's stopped eating. This is different from a simple negation — it implies a change from a previous state.",
+      "explanation": "Subject + 不 + Verb + 了 means 'no longer do something' or 'have stopped doing something'. 了 here signals a change in situation. E.g. 我不去了 = I'm not going anymore. 他不吃了 = He's stopped eating. 下雨了 = It started to rain. This is different from a simple negation — it implies a change from a previous state.",
       "examples": [
         {
           "chinese": "我不去了。",
@@ -363,12 +368,12 @@
       "examples": [
         {
           "chinese": "我先去美发，然后去社区中心。",
-          "pinyin": "Wǒ xiān qù měi fǎ, rán hòu qù shè qū zhōng xīn.",
+          "pinyin": "Wǒ xiān qù měi fà, rán hòu qù shè qū zhōng xīn.",
           "english": "I'll go to the hairdresser first, then go to the community centre."
         },
         {
-          "chinese": "你先打算好，然后再说。",
-          "pinyin": "Nǐ xiān dǎ suàn hǎo, rán hòu zài shuō.",
+          "chinese": "你先计划好，然后再说。",
+          "pinyin": "Nǐ xiān jì huà hǎo, rán hòu zài shuō.",
           "english": "Plan it out first, then we'll talk."
         }
       ],
@@ -711,7 +716,7 @@
         {
           "speaker": "A",
           "chinese": "我先去美发一趟，然后才去超市，大概下午两点吧。",
-          "pinyin": "Wǒ xiān qù měi fǎ yí tàng, rán hòu cái qù chāo shì, dà gài xià wǔ liǎng diǎn ba.",
+          "pinyin": "Wǒ xiān qù měi fà yí tàng, rán hòu cái qù chāo shì, dà gài xià wǔ liǎng diǎn ba.",
           "english": "I'll make a trip to the hairdresser first, then go to the supermarket, probably around 2 p.m."
         }
       ]

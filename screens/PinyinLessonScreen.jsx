@@ -33,13 +33,21 @@ export default function PinyinLessonScreen({
   lessonData,
   stageProgress = [],     // e.g. [0,1,2] = stages 0,1,2 done
   quizPassed = false,
+  learnDone = false,
   initialTab = 'learn',
   onBack,
-  onStartStage,           // (stageIndex: 0|1|2) => void
+  onStartStage,           // (stageIndex: 0|1|2|3) => void
+  onLearnComplete,        // called when user taps "Start Practice" to unlock Practice
   onTakeQuiz,
 }) {
   const [tab,           setTab]           = useState(initialTab); // 'learn' | 'practice'
   const [selectedFinal, setSelectedFinal] = useState(null);  // opens tone popup
+
+  const isStageUnlocked = (index) => {
+    if (!learnDone) return false;
+    if (index === 0) return true;
+    return stageProgress.includes(index - 1);
+  };
 
   if (!lessonData) return null;
 
@@ -232,6 +240,15 @@ export default function PinyinLessonScreen({
           </>
         )}
 
+        <TouchableOpacity
+          style={styles.startPracticeBtn}
+          onPress={() => onLearnComplete ? onLearnComplete() : setTab('practice')}
+          activeOpacity={0.85}
+        >
+          <Text style={styles.startPracticeBtnText}>🎯 Start Practice</Text>
+          <Text style={styles.startPracticeBtnSub}>{stages.length} stages</Text>
+        </TouchableOpacity>
+
         <View style={{ height: 40 }} />
       </ScrollView>
     );
@@ -239,32 +256,45 @@ export default function PinyinLessonScreen({
 
   const renderPracticeTab = () => (
     <ScrollView contentContainerStyle={styles.tabContent} showsVerticalScrollIndicator={false}>
-      <Text style={styles.practiceIntro}>
-        Complete all 4 stages, then take the Lesson Quiz to unlock the next lesson.
-      </Text>
+      {!learnDone ? (
+        <View style={styles.practiceLockedBanner}>
+          <Text style={styles.practiceLockedEmoji}>🔒</Text>
+          <Text style={styles.practiceLockedTitle}>Complete Learn First</Text>
+          <Text style={styles.practiceLockedSub}>
+            Go through the Learn session and tap "Start Practice" to unlock these stages.
+          </Text>
+        </View>
+      ) : (
+        <Text style={styles.practiceIntro}>
+          Complete all 4 stages, then take the Lesson Quiz to unlock the next lesson.
+        </Text>
+      )}
 
       {stages.map(stage => {
         const done = stageProgress.includes(stage.index);
+        const unlocked = isStageUnlocked(stage.index);
         return (
           <TouchableOpacity
             key={stage.index}
-            style={[styles.stageCard, done && styles.stageCardDone]}
-            onPress={() => onStartStage(stage.index)}
-            activeOpacity={0.85}
+            style={[styles.stageCard, done && styles.stageCardDone, !unlocked && styles.stageCardLocked]}
+            onPress={() => unlocked && onStartStage(stage.index)}
+            activeOpacity={unlocked ? 0.85 : 1}
           >
             <View style={styles.stageLeft}>
-              <View style={[styles.stageDot, { backgroundColor: STAGE_COLORS[stage.index] }]}>
+              <View style={[styles.stageDot, { backgroundColor: unlocked ? STAGE_COLORS[stage.index] : 'rgba(55,73,80,0.18)' }]}>
                 {done
                   ? <Text style={styles.stageDotCheck}>✓</Text>
-                  : <Text style={styles.stageDotNum}>{stage.index + 1}</Text>
+                  : unlocked
+                    ? <Text style={styles.stageDotNum}>{stage.index + 1}</Text>
+                    : <Text style={styles.stageDotLock}>🔒</Text>
                 }
               </View>
               <View style={{ flex: 1 }}>
-                <Text style={styles.stageTitle}>{stage.title}</Text>
+                <Text style={[styles.stageTitle, !unlocked && styles.stageTitleLocked]}>{stage.title}</Text>
                 <Text style={styles.stageDesc}>{stage.desc}</Text>
               </View>
             </View>
-            <Text style={styles.stageArrow}>{done ? '↩' : '→'}</Text>
+            {unlocked && <Text style={styles.stageArrow}>{done ? '↩' : '→'}</Text>}
           </TouchableOpacity>
         );
       })}
@@ -472,20 +502,30 @@ const styles = StyleSheet.create({
     backgroundColor: CARD_WHITE, borderRadius: 12, padding: 14,
     borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)',
   },
+  practiceLockedBanner: {
+    alignItems: 'center', backgroundColor: CARD_WHITE, borderRadius: 16, padding: 24,
+    marginBottom: 20, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)', gap: 8,
+  },
+  practiceLockedEmoji: { fontSize: 36 },
+  practiceLockedTitle: { fontSize: 16, fontWeight: '800', color: DEEP_NAVY },
+  practiceLockedSub:   { fontSize: 13, color: SLATE_TEAL, textAlign: 'center', lineHeight: 20 },
 
   stageCard: {
     flexDirection: 'row', alignItems: 'center',
     backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16,
     marginBottom: 12, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.20)', gap: 12,
   },
-  stageCardDone: { borderColor: 'rgba(41,102,20,0.45)' },
-  stageLeft:     { flex: 1, flexDirection: 'row', alignItems: 'center', gap: 12 },
-  stageDot:      { width: 40, height: 40, borderRadius: 20, alignItems: 'center', justifyContent: 'center', flexShrink: 0 },
-  stageDotCheck: { fontSize: 17, fontWeight: '900', color: '#FFFFFF' },
-  stageDotNum:   { fontSize: 15, fontWeight: '900', color: '#FFFFFF' },
-  stageTitle:    { fontSize: 15, fontWeight: '800', color: DEEP_NAVY, marginBottom: 2 },
-  stageDesc:     { fontSize: 12, color: SLATE_TEAL },
-  stageArrow:    { fontSize: 18, color: WARM_BROWN, fontWeight: '700' },
+  stageCardDone:   { borderColor: 'rgba(41,102,20,0.45)' },
+  stageCardLocked: { opacity: 0.55 },
+  stageLeft:       { flex: 1, flexDirection: 'row', alignItems: 'center', gap: 12 },
+  stageDot:        { width: 40, height: 40, borderRadius: 20, alignItems: 'center', justifyContent: 'center', flexShrink: 0 },
+  stageDotCheck:   { fontSize: 17, fontWeight: '900', color: '#FFFFFF' },
+  stageDotNum:     { fontSize: 15, fontWeight: '900', color: '#FFFFFF' },
+  stageDotLock:    { fontSize: 14 },
+  stageTitle:      { fontSize: 15, fontWeight: '800', color: DEEP_NAVY, marginBottom: 2 },
+  stageTitleLocked:{ color: SLATE_TEAL },
+  stageDesc:       { fontSize: 12, color: SLATE_TEAL },
+  stageArrow:      { fontSize: 18, color: WARM_BROWN, fontWeight: '700' },
 
   quizBtn: {
     flexDirection: 'row', alignItems: 'center', gap: 12,
@@ -539,4 +579,8 @@ const styles = StyleSheet.create({
   spellingExPinyin:   { fontSize: 15, fontWeight: '700', color: WARM_BROWN, flex: 1 },
   spellingExNote:     { fontSize: 12, color: SLATE_TEAL, flex: 2 },
   spellingExAudio:    { fontSize: 18 },
+
+  startPracticeBtn:     { backgroundColor: SLATE_TEAL, borderRadius: 18, padding: 20, alignItems: 'center', marginTop: 28 },
+  startPracticeBtnText: { fontSize: 17, fontWeight: '800', color: CARD_WHITE },
+  startPracticeBtnSub:  { fontSize: 13, color: 'rgba(255,255,255,0.75)', marginTop: 4 },
 });

@@ -21,7 +21,7 @@ const STAGE_NAMES = [
   'First Look', 'Listen & Choose', 'Build Sentences', 'Match & Review', 'Final Challenge',
 ];
 
-export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', stageIndex, roundIndex = 0, onComplete, onBack }) {
+export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', stageIndex, roundIndex = 0, onComplete, onNext, onBack }) {
   const T = LEVEL_SCREEN_PALETTES[levelId] || LEVEL_SCREEN_PALETTES.hsk1;
   const avatarId = getAvatarForLesson(lessonData?.topic, lessonData?.topic_chinese);
   const [exercises, setExercises] = useState([]);
@@ -37,9 +37,11 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
   }, []);
 
   const advance = (wasCorrect) => {
+    const newScore = wasCorrect ? score + 1 : score;
     if (wasCorrect) setScore(s => s + 1);
     const next = currentIndex + 1;
     if (next >= exercises.length) {
+      onComplete(stageIndex, newScore, exercises.length); // mark complete now, before showing done screen
       setDone(true);
     } else {
       setCurrentIndex(next);
@@ -90,7 +92,7 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
             </View>
             <TouchableOpacity
               style={[styles.continueBtn, { backgroundColor: T.accent, shadowColor: T.shadow }]}
-              onPress={() => onComplete(stageIndex, score, exercises.length)}
+              onPress={() => onNext(stageIndex)}
               activeOpacity={0.85}
             >
               <Text style={[styles.continueBtnText, { color: T.accentText }]}>Continue →</Text>

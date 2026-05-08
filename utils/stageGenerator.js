@@ -760,6 +760,36 @@ function getHskLevel(lessonData) {
   return match ? parseInt(match[1], 10) : 1;
 }
 
+// Count Chinese characters only (excludes punctuation, spaces, pinyin)
+function countChineseChars(text) {
+  if (!text) return 0;
+  let n = 0;
+  for (const ch of text) {
+    if ((ch >= '一' && ch <= '鿿') || (ch >= '㐀' && ch <= '䶿')) n++;
+  }
+  return n;
+}
+
+// Returns true if a sentence's Chinese text is short enough for the given level.
+// L2-4: ≤10 Chinese chars.
+// L5-6: ≤10 chars normally; if the sentence contains a comma and total is <15, also OK.
+function sentenceAllowedForLevel(chinese, hskLevel) {
+  if (!chinese || hskLevel <= 1) return true;
+  const n = countChineseChars(chinese);
+  if (hskLevel >= 5) {
+    if (chinese.includes('，') && n > 10) return n < 15;
+    return n <= 10;
+  }
+  // L2-4
+  return n <= 10;
+}
+
+// Filter a sentence array to only items allowed at the given level
+function filterSentencesForLevel(sentences, hskLevel) {
+  if (hskLevel <= 1) return sentences;
+  return sentences.filter(s => sentenceAllowedForLevel(s?.chinese, hskLevel));
+}
+
 // Shorten a Chinese answer to the first clause (up to first punctuation mark)
 function shortenChinese(text, maxChars = 20) {
   if (!text) return text;
@@ -781,8 +811,38 @@ function shortenPinyin(pinyin, chineseLen) {
   return syllables.slice(0, chineseLen).join(' ');
 }
 
+// Level-aware shortening for speak/respond exercises.
+// L1:   original 20-char cap.
+// L5-6: full sentence OK when it has a comma and total Chinese chars < 15.
+// L2-4 (and L5-6 fallback): first clause, hard cap at 10 Chinese chars.
+function shortenChineseForLevel(text, hskLevel) {
+  if (!text) return text;
+  if (hskLevel <= 1) return shortenChinese(text, 20);
+
+  if (hskLevel >= 5) {
+    const total = countChineseChars(text);
+    if (text.includes('，') && total > 10 && total < 15) return text;
+  }
+
+  // Take first clause
+  const firstClause = text.split(/[，。！？；…]|——/)[0] || text;
+  if (countChineseChars(firstClause) <= 10) return firstClause;
+
+  // Hard cap: accumulate characters until we reach 10 Chinese chars
+  let count = 0;
+  let result = '';
+  for (const ch of firstClause) {
+    result += ch;
+    if ((ch >= '一' && ch <= '鿿') || (ch >= '㐀' && ch <= '䶿')) {
+      count++;
+      if (count >= 10) break;
+    }
+  }
+  return result;
+}
+
 function makeSpeakRespond(qaPair, hskLevel) {
-  const shortChinese = shortenChinese(qaPair.answerChinese);
+  const shortChinese = shortenChineseForLevel(qaPair.answerChinese, hskLevel);
   const shortPinyin  = shortenPinyin(qaPair.answerPinyin, [...shortChinese].length);
   return {
     type: 'speak',
@@ -848,9 +908,12 @@ function arrangeOrFallback(sentence, i, vocab) {
 }
 
 // ── Shared setup ─────────────────────────────────────────────────────────
-function buildSpeakPool(vocab, sentences) {
+// Builds the speak pool from vocab + sentences, filtering sentences by level.
+// Vocab items (single words) are never filtered — length limits only apply to sentences.
+function buildSpeakPool(vocab, sentences, hskLevel = 1) {
   const multiChar = vocab.filter(v => v.chinese && [...v.chinese].length >= 2);
-  const sentItems = sentences.map(s => ({ chinese: s.chinese, pinyin: s.pinyin || '', english: s.english || '' }));
+  const allowed = filterSentencesForLevel(sentences, hskLevel);
+  const sentItems = allowed.map(s => ({ chinese: s.chinese, pinyin: s.pinyin || '', english: s.english || '' }));
   const pool = shuffle([...multiChar, ...sentItems]);
   return pool.length > 0 ? pool : vocab;
 }
@@ -1036,10 +1099,10 @@ function buildMasteryRound(vocab, sentences, pool, respondOrFallback, L) {
 export function generateQuizRound(lessonData) {
   const vocab     = lessonData.vocabulary || [];
   const sentences = (lessonData.key_sentences || []).filter(s => s?.chinese);
-  const pool      = buildSpeakPool(vocab, sentences);
   const qaPairs   = extractQAPairs(lessonData);
   const L         = lessonData.lesson || 5;
   const hskLevel  = getHskLevel(lessonData);
+  const pool      = buildSpeakPool(vocab, sentences, hskLevel);
 
   const respondOrFallback = (i) =>
     qaPairs.length > 0
@@ -1086,14 +1149,15 @@ export function generateRounds(lessonData) {
   const sentences = (lessonData.key_sentences || []).filter(s => s?.chinese);
   const gramSentences = extractGrammarSentences(lessonData);
   const idiomItems = extractIdiomItems(lessonData);
-  const pool = buildSpeakPool(vocab, sentences);
   const qaPairs = extractQAPairs(lessonData);
   const L = lessonData.lesson || 5; // lesson number for image lookup
   const hskLevel = getHskLevel(lessonData);
 
+  const pool = buildSpeakPool(vocab, sentences, hskLevel);
+
   // Extended content for Rounds 2 & 3: mix sentences + grammar + idioms
   const extSentences = shuffle([...sentences, ...gramSentences]).filter(Boolean);
-  const extPool = buildSpeakPool([...vocab], [...sentences, ...gramSentences, ...idiomItems]);
+  const extPool = buildSpeakPool([...vocab], [...sentences, ...gramSentences, ...idiomItems], hskLevel);
 
   // Helper: pick a Q&A respond exercise, fall back to speak_repeat if none available
   const respondOrFallback = (i) =>

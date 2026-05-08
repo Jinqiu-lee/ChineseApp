@@ -43,23 +43,51 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
     return (str || '').replace(/[^\u4e00-\u9fff\u3400-\u4dbf]/g, '').length;
   }
 
-  // For respond exercises: if answerChinese has fewer than 3 Chinese characters,
-  // split fullAnswerChinese on ，。！？ and take the first two segments —
-  // long enough to evaluate a recording without being overwhelming.
-  // Otherwise use answerChinese / answerPinyin as-is.
+  // Returns the best display segment from a full sentence:
+  // - Splits on Chinese punctuation keeping closing punctuation with each segment
+  // - If the first segment is ≤ 4 chars, includes the next too (short openers need context)
+  // - Otherwise greedily adds segments until the next would exceed 10 chars
+  // - Never cuts mid-segment; always returns at least one complete segment
+  function getDisplaySegment(fullSentence) {
+    if (!fullSentence) return fullSentence;
+    const segments = fullSentence.split(/(?<=[，。！？])/).filter(s => s.trim());
+    if (segments.length === 0) return fullSentence;
+    if (segments.length === 1) return segments[0];
+    let result = segments[0];
+    if (countChineseChars(result) <= 4) {
+      result += segments[1];
+      return result;
+    }
+    if (countChineseChars(result) > 10) return result;
+    for (let i = 1; i < segments.length; i++) {
+      const candidate = result + segments[i];
+      if (countChineseChars(candidate) <= 10) {
+        result = candidate;
+      } else {
+        break;
+      }
+    }
+    return result;
+  }
+
+  // For respond exercises: if answerChinese is too short (< 3 chars), derive the
+  // display target from fullAnswerChinese using getDisplaySegment. Otherwise use as-is.
   function resolveRespondTarget(ex) {
     const shortChinese = ex.answerChinese || '';
     if (countChineseChars(shortChinese) >= 3) {
       return { chinese: shortChinese, pinyin: ex.answerPinyin || '' };
     }
-    const full      = ex.fullAnswerChinese || shortChinese;
+    const full       = ex.fullAnswerChinese || shortChinese;
     const fullPinyin = ex.fullAnswerPinyin  || ex.answerPinyin || '';
-    const segs  = full.split(/[，。！？]/).map(s => s.trim()).filter(Boolean);
-    const pySegs = fullPinyin.split(/[,，.。!！?？]/).map(s => s.trim()).filter(Boolean);
-    return {
-      chinese: segs.slice(0, 2).join(''),
-      pinyin:  pySegs.slice(0, 2).join(' '),
-    };
+
+    const displayChinese = getDisplaySegment(full);
+
+    // Match pinyin segments to however many Chinese segments were included
+    const pySegs   = fullPinyin.split(/[,，.。!！?？]/).map(s => s.trim()).filter(Boolean);
+    const segCount = Math.max(1, (displayChinese.match(/[，。！？]/g) || []).length);
+    const displayPinyin = pySegs.slice(0, segCount).join(' ');
+
+    return { chinese: displayChinese, pinyin: displayPinyin };
   }
 
   // The Chinese text we compare the recording against

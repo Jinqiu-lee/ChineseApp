@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { View, ActivityIndicator, StyleSheet, Alert } from 'react-native';
 
 // ── Developer flag ───────────────────────────────────────────
 // TODO: set to false before release
-const DEV_UNLOCK_ALL = true;
+const DEV_UNLOCK_ALL = false;
 import { logAvatarVoices } from './config/avatarVoices';
 if (DEV_UNLOCK_ALL) logAvatarVoices();
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -22,6 +22,7 @@ import PinyinLessonScreen from './screens/PinyinLessonScreen';
 import PinyinStageScreen from './screens/PinyinStageScreen';
 import PinyinLessonQuizScreen from './screens/PinyinLessonQuizScreen';
 import PinyinFinalQuizScreen from './screens/PinyinFinalQuizScreen';
+import UnlockModal from './components/UnlockModal';
 
 // Pinyin lesson data
 import pinyinLesson1  from './data/pinyin/pinyin_lesson_1.json';
@@ -153,6 +154,7 @@ const STORAGE_KEYS = {
   roundScores:        '@chineseapp:roundScores',
   pinyinQuizPassed:   '@chineseapp:pinyinQuizPassed',
   pinyinStageProgress:'@chineseapp:pinyinStageProgress',
+  pinyinLearnDone:    '@chineseapp:pinyinLearnDone',
   quizPassedLessons:  '@chineseapp:quizPassedLessons',
   sectionProgress:    '@chineseapp:sectionProgress',
 };
@@ -185,15 +187,20 @@ export default function App() {
   const [currentPinyinStageIndex, setCurrentPinyinStageIndex] = useState(null);
   const [pinyinQuizPassed, setPinyinQuizPassed] = useState([]);       // [1,2,3,...] lesson IDs passed
   const [pinyinStageProgress, setPinyinStageProgress] = useState({}); // { "pinyin_1": [0,1,2] }
+  const [pinyinLearnDone, setPinyinLearnDone] = useState({});         // { "pinyin_1": true }
   const [quizPassedLessons, setQuizPassedLessons] = useState({});     // { "hsk1": [1,2,...], "hsk2": [...] }
   const [sectionProgress, setSectionProgress] = useState({});         // { "hsk1_5": { newwords: true, grammar: true, ... } }
   const [pinyinLessonInitialTab, setPinyinLessonInitialTab] = useState('learn');
+  const [lessonInitialTab, setLessonInitialTab] = useState('learning');
+  const [lessonInitialOpenSection, setLessonInitialOpenSection] = useState(null);
+  const [unlockModal, setUnlockModal] = useState(null); // null | { title, message, primaryLabel, secondaryLabel, onPrimary, onSecondary }
+  const shownPopups = useRef(new Set()); // tracks which unlock popups have fired this session
 
   // ── Load saved data on startup ──────────────────────────────
   useEffect(() => {
     const load = async () => {
       try {
-        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage, savedQuizPassedLessons, savedSectionProgress] = await Promise.all([
+        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage, savedQuizPassedLessons, savedSectionProgress, savedPinyinLearnDone] = await Promise.all([
           AsyncStorage.getItem(STORAGE_KEYS.userData),
           AsyncStorage.getItem(STORAGE_KEYS.levelState),
           AsyncStorage.getItem(STORAGE_KEYS.lessonProgress),
@@ -203,6 +210,7 @@ export default function App() {
           AsyncStorage.getItem(STORAGE_KEYS.pinyinStageProgress),
           AsyncStorage.getItem(STORAGE_KEYS.quizPassedLessons),
           AsyncStorage.getItem(STORAGE_KEYS.sectionProgress),
+          AsyncStorage.getItem(STORAGE_KEYS.pinyinLearnDone),
         ]);
         const parsedUser = savedUser ? JSON.parse(savedUser) : null;
         if (parsedUser) {
@@ -220,6 +228,7 @@ export default function App() {
         if (savedPinyinStage)       setPinyinStageProgress(JSON.parse(savedPinyinStage));
         if (savedQuizPassedLessons) setQuizPassedLessons(JSON.parse(savedQuizPassedLessons));
         if (savedSectionProgress)   setSectionProgress(JSON.parse(savedSectionProgress));
+        if (savedPinyinLearnDone)   setPinyinLearnDone(JSON.parse(savedPinyinLearnDone));
       } catch (e) {
         console.warn('Failed to restore saved data:', e);
       } finally {
@@ -267,6 +276,11 @@ export default function App() {
 
   useEffect(() => {
     if (isLoading) return;
+    AsyncStorage.setItem(STORAGE_KEYS.pinyinLearnDone, JSON.stringify(pinyinLearnDone)).catch(console.warn);
+  }, [pinyinLearnDone, isLoading]);
+
+  useEffect(() => {
+    if (isLoading) return;
     AsyncStorage.setItem(STORAGE_KEYS.quizPassedLessons, JSON.stringify(quizPassedLessons)).catch(console.warn);
   }, [quizPassedLessons, isLoading]);
 
@@ -309,14 +323,19 @@ export default function App() {
     setCurrentScreen('home');
   };
 
+  const goToLesson = (tab = 'learning', openSection = null) => {
+    setLessonInitialTab(tab);
+    setLessonInitialOpenSection(openSection);
+    setCurrentScreen('lesson');
+  };
+
   const handleLessonPress = (levelId, lessonId) => {
     setCurrentLessonLevelId(levelId);
     setCurrentLessonId(lessonId);
-    // Derive which round to show based on completed stage progress
     const r1Done = (stageProgress[`${levelId}_${lessonId}_r1`] || []).length >= 5;
     const r2Done = (stageProgress[`${levelId}_${lessonId}_r2`] || []).length >= 5;
     setCurrentRound(r1Done && r2Done ? 3 : r1Done ? 2 : 1);
-    setCurrentScreen('lesson');
+    goToLesson('learning');
   };
 
   const handleQuizPass = () => {
@@ -393,14 +412,87 @@ export default function App() {
     setCurrentScreen('pinyinStage');
   };
 
+  const handlePinyinLearnComplete = () => {
+    const key = `pinyin_${currentPinyinLessonId}`;
+    setPinyinLearnDone(prev => ({ ...prev, [key]: true }));
+    // Auto-navigate to Stage 1
+    setCurrentPinyinStageIndex(0);
+    setCurrentScreen('pinyinStage');
+  };
+
   const handlePinyinStageComplete = (score, total) => {
     const key = `pinyin_${currentPinyinLessonId}`;
+    const existingStages = pinyinStageProgress[key] || [];
+    const stageIndex = currentPinyinStageIndex;
+    const updatedStages = existingStages.includes(stageIndex)
+      ? existingStages
+      : [...existingStages, stageIndex];
+
     setPinyinStageProgress(prev => {
-      const existing = prev[key] || [];
-      const idx = currentPinyinStageIndex;
-      if (existing.includes(idx)) return prev;
-      return { ...prev, [key]: [...existing, idx] };
+      const ex = prev[key] || [];
+      if (ex.includes(stageIndex)) return prev;
+      return { ...prev, [key]: [...ex, stageIndex] };
     });
+
+    // Stage 1 done → auto-navigate to Stage 2
+    if (stageIndex === 0) {
+      setCurrentPinyinStageIndex(1);
+      setCurrentScreen('pinyinStage');
+      return;
+    }
+
+    // Stage 2 done → popup to go to Stages 3 & 4
+    if (stageIndex === 1) {
+      const popupKey = `${key}:stages12_done`;
+      if (!shownPopups.current.has(popupKey)) {
+        shownPopups.current.add(popupKey);
+        setUnlockModal({
+          title: 'Great Progress! 🎉',
+          message: 'Stages 1 & 2 complete!\nReady to tackle Stages 3 & 4?',
+          primaryLabel: 'Go to Stage 3 & 4',
+          secondaryLabel: 'Continue Practice',
+          onPrimary: () => {
+            setUnlockModal(null);
+            setCurrentPinyinStageIndex(2);
+            setCurrentScreen('pinyinStage');
+          },
+          onSecondary: () => {
+            setUnlockModal(null);
+            setPinyinLessonInitialTab('practice');
+            setCurrentScreen('pinyinLesson');
+          },
+        });
+        return;
+      }
+    }
+
+    // All 4 stages done → quiz popup
+    if (updatedStages.length >= 4) {
+      const popupKey = `${key}:all_stages_done`;
+      if (!shownPopups.current.has(popupKey)) {
+        shownPopups.current.add(popupKey);
+        setUnlockModal({
+          title: 'Quiz Unlocked! 🎯',
+          message: 'All 4 stages complete!\nTake the Lesson Quiz to advance.',
+          primaryLabel: 'Continue to Quiz',
+          secondaryLabel: 'Later',
+          onPrimary: () => {
+            setUnlockModal(null);
+            setCurrentScreen('pinyinLessonQuiz');
+          },
+          onSecondary: () => {
+            setUnlockModal(null);
+            setPinyinLessonInitialTab('practice');
+            setCurrentScreen('pinyinLesson');
+          },
+        });
+        return;
+      }
+      setPinyinLessonInitialTab('practice');
+      setCurrentScreen('pinyinLesson');
+      return;
+    }
+
     setPinyinLessonInitialTab('practice');
     setCurrentScreen('pinyinLesson');
   };
@@ -469,37 +561,188 @@ export default function App() {
     setCurrentScreen('stageExercises');
   };
 
+  // Marks the stage as complete and records the score — no navigation.
+  // Called automatically when the user finishes the last exercise.
   const handleStageComplete = (stageIndex, score = 0, total = 0) => {
     const key = `${currentLessonLevelId}_${currentLessonId}_r${currentRound}`;
 
-    // Accumulate round score
     setRoundScores(prev => {
       const existing = prev[key] || { score: 0, total: 0 };
       return { ...prev, [key]: { score: existing.score + score, total: existing.total + total } };
     });
 
-    // Update stage completion and compute new progress inline (avoids stale state)
     const existingStages = stageProgress[key] || [];
     const newStages = existingStages.includes(stageIndex)
       ? existingStages
       : [...existingStages, stageIndex].sort((a, b) => a - b);
     setStageProgress(prev => ({ ...prev, [key]: newStages }));
+  };
 
-    // All 5 stages done → show round complete screen
-    if (newStages.length >= 5) {
+  // Decides where to go after the user taps "Continue" on the Stage Complete screen.
+  // Runs after handleStageComplete has already updated stageProgress.
+  const handleStageContinue = (stageIndex) => {
+    const key = `${currentLessonLevelId}_${currentLessonId}_r${currentRound}`;
+    const lessonKey = `${currentLessonLevelId}_${currentLessonId}`;
+
+    // Recompute updated stages (guard against state not yet propagated)
+    const existingStages = stageProgress[key] || [];
+    const updatedStages = existingStages.includes(stageIndex)
+      ? existingStages
+      : [...existingStages, stageIndex].sort((a, b) => a - b);
+
+    // All 5 done
+    if (updatedStages.length >= 5) {
+      // BEHAVIOR 3b: All stages done + dialogue not yet studied → Dialogue unlock popup
+      const sd = sectionProgress[lessonKey] || {};
+      if (currentRound === 1 && !DEV_UNLOCK_ALL && !sd.dialogue) {
+        const popupKey = `${lessonKey}:dialogueunlock`;
+        if (!shownPopups.current.has(popupKey)) {
+          shownPopups.current.add(popupKey);
+          setUnlockModal({
+            title: 'Dialogue Unlocked!',
+            message: 'Keep going — Dialogue is now available to study',
+            primaryLabel: 'Go to Dialogue',
+            secondaryLabel: 'Later',
+            onPrimary: () => { setUnlockModal(null); goToLesson('learning', 'dialogue'); },
+            onSecondary: () => { setUnlockModal(null); goToLesson('practice'); },
+          });
+          return;
+        }
+      }
       setCurrentScreen('roundComplete');
-    } else {
-      setCurrentScreen('lesson');
+      return;
     }
+
+    // BEHAVIOR 2 Step A: Stage 2 complete + grammar not done → "Keep Learning!" popup
+    if (stageIndex === 1 && currentRound === 1 && !DEV_UNLOCK_ALL) {
+      const sd = sectionProgress[lessonKey] || {};
+      if (!sd.grammar) {
+        const popupKey = `${lessonKey}:stage2_grammar`;
+        if (!shownPopups.current.has(popupKey)) {
+          shownPopups.current.add(popupKey);
+          setUnlockModal({
+            title: 'Keep Learning!',
+            message: 'Complete Grammar to continue unlocking practice stages',
+            primaryLabel: 'Go to Grammar',
+            secondaryLabel: 'Later',
+            onPrimary: () => { setUnlockModal(null); goToLesson('learning', 'grammar'); },
+            onSecondary: () => { setUnlockModal(null); goToLesson('practice'); },
+          });
+          return;
+        }
+      }
+    }
+
+    // Check if the next stage is unlocked and not yet completed
+    const nextIndex = stageIndex + 1;
+    if (nextIndex < 5) {
+      const sectionDone = sectionProgress[lessonKey] || {};
+      let nextUnlocked = false;
+      if (DEV_UNLOCK_ALL) {
+        nextUnlocked = true;
+      } else if (currentRound === 1) {
+        nextUnlocked = (nextIndex === 0 || nextIndex === 1)
+          ? !!sectionDone?.newwords
+          : !!(sectionDone?.sentences && sectionDone?.grammar);
+      } else {
+        nextUnlocked = true; // Rounds 2/3: sequential
+      }
+      const nextCompleted = updatedStages.includes(nextIndex);
+      if (nextUnlocked && !nextCompleted) {
+        setCurrentStageIndex(nextIndex);
+        setCurrentScreen('stageExercises');
+        return;
+      }
+    }
+
+    goToLesson('practice');
   };
 
   const handleSectionComplete = (sectionKey) => {
     const lessonKey = `${currentLessonLevelId}_${currentLessonId}`;
+    const existing = sectionProgress[lessonKey] || {};
+
     setSectionProgress(prev => {
-      const existing = prev[lessonKey] || {};
-      if (existing[sectionKey]) return prev;
-      return { ...prev, [lessonKey]: { ...existing, [sectionKey]: true } };
+      const ex = prev[lessonKey] || {};
+      if (ex[sectionKey]) return prev;
+      return { ...prev, [lessonKey]: { ...ex, [sectionKey]: true } };
     });
+
+    const newSections = { ...existing, [sectionKey]: true };
+
+    // BEHAVIOR 1: New Words done → immediately navigate into Stage 1 (no popup)
+    if (sectionKey === 'newwords' && !DEV_UNLOCK_ALL) {
+      const stageKey = `${currentLessonLevelId}_${currentLessonId}_r${currentRound}`;
+      if (!(stageProgress[stageKey] || []).includes(0)) {
+        setCurrentStageIndex(0);
+        setCurrentScreen('stageExercises');
+        return;
+      }
+    }
+
+    // BEHAVIOR 2 Step B: Grammar just done + sentences not yet done → "Almost There!" popup
+    if (sectionKey === 'grammar' && currentRound === 1 && !DEV_UNLOCK_ALL && !existing.sentences) {
+      const popupKey = `${lessonKey}:grammar_done`;
+      if (!shownPopups.current.has(popupKey)) {
+        shownPopups.current.add(popupKey);
+        setUnlockModal({
+          title: 'Almost There!',
+          message: 'Now complete Sentences to unlock Stage 3, 4 and 5',
+          primaryLabel: 'Go to Sentences',
+          secondaryLabel: 'Later',
+          onPrimary: () => { setUnlockModal(null); goToLesson('learning', 'phrases'); },
+          onSecondary: () => setUnlockModal(null),
+        });
+        return;
+      }
+    }
+
+    // BEHAVIOR 3a: Both grammar AND sentences now done for first time → Stage 3 unlock popup
+    if (currentRound === 1 && !DEV_UNLOCK_ALL && newSections.grammar && newSections.sentences) {
+      if (!(existing.grammar && existing.sentences)) {
+        const popupKey = `${lessonKey}:stage3unlock`;
+        if (!shownPopups.current.has(popupKey)) {
+          const stageKey = `${currentLessonLevelId}_${currentLessonId}_r${currentRound}`;
+          if (!(stageProgress[stageKey] || []).includes(2)) {
+            shownPopups.current.add(popupKey);
+            setUnlockModal({
+              title: 'Stage 3 Unlocked!',
+              message: 'Ready to continue your practice?',
+              primaryLabel: 'Go to Stage 3',
+              secondaryLabel: 'Later',
+              onPrimary: () => {
+                setUnlockModal(null);
+                setCurrentStageIndex(2);
+                setCurrentScreen('stageExercises');
+              },
+              onSecondary: () => setUnlockModal(null),
+            });
+            return;
+          }
+        }
+      }
+    }
+
+    // BEHAVIOR 3c: All 4 sections done → Round 2 unlock popup
+    if (!DEV_UNLOCK_ALL && newSections.newwords && newSections.grammar && newSections.sentences && newSections.dialogue) {
+      const popupKey = `${lessonKey}:round2unlock`;
+      if (!shownPopups.current.has(popupKey)) {
+        shownPopups.current.add(popupKey);
+        setUnlockModal({
+          title: 'Round 2 Unlocked!',
+          message: "You've mastered Round 1 — ready for the next round?",
+          primaryLabel: 'Start Round 2',
+          secondaryLabel: 'Later',
+          onPrimary: () => {
+            setUnlockModal(null);
+            setCurrentRound(2);
+            setCurrentStageIndex(0);
+            setCurrentScreen('stageExercises');
+          },
+          onSecondary: () => setUnlockModal(null),
+        });
+      }
+    }
   };
 
   const handleRoundAdvance = () => {
@@ -513,12 +756,12 @@ export default function App() {
           'Complete New Words, Grammar, Sentences, and Dialogue in the Learning tab before advancing to Round 2.',
           [{ text: 'OK' }]
         );
-        setCurrentScreen('lesson');
+        goToLesson('learning');
         return;
       }
     }
     setCurrentRound(prev => Math.min(prev + 1, 3));
-    setCurrentScreen('lesson');
+    goToLesson('learning');
   };
 
   // ── Helper to get stage progress for current lesson & round ─────────────
@@ -544,204 +787,215 @@ export default function App() {
   const lessonQuizPassed = (quizPassedLessons[currentLessonLevelId] || []).includes(currentLessonId);
   const lessonAlreadyCompleted = (lessonProgress[currentLessonLevelId] || []).includes(currentLessonId);
 
-  // ── Screens ──────────────────────────────────────────────────
-  if (currentScreen === 'onboarding') {
-    return (
-      <OnboardingScreen
-        onComplete={handleOnboardingComplete}
-        initialAge={userData?.age}
-        onCancel={userData ? handleBackToHome : null}
-      />
-    );
-  }
+  // ── Screen renderer ──────────────────────────────────────────
+  const renderCurrentScreen = () => {
+    if (currentScreen === 'onboarding') {
+      return (
+        <OnboardingScreen
+          onComplete={handleOnboardingComplete}
+          initialAge={userData?.age}
+          onCancel={userData ? handleBackToHome : null}
+        />
+      );
+    }
+    if (currentScreen === 'home') {
+      return (
+        <HomeScreen
+          userData={userData}
+          levelState={levelState}
+          lessonProgress={lessonProgress}
+          returnLevelId={returnLevelId}
+          returnLessonId={returnLessonId}
+          onLessonPress={handleLessonPress}
+          onLevelQuizPress={handleLevelQuizPress}
+          onChangeLevelConfirm={handleChangeLevelConfirm}
+          onRetakeTest={handleRetakeTest}
+          onFoundationsPinyinPress={() => handleOpenFoundationsPinyin('home')}
+        />
+      );
+    }
+    if (currentScreen === 'lesson') {
+      return (
+        <LessonDetailScreen
+          lessonId={currentLessonId}
+          levelId={currentLessonLevelId}
+          stageProgress={currentStageProgressArr}
+          currentRound={currentRound}
+          quizUnlocked={quizUnlocked}
+          devUnlockAll={DEV_UNLOCK_ALL}
+          r2Done={r2Done}
+          lessonQuizPassed={lessonQuizPassed}
+          lessonCompleted={lessonAlreadyCompleted}
+          round1Done={currentRound1Done}
+          sectionDone={currentSectionDone}
+          initialTab={lessonInitialTab}
+          initialOpenSection={lessonInitialOpenSection}
+          onSectionComplete={handleSectionComplete}
+          onBack={() => handleBackToHome(currentLessonLevelId)}
+          onLessonComplete={handleLessonComplete}
+          onTakeQuiz={handleTakeQuiz}
+          onOpenPinyin={handleOpenLessonPinyin}
+          onSelectStage={handleSelectStage}
+        />
+      );
+    }
+    if (currentScreen === 'lessonStages') {
+      return (
+        <LessonStagesScreen
+          lessonData={currentLessonData}
+          levelId={currentLessonLevelId}
+          stageProgress={currentStageProgressArr}
+          devUnlockAll={DEV_UNLOCK_ALL}
+          currentRound={currentRound}
+          sectionDone={currentSectionDone}
+          onSelectStage={handleSelectStage}
+          onBack={() => goToLesson('practice')}
+        />
+      );
+    }
+    if (currentScreen === 'stageExercises') {
+      return (
+        <StageExercisesScreen
+          key={currentStageIndex}
+          lessonData={currentLessonData}
+          levelId={currentLessonLevelId}
+          stageIndex={currentStageIndex}
+          roundIndex={currentRound - 1}
+          onComplete={handleStageComplete}
+          onNext={handleStageContinue}
+          onBack={() => goToLesson('practice')}
+        />
+      );
+    }
+    if (currentScreen === 'roundComplete') {
+      const currentRoundScoreKey = `${currentLessonLevelId}_${currentLessonId}_r${currentRound}`;
+      const currentRoundScore = roundScores[currentRoundScoreKey] || { score: 0, total: 0 };
+      return (
+        <RoundCompleteScreen
+          currentRound={currentRound}
+          levelId={currentLessonLevelId}
+          roundScore={currentRoundScore}
+          combinedAccuracy={combinedAccuracy}
+          onContinue={handleRoundAdvance}
+          onTakeQuiz={handleTakeQuiz}
+        />
+      );
+    }
+    if (currentScreen === 'lessonQuiz') {
+      return (
+        <LessonQuizScreen
+          lessonData={currentLessonData}
+          levelId={currentLessonLevelId}
+          onBack={() => goToLesson('practice')}
+          onQuizPass={handleQuizPass}
+        />
+      );
+    }
+    if (currentScreen === 'lessonPinyin') {
+      return (
+        <LessonPinyinScreen
+          lessonData={currentLessonData}
+          onBack={() => goToLesson('learning')}
+          onOpenFoundations={() => handleOpenFoundationsPinyin('lessonPinyin')}
+        />
+      );
+    }
+    if (currentScreen === 'foundationsPinyin') {
+      return (
+        <FoundationsPinyinScreen
+          onBack={handleBackFromFoundationsPinyin}
+          lessonContext={pinyinReturnTo === 'lessonPinyin' ? currentLessonData : null}
+          onOpenPinyinSystem={handleOpenPinyinSystem}
+        />
+      );
+    }
+    if (currentScreen === 'pinyinSystem') {
+      return (
+        <PinyinSystemScreen
+          onBack={() => setCurrentScreen('foundationsPinyin')}
+          onSelectLesson={handleSelectPinyinLesson}
+          onFinalQuiz={handlePinyinFinalQuiz}
+          quizPassedLessons={pinyinQuizPassed}
+          pinyinStageProgress={pinyinStageProgress}
+        />
+      );
+    }
+    if (currentScreen === 'pinyinLesson') {
+      const pinyinLessonData  = PINYIN_LESSONS[currentPinyinLessonId];
+      const pinyinStageKey    = `pinyin_${currentPinyinLessonId}`;
+      const pinyinStageDone   = pinyinStageProgress[pinyinStageKey] || [];
+      const pinyinQuizPassed2 = pinyinQuizPassed.includes(currentPinyinLessonId);
+      const pinyinLearnKey = `pinyin_${currentPinyinLessonId}`;
+      return (
+        <PinyinLessonScreen
+          lessonData={pinyinLessonData}
+          stageProgress={pinyinStageDone}
+          quizPassed={pinyinQuizPassed2}
+          learnDone={!!pinyinLearnDone[pinyinLearnKey]}
+          initialTab={pinyinLessonInitialTab}
+          onBack={() => setCurrentScreen('pinyinSystem')}
+          onStartStage={handleStartPinyinStage}
+          onLearnComplete={handlePinyinLearnComplete}
+          onTakeQuiz={handleOpenPinyinLessonQuiz}
+        />
+      );
+    }
+    if (currentScreen === 'pinyinStage') {
+      const pinyinLessonData = PINYIN_LESSONS[currentPinyinLessonId];
+      return (
+        <PinyinStageScreen
+          lessonData={pinyinLessonData}
+          stageIndex={currentPinyinStageIndex}
+          onComplete={handlePinyinStageComplete}
+          onBack={() => setCurrentScreen('pinyinLesson')}
+        />
+      );
+    }
+    if (currentScreen === 'pinyinLessonQuiz') {
+      const pinyinLessonData = PINYIN_LESSONS[currentPinyinLessonId];
+      return (
+        <PinyinLessonQuizScreen
+          lessonData={pinyinLessonData}
+          onPass={handlePinyinQuizPass}
+          onFail={() => setCurrentScreen('pinyinLesson')}
+          onBack={() => setCurrentScreen('pinyinLesson')}
+        />
+      );
+    }
+    if (currentScreen === 'pinyinFinalQuiz') {
+      return (
+        <PinyinFinalQuizScreen
+          allLessons={ALL_PINYIN_LESSONS}
+          onBack={() => setCurrentScreen('pinyinSystem')}
+        />
+      );
+    }
+    if (currentScreen === 'levelQuiz') {
+      return (
+        <LevelQuizScreen
+          currentLevelId={currentQuizLevelId || userData?.result?.recommendedLevel || 'hsk1'}
+          onBack={() => handleBackToHome(currentQuizLevelId)}
+          onComplete={handleLevelQuizComplete}
+        />
+      );
+    }
+    return null;
+  };
 
-  if (currentScreen === 'home') {
-    return (
-      <HomeScreen
-        userData={userData}
-        levelState={levelState}
-        lessonProgress={lessonProgress}
-        returnLevelId={returnLevelId}
-        returnLessonId={returnLessonId}
-        onLessonPress={handleLessonPress}
-        onLevelQuizPress={handleLevelQuizPress}
-        onChangeLevelConfirm={handleChangeLevelConfirm}
-        onRetakeTest={handleRetakeTest}
-        onFoundationsPinyinPress={() => handleOpenFoundationsPinyin('home')}
+  return (
+    <View style={{ flex: 1 }}>
+      {renderCurrentScreen()}
+      <UnlockModal
+        visible={!!unlockModal}
+        title={unlockModal?.title}
+        message={unlockModal?.message}
+        primaryLabel={unlockModal?.primaryLabel}
+        secondaryLabel={unlockModal?.secondaryLabel}
+        onPrimary={unlockModal?.onPrimary}
+        onSecondary={unlockModal?.onSecondary}
       />
-    );
-  }
-
-  if (currentScreen === 'lesson') {
-    return (
-      <LessonDetailScreen
-        lessonId={currentLessonId}
-        levelId={currentLessonLevelId}
-        stageProgress={currentStageProgressArr}
-        currentRound={currentRound}
-        quizUnlocked={quizUnlocked}
-        devUnlockAll={DEV_UNLOCK_ALL}
-        r2Done={r2Done}
-        lessonQuizPassed={lessonQuizPassed}
-        lessonCompleted={lessonAlreadyCompleted}
-        round1Done={currentRound1Done}
-        sectionDone={currentSectionDone}
-        onSectionComplete={handleSectionComplete}
-        onBack={() => handleBackToHome(currentLessonLevelId)}
-        onLessonComplete={handleLessonComplete}
-        onTakeQuiz={handleTakeQuiz}
-        onOpenPinyin={handleOpenLessonPinyin}
-        onSelectStage={handleSelectStage}
-      />
-    );
-  }
-
-  if (currentScreen === 'lessonStages') {
-    return (
-      <LessonStagesScreen
-        lessonData={currentLessonData}
-        levelId={currentLessonLevelId}
-        stageProgress={currentStageProgressArr}
-        devUnlockAll={DEV_UNLOCK_ALL}
-        onSelectStage={handleSelectStage}
-        onBack={() => setCurrentScreen('lesson')}
-      />
-    );
-  }
-
-  if (currentScreen === 'stageExercises') {
-    return (
-      <StageExercisesScreen
-        lessonData={currentLessonData}
-        levelId={currentLessonLevelId}
-        stageIndex={currentStageIndex}
-        roundIndex={currentRound - 1}
-        onComplete={handleStageComplete}
-        onBack={() => setCurrentScreen('lesson')}
-      />
-    );
-  }
-
-  if (currentScreen === 'roundComplete') {
-    const currentRoundScoreKey = `${currentLessonLevelId}_${currentLessonId}_r${currentRound}`;
-    const currentRoundScore = roundScores[currentRoundScoreKey] || { score: 0, total: 0 };
-    return (
-      <RoundCompleteScreen
-        currentRound={currentRound}
-        levelId={currentLessonLevelId}
-        roundScore={currentRoundScore}
-        combinedAccuracy={combinedAccuracy}
-        onContinue={handleRoundAdvance}
-        onTakeQuiz={handleTakeQuiz}
-      />
-    );
-  }
-
-  if (currentScreen === 'lessonQuiz') {
-    return (
-      <LessonQuizScreen
-        lessonData={currentLessonData}
-        levelId={currentLessonLevelId}
-        onBack={() => setCurrentScreen('lesson')}
-        onQuizPass={handleQuizPass}
-      />
-    );
-  }
-
-  if (currentScreen === 'lessonPinyin') {
-    return (
-      <LessonPinyinScreen
-        lessonData={currentLessonData}
-        onBack={() => setCurrentScreen('lesson')}
-        onOpenFoundations={() => handleOpenFoundationsPinyin('lessonPinyin')}
-      />
-    );
-  }
-
-  if (currentScreen === 'foundationsPinyin') {
-    return (
-      <FoundationsPinyinScreen
-        onBack={handleBackFromFoundationsPinyin}
-        lessonContext={pinyinReturnTo === 'lessonPinyin' ? currentLessonData : null}
-        onOpenPinyinSystem={handleOpenPinyinSystem}
-      />
-    );
-  }
-
-  if (currentScreen === 'pinyinSystem') {
-    return (
-      <PinyinSystemScreen
-        onBack={() => setCurrentScreen('foundationsPinyin')}
-        onSelectLesson={handleSelectPinyinLesson}
-        onFinalQuiz={handlePinyinFinalQuiz}
-        quizPassedLessons={pinyinQuizPassed}
-        pinyinStageProgress={pinyinStageProgress}
-      />
-    );
-  }
-
-  if (currentScreen === 'pinyinLesson') {
-    const pinyinLessonData  = PINYIN_LESSONS[currentPinyinLessonId];
-    const pinyinStageKey    = `pinyin_${currentPinyinLessonId}`;
-    const pinyinStageDone   = pinyinStageProgress[pinyinStageKey] || [];
-    const pinyinQuizPassed2 = pinyinQuizPassed.includes(currentPinyinLessonId);
-    return (
-      <PinyinLessonScreen
-        lessonData={pinyinLessonData}
-        stageProgress={pinyinStageDone}
-        quizPassed={pinyinQuizPassed2}
-        initialTab={pinyinLessonInitialTab}
-        onBack={() => setCurrentScreen('pinyinSystem')}
-        onStartStage={handleStartPinyinStage}
-        onTakeQuiz={handleOpenPinyinLessonQuiz}
-      />
-    );
-  }
-
-  if (currentScreen === 'pinyinStage') {
-    const pinyinLessonData = PINYIN_LESSONS[currentPinyinLessonId];
-    return (
-      <PinyinStageScreen
-        lessonData={pinyinLessonData}
-        stageIndex={currentPinyinStageIndex}
-        onComplete={handlePinyinStageComplete}
-        onBack={() => setCurrentScreen('pinyinLesson')}
-      />
-    );
-  }
-
-  if (currentScreen === 'pinyinLessonQuiz') {
-    const pinyinLessonData = PINYIN_LESSONS[currentPinyinLessonId];
-    return (
-      <PinyinLessonQuizScreen
-        lessonData={pinyinLessonData}
-        onPass={handlePinyinQuizPass}
-        onFail={() => setCurrentScreen('pinyinLesson')}
-        onBack={() => setCurrentScreen('pinyinLesson')}
-      />
-    );
-  }
-
-  if (currentScreen === 'pinyinFinalQuiz') {
-    return (
-      <PinyinFinalQuizScreen
-        allLessons={ALL_PINYIN_LESSONS}
-        onBack={() => setCurrentScreen('pinyinSystem')}
-      />
-    );
-  }
-
-  if (currentScreen === 'levelQuiz') {
-    return (
-      <LevelQuizScreen
-        currentLevelId={currentQuizLevelId || userData?.result?.recommendedLevel || 'hsk1'}
-        onBack={() => handleBackToHome(currentQuizLevelId)}
-        onComplete={handleLevelQuizComplete}
-      />
-    );
-  }
-
-  return null;
+    </View>
+  );
 }
 
 const splash = StyleSheet.create({

@@ -14,9 +14,16 @@ const STAGE_META = [
   { name: 'Final Challenge', desc: 'All types · Full review',         icon: '🏆', color: WARM_ORANGE },
 ];
 
-export default function LessonStagesScreen({ lessonData, stageProgress = [], devUnlockAll = false, onSelectStage, onBack, levelId = 'hsk1' }) {
+export default function LessonStagesScreen({ lessonData, stageProgress = [], devUnlockAll = false, currentRound = 1, sectionDone = {}, onSelectStage, onBack, levelId = 'hsk1' }) {
   const T = LEVEL_SCREEN_PALETTES[levelId] || LEVEL_SCREEN_PALETTES.hsk1;
-  const isUnlocked = (i) => devUnlockAll || i === 0 || stageProgress.includes(i - 1);
+  const isUnlocked = (i) => {
+    if (devUnlockAll) return true;
+    if (currentRound === 1) {
+      if (i === 0 || i === 1) return !!sectionDone?.newwords;
+      return !!(sectionDone?.sentences && sectionDone?.grammar);
+    }
+    return i === 0 || stageProgress.includes(i - 1);
+  };
   const isCompleted = (i) => stageProgress.includes(i);
 
   return (
