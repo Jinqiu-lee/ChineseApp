@@ -229,7 +229,7 @@
     {
       "number": 1,
       "title": "反而 — On the contrary; instead (opposite of expectation)",
-      "explanation": "反而 is used when the actual result is the opposite of what was expected or desired. It highlights a surprising reversal. Structure: [Expected situation / condition] + 反而 + [Opposite/unexpected actual result]. Often combined with 却 for added emphasis. Compare with 倒是 (mild contrast) — 反而 implies a more dramatic, often negative reversal. Example: 他多睡了两小时，反而感觉更累了。(He slept two more hours; on the contrary, he felt even more tired.)",
+      "explanation": "反而 is used when the actual result is the opposite of what was expected or desired. It highlights a surprising reversal. Structure: [Expected situation / condition] + 反而 + [Opposite/unexpected actual result]. Often combined with 却 for added emphasis. Compare with 倒是 (mild contrast) — 反而 implies a more dramatic, often negative reversal. 他多睡了两小时，反而感觉更累了 - He slept two more hours; on the contrary, he felt even more tired.",
       "examples": [
         {
           "chinese": "他以为早点睡会精神好，但反而睡得更差。",
@@ -247,9 +247,21 @@
           "question": "他本来想早点睡觉，结果看了两个小时手机，_____ 睡得更晚了。",
           "type": "multiple_choice",
           "correct": "反而",
-          "options": ["反而", "因此", "顺便", "逐渐"],
-          "option_pinyin": ["fǎn ér", "yīn cǐ", "shùn biàn", "zhú jiàn"],
-          "word_hints": {"手机": "shǒu jī"}
+          "options": [
+            "反而",
+            "因此",
+            "顺便",
+            "逐渐"
+          ],
+          "option_pinyin": [
+            "fǎn ér",
+            "yīn cǐ",
+            "shùn biàn",
+            "zhú jiàn"
+          ],
+          "word_hints": {
+            "手机": "shǒu jī"
+          }
         },
         {
           "question": "Choose the sentence that correctly uses 反而.",
@@ -261,8 +273,15 @@
             "他喝了很多水，反而口渴是严重了。",
             "他喝了很多反而水，口渴更严重了。"
           ],
-          "option_pinyin": ["", "", "", ""],
-          "word_hints": {"口渴": "kǒu kě"}
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "口渴": "kǒu kě"
+          }
         },
         {
           "question": "What does 反而 indicate in a sentence?",
@@ -274,31 +293,61 @@
             "The result happened gradually",
             "The result happened because of an external cause"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "减少用闹钟本来是为了减压，结果他 _____ 更焦虑了。",
           "type": "multiple_choice",
           "correct": "反而",
-          "options": ["反而", "从而", "尽管", "虽然"],
-          "option_pinyin": ["fǎn ér", "cóng ér", "jǐn guǎn", "suī rán"],
-          "word_hints": {"焦虑": "jiāo lǜ", "睡过头": "shuì guò tóu"}
+          "options": [
+            "反而",
+            "从而",
+            "尽管",
+            "虽然"
+          ],
+          "option_pinyin": [
+            "fǎn ér",
+            "cóng ér",
+            "jǐn guǎn",
+            "suī rán"
+          ],
+          "word_hints": {
+            "焦虑": "jiāo lǜ",
+            "睡过头": "shuì guò tóu"
+          }
         },
         {
           "question": "多休息本来应该让人精力充沛，但他 _____ 变得更懒了。",
           "type": "multiple_choice",
           "correct": "反而",
-          "options": ["反而", "因而", "仍然", "竟然"],
-          "option_pinyin": ["fǎn ér", "yīn ér", "réng rán", "jìng rán"],
-          "word_hints": {"精力充沛": "jīng lì chōng pèi"}
+          "options": [
+            "反而",
+            "因而",
+            "仍然",
+            "竟然"
+          ],
+          "option_pinyin": [
+            "fǎn ér",
+            "yīn ér",
+            "réng rán",
+            "jìng rán"
+          ],
+          "word_hints": {
+            "精力充沛": "jīng lì chōng pèi"
+          }
         }
       ]
     },
     {
       "number": 2,
       "title": "与其…不如 — Rather than…it is better to",
-      "explanation": "与其…不如 is used to compare two options and recommend one over the other. Structure: 与其 + [less preferred / less effective option] + 不如 + [better / recommended option]. This pattern expresses a preference or recommendation by showing that option B is superior to option A. Example: 与其每天依赖闹钟，不如培养自然醒来的生物节律。(Rather than relying on an alarm clock every day, it is better to develop a natural waking rhythm.)",
+      "explanation": "与其…不如 is used to compare two options and recommend one over the other. Structure: 与其 + [less preferred / less effective option] + 不如 + [better / recommended option]. This pattern expresses a preference or recommendation by showing that option B is superior to option A. 与其每天依赖闹钟，不如培养自然醒来的生物节律 - Rather than relying on an alarm clock every day, it is better to develop a natural waking rhythm.",
       "examples": [
         {
           "chinese": "与其睡前玩手机，不如看一本书让自己放松。",
@@ -316,9 +365,22 @@
           "question": "与其每天喝咖啡提神，_____ 保证充足的睡眠。",
           "type": "multiple_choice",
           "correct": "不如",
-          "options": ["不如", "不是", "不好", "不对"],
-          "option_pinyin": ["bù rú", "bú shì", "bù hǎo", "bú duì"],
-          "word_hints": {"提神": "tí shén", "充足": "chōng zú"}
+          "options": [
+            "不如",
+            "不是",
+            "不好",
+            "不对"
+          ],
+          "option_pinyin": [
+            "bù rú",
+            "bú shì",
+            "bù hǎo",
+            "bú duì"
+          ],
+          "word_hints": {
+            "提神": "tí shén",
+            "充足": "chōng zú"
+          }
         },
         {
           "question": "Choose the correctly structured 与其…不如 sentence.",
@@ -330,8 +392,15 @@
             "与其不如抱怨睡不好，改变睡前习惯。",
             "抱怨与其睡不好，改变不如睡前习惯。"
           ],
-          "option_pinyin": ["", "", "", ""],
-          "word_hints": {"抱怨": "bào yuàn"}
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "抱怨": "bào yuàn"
+          }
         },
         {
           "question": "What is the function of 与其…不如?",
@@ -343,31 +412,62 @@
             "To show two things happening at the same time",
             "To indicate a cause-and-effect relationship"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "与其用刺激性的闹钟吵醒自己，_____ 尝试光照闹钟。",
           "type": "multiple_choice",
           "correct": "不如",
-          "options": ["不如", "不过", "不但", "不管"],
-          "option_pinyin": ["bù rú", "bú guò", "bú dàn", "bù guǎn"],
-          "word_hints": {"刺激性": "cì jī xìng", "光照": "guāng zhào"}
+          "options": [
+            "不如",
+            "不过",
+            "不但",
+            "不管"
+          ],
+          "option_pinyin": [
+            "bù rú",
+            "bú guò",
+            "bú dàn",
+            "bù guǎn"
+          ],
+          "word_hints": {
+            "刺激性": "cì jī xìng",
+            "光照": "guāng zhào"
+          }
         },
         {
           "question": "_____ 强迫自己早起，不如让身体慢慢适应新的作息时间。",
           "type": "multiple_choice",
           "correct": "与其",
-          "options": ["与其", "既然", "虽然", "尽管"],
-          "option_pinyin": ["yǔ qí", "jì rán", "suī rán", "jǐn guǎn"],
-          "word_hints": {"强迫": "qiǎng pò", "适应": "shì yìng"}
+          "options": [
+            "与其",
+            "既然",
+            "虽然",
+            "尽管"
+          ],
+          "option_pinyin": [
+            "yǔ qí",
+            "jì rán",
+            "suī rán",
+            "jǐn guǎn"
+          ],
+          "word_hints": {
+            "强迫": "qiǎng pò",
+            "适应": "shì yìng"
+          }
         }
       ]
     },
     {
       "number": 3,
       "title": "逐步 vs 逐渐 — Step by step (deliberate) vs Gradually (natural)",
-      "explanation": "Both 逐步 and 逐渐 describe gradual change, but with a key difference: 逐步 (zhú bù) emphasizes deliberate, planned, step-by-step progress — each step is intentional. It is often used with verbs of purposeful action. 逐渐 (zhú jiàn) describes a natural, unplanned gradual change — things change on their own over time. Structure: both are used as adverbs before a verb. Examples: 逐步 — 我们需要逐步改变作息规律。(We need to change sleep patterns step by step — deliberate plan.) 逐渐 — 他的睡眠质量逐渐改善了。(His sleep quality gradually improved — natural process.)",
+      "explanation": "Both 逐步 and 逐渐 describe gradual change (word + verb), but differ in whether the change is planned or natural. 逐步(zhú bù) emphasizes deliberate, step-by-step progress — each step is intentional, used with verbs of purposeful action: 我们需要逐步改变作息规律 - We need to change sleep patterns step by step. Gradually on its own — 逐渐(zhú jiàn) describes natural, unplanned change over time: 他的睡眠质量逐渐改善了 - His sleep quality gradually improved.",
       "examples": [
         {
           "chinese": "专家建议逐步减少使用闹钟的次数，而不是一下子停用。",
@@ -385,17 +485,41 @@
           "question": "我们制定了计划，要_____ 把睡觉时间提前到11点。",
           "type": "multiple_choice",
           "correct": "逐步",
-          "options": ["逐步", "逐渐", "慢慢地", "突然"],
-          "option_pinyin": ["zhú bù", "zhú jiàn", "màn màn de", "tū rán"],
-          "word_hints": {"提前": "tí qián"}
+          "options": [
+            "逐步",
+            "逐渐",
+            "慢慢地",
+            "突然"
+          ],
+          "option_pinyin": [
+            "zhú bù",
+            "zhú jiàn",
+            "màn màn de",
+            "tū rán"
+          ],
+          "word_hints": {
+            "提前": "tí qián"
+          }
         },
         {
           "question": "经过几个月不用闹钟的训练，她的睡眠质量 _____ 提升。",
           "type": "multiple_choice",
           "correct": "逐渐",
-          "options": ["逐渐", "逐步", "及时", "突然"],
-          "option_pinyin": ["zhú jiàn", "zhú bù", "jí shí", "tū rán"],
-          "word_hints": {"提升": "tí shēng"}
+          "options": [
+            "逐渐",
+            "逐步",
+            "及时",
+            "突然"
+          ],
+          "option_pinyin": [
+            "zhú jiàn",
+            "zhú bù",
+            "jí shí",
+            "tū rán"
+          ],
+          "word_hints": {
+            "提升": "tí shēng"
+          }
         },
         {
           "question": "Which sentence uses 逐步 correctly?",
@@ -407,8 +531,16 @@
             "他逐步喜欢上了古典音乐。",
             "时间逐步过去，他忘记了那件事。"
           ],
-          "option_pinyin": ["", "", "", ""],
-          "word_hints": {"咖啡因": "kā fēi yīn", "依赖": "yī lài"}
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "咖啡因": "kā fēi yīn",
+            "依赖": "yī lài"
+          }
         },
         {
           "question": "What is the key difference between 逐步 and 逐渐?",
@@ -420,16 +552,33 @@
             "逐步 is formal; 逐渐 is casual",
             "逐步 indicates fast change; 逐渐 indicates slow change"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "随着年龄增长，他的睡眠时间_____ 缩短了。",
           "type": "multiple_choice",
           "correct": "逐渐",
-          "options": ["逐渐", "逐步", "及时", "突然"],
-          "option_pinyin": ["zhú jiàn", "zhú bù", "jí shí", "tū rán"],
-          "word_hints": {"缩短": "suō duǎn"}
+          "options": [
+            "逐渐",
+            "逐步",
+            "及时",
+            "突然"
+          ],
+          "option_pinyin": [
+            "zhú jiàn",
+            "zhú bù",
+            "jí shí",
+            "tū rán"
+          ],
+          "word_hints": {
+            "缩短": "suō duǎn"
+          }
         }
       ]
     }
@@ -453,8 +602,15 @@
       "question": "光照闹钟的效果_____，有些人觉得帮助很大，有些人则改变不明显。",
       "type": "multiple_choice",
       "correct": "因人而异",
-      "options": ["因人而异", "适得其反", "逐步调整", "改善质量"],
-      "word_hints": {"光照": "guāng zhào"}
+      "options": [
+        "因人而异",
+        "适得其反",
+        "逐步调整",
+        "改善质量"
+      ],
+      "word_hints": {
+        "光照": "guāng zhào"
+      }
     },
     {
       "question": "Choose the correct use of 反而.",
@@ -472,8 +628,15 @@
       "question": "早上被闹钟惊醒的人，往往比自然醒来的人_____更差。",
       "type": "multiple_choice",
       "correct": "精神",
-      "options": ["精神", "质量", "压力", "方式"],
-      "word_hints": {"惊醒": "jīng xǐng"}
+      "options": [
+        "精神",
+        "质量",
+        "压力",
+        "方式"
+      ],
+      "word_hints": {
+        "惊醒": "jīng xǐng"
+      }
     },
     {
       "question": "What does 依赖 mean?",
@@ -485,7 +648,9 @@
         "To replace; to substitute",
         "To stimulate"
       ],
-      "word_hints": {"依赖": "yī lài"}
+      "word_hints": {
+        "依赖": "yī lài"
+      }
     },
     {
       "question": "What does the phrase 适得其反 mean?",
@@ -497,28 +662,55 @@
         "To depend on external support",
         "To reach the goal on time"
       ],
-      "word_hints": {"适得其反": "shì dé qí fǎn"}
+      "word_hints": {
+        "适得其反": "shì dé qí fǎn"
+      }
     },
     {
       "question": "Which word means 'quality'?",
       "type": "multiple_choice",
       "correct": "质量",
-      "options": ["压力", "质量", "光线", "方式"],
-      "word_hints": {"压力": "yā lì", "质量": "zhì liàng", "光线": "guāng xiàn", "方式": "fāng shì"}
+      "options": [
+        "压力",
+        "质量",
+        "光线",
+        "方式"
+      ],
+      "word_hints": {
+        "压力": "yā lì",
+        "质量": "zhì liàng",
+        "光线": "guāng xiàn",
+        "方式": "fāng shì"
+      }
     },
     {
       "question": "_____ 依赖闹钟，不如培养自然醒来的习惯。",
       "type": "multiple_choice",
       "correct": "与其",
-      "options": ["与其", "既然", "由于", "虽然"],
-      "word_hints": {"依赖": "yī lài", "培养": "péi yǎng"}
+      "options": [
+        "与其",
+        "既然",
+        "由于",
+        "虽然"
+      ],
+      "word_hints": {
+        "依赖": "yī lài",
+        "培养": "péi yǎng"
+      }
     },
     {
       "question": "改变睡眠习惯如果太急于求成，反而会_____，让睡眠质量更差。",
       "type": "multiple_choice",
       "correct": "适得其反",
-      "options": ["适得其反", "逐步调整", "及时改善", "因人而异"],
-      "word_hints": {"急于求成": "jí yú qiú chéng"}
+      "options": [
+        "适得其反",
+        "逐步调整",
+        "及时改善",
+        "因人而异"
+      ],
+      "word_hints": {
+        "急于求成": "jí yú qiú chéng"
+      }
     },
     {
       "question": "What does 及时 mean?",
@@ -530,7 +722,9 @@
         "On the contrary",
         "To replace; substitute"
       ],
-      "word_hints": {"及时": "jí shí"}
+      "word_hints": {
+        "及时": "jí shí"
+      }
     },
     {
       "question": "Which sentence correctly uses 逐步?",
@@ -542,7 +736,9 @@
         "他逐步喜欢上了这首歌。",
         "时间逐步流逝，他的记忆也模糊了。"
       ],
-      "word_hints": {"摄入量": "shè rù liàng"}
+      "word_hints": {
+        "摄入量": "shè rù liàng"
+      }
     }
   ],
   "dialogues": [
@@ -551,8 +747,16 @@
       "title": "A Better Way to Wake Up",
       "title_chinese": "更好的起床方式",
       "speakers": {
-        "A": { "name": "慈欣", "role": "科技爱好者", "gender": "male" },
-        "B": { "name": "加缪", "role": "朋友", "gender": "male" }
+        "A": {
+          "name": "慈欣",
+          "role": "科技爱好者",
+          "gender": "male"
+        },
+        "B": {
+          "name": "加缪",
+          "role": "朋友",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -598,8 +802,16 @@
       "title": "Changing Habits Gradually",
       "title_chinese": "逐步改变习惯",
       "speakers": {
-        "A": { "name": "慈欣", "role": "科技研究者", "gender": "male" },
-        "B": { "name": "奥斯汀", "role": "朋友", "gender": "female" }
+        "A": {
+          "name": "慈欣",
+          "role": "科技研究者",
+          "gender": "male"
+        },
+        "B": {
+          "name": "奥斯汀",
+          "role": "朋友",
+          "gender": "female"
+        }
       },
       "lines": [
         {

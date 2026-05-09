@@ -213,7 +213,7 @@
     {
       "number": 1,
       "title": "既然…就 — Since (that's the case)…then",
-      "explanation": "既然…就 is used when acknowledging an established fact or situation and drawing a logical conclusion from it. Structure: 既然 + [acknowledged fact/condition], (Subject +) 就 + [logical conclusion/action]. The first clause introduces something already true or decided; the second clause presents what naturally follows. This pattern is stronger than 因为…所以 because it implies the situation is already fixed and the speaker is simply acting on it. Example: 既然你已经做了决定，就不要再犹豫了。(Since you've already made the decision, don't hesitate anymore.)",
+      "explanation": "既然…就 is used when acknowledging an established fact or situation and drawing a logical conclusion from it. Structure: 既然 + [acknowledged fact/condition], (Subject +) 就 + [logical conclusion/action]. The first clause introduces something already true or decided; the second clause presents what naturally follows. This pattern is stronger than 因为…所以 because it implies the situation is already fixed and the speaker is simply acting on it. 既然你已经做了决定，就不要再犹豫了 - Since you've already made the decision, don't hesitate anymore.",
       "examples": [
         {
           "chinese": "既然你已经做了决定，就不要再犹豫了。",
@@ -231,8 +231,18 @@
           "question": "_____ 你已经设定了目标，就应该全力以赴，不要半途放弃。",
           "type": "multiple_choice",
           "correct": "既然",
-          "options": ["既然", "虽然", "尽管", "要是"],
-          "option_pinyin": ["jì rán", "suī rán", "jǐn guǎn", "yào shì"],
+          "options": [
+            "既然",
+            "虽然",
+            "尽管",
+            "要是"
+          ],
+          "option_pinyin": [
+            "jì rán",
+            "suī rán",
+            "jǐn guǎn",
+            "yào shì"
+          ],
           "word_hints": {
             "全力以赴": "to give one's all",
             "半途": "halfway"
@@ -242,8 +252,18 @@
           "question": "既然他已经后悔了，_____ 给他一次改正的机会吧。",
           "type": "multiple_choice",
           "correct": "就",
-          "options": ["就", "才", "都", "还"],
-          "option_pinyin": ["jiù", "cái", "dōu", "hái"],
+          "options": [
+            "就",
+            "才",
+            "都",
+            "还"
+          ],
+          "option_pinyin": [
+            "jiù",
+            "cái",
+            "dōu",
+            "hái"
+          ],
           "word_hints": {
             "改正": "to correct; to make amends"
           }
@@ -252,8 +272,18 @@
           "question": "既然这次机会这么难得，_____ 不要犹豫，赶快把握住。",
           "type": "multiple_choice",
           "correct": "就",
-          "options": ["就", "也", "却", "但"],
-          "option_pinyin": ["jiù", "yě", "què", "dàn"],
+          "options": [
+            "就",
+            "也",
+            "却",
+            "但"
+          ],
+          "option_pinyin": [
+            "jiù",
+            "yě",
+            "què",
+            "dàn"
+          ],
           "word_hints": {
             "难得": "rare; hard to come by",
             "把握": "to grasp; to seize"
@@ -269,15 +299,30 @@
             "虽然你不喜欢这份工作，就早点换一个吧。",
             "既然你不喜欢这份工作，才换一个吧。"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "既然你选择了坚持理想，_____ 要做好面对困难的准备。",
           "type": "multiple_choice",
           "correct": "就",
-          "options": ["就", "才", "虽", "连"],
-          "option_pinyin": ["jiù", "cái", "suī", "lián"],
+          "options": [
+            "就",
+            "才",
+            "虽",
+            "连"
+          ],
+          "option_pinyin": [
+            "jiù",
+            "cái",
+            "suī",
+            "lián"
+          ],
           "word_hints": {
             "面对": "to face",
             "准备": "to prepare; preparation"
@@ -288,7 +333,7 @@
     {
       "number": 2,
       "title": "宁可…也不 — Would rather…than",
-      "explanation": "宁可…也不 expresses a preference for one option over another, even if the preferred option involves some sacrifice or difficulty. Structure: Subject + 宁可 + [preferred but possibly harder option] + 也不 + [rejected option]. The speaker actively chooses hardship over an easier but undesirable alternative. Example: 我宁可放弃高薪工作，也不愿意放弃自己的理想。(I would rather give up a high-paying job than give up my ideals.)",
+      "explanation": "宁可…也不 expresses a preference for one option over another, even if the preferred option involves some sacrifice or difficulty. Structure: Subject + 宁可 + [preferred but possibly harder option] + 也不 + [rejected option]. The speaker actively chooses hardship over an easier but undesirable alternative. 我宁可放弃高薪工作，也不愿意放弃自己的理想 - I would rather give up a high-paying job than give up my ideals.",
       "examples": [
         {
           "chinese": "我宁可放弃高薪工作，也不愿意放弃自己的理想。",
@@ -306,8 +351,18 @@
           "question": "他宁可选择待遇差的工作，_____ 愿意在不稳定的公司受委屈。",
           "type": "multiple_choice",
           "correct": "也不",
-          "options": ["也不", "也就", "才不", "还不"],
-          "option_pinyin": ["yě bù", "yě jiù", "cái bù", "hái bù"],
+          "options": [
+            "也不",
+            "也就",
+            "才不",
+            "还不"
+          ],
+          "option_pinyin": [
+            "yě bù",
+            "yě jiù",
+            "cái bù",
+            "hái bù"
+          ],
           "word_hints": {
             "受委屈": "to be treated unfairly; to feel wronged"
           }
@@ -316,8 +371,18 @@
           "question": "_____ 后悔莫及，也不愿意在做决定前多想一想，真是太冲动了。",
           "type": "multiple_choice",
           "correct": "宁可",
-          "options": ["宁可", "既然", "尽管", "虽然"],
-          "option_pinyin": ["nìng kě", "jì rán", "jǐn guǎn", "suī rán"],
+          "options": [
+            "宁可",
+            "既然",
+            "尽管",
+            "虽然"
+          ],
+          "option_pinyin": [
+            "nìng kě",
+            "jì rán",
+            "jǐn guǎn",
+            "suī rán"
+          ],
           "word_hints": {
             "冲动": "impulsive"
           }
@@ -332,15 +397,30 @@
             "我宁可咬牙坚持，就不轻易放弃目标。",
             "我宁可咬牙坚持，但不轻易放弃目标。"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "她宁可一个人发愁，_____ 跟别人分享自己的烦恼。",
           "type": "multiple_choice",
           "correct": "也不愿意",
-          "options": ["也不愿意", "就愿意", "也愿意", "才愿意"],
-          "option_pinyin": ["yě bú yuàn yì", "jiù yuàn yì", "yě yuàn yì", "cái yuàn yì"],
+          "options": [
+            "也不愿意",
+            "就愿意",
+            "也愿意",
+            "才愿意"
+          ],
+          "option_pinyin": [
+            "yě bú yuàn yì",
+            "jiù yuàn yì",
+            "yě yuàn yì",
+            "cái yuàn yì"
+          ],
           "word_hints": {
             "烦恼": "worries; troubles"
           }
@@ -349,8 +429,18 @@
           "question": "他宁可放弃成功的机会，_____ 违背自己的良心。",
           "type": "multiple_choice",
           "correct": "也不",
-          "options": ["也不", "不也", "也就", "就不"],
-          "option_pinyin": ["yě bù", "bù yě", "yě jiù", "jiù bù"],
+          "options": [
+            "也不",
+            "不也",
+            "也就",
+            "就不"
+          ],
+          "option_pinyin": [
+            "yě bù",
+            "bù yě",
+            "yě jiù",
+            "jiù bù"
+          ],
           "word_hints": {
             "违背": "to go against; to violate",
             "良心": "conscience"
@@ -361,7 +451,7 @@
     {
       "number": 3,
       "title": "尽管…还是/仍然 — Even though…still",
-      "explanation": "尽管…还是/仍然 introduces a strong concession and emphasizes that the result occurs despite the concession. Structure: 尽管 + [strong concession], Subject + 还是/仍然 + [result that happens anyway]. Unlike 虽然, which is neutral, 尽管 often implies the concession is more extreme or unexpected — making the persistence of the result even more striking. Example: 尽管前途未知，他还是选择了自己喜欢的行业。(Even though the future was uncertain, he still chose the industry he loved.)",
+      "explanation": "尽管…还是/仍然 introduces a strong concession and emphasizes that the result occurs despite the concession. Structure: 尽管 + [strong concession], Subject + 还是/仍然 + [result that happens anyway]. Unlike 虽然, which is neutral, 尽管 often implies the concession is more extreme or unexpected — making the persistence of the result even more striking. 尽管前途未知，他还是选择了自己喜欢的行业 - Even though the future was uncertain, he still chose the industry he loved.",
       "examples": [
         {
           "chinese": "尽管前途未知，他还是选择了自己喜欢的行业。",
@@ -379,8 +469,18 @@
           "question": "_____ 这份工作的待遇不高，他还是决定留下来，因为他热爱这个行业。",
           "type": "multiple_choice",
           "correct": "尽管",
-          "options": ["尽管", "既然", "宁可", "要不然"],
-          "option_pinyin": ["jǐn guǎn", "jì rán", "nìng kě", "yào bù rán"],
+          "options": [
+            "尽管",
+            "既然",
+            "宁可",
+            "要不然"
+          ],
+          "option_pinyin": [
+            "jǐn guǎn",
+            "jì rán",
+            "nìng kě",
+            "yào bù rán"
+          ],
           "word_hints": {
             "热爱": "to love deeply; to be passionate about"
           }
@@ -389,8 +489,18 @@
           "question": "尽管她已经后悔了，但 _____ 没有勇气重新做出选择。",
           "type": "multiple_choice",
           "correct": "还是",
-          "options": ["还是", "就是", "既然", "才是"],
-          "option_pinyin": ["hái shì", "jiù shì", "jì rán", "cái shì"],
+          "options": [
+            "还是",
+            "就是",
+            "既然",
+            "才是"
+          ],
+          "option_pinyin": [
+            "hái shì",
+            "jiù shì",
+            "jì rán",
+            "cái shì"
+          ],
           "word_hints": {
             "重新": "again; anew"
           }
@@ -399,8 +509,18 @@
           "question": "尽管成功的道路上充满了挑战，他仍然_____ 坚持下去的信心。",
           "type": "multiple_choice",
           "correct": "保持着",
-          "options": ["保持着", "放弃了", "失去了", "结束了"],
-          "option_pinyin": ["bǎo chí zhe", "fàng qì le", "shī qù le", "jié shù le"],
+          "options": [
+            "保持着",
+            "放弃了",
+            "失去了",
+            "结束了"
+          ],
+          "option_pinyin": [
+            "bǎo chí zhe",
+            "fàng qì le",
+            "shī qù le",
+            "jié shù le"
+          ],
           "word_hints": {
             "充满": "full of; filled with",
             "挑战": "challenge"
@@ -416,7 +536,12 @@
             "尽管她很犹豫，所以做出了那个艰难的选择。",
             "尽管她很犹豫，就不做那个艰难的选择。"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {
             "艰难": "difficult; hard"
           }
@@ -425,8 +550,18 @@
           "question": "尽管他为未来的目标发愁了很久，但 _____ 没有选择放弃。",
           "type": "multiple_choice",
           "correct": "仍然",
-          "options": ["仍然", "竟然", "偶尔", "忽然"],
-          "option_pinyin": ["réng rán", "jìng rán", "ǒu ěr", "hū rán"],
+          "options": [
+            "仍然",
+            "竟然",
+            "偶尔",
+            "忽然"
+          ],
+          "option_pinyin": [
+            "réng rán",
+            "jìng rán",
+            "ǒu ěr",
+            "hū rán"
+          ],
           "word_hints": {}
         }
       ]
@@ -451,7 +586,12 @@
       "question": "Which word means 'to hesitate or waver between options'?",
       "type": "multiple_choice",
       "correct": "犹豫",
-      "options": ["犹豫", "发愁", "坚持", "放弃"],
+      "options": [
+        "犹豫",
+        "发愁",
+        "坚持",
+        "放弃"
+      ],
       "word_hints": {
         "犹豫": "yóu yù",
         "发愁": "fā chóu",
@@ -463,7 +603,12 @@
       "question": "Complete the sentence: 既然你已经知道答案了，_____ 直接说出来吧。",
       "type": "multiple_choice",
       "correct": "就",
-      "options": ["就", "才", "还", "都"],
+      "options": [
+        "就",
+        "才",
+        "还",
+        "都"
+      ],
       "word_hints": {
         "答案": "dá àn — answer"
       }
@@ -472,7 +617,12 @@
       "question": "What does 后悔莫及 mean?",
       "type": "multiple_choice",
       "correct": "Too late to regret",
-      "options": ["Too late to regret", "To regret deeply", "A chance to start over", "To hesitate too much"],
+      "options": [
+        "Too late to regret",
+        "To regret deeply",
+        "A chance to start over",
+        "To hesitate too much"
+      ],
       "word_hints": {
         "后悔莫及": "hòu huǐ mò jí"
       }
@@ -508,7 +658,12 @@
       "question": "尽管非常发愁，她 _____ 没有放弃坚持目标。",
       "type": "multiple_choice",
       "correct": "还是",
-      "options": ["还是", "既然", "宁可", "所以"],
+      "options": [
+        "还是",
+        "既然",
+        "宁可",
+        "所以"
+      ],
       "word_hints": {
         "发愁": "fā chóu — to worry",
         "放弃": "fàng qì — to give up"
@@ -521,8 +676,16 @@
       "title": "Should I Change Jobs?",
       "title_chinese": "要不要换工作",
       "speakers": {
-        "A": { "name": "加缪", "role": "哲学派", "gender": "male" },
-        "B": { "name": "但丁", "role": "谨慎派", "gender": "male" }
+        "A": {
+          "name": "加缪",
+          "role": "哲学派",
+          "gender": "male"
+        },
+        "B": {
+          "name": "但丁",
+          "role": "谨慎派",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -568,8 +731,16 @@
       "title": "Holding On to Ideals",
       "title_chinese": "坚守理想",
       "speakers": {
-        "A": { "name": "加缪", "role": "哲学作家", "gender": "male" },
-        "B": { "name": "鲁迅", "role": "现实主义者", "gender": "male" }
+        "A": {
+          "name": "加缪",
+          "role": "哲学作家",
+          "gender": "male"
+        },
+        "B": {
+          "name": "鲁迅",
+          "role": "现实主义者",
+          "gender": "male"
+        }
       },
       "lines": [
         {

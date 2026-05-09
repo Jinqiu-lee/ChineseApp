@@ -235,7 +235,7 @@
     {
       "number": 1,
       "title": "尽量 — As much as possible",
-      "explanation": "尽量 is an adverb meaning 'as much as possible' or 'to the greatest extent possible.' It is placed directly before the verb phrase and indicates that the subject should try their best to do something, though perfection is not required. Structure: Subject + 尽量 + verb phrase. It conveys effort and intention without absolute obligation. Compare with 尽力 (do one's utmost) which suggests maximum effort, while 尽量 is softer and more practical. Example: 你尽量早点来。(Try to come as early as possible.)",
+      "explanation": "尽量 is an adverb placed before the verb phrase, meaning 'as much as possible' — the subject tries their best but perfection is not required. Structure: Subject + 尽量 + verb phrase. 尽量 conveys effort and intention without absolute obligation; compare with 尽力 which implies maximum effort (你尽量早点来 means 'Try to come as early as possible').",
       "examples": [
         {
           "chinese": "想要减肥，应该尽量减少高热量食物的摄入。",
@@ -352,7 +352,7 @@
     {
       "number": 2,
       "title": "适当 — Appropriate; suitable; in moderation",
-      "explanation": "适当 can function as both an adjective (before a noun) and an adverb (before a verb). It means 'appropriate,' 'suitable,' or 'in moderation.' Compare with: 合适 (suitable for a specific purpose or situation, often used for objects and people) and 合理 (rational, reasonable, often used for plans, methods, and logic). 适当 emphasizes doing something to the right degree — not too much, not too little. Structure as adjective: 适当的 + noun. Structure as adverb: 适当 + verb. Example: 适当休息很重要。(Appropriate rest is very important.)",
+      "explanation": "适当 functions as both an adjective and an adverb meaning 'appropriate', 'suitable', or 'in moderation'. Structure: 适当的 + noun (adjective) | 适当 + verb (adverb). 适当 emphasizes doing something to the right degree — not too much, not too little (适当休息很重要 means 'Appropriate rest is very important'). Compare: 合适 is for objects/people (suitable for a purpose); 合理 is for plans/methods (rational or reasonable).",
       "examples": [
         {
           "chinese": "适当的运动加上均衡的饮食是保持健康体重的最佳方式。",
@@ -465,7 +465,7 @@
     {
       "number": 3,
       "title": "一方面…另一方面 — On one hand…on the other hand",
-      "explanation": "The structure 一方面…另一方面 is used to present two sides, aspects, or perspectives of an issue simultaneously. It is equivalent to 'on one hand…on the other hand' in English. Structure: 一方面 + [first aspect/clause], 另一方面 + [second aspect/clause]. This pattern can appear within a single sentence or across two sentences. It is commonly used in argumentative or analytical contexts to show balance or contrast. Example: 工作一方面让人充实，另一方面也会带来压力。(Work on one hand gives people fulfillment; on the other hand, it also brings pressure.)",
+      "explanation": "一方面…另一方面 presents two sides or aspects of an issue simultaneously, equivalent to 'on one hand…on the other hand' in English. Structure: 一方面 + [first aspect], 另一方面 + [second aspect]. This pattern can appear within one sentence or across two and is commonly used in argumentative or analytical writing. 工作一方面让人充实，另一方面也会带来压力 - Work on one hand gives people fulfillment; on the other hand, it also brings pressure.",
       "examples": [
         {
           "chinese": "节食一方面可以帮助减肥，另一方面过度节食却会伤害身体健康。",
@@ -625,8 +625,15 @@
       "question": "运动和健康饮食能够加快_____，帮助身体更有效地消耗热量。",
       "type": "multiple_choice",
       "correct": "新陈代谢",
-      "options": ["新陈代谢", "均衡饮食", "过度节食", "适量摄入"],
-      "word_hints": { "消耗": "xiāohào" }
+      "options": [
+        "新陈代谢",
+        "均衡饮食",
+        "过度节食",
+        "适量摄入"
+      ],
+      "word_hints": {
+        "消耗": "xiāohào"
+      }
     },
     {
       "question": "Fill in the blank: '为了保持健康，我们应该___饮食，不要挑食。'",

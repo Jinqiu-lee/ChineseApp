@@ -57,7 +57,7 @@ function buildDisplayPoints(usageParts) {
   let curType = isChineseStart(tail[0]);
   for (let i = 1; i < tail.length; i++) {
     const t = isChineseStart(tail[i]);
-    if (groups.length >= 2) {
+    if (groups.length >= 3) {
       cur.push(tail[i]);
     } else if (t === curType) {
       cur.push(tail[i]);
@@ -166,12 +166,15 @@ function GrammarPointCard({ point, isExpanded, onToggle }) {
             <View style={styles.examplesBlock}>
               <Text style={styles.fieldLabel}>Examples:</Text>
               {examples.map((ex, i) => (
-                <Text key={i} style={styles.exampleLine}>
+                <View key={i} style={styles.exampleEntry}>
                   <Text style={styles.exampleChinese}>{ex.chinese}</Text>
-                  {!!ex.english && (
-                    <Text style={styles.exampleEnglish}>  —  {ex.english}</Text>
+                  {!!ex.pinyin && (
+                    <Text style={styles.examplePinyin}>{ex.pinyin}</Text>
                   )}
-                </Text>
+                  {!!ex.english && (
+                    <Text style={styles.exampleEnglish}>{ex.english}</Text>
+                  )}
+                </View>
               ))}
             </View>
           )}
@@ -275,16 +278,14 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     gap: 5,
   },
-  exampleLine: {
-    fontSize: 14,
-    lineHeight: 21,
-    color: VG.cream,
+  exampleEntry: {
+    marginBottom: 2,
   },
 
   // Shared label style (bold, warm brown)
   fieldLabel: { fontWeight: '800', color: VG.gold },
 
-  // Example sub-styles (nested inside exampleLine Text)
-  exampleChinese: { fontWeight: '700', color: VG.cream },
-  exampleEnglish: { color: VG.creamMuted, fontStyle: 'italic' },
+  exampleChinese: { fontSize: 14, fontWeight: '700', color: VG.cream, lineHeight: 21 },
+  examplePinyin:  { fontSize: 12, color: VG.gold, lineHeight: 18 },
+  exampleEnglish: { fontSize: 13, color: VG.creamMuted, fontStyle: 'italic', lineHeight: 19 },
 });

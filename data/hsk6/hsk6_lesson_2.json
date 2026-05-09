@@ -223,7 +223,7 @@
     {
       "number": 1,
       "title": "靠 — To lean on / To rely on / To depend on",
-      "explanation": "靠 is a versatile verb with three main meanings: (1) Physical: to lean against something — 靠着墙 (leaning against the wall); (2) Reliance: to rely on or depend on someone/something — 靠朋友 (rely on a friend); (3) Proximity: to be next to or close to — 靠近 (to approach, be near). The structure is: Subject + 靠 + Object. When meaning 'lean against,' it is often followed by 着 to indicate a continuous state: 她靠着他的肩膀。(She was leaning against his shoulder.) Another example: 这件事只能靠自己。(For this matter, you can only rely on yourself.)",
+      "explanation": "靠 is a versatile verb with three main meanings: (1) Physical: to lean against something — 靠着墙 (leaning against the wall); (2) Reliance: to rely on or depend on someone/something — 靠朋友 (rely on a friend); (3) Proximity: to be next to or close to — 靠近 (to approach, be near). The structure is: Subject + 靠 + Object. When meaning 'lean against,' it is often followed by 着 to indicate a continuous state: 她靠着他的肩膀 - She was leaning against his shoulder. 这件事只能靠自己 - For this matter, you can only rely on yourself.",
       "examples": [
         {
           "chinese": "她累了，靠在他肩上睡着了。",
@@ -241,48 +241,108 @@
           "question": "她在沙发上 ____ 着他的肩膀，看完了那部电影。",
           "type": "multiple_choice",
           "correct": "靠",
-          "options": ["靠", "用", "沿", "跟"],
-          "option_pinyin": ["kào", "yòng", "yán", "gēn"],
-          "word_hints": { "沙发": "shā fā" }
+          "options": [
+            "靠",
+            "用",
+            "沿",
+            "跟"
+          ],
+          "option_pinyin": [
+            "kào",
+            "yòng",
+            "yán",
+            "gēn"
+          ],
+          "word_hints": {
+            "沙发": "shā fā"
+          }
         },
         {
           "question": "Which sentence uses 靠 to mean 'rely on'?",
           "type": "multiple_choice",
           "correct": "遇到困难，我总是靠他帮我想办法。",
-          "options": ["她靠着墙站着。", "遇到困难，我总是靠他帮我想办法。", "他们靠近了那棵大树。", "桌子靠窗放着。"],
-          "option_pinyin": ["tā kào zhe qiáng zhànzhe.", "yù dào kùnnán, wǒ zǒng shì kào tā bāng wǒ xiǎng bànfǎ.", "tāmen kào jìn le nà kē dà shù.", "zhuōzi kào chuāng fàng zhe."],
-          "word_hints": { "办法": "bàn fǎ" }
+          "options": [
+            "她靠着墙站着。",
+            "遇到困难，我总是靠他帮我想办法。",
+            "他们靠近了那棵大树。",
+            "桌子靠窗放着。"
+          ],
+          "option_pinyin": [
+            "tā kào zhe qiáng zhànzhe.",
+            "yù dào kùnnán, wǒ zǒng shì kào tā bāng wǒ xiǎng bànfǎ.",
+            "tāmen kào jìn le nà kē dà shù.",
+            "zhuōzi kào chuāng fàng zhe."
+          ],
+          "word_hints": {
+            "办法": "bàn fǎ"
+          }
         },
         {
           "question": "一段感情，既需要互相包容，也需要 ____ 自己的判断选择对的人。",
           "type": "multiple_choice",
           "correct": "靠",
-          "options": ["用", "靠", "跟", "被"],
-          "option_pinyin": ["yòng", "kào", "gēn", "bèi"],
-          "word_hints": { "判断": "pàn duàn" }
+          "options": [
+            "用",
+            "靠",
+            "跟",
+            "被"
+          ],
+          "option_pinyin": [
+            "yòng",
+            "kào",
+            "gēn",
+            "bèi"
+          ],
+          "word_hints": {
+            "判断": "pàn duàn"
+          }
         },
         {
           "question": "他们 ____ 在一起看星星，不知不觉过了好几个小时。",
           "type": "multiple_choice",
           "correct": "靠",
-          "options": ["站", "靠", "坐", "走"],
-          "option_pinyin": ["zhàn", "kào", "zuò", "zǒu"],
-          "word_hints": { "星星": "xīng xing" }
+          "options": [
+            "站",
+            "靠",
+            "坐",
+            "走"
+          ],
+          "option_pinyin": [
+            "zhàn",
+            "kào",
+            "zuò",
+            "zǒu"
+          ],
+          "word_hints": {
+            "星星": "xīng xing"
+          }
         },
         {
           "question": "真正的感情不是 ____ 对方解决你所有的问题，而是一起面对。",
           "type": "multiple_choice",
           "correct": "靠",
-          "options": ["靠", "用", "叫", "让"],
-          "option_pinyin": ["kào", "yòng", "jiào", "ràng"],
-          "word_hints": { "解决": "jiě jué" }
+          "options": [
+            "靠",
+            "用",
+            "叫",
+            "让"
+          ],
+          "option_pinyin": [
+            "kào",
+            "yòng",
+            "jiào",
+            "ràng"
+          ],
+          "word_hints": {
+            "解决": "jiě jué"
+          }
         }
       ]
     },
     {
       "number": 2,
       "title": "倒是 — Actually; on the contrary; surprisingly",
-      "explanation": "倒是 is an adverb used to note that something is contrary to expectations, or to add a contrasting observation. It often introduces a nuanced or surprising truth, and can soften a contradiction. Structure: Subject + 倒是 + [unexpected or contrasting statement]. It can also be used to express concession: 他话不多，倒是很体贴。(He doesn't say much, but he is actually quite thoughtful.) It can express mild irony or pleasant surprise. Another example: 我以为他会生气，他倒是笑了。(I thought he would be angry — he actually laughed.) Compare with 但是: 倒是 is more nuanced and conversational.",
+      "explanation": "倒是 is an adverb used to note that something is contrary to expectations, or to add a contrasting observation. It often introduces a nuanced or surprising truth, and can soften a contradiction. Structure: Subject + 倒是 + [unexpected or contrasting statement]. It can also be used to express concession: 他话不多，倒是很体贴 - He doesn't say much, but he is actually quite thoughtful. It can express mild irony or pleasant surprise. 我以为他会生气，他倒是笑了 - I thought he would be angry — he actually laughed. Compare with 但是: 倒是 is more nuanced and conversational.",
       "examples": [
         {
           "chinese": "她不喜欢收花，倒是很喜欢他给她做的饭。",
@@ -300,48 +360,105 @@
           "question": "他不常说\"我爱你\"，____ 很注意生活中的每一个细节。",
           "type": "multiple_choice",
           "correct": "倒是",
-          "options": ["因为", "倒是", "所以", "虽然"],
-          "option_pinyin": ["yīn wèi", "dào shì", "suǒ yǐ", "suī rán"],
+          "options": [
+            "因为",
+            "倒是",
+            "所以",
+            "虽然"
+          ],
+          "option_pinyin": [
+            "yīn wèi",
+            "dào shì",
+            "suǒ yǐ",
+            "suī rán"
+          ],
           "word_hints": {}
         },
         {
           "question": "她以为他会忘记，他 ____ 提前一个月就开始准备了。",
           "type": "multiple_choice",
           "correct": "倒是",
-          "options": ["竟然", "倒是", "虽然", "既然"],
-          "option_pinyin": ["jìng rán", "dào shì", "suī rán", "jì rán"],
-          "word_hints": { "提前": "tí qián" }
+          "options": [
+            "竟然",
+            "倒是",
+            "虽然",
+            "既然"
+          ],
+          "option_pinyin": [
+            "jìng rán",
+            "dào shì",
+            "suī rán",
+            "jì rán"
+          ],
+          "word_hints": {
+            "提前": "tí qián"
+          }
         },
         {
           "question": "Which sentence uses 倒是 correctly?",
           "type": "multiple_choice",
           "correct": "我以为她会不高兴，她倒是笑着说没关系。",
-          "options": ["我以为她会不高兴，她倒是笑着说没关系。", "他倒是爱她，因为他倒是体贴。", "倒是她很美。", "他倒是，去了。"],
-          "option_pinyin": ["wǒ yǐwéi tā huì bù gāoxìng, tā dào shì xiào zhe shuō méiguānxi.", "tā dào shì ài tā, yīnwèi tā dào shì tǐtiē.", "dào shì tā hěn měi.", "tā dào shì, qù le."],
+          "options": [
+            "我以为她会不高兴，她倒是笑着说没关系。",
+            "他倒是爱她，因为他倒是体贴。",
+            "倒是她很美。",
+            "他倒是，去了。"
+          ],
+          "option_pinyin": [
+            "wǒ yǐwéi tā huì bù gāoxìng, tā dào shì xiào zhe shuō méiguānxi.",
+            "tā dào shì ài tā, yīnwèi tā dào shì tǐtiē.",
+            "dào shì tā hěn měi.",
+            "tā dào shì, qù le."
+          ],
           "word_hints": {}
         },
         {
           "question": "大家都以为她喜欢浪漫的礼物，她 ____ 更欣赏真诚的表达。",
           "type": "multiple_choice",
           "correct": "倒是",
-          "options": ["居然", "但是", "倒是", "原来"],
-          "option_pinyin": ["jū rán", "dàn shì", "dào shì", "yuán lái"],
-          "word_hints": { "欣赏": "xīn shǎng" }
+          "options": [
+            "居然",
+            "但是",
+            "倒是",
+            "原来"
+          ],
+          "option_pinyin": [
+            "jū rán",
+            "dàn shì",
+            "dào shì",
+            "yuán lái"
+          ],
+          "word_hints": {
+            "欣赏": "xīn shǎng"
+          }
         },
         {
           "question": "他看起来很严肃，私下里 ____ 特别幽默，总能让她心情变好。",
           "type": "multiple_choice",
           "correct": "倒是",
-          "options": ["倒是", "因此", "虽然", "既然"],
-          "option_pinyin": ["dào shì", "yīn cǐ", "suī rán", "jì rán"],
-          "word_hints": { "严肃": "yán sù", "幽默": "yōu mò" }
+          "options": [
+            "倒是",
+            "因此",
+            "虽然",
+            "既然"
+          ],
+          "option_pinyin": [
+            "dào shì",
+            "yīn cǐ",
+            "suī rán",
+            "jì rán"
+          ],
+          "word_hints": {
+            "严肃": "yán sù",
+            "幽默": "yōu mò"
+          }
         }
       ]
     },
     {
       "number": 3,
       "title": "不知不觉 — Without realizing; unconsciously",
-      "explanation": "不知不觉 is a four-character phrase (成语 structure) meaning 'without being aware of it' or 'before one knows it.' It describes something that happens gradually or unnoticed. Structure: 不知不觉 + (地) + verb phrase, or 不知不觉 + a duration of time has passed. The optional 地 makes it a more formal adverbial modifier. It often conveys a gentle, wistful tone — time or feelings that crept up without notice. Example: 不知不觉，天黑了。(Without realizing, it had grown dark.) Another: 他们不知不觉地爱上了对方。(Without realizing it, they fell in love with each other.)",
+      "explanation": "不知不觉 is a four-character phrase (成语 structure) meaning 'without being aware of it' or 'before one knows it.' It describes something that happens gradually or unnoticed. Structure: 不知不觉 + (地) + verb phrase, or 不知不觉 + a duration of time has passed. The optional 地 makes it a more formal adverbial modifier. It often conveys a gentle, wistful tone — time or feelings that crept up without notice. 不知不觉，天黑了 - Without realizing, it had grown dark. 他们不知不觉地爱上了对方 - Without realizing it, they fell in love with each other.",
       "examples": [
         {
           "chinese": "不知不觉，他们在公园里聊了整整三个小时。",
@@ -359,41 +476,95 @@
           "question": "他们坐在河边聊天，____ ，夜幕降临了。",
           "type": "multiple_choice",
           "correct": "不知不觉",
-          "options": ["居然", "不知不觉", "原来", "偶尔"],
-          "option_pinyin": ["jū rán", "bù zhī bù jué", "yuán lái", "ǒu ěr"],
-          "word_hints": { "夜幕降临": "yè mù jiàng lín" }
+          "options": [
+            "居然",
+            "不知不觉",
+            "原来",
+            "偶尔"
+          ],
+          "option_pinyin": [
+            "jū rán",
+            "bù zhī bù jué",
+            "yuán lái",
+            "ǒu ěr"
+          ],
+          "word_hints": {
+            "夜幕降临": "yè mù jiàng lín"
+          }
         },
         {
           "question": "她 ____ 爱上了他，直到有一天他不在，才发现心里空了一块。",
           "type": "multiple_choice",
           "correct": "不知不觉地",
-          "options": ["竟然", "倒是", "不知不觉地", "平静地"],
-          "option_pinyin": ["jìng rán", "dào shì", "bù zhī bù jué de", "píng jìng de"],
+          "options": [
+            "竟然",
+            "倒是",
+            "不知不觉地",
+            "平静地"
+          ],
+          "option_pinyin": [
+            "jìng rán",
+            "dào shì",
+            "bù zhī bù jué de",
+            "píng jìng de"
+          ],
           "word_hints": {}
         },
         {
           "question": "Which sentence uses 不知不觉 correctly?",
           "type": "multiple_choice",
           "correct": "不知不觉，他们已经在一起十年了。",
-          "options": ["不知不觉，他们已经在一起十年了。", "不知不觉他很体贴。", "他不知不觉地，他喜欢她。", "不知不觉是好事。"],
-          "option_pinyin": ["bù zhī bù jué, tāmen yǐjīng zài yīqǐ shí nián le.", "bù zhī bù jué tā hěn tǐtiē.", "tā bù zhī bù jué de, tā xǐhuān tā.", "bù zhī bù jué shì hǎoshì."],
+          "options": [
+            "不知不觉，他们已经在一起十年了。",
+            "不知不觉他很体贴。",
+            "他不知不觉地，他喜欢她。",
+            "不知不觉是好事。"
+          ],
+          "option_pinyin": [
+            "bù zhī bù jué, tāmen yǐjīng zài yīqǐ shí nián le.",
+            "bù zhī bù jué tā hěn tǐtiē.",
+            "tā bù zhī bù jué de, tā xǐhuān tā.",
+            "bù zhī bù jué shì hǎoshì."
+          ],
           "word_hints": {}
         },
         {
           "question": "他们 ____ 地养成了每天互相安慰的习惯，感情越来越深。",
           "type": "multiple_choice",
           "correct": "不知不觉",
-          "options": ["偶尔", "不知不觉", "竟然", "原来"],
-          "option_pinyin": ["ǒu ěr", "bù zhī bù jué", "jìng rán", "yuán lái"],
+          "options": [
+            "偶尔",
+            "不知不觉",
+            "竟然",
+            "原来"
+          ],
+          "option_pinyin": [
+            "ǒu ěr",
+            "bù zhī bù jué",
+            "jìng rán",
+            "yuán lái"
+          ],
           "word_hints": {}
         },
         {
           "question": "聊着聊着，____，咖啡已经凉了，但他们还不想停下来。",
           "type": "multiple_choice",
           "correct": "不知不觉",
-          "options": ["倒是", "不知不觉", "原来", "真诚"],
-          "option_pinyin": ["dào shì", "bù zhī bù jué", "yuán lái", "zhēn chéng"],
-          "word_hints": { "凉": "liáng" }
+          "options": [
+            "倒是",
+            "不知不觉",
+            "原来",
+            "真诚"
+          ],
+          "option_pinyin": [
+            "dào shì",
+            "bù zhī bù jué",
+            "yuán lái",
+            "zhēn chéng"
+          ],
+          "word_hints": {
+            "凉": "liáng"
+          }
         }
       ]
     }
@@ -417,43 +588,87 @@
       "question": "Which word means 'to be grateful or feel gratitude'?",
       "type": "multiple_choice",
       "correct": "感激",
-      "options": ["关心", "安慰", "感激", "依赖"],
-      "word_hints": { "感激": "gǎn jī", "关心": "guān xīn", "安慰": "ān wèi", "依赖": "yī lài" }
+      "options": [
+        "关心",
+        "安慰",
+        "感激",
+        "依赖"
+      ],
+      "word_hints": {
+        "感激": "gǎn jī",
+        "关心": "guān xīn",
+        "安慰": "ān wèi",
+        "依赖": "yī lài"
+      }
     },
     {
       "question": "Fill in the blank: 他话很少，____ 在关键时刻总说出最贴心的话。",
       "type": "multiple_choice",
       "correct": "倒是",
-      "options": ["因为", "竟然", "倒是", "虽然"],
-      "word_hints": { "贴心": "tiē xīn" }
+      "options": [
+        "因为",
+        "竟然",
+        "倒是",
+        "虽然"
+      ],
+      "word_hints": {
+        "贴心": "tiē xīn"
+      }
     },
     {
       "question": "Which phrase means 'without realizing it'?",
       "type": "multiple_choice",
       "correct": "不知不觉",
-      "options": ["真诚交流", "靠在一起", "不知不觉", "互相包容"],
+      "options": [
+        "真诚交流",
+        "靠在一起",
+        "不知不觉",
+        "互相包容"
+      ],
       "word_hints": {}
     },
     {
       "question": "她 ____ 以为他不在意，结果他早就悄悄准备好了一切。",
       "type": "multiple_choice",
       "correct": "原来",
-      "options": ["平静", "原来", "浪漫", "沉默"],
-      "word_hints": { "悄悄": "qiāo qiāo" }
+      "options": [
+        "平静",
+        "原来",
+        "浪漫",
+        "沉默"
+      ],
+      "word_hints": {
+        "悄悄": "qiāo qiāo"
+      }
     },
     {
       "question": "What does 摩擦 mean in the context of relationships?",
       "type": "multiple_choice",
       "correct": "friction, conflict",
-      "options": ["silence", "friction, conflict", "comfort", "gratitude"],
-      "word_hints": { "摩擦": "mó cā" }
+      "options": [
+        "silence",
+        "friction, conflict",
+        "comfort",
+        "gratitude"
+      ],
+      "word_hints": {
+        "摩擦": "mó cā"
+      }
     },
     {
       "question": "他 ____ 把她最喜欢的零食放在了她的包里，让她在上班路上有个惊喜。",
       "type": "multiple_choice",
       "correct": "竟然",
-      "options": ["自然", "平静", "竟然", "真诚"],
-      "word_hints": { "零食": "líng shí", "惊喜": "jīng xǐ" }
+      "options": [
+        "自然",
+        "平静",
+        "竟然",
+        "真诚"
+      ],
+      "word_hints": {
+        "零食": "líng shí",
+        "惊喜": "jīng xǐ"
+      }
     }
   ],
   "dialogues": [
@@ -462,8 +677,16 @@
       "title": "A Comfortable Silence",
       "title_chinese": "舒适的沉默",
       "speakers": {
-        "A": { "name": "爱玲", "role": "朋友", "gender": "female" },
-        "B": { "name": "兰特", "role": "朋友", "gender": "female" }
+        "A": {
+          "name": "爱玲",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "兰特",
+          "role": "朋友",
+          "gender": "female"
+        }
       },
       "lines": [
         {
@@ -509,8 +732,16 @@
       "title": "What Does 'Romantic' Mean?",
       "title_chinese": "\"浪漫\"是什么意思",
       "speakers": {
-        "A": { "name": "爱玲", "role": "朋友", "gender": "female" },
-        "B": { "name": "奥斯汀", "role": "朋友", "gender": "female" }
+        "A": {
+          "name": "爱玲",
+          "role": "朋友",
+          "gender": "female"
+        },
+        "B": {
+          "name": "奥斯汀",
+          "role": "朋友",
+          "gender": "female"
+        }
       },
       "lines": [
         {

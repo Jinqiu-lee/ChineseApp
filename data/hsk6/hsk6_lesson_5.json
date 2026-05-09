@@ -246,7 +246,7 @@
     {
       "number": 1,
       "title": "毕竟 — After all; in the final analysis",
-      "explanation": "毕竟 is an adverb meaning 'after all' or 'when all is said and done'. It introduces an underlying truth or reality that cannot be ignored, often used to justify or explain something. Structure: Subject + 毕竟 + [underlying truth/reality]. Note: 毕竟 differs from 到底 — 到底 is used in questions to press for a final answer, while 毕竟 draws a conclusion from facts. Example: 他毕竟是第一次参加这种讨论，紧张是正常的。(After all, it was his first time participating in this kind of discussion; being nervous is normal.)",
+      "explanation": "毕竟 is an adverb meaning 'after all' or 'when all is said and done'. It introduces an underlying truth or reality that cannot be ignored, often used to justify or explain something. Structure: Subject + 毕竟 + [underlying truth/reality]. Note: 毕竟 differs from 到底 — 到底 is used in questions to press for a final answer, while 毕竟 draws a conclusion from facts. 他毕竟是第一次参加这种讨论，紧张是正常的 - After all, it was his first time participating in this kind of discussion; being nervous is normal.",
       "examples": [
         {
           "chinese": "他毕竟是第一次参加这种讨论，紧张是正常的。",
@@ -264,9 +264,22 @@
           "question": "他 _____ 年纪还小，有些想法不成熟是可以理解的。",
           "type": "multiple_choice",
           "correct": "毕竟",
-          "options": ["毕竟", "或许", "逐渐", "互相"],
-          "option_pinyin": ["bì jìng", "huò xǔ", "zhú jiàn", "hù xiāng"],
-          "word_hints": { "年纪": "niánjì", "不成熟": "bù chéngshú" }
+          "options": [
+            "毕竟",
+            "或许",
+            "逐渐",
+            "互相"
+          ],
+          "option_pinyin": [
+            "bì jìng",
+            "huò xǔ",
+            "zhú jiàn",
+            "hù xiāng"
+          ],
+          "word_hints": {
+            "年纪": "niánjì",
+            "不成熟": "bù chéngshú"
+          }
         },
         {
           "question": "Choose the sentence that uses 毕竟 correctly.",
@@ -278,8 +291,15 @@
             "他毕竟来了，但是迟到了。",
             "毕竟如果你同意，我们就开始吧。"
           ],
-          "option_pinyin": ["", "", "", ""],
-          "word_hints": { "发言权": "fāyánquán" }
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "发言权": "fāyánquán"
+          }
         },
         {
           "question": "What is the main function of 毕竟 in a sentence?",
@@ -291,7 +311,12 @@
             "To show that one action happens before another",
             "To ask for a definitive answer to a question"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
@@ -304,7 +329,12 @@
             "虽然从未努力",
             "因此她放弃了"
           ],
-          "option_pinyin": ["chénggōng shì yīnggāi de", "", "", ""],
+          "option_pinyin": [
+            "chénggōng shì yīnggāi de",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
@@ -317,7 +347,12 @@
             "毕竟 is used only in negative sentences",
             "到底 expresses an underlying truth while 毕竟 asks a question"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -325,7 +360,7 @@
     {
       "number": 2,
       "title": "逐渐 — Gradually / Step by step",
-      "explanation": "逐渐 is an adverb meaning 'gradually' or 'step by step'. It describes a change that happens slowly over time. Structure: Subject + 逐渐 + [change verb/state]. Compared with similar words: 慢慢 emphasizes a slow pace; 渐渐 is similar to 逐渐 but slightly more literary and often describes natural processes; 逐渐 is neutral and common in both written and spoken Chinese. Example: 通过多次争论，他们逐渐找到了共同点。(Through multiple debates, they gradually found common ground.)",
+      "explanation": "逐渐 is an adverb meaning 'gradually' or 'step by step'. It describes a change that happens slowly over time. Structure: Subject + 逐渐 + [change verb/state]. Compared with similar words: 慢慢 emphasizes a slow pace; 渐渐 is similar to 逐渐 but slightly more literary and often describes natural processes; 逐渐 is neutral and common in both written and spoken Chinese. 通过多次争论，他们逐渐找到了共同点 - Through multiple debates, they gradually found common ground.",
       "examples": [
         {
           "chinese": "通过多次争论，他们逐渐找到了共同点。",
@@ -343,9 +378,21 @@
           "question": "经过几个月的练习，她的思维能力_____ 提高了。",
           "type": "multiple_choice",
           "correct": "逐渐",
-          "options": ["逐渐", "毕竟", "或许", "坚持"],
-          "option_pinyin": ["zhú jiàn", "bì jìng", "huò xǔ", "jiān chí"],
-          "word_hints": { "思维能力": "sīwéi nénglì" }
+          "options": [
+            "逐渐",
+            "毕竟",
+            "或许",
+            "坚持"
+          ],
+          "option_pinyin": [
+            "zhú jiàn",
+            "bì jìng",
+            "huò xǔ",
+            "jiān chí"
+          ],
+          "word_hints": {
+            "思维能力": "sīwéi nénglì"
+          }
         },
         {
           "question": "Which sentence uses 逐渐 most naturally?",
@@ -357,8 +404,16 @@
             "逐渐我不喜欢争论。",
             "她逐渐但是同意了。"
           ],
-          "option_pinyin": ["", "", "", ""],
-          "word_hints": { "随着": "suízhe", "时间推移": "shíjiān tuīyí" }
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "随着": "suízhe",
+            "时间推移": "shíjiān tuīyí"
+          }
         },
         {
           "question": "What is the key difference between 逐渐 and 慢慢?",
@@ -370,23 +425,50 @@
             "慢慢 can only be used with negative sentences",
             "逐渐 is only used in questions"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "他起初不接受批评，但后来_____ 学会了从善如流。",
           "type": "multiple_choice",
           "correct": "逐渐",
-          "options": ["逐渐", "毕竟", "互相", "承认"],
-          "option_pinyin": ["zhú jiàn", "bì jìng", "hù xiāng", "chéng rèn"],
-          "word_hints": { "从善如流": "cóng shàn rú liú" }
+          "options": [
+            "逐渐",
+            "毕竟",
+            "互相",
+            "承认"
+          ],
+          "option_pinyin": [
+            "zhú jiàn",
+            "bì jìng",
+            "hù xiāng",
+            "chéng rèn"
+          ],
+          "word_hints": {
+            "从善如流": "cóng shàn rú liú"
+          }
         },
         {
           "question": "Which word is most interchangeable with 逐渐 in a literary context?",
           "type": "multiple_choice",
           "correct": "渐渐",
-          "options": ["渐渐", "突然", "始终", "立刻"],
-          "option_pinyin": ["jiàn jiàn", "tū rán", "shǐ zhōng", "lì kè"],
+          "options": [
+            "渐渐",
+            "突然",
+            "始终",
+            "立刻"
+          ],
+          "option_pinyin": [
+            "jiàn jiàn",
+            "tū rán",
+            "shǐ zhōng",
+            "lì kè"
+          ],
           "word_hints": {}
         }
       ]
@@ -394,7 +476,7 @@
     {
       "number": 3,
       "title": "或许 — Perhaps / Maybe (formal)",
-      "explanation": "或许 is a formal adverb meaning 'perhaps' or 'maybe'. It expresses possibility with a reflective or tentative tone, and is common in written Chinese and formal speech. Compared with similar words: 也许 — everyday spoken Chinese, casual and common; 或许 — more formal and literary, often used in essays and speeches; 可能 — focuses on probability or likelihood ('it is possible that...'). Structure: 或许 + [proposition/assessment]. Example: 或许争论本身并不重要，重要的是彼此了解。(Perhaps the debate itself is not important; what matters is understanding each other.)",
+      "explanation": "或许 is a formal adverb meaning 'perhaps' or 'maybe'. It expresses possibility with a reflective or tentative tone, and is common in written Chinese and formal speech. Compared with similar words: 也许 — everyday spoken Chinese, casual and common; 或许 — more formal and literary, often used in essays and speeches; 可能 — focuses on probability or likelihood ('it is possible that...'). Structure: 或许 + [proposition/assessment]. 或许争论本身并不重要，重要的是彼此了解 - Perhaps the debate itself is not important; what matters is understanding each other.",
       "examples": [
         {
           "chinese": "或许争论本身并不重要，重要的是彼此了解。",
@@ -412,9 +494,21 @@
           "question": "_____ 我们对这个问题的理解还不够深入。",
           "type": "multiple_choice",
           "correct": "或许",
-          "options": ["或许", "毕竟", "互相", "逐渐"],
-          "option_pinyin": ["huò xǔ", "bì jìng", "hù xiāng", "zhú jiàn"],
-          "word_hints": { "深入": "shēnrù" }
+          "options": [
+            "或许",
+            "毕竟",
+            "互相",
+            "逐渐"
+          ],
+          "option_pinyin": [
+            "huò xǔ",
+            "bì jìng",
+            "hù xiāng",
+            "zhú jiàn"
+          ],
+          "word_hints": {
+            "深入": "shēnrù"
+          }
         },
         {
           "question": "Which context is 或许 most appropriate for?",
@@ -426,7 +520,12 @@
             "Giving an urgent command",
             "Stating a known fact"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
@@ -439,23 +538,50 @@
             "可能 is more formal than 或许",
             "或许 is only used in negative sentences"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "这个方法_____ 不是最好的，但在目前的条件下是可行的。",
           "type": "multiple_choice",
           "correct": "或许",
-          "options": ["或许", "坚持", "说服", "承认"],
-          "option_pinyin": ["huò xǔ", "jiān chí", "shuō fú", "chéng rèn"],
-          "word_hints": { "可行": "kěxíng" }
+          "options": [
+            "或许",
+            "坚持",
+            "说服",
+            "承认"
+          ],
+          "option_pinyin": [
+            "huò xǔ",
+            "jiān chí",
+            "shuō fú",
+            "chéng rèn"
+          ],
+          "word_hints": {
+            "可行": "kěxíng"
+          }
         },
         {
           "question": "Choose the most natural substitute for 或许 in everyday conversation.",
           "type": "multiple_choice",
           "correct": "也许",
-          "options": ["也许", "毕竟", "逐渐", "互相"],
-          "option_pinyin": ["yě xǔ", "bì jìng", "zhú jiàn", "hù xiāng"],
+          "options": [
+            "也许",
+            "毕竟",
+            "逐渐",
+            "互相"
+          ],
+          "option_pinyin": [
+            "yě xǔ",
+            "bì jìng",
+            "zhú jiàn",
+            "hù xiāng"
+          ],
           "word_hints": {}
         }
       ]
@@ -480,22 +606,42 @@
       "question": "What does 荒诞 mean?",
       "type": "multiple_choice",
       "correct": "Absurd; grotesque and surreal",
-      "options": ["Absurd; grotesque and surreal", "Indifferent; apathetic", "To resist; rebel", "Gradually, step by step"],
+      "options": [
+        "Absurd; grotesque and surreal",
+        "Indifferent; apathetic",
+        "To resist; rebel",
+        "Gradually, step by step"
+      ],
       "word_hints": {}
     },
     {
       "question": "他们的关系_____ 得到了改善，争论反而拉近了他们的距离。",
       "type": "multiple_choice",
       "correct": "逐渐",
-      "options": ["逐渐", "坚持", "承认", "说服"],
-      "word_hints": { "改善": "gǎishàn", "距离": "jùlí" }
+      "options": [
+        "逐渐",
+        "坚持",
+        "承认",
+        "说服"
+      ],
+      "word_hints": {
+        "改善": "gǎishàn",
+        "距离": "jùlí"
+      }
     },
     {
       "question": "春秋战国时代，_____，各种哲学思想在争论与碰撞中蓬勃发展。",
       "type": "multiple_choice",
       "correct": "百家争鸣",
-      "options": ["百家争鸣", "争论不休", "各抒己见", "荒诞不经"],
-      "word_hints": { "蓬勃发展": "péngbó fāzhǎn" }
+      "options": [
+        "百家争鸣",
+        "争论不休",
+        "各抒己见",
+        "荒诞不经"
+      ],
+      "word_hints": {
+        "蓬勃发展": "péngbó fāzhǎn"
+      }
     },
     {
       "question": "What does the idiom 朝三暮四 mean in modern Chinese?",
@@ -513,35 +659,68 @@
       "question": "面对他人的痛苦，他始终_____，既不批评也不同情。",
       "type": "multiple_choice",
       "correct": "冷漠",
-      "options": ["冷漠", "荒诞", "反抗", "奇迹"],
-      "word_hints": { "痛苦": "tòngkǔ", "同情": "tóngqíng" }
+      "options": [
+        "冷漠",
+        "荒诞",
+        "反抗",
+        "奇迹"
+      ],
+      "word_hints": {
+        "痛苦": "tòngkǔ",
+        "同情": "tóngqíng"
+      }
     },
     {
       "question": "他无论如何都不愿意_____ 自己当初的判断是错误的。",
       "type": "multiple_choice",
       "correct": "承认",
-      "options": ["承认", "说服", "坚持", "沟通"],
-      "word_hints": { "判断": "pànduàn" }
+      "options": [
+        "承认",
+        "说服",
+        "坚持",
+        "沟通"
+      ],
+      "word_hints": {
+        "判断": "pànduàn"
+      }
     },
     {
       "question": "加缪认为，即使命运荒诞，人也应该清醒地_____，而不是放弃或逃避。",
       "type": "multiple_choice",
       "correct": "反抗",
-      "options": ["反抗", "冷漠", "承认", "逐渐"],
-      "word_hints": { "命运": "mìngyùn", "清醒": "qīngxǐng" }
+      "options": [
+        "反抗",
+        "冷漠",
+        "承认",
+        "逐渐"
+      ],
+      "word_hints": {
+        "命运": "mìngyùn",
+        "清醒": "qīngxǐng"
+      }
     },
     {
       "question": "Which phrase best describes a debate where everyone can share their own views?",
       "type": "multiple_choice",
       "correct": "各抒己见",
-      "options": ["各抒己见", "争论不休", "百家争鸣", "荒诞不经"],
+      "options": [
+        "各抒己见",
+        "争论不休",
+        "百家争鸣",
+        "荒诞不经"
+      ],
       "word_hints": {}
     },
     {
       "question": "Which word means 'after all' and acknowledges an underlying truth?",
       "type": "multiple_choice",
       "correct": "毕竟",
-      "options": ["毕竟", "逐渐", "荒诞", "或许"],
+      "options": [
+        "毕竟",
+        "逐渐",
+        "荒诞",
+        "或许"
+      ],
       "word_hints": {}
     }
   ],
@@ -551,8 +730,16 @@
       "title": "Is Debate Useful?",
       "title_chinese": "争论有用吗？",
       "speakers": {
-        "A": { "name": "但丁", "role": "哲学家", "gender": "male" },
-        "B": { "name": "鲁迅", "role": "作家", "gender": "male" }
+        "A": {
+          "name": "但丁",
+          "role": "哲学家",
+          "gender": "male"
+        },
+        "B": {
+          "name": "鲁迅",
+          "role": "作家",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -598,8 +785,16 @@
       "title": "Changing My Mind",
       "title_chinese": "改变了想法",
       "speakers": {
-        "A": { "name": "但丁", "role": "哲学家", "gender": "male" },
-        "B": { "name": "加缪", "role": "哲学作家", "gender": "male" }
+        "A": {
+          "name": "但丁",
+          "role": "哲学家",
+          "gender": "male"
+        },
+        "B": {
+          "name": "加缪",
+          "role": "哲学作家",
+          "gender": "male"
+        }
       },
       "lines": [
         {

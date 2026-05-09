@@ -214,10 +214,18 @@
       "id": "hsk6_l10_g1",
       "pattern": "不仅…而且…",
       "meaning": "Not only … but also …",
-      "explanation": "Used to connect two parallel ideas where the second extends or intensifies the first. 不仅 introduces the first point; 而且 introduces the additional, often more significant point.",
+      "explanation": "Used to connect two parallel ideas where the second extends or intensifies the first. Structure: Subject + 不仅 + [first point]，而且 + [additional/stronger point]. 不仅 introduces the first point; 而且 introduces the additional, often more significant point.",
       "examples": [
-        "她不仅会说中文，而且能写一手漂亮的汉字。",
-        "这款应用不仅操作简单，而且功能十分强大。"
+        {
+          "chinese": "她不仅会说中文，而且能写一手漂亮的汉字。",
+          "pinyin": "Tā bù jǐn huì shuō zhōng wén，ér qiě néng xiě yī shǒu piào liang de hàn zì.",
+          "english": "She can not only speak Chinese, but also write beautiful Chinese characters."
+        },
+        {
+          "chinese": "这款应用不仅操作简单，而且功能十分强大。",
+          "pinyin": "Zhè kuǎn yìng yòng bù jǐn cāo zuò jiǎn dān，ér qiě gōng néng shí fēn qiáng dà.",
+          "english": "This app is not only simple to operate, but also has extremely powerful functions."
+        }
       ],
       "exercises": [
         {
@@ -276,10 +284,18 @@
       "id": "hsk6_l10_g2",
       "pattern": "由于",
       "meaning": "Due to, owing to, because of",
-      "explanation": "由于 introduces a reason or cause, similar to 因为 but slightly more formal. It often appears at the beginning of a clause or sentence. Unlike 因为…所以, 由于 usually does not pair with 所以 in formal writing.",
+      "explanation": "由于 introduces a reason or cause, similar to 因为 but slightly more formal. Structure: 由于 + [reason]，[result clause]. It often appears at the beginning of a clause or sentence. Unlike 因为…所以, 由于 usually does not pair with 所以 in formal writing.",
       "examples": [
-        "由于天气原因，比赛被推迟了。",
-        "由于缺乏资金，这个项目无法继续进行。"
+        {
+          "chinese": "由于天气原因，比赛被推迟了。",
+          "pinyin": "Yóu yú tiān qì yuán yīn，bǐ sài bèi tuī chí le.",
+          "english": "Due to weather conditions, the match was postponed."
+        },
+        {
+          "chinese": "由于缺乏资金，这个项目无法继续进行。",
+          "pinyin": "Yóu yú quē fá zī jīn，zhè ge xiàng mù wú fǎ jì xù jìn xíng.",
+          "english": "Due to a lack of funding, this project cannot continue."
+        }
       ],
       "exercises": [
         {
@@ -338,10 +354,18 @@
       "id": "hsk6_l10_g3",
       "pattern": "究竟",
       "meaning": "Exactly, after all, in the end",
-      "explanation": "究竟 is used in questions to express a desire to get to the bottom of something — 'exactly what/who/how'. It adds emphasis and urgency to a question. In statements it can mean 'after all' or 'in the end'.",
+      "explanation": "究竟 has two distinct roles depending on whether it appears in a question or a statement. Structure: Subject + 究竟 + [question word]？(questions) | Subject + 究竟 + [statement] (statements). 究竟 in questions adds emphasis and urgency, pressing for a clear answer (exactly what, who, or how). In statements, 究竟 means 'after all' or 'in the end' — summing up a conclusion.",
       "examples": [
-        "你究竟想要什么？",
-        "这件事究竟是谁的责任，大家都不清楚。"
+        {
+          "chinese": "你究竟想要什么？",
+          "pinyin": "Nǐ jiū jìng xiǎng yào shén me?",
+          "english": "What exactly do you want?"
+        },
+        {
+          "chinese": "这件事究竟是谁的责任，大家都不清楚。",
+          "pinyin": "Zhè jiàn shì jiū jìng shì shuí de zé rèn，dà jiā dōu bù qīng chǔ.",
+          "english": "Who exactly is responsible for this matter is unclear to everyone."
+        }
       ],
       "exercises": [
         {

@@ -241,7 +241,7 @@
     {
       "number": 1,
       "title": "以及 — As well as; and (formal listing)",
-      "explanation": "以及 is a formal conjunction used to connect words, phrases, or clauses in a list. It is more formal than 和 or 还有 and is commonly used in written Chinese. The structure is: A + 以及 + B (and possibly C). It often appears at the end of a list just before the final item, similar to 'as well as' in English. It can link nouns, verb phrases, or even clauses.",
+      "explanation": "以及 is a formal written conjunction connecting words, phrases, or clauses in a list — more formal than 和 or 还有. Structure: A + 以及 + B (and possibly C). 以及 typically appears at the end of a list before the final item, similar to 'as well as' in English.",
       "examples": [
         {
           "chinese": "微信提供即时通讯、支付功能以及小程序等多种服务。",
@@ -259,9 +259,22 @@
           "question": "Choose the most appropriate word to complete the sentence: 这款软件具有通话、视频___文件传输等功能。",
           "type": "multiple_choice",
           "correct": "以及",
-          "options": ["以及", "虽然", "因为", "但是"],
-          "option_pinyin": ["yǐ jí", "suī rán", "yīn wèi", "dàn shì"],
-          "word_hints": { "具有": "to possess/have", "文件传输": "file transfer" }
+          "options": [
+            "以及",
+            "虽然",
+            "因为",
+            "但是"
+          ],
+          "option_pinyin": [
+            "yǐ jí",
+            "suī rán",
+            "yīn wèi",
+            "dàn shì"
+          ],
+          "word_hints": {
+            "具有": "to possess/have",
+            "文件传输": "file transfer"
+          }
         },
         {
           "question": "Which sentence uses 以及 correctly?",
@@ -273,24 +286,57 @@
             "以及他每天都用微信联系家人。",
             "我以及去过海外工作。"
           ],
-          "option_pinyin": ["", "", "", ""],
-          "word_hints": { "吸引": "to attract", "平台": "platform" }
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "吸引": "to attract",
+            "平台": "platform"
+          }
         },
         {
           "question": "以及 is most similar in meaning to which of the following?",
           "type": "multiple_choice",
           "correct": "和（正式书面语）",
-          "options": ["和（正式书面语）", "但是", "因此", "虽然"],
-          "option_pinyin": ["hé (zhèng shì shū miàn yǔ)", "dàn shì", "yīn cǐ", "suī rán"],
-          "word_hints": { "书面语": "written language/formal style" }
+          "options": [
+            "和（正式书面语）",
+            "但是",
+            "因此",
+            "虽然"
+          ],
+          "option_pinyin": [
+            "hé (zhèng shì shū miàn yǔ)",
+            "dàn shì",
+            "yīn cǐ",
+            "suī rán"
+          ],
+          "word_hints": {
+            "书面语": "written language/formal style"
+          }
         },
         {
           "question": "Fill in the blank: 他的工作包括翻译文件、接待客户___处理日常事务。",
           "type": "multiple_choice",
           "correct": "以及",
-          "options": ["以及", "或者", "而且", "可是"],
-          "option_pinyin": ["yǐ jí", "huò zhě", "ér qiě", "kě shì"],
-          "word_hints": { "接待": "to receive/welcome", "日常事务": "daily affairs" }
+          "options": [
+            "以及",
+            "或者",
+            "而且",
+            "可是"
+          ],
+          "option_pinyin": [
+            "yǐ jí",
+            "huò zhě",
+            "ér qiě",
+            "kě shì"
+          ],
+          "word_hints": {
+            "接待": "to receive/welcome",
+            "日常事务": "daily affairs"
+          }
         },
         {
           "question": "Which best describes the usage of 以及?",
@@ -302,7 +348,12 @@
             "It introduces a cause-and-effect relationship.",
             "It indicates a time sequence."
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -310,7 +361,7 @@
     {
       "number": 2,
       "title": "从而 — Thus; thereby; consequently",
-      "explanation": "从而 is a formal written conjunction that expresses a logical consequence. The structure is: [action/cause] + 从而 + [result/consequence]. It shows that the result follows naturally or logically from the preceding action. 从而 is more formal than 所以 and is mainly used in written Chinese, official reports, or academic language. It cannot begin a sentence on its own.",
+      "explanation": "从而 is a formal written conjunction expressing that a result follows logically from a preceding action. Structure: [action/cause] + 从而 + [result/consequence]. 从而 is more formal than 所以; it is used in formal written Chinese and cannot begin a sentence on its own.",
       "examples": [
         {
           "chinese": "微信在海外快速普及，从而帮助许多海外华人保持与家人的联系。",
@@ -328,9 +379,22 @@
           "question": "Choose the word that best completes the sentence: 这家公司改进了产品质量，___赢得了更多客户的信任。",
           "type": "multiple_choice",
           "correct": "从而",
-          "options": ["从而", "虽然", "但是", "或者"],
-          "option_pinyin": ["cóng ér", "suī rán", "dàn shì", "huò zhě"],
-          "word_hints": { "改进": "to improve", "赢得": "to win/gain" }
+          "options": [
+            "从而",
+            "虽然",
+            "但是",
+            "或者"
+          ],
+          "option_pinyin": [
+            "cóng ér",
+            "suī rán",
+            "dàn shì",
+            "huò zhě"
+          ],
+          "word_hints": {
+            "改进": "to improve",
+            "赢得": "to win/gain"
+          }
         },
         {
           "question": "Which sentence uses 从而 correctly?",
@@ -342,8 +406,15 @@
             "他从而喜欢打篮球。",
             "从而这个问题很难解决。"
           ],
-          "option_pinyin": ["", "", "", ""],
-          "word_hints": { "考上": "to pass an exam and get into (a school)" }
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "考上": "to pass an exam and get into (a school)"
+          }
         },
         {
           "question": "从而 is used to express which relationship between two clauses?",
@@ -355,23 +426,51 @@
             "Two simultaneous actions",
             "A condition and its exception"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "Fill in the blank: 该公司加大了研发投入，___开发出了新产品。",
           "type": "multiple_choice",
           "correct": "从而",
-          "options": ["从而", "因为", "尽管", "然而"],
-          "option_pinyin": ["cóng ér", "yīn wèi", "jǐn guǎn", "rán ér"],
-          "word_hints": { "研发投入": "R&D investment", "开发": "to develop" }
+          "options": [
+            "从而",
+            "因为",
+            "尽管",
+            "然而"
+          ],
+          "option_pinyin": [
+            "cóng ér",
+            "yīn wèi",
+            "jǐn guǎn",
+            "rán ér"
+          ],
+          "word_hints": {
+            "研发投入": "R&D investment",
+            "开发": "to develop"
+          }
         },
         {
           "question": "Which pair of words is most similar in meaning to 从而?",
           "type": "multiple_choice",
           "correct": "因此 / 进而",
-          "options": ["因此 / 进而", "虽然 / 但是", "只要 / 就", "无论 / 都"],
-          "option_pinyin": ["yīn cǐ / jìn ér", "suī rán / dàn shì", "zhǐ yào / jiù", "wú lùn / dōu"],
+          "options": [
+            "因此 / 进而",
+            "虽然 / 但是",
+            "只要 / 就",
+            "无论 / 都"
+          ],
+          "option_pinyin": [
+            "yīn cǐ / jìn ér",
+            "suī rán / dàn shì",
+            "zhǐ yào / jiù",
+            "wú lùn / dōu"
+          ],
           "word_hints": {}
         }
       ]
@@ -379,7 +478,7 @@
     {
       "number": 3,
       "title": "对于 — Regarding; for; as for",
-      "explanation": "对于 introduces the topic, subject, or person being discussed or evaluated. The structure is: 对于 + [topic/person] + [comment or verb phrase]. It is often followed by 来说 (for… / speaking from the perspective of…) to make the topic even more explicit, as in 对于…来说. 对于 is used to frame the subject of a discussion before giving an opinion or statement about it. It is more formal than 对 in many cases.",
+      "explanation": "对于 introduces the topic, subject, or person being discussed or evaluated. Structure: 对于 + [topic/person] + [comment or verb phrase]. 对于 is often paired with 来说 (for/speaking from the perspective of…) as 对于…来说, and is more formal than 对 in many contexts.",
       "examples": [
         {
           "chinese": "对于很多在外国生活的中国人来说，微信是与家人保持联系的主要工具。",
@@ -397,9 +496,22 @@
           "question": "Choose the correct word to complete the sentence: ___初学者来说，这本教材非常合适。",
           "type": "multiple_choice",
           "correct": "对于",
-          "options": ["对于", "关于", "由于", "至于"],
-          "option_pinyin": ["duì yú", "guān yú", "yóu yú", "zhì yú"],
-          "word_hints": { "初学者": "beginner", "教材": "textbook" }
+          "options": [
+            "对于",
+            "关于",
+            "由于",
+            "至于"
+          ],
+          "option_pinyin": [
+            "duì yú",
+            "guān yú",
+            "yóu yú",
+            "zhì yú"
+          ],
+          "word_hints": {
+            "初学者": "beginner",
+            "教材": "textbook"
+          }
         },
         {
           "question": "Which sentence correctly uses 对于…来说?",
@@ -411,24 +523,51 @@
             "来说对于这件事他不感兴趣。",
             "他对于来说觉得这个功能很有用。"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "对于 is most similar in function to which English phrase?",
           "type": "multiple_choice",
           "correct": "As for / Regarding",
-          "options": ["As for / Regarding", "Because of", "In spite of", "As soon as"],
-          "option_pinyin": ["", "", "", ""],
+          "options": [
+            "As for / Regarding",
+            "Because of",
+            "In spite of",
+            "As soon as"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "Fill in the blank: ___ 这个问题，专家们提出了不同的解决方案。",
           "type": "multiple_choice",
           "correct": "对于",
-          "options": ["对于", "通过", "由于", "尽管"],
-          "option_pinyin": ["duì yú", "tōng guò", "yóu yú", "jǐn guǎn"],
-          "word_hints": { "解决方案": "solution" }
+          "options": [
+            "对于",
+            "通过",
+            "由于",
+            "尽管"
+          ],
+          "option_pinyin": [
+            "duì yú",
+            "tōng guò",
+            "yóu yú",
+            "jǐn guǎn"
+          ],
+          "word_hints": {
+            "解决方案": "solution"
+          }
         },
         {
           "question": "Which is the best translation of: 对于很多人来说，手机已经是生活中不可缺少的工具。",
@@ -440,8 +579,15 @@
             "Many people think mobile phones are useful tools.",
             "Mobile phones were invented for many people."
           ],
-          "option_pinyin": ["", "", "", ""],
-          "word_hints": { "不可缺少": "indispensable" }
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "不可缺少": "indispensable"
+          }
         }
       ]
     }
@@ -465,22 +611,50 @@
       "question": "Which word means 'to spread or disseminate' information or an app?",
       "type": "multiple_choice",
       "correct": "传播",
-      "options": ["传播", "联系", "普及", "流行"],
-      "word_hints": { "传播": "chuán bō", "联系": "lián xì", "普及": "pǔ jí", "流行": "liú xíng" }
+      "options": [
+        "传播",
+        "联系",
+        "普及",
+        "流行"
+      ],
+      "word_hints": {
+        "传播": "chuán bō",
+        "联系": "lián xì",
+        "普及": "pǔ jí",
+        "流行": "liú xíng"
+      }
     },
     {
       "question": "Which formal conjunction is used to connect items in a list, similar to 'as well as'?",
       "type": "multiple_choice",
       "correct": "以及",
-      "options": ["以及", "从而", "对于", "因此"],
-      "word_hints": { "以及": "yǐ jí", "从而": "cóng ér", "对于": "duì yú", "因此": "yīn cǐ" }
+      "options": [
+        "以及",
+        "从而",
+        "对于",
+        "因此"
+      ],
+      "word_hints": {
+        "以及": "yǐ jí",
+        "从而": "cóng ér",
+        "对于": "duì yú",
+        "因此": "yīn cǐ"
+      }
     },
     {
       "question": "Complete the sentence: 他努力工作，___获得了晋升的机会。",
       "type": "multiple_choice",
       "correct": "从而",
-      "options": ["从而", "以及", "对于", "虽然"],
-      "word_hints": { "晋升": "promotion", "获得": "to obtain" }
+      "options": [
+        "从而",
+        "以及",
+        "对于",
+        "虽然"
+      ],
+      "word_hints": {
+        "晋升": "promotion",
+        "获得": "to obtain"
+      }
     },
     {
       "question": "Which sentence correctly uses 对于…来说?",
@@ -492,20 +666,34 @@
         "微信对于以及很流行。",
         "他对于来说不喜欢用软件。"
       ],
-      "word_hints": { "华人": "ethnic Chinese" }
+      "word_hints": {
+        "华人": "ethnic Chinese"
+      }
     },
     {
       "question": "What does 账号 mean?",
       "type": "multiple_choice",
       "correct": "User account",
-      "options": ["User account", "Password", "Software", "Platform"],
-      "word_hints": { "账号": "zhàng hào" }
+      "options": [
+        "User account",
+        "Password",
+        "Software",
+        "Platform"
+      ],
+      "word_hints": {
+        "账号": "zhàng hào"
+      }
     },
     {
       "question": "Which of the following is mentioned in the culture note as something Lu Xun was passionate about?",
       "type": "multiple_choice",
       "correct": "Food and local snacks",
-      "options": ["Food and local snacks", "Mobile apps and technology", "International travel", "Photography"],
+      "options": [
+        "Food and local snacks",
+        "Mobile apps and technology",
+        "International travel",
+        "Photography"
+      ],
       "word_hints": {}
     }
   ],
@@ -515,8 +703,16 @@
       "title": "Using WeChat Abroad",
       "title_chinese": "在国外用微信",
       "speakers": {
-        "A": { "name": "兰特", "role": "外国人", "gender": "female" },
-        "B": { "name": "慈欣", "role": "科技爱好者", "gender": "male" }
+        "A": {
+          "name": "兰特",
+          "role": "外国人",
+          "gender": "female"
+        },
+        "B": {
+          "name": "慈欣",
+          "role": "科技爱好者",
+          "gender": "male"
+        }
       },
       "lines": [
         {
@@ -562,8 +758,16 @@
       "title": "How WeChat Spread",
       "title_chinese": "微信是怎么传播的",
       "speakers": {
-        "A": { "name": "慈欣", "role": "科技迷", "gender": "male" },
-        "B": { "name": "鲁迅", "role": "批判者", "gender": "male" }
+        "A": {
+          "name": "慈欣",
+          "role": "科技迷",
+          "gender": "male"
+        },
+        "B": {
+          "name": "鲁迅",
+          "role": "批判者",
+          "gender": "male"
+        }
       },
       "lines": [
         {

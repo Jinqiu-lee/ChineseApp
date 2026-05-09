@@ -247,7 +247,7 @@
     {
       "number": 1,
       "title": "显示 vs 显得 — To show (objective) vs to appear/seem (subjective)",
-      "explanation": "显示 and 显得 are easily confused but have distinct uses. 显示 (xiǎn shì): To show or demonstrate something objective — facts, data, results. The subject is typically data, research, events, or things. Structure: [Data/Subject] + 显示 + [objective fact]. 显得 (xiǎn de): To appear or seem a certain way — a subjective impression or perception. The subject is typically a person or thing that gives a certain impression. Structure: [Person/Thing] + 显得 + [adjective/state]. Examples: 研究显示，争论能提升人的思维能力。(Research shows that debate can improve people's thinking.) / 他在争论中显得非常自信。(He appeared very confident in the debate.)",
+      "explanation": "显示 and 显得 are easily confused but have distinct uses. 显示(xiǎn shì) shows objective data or facts — Subject + 显示 + objective fact: 研究显示，争论能提升人的思维能力 - Research shows debate can improve thinking. Appearing / seeming — 显得(xiǎn de) expresses a subjective impression — Person/Thing + 显得 + adj: 他在争论中显得非常自信 - He appeared very confident in the debate.",
       "examples": [
         {
           "chinese": "研究显示，争论能提升人的思维能力。",
@@ -265,16 +265,39 @@
           "question": "数据_____，这种教学方法的效果非常显著。",
           "type": "multiple_choice",
           "correct": "显示",
-          "options": ["显示", "显得", "围绕", "针对"],
-          "option_pinyin": ["xiǎn shì", "xiǎn de", "wéi rào", "zhēn duì"],
-          "word_hints": { "显著": "xiǎnzhù", "效果": "xiàoguǒ" }
+          "options": [
+            "显示",
+            "显得",
+            "围绕",
+            "针对"
+          ],
+          "option_pinyin": [
+            "xiǎn shì",
+            "xiǎn de",
+            "wéi rào",
+            "zhēn duì"
+          ],
+          "word_hints": {
+            "显著": "xiǎnzhù",
+            "效果": "xiàoguǒ"
+          }
         },
         {
           "question": "她第一次上台演讲，有些紧张，_____不太自然。",
           "type": "multiple_choice",
           "correct": "显得",
-          "options": ["显得", "显示", "提出", "证明"],
-          "option_pinyin": ["xiǎn de", "xiǎn shì", "tí chū", "zhèng míng"],
+          "options": [
+            "显得",
+            "显示",
+            "提出",
+            "证明"
+          ],
+          "option_pinyin": [
+            "xiǎn de",
+            "xiǎn shì",
+            "tí chū",
+            "zhèng míng"
+          ],
           "word_hints": {}
         },
         {
@@ -287,8 +310,15 @@
             "她显示非常聪明。",
             "这件衣服显示很漂亮。"
           ],
-          "option_pinyin": ["", "", "", ""],
-          "word_hints": { "调查结果": "diàochá jiéguǒ" }
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "调查结果": "diàochá jiéguǒ"
+          }
         },
         {
           "question": "Which sentence uses 显得 correctly?",
@@ -300,8 +330,15 @@
             "报告显得了新的趋势。",
             "结果显得我们成功了。"
           ],
-          "option_pinyin": ["", "", "", ""],
-          "word_hints": { "成熟": "chéngshú" }
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "成熟": "chéngshú"
+          }
         },
         {
           "question": "What is the key difference between 显示 and 显得?",
@@ -313,7 +350,12 @@
             "显得 is only used with numbers and statistics",
             "显示 can only describe people"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -321,7 +363,7 @@
     {
       "number": 2,
       "title": "围绕 — Revolving around / Centering on",
-      "explanation": "围绕 (wéi rào) means 'to revolve around' or 'to center on'. It describes how a discussion, work, activity, or thought is organized around a central theme or topic. Structure: 围绕 + [topic/theme] + verb phrase. It can also appear as 围绕着 + topic for a slightly more continuous sense. 围绕 can be used as a verb or a preposition. Example: 针对这个问题，大家围绕着三个核心议题展开了讨论。(Regarding this issue, everyone had a discussion centered on three core topics.)",
+      "explanation": "围绕 (wéi rào) means 'to revolve around' or 'to center on'. It describes how a discussion, work, activity, or thought is organized around a central theme or topic. Structure: 围绕 + [topic/theme] + verb phrase. It can also appear as 围绕着 + topic for a slightly more continuous sense. 围绕 can be used as a verb or a preposition. 针对这个问题，大家围绕着三个核心议题展开了讨论 - Regarding this issue, everyone had a discussion centered on three core topics.",
       "examples": [
         {
           "chinese": "这场辩论围绕着教育改革这一核心议题展开。",
@@ -339,9 +381,21 @@
           "question": "今天的讨论_____ 如何改善城市交通这一主题展开。",
           "type": "multiple_choice",
           "correct": "围绕",
-          "options": ["围绕", "针对", "反驳", "显示"],
-          "option_pinyin": ["wéi rào", "zhēn duì", "fǎn bó", "xiǎn shì"],
-          "word_hints": { "改善": "gǎishàn" }
+          "options": [
+            "围绕",
+            "针对",
+            "反驳",
+            "显示"
+          ],
+          "option_pinyin": [
+            "wéi rào",
+            "zhēn duì",
+            "fǎn bó",
+            "xiǎn shì"
+          ],
+          "word_hints": {
+            "改善": "gǎishàn"
+          }
         },
         {
           "question": "Which sentence uses 围绕 correctly?",
@@ -353,7 +407,12 @@
             "他围绕说了一句话。",
             "数据围绕显示了新结果。"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
@@ -366,16 +425,33 @@
             "A contrast between two opposing ideas",
             "The reason something occurred"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "这篇文章_____ ‘逻辑与情感在辩论中的作用’这一主题写成。",
           "type": "multiple_choice",
           "correct": "围绕",
-          "options": ["围绕", "显得", "提出", "解决"],
-          "option_pinyin": ["wéi rào", "xiǎn de", "tí chū", "jiě jué"],
-          "word_hints": { "情感": "qínggǎn" }
+          "options": [
+            "围绕",
+            "显得",
+            "提出",
+            "解决"
+          ],
+          "option_pinyin": [
+            "wéi rào",
+            "xiǎn de",
+            "tí chū",
+            "jiě jué"
+          ],
+          "word_hints": {
+            "情感": "qínggǎn"
+          }
         },
         {
           "question": "围绕着 and 围绕 are related. When would you more likely use 围绕着?",
@@ -387,7 +463,12 @@
             "Only when the subject is a person",
             "When the sentence is negative"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -395,7 +476,7 @@
     {
       "number": 3,
       "title": "针对 — Targeting / In response to / Regarding",
-      "explanation": "针对 (zhēn duì) means 'to aim at', 'to target', or 'in response to'. It is used to describe an action specifically directed at a person, issue, or problem. Structure: 针对 + [issue/person/problem] + verb phrase. 针对 can function as a verb or a preposition. As a preposition, it introduces the specific target before the main action. Example: 针对这个问题，他提出了三点建议。(In response to this issue, he put forward three suggestions.)",
+      "explanation": "针对 (zhēn duì) means 'to aim at', 'to target', or 'in response to'. It is used to describe an action specifically directed at a person, issue, or problem. Structure: 针对 + [issue/person/problem] + verb phrase. 针对 can function as a verb or a preposition. As a preposition, it introduces the specific target before the main action. 针对这个问题，他提出了三点建议 - In response to this issue, he put forward three suggestions.",
       "examples": [
         {
           "chinese": "针对这个问题，他提出了三点建议。",
@@ -413,9 +494,22 @@
           "question": "_____ 这次调查结果，委员会提出了新的改进方案。",
           "type": "multiple_choice",
           "correct": "针对",
-          "options": ["针对", "围绕", "显得", "逐渐"],
-          "option_pinyin": ["zhēn duì", "wéi rào", "xiǎn de", "zhú jiàn"],
-          "word_hints": { "委员会": "wěiyuánhuì", "改进方案": "gǎijìn fāng'àn" }
+          "options": [
+            "针对",
+            "围绕",
+            "显得",
+            "逐渐"
+          ],
+          "option_pinyin": [
+            "zhēn duì",
+            "wéi rào",
+            "xiǎn de",
+            "zhú jiàn"
+          ],
+          "word_hints": {
+            "委员会": "wěiyuánhuì",
+            "改进方案": "gǎijìn fāng'àn"
+          }
         },
         {
           "question": "Which sentence uses 针对 most correctly?",
@@ -427,8 +521,16 @@
             "针对他很高兴地同意了。",
             "这件事针对很合理。"
           ],
-          "option_pinyin": ["", "", "", ""],
-          "word_hints": { "市场需求": "shìchǎng xūqiú", "产品策略": "chǎnpǐn cèlüè" }
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "市场需求": "shìchǎng xūqiú",
+            "产品策略": "chǎnpǐn cèlüè"
+          }
         },
         {
           "question": "What is the main function of 针对 in a sentence?",
@@ -440,16 +542,34 @@
             "To show that two things are happening simultaneously",
             "To express a conditional relationship"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         },
         {
           "question": "_____ 对方的质疑，他逐条进行了反驳。",
           "type": "multiple_choice",
           "correct": "针对",
-          "options": ["针对", "显示", "有效", "合理"],
-          "option_pinyin": ["zhēn duì", "xiǎn shì", "yǒu xiào", "hé lǐ"],
-          "word_hints": { "逐条": "zhú tiáo", "质疑": "zhìyí" }
+          "options": [
+            "针对",
+            "显示",
+            "有效",
+            "合理"
+          ],
+          "option_pinyin": [
+            "zhēn duì",
+            "xiǎn shì",
+            "yǒu xiào",
+            "hé lǐ"
+          ],
+          "word_hints": {
+            "逐条": "zhú tiáo",
+            "质疑": "zhìyí"
+          }
         },
         {
           "question": "针对 and 关于 can both mean 'regarding'. What is a key difference?",
@@ -461,7 +581,12 @@
             "针对 is only used in written Chinese",
             "They are completely interchangeable"
           ],
-          "option_pinyin": ["", "", "", ""],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
+          ],
           "word_hints": {}
         }
       ]
@@ -486,8 +611,15 @@
       "question": "她冷静地针对对方的每一个_____，逐一提出了有力的反驳。",
       "type": "multiple_choice",
       "correct": "论点",
-      "options": ["论点", "态度", "效果", "原则"],
-      "word_hints": { "逐一": "zhú yī" }
+      "options": [
+        "论点",
+        "态度",
+        "效果",
+        "原则"
+      ],
+      "word_hints": {
+        "逐一": "zhú yī"
+      }
     },
     {
       "question": "Which sentence correctly uses 显示?",
@@ -499,21 +631,37 @@
         "她的表情显示非常自信。",
         "今天的天气显示很好。"
       ],
-      "word_hints": { "实验结果": "shíyàn jiéguǒ" }
+      "word_hints": {
+        "实验结果": "shíyàn jiéguǒ"
+      }
     },
     {
       "question": "在辩论中，没有_____支撑的论点很容易被反驳，显得没有说服力。",
       "type": "multiple_choice",
       "correct": "证据",
-      "options": ["证据", "逻辑", "原则", "效果"],
-      "word_hints": { "支撑": "zhīchēng" }
+      "options": [
+        "证据",
+        "逻辑",
+        "原则",
+        "效果"
+      ],
+      "word_hints": {
+        "支撑": "zhīchēng"
+      }
     },
     {
       "question": "_____ 对方观点中的逻辑漏洞，她提出了有力的反驳。",
       "type": "multiple_choice",
       "correct": "针对",
-      "options": ["针对", "显得", "有效", "实际"],
-      "word_hints": { "逻辑漏洞": "luójí lòudòng" }
+      "options": [
+        "针对",
+        "显得",
+        "有效",
+        "实际"
+      ],
+      "word_hints": {
+        "逻辑漏洞": "luójí lòudòng"
+      }
     },
     {
       "question": "What does the idiom 百家争鸣 refer to?",
@@ -531,22 +679,41 @@
       "question": "Which word means 'to refute or rebut an argument'?",
       "type": "multiple_choice",
       "correct": "反驳",
-      "options": ["反驳", "显示", "围绕", "解决"],
+      "options": [
+        "反驳",
+        "显示",
+        "围绕",
+        "解决"
+      ],
       "word_hints": {}
     },
     {
       "question": "整场讨论都_____ 着如何提升辩论技巧这一主题展开。",
       "type": "multiple_choice",
       "correct": "围绕",
-      "options": ["围绕", "反驳", "显得", "针对"],
-      "word_hints": { "辩论技巧": "biànlùn jìqiǎo" }
+      "options": [
+        "围绕",
+        "反驳",
+        "显得",
+        "针对"
+      ],
+      "word_hints": {
+        "辩论技巧": "biànlùn jìqiǎo"
+      }
     },
     {
       "question": "在那个紧张的场合，她依然_____ 非常从容，让所有人都很佩服。",
       "type": "multiple_choice",
       "correct": "显得",
-      "options": ["显得", "显示", "论点", "证据"],
-      "word_hints": { "从容": "cóngróng" }
+      "options": [
+        "显得",
+        "显示",
+        "论点",
+        "证据"
+      ],
+      "word_hints": {
+        "从容": "cóngróng"
+      }
     }
   ],
   "dialogues": [
@@ -555,8 +722,16 @@
       "title": "The Logic of the Argument",
       "title_chinese": "论点的逻辑",
       "speakers": {
-        "A": { "name": "但丁", "role": "哲学家", "gender": "male" },
-        "B": { "name": "奥斯汀", "role": "作家", "gender": "female" }
+        "A": {
+          "name": "但丁",
+          "role": "哲学家",
+          "gender": "male"
+        },
+        "B": {
+          "name": "奥斯汀",
+          "role": "作家",
+          "gender": "female"
+        }
       },
       "lines": [
         {
@@ -602,8 +777,16 @@
       "title": "Showing vs. Seeming",
       "title_chinese": "展示与显现",
       "speakers": {
-        "A": { "name": "但丁", "role": "哲学家", "gender": "male" },
-        "B": { "name": "慈欣", "role": "科幻作家", "gender": "male" }
+        "A": {
+          "name": "但丁",
+          "role": "哲学家",
+          "gender": "male"
+        },
+        "B": {
+          "name": "慈欣",
+          "role": "科幻作家",
+          "gender": "male"
+        }
       },
       "lines": [
         {

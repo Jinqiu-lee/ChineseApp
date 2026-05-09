@@ -214,10 +214,18 @@
       "id": "hsk6_l14_g1",
       "pattern": "以…为…",
       "meaning": "To take … as …; to use … as the standard/basis for …",
-      "explanation": "以…为… means to take something as a standard, goal, or criterion. It is used in formal and literary contexts. Common forms: 以A为美 (take A as beautiful), 以A为目标 (take A as a goal), 以A为核心 (take A as the core).",
+      "explanation": "以…为… means to take something as a standard, goal, or criterion. Structure: Subject + 以 + [A] + 为 + [standard/goal]. It is used in formal and literary contexts. Common forms: 以A为美 (take A as beautiful), 以A为目标 (take A as a goal), 以A为核心 (take A as the core).",
       "examples": [
-        "中国传统美学以含蓄为美。",
-        "这家公司以客户满意度为核心价值。"
+        {
+          "chinese": "中国传统美学以含蓄为美。",
+          "pinyin": "Zhōng guó chuán tǒng měi xué yǐ hán xù wéi měi.",
+          "english": "Traditional Chinese aesthetics takes subtlety as its standard of beauty."
+        },
+        {
+          "chinese": "这家公司以客户满意度为核心价值。",
+          "pinyin": "Zhè jiā gōng sī yǐ kè hù mǎn yì dù wéi hé xīn jià zhí.",
+          "english": "This company takes customer satisfaction as its core value."
+        }
       ],
       "exercises": [
         {
@@ -276,10 +284,18 @@
       "id": "hsk6_l14_g2",
       "pattern": "从…角度（来看/来说）",
       "meaning": "From the perspective/angle of …",
-      "explanation": "从…角度来看 or 从…角度来说 means 'from the perspective/viewpoint of …'. It is used to present an interpretation or analysis from a specific standpoint. Often paired with 来看 (to see from) or 来说 (to speak from).",
+      "explanation": "从…角度来看 or 从…角度来说 means 'from the perspective/viewpoint of …'. Structure: 从 + [perspective] + 角度来看/来说，[viewpoint]. It is used to present an interpretation or analysis from a specific standpoint. Often paired with 来看 (to see from) or 来说 (to speak from).",
       "examples": [
-        "从经济角度来看，这个决定是合理的。",
-        "从文化角度来说，每个习俗都有其历史渊源。"
+        {
+          "chinese": "从经济角度来看，这个决定是合理的。",
+          "pinyin": "Cóng jīng jì jiǎo dù lái kàn，zhè ge jué dìng shì hé lǐ de.",
+          "english": "From an economic perspective, this decision is reasonable."
+        },
+        {
+          "chinese": "从文化角度来说，每个习俗都有其历史渊源。",
+          "pinyin": "Cóng wén huà jiǎo dù lái shuō，měi ge xí sú dōu yǒu qí lì shǐ yuān yuán.",
+          "english": "From a cultural perspective, every custom has its historical origins."
+        }
       ],
       "exercises": [
         {
@@ -338,10 +354,18 @@
       "id": "hsk6_l14_g3",
       "pattern": "正是",
       "meaning": "It is precisely / exactly",
-      "explanation": "正是 adds strong emphasis to the subject or predicate, meaning 'it is precisely' or 'exactly'. It highlights that something is the specific, key, or defining element being referred to. Often translated as 'it is precisely X that Y'.",
+      "explanation": "It is precisely this — 正是 adds strong emphasis to the subject or predicate, meaning 'precisely' or 'exactly'. Structure: 正是 + [key element]（+ 使/让 + [result]）. It highlights that something is the specific, key, or defining element being referred to. Often translated as 'it is precisely X that Y'.",
       "examples": [
-        "正是这种精神，使他们克服了重重困难。",
-        "你说的正是我想表达的。"
+        {
+          "chinese": "正是这种精神，使他们克服了重重困难。",
+          "pinyin": "Zhèng shì zhè zhǒng jīng shén，shǐ tā men kè fú le chóng chóng kùn nan.",
+          "english": "It is precisely this spirit that enabled them to overcome one difficulty after another."
+        },
+        {
+          "chinese": "你说的正是我想表达的。",
+          "pinyin": "Nǐ shuō de zhèng shì wǒ xiǎng biǎo dá de.",
+          "english": "What you said is precisely what I wanted to express."
+        }
       ],
       "exercises": [
         {
@@ -480,7 +504,7 @@
       "speakers": {
         "A": {
           "name": "奥斯汀",
-          "role": "朋友", 
+          "role": "朋友",
           "gender": "female"
         },
         "B": {
