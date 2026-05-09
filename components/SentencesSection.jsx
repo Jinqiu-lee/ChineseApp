@@ -78,9 +78,9 @@ const styles = StyleSheet.create({
   sentenceNumber: { width: 32, height: 32, borderRadius: 16, backgroundColor: WARM_BROWN, alignItems: 'center', justifyContent: 'center' },
   sentenceNumberText: { fontSize: 14, fontWeight: '800', color: CARD_WHITE },
   sentenceContent: { flex: 1 },
-  sentenceChinese: { fontSize: 20, fontWeight: '700', color: VG.cream, marginBottom: 6, lineHeight: 28 },
-  sentencePinyin: { fontSize: 15, color: VG.orange, fontStyle: 'italic', marginBottom: 6, lineHeight: 22 },
-  sentenceEnglish: { fontSize: 15, color: VG.creamMuted, lineHeight: 22 },
+  sentenceChinese: { fontSize: 18, fontWeight: '700', color: VG.cream, marginBottom: 6, lineHeight: 26 },
+  sentencePinyin: { fontSize: 13, color: VG.orange, fontStyle: 'italic', marginBottom: 6, lineHeight: 20 },
+  sentenceEnglish: { fontSize: 13, color: VG.creamMuted, lineHeight: 20 },
   audioIcon: { width: 36, height: 36, borderRadius: 18, backgroundColor: 'rgba(155,104,70,0.22)', alignItems: 'center', justifyContent: 'center' },
   audioIconText: { fontSize: 18 },
 });
