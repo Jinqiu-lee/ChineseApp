@@ -84,12 +84,12 @@ export default function RoundCompleteScreen({
         )}
         {currentRound === 2 && highAccuracy && (
           <View style={styles.messageCard}>
-            <Text style={[styles.message, { color: T.onBg }]}>Excellent work! You can take the quiz now or keep practicing.</Text>
+            <Text style={[styles.message, { color: T.onBg }]}>Excellent! 🎉 Round 3 is now unlocked — keep going to master this lesson, or take the quiz if you feel ready.</Text>
           </View>
         )}
         {currentRound === 2 && !highAccuracy && (
           <View style={styles.messageCard}>
-            <Text style={[styles.message, { color: T.onBg }]}>Great effort! One more round to solidify your skills.</Text>
+            <Text style={[styles.message, { color: T.onBg }]}>Great effort! Round 3 is unlocked — one more round to fully master this lesson.</Text>
           </View>
         )}
 
@@ -99,20 +99,20 @@ export default function RoundCompleteScreen({
             <TouchableOpacity style={[styles.quizBtn, { backgroundColor: T.altAccent ?? T.gold, shadowColor: T.shadow }]} onPress={onTakeQuiz} activeOpacity={0.85}>
               <Text style={[styles.quizBtnText, { color: T.altAccentText ?? T.accentText }]}>🏆 Take Lesson Quiz</Text>
             </TouchableOpacity>
-          ) : currentRound === 2 && highAccuracy ? (
+          ) : currentRound === 2 ? (
             <>
-              <TouchableOpacity style={[styles.quizBtn, { backgroundColor: T.altAccent ?? T.gold, shadowColor: T.shadow }]} onPress={onTakeQuiz} activeOpacity={0.85}>
-                <Text style={[styles.quizBtnText, { color: T.altAccentText ?? T.accentText }]}>📝 Take Lesson Quiz</Text>
-              </TouchableOpacity>
               <TouchableOpacity style={[styles.continueBtn, { backgroundColor: T.accent, shadowColor: T.shadow }]} onPress={onContinue} activeOpacity={0.85}>
                 <Text style={[styles.continueBtnText, { color: T.accentText }]}>Continue to Round 3 →</Text>
               </TouchableOpacity>
+              {highAccuracy && (
+                <TouchableOpacity style={[styles.quizBtnSecondary, { borderColor: T.altAccent ?? T.gold }]} onPress={onTakeQuiz} activeOpacity={0.85}>
+                  <Text style={[styles.quizBtnSecondaryText, { color: T.altAccent ?? T.gold }]}>📝 Take Lesson Quiz instead</Text>
+                </TouchableOpacity>
+              )}
             </>
           ) : (
             <TouchableOpacity style={[styles.continueBtn, { backgroundColor: T.accent, shadowColor: T.shadow }]} onPress={onContinue} activeOpacity={0.85}>
-              <Text style={[styles.continueBtnText, { color: T.accentText }]}>
-                {currentRound === 1 ? 'Start Round 2 →' : 'Start Round 3 →'}
-              </Text>
+              <Text style={[styles.continueBtnText, { color: T.accentText }]}>Start Round 2 →</Text>
             </TouchableOpacity>
           )}
         </View>
@@ -212,6 +212,14 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.28, shadowRadius: 12, elevation: 6,
   },
   continueBtnText: { fontSize: 17, fontWeight: '900', color: VG.bg },
+
+  // ── Quiz secondary button (outline style) ────────────────────────────────
+  quizBtnSecondary: {
+    borderWidth: 2,
+    borderRadius: 16, paddingVertical: 14, alignItems: 'center',
+    backgroundColor: 'transparent',
+  },
+  quizBtnSecondaryText: { fontSize: 15, fontWeight: '700' },
 
   // ── Van Gogh completion message ───────────────────────────────────────────
   vgBlock: {
