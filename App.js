@@ -29,6 +29,8 @@ import UnlockModal from './components/UnlockModal';
 import RewardModal from './components/RewardModal';
 import useProgress, { computeNewBadges } from './hooks/useProgress';
 import BadgesScreen from './screens/BadgesScreen';
+import PaywallScreen from './screens/PaywallScreen';
+import { checkSubscriptionStatus } from './services/RevenueCatService';
 
 // Pinyin lesson data
 import pinyinLesson1  from './data/pinyin/pinyin_lesson_1.json';
@@ -339,7 +341,16 @@ export default function App() {
     setCurrentScreen('lesson');
   };
 
-  const handleLessonPress = (levelId, lessonId) => {
+  const handleLessonPress = async (levelId, lessonId) => {
+    if (lessonId > 5) {
+      const subscribed = await checkSubscriptionStatus();
+      if (!subscribed) {
+        setCurrentLessonLevelId(levelId);
+        setCurrentLessonId(lessonId);
+        setCurrentScreen('paywall');
+        return;
+      }
+    }
     setCurrentLessonLevelId(levelId);
     setCurrentLessonId(lessonId);
     const r1Done = (stageProgress[`${levelId}_${lessonId}_r1`] || []).length >= 5;
@@ -1019,6 +1030,27 @@ export default function App() {
 
   if (currentScreen === 'badges') {
     return <BadgesScreen onBack={() => setCurrentScreen('home')} />;
+  }
+
+  if (currentScreen === 'paywall') {
+    return (
+      <PaywallScreen
+        onDismiss={() => {
+          setCurrentLessonId(null);
+          setCurrentLessonLevelId(null);
+          setCurrentScreen('home');
+        }}
+        onSubscribed={() => {
+          const levelId = currentLessonLevelId;
+          const lessonId = currentLessonId;
+          if (!levelId || !lessonId) { setCurrentScreen('home'); return; }
+          const r1Done = (stageProgress[`${levelId}_${lessonId}_r1`] || []).length >= 5;
+          const r2Done = (stageProgress[`${levelId}_${lessonId}_r2`] || []).length >= 5;
+          setCurrentRound(r1Done && r2Done ? 3 : r1Done ? 2 : 1);
+          goToLesson('learning');
+        }}
+      />
+    );
   }
 
   return (
