@@ -27,7 +27,7 @@ import PinyinLessonQuizScreen from './screens/PinyinLessonQuizScreen';
 import PinyinFinalQuizScreen from './screens/PinyinFinalQuizScreen';
 import UnlockModal from './components/UnlockModal';
 import RewardModal from './components/RewardModal';
-import useProgress from './hooks/useProgress';
+import useProgress, { computeNewBadges } from './hooks/useProgress';
 import BadgesScreen from './screens/BadgesScreen';
 
 // Pinyin lesson data
@@ -201,7 +201,7 @@ export default function App() {
   const [lessonInitialOpenSection, setLessonInitialOpenSection] = useState(null);
   const [unlockModal, setUnlockModal] = useState(null); // null | { title, message, primaryLabel, secondaryLabel, onPrimary, onSecondary }
   const [rewardModal, setRewardModal] = useState(null); // null | { xpEarned, scorePercent, stageIndex }
-  const { awardXP, xp, streak, progress: xpProgress } = useProgress();
+  const { awardXP, xp, streak, progress: xpProgress } = useProgress(); // xpProgress used for computeNewBadges snapshot
   const lastStageScoreRef = useRef({ score: 0, total: 0 });
   const shownPopups = useRef(new Set()); // tracks which unlock popups have fired this session
 
@@ -894,8 +894,9 @@ export default function App() {
           onNext={(stageIndex) => {
             const { score, total } = lastStageScoreRef.current;
             const scorePercent = total > 0 ? score / total : 0;
+            const newBadgesSnapshot = computeNewBadges(xpProgress, 20, currentLessonLevelId, currentLessonId, scorePercent);
             awardXP(20, currentLessonLevelId, currentLessonId, scorePercent);
-            setRewardModal({ xpEarned: 20, scorePercent, stageIndex });
+            setRewardModal({ xpEarned: 20, scorePercent, stageIndex, newBadges: newBadgesSnapshot });
           }}
           onBack={() => goToLesson('practice')}
         />
@@ -1037,7 +1038,7 @@ export default function App() {
         xpEarned={rewardModal?.xpEarned || 0}
         scorePercent={rewardModal?.scorePercent || 0}
         totalXP={xp}
-        newBadges={xpProgress._newBadges || []}
+        newBadges={rewardModal?.newBadges || []}
         streak={streak}
         onClose={() => {
           const stageIndex = rewardModal?.stageIndex;

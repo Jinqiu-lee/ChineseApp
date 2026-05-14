@@ -64,6 +64,35 @@ export function getLevelAverageScore(levelProgress, levelId) {
 function todayString() { return new Date().toISOString().split("T")[0]; }
 function yesterdayString() { const d = new Date(); d.setDate(d.getDate() - 1); return d.toISOString().split("T")[0]; }
 
+// Pure helper — returns badge IDs that would be newly unlocked given current progress + incoming XP.
+// Does not modify state. Call this before awardXP() to get a snapshot for display.
+export function computeNewBadges(progress, xpAmount, levelId, lessonNumber, scorePercent = 1) {
+  const today = todayString();
+  const hour = new Date().getHours();
+  const newStreak = progress.lastPlayedDate !== today
+    ? (progress.lastPlayedDate === yesterdayString() ? progress.streak + 1 : 1)
+    : progress.streak;
+  const newTotalXP = progress.totalXP + xpAmount;
+  const newGamesPlayed = progress.gamesPlayed + 1;
+  const lp = progress.levelProgress?.[levelId] || { lessonsCompleted: [], xp: 0, lessonScores: {} };
+  const lessonsCompleted = lp.lessonsCompleted.includes(lessonNumber)
+    ? lp.lessonsCompleted : [...lp.lessonsCompleted, lessonNumber];
+  const earned = new Set(progress.earnedBadges || []);
+  const newBadges = [];
+  const add = (id) => { if (!earned.has(id)) { earned.add(id); newBadges.push(id); } };
+  if (newGamesPlayed >= 1)   add("first_step");
+  if (newStreak >= 3)        add("on_fire");
+  if (newStreak >= 7)        add("week_streak");
+  if (newTotalXP >= 100)     add("star_student");
+  if (newTotalXP >= 200)     add("century");
+  if (hour >= 21)            add("night_owl");
+  if (hour < 8)              add("early_bird");
+  if (scorePercent >= 1.0)   add("perfectionist");
+  const LC = { yct1:11, yct2:3, yct3:2, yct4:2, hsk1:15, hsk2:15, hsk3:15, hsk4:15, hsk5:15, hsk6:15 };
+  if ((LC[levelId] || 0) > 0 && lessonsCompleted.length >= LC[levelId]) add("champion");
+  return newBadges;
+}
+
 export default function useProgress() {
   const [progress, setProgress] = useState(DEFAULT_PROGRESS);
   const [loaded, setLoaded] = useState(false);
@@ -172,7 +201,7 @@ export default function useProgress() {
       return {
         ...prev, totalXP: newTotalXP, streak: newStreak, lastPlayedDate: today,
         earnedBadges: Array.from(earned), levelProgress: newLevelProgress,
-        gamesPlayed: newGamesPlayed, _newBadges: newBadges, _xpEarned: xpAmount,
+        gamesPlayed: newGamesPlayed,
       };
     });
   }, []);
