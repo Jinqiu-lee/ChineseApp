@@ -6,11 +6,12 @@ import {
 import { DEEP_NAVY, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from "../constants/colors";
 
 const ALL_LEVELS = [
-  { id: "hsk1", label: "Level 1 – Beginner",             badge: "🌱", color: "#00D2D3", desc: "Complete beginner, starting from scratch" },
-  { id: "hsk2", label: "Level 2 – Explorer",             badge: "🚶", color: "#54A0FF", desc: "Know basics, ready to build vocabulary" },
-  { id: "hsk3", label: "Level 3 – Conversation Builder", badge: "🗣",  color: "#1DD1A1", desc: "Can hold simple conversations" },
-  { id: "hsk4", label: "Level 4 – Confident Speaker",    badge: "🌟", color: "#FF9F43", desc: "Comfortable with everyday Chinese" },
-  { id: "hsk5", label: "Level 5 – Communicator",         badge: "🔥", color: "#a29bfe", desc: "Advanced, near-fluent communication" },
+  { id: "hsk1", label: "Level 1 – Beginner",             badge: "🌻", color: "#9B6846", desc: "Complete beginner, starting from scratch" },
+  { id: "hsk2", label: "Level 2 – Explorer",             badge: "☕", color: "#E8522A", desc: "Know basics, ready to build vocabulary" },
+  { id: "hsk3", label: "Level 3 – Conversation Builder", badge: "🌾", color: "#0c6e16", desc: "Can hold simple conversations" },
+  { id: "hsk4", label: "Level 4 – Confident Speaker",    badge: "🏡", color: "#BE7A62", desc: "Comfortable with everyday Chinese" },
+  { id: "hsk5", label: "Level 5 – Communicator",         badge: "🌌", color: "#384fa3", desc: "Advanced, near-fluent communication" },
+  { id: "hsk6", label: "Level 6 – Advanced",             badge: "🌼", color: "#374950", desc: "Advanced fluency — HSK 6" },
 ];
 
 // Given a level id, return the one step down
@@ -127,7 +128,7 @@ export default function LevelChangeModal({
                   return (
                     <TouchableOpacity
                       key={lvl.id}
-                      style={[m.listItem, { borderColor: isCurrent ? lvl.color : "rgba(255,255,255,0.08)" }, isCurrent && m.listItemCurrent]}
+                      style={[m.listItem, { borderColor: isCurrent ? lvl.color : "rgba(155,104,70,0.20)" }, isCurrent && { backgroundColor: lvl.color + "18" }]}
                       onPress={() => { if (!isCurrent) onConfirm(lvl.id); }}
                       activeOpacity={isCurrent ? 1 : 0.75}
                     >
@@ -186,7 +187,7 @@ const m = StyleSheet.create({
 
   listScroll:    { maxHeight: 400 },
   listItem:      { flexDirection: "row", alignItems: "center", backgroundColor: CARD_WHITE, borderRadius: 14, padding: 14, marginBottom: 8, borderWidth: 1.5, borderColor: "rgba(155,104,70,0.20)", gap: 12 },
-  listItemCurrent: { backgroundColor: "rgba(155,104,70,0.08)" },
+
   listEmoji:     { fontSize: 24, width: 32, textAlign: "center" },
   listInfo:      { flex: 1 },
   listLabel:     { fontSize: 15, fontWeight: "700" },

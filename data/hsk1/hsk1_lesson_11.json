@@ -161,32 +161,6 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l11_p01",
-      "chinese": "现在几点",
-      "pinyin": "xiànzài jǐ diǎn",
-      "tones": [
-        4,
-        4,
-        3,
-        3
-      ],
-      "english": "What time is it now?",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l11_p02",
-      "chinese": "几点几分",
-      "pinyin": "jǐ diǎn jǐ fēn",
-      "tones": [
-        3,
-        3,
-        3,
-        1
-      ],
-      "english": "What time exactly (hour and minute)",
-      "part_of_speech": "phrase"
-    },
-    {
       "id": "hsk1_l11_p03",
       "chinese": "中午十二点",
       "pinyin": "zhōngwǔ shí'èr diǎn",
@@ -215,44 +189,18 @@
     },
     {
       "id": "hsk1_l11_p05",
-      "chinese": "星期一",
-      "pinyin": "xīngqīyī",
+      "chinese": "打电话",
+      "pinyin": "dǎ diànhuà",
       "tones": [
-        1,
-        1,
-        1
+        3,
+        4,
+        4
       ],
-      "english": "Monday",
+      "english": "Make a phone call",
       "part_of_speech": "phrase"
     },
     {
       "id": "hsk1_l11_p06",
-      "chinese": "星期六",
-      "pinyin": "xīngqīliù",
-      "tones": [
-        1,
-        1,
-        4
-      ],
-      "english": "Saturday",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l11_p07",
-      "chinese": "打电话给你",
-      "pinyin": "dǎ diànhuà gěi nǐ",
-      "tones": [
-        3,
-        4,
-        4,
-        3,
-        3
-      ],
-      "english": "Call you / Phone you",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l11_p08",
       "chinese": "五分钟后",
       "pinyin": "wǔ fēnzhōng hòu",
       "tones": [
@@ -265,7 +213,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l11_p09",
+      "id": "hsk1_l11_p07",
       "chinese": "听说",
       "pinyin": "tīng shuō",
       "tones": [
@@ -276,7 +224,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l11_p10",
+      "id": "hsk1_l11_p8",
       "chinese": "今年",
       "pinyin": "jīnnián",
       "tones": [
@@ -287,7 +235,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l11_p11",
+      "id": "hsk1_l11_p9",
       "chinese": "明年",
       "pinyin": "míngnián",
       "tones": [
@@ -298,17 +246,105 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l11_p12",
-      "chinese": "请问几点",
-      "pinyin": "qǐngwèn jǐ diǎn",
+      "id": "hsk1_l11_p10",
+      "chinese": "去年",
+      "pinyin": "qù nián",
       "tones": [
-        3,
         4,
-        3,
-        3
+        2
       ],
-      "english": "Excuse me, what time is it?",
+      "english": "Last year",
       "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l11_d01",
+      "chinese": "星期一",
+      "pinyin": "xīngqīyī",
+      "tones": [1, 1, 1],
+      "english": "Monday",
+      "part_of_speech": "noun",
+      "example": "今天星期一。",
+      "translation": "Today is Monday."
+    },
+    {
+      "id": "hsk1_l11_d02",
+      "chinese": "星期二",
+      "pinyin": "xīngqī'èr",
+      "tones": [1, 1, 4],
+      "english": "Tuesday",
+      "part_of_speech": "noun",
+      "example": "星期二见！",
+      "translation": "See you Tuesday!"
+    },
+    {
+      "id": "hsk1_l11_d03",
+      "chinese": "星期三",
+      "pinyin": "xīngqīsān",
+      "tones": [1, 1, 1],
+      "english": "Wednesday",
+      "part_of_speech": "noun",
+      "example": "星期三我去学校。",
+      "translation": "I go to school on Wednesday."
+    },
+    {
+      "id": "hsk1_l11_d04",
+      "chinese": "星期四",
+      "pinyin": "xīngqīsì",
+      "tones": [1, 1, 4],
+      "english": "Thursday",
+      "part_of_speech": "noun",
+      "example": "星期四你有空吗？",
+      "translation": "Are you free on Thursday?"
+    },
+    {
+      "id": "hsk1_l11_d05",
+      "chinese": "星期五",
+      "pinyin": "xīngqīwǔ",
+      "tones": [1, 1, 3],
+      "english": "Friday",
+      "part_of_speech": "noun",
+      "example": "今天是星期五。",
+      "translation": "Today is Friday."
+    },
+    {
+      "id": "hsk1_l11_d06",
+      "chinese": "星期六",
+      "pinyin": "xīngqīliù",
+      "tones": [1, 1, 4],
+      "english": "Saturday",
+      "part_of_speech": "noun",
+      "example": "星期六我们出去。",
+      "translation": "We go out on Saturday."
+    },
+    {
+      "id": "hsk1_l11_d07",
+      "chinese": "星期天",
+      "pinyin": "xīngqītiān",
+      "tones": [1, 1, 1],
+      "english": "Sunday",
+      "part_of_speech": "noun",
+      "example": "星期天我在家。",
+      "translation": "I'm at home on Sunday."
+    },
+    {
+      "id": "hsk1_l11_p11",
+      "chinese": "一个星期",
+      "pinyin": "yī gè xīngqī",
+      "tones": [1, 4, 1, 1],
+      "english": "One week",
+      "part_of_speech": "phrase",
+      "example": "一个星期有七天。",
+      "translation": "One week has seven days."
+    },
+    {
+      "id": "hsk1_l11_p12",
+      "chinese": "两个星期",
+      "pinyin": "liǎng gè xīngqī",
+      "tones": [3, 4, 1, 1],
+      "english": "Two weeks",
+      "part_of_speech": "phrase",
+      "example": "我去两个星期。",
+      "translation": "I'll be there for two weeks."
     }
   ],
   "dialogues": [
@@ -610,6 +646,35 @@
         {
           "question": "What does 星期天 mean?",
           "answer": "Sunday",
+          "type": "concept"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Counting Weeks: Number + 个星期",
+      "explanation": "To count weeks in Chinese, use: Number + 个(gè) + 星期(xīngqī). 个 is the measure word for weeks. Examples: 一个星期(one week), 两个星期(two weeks), 三个星期(three weeks). This pattern works for any number.",
+      "examples": [
+        {
+          "chinese": "一个星期有七天。",
+          "pinyin": "Yī gè xīngqī yǒu qī tiān.",
+          "english": "One week has seven days."
+        },
+        {
+          "chinese": "我在中国待了两个星期。",
+          "pinyin": "Wǒ zài Zhōngguó dāi le liǎng gè xīngqī.",
+          "english": "I stayed in China for two weeks."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "How do you say 'three weeks' in Chinese?",
+          "answer": "三个星期",
+          "type": "production"
+        },
+        {
+          "question": "What measure word goes between the number and 星期?",
+          "answer": "个 (gè)",
           "type": "concept"
         }
       ]
@@ -917,6 +982,61 @@
         "打电话请我。",
         "请打电话给我。",
         "给我打请电话。"
+      ]
+    },
+    {
+      "question": "What does 一个星期 mean?",
+      "type": "multiple_choice",
+      "correct": "One week",
+      "options": [
+        "One day",
+        "One month",
+        "One week",
+        "One year"
+      ]
+    },
+    {
+      "question": "How do you say 'two weeks' in Chinese?",
+      "type": "multiple_choice",
+      "correct": "两个星期",
+      "options": [
+        "两星期",
+        "二个星期",
+        "两个星期",
+        "两个周"
+      ]
+    },
+    {
+      "question": "How many days are in one week? (一个星期有几天？)",
+      "type": "multiple_choice",
+      "correct": "七天 (7 days)",
+      "options": [
+        "五天 (5 days)",
+        "六天 (6 days)",
+        "七天 (7 days)",
+        "八天 (8 days)"
+      ]
+    },
+    {
+      "question": "Which sentence means 'I'll be away for two weeks'?",
+      "type": "multiple_choice",
+      "correct": "我去两个星期。",
+      "options": [
+        "我去两个月。",
+        "我去两天。",
+        "我去两个星期。",
+        "我去两年。"
+      ]
+    },
+    {
+      "question": "What measure word (量词) is used when counting weeks?",
+      "type": "multiple_choice",
+      "correct": "个",
+      "options": [
+        "只",
+        "张",
+        "个",
+        "条"
       ]
     }
   ]

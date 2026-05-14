@@ -214,30 +214,18 @@
     },
     {
       "id": "hsk1_l14_p05",
-      "chinese": "我儿子",
-      "pinyin": "wǒ érzi",
+      "chinese": "她儿子",
+      "pinyin": "tā érzi",
       "tones": [
-        3,
+        1,
         2,
         0
       ],
-      "english": "My son",
+      "english": "Her son",
       "part_of_speech": "phrase"
     },
     {
       "id": "hsk1_l14_p06",
-      "chinese": "是医生",
-      "pinyin": "shì yīshēng",
-      "tones": [
-        4,
-        1,
-        1
-      ],
-      "english": "Is a doctor",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l14_p07",
       "chinese": "去工作",
       "pinyin": "qù gōngzuò",
       "tones": [
@@ -249,7 +237,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l14_p08",
+      "id": "hsk1_l14_p07",
       "chinese": "没有工作",
       "pinyin": "méiyǒu gōngzuò",
       "tones": [
@@ -262,7 +250,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l14_p09",
+      "id": "hsk1_l14_p08",
       "chinese": "以前工作",
       "pinyin": "yǐqián gōngzuò",
       "tones": [
@@ -275,7 +263,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l14_p10",
+      "id": "hsk1_l14_p9",
       "chinese": "以后再来",
       "pinyin": "yǐhòu zài lái",
       "tones": [
@@ -288,7 +276,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l14_p11",
+      "id": "hsk1_l14_p10",
       "chinese": "又买了",
       "pinyin": "yòu mǎi le",
       "tones": [
@@ -300,7 +288,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l14_p12",
+      "id": "hsk1_l14_p11",
       "chinese": "自己做",
       "pinyin": "zìjǐ zuò",
       "tones": [
@@ -531,7 +519,7 @@
     {
       "number": 1,
       "title": "Completion Particle 了 (le) — Action Completed",
-      "explanation": "了(le) after a verb shows the action is completed. Formula: Subject + Verb + 了(le) + Object. Negative: 没(有) + Verb (no 了(le)). Question: Verb + 了(le) + 吗(ma)? or Verb + 了(le) + 没有(méi yǒu)?",
+      "explanation": "了(le) after a verb shows the action is completed. \n1. Positive: Subject + Verb + 了 + Object \n2. Negative: Subject + 没(有) + Verb + Object \n3. Question: Subject + Verb + 了 + 吗？or Verb + 了 + 没有？",
       "examples": [
         {
           "chinese": "我吃了米饭。",
@@ -539,9 +527,24 @@
           "english": "I ate rice."
         },
         {
+          "chinese": "我没吃饭。",
+          "pinyin": "Wǒ méi chīfàn.",
+          "english": "I didn't eat (the meal)."
+        },
+        {
+          "chinese": "你有没有吃饭？",
+          "pinyin": "Nǐ yǒu méi you chīfàn?",
+          "english": "Haven you eaten yet?"
+        },
+        {
           "chinese": "她买了新衣服。",
           "pinyin": "Tā mǎi le xīn yīfu.",
           "english": "She bought new clothes."
+        },
+        {
+          "chinese": "她买新衣服了吗？",
+          "pinyin": "Tā mǎi xīn yīfu le ma ?",
+          "english": "Did she buy new clothes?"
         }
       ],
       "exercises": [
@@ -573,8 +576,8 @@
           "english": "I haven't eaten yet."
         },
         {
-          "chinese": "他还没来。",
-          "pinyin": "Tā hái méi lái.",
+          "chinese": "他还没来呢。",
+          "pinyin": "Tā hái méi lái ne.",
           "english": "He hasn't come yet."
         }
       ],
@@ -610,7 +613,7 @@
       "exercises": [
         {
           "question": "Say 'I will go to China in the future'",
-          "answer": "我以后去中国。",
+          "answer": "我以后会去中国。",
           "type": "production"
         },
         {

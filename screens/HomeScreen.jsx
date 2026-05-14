@@ -192,6 +192,7 @@ export default function HomeScreen({
   onLevelQuizPress,
   onChangeLevelConfirm,
   onRetakeTest,
+  onResetProgress,
   onFoundationsPinyinPress,
 }) {
   const { xp, streak } = useProgress();
@@ -764,7 +765,17 @@ export default function HomeScreen({
 
             <TouchableOpacity
               style={styles.menuItem}
-              onPress={() => { setShowMenu(false); alert('🔄 Progress Reset\n\n(Feature coming soon!)'); }}
+              onPress={() => {
+                setShowMenu(false);
+                Alert.alert(
+                  'Reset Progress',
+                  'This will erase all your progress and return you to onboarding. This cannot be undone.',
+                  [
+                    { text: 'Cancel', style: 'cancel' },
+                    { text: 'Reset', style: 'destructive', onPress: onResetProgress },
+                  ]
+                );
+              }}
             >
               <Text style={styles.menuItemEmoji}>🗑️</Text>
               <View style={styles.menuItemTextContainer}>

@@ -33,7 +33,7 @@ function ImageCard({ image, selected, correct, showResult, onPress, size = 140 }
 
       {/* Label overlay */}
       <View style={styles.cardLabelBg}>
-        <Text style={styles.cardLabel} numberOfLines={1}>{image?.label || ''}</Text>
+        <Text style={styles.cardLabel} numberOfLines={1}>{image?.label_en || image?.label || ''}</Text>
       </View>
 
       {/* Result overlay */}
@@ -91,7 +91,7 @@ export default function ImageExercise({ exercise, onCorrect, onWrong, avatarId =
           ) : (
             <View style={[styles.bigEmoji, { backgroundColor: exercise.image?.color || SLATE_TEAL }]}>
               <Text style={styles.bigEmojiText}>{exercise.image?.emoji || '🖼️'}</Text>
-              <Text style={styles.bigEmojiLabel}>{exercise.image?.label}</Text>
+              <Text style={styles.bigEmojiLabel}>{exercise.image?.label_en || exercise.image?.label}</Text>
             </View>
           )}
         </View>

@@ -161,21 +161,6 @@
     },
     {
       "id": "hsk1_l13_p01",
-      "chinese": "电脑在桌子上",
-      "pinyin": "diànnǎo zài zhuōzi shàng",
-      "tones": [
-        4,
-        3,
-        4,
-        1,
-        0,
-        4
-      ],
-      "english": "The computer is on the desk",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l13_p02",
       "chinese": "坐在椅子上",
       "pinyin": "zuò zài yǐ zi shàng",
       "tones": [
@@ -189,7 +174,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l13_p03",
+      "id": "hsk1_l13_p02",
       "chinese": "在饭馆吃饭",
       "pinyin": "zài fànguǎn chīfàn",
       "tones": [
@@ -203,7 +188,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l13_p04",
+      "id": "hsk1_l13_p03",
       "chinese": "住在哪儿",
       "pinyin": "zhù zài nǎr",
       "tones": [
@@ -215,20 +200,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l13_p05",
-      "chinese": "这是什么",
-      "pinyin": "zhè shì shénme",
-      "tones": [
-        4,
-        4,
-        2,
-        0
-      ],
-      "english": "What is this?",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l13_p06",
+      "id": "hsk1_l13_p04",
       "chinese": "那个杯子",
       "pinyin": "nàge bēizi",
       "tones": [
@@ -241,7 +213,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l13_p07",
+      "id": "hsk1_l13_p05",
       "chinese": "哪个好",
       "pinyin": "nǎge hǎo",
       "tones": [
@@ -253,7 +225,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l13_p08",
+      "id": "hsk1_l13_p06",
       "chinese": "开电脑",
       "pinyin": "kāi diànnǎo",
       "tones": [
@@ -265,49 +237,27 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l13_p09",
-      "chinese": "在这儿",
-      "pinyin": "zài zhèr",
+      "id": "hsk1_l13_p7",
+      "chinese": "开车",
+      "pinyin": "kāi chē",
       "tones": [
-        4,
-        4
+        1,
+        1
       ],
-      "english": "Here / Right here",
+      "english": "Drive(a car)",
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l13_p10",
-      "chinese": "在那儿",
-      "pinyin": "zài nàr",
-      "tones": [
-        4,
-        4
-      ],
-      "english": "There / Over there",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l13_p11",
-      "chinese": "我住在",
-      "pinyin": "wǒ zhù zài",
-      "tones": [
-        3,
-        4,
-        4
-      ],
-      "english": "I live at / in",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l13_p12",
-      "chinese": "去饭馆",
-      "pinyin": "qù fànguǎn",
+      "id": "hsk1_l13_p8",
+      "chinese": "住在这儿",
+      "pinyin": "zhù zài zhèr",
       "tones": [
         4,
         4,
-        3
+        4,
+        0
       ],
-      "english": "Go to a restaurant",
+      "english": "Live here",
       "part_of_speech": "phrase"
     }
   ],
@@ -524,7 +474,7 @@
     {
       "number": 1,
       "title": "Demonstratives: 这, 那, 哪 (zhè, nà, nǎ)",
-      "explanation": "这(zhè) = this (near); 那(nà) = that (far); 哪(nǎ) = which (question). a. Add 个(gè) after them before nouns: 这个 - this(one), 那个 - that(one), 哪个 - which(one); b. Add 儿(er) for locations: 这儿(here), 那儿(there), 哪儿(where).",
+      "explanation": "这 = this (near); 那 = that (far); 哪 = which (question). \n Add 个(gè) after them before nouns: 这个 - this(one), 那个 - that(one), 哪个 - which(one).\n \n Add 儿(er) for locations: 这儿(here), 那儿(there), 哪儿(where).",
       "examples": [
         {
           "chinese": "这个杯子很漂亮。",
@@ -587,7 +537,7 @@
     {
       "number": 3,
       "title": "Verb 开 (kāi) — To Open / Drive / Turn On",
-      "explanation": "开(kāi) has several meanings: open a door (开门(mén)), drive a car (开车), turn on a device (开电脑(diànnǎo)/开电视(diàn shì)). Context determines meaning.",
+      "explanation": "开(kāi) has several meanings: \n a.Open a door (开门(mén)), \n b.Drive a car (开车), \n c.Turn on a device (开电脑(diànnǎo)/开电视(diàn shì)). Context determines meaning.",
       "examples": [
         {
           "chinese": "请开门。",

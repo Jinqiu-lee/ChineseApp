@@ -1,7 +1,7 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import {
   View, Text, TouchableOpacity, StyleSheet,
-  ScrollView, TextInput, Animated, Modal, StatusBar,
+  ScrollView, TextInput, Animated, Modal, StatusBar, Image,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import {
@@ -10,7 +10,56 @@ import {
 } from "../data/placementQuestions";
 import ScreenBackground from "../components/ScreenBackground";
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from "../constants/colors";
+import { getAvatar } from "../config/avatarConfig";
 
+// ── Pre-resolved avatar images ────────────────────────────────────────────────
+const AV = {
+  eileen: getAvatar('eileen').images.neutral,
+  libai:  getAvatar('libai').images.encourage,
+  dante:  getAvatar('dante').images.think,
+  luxun:  getAvatar('luxun').images.think,
+  jane:   getAvatar('jane').images.encourage,
+  camus:  getAvatar('camus').images.neutral,
+  luxunHappy:  getAvatar('luxun').images.neutral,
+  danteHappy:  getAvatar('dante').images.encourage,
+};
+
+// ── Avatar bar config per step ────────────────────────────────────────────────
+const STEP_AVATAR = {
+  age:     { image: AV.eileen, message: "Learning begins at any age." },
+  path:    { image: AV.libai,  message: "Where does your journey begin?" },
+  manual:  { image: AV.dante,  message: "Choose your path wisely." },
+  test:    { image: AV.luxun,  message: "Let's see what you already know." },
+};
+
+const RESULTS_AVATAR = {
+  hsk1: { image: AV.eileen,    name: '张爱玲' },
+  hsk2: { image: AV.libai,     name: '李白'   },
+  hsk3: { image: AV.jane,      name: '简奥斯汀' },
+  hsk4: { image: AV.luxunHappy, name: '鲁迅'  },
+  hsk5: { image: AV.camus,     name: '加缪'   },
+  hsk6: { image: AV.danteHappy, name: '但丁'  },
+};
+
+function getStepBackground(step, result) {
+  if (step === 'welcome' || step === 'age') return 'hsk6';
+  if (step === 'path' || step === 'manual') return 'hsk2';
+  if (step === 'test') return 'hsk3';
+  if (step === 'results') return result?.recommendedLevel || 'hsk1';
+  return 'hsk1';
+}
+
+// ── Reusable avatar bar ───────────────────────────────────────────────────────
+function AvatarBar({ image, message }) {
+  return (
+    <View style={s.avatarBar}>
+      <Image source={image} style={s.avatarBarImg} />
+      <Text style={s.avatarBarMsg}>{message}</Text>
+    </View>
+  );
+}
+
+// ── Data ──────────────────────────────────────────────────────────────────────
 const LEVELS_MANUAL = [
   { id: "hsk1", label: "Level 1 – Beginner",             badge: "🌻", color: "#9B6846", desc: "Complete beginner, starting from scratch" },
   { id: "hsk2", label: "Level 2 – Explorer",             badge: "☕", color: "#E8522A", desc: "Know basics, ready to build vocabulary" },
@@ -29,30 +78,29 @@ const MANUAL_RANK_MAP = {
   hsk6: { level: "Advanced",             levelChinese: "高端", badge: "🌼", color: "#374950", recommendedLevel: "hsk6", recommendedLabel: "Level 6 – Advanced",             message: "Great! We'll start you at Level 6 – Advanced." },
 };
 
-// ── CEFR level details (for results screen & levels panel) ───────
 const LEVEL_DETAILS = [
   { id: "hsk1", number: 1, cefrLabel: "Beginner",           cefr: "A1",  emoji: "🌻", color: "#9B6846",
     willLearn: ["Introduce yourself in Chinese", "Use basic greetings and farewells", "Count numbers and tell the time", "Understand ~150 Chinese words"] },
-  { id: "hsk2", number: 2, cefrLabel: "Elementary",         cefr: "A1",  emoji: "☕", color: "#E8522A",
+  { id: "hsk2", number: 2, cefrLabel: "Elementary",         cefr: "A2",  emoji: "☕", color: "#E8522A",
     willLearn: ["Talk about daily life and simple activities", "Understand short conversations", "Vocabulary: 250–300 words"] },
-  { id: "hsk3", number: 3, cefrLabel: "Lower Intermediate", cefr: "A2",  emoji: "🌾", color: "#0c6e16",
+  { id: "hsk3", number: 3, cefrLabel: "Lower Intermediate", cefr: "B1",  emoji: "🌾", color: "#0c6e16",
     willLearn: ["Talk about plans, experiences, and opinions", "Hold longer conversations", "Vocabulary: 500–600 words"] },
-  { id: "hsk4", number: 4, cefrLabel: "Intermediate",       cefr: "B1",  emoji: "🏡", color: "#BE7A62",
+  { id: "hsk4", number: 4, cefrLabel: "Intermediate",       cefr: "B1+", emoji: "🏡", color: "#BE7A62",
     willLearn: ["Discuss work, travel, and study", "Understand longer conversations", "Vocabulary: 800–900 words"] },
-  { id: "hsk5", number: 5, cefrLabel: "Upper Intermediate", cefr: "B1+", emoji: "🌌", color: "#384fa3",
+  { id: "hsk5", number: 5, cefrLabel: "Upper Intermediate", cefr: "B2",  emoji: "🌌", color: "#384fa3",
     willLearn: ["Discuss love, friendship, careers, and health", "Interact with more complex topics", "Vocabulary: ~1,200 words"] },
-  { id: "hsk6", number: 6, cefrLabel: "Advanced",           cefr: "B2",  emoji: "🌼", color: "#374950",
+  { id: "hsk6", number: 6, cefrLabel: "Advanced",           cefr: "B2+", emoji: "🌼", color: "#374950",
     willLearn: ["Read Chinese newspapers and novels", "Watch Chinese films without subtitles", "Communicate fluently with native speakers", "Use 2,500+ Chinese words"] },
 ];
 const LEVEL_DETAILS_MAP = Object.fromEntries(LEVEL_DETAILS.map(l => [l.id, l]));
 
+const STEP_WELCOME = "welcome";
 const STEP_AGE    = "age";
 const STEP_PATH   = "path";
 const STEP_MANUAL = "manual";
 const STEP_TEST   = "test";
 const STEP_RESULTS= "results";
 
-// ── Type badge labels ─────────────────────────────────────────────
 const TYPE_LABELS = {
   mc:     { label: "💬 Multiple Choice", bg: "#e8f4ff" },
   match:  { label: "🔤 Character Match",  bg: "#e8faf4" },
@@ -60,7 +108,7 @@ const TYPE_LABELS = {
 };
 
 export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
-  const [step, setStep]             = useState(initialAge ? STEP_PATH : STEP_AGE);
+  const [step, setStep]             = useState(initialAge ? STEP_PATH : STEP_WELCOME);
   const [age, setAge]               = useState(initialAge ? String(initialAge) : "");
   const [ageError, setAgeError]     = useState("");
   const [phase, setPhase]           = useState(1);
@@ -73,6 +121,7 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
   const [result, setResult]         = useState(null);
   const [showLevelsPanel, setShowLevelsPanel] = useState(false);
 
+  // Step-transition fade (unchanged)
   const fadeAnim = useRef(new Animated.Value(1)).current;
   const fade = (cb) => {
     Animated.timing(fadeAnim, { toValue: 0, duration: 160, useNativeDriver: true }).start(() => {
@@ -81,6 +130,15 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
     });
   };
 
+  // Welcome screen mount fade-in (avatar + title only)
+  const welcomeAnim = useRef(new Animated.Value(0)).current;
+  useEffect(() => {
+    if (!initialAge) {
+      Animated.timing(welcomeAnim, { toValue: 1, duration: 800, useNativeDriver: true }).start();
+    }
+  }, []);
+
+  // ── All existing handlers — unchanged ─────────────────────────────────────
   const handleAgeSubmit = () => {
     const n = parseInt(age, 10);
     if (!n || n < 12 || n > 99) { setAgeError("Please enter a valid age (12–99)"); return; }
@@ -96,7 +154,6 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
     fade(() => setStep(STEP_TEST));
   };
 
-  // FIX 1: back button in test → go back to path picker
   const handleTestBack = () => {
     fade(() => {
       setStep(STEP_PATH);
@@ -146,28 +203,60 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
   const q = step === STEP_TEST && questions.length > 0 ? questions[qIndex] : null;
   const totalQ = questions.length;
 
+  // Results avatar config (derived once per render)
+  const resultsAvatarCfg = result
+    ? (RESULTS_AVATAR[result.recommendedLevel] || RESULTS_AVATAR.hsk1)
+    : null;
+
   return (
-    <ScreenBackground levelId="default">
+    <ScreenBackground levelId={getStepBackground(step, result)}>
       <SafeAreaView style={s.safe}>
         <StatusBar barStyle="dark-content" />
       <Animated.View style={[s.container, { opacity: fadeAnim }]}>
 
+        {/* ── Avatar bar (all steps except welcome) ── */}
+        {step !== STEP_WELCOME && step !== STEP_TEST && (() => {
+          if (step === STEP_RESULTS && resultsAvatarCfg) {
+            return <AvatarBar image={resultsAvatarCfg.image} message="Your adventure begins now." />;
+          }
+          const cfg = STEP_AVATAR[step];
+          return cfg ? <AvatarBar image={cfg.image} message={cfg.message} /> : null;
+        })()}
+
+        {/* ── WELCOME ── */}
+        {step === STEP_WELCOME && (
+          <ScrollView contentContainerStyle={s.centered}>
+            <View style={s.darkCard}>
+              <Animated.View style={[s.welcomeHero, { opacity: welcomeAnim }]}>
+                <Image source={AV.eileen} style={s.welcomeAvatar} />
+                <Text style={[s.welcomeAppName, { color: '#FFFFFF' }]}>MandaGlow</Text>
+                <Text style={[s.welcomeSubtitle, { color: '#FFFFFF' }]}>Every great journey begins with 你好</Text>
+              </Animated.View>
+              <TouchableOpacity style={s.primaryBtn} onPress={() => fade(() => setStep(STEP_AGE))}>
+                <Text style={s.primaryBtnText}>Begin My Journey →</Text>
+              </TouchableOpacity>
+            </View>
+          </ScrollView>
+        )}
+
         {/* ── AGE ── */}
         {step === STEP_AGE && (
           <ScrollView contentContainerStyle={s.centered}>
-            <Text style={s.bigEmoji}>👋</Text>
-            <Text style={s.title}>欢迎！Welcome!</Text>
-            <Text style={s.subtitle}>Let's personalize your learning journey</Text>
-            <Text style={s.label}>How old are you?</Text>
-            <TextInput
-              style={s.input} keyboardType="number-pad" value={age}
-              onChangeText={(t) => { setAge(t); setAgeError(""); }}
-              placeholder="Enter your age" placeholderTextColor="#636e72" maxLength={3}
-            />
-            {ageError ? <Text style={s.errorText}>{ageError}</Text> : null}
-            <TouchableOpacity style={s.primaryBtn} onPress={handleAgeSubmit}>
-              <Text style={s.primaryBtnText}>Continue →</Text>
-            </TouchableOpacity>
+            <View style={s.darkCard}>
+              <Text style={s.bigEmoji}>👋</Text>
+              <Text style={[s.title, { color: '#FFFFFF' }]}>欢迎！Welcome!</Text>
+              <Text style={[s.subtitle, { color: '#FFFFFF' }]}>Let's personalize your learning journey</Text>
+              <Text style={[s.label, { color: '#FFFFFF' }]}>How old are you?</Text>
+              <TextInput
+                style={s.input} keyboardType="number-pad" value={age}
+                onChangeText={(t) => { setAge(t); setAgeError(""); }}
+                placeholder="Enter your age" placeholderTextColor="#636e72" maxLength={3}
+              />
+              {ageError ? <Text style={s.errorText}>{ageError}</Text> : null}
+              <TouchableOpacity style={s.primaryBtn} onPress={handleAgeSubmit}>
+                <Text style={s.primaryBtnText}>Continue →</Text>
+              </TouchableOpacity>
+            </View>
           </ScrollView>
         )}
 
@@ -238,7 +327,6 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
         {/* ── TEST ── */}
         {step === STEP_TEST && q && (
           <View style={s.testContainer}>
-            {/* FIX 1: Back button in header */}
             <View style={s.testHeader}>
               <TouchableOpacity onPress={handleTestBack} style={s.testBackBtn}>
                 <Text style={s.testBackText}>← Back</Text>
@@ -253,29 +341,28 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
             </View>
 
             <ScrollView contentContainerStyle={s.testBody}>
-              {/* Question type badge */}
-              <View style={[s.typeBadge, { backgroundColor: TYPE_LABELS[q.type]?.bg }]}>
-                <Text style={s.typeBadgeText}>{TYPE_LABELS[q.type]?.label}</Text>
+              {/* Avatar bar inside test scroll */}
+              <AvatarBar image={AV.luxun} message="Let's see what you already know." />
+
+              <View style={s.typeBadge2}>
+                <View style={[s.typeBadge, { backgroundColor: TYPE_LABELS[q.type]?.bg }]}>
+                  <Text style={s.typeBadgeText}>{TYPE_LABELS[q.type]?.label}</Text>
+                </View>
               </View>
 
-              {/* Question box */}
               <View style={s.questionBox}>
                 <Text style={s.questionText}>{q.question}</Text>
-                {/* FIX 2: show pinyin below question if it has Chinese */}
                 {q.questionPinyin && (
                   <Text style={s.questionPinyin}>{q.questionPinyin}</Text>
                 )}
-                {/* FIX 3: pinyin questions show big character */}
                 {q.type === "pinyin" && (
                   <Text style={s.pinyinCharDisplay}>{q.chineseWord}</Text>
                 )}
-                {/* match hint */}
                 {q.hint && q.type === "match" && (
                   <Text style={s.questionHint}>Pinyin: {q.hint}</Text>
                 )}
               </View>
 
-              {/* ── MC options ── */}
               {q.type === "mc" && (
                 <View style={s.mcList}>
                   {q.options.map((opt) => {
@@ -291,7 +378,6 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
                     return (
                       <TouchableOpacity key={opt} style={btnStyle} onPress={() => handleAnswer(opt)} disabled={answered} activeOpacity={0.75}>
                         <Text style={textStyle}>{opt}</Text>
-                        {/* FIX 2: show pinyin under Chinese options */}
                         {pin && <Text style={[s.optionPinyinText, answered && (isCorrectAns || isSelected) && s.optionPinyinWhite]}>{pin}</Text>}
                       </TouchableOpacity>
                     );
@@ -299,7 +385,6 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
                 </View>
               )}
 
-              {/* ── Match grid ── */}
               {q.type === "match" && (
                 <View style={s.matchGrid}>
                   {q.options.map((opt) => {
@@ -320,7 +405,6 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
                 </View>
               )}
 
-              {/* FIX 3: Pinyin choice options */}
               {q.type === "pinyin" && (
                 <View style={s.mcList}>
                   {q.options.map((opt) => {
@@ -341,7 +425,6 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
                 </View>
               )}
 
-              {/* Feedback */}
               {answered && (
                 <View style={[s.feedbackBox, { backgroundColor: selected === q.correct ? "#d4edda" : "#fdecea" }]}>
                   <Text style={s.feedbackText}>
@@ -376,11 +459,17 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
               >
                 <Text style={s.backBtn}>← Back</Text>
               </TouchableOpacity>
+
               <View style={s.titleCard}>
                 <Text style={s.testCompleteTitle}>
                   {result.source === "test" ? "🎉 Test Complete!" : "🎉 Great Choice!"}
                 </Text>
               </View>
+
+              {/* Large avatar above the level badge */}
+              {resultsAvatarCfg && (
+                <Image source={resultsAvatarCfg.image} style={s.resultsLargeAvatar} />
+              )}
 
               {/* Main result card */}
               <View style={[s.resultCard2, { borderColor: detail.color }]}>
@@ -394,6 +483,12 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
                   <Text style={s.resultCard2Emoji}>{detail.emoji}</Text>
                 </View>
                 <Text style={[s.resultCard2Name, { color: detail.color }]}>{result.level}</Text>
+
+                {/* Adventure text below level name */}
+                <View style={s.adventureBox}>
+                  <Text style={s.adventureEn}>Your adventure begins now.</Text>
+                  <Text style={s.adventureZh}>你的冒险从现在开始。</Text>
+                </View>
               </View>
 
               {/* You will learn */}
@@ -420,7 +515,7 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
                 <Text style={s.showLevelsBtnText}>Show Language Levels</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={[s.primaryBtn, { backgroundColor: detail.color }]} onPress={handleDone}>
+              <TouchableOpacity style={[s.primaryBtn, { backgroundColor: detail.color, width: "100%" }]} onPress={handleDone}>
                 <Text style={s.primaryBtnText}>👉 Start Learning</Text>
               </TouchableOpacity>
             </ScrollView>
@@ -505,9 +600,68 @@ const s = StyleSheet.create({
   label:        { fontSize: 16, fontWeight: "600", color: WARM_BROWN, marginBottom: 10 },
   input:        { backgroundColor: CARD_WHITE, color: DEEP_NAVY, fontSize: 22, fontWeight: "700", textAlign: "center", padding: 16, borderRadius: 16, width: "60%", marginBottom: 8, borderWidth: 2, borderColor: "rgba(155,104,70,0.25)" },
   errorText:    { color: "#FF6B6B", fontSize: 13, marginBottom: 8 },
-  primaryBtn:   { backgroundColor: WARM_ORANGE, paddingVertical: 16, paddingHorizontal: 40, borderRadius: 16, marginTop: 12 },
+  primaryBtn:   { backgroundColor: WARM_ORANGE, paddingVertical: 16, paddingHorizontal: 40, borderRadius: 16, marginTop: 12, alignItems: "center" },
   primaryBtnText:{ fontSize: 16, fontWeight: "800", color: CARD_WHITE },
 
+  // ── Dark overlay card (welcome + age steps) ──────────────────────────────
+  darkCard: {
+    backgroundColor: 'rgba(0,0,0,0.45)',
+    borderRadius: 16,
+    padding: 20,
+    width: '100%',
+    alignItems: 'center',
+  },
+
+  // ── Welcome step ──────────────────────────────────────────────────────────
+  welcomeHero: { alignItems: "center", marginBottom: 32 },
+  welcomeAvatar: {
+    width: 90, height: 90, borderRadius: 45,
+    backgroundColor: "rgba(244,197,66,0.28)",
+    borderWidth: 2.5, borderColor: "rgba(155,104,70,0.35)",
+    marginBottom: 20,
+  },
+  welcomeAppName: {
+    fontSize: 38, fontWeight: "900", color: DEEP_NAVY,
+    letterSpacing: 1.5, textAlign: "center", marginBottom: 10,
+  },
+  welcomeSubtitle: {
+    fontSize: 15, color: WARM_BROWN, textAlign: "center",
+    fontStyle: "italic", lineHeight: 22,
+  },
+
+  // ── Avatar bar ────────────────────────────────────────────────────────────
+  avatarBar: {
+    flexDirection: "row", alignItems: "center",
+    backgroundColor: "rgba(255,255,255,0.88)",
+    borderRadius: 16, padding: 12,
+    marginHorizontal: 16, marginTop: 8, marginBottom: 4,
+    gap: 12,
+    borderWidth: 1, borderColor: "rgba(155,104,70,0.18)",
+  },
+  avatarBarImg: {
+    width: 60, height: 60, borderRadius: 30,
+    backgroundColor: "rgba(244,197,66,0.25)",
+    borderWidth: 2, borderColor: "rgba(155,104,70,0.28)",
+  },
+  avatarBarMsg: {
+    flex: 1, fontSize: 14, fontStyle: "italic",
+    color: DEEP_NAVY, lineHeight: 20,
+  },
+
+  // ── Results large avatar ──────────────────────────────────────────────────
+  resultsLargeAvatar: {
+    width: 120, height: 120, borderRadius: 60,
+    backgroundColor: "rgba(244,197,66,0.25)",
+    borderWidth: 3, borderColor: "rgba(155,104,70,0.30)",
+    marginBottom: 14,
+  },
+
+  // ── Results adventure text ────────────────────────────────────────────────
+  adventureBox: { marginTop: 12, alignItems: "center" },
+  adventureEn:  { fontSize: 13, color: WARM_BROWN, fontStyle: "italic", textAlign: "center" },
+  adventureZh:  { fontSize: 13, color: SLATE_TEAL, textAlign: "center", marginTop: 3 },
+
+  // ── Path step ─────────────────────────────────────────────────────────────
   pathCard:     { flexDirection: "row", alignItems: "center", backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20, width: "100%", marginBottom: 12, borderWidth: 2, borderColor: WARM_ORANGE },
   pathCardAlt:  { borderColor: SLATE_TEAL },
   pathEmoji:    { fontSize: 32, marginRight: 14 },
@@ -529,6 +683,7 @@ const s = StyleSheet.create({
   levelDesc:    { fontSize: 12, color: SLATE_TEAL, marginTop: 2 },
   levelArrow:   { fontSize: 18, fontWeight: "700" },
 
+  // ── Test step ─────────────────────────────────────────────────────────────
   testContainer:  { flex: 1 },
   testHeader:     { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: 16, paddingTop: 12, paddingBottom: 6, backgroundColor: CARD_WHITE, borderBottomWidth: 1, borderBottomColor: "rgba(155,104,70,0.15)" },
   testBackBtn:    { paddingVertical: 6, paddingRight: 12 },
@@ -536,24 +691,25 @@ const s = StyleSheet.create({
   testPhase:      { fontSize: 13, color: SLATE_TEAL, fontWeight: "600" },
   testProgressBg: { height: 5, backgroundColor: "rgba(55,73,80,0.22)", marginHorizontal: 16, borderRadius: 3, overflow: "hidden", marginBottom: 4 },
   testProgressFill:{ height: "100%", backgroundColor: WARM_ORANGE, borderRadius: 3 },
-  testBody:       { padding: 16, paddingBottom: 48 },
+  testBody:       { padding: 16, paddingBottom: 48, gap: 12 },
 
-  typeBadge:      { alignSelf: "flex-start", paddingHorizontal: 10, paddingVertical: 5, borderRadius: 10, marginBottom: 12 },
+  typeBadge2:     {},
+  typeBadge:      { alignSelf: "flex-start", paddingHorizontal: 10, paddingVertical: 5, borderRadius: 10 },
   typeBadgeText:  { fontSize: 12, fontWeight: "700", color: DEEP_NAVY },
 
-  questionBox:    { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20, marginBottom: 16, borderWidth: 2, borderColor: "rgba(155,104,70,0.22)" },
+  questionBox:    { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20, borderWidth: 2, borderColor: "rgba(155,104,70,0.22)" },
   questionText:   { fontSize: 18, fontWeight: "700", color: DEEP_NAVY, lineHeight: 26 },
   questionPinyin: { fontSize: 14, color: WARM_BROWN, marginTop: 8, fontStyle: "italic" },
   questionHint:   { fontSize: 13, color: WARM_BROWN, marginTop: 8 },
   pinyinCharDisplay: { fontSize: 64, color: DEEP_NAVY, fontWeight: "800", textAlign: "center", marginTop: 12 },
 
-  mcList:         { gap: 10, marginBottom: 12 },
+  mcList:         { gap: 10 },
   mcBtn:          { backgroundColor: CARD_WHITE, borderRadius: 14, padding: 16, borderWidth: 1.5, borderColor: "rgba(155,104,70,0.22)" },
   mcBtnText:      { fontSize: 15, color: DEEP_NAVY, fontWeight: "600" },
   optionPinyinText:  { fontSize: 12, color: WARM_BROWN, marginTop: 3, fontStyle: "italic" },
   optionPinyinWhite: { color: CARD_WHITE },
 
-  matchGrid:      { flexDirection: "row", flexWrap: "wrap", gap: 10, marginBottom: 12 },
+  matchGrid:      { flexDirection: "row", flexWrap: "wrap", gap: 10 },
   matchBtn:       { width: "47%", backgroundColor: CARD_WHITE, borderRadius: 14, padding: 20, borderWidth: 1.5, borderColor: "rgba(155,104,70,0.22)", alignItems: "center" },
   matchBtnText:   { fontSize: 26, fontWeight: "800", color: DEEP_NAVY },
 
@@ -562,11 +718,12 @@ const s = StyleSheet.create({
   btnWrong:       { backgroundColor: "#FF6B6B", borderColor: "#FF6B6B" },
   btnTextWhite:   { color: CARD_WHITE },
 
-  feedbackBox:    { borderRadius: 12, padding: 14, marginBottom: 12 },
+  feedbackBox:    { borderRadius: 12, padding: 14 },
   feedbackText:   { fontSize: 14, fontWeight: "700", color: DEEP_NAVY },
   nextBtn:        { backgroundColor: WARM_ORANGE, padding: 16, borderRadius: 14, alignItems: "center" },
   nextBtnText:    { color: CARD_WHITE, fontWeight: "800", fontSize: 15 },
 
+  // ── Results step ──────────────────────────────────────────────────────────
   testCompleteTitle: { fontSize: 26, fontWeight: "900", color: DEEP_NAVY, textAlign: "center" },
   resultCard2:       { backgroundColor: CARD_WHITE, borderRadius: 24, padding: 24, marginBottom: 16, borderWidth: 2, width: "100%" },
   resultCard2Top:    { flexDirection: "row", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 12 },
@@ -588,6 +745,7 @@ const s = StyleSheet.create({
   showLevelsBtn:     { borderWidth: 1.5, borderColor: WARM_BROWN, borderRadius: 14, paddingVertical: 13, paddingHorizontal: 24, marginBottom: 12, width: "100%", alignItems: "center" },
   showLevelsBtnText: { fontSize: 15, fontWeight: "700", color: WARM_BROWN },
 
+  // ── Levels modal ──────────────────────────────────────────────────────────
   levelsOverlay:      { flex: 1, backgroundColor: "rgba(0,0,0,0.55)", justifyContent: "flex-end" },
   levelsSheet:        { backgroundColor: CARD_WHITE, borderTopLeftRadius: 28, borderTopRightRadius: 28, paddingHorizontal: 20, paddingTop: 16, maxHeight: "80%" },
   levelsSheetHeader:  { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 20 },

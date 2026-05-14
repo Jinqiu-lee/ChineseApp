@@ -73,7 +73,7 @@ function buildDisplayPoints(usageParts) {
 
 
 export default function GrammarSection({ grammarPoints }) {
-  const [expandedPoints, setExpandedPoints] = useState([0]);
+  const [expandedPoints, setExpandedPoints] = useState([]);
 
   const togglePoint = (index) => {
     setExpandedPoints(prev =>

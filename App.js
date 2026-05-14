@@ -388,6 +388,21 @@ export default function App() {
     setCurrentScreen('onboarding');
   };
 
+  const handleResetProgress = () => {
+    setUserData(null);
+    setLevelState(DEFAULT_LEVEL_STATE);
+    setLessonProgress({});
+    setStageProgress({});
+    setRoundScores({});
+    setPinyinQuizPassed([]);
+    setPinyinStageProgress({});
+    setPinyinLearnDone({});
+    setQuizPassedLessons({});
+    setSectionProgress({});
+    Object.values(STORAGE_KEYS).forEach(k => AsyncStorage.removeItem(k).catch(() => {}));
+    setCurrentScreen('onboarding');
+  };
+
   const handlePlayGame = (gameType) => {
     alert(`🎮 ${gameType.toUpperCase()}\n\nGame coming soon!`);
   };
@@ -810,6 +825,7 @@ export default function App() {
           onLevelQuizPress={handleLevelQuizPress}
           onChangeLevelConfirm={handleChangeLevelConfirm}
           onRetakeTest={handleRetakeTest}
+          onResetProgress={handleResetProgress}
           onFoundationsPinyinPress={() => handleOpenFoundationsPinyin('home')}
         />
       );
