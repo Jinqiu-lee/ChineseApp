@@ -181,7 +181,7 @@ export const BASIC_QUESTIONS_YOUNG = [
     // ── Pinyin question 1 ──
     {
       id: "a5p", type: "pinyin",
-      question: "Which pinyin is correct for 你?",
+      question: "Which pinyin is correct for 你(you)?",
       chineseWord: "你",
       options: ["wǒ", "nǐ", "tā", "nín"],
       correct: "nǐ",
@@ -229,14 +229,14 @@ export const BASIC_QUESTIONS_YOUNG = [
     // ── Pinyin question 2 ──
     {
       id: "a9p", type: "pinyin",
-      question: "Which pinyin is correct for 谢谢?",
+      question: "Which pinyin is correct for 谢谢(thanks)?",
       chineseWord: "谢谢",
       options: ["xièxie", "nǐhǎo", "zàijiàn", "duìbuqǐ"],
       correct: "xièxie",
     },
     {
       id: "a6p", type: "pinyin",
-      question: "Which pinyin is correct for 好?",
+      question: "Which pinyin is correct for 好(good)?",
       chineseWord: "好",
       options: ["hǎo", "hǎi", "gǎo", "hāo"],
       correct: "hǎo",
@@ -307,7 +307,7 @@ export const BASIC_QUESTIONS_YOUNG = [
     },
     {
       id: "a14p", type: "pinyin",
-      question: "Which pinyin is correct for 吃?",
+      question: "Which pinyin is correct for 吃(eat)?",
       chineseWord: "吃",
       options: ["hē", "chī", "kàn", "zuò"],
       correct: "chī",
@@ -347,9 +347,9 @@ export const BASIC_QUESTIONS_YOUNG = [
     {
       id: "adv5", type: "mc",
       question: "Complete: 他比我______。(He is taller than me)",
-      options: ["高一点", "更高", "高得多", "All of the above"],
+      options: ["高一些", "更高", "高", "All of the above"],
       correct: "All of the above",
-      optionPinyin: { "高一点": "gāo yīdiǎn", "更高": "gèng gāo", "高得多": "gāo de duō" },
+      optionPinyin: { "高一些": "gāo yìxiē", "更高": "gèng gāo", "高得多": "gāo" },
     },
     {
       id: "adv6", type: "mc",
@@ -368,11 +368,11 @@ export const BASIC_QUESTIONS_YOUNG = [
     {
       id: "adv8", type: "mc",
       question: "Which sentence uses 把 correctly?",
-      options: ["我把吃了饭", "他把书看了", "我把书放好了", "她把去了学校"],
+      options: ["我把吃了饭", "他把我小狗了", "我把书放好了", "她把去了学校"],
       correct: "我把书放好了",
       optionPinyin: {
         "我把吃了饭": "wǒ bǎ chī le fàn",
-        "他把书看了": "tā bǎ shū kàn le",
+        "他把书看了": "tā bǎ xiǎogǒu kàn le",
         "我把书放好了": "wǒ bǎ shū fàng hǎo le",
         "她把去了学校": "tā bǎ qù le xuéxiào",
       },
@@ -407,7 +407,7 @@ export const BASIC_QUESTIONS_YOUNG = [
     },
     {
       id: "adv13", type: "match",
-      question: "Tap the correct character for 'Experience'",
+      question: "Tap the correct character for 'Experience/Go through'",
       options: ["经验", "经历", "体验", "感受"],
       correct: "经历",
       hint: "jīnglì",
@@ -434,7 +434,7 @@ export const BASIC_QUESTIONS_YOUNG = [
 
     if (basicPct < 0.5) {
       return {
-        level: "Beginner", levelChinese: "初级", badge: "🌱", color: "#00D2D3",
+        level: "Beginner", levelChinese: "初级", badge: "🌻", color: "#00D2D3",
         description: "You're just getting started — great!",
         recommendedLevel: "hsk1",
         recommendedLabel: "Level 1 – Beginner",
@@ -444,7 +444,7 @@ export const BASIC_QUESTIONS_YOUNG = [
     }
     if (basicPct < 0.75) {
       return {
-        level: "Beginner", levelChinese: "初级", badge: "🌱", color: "#00D2D3",
+        level: "Beginner", levelChinese: "初级", badge: "🌻", color: "#00D2D3",
         description: "You know some basics — let's build on that!",
         recommendedLevel: "hsk1",
         recommendedLabel: "Level 1 – Beginner",
@@ -467,7 +467,7 @@ export const BASIC_QUESTIONS_YOUNG = [
       const advPct = advScore / advTotal;
       if (advPct <= 0.8) {
         return {
-          level: "Explorer", levelChinese: "基础", badge: "🚶", color: "#54A0FF",
+          level: "Explorer", levelChinese: "基础", badge: "☕", color: "#54A0FF",
           description: "Solid foundations — time for a challenge!",
           recommendedLevel: "hsk2",
           recommendedLabel: "Level 2 – Explorer",
@@ -476,7 +476,7 @@ export const BASIC_QUESTIONS_YOUNG = [
         };
       }
       return {
-        level: "Conversation Builder", levelChinese: "中级", badge: "🗣", color: "#1DD1A1",
+        level: "Conversation Builder", levelChinese: "中级", badge: "🌾", color: "#1DD1A1",
         description: "Impressive! You have strong Chinese skills.",
         recommendedLevel: "hsk3",
         recommendedLabel: "Level 3 – Conversation Builder",
