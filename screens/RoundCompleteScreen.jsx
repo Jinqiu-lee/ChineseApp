@@ -55,7 +55,7 @@ export default function RoundCompleteScreen({
         {/* Header */}
         <View style={styles.headerCard}>
           <Text style={styles.emoji}>{ROUND_EMOJIS[currentRound]}</Text>
-          <Text style={[styles.title, { color: T.onBg }]}>{ROUND_LABELS[currentRound]} Complete!</Text>
+          <Text style={[styles.title, { color: T.onCard }]}>{ROUND_LABELS[currentRound]} Complete!</Text>
           <Text style={styles.stars}>{'⭐'.repeat(stars)}</Text>
         </View>
 
@@ -69,7 +69,7 @@ export default function RoundCompleteScreen({
         {/* Combined accuracy row — only shown after round 2 */}
         {currentRound === 2 && (
           <View style={[styles.combinedRow, { borderColor: T.border }]}>
-            <Text style={[styles.combinedLabel, { color: T.onBgMuted }]}>Rounds 1 + 2 combined:</Text>
+            <Text style={[styles.combinedLabel, { color: T.onCardMuted }]}>Rounds 1 + 2 combined:</Text>
             <Text style={[styles.combinedPct, { color: highAccuracy ? T.success : T.gold }]}>
               {combinedAccuracy}%
             </Text>
@@ -79,17 +79,17 @@ export default function RoundCompleteScreen({
         {/* Message */}
         {currentRound === 3 && (
           <View style={styles.messageCard}>
-            <Text style={[styles.message, { color: T.onBg }]}>Outstanding! You've mastered all 3 rounds! 💪</Text>
+            <Text style={[styles.message, { color: T.onCard }]}>Outstanding! You've mastered all 3 rounds! 💪</Text>
           </View>
         )}
         {currentRound === 2 && highAccuracy && (
           <View style={styles.messageCard}>
-            <Text style={[styles.message, { color: T.onBg }]}>Excellent! 🎉 Round 3 is now unlocked — keep going to master this lesson, or take the quiz if you feel ready.</Text>
+            <Text style={[styles.message, { color: T.onCard }]}>Excellent! 🎉 Round 3 is now unlocked — keep going to master this lesson, or take the quiz if you feel ready.</Text>
           </View>
         )}
         {currentRound === 2 && !highAccuracy && (
           <View style={styles.messageCard}>
-            <Text style={[styles.message, { color: T.onBg }]}>Great effort! Round 3 is unlocked — one more round to fully master this lesson.</Text>
+            <Text style={[styles.message, { color: T.onCard }]}>Great effort! Round 3 is unlocked — one more round to fully master this lesson.</Text>
           </View>
         )}
 
