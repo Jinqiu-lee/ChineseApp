@@ -342,7 +342,7 @@ export default function App() {
   };
 
   const handleLessonPress = async (levelId, lessonId) => {
-    if (lessonId > 5) {
+    if (lessonId > 3) {
       const subscribed = await checkSubscriptionStatus();
       if (!subscribed) {
         setCurrentLessonLevelId(levelId);
