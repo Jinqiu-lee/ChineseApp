@@ -407,7 +407,7 @@ export const BASIC_QUESTIONS_YOUNG = [
         message: "We recommend starting with Level 1 from Lesson 1.",
       };
     }
-    if (basicPct < 0.9) {
+    if (basicPct < 0.75) {
       return {
         level: "Beginner", levelChinese: "初级", badge: "🌱", color: "#00D2D3",
         description: "You know some basics — let's build on that!",
@@ -415,6 +415,17 @@ export const BASIC_QUESTIONS_YOUNG = [
         recommendedLabel: "Level 1 – Beginner",
         startFrom: "middle",
         message: "You know some basics! Start Level 1 from Lesson 3.",
+        unlockNext: true,
+      };
+    }
+    if (basicPct < 0.9) {
+      return {
+        level: "Explorer", levelChinese: "基础", badge: "☕", color: "#E8522A",
+        description: "Almost ready for the next level — great effort!",
+        recommendedLevel: "hsk2",
+        recommendedLabel: "Level 2 – Explorer",
+        startFrom: "beginning",
+        message: "Strong basics! We recommend starting Level 2 – Explorer.",
       };
     }
     if (advScore !== null) {

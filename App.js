@@ -325,9 +325,10 @@ export default function App() {
   const handleOnboardingComplete = (data) => {
     const startLevel = data.result.recommendedLevel || 'hsk1';
     const startIdx = Math.max(ALL_LEVEL_IDS.indexOf(startLevel), 0);
+    const extraIdx = data.result.unlockNext ? startIdx + 1 : startIdx;
     setUserData(data);
     setLevelState({
-      unlockedLevels: ALL_LEVEL_IDS.slice(0, startIdx + 1),
+      unlockedLevels: ALL_LEVEL_IDS.slice(0, Math.min(extraIdx + 1, ALL_LEVEL_IDS.length)),
       completedLevels: [],
       levelSetBy: data.result.source || 'manual',
       levelChangedUsed: false,

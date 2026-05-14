@@ -491,6 +491,15 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
                 </View>
               </View>
 
+              {/* HSK2 unlock hint for 50–74% scorers */}
+              {result.unlockNext && (
+                <View style={s.unlockHint}>
+                  <Text style={s.unlockHintText}>
+                    ✦ HSK 2 is also unlocked — you can jump ahead anytime
+                  </Text>
+                </View>
+              )}
+
               {/* You will learn */}
               <View style={s.willLearnBox}>
                 <Text style={s.willLearnTitle}>You will learn:</Text>
@@ -744,6 +753,8 @@ const s = StyleSheet.create({
 
   showLevelsBtn:     { borderWidth: 1.5, borderColor: WARM_BROWN, borderRadius: 14, paddingVertical: 13, paddingHorizontal: 24, marginBottom: 12, width: "100%", alignItems: "center" },
   showLevelsBtnText: { fontSize: 15, fontWeight: "700", color: WARM_BROWN },
+  unlockHint: { backgroundColor: "rgba(155,104,70,0.10)", borderRadius: 12, paddingVertical: 10, paddingHorizontal: 16, marginBottom: 12, width: "100%", borderWidth: 1, borderColor: "rgba(155,104,70,0.25)" },
+  unlockHintText: { fontSize: 13, color: WARM_BROWN, fontStyle: "italic", textAlign: "center" },
 
   // ── Levels modal ──────────────────────────────────────────────────────────
   levelsOverlay:      { flex: 1, backgroundColor: "rgba(0,0,0,0.55)", justifyContent: "flex-end" },
