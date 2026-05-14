@@ -8,6 +8,7 @@ const API_KEY = 'YOUR_REVENUECAT_API_KEY'; // Replace before launch
 let Purchases = null;
 
 async function getSDK() {
+  if (MVP_FREE_MODE) return null;
   if (Purchases) return Purchases;
   try {
     const mod = await import('react-native-purchases');
