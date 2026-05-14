@@ -1080,7 +1080,7 @@ export default function App() {
         }}
         onBreak={() => {
           setRewardModal(null);
-          setCurrentScreen('home');
+          setCurrentScreen('lessonStages');
         }}
       />
     </View>
