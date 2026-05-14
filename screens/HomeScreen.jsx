@@ -193,6 +193,7 @@ export default function HomeScreen({
   onChangeLevelConfirm,
   onRetakeTest,
   onResetProgress,
+  onAchievementsPress,
   onFoundationsPinyinPress,
 }) {
   const { xp, streak } = useProgress();
@@ -707,6 +708,15 @@ export default function HomeScreen({
             <View style={styles.menuSectionHeader}>
               <Text style={styles.menuSectionTitle}>📖 Learning Tools</Text>
             </View>
+
+            <TouchableOpacity style={styles.menuItem} onPress={() => { setShowMenu(false); onAchievementsPress?.(); }}>
+              <Text style={styles.menuItemEmoji}>🏆</Text>
+              <View style={styles.menuItemTextContainer}>
+                <Text style={styles.menuItemText}>Achievements</Text>
+                <Text style={styles.menuItemSubtext}>Badges & XP progress</Text>
+              </View>
+              <Text style={styles.menuItemArrow}>→</Text>
+            </TouchableOpacity>
 
             <TouchableOpacity style={[styles.menuItem, isHsk3Plus && styles.menuItemDimmed]} onPress={handlePinyinSection}>
               <Text style={styles.menuItemEmoji}>🔊</Text>

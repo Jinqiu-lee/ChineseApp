@@ -167,7 +167,7 @@ export default function useProgress() {
       if (hour >= 21)          add("night_owl");
       if (hour < 8)            add("early_bird");
       if (scorePercent >= 1.0) add("perfectionist");
-      const LC = { yct1:11, yct2:3, yct3:2, yct4:2, hsk1:3, hsk2:2, hsk3:2 };
+      const LC = { yct1:11, yct2:3, yct3:2, yct4:2, hsk1:15, hsk2:15, hsk3:15, hsk4:15, hsk5:15, hsk6:15 };
       if ((LC[levelId]||0) > 0 && lessonsCompleted.length >= LC[levelId]) add("champion");
       return {
         ...prev, totalXP: newTotalXP, streak: newStreak, lastPlayedDate: today,

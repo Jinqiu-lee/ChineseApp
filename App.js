@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { View, ActivityIndicator, StyleSheet, Alert } from 'react-native';
+import * as SplashScreen from 'expo-splash-screen';
+
+SplashScreen.preventAutoHideAsync();
 
 // ── Developer flag ───────────────────────────────────────────
 // TODO: set to false before release
@@ -23,6 +26,9 @@ import PinyinStageScreen from './screens/PinyinStageScreen';
 import PinyinLessonQuizScreen from './screens/PinyinLessonQuizScreen';
 import PinyinFinalQuizScreen from './screens/PinyinFinalQuizScreen';
 import UnlockModal from './components/UnlockModal';
+import RewardModal from './components/RewardModal';
+import useProgress from './hooks/useProgress';
+import BadgesScreen from './screens/BadgesScreen';
 
 // Pinyin lesson data
 import pinyinLesson1  from './data/pinyin/pinyin_lesson_1.json';
@@ -194,6 +200,9 @@ export default function App() {
   const [lessonInitialTab, setLessonInitialTab] = useState('learning');
   const [lessonInitialOpenSection, setLessonInitialOpenSection] = useState(null);
   const [unlockModal, setUnlockModal] = useState(null); // null | { title, message, primaryLabel, secondaryLabel, onPrimary, onSecondary }
+  const [rewardModal, setRewardModal] = useState(null); // null | { xpEarned, scorePercent, stageIndex }
+  const { awardXP, xp, streak, progress: xpProgress } = useProgress();
+  const lastStageScoreRef = useRef({ score: 0, total: 0 });
   const shownPopups = useRef(new Set()); // tracks which unlock popups have fired this session
 
   // ── Load saved data on startup ──────────────────────────────
@@ -233,6 +242,7 @@ export default function App() {
         console.warn('Failed to restore saved data:', e);
       } finally {
         setIsLoading(false);
+        SplashScreen.hideAsync();
       }
     };
     load();
@@ -352,6 +362,7 @@ export default function App() {
   const handleLessonComplete = (lessonId) => {
     const levelId = currentLessonLevelId;
     if (!levelId) { handleBackToHome(); return; }
+    awardXP(50, levelId, lessonId, 1);
     setLessonProgress(prev => {
       const existing = prev[levelId] || [];
       if (existing.includes(lessonId)) return prev;
@@ -580,6 +591,7 @@ export default function App() {
   // Called automatically when the user finishes the last exercise.
   const handleStageComplete = (stageIndex, score = 0, total = 0) => {
     const key = `${currentLessonLevelId}_${currentLessonId}_r${currentRound}`;
+    lastStageScoreRef.current = { score, total };
 
     setRoundScores(prev => {
       const existing = prev[key] || { score: 0, total: 0 };
@@ -826,6 +838,7 @@ export default function App() {
           onChangeLevelConfirm={handleChangeLevelConfirm}
           onRetakeTest={handleRetakeTest}
           onResetProgress={handleResetProgress}
+          onAchievementsPress={() => setCurrentScreen('badges')}
           onFoundationsPinyinPress={() => handleOpenFoundationsPinyin('home')}
         />
       );
@@ -878,7 +891,12 @@ export default function App() {
           stageIndex={currentStageIndex}
           roundIndex={currentRound - 1}
           onComplete={handleStageComplete}
-          onNext={handleStageContinue}
+          onNext={(stageIndex) => {
+            const { score, total } = lastStageScoreRef.current;
+            const scorePercent = total > 0 ? score / total : 0;
+            awardXP(20, currentLessonLevelId, currentLessonId, scorePercent);
+            setRewardModal({ xpEarned: 20, scorePercent, stageIndex });
+          }}
           onBack={() => goToLesson('practice')}
         />
       );
@@ -998,6 +1016,10 @@ export default function App() {
     return null;
   };
 
+  if (currentScreen === 'badges') {
+    return <BadgesScreen onBack={() => setCurrentScreen('home')} />;
+  }
+
   return (
     <View style={{ flex: 1 }}>
       {renderCurrentScreen()}
@@ -1009,6 +1031,19 @@ export default function App() {
         secondaryLabel={unlockModal?.secondaryLabel}
         onPrimary={unlockModal?.onPrimary}
         onSecondary={unlockModal?.onSecondary}
+      />
+      <RewardModal
+        visible={rewardModal !== null}
+        xpEarned={rewardModal?.xpEarned || 0}
+        scorePercent={rewardModal?.scorePercent || 0}
+        totalXP={xp}
+        newBadges={xpProgress._newBadges || []}
+        streak={streak}
+        onClose={() => {
+          const stageIndex = rewardModal?.stageIndex;
+          setRewardModal(null);
+          handleStageContinue(stageIndex);
+        }}
       />
     </View>
   );
