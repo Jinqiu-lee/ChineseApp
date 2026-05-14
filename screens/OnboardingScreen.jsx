@@ -102,9 +102,10 @@ const STEP_TEST   = "test";
 const STEP_RESULTS= "results";
 
 const TYPE_LABELS = {
-  mc:     { label: "💬 Multiple Choice", bg: "#e8f4ff" },
-  match:  { label: "🔤 Character Match",  bg: "#e8faf4" },
-  pinyin: { label: "🔈 Pinyin",           bg: "#f0eeff" },
+  mc:       { label: "💬 Multiple Choice", bg: "#e8f4ff" },
+  match:    { label: "🔤 Character Match",  bg: "#e8faf4" },
+  pinyin:   { label: "🔈 Pinyin",           bg: "#f0eeff" },
+  image_mc: { label: "🖼️ Picture Match",   bg: "#fff4e6" },
 };
 
 export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
@@ -358,6 +359,9 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
                 {q.type === "pinyin" && (
                   <Text style={s.pinyinCharDisplay}>{q.chineseWord}</Text>
                 )}
+                {q.type === "image_mc" && (
+                  <Text style={s.emojiDisplay}>{q.emoji}</Text>
+                )}
                 {q.hint && q.type === "match" && (
                   <Text style={s.questionHint}>Pinyin: {q.hint}</Text>
                 )}
@@ -415,6 +419,26 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
                     if (answered) {
                       if (isCorrectAns) { btnStyle = [s.mcBtn, s.btnCorrect]; textStyle = [...textStyle, s.btnTextWhite]; }
                       else if (isSelected) { btnStyle = [s.mcBtn, s.btnWrong]; textStyle = [...textStyle, s.btnTextWhite]; }
+                    } else if (isSelected) { btnStyle = [s.mcBtn, s.btnSelected]; }
+                    return (
+                      <TouchableOpacity key={opt} style={btnStyle} onPress={() => handleAnswer(opt)} disabled={answered} activeOpacity={0.75}>
+                        <Text style={textStyle}>{opt}</Text>
+                      </TouchableOpacity>
+                    );
+                  })}
+                </View>
+              )}
+
+              {q.type === "image_mc" && (
+                <View style={s.mcList}>
+                  {q.options.map((opt) => {
+                    const isCorrectAns = opt === q.correct;
+                    const isSelected = selected === opt;
+                    let btnStyle = s.mcBtn;
+                    let textStyle = s.imageMcBtnText;
+                    if (answered) {
+                      if (isCorrectAns) { btnStyle = [s.mcBtn, s.btnCorrect]; textStyle = [s.imageMcBtnText, s.btnTextWhite]; }
+                      else if (isSelected) { btnStyle = [s.mcBtn, s.btnWrong]; textStyle = [s.imageMcBtnText, s.btnTextWhite]; }
                     } else if (isSelected) { btnStyle = [s.mcBtn, s.btnSelected]; }
                     return (
                       <TouchableOpacity key={opt} style={btnStyle} onPress={() => handleAnswer(opt)} disabled={answered} activeOpacity={0.75}>
@@ -515,7 +539,7 @@ export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
               {advScore !== null && (
                 <View style={s.scoreBreakdown}>
                   <Text style={s.scoreBreakdownTitle}>Your Scores</Text>
-                  <Text style={s.scoreBreakdownLine}>Basic: {basicScore}/15 ({Math.round(basicScore / 15 * 100)}%)</Text>
+                  <Text style={s.scoreBreakdownLine}>Basic: {basicScore}/{BASIC_QUESTIONS_ADULT.length} ({Math.round(basicScore / BASIC_QUESTIONS_ADULT.length * 100)}%)</Text>
                   <Text style={s.scoreBreakdownLine}>Advanced: {advScore}/{ADVANCED_QUESTIONS.length} ({Math.round(advScore / ADVANCED_QUESTIONS.length * 100)}%)</Text>
                 </View>
               )}
@@ -711,6 +735,8 @@ const s = StyleSheet.create({
   questionPinyin: { fontSize: 14, color: WARM_BROWN, marginTop: 8, fontStyle: "italic" },
   questionHint:   { fontSize: 13, color: WARM_BROWN, marginTop: 8 },
   pinyinCharDisplay: { fontSize: 64, color: DEEP_NAVY, fontWeight: "800", textAlign: "center", marginTop: 12 },
+  emojiDisplay:      { fontSize: 80, textAlign: "center", marginTop: 8 },
+  imageMcBtnText:    { fontSize: 18, color: DEEP_NAVY, fontWeight: "700", textAlign: "center" },
 
   mcList:         { gap: 10 },
   mcBtn:          { backgroundColor: CARD_WHITE, borderRadius: 14, padding: 16, borderWidth: 1.5, borderColor: "rgba(155,104,70,0.22)" },

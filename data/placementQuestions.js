@@ -187,6 +187,13 @@ export const BASIC_QUESTIONS_YOUNG = [
       correct: "nǐ",
     },
     {
+      id: "img1", type: "image_mc",
+      question: "What animal is this?",
+      emoji: "🐱",
+      options: ["猫 (māo)", "狗 (gǒu)", "鸟 (niǎo)", "鱼 (yú)"],
+      correct: "猫 (māo)",
+    },
+    {
       id: "a6", type: "match",
       question: "Tap the character for 'Today'",
       options: ["明天", "昨天", "今天", "每天"],
@@ -226,6 +233,20 @@ export const BASIC_QUESTIONS_YOUNG = [
       chineseWord: "谢谢",
       options: ["xièxie", "nǐhǎo", "zàijiàn", "duìbuqǐ"],
       correct: "xièxie",
+    },
+    {
+      id: "a6p", type: "pinyin",
+      question: "Which pinyin is correct for 好?",
+      chineseWord: "好",
+      options: ["hǎo", "hǎi", "gǎo", "hāo"],
+      correct: "hǎo",
+    },
+    {
+      id: "img2", type: "image_mc",
+      question: "What fruit is this?",
+      emoji: "🍎",
+      options: ["香蕉 (xiāngjiāo)", "苹果 (píngguǒ)", "橙子 (chéngzi)", "葡萄 (pútao)"],
+      correct: "苹果 (píngguǒ)",
     },
     {
       id: "a10", type: "mc",
@@ -276,6 +297,20 @@ export const BASIC_QUESTIONS_YOUNG = [
       options: ["火", "水", "山", "木"],
       correct: "水",
       hint: "shuǐ",
+    },
+    {
+      id: "img3", type: "image_mc",
+      question: "What is this place?",
+      emoji: "🏫",
+      options: ["医院 (yīyuàn)", "学校 (xuéxiào)", "商店 (shāngdiàn)", "餐厅 (cāntīng)"],
+      correct: "学校 (xuéxiào)",
+    },
+    {
+      id: "a14p", type: "pinyin",
+      question: "Which pinyin is correct for 吃?",
+      chineseWord: "吃",
+      options: ["hē", "chī", "kàn", "zuò"],
+      correct: "chī",
     },
   ];
   
