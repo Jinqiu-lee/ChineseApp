@@ -221,7 +221,7 @@
         3,
         4
       ],
-      "english": "How many?",
+      "english": "How many(items)?",
       "part_of_speech": "phrase"
     },
     {
@@ -248,6 +248,29 @@
     },
     {
       "id": "hsk1_l2_p05",
+      "chinese": "五个",
+      "pinyin": "wǔ gè",
+      "tones": [
+        3,
+        4
+      ],
+      "english": "Five (things)",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l2_p06",
+      "chinese": "几个人",
+      "pinyin": "jǐ gè rén",
+      "tones": [
+        3,
+        4,
+        2
+      ],
+      "english": "How many people?",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l2_p07",
       "chinese": "三个人",
       "pinyin": "sān gè rén",
       "tones": [
@@ -259,52 +282,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l2_p06",
-      "chinese": "十岁",
-      "pinyin": "shí suì",
-      "tones": [
-        2,
-        4
-      ],
-      "english": "Ten years old",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l2_p07",
-      "chinese": "一二三",
-      "pinyin": "yí èr sān",
-      "tones": [
-        1,
-        2,
-        1
-      ],
-      "english": "One, two, three",
-      "part_of_speech": "phrase"
-    },
-    {
       "id": "hsk1_l2_p08",
-      "chinese": "五个",
-      "pinyin": "wǔ gè",
-      "tones": [
-        3,
-        4
-      ],
-      "english": "Five (things)",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l2_p09",
-      "chinese": "零岁",
-      "pinyin": "líng suì",
-      "tones": [
-        2,
-        4
-      ],
-      "english": "Zero years old",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l2_p10",
       "chinese": "多少岁",
       "pinyin": "duō shǎo suì",
       "tones": [
@@ -316,27 +294,14 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l2_p11",
-      "chinese": "大一个",
-      "pinyin": "dà yí gè",
+      "id": "hsk1_l2_p09",
+      "chinese": "十岁",
+      "pinyin": "shí suì",
       "tones": [
-        4,
-        1,
+        2,
         4
       ],
-      "english": "Bigger by one",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l2_p12",
-      "chinese": "几个人",
-      "pinyin": "jǐ gè rén",
-      "tones": [
-        3,
-        4,
-        2
-      ],
-      "english": "How many people?",
+      "english": "Ten years old",
       "part_of_speech": "phrase"
     }
   ],
@@ -374,9 +339,19 @@
           "english": "15"
         },
         {
+          "chinese": "十六",
+          "pinyin": "shí liù",
+          "english": "16"
+        },
+        {
           "chinese": "二十八",
           "pinyin": "èr shí bā",
           "english": "28"
+        },
+        {
+          "chinese": "七十五",
+          "pinyin": "qī shí wǔ",
+          "english": "75"
         }
       ],
       "exercises": [
@@ -418,7 +393,7 @@
     {
       "number": 2,
       "title": "Measure word 个 (gè)",
-      "explanation": "个(gè) is used between a number and a noun. Formula: Number + 个(gè) + Noun.",
+      "explanation": "个(gè) is a measure word(quantifier) used between a number and a noun. Formula: Number + 个(gè) + Noun.",
       "examples": [
         {
           "chinese": "一个人",
@@ -429,6 +404,11 @@
           "chinese": "三个朋友",
           "pinyin": "sān gè péng yǒu",
           "english": "Three friends"
+        },
+        {
+          "chinese": "几个老师？",
+          "pinyin": "Jǐ gè lǎo shī?",
+          "english": "How many teachers ?"
         }
       ],
       "exercises": [
@@ -470,7 +450,7 @@
     {
       "number": 3,
       "title": "Asking age with 多大 (duō dà)",
-      "explanation": "多大(duō dà) means 'how big' but is used to ask age. Answer with number + 岁(suì).",
+      "explanation": "多大(duō dà) means 'how big/ how old' used to ask size or age (how old), here is used to ask age. Answer with number + 岁(suì).",
       "examples": [
         {
           "chinese": "你多大？我十八岁。",

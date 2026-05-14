@@ -204,18 +204,6 @@
     },
     {
       "id": "hsk1_l7_p05",
-      "chinese": "在医院",
-      "pinyin": "zài yī yuàn",
-      "tones": [
-        4,
-        1,
-        4
-      ],
-      "english": "At the hospital",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l7_p06",
       "chinese": "在商店",
       "pinyin": "zài shāng diàn",
       "tones": [
@@ -227,33 +215,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l7_p07",
-      "chinese": "学校在哪儿",
-      "pinyin": "xué xiào zài nǎr",
-      "tones": [
-        2,
-        4,
-        4,
-        3
-      ],
-      "english": "Where is the school?",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l7_p08",
-      "chinese": "医院在哪儿",
-      "pinyin": "yī yuàn zài nǎr",
-      "tones": [
-        1,
-        4,
-        4,
-        3
-      ],
-      "english": "Where is the hospital?",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l7_p09",
+      "id": "hsk1_l7_p06",
       "chinese": "在前面",
       "pinyin": "zài qián miàn",
       "tones": [
@@ -265,7 +227,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l7_p10",
+      "id": "hsk1_l7_p7",
       "chinese": "在后面",
       "pinyin": "zài hòu miàn",
       "tones": [
@@ -277,7 +239,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l7_p11",
+      "id": "hsk1_l7_p8",
       "chinese": "在里面",
       "pinyin": "zài lǐ miàn",
       "tones": [
@@ -289,7 +251,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l7_p12",
+      "id": "hsk1_l7_p9",
       "chinese": "在上面",
       "pinyin": "zài shàng miàn",
       "tones": [
@@ -298,6 +260,18 @@
         4
       ],
       "english": "On top / Above",
+      "part_of_speech": "phrase"
+    },
+    {
+      "id": "hsk1_l7_p10",
+      "chinese": "不在家",
+      "pinyin": "bú zài jiā",
+      "tones": [
+        2,
+        4,
+        1
+      ],
+      "english": "Not at home",
       "part_of_speech": "phrase"
     }
   ],
@@ -348,6 +322,11 @@
           "chinese": "猫在桌子下。",
           "pinyin": "Māo zài zhuō zi xià.",
           "english": "The cat is under the table."
+        },
+        {
+          "chinese": "她不在这儿！",
+          "pinyin": "Tā bú zài zhèr.",
+          "english": "She is not here."
         }
       ],
       "exercises": [
@@ -359,6 +338,11 @@
         {
           "question": "Fill in: 他___医院。(He is at the hospital)",
           "answer": "在",
+          "type": "fill_in_blank"
+        },
+        {
+          "question": "Fill in: 他___家。(He is not at home)",
+          "answer": "不在",
           "type": "fill_in_blank"
         },
         {

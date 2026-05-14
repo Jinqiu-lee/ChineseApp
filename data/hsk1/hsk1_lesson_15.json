@@ -247,40 +247,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l15_p08",
-      "chinese": "买票",
-      "pinyin": "mǎi piào",
-      "tones": [
-        3,
-        4
-      ],
-      "english": "Buy a ticket",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l15_p09",
-      "chinese": "很远",
-      "pinyin": "hěn yuǎn",
-      "tones": [
-        3,
-        3
-      ],
-      "english": "Very far",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l15_p10",
-      "chinese": "不远",
-      "pinyin": "bù yuǎn",
-      "tones": [
-        4,
-        3
-      ],
-      "english": "Not far",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l15_p11",
+      "id": "hsk1_l15_p8",
       "chinese": "骑车去",
       "pinyin": "qí chē qù",
       "tones": [
@@ -292,18 +259,14 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l15_p12",
-      "chinese": "是坐飞机来的",
-      "pinyin": "shì zuò fēijī lái de",
+      "id": "hsk1_l15_p09",
+      "chinese": "买票",
+      "pinyin": "mǎi piào",
       "tones": [
-        4,
-        4,
-        1,
-        1,
-        2,
-        0
+        3,
+        4
       ],
-      "english": "Came by airplane (emphasis pattern)",
+      "english": "Buy a ticket",
       "part_of_speech": "phrase"
     }
   ],
@@ -537,6 +500,11 @@
           "chinese": "他是昨天来的。",
           "pinyin": "Tā shì zuótiān lái de.",
           "english": "He came (specifically) yesterday."
+        },
+        {
+          "chinese": "你是走路去的吗？。",
+          "pinyin": "Nǐ shì zǒulù qù de ma?",
+          "english": "Did you go by foot?"
         }
       ],
       "exercises": [
@@ -584,7 +552,7 @@
     {
       "number": 3,
       "title": "Distance: 远 (yuǎn) and 近 (jìn)",
-      "explanation": "远(yuǎn) = far; 近(jìn) = near/close. A-not-A question pattern: 远(yuǎn)不远(bù yuǎn)? (Is it far?). Answers: 很远(very far), 不远(not far), 有一点远(a bit far).",
+      "explanation": "远(yuǎn) = far; 近(jìn) = near/close. A-not-A question pattern: 远(yuǎn)不远(bù yuǎn)? (Is it far?).\n Answers: 很远(very far), 不远(not far), 有一点远(a bit far).",
       "examples": [
         {
           "chinese": "北京远不远？",

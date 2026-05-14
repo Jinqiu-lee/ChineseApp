@@ -164,18 +164,6 @@
     },
     {
       "id": "hsk1_l9_p01",
-      "chinese": "认识你",
-      "pinyin": "rènshi nǐ",
-      "tones": [
-        4,
-        0,
-        3
-      ],
-      "english": "Meet you / Know you",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l9_p02",
       "chinese": "很高兴",
       "pinyin": "hěn gāoxìng",
       "tones": [
@@ -187,7 +175,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l9_p03",
+      "id": "hsk1_l9_p02",
       "chinese": "认识你很高兴",
       "pinyin": "rènshi nǐ hěn gāoxìng",
       "tones": [
@@ -202,21 +190,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l9_p04",
-      "chinese": "我们是朋友",
-      "pinyin": "wǒmen shì péngyou",
-      "tones": [
-        3,
-        0,
-        4,
-        2,
-        0
-      ],
-      "english": "We are friends",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l9_p05",
+      "id": "hsk1_l9_p03",
       "chinese": "会说汉语",
       "pinyin": "huì shuō Hànyǔ",
       "tones": [
@@ -229,7 +203,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l9_p06",
+      "id": "hsk1_l9_p04",
       "chinese": "学汉语",
       "pinyin": "xué Hànyǔ",
       "tones": [
@@ -241,21 +215,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l9_p07",
-      "chinese": "我们是同学",
-      "pinyin": "wǒmen shì tóngxué",
-      "tones": [
-        3,
-        0,
-        4,
-        2,
-        2
-      ],
-      "english": "We are classmates",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l9_p08",
+      "id": "hsk1_l9_p05",
       "chinese": "好朋友",
       "pinyin": "hǎo péngyou",
       "tones": [
@@ -267,7 +227,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l9_p09",
+      "id": "hsk1_l9_p06",
       "chinese": "中国朋友",
       "pinyin": "Zhōngguó péngyou",
       "tones": [
@@ -280,19 +240,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l9_p10",
-      "chinese": "你们好",
-      "pinyin": "nǐmen hǎo",
-      "tones": [
-        3,
-        0,
-        3
-      ],
-      "english": "Hello everyone",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l9_p11",
+      "id": "hsk1_l9_p7",
       "chinese": "一起学习",
       "pinyin": "yì qǐ xuéxí",
       "tones": [
@@ -305,14 +253,13 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l9_p12",
-      "chinese": "说中国话",
-      "pinyin": "shuō Zhōngguóhuà",
+      "id": "hsk1_l9_p8",
+      "chinese": "说",
+      "pinyin": "shuō zhōng wén",
       "tones": [
         1,
         1,
-        2,
-        4
+        2
       ],
       "english": "Speak Chinese",
       "part_of_speech": "phrase"
@@ -576,7 +523,7 @@
     {
       "number": 2,
       "title": "Plural Pronoun 我们 (wǒmen) — We / Us",
-      "explanation": "Add 们 to a pronoun to make it plural. 我(wǒ)→我们(I→we), 你(nǐ)→你们(you→you all), 他(tā)/她(tā)→他(tā)们/她们(he/she→they). 们 cannot be added to nouns.",
+      "explanation": "Add 们 to a pronoun to make it plural. 我→我们(I→we), 你→你们(you→you all), 他/她→他们/她们(he/she→they). 们 cannot be added to nouns.",
       "examples": [
         {
           "chinese": "我们是朋友。",

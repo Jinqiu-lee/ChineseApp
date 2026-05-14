@@ -195,30 +195,6 @@
     },
     {
       "id": "hsk1_l5_p04",
-      "chinese": "喝牛奶",
-      "pinyin": "hē niú nǎi",
-      "tones": [
-        1,
-        2,
-        3
-      ],
-      "english": "Drink milk",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l5_p05",
-      "chinese": "吃米饭",
-      "pinyin": "chī mǐ fàn",
-      "tones": [
-        1,
-        3,
-        4
-      ],
-      "english": "Eat rice",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l5_p06",
       "chinese": "吃面条",
       "pinyin": "chī miàn tiáo",
       "tones": [
@@ -230,30 +206,29 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l5_p07",
-      "chinese": "吃苹果",
-      "pinyin": "chī píng guǒ",
+      "id": "hsk1_l5_p05",
+      "chinese": "吃饭",
+      "pinyin": "chī fàn",
       "tones": [
         1,
-        2,
-        3
+        4
       ],
-      "english": "Eat an apple",
+      "english": "Eat (a meal)",
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l5_p08",
+      "id": "hsk1_l5_p06",
       "chinese": "吃菜",
       "pinyin": "chī cài",
       "tones": [
         1,
         4
       ],
-      "english": "Eat vegetables",
+      "english": "Eat dishes/vegetables (not only rice)",
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l5_p09",
+      "id": "hsk1_l5_p07",
       "chinese": "想吃",
       "pinyin": "xiǎng chī",
       "tones": [
@@ -264,18 +239,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l5_p10",
-      "chinese": "想喝",
-      "pinyin": "xiǎng hē",
-      "tones": [
-        3,
-        1
-      ],
-      "english": "Want to drink",
-      "part_of_speech": "phrase"
-    },
-    {
-      "id": "hsk1_l5_p11",
+      "id": "hsk1_l5_p9",
       "chinese": "一杯茶",
       "pinyin": "yì bēi chá",
       "tones": [
@@ -287,7 +251,7 @@
       "part_of_speech": "phrase"
     },
     {
-      "id": "hsk1_l5_p12",
+      "id": "hsk1_l5_p10",
       "chinese": "一杯水",
       "pinyin": "yì bēi shuǐ",
       "tones": [
@@ -589,7 +553,7 @@
     {
       "number": 1,
       "title": "Using 想 (xiǎng) - To want / Would like",
-      "explanation": "想(xiǎng) expresses desire or intention. It's followed directly by a verb (no 'to'). Formula: Subject + 想(xiǎng) + Verb + Object. 想(xiǎng) is softer and more polite than 要(yào).",
+      "explanation": "想(xiǎng) expresses desire or intention. It's followed directly by a verb. Formula: Subject + 想(xiǎng) + Verb + Object. 想(xiǎng) is softer and more polite than 要(yào).",
       "examples": [
         {
           "chinese": "我想吃面条。",
