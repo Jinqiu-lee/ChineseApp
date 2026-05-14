@@ -1078,6 +1078,10 @@ export default function App() {
           setRewardModal(null);
           handleStageContinue(stageIndex);
         }}
+        onBreak={() => {
+          setRewardModal(null);
+          setCurrentScreen('home');
+        }}
       />
     </View>
   );

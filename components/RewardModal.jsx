@@ -64,7 +64,7 @@ function XPBar({ totalXP, xpEarned, color }) {
 }
 
 // ── Main RewardModal ──────────────────────────────────────────────
-export default function RewardModal({ visible, onClose, xpEarned = 0, scorePercent = 1, totalXP = 0, newBadges = [], streak = 0 }) {
+export default function RewardModal({ visible, onClose, onBreak, xpEarned = 0, scorePercent = 1, totalXP = 0, newBadges = [], streak = 0 }) {
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const slideAnim = useRef(new Animated.Value(60)).current;
 
@@ -140,6 +140,13 @@ export default function RewardModal({ visible, onClose, xpEarned = 0, scorePerce
           <TouchableOpacity style={[styles.continueBtn, { backgroundColor: rank.color }]} onPress={onClose}>
             <Text style={styles.continueBtnText}>Continue  继续 →</Text>
           </TouchableOpacity>
+
+          {/* Take a break button */}
+          {onBreak && (
+            <TouchableOpacity style={styles.breakBtn} onPress={onBreak}>
+              <Text style={styles.breakBtnText}>Take a Break  休息一下</Text>
+            </TouchableOpacity>
+          )}
 
         </Animated.View>
       </Animated.View>
@@ -221,6 +228,12 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   continueBtnText: { fontSize: 16, fontWeight: "800", color: "#fff" },
+  breakBtn: {
+    paddingVertical: 14,
+    alignItems: "center",
+    marginTop: 8,
+  },
+  breakBtnText: { fontSize: 14, color: "#636e72", fontWeight: "600" },
 });
 
 const xp = StyleSheet.create({
