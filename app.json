@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ChineseApp",
-    "slug": "ChineseApp",
+    "name": "MandaGlow",
+    "slug": "mandaglow",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icons/icon.png",
@@ -12,12 +12,16 @@
       "backgroundColor": "#1a0a00"
     },
     "ios": {
+      "bundleIdentifier": "com.mandaglow.app",
+      "buildNumber": "1",
       "supportsTablet": true,
       "infoPlist": {
         "NSMicrophoneUsageDescription": "ChineseApp needs microphone access to record your pronunciation for speech exercises."
       }
     },
     "android": {
+      "package": "com.mandaglow.app",
+      "versionCode": 1,
       "permissions": ["android.permission.RECORD_AUDIO"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/icons/icon.png",
