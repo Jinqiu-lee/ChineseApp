@@ -16,13 +16,16 @@
       "buildNumber": "1",
       "supportsTablet": true,
       "infoPlist": {
-        "NSMicrophoneUsageDescription": "ChineseApp needs microphone access to record your pronunciation for speech exercises."
+        "NSMicrophoneUsageDescription": "ChineseApp needs microphone access to record your pronunciation for speech exercises.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
       "package": "com.mandaglow.app",
       "versionCode": 1,
-      "permissions": ["android.permission.RECORD_AUDIO"],
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/icons/icon.png",
         "backgroundColor": "#FFFFFF"
@@ -31,6 +34,11 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": []
+    "plugins": ["expo-notifications"],
+    "extra": {
+      "eas": {
+        "projectId": "5115a894-8dc2-4779-b775-141e092f3548"
+      }
+    }
   }
 }
