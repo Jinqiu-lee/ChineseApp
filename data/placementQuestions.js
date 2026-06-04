@@ -476,12 +476,12 @@ export const BASIC_QUESTIONS_YOUNG = [
         };
       }
       return {
-        level: "Conversation Builder", levelChinese: "中级", badge: "🌾", color: "#1DD1A1",
+        level: "Connector", levelChinese: "中级", badge: "🌾", color: "#1DD1A1",
         description: "Impressive! You have strong Chinese skills.",
         recommendedLevel: "hsk3",
-        recommendedLabel: "Level 3 – Conversation Builder",
+        recommendedLabel: "Level 3 – Connector",
         startFrom: "beginning",
-        message: "Excellent! We recommend starting Level 3 – Conversation Builder.",
+        message: "Excellent! We recommend starting Level 3 – Connector.",
       };
     }
     return null;

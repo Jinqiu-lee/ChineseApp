@@ -2,6 +2,7 @@ import { Audio } from 'expo-av';
 import * as FileSystem from 'expo-file-system/legacy';
 import { Platform } from 'react-native';
 import { GOOGLE_API_KEY } from '../config/googleApiKey';
+import { pinyin } from 'pinyin-pro';
 
 const STT_URL = `https://speech.googleapis.com/v1/speech:recognize?key=${GOOGLE_API_KEY}`;
 
@@ -51,6 +52,16 @@ export async function startRecording() {
 
   const { recording } = await Audio.Recording.createAsync(RECORDING_OPTIONS);
   return recording;
+}
+
+// ── Pinyin conversion ────────────────────────────────────────────────────
+// Returns tone-free pinyin as a single lowercase string, e.g. 妈妈 → "mama"
+function convertToPinyinString(chineseText) {
+  return pinyin(chineseText, {
+    toneType: 'none',
+    type: 'string',
+    separator: '',
+  }).toLowerCase().trim();
 }
 
 // ── Number normalisation ─────────────────────────────────────────────────
@@ -142,6 +153,20 @@ function scoreMatch(transcribed, expected) {
     const i = r.indexOf(ch);
     if (i !== -1) { m++; r.splice(i, 1); }
   }
+
+  // Pinyin fallback: if character match is low, compare tone-free pinyin instead
+  if (e.length > 0 && m / e.length < 0.5) {
+    const ep = [...convertToPinyinString(expected)];
+    const tp = [...convertToPinyinString(transcribed)];
+    let pm = 0;
+    const remaining = [...tp];
+    for (const ch of ep) {
+      const i = remaining.indexOf(ch);
+      if (i !== -1) { pm++; remaining.splice(i, 1); }
+    }
+    if (pm > m) return pm;
+  }
+
   return m;
 }
 
@@ -165,6 +190,28 @@ export function calculateAccuracy(transcribed, expected) {
   }
 
   const raw = Math.round((matches / e.length) * 100);
+
+  // Pinyin fallback: if character match is low, compare tone-free pinyin
+  if (raw < 50) {
+    const expectedPinyinStr = convertToPinyinString(expected);
+    const transcribedPinyinStr = convertToPinyinString(transcribed);
+
+    if (expectedPinyinStr && transcribedPinyinStr) {
+      const ep = [...expectedPinyinStr];
+      const remaining = [...transcribedPinyinStr];
+      let pinyinMatches = 0;
+      for (const ch of ep) {
+        const idx = remaining.indexOf(ch);
+        if (idx !== -1) { pinyinMatches++; remaining.splice(idx, 1); }
+      }
+      const pinyinRaw = Math.round((pinyinMatches / ep.length) * 100);
+
+      if (pinyinRaw > raw) {
+        if (e.length <= 2 && pinyinMatches >= 1) return Math.max(pinyinRaw, 60);
+        return pinyinRaw;
+      }
+    }
+  }
 
   // For very short words (1–2 chars) a single match is a good sign —
   // lift the floor to 60% so one correct character doesn't show as 50%.

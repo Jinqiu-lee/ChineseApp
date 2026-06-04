@@ -50,82 +50,334 @@
         "title": "Initial + ai",
         "rule": "b p m d t n l k h combine with 'ai'",
         "examples": [
-          { "pinyin": "bái",  "note": "b + ai", "audio_key": "bai2" },
-          { "pinyin": "pái",  "note": "p + ai", "audio_key": "pai2" },
-          { "pinyin": "mǎi",  "note": "m + ai", "audio_key": "mai3" },
-          { "pinyin": "dāi",  "note": "d + ai", "audio_key": "dai1" },
-          { "pinyin": "nǎi",  "note": "n + ai", "audio_key": "nai3" },
-          { "pinyin": "lái",  "note": "l + ai", "audio_key": "lai2" },
-          { "pinyin": "kāi",  "note": "k + ai", "audio_key": "kai1" },
-          { "pinyin": "hǎi",  "note": "h + ai", "audio_key": "hai3" }
+          {
+            "pinyin": "bái",
+            "note": "b + ai",
+            "audio_key": "bai2",
+            "word": "白⚪️",
+            "meaning": "white"
+          },
+          {
+            "pinyin": "pái",
+            "note": "p + ai",
+            "audio_key": "pai2",
+            "word": "排队",
+            "word_pinyin": "páiduì",
+            "meaning": "queue up"
+          },
+          {
+            "pinyin": "mǎi",
+            "note": "m + ai",
+            "audio_key": "mai3",
+            "word": "买",
+            "meaning": "buy"
+          },
+          {
+            "pinyin": "dāi",
+            "note": "d + ai",
+            "audio_key": "dai1",
+            "word": "待",
+            "meaning": "stay / hang around"
+          },
+          {
+            "pinyin": "nǎi",
+            "note": "n + ai",
+            "audio_key": "nai3",
+            "word": "奶奶👵",
+            "word_pinyin": "nǎinai",
+            "meaning": "grandma (paternal)"
+          },
+          {
+            "pinyin": "lái",
+            "note": "l + ai",
+            "audio_key": "lai2",
+            "word": "来",
+            "meaning": "come"
+          },
+          {
+            "pinyin": "kāi",
+            "note": "k + ai",
+            "audio_key": "kai1",
+            "word": "开",
+            "meaning": "open"
+          },
+          {
+            "pinyin": "hǎi",
+            "note": "h + ai",
+            "audio_key": "hai3",
+            "word": "海🌊",
+            "meaning": "sea"
+          }
         ]
       },
       {
         "title": "Initial + ei",
         "rule": "b p m f l g combine with 'ei'",
         "examples": [
-          { "pinyin": "bēi",  "note": "b + ei", "audio_key": "bei1" },
-          { "pinyin": "méi",  "note": "m + ei", "audio_key": "mei2" },
-          { "pinyin": "fēi",  "note": "f + ei", "audio_key": "fei1" },
-          { "pinyin": "lèi",  "note": "l + ei", "audio_key": "lei4" },
-          { "pinyin": "gěi",  "note": "g + ei", "audio_key": "gei3" }
+          {
+            "pinyin": "bēi",
+            "note": "b + ei",
+            "audio_key": "bei1",
+            "word": "杯子",
+            "word_pinyin": "bēizi",
+            "meaning": "cup"
+          },
+          {
+            "pinyin": "méi",
+            "note": "m + ei",
+            "audio_key": "mei2",
+            "word": "没有",
+            "word_pinyin": "méiyǒu",
+            "meaning": "don't have"
+          },
+          {
+            "pinyin": "fēi",
+            "note": "f + ei",
+            "audio_key": "fei1",
+            "word": "飞",
+            "meaning": "fly"
+          },
+          {
+            "pinyin": "lèi",
+            "note": "l + ei",
+            "audio_key": "lei4",
+            "word": "累",
+            "meaning": "tired"
+          },
+          {
+            "pinyin": "gěi",
+            "note": "g + ei",
+            "audio_key": "gei3",
+            "word": "给",
+            "meaning": "give"
+          }
         ]
       },
       {
         "title": "Initial + ui",
         "rule": "d t g k h combine with 'ui'",
         "examples": [
-          { "pinyin": "duì",  "note": "d + ui", "audio_key": "dui4" },
-          { "pinyin": "tuī",  "note": "t + ui", "audio_key": "tui1" },
-          { "pinyin": "guī",  "note": "g + ui", "audio_key": "gui1" },
-          { "pinyin": "kuī",  "note": "k + ui", "audio_key": "kui1" },
-          { "pinyin": "huī",  "note": "h + ui", "audio_key": "hui1" }
+          {
+            "pinyin": "duì",
+            "note": "d + ui",
+            "audio_key": "dui4",
+            "word": "对",
+            "meaning": "correct / right"
+          },
+          {
+            "pinyin": "tuī",
+            "note": "t + ui",
+            "audio_key": "tui1",
+            "word": "推",
+            "meaning": "push"
+          },
+          {
+            "pinyin": "guī",
+            "note": "g + ui",
+            "audio_key": "gui1",
+            "word": "归",
+            "meaning": "return"
+          },
+          {
+            "pinyin": "kuī",
+            "note": "k + ui",
+            "audio_key": "kui1",
+            "word": "亏",
+            "meaning": "loss / deficit"
+          },
+          {
+            "pinyin": "huī",
+            "note": "h + ui",
+            "audio_key": "hui1",
+            "word": "灰色🩶",
+            "word_pinyin": "huīsè",
+            "meaning": "grey"
+          }
         ]
       },
       {
         "title": "Initial + ao",
         "rule": "b p m d t n l g h combine with 'ao'",
         "examples": [
-          { "pinyin": "bāo",  "note": "b + ao", "audio_key": "bao1" },
-          { "pinyin": "pǎo",  "note": "p + ao", "audio_key": "pao3" },
-          { "pinyin": "māo",  "note": "m + ao", "audio_key": "mao1" },
-          { "pinyin": "dāo",  "note": "d + ao", "audio_key": "dao1" },
-          { "pinyin": "táo",  "note": "t + ao", "audio_key": "tao2" },
-          { "pinyin": "nào",  "note": "n + ao", "audio_key": "nao4" },
-          { "pinyin": "láo",  "note": "l + ao", "audio_key": "lao2" },
-          { "pinyin": "gāo",  "note": "g + ao", "audio_key": "gao1" }
+          {
+            "pinyin": "bāo",
+            "note": "b + ao",
+            "audio_key": "bao1",
+            "word": "包",
+            "meaning": "bag / wrap"
+          },
+          {
+            "pinyin": "pǎo",
+            "note": "p + ao",
+            "audio_key": "pao3",
+            "word": "跑🏃🏻‍♀️",
+            "meaning": "run"
+          },
+          {
+            "pinyin": "māo",
+            "note": "m + ao",
+            "audio_key": "mao1",
+            "word": "猫🐱",
+            "meaning": "cat"
+          },
+          {
+            "pinyin": "dāo",
+            "note": "d + ao",
+            "audio_key": "dao1",
+            "word": "刀🔪",
+            "meaning": "knife"
+          },
+          {
+            "pinyin": "táo",
+            "note": "t + ao",
+            "audio_key": "tao2",
+            "word": "桃子🍑",
+            "word_pinyin": "táozi",
+            "meaning": "peach"
+          },
+          {
+            "pinyin": "nào",
+            "note": "n + ao",
+            "audio_key": "nao4",
+            "word": "热闹",
+            "word_pinyin": "rènào",
+            "meaning": "lively / bustling"
+          },
+          {
+            "pinyin": "láo",
+            "note": "l + ao",
+            "audio_key": "lao2",
+            "word": "劳动",
+            "word_pinyin": "láodòng",
+            "meaning": "work / labour"
+          },
+          {
+            "pinyin": "gāo",
+            "note": "g + ao",
+            "audio_key": "gao1",
+            "word": "高",
+            "meaning": "tall / high"
+          }
         ]
       },
       {
         "title": "Initial + ou",
         "rule": "m t n l g k h combine with 'ou'",
         "examples": [
-          { "pinyin": "móu",  "note": "m + ou", "audio_key": "mou2" },
-          { "pinyin": "tóu",  "note": "t + ou", "audio_key": "tou2" },
-          { "pinyin": "lóu",  "note": "l + ou", "audio_key": "lou2" },
-          { "pinyin": "kǒu",  "note": "k + ou", "audio_key": "kou3" },
-          { "pinyin": "gǒu",  "note": "g + ou", "audio_key": "gou3" },
-          { "pinyin": "hóu",  "note": "h + ou", "audio_key": "hou2" },
-          { "pinyin": "dōu",  "note": "d + ou", "audio_key": "dou1" }
+          {
+            "pinyin": "móu",
+            "note": "m + ou",
+            "audio_key": "mou2",
+            "word": "谋",
+            "meaning": "scheme / plan"
+          },
+          {
+            "pinyin": "tóu",
+            "note": "t + ou",
+            "audio_key": "tou2",
+            "word": "头",
+            "meaning": "head"
+          },
+          {
+            "pinyin": "lóu",
+            "note": "l + ou",
+            "audio_key": "lou2",
+            "word": "楼",
+            "meaning": "building / floor"
+          },
+          {
+            "pinyin": "kǒu",
+            "note": "k + ou",
+            "audio_key": "kou3",
+            "word": "口",
+            "meaning": "mouth"
+          },
+          {
+            "pinyin": "gǒu",
+            "note": "g + ou",
+            "audio_key": "gou3",
+            "word": "狗🐕",
+            "meaning": "dog"
+          },
+          {
+            "pinyin": "hóu",
+            "note": "h + ou",
+            "audio_key": "hou2",
+            "word": "猴子🐒",
+            "word_pinyin": "hóuzi",
+            "meaning": "monkey"
+          },
+          {
+            "pinyin": "dōu",
+            "note": "d + ou",
+            "audio_key": "dou1",
+            "word": "都",
+            "meaning": "all / both"
+          }
         ]
       },
       {
         "title": "Initial + iu",
         "rule": "n l j q x combine with 'iu'",
         "examples": [
-          { "pinyin": "niú",  "note": "n + iu", "audio_key": "niu2" },
-          { "pinyin": "liú",  "note": "l + iu", "audio_key": "liu2" },
-          { "pinyin": "jiǔ",  "note": "j + iu", "audio_key": "jiu3" },
-          { "pinyin": "xiū",  "note": "x + iu", "audio_key": "xiu1" }
+          {
+            "pinyin": "niú",
+            "note": "n + iu",
+            "audio_key": "niu2",
+            "word": "牛🐮",
+            "meaning": "cow / bull"
+          },
+          {
+            "pinyin": "liú",
+            "note": "l + iu",
+            "audio_key": "liu2",
+            "word": "留学",
+            "word_pinyin": "liúxué",
+            "meaning": "study abroad"
+          },
+          {
+            "pinyin": "jiǔ",
+            "note": "j + iu",
+            "audio_key": "jiu3",
+            "word": "九9️⃣",
+            "meaning": "nine"
+          },
+          {
+            "pinyin": "xiū",
+            "note": "x + iu",
+            "audio_key": "xiu1",
+            "word": "休息",
+            "word_pinyin": "xiūxi",
+            "meaning": "rest / relax"
+          }
         ]
       },
       {
         "title": "j q x + i",
         "rule": "j q x combine with 'i'",
         "examples": [
-          { "pinyin": "jī",   "note": "j + i",  "audio_key": "ji1" },
-          { "pinyin": "qī",   "note": "q + i",  "audio_key": "qi1" },
-          { "pinyin": "xī",   "note": "x + i",  "audio_key": "xi1" }
+          {
+            "pinyin": "jī",
+            "note": "j + i",
+            "audio_key": "ji1",
+            "word": "鸡🐓",
+            "meaning": "chicken"
+          },
+          {
+            "pinyin": "qī",
+            "note": "q + i",
+            "audio_key": "qi1",
+            "word": "七7️⃣",
+            "meaning": "seven"
+          },
+          {
+            "pinyin": "xī",
+            "note": "x + i",
+            "audio_key": "xi1",
+            "word": "西瓜🍉",
+            "word_pinyin": "xīguā",
+            "meaning": "watermelon"
+          }
         ]
       }
     ]
@@ -657,70 +909,182 @@
       "syllable": "hǎo",
       "audio_key": "hao3",
       "correct": "3",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "guì",
       "audio_key": "gui4",
       "correct": "4",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "qī",
       "audio_key": "qi1",
       "correct": "1",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_initial",
       "syllable": "gē",
       "audio_key": "init_g",
       "correct": "g",
-      "choices": ["g", "k", "h", "j"]
+      "choices": [
+        "g",
+        "k",
+        "h",
+        "j"
+      ]
     },
     {
       "type": "listen_initial",
       "syllable": "jī",
       "audio_key": "init_j",
       "correct": "j",
-      "choices": ["j", "q", "x", "g"]
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "g"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "māo",
       "audio_key": "fin_ao",
       "correct": "ao",
-      "choices": ["ao", "ou", "iu", "ai"]
+      "choices": [
+        "ao",
+        "ou",
+        "iu",
+        "ai"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "fēi",
       "audio_key": "fin_ei",
       "correct": "ei",
-      "choices": ["ai", "ei", "ui", "ao"]
+      "choices": [
+        "ai",
+        "ei",
+        "ui",
+        "ao"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "jiū",
       "audio_key": "fin_iu",
       "correct": "iu",
-      "choices": ["ao", "ou", "iu", "ui"]
+      "choices": [
+        "ao",
+        "ou",
+        "iu",
+        "ui"
+      ]
     }
   ],
   "stage4_pool": [
-    { "type": "listen_record", "syllable": "nǐhǎo", "audio_key": "ni3_hao3", "chinese": "你好", "meaning": "hello" },
-    { "type": "listen_record", "syllable": "guì", "audio_key": "gui4", "chinese": "贵", "meaning": "expensive" },
-    { "type": "listen_record", "syllable": "fēi", "audio_key": "fei1", "chinese": "飞", "meaning": "fly" },
-    { "type": "listen_record", "syllable": "gāo", "audio_key": "gao1", "chinese": "高", "meaning": "tall" },
-    { "type": "listen_record", "syllable": "hǎo", "audio_key": "hao3", "chinese": "好", "meaning": "good" },
-    { "type": "listen_record", "syllable": "māo", "audio_key": "mao1", "chinese": "猫", "meaning": "cat" },
-    { "type": "listen_record", "syllable": "gǒu", "audio_key": "gou3", "chinese": "狗", "meaning": "dog" },
-    { "type": "listen_record", "syllable": "qī", "audio_key": "qi1", "chinese": "七", "meaning": "seven" },
-    { "type": "listen_record", "syllable": "xǐ", "audio_key": "xi3", "chinese": "洗", "meaning": "wash" },
-    { "type": "listen_record", "syllable": "bēi", "audio_key": "bei1", "chinese": "杯", "meaning": "cup" },
-    { "type": "listen_record", "syllable": "jiā", "audio_key": "jia1", "chinese": "家", "meaning": "home" },
-    { "type": "listen_record", "syllable": "guó", "audio_key": "guo2", "chinese": "国", "meaning": "country" }
+    {
+      "type": "listen_record",
+      "syllable": "nǐhǎo",
+      "audio_key": "ni3_hao3",
+      "chinese": "你好",
+      "meaning": "hello"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "guì",
+      "audio_key": "gui4",
+      "chinese": "贵",
+      "meaning": "expensive"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "fēi",
+      "audio_key": "fei1",
+      "chinese": "飞",
+      "meaning": "fly"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "gāo",
+      "audio_key": "gao1",
+      "chinese": "高",
+      "meaning": "tall"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "hǎo",
+      "audio_key": "hao3",
+      "chinese": "好",
+      "meaning": "good"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "māo",
+      "audio_key": "mao1",
+      "chinese": "猫",
+      "meaning": "cat"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "gǒu",
+      "audio_key": "gou3",
+      "chinese": "狗",
+      "meaning": "dog"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "qī",
+      "audio_key": "qi1",
+      "chinese": "七",
+      "meaning": "seven"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "xǐ",
+      "audio_key": "xi3",
+      "chinese": "洗",
+      "meaning": "wash"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bēi",
+      "audio_key": "bei1",
+      "chinese": "杯",
+      "meaning": "cup"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "jiā",
+      "audio_key": "jia1",
+      "chinese": "家",
+      "meaning": "home"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "guó",
+      "audio_key": "guo2",
+      "chinese": "国",
+      "meaning": "country"
+    }
   ]
 }

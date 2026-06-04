@@ -16,6 +16,7 @@ import ImageExercise from '../components/exercises/ImageExercise';
 import PinyinExercise from '../components/exercises/PinyinExercise';
 import { getAvatarForLesson } from '../config/lessonAvatarMap';
 import { applyAvatarNames } from '../utils/applyAvatarNames';
+import { applyFavouriteAvatarOverride } from '../utils/favouriteAvatar';
 
 const STAGE_NAMES = [
   'First Look', 'Listen & Choose', 'Build Sentences', 'Match & Review', 'Final Challenge',
@@ -24,6 +25,8 @@ const STAGE_NAMES = [
 export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', stageIndex, roundIndex = 0, onComplete, onNext, onBack }) {
   const T = LEVEL_SCREEN_PALETTES[levelId] || LEVEL_SCREEN_PALETTES.hsk1;
   const avatarId = getAvatarForLesson(lessonData?.topic, lessonData?.topic_chinese);
+  const [displayAvatarId, setDisplayAvatarId] = useState(avatarId);
+  useEffect(() => { applyFavouriteAvatarOverride(avatarId).then(setDisplayAvatarId); }, []);
   const [exercises, setExercises] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -91,7 +94,7 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
               <Text style={styles.doneMessage}>{messages[stars - 1]}</Text>
             </View>
             <TouchableOpacity
-              style={[styles.continueBtn, { backgroundColor: T.accent, shadowColor: T.shadow }]}
+              style={[styles.continueBtn, { backgroundColor: T.accent }]}
               onPress={() => onNext(stageIndex)}
               activeOpacity={0.85}
             >
@@ -144,7 +147,7 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
               exercise={exercise}
               onCorrect={() => advance(true)}
               onWrong={() => advance(false)}
-              avatarId={avatarId}
+              avatarId={displayAvatarId}
             />
           )}
           {exercise.type === 'fill_blank' && (
@@ -177,14 +180,14 @@ export default function StageExercisesScreen({ lessonData, levelId = 'hsk1', sta
               exercise={exercise}
               onCorrect={() => advance(true)}
               onWrong={() => advance(false)}
-              avatarId={avatarId}
+              avatarId={displayAvatarId}
             />
           )}
           {exercise.type === 'image_exercise' && (
             <ImageExercise
               key={currentIndex}
               exercise={exercise}
-              avatarId={avatarId}
+              avatarId={displayAvatarId}
               onCorrect={() => advance(true)}
               onWrong={() => advance(false)}
             />
@@ -237,10 +240,8 @@ const styles = StyleSheet.create({
   // ── Completion screen ──────────────────────────────────────────────────────
   completion: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 32, gap: 20 },
   completionCard: {
-    backgroundColor: CARD_WHITE, borderRadius: 24, padding: 32,
+    backgroundColor: CARD_WHITE, borderRadius: 8, padding: 32,
     alignItems: 'center', gap: 8, width: '100%',
-    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 6 },
-    shadowOpacity: 0.18, shadowRadius: 16, elevation: 6,
     borderWidth: 1, borderColor: VG.border,
   },
   starsText:  { fontSize: 52, marginBottom: 8 },
@@ -252,9 +253,6 @@ const styles = StyleSheet.create({
     backgroundColor: VG.yellow,
     borderRadius: 18,
     paddingHorizontal: 56, paddingVertical: 16,
-    shadowColor: VG.shadow,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.28, shadowRadius: 12, elevation: 6,
   },
   continueBtnText: { fontSize: 18, fontWeight: '800', color: VG.bg },
 });

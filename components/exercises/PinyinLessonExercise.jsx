@@ -8,8 +8,10 @@ import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ER
 //  visual_tone, visual_initial, visual_final → see syllable, pick answer
 //  sandhi_choice, neutral_choice → see text prompt, pick answer
 
+const TONE_MARK = { '1': '¯', '2': '´', '3': 'ˇ', '4': '`', '0': '·' };
+
 const TYPE_META = {
-  listen_tone:    { instruction: '🔊 Listen, then pick the tone number', showAudio: true, hideLabel: true },
+  listen_tone:    { instruction: '🔊 Listen, then pick the tone', showAudio: true, hideLabel: true },
   listen_initial: { instruction: '🔊 Listen, then pick the initial (声母)', showAudio: true, hideLabel: true },
   listen_final:   { instruction: '🔊 Listen, then pick the final (韵母)', showAudio: true, hideLabel: true },
   listen_syllable:{ instruction: '🔊 Listen, then pick the correct syllable', showAudio: true, hideLabel: true },
@@ -27,6 +29,7 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
   const [selected,     setSelected]     = useState(null);
   const [answered,     setAnswered]     = useState(false);
   const [revealed,     setRevealed]     = useState(false);
+  const [showNext,     setShowNext]     = useState(false);
   const [showContinue, setShowContinue] = useState(false);
   const [showPinyin,   setShowPinyin]   = useState(false);
 
@@ -53,7 +56,7 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
     setAnswered(true);
     setRevealed(true);
     if (choice === correct) {
-      setTimeout(() => onCorrect(), 1400);
+      setShowNext(true);
     } else {
       setShowContinue(true);
     }
@@ -73,9 +76,13 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
     return [styles.choiceText, { color: 'rgba(28,42,68,0.4)' }];
   };
 
-  // For tone choices, show colored tone indicators
   const isToneChoice = type === 'visual_tone' || type === 'listen_tone';
-  const toneOrdinal = { '1': '1st Tone', '2': '2nd Tone', '3': '3rd Tone', '4': '4th Tone', '0': 'Neutral Tone' };
+  const getToneMarkColor = (choice) => {
+    if (!answered) return TONE_COLORS[choice];
+    if (choice === correct)  return SUCCESS;
+    if (choice === selected) return ERROR;
+    return 'rgba(28,42,68,0.4)';
+  };
 
   return (
     <View style={styles.container}>
@@ -141,24 +148,27 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
         {choices.map((choice, i) => (
           <TouchableOpacity
             key={i}
-            style={getChoiceStyle(choice)}
+            style={[getChoiceStyle(choice), isToneChoice && { paddingVertical: 7 }]}
             onPress={() => handleSelect(choice)}
             disabled={answered}
             activeOpacity={0.75}
           >
-            {isToneChoice && TONE_COLORS[choice] ? (
-              <View style={styles.toneChoiceInner}>
-                <View style={[styles.toneDot, { backgroundColor: TONE_COLORS[choice] }]} />
-                <Text style={getChoiceTextStyle(choice)}>
-                  {toneOrdinal[choice] ?? `Tone ${choice}`}
-                </Text>
-              </View>
+            {isToneChoice && TONE_MARK[choice] ? (
+              <Text style={[styles.toneMark, { color: getToneMarkColor(choice) }]}>
+                {TONE_MARK[choice]}
+              </Text>
             ) : (
               <Text style={getChoiceTextStyle(choice)}>{choice}</Text>
             )}
           </TouchableOpacity>
         ))}
       </View>
+
+      {showNext && (
+        <TouchableOpacity style={styles.nextBtn} onPress={onCorrect} activeOpacity={0.85}>
+          <Text style={styles.nextBtnText}>Next →</Text>
+        </TouchableOpacity>
+      )}
 
       {showContinue && (
         <TouchableOpacity style={styles.continueBtn} onPress={onWrong} activeOpacity={0.85}>
@@ -209,10 +219,9 @@ const styles = StyleSheet.create({
   choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: SUCCESS, alignItems: 'center' },
   choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: ERROR, alignItems: 'center' },
   choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: 'rgba(155,104,70,0.10)', alignItems: 'center' },
-  choiceText:   { fontSize: 17, fontWeight: '700', color: DEEP_NAVY, textAlign: 'center' },
+  choiceText:   { fontSize: 21, fontWeight: '700', color: DEEP_NAVY, textAlign: 'center' },
+  toneMark:     { fontSize: 36, fontWeight: '900', textAlign: 'center' },
 
-  toneChoiceInner: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  toneDot:         { width: 12, height: 12, borderRadius: 6 },
 
   // Show Pinyin
   showPinyinRow:      { flexDirection: 'row', alignItems: 'center', gap: 10, marginBottom: 16 },
@@ -222,11 +231,15 @@ const styles = StyleSheet.create({
   showPinyinTextActive:{ color: SLATE_TEAL },
   pinyinPill:         { backgroundColor: '#eaf2f3', borderRadius: 12, paddingHorizontal: 14, paddingVertical: 6, borderWidth: 1, borderColor: 'rgba(55,73,80,0.30)' },
   pinyinPillText:     { fontSize: 18, fontWeight: '800', color: SLATE_TEAL, letterSpacing: 1 },
+  nextBtn: {
+    marginTop: 16, backgroundColor: SUCCESS, borderRadius: 14,
+    padding: 16, alignItems: 'center',
+  },
+  nextBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
+
   continueBtn: {
     marginTop: 16, backgroundColor: DEEP_NAVY, borderRadius: 14,
     padding: 16, alignItems: 'center',
-    shadowColor: 'rgba(28,42,68,0.18)', shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.22, shadowRadius: 8, elevation: 4,
   },
   continueBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 });

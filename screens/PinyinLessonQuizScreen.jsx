@@ -1,11 +1,16 @@
-import React, { useState, useMemo } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Animated, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import PinyinLessonExercise from '../components/exercises/PinyinLessonExercise';
 import PinyinRecordExercise from '../components/exercises/PinyinRecordExercise';
 import { buildLessonQuiz } from '../utils/pinyinLessonGenerator';
 import ScreenBackground from '../components/ScreenBackground';
-import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
+import AvatarCharacter from '../components/AvatarCharacter';
+import { getAvatar } from '../config/avatarConfig';
+import { getPinyinCompletionMessage } from '../data/emotionalContent';
+import { getVanGoghMessage } from '../data/vanGoghMessages';
+import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../constants/colors';
 
 const PASS_THRESHOLD = 0.6;
 
@@ -15,6 +20,30 @@ export default function PinyinLessonQuizScreen({ lessonData, onPass, onFail, onB
   const [score,   setScore]   = useState(0);
   const [done,    setDone]    = useState(false);
 
+  const [avatarId,   setAvatarId]   = useState('eileen');
+  const [vanGoghMsg, setVanGoghMsg] = useState(null);
+  const vgOpacity = useRef(new Animated.Value(0)).current;
+  const avatarOpacity = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    AsyncStorage.getItem('avatarId').then(id => { if (id) setAvatarId(id); }).catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    if (!done) return;
+    const pct    = questions.length > 0 ? Math.round((score / questions.length) * 100) : 0;
+    const passed = pct >= PASS_THRESHOLD * 100;
+    setVanGoghMsg(getVanGoghMessage(passed ? 'quizPassed' : 'quizFailed'));
+
+    const t1 = setTimeout(() => {
+      Animated.timing(avatarOpacity, { toValue: 1, duration: 500, useNativeDriver: true }).start();
+    }, 200);
+    const t2 = setTimeout(() => {
+      Animated.timing(vgOpacity, { toValue: 1, duration: 600, useNativeDriver: true }).start();
+    }, 600);
+    return () => { clearTimeout(t1); clearTimeout(t2); };
+  }, [done]);
+
   const advance = (wasCorrect) => {
     if (wasCorrect) setScore(s => s + 1);
     const next = current + 1;
@@ -23,13 +52,20 @@ export default function PinyinLessonQuizScreen({ lessonData, onPass, onFail, onB
   };
 
   if (done) {
-    const pct     = questions.length > 0 ? Math.round((score / questions.length) * 100) : 0;
-    const passed  = pct >= PASS_THRESHOLD * 100;
+    const pct    = questions.length > 0 ? Math.round((score / questions.length) * 100) : 0;
+    const passed = pct >= PASS_THRESHOLD * 100;
+    const av     = getAvatar(avatarId);
+    const msg    = getPinyinCompletionMessage(avatarId, pct);
+
     return (
       <ScreenBackground levelId="pinyin">
         <SafeAreaView style={styles.safe}>
-          <View style={styles.resultContainer}>
+          <ScrollView
+            contentContainerStyle={styles.resultContainer}
+            showsVerticalScrollIndicator={false}
+          >
             <Text style={styles.resultEmoji}>{passed ? '🎉' : '😤'}</Text>
+
             <View style={styles.resultCard}>
               <Text style={styles.resultTitle}>
                 {passed ? 'Quiz Passed!' : 'Not quite...'}
@@ -61,14 +97,37 @@ export default function PinyinLessonQuizScreen({ lessonData, onPass, onFail, onB
                 </TouchableOpacity>
               )}
             </View>
-          </View>
+
+            {/* Avatar guide message */}
+            <Animated.View style={[styles.avatarMsgCard, { opacity: avatarOpacity }]}>
+              <AvatarCharacter
+                avatarId={avatarId}
+                expression={passed ? 'happy' : 'encourage'}
+                size={72}
+              />
+              <Text style={styles.avatarMsgName}>{av?.englishName}</Text>
+              <Text style={styles.avatarMsgText}>"{msg}"</Text>
+            </Animated.View>
+
+            {/* Van Gogh message */}
+            {vanGoghMsg && (
+              <Animated.View style={[styles.vgBlock, { opacity: vgOpacity }]}>
+                <Image
+                  source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_portrait_in_fields.png')}
+                  style={styles.vgAvatar}
+                />
+                <Text style={styles.vgText}>{vanGoghMsg.text}</Text>
+                <Text style={styles.vgSignature}>— Vincent</Text>
+              </Animated.View>
+            )}
+          </ScrollView>
         </SafeAreaView>
       </ScreenBackground>
     );
   }
 
-  const progress  = questions.length > 0 ? (current / questions.length) * 100 : 0;
-  const question  = questions[current];
+  const progress = questions.length > 0 ? (current / questions.length) * 100 : 0;
+  const question = questions[current];
 
   return (
     <ScreenBackground levelId="pinyin">
@@ -142,15 +201,15 @@ const styles = StyleSheet.create({
   },
   quizBannerText: { fontSize: 13, fontWeight: '700', color: SLATE_TEAL },
 
-  resultContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 32 },
-  resultEmoji:     { fontSize: 72, marginBottom: 16 },
+  resultContainer: { flexGrow: 1, alignItems: 'center', justifyContent: 'center', padding: 32, gap: 16 },
+  resultEmoji:     { fontSize: 72 },
   resultCard: {
-    backgroundColor: CARD_WHITE, borderRadius: 24, padding: 28,
+    backgroundColor: CARD_WHITE, borderRadius: 8, padding: 28,
     alignItems: 'center', width: '100%', gap: 12,
     borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)',
   },
   resultTitle:     { fontSize: 32, fontWeight: '900', color: DEEP_NAVY },
-  resultScore:     { fontSize: 22, color: '#1DD1A1', fontWeight: '700' },
+  resultScore:     { fontSize: 22, color: SUCCESS, fontWeight: '700' },
   resultMsg:       { fontSize: 15, color: SLATE_TEAL, textAlign: 'center', lineHeight: 22, marginBottom: 8 },
 
   primaryBtn: {
@@ -164,4 +223,23 @@ const styles = StyleSheet.create({
     paddingHorizontal: 32, paddingVertical: 18, alignItems: 'center', width: '100%',
   },
   retryBtnText: { fontSize: 17, fontWeight: '700', color: WARM_BROWN },
+
+  // Avatar guide message card
+  avatarMsgCard: {
+    backgroundColor: CARD_WHITE, borderRadius: 8, padding: 20,
+    alignItems: 'center', width: '100%', gap: 8,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
+  },
+  avatarMsgName: { fontSize: 12, fontWeight: '700', color: WARM_BROWN, letterSpacing: 0.5 },
+  avatarMsgText: { fontSize: 14, fontStyle: 'italic', color: DEEP_NAVY, textAlign: 'center', lineHeight: 21 },
+
+  // Van Gogh block
+  vgBlock: { alignItems: 'center', width: '100%', gap: 10, marginTop: 8 },
+  vgAvatar:    { width: 44, height: 44 },
+  vgText: {
+    fontSize: 14, fontStyle: 'italic', fontFamily: 'Georgia',
+    color: 'rgba(255,255,255,0.90)', textAlign: 'center',
+    paddingHorizontal: 20, lineHeight: 22,
+  },
+  vgSignature: { fontSize: 12, color: 'rgba(255,255,255,0.55)', textAlign: 'center' },
 });

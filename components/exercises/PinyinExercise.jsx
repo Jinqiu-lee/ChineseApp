@@ -3,6 +3,8 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { speakPinyin } from '../../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 
+const TONE_MARK = { '1': '¯', '2': '´', '3': 'ˇ', '4': '`', '0': '·' };
+
 const SUBTYPE_META = {
   tone_id:    { instruction: '🎵 What tone is this syllable?',       label: 'TONE' },
   initial_id: { instruction: '🔤 What is the initial (声母)?',       label: 'INITIAL' },
@@ -39,6 +41,7 @@ export default function PinyinExercise({ exercise, onCorrect, onWrong }) {
   };
 
   const meta = SUBTYPE_META[subtype] ?? SUBTYPE_META.tone_id;
+  const isToneChoice = subtype === 'tone_id';
 
   return (
     <View style={styles.container}>
@@ -67,12 +70,16 @@ export default function PinyinExercise({ exercise, onCorrect, onWrong }) {
         {choices.map((choice, i) => (
           <TouchableOpacity
             key={i}
-            style={getStyle(choice)}
+            style={[getStyle(choice), isToneChoice && { paddingVertical: 7 }]}
             onPress={() => handleSelect(choice)}
             disabled={answered}
             activeOpacity={0.75}
           >
-            <Text style={styles.choiceText}>{choice}</Text>
+            {isToneChoice && TONE_MARK[choice] ? (
+              <Text style={styles.toneMark}>{TONE_MARK[choice]}</Text>
+            ) : (
+              <Text style={styles.choiceText}>{choice}</Text>
+            )}
           </TouchableOpacity>
         ))}
       </View>
@@ -129,7 +136,8 @@ const styles = StyleSheet.create({
   choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: VG.success },
   choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, padding: 18, borderWidth: 2, borderColor: VG.error },
   choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, padding: 18, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.10)' },
-  choiceText:   { fontSize: 17, fontWeight: '700', color: VG.cream, textAlign: 'center' },
+  choiceText:   { fontSize: 21, fontWeight: '700', color: VG.cream, textAlign: 'center' },
+  toneMark:     { fontSize: 36, fontWeight: '900', color: VG.cream, textAlign: 'center' },
   continueBtn: {
     marginTop: 16, backgroundColor: DEEP_NAVY, borderRadius: 14,
     padding: 16, alignItems: 'center',

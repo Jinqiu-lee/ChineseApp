@@ -35,10 +35,12 @@ export default function PinyinLessonScreen({
   quizPassed = false,
   learnDone = false,
   initialTab = 'learn',
+  hskLessonTopic = '',    // topic of the linked HSK lesson
   onBack,
   onStartStage,           // (stageIndex: 0|1|2|3) => void
   onLearnComplete,        // called when user taps "Start Practice" to unlock Practice
   onTakeQuiz,
+  onOpenHSKLesson,        // () => void — navigates to the corresponding HSK lesson
 }) {
   const [tab,           setTab]           = useState(initialTab); // 'learn' | 'practice'
   const [selectedFinal, setSelectedFinal] = useState(null);  // opens tone popup
@@ -66,8 +68,10 @@ export default function PinyinLessonScreen({
     const content = lessonData.learn_content || {};
     const tones = content.tones || [];
     const rules = content.rules || [];
-    const newFinals   = lessonData.new_finals   || [];
-    const newInitials = lessonData.new_initials  || [];
+    const newFinals      = lessonData.new_finals      || [];
+    const newInitials    = lessonData.new_initials    || [];
+    const reviewInitials = lessonData.review_initials || [];
+    const reviewFinals   = lessonData.review_finals   || [];
     const singleFinals = new Set(lessonData.single_finals || []);
     const wholeSyl    = lessonData.whole_syllables || {};
 
@@ -108,10 +112,38 @@ export default function PinyinLessonScreen({
           </>
         )}
 
+        {/* Review initials */}
+        {reviewInitials.length > 0 && (
+          <>
+            <Text style={[styles.sectionLabel, styles.sectionLabelReview, { marginTop: 24 }]}>REVIEW INITIALS (复习声母)</Text>
+            <View style={styles.chipsRow}>
+              {reviewInitials.map((init, i) => (
+                <TouchableOpacity key={i} style={styles.chipReview} onPress={() => speakPinyin(init)} activeOpacity={0.75}>
+                  <Text style={styles.chipReviewText}>{init}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </>
+        )}
+
+        {/* Review finals */}
+        {reviewFinals.length > 0 && (
+          <>
+            <Text style={[styles.sectionLabel, styles.sectionLabelReview, { marginTop: 24 }]}>REVIEW FINALS (复习韵母)</Text>
+            <View style={styles.chipsRow}>
+              {reviewFinals.map((fin, i) => (
+                <TouchableOpacity key={i} style={styles.chipReview} onPress={() => speakPinyin(fin)} activeOpacity={0.75}>
+                  <Text style={styles.chipReviewText}>{fin}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </>
+        )}
+
         {/* Tones reference */}
         {tones.length > 0 && (
           <>
-            <Text style={[styles.sectionLabel, { marginTop: (newInitials.length > 0 || newFinals.length > 0) ? 24 : 0 }]}>THE FOUR TONES</Text>
+            <Text style={[styles.sectionLabel, { marginTop: (newInitials.length > 0 || newFinals.length > 0 || reviewInitials.length > 0 || reviewFinals.length > 0) ? 24 : 0 }]}>THE FOUR TONES</Text>
             {tones.map((t, i) => (
               <TouchableOpacity
                 key={i}
@@ -225,15 +257,25 @@ export default function PinyinLessonScreen({
                 <Text style={styles.spellingRuleTitle}>{rule.title}</Text>
                 <Text style={styles.spellingRuleText}>{rule.rule}</Text>
                 {(rule.examples || []).map((ex, j) => (
-                  <TouchableOpacity
-                    key={j} style={styles.spellingExample}
-                    onPress={() => speakPinyin(ex.audio_key || ex.pinyin)}
-                    activeOpacity={0.75}
-                  >
-                    <Text style={styles.spellingExPinyin}>{ex.pinyin}</Text>
-                    {ex.note ? <Text style={styles.spellingExNote}>{ex.note}</Text> : null}
-                    <Text style={styles.spellingExAudio}>🔊</Text>
-                  </TouchableOpacity>
+                  <React.Fragment key={j}>
+                    <TouchableOpacity
+                      style={styles.spellingExample}
+                      onPress={() => speakPinyin(ex.audio_key || ex.pinyin)}
+                      activeOpacity={0.75}
+                    >
+                      <Text style={styles.spellingExPinyin}>{ex.pinyin}</Text>
+                      {ex.note ? <Text style={styles.spellingExNote}>{ex.note}</Text> : null}
+                      <Text style={styles.spellingExAudio}>🔊</Text>
+                    </TouchableOpacity>
+                    {ex.word ? (
+                      <View style={styles.spellingWordPill}>
+                        <Text style={styles.spellingWordChar}>{ex.word}</Text>
+                        {ex.word_pinyin ? <Text style={styles.spellingWordPinyin}>{ex.word_pinyin}</Text> : null}
+                        <Text style={styles.spellingWordDot}> · </Text>
+                        <Text style={styles.spellingWordMeaning}>{ex.meaning}</Text>
+                      </View>
+                    ) : null}
+                  </React.Fragment>
                 ))}
               </View>
             ))}
@@ -347,6 +389,22 @@ export default function PinyinLessonScreen({
           <Text style={styles.bannerDesc}>{lessonData.description}</Text>
         </View>
 
+        {/* HSK lesson context banner */}
+        <TouchableOpacity
+          style={styles.hskBanner}
+          onPress={() => onOpenHSKLesson && onOpenHSKLesson()}
+          activeOpacity={0.8}
+        >
+          <Text style={styles.hskBannerEmoji}>📖</Text>
+          <View style={{ flex: 1 }}>
+            <Text style={styles.hskBannerTitle}>
+              {`HSK 1 · Lesson ${lessonData?.id}${hskLessonTopic ? ` — ${hskLessonTopic}` : ''}`}
+            </Text>
+            <Text style={styles.hskBannerSub}>Practice this pinyin in context →</Text>
+          </View>
+          <Text style={styles.hskBannerArrow}>→</Text>
+        </TouchableOpacity>
+
         {/* Tabs */}
         <View style={styles.tabs}>
           {['learn','practice'].map(t => (
@@ -432,6 +490,19 @@ const styles = StyleSheet.create({
   bannerSub:   { fontSize: 13, color: SLATE_TEAL, marginBottom: 4 },
   bannerDesc:  { fontSize: 13, color: SLATE_TEAL, lineHeight: 18 },
 
+  // HSK lesson link banner
+  hskBanner: {
+    flexDirection: 'row', alignItems: 'center', gap: 12,
+    backgroundColor: CARD_WHITE,
+    paddingHorizontal: 20, paddingVertical: 13,
+    borderBottomWidth: 1.5, borderBottomColor: 'rgba(155,104,70,0.25)',
+    borderTopWidth: 1, borderTopColor: 'rgba(155,104,70,0.10)',
+  },
+  hskBannerEmoji:  { fontSize: 24 },
+  hskBannerTitle:  { fontSize: 13, fontWeight: '700', color: SLATE_TEAL, marginBottom: 2 },
+  hskBannerSub:    { fontSize: 12, color: WARM_BROWN },
+  hskBannerArrow:  { fontSize: 18, color: WARM_BROWN, fontWeight: '700' },
+
   tabs: { flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)', backgroundColor: CARD_WHITE },
   tab:          { flex: 1, paddingVertical: 14, alignItems: 'center' },
   tabActive:    { borderBottomWidth: 2, borderBottomColor: WARM_ORANGE },
@@ -441,7 +512,7 @@ const styles = StyleSheet.create({
   tabContent: { padding: 20 },
 
   sectionLabel: {
-    fontSize: 11, fontWeight: '800', color: SLATE_TEAL,
+    fontSize: 13, fontWeight: '800', color: SLATE_TEAL,
     letterSpacing: 1.5, marginBottom: 10,
     backgroundColor: CARD_WHITE, paddingHorizontal: 12, paddingVertical: 5,
     borderRadius: 8, alignSelf: 'flex-start',
@@ -450,7 +521,7 @@ const styles = StyleSheet.create({
   // Tone rows
   toneRow: {
     flexDirection: 'row', alignItems: 'center', gap: 12,
-    backgroundColor: CARD_WHITE, borderRadius: 16, padding: 14,
+    backgroundColor: CARD_WHITE, borderRadius: 8, padding: 14,
     marginBottom: 10, borderWidth: 1.5,
   },
   toneBadge:     { width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center' },
@@ -465,45 +536,49 @@ const styles = StyleSheet.create({
   // Chips
   chipsRow:           { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   chipInitial:        { backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.30)' },
-  chipInitialText:    { fontSize: 16, fontWeight: '700', color: WARM_BROWN },
+  chipInitialText:    { fontSize: 18, fontWeight: '700', color: WARM_BROWN },
+  // Review chips — muted style to distinguish from new content
+  sectionLabelReview: { backgroundColor: '#DDE8EC', color: SLATE_TEAL },
+  chipReview:         { backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, borderWidth: 1.5, borderColor: 'rgba(55,73,80,0.28)' },
+  chipReviewText:     { fontSize: 18, fontWeight: '600', color: SLATE_TEAL },
   chipFinalTappable:  { flexDirection: 'row', alignItems: 'center', gap: 4, backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, borderWidth: 1.5, borderColor: 'rgba(55,73,80,0.30)' },
-  chipFinalText:      { fontSize: 16, fontWeight: '700', color: SLATE_TEAL },
-  chipFinalArrow:     { fontSize: 11, color: SLATE_TEAL, fontWeight: '700' },
+  chipFinalText:      { fontSize: 18, fontWeight: '700', color: SLATE_TEAL },
+  chipFinalArrow:     { fontSize: 13, color: SLATE_TEAL, fontWeight: '700' },
   chipWhole:          { backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, borderWidth: 1.5, borderColor: 'rgba(28,42,68,0.20)' },
-  chipWholeText:      { fontSize: 16, fontWeight: '700', color: DEEP_NAVY },
+  chipWholeText:      { fontSize: 18, fontWeight: '700', color: DEEP_NAVY },
 
   // Rules
   rulesBox: {
-    backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16,
+    backgroundColor: CARD_WHITE, borderRadius: 8, padding: 16,
     borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)', gap: 8,
   },
-  ruleText: { fontSize: 13, color: SLATE_TEAL, lineHeight: 20 },
+  ruleText: { fontSize: 15, color: SLATE_TEAL, lineHeight: 22 },
 
   // Sandhi
-  sandhiBox:  { backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)' },
-  sandhiTitle:{ fontSize: 16, fontWeight: '800', color: SLATE_TEAL, marginBottom: 8 },
+  sandhiBox:  { backgroundColor: CARD_WHITE, borderRadius: 8, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)' },
+  sandhiTitle:{ fontSize: 18, fontWeight: '800', color: SLATE_TEAL, marginBottom: 8 },
   sandhiRow:  { flexDirection: 'row', gap: 8, marginBottom: 4 },
   sandhiArrow:{ color: WARM_ORANGE, fontWeight: '700' },
-  sandhiRule: { fontSize: 13, color: SLATE_TEAL, flex: 1 },
+  sandhiRule: { fontSize: 15, color: SLATE_TEAL, flex: 1 },
 
   // Word grid
   wordGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
   wordCard: {
-    backgroundColor: CARD_WHITE, borderRadius: 12, padding: 12,
+    backgroundColor: CARD_WHITE, borderRadius: 6, padding: 12,
     borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)', alignItems: 'center', minWidth: '30%',
   },
-  wordChinese: { fontSize: 22, fontWeight: '900', color: DEEP_NAVY, marginBottom: 2 },
-  wordPinyin:  { fontSize: 13, color: SLATE_TEAL, marginBottom: 2 },
-  wordMeaning: { fontSize: 11, color: SLATE_TEAL },
+  wordChinese: { fontSize: 24, fontWeight: '900', color: DEEP_NAVY, marginBottom: 2 },
+  wordPinyin:  { fontSize: 15, color: SLATE_TEAL, marginBottom: 2 },
+  wordMeaning: { fontSize: 13, color: SLATE_TEAL },
 
   // Practice tab
   practiceIntro: {
     fontSize: 13, color: SLATE_TEAL, lineHeight: 20, marginBottom: 20,
-    backgroundColor: CARD_WHITE, borderRadius: 12, padding: 14,
+    backgroundColor: CARD_WHITE, borderRadius: 6, padding: 14,
     borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)',
   },
   practiceLockedBanner: {
-    alignItems: 'center', backgroundColor: CARD_WHITE, borderRadius: 16, padding: 24,
+    alignItems: 'center', backgroundColor: CARD_WHITE, borderRadius: 8, padding: 24,
     marginBottom: 20, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)', gap: 8,
   },
   practiceLockedEmoji: { fontSize: 36 },
@@ -512,7 +587,7 @@ const styles = StyleSheet.create({
 
   stageCard: {
     flexDirection: 'row', alignItems: 'center',
-    backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16,
+    backgroundColor: CARD_WHITE, borderRadius: 8, padding: 16,
     marginBottom: 12, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.20)', gap: 12,
   },
   stageCardDone:   { borderColor: 'rgba(41,102,20,0.45)' },
@@ -538,7 +613,7 @@ const styles = StyleSheet.create({
   lockedText:    { color: 'rgba(55,73,80,0.45)' },
 
   // Finals hint
-  finalHint: { fontSize: 11, color: SLATE_TEAL, marginBottom: 8, fontStyle: 'italic', backgroundColor: CARD_WHITE, paddingHorizontal: 10, paddingVertical: 4, borderRadius: 6, alignSelf: 'flex-start' },
+  finalHint: { fontSize: 13, color: SLATE_TEAL, marginBottom: 8, fontStyle: 'italic', backgroundColor: CARD_WHITE, paddingHorizontal: 10, paddingVertical: 4, borderRadius: 6, alignSelf: 'flex-start' },
 
   // Tone popup modal
   modalOverlay: {
@@ -553,11 +628,11 @@ const styles = StyleSheet.create({
   modalHeader: {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 4,
   },
-  modalTitle:    { fontSize: 17, fontWeight: '800', color: DEEP_NAVY },
-  modalFinal:    { color: SLATE_TEAL, fontSize: 20 },
+  modalTitle:    { fontSize: 19, fontWeight: '800', color: DEEP_NAVY },
+  modalFinal:    { color: SLATE_TEAL, fontSize: 22 },
   modalCloseBtn: { width: 32, height: 32, alignItems: 'center', justifyContent: 'center' },
-  modalCloseText:{ fontSize: 18, color: SLATE_TEAL, fontWeight: '700' },
-  modalSub:      { fontSize: 12, color: SLATE_TEAL, marginBottom: 4 },
+  modalCloseText:{ fontSize: 20, color: SLATE_TEAL, fontWeight: '700' },
+  modalSub:      { fontSize: 14, color: SLATE_TEAL, marginBottom: 4 },
   modalToneCard: {
     flexDirection: 'row', alignItems: 'center', gap: 14,
     borderRadius: 14, padding: 14, borderWidth: 1.5,
@@ -565,22 +640,27 @@ const styles = StyleSheet.create({
   modalToneBadge: {
     width: 32, height: 32, borderRadius: 16, alignItems: 'center', justifyContent: 'center',
   },
-  modalToneBadgeNum: { fontSize: 16, fontWeight: '900', color: CARD_WHITE },
-  modalToneMark:     { fontSize: 32, fontWeight: '900', flex: 1 },
-  modalToneName:     { fontSize: 12, color: SLATE_TEAL, flex: 2 },
-  modalAudioIcon:    { fontSize: 20 },
-  modalNoTones:      { fontSize: 14, color: SLATE_TEAL, textAlign: 'center', padding: 20 },
+  modalToneBadgeNum: { fontSize: 18, fontWeight: '900', color: CARD_WHITE },
+  modalToneMark:     { fontSize: 34, fontWeight: '900', flex: 1 },
+  modalToneName:     { fontSize: 14, color: SLATE_TEAL, flex: 2 },
+  modalAudioIcon:    { fontSize: 22 },
+  modalNoTones:      { fontSize: 16, color: SLATE_TEAL, textAlign: 'center', padding: 20 },
 
   // Spelling section
-  spellingRule:       { backgroundColor: CARD_WHITE, borderRadius: 14, padding: 16, marginTop: 10, borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)' },
-  spellingRuleTitle:  { fontSize: 15, fontWeight: '800', color: DEEP_NAVY, marginBottom: 4 },
-  spellingRuleText:   { fontSize: 13, color: SLATE_TEAL, lineHeight: 19, marginBottom: 10 },
-  spellingExample:    { flexDirection: 'row', alignItems: 'center', gap: 8, backgroundColor: CARD_WHITE, borderRadius: 10, padding: 10, marginBottom: 6, borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)' },
-  spellingExPinyin:   { fontSize: 15, fontWeight: '700', color: WARM_BROWN, flex: 1 },
-  spellingExNote:     { fontSize: 12, color: SLATE_TEAL, flex: 2 },
-  spellingExAudio:    { fontSize: 18 },
+  spellingRule:       { backgroundColor: CARD_WHITE, borderRadius: 6, padding: 16, marginTop: 10, borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)' },
+  spellingRuleTitle:  { fontSize: 17, fontWeight: '800', color: DEEP_NAVY, marginBottom: 4 },
+  spellingRuleText:   { fontSize: 15, color: SLATE_TEAL, lineHeight: 21, marginBottom: 10 },
+  spellingExample:    { flexDirection: 'row', alignItems: 'center', gap: 8, backgroundColor: CARD_WHITE, borderRadius: 4, padding: 10, marginBottom: 6, borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)' },
+  spellingExPinyin:   { fontSize: 17, fontWeight: '700', color: WARM_BROWN, flex: 1 },
+  spellingExNote:     { fontSize: 14, color: SLATE_TEAL, flex: 2 },
+  spellingExAudio:    { fontSize: 20 },
+  spellingWordPill:    { flexDirection: 'row', alignItems: 'center', alignSelf: 'flex-start', backgroundColor: '#FFF3E0', borderRadius: 12, paddingHorizontal: 10, paddingVertical: 4, marginLeft: 10, marginTop: -2, marginBottom: 6 },
+  spellingWordChar:    { fontSize: 15, fontWeight: '700', color: WARM_BROWN },
+  spellingWordPinyin:  { fontSize: 13, color: 'rgba(155,104,70,0.65)', fontStyle: 'italic', marginLeft: 3 },
+  spellingWordDot:     { fontSize: 14, color: 'rgba(155,104,70,0.40)' },
+  spellingWordMeaning: { fontSize: 14, color: SLATE_TEAL },
 
   startPracticeBtn:     { backgroundColor: SLATE_TEAL, borderRadius: 18, padding: 20, alignItems: 'center', marginTop: 28 },
-  startPracticeBtnText: { fontSize: 17, fontWeight: '800', color: CARD_WHITE },
-  startPracticeBtnSub:  { fontSize: 13, color: 'rgba(255,255,255,0.75)', marginTop: 4 },
+  startPracticeBtnText: { fontSize: 19, fontWeight: '800', color: CARD_WHITE },
+  startPracticeBtnSub:  { fontSize: 15, color: 'rgba(255,255,255,0.75)', marginTop: 4 },
 });

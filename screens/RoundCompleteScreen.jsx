@@ -60,7 +60,7 @@ export default function RoundCompleteScreen({
         </View>
 
         {/* Score card */}
-        <View style={[styles.scoreCard, { backgroundColor: T.card, shadowColor: T.shadow }]}>
+        <View style={[styles.scoreCard, { backgroundColor: T.card }]}>
           <Text style={[styles.scoreLabel, { color: T.onCardMuted }]}>Round {currentRound} Score</Text>
           <Text style={[styles.scorePct, { color: T.altAccent ?? T.gold }]}>{accuracy}%</Text>
           <Text style={[styles.scoreDetail, { color: T.onCard }]}>{roundScore.score} / {roundScore.total} correct</Text>
@@ -96,12 +96,12 @@ export default function RoundCompleteScreen({
         {/* Action buttons */}
         <View style={styles.actions}>
           {currentRound === 3 ? (
-            <TouchableOpacity style={[styles.quizBtn, { backgroundColor: T.altAccent ?? T.gold, shadowColor: T.shadow }]} onPress={onTakeQuiz} activeOpacity={0.85}>
+            <TouchableOpacity style={[styles.quizBtn, { backgroundColor: T.altAccent ?? T.gold }]} onPress={onTakeQuiz} activeOpacity={0.85}>
               <Text style={[styles.quizBtnText, { color: T.altAccentText ?? T.accentText }]}>🏆 Take Lesson Quiz</Text>
             </TouchableOpacity>
           ) : currentRound === 2 ? (
             <>
-              <TouchableOpacity style={[styles.continueBtn, { backgroundColor: T.accent, shadowColor: T.shadow }]} onPress={onContinue} activeOpacity={0.85}>
+              <TouchableOpacity style={[styles.continueBtn, { backgroundColor: T.accent }]} onPress={onContinue} activeOpacity={0.85}>
                 <Text style={[styles.continueBtnText, { color: T.accentText }]}>Continue to Round 3 →</Text>
               </TouchableOpacity>
               {highAccuracy && (
@@ -111,7 +111,7 @@ export default function RoundCompleteScreen({
               )}
             </>
           ) : (
-            <TouchableOpacity style={[styles.continueBtn, { backgroundColor: T.accent, shadowColor: T.shadow }]} onPress={onContinue} activeOpacity={0.85}>
+            <TouchableOpacity style={[styles.continueBtn, { backgroundColor: T.accent }]} onPress={onContinue} activeOpacity={0.85}>
               <Text style={[styles.continueBtnText, { color: T.accentText }]}>Start Round 2 →</Text>
             </TouchableOpacity>
           )}
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
   },
 
   headerCard: {
-    backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20,
+    backgroundColor: CARD_WHITE, borderRadius: 8, padding: 20,
     alignItems: 'center', width: '100%', gap: 4,
     borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
   },
@@ -160,20 +160,17 @@ const styles = StyleSheet.create({
   title: { fontSize: 26, fontWeight: '900', color: VG.cream, textAlign: 'center' },
   stars: { fontSize: 36 },
   messageCard: {
-    backgroundColor: CARD_WHITE, borderRadius: 14,
+    backgroundColor: CARD_WHITE, borderRadius: 8,
     paddingHorizontal: 18, paddingVertical: 12, width: '100%',
   },
 
   // ── Score card — warm cream glow ──────────────────────────────────────────
   scoreCard: {
     backgroundColor: VG.card,
-    borderRadius: 22, padding: 28,
+    borderRadius: 8, padding: 28,
     alignItems: 'center', width: '100%',
     borderWidth: 1, borderColor: 'rgba(217,140,43,0.22)',
     gap: 4,
-    shadowColor: VG.shadow,
-    shadowOffset: { width: 0, height: 5 },
-    shadowOpacity: 0.22, shadowRadius: 16, elevation: 7,
   },
   scoreLabel:  { fontSize: 13, color: VG.onCardMuted, fontWeight: '600' },
   scorePct:    { fontSize: 52, fontWeight: '900', color: VG.orange },
@@ -182,7 +179,7 @@ const styles = StyleSheet.create({
   combinedRow: {
     flexDirection: 'row', alignItems: 'center', gap: 8,
     backgroundColor: CARD_WHITE,
-    borderRadius: 12, paddingHorizontal: 16, paddingVertical: 10,
+    borderRadius: 6, paddingHorizontal: 16, paddingVertical: 10,
     width: '100%', justifyContent: 'space-between',
     borderWidth: 1, borderColor: VG.border,
   },
@@ -197,9 +194,6 @@ const styles = StyleSheet.create({
   quizBtn: {
     backgroundColor: VG.orange,
     borderRadius: 16, paddingVertical: 16, alignItems: 'center',
-    shadowColor: VG.shadow,
-    shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.25, shadowRadius: 10, elevation: 5,
   },
   quizBtnText: { fontSize: 17, fontWeight: '900', color: VG.bg },
 
@@ -207,9 +201,6 @@ const styles = StyleSheet.create({
   continueBtn: {
     backgroundColor: VG.yellow,
     borderRadius: 16, paddingVertical: 16, alignItems: 'center',
-    shadowColor: VG.shadow,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.28, shadowRadius: 12, elevation: 6,
   },
   continueBtnText: { fontSize: 17, fontWeight: '900', color: VG.bg },
 

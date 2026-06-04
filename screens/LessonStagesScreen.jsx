@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
   scroll: { paddingHorizontal: 20 },
   card: {
     flexDirection: 'row', alignItems: 'center',
-    backgroundColor: VG.card, borderRadius: 18,
+    backgroundColor: VG.card, borderRadius: 8,
     padding: 16, marginBottom: 12,
     borderWidth: 1, borderColor: VG.border, gap: 14,
   },

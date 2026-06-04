@@ -84,12 +84,16 @@
           {
             "pinyin": "bā",
             "note": "a — (eight)",
-            "audio_key": "ba1"
+            "audio_key": "ba1",
+            "word": "八",
+            "meaning": "eight"
           },
           {
             "pinyin": "nǚ",
             "note": "ü — (female)",
-            "audio_key": "nv3"
+            "audio_key": "nv3",
+            "word": "女",
+            "meaning": "woman / female"
           }
         ]
       },
@@ -100,12 +104,17 @@
           {
             "pinyin": "gǒu",
             "note": "ou — (dog)",
-            "audio_key": "gou3"
+            "audio_key": "gou3",
+            "word": "狗",
+            "meaning": "dog"
           },
           {
             "pinyin": "ér",
             "note": "er — (child)",
-            "audio_key": "er2"
+            "audio_key": "er2",
+            "word": "儿子",
+            "word_pinyin": "érzi",
+            "meaning": "son"
           }
         ]
       },
@@ -116,32 +125,45 @@
           {
             "pinyin": "mén",
             "note": "en — (door)",
-            "audio_key": "men2"
+            "audio_key": "men2",
+            "word": "门",
+            "meaning": "door"
           },
           {
             "pinyin": "xīn",
             "note": "in — (heart)",
-            "audio_key": "xin1"
+            "audio_key": "xin1",
+            "word": "心",
+            "meaning": "heart"
           },
           {
             "pinyin": "jūn",
             "note": "ün — (army)",
-            "audio_key": "jun1"
+            "audio_key": "jun1",
+            "word": "军",
+            "meaning": "army"
           },
           {
             "pinyin": "néng",
             "note": "eng — (can)",
-            "audio_key": "neng2"
+            "audio_key": "neng2",
+            "word": "能",
+            "meaning": "can / be able"
           },
           {
             "pinyin": "míng",
             "note": "ing — (name)",
-            "audio_key": "ming2"
+            "audio_key": "ming2",
+            "word": "名字",
+            "word_pinyin": "míngzi",
+            "meaning": "name"
           },
           {
             "pinyin": "dōng",
             "note": "ong — (east)",
-            "audio_key": "dong1"
+            "audio_key": "dong1",
+            "word": "东",
+            "meaning": "east"
           }
         ]
       },
@@ -152,17 +174,23 @@
           {
             "pinyin": "jiā",
             "note": "ia — (home)",
-            "audio_key": "jia1"
+            "audio_key": "jia1",
+            "word": "家",
+            "meaning": "home"
           },
           {
             "pinyin": "shuō",
             "note": "uo — (speak)",
-            "audio_key": "shuo1"
+            "audio_key": "shuo1",
+            "word": "说",
+            "meaning": "speak"
           },
           {
             "pinyin": "guān",
             "note": "uan — (close)",
-            "audio_key": "guan1"
+            "audio_key": "guan1",
+            "word": "关",
+            "meaning": "close / concern"
           }
         ]
       },
@@ -173,47 +201,67 @@
           {
             "pinyin": "zhī",
             "note": "zhi — (know)",
-            "audio_key": "zhi1"
+            "audio_key": "zhi1",
+            "word": "知道",
+            "word_pinyin": "zhīdào",
+            "meaning": "know"
           },
           {
             "pinyin": "chī",
             "note": "chi — (eat)",
-            "audio_key": "chi1"
+            "audio_key": "chi1",
+            "word": "吃",
+            "meaning": "eat"
           },
           {
             "pinyin": "shī",
             "note": "shi — (teacher)",
-            "audio_key": "shi1"
+            "audio_key": "shi1",
+            "word": "老师",
+            "word_pinyin": "lǎoshī",
+            "meaning": "teacher"
           },
           {
             "pinyin": "rì",
             "note": "ri — (sun/day)",
-            "audio_key": "ri4"
+            "audio_key": "ri4",
+            "word": "日",
+            "meaning": "day / sun"
           },
           {
             "pinyin": "zì",
             "note": "zi — (character)",
-            "audio_key": "zi4"
+            "audio_key": "zi4",
+            "word": "字",
+            "meaning": "character"
           },
           {
             "pinyin": "sī",
             "note": "si — (think)",
-            "audio_key": "si1"
+            "audio_key": "si1",
+            "word": "思",
+            "meaning": "think"
           },
           {
             "pinyin": "yī",
             "note": "yi — (one)",
-            "audio_key": "yi1"
+            "audio_key": "yi1",
+            "word": "一",
+            "meaning": "one"
           },
           {
             "pinyin": "wǔ",
             "note": "wu — (five)",
-            "audio_key": "wu3"
+            "audio_key": "wu3",
+            "word": "五",
+            "meaning": "five"
           },
           {
             "pinyin": "yú",
             "note": "yu — (fish)",
-            "audio_key": "yu2"
+            "audio_key": "yu2",
+            "word": "鱼",
+            "meaning": "fish"
           }
         ]
       }
@@ -756,63 +804,170 @@
       "syllable": "zhī",
       "audio_key": "init_zh",
       "correct": "zh",
-      "choices": ["zh", "ch", "sh", "z"]
+      "choices": [
+        "zh",
+        "ch",
+        "sh",
+        "z"
+      ]
     },
     {
       "type": "listen_initial",
       "syllable": "jī",
       "audio_key": "init_j",
       "correct": "j",
-      "choices": ["j", "q", "x", "zh"]
+      "choices": [
+        "j",
+        "q",
+        "x",
+        "zh"
+      ]
     },
     {
       "type": "listen_initial",
       "syllable": "sī",
       "audio_key": "init_s",
       "correct": "s",
-      "choices": ["z", "c", "s", "sh"]
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "sh"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "yīng",
       "audio_key": "fin_ing",
       "correct": "ing",
-      "choices": ["in", "ang", "ing", "ong"]
+      "choices": [
+        "in",
+        "ang",
+        "ing",
+        "ong"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "liáng",
       "audio_key": "fin_iang",
       "correct": "iang",
-      "choices": ["iang", "uang", "ang", "ing"]
+      "choices": [
+        "iang",
+        "uang",
+        "ang",
+        "ing"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "mā",
       "audio_key": "ma1",
       "correct": "1",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "mǎ",
       "audio_key": "ma3",
       "correct": "3",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     }
   ],
   "stage4_pool": [
-    { "type": "listen_record", "syllable": "nǐhǎo", "audio_key": "ni3_hao3", "chinese": "你好", "meaning": "hello" },
-    { "type": "listen_record", "syllable": "xièxiè", "audio_key": "xie4_xie4", "chinese": "谢谢", "meaning": "thank you" },
-    { "type": "listen_record", "syllable": "zàijiàn", "audio_key": "zai4_jian4", "chinese": "再见", "meaning": "goodbye" },
-    { "type": "listen_record", "syllable": "duìbuqǐ", "audio_key": "dui4_bu4_qi3", "chinese": "对不起", "meaning": "sorry" },
-    { "type": "listen_record", "syllable": "méiguānxi", "audio_key": "mei2_guan1_xi0", "chinese": "没关系", "meaning": "no problem" },
-    { "type": "listen_record", "syllable": "Zhōngguó", "audio_key": "zhong1_guo2", "chinese": "中国", "meaning": "China" },
-    { "type": "listen_record", "syllable": "xuéxí", "audio_key": "xuexi2", "chinese": "学习", "meaning": "study" },
-    { "type": "listen_record", "syllable": "péngyou", "audio_key": "pengyou2", "chinese": "朋友", "meaning": "friend" },
-    { "type": "listen_record", "syllable": "māma", "audio_key": "ma1_ma0", "chinese": "妈妈", "meaning": "mom" },
-    { "type": "listen_record", "syllable": "bàba", "audio_key": "ba4_ba0", "chinese": "爸爸", "meaning": "dad" },
-    { "type": "listen_record", "syllable": "gē", "audio_key": "ge1", "chinese": "歌", "meaning": "song" },
-    { "type": "listen_record", "syllable": "jī", "audio_key": "ji1", "chinese": "鸡", "meaning": "chicken" }
+    {
+      "type": "listen_record",
+      "syllable": "nǐhǎo",
+      "audio_key": "ni3_hao3",
+      "chinese": "你好",
+      "meaning": "hello"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "xièxiè",
+      "audio_key": "xie4_xie4",
+      "chinese": "谢谢",
+      "meaning": "thank you"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "zàijiàn",
+      "audio_key": "zai4_jian4",
+      "chinese": "再见",
+      "meaning": "goodbye"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "duìbuqǐ",
+      "audio_key": "dui4_bu4_qi3",
+      "chinese": "对不起",
+      "meaning": "sorry"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "méiguānxi",
+      "audio_key": "mei2_guan1_xi0",
+      "chinese": "没关系",
+      "meaning": "no problem"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "Zhōngguó",
+      "audio_key": "zhong1_guo2",
+      "chinese": "中国",
+      "meaning": "China"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "xuéxí",
+      "audio_key": "xuexi2",
+      "chinese": "学习",
+      "meaning": "study"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "péngyou",
+      "audio_key": "pengyou2",
+      "chinese": "朋友",
+      "meaning": "friend"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "māma",
+      "audio_key": "ma1_ma0",
+      "chinese": "妈妈",
+      "meaning": "mom"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bàba",
+      "audio_key": "ba4_ba0",
+      "chinese": "爸爸",
+      "meaning": "dad"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "gē",
+      "audio_key": "ge1",
+      "chinese": "歌",
+      "meaning": "song"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "jī",
+      "audio_key": "ji1",
+      "chinese": "鸡",
+      "meaning": "chicken"
+    }
   ]
 }

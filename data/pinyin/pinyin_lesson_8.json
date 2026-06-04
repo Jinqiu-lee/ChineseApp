@@ -78,32 +78,44 @@
           {
             "pinyin": "yí gè",
             "note": "yī + tone 4 → yí (one, a measure word)",
-            "audio_key": "yi2_ge4"
+            "audio_key": "yi2_ge4",
+            "word": "一个",
+            "meaning": "one (+ measure word)"
           },
           {
             "pinyin": "yì tiān",
             "note": "yī + tone 1 → yì (one day)",
-            "audio_key": "yi4_tian1"
+            "audio_key": "yi4_tian1",
+            "word": "一天",
+            "meaning": "one day"
           },
           {
             "pinyin": "yì qiān",
             "note": "yī + tone 1 → yì (one thousand)",
-            "audio_key": "yi4_qian1"
+            "audio_key": "yi4_qian1",
+            "word": "一千",
+            "meaning": "one thousand"
           },
           {
             "pinyin": "yì qǐ",
             "note": "yī + tone 3 → yì (together)",
-            "audio_key": "yi4_qi3"
+            "audio_key": "yi4_qi3",
+            "word": "一起",
+            "meaning": "together"
           },
           {
             "pinyin": "dì yī",
             "note": "yī at phrase-end stays yī (first)",
-            "audio_key": "di4_yi1"
+            "audio_key": "di4_yi1",
+            "word": "第一",
+            "meaning": "first / number one"
           },
           {
             "pinyin": "shí yī",
             "note": "yī at phrase-end stays yī (eleven)",
-            "audio_key": "shi2_yi1"
+            "audio_key": "shi2_yi1",
+            "word": "十一",
+            "meaning": "eleven"
           }
         ]
       },
@@ -114,27 +126,37 @@
           {
             "pinyin": "bù hǎo",
             "note": "bù + tone 3 → stays bù (not good)",
-            "audio_key": "bu4_hao3"
+            "audio_key": "bu4_hao3",
+            "word": "不好",
+            "meaning": "not good"
           },
           {
             "pinyin": "bù néng",
             "note": "bù + tone 2 → stays bù (cannot)",
-            "audio_key": "bu4_neng2"
+            "audio_key": "bu4_neng2",
+            "word": "不能",
+            "meaning": "cannot"
           },
           {
             "pinyin": "bú duì",
             "note": "bù + tone 4 → spoken: bú duì (incorrect)",
-            "audio_key": "bu2_dui4"
+            "audio_key": "bu2_dui4",
+            "word": "不对",
+            "meaning": "incorrect"
           },
           {
             "pinyin": "bú shì",
             "note": "bù + tone 4 → spoken: bú shì (is not)",
-            "audio_key": "bu2_shi4"
+            "audio_key": "bu2_shi4",
+            "word": "不是",
+            "meaning": "is not"
           },
           {
             "pinyin": "bú cuò",
             "note": "bù + tone 4 → spoken: bú cuò (not bad)",
-            "audio_key": "bu2_cuo4"
+            "audio_key": "bu2_cuo4",
+            "word": "不错",
+            "meaning": "not bad"
           }
         ]
       },
@@ -145,22 +167,30 @@
           {
             "pinyin": "yí gè",
             "note": "one (before tone 4)",
-            "audio_key": "yi2_ge4"
+            "audio_key": "yi2_ge4",
+            "word": "一个",
+            "meaning": "one (+ measure word)"
           },
           {
             "pinyin": "yì tiān",
             "note": "one day (before tone 1)",
-            "audio_key": "yi4_tian1"
+            "audio_key": "yi4_tian1",
+            "word": "一天",
+            "meaning": "one day"
           },
           {
             "pinyin": "bú duì",
             "note": "incorrect (before tone 4)",
-            "audio_key": "bu2_dui4"
+            "audio_key": "bu2_dui4",
+            "word": "不对",
+            "meaning": "incorrect"
           },
           {
             "pinyin": "bù hǎo",
             "note": "not good (before tone 3)",
-            "audio_key": "bu4_hao3"
+            "audio_key": "bu4_hao3",
+            "word": "不好",
+            "meaning": "not good"
           }
         ]
       }
@@ -723,52 +753,167 @@
       "syllable": "yí",
       "audio_key": "yi2_ge4",
       "correct": "2",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "yì",
       "audio_key": "yi4_tian1",
       "correct": "4",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "bú",
       "audio_key": "bu2_dui4",
       "correct": "2",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "bù",
       "audio_key": "bu4_hao3",
       "correct": "4",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "yī",
       "audio_key": "di4_yi1",
       "correct": "1",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     }
   ],
   "stage4_pool": [
-    { "type": "listen_record", "syllable": "yí gè", "audio_key": "yi2_ge4", "chinese": "一个", "meaning": "one (+ measure word)" },
-    { "type": "listen_record", "syllable": "yì tiān", "audio_key": "yi4_tian1", "chinese": "一天", "meaning": "one day" },
-    { "type": "listen_record", "syllable": "yì qǐ", "audio_key": "yi4_qi3", "chinese": "一起", "meaning": "together" },
-    { "type": "listen_record", "syllable": "bú duì", "audio_key": "bu2_dui4", "chinese": "不对", "meaning": "wrong/incorrect" },
-    { "type": "listen_record", "syllable": "bù hǎo", "audio_key": "bu4_hao3", "chinese": "不好", "meaning": "not good" },
-    { "type": "listen_record", "syllable": "bú shì", "audio_key": "bu2_shi4", "chinese": "不是", "meaning": "is not" },
-    { "type": "listen_record", "syllable": "dì yī", "audio_key": "di4_yi1", "chinese": "第一", "meaning": "number one/first" },
-    { "type": "listen_record", "syllable": "shí yī", "audio_key": "shi2_yi1", "chinese": "十一", "meaning": "eleven" },
-    { "type": "listen_record", "syllable": "yì bǎi", "audio_key": "yi4_bai3", "chinese": "一百", "meaning": "one hundred" },
-    { "type": "listen_record", "syllable": "bú cuò", "audio_key": "bu2_cuo4", "chinese": "不错", "meaning": "not bad/pretty good" },
-    { "type": "listen_record", "syllable": "yí wèi", "audio_key": "yi2_wei4", "chinese": "一位", "meaning": "one (person, polite)" },
-    { "type": "listen_record", "syllable": "yí cì", "audio_key": "yi2_ci4", "chinese": "一次", "meaning": "one time" },
-    { "type": "listen_record", "syllable": "bù néng", "audio_key": "bu4_neng2", "chinese": "不能", "meaning": "cannot" },
-    { "type": "listen_record", "syllable": "bù xíng", "audio_key": "bu4_xing2", "chinese": "不行", "meaning": "not OK/won't work" },
-    { "type": "listen_record", "syllable": "yì qiān", "audio_key": "yi4_qian1", "chinese": "一千", "meaning": "one thousand" }
+    {
+      "type": "listen_record",
+      "syllable": "yí gè",
+      "audio_key": "yi2_ge4",
+      "chinese": "一个",
+      "meaning": "one (+ measure word)"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yì tiān",
+      "audio_key": "yi4_tian1",
+      "chinese": "一天",
+      "meaning": "one day"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yì qǐ",
+      "audio_key": "yi4_qi3",
+      "chinese": "一起",
+      "meaning": "together"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bú duì",
+      "audio_key": "bu2_dui4",
+      "chinese": "不对",
+      "meaning": "wrong/incorrect"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bù hǎo",
+      "audio_key": "bu4_hao3",
+      "chinese": "不好",
+      "meaning": "not good"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bú shì",
+      "audio_key": "bu2_shi4",
+      "chinese": "不是",
+      "meaning": "is not"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "dì yī",
+      "audio_key": "di4_yi1",
+      "chinese": "第一",
+      "meaning": "number one/first"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "shí yī",
+      "audio_key": "shi2_yi1",
+      "chinese": "十一",
+      "meaning": "eleven"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yì bǎi",
+      "audio_key": "yi4_bai3",
+      "chinese": "一百",
+      "meaning": "one hundred"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bú cuò",
+      "audio_key": "bu2_cuo4",
+      "chinese": "不错",
+      "meaning": "not bad/pretty good"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yí wèi",
+      "audio_key": "yi2_wei4",
+      "chinese": "一位",
+      "meaning": "one (person, polite)"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yí cì",
+      "audio_key": "yi2_ci4",
+      "chinese": "一次",
+      "meaning": "one time"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bù néng",
+      "audio_key": "bu4_neng2",
+      "chinese": "不能",
+      "meaning": "cannot"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bù xíng",
+      "audio_key": "bu4_xing2",
+      "chinese": "不行",
+      "meaning": "not OK/won't work"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yì qiān",
+      "audio_key": "yi4_qian1",
+      "chinese": "一千",
+      "meaning": "one thousand"
+    }
   ]
 }

@@ -64,17 +64,24 @@
           {
             "pinyin": "yī",
             "note": "y + i = yi (one)",
-            "audio_key": "yi1"
+            "audio_key": "yi1",
+            "word": "一",
+            "meaning": "one"
           },
           {
             "pinyin": "yú",
             "note": "y + ü = yu",
-            "audio_key": "yu2"
+            "audio_key": "yu2",
+            "word": "鱼🐟",
+            "meaning": "fish"
           },
           {
             "pinyin": "wū",
             "note": "w + u = wu (five)",
-            "audio_key": "wu1"
+            "audio_key": "wu1",
+            "word": "屋子🏡",
+            "word_pinyin": "wūzi",
+            "meaning": "room"
           }
         ]
       },
@@ -82,36 +89,112 @@
         "title": "Initial + ang",
         "rule": "b p m f d t n l g k h zh ch sh r z c s combine with 'ang'",
         "examples": [
-          { "pinyin": "yáng",  "note": "y (standalone)", "audio_key": "yang2" },
-          { "pinyin": "wáng",  "note": "w (standalone)", "audio_key": "wang2" },
-          { "pinyin": "zhāng", "note": "zh + ang",       "audio_key": "zhang1" },
-          { "pinyin": "shāng", "note": "sh + ang",       "audio_key": "shang1" }
+          {
+            "pinyin": "yáng",
+            "note": "y (standalone)",
+            "audio_key": "yang2",
+            "word": "羊🐑",
+            "meaning": "sheep / goat"
+          },
+          {
+            "pinyin": "wáng",
+            "note": "w (standalone)",
+            "audio_key": "wang2",
+            "word": "王🫅",
+            "meaning": "king / surname Wang"
+          },
+          {
+            "pinyin": "zhāng",
+            "note": "zh + ang",
+            "audio_key": "zhang1",
+            "word": "张",
+            "meaning": "surname / sheet (measure word)"
+          },
+          {
+            "pinyin": "shāng",
+            "note": "sh + ang",
+            "audio_key": "shang1",
+            "word": "商店🏪",
+            "word_pinyin": "shāngdiàn",
+            "meaning": "shop / store"
+          }
         ]
       },
       {
         "title": "Initial + eng",
         "rule": "b p m f d t n l g k h zh ch sh r z c s combine with 'eng'",
         "examples": [
-          { "pinyin": "néng",  "note": "n + eng",  "audio_key": "neng2" },
-          { "pinyin": "wèng",  "note": "w (standalone)", "audio_key": "weng4" }
+          {
+            "pinyin": "néng",
+            "note": "n + eng",
+            "audio_key": "neng2",
+            "word": "能",
+            "meaning": "can / be able"
+          },
+          {
+            "pinyin": "wèng",
+            "note": "w (standalone)",
+            "audio_key": "weng4"
+          }
         ]
       },
       {
         "title": "Initial + ing",
         "rule": "b p m d t n l j q x combine with 'ing'",
         "examples": [
-          { "pinyin": "míng",  "note": "m + ing",  "audio_key": "ming2" },
-          { "pinyin": "yīng",  "note": "y (standalone)", "audio_key": "ying1" }
+          {
+            "pinyin": "míng",
+            "note": "m + ing",
+            "audio_key": "ming2",
+            "word": "名字",
+            "word_pinyin": "míngzi",
+            "meaning": "name"
+          },
+          {
+            "pinyin": "yīng",
+            "note": "y (standalone)",
+            "audio_key": "ying1",
+            "word": "英语",
+            "word_pinyin": "Yīngyǔ",
+            "meaning": "English language"
+          }
         ]
       },
       {
         "title": "Initial + ong",
         "rule": "d t n l g k h zh ch sh r z c s combine with 'ong'",
         "examples": [
-          { "pinyin": "dōng",  "note": "d + ong",  "audio_key": "dong1" },
-          { "pinyin": "zhōng", "note": "zh + ong", "audio_key": "zhong1" },
-          { "pinyin": "chóng", "note": "ch + ong", "audio_key": "chong2" },
-          { "pinyin": "cóng",  "note": "c + ong",  "audio_key": "cong2" }
+          {
+            "pinyin": "dōng",
+            "note": "d + ong",
+            "audio_key": "dong1",
+            "word": "冬天🥶",
+            "word_pinyin": "dōngtiān",
+            "meaning": "winter"
+          },
+          {
+            "pinyin": "zhōng",
+            "note": "zh + ong",
+            "audio_key": "zhong1",
+            "word": "中国🇨🇳",
+            "word_pinyin": "Zhōngguó",
+            "meaning": "China"
+          },
+          {
+            "pinyin": "chóng",
+            "note": "ch + ong",
+            "audio_key": "chong2",
+            "word": "虫子🐞",
+            "word_pinyin": "chóngzi",
+            "meaning": "insect / worm"
+          },
+          {
+            "pinyin": "cóng",
+            "note": "c + ong",
+            "audio_key": "cong2",
+            "word": "从",
+            "meaning": "from / since"
+          }
         ]
       }
     ]
@@ -643,63 +726,170 @@
       "syllable": "bāng",
       "audio_key": "fin_ang",
       "correct": "ang",
-      "choices": ["ang", "eng", "ing", "ong"]
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "dōng",
       "audio_key": "fin_ong",
       "correct": "ong",
-      "choices": ["ang", "eng", "ing", "ong"]
+      "choices": [
+        "ang",
+        "eng",
+        "ing",
+        "ong"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "bān",
       "audio_key": "fin_an",
       "correct": "an",
-      "choices": ["an", "ang", "in", "ing"]
+      "choices": [
+        "an",
+        "ang",
+        "in",
+        "ing"
+      ]
     },
     {
       "type": "listen_initial",
       "syllable": "yī",
       "audio_key": "init_y",
       "correct": "y",
-      "choices": ["y", "w", "j", "x"]
+      "choices": [
+        "y",
+        "w",
+        "j",
+        "x"
+      ]
     },
     {
       "type": "listen_initial",
       "syllable": "wū",
       "audio_key": "init_w",
       "correct": "w",
-      "choices": ["y", "w", "j", "x"]
+      "choices": [
+        "y",
+        "w",
+        "j",
+        "x"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "yáng",
       "audio_key": "yang2",
       "correct": "2",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "zhōng",
       "audio_key": "zhong1",
       "correct": "1",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     }
   ],
   "stage4_pool": [
-    { "type": "listen_record", "syllable": "yáng", "audio_key": "yang2", "chinese": "羊", "meaning": "sheep" },
-    { "type": "listen_record", "syllable": "wáng", "audio_key": "wang2", "chinese": "王", "meaning": "king" },
-    { "type": "listen_record", "syllable": "yīng", "audio_key": "ying1", "chinese": "英", "meaning": "hero" },
-    { "type": "listen_record", "syllable": "zhōng", "audio_key": "zhong1", "chinese": "中", "meaning": "middle" },
-    { "type": "listen_record", "syllable": "dōng", "audio_key": "dong1", "chinese": "东", "meaning": "east" },
-    { "type": "listen_record", "syllable": "péngyou", "audio_key": "peng2_you0", "chinese": "朋友", "meaning": "friend" },
-    { "type": "listen_record", "syllable": "shāng", "audio_key": "shang1", "chinese": "商", "meaning": "commerce" },
-    { "type": "listen_record", "syllable": "wèng", "audio_key": "weng4", "chinese": "瓮", "meaning": "jar" },
-    { "type": "listen_record", "syllable": "míng", "audio_key": "ming2", "chinese": "名", "meaning": "name" },
-    { "type": "listen_record", "syllable": "néng", "audio_key": "neng2", "chinese": "能", "meaning": "can/able" },
-    { "type": "listen_record", "syllable": "shàng", "audio_key": "shang4", "chinese": "上", "meaning": "above/up" },
-    { "type": "listen_record", "syllable": "yīng", "audio_key": "ying1", "chinese": "应", "meaning": "should" }
+    {
+      "type": "listen_record",
+      "syllable": "yáng",
+      "audio_key": "yang2",
+      "chinese": "羊",
+      "meaning": "sheep"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "wáng",
+      "audio_key": "wang2",
+      "chinese": "王",
+      "meaning": "king"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yīng",
+      "audio_key": "ying1",
+      "chinese": "英",
+      "meaning": "hero"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "zhōng",
+      "audio_key": "zhong1",
+      "chinese": "中",
+      "meaning": "middle"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "dōng",
+      "audio_key": "dong1",
+      "chinese": "东",
+      "meaning": "east"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "péngyou",
+      "audio_key": "peng2_you0",
+      "chinese": "朋友",
+      "meaning": "friend"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "shāng",
+      "audio_key": "shang1",
+      "chinese": "商",
+      "meaning": "commerce"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "wèng",
+      "audio_key": "weng4",
+      "chinese": "瓮",
+      "meaning": "jar"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "míng",
+      "audio_key": "ming2",
+      "chinese": "名",
+      "meaning": "name"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "néng",
+      "audio_key": "neng2",
+      "chinese": "能",
+      "meaning": "can/able"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "shàng",
+      "audio_key": "shang4",
+      "chinese": "上",
+      "meaning": "above/up"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yīng",
+      "audio_key": "ying1",
+      "chinese": "应",
+      "meaning": "should"
+    }
   ]
 }

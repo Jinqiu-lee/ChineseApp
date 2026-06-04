@@ -9,6 +9,7 @@ import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ER
 //  speak_record   — user sees syllable/character and records without auto-play
 
 const PASS_ACCURACY = 70;
+const MAX_ATTEMPTS  = 5;
 
 export default function PinyinRecordExercise({ exercise, onCorrect, onWrong, noAutoPlay = false }) {
   const { type, syllable, audio_key, chinese, meaning } = exercise;
@@ -18,6 +19,8 @@ export default function PinyinRecordExercise({ exercise, onCorrect, onWrong, noA
   const [isProcessing, setIsProcessing] = useState(false);
   const [result,       setResult]       = useState(null); // { accuracy, transcribed, passed }
   const [answered,     setAnswered]     = useState(false);
+  const [attempts,     setAttempts]     = useState(0);
+  const [bestAccuracy, setBestAccuracy] = useState(0);
 
   // Auto-play audio for listen_record exercises (unless disabled)
   useEffect(() => {
@@ -29,29 +32,35 @@ export default function PinyinRecordExercise({ exercise, onCorrect, onWrong, noA
 
   const playAudio = () => speakPinyin(audio_key || syllable);
 
+  const handleTryAgain = () => {
+    setResult(null);
+    setAnswered(false);
+  };
+
   const handleRecord = async () => {
     if (isRecording) {
-      // Stop and transcribe
       setIsRecording(false);
       setIsProcessing(true);
       try {
-        const hint     = chinese || syllable || '';
+        const hint        = chinese || syllable || '';
         const transcribed = await stopAndTranscribe(recording, hint);
         const accuracy    = calculateAccuracy(transcribed, hint);
         const passed      = accuracy >= PASS_ACCURACY;
+        const newAttempts = attempts + 1;
+        const newBest     = Math.max(bestAccuracy, accuracy);
+        setAttempts(newAttempts);
+        setBestAccuracy(newBest);
         setResult({ accuracy, transcribed, passed });
         setAnswered(true);
         setIsProcessing(false);
-        if (passed) {
-          setTimeout(() => onCorrect(), 1800);
-        }
       } catch (e) {
+        const newAttempts = attempts + 1;
+        setAttempts(newAttempts);
         setIsProcessing(false);
         setResult({ accuracy: 0, transcribed: '', passed: false });
         setAnswered(true);
       }
     } else {
-      // Start recording
       try {
         const rec = await startRecording();
         setRecording(rec);
@@ -117,17 +126,32 @@ export default function PinyinRecordExercise({ exercise, onCorrect, onWrong, noA
             <Text style={[styles.resultAccuracy, { color: result.passed ? SUCCESS : ERROR }]}>
               {result.accuracy}%
             </Text>
+            {!result.passed && (
+              <Text style={styles.attemptsLabel}>{attempts}/{MAX_ATTEMPTS}</Text>
+            )}
           </View>
           <Text style={styles.resultMsg}>
             {result.passed
               ? 'Great pronunciation!'
-              : `Aim for ${PASS_ACCURACY}%+ — try again next time`}
+              : attempts >= MAX_ATTEMPTS && bestAccuracy === 0
+                ? 'Moving on — try again next time'
+                : `Aim for ${PASS_ACCURACY}%+ · ${MAX_ATTEMPTS - attempts} tries left`}
           </Text>
           {result.transcribed ? (
             <Text style={styles.resultTranscribed}>Heard: {result.transcribed}</Text>
           ) : null}
-          {!result.passed && (
-            <TouchableOpacity style={styles.continueBtn} onPress={onWrong} activeOpacity={0.85}>
+          {result.passed && (
+            <TouchableOpacity style={styles.nextBtn} onPress={onCorrect} activeOpacity={0.85}>
+              <Text style={styles.nextBtnText}>Next →</Text>
+            </TouchableOpacity>
+          )}
+          {!result.passed && attempts < MAX_ATTEMPTS && (
+            <TouchableOpacity style={styles.tryAgainBtn} onPress={handleTryAgain} activeOpacity={0.85}>
+              <Text style={styles.tryAgainBtnText}>Try Again</Text>
+            </TouchableOpacity>
+          )}
+          {!result.passed && attempts >= MAX_ATTEMPTS && (
+            <TouchableOpacity style={styles.continueBtn} onPress={bestAccuracy === 0 ? onCorrect : onWrong} activeOpacity={0.85}>
               <Text style={styles.continueBtnText}>Continue →</Text>
             </TouchableOpacity>
           )}
@@ -185,6 +209,20 @@ const styles = StyleSheet.create({
   resultAccuracy: { fontSize: 28, fontWeight: '900' },
   resultMsg:  { fontSize: 14, color: DEEP_NAVY, lineHeight: 20 },
   resultTranscribed: { fontSize: 13, color: SLATE_TEAL, fontStyle: 'italic' },
+
+  attemptsLabel: { fontSize: 13, fontWeight: '700', color: ERROR, marginLeft: 8 },
+
+  nextBtn: {
+    marginTop: 8, backgroundColor: SUCCESS, borderRadius: 14,
+    padding: 14, alignItems: 'center',
+  },
+  nextBtnText: { fontSize: 15, fontWeight: '800', color: CARD_WHITE },
+
+  tryAgainBtn: {
+    marginTop: 8, backgroundColor: WARM_ORANGE, borderRadius: 14,
+    padding: 14, alignItems: 'center',
+  },
+  tryAgainBtnText: { fontSize: 15, fontWeight: '800', color: CARD_WHITE },
 
   continueBtn: {
     marginTop: 8, backgroundColor: DEEP_NAVY, borderRadius: 14,

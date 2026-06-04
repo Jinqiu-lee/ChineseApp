@@ -65,56 +65,266 @@
         "title": "Initial + an",
         "rule": "b p m f d t n l g k h combine with 'an'",
         "examples": [
-          { "pinyin": "bān",  "note": "b + an", "audio_key": "ban1" },
-          { "pinyin": "pán",  "note": "p + an", "audio_key": "pan2" },
-          { "pinyin": "màn",  "note": "m + an", "audio_key": "man4" },
-          { "pinyin": "fān",  "note": "f + an", "audio_key": "fan1" },
-          { "pinyin": "dān",  "note": "d + an", "audio_key": "dan1" },
-          { "pinyin": "tán",  "note": "t + an", "audio_key": "tan2" },
-          { "pinyin": "nán",  "note": "n + an", "audio_key": "nan2" },
-          { "pinyin": "lán",  "note": "l + an", "audio_key": "lan2" },
-          { "pinyin": "gān",  "note": "g + an", "audio_key": "gan1" },
-          { "pinyin": "kàn",  "note": "k + an", "audio_key": "kan4" },
-          { "pinyin": "hàn",  "note": "h + an", "audio_key": "han4" },
-          { "pinyin": "zhān", "note": "zh + an","audio_key": "zhan1" },
-          { "pinyin": "rán",  "note": "r + an", "audio_key": "ran2" },
-          { "pinyin": "sān",  "note": "s + an", "audio_key": "san1" },
-          { "pinyin": "cān",  "note": "c + an", "audio_key": "can1" }
+          {
+            "pinyin": "bān",
+            "note": "b + an",
+            "audio_key": "ban1",
+            "word": "班",
+            "meaning": "class / shift"
+          },
+          {
+            "pinyin": "pán",
+            "note": "p + an",
+            "audio_key": "pan2",
+            "word": "盘子",
+            "word_pinyin": "pánzi",
+            "meaning": "plate / dish"
+          },
+          {
+            "pinyin": "màn",
+            "note": "m + an",
+            "audio_key": "man4",
+            "word": "慢",
+            "meaning": "slow"
+          },
+          {
+            "pinyin": "fān",
+            "note": "f + an",
+            "audio_key": "fan1",
+            "word": "翻",
+            "meaning": "flip / turn over"
+          },
+          {
+            "pinyin": "dān",
+            "note": "d + an",
+            "audio_key": "dan1",
+            "word": "单",
+            "meaning": "single / simple"
+          },
+          {
+            "pinyin": "tán",
+            "note": "t + an",
+            "audio_key": "tan2",
+            "word": "谈话💬",
+            "word_pinyin": "tánhuà",
+            "meaning": "conversation / talk"
+          },
+          {
+            "pinyin": "nán",
+            "note": "n + an",
+            "audio_key": "nan2",
+            "word": "南方",
+            "word_pinyin": "nánfāng",
+            "meaning": "the south"
+          },
+          {
+            "pinyin": "lán",
+            "note": "l + an",
+            "audio_key": "lan2",
+            "word": "蓝色🔵",
+            "word_pinyin": "lánsè",
+            "meaning": "blue"
+          },
+          {
+            "pinyin": "gān",
+            "note": "g + an",
+            "audio_key": "gan1",
+            "word": "干净",
+            "word_pinyin": "gānjìng",
+            "meaning": "clean"
+          },
+          {
+            "pinyin": "kàn",
+            "note": "k + an",
+            "audio_key": "kan4",
+            "word": "看👀",
+            "meaning": "watch / look"
+          },
+          {
+            "pinyin": "hàn",
+            "note": "h + an",
+            "audio_key": "han4",
+            "word": "汉字",
+            "word_pinyin": "hànzì",
+            "meaning": "Chinese characters"
+          },
+          {
+            "pinyin": "zhān",
+            "note": "zh + an",
+            "audio_key": "zhan1",
+            "word": "粘",
+            "meaning": "sticky / cling"
+          },
+          {
+            "pinyin": "rán",
+            "note": "r + an",
+            "audio_key": "ran2",
+            "word": "当然",
+            "word_pinyin": "dāngrán",
+            "meaning": "of course"
+          },
+          {
+            "pinyin": "sān",
+            "note": "s + an",
+            "audio_key": "san1",
+            "word": "三",
+            "meaning": "three"
+          },
+          {
+            "pinyin": "cān",
+            "note": "c + an",
+            "audio_key": "can1",
+            "word": "餐厅",
+            "word_pinyin": "cāntīng",
+            "meaning": "restaurant"
+          }
         ]
       },
       {
         "title": "Initial + en",
         "rule": "b p m f d n g h zh ch sh r z combine with 'en'",
         "examples": [
-          { "pinyin": "bēn",  "note": "b + en", "audio_key": "ben1" },
-          { "pinyin": "pén",  "note": "p + en", "audio_key": "pen2" },
-          { "pinyin": "mén",  "note": "m + en", "audio_key": "men2" },
-          { "pinyin": "fēn",  "note": "f + en", "audio_key": "fen1" },
-          { "pinyin": "gēn",  "note": "g + en", "audio_key": "gen1" },
-          { "pinyin": "hěn",  "note": "h + en", "audio_key": "hen3" },
-          { "pinyin": "zhēn", "note": "zh + en","audio_key": "zhen1" },
-          { "pinyin": "chén", "note": "ch + en","audio_key": "chen2" },
-          { "pinyin": "shén", "note": "sh + en","audio_key": "shen2" },
-          { "pinyin": "rén",  "note": "r + en", "audio_key": "ren2" }
+          {
+            "pinyin": "bēn",
+            "note": "b + en",
+            "audio_key": "ben1",
+            "word": "奔跑",
+            "word_pinyin": "bēnpǎo",
+            "meaning": "run / dash"
+          },
+          {
+            "pinyin": "pén",
+            "note": "p + en",
+            "audio_key": "pen2",
+            "word": "盆子",
+            "word_pinyin": "pénzi",
+            "meaning": "basin / pot"
+          },
+          {
+            "pinyin": "mén",
+            "note": "m + en",
+            "audio_key": "men2",
+            "word": "门🚪",
+            "meaning": "door"
+          },
+          {
+            "pinyin": "fēn",
+            "note": "f + en",
+            "audio_key": "fen1",
+            "word": "分钟",
+            "word_pinyin": "fēnzhōng",
+            "meaning": "minute"
+          },
+          {
+            "pinyin": "gēn",
+            "note": "g + en",
+            "audio_key": "gen1",
+            "word": "跟",
+            "meaning": "follow / with"
+          },
+          {
+            "pinyin": "hěn",
+            "note": "h + en",
+            "audio_key": "hen3",
+            "word": "很",
+            "meaning": "very"
+          },
+          {
+            "pinyin": "zhēn",
+            "note": "zh + en",
+            "audio_key": "zhen1",
+            "word": "真",
+            "meaning": "real / truly"
+          },
+          {
+            "pinyin": "chén",
+            "note": "ch + en",
+            "audio_key": "chen2",
+            "word": "沉",
+            "meaning": "sink / heavy"
+          },
+          {
+            "pinyin": "shén",
+            "note": "sh + en",
+            "audio_key": "shen2",
+            "word": "什么😲",
+            "word_pinyin": "shénme",
+            "meaning": "what"
+          },
+          {
+            "pinyin": "rén",
+            "note": "r + en",
+            "audio_key": "ren2",
+            "word": "人",
+            "meaning": "person"
+          }
         ]
       },
       {
         "title": "Initial + in",
         "rule": "b p m n l j q x combine with 'in'",
         "examples": [
-          { "pinyin": "bīn",  "note": "b + in", "audio_key": "bin1" },
-          { "pinyin": "pín",  "note": "p + in", "audio_key": "pin2" },
-          { "pinyin": "mǐn",  "note": "m + in", "audio_key": "min3" },
-          { "pinyin": "nín",  "note": "n + in", "audio_key": "nin2" },
-          { "pinyin": "lín",  "note": "l + in", "audio_key": "lin2" },
-          { "pinyin": "xīn",  "note": "x + in", "audio_key": "xin1" }
+          {
+            "pinyin": "bīn",
+            "note": "b + in",
+            "audio_key": "bin1",
+            "word": "宾馆",
+            "word_pinyin": "bīnguǎn",
+            "meaning": "hotel"
+          },
+          {
+            "pinyin": "pín",
+            "note": "p + in",
+            "audio_key": "pin2",
+            "word": "贫穷",
+            "word_pinyin": "pínqióng",
+            "meaning": "poverty / poor"
+          },
+          {
+            "pinyin": "mǐn",
+            "note": "m + in",
+            "audio_key": "min3",
+            "word": "敏感",
+            "word_pinyin": "mǐngǎn",
+            "meaning": "sensitive"
+          },
+          {
+            "pinyin": "nín",
+            "note": "n + in",
+            "audio_key": "nin2",
+            "word": "您",
+            "meaning": "you (polite)"
+          },
+          {
+            "pinyin": "lín",
+            "note": "l + in",
+            "audio_key": "lin2",
+            "word": "森林",
+            "word_pinyin": "sēnlín",
+            "meaning": "forest"
+          },
+          {
+            "pinyin": "xīn",
+            "note": "x + in",
+            "audio_key": "xin1",
+            "word": "心情",
+            "word_pinyin": "xīnqíng",
+            "meaning": "mood"
+          }
         ]
       },
       {
         "title": "Initial + ün",
         "rule": "j q x combine with 'ün' (written as jun qun xun — umlaut omitted after j q x)",
         "examples": [
-          { "pinyin": "jūn",  "note": "j + ün", "audio_key": "jun1" }
+          {
+            "pinyin": "jūn",
+            "note": "j + ün",
+            "audio_key": "jun1",
+            "word": "军人",
+            "word_pinyin": "jūnrén",
+            "meaning": "soldier"
+          }
         ]
       }
     ]
@@ -646,70 +856,182 @@
       "syllable": "bān",
       "audio_key": "fin_an",
       "correct": "an",
-      "choices": ["an", "en", "in", "un"]
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "un"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "mén",
       "audio_key": "fin_en",
       "correct": "en",
-      "choices": ["an", "en", "in", "un"]
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "un"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "xīn",
       "audio_key": "fin_in",
       "correct": "in",
-      "choices": ["an", "en", "in", "ün"]
+      "choices": [
+        "an",
+        "en",
+        "in",
+        "ün"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "jūn",
       "audio_key": "fin_vn",
       "correct": "ün",
-      "choices": ["in", "un", "ün", "en"]
+      "choices": [
+        "in",
+        "un",
+        "ün",
+        "en"
+      ]
     },
     {
       "type": "listen_initial",
       "syllable": "zī",
       "audio_key": "init_z",
       "correct": "z",
-      "choices": ["z", "c", "s", "zh"]
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "zh"
+      ]
     },
     {
       "type": "listen_initial",
       "syllable": "sī",
       "audio_key": "init_s",
       "correct": "s",
-      "choices": ["z", "c", "s", "sh"]
+      "choices": [
+        "z",
+        "c",
+        "s",
+        "sh"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "sān",
       "audio_key": "san1",
       "correct": "1",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "zài",
       "audio_key": "zai4",
       "correct": "4",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     }
   ],
   "stage4_pool": [
-    { "type": "listen_record", "syllable": "sān", "audio_key": "san1", "chinese": "三", "meaning": "three" },
-    { "type": "listen_record", "syllable": "zài", "audio_key": "zai4", "chinese": "在", "meaning": "at/exist" },
-    { "type": "listen_record", "syllable": "mén", "audio_key": "men2", "chinese": "门", "meaning": "door" },
-    { "type": "listen_record", "syllable": "fēn", "audio_key": "fen1", "chinese": "分", "meaning": "minute/cent" },
-    { "type": "listen_record", "syllable": "xīn", "audio_key": "xin1", "chinese": "心", "meaning": "heart" },
-    { "type": "listen_record", "syllable": "cūn", "audio_key": "cun1", "chinese": "村", "meaning": "village" },
-    { "type": "listen_record", "syllable": "jūn", "audio_key": "jun1", "chinese": "军", "meaning": "army" },
-    { "type": "listen_record", "syllable": "bān", "audio_key": "ban1", "chinese": "班", "meaning": "class" },
-    { "type": "listen_record", "syllable": "rén", "audio_key": "ren2", "chinese": "人", "meaning": "person" },
-    { "type": "listen_record", "syllable": "nín", "audio_key": "nin2", "chinese": "您", "meaning": "you (formal)" },
-    { "type": "listen_record", "syllable": "cóng", "audio_key": "cong2", "chinese": "从", "meaning": "from" },
-    { "type": "listen_record", "syllable": "shàng", "audio_key": "shang4", "chinese": "上", "meaning": "above/up" }
+    {
+      "type": "listen_record",
+      "syllable": "sān",
+      "audio_key": "san1",
+      "chinese": "三",
+      "meaning": "three"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "zài",
+      "audio_key": "zai4",
+      "chinese": "在",
+      "meaning": "at/exist"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "mén",
+      "audio_key": "men2",
+      "chinese": "门",
+      "meaning": "door"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "fēn",
+      "audio_key": "fen1",
+      "chinese": "分",
+      "meaning": "minute/cent"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "xīn",
+      "audio_key": "xin1",
+      "chinese": "心",
+      "meaning": "heart"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "cūn",
+      "audio_key": "cun1",
+      "chinese": "村",
+      "meaning": "village"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "jūn",
+      "audio_key": "jun1",
+      "chinese": "军",
+      "meaning": "army"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bān",
+      "audio_key": "ban1",
+      "chinese": "班",
+      "meaning": "class"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "rén",
+      "audio_key": "ren2",
+      "chinese": "人",
+      "meaning": "person"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "nín",
+      "audio_key": "nin2",
+      "chinese": "您",
+      "meaning": "you (formal)"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "cóng",
+      "audio_key": "cong2",
+      "chinese": "从",
+      "meaning": "from"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "shàng",
+      "audio_key": "shang4",
+      "chinese": "上",
+      "meaning": "above/up"
+    }
   ]
 }

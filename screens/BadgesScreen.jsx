@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
 
   rankCard: {
     backgroundColor: 'rgba(255,255,255,0.12)',
-    borderRadius: 20,
+    borderRadius: 8,
     padding: 20,
     borderWidth: 1.5,
     marginBottom: 12,
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 14,
     backgroundColor: 'rgba(255,243,205,0.12)',
-    borderRadius: 16,
+    borderRadius: 8,
     padding: 16,
     borderWidth: 1,
     borderColor: 'rgba(255,214,0,0.3)',
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
   },
   badgeCard: {
     width: '47%',
-    borderRadius: 18,
+    borderRadius: 8,
     padding: 16,
     alignItems: 'center',
     gap: 4,

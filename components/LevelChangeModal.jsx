@@ -8,8 +8,8 @@ import { DEEP_NAVY, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from "../constants/colo
 const ALL_LEVELS = [
   { id: "hsk1", label: "Level 1 – Beginner",             badge: "🌻", color: "#9B6846", desc: "Complete beginner, starting from scratch" },
   { id: "hsk2", label: "Level 2 – Explorer",             badge: "☕", color: "#E8522A", desc: "Know basics, ready to build vocabulary" },
-  { id: "hsk3", label: "Level 3 – Conversation Builder", badge: "🌾", color: "#0c6e16", desc: "Can hold simple conversations" },
-  { id: "hsk4", label: "Level 4 – Confident Speaker",    badge: "🏡", color: "#BE7A62", desc: "Comfortable with everyday Chinese" },
+  { id: "hsk3", label: "Level 3 – Connector", badge: "🌾", color: "#0c6e16", desc: "Can hold simple conversations" },
+  { id: "hsk4", label: "Level 4 – Fluent",    badge: "🏡", color: "#BE7A62", desc: "Comfortable with everyday Chinese" },
   { id: "hsk5", label: "Level 5 – Communicator",         badge: "🌌", color: "#384fa3", desc: "Advanced, near-fluent communication" },
   { id: "hsk6", label: "Level 6 – Advanced",             badge: "🌼", color: "#374950", desc: "Advanced fluency — HSK 6" },
 ];

@@ -33,8 +33,8 @@ const PINYIN_HINT_LEVELS = new Set(['hsk2', 'hsk3', 'hsk4', 'hsk5']);
 
 const NEXT_LEVEL = {
   hsk1: { emoji: '🚶', name: 'Level 2 – Explorer' },
-  hsk2: { emoji: '🗣',  name: 'Level 3 – Conversation Builder' },
-  hsk3: { emoji: '🌟', name: 'Level 4 – Confident Speaker' },
+  hsk2: { emoji: '🗣',  name: 'Level 3 – Connector' },
+  hsk3: { emoji: '🌟', name: 'Level 4 – Fluent' },
   hsk4: { emoji: '🔥', name: 'Level 5 – Communicator' },
   hsk5: { emoji: '🎓', name: 'Level 6 – Advanced' },
 };
@@ -836,7 +836,7 @@ const styles = StyleSheet.create({
   difficultyHard: { backgroundColor: '#fde8e8' },
   difficultyText: { fontSize: 11, fontWeight: '800', color: DEEP_NAVY, letterSpacing: 0.5 },
 
-  questionCard: { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 24, marginBottom: 24, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
+  questionCard: { backgroundColor: CARD_WHITE, borderRadius: 8, padding: 24, marginBottom: 24, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
   questionText: { fontSize: 16, fontWeight: '700', color: DEEP_NAVY, lineHeight: 26 },
   questionPinyin: { fontSize: 15, color: WARM_ORANGE, fontStyle: 'italic', marginTop: 8 },
 
@@ -862,7 +862,7 @@ const styles = StyleSheet.create({
   nextButtonText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 
   // Unlock card
-  unlockCard:       { backgroundColor: '#e8f5e9', borderRadius: 24, padding: 28, alignItems: 'center', marginBottom: 16, borderWidth: 2, borderColor: SUCCESS },
+  unlockCard:       { backgroundColor: '#e8f5e9', borderRadius: 8, padding: 28, alignItems: 'center', marginBottom: 16, borderWidth: 2, borderColor: SUCCESS },
   unlockEmoji:      { fontSize: 52, marginBottom: 8 },
   unlockTitle:      { fontSize: 28, fontWeight: '900', color: SUCCESS, marginBottom: 12 },
   unlockLevelRow:   { alignItems: 'center', gap: 6 },
@@ -872,7 +872,7 @@ const styles = StyleSheet.create({
 
   // Results container
   resultsContainer: { flexGrow: 1, padding: 20, paddingBottom: 40 },
-  resultsCard: { backgroundColor: CARD_WHITE, borderRadius: 24, padding: 32, alignItems: 'center', marginBottom: 20, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
+  resultsCard: { backgroundColor: CARD_WHITE, borderRadius: 8, padding: 32, alignItems: 'center', marginBottom: 20, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
   resultsEmoji: { fontSize: 64, marginBottom: 16 },
   resultsTitle: { fontSize: 28, fontWeight: '900', color: DEEP_NAVY, marginBottom: 8 },
   resultsSubtitle: { fontSize: 16, color: WARM_ORANGE, marginBottom: 24 },
@@ -881,7 +881,7 @@ const styles = StyleSheet.create({
   scoreText: { fontSize: 42, fontWeight: '900' },
   scoreLabel: { fontSize: 13, color: SLATE_TEAL, marginTop: 4 },
 
-  statsBox: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#f8f6f2', borderRadius: 16, padding: 20, width: '100%', marginBottom: 16, borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)' },
+  statsBox: { flexDirection: 'row', alignItems: 'center', backgroundColor: '#f8f6f2', borderRadius: 8, padding: 20, width: '100%', marginBottom: 16, borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)' },
   statItem: { flex: 1, alignItems: 'center' },
   statNumber: { fontSize: 24, fontWeight: '800', color: DEEP_NAVY, marginBottom: 4 },
   statLabel: { fontSize: 12, color: SLATE_TEAL },
@@ -889,14 +889,14 @@ const styles = StyleSheet.create({
 
   passingText: { fontSize: 13, color: SLATE_TEAL, marginBottom: 16 },
 
-  encouragementBox: { backgroundColor: '#FFF8ED', padding: 16, borderRadius: 12, width: '100%' },
+  encouragementBox: { backgroundColor: '#FFF8ED', padding: 16, borderRadius: 6, width: '100%' },
   encouragementText: { fontSize: 14, color: WARM_ORANGE, textAlign: 'center', lineHeight: 20 },
 
   scorePairRow: { flexDirection: 'row', gap: 20, marginBottom: 24 },
   scorePairItem: { flex: 1, alignItems: 'center' },
 
   tomorrowBox: {
-    marginTop: 12, backgroundColor: '#eef2ff', borderRadius: 12, padding: 16,
+    marginTop: 12, backgroundColor: '#eef2ff', borderRadius: 6, padding: 16,
     width: '100%', borderWidth: 1, borderColor: 'rgba(100,116,255,0.3)',
     flexDirection: 'row', alignItems: 'flex-start', gap: 10,
   },
@@ -916,16 +916,16 @@ const styles = StyleSheet.create({
   doneButtonText: { fontSize: 16, fontWeight: '600', color: DEEP_NAVY },
 
   // Review Screen
-  reviewHeader: { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 24, marginBottom: 24, alignItems: 'center', borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
+  reviewHeader: { backgroundColor: CARD_WHITE, borderRadius: 8, padding: 24, marginBottom: 24, alignItems: 'center', borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
   reviewTitle: { fontSize: 24, fontWeight: '900', color: DEEP_NAVY, marginBottom: 8 },
   reviewSubtitle: { fontSize: 14, color: SLATE_TEAL },
 
-  perfectScore: { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 40, alignItems: 'center', borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
+  perfectScore: { backgroundColor: CARD_WHITE, borderRadius: 8, padding: 40, alignItems: 'center', borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
   perfectScoreEmoji: { fontSize: 64, marginBottom: 16 },
   perfectScoreText: { fontSize: 24, fontWeight: '900', color: SUCCESS, marginBottom: 8 },
   perfectScoreSubtext: { fontSize: 14, color: SLATE_TEAL },
 
-  reviewQuestionCard: { backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20, marginBottom: 20, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
+  reviewQuestionCard: { backgroundColor: CARD_WHITE, borderRadius: 8, padding: 20, marginBottom: 20, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)' },
   reviewQuestionHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 },
   reviewQuestionNumber: { fontSize: 16, fontWeight: '800', color: DEEP_NAVY },
   reviewQuestionText: { marginBottom: 20, paddingBottom: 20, borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)' },
@@ -933,17 +933,16 @@ const styles = StyleSheet.create({
   reviewAnswerSection: { marginBottom: 16 },
   reviewLabel: { fontSize: 14, fontWeight: '700', color: DEEP_NAVY, marginBottom: 8 },
 
-  wrongAnswerBox: { backgroundColor: 'rgba(196,80,58,0.10)', borderRadius: 12, padding: 14, borderWidth: 2, borderColor: ERROR },
+  wrongAnswerBox: { backgroundColor: 'rgba(196,80,58,0.10)', borderRadius: 6, padding: 14, borderWidth: 2, borderColor: ERROR },
   wrongAnswerText: { fontSize: 15, fontWeight: '600', color: ERROR },
 
-  correctAnswerBox: { backgroundColor: 'rgba(45,122,74,0.10)', borderRadius: 12, padding: 14, borderWidth: 2, borderColor: SUCCESS },
+  correctAnswerBox: { backgroundColor: 'rgba(45,122,74,0.10)', borderRadius: 6, padding: 14, borderWidth: 2, borderColor: SUCCESS },
   correctAnswerText: { fontSize: 15, fontWeight: '600', color: SUCCESS },
 
   // Avatar Final Screen
   hsk6HeroCard: {
-    backgroundColor: CARD_WHITE, borderRadius: 24, padding: 28, alignItems: 'center',
+    backgroundColor: CARD_WHITE, borderRadius: 8, padding: 28, alignItems: 'center',
     marginBottom: 24, borderWidth: 2,
-    shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.10, shadowRadius: 12, elevation: 6,
   },
   hsk6HeroEmoji:    { fontSize: 60, marginBottom: 10 },
   hsk6HeroTitle:    { fontSize: 28, fontWeight: '900', marginBottom: 6, textAlign: 'center' },
@@ -955,9 +954,8 @@ const styles = StyleSheet.create({
   },
   avatarGrid:  { flexDirection: 'row', flexWrap: 'wrap', gap: 12, marginBottom: 24 },
   avatarCard: {
-    width: '47%', backgroundColor: CARD_WHITE, borderRadius: 18, padding: 12,
+    width: '47%', backgroundColor: CARD_WHITE, borderRadius: 8, padding: 12,
     alignItems: 'center', borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
-    shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.08, shadowRadius: 6, elevation: 3,
   },
   avatarImg:    { width: 72, height: 72, borderRadius: 36, marginBottom: 8, backgroundColor: '#f0ebe3' },
   avatarName:   { fontSize: 11, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center', marginBottom: 5 },
@@ -966,7 +964,6 @@ const styles = StyleSheet.create({
 
   studyAgainButton: {
     backgroundColor: WARM_ORANGE, padding: 16, borderRadius: 16, alignItems: 'center',
-    shadowColor: '#000', shadowOffset: { width: 0, height: 3 }, shadowOpacity: 0.15, shadowRadius: 8, elevation: 4,
   },
   studyAgainButtonText: { fontSize: 16, fontWeight: '900', color: CARD_WHITE },
 
@@ -975,10 +972,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 20,
     marginBottom: 8,
-    marginHorizontal: 16,
     paddingHorizontal: 28,
     paddingVertical: 20,
-    borderRadius: 16,
+    borderRadius: 0,
   },
   vgLevelAvatar: {
     width: 56,
@@ -1004,12 +1000,11 @@ const styles = StyleSheet.create({
   vgPassBlock: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    marginHorizontal: 16,
     marginTop: 16,
     marginBottom: 8,
     paddingHorizontal: 18,
     paddingVertical: 16,
-    borderRadius: 16,
+    borderRadius: 0,
     gap: 12,
   },
   vgPassAvatar: {
@@ -1036,12 +1031,11 @@ const styles = StyleSheet.create({
   vgFailedBlock: {
     flexDirection: 'row',
     alignItems: 'flex-start',
-    marginHorizontal: 16,
     marginTop: 16,
     marginBottom: 8,
     paddingHorizontal: 18,
     paddingVertical: 16,
-    borderRadius: 16,
+    borderRadius: 0,
     gap: 12,
   },
   vgFailedAvatar: {

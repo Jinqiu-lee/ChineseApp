@@ -1,12 +1,16 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, ActivityIndicator } from 'react-native';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, ActivityIndicator, Animated } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { speakPinyin } from '../utils/tts';
 import PinyinLessonExercise from '../components/exercises/PinyinLessonExercise';
 import PinyinRecordExercise from '../components/exercises/PinyinRecordExercise';
 import { buildStage1, buildStage2, buildStage3, buildStage4 } from '../utils/pinyinLessonGenerator';
 import { startRecording, stopAndTranscribe, calculateAccuracy } from '../utils/speechRecognition';
 import ScreenBackground from '../components/ScreenBackground';
+import AvatarCharacter from '../components/AvatarCharacter';
+import { getAvatar } from '../config/avatarConfig';
+import { getPinyinStageMessage } from '../data/emotionalContent';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../constants/colors';
 
 const STAGE_META = [
@@ -29,11 +33,27 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
   const [score,   setScore]   = useState(0);
   const [done,    setDone]    = useState(false);
 
+  const [guideAvatarId, setGuideAvatarId] = useState('eileen');
+  const avatarOpacity = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    AsyncStorage.getItem('avatarId').then(id => { if (id) setGuideAvatarId(id); }).catch(() => {});
+  }, []);
+
+  useEffect(() => {
+    if (!done) return;
+    const t = setTimeout(() => {
+      Animated.timing(avatarOpacity, { toValue: 1, duration: 600, useNativeDriver: true }).start();
+    }, 400);
+    return () => clearTimeout(t);
+  }, [done]);
+
   // Stage 2 recording state
   const [speakRec,          setSpeakRec]          = useState(null);
   const [speakIsRecording,  setSpeakIsRecording]  = useState(false);
   const [speakIsProcessing, setSpeakIsProcessing] = useState(false);
   const [speakResult,       setSpeakResult]       = useState(null);
+  const [speakAttempts,     setSpeakAttempts]     = useState(0);
 
   const meta = STAGE_META[stageIndex] ?? STAGE_META[0];
   const exercise = exercises[current];
@@ -45,6 +65,7 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
       setSpeakIsRecording(false);
       setSpeakIsProcessing(false);
       setSpeakResult(null);
+      setSpeakAttempts(0);
       if (exercise) speakPinyin(exercise.audio_key || exercise.syllable);
     }
   }, [current, stageIndex]);
@@ -61,12 +82,14 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
       setSpeakIsRecording(false);
       setSpeakIsProcessing(true);
       try {
-        const item       = exercises[current];
-        const hint       = item?.chinese || item?.syllable || '';
+        const item        = exercises[current];
+        const hint        = item?.chinese || item?.syllable || '';
         const transcribed = await stopAndTranscribe(speakRec, hint);
         const accuracy    = calculateAccuracy(transcribed, hint);
+        setSpeakAttempts(n => n + 1);
         setSpeakResult({ accuracy, transcribed, passed: accuracy >= 70 });
       } catch {
+        setSpeakAttempts(n => n + 1);
         setSpeakResult({ accuracy: 0, transcribed: '', passed: false });
       } finally {
         setSpeakIsProcessing(false);
@@ -80,6 +103,10 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
         console.warn('Microphone error:', e);
       }
     }
+  };
+
+  const handleSpeakTryAgain = () => {
+    setSpeakResult(null);
   };
 
   // Stage 2 speak cards — listen, then record yourself repeating
@@ -126,16 +153,23 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
           <View style={[styles.speakResultCard, speakResult.passed ? styles.resultPass : styles.resultFail]}>
             <Text style={[styles.speakResultAccuracy, { color: speakResult.passed ? SUCCESS : ERROR }]}>
               {speakResult.passed ? '✓ ' : '✗ '}{speakResult.accuracy}%
+              {!speakResult.passed && (
+                <Text style={{ fontSize: 13, fontWeight: '600' }}>  {speakAttempts}/5</Text>
+              )}
             </Text>
             <Text style={styles.speakResultMsg}>
               {speakResult.passed ? 'Great pronunciation!' : 'Keep practicing!'}
             </Text>
+            {!speakResult.passed && speakAttempts < 5 && (
+              <TouchableOpacity style={styles.tryAgainBtn} onPress={handleSpeakTryAgain} activeOpacity={0.85}>
+                <Text style={styles.tryAgainBtnText}>Try Again · {5 - speakAttempts} left</Text>
+              </TouchableOpacity>
+            )}
+            <TouchableOpacity style={styles.gotItBtn} onPress={() => advance(true)} activeOpacity={0.85}>
+              <Text style={styles.gotItText}>{speakResult.passed ? '✓  Next' : 'Continue →'}</Text>
+            </TouchableOpacity>
           </View>
         )}
-
-        <TouchableOpacity style={styles.gotItBtn} onPress={() => advance(true)} activeOpacity={0.85}>
-          <Text style={styles.gotItText}>✓  Next</Text>
-        </TouchableOpacity>
       </View>
     );
   };
@@ -144,10 +178,15 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
   if (done) {
     const pct = exercises.length > 0 ? Math.round((score / exercises.length) * 100) : 100;
     const isSpeakStage = stageIndex === 1;
+    const av  = getAvatar(guideAvatarId);
+    const msg = getPinyinStageMessage(guideAvatarId);
     return (
       <ScreenBackground levelId="pinyin">
         <SafeAreaView style={styles.safe}>
-          <View style={styles.doneContainer}>
+          <ScrollView
+            contentContainerStyle={styles.doneContainer}
+            showsVerticalScrollIndicator={false}
+          >
             <Text style={styles.doneEmoji}>{pct >= 70 ? '🎉' : '💪'}</Text>
             <View style={styles.doneCard}>
               <Text style={styles.doneTitle}>{meta.title}</Text>
@@ -159,7 +198,14 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
                 <Text style={styles.doneBtnText}>← Back to Lesson</Text>
               </TouchableOpacity>
             </View>
-          </View>
+
+            {/* Guide avatar message */}
+            <Animated.View style={[styles.avatarMsgCard, { opacity: avatarOpacity }]}>
+              <AvatarCharacter avatarId={guideAvatarId} expression="happy" size={68} />
+              <Text style={styles.avatarMsgName}>{av?.englishName}</Text>
+              <Text style={styles.avatarMsgText}>"{msg}"</Text>
+            </Animated.View>
+          </ScrollView>
         </SafeAreaView>
       </ScreenBackground>
     );
@@ -192,9 +238,14 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
 
         {/* Exercise */}
         {isSpeakStage ? (
-          <View style={styles.speakWrapper}>
+          <ScrollView
+            style={{ flex: 1 }}
+            contentContainerStyle={styles.speakWrapper}
+            keyboardShouldPersistTaps="handled"
+            showsVerticalScrollIndicator={false}
+          >
             {renderSpeakCard()}
-          </View>
+          </ScrollView>
         ) : isRecordStage ? (
           <ScrollView
             style={{ flex: 1 }}
@@ -283,14 +334,28 @@ const styles = StyleSheet.create({
   resultFail:      { backgroundColor: '#fde8e8', borderColor: ERROR },
   speakResultAccuracy: { fontSize: 22, fontWeight: '900' },
   speakResultMsg:      { fontSize: 13, color: DEEP_NAVY },
+  tryAgainBtn: {
+    width: '100%', backgroundColor: WARM_ORANGE, borderRadius: 16,
+    paddingVertical: 14, alignItems: 'center', marginTop: 4,
+  },
+  tryAgainBtnText: { fontSize: 15, fontWeight: '800', color: CARD_WHITE },
   gotItBtn: {
     width: '100%', backgroundColor: '#1DD1A1', borderRadius: 16,
     paddingVertical: 16, alignItems: 'center', marginTop: 4,
   },
   gotItText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 
+  // Avatar guide message card (on done screen)
+  avatarMsgCard: {
+    backgroundColor: CARD_WHITE, borderRadius: 8, padding: 20,
+    alignItems: 'center', width: '100%', gap: 8,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
+  },
+  avatarMsgName: { fontSize: 12, fontWeight: '700', color: WARM_BROWN, letterSpacing: 0.5 },
+  avatarMsgText: { fontSize: 14, fontStyle: 'italic', color: DEEP_NAVY, textAlign: 'center', lineHeight: 21 },
+
   // Done
-  doneContainer: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 32 },
+  doneContainer: { flexGrow: 1, alignItems: 'center', justifyContent: 'center', padding: 32, gap: 16 },
   doneEmoji:     { fontSize: 64, marginBottom: 16 },
   doneCard: {
     backgroundColor: CARD_WHITE, borderRadius: 24, padding: 28,

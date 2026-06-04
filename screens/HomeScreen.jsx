@@ -8,6 +8,7 @@ import ConfettiCannon from 'react-native-confetti-cannon';
 import LevelChangeModal from '../components/LevelChangeModal';
 import AvatarCharacter from '../components/AvatarCharacter';
 import AvatarPicker from '../components/AvatarPicker';
+import AVATARS from '../config/avatarConfig';
 import useProgress from '../hooks/useProgress';
 import { LEVEL_WELCOME, LEVEL_QUOTES } from '../data/emotionalContent';
 import { getVanGoghMessage } from '../data/vanGoghMessages';
@@ -34,7 +35,7 @@ const LEVEL_WORD_DATA = {
 const UNLOCK_QUESTS = {
   hsk2: { emoji: '🗺️', title: "Explorer's Quest", desc: "Complete all 8 HSK1 lessons and pass the Level Quiz with 60%+ to unlock this realm. Your adventure continues!" },
   hsk3: { emoji: '⚔️', title: "Adventurer's Challenge", desc: "Brave traveler! Finish all 15 HSK2 lessons and conquer the Level Quiz to push deeper into uncharted territory!" },
-  hsk4: { emoji: '🏰', title: "Warrior's Trial", desc: "A fortress awaits! Master all 5 HSK3 lessons and ace the Level Quiz to storm the castle of the Confident Speaker!" },
+  hsk4: { emoji: '🏰', title: "Warrior's Trial", desc: "A fortress awaits! Master all 5 HSK3 lessons and ace the Level Quiz to storm the castle of the Fluent Speaker!" },
   hsk5: { emoji: '🔥', title: "Champion's Gauntlet", desc: "Legendary challenge! Complete all HSK4 lessons and defeat the Level Quiz to claim the title of Communicator!" },
   hsk6: { emoji: '🌟', title: 'The Legendary Realm', desc: "The ultimate realm is being forged! Keep conquering the earlier levels to prepare for the greatest challenge. Coming soon!" },
 };
@@ -199,6 +200,8 @@ export default function HomeScreen({
   const { xp, streak } = useProgress();
 
   const [showMenu, setShowMenu] = useState(false);
+  const [showFavouritePrompt, setShowFavouritePrompt] = useState(false);
+  const [favouriteSet, setFavouriteSet] = useState(false);
   const [selectedLevel, setSelectedLevel] = useState(
     () => returnLevelId ? LEVEL_CONFIG.find(l => l.id === returnLevelId) ?? null : null
   );
@@ -211,6 +214,7 @@ export default function HomeScreen({
   const [levelQuizProgress, setLevelQuizProgress] = useState(null);
 
   const confettiRef = useRef(null);
+  const [confettiActive, setConfettiActive] = useState(false);
   const avatarBounce = useRef(new Animated.Value(1)).current;
   const lessonScrollViewRef = useRef(null);
   const lessonsSectionYRef = useRef(0);
@@ -239,7 +243,7 @@ export default function HomeScreen({
       return;
     }
     if (streak > prevStreakRef.current) {
-      confettiRef.current?.start();
+      setConfettiActive(true);
       Animated.sequence([
         Animated.spring(avatarBounce, { toValue: 1.25, useNativeDriver: true }),
         Animated.spring(avatarBounce, { toValue: 0.92, useNativeDriver: true }),
@@ -251,7 +255,11 @@ export default function HomeScreen({
   }, [streak]);
 
   useEffect(() => {
-    AsyncStorage.getItem('avatarId').then(val => { if (val) setAvatarId(val); }).catch(() => {});
+    if (confettiActive) confettiRef.current?.start();
+  }, [confettiActive]);
+
+  useEffect(() => {
+    AsyncStorage.getItem('avatarId').then(val => { if (val) { setAvatarId(val); setFavouriteSet(true); } }).catch(() => {});
   }, []);
 
   useEffect(() => {
@@ -297,7 +305,6 @@ export default function HomeScreen({
 
   const handleSelectAvatar = (id) => {
     setAvatarId(id);
-    AsyncStorage.setItem('avatarId', id).catch(() => {});
   };
 
 
@@ -526,9 +533,11 @@ export default function HomeScreen({
 
         {/* Avatar + Picker */}
         <View style={styles.avatarSection}>
-          <Animated.View style={{ transform: [{ scale: avatarBounce }] }}>
-            <AvatarCharacter avatarId={avatarId} expression="idle" size={160} />
-          </Animated.View>
+          <TouchableOpacity activeOpacity={0.85} onPress={() => setShowFavouritePrompt(p => !p)}>
+            <Animated.View style={{ transform: [{ scale: avatarBounce }] }}>
+              <AvatarCharacter avatarId={avatarId} expression="idle" size={160} />
+            </Animated.View>
+          </TouchableOpacity>
 
           {/* Daily message */}
           <View style={styles.avatarMessageBubble}>
@@ -553,6 +562,50 @@ export default function HomeScreen({
 
 
         </View>
+
+        {/* Favourite Guide prompt — appears when user taps the avatar */}
+        {showFavouritePrompt && (() => {
+          const currentAvatar = AVATARS.find(a => a.id === avatarId);
+          if (!currentAvatar) return null;
+          return (
+            <View style={styles.guidePromptCard}>
+              <View style={styles.guidePromptHeader}>
+                <Image source={currentAvatar.images.neutral} style={styles.guidePromptImg} resizeMode="cover" />
+                <View style={styles.guidePromptInfo}>
+                  <Text style={styles.guidePromptChinese}>{currentAvatar.chineseName}</Text>
+                  <Text style={styles.guidePromptEnglish}>{currentAvatar.englishName}</Text>
+                  <Text style={styles.guidePromptHint}>Your guide's voice will be used across all lesson screens.</Text>
+                </View>
+                <TouchableOpacity onPress={() => setShowFavouritePrompt(false)} hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}>
+                  <Text style={styles.guidePromptClose}>✕</Text>
+                </TouchableOpacity>
+              </View>
+              <TouchableOpacity
+                style={styles.guidePromptBtn}
+                onPress={() => {
+                  AsyncStorage.setItem('avatarId', avatarId).catch(() => {});
+                  setFavouriteSet(true);
+                  setShowFavouritePrompt(false);
+                }}
+                activeOpacity={0.8}
+              >
+                <Text style={styles.guidePromptBtnText}>🎙️ Choose {currentAvatar.englishName} as my Favourite Guide</Text>
+              </TouchableOpacity>
+              {favouriteSet && (
+                <TouchableOpacity
+                  style={styles.guidePromptClearBtn}
+                  onPress={() => {
+                    AsyncStorage.removeItem('avatarId').catch(() => {});
+                    setFavouriteSet(false);
+                    setShowFavouritePrompt(false);
+                  }}
+                >
+                  <Text style={styles.guidePromptClearText}>Use lesson-assigned guide instead</Text>
+                </TouchableOpacity>
+              )}
+            </View>
+          );
+        })()}
 
         {/* Van Gogh daily greeting */}
         {vanGoghGreeting && (
@@ -666,14 +719,17 @@ export default function HomeScreen({
         <View style={{ height: 40 }} />
       </ScrollView>
 
-      {/* Confetti — rendered outside ScrollView so particles overlay the full screen */}
-      <ConfettiCannon
-        ref={confettiRef}
-        count={80}
-        origin={{ x: 200, y: 0 }}
-        autoStart={false}
-        fadeOut
-      />
+      {/* Confetti — only mounted while animating; prevents 80 opaque pieces sitting at bottom-center when idle */}
+      {confettiActive && (
+        <ConfettiCannon
+          ref={confettiRef}
+          count={80}
+          origin={{ x: 200, y: 0 }}
+          autoStart={false}
+          fadeOut
+          onAnimationEnd={() => setConfettiActive(false)}
+        />
+      )}
 
       {/* Menu Modal */}
       <Modal
@@ -793,6 +849,7 @@ export default function HomeScreen({
               </View>
               <Text style={styles.menuItemArrow}>→</Text>
             </TouchableOpacity>
+
           </View>
         </TouchableOpacity>
       </Modal>
@@ -1176,4 +1233,18 @@ const styles = StyleSheet.create({
   foundationComingSoon:     { borderWidth: 1.5, borderRadius: 14, padding: 16, alignItems: 'center' },
   foundationComingSoonText: { fontSize: 15, fontWeight: '800', marginBottom: 4 },
   foundationComingSoonSub:  { fontSize: 13, color: VG.creamMuted },
+
+  // ── Favourite Guide prompt card ────────────────────────────────────────────
+  guidePromptCard:    { backgroundColor: CARD_WHITE, borderRadius: 18, padding: 16, marginBottom: 20, borderWidth: 1.5, borderColor: 'rgba(232,82,42,0.28)' },
+  guidePromptHeader:  { flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 14 },
+  guidePromptImg:     { width: 56, height: 56, borderRadius: 28 },
+  guidePromptInfo:    { flex: 1 },
+  guidePromptChinese: { fontSize: 15, fontWeight: '800', color: VG.cream },
+  guidePromptEnglish: { fontSize: 12, color: SLATE_TEAL, fontWeight: '600', marginTop: 1 },
+  guidePromptHint:    { fontSize: 11, color: VG.creamMuted, marginTop: 4, lineHeight: 15 },
+  guidePromptClose:   { fontSize: 18, color: VG.creamMuted, padding: 4 },
+  guidePromptBtn:     { backgroundColor: WARM_ORANGE, borderRadius: 12, paddingVertical: 12, alignItems: 'center' },
+  guidePromptBtnText: { fontSize: 14, fontWeight: '800', color: CARD_WHITE },
+  guidePromptClearBtn:{ paddingVertical: 10, alignItems: 'center' },
+  guidePromptClearText:{ fontSize: 12, color: SLATE_TEAL, fontWeight: '600' },
 });

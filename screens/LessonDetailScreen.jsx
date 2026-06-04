@@ -11,6 +11,7 @@ import ScreenBackground from '../components/ScreenBackground';
 import { LEVEL_SCREEN_PALETTES } from '../config/vanGoghTheme';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR } from '../constants/colors';
 import { stopAudio } from '../utils/tts';
+import { applyFavouriteAvatarOverride } from '../utils/favouriteAvatar';
 import SentencesSection from '../components/SentencesSection';
 
 import lesson1 from '../data/hsk1/hsk1_lesson_1.json';
@@ -191,6 +192,8 @@ export default function LessonDetailScreen({
   const levelMap = LESSONS_BY_LEVEL[levelId] || LESSONS;
   const lesson = levelMap[lessonId];
   const avatarId = lesson ? getAvatarForLesson(levelId, lesson.lesson, lesson.topic, lesson.topic_chinese) : 'eileen';
+  const [displayAvatarId, setDisplayAvatarId] = useState(avatarId);
+  useEffect(() => { applyFavouriteAvatarOverride(avatarId).then(setDisplayAvatarId); }, []);
   const [openSection, setOpenSection] = useState(initialOpenSection || null); // 'words' | 'sentences' | 'grammar' | 'dialogue' | null
   const [activeTab, setActiveTab] = useState(initialTab);
   const [toast, setToast] = useState(null);
@@ -343,8 +346,8 @@ export default function LessonDetailScreen({
         showsVerticalScrollIndicator={false}
       >
         {/* Title card */}
-        <View style={[styles.titleCard, { backgroundColor: T.card, shadowColor: T.shadow }]}>
-          <AvatarCharacter avatarId={avatarId} expression="idle" size={88} />
+        <View style={[styles.titleCard, { backgroundColor: T.card }]}>
+          <AvatarCharacter avatarId={displayAvatarId} expression="idle" size={88} />
           <Text style={[styles.topicChinese, { color: T.onCard }]}>{lesson.topic_chinese}</Text>
           <Text style={[styles.topicEnglish, { color: T.onCard }]}>{lesson.topic}</Text>
           <Text style={[styles.topicMeta, { color: T.onCardMuted }]}>{lesson.vocabulary?.length || 0} words · {lesson.dialogues?.length || 0} dialogues</Text>
@@ -377,7 +380,7 @@ export default function LessonDetailScreen({
         </TouchableOpacity>
         {openSection === 'words' && (
           <View style={styles.expandedSection}>
-            <VocabularySection vocabulary={(lesson.vocabulary || []).filter(v => v.part_of_speech !== 'phrase')} showPinyin={lesson.show_pinyin !== false} avatarId={avatarId} />
+            <VocabularySection vocabulary={(lesson.vocabulary || []).filter(v => v.part_of_speech !== 'phrase')} showPinyin={lesson.show_pinyin !== false} avatarId={displayAvatarId} />
             {!sectionDone?.newwords && (
               <TouchableOpacity style={styles.sectionDoneBtn} onPress={() => handleSectionDone('newwords')} activeOpacity={0.85}>
                 <Text style={styles.sectionDoneBtnText}>✓  I've reviewed New Words</Text>
@@ -449,11 +452,11 @@ export default function LessonDetailScreen({
               <VocabularySection
                 vocabulary={(lesson.vocabulary || []).filter(v => v.part_of_speech === 'phrase')}
                 showPinyin={lesson.show_pinyin !== false}
-                avatarId={avatarId}
+                avatarId={displayAvatarId}
               />
             )}
             {lesson.key_sentences?.length > 0 && (
-              <SentencesSection sentences={lesson.key_sentences} avatarId={avatarId} />
+              <SentencesSection sentences={lesson.key_sentences} avatarId={displayAvatarId} />
             )}
             {!sectionDone?.sentences && (
               <TouchableOpacity style={styles.sectionDoneBtn} onPress={() => handleSectionDone('sentences')} activeOpacity={0.85}>
@@ -778,17 +781,12 @@ const styles = StyleSheet.create({
   // ── Title card — cream warm glow ──────────────────────────────────────────
   titleCard: {
     backgroundColor: VG.card,
-    borderRadius: 22,
+    borderRadius: 8,
     padding: 24,
     alignItems: 'center',
     marginBottom: 24,
     borderWidth: 1,
     borderColor: 'rgba(217,140,43,0.2)',
-    shadowColor: VG.shadow,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.18,
-    shadowRadius: 14,
-    elevation: 6,
   },
   topicChinese: { fontSize: 36, fontWeight: '900', color: VG.onCard,    marginBottom: 6 },
   topicEnglish: { fontSize: 18, fontWeight: '600', color: VG.orange,    marginBottom: 4 },
@@ -832,17 +830,12 @@ const styles = StyleSheet.create({
   learnBtn: {
     width: '48%',
     backgroundColor: VG.card,
-    borderRadius: 14,
+    borderRadius: 8,
     padding: 16,
     alignItems: 'center',
     borderWidth: 1.5,
     borderColor: 'rgba(217,140,43,0.2)',
     gap: 6,
-    shadowColor: VG.shadow,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.12,
-    shadowRadius: 8,
-    elevation: 3,
   },
   learnBtnActive:     { borderColor: VG.gold,   backgroundColor: VG.cardHover },
   learnBtnPinyin:     { borderColor: SLATE_TEAL, backgroundColor: 'rgba(55,73,80,0.14)' },
@@ -862,27 +855,22 @@ const styles = StyleSheet.create({
   learnCardLocked:    { opacity: 0.55 },
   learnCardHighlight: {
     borderColor: '#1DD1A1', borderWidth: 2,
-    shadowColor: '#1DD1A1', shadowOpacity: 0.35, shadowRadius: 10, elevation: 6,
   },
 
   // ── Toast banner ──────────────────────────────────────────────────────────
   toastBanner: {
-    marginHorizontal: 16, marginTop: 10, marginBottom: -4,
-    backgroundColor: WARM_ORANGE, borderRadius: 14,
+    marginTop: 10, marginBottom: -4,
+    backgroundColor: WARM_ORANGE, borderRadius: 0,
     paddingHorizontal: 18, paddingVertical: 13,
     alignItems: 'center',
-    shadowColor: WARM_ORANGE, shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.32, shadowRadius: 10, elevation: 6,
   },
   toastText: { fontSize: 14, fontWeight: '700', color: CARD_WHITE, textAlign: 'center', lineHeight: 20 },
 
   // ── Culture / Idioms ──────────────────────────────────────────────────────
   cultureCard: {
-    backgroundColor: VG.card, borderRadius: 14,
+    backgroundColor: VG.card, borderRadius: 8,
     borderWidth: 1, borderColor: 'rgba(217,140,43,0.25)',
     padding: 16, marginBottom: 16,
-    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.12, shadowRadius: 8, elevation: 3,
   },
   cultureTitleChinese: { fontSize: 18, fontWeight: '800', color: VG.orange,     marginBottom: 2 },
   cultureTitle:        { fontSize: 13, fontWeight: '600', color: VG.onCardMid,  marginBottom: 10 },
@@ -896,13 +884,11 @@ const styles = StyleSheet.create({
 
   // ── Quiz banner ───────────────────────────────────────────────────────────
   quizBanner: {
-    flexDirection: 'row', alignItems: 'center', borderRadius: 16,
+    flexDirection: 'row', alignItems: 'center', borderRadius: 8,
     padding: 16, marginBottom: 20, borderWidth: 1.5, gap: 12,
   },
   quizBannerUnlocked: {
     borderColor: VG.orange, backgroundColor: VG.card,
-    shadowColor: VG.shadow, shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.15, shadowRadius: 10, elevation: 4,
   },
   quizBannerLocked:   { borderColor: VG.border, backgroundColor: CARD_WHITE, opacity: 0.65 },
   quizBannerEmoji:    { fontSize: 28 },
@@ -913,18 +899,16 @@ const styles = StyleSheet.create({
   // ── Expanded section ──────────────────────────────────────────────────────
   expandedSection: { marginBottom: 24, marginTop: 4 },
   sectionDoneBtn: {
-    marginTop: 16, borderRadius: 14,
+    marginTop: 16, borderRadius: 8,
     backgroundColor: SLATE_TEAL,
     paddingVertical: 14, alignItems: 'center',
-    shadowColor: SLATE_TEAL, shadowOffset: { width: 0, height: 3 },
-    shadowOpacity: 0.22, shadowRadius: 8, elevation: 4,
   },
   sectionDoneBtnText: { fontSize: 15, fontWeight: '800', color: CARD_WHITE },
 
   // ── Round badge ───────────────────────────────────────────────────────────
   roundBadge: {
     flexDirection: 'row', alignItems: 'center',
-    borderRadius: 12, borderWidth: 1,
+    borderRadius: 6, borderWidth: 1,
     paddingHorizontal: 14, paddingVertical: 10,
     marginBottom: 12, gap: 8,
   },
@@ -937,14 +921,9 @@ const styles = StyleSheet.create({
   stageCard: {
     flexDirection: 'row', alignItems: 'center',
     backgroundColor: VG.card,
-    borderRadius: 16, padding: 14, marginBottom: 10,
+    borderRadius: 8, padding: 14, marginBottom: 10,
     borderWidth: 1, borderColor: 'rgba(217,140,43,0.2)',
     gap: 12,
-    shadowColor: VG.shadow,
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.12,
-    shadowRadius: 8,
-    elevation: 3,
   },
   stageCardLocked: { opacity: 0.65 },
   stageIconBubble: { width: 48, height: 48, borderRadius: 24, alignItems: 'center', justifyContent: 'center' },
@@ -961,21 +940,15 @@ const styles = StyleSheet.create({
   // ── Complete button — warm glowing yellow ─────────────────────────────────
   completeBtn: {
     backgroundColor: VG.yellow,
-    borderRadius: 16,
+    borderRadius: 12,
     padding: 16,
     alignItems: 'center',
     marginTop: 20, marginBottom: 12,
-    shadowColor: VG.shadow,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.28,
-    shadowRadius: 12,
-    elevation: 6,
   },
   completeBtnText: { fontSize: 16, fontWeight: '900', color: VG.bg, letterSpacing: 0.5 },
 
   completeBtnDone: {
     backgroundColor: SUCCESS,
-    shadowOpacity: 0.18,
   },
   completeBtnDoneText: { fontSize: 16, fontWeight: '900', color: CARD_WHITE, letterSpacing: 0.5 },
 
@@ -994,8 +967,6 @@ const styles = StyleSheet.create({
   startPracticeBtn: {
     backgroundColor: SLATE_TEAL, borderRadius: 18, padding: 20,
     alignItems: 'center', marginTop: 20,
-    shadowColor: SLATE_TEAL, shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.25, shadowRadius: 10, elevation: 5,
   },
   startPracticeBtnText: { fontSize: 17, fontWeight: '800', color: CARD_WHITE },
   startPracticeBtnSub:  { fontSize: 13, color: 'rgba(255,255,255,0.75)', marginTop: 4 },

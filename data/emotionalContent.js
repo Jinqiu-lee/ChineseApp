@@ -548,6 +548,75 @@ export const LESSON_COMPLETION = {
   },
 };
 
+// ── PINYIN STAGE COMPLETE ─────────────────────────────────────────────────────
+// Shown when user finishes a practice stage in Pinyin.
+export const PINYIN_STAGE_COMPLETE = {
+  eileen:   "Another stage of sound understood. Language builds quietly — but it builds.",
+  libai:    "Stage complete! You've walked another stretch of the great avenue! Forward! 🎋",
+  luxun:    "One more stage done. This is how real progress is made — step by step, no shortcuts.",
+  dante:    "Well done. The ascent continues. Each stage brings you closer to the summit.",
+  camus:    "Stage complete. You walked this path today. That is enough.",
+  jane:     "Accomplished! Each completed stage reflects most admirably on your dedication.",
+  elena:    "You finished this stage. Every one of these small completions matters more than it seems.",
+  liucixin: "Stage completed. Your phonological model is updating. Continue to the next stage.",
+};
+
+// ── PINYIN LESSON COMPLETION ──────────────────────────────────────────────────
+// pool[0]: ≥80% · pool[1]: 60–79% (pass) · pool[2]: <60% (fail / not passed)
+export const PINYIN_LESSON_COMPLETION = {
+  eileen: [
+    "Pinyin, understood deeply. Every tone rang true. This is the kind of precision that makes language sing.",
+    "You've learned to hear the music in the syllables. That's the hardest part.",
+    "Pinyin resists being rushed. Come back to it quietly — listen more carefully to each tone.",
+  ],
+  libai: [
+    "满分！The road of sounds is now yours — every syllable a step you've walked perfectly! 🎵",
+    "Well done! The tones ring in your voice like poetry! Keep climbing this path! 🏞️",
+    "Not yet! But every great journey has a step that needs a second attempt! Try again! 🏞️",
+  ],
+  luxun: [
+    "A perfect result. Pinyin is not decorative — you've proven you understand it is the very foundation.",
+    "Good. But correct pronunciation requires continued practice. Do not let this slip.",
+    "You didn't pass. This is useful information. Find the sounds you missed and practice them.",
+  ],
+  dante: [
+    "Perfect! You have mastered the sounds that are the gateway to all Chinese. The path ahead is open.",
+    "Well done. You crossed the threshold. The ascent of tones continues — keep climbing.",
+    "The path was not completed today. But it remains. Return, review, and rise again.",
+  ],
+  camus: [
+    "Against the absurd complexity of tones, you simply kept going — and you mastered them. That is everything.",
+    "You passed. The sounds feel a little less arbitrary now. That change is worth something.",
+    "You didn't pass. And yet, you tried. Go back and try again — that too has value.",
+  ],
+  jane: [
+    "A perfect result! Your pronunciation is, dare I say, impeccable. Most admirably done.",
+    "Well done! Your progress in the phonetic arts is most impressive indeed. Keep at it.",
+    "Not quite this time. A second attempt, made with greater care, is entirely respectable.",
+  ],
+  elena: [
+    "Perfect. You fought for every tone and every rule — and it shows. This knowledge is truly yours.",
+    "You passed. The effort you've put into these sounds — I can feel it. Keep going.",
+    "You didn't pass. It's okay. Go back to the sounds you missed and sit with them a while.",
+  ],
+  liucixin: [
+    "100% accuracy. The phonological system is fully mapped. You may proceed to higher-level encoding.",
+    "Threshold reached. Your acoustic model is calibrating well. Continue systematic practice.",
+    "Score below threshold. Identify error patterns. Targeted re-study will improve accuracy.",
+  ],
+};
+
+export function getPinyinCompletionMessage(avatarId, pct) {
+  const pool = PINYIN_LESSON_COMPLETION[avatarId] || PINYIN_LESSON_COMPLETION.eileen;
+  if (pct >= 80) return pool[0];
+  if (pct >= 60) return pool[1];
+  return pool[2];
+}
+
+export function getPinyinStageMessage(avatarId) {
+  return PINYIN_STAGE_COMPLETE[avatarId] || PINYIN_STAGE_COMPLETE.eileen;
+}
+
 // ── Helper — pick today's daily quote ────────────────────────────────────────
 export function getTodayMessage(levelId, avatarId) {
   const day = new Date().getDay(); // 0=Sun … 6=Sat

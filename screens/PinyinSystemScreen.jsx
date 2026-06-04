@@ -188,6 +188,20 @@ export default function PinyinSystemScreen({ onBack, onSelectLesson, onFinalQuiz
               ))}
             </View>
 
+            {/* "Choose as guide" confirmation button */}
+            <TouchableOpacity
+              style={styles.guideConfirmBtn}
+              onPress={() => handleSelectAvatar(avatarId)}
+              activeOpacity={0.85}
+            >
+              <Text style={styles.guideConfirmIcon}>🎙️</Text>
+              <View style={{ flex: 1 }}>
+                <Text style={styles.guideConfirmTitle}>{selectedAvatarData.englishName} is your Pinyin Guide</Text>
+                <Text style={styles.guideConfirmSub}>Their messages appear on quiz results & stage completions</Text>
+              </View>
+              <Text style={styles.guideConfirmCheck}>✓</Text>
+            </TouchableOpacity>
+
             {/* Selected avatar quote */}
             <View style={styles.quoteBubble}>
               <Text style={styles.quoteAvatar}>— {selectedAvatarData.englishName}</Text>
@@ -302,7 +316,7 @@ const styles = StyleSheet.create({
 
   // Hero
   heroCard: {
-    backgroundColor: CARD_WHITE, borderRadius: 24, padding: 24, alignItems: 'center',
+    backgroundColor: CARD_WHITE, borderRadius: 8, padding: 24, alignItems: 'center',
     marginBottom: 28, borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)',
   },
   heroEmoji: { fontSize: 44, marginBottom: 8 },
@@ -314,7 +328,7 @@ const styles = StyleSheet.create({
   avatarGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 16, width: '100%', justifyContent: 'center' },
   avatarGridItem: {
     alignItems: 'center', width: 68,
-    backgroundColor: CARD_WHITE, borderRadius: 14, paddingVertical: 8, paddingHorizontal: 4,
+    backgroundColor: CARD_WHITE, borderRadius: 8, paddingVertical: 8, paddingHorizontal: 4,
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.15)',
   },
   avatarGridItemSelected: {
@@ -324,9 +338,20 @@ const styles = StyleSheet.create({
   avatarGridName: { fontSize: 10, color: SLATE_TEAL, marginTop: 4, fontWeight: '600', textAlign: 'center' },
   avatarGridNameSelected: { color: WARM_BROWN, fontWeight: '800' },
 
+  // Guide confirm button
+  guideConfirmBtn: {
+    flexDirection: 'row', alignItems: 'center', gap: 10,
+    backgroundColor: '#FFF3E0', borderRadius: 12, padding: 14,
+    borderWidth: 1.5, borderColor: WARM_ORANGE, width: '100%', marginBottom: 4,
+  },
+  guideConfirmIcon:  { fontSize: 22 },
+  guideConfirmTitle: { fontSize: 13, fontWeight: '800', color: WARM_BROWN, marginBottom: 2 },
+  guideConfirmSub:   { fontSize: 11, color: SLATE_TEAL, lineHeight: 16 },
+  guideConfirmCheck: { fontSize: 18, color: WARM_ORANGE, fontWeight: '900' },
+
   // Quote bubble
   quoteBubble: {
-    backgroundColor: '#FFF8ED', borderRadius: 16, padding: 14,
+    backgroundColor: '#FFF8ED', borderRadius: 8, padding: 14,
     borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)', width: '100%', marginBottom: 16,
   },
   quoteAvatar: { fontSize: 11, fontWeight: '700', color: WARM_BROWN, marginBottom: 4 },
@@ -347,7 +372,7 @@ const styles = StyleSheet.create({
   // Lesson cards
   lessonCard: {
     flexDirection: 'row', alignItems: 'center',
-    backgroundColor: CARD_WHITE, borderRadius: 16, padding: 16,
+    backgroundColor: CARD_WHITE, borderRadius: 8, padding: 16,
     marginBottom: 10, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.15)',
     borderLeftWidth: 4, gap: 12, overflow: 'hidden',
   },
@@ -372,7 +397,7 @@ const styles = StyleSheet.create({
   // Final quiz
   finalQuizBtn: {
     flexDirection: 'row', alignItems: 'center', gap: 12,
-    backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20,
+    backgroundColor: CARD_WHITE, borderRadius: 12, padding: 20,
     marginTop: 16, borderWidth: 2, borderColor: 'rgba(155,104,70,0.35)',
   },
   finalQuizLocked: { borderColor: 'rgba(155,104,70,0.15)', opacity: 0.65 },

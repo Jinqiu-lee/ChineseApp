@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { View, ActivityIndicator, StyleSheet, Alert } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import * as SplashScreen from 'expo-splash-screen';
 
 SplashScreen.preventAutoHideAsync();
@@ -315,9 +316,11 @@ export default function App() {
   // ── Splash while loading ─────────────────────────────────────
   if (isLoading) {
     return (
-      <View style={splash.container}>
-        <ActivityIndicator size="large" color="#a29bfe" />
-      </View>
+      <SafeAreaProvider>
+        <View style={splash.container}>
+          <ActivityIndicator size="large" color="#a29bfe" />
+        </View>
+      </SafeAreaProvider>
     );
   }
 
@@ -533,6 +536,16 @@ export default function App() {
 
     setPinyinLessonInitialTab('practice');
     setCurrentScreen('pinyinLesson');
+  };
+
+  const handleOpenPinyinLinkedHSKLesson = () => {
+    const lessonId = currentPinyinLessonId;
+    setCurrentLessonLevelId('hsk1');
+    setCurrentLessonId(lessonId);
+    const r1Done = (stageProgress[`hsk1_${lessonId}_r1`] || []).length >= 5;
+    const r2Done = (stageProgress[`hsk1_${lessonId}_r2`] || []).length >= 5;
+    setCurrentRound(r1Done && r2Done ? 3 : r1Done ? 2 : 1);
+    goToLesson('learning');
   };
 
   const handleOpenPinyinLessonQuiz = () => {
@@ -973,6 +986,7 @@ export default function App() {
       const pinyinStageDone   = pinyinStageProgress[pinyinStageKey] || [];
       const pinyinQuizPassed2 = pinyinQuizPassed.includes(currentPinyinLessonId);
       const pinyinLearnKey = `pinyin_${currentPinyinLessonId}`;
+      const hskLessonTopic = (LESSONS_BY_LEVEL.hsk1[currentPinyinLessonId] || {}).topic || '';
       return (
         <PinyinLessonScreen
           lessonData={pinyinLessonData}
@@ -980,10 +994,12 @@ export default function App() {
           quizPassed={pinyinQuizPassed2}
           learnDone={!!pinyinLearnDone[pinyinLearnKey]}
           initialTab={pinyinLessonInitialTab}
+          hskLessonTopic={hskLessonTopic}
           onBack={() => setCurrentScreen('pinyinSystem')}
           onStartStage={handleStartPinyinStage}
           onLearnComplete={handlePinyinLearnComplete}
           onTakeQuiz={handleOpenPinyinLessonQuiz}
+          onOpenHSKLesson={handleOpenPinyinLinkedHSKLesson}
         />
       );
     }
@@ -991,6 +1007,7 @@ export default function App() {
       const pinyinLessonData = PINYIN_LESSONS[currentPinyinLessonId];
       return (
         <PinyinStageScreen
+          key={currentPinyinStageIndex}
           lessonData={pinyinLessonData}
           stageIndex={currentPinyinStageIndex}
           onComplete={handlePinyinStageComplete}
@@ -1026,64 +1043,64 @@ export default function App() {
         />
       );
     }
+    if (currentScreen === 'badges') {
+      return <BadgesScreen onBack={() => setCurrentScreen('home')} />;
+    }
+    if (currentScreen === 'paywall') {
+      return (
+        <PaywallScreen
+          onDismiss={() => {
+            setCurrentLessonId(null);
+            setCurrentLessonLevelId(null);
+            setCurrentScreen('home');
+          }}
+          onSubscribed={() => {
+            const levelId = currentLessonLevelId;
+            const lessonId = currentLessonId;
+            if (!levelId || !lessonId) { setCurrentScreen('home'); return; }
+            const r1Done = (stageProgress[`${levelId}_${lessonId}_r1`] || []).length >= 5;
+            const r2Done = (stageProgress[`${levelId}_${lessonId}_r2`] || []).length >= 5;
+            setCurrentRound(r1Done && r2Done ? 3 : r1Done ? 2 : 1);
+            goToLesson('learning');
+          }}
+        />
+      );
+    }
     return null;
   };
 
-  if (currentScreen === 'badges') {
-    return <BadgesScreen onBack={() => setCurrentScreen('home')} />;
-  }
-
-  if (currentScreen === 'paywall') {
-    return (
-      <PaywallScreen
-        onDismiss={() => {
-          setCurrentLessonId(null);
-          setCurrentLessonLevelId(null);
-          setCurrentScreen('home');
-        }}
-        onSubscribed={() => {
-          const levelId = currentLessonLevelId;
-          const lessonId = currentLessonId;
-          if (!levelId || !lessonId) { setCurrentScreen('home'); return; }
-          const r1Done = (stageProgress[`${levelId}_${lessonId}_r1`] || []).length >= 5;
-          const r2Done = (stageProgress[`${levelId}_${lessonId}_r2`] || []).length >= 5;
-          setCurrentRound(r1Done && r2Done ? 3 : r1Done ? 2 : 1);
-          goToLesson('learning');
-        }}
-      />
-    );
-  }
-
   return (
-    <View style={{ flex: 1 }}>
-      {renderCurrentScreen()}
-      <UnlockModal
-        visible={!!unlockModal}
-        title={unlockModal?.title}
-        message={unlockModal?.message}
-        primaryLabel={unlockModal?.primaryLabel}
-        secondaryLabel={unlockModal?.secondaryLabel}
-        onPrimary={unlockModal?.onPrimary}
-        onSecondary={unlockModal?.onSecondary}
-      />
-      <RewardModal
-        visible={rewardModal !== null}
-        xpEarned={rewardModal?.xpEarned || 0}
-        scorePercent={rewardModal?.scorePercent || 0}
-        totalXP={xp}
-        newBadges={rewardModal?.newBadges || []}
-        streak={streak}
-        onClose={() => {
-          const stageIndex = rewardModal?.stageIndex;
-          setRewardModal(null);
-          handleStageContinue(stageIndex);
-        }}
-        onBreak={() => {
-          setRewardModal(null);
-          setCurrentScreen('lessonStages');
-        }}
-      />
-    </View>
+    <SafeAreaProvider>
+      <View style={{ flex: 1 }}>
+        {renderCurrentScreen()}
+        <UnlockModal
+          visible={!!unlockModal}
+          title={unlockModal?.title}
+          message={unlockModal?.message}
+          primaryLabel={unlockModal?.primaryLabel}
+          secondaryLabel={unlockModal?.secondaryLabel}
+          onPrimary={unlockModal?.onPrimary}
+          onSecondary={unlockModal?.onSecondary}
+        />
+        <RewardModal
+          visible={rewardModal !== null}
+          xpEarned={rewardModal?.xpEarned || 0}
+          scorePercent={rewardModal?.scorePercent || 0}
+          totalXP={xp}
+          newBadges={rewardModal?.newBadges || []}
+          streak={streak}
+          onClose={() => {
+            const stageIndex = rewardModal?.stageIndex;
+            setRewardModal(null);
+            handleStageContinue(stageIndex);
+          }}
+          onBreak={() => {
+            setRewardModal(null);
+            setCurrentScreen('lessonStages');
+          }}
+        />
+      </View>
+    </SafeAreaProvider>
   );
 }
 

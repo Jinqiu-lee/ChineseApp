@@ -57,17 +57,25 @@
           {
             "pinyin": "zhī",
             "note": "zh + (buzz-i)",
-            "audio_key": "zhi1"
+            "audio_key": "zhi1",
+            "word": "知道",
+            "word_pinyin": "zhīdào",
+            "meaning": "know"
           },
           {
             "pinyin": "chī",
             "note": "ch + (buzz-i)",
-            "audio_key": "chi1"
+            "audio_key": "chi1",
+            "word": "吃",
+            "meaning": "eat"
           },
           {
             "pinyin": "shī",
             "note": "sh + (buzz-i)",
-            "audio_key": "shi1"
+            "audio_key": "shi1",
+            "word": "老师",
+            "word_pinyin": "lǎoshī",
+            "meaning": "teacher"
           }
         ]
       },
@@ -78,7 +86,10 @@
           {
             "pinyin": "sī",
             "note": "s + (flat-i)",
-            "audio_key": "si1"
+            "audio_key": "si1",
+            "word": "思考",
+            "word_pinyin": "sīkǎo",
+            "meaning": "think / ponder"
           }
         ]
       },
@@ -89,7 +100,10 @@
           {
             "pinyin": "zhōng",
             "note": "zh + ong",
-            "audio_key": "zhong1"
+            "audio_key": "zhong1",
+            "word": "中国",
+            "word_pinyin": "Zhōngguó",
+            "meaning": "China"
           }
         ]
       },
@@ -100,12 +114,16 @@
           {
             "pinyin": "cóng",
             "note": "c + ong",
-            "audio_key": "cong2"
+            "audio_key": "cong2",
+            "word": "从",
+            "meaning": "from / since"
           },
           {
             "pinyin": "sān",
             "note": "s + an",
-            "audio_key": "san1"
+            "audio_key": "san1",
+            "word": "三",
+            "meaning": "three"
           }
         ]
       }
@@ -550,101 +568,238 @@
       "type": "visual_tone",
       "syllable": "zhī",
       "correct": "1",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "visual_tone",
       "syllable": "rì",
       "correct": "4",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "visual_tone",
       "syllable": "sì",
       "correct": "4",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "visual_tone",
       "syllable": "yī",
       "correct": "1",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "visual_tone",
       "syllable": "yú",
       "correct": "2",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_syllable",
       "syllable": "zhī",
       "audio_key": "zhi1",
       "correct": "zhi",
-      "choices": ["zhi", "chi", "shi", "zi"]
+      "choices": [
+        "zhi",
+        "chi",
+        "shi",
+        "zi"
+      ]
     },
     {
       "type": "listen_syllable",
       "syllable": "chī",
       "audio_key": "chi1",
       "correct": "chi",
-      "choices": ["zhi", "chi", "shi", "ri"]
+      "choices": [
+        "zhi",
+        "chi",
+        "shi",
+        "ri"
+      ]
     },
     {
       "type": "listen_syllable",
       "syllable": "shī",
       "audio_key": "shi1",
       "correct": "shi",
-      "choices": ["zhi", "chi", "shi", "ri"]
+      "choices": [
+        "zhi",
+        "chi",
+        "shi",
+        "ri"
+      ]
     },
     {
       "type": "listen_syllable",
       "syllable": "sì",
       "audio_key": "si4",
       "correct": "si",
-      "choices": ["zi", "ci", "si", "shi"]
+      "choices": [
+        "zi",
+        "ci",
+        "si",
+        "shi"
+      ]
     },
     {
       "type": "listen_syllable",
       "syllable": "yī",
       "audio_key": "yi1",
       "correct": "yi",
-      "choices": ["yi", "wu", "yu", "ya"]
+      "choices": [
+        "yi",
+        "wu",
+        "yu",
+        "ya"
+      ]
     },
     {
       "type": "listen_syllable",
       "syllable": "wū",
       "audio_key": "wu1",
       "correct": "wu",
-      "choices": ["yi", "wu", "yu", "wa"]
+      "choices": [
+        "yi",
+        "wu",
+        "yu",
+        "wa"
+      ]
     },
     {
       "type": "listen_syllable",
       "syllable": "yú",
       "audio_key": "yu2",
       "correct": "yu",
-      "choices": ["yi", "wu", "yu", "yue"]
+      "choices": [
+        "yi",
+        "wu",
+        "yu",
+        "yue"
+      ]
     },
     {
       "type": "listen_syllable",
       "syllable": "yuè",
       "audio_key": "yue4",
       "correct": "yue",
-      "choices": ["ye", "yue", "yuan", "yun"]
+      "choices": [
+        "ye",
+        "yue",
+        "yuan",
+        "yun"
+      ]
     }
   ],
   "stage4_pool": [
-    { "type": "listen_record", "syllable": "zhī", "audio_key": "zhi1", "chinese": "知", "meaning": "know" },
-    { "type": "listen_record", "syllable": "chī", "audio_key": "chi1", "chinese": "吃", "meaning": "eat" },
-    { "type": "listen_record", "syllable": "shī", "audio_key": "shi1", "chinese": "诗", "meaning": "poem" },
-    { "type": "listen_record", "syllable": "rì", "audio_key": "ri4", "chinese": "日", "meaning": "sun/day" },
-    { "type": "listen_record", "syllable": "zì", "audio_key": "zi4", "chinese": "字", "meaning": "character/word" },
-    { "type": "listen_record", "syllable": "sì", "audio_key": "si4", "chinese": "四", "meaning": "four" },
-    { "type": "listen_record", "syllable": "yī", "audio_key": "yi1", "chinese": "一", "meaning": "one" },
-    { "type": "listen_record", "syllable": "yú", "audio_key": "yu2", "chinese": "鱼", "meaning": "fish" },
-    { "type": "listen_record", "syllable": "yuè", "audio_key": "yue4", "chinese": "月", "meaning": "moon/month" },
-    { "type": "listen_record", "syllable": "yún", "audio_key": "yun2", "chinese": "云", "meaning": "cloud" },
-    { "type": "listen_record", "syllable": "yīng", "audio_key": "ying1", "chinese": "应", "meaning": "should" },
-    { "type": "listen_record", "syllable": "yè", "audio_key": "ye4", "chinese": "夜", "meaning": "night" }
+    {
+      "type": "listen_record",
+      "syllable": "zhī",
+      "audio_key": "zhi1",
+      "chinese": "知",
+      "meaning": "know"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "chī",
+      "audio_key": "chi1",
+      "chinese": "吃",
+      "meaning": "eat"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "shī",
+      "audio_key": "shi1",
+      "chinese": "诗",
+      "meaning": "poem"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "rì",
+      "audio_key": "ri4",
+      "chinese": "日",
+      "meaning": "sun/day"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "zì",
+      "audio_key": "zi4",
+      "chinese": "字",
+      "meaning": "character/word"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "sì",
+      "audio_key": "si4",
+      "chinese": "四",
+      "meaning": "four"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yī",
+      "audio_key": "yi1",
+      "chinese": "一",
+      "meaning": "one"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yú",
+      "audio_key": "yu2",
+      "chinese": "鱼",
+      "meaning": "fish"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yuè",
+      "audio_key": "yue4",
+      "chinese": "月",
+      "meaning": "moon/month"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yún",
+      "audio_key": "yun2",
+      "chinese": "云",
+      "meaning": "cloud"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yīng",
+      "audio_key": "ying1",
+      "chinese": "应",
+      "meaning": "should"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "yè",
+      "audio_key": "ye4",
+      "chinese": "夜",
+      "meaning": "night"
+    }
   ]
 }

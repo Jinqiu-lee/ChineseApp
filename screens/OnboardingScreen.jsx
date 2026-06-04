@@ -63,8 +63,8 @@ function AvatarBar({ image, message }) {
 const LEVELS_MANUAL = [
   { id: "hsk1", label: "Level 1 – Beginner",             badge: "🌻", color: "#9B6846", desc: "Complete beginner, starting from scratch" },
   { id: "hsk2", label: "Level 2 – Explorer",             badge: "☕", color: "#E8522A", desc: "Know basics, ready to build vocabulary" },
-  { id: "hsk3", label: "Level 3 – Conversation Builder", badge: "🌾", color: "#0c6e16", desc: "Can hold simple conversations" },
-  { id: "hsk4", label: "Level 4 – Confident Speaker",    badge: "🏡", color: "#BE7A62", desc: "Comfortable with everyday Chinese" },
+  { id: "hsk3", label: "Level 3 – Connector", badge: "🌾", color: "#0c6e16", desc: "Can hold simple conversations" },
+  { id: "hsk4", label: "Level 4 – Fluent",    badge: "🏡", color: "#BE7A62", desc: "Comfortable with everyday Chinese" },
   { id: "hsk5", label: "Level 5 – Communicator",         badge: "🌌", color: "#384fa3", desc: "Advanced, near-fluent communication" },
   { id: "hsk6", label: "Level 6 – Advanced",             badge: "🌼", color: "#374950", desc: "Advanced fluency — HSK 6" },
 ];
@@ -72,8 +72,8 @@ const LEVELS_MANUAL = [
 const MANUAL_RANK_MAP = {
   hsk1: { level: "Beginner",             levelChinese: "初级", badge: "🌻", color: "#9B6846", recommendedLevel: "hsk1", recommendedLabel: "Level 1 – Beginner",             message: "Great! We'll start you at Level 1 – Beginner." },
   hsk2: { level: "Explorer",             levelChinese: "基础", badge: "☕", color: "#E8522A", recommendedLevel: "hsk2", recommendedLabel: "Level 2 – Explorer",             message: "Great! We'll start you at Level 2 – Explorer." },
-  hsk3: { level: "Conversation Builder", levelChinese: "中级", badge: "🌾", color: "#0c6e16", recommendedLevel: "hsk3", recommendedLabel: "Level 3 – Conversation Builder", message: "Great! We'll start you at Level 3 – Conversation Builder." },
-  hsk4: { level: "Confident Speaker",    levelChinese: "高级", badge: "🏡", color: "#BE7A62", recommendedLevel: "hsk4", recommendedLabel: "Level 4 – Confident Speaker",    message: "Great! We'll start you at Level 4 – Confident Speaker." },
+  hsk3: { level: "Connector", levelChinese: "中级", badge: "🌾", color: "#0c6e16", recommendedLevel: "hsk3", recommendedLabel: "Level 3 – Connector", message: "Great! We'll start you at Level 3 – Connector." },
+  hsk4: { level: "Fluent",    levelChinese: "高级", badge: "🏡", color: "#BE7A62", recommendedLevel: "hsk4", recommendedLabel: "Level 4 – Fluent",    message: "Great! We'll start you at Level 4 – Fluent." },
   hsk5: { level: "Communicator",         levelChinese: "精通", badge: "🌌", color: "#384fa3", recommendedLevel: "hsk5", recommendedLabel: "Level 5 – Communicator",         message: "Great! We'll start you at Level 5 – Communicator." },
   hsk6: { level: "Advanced",             levelChinese: "高端", badge: "🌼", color: "#374950", recommendedLevel: "hsk6", recommendedLabel: "Level 6 – Advanced",             message: "Great! We'll start you at Level 6 – Advanced." },
 };
