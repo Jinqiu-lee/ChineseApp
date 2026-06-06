@@ -20,7 +20,47 @@
       "english": "One",
       "part_of_speech": "number",
       "example": "我有一个朋友。",
-      "translation": "I have one friend."
+      "translation": "I have one friend.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "One : ___",
+          "correct": "一",
+          "options": [
+            "一",
+            "二",
+            "三",
+            "四"
+          ],
+          "option_pinyin": [
+            "yī",
+            "èr",
+            "sān",
+            "sì"
+          ],
+          "question_chinese": "我有___个朋友。",
+          "question_pinyin": "wǒ yǒu ___ gè péngyou.",
+          "question_english": "I have one friend."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'one friend'?",
+          "correct": "一个朋友",
+          "options": [
+            "一个朋友",
+            "两个朋友",
+            "三个朋友",
+            "四个朋友"
+          ],
+          "option_pinyin": [
+            "yí gè péngyou",
+            "liǎng gè péngyou",
+            "sān gè péngyou",
+            "sì gè péngyou"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ yǒu yí gè péngyou."
     },
     {
       "id": "hsk1_l2_02",
@@ -31,8 +71,65 @@
       ],
       "english": "Two",
       "part_of_speech": "number",
-      "example": "我有两个朋友。",
-      "translation": "I have two friends."
+      "example": "二月一号",
+      "translation": "February 1st.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which one means February 1st ?",
+          "correct": "二月一号",
+          "options": [
+            "二月一号",
+            "二月",
+            "一月二号",
+            "二月二号"
+          ],
+          "option_pinyin": [
+            "èr yuè yī hào.",
+            "èr yuè.",
+            "yī yuè èr hào.",
+            "èr yuè èr hào."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "二",
+          "options": [
+            "二",
+            "三",
+            "四",
+            "五"
+          ],
+          "option_pinyin": [
+            "èr",
+            "sān",
+            "sì",
+            "wǔ"
+          ],
+          "question_chinese": "___月",
+          "question_pinyin": "___ yuè",
+          "question_english": "February"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'twenty'?",
+          "correct": "二十",
+          "options": [
+            "二十",
+            "十二",
+            "三十",
+            "四十"
+          ],
+          "option_pinyin": [
+            "èrshí",
+            "shí'èr",
+            "sānshí",
+            "sìshí"
+          ]
+        }
+      ],
+      "example_pinyin": "èr yuè yī hào"
     },
     {
       "id": "hsk1_l2_03",
@@ -43,8 +140,48 @@
       ],
       "english": "Three",
       "part_of_speech": "number",
-      "example": "我有三个。",
-      "translation": "I have three."
+      "example": "我有三个朋友。",
+      "translation": "I have three friends.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "三",
+          "options": [
+            "三",
+            "一",
+            "二",
+            "四"
+          ],
+          "option_pinyin": [
+            "sān",
+            "yī",
+            "èr",
+            "sì"
+          ],
+          "question_chinese": "我有___个朋友。",
+          "question_pinyin": "wǒ yǒu ___ gè péngyou.",
+          "question_english": "I have three friends."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'three people'?",
+          "correct": "三个人",
+          "options": [
+            "三个人",
+            "二个人",
+            "四个人",
+            "五个人"
+          ],
+          "option_pinyin": [
+            "sān gè rén",
+            "èr gè rén",
+            "sì gè rén",
+            "wǔ gè rén"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ yǒu sān ge péngyou."
     },
     {
       "id": "hsk1_l2_04",
@@ -56,7 +193,47 @@
       "english": "Four",
       "part_of_speech": "number",
       "example": "四个人",
-      "translation": "Four people"
+      "translation": "Four people",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "四",
+          "options": [
+            "四",
+            "三",
+            "五",
+            "六"
+          ],
+          "option_pinyin": [
+            "sì",
+            "sān",
+            "wǔ",
+            "liù"
+          ],
+          "question_chinese": "___个人一起吃饭。",
+          "question_pinyin": "___ gè rén yīqǐ chīfàn.",
+          "question_english": "Four people eat together."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'four people'?",
+          "correct": "四个人",
+          "options": [
+            "四个人",
+            "三个人",
+            "五个人",
+            "六个人"
+          ],
+          "option_pinyin": [
+            "sì gè rén",
+            "sān gè rén",
+            "wǔ gè rén",
+            "liù gè rén"
+          ]
+        }
+      ],
+      "example_pinyin": "sì ge rén"
     },
     {
       "id": "hsk1_l2_05",
@@ -68,7 +245,47 @@
       "english": "Five",
       "part_of_speech": "number",
       "example": "五个人",
-      "translation": "Five people"
+      "translation": "Five people",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "五",
+          "options": [
+            "五",
+            "四",
+            "六",
+            "七"
+          ],
+          "option_pinyin": [
+            "wǔ",
+            "sì",
+            "liù",
+            "qī"
+          ],
+          "question_chinese": "我家有___口人。",
+          "question_pinyin": "wǒ jiā yǒu ___ kǒu rén.",
+          "question_english": "My family has five people."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'five people'?",
+          "correct": "五个人",
+          "options": [
+            "五个人",
+            "四个人",
+            "六个人",
+            "七个人"
+          ],
+          "option_pinyin": [
+            "wǔ gè rén",
+            "sì gè rén",
+            "liù gè rén",
+            "qī gè rén"
+          ]
+        }
+      ],
+      "example_pinyin": "wǔ ge rén"
     },
     {
       "id": "hsk1_l2_06",
@@ -80,7 +297,47 @@
       "english": "Six",
       "part_of_speech": "number",
       "example": "六个人",
-      "translation": "Six people"
+      "translation": "Six people",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "六",
+          "options": [
+            "六",
+            "五",
+            "七",
+            "八"
+          ],
+          "option_pinyin": [
+            "liù",
+            "wǔ",
+            "qī",
+            "bā"
+          ],
+          "question_chinese": "我今年___岁。",
+          "question_pinyin": "wǒ jīnnián ___ suì.",
+          "question_english": "I am six years old this year."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'six people'?",
+          "correct": "六个人",
+          "options": [
+            "六个人",
+            "五个人",
+            "七个人",
+            "八个人"
+          ],
+          "option_pinyin": [
+            "liù gè rén",
+            "wǔ gè rén",
+            "qī gè rén",
+            "bā gè rén"
+          ]
+        }
+      ],
+      "example_pinyin": "liù ge rén"
     },
     {
       "id": "hsk1_l2_07",
@@ -92,7 +349,47 @@
       "english": "Seven",
       "part_of_speech": "number",
       "example": "七个人",
-      "translation": "Seven people"
+      "translation": "Seven people",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "七",
+          "options": [
+            "七",
+            "六",
+            "八",
+            "九"
+          ],
+          "option_pinyin": [
+            "qī",
+            "liù",
+            "bā",
+            "jiǔ"
+          ],
+          "question_chinese": "一个星期有___天。",
+          "question_pinyin": "yī gè xīngqī yǒu ___ tiān.",
+          "question_english": "One week has seven days."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'seven days'?",
+          "correct": "七天",
+          "options": [
+            "七天",
+            "六天",
+            "八天",
+            "九天"
+          ],
+          "option_pinyin": [
+            "qī tiān",
+            "liù tiān",
+            "bā tiān",
+            "jiǔ tiān"
+          ]
+        }
+      ],
+      "example_pinyin": "qī ge rén"
     },
     {
       "id": "hsk1_l2_08",
@@ -103,8 +400,48 @@
       ],
       "english": "Eight",
       "part_of_speech": "number",
-      "example": "我十八岁。",
-      "translation": "I am 18 years old."
+      "example": "我八岁。",
+      "translation": "I am 8 years old.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "八",
+          "options": [
+            "八",
+            "六",
+            "七",
+            "九"
+          ],
+          "option_pinyin": [
+            "bā",
+            "liù",
+            "qī",
+            "jiǔ"
+          ],
+          "question_chinese": "我___岁。",
+          "question_pinyin": "wǒ ___ suì.",
+          "question_english": "I am eight years old."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'eight years old'?",
+          "correct": "八岁",
+          "options": [
+            "八岁",
+            "十岁",
+            "六岁",
+            "七岁"
+          ],
+          "option_pinyin": [
+            "bā suì",
+            "shí suì",
+            "liù suì",
+            "qī suì"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ bā suì."
     },
     {
       "id": "hsk1_l2_09",
@@ -116,7 +453,47 @@
       "english": "Nine",
       "part_of_speech": "number",
       "example": "九个人",
-      "translation": "Nine people"
+      "translation": "Nine people",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "九",
+          "options": [
+            "九",
+            "七",
+            "八",
+            "十"
+          ],
+          "option_pinyin": [
+            "jiǔ",
+            "qī",
+            "bā",
+            "shí"
+          ],
+          "question_chinese": "我们班有___个人。",
+          "question_pinyin": "wǒmen bān yǒu ___ gè rén.",
+          "question_english": "Our class has nine people."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'nine people'?",
+          "correct": "九个人",
+          "options": [
+            "九个人",
+            "七个人",
+            "八个人",
+            "十个人"
+          ],
+          "option_pinyin": [
+            "jiǔ gè rén",
+            "qī gè rén",
+            "bā gè rén",
+            "shí gè rén"
+          ]
+        }
+      ],
+      "example_pinyin": "jiǔ ge rén"
     },
     {
       "id": "hsk1_l2_10",
@@ -128,7 +505,64 @@
       "english": "Ten",
       "part_of_speech": "number",
       "example": "我十岁。",
-      "translation": "I am ten years old."
+      "translation": "I am ten years old.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "I am ten years old",
+          "correct": "我十岁。",
+          "options": [
+            "我十岁。",
+            "十我岁。",
+            "我岁十。",
+            "岁我十。"
+          ],
+          "option_pinyin": [
+            "wǒ shí suì.",
+            "shí wǒ suì.",
+            "wǒ suì shí.",
+            "suì wǒ shí."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "十",
+          "options": [
+            "十",
+            "八",
+            "九",
+            "二十"
+          ],
+          "option_pinyin": [
+            "shí",
+            "bā",
+            "jiǔ",
+            "èrshí"
+          ],
+          "question_chinese": "我___岁。",
+          "question_pinyin": "wǒ ___ suì.",
+          "question_english": "I am ten years old."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'I am ten years old'?",
+          "correct": "我十岁。",
+          "options": [
+            "我十岁。",
+            "我八岁。",
+            "我九岁。",
+            "我二十岁。"
+          ],
+          "option_pinyin": [
+            "wǒ shí suì.",
+            "wǒ bā suì.",
+            "wǒ jiǔ suì.",
+            "wǒ èrshí suì."
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ shí suì."
     },
     {
       "id": "hsk1_l2_11",
@@ -140,7 +574,30 @@
       "english": "Zero",
       "part_of_speech": "number",
       "example": "零岁",
-      "translation": "Zero years old"
+      "translation": "Zero years old",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "零",
+          "options": [
+            "零",
+            "一",
+            "十",
+            "百"
+          ],
+          "option_pinyin": [
+            "líng",
+            "yī",
+            "shí",
+            "bǎi"
+          ],
+          "question_chinese": "今天___度。",
+          "question_pinyin": "jīntiān ___ dù.",
+          "question_english": "It is zero degrees today."
+        }
+      ],
+      "example_pinyin": "líng suì"
     },
     {
       "id": "hsk1_l2_12",
@@ -151,8 +608,48 @@
       ],
       "english": "General measure word",
       "part_of_speech": "measure_word",
-      "example": "三个人",
-      "translation": "Three people"
+      "example": "三个苹果",
+      "translation": "Three apples",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "个",
+          "options": [
+            "个",
+            "只",
+            "本",
+            "杯"
+          ],
+          "option_pinyin": [
+            "gè",
+            "zhī",
+            "běn",
+            "bēi"
+          ],
+          "question_chinese": "三___人",
+          "question_pinyin": "sān ___ rén",
+          "question_english": "three people"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence means 'three people'?",
+          "correct": "三个人",
+          "options": [
+            "三个人",
+            "三只人",
+            "三本人",
+            "三杯人"
+          ],
+          "option_pinyin": [
+            "sān gè rén",
+            "sān zhī rén",
+            "sān běn rén",
+            "sān bēi rén"
+          ]
+        }
+      ],
+      "example_pinyin": "sān ge píng guǒ"
     },
     {
       "id": "hsk1_l2_13",
@@ -164,7 +661,30 @@
       "english": "How many / Several",
       "part_of_speech": "pronoun",
       "example": "你有几个朋友？",
-      "translation": "How many friends do you have?"
+      "translation": "How many friends do you have?",
+      "mini_exercises": [   
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "几",
+          "options": [
+            "几",
+            "多",
+            "什么",
+            "哪"
+          ],
+          "option_pinyin": [
+            "jǐ",
+            "duō",
+            "shénme",
+            "nǎ"
+          ],
+          "question_chinese": "你有___个朋友？",
+          "question_pinyin": "nǐ yǒu ___ gè péngyou?",
+          "question_english": "How many friends do you have?"
+        }
+      ],
+      "example_pinyin": "nǐ yǒu jǐ gè péngyou?"
     },
     {
       "id": "hsk1_l2_14",
@@ -176,7 +696,47 @@
       "english": "Many / Much / More",
       "part_of_speech": "adjective",
       "example": "很多！",
-      "translation": "A lot!"
+      "translation": "A lot!",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "多",
+          "options": [
+            "多",
+            "少",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "duō",
+            "shǎo",
+            "dà",
+            "xiǎo"
+          ],
+          "question_chinese": "我有很___朋友。",
+          "question_pinyin": "wǒ yǒu hěn ___ péngyou.",
+          "question_english": "I have many friends."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'many friends'?",
+          "correct": "很多朋友",
+          "options": [
+            "很多朋友",
+            "很少朋友",
+            "很大朋友",
+            "很好朋友"
+          ],
+          "option_pinyin": [
+            "hěn duō péngyou",
+            "hěn shǎo péngyou",
+            "hěn dà péngyou",
+            "hěn hǎo péngyou"
+          ]
+        }
+      ],
+      "example_pinyin": "hěn duō!"
     },
     {
       "id": "hsk1_l2_15",
@@ -188,7 +748,64 @@
       "english": "Big / Large",
       "part_of_speech": "adjective",
       "example": "你多大？",
-      "translation": "How old are you?"
+      "translation": "How old are you?",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "How old are you?",
+          "correct": "你多大？",
+          "options": [
+            "你多大？",
+            "你大多？",
+            "多你大？",
+            "大多你？"
+          ],
+          "option_pinyin": [
+            "nǐ duō dà?",
+            "nǐ dà duō?",
+            "duō nǐ dà?",
+            "dà duō nǐ?"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "大",
+          "options": [
+            "大",
+            "小",
+            "多",
+            "少"
+          ],
+          "option_pinyin": [
+            "dà",
+            "xiǎo",
+            "duō",
+            "shǎo"
+          ],
+          "question_chinese": "你多___？",
+          "question_pinyin": "nǐ duō ___?",
+          "question_english": "How old are you?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'How old are you?'",
+          "correct": "你多大？",
+          "options": [
+            "你多大？",
+            "你多小？",
+            "你几大？",
+            "你很大？"
+          ],
+          "option_pinyin": [
+            "nǐ duō dà?",
+            "nǐ duō xiǎo?",
+            "nǐ jǐ dà?",
+            "nǐ hěn dà?"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ duō dà?"
     },
     {
       "id": "hsk1_l2_16",
@@ -200,7 +817,64 @@
       "english": "Years old / Age",
       "part_of_speech": "measure_word",
       "example": "我二十岁。",
-      "translation": "I am 20 years old."
+      "translation": "I am 20 years old.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "I'm 20 years old!",
+          "correct": "我二十岁。",
+          "options": [
+            "我二十岁。",
+            "二十我岁。",
+            "我岁二十。",
+            "岁我二十。"
+          ],
+          "option_pinyin": [
+            "wǒ èrshí suì.",
+            "èrshí wǒ suì.",
+            "wǒ suì èrshí.",
+            "suì wǒ èrshí."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "岁",
+          "options": [
+            "岁",
+            "年",
+            "月",
+            "天"
+          ],
+          "option_pinyin": [
+            "suì",
+            "nián",
+            "yuè",
+            "tiān"
+          ],
+          "question_chinese": "我二十___。",
+          "question_pinyin": "wǒ èrshí ___。",
+          "question_english": "I am twenty years old."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'twenty years old'?",
+          "correct": "二十岁",
+          "options": [
+            "二十岁",
+            "二十年",
+            "二十月",
+            "二十天"
+          ],
+          "option_pinyin": [
+            "èrshí suì",
+            "èrshí nián",
+            "èrshí yuè",
+            "èrshí tiān"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ èrshí suì."
     },
     {
       "id": "hsk1_l2_p01",
@@ -388,6 +1062,45 @@
             "二零"
           ]
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "十",
+          "options": [
+            "十",
+            "百",
+            "千",
+            "个"
+          ],
+          "option_pinyin": [
+            "shí",
+            "bǎi",
+            "qiān",
+            "gè"
+          ],
+          "question_chinese": "我今年二___八岁。",
+          "question_pinyin": "wǒ jīnnián èr ___ bā suì.",
+          "question_english": "I am twenty-eight this year."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly says 'I am twenty-five years old'?",
+          "correct": "我二十五岁。",
+          "options": [
+            "我二十五岁。",
+            "我五二十岁。",
+            "我二十个五岁。",
+            "我二十岁五。"
+          ],
+          "option_pinyin": [
+            "wǒ èrshíwǔ suì.",
+            "wǒ wǔ èrshí suì.",
+            "wǒ èrshí gè wǔ suì.",
+            "wǒ èrshí suì wǔ."
+          ]
+        }
       ]
     },
     {
@@ -445,6 +1158,45 @@
             "是"
           ]
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "个",
+          "options": [
+            "个",
+            "只",
+            "本",
+            "杯"
+          ],
+          "option_pinyin": [
+            "gè",
+            "zhī",
+            "běn",
+            "bēi"
+          ],
+          "question_chinese": "三___人",
+          "question_pinyin": "sān ___ rén",
+          "question_english": "three people"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 个 correctly?",
+          "correct": "我有两个姐姐。",
+          "options": [
+            "我有两个姐姐。",
+            "我有两姐姐。",
+            "我有姐姐两个。",
+            "两我有个姐姐。"
+          ],
+          "option_pinyin": [
+            "wǒ yǒu liǎng gè jiějie.",
+            "wǒ yǒu liǎng jiějie.",
+            "wǒ yǒu jiějie liǎng gè.",
+            "liǎng wǒ yǒu gè jiějie."
+          ]
+        }
       ]
     },
     {
@@ -490,6 +1242,45 @@
             "年",
             "月",
             "号"
+          ]
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "多",
+          "options": [
+            "多",
+            "几",
+            "什么",
+            "哪"
+          ],
+          "option_pinyin": [
+            "duō",
+            "jǐ",
+            "shénme",
+            "nǎ"
+          ],
+          "question_chinese": "你___大？",
+          "question_pinyin": "nǐ ___ dà?",
+          "question_english": "How old are you?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly asks someone's age?",
+          "correct": "你多大了？",
+          "options": [
+            "你多大了？",
+            "你大多了？",
+            "你几大了？",
+            "你多大有？"
+          ],
+          "option_pinyin": [
+            "nǐ duō dà le?",
+            "nǐ dà duō le?",
+            "nǐ jǐ dà le?",
+            "nǐ duō dà yǒu?"
           ]
         }
       ]

@@ -39,6 +39,11 @@
               "label_en": "how are you?",
               "url": null
             }
+          ],
+          "distractors": [
+            "看",
+            "买",
+            "书"
           ]
         },
         "好": {
@@ -75,6 +80,11 @@
               "label_en": "good person",
               "url": null
             }
+          ],
+          "distractors": [
+            "吃",
+            "看",
+            "买"
           ]
         },
         "我": {
@@ -142,7 +152,6 @@
             },
             {
               "id": "shi_4",
-              "emoji": "👤",
               "label": "他是谁",
               "label_en": "who is he",
               "url": null
@@ -207,18 +216,21 @@
             },
             {
               "id": "ma_3",
-              "emoji": "💬",
               "label": "是他吗？",
               "label_en": "is it him?",
               "url": null
             },
             {
               "id": "ma_4",
-              "emoji": "🙋",
               "label": "你喝吗？",
               "label_en": "do you drink?",
               "url": null
             }
+          ],
+          "distractors": [
+            "买",
+            "吃",
+            "看"
           ]
         },
         "呢": {
@@ -236,21 +248,18 @@
             },
             {
               "id": "ne_2",
-              "emoji": "🔄",
               "label": "他呢？",
               "label_en": "what about him?",
               "url": null
             },
             {
               "id": "ne_3",
-              "emoji": "💭",
               "label": "她呢？",
               "label_en": "what about her?",
               "url": null
             },
             {
               "id": "ne_4",
-              "emoji": "🗣️",
               "label": "你好。你呢？",
               "label_en": "I'm good. You?",
               "url": null
@@ -271,7 +280,6 @@
             },
             {
               "id": "jiao_2",
-              "emoji": "🏷️",
               "label": "你叫什么？",
               "label_en": "what's your name?",
               "url": null
@@ -288,6 +296,11 @@
               "label_en": "he's called 大卫",
               "url": null
             }
+          ],
+          "distractors": [
+            "买",
+            "看",
+            "吃"
           ]
         },
         "什么": {
@@ -323,6 +336,11 @@
               "label_en": "what's your name?",
               "url": null
             }
+          ],
+          "distractors": [
+            "吃",
+            "看",
+            "买"
           ]
         },
         "名字": {
@@ -357,6 +375,11 @@
               "label_en": "your name",
               "url": null
             }
+          ],
+          "distractors": [
+            "吃",
+            "看",
+            "买"
           ]
         },
         "谁": {
@@ -374,25 +397,27 @@
             },
             {
               "id": "shei_2",
-              "emoji": "🙋",
               "label": "他是谁？",
               "label_en": "who is he?",
               "url": null
             },
             {
               "id": "shei_3",
-              "emoji": "👤",
               "label": "她是谁？",
               "label_en": "who is she?",
               "url": null
             },
             {
               "id": "shei_4",
-              "emoji": "❓",
               "label": "那是谁？",
               "label_en": "who is that?",
               "url": null
             }
+          ],
+          "distractors": [
+            "买",
+            "看",
+            "吃"
           ]
         },
         "他": {
@@ -469,14 +494,12 @@
           "images": [
             {
               "id": "ren_1",
-              "emoji": "🧑",
               "label": "一个人",
               "label_en": "one person",
               "url": null
             },
             {
               "id": "ren_2",
-              "emoji": "👥",
               "label": "很多人",
               "label_en": "many people",
               "url": null
@@ -490,11 +513,15 @@
             },
             {
               "id": "ren_4",
-              "emoji": "👤",
               "label": "好人",
               "label_en": "good person",
               "url": null
             }
+          ],
+          "distractors": [
+            "书",
+            "水",
+            "茶"
           ]
         }
       },
@@ -514,7 +541,6 @@
           "url": null
         },
         "3": {
-          "emoji": "😊",
           "label": "你好吗？",
           "label_en": "How Are You?",
           "color": "#fdcb6e",
@@ -558,6 +584,11 @@
               "label_en": "number one / first",
               "url": null
             }
+          ],
+          "distractors": [
+            "月",
+            "上午",
+            "吃"
           ]
         },
         "二": {
@@ -589,7 +620,7 @@
             },
             {
               "id": "er_4",
-              "emoji": "🦆",
+              "emoji": "🦆🦆",
               "label": "两只鸭子",
               "label_en": "two ducks",
               "url": null
@@ -611,7 +642,6 @@
             },
             {
               "id": "san_2",
-              "emoji": "🤟",
               "label": "三个",
               "label_en": "three items",
               "url": null
@@ -625,11 +655,15 @@
             },
             {
               "id": "san_4",
-              "emoji": "🍡",
               "label": "三个月",
               "label_en": "three months",
               "url": null
             }
+          ],
+          "distractors": [
+            "年",
+            "下午",
+            "看"
           ]
         },
         "四": {
@@ -654,7 +688,6 @@
             },
             {
               "id": "si_3",
-              "emoji": "🌿",
               "label": "四季",
               "label_en": "four seasons",
               "url": null
@@ -702,6 +735,11 @@
               "label_en": "five-petal flower",
               "url": null
             }
+          ],
+          "distractors": [
+            "一月",
+            "爸爸",
+            "买"
           ]
         },
         "六": {
@@ -726,7 +764,6 @@
             },
             {
               "id": "liu_3",
-              "emoji": "🍯",
               "label": "六个杯子",
               "label_en": "six cups",
               "url": null
@@ -762,11 +799,15 @@
             },
             {
               "id": "qi_4",
-              "emoji": "🎵",
               "label": "七个音符",
               "label_en": "seven musical notes",
               "url": null
             }
+          ],
+          "distractors": [
+            "年",
+            "下午",
+            "吃"
           ]
         },
         "八": {
@@ -910,6 +951,11 @@
               "label_en": "zero points",
               "url": null
             }
+          ],
+          "distractors": [
+            "年",
+            "爸爸",
+            "写"
           ]
         },
         "个": {
@@ -920,14 +966,13 @@
           "images": [
             {
               "id": "ge_1",
-              "emoji": "📦",
               "label": "三个",
               "label_en": "three (items)",
               "url": null
             },
             {
               "id": "ge_2",
-              "emoji": "🍎",
+              "emoji": "🍎🍎",
               "label": "2个苹果",
               "label_en": "two apples",
               "url": null
@@ -946,6 +991,11 @@
               "label_en": "several",
               "url": null
             }
+          ],
+          "distractors": [
+            "年",
+            "上午",
+            "看"
           ]
         },
         "几": {
@@ -981,6 +1031,11 @@
               "label_en": "what date?",
               "url": null
             }
+          ],
+          "distractors": [
+            "月",
+            "爸爸",
+            "书"
           ]
         },
         "多": {
@@ -998,14 +1053,12 @@
             },
             {
               "id": "duo_2",
-              "emoji": "👥",
               "label": "很多人",
               "label_en": "many people",
               "url": null
             },
             {
               "id": "duo_3",
-              "emoji": "🌟",
               "label": "很多星星",
               "label_en": "many stars",
               "url": null
@@ -1017,6 +1070,11 @@
               "label_en": "how much money?",
               "url": null
             }
+          ],
+          "distractors": [
+            "上午",
+            "爸爸",
+            "吃"
           ]
         },
         "大": {
@@ -1050,6 +1108,11 @@
               "label_en": "size (big)",
               "url": null
             }
+          ],
+          "distractors": [
+            "月",
+            "爸爸",
+            "看"
           ]
         },
         "岁": {
@@ -1067,7 +1130,6 @@
             },
             {
               "id": "sui_2",
-              "emoji": "🕯️",
               "label": "十岁",
               "label_en": "ten years old",
               "url": null
@@ -1085,6 +1147,11 @@
               "label_en": "how old are you?",
               "url": null
             }
+          ],
+          "distractors": [
+            "月",
+            "看",
+            "买"
           ]
         }
       },
@@ -1121,7 +1188,6 @@
           "images": [
             {
               "id": "nian_1",
-              "emoji": "🎉",
               "label": "今年",
               "label_en": "this year",
               "url": null
@@ -1142,11 +1208,15 @@
             },
             {
               "id": "nian_4",
-              "emoji": "🌏",
               "label": "明年",
               "label_en": "next year",
               "url": null
             }
+          ],
+          "distractors": [
+            "你",
+            "买",
+            "看"
           ]
         },
         "月": {
@@ -1183,6 +1253,11 @@
               "label_en": "a month",
               "url": null
             }
+          ],
+          "distractors": [
+            "你",
+            "买",
+            "吃"
           ]
         },
         "号": {
@@ -1223,6 +1298,11 @@
               "label_en": "today's date？",
               "url": null
             }
+          ],
+          "distractors": [
+            "爸爸",
+            "买",
+            "看"
           ]
         },
         "明天": {
@@ -1327,6 +1407,11 @@
               "label_en": "eat breakfast",
               "url": null
             }
+          ],
+          "distractors": [
+            "买",
+            "看",
+            "爸爸"
           ]
         },
         "中午": {
@@ -1399,6 +1484,11 @@
               "label_en": "afternoon weather",
               "url": null
             }
+          ],
+          "distractors": [
+            "吃",
+            "看",
+            "爸爸"
           ]
         },
         "晚上": {
@@ -1469,6 +1559,11 @@
               "label_en": "10:30",
               "url": null
             }
+          ],
+          "distractors": [
+            "爸爸",
+            "买",
+            "吃"
           ]
         },
         "分": {
@@ -1537,6 +1632,11 @@
               "label_en": "January 1st",
               "url": null
             }
+          ],
+          "distractors": [
+            "你",
+            "书",
+            "买"
           ]
         },
         "四月": {
@@ -1573,6 +1673,11 @@
               "label_en": "spring rain",
               "url": null
             }
+          ],
+          "distractors": [
+            "你",
+            "书",
+            "买"
           ]
         },
         "七月": {
@@ -1609,6 +1714,11 @@
               "label_en": "eating ice cream",
               "url": null
             }
+          ],
+          "distractors": [
+            "你",
+            "书",
+            "看"
           ]
         },
         "十月": {
@@ -1645,6 +1755,11 @@
               "label_en": "autumn harvest",
               "url": null
             }
+          ],
+          "distractors": [
+            "你",
+            "买",
+            "看"
           ]
         }
       },
@@ -1738,6 +1853,11 @@
               "label_en": "dad at home",
               "url": null
             }
+          ],
+          "distractors": [
+            "看",
+            "买",
+            "吃"
           ]
         },
         "妈妈": {
@@ -1773,6 +1893,11 @@
               "label_en": "mom cooking",
               "url": null
             }
+          ],
+          "distractors": [
+            "看",
+            "买",
+            "吃"
           ]
         },
         "儿子": {
@@ -1998,6 +2123,11 @@
               "label_en": "have books",
               "url": null
             }
+          ],
+          "distractors": [
+            "看",
+            "买",
+            "吃"
           ]
         },
         "没有": {
@@ -2060,6 +2190,11 @@
               "label_en": "two friends",
               "url": null
             }
+          ],
+          "distractors": [
+            "爸爸",
+            "买",
+            "看"
           ]
         }
       },
@@ -2124,6 +2259,11 @@
               "label_en": "eating an apple",
               "url": null
             }
+          ],
+          "distractors": [
+            "喝茶",
+            "看",
+            "买"
           ]
         },
         "喝": {
@@ -2160,6 +2300,11 @@
               "label_en": "drinking milk",
               "url": null
             }
+          ],
+          "distractors": [
+            "吃",
+            "看",
+            "买"
           ]
         },
         "米饭": {
@@ -2262,6 +2407,11 @@
               "label_en": "ice water",
               "url": null
             }
+          ],
+          "distractors": [
+            "茶",
+            "书",
+            "苹果"
           ]
         },
         "茶": {
@@ -2297,6 +2447,11 @@
               "label_en": "green tea",
               "url": null
             }
+          ],
+          "distractors": [
+            "水",
+            "书",
+            "苹果"
           ]
         },
         "牛奶": {
@@ -2365,6 +2520,11 @@
               "label_en": "coffee shop",
               "url": null
             }
+          ],
+          "distractors": [
+            "水",
+            "书",
+            "爸爸"
           ]
         },
         "菜": {
@@ -2400,6 +2560,11 @@
               "label_en": "eating dishes/vegetables",
               "url": null
             }
+          ],
+          "distractors": [
+            "水",
+            "书",
+            "茶"
           ]
         },
         "苹果": {
@@ -2435,6 +2600,11 @@
               "label_en": "basket of apples",
               "url": null
             }
+          ],
+          "distractors": [
+            "茶",
+            "书",
+            "爸爸"
           ]
         },
         "想": {
@@ -2502,6 +2672,11 @@
               "label_en": "a glass of water",
               "url": null
             }
+          ],
+          "distractors": [
+            "苹果",
+            "书",
+            "爸爸"
           ]
         },
         "喝茶": {
@@ -2536,6 +2711,11 @@
               "label_en": "tea leaves",
               "url": null
             }
+          ],
+          "distractors": [
+            "吃",
+            "看",
+            "买"
           ]
         },
         "喝水": {
@@ -2572,6 +2752,11 @@
               "label_en": "ice water",
               "url": null
             }
+          ],
+          "distractors": [
+            "吃",
+            "看",
+            "买"
           ]
         },
         "吃米饭": {
@@ -2722,6 +2907,11 @@
               "label_en": "buying clothes",
               "url": null
             }
+          ],
+          "distractors": [
+            "吃",
+            "看",
+            "写"
           ]
         },
         "钱": {
@@ -2825,6 +3015,11 @@
               "label_en": "how many grams?",
               "url": null
             }
+          ],
+          "distractors": [
+            "看",
+            "吃",
+            "爸爸"
           ]
         },
         "块": {
@@ -2893,6 +3088,11 @@
               "label_en": "two books",
               "url": null
             }
+          ],
+          "distractors": [
+            "水",
+            "苹果",
+            "爸爸"
           ]
         },
         "书": {
@@ -2928,6 +3128,11 @@
               "label_en": "reading a book",
               "url": null
             }
+          ],
+          "distractors": [
+            "水",
+            "苹果",
+            "茶"
           ]
         },
         "衣服": {
@@ -2963,6 +3168,11 @@
               "label_en": "clothing shop",
               "url": null
             }
+          ],
+          "distractors": [
+            "书",
+            "水",
+            "爸爸"
           ]
         },
         "东西": {
@@ -3199,7 +3409,6 @@
           "images": [
             {
               "id": "nar2_1",
-              "emoji": "👉",
               "label": "那儿",
               "label_en": "there",
               "url": null
@@ -3257,6 +3466,11 @@
               "label_en": "upstairs",
               "url": null
             }
+          ],
+          "distractors": [
+            "喝茶",
+            "看",
+            "买"
           ]
         },
         "下": {
@@ -3293,6 +3507,11 @@
               "label_en": "downstairs",
               "url": null
             }
+          ],
+          "distractors": [
+            "喝水",
+            "看",
+            "买"
           ]
         },
         "里": {
@@ -3326,6 +3545,11 @@
               "label_en": "inside the classroom",
               "url": null
             }
+          ],
+          "distractors": [
+            "喝茶",
+            "看",
+            "买"
           ]
         },
         "前": {
@@ -3693,6 +3917,11 @@
               "label_en": "watching a movie",
               "url": null
             }
+          ],
+          "distractors": [
+            "吃",
+            "买",
+            "喝茶"
           ]
         },
         "读": {
@@ -3762,6 +3991,11 @@
               "label_en": "writing a name",
               "url": null
             }
+          ],
+          "distractors": [
+            "吃",
+            "喝茶",
+            "爸爸"
           ]
         },
         "看见": {
@@ -3831,6 +4065,11 @@
               "label_en": "TV game",
               "url": null
             }
+          ],
+          "distractors": [
+            "书",
+            "苹果",
+            "衣服"
           ]
         },
         "电影": {
@@ -3866,6 +4105,11 @@
               "label_en": "great film",
               "url": null
             }
+          ],
+          "distractors": [
+            "书",
+            "苹果",
+            "爸爸"
           ]
         },
         "汉字": {
@@ -3901,6 +4145,11 @@
               "label_en": "reading characters",
               "url": null
             }
+          ],
+          "distractors": [
+            "苹果",
+            "水",
+            "爸爸"
           ]
         },
         "工作": {

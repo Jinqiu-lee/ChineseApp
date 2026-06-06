@@ -2,10 +2,67 @@ import React, { useState, useMemo } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { speakPinyin } from '../utils/tts';
-import { buildPinyinExercises } from '../utils/stageGenerator';
 import PinyinExercise from '../components/exercises/PinyinExercise';
 import ScreenBackground from '../components/ScreenBackground';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
+import pinyinLesson1  from '../data/pinyin/pinyin_lesson_1.json';
+import pinyinLesson2  from '../data/pinyin/pinyin_lesson_2.json';
+import pinyinLesson3  from '../data/pinyin/pinyin_lesson_3.json';
+import pinyinLesson4  from '../data/pinyin/pinyin_lesson_4.json';
+import pinyinLesson5  from '../data/pinyin/pinyin_lesson_5.json';
+import pinyinLesson6  from '../data/pinyin/pinyin_lesson_6.json';
+import pinyinLesson7  from '../data/pinyin/pinyin_lesson_7.json';
+import pinyinLesson8  from '../data/pinyin/pinyin_lesson_8.json';
+import pinyinLesson9  from '../data/pinyin/pinyin_lesson_9.json';
+import pinyinLesson10 from '../data/pinyin/pinyin_lesson_10.json';
+
+const PINYIN_LESSON_MAP = {
+  1: pinyinLesson1,  2: pinyinLesson2,  3: pinyinLesson3,
+  4: pinyinLesson4,  5: pinyinLesson5,  6: pinyinLesson6,
+  7: pinyinLesson7,  8: pinyinLesson8,  9: pinyinLesson9,
+  10: pinyinLesson10,
+};
+
+const TYPE_TO_SUBTYPE = {
+  listen_tone:     'tone_id',
+  visual_tone:     'tone_id',
+  listen_initial:  'initial_id',
+  visual_initial:  'initial_id',
+  listen_final:    'final_id',
+  visual_final:    'final_id',
+  listen_syllable: 'syllable_id',
+};
+
+function convertPoolItem(item) {
+  const subtype = TYPE_TO_SUBTYPE[item.type];
+  if (!subtype) return null;
+  return {
+    subtype,
+    syllable:       item.syllable || item.prompt || '',
+    audio_syllable: item.audio_key || item.syllable || '',
+    chinese:        item.chinese || null,
+    english:        item.meaning || null,
+    correct:        item.correct,
+    choices:        item.choices,
+  };
+}
+
+function shuffleArray(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function buildFoundationExercises(lessonNumber) {
+  const idx = Math.min(Math.max(lessonNumber || 1, 1), 10);
+  const lessonData = PINYIN_LESSON_MAP[idx] || PINYIN_LESSON_MAP[1];
+  const pool = lessonData.quiz_pool || [];
+  const converted = pool.map(convertPoolItem).filter(Boolean);
+  return shuffleArray(converted).slice(0, 10);
+}
 
 const TONE_NUM = {
   'ā':1,'á':2,'ǎ':3,'à':4,
@@ -24,13 +81,10 @@ function detectTone(syllable) {
 const TONE_COLORS = ['#FF6B6B', '#FF9F43', '#1DD1A1', '#54A0FF'];
 const TONE_NAMES  = ['', '1st Tone ā', '2nd Tone á', '3rd Tone ǎ', '4th Tone à'];
 
-export default function LessonPinyinScreen({ lessonData, onBack, onOpenFoundations }) {
+export default function LessonPinyinScreen({ lessonData, onBack, onOpenFoundations, onComplete }) {
   const pf = lessonData?.pinyin_focus || {};
 
-  const exercises = useMemo(
-    () => buildPinyinExercises(lessonData).slice(0, 10),
-    [lessonData],
-  );
+  const exercises = useMemo(() => buildFoundationExercises(lessonData?.lesson), [lessonData?.lesson]);
 
   const [mode,         setMode]         = useState('learn'); // 'learn' | 'practice'
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,8 +96,12 @@ export default function LessonPinyinScreen({ lessonData, onBack, onOpenFoundatio
   const advance = (wasCorrect) => {
     if (wasCorrect) setScore(s => s + 1);
     const next = currentIndex + 1;
-    if (next >= exercises.length) setDone(true);
-    else setCurrentIndex(next);
+    if (next >= exercises.length) {
+      setDone(true);
+      if (onComplete) onComplete(); // auto-tick the pinyin section
+    } else {
+      setCurrentIndex(next);
+    }
   };
 
   // ── Done screen ──────────────────────────────────────────────────────────
@@ -57,8 +115,8 @@ export default function LessonPinyinScreen({ lessonData, onBack, onOpenFoundatio
             <View style={styles.doneCard}>
               <Text style={styles.doneTitle}>Pinyin Practice Done!</Text>
               <Text style={styles.doneScore}>{score}/{exercises.length} correct · {pct}%</Text>
-              <TouchableOpacity style={styles.primaryBtn} onPress={resetPractice}>
-                <Text style={styles.primaryBtnText}>← Back to Pinyin Lesson</Text>
+              <TouchableOpacity style={styles.primaryBtn} onPress={onBack}>
+                <Text style={styles.primaryBtnText}>← Back to Lesson</Text>
               </TouchableOpacity>
             </View>
           </View>

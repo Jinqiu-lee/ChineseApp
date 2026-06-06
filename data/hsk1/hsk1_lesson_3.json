@@ -20,7 +20,47 @@
       "english": "Year",
       "part_of_speech": "noun",
       "example": "今年",
-      "translation": "This year"
+      "translation": "This year",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "年",
+          "options": [
+            "年",
+            "月",
+            "号",
+            "天"
+          ],
+          "option_pinyin": [
+            "nián",
+            "yuè",
+            "hào",
+            "tiān"
+          ],
+          "question_chinese": "今___",
+          "question_pinyin": "jīn ___",
+          "question_english": "This year"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What does 年 mean?",
+          "correct": "year",
+          "options": [
+            "year",
+            "month",
+            "day",
+            "week"
+          ],
+          "option_pinyin": [
+            "nián",
+            "yuè",
+            "tiān",
+            "xīngqī"
+          ]
+        }
+      ],
+      "example_pinyin": "jīn nián"
     },
     {
       "id": "hsk1_l3_02",
@@ -32,7 +72,64 @@
       "english": "Month",
       "part_of_speech": "noun",
       "example": "三月八号",
-      "translation": "March 8th"
+      "translation": "March 8th",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "月",
+          "options": [
+            "月",
+            "号",
+            "年",
+            "天"
+          ],
+          "option_pinyin": [
+            "yuè",
+            "hào",
+            "nián",
+            "tiān"
+          ],
+          "question_chinese": "三___八号",
+          "question_pinyin": "sān ___ bā hào",
+          "question_english": "March 8th"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'March 8th'?",
+          "correct": "三月八号",
+          "options": [
+            "三月八号",
+            "八月三号",
+            "三号八月",
+            "八号三月"
+          ],
+          "option_pinyin": [
+            "sān yuè bā hào",
+            "bā yuè sān hào",
+            "sān hào bā yuè",
+            "bā hào sān yuè"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What does 月 mean?",
+          "correct": "month",
+          "options": [
+            "month",
+            "year",
+            "day",
+            "week"
+          ],
+          "option_pinyin": [
+            "yuè",
+            "nián",
+            "tiān",
+            "xīngqī"
+          ]
+        }
+      ],
+      "example_pinyin": "sān yuè bā hào"
     },
     {
       "id": "hsk1_l3_03",
@@ -44,7 +141,47 @@
       "english": "Date / Number (in a series)",
       "part_of_speech": "noun",
       "example": "今天几号？",
-      "translation": "What's the date today?"
+      "translation": "What's the date today?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "号",
+          "options": [
+            "号",
+            "月",
+            "年",
+            "点"
+          ],
+          "option_pinyin": [
+            "hào",
+            "yuè",
+            "nián",
+            "diǎn"
+          ],
+          "question_chinese": "今天几___？",
+          "question_pinyin": "jīntiān jǐ ___?",
+          "question_english": "What is today's date?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'What date is today?'",
+          "correct": "今天几号？",
+          "options": [
+            "今天几号？",
+            "今天几月？",
+            "今天几点？",
+            "今天几年？"
+          ],
+          "option_pinyin": [
+            "jīntiān jǐ hào?",
+            "jīntiān jǐ yuè?",
+            "jīntiān jǐ diǎn?",
+            "jīntiān jǐ nián?"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān jǐ hào?"
     },
     {
       "id": "hsk1_l3_04",
@@ -57,7 +194,47 @@
       "english": "Today",
       "part_of_speech": "noun",
       "example": "今天三月十五号。",
-      "translation": "Today is March 15th."
+      "translation": "Today is March 15th.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "今天",
+          "options": [
+            "今天",
+            "明天",
+            "昨天",
+            "晚上"
+          ],
+          "option_pinyin": [
+            "jīntiān",
+            "míngtiān",
+            "zuótiān",
+            "wǎnshang"
+          ],
+          "question_chinese": "___三月十五号。",
+          "question_pinyin": "___ sān yuè shíwǔ hào.",
+          "question_english": "Today is March 15th."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'today'?",
+          "correct": "今天",
+          "options": [
+            "今天",
+            "明天",
+            "昨天",
+            "后天"
+          ],
+          "option_pinyin": [
+            "jīntiān",
+            "míngtiān",
+            "zuótiān",
+            "hòutiān"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān sān yuè shíwǔ hào."
     },
     {
       "id": "hsk1_l3_05",
@@ -70,7 +247,47 @@
       "english": "Tomorrow",
       "part_of_speech": "noun",
       "example": "明天几号？",
-      "translation": "What's the date tomorrow?"
+      "translation": "What's the date tomorrow?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "明天",
+          "options": [
+            "明天",
+            "今天",
+            "昨天",
+            "上午"
+          ],
+          "option_pinyin": [
+            "míngtiān",
+            "jīntiān",
+            "zuótiān",
+            "shàngwǔ"
+          ],
+          "question_chinese": "___几号？",
+          "question_pinyin": "___ jǐ hào?",
+          "question_english": "What date is tomorrow?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'tomorrow'?",
+          "correct": "明天",
+          "options": [
+            "明天",
+            "今天",
+            "昨天",
+            "后天"
+          ],
+          "option_pinyin": [
+            "míngtiān",
+            "jīntiān",
+            "zuótiān",
+            "hòutiān"
+          ]
+        }
+      ],
+      "example_pinyin": "míngtiān jǐ hào?"
     },
     {
       "id": "hsk1_l3_06",
@@ -83,7 +300,47 @@
       "english": "Yesterday",
       "part_of_speech": "noun",
       "example": "昨天晚上",
-      "translation": "Yesterday evening"
+      "translation": "Yesterday evening",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "昨天",
+          "options": [
+            "昨天",
+            "今天",
+            "明天",
+            "晚上"
+          ],
+          "option_pinyin": [
+            "zuótiān",
+            "jīntiān",
+            "míngtiān",
+            "wǎnshang"
+          ],
+          "question_chinese": "___晚上",
+          "question_pinyin": "___ wǎnshang",
+          "question_english": "Yesterday evening"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'yesterday'?",
+          "correct": "昨天",
+          "options": [
+            "昨天",
+            "今天",
+            "明天",
+            "后天"
+          ],
+          "option_pinyin": [
+            "zuótiān",
+            "jīntiān",
+            "míngtiān",
+            "hòutiān"
+          ]
+        }
+      ],
+      "example_pinyin": "zuótiān wǎnshang"
     },
     {
       "id": "hsk1_l3_07",
@@ -96,7 +353,64 @@
       "english": "Morning / AM",
       "part_of_speech": "noun",
       "example": "上午十点",
-      "translation": "10 AM"
+      "translation": "10 AM",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "10 AM",
+          "correct": "上午十点",
+          "options": [
+            "上午十点",
+            "下午十点",
+            "十点上午。",
+            "晚上十点。"
+          ],
+          "option_pinyin": [
+            "shàngwǔ shí diǎn",
+            "xiàwǔ shí diǎn",
+            "shí diǎn shàngwǔ",
+            "wǎnshang shí diǎn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "上午",
+          "options": [
+            "上午",
+            "下午",
+            "中午",
+            "晚上"
+          ],
+          "option_pinyin": [
+            "shàngwǔ",
+            "xiàwǔ",
+            "zhōngwǔ",
+            "wǎnshang"
+          ],
+          "question_chinese": "___十点",
+          "question_pinyin": "___ shí diǎn",
+          "question_english": "10 AM"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'morning / AM'?",
+          "correct": "上午",
+          "options": [
+            "上午",
+            "下午",
+            "中午",
+            "晚上"
+          ],
+          "option_pinyin": [
+            "shàngwǔ",
+            "xiàwǔ",
+            "zhōngwǔ",
+            "wǎnshang"
+          ]
+        }
+      ],
+      "example_pinyin": "shàngwǔ shí diǎn"
     },
     {
       "id": "hsk1_l3_08",
@@ -109,7 +423,64 @@
       "english": "Noon / Midday",
       "part_of_speech": "noun",
       "example": "中午十二点",
-      "translation": "12:00 noon"
+      "translation": "12:00 noon",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "中午",
+          "options": [
+            "中午",
+            "上午",
+            "下午",
+            "晚上"
+          ],
+          "option_pinyin": [
+            "zhōngwǔ",
+            "shàngwǔ",
+            "xiàwǔ",
+            "wǎnshang"
+          ],
+          "question_chinese": "___十二点",
+          "question_pinyin": "___ shíèr diǎn",
+          "question_english": "12:00 noon"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'noon'?",
+          "correct": "中午",
+          "options": [
+            "中午",
+            "上午",
+            "下午",
+            "晚上"
+          ],
+          "option_pinyin": [
+            "zhōngwǔ",
+            "shàngwǔ",
+            "xiàwǔ",
+            "wǎnshang"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What does 中午 mean?",
+          "correct": "noon",
+          "options": [
+            "noon",
+            "morning",
+            "afternoon",
+            "evening"
+          ],
+          "option_pinyin": [
+            "zhōngwǔ",
+            "shàngwǔ",
+            "xiàwǔ",
+            "wǎnshang"
+          ]
+        }
+      ],
+      "example_pinyin": "zhōngwǔ shíèr diǎn"
     },
     {
       "id": "hsk1_l3_09",
@@ -122,7 +493,64 @@
       "english": "Afternoon / PM",
       "part_of_speech": "noun",
       "example": "下午三点",
-      "translation": "3 PM"
+      "translation": "3 PM",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "下午",
+          "options": [
+            "下午",
+            "上午",
+            "中午",
+            "晚上"
+          ],
+          "option_pinyin": [
+            "xiàwǔ",
+            "shàngwǔ",
+            "zhōngwǔ",
+            "wǎnshang"
+          ],
+          "question_chinese": "___三点",
+          "question_pinyin": "___ sān diǎn",
+          "question_english": "3 PM"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'afternoon / PM'?",
+          "correct": "下午",
+          "options": [
+            "下午",
+            "上午",
+            "中午",
+            "晚上"
+          ],
+          "option_pinyin": [
+            "xiàwǔ",
+            "shàngwǔ",
+            "zhōngwǔ",
+            "wǎnshang"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What does 下午 mean?",
+          "correct": "afternoon",
+          "options": [
+            "afternoon",
+            "morning",
+            "noon",
+            "evening"
+          ],
+          "option_pinyin": [
+            "xiàwǔ",
+            "shàngwǔ",
+            "zhōngwǔ",
+            "wǎnshang"
+          ]
+        }
+      ],
+      "example_pinyin": "xiàwǔ sān diǎn"
     },
     {
       "id": "hsk1_l3_10",
@@ -135,7 +563,64 @@
       "english": "Evening",
       "part_of_speech": "noun",
       "example": "晚上八点",
-      "translation": "8:00 PM"
+      "translation": "8:00 PM",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "晚上",
+          "options": [
+            "晚上",
+            "上午",
+            "中午",
+            "下午"
+          ],
+          "option_pinyin": [
+            "wǎnshang",
+            "shàngwǔ",
+            "zhōngwǔ",
+            "xiàwǔ"
+          ],
+          "question_chinese": "___八点",
+          "question_pinyin": "___ bā diǎn",
+          "question_english": "8:00 PM"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'evening'?",
+          "correct": "晚上",
+          "options": [
+            "晚上",
+            "上午",
+            "中午",
+            "下午"
+          ],
+          "option_pinyin": [
+            "wǎnshang",
+            "shàngwǔ",
+            "zhōngwǔ",
+            "xiàwǔ"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What does 晚上 mean?",
+          "correct": "evening",
+          "options": [
+            "evening",
+            "morning",
+            "noon",
+            "afternoon"
+          ],
+          "option_pinyin": [
+            "wǎnshang",
+            "shàngwǔ",
+            "zhōngwǔ",
+            "xiàwǔ"
+          ]
+        }
+      ],
+      "example_pinyin": "wǎnshang bā diǎn"
     },
     {
       "id": "hsk1_l3_11",
@@ -147,7 +632,47 @@
       "english": "O'clock",
       "part_of_speech": "measure_word",
       "example": "现在几点？",
-      "translation": "What time is it now?"
+      "translation": "What time is it now?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "点",
+          "options": [
+            "点",
+            "分",
+            "号",
+            "月"
+          ],
+          "option_pinyin": [
+            "diǎn",
+            "fēn",
+            "hào",
+            "yuè"
+          ],
+          "question_chinese": "现在几___？",
+          "question_pinyin": "xiànzài jǐ ___?",
+          "question_english": "What time is it now?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": " 3 o'clock' ",
+          "correct": "三点",
+          "options": [
+            "三点",
+            "三分",
+            "三号",
+            "三月"
+          ],
+          "option_pinyin": [
+            "sān diǎn",
+            "sān fēn",
+            "sān hào",
+            "sān yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "xiànzài jǐ diǎn?"
     },
     {
       "id": "hsk1_l3_12",
@@ -159,7 +684,64 @@
       "english": "Minute",
       "part_of_speech": "measure_word",
       "example": "三点十五分",
-      "translation": "3:15"
+      "translation": "3:15",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "分",
+          "options": [
+            "分",
+            "点",
+            "号",
+            "秒"
+          ],
+          "option_pinyin": [
+            "fēn",
+            "diǎn",
+            "hào",
+            "miǎo"
+          ],
+          "question_chinese": "三点十五___",
+          "question_pinyin": "sān diǎn shíwǔ ___",
+          "question_english": "3:15"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means '15 minutes'?",
+          "correct": "十五分",
+          "options": [
+            "十五分",
+            "十五点",
+            "十五号",
+            "十五秒"
+          ],
+          "option_pinyin": [
+            "shíwǔ fēn",
+            "shíwǔ diǎn",
+            "shíwǔ hào",
+            "shíwǔ miǎo"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What does 分 mean?",
+          "correct": "minute",
+          "options": [
+            "minute",
+            "hour",
+            "second",
+            "day"
+          ],
+          "option_pinyin": [
+            "fēn",
+            "xiǎoshí",
+            "miǎo",
+            "tiān"
+          ]
+        }
+      ],
+      "example_pinyin": "sān diǎn shíwǔ fēn"
     },
     {
       "id": "hsk1_l3_13",
@@ -172,7 +754,64 @@
       "english": "January",
       "part_of_speech": "noun",
       "example": "一月一号",
-      "translation": "January 1st"
+      "translation": "January 1st",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "一月",
+          "options": [
+            "一月",
+            "二月",
+            "三月",
+            "四月"
+          ],
+          "option_pinyin": [
+            "yī yuè",
+            "èr yuè",
+            "sān yuè",
+            "sì yuè"
+          ],
+          "question_chinese": "___一号",
+          "question_pinyin": "___ yī hào",
+          "question_english": "January 1st"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'January'?",
+          "correct": "一月",
+          "options": [
+            "一月",
+            "二月",
+            "三月",
+            "十二月"
+          ],
+          "option_pinyin": [
+            "yī yuè",
+            "èr yuè",
+            "sān yuè",
+            "shí'èr yuè"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What does 一月 mean?",
+          "correct": "January",
+          "options": [
+            "January",
+            "February",
+            "March",
+            "April"
+          ],
+          "option_pinyin": [
+            "yī yuè",
+            "èr yuè",
+            "sān yuè",
+            "sì yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "yī yuè yī hào"
     },
     {
       "id": "hsk1_l3_14",
@@ -185,7 +824,47 @@
       "english": "February",
       "part_of_speech": "noun",
       "example": "今天二月一号。",
-      "translation": "Today is February 1st."
+      "translation": "Today is February 1st.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "二月",
+          "options": [
+            "二月",
+            "一月",
+            "三月",
+            "四月"
+          ],
+          "option_pinyin": [
+            "èr yuè",
+            "yī yuè",
+            "sān yuè",
+            "sì yuè"
+          ],
+          "question_chinese": "今天___一号。",
+          "question_pinyin": "jīntiān ___ yī hào.",
+          "question_english": "Today is February 1st."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'February'?",
+          "correct": "二月",
+          "options": [
+            "二月",
+            "一月",
+            "三月",
+            "十二月"
+          ],
+          "option_pinyin": [
+            "èr yuè",
+            "yī yuè",
+            "sān yuè",
+            "shí'èr yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān èr yuè yī hào."
     },
     {
       "id": "hsk1_l3_15",
@@ -198,7 +877,64 @@
       "english": "March",
       "part_of_speech": "noun",
       "example": "三月八号",
-      "translation": "March 8th"
+      "translation": "March 8th",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "三月",
+          "options": [
+            "三月",
+            "二月",
+            "四月",
+            "五月"
+          ],
+          "option_pinyin": [
+            "sān yuè",
+            "èr yuè",
+            "sì yuè",
+            "wǔ yuè"
+          ],
+          "question_chinese": "___八号",
+          "question_pinyin": "___ bā hào",
+          "question_english": "March 8th"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'March'?",
+          "correct": "三月",
+          "options": [
+            "三月",
+            "二月",
+            "四月",
+            "五月"
+          ],
+          "option_pinyin": [
+            "sān yuè",
+            "èr yuè",
+            "sì yuè",
+            "wǔ yuè"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What does 三月 mean?",
+          "correct": "March",
+          "options": [
+            "March",
+            "January",
+            "February",
+            "April"
+          ],
+          "option_pinyin": [
+            "sān yuè",
+            "yī yuè",
+            "èr yuè",
+            "sì yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "sān yuè bā hào"
     },
     {
       "id": "hsk1_l3_16",
@@ -211,7 +947,64 @@
       "english": "April",
       "part_of_speech": "noun",
       "example": "今天四月一号。",
-      "translation": "Today is April 1st."
+      "translation": "Today is April 1st.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Today is April 1st.",
+          "correct": "今天四月一号。",
+          "options": [
+            "今天四月一号。",
+            "四月今天一号。",
+            "一号四月今天。",
+            "今天一号四月。"
+          ],
+          "option_pinyin": [
+            "jīntiān sì yuè yī hào.",
+            "sì yuè jīntiān yī hào.",
+            "yī hào sì yuè jīntiān.",
+            "jīntiān yī hào sì yuè."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "四月",
+          "options": [
+            "四月",
+            "三月",
+            "五月",
+            "六月"
+          ],
+          "option_pinyin": [
+            "sì yuè",
+            "sān yuè",
+            "wǔ yuè",
+            "liù yuè"
+          ],
+          "question_chinese": "今天___一号。",
+          "question_pinyin": "jīntiān ___ yī hào.",
+          "question_english": "Today is April 1st."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'April'?",
+          "correct": "四月",
+          "options": [
+            "四月",
+            "三月",
+            "五月",
+            "六月"
+          ],
+          "option_pinyin": [
+            "sì yuè",
+            "sān yuè",
+            "wǔ yuè",
+            "liù yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān sì yuè yī hào."
     },
     {
       "id": "hsk1_l3_17",
@@ -224,7 +1017,47 @@
       "english": "May",
       "part_of_speech": "noun",
       "example": "今天五月一号。",
-      "translation": "Today is May 1st."
+      "translation": "Today is May 1st.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "五月",
+          "options": [
+            "五月",
+            "四月",
+            "六月",
+            "七月"
+          ],
+          "option_pinyin": [
+            "wǔ yuè",
+            "sì yuè",
+            "liù yuè",
+            "qī yuè"
+          ],
+          "question_chinese": "今天___一号。",
+          "question_pinyin": "jīntiān ___ yī hào.",
+          "question_english": "Today is May 1st."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'May'?",
+          "correct": "五月",
+          "options": [
+            "五月",
+            "四月",
+            "六月",
+            "七月"
+          ],
+          "option_pinyin": [
+            "wǔ yuè",
+            "sì yuè",
+            "liù yuè",
+            "qī yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān wǔ yuè yī hào."
     },
     {
       "id": "hsk1_l3_18",
@@ -237,7 +1070,64 @@
       "english": "June",
       "part_of_speech": "noun",
       "example": "今天六月一号。",
-      "translation": "Today is June 1st."
+      "translation": "Today is June 1st.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 六月 correctly?",
+          "correct": "今天六月一号。",
+          "options": [
+            "今天六月一号。",
+            "今天五月一号。",
+            "今天七月一号。",
+            "今天八月一号。"
+          ],
+          "option_pinyin": [
+            "jīntiān liù yuè yī hào.",
+            "jīntiān wǔ yuè yī hào.",
+            "jīntiān qī yuè yī hào.",
+            "jīntiān bā yuè yī hào."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "六月",
+          "options": [
+            "六月",
+            "五月",
+            "七月",
+            "八月"
+          ],
+          "option_pinyin": [
+            "liù yuè",
+            "wǔ yuè",
+            "qī yuè",
+            "bā yuè"
+          ],
+          "question_chinese": "今天___一号。",
+          "question_pinyin": "jīntiān ___ yī hào.",
+          "question_english": "Today is June 1st."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'June'?",
+          "correct": "六月",
+          "options": [
+            "六月",
+            "五月",
+            "七月",
+            "八月"
+          ],
+          "option_pinyin": [
+            "liù yuè",
+            "wǔ yuè",
+            "qī yuè",
+            "bā yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān liù yuè yī hào."
     },
     {
       "id": "hsk1_l3_19",
@@ -250,7 +1140,64 @@
       "english": "July",
       "part_of_speech": "noun",
       "example": "今天七月一号。",
-      "translation": "Today is July 1st."
+      "translation": "Today is July 1st.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 七月 correctly?",
+          "correct": "今天七月一号。",
+          "options": [
+            "今天七月一号。",
+            "今天六月一号。",
+            "今天八月一号。",
+            "今天九月一号。"
+          ],
+          "option_pinyin": [
+            "jīntiān qī yuè yī hào.",
+            "jīntiān liù yuè yī hào.",
+            "jīntiān bā yuè yī hào.",
+            "jīntiān jiǔ yuè yī hào."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "七月",
+          "options": [
+            "七月",
+            "六月",
+            "八月",
+            "九月"
+          ],
+          "option_pinyin": [
+            "qī yuè",
+            "liù yuè",
+            "bā yuè",
+            "jiǔ yuè"
+          ],
+          "question_chinese": "今天___一号。",
+          "question_pinyin": "jīntiān ___ yī hào.",
+          "question_english": "Today is July 1st."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'July'?",
+          "correct": "七月",
+          "options": [
+            "七月",
+            "六月",
+            "八月",
+            "九月"
+          ],
+          "option_pinyin": [
+            "qī yuè",
+            "liù yuè",
+            "bā yuè",
+            "jiǔ yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān qī yuè yī hào."
     },
     {
       "id": "hsk1_l3_20",
@@ -263,7 +1210,64 @@
       "english": "August",
       "part_of_speech": "noun",
       "example": "今天八月一号。",
-      "translation": "Today is August 1st."
+      "translation": "Today is August 1st.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 八月 correctly?",
+          "correct": "今天八月一号。",
+          "options": [
+            "今天八月一号。",
+            "今天七月一号。",
+            "今天九月一号。",
+            "今天十月一号。"
+          ],
+          "option_pinyin": [
+            "jīntiān bā yuè yī hào.",
+            "jīntiān qī yuè yī hào.",
+            "jīntiān jiǔ yuè yī hào.",
+            "jīntiān shí yuè yī hào."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "八月",
+          "options": [
+            "八月",
+            "七月",
+            "九月",
+            "十月"
+          ],
+          "option_pinyin": [
+            "bā yuè",
+            "qī yuè",
+            "jiǔ yuè",
+            "shí yuè"
+          ],
+          "question_chinese": "今天___一号。",
+          "question_pinyin": "jīntiān ___ yī hào.",
+          "question_english": "Today is August 1st."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'August'?",
+          "correct": "八月",
+          "options": [
+            "八月",
+            "七月",
+            "九月",
+            "十月"
+          ],
+          "option_pinyin": [
+            "bā yuè",
+            "qī yuè",
+            "jiǔ yuè",
+            "shí yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān bā yuè yī hào."
     },
     {
       "id": "hsk1_l3_21",
@@ -276,7 +1280,64 @@
       "english": "September",
       "part_of_speech": "noun",
       "example": "今天九月一号。",
-      "translation": "Today is September 1st."
+      "translation": "Today is September 1st.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 九月 correctly?",
+          "correct": "今天九月一号。",
+          "options": [
+            "今天九月一号。",
+            "今天八月一号。",
+            "今天十月一号。",
+            "今天十一月一号。"
+          ],
+          "option_pinyin": [
+            "jīntiān jiǔ yuè yī hào.",
+            "jīntiān bā yuè yī hào.",
+            "jīntiān shí yuè yī hào.",
+            "jīntiān shíyī yuè yī hào."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "九月",
+          "options": [
+            "九月",
+            "八月",
+            "十月",
+            "十一月"
+          ],
+          "option_pinyin": [
+            "jiǔ yuè",
+            "bā yuè",
+            "shí yuè",
+            "shíyī yuè"
+          ],
+          "question_chinese": "今天___一号。",
+          "question_pinyin": "jīntiān ___ yī hào.",
+          "question_english": "Today is September 1st."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'September'?",
+          "correct": "九月",
+          "options": [
+            "九月",
+            "八月",
+            "十月",
+            "十一月"
+          ],
+          "option_pinyin": [
+            "jiǔ yuè",
+            "bā yuè",
+            "shí yuè",
+            "shíyī yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān jiǔ yuè yī hào."
     },
     {
       "id": "hsk1_l3_22",
@@ -289,7 +1350,64 @@
       "english": "October",
       "part_of_speech": "noun",
       "example": "今天十月一号。",
-      "translation": "Today is October 1st."
+      "translation": "Today is October 1st.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 十月 correctly?",
+          "correct": "今天十月一号。",
+          "options": [
+            "今天十月一号。",
+            "今天九月一号。",
+            "今天十一月一号。",
+            "今天十二月一号。"
+          ],
+          "option_pinyin": [
+            "jīntiān shí yuè yī hào.",
+            "jīntiān jiǔ yuè yī hào.",
+            "jīntiān shíyī yuè yī hào.",
+            "jīntiān shíèr yuè yī hào."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "十月",
+          "options": [
+            "十月",
+            "九月",
+            "十一月",
+            "十二月"
+          ],
+          "option_pinyin": [
+            "shí yuè",
+            "jiǔ yuè",
+            "shíyī yuè",
+            "shí'èr yuè"
+          ],
+          "question_chinese": "今天___一号。",
+          "question_pinyin": "jīntiān ___ yī hào.",
+          "question_english": "Today is October 1st."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'October'?",
+          "correct": "十月",
+          "options": [
+            "十月",
+            "九月",
+            "十一月",
+            "十二月"
+          ],
+          "option_pinyin": [
+            "shí yuè",
+            "jiǔ yuè",
+            "shíyī yuè",
+            "shí'èr yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān shí yuè yī hào."
     },
     {
       "id": "hsk1_l3_23",
@@ -303,7 +1421,64 @@
       "english": "November",
       "part_of_speech": "noun",
       "example": "今天十一月一号。",
-      "translation": "Today is November 1st."
+      "translation": "Today is November 1st.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 十一月 correctly?",
+          "correct": "今天十一月一号。",
+          "options": [
+            "今天十一月一号。",
+            "今天十月一号。",
+            "今天十二月一号。",
+            "今天九月一号。"
+          ],
+          "option_pinyin": [
+            "jīntiān shíyī yuè yī hào.",
+            "jīntiān shí yuè yī hào.",
+            "jīntiān shíèr yuè yī hào.",
+            "jīntiān jiǔ yuè yī hào."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "十一月",
+          "options": [
+            "十一月",
+            "十月",
+            "十二月",
+            "九月"
+          ],
+          "option_pinyin": [
+            "shíyī yuè",
+            "shí yuè",
+            "shí'èr yuè",
+            "jiǔ yuè"
+          ],
+          "question_chinese": "今天___一号。",
+          "question_pinyin": "jīntiān ___ yī hào.",
+          "question_english": "Today is November 1st."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'November'?",
+          "correct": "十一月",
+          "options": [
+            "十一月",
+            "十月",
+            "十二月",
+            "九月"
+          ],
+          "option_pinyin": [
+            "shíyī yuè",
+            "shí yuè",
+            "shí'èr yuè",
+            "jiǔ yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān shíyī yuè yī hào."
     },
     {
       "id": "hsk1_l3_24",
@@ -317,7 +1492,64 @@
       "english": "December",
       "part_of_speech": "noun",
       "example": "今天十二月一号。",
-      "translation": "Today is December 1st."
+      "translation": "Today is December 1st.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 十二月 correctly?",
+          "correct": "今天十二月一号。",
+          "options": [
+            "今天十二月一号。",
+            "今天十一月一号。",
+            "今天十月一号。",
+            "今天九月一号。"
+          ],
+          "option_pinyin": [
+            "jīntiān shíèr yuè yī hào.",
+            "jīntiān shíyī yuè yī hào.",
+            "jīntiān shí yuè yī hào.",
+            "jīntiān jiǔ yuè yī hào."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "十二月",
+          "options": [
+            "十二月",
+            "十一月",
+            "一月",
+            "二月"
+          ],
+          "option_pinyin": [
+            "shí'èr yuè",
+            "shíyī yuè",
+            "yī yuè",
+            "èr yuè"
+          ],
+          "question_chinese": "今天___一号。",
+          "question_pinyin": "jīntiān ___ yī hào.",
+          "question_english": "Today is December 1st."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'December'?",
+          "correct": "十二月",
+          "options": [
+            "十二月",
+            "十一月",
+            "一月",
+            "二月"
+          ],
+          "option_pinyin": [
+            "shí'èr yuè",
+            "shíyī yuè",
+            "yī yuè",
+            "èr yuè"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān shíèr yuè yī hào."
     },
     {
       "id": "hsk1_l3_p01",
@@ -544,6 +1776,45 @@
           "answer": "year (年)",
           "type": "concept"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "月",
+          "options": [
+            "月",
+            "年",
+            "号",
+            "天"
+          ],
+          "option_pinyin": [
+            "yuè",
+            "nián",
+            "hào",
+            "tiān"
+          ],
+          "question_chinese": "2024年六___一号",
+          "question_pinyin": "2024 nián liù ___ yī hào",
+          "question_english": "June 1, 2024"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly expresses 'March 8, 2024'?",
+          "correct": "2024年三月八号",
+          "options": [
+            "2024年三月八号",
+            "三月八号2024年",
+            "2024年八号三月",
+            "八号三月2024年"
+          ],
+          "option_pinyin": [
+            "2024 nián sān yuè bā hào",
+            "sān yuè bā hào 2024 nián",
+            "2024 nián bā hào sān yuè",
+            "bā hào sān yuè 2024 nián"
+          ]
+        }
       ]
     },
     {
@@ -588,6 +1859,45 @@
           "answer": "time of day (上午/下午/晚上)",
           "type": "concept"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "点",
+          "options": [
+            "点",
+            "分",
+            "号",
+            "年"
+          ],
+          "option_pinyin": [
+            "diǎn",
+            "fēn",
+            "hào",
+            "nián"
+          ],
+          "question_chinese": "上午十___二十分",
+          "question_pinyin": "shàngwǔ shí ___ èrshí fēn",
+          "question_english": "10:20 AM"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly says '3:30 PM'?",
+          "correct": "下午三点半",
+          "options": [
+            "下午三点半",
+            "三点下午半",
+            "下午半三点",
+            "下午三半点"
+          ],
+          "option_pinyin": [
+            "xiàwǔ sān diǎn bàn",
+            "sān diǎn xiàwǔ bàn",
+            "xiàwǔ bàn sān diǎn",
+            "xiàwǔ sān bàn diǎn"
+          ]
+        }
       ]
     },
     {
@@ -621,6 +1931,45 @@
           "question": "Translate: Tomorrow is March 10th",
           "answer": "明天是三月十号。",
           "type": "translation"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "今天",
+          "options": [
+            "今天",
+            "明天",
+            "昨天",
+            "晚上"
+          ],
+          "option_pinyin": [
+            "jīntiān",
+            "míngtiān",
+            "zuótiān",
+            "wǎnshang"
+          ],
+          "question_chinese": "___是星期一。",
+          "question_pinyin": "___ shì xīngqīyī.",
+          "question_english": "Today is Monday."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 明天?",
+          "correct": "明天我去学校。",
+          "options": [
+            "明天我去学校。",
+            "我明天学校去。",
+            "去明天我学校。",
+            "我去明天学校。"
+          ],
+          "option_pinyin": [
+            "míngtiān wǒ qù xuéxiào.",
+            "wǒ míngtiān xuéxiào qù.",
+            "qù míngtiān wǒ xuéxiào.",
+            "wǒ qù míngtiān xuéxiào."
+          ]
         }
       ]
     }

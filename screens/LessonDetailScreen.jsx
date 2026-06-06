@@ -198,6 +198,9 @@ export default function LessonDetailScreen({
   const [activeTab, setActiveTab] = useState(initialTab);
   const [toast, setToast] = useState(null);
   const [highlightPhase2, setHighlightPhase2] = useState(false);
+  const [grammarFlowDone, setGrammarFlowDone] = useState(sectionDone?.grammar || false);
+  const [phrasesFlowDone,   setPhrasesFlowDone]   = useState(sectionDone?.sentences || false);
+  const [sentencesFlowDone, setSentencesFlowDone] = useState(sectionDone?.sentences || false);
 
   // Refs: scroll target + one-shot nav guards (initialized to skip if already satisfied)
   const scrollRef      = useRef(null);
@@ -221,6 +224,20 @@ export default function LessonDetailScreen({
     const t2 = setTimeout(() => setToast(null), 3600);
     return () => { clearTimeout(t1); clearTimeout(t2); };
   }, [sectionDone?.newwords, sectionDone?.sentences, sectionDone?.grammar]);
+
+  // Auto-mark Sentences section done when both phrases and key-sentences flows finish
+  useEffect(() => {
+    if (sectionDone?.sentences) return;
+    if (!lesson) return;
+    const hasPhrasesContent = lesson.vocabulary?.some(v => v.part_of_speech === 'phrase');
+    const hasSentencesContent = (lesson.key_sentences?.length || 0) > 0;
+    if (!hasPhrasesContent && !hasSentencesContent) return;
+    const phrasesDone   = !hasPhrasesContent   || phrasesFlowDone;
+    const sentencesDone = !hasSentencesContent || sentencesFlowDone;
+    if (phrasesDone && sentencesDone) {
+      if (onSectionComplete) onSectionComplete('sentences');
+    }
+  }, [phrasesFlowDone, sentencesFlowDone, sectionDone?.sentences]);
 
   // Auto-navigate back to Learning (Phase 2) after completing Round 1 Stages 1 & 2
   useEffect(() => {
@@ -380,12 +397,17 @@ export default function LessonDetailScreen({
         </TouchableOpacity>
         {openSection === 'words' && (
           <View style={styles.expandedSection}>
-            <VocabularySection vocabulary={(lesson.vocabulary || []).filter(v => v.part_of_speech !== 'phrase')} showPinyin={lesson.show_pinyin !== false} avatarId={displayAvatarId} />
-            {!sectionDone?.newwords && (
-              <TouchableOpacity style={styles.sectionDoneBtn} onPress={() => handleSectionDone('newwords')} activeOpacity={0.85}>
-                <Text style={styles.sectionDoneBtnText}>✓  I've reviewed New Words</Text>
-              </TouchableOpacity>
-            )}
+            <VocabularySection
+              vocabulary={(lesson.vocabulary || []).filter(v => v.part_of_speech !== 'phrase')}
+              showPinyin={lesson.show_pinyin !== false}
+              avatarId={displayAvatarId}
+              wordsDone={!!sectionDone?.newwords}
+              lessonId={lessonId}
+              levelId={levelId}
+              onWordsComplete={() => {
+                if (!sectionDone?.newwords && onSectionComplete) onSectionComplete('newwords');
+              }}
+            />
           </View>
         )}
 
@@ -414,12 +436,16 @@ export default function LessonDetailScreen({
         </TouchableOpacity>
         {openSection === 'grammar' && (
           <View style={styles.expandedSection}>
-            <GrammarSection grammarPoints={lesson.grammar_points} />
-            {!sectionDone?.grammar && (
-              <TouchableOpacity style={styles.sectionDoneBtn} onPress={() => handleSectionDone('grammar')} activeOpacity={0.85}>
-                <Text style={styles.sectionDoneBtnText}>✓  I've reviewed Grammar</Text>
-              </TouchableOpacity>
-            )}
+            <GrammarSection
+              grammarPoints={lesson.grammar_points}
+              allDone={grammarFlowDone}
+              lessonId={lessonId}
+              levelId={levelId}
+              onAllDone={() => {
+                setGrammarFlowDone(true);
+                if (!sectionDone?.grammar && onSectionComplete) onSectionComplete('grammar');
+              }}
+            />
           </View>
         )}
 
@@ -453,15 +479,17 @@ export default function LessonDetailScreen({
                 vocabulary={(lesson.vocabulary || []).filter(v => v.part_of_speech === 'phrase')}
                 showPinyin={lesson.show_pinyin !== false}
                 avatarId={displayAvatarId}
+                phrasesDone={phrasesFlowDone}
+                onPhrasesDone={() => setPhrasesFlowDone(true)}
               />
             )}
             {lesson.key_sentences?.length > 0 && (
-              <SentencesSection sentences={lesson.key_sentences} avatarId={displayAvatarId} />
-            )}
-            {!sectionDone?.sentences && (
-              <TouchableOpacity style={styles.sectionDoneBtn} onPress={() => handleSectionDone('sentences')} activeOpacity={0.85}>
-                <Text style={styles.sectionDoneBtnText}>✓  I've reviewed Sentences</Text>
-              </TouchableOpacity>
+              <SentencesSection
+                sentences={lesson.key_sentences}
+                avatarId={displayAvatarId}
+                initialDone={sentencesFlowDone}
+                onAllDone={() => setSentencesFlowDone(true)}
+              />
             )}
           </View>
         )}
@@ -489,11 +517,13 @@ export default function LessonDetailScreen({
             </Text>
           </View>
           <View style={styles.stageStatus}>
-            {round1Done && (
+            {sectionDone?.dialogue ? (
+              <Text style={styles.stageDone}>✅</Text>
+            ) : round1Done ? (
               <View style={[styles.stageArrow, { backgroundColor: '#b87243' }]}>
                 <Text style={styles.stageArrowText}>{openSection === 'dialogue' ? '↓' : '→'}</Text>
               </View>
-            )}
+            ) : null}
           </View>
         </TouchableOpacity>
         {openSection === 'dialogue' && round1Done && (
@@ -509,24 +539,30 @@ export default function LessonDetailScreen({
 
         {/* 5. Idioms & Culture / Characters / Pinyin */}
         {levelId === 'hsk1' ? (
-          <TouchableOpacity
-            style={styles.stageCard}
-            onPress={() => { stopAudio(); onOpenPinyin(); }}
-            activeOpacity={0.8}
-          >
-            <View style={[styles.stageIconBubble, { backgroundColor: SLATE_TEAL }]}>
-              <Text style={styles.stageIcon}>🎵</Text>
-            </View>
-            <View style={styles.stageInfo}>
-              <Text style={styles.stageName}>Pinyin</Text>
-              <Text style={styles.stageDesc}>Tones · Pronunciation · Practice</Text>
-            </View>
-            <View style={styles.stageStatus}>
-              <View style={[styles.stageArrow, { backgroundColor: SLATE_TEAL }]}>
-                <Text style={styles.stageArrowText}>→</Text>
+          <>
+            <TouchableOpacity
+              style={styles.stageCard}
+              onPress={() => { stopAudio(); onOpenPinyin(); }}
+              activeOpacity={0.8}
+            >
+              <View style={[styles.stageIconBubble, { backgroundColor: SLATE_TEAL }]}>
+                <Text style={styles.stageIcon}>🎵</Text>
               </View>
-            </View>
-          </TouchableOpacity>
+              <View style={styles.stageInfo}>
+                <Text style={styles.stageName}>Pinyin</Text>
+                <Text style={styles.stageDesc}>Tones · Pronunciation · Practice</Text>
+              </View>
+              <View style={styles.stageStatus}>
+                {sectionDone?.pinyin ? (
+                  <Text style={styles.stageDone}>✅</Text>
+                ) : (
+                  <View style={[styles.stageArrow, { backgroundColor: SLATE_TEAL }]}>
+                    <Text style={styles.stageArrowText}>→</Text>
+                  </View>
+                )}
+              </View>
+            </TouchableOpacity>
+          </>
         ) : levelId === 'hsk4' || levelId === 'hsk5' || levelId === 'hsk6' ? (
           <>
             {/* 5. Idioms & Culture — Phase 2: locked until Round 1 done */}
@@ -902,6 +938,10 @@ const styles = StyleSheet.create({
     marginTop: 16, borderRadius: 8,
     backgroundColor: SLATE_TEAL,
     paddingVertical: 14, alignItems: 'center',
+  },
+  sectionDoneBtnSecondary: {
+    marginTop: 6,
+    backgroundColor: 'rgba(55,73,80,0.75)',
   },
   sectionDoneBtnText: { fontSize: 15, fontWeight: '800', color: CARD_WHITE },
 

@@ -20,7 +20,47 @@
       "english": "At / In / On (location)",
       "part_of_speech": "preposition",
       "example": "我在学校。",
-      "translation": "I'm at school."
+      "translation": "I'm at school.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "在",
+          "options": [
+            "在",
+            "是",
+            "有",
+            "去"
+          ],
+          "option_pinyin": [
+            "zài",
+            "shì",
+            "yǒu",
+            "qù"
+          ],
+          "question_chinese": "我___学校。",
+          "question_pinyin": "wǒ ___ xuéxiào.",
+          "question_english": "I am at school."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'I am at school'?",
+          "correct": "我在学校。",
+          "options": [
+            "我在学校。",
+            "我是学校。",
+            "我有学校。",
+            "我去学校。"
+          ],
+          "option_pinyin": [
+            "wǒ zài xuéxiào.",
+            "wǒ shì xuéxiào.",
+            "wǒ yǒu xuéxiào.",
+            "wǒ qù xuéxiào."
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zài xuéxiào."
     },
     {
       "id": "hsk1_l7_02",
@@ -32,7 +72,47 @@
       "english": "Where",
       "part_of_speech": "pronoun",
       "example": "你在哪儿？",
-      "translation": "Where are you?"
+      "translation": "Where are you?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "哪儿",
+          "options": [
+            "哪儿",
+            "这儿",
+            "那儿",
+            "哪"
+          ],
+          "option_pinyin": [
+            "nǎr",
+            "zhèr",
+            "nàr",
+            "nǎ"
+          ],
+          "question_chinese": "你在___？",
+          "question_pinyin": "nǐ zài ___?",
+          "question_english": "Where are you?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Where are you?'",
+          "correct": "你在哪儿？",
+          "options": [
+            "你在哪儿？",
+            "你在这儿？",
+            "你在那儿？",
+            "你在哪？"
+          ],
+          "option_pinyin": [
+            "nǐ zài nǎr?",
+            "nǐ zài zhèr?",
+            "nǐ zài nàr?",
+            "nǐ zài nǎ?"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ zài nǎr?"
     },
     {
       "id": "hsk1_l7_03",
@@ -44,7 +124,47 @@
       "english": "Here",
       "part_of_speech": "pronoun",
       "example": "我在这儿。",
-      "translation": "I'm here."
+      "translation": "I'm here.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "这儿",
+          "options": [
+            "这儿",
+            "那儿",
+            "哪儿",
+            "家"
+          ],
+          "option_pinyin": [
+            "zhèr",
+            "nàr",
+            "nǎr",
+            "jiā"
+          ],
+          "question_chinese": "我在___。",
+          "question_pinyin": "wǒ zài ___.",
+          "question_english": "I am here."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'here'?",
+          "correct": "这儿",
+          "options": [
+            "这儿",
+            "那儿",
+            "哪儿",
+            "上"
+          ],
+          "option_pinyin": [
+            "zhèr",
+            "nàr",
+            "nǎr",
+            "shàng"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zài zhèr."
     },
     {
       "id": "hsk1_l7_04",
@@ -56,7 +176,47 @@
       "english": "There",
       "part_of_speech": "pronoun",
       "example": "他在那儿。",
-      "translation": "He is there."
+      "translation": "He is there.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "那儿",
+          "options": [
+            "那儿",
+            "这儿",
+            "哪儿",
+            "家"
+          ],
+          "option_pinyin": [
+            "nàr",
+            "zhèr",
+            "nǎr",
+            "jiā"
+          ],
+          "question_chinese": "他在___。",
+          "question_pinyin": "tā zài ___.",
+          "question_english": "He is there."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'there'?",
+          "correct": "那儿",
+          "options": [
+            "那儿",
+            "这儿",
+            "哪儿",
+            "上"
+          ],
+          "option_pinyin": [
+            "nàr",
+            "zhèr",
+            "nǎr",
+            "shàng"
+          ]
+        }
+      ],
+      "example_pinyin": "tā zài nàr."
     },
     {
       "id": "hsk1_l7_05",
@@ -67,8 +227,48 @@
       ],
       "english": "On / Above / Up",
       "part_of_speech": "noun",
-      "example": "书在桌子上。",
-      "translation": "The book is on the table."
+      "example": "桌子上。",
+      "translation": "on the table.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "上",
+          "options": [
+            "上",
+            "下",
+            "里",
+            "前"
+          ],
+          "option_pinyin": [
+            "shàng",
+            "xià",
+            "lǐ",
+            "qián"
+          ],
+          "question_chinese": "书在桌子___。",
+          "question_pinyin": "shū zài zhuōzi ___.",
+          "question_english": "on the table."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'on the table'?",
+          "correct": "桌子上",
+          "options": [
+            "桌子上",
+            "桌子下",
+            "桌子里",
+            "桌子前"
+          ],
+          "option_pinyin": [
+            "zhuōzi shàng",
+            "zhuōzi xià",
+            "zhuōzi lǐ",
+            "zhuōzi qián"
+          ]
+        }
+      ],
+      "example_pinyin": "shū zài zhuōzi shàng."
     },
     {
       "id": "hsk1_l7_06",
@@ -80,7 +280,47 @@
       "english": "Below / Under / Down",
       "part_of_speech": "noun",
       "example": "猫在桌子下。",
-      "translation": "The cat is under the table."
+      "translation": "The cat is under the table.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "下",
+          "options": [
+            "下",
+            "上",
+            "里",
+            "后"
+          ],
+          "option_pinyin": [
+            "xià",
+            "shàng",
+            "lǐ",
+            "hòu"
+          ],
+          "question_chinese": "猫在桌子___。",
+          "question_pinyin": "māo zài zhuōzi ___.",
+          "question_english": "The cat is under the table."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'under the table'?",
+          "correct": "桌子下",
+          "options": [
+            "桌子下",
+            "桌子上",
+            "桌子里",
+            "桌子后"
+          ],
+          "option_pinyin": [
+            "zhuōzi xià",
+            "zhuōzi shàng",
+            "zhuōzi lǐ",
+            "zhuōzi hòu"
+          ]
+        }
+      ],
+      "example_pinyin": "māo zài zhuōzi xià."
     },
     {
       "id": "hsk1_l7_07",
@@ -92,7 +332,47 @@
       "english": "Inside / In",
       "part_of_speech": "noun",
       "example": "书在包里。",
-      "translation": "The book is in the bag."
+      "translation": "The book is in the bag.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "里",
+          "options": [
+            "里",
+            "上",
+            "下",
+            "前"
+          ],
+          "option_pinyin": [
+            "lǐ",
+            "shàng",
+            "xià",
+            "qián"
+          ],
+          "question_chinese": "书在包___。",
+          "question_pinyin": "shū zài bāo ___.",
+          "question_english": "The book is in the bag."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'in the bag'?",
+          "correct": "包里",
+          "options": [
+            "包里",
+            "包上",
+            "包下",
+            "包前"
+          ],
+          "option_pinyin": [
+            "bāo lǐ",
+            "bāo shàng",
+            "bāo xià",
+            "bāo qián"
+          ]
+        }
+      ],
+      "example_pinyin": "shū zài bāo lǐ."
     },
     {
       "id": "hsk1_l7_08",
@@ -104,7 +384,47 @@
       "english": "Front / Before",
       "part_of_speech": "noun",
       "example": "医院在前面。",
-      "translation": "The hospital is in front."
+      "translation": "The hospital is in front.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "前",
+          "options": [
+            "前",
+            "后",
+            "上",
+            "下"
+          ],
+          "option_pinyin": [
+            "qián",
+            "hòu",
+            "shàng",
+            "xià"
+          ],
+          "question_chinese": "医院在___面。",
+          "question_pinyin": "yīyuàn zài ___miàn.",
+          "question_english": "The hospital is in front."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'in front'?",
+          "correct": "前面",
+          "options": [
+            "前面",
+            "后面",
+            "上面",
+            "下面"
+          ],
+          "option_pinyin": [
+            "qiánmiàn",
+            "hòumiàn",
+            "shàngmiàn",
+            "xiàmiàn"
+          ]
+        }
+      ],
+      "example_pinyin": "yīyuàn zài qiánmiàn."
     },
     {
       "id": "hsk1_l7_09",
@@ -116,7 +436,47 @@
       "english": "Behind / Back / After",
       "part_of_speech": "noun",
       "example": "商店在后面。",
-      "translation": "The store is in the back."
+      "translation": "The store is in the back.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "后",
+          "options": [
+            "后",
+            "前",
+            "上",
+            "下"
+          ],
+          "option_pinyin": [
+            "hòu",
+            "qián",
+            "shàng",
+            "xià"
+          ],
+          "question_chinese": "商店在___面。",
+          "question_pinyin": "shāngdiàn zài ___miàn.",
+          "question_english": "The store is behind."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'behind'?",
+          "correct": "后面",
+          "options": [
+            "后面",
+            "前面",
+            "上面",
+            "下面"
+          ],
+          "option_pinyin": [
+            "hòumiàn",
+            "qiánmiàn",
+            "shàngmiàn",
+            "xiàmiàn"
+          ]
+        }
+      ],
+      "example_pinyin": "shāngdiàn zài hòumiàn."
     },
     {
       "id": "hsk1_l7_10",
@@ -129,7 +489,64 @@
       "english": "School",
       "part_of_speech": "noun",
       "example": "我在学校。",
-      "translation": "I'm at school."
+      "translation": "I'm at school.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "I'm at school.",
+          "correct": "我在学校。",
+          "options": [
+            "我在学校。",
+            "学校我在。",
+            "在我学校。",
+            "我学在校。"
+          ],
+          "option_pinyin": [
+            "wǒ zài xuéxiào.",
+            "xuéxiào wǒ zài.",
+            "zài wǒ xuéxiào.",
+            "wǒ xué zài xiào."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "学校",
+          "options": [
+            "学校",
+            "医院",
+            "商店",
+            "家"
+          ],
+          "option_pinyin": [
+            "xuéxiào",
+            "yīyuàn",
+            "shāngdiàn",
+            "jiā"
+          ],
+          "question_chinese": "我在___。",
+          "question_pinyin": "wǒ zài ___.",
+          "question_english": "I am at school."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'school'?",
+          "correct": "学校",
+          "options": [
+            "学校",
+            "医院",
+            "商店",
+            "家"
+          ],
+          "option_pinyin": [
+            "xuéxiào",
+            "yīyuàn",
+            "shāngdiàn",
+            "jiā"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zài xuéxiào."
     },
     {
       "id": "hsk1_l7_11",
@@ -142,7 +559,47 @@
       "english": "Hospital",
       "part_of_speech": "noun",
       "example": "医院在前面。",
-      "translation": "The hospital is in front."
+      "translation": "The hospital is in front.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "医院",
+          "options": [
+            "医院",
+            "学校",
+            "商店",
+            "家"
+          ],
+          "option_pinyin": [
+            "yīyuàn",
+            "xuéxiào",
+            "shāngdiàn",
+            "jiā"
+          ],
+          "question_chinese": "___在前面。",
+          "question_pinyin": "___ zài qiánmiàn.",
+          "question_english": "The hospital is in front."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'hospital'?",
+          "correct": "医院",
+          "options": [
+            "医院",
+            "学校",
+            "商店",
+            "家"
+          ],
+          "option_pinyin": [
+            "yīyuàn",
+            "xuéxiào",
+            "shāngdiàn",
+            "jiā"
+          ]
+        }
+      ],
+      "example_pinyin": "yīyuàn zài qiánmiàn."
     },
     {
       "id": "hsk1_l7_12",
@@ -155,7 +612,47 @@
       "english": "Shop / Store",
       "part_of_speech": "noun",
       "example": "商店在后面。",
-      "translation": "The store is in the back."
+      "translation": "The store is in the back.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "商店",
+          "options": [
+            "商店",
+            "学校",
+            "医院",
+            "家"
+          ],
+          "option_pinyin": [
+            "shāngdiàn",
+            "xuéxiào",
+            "yīyuàn",
+            "jiā"
+          ],
+          "question_chinese": "___在后面。",
+          "question_pinyin": "___ zài hòumiàn.",
+          "question_english": "The store is behind."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'store / shop'?",
+          "correct": "商店",
+          "options": [
+            "商店",
+            "学校",
+            "医院",
+            "家"
+          ],
+          "option_pinyin": [
+            "shāngdiàn",
+            "xuéxiào",
+            "yīyuàn",
+            "jiā"
+          ]
+        }
+      ],
+      "example_pinyin": "shāngdiàn zài hòumiàn."
     },
     {
       "id": "hsk1_l7_p01",
@@ -355,6 +852,45 @@
           "answer": "在",
           "type": "concept"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "在",
+          "options": [
+            "在",
+            "是",
+            "有",
+            "去"
+          ],
+          "option_pinyin": [
+            "zài",
+            "shì",
+            "yǒu",
+            "qù"
+          ],
+          "question_chinese": "我___家。",
+          "question_pinyin": "wǒ ___ jiā.",
+          "question_english": "I'm at home."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 在 to indicate location?",
+          "correct": "他在医院。",
+          "options": [
+            "他在医院。",
+            "他是医院。",
+            "他有医院。",
+            "他去医院。"
+          ],
+          "option_pinyin": [
+            "tā zài yīyuàn.",
+            "tā shì yīyuàn.",
+            "tā yǒu yīyuàn.",
+            "tā qù yīyuàn."
+          ]
+        }
       ]
     },
     {
@@ -393,6 +929,45 @@
           "question": "Turn into a question: 书在桌子上。",
           "answer": "书在哪儿？",
           "type": "transformation"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "哪儿",
+          "options": [
+            "哪儿",
+            "这儿",
+            "那儿",
+            "哪"
+          ],
+          "option_pinyin": [
+            "nǎr",
+            "zhèr",
+            "nàr",
+            "nǎ"
+          ],
+          "question_chinese": "你在___？",
+          "question_pinyin": "nǐ zài ___?",
+          "question_english": "Where are you?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly asks 'Where is the hospital?'",
+          "correct": "医院在哪儿？",
+          "options": [
+            "医院在哪儿？",
+            "医院哪儿在？",
+            "在哪儿医院？",
+            "医院在什么？"
+          ],
+          "option_pinyin": [
+            "yīyuàn zài nǎr?",
+            "yīyuàn nǎr zài?",
+            "zài nǎr yīyuàn?",
+            "yīyuàn zài shénme?"
+          ]
         }
       ]
     },
@@ -437,6 +1012,45 @@
           "question": "Say 'in front of the school'",
           "answer": "学校前面",
           "type": "production"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "上",
+          "options": [
+            "上",
+            "下",
+            "里",
+            "前"
+          ],
+          "option_pinyin": [
+            "shàng",
+            "xià",
+            "lǐ",
+            "qián"
+          ],
+          "question_chinese": "书在桌子___。",
+          "question_pinyin": "shū zài zhuōzi ___.",
+          "question_english": "The book is on the table."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly says 'The cat is under the table'?",
+          "correct": "猫在桌子下。",
+          "options": [
+            "猫在桌子下。",
+            "猫在桌子上。",
+            "猫在桌子里。",
+            "猫在桌子前。"
+          ],
+          "option_pinyin": [
+            "māo zài zhuōzi xià.",
+            "māo zài zhuōzi shàng.",
+            "māo zài zhuōzi lǐ.",
+            "māo zài zhuōzi qián."
+          ]
         }
       ]
     }

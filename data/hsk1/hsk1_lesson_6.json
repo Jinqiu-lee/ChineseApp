@@ -20,7 +20,64 @@
       "english": "To buy",
       "part_of_speech": "verb",
       "example": "我想买书。",
-      "translation": "I want to buy books."
+      "translation": "I want to buy books.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 买 correctly?",
+          "correct": "我想买书。",
+          "options": [
+            "我想买书。",
+            "我想书买。",
+            "买我想书。",
+            "书我想买。"
+          ],
+          "option_pinyin": [
+            "wǒ xiǎng mǎi shū.",
+            "wǒ xiǎng shū mǎi.",
+            "mǎi wǒ xiǎng shū.",
+            "shū wǒ xiǎng mǎi."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "买",
+          "options": [
+            "买",
+            "卖",
+            "看",
+            "吃"
+          ],
+          "option_pinyin": [
+            "mǎi",
+            "mài",
+            "kàn",
+            "chī"
+          ],
+          "question_chinese": "我想___书。",
+          "question_pinyin": "wǒ xiǎng ___ shū.",
+          "question_english": "I want to buy a book."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to buy'?",
+          "correct": "买",
+          "options": [
+            "买",
+            "卖",
+            "看",
+            "吃"
+          ],
+          "option_pinyin": [
+            "mǎi",
+            "mài",
+            "kàn",
+            "chī"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ xiǎng mǎi shū."
     },
     {
       "id": "hsk1_l6_02",
@@ -32,7 +89,47 @@
       "english": "Money",
       "part_of_speech": "noun",
       "example": "这个多少钱？",
-      "translation": "How much is this?"
+      "translation": "How much is this?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "钱",
+          "options": [
+            "钱",
+            "书",
+            "衣服",
+            "东西"
+          ],
+          "option_pinyin": [
+            "qián",
+            "shū",
+            "yīfu",
+            "dōngxi"
+          ],
+          "question_chinese": "这个多少___？",
+          "question_pinyin": "zhège duōshao ___?",
+          "question_english": "How much does this cost?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'money'?",
+          "correct": "钱",
+          "options": [
+            "钱",
+            "书",
+            "衣服",
+            "东西"
+          ],
+          "option_pinyin": [
+            "qián",
+            "shū",
+            "yīfu",
+            "dōngxi"
+          ]
+        }
+      ],
+      "example_pinyin": "zhège duōshao qián?"
     },
     {
       "id": "hsk1_l6_03",
@@ -43,8 +140,48 @@
       ],
       "english": "Few / Little",
       "part_of_speech": "adjective",
-      "example": "我钱少。",
-      "translation": "I have little money."
+      "example": "多少钱？",
+      "translation": "How much (money)?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "少",
+          "options": [
+            "少",
+            "多",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "shǎo",
+            "duō",
+            "dà",
+            "xiǎo"
+          ],
+          "question_chinese": "我钱___。",
+          "question_pinyin": "wǒ qián ___.",
+          "question_english": "I have little money."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'few / little'?",
+          "correct": "少",
+          "options": [
+            "少",
+            "多",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "shǎo",
+            "duō",
+            "dà",
+            "xiǎo"
+          ]
+        }
+      ],
+      "example_pinyin": "duō shǎo qián?"
     },
     {
       "id": "hsk1_l6_04",
@@ -57,7 +194,64 @@
       "english": "How much / How many",
       "part_of_speech": "pronoun",
       "example": "这个多少钱？",
-      "translation": "How much is this?"
+      "translation": "How much is this?",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 多少 correctly?",
+          "correct": "这个多少钱？",
+          "options": [
+            "这个多少钱？",
+            "多少这个钱？",
+            "这个钱多少？",
+            "钱多少这个？"
+          ],
+          "option_pinyin": [
+            "zhège duōshao qián?",
+            "duōshao zhège qián?",
+            "zhège qián duōshao?",
+            "qián duōshao zhège?"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "多少",
+          "options": [
+            "多少",
+            "几",
+            "什么",
+            "哪"
+          ],
+          "option_pinyin": [
+            "duōshao",
+            "jǐ",
+            "shénme",
+            "nǎ"
+          ],
+          "question_chinese": "这个___钱？",
+          "question_pinyin": "zhège ___ qián?",
+          "question_english": "How much is this?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'How much money?'",
+          "correct": "多少钱？",
+          "options": [
+            "多少钱？",
+            "几个钱？",
+            "什么钱？",
+            "哪个钱？"
+          ],
+          "option_pinyin": [
+            "duōshao qián?",
+            "jǐ gè qián?",
+            "shénme qián?",
+            "nǎ gè qián?"
+          ]
+        }
+      ],
+      "example_pinyin": "zhège duōshao qián?"
     },
     {
       "id": "hsk1_l6_05",
@@ -69,7 +263,47 @@
       "english": "Yuan (RMB) / Piece",
       "part_of_speech": "measure_word",
       "example": "五十块。",
-      "translation": "50 yuan."
+      "translation": "50 yuan.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "块",
+          "options": [
+            "块",
+            "个",
+            "本",
+            "杯"
+          ],
+          "option_pinyin": [
+            "kuài",
+            "gè",
+            "běn",
+            "bēi"
+          ],
+          "question_chinese": "五十___。",
+          "question_pinyin": "wǔshí ___.",
+          "question_english": "50 yuan."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means '50 yuan'?",
+          "correct": "五十块",
+          "options": [
+            "五十块",
+            "五十个",
+            "五十本",
+            "五十杯"
+          ],
+          "option_pinyin": [
+            "wǔshí kuài",
+            "wǔshí gè",
+            "wǔshí běn",
+            "wǔshí bēi"
+          ]
+        }
+      ],
+      "example_pinyin": "wǔshí kuài."
     },
     {
       "id": "hsk1_l6_06",
@@ -81,7 +315,47 @@
       "english": "Measure word for books",
       "part_of_speech": "measure_word",
       "example": "我买一本书。",
-      "translation": "I buy one book."
+      "translation": "I buy one book.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "本",
+          "options": [
+            "本",
+            "个",
+            "只",
+            "杯"
+          ],
+          "option_pinyin": [
+            "běn",
+            "gè",
+            "zhī",
+            "bēi"
+          ],
+          "question_chinese": "我买一___书。",
+          "question_pinyin": "wǒ mǎi yì ___ shū.",
+          "question_english": "I buy one book."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly uses the measure word for books?",
+          "correct": "一本书",
+          "options": [
+            "一本书",
+            "一个书",
+            "一只书",
+            "一杯书"
+          ],
+          "option_pinyin": [
+            "yì běn shū",
+            "yí gè shū",
+            "yì zhī shū",
+            "yì bēi shū"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ mǎi yì běn shū."
     },
     {
       "id": "hsk1_l6_07",
@@ -93,7 +367,47 @@
       "english": "Book",
       "part_of_speech": "noun",
       "example": "我想买书。",
-      "translation": "I want to buy books."
+      "translation": "I want to buy books.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "书",
+          "options": [
+            "书",
+            "衣服",
+            "东西",
+            "钱"
+          ],
+          "option_pinyin": [
+            "shū",
+            "yīfu",
+            "dōngxi",
+            "qián"
+          ],
+          "question_chinese": "我想买___。",
+          "question_pinyin": "wǒ xiǎng mǎi ___.",
+          "question_english": "I want to buy a book."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'book'?",
+          "correct": "书",
+          "options": [
+            "书",
+            "衣服",
+            "东西",
+            "钱"
+          ],
+          "option_pinyin": [
+            "shū",
+            "yīfu",
+            "dōngxi",
+            "qián"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ xiǎng mǎi shū."
     },
     {
       "id": "hsk1_l6_08",
@@ -106,7 +420,47 @@
       "english": "Clothes",
       "part_of_speech": "noun",
       "example": "这件衣服很便宜。",
-      "translation": "This piece of clothing is very cheap."
+      "translation": "This piece of clothing is very cheap.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "衣服",
+          "options": [
+            "衣服",
+            "书",
+            "东西",
+            "钱"
+          ],
+          "option_pinyin": [
+            "yīfu",
+            "shū",
+            "dōngxi",
+            "qián"
+          ],
+          "question_chinese": "这件___很便宜。",
+          "question_pinyin": "zhè jiàn ___ hěn piányí.",
+          "question_english": "This piece of clothing is very cheap."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'clothes'?",
+          "correct": "衣服",
+          "options": [
+            "衣服",
+            "书",
+            "东西",
+            "钱"
+          ],
+          "option_pinyin": [
+            "yīfu",
+            "shū",
+            "dōngxi",
+            "qián"
+          ]
+        }
+      ],
+      "example_pinyin": "zhè jiàn yīfu hěn piányí."
     },
     {
       "id": "hsk1_l6_09",
@@ -119,7 +473,64 @@
       "english": "Thing / Stuff",
       "part_of_speech": "noun",
       "example": "我买东西。",
-      "translation": "I buy things."
+      "translation": "I buy things.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 东西 correctly?",
+          "correct": "我买东西。",
+          "options": [
+            "我买东西。",
+            "东西我买。",
+            "我东西买。",
+            "买东西我。"
+          ],
+          "option_pinyin": [
+            "wǒ mǎi dōngxi.",
+            "dōngxi wǒ mǎi.",
+            "wǒ dōngxi mǎi.",
+            "mǎi dōngxi wǒ."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "东西",
+          "options": [
+            "东西",
+            "书",
+            "衣服",
+            "钱"
+          ],
+          "option_pinyin": [
+            "dōngxi",
+            "shū",
+            "yīfu",
+            "qián"
+          ],
+          "question_chinese": "我买___。",
+          "question_pinyin": "wǒ mǎi ___.",
+          "question_english": "I buy things."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'things / stuff'?",
+          "correct": "东西",
+          "options": [
+            "东西",
+            "书",
+            "衣服",
+            "钱"
+          ],
+          "option_pinyin": [
+            "dōngxi",
+            "shū",
+            "yīfu",
+            "qián"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ mǎi dōngxi."
     },
     {
       "id": "hsk1_l6_10",
@@ -131,7 +542,47 @@
       "english": "Expensive",
       "part_of_speech": "adjective",
       "example": "这个很贵。",
-      "translation": "This is very expensive."
+      "translation": "This is very expensive.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "贵",
+          "options": [
+            "贵",
+            "便宜",
+            "少",
+            "多"
+          ],
+          "option_pinyin": [
+            "guì",
+            "piányí",
+            "shǎo",
+            "duō"
+          ],
+          "question_chinese": "这个很___。",
+          "question_pinyin": "zhège hěn ___.",
+          "question_english": "This is very expensive."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'expensive'?",
+          "correct": "贵",
+          "options": [
+            "贵",
+            "便宜",
+            "少",
+            "多"
+          ],
+          "option_pinyin": [
+            "guì",
+            "piányí",
+            "shǎo",
+            "duō"
+          ]
+        }
+      ],
+      "example_pinyin": "zhège hěn guì."
     },
     {
       "id": "hsk1_l6_11",
@@ -144,7 +595,47 @@
       "english": "Cheap / Inexpensive",
       "part_of_speech": "adjective",
       "example": "这个很便宜。",
-      "translation": "This is very cheap."
+      "translation": "This is very cheap.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "便宜",
+          "options": [
+            "便宜",
+            "贵",
+            "少",
+            "多"
+          ],
+          "option_pinyin": [
+            "piányí",
+            "guì",
+            "shǎo",
+            "duō"
+          ],
+          "question_chinese": "这个很___。",
+          "question_pinyin": "zhège hěn ___.",
+          "question_english": "This is very cheap."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'cheap / inexpensive'?",
+          "correct": "便宜",
+          "options": [
+            "便宜",
+            "贵",
+            "少",
+            "多"
+          ],
+          "option_pinyin": [
+            "piányí",
+            "guì",
+            "shǎo",
+            "duō"
+          ]
+        }
+      ],
+      "example_pinyin": "zhège hěn piányí."
     },
     {
       "id": "hsk1_l6_p01",
@@ -363,6 +854,45 @@
           "answer": "这件衣服多少钱？",
           "type": "translation"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "多少",
+          "options": [
+            "多少",
+            "几",
+            "什么",
+            "哪"
+          ],
+          "option_pinyin": [
+            "duōshao",
+            "jǐ",
+            "shénme",
+            "nǎ"
+          ],
+          "question_chinese": "衣服___钱？",
+          "question_pinyin": "yīfu ___ qián?",
+          "question_english": "How much are the clothes?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly asks the price of something?",
+          "correct": "这个多少钱？",
+          "options": [
+            "这个多少钱？",
+            "这个钱是多少？",
+            "多少钱这个？",
+            "这个是多少钱？"
+          ],
+          "option_pinyin": [
+            "zhège duōshao qián?",
+            "zhège qián shì duōshao?",
+            "duōshao qián zhège?",
+            "zhège shì duōshao qián?"
+          ]
+        }
       ]
     },
     {
@@ -402,6 +932,45 @@
           "answer": "colloquial",
           "type": "concept"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "块",
+          "options": [
+            "块",
+            "个",
+            "本",
+            "元"
+          ],
+          "option_pinyin": [
+            "kuài",
+            "gè",
+            "běn",
+            "yuán"
+          ],
+          "question_chinese": "三十___",
+          "question_pinyin": "sānshí ___",
+          "question_english": "30 yuan"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly says '50 yuan'?",
+          "correct": "五十块",
+          "options": [
+            "五十块",
+            "五十个",
+            "五十只",
+            "五十本"
+          ],
+          "option_pinyin": [
+            "wǔshí kuài",
+            "wǔshí gè",
+            "wǔshí zhī",
+            "wǔshí běn"
+          ]
+        }
       ]
     },
     {
@@ -440,6 +1009,45 @@
           "question": "Translate: This book",
           "answer": "这本书",
           "type": "translation"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "本",
+          "options": [
+            "本",
+            "个",
+            "只",
+            "杯"
+          ],
+          "option_pinyin": [
+            "běn",
+            "gè",
+            "zhī",
+            "bēi"
+          ],
+          "question_chinese": "一___书",
+          "question_pinyin": "yī ___ shū",
+          "question_english": "one book"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly uses the measure word for a book?",
+          "correct": "一本书",
+          "options": [
+            "一本书",
+            "一个书",
+            "一只书",
+            "一杯书"
+          ],
+          "option_pinyin": [
+            "yī běn shū",
+            "yī gè shū",
+            "yī zhī shū",
+            "yī bēi shū"
+          ]
         }
       ]
     }

@@ -20,7 +20,47 @@
       "english": "Can / Be able to",
       "part_of_speech": "verb",
       "example": "你能来吗？",
-      "translation": "Can you come?"
+      "translation": "Can you come?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "能",
+          "options": [
+            "能",
+            "会",
+            "想",
+            "去"
+          ],
+          "option_pinyin": [
+            "néng",
+            "huì",
+            "xiǎng",
+            "qù"
+          ],
+          "question_chinese": "你___来吗？",
+          "question_pinyin": "nǐ ___ lái ma?",
+          "question_english": "Can you come?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Can you come?'",
+          "correct": "你能来吗？",
+          "options": [
+            "你能来吗？",
+            "你会来吗？",
+            "你想来吗？",
+            "你去来吗？"
+          ],
+          "option_pinyin": [
+            "nǐ néng lái ma?",
+            "nǐ huì lái ma?",
+            "nǐ xiǎng lái ma?",
+            "nǐ qù lái ma?"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ néng lái ma?"
     },
     {
       "id": "hsk1_l12_02",
@@ -33,7 +73,64 @@
       "english": "Beautiful / Pretty",
       "part_of_speech": "adjective",
       "example": "她很漂亮。",
-      "translation": "She is very beautiful."
+      "translation": "She is very beautiful.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 漂亮 correctly?",
+          "correct": "她很漂亮。",
+          "options": [
+            "她很漂亮。",
+            "漂亮她很。",
+            "她漂亮很。",
+            "很她漂亮。"
+          ],
+          "option_pinyin": [
+            "tā hěn piàoliang.",
+            "piàoliang tā hěn.",
+            "tā piàoliang hěn.",
+            "hěn tā piàoliang."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "漂亮",
+          "options": [
+            "漂亮",
+            "高兴",
+            "忙",
+            "累"
+          ],
+          "option_pinyin": [
+            "piàoliang",
+            "gāoxìng",
+            "máng",
+            "lèi"
+          ],
+          "question_chinese": "她很___。",
+          "question_pinyin": "tā hěn ___.",
+          "question_english": "She is very pretty."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'beautiful / pretty'?",
+          "correct": "漂亮",
+          "options": [
+            "漂亮",
+            "高兴",
+            "忙",
+            "累"
+          ],
+          "option_pinyin": [
+            "piàoliang",
+            "gāoxìng",
+            "máng",
+            "lèi"
+          ]
+        }
+      ],
+      "example_pinyin": "tā hěn piàoliang."
     },
     {
       "id": "hsk1_l12_03",
@@ -46,7 +143,47 @@
       "english": "To study / To learn",
       "part_of_speech": "verb",
       "example": "我学习汉语。",
-      "translation": "I study Chinese."
+      "translation": "I study Chinese.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "学习",
+          "options": [
+            "学习",
+            "工作",
+            "学校",
+            "说"
+          ],
+          "option_pinyin": [
+            "xuéxí",
+            "gōngzuò",
+            "xuéxiào",
+            "shuō"
+          ],
+          "question_chinese": "我___汉语。",
+          "question_pinyin": "wǒ ___ hànyǔ.",
+          "question_english": "I study Chinese."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to study / learn'?",
+          "correct": "学习",
+          "options": [
+            "学习",
+            "工作",
+            "学校",
+            "说"
+          ],
+          "option_pinyin": [
+            "xuéxí",
+            "gōngzuò",
+            "xuéxiào",
+            "shuō"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ xuéxí hànyǔ."
     },
     {
       "id": "hsk1_l12_04",
@@ -59,7 +196,64 @@
       "english": "Student",
       "part_of_speech": "noun",
       "example": "我是学生。",
-      "translation": "I am a student."
+      "translation": "I am a student.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 学生 correctly?",
+          "correct": "我是学生。",
+          "options": [
+            "我是学生。",
+            "学生我是。",
+            "我学生是。",
+            "是学生我。"
+          ],
+          "option_pinyin": [
+            "wǒ shì xuésheng.",
+            "xuésheng wǒ shì.",
+            "wǒ xuésheng shì.",
+            "shì xuésheng wǒ."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "学生",
+          "options": [
+            "学生",
+            "老师",
+            "医生",
+            "朋友"
+          ],
+          "option_pinyin": [
+            "xuésheng",
+            "lǎoshī",
+            "yīshēng",
+            "péngyou"
+          ],
+          "question_chinese": "我是___。",
+          "question_pinyin": "wǒ shì ___.",
+          "question_english": "I am a student."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'student'?",
+          "correct": "学生",
+          "options": [
+            "学生",
+            "老师",
+            "医生",
+            "朋友"
+          ],
+          "option_pinyin": [
+            "xuésheng",
+            "lǎoshī",
+            "yīshēng",
+            "péngyou"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ shì xuésheng."
     },
     {
       "id": "hsk1_l12_05",
@@ -72,7 +266,64 @@
       "english": "Fruit",
       "part_of_speech": "noun",
       "example": "我吃水果。",
-      "translation": "I eat fruit."
+      "translation": "I eat fruit.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 水果 correctly?",
+          "correct": "我吃水果。",
+          "options": [
+            "我吃水果。",
+            "水果我吃。",
+            "我水果吃。",
+            "吃我水果。"
+          ],
+          "option_pinyin": [
+            "wǒ chī shuǐguǒ.",
+            "shuǐguǒ wǒ chī.",
+            "wǒ shuǐguǒ chī.",
+            "chī wǒ shuǐguǒ."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "水果",
+          "options": [
+            "水果",
+            "米饭",
+            "面条",
+            "菜"
+          ],
+          "option_pinyin": [
+            "shuǐguǒ",
+            "mǐfàn",
+            "miàntiáo",
+            "cài"
+          ],
+          "question_chinese": "我吃___。",
+          "question_pinyin": "wǒ chī ___.",
+          "question_english": "I eat fruit."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'fruit'?",
+          "correct": "水果",
+          "options": [
+            "水果",
+            "米饭",
+            "面条",
+            "菜"
+          ],
+          "option_pinyin": [
+            "shuǐguǒ",
+            "mǐfàn",
+            "miàntiáo",
+            "cài"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ chī shuǐguǒ."
     },
     {
       "id": "hsk1_l12_06",
@@ -85,7 +336,47 @@
       "english": "To sleep",
       "part_of_speech": "verb",
       "example": "我睡觉了。",
-      "translation": "I'm going to sleep."
+      "translation": "I'm going to sleep.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "睡觉",
+          "options": [
+            "睡觉",
+            "吃饭",
+            "喝水",
+            "工作"
+          ],
+          "option_pinyin": [
+            "shuì jiào",
+            "chīfàn",
+            "hē shuǐ",
+            "gōngzuò"
+          ],
+          "question_chinese": "我___了。",
+          "question_pinyin": "wǒ ___ le.",
+          "question_english": "I went to sleep."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to sleep'?",
+          "correct": "睡觉",
+          "options": [
+            "睡觉",
+            "吃饭",
+            "喝水",
+            "工作"
+          ],
+          "option_pinyin": [
+            "shuì jiào",
+            "chīfàn",
+            "hē shuǐ",
+            "gōngzuò"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ shuìjiào le."
     },
     {
       "id": "hsk1_l12_07",
@@ -97,7 +388,47 @@
       "english": "Cat",
       "part_of_speech": "noun",
       "example": "我有一只猫。",
-      "translation": "I have one cat."
+      "translation": "I have one cat.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "猫",
+          "options": [
+            "猫",
+            "狗",
+            "鸟",
+            "鱼"
+          ],
+          "option_pinyin": [
+            "māo",
+            "gǒu",
+            "niǎo",
+            "yú"
+          ],
+          "question_chinese": "我有一只___。",
+          "question_pinyin": "wǒ yǒu yì zhī ___.",
+          "question_english": "I have a cat."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'cat'?",
+          "correct": "猫",
+          "options": [
+            "猫",
+            "狗",
+            "鸟",
+            "鱼"
+          ],
+          "option_pinyin": [
+            "māo",
+            "gǒu",
+            "niǎo",
+            "yú"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ yǒu yì zhī māo."
     },
     {
       "id": "hsk1_l12_08",
@@ -109,7 +440,47 @@
       "english": "Dog",
       "part_of_speech": "noun",
       "example": "他有一只狗。",
-      "translation": "He has one dog."
+      "translation": "He has one dog.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "狗",
+          "options": [
+            "狗",
+            "猫",
+            "鸟",
+            "鱼"
+          ],
+          "option_pinyin": [
+            "gǒu",
+            "māo",
+            "niǎo",
+            "yú"
+          ],
+          "question_chinese": "他有一只___。",
+          "question_pinyin": "tā yǒu yì zhī ___.",
+          "question_english": "He has a dog."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'dog'?",
+          "correct": "狗",
+          "options": [
+            "狗",
+            "猫",
+            "鸟",
+            "鱼"
+          ],
+          "option_pinyin": [
+            "gǒu",
+            "māo",
+            "niǎo",
+            "yú"
+          ]
+        }
+      ],
+      "example_pinyin": "tā yǒu yì zhī gǒu."
     },
     {
       "id": "hsk1_l12_09",
@@ -121,8 +492,48 @@
       ],
       "english": "Miss / Ms. / Young woman",
       "part_of_speech": "noun",
-      "example": "她是小姐。",
-      "translation": "She is a young woman."
+      "example": "她是张小姐。",
+      "translation": "She is Miss Zhang.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "小姐",
+          "options": [
+            "小姐",
+            "先生",
+            "同学",
+            "老师"
+          ],
+          "option_pinyin": [
+            "xiǎojiě",
+            "xiānsheng",
+            "tóngxué",
+            "lǎoshī"
+          ],
+          "question_chinese": "她是___。",
+          "question_pinyin": "tā shì ___.",
+          "question_english": "She is a young lady / Miss."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Miss / young woman'?",
+          "correct": "小姐",
+          "options": [
+            "小姐",
+            "先生",
+            "同学",
+            "老师"
+          ],
+          "option_pinyin": [
+            "xiǎojiě",
+            "xiānsheng",
+            "tóngxué",
+            "lǎoshī"
+          ]
+        }
+      ],
+      "example_pinyin": "tā shì zhāng xiǎojiě."
     },
     {
       "id": "hsk1_l12_10",
@@ -135,7 +546,47 @@
       "english": "Woman",
       "part_of_speech": "noun",
       "example": "那个女人很漂亮。",
-      "translation": "That woman is very pretty."
+      "translation": "That woman is very pretty.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "女人",
+          "options": [
+            "女人",
+            "男人",
+            "学生",
+            "朋友"
+          ],
+          "option_pinyin": [
+            "nǚrén",
+            "nánrén",
+            "xuésheng",
+            "péngyou"
+          ],
+          "question_chinese": "那个___很漂亮。",
+          "question_pinyin": "nà ge ___ hěn piàoliang.",
+          "question_english": "That woman is very pretty."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'woman'?",
+          "correct": "女人",
+          "options": [
+            "女人",
+            "男人",
+            "学生",
+            "朋友"
+          ],
+          "option_pinyin": [
+            "nǚrén",
+            "nánrén",
+            "xuésheng",
+            "péngyou"
+          ]
+        }
+      ],
+      "example_pinyin": "nà ge nǚrén hěn piàoliang."
     },
     {
       "id": "hsk1_l12_11",
@@ -147,7 +598,47 @@
       "english": "All / Both",
       "part_of_speech": "adverb",
       "example": "我们都是学生。",
-      "translation": "We are all students."
+      "translation": "We all are students.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "都",
+          "options": [
+            "都",
+            "也",
+            "和",
+            "很"
+          ],
+          "option_pinyin": [
+            "dōu",
+            "yě",
+            "hé",
+            "hěn"
+          ],
+          "question_chinese": "我们___是学生。",
+          "question_pinyin": "wǒmen ___ shì xuésheng.",
+          "question_english": "We all are students."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'We all are students'?",
+          "correct": "我们都是学生。",
+          "options": [
+            "我们都是学生。",
+            "我们也是学生。",
+            "我们和是学生。",
+            "我们很是学生。"
+          ],
+          "option_pinyin": [
+            "wǒmen dōu shì xuésheng.",
+            "wǒmen yě shì xuésheng.",
+            "wǒmen hé shì xuésheng.",
+            "wǒmen hěn shì xuésheng."
+          ]
+        }
+      ],
+      "example_pinyin": "wǒmen dōu shì xuésheng."
     },
     {
       "id": "hsk1_l12_12",
@@ -160,7 +651,47 @@
       "english": "How / Why",
       "part_of_speech": "question_word",
       "example": "你怎么去？",
-      "translation": "How are you going?"
+      "translation": "How are you going?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "怎么",
+          "options": [
+            "怎么",
+            "什么",
+            "哪儿",
+            "几"
+          ],
+          "option_pinyin": [
+            "zěnme",
+            "shénme",
+            "nǎr",
+            "jǐ"
+          ],
+          "question_chinese": "你___去？",
+          "question_pinyin": "nǐ ___ qù?",
+          "question_english": "How are you going?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'How are you going?'",
+          "correct": "你怎么去？",
+          "options": [
+            "你怎么去？",
+            "你什么去？",
+            "你哪儿去？",
+            "你几去？"
+          ],
+          "option_pinyin": [
+            "nǐ zěnme qù?",
+            "nǐ shénme qù?",
+            "nǐ nǎr qù?",
+            "nǐ jǐ qù?"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ zěnme qù?"
     },
     {
       "id": "hsk1_l12_p01",
@@ -504,6 +1035,45 @@
           "answer": "能",
           "type": "fill_in_blank"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "能",
+          "options": [
+            "能",
+            "会",
+            "想",
+            "去"
+          ],
+          "option_pinyin": [
+            "néng",
+            "huì",
+            "xiǎng",
+            "qù"
+          ],
+          "question_chinese": "你___来吗？",
+          "question_pinyin": "nǐ ___ lái ma?",
+          "question_english": "Can you come?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly uses 能 for physical ability?",
+          "correct": "他能跑很快。",
+          "options": [
+            "他能跑很快。",
+            "他会跑很快。",
+            "他想跑很快。",
+            "他去跑很快。"
+          ],
+          "option_pinyin": [
+            "tā néng pǎo hěn kuài.",
+            "tā huì pǎo hěn kuài.",
+            "tā xiǎng pǎo hěn kuài.",
+            "tā qù pǎo hěn kuài."
+          ]
+        }
       ]
     },
     {
@@ -533,6 +1103,45 @@
           "answer": "Before the verb",
           "type": "concept"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "都",
+          "options": [
+            "都",
+            "也",
+            "和",
+            "很"
+          ],
+          "option_pinyin": [
+            "dōu",
+            "yě",
+            "hé",
+            "hěn"
+          ],
+          "question_chinese": "我们___是学生。",
+          "question_pinyin": "wǒmen ___ shì xuésheng.",
+          "question_english": "We are all students."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly uses 都?",
+          "correct": "他们都会说汉语。",
+          "options": [
+            "他们都会说汉语。",
+            "他们也会说汉语。",
+            "他们和会说汉语。",
+            "他们很会说汉语。"
+          ],
+          "option_pinyin": [
+            "tāmen dōu huì shuō Hànyǔ.",
+            "tāmen yě huì shuō Hànyǔ.",
+            "tāmen hé huì shuō Hànyǔ.",
+            "tāmen hěn huì shuō Hànyǔ."
+          ]
+        }
       ]
     },
     {
@@ -561,6 +1170,45 @@
           "question": "Difference between 怎么 and 怎么样?",
           "answer": "怎么 = how (method); 怎么样 = how (description/opinion)",
           "type": "concept"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "怎么",
+          "options": [
+            "怎么",
+            "什么",
+            "哪儿",
+            "几"
+          ],
+          "option_pinyin": [
+            "zěnme",
+            "shénme",
+            "nǎr",
+            "jǐ"
+          ],
+          "question_chinese": "你___去学校？",
+          "question_pinyin": "nǐ ___ qù xuéxiào?",
+          "question_english": "How do you get to school?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly uses 怎么 to ask how?",
+          "correct": "你怎么去学校？",
+          "options": [
+            "你怎么去学校？",
+            "你什么去学校？",
+            "你哪儿去学校？",
+            "你几去学校？"
+          ],
+          "option_pinyin": [
+            "nǐ zěnme qù xuéxiào?",
+            "nǐ shénme qù xuéxiào?",
+            "nǐ nǎr qù xuéxiào?",
+            "nǐ jǐ qù xuéxiào?"
+          ]
         }
       ]
     }

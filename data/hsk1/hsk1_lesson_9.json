@@ -21,7 +21,64 @@
       "english": "Friend",
       "part_of_speech": "noun",
       "example": "我们是朋友。",
-      "translation": "We are friends."
+      "translation": "We are friends.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "朋友",
+          "options": [
+            "朋友",
+            "同学",
+            "先生",
+            "老师"
+          ],
+          "option_pinyin": [
+            "péngyou",
+            "tóngxué",
+            "xiānsheng",
+            "lǎoshī"
+          ],
+          "question_chinese": "我们是___。",
+          "question_pinyin": "wǒmen shì ___.",
+          "question_english": "We are friends."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'friend'?",
+          "correct": "朋友",
+          "options": [
+            "朋友",
+            "同学",
+            "先生",
+            "老师"
+          ],
+          "option_pinyin": [
+            "péngyou",
+            "tóngxué",
+            "xiānsheng",
+            "lǎoshī"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "We are friends.",
+          "correct": "我们是朋友。",
+          "options": [
+            "我们是朋友。",
+            "朋友我们是。",
+            "我们朋友是。",
+            "是朋友我们。"
+          ],
+          "option_pinyin": [
+            "wǒmen shì péngyou.",
+            "péngyou wǒmen shì.",
+            "wǒmen péngyou shì.",
+            "shì péngyou wǒmen."
+          ]
+        }
+      ],
+      "example_pinyin": "wǒmen shì péngyou."
     },
     {
       "id": "hsk1_l9_02",
@@ -34,7 +91,64 @@
       "english": "Classmate",
       "part_of_speech": "noun",
       "example": "他是我同学。",
-      "translation": "He is my classmate."
+      "translation": "He is my classmate.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "同学",
+          "options": [
+            "同学",
+            "朋友",
+            "先生",
+            "老师"
+          ],
+          "option_pinyin": [
+            "tóngxué",
+            "péngyou",
+            "xiānsheng",
+            "lǎoshī"
+          ],
+          "question_chinese": "他是我___。",
+          "question_pinyin": "tā shì wǒ ___.",
+          "question_english": "He is my classmate."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'classmate'?",
+          "correct": "同学",
+          "options": [
+            "同学",
+            "朋友",
+            "先生",
+            "老师"
+          ],
+          "option_pinyin": [
+            "tóngxué",
+            "péngyou",
+            "xiānsheng",
+            "lǎoshī"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "He is my classmate.",
+          "correct": "他是我同学。",
+          "options": [
+            "他是我同学。",
+            "同学他是我。",
+            "他我是同学。",
+            "是同学他我。"
+          ],
+          "option_pinyin": [
+            "tā shì wǒ tóngxué.",
+            "tóngxué tā shì wǒ.",
+            "tā wǒ shì tóngxué.",
+            "shì tóngxué tā wǒ."
+          ]
+        }
+      ],
+      "example_pinyin": "tā shì wǒ tóngxué."
     },
     {
       "id": "hsk1_l9_03",
@@ -47,7 +161,47 @@
       "english": "To know / To meet",
       "part_of_speech": "verb",
       "example": "认识你很高兴！",
-      "translation": "Nice to meet you!"
+      "translation": "Nice to meet you!",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "认识",
+          "options": [
+            "认识",
+            "学习",
+            "喜欢",
+            "知道"
+          ],
+          "option_pinyin": [
+            "rènshi",
+            "xuéxí",
+            "xǐhuan",
+            "zhīdào"
+          ],
+          "question_chinese": "___你很高兴！",
+          "question_pinyin": "___ nǐ hěn gāoxìng!",
+          "question_english": "Nice to meet you!"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to know / to meet'?",
+          "correct": "认识",
+          "options": [
+            "认识",
+            "学习",
+            "喜欢",
+            "知道"
+          ],
+          "option_pinyin": [
+            "rènshi",
+            "xuéxí",
+            "xǐhuan",
+            "zhīdào"
+          ]
+        }
+      ],
+      "example_pinyin": "rènshi nǐ hěn gāoxìng!"
     },
     {
       "id": "hsk1_l9_04",
@@ -60,7 +214,64 @@
       "english": "Happy / Glad",
       "part_of_speech": "adjective",
       "example": "我很高兴。",
-      "translation": "I am very happy."
+      "translation": "I am very happy.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "高兴",
+          "options": [
+            "高兴",
+            "好",
+            "漂亮",
+            "忙"
+          ],
+          "option_pinyin": [
+            "gāoxìng",
+            "hǎo",
+            "piàoliang",
+            "máng"
+          ],
+          "question_chinese": "我很___。",
+          "question_pinyin": "wǒ hěn ___.",
+          "question_english": "I am very happy."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'happy / glad'?",
+          "correct": "高兴",
+          "options": [
+            "高兴",
+            "好",
+            "漂亮",
+            "忙"
+          ],
+          "option_pinyin": [
+            "gāoxìng",
+            "hǎo",
+            "piàoliang",
+            "máng"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "I am very happy.",
+          "correct": "我很高兴。",
+          "options": [
+            "我很高兴。",
+            "高兴我很。",
+            "很我高兴。",
+            "我高兴很。"
+          ],
+          "option_pinyin": [
+            "wǒ hěn gāoxìng.",
+            "gāoxìng wǒ hěn.",
+            "hěn wǒ gāoxìng.",
+            "wǒ gāoxìng hěn."
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ hěn gāoxìng."
     },
     {
       "id": "hsk1_l9_05",
@@ -97,7 +308,64 @@
       "english": "Chinese language (Mandarin)",
       "part_of_speech": "noun",
       "example": "我学汉语。",
-      "translation": "I study Chinese."
+      "translation": "I study Chinese.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 汉语 correctly?",
+          "correct": "我学汉语。",
+          "options": [
+            "我学汉语。",
+            "汉语我学。",
+            "我汉语学。",
+            "学汉语我。"
+          ],
+          "option_pinyin": [
+            "wǒ xué Hànyǔ.",
+            "Hànyǔ wǒ xué.",
+            "wǒ Hànyǔ xué.",
+            "xué Hànyǔ wǒ."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "汉语",
+          "options": [
+            "汉语",
+            "英语",
+            "日语",
+            "法语"
+          ],
+          "option_pinyin": [
+            "Hànyǔ",
+            "Yīngyǔ",
+            "Rìyǔ",
+            "Fǎyǔ"
+          ],
+          "question_chinese": "我学___。",
+          "question_pinyin": "wǒ xué ___.",
+          "question_english": "I study Chinese."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Chinese language (Mandarin)'?",
+          "correct": "汉语",
+          "options": [
+            "汉语",
+            "英语",
+            "日语",
+            "法语"
+          ],
+          "option_pinyin": [
+            "Hànyǔ",
+            "Yīngyǔ",
+            "Rìyǔ",
+            "Fǎyǔ"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ xué hànyǔ."
     },
     {
       "id": "hsk1_l9_08",
@@ -109,7 +377,64 @@
       "english": "To speak / To say",
       "part_of_speech": "verb",
       "example": "我会说汉语。",
-      "translation": "I can speak Chinese."
+      "translation": "I can speak Chinese.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 说 correctly?",
+          "correct": "我会说汉语。",
+          "options": [
+            "我会说汉语。",
+            "说我会汉语。",
+            "我说会汉语。",
+            "汉语我会说。"
+          ],
+          "option_pinyin": [
+            "wǒ huì shuō Hànyǔ.",
+            "shuō wǒ huì Hànyǔ.",
+            "wǒ shuō huì Hànyǔ.",
+            "Hànyǔ wǒ huì shuō."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "说",
+          "options": [
+            "说",
+            "学",
+            "读",
+            "写"
+          ],
+          "option_pinyin": [
+            "shuō",
+            "xué",
+            "dú",
+            "xiě"
+          ],
+          "question_chinese": "我会___汉语。",
+          "question_pinyin": "wǒ huì ___ hànyǔ.",
+          "question_english": "I can speak Chinese."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to speak / say'?",
+          "correct": "说",
+          "options": [
+            "说",
+            "学",
+            "读",
+            "写"
+          ],
+          "option_pinyin": [
+            "shuō",
+            "xué",
+            "dú",
+            "xiě"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ huì shuō hànyǔ."
     },
     {
       "id": "hsk1_l9_09",
@@ -121,7 +446,64 @@
       "english": "Can / Know how to",
       "part_of_speech": "verb",
       "example": "你会说汉语吗？",
-      "translation": "Can you speak Chinese?"
+      "translation": "Can you speak Chinese?",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 会 correctly?",
+          "correct": "你会说汉语吗？",
+          "options": [
+            "你会说汉语吗？",
+            "你说会汉语吗？",
+            "会你说汉语吗？",
+            "你会汉语说吗？"
+          ],
+          "option_pinyin": [
+            "nǐ huì shuō Hànyǔ ma?",
+            "nǐ shuō huì Hànyǔ ma?",
+            "huì nǐ shuō Hànyǔ ma?",
+            "nǐ huì Hànyǔ shuō ma?"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "会",
+          "options": [
+            "会",
+            "想",
+            "能",
+            "去"
+          ],
+          "option_pinyin": [
+            "huì",
+            "xiǎng",
+            "néng",
+            "qù"
+          ],
+          "question_chinese": "你___说汉语吗？",
+          "question_pinyin": "nǐ ___ shuō hànyǔ ma?",
+          "question_english": "Can you speak Chinese?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'I can speak Chinese'?",
+          "correct": "我会说汉语。",
+          "options": [
+            "我会说汉语。",
+            "我想说汉语。",
+            "我能说汉语。",
+            "我去说汉语。"
+          ],
+          "option_pinyin": [
+            "wǒ huì shuō Hànyǔ.",
+            "wǒ xiǎng shuō Hànyǔ.",
+            "wǒ néng shuō Hànyǔ.",
+            "wǒ qù shuō Hànyǔ."
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ huì shuō hànyǔ ma?"
     },
     {
       "id": "hsk1_l9_10",
@@ -134,7 +516,64 @@
       "english": "China",
       "part_of_speech": "noun",
       "example": "他是中国人。",
-      "translation": "He is Chinese."
+      "translation": "He is Chinese.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 中国 correctly?",
+          "correct": "他是中国人。",
+          "options": [
+            "他是中国人。",
+            "中国他是人。",
+            "他中国是人。",
+            "是中国他人。"
+          ],
+          "option_pinyin": [
+            "tā shì Zhōngguó rén.",
+            "Zhōngguó tā shì rén.",
+            "tā Zhōngguó shì rén.",
+            "shì Zhōngguó tā rén."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "中国",
+          "options": [
+            "中国",
+            "美国",
+            "日本",
+            "英国"
+          ],
+          "option_pinyin": [
+            "Zhōngguó",
+            "Měiguó",
+            "Rìběn",
+            "Yīngguó"
+          ],
+          "question_chinese": "他是___人。",
+          "question_pinyin": "tā shì ___ rén.",
+          "question_english": "He is Chinese."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'China'?",
+          "correct": "中国",
+          "options": [
+            "中国",
+            "美国",
+            "日本",
+            "英国"
+          ],
+          "option_pinyin": [
+            "Zhōngguó",
+            "Měiguó",
+            "Rìběn",
+            "Yīngguó"
+          ]
+        }
+      ],
+      "example_pinyin": "tā shì zhōngguó rén."
     },
     {
       "id": "hsk1_l9_11",
@@ -147,7 +586,64 @@
       "english": "We / Us",
       "part_of_speech": "pronoun",
       "example": "我们是朋友。",
-      "translation": "We are friends."
+      "translation": "We are friends.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 我们 correctly?",
+          "correct": "我们是朋友。",
+          "options": [
+            "我们是朋友。",
+            "我们朋友是。",
+            "是我们朋友。",
+            "朋友是我们。"
+          ],
+          "option_pinyin": [
+            "wǒmen shì péngyou.",
+            "wǒmen péngyou shì.",
+            "shì wǒmen péngyou.",
+            "péngyou shì wǒmen."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "我们",
+          "options": [
+            "我们",
+            "你们",
+            "他们",
+            "她们"
+          ],
+          "option_pinyin": [
+            "wǒmen",
+            "nǐmen",
+            "tāmen",
+            "tāmen"
+          ],
+          "question_chinese": "___是朋友。",
+          "question_pinyin": "___ shì péngyou.",
+          "question_english": "We are friends."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'we / us'?",
+          "correct": "我们",
+          "options": [
+            "我们",
+            "你们",
+            "他们",
+            "她们"
+          ],
+          "option_pinyin": [
+            "wǒmen",
+            "nǐmen",
+            "tāmen",
+            "tāmen"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒmen shì péngyou."
     },
     {
       "id": "hsk1_l9_12",
@@ -160,7 +656,64 @@
       "english": "Mr. / Sir / Husband",
       "part_of_speech": "noun",
       "example": "王先生，你好！",
-      "translation": "Hello, Mr. Wang!"
+      "translation": "Hello, Mr. Wang!",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 先生 correctly?",
+          "correct": "王先生，你好！",
+          "options": [
+            "王先生，你好！",
+            "先生王，你好！",
+            "你好，王先生！",
+            "王，先生你好！"
+          ],
+          "option_pinyin": [
+            "Wáng xiānsheng, nǐ hǎo!",
+            "xiānsheng Wáng, nǐ hǎo!",
+            "nǐ hǎo, Wáng xiānsheng!",
+            "Wáng, xiānsheng nǐ hǎo!"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "先生",
+          "options": [
+            "先生",
+            "小姐",
+            "同学",
+            "老师"
+          ],
+          "option_pinyin": [
+            "xiānsheng",
+            "xiǎojiě",
+            "tóngxué",
+            "lǎoshī"
+          ],
+          "question_chinese": "王___，你好！",
+          "question_pinyin": "Wáng ___, nǐ hǎo!",
+          "question_english": "Mr. Wang, hello!"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Mr. / Sir'?",
+          "correct": "先生",
+          "options": [
+            "先生",
+            "小姐",
+            "同学",
+            "老师"
+          ],
+          "option_pinyin": [
+            "xiānsheng",
+            "xiǎojiě",
+            "tóngxué",
+            "lǎoshī"
+          ]
+        }
+      ],
+      "example_pinyin": "Wáng xiānsheng, nǐ hǎo!"
     },
     {
       "id": "hsk1_l9_p01",
@@ -262,7 +815,63 @@
         2
       ],
       "english": "Speak Chinese",
-      "part_of_speech": "phrase"
+      "part_of_speech": "phrase",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 说 correctly?",
+          "correct": "我会说汉语。",
+          "options": [
+            "我会说汉语。",
+            "说我会汉语。",
+            "我说会汉语。",
+            "汉语我会说。"
+          ],
+          "option_pinyin": [
+            "wǒ huì shuō Hànyǔ.",
+            "shuō wǒ huì Hànyǔ.",
+            "wǒ shuō huì Hànyǔ.",
+            "Hànyǔ wǒ huì shuō."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "说",
+          "options": [
+            "说",
+            "学",
+            "读",
+            "写"
+          ],
+          "option_pinyin": [
+            "shuō",
+            "xué",
+            "dú",
+            "xiě"
+          ],
+          "question_chinese": "我会___汉语。",
+          "question_pinyin": "wǒ huì ___ Hànyǔ.",
+          "question_english": "I can speak Chinese."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to speak / say'?",
+          "correct": "说",
+          "options": [
+            "说",
+            "学",
+            "读",
+            "写"
+          ],
+          "option_pinyin": [
+            "shuō",
+            "xué",
+            "dú",
+            "xiě"
+          ]
+        }
+      ]
     }
   ],
   "dialogues": [
@@ -518,6 +1127,45 @@
           "answer": "你会读汉语吗？",
           "type": "translation"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "会",
+          "options": [
+            "会",
+            "想",
+            "能",
+            "去"
+          ],
+          "option_pinyin": [
+            "huì",
+            "xiǎng",
+            "néng",
+            "qù"
+          ],
+          "question_chinese": "我___说汉语。",
+          "question_pinyin": "wǒ ___ shuō Hànyǔ.",
+          "question_english": "I can speak Chinese."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 会 to express learned ability?",
+          "correct": "她会说日语。",
+          "options": [
+            "她会说日语。",
+            "她想说日语。",
+            "她去说日语。",
+            "她说会日语。"
+          ],
+          "option_pinyin": [
+            "tā huì shuō Rìyǔ.",
+            "tā xiǎng shuō Rìyǔ.",
+            "tā qù shuō Rìyǔ.",
+            "tā shuō huì Rìyǔ."
+          ]
+        }
       ]
     },
     {
@@ -547,6 +1195,45 @@
           "answer": "我们",
           "type": "fill_in_blank"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "我们",
+          "options": [
+            "我们",
+            "你们",
+            "他们",
+            "我"
+          ],
+          "option_pinyin": [
+            "wǒmen",
+            "nǐmen",
+            "tāmen",
+            "wǒ"
+          ],
+          "question_chinese": "___是朋友。",
+          "question_pinyin": "___ shì péngyou.",
+          "question_english": "We are friends."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly uses 我们?",
+          "correct": "我们都是学生。",
+          "options": [
+            "我们都是学生。",
+            "我们学生都是。",
+            "都是我们学生。",
+            "我们是都学生。"
+          ],
+          "option_pinyin": [
+            "wǒmen dōu shì xuésheng.",
+            "wǒmen xuésheng dōu shì.",
+            "dōu shì wǒmen xuésheng.",
+            "wǒmen shì dōu xuésheng."
+          ]
+        }
       ]
     },
     {
@@ -575,6 +1262,45 @@
           "question": "What is the response to 对不起？",
           "answer": "没关系",
           "type": "concept"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "对不起",
+          "options": [
+            "对不起",
+            "没关系",
+            "谢谢",
+            "不客气"
+          ],
+          "option_pinyin": [
+            "duìbuqǐ",
+            "méi guānxi",
+            "xièxie",
+            "bú kèqi"
+          ],
+          "question_chinese": "___！没关系。",
+          "question_pinyin": "___! méi guānxi.",
+          "question_english": "Sorry! It's okay."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which is the correct response to 对不起?",
+          "correct": "没关系。",
+          "options": [
+            "没关系。",
+            "对不起。",
+            "谢谢。",
+            "你好。"
+          ],
+          "option_pinyin": [
+            "méi guānxi.",
+            "duìbuqǐ.",
+            "xièxie.",
+            "nǐ hǎo."
+          ]
         }
       ]
     }

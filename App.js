@@ -957,6 +957,7 @@ export default function App() {
           lessonData={currentLessonData}
           onBack={() => goToLesson('learning')}
           onOpenFoundations={() => handleOpenFoundationsPinyin('lessonPinyin')}
+          onComplete={() => handleSectionComplete('pinyin')}
         />
       );
     }

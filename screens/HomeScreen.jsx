@@ -607,26 +607,19 @@ export default function HomeScreen({
           );
         })()}
 
-        {/* Van Gogh daily greeting */}
-        {vanGoghGreeting && (
+        {/* Van Gogh quote — single card, welcome-back takes priority over daily greeting */}
+        {(vanGoghStreakMsg || vanGoghGreeting) && (
           <View style={styles.vgCard}>
             <Image
-              source={vanGoghAvatar}
+              source={require('../assets/avatar/Van_Gogh_梵高/van_gogh_portrait_2.png')}
               style={styles.vgAvatarImage}
             />
             <View style={styles.vgTextBlock}>
-              <Text style={styles.vgMessageText}>{vanGoghGreeting.text}</Text>
+              <Text style={styles.vgMessageText}>
+                {(vanGoghStreakMsg ?? vanGoghGreeting).text}
+              </Text>
               <Text style={styles.vgSignature}>— Vincent</Text>
             </View>
-          </View>
-        )}
-        {vanGoghStreakMsg && (
-          <View style={styles.vgStreakRow}>
-            <Image
-              source={require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_Potrait_1.png')}
-              style={styles.vgStreakAvatar}
-            />
-            <Text style={styles.vgStreakLine}>{vanGoghStreakMsg.text}</Text>
           </View>
         )}
 

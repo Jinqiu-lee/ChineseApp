@@ -1,6 +1,48 @@
 // ── Image data — single consolidated file per level ──────────────────────
 const HSK1_IMAGES = require('../data/hsk1/hsk1_images/hsk1_images.json');
 const { EXERCISE_IMAGES } = require('./exerciseImages');
+const { generateWordMiniExercises, generateGrammarMiniExercises } = require('./exerciseGenerator');
+
+// ── Pinyin Foundation exercises (per-lesson quiz pools) ──────────────────
+const _PINYIN_POOLS = {
+  1:  require('../data/pinyin/pinyin_lesson_1.json').quiz_pool  || [],
+  2:  require('../data/pinyin/pinyin_lesson_2.json').quiz_pool  || [],
+  3:  require('../data/pinyin/pinyin_lesson_3.json').quiz_pool  || [],
+  4:  require('../data/pinyin/pinyin_lesson_4.json').quiz_pool  || [],
+  5:  require('../data/pinyin/pinyin_lesson_5.json').quiz_pool  || [],
+  6:  require('../data/pinyin/pinyin_lesson_6.json').quiz_pool  || [],
+  7:  require('../data/pinyin/pinyin_lesson_7.json').quiz_pool  || [],
+  8:  require('../data/pinyin/pinyin_lesson_8.json').quiz_pool  || [],
+  9:  require('../data/pinyin/pinyin_lesson_9.json').quiz_pool  || [],
+  10: require('../data/pinyin/pinyin_lesson_10.json').quiz_pool || [],
+};
+const _PINYIN_TYPE_MAP = {
+  listen_tone: 'tone_id',    visual_tone: 'tone_id',
+  listen_initial: 'initial_id', visual_initial: 'initial_id',
+  listen_final: 'final_id',  visual_final: 'final_id',
+  listen_syllable: 'syllable_id',
+};
+function buildFoundationPinyinExercises(lessonNumber) {
+  const idx  = Math.min(Math.max(lessonNumber || 1, 1), 10);
+  const pool = _PINYIN_POOLS[idx] || _PINYIN_POOLS[1];
+  const converted = pool
+    .map(item => {
+      const subtype = _PINYIN_TYPE_MAP[item.type];
+      if (!subtype) return null;
+      return {
+        type: 'pinyin_exercise',
+        subtype,
+        syllable:       item.syllable || item.prompt || '',
+        audio_syllable: item.audio_key || item.syllable || '',
+        chinese:        item.chinese || null,
+        english:        item.meaning || null,
+        correct:        item.correct,
+        choices:        item.choices,
+      };
+    })
+    .filter(Boolean);
+  return shuffle(converted);
+}
 
 const _imageCache = {};
 function getImageData(lessonNumber) {
@@ -23,6 +65,13 @@ function withLocalAsset(img) {
 }
 
 // ── Image exercise factories ──────────────────────────────────────────────
+// Returns true only when the image is a real photo (has url or bundled asset).
+// Emoji-only placeholder entries are treated as "no image" and fall back to
+// flashcard / audio_choice instead of showing a colored-box-with-emoji exercise.
+function hasRealImage(img) {
+  return img != null && (img.localAsset != null || (typeof img.url === 'string' && img.url.length > 0));
+}
+
 // Returns one "image" entry for a vocab word (picks by imageIndex for variety)
 function pickImage(chinese, lessonNumber, imageIndex = 0) {
   const imgData = getImageData(lessonNumber);
@@ -40,10 +89,44 @@ function pickRandomImage(chinese, lessonNumber) {
   return withLocalAsset({ ...img, color: entry.color });
 }
 
+// Search all HSK1 lessons for a real image for `chinese` (used for cross-lesson distractors).
+function pickImageFromAllLessons(chinese) {
+  const allLessons = HSK1_IMAGES.lessons || {};
+  for (const key of Object.keys(allLessons)) {
+    const entry = allLessons[key]?.vocab_images?.[chinese];
+    if (entry?.images?.length > 0) {
+      const img = entry.images[Math.floor(Math.random() * entry.images.length)];
+      const result = withLocalAsset({ ...img, color: entry.color });
+      if (hasRealImage(result)) return result;
+    }
+  }
+  return null;
+}
+
+// Pick 3 distractor vocab items for image exercises.
+// Priority: 1) custom `distractors` list from the word's image-data entry in JSON,
+//           2) auto-filter — exclude vocab words sharing any character with the correct word,
+//           3) plain random (original behaviour).
+function pickImageDistractors(correctChinese, allVocab, lessonNumber, count = 3) {
+  const entry = getImageData(lessonNumber)[correctChinese];
+  if (entry?.distractors?.length >= count) {
+    return entry.distractors.slice(0, count).map(ch => {
+      const found = allVocab.find(v => v.chinese === ch);
+      return found || { id: ch, chinese: ch, pinyin: '', english: '' };
+    });
+  }
+  const correctChars = new Set([...correctChinese]);
+  const filtered = shuffle(
+    allVocab.filter(v => v.chinese !== correctChinese && ![...v.chinese].some(c => correctChars.has(c)))
+  );
+  if (filtered.length >= count) return filtered.slice(0, count);
+  return shuffle(allVocab.filter(v => v.chinese !== correctChinese)).slice(0, count);
+}
+
 function makeImageToWord(vocabItem, allVocab, lessonNumber, imageIndex = 0) {
   const image = pickImage(vocabItem.chinese, lessonNumber, imageIndex);
-  if (!image) return makeFlashcard(vocabItem); // fallback
-  const distractors = pickDistractors(vocabItem.id, allVocab, 3);
+  if (!image || !hasRealImage(image)) return makeFlashcard(vocabItem); // fallback
+  const distractors = pickImageDistractors(vocabItem.chinese, allVocab, lessonNumber, 3);
   return {
     type: 'image_exercise',
     subtype: 'picture_to_word',
@@ -58,10 +141,13 @@ function makeImageToWord(vocabItem, allVocab, lessonNumber, imageIndex = 0) {
 
 function makeWordToImage(vocabItem, allVocab, lessonNumber, imageIndex = 0) {
   const correctImg = pickImage(vocabItem.chinese, lessonNumber, imageIndex);
-  if (!correctImg) return makeFlashcard(vocabItem); // fallback
-  const distractors = pickDistractors(vocabItem.id, allVocab, 3);
+  if (!correctImg || !hasRealImage(correctImg)) return makeFlashcard(vocabItem); // fallback
+  const distractors = pickImageDistractors(vocabItem.chinese, allVocab, lessonNumber, 3);
   const distractorImgs = distractors
-    .map(d => { const img = pickRandomImage(d.chinese, lessonNumber); return img ? { ...img, isCorrect: false } : null; })
+    .map(d => {
+      const img = pickRandomImage(d.chinese, lessonNumber) || pickImageFromAllLessons(d.chinese);
+      return (img && hasRealImage(img)) ? { ...img, isCorrect: false } : null;
+    })
     .filter(Boolean);
   if (distractorImgs.length < 3) return makeFlashcard(vocabItem);
   return {
@@ -79,10 +165,13 @@ function makeWordToImage(vocabItem, allVocab, lessonNumber, imageIndex = 0) {
 
 function makeSentenceToImage(sentence, keyVocabItem, allVocab, lessonNumber) {
   const correctImg = pickRandomImage(keyVocabItem.chinese, lessonNumber);
-  if (!correctImg) return makeFillBlank(sentence, allVocab) || makeFlashcard(keyVocabItem);
-  const distractors = pickDistractors(keyVocabItem.id, allVocab, 3);
+  if (!correctImg || !hasRealImage(correctImg)) return makeFillBlank(sentence, allVocab) || makeFlashcard(keyVocabItem);
+  const distractors = pickImageDistractors(keyVocabItem.chinese, allVocab, lessonNumber, 3);
   const distractorImgs = distractors
-    .map(d => { const img = pickRandomImage(d.chinese, lessonNumber); return img ? { ...img, isCorrect: false } : null; })
+    .map(d => {
+      const img = pickRandomImage(d.chinese, lessonNumber) || pickImageFromAllLessons(d.chinese);
+      return (img && hasRealImage(img)) ? { ...img, isCorrect: false } : null;
+    })
     .filter(Boolean);
   if (distractorImgs.length < 3) return makeFillBlank(sentence, allVocab) || makeFlashcard(keyVocabItem);
   return {
@@ -357,6 +446,87 @@ function makeSentPicker(pool) {
 
 function pickDistractors(correctId, allVocab, count = 3) {
   return shuffle(allVocab.filter(v => v.id !== correctId)).slice(0, count);
+}
+
+// ── Mini-exercise helpers (vocabulary[] / grammar_points[].mini_exercises) ──
+function convertMiniExercise(ex, vocabItem) {
+  if (!ex?.options?.length || !ex.correct) return null;
+  // Shuffle options while keeping option_pinyin aligned
+  const pairs = (ex.options || []).map((o, i) => ({ opt: o, pin: (ex.option_pinyin || [])[i] || '' }));
+  const shuffled = shuffle([...pairs]);
+  if (ex.type === 'fill_blank') {
+    // Use structured fields when available (grammar fill_blank), else fall back to question
+    const displayText = ex.question_chinese
+      ? ex.question_chinese.replace(/___+/, '____')
+      : (ex.question || '').replace(/___+/, '____');
+    return {
+      type: 'fill_blank',
+      displayText,
+      sentence_pinyin: ex.question_pinyin || '',
+      correct: ex.correct,
+      choices: shuffled.map(p => p.opt),
+      choices_pinyin: shuffled.map(p => p.pin),
+      hint: ex.question_english || '',
+    };
+  }
+  // multiple_choice with a vocab item → audio_choice (plays character audio + English options)
+  // Only valid when options are English; skip exercises where options are Chinese characters
+  // (those are covered by fill_blank exercises and would display garbled in AudioChoiceExercise)
+  if (vocabItem?.chinese) {
+    const hasChinese = /[一-鿿㐀-䶿]/.test(ex.correct || '');
+    if (hasChinese) return null;
+    return {
+      type: 'audio_choice',
+      chinese: vocabItem.chinese,
+      pinyin: vocabItem.pinyin || '',
+      correct: ex.correct,
+      choices: shuffled.map(p => p.opt),
+    };
+  }
+  // Grammar multiple_choice (no single vocab audio) → fill_blank with question as prompt
+  return {
+    type: 'fill_blank',
+    displayText: ex.question || '',
+    sentence_pinyin: '',
+    correct: ex.correct,
+    choices: shuffled.map(p => p.opt),
+    choices_pinyin: shuffled.map(p => p.pin),
+    hint: '',
+  };
+}
+
+function buildMiniExercisePool(lessonData) {
+  const pool = [];
+  const seen = new Set();
+  const key  = (ex) => ex.question_chinese || ex.question || '';
+
+  const vocabWords = (lessonData.vocabulary || []).filter(v => v.part_of_speech !== 'phrase');
+
+  for (const item of vocabWords) {
+    const exArr = (item.mini_exercises || []).length > 0
+      ? item.mini_exercises
+      : generateWordMiniExercises(item, vocabWords);
+    for (const ex of exArr) {
+      if (!ex || seen.has(key(ex))) continue;
+      seen.add(key(ex));
+      const q = convertMiniExercise(ex, item);
+      if (q) pool.push(q);
+    }
+  }
+
+  for (const gp of (lessonData.grammar_points || [])) {
+    const exArr = (gp.mini_exercises || []).length > 0
+      ? gp.mini_exercises
+      : generateGrammarMiniExercises(gp);
+    for (const ex of exArr) {
+      if (!ex || seen.has(key(ex))) continue;
+      seen.add(key(ex));
+      const q = convertMiniExercise(ex, null);
+      if (q) pool.push(q);
+    }
+  }
+
+  return shuffle(pool);
 }
 
 // Build a pinyin lookup map from vocab: { chineseWord: pinyin }
@@ -1239,8 +1409,8 @@ export function generateQuizRound(lessonData) {
       ? makeSpeakRespond(qaPairs[i % qaPairs.length], hskLevel)
       : makeSpeakRepeat(p(pool, i));
 
-  // Pick up to 3 pinyin exercises from the lesson
-  const pinyinPool = shuffle(buildPinyinExercises(lessonData));
+  // Pick up to 3 pinyin exercises from the foundation pool
+  const pinyinPool = buildFoundationPinyinExercises(lessonData?.lesson);
   const pinyinPick = pinyinPool.slice(0, 3);
 
   const raw = [
@@ -1306,12 +1476,22 @@ export function generateRounds(lessonData) {
 
   // Inject pinyin exercises: 1 into stage 2 (Listen & Choose) + 1 into stage 5 (Final Challenge)
   // of each round, cycling through the pinyin pool
-  const pinyinPool = shuffle(buildPinyinExercises(lessonData));
+  const pinyinPool = buildFoundationPinyinExercises(lessonData?.lesson);
   if (pinyinPool.length > 0) {
     let pIdx = 0;
     for (const round of rounds) {
       if (pIdx < pinyinPool.length) round[1].push(pinyinPool[pIdx++]); // stage 2
       if (pIdx < pinyinPool.length) round[4].push(pinyinPool[pIdx++]); // stage 5
+    }
+  }
+
+  // Inject mini_exercises (vocabulary + grammar) into stages 1 and 3 of each round
+  const miniPool = buildMiniExercisePool(lessonData);
+  if (miniPool.length > 0) {
+    let mIdx = 0;
+    for (const round of rounds) {
+      for (let k = 0; k < 2 && mIdx < miniPool.length; k++) round[0].push(miniPool[mIdx++]); // stage 1
+      for (let k = 0; k < 2 && mIdx < miniPool.length; k++) round[2].push(miniPool[mIdx++]); // stage 3
     }
   }
 

@@ -21,7 +21,47 @@
       "english": "Computer",
       "part_of_speech": "noun",
       "example": "这是我的电脑。",
-      "translation": "This is my computer."
+      "translation": "This is my computer.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "电脑",
+          "options": [
+            "电脑",
+            "椅子",
+            "桌子",
+            "杯子"
+          ],
+          "option_pinyin": [
+            "diànnǎo",
+            "yǐzi",
+            "zhuōzi",
+            "bēizi"
+          ],
+          "question_chinese": "这是我的___。",
+          "question_pinyin": "zhè shì wǒ de ___.",
+          "question_english": "This is my computer."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'computer'?",
+          "correct": "电脑",
+          "options": [
+            "电脑",
+            "椅子",
+            "桌子",
+            "杯子"
+          ],
+          "option_pinyin": [
+            "diànnǎo",
+            "yǐzi",
+            "zhuōzi",
+            "bēizi"
+          ]
+        }
+      ],
+      "example_pinyin": "zhè shì wǒ de diànnǎo."
     },
     {
       "id": "hsk1_l13_02",
@@ -33,8 +73,48 @@
       ],
       "english": "Chair",
       "part_of_speech": "noun",
-      "example": "请坐椅子。",
-      "translation": "Please sit on the chair."
+      "example": "请坐在椅子上",
+      "translation": "Please sit on the chair.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "椅子",
+          "options": [
+            "椅子",
+            "桌子",
+            "饭馆",
+            "杯子"
+          ],
+          "option_pinyin": [
+            "yǐzi",
+            "zhuōzi",
+            "fànguǎn",
+            "bēizi"
+          ],
+          "question_chinese": "请坐在___上。",
+          "question_pinyin": "qǐng zuò zài ___ shang.",
+          "question_english": "Please sit on the chair."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'chair'?",
+          "correct": "椅子",
+          "options": [
+            "椅子",
+            "桌子",
+            "杯子",
+            "电脑"
+          ],
+          "option_pinyin": [
+            "yǐzi",
+            "zhuōzi",
+            "bēizi",
+            "diànnǎo"
+          ]
+        }
+      ],
+      "example_pinyin": "qǐng zuò zài yǐzi shang."
     },
     {
       "id": "hsk1_l13_03",
@@ -47,7 +127,47 @@
       "english": "Table / Desk",
       "part_of_speech": "noun",
       "example": "电脑在桌子上。",
-      "translation": "The computer is on the desk."
+      "translation": "The computer is on the desk.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "桌子",
+          "options": [
+            "桌子",
+            "椅子",
+            "饭馆",
+            "那儿"
+          ],
+          "option_pinyin": [
+            "zhuōzi",
+            "yǐzi",
+            "fànguǎn",
+            "nàr"
+          ],
+          "question_chinese": "电脑在___上。",
+          "question_pinyin": "diànnǎo zài ___ shàng.",
+          "question_english": "The computer is on the desk."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'table/desk'?",
+          "correct": "桌子",
+          "options": [
+            "桌子",
+            "椅子",
+            "杯子",
+            "饭馆"
+          ],
+          "option_pinyin": [
+            "zhuōzi",
+            "yǐzi",
+            "bēizi",
+            "fànguǎn"
+          ]
+        }
+      ],
+      "example_pinyin": "diànnǎo zài zhuōzi shàng."
     },
     {
       "id": "hsk1_l13_04",
@@ -59,7 +179,47 @@
       "english": "To live / To reside",
       "part_of_speech": "verb",
       "example": "你住在哪儿？",
-      "translation": "Where do you live?"
+      "translation": "Where do you live?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "住",
+          "options": [
+            "住",
+            "开",
+            "是",
+            "在"
+          ],
+          "option_pinyin": [
+            "zhù",
+            "kāi",
+            "shì",
+            "zài"
+          ],
+          "question_chinese": "你___在哪儿？",
+          "question_pinyin": "nǐ ___ zài nǎr?",
+          "question_english": "Where do you live?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to live/reside'?",
+          "correct": "住",
+          "options": [
+            "住",
+            "开",
+            "这",
+            "那"
+          ],
+          "option_pinyin": [
+            "zhù",
+            "kāi",
+            "zhè",
+            "nà"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ zhù zài nǎr?"
     },
     {
       "id": "hsk1_l13_05",
@@ -72,7 +232,47 @@
       "english": "Restaurant",
       "part_of_speech": "noun",
       "example": "我们去饭馆吃饭。",
-      "translation": "Let's go eat at the restaurant."
+      "translation": "Let's go eat at the restaurant.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "饭馆",
+          "options": [
+            "饭馆",
+            "桌子",
+            "这儿",
+            "那儿"
+          ],
+          "option_pinyin": [
+            "fànguǎn",
+            "zhuōzi",
+            "zhèr",
+            "nàr"
+          ],
+          "question_chinese": "我们去___吃饭。",
+          "question_pinyin": "wǒmen qù ___ chīfàn.",
+          "question_english": "We go to the restaurant to eat."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'restaurant'?",
+          "correct": "饭馆",
+          "options": [
+            "饭馆",
+            "桌子",
+            "椅子",
+            "电脑"
+          ],
+          "option_pinyin": [
+            "fànguǎn",
+            "zhuōzi",
+            "yǐzi",
+            "diànnǎo"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒmen qù fànguǎn chīfàn."
     },
     {
       "id": "hsk1_l13_06",
@@ -85,7 +285,64 @@
       "english": "Cup / Glass",
       "part_of_speech": "noun",
       "example": "这是我的杯子。",
-      "translation": "This is my cup."
+      "translation": "This is my cup.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "杯子",
+          "options": [
+            "杯子",
+            "椅子",
+            "桌子",
+            "电脑"
+          ],
+          "option_pinyin": [
+            "bēizi",
+            "yǐzi",
+            "zhuōzi",
+            "diànnǎo"
+          ],
+          "question_chinese": "这是我的___。",
+          "question_pinyin": "zhè shì wǒ de ___.",
+          "question_english": "This is my cup."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'cup/glass'?",
+          "correct": "杯子",
+          "options": [
+            "杯子",
+            "椅子",
+            "桌子",
+            "饭馆"
+          ],
+          "option_pinyin": [
+            "bēizi",
+            "yǐzi",
+            "zhuōzi",
+            "fànguǎn"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "This is my cup/glass",
+          "correct": "这是我的杯子。",
+          "options": [
+            "这是我的杯子。",
+            "杯子我的是这。",
+            "这我的是杯子。",
+            "我的这杯子是。"
+          ],
+          "option_pinyin": [
+            "zhè shì wǒ de bēizi.",
+            "bēizi wǒ de shì zhè.",
+            "zhè wǒ de shì bēizi.",
+            "wǒ de zhè bēizi shì."
+          ]
+        }
+      ],
+      "example_pinyin": "zhè shì wǒ de bēizi."
     },
     {
       "id": "hsk1_l13_07",
@@ -97,7 +354,64 @@
       "english": "This",
       "part_of_speech": "pronoun",
       "example": "这是什么？",
-      "translation": "What is this?"
+      "translation": "What is this?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "这",
+          "options": [
+            "这",
+            "那",
+            "哪",
+            "这儿"
+          ],
+          "option_pinyin": [
+            "zhè",
+            "nà",
+            "nǎ",
+            "zhèr"
+          ],
+          "question_chinese": "___是什么？",
+          "question_pinyin": "___ shì shénme?",
+          "question_english": "What is this?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'this'?",
+          "correct": "这",
+          "options": [
+            "这",
+            "那",
+            "哪",
+            "这儿"
+          ],
+          "option_pinyin": [
+            "zhè",
+            "nà",
+            "nǎ",
+            "zhèr"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 这 correctly?",
+          "correct": "这是什么？",
+          "options": [
+            "这是什么？",
+            "这什么是？",
+            "是这什么？",
+            "什么这是？"
+          ],
+          "option_pinyin": [
+            "zhè shì shénme?",
+            "zhè shénme shì?",
+            "shì zhè shénme?",
+            "shénme zhè shì?"
+          ]
+        }
+      ],
+      "example_pinyin": "zhè shì shénme?"
     },
     {
       "id": "hsk1_l13_08",
@@ -109,7 +423,64 @@
       "english": "That",
       "part_of_speech": "pronoun",
       "example": "那是桌子。",
-      "translation": "That is a table."
+      "translation": "That is a table.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "那",
+          "options": [
+            "那",
+            "这",
+            "哪",
+            "那儿"
+          ],
+          "option_pinyin": [
+            "nà",
+            "zhè",
+            "nǎ",
+            "nàr"
+          ],
+          "question_chinese": "___是桌子。",
+          "question_pinyin": "___ shì zhuōzi.",
+          "question_english": "That is a table."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'that'?",
+          "correct": "那",
+          "options": [
+            "那",
+            "这",
+            "哪",
+            "那儿"
+          ],
+          "option_pinyin": [
+            "nà",
+            "zhè",
+            "nǎ",
+            "nàr"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 那 correctly?",
+          "correct": "那是桌子。",
+          "options": [
+            "那是桌子。",
+            "桌子那是。",
+            "是那桌子。",
+            "那桌子是。"
+          ],
+          "option_pinyin": [
+            "nà shì zhuōzi.",
+            "zhuōzi nà shì.",
+            "shì nà zhuōzi.",
+            "nà zhuōzi shì."
+          ]
+        }
+      ],
+      "example_pinyin": "nà shì zhuōzi."
     },
     {
       "id": "hsk1_l13_09",
@@ -121,7 +492,64 @@
       "english": "Which",
       "part_of_speech": "question_word",
       "example": "哪个好？",
-      "translation": "Which one is good?"
+      "translation": "Which one is good?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "哪",
+          "options": [
+            "哪",
+            "这",
+            "那",
+            "那儿"
+          ],
+          "option_pinyin": [
+            "nǎ",
+            "zhè",
+            "nà",
+            "nàr"
+          ],
+          "question_chinese": "___个好？",
+          "question_pinyin": "___ ge hǎo?",
+          "question_english": "Which one is good?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'which'?",
+          "correct": "哪",
+          "options": [
+            "哪",
+            "这",
+            "那",
+            "这儿"
+          ],
+          "option_pinyin": [
+            "nǎ",
+            "zhè",
+            "nà",
+            "zhèr"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 哪 correctly?",
+          "correct": "哪个好？",
+          "options": [
+            "哪个好？",
+            "好哪个？",
+            "个哪好？",
+            "哪好个？"
+          ],
+          "option_pinyin": [
+            "nǎ ge hǎo?",
+            "hǎo nǎ ge?",
+            "ge nǎ hǎo?",
+            "nǎ hǎo ge?"
+          ]
+        }
+      ],
+      "example_pinyin": "nǎ ge hǎo?"
     },
     {
       "id": "hsk1_l13_10",
@@ -133,7 +561,47 @@
       "english": "Here",
       "part_of_speech": "pronoun",
       "example": "我在这儿。",
-      "translation": "I am here."
+      "translation": "I am here.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "这儿",
+          "options": [
+            "这儿",
+            "那儿",
+            "饭馆",
+            "这"
+          ],
+          "option_pinyin": [
+            "zhèr",
+            "nàr",
+            "fànguǎn",
+            "zhè"
+          ],
+          "question_chinese": "我在___。",
+          "question_pinyin": "wǒ zài ___.",
+          "question_english": "I am here."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'here'?",
+          "correct": "这儿",
+          "options": [
+            "这儿",
+            "那儿",
+            "这",
+            "那"
+          ],
+          "option_pinyin": [
+            "zhèr",
+            "nàr",
+            "zhè",
+            "nà"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zài zhèr."
     },
     {
       "id": "hsk1_l13_11",
@@ -145,7 +613,64 @@
       "english": "There",
       "part_of_speech": "pronoun",
       "example": "他在那儿。",
-      "translation": "He is there."
+      "translation": "He is there.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "那儿",
+          "options": [
+            "那儿",
+            "这儿",
+            "饭馆",
+            "桌子"
+          ],
+          "option_pinyin": [
+            "nàr",
+            "zhèr",
+            "fànguǎn",
+            "zhuōzi"
+          ],
+          "question_chinese": "他在___。",
+          "question_pinyin": "tā zài ___.",
+          "question_english": "He is there."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'there'?",
+          "correct": "那儿",
+          "options": [
+            "那儿",
+            "这儿",
+            "那",
+            "这"
+          ],
+          "option_pinyin": [
+            "nàr",
+            "zhèr",
+            "nà",
+            "zhè"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 那儿 correctly?",
+          "correct": "他在那儿。",
+          "options": [
+            "他在那儿。",
+            "那儿在他。",
+            "在他那儿。",
+            "他那儿在。"
+          ],
+          "option_pinyin": [
+            "tā zài nàr.",
+            "nàr zài tā.",
+            "zài tā nàr.",
+            "tā nàr zài."
+          ]
+        }
+      ],
+      "example_pinyin": "tā zài nàr."
     },
     {
       "id": "hsk1_l13_12",
@@ -157,7 +682,64 @@
       "english": "To open / To drive / To turn on",
       "part_of_speech": "verb",
       "example": "我开电脑。",
-      "translation": "I turn on the computer."
+      "translation": "I turn on the computer.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 开 correctly?",
+          "correct": "我开电脑。",
+          "options": [
+            "我开电脑。",
+            "开我电脑。",
+            "电脑开我。",
+            "开电脑我。"
+          ],
+          "option_pinyin": [
+            "wǒ kāi diànnǎo.",
+            "kāi wǒ diànnǎo.",
+            "diànnǎo kāi wǒ.",
+            "kāi diànnǎo wǒ."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "开",
+          "options": [
+            "开",
+            "住",
+            "是",
+            "在"
+          ],
+          "option_pinyin": [
+            "kāi",
+            "zhù",
+            "shì",
+            "zài"
+          ],
+          "question_chinese": "我___电脑。",
+          "question_pinyin": "wǒ ___ diànnǎo.",
+          "question_english": "I turn on the computer."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to open/drive/turn on'?",
+          "correct": "开",
+          "options": [
+            "开",
+            "住",
+            "这",
+            "那"
+          ],
+          "option_pinyin": [
+            "kāi",
+            "zhù",
+            "zhè",
+            "nà"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ kāi diànnǎo."
     },
     {
       "id": "hsk1_l13_p01",
@@ -503,6 +1085,45 @@
           "answer": "哪",
           "type": "concept"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "哪",
+          "options": [
+            "哪",
+            "这",
+            "那",
+            "什么"
+          ],
+          "option_pinyin": [
+            "nǎ",
+            "zhè",
+            "nà",
+            "shénme"
+          ],
+          "question_chinese": "___个是你的？",
+          "question_pinyin": "___ ge shì nǐ de?",
+          "question_english": "Which one is yours?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses demonstratives (这/那/哪)?",
+          "correct": "这个杯子很漂亮。",
+          "options": [
+            "这个杯子很漂亮。",
+            "杯子这个很漂亮。",
+            "这漂亮个杯子很。",
+            "很这个杯子漂亮。"
+          ],
+          "option_pinyin": [
+            "zhège bēizi hěn piàoliang.",
+            "bēizi zhège hěn piàoliang.",
+            "zhè piàoliang ge bēizi hěn.",
+            "hěn zhège bēizi piàoliang."
+          ]
+        }
       ]
     },
     {
@@ -532,6 +1153,45 @@
           "answer": "住",
           "type": "fill_in_blank"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "住",
+          "options": [
+            "住",
+            "开",
+            "是",
+            "在"
+          ],
+          "option_pinyin": [
+            "zhù",
+            "kāi",
+            "shì",
+            "zài"
+          ],
+          "question_chinese": "我___在北京。",
+          "question_pinyin": "wǒ ___ zài Běijīng.",
+          "question_english": "I live in Beijing."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 住?",
+          "correct": "我住在北京。",
+          "options": [
+            "我住在北京。",
+            "北京住在我。",
+            "住我在北京。",
+            "在北京我住。"
+          ],
+          "option_pinyin": [
+            "wǒ zhù zài Běijīng.",
+            "Běijīng zhù zài wǒ.",
+            "zhù wǒ zài Běijīng.",
+            "zài Běijīng wǒ zhù."
+          ]
+        }
       ]
     },
     {
@@ -560,6 +1220,45 @@
           "question": "What does 开 mean in 开车?",
           "answer": "To drive",
           "type": "concept"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "开",
+          "options": [
+            "开",
+            "住",
+            "是",
+            "有"
+          ],
+          "option_pinyin": [
+            "kāi",
+            "zhù",
+            "shì",
+            "yǒu"
+          ],
+          "question_chinese": "请___门。",
+          "question_pinyin": "qǐng ___ mén.",
+          "question_english": "Please open the door."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 开?",
+          "correct": "我会开车。",
+          "options": [
+            "我会开车。",
+            "开会车我。",
+            "会我开车。",
+            "车我开会。"
+          ],
+          "option_pinyin": [
+            "wǒ huì kāi chē.",
+            "kāi huì chē wǒ.",
+            "huì wǒ kāi chē.",
+            "chē wǒ kāi huì."
+          ]
         }
       ]
     }

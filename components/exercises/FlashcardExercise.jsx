@@ -5,10 +5,23 @@ import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ER
 export default function FlashcardExercise({ exercise, onKnow, onDontKnow }) {
   const { vocabItem } = exercise;
   const [flipped, setFlipped] = useState(false);
+  const [showPinyin, setShowPinyin] = useState(false);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.instruction}>Tap the card to reveal</Text>
+      <View style={styles.topRow}>
+        <Text style={styles.instruction}>
+          {flipped ? 'How well did you know it?' : 'Tap the card to reveal'}
+        </Text>
+        <TouchableOpacity
+          style={[styles.pinyinToggle, showPinyin && styles.pinyinToggleOn]}
+          onPress={() => setShowPinyin(v => !v)}
+        >
+          <Text style={[styles.pinyinToggleText, showPinyin && styles.pinyinToggleTextOn]}>
+            拼 Pinyin
+          </Text>
+        </TouchableOpacity>
+      </View>
 
       <TouchableOpacity
         style={[styles.card, flipped && styles.cardFlipped]}
@@ -19,10 +32,15 @@ export default function FlashcardExercise({ exercise, onKnow, onDontKnow }) {
         {!flipped ? (
           <View style={styles.face}>
             <Text style={styles.chinese}>{vocabItem.chinese}</Text>
-            <Text style={styles.tapHint}>tap to reveal</Text>
+            {showPinyin && vocabItem.pinyin ? (
+              <Text style={styles.pinyinFront}>{vocabItem.pinyin}</Text>
+            ) : null}
+            <Text style={styles.englishFront}>{vocabItem.english}</Text>
+            {!showPinyin && <Text style={styles.tapHint}>tap to reveal pinyin</Text>}
           </View>
         ) : (
           <View style={styles.face}>
+            <Text style={styles.chinese}>{vocabItem.chinese}</Text>
             <Text style={styles.pinyin}>{vocabItem.pinyin}</Text>
             <Text style={styles.english}>{vocabItem.english}</Text>
             {vocabItem.part_of_speech && (
@@ -56,8 +74,20 @@ const VG = {
 };
 
 const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: 'center', paddingTop: 24, paddingHorizontal: 8 },
-  instruction: { fontSize: 16, color: VG.gold, marginBottom: 20, fontWeight: '600', backgroundColor: CARD_WHITE, borderRadius: 10, paddingHorizontal: 14, paddingVertical: 8, alignSelf: 'center' },
+  container: { flex: 1, paddingTop: 8, paddingHorizontal: 8 },
+  topRow: {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
+    marginBottom: 16, backgroundColor: CARD_WHITE, borderRadius: 12,
+    paddingHorizontal: 12, paddingVertical: 10,
+  },
+  instruction: { fontSize: 13, color: VG.gold, fontWeight: '600' },
+  pinyinToggle: {
+    paddingHorizontal: 12, paddingVertical: 6, borderRadius: 10,
+    borderWidth: 1.5, borderColor: VG.border, backgroundColor: VG.cardDark,
+  },
+  pinyinToggleOn: { borderColor: VG.gold, backgroundColor: '#FFF8ED' },
+  pinyinToggleText: { fontSize: 13, fontWeight: '600', color: VG.creamMuted },
+  pinyinToggleTextOn: { color: VG.gold },
   card: {
     width: '100%',
     minHeight: 220,
@@ -75,8 +105,10 @@ const styles = StyleSheet.create({
   },
   cardFlipped: { borderColor: 'rgba(90,158,90,0.5)' },
   face: { alignItems: 'center' },
-  chinese: { fontSize: 72, fontWeight: '900', color: VG.onCard, marginBottom: 16 },
-  tapHint: { fontSize: 14, color: VG.onCardMuted },
+  chinese: { fontSize: 64, fontWeight: '900', color: VG.onCard, marginBottom: 10 },
+  pinyinFront: { fontSize: 20, color: VG.orange, fontStyle: 'italic', marginBottom: 8 },
+  englishFront: { fontSize: 18, fontWeight: '600', color: VG.creamMuted, textAlign: 'center', marginBottom: 6 },
+  tapHint: { fontSize: 12, color: VG.onCardMuted, marginTop: 4 },
   pinyin: { fontSize: 24, color: VG.orange, fontStyle: 'italic', marginBottom: 12 },
   english: { fontSize: 22, fontWeight: '700', color: VG.onCard, textAlign: 'center' },
   pos: {

@@ -21,7 +21,47 @@
       "english": "Weather",
       "part_of_speech": "noun",
       "example": "天气很好。",
-      "translation": "The weather is nice."
+      "translation": "The weather is nice.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "天气",
+          "options": [
+            "天气",
+            "雨",
+            "风",
+            "雪"
+          ],
+          "option_pinyin": [
+            "tiānqì",
+            "yǔ",
+            "fēng",
+            "xuě"
+          ],
+          "question_chinese": "___很好。",
+          "question_pinyin": "___ hěn hǎo.",
+          "question_english": "The weather is nice."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'weather'?",
+          "correct": "天气",
+          "options": [
+            "天气",
+            "雨",
+            "风",
+            "雪"
+          ],
+          "option_pinyin": [
+            "tiānqì",
+            "yǔ",
+            "fēng",
+            "xuě"
+          ]
+        }
+      ],
+      "example_pinyin": "tiānqì hěn hǎo."
     },
     {
       "id": "hsk1_l10_02",
@@ -33,7 +73,64 @@
       "english": "Hot",
       "part_of_speech": "adjective",
       "example": "今天很热。",
-      "translation": "It's very hot today."
+      "translation": "It's very hot today.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "热",
+          "options": [
+            "热",
+            "冷",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "rè",
+            "lěng",
+            "dà",
+            "xiǎo"
+          ],
+          "question_chinese": "今天很___。",
+          "question_pinyin": "jīntiān hěn ___.",
+          "question_english": "It's very hot today."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'hot'?",
+          "correct": "热",
+          "options": [
+            "热",
+            "冷",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "rè",
+            "lěng",
+            "dà",
+            "xiǎo"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "It's very hot today.",
+          "correct": "今天很热。",
+          "options": [
+            "今天很热。",
+            "热今天很。",
+            "今天热很。",
+            "很热今天。"
+          ],
+          "option_pinyin": [
+            "jīntiān hěn rè.",
+            "rè jīntiān hěn.",
+            "jīntiān rè hěn.",
+            "hěn rè jīntiān."
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān hěn rè."
     },
     {
       "id": "hsk1_l10_03",
@@ -45,7 +142,64 @@
       "english": "Cold",
       "part_of_speech": "adjective",
       "example": "今天很冷。",
-      "translation": "It's very cold today."
+      "translation": "It's very cold today.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "冷",
+          "options": [
+            "冷",
+            "热",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "lěng",
+            "rè",
+            "dà",
+            "xiǎo"
+          ],
+          "question_chinese": "今天很___。",
+          "question_pinyin": "jīntiān hěn ___.",
+          "question_english": "It's very cold today."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'cold'?",
+          "correct": "冷",
+          "options": [
+            "冷",
+            "热",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "lěng",
+            "rè",
+            "dà",
+            "xiǎo"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 冷 correctly?",
+          "correct": "今天很冷。",
+          "options": [
+            "今天很冷。",
+            "冷今天很。",
+            "今天冷很。",
+            "很冷今天。"
+          ],
+          "option_pinyin": [
+            "jīntiān hěn lěng.",
+            "lěng jīntiān hěn.",
+            "jīntiān lěng hěn.",
+            "hěn lěng jīntiān."
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān hěn lěng."
     },
     {
       "id": "hsk1_l10_04",
@@ -58,7 +212,64 @@
       "english": "To rain / Raining",
       "part_of_speech": "verb",
       "example": "今天下雨。",
-      "translation": "It rains today."
+      "translation": "It rains today.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "下雨",
+          "options": [
+            "下雨",
+            "下雪",
+            "刮风",
+            "天气"
+          ],
+          "option_pinyin": [
+            "xià yǔ",
+            "xià xuě",
+            "guā fēng",
+            "tiānqì"
+          ],
+          "question_chinese": "今天___。",
+          "question_pinyin": "jīntiān ___.",
+          "question_english": "It's raining today."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to rain'?",
+          "correct": "下雨",
+          "options": [
+            "下雨",
+            "下雪",
+            "刮风",
+            "天气"
+          ],
+          "option_pinyin": [
+            "xià yǔ",
+            "xià xuě",
+            "guā fēng",
+            "tiānqì"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "It rains today.",
+          "correct": "今天下雨。",
+          "options": [
+            "今天下雨。",
+            "今天雨下。",
+            "下雨今天。",
+            "雨今天下。"
+          ],
+          "option_pinyin": [
+            "jīntiān xià yǔ.",
+            "jīntiān yǔ xià.",
+            "xià yǔ jīntiān.",
+            "yǔ jīntiān xià."
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān xià yǔ."
     },
     {
       "id": "hsk1_l10_05",
@@ -70,7 +281,64 @@
       "english": "Too / Extremely",
       "part_of_speech": "adverb",
       "example": "太热了！",
-      "translation": "Too hot!"
+      "translation": "Too hot!",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "太",
+          "options": [
+            "太",
+            "很",
+            "非常",
+            "真"
+          ],
+          "option_pinyin": [
+            "tài",
+            "hěn",
+            "fēicháng",
+            "zhēn"
+          ],
+          "question_chinese": "___热了！",
+          "question_pinyin": "___ rè le!",
+          "question_english": "Too hot!"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'It is too hot today'?",
+          "correct": "今天太热了！",
+          "options": [
+            "今天太热了！",
+            "今天很热！",
+            "今天非常热！",
+            "今天热！"
+          ],
+          "option_pinyin": [
+            "jīntiān tài rè le!",
+            "jīntiān hěn rè!",
+            "jīntiān fēicháng rè!",
+            "jīntiān rè!"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 太 correctly?",
+          "correct": "今天太热了！",
+          "options": [
+            "今天太热了！",
+            "今天热太了！",
+            "太今天热了！",
+            "今天热了太！"
+          ],
+          "option_pinyin": [
+            "jīntiān tài rè le!",
+            "jīntiān rè tài le!",
+            "tài jīntiān rè le!",
+            "jīntiān rè le tài!"
+          ]
+        }
+      ],
+      "example_pinyin": "tài rè le!"
     },
     {
       "id": "hsk1_l10_06",
@@ -84,7 +352,64 @@
       "english": "How / How about / What's it like",
       "part_of_speech": "question_word",
       "example": "天气怎么样？",
-      "translation": "How's the weather?"
+      "translation": "How's the weather?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "怎么样",
+          "options": [
+            "怎么样",
+            "什么",
+            "怎么",
+            "哪"
+          ],
+          "option_pinyin": [
+            "zěnmeyàng",
+            "shénme",
+            "zěnme",
+            "nǎ"
+          ],
+          "question_chinese": "天气___？",
+          "question_pinyin": "tiānqì ___?",
+          "question_english": "How is the weather?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'How is the weather?'",
+          "correct": "天气怎么样？",
+          "options": [
+            "天气怎么样？",
+            "天气什么？",
+            "天气怎么？",
+            "天气哪？"
+          ],
+          "option_pinyin": [
+            "tiānqì zěnmeyàng?",
+            "tiānqì shénme?",
+            "tiānqì zěnme?",
+            "tiānqì nǎ?"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 怎么样 correctly?",
+          "correct": "天气怎么样？",
+          "options": [
+            "天气怎么样？",
+            "怎么样天气？",
+            "天气是怎么样？",
+            "怎天气么样？"
+          ],
+          "option_pinyin": [
+            "tiānqì zěnmeyàng?",
+            "zěnmeyàng tiānqì?",
+            "tiānqì shì zěnmeyàng?",
+            "zěn tiānqì meyàng?"
+          ]
+        }
+      ],
+      "example_pinyin": "tiānqì zěnmeyàng?"
     },
     {
       "id": "hsk1_l10_07",
@@ -96,7 +421,47 @@
       "english": "Big / Large",
       "part_of_speech": "adjective",
       "example": "这个很大。",
-      "translation": "This one is very big."
+      "translation": "This one is very big.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "大",
+          "options": [
+            "大",
+            "小",
+            "多",
+            "少"
+          ],
+          "option_pinyin": [
+            "dà",
+            "xiǎo",
+            "duō",
+            "shǎo"
+          ],
+          "question_chinese": "这个很___。",
+          "question_pinyin": "zhège hěn ___.",
+          "question_english": "This one is very big."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'big'?",
+          "correct": "大",
+          "options": [
+            "大",
+            "小",
+            "多",
+            "少"
+          ],
+          "option_pinyin": [
+            "dà",
+            "xiǎo",
+            "duō",
+            "shǎo"
+          ]
+        }
+      ],
+      "example_pinyin": "zhège hěn dà."
     },
     {
       "id": "hsk1_l10_08",
@@ -108,7 +473,47 @@
       "english": "Small / Little",
       "part_of_speech": "adjective",
       "example": "这个很小。",
-      "translation": "This one is very small."
+      "translation": "This one is very small.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "小",
+          "options": [
+            "小",
+            "大",
+            "多",
+            "少"
+          ],
+          "option_pinyin": [
+            "xiǎo",
+            "dà",
+            "duō",
+            "shǎo"
+          ],
+          "question_chinese": "这个很___。",
+          "question_pinyin": "zhège hěn ___.",
+          "question_english": "This one is very small."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'small'?",
+          "correct": "小",
+          "options": [
+            "小",
+            "大",
+            "多",
+            "少"
+          ],
+          "option_pinyin": [
+            "xiǎo",
+            "dà",
+            "duō",
+            "shǎo"
+          ]
+        }
+      ],
+      "example_pinyin": "zhège hěn xiǎo."
     },
     {
       "id": "hsk1_l10_09",
@@ -120,7 +525,47 @@
       "english": "Many / Much / More",
       "part_of_speech": "adjective",
       "example": "人很多。",
-      "translation": "There are many people."
+      "translation": "There are many people.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "多",
+          "options": [
+            "多",
+            "少",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "duō",
+            "shǎo",
+            "dà",
+            "xiǎo"
+          ],
+          "question_chinese": "人很___。",
+          "question_pinyin": "rén hěn ___.",
+          "question_english": "There are many people."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'many'?",
+          "correct": "多",
+          "options": [
+            "多",
+            "少",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "duō",
+            "shǎo",
+            "dà",
+            "xiǎo"
+          ]
+        }
+      ],
+      "example_pinyin": "rén hěn duō."
     },
     {
       "id": "hsk1_l10_10",
@@ -132,7 +577,64 @@
       "english": "Few / Little / Less",
       "part_of_speech": "adjective",
       "example": "水很少。",
-      "translation": "There is very little water."
+      "translation": "There is very little water.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "少",
+          "options": [
+            "少",
+            "多",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "shǎo",
+            "duō",
+            "dà",
+            "xiǎo"
+          ],
+          "question_chinese": "水很___。",
+          "question_pinyin": "shuǐ hěn ___.",
+          "question_english": "There is very little water."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'few / little'?",
+          "correct": "少",
+          "options": [
+            "少",
+            "多",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "shǎo",
+            "duō",
+            "dà",
+            "xiǎo"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "There is very little water.",
+          "correct": "水很少。",
+          "options": [
+            "水很少。",
+            "少水很。",
+            "很少水。",
+            "水少很。"
+          ],
+          "option_pinyin": [
+            "shuǐ hěn shǎo.",
+            "shǎo shuǐ hěn.",
+            "hěn shǎo shuǐ.",
+            "shuǐ shǎo hěn."
+          ]
+        }
+      ],
+      "example_pinyin": "shuǐ hěn shǎo."
     },
     {
       "id": "hsk1_l10_11",
@@ -144,7 +646,47 @@
       "english": "And / With",
       "part_of_speech": "conjunction",
       "example": "你和我都好。",
-      "translation": "You and I are both well."
+      "translation": "You and I are both well.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "和",
+          "options": [
+            "和",
+            "或",
+            "都",
+            "也"
+          ],
+          "option_pinyin": [
+            "hé",
+            "huò",
+            "dōu",
+            "yě"
+          ],
+          "question_chinese": "你___我都好。",
+          "question_pinyin": "nǐ ___ wǒ dōu hǎo.",
+          "question_english": "You and I are both well."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'You and I are both well'?",
+          "correct": "你和我都好。",
+          "options": [
+            "你和我都好。",
+            "你或我都好。",
+            "你我都好。",
+            "你也我都好。"
+          ],
+          "option_pinyin": [
+            "nǐ hé wǒ dōu hǎo.",
+            "nǐ huò wǒ dōu hǎo.",
+            "nǐ wǒ dōu hǎo.",
+            "nǐ yě wǒ dōu hǎo."
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ hé wǒ dōu hǎo."
     },
     {
       "id": "hsk1_l10_12",
@@ -157,7 +699,64 @@
       "english": "Some / A few",
       "part_of_speech": "determiner",
       "example": "我喝一些水。",
-      "translation": "I drink some water."
+      "translation": "I drink some water.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "一些",
+          "options": [
+            "一些",
+            "一个",
+            "一杯",
+            "一本"
+          ],
+          "option_pinyin": [
+            "yìxiē",
+            "yī gè",
+            "yī bēi",
+            "yī běn"
+          ],
+          "question_chinese": "我喝___水。",
+          "question_pinyin": "wǒ hē ___ shuǐ.",
+          "question_english": "I drink some water."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'some / a few'?",
+          "correct": "一些",
+          "options": [
+            "一些",
+            "一个",
+            "一杯",
+            "一本"
+          ],
+          "option_pinyin": [
+            "yìxiē",
+            "yī gè",
+            "yī bēi",
+            "yī běn"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 一些 correctly?",
+          "correct": "我喝一些水。",
+          "options": [
+            "我喝一些水。",
+            "我一些喝水。",
+            "一些我喝水。",
+            "我喝水一些。"
+          ],
+          "option_pinyin": [
+            "wǒ hē yìxiē shuǐ.",
+            "wǒ yìxiē hē shuǐ.",
+            "yìxiē wǒ hē shuǐ.",
+            "wǒ hē shuǐ yìxiē."
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ hē yīxiē shuǐ."
     },
     {
       "id": "hsk1_l10_p01",
@@ -494,6 +1093,45 @@
           "answer": "怎么样",
           "type": "fill_in_blank"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "怎么样",
+          "options": [
+            "怎么样",
+            "什么",
+            "怎么",
+            "多少"
+          ],
+          "option_pinyin": [
+            "zěnmeyàng",
+            "shénme",
+            "zěnme",
+            "duōshao"
+          ],
+          "question_chinese": "天气___？",
+          "question_pinyin": "tiānqì ___?",
+          "question_english": "How is the weather?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly uses 怎么样?",
+          "correct": "你的身体怎么样？",
+          "options": [
+            "你的身体怎么样？",
+            "你的身体是怎么样？",
+            "怎么样你的身体？",
+            "你的什么身体样？"
+          ],
+          "option_pinyin": [
+            "nǐ de shēntǐ zěnmeyàng?",
+            "nǐ de shēntǐ shì zěnmeyàng?",
+            "zěnmeyàng nǐ de shēntǐ?",
+            "nǐ de shénme shēntǐ yàng?"
+          ]
+        }
       ]
     },
     {
@@ -523,6 +1161,45 @@
           "answer": "太 / 了",
           "type": "fill_in_blank"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "太",
+          "options": [
+            "太",
+            "很",
+            "非常",
+            "真"
+          ],
+          "option_pinyin": [
+            "tài",
+            "hěn",
+            "fēicháng",
+            "zhēn"
+          ],
+          "question_chinese": "今天___热了！",
+          "question_pinyin": "jīntiān ___ rè le!",
+          "question_english": "It's too hot today!"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly uses 太...了?",
+          "correct": "这个苹果太大了！",
+          "options": [
+            "这个苹果太大了！",
+            "这个苹果太大！",
+            "这个苹果很大了！",
+            "太这个苹果大了！"
+          ],
+          "option_pinyin": [
+            "zhège píngguǒ tài dà le!",
+            "zhège píngguǒ tài dà!",
+            "zhège píngguǒ hěn dà le!",
+            "tài zhège píngguǒ dà le!"
+          ]
+        }
       ]
     },
     {
@@ -551,6 +1228,45 @@
           "question": "Can 和 connect two verbs?",
           "answer": "No, 和 only connects nouns/pronouns",
           "type": "concept"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "和",
+          "options": [
+            "和",
+            "或",
+            "都",
+            "也"
+          ],
+          "option_pinyin": [
+            "hé",
+            "huò",
+            "dōu",
+            "yě"
+          ],
+          "question_chinese": "你___我都是学生。",
+          "question_pinyin": "nǐ ___ wǒ dōu shì xuésheng.",
+          "question_english": "You and I are both students."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly uses 和 to connect two nouns?",
+          "correct": "我和她是朋友。",
+          "options": [
+            "我和她是朋友。",
+            "我或她是朋友。",
+            "我也她是朋友。",
+            "我她和是朋友。"
+          ],
+          "option_pinyin": [
+            "wǒ hé tā shì péngyou.",
+            "wǒ huò tā shì péngyou.",
+            "wǒ yě tā shì péngyou.",
+            "wǒ tā hé shì péngyou."
+          ]
         }
       ]
     }

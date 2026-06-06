@@ -9,6 +9,7 @@ const SUBTYPE_META = {
   tone_id:    { instruction: '🎵 What tone is this syllable?',       label: 'TONE' },
   initial_id: { instruction: '🔤 What is the initial (声母)?',       label: 'INITIAL' },
   final_id:   { instruction: '🔤 What is the final (韵母)?',         label: 'FINAL' },
+  syllable_id:{ instruction: '🎵 Which syllable did you hear?',      label: 'SYLLABLE' },
 };
 
 export default function PinyinExercise({ exercise, onCorrect, onWrong }) {

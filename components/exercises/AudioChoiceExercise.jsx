@@ -95,7 +95,7 @@ const VG = {
 const styles = StyleSheet.create({
   container: { flex: 1, paddingTop: 8, paddingHorizontal: 8 },
   topRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16, backgroundColor: CARD_WHITE, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 10 },
-  instruction: { fontSize: 17, fontWeight: '700', color: VG.cream },
+  instruction: { fontSize: 15, fontWeight: '700', color: VG.cream },
   pinyinToggle: {
     paddingHorizontal: 12,
     paddingVertical: 6,

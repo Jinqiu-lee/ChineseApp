@@ -20,7 +20,47 @@
       "english": "Completion particle (action done)",
       "part_of_speech": "particle",
       "example": "我吃了饭。",
-      "translation": "I ate."
+      "translation": "I ate.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "了",
+          "options": [
+            "了",
+            "是",
+            "的",
+            "在"
+          ],
+          "option_pinyin": [
+            "le",
+            "shì",
+            "de",
+            "zài"
+          ],
+          "question_chinese": "我吃___饭。",
+          "question_pinyin": "wǒ chī ___ fàn.",
+          "question_english": "I ate a meal."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'completion particle (action done)'?",
+          "correct": "了",
+          "options": [
+            "了",
+            "的",
+            "是",
+            "在"
+          ],
+          "option_pinyin": [
+            "le",
+            "de",
+            "shì",
+            "zài"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ chī le fàn."
     },
     {
       "id": "hsk1_l14_02",
@@ -33,7 +73,47 @@
       "english": "Clothes / Clothing",
       "part_of_speech": "noun",
       "example": "我买了衣服。",
-      "translation": "I bought clothes."
+      "translation": "I bought clothes.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "衣服",
+          "options": [
+            "衣服",
+            "工作",
+            "医生",
+            "人"
+          ],
+          "option_pinyin": [
+            "yīfu",
+            "gōngzuò",
+            "yīshēng",
+            "rén"
+          ],
+          "question_chinese": "我买了___。",
+          "question_pinyin": "wǒ mǎi le ___.",
+          "question_english": "I bought clothes."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'clothes'?",
+          "correct": "衣服",
+          "options": [
+            "衣服",
+            "工作",
+            "医生",
+            "人"
+          ],
+          "option_pinyin": [
+            "yīfu",
+            "gōngzuò",
+            "yīshēng",
+            "rén"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ mǎi le yīfu."
     },
     {
       "id": "hsk1_l14_03",
@@ -46,7 +126,47 @@
       "english": "Daughter",
       "part_of_speech": "noun",
       "example": "我女儿是医生。",
-      "translation": "My daughter is a doctor."
+      "translation": "My daughter is a doctor.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "女儿",
+          "options": [
+            "女儿",
+            "儿子",
+            "男人",
+            "自己"
+          ],
+          "option_pinyin": [
+            "nǚ'ér",
+            "érzi",
+            "nánrén",
+            "zìjǐ"
+          ],
+          "question_chinese": "我___是医生。",
+          "question_pinyin": "wǒ ___ shì yīshēng.",
+          "question_english": "My daughter is a doctor."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'daughter'?",
+          "correct": "女儿",
+          "options": [
+            "女儿",
+            "儿子",
+            "男人",
+            "人"
+          ],
+          "option_pinyin": [
+            "nǚ'ér",
+            "érzi",
+            "nánrén",
+            "rén"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ nǚ'ér shì yīshēng."
     },
     {
       "id": "hsk1_l14_04",
@@ -59,7 +179,47 @@
       "english": "Son",
       "part_of_speech": "noun",
       "example": "我儿子是医生。",
-      "translation": "My son is a doctor."
+      "translation": "My son is a doctor.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "儿子",
+          "options": [
+            "儿子",
+            "女儿",
+            "男人",
+            "自己"
+          ],
+          "option_pinyin": [
+            "érzi",
+            "nǚ'ér",
+            "nánrén",
+            "zìjǐ"
+          ],
+          "question_chinese": "我___是医生。",
+          "question_pinyin": "wǒ ___ shì yīshēng.",
+          "question_english": "My son is a doctor."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'son'?",
+          "correct": "儿子",
+          "options": [
+            "儿子",
+            "女儿",
+            "男人",
+            "人"
+          ],
+          "option_pinyin": [
+            "érzi",
+            "nǚ'ér",
+            "nánrén",
+            "rén"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ érzi shì yīshēng."
     },
     {
       "id": "hsk1_l14_05",
@@ -72,7 +232,64 @@
       "english": "Doctor",
       "part_of_speech": "noun",
       "example": "他是医生。",
-      "translation": "He is a doctor."
+      "translation": "He is a doctor.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "医生",
+          "options": [
+            "医生",
+            "男人",
+            "工作",
+            "人"
+          ],
+          "option_pinyin": [
+            "yīshēng",
+            "nánrén",
+            "gōngzuò",
+            "rén"
+          ],
+          "question_chinese": "他是___。",
+          "question_pinyin": "tā shì ___.",
+          "question_english": "He is a doctor."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'doctor'?",
+          "correct": "医生",
+          "options": [
+            "医生",
+            "男人",
+            "工作",
+            "人"
+          ],
+          "option_pinyin": [
+            "yīshēng",
+            "nánrén",
+            "gōngzuò",
+            "rén"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 医生 correctly?",
+          "correct": "他是医生。",
+          "options": [
+            "他是医生。",
+            "医生他是。",
+            "是他医生。",
+            "他医生是。"
+          ],
+          "option_pinyin": [
+            "tā shì yīshēng.",
+            "yīshēng tā shì.",
+            "shì tā yīshēng.",
+            "tā yīshēng shì."
+          ]
+        }
+      ],
+      "example_pinyin": "tā shì yīshēng."
     },
     {
       "id": "hsk1_l14_06",
@@ -85,7 +302,47 @@
       "english": "Work / Job / To work",
       "part_of_speech": "noun/verb",
       "example": "他去工作了。",
-      "translation": "He went to work."
+      "translation": "He went to work.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "工作",
+          "options": [
+            "工作",
+            "医生",
+            "男人",
+            "衣服"
+          ],
+          "option_pinyin": [
+            "gōngzuò",
+            "yīshēng",
+            "nánrén",
+            "yīfu"
+          ],
+          "question_chinese": "他去___了。",
+          "question_pinyin": "tā qù ___ le.",
+          "question_english": "He went to work."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'work/job'?",
+          "correct": "工作",
+          "options": [
+            "工作",
+            "医生",
+            "男人",
+            "衣服"
+          ],
+          "option_pinyin": [
+            "gōngzuò",
+            "yīshēng",
+            "nánrén",
+            "yīfu"
+          ]
+        }
+      ],
+      "example_pinyin": "tā qù gōngzuò le."
     },
     {
       "id": "hsk1_l14_07",
@@ -97,7 +354,47 @@
       "english": "Person / People",
       "part_of_speech": "noun",
       "example": "他是好人。",
-      "translation": "He is a good person."
+      "translation": "He is a good person.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "人",
+          "options": [
+            "人",
+            "男人",
+            "医生",
+            "工作"
+          ],
+          "option_pinyin": [
+            "rén",
+            "nánrén",
+            "yīshēng",
+            "gōngzuò"
+          ],
+          "question_chinese": "他是好___。",
+          "question_pinyin": "tā shì hǎo ___.",
+          "question_english": "He is a good person."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'person/people'?",
+          "correct": "人",
+          "options": [
+            "人",
+            "男人",
+            "医生",
+            "工作"
+          ],
+          "option_pinyin": [
+            "rén",
+            "nánrén",
+            "yīshēng",
+            "gōngzuò"
+          ]
+        }
+      ],
+      "example_pinyin": "tā shì hǎo rén."
     },
     {
       "id": "hsk1_l14_08",
@@ -110,7 +407,47 @@
       "english": "Man",
       "part_of_speech": "noun",
       "example": "那个男人是谁？",
-      "translation": "Who is that man?"
+      "translation": "Who is that man?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "男人",
+          "options": [
+            "男人",
+            "女儿",
+            "医生",
+            "人"
+          ],
+          "option_pinyin": [
+            "nánrén",
+            "nǚ'ér",
+            "yīshēng",
+            "rén"
+          ],
+          "question_chinese": "那个___是谁？",
+          "question_pinyin": "nà ge ___ shì shéi?",
+          "question_english": "Who is that man?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'man'?",
+          "correct": "男人",
+          "options": [
+            "男人",
+            "女儿",
+            "人",
+            "医生"
+          ],
+          "option_pinyin": [
+            "nánrén",
+            "nǚ'ér",
+            "rén",
+            "yīshēng"
+          ]
+        }
+      ],
+      "example_pinyin": "nà ge nánrén shì shéi?"
     },
     {
       "id": "hsk1_l14_09",
@@ -123,7 +460,47 @@
       "english": "Oneself / Yourself",
       "part_of_speech": "pronoun",
       "example": "我自己做。",
-      "translation": "I do it myself."
+      "translation": "I do it myself.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "自己",
+          "options": [
+            "自己",
+            "又",
+            "以前",
+            "以后"
+          ],
+          "option_pinyin": [
+            "zìjǐ",
+            "yòu",
+            "yǐqián",
+            "yǐhòu"
+          ],
+          "question_chinese": "我___做。",
+          "question_pinyin": "wǒ ___ zuò.",
+          "question_english": "I do it myself."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'oneself'?",
+          "correct": "自己",
+          "options": [
+            "自己",
+            "又",
+            "以前",
+            "以后"
+          ],
+          "option_pinyin": [
+            "zìjǐ",
+            "yòu",
+            "yǐqián",
+            "yǐhòu"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zìjǐ zuò."
     },
     {
       "id": "hsk1_l14_10",
@@ -134,8 +511,48 @@
       ],
       "english": "Again / Also",
       "part_of_speech": "adverb",
-      "example": "她又买了。",
-      "translation": "She bought again."
+      "example": "她又买了衣服。",
+      "translation": "She bought clothes again.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "又",
+          "options": [
+            "又",
+            "自己",
+            "以前",
+            "以后"
+          ],
+          "option_pinyin": [
+            "yòu",
+            "zìjǐ",
+            "yǐqián",
+            "yǐhòu"
+          ],
+          "question_chinese": "她___买了衣服。",
+          "question_pinyin": "tā ___ mǎi le.",
+          "question_english": "She bought clothes again."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'again'?",
+          "correct": "又",
+          "options": [
+            "又",
+            "自己",
+            "以前",
+            "以后"
+          ],
+          "option_pinyin": [
+            "yòu",
+            "zìjǐ",
+            "yǐqián",
+            "yǐhòu"
+          ]
+        }
+      ],
+      "example_pinyin": "tā yòu mǎi le yīfu."
     },
     {
       "id": "hsk1_l14_11",
@@ -148,7 +565,47 @@
       "english": "Before / Previously",
       "part_of_speech": "noun",
       "example": "我以前是学生。",
-      "translation": "I was a student before."
+      "translation": "I was a student before.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "以前",
+          "options": [
+            "以前",
+            "以后",
+            "又",
+            "自己"
+          ],
+          "option_pinyin": [
+            "yǐqián",
+            "yǐhòu",
+            "yòu",
+            "zìjǐ"
+          ],
+          "question_chinese": "我___是学生。",
+          "question_pinyin": "wǒ ___ shì xuésheng.",
+          "question_english": "I was a student before."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'before/previously'?",
+          "correct": "以前",
+          "options": [
+            "以前",
+            "以后",
+            "又",
+            "自己"
+          ],
+          "option_pinyin": [
+            "yǐqián",
+            "yǐhòu",
+            "yòu",
+            "zìjǐ"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ yǐqián shì xuésheng."
     },
     {
       "id": "hsk1_l14_12",
@@ -160,8 +617,48 @@
       ],
       "english": "After / Later / In the future",
       "part_of_speech": "noun",
-      "example": "以后我去中国。",
-      "translation": "I will go to China in the future."
+      "example": "以后我会去中国。",
+      "translation": "I will go to China in the future.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "以后",
+          "options": [
+            "以后",
+            "以前",
+            "又",
+            "自己"
+          ],
+          "option_pinyin": [
+            "yǐhòu",
+            "yǐqián",
+            "yòu",
+            "zìjǐ"
+          ],
+          "question_chinese": "___我会去中国。",
+          "question_pinyin": "___ wǒ huì qù zhōngguó.",
+          "question_english": "I will go to China later."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'after/later'?",
+          "correct": "以后",
+          "options": [
+            "以后",
+            "以前",
+            "又",
+            "自己"
+          ],
+          "option_pinyin": [
+            "yǐhòu",
+            "yǐqián",
+            "yòu",
+            "zìjǐ"
+          ]
+        }
+      ],
+      "example_pinyin": "yǐhòu wǒ huì qù zhōngguó."
     },
     {
       "id": "hsk1_l14_p01",
@@ -563,6 +1060,45 @@
           "answer": "了",
           "type": "fill_in_blank"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "了",
+          "options": [
+            "了",
+            "的",
+            "是",
+            "在"
+          ],
+          "option_pinyin": [
+            "le",
+            "de",
+            "shì",
+            "zài"
+          ],
+          "question_chinese": "我吃___米饭。",
+          "question_pinyin": "wǒ chī ___ mǐfàn.",
+          "question_english": "I ate rice."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 了 for a completed action?",
+          "correct": "我吃了米饭。",
+          "options": [
+            "我吃了米饭。",
+            "了我吃米饭。",
+            "我米饭了吃。",
+            "吃了我米饭。"
+          ],
+          "option_pinyin": [
+            "wǒ chī le mǐfàn.",
+            "le wǒ chī mǐfàn.",
+            "wǒ mǐfàn le chī.",
+            "chī le wǒ mǐfàn."
+          ]
+        }
       ]
     },
     {
@@ -592,6 +1128,45 @@
           "answer": "还没",
           "type": "fill_in_blank"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "还没",
+          "options": [
+            "还没",
+            "已经",
+            "不",
+            "没有"
+          ],
+          "option_pinyin": [
+            "hái méi",
+            "yǐjīng",
+            "bù",
+            "méiyǒu"
+          ],
+          "question_chinese": "我___吃。",
+          "question_pinyin": "wǒ ___ chī.",
+          "question_english": "I haven't eaten yet."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 还没?",
+          "correct": "我还没吃。",
+          "options": [
+            "我还没吃。",
+            "还没我吃。",
+            "我吃还没。",
+            "吃还我没。"
+          ],
+          "option_pinyin": [
+            "wǒ hái méi chī.",
+            "hái méi wǒ chī.",
+            "wǒ chī hái méi.",
+            "chī hái wǒ méi."
+          ]
+        }
       ]
     },
     {
@@ -620,6 +1195,45 @@
           "question": "What is the opposite of 以前?",
           "answer": "以后",
           "type": "concept"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "以前",
+          "options": [
+            "以前",
+            "以后",
+            "现在",
+            "又"
+          ],
+          "option_pinyin": [
+            "yǐqián",
+            "yǐhòu",
+            "xiànzài",
+            "yòu"
+          ],
+          "question_chinese": "___我是学生。",
+          "question_pinyin": "___ wǒ shì xuésheng.",
+          "question_english": "I was a student before."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 以前/以后?",
+          "correct": "以前我是学生，现在我工作了。",
+          "options": [
+            "以前我是学生，现在我工作了。",
+            "我以前学生是，工作现在了。",
+            "学生以前我是，我现在工作了。",
+            "以前是我学生，工作了我现在。"
+          ],
+          "option_pinyin": [
+            "yǐqián wǒ shì xuésheng, xiànzài wǒ gōngzuò le.",
+            "wǒ yǐqián xuésheng shì, gōngzuò xiànzài le.",
+            "xuésheng yǐqián wǒ shì, wǒ xiànzài gōngzuò le.",
+            "yǐqián shì wǒ xuésheng, gōngzuò le wǒ xiànzài."
+          ]
         }
       ]
     }

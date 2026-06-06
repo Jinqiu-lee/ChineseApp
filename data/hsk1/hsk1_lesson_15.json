@@ -21,7 +21,47 @@
       "english": "Airplane",
       "part_of_speech": "noun",
       "example": "我坐飞机去北京。",
-      "translation": "I go to Beijing by airplane."
+      "translation": "I go to Beijing by airplane.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "飞机",
+          "options": [
+            "飞机",
+            "出租车",
+            "地铁",
+            "票"
+          ],
+          "option_pinyin": [
+            "fēijī",
+            "chūzūchē",
+            "dìtiě",
+            "piào"
+          ],
+          "question_chinese": "我坐___去北京。",
+          "question_pinyin": "wǒ zuò ___ qù Běijīng.",
+          "question_english": "I take an airplane to Beijing."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'airplane'?",
+          "correct": "飞机",
+          "options": [
+            "飞机",
+            "出租车",
+            "地铁",
+            "票"
+          ],
+          "option_pinyin": [
+            "fēijī",
+            "chūzūchē",
+            "dìtiě",
+            "piào"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zuò fēijī qù Běijīng."
     },
     {
       "id": "hsk1_l15_02",
@@ -35,7 +75,64 @@
       "english": "Taxi",
       "part_of_speech": "noun",
       "example": "我坐出租车去。",
-      "translation": "I take a taxi."
+      "translation": "I take a taxi.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "出租车",
+          "options": [
+            "出租车",
+            "飞机",
+            "地铁",
+            "机场"
+          ],
+          "option_pinyin": [
+            "chūzūchē",
+            "fēijī",
+            "dìtiě",
+            "jīchǎng"
+          ],
+          "question_chinese": "我坐___去。",
+          "question_pinyin": "wǒ zuò ___ qù.",
+          "question_english": "I take a taxi to go."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'taxi'?",
+          "correct": "出租车",
+          "options": [
+            "出租车",
+            "飞机",
+            "地铁",
+            "机场"
+          ],
+          "option_pinyin": [
+            "chūzūchē",
+            "fēijī",
+            "dìtiě",
+            "jīchǎng"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 出租车 correctly?",
+          "correct": "坐出租车去。",
+          "options": [
+            "坐出租车去。",
+            "出租车去坐。",
+            "去坐出租车。",
+            "坐去出租车。"
+          ],
+          "option_pinyin": [
+            "zuò chūzūchē qù.",
+            "chūzūchē qù zuò.",
+            "qù zuò chūzūchē.",
+            "zuò qù chūzūchē."
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zuò chūzūchē qù."
     },
     {
       "id": "hsk1_l15_03",
@@ -48,7 +145,64 @@
       "english": "Subway / Metro",
       "part_of_speech": "noun",
       "example": "坐地铁去吧。",
-      "translation": "Take the subway."
+      "translation": "Take the subway.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "地铁",
+          "options": [
+            "地铁",
+            "飞机",
+            "出租车",
+            "票"
+          ],
+          "option_pinyin": [
+            "dìtiě",
+            "fēijī",
+            "chūzūchē",
+            "piào"
+          ],
+          "question_chinese": "坐___去吧。",
+          "question_pinyin": "zuò ___ qù ba.",
+          "question_english": "Let's take the subway."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'subway/metro'?",
+          "correct": "地铁",
+          "options": [
+            "地铁",
+            "飞机",
+            "出租车",
+            "机场"
+          ],
+          "option_pinyin": [
+            "dìtiě",
+            "fēijī",
+            "chūzūchē",
+            "jīchǎng"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 地铁 correctly?",
+          "correct": "坐地铁去吧。",
+          "options": [
+            "坐地铁去吧。",
+            "地铁去坐吧。",
+            "吧坐地铁去。",
+            "去地铁坐吧。"
+          ],
+          "option_pinyin": [
+            "zuò dìtiě qù ba.",
+            "dìtiě qù zuò ba.",
+            "ba zuò dìtiě qù.",
+            "qù dìtiě zuò ba."
+          ]
+        }
+      ],
+      "example_pinyin": "zuò dìtiě qù ba."
     },
     {
       "id": "hsk1_l15_04",
@@ -61,7 +215,47 @@
       "english": "Airport",
       "part_of_speech": "noun",
       "example": "机场远不远？",
-      "translation": "Is the airport far?"
+      "translation": "Is the airport far?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "机场",
+          "options": [
+            "机场",
+            "飞机",
+            "地铁",
+            "北京"
+          ],
+          "option_pinyin": [
+            "jīchǎng",
+            "fēijī",
+            "dìtiě",
+            "Běijīng"
+          ],
+          "question_chinese": "___远不远？",
+          "question_pinyin": "___ yuǎn bù yuǎn?",
+          "question_english": "Is the airport far?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'airport'?",
+          "correct": "机场",
+          "options": [
+            "机场",
+            "飞机",
+            "出租车",
+            "地铁"
+          ],
+          "option_pinyin": [
+            "jīchǎng",
+            "fēijī",
+            "chūzūchē",
+            "dìtiě"
+          ]
+        }
+      ],
+      "example_pinyin": "jīchǎng yuǎn bù yuǎn?"
     },
     {
       "id": "hsk1_l15_05",
@@ -73,7 +267,64 @@
       "english": "To sit / To take (transportation)",
       "part_of_speech": "verb",
       "example": "我坐地铁上学。",
-      "translation": "I take the subway to school."
+      "translation": "I take the subway to school.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 坐 correctly?",
+          "correct": "我坐地铁上学。",
+          "options": [
+            "我坐地铁上学。",
+            "坐我地铁上学。",
+            "地铁我坐上学。",
+            "上学坐我地铁。"
+          ],
+          "option_pinyin": [
+            "wǒ zuò dìtiě shàngxué.",
+            "zuò wǒ dìtiě shàngxué.",
+            "dìtiě wǒ zuò shàngxué.",
+            "shàngxué zuò wǒ dìtiě."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "坐",
+          "options": [
+            "坐",
+            "骑",
+            "走",
+            "远"
+          ],
+          "option_pinyin": [
+            "zuò",
+            "qí",
+            "zǒu",
+            "yuǎn"
+          ],
+          "question_chinese": "我___地铁上学。",
+          "question_pinyin": "wǒ ___ dìtiě shàngxué.",
+          "question_english": "I take the subway to school."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to take (transportation)'?",
+          "correct": "坐",
+          "options": [
+            "坐",
+            "骑",
+            "走",
+            "近"
+          ],
+          "option_pinyin": [
+            "zuò",
+            "qí",
+            "zǒu",
+            "jìn"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zuò dìtiě shàngxué."
     },
     {
       "id": "hsk1_l15_06",
@@ -85,7 +336,64 @@
       "english": "To ride (bike/horse)",
       "part_of_speech": "verb",
       "example": "我骑车去学校。",
-      "translation": "I ride my bike to school."
+      "translation": "I ride my bike to school.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 骑 correctly?",
+          "correct": "我骑车去学校。",
+          "options": [
+            "我骑车去学校。",
+            "骑我去车学校。",
+            "车骑我去学校。",
+            "学校骑去我车。"
+          ],
+          "option_pinyin": [
+            "wǒ qí chē qù xuéxiào.",
+            "qí wǒ qù chē xuéxiào.",
+            "chē qí wǒ qù xuéxiào.",
+            "xuéxiào qí qù wǒ chē."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "骑",
+          "options": [
+            "骑",
+            "坐",
+            "走",
+            "远"
+          ],
+          "option_pinyin": [
+            "qí",
+            "zuò",
+            "zǒu",
+            "yuǎn"
+          ],
+          "question_chinese": "我___车去学校。",
+          "question_pinyin": "wǒ ___ chē qù xuéxiào.",
+          "question_english": "I ride a bike to school."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to ride (a bike)'?",
+          "correct": "骑",
+          "options": [
+            "骑",
+            "坐",
+            "走",
+            "近"
+          ],
+          "option_pinyin": [
+            "qí",
+            "zuò",
+            "zǒu",
+            "jìn"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ qí chē qù xuéxiào."
     },
     {
       "id": "hsk1_l15_07",
@@ -97,7 +405,64 @@
       "english": "To walk / To go / To leave",
       "part_of_speech": "verb",
       "example": "我走路去。",
-      "translation": "I walk there."
+      "translation": "I walk there.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 走 correctly?",
+          "correct": "我走路去。",
+          "options": [
+            "我走路去。",
+            "走我路去。",
+            "路走我去。",
+            "去路我走。"
+          ],
+          "option_pinyin": [
+            "wǒ zǒu lù qù.",
+            "zǒu wǒ lù qù.",
+            "lù zǒu wǒ qù.",
+            "qù lù wǒ zǒu."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "走",
+          "options": [
+            "走",
+            "坐",
+            "骑",
+            "远"
+          ],
+          "option_pinyin": [
+            "zǒu",
+            "zuò",
+            "qí",
+            "yuǎn"
+          ],
+          "question_chinese": "我___路去。",
+          "question_pinyin": "wǒ ___ lù qù.",
+          "question_english": "I go on foot."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to walk'?",
+          "correct": "走",
+          "options": [
+            "走",
+            "坐",
+            "骑",
+            "近"
+          ],
+          "option_pinyin": [
+            "zǒu",
+            "zuò",
+            "qí",
+            "jìn"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zǒu lù qù."
     },
     {
       "id": "hsk1_l15_08",
@@ -110,7 +475,64 @@
       "english": "Beijing",
       "part_of_speech": "noun",
       "example": "我去北京了。",
-      "translation": "I went to Beijing."
+      "translation": "I went to Beijing.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 北京 correctly?",
+          "correct": "我去北京了。",
+          "options": [
+            "我去北京了。",
+            "北京了去我。",
+            "了去我北京。",
+            "去了我北京。"
+          ],
+          "option_pinyin": [
+            "wǒ qù Běijīng le.",
+            "Běijīng le qù wǒ.",
+            "le qù wǒ Běijīng.",
+            "qù le wǒ Běijīng."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "北京",
+          "options": [
+            "北京",
+            "机场",
+            "中午",
+            "地铁"
+          ],
+          "option_pinyin": [
+            "Běijīng",
+            "jīchǎng",
+            "zhōngwǔ",
+            "dìtiě"
+          ],
+          "question_chinese": "我去___了。",
+          "question_pinyin": "wǒ qù ___ le.",
+          "question_english": "I went to Beijing."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Beijing'?",
+          "correct": "北京",
+          "options": [
+            "北京",
+            "机场",
+            "中午",
+            "票"
+          ],
+          "option_pinyin": [
+            "Běijīng",
+            "jīchǎng",
+            "zhōngwǔ",
+            "piào"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ qù Běijīng le."
     },
     {
       "id": "hsk1_l15_09",
@@ -123,7 +545,64 @@
       "english": "Noon / Midday",
       "part_of_speech": "noun",
       "example": "我中午吃饭。",
-      "translation": "I eat lunch at noon."
+      "translation": "I eat lunch at noon.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 中午 correctly?",
+          "correct": "我中午吃饭。",
+          "options": [
+            "我中午吃饭。",
+            "中午我饭吃。",
+            "吃饭我中午。",
+            "我饭中午吃。"
+          ],
+          "option_pinyin": [
+            "wǒ zhōngwǔ chīfàn.",
+            "zhōngwǔ wǒ fàn chī.",
+            "chīfàn wǒ zhōngwǔ.",
+            "wǒ fàn zhōngwǔ chī."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "中午",
+          "options": [
+            "中午",
+            "北京",
+            "机场",
+            "票"
+          ],
+          "option_pinyin": [
+            "zhōngwǔ",
+            "Běijīng",
+            "jīchǎng",
+            "piào"
+          ],
+          "question_chinese": "我___吃饭。",
+          "question_pinyin": "wǒ ___ chīfàn.",
+          "question_english": "I eat lunch at noon."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'noon/midday'?",
+          "correct": "中午",
+          "options": [
+            "中午",
+            "北京",
+            "机场",
+            "票"
+          ],
+          "option_pinyin": [
+            "zhōngwǔ",
+            "Běijīng",
+            "jīchǎng",
+            "piào"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zhōngwǔ chīfàn."
     },
     {
       "id": "hsk1_l15_10",
@@ -135,7 +614,64 @@
       "english": "Ticket",
       "part_of_speech": "noun",
       "example": "我买了票。",
-      "translation": "I bought a ticket."
+      "translation": "I bought a ticket.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 票 correctly?",
+          "correct": "我买了票。",
+          "options": [
+            "我买了票。",
+            "了票我买。",
+            "买票了我。",
+            "我了买票。"
+          ],
+          "option_pinyin": [
+            "wǒ mǎi le piào.",
+            "le piào wǒ mǎi.",
+            "mǎi piào le wǒ.",
+            "wǒ le mǎi piào."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "票",
+          "options": [
+            "票",
+            "飞机",
+            "地铁",
+            "中午"
+          ],
+          "option_pinyin": [
+            "piào",
+            "fēijī",
+            "dìtiě",
+            "zhōngwǔ"
+          ],
+          "question_chinese": "我买了___。",
+          "question_pinyin": "wǒ mǎi le ___.",
+          "question_english": "I bought a ticket."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'ticket'?",
+          "correct": "票",
+          "options": [
+            "票",
+            "飞机",
+            "地铁",
+            "中午"
+          ],
+          "option_pinyin": [
+            "piào",
+            "fēijī",
+            "dìtiě",
+            "zhōngwǔ"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ mǎi le piào."
     },
     {
       "id": "hsk1_l15_11",
@@ -147,7 +683,64 @@
       "english": "Far / Distant",
       "part_of_speech": "adjective",
       "example": "机场很远。",
-      "translation": "The airport is far."
+      "translation": "The airport is far.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 远 correctly?",
+          "correct": "机场很远。",
+          "options": [
+            "机场很远。",
+            "远机场很。",
+            "很远机场。",
+            "机场远很。"
+          ],
+          "option_pinyin": [
+            "jīchǎng hěn yuǎn.",
+            "yuǎn jīchǎng hěn.",
+            "hěn yuǎn jīchǎng.",
+            "jīchǎng yuǎn hěn."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "远",
+          "options": [
+            "远",
+            "近",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "yuǎn",
+            "jìn",
+            "dà",
+            "xiǎo"
+          ],
+          "question_chinese": "机场很___。",
+          "question_pinyin": "jīchǎng hěn ___.",
+          "question_english": "The airport is very far."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'far'?",
+          "correct": "远",
+          "options": [
+            "远",
+            "近",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "yuǎn",
+            "jìn",
+            "dà",
+            "xiǎo"
+          ]
+        }
+      ],
+      "example_pinyin": "jīchǎng hěn yuǎn."
     },
     {
       "id": "hsk1_l15_12",
@@ -159,7 +752,64 @@
       "english": "Near / Close",
       "part_of_speech": "adjective",
       "example": "学校很近。",
-      "translation": "The school is very close."
+      "translation": "The school is very close.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 近 correctly?",
+          "correct": "学校很近。",
+          "options": [
+            "学校很近。",
+            "近学校很。",
+            "很近学校。",
+            "学校近很。"
+          ],
+          "option_pinyin": [
+            "xuéxiào hěn jìn.",
+            "jìn xuéxiào hěn.",
+            "hěn jìn xuéxiào.",
+            "xuéxiào jìn hěn."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "近",
+          "options": [
+            "近",
+            "远",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "jìn",
+            "yuǎn",
+            "dà",
+            "xiǎo"
+          ],
+          "question_chinese": "学校很___。",
+          "question_pinyin": "xuéxiào hěn ___.",
+          "question_english": "The school is very near."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'near/close'?",
+          "correct": "近",
+          "options": [
+            "近",
+            "远",
+            "大",
+            "小"
+          ],
+          "option_pinyin": [
+            "jìn",
+            "yuǎn",
+            "dà",
+            "xiǎo"
+          ]
+        }
+      ],
+      "example_pinyin": "xuéxiào hěn jìn."
     },
     {
       "id": "hsk1_l15_p01",
@@ -518,6 +1168,45 @@
           "answer": "HOW, WHEN, or WHERE a past action happened",
           "type": "concept"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "是",
+          "options": [
+            "是",
+            "有",
+            "在",
+            "不"
+          ],
+          "option_pinyin": [
+            "shì",
+            "yǒu",
+            "zài",
+            "bù"
+          ],
+          "question_chinese": "我___坐飞机来的。",
+          "question_pinyin": "wǒ ___ zuò fēijī lái de.",
+          "question_english": "I came (specifically) by airplane."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 是...的?",
+          "correct": "我是坐飞机来的。",
+          "options": [
+            "我是坐飞机来的。",
+            "我来是飞机坐的。",
+            "飞机坐是我来的。",
+            "我坐飞机来是的。"
+          ],
+          "option_pinyin": [
+            "wǒ shì zuò fēijī lái de.",
+            "wǒ lái shì fēijī zuò de.",
+            "fēijī zuò shì wǒ lái de.",
+            "wǒ zuò fēijī lái shì de."
+          ]
+        }
       ]
     },
     {
@@ -547,6 +1236,45 @@
           "answer": "骑 (骑车)",
           "type": "concept"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "坐",
+          "options": [
+            "坐",
+            "骑",
+            "走",
+            "开"
+          ],
+          "option_pinyin": [
+            "zuò",
+            "qí",
+            "zǒu",
+            "kāi"
+          ],
+          "question_chinese": "我___地铁去学校。",
+          "question_pinyin": "wǒ ___ dìtiě qù xuéxiào.",
+          "question_english": "I take the subway to school."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 坐 for transportation?",
+          "correct": "我坐地铁去学校。",
+          "options": [
+            "我坐地铁去学校。",
+            "地铁我去坐学校。",
+            "我去坐地铁学校。",
+            "坐学校我地铁去。"
+          ],
+          "option_pinyin": [
+            "wǒ zuò dìtiě qù xuéxiào.",
+            "dìtiě wǒ qù zuò xuéxiào.",
+            "wǒ qù zuò dìtiě xuéxiào.",
+            "zuò xuéxiào wǒ dìtiě qù."
+          ]
+        }
       ]
     },
     {
@@ -575,6 +1303,45 @@
           "question": "What is the opposite of 远?",
           "answer": "近",
           "type": "concept"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "远",
+          "options": [
+            "远",
+            "近",
+            "大",
+            "好"
+          ],
+          "option_pinyin": [
+            "yuǎn",
+            "jìn",
+            "dà",
+            "hǎo"
+          ],
+          "question_chinese": "北京___不远？",
+          "question_pinyin": "Běijīng ___ bù yuǎn?",
+          "question_english": "Is Beijing far?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 远 or 近?",
+          "correct": "北京远不远？",
+          "options": [
+            "北京远不远？",
+            "不北京远远？",
+            "远不远北京？",
+            "北京远远不？"
+          ],
+          "option_pinyin": [
+            "Běijīng yuǎn bù yuǎn?",
+            "bù Běijīng yuǎn yuǎn?",
+            "yuǎn bù yuǎn Běijīng?",
+            "Běijīng yuǎn yuǎn bù?"
+          ]
         }
       ]
     }

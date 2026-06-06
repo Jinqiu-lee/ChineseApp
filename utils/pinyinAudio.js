@@ -473,6 +473,7 @@ export const PINYIN_AUDIO = {
   'lve4':  require('../assets/audio/pinyin/tones/lve4.mp3'),  // lüè  abbreviate
   'jue1':  require('../assets/audio/pinyin/tones/jue1.mp3'),  // juē  (written jue)
   'que1':  require('../assets/audio/pinyin/tones/que1.mp3'),  // quē  lack
+  'xue3':  require('../assets/audio/pinyin/tones/xve3.mp3'),  // xuě  snow (ü→v in filename)
   // 'xue1':  require('../assets/audio/pinyin/tones/xue1.mp3'),  // xuē  snow
 
   // Lesson 4 — z/c/s, -an/-en/-in/-un/-ün

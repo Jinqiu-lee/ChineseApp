@@ -20,7 +20,9 @@ export default function FillBlankExercise({ exercise, onCorrect, onWrong }) {
     }
   };
 
-  const displayFilled = answered ? displayText.replace('____', selected) : displayText;
+  const displayFilled  = answered ? displayText.replace('____', selected) : displayText;
+  const hasBlank       = displayText.includes('____');
+  const longChoices    = (choices || []).some(c => c.length > 6);
 
   const getStyle = (choice) => {
     if (!answered) return styles.choice;
@@ -46,7 +48,7 @@ export default function FillBlankExercise({ exercise, onCorrect, onWrong }) {
       {hint && <Text style={styles.hint}>"{hint}"</Text>}
 
       <View style={styles.sentenceBox}>
-        <Text style={styles.sentence}>{displayFilled}</Text>
+        <Text style={[styles.sentence, !hasBlank && styles.sentencePrompt]}>{displayFilled}</Text>
         {showPinyin && sentence_pinyin ? (
           <Text style={styles.sentencePinyin}>{sentence_pinyin}</Text>
         ) : null}
@@ -66,7 +68,7 @@ export default function FillBlankExercise({ exercise, onCorrect, onWrong }) {
             disabled={answered}
             activeOpacity={0.75}
           >
-            <Text style={styles.choiceText}>{choice}</Text>
+            <Text style={[styles.choiceText, longChoices && styles.choiceTextLong]}>{choice}</Text>
             {showPinyin && choices_pinyin?.[i] ? (
               <Text style={styles.choicePinyin}>{choices_pinyin[i]}</Text>
             ) : null}
@@ -108,6 +110,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.18, shadowRadius: 12, elevation: 5,
   },
   sentence: { fontSize: 24, fontWeight: '800', color: VG.onCard, textAlign: 'center', lineHeight: 34 },
+  sentencePrompt: { fontSize: 18, lineHeight: 26 },
   sentencePinyin: { fontSize: 14, color: VG.orange, fontStyle: 'italic', marginTop: 8, textAlign: 'center' },
   feedback: { fontSize: 14, marginTop: 10, fontWeight: '600' },
   feedbackCorrect: { color: VG.success },
@@ -118,6 +121,7 @@ const styles = StyleSheet.create({
   choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.error, minWidth: '42%', alignItems: 'center' },
   choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.10)', minWidth: '42%', alignItems: 'center' },
   choiceText: { fontSize: 20, fontWeight: '800', color: VG.cream },
+  choiceTextLong: { fontSize: 15, fontWeight: '600' },
   choicePinyin: { fontSize: 12, color: VG.gold, fontStyle: 'italic', marginTop: 4 },
   continueBtn: {
     marginTop: 16, backgroundColor: DEEP_NAVY, borderRadius: 14,

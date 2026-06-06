@@ -20,7 +20,64 @@
       "english": "You",
       "part_of_speech": "pronoun",
       "example": "你好！",
-      "translation": "Hello!"
+      "translation": "Hello!",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 你 mean?",
+          "correct": "You",
+          "options": [
+            "You",
+            "I",
+            "He",
+            "She"
+          ],
+          "option_pinyin": [
+            "nǐ",
+            "wǒ",
+            "tā (he)",
+            "tā (she)"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: ___ 好 means 'Hello'",
+          "correct": "你",
+          "options": [
+            "你",
+            "我",
+            "他",
+            "她"
+          ],
+          "option_pinyin": [
+            "nǐ",
+            "wǒ",
+            "tā",
+            "tā"
+          ],
+          "question_chinese": "___好！",
+          "question_pinyin": "___ hǎo!",
+          "question_english": "Hello!"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which pronoun means 'you'?",
+          "correct": "你",
+          "options": [
+            "你",
+            "我",
+            "他",
+            "她"
+          ],
+          "option_pinyin": [
+            "nǐ",
+            "wǒ",
+            "tā",
+            "tā"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ hǎo!"
     },
     {
       "id": "hsk1_l1_02",
@@ -32,7 +89,64 @@
       "english": "Good / Well",
       "part_of_speech": "adjective",
       "example": "你好吗？",
-      "translation": "How are you?"
+      "translation": "How are you?",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 好 mean?",
+          "correct": "Good / Well",
+          "options": [
+            "Good / Well",
+            "Bad",
+            "Big",
+            "Small"
+          ],
+          "option_pinyin": [
+            "hǎo",
+            "huài",
+            "dà",
+            "xiǎo"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 你___ 吗？ means 'How are you?'",
+          "correct": "好",
+          "options": [
+            "好",
+            "的",
+            "呢",
+            "是"
+          ],
+          "option_pinyin": [
+            "hǎo",
+            "de",
+            "ne",
+            "shì"
+          ],
+          "question_chinese": "你___吗？",
+          "question_pinyin": "nǐ ___ ma?",
+          "question_english": "How are you?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which phrase means 'Hello'?",
+          "correct": "你好",
+          "options": [
+            "你好",
+            "你是",
+            "你的",
+            "你吗"
+          ],
+          "option_pinyin": [
+            "nǐ hǎo",
+            "nǐ shì",
+            "nǐ de",
+            "nǐ ma"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ hǎo ma?"
     },
     {
       "id": "hsk1_l1_03",
@@ -44,7 +158,64 @@
       "english": "I / Me",
       "part_of_speech": "pronoun",
       "example": "我叫小明。",
-      "translation": "My name is Xiao Ming."
+      "translation": "My name is Xiao Ming.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 我 mean?",
+          "correct": "I / me",
+          "options": [
+            "I / me",
+            "You",
+            "He",
+            "We"
+          ],
+          "option_pinyin": [
+            "wǒ",
+            "nǐ",
+            "tā",
+            "wǒ men"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: ___ 是学生 (I am a student)",
+          "correct": "我",
+          "options": [
+            "我",
+            "你",
+            "他",
+            "她"
+          ],
+          "option_pinyin": [
+            "wǒ",
+            "nǐ",
+            "tā",
+            "tā"
+          ],
+          "question_chinese": "___叫小明。",
+          "question_pinyin": "___ jiào Xiǎo Míng.",
+          "question_english": "My name is Xiao Ming."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which pronoun means 'I / me'?",
+          "correct": "我",
+          "options": [
+            "我",
+            "你",
+            "他",
+            "她"
+          ],
+          "option_pinyin": [
+            "wǒ",
+            "nǐ",
+            "tā",
+            "tā"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ jiào Xiǎo Míng."
     },
     {
       "id": "hsk1_l1_04",
@@ -56,7 +227,64 @@
       "english": "To be / Am / Is / Are",
       "part_of_speech": "verb",
       "example": "她是我的朋友。",
-      "translation": "She is my friend."
+      "translation": "She is my friend.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 是 mean?",
+          "correct": "To be (am / is / are)",
+          "options": [
+            "To be (am / is / are)",
+            "To have",
+            "To go",
+            "To like"
+          ],
+          "option_pinyin": [
+            "shì",
+            "yǒu",
+            "qù",
+            "xǐ huān"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 我___ 老师 (I am a teacher)",
+          "correct": "是",
+          "options": [
+            "是",
+            "有",
+            "在",
+            "的"
+          ],
+          "option_pinyin": [
+            "shì",
+            "yǒu",
+            "zài",
+            "de"
+          ],
+          "question_chinese": "她___我的朋友。",
+          "question_pinyin": "tā ___ wǒ de péngyou.",
+          "question_english": "She is my friend."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you say 'She is my friend'?",
+          "correct": "她是我的朋友",
+          "options": [
+            "她是我的朋友",
+            "她有我的朋友",
+            "她在我的朋友",
+            "我是她的朋友"
+          ],
+          "option_pinyin": [
+            "tā shì wǒ de péng yǒu",
+            "tā yǒu wǒ de péng yǒu",
+            "tā zài wǒ de péng yǒu",
+            "wǒ shì tā de péng yǒu"
+          ]
+        }
+      ],
+      "example_pinyin": "tā shì wǒ de péngyou."
     },
     {
       "id": "hsk1_l1_05",
@@ -68,7 +296,64 @@
       "english": "Possessive particle / Of",
       "part_of_speech": "particle",
       "example": "他的名字",
-      "translation": "His name"
+      "translation": "His name",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What one use 的 correctly?",
+          "correct": "我的名字",
+          "options": [
+            "我的名字",
+            "名字的我",
+            "我名字的",
+            "的名字我"
+          ],
+          "option_pinyin": [
+            "wǒ de míng zi",
+            "míng zi de wǒ",
+            "wǒ míng zi de",
+            "de míng zi wǒ"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 我___ 名字 (my name)",
+          "correct": "的",
+          "options": [
+            "的",
+            "是",
+            "有",
+            "在"
+          ],
+          "option_pinyin": [
+            "de",
+            "shì",
+            "yǒu",
+            "zài"
+          ],
+          "question_chinese": "他___名字",
+          "question_pinyin": "tā ___ míngzi",
+          "question_english": "His name"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'your name'?",
+          "correct": "你的名字",
+          "options": [
+            "你的名字",
+            "你是名字",
+            "名字你",
+            "你名字是"
+          ],
+          "option_pinyin": [
+            "nǐ de míng zi",
+            "nǐ shì míng zi",
+            "míng zi nǐ",
+            "nǐ míng zi shì"
+          ]
+        }
+      ],
+      "example_pinyin": "tā de míngzi"
     },
     {
       "id": "hsk1_l1_06",
@@ -80,7 +365,58 @@
       "english": "Question particle",
       "part_of_speech": "particle",
       "example": "你好吗？",
-      "translation": "How are you?"
+      "translation": "How are you?",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 吗 do?",
+          "correct": "Turns a statement into a yes/no question",
+          "options": [
+            "Turns a statement into a yes/no question",
+            "Shows possession",
+            "Means 'to be'",
+            "Means 'also'"
+          ],
+          "option_pinyin": [
+            "ma",
+            "de",
+            "shì",
+            "yě"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 你好___ ? (How are you?)",
+          "correct": "吗",
+          "options": [
+            "吗",
+            "呢",
+            "的",
+            "是"
+          ],
+          "option_pinyin": [
+            "ma",
+            "ne",
+            "de",
+            "shì"
+          ],
+          "question_chinese": "你好___？",
+          "question_pinyin": "nǐ hǎo ___?",
+          "question_english": "How are you?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Where does 吗 go in a yes/no question?",
+          "correct": "At the end of the sentence",
+          "options": [
+            "At the end of the sentence",
+            "At the beginning",
+            "Before the verb",
+            "After the subject"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ hǎo ma?"
     },
     {
       "id": "hsk1_l1_07",
@@ -92,7 +428,64 @@
       "english": "Question particle (and you?)",
       "part_of_speech": "particle",
       "example": "你呢？",
-      "translation": "And you?"
+      "translation": "And you?",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 呢 mean when used alone?",
+          "correct": "And you? / What about you?",
+          "options": [
+            "And you? / What about you?",
+            "How are you?",
+            "Do you?",
+            "Are you?"
+          ],
+          "option_pinyin": [
+            "ne",
+            "nǐ hǎo ma",
+            "ma",
+            "shì ma"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 你___ ? (And you?)",
+          "correct": "呢",
+          "options": [
+            "呢",
+            "吗",
+            "的",
+            "好"
+          ],
+          "option_pinyin": [
+            "ne",
+            "ma",
+            "de",
+            "hǎo"
+          ],
+          "question_chinese": "你___？",
+          "question_pinyin": "nǐ ___?",
+          "question_english": "And you?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you say 'I'm fine, and you?'",
+          "correct": "我很好，你呢？",
+          "options": [
+            "我很好，你呢？",
+            "我很好，你吗？",
+            "我很好，你的？",
+            "我很好，你是？"
+          ],
+          "option_pinyin": [
+            "wǒ hěn hǎo, nǐ ne?",
+            "wǒ hěn hǎo, nǐ ma?",
+            "wǒ hěn hǎo, nǐ de?",
+            "wǒ hěn hǎo, nǐ shì?"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ ne?"
     },
     {
       "id": "hsk1_l1_08",
@@ -104,7 +497,64 @@
       "english": "To be called",
       "part_of_speech": "verb",
       "example": "我叫李明。",
-      "translation": "My name is Li Ming."
+      "translation": "My name is Li Ming.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 叫 mean?",
+          "correct": "To be called / Named",
+          "options": [
+            "To be called / Named",
+            "To know",
+            "To like",
+            "To have"
+          ],
+          "option_pinyin": [
+            "jiào",
+            "zhī dào",
+            "xǐ huān",
+            "yǒu"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 我___ 李明 (My name is Li Ming)",
+          "correct": "叫",
+          "options": [
+            "叫",
+            "是",
+            "有",
+            "的"
+          ],
+          "option_pinyin": [
+            "jiào",
+            "shì",
+            "yǒu",
+            "de"
+          ],
+          "question_chinese": "我___李明。",
+          "question_pinyin": "wǒ ___ Lǐ Míng.",
+          "question_english": "My name is Li Ming."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you ask 'What is your name?'",
+          "correct": "你叫什么名字？",
+          "options": [
+            "你叫什么名字？",
+            "你是什么名字？",
+            "你有什么名字？",
+            "你叫名字什么？"
+          ],
+          "option_pinyin": [
+            "nǐ jiào shén me míng zi?",
+            "nǐ shì shén me míng zi?",
+            "nǐ yǒu shén me míng zi?",
+            "nǐ jiào míng zi shén me?"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ jiào Lǐ Míng."
     },
     {
       "id": "hsk1_l1_09",
@@ -117,7 +567,64 @@
       "english": "What",
       "part_of_speech": "pronoun",
       "example": "你叫什么名字？",
-      "translation": "What is your name?"
+      "translation": "What is your name?",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 什么 mean?",
+          "correct": "What",
+          "options": [
+            "What",
+            "Who",
+            "Where",
+            "When"
+          ],
+          "option_pinyin": [
+            "shén me",
+            "shéi",
+            "nǎ lǐ",
+            "shén me shí hòu"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 你叫___ 名字？ (What is your name?)",
+          "correct": "什么",
+          "options": [
+            "什么",
+            "谁",
+            "哪",
+            "这"
+          ],
+          "option_pinyin": [
+            "shén me",
+            "shéi",
+            "nǎ",
+            "zhè"
+          ],
+          "question_chinese": "你叫___名字？",
+          "question_pinyin": "nǐ jiào ___ míngzi?",
+          "question_english": "What is your name?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence means 'What is this?'",
+          "correct": "这是什么？",
+          "options": [
+            "这是什么？",
+            "这是谁？",
+            "什么是这？",
+            "这什么是？"
+          ],
+          "option_pinyin": [
+            "zhè shì shén me?",
+            "zhè shì shéi?",
+            "shén me shì zhè?",
+            "zhè shén me shì?"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ jiào shénme míngzi?"
     },
     {
       "id": "hsk1_l1_10",
@@ -130,7 +637,64 @@
       "english": "Name",
       "part_of_speech": "noun",
       "example": "你叫什么名字？",
-      "translation": "What is your name?"
+      "translation": "What is your name?",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 名字 mean?",
+          "correct": "Name",
+          "options": [
+            "Name",
+            "Age",
+            "Address",
+            "Phone number"
+          ],
+          "option_pinyin": [
+            "míng zi",
+            "nián líng",
+            "dì zhǐ",
+            "diàn huà"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 你叫什么___ ? (What is your name?)",
+          "correct": "名字",
+          "options": [
+            "名字",
+            "朋友",
+            "老师",
+            "学生"
+          ],
+          "option_pinyin": [
+            "míng zi",
+            "péng yǒu",
+            "lǎo shī",
+            "xué shēng"
+          ],
+          "question_chinese": "你叫什么___？",
+          "question_pinyin": "nǐ jiào shénme ___?",
+          "question_english": "What is your name?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you say 'my name' in Chinese?",
+          "correct": "我的名字",
+          "options": [
+            "我的名字",
+            "我是名字",
+            "名字我的",
+            "我名字"
+          ],
+          "option_pinyin": [
+            "wǒ de míng zi",
+            "wǒ shì míng zi",
+            "míng zi wǒ de",
+            "wǒ míng zi"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ jiào shénme míngzi?"
     },
     {
       "id": "hsk1_l1_11",
@@ -142,7 +706,64 @@
       "english": "Who",
       "part_of_speech": "pronoun",
       "example": "他是谁？",
-      "translation": "Who is he?"
+      "translation": "Who is he?",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 谁 mean?",
+          "correct": "Who",
+          "options": [
+            "Who",
+            "What",
+            "Where",
+            "When"
+          ],
+          "option_pinyin": [
+            "shéi",
+            "shén me",
+            "nǎ lǐ",
+            "shén me shí hòu"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 他是___ ? (Who is he?)",
+          "correct": "谁",
+          "options": [
+            "谁",
+            "什么",
+            "哪",
+            "这"
+          ],
+          "option_pinyin": [
+            "shéi",
+            "shén me",
+            "nǎ",
+            "zhè"
+          ],
+          "question_chinese": "他是___？",
+          "question_pinyin": "tā shì ___?",
+          "question_english": "Who is he?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you ask 'Who is she?'",
+          "correct": "她是谁？",
+          "options": [
+            "她是谁？",
+            "她是什么？",
+            "谁她是？",
+            "她谁是？"
+          ],
+          "option_pinyin": [
+            "tā shì shéi?",
+            "tā shì shén me?",
+            "shéi tā shì?",
+            "tā shéi shì?"
+          ]
+        }
+      ],
+      "example_pinyin": "tā shì shéi?"
     },
     {
       "id": "hsk1_l1_12",
@@ -154,7 +775,64 @@
       "english": "He / Him",
       "part_of_speech": "pronoun",
       "example": "他是谁？",
-      "translation": "Who is he?"
+      "translation": "Who is he?",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 他 mean?",
+          "correct": "He / Him",
+          "options": [
+            "He / Him",
+            "She / Her",
+            "You",
+            "I"
+          ],
+          "option_pinyin": [
+            "tā (he)",
+            "tā (she)",
+            "nǐ",
+            "wǒ"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: ___ 是老师 (He is a teacher)",
+          "correct": "他",
+          "options": [
+            "他",
+            "她",
+            "你",
+            "我"
+          ],
+          "option_pinyin": [
+            "tā (he)",
+            "tā (she)",
+            "nǐ",
+            "wǒ"
+          ],
+          "question_chinese": "___是谁？",
+          "question_pinyin": "___ shì shéi?",
+          "question_english": "Who is he?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which character means 'He'?",
+          "correct": "他",
+          "options": [
+            "他",
+            "她",
+            "它",
+            "您"
+          ],
+          "option_pinyin": [
+            "tā (he)",
+            "tā (she)",
+            "tā (it)",
+            "nín (formal you)"
+          ]
+        }
+      ],
+      "example_pinyin": "tā shì shéi?"
     },
     {
       "id": "hsk1_l1_13",
@@ -166,7 +844,64 @@
       "english": "She / Her",
       "part_of_speech": "pronoun",
       "example": "她叫小华。",
-      "translation": "Her name is Xiao Hua."
+      "translation": "Her name is Xiao Hua.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 她 mean?",
+          "correct": "She / Her",
+          "options": [
+            "She / Her",
+            "He / Him",
+            "You",
+            "I"
+          ],
+          "option_pinyin": [
+            "tā (she)",
+            "tā (he)",
+            "nǐ",
+            "wǒ"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: ___ 叫小华 (Her name is Xiao Hua)",
+          "correct": "她",
+          "options": [
+            "她",
+            "他",
+            "你",
+            "我"
+          ],
+          "option_pinyin": [
+            "tā (she)",
+            "tā (he)",
+            "nǐ",
+            "wǒ"
+          ],
+          "question_chinese": "___叫小华。",
+          "question_pinyin": "___ jiào Xiǎo Huá.",
+          "question_english": "Her name is Xiao Hua."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you say 'She is my friend'?",
+          "correct": "她是我的朋友",
+          "options": [
+            "她是我的朋友",
+            "他是我的朋友",
+            "你是我的朋友",
+            "我是她的朋友"
+          ],
+          "option_pinyin": [
+            "tā shì wǒ de péng yǒu (she)",
+            "tā shì wǒ de péng yǒu (he)",
+            "nǐ shì wǒ de péng yǒu",
+            "wǒ shì tā de péng yǒu"
+          ]
+        }
+      ],
+      "example_pinyin": "tā jiào Xiǎo Huá."
     },
     {
       "id": "hsk1_l1_14",
@@ -178,7 +913,64 @@
       "english": "Person / People",
       "part_of_speech": "noun",
       "example": "她是好人。",
-      "translation": "She is a good person."
+      "translation": "She is a good person.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 人 mean?",
+          "correct": "Person / People",
+          "options": [
+            "Person / People",
+            "Friend",
+            "Teacher",
+            "Student"
+          ],
+          "option_pinyin": [
+            "rén",
+            "péng yǒu",
+            "lǎo shī",
+            "xué shēng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 她是好___ (She is a good person)",
+          "correct": "人",
+          "options": [
+            "人",
+            "的",
+            "吗",
+            "呢"
+          ],
+          "option_pinyin": [
+            "rén",
+            "de",
+            "ma",
+            "ne"
+          ],
+          "question_chinese": "她是好___。",
+          "question_pinyin": "tā shì hǎo ___.",
+          "question_english": "She is a good person."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'good person'?",
+          "correct": "好人",
+          "options": [
+            "好人",
+            "好的",
+            "人好",
+            "是人"
+          ],
+          "option_pinyin": [
+            "hǎo rén",
+            "hǎo de",
+            "rén hǎo",
+            "shì rén"
+          ]
+        }
+      ],
+      "example_pinyin": "tā shì hǎo rén."
     },
     {
       "id": "hsk1_l1_p01",
@@ -189,7 +981,63 @@
         3
       ],
       "english": "Hello",
-      "part_of_speech": "phrase"
+      "part_of_speech": "phrase",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 你好 mean?",
+          "correct": "Hello",
+          "options": [
+            "Hello",
+            "Goodbye",
+            "Thank you",
+            "Good morning"
+          ],
+          "option_pinyin": [
+            "nǐ hǎo",
+            "zài jiàn",
+            "xiè xie",
+            "zǎo shang hǎo"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 你___ (Hello)",
+          "correct": "好",
+          "options": [
+            "好",
+            "的",
+            "吗",
+            "呢"
+          ],
+          "option_pinyin": [
+            "hǎo",
+            "de",
+            "ma",
+            "ne"
+          ],
+          "question_chinese": "你 ___",
+          "question_pinyin": "nǐ ___",
+          "question_english": "Hello"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which is the correct greeting?",
+          "correct": "你好",
+          "options": [
+            "你好",
+            "你的",
+            "你吗",
+            "你呢"
+          ],
+          "option_pinyin": [
+            "nǐ hǎo",
+            "nǐ de",
+            "nǐ ma",
+            "nǐ ne"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk1_l1_p02",
@@ -200,7 +1048,63 @@
         0
       ],
       "english": "My",
-      "part_of_speech": "phrase"
+      "part_of_speech": "phrase",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 我的 mean?",
+          "correct": "My",
+          "options": [
+            "My",
+            "Your",
+            "His / Her",
+            "Our"
+          ],
+          "option_pinyin": [
+            "wǒ de",
+            "nǐ de",
+            "tā de",
+            "wǒ men de"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: ___ 名字 (my name)",
+          "correct": "我的",
+          "options": [
+            "我的",
+            "你的",
+            "他的",
+            "她的"
+          ],
+          "option_pinyin": [
+            "wǒ de",
+            "nǐ de",
+            "tā de (his)",
+            "tā de (her)"
+          ],
+          "question_chinese": "___ 名字",
+          "question_pinyin": "___ míngzi",
+          "question_english": "My name"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you say 'my teacher'?",
+          "correct": "我的老师",
+          "options": [
+            "我的老师",
+            "你的老师",
+            "老师我的",
+            "我是老师"
+          ],
+          "option_pinyin": [
+            "wǒ de lǎo shī",
+            "nǐ de lǎo shī",
+            "lǎo shī wǒ de",
+            "wǒ shì lǎo shī"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk1_l1_p03",
@@ -211,7 +1115,63 @@
         0
       ],
       "english": "your",
-      "part_of_speech": "phrase"
+      "part_of_speech": "phrase",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 你的 mean?",
+          "correct": "Your",
+          "options": [
+            "Your",
+            "My",
+            "His",
+            "Her"
+          ],
+          "option_pinyin": [
+            "nǐ de",
+            "wǒ de",
+            "tā de (his)",
+            "tā de (her)"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: ___ 名字是什么？(What is your name?)",
+          "correct": "你的",
+          "options": [
+            "你的",
+            "我的",
+            "他的",
+            "她的"
+          ],
+          "option_pinyin": [
+            "nǐ de",
+            "wǒ de",
+            "tā de (his)",
+            "tā de (her)"
+          ],
+          "question_chinese": "___ 名字是什么？",
+          "question_pinyin": "___ míngzi shì shénme？",
+          "question_english": "What is your name?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you say 'your friend'?",
+          "correct": "你的朋友",
+          "options": [
+            "你的朋友",
+            "你是朋友",
+            "朋友你的",
+            "你朋友"
+          ],
+          "option_pinyin": [
+            "nǐ de péng yǒu",
+            "nǐ shì péng yǒu",
+            "péng yǒu nǐ de",
+            "nǐ péng yǒu"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk1_l1_p04",
@@ -222,7 +1182,63 @@
         0
       ],
       "english": "his/her",
-      "part_of_speech": "phrase"
+      "part_of_speech": "phrase",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 他的 mean?",
+          "correct": "His",
+          "options": [
+            "His",
+            "Her",
+            "My",
+            "Your"
+          ],
+          "option_pinyin": [
+            "tā de (he)",
+            "tā de (she)",
+            "wǒ de",
+            "nǐ de"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you say 'her name'?",
+          "correct": "她的名字",
+          "options": [
+            "她的名字",
+            "他的名字",
+            "你的名字",
+            "我的名字"
+          ],
+          "option_pinyin": [
+            "tā de míng zi (her)",
+            "tā de míng zi (his)",
+            "nǐ de míng zi",
+            "wǒ de míng zi"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: ___ 朋友 (his friend)",
+          "correct": "他的",
+          "options": [
+            "他的",
+            "她的",
+            "我的",
+            "你的"
+          ],
+          "option_pinyin": [
+            "tā de (his)",
+            "tā de (her)",
+            "wǒ de",
+            "nǐ de"
+          ],
+          "question_chinese": "___ 朋友",
+          "question_pinyin": "___ péngyǒu",
+          "question_english": "His friend"
+        }
+      ]
     },
     {
       "id": "hsk1_l1_p05",
@@ -235,7 +1251,63 @@
         0
       ],
       "english": "My name",
-      "part_of_speech": "phrase"
+      "part_of_speech": "phrase",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 我的名字 mean?",
+          "correct": "My name",
+          "options": [
+            "My name",
+            "Your name",
+            "His name",
+            "Her name"
+          ],
+          "option_pinyin": [
+            "wǒ de míng zi",
+            "nǐ de míng zi",
+            "tā de míng zi (his)",
+            "tā de míng zi (her)"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: ___ 是李明 (My name is Li Ming)",
+          "correct": "我的名字",
+          "options": [
+            "我的名字",
+            "你的名字",
+            "他的名字",
+            "她的名字"
+          ],
+          "option_pinyin": [
+            "wǒ de míng zi",
+            "nǐ de míng zi",
+            "tā de míng zi",
+            "tā de míng zi"
+          ],
+          "question_chinese": "___ 是李明",
+          "question_pinyin": "___ shì Lǐ Míng",
+          "question_english": "My name is Li Ming"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence says 'My name is Xiao Ming'?",
+          "correct": "我叫小明",
+          "options": [
+            "我叫小明",
+            "我的名字小明",
+            "小明是我",
+            "我是小明的"
+          ],
+          "option_pinyin": [
+            "wǒ jiào xiǎo míng",
+            "wǒ de míng zi xiǎo míng",
+            "xiǎo míng shì wǒ",
+            "wǒ shì xiǎo míng de"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk1_l1_p06",
@@ -246,7 +1318,46 @@
         2
       ],
       "english": "Good person",
-      "part_of_speech": "phrase"
+      "part_of_speech": "phrase",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 好人 mean?",
+          "correct": "Good person",
+          "options": [
+            "Good person",
+            "Good morning",
+            "Good friend",
+            "Good student"
+          ],
+          "option_pinyin": [
+            "hǎo rén",
+            "zǎo shang hǎo",
+            "hǎo péng yǒu",
+            "hǎo xué shēng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 她是___ (She is a good person)",
+          "correct": "好人",
+          "options": [
+            "好人",
+            "好的",
+            "好吗",
+            "好呢"
+          ],
+          "option_pinyin": [
+            "hǎo rén",
+            "hǎo de",
+            "hǎo ma",
+            "hǎo ne"
+          ],
+          "question_chinese": "她是 ___",
+          "question_pinyin": "tā shì ___",
+          "question_english": "She is a good person"
+        }
+      ]
     },
     {
       "id": "hsk1_l1_p7",
@@ -257,7 +1368,46 @@
         0
       ],
       "english": "And you?",
-      "part_of_speech": "phrase"
+      "part_of_speech": "phrase",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 你呢？ mean?",
+          "correct": "And you?",
+          "options": [
+            "And you?",
+            "Are you good?",
+            "Do you know?",
+            "Who are you?"
+          ],
+          "option_pinyin": [
+            "nǐ ne?",
+            "nǐ hǎo ma?",
+            "nǐ zhī dào ma?",
+            "nǐ shì shéi?"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: 我很好，___ ? (I'm fine, and you?)",
+          "correct": "你呢",
+          "options": [
+            "你呢",
+            "你吗",
+            "你的",
+            "你好"
+          ],
+          "option_pinyin": [
+            "nǐ ne",
+            "nǐ ma",
+            "nǐ de",
+            "nǐ hǎo"
+          ],
+          "question_chinese": "我很好，___ ？",
+          "question_pinyin": "wǒ hěn hǎo，___ ？",
+          "question_english": "I'm fine, and you?"
+        }
+      ]
     },
     {
       "id": "hsk1_l1_p8",
@@ -268,7 +1418,57 @@
         0
       ],
       "english": "Okay / Got it",
-      "part_of_speech": "phrase"
+      "part_of_speech": "phrase",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 好的 mean?",
+          "correct": "Okay / Got it",
+          "options": [
+            "Okay / Got it",
+            "Good person",
+            "Very good",
+            "Goodbye"
+          ],
+          "option_pinyin": [
+            "hǎo de",
+            "hǎo rén",
+            "hěn hǎo",
+            "zài jiàn"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "When would you use 好的?",
+          "correct": "To agree or acknowledge something",
+          "options": [
+            "To agree or acknowledge something",
+            "To greet someone",
+            "To ask a question",
+            "To say goodbye"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Complete: ___，我明白了 (Okay, I understand)",
+          "correct": "好的",
+          "options": [
+            "好的",
+            "好吗",
+            "好呢",
+            "好人"
+          ],
+          "option_pinyin": [
+            "hǎo de",
+            "hǎo ma",
+            "hǎo ne",
+            "hǎo rén"
+          ],
+          "question_chinese": "___ ，我明白了",
+          "question_pinyin": "___ ，wǒ míngbai le",
+          "question_english": "Okay, I understand"
+        }
+      ]
     }
   ],
   "key_sentences": [
@@ -405,12 +1605,79 @@
           ],
           "correct_pinyin": "Tā bú shì xué shēng."
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which word order is correct for 'I am a teacher'?",
+          "correct": "我是老师",
+          "options": [
+            "我是老师",
+            "我老师是",
+            "是我老师",
+            "老师我是"
+          ],
+          "option_pinyin": [
+            "wǒ shì lǎo shī",
+            "wǒ lǎo shī shì",
+            "shì wǒ lǎo shī",
+            "lǎo shī wǒ shì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "他 (tā) ___ 我的朋友 (wǒ de péngyǒu) — He is my friend",
+          "correct": "是",
+          "options": [
+            "是",
+            "的",
+            "有",
+            "在"
+          ],
+          "option_pinyin": [
+            "shì",
+            "de",
+            "yǒu",
+            "zài"
+          ],
+          "question_chinese": "他 ___ 我的朋友",
+          "question_pinyin": "tā ___ wǒ de péngyǒu",
+          "question_english": "He is my friend"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "How do you say 'I am not a student'?",
+          "correct": "我不是学生",
+          "options": [
+            "我不是学生",
+            "我是不学生",
+            "不我是学生",
+            "我没是学生"
+          ],
+          "option_pinyin": [
+            "wǒ bú shì xué shēng",
+            "wǒ shì bù xué shēng",
+            "bù wǒ shì xué shēng",
+            "wǒ méi shì xué shēng"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "What is the formula for 是?",
+          "correct": "Subject + 是 + Noun/Pronoun",
+          "options": [
+            "Subject + 是 + Noun/Pronoun",
+            "Noun + 是 + Subject",
+            "Subject + Noun + 是",
+            "是 + Subject + Noun"
+          ]
+        }
       ]
     },
     {
       "number": 2,
       "title": "The possessive particle 的 (de)",
-      "explanation": "的(de) shows possession, like 's or 'of' in English. Formula: Possessor + 的(de) + Thing possessed.",
+      "explanation": "的(de) shows possession, like 's or 'of' in English. Formula: Possessor + 的(de) + Thing.",
       "examples": [
         {
           "chinese": "我的书",
@@ -488,6 +1755,56 @@
           ],
           "correct_pinyin": "tā de shū"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What is the formula for using 的?",
+          "correct": "Possessor + 的 + Thing",
+          "options": [
+            "Possessor + 的 + Thing",
+            "Thing + 的 + Possessor",
+            "的 + Possessor + Thing",
+            "Possessor + Thing + 的"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "他 (tā) ___ 名字 (míngzi) 叫 (jiào) 鲁迅 (Lǔ Xùn) — His name is Lu Xun",
+          "correct": "的",
+          "options": [
+            "的",
+            "是",
+            "有",
+            "在"
+          ],
+          "option_pinyin": [
+            "de",
+            "shì",
+            "yǒu",
+            "zài"
+          ],
+          "question_chinese": "他 ___ 名字叫鲁迅",
+          "question_pinyin": "tā ___ míngzi jiào Lǔ Xùn",
+          "question_english": "His name is Lu Xun"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'your friend'?",
+          "correct": "你的朋友",
+          "options": [
+            "你的朋友",
+            "你是朋友",
+            "朋友你",
+            "你朋友是"
+          ],
+          "option_pinyin": [
+            "nǐ de péng yǒu",
+            "nǐ shì péng yǒu",
+            "péng yǒu nǐ",
+            "nǐ péng yǒu shì"
+          ]
+        }
       ]
     },
     {
@@ -560,6 +1877,56 @@
             "Tā shì ma nǐ de péng yǒu?"
           ],
           "correct_pinyin": "Tā shì nǐ de péng yǒu ma?"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "How do you turn '你是学生' into a question?",
+          "correct": "你是学生吗？",
+          "options": [
+            "你是学生吗？",
+            "吗你是学生？",
+            "你吗是学生？",
+            "你是吗学生？"
+          ],
+          "option_pinyin": [
+            "nǐ shì xué shēng ma?",
+            "ma nǐ shì xué shēng?",
+            "nǐ ma shì xué shēng?",
+            "nǐ shì ma xué shēng?"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "她 (tā) 是 (shì) 老师 (lǎoshī) ___ ? — Is she a teacher?",
+          "correct": "吗",
+          "options": [
+            "吗",
+            "呢",
+            "的",
+            "是"
+          ],
+          "option_pinyin": [
+            "ma",
+            "ne",
+            "de",
+            "shì"
+          ],
+          "question_chinese": "她是老师 ___ ?",
+          "question_pinyin": "tā shì lǎoshī ___ ?",
+          "question_english": "Is she a teacher?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Where does 吗 appear in a question?",
+          "correct": "At the very end of the sentence",
+          "options": [
+            "At the very end of the sentence",
+            "Right after the subject",
+            "Before the verb",
+            "At the beginning"
+          ]
         }
       ]
     }

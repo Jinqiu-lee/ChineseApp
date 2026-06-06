@@ -21,7 +21,64 @@
       "english": "Now / At present",
       "part_of_speech": "adverb",
       "example": "现在几点？",
-      "translation": "What time is it now?"
+      "translation": "What time is it now?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "现在",
+          "options": [
+            "现在",
+            "今天",
+            "明天",
+            "昨天"
+          ],
+          "option_pinyin": [
+            "xiànzài",
+            "jīntiān",
+            "míngtiān",
+            "zuótiān"
+          ],
+          "question_chinese": "___几点？",
+          "question_pinyin": "___ jǐ diǎn?",
+          "question_english": "What time is it now?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'now / at present'?",
+          "correct": "现在",
+          "options": [
+            "现在",
+            "今天",
+            "明天",
+            "昨天"
+          ],
+          "option_pinyin": [
+            "xiànzài",
+            "jīntiān",
+            "míngtiān",
+            "zuótiān"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 现在 correctly?",
+          "correct": "现在几点？",
+          "options": [
+            "现在几点？",
+            "几点现在？",
+            "现在点几？",
+            "几现在点？"
+          ],
+          "option_pinyin": [
+            "xiànzài jǐ diǎn?",
+            "jǐ diǎn xiànzài?",
+            "xiànzài diǎn jǐ?",
+            "jǐ xiànzài diǎn?"
+          ]
+        }
+      ],
+      "example_pinyin": "xiànzài jǐ diǎn?"
     },
     {
       "id": "hsk1_l11_02",
@@ -33,8 +90,48 @@
       ],
       "english": "Minute (duration)",
       "part_of_speech": "noun",
-      "example": "五分钟后来。",
-      "translation": "Come in five minutes."
+      "example": "五分钟。",
+      "translation": "five minutes.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "分钟",
+          "options": [
+            "分钟",
+            "小时",
+            "天",
+            "年"
+          ],
+          "option_pinyin": [
+            "fēnzhōng",
+            "xiǎoshí",
+            "tiān",
+            "nián"
+          ],
+          "question_chinese": "五___后来。",
+          "question_pinyin": "wǔ ___ hòu lái.",
+          "question_english": "Come in five minutes."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'five minutes'?",
+          "correct": "五分钟",
+          "options": [
+            "五分钟",
+            "五小时",
+            "五天",
+            "五年"
+          ],
+          "option_pinyin": [
+            "wǔ fēnzhōng",
+            "wǔ xiǎoshí",
+            "wǔ tiān",
+            "wǔ nián"
+          ]
+        }
+      ],
+      "example_pinyin": "wǔ fēnzhōng"
     },
     {
       "id": "hsk1_l11_03",
@@ -46,8 +143,48 @@
       ],
       "english": "Noon / Midday",
       "part_of_speech": "noun",
-      "example": "中午我吃饭。",
-      "translation": "I eat lunch at noon."
+      "example": "中午十二点。",
+      "translation": "12:00 PM.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "中午",
+          "options": [
+            "中午",
+            "上午",
+            "下午",
+            "晚上"
+          ],
+          "option_pinyin": [
+            "zhōngwǔ",
+            "shàngwǔ",
+            "xiàwǔ",
+            "wǎnshang"
+          ],
+          "question_chinese": "___ 我吃饭。",
+          "question_pinyin": "___ wǒ chīfàn.",
+          "question_english": "At noon I eat."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'noon'?",
+          "correct": "中午",
+          "options": [
+            "中午",
+            "上午",
+            "下午",
+            "晚上"
+          ],
+          "option_pinyin": [
+            "zhōngwǔ",
+            "shàngwǔ",
+            "xiàwǔ",
+            "wǎnshang"
+          ]
+        }
+      ],
+      "example_pinyin": "zhōngwǔ shíèr diǎn"
     },
     {
       "id": "hsk1_l11_04",
@@ -60,7 +197,47 @@
       "english": "Time / Moment / When",
       "part_of_speech": "noun",
       "example": "你什么时候来？",
-      "translation": "When are you coming?"
+      "translation": "When are you coming?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "时候",
+          "options": [
+            "时候",
+            "时间",
+            "时点",
+            "时刻"
+          ],
+          "option_pinyin": [
+            "shíhou",
+            "shíjiān",
+            "shídiǎn",
+            "shíkè"
+          ],
+          "question_chinese": "你什么___来？",
+          "question_pinyin": "nǐ shénme ___ lái?",
+          "question_english": "When are you coming?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'when are you coming?'",
+          "correct": "你什么时候来？",
+          "options": [
+            "你什么时候来？",
+            "你什么时间来？",
+            "你几点来？",
+            "你几时来？"
+          ],
+          "option_pinyin": [
+            "nǐ shénme shíhou lái?",
+            "nǐ shénme shíjiān lái?",
+            "nǐ jǐ diǎn lái?",
+            "nǐ jǐ shí lái?"
+          ]
+        }
+      ],
+      "example_pinyin": "nǐ shénme shíhou lái?"
     },
     {
       "id": "hsk1_l11_05",
@@ -73,7 +250,64 @@
       "english": "Week / Day of the week",
       "part_of_speech": "noun",
       "example": "今天星期几？",
-      "translation": "What day is today?"
+      "translation": "What day is today?",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "星期",
+          "options": [
+            "星期",
+            "月",
+            "年",
+            "天"
+          ],
+          "option_pinyin": [
+            "xīngqī",
+            "yuè",
+            "nián",
+            "tiān"
+          ],
+          "question_chinese": "今天___几？",
+          "question_pinyin": "jīntiān ___ jǐ?",
+          "question_english": "What day is today?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'week'?",
+          "correct": "星期",
+          "options": [
+            "星期",
+            "月",
+            "年",
+            "天"
+          ],
+          "option_pinyin": [
+            "xīngqī",
+            "yuè",
+            "nián",
+            "tiān"
+          ]
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 星期 correctly?",
+          "correct": "今天星期几？",
+          "options": [
+            "今天星期几？",
+            "星期今天几？",
+            "今天几星期？",
+            "几今天星期？"
+          ],
+          "option_pinyin": [
+            "jīntiān xīngqī jǐ?",
+            "xīngqī jīntiān jǐ?",
+            "jīntiān jǐ xīngqī?",
+            "jǐ jīntiān xīngqī?"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān xīngqī jǐ?"
     },
     {
       "id": "hsk1_l11_06",
@@ -85,7 +319,47 @@
       "english": "Day / Date (formal)",
       "part_of_speech": "noun",
       "example": "一月一日。",
-      "translation": "January 1st."
+      "translation": "January 1st.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "日",
+          "options": [
+            "日",
+            "号",
+            "月",
+            "年"
+          ],
+          "option_pinyin": [
+            "rì",
+            "hào",
+            "yuè",
+            "nián"
+          ],
+          "question_chinese": "一月一___。",
+          "question_pinyin": "yī yuè yī ___.",
+          "question_english": "January 1st."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'day / date (formal)'?",
+          "correct": "日",
+          "options": [
+            "日",
+            "号",
+            "月",
+            "年"
+          ],
+          "option_pinyin": [
+            "rì",
+            "hào",
+            "yuè",
+            "nián"
+          ]
+        }
+      ],
+      "example_pinyin": "yī yuè yī rì."
     },
     {
       "id": "hsk1_l11_07",
@@ -99,7 +373,47 @@
       "english": "To make a phone call",
       "part_of_speech": "verb",
       "example": "我打电话给你。",
-      "translation": "I'll call you."
+      "translation": "I'll call you.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "打电话",
+          "options": [
+            "打电话",
+            "发短信",
+            "发邮件",
+            "看电视"
+          ],
+          "option_pinyin": [
+            "dǎ diànhuà",
+            "fā duǎnxìn",
+            "fā yóujiàn",
+            "kàn diànshì"
+          ],
+          "question_chinese": "我___给你。",
+          "question_pinyin": "wǒ ___ gěi nǐ.",
+          "question_english": "I'll call you."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to make a phone call'?",
+          "correct": "打电话",
+          "options": [
+            "打电话",
+            "发短信",
+            "发邮件",
+            "看电视"
+          ],
+          "option_pinyin": [
+            "dǎ diànhuà",
+            "fā duǎnxìn",
+            "fā yóujiàn",
+            "kàn diànshì"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ dǎ diànhuà gěi nǐ."
     },
     {
       "id": "hsk1_l11_08",
@@ -111,7 +425,47 @@
       "english": "Hello (on the phone)",
       "part_of_speech": "interjection",
       "example": "喂，你好！",
-      "translation": "Hello!"
+      "translation": "Hello!",
+      "mini_exercises":[
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "喂",
+          "options": [
+            "喂",
+            "嗯",
+            "哦",
+            "啊"
+          ],
+          "option_pinyin": [
+            "wèi",
+            "ń",
+            "ó",
+            "a"
+          ],
+          "question_chinese": "___，你好！",
+          "question_pinyin": "___, nǐ hǎo!",
+          "question_english": "Hello (on the phone)!"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which expression is used when answering the phone?",
+          "correct": "喂，你好！",
+          "options": [
+            "喂，你好！",
+            "对不起，你好！",
+            "谢谢，你好！",
+            "请问，你好！"
+          ],
+          "option_pinyin": [
+            "Wèi, nǐ hǎo!",
+            "Duìbuqǐ, nǐ hǎo!",
+            "Xièxie, nǐ hǎo!",
+            "Qǐngwèn, nǐ hǎo!"
+          ]
+        }
+      ],
+      "example_pinyin": "wèi, nǐ hǎo!"
     },
     {
       "id": "hsk1_l11_09",
@@ -123,7 +477,47 @@
       "english": "To listen / To hear",
       "part_of_speech": "verb",
       "example": "我听音乐。",
-      "translation": "I listen to music."
+      "translation": "I listen to music.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "听",
+          "options": [
+            "听",
+            "看",
+            "读",
+            "写"
+          ],
+          "option_pinyin": [
+            "tīng",
+            "kàn",
+            "dú",
+            "xiě"
+          ],
+          "question_chinese": "我___音乐。",
+          "question_pinyin": "wǒ ___ yīnyuè.",
+          "question_english": "I listen to music."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to listen'?",
+          "correct": "听",
+          "options": [
+            "听",
+            "看",
+            "读",
+            "写"
+          ],
+          "option_pinyin": [
+            "tīng",
+            "kàn",
+            "dú",
+            "xiě"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ tīng yīnyuè."
     },
     {
       "id": "hsk1_l11_10",
@@ -135,7 +529,47 @@
       "english": "Year",
       "part_of_speech": "noun",
       "example": "今年我去中国。",
-      "translation": "I'm going to China this year."
+      "translation": "I'm going to China this year.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "年",
+          "options": [
+            "年",
+            "月",
+            "天",
+            "周"
+          ],
+          "option_pinyin": [
+            "nián",
+            "yuè",
+            "tiān",
+            "zhōu"
+          ],
+          "question_chinese": "今___我去中国。",
+          "question_pinyin": "jīn ___ wǒ qù zhōngguó.",
+          "question_english": "This year I'm going to China."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'year'?",
+          "correct": "年",
+          "options": [
+            "年",
+            "月",
+            "天",
+            "周"
+          ],
+          "option_pinyin": [
+            "nián",
+            "yuè",
+            "tiān",
+            "zhōu"
+          ]
+        }
+      ],
+      "example_pinyin": "jīn nián wǒ qù zhōngguó."
     },
     {
       "id": "hsk1_l11_11",
@@ -197,7 +631,63 @@
         4
       ],
       "english": "Make a phone call",
-      "part_of_speech": "phrase"
+      "part_of_speech": "phrase",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 打电话 correctly?",
+          "correct": "我打电话给你。",
+          "options": [
+            "我打电话给你。",
+            "我电话打给你。",
+            "打电话我给你。",
+            "我给打你电话。"
+          ],
+          "option_pinyin": [
+            "wǒ dǎ diànhuà gěi nǐ.",
+            "wǒ diànhuà dǎ gěi nǐ.",
+            "dǎ diànhuà wǒ gěi nǐ.",
+            "wǒ gěi dǎ nǐ diànhuà."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "打电话",
+          "options": [
+            "打电话",
+            "发短信",
+            "发邮件",
+            "看电视"
+          ],
+          "option_pinyin": [
+            "dǎ diànhuà",
+            "fā duǎnxìn",
+            "fā yóujiàn",
+            "kàn diànshì"
+          ],
+          "question_chinese": "我___给你。",
+          "question_pinyin": "wǒ ___ gěi nǐ.",
+          "question_english": "I'll call you."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'to make a phone call'?",
+          "correct": "打电话",
+          "options": [
+            "打电话",
+            "发短信",
+            "发邮件",
+            "看电视"
+          ],
+          "option_pinyin": [
+            "dǎ diànhuà",
+            "fā duǎnxìn",
+            "fā yóujiàn",
+            "kàn diànshì"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk1_l11_p06",
@@ -260,91 +750,530 @@
       "id": "hsk1_l11_d01",
       "chinese": "星期一",
       "pinyin": "xīngqīyī",
-      "tones": [1, 1, 1],
+      "tones": [
+        1,
+        1,
+        1
+      ],
       "english": "Monday",
       "part_of_speech": "noun",
       "example": "今天星期一。",
-      "translation": "Today is Monday."
+      "translation": "Today is Monday.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 星期一 correctly?",
+          "correct": "今天星期一。",
+          "options": [
+            "今天星期一。",
+            "星期一今天。",
+            "今天是星期一。",
+            "星期今天一。"
+          ],
+          "option_pinyin": [
+            "jīntiān xīngqīyī.",
+            "xīngqīyī jīntiān.",
+            "jīntiān shì xīngqīyī.",
+            "xīngqī jīntiān yī."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "星期一",
+          "options": [
+            "星期一",
+            "星期二",
+            "星期三",
+            "星期四"
+          ],
+          "option_pinyin": [
+            "xīngqīyī",
+            "xīngqī'èr",
+            "xīngqīsān",
+            "xīngqīsì"
+          ],
+          "question_chinese": "今天___。",
+          "question_pinyin": "jīntiān ___.",
+          "question_english": "Today is Monday."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Monday'?",
+          "correct": "星期一",
+          "options": [
+            "星期一",
+            "星期二",
+            "星期三",
+            "星期日"
+          ],
+          "option_pinyin": [
+            "xīngqīyī",
+            "xīngqī'èr",
+            "xīngqīsān",
+            "xīngqīrì"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān xīngqīyī."
     },
     {
       "id": "hsk1_l11_d02",
       "chinese": "星期二",
       "pinyin": "xīngqī'èr",
-      "tones": [1, 1, 4],
+      "tones": [
+        1,
+        1,
+        4
+      ],
       "english": "Tuesday",
       "part_of_speech": "noun",
       "example": "星期二见！",
-      "translation": "See you Tuesday!"
+      "translation": "See you Tuesday!",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 星期二 correctly?",
+          "correct": "星期二见！",
+          "options": [
+            "星期二见！",
+            "见星期二！",
+            "星期见二！",
+            "二星期见！"
+          ],
+          "option_pinyin": [
+            "Xīngqī'èr jiàn!",
+            "jiàn xīngqī'èr!",
+            "xīngqī jiàn èr!",
+            "èr xīngqī jiàn!"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "星期二",
+          "options": [
+            "星期二",
+            "星期一",
+            "星期三",
+            "星期四"
+          ],
+          "option_pinyin": [
+            "xīngqī'èr",
+            "xīngqīyī",
+            "xīngqīsān",
+            "xīngqīsì"
+          ],
+          "question_chinese": "___见！",
+          "question_pinyin": "___ jiàn!",
+          "question_english": "See you Tuesday!"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Tuesday'?",
+          "correct": "星期二",
+          "options": [
+            "星期二",
+            "星期一",
+            "星期三",
+            "星期日"
+          ],
+          "option_pinyin": [
+            "xīngqī'èr",
+            "xīngqīyī",
+            "xīngqīsān",
+            "xīngqīrì"
+          ]
+        }
+      ],
+      "example_pinyin": "xīngqī'èr jiàn!"
     },
     {
       "id": "hsk1_l11_d03",
       "chinese": "星期三",
       "pinyin": "xīngqīsān",
-      "tones": [1, 1, 1],
+      "tones": [
+        1,
+        1,
+        1
+      ],
       "english": "Wednesday",
       "part_of_speech": "noun",
       "example": "星期三我去学校。",
-      "translation": "I go to school on Wednesday."
+      "translation": "I go to school on Wednesday.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 星期三 correctly?",
+          "correct": "星期三我去学校。",
+          "options": [
+            "星期三我去学校。",
+            "我星期三学校去。",
+            "去学校星期三我。",
+            "我去星期三学校。"
+          ],
+          "option_pinyin": [
+            "xīngqīsān wǒ qù xuéxiào.",
+            "wǒ xīngqīsān xuéxiào qù.",
+            "qù xuéxiào xīngqīsān wǒ.",
+            "wǒ qù xīngqīsān xuéxiào."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "星期三",
+          "options": [
+            "星期三",
+            "星期二",
+            "星期四",
+            "星期五"
+          ],
+          "option_pinyin": [
+            "xīngqīsān",
+            "xīngqī'èr",
+            "xīngqīsì",
+            "xīngqīwǔ"
+          ],
+          "question_chinese": "___我去学校。",
+          "question_pinyin": "___ wǒ qù xuéxiào.",
+          "question_english": "On Wednesday I go to school."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Wednesday'?",
+          "correct": "星期三",
+          "options": [
+            "星期三",
+            "星期二",
+            "星期四",
+            "星期日"
+          ],
+          "option_pinyin": [
+            "xīngqīsān",
+            "xīngqī'èr",
+            "xīngqīsì",
+            "xīngqīrì"
+          ]
+        }
+      ],
+      "example_pinyin": "xīngqīsān wǒ qù xuéxiào."
     },
     {
       "id": "hsk1_l11_d04",
       "chinese": "星期四",
       "pinyin": "xīngqīsì",
-      "tones": [1, 1, 4],
+      "tones": [
+        1,
+        1,
+        4
+      ],
       "english": "Thursday",
       "part_of_speech": "noun",
       "example": "星期四你有空吗？",
-      "translation": "Are you free on Thursday?"
+      "translation": "Are you free on Thursday?",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 星期四 correctly?",
+          "correct": "星期四你有空吗？",
+          "options": [
+            "星期四你有空吗？",
+            "你星期四有空吗？",
+            "有空星期四你吗？",
+            "你有空星期四吗？"
+          ],
+          "option_pinyin": [
+            "xīngqīsì nǐ yǒu kòng ma?",
+            "nǐ xīngqīsì yǒu kòng ma?",
+            "yǒu kòng xīngqīsì nǐ ma?",
+            "nǐ yǒu kòng xīngqīsì ma?"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "星期四",
+          "options": [
+            "星期四",
+            "星期三",
+            "星期五",
+            "星期六"
+          ],
+          "option_pinyin": [
+            "xīngqīsì",
+            "xīngqīsān",
+            "xīngqīwǔ",
+            "xīngqīliù"
+          ],
+          "question_chinese": "___你有空吗？",
+          "question_pinyin": "___ nǐ yǒu kòng ma?",
+          "question_english": "Are you free on Thursday?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Thursday'?",
+          "correct": "星期四",
+          "options": [
+            "星期四",
+            "星期三",
+            "星期五",
+            "星期日"
+          ],
+          "option_pinyin": [
+            "xīngqīsì",
+            "xīngqīsān",
+            "xīngqīwǔ",
+            "xīngqīrì"
+          ]
+        }
+      ],
+      "example_pinyin": "xīngqīsì nǐ yǒu kòng ma?"
     },
     {
       "id": "hsk1_l11_d05",
       "chinese": "星期五",
       "pinyin": "xīngqīwǔ",
-      "tones": [1, 1, 3],
+      "tones": [
+        1,
+        1,
+        3
+      ],
       "english": "Friday",
       "part_of_speech": "noun",
       "example": "今天是星期五。",
-      "translation": "Today is Friday."
+      "translation": "Today is Friday.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 星期五 correctly?",
+          "correct": "今天是星期五。",
+          "options": [
+            "今天是星期五。",
+            "今天星期五是。",
+            "星期五今天是。",
+            "是今天星期五。"
+          ],
+          "option_pinyin": [
+            "jīntiān shì xīngqīwǔ.",
+            "jīntiān xīngqīwǔ shì.",
+            "xīngqīwǔ jīntiān shì.",
+            "shì jīntiān xīngqīwǔ."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "星期五",
+          "options": [
+            "星期五",
+            "星期四",
+            "星期六",
+            "星期日"
+          ],
+          "option_pinyin": [
+            "xīngqīwǔ",
+            "xīngqīsì",
+            "xīngqīliù",
+            "xīngqīrì"
+          ],
+          "question_chinese": "今天是___。",
+          "question_pinyin": "jīntiān shì ___.",
+          "question_english": "Today is Friday."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Friday'?",
+          "correct": "星期五",
+          "options": [
+            "星期五",
+            "星期四",
+            "星期六",
+            "星期日"
+          ],
+          "option_pinyin": [
+            "xīngqīwǔ",
+            "xīngqīsì",
+            "xīngqīliù",
+            "xīngqīrì"
+          ]
+        }
+      ],
+      "example_pinyin": "jīntiān shì xīngqīwǔ."
     },
     {
       "id": "hsk1_l11_d06",
       "chinese": "星期六",
       "pinyin": "xīngqīliù",
-      "tones": [1, 1, 4],
+      "tones": [
+        1,
+        1,
+        4
+      ],
       "english": "Saturday",
       "part_of_speech": "noun",
       "example": "星期六我们出去。",
-      "translation": "We go out on Saturday."
+      "translation": "We go out on Saturday.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 星期六 correctly?",
+          "correct": "星期六我们出去。",
+          "options": [
+            "星期六我们出去。",
+            "我们星期六出去。",
+            "出去星期六我们。",
+            "我们出去星期六。"
+          ],
+          "option_pinyin": [
+            "xīngqīliù wǒmen chūqù.",
+            "wǒmen xīngqīliù chūqù.",
+            "chūqù xīngqīliù wǒmen.",
+            "wǒmen chūqù xīngqīliù."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "星期六",
+          "options": [
+            "星期六",
+            "星期五",
+            "星期天",
+            "星期四"
+          ],
+          "option_pinyin": [
+            "xīngqīliù",
+            "xīngqīwǔ",
+            "xīngqītiān",
+            "xīngqīsì"
+          ],
+          "question_chinese": "___我们出去。",
+          "question_pinyin": "___ wǒmen chūqù.",
+          "question_english": "On Saturday we go out."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Saturday'?",
+          "correct": "星期六",
+          "options": [
+            "星期六",
+            "星期五",
+            "星期天",
+            "星期四"
+          ],
+          "option_pinyin": [
+            "xīngqīliù",
+            "xīngqīwǔ",
+            "xīngqītiān",
+            "xīngqīsì"
+          ]
+        }
+      ],
+      "example_pinyin": "xīngqīliù wǒmen chūqù."
     },
     {
       "id": "hsk1_l11_d07",
       "chinese": "星期天",
       "pinyin": "xīngqītiān",
-      "tones": [1, 1, 1],
+      "tones": [
+        1,
+        1,
+        1
+      ],
       "english": "Sunday",
       "part_of_speech": "noun",
       "example": "星期天我在家。",
-      "translation": "I'm at home on Sunday."
+      "translation": "I'm at home on Sunday.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence uses 星期天 correctly?",
+          "correct": "星期天我在家。",
+          "options": [
+            "星期天我在家。",
+            "我星期天在家。",
+            "在家星期天我。",
+            "我在家星期天。"
+          ],
+          "option_pinyin": [
+            "xīngqītiān wǒ zài jiā.",
+            "wǒ xīngqītiān zài jiā.",
+            "zài jiā xīngqītiān wǒ.",
+            "wǒ zài jiā xīngqītiān."
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "星期天",
+          "options": [
+            "星期天",
+            "星期六",
+            "星期五",
+            "星期一"
+          ],
+          "option_pinyin": [
+            "xīngqītiān",
+            "xīngqīliù",
+            "xīngqīwǔ",
+            "xīngqīyī"
+          ],
+          "question_chinese": "___我在家。",
+          "question_pinyin": "___ wǒ zài jiā.",
+          "question_english": "On Sunday I stay home."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'Sunday'?",
+          "correct": "星期天",
+          "options": [
+            "星期天",
+            "星期六",
+            "星期五",
+            "星期一"
+          ],
+          "option_pinyin": [
+            "xīngqītiān",
+            "xīngqīliù",
+            "xīngqīwǔ",
+            "xīngqīyī"
+          ]
+        }
+      ],
+      "example_pinyin": "xīngqītiān wǒ zài jiā."
     },
     {
       "id": "hsk1_l11_p11",
       "chinese": "一个星期",
       "pinyin": "yī gè xīngqī",
-      "tones": [1, 4, 1, 1],
+      "tones": [
+        1,
+        4,
+        1,
+        1
+      ],
       "english": "One week",
       "part_of_speech": "phrase",
       "example": "一个星期有七天。",
-      "translation": "One week has seven days."
+      "translation": "One week has seven days.",
+      "example_pinyin": "yī ge xīngqī yǒu qī tiān."
     },
     {
       "id": "hsk1_l11_p12",
       "chinese": "两个星期",
       "pinyin": "liǎng gè xīngqī",
-      "tones": [3, 4, 1, 1],
+      "tones": [
+        3,
+        4,
+        1,
+        1
+      ],
       "english": "Two weeks",
       "part_of_speech": "phrase",
       "example": "我去两个星期。",
-      "translation": "I'll be there for two weeks."
+      "translation": "I'll be there for two weeks.",
+      "example_pinyin": "wǒ qù liǎng ge xīngqī."
     }
   ],
   "dialogues": [
@@ -590,6 +1519,45 @@
           "answer": "十二",
           "type": "fill_in_blank"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "点",
+          "options": [
+            "点",
+            "分",
+            "号",
+            "时"
+          ],
+          "option_pinyin": [
+            "diǎn",
+            "fēn",
+            "hào",
+            "shí"
+          ],
+          "question_chinese": "现在下午三___半。",
+          "question_pinyin": "xiànzài xiàwǔ sān ___ bàn.",
+          "question_english": "It's 3:30 PM now."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly tells the time '10:20 AM'?",
+          "correct": "上午十点二十分",
+          "options": [
+            "上午十点二十分",
+            "上午二十点十分",
+            "十点上午二十分",
+            "上午十二十点分"
+          ],
+          "option_pinyin": [
+            "shàngwǔ shí diǎn èrshí fēn",
+            "shàngwǔ èrshí diǎn shí fēn",
+            "shí diǎn shàngwǔ èrshí fēn",
+            "shàngwǔ shí èrshí diǎn fēn"
+          ]
+        }
       ]
     },
     {
@@ -618,6 +1586,45 @@
           "question": "Where does 什么时候 go in the sentence?",
           "answer": "Before the verb",
           "type": "concept"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "什么",
+          "options": [
+            "什么",
+            "哪",
+            "几",
+            "多"
+          ],
+          "option_pinyin": [
+            "shénme",
+            "nǎ",
+            "jǐ",
+            "duō"
+          ],
+          "question_chinese": "你___时候去中国？",
+          "question_pinyin": "nǐ ___ shíhou qù Zhōngguó?",
+          "question_english": "When are you going to China?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly asks 'when'?",
+          "correct": "你什么时候来？",
+          "options": [
+            "你什么时候来？",
+            "你哪时候来？",
+            "你几时候来？",
+            "你多时候来？"
+          ],
+          "option_pinyin": [
+            "nǐ shénme shíhou lái?",
+            "nǐ nǎ shíhou lái?",
+            "nǐ jǐ shíhou lái?",
+            "nǐ duō shíhou lái?"
+          ]
         }
       ]
     },
@@ -648,6 +1655,45 @@
           "answer": "Sunday",
           "type": "concept"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "星期一",
+          "options": [
+            "星期一",
+            "星期二",
+            "星期三",
+            "星期日"
+          ],
+          "option_pinyin": [
+            "xīngqīyī",
+            "xīngqī'èr",
+            "xīngqīsān",
+            "xīngqīrì"
+          ],
+          "question_chinese": "今天___。",
+          "question_pinyin": "jīntiān ___.",
+          "question_english": "Today is Monday."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly says 'Today is Wednesday'?",
+          "correct": "今天星期三。",
+          "options": [
+            "今天星期三。",
+            "今天星期二。",
+            "今天星期四。",
+            "今天星期日。"
+          ],
+          "option_pinyin": [
+            "jīntiān xīngqīsān.",
+            "jīntiān xīngqī'èr.",
+            "jīntiān xīngqīsì.",
+            "jīntiān xīngqīrì."
+          ]
+        }
       ]
     },
     {
@@ -676,6 +1722,45 @@
           "question": "What measure word goes between the number and 星期?",
           "answer": "个 (gè)",
           "type": "concept"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "个",
+          "options": [
+            "个",
+            "只",
+            "本",
+            "杯"
+          ],
+          "option_pinyin": [
+            "gè",
+            "zhī",
+            "běn",
+            "bēi"
+          ],
+          "question_chinese": "一___星期有七天。",
+          "question_pinyin": "yī ___ xīngqī yǒu qī tiān.",
+          "question_english": "One week has seven days."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly says 'two weeks'?",
+          "correct": "两个星期",
+          "options": [
+            "两个星期",
+            "两只星期",
+            "两本星期",
+            "两杯星期"
+          ],
+          "option_pinyin": [
+            "liǎng gè xīngqī",
+            "liǎng zhī xīngqī",
+            "liǎng běn xīngqī",
+            "liǎng bēi xīngqī"
+          ]
         }
       ]
     }

@@ -69,70 +69,278 @@
         "title": "Initial + a",
         "rule": "b p m f d t n l combine with 'a'",
         "examples": [
-          { "pinyin": "bā",  "note": "b + a", "audio_key": "ba1", "word": "八", "meaning": "eight" },
-          { "pinyin": "pá",  "note": "p + a", "audio_key": "pa2", "word": "爬山", "word_pinyin": "pá shān", "meaning": "climb mountain" },
-          { "pinyin": "mā",  "note": "m + a", "audio_key": "ma1", "word": "妈妈", "word_pinyin": "māma", "meaning": "mum" },
-          { "pinyin": "fà",  "note": "f + a", "audio_key": "fa4", "word": "头发", "word_pinyin": "tóu fa", "meaning": "hair" },
-          { "pinyin": "dà",  "note": "d + a", "audio_key": "da4", "word": "大", "meaning": "big" },
-          { "pinyin": "tā",  "note": "t + a", "audio_key": "ta1", "word": "他", "meaning": "he / him" },
-          { "pinyin": "nǎ",  "note": "n + a", "audio_key": "na3", "word": "哪", "meaning": "which / where" },
-          { "pinyin": "lā",  "note": "l + a", "audio_key": "la1", "word": "拉", "meaning": "pull" }
+          {
+            "pinyin": "bā",
+            "note": "b + a",
+            "audio_key": "ba1",
+            "word": "八",
+            "meaning": "eight"
+          },
+          {
+            "pinyin": "pá",
+            "note": "p + a",
+            "audio_key": "pa2",
+            "word": "爬山",
+            "word_pinyin": "pá shān",
+            "meaning": "climb mountain"
+          },
+          {
+            "pinyin": "mā",
+            "note": "m + a",
+            "audio_key": "ma1",
+            "word": "妈妈",
+            "word_pinyin": "māma",
+            "meaning": "mum"
+          },
+          {
+            "pinyin": "fà",
+            "note": "f + a",
+            "audio_key": "fa4",
+            "word": "头发",
+            "word_pinyin": "tóu fa",
+            "meaning": "hair"
+          },
+          {
+            "pinyin": "dà",
+            "note": "d + a",
+            "audio_key": "da4",
+            "word": "大",
+            "meaning": "big"
+          },
+          {
+            "pinyin": "tā",
+            "note": "t + a",
+            "audio_key": "ta1",
+            "word": "他",
+            "meaning": "he / him"
+          },
+          {
+            "pinyin": "nǎ",
+            "note": "n + a",
+            "audio_key": "na3",
+            "word": "哪",
+            "meaning": "which / where"
+          },
+          {
+            "pinyin": "lā",
+            "note": "l + a",
+            "audio_key": "la1",
+            "word": "拉",
+            "meaning": "pull"
+          }
         ]
       },
       {
         "title": "Initial + o",
         "rule": "b p m f combine with 'o'",
         "examples": [
-          { "pinyin": "bō",  "note": "b + o", "audio_key": "bo1", "word": "播", "meaning": "broadcast" },
-          { "pinyin": "pó",  "note": "p + o", "audio_key": "po2", "word": "婆婆", "word_pinyin": "pópo", "meaning": "old woman / grandma" },
-          { "pinyin": "mó",  "note": "m + o", "audio_key": "mo2" },
-          { "pinyin": "fó",  "note": "f + o", "audio_key": "fo2", "word": "佛", "meaning": "Buddha" }
+          {
+            "pinyin": "bō",
+            "note": "b + o",
+            "audio_key": "bo1",
+            "word": "播",
+            "meaning": "broadcast"
+          },
+          {
+            "pinyin": "pó",
+            "note": "p + o",
+            "audio_key": "po2",
+            "word": "婆婆",
+            "word_pinyin": "pópo",
+            "meaning": "old woman / grandma"
+          },
+          {
+            "pinyin": "mó",
+            "note": "m + o",
+            "audio_key": "mo2"
+          },
+          {
+            "pinyin": "fó",
+            "note": "f + o",
+            "audio_key": "fo2",
+            "word": "佛",
+            "meaning": "Buddha"
+          }
         ]
       },
       {
         "title": "Initial + e",
         "rule": "m d t n l combine with 'e'",
         "examples": [
-          { "pinyin": "mē",  "note": "m + e", "audio_key": "me1","word": "什么", "word_pinyin": "shénme", "meaning": "what" },
-          { "pinyin": "dé",  "note": "d + e", "audio_key": "de2", "word": "得", "meaning": "get / achieve" },
-          { "pinyin": "tè",  "note": "t + e", "audio_key": "te4", "word": "特别", "word_pinyin": "tèbié", "meaning": "especially" },
-          { "pinyin": "nè",  "note": "n + e", "audio_key": "ne4" },
-          { "pinyin": "lè",  "note": "l + e", "audio_key": "le4", "word": "乐", "meaning": "happy" }
+          {
+            "pinyin": "mē",
+            "note": "m + e",
+            "audio_key": "me1",
+            "word": "什么",
+            "word_pinyin": "shénme",
+            "meaning": "what"
+          },
+          {
+            "pinyin": "dé",
+            "note": "d + e",
+            "audio_key": "de2",
+            "word": "得",
+            "meaning": "get / achieve"
+          },
+          {
+            "pinyin": "tè",
+            "note": "t + e",
+            "audio_key": "te4",
+            "word": "特别",
+            "word_pinyin": "tèbié",
+            "meaning": "especially"
+          },
+          {
+            "pinyin": "nè",
+            "note": "n + e",
+            "audio_key": "ne4"
+          },
+          {
+            "pinyin": "lè",
+            "note": "l + e",
+            "audio_key": "le4",
+            "word": "乐",
+            "meaning": "happy"
+          }
         ]
       },
       {
         "title": "Initial + i",
         "rule": "b p m d t n l combine with 'i' (f does not combine with i)",
         "examples": [
-          { "pinyin": "bǐ",  "note": "b + i", "audio_key": "bi3", "word": "笔", "meaning": "pen" },
-          { "pinyin": "pí",  "note": "p + i", "audio_key": "pi2", "word": "皮", "meaning": "skin / leather" },
-          { "pinyin": "mǐ",  "note": "m + i", "audio_key": "mi3", "word": "米", "meaning": "rice 🍚" },
-          { "pinyin": "dì",  "note": "d + i", "audio_key": "di4", "word": "地", "meaning": "ground / land" },
-          { "pinyin": "tí",  "note": "t + i", "audio_key": "ti2", "word": "题", "meaning": "question / topic" },
-          { "pinyin": "nǐ",  "note": "n + i", "audio_key": "ni3", "word": "你", "meaning": "you" },
-          { "pinyin": "lì",  "note": "l + i", "audio_key": "li4", "word": "力", "meaning": "strength" }
+          {
+            "pinyin": "bǐ",
+            "note": "b + i",
+            "audio_key": "bi3",
+            "word": "笔",
+            "meaning": "pen"
+          },
+          {
+            "pinyin": "pí",
+            "note": "p + i",
+            "audio_key": "pi2",
+            "word": "皮",
+            "meaning": "skin / leather"
+          },
+          {
+            "pinyin": "mǐ",
+            "note": "m + i",
+            "audio_key": "mi3",
+            "word": "米",
+            "meaning": "rice 🍚"
+          },
+          {
+            "pinyin": "dì",
+            "note": "d + i",
+            "audio_key": "di4",
+            "word": "地",
+            "meaning": "ground / land"
+          },
+          {
+            "pinyin": "tí",
+            "note": "t + i",
+            "audio_key": "ti2",
+            "word": "题",
+            "meaning": "question / topic"
+          },
+          {
+            "pinyin": "nǐ",
+            "note": "n + i",
+            "audio_key": "ni3",
+            "word": "你",
+            "meaning": "you"
+          },
+          {
+            "pinyin": "lì",
+            "note": "l + i",
+            "audio_key": "li4",
+            "word": "力",
+            "meaning": "strength"
+          }
         ]
       },
       {
         "title": "Initial + u",
         "rule": "b p m f d t n l combine with 'u'",
         "examples": [
-          { "pinyin": "bù",  "note": "b + u", "audio_key": "bu4", "word": "不", "meaning": "no / not" },
-          { "pinyin": "pù",  "note": "p + u", "audio_key": "pu4", "word": "瀑布", "word_pinyin": "pùbù", "meaning": "waterfall" },
-          { "pinyin": "mù",  "note": "m + u", "audio_key": "mu4", "word": "木", "meaning": "wood" },
-          { "pinyin": "fú",  "note": "f + u", "audio_key": "fu2", "word": "福", "meaning": "fortune / luck" },
-          { "pinyin": "dù",  "note": "d + u", "audio_key": "du4", "word": "度", "meaning": "degree" },
-          { "pinyin": "tù",  "note": "t + u", "audio_key": "tu4", "word": "兔", "meaning": "rabbit 🐰" },
-          { "pinyin": "nǔ",  "note": "n + u", "audio_key": "nu3", "word": "努力", "word_pinyin": "nǔlì", "meaning": "work hard" },
-          { "pinyin": "lù",  "note": "l + u", "audio_key": "lu4", "word": "路", "meaning": "road" }
+          {
+            "pinyin": "bù",
+            "note": "b + u",
+            "audio_key": "bu4",
+            "word": "不",
+            "meaning": "no / not"
+          },
+          {
+            "pinyin": "pù",
+            "note": "p + u",
+            "audio_key": "pu4",
+            "word": "瀑布",
+            "word_pinyin": "pùbù",
+            "meaning": "waterfall"
+          },
+          {
+            "pinyin": "mù",
+            "note": "m + u",
+            "audio_key": "mu4",
+            "word": "木",
+            "meaning": "wood"
+          },
+          {
+            "pinyin": "fú",
+            "note": "f + u",
+            "audio_key": "fu2",
+            "word": "福",
+            "meaning": "fortune / luck"
+          },
+          {
+            "pinyin": "dù",
+            "note": "d + u",
+            "audio_key": "du4",
+            "word": "度",
+            "meaning": "degree"
+          },
+          {
+            "pinyin": "tù",
+            "note": "t + u",
+            "audio_key": "tu4",
+            "word": "兔",
+            "meaning": "rabbit 🐰"
+          },
+          {
+            "pinyin": "nǔ",
+            "note": "n + u",
+            "audio_key": "nu3",
+            "word": "努力",
+            "word_pinyin": "nǔlì",
+            "meaning": "work hard"
+          },
+          {
+            "pinyin": "lù",
+            "note": "l + u",
+            "audio_key": "lu4",
+            "word": "路",
+            "meaning": "road"
+          }
         ]
       },
       {
         "title": "Initial + ü",
         "rule": "Only n and l combine with 'ü' from this set",
         "examples": [
-          { "pinyin": "nǚ",  "note": "n + ü", "audio_key": "nv3", "word": "女", "meaning": "woman / female" },
-          { "pinyin": "lǜ",  "note": "l + ü", "audio_key": "lv4", "word": "绿", "meaning": "green" }
+          {
+            "pinyin": "nǚ",
+            "note": "n + ü",
+            "audio_key": "nv3",
+            "word": "女",
+            "meaning": "woman / female"
+          },
+          {
+            "pinyin": "lǜ",
+            "note": "l + ü",
+            "audio_key": "lv4",
+            "word": "绿",
+            "meaning": "green"
+          }
         ]
       }
     ]
@@ -671,7 +879,8 @@
         "p",
         "m",
         "f"
-      ]
+      ],
+      "audio_key": "init_p"
     },
     {
       "type": "visual_initial",
@@ -682,7 +891,8 @@
         "t",
         "n",
         "l"
-      ]
+      ],
+      "audio_key": "init_d"
     },
     {
       "type": "visual_initial",
@@ -715,7 +925,8 @@
         "o",
         "e",
         "i"
-      ]
+      ],
+      "audio_key": "fin_i"
     },
     {
       "type": "visual_final",
@@ -726,77 +937,190 @@
         "u",
         "ü",
         "a"
-      ]
+      ],
+      "audio_key": "fin_u"
     },
     {
       "type": "listen_tone",
       "syllable": "mā",
       "audio_key": "ma1",
       "correct": "1",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "mǎ",
       "audio_key": "ma3",
       "correct": "3",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_tone",
       "syllable": "mà",
       "audio_key": "ma4",
       "correct": "4",
-      "choices": ["1", "2", "3", "4"]
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
     },
     {
       "type": "listen_initial",
       "syllable": "bō",
       "audio_key": "init_b",
       "correct": "b",
-      "choices": ["b", "p", "m", "f"]
+      "choices": [
+        "b",
+        "p",
+        "m",
+        "f"
+      ]
     },
     {
       "type": "listen_initial",
       "syllable": "lā",
       "audio_key": "init_l",
       "correct": "l",
-      "choices": ["d", "t", "n", "l"]
+      "choices": [
+        "d",
+        "t",
+        "n",
+        "l"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "bā",
       "audio_key": "fin_a",
       "correct": "a",
-      "choices": ["a", "o", "e", "i"]
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "i"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "bī",
       "audio_key": "fin_i",
       "correct": "i",
-      "choices": ["a", "o", "e", "i"]
+      "choices": [
+        "a",
+        "o",
+        "e",
+        "i"
+      ]
     },
     {
       "type": "listen_final",
       "syllable": "bū",
       "audio_key": "fin_u",
       "correct": "u",
-      "choices": ["i", "u", "ü", "a"]
+      "choices": [
+        "i",
+        "u",
+        "ü",
+        "a"
+      ]
     }
   ],
   "stage4_pool": [
-    { "type": "listen_record", "syllable": "mǎ", "audio_key": "ma3", "chinese": "马", "meaning": "horse" },
-    { "type": "listen_record", "syllable": "mà", "audio_key": "ma4", "chinese": "骂", "meaning": "scold" },
-    { "type": "listen_record", "syllable": "māma", "audio_key": "ma1_ma0", "chinese": "妈妈", "meaning": "mom" },
-    { "type": "listen_record", "syllable": "bàba", "audio_key": "ba4_ba0", "chinese": "爸爸", "meaning": "dad" },
-    { "type": "listen_record", "syllable": "bā", "audio_key": "ba1", "chinese": "八", "meaning": "eight" },
-    { "type": "listen_record", "syllable": "bǐ", "audio_key": "bi3", "chinese": "笔", "meaning": "pen" },
-    { "type": "listen_record", "syllable": "nǚ", "audio_key": "nv3", "chinese": "女", "meaning": "female" },
-    { "type": "listen_record", "syllable": "dà", "audio_key": "da4", "chinese": "大", "meaning": "big" },
-    { "type": "listen_record", "syllable": "tā", "audio_key": "ta1", "chinese": "他", "meaning": "he" },
-    { "type": "listen_record", "syllable": "nǐ", "audio_key": "ni3", "chinese": "你", "meaning": "you" },
-    { "type": "listen_record", "syllable": "lā", "audio_key": "la1", "chinese": "拉", "meaning": "pull" },
-    { "type": "listen_record", "syllable": "bō", "audio_key": "bo1", "chinese": "波", "meaning": "wave" }
+    {
+      "type": "listen_record",
+      "syllable": "mǎ",
+      "audio_key": "ma3",
+      "chinese": "马",
+      "meaning": "horse"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "mà",
+      "audio_key": "ma4",
+      "chinese": "骂",
+      "meaning": "scold"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "māma",
+      "audio_key": "ma1_ma0",
+      "chinese": "妈妈",
+      "meaning": "mom"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bàba",
+      "audio_key": "ba4_ba0",
+      "chinese": "爸爸",
+      "meaning": "dad"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bā",
+      "audio_key": "ba1",
+      "chinese": "八",
+      "meaning": "eight"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bǐ",
+      "audio_key": "bi3",
+      "chinese": "笔",
+      "meaning": "pen"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "nǚ",
+      "audio_key": "nv3",
+      "chinese": "女",
+      "meaning": "female"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "dà",
+      "audio_key": "da4",
+      "chinese": "大",
+      "meaning": "big"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "tā",
+      "audio_key": "ta1",
+      "chinese": "他",
+      "meaning": "he"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "nǐ",
+      "audio_key": "ni3",
+      "chinese": "你",
+      "meaning": "you"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "lā",
+      "audio_key": "la1",
+      "chinese": "拉",
+      "meaning": "pull"
+    },
+    {
+      "type": "listen_record",
+      "syllable": "bō",
+      "audio_key": "bo1",
+      "chinese": "波",
+      "meaning": "wave"
+    }
   ]
 }

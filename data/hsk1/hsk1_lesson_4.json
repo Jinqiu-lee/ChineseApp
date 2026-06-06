@@ -20,7 +20,64 @@
       "english": "Home / Family",
       "part_of_speech": "noun",
       "example": "我的家",
-      "translation": "My family."
+      "translation": "My family.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'my home'?",
+          "correct": "我的家",
+          "options": [
+            "我的家",
+            "你的家",
+            "他的家",
+            "我们的家"
+          ],
+          "option_pinyin": [
+            "wǒ de jiā",
+            "nǐ de jiā",
+            "tā de jiā",
+            "wǒmen de jiā"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "家",
+          "options": [
+            "家",
+            "学校",
+            "医院",
+            "商店"
+          ],
+          "option_pinyin": [
+            "jiā",
+            "xuéxiào",
+            "yīyuàn",
+            "shāngdiàn"
+          ],
+          "question_chinese": "我的___",
+          "question_pinyin": "wǒ de ___",
+          "question_english": "My family."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'my home'?",
+          "correct": "我家",
+          "options": [
+            "我家",
+            "我学校",
+            "我医院",
+            "我商店"
+          ],
+          "option_pinyin": [
+            "wǒ jiā",
+            "wǒ xuéxiào",
+            "wǒ yīyuàn",
+            "wǒ shāngdiàn"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ de jiā"
     },
     {
       "id": "hsk1_l4_02",
@@ -33,7 +90,47 @@
       "english": "Father / Dad",
       "part_of_speech": "noun",
       "example": "我爸爸是老师。",
-      "translation": "My father is a teacher."
+      "translation": "My father is a teacher.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "爸爸",
+          "options": [
+            "爸爸",
+            "妈妈",
+            "哥哥",
+            "姐姐"
+          ],
+          "option_pinyin": [
+            "bàba",
+            "māma",
+            "gēge",
+            "jiějie"
+          ],
+          "question_chinese": "我___是老师。",
+          "question_pinyin": "wǒ ___ shì lǎoshī.",
+          "question_english": "My father is a teacher."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "My father is a teacher'?",
+          "correct": "我爸爸是老师。",
+          "options": [
+            "我爸爸是老师。",
+            "我妈妈是老师。",
+            "我哥哥是老师。",
+            "我姐姐是老师。"
+          ],
+          "option_pinyin": [
+            "wǒ bàba shì lǎoshī.",
+            "wǒ māma shì lǎoshī.",
+            "wǒ gēge shì lǎoshī.",
+            "wǒ jiějie shì lǎoshī."
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ bàba shì lǎoshī."
     },
     {
       "id": "hsk1_l4_03",
@@ -46,7 +143,47 @@
       "english": "Mother / Mom",
       "part_of_speech": "noun",
       "example": "我妈妈很好。",
-      "translation": "My mom is great."
+      "translation": "My mom is great.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "妈妈",
+          "options": [
+            "妈妈",
+            "爸爸",
+            "姐姐",
+            "妹妹"
+          ],
+          "option_pinyin": [
+            "māma",
+            "bàba",
+            "jiějie",
+            "mèimei"
+          ],
+          "question_chinese": "我___很好。",
+          "question_pinyin": "wǒ ___ hěn hǎo.",
+          "question_english": "My mother is very well."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'mother'?",
+          "correct": "妈妈",
+          "options": [
+            "妈妈",
+            "爸爸",
+            "姐姐",
+            "妹妹"
+          ],
+          "option_pinyin": [
+            "māma",
+            "bàba",
+            "jiějie",
+            "mèimei"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ māma hěn hǎo."
     },
     {
       "id": "hsk1_l4_04",
@@ -59,7 +196,47 @@
       "english": "Son",
       "part_of_speech": "noun",
       "example": "他有儿子。",
-      "translation": "He has a son."
+      "translation": "He has a son.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "儿子",
+          "options": [
+            "儿子",
+            "女儿",
+            "哥哥",
+            "弟弟"
+          ],
+          "option_pinyin": [
+            "érzi",
+            "nǚ'ér",
+            "gēge",
+            "dìdi"
+          ],
+          "question_chinese": "他有___。",
+          "question_pinyin": "tā yǒu ___.",
+          "question_english": "He has a son."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'son'?",
+          "correct": "儿子",
+          "options": [
+            "儿子",
+            "女儿",
+            "哥哥",
+            "弟弟"
+          ],
+          "option_pinyin": [
+            "érzi",
+            "nǚ'ér",
+            "gēge",
+            "dìdi"
+          ]
+        }
+      ],
+      "example_pinyin": "tā yǒu érzi."
     },
     {
       "id": "hsk1_l4_05",
@@ -72,7 +249,47 @@
       "english": "Daughter",
       "part_of_speech": "noun",
       "example": "她有女儿。",
-      "translation": "She has a daughter."
+      "translation": "She has a daughter.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "女儿",
+          "options": [
+            "女儿",
+            "儿子",
+            "姐姐",
+            "妹妹"
+          ],
+          "option_pinyin": [
+            "nǚ'ér",
+            "érzi",
+            "jiějie",
+            "mèimei"
+          ],
+          "question_chinese": "她有___。",
+          "question_pinyin": "tā yǒu nǚ'ér.",
+          "question_english": "She has a daughter."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'daughter'?",
+          "correct": "女儿",
+          "options": [
+            "女儿",
+            "儿子",
+            "姐姐",
+            "妹妹"
+          ],
+          "option_pinyin": [
+            "nǚ'ér",
+            "érzi",
+            "jiějie",
+            "mèimei"
+          ]
+        }
+      ],
+      "example_pinyin": "tā yǒu nǚ'ér."
     },
     {
       "id": "hsk1_l4_06",
@@ -85,7 +302,47 @@
       "english": "Older brother",
       "part_of_speech": "noun",
       "example": "我有哥哥。",
-      "translation": "I have an older brother."
+      "translation": "I have an older brother.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "哥哥",
+          "options": [
+            "哥哥",
+            "弟弟",
+            "姐姐",
+            "妹妹"
+          ],
+          "option_pinyin": [
+            "gēge",
+            "dìdi",
+            "jiějie",
+            "mèimei"
+          ],
+          "question_chinese": "我有___。",
+          "question_pinyin": "wǒ yǒu gēgē.",
+          "question_english": "I have an older brother."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'older brother'?",
+          "correct": "哥哥",
+          "options": [
+            "哥哥",
+            "弟弟",
+            "姐姐",
+            "妹妹"
+          ],
+          "option_pinyin": [
+            "gēge",
+            "dìdi",
+            "jiějie",
+            "mèimei"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ yǒu gēgē."
     },
     {
       "id": "hsk1_l4_07",
@@ -98,7 +355,47 @@
       "english": "Older sister",
       "part_of_speech": "noun",
       "example": "我有姐姐。",
-      "translation": "I have an older sister."
+      "translation": "I have an older sister.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "姐姐",
+          "options": [
+            "姐姐",
+            "妹妹",
+            "哥哥",
+            "弟弟"
+          ],
+          "option_pinyin": [
+            "jiějie",
+            "mèimei",
+            "gēge",
+            "dìdi"
+          ],
+          "question_chinese": "我有___。",
+          "question_pinyin": "wǒ yǒu ___.",
+          "question_english": "I have an older sister."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'older sister'?",
+          "correct": "姐姐",
+          "options": [
+            "姐姐",
+            "妹妹",
+            "哥哥",
+            "弟弟"
+          ],
+          "option_pinyin": [
+            "jiějie",
+            "mèimei",
+            "gēge",
+            "dìdi"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ yǒu jiějie."
     },
     {
       "id": "hsk1_l4_08",
@@ -111,7 +408,47 @@
       "english": "Younger brother",
       "part_of_speech": "noun",
       "example": "他有弟弟。",
-      "translation": "He has a younger brother."
+      "translation": "He has a younger brother.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "弟弟",
+          "options": [
+            "弟弟",
+            "哥哥",
+            "妹妹",
+            "姐姐"
+          ],
+          "option_pinyin": [
+            "dìdi",
+            "gēge",
+            "mèimei",
+            "jiějie"
+          ],
+          "question_chinese": "他有___。",
+          "question_pinyin": "tā yǒu ___.",
+          "question_english": "He has a younger brother."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'younger brother'?",
+          "correct": "弟弟",
+          "options": [
+            "弟弟",
+            "哥哥",
+            "妹妹",
+            "姐姐"
+          ],
+          "option_pinyin": [
+            "dìdi",
+            "gēge",
+            "mèimei",
+            "jiějie"
+          ]
+        }
+      ],
+      "example_pinyin": "tā yǒu dìdi."
     },
     {
       "id": "hsk1_l4_09",
@@ -124,7 +461,47 @@
       "english": "Younger sister",
       "part_of_speech": "noun",
       "example": "我有妹妹。",
-      "translation": "I have a younger sister."
+      "translation": "I have a younger sister.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "妹妹",
+          "options": [
+            "妹妹",
+            "姐姐",
+            "弟弟",
+            "哥哥"
+          ],
+          "option_pinyin": [
+            "mèimei",
+            "jiějie",
+            "dìdi",
+            "gēge"
+          ],
+          "question_chinese": "我有___。",
+          "question_pinyin": "wǒ yǒu ___.",
+          "question_english": "I have a younger sister."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'younger sister'?",
+          "correct": "妹妹",
+          "options": [
+            "妹妹",
+            "姐姐",
+            "弟弟",
+            "哥哥"
+          ],
+          "option_pinyin": [
+            "mèimei",
+            "jiějie",
+            "dìdi",
+            "gēge"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ yǒu mèimei."
     },
     {
       "id": "hsk1_l4_10",
@@ -136,7 +513,47 @@
       "english": "To have",
       "part_of_speech": "verb",
       "example": "我有哥哥。",
-      "translation": "I have an older brother."
+      "translation": "I have an older brother.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "有",
+          "options": [
+            "有",
+            "是",
+            "在",
+            "没"
+          ],
+          "option_pinyin": [
+            "yǒu",
+            "shì",
+            "zài",
+            "méi"
+          ],
+          "question_chinese": "我___哥哥。",
+          "question_pinyin": "wǒ ___ gēgē.",
+          "question_english": "I have an older brother."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'I have two older sisters'?",
+          "correct": "我有两个姐姐。",
+          "options": [
+            "我有两个姐姐。",
+            "我是两个姐姐。",
+            "我在两个姐姐。",
+            "我没两个姐姐。"
+          ],
+          "option_pinyin": [
+            "wǒ yǒu liǎng gè jiějie.",
+            "wǒ shì liǎng gè jiějie.",
+            "wǒ zài liǎng gè jiějie.",
+            "wǒ méi liǎng gè jiějie."
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ yǒu gēgē."
     },
     {
       "id": "hsk1_l4_11",
@@ -149,7 +566,47 @@
       "english": "Don't have / There isn't",
       "part_of_speech": "verb",
       "example": "我没有哥哥。",
-      "translation": "I don't have an older brother."
+      "translation": "I don't have an older brother.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "没有",
+          "options": [
+            "没有",
+            "不是",
+            "不在",
+            "有"
+          ],
+          "option_pinyin": [
+            "méiyǒu",
+            "bú shì",
+            "bú zài",
+            "yǒu"
+          ],
+          "question_chinese": "我___哥哥。",
+          "question_pinyin": "wǒ ___ gēgē.",
+          "question_english": "I don't have an older brother."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'I don't have an older brother'?",
+          "correct": "我没有哥哥。",
+          "options": [
+            "我没有哥哥。",
+            "我有哥哥。",
+            "我不哥哥。",
+            "我是哥哥。"
+          ],
+          "option_pinyin": [
+            "wǒ méiyǒu gēge.",
+            "wǒ yǒu gēge.",
+            "wǒ bù gēge.",
+            "wǒ shì gēge."
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ méiyǒu gēgē."
     },
     {
       "id": "hsk1_l4_12",
@@ -161,7 +618,47 @@
       "english": "Two (with measure words)",
       "part_of_speech": "number",
       "example": "她有两个妹妹。",
-      "translation": "She has two younger sisters."
+      "translation": "She has two younger sisters.",
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "两",
+          "options": [
+            "两",
+            "一",
+            "三",
+            "四"
+          ],
+          "option_pinyin": [
+            "liǎng",
+            "yī",
+            "sān",
+            "sì"
+          ],
+          "question_chinese": "她有___个妹妹。",
+          "question_pinyin": "tā yǒu ___ ge mèimei.",
+          "question_english": "She has two younger sisters."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which means 'two younger sisters'?",
+          "correct": "两个妹妹",
+          "options": [
+            "两个妹妹",
+            "一个妹妹",
+            "三个妹妹",
+            "四个妹妹"
+          ],
+          "option_pinyin": [
+            "liǎng gè mèimei",
+            "yī gè mèimei",
+            "sān gè mèimei",
+            "sì gè mèimei"
+          ]
+        }
+      ],
+      "example_pinyin": "tā yǒu liǎng ge mèimei."
     },
     {
       "id": "hsk1_l4_p01",
@@ -345,6 +842,45 @@
           "answer": "有",
           "type": "concept"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "有",
+          "options": [
+            "有",
+            "是",
+            "在",
+            "没"
+          ],
+          "option_pinyin": [
+            "yǒu",
+            "shì",
+            "zài",
+            "méi"
+          ],
+          "question_chinese": "我___一个哥哥。",
+          "question_pinyin": "wǒ ___ yí gè gēge.",
+          "question_english": "I have an older brother."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 有?",
+          "correct": "我有一个妹妹。",
+          "options": [
+            "我有一个妹妹。",
+            "我是一个妹妹。",
+            "我在一个妹妹。",
+            "一个妹妹我是有。"
+          ],
+          "option_pinyin": [
+            "wǒ yǒu yí gè mèimei.",
+            "wǒ shì yí gè mèimei.",
+            "wǒ zài yí gè mèimei.",
+            "yí gè mèimei wǒ shì yǒu."
+          ]
+        }
       ]
     },
     {
@@ -384,6 +920,45 @@
           "answer": "No",
           "type": "concept"
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "没有",
+          "options": [
+            "没有",
+            "不是",
+            "有",
+            "不在"
+          ],
+          "option_pinyin": [
+            "méiyǒu",
+            "bú shì",
+            "yǒu",
+            "bú zài"
+          ],
+          "question_chinese": "我___妹妹。",
+          "question_pinyin": "wǒ ___ mèimei.",
+          "question_english": "I don't have a younger sister."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 没有?",
+          "correct": "我没有弟弟。",
+          "options": [
+            "我没有弟弟。",
+            "我不有弟弟。",
+            "我是没弟弟。",
+            "弟弟我没有是。"
+          ],
+          "option_pinyin": [
+            "wǒ méiyǒu dìdi.",
+            "wǒ bù yǒu dìdi.",
+            "wǒ shì méi dìdi.",
+            "dìdi wǒ méiyǒu shì."
+          ]
+        }
       ]
     },
     {
@@ -417,6 +992,45 @@
           "question": "What measure word is used for family members?",
           "answer": "口",
           "type": "concept"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "fill_blank",
+          "question": "Fill in the blank:",
+          "correct": "口",
+          "options": [
+            "口",
+            "个",
+            "只",
+            "本"
+          ],
+          "option_pinyin": [
+            "kǒu",
+            "gè",
+            "zhī",
+            "běn"
+          ],
+          "question_chinese": "我家有五___人。",
+          "question_pinyin": "wǒ jiā yǒu wǔ ___ rén.",
+          "question_english": "There are five people in my family."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which correctly says 'My family has five people'?",
+          "correct": "我家有五口人。",
+          "options": [
+            "我家有五口人。",
+            "我家有五个人。",
+            "我家有五只人。",
+            "我家有五本人。"
+          ],
+          "option_pinyin": [
+            "wǒ jiā yǒu wǔ kǒu rén.",
+            "wǒ jiā yǒu wǔ gè rén.",
+            "wǒ jiā yǒu wǔ zhī rén.",
+            "wǒ jiā yǒu wǔ běn rén."
+          ]
         }
       ]
     }
