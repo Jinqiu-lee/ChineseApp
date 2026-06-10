@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import { speakAsAvatar } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
 
@@ -10,12 +11,34 @@ const VG = {
   border: 'rgba(155,104,70,0.20)',
 };
 
-function SentencesSection({ sentences, avatarId = 'eileen', initialDone, onAllDone }) {
+function SentencesSection({ sentences, avatarId = 'eileen', initialDone, onAllDone, lessonId, levelId }) {
   const [isOpen,        setIsOpen]        = useState(false);
   const [showPinyin,    setShowPinyin]    = useState(false);
   const [visibleCount,  setVisibleCount]  = useState(1);
   const [flowDone]                        = useState(!!initialDone);
   const completionNotified                = useRef(!!initialDone);
+  const storageKey = lessonId ? `sentenceProgress_${levelId}_lesson_${lessonId}` : null;
+
+  // Load saved sentence progress on mount
+  useEffect(() => {
+    if (!storageKey || flowDone) return;
+    AsyncStorage.getItem(storageKey).then(val => {
+      if (val !== null) {
+        const saved = parseInt(val, 10);
+        if (!isNaN(saved) && saved > 1 && saved <= sentences.length) {
+          setVisibleCount(saved);
+        }
+      }
+    }).catch(() => {});
+  }, []);
+
+  const handleNext = () => {
+    const next = visibleCount + 1;
+    setVisibleCount(next);
+    if (storageKey) {
+      AsyncStorage.setItem(storageKey, String(next)).catch(() => {});
+    }
+  };
 
   useEffect(() => {
     if (!isOpen) return;
@@ -23,6 +46,7 @@ function SentencesSection({ sentences, avatarId = 'eileen', initialDone, onAllDo
     if (visibleCount < sentences.length) return;
     if (completionNotified.current) return;
     completionNotified.current = true;
+    if (storageKey) AsyncStorage.removeItem(storageKey).catch(() => {});
     if (onAllDone) onAllDone();
   }, [isOpen, visibleCount, sentences.length, flowDone, onAllDone]);
 
@@ -108,7 +132,7 @@ function SentencesSection({ sentences, avatarId = 'eileen', initialDone, onAllDo
                     {visibleCount < sentences.length ? (
                       <TouchableOpacity
                         style={styles.feedNextBtn}
-                        onPress={() => setVisibleCount(v => v + 1)}
+                        onPress={handleNext}
                       >
                         <Text style={styles.feedNextBtnText}>Next &rarr;</Text>
                       </TouchableOpacity>

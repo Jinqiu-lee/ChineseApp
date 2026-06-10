@@ -77,6 +77,8 @@ export default function VocabularySection({ vocabulary, showPinyin = true, avata
           avatarId={avatarId}
           initialDone={phrasesDone}
           onAllDone={onPhrasesDone}
+          lessonId={lessonId}
+          levelId={levelId}
         />
       )}
     </View>
@@ -118,19 +120,19 @@ function ReadOnlyWordsView({ words, showPinyin }) {
 function NewWordsSequential({ words, showPinyin, avatarId, lessonId, levelId, onComplete }) {
   const { width } = useWindowDimensions();
 
-  const isPersisted = levelId === 'hsk1';
-  const storageKey  = `wordProgress_lesson_${lessonId}`;
+  const isPersisted = !!lessonId;
+  const storageKey  = `wordProgress_${levelId}_lesson_${lessonId}`;
 
   // wordIdx: which word we're on. step: 0=WordCard, 1=MultipleChoice, 2=FillBlank, 3=Audio
   const [wordIdx, setWordIdx]         = useState(0);
   const [step, setStep]               = useState(0);
   const [done, setDone]               = useState(false);
-  // null = loading (hsk1) or no prompt; { completedCount } = show resume prompt
+  // null = loading or no prompt; { completedCount } = show resume prompt
   const [resumePrompt, setResumePrompt] = useState(isPersisted ? null : undefined);
 
   const slideAnim = useRef(new Animated.Value(0)).current;
 
-  // Load saved progress on mount (hsk1 only)
+  // Load saved progress on mount
   useEffect(() => {
     if (!isPersisted) return;
     AsyncStorage.getItem(storageKey).then(val => {
@@ -218,7 +220,7 @@ function NewWordsSequential({ words, showPinyin, avatarId, lessonId, levelId, on
     }
   }, [wordIdx, step, slideTransition]);
 
-  // ── Resume prompt (shown while null = loading, only for hsk1) ──────────────
+  // ── Resume prompt (shown while null = loading) ────────────────────────────
   if (resumePrompt === null) {
     // Still loading from AsyncStorage — render nothing briefly
     return null;
@@ -416,6 +418,8 @@ function MultipleChoicePanel({ word, onNext }) {
     shuffled.current = pairs;
   }
 
+  const optionsAreChinese = (ex?.options || []).some(o => /[一-鿿]/.test(o));
+
   const handleSelect = useCallback((opt) => {
     if (correct) return;
     if (flash !== null) return;
@@ -445,11 +449,13 @@ function MultipleChoicePanel({ word, onNext }) {
     <View style={styles.stepCard}>
       <View style={styles.mcqHeader}>
         <Text style={styles.stepTitle}>Multiple Choice</Text>
-        <TouchableOpacity onPress={() => setShowPinyin(v => !v)} activeOpacity={0.7}>
-          <Text style={styles.showPinyinToggle}>
-            {showPinyin ? 'Hide Pinyin' : 'Show Pinyin'}
-          </Text>
-        </TouchableOpacity>
+        {optionsAreChinese && (
+          <TouchableOpacity onPress={() => setShowPinyin(v => !v)} activeOpacity={0.7}>
+            <Text style={styles.showPinyinToggle}>
+              {showPinyin ? 'Hide Pinyin' : 'Show Pinyin'}
+            </Text>
+          </TouchableOpacity>
+        )}
       </View>
       <Text style={styles.stepQuestion}>{ex.question}</Text>
 
@@ -474,7 +480,7 @@ function MultipleChoicePanel({ word, onNext }) {
               activeOpacity={0.75}
             >
               <Text style={txtStyle}>{opt}</Text>
-              {showPinyin && pin ? <Text style={styles.optPinyin}>{pin}</Text> : null}
+              {optionsAreChinese && showPinyin && pin ? <Text style={styles.optPinyin}>{pin}</Text> : null}
             </TouchableOpacity>
           );
         })}
@@ -708,11 +714,33 @@ function CompletionCard({ words, showPinyin }) {
 // PhraseFeedSection — collapsible header + feed-style phrase reveal
 // ─────────────────────────────────────────────────────────────────────────────
 
-function PhraseFeedSection({ phrases, showPinyin, avatarId, initialDone, onAllDone }) {
+function PhraseFeedSection({ phrases, showPinyin, avatarId, initialDone, onAllDone, lessonId, levelId }) {
   const [isOpen, setIsOpen]             = useState(false);
   const [visibleCount, setVisibleCount] = useState(1);
   const [flowDone]                      = useState(!!initialDone);
   const completionNotified              = useRef(!!initialDone);
+  const storageKey = lessonId ? `phraseProgress_${levelId}_lesson_${lessonId}` : null;
+
+  // Load saved phrase progress on mount
+  useEffect(() => {
+    if (!storageKey || flowDone) return;
+    AsyncStorage.getItem(storageKey).then(val => {
+      if (val !== null) {
+        const saved = parseInt(val, 10);
+        if (!isNaN(saved) && saved > 1 && saved <= phrases.length) {
+          setVisibleCount(saved);
+        }
+      }
+    }).catch(() => {});
+  }, []);
+
+  const handleNext = () => {
+    const next = visibleCount + 1;
+    setVisibleCount(next);
+    if (storageKey) {
+      AsyncStorage.setItem(storageKey, String(next)).catch(() => {});
+    }
+  };
 
   useEffect(() => {
     if (!isOpen) return;
@@ -720,6 +748,7 @@ function PhraseFeedSection({ phrases, showPinyin, avatarId, initialDone, onAllDo
     if (visibleCount < phrases.length) return;
     if (completionNotified.current) return;
     completionNotified.current = true;
+    if (storageKey) AsyncStorage.removeItem(storageKey).catch(() => {});
     if (onAllDone) onAllDone();
   }, [isOpen, visibleCount, phrases.length, flowDone, onAllDone]);
 
@@ -793,7 +822,7 @@ function PhraseFeedSection({ phrases, showPinyin, avatarId, initialDone, onAllDo
                     {visibleCount < phrases.length ? (
                       <TouchableOpacity
                         style={styles.feedNextBtn}
-                        onPress={() => setVisibleCount(v => v + 1)}
+                        onPress={handleNext}
                       >
                         <Text style={styles.feedNextBtnText}>Next &rarr;</Text>
                       </TouchableOpacity>
@@ -1076,7 +1105,7 @@ const styles = StyleSheet.create({
 
   // Word card step
   wordCardCenter: { alignItems: 'center', gap: 8, paddingVertical: 8 },
-  wordCardChinese: { fontSize: 52, fontWeight: '900', color: DEEP_NAVY },
+  wordCardChinese: { fontSize: 48, fontWeight: '900', color: DEEP_NAVY },
   wordCardPinyin:  { fontSize: 20, fontWeight: '600', color: WARM_ORANGE, fontStyle: 'italic' },
   wordCardEnglish: { fontSize: 18, fontWeight: '600', color: DEEP_NAVY },
   posBadge: {

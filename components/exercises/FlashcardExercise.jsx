@@ -31,7 +31,7 @@ export default function FlashcardExercise({ exercise, onKnow, onDontKnow }) {
       >
         {!flipped ? (
           <View style={styles.face}>
-            <Text style={styles.chinese}>{vocabItem.chinese}</Text>
+            <Text style={styles.chineseFront}>{vocabItem.chinese}</Text>
             {showPinyin && vocabItem.pinyin ? (
               <Text style={styles.pinyinFront}>{vocabItem.pinyin}</Text>
             ) : null}
@@ -105,12 +105,13 @@ const styles = StyleSheet.create({
   },
   cardFlipped: { borderColor: 'rgba(90,158,90,0.5)' },
   face: { alignItems: 'center' },
-  chinese: { fontSize: 64, fontWeight: '900', color: VG.onCard, marginBottom: 10 },
+  chineseFront: { fontSize: 48, fontWeight: '900', color: VG.onCard, marginBottom: 10 },
+  chinese: { fontSize: 44, fontWeight: '900', color: VG.onCard, marginBottom: 10 },
   pinyinFront: { fontSize: 20, color: VG.orange, fontStyle: 'italic', marginBottom: 8 },
   englishFront: { fontSize: 18, fontWeight: '600', color: VG.creamMuted, textAlign: 'center', marginBottom: 6 },
   tapHint: { fontSize: 12, color: VG.onCardMuted, marginTop: 4 },
-  pinyin: { fontSize: 24, color: VG.orange, fontStyle: 'italic', marginBottom: 12 },
-  english: { fontSize: 22, fontWeight: '700', color: VG.onCard, textAlign: 'center' },
+  pinyin: { fontSize: 20, color: VG.orange, fontStyle: 'italic', marginBottom: 12 },
+  english: { fontSize: 18, fontWeight: '700', color: VG.onCard, textAlign: 'center' },
   pos: {
     fontSize: 13,
     color: VG.onCardMuted,

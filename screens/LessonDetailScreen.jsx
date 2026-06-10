@@ -481,6 +481,8 @@ export default function LessonDetailScreen({
                 avatarId={displayAvatarId}
                 phrasesDone={phrasesFlowDone}
                 onPhrasesDone={() => setPhrasesFlowDone(true)}
+                lessonId={lessonId}
+                levelId={levelId}
               />
             )}
             {lesson.key_sentences?.length > 0 && (
@@ -489,6 +491,8 @@ export default function LessonDetailScreen({
                 avatarId={displayAvatarId}
                 initialDone={sentencesFlowDone}
                 onAllDone={() => setSentencesFlowDone(true)}
+                lessonId={lessonId}
+                levelId={levelId}
               />
             )}
           </View>

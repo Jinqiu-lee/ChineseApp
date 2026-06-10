@@ -1083,9 +1083,9 @@ function extractIdiomItems(lessonData) {
     .filter(i => i?.chinese);
 }
 
-// Fix 4: unified sentence pool for Rounds 2 & 3.
-// Combines key_sentences + grammar examples + dialogue lines, deduplicated by Chinese string.
-// Dialogue lines are excluded from Round 1 (not yet studied when Stage 1-2 unlock).
+// Unified sentence pool for Rounds 2 & 3.
+// Combines key_sentences + grammar examples + dialogue lines + vocab example sentences,
+// deduplicated by Chinese string.
 function buildUnifiedSentPool(lessonData) {
   const keySents    = (lessonData.key_sentences || []).filter(s => s?.chinese);
   const gramSents   = extractGrammarSentences(lessonData);
@@ -1093,9 +1093,12 @@ function buildUnifiedSentPool(lessonData) {
     .flatMap(d => d.lines || [])
     .filter(l => l?.chinese)
     .map(l => ({ chinese: l.chinese, pinyin: l.pinyin || '', english: l.english || '' }));
+  const vocabExamples = (lessonData.vocabulary || [])
+    .filter(v => v.part_of_speech !== 'phrase' && v.example)
+    .map(v => ({ chinese: v.example, pinyin: v.example_pinyin || '', english: v.translation || '' }));
   const seen = new Set();
   const result = [];
-  for (const s of [...keySents, ...gramSents, ...dialogLines]) {
+  for (const s of [...keySents, ...gramSents, ...dialogLines, ...vocabExamples]) {
     if (s?.chinese && !seen.has(s.chinese)) { seen.add(s.chinese); result.push(s); }
   }
   return result;
@@ -1131,11 +1134,11 @@ function s(sentences, i) { return sentences[i % sentences.length]; }
 function p(pool, i) { return pool[i % pool.length]; }
 
 // ── Round 1 – Learn: recognition & introduction ──────────────────────────
-// Stage 1 & 2: vocabulary + images only (no sentences, no speaking)
-// Stage 3-5:   sentences + grammar sentences + vocabulary mixed
-function buildLearnRound(vocab, sentences, gramSentences, gramPoints, pool, L) {
-  // Fix 1: shuffle vocab and speak pool fresh each session
-  const sv = shuffle([...vocab]);
+// Stage 1 & 2: new words only (no phrases, no sentences, no speaking)
+// Stage 3-5:   new words + phrases + sentences + grammar sentences mixed
+function buildLearnRound(newWords, allWords, sentences, gramSentences, gramPoints, pool, L) {
+  const sv = shuffle([...newWords]);   // stages 1-2: new words only
+  const av = shuffle([...allWords]);   // stages 3-5: new words + phrases
   const sp = shuffle([...pool]);
   let spIdx = 0;
   const nextSp = () => sp[spIdx++ % sp.length];
@@ -1193,40 +1196,40 @@ function buildLearnRound(vocab, sentences, gramSentences, gramPoints, pool, L) {
     makeMatchPairs(shuffle([...sv])),
     makeMatchPairs(shuffle([...sv])),
   ];
-  // Stage 3: Build Sentences — sentences + grammar + vocab
+  // Stage 3: Build Sentences — sentences + grammar + new words + phrases
   const s3 = [
-    makeImageToWord(sv[3 % sv.length], sv, L, 1),
-    makeImageToWord(sv[4 % sv.length], sv, L, 1),
-    arrangeOrFallback(pickerS3.next(), 0, sv),
-    arrangeOrFallback(pickerS3.next(), 0, sv),
-    arrangeOrFallback(pickerS3.next(), 0, sv),
-    fillOrFallback(pickerS3.next(), 0, sv),
-    fillOrFallback(pickerS3.next(), 0, sv),
-    fillOrFallback(pickerS3.next(), 0, sv),
+    makeImageToWord(av[3 % av.length], av, L, 1),
+    makeImageToWord(av[4 % av.length], av, L, 1),
+    arrangeOrFallback(pickerS3.next(), 0, av),
+    arrangeOrFallback(pickerS3.next(), 0, av),
+    arrangeOrFallback(pickerS3.next(), 0, av),
+    fillOrFallback(pickerS3.next(), 0, av),
+    fillOrFallback(pickerS3.next(), 0, av),
+    fillOrFallback(pickerS3.next(), 0, av),
     makeSpeakTranslate(nextSp()),
     makeSpeakTranslate(nextSp()),
   ];
-  // Stage 4: Match & Review — match + listen-to-image + sentences + speak
+  // Stage 4: Match & Review — match + listen-to-image + sentences + speak (new words + phrases)
   const s4 = [
-    makeMatchPairs(shuffle([...sv])),
-    makeMatchPairs(shuffle([...sv])),
-    makeMatchPairs(shuffle([...sv])),
-    makeListenToImage(sv[6 % sv.length], sv, L, 0),
-    makeListenToImage(sv[7 % sv.length], sv, L, 0),
-    fillOrFallback(pickerS4.next(), 0, sv),
-    fillOrFallback(pickerS4.next(), 0, sv),
-    makeAudioChoice(sv[8 % sv.length], sv),
+    makeMatchPairs(shuffle([...av])),
+    makeMatchPairs(shuffle([...av])),
+    makeMatchPairs(shuffle([...av])),
+    makeListenToImage(av[6 % av.length], av, L, 0),
+    makeListenToImage(av[7 % av.length], av, L, 0),
+    fillOrFallback(pickerS4.next(), 0, av),
+    fillOrFallback(pickerS4.next(), 0, av),
+    makeAudioChoice(av[8 % av.length], av),
     makeSpeakRepeat(nextSp()),
     makeSpeakRepeat(nextSp()),
   ];
-  // Stage 5: Final Challenge — full mix with sentences + grammar
+  // Stage 5: Final Challenge — full mix with new words + phrases + sentences + grammar
   const s5 = [
-    makeImageToWord(sv[5 % sv.length], sv, L, 2),
-    makeImageToWord(sv[6 % sv.length], sv, L, 2),
-    makeAudioChoice(sv[9 % sv.length], sv),
-    fillOrFallback(pickerS5.next(), 0, sv),
-    arrangeOrFallback(pickerS5.next(), 0, sv),
-    makeMatchPairs(shuffle([...sv])),
+    makeImageToWord(av[5 % av.length], av, L, 2),
+    makeImageToWord(av[6 % av.length], av, L, 2),
+    makeAudioChoice(av[9 % av.length], av),
+    fillOrFallback(pickerS5.next(), 0, av),
+    arrangeOrFallback(pickerS5.next(), 0, av),
+    makeMatchPairs(shuffle([...av])),
     makeSpeakRepeat(nextSp()),
     makeSpeakRepeat(nextSp()),
     makeSpeakTranslate(nextSp()),
@@ -1397,41 +1400,44 @@ function buildMasteryRound(vocab, sentences, pool, respondOrFallback, L) {
 
 // ── Quiz Round – mixed types including pinyin, no flashcards ─────────────
 export function generateQuizRound(lessonData) {
-  const vocab     = lessonData.vocabulary || [];
-  const sentences = (lessonData.key_sentences || []).filter(s => s?.chinese);
-  const qaPairs   = extractQAPairs(lessonData);
-  const L         = lessonData.lesson || 5;
-  const hskLevel  = getHskLevel(lessonData);
-  const pool      = buildSpeakPool(vocab, sentences, hskLevel);
+  const allVocab   = lessonData.vocabulary || [];
+  const newWords   = allVocab.filter(v => v.part_of_speech !== 'phrase');
+  const phrases    = allVocab.filter(v => v.part_of_speech === 'phrase');
+  const allWords   = [...newWords, ...phrases];
+  const sentences  = (lessonData.key_sentences || []).filter(s => s?.chinese);
+  const qaPairs    = extractQAPairs(lessonData);
+  const L          = lessonData.lesson || 5;
+  const hskLevel   = getHskLevel(lessonData);
+  const pool       = buildSpeakPool(allWords, sentences, hskLevel);
 
   const respondOrFallback = (i) =>
     qaPairs.length > 0
       ? makeSpeakRespond(qaPairs[i % qaPairs.length], hskLevel)
       : makeSpeakRepeat(p(pool, i));
 
-  // Pick up to 3 pinyin exercises from the foundation pool
-  const pinyinPool = buildFoundationPinyinExercises(lessonData?.lesson);
+  // Pinyin exercises only for HSK1
+  const pinyinPool = hskLevel === 1 ? buildFoundationPinyinExercises(lessonData?.lesson) : [];
   const pinyinPick = pinyinPool.slice(0, 3);
 
   const raw = [
     // Audio listen-and-choose (3)
-    makeAudioChoice(v(vocab, 0), vocab),
-    makeAudioChoice(v(vocab, 4), vocab),
-    makeAudioChoice(v(vocab, 8), vocab),
+    makeAudioChoice(v(allWords, 0), allWords),
+    makeAudioChoice(v(allWords, 4), allWords),
+    makeAudioChoice(v(allWords, 8), allWords),
     // Fill in the blank (3)
-    fillOrFallback(s(sentences, 0), 0, vocab),
-    fillOrFallback(s(sentences, 2), 2, vocab),
-    fillOrFallback(s(sentences, 4), 4, vocab),
+    fillOrFallback(s(sentences, 0), 0, allWords),
+    fillOrFallback(s(sentences, 2), 2, allWords),
+    fillOrFallback(s(sentences, 4), 4, allWords),
     // Arrange / build sentence (3)
-    arrangeOrFallback(s(sentences, 1), 1, vocab),
-    arrangeOrFallback(s(sentences, 3), 3, vocab),
-    arrangeOrFallback(s(sentences, 5), 5, vocab),
+    arrangeOrFallback(s(sentences, 1), 1, allWords),
+    arrangeOrFallback(s(sentences, 3), 3, allWords),
+    arrangeOrFallback(s(sentences, 5), 5, allWords),
     // Match pairs (2)
-    makeMatchPairs(shuffle([...vocab]).slice(0, 4)),
-    makeMatchPairs(shuffle([...vocab]).slice(0, 4)),
+    makeMatchPairs(shuffle([...allWords]).slice(0, 4)),
+    makeMatchPairs(shuffle([...allWords]).slice(0, 4)),
     // Image exercises (2) — fall back to audio_choice if no images available
-    (function() { const r = makeImageToWord(v(vocab, 2), vocab, L, 0); return r.type === 'flashcard' ? makeAudioChoice(v(vocab, 2), vocab) : r; })(),
-    (function() { const r = makeWordToImage(v(vocab, 5), vocab, L, 1); return r.type === 'flashcard' ? makeAudioChoice(v(vocab, 5), vocab) : r; })(),
+    (function() { const r = makeImageToWord(v(allWords, 2), allWords, L, 0); return r.type === 'flashcard' ? makeAudioChoice(v(allWords, 2), allWords) : r; })(),
+    (function() { const r = makeWordToImage(v(allWords, 5), allWords, L, 1); return r.type === 'flashcard' ? makeAudioChoice(v(allWords, 5), allWords) : r; })(),
     // Speaking – repeat, translate, Q&A respond (3)
     makeSpeakRepeat(p(pool, 1)),
     makeSpeakTranslate(p(pool, 3)),
@@ -1445,23 +1451,27 @@ export function generateQuizRound(lessonData) {
 
 // ── Exports ───────────────────────────────────────────────────────────────
 export function generateRounds(lessonData) {
-  const vocab        = lessonData.vocabulary || [];
+  const allVocab     = lessonData.vocabulary || [];
+  const newWords     = allVocab.filter(v => v.part_of_speech !== 'phrase');
+  const phrases      = allVocab.filter(v => v.part_of_speech === 'phrase');
+  const allWords     = [...newWords, ...phrases];  // used in R1 s3-5, R2, R3
   const sentences    = (lessonData.key_sentences || []).filter(s => s?.chinese);
   const gramSentences = extractGrammarSentences(lessonData);
-  const gramPoints   = lessonData.grammar_points || [];   // Fix 2: passed to buildLearnRound
+  const gramPoints   = lessonData.grammar_points || [];
   const idiomItems   = extractIdiomItems(lessonData);
   const qaPairs      = extractQAPairs(lessonData);
   const L            = lessonData.lesson || 5;
   const hskLevel     = getHskLevel(lessonData);
 
-  const pool = buildSpeakPool(vocab, sentences, hskLevel);
+  // R1 speak pool uses only new words (stages 1-2 haven't introduced phrases yet)
+  const pool = buildSpeakPool(newWords, sentences, hskLevel);
 
-  // Fix 4: unified sentence pool for Rounds 2 & 3 (key + grammar + dialogue lines, deduped)
+  // R2 & R3 unified sentence pool: key + grammar + dialogue + vocab examples
   const unifiedSents = buildUnifiedSentPool(lessonData);
   const extSentences = unifiedSents.length > 0 ? unifiedSents : sentences;
-  const extPool      = buildSpeakPool([...vocab], [...sentences, ...gramSentences, ...idiomItems], hskLevel);
+  // R2 & R3 speak pool includes phrases and all sentence types
+  const extPool = buildSpeakPool([...allWords], [...sentences, ...gramSentences, ...idiomItems], hskLevel);
 
-  // Fix 1: shuffle Q&A pairs so respond exercises vary between sessions
   const shuffledQA = shuffle([...qaPairs]);
   const respondOrFallback = (i) =>
     shuffledQA.length > 0
@@ -1469,14 +1479,15 @@ export function generateRounds(lessonData) {
       : makeSpeakRepeat(p(extPool, i));
 
   const rounds = [
-    buildLearnRound(vocab, sentences, gramSentences, gramPoints, pool, L),  // Fix 2: pass gramPoints
-    buildPracticeRound(vocab, extSentences, extPool, respondOrFallback, L),
-    buildMasteryRound(vocab, extSentences, extPool, respondOrFallback, L),
+    // R1: stages 1-2 = new words only; stages 3-5 = new words + phrases + sentences
+    buildLearnRound(newWords, allWords, sentences, gramSentences, gramPoints, pool, L),
+    // R2 & R3: all words (new + phrases) + vocab examples + grammar + key sentences
+    buildPracticeRound(allWords, extSentences, extPool, respondOrFallback, L),
+    buildMasteryRound(allWords, extSentences, extPool, respondOrFallback, L),
   ];
 
-  // Inject pinyin exercises: 1 into stage 2 (Listen & Choose) + 1 into stage 5 (Final Challenge)
-  // of each round, cycling through the pinyin pool
-  const pinyinPool = buildFoundationPinyinExercises(lessonData?.lesson);
+  // Pinyin exercises are HSK1-only — other levels use Chinese characters, not pinyin focus
+  const pinyinPool = hskLevel === 1 ? buildFoundationPinyinExercises(lessonData?.lesson) : [];
   if (pinyinPool.length > 0) {
     let pIdx = 0;
     for (const round of rounds) {

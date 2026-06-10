@@ -154,8 +154,8 @@ function getNextGrammarStep(currentStep, point) {
 }
 
 function GrammarSequential({ grammarPoints, initialDone, lessonId, levelId, onAllDone }) {
-  const isPersisted = levelId === 'hsk1';
-  const storageKey  = `grammarProgress_lesson_${lessonId}`;
+  const isPersisted = !!lessonId;
+  const storageKey  = `grammarProgress_${levelId}_lesson_${lessonId}`;
 
   const [gramIdx, setGramIdx] = useState(0);
   const [step,    setStep]    = useState(0);
@@ -165,7 +165,7 @@ function GrammarSequential({ grammarPoints, initialDone, lessonId, levelId, onAl
     initialDone ? undefined : (isPersisted ? null : undefined)
   );
 
-  // Load saved grammar progress on mount (hsk1 only, skip if already done)
+  // Load saved grammar progress on mount (skip if already done)
   useEffect(() => {
     if (!isPersisted || initialDone) return;
     AsyncStorage.getItem(storageKey).then(val => {
@@ -517,6 +517,8 @@ function GrammarMCQPanel({ point, onNext }) {
     shuffled.current = pairs;
   }
 
+  const optionsAreChinese = (ex?.options || []).some(o => /[一-鿿]/.test(o));
+
   const handleSelect = useCallback((opt) => {
     if (correct || flash !== null) return;
     if (opt === ex.correct) {
@@ -545,11 +547,13 @@ function GrammarMCQPanel({ point, onNext }) {
     <View style={styles.seqCard}>
       <View style={styles.seqCardHeader}>
         <Text style={styles.stepTypeLabel}>Multiple Choice</Text>
-        <TouchableOpacity onPress={() => setShowPinyin(v => !v)} activeOpacity={0.7}>
-          <Text style={styles.showPinyinToggle}>
-            {showPinyin ? 'Hide Pinyin' : 'Show Pinyin'}
-          </Text>
-        </TouchableOpacity>
+        {optionsAreChinese && (
+          <TouchableOpacity onPress={() => setShowPinyin(v => !v)} activeOpacity={0.7}>
+            <Text style={styles.showPinyinToggle}>
+              {showPinyin ? 'Hide Pinyin' : 'Show Pinyin'}
+            </Text>
+          </TouchableOpacity>
+        )}
       </View>
       <View style={styles.seqCardContent}>
         <Text style={styles.exerciseQuestion}>{ex.question}</Text>
@@ -575,7 +579,7 @@ function GrammarMCQPanel({ point, onNext }) {
                 activeOpacity={0.75}
               >
                 <Text style={txtStyle}>{opt}</Text>
-                {showPinyin && pin ? <Text style={styles.optPinyin}>{pin}</Text> : null}
+                {optionsAreChinese && showPinyin && pin ? <Text style={styles.optPinyin}>{pin}</Text> : null}
               </TouchableOpacity>
             );
           })}
