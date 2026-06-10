@@ -997,6 +997,11 @@
           "chinese": "我们去买衣服吧！",
           "pinyin": "Wǒ men qù mǎi yī fu ba!",
           "english": "Let's go buy clothes!"
+        },
+        {
+          "chinese": "你是老师吧？",
+          "pinyin": "Nǐ shì lǎo shī ba?",
+          "english": "You're a teacher, right ?"
         }
       ],
       "exercises": [
@@ -1014,9 +1019,9 @@
         {
           "question": "Which sentence uses 吧 as a suggestion?",
           "type": "multiple_choice",
-          "correct": "我们去买吧。",
+          "correct": "我们去买吧！",
           "options": [
-            "我们去买吧。",
+            "我们去买吧！",
             "我们去买了。",
             "我们去买吗？",
             "我们去买的。"
@@ -1024,7 +1029,7 @@
           "correct_pinyin": "Wǒ men qù mǎi ba."
         },
         {
-          "question": "Fill in: 这件颜色好看，你买___。(This colour is nice; you should buy it.)",
+          "question": "Fill in: 这件颜色好看，你买___！(This colour is nice; you should buy it.)",
           "type": "multiple_choice",
           "correct": "吧",
           "options": [
@@ -1043,12 +1048,12 @@
         {
           "question": "Which phrase means 'wear this one'?",
           "type": "multiple_choice",
-          "correct": "穿这件吧",
+          "correct": "穿这件吧！",
           "options": [
-            "穿这件吧",
-            "买这件吧",
-            "卖这件吧",
-            "送这件吧"
+            "穿这件吧！",
+            "买这件吧！",
+            "卖这件吧！",
+            "送这件吧！"
           ],
           "option_pinyin": [
             "chuān zhè jiàn ba",
@@ -1099,9 +1104,9 @@
         {
           "type": "multiple_choice",
           "question": "Which sentence uses 吧 as a suggestion?",
-          "correct": "穿这件吧。",
+          "correct": "穿这件吧！",
           "options": [
-            "穿这件吧。",
+            "穿这件吧！",
             "穿这件了。",
             "穿这件呢？",
             "穿这件吗？"
@@ -1144,7 +1149,7 @@
           ]
         },
         {
-          "question": "Which sentence correctly uses 一下?",
+          "question": "Which sentence is correct?",
           "type": "multiple_choice",
           "correct": "请等一下。",
           "options": [

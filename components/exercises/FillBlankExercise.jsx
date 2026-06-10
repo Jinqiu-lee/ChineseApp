@@ -120,8 +120,8 @@ const styles = StyleSheet.create({
   choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.success, minWidth: '42%', alignItems: 'center' },
   choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.error, minWidth: '42%', alignItems: 'center' },
   choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.10)', minWidth: '42%', alignItems: 'center' },
-  choiceText: { fontSize: 20, fontWeight: '800', color: VG.cream },
-  choiceTextLong: { fontSize: 15, fontWeight: '600' },
+  choiceText: { fontSize: 22, fontWeight: '800', color: VG.cream },
+  choiceTextLong: { fontSize: 17, fontWeight: '600' },
   choicePinyin: { fontSize: 12, color: VG.gold, fontStyle: 'italic', marginTop: 4 },
   continueBtn: {
     marginTop: 16, backgroundColor: DEEP_NAVY, borderRadius: 14,

@@ -1015,16 +1015,16 @@
           ]
         },
         {
-          "question": "Which sentence correctly uses 虽然...但是...?",
+          "question": "Which sentence is correct?",
           "type": "multiple_choice",
-          "correct": "虽然他忙，但是他还是来了。",
+          "correct": "虽然忙，但是他还是来了。",
           "options": [
-            "虽然他忙，但是他还是来了。",
-            "因为他忙，但是他来了。",
-            "虽然他忙，所以他来了。",
-            "虽然他忙，他来了。"
+            "虽然忙，但是他还是来了。",
+            "因为忙，但是他来了。",
+            "虽然忙，所以他来了。",
+            "虽然忙，他来了。"
           ],
-          "correct_pinyin": "Suī rán tā máng, dàn shì tā hái shì lái le."
+          "correct_pinyin": "Suī rán máng, dàn shì tā hái shì lái le."
         },
         {
           "question": "Fill in: ___这道菜好吃，___我已经饱了。",
@@ -1095,19 +1095,19 @@
         },
         {
           "type": "multiple_choice",
-          "question": "Which sentence correctly uses 虽然...但是...?",
-          "correct": "虽然他忙，但是他来了。",
+          "question": "Which sentence is correct?",
+          "correct": "虽然忙，但是他还是来了。",
           "options": [
-            "虽然他忙，但是他来了。",
-            "因为他忙，但是他来了。",
-            "虽然他忙，所以他来了。",
-            "虽然他忙，他来了。"
+            "虽然忙，但是他还是来了。",
+            "因为忙，但是他来了。",
+            "虽然忙，所以他来了。",
+            "虽然忙，他没有来。"
           ],
           "option_pinyin": [
-            "suī rán tā máng, dàn shì tā lái le.",
-            "yīn wèi tā máng, dàn shì tā lái le.",
-            "suī rán tā máng, suǒ yǐ tā lái le.",
-            "suī rán tā máng, tā lái le."
+            "suī rán máng, dàn shì tā hái shì lái le.",
+            "yīn wèi máng, dàn shì tā lái le.",
+            "suī rán máng, suǒ yǐ tā lái le.",
+            "suī rán máng, tā méi yǒu lái."
           ]
         }
       ]
@@ -1118,9 +1118,9 @@
       "explanation": "因为(yīn wèi) means 'because' and 所以(suǒ yǐ) means 'therefore / so'. They pair together to express cause and effect. Structure: 因为(yīn wèi) + Cause, 所以(suǒ yǐ) + Result. Either part can be used alone in context, but together they make the logic very clear.",
       "examples": [
         {
-          "chinese": "因为天气太热，所以我不想吃饭。",
-          "pinyin": "Yīn wèi tiān qì tài rè, suǒ yǐ wǒ bù xiǎng chī fàn.",
-          "english": "Because the weather is too hot, I don't want to eat."
+          "chinese": "因为天气太热，所以我不想出去。",
+          "pinyin": "Yīn wèi tiān qì tài rè, suǒ yǐ wǒ bù xiǎng chū qù.",
+          "english": "Because the weather is too hot, I don't want to go out."
         },
         {
           "chinese": "因为他已经饱了，所以不再吃了。",
@@ -1141,7 +1141,7 @@
           ]
         },
         {
-          "question": "Which sentence correctly uses 因为...所以...?",
+          "question": "Which sentence is correct?",
           "type": "multiple_choice",
           "correct": "因为好吃，所以我多吃了一碗。",
           "options": [
@@ -1221,7 +1221,7 @@
         },
         {
           "type": "multiple_choice",
-          "question": "Which sentence correctly uses 因为...所以...?",
+          "question": "Which sentence is correct?",
           "correct": "因为好吃，所以我多吃了一碗。",
           "options": [
             "因为好吃，所以我多吃了一碗。",
@@ -1252,6 +1252,11 @@
           "chinese": "为什么不吃了？",
           "pinyin": "Wèi shén me bù chī le?",
           "english": "Why don't you eat anymore?"
+        },
+        {
+          "chinese": "下雨了！",
+          "pinyin": "Xià yǔ le!",
+          "english": "It's raining!"
         }
       ],
       "exercises": [
@@ -1278,7 +1283,7 @@
           ]
         },
         {
-          "question": "Which sentence uses 了 to mark a change of state?",
+          "question": "Which sentence is correctly use '了' as a change of state?",
           "type": "multiple_choice",
           "correct": "天气热了。",
           "options": [
@@ -1344,7 +1349,7 @@
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: I'm full now (change of state).",
+          "question": "Fill in: I'm full now.",
           "correct": "了",
           "options": [
             "了",
@@ -1364,7 +1369,7 @@
         },
         {
           "type": "multiple_choice",
-          "question": "Which sentence uses 了 to mark a change of state?",
+          "question": "Which sentence is correct?",
           "correct": "天气热了。",
           "options": [
             "天气热了。",

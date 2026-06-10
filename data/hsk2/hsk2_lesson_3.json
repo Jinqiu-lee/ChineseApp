@@ -998,11 +998,16 @@
           "chinese": "大的给他，小的给我。",
           "pinyin": "Dà de gěi tā, xiǎo de gěi wǒ.",
           "english": "Give him the big one; give me the small one."
+        },
+        {
+          "chinese": "请从旁边的门进来。",
+          "pinyin": "Qǐng cóng páng biān de mén jìn lái.",
+          "english": "Please enter(inside) through the door next to it."
         }
       ],
       "exercises": [
         {
-          "question": "What does 红色的 mean when used as a noun phrase?",
+          "question": "What does 红色的 mean ?",
           "type": "multiple_choice",
           "correct": "The red one",
           "options": [
@@ -1013,7 +1018,7 @@
           ]
         },
         {
-          "question": "Which sentence uses the '的' nominal phrase correctly?",
+          "question": "Which sentence is correct?",
           "type": "multiple_choice",
           "correct": "白色的是我的。",
           "options": [
@@ -1094,18 +1099,18 @@
         {
           "type": "multiple_choice",
           "question": "Which phrase means 'the white one on the right'?",
-          "correct": "右边的白色",
+          "correct": "右边的白色那个",
           "options": [
-            "右边的白色",
-            "左边的黑色",
-            "旁边的红色",
-            "左边的白色"
+            "右边的白色那个",
+            "左边的黑色那个",
+            "旁边的红色那个",
+            "左边的白色那个"
           ],
           "option_pinyin": [
-            "yòu bian de bái sè",
-            "zuǒ bian de hēi sè",
-            "páng biān de hóng sè",
-            "zuǒ bian de bái sè"
+            "yòu bian de bái sè nà ge",
+            "zuǒ bian de hēi sè nà ge",
+            "páng biān de hóng sè nà ge",
+            "zuǒ bian de bái sè nà ge"
           ]
         }
       ]
@@ -1124,15 +1129,20 @@
           "chinese": "他站着等我。",
           "pinyin": "Tā zhàn zhe děng wǒ.",
           "english": "He is standing waiting for me."
+        },
+        {
+          "chinese": "他坐着看书。",
+          "pinyin": "Tā zuò zhe kàn shū.",
+          "english": "He is sitting(there) reading."
         }
       ],
       "exercises": [
         {
           "question": "What does 着 (zhe) indicate after a verb?",
           "type": "multiple_choice",
-          "correct": "An ongoing state or manner",
+          "correct": "An ongoing state or manner(e.g. 站着 = standing)",
           "options": [
-            "An ongoing state or manner",
+            "An ongoing state or manner(e.g. 站着 = standing)",
             "A completed action",
             "A future action",
             "A past repeated action"
@@ -1189,9 +1199,9 @@
         {
           "type": "multiple_choice",
           "question": "What does 着 indicate after a verb?",
-          "correct": "An ongoing state or action (continuous/static)",
+          "correct": "An ongoing state or action (e.g. 站着 = standing)",
           "options": [
-            "An ongoing state or action (continuous/static)",
+            "An ongoing state or action (e.g. 站着 = standing)",
             "A completed action",
             "A future action",
             "A negative action"
@@ -1205,7 +1215,7 @@
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: The door is open (ongoing state).",
+          "question": "Fill in: The door is open.",
           "correct": "着",
           "options": [
             "着",
@@ -1225,7 +1235,7 @@
         },
         {
           "type": "multiple_choice",
-          "question": "Which sentence shows an ongoing state?",
+          "question": "Which sentence is correct?",
           "correct": "门开着，请进来。",
           "options": [
             "门开着，请进来。",
@@ -1245,7 +1255,7 @@
     {
       "number": 3,
       "title": "名词谓语句 — Nominal Predicate Sentence",
-      "explanation": "In Chinese, a noun or noun phrase can directly serve as the predicate of a sentence without a verb like 是(shì). This is mainly used for time, age, price, or other measurable facts. Structure: Subject + Noun Phrase (as predicate). Example: 今天(jīn tiān)星期(xīngqī)三(sān)。(Today is Wednesday.) Note: 是(shì) is NOT used in these sentences.",
+      "explanation": "In Chinese, a noun or noun phrase can directly serve as the predicate of a sentence without a verb like 是(shì). Positive: Mainly used for time, age, price, country or measurable facts. 否定(Negative): Add 不是 to negate the sentence. Structure: Subject + Noun Phrase (as predicate). Structure: Subject + 不是 + Noun Phrase.",
       "examples": [
         {
           "chinese": "今天星期三。",
@@ -1256,11 +1266,16 @@
           "chinese": "这件衣服一百块钱。",
           "pinyin": "Zhè jiàn yī fu yì bǎi kuài qián.",
           "english": "This item of clothing is 100 yuan."
+        },
+        {
+          "chinese": "她今年不是二十岁",
+          "pinyin": "Tā jīnnián búshì èrshí suì.",
+          "english": "She is not 20 years old."
         }
       ],
       "exercises": [
         {
-          "question": "Which sentence is a correct nominal predicate sentence?",
+          "question": "Which sentence is correct?",
           "type": "multiple_choice",
           "correct": "今天星期一。",
           "options": [
@@ -1272,15 +1287,16 @@
           "correct_pinyin": "Jīn tiān xīng qī yī."
         },
         {
-          "question": "What is mainly expressed with nominal predicate sentences?",
+          "question": "Which negative sentence is correct?",
           "type": "multiple_choice",
-          "correct": "Time, age, price, or measurable facts",
+          "correct": "今天不是星期天。",
           "options": [
-            "Time, age, price, or measurable facts",
-            "Actions and movements",
-            "Feelings and emotions",
-            "Questions"
-          ]
+            "今天没有星期天。",
+            "今天不是星期天。",
+            "今天星期天不是。",
+            "今天不星期天。"
+          ],
+          "correct_pinyin": "Jīn tiān búshì xīng qī tiān."
         },
         {
           "question": "Fill in: 他___三十岁。(He is thirty years old.) — Which word is NOT needed?",
@@ -1311,42 +1327,6 @@
           ]
         },
         {
-          "question": "How do you say 'give the small one to me'?",
-          "type": "multiple_choice",
-          "correct": "小的给我",
-          "options": [
-            "小的给我",
-            "大的给我",
-            "小的给他",
-            "红的给我"
-          ],
-          "option_pinyin": [
-            "xiǎo de gěi wǒ",
-            "dà de gěi wǒ",
-            "xiǎo de gěi tā",
-            "hóng de gěi wǒ"
-          ]
-        }
-      ],
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "What is a nominal predicate in Chinese?",
-          "correct": "Using a noun/noun phrase directly as the predicate (no 是 needed)",
-          "options": [
-            "Using a noun/noun phrase directly as the predicate (no 是 needed)",
-            "Using 是 with every noun",
-            "Putting the noun at the end",
-            "Adding 的 after every noun"
-          ],
-          "option_pinyin": [
-            "noun as predicate",
-            "shì+noun",
-            "noun at end",
-            "noun+de"
-          ]
-        },
-        {
           "type": "fill_blank",
           "question": "Fill in: What colour is it? (using 颜色)",
           "correct": "颜色",
@@ -1367,8 +1347,45 @@
           "question_english": "What colour is this item of clothing?"
         },
         {
+          "question": "How do you say 'give the small one to me'?",
           "type": "multiple_choice",
-          "question": "Which sentence uses a nominal predicate correctly?",
+          "correct": "小的给我",
+          "options": [
+            "小的给我",
+            "大的给我",
+            "小的给他",
+            "红的给我"
+          ],
+          "option_pinyin": [
+            "xiǎo de gěi wǒ",
+            "dà de gěi wǒ",
+            "xiǎo de gěi tā",
+            "hóng de gěi wǒ"
+          ]
+        }
+      ],
+      "mini_exercises": [
+        {
+          "question": "Which negative sentence is correct?",
+          "type": "multiple_choice",
+          "correct": "今天不是星期天。",
+          "options": [
+            "今天没有星期天。",
+            "今天不是星期天。",
+            "今天星期天不是。",
+            "今天不星期天。"
+          ],
+          "option_pinyin": [
+            "Jīn tiān méi yǒu xīng qī tiān.",
+            "Jīn tiān búshì xīng qī tiān.",
+            "Jīn tiān xīng qī tiān búshì.",
+            "Jīn tiān bù xīng qī tiān"
+          ],
+          "correct_pinyin": "Jīn tiān búshì xīng qī tiān."
+        }, 
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence is correct?",
           "correct": "今天星期三。",
           "options": [
             "今天星期三。",
@@ -1509,7 +1526,7 @@
       ]
     },
     {
-      "question": "Which sentence is a nominal predicate sentence?",
+      "question": "Which sentence is correct?",
       "type": "multiple_choice",
       "correct": "今天星期三。",
       "options": [

@@ -7,6 +7,7 @@ import {
   Animated,
   useWindowDimensions,
   ScrollView,
+  Modal,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { speakAsAvatar } from '../utils/tts';
@@ -49,7 +50,7 @@ export default function VocabularySection({ vocabulary, showPinyin = true, avata
     <View style={styles.container}>
       {words.length > 0 && (
         wordsDone && hasExercises ? (
-          <ReadOnlyWordsView words={words} showPinyin={showPinyin} />
+          <ReadOnlyWordsView words={words} showPinyin={showPinyin} avatarId={avatarId} />
         ) : hasExercises ? (
           <NewWordsSequential
             words={words}
@@ -89,11 +90,18 @@ export default function VocabularySection({ vocabulary, showPinyin = true, avata
 // ReadOnlyWordsView — shown when New Words section was already completed
 // ─────────────────────────────────────────────────────────────────────────────
 
-function ReadOnlyWordsView({ words, showPinyin }) {
+function ReadOnlyWordsView({ words, showPinyin, avatarId }) {
+  const [selectedWord, setSelectedWord] = useState(null);
+
   return (
     <View style={styles.readOnlyList}>
       {words.map((w, i) => (
-        <View key={w.id ?? i} style={styles.readOnlyRow}>
+        <TouchableOpacity
+          key={w.id ?? i}
+          style={styles.readOnlyRow}
+          onPress={() => setSelectedWord(w)}
+          activeOpacity={0.7}
+        >
           <Text style={styles.readOnlyChinese}>{w.chinese}</Text>
           <View style={styles.readOnlyMid}>
             {showPinyin && w.pinyin ? (
@@ -107,8 +115,59 @@ function ReadOnlyWordsView({ words, showPinyin }) {
             </View>
           ) : null}
           <Text style={styles.readOnlyCheck}>&#x2713;</Text>
-        </View>
+        </TouchableOpacity>
       ))}
+
+      <Modal
+        visible={!!selectedWord}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setSelectedWord(null)}
+      >
+        <View style={styles.reviewOverlay}>
+          <View style={styles.reviewCard}>
+            {selectedWord && (
+              <>
+                <TouchableOpacity
+                  style={styles.reviewClose}
+                  onPress={() => setSelectedWord(null)}
+                  hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+                >
+                  <Text style={styles.reviewCloseText}>✕</Text>
+                </TouchableOpacity>
+
+                <Text style={styles.reviewChinese}>{selectedWord.chinese}</Text>
+                {selectedWord.pinyin ? (
+                  <Text style={styles.reviewPinyin}>{selectedWord.pinyin}</Text>
+                ) : null}
+                <Text style={styles.reviewEnglish}>{selectedWord.english}</Text>
+                {selectedWord.part_of_speech ? (
+                  <View style={styles.reviewPosBadge}>
+                    <Text style={styles.reviewPosBadgeText}>{selectedWord.part_of_speech}</Text>
+                  </View>
+                ) : null}
+
+                <TouchableOpacity
+                  style={styles.reviewAudioBtn}
+                  onPress={() => speakAsAvatar(selectedWord.chinese, avatarId, selectedWord.pinyin)}
+                  activeOpacity={0.8}
+                >
+                  <Text style={styles.reviewAudioBtnText}>🔊 Play Audio</Text>
+                </TouchableOpacity>
+
+                {selectedWord.example ? (
+                  <View style={styles.reviewExampleBox}>
+                    <Text style={styles.reviewExampleChinese}>{selectedWord.example}</Text>
+                    {selectedWord.translation ? (
+                      <Text style={styles.reviewExampleEnglish}>{selectedWord.translation}</Text>
+                    ) : null}
+                  </View>
+                ) : null}
+              </>
+            )}
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 }
@@ -264,7 +323,7 @@ function NewWordsSequential({ words, showPinyin, avatarId, lessonId, levelId, on
   }
 
   if (done) {
-    return <CompletionCard words={words} showPinyin={showPinyin} />;
+    return <CompletionCard words={words} showPinyin={showPinyin} avatarId={avatarId} />;
   }
 
   if (!currentWord) return null;
@@ -363,7 +422,7 @@ function WordCardPanel({ word, showPinyin, avatarId, onNext }) {
         ) : null}
         <TouchableOpacity
           style={styles.playBtn}
-          onPress={() => speakAsAvatar(word.chinese, avatarId)}
+          onPress={() => speakAsAvatar(word.chinese, avatarId, word.pinyin)}
         >
           <Text style={styles.audioEmoji}>&#x1F50A;</Text>
           <Text style={styles.playBtnText}>Play</Text>
@@ -564,13 +623,13 @@ function VocabFillBlankPanel({ word, onNext }) {
       <View style={styles.optionsCol}>
         {(shuffled.current || []).map(({ opt, pin }, i) => {
           let btnStyle = styles.optBtn;
-          let txtStyle = styles.optBtnText;
+          let txtStyle = styles.fbOptBtnText;
           if (correct && opt === ex.correct) {
             btnStyle = styles.optBtnCorrect;
-            txtStyle = [styles.optBtnText, { color: SUCCESS }];
+            txtStyle = [styles.fbOptBtnText, { color: SUCCESS }];
           } else if (flash === opt) {
             btnStyle = styles.optBtnWrong;
-            txtStyle = [styles.optBtnText, { color: ERROR }];
+            txtStyle = [styles.fbOptBtnText, { color: ERROR }];
           } else if (correct && opt !== ex.correct) {
             btnStyle = styles.optBtnDimmed;
           }
@@ -616,7 +675,7 @@ function AudioExercisePanel({ word, words, avatarId, onNext }) {
 
   useEffect(() => {
     const t = setTimeout(() => {
-      speakAsAvatar(word.chinese, avatarId);
+      speakAsAvatar(word.chinese, avatarId, word.pinyin);
     }, 300);
     return () => clearTimeout(t);
   }, [word.chinese, avatarId]);
@@ -646,7 +705,7 @@ function AudioExercisePanel({ word, words, avatarId, onNext }) {
       <View style={styles.audioCenter}>
         <TouchableOpacity
           style={styles.bigPlayBtn}
-          onPress={() => speakAsAvatar(word.chinese, avatarId)}
+          onPress={() => speakAsAvatar(word.chinese, avatarId, word.pinyin)}
         >
           <Text style={styles.bigPlayEmoji}>&#x1F50A;</Text>
         </TouchableOpacity>
@@ -686,7 +745,9 @@ function AudioExercisePanel({ word, words, avatarId, onNext }) {
 // CompletionCard — shown after all words are studied
 // ─────────────────────────────────────────────────────────────────────────────
 
-function CompletionCard({ words, showPinyin }) {
+function CompletionCard({ words, showPinyin, avatarId }) {
+  const [selectedWord, setSelectedWord] = useState(null);
+
   return (
     <View style={styles.completionCard}>
       <Text style={styles.completionEmoji}>&#x1F389;</Text>
@@ -697,15 +758,73 @@ function CompletionCard({ words, showPinyin }) {
 
       <ScrollView style={styles.summaryScroll} showsVerticalScrollIndicator={false}>
         {words.map((w, i) => (
-          <View key={w.id ?? i} style={styles.summaryRow}>
+          <TouchableOpacity
+            key={w.id ?? i}
+            style={styles.summaryRow}
+            onPress={() => setSelectedWord(w)}
+            activeOpacity={0.7}
+          >
             <Text style={styles.summaryChinese}>{w.chinese}</Text>
             {showPinyin && w.pinyin ? (
               <Text style={styles.summaryPinyin}>{w.pinyin}</Text>
             ) : null}
             <Text style={styles.summaryEnglish}>{w.english}</Text>
-          </View>
+            <Text style={styles.summaryTapHint}>›</Text>
+          </TouchableOpacity>
         ))}
       </ScrollView>
+
+      {/* Word review modal */}
+      <Modal
+        visible={!!selectedWord}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setSelectedWord(null)}
+      >
+        <View style={styles.reviewOverlay}>
+          <View style={styles.reviewCard}>
+            {selectedWord && (
+              <>
+                <TouchableOpacity
+                  style={styles.reviewClose}
+                  onPress={() => setSelectedWord(null)}
+                  hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
+                >
+                  <Text style={styles.reviewCloseText}>✕</Text>
+                </TouchableOpacity>
+
+                <Text style={styles.reviewChinese}>{selectedWord.chinese}</Text>
+                {selectedWord.pinyin ? (
+                  <Text style={styles.reviewPinyin}>{selectedWord.pinyin}</Text>
+                ) : null}
+                <Text style={styles.reviewEnglish}>{selectedWord.english}</Text>
+                {selectedWord.part_of_speech ? (
+                  <View style={styles.reviewPosBadge}>
+                    <Text style={styles.reviewPosBadgeText}>{selectedWord.part_of_speech}</Text>
+                  </View>
+                ) : null}
+
+                <TouchableOpacity
+                  style={styles.reviewAudioBtn}
+                  onPress={() => speakAsAvatar(selectedWord.chinese, avatarId, selectedWord.pinyin)}
+                  activeOpacity={0.8}
+                >
+                  <Text style={styles.reviewAudioBtnText}>🔊 Play Audio</Text>
+                </TouchableOpacity>
+
+                {selectedWord.example ? (
+                  <View style={styles.reviewExampleBox}>
+                    <Text style={styles.reviewExampleChinese}>{selectedWord.example}</Text>
+                    {selectedWord.translation ? (
+                      <Text style={styles.reviewExampleEnglish}>{selectedWord.translation}</Text>
+                    ) : null}
+                  </View>
+                ) : null}
+              </>
+            )}
+          </View>
+        </View>
+      </Modal>
     </View>
   );
 }
@@ -1013,7 +1132,7 @@ const styles = StyleSheet.create({
   dot:          { width: 10, height: 10, borderRadius: 5 },
   dotFilled:    { backgroundColor: WARM_ORANGE },
   dotEmpty:     { backgroundColor: 'rgba(155,104,70,0.22)' },
-  progressLabel: { fontSize: 12, fontWeight: '600', color: SLATE_TEAL },
+  progressLabel: { fontSize: 12, fontWeight: '700', color: WARM_ORANGE },
 
   // ── Resume prompt ──────────────────────────────────────────────────────────
   resumeCard: {
@@ -1185,6 +1304,11 @@ const styles = StyleSheet.create({
     borderColor: ERROR,
   },
   optBtnText: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: DEEP_NAVY,
+  },
+  fbOptBtnText: {
     fontSize: 17,
     fontWeight: '600',
     color: DEEP_NAVY,
@@ -1258,7 +1382,71 @@ const styles = StyleSheet.create({
   },
   summaryChinese: { fontSize: 18, fontWeight: '800', color: DEEP_NAVY, width: 50 },
   summaryPinyin:  { fontSize: 12, color: WARM_ORANGE, fontStyle: 'italic', flex: 1 },
-  summaryEnglish: { fontSize: 13, color: SLATE_TEAL, fontWeight: '600' },
+  summaryEnglish: { fontSize: 13, color: SLATE_TEAL, fontWeight: '600', flex: 1 },
+  summaryTapHint: { fontSize: 16, color: WARM_BROWN, fontWeight: '600' },
+
+  // Review modal
+  reviewOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(28,42,68,0.55)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 24,
+  },
+  reviewCard: {
+    backgroundColor: CARD_WHITE,
+    borderRadius: 24,
+    padding: 28,
+    width: '100%',
+    maxWidth: 380,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.22,
+    shadowRadius: 20,
+    elevation: 10,
+  },
+  reviewClose: {
+    position: 'absolute',
+    top: 16,
+    right: 16,
+    width: 32,
+    height: 32,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#F0EDE8',
+    borderRadius: 16,
+  },
+  reviewCloseText: { fontSize: 14, fontWeight: '700', color: DEEP_NAVY },
+  reviewChinese:   { fontSize: 56, fontWeight: '900', color: DEEP_NAVY, marginTop: 8, marginBottom: 6 },
+  reviewPinyin:    { fontSize: 20, color: WARM_ORANGE, fontStyle: 'italic', marginBottom: 8 },
+  reviewEnglish:   { fontSize: 18, fontWeight: '700', color: DEEP_NAVY, textAlign: 'center', marginBottom: 8 },
+  reviewPosBadge: {
+    backgroundColor: '#F0EDE8',
+    borderRadius: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    marginBottom: 16,
+  },
+  reviewPosBadgeText: { fontSize: 13, color: WARM_BROWN, fontWeight: '600' },
+  reviewAudioBtn: {
+    backgroundColor: DEEP_NAVY,
+    borderRadius: 14,
+    paddingHorizontal: 28,
+    paddingVertical: 12,
+    marginBottom: 18,
+  },
+  reviewAudioBtnText: { fontSize: 16, fontWeight: '700', color: CARD_WHITE },
+  reviewExampleBox: {
+    width: '100%',
+    backgroundColor: '#F7F4F0',
+    borderRadius: 14,
+    padding: 16,
+    alignItems: 'center',
+    gap: 6,
+  },
+  reviewExampleChinese: { fontSize: 17, fontWeight: '700', color: DEEP_NAVY, textAlign: 'center' },
+  reviewExampleEnglish: { fontSize: 13, color: SLATE_TEAL, textAlign: 'center', fontStyle: 'italic' },
 
   // ── Phrase feed ────────────────────────────────────────────────────────────
   feedSection: { marginBottom: 16 },

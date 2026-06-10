@@ -466,7 +466,7 @@
       "pinyin": "jìn",
       "english": "To enter / To come in",
       "part_of_speech": "verb",
-      "example": "他昨天进公司的。",
+      "example": "他是昨天进公司的。",
       "translation": "He joined the company yesterday.",
       "mini_exercises": [
         {
@@ -502,8 +502,8 @@
             "fēi cháng",
             "jiè shào"
           ],
-          "question_chinese": "他昨天___公司的。",
-          "question_pinyin": "他昨天___公司的。",
+          "question_chinese": "他是昨天___公司的。",
+          "question_pinyin": "Tā shì zuótiān ___ gōng sī de",
           "question_english": "He joined the company yesterday."
         },
         {
@@ -1014,7 +1014,7 @@
           ]
         },
         {
-          "question": "Which sentence uses 是...的 correctly?",
+          "question": "Which sentence is correct?",
           "type": "multiple_choice",
           "correct": "他是在北京认识她的。",
           "options": [
@@ -1088,13 +1088,13 @@
             "zài",
             "yào"
           ],
-          "question_chinese": "他昨天___进公司的。",
-          "question_pinyin": "Tā zuó tiān ___ jìn gōng sī de.",
+          "question_chinese": "他___昨天进公司的。",
+          "question_pinyin": "Tā ___ zuó tiān jìn gōng sī de.",
           "question_english": "He joined the company yesterday."
         },
         {
           "type": "multiple_choice",
-          "question": "Which sentence uses 是…的 correctly?",
+          "question": "Which sentence is correct?",
           "correct": "他是昨天来的。",
           "options": [
             "他是昨天来的。",
@@ -1190,18 +1190,12 @@
         {
           "type": "multiple_choice",
           "question": "Where does 也 go in a sentence?",
-          "correct": "Before the verb (after the subject)",
+          "correct": "subject + 也 + verb",
           "options": [
-            "Before the verb (after the subject)",
-            "After the verb",
-            "At the end of the sentence",
-            "Before the subject"
-          ],
-          "option_pinyin": [
-            "subj+也+verb",
+            "subject + 也 + verb",
             "verb+也",
-            "sent+也",
-            "也+subj"
+            "At the end of the sentence",
+            "也+subject"
           ]
         },
         {
@@ -1220,25 +1214,25 @@
             "jiù",
             "zài"
           ],
-          "question_chinese": "他___要明天见面。",
-          "question_pinyin": "Tā ___ yào míng tiān jiàn miàn.",
+          "question_chinese": "他___想明天见面。",
+          "question_pinyin": "Tā ___ xiǎng míng tiān jiàn miàn.",
           "question_english": "He also wants to meet tomorrow."
         },
         {
           "type": "multiple_choice",
-          "question": "Choose the correct sentence: 'She also works at the company.'",
-          "correct": "她也在公司上班。",
+          "question": "Choose the correct sentence: 'She also works at this company.'",
+          "correct": "她也在这个公司上班。",
           "options": [
-            "她也在公司上班。",
-            "她在也公司上班。",
-            "她在公司也上班。",
-            "也她在公司上班。"
+            "她也在这个公司上班。",
+            "她在也这个公司上班。",
+            "她在这个公司也上班。",
+            "也她在这个公司上班。"
           ],
           "option_pinyin": [
-            "Tā yě zài gōng sī shàng bān.",
-            "Tā zài yě gōng sī shàng bān.",
-            "Tā zài gōng sī yě shàng bān.",
-            "Yě tā zài gōng sī shàng bān."
+            "Tā yě zài zhège gōng sī shàng bān.",
+            "Tā zài yě zhège gōng sī shàng bān.",
+            "Tā zài zhège gōng sī yě shàng bān.",
+            "Yě tā zài zhège gōng sī shàng bān."
           ]
         }
       ]
@@ -1257,6 +1251,11 @@
           "chinese": "我正在介绍新同事呢。",
           "pinyin": "Wǒ zhèng zài jiè shào xīn tóng shì ne.",
           "english": "I'm in the middle of introducing the new colleague."
+        },
+        {
+          "chinese": "我正在上班呢！",
+          "pinyin": "Wǒ zhèng zài shàng bān ne.",
+          "english": "I'm currently working."
         }
       ],
       "exercises": [
@@ -1512,16 +1511,16 @@
     {
       "question": "Where does 也 go in a sentence?",
       "type": "multiple_choice",
-      "correct": "Before the verb",
+      "correct": "也+verb",
       "options": [
-        "After the verb",
-        "Before the verb",
+        "也+subject",
+        "也+verb",
         "At the end",
-        "Before the subject"
+        "At the begining"
       ]
     },
     {
-      "question": "Which sentence correctly uses 是...的?",
+      "question": "Which sentence is correct?",
       "type": "multiple_choice",
       "correct": "他是昨天来的。",
       "options": [

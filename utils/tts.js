@@ -490,8 +490,16 @@ const AVATAR_VOICE_CONFIG = {
 // Speak text using the avatar's personalised voice profile.
 // Tries ElevenLabs first (if key + voiceId are set), then falls back to Google TTS,
 // then falls back to speakChinese().
-export async function speakAsAvatar(text, avatarId = 'eileen') {
-  // ── 0. Check REPLACE_AUDIO first (exact match) ───────────────────────────
+export async function speakAsAvatar(text, avatarId = 'eileen', pinyinHint = null) {
+  // ── 0a. Pinyin-keyed replacement (polyphonic disambiguation, e.g. 还=hái vs huán) ─
+  if (pinyinHint) {
+    const numbered = pinyinHint.trim().split(/\s+/).map(pinyinToNumbered).join('_');
+    const asset = REPLACE_AUDIO_BY_PINYIN[`${text}_${numbered}`];
+    if (asset) {
+      try { return await playLocalAudio(asset, text); } catch (err) {}
+    }
+  }
+  // ── 0b. Check REPLACE_AUDIO first (exact match) ──────────────────────────
   // ElevenLabs sends raw text so phoneme overrides don't apply; pre-generated
   // files in REPLACE_AUDIO let us fix specific lines with wrong readings.
   if (REPLACE_AUDIO[text]) {
@@ -606,7 +614,7 @@ export async function speakAsAvatar(text, avatarId = 'eileen') {
     return await _playFromUri(TMP_FILE, text);
   } catch (err) {
     console.warn('speakAsAvatar error, falling back to speakChinese:', err);
-    return speakChinese(text);
+    return speakChinese(text, 'female', pinyinHint);
   }
 }
 

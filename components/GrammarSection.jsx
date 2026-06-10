@@ -138,9 +138,10 @@ export default function GrammarSection({ grammarPoints, allDone, onAllDone, less
 // ─────────────────────────────────────────────────────────────────────────────
 
 function getNextGrammarStep(currentStep, point) {
-  const exs    = point.mini_exercises || [];
-  const hasMCQ = exs.some(e => e.type === 'multiple_choice');
-  const hasFB  = exs.some(e => e.type === 'fill_blank');
+  const exs      = point.mini_exercises || [];
+  const hasMCQ   = exs.some(e => e.type === 'multiple_choice');
+  const hasFB    = exs.some(e => e.type === 'fill_blank');
+  const mcqCount = exs.filter(e => e.type === 'multiple_choice').length;
   if (currentStep === 0) {
     if (hasMCQ) return 1;
     if (hasFB)  return 2;
@@ -148,6 +149,11 @@ function getNextGrammarStep(currentStep, point) {
   }
   if (currentStep === 1) {
     if (hasFB) return 2;
+    if (mcqCount >= 2) return 3;
+    return -1;
+  }
+  if (currentStep === 2) {
+    if (mcqCount >= 2) return 3;
     return -1;
   }
   return -1;
@@ -217,7 +223,7 @@ function GrammarSequential({ grammarPoints, initialDone, lessonId, levelId, onAl
   const totalPoints    = grammarPoints.length;
   const completedCount = done ? totalPoints : gramIdx;
   const point          = grammarPoints[gramIdx];
-  const stepLabel      = step === 0 ? 'Grammar' : step === 1 ? 'Multiple Choice' : 'Fill in the Blank';
+  const stepLabel      = step === 0 ? 'Grammar' : step === 1 ? 'Multiple Choice' : step === 2 ? 'Fill in the Blank' : 'Multiple Choice';
   const canGoBack      = gramIdx > 0 || step > 0;
 
   // ── Resume prompt ──────────────────────────────────────────────────────────
@@ -321,6 +327,14 @@ function GrammarSequential({ grammarPoints, initialDone, lessonId, levelId, onAl
               key={`${gramIdx}-fb`}
               point={point}
               allPoints={grammarPoints}
+              onNext={handleAdvance}
+            />
+          )}
+          {step === 3 && (
+            <GrammarMCQPanel
+              key={`${gramIdx}-mcq2`}
+              point={point}
+              mcqIndex={1}
               onNext={handleAdvance}
             />
           )}
@@ -502,8 +516,8 @@ function GrammarCardPanel({ point, onNext }) {
 // Wrong: red flash 400ms then revert. Correct: green, auto-advance 600ms.
 // ─────────────────────────────────────────────────────────────────────────────
 
-function GrammarMCQPanel({ point, onNext }) {
-  const ex = (point.mini_exercises || []).find(e => e.type === 'multiple_choice') || null;
+function GrammarMCQPanel({ point, onNext, mcqIndex = 0 }) {
+  const ex = (point.mini_exercises || []).filter(e => e.type === 'multiple_choice')[mcqIndex] || null;
 
   const [selected,   setSelected]   = useState(null);
   const [correct,    setCorrect]    = useState(false);
@@ -559,17 +573,18 @@ function GrammarMCQPanel({ point, onNext }) {
         <Text style={styles.exerciseQuestion}>{ex.question}</Text>
         <View style={styles.optionsCol}>
           {(shuffled.current || []).map(({ opt, pin }, i) => {
+            const baseText = optionsAreChinese ? styles.fbOptBtnText : styles.optBtnText;
             let btnStyle = styles.optBtn;
-            let txtStyle = styles.optBtnText;
+            let txtStyle = baseText;
             if (correct && opt === ex.correct) {
               btnStyle = styles.optBtnCorrect;
-              txtStyle = [styles.optBtnText, { color: SUCCESS }];
+              txtStyle = [baseText, { color: SUCCESS }];
             } else if (flash === opt) {
               btnStyle = styles.optBtnWrong;
-              txtStyle = [styles.optBtnText, { color: ERROR }];
+              txtStyle = [baseText, { color: ERROR }];
             } else if (correct && opt !== ex.correct) {
               btnStyle = styles.optBtnDimmed;
-              txtStyle = [styles.optBtnText, { color: 'rgba(28,42,68,0.35)' }];
+              txtStyle = [baseText, { color: 'rgba(28,42,68,0.35)' }];
             }
             return (
               <TouchableOpacity
@@ -668,17 +683,19 @@ function GrammarFillBlankPanel({ point, allPoints, onNext }) {
 
         <View style={styles.optionsCol}>
           {(shuffled.current || []).map(({ opt, pin }, i) => {
+            const isChinese = /[一-鿿]/.test(opt);
+            const baseText = isChinese ? styles.fbOptBtnText : styles.optBtnText;
             let btnStyle = styles.optBtn;
-            let txtStyle = styles.optBtnText;
+            let txtStyle = baseText;
             if (correct && opt === ex.correct) {
               btnStyle = styles.optBtnCorrect;
-              txtStyle = [styles.optBtnText, { color: SUCCESS }];
+              txtStyle = [baseText, { color: SUCCESS }];
             } else if (flash === opt) {
               btnStyle = styles.optBtnWrong;
-              txtStyle = [styles.optBtnText, { color: ERROR }];
+              txtStyle = [baseText, { color: ERROR }];
             } else if (correct && opt !== ex.correct) {
               btnStyle = styles.optBtnDimmed;
-              txtStyle = [styles.optBtnText, { color: 'rgba(28,42,68,0.35)' }];
+              txtStyle = [baseText, { color: 'rgba(28,42,68,0.35)' }];
             }
             return (
               <TouchableOpacity
@@ -688,7 +705,7 @@ function GrammarFillBlankPanel({ point, allPoints, onNext }) {
                 activeOpacity={0.75}
               >
                 <Text style={txtStyle}>{opt}</Text>
-                {showPinyin && pin ? <Text style={styles.optPinyin}>{pin}</Text> : null}
+                {isChinese && showPinyin && pin ? <Text style={styles.optPinyin}>{pin}</Text> : null}
               </TouchableOpacity>
             );
           })}
@@ -948,7 +965,7 @@ const styles = StyleSheet.create({
   dot:           { width: 10, height: 10, borderRadius: 5 },
   dotFilled:     { backgroundColor: WARM_ORANGE },
   dotEmpty:      { backgroundColor: 'rgba(155,104,70,0.22)' },
-  progressLabel: { fontSize: 12, fontWeight: '600', color: SLATE_TEAL },
+  progressLabel: { fontSize: 12, fontWeight: '700', color: WARM_ORANGE },
 
   // ── Resume prompt ──────────────────────────────────────────────────────────
   resumeCard: {
@@ -1185,7 +1202,12 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(55,73,80,0.08)',
   },
   optBtnText: {
-    fontSize: 16,
+    fontSize: 14,
+    fontWeight: '600',
+    color: DEEP_NAVY,
+  },
+  fbOptBtnText: {
+    fontSize: 17,
     fontWeight: '600',
     color: DEEP_NAVY,
   },
