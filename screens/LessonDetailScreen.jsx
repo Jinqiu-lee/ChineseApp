@@ -828,7 +828,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'rgba(217,140,43,0.2)',
   },
-  topicChinese: { fontSize: 36, fontWeight: '900', color: VG.onCard,    marginBottom: 6 },
+  topicChinese: { fontSize: 34, fontWeight: '800', color: VG.onCard,    marginBottom: 6 },
   topicEnglish: { fontSize: 18, fontWeight: '600', color: VG.orange,    marginBottom: 4 },
   topicMeta:    { fontSize: 13,                    color: VG.onCardMuted },
 
