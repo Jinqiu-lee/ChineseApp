@@ -13,7 +13,63 @@
       "english": "To walk",
       "part_of_speech": "verb",
       "example": "我每天走路去学校。",
-      "translation": "I walk to school every day."
+      "translation": "I walk to school every day.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 走路 mean?",
+          "correct": "To walk",
+          "options": [
+            "To walk",
+            "To drive a car",
+            "To walk on foot / Walking",
+            "To take a vehicle (bus/train)"
+          ],
+          "option_pinyin": [
+            "zǒu lù",
+            "kāi chē",
+            "bù xíng",
+            "zuò chē"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To walk",
+          "correct": "走路",
+          "options": [
+            "方式",
+            "开车",
+            "交通",
+            "走路"
+          ],
+          "option_pinyin": [
+            "fāng shì",
+            "kāi chē",
+            "jiāo tōng",
+            "zǒu lù"
+          ],
+          "question_chinese": "我每天___上班。",
+          "question_pinyin": "我每天___上班。",
+          "question_english": "I walk to work every day."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To walk'?",
+          "correct": "走路",
+          "options": [
+            "地铁",
+            "走路",
+            "打车",
+            "交通"
+          ],
+          "option_pinyin": [
+            "dì tiě",
+            "zǒu lù",
+            "dǎ chē",
+            "jiāo tōng"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_02",
@@ -22,7 +78,63 @@
       "english": "To ride a bike",
       "part_of_speech": "verb",
       "example": "他是骑车回来的，路上没有堵车。",
-      "translation": "He cycled back — there was no traffic jam on the road."
+      "translation": "He cycled back — there was no traffic jam on the road.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 骑车 mean?",
+          "correct": "To ride a bike",
+          "options": [
+            "Method / Way / Mode",
+            "To ride a bike",
+            "To take a vehicle (bus/train)",
+            "To drive a car"
+          ],
+          "option_pinyin": [
+            "fāng shì",
+            "qí chē",
+            "zuò chē",
+            "kāi chē"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To ride a bike",
+          "correct": "骑车",
+          "options": [
+            "骑车",
+            "步行",
+            "方式",
+            "堵车"
+          ],
+          "option_pinyin": [
+            "qí chē",
+            "bù xíng",
+            "fāng shì",
+            "dǔ chē"
+          ],
+          "question_chinese": "他喜欢___去学校。",
+          "question_pinyin": "他喜欢___去学校。",
+          "question_english": "He likes to ride a bike to school."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To ride a bike'?",
+          "correct": "骑车",
+          "options": [
+            "方便",
+            "开车",
+            "堵车",
+            "骑车"
+          ],
+          "option_pinyin": [
+            "fāng biàn",
+            "kāi chē",
+            "dǔ chē",
+            "qí chē"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_03",
@@ -31,7 +143,63 @@
       "english": "To take a vehicle (bus/train)",
       "part_of_speech": "verb",
       "example": "我是走回来的，不是坐车。",
-      "translation": "I came back on foot — not by vehicle."
+      "translation": "I came back on foot — not by vehicle.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 坐车 mean?",
+          "correct": "To take a vehicle (bus/train)",
+          "options": [
+            "To walk on foot / Walking",
+            "Subway / Metro",
+            "To take a vehicle (bus/train)",
+            "Public bus"
+          ],
+          "option_pinyin": [
+            "bù xíng",
+            "dì tiě",
+            "zuò chē",
+            "gōng jiāo chē"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To take a vehicle (bus/train)",
+          "correct": "坐车",
+          "options": [
+            "骑车",
+            "堵车",
+            "交通",
+            "坐车"
+          ],
+          "option_pinyin": [
+            "qí chē",
+            "dǔ chē",
+            "jiāo tōng",
+            "zuò chē"
+          ],
+          "question_chinese": "我们___去吧。",
+          "question_pinyin": "我们___去吧。",
+          "question_english": "Let's take a vehicle."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To take a vehicle (bus/train)'?",
+          "correct": "坐车",
+          "options": [
+            "步行",
+            "骑车",
+            "地铁",
+            "坐车"
+          ],
+          "option_pinyin": [
+            "bù xíng",
+            "qí chē",
+            "dì tiě",
+            "zuò chē"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_04",
@@ -40,7 +208,63 @@
       "english": "To drive a car",
       "part_of_speech": "verb",
       "example": "他不是开车来的，是骑车来的。",
-      "translation": "He didn't drive here — he cycled."
+      "translation": "He didn't drive here — he cycled.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 开车 mean?",
+          "correct": "To drive a car",
+          "options": [
+            "Convenient",
+            "To drive a car",
+            "Public bus",
+            "To walk"
+          ],
+          "option_pinyin": [
+            "fāng biàn",
+            "kāi chē",
+            "gōng jiāo chē",
+            "zǒu lù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To drive a car",
+          "correct": "开车",
+          "options": [
+            "坐车",
+            "交通",
+            "开车",
+            "步行"
+          ],
+          "option_pinyin": [
+            "zuò chē",
+            "jiāo tōng",
+            "kāi chē",
+            "bù xíng"
+          ],
+          "question_chinese": "他会___。",
+          "question_pinyin": "他会___。",
+          "question_english": "He can drive."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To drive a car'?",
+          "correct": "开车",
+          "options": [
+            "交通",
+            "步行",
+            "地铁",
+            "开车"
+          ],
+          "option_pinyin": [
+            "jiāo tōng",
+            "bù xíng",
+            "dì tiě",
+            "kāi chē"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_05",
@@ -49,7 +273,63 @@
       "english": "To take a taxi / To hail a cab",
       "part_of_speech": "verb",
       "example": "今天路上堵车了，所以我没有打车。",
-      "translation": "There was a traffic jam today, so I didn't take taxi."
+      "translation": "There was a traffic jam today, so I didn't take taxi.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 打车 mean?",
+          "correct": "To take a taxi / To hail a cab",
+          "options": [
+            "To take a vehicle (bus/train)",
+            "Method / Way / Mode",
+            "To take a taxi / To hail a cab",
+            "To drive a car"
+          ],
+          "option_pinyin": [
+            "zuò chē",
+            "fāng shì",
+            "dǎ chē",
+            "kāi chē"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To take a taxi / To hail a cab",
+          "correct": "打车",
+          "options": [
+            "步行",
+            "堵车",
+            "坐车",
+            "打车"
+          ],
+          "option_pinyin": [
+            "bù xíng",
+            "dǔ chē",
+            "zuò chē",
+            "dǎ chē"
+          ],
+          "question_chinese": "我要___去机场。",
+          "question_pinyin": "我要___去机场。",
+          "question_english": "I want to take a taxi to the airport."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To take a taxi / To hail a cab'?",
+          "correct": "打车",
+          "options": [
+            "走路",
+            "交通",
+            "打车",
+            "骑车"
+          ],
+          "option_pinyin": [
+            "zǒu lù",
+            "jiāo tōng",
+            "dǎ chē",
+            "qí chē"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_06",
@@ -58,7 +338,63 @@
       "english": "Subway / Metro",
       "part_of_speech": "noun",
       "example": "地铁是最方便的交通方式。",
-      "translation": "Subway is the most convenient mode of transport."
+      "translation": "Subway is the most convenient mode of transport.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 地铁 mean?",
+          "correct": "Subway / Metro",
+          "options": [
+            "To take a taxi / To hail a cab",
+            "To walk on foot / Walking",
+            "Subway / Metro",
+            "To walk"
+          ],
+          "option_pinyin": [
+            "dǎ chē",
+            "bù xíng",
+            "dì tiě",
+            "zǒu lù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Subway / Metro",
+          "correct": "地铁",
+          "options": [
+            "公交车",
+            "地铁",
+            "步行",
+            "骑车"
+          ],
+          "option_pinyin": [
+            "gōng jiāo chē",
+            "dì tiě",
+            "bù xíng",
+            "qí chē"
+          ],
+          "question_chinese": "坐___比较快。",
+          "question_pinyin": "坐___比较快。",
+          "question_english": "Taking the subway is relatively fast."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Subway / Metro'?",
+          "correct": "地铁",
+          "options": [
+            "走路",
+            "方式",
+            "骑车",
+            "地铁"
+          ],
+          "option_pinyin": [
+            "zǒu lù",
+            "fāng shì",
+            "qí chē",
+            "dì tiě"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_07",
@@ -67,7 +403,63 @@
       "english": "Public bus",
       "part_of_speech": "noun",
       "example": "他是坐公交车来的。",
-      "translation": "He came by public bus."
+      "translation": "He came by public bus.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 公交车 mean?",
+          "correct": "Public bus",
+          "options": [
+            "Public bus",
+            "Traffic jam",
+            "To walk",
+            "Convenient"
+          ],
+          "option_pinyin": [
+            "gōng jiāo chē",
+            "dǔ chē",
+            "zǒu lù",
+            "fāng biàn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Public bus",
+          "correct": "公交车",
+          "options": [
+            "公交车",
+            "打车",
+            "开车",
+            "坐车"
+          ],
+          "option_pinyin": [
+            "gōng jiāo chē",
+            "dǎ chē",
+            "kāi chē",
+            "zuò chē"
+          ],
+          "question_chinese": "我坐___去的。",
+          "question_pinyin": "我坐___去的。",
+          "question_english": "I went by public bus."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Public bus'?",
+          "correct": "公交车",
+          "options": [
+            "公交车",
+            "堵车",
+            "骑车",
+            "坐车"
+          ],
+          "option_pinyin": [
+            "gōng jiāo chē",
+            "dǔ chē",
+            "qí chē",
+            "zuò chē"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_08",
@@ -76,7 +468,63 @@
       "english": "Traffic jam",
       "part_of_speech": "verb/noun",
       "example": "开车可能会堵车，坐地铁比较快。",
-      "translation": "Driving might get caught in traffic — the subway is faster."
+      "translation": "Driving might get caught in traffic — the subway is faster.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 堵车 mean?",
+          "correct": "Traffic jam",
+          "options": [
+            "Traffic jam",
+            "Subway / Metro",
+            "To ride a bike",
+            "To drive a car"
+          ],
+          "option_pinyin": [
+            "dǔ chē",
+            "dì tiě",
+            "qí chē",
+            "kāi chē"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Traffic jam",
+          "correct": "堵车",
+          "options": [
+            "步行",
+            "开车",
+            "堵车",
+            "交通"
+          ],
+          "option_pinyin": [
+            "bù xíng",
+            "kāi chē",
+            "dǔ chē",
+            "jiāo tōng"
+          ],
+          "question_chinese": "路上___了。",
+          "question_pinyin": "路上___了。",
+          "question_english": "There's a traffic jam on the road."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Traffic jam'?",
+          "correct": "堵车",
+          "options": [
+            "方便",
+            "走路",
+            "堵车",
+            "坐车"
+          ],
+          "option_pinyin": [
+            "fāng biàn",
+            "zǒu lù",
+            "dǔ chē",
+            "zuò chē"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_09",
@@ -85,7 +533,63 @@
       "english": "Convenient",
       "part_of_speech": "adjective",
       "example": "每天骑车上班既方便又健康。",
-      "translation": "Cycling to work every day is both convenient and healthy."
+      "translation": "Cycling to work every day is both convenient and healthy.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 方便 mean?",
+          "correct": "Convenient",
+          "options": [
+            "Traffic jam",
+            "Convenient",
+            "To take a vehicle (bus/train)",
+            "Method / Way / Mode"
+          ],
+          "option_pinyin": [
+            "dǔ chē",
+            "fāng biàn",
+            "zuò chē",
+            "fāng shì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Convenient",
+          "correct": "方便",
+          "options": [
+            "步行",
+            "坐车",
+            "开车",
+            "方便"
+          ],
+          "option_pinyin": [
+            "bù xíng",
+            "zuò chē",
+            "kāi chē",
+            "fāng biàn"
+          ],
+          "question_chinese": "地铁很___。",
+          "question_pinyin": "地铁很___。",
+          "question_english": "The subway is very convenient."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Convenient'?",
+          "correct": "方便",
+          "options": [
+            "坐车",
+            "方便",
+            "地铁",
+            "开车"
+          ],
+          "option_pinyin": [
+            "zuò chē",
+            "fāng biàn",
+            "dì tiě",
+            "kāi chē"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_10",
@@ -94,7 +598,63 @@
       "english": "Method / Way / Mode",
       "part_of_speech": "noun",
       "example": "坐地铁是最方便的交通方式。",
-      "translation": "Taking the subway is the most convenient mode of transport."
+      "translation": "Taking the subway is the most convenient mode of transport.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 方式 mean?",
+          "correct": "Method / Way / Mode",
+          "options": [
+            "To walk",
+            "To drive a car",
+            "Method / Way / Mode",
+            "Convenient"
+          ],
+          "option_pinyin": [
+            "zǒu lù",
+            "kāi chē",
+            "fāng shì",
+            "fāng biàn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Method / Way / Mode",
+          "correct": "方式",
+          "options": [
+            "交通",
+            "打车",
+            "堵车",
+            "方式"
+          ],
+          "option_pinyin": [
+            "jiāo tōng",
+            "dǎ chē",
+            "dǔ chē",
+            "fāng shì"
+          ],
+          "question_chinese": "你用什么___去学校？",
+          "question_pinyin": "你用什么___去学校？",
+          "question_english": "What method do you use to get to school?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Method / Way / Mode'?",
+          "correct": "方式",
+          "options": [
+            "方便",
+            "交通",
+            "步行",
+            "方式"
+          ],
+          "option_pinyin": [
+            "fāng biàn",
+            "jiāo tōng",
+            "bù xíng",
+            "fāng shì"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_11",
@@ -103,7 +663,63 @@
       "english": "Traffic / Transportation",
       "part_of_speech": "noun",
       "example": "这里的交通很方便。",
-      "translation": "The transportation here is very convenient."
+      "translation": "The transportation here is very convenient.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 交通 mean?",
+          "correct": "Traffic / Transportation",
+          "options": [
+            "Traffic jam",
+            "Traffic / Transportation",
+            "To walk on foot / Walking",
+            "Convenient"
+          ],
+          "option_pinyin": [
+            "dǔ chē",
+            "jiāo tōng",
+            "bù xíng",
+            "fāng biàn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Traffic / Transportation",
+          "correct": "交通",
+          "options": [
+            "交通",
+            "方便",
+            "打车",
+            "堵车"
+          ],
+          "option_pinyin": [
+            "jiāo tōng",
+            "fāng biàn",
+            "dǎ chē",
+            "dǔ chē"
+          ],
+          "question_chinese": "这里的___很发达。",
+          "question_pinyin": "这里的___很发达。",
+          "question_english": "The transportation here is very developed."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Traffic / Transportation'?",
+          "correct": "交通",
+          "options": [
+            "交通",
+            "方式",
+            "方便",
+            "走路"
+          ],
+          "option_pinyin": [
+            "jiāo tōng",
+            "fāng shì",
+            "fāng biàn",
+            "zǒu lù"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_12",
@@ -112,7 +728,63 @@
       "english": "To walk on foot / Walking",
       "part_of_speech": "verb/noun",
       "example": "从这里步行到学校只要十分钟。",
-      "translation": "It only takes ten minutes to walk to school from here."
+      "translation": "It only takes ten minutes to walk to school from here.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 步行 mean?",
+          "correct": "To walk on foot / Walking",
+          "options": [
+            "To walk on foot / Walking",
+            "To take a taxi / To hail a cab",
+            "Traffic jam",
+            "Method / Way / Mode"
+          ],
+          "option_pinyin": [
+            "bù xíng",
+            "dǎ chē",
+            "dǔ chē",
+            "fāng shì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To walk on foot / Walking",
+          "correct": "步行",
+          "options": [
+            "走路",
+            "堵车",
+            "步行",
+            "公交车"
+          ],
+          "option_pinyin": [
+            "zǒu lù",
+            "dǔ chē",
+            "bù xíng",
+            "gōng jiāo chē"
+          ],
+          "question_chinese": "我___上班。",
+          "question_pinyin": "我___上班。",
+          "question_english": "I walk to work on foot."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To walk on foot / Walking'?",
+          "correct": "步行",
+          "options": [
+            "打车",
+            "走路",
+            "步行",
+            "方便"
+          ],
+          "option_pinyin": [
+            "dǎ chē",
+            "zǒu lù",
+            "bù xíng",
+            "fāng biàn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l13_p01",
@@ -289,6 +961,62 @@
             "It is a habit"
           ]
         }
+      ],
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "是...的 is used to emphasise...",
+          "correct": "HOW, WHEN, WHERE, or WITH WHOM a past action was done",
+          "options": [
+            "HOW, WHEN, WHERE, or WITH WHOM a past action was done",
+            "Whether an action happened or not",
+            "How long an action took",
+            "How many times an action happened"
+          ],
+          "option_pinyin": [
+            "shì...de",
+            "yǒu méi yǒu",
+            "duō jiǔ",
+            "jǐ cì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: I came here by walking.",
+          "correct": "的",
+          "options": [
+            "的",
+            "了",
+            "过",
+            "着"
+          ],
+          "option_pinyin": [
+            "de",
+            "le",
+            "guò",
+            "zhe"
+          ],
+          "question_chinese": "我是走回来___。",
+          "question_pinyin": "我是走回来___。",
+          "question_english": "I came here by walking."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence is correct?",
+          "correct": "他是坐地铁来的。",
+          "options": [
+            "他是坐地铁来的。",
+            "他坐地铁是来的。",
+            "是他坐地铁来的。",
+            "他坐是地铁来的。"
+          ],
+          "option_pinyin": [
+            "tā shì zuò dì tiě lái de",
+            "tā zuò dì tiě shì lái de",
+            "shì tā zuò dì tiě lái de",
+            "tā zuò shì dì tiě lái de"
+          ]
+        }
       ]
     },
     {
@@ -385,6 +1113,62 @@
             "We rode bikes there.",
             "We walked there.",
             "We drove there."
+          ]
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "Which verb is used for riding a bike?",
+          "correct": "骑 (qí)",
+          "options": [
+            "骑 (qí)",
+            "坐 (zuò)",
+            "开 (kāi)",
+            "走 (zǒu)"
+          ],
+          "option_pinyin": [
+            "qí",
+            "zuò",
+            "kāi",
+            "zǒu"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: He takes the subway to work.",
+          "correct": "地铁",
+          "options": [
+            "地铁",
+            "公交车",
+            "骑车",
+            "步行"
+          ],
+          "option_pinyin": [
+            "dì tiě",
+            "gōng jiāo chē",
+            "qí chē",
+            "bù xíng"
+          ],
+          "question_chinese": "他坐___上班。",
+          "question_pinyin": "他坐___上班。",
+          "question_english": "He takes the subway to work."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence is correct?",
+          "correct": "我是骑车来的。",
+          "options": [
+            "我是骑车来的。",
+            "我是坐车骑来的。",
+            "我骑是车来的。",
+            "骑车是我来的。"
+          ],
+          "option_pinyin": [
+            "wǒ shì qí chē lái de",
+            "wǒ shì zuò chē qí lái de",
+            "wǒ qí shì chē lái de",
+            "qí chē shì wǒ lái de"
           ]
         }
       ]
@@ -486,6 +1270,62 @@
             "Shì nǐ zuò dì tiě le?"
           ],
           "correct_pinyin": "Nǐ shì zuò dì tiě lái de ma?"
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "The negative form of 是...的 is...",
+          "correct": "不是...的",
+          "options": [
+            "不是...的",
+            "没有...的",
+            "不...的",
+            "不...是...的"
+          ],
+          "option_pinyin": [
+            "bú shì...de",
+            "méi yǒu...de",
+            "bù...de",
+            "bù...shì...de"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: I didn't walk here, I came by vehicle.",
+          "correct": "是",
+          "options": [
+            "是",
+            "在",
+            "有",
+            "去"
+          ],
+          "option_pinyin": [
+            "shì",
+            "zài",
+            "yǒu",
+            "qù"
+          ],
+          "question_chinese": "我不是走来的，___坐车来的。",
+          "question_pinyin": "我不是走来的，___坐车来的。",
+          "question_english": "I didn't walk here, I came by vehicle."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence is correct?",
+          "correct": "你是怎么来的？",
+          "options": [
+            "你是怎么来的？",
+            "你怎么是来的？",
+            "是你怎么来的？",
+            "你来是怎么的？"
+          ],
+          "option_pinyin": [
+            "nǐ shì zěn me lái de",
+            "nǐ zěn me shì lái de",
+            "shì nǐ zěn me lái de",
+            "nǐ lái shì zěn me de"
+          ]
         }
       ]
     }
