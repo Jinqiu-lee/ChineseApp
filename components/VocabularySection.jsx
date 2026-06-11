@@ -1224,9 +1224,9 @@ const styles = StyleSheet.create({
 
   // Word card step
   wordCardCenter: { alignItems: 'center', gap: 8, paddingVertical: 8 },
-  wordCardChinese: { fontSize: 48, fontWeight: '900', color: DEEP_NAVY },
+  wordCardChinese: { fontSize: 45, fontWeight: '900', color: DEEP_NAVY },
   wordCardPinyin:  { fontSize: 20, fontWeight: '600', color: WARM_ORANGE, fontStyle: 'italic' },
-  wordCardEnglish: { fontSize: 18, fontWeight: '600', color: DEEP_NAVY },
+  wordCardEnglish: { fontSize: 17, fontWeight: '600', color: DEEP_NAVY },
   posBadge: {
     backgroundColor: 'rgba(55,73,80,0.12)',
     borderRadius: 8,
