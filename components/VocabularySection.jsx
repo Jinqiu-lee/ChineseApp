@@ -407,6 +407,11 @@ function NewWordsSequential({ words, showPinyin, avatarId, lessonId, levelId, on
 // ─────────────────────────────────────────────────────────────────────────────
 
 function WordCardPanel({ word, showPinyin, avatarId, onNext }) {
+  const [showExPinyin, setShowExPinyin] = useState(false);
+  // showPinyin=true means HSK1 (always-on pinyin mode) — show example_pinyin directly.
+  // For other levels, show a toggle button so learners can reveal it on demand.
+  const exPinyinAlwaysOn = showPinyin;
+
   return (
     <View style={styles.stepCard}>
       <View style={styles.wordCardCenter}>
@@ -433,14 +438,26 @@ function WordCardPanel({ word, showPinyin, avatarId, onNext }) {
         <View style={styles.exampleBox}>
           <View style={styles.exampleHeader}>
             <Text style={styles.exampleChinese}>{word.example}</Text>
-            <TouchableOpacity
-              style={styles.exampleAudioBtn}
-              onPress={() => speakAsAvatar(word.example, avatarId)}
-            >
-              <Text style={styles.audioEmoji}>&#x1F50A;</Text>
-            </TouchableOpacity>
+            <View style={styles.exampleHeaderRight}>
+              {word.example_pinyin && !exPinyinAlwaysOn ? (
+                <TouchableOpacity
+                  style={[styles.exPinyinToggle, showExPinyin && styles.exPinyinToggleOn]}
+                  onPress={() => setShowExPinyin(v => !v)}
+                >
+                  <Text style={[styles.exPinyinToggleText, showExPinyin && styles.exPinyinToggleTextOn]}>
+                    拼
+                  </Text>
+                </TouchableOpacity>
+              ) : null}
+              <TouchableOpacity
+                style={styles.exampleAudioBtn}
+                onPress={() => speakAsAvatar(word.example, avatarId)}
+              >
+                <Text style={styles.audioEmoji}>&#x1F50A;</Text>
+              </TouchableOpacity>
+            </View>
           </View>
-          {word.example_pinyin ? (
+          {word.example_pinyin && (exPinyinAlwaysOn || showExPinyin) ? (
             <Text style={styles.examplePinyin}>{word.example_pinyin}</Text>
           ) : null}
           {word.translation ? (
@@ -1308,6 +1325,14 @@ const styles = StyleSheet.create({
     borderWidth: 1.5,
     borderColor: ERROR,
   },
+  optBtnDimmed: {
+    backgroundColor: '#F5F2EE',
+    borderRadius: 10,
+    paddingHorizontal: 14,
+    paddingVertical: 12,
+    borderWidth: 1.5,
+    borderColor: 'rgba(55,73,80,0.08)',
+  },
   optBtnText: {
     fontSize: 15,
     fontWeight: '600',
@@ -1628,6 +1653,32 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     justifyContent: 'space-between',
     marginBottom: 4,
+  },
+  exampleHeaderRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    flexShrink: 0,
+  },
+  exPinyinToggle: {
+    paddingHorizontal: 7,
+    paddingVertical: 3,
+    borderRadius: 7,
+    borderWidth: 1.5,
+    borderColor: 'rgba(55,73,80,0.25)',
+    backgroundColor: 'rgba(255,255,255,0.6)',
+  },
+  exPinyinToggleOn: {
+    borderColor: WARM_BROWN,
+    backgroundColor: '#FFF8ED',
+  },
+  exPinyinToggleText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: SLATE_TEAL,
+  },
+  exPinyinToggleTextOn: {
+    color: WARM_BROWN,
   },
   exampleChinese: {
     fontSize: 15,
