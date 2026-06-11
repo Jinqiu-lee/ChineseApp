@@ -531,7 +531,13 @@ function GrammarMCQPanel({ point, onNext, mcqIndex = 0 }) {
     shuffled.current = pairs;
   }
 
-  const optionsAreChinese = (ex?.options || []).some(o => /[一-鿿]/.test(o));
+  const _opts = ex?.options || [];
+  const _hasCJK   = _opts.some(o => /[一-鿿]/.test(o));
+  const _hasLatin  = _opts.some(o => /[a-zA-Z]/.test(o));
+  const optionsAreChinese = _hasCJK;
+  const mcqBaseText = _hasCJK && !_hasLatin ? styles.fbOptBtnText
+                    : _hasCJK               ? styles.mixedOptBtnText
+                    : styles.optBtnText;
 
   const handleSelect = useCallback((opt) => {
     if (correct || flash !== null) return;
@@ -573,7 +579,7 @@ function GrammarMCQPanel({ point, onNext, mcqIndex = 0 }) {
         <Text style={styles.exerciseQuestion}>{ex.question}</Text>
         <View style={styles.optionsCol}>
           {(shuffled.current || []).map(({ opt, pin }, i) => {
-            const baseText = optionsAreChinese ? styles.fbOptBtnText : styles.optBtnText;
+            const baseText = mcqBaseText;
             let btnStyle = styles.optBtn;
             let txtStyle = baseText;
             if (correct && opt === ex.correct) {
@@ -684,7 +690,10 @@ function GrammarFillBlankPanel({ point, allPoints, onNext }) {
         <View style={styles.optionsCol}>
           {(shuffled.current || []).map(({ opt, pin }, i) => {
             const isChinese = /[一-鿿]/.test(opt);
-            const baseText = isChinese ? styles.fbOptBtnText : styles.optBtnText;
+            const hasLatin  = /[a-zA-Z]/.test(opt);
+            const baseText  = isChinese && !hasLatin ? styles.fbOptBtnText
+                            : isChinese              ? styles.mixedOptBtnText
+                            : styles.optBtnText;
             let btnStyle = styles.optBtn;
             let txtStyle = baseText;
             if (correct && opt === ex.correct) {
@@ -1208,6 +1217,11 @@ const styles = StyleSheet.create({
   },
   fbOptBtnText: {
     fontSize: 17,
+    fontWeight: '600',
+    color: DEEP_NAVY,
+  },
+  mixedOptBtnText: {
+    fontSize: 15,
     fontWeight: '600',
     color: DEEP_NAVY,
   },

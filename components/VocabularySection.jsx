@@ -477,7 +477,12 @@ function MultipleChoicePanel({ word, onNext }) {
     shuffled.current = pairs;
   }
 
-  const optionsAreChinese = (ex?.options || []).some(o => /[一-鿿]/.test(o));
+  const _vopts     = ex?.options || [];
+  const _hasCJK    = _vopts.some(o => /[一-鿿]/.test(o));
+  const _hasLatin  = _vopts.some(o => /[a-zA-Z]/.test(o));
+  const optionsAreChinese = _hasCJK;
+  // pure Chinese → 17, mixed or English → 15
+  const mcqBaseText = _hasCJK && !_hasLatin ? styles.fbOptBtnText : styles.optBtnText;
 
   const handleSelect = useCallback((opt) => {
     if (correct) return;
@@ -521,14 +526,14 @@ function MultipleChoicePanel({ word, onNext }) {
       <View style={styles.optionsCol}>
         {(shuffled.current || []).map(({ opt, pin }, i) => {
           let btnStyle = styles.optBtn;
-          let txtStyle = styles.optBtnText;
+          let txtStyle = mcqBaseText;
 
           if (correct && opt === ex.correct) {
             btnStyle = styles.optBtnCorrect;
-            txtStyle = [styles.optBtnText, { color: SUCCESS }];
+            txtStyle = [mcqBaseText, { color: SUCCESS }];
           } else if (flash === opt) {
             btnStyle = styles.optBtnWrong;
-            txtStyle = [styles.optBtnText, { color: ERROR }];
+            txtStyle = [mcqBaseText, { color: ERROR }];
           }
 
           return (
