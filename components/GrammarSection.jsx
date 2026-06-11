@@ -1211,7 +1211,7 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(55,73,80,0.08)',
   },
   optBtnText: {
-    fontSize: 14,
+    fontSize: 15,
     fontWeight: '600',
     color: DEEP_NAVY,
   },
