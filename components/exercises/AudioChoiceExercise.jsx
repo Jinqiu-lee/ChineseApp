@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.18, shadowRadius: 12, elevation: 5,
   },
   audioEmoji: { fontSize: 32, marginBottom: 8 },
-  audioChar: { fontSize: 52, fontWeight: '900', color: VG.onCard, marginBottom: 6 },
+  audioChar: { fontSize: 44, fontWeight: '800', color: VG.onCard, marginBottom: 6 },
   pinyinText: { fontSize: 18, color: VG.orange, fontStyle: 'italic' },
   replayHint: { fontSize: 13, color: VG.onCardMuted },
   choices: { gap: 12 },
