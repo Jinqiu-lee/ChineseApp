@@ -20,9 +20,15 @@ export default function FillBlankExercise({ exercise, onCorrect, onWrong }) {
     }
   };
 
-  const displayFilled  = answered ? displayText.replace('____', selected) : displayText;
-  const hasBlank       = displayText.includes('____');
-  const longChoices    = (choices || []).some(c => c.length > 6);
+  const displayFilled   = answered ? displayText.replace('____', selected) : displayText;
+  const hasBlank        = displayText.includes('____');
+  const longChoices     = (choices || []).some(c => c.length > 6);
+  const veryLongChoices = (choices || []).some(c => c.length > 20);
+  const choiceTextStyle = veryLongChoices
+    ? styles.choiceTextVeryLong
+    : longChoices
+    ? styles.choiceTextLong
+    : styles.choiceText;
 
   const getStyle = (choice) => {
     if (!answered) return styles.choice;
@@ -68,7 +74,7 @@ export default function FillBlankExercise({ exercise, onCorrect, onWrong }) {
             disabled={answered}
             activeOpacity={0.75}
           >
-            <Text style={[styles.choiceText, longChoices && styles.choiceTextLong]}>{choice}</Text>
+            <Text style={choiceTextStyle}>{choice}</Text>
             {showPinyin && choices_pinyin?.[i] ? (
               <Text style={styles.choicePinyin}>{choices_pinyin[i]}</Text>
             ) : null}
@@ -116,12 +122,13 @@ const styles = StyleSheet.create({
   feedbackCorrect: { color: VG.success },
   feedbackWrong:   { color: VG.error },
   choices: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, justifyContent: 'center' },
-  choice:       { backgroundColor: VG.cardDark, borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 1.5, borderColor: VG.border, minWidth: '42%', alignItems: 'center' },
-  choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.success, minWidth: '42%', alignItems: 'center' },
-  choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 2, borderColor: VG.error, minWidth: '42%', alignItems: 'center' },
-  choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, paddingHorizontal: 24, paddingVertical: 16, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.10)', minWidth: '42%', alignItems: 'center' },
-  choiceText: { fontSize: 22, fontWeight: '800', color: VG.cream },
-  choiceTextLong: { fontSize: 17, fontWeight: '600' },
+  choice:       { backgroundColor: VG.cardDark, borderRadius: 14, paddingHorizontal: 14, paddingVertical: 14, borderWidth: 1.5, borderColor: VG.border, width: '46%', alignItems: 'center', justifyContent: 'center' },
+  choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, paddingHorizontal: 14, paddingVertical: 14, borderWidth: 2, borderColor: VG.success, width: '46%', alignItems: 'center', justifyContent: 'center' },
+  choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, paddingHorizontal: 14, paddingVertical: 14, borderWidth: 2, borderColor: VG.error, width: '46%', alignItems: 'center', justifyContent: 'center' },
+  choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, paddingHorizontal: 14, paddingVertical: 14, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.10)', width: '46%', alignItems: 'center', justifyContent: 'center' },
+  choiceText:        { fontSize: 22, fontWeight: '800', color: VG.cream, textAlign: 'center' },
+  choiceTextLong:    { fontSize: 17, fontWeight: '600', color: VG.cream, textAlign: 'center' },
+  choiceTextVeryLong:{ fontSize: 13, fontWeight: '600', color: VG.cream, textAlign: 'center' },
   choicePinyin: { fontSize: 12, color: VG.gold, fontStyle: 'italic', marginTop: 4 },
   continueBtn: {
     marginTop: 16, backgroundColor: DEEP_NAVY, borderRadius: 14,
