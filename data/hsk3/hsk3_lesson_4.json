@@ -73,8 +73,8 @@
     },
     {
       "id": "hsk3_l4_02",
-      "chinese": "聊天",
-      "pinyin": "liáo tiān",
+      "chinese": "聊天/聊",
+      "pinyin": "liáo tiān/liáo",
       "english": "To chat",
       "part_of_speech": "verb",
       "example": "我跟邻居在聊天。",
@@ -85,7 +85,7 @@
           "question": "What does 聊天 mean?",
           "correct": "To chat",
           "options": [
-            "Other people's business / Unnecessary matters",
+            "Unnecessary matters",
             "To borrow / To lend",
             "To chat",
             "Oneself / Yourself / Himself"
@@ -100,21 +100,21 @@
         {
           "type": "fill_blank",
           "question": "Fill in: To chat",
-          "correct": "聊天",
+          "correct": "聊",
           "options": [
-            "刚才",
-            "聊天",
+            "说",
+            "聊",
             "借",
             "管"
           ],
           "option_pinyin": [
-            "gāng cái",
-            "liáo tiān",
+            "shuō",
+            "liáo",
             "jiè",
             "guǎn"
           ],
-          "question_chinese": "我们___了很久。",
-          "question_pinyin": "我们___了很久。",
+          "question_chinese": "我们___了很久天。",
+          "question_pinyin": "我们___了很久天。",
           "question_english": "We chatted for a long time."
         },
         {
@@ -124,13 +124,13 @@
           "options": [
             "管",
             "聊天",
-            "音乐",
+            "说话",
             "声音"
           ],
           "option_pinyin": [
             "guǎn",
             "liáo tiān",
-            "yīn yuè",
+            "shuō huà",
             "shēng yīn"
           ]
         }
@@ -879,7 +879,7 @@
     {
       "number": 1,
       "title": "伴随结构 — Accompanying Structure with 跟/和",
-      "explanation": "Subject + 跟/和 + Person + Verb = do something with someone. 我跟他聊天 = I chat with him. 她和邻居借东西 = She borrowed things from/with her neighbour. Note: 跟/和 can also link nouns meaning 'and': 他和她 = him and her. Context determines whether 跟/和 means 'with' or 'and'. When followed by a verb phrase it typically means 'with'.",
+      "explanation": "Subject + 跟/和 + Person + Verb = do something with someone. 我和他聊天 = I chat with him. 她跟邻居借东西 = She borrowed things from her neighbour. Note: 跟/和 can also link nouns meaning 'and': 他和她 = him and her. Context determines whether 跟/和 means 'with' or 'and'. When followed by a verb phrase it typically means 'with'.",
       "examples": [
         {
           "chinese": "我跟邻居在聊天。",
@@ -887,9 +887,14 @@
           "english": "I'm chatting with my neighbour."
         },
         {
-          "chinese": "她和朋友互相帮助。",
-          "pinyin": "Tā hé péng yǒu hù xiāng bāng zhù.",
+          "chinese": "她跟朋友互相帮助。",
+          "pinyin": "Tā gēn péng yǒu hù xiāng bāng zhù.",
           "english": "She and her friend help each other."
+        },
+        {
+          "chinese": "我和他一起上课。",
+          "pinyin": "Wǒ hé tā yì qǐ shàng ké.",
+          "english": "I attended class together with him."
         }
       ],
       "exercises": [
@@ -936,20 +941,20 @@
         {
           "question": "Fill in: 我___邻居互相帮助。(My neighbour and I help each other.)",
           "type": "multiple_choice",
-          "correct": "跟",
+          "correct": "和",
           "options": [
-            "跟",
+            "和",
             "管",
             "借",
             "自己"
           ]
         },
         {
-          "question": "What does 她和邻居借东西 mean?",
+          "question": "What does 她跟邻居借东西 mean?",
           "type": "multiple_choice",
-          "correct": "She borrowed things from/with her neighbour",
+          "correct": "She borrowed things from her neighbour",
           "options": [
-            "She borrowed things from/with her neighbour",
+            "She borrowed things from her neighbour",
             "She lent things to herself",
             "Her neighbour borrowed from others",
             "She doesn't borrow things"
@@ -959,7 +964,7 @@
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does Subject + 跟 + Person + Verb mean?",
+          "question": "What does 'A 跟 B + Verb' mean?",
           "correct": "Do something with someone",
           "options": [
             "Do something with someone",
@@ -1027,15 +1032,20 @@
           "chinese": "他自己解决了这个问题。",
           "pinyin": "Tā zì jǐ jiě jué le zhè gè wèn tí.",
           "english": "He solved this problem by himself."
+        },
+        {
+          "chinese": "我今天不太舒服，你们自己去吧！可以吗？",
+          "pinyin": "wǒ jīn tiān bú tài shū fú,nǐ men zì jǐ qù ba,kě yǐ ma?",
+          "english": "I'm not feeling very well today, you go by yourselvies, ok ?"
         }
       ],
       "exercises": [
         {
           "question": "What does 自己 mean?",
           "type": "multiple_choice",
-          "correct": "Oneself / Yourself / Himself",
+          "correct": "Oneself",
           "options": [
-            "Oneself / Yourself / Himself",
+            "Oneself",
             "Each other",
             "Together",
             "Also"
@@ -1096,9 +1106,9 @@
         {
           "type": "multiple_choice",
           "question": "What does 自己 mean?",
-          "correct": "Oneself (refers back to the subject)",
+          "correct": "Oneself",
           "options": [
-            "Oneself (refers back to the subject)",
+            "Oneself",
             "Each other",
             "Someone else",
             "No one"
@@ -1133,18 +1143,18 @@
         {
           "type": "multiple_choice",
           "question": "Which sentence is correct?",
-          "correct": "你要照顾好自己。",
+          "correct": "照顾好自己。",
           "options": [
-            "你要照顾好自己。",
-            "自己你要照顾好。",
-            "你自己要好照顾。",
-            "照顾好你自己要。"
+            "照顾好自己。",
+            "自己照顾好。",
+            "自己好照顾。",
+            "照顾自己好。"
           ],
           "option_pinyin": [
-            "nǐ yào zhào gù hǎo zì jǐ",
-            "zì jǐ nǐ yào zhào gù hǎo",
-            "nǐ zì jǐ yào hǎo zhào gù",
-            "zhào gù hǎo nǐ zì jǐ yào"
+            "zhào gù hǎo zì jǐ",
+            "zì jǐ zhào gù hǎo",
+            "zì jǐ hǎo zhào gù",
+            "zhào gù zì jǐ hǎo"
           ]
         }
       ]
@@ -1180,9 +1190,9 @@
         {
           "question": "Which pattern uses 而且 correctly?",
           "type": "multiple_choice",
-          "correct": "他很聪明，而且很努力。",
+          "correct": "他不但聪明，而且很努力。",
           "options": [
-            "他很聪明，而且很努力。",
+            "他不但聪明，而且很努力。",
             "而且他聪明努力。",
             "他而且聪明努力。",
             "他聪明努力而且。"
@@ -1208,17 +1218,6 @@
             "因为",
             "但是",
             "虽然"
-          ]
-        },
-        {
-          "question": "How is 而且 stronger than 也?",
-          "type": "multiple_choice",
-          "correct": "而且 adds a further or more emphatic point; 也 simply adds an additional equal point",
-          "options": [
-            "而且 adds a further or more emphatic point; 也 simply adds an additional equal point",
-            "They are exactly the same",
-            "而且 is more polite",
-            "也 is stronger than 而且"
           ]
         }
       ],
@@ -1256,9 +1255,9 @@
             "yīn wèi",
             "suī rán"
           ],
-          "question_chinese": "他很聪明，___很努力。",
-          "question_pinyin": "他很聪明，___很努力。",
-          "question_english": "He is smart, moreover very hardworking."
+          "question_chinese": "他不但聪明，___很努力。",
+          "question_pinyin": "他不但聪明，___很努力。",
+          "question_english": "He is not only smart, but also very hardworking."
         },
         {
           "type": "multiple_choice",
@@ -1328,10 +1327,10 @@
     {
       "question": "What does 自己 mean?",
       "type": "multiple_choice",
-      "correct": "Oneself / Yourself / Himself",
+      "correct": "Oneself",
       "options": [
         "Each other",
-        "Oneself / Yourself / Himself",
+        "Oneself",
         "Together",
         "Alone"
       ]

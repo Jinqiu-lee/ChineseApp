@@ -887,9 +887,19 @@
           "english": "Please close the door."
         },
         {
+          "chinese": "请（你）把手机给我！",
+          "pinyin": " Qǐng (nǐ) bǎ shǒu jī gěi wǒ.",
+          "english": "Give me the Phone please!"
+        },
+        {
           "chinese": "他把书放好了。",
           "pinyin": "Tā bǎ shū fàng hǎo le.",
           "english": "He put the book away properly."
+        },
+        {
+          "chinese": "等我一下，我把鞋子穿上。",
+          "pinyin": "Děng wǒ yí xià, wǒ bǎ xiézi chuān shàng.",
+          "english": "Wait for a moment, let me put my shoes on."
         }
       ],
       "exercises": [
@@ -1053,13 +1063,13 @@
           "options": [
             "两点左右",
             "左右两点",
-            "大约左右两点",
+            "两点大约",
             "两点差不多"
           ],
           "option_pinyin": [
             "liǎng diǎn zuǒ yòu",
             "zuǒ yòu liǎng diǎn",
-            "dà yuē zuǒ yòu liǎng diǎn",
+            "liǎng diǎn dà yuē ",
             "liǎng diǎn chà bu duō"
           ]
         },
@@ -1107,9 +1117,9 @@
         {
           "type": "multiple_choice",
           "question": "Where does 左右 go in a sentence?",
-          "correct": "After a number or time expression",
+          "correct": "After a number",
           "options": [
-            "After a number or time expression",
+            "After a number",
             "Before a number",
             "At the beginning of a sentence",
             "After the verb"
@@ -1171,9 +1181,19 @@
           "english": "He always goes out this early."
         },
         {
+          "chinese": "你总是不相信我。",
+          "pinyin": "Nǐ zǒng shì bù xiāng xìn wǒ",
+          "english": "You always do not trust me."
+        },
+        {
           "chinese": "她一直在等他回来。",
           "pinyin": "Tā yì zhí zài děng tā huí lái.",
           "english": "She has been waiting all along for him to come back."
+        },
+        {
+          "chinese": "他从八点就一直在上课。",
+          "pinyin": "Tā cóng bā diǎn jiù yì zhí zài shàng kè.",
+          "english": "He has been having the class since 8:00."
         }
       ],
       "exercises": [
@@ -1206,7 +1226,7 @@
           ]
         },
         {
-          "question": "Fill in: 他___迟到，我已经___他了。(He always comes late; I've gotten used to him [now].)",
+          "question": "Fill in: 他___迟到，我已经___他这样了。(He always comes late; I've gotten used to him this way[now].)",
           "type": "multiple_choice",
           "correct": "总是 / 习惯",
           "options": [

@@ -705,8 +705,8 @@
             "yī…jiù…",
             "jué dìng"
           ],
-          "question_chinese": "我一回家___睡觉。",
-          "question_pinyin": "我一回家___睡觉。",
+          "question_chinese": "我 ___ 回家 ___ 睡觉。",
+          "question_pinyin": "我 ___ 回家 ___ 睡觉。",
           "question_english": "As soon as I get home, I sleep."
         },
         {
@@ -832,6 +832,11 @@
           "chinese": "我一看书就想睡觉。",
           "pinyin": "Wǒ yí kàn shū jiù xiǎng shuì jiào.",
           "english": "As soon as I start reading, I want to sleep."
+        },
+        {
+          "chinese": "我一回到家，妈妈就让我做作业。",
+          "pinyin": "Wǒ yì huí dào jiā, māma jiù ràng wǒ zuò zuò yè.",
+          "english": "As soon as I got home, my mon made me do my homework."
         }
       ],
       "exercises": [
@@ -980,6 +985,11 @@
           "chinese": "无论谁来，我也不怕。",
           "pinyin": "Wú lùn shuí lái, wǒ yě bú pà.",
           "english": "No matter who comes, I'm not afraid."
+        },
+        {
+          "chinese": "无论他说什么我都不会信。",
+          "pinyin": "Wú lùn tā shuō shén me wǒ dōu bú huì xìn",
+          "english": "I won't believe anything he says."
         }
       ],
       "exercises": [
@@ -1059,20 +1069,20 @@
       ],
       "mini_exercises": [
         {
+          "question": "Fill in: ___你去哪儿，我___跟你去。",
           "type": "multiple_choice",
-          "question": "不管/无论...都... expresses that...",
-          "correct": "The result is true regardless of the condition",
+          "correct": "不管 / 都",
           "options": [
-            "The result is true regardless of the condition",
-            "The result depends on the condition",
-            "The condition and result are unrelated",
-            "Neither the condition nor result matters"
+            "不管 / 都",
+            "只要 / 就",
+            "一 / 就",
+            "哪怕 / 才"
           ],
           "option_pinyin": [
-            "bù guǎn...dōu...",
-            "rú guǒ...jiù...",
-            "suī rán...dàn shì...",
-            "jì rán...jiù..."
+            "bù guǎn / dōu",
+            "zhǐ yào / jiù",
+            "yī / jiù",
+            "nǎ pà / cái"
           ]
         },
         {
@@ -1128,15 +1138,20 @@
           "chinese": "随便，什么都可以。",
           "pinyin": "Suí biàn, shén me dōu kě yǐ.",
           "english": "Whatever — anything is fine."
+        },
+        {
+          "chinese": "你想吃什么我们就去吃什么。",
+          "pinyin": "Nǐ xiǎng chī shén me wǒ men jiù qù chī shén me",
+          "english": "We eat whatever you want to eat."
         }
       ],
       "exercises": [
         {
           "question": "What does 什么都行 mean?",
           "type": "multiple_choice",
-          "correct": "Anything is fine",
+          "correct": "Anything is OK",
           "options": [
-            "Anything is fine",
+            "Anything is OK",
             "Nothing works",
             "Something is okay",
             "Everything is wrong"
@@ -1214,7 +1229,7 @@
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "In 你去哪儿我就去哪儿, the second 哪儿 means...",
+          "question": "In '你去哪儿我就去哪儿', the second 哪儿 means...",
           "correct": "Wherever (indefinite pronoun, not a real question)",
           "options": [
             "Wherever (indefinite pronoun, not a real question)",

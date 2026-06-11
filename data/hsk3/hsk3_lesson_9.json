@@ -228,26 +228,6 @@
           ]
         },
         {
-          "type": "fill_blank",
-          "question": "Fill in: Even more / Still / Also",
-          "correct": "还",
-          "options": [
-            "还",
-            "厉害",
-            "地道",
-            "更"
-          ],
-          "option_pinyin": [
-            "hái",
-            "lì hài",
-            "dì dào",
-            "gèng"
-          ],
-          "question_chinese": "我把书___给你了。",
-          "question_pinyin": "我把书___给你了。",
-          "question_english": "I returned the book to you."
-        },
-        {
           "type": "multiple_choice",
           "question": "Which word means 'Even more / Still / Also'?",
           "correct": "还",
@@ -890,6 +870,11 @@
           "chinese": "今天比昨天更冷。",
           "pinyin": "Jīn tiān bǐ zuó tiān gèng lěng.",
           "english": "Today is even colder than yesterday."
+        },
+        {
+          "chinese": "今天比昨天冷多了。",
+          "pinyin": "Jīn tiān bǐ zuó tiān lěng duō le.",
+          "english": "Today is much colder than yesterday."
         }
       ],
       "exercises": [
@@ -963,22 +948,16 @@
       ],
       "mini_exercises": [
         {
+          "question": "What is the difference between 还 and 更 in 比 comparisons?",
           "type": "multiple_choice",
-          "question": "What do 还 and 更 add to a 比 sentence?",
-          "correct": "They intensify the comparison — 'even more...' than a simple 比",
+          "correct": "还 is more colloquial; 更 is neutral — both intensify the comparison",
           "options": [
-            "They intensify the comparison — 'even more...' than a simple 比",
-            "They weaken the comparison",
-            "They change it to a question",
-            "They make it a negative comparison"
-          ],
-          "option_pinyin": [
-            "hái / gèng",
-            "yì diǎn yě bù",
-            "ma?",
-            "méi yǒu bǐ"
+            "还 is more colloquial; 更 is neutral — both intensify the comparison",
+            "还 means 'also'; 更 means 'most'",
+            "还 is used before adjectives; 更 is used after verbs",
+            "They cannot both follow 比"
           ]
-        },
+        }, 
         {
           "type": "fill_blank",
           "question": "Fill in: She is even more beautiful than her sister.",
@@ -1032,6 +1011,11 @@
           "chinese": "他跑得像风一样快。",
           "pinyin": "Tā pǎo de xiàng fēng yí yàng kuài.",
           "english": "He runs as fast as the wind."
+        },
+        {
+          "chinese": "她长得像她妈妈一样漂亮。",
+          "pinyin": "Tā zhǎng de xiàng tā mā mā yí yàng piào liàng",
+          "english": "She looks as beautiful as her mon."
         }
       ],
       "exercises": [
@@ -1168,7 +1152,7 @@
     },
     {
       "number": 3,
-      "title": "V得+Adj — Degree Complements",
+      "title": "V 得+Adj — Degree Complements",
       "explanation": "Verb + 得 + Adjective/Adverb describes how well or to what degree an action is performed. This is the degree complement (程度补语). 说得好 = speaks well. 跑得快 = runs fast. 写得很漂亮 = writes very beautifully. Negative form: 说得不好 = doesn't speak well. Note: when an object is present, the verb must be repeated: 汉语说得很好.",
       "examples": [
         {
@@ -1180,6 +1164,11 @@
           "chinese": "他写得不太好，需要多练习。",
           "pinyin": "Tā xiě de bú tài hǎo, xū yào duō liàn xí.",
           "english": "He doesn't write very well; he needs more practice."
+        },
+        {
+          "chinese": "你姐姐跳舞跳得很好！",
+          "pinyin": "Nǐ jiě jiě tiào wǔ tiào de hěn hǎo",
+          "english": "Your older sister dances very well !"
         }
       ],
       "exercises": [
@@ -1291,25 +1280,25 @@
             "zhe",
             "guò"
           ],
-          "question_chinese": "她说___很流利。",
-          "question_pinyin": "她说___很流利。",
+          "question_chinese": "她汉语说___很流利。",
+          "question_pinyin": "她汉语说___很流利。",
           "question_english": "She speaks very fluently."
         },
         {
           "type": "multiple_choice",
           "question": "Which sentence is correct?",
-          "correct": "他写得很漂亮。",
+          "correct": "他写字写得很漂亮。",
           "options": [
-            "他写得很漂亮。",
-            "他很漂亮写得。",
-            "他写很漂亮得。",
-            "得他写很漂亮。"
+            "他写字写得很漂亮。",
+            "他很漂亮写字写得。",
+            "他写字写很漂亮得。",
+            "写字得他写很漂亮。"
           ],
           "option_pinyin": [
-            "tā xiě de hěn piào liang",
-            "tā hěn piào liang xiě de",
-            "tā xiě hěn piào liang de",
-            "de tā xiě hěn piào liang"
+            "tā xiě zì xiě de hěn piào liang",
+            "tā hěn piào liang xiě zì xiě de",
+            "tā xiě zì xiě hěn piào liang de",
+            "xiě zì de tā xiě hěn piào liang"
           ]
         }
       ]

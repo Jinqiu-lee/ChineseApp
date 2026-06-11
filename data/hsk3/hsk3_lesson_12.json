@@ -890,6 +890,11 @@
           "chinese": "他把问题解决了。",
           "pinyin": "Tā bǎ wèn tí jiě jué le.",
           "english": "He solved the problem."
+        },
+        {
+          "chinese": "我把钱还给你了。",
+          "pinyin": "Wǒ bǎ qián huán gěi nǐ le.",
+          "english": "I returned you the money."
         }
       ],
       "exercises": [
@@ -970,20 +975,20 @@
       ],
       "mini_exercises": [
         {
+          "question": "Which verb CANNOT be used with 把?",
           "type": "multiple_choice",
-          "question": "Which verbs CANNOT be used in a 把 sentence?",
-          "correct": "Verbs of cognition and emotion (知道, 喜欢, 是, 有)",
+          "correct": "知道",
           "options": [
-            "Verbs of cognition and emotion (知道, 喜欢, 是, 有)",
-            "Action verbs (放, 拿, 搬)",
-            "Verbs with result complements",
-            "Directional verbs"
+            "知道",
+            "放",
+            "拿",
+            "搬"
           ],
           "option_pinyin": [
-            "zhī dào / xǐ huān",
-            "fàng / ná / bān",
-            "V + result",
-            "V + 来/去"
+            "zhī dào",
+            "fàng",
+            "ná",
+            "bān"
           ]
         },
         {
@@ -1039,6 +1044,11 @@
           "chinese": "那本书被借走了。",
           "pinyin": "Nà běn shū bèi jiè zǒu le.",
           "english": "That book was borrowed (and taken away)."
+        },
+        {
+          "chinese": "他被蚊子咬了。",
+          "pinyin": "Tā bèi wén zi yǎo le.",
+          "english": "He was bitten by mosquito."
         }
       ],
       "exercises": [
@@ -1176,6 +1186,11 @@
           "chinese": "把东西搬到楼上去。",
           "pinyin": "Bǎ dōng xi bān dào lóu shàng qù.",
           "english": "Move the things upstairs."
+        },
+        {
+          "chinese": "请把雨伞拿到阳台上去。",
+          "pinyin": "Qǐng bǎ yǔ sǎn ná dào yáng tái shàng qù",
+          "english": "Please take the umbrella to the balcony."
         }
       ],
       "exercises": [
@@ -1282,8 +1297,8 @@
             "le",
             "shàng"
           ],
-          "question_chinese": "把书放___桌子上。",
-          "question_pinyin": "把书放___桌子上。",
+          "question_chinese": "把书放___桌子上了。",
+          "question_pinyin": "把书放___桌子上了。",
           "question_english": "Put the book on the desk."
         },
         {
