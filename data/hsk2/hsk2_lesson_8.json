@@ -19,16 +19,16 @@
           "question": "What does 让 mean?",
           "correct": "To let / To allow / To make",
           "options": [
-            "To let / To allow / To make",
-            "To ask",
+            "Fast / Quick",
+            "Meaning / Intention",
             "To understand ",
-            "To speak / To talk"
+            "To let / To allow / To make"
           ],
           "option_pinyin": [
-            "ràng",
-            "wèn",
+            "kuài",
+            "yì si",
             "dǒng",
-            "shuō huà"
+            "ràng"
           ]
         },
         {
@@ -36,15 +36,15 @@
           "question": "Fill in: To let / To allow / To make",
           "correct": "让",
           "options": [
+            "大家",
             "问",
-            "慢",
-            "再",
+            "懂",
             "让"
           ],
           "option_pinyin": [
+            "dà jiā",
             "wèn",
-            "màn",
-            "zài",
+            "dǒng",
             "ràng"
           ],
           "question_chinese": "妈妈___我等一下。",
@@ -56,16 +56,16 @@
           "question": "Which word means 'To let / To allow / To make'?",
           "correct": "让",
           "options": [
-            "等",
+            "意思",
             "让",
-            "再",
-            "告诉"
+            "有意思",
+            "等"
           ],
           "option_pinyin": [
-            "děng",
+            "yì si",
             "ràng",
-            "zài",
-            "gào su"
+            "yǒu yì si",
+            "děng"
           ]
         }
       ],
@@ -73,69 +73,69 @@
     },
     {
       "id": "hsk2_l8_02",
-      "chinese": "告诉",
-      "pinyin": "gào su",
-      "english": "To tell / To inform",
+      "chinese": "通知",
+      "pinyin": "tōng zhī",
+      "english": "To notify / To inform (formal)",
       "part_of_speech": "verb",
-      "example": "让我想想再告诉你。",
-      "translation": "Let me think about it and tell you later.",
+      "example": "老师通知大家明天不上课。",
+      "translation": "The teacher notified everyone that there is no class tomorrow.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 告诉 mean?",
-          "correct": "To tell / To inform",
+          "question": "What does 通知 mean?",
+          "correct": "To notify / To inform (formal)",
           "options": [
-            "To ask",
+            "To notify / To inform (formal)",
+            "Meaning / Intention",
             "Slow",
-            "To tell / To inform",
-            "To speak / To talk"
+            "Fast / Quick"
           ],
           "option_pinyin": [
-            "wèn",
+            "tōng zhī",
+            "yì si",
             "màn",
-            "gào su",
-            "shuō huà"
+            "kuài"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To tell / To inform",
-          "correct": "告诉",
+          "question": "Fill in: To notify / To inform (formal)",
+          "correct": "通知",
           "options": [
-            "等",
-            "告诉",
-            "快",
-            "让"
+            "通知",
+            "说话",
+            "意思",
+            "问"
           ],
           "option_pinyin": [
-            "děng",
-            "gào su",
-            "kuài",
-            "ràng"
+            "tōng zhī",
+            "shuō huà",
+            "yì si",
+            "wèn"
           ],
-          "question_chinese": "让我想想再___你。",
-          "question_pinyin": "让我想想再___你。",
-          "question_english": "Let me think about it and tell you later."
+          "question_chinese": "老师___大家明天不上课。",
+          "question_pinyin": "老师___大家明天不上课。",
+          "question_english": "The teacher notified everyone that there is no class tomorrow."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To tell / To inform'?",
-          "correct": "告诉",
+          "question": "Which word means 'To notify / To inform (formal)'?",
+          "correct": "通知",
           "options": [
-            "告诉",
+            "大家",
             "问",
-            "快",
-            "再"
+            "通知",
+            "懂"
           ],
           "option_pinyin": [
-            "gào su",
+            "dà jiā",
             "wèn",
-            "kuài",
-            "zài"
+            "tōng zhī",
+            "dǒng"
           ]
         }
       ],
-      "example_pinyin": "ràng wǒ xiǎng xiǎng zài gào sù nǐ"
+      "example_pinyin": "lǎo shī tōng zhī dà jiā míng tiān bù shàng kè"
     },
     {
       "id": "hsk2_l8_03",
@@ -151,15 +151,15 @@
           "question": "What does 说话 mean?",
           "correct": "To speak / To talk",
           "options": [
-            "To understand ",
+            "Fast / Quick",
             "To speak / To talk",
-            "Meaning / Intention",
+            "To ask",
             "Again / Then (afterwards)"
           ],
           "option_pinyin": [
-            "dǒng",
+            "kuài",
             "shuō huà",
-            "yì si",
+            "wèn",
             "zài"
           ]
         },
@@ -169,15 +169,15 @@
           "correct": "说话",
           "options": [
             "等",
-            "让",
-            "说话",
-            "告诉"
+            "懂",
+            "大家",
+            "说话"
           ],
           "option_pinyin": [
             "děng",
-            "ràng",
-            "shuō huà",
-            "gào su"
+            "dǒng",
+            "dà jiā",
+            "shuō huà"
           ],
           "question_chinese": "请慢慢___。",
           "question_pinyin": "请慢慢___。",
@@ -188,15 +188,15 @@
           "question": "Which word means 'To speak / To talk'?",
           "correct": "说话",
           "options": [
+            "等",
             "说话",
-            "再",
-            "问",
+            "有意思",
             "大家"
           ],
           "option_pinyin": [
+            "děng",
             "shuō huà",
-            "zài",
-            "wèn",
+            "yǒu yì si",
             "dà jiā"
           ]
         }
@@ -217,16 +217,16 @@
           "question": "What does 懂 mean?",
           "correct": "To understand ",
           "options": [
-            "To ask",
-            "Slow",
+            "Everyone / Everybody",
             "To understand ",
-            "Everyone / Everybody"
+            "To let / To allow / To make",
+            "To notify / To inform (formal)"
           ],
           "option_pinyin": [
-            "wèn",
-            "màn",
+            "dà jiā",
             "dǒng",
-            "dà jiā"
+            "ràng",
+            "tōng zhī"
           ]
         },
         {
@@ -234,16 +234,16 @@
           "question": "Fill in: To understand ",
           "correct": "懂",
           "options": [
-            "说话",
-            "有意思",
             "懂",
-            "大家"
+            "快",
+            "再",
+            "通知"
           ],
           "option_pinyin": [
-            "shuō huà",
-            "yǒu yì si",
             "dǒng",
-            "dà jiā"
+            "kuài",
+            "zài",
+            "tōng zhī"
           ],
           "question_chinese": "我听不___。",
           "question_pinyin": "我听不___。",
@@ -255,15 +255,15 @@
           "correct": "懂",
           "options": [
             "懂",
-            "让",
-            "快",
-            "等"
+            "有意思",
+            "再",
+            "慢"
           ],
           "option_pinyin": [
             "dǒng",
-            "ràng",
-            "kuài",
-            "děng"
+            "yǒu yì si",
+            "zài",
+            "màn"
           ]
         }
       ],
@@ -283,16 +283,16 @@
           "question": "What does 意思 mean?",
           "correct": "Meaning / Intention",
           "options": [
-            "To wait",
-            "To speak / To talk",
+            "To understand ",
+            "Everyone / Everybody",
             "Meaning / Intention",
-            "Slow"
+            "Interesting / Fun"
           ],
           "option_pinyin": [
-            "děng",
-            "shuō huà",
+            "dǒng",
+            "dà jiā",
             "yì si",
-            "màn"
+            "yǒu yì si"
           ]
         },
         {
@@ -300,16 +300,16 @@
           "question": "Fill in: Meaning / Intention",
           "correct": "意思",
           "options": [
-            "有意思",
-            "意思",
-            "说话",
-            "让"
+            "再",
+            "等",
+            "让",
+            "意思"
           ],
           "option_pinyin": [
-            "yǒu yì si",
-            "yì si",
-            "shuō huà",
-            "ràng"
+            "zài",
+            "děng",
+            "ràng",
+            "yì si"
           ],
           "question_chinese": "这个词是什么___？",
           "question_pinyin": "这个词是什么___？",
@@ -320,16 +320,16 @@
           "question": "Which word means 'Meaning / Intention'?",
           "correct": "意思",
           "options": [
-            "等",
-            "快",
-            "说话",
-            "意思"
+            "意思",
+            "让",
+            "有意思",
+            "懂"
           ],
           "option_pinyin": [
-            "děng",
-            "kuài",
-            "shuō huà",
-            "yì si"
+            "yì si",
+            "ràng",
+            "yǒu yì si",
+            "dǒng"
           ]
         }
       ],
@@ -349,16 +349,16 @@
           "question": "What does 问 mean?",
           "correct": "To ask",
           "options": [
-            "Interesting / Fun",
-            "Slow",
+            "To wait",
+            "Again / Then (afterwards)",
             "To ask",
-            "To speak / To talk"
+            "To let / To allow / To make"
           ],
           "option_pinyin": [
-            "yǒu yì si",
-            "màn",
+            "děng",
+            "zài",
             "wèn",
-            "shuō huà"
+            "ràng"
           ]
         },
         {
@@ -366,16 +366,16 @@
           "question": "Fill in: To ask",
           "correct": "问",
           "options": [
+            "让",
             "问",
-            "等",
-            "快",
-            "告诉"
+            "懂",
+            "有意思"
           ],
           "option_pinyin": [
+            "ràng",
             "wèn",
-            "děng",
-            "kuài",
-            "gào su"
+            "dǒng",
+            "yǒu yì si"
           ],
           "question_chinese": "我去___一下老师。",
           "question_pinyin": "我去___一下老师。",
@@ -386,16 +386,16 @@
           "question": "Which word means 'To ask'?",
           "correct": "问",
           "options": [
+            "意思",
+            "有意思",
             "问",
-            "大家",
-            "等",
-            "有意思"
+            "说话"
           ],
           "option_pinyin": [
+            "yì si",
+            "yǒu yì si",
             "wèn",
-            "dà jiā",
-            "děng",
-            "yǒu yì si"
+            "shuō huà"
           ]
         }
       ],
@@ -415,16 +415,16 @@
           "question": "What does 等 mean?",
           "correct": "To wait",
           "options": [
-            "Fast / Quick",
+            "To let / To allow / To make",
             "To wait",
-            "Meaning / Intention",
-            "To let / To allow / To make"
+            "Again / Then (afterwards)",
+            "To speak / To talk"
           ],
           "option_pinyin": [
-            "kuài",
+            "ràng",
             "děng",
-            "yì si",
-            "ràng"
+            "zài",
+            "shuō huà"
           ]
         },
         {
@@ -433,14 +433,14 @@
           "correct": "等",
           "options": [
             "慢",
-            "告诉",
-            "懂",
+            "有意思",
+            "通知",
             "等"
           ],
           "option_pinyin": [
             "màn",
-            "gào su",
-            "dǒng",
+            "yǒu yì si",
+            "tōng zhī",
             "děng"
           ],
           "question_chinese": "你___等，我去问一下。",
@@ -452,15 +452,15 @@
           "question": "Which word means 'To wait'?",
           "correct": "等",
           "options": [
-            "快",
-            "慢",
-            "意思",
+            "说话",
+            "再",
+            "懂",
             "等"
           ],
           "option_pinyin": [
-            "kuài",
-            "màn",
-            "yì si",
+            "shuō huà",
+            "zài",
+            "dǒng",
             "děng"
           ]
         }
@@ -483,14 +483,14 @@
           "options": [
             "Again / Then (afterwards)",
             "To ask",
-            "To understand ",
-            "To tell / To inform"
+            "Fast / Quick",
+            "Slow"
           ],
           "option_pinyin": [
             "zài",
             "wèn",
-            "dǒng",
-            "gào su"
+            "kuài",
+            "màn"
           ]
         },
         {
@@ -498,16 +498,16 @@
           "question": "Fill in: Again / Then (afterwards)",
           "correct": "再",
           "options": [
-            "告诉",
-            "说话",
-            "让",
-            "再"
+            "等",
+            "再",
+            "慢",
+            "让"
           ],
           "option_pinyin": [
-            "gào su",
-            "shuō huà",
-            "ràng",
-            "zài"
+            "děng",
+            "zài",
+            "màn",
+            "ràng"
           ],
           "question_chinese": "让我想想___告诉你。",
           "question_pinyin": "让我想想___告诉你。",
@@ -518,16 +518,16 @@
           "question": "Which word means 'Again / Then (afterwards)'?",
           "correct": "再",
           "options": [
-            "再",
-            "让",
-            "有意思",
-            "意思"
+            "快",
+            "通知",
+            "慢",
+            "再"
           ],
           "option_pinyin": [
-            "zài",
-            "ràng",
-            "yǒu yì si",
-            "yì si"
+            "kuài",
+            "tōng zhī",
+            "màn",
+            "zài"
           ]
         }
       ],
@@ -547,16 +547,16 @@
           "question": "What does 快 mean?",
           "correct": "Fast / Quick",
           "options": [
-            "Interesting / Fun",
-            "Everyone / Everybody",
             "Fast / Quick",
-            "Meaning / Intention"
+            "Again / Then (afterwards)",
+            "To notify / To inform (formal)",
+            "Interesting / Fun"
           ],
           "option_pinyin": [
-            "yǒu yì si",
-            "dà jiā",
             "kuài",
-            "yì si"
+            "zài",
+            "tōng zhī",
+            "yǒu yì si"
           ]
         },
         {
@@ -565,15 +565,15 @@
           "correct": "快",
           "options": [
             "等",
-            "告诉",
-            "大家",
-            "快"
+            "快",
+            "意思",
+            "慢"
           ],
           "option_pinyin": [
             "děng",
-            "gào su",
-            "dà jiā",
-            "kuài"
+            "kuài",
+            "yì si",
+            "màn"
           ],
           "question_chinese": "他说话太___了。",
           "question_pinyin": "他说话太___了。",
@@ -584,16 +584,16 @@
           "question": "Which word means 'Fast / Quick'?",
           "correct": "快",
           "options": [
-            "说话",
+            "再",
+            "问",
             "快",
-            "懂",
-            "有意思"
+            "懂"
           ],
           "option_pinyin": [
-            "shuō huà",
+            "zài",
+            "wèn",
             "kuài",
-            "dǒng",
-            "yǒu yì si"
+            "dǒng"
           ]
         }
       ],
@@ -613,16 +613,16 @@
           "question": "What does 慢 mean?",
           "correct": "Slow",
           "options": [
-            "To understand ",
-            "Fast / Quick",
             "Slow",
-            "Again / Then (afterwards)"
+            "Everyone / Everybody",
+            "To let / To allow / To make",
+            "To notify / To inform (formal)"
           ],
           "option_pinyin": [
-            "dǒng",
-            "kuài",
             "màn",
-            "zài"
+            "dà jiā",
+            "ràng",
+            "tōng zhī"
           ]
         },
         {
@@ -630,15 +630,15 @@
           "question": "Fill in: Slow",
           "correct": "慢",
           "options": [
-            "意思",
             "慢",
-            "告诉",
+            "有意思",
+            "快",
             "大家"
           ],
           "option_pinyin": [
-            "yì si",
             "màn",
-            "gào su",
+            "yǒu yì si",
+            "kuài",
             "dà jiā"
           ],
           "question_chinese": "请___慢说，我听不懂。",
@@ -650,16 +650,16 @@
           "question": "Which word means 'Slow'?",
           "correct": "慢",
           "options": [
-            "再",
             "慢",
-            "问",
-            "快"
+            "再",
+            "快",
+            "意思"
           ],
           "option_pinyin": [
-            "zài",
             "màn",
-            "wèn",
-            "kuài"
+            "zài",
+            "kuài",
+            "yì si"
           ]
         }
       ],
@@ -679,16 +679,16 @@
           "question": "What does 大家 mean?",
           "correct": "Everyone / Everybody",
           "options": [
-            "To wait",
-            "Meaning / Intention",
-            "To ask",
-            "Everyone / Everybody"
+            "To understand ",
+            "To let / To allow / To make",
+            "Everyone / Everybody",
+            "To wait"
           ],
           "option_pinyin": [
-            "děng",
-            "yì si",
-            "wèn",
-            "dà jiā"
+            "dǒng",
+            "ràng",
+            "dà jiā",
+            "děng"
           ]
         },
         {
@@ -696,16 +696,16 @@
           "question": "Fill in: Everyone / Everybody",
           "correct": "大家",
           "options": [
-            "等",
-            "再",
-            "懂",
-            "大家"
+            "大家",
+            "问",
+            "意思",
+            "让"
           ],
           "option_pinyin": [
-            "děng",
-            "zài",
-            "dǒng",
-            "dà jiā"
+            "dà jiā",
+            "wèn",
+            "yì si",
+            "ràng"
           ],
           "question_chinese": "___一起走吧！",
           "question_pinyin": "___一起走吧！",
@@ -716,16 +716,16 @@
           "question": "Which word means 'Everyone / Everybody'?",
           "correct": "大家",
           "options": [
-            "懂",
-            "等",
+            "大家",
+            "意思",
             "问",
-            "大家"
+            "快"
           ],
           "option_pinyin": [
-            "dǒng",
-            "děng",
+            "dà jiā",
+            "yì si",
             "wèn",
-            "dà jiā"
+            "kuài"
           ]
         }
       ],
@@ -745,16 +745,16 @@
           "question": "What does 有意思 mean?",
           "correct": "Interesting / Fun",
           "options": [
-            "To understand ",
-            "Everyone / Everybody",
-            "Meaning / Intention",
-            "Interesting / Fun"
+            "Interesting / Fun",
+            "To ask",
+            "Again / Then (afterwards)",
+            "To understand "
           ],
           "option_pinyin": [
-            "dǒng",
-            "dà jiā",
-            "yì si",
-            "yǒu yì si"
+            "yǒu yì si",
+            "wèn",
+            "zài",
+            "dǒng"
           ]
         },
         {
@@ -762,16 +762,16 @@
           "question": "Fill in: Interesting / Fun",
           "correct": "有意思",
           "options": [
-            "再",
+            "大家",
             "有意思",
-            "问",
-            "意思"
+            "懂",
+            "通知"
           ],
           "option_pinyin": [
-            "zài",
+            "dà jiā",
             "yǒu yì si",
-            "wèn",
-            "yì si"
+            "dǒng",
+            "tōng zhī"
           ],
           "question_chinese": "这个故事很___。",
           "question_pinyin": "这个故事很___。",
@@ -782,16 +782,16 @@
           "question": "Which word means 'Interesting / Fun'?",
           "correct": "有意思",
           "options": [
-            "有意思",
-            "等",
             "让",
-            "说话"
+            "说话",
+            "有意思",
+            "等"
           ],
           "option_pinyin": [
-            "yǒu yì si",
-            "děng",
             "ràng",
-            "shuō huà"
+            "shuō huà",
+            "yǒu yì si",
+            "děng"
           ]
         }
       ],
@@ -1371,6 +1371,33 @@
             "shuō zhe shuō",
             "shuō guò shuō"
           ]
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "告诉 vs 通知 — Informal vs Formal 'To Tell'",
+      "explanation": "Both 告诉(gào su) and 通知(tōng zhī) mean 'to tell / to inform', but they differ in register and context.\n\n告诉 (informal): used in everyday conversation between people who know each other. It carries a personal, casual tone.\n• 你告诉我他去哪儿了。(Tell me where he went.)\n• 我告诉你一个秘密。(I'll tell you a secret.)\n\n通知 (formal): used in official or public settings — schools, workplaces, organisations. The information is typically announced to a group.\n• 老师通知大家明天不上课。(The teacher notified everyone there is no class tomorrow.)\n• 公司通知员工下午开会。(The company notified employees of a meeting this afternoon.)\n\nQuick tip: if you can replace the verb with '告诉朋友', it's casual → 告诉. If it sounds like an official announcement, use 通知.",
+      "examples": [
+        {
+          "chinese": "你告诉他我来了吗？",
+          "pinyin": "nǐ gào sù tā wǒ lái le ma",
+          "english": "Did you tell him I came? (informal)"
+        },
+        {
+          "chinese": "老师通知大家明天不上课。",
+          "pinyin": "lǎo shī tōng zhī dà jiā míng tiān bù shàng kè",
+          "english": "The teacher notified everyone there is no class tomorrow. (formal)"
+        },
+        {
+          "chinese": "妈妈告诉我要好好学习。",
+          "pinyin": "mā mā gào sù wǒ yào hǎo hào xué xí",
+          "english": "Mum told me to study hard. (informal)"
+        },
+        {
+          "chinese": "公司通知员工下午开会。",
+          "pinyin": "gōng sī tōng zhī yuán gōng xià wǔ kāi huì",
+          "english": "The company notified employees of a meeting this afternoon. (formal)"
         }
       ]
     }
