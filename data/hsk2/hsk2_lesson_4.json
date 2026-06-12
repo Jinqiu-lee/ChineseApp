@@ -19,15 +19,15 @@
           "question": "What does 公司 mean?",
           "correct": "Company / Office",
           "options": [
-            "To introduce",
-            "To know / To recognise / To be acquainted with",
-            "To tell / To inform",
+            "To meet (face to face)",
+            "Colleague",
+            "Problem / Question",
             "Company / Office"
           ],
           "option_pinyin": [
-            "jiè shào",
-            "rèn shi",
-            "gào su",
+            "jiàn miàn",
+            "tóng shì",
+            "wèn tí",
             "gōng sī"
           ]
         },
@@ -36,15 +36,15 @@
           "question": "Fill in: Company / Office",
           "correct": "公司",
           "options": [
-            "非常",
+            "对",
             "姓",
-            "进",
+            "问题",
             "公司"
           ],
           "option_pinyin": [
-            "fēi cháng",
+            "duì",
             "xìng",
-            "jìn",
+            "wèn tí",
             "gōng sī"
           ],
           "question_chinese": "他在___上班。",
@@ -56,16 +56,16 @@
           "question": "Which word means 'Company / Office'?",
           "correct": "公司",
           "options": [
-            "姓",
+            "同事",
             "公司",
             "非常",
-            "进"
+            "推荐"
           ],
           "option_pinyin": [
-            "xìng",
+            "tóng shì",
             "gōng sī",
             "fēi cháng",
-            "jìn"
+            "tuī jiàn"
           ]
         }
       ],
@@ -86,15 +86,15 @@
           "correct": "To introduce",
           "options": [
             "To introduce",
-            "Surname / Family name",
-            "To go to work",
-            "To enter / To come in"
+            "Colleague",
+            "To know / To recognise / To be acquainted with",
+            "To meet (face to face)"
           ],
           "option_pinyin": [
             "jiè shào",
-            "xìng",
-            "shàng bān",
-            "jìn"
+            "tóng shì",
+            "rèn shi",
+            "jiàn miàn"
           ]
         },
         {
@@ -103,15 +103,15 @@
           "correct": "介绍",
           "options": [
             "介绍",
-            "同事",
             "告诉",
-            "问题"
+            "同事",
+            "姓"
           ],
           "option_pinyin": [
             "jiè shào",
-            "tóng shì",
             "gào su",
-            "wèn tí"
+            "tóng shì",
+            "xìng"
           ],
           "question_chinese": "我来___一下，他是我同事。",
           "question_pinyin": "我来___一下，他是我同事。",
@@ -122,15 +122,15 @@
           "question": "Which word means 'To introduce'?",
           "correct": "介绍",
           "options": [
+            "对",
+            "姓",
             "介绍",
-            "同事",
-            "告诉",
             "问题"
           ],
           "option_pinyin": [
+            "duì",
+            "xìng",
             "jiè shào",
-            "tóng shì",
-            "gào su",
             "wèn tí"
           ]
         }
@@ -151,15 +151,15 @@
           "question": "What does 告诉 mean?",
           "correct": "To tell / To inform",
           "options": [
-            "Colleague",
-            "Correct / Right / Towards",
+            "To meet (face to face)",
             "To tell / To inform",
+            "Surname / Family name",
             "To enter / To come in"
           ],
           "option_pinyin": [
-            "tóng shì",
-            "duì",
+            "jiàn miàn",
             "gào su",
+            "xìng",
             "jìn"
           ]
         },
@@ -168,16 +168,16 @@
           "question": "Fill in: To tell / To inform",
           "correct": "告诉",
           "options": [
-            "告诉",
-            "公司",
-            "非常",
-            "介绍"
+            "推荐",
+            "问题",
+            "对",
+            "告诉"
           ],
           "option_pinyin": [
-            "gào su",
-            "gōng sī",
-            "fēi cháng",
-            "jiè shào"
+            "tuī jiàn",
+            "wèn tí",
+            "duì",
+            "gào su"
           ],
           "question_chinese": "他___我有问题。",
           "question_pinyin": "他___我有问题。",
@@ -188,16 +188,16 @@
           "question": "Which word means 'To tell / To inform'?",
           "correct": "告诉",
           "options": [
-            "公司",
+            "推荐",
+            "告诉",
             "非常",
-            "介绍",
-            "告诉"
+            "对"
           ],
           "option_pinyin": [
-            "gōng sī",
+            "tuī jiàn",
+            "gào su",
             "fēi cháng",
-            "jiè shào",
-            "gào su"
+            "duì"
           ]
         }
       ],
@@ -217,16 +217,16 @@
           "question": "What does 问题 mean?",
           "correct": "Problem / Question",
           "options": [
-            "Extremely / Very",
-            "To know / To recognise / To be acquainted with",
-            "To enter / To come in",
-            "Problem / Question"
+            "Correct / Right / Towards",
+            "Problem / Question",
+            "Company / Office",
+            "To introduce"
           ],
           "option_pinyin": [
-            "fēi cháng",
-            "rèn shi",
-            "jìn",
-            "wèn tí"
+            "duì",
+            "wèn tí",
+            "gōng sī",
+            "jiè shào"
           ]
         },
         {
@@ -235,14 +235,14 @@
           "correct": "问题",
           "options": [
             "问题",
-            "对",
             "见面",
+            "进",
             "介绍"
           ],
           "option_pinyin": [
             "wèn tí",
-            "duì",
             "jiàn miàn",
+            "jìn",
             "jiè shào"
           ],
           "question_chinese": "没有___。",
@@ -254,16 +254,16 @@
           "question": "Which word means 'Problem / Question'?",
           "correct": "问题",
           "options": [
-            "见面",
-            "介绍",
-            "对",
-            "问题"
+            "问题",
+            "非常",
+            "进",
+            "认识"
           ],
           "option_pinyin": [
-            "jiàn miàn",
-            "jiè shào",
-            "duì",
-            "wèn tí"
+            "wèn tí",
+            "fēi cháng",
+            "jìn",
+            "rèn shi"
           ]
         }
       ],
@@ -283,16 +283,16 @@
           "question": "What does 同事 mean?",
           "correct": "Colleague",
           "options": [
-            "Surname / Family name",
+            "Problem / Question",
+            "Correct / Right / Towards",
             "Colleague",
-            "To enter / To come in",
-            "To know / To recognise / To be acquainted with"
+            "Extremely / Very"
           ],
           "option_pinyin": [
-            "xìng",
+            "wèn tí",
+            "duì",
             "tóng shì",
-            "jìn",
-            "rèn shi"
+            "fēi cháng"
           ]
         },
         {
@@ -300,14 +300,14 @@
           "question": "Fill in: Colleague",
           "correct": "同事",
           "options": [
-            "问题",
-            "告诉",
+            "进",
+            "推荐",
             "公司",
             "同事"
           ],
           "option_pinyin": [
-            "wèn tí",
-            "gào su",
+            "jìn",
+            "tuī jiàn",
             "gōng sī",
             "tóng shì"
           ],
@@ -320,16 +320,16 @@
           "question": "Which word means 'Colleague'?",
           "correct": "同事",
           "options": [
-            "问题",
-            "公司",
             "同事",
-            "告诉"
+            "公司",
+            "非常",
+            "问题"
           ],
           "option_pinyin": [
-            "wèn tí",
-            "gōng sī",
             "tóng shì",
-            "gào su"
+            "gōng sī",
+            "fēi cháng",
+            "wèn tí"
           ]
         }
       ],
@@ -349,16 +349,16 @@
           "question": "What does 姓 mean?",
           "correct": "Surname / Family name",
           "options": [
-            "To tell / To inform",
+            "To recommend / To suggest",
+            "To enter / To come in",
             "Surname / Family name",
-            "Company / Office",
-            "Extremely / Very"
+            "Company / Office"
           ],
           "option_pinyin": [
-            "gào su",
+            "tuī jiàn",
+            "jìn",
             "xìng",
-            "gōng sī",
-            "fēi cháng"
+            "gōng sī"
           ]
         },
         {
@@ -366,16 +366,16 @@
           "question": "Fill in: Surname / Family name",
           "correct": "姓",
           "options": [
-            "上班",
-            "见面",
-            "同事",
-            "姓"
+            "公司",
+            "姓",
+            "问题",
+            "非常"
           ],
           "option_pinyin": [
-            "shàng bān",
-            "jiàn miàn",
-            "tóng shì",
-            "xìng"
+            "gōng sī",
+            "xìng",
+            "wèn tí",
+            "fēi cháng"
           ],
           "question_chinese": "我___王。",
           "question_pinyin": "我___王。",
@@ -386,16 +386,16 @@
           "question": "Which word means 'Surname / Family name'?",
           "correct": "姓",
           "options": [
-            "上班",
-            "姓",
             "同事",
-            "见面"
+            "非常",
+            "姓",
+            "告诉"
           ],
           "option_pinyin": [
-            "shàng bān",
-            "xìng",
             "tóng shì",
-            "jiàn miàn"
+            "fēi cháng",
+            "xìng",
+            "gào su"
           ]
         }
       ],
@@ -403,69 +403,69 @@
     },
     {
       "id": "hsk2_l4_07",
-      "chinese": "上班",
-      "pinyin": "shàng bān",
-      "english": "To go to work",
+      "chinese": "推荐",
+      "pinyin": "tuī jiàn",
+      "english": "To recommend / To suggest",
       "part_of_speech": "verb",
-      "example": "他每天八点上班。",
-      "translation": "He goes to work at eight every day.",
+      "example": "他推荐我来这个公司工作。",
+      "translation": "He recommended me to work at this company.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 上班 mean?",
-          "correct": "To go to work",
+          "question": "What does 推荐 mean?",
+          "correct": "To recommend / To suggest",
           "options": [
-            "Surname / Family name",
-            "To know / To recognise / To be acquainted with",
-            "To go to work",
-            "To enter / To come in"
+            "Company / Office",
+            "To recommend / To suggest",
+            "To enter / To come in",
+            "To tell / To inform"
           ],
           "option_pinyin": [
-            "xìng",
-            "rèn shi",
-            "shàng bān",
-            "jìn"
+            "gōng sī",
+            "tuī jiàn",
+            "jìn",
+            "gào su"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To go to work",
-          "correct": "上班",
+          "question": "Fill in: To recommend / To suggest",
+          "correct": "推荐",
           "options": [
-            "上班",
-            "同事",
-            "公司",
-            "对"
+            "认识",
+            "非常",
+            "介绍",
+            "推荐"
           ],
           "option_pinyin": [
-            "shàng bān",
-            "tóng shì",
-            "gōng sī",
-            "duì"
+            "rèn shi",
+            "fēi cháng",
+            "jiè shào",
+            "tuī jiàn"
           ],
-          "question_chinese": "他每天八点___。",
-          "question_pinyin": "他每天八点___。",
-          "question_english": "He goes to work at eight every day."
+          "question_chinese": "他___我来这个公司工作。",
+          "question_pinyin": "他___我来这个公司工作。",
+          "question_english": "He recommended me to work at this company."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To go to work'?",
-          "correct": "上班",
+          "question": "Which word means 'To recommend / To suggest'?",
+          "correct": "推荐",
           "options": [
-            "同事",
-            "对",
-            "上班",
-            "公司"
+            "告诉",
+            "进",
+            "问题",
+            "推荐"
           ],
           "option_pinyin": [
-            "tóng shì",
-            "duì",
-            "shàng bān",
-            "gōng sī"
+            "gào su",
+            "jìn",
+            "wèn tí",
+            "tuī jiàn"
           ]
         }
       ],
-      "example_pinyin": "tā měi tiān bā diǎn shàng bān"
+      "example_pinyin": "tā tuī jiàn wǒ lái zhè ge gōng sī gōng zuò"
     },
     {
       "id": "hsk2_l4_08",
@@ -481,16 +481,16 @@
           "question": "What does 进 mean?",
           "correct": "To enter / To come in",
           "options": [
-            "To tell / To inform",
+            "To enter / To come in",
+            "Surname / Family name",
             "To meet (face to face)",
-            "To know / To recognise / To be acquainted with",
-            "To enter / To come in"
+            "To know / To recognise / To be acquainted with"
           ],
           "option_pinyin": [
-            "gào su",
+            "jìn",
+            "xìng",
             "jiàn miàn",
-            "rèn shi",
-            "jìn"
+            "rèn shi"
           ]
         },
         {
@@ -498,19 +498,19 @@
           "question": "Fill in: To enter / To come in",
           "correct": "进",
           "options": [
+            "推荐",
             "进",
-            "姓",
-            "非常",
-            "介绍"
+            "认识",
+            "公司"
           ],
           "option_pinyin": [
+            "tuī jiàn",
             "jìn",
-            "xìng",
-            "fēi cháng",
-            "jiè shào"
+            "rèn shi",
+            "gōng sī"
           ],
           "question_chinese": "他是昨天___公司的。",
-          "question_pinyin": "Tā shì zuótiān ___ gōng sī de",
+          "question_pinyin": "他是昨天___公司的。",
           "question_english": "He joined the company yesterday."
         },
         {
@@ -518,16 +518,16 @@
           "question": "Which word means 'To enter / To come in'?",
           "correct": "进",
           "options": [
+            "见面",
             "介绍",
-            "姓",
-            "进",
-            "非常"
+            "认识",
+            "进"
           ],
           "option_pinyin": [
+            "jiàn miàn",
             "jiè shào",
-            "xìng",
-            "jìn",
-            "fēi cháng"
+            "rèn shi",
+            "jìn"
           ]
         }
       ],
@@ -547,16 +547,16 @@
           "question": "What does 见面 mean?",
           "correct": "To meet (face to face)",
           "options": [
-            "Correct / Right / Towards",
-            "To introduce",
             "To meet (face to face)",
-            "To tell / To inform"
+            "To enter / To come in",
+            "To introduce",
+            "Extremely / Very"
           ],
           "option_pinyin": [
-            "duì",
-            "jiè shào",
             "jiàn miàn",
-            "gào su"
+            "jìn",
+            "jiè shào",
+            "fēi cháng"
           ]
         },
         {
@@ -564,16 +564,16 @@
           "question": "Fill in: To meet (face to face)",
           "correct": "见面",
           "options": [
-            "公司",
+            "推荐",
             "见面",
-            "认识",
-            "姓"
+            "同事",
+            "认识"
           ],
           "option_pinyin": [
-            "gōng sī",
+            "tuī jiàn",
             "jiàn miàn",
-            "rèn shi",
-            "xìng"
+            "tóng shì",
+            "rèn shi"
           ],
           "question_chinese": "我们明天___吧。",
           "question_pinyin": "我们明天___吧。",
@@ -584,16 +584,16 @@
           "question": "Which word means 'To meet (face to face)'?",
           "correct": "见面",
           "options": [
+            "进",
             "姓",
             "见面",
-            "公司",
-            "认识"
+            "问题"
           ],
           "option_pinyin": [
+            "jìn",
             "xìng",
             "jiàn miàn",
-            "gōng sī",
-            "rèn shi"
+            "wèn tí"
           ]
         }
       ],
@@ -613,16 +613,16 @@
           "question": "What does 认识 mean?",
           "correct": "To know / To recognise / To be acquainted with",
           "options": [
-            "To go to work",
-            "Surname / Family name",
+            "To know / To recognise / To be acquainted with",
+            "Correct / Right / Towards",
             "Company / Office",
-            "To know / To recognise / To be acquainted with"
+            "To introduce"
           ],
           "option_pinyin": [
-            "shàng bān",
-            "xìng",
+            "rèn shi",
+            "duì",
             "gōng sī",
-            "rèn shi"
+            "jiè shào"
           ]
         },
         {
@@ -631,15 +631,15 @@
           "correct": "认识",
           "options": [
             "认识",
-            "同事",
-            "问题",
-            "介绍"
+            "非常",
+            "见面",
+            "对"
           ],
           "option_pinyin": [
             "rèn shi",
-            "tóng shì",
-            "wèn tí",
-            "jiè shào"
+            "fēi cháng",
+            "jiàn miàn",
+            "duì"
           ],
           "question_chinese": "非常高兴___你。",
           "question_pinyin": "非常高兴___你。",
@@ -650,16 +650,16 @@
           "question": "Which word means 'To know / To recognise / To be acquainted with'?",
           "correct": "认识",
           "options": [
-            "同事",
-            "问题",
-            "介绍",
-            "认识"
+            "认识",
+            "进",
+            "见面",
+            "同事"
           ],
           "option_pinyin": [
-            "tóng shì",
-            "wèn tí",
-            "jiè shào",
-            "rèn shi"
+            "rèn shi",
+            "jìn",
+            "jiàn miàn",
+            "tóng shì"
           ]
         }
       ],
@@ -679,16 +679,16 @@
           "question": "What does 对 mean?",
           "correct": "Correct / Right / Towards",
           "options": [
-            "Surname / Family name",
+            "Problem / Question",
+            "Company / Office",
             "Correct / Right / Towards",
-            "To tell / To inform",
-            "To introduce"
+            "To recommend / To suggest"
           ],
           "option_pinyin": [
-            "xìng",
+            "wèn tí",
+            "gōng sī",
             "duì",
-            "gào su",
-            "jiè shào"
+            "tuī jiàn"
           ]
         },
         {
@@ -696,16 +696,16 @@
           "question": "Fill in: Correct / Right / Towards",
           "correct": "对",
           "options": [
-            "问题",
             "对",
-            "公司",
-            "见面"
+            "姓",
+            "同事",
+            "公司"
           ],
           "option_pinyin": [
-            "wèn tí",
             "duì",
-            "gōng sī",
-            "jiàn miàn"
+            "xìng",
+            "tóng shì",
+            "gōng sī"
           ],
           "question_chinese": "他___我说你好。",
           "question_pinyin": "他___我说你好。",
@@ -716,15 +716,15 @@
           "question": "Which word means 'Correct / Right / Towards'?",
           "correct": "对",
           "options": [
-            "公司",
             "对",
-            "问题",
+            "同事",
+            "姓",
             "见面"
           ],
           "option_pinyin": [
-            "gōng sī",
             "duì",
-            "wèn tí",
+            "tóng shì",
+            "xìng",
             "jiàn miàn"
           ]
         }
@@ -746,15 +746,15 @@
           "correct": "Extremely / Very",
           "options": [
             "Extremely / Very",
-            "To go to work",
-            "To tell / To inform",
-            "Colleague"
+            "Surname / Family name",
+            "To enter / To come in",
+            "Problem / Question"
           ],
           "option_pinyin": [
             "fēi cháng",
-            "shàng bān",
-            "gào su",
-            "tóng shì"
+            "xìng",
+            "jìn",
+            "wèn tí"
           ]
         },
         {
@@ -762,16 +762,16 @@
           "question": "Fill in: Extremely / Very",
           "correct": "非常",
           "options": [
-            "介绍",
-            "公司",
             "对",
-            "非常"
+            "非常",
+            "问题",
+            "介绍"
           ],
           "option_pinyin": [
-            "jiè shào",
-            "gōng sī",
             "duì",
-            "fēi cháng"
+            "fēi cháng",
+            "wèn tí",
+            "jiè shào"
           ],
           "question_chinese": "___高兴认识你。",
           "question_pinyin": "___高兴认识你。",
@@ -783,15 +783,15 @@
           "correct": "非常",
           "options": [
             "公司",
+            "告诉",
             "非常",
-            "对",
-            "介绍"
+            "推荐"
           ],
           "option_pinyin": [
             "gōng sī",
+            "gào su",
             "fēi cháng",
-            "duì",
-            "jiè shào"
+            "tuī jiàn"
           ]
         }
       ],

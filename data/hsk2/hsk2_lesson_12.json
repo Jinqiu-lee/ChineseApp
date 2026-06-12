@@ -19,16 +19,16 @@
           "question": "What does 穿 mean?",
           "correct": "To wear / To put on",
           "options": [
+            "Cold",
+            "Light (in weight)",
             "To wear / To put on",
-            "Fast / Quick",
-            "Slow",
-            "Few / Little / Less"
+            "Hot"
           ],
           "option_pinyin": [
+            "lěng",
+            "qīng",
             "chuān",
-            "kuài",
-            "màn",
-            "shǎo"
+            "rè"
           ]
         },
         {
@@ -36,16 +36,16 @@
           "question": "Fill in: To wear / To put on",
           "correct": "穿",
           "options": [
-            "穿",
-            "热",
-            "非常",
-            "累"
+            "冷",
+            "重",
+            "特别",
+            "穿"
           ],
           "option_pinyin": [
-            "chuān",
-            "rè",
-            "fēi cháng",
-            "lèi"
+            "lěng",
+            "zhòng",
+            "tè bié",
+            "chuān"
           ],
           "question_chinese": "你___太少了。",
           "question_pinyin": "你___太少了。",
@@ -56,16 +56,16 @@
           "question": "Which word means 'To wear / To put on'?",
           "correct": "穿",
           "options": [
-            "热",
-            "非常",
             "穿",
-            "累"
+            "冷",
+            "轻",
+            "特别"
           ],
           "option_pinyin": [
-            "rè",
-            "fēi cháng",
             "chuān",
-            "lèi"
+            "lěng",
+            "qīng",
+            "tè bié"
           ]
         }
       ],
@@ -85,16 +85,16 @@
           "question": "What does 少 mean?",
           "correct": "Few / Little / Less",
           "options": [
-            "Fast / Quick",
-            "Few / Little / Less",
-            "To wear / To put on",
-            "Medicine"
+            "Light (in weight)",
+            "To rest",
+            "Body / Health",
+            "Few / Little / Less"
           ],
           "option_pinyin": [
-            "kuài",
-            "shǎo",
-            "chuān",
-            "yào"
+            "qīng",
+            "xiū xi",
+            "shēn tǐ",
+            "shǎo"
           ]
         },
         {
@@ -102,16 +102,16 @@
           "question": "Fill in: Few / Little / Less",
           "correct": "少",
           "options": [
-            "生病",
-            "少",
-            "冷",
-            "身体"
+            "穿",
+            "轻",
+            "药",
+            "少"
           ],
           "option_pinyin": [
-            "shēng bìng",
-            "shǎo",
-            "lěng",
-            "shēn tǐ"
+            "chuān",
+            "qīng",
+            "yào",
+            "shǎo"
           ],
           "question_chinese": "你穿太___了。",
           "question_pinyin": "你穿太___了。",
@@ -122,15 +122,15 @@
           "question": "Which word means 'Few / Little / Less'?",
           "correct": "少",
           "options": [
-            "生病",
             "身体",
-            "冷",
+            "特别",
+            "轻",
             "少"
           ],
           "option_pinyin": [
-            "shēng bìng",
             "shēn tǐ",
-            "lěng",
+            "tè bié",
+            "qīng",
             "shǎo"
           ]
         }
@@ -151,16 +151,16 @@
           "question": "What does 冷 mean?",
           "correct": "Cold",
           "options": [
-            "Cold",
+            "To wear / To put on",
             "Few / Little / Less",
-            "To rest",
-            "Hot"
+            "Especially / Particularly",
+            "Cold"
           ],
           "option_pinyin": [
-            "lěng",
+            "chuān",
             "shǎo",
-            "xiū xi",
-            "rè"
+            "tè bié",
+            "lěng"
           ]
         },
         {
@@ -168,16 +168,16 @@
           "question": "Fill in: Cold",
           "correct": "冷",
           "options": [
+            "药",
             "冷",
-            "穿",
-            "身体",
-            "累"
+            "累",
+            "轻"
           ],
           "option_pinyin": [
+            "yào",
             "lěng",
-            "chuān",
-            "shēn tǐ",
-            "lèi"
+            "lèi",
+            "qīng"
           ],
           "question_chinese": "今天很___。",
           "question_pinyin": "今天很___。",
@@ -188,16 +188,16 @@
           "question": "Which word means 'Cold'?",
           "correct": "冷",
           "options": [
-            "冷",
-            "累",
             "穿",
-            "身体"
+            "生病",
+            "身体",
+            "冷"
           ],
           "option_pinyin": [
-            "lěng",
-            "lèi",
             "chuān",
-            "shēn tǐ"
+            "shēng bìng",
+            "shēn tǐ",
+            "lěng"
           ]
         }
       ],
@@ -217,16 +217,16 @@
           "question": "What does 热 mean?",
           "correct": "Hot",
           "options": [
+            "Heavy",
+            "To rest",
             "Hot",
-            "Medicine",
-            "Few / Little / Less",
-            "Cold"
+            "To wear / To put on"
           ],
           "option_pinyin": [
+            "zhòng",
+            "xiū xi",
             "rè",
-            "yào",
-            "shǎo",
-            "lěng"
+            "chuān"
           ]
         },
         {
@@ -234,16 +234,16 @@
           "question": "Fill in: Hot",
           "correct": "热",
           "options": [
-            "非常",
+            "重",
             "热",
             "累",
-            "生病"
+            "冷"
           ],
           "option_pinyin": [
-            "fēi cháng",
+            "zhòng",
             "rè",
             "lèi",
-            "shēng bìng"
+            "lěng"
           ],
           "question_chinese": "今天太___了！",
           "question_pinyin": "今天太___了！",
@@ -254,16 +254,16 @@
           "question": "Which word means 'Hot'?",
           "correct": "热",
           "options": [
-            "累",
+            "生病",
             "热",
-            "非常",
-            "生病"
+            "累",
+            "身体"
           ],
           "option_pinyin": [
-            "lèi",
+            "shēng bìng",
             "rè",
-            "fēi cháng",
-            "shēng bìng"
+            "lèi",
+            "shēn tǐ"
           ]
         }
       ],
@@ -283,16 +283,16 @@
           "question": "What does 身体 mean?",
           "correct": "Body / Health",
           "options": [
-            "Very / Extremely",
-            "To get sick / To fall ill",
-            "Medicine",
-            "Body / Health"
+            "Cold",
+            "Especially / Particularly",
+            "Body / Health",
+            "Hot"
           ],
           "option_pinyin": [
-            "fēi cháng",
-            "shēng bìng",
-            "yào",
-            "shēn tǐ"
+            "lěng",
+            "tè bié",
+            "shēn tǐ",
+            "rè"
           ]
         },
         {
@@ -300,16 +300,16 @@
           "question": "Fill in: Body / Health",
           "correct": "身体",
           "options": [
-            "休息",
-            "热",
-            "身体",
-            "慢"
+            "冷",
+            "轻",
+            "穿",
+            "身体"
           ],
           "option_pinyin": [
-            "xiū xi",
-            "rè",
-            "shēn tǐ",
-            "màn"
+            "lěng",
+            "qīng",
+            "chuān",
+            "shēn tǐ"
           ],
           "question_chinese": "我___不太好。",
           "question_pinyin": "我___不太好。",
@@ -320,16 +320,16 @@
           "question": "Which word means 'Body / Health'?",
           "correct": "身体",
           "options": [
-            "慢",
+            "累",
+            "药",
             "身体",
-            "休息",
-            "热"
+            "轻"
           ],
           "option_pinyin": [
-            "màn",
+            "lèi",
+            "yào",
             "shēn tǐ",
-            "xiū xi",
-            "rè"
+            "qīng"
           ]
         }
       ],
@@ -349,16 +349,16 @@
           "question": "What does 休息 mean?",
           "correct": "To rest",
           "options": [
-            "Cold",
-            "Hot",
             "To rest",
-            "Medicine"
+            "Body / Health",
+            "Few / Little / Less",
+            "Cold"
           ],
           "option_pinyin": [
-            "lěng",
-            "rè",
             "xiū xi",
-            "yào"
+            "shēn tǐ",
+            "shǎo",
+            "lěng"
           ]
         },
         {
@@ -367,15 +367,15 @@
           "correct": "休息",
           "options": [
             "身体",
-            "穿",
-            "非常",
-            "休息"
+            "重",
+            "休息",
+            "轻"
           ],
           "option_pinyin": [
             "shēn tǐ",
-            "chuān",
-            "fēi cháng",
-            "xiū xi"
+            "zhòng",
+            "xiū xi",
+            "qīng"
           ],
           "question_chinese": "生病了要___。",
           "question_pinyin": "生病了要___。",
@@ -387,15 +387,15 @@
           "correct": "休息",
           "options": [
             "休息",
-            "身体",
-            "穿",
-            "非常"
+            "少",
+            "重",
+            "冷"
           ],
           "option_pinyin": [
             "xiū xi",
-            "shēn tǐ",
-            "chuān",
-            "fēi cháng"
+            "shǎo",
+            "zhòng",
+            "lěng"
           ]
         }
       ],
@@ -415,16 +415,16 @@
           "question": "What does 药 mean?",
           "correct": "Medicine",
           "options": [
-            "To rest",
-            "To wear / To put on",
+            "To get sick / To fall ill",
             "Medicine",
-            "Tired"
+            "To rest",
+            "Heavy"
           ],
           "option_pinyin": [
-            "xiū xi",
-            "chuān",
+            "shēng bìng",
             "yào",
-            "lèi"
+            "xiū xi",
+            "zhòng"
           ]
         },
         {
@@ -432,16 +432,16 @@
           "question": "Fill in: Medicine",
           "correct": "药",
           "options": [
+            "身体",
             "药",
-            "冷",
-            "慢",
-            "非常"
+            "累",
+            "轻"
           ],
           "option_pinyin": [
+            "shēn tǐ",
             "yào",
-            "lěng",
-            "màn",
-            "fēi cháng"
+            "lèi",
+            "qīng"
           ],
           "question_chinese": "他吃___了。",
           "question_pinyin": "他吃___了。",
@@ -452,15 +452,15 @@
           "question": "Which word means 'Medicine'?",
           "correct": "药",
           "options": [
-            "慢",
+            "重",
             "冷",
-            "非常",
+            "轻",
             "药"
           ],
           "option_pinyin": [
-            "màn",
+            "zhòng",
             "lěng",
-            "fēi cháng",
+            "qīng",
             "yào"
           ]
         }
@@ -481,16 +481,16 @@
           "question": "What does 生病 mean?",
           "correct": "To get sick / To fall ill",
           "options": [
-            "To get sick / To fall ill",
-            "Cold",
             "Body / Health",
-            "To wear / To put on"
+            "Cold",
+            "Heavy",
+            "To get sick / To fall ill"
           ],
           "option_pinyin": [
-            "shēng bìng",
-            "lěng",
             "shēn tǐ",
-            "chuān"
+            "lěng",
+            "zhòng",
+            "shēng bìng"
           ]
         },
         {
@@ -499,15 +499,15 @@
           "correct": "生病",
           "options": [
             "生病",
+            "累",
             "少",
-            "慢",
-            "药"
+            "身体"
           ],
           "option_pinyin": [
             "shēng bìng",
+            "lèi",
             "shǎo",
-            "màn",
-            "yào"
+            "shēn tǐ"
           ],
           "question_chinese": "她___了。",
           "question_pinyin": "她___了。",
@@ -518,16 +518,16 @@
           "question": "Which word means 'To get sick / To fall ill'?",
           "correct": "生病",
           "options": [
-            "慢",
+            "冷",
+            "生病",
             "药",
-            "少",
-            "生病"
+            "重"
           ],
           "option_pinyin": [
-            "màn",
+            "lěng",
+            "shēng bìng",
             "yào",
-            "shǎo",
-            "shēng bìng"
+            "zhòng"
           ]
         }
       ],
@@ -547,16 +547,16 @@
           "question": "What does 累 mean?",
           "correct": "Tired",
           "options": [
-            "Tired",
             "To wear / To put on",
-            "Very / Extremely",
-            "Fast / Quick"
+            "Tired",
+            "Medicine",
+            "To get sick / To fall ill"
           ],
           "option_pinyin": [
-            "lèi",
             "chuān",
-            "fēi cháng",
-            "kuài"
+            "lèi",
+            "yào",
+            "shēng bìng"
           ]
         },
         {
@@ -564,16 +564,16 @@
           "question": "Fill in: Tired",
           "correct": "累",
           "options": [
-            "慢",
             "冷",
+            "穿",
             "累",
-            "休息"
+            "重"
           ],
           "option_pinyin": [
-            "màn",
             "lěng",
+            "chuān",
             "lèi",
-            "xiū xi"
+            "zhòng"
           ],
           "question_chinese": "我今天非常___。",
           "question_pinyin": "我今天非常___。",
@@ -585,14 +585,14 @@
           "correct": "累",
           "options": [
             "休息",
-            "慢",
-            "冷",
+            "穿",
+            "特别",
             "累"
           ],
           "option_pinyin": [
             "xiū xi",
-            "màn",
-            "lěng",
+            "chuān",
+            "tè bié",
             "lèi"
           ]
         }
@@ -601,201 +601,201 @@
     },
     {
       "id": "hsk2_l12_10",
-      "chinese": "快",
-      "pinyin": "kuài",
-      "english": "Fast / Quick",
+      "chinese": "轻",
+      "pinyin": "qīng",
+      "english": "Light (in weight)",
       "part_of_speech": "adjective",
-      "example": "他跑得非常快。",
-      "translation": "He runs extremely fast.",
+      "example": "这件衣服很轻。",
+      "translation": "This piece of clothing is very light.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 快 mean?",
-          "correct": "Fast / Quick",
+          "question": "What does 轻 mean?",
+          "correct": "Light (in weight)",
           "options": [
-            "Fast / Quick",
-            "Body / Health",
-            "Cold",
-            "Very / Extremely"
+            "Heavy",
+            "Tired",
+            "To rest",
+            "Light (in weight)"
           ],
           "option_pinyin": [
-            "kuài",
-            "shēn tǐ",
-            "lěng",
-            "fēi cháng"
+            "zhòng",
+            "lèi",
+            "xiū xi",
+            "qīng"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Fast / Quick",
-          "correct": "快",
+          "question": "Fill in: Light (in weight)",
+          "correct": "轻",
           "options": [
             "热",
-            "休息",
-            "快",
+            "轻",
+            "累",
+            "药"
+          ],
+          "option_pinyin": [
+            "rè",
+            "qīng",
+            "lèi",
+            "yào"
+          ],
+          "question_chinese": "这件衣服很___。",
+          "question_pinyin": "这件衣服很___。",
+          "question_english": "This piece of clothing is very light."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Light (in weight)'?",
+          "correct": "轻",
+          "options": [
+            "轻",
+            "生病",
+            "药",
             "累"
           ],
           "option_pinyin": [
-            "rè",
-            "xiū xi",
-            "kuài",
+            "qīng",
+            "shēng bìng",
+            "yào",
             "lèi"
-          ],
-          "question_chinese": "他跑得非常___。",
-          "question_pinyin": "他跑得非常___。",
-          "question_english": "He runs extremely fast."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'Fast / Quick'?",
-          "correct": "快",
-          "options": [
-            "快",
-            "累",
-            "热",
-            "休息"
-          ],
-          "option_pinyin": [
-            "kuài",
-            "lèi",
-            "rè",
-            "xiū xi"
           ]
         }
       ],
-      "example_pinyin": "tā pǎo dé fēi cháng kuài"
+      "example_pinyin": "zhè jiàn yī fú hěn qīng"
     },
     {
       "id": "hsk2_l12_11",
-      "chinese": "慢",
-      "pinyin": "màn",
-      "english": "Slow",
+      "chinese": "重",
+      "pinyin": "zhòng",
+      "english": "Heavy",
       "part_of_speech": "adjective",
-      "example": "你走得太慢了！",
-      "translation": "You walk too slowly!",
+      "example": "这个箱子很重。",
+      "translation": "This suitcase is very heavy.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 慢 mean?",
-          "correct": "Slow",
+          "question": "What does 重 mean?",
+          "correct": "Heavy",
           "options": [
+            "Few / Little / Less",
+            "Heavy",
             "Hot",
-            "Very / Extremely",
-            "To rest",
-            "Slow"
+            "Body / Health"
           ],
           "option_pinyin": [
+            "shǎo",
+            "zhòng",
             "rè",
-            "fēi cháng",
-            "xiū xi",
-            "màn"
+            "shēn tǐ"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Slow",
-          "correct": "慢",
+          "question": "Fill in: Heavy",
+          "correct": "重",
           "options": [
-            "慢",
-            "身体",
-            "累",
-            "穿"
+            "重",
+            "药",
+            "特别",
+            "少"
           ],
           "option_pinyin": [
-            "màn",
-            "shēn tǐ",
-            "lèi",
-            "chuān"
+            "zhòng",
+            "yào",
+            "tè bié",
+            "shǎo"
           ],
-          "question_chinese": "你走得太___了！",
-          "question_pinyin": "你走得太___了！",
-          "question_english": "You walk too slowly!"
+          "question_chinese": "这个箱子很___。",
+          "question_pinyin": "这个箱子很___。",
+          "question_english": "This suitcase is very heavy."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Slow'?",
-          "correct": "慢",
+          "question": "Which word means 'Heavy'?",
+          "correct": "重",
           "options": [
-            "累",
-            "穿",
-            "身体",
-            "慢"
+            "重",
+            "休息",
+            "轻",
+            "冷"
           ],
           "option_pinyin": [
-            "lèi",
-            "chuān",
-            "shēn tǐ",
-            "màn"
+            "zhòng",
+            "xiū xi",
+            "qīng",
+            "lěng"
           ]
         }
       ],
-      "example_pinyin": "nǐ zǒu dé tài màn le"
+      "example_pinyin": "zhè ge xiāng zi hěn zhòng"
     },
     {
       "id": "hsk2_l12_12",
-      "chinese": "非常",
-      "pinyin": "fēi cháng",
-      "english": "Very / Extremely",
+      "chinese": "特别",
+      "pinyin": "tè bié",
+      "english": "Especially / Particularly",
       "part_of_speech": "adverb",
-      "example": "他跑得非常快。",
-      "translation": "He runs extremely fast.",
+      "example": "今天的天气特别冷。",
+      "translation": "Today the weather is especially cold.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 非常 mean?",
-          "correct": "Very / Extremely",
+          "question": "What does 特别 mean?",
+          "correct": "Especially / Particularly",
           "options": [
-            "Slow",
-            "Very / Extremely",
-            "Body / Health",
-            "To rest"
+            "Especially / Particularly",
+            "Light (in weight)",
+            "To wear / To put on",
+            "Hot"
           ],
           "option_pinyin": [
-            "màn",
-            "fēi cháng",
-            "shēn tǐ",
-            "xiū xi"
+            "tè bié",
+            "qīng",
+            "chuān",
+            "rè"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Very / Extremely",
-          "correct": "非常",
+          "question": "Fill in: Especially / Particularly",
+          "correct": "特别",
           "options": [
-            "非常",
-            "药",
-            "冷",
-            "热"
+            "累",
+            "生病",
+            "特别",
+            "身体"
           ],
           "option_pinyin": [
-            "fēi cháng",
-            "yào",
-            "lěng",
-            "rè"
+            "lèi",
+            "shēng bìng",
+            "tè bié",
+            "shēn tǐ"
           ],
-          "question_chinese": "他跑得___快。",
-          "question_pinyin": "他跑得___快。",
-          "question_english": "He runs extremely fast."
+          "question_chinese": "今天的天气___冷。",
+          "question_pinyin": "今天的天气___冷。",
+          "question_english": "Today the weather is especially cold."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Very / Extremely'?",
-          "correct": "非常",
+          "question": "Which word means 'Especially / Particularly'?",
+          "correct": "特别",
           "options": [
+            "特别",
             "热",
-            "药",
-            "冷",
-            "非常"
+            "少",
+            "轻"
           ],
           "option_pinyin": [
+            "tè bié",
             "rè",
-            "yào",
-            "lěng",
-            "fēi cháng"
+            "shǎo",
+            "qīng"
           ]
         }
       ],
-      "example_pinyin": "tā pǎo dé fēi cháng kuài"
+      "example_pinyin": "jīn tiān de tiān qì tè bié lěng"
     },
     {
       "id": "hsk2_l12_p01",

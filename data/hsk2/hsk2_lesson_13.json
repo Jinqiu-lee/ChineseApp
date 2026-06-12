@@ -19,16 +19,16 @@
           "question": "What does 开 mean?",
           "correct": "To open / Open",
           "options": [
-            "To wait",
+            "To sit",
             "To open / Open",
-            "To close / Closed",
-            "To look / To watch / To read"
+            "Relaxed / Easy / Carefree",
+            "To wait"
           ],
           "option_pinyin": [
-            "děng",
+            "zuò",
             "kāi",
-            "guān",
-            "kàn"
+            "qīng sōng",
+            "děng"
           ]
         },
         {
@@ -36,16 +36,16 @@
           "question": "Fill in: To open / Open",
           "correct": "开",
           "options": [
-            "着",
-            "放",
-            "写",
-            "开"
+            "轻松",
+            "开",
+            "窗",
+            "站"
           ],
           "option_pinyin": [
-            "zhe",
-            "fàng",
-            "xiě",
-            "kāi"
+            "qīng sōng",
+            "kāi",
+            "chuāng",
+            "zhàn"
           ],
           "question_chinese": "门___着。",
           "question_pinyin": "门___着。",
@@ -56,16 +56,16 @@
           "question": "Which word means 'To open / Open'?",
           "correct": "开",
           "options": [
-            "开",
-            "着",
-            "写",
-            "放"
+            "坐",
+            "关",
+            "窗",
+            "开"
           ],
           "option_pinyin": [
-            "kāi",
-            "zhe",
-            "xiě",
-            "fàng"
+            "zuò",
+            "guān",
+            "chuāng",
+            "kāi"
           ]
         }
       ],
@@ -85,16 +85,16 @@
           "question": "What does 关 mean?",
           "correct": "To close / Closed",
           "options": [
-            "To close / Closed",
-            "To put / To place",
-            "To stand",
-            "To look / To watch / To read"
+            "To look / To watch / To read",
+            "To write",
+            "To wait",
+            "To close / Closed"
           ],
           "option_pinyin": [
-            "guān",
-            "fàng",
-            "zhàn",
-            "kàn"
+            "kàn",
+            "xiě",
+            "děng",
+            "guān"
           ]
         },
         {
@@ -102,16 +102,16 @@
           "question": "Fill in: To close / Closed",
           "correct": "关",
           "options": [
-            "灯",
-            "写",
             "关",
-            "开"
+            "坐",
+            "空调",
+            "灯"
           ],
           "option_pinyin": [
-            "dēng",
-            "xiě",
             "guān",
-            "kāi"
+            "zuò",
+            "kōng tiáo",
+            "dēng"
           ],
           "question_chinese": "窗___着。",
           "question_pinyin": "窗___着。",
@@ -122,16 +122,16 @@
           "question": "Which word means 'To close / Closed'?",
           "correct": "关",
           "options": [
-            "灯",
-            "写",
+            "关",
             "开",
-            "关"
+            "灯",
+            "写"
           ],
           "option_pinyin": [
-            "dēng",
-            "xiě",
+            "guān",
             "kāi",
-            "guān"
+            "dēng",
+            "xiě"
           ]
         }
       ],
@@ -151,33 +151,33 @@
           "question": "What does 着 mean?",
           "correct": "Aspect particle indicating ongoing state",
           "options": [
-            "To put / To place",
-            "To wait",
             "Aspect particle indicating ongoing state",
-            "To open / Open"
+            "Relaxed / Easy / Carefree",
+            "To stand",
+            "To sit"
           ],
           "option_pinyin": [
-            "fàng",
-            "děng",
             "zhe",
-            "kāi"
+            "qīng sōng",
+            "zhàn",
+            "zuò"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Particle for ongoing state (着)",
+          "question": "Fill in: Aspect particle indicating ongoing state",
           "correct": "着",
           "options": [
+            "开",
             "着",
-            "看",
             "写",
-            "站"
+            "灯"
           ],
           "option_pinyin": [
+            "kāi",
             "zhe",
-            "kàn",
             "xiě",
-            "zhàn"
+            "dēng"
           ],
           "question_chinese": "门开___。",
           "question_pinyin": "门开___。",
@@ -185,19 +185,19 @@
         },
         {
           "type": "multiple_choice",
-          "question": "Which word marks an ongoing state?",
+          "question": "Which word means 'Aspect particle indicating ongoing state'?",
           "correct": "着",
           "options": [
+            "开",
             "着",
-            "写",
-            "站",
-            "看"
+            "看",
+            "写"
           ],
           "option_pinyin": [
+            "kāi",
             "zhe",
-            "xiě",
-            "zhàn",
-            "kàn"
+            "kàn",
+            "xiě"
           ]
         }
       ],
@@ -205,69 +205,69 @@
     },
     {
       "id": "hsk2_l13_04",
-      "chinese": "门",
-      "pinyin": "mén",
-      "english": "Door / Gate",
+      "chinese": "空调",
+      "pinyin": "kōng tiáo",
+      "english": "Air conditioner",
       "part_of_speech": "noun",
-      "example": "门开着。",
-      "translation": "The door is open.",
+      "example": "空调开着呢。",
+      "translation": "The air conditioner is on.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 门 mean?",
-          "correct": "Door / Gate",
+          "question": "What does 空调 mean?",
+          "correct": "Air conditioner",
           "options": [
-            "Door / Gate",
-            "To stand",
-            "Aspect particle indicating ongoing state",
-            "To put / To place"
+            "Relaxed / Easy / Carefree",
+            "To wait",
+            "Light / Lamp",
+            "Air conditioner"
           ],
           "option_pinyin": [
-            "mén",
-            "zhàn",
-            "zhe",
-            "fàng"
+            "qīng sōng",
+            "děng",
+            "dēng",
+            "kōng tiáo"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Door / Gate",
-          "correct": "门",
+          "question": "Fill in: Air conditioner",
+          "correct": "空调",
           "options": [
-            "等",
             "关",
-            "门",
-            "坐"
+            "空调",
+            "坐",
+            "轻松"
           ],
           "option_pinyin": [
-            "děng",
             "guān",
-            "mén",
-            "zuò"
+            "kōng tiáo",
+            "zuò",
+            "qīng sōng"
           ],
-          "question_chinese": "___开着。",
-          "question_pinyin": "___开着。",
-          "question_english": "The door is open."
+          "question_chinese": "___开着呢。",
+          "question_pinyin": "___开着呢。",
+          "question_english": "The air conditioner is on."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Door / Gate'?",
-          "correct": "门",
+          "question": "Which word means 'Air conditioner'?",
+          "correct": "空调",
           "options": [
-            "坐",
-            "门",
-            "等",
-            "关"
+            "着",
+            "写",
+            "空调",
+            "灯"
           ],
           "option_pinyin": [
-            "zuò",
-            "mén",
-            "děng",
-            "guān"
+            "zhe",
+            "xiě",
+            "kōng tiáo",
+            "dēng"
           ]
         }
       ],
-      "example_pinyin": "mén kāi zhe"
+      "example_pinyin": "kōng tiáo kāi zhe ne"
     },
     {
       "id": "hsk2_l13_05",
@@ -284,15 +284,15 @@
           "correct": "Window",
           "options": [
             "Window",
+            "To look / To watch / To read",
             "To stand",
-            "To sit",
-            "Light / Lamp"
+            "Relaxed / Easy / Carefree"
           ],
           "option_pinyin": [
             "chuāng",
+            "kàn",
             "zhàn",
-            "zuò",
-            "dēng"
+            "qīng sōng"
           ]
         },
         {
@@ -300,16 +300,16 @@
           "question": "Fill in: Window",
           "correct": "窗",
           "options": [
-            "门",
-            "着",
-            "放",
-            "窗"
+            "开",
+            "空调",
+            "窗",
+            "关"
           ],
           "option_pinyin": [
-            "mén",
-            "zhe",
-            "fàng",
-            "chuāng"
+            "kāi",
+            "kōng tiáo",
+            "chuāng",
+            "guān"
           ],
           "question_chinese": "___关着。",
           "question_pinyin": "___关着。",
@@ -320,16 +320,16 @@
           "question": "Which word means 'Window'?",
           "correct": "窗",
           "options": [
+            "轻松",
+            "关",
             "窗",
-            "着",
-            "放",
-            "门"
+            "着"
           ],
           "option_pinyin": [
+            "qīng sōng",
+            "guān",
             "chuāng",
-            "zhe",
-            "fàng",
-            "mén"
+            "zhe"
           ]
         }
       ],
@@ -349,15 +349,15 @@
           "question": "What does 灯 mean?",
           "correct": "Light / Lamp",
           "options": [
+            "Aspect particle indicating ongoing state",
             "To wait",
             "To sit",
-            "To stand",
             "Light / Lamp"
           ],
           "option_pinyin": [
+            "zhe",
             "děng",
             "zuò",
-            "zhàn",
             "dēng"
           ]
         },
@@ -367,15 +367,15 @@
           "correct": "灯",
           "options": [
             "灯",
-            "窗",
-            "写",
-            "看"
+            "轻松",
+            "着",
+            "写"
           ],
           "option_pinyin": [
             "dēng",
-            "chuāng",
-            "xiě",
-            "kàn"
+            "qīng sōng",
+            "zhe",
+            "xiě"
           ],
           "question_chinese": "___开着。",
           "question_pinyin": "___开着。",
@@ -386,16 +386,16 @@
           "question": "Which word means 'Light / Lamp'?",
           "correct": "灯",
           "options": [
-            "窗",
-            "看",
+            "着",
             "写",
-            "灯"
+            "灯",
+            "轻松"
           ],
           "option_pinyin": [
-            "chuāng",
-            "kàn",
+            "zhe",
             "xiě",
-            "dēng"
+            "dēng",
+            "qīng sōng"
           ]
         }
       ],
@@ -403,69 +403,69 @@
     },
     {
       "id": "hsk2_l13_07",
-      "chinese": "放",
-      "pinyin": "fàng",
-      "english": "To put / To place",
-      "part_of_speech": "verb",
-      "example": "书放在桌上。",
-      "translation": "The book is on the table.",
+      "chinese": "轻松",
+      "pinyin": "qīng sōng",
+      "english": "Relaxed / Easy / Carefree",
+      "part_of_speech": "adjective",
+      "example": "休息的时候，他感觉很轻松。",
+      "translation": "When resting, he feels very relaxed.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 放 mean?",
-          "correct": "To put / To place",
+          "question": "What does 轻松 mean?",
+          "correct": "Relaxed / Easy / Carefree",
           "options": [
-            "To look / To watch / To read",
-            "Door / Gate",
-            "To close / Closed",
-            "To put / To place"
+            "To stand",
+            "To write",
+            "To wait",
+            "Relaxed / Easy / Carefree"
           ],
           "option_pinyin": [
-            "kàn",
-            "mén",
-            "guān",
-            "fàng"
+            "zhàn",
+            "xiě",
+            "děng",
+            "qīng sōng"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To put / To place",
-          "correct": "放",
+          "question": "Fill in: Relaxed / Easy / Carefree",
+          "correct": "轻松",
           "options": [
+            "轻松",
             "着",
-            "站",
-            "写",
-            "放"
+            "灯",
+            "关"
           ],
           "option_pinyin": [
+            "qīng sōng",
             "zhe",
-            "zhàn",
-            "xiě",
-            "fàng"
+            "dēng",
+            "guān"
           ],
-          "question_chinese": "书___在桌上。",
-          "question_pinyin": "书___在桌上。",
-          "question_english": "The book is on the table."
+          "question_chinese": "休息的时候，他感觉很___。",
+          "question_pinyin": "休息的时候，他感觉很___。",
+          "question_english": "When resting, he feels very relaxed."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To put / To place'?",
-          "correct": "放",
+          "question": "Which word means 'Relaxed / Easy / Carefree'?",
+          "correct": "轻松",
           "options": [
             "站",
-            "放",
-            "写",
-            "着"
+            "轻松",
+            "关",
+            "空调"
           ],
           "option_pinyin": [
             "zhàn",
-            "fàng",
-            "xiě",
-            "zhe"
+            "qīng sōng",
+            "guān",
+            "kōng tiáo"
           ]
         }
       ],
-      "example_pinyin": "shū fàng zài zhuō shàng"
+      "example_pinyin": "xiū xī de shí hòu tā gǎn jué hěn qīng sōng"
     },
     {
       "id": "hsk2_l13_08",
@@ -481,16 +481,16 @@
           "question": "What does 坐 mean?",
           "correct": "To sit",
           "options": [
-            "Aspect particle indicating ongoing state",
-            "To open / Open",
-            "To stand",
-            "To sit"
+            "Light / Lamp",
+            "Relaxed / Easy / Carefree",
+            "To sit",
+            "To write"
           ],
           "option_pinyin": [
-            "zhe",
-            "kāi",
-            "zhàn",
-            "zuò"
+            "dēng",
+            "qīng sōng",
+            "zuò",
+            "xiě"
           ]
         },
         {
@@ -498,16 +498,16 @@
           "question": "Fill in: To sit",
           "correct": "坐",
           "options": [
-            "看",
-            "等",
-            "关",
-            "坐"
+            "开",
+            "坐",
+            "写",
+            "关"
           ],
           "option_pinyin": [
-            "kàn",
-            "děng",
-            "guān",
-            "zuò"
+            "kāi",
+            "zuò",
+            "xiě",
+            "guān"
           ],
           "question_chinese": "他___着看书。",
           "question_pinyin": "他___着看书。",
@@ -519,15 +519,15 @@
           "correct": "坐",
           "options": [
             "坐",
-            "关",
+            "空调",
             "看",
-            "等"
+            "关"
           ],
           "option_pinyin": [
             "zuò",
-            "guān",
+            "kōng tiáo",
             "kàn",
-            "děng"
+            "guān"
           ]
         }
       ],
@@ -547,16 +547,16 @@
           "question": "What does 站 mean?",
           "correct": "To stand",
           "options": [
+            "Window",
             "To stand",
-            "To put / To place",
-            "Light / Lamp",
-            "To look / To watch / To read"
+            "To wait",
+            "To open / Open"
           ],
           "option_pinyin": [
+            "chuāng",
             "zhàn",
-            "fàng",
-            "dēng",
-            "kàn"
+            "děng",
+            "kāi"
           ]
         },
         {
@@ -564,16 +564,16 @@
           "question": "Fill in: To stand",
           "correct": "站",
           "options": [
-            "等",
-            "站",
+            "关",
             "着",
-            "窗"
+            "站",
+            "空调"
           ],
           "option_pinyin": [
-            "děng",
-            "zhàn",
+            "guān",
             "zhe",
-            "chuāng"
+            "zhàn",
+            "kōng tiáo"
           ],
           "question_chinese": "她___着等。",
           "question_pinyin": "她___着等。",
@@ -584,16 +584,16 @@
           "question": "Which word means 'To stand'?",
           "correct": "站",
           "options": [
-            "站",
-            "等",
-            "着",
-            "窗"
+            "轻松",
+            "坐",
+            "关",
+            "站"
           ],
           "option_pinyin": [
-            "zhàn",
-            "děng",
-            "zhe",
-            "chuāng"
+            "qīng sōng",
+            "zuò",
+            "guān",
+            "zhàn"
           ]
         }
       ],
@@ -613,16 +613,16 @@
           "question": "What does 等 mean?",
           "correct": "To wait",
           "options": [
-            "Light / Lamp",
+            "To close / Closed",
             "To wait",
-            "Window",
-            "To close / Closed"
+            "Relaxed / Easy / Carefree",
+            "To sit"
           ],
           "option_pinyin": [
-            "dēng",
+            "guān",
             "děng",
-            "chuāng",
-            "guān"
+            "qīng sōng",
+            "zuò"
           ]
         },
         {
@@ -630,16 +630,16 @@
           "question": "Fill in: To wait",
           "correct": "等",
           "options": [
-            "着",
-            "等",
             "写",
-            "看"
+            "窗",
+            "等",
+            "灯"
           ],
           "option_pinyin": [
-            "zhe",
-            "děng",
             "xiě",
-            "kàn"
+            "chuāng",
+            "děng",
+            "dēng"
           ],
           "question_chinese": "她站着___。",
           "question_pinyin": "她站着___。",
@@ -650,16 +650,16 @@
           "question": "Which word means 'To wait'?",
           "correct": "等",
           "options": [
-            "看",
+            "关",
             "着",
             "等",
-            "写"
+            "空调"
           ],
           "option_pinyin": [
-            "kàn",
+            "guān",
             "zhe",
             "děng",
-            "xiě"
+            "kōng tiáo"
           ]
         }
       ],
@@ -680,14 +680,14 @@
           "correct": "To write",
           "options": [
             "To sit",
+            "Aspect particle indicating ongoing state",
             "To look / To watch / To read",
-            "To stand",
             "To write"
           ],
           "option_pinyin": [
             "zuò",
+            "zhe",
             "kàn",
-            "zhàn",
             "xiě"
           ]
         },
@@ -696,16 +696,16 @@
           "question": "Fill in: To write",
           "correct": "写",
           "options": [
-            "窗",
-            "放",
             "写",
-            "关"
+            "看",
+            "窗",
+            "坐"
           ],
           "option_pinyin": [
-            "chuāng",
-            "fàng",
             "xiě",
-            "guān"
+            "kàn",
+            "chuāng",
+            "zuò"
           ],
           "question_chinese": "她坐着___字。",
           "question_pinyin": "她坐着___字。",
@@ -716,16 +716,16 @@
           "question": "Which word means 'To write'?",
           "correct": "写",
           "options": [
-            "放",
-            "关",
+            "站",
             "写",
-            "窗"
+            "窗",
+            "开"
           ],
           "option_pinyin": [
-            "fàng",
-            "guān",
+            "zhàn",
             "xiě",
-            "chuāng"
+            "chuāng",
+            "kāi"
           ]
         }
       ],
@@ -745,15 +745,15 @@
           "question": "What does 看 mean?",
           "correct": "To look / To watch / To read",
           "options": [
-            "Door / Gate",
-            "To put / To place",
+            "Aspect particle indicating ongoing state",
             "To sit",
+            "To wait",
             "To look / To watch / To read"
           ],
           "option_pinyin": [
-            "mén",
-            "fàng",
+            "zhe",
             "zuò",
+            "děng",
             "kàn"
           ]
         },
@@ -762,16 +762,16 @@
           "question": "Fill in: To look / To watch / To read",
           "correct": "看",
           "options": [
+            "站",
+            "灯",
             "看",
-            "窗",
-            "写",
-            "等"
+            "空调"
           ],
           "option_pinyin": [
+            "zhàn",
+            "dēng",
             "kàn",
-            "chuāng",
-            "xiě",
-            "děng"
+            "kōng tiáo"
           ],
           "question_chinese": "他坐着___书。",
           "question_pinyin": "他坐着___书。",
@@ -782,16 +782,16 @@
           "question": "Which word means 'To look / To watch / To read'?",
           "correct": "看",
           "options": [
-            "窗",
-            "写",
             "看",
-            "等"
+            "空调",
+            "窗",
+            "坐"
           ],
           "option_pinyin": [
-            "chuāng",
-            "xiě",
             "kàn",
-            "děng"
+            "kōng tiáo",
+            "chuāng",
+            "zuò"
           ]
         }
       ],

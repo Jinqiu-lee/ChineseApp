@@ -19,33 +19,33 @@
           "question": "What does 过 mean?",
           "correct": "Aspect particle for past experience",
           "options": [
-            "Before / Previously / In the past",
-            "To watch / To look / To see",
             "Aspect particle for past experience",
-            "Good-looking / Beautiful / (of films) Good to watch"
+            "Time(s) / Occurrence (measure word for frequency)",
+            "Before / Previously / In the past",
+            "Interesting"
           ],
           "option_pinyin": [
-            "yǐ qián",
-            "kàn",
             "guò",
-            "hǎo kàn"
+            "cì",
+            "yǐ qián",
+            "yǒu yì si"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Particle for past experience (过)",
+          "question": "Fill in: Aspect particle for past experience",
           "correct": "过",
           "options": [
             "电影",
-            "票",
             "过",
-            "真"
+            "看",
+            "已经"
           ],
           "option_pinyin": [
             "diàn yǐng",
-            "piào",
             "guò",
-            "zhēn"
+            "kàn",
+            "yǐ jīng"
           ],
           "question_chinese": "我看___那部电影。",
           "question_pinyin": "我看___那部电影。",
@@ -53,19 +53,19 @@
         },
         {
           "type": "multiple_choice",
-          "question": "Which word marks a past experience?",
+          "question": "Which word means 'Aspect particle for past experience'?",
           "correct": "过",
           "options": [
-            "票",
-            "电影",
             "真",
-            "过"
+            "过",
+            "有意思",
+            "看"
           ],
           "option_pinyin": [
-            "piào",
-            "diàn yǐng",
             "zhēn",
-            "guò"
+            "guò",
+            "yǒu yì si",
+            "kàn"
           ]
         }
       ],
@@ -85,16 +85,16 @@
           "question": "What does 电影 mean?",
           "correct": "Movie / Film",
           "options": [
-            "Movie / Film",
             "Before / Previously / In the past",
-            "Really / Truly",
-            "Interesting"
+            "To watch / To look / To see",
+            "Especially / Particularly (strong emphasis)",
+            "Movie / Film"
           ],
           "option_pinyin": [
-            "diàn yǐng",
             "yǐ qián",
-            "zhēn",
-            "yǒu yì si"
+            "kàn",
+            "yóu qí",
+            "diàn yǐng"
           ]
         },
         {
@@ -102,16 +102,16 @@
           "question": "Fill in: Movie / Film",
           "correct": "电影",
           "options": [
-            "已经",
-            "好看",
-            "过",
-            "电影"
+            "次",
+            "电影",
+            "看",
+            "尤其"
           ],
           "option_pinyin": [
-            "yǐ jīng",
-            "hǎo kàn",
-            "guò",
-            "diàn yǐng"
+            "cì",
+            "diàn yǐng",
+            "kàn",
+            "yóu qí"
           ],
           "question_chinese": "这部___非常好看。",
           "question_pinyin": "这部___非常好看。",
@@ -122,16 +122,16 @@
           "question": "Which word means 'Movie / Film'?",
           "correct": "电影",
           "options": [
-            "好看",
+            "尤其",
             "电影",
-            "过",
-            "已经"
+            "真",
+            "票"
           ],
           "option_pinyin": [
-            "hǎo kàn",
+            "yóu qí",
             "diàn yǐng",
-            "guò",
-            "yǐ jīng"
+            "zhēn",
+            "piào"
           ]
         }
       ],
@@ -151,16 +151,16 @@
           "question": "What does 看 mean?",
           "correct": "To watch / To look / To see",
           "options": [
-            "Interesting",
-            "Really / Truly",
+            "Movie / Film",
+            "Especially / Particularly (strong emphasis)",
             "To watch / To look / To see",
-            "Very / Extremely"
+            "Already"
           ],
           "option_pinyin": [
-            "yǒu yì si",
-            "zhēn",
+            "diàn yǐng",
+            "yóu qí",
             "kàn",
-            "fēi cháng"
+            "yǐ jīng"
           ]
         },
         {
@@ -169,15 +169,15 @@
           "correct": "看",
           "options": [
             "看",
-            "以前",
-            "好看",
-            "票"
+            "电影",
+            "次",
+            "认为"
           ],
           "option_pinyin": [
             "kàn",
-            "yǐ qián",
-            "hǎo kàn",
-            "piào"
+            "diàn yǐng",
+            "cì",
+            "rèn wéi"
           ],
           "question_chinese": "你___过那部电影吗？",
           "question_pinyin": "你___过那部电影吗？",
@@ -188,16 +188,16 @@
           "question": "Which word means 'To watch / To look / To see'?",
           "correct": "看",
           "options": [
-            "票",
             "看",
-            "以前",
-            "好看"
+            "真",
+            "过",
+            "认为"
           ],
           "option_pinyin": [
-            "piào",
             "kàn",
-            "yǐ qián",
-            "hǎo kàn"
+            "zhēn",
+            "guò",
+            "rèn wéi"
           ]
         }
       ],
@@ -217,16 +217,16 @@
           "question": "What does 次 mean?",
           "correct": "Time(s) / Occurrence (measure word for frequency)",
           "options": [
-            "To think / To feel",
-            "Already",
-            "Very / Extremely",
-            "Time(s) / Occurrence (measure word for frequency)"
+            "Time(s) / Occurrence (measure word for frequency)",
+            "Aspect particle for past experience",
+            "Ticket",
+            "Especially / Particularly (strong emphasis)"
           ],
           "option_pinyin": [
-            "jué de",
-            "yǐ jīng",
-            "fēi cháng",
-            "cì"
+            "cì",
+            "guò",
+            "piào",
+            "yóu qí"
           ]
         },
         {
@@ -234,16 +234,16 @@
           "question": "Fill in: Time(s) / Occurrence (measure word for frequency)",
           "correct": "次",
           "options": [
-            "真",
-            "好看",
+            "看",
             "次",
-            "以前"
+            "真",
+            "票"
           ],
           "option_pinyin": [
-            "zhēn",
-            "hǎo kàn",
+            "kàn",
             "cì",
-            "yǐ qián"
+            "zhēn",
+            "piào"
           ],
           "question_chinese": "我看了两___。",
           "question_pinyin": "我看了两___。",
@@ -254,15 +254,15 @@
           "question": "Which word means 'Time(s) / Occurrence (measure word for frequency)'?",
           "correct": "次",
           "options": [
-            "好看",
-            "以前",
             "次",
+            "电影",
+            "过",
             "真"
           ],
           "option_pinyin": [
-            "hǎo kàn",
-            "yǐ qián",
             "cì",
+            "diàn yǐng",
+            "guò",
             "zhēn"
           ]
         }
@@ -283,16 +283,16 @@
           "question": "What does 以前 mean?",
           "correct": "Before / Previously / In the past",
           "options": [
-            "To watch / To look / To see",
+            "Movie / Film",
             "Before / Previously / In the past",
-            "Time(s) / Occurrence (measure word for frequency)",
-            "Very / Extremely"
+            "Aspect particle for past experience",
+            "Interesting"
           ],
           "option_pinyin": [
-            "kàn",
+            "diàn yǐng",
             "yǐ qián",
-            "cì",
-            "fēi cháng"
+            "guò",
+            "yǒu yì si"
           ]
         },
         {
@@ -300,16 +300,16 @@
           "question": "Fill in: Before / Previously / In the past",
           "correct": "以前",
           "options": [
-            "票",
-            "觉得",
             "以前",
-            "已经"
+            "过",
+            "看",
+            "认为"
           ],
           "option_pinyin": [
-            "piào",
-            "jué de",
             "yǐ qián",
-            "yǐ jīng"
+            "guò",
+            "kàn",
+            "rèn wéi"
           ],
           "question_chinese": "我___看过这部电影。",
           "question_pinyin": "我___看过这部电影。",
@@ -320,16 +320,16 @@
           "question": "Which word means 'Before / Previously / In the past'?",
           "correct": "以前",
           "options": [
-            "觉得",
+            "看",
             "以前",
-            "票",
-            "已经"
+            "次",
+            "电影"
           ],
           "option_pinyin": [
-            "jué de",
+            "kàn",
             "yǐ qián",
-            "piào",
-            "yǐ jīng"
+            "cì",
+            "diàn yǐng"
           ]
         }
       ],
@@ -349,16 +349,16 @@
           "question": "What does 已经 mean?",
           "correct": "Already",
           "options": [
-            "Already",
             "Good-looking / Beautiful / (of films) Good to watch",
-            "Time(s) / Occurrence (measure word for frequency)",
-            "Really / Truly"
+            "To think / To believe / To consider",
+            "Before / Previously / In the past",
+            "Already"
           ],
           "option_pinyin": [
-            "yǐ jīng",
             "hǎo kàn",
-            "cì",
-            "zhēn"
+            "rèn wéi",
+            "yǐ qián",
+            "yǐ jīng"
           ]
         },
         {
@@ -366,16 +366,16 @@
           "question": "Fill in: Already",
           "correct": "已经",
           "options": [
-            "看",
-            "以前",
+            "有意思",
+            "次",
             "已经",
-            "非常"
+            "票"
           ],
           "option_pinyin": [
-            "kàn",
-            "yǐ qián",
+            "yǒu yì si",
+            "cì",
             "yǐ jīng",
-            "fēi cháng"
+            "piào"
           ],
           "question_chinese": "我___买票了。",
           "question_pinyin": "我___买票了。",
@@ -386,16 +386,16 @@
           "question": "Which word means 'Already'?",
           "correct": "已经",
           "options": [
-            "看",
-            "非常",
+            "真",
             "已经",
-            "以前"
+            "以前",
+            "好看"
           ],
           "option_pinyin": [
-            "kàn",
-            "fēi cháng",
+            "zhēn",
             "yǐ jīng",
-            "yǐ qián"
+            "yǐ qián",
+            "hǎo kàn"
           ]
         }
       ],
@@ -416,14 +416,14 @@
           "correct": "Really / Truly",
           "options": [
             "Movie / Film",
-            "Before / Previously / In the past",
-            "To think / To feel",
+            "Good-looking / Beautiful / (of films) Good to watch",
+            "To watch / To look / To see",
             "Really / Truly"
           ],
           "option_pinyin": [
             "diàn yǐng",
-            "yǐ qián",
-            "jué de",
+            "hǎo kàn",
+            "kàn",
             "zhēn"
           ]
         },
@@ -432,16 +432,16 @@
           "question": "Fill in: Really / Truly",
           "correct": "真",
           "options": [
+            "认为",
+            "以前",
             "真",
-            "已经",
-            "票",
-            "次"
+            "好看"
           ],
           "option_pinyin": [
+            "rèn wéi",
+            "yǐ qián",
             "zhēn",
-            "yǐ jīng",
-            "piào",
-            "cì"
+            "hǎo kàn"
           ],
           "question_chinese": "这部电影___有意思！",
           "question_pinyin": "这部电影___有意思！",
@@ -452,16 +452,16 @@
           "question": "Which word means 'Really / Truly'?",
           "correct": "真",
           "options": [
-            "次",
-            "票",
             "真",
-            "已经"
+            "以前",
+            "认为",
+            "次"
           ],
           "option_pinyin": [
-            "cì",
-            "piào",
             "zhēn",
-            "yǐ jīng"
+            "yǐ qián",
+            "rèn wéi",
+            "cì"
           ]
         }
       ],
@@ -481,16 +481,16 @@
           "question": "What does 好看 mean?",
           "correct": "Good-looking / Beautiful / (of films) Good to watch",
           "options": [
-            "Aspect particle for past experience",
+            "Really / Truly",
+            "Movie / Film",
             "Good-looking / Beautiful / (of films) Good to watch",
-            "Time(s) / Occurrence (measure word for frequency)",
-            "To watch / To look / To see"
+            "Especially / Particularly (strong emphasis)"
           ],
           "option_pinyin": [
-            "guò",
+            "zhēn",
+            "diàn yǐng",
             "hǎo kàn",
-            "cì",
-            "kàn"
+            "yóu qí"
           ]
         },
         {
@@ -498,16 +498,16 @@
           "question": "Fill in: Good-looking / Beautiful / (of films) Good to watch",
           "correct": "好看",
           "options": [
-            "以前",
             "好看",
-            "电影",
-            "票"
+            "次",
+            "以前",
+            "真"
           ],
           "option_pinyin": [
-            "yǐ qián",
             "hǎo kàn",
-            "diàn yǐng",
-            "piào"
+            "cì",
+            "yǐ qián",
+            "zhēn"
           ],
           "question_chinese": "这部电影非常___。",
           "question_pinyin": "这部电影非常___。",
@@ -518,16 +518,16 @@
           "question": "Which word means 'Good-looking / Beautiful / (of films) Good to watch'?",
           "correct": "好看",
           "options": [
-            "票",
-            "好看",
-            "电影",
-            "以前"
+            "有意思",
+            "尤其",
+            "以前",
+            "好看"
           ],
           "option_pinyin": [
-            "piào",
-            "hǎo kàn",
-            "diàn yǐng",
-            "yǐ qián"
+            "yǒu yì si",
+            "yóu qí",
+            "yǐ qián",
+            "hǎo kàn"
           ]
         }
       ],
@@ -535,69 +535,69 @@
     },
     {
       "id": "hsk2_l14_09",
-      "chinese": "非常",
-      "pinyin": "fēi cháng",
-      "english": "Very / Extremely",
+      "chinese": "尤其",
+      "pinyin": "yóu qí",
+      "english": "Especially / Particularly (strong emphasis)",
       "part_of_speech": "adverb",
-      "example": "这部电影非常好看。",
-      "translation": "This movie is extremely good.",
+      "example": "他尤其喜欢看电影。",
+      "translation": "He especially likes watching movies.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 非常 mean?",
-          "correct": "Very / Extremely",
+          "question": "What does 尤其 mean?",
+          "correct": "Especially / Particularly (strong emphasis)",
           "options": [
-            "Time(s) / Occurrence (measure word for frequency)",
-            "Movie / Film",
-            "Very / Extremely",
+            "To think / To believe / To consider",
+            "Before / Previously / In the past",
+            "Especially / Particularly (strong emphasis)",
             "To watch / To look / To see"
           ],
           "option_pinyin": [
-            "cì",
-            "diàn yǐng",
-            "fēi cháng",
+            "rèn wéi",
+            "yǐ qián",
+            "yóu qí",
             "kàn"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Very / Extremely",
-          "correct": "非常",
+          "question": "Fill in: Especially / Particularly (strong emphasis)",
+          "correct": "尤其",
           "options": [
-            "真",
-            "非常",
-            "过",
+            "已经",
+            "好看",
+            "尤其",
             "票"
           ],
           "option_pinyin": [
-            "zhēn",
-            "fēi cháng",
-            "guò",
+            "yǐ jīng",
+            "hǎo kàn",
+            "yóu qí",
             "piào"
           ],
-          "question_chinese": "这部电影___好看。",
-          "question_pinyin": "这部电影___好看。",
-          "question_english": "This movie is extremely good."
+          "question_chinese": "他___喜欢看电影。",
+          "question_pinyin": "他___喜欢看电影。",
+          "question_english": "He especially likes watching movies."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Very / Extremely'?",
-          "correct": "非常",
+          "question": "Which word means 'Especially / Particularly (strong emphasis)'?",
+          "correct": "尤其",
           "options": [
-            "真",
-            "过",
-            "非常",
-            "票"
+            "已经",
+            "以前",
+            "尤其",
+            "认为"
           ],
           "option_pinyin": [
-            "zhēn",
-            "guò",
-            "fēi cháng",
-            "piào"
+            "yǐ jīng",
+            "yǐ qián",
+            "yóu qí",
+            "rèn wéi"
           ]
         }
       ],
-      "example_pinyin": "zhè bù diàn yǐng fēi cháng hǎo kàn"
+      "example_pinyin": "tā yóu qí xǐ huān kàn diàn yǐng"
     },
     {
       "id": "hsk2_l14_10",
@@ -613,16 +613,16 @@
           "question": "What does 有意思 mean?",
           "correct": "Interesting",
           "options": [
-            "To think / To feel",
             "Interesting",
+            "To watch / To look / To see",
             "Really / Truly",
-            "Very / Extremely"
+            "Especially / Particularly (strong emphasis)"
           ],
           "option_pinyin": [
-            "jué de",
             "yǒu yì si",
+            "kàn",
             "zhēn",
-            "fēi cháng"
+            "yóu qí"
           ]
         },
         {
@@ -630,16 +630,16 @@
           "question": "Fill in: Interesting",
           "correct": "有意思",
           "options": [
-            "有意思",
+            "尤其",
             "以前",
-            "好看",
-            "次"
+            "过",
+            "有意思"
           ],
           "option_pinyin": [
-            "yǒu yì si",
+            "yóu qí",
             "yǐ qián",
-            "hǎo kàn",
-            "cì"
+            "guò",
+            "yǒu yì si"
           ],
           "question_chinese": "这部电影真___。",
           "question_pinyin": "这部电影真___。",
@@ -650,16 +650,16 @@
           "question": "Which word means 'Interesting'?",
           "correct": "有意思",
           "options": [
-            "好看",
-            "以前",
+            "电影",
             "有意思",
-            "次"
+            "好看",
+            "真"
           ],
           "option_pinyin": [
-            "hǎo kàn",
-            "yǐ qián",
+            "diàn yǐng",
             "yǒu yì si",
-            "cì"
+            "hǎo kàn",
+            "zhēn"
           ]
         }
       ],
@@ -667,69 +667,69 @@
     },
     {
       "id": "hsk2_l14_11",
-      "chinese": "觉得",
-      "pinyin": "jué de",
-      "english": "To think / To feel",
+      "chinese": "认为",
+      "pinyin": "rèn wéi",
+      "english": "To think / To believe / To consider",
       "part_of_speech": "verb",
-      "example": "我觉得很有意思。",
-      "translation": "I think it's very interesting.",
+      "example": "我认为这部电影很好看。",
+      "translation": "I think this movie is very good.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 觉得 mean?",
-          "correct": "To think / To feel",
+          "question": "What does 认为 mean?",
+          "correct": "To think / To believe / To consider",
           "options": [
-            "Time(s) / Occurrence (measure word for frequency)",
-            "Movie / Film",
-            "To think / To feel",
-            "Ticket"
+            "Really / Truly",
+            "To think / To believe / To consider",
+            "Especially / Particularly (strong emphasis)",
+            "Time(s) / Occurrence (measure word for frequency)"
           ],
           "option_pinyin": [
-            "cì",
-            "diàn yǐng",
-            "jué de",
-            "piào"
+            "zhēn",
+            "rèn wéi",
+            "yóu qí",
+            "cì"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To think / To feel",
-          "correct": "觉得",
+          "question": "Fill in: To think / To believe / To consider",
+          "correct": "认为",
           "options": [
-            "非常",
-            "觉得",
-            "看",
-            "已经"
+            "尤其",
+            "次",
+            "认为",
+            "票"
           ],
           "option_pinyin": [
-            "fēi cháng",
-            "jué de",
-            "kàn",
-            "yǐ jīng"
+            "yóu qí",
+            "cì",
+            "rèn wéi",
+            "piào"
           ],
-          "question_chinese": "我___很有意思。",
-          "question_pinyin": "我___很有意思。",
-          "question_english": "I think it's very interesting."
+          "question_chinese": "我___这部电影很好看。",
+          "question_pinyin": "我___这部电影很好看。",
+          "question_english": "I think this movie is very good."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To think / To feel'?",
-          "correct": "觉得",
+          "question": "Which word means 'To think / To believe / To consider'?",
+          "correct": "认为",
           "options": [
-            "看",
-            "已经",
-            "非常",
-            "觉得"
+            "票",
+            "有意思",
+            "认为",
+            "电影"
           ],
           "option_pinyin": [
-            "kàn",
-            "yǐ jīng",
-            "fēi cháng",
-            "jué de"
+            "piào",
+            "yǒu yì si",
+            "rèn wéi",
+            "diàn yǐng"
           ]
         }
       ],
-      "example_pinyin": "wǒ jué de hěn yǒu yì si"
+      "example_pinyin": "wǒ rèn wéi zhè bù diàn yǐng hěn hǎo kàn"
     },
     {
       "id": "hsk2_l14_12",
@@ -745,16 +745,16 @@
           "question": "What does 票 mean?",
           "correct": "Ticket",
           "options": [
-            "Really / Truly",
-            "Already",
+            "Good-looking / Beautiful / (of films) Good to watch",
+            "Time(s) / Occurrence (measure word for frequency)",
             "Ticket",
-            "Before / Previously / In the past"
+            "Especially / Particularly (strong emphasis)"
           ],
           "option_pinyin": [
-            "zhēn",
-            "yǐ jīng",
+            "hǎo kàn",
+            "cì",
             "piào",
-            "yǐ qián"
+            "yóu qí"
           ]
         },
         {
@@ -762,16 +762,16 @@
           "question": "Fill in: Ticket",
           "correct": "票",
           "options": [
+            "已经",
             "票",
-            "好看",
-            "有意思",
-            "电影"
+            "看",
+            "好看"
           ],
           "option_pinyin": [
+            "yǐ jīng",
             "piào",
-            "hǎo kàn",
-            "yǒu yì si",
-            "diàn yǐng"
+            "kàn",
+            "hǎo kàn"
           ],
           "question_chinese": "___已经买好了。",
           "question_pinyin": "___已经买好了。",
@@ -782,16 +782,16 @@
           "question": "Which word means 'Ticket'?",
           "correct": "票",
           "options": [
-            "有意思",
-            "电影",
-            "好看",
-            "票"
+            "票",
+            "真",
+            "看",
+            "次"
           ],
           "option_pinyin": [
-            "yǒu yì si",
-            "diàn yǐng",
-            "hǎo kàn",
-            "piào"
+            "piào",
+            "zhēn",
+            "kàn",
+            "cì"
           ]
         }
       ],

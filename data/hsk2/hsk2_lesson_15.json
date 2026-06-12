@@ -19,16 +19,16 @@
           "question": "What does 新年 mean?",
           "correct": "New Year",
           "options": [
-            "Everyone / Everybody",
-            "Birthday",
+            "New Year",
             "Gift / Present",
-            "New Year"
+            "Holiday / Festival",
+            "To celebrate"
           ],
           "option_pinyin": [
-            "dà jiā",
-            "shēng rì",
+            "xīn nián",
             "lǐ wù",
-            "xīn nián"
+            "jié rì",
+            "qìng zhù"
           ]
         },
         {
@@ -36,16 +36,16 @@
           "question": "Fill in: New Year",
           "correct": "新年",
           "options": [
-            "一起",
             "送",
             "快乐",
-            "新年"
+            "新年",
+            "还"
           ],
           "option_pinyin": [
-            "yì qǐ",
             "sòng",
             "kuài lè",
-            "xīn nián"
+            "xīn nián",
+            "hái"
           ],
           "question_chinese": "___快乐！",
           "question_pinyin": "___快乐！",
@@ -56,15 +56,15 @@
           "question": "Which word means 'New Year'?",
           "correct": "新年",
           "options": [
-            "送",
             "新年",
-            "一起",
+            "祝福",
+            "顺利",
             "快乐"
           ],
           "option_pinyin": [
-            "sòng",
             "xīn nián",
-            "yì qǐ",
+            "zhù fú",
+            "shùn lì",
             "kuài lè"
           ]
         }
@@ -85,16 +85,16 @@
           "question": "What does 快乐 mean?",
           "correct": "Happy / Happiness",
           "options": [
+            "New Year",
+            "To wish (someone something)",
             "Happy / Happiness",
-            "Again / Once more",
-            "To hope / Hope",
-            "Holiday / Festival"
+            "To celebrate"
           ],
           "option_pinyin": [
+            "xīn nián",
+            "zhù",
             "kuài lè",
-            "zài",
-            "xī wàng",
-            "jié rì"
+            "qìng zhù"
           ]
         },
         {
@@ -103,15 +103,15 @@
           "correct": "快乐",
           "options": [
             "快乐",
-            "一起",
-            "大家",
-            "还"
+            "希望",
+            "生日",
+            "送"
           ],
           "option_pinyin": [
             "kuài lè",
-            "yì qǐ",
-            "dà jiā",
-            "hái"
+            "xī wàng",
+            "shēng rì",
+            "sòng"
           ],
           "question_chinese": "祝你新年___！",
           "question_pinyin": "祝你新年___！",
@@ -122,16 +122,16 @@
           "question": "Which word means 'Happy / Happiness'?",
           "correct": "快乐",
           "options": [
+            "祝",
             "还",
-            "一起",
-            "大家",
-            "快乐"
+            "快乐",
+            "送"
           ],
           "option_pinyin": [
+            "zhù",
             "hái",
-            "yì qǐ",
-            "dà jiā",
-            "kuài lè"
+            "kuài lè",
+            "sòng"
           ]
         }
       ],
@@ -151,16 +151,16 @@
           "question": "What does 生日 mean?",
           "correct": "Birthday",
           "options": [
-            "Everyone / Everybody",
-            "Still / Also / In addition",
+            "Happy / Happiness",
+            "To hope / Hope",
             "Birthday",
-            "Again / Once more"
+            "To wish (someone something)"
           ],
           "option_pinyin": [
-            "dà jiā",
-            "hái",
+            "kuài lè",
+            "xī wàng",
             "shēng rì",
-            "zài"
+            "zhù"
           ]
         },
         {
@@ -168,16 +168,16 @@
           "question": "Fill in: Birthday",
           "correct": "生日",
           "options": [
-            "生日",
+            "庆祝",
             "新年",
-            "希望",
-            "节日"
+            "生日",
+            "祝"
           ],
           "option_pinyin": [
-            "shēng rì",
+            "qìng zhù",
             "xīn nián",
-            "xī wàng",
-            "jié rì"
+            "shēng rì",
+            "zhù"
           ],
           "question_chinese": "今天是她的___。",
           "question_pinyin": "今天是她的___。",
@@ -188,16 +188,16 @@
           "question": "Which word means 'Birthday'?",
           "correct": "生日",
           "options": [
-            "生日",
+            "礼物",
+            "顺利",
             "节日",
-            "希望",
-            "新年"
+            "生日"
           ],
           "option_pinyin": [
-            "shēng rì",
+            "lǐ wù",
+            "shùn lì",
             "jié rì",
-            "xī wàng",
-            "xīn nián"
+            "shēng rì"
           ]
         }
       ],
@@ -218,15 +218,15 @@
           "correct": "Holiday / Festival",
           "options": [
             "To give (as a gift) / To see someone off",
-            "Happy / Happiness",
-            "Still / Also / In addition",
-            "Holiday / Festival"
+            "Holiday / Festival",
+            "To bless / Best wishes / Blessing",
+            "Birthday"
           ],
           "option_pinyin": [
             "sòng",
-            "kuài lè",
-            "hái",
-            "jié rì"
+            "jié rì",
+            "zhù fú",
+            "shēng rì"
           ]
         },
         {
@@ -235,15 +235,15 @@
           "correct": "节日",
           "options": [
             "希望",
-            "大家",
             "节日",
-            "一起"
+            "送",
+            "快乐"
           ],
           "option_pinyin": [
             "xī wàng",
-            "dà jiā",
             "jié rì",
-            "yì qǐ"
+            "sòng",
+            "kuài lè"
           ],
           "question_chinese": "今天是___。",
           "question_pinyin": "今天是___。",
@@ -254,16 +254,16 @@
           "question": "Which word means 'Holiday / Festival'?",
           "correct": "节日",
           "options": [
-            "一起",
-            "大家",
             "节日",
-            "希望"
+            "庆祝",
+            "顺利",
+            "祝"
           ],
           "option_pinyin": [
-            "yì qǐ",
-            "dà jiā",
             "jié rì",
-            "xī wàng"
+            "qìng zhù",
+            "shùn lì",
+            "zhù"
           ]
         }
       ],
@@ -283,16 +283,16 @@
           "question": "What does 送 mean?",
           "correct": "To give (as a gift) / To see someone off",
           "options": [
-            "Together",
-            "Still / Also / In addition",
-            "To give (as a gift) / To see someone off",
-            "Everyone / Everybody"
+            "Birthday",
+            "Smooth / Successful / Going well",
+            "Happy / Happiness",
+            "To give (as a gift) / To see someone off"
           ],
           "option_pinyin": [
-            "yì qǐ",
-            "hái",
-            "sòng",
-            "dà jiā"
+            "shēng rì",
+            "shùn lì",
+            "kuài lè",
+            "sòng"
           ]
         },
         {
@@ -300,16 +300,16 @@
           "question": "Fill in: To give (as a gift) / To see someone off",
           "correct": "送",
           "options": [
-            "生日",
             "送",
-            "再",
-            "节日"
+            "节日",
+            "庆祝",
+            "还"
           ],
           "option_pinyin": [
-            "shēng rì",
             "sòng",
-            "zài",
-            "jié rì"
+            "jié rì",
+            "qìng zhù",
+            "hái"
           ],
           "question_chinese": "我___给你一件礼物。",
           "question_pinyin": "我___给你一件礼物。",
@@ -320,16 +320,16 @@
           "question": "Which word means 'To give (as a gift) / To see someone off'?",
           "correct": "送",
           "options": [
-            "节日",
-            "送",
-            "生日",
-            "再"
+            "希望",
+            "快乐",
+            "祝",
+            "送"
           ],
           "option_pinyin": [
-            "jié rì",
-            "sòng",
-            "shēng rì",
-            "zài"
+            "xī wàng",
+            "kuài lè",
+            "zhù",
+            "sòng"
           ]
         }
       ],
@@ -349,16 +349,16 @@
           "question": "What does 礼物 mean?",
           "correct": "Gift / Present",
           "options": [
-            "Gift / Present",
             "To wish (someone something)",
-            "To hope / Hope",
-            "Still / Also / In addition"
+            "Birthday",
+            "Gift / Present",
+            "Smooth / Successful / Going well"
           ],
           "option_pinyin": [
-            "lǐ wù",
             "zhù",
-            "xī wàng",
-            "hái"
+            "shēng rì",
+            "lǐ wù",
+            "shùn lì"
           ]
         },
         {
@@ -366,16 +366,16 @@
           "question": "Fill in: Gift / Present",
           "correct": "礼物",
           "options": [
-            "再",
+            "顺利",
             "礼物",
-            "送",
-            "大家"
+            "快乐",
+            "送"
           ],
           "option_pinyin": [
-            "zài",
+            "shùn lì",
             "lǐ wù",
-            "sòng",
-            "dà jiā"
+            "kuài lè",
+            "sòng"
           ],
           "question_chinese": "这是送给你的___。",
           "question_pinyin": "这是送给你的___。",
@@ -386,16 +386,16 @@
           "question": "Which word means 'Gift / Present'?",
           "correct": "礼物",
           "options": [
-            "大家",
+            "庆祝",
+            "送",
             "礼物",
-            "再",
-            "送"
+            "还"
           ],
           "option_pinyin": [
-            "dà jiā",
+            "qìng zhù",
+            "sòng",
             "lǐ wù",
-            "zài",
-            "sòng"
+            "hái"
           ]
         }
       ],
@@ -415,16 +415,16 @@
           "question": "What does 祝 mean?",
           "correct": "To wish (someone something)",
           "options": [
-            "Again / Once more",
-            "Together",
             "To wish (someone something)",
-            "Gift / Present"
+            "To hope / Hope",
+            "To celebrate",
+            "To bless / Best wishes / Blessing"
           ],
           "option_pinyin": [
-            "zài",
-            "yì qǐ",
             "zhù",
-            "lǐ wù"
+            "xī wàng",
+            "qìng zhù",
+            "zhù fú"
           ]
         },
         {
@@ -432,16 +432,16 @@
           "question": "Fill in: To wish (someone something)",
           "correct": "祝",
           "options": [
-            "大家",
-            "节日",
-            "希望",
-            "祝"
+            "顺利",
+            "祝",
+            "礼物",
+            "庆祝"
           ],
           "option_pinyin": [
-            "dà jiā",
-            "jié rì",
-            "xī wàng",
-            "zhù"
+            "shùn lì",
+            "zhù",
+            "lǐ wù",
+            "qìng zhù"
           ],
           "question_chinese": "___大家快乐！",
           "question_pinyin": "___大家快乐！",
@@ -452,16 +452,16 @@
           "question": "Which word means 'To wish (someone something)'?",
           "correct": "祝",
           "options": [
-            "希望",
-            "大家",
+            "祝",
+            "送",
             "节日",
-            "祝"
+            "生日"
           ],
           "option_pinyin": [
-            "xī wàng",
-            "dà jiā",
+            "zhù",
+            "sòng",
             "jié rì",
-            "zhù"
+            "shēng rì"
           ]
         }
       ],
@@ -481,15 +481,15 @@
           "question": "What does 希望 mean?",
           "correct": "To hope / Hope",
           "options": [
-            "Again / Once more",
-            "Holiday / Festival",
             "To wish (someone something)",
+            "Happy / Happiness",
+            "Smooth / Successful / Going well",
             "To hope / Hope"
           ],
           "option_pinyin": [
-            "zài",
-            "jié rì",
             "zhù",
+            "kuài lè",
+            "shùn lì",
             "xī wàng"
           ]
         },
@@ -498,16 +498,16 @@
           "question": "Fill in: To hope / Hope",
           "correct": "希望",
           "options": [
-            "礼物",
-            "一起",
-            "希望",
-            "大家"
+            "节日",
+            "快乐",
+            "新年",
+            "希望"
           ],
           "option_pinyin": [
-            "lǐ wù",
-            "yì qǐ",
-            "xī wàng",
-            "dà jiā"
+            "jié rì",
+            "kuài lè",
+            "xīn nián",
+            "xī wàng"
           ],
           "question_chinese": "我___大家都快乐。",
           "question_pinyin": "我___大家都快乐。",
@@ -518,16 +518,16 @@
           "question": "Which word means 'To hope / Hope'?",
           "correct": "希望",
           "options": [
+            "礼物",
+            "祝福",
             "希望",
-            "大家",
-            "一起",
-            "礼物"
+            "节日"
           ],
           "option_pinyin": [
+            "lǐ wù",
+            "zhù fú",
             "xī wàng",
-            "dà jiā",
-            "yì qǐ",
-            "lǐ wù"
+            "jié rì"
           ]
         }
       ],
@@ -547,16 +547,16 @@
           "question": "What does 还 mean?",
           "correct": "Still / Also / In addition",
           "options": [
-            "Holiday / Festival",
-            "Gift / Present",
-            "Birthday",
-            "Still / Also / In addition"
+            "New Year",
+            "Still / Also / In addition",
+            "Smooth / Successful / Going well",
+            "To hope / Hope"
           ],
           "option_pinyin": [
-            "jié rì",
-            "lǐ wù",
-            "shēng rì",
-            "hái"
+            "xīn nián",
+            "hái",
+            "shùn lì",
+            "xī wàng"
           ]
         },
         {
@@ -564,16 +564,16 @@
           "question": "Fill in: Still / Also / In addition",
           "correct": "还",
           "options": [
-            "大家",
-            "希望",
-            "送",
-            "还"
+            "快乐",
+            "顺利",
+            "还",
+            "送"
           ],
           "option_pinyin": [
-            "dà jiā",
-            "xī wàng",
-            "sòng",
-            "hái"
+            "kuài lè",
+            "shùn lì",
+            "hái",
+            "sòng"
           ],
           "question_chinese": "他___没来。",
           "question_pinyin": "他___没来。",
@@ -584,16 +584,16 @@
           "question": "Which word means 'Still / Also / In addition'?",
           "correct": "还",
           "options": [
-            "希望",
-            "大家",
-            "送",
-            "还"
+            "礼物",
+            "还",
+            "新年",
+            "送"
           ],
           "option_pinyin": [
-            "xī wàng",
-            "dà jiā",
-            "sòng",
-            "hái"
+            "lǐ wù",
+            "hái",
+            "xīn nián",
+            "sòng"
           ]
         }
       ],
@@ -601,201 +601,201 @@
     },
     {
       "id": "hsk2_l15_10",
-      "chinese": "再",
-      "pinyin": "zài",
-      "english": "Again / Once more",
-      "part_of_speech": "adverb",
-      "example": "明年再来！",
-      "translation": "Come again next year!",
+      "chinese": "庆祝",
+      "pinyin": "qìng zhù",
+      "english": "To celebrate",
+      "part_of_speech": "verb",
+      "example": "大家一起庆祝新年吧！",
+      "translation": "Let's all celebrate the New Year together!",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 再 mean?",
-          "correct": "Again / Once more",
+          "question": "What does 庆祝 mean?",
+          "correct": "To celebrate",
           "options": [
             "Holiday / Festival",
-            "To wish (someone something)",
-            "Again / Once more",
-            "Happy / Happiness"
-          ],
-          "option_pinyin": [
-            "jié rì",
-            "zhù",
-            "zài",
-            "kuài lè"
-          ]
-        },
-        {
-          "type": "fill_blank",
-          "question": "Fill in: Again / Once more",
-          "correct": "再",
-          "options": [
-            "再",
-            "礼物",
-            "大家",
-            "新年"
-          ],
-          "option_pinyin": [
-            "zài",
-            "lǐ wù",
-            "dà jiā",
-            "xīn nián"
-          ],
-          "question_chinese": "明年___来！",
-          "question_pinyin": "明年___来！",
-          "question_english": "Come again next year!"
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'Again / Once more'?",
-          "correct": "再",
-          "options": [
-            "再",
-            "新年",
-            "礼物",
-            "大家"
-          ],
-          "option_pinyin": [
-            "zài",
-            "xīn nián",
-            "lǐ wù",
-            "dà jiā"
-          ]
-        }
-      ],
-      "example_pinyin": "míng nián zài lái"
-    },
-    {
-      "id": "hsk2_l15_11",
-      "chinese": "一起",
-      "pinyin": "yì qǐ",
-      "english": "Together",
-      "part_of_speech": "adverb",
-      "example": "大家一起过节。",
-      "translation": "Everyone celebrates together.",
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "What does 一起 mean?",
-          "correct": "Together",
-          "options": [
-            "Together",
-            "Still / Also / In addition",
-            "To hope / Hope",
-            "Happy / Happiness"
-          ],
-          "option_pinyin": [
-            "yì qǐ",
-            "hái",
-            "xī wàng",
-            "kuài lè"
-          ]
-        },
-        {
-          "type": "fill_blank",
-          "question": "Fill in: Together",
-          "correct": "一起",
-          "options": [
-            "节日",
-            "一起",
-            "新年",
-            "生日"
-          ],
-          "option_pinyin": [
-            "jié rì",
-            "yì qǐ",
-            "xīn nián",
-            "shēng rì"
-          ],
-          "question_chinese": "大家___过节。",
-          "question_pinyin": "大家___过节。",
-          "question_english": "Everyone celebrates together."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'Together'?",
-          "correct": "一起",
-          "options": [
-            "一起",
-            "节日",
-            "新年",
-            "生日"
-          ],
-          "option_pinyin": [
-            "yì qǐ",
-            "jié rì",
-            "xīn nián",
-            "shēng rì"
-          ]
-        }
-      ],
-      "example_pinyin": "dà jiā yì qǐ guò jié"
-    },
-    {
-      "id": "hsk2_l15_12",
-      "chinese": "大家",
-      "pinyin": "dà jiā",
-      "english": "Everyone / Everybody",
-      "part_of_speech": "pronoun",
-      "example": "大家一起过节。",
-      "translation": "Everyone celebrates together.",
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "What does 大家 mean?",
-          "correct": "Everyone / Everybody",
-          "options": [
-            "Everyone / Everybody",
-            "Birthday",
-            "Still / Also / In addition",
+            "Gift / Present",
+            "To celebrate",
             "To hope / Hope"
           ],
           "option_pinyin": [
-            "dà jiā",
-            "shēng rì",
-            "hái",
+            "jié rì",
+            "lǐ wù",
+            "qìng zhù",
             "xī wàng"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Everyone / Everybody",
-          "correct": "大家",
+          "question": "Fill in: To celebrate",
+          "correct": "庆祝",
           "options": [
-            "新年",
-            "大家",
-            "节日",
-            "一起"
-          ],
-          "option_pinyin": [
-            "xīn nián",
-            "dà jiā",
-            "jié rì",
-            "yì qǐ"
-          ],
-          "question_chinese": "___一起过节。",
-          "question_pinyin": "___一起过节。",
-          "question_english": "Everyone celebrates together."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'Everyone / Everybody'?",
-          "correct": "大家",
-          "options": [
-            "大家",
-            "新年",
-            "一起",
+            "庆祝",
+            "希望",
+            "生日",
             "节日"
           ],
           "option_pinyin": [
-            "dà jiā",
-            "xīn nián",
-            "yì qǐ",
+            "qìng zhù",
+            "xī wàng",
+            "shēng rì",
             "jié rì"
+          ],
+          "question_chinese": "大家一起___新年吧！",
+          "question_pinyin": "大家一起___新年吧！",
+          "question_english": "Let's all celebrate the New Year together!"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To celebrate'?",
+          "correct": "庆祝",
+          "options": [
+            "送",
+            "庆祝",
+            "生日",
+            "祝福"
+          ],
+          "option_pinyin": [
+            "sòng",
+            "qìng zhù",
+            "shēng rì",
+            "zhù fú"
           ]
         }
       ],
-      "example_pinyin": "dà jiā yì qǐ guò jié"
+      "example_pinyin": "dà jiā yì qǐ qìng zhù xīn nián ba"
+    },
+    {
+      "id": "hsk2_l15_11",
+      "chinese": "顺利",
+      "pinyin": "shùn lì",
+      "english": "Smooth / Successful / Going well",
+      "part_of_speech": "adjective",
+      "example": "希望今年一切顺利！",
+      "translation": "I hope everything goes smoothly this year!",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 顺利 mean?",
+          "correct": "Smooth / Successful / Going well",
+          "options": [
+            "Smooth / Successful / Going well",
+            "To hope / Hope",
+            "New Year",
+            "To give (as a gift) / To see someone off"
+          ],
+          "option_pinyin": [
+            "shùn lì",
+            "xī wàng",
+            "xīn nián",
+            "sòng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Smooth / Successful / Going well",
+          "correct": "顺利",
+          "options": [
+            "庆祝",
+            "顺利",
+            "节日",
+            "快乐"
+          ],
+          "option_pinyin": [
+            "qìng zhù",
+            "shùn lì",
+            "jié rì",
+            "kuài lè"
+          ],
+          "question_chinese": "希望今年一切___！",
+          "question_pinyin": "希望今年一切___！",
+          "question_english": "I hope everything goes smoothly this year!"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Smooth / Successful / Going well'?",
+          "correct": "顺利",
+          "options": [
+            "顺利",
+            "生日",
+            "还",
+            "希望"
+          ],
+          "option_pinyin": [
+            "shùn lì",
+            "shēng rì",
+            "hái",
+            "xī wàng"
+          ]
+        }
+      ],
+      "example_pinyin": "xī wàng jīn nián yī qiè shùn lì"
+    },
+    {
+      "id": "hsk2_l15_12",
+      "chinese": "祝福",
+      "pinyin": "zhù fú",
+      "english": "To bless / Best wishes / Blessing",
+      "part_of_speech": "noun/verb",
+      "example": "送上我的祝福。",
+      "translation": "I send you my best wishes.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 祝福 mean?",
+          "correct": "To bless / Best wishes / Blessing",
+          "options": [
+            "Holiday / Festival",
+            "To bless / Best wishes / Blessing",
+            "Happy / Happiness",
+            "New Year"
+          ],
+          "option_pinyin": [
+            "jié rì",
+            "zhù fú",
+            "kuài lè",
+            "xīn nián"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To bless / Best wishes / Blessing",
+          "correct": "祝福",
+          "options": [
+            "希望",
+            "祝福",
+            "庆祝",
+            "节日"
+          ],
+          "option_pinyin": [
+            "xī wàng",
+            "zhù fú",
+            "qìng zhù",
+            "jié rì"
+          ],
+          "question_chinese": "送上我的___。",
+          "question_pinyin": "送上我的___。",
+          "question_english": "I send you my best wishes."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To bless / Best wishes / Blessing'?",
+          "correct": "祝福",
+          "options": [
+            "祝福",
+            "顺利",
+            "希望",
+            "生日"
+          ],
+          "option_pinyin": [
+            "zhù fú",
+            "shùn lì",
+            "xī wàng",
+            "shēng rì"
+          ]
+        }
+      ],
+      "example_pinyin": "sòng shàng wǒ de zhù fú"
     },
     {
       "id": "hsk2_l15_p01",

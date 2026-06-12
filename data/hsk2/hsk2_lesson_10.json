@@ -19,16 +19,16 @@
           "question": "What does 到 mean?",
           "correct": "To arrive / To reach",
           "options": [
-            "Next to / Beside",
+            "To put / To place",
             "To wait",
-            "To arrive / To reach",
-            "Outside / Outer"
+            "Next to / Beside",
+            "To arrive / To reach"
           ],
           "option_pinyin": [
-            "páng biān",
+            "fàng",
             "děng",
-            "dào",
-            "wài"
+            "páng biān",
+            "dào"
           ]
         },
         {
@@ -36,16 +36,16 @@
           "question": "Fill in: To arrive / To reach",
           "correct": "到",
           "options": [
-            "桌子",
-            "进",
+            "到",
             "里",
-            "到"
+            "旁边",
+            "抽屉"
           ],
           "option_pinyin": [
-            "zhuō zi",
-            "jìn",
+            "dào",
             "lǐ",
-            "dào"
+            "páng biān",
+            "chōu ti"
           ],
           "question_chinese": "他___了。",
           "question_pinyin": "他___了。",
@@ -56,16 +56,16 @@
           "question": "Which word means 'To arrive / To reach'?",
           "correct": "到",
           "options": [
-            "里",
-            "进",
-            "到",
-            "桌子"
+            "找",
+            "放",
+            "等",
+            "到"
           ],
           "option_pinyin": [
-            "lǐ",
-            "jìn",
-            "dào",
-            "zhuō zi"
+            "zhǎo",
+            "fàng",
+            "děng",
+            "dào"
           ]
         }
       ],
@@ -86,15 +86,15 @@
           "correct": "Mobile phone",
           "options": [
             "Inside / Within",
-            "Mobile phone",
+            "Above / On top of / On",
             "Table / Desk",
-            "Above / On top of / On"
+            "Mobile phone"
           ],
           "option_pinyin": [
             "lǐ",
-            "shǒu jī",
+            "shàng",
             "zhuō zi",
-            "shàng"
+            "shǒu jī"
           ]
         },
         {
@@ -102,16 +102,16 @@
           "question": "Fill in: Mobile phone",
           "correct": "手机",
           "options": [
-            "手机",
-            "等",
-            "放",
-            "进"
+            "里",
+            "上",
+            "外",
+            "手机"
           ],
           "option_pinyin": [
-            "shǒu jī",
-            "děng",
-            "fàng",
-            "jìn"
+            "lǐ",
+            "shàng",
+            "wài",
+            "shǒu jī"
           ],
           "question_chinese": "我的___在桌子上。",
           "question_pinyin": "我的___在桌子上。",
@@ -122,16 +122,16 @@
           "question": "Which word means 'Mobile phone'?",
           "correct": "手机",
           "options": [
+            "里",
+            "找",
             "手机",
-            "等",
-            "进",
-            "放"
+            "桌子"
           ],
           "option_pinyin": [
+            "lǐ",
+            "zhǎo",
             "shǒu jī",
-            "děng",
-            "jìn",
-            "fàng"
+            "zhuō zi"
           ]
         }
       ],
@@ -151,15 +151,15 @@
           "question": "What does 放 mean?",
           "correct": "To put / To place",
           "options": [
+            "Outside / Outer",
             "To put / To place",
-            "Table / Desk",
-            "Door / Gate",
+            "To wait",
             "Mobile phone"
           ],
           "option_pinyin": [
+            "wài",
             "fàng",
-            "zhuō zi",
-            "mén",
+            "děng",
             "shǒu jī"
           ]
         },
@@ -168,16 +168,16 @@
           "question": "Fill in: To put / To place",
           "correct": "放",
           "options": [
-            "外",
+            "旁边",
+            "抽屉",
             "放",
-            "等",
-            "进"
+            "找"
           ],
           "option_pinyin": [
-            "wài",
+            "páng biān",
+            "chōu ti",
             "fàng",
-            "děng",
-            "jìn"
+            "zhǎo"
           ],
           "question_chinese": "把书___在桌子上。",
           "question_pinyin": "把书___在桌子上。",
@@ -188,16 +188,16 @@
           "question": "Which word means 'To put / To place'?",
           "correct": "放",
           "options": [
+            "到",
             "放",
-            "进",
-            "等",
-            "外"
+            "里",
+            "旁边"
           ],
           "option_pinyin": [
+            "dào",
             "fàng",
-            "jìn",
-            "děng",
-            "wài"
+            "lǐ",
+            "páng biān"
           ]
         }
       ],
@@ -217,16 +217,16 @@
           "question": "What does 桌子 mean?",
           "correct": "Table / Desk",
           "options": [
-            "Mobile phone",
-            "To wait",
+            "Table / Desk",
+            "Door / Gate",
             "Next to / Beside",
-            "Table / Desk"
+            "To look for / To find"
           ],
           "option_pinyin": [
-            "shǒu jī",
-            "děng",
+            "zhuō zi",
+            "mén",
             "páng biān",
-            "zhuō zi"
+            "zhǎo"
           ]
         },
         {
@@ -234,16 +234,16 @@
           "question": "Fill in: Table / Desk",
           "correct": "桌子",
           "options": [
-            "放",
-            "找",
-            "进",
-            "桌子"
+            "桌子",
+            "门",
+            "里",
+            "等"
           ],
           "option_pinyin": [
-            "fàng",
-            "zhǎo",
-            "jìn",
-            "zhuō zi"
+            "zhuō zi",
+            "mén",
+            "lǐ",
+            "děng"
           ],
           "question_chinese": "___上有手机。",
           "question_pinyin": "___上有手机。",
@@ -254,16 +254,16 @@
           "question": "Which word means 'Table / Desk'?",
           "correct": "桌子",
           "options": [
+            "放",
             "桌子",
-            "进",
-            "找",
-            "放"
+            "等",
+            "旁边"
           ],
           "option_pinyin": [
+            "fàng",
             "zhuō zi",
-            "jìn",
-            "zhǎo",
-            "fàng"
+            "děng",
+            "páng biān"
           ]
         }
       ],
@@ -283,15 +283,15 @@
           "question": "What does 上 mean?",
           "correct": "Above / On top of / On",
           "options": [
-            "To wait",
-            "To arrive / To reach",
-            "To put / To place",
+            "To look for / To find",
+            "Table / Desk",
+            "Mobile phone",
             "Above / On top of / On"
           ],
           "option_pinyin": [
-            "děng",
-            "dào",
-            "fàng",
+            "zhǎo",
+            "zhuō zi",
+            "shǒu jī",
             "shàng"
           ]
         },
@@ -300,16 +300,16 @@
           "question": "Fill in: Above / On top of / On",
           "correct": "上",
           "options": [
-            "进",
-            "门",
-            "手机",
-            "上"
+            "等",
+            "放",
+            "上",
+            "到"
           ],
           "option_pinyin": [
-            "jìn",
-            "mén",
-            "shǒu jī",
-            "shàng"
+            "děng",
+            "fàng",
+            "shàng",
+            "dào"
           ],
           "question_chinese": "书在桌子___。",
           "question_pinyin": "书在桌子___。",
@@ -320,15 +320,15 @@
           "question": "Which word means 'Above / On top of / On'?",
           "correct": "上",
           "options": [
-            "手机",
+            "外",
             "门",
-            "进",
+            "手机",
             "上"
           ],
           "option_pinyin": [
-            "shǒu jī",
+            "wài",
             "mén",
-            "jìn",
+            "shǒu jī",
             "shàng"
           ]
         }
@@ -349,16 +349,16 @@
           "question": "What does 旁边 mean?",
           "correct": "Next to / Beside",
           "options": [
-            "To enter",
+            "Door / Gate",
             "Next to / Beside",
-            "Inside / Within",
-            "Door / Gate"
+            "To put / To place",
+            "Table / Desk"
           ],
           "option_pinyin": [
-            "jìn",
+            "mén",
             "páng biān",
-            "lǐ",
-            "mén"
+            "fàng",
+            "zhuō zi"
           ]
         },
         {
@@ -366,16 +366,16 @@
           "question": "Fill in: Next to / Beside",
           "correct": "旁边",
           "options": [
-            "手机",
-            "旁边",
             "放",
-            "上"
+            "抽屉",
+            "旁边",
+            "手机"
           ],
           "option_pinyin": [
-            "shǒu jī",
-            "páng biān",
             "fàng",
-            "shàng"
+            "chōu ti",
+            "páng biān",
+            "shǒu jī"
           ],
           "question_chinese": "门___有一张桌子。",
           "question_pinyin": "门___有一张桌子。",
@@ -386,16 +386,16 @@
           "question": "Which word means 'Next to / Beside'?",
           "correct": "旁边",
           "options": [
+            "到",
+            "抽屉",
             "旁边",
-            "上",
-            "放",
-            "手机"
+            "等"
           ],
           "option_pinyin": [
+            "dào",
+            "chōu ti",
             "páng biān",
-            "shàng",
-            "fàng",
-            "shǒu jī"
+            "děng"
           ]
         }
       ],
@@ -415,15 +415,15 @@
           "question": "What does 找 mean?",
           "correct": "To look for / To find",
           "options": [
-            "Next to / Beside",
-            "Table / Desk",
-            "To wait",
+            "To arrive / To reach",
+            "To put / To place",
+            "Outside / Outer",
             "To look for / To find"
           ],
           "option_pinyin": [
-            "páng biān",
-            "zhuō zi",
-            "děng",
+            "dào",
+            "fàng",
+            "wài",
             "zhǎo"
           ]
         },
@@ -432,15 +432,15 @@
           "question": "Fill in: To look for / To find",
           "correct": "找",
           "options": [
-            "找",
             "上",
-            "门",
+            "等",
+            "找",
             "外"
           ],
           "option_pinyin": [
-            "zhǎo",
             "shàng",
-            "mén",
+            "děng",
+            "zhǎo",
             "wài"
           ],
           "question_chinese": "他在___手机。",
@@ -452,16 +452,16 @@
           "question": "Which word means 'To look for / To find'?",
           "correct": "找",
           "options": [
-            "外",
+            "到",
             "找",
-            "门",
-            "上"
+            "抽屉",
+            "外"
           ],
           "option_pinyin": [
-            "wài",
+            "dào",
             "zhǎo",
-            "mén",
-            "shàng"
+            "chōu ti",
+            "wài"
           ]
         }
       ],
@@ -482,15 +482,15 @@
           "correct": "To wait",
           "options": [
             "To wait",
-            "Next to / Beside",
-            "Outside / Outer",
-            "To put / To place"
+            "To put / To place",
+            "To look for / To find",
+            "To arrive / To reach"
           ],
           "option_pinyin": [
             "děng",
-            "páng biān",
-            "wài",
-            "fàng"
+            "fàng",
+            "zhǎo",
+            "dào"
           ]
         },
         {
@@ -498,16 +498,16 @@
           "question": "Fill in: To wait",
           "correct": "等",
           "options": [
-            "手机",
-            "进",
             "等",
-            "门"
+            "外",
+            "找",
+            "抽屉"
           ],
           "option_pinyin": [
-            "shǒu jī",
-            "jìn",
             "děng",
-            "mén"
+            "wài",
+            "zhǎo",
+            "chōu ti"
           ],
           "question_chinese": "请在门外___。",
           "question_pinyin": "请在门外___。",
@@ -519,15 +519,15 @@
           "correct": "等",
           "options": [
             "等",
-            "门",
-            "进",
-            "手机"
+            "抽屉",
+            "手机",
+            "找"
           ],
           "option_pinyin": [
             "děng",
-            "mén",
-            "jìn",
-            "shǒu jī"
+            "chōu ti",
+            "shǒu jī",
+            "zhǎo"
           ]
         }
       ],
@@ -547,16 +547,16 @@
           "question": "What does 门 mean?",
           "correct": "Door / Gate",
           "options": [
-            "Next to / Beside",
-            "Door / Gate",
+            "Drawer",
+            "To put / To place",
             "Outside / Outer",
-            "To enter"
+            "Door / Gate"
           ],
           "option_pinyin": [
-            "páng biān",
-            "mén",
+            "chōu ti",
+            "fàng",
             "wài",
-            "jìn"
+            "mén"
           ]
         },
         {
@@ -564,16 +564,16 @@
           "question": "Fill in: Door / Gate",
           "correct": "门",
           "options": [
-            "到",
-            "放",
-            "里",
-            "门"
+            "旁边",
+            "门",
+            "找",
+            "等"
           ],
           "option_pinyin": [
-            "dào",
-            "fàng",
-            "lǐ",
-            "mén"
+            "páng biān",
+            "mén",
+            "zhǎo",
+            "děng"
           ],
           "question_chinese": "请进___。",
           "question_pinyin": "请进___。",
@@ -585,15 +585,15 @@
           "correct": "门",
           "options": [
             "放",
-            "里",
             "门",
-            "到"
+            "找",
+            "等"
           ],
           "option_pinyin": [
             "fàng",
-            "lǐ",
             "mén",
-            "dào"
+            "zhǎo",
+            "děng"
           ]
         }
       ],
@@ -601,69 +601,69 @@
     },
     {
       "id": "hsk2_l10_10",
-      "chinese": "进",
-      "pinyin": "jìn",
-      "english": "To enter",
-      "part_of_speech": "verb",
-      "example": "请进来。",
-      "translation": "Please come in.",
+      "chinese": "抽屉",
+      "pinyin": "chōu ti",
+      "english": "Drawer",
+      "part_of_speech": "noun",
+      "example": "手机在桌子的抽屉里。",
+      "translation": "The phone is in the drawer.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 进 mean?",
-          "correct": "To enter",
+          "question": "What does 抽屉 mean?",
+          "correct": "Drawer",
           "options": [
-            "Table / Desk",
-            "To put / To place",
+            "Drawer",
             "Inside / Within",
-            "To enter"
+            "Door / Gate",
+            "To look for / To find"
           ],
           "option_pinyin": [
-            "zhuō zi",
-            "fàng",
+            "chōu ti",
             "lǐ",
-            "jìn"
+            "mén",
+            "zhǎo"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To enter",
-          "correct": "进",
+          "question": "Fill in: Drawer",
+          "correct": "抽屉",
           "options": [
-            "等",
-            "旁边",
+            "放",
+            "找",
             "外",
-            "进"
+            "抽屉"
           ],
           "option_pinyin": [
-            "děng",
-            "páng biān",
+            "fàng",
+            "zhǎo",
             "wài",
-            "jìn"
+            "chōu ti"
           ],
-          "question_chinese": "请___来。",
-          "question_pinyin": "请___来。",
-          "question_english": "Please come in."
+          "question_chinese": "手机在桌子的___里。",
+          "question_pinyin": "手机在桌子的___里。",
+          "question_english": "The phone is in the drawer."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To enter'?",
-          "correct": "进",
+          "question": "Which word means 'Drawer'?",
+          "correct": "抽屉",
           "options": [
+            "上",
             "等",
-            "进",
-            "旁边",
-            "外"
+            "抽屉",
+            "里"
           ],
           "option_pinyin": [
+            "shàng",
             "děng",
-            "jìn",
-            "páng biān",
-            "wài"
+            "chōu ti",
+            "lǐ"
           ]
         }
       ],
-      "example_pinyin": "qǐng jìn lái"
+      "example_pinyin": "shǒu jī zài zhuō zi de chōu tì lǐ"
     },
     {
       "id": "hsk2_l10_11",
@@ -679,16 +679,16 @@
           "question": "What does 外 mean?",
           "correct": "Outside / Outer",
           "options": [
-            "Above / On top of / On",
-            "To put / To place",
-            "Outside / Outer",
-            "Door / Gate"
+            "Mobile phone",
+            "To look for / To find",
+            "Drawer",
+            "Outside / Outer"
           ],
           "option_pinyin": [
-            "shàng",
-            "fàng",
-            "wài",
-            "mén"
+            "shǒu jī",
+            "zhǎo",
+            "chōu ti",
+            "wài"
           ]
         },
         {
@@ -696,16 +696,16 @@
           "question": "Fill in: Outside / Outer",
           "correct": "外",
           "options": [
-            "旁边",
-            "外",
             "桌子",
-            "里"
+            "找",
+            "旁边",
+            "外"
           ],
           "option_pinyin": [
-            "páng biān",
-            "wài",
             "zhuō zi",
-            "lǐ"
+            "zhǎo",
+            "páng biān",
+            "wài"
           ],
           "question_chinese": "他在门___等你。",
           "question_pinyin": "他在门___等你。",
@@ -716,16 +716,16 @@
           "question": "Which word means 'Outside / Outer'?",
           "correct": "外",
           "options": [
-            "桌子",
+            "门",
             "外",
-            "里",
-            "旁边"
+            "等",
+            "桌子"
           ],
           "option_pinyin": [
-            "zhuō zi",
+            "mén",
             "wài",
-            "lǐ",
-            "páng biān"
+            "děng",
+            "zhuō zi"
           ]
         }
       ],
@@ -746,14 +746,14 @@
           "correct": "Inside / Within",
           "options": [
             "To put / To place",
+            "Drawer",
             "Inside / Within",
-            "Above / On top of / On",
             "Outside / Outer"
           ],
           "option_pinyin": [
             "fàng",
+            "chōu ti",
             "lǐ",
-            "shàng",
             "wài"
           ]
         },
@@ -762,15 +762,15 @@
           "question": "Fill in: Inside / Within",
           "correct": "里",
           "options": [
-            "桌子",
-            "手机",
-            "找",
+            "到",
+            "等",
+            "旁边",
             "里"
           ],
           "option_pinyin": [
-            "zhuō zi",
-            "shǒu jī",
-            "zhǎo",
+            "dào",
+            "děng",
+            "páng biān",
             "lǐ"
           ],
           "question_chinese": "手机在___面。",
@@ -782,16 +782,16 @@
           "question": "Which word means 'Inside / Within'?",
           "correct": "里",
           "options": [
-            "桌子",
-            "手机",
+            "旁边",
+            "抽屉",
             "里",
-            "找"
+            "门"
           ],
           "option_pinyin": [
-            "zhuō zi",
-            "shǒu jī",
+            "páng biān",
+            "chōu ti",
             "lǐ",
-            "zhǎo"
+            "mén"
           ]
         }
       ],

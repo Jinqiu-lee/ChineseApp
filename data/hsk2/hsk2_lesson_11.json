@@ -20,15 +20,15 @@
           "correct": "To compare / Than",
           "options": [
             "Male / Man",
-            "To compare / Than",
-            "Late / Evening",
-            "Fast / Quick"
+            "Busy",
+            "Big / Old (for age)",
+            "To compare / Than"
           ],
           "option_pinyin": [
             "nán",
-            "bǐ",
-            "wǎn",
-            "kuài"
+            "máng",
+            "dà",
+            "bǐ"
           ]
         },
         {
@@ -36,16 +36,16 @@
           "question": "Fill in: To compare / Than",
           "correct": "比",
           "options": [
+            "男",
             "高",
-            "慢",
             "比",
-            "大"
+            "忙"
           ],
           "option_pinyin": [
+            "nán",
             "gāo",
-            "màn",
             "bǐ",
-            "dà"
+            "máng"
           ],
           "question_chinese": "他___你大三岁。",
           "question_pinyin": "他___你大三岁。",
@@ -56,16 +56,16 @@
           "question": "Which word means 'To compare / Than'?",
           "correct": "比",
           "options": [
-            "大",
-            "高",
+            "早",
+            "长",
             "比",
-            "慢"
+            "男"
           ],
           "option_pinyin": [
-            "dà",
-            "gāo",
+            "zǎo",
+            "cháng",
             "bǐ",
-            "màn"
+            "nán"
           ]
         }
       ],
@@ -85,16 +85,16 @@
           "question": "What does 高 mean?",
           "correct": "Tall / High",
           "options": [
-            "Fast / Quick",
-            "Early",
+            "Few / Less",
             "Tall / High",
-            "Slow"
+            "Male / Man",
+            "Long"
           ],
           "option_pinyin": [
-            "kuài",
-            "zǎo",
+            "shǎo",
             "gāo",
-            "màn"
+            "nán",
+            "cháng"
           ]
         },
         {
@@ -102,16 +102,16 @@
           "question": "Fill in: Tall / High",
           "correct": "高",
           "options": [
-            "高",
-            "多",
+            "少",
+            "小",
             "男",
-            "小"
+            "高"
           ],
           "option_pinyin": [
-            "gāo",
-            "duō",
+            "shǎo",
+            "xiǎo",
             "nán",
-            "xiǎo"
+            "gāo"
           ],
           "question_chinese": "我比她___一点儿。",
           "question_pinyin": "我比她___一点儿。",
@@ -122,16 +122,16 @@
           "question": "Which word means 'Tall / High'?",
           "correct": "高",
           "options": [
-            "小",
-            "男",
-            "多",
-            "高"
+            "高",
+            "大",
+            "少",
+            "比"
           ],
           "option_pinyin": [
-            "xiǎo",
-            "nán",
-            "duō",
-            "gāo"
+            "gāo",
+            "dà",
+            "shǎo",
+            "bǐ"
           ]
         }
       ],
@@ -151,16 +151,16 @@
           "question": "What does 长 mean?",
           "correct": "Long",
           "options": [
-            "Big / Old (for age)",
-            "Early",
+            "Long",
+            "Many / More",
             "Small / Young",
-            "Long"
+            "Big / Old (for age)"
           ],
           "option_pinyin": [
-            "dà",
-            "zǎo",
+            "cháng",
+            "duō",
             "xiǎo",
-            "cháng"
+            "dà"
           ]
         },
         {
@@ -168,16 +168,16 @@
           "question": "Fill in: Long",
           "correct": "长",
           "options": [
-            "男",
             "长",
-            "多",
-            "比"
+            "男",
+            "小",
+            "大"
           ],
           "option_pinyin": [
-            "nán",
             "cháng",
-            "duō",
-            "bǐ"
+            "nán",
+            "xiǎo",
+            "dà"
           ],
           "question_chinese": "这条路很___。",
           "question_pinyin": "这条路很___。",
@@ -189,15 +189,15 @@
           "correct": "长",
           "options": [
             "长",
-            "比",
-            "多",
-            "男"
+            "闲",
+            "小",
+            "高"
           ],
           "option_pinyin": [
             "cháng",
-            "bǐ",
-            "duō",
-            "nán"
+            "xián",
+            "xiǎo",
+            "gāo"
           ]
         }
       ],
@@ -217,14 +217,14 @@
           "question": "What does 大 mean?",
           "correct": "Big / Old (for age)",
           "options": [
-            "Tall / High",
-            "Many / More",
+            "Male / Man",
+            "Small / Young",
             "Big / Old (for age)",
             "Late / Evening"
           ],
           "option_pinyin": [
-            "gāo",
-            "duō",
+            "nán",
+            "xiǎo",
             "dà",
             "wǎn"
           ]
@@ -234,16 +234,16 @@
           "question": "Fill in: Big / Old (for age)",
           "correct": "大",
           "options": [
-            "小",
-            "少",
+            "高",
+            "男",
             "大",
-            "早"
+            "晚"
           ],
           "option_pinyin": [
-            "xiǎo",
-            "shǎo",
+            "gāo",
+            "nán",
             "dà",
-            "zǎo"
+            "wǎn"
           ],
           "question_chinese": "他比你___三岁。",
           "question_pinyin": "他比你___三岁。",
@@ -254,16 +254,16 @@
           "question": "Which word means 'Big / Old (for age)'?",
           "correct": "大",
           "options": [
-            "小",
-            "少",
-            "早",
-            "大"
+            "多",
+            "大",
+            "晚",
+            "小"
           ],
           "option_pinyin": [
-            "xiǎo",
-            "shǎo",
-            "zǎo",
-            "dà"
+            "duō",
+            "dà",
+            "wǎn",
+            "xiǎo"
           ]
         }
       ],
@@ -283,16 +283,16 @@
           "question": "What does 小 mean?",
           "correct": "Small / Young",
           "options": [
-            "Few / Less",
-            "Late / Evening",
-            "Small / Young",
-            "Fast / Quick"
+            "Male / Man",
+            "Long",
+            "Big / Old (for age)",
+            "Small / Young"
           ],
           "option_pinyin": [
-            "shǎo",
-            "wǎn",
-            "xiǎo",
-            "kuài"
+            "nán",
+            "cháng",
+            "dà",
+            "xiǎo"
           ]
         },
         {
@@ -300,16 +300,16 @@
           "question": "Fill in: Small / Young",
           "correct": "小",
           "options": [
-            "多",
             "大",
             "小",
-            "男"
+            "比",
+            "晚"
           ],
           "option_pinyin": [
-            "duō",
             "dà",
             "xiǎo",
-            "nán"
+            "bǐ",
+            "wǎn"
           ],
           "question_chinese": "她比我___两岁。",
           "question_pinyin": "她比我___两岁。",
@@ -321,15 +321,15 @@
           "correct": "小",
           "options": [
             "大",
-            "多",
-            "男",
-            "小"
+            "忙",
+            "小",
+            "长"
           ],
           "option_pinyin": [
             "dà",
-            "duō",
-            "nán",
-            "xiǎo"
+            "máng",
+            "xiǎo",
+            "cháng"
           ]
         }
       ],
@@ -350,14 +350,14 @@
           "correct": "Many / More",
           "options": [
             "Late / Evening",
-            "Early",
-            "Few / Less",
+            "Small / Young",
+            "Free / Not busy",
             "Many / More"
           ],
           "option_pinyin": [
             "wǎn",
-            "zǎo",
-            "shǎo",
+            "xiǎo",
+            "xián",
             "duō"
           ]
         },
@@ -366,16 +366,16 @@
           "question": "Fill in: Many / More",
           "correct": "多",
           "options": [
-            "多",
-            "快",
-            "慢",
-            "比"
+            "高",
+            "长",
+            "忙",
+            "多"
           ],
           "option_pinyin": [
-            "duō",
-            "kuài",
-            "màn",
-            "bǐ"
+            "gāo",
+            "cháng",
+            "máng",
+            "duō"
           ],
           "question_chinese": "男生比女生___。",
           "question_pinyin": "男生比女生___。",
@@ -386,16 +386,16 @@
           "question": "Which word means 'Many / More'?",
           "correct": "多",
           "options": [
-            "比",
-            "快",
-            "慢",
-            "多"
+            "少",
+            "多",
+            "男",
+            "大"
           ],
           "option_pinyin": [
-            "bǐ",
-            "kuài",
-            "màn",
-            "duō"
+            "shǎo",
+            "duō",
+            "nán",
+            "dà"
           ]
         }
       ],
@@ -415,16 +415,16 @@
           "question": "What does 少 mean?",
           "correct": "Few / Less",
           "options": [
-            "Many / More",
-            "Slow",
-            "Long",
-            "Few / Less"
+            "Few / Less",
+            "Early",
+            "Small / Young",
+            "Free / Not busy"
           ],
           "option_pinyin": [
-            "duō",
-            "màn",
-            "cháng",
-            "shǎo"
+            "shǎo",
+            "zǎo",
+            "xiǎo",
+            "xián"
           ]
         },
         {
@@ -432,16 +432,16 @@
           "question": "Fill in: Few / Less",
           "correct": "少",
           "options": [
-            "快",
-            "比",
-            "高",
-            "少"
+            "少",
+            "多",
+            "晚",
+            "早"
           ],
           "option_pinyin": [
-            "kuài",
-            "bǐ",
-            "gāo",
-            "shǎo"
+            "shǎo",
+            "duō",
+            "wǎn",
+            "zǎo"
           ],
           "question_chinese": "今天人很___。",
           "question_pinyin": "今天人很___。",
@@ -452,16 +452,16 @@
           "question": "Which word means 'Few / Less'?",
           "correct": "少",
           "options": [
-            "高",
             "少",
+            "男",
             "比",
-            "快"
+            "小"
           ],
           "option_pinyin": [
-            "gāo",
             "shǎo",
+            "nán",
             "bǐ",
-            "kuài"
+            "xiǎo"
           ]
         }
       ],
@@ -469,135 +469,135 @@
     },
     {
       "id": "hsk2_l11_08",
-      "chinese": "快",
-      "pinyin": "kuài",
-      "english": "Fast / Quick",
+      "chinese": "忙",
+      "pinyin": "máng",
+      "english": "Busy",
       "part_of_speech": "adjective",
-      "example": "他走得比我快。",
-      "translation": "He walks faster than me.",
+      "example": "他今天比以前忙。",
+      "translation": "He is busier than before.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 快 mean?",
-          "correct": "Fast / Quick",
+          "question": "What does 忙 mean?",
+          "correct": "Busy",
           "options": [
             "To compare / Than",
-            "Fast / Quick",
-            "Slow",
+            "Free / Not busy",
+            "Busy",
+            "Few / Less"
+          ],
+          "option_pinyin": [
+            "bǐ",
+            "xián",
+            "máng",
+            "shǎo"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Busy",
+          "correct": "忙",
+          "options": [
+            "高",
+            "比",
+            "忙",
+            "男"
+          ],
+          "option_pinyin": [
+            "gāo",
+            "bǐ",
+            "máng",
+            "nán"
+          ],
+          "question_chinese": "他今天比以前___。",
+          "question_pinyin": "他今天比以前___。",
+          "question_english": "He is busier than before."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Busy'?",
+          "correct": "忙",
+          "options": [
+            "小",
+            "长",
+            "忙",
+            "早"
+          ],
+          "option_pinyin": [
+            "xiǎo",
+            "cháng",
+            "máng",
+            "zǎo"
+          ]
+        }
+      ],
+      "example_pinyin": "tā jīn tiān bǐ yǐ qián máng"
+    },
+    {
+      "id": "hsk2_l11_09",
+      "chinese": "闲",
+      "pinyin": "xián",
+      "english": "Free / Not busy",
+      "part_of_speech": "adjective",
+      "example": "他今天比昨天闲。",
+      "translation": "He is freer than yesterday.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 闲 mean?",
+          "correct": "Free / Not busy",
+          "options": [
+            "To compare / Than",
+            "Free / Not busy",
+            "Male / Man",
             "Early"
           ],
           "option_pinyin": [
             "bǐ",
-            "kuài",
-            "màn",
+            "xián",
+            "nán",
             "zǎo"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Fast / Quick",
-          "correct": "快",
+          "question": "Fill in: Free / Not busy",
+          "correct": "闲",
           "options": [
-            "大",
-            "快",
-            "小",
-            "多"
+            "比",
+            "少",
+            "闲",
+            "小"
           ],
           "option_pinyin": [
-            "dà",
-            "kuài",
-            "xiǎo",
-            "duō"
-          ],
-          "question_chinese": "他走得比我___。",
-          "question_pinyin": "他走得比我___。",
-          "question_english": "He walks faster than me."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'Fast / Quick'?",
-          "correct": "快",
-          "options": [
-            "快",
-            "大",
-            "小",
-            "多"
-          ],
-          "option_pinyin": [
-            "kuài",
-            "dà",
-            "xiǎo",
-            "duō"
-          ]
-        }
-      ],
-      "example_pinyin": "tā zǒu dé bǐ wǒ kuài"
-    },
-    {
-      "id": "hsk2_l11_09",
-      "chinese": "慢",
-      "pinyin": "màn",
-      "english": "Slow",
-      "part_of_speech": "adjective",
-      "example": "她跑得很慢。",
-      "translation": "She runs very slowly.",
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "What does 慢 mean?",
-          "correct": "Slow",
-          "options": [
-            "Small / Young",
-            "Tall / High",
-            "To compare / Than",
-            "Slow"
-          ],
-          "option_pinyin": [
-            "xiǎo",
-            "gāo",
             "bǐ",
-            "màn"
-          ]
-        },
-        {
-          "type": "fill_blank",
-          "question": "Fill in: Slow",
-          "correct": "慢",
-          "options": [
-            "多",
-            "慢",
-            "长",
-            "大"
+            "shǎo",
+            "xián",
+            "xiǎo"
           ],
-          "option_pinyin": [
-            "duō",
-            "màn",
-            "cháng",
-            "dà"
-          ],
-          "question_chinese": "她跑得很___。",
-          "question_pinyin": "她跑得很___。",
-          "question_english": "She runs very slowly."
+          "question_chinese": "他今天比昨天___。",
+          "question_pinyin": "他今天比昨天___。",
+          "question_english": "He is freer than yesterday."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Slow'?",
-          "correct": "慢",
+          "question": "Which word means 'Free / Not busy'?",
+          "correct": "闲",
           "options": [
             "长",
-            "慢",
+            "闲",
             "大",
-            "多"
+            "小"
           ],
           "option_pinyin": [
             "cháng",
-            "màn",
+            "xián",
             "dà",
-            "duō"
+            "xiǎo"
           ]
         }
       ],
-      "example_pinyin": "tā pǎo dé hěn màn"
+      "example_pinyin": "tā jīn tiān bǐ zuó tiān xián"
     },
     {
       "id": "hsk2_l11_10",
@@ -613,16 +613,16 @@
           "question": "What does 早 mean?",
           "correct": "Early",
           "options": [
-            "Small / Young",
-            "Big / Old (for age)",
-            "Many / More",
-            "Early"
+            "Male / Man",
+            "Early",
+            "Late / Evening",
+            "To compare / Than"
           ],
           "option_pinyin": [
-            "xiǎo",
-            "dà",
-            "duō",
-            "zǎo"
+            "nán",
+            "zǎo",
+            "wǎn",
+            "bǐ"
           ]
         },
         {
@@ -630,16 +630,16 @@
           "question": "Fill in: Early",
           "correct": "早",
           "options": [
+            "早",
             "男",
-            "少",
-            "晚",
-            "早"
+            "高",
+            "比"
           ],
           "option_pinyin": [
+            "zǎo",
             "nán",
-            "shǎo",
-            "wǎn",
-            "zǎo"
+            "gāo",
+            "bǐ"
           ],
           "question_chinese": "她来得比他___。",
           "question_pinyin": "她来得比他___。",
@@ -650,15 +650,15 @@
           "question": "Which word means 'Early'?",
           "correct": "早",
           "options": [
-            "少",
-            "晚",
+            "大",
             "男",
+            "小",
             "早"
           ],
           "option_pinyin": [
-            "shǎo",
-            "wǎn",
+            "dà",
             "nán",
+            "xiǎo",
             "zǎo"
           ]
         }
@@ -681,13 +681,13 @@
           "options": [
             "Early",
             "Male / Man",
-            "Slow",
+            "Big / Old (for age)",
             "Late / Evening"
           ],
           "option_pinyin": [
             "zǎo",
             "nán",
-            "màn",
+            "dà",
             "wǎn"
           ]
         },
@@ -696,16 +696,16 @@
           "question": "Fill in: Late / Evening",
           "correct": "晚",
           "options": [
-            "小",
             "晚",
-            "比",
-            "多"
+            "闲",
+            "忙",
+            "男"
           ],
           "option_pinyin": [
-            "xiǎo",
             "wǎn",
-            "bǐ",
-            "duō"
+            "xián",
+            "máng",
+            "nán"
           ],
           "question_chinese": "他来得比我___。",
           "question_pinyin": "他来得比我___。",
@@ -716,16 +716,16 @@
           "question": "Which word means 'Late / Evening'?",
           "correct": "晚",
           "options": [
-            "小",
+            "晚",
+            "闲",
             "多",
-            "比",
-            "晚"
+            "大"
           ],
           "option_pinyin": [
-            "xiǎo",
+            "wǎn",
+            "xián",
             "duō",
-            "bǐ",
-            "wǎn"
+            "dà"
           ]
         }
       ],
@@ -745,16 +745,16 @@
           "question": "What does 男 mean?",
           "correct": "Male / Man",
           "options": [
-            "Long",
+            "Few / Less",
             "Male / Man",
-            "To compare / Than",
-            "Small / Young"
+            "Big / Old (for age)",
+            "Early"
           ],
           "option_pinyin": [
-            "cháng",
+            "shǎo",
             "nán",
-            "bǐ",
-            "xiǎo"
+            "dà",
+            "zǎo"
           ]
         },
         {
@@ -762,16 +762,16 @@
           "question": "Fill in: Male / Man",
           "correct": "男",
           "options": [
+            "长",
             "男",
             "大",
-            "多",
-            "早"
+            "少"
           ],
           "option_pinyin": [
+            "cháng",
             "nán",
             "dà",
-            "duō",
-            "zǎo"
+            "shǎo"
           ],
           "question_chinese": "___生比女生跑得快。",
           "question_pinyin": "___生比女生跑得快。",
@@ -782,16 +782,16 @@
           "question": "Which word means 'Male / Man'?",
           "correct": "男",
           "options": [
+            "晚",
             "早",
-            "男",
-            "大",
-            "多"
+            "小",
+            "男"
           ],
           "option_pinyin": [
+            "wǎn",
             "zǎo",
-            "nán",
-            "dà",
-            "duō"
+            "xiǎo",
+            "nán"
           ]
         }
       ],

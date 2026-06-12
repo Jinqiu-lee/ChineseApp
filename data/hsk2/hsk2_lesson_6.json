@@ -19,16 +19,16 @@
           "question": "What does 好吃 mean?",
           "correct": "Delicious / Tasty",
           "options": [
-            "Because",
-            "Again / More / Another",
-            "Still / Also / Even",
-            "Delicious / Tasty"
+            "Delicious / Tasty",
+            "Delicious (to drink) / Tasty (for drinks)",
+            "Finish eating / Eat up",
+            "Bowl / [measure word for bowls]"
           ],
           "option_pinyin": [
-            "yīn wèi",
-            "zài",
-            "hái",
-            "hǎo chī"
+            "hǎo chī",
+            "hǎo hē",
+            "chī wán",
+            "wǎn"
           ]
         },
         {
@@ -36,16 +36,16 @@
           "question": "Fill in: Delicious / Tasty",
           "correct": "好吃",
           "options": [
-            "虽然",
             "好吃",
-            "碗",
-            "吃完"
+            "但是",
+            "饱",
+            "碗"
           ],
           "option_pinyin": [
-            "suī rán",
             "hǎo chī",
-            "wǎn",
-            "chī wán"
+            "dàn shì",
+            "bǎo",
+            "wǎn"
           ],
           "question_chinese": "这碗鸡蛋真___！",
           "question_pinyin": "这碗鸡蛋真___！",
@@ -56,16 +56,16 @@
           "question": "Which word means 'Delicious / Tasty'?",
           "correct": "好吃",
           "options": [
-            "碗",
             "好吃",
+            "但是",
             "吃完",
-            "虽然"
+            "因为"
           ],
           "option_pinyin": [
-            "wǎn",
             "hǎo chī",
+            "dàn shì",
             "chī wán",
-            "suī rán"
+            "yīn wèi"
           ]
         }
       ],
@@ -85,16 +85,16 @@
           "question": "What does 吃完 mean?",
           "correct": "Finish eating / Eat up",
           "options": [
-            "Again / More / Another",
+            "Because",
+            "Delicious (to drink) / Tasty (for drinks)",
             "Already",
-            "Finish eating / Eat up",
-            "Full (after eating)"
+            "Finish eating / Eat up"
           ],
           "option_pinyin": [
-            "zài",
+            "yīn wèi",
+            "hǎo hē",
             "yǐ jīng",
-            "chī wán",
-            "bǎo"
+            "chī wán"
           ]
         },
         {
@@ -102,15 +102,15 @@
           "question": "Fill in: Finish eating / Eat up",
           "correct": "吃完",
           "options": [
-            "因为",
-            "碗",
-            "但是",
+            "虽然",
+            "鸡蛋",
+            "好喝",
             "吃完"
           ],
           "option_pinyin": [
-            "yīn wèi",
-            "wǎn",
-            "dàn shì",
+            "suī rán",
+            "jī dàn",
+            "hǎo hē",
             "chī wán"
           ],
           "question_chinese": "他已经___了。",
@@ -122,16 +122,16 @@
           "question": "Which word means 'Finish eating / Eat up'?",
           "correct": "吃完",
           "options": [
-            "但是",
-            "吃完",
             "碗",
-            "因为"
+            "已经",
+            "饱",
+            "吃完"
           ],
           "option_pinyin": [
-            "dàn shì",
-            "chī wán",
             "wǎn",
-            "yīn wèi"
+            "yǐ jīng",
+            "bǎo",
+            "chī wán"
           ]
         }
       ],
@@ -151,16 +151,16 @@
           "question": "What does 饱 mean?",
           "correct": "Full (after eating)",
           "options": [
-            "Bowl / [measure word for bowls]",
+            "Finish eating / Eat up",
             "Full (after eating)",
             "But / However",
-            "Although / Even though"
+            "Delicious (to drink) / Tasty (for drinks)"
           ],
           "option_pinyin": [
-            "wǎn",
+            "chī wán",
             "bǎo",
             "dàn shì",
-            "suī rán"
+            "hǎo hē"
           ]
         },
         {
@@ -168,16 +168,16 @@
           "question": "Fill in: Full (after eating)",
           "correct": "饱",
           "options": [
-            "真",
-            "吃完",
-            "饱",
-            "因为"
+            "碗",
+            "好喝",
+            "好吃",
+            "饱"
           ],
           "option_pinyin": [
-            "zhēn",
-            "chī wán",
-            "bǎo",
-            "yīn wèi"
+            "wǎn",
+            "hǎo hē",
+            "hǎo chī",
+            "bǎo"
           ],
           "question_chinese": "我已经___了。",
           "question_pinyin": "我已经___了。",
@@ -188,15 +188,15 @@
           "question": "Which word means 'Full (after eating)'?",
           "correct": "饱",
           "options": [
-            "吃完",
+            "好吃",
+            "碗",
             "因为",
-            "真",
             "饱"
           ],
           "option_pinyin": [
-            "chī wán",
+            "hǎo chī",
+            "wǎn",
             "yīn wèi",
-            "zhēn",
             "bǎo"
           ]
         }
@@ -217,16 +217,16 @@
           "question": "What does 真 mean?",
           "correct": "Really / Truly / So (+ adjective)",
           "options": [
-            "Still / Also / Even",
             "Really / Truly / So (+ adjective)",
+            "Although / Even though",
             "Because",
-            "Already"
+            "Finish eating / Eat up"
           ],
           "option_pinyin": [
-            "hái",
             "zhēn",
+            "suī rán",
             "yīn wèi",
-            "yǐ jīng"
+            "chī wán"
           ]
         },
         {
@@ -234,16 +234,16 @@
           "question": "Fill in: Really / Truly / So (+ adjective)",
           "correct": "真",
           "options": [
-            "饱",
-            "再",
-            "真",
-            "好吃"
+            "虽然",
+            "好吃",
+            "因为",
+            "真"
           ],
           "option_pinyin": [
-            "bǎo",
-            "zài",
-            "zhēn",
-            "hǎo chī"
+            "suī rán",
+            "hǎo chī",
+            "yīn wèi",
+            "zhēn"
           ],
           "question_chinese": "这个___好吃！",
           "question_pinyin": "这个___好吃！",
@@ -254,16 +254,16 @@
           "question": "Which word means 'Really / Truly / So (+ adjective)'?",
           "correct": "真",
           "options": [
-            "真",
-            "再",
-            "好吃",
-            "饱"
+            "但是",
+            "吃完",
+            "还",
+            "真"
           ],
           "option_pinyin": [
-            "zhēn",
-            "zài",
-            "hǎo chī",
-            "bǎo"
+            "dàn shì",
+            "chī wán",
+            "hái",
+            "zhēn"
           ]
         }
       ],
@@ -283,16 +283,16 @@
           "question": "What does 已经 mean?",
           "correct": "Already",
           "options": [
-            "Bowl / [measure word for bowls]",
-            "Because",
             "Already",
-            "Egg (chicken egg)"
+            "Really / Truly / So (+ adjective)",
+            "Egg (chicken egg)",
+            "Delicious (to drink) / Tasty (for drinks)"
           ],
           "option_pinyin": [
-            "wǎn",
-            "yīn wèi",
             "yǐ jīng",
-            "jī dàn"
+            "zhēn",
+            "jī dàn",
+            "hǎo hē"
           ]
         },
         {
@@ -300,16 +300,16 @@
           "question": "Fill in: Already",
           "correct": "已经",
           "options": [
-            "好吃",
             "吃完",
-            "真",
-            "已经"
+            "饱",
+            "已经",
+            "虽然"
           ],
           "option_pinyin": [
-            "hǎo chī",
             "chī wán",
-            "zhēn",
-            "yǐ jīng"
+            "bǎo",
+            "yǐ jīng",
+            "suī rán"
           ],
           "question_chinese": "他___吃完了。",
           "question_pinyin": "他___吃完了。",
@@ -320,16 +320,16 @@
           "question": "Which word means 'Already'?",
           "correct": "已经",
           "options": [
-            "好吃",
-            "真",
             "已经",
-            "吃完"
+            "吃完",
+            "虽然",
+            "真"
           ],
           "option_pinyin": [
-            "hǎo chī",
-            "zhēn",
             "yǐ jīng",
-            "chī wán"
+            "chī wán",
+            "suī rán",
+            "zhēn"
           ]
         }
       ],
@@ -349,16 +349,16 @@
           "question": "What does 因为 mean?",
           "correct": "Because",
           "options": [
-            "Delicious / Tasty",
-            "Because",
-            "Already",
-            "Still / Also / Even"
+            "But / However",
+            "Full (after eating)",
+            "Still / Also / Even",
+            "Because"
           ],
           "option_pinyin": [
-            "hǎo chī",
-            "yīn wèi",
-            "yǐ jīng",
-            "hái"
+            "dàn shì",
+            "bǎo",
+            "hái",
+            "yīn wèi"
           ]
         },
         {
@@ -366,16 +366,16 @@
           "question": "Fill in: Because",
           "correct": "因为",
           "options": [
-            "鸡蛋",
-            "碗",
+            "虽然",
             "因为",
-            "吃完"
+            "好喝",
+            "饱"
           ],
           "option_pinyin": [
-            "jī dàn",
-            "wǎn",
+            "suī rán",
             "yīn wèi",
-            "chī wán"
+            "hǎo hē",
+            "bǎo"
           ],
           "question_chinese": "___太饱了，所以不吃了。",
           "question_pinyin": "___太饱了，所以不吃了。",
@@ -386,16 +386,16 @@
           "question": "Which word means 'Because'?",
           "correct": "因为",
           "options": [
-            "碗",
+            "已经",
             "鸡蛋",
-            "因为",
-            "吃完"
+            "真",
+            "因为"
           ],
           "option_pinyin": [
-            "wǎn",
+            "yǐ jīng",
             "jī dàn",
-            "yīn wèi",
-            "chī wán"
+            "zhēn",
+            "yīn wèi"
           ]
         }
       ],
@@ -415,16 +415,16 @@
           "question": "What does 虽然 mean?",
           "correct": "Although / Even though",
           "options": [
-            "Although / Even though",
             "Finish eating / Eat up",
-            "Still / Also / Even",
-            "Bowl / [measure word for bowls]"
+            "Delicious / Tasty",
+            "Already",
+            "Although / Even though"
           ],
           "option_pinyin": [
-            "suī rán",
             "chī wán",
-            "hái",
-            "wǎn"
+            "hǎo chī",
+            "yǐ jīng",
+            "suī rán"
           ]
         },
         {
@@ -432,16 +432,16 @@
           "question": "Fill in: Although / Even though",
           "correct": "虽然",
           "options": [
-            "已经",
-            "好吃",
+            "吃完",
+            "还",
             "虽然",
-            "饱"
+            "因为"
           ],
           "option_pinyin": [
-            "yǐ jīng",
-            "hǎo chī",
+            "chī wán",
+            "hái",
             "suī rán",
-            "bǎo"
+            "yīn wèi"
           ],
           "question_chinese": "___好吃，但是我饱了。",
           "question_pinyin": "___好吃，但是我饱了。",
@@ -452,16 +452,16 @@
           "question": "Which word means 'Although / Even though'?",
           "correct": "虽然",
           "options": [
+            "真",
+            "因为",
             "虽然",
-            "饱",
-            "已经",
-            "好吃"
+            "饱"
           ],
           "option_pinyin": [
+            "zhēn",
+            "yīn wèi",
             "suī rán",
-            "bǎo",
-            "yǐ jīng",
-            "hǎo chī"
+            "bǎo"
           ]
         }
       ],
@@ -481,16 +481,16 @@
           "question": "What does 但是 mean?",
           "correct": "But / However",
           "options": [
-            "Egg (chicken egg)",
-            "Already",
+            "Full (after eating)",
+            "Because",
             "But / However",
-            "Bowl / [measure word for bowls]"
+            "Finish eating / Eat up"
           ],
           "option_pinyin": [
-            "jī dàn",
-            "yǐ jīng",
+            "bǎo",
+            "yīn wèi",
             "dàn shì",
-            "wǎn"
+            "chī wán"
           ]
         },
         {
@@ -498,16 +498,16 @@
           "question": "Fill in: But / However",
           "correct": "但是",
           "options": [
-            "饱",
-            "但是",
             "好吃",
-            "虽然"
+            "虽然",
+            "但是",
+            "因为"
           ],
           "option_pinyin": [
-            "bǎo",
-            "dàn shì",
             "hǎo chī",
-            "suī rán"
+            "suī rán",
+            "dàn shì",
+            "yīn wèi"
           ],
           "question_chinese": "虽然好吃，___我饱了。",
           "question_pinyin": "虽然好吃，___我饱了。",
@@ -518,16 +518,16 @@
           "question": "Which word means 'But / However'?",
           "correct": "但是",
           "options": [
+            "真",
+            "还",
             "但是",
-            "饱",
-            "好吃",
-            "虽然"
+            "好吃"
           ],
           "option_pinyin": [
+            "zhēn",
+            "hái",
             "dàn shì",
-            "bǎo",
-            "hǎo chī",
-            "suī rán"
+            "hǎo chī"
           ]
         }
       ],
@@ -547,16 +547,16 @@
           "question": "What does 还 mean?",
           "correct": "Still / Also / Even",
           "options": [
-            "Delicious / Tasty",
-            "Again / More / Another",
+            "Finish eating / Eat up",
             "Still / Also / Even",
-            "Finish eating / Eat up"
+            "Although / Even though",
+            "Delicious (to drink) / Tasty (for drinks)"
           ],
           "option_pinyin": [
-            "hǎo chī",
-            "zài",
+            "chī wán",
             "hái",
-            "chī wán"
+            "suī rán",
+            "hǎo hē"
           ]
         },
         {
@@ -564,15 +564,15 @@
           "question": "Fill in: Still / Also / Even",
           "correct": "还",
           "options": [
-            "因为",
-            "鸡蛋",
-            "但是",
+            "虽然",
+            "好吃",
+            "碗",
             "还"
           ],
           "option_pinyin": [
-            "yīn wèi",
-            "jī dàn",
-            "dàn shì",
+            "suī rán",
+            "hǎo chī",
+            "wǎn",
             "hái"
           ],
           "question_chinese": "他___想再吃一碗。",
@@ -584,15 +584,15 @@
           "question": "Which word means 'Still / Also / Even'?",
           "correct": "还",
           "options": [
-            "鸡蛋",
-            "因为",
+            "碗",
             "还",
+            "因为",
             "但是"
           ],
           "option_pinyin": [
-            "jī dàn",
-            "yīn wèi",
+            "wǎn",
             "hái",
+            "yīn wèi",
             "dàn shì"
           ]
         }
@@ -601,69 +601,69 @@
     },
     {
       "id": "hsk2_l6_10",
-      "chinese": "再",
-      "pinyin": "zài",
-      "english": "Again / More / Another",
-      "part_of_speech": "adverb",
-      "example": "你再吃一碗吧！",
-      "translation": "Have another bowl!",
+      "chinese": "好喝",
+      "pinyin": "hǎo hē",
+      "english": "Delicious (to drink) / Tasty (for drinks)",
+      "part_of_speech": "adjective",
+      "example": "这杯茶真好喝。",
+      "translation": "This cup of tea is really delicious.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 再 mean?",
-          "correct": "Again / More / Another",
+          "question": "What does 好喝 mean?",
+          "correct": "Delicious (to drink) / Tasty (for drinks)",
           "options": [
-            "Bowl / [measure word for bowls]",
-            "Finish eating / Eat up",
-            "Because",
-            "Again / More / Another"
+            "Although / Even though",
+            "Full (after eating)",
+            "Delicious (to drink) / Tasty (for drinks)",
+            "Still / Also / Even"
           ],
           "option_pinyin": [
-            "wǎn",
-            "chī wán",
-            "yīn wèi",
-            "zài"
+            "suī rán",
+            "bǎo",
+            "hǎo hē",
+            "hái"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Again / More / Another",
-          "correct": "再",
+          "question": "Fill in: Delicious (to drink) / Tasty (for drinks)",
+          "correct": "好喝",
           "options": [
-            "再",
-            "饱",
+            "虽然",
+            "好喝",
             "还",
-            "好吃"
+            "真"
           ],
           "option_pinyin": [
-            "zài",
-            "bǎo",
+            "suī rán",
+            "hǎo hē",
             "hái",
-            "hǎo chī"
+            "zhēn"
           ],
-          "question_chinese": "你___吃一碗吧！",
-          "question_pinyin": "你___吃一碗吧！",
-          "question_english": "Have another bowl!"
+          "question_chinese": "这杯茶真___。",
+          "question_pinyin": "这杯茶真___。",
+          "question_english": "This cup of tea is really delicious."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Again / More / Another'?",
-          "correct": "再",
+          "question": "Which word means 'Delicious (to drink) / Tasty (for drinks)'?",
+          "correct": "好喝",
           "options": [
-            "再",
-            "还",
-            "饱",
-            "好吃"
+            "但是",
+            "好喝",
+            "鸡蛋",
+            "因为"
           ],
           "option_pinyin": [
-            "zài",
-            "hái",
-            "bǎo",
-            "hǎo chī"
+            "dàn shì",
+            "hǎo hē",
+            "jī dàn",
+            "yīn wèi"
           ]
         }
       ],
-      "example_pinyin": "nǐ zài chī yī wǎn ba"
+      "example_pinyin": "zhè bēi chá zhēn hǎo hē"
     },
     {
       "id": "hsk2_l6_11",
@@ -679,16 +679,16 @@
           "question": "What does 碗 mean?",
           "correct": "Bowl / [measure word for bowls]",
           "options": [
-            "Really / Truly / So (+ adjective)",
-            "Full (after eating)",
-            "Although / Even though",
-            "Bowl / [measure word for bowls]"
+            "Bowl / [measure word for bowls]",
+            "Already",
+            "But / However",
+            "Although / Even though"
           ],
           "option_pinyin": [
-            "zhēn",
-            "bǎo",
-            "suī rán",
-            "wǎn"
+            "wǎn",
+            "yǐ jīng",
+            "dàn shì",
+            "suī rán"
           ]
         },
         {
@@ -697,15 +697,15 @@
           "correct": "碗",
           "options": [
             "碗",
-            "因为",
-            "鸡蛋",
-            "好吃"
+            "吃完",
+            "还",
+            "真"
           ],
           "option_pinyin": [
             "wǎn",
-            "yīn wèi",
-            "jī dàn",
-            "hǎo chī"
+            "chī wán",
+            "hái",
+            "zhēn"
           ],
           "question_chinese": "我吃了两___饭。",
           "question_pinyin": "我吃了两___饭。",
@@ -717,15 +717,15 @@
           "correct": "碗",
           "options": [
             "好吃",
-            "因为",
             "碗",
-            "鸡蛋"
+            "鸡蛋",
+            "虽然"
           ],
           "option_pinyin": [
             "hǎo chī",
-            "yīn wèi",
             "wǎn",
-            "jī dàn"
+            "jī dàn",
+            "suī rán"
           ]
         }
       ],
@@ -745,16 +745,16 @@
           "question": "What does 鸡蛋 mean?",
           "correct": "Egg (chicken egg)",
           "options": [
-            "Delicious / Tasty",
+            "Bowl / [measure word for bowls]",
+            "Really / Truly / So (+ adjective)",
             "Egg (chicken egg)",
-            "Still / Also / Even",
-            "Bowl / [measure word for bowls]"
+            "Delicious (to drink) / Tasty (for drinks)"
           ],
           "option_pinyin": [
-            "hǎo chī",
+            "wǎn",
+            "zhēn",
             "jī dàn",
-            "hái",
-            "wǎn"
+            "hǎo hē"
           ]
         },
         {
@@ -762,16 +762,16 @@
           "question": "Fill in: Egg (chicken egg)",
           "correct": "鸡蛋",
           "options": [
-            "吃完",
-            "鸡蛋",
-            "真",
-            "因为"
+            "因为",
+            "饱",
+            "已经",
+            "鸡蛋"
           ],
           "option_pinyin": [
-            "chī wán",
-            "jī dàn",
-            "zhēn",
-            "yīn wèi"
+            "yīn wèi",
+            "bǎo",
+            "yǐ jīng",
+            "jī dàn"
           ],
           "question_chinese": "这碗___真好吃！",
           "question_pinyin": "这碗___真好吃！",
@@ -782,16 +782,16 @@
           "question": "Which word means 'Egg (chicken egg)'?",
           "correct": "鸡蛋",
           "options": [
-            "鸡蛋",
-            "吃完",
             "真",
-            "因为"
+            "好喝",
+            "已经",
+            "鸡蛋"
           ],
           "option_pinyin": [
-            "jī dàn",
-            "chī wán",
             "zhēn",
-            "yīn wèi"
+            "hǎo hē",
+            "yǐ jīng",
+            "jī dàn"
           ]
         }
       ],

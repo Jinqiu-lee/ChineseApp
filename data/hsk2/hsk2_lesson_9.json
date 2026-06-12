@@ -19,16 +19,16 @@
           "question": "What does 问题 mean?",
           "correct": "Problem / Question",
           "options": [
-            "To finish / Completion marker",
-            "Already",
+            "Long since / Already (a long time ago)",
             "Problem / Question",
-            "Two (of something)"
+            "Examination / Test",
+            "To understand / To be clear about"
           ],
           "option_pinyin": [
-            "wán",
-            "yǐ jīng",
+            "zǎo jiù",
             "wèn tí",
-            "liǎng"
+            "kǎo shì",
+            "míng bai"
           ]
         },
         {
@@ -36,16 +36,16 @@
           "question": "Fill in: Problem / Question",
           "correct": "问题",
           "options": [
-            "第一",
-            "懂",
+            "道",
             "问题",
-            "对"
+            "第一",
+            "两"
           ],
           "option_pinyin": [
-            "dì yī",
-            "dǒng",
+            "dào",
             "wèn tí",
-            "duì"
+            "dì yī",
+            "liǎng"
           ],
           "question_chinese": "这道题有___。",
           "question_pinyin": "这道题有___。",
@@ -56,16 +56,16 @@
           "question": "Which word means 'Problem / Question'?",
           "correct": "问题",
           "options": [
-            "第一",
+            "知道",
             "问题",
-            "懂",
-            "对"
+            "对",
+            "两"
           ],
           "option_pinyin": [
-            "dì yī",
+            "zhī dào",
             "wèn tí",
-            "dǒng",
-            "duì"
+            "duì",
+            "liǎng"
           ]
         }
       ],
@@ -73,69 +73,69 @@
     },
     {
       "id": "hsk2_l9_02",
-      "chinese": "非常",
-      "pinyin": "fēi cháng",
-      "english": "Extremely / Very",
-      "part_of_speech": "adverb",
-      "example": "这次考试非常难。",
-      "translation": "This exam is extremely difficult.",
+      "chinese": "道",
+      "pinyin": "dào",
+      "english": "[Measure word for questions, dishes, or courses]",
+      "part_of_speech": "measure word",
+      "example": "我做错了两道题。",
+      "translation": "I got two questions wrong.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 非常 mean?",
-          "correct": "Extremely / Very",
+          "question": "What does 道 mean?",
+          "correct": "[Measure word for questions, dishes, or courses]",
           "options": [
-            "Question (on a test) / Topic",
-            "Extremely / Very",
-            "Wrong / Incorrect",
-            "To know"
+            "To know",
+            "Long since / Already (a long time ago)",
+            "[Measure word for questions, dishes, or courses]",
+            "Question (on a test) / Topic"
           ],
           "option_pinyin": [
-            "tí",
-            "fēi cháng",
-            "cuò",
-            "zhī dào"
+            "zhī dào",
+            "zǎo jiù",
+            "dào",
+            "tí"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Extremely / Very",
-          "correct": "非常",
+          "question": "Fill in: [Measure word for questions, dishes, or courses]",
+          "correct": "道",
           "options": [
-            "考试",
-            "非常",
-            "已经",
-            "完"
+            "道",
+            "错",
+            "题",
+            "对"
           ],
           "option_pinyin": [
-            "kǎo shì",
-            "fēi cháng",
-            "yǐ jīng",
-            "wán"
+            "dào",
+            "cuò",
+            "tí",
+            "duì"
           ],
-          "question_chinese": "这次考试___难。",
-          "question_pinyin": "这次考试___难。",
-          "question_english": "This exam is extremely difficult."
+          "question_chinese": "我做错了两___题。",
+          "question_pinyin": "我做错了两___题。",
+          "question_english": "I got two questions wrong."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Extremely / Very'?",
-          "correct": "非常",
+          "question": "Which word means '[Measure word for questions, dishes, or courses]'?",
+          "correct": "道",
           "options": [
-            "完",
-            "非常",
-            "考试",
-            "已经"
+            "问题",
+            "知道",
+            "道",
+            "第一"
           ],
           "option_pinyin": [
-            "wán",
-            "fēi cháng",
-            "kǎo shì",
-            "yǐ jīng"
+            "wèn tí",
+            "zhī dào",
+            "dào",
+            "dì yī"
           ]
         }
       ],
-      "example_pinyin": "zhè cì kǎo shì fēi cháng nán"
+      "example_pinyin": "wǒ zuò cuò le liǎng dào tí"
     },
     {
       "id": "hsk2_l9_03",
@@ -152,15 +152,15 @@
           "correct": "Examination / Test",
           "options": [
             "Examination / Test",
-            "Problem / Question",
-            "Question (on a test) / Topic",
-            "To know"
+            "To finish / Completion marker",
+            "To understand / To be clear about",
+            "Problem / Question"
           ],
           "option_pinyin": [
             "kǎo shì",
-            "wèn tí",
-            "tí",
-            "zhī dào"
+            "wán",
+            "míng bai",
+            "wèn tí"
           ]
         },
         {
@@ -168,16 +168,16 @@
           "question": "Fill in: Examination / Test",
           "correct": "考试",
           "options": [
-            "错",
-            "懂",
-            "第一",
-            "考试"
+            "两",
+            "明白",
+            "考试",
+            "早就"
           ],
           "option_pinyin": [
-            "cuò",
-            "dǒng",
-            "dì yī",
-            "kǎo shì"
+            "liǎng",
+            "míng bai",
+            "kǎo shì",
+            "zǎo jiù"
           ],
           "question_chinese": "我去学校___。",
           "question_pinyin": "我去学校___。",
@@ -188,16 +188,16 @@
           "question": "Which word means 'Examination / Test'?",
           "correct": "考试",
           "options": [
-            "错",
+            "对",
+            "明白",
             "第一",
-            "考试",
-            "懂"
+            "考试"
           ],
           "option_pinyin": [
-            "cuò",
+            "duì",
+            "míng bai",
             "dì yī",
-            "kǎo shì",
-            "dǒng"
+            "kǎo shì"
           ]
         }
       ],
@@ -217,16 +217,16 @@
           "question": "What does 题 mean?",
           "correct": "Question (on a test) / Topic",
           "options": [
-            "Examination / Test",
             "Question (on a test) / Topic",
-            "Wrong / Incorrect",
-            "First / Number one"
+            "Problem / Question",
+            "Long since / Already (a long time ago)",
+            "Correct / Right"
           ],
           "option_pinyin": [
-            "kǎo shì",
             "tí",
-            "cuò",
-            "dì yī"
+            "wèn tí",
+            "zǎo jiù",
+            "duì"
           ]
         },
         {
@@ -234,16 +234,16 @@
           "question": "Fill in: Question (on a test) / Topic",
           "correct": "题",
           "options": [
-            "懂",
+            "完",
+            "知道",
             "题",
-            "已经",
-            "问题"
+            "考试"
           ],
           "option_pinyin": [
-            "dǒng",
+            "wán",
+            "zhī dào",
             "tí",
-            "yǐ jīng",
-            "wèn tí"
+            "kǎo shì"
           ],
           "question_chinese": "第一___很难。",
           "question_pinyin": "第一___很难。",
@@ -254,15 +254,15 @@
           "question": "Which word means 'Question (on a test) / Topic'?",
           "correct": "题",
           "options": [
-            "懂",
-            "问题",
-            "已经",
+            "道",
+            "知道",
+            "完",
             "题"
           ],
           "option_pinyin": [
-            "dǒng",
-            "wèn tí",
-            "yǐ jīng",
+            "dào",
+            "zhī dào",
+            "wán",
             "tí"
           ]
         }
@@ -283,16 +283,16 @@
           "question": "What does 错 mean?",
           "correct": "Wrong / Incorrect",
           "options": [
-            "Correct / Right",
-            "Examination / Test",
             "Wrong / Incorrect",
-            "To understand"
+            "To know",
+            "First / Number one",
+            "Question (on a test) / Topic"
           ],
           "option_pinyin": [
-            "duì",
-            "kǎo shì",
             "cuò",
-            "dǒng"
+            "zhī dào",
+            "dì yī",
+            "tí"
           ]
         },
         {
@@ -300,16 +300,16 @@
           "question": "Fill in: Wrong / Incorrect",
           "correct": "错",
           "options": [
-            "完",
-            "第一",
-            "错",
-            "非常"
+            "问题",
+            "明白",
+            "考试",
+            "错"
           ],
           "option_pinyin": [
-            "wán",
-            "dì yī",
-            "cuò",
-            "fēi cháng"
+            "wèn tí",
+            "míng bai",
+            "kǎo shì",
+            "cuò"
           ],
           "question_chinese": "我做___了两道题。",
           "question_pinyin": "我做___了两道题。",
@@ -320,16 +320,16 @@
           "question": "Which word means 'Wrong / Incorrect'?",
           "correct": "错",
           "options": [
-            "非常",
+            "问题",
+            "知道",
             "错",
-            "第一",
-            "完"
+            "第一"
           ],
           "option_pinyin": [
-            "fēi cháng",
+            "wèn tí",
+            "zhī dào",
             "cuò",
-            "dì yī",
-            "wán"
+            "dì yī"
           ]
         }
       ],
@@ -349,16 +349,16 @@
           "question": "What does 对 mean?",
           "correct": "Correct / Right",
           "options": [
-            "Correct / Right",
-            "Examination / Test",
-            "To understand",
-            "To know"
+            "First / Number one",
+            "To know",
+            "Two (of something)",
+            "Correct / Right"
           ],
           "option_pinyin": [
-            "duì",
-            "kǎo shì",
-            "dǒng",
-            "zhī dào"
+            "dì yī",
+            "zhī dào",
+            "liǎng",
+            "duì"
           ]
         },
         {
@@ -366,16 +366,16 @@
           "question": "Fill in: Correct / Right",
           "correct": "对",
           "options": [
-            "非常",
-            "对",
             "两",
-            "题"
+            "题",
+            "问题",
+            "对"
           ],
           "option_pinyin": [
-            "fēi cháng",
-            "duì",
             "liǎng",
-            "tí"
+            "tí",
+            "wèn tí",
+            "duì"
           ],
           "question_chinese": "这个答案是___的。",
           "question_pinyin": "这个答案是___的。",
@@ -386,15 +386,15 @@
           "question": "Which word means 'Correct / Right'?",
           "correct": "对",
           "options": [
+            "考试",
+            "错",
             "对",
-            "题",
-            "非常",
             "两"
           ],
           "option_pinyin": [
+            "kǎo shì",
+            "cuò",
             "duì",
-            "tí",
-            "fēi cháng",
             "liǎng"
           ]
         }
@@ -415,15 +415,15 @@
           "question": "What does 第一 mean?",
           "correct": "First / Number one",
           "options": [
+            "Examination / Test",
+            "Wrong / Incorrect",
             "First / Number one",
-            "Correct / Right",
-            "To finish / Completion marker",
             "Problem / Question"
           ],
           "option_pinyin": [
+            "kǎo shì",
+            "cuò",
             "dì yī",
-            "duì",
-            "wán",
             "wèn tí"
           ]
         },
@@ -432,16 +432,16 @@
           "question": "Fill in: First / Number one",
           "correct": "第一",
           "options": [
-            "知道",
-            "第一",
-            "两",
-            "考试"
+            "明白",
+            "早就",
+            "完",
+            "第一"
           ],
           "option_pinyin": [
-            "zhī dào",
-            "dì yī",
-            "liǎng",
-            "kǎo shì"
+            "míng bai",
+            "zǎo jiù",
+            "wán",
+            "dì yī"
           ],
           "question_chinese": "你知道___题的答案吗？",
           "question_pinyin": "你知道___题的答案吗？",
@@ -453,15 +453,15 @@
           "correct": "第一",
           "options": [
             "考试",
-            "知道",
             "第一",
-            "两"
+            "两",
+            "问题"
           ],
           "option_pinyin": [
             "kǎo shì",
-            "zhī dào",
             "dì yī",
-            "liǎng"
+            "liǎng",
+            "wèn tí"
           ]
         }
       ],
@@ -469,69 +469,69 @@
     },
     {
       "id": "hsk2_l9_08",
-      "chinese": "懂",
-      "pinyin": "dǒng",
-      "english": "To understand",
+      "chinese": "明白",
+      "pinyin": "míng bai",
+      "english": "To understand / To be clear about",
       "part_of_speech": "verb",
-      "example": "你懂这道题吗？",
-      "translation": "Do you understand this question?",
+      "example": "你明白了吗？",
+      "translation": "Do you understand?",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 懂 mean?",
-          "correct": "To understand",
+          "question": "What does 明白 mean?",
+          "correct": "To understand / To be clear about",
           "options": [
-            "Correct / Right",
-            "To understand",
-            "Already",
-            "To finish / Completion marker"
+            "[Measure word for questions, dishes, or courses]",
+            "First / Number one",
+            "To understand / To be clear about",
+            "To know"
           ],
           "option_pinyin": [
-            "duì",
-            "dǒng",
-            "yǐ jīng",
-            "wán"
+            "dào",
+            "dì yī",
+            "míng bai",
+            "zhī dào"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To understand",
-          "correct": "懂",
+          "question": "Fill in: To understand / To be clear about",
+          "correct": "明白",
           "options": [
-            "非常",
-            "懂",
-            "第一",
-            "知道"
+            "考试",
+            "完",
+            "明白",
+            "第一"
           ],
           "option_pinyin": [
-            "fēi cháng",
-            "dǒng",
-            "dì yī",
-            "zhī dào"
+            "kǎo shì",
+            "wán",
+            "míng bai",
+            "dì yī"
           ],
-          "question_chinese": "你___这道题吗？",
-          "question_pinyin": "你___这道题吗？",
-          "question_english": "Do you understand this question?"
+          "question_chinese": "你___了吗？",
+          "question_pinyin": "你___了吗？",
+          "question_english": "Do you understand?"
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To understand'?",
-          "correct": "懂",
+          "question": "Which word means 'To understand / To be clear about'?",
+          "correct": "明白",
           "options": [
+            "明白",
             "知道",
-            "第一",
-            "非常",
-            "懂"
+            "道",
+            "考试"
           ],
           "option_pinyin": [
+            "míng bai",
             "zhī dào",
-            "dì yī",
-            "fēi cháng",
-            "dǒng"
+            "dào",
+            "kǎo shì"
           ]
         }
       ],
-      "example_pinyin": "nǐ dǒng zhè dào tí ma"
+      "example_pinyin": "nǐ míng bái le ma"
     },
     {
       "id": "hsk2_l9_09",
@@ -547,15 +547,15 @@
           "question": "What does 知道 mean?",
           "correct": "To know",
           "options": [
-            "Question (on a test) / Topic",
-            "Two (of something)",
-            "Problem / Question",
+            "First / Number one",
+            "Long since / Already (a long time ago)",
+            "Examination / Test",
             "To know"
           ],
           "option_pinyin": [
-            "tí",
-            "liǎng",
-            "wèn tí",
+            "dì yī",
+            "zǎo jiù",
+            "kǎo shì",
             "zhī dào"
           ]
         },
@@ -564,16 +564,16 @@
           "question": "Fill in: To know",
           "correct": "知道",
           "options": [
-            "非常",
             "知道",
+            "错",
             "第一",
-            "考试"
+            "两"
           ],
           "option_pinyin": [
-            "fēi cháng",
             "zhī dào",
+            "cuò",
             "dì yī",
-            "kǎo shì"
+            "liǎng"
           ],
           "question_chinese": "我不___答案。",
           "question_pinyin": "我不___答案。",
@@ -584,16 +584,16 @@
           "question": "Which word means 'To know'?",
           "correct": "知道",
           "options": [
-            "第一",
-            "考试",
-            "非常",
-            "知道"
+            "错",
+            "对",
+            "知道",
+            "明白"
           ],
           "option_pinyin": [
-            "dì yī",
-            "kǎo shì",
-            "fēi cháng",
-            "zhī dào"
+            "cuò",
+            "duì",
+            "zhī dào",
+            "míng bai"
           ]
         }
       ],
@@ -601,69 +601,69 @@
     },
     {
       "id": "hsk2_l9_10",
-      "chinese": "已经",
-      "pinyin": "yǐ jīng",
-      "english": "Already",
+      "chinese": "早就",
+      "pinyin": "zǎo jiù",
+      "english": "Long since / Already (a long time ago)",
       "part_of_speech": "adverb",
-      "example": "我已经做完了。",
-      "translation": "I have already finished.",
+      "example": "我早就知道这件事了。",
+      "translation": "I already knew about this long ago.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 已经 mean?",
-          "correct": "Already",
+          "question": "What does 早就 mean?",
+          "correct": "Long since / Already (a long time ago)",
           "options": [
-            "To understand",
-            "Two (of something)",
-            "Already",
-            "Question (on a test) / Topic"
+            "Wrong / Incorrect",
+            "Long since / Already (a long time ago)",
+            "To finish / Completion marker",
+            "To know"
           ],
           "option_pinyin": [
-            "dǒng",
-            "liǎng",
-            "yǐ jīng",
-            "tí"
+            "cuò",
+            "zǎo jiù",
+            "wán",
+            "zhī dào"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Already",
-          "correct": "已经",
+          "question": "Fill in: Long since / Already (a long time ago)",
+          "correct": "早就",
           "options": [
-            "问题",
-            "错",
-            "已经",
-            "非常"
+            "第一",
+            "明白",
+            "早就",
+            "对"
           ],
           "option_pinyin": [
-            "wèn tí",
-            "cuò",
-            "yǐ jīng",
-            "fēi cháng"
+            "dì yī",
+            "míng bai",
+            "zǎo jiù",
+            "duì"
           ],
-          "question_chinese": "我___做完了。",
-          "question_pinyin": "我___做完了。",
-          "question_english": "I have already finished."
+          "question_chinese": "我___知道这件事了。",
+          "question_pinyin": "我___知道这件事了。",
+          "question_english": "I already knew about this long ago."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Already'?",
-          "correct": "已经",
+          "question": "Which word means 'Long since / Already (a long time ago)'?",
+          "correct": "早就",
           "options": [
-            "错",
-            "问题",
-            "非常",
-            "已经"
+            "道",
+            "明白",
+            "两",
+            "早就"
           ],
           "option_pinyin": [
-            "cuò",
-            "wèn tí",
-            "fēi cháng",
-            "yǐ jīng"
+            "dào",
+            "míng bai",
+            "liǎng",
+            "zǎo jiù"
           ]
         }
       ],
-      "example_pinyin": "wǒ yǐ jīng zuò wán le"
+      "example_pinyin": "wǒ zǎo jiù zhī dào zhè jiàn shì le"
     },
     {
       "id": "hsk2_l9_11",
@@ -681,14 +681,14 @@
           "options": [
             "Two (of something)",
             "To know",
-            "To finish / Completion marker",
-            "Wrong / Incorrect"
+            "First / Number one",
+            "[Measure word for questions, dishes, or courses]"
           ],
           "option_pinyin": [
             "liǎng",
             "zhī dào",
-            "wán",
-            "cuò"
+            "dì yī",
+            "dào"
           ]
         },
         {
@@ -696,16 +696,16 @@
           "question": "Fill in: Two (of something)",
           "correct": "两",
           "options": [
+            "对",
             "两",
-            "考试",
-            "题",
-            "对"
+            "问题",
+            "第一"
           ],
           "option_pinyin": [
+            "duì",
             "liǎng",
-            "kǎo shì",
-            "tí",
-            "duì"
+            "wèn tí",
+            "dì yī"
           ],
           "question_chinese": "我做错了___道题。",
           "question_pinyin": "我做错了___道题。",
@@ -716,16 +716,16 @@
           "question": "Which word means 'Two (of something)'?",
           "correct": "两",
           "options": [
-            "对",
-            "两",
             "考试",
-            "题"
+            "两",
+            "对",
+            "明白"
           ],
           "option_pinyin": [
-            "duì",
-            "liǎng",
             "kǎo shì",
-            "tí"
+            "liǎng",
+            "duì",
+            "míng bai"
           ]
         }
       ],
@@ -747,14 +747,14 @@
           "options": [
             "To finish / Completion marker",
             "Problem / Question",
-            "Wrong / Incorrect",
-            "Two (of something)"
+            "Question (on a test) / Topic",
+            "To understand / To be clear about"
           ],
           "option_pinyin": [
             "wán",
             "wèn tí",
-            "cuò",
-            "liǎng"
+            "tí",
+            "míng bai"
           ]
         },
         {
@@ -762,14 +762,14 @@
           "question": "Fill in: To finish / Completion marker",
           "correct": "完",
           "options": [
-            "知道",
-            "非常",
+            "题",
+            "对",
             "完",
             "第一"
           ],
           "option_pinyin": [
-            "zhī dào",
-            "fēi cháng",
+            "tí",
+            "duì",
             "wán",
             "dì yī"
           ],
@@ -782,16 +782,16 @@
           "question": "Which word means 'To finish / Completion marker'?",
           "correct": "完",
           "options": [
-            "第一",
-            "非常",
-            "知道",
-            "完"
+            "题",
+            "对",
+            "完",
+            "知道"
           ],
           "option_pinyin": [
-            "dì yī",
-            "fēi cháng",
-            "zhī dào",
-            "wán"
+            "tí",
+            "duì",
+            "wán",
+            "zhī dào"
           ]
         }
       ],

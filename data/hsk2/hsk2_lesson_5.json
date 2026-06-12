@@ -19,16 +19,16 @@
           "question": "What does 穿 mean?",
           "correct": "To wear / To put on",
           "options": [
-            "To wear / To put on",
-            "Happy / Joyful",
             "To look for / To find / To give change",
-            "Colour"
+            "To wear / To put on",
+            "[Measure word for long, flexible items e.g. trousers, skirts, fish]",
+            "To give (as a present) / To deliver"
           ],
           "option_pinyin": [
-            "chuān",
-            "kuài lè",
             "zhǎo",
-            "yán sè"
+            "chuān",
+            "tiáo",
+            "sòng"
           ]
         },
         {
@@ -36,16 +36,16 @@
           "question": "Fill in: To wear / To put on",
           "correct": "穿",
           "options": [
+            "卖",
+            "条",
             "穿",
-            "便宜",
-            "送",
-            "卖"
+            "一下"
           ],
           "option_pinyin": [
+            "mài",
+            "tiáo",
             "chuān",
-            "pián yi",
-            "sòng",
-            "mài"
+            "yí xià"
           ],
           "question_chinese": "她___这件衣服很好看。",
           "question_pinyin": "她___这件衣服很好看。",
@@ -56,16 +56,16 @@
           "question": "Which word means 'To wear / To put on'?",
           "correct": "穿",
           "options": [
-            "卖",
-            "送",
-            "穿",
-            "便宜"
+            "蓝色",
+            "快乐",
+            "贵",
+            "穿"
           ],
           "option_pinyin": [
-            "mài",
-            "sòng",
-            "chuān",
-            "pián yi"
+            "lán sè",
+            "kuài lè",
+            "guì",
+            "chuān"
           ]
         }
       ],
@@ -85,16 +85,16 @@
           "question": "What does 便宜 mean?",
           "correct": "Cheap / Inexpensive",
           "options": [
+            "Green",
+            "To look for / To find / To give change",
             "Cheap / Inexpensive",
-            "To sell",
-            "To give (as a present) / To deliver",
-            "To buy"
+            "Happy / Joyful"
           ],
           "option_pinyin": [
+            "lǜ sè",
+            "zhǎo",
             "pián yi",
-            "mài",
-            "sòng",
-            "mǎi"
+            "kuài lè"
           ]
         },
         {
@@ -102,16 +102,16 @@
           "question": "Fill in: Cheap / Inexpensive",
           "correct": "便宜",
           "options": [
-            "快乐",
-            "贵",
-            "穿",
-            "便宜"
+            "绿色",
+            "给",
+            "便宜",
+            "送"
           ],
           "option_pinyin": [
-            "kuài lè",
-            "guì",
-            "chuān",
-            "pián yi"
+            "lǜ sè",
+            "gěi",
+            "pián yi",
+            "sòng"
           ],
           "question_chinese": "这件衣服很___。",
           "question_pinyin": "这件衣服很___。",
@@ -122,16 +122,16 @@
           "question": "Which word means 'Cheap / Inexpensive'?",
           "correct": "便宜",
           "options": [
-            "贵",
+            "绿色",
+            "找",
             "穿",
-            "便宜",
-            "快乐"
+            "便宜"
           ],
           "option_pinyin": [
-            "guì",
+            "lǜ sè",
+            "zhǎo",
             "chuān",
-            "pián yi",
-            "kuài lè"
+            "pián yi"
           ]
         }
       ],
@@ -151,16 +151,16 @@
           "question": "What does 贵 mean?",
           "correct": "Expensive",
           "options": [
-            "Expensive",
+            "Happy / Joyful",
+            "[used after verb] give it a try / a moment",
             "Cheap / Inexpensive",
-            "To wear / To put on",
-            "Colour"
+            "Expensive"
           ],
           "option_pinyin": [
-            "guì",
+            "kuài lè",
+            "yí xià",
             "pián yi",
-            "chuān",
-            "yán sè"
+            "guì"
           ]
         },
         {
@@ -168,16 +168,16 @@
           "question": "Fill in: Expensive",
           "correct": "贵",
           "options": [
-            "给",
-            "贵",
             "一下",
-            "买"
+            "条",
+            "贵",
+            "卖"
           ],
           "option_pinyin": [
-            "gěi",
-            "guì",
             "yí xià",
-            "mǎi"
+            "tiáo",
+            "guì",
+            "mài"
           ],
           "question_chinese": "这件衣服有点儿___。",
           "question_pinyin": "这件衣服有点儿___。",
@@ -188,16 +188,16 @@
           "question": "Which word means 'Expensive'?",
           "correct": "贵",
           "options": [
+            "快乐",
             "贵",
             "买",
-            "一下",
-            "给"
+            "绿色"
           ],
           "option_pinyin": [
+            "kuài lè",
             "guì",
             "mǎi",
-            "yí xià",
-            "gěi"
+            "lǜ sè"
           ]
         }
       ],
@@ -205,69 +205,69 @@
     },
     {
       "id": "hsk2_l5_04",
-      "chinese": "颜色",
-      "pinyin": "yán sè",
-      "english": "Colour",
+      "chinese": "蓝色",
+      "pinyin": "lán sè",
+      "english": "Blue",
       "part_of_speech": "noun",
-      "example": "这件衣服颜色很好看。",
-      "translation": "The colour of this item of clothing is very nice.",
+      "example": "这件衣服是蓝色的。",
+      "translation": "This piece of clothing is blue.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 颜色 mean?",
-          "correct": "Colour",
+          "question": "What does 蓝色 mean?",
+          "correct": "Blue",
           "options": [
+            "Expensive",
+            "Blue",
             "To buy",
-            "To give / For",
-            "To give (as a present) / To deliver",
-            "Colour"
+            "[Measure word for long, flexible items e.g. trousers, skirts, fish]"
           ],
           "option_pinyin": [
+            "guì",
+            "lán sè",
             "mǎi",
-            "gěi",
-            "sòng",
-            "yán sè"
+            "tiáo"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Colour",
-          "correct": "颜色",
+          "question": "Fill in: Blue",
+          "correct": "蓝色",
           "options": [
-            "件",
-            "便宜",
-            "找",
-            "颜色"
+            "送",
+            "条",
+            "穿",
+            "蓝色"
           ],
           "option_pinyin": [
-            "jiàn",
-            "pián yi",
-            "zhǎo",
-            "yán sè"
+            "sòng",
+            "tiáo",
+            "chuān",
+            "lán sè"
           ],
-          "question_chinese": "这件衣服___很好看。",
-          "question_pinyin": "这件衣服___很好看。",
-          "question_english": "The colour of this item of clothing is very nice."
+          "question_chinese": "这件衣服是___的。",
+          "question_pinyin": "这件衣服是___的。",
+          "question_english": "This piece of clothing is blue."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Colour'?",
-          "correct": "颜色",
+          "question": "Which word means 'Blue'?",
+          "correct": "蓝色",
           "options": [
-            "件",
-            "颜色",
-            "找",
-            "便宜"
+            "穿",
+            "送",
+            "蓝色",
+            "绿色"
           ],
           "option_pinyin": [
-            "jiàn",
-            "yán sè",
-            "zhǎo",
-            "pián yi"
+            "chuān",
+            "sòng",
+            "lán sè",
+            "lǜ sè"
           ]
         }
       ],
-      "example_pinyin": "zhè jiàn yī fú yán sè hěn hǎo kàn"
+      "example_pinyin": "zhè jiàn yī fú shì lán sè de"
     },
     {
       "id": "hsk2_l5_05",
@@ -283,16 +283,16 @@
           "question": "What does 给 mean?",
           "correct": "To give / For",
           "options": [
-            "To give / For",
             "[used after verb] give it a try / a moment",
-            "Happy / Joyful",
-            "Expensive"
+            "Green",
+            "To give / For",
+            "To buy"
           ],
           "option_pinyin": [
-            "gěi",
             "yí xià",
-            "kuài lè",
-            "guì"
+            "lǜ sè",
+            "gěi",
+            "mǎi"
           ]
         },
         {
@@ -300,15 +300,15 @@
           "question": "Fill in: To give / For",
           "correct": "给",
           "options": [
+            "条",
             "穿",
-            "买",
-            "颜色",
+            "一下",
             "给"
           ],
           "option_pinyin": [
+            "tiáo",
             "chuān",
-            "mǎi",
-            "yán sè",
+            "yí xià",
             "gěi"
           ],
           "question_chinese": "他___我一件衣服。",
@@ -320,16 +320,16 @@
           "question": "Which word means 'To give / For'?",
           "correct": "给",
           "options": [
-            "给",
-            "买",
-            "颜色",
-            "穿"
+            "卖",
+            "绿色",
+            "一下",
+            "给"
           ],
           "option_pinyin": [
-            "gěi",
-            "mǎi",
-            "yán sè",
-            "chuān"
+            "mài",
+            "lǜ sè",
+            "yí xià",
+            "gěi"
           ]
         }
       ],
@@ -349,16 +349,16 @@
           "question": "What does 找 mean?",
           "correct": "To look for / To find / To give change",
           "options": [
-            "To sell",
             "Expensive",
-            "To give / For",
-            "To look for / To find / To give change"
+            "Green",
+            "To look for / To find / To give change",
+            "Blue"
           ],
           "option_pinyin": [
-            "mài",
             "guì",
-            "gěi",
-            "zhǎo"
+            "lǜ sè",
+            "zhǎo",
+            "lán sè"
           ]
         },
         {
@@ -366,16 +366,16 @@
           "question": "Fill in: To look for / To find / To give change",
           "correct": "找",
           "options": [
-            "送",
-            "穿",
-            "快乐",
-            "找"
+            "找",
+            "蓝色",
+            "给",
+            "卖"
           ],
           "option_pinyin": [
-            "sòng",
-            "chuān",
-            "kuài lè",
-            "zhǎo"
+            "zhǎo",
+            "lán sè",
+            "gěi",
+            "mài"
           ],
           "question_chinese": "你帮我___一件便宜的吧。",
           "question_pinyin": "你帮我___一件便宜的吧。",
@@ -386,15 +386,15 @@
           "question": "Which word means 'To look for / To find / To give change'?",
           "correct": "找",
           "options": [
-            "送",
+            "便宜",
+            "卖",
             "找",
-            "快乐",
             "穿"
           ],
           "option_pinyin": [
-            "sòng",
+            "pián yi",
+            "mài",
             "zhǎo",
-            "kuài lè",
             "chuān"
           ]
         }
@@ -415,16 +415,16 @@
           "question": "What does 送 mean?",
           "correct": "To give (as a present) / To deliver",
           "options": [
-            "To look for / To find / To give change",
-            "To give (as a present) / To deliver",
             "To give / For",
-            "To sell"
+            "To wear / To put on",
+            "Cheap / Inexpensive",
+            "To give (as a present) / To deliver"
           ],
           "option_pinyin": [
-            "zhǎo",
-            "sòng",
             "gěi",
-            "mài"
+            "chuān",
+            "pián yi",
+            "sòng"
           ]
         },
         {
@@ -434,13 +434,13 @@
           "options": [
             "送",
             "穿",
-            "买",
+            "便宜",
             "快乐"
           ],
           "option_pinyin": [
             "sòng",
             "chuān",
-            "mǎi",
+            "pián yi",
             "kuài lè"
           ],
           "question_chinese": "我想___给朋友一件新衣服。",
@@ -452,16 +452,16 @@
           "question": "Which word means 'To give (as a present) / To deliver'?",
           "correct": "送",
           "options": [
-            "穿",
+            "找",
+            "买",
             "送",
-            "快乐",
-            "买"
+            "给"
           ],
           "option_pinyin": [
-            "chuān",
+            "zhǎo",
+            "mǎi",
             "sòng",
-            "kuài lè",
-            "mǎi"
+            "gěi"
           ]
         }
       ],
@@ -481,16 +481,16 @@
           "question": "What does 一下 mean?",
           "correct": "[used after verb] give it a try / a moment",
           "options": [
-            "[used after verb] give it a try / a moment",
-            "To look for / To find / To give change",
+            "Blue",
             "To give (as a present) / To deliver",
-            "Cheap / Inexpensive"
+            "[Measure word for long, flexible items e.g. trousers, skirts, fish]",
+            "[used after verb] give it a try / a moment"
           ],
           "option_pinyin": [
-            "yí xià",
-            "zhǎo",
+            "lán sè",
             "sòng",
-            "pián yi"
+            "tiáo",
+            "yí xià"
           ]
         },
         {
@@ -498,16 +498,16 @@
           "question": "Fill in: [used after verb] give it a try / a moment",
           "correct": "一下",
           "options": [
+            "绿色",
+            "便宜",
             "一下",
-            "快乐",
-            "颜色",
-            "买"
+            "卖"
           ],
           "option_pinyin": [
+            "lǜ sè",
+            "pián yi",
             "yí xià",
-            "kuài lè",
-            "yán sè",
-            "mǎi"
+            "mài"
           ],
           "question_chinese": "给我看___这件衣服。",
           "question_pinyin": "给我看___这件衣服。",
@@ -518,15 +518,15 @@
           "question": "Which word means '[used after verb] give it a try / a moment'?",
           "correct": "一下",
           "options": [
-            "快乐",
-            "买",
-            "颜色",
+            "给",
+            "卖",
+            "贵",
             "一下"
           ],
           "option_pinyin": [
-            "kuài lè",
-            "mǎi",
-            "yán sè",
+            "gěi",
+            "mài",
+            "guì",
             "yí xià"
           ]
         }
@@ -547,16 +547,16 @@
           "question": "What does 卖 mean?",
           "correct": "To sell",
           "options": [
-            "[used after verb] give it a try / a moment",
+            "To wear / To put on",
+            "[Measure word for long, flexible items e.g. trousers, skirts, fish]",
             "To sell",
-            "Cheap / Inexpensive",
-            "To give (as a present) / To deliver"
+            "Cheap / Inexpensive"
           ],
           "option_pinyin": [
-            "yí xià",
+            "chuān",
+            "tiáo",
             "mài",
-            "pián yi",
-            "sòng"
+            "pián yi"
           ]
         },
         {
@@ -564,16 +564,16 @@
           "question": "Fill in: To sell",
           "correct": "卖",
           "options": [
+            "便宜",
+            "穿",
             "贵",
-            "快乐",
-            "卖",
-            "颜色"
+            "卖"
           ],
           "option_pinyin": [
+            "pián yi",
+            "chuān",
             "guì",
-            "kuài lè",
-            "mài",
-            "yán sè"
+            "mài"
           ],
           "question_chinese": "这里___的衣服很便宜。",
           "question_pinyin": "这里___的衣服很便宜。",
@@ -584,16 +584,16 @@
           "question": "Which word means 'To sell'?",
           "correct": "卖",
           "options": [
-            "贵",
             "卖",
-            "快乐",
-            "颜色"
+            "便宜",
+            "穿",
+            "给"
           ],
           "option_pinyin": [
-            "guì",
             "mài",
-            "kuài lè",
-            "yán sè"
+            "pián yi",
+            "chuān",
+            "gěi"
           ]
         }
       ],
@@ -601,69 +601,69 @@
     },
     {
       "id": "hsk2_l5_10",
-      "chinese": "件",
-      "pinyin": "jiàn",
-      "english": "Item / [measure word for clothing]",
+      "chinese": "条",
+      "pinyin": "tiáo",
+      "english": "[Measure word for long, flexible items e.g. trousers, skirts, fish]",
       "part_of_speech": "measure word",
-      "example": "我买了一件衣服。",
-      "translation": "I bought one item of clothing.",
+      "example": "她穿了一条裤子。",
+      "translation": "She wore a pair of trousers.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 件 mean?",
-          "correct": "Item / [measure word for clothing]",
+          "question": "What does 条 mean?",
+          "correct": "[Measure word for long, flexible items e.g. trousers, skirts, fish]",
           "options": [
+            "To wear / To put on",
             "To look for / To find / To give change",
-            "[used after verb] give it a try / a moment",
-            "To buy",
-            "Item / [measure word for clothing]"
+            "Expensive",
+            "[Measure word for long, flexible items e.g. trousers, skirts, fish]"
           ],
           "option_pinyin": [
+            "chuān",
             "zhǎo",
-            "yí xià",
-            "mǎi",
-            "jiàn"
+            "guì",
+            "tiáo"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Item / [measure word for clothing]",
-          "correct": "件",
+          "question": "Fill in: [Measure word for long, flexible items e.g. trousers, skirts, fish]",
+          "correct": "条",
           "options": [
-            "贵",
             "卖",
-            "件",
-            "颜色"
+            "快乐",
+            "送",
+            "条"
           ],
           "option_pinyin": [
-            "guì",
             "mài",
-            "jiàn",
-            "yán sè"
+            "kuài lè",
+            "sòng",
+            "tiáo"
           ],
-          "question_chinese": "我买了一___衣服。",
-          "question_pinyin": "我买了一___衣服。",
-          "question_english": "I bought one item of clothing."
+          "question_chinese": "她穿了一___裤子。",
+          "question_pinyin": "她穿了一___裤子。",
+          "question_english": "She wore a pair of trousers."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Item / [measure word for clothing]'?",
-          "correct": "件",
+          "question": "Which word means '[Measure word for long, flexible items e.g. trousers, skirts, fish]'?",
+          "correct": "条",
           "options": [
-            "件",
-            "颜色",
-            "卖",
-            "贵"
+            "便宜",
+            "贵",
+            "条",
+            "卖"
           ],
           "option_pinyin": [
-            "jiàn",
-            "yán sè",
-            "mài",
-            "guì"
+            "pián yi",
+            "guì",
+            "tiáo",
+            "mài"
           ]
         }
       ],
-      "example_pinyin": "wǒ mǎi le yī jiàn yī fú"
+      "example_pinyin": "tā chuān le yī tiáo kù zi"
     },
     {
       "id": "hsk2_l5_11",
@@ -679,16 +679,16 @@
           "question": "What does 买 mean?",
           "correct": "To buy",
           "options": [
-            "To look for / To find / To give change",
-            "Cheap / Inexpensive",
-            "To wear / To put on",
-            "To buy"
+            "Green",
+            "To give (as a present) / To deliver",
+            "To buy",
+            "To wear / To put on"
           ],
           "option_pinyin": [
-            "zhǎo",
-            "pián yi",
-            "chuān",
-            "mǎi"
+            "lǜ sè",
+            "sòng",
+            "mǎi",
+            "chuān"
           ]
         },
         {
@@ -696,16 +696,16 @@
           "question": "Fill in: To buy",
           "correct": "买",
           "options": [
+            "找",
+            "便宜",
             "买",
-            "件",
-            "送",
-            "颜色"
+            "快乐"
           ],
           "option_pinyin": [
+            "zhǎo",
+            "pián yi",
             "mǎi",
-            "jiàn",
-            "sòng",
-            "yán sè"
+            "kuài lè"
           ],
           "question_chinese": "___这件吧，很便宜。",
           "question_pinyin": "___这件吧，很便宜。",
@@ -716,16 +716,16 @@
           "question": "Which word means 'To buy'?",
           "correct": "买",
           "options": [
-            "送",
-            "颜色",
-            "件",
-            "买"
+            "穿",
+            "买",
+            "蓝色",
+            "条"
           ],
           "option_pinyin": [
-            "sòng",
-            "yán sè",
-            "jiàn",
-            "mǎi"
+            "chuān",
+            "mǎi",
+            "lán sè",
+            "tiáo"
           ]
         }
       ],
@@ -745,16 +745,16 @@
           "question": "What does 快乐 mean?",
           "correct": "Happy / Joyful",
           "options": [
-            "To wear / To put on",
-            "To buy",
-            "Item / [measure word for clothing]",
-            "Happy / Joyful"
+            "[Measure word for long, flexible items e.g. trousers, skirts, fish]",
+            "Expensive",
+            "Happy / Joyful",
+            "To look for / To find / To give change"
           ],
           "option_pinyin": [
-            "chuān",
-            "mǎi",
-            "jiàn",
-            "kuài lè"
+            "tiáo",
+            "guì",
+            "kuài lè",
+            "zhǎo"
           ]
         },
         {
@@ -762,16 +762,16 @@
           "question": "Fill in: Happy / Joyful",
           "correct": "快乐",
           "options": [
-            "送",
-            "颜色",
-            "快乐",
-            "找"
+            "条",
+            "给",
+            "找",
+            "快乐"
           ],
           "option_pinyin": [
-            "sòng",
-            "yán sè",
-            "kuài lè",
-            "zhǎo"
+            "tiáo",
+            "gěi",
+            "zhǎo",
+            "kuài lè"
           ],
           "question_chinese": "她很___。",
           "question_pinyin": "她很___。",
@@ -782,20 +782,86 @@
           "question": "Which word means 'Happy / Joyful'?",
           "correct": "快乐",
           "options": [
+            "给",
             "找",
             "快乐",
-            "送",
-            "颜色"
+            "一下"
           ],
           "option_pinyin": [
+            "gěi",
             "zhǎo",
             "kuài lè",
-            "sòng",
-            "yán sè"
+            "yí xià"
           ]
         }
       ],
       "example_pinyin": "tā hěn kuài lè"
+    },
+    {
+      "id": "hsk2_l5_13",
+      "chinese": "绿色",
+      "pinyin": "lǜ sè",
+      "english": "Green",
+      "part_of_speech": "noun",
+      "example": "我喜欢绿色的衣服。",
+      "translation": "I like green clothes.",
+      "example_pinyin": "wǒ xǐ huān lǜ sè de yī fú",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 绿色 mean?",
+          "correct": "Green",
+          "options": [
+            "To sell",
+            "[used after verb] give it a try / a moment",
+            "To give (as a present) / To deliver",
+            "Green"
+          ],
+          "option_pinyin": [
+            "mài",
+            "yí xià",
+            "sòng",
+            "lǜ sè"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Green",
+          "correct": "绿色",
+          "options": [
+            "送",
+            "条",
+            "给",
+            "绿色"
+          ],
+          "option_pinyin": [
+            "sòng",
+            "tiáo",
+            "gěi",
+            "lǜ sè"
+          ],
+          "question_chinese": "我喜欢___的衣服。",
+          "question_pinyin": "我喜欢___的衣服。",
+          "question_english": "I like green clothes."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Green'?",
+          "correct": "绿色",
+          "options": [
+            "卖",
+            "贵",
+            "绿色",
+            "找"
+          ],
+          "option_pinyin": [
+            "mài",
+            "guì",
+            "lǜ sè",
+            "zhǎo"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk2_l5_p01",
