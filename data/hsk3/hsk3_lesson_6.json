@@ -20,16 +20,16 @@
           "question": "What does 可能 mean?",
           "correct": "Possibly / Maybe / Possible",
           "options": [
-            "Obviously / Clearly (contrary to what one says)",
-            "Everywhere / All over",
-            "Place / Location / Spot",
-            "Possibly / Maybe / Possible"
+            "Suddenly / All of a sudden",
+            "Possibly / Maybe / Possible",
+            "Since / Given that",
+            "To lose / To misplace"
           ],
           "option_pinyin": [
-            "míng míng",
-            "dào chù",
-            "dì fāng",
-            "kě néng"
+            "hū rán",
+            "kě néng",
+            "jì rán",
+            "diū"
           ]
         },
         {
@@ -39,34 +39,34 @@
           "options": [
             "可能",
             "丢",
-            "忽然",
-            "当然"
+            "垫子",
+            "既然"
           ],
           "option_pinyin": [
             "kě néng",
             "diū",
-            "hū rán",
-            "dāng rán"
+            "diàn zi",
+            "jì rán"
           ],
-          "question_chinese": "他___来晚了。",
-          "question_pinyin": "他___来晚了。",
-          "question_english": "He might be coming late."
+          "question_chinese": "你___把它放在桌子上了。",
+          "question_pinyin": "你___把它放在桌子上了。",
+          "question_english": "You may have put it on the table."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Possibly / Maybe / Possible'?",
           "correct": "可能",
           "options": [
-            "忽然",
-            "好像",
+            "到处",
             "可能",
-            "到处"
+            "忽然",
+            "钱包"
           ],
           "option_pinyin": [
-            "hū rán",
-            "hǎo xiàng",
+            "dào chù",
             "kě néng",
-            "dào chù"
+            "hū rán",
+            "qián bāo"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 忽然 mean?",
           "correct": "Suddenly / All of a sudden",
           "options": [
-            "Seem / Appear / As if",
+            "Obviously / Clearly (contrary to what one says)",
             "Suddenly / All of a sudden",
-            "To look for / To search",
-            "Everywhere / All over"
+            "Seem / Appear / As if",
+            "Possibly / Maybe / Possible"
           ],
           "option_pinyin": [
-            "hǎo xiàng",
+            "míng míng",
             "hū rán",
-            "zhǎo",
-            "dào chù"
+            "hǎo xiàng",
+            "kě néng"
           ]
         },
         {
@@ -103,20 +103,20 @@
           "question": "Fill in: Suddenly / All of a sudden",
           "correct": "忽然",
           "options": [
-            "找",
-            "当然",
             "忽然",
-            "到处"
+            "垫子",
+            "找",
+            "明明"
           ],
           "option_pinyin": [
-            "zhǎo",
-            "dāng rán",
             "hū rán",
-            "dào chù"
+            "diàn zi",
+            "zhǎo",
+            "míng míng"
           ],
-          "question_chinese": "天___下雨了。",
-          "question_pinyin": "天___下雨了。",
-          "question_english": "It suddenly started to rain."
+          "question_chinese": "我的手机___不见了。",
+          "question_pinyin": "我的手机___不见了。",
+          "question_english": "My phone suddenly disappeared."
         },
         {
           "type": "multiple_choice",
@@ -125,14 +125,14 @@
           "options": [
             "当然",
             "或者",
-            "好像",
-            "忽然"
+            "忽然",
+            "垫子"
           ],
           "option_pinyin": [
             "dāng rán",
             "huò zhě",
-            "hǎo xiàng",
-            "hū rán"
+            "hū rán",
+            "diàn zi"
           ]
         }
       ],
@@ -153,15 +153,15 @@
           "correct": "Or (in statements)",
           "options": [
             "Or (in statements)",
+            "Restaurant / Dining room",
             "Everywhere / All over",
-            "Obviously / Clearly (contrary to what one says)",
-            "Suddenly / All of a sudden"
+            "To confirm / Certain / Sure"
           ],
           "option_pinyin": [
             "huò zhě",
+            "cān tīng",
             "dào chù",
-            "míng míng",
-            "hū rán"
+            "què dìng"
           ]
         },
         {
@@ -169,36 +169,36 @@
           "question": "Fill in: Or (in statements)",
           "correct": "或者",
           "options": [
-            "到处",
-            "或者",
             "丢",
-            "忽然"
+            "明明",
+            "找",
+            "或者"
           ],
           "option_pinyin": [
-            "dào chù",
-            "huò zhě",
             "diū",
-            "hū rán"
+            "míng míng",
+            "zhǎo",
+            "huò zhě"
           ],
-          "question_chinese": "茶___咖啡，都可以",
-          "question_pinyin": "茶___咖啡，都可以",
-          "question_english": "tea or coffee, both Ok."
+          "question_chinese": "可能在沙发下面，___在厨房的地方。",
+          "question_pinyin": "可能在沙发下面，___在厨房的地方。",
+          "question_english": "Maybe under the sofa, or somewhere in the kitchen."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Or (in statements)'?",
           "correct": "或者",
           "options": [
-            "丢",
+            "明明",
+            "沙发",
             "或者",
-            "可能",
-            "找"
+            "垫子"
           ],
           "option_pinyin": [
-            "diū",
+            "míng míng",
+            "shā fā",
             "huò zhě",
-            "kě néng",
-            "zhǎo"
+            "diàn zi"
           ]
         }
       ],
@@ -219,15 +219,15 @@
           "correct": "Place / Location / Spot",
           "options": [
             "Place / Location / Spot",
-            "Possibly / Maybe / Possible",
-            "Since / Given that",
-            "To lose / To misplace"
+            "Wallet / Purse",
+            "To look for / To search",
+            "Possibly / Maybe / Possible"
           ],
           "option_pinyin": [
             "dì fāng",
-            "kě néng",
-            "jì rán",
-            "diū"
+            "qián bāo",
+            "zhǎo",
+            "kě néng"
           ]
         },
         {
@@ -235,36 +235,36 @@
           "question": "Fill in: Place / Location / Spot",
           "correct": "地方",
           "options": [
-            "忽然",
-            "到处",
+            "明明",
             "地方",
-            "肯定"
+            "找",
+            "既然"
           ],
           "option_pinyin": [
-            "hū rán",
-            "dào chù",
+            "míng míng",
             "dì fāng",
-            "kěn dìng"
+            "zhǎo",
+            "jì rán"
           ],
-          "question_chinese": "这个___很美。",
-          "question_pinyin": "这个___很美。",
-          "question_english": "This place is very beautiful."
+          "question_chinese": "肯定在这个___，你再找一找。",
+          "question_pinyin": "肯定在这个___，你再找一找。",
+          "question_english": "It's definitely in this spot — look again."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Place / Location / Spot'?",
           "correct": "地方",
           "options": [
-            "可能",
-            "忽然",
             "地方",
-            "既然"
+            "遍",
+            "可能",
+            "忽然"
           ],
           "option_pinyin": [
-            "kě néng",
-            "hū rán",
             "dì fāng",
-            "jì rán"
+            "biàn",
+            "kě néng",
+            "hū rán"
           ]
         }
       ],
@@ -284,16 +284,16 @@
           "question": "What does 既然 mean?",
           "correct": "Since / Given that",
           "options": [
-            "Suddenly / All of a sudden",
-            "Obviously / Clearly (contrary to what one says)",
-            "Seem / Appear / As if",
-            "Since / Given that"
+            "To look for / To search",
+            "Possibly / Maybe / Possible",
+            "Since / Given that",
+            "Suddenly / All of a sudden"
           ],
           "option_pinyin": [
-            "hū rán",
-            "míng míng",
-            "hǎo xiàng",
-            "jì rán"
+            "zhǎo",
+            "kě néng",
+            "jì rán",
+            "hū rán"
           ]
         },
         {
@@ -301,36 +301,36 @@
           "question": "Fill in: Since / Given that",
           "correct": "既然",
           "options": [
+            "丢",
             "既然",
-            "明明",
-            "或者",
-            "丢"
+            "钱包",
+            "地方"
           ],
           "option_pinyin": [
+            "diū",
             "jì rán",
-            "míng míng",
-            "huò zhě",
-            "diū"
+            "qián bāo",
+            "dì fāng"
           ],
-          "question_chinese": "___你不想去，就别去了。",
-          "question_pinyin": "___你不想去，就别去了。",
-          "question_english": "Since you don't want to go, don't go."
+          "question_chinese": "___找不到，就再买一个吧。",
+          "question_pinyin": "___找不到，就再买一个吧。",
+          "question_english": "Since we can't find it, let's just buy another one."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Since / Given that'?",
           "correct": "既然",
           "options": [
-            "当然",
+            "既然",
+            "找",
             "丢",
-            "好像",
-            "既然"
+            "钱包"
           ],
           "option_pinyin": [
-            "dāng rán",
+            "jì rán",
+            "zhǎo",
             "diū",
-            "hǎo xiàng",
-            "jì rán"
+            "qián bāo"
           ]
         }
       ],
@@ -350,16 +350,16 @@
           "question": "What does 好像 mean?",
           "correct": "Seem / Appear / As if",
           "options": [
-            "To look for / To search",
-            "Place / Location / Spot",
-            "Or (in statements)",
-            "Seem / Appear / As if"
+            "Seem / Appear / As if",
+            "Obviously / Clearly (contrary to what one says)",
+            "Sofa / Couch",
+            "Suddenly / All of a sudden"
           ],
           "option_pinyin": [
-            "zhǎo",
-            "dì fāng",
-            "huò zhě",
-            "hǎo xiàng"
+            "hǎo xiàng",
+            "míng míng",
+            "shā fā",
+            "hū rán"
           ]
         },
         {
@@ -367,20 +367,20 @@
           "question": "Fill in: Seem / Appear / As if",
           "correct": "好像",
           "options": [
-            "可能",
-            "忽然",
-            "肯定",
-            "好像"
+            "好像",
+            "餐厅",
+            "到处",
+            "找"
           ],
           "option_pinyin": [
-            "kě néng",
-            "hū rán",
-            "kěn dìng",
-            "hǎo xiàng"
+            "hǎo xiàng",
+            "cān tīng",
+            "dào chù",
+            "zhǎo"
           ],
-          "question_chinese": "他___不高兴。",
-          "question_pinyin": "他___不高兴。",
-          "question_english": "He seems unhappy."
+          "question_chinese": "___丢了，我到处找都找不到。",
+          "question_pinyin": "___丢了，我到处找都找不到。",
+          "question_english": "It seems to be lost — I've searched everywhere but can't find it."
         },
         {
           "type": "multiple_choice",
@@ -388,15 +388,15 @@
           "correct": "好像",
           "options": [
             "可能",
-            "肯定",
             "好像",
-            "丢"
+            "遍",
+            "钱包"
           ],
           "option_pinyin": [
             "kě néng",
-            "kěn dìng",
             "hǎo xiàng",
-            "diū"
+            "biàn",
+            "qián bāo"
           ]
         }
       ],
@@ -416,16 +416,16 @@
           "question": "What does 当然 mean?",
           "correct": "Of course / Naturally",
           "options": [
-            "Certainly / Definitely / Surely",
+            "Suddenly / All of a sudden",
+            "Wallet / Purse",
             "Of course / Naturally",
-            "Obviously / Clearly (contrary to what one says)",
-            "Suddenly / All of a sudden"
+            "[Measure word for complete passes through an action]"
           ],
           "option_pinyin": [
-            "kěn dìng",
+            "hū rán",
+            "qián bāo",
             "dāng rán",
-            "míng míng",
-            "hū rán"
+            "biàn"
           ]
         },
         {
@@ -433,36 +433,36 @@
           "question": "Fill in: Of course / Naturally",
           "correct": "当然",
           "options": [
-            "丢",
             "到处",
+            "钱包",
             "当然",
-            "肯定"
+            "忽然"
           ],
           "option_pinyin": [
-            "diū",
             "dào chù",
+            "qián bāo",
             "dāng rán",
-            "kěn dìng"
+            "hū rán"
           ],
-          "question_chinese": "___可以！",
-          "question_pinyin": "___可以！",
-          "question_english": "Of course you can!"
+          "question_chinese": "既然这样，___要先回餐厅问一下。",
+          "question_pinyin": "既然这样，___要先回餐厅问一下。",
+          "question_english": "In that case, you should of course go back to the canteen and ask first."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Of course / Naturally'?",
           "correct": "当然",
           "options": [
-            "地方",
-            "当然",
-            "找",
-            "可能"
+            "可能",
+            "好像",
+            "忽然",
+            "当然"
           ],
           "option_pinyin": [
-            "dì fāng",
-            "dāng rán",
-            "zhǎo",
-            "kě néng"
+            "kě néng",
+            "hǎo xiàng",
+            "hū rán",
+            "dāng rán"
           ]
         }
       ],
@@ -482,16 +482,16 @@
           "question": "What does 明明 mean?",
           "correct": "Obviously / Clearly (contrary to what one says)",
           "options": [
+            "Wallet / Purse",
+            "Restaurant / Dining room",
             "Obviously / Clearly (contrary to what one says)",
-            "To lose / To misplace",
-            "Since / Given that",
-            "Seem / Appear / As if"
+            "Sofa / Couch"
           ],
           "option_pinyin": [
+            "qián bāo",
+            "cān tīng",
             "míng míng",
-            "diū",
-            "jì rán",
-            "hǎo xiàng"
+            "shā fā"
           ]
         },
         {
@@ -499,36 +499,36 @@
           "question": "Fill in: Obviously / Clearly (contrary to what one says)",
           "correct": "明明",
           "options": [
-            "明明",
-            "可能",
-            "找",
-            "既然"
+            "或者",
+            "遍",
+            "到处",
+            "明明"
           ],
           "option_pinyin": [
-            "míng míng",
-            "kě néng",
-            "zhǎo",
-            "jì rán"
+            "huò zhě",
+            "biàn",
+            "dào chù",
+            "míng míng"
           ],
-          "question_chinese": "他___知道，但不说。",
-          "question_pinyin": "他___知道，但不说。",
-          "question_english": "He obviously knows but doesn't say."
+          "question_chinese": "___放在这里，怎么忽然找不到了？",
+          "question_pinyin": "___放在这里，怎么忽然找不到了？",
+          "question_english": "I clearly put it right here — how can it suddenly be gone?"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Obviously / Clearly (contrary to what one says)'?",
           "correct": "明明",
           "options": [
-            "好像",
-            "明明",
             "或者",
-            "既然"
+            "明明",
+            "既然",
+            "地方"
           ],
           "option_pinyin": [
-            "hǎo xiàng",
-            "míng míng",
             "huò zhě",
-            "jì rán"
+            "míng míng",
+            "jì rán",
+            "dì fāng"
           ]
         }
       ],
@@ -548,15 +548,15 @@
           "question": "What does 丢 mean?",
           "correct": "To lose / To misplace",
           "options": [
-            "Seem / Appear / As if",
-            "Place / Location / Spot",
+            "Restaurant / Dining room",
             "Suddenly / All of a sudden",
+            "Possibly / Maybe / Possible",
             "To lose / To misplace"
           ],
           "option_pinyin": [
-            "hǎo xiàng",
-            "dì fāng",
+            "cān tīng",
             "hū rán",
+            "kě néng",
             "diū"
           ]
         },
@@ -565,35 +565,35 @@
           "question": "Fill in: To lose / To misplace",
           "correct": "丢",
           "options": [
+            "找",
             "好像",
-            "地方",
             "丢",
-            "肯定"
+            "明明"
           ],
           "option_pinyin": [
+            "zhǎo",
             "hǎo xiàng",
-            "dì fāng",
             "diū",
-            "kěn dìng"
+            "míng míng"
           ],
-          "question_chinese": "我把钥匙___了。",
-          "question_pinyin": "我把钥匙___了。",
-          "question_english": "I lost my keys."
+          "question_chinese": "我的钱包好像___了。",
+          "question_pinyin": "我的钱包好像___了。",
+          "question_english": "My wallet seems to be lost."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To lose / To misplace'?",
           "correct": "丢",
           "options": [
-            "肯定",
             "地方",
-            "找",
+            "遍",
+            "到处",
             "丢"
           ],
           "option_pinyin": [
-            "kěn dìng",
             "dì fāng",
-            "zhǎo",
+            "biàn",
+            "dào chù",
             "diū"
           ]
         }
@@ -614,16 +614,16 @@
           "question": "What does 到处 mean?",
           "correct": "Everywhere / All over",
           "options": [
-            "Obviously / Clearly (contrary to what one says)",
+            "Wallet / Purse",
+            "To confirm / Certain / Sure",
             "Everywhere / All over",
-            "Or (in statements)",
-            "Place / Location / Spot"
+            "Sofa / Couch"
           ],
           "option_pinyin": [
-            "míng míng",
+            "qián bāo",
+            "què dìng",
             "dào chù",
-            "huò zhě",
-            "dì fāng"
+            "shā fā"
           ]
         },
         {
@@ -631,36 +631,36 @@
           "question": "Fill in: Everywhere / All over",
           "correct": "到处",
           "options": [
-            "忽然",
-            "找",
+            "好像",
             "到处",
-            "丢"
+            "沙发",
+            "遍"
           ],
           "option_pinyin": [
-            "hū rán",
-            "zhǎo",
+            "hǎo xiàng",
             "dào chù",
-            "diū"
+            "shā fā",
+            "biàn"
           ],
-          "question_chinese": "我___找他。",
-          "question_pinyin": "我___找他。",
-          "question_english": "I looked for him everywhere."
+          "question_chinese": "我___找都找不到。",
+          "question_pinyin": "我___找都找不到。",
+          "question_english": "I've searched everywhere but can't find it."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Everywhere / All over'?",
           "correct": "到处",
           "options": [
+            "垫子",
             "既然",
-            "忽然",
             "到处",
-            "当然"
+            "钱包"
           ],
           "option_pinyin": [
+            "diàn zi",
             "jì rán",
-            "hū rán",
             "dào chù",
-            "dāng rán"
+            "qián bāo"
           ]
         }
       ],
@@ -668,69 +668,69 @@
     },
     {
       "id": "hsk3_l6_11",
-      "chinese": "肯定",
-      "pinyin": "kěn dìng",
-      "english": "Certainly / Definitely / Surely",
-      "part_of_speech": "adverb",
-      "example": "肯定在这个地方，你再找一找。",
-      "translation": "It's definitely in this spot — look again.",
+      "chinese": "确定",
+      "pinyin": "què dìng",
+      "english": "To confirm / Certain / Sure",
+      "part_of_speech": "adjective/verb",
+      "example": "好像在那里，但我不确定。",
+      "translation": "It seems to be there, but I'm not sure.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 肯定 mean?",
-          "correct": "Certainly / Definitely / Surely",
+          "question": "What does 确定 mean?",
+          "correct": "To confirm / Certain / Sure",
           "options": [
-            "Possibly / Maybe / Possible",
-            "Or (in statements)",
             "Everywhere / All over",
-            "Certainly / Definitely / Surely"
+            "Place / Location / Spot",
+            "To look for / To search",
+            "To confirm / Certain / Sure"
           ],
           "option_pinyin": [
-            "kě néng",
-            "huò zhě",
             "dào chù",
-            "kěn dìng"
+            "dì fāng",
+            "zhǎo",
+            "què dìng"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Certainly / Definitely / Surely",
-          "correct": "肯定",
+          "question": "Fill in: To confirm / Certain / Sure",
+          "correct": "确定",
           "options": [
-            "到处",
-            "好像",
-            "肯定",
-            "或者"
+            "垫子",
+            "忽然",
+            "确定",
+            "遍"
           ],
           "option_pinyin": [
-            "dào chù",
-            "hǎo xiàng",
-            "kěn dìng",
-            "huò zhě"
+            "diàn zi",
+            "hū rán",
+            "què dìng",
+            "biàn"
           ],
-          "question_chinese": "他___会来的。",
-          "question_pinyin": "他___会来的。",
-          "question_english": "He will definitely come."
+          "question_chinese": "好像在那里，但我不___。",
+          "question_pinyin": "好像在那里，但我不___。",
+          "question_english": "It seems to be there, but I'm not sure."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Certainly / Definitely / Surely'?",
-          "correct": "肯定",
+          "question": "Which word means 'To confirm / Certain / Sure'?",
+          "correct": "确定",
           "options": [
-            "地方",
-            "肯定",
-            "明明",
-            "或者"
+            "遍",
+            "当然",
+            "忽然",
+            "确定"
           ],
           "option_pinyin": [
-            "dì fāng",
-            "kěn dìng",
-            "míng míng",
-            "huò zhě"
+            "biàn",
+            "dāng rán",
+            "hū rán",
+            "què dìng"
           ]
         }
       ],
-      "example_pinyin": "kěn dìng zài zhè ge dì fāng nǐ zài zhǎo yī zhǎo"
+      "example_pinyin": "hǎo xiàng zài nà lǐ dàn wǒ bù què dìng"
     },
     {
       "id": "hsk3_l6_12",
@@ -746,16 +746,16 @@
           "question": "What does 找 mean?",
           "correct": "To look for / To search",
           "options": [
-            "To look for / To search",
+            "Possibly / Maybe / Possible",
+            "Restaurant / Dining room",
             "Or (in statements)",
-            "Of course / Naturally",
-            "Possibly / Maybe / Possible"
+            "To look for / To search"
           ],
           "option_pinyin": [
-            "zhǎo",
+            "kě néng",
+            "cān tīng",
             "huò zhě",
-            "dāng rán",
-            "kě néng"
+            "zhǎo"
           ]
         },
         {
@@ -764,19 +764,19 @@
           "correct": "找",
           "options": [
             "找",
-            "好像",
             "忽然",
-            "到处"
+            "垫子",
+            "沙发"
           ],
           "option_pinyin": [
             "zhǎo",
-            "hǎo xiàng",
             "hū rán",
-            "dào chù"
+            "diàn zi",
+            "shā fā"
           ],
-          "question_chinese": "我在___我的钥匙。",
-          "question_pinyin": "我在___我的钥匙。",
-          "question_english": "I'm looking for my keys."
+          "question_chinese": "我到处___，都找不到。",
+          "question_pinyin": "我到处___，都找不到。",
+          "question_english": "I searched everywhere but couldn't find it."
         },
         {
           "type": "multiple_choice",
@@ -784,19 +784,349 @@
           "correct": "找",
           "options": [
             "找",
-            "或者",
-            "肯定",
+            "好像",
+            "到处",
             "忽然"
           ],
           "option_pinyin": [
             "zhǎo",
-            "huò zhě",
-            "kěn dìng",
+            "hǎo xiàng",
+            "dào chù",
             "hū rán"
           ]
         }
       ],
       "example_pinyin": "wǒ dào chù zhǎo dōu zhǎo bú dào"
+    },
+    {
+      "id": "hsk3_l6_13",
+      "chinese": "遍",
+      "pinyin": "biàn",
+      "english": "[Measure word for complete passes through an action]",
+      "part_of_speech": "measure word",
+      "example": "我把这篇文章读了三遍。",
+      "translation": "I read this article three times through.",
+      "example_pinyin": "wǒ bǎ zhè piān wén zhāng dú le sān biàn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 遍 mean?",
+          "correct": "[Measure word for complete passes through an action]",
+          "options": [
+            "Wallet / Purse",
+            "[Measure word for complete passes through an action]",
+            "Since / Given that",
+            "Suddenly / All of a sudden"
+          ],
+          "option_pinyin": [
+            "qián bāo",
+            "biàn",
+            "jì rán",
+            "hū rán"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: [Measure word for complete passes through an action]",
+          "correct": "遍",
+          "options": [
+            "找",
+            "确定",
+            "当然",
+            "遍"
+          ],
+          "option_pinyin": [
+            "zhǎo",
+            "què dìng",
+            "dāng rán",
+            "biàn"
+          ],
+          "question_chinese": "我把这篇文章读了三___。",
+          "question_pinyin": "我把这篇文章读了三___。",
+          "question_english": "I read this article three times through."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means '[Measure word for complete passes through an action]'?",
+          "correct": "遍",
+          "options": [
+            "餐厅",
+            "遍",
+            "丢",
+            "既然"
+          ],
+          "option_pinyin": [
+            "cān tīng",
+            "biàn",
+            "diū",
+            "jì rán"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l6_14",
+      "chinese": "钱包",
+      "pinyin": "qián bāo",
+      "english": "Wallet / Purse",
+      "part_of_speech": "noun",
+      "example": "我的钱包忽然不见了，怎么办？",
+      "translation": "My wallet suddenly disappeared — what should I do?",
+      "example_pinyin": "wǒ de qián bāo hū rán bú jiàn le zěn me bàn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 钱包 mean?",
+          "correct": "Wallet / Purse",
+          "options": [
+            "To look for / To search",
+            "Wallet / Purse",
+            "Or (in statements)",
+            "Seem / Appear / As if"
+          ],
+          "option_pinyin": [
+            "zhǎo",
+            "qián bāo",
+            "huò zhě",
+            "hǎo xiàng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Wallet / Purse",
+          "correct": "钱包",
+          "options": [
+            "好像",
+            "钱包",
+            "当然",
+            "垫子"
+          ],
+          "option_pinyin": [
+            "hǎo xiàng",
+            "qián bāo",
+            "dāng rán",
+            "diàn zi"
+          ],
+          "question_chinese": "我的___忽然不见了，怎么办？",
+          "question_pinyin": "我的___忽然不见了，怎么办？",
+          "question_english": "My wallet suddenly disappeared — what should I do?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Wallet / Purse'?",
+          "correct": "钱包",
+          "options": [
+            "确定",
+            "钱包",
+            "到处",
+            "找"
+          ],
+          "option_pinyin": [
+            "què dìng",
+            "qián bāo",
+            "dào chù",
+            "zhǎo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l6_15",
+      "chinese": "沙发",
+      "pinyin": "shā fā",
+      "english": "Sofa / Couch",
+      "part_of_speech": "noun",
+      "example": "手机可能在沙发下面。",
+      "translation": "The phone might be under the sofa.",
+      "example_pinyin": "shǒu jī kě néng zài shā fā xià miàn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 沙发 mean?",
+          "correct": "Sofa / Couch",
+          "options": [
+            "Cushion / Pad / Mat",
+            "[Measure word for complete passes through an action]",
+            "Wallet / Purse",
+            "Sofa / Couch"
+          ],
+          "option_pinyin": [
+            "diàn zi",
+            "biàn",
+            "qián bāo",
+            "shā fā"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Sofa / Couch",
+          "correct": "沙发",
+          "options": [
+            "垫子",
+            "沙发",
+            "好像",
+            "当然"
+          ],
+          "option_pinyin": [
+            "diàn zi",
+            "shā fā",
+            "hǎo xiàng",
+            "dāng rán"
+          ],
+          "question_chinese": "手机可能在___下面。",
+          "question_pinyin": "手机可能在___下面。",
+          "question_english": "The phone might be under the sofa."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Sofa / Couch'?",
+          "correct": "沙发",
+          "options": [
+            "或者",
+            "餐厅",
+            "沙发",
+            "既然"
+          ],
+          "option_pinyin": [
+            "huò zhě",
+            "cān tīng",
+            "shā fā",
+            "jì rán"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l6_16",
+      "chinese": "餐厅",
+      "pinyin": "cān tīng",
+      "english": "Restaurant / Dining room",
+      "part_of_speech": "noun",
+      "example": "你好像刚才在餐厅吃饭。",
+      "translation": "It seems you were eating at the restaurant just now.",
+      "example_pinyin": "nǐ hǎo xiàng gāng cái zài cān tīng chī fàn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 餐厅 mean?",
+          "correct": "Restaurant / Dining room",
+          "options": [
+            "Everywhere / All over",
+            "Restaurant / Dining room",
+            "Wallet / Purse",
+            "Since / Given that"
+          ],
+          "option_pinyin": [
+            "dào chù",
+            "cān tīng",
+            "qián bāo",
+            "jì rán"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Restaurant / Dining room",
+          "correct": "餐厅",
+          "options": [
+            "既然",
+            "沙发",
+            "餐厅",
+            "可能"
+          ],
+          "option_pinyin": [
+            "jì rán",
+            "shā fā",
+            "cān tīng",
+            "kě néng"
+          ],
+          "question_chinese": "你好像刚才在___吃饭。",
+          "question_pinyin": "你好像刚才在___吃饭。",
+          "question_english": "It seems you were eating at the restaurant just now."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Restaurant / Dining room'?",
+          "correct": "餐厅",
+          "options": [
+            "垫子",
+            "沙发",
+            "餐厅",
+            "可能"
+          ],
+          "option_pinyin": [
+            "diàn zi",
+            "shā fā",
+            "cān tīng",
+            "kě néng"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l6_17",
+      "chinese": "垫子",
+      "pinyin": "diàn zi",
+      "english": "Cushion / Pad / Mat",
+      "part_of_speech": "noun",
+      "example": "钱包在沙发垫子下面。",
+      "translation": "The wallet is under the sofa cushion.",
+      "example_pinyin": "qián bāo zài shā fā diàn zi xià miàn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 垫子 mean?",
+          "correct": "Cushion / Pad / Mat",
+          "options": [
+            "[Measure word for complete passes through an action]",
+            "Cushion / Pad / Mat",
+            "Obviously / Clearly (contrary to what one says)",
+            "Suddenly / All of a sudden"
+          ],
+          "option_pinyin": [
+            "biàn",
+            "diàn zi",
+            "míng míng",
+            "hū rán"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Cushion / Pad / Mat",
+          "correct": "垫子",
+          "options": [
+            "忽然",
+            "垫子",
+            "明明",
+            "遍"
+          ],
+          "option_pinyin": [
+            "hū rán",
+            "diàn zi",
+            "míng míng",
+            "biàn"
+          ],
+          "question_chinese": "钱包在沙发___下面。",
+          "question_pinyin": "钱包在沙发___下面。",
+          "question_english": "The wallet is under the sofa cushion."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Cushion / Pad / Mat'?",
+          "correct": "垫子",
+          "options": [
+            "确定",
+            "垫子",
+            "当然",
+            "明明"
+          ],
+          "option_pinyin": [
+            "què dìng",
+            "diàn zi",
+            "dāng rán",
+            "míng míng"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l6_p01",

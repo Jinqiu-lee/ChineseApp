@@ -20,16 +20,16 @@
           "question": "What does 过来 mean?",
           "correct": "Come over (towards speaker)",
           "options": [
-            "Come down",
-            "Bring (here)",
             "Come over (towards speaker)",
-            "Come up"
+            "Come down",
+            "Go back",
+            "Go over (away from speaker)"
           ],
           "option_pinyin": [
-            "xià lái",
-            "dài lái",
             "guò lái",
-            "shàng lái"
+            "xià lái",
+            "huí qù",
+            "guò qù"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: Come over (towards speaker)",
           "correct": "过来",
           "options": [
-            "过去",
+            "会议室",
             "过来",
-            "带来",
-            "回去"
+            "起来",
+            "回来"
           ],
           "option_pinyin": [
-            "guò qù",
+            "huì yì shì",
             "guò lái",
-            "dài lái",
-            "huí qù"
+            "qǐ lái",
+            "huí lái"
           ],
-          "question_chinese": "你___一下。",
-          "question_pinyin": "你___一下。",
-          "question_english": "Come over here for a moment."
+          "question_chinese": "你能把那本书带___吗？",
+          "question_pinyin": "你能把那本书带___吗？",
+          "question_english": "Can you bring that book over here?"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Come over (towards speaker)'?",
           "correct": "过来",
           "options": [
-            "过去",
-            "起来",
             "过来",
-            "出去"
+            "起来",
+            "行李",
+            "回去"
           ],
           "option_pinyin": [
-            "guò qù",
-            "qǐ lái",
             "guò lái",
-            "chū qù"
+            "qǐ lái",
+            "xíng li",
+            "huí qù"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 过去 mean?",
           "correct": "Go over (away from speaker)",
           "options": [
-            "Come back",
-            "Go over (away from speaker)",
-            "Rise up / Start to (aspect)",
-            "Go in"
+            "Suitcase / Box / Trunk",
+            "Come up",
+            "Conference room / Meeting room",
+            "Go over (away from speaker)"
           ],
           "option_pinyin": [
-            "huí lái",
-            "guò qù",
-            "qǐ lái",
-            "jìn qù"
+            "xiāng zi",
+            "shàng lái",
+            "huì yì shì",
+            "guò qù"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: Go over (away from speaker)",
           "correct": "过去",
           "options": [
-            "带来",
+            "行李",
+            "会议室",
             "过去",
-            "起来",
-            "过来"
+            "带"
           ],
           "option_pinyin": [
-            "dài lái",
+            "xíng li",
+            "huì yì shì",
             "guò qù",
-            "qǐ lái",
-            "guò lái"
+            "dài"
           ],
-          "question_chinese": "我们___看看。",
-          "question_pinyin": "我们___看看。",
-          "question_english": "Let's go over to see."
+          "question_chinese": "你走进来之后，从左边走___。",
+          "question_pinyin": "你走进来之后，从左边走___。",
+          "question_english": "After you walk in, go over through the left."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Go over (away from speaker)'?",
           "correct": "过去",
           "options": [
+            "回来",
             "过去",
-            "过来",
-            "回去",
-            "进去"
+            "进去",
+            "起来"
           ],
           "option_pinyin": [
+            "huí lái",
             "guò qù",
-            "guò lái",
-            "huí qù",
-            "jìn qù"
+            "jìn qù",
+            "qǐ lái"
           ]
         }
       ],
@@ -140,69 +140,69 @@
     },
     {
       "id": "hsk3_l14_03",
-      "chinese": "进来",
-      "pinyin": "jìn lái",
-      "english": "Come in",
-      "part_of_speech": "directional complement",
-      "example": "他走进来的时候，大家都站起来了。",
-      "translation": "When he walked in, everyone stood up.",
+      "chinese": "行李",
+      "pinyin": "xíng li",
+      "english": "Luggage / Baggage",
+      "part_of_speech": "noun",
+      "example": "他把行李搬上来了。",
+      "translation": "He brought the luggage up.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 进来 mean?",
-          "correct": "Come in",
+          "question": "What does 行李 mean?",
+          "correct": "Luggage / Baggage",
           "options": [
-            "Come out",
-            "Come over (towards speaker)",
-            "Go out",
-            "Come in"
+            "Luggage / Baggage",
+            "Rise up / Start to (aspect)",
+            "Study room / Study",
+            "Conference room / Meeting room"
           ],
           "option_pinyin": [
-            "chū lái",
-            "guò lái",
-            "chū qù",
-            "jìn lái"
+            "xíng li",
+            "qǐ lái",
+            "shū fáng",
+            "huì yì shì"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Come in",
-          "correct": "进来",
+          "question": "Fill in: Luggage / Baggage",
+          "correct": "行李",
           "options": [
-            "起来",
-            "带来",
-            "出来",
-            "进来"
+            "过来",
+            "下来",
+            "行李",
+            "回去"
           ],
           "option_pinyin": [
-            "qǐ lái",
-            "dài lái",
-            "chū lái",
-            "jìn lái"
+            "guò lái",
+            "xià lái",
+            "xíng li",
+            "huí qù"
           ],
-          "question_chinese": "请___！",
-          "question_pinyin": "请___！",
-          "question_english": "Please come in!"
+          "question_chinese": "他把___搬上来了。",
+          "question_pinyin": "他把___搬上来了。",
+          "question_english": "He brought the luggage up."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Come in'?",
-          "correct": "进来",
+          "question": "Which word means 'Luggage / Baggage'?",
+          "correct": "行李",
           "options": [
-            "进来",
-            "出去",
-            "下来",
-            "过去"
+            "起来",
+            "书房",
+            "出来",
+            "行李"
           ],
           "option_pinyin": [
-            "jìn lái",
-            "chū qù",
-            "xià lái",
-            "guò qù"
+            "qǐ lái",
+            "shū fáng",
+            "chū lái",
+            "xíng li"
           ]
         }
       ],
-      "example_pinyin": "tā zǒu jìn lái de shí hòu dà jiā dōu zhàn qǐ lái le"
+      "example_pinyin": "tā bǎ xíng lǐ bān shàng lái le"
     },
     {
       "id": "hsk3_l14_04",
@@ -218,15 +218,15 @@
           "question": "What does 进去 mean?",
           "correct": "Go in",
           "options": [
+            "To bring / To take / To carry",
             "Go in",
-            "Come over (towards speaker)",
-            "Come down",
+            "Go over (away from speaker)",
             "Come back"
           ],
           "option_pinyin": [
+            "dài",
             "jìn qù",
-            "guò lái",
-            "xià lái",
+            "guò qù",
             "huí lái"
           ]
         },
@@ -235,20 +235,20 @@
           "question": "Fill in: Go in",
           "correct": "进去",
           "options": [
-            "下来",
-            "进去",
+            "回去",
             "出来",
-            "起来"
+            "带",
+            "进去"
           ],
           "option_pinyin": [
-            "xià lái",
-            "jìn qù",
+            "huí qù",
             "chū lái",
-            "qǐ lái"
+            "dài",
+            "jìn qù"
           ],
-          "question_chinese": "你能___吗？",
-          "question_pinyin": "你能___吗？",
-          "question_english": "Can you go in?"
+          "question_chinese": "把书搬___，放在书架上。",
+          "question_pinyin": "把书搬___，放在书架上。",
+          "question_english": "Carry the books inside and put them on the shelf."
         },
         {
           "type": "multiple_choice",
@@ -256,15 +256,15 @@
           "correct": "进去",
           "options": [
             "下来",
+            "回来",
             "进去",
-            "过去",
-            "过来"
+            "过去"
           ],
           "option_pinyin": [
             "xià lái",
+            "huí lái",
             "jìn qù",
-            "guò qù",
-            "guò lái"
+            "guò qù"
           ]
         }
       ],
@@ -284,16 +284,16 @@
           "question": "What does 出来 mean?",
           "correct": "Come out",
           "options": [
-            "Come back",
-            "Go back",
-            "Bring (here)",
-            "Come out"
+            "Come over (towards speaker)",
+            "Conference room / Meeting room",
+            "Come out",
+            "Come up"
           ],
           "option_pinyin": [
-            "huí lái",
-            "huí qù",
-            "dài lái",
-            "chū lái"
+            "guò lái",
+            "huì yì shì",
+            "chū lái",
+            "shàng lái"
           ]
         },
         {
@@ -301,35 +301,35 @@
           "question": "Fill in: Come out",
           "correct": "出来",
           "options": [
-            "过去",
-            "回去",
             "出来",
-            "进来"
+            "回来",
+            "行李",
+            "书房"
           ],
           "option_pinyin": [
-            "guò qù",
-            "huí qù",
             "chū lái",
-            "jìn lái"
+            "huí lái",
+            "xíng li",
+            "shū fáng"
           ],
-          "question_chinese": "请___！",
-          "question_pinyin": "请___！",
-          "question_english": "Please come out!"
+          "question_chinese": "他从房间里走___了。",
+          "question_pinyin": "他从房间里走___了。",
+          "question_english": "He walked out of the room."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Come out'?",
           "correct": "出来",
           "options": [
-            "过来",
-            "回去",
-            "出去",
+            "箱子",
+            "带",
+            "书架",
             "出来"
           ],
           "option_pinyin": [
-            "guò lái",
-            "huí qù",
-            "chū qù",
+            "xiāng zi",
+            "dài",
+            "shū jià",
             "chū lái"
           ]
         }
@@ -338,69 +338,69 @@
     },
     {
       "id": "hsk3_l14_06",
-      "chinese": "出去",
-      "pinyin": "chū qù",
-      "english": "Go out",
-      "part_of_speech": "directional complement",
-      "example": "她走出去买东西了。",
-      "translation": "She went out to buy things.",
+      "chinese": "书架",
+      "pinyin": "shū jià",
+      "english": "Bookshelf / Bookcase",
+      "part_of_speech": "noun",
+      "example": "请把书放在书架上。",
+      "translation": "Please put the books on the shelf.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 出去 mean?",
-          "correct": "Go out",
+          "question": "What does 书架 mean?",
+          "correct": "Bookshelf / Bookcase",
           "options": [
-            "Go out",
-            "Come over (towards speaker)",
-            "Come back",
-            "Come in"
+            "Bookshelf / Bookcase",
+            "Study room / Study",
+            "Come out",
+            "Go in"
           ],
           "option_pinyin": [
-            "chū qù",
-            "guò lái",
-            "huí lái",
-            "jìn lái"
+            "shū jià",
+            "shū fáng",
+            "chū lái",
+            "jìn qù"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Go out",
-          "correct": "出去",
+          "question": "Fill in: Bookshelf / Bookcase",
+          "correct": "书架",
           "options": [
-            "回去",
-            "出来",
+            "箱子",
+            "书架",
             "进去",
-            "出去"
+            "书房"
           ],
           "option_pinyin": [
-            "huí qù",
-            "chū lái",
+            "xiāng zi",
+            "shū jià",
             "jìn qù",
-            "chū qù"
+            "shū fáng"
           ],
-          "question_chinese": "我要___一下。",
-          "question_pinyin": "我要___一下。",
-          "question_english": "I'm going to go out for a bit."
+          "question_chinese": "请把书放在___上。",
+          "question_pinyin": "请把书放在___上。",
+          "question_english": "Please put the books on the shelf."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Go out'?",
-          "correct": "出去",
+          "question": "Which word means 'Bookshelf / Bookcase'?",
+          "correct": "书架",
           "options": [
-            "出来",
+            "箱子",
             "过来",
-            "回去",
-            "出去"
+            "带",
+            "书架"
           ],
           "option_pinyin": [
-            "chū lái",
+            "xiāng zi",
             "guò lái",
-            "huí qù",
-            "chū qù"
+            "dài",
+            "shū jià"
           ]
         }
       ],
-      "example_pinyin": "tā zǒu chū qù mǎi dōng xī le"
+      "example_pinyin": "qǐng bǎ shū fàng zài shū jià shàng"
     },
     {
       "id": "hsk3_l14_07",
@@ -416,16 +416,16 @@
           "question": "What does 上来 mean?",
           "correct": "Come up",
           "options": [
-            "Go back",
-            "Come back",
-            "Go over (away from speaker)",
-            "Come up"
+            "Come over (towards speaker)",
+            "Suitcase / Box / Trunk",
+            "Come up",
+            "Rise up / Start to (aspect)"
           ],
           "option_pinyin": [
-            "huí qù",
-            "huí lái",
-            "guò qù",
-            "shàng lái"
+            "guò lái",
+            "xiāng zi",
+            "shàng lái",
+            "qǐ lái"
           ]
         },
         {
@@ -434,35 +434,35 @@
           "correct": "上来",
           "options": [
             "过来",
-            "过去",
-            "带来",
-            "上来"
+            "带",
+            "上来",
+            "起来"
           ],
           "option_pinyin": [
             "guò lái",
-            "guò qù",
-            "dài lái",
-            "shàng lái"
+            "dài",
+            "shàng lái",
+            "qǐ lái"
           ],
-          "question_chinese": "请你___。",
-          "question_pinyin": "请你___。",
-          "question_english": "Please come up."
+          "question_chinese": "他从楼下搬___很多东西。",
+          "question_pinyin": "他从楼下搬___很多东西。",
+          "question_english": "He carried a lot of things up from downstairs."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Come up'?",
           "correct": "上来",
           "options": [
-            "出去",
-            "上来",
             "回来",
-            "出来"
+            "上来",
+            "书架",
+            "下来"
           ],
           "option_pinyin": [
-            "chū qù",
-            "shàng lái",
             "huí lái",
-            "chū lái"
+            "shàng lái",
+            "shū jià",
+            "xià lái"
           ]
         }
       ],
@@ -482,16 +482,16 @@
           "question": "What does 下来 mean?",
           "correct": "Come down",
           "options": [
-            "Go back",
-            "Go out",
-            "Go in",
-            "Come down"
+            "Go over (away from speaker)",
+            "To bring / To take / To carry",
+            "Come down",
+            "Study room / Study"
           ],
           "option_pinyin": [
-            "huí qù",
-            "chū qù",
-            "jìn qù",
-            "xià lái"
+            "guò qù",
+            "dài",
+            "xià lái",
+            "shū fáng"
           ]
         },
         {
@@ -499,36 +499,36 @@
           "question": "Fill in: Come down",
           "correct": "下来",
           "options": [
-            "起来",
-            "出来",
+            "会议室",
+            "过去",
             "下来",
-            "过来"
+            "书房"
           ],
           "option_pinyin": [
-            "qǐ lái",
-            "chū lái",
+            "huì yì shì",
+            "guò qù",
             "xià lái",
-            "guò lái"
+            "shū fáng"
           ],
-          "question_chinese": "你可以___了。",
-          "question_pinyin": "你可以___了。",
-          "question_english": "You can come down now."
+          "question_chinese": "请从楼上把椅子搬___。",
+          "question_pinyin": "请从楼上把椅子搬___。",
+          "question_english": "Please bring the chairs down from upstairs."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Come down'?",
           "correct": "下来",
           "options": [
-            "过来",
+            "书架",
+            "回来",
             "下来",
-            "出来",
-            "进去"
+            "起来"
           ],
           "option_pinyin": [
-            "guò lái",
+            "shū jià",
+            "huí lái",
             "xià lái",
-            "chū lái",
-            "jìn qù"
+            "qǐ lái"
           ]
         }
       ],
@@ -548,16 +548,16 @@
           "question": "What does 回来 mean?",
           "correct": "Come back",
           "options": [
-            "Go out",
+            "Conference room / Meeting room",
+            "Rise up / Start to (aspect)",
             "Come back",
-            "Go over (away from speaker)",
-            "Come down"
+            "To bring / To take / To carry"
           ],
           "option_pinyin": [
-            "chū qù",
+            "huì yì shì",
+            "qǐ lái",
             "huí lái",
-            "guò qù",
-            "xià lái"
+            "dài"
           ]
         },
         {
@@ -565,35 +565,35 @@
           "question": "Fill in: Come back",
           "correct": "回来",
           "options": [
-            "进来",
-            "带来",
+            "过去",
+            "起来",
             "回来",
-            "进去"
+            "上来"
           ],
           "option_pinyin": [
-            "jìn lái",
-            "dài lái",
+            "guò qù",
+            "qǐ lái",
             "huí lái",
-            "jìn qù"
+            "shàng lái"
           ],
-          "question_chinese": "你几点___？",
-          "question_pinyin": "你几点___？",
-          "question_english": "What time will you come back?"
+          "question_chinese": "他跑___了，气喘吁吁的。",
+          "question_pinyin": "他跑___了，气喘吁吁的。",
+          "question_english": "He ran back, out of breath."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Come back'?",
           "correct": "回来",
           "options": [
+            "带",
             "过来",
-            "下来",
-            "出来",
+            "回去",
             "回来"
           ],
           "option_pinyin": [
+            "dài",
             "guò lái",
-            "xià lái",
-            "chū lái",
+            "huí qù",
             "huí lái"
           ]
         }
@@ -614,16 +614,16 @@
           "question": "What does 回去 mean?",
           "correct": "Go back",
           "options": [
-            "Go out",
-            "Bring (here)",
+            "Bookshelf / Bookcase",
             "Go back",
-            "Go over (away from speaker)"
+            "Come over (towards speaker)",
+            "Rise up / Start to (aspect)"
           ],
           "option_pinyin": [
-            "chū qù",
-            "dài lái",
+            "shū jià",
             "huí qù",
-            "guò qù"
+            "guò lái",
+            "qǐ lái"
           ]
         },
         {
@@ -631,36 +631,36 @@
           "question": "Fill in: Go back",
           "correct": "回去",
           "options": [
+            "上来",
+            "书架",
             "回去",
-            "出来",
-            "过去",
-            "进来"
+            "进去"
           ],
           "option_pinyin": [
+            "shàng lái",
+            "shū jià",
             "huí qù",
-            "chū lái",
-            "guò qù",
-            "jìn lái"
+            "jìn qù"
           ],
-          "question_chinese": "我要___了。",
-          "question_pinyin": "我要___了。",
-          "question_english": "I'm going back."
+          "question_chinese": "天黑了，快___吧。",
+          "question_pinyin": "天黑了，快___吧。",
+          "question_english": "It's getting dark — go back quickly."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Go back'?",
           "correct": "回去",
           "options": [
-            "过来",
-            "出来",
+            "回来",
             "回去",
-            "出去"
+            "会议室",
+            "下来"
           ],
           "option_pinyin": [
-            "guò lái",
-            "chū lái",
+            "huí lái",
             "huí qù",
-            "chū qù"
+            "huì yì shì",
+            "xià lái"
           ]
         }
       ],
@@ -681,15 +681,15 @@
           "correct": "Rise up / Start to (aspect)",
           "options": [
             "Rise up / Start to (aspect)",
-            "Go out",
-            "Go over (away from speaker)",
-            "Go in"
+            "Conference room / Meeting room",
+            "Suitcase / Box / Trunk",
+            "Come down"
           ],
           "option_pinyin": [
             "qǐ lái",
-            "chū qù",
-            "guò qù",
-            "jìn qù"
+            "huì yì shì",
+            "xiāng zi",
+            "xià lái"
           ]
         },
         {
@@ -697,36 +697,36 @@
           "question": "Fill in: Rise up / Start to (aspect)",
           "correct": "起来",
           "options": [
-            "上来",
+            "行李",
             "起来",
-            "出去",
-            "回去"
+            "回来",
+            "书架"
           ],
           "option_pinyin": [
-            "shàng lái",
+            "xíng li",
             "qǐ lái",
-            "chū qù",
-            "huí qù"
+            "huí lái",
+            "shū jià"
           ],
-          "question_chinese": "他笑___了。",
-          "question_pinyin": "他笑___了。",
-          "question_english": "He started laughing."
+          "question_chinese": "她唱___了，声音真好听。",
+          "question_pinyin": "她唱___了，声音真好听。",
+          "question_english": "She started singing — her voice sounds wonderful."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Rise up / Start to (aspect)'?",
           "correct": "起来",
           "options": [
-            "进去",
             "起来",
-            "回来",
-            "下来"
+            "下来",
+            "进去",
+            "过去"
           ],
           "option_pinyin": [
-            "jìn qù",
             "qǐ lái",
-            "huí lái",
-            "xià lái"
+            "xià lái",
+            "jìn qù",
+            "guò qù"
           ]
         }
       ],
@@ -734,69 +734,267 @@
     },
     {
       "id": "hsk3_l14_12",
-      "chinese": "带来",
-      "pinyin": "dài lái",
-      "english": "Bring (here)",
-      "part_of_speech": "directional complement",
-      "example": "他带来了一些水果。",
-      "translation": "He brought some fruit here.",
+      "chinese": "带",
+      "pinyin": "dài",
+      "english": "To bring / To take / To carry",
+      "part_of_speech": "verb",
+      "example": "那本书也要带过来吗？",
+      "translation": "Does that book also need to be brought over?",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 带来 mean?",
-          "correct": "Bring (here)",
+          "question": "What does 带 mean?",
+          "correct": "To bring / To take / To carry",
           "options": [
-            "Go out",
-            "Come out",
-            "Come in",
-            "Bring (here)"
+            "Come back",
+            "To bring / To take / To carry",
+            "Study room / Study",
+            "Go in"
           ],
           "option_pinyin": [
-            "chū qù",
-            "chū lái",
-            "jìn lái",
-            "dài lái"
+            "huí lái",
+            "dài",
+            "shū fáng",
+            "jìn qù"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Bring (here)",
-          "correct": "带来",
+          "question": "Fill in: To bring / To take / To carry",
+          "correct": "带",
           "options": [
-            "出来",
-            "进来",
-            "回去",
-            "带来"
+            "带",
+            "上来",
+            "回来",
+            "进去"
           ],
           "option_pinyin": [
-            "chū lái",
-            "jìn lái",
-            "huí qù",
-            "dài lái"
+            "dài",
+            "shàng lái",
+            "huí lái",
+            "jìn qù"
           ],
-          "question_chinese": "你___什么了？",
-          "question_pinyin": "你___什么了？",
-          "question_english": "What did you bring here?"
+          "question_chinese": "那本书也要___过来吗？",
+          "question_pinyin": "那本书也要___过来吗？",
+          "question_english": "Does that book also need to be brought over?"
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Bring (here)'?",
-          "correct": "带来",
+          "question": "Which word means 'To bring / To take / To carry'?",
+          "correct": "带",
           "options": [
-            "带来",
             "出来",
-            "下来",
-            "过来"
+            "带",
+            "回来",
+            "回去"
           ],
           "option_pinyin": [
-            "dài lái",
             "chū lái",
-            "xià lái",
-            "guò lái"
+            "dài",
+            "huí lái",
+            "huí qù"
           ]
         }
       ],
-      "example_pinyin": "tā dài lái le yī xiē shuǐ guǒ"
+      "example_pinyin": "nà běn shū yě yào dài guò lái ma"
+    },
+    {
+      "id": "hsk3_l14_13",
+      "chinese": "箱子",
+      "pinyin": "xiāng zi",
+      "english": "Suitcase / Box / Trunk",
+      "part_of_speech": "noun",
+      "example": "你能帮我把这些箱子搬进去吗？",
+      "translation": "Can you help me carry these suitcases in?",
+      "example_pinyin": "nǐ néng bāng wǒ bǎ zhè xiē xiāng zi bān jìn qù ma",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 箱子 mean?",
+          "correct": "Suitcase / Box / Trunk",
+          "options": [
+            "Come down",
+            "Suitcase / Box / Trunk",
+            "Bookshelf / Bookcase",
+            "Go in"
+          ],
+          "option_pinyin": [
+            "xià lái",
+            "xiāng zi",
+            "shū jià",
+            "jìn qù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Suitcase / Box / Trunk",
+          "correct": "箱子",
+          "options": [
+            "下来",
+            "进去",
+            "行李",
+            "箱子"
+          ],
+          "option_pinyin": [
+            "xià lái",
+            "jìn qù",
+            "xíng li",
+            "xiāng zi"
+          ],
+          "question_chinese": "你能帮我把这些___搬进去吗？",
+          "question_pinyin": "你能帮我把这些___搬进去吗？",
+          "question_english": "Can you help me carry these suitcases in?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Suitcase / Box / Trunk'?",
+          "correct": "箱子",
+          "options": [
+            "带",
+            "箱子",
+            "下来",
+            "出来"
+          ],
+          "option_pinyin": [
+            "dài",
+            "xiāng zi",
+            "xià lái",
+            "chū lái"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l14_14",
+      "chinese": "书房",
+      "pinyin": "shū fáng",
+      "english": "Study room / Study",
+      "part_of_speech": "noun",
+      "example": "把它们搬到楼上，放在书房里。",
+      "translation": "Move them upstairs and put them in the study.",
+      "example_pinyin": "bǎ tā men bān dào lóu shàng fàng zài shū fáng lǐ",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 书房 mean?",
+          "correct": "Study room / Study",
+          "options": [
+            "Come out",
+            "Go in",
+            "Study room / Study",
+            "Come down"
+          ],
+          "option_pinyin": [
+            "chū lái",
+            "jìn qù",
+            "shū fáng",
+            "xià lái"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Study room / Study",
+          "correct": "书房",
+          "options": [
+            "回去",
+            "书房",
+            "过去",
+            "行李"
+          ],
+          "option_pinyin": [
+            "huí qù",
+            "shū fáng",
+            "guò qù",
+            "xíng li"
+          ],
+          "question_chinese": "把它们搬到楼上，放在___里。",
+          "question_pinyin": "把它们搬到楼上，放在___里。",
+          "question_english": "Move them upstairs and put them in the study."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Study room / Study'?",
+          "correct": "书房",
+          "options": [
+            "回来",
+            "下来",
+            "带",
+            "书房"
+          ],
+          "option_pinyin": [
+            "huí lái",
+            "xià lái",
+            "dài",
+            "shū fáng"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l14_15",
+      "chinese": "会议室",
+      "pinyin": "huì yì shì",
+      "english": "Conference room / Meeting room",
+      "part_of_speech": "noun",
+      "example": "会议室在哪儿？我找不到。",
+      "translation": "Where is the conference room? I can't find it.",
+      "example_pinyin": "huì yì shì zài nǎ ér wǒ zhǎo bú dào",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 会议室 mean?",
+          "correct": "Conference room / Meeting room",
+          "options": [
+            "Go over (away from speaker)",
+            "Conference room / Meeting room",
+            "Come out",
+            "Bookshelf / Bookcase"
+          ],
+          "option_pinyin": [
+            "guò qù",
+            "huì yì shì",
+            "chū lái",
+            "shū jià"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Conference room / Meeting room",
+          "correct": "会议室",
+          "options": [
+            "带",
+            "书房",
+            "会议室",
+            "行李"
+          ],
+          "option_pinyin": [
+            "dài",
+            "shū fáng",
+            "huì yì shì",
+            "xíng li"
+          ],
+          "question_chinese": "___在哪儿？我找不到。",
+          "question_pinyin": "___在哪儿？我找不到。",
+          "question_english": "Where is the conference room? I can't find it."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Conference room / Meeting room'?",
+          "correct": "会议室",
+          "options": [
+            "书房",
+            "行李",
+            "回去",
+            "会议室"
+          ],
+          "option_pinyin": [
+            "shū fáng",
+            "xíng li",
+            "huí qù",
+            "huì yì shì"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l14_p01",

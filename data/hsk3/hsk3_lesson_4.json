@@ -20,16 +20,16 @@
           "question": "What does 刚才 mean?",
           "correct": "Just now / A moment ago",
           "options": [
+            "Music",
             "Neighbour",
-            "Just now / A moment ago",
-            "Other people's business / Unnecessary matters",
-            "Oneself / Yourself / Himself"
+            "To chat",
+            "Just now / A moment ago"
           ],
           "option_pinyin": [
+            "yīn yuè",
             "lín jū",
-            "gāng cái",
-            "xián shì",
-            "zì jǐ"
+            "liáo tiān/liáo",
+            "gāng cái"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: Just now / A moment ago",
           "correct": "刚才",
           "options": [
-            "邻居",
-            "音乐",
-            "关系",
-            "刚才"
+            "互相",
+            "刚才",
+            "声音",
+            "关系"
           ],
           "option_pinyin": [
-            "lín jū",
-            "yīn yuè",
-            "guān xi",
-            "gāng cái"
+            "hù xiāng",
+            "gāng cái",
+            "shēng yīn",
+            "guān xi"
           ],
-          "question_chinese": "___你去哪里了？",
-          "question_pinyin": "___你去哪里了？",
-          "question_english": "Where did you go just now?"
+          "question_chinese": "我___和邻居在聊天。",
+          "question_pinyin": "我___和邻居在聊天。",
+          "question_english": "I was just chatting with the neighbour."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Just now / A moment ago'?",
           "correct": "刚才",
           "options": [
-            "借",
-            "刚才",
+            "调",
+            "在意",
             "互相",
-            "自己"
+            "刚才"
           ],
           "option_pinyin": [
-            "jiè",
-            "gāng cái",
+            "tiáo",
+            "zài yì",
             "hù xiāng",
-            "zì jǐ"
+            "gāng cái"
           ]
         }
       ],
@@ -83,56 +83,56 @@
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 聊天 mean?",
+          "question": "What does 聊天/聊 mean?",
           "correct": "To chat",
           "options": [
-            "Unnecessary matters",
-            "To borrow / To lend",
-            "To chat",
-            "Oneself / Yourself / Himself"
+            "Music",
+            "Oneself / Yourself / Himself",
+            "Neighbour",
+            "To chat"
           ],
           "option_pinyin": [
-            "xián shì",
-            "jiè",
-            "liáo tiān",
-            "zì jǐ"
+            "yīn yuè",
+            "zì jǐ",
+            "lín jū",
+            "liáo tiān/liáo"
           ]
         },
         {
           "type": "fill_blank",
           "question": "Fill in: To chat",
-          "correct": "聊",
+          "correct": "聊天/聊",
           "options": [
-            "说",
-            "聊",
-            "借",
-            "管"
+            "在意",
+            "刚才",
+            "邻居",
+            "聊天/聊"
           ],
           "option_pinyin": [
-            "shuō",
-            "liáo",
-            "jiè",
-            "guǎn"
+            "zài yì",
+            "gāng cái",
+            "lín jū",
+            "liáo tiān/liáo"
           ],
-          "question_chinese": "我们___了很久天。",
-          "question_pinyin": "我们___了很久天。",
-          "question_english": "We chatted for a long time."
+          "question_chinese": "___。",
+          "question_pinyin": "___。",
+          "question_english": "To chat"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To chat'?",
-          "correct": "聊天",
+          "correct": "聊天/聊",
           "options": [
+            "闲事",
+            "自己",
             "管",
-            "聊天",
-            "说话",
-            "声音"
+            "聊天/聊"
           ],
           "option_pinyin": [
+            "xián shì",
+            "zì jǐ",
             "guǎn",
-            "liáo tiān",
-            "shuō huà",
-            "shēng yīn"
+            "liáo tiān/liáo"
           ]
         }
       ],
@@ -153,15 +153,15 @@
           "correct": "Neighbour",
           "options": [
             "Neighbour",
-            "Music",
-            "Relationship / Connection",
-            "Other people's business / Unnecessary matters"
+            "Gossip / To gossip",
+            "Each other / Mutually",
+            "Relationship / Connection"
           ],
           "option_pinyin": [
             "lín jū",
-            "yīn yuè",
-            "guān xi",
-            "xián shì"
+            "bā guà",
+            "hù xiāng",
+            "guān xi"
           ]
         },
         {
@@ -169,36 +169,36 @@
           "question": "Fill in: Neighbour",
           "correct": "邻居",
           "options": [
-            "邻居",
-            "互相",
-            "关系",
-            "管"
+            "刚才",
+            "自己",
+            "聊天/聊",
+            "邻居"
           ],
           "option_pinyin": [
-            "lín jū",
-            "hù xiāng",
-            "guān xi",
-            "guǎn"
+            "gāng cái",
+            "zì jǐ",
+            "liáo tiān/liáo",
+            "lín jū"
           ],
-          "question_chinese": "他是我的___。",
-          "question_pinyin": "他是我的___。",
-          "question_english": "He is my neighbour."
+          "question_chinese": "我们是___，应该互相帮助。",
+          "question_pinyin": "我们是___，应该互相帮助。",
+          "question_english": "We are neighbours; we should help each other."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Neighbour'?",
           "correct": "邻居",
           "options": [
+            "而且",
+            "互相",
             "闲事",
-            "邻居",
-            "关系",
-            "管"
+            "邻居"
           ],
           "option_pinyin": [
+            "ér qiě",
+            "hù xiāng",
             "xián shì",
-            "lín jū",
-            "guān xi",
-            "guǎn"
+            "lín jū"
           ]
         }
       ],
@@ -206,69 +206,69 @@
     },
     {
       "id": "hsk3_l4_04",
-      "chinese": "借",
-      "pinyin": "jiè",
-      "english": "To borrow / To lend",
-      "part_of_speech": "verb",
-      "example": "她和邻居借东西。",
-      "translation": "She borrowed things from her neighbour.",
+      "chinese": "八卦",
+      "pinyin": "bā guà",
+      "english": "Gossip / To gossip",
+      "part_of_speech": "noun/verb",
+      "example": "他喜欢八卦，总是说别人的事。",
+      "translation": "He likes to gossip and always talks about others.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 借 mean?",
-          "correct": "To borrow / To lend",
+          "question": "What does 八卦 mean?",
+          "correct": "Gossip / To gossip",
           "options": [
-            "Moreover / And also / Furthermore",
-            "Sound / Voice",
-            "To borrow / To lend",
-            "Each other / Mutually"
+            "Oneself / Yourself / Himself",
+            "Annoying / To be a nuisance",
+            "Gossip / To gossip",
+            "Neighbour"
           ],
           "option_pinyin": [
-            "ér qiě",
-            "shēng yīn",
-            "jiè",
-            "hù xiāng"
+            "zì jǐ",
+            "fán rén",
+            "bā guà",
+            "lín jū"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To borrow / To lend",
-          "correct": "借",
+          "question": "Fill in: Gossip / To gossip",
+          "correct": "八卦",
           "options": [
-            "闲事",
-            "自己",
-            "互相",
-            "借"
+            "关系",
+            "邻居",
+            "聊天/聊",
+            "八卦"
           ],
           "option_pinyin": [
-            "xián shì",
-            "zì jǐ",
-            "hù xiāng",
-            "jiè"
+            "guān xi",
+            "lín jū",
+            "liáo tiān/liáo",
+            "bā guà"
           ],
-          "question_chinese": "我___了一本书。",
-          "question_pinyin": "我___了一本书。",
-          "question_english": "I borrowed a book."
+          "question_chinese": "他喜欢___，总是说别人的事。",
+          "question_pinyin": "他喜欢___，总是说别人的事。",
+          "question_english": "He likes to gossip and always talks about others."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To borrow / To lend'?",
-          "correct": "借",
+          "question": "Which word means 'Gossip / To gossip'?",
+          "correct": "八卦",
           "options": [
-            "闲事",
-            "互相",
-            "邻居",
-            "借"
+            "八卦",
+            "刚才",
+            "关系",
+            "邻居"
           ],
           "option_pinyin": [
-            "xián shì",
-            "hù xiāng",
-            "lín jū",
-            "jiè"
+            "bā guà",
+            "gāng cái",
+            "guān xi",
+            "lín jū"
           ]
         }
       ],
-      "example_pinyin": "tā hé lín jū jiè dōng xī"
+      "example_pinyin": "tā xǐ huān bā guà zǒng shì shuō bié rén de shì"
     },
     {
       "id": "hsk3_l4_05",
@@ -284,16 +284,16 @@
           "question": "What does 声音 mean?",
           "correct": "Sound / Voice",
           "options": [
+            "Annoying / To be a nuisance",
+            "Oneself / Yourself / Himself",
             "Sound / Voice",
-            "Music",
-            "Neighbour",
-            "To chat"
+            "To adjust / To tune / To regulate"
           ],
           "option_pinyin": [
+            "fán rén",
+            "zì jǐ",
             "shēng yīn",
-            "yīn yuè",
-            "lín jū",
-            "liáo tiān"
+            "tiáo"
           ]
         },
         {
@@ -302,35 +302,35 @@
           "correct": "声音",
           "options": [
             "刚才",
-            "借",
-            "闲事",
+            "聊天/聊",
+            "调",
             "声音"
           ],
           "option_pinyin": [
             "gāng cái",
-            "jiè",
-            "xián shì",
+            "liáo tiān/liáo",
+            "tiáo",
             "shēng yīn"
           ],
-          "question_chinese": "音乐的___太大了。",
-          "question_pinyin": "音乐的___太大了。",
-          "question_english": "The sound of the music is too loud."
+          "question_chinese": "你能把音乐的___调小一点吗？",
+          "question_pinyin": "你能把音乐的___调小一点吗？",
+          "question_english": "Can you turn the music volume down a little?"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Sound / Voice'?",
           "correct": "声音",
           "options": [
-            "音乐",
+            "管",
+            "互相",
             "声音",
-            "邻居",
-            "借"
+            "自己"
           ],
           "option_pinyin": [
-            "yīn yuè",
+            "guǎn",
+            "hù xiāng",
             "shēng yīn",
-            "lín jū",
-            "jiè"
+            "zì jǐ"
           ]
         }
       ],
@@ -350,16 +350,16 @@
           "question": "What does 音乐 mean?",
           "correct": "Music",
           "options": [
-            "Sound / Voice",
-            "Oneself / Yourself / Himself",
+            "Just now / A moment ago",
+            "To chat",
             "Music",
-            "To chat"
+            "Gossip / To gossip"
           ],
           "option_pinyin": [
-            "shēng yīn",
-            "zì jǐ",
+            "gāng cái",
+            "liáo tiān/liáo",
             "yīn yuè",
-            "liáo tiān"
+            "bā guà"
           ]
         },
         {
@@ -367,36 +367,36 @@
           "question": "Fill in: Music",
           "correct": "音乐",
           "options": [
-            "互相",
             "音乐",
-            "自己",
-            "声音"
+            "刚才",
+            "烦人",
+            "互相"
           ],
           "option_pinyin": [
-            "hù xiāng",
             "yīn yuè",
-            "zì jǐ",
-            "shēng yīn"
+            "gāng cái",
+            "fán rén",
+            "hù xiāng"
           ],
-          "question_chinese": "我喜欢听___。",
-          "question_pinyin": "我喜欢听___。",
-          "question_english": "I like listening to music."
+          "question_chinese": "是楼上邻居的___，声音太大了。",
+          "question_pinyin": "是楼上邻居的___，声音太大了。",
+          "question_english": "It's the upstairs neighbour's music; it's way too loud."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Music'?",
           "correct": "音乐",
           "options": [
+            "在意",
+            "聊天/聊",
             "音乐",
-            "闲事",
-            "聊天",
-            "声音"
+            "八卦"
           ],
           "option_pinyin": [
+            "zài yì",
+            "liáo tiān/liáo",
             "yīn yuè",
-            "xián shì",
-            "liáo tiān",
-            "shēng yīn"
+            "bā guà"
           ]
         }
       ],
@@ -416,16 +416,16 @@
           "question": "What does 管 mean?",
           "correct": "To manage / To interfere / To mind",
           "options": [
-            "Neighbour",
-            "To manage / To interfere / To mind",
-            "To borrow / To lend",
-            "Other people's business / Unnecessary matters"
+            "Oneself / Yourself / Himself",
+            "Music",
+            "Each other / Mutually",
+            "To manage / To interfere / To mind"
           ],
           "option_pinyin": [
-            "lín jū",
-            "guǎn",
-            "jiè",
-            "xián shì"
+            "zì jǐ",
+            "yīn yuè",
+            "hù xiāng",
+            "guǎn"
           ]
         },
         {
@@ -435,18 +435,18 @@
           "options": [
             "关系",
             "闲事",
-            "管",
-            "借"
+            "在意",
+            "管"
           ],
           "option_pinyin": [
             "guān xi",
             "xián shì",
-            "guǎn",
-            "jiè"
+            "zài yì",
+            "guǎn"
           ],
-          "question_chinese": "这不关你的事，别___！",
-          "question_pinyin": "这不关你的事，别___！",
-          "question_english": "This is none of your business, don't interfere!"
+          "question_chinese": "每个人都应该___好自己的事。",
+          "question_pinyin": "每个人都应该___好自己的事。",
+          "question_english": "Everyone should take care of their own business."
         },
         {
           "type": "multiple_choice",
@@ -454,15 +454,15 @@
           "correct": "管",
           "options": [
             "管",
-            "音乐",
-            "借",
-            "关系"
+            "尊重",
+            "关系",
+            "闲事"
           ],
           "option_pinyin": [
             "guǎn",
-            "yīn yuè",
-            "jiè",
-            "guān xi"
+            "zūn zhòng",
+            "guān xi",
+            "xián shì"
           ]
         }
       ],
@@ -482,16 +482,16 @@
           "question": "What does 闲事 mean?",
           "correct": "Other people's business / Unnecessary matters",
           "options": [
-            "Sound / Voice",
             "Oneself / Yourself / Himself",
-            "Other people's business / Unnecessary matters",
-            "Each other / Mutually"
+            "Relationship / Connection",
+            "Music",
+            "Other people's business / Unnecessary matters"
           ],
           "option_pinyin": [
-            "shēng yīn",
             "zì jǐ",
-            "xián shì",
-            "hù xiāng"
+            "guān xi",
+            "yīn yuè",
+            "xián shì"
           ]
         },
         {
@@ -499,36 +499,36 @@
           "question": "Fill in: Other people's business / Unnecessary matters",
           "correct": "闲事",
           "options": [
+            "音乐",
             "而且",
-            "借",
-            "闲事",
-            "邻居"
+            "互相",
+            "闲事"
           ],
           "option_pinyin": [
+            "yīn yuè",
             "ér qiě",
-            "jiè",
-            "xián shì",
-            "lín jū"
+            "hù xiāng",
+            "xián shì"
           ],
-          "question_chinese": "少管___！",
-          "question_pinyin": "少管___！",
-          "question_english": "Mind your own business!"
+          "question_chinese": "她总是爱管___，真让人烦。",
+          "question_pinyin": "她总是爱管___，真让人烦。",
+          "question_english": "She always likes to meddle in other people's business; it's really annoying."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Other people's business / Unnecessary matters'?",
           "correct": "闲事",
           "options": [
-            "闲事",
-            "互相",
-            "音乐",
-            "声音"
+            "调",
+            "烦人",
+            "八卦",
+            "闲事"
           ],
           "option_pinyin": [
-            "xián shì",
-            "hù xiāng",
-            "yīn yuè",
-            "shēng yīn"
+            "tiáo",
+            "fán rén",
+            "bā guà",
+            "xián shì"
           ]
         }
       ],
@@ -548,16 +548,16 @@
           "question": "What does 关系 mean?",
           "correct": "Relationship / Connection",
           "options": [
-            "Music",
+            "To care about / To mind",
             "Neighbour",
             "Relationship / Connection",
-            "Oneself / Yourself / Himself"
+            "To chat"
           ],
           "option_pinyin": [
-            "yīn yuè",
+            "zài yì",
             "lín jū",
             "guān xi",
-            "zì jǐ"
+            "liáo tiān/liáo"
           ]
         },
         {
@@ -565,35 +565,35 @@
           "question": "Fill in: Relationship / Connection",
           "correct": "关系",
           "options": [
-            "闲事",
+            "刚才",
+            "八卦",
             "关系",
-            "聊天",
-            "管"
+            "聊天/聊"
           ],
           "option_pinyin": [
-            "xián shì",
+            "gāng cái",
+            "bā guà",
             "guān xi",
-            "liáo tiān",
-            "guǎn"
+            "liáo tiān/liáo"
           ],
-          "question_chinese": "我们的___很好。",
-          "question_pinyin": "我们的___很好。",
-          "question_english": "Our relationship is very good."
+          "question_chinese": "我们是邻居，___很好。",
+          "question_pinyin": "我们是邻居，___很好。",
+          "question_english": "We are neighbours and have a good relationship."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Relationship / Connection'?",
           "correct": "关系",
           "options": [
+            "声音",
+            "邻居",
             "音乐",
-            "闲事",
-            "聊天",
             "关系"
           ],
           "option_pinyin": [
+            "shēng yīn",
+            "lín jū",
             "yīn yuè",
-            "xián shì",
-            "liáo tiān",
             "guān xi"
           ]
         }
@@ -614,16 +614,16 @@
           "question": "What does 自己 mean?",
           "correct": "Oneself / Yourself / Himself",
           "options": [
-            "Moreover / And also / Furthermore",
-            "Relationship / Connection",
             "Oneself / Yourself / Himself",
-            "Neighbour"
+            "Gossip / To gossip",
+            "To chat",
+            "Annoying / To be a nuisance"
           ],
           "option_pinyin": [
-            "ér qiě",
-            "guān xi",
             "zì jǐ",
-            "lín jū"
+            "bā guà",
+            "liáo tiān/liáo",
+            "fán rén"
           ]
         },
         {
@@ -631,20 +631,20 @@
           "question": "Fill in: Oneself / Yourself / Himself",
           "correct": "自己",
           "options": [
+            "烦人",
             "自己",
-            "闲事",
-            "互相",
-            "关系"
+            "聊天/聊",
+            "调"
           ],
           "option_pinyin": [
+            "fán rén",
             "zì jǐ",
-            "xián shì",
-            "hù xiāng",
-            "guān xi"
+            "liáo tiān/liáo",
+            "tiáo"
           ],
-          "question_chinese": "你要照顾___。",
-          "question_pinyin": "你要照顾___。",
-          "question_english": "You need to take care of yourself."
+          "question_chinese": "每个人都应该管好___的事。",
+          "question_pinyin": "每个人都应该管好___的事。",
+          "question_english": "Everyone should take care of their own business."
         },
         {
           "type": "multiple_choice",
@@ -652,15 +652,15 @@
           "correct": "自己",
           "options": [
             "自己",
-            "声音",
-            "刚才",
-            "关系"
+            "互相",
+            "音乐",
+            "闲事"
           ],
           "option_pinyin": [
             "zì jǐ",
-            "shēng yīn",
-            "gāng cái",
-            "guān xi"
+            "hù xiāng",
+            "yīn yuè",
+            "xián shì"
           ]
         }
       ],
@@ -680,16 +680,16 @@
           "question": "What does 互相 mean?",
           "correct": "Each other / Mutually",
           "options": [
-            "Other people's business / Unnecessary matters",
+            "Just now / A moment ago",
             "Each other / Mutually",
-            "Sound / Voice",
-            "Just now / A moment ago"
+            "To manage / To interfere / To mind",
+            "Moreover / And also / Furthermore"
           ],
           "option_pinyin": [
-            "xián shì",
+            "gāng cái",
             "hù xiāng",
-            "shēng yīn",
-            "gāng cái"
+            "guǎn",
+            "ér qiě"
           ]
         },
         {
@@ -697,35 +697,35 @@
           "question": "Fill in: Each other / Mutually",
           "correct": "互相",
           "options": [
-            "而且",
+            "互相",
+            "音乐",
             "自己",
-            "闲事",
-            "互相"
+            "管"
           ],
           "option_pinyin": [
-            "ér qiě",
+            "hù xiāng",
+            "yīn yuè",
             "zì jǐ",
-            "xián shì",
-            "hù xiāng"
+            "guǎn"
           ],
-          "question_chinese": "我们要___帮助。",
-          "question_pinyin": "我们要___帮助。",
-          "question_english": "We should help each other."
+          "question_chinese": "我们是邻居，应该___帮助。",
+          "question_pinyin": "我们是邻居，应该___帮助。",
+          "question_english": "We are neighbours; we should help each other."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Each other / Mutually'?",
           "correct": "互相",
           "options": [
-            "声音",
+            "音乐",
+            "自己",
             "刚才",
-            "借",
             "互相"
           ],
           "option_pinyin": [
-            "shēng yīn",
+            "yīn yuè",
+            "zì jǐ",
             "gāng cái",
-            "jiè",
             "hù xiāng"
           ]
         }
@@ -746,16 +746,16 @@
           "question": "What does 而且 mean?",
           "correct": "Moreover / And also / Furthermore",
           "options": [
-            "Moreover / And also / Furthermore",
-            "Music",
-            "To borrow / To lend",
-            "To chat"
+            "Sound / Voice",
+            "To chat",
+            "To respect / Respect",
+            "Moreover / And also / Furthermore"
           ],
           "option_pinyin": [
-            "ér qiě",
-            "yīn yuè",
-            "jiè",
-            "liáo tiān"
+            "shēng yīn",
+            "liáo tiān/liáo",
+            "zūn zhòng",
+            "ér qiě"
           ]
         },
         {
@@ -763,40 +763,304 @@
           "question": "Fill in: Moreover / And also / Furthermore",
           "correct": "而且",
           "options": [
-            "邻居",
-            "管",
             "闲事",
+            "邻居",
+            "聊天/聊",
             "而且"
           ],
           "option_pinyin": [
-            "lín jū",
-            "guǎn",
             "xián shì",
+            "lín jū",
+            "liáo tiān/liáo",
             "ér qiě"
           ],
-          "question_chinese": "他聪明，___努力。",
-          "question_pinyin": "他聪明，___努力。",
-          "question_english": "He is smart, and moreover diligent."
+          "question_chinese": "她总是这样，___每次都到很晚。",
+          "question_pinyin": "她总是这样，___每次都到很晚。",
+          "question_english": "She's always like this, and moreover it goes until very late every time."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Moreover / And also / Furthermore'?",
           "correct": "而且",
           "options": [
-            "而且",
-            "邻居",
+            "声音",
             "关系",
-            "管"
+            "而且",
+            "自己"
           ],
           "option_pinyin": [
-            "ér qiě",
-            "lín jū",
+            "shēng yīn",
             "guān xi",
-            "guǎn"
+            "ér qiě",
+            "zì jǐ"
           ]
         }
       ],
       "example_pinyin": "tā zǒng shì zhè yàng ér qiě měi cì dōu dào hěn wǎn"
+    },
+    {
+      "id": "hsk3_l4_13",
+      "chinese": "调",
+      "pinyin": "tiáo",
+      "english": "To adjust / To tune / To regulate",
+      "part_of_speech": "verb",
+      "example": "叫她把声音调小一点。",
+      "translation": "Ask her to turn the volume down a bit.",
+      "example_pinyin": "jiào tā bǎ shēng yīn diào xiǎo yì diǎn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 调 mean?",
+          "correct": "To adjust / To tune / To regulate",
+          "options": [
+            "Moreover / And also / Furthermore",
+            "Gossip / To gossip",
+            "Annoying / To be a nuisance",
+            "To adjust / To tune / To regulate"
+          ],
+          "option_pinyin": [
+            "ér qiě",
+            "bā guà",
+            "fán rén",
+            "tiáo"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To adjust / To tune / To regulate",
+          "correct": "调",
+          "options": [
+            "邻居",
+            "闲事",
+            "调",
+            "互相"
+          ],
+          "option_pinyin": [
+            "lín jū",
+            "xián shì",
+            "tiáo",
+            "hù xiāng"
+          ],
+          "question_chinese": "叫她把声音___小一点。",
+          "question_pinyin": "叫她把声音___小一点。",
+          "question_english": "Ask her to turn the volume down a bit."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To adjust / To tune / To regulate'?",
+          "correct": "调",
+          "options": [
+            "尊重",
+            "声音",
+            "聊天/聊",
+            "调"
+          ],
+          "option_pinyin": [
+            "zūn zhòng",
+            "shēng yīn",
+            "liáo tiān/liáo",
+            "tiáo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l4_14",
+      "chinese": "在意",
+      "pinyin": "zài yì",
+      "english": "To care about / To mind",
+      "part_of_speech": "verb",
+      "example": "你别在意她说的话。",
+      "translation": "Don't take what she says to heart.",
+      "example_pinyin": "nǐ bié zài yì tā shuō de huà",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 在意 mean?",
+          "correct": "To care about / To mind",
+          "options": [
+            "To care about / To mind",
+            "To chat",
+            "To manage / To interfere / To mind",
+            "Relationship / Connection"
+          ],
+          "option_pinyin": [
+            "zài yì",
+            "liáo tiān/liáo",
+            "guǎn",
+            "guān xi"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To care about / To mind",
+          "correct": "在意",
+          "options": [
+            "自己",
+            "在意",
+            "聊天/聊",
+            "互相"
+          ],
+          "option_pinyin": [
+            "zì jǐ",
+            "zài yì",
+            "liáo tiān/liáo",
+            "hù xiāng"
+          ],
+          "question_chinese": "你别___她说的话。",
+          "question_pinyin": "你别___她说的话。",
+          "question_english": "Don't take what she says to heart."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To care about / To mind'?",
+          "correct": "在意",
+          "options": [
+            "调",
+            "聊天/聊",
+            "在意",
+            "烦人"
+          ],
+          "option_pinyin": [
+            "tiáo",
+            "liáo tiān/liáo",
+            "zài yì",
+            "fán rén"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l4_15",
+      "chinese": "尊重",
+      "pinyin": "zūn zhòng",
+      "english": "To respect / Respect",
+      "part_of_speech": "verb/noun",
+      "example": "我们应该互相尊重。",
+      "translation": "We should respect each other.",
+      "example_pinyin": "wǒ men yīng gāi hù xiāng zūn zhòng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 尊重 mean?",
+          "correct": "To respect / Respect",
+          "options": [
+            "Other people's business / Unnecessary matters",
+            "Relationship / Connection",
+            "To respect / Respect",
+            "Neighbour"
+          ],
+          "option_pinyin": [
+            "xián shì",
+            "guān xi",
+            "zūn zhòng",
+            "lín jū"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To respect / Respect",
+          "correct": "尊重",
+          "options": [
+            "烦人",
+            "互相",
+            "尊重",
+            "调"
+          ],
+          "option_pinyin": [
+            "fán rén",
+            "hù xiāng",
+            "zūn zhòng",
+            "tiáo"
+          ],
+          "question_chinese": "我们应该互相___。",
+          "question_pinyin": "我们应该互相___。",
+          "question_english": "We should respect each other."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To respect / Respect'?",
+          "correct": "尊重",
+          "options": [
+            "互相",
+            "在意",
+            "声音",
+            "尊重"
+          ],
+          "option_pinyin": [
+            "hù xiāng",
+            "zài yì",
+            "shēng yīn",
+            "zūn zhòng"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l4_16",
+      "chinese": "烦人",
+      "pinyin": "fán rén",
+      "english": "Annoying / To be a nuisance",
+      "part_of_speech": "adjective",
+      "example": "邻居总是说别人的闲话，真烦人。",
+      "translation": "The neighbour always gossips about others — so annoying.",
+      "example_pinyin": "lín jū zǒng shì shuō bié rén de xián huà zhēn fán rén",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 烦人 mean?",
+          "correct": "Annoying / To be a nuisance",
+          "options": [
+            "Moreover / And also / Furthermore",
+            "Each other / Mutually",
+            "Oneself / Yourself / Himself",
+            "Annoying / To be a nuisance"
+          ],
+          "option_pinyin": [
+            "ér qiě",
+            "hù xiāng",
+            "zì jǐ",
+            "fán rén"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Annoying / To be a nuisance",
+          "correct": "烦人",
+          "options": [
+            "管",
+            "刚才",
+            "关系",
+            "烦人"
+          ],
+          "option_pinyin": [
+            "guǎn",
+            "gāng cái",
+            "guān xi",
+            "fán rén"
+          ],
+          "question_chinese": "邻居总是说别人的闲话，真___。",
+          "question_pinyin": "邻居总是说别人的闲话，真___。",
+          "question_english": "The neighbour always gossips about others — so annoying."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Annoying / To be a nuisance'?",
+          "correct": "烦人",
+          "options": [
+            "邻居",
+            "烦人",
+            "闲事",
+            "尊重"
+          ],
+          "option_pinyin": [
+            "lín jū",
+            "fán rén",
+            "xián shì",
+            "zūn zhòng"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l4_p01",

@@ -21,15 +21,15 @@
           "correct": "Air conditioner",
           "options": [
             "Air conditioner",
-            "To turn on / To open",
-            "Electricity",
-            "Conveniently / While at it"
+            "To open / To turn on",
+            "Right away (habitually) / Casually",
+            "Happen to / Just right / Exactly"
           ],
           "option_pinyin": [
             "kōng tiáo",
-            "kāi",
-            "diàn",
-            "shùn biàn"
+            "dǎ kāi",
+            "suí shǒu",
+            "zhèng hǎo"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: Air conditioner",
           "correct": "空调",
           "options": [
-            "随手",
-            "节约",
             "空调",
-            "窗户"
+            "正好",
+            "冰箱",
+            "关上"
           ],
           "option_pinyin": [
-            "suí shǒu",
-            "jié yuē",
             "kōng tiáo",
-            "chuāng hu"
+            "zhèng hǎo",
+            "bīng xiāng",
+            "guān shàng"
           ],
-          "question_chinese": "请把___打开。",
-          "question_pinyin": "请把___打开。",
-          "question_english": "Please turn on the air conditioner."
+          "question_chinese": "别忘了把___关了。",
+          "question_pinyin": "别忘了把___关了。",
+          "question_english": "Don't forget to turn off the air conditioner."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Air conditioner'?",
           "correct": "空调",
           "options": [
-            "窗户",
-            "灯",
-            "关",
-            "空调"
+            "忘",
+            "厨房",
+            "空调",
+            "正好"
           ],
           "option_pinyin": [
-            "chuāng hu",
-            "dēng",
-            "guān",
-            "kōng tiáo"
+            "wàng",
+            "chú fáng",
+            "kōng tiáo",
+            "zhèng hǎo"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 忘 mean?",
           "correct": "To forget",
           "options": [
-            "Conveniently / While at it",
-            "To forget",
-            "Light / Lamp",
-            "To waste / Wasteful"
+            "To close / To shut",
+            "To waste / Wasteful",
+            "Air conditioner",
+            "To forget"
           ],
           "option_pinyin": [
-            "shùn biàn",
-            "wàng",
-            "dēng",
-            "làng fèi"
+            "guān shàng",
+            "làng fèi",
+            "kōng tiáo",
+            "wàng"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: To forget",
           "correct": "忘",
           "options": [
-            "灯",
-            "电",
+            "节约",
+            "空调",
             "忘",
-            "浪费"
+            "关上"
           ],
           "option_pinyin": [
-            "dēng",
-            "diàn",
+            "jié yuē",
+            "kōng tiáo",
             "wàng",
-            "làng fèi"
+            "guān shàng"
           ],
-          "question_chinese": "别___了关灯！",
-          "question_pinyin": "别___了关灯！",
-          "question_english": "Don't forget to turn off the lights!"
+          "question_chinese": "他出门的时候___关窗户了。",
+          "question_pinyin": "他出门的时候___关窗户了。",
+          "question_english": "He forgot to close the window when he went out."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To forget'?",
           "correct": "忘",
           "options": [
-            "电",
+            "冰箱",
+            "空调",
             "忘",
-            "节约",
-            "随手"
+            "电"
           ],
           "option_pinyin": [
-            "diàn",
+            "bīng xiāng",
+            "kōng tiáo",
             "wàng",
-            "jié yuē",
-            "suí shǒu"
+            "diàn"
           ]
         }
       ],
@@ -140,399 +140,399 @@
     },
     {
       "id": "hsk3_l11_03",
-      "chinese": "关",
-      "pinyin": "guān",
-      "english": "To turn off / To close",
+      "chinese": "关上",
+      "pinyin": "guān shàng",
+      "english": "To close / To shut",
       "part_of_speech": "verb",
-      "example": "请随手关灯，不要浪费电。",
-      "translation": "Please turn off the lights as you go — don't waste electricity.",
+      "example": "请把窗户关上。",
+      "translation": "Please close the window.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 关 mean?",
-          "correct": "To turn off / To close",
+          "question": "What does 关上 mean?",
+          "correct": "To close / To shut",
           "options": [
-            "To waste / Wasteful",
-            "To turn off / To close",
-            "Light / Lamp",
-            "Conveniently / While at it"
+            "To open / To turn on",
+            "To close / To shut",
+            "To help / Help / Assistance",
+            "To help out / To do a favor"
           ],
           "option_pinyin": [
-            "làng fèi",
-            "guān",
-            "dēng",
-            "shùn biàn"
+            "dǎ kāi",
+            "guān shàng",
+            "bāng zhù",
+            "bāng máng"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To turn off / To close",
-          "correct": "关",
+          "question": "Fill in: To close / To shut",
+          "correct": "关上",
           "options": [
-            "顺便",
-            "窗户",
-            "帮",
-            "关"
+            "关上",
+            "冰箱",
+            "厨房",
+            "电"
           ],
           "option_pinyin": [
-            "shùn biàn",
-            "chuāng hu",
-            "bāng",
-            "guān"
+            "guān shàng",
+            "bīng xiāng",
+            "chú fáng",
+            "diàn"
           ],
-          "question_chinese": "请把门___上。",
-          "question_pinyin": "请把门___上。",
-          "question_english": "Please close the door."
+          "question_chinese": "请把窗户___。",
+          "question_pinyin": "请把窗户___。",
+          "question_english": "Please close the window."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To turn off / To close'?",
-          "correct": "关",
+          "question": "Which word means 'To close / To shut'?",
+          "correct": "关上",
           "options": [
-            "空调",
             "浪费",
-            "帮",
-            "关"
+            "忘",
+            "打开",
+            "关上"
           ],
           "option_pinyin": [
-            "kōng tiáo",
             "làng fèi",
-            "bāng",
-            "guān"
+            "wàng",
+            "dǎ kāi",
+            "guān shàng"
           ]
         }
       ],
-      "example_pinyin": "qǐng suí shǒu guān dēng bú yào làng fèi diàn"
+      "example_pinyin": "qǐng bǎ chuāng hù guān shàng"
     },
     {
       "id": "hsk3_l11_04",
-      "chinese": "开",
-      "pinyin": "kāi",
-      "english": "To turn on / To open",
+      "chinese": "打开",
+      "pinyin": "dǎ kāi",
+      "english": "To open / To turn on",
       "part_of_speech": "verb",
-      "example": "不要开着空调睡觉。",
-      "translation": "Don't sleep with the air conditioner on.",
+      "example": "他把窗户打开了。",
+      "translation": "He opened the window.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 开 mean?",
-          "correct": "To turn on / To open",
+          "question": "What does 打开 mean?",
+          "correct": "To open / To turn on",
           "options": [
-            "To turn off / To close",
-            "Air conditioner",
-            "Light / Lamp",
-            "To turn on / To open"
+            "Happen to / Just right / Exactly",
+            "To open / To turn on",
+            "Refrigerator / Fridge",
+            "To waste / Wasteful"
           ],
           "option_pinyin": [
-            "guān",
-            "kōng tiáo",
-            "dēng",
-            "kāi"
+            "zhèng hǎo",
+            "dǎ kāi",
+            "bīng xiāng",
+            "làng fèi"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To turn on / To open",
-          "correct": "开",
+          "question": "Fill in: To open / To turn on",
+          "correct": "打开",
           "options": [
-            "灯",
-            "随手",
-            "窗户",
-            "开"
+            "帮助",
+            "帮忙",
+            "空调",
+            "打开"
           ],
           "option_pinyin": [
-            "dēng",
-            "suí shǒu",
-            "chuāng hu",
-            "kāi"
+            "bāng zhù",
+            "bāng máng",
+            "kōng tiáo",
+            "dǎ kāi"
           ],
-          "question_chinese": "请把窗户打___。",
-          "question_pinyin": "请把窗户打___。",
-          "question_english": "Please open the window."
+          "question_chinese": "他把窗户___了。",
+          "question_pinyin": "他把窗户___了。",
+          "question_english": "He opened the window."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To turn on / To open'?",
-          "correct": "开",
+          "question": "Which word means 'To open / To turn on'?",
+          "correct": "打开",
           "options": [
-            "窗户",
-            "开",
+            "电",
+            "正好",
             "随手",
-            "关"
+            "打开"
           ],
           "option_pinyin": [
-            "chuāng hu",
-            "kāi",
+            "diàn",
+            "zhèng hǎo",
             "suí shǒu",
-            "guān"
+            "dǎ kāi"
           ]
         }
       ],
-      "example_pinyin": "bú yào kāi zhe kōng tiáo shuì jiào"
+      "example_pinyin": "tā bǎ chuāng hù dǎ kāi le"
     },
     {
       "id": "hsk3_l11_05",
-      "chinese": "灯",
-      "pinyin": "dēng",
-      "english": "Light / Lamp",
+      "chinese": "厨房",
+      "pinyin": "chú fáng",
+      "english": "Kitchen",
       "part_of_speech": "noun",
-      "example": "请随手关灯，不要浪费电。",
-      "translation": "Please turn off the lights as you go — don't waste electricity.",
+      "example": "妈妈在厨房做饭。",
+      "translation": "Mum is cooking in the kitchen.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 灯 mean?",
-          "correct": "Light / Lamp",
+          "question": "What does 厨房 mean?",
+          "correct": "Kitchen",
           "options": [
-            "Light / Lamp",
-            "To save / To economise",
+            "Kitchen",
             "To waste / Wasteful",
-            "Window"
+            "To open / To turn on",
+            "To forget"
           ],
           "option_pinyin": [
-            "dēng",
-            "jié yuē",
+            "chú fáng",
             "làng fèi",
-            "chuāng hu"
+            "dǎ kāi",
+            "wàng"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Light / Lamp",
-          "correct": "灯",
+          "question": "Fill in: Kitchen",
+          "correct": "厨房",
           "options": [
-            "电",
-            "灯",
-            "忘",
-            "顺便"
-          ],
-          "option_pinyin": [
-            "diàn",
-            "dēng",
-            "wàng",
-            "shùn biàn"
-          ],
-          "question_chinese": "别忘了关___。",
-          "question_pinyin": "别忘了关___。",
-          "question_english": "Don't forget to turn off the light."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'Light / Lamp'?",
-          "correct": "灯",
-          "options": [
-            "窗户",
-            "灯",
-            "开",
-            "浪费"
-          ],
-          "option_pinyin": [
-            "chuāng hu",
-            "dēng",
-            "kāi",
-            "làng fèi"
-          ]
-        }
-      ],
-      "example_pinyin": "qǐng suí shǒu guān dēng bú yào làng fèi diàn"
-    },
-    {
-      "id": "hsk3_l11_06",
-      "chinese": "窗户",
-      "pinyin": "chuāng hu",
-      "english": "Window",
-      "part_of_speech": "noun",
-      "example": "你能帮我把窗户关上吗？",
-      "translation": "Can you help me close the window?",
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "What does 窗户 mean?",
-          "correct": "Window",
-          "options": [
-            "Electricity",
-            "Window",
-            "To help",
-            "To turn off / To close"
-          ],
-          "option_pinyin": [
-            "diàn",
-            "chuāng hu",
-            "bāng",
-            "guān"
-          ]
-        },
-        {
-          "type": "fill_blank",
-          "question": "Fill in: Window",
-          "correct": "窗户",
-          "options": [
-            "浪费",
-            "电",
-            "窗户",
-            "关"
-          ],
-          "option_pinyin": [
-            "làng fèi",
-            "diàn",
-            "chuāng hu",
-            "guān"
-          ],
-          "question_chinese": "请打开___。",
-          "question_pinyin": "请打开___。",
-          "question_english": "Please open the window."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'Window'?",
-          "correct": "窗户",
-          "options": [
-            "窗户",
-            "灯",
-            "关",
-            "随手"
-          ],
-          "option_pinyin": [
-            "chuāng hu",
-            "dēng",
-            "guān",
-            "suí shǒu"
-          ]
-        }
-      ],
-      "example_pinyin": "nǐ néng bāng wǒ bǎ chuāng hù guān shàng ma"
-    },
-    {
-      "id": "hsk3_l11_07",
-      "chinese": "帮",
-      "pinyin": "bāng",
-      "english": "To help",
-      "part_of_speech": "verb",
-      "example": "你顺便帮我把门关了吧。",
-      "translation": "While you're at it, please close the door for me.",
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "What does 帮 mean?",
-          "correct": "To help",
-          "options": [
-            "To save / To economise",
-            "To waste / Wasteful",
-            "To help",
-            "Light / Lamp"
-          ],
-          "option_pinyin": [
-            "jié yuē",
-            "làng fèi",
-            "bāng",
-            "dēng"
-          ]
-        },
-        {
-          "type": "fill_blank",
-          "question": "Fill in: To help",
-          "correct": "帮",
-          "options": [
-            "帮",
-            "随手",
-            "顺便",
+            "厨房",
+            "关上",
+            "帮助",
             "空调"
           ],
           "option_pinyin": [
-            "bāng",
-            "suí shǒu",
-            "shùn biàn",
+            "chú fáng",
+            "guān shàng",
+            "bāng zhù",
             "kōng tiáo"
           ],
-          "question_chinese": "你能___我吗？",
-          "question_pinyin": "你能___我吗？",
-          "question_english": "Can you help me?"
+          "question_chinese": "妈妈在___做饭。",
+          "question_pinyin": "妈妈在___做饭。",
+          "question_english": "Mum is cooking in the kitchen."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To help'?",
-          "correct": "帮",
+          "question": "Which word means 'Kitchen'?",
+          "correct": "厨房",
           "options": [
-            "顺便",
-            "忘",
-            "帮",
-            "随手"
+            "厨房",
+            "冰箱",
+            "关上",
+            "忘"
           ],
           "option_pinyin": [
-            "shùn biàn",
-            "wàng",
-            "bāng",
-            "suí shǒu"
+            "chú fáng",
+            "bīng xiāng",
+            "guān shàng",
+            "wàng"
           ]
         }
       ],
-      "example_pinyin": "nǐ shùn biàn bāng wǒ bǎ mén guān le ba"
+      "example_pinyin": "mā mā zài chú fáng zuò fàn"
     },
     {
-      "id": "hsk3_l11_08",
-      "chinese": "顺便",
-      "pinyin": "shùn biàn",
-      "english": "Conveniently / While at it",
-      "part_of_speech": "adverb",
-      "example": "你顺便帮我把门关了吧。",
-      "translation": "While you're at it, please close the door for me.",
+      "id": "hsk3_l11_06",
+      "chinese": "冰箱",
+      "pinyin": "bīng xiāng",
+      "english": "Refrigerator / Fridge",
+      "part_of_speech": "noun",
+      "example": "请把食物放进冰箱里。",
+      "translation": "Please put the food in the fridge.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 顺便 mean?",
-          "correct": "Conveniently / While at it",
+          "question": "What does 冰箱 mean?",
+          "correct": "Refrigerator / Fridge",
           "options": [
-            "To save / To economise",
+            "Kitchen",
             "To forget",
-            "To waste / Wasteful",
-            "Conveniently / While at it"
+            "Refrigerator / Fridge",
+            "Happen to / Just right / Exactly"
           ],
           "option_pinyin": [
-            "jié yuē",
+            "chú fáng",
             "wàng",
-            "làng fèi",
-            "shùn biàn"
+            "bīng xiāng",
+            "zhèng hǎo"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Conveniently / While at it",
-          "correct": "顺便",
+          "question": "Fill in: Refrigerator / Fridge",
+          "correct": "冰箱",
           "options": [
-            "顺便",
-            "空调",
-            "电",
-            "灯"
+            "正好",
+            "冰箱",
+            "忘",
+            "浪费"
           ],
           "option_pinyin": [
-            "shùn biàn",
-            "kōng tiáo",
-            "diàn",
-            "dēng"
+            "zhèng hǎo",
+            "bīng xiāng",
+            "wàng",
+            "làng fèi"
           ],
-          "question_chinese": "请___帮我买一下水。",
-          "question_pinyin": "请___帮我买一下水。",
-          "question_english": "Please buy the water for me while you're at it."
+          "question_chinese": "请把食物放进___里。",
+          "question_pinyin": "请把食物放进___里。",
+          "question_english": "Please put the food in the fridge."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Conveniently / While at it'?",
-          "correct": "顺便",
+          "question": "Which word means 'Refrigerator / Fridge'?",
+          "correct": "冰箱",
           "options": [
+            "关上",
+            "冰箱",
             "电",
-            "节约",
-            "顺便",
-            "开"
+            "帮忙"
           ],
           "option_pinyin": [
+            "guān shàng",
+            "bīng xiāng",
             "diàn",
-            "jié yuē",
-            "shùn biàn",
-            "kāi"
+            "bāng máng"
           ]
         }
       ],
-      "example_pinyin": "nǐ shùn biàn bāng wǒ bǎ mén guān le ba"
+      "example_pinyin": "qǐng bǎ shí wù fàng jìn bīng xiāng lǐ"
+    },
+    {
+      "id": "hsk3_l11_07",
+      "chinese": "帮助",
+      "pinyin": "bāng zhù",
+      "english": "To help / Help / Assistance",
+      "part_of_speech": "verb/noun",
+      "example": "谢谢你的帮助！",
+      "translation": "Thank you for your help!",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 帮助 mean?",
+          "correct": "To help / Help / Assistance",
+          "options": [
+            "To help / Help / Assistance",
+            "Electricity",
+            "Refrigerator / Fridge",
+            "To close / To shut"
+          ],
+          "option_pinyin": [
+            "bāng zhù",
+            "diàn",
+            "bīng xiāng",
+            "guān shàng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To help / Help / Assistance",
+          "correct": "帮助",
+          "options": [
+            "帮忙",
+            "空调",
+            "帮助",
+            "节约"
+          ],
+          "option_pinyin": [
+            "bāng máng",
+            "kōng tiáo",
+            "bāng zhù",
+            "jié yuē"
+          ],
+          "question_chinese": "谢谢你的___！",
+          "question_pinyin": "谢谢你的___！",
+          "question_english": "Thank you for your help!"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To help / Help / Assistance'?",
+          "correct": "帮助",
+          "options": [
+            "帮助",
+            "空调",
+            "关上",
+            "电"
+          ],
+          "option_pinyin": [
+            "bāng zhù",
+            "kōng tiáo",
+            "guān shàng",
+            "diàn"
+          ]
+        }
+      ],
+      "example_pinyin": "xiè xiè nǐ de bāng zhù"
+    },
+    {
+      "id": "hsk3_l11_08",
+      "chinese": "正好",
+      "pinyin": "zhèng hǎo",
+      "english": "Happen to / Just right / Exactly",
+      "part_of_speech": "adverb",
+      "example": "我正好在附近，可以帮你。",
+      "translation": "I happen to be nearby and can help you.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 正好 mean?",
+          "correct": "Happen to / Just right / Exactly",
+          "options": [
+            "Electricity",
+            "To waste / Wasteful",
+            "Happen to / Just right / Exactly",
+            "To open / To turn on"
+          ],
+          "option_pinyin": [
+            "diàn",
+            "làng fèi",
+            "zhèng hǎo",
+            "dǎ kāi"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Happen to / Just right / Exactly",
+          "correct": "正好",
+          "options": [
+            "忘",
+            "帮助",
+            "正好",
+            "打开"
+          ],
+          "option_pinyin": [
+            "wàng",
+            "bāng zhù",
+            "zhèng hǎo",
+            "dǎ kāi"
+          ],
+          "question_chinese": "我___在附近，可以帮你。",
+          "question_pinyin": "我___在附近，可以帮你。",
+          "question_english": "I happen to be nearby and can help you."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Happen to / Just right / Exactly'?",
+          "correct": "正好",
+          "options": [
+            "电",
+            "冰箱",
+            "随手",
+            "正好"
+          ],
+          "option_pinyin": [
+            "diàn",
+            "bīng xiāng",
+            "suí shǒu",
+            "zhèng hǎo"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zhèng hǎo zài fù jìn kě yǐ bāng nǐ"
     },
     {
       "id": "hsk3_l11_09",
@@ -549,15 +549,15 @@
           "correct": "To waste / Wasteful",
           "options": [
             "Right away (habitually) / Casually",
-            "To forget",
+            "To waste / Wasteful",
             "Air conditioner",
-            "To waste / Wasteful"
+            "Happen to / Just right / Exactly"
           ],
           "option_pinyin": [
             "suí shǒu",
-            "wàng",
+            "làng fèi",
             "kōng tiáo",
-            "làng fèi"
+            "zhèng hǎo"
           ]
         },
         {
@@ -566,35 +566,35 @@
           "correct": "浪费",
           "options": [
             "浪费",
-            "顺便",
-            "窗户",
-            "开"
+            "打开",
+            "帮助",
+            "电"
           ],
           "option_pinyin": [
             "làng fèi",
-            "shùn biàn",
-            "chuāng hu",
-            "kāi"
+            "dǎ kāi",
+            "bāng zhù",
+            "diàn"
           ],
-          "question_chinese": "不要___电。",
-          "question_pinyin": "不要___电。",
-          "question_english": "Don't waste electricity."
+          "question_chinese": "请随手关灯，不要___电。",
+          "question_pinyin": "请随手关灯，不要___电。",
+          "question_english": "Please turn off the lights as you go — don't waste electricity."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To waste / Wasteful'?",
           "correct": "浪费",
           "options": [
-            "节约",
-            "顺便",
-            "帮",
-            "浪费"
+            "打开",
+            "浪费",
+            "电",
+            "随手"
           ],
           "option_pinyin": [
-            "jié yuē",
-            "shùn biàn",
-            "bāng",
-            "làng fèi"
+            "dǎ kāi",
+            "làng fèi",
+            "diàn",
+            "suí shǒu"
           ]
         }
       ],
@@ -614,16 +614,16 @@
           "question": "What does 电 mean?",
           "correct": "Electricity",
           "options": [
-            "Air conditioner",
-            "To turn on / To open",
+            "Refrigerator / Fridge",
+            "To save / To economise",
             "Electricity",
-            "To save / To economise"
+            "To help / Help / Assistance"
           ],
           "option_pinyin": [
-            "kōng tiáo",
-            "kāi",
+            "bīng xiāng",
+            "jié yuē",
             "diàn",
-            "jié yuē"
+            "bāng zhù"
           ]
         },
         {
@@ -631,36 +631,36 @@
           "question": "Fill in: Electricity",
           "correct": "电",
           "options": [
-            "窗户",
-            "顺便",
-            "节约",
-            "电"
+            "厨房",
+            "电",
+            "随手",
+            "冰箱"
           ],
           "option_pinyin": [
-            "chuāng hu",
-            "shùn biàn",
-            "jié yuē",
-            "diàn"
+            "chú fáng",
+            "diàn",
+            "suí shǒu",
+            "bīng xiāng"
           ],
-          "question_chinese": "节约用___。",
-          "question_pinyin": "节约用___。",
-          "question_english": "Save electricity."
+          "question_chinese": "我们要节约用___。",
+          "question_pinyin": "我们要节约用___。",
+          "question_english": "We should save electricity."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Electricity'?",
           "correct": "电",
           "options": [
-            "关",
-            "随手",
-            "浪费",
-            "电"
+            "厨房",
+            "帮助",
+            "电",
+            "浪费"
           ],
           "option_pinyin": [
-            "guān",
-            "suí shǒu",
-            "làng fèi",
-            "diàn"
+            "chú fáng",
+            "bāng zhù",
+            "diàn",
+            "làng fèi"
           ]
         }
       ],
@@ -680,16 +680,16 @@
           "question": "What does 节约 mean?",
           "correct": "To save / To economise",
           "options": [
-            "Conveniently / While at it",
-            "To turn on / To open",
+            "Electricity",
+            "To open / To turn on",
             "To save / To economise",
-            "Air conditioner"
+            "To help / Help / Assistance"
           ],
           "option_pinyin": [
-            "shùn biàn",
-            "kāi",
+            "diàn",
+            "dǎ kāi",
             "jié yuē",
-            "kōng tiáo"
+            "bāng zhù"
           ]
         },
         {
@@ -697,36 +697,36 @@
           "question": "Fill in: To save / To economise",
           "correct": "节约",
           "options": [
-            "关",
-            "灯",
             "节约",
-            "空调"
+            "忘",
+            "帮忙",
+            "帮助"
           ],
           "option_pinyin": [
-            "guān",
-            "dēng",
             "jié yuē",
-            "kōng tiáo"
+            "wàng",
+            "bāng máng",
+            "bāng zhù"
           ],
-          "question_chinese": "我们要___用水。",
-          "question_pinyin": "我们要___用水。",
-          "question_english": "We should save water."
+          "question_chinese": "我们要___用电，不要开着空调睡觉。",
+          "question_pinyin": "我们要___用电，不要开着空调睡觉。",
+          "question_english": "We should save electricity — don't sleep with the air conditioner on."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To save / To economise'?",
           "correct": "节约",
           "options": [
-            "帮",
-            "随手",
-            "窗户",
-            "节约"
+            "正好",
+            "节约",
+            "冰箱",
+            "忘"
           ],
           "option_pinyin": [
-            "bāng",
-            "suí shǒu",
-            "chuāng hu",
-            "jié yuē"
+            "zhèng hǎo",
+            "jié yuē",
+            "bīng xiāng",
+            "wàng"
           ]
         }
       ],
@@ -746,16 +746,16 @@
           "question": "What does 随手 mean?",
           "correct": "Right away (habitually) / Casually",
           "options": [
-            "To help",
+            "To open / To turn on",
             "Right away (habitually) / Casually",
-            "To save / To economise",
-            "To waste / Wasteful"
+            "Refrigerator / Fridge",
+            "To help out / To do a favor"
           ],
           "option_pinyin": [
-            "bāng",
+            "dǎ kāi",
             "suí shǒu",
-            "jié yuē",
-            "làng fèi"
+            "bīng xiāng",
+            "bāng máng"
           ]
         },
         {
@@ -763,40 +763,106 @@
           "question": "Fill in: Right away (habitually) / Casually",
           "correct": "随手",
           "options": [
-            "忘",
-            "帮",
+            "空调",
+            "关上",
             "随手",
-            "顺便"
+            "厨房"
           ],
           "option_pinyin": [
-            "wàng",
-            "bāng",
+            "kōng tiáo",
+            "guān shàng",
             "suí shǒu",
-            "shùn biàn"
+            "chú fáng"
           ],
-          "question_chinese": "请___关灯。",
-          "question_pinyin": "请___关灯。",
-          "question_english": "Please turn off the light right away."
+          "question_chinese": "请___关灯，不要浪费电。",
+          "question_pinyin": "请___关灯，不要浪费电。",
+          "question_english": "Please turn off the lights as you go — don't waste electricity."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Right away (habitually) / Casually'?",
           "correct": "随手",
           "options": [
-            "浪费",
-            "顺便",
             "随手",
-            "忘"
+            "厨房",
+            "关上",
+            "冰箱"
           ],
           "option_pinyin": [
-            "làng fèi",
-            "shùn biàn",
             "suí shǒu",
-            "wàng"
+            "chú fáng",
+            "guān shàng",
+            "bīng xiāng"
           ]
         }
       ],
       "example_pinyin": "qǐng suí shǒu guān dēng bú yào làng fèi diàn"
+    },
+    {
+      "id": "hsk3_l11_13",
+      "chinese": "帮忙",
+      "pinyin": "bāng máng",
+      "english": "To help out / To do a favor",
+      "part_of_speech": "verb",
+      "example": "你能帮我一个忙吗？",
+      "translation": "Can you do me a favor?",
+      "example_pinyin": "nǐ néng bāng wǒ yí gè máng ma",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 帮忙 mean?",
+          "correct": "To help out / To do a favor",
+          "options": [
+            "To forget",
+            "Air conditioner",
+            "To help out / To do a favor",
+            "To save / To economise"
+          ],
+          "option_pinyin": [
+            "wàng",
+            "kōng tiáo",
+            "bāng máng",
+            "jié yuē"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To help out / To do a favor",
+          "correct": "帮忙",
+          "options": [
+            "空调",
+            "帮忙",
+            "忘",
+            "关上"
+          ],
+          "option_pinyin": [
+            "kōng tiáo",
+            "bāng máng",
+            "wàng",
+            "guān shàng"
+          ],
+          "question_chinese": "你能___我吗？",
+          "question_pinyin": "你能___我吗？",
+          "question_english": "Can you do me a favor?"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To help out / To do a favor'?",
+          "correct": "帮忙",
+          "options": [
+            "正好",
+            "帮忙",
+            "空调",
+            "电"
+          ],
+          "option_pinyin": [
+            "zhèng hǎo",
+            "bāng máng",
+            "kōng tiáo",
+            "diàn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l11_p01",

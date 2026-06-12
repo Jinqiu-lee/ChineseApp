@@ -20,16 +20,16 @@
           "question": "What does 汉语 mean?",
           "correct": "Mandarin Chinese (language)",
           "options": [
-            "Like / Similar to / Resemble",
-            "Even more / Still / Also",
+            "To inspire / To enlighten / Inspiration",
             "Mandarin Chinese (language)",
-            "Same / Alike / As...as"
+            "Language",
+            "Impressive / Fierce / Awesome"
           ],
           "option_pinyin": [
-            "xiàng",
-            "hái",
+            "qǐ fā",
             "hàn yǔ",
-            "yí yàng"
+            "yǔ yán",
+            "lì hài"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: Mandarin Chinese (language)",
           "correct": "汉语",
           "options": [
-            "一样",
-            "像",
+            "汉语",
+            "启发",
             "口音",
-            "汉语"
+            "语言"
           ],
           "option_pinyin": [
-            "yí yàng",
-            "xiàng",
+            "hàn yǔ",
+            "qǐ fā",
             "kǒu yīn",
-            "hàn yǔ"
+            "yǔ yán"
           ],
-          "question_chinese": "我在学___。",
-          "question_pinyin": "我在学___。",
-          "question_english": "I'm learning Mandarin Chinese."
+          "question_chinese": "她的___说得像中国人一样好。",
+          "question_pinyin": "她的___说得像中国人一样好。",
+          "question_english": "Her Chinese is as good as a native Chinese speaker."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Mandarin Chinese (language)'?",
           "correct": "汉语",
           "options": [
-            "更",
             "流利",
-            "汉语",
-            "一样"
+            "地道",
+            "进步",
+            "汉语"
           ],
           "option_pinyin": [
-            "gèng",
             "liú lì",
-            "hàn yǔ",
-            "yí yàng"
+            "dì dào",
+            "jìn bù",
+            "hàn yǔ"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 一样 mean?",
           "correct": "Same / Alike / As...as",
           "options": [
-            "Same / Alike / As...as",
             "Mandarin Chinese (language)",
-            "Impressive / Fierce / Awesome",
-            "Fluent / Fluently"
+            "Authentic / Native-like",
+            "Same / Alike / As...as",
+            "To encourage / Encouragement"
           ],
           "option_pinyin": [
-            "yí yàng",
             "hàn yǔ",
-            "lì hài",
-            "liú lì"
+            "dì dào",
+            "yí yàng",
+            "gǔ lì"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: Same / Alike / As...as",
           "correct": "一样",
           "options": [
-            "一样",
-            "进步",
-            "口音",
-            "赞"
+            "地道",
+            "口语",
+            "母语",
+            "一样"
           ],
           "option_pinyin": [
-            "yí yàng",
-            "jìn bù",
-            "kǒu yīn",
-            "zàn"
+            "dì dào",
+            "kǒu yǔ",
+            "mǔ yǔ",
+            "yí yàng"
           ],
-          "question_chinese": "他们两个___高。",
-          "question_pinyin": "他们两个___高。",
-          "question_english": "The two of them are the same height."
+          "question_chinese": "你说得很地道，像母语___。",
+          "question_pinyin": "你说得很地道，像母语___。",
+          "question_english": "You speak very authentically — just like your mother tongue."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Same / Alike / As...as'?",
           "correct": "一样",
           "options": [
-            "地道",
-            "更",
-            "像",
-            "一样"
+            "启发",
+            "一样",
+            "口语",
+            "鼓励"
           ],
           "option_pinyin": [
-            "dì dào",
-            "gèng",
-            "xiàng",
-            "yí yàng"
+            "qǐ fā",
+            "yí yàng",
+            "kǒu yǔ",
+            "gǔ lì"
           ]
         }
       ],
@@ -152,16 +152,16 @@
           "question": "What does 像 mean?",
           "correct": "Like / Similar to / Resemble",
           "options": [
-            "Like / Similar to / Resemble",
-            "Mother tongue / Native language",
-            "Accent / Pronunciation",
-            "Same / Alike / As...as"
+            "Impressive / Fierce / Awesome",
+            "Even more / More",
+            "Spoken language / Oral Chinese",
+            "Like / Similar to / Resemble"
           ],
           "option_pinyin": [
-            "xiàng",
-            "mǔ yǔ",
-            "kǒu yīn",
-            "yí yàng"
+            "lì hài",
+            "gèng",
+            "kǒu yǔ",
+            "xiàng"
           ]
         },
         {
@@ -169,86 +169,40 @@
           "question": "Fill in: Like / Similar to / Resemble",
           "correct": "像",
           "options": [
-            "一样",
-            "地道",
-            "更",
-            "像"
+            "像",
+            "语言",
+            "鼓励",
+            "一样"
           ],
           "option_pinyin": [
-            "yí yàng",
-            "dì dào",
-            "gèng",
-            "xiàng"
+            "xiàng",
+            "yǔ yán",
+            "gǔ lì",
+            "yí yàng"
           ],
-          "question_chinese": "她___她妈妈。",
-          "question_pinyin": "她___她妈妈。",
-          "question_english": "She is like her mother."
+          "question_chinese": "她跑得___风一样快，真赞！",
+          "question_pinyin": "她跑得___风一样快，真赞！",
+          "question_english": "She runs as fast as the wind — amazing!"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Like / Similar to / Resemble'?",
           "correct": "像",
           "options": [
-            "像",
-            "流利",
             "汉语",
-            "一样"
+            "像",
+            "口语",
+            "诗"
           ],
           "option_pinyin": [
-            "xiàng",
-            "liú lì",
             "hàn yǔ",
-            "yí yàng"
+            "xiàng",
+            "kǒu yǔ",
+            "shī"
           ]
         }
       ],
       "example_pinyin": "tā pǎo dé xiàng fēng yī yàng kuài zhēn zàn"
-    },
-    {
-      "id": "hsk3_l9_04",
-      "chinese": "还",
-      "pinyin": "hái",
-      "english": "Even more / Still / Also",
-      "part_of_speech": "adverb",
-      "example": "他的汉语比我还好，我要更努力学习。",
-      "translation": "His Chinese is even better than mine — I need to study even harder.",
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "What does 还 mean?",
-          "correct": "Even more / Still / Also",
-          "options": [
-            "To praise / Thumbs up / Great",
-            "Like / Similar to / Resemble",
-            "Accent / Pronunciation",
-            "Even more / Still / Also"
-          ],
-          "option_pinyin": [
-            "zàn",
-            "xiàng",
-            "kǒu yīn",
-            "hái"
-          ]
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'Even more / Still / Also'?",
-          "correct": "还",
-          "options": [
-            "厉害",
-            "地道",
-            "还",
-            "像"
-          ],
-          "option_pinyin": [
-            "lì hài",
-            "dì dào",
-            "hái",
-            "xiàng"
-          ]
-        }
-      ],
-      "example_pinyin": "tā de hàn yǔ bǐ wǒ hái hǎo wǒ yào gèng nǔ lì xué xí"
     },
     {
       "id": "hsk3_l9_05",
@@ -264,16 +218,16 @@
           "question": "What does 更 mean?",
           "correct": "Even more / More",
           "options": [
-            "Even more / Still / Also",
-            "To praise / Thumbs up / Great",
-            "Accent / Pronunciation",
-            "Even more / More"
+            "Authentic / Native-like",
+            "To encourage / Encouragement",
+            "Even more / More",
+            "Impressive / Fierce / Awesome"
           ],
           "option_pinyin": [
-            "hái",
-            "zàn",
-            "kǒu yīn",
-            "gèng"
+            "dì dào",
+            "gǔ lì",
+            "gèng",
+            "lì hài"
           ]
         },
         {
@@ -281,36 +235,36 @@
           "question": "Fill in: Even more / More",
           "correct": "更",
           "options": [
-            "口音",
-            "像",
-            "更",
-            "一样"
+            "赞",
+            "流利",
+            "一样",
+            "更"
           ],
           "option_pinyin": [
-            "kǒu yīn",
-            "xiàng",
-            "gèng",
-            "yí yàng"
+            "zàn",
+            "liú lì",
+            "yí yàng",
+            "gèng"
           ],
-          "question_chinese": "这本书___有意思。",
-          "question_pinyin": "这本书___有意思。",
-          "question_english": "This book is even more interesting."
+          "question_chinese": "他说得比我___流利，真厉害。",
+          "question_pinyin": "他说得比我___流利，真厉害。",
+          "question_english": "He speaks even more fluently than me — truly impressive."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Even more / More'?",
           "correct": "更",
           "options": [
-            "流利",
-            "口音",
-            "赞",
-            "更"
+            "语言",
+            "鼓励",
+            "更",
+            "一样"
           ],
           "option_pinyin": [
-            "liú lì",
-            "kǒu yīn",
-            "zàn",
-            "gèng"
+            "yǔ yán",
+            "gǔ lì",
+            "gèng",
+            "yí yàng"
           ]
         }
       ],
@@ -331,15 +285,15 @@
           "correct": "Fluent / Fluently",
           "options": [
             "Fluent / Fluently",
-            "To praise / Thumbs up / Great",
-            "Mother tongue / Native language",
-            "Same / Alike / As...as"
+            "Same / Alike / As...as",
+            "Accent / Pronunciation",
+            "To praise / Thumbs up / Great"
           ],
           "option_pinyin": [
             "liú lì",
-            "zàn",
-            "mǔ yǔ",
-            "yí yàng"
+            "yí yàng",
+            "kǒu yīn",
+            "zàn"
           ]
         },
         {
@@ -347,36 +301,36 @@
           "question": "Fill in: Fluent / Fluently",
           "correct": "流利",
           "options": [
-            "赞",
-            "更",
+            "口音",
+            "口语",
             "流利",
-            "一样"
+            "赞"
           ],
           "option_pinyin": [
-            "zàn",
-            "gèng",
+            "kǒu yīn",
+            "kǒu yǔ",
             "liú lì",
-            "yí yàng"
+            "zàn"
           ],
-          "question_chinese": "她说得很___。",
-          "question_pinyin": "她说得很___。",
-          "question_english": "She speaks very fluently."
+          "question_chinese": "她汉语说得很___。",
+          "question_pinyin": "她汉语说得很___。",
+          "question_english": "She speaks Chinese very fluently."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Fluent / Fluently'?",
           "correct": "流利",
           "options": [
-            "像",
+            "母语",
             "流利",
-            "口音",
-            "赞"
+            "一样",
+            "厉害"
           ],
           "option_pinyin": [
-            "xiàng",
+            "mǔ yǔ",
             "liú lì",
-            "kǒu yīn",
-            "zàn"
+            "yí yàng",
+            "lì hài"
           ]
         }
       ],
@@ -396,16 +350,16 @@
           "question": "What does 地道 mean?",
           "correct": "Authentic / Native-like",
           "options": [
-            "Even more / More",
-            "Accent / Pronunciation",
             "Authentic / Native-like",
-            "Even more / Still / Also"
+            "Mother tongue / Native language",
+            "Like / Similar to / Resemble",
+            "Poem / Poetry"
           ],
           "option_pinyin": [
-            "gèng",
-            "kǒu yīn",
             "dì dào",
-            "hái"
+            "mǔ yǔ",
+            "xiàng",
+            "shī"
           ]
         },
         {
@@ -413,36 +367,36 @@
           "question": "Fill in: Authentic / Native-like",
           "correct": "地道",
           "options": [
-            "像",
+            "赞",
+            "厉害",
             "口音",
-            "还",
             "地道"
           ],
           "option_pinyin": [
-            "xiàng",
+            "zàn",
+            "lì hài",
             "kǒu yīn",
-            "hái",
             "dì dào"
           ],
-          "question_chinese": "他的汉语很___。",
-          "question_pinyin": "他的汉语很___。",
-          "question_english": "His Chinese is very authentic."
+          "question_chinese": "你说得很___，像母语一样。",
+          "question_pinyin": "你说得很___，像母语一样。",
+          "question_english": "You speak very authentically — just like your mother tongue."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Authentic / Native-like'?",
           "correct": "地道",
           "options": [
-            "厉害",
-            "更",
+            "进步",
+            "像",
             "地道",
-            "像"
+            "更"
           ],
           "option_pinyin": [
-            "lì hài",
-            "gèng",
+            "jìn bù",
+            "xiàng",
             "dì dào",
-            "xiàng"
+            "gèng"
           ]
         }
       ],
@@ -462,16 +416,16 @@
           "question": "What does 厉害 mean?",
           "correct": "Impressive / Fierce / Awesome",
           "options": [
-            "Impressive / Fierce / Awesome",
-            "Fluent / Fluently",
-            "Like / Similar to / Resemble",
-            "Mandarin Chinese (language)"
+            "Accent / Pronunciation",
+            "To inspire / To enlighten / Inspiration",
+            "Poem / Poetry",
+            "Impressive / Fierce / Awesome"
           ],
           "option_pinyin": [
-            "lì hài",
-            "liú lì",
-            "xiàng",
-            "hàn yǔ"
+            "kǒu yīn",
+            "qǐ fā",
+            "shī",
+            "lì hài"
           ]
         },
         {
@@ -479,36 +433,36 @@
           "question": "Fill in: Impressive / Fierce / Awesome",
           "correct": "厉害",
           "options": [
-            "赞",
             "厉害",
-            "一样",
-            "还"
+            "汉语",
+            "口语",
+            "一样"
           ],
           "option_pinyin": [
-            "zàn",
             "lì hài",
-            "yí yàng",
-            "hái"
+            "hàn yǔ",
+            "kǒu yǔ",
+            "yí yàng"
           ],
-          "question_chinese": "你真___！",
-          "question_pinyin": "你真___！",
-          "question_english": "You're really impressive!"
+          "question_chinese": "他说得比我更流利，真___。",
+          "question_pinyin": "他说得比我更流利，真___。",
+          "question_english": "He speaks even more fluently than me — truly impressive."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Impressive / Fierce / Awesome'?",
           "correct": "厉害",
           "options": [
-            "汉语",
-            "厉害",
-            "地道",
-            "一样"
+            "母语",
+            "进步",
+            "口语",
+            "厉害"
           ],
           "option_pinyin": [
-            "hàn yǔ",
-            "lì hài",
-            "dì dào",
-            "yí yàng"
+            "mǔ yǔ",
+            "jìn bù",
+            "kǒu yǔ",
+            "lì hài"
           ]
         }
       ],
@@ -528,16 +482,16 @@
           "question": "What does 进步 mean?",
           "correct": "Progress / To improve",
           "options": [
-            "Even more / More",
-            "Same / Alike / As...as",
-            "Fluent / Fluently",
-            "Progress / To improve"
+            "Poem / Poetry",
+            "Progress / To improve",
+            "To inspire / To enlighten / Inspiration",
+            "Impressive / Fierce / Awesome"
           ],
           "option_pinyin": [
-            "gèng",
-            "yí yàng",
-            "liú lì",
-            "jìn bù"
+            "shī",
+            "jìn bù",
+            "qǐ fā",
+            "lì hài"
           ]
         },
         {
@@ -545,36 +499,36 @@
           "question": "Fill in: Progress / To improve",
           "correct": "进步",
           "options": [
+            "启发",
             "进步",
-            "还",
-            "母语",
-            "赞"
+            "口音",
+            "地道"
           ],
           "option_pinyin": [
+            "qǐ fā",
             "jìn bù",
-            "hái",
-            "mǔ yǔ",
-            "zàn"
+            "kǒu yīn",
+            "dì dào"
           ],
-          "question_chinese": "你___了很多。",
-          "question_pinyin": "你___了很多。",
-          "question_english": "You've improved a lot."
+          "question_chinese": "她的___很大，已经没有口音了。",
+          "question_pinyin": "她的___很大，已经没有口音了。",
+          "question_english": "Her progress is huge — she already has no accent."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Progress / To improve'?",
           "correct": "进步",
           "options": [
-            "地道",
-            "口音",
             "进步",
-            "更"
+            "赞",
+            "更",
+            "语言"
           ],
           "option_pinyin": [
-            "dì dào",
-            "kǒu yīn",
             "jìn bù",
-            "gèng"
+            "zàn",
+            "gèng",
+            "yǔ yán"
           ]
         }
       ],
@@ -594,16 +548,16 @@
           "question": "What does 赞 mean?",
           "correct": "To praise / Thumbs up / Great",
           "options": [
-            "To praise / Thumbs up / Great",
-            "Mandarin Chinese (language)",
-            "Like / Similar to / Resemble",
-            "Progress / To improve"
+            "To inspire / To enlighten / Inspiration",
+            "Even more / More",
+            "Fluent / Fluently",
+            "To praise / Thumbs up / Great"
           ],
           "option_pinyin": [
-            "zàn",
-            "hàn yǔ",
-            "xiàng",
-            "jìn bù"
+            "qǐ fā",
+            "gèng",
+            "liú lì",
+            "zàn"
           ]
         },
         {
@@ -611,36 +565,36 @@
           "question": "Fill in: To praise / Thumbs up / Great",
           "correct": "赞",
           "options": [
-            "地道",
-            "像",
-            "厉害",
-            "赞"
+            "汉语",
+            "赞",
+            "流利",
+            "母语"
           ],
           "option_pinyin": [
-            "dì dào",
-            "xiàng",
-            "lì hài",
-            "zàn"
+            "hàn yǔ",
+            "zàn",
+            "liú lì",
+            "mǔ yǔ"
           ],
-          "question_chinese": "这个菜真___！",
-          "question_pinyin": "这个菜真___！",
-          "question_english": "This dish is really great!"
+          "question_chinese": "你进步很大，已经说得很地道了，真___！",
+          "question_pinyin": "你进步很大，已经说得很地道了，真___！",
+          "question_english": "Your progress is huge — you already speak very authentically. Amazing!"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To praise / Thumbs up / Great'?",
           "correct": "赞",
           "options": [
-            "流利",
+            "语言",
             "赞",
-            "还",
-            "一样"
+            "一样",
+            "汉语"
           ],
           "option_pinyin": [
-            "liú lì",
+            "yǔ yán",
             "zàn",
-            "hái",
-            "yí yàng"
+            "yí yàng",
+            "hàn yǔ"
           ]
         }
       ],
@@ -660,16 +614,16 @@
           "question": "What does 口音 mean?",
           "correct": "Accent / Pronunciation",
           "options": [
-            "Fluent / Fluently",
-            "Even more / More",
-            "Impressive / Fierce / Awesome",
-            "Accent / Pronunciation"
+            "To praise / Thumbs up / Great",
+            "Progress / To improve",
+            "Accent / Pronunciation",
+            "To inspire / To enlighten / Inspiration"
           ],
           "option_pinyin": [
-            "liú lì",
-            "gèng",
-            "lì hài",
-            "kǒu yīn"
+            "zàn",
+            "jìn bù",
+            "kǒu yīn",
+            "qǐ fā"
           ]
         },
         {
@@ -677,36 +631,36 @@
           "question": "Fill in: Accent / Pronunciation",
           "correct": "口音",
           "options": [
-            "一样",
-            "汉语",
-            "更",
-            "口音"
+            "口音",
+            "诗",
+            "流利",
+            "鼓励"
           ],
           "option_pinyin": [
-            "yí yàng",
-            "hàn yǔ",
-            "gèng",
-            "kǒu yīn"
+            "kǒu yīn",
+            "shī",
+            "liú lì",
+            "gǔ lì"
           ],
-          "question_chinese": "他有外国___。",
-          "question_pinyin": "他有外国___。",
-          "question_english": "He has a foreign accent."
+          "question_chinese": "她的进步很大，已经没有___了。",
+          "question_pinyin": "她的进步很大，已经没有___了。",
+          "question_english": "Her progress is huge — she already has no accent."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Accent / Pronunciation'?",
           "correct": "口音",
           "options": [
-            "汉语",
-            "厉害",
+            "像",
             "口音",
-            "地道"
+            "更",
+            "一样"
           ],
           "option_pinyin": [
-            "hàn yǔ",
-            "lì hài",
+            "xiàng",
             "kǒu yīn",
-            "dì dào"
+            "gèng",
+            "yí yàng"
           ]
         }
       ],
@@ -726,16 +680,16 @@
           "question": "What does 母语 mean?",
           "correct": "Mother tongue / Native language",
           "options": [
-            "To praise / Thumbs up / Great",
-            "Like / Similar to / Resemble",
-            "Mother tongue / Native language",
-            "Fluent / Fluently"
+            "Accent / Pronunciation",
+            "Fluent / Fluently",
+            "Spoken language / Oral Chinese",
+            "Mother tongue / Native language"
           ],
           "option_pinyin": [
-            "zàn",
-            "xiàng",
-            "mǔ yǔ",
-            "liú lì"
+            "kǒu yīn",
+            "liú lì",
+            "kǒu yǔ",
+            "mǔ yǔ"
           ]
         },
         {
@@ -743,40 +697,370 @@
           "question": "Fill in: Mother tongue / Native language",
           "correct": "母语",
           "options": [
-            "像",
-            "流利",
+            "赞",
+            "地道",
             "母语",
-            "一样"
+            "启发"
           ],
           "option_pinyin": [
-            "xiàng",
-            "liú lì",
+            "zàn",
+            "dì dào",
             "mǔ yǔ",
-            "yí yàng"
+            "qǐ fā"
           ],
-          "question_chinese": "汉语是我的___。",
-          "question_pinyin": "汉语是我的___。",
-          "question_english": "Chinese is my mother tongue."
+          "question_chinese": "你说得很地道，像___一样。",
+          "question_pinyin": "你说得很地道，像___一样。",
+          "question_english": "You speak very authentically — just like your mother tongue."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Mother tongue / Native language'?",
           "correct": "母语",
           "options": [
-            "赞",
-            "进步",
-            "母语",
-            "一样"
+            "像",
+            "口语",
+            "启发",
+            "母语"
           ],
           "option_pinyin": [
-            "zàn",
-            "jìn bù",
-            "mǔ yǔ",
-            "yí yàng"
+            "xiàng",
+            "kǒu yǔ",
+            "qǐ fā",
+            "mǔ yǔ"
           ]
         }
       ],
       "example_pinyin": "nǐ shuō dé hěn dì dào xiàng mǔ yǔ yī yàng"
+    },
+    {
+      "id": "hsk3_l9_13",
+      "chinese": "语言",
+      "pinyin": "yǔ yán",
+      "english": "Language",
+      "part_of_speech": "noun",
+      "example": "汉语是一门有趣的语言。",
+      "translation": "Mandarin is an interesting language.",
+      "example_pinyin": "hàn yǔ shì yī mén yǒu qù de yǔ yán",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 语言 mean?",
+          "correct": "Language",
+          "options": [
+            "Language",
+            "Accent / Pronunciation",
+            "Impressive / Fierce / Awesome",
+            "Fluent / Fluently"
+          ],
+          "option_pinyin": [
+            "yǔ yán",
+            "kǒu yīn",
+            "lì hài",
+            "liú lì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Language",
+          "correct": "语言",
+          "options": [
+            "汉语",
+            "语言",
+            "流利",
+            "赞"
+          ],
+          "option_pinyin": [
+            "hàn yǔ",
+            "yǔ yán",
+            "liú lì",
+            "zàn"
+          ],
+          "question_chinese": "汉语是一门有趣的___。",
+          "question_pinyin": "汉语是一门有趣的___。",
+          "question_english": "Mandarin is an interesting language."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Language'?",
+          "correct": "语言",
+          "options": [
+            "口音",
+            "母语",
+            "语言",
+            "赞"
+          ],
+          "option_pinyin": [
+            "kǒu yīn",
+            "mǔ yǔ",
+            "yǔ yán",
+            "zàn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l9_14",
+      "chinese": "口语",
+      "pinyin": "kǒu yǔ",
+      "english": "Spoken language / Oral Chinese",
+      "part_of_speech": "noun",
+      "example": "他的汉语口语非常流利。",
+      "translation": "His spoken Chinese is very fluent.",
+      "example_pinyin": "tā de hàn yǔ kǒu yǔ fēi cháng liú lì",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 口语 mean?",
+          "correct": "Spoken language / Oral Chinese",
+          "options": [
+            "Spoken language / Oral Chinese",
+            "Mother tongue / Native language",
+            "Same / Alike / As...as",
+            "To encourage / Encouragement"
+          ],
+          "option_pinyin": [
+            "kǒu yǔ",
+            "mǔ yǔ",
+            "yí yàng",
+            "gǔ lì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Spoken language / Oral Chinese",
+          "correct": "口语",
+          "options": [
+            "进步",
+            "口语",
+            "地道",
+            "厉害"
+          ],
+          "option_pinyin": [
+            "jìn bù",
+            "kǒu yǔ",
+            "dì dào",
+            "lì hài"
+          ],
+          "question_chinese": "他的汉语___非常流利。",
+          "question_pinyin": "他的汉语___非常流利。",
+          "question_english": "His spoken Chinese is very fluent."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Spoken language / Oral Chinese'?",
+          "correct": "口语",
+          "options": [
+            "口语",
+            "启发",
+            "母语",
+            "更"
+          ],
+          "option_pinyin": [
+            "kǒu yǔ",
+            "qǐ fā",
+            "mǔ yǔ",
+            "gèng"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l9_15",
+      "chinese": "鼓励",
+      "pinyin": "gǔ lì",
+      "english": "To encourage / Encouragement",
+      "part_of_speech": "verb/noun",
+      "example": "你的鼓励让我很开心。",
+      "translation": "Your encouragement makes me very happy.",
+      "example_pinyin": "nǐ de gǔ lì ràng wǒ hěn kāi xīn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 鼓励 mean?",
+          "correct": "To encourage / Encouragement",
+          "options": [
+            "Accent / Pronunciation",
+            "Even more / More",
+            "Mandarin Chinese (language)",
+            "To encourage / Encouragement"
+          ],
+          "option_pinyin": [
+            "kǒu yīn",
+            "gèng",
+            "hàn yǔ",
+            "gǔ lì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To encourage / Encouragement",
+          "correct": "鼓励",
+          "options": [
+            "赞",
+            "鼓励",
+            "母语",
+            "厉害"
+          ],
+          "option_pinyin": [
+            "zàn",
+            "gǔ lì",
+            "mǔ yǔ",
+            "lì hài"
+          ],
+          "question_chinese": "你的___让我很开心。",
+          "question_pinyin": "你的___让我很开心。",
+          "question_english": "Your encouragement makes me very happy."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To encourage / Encouragement'?",
+          "correct": "鼓励",
+          "options": [
+            "地道",
+            "进步",
+            "像",
+            "鼓励"
+          ],
+          "option_pinyin": [
+            "dì dào",
+            "jìn bù",
+            "xiàng",
+            "gǔ lì"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l9_16",
+      "chinese": "诗",
+      "pinyin": "shī",
+      "english": "Poem / Poetry",
+      "part_of_speech": "noun",
+      "example": "她写的句子像诗一样美。",
+      "translation": "The sentences she writes are as beautiful as poetry.",
+      "example_pinyin": "tā xiě de jù zi xiàng shī yī yàng měi",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 诗 mean?",
+          "correct": "Poem / Poetry",
+          "options": [
+            "To praise / Thumbs up / Great",
+            "Poem / Poetry",
+            "Like / Similar to / Resemble",
+            "Progress / To improve"
+          ],
+          "option_pinyin": [
+            "zàn",
+            "shī",
+            "xiàng",
+            "jìn bù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Poem / Poetry",
+          "correct": "诗",
+          "options": [
+            "诗",
+            "进步",
+            "一样",
+            "赞"
+          ],
+          "option_pinyin": [
+            "shī",
+            "jìn bù",
+            "yí yàng",
+            "zàn"
+          ],
+          "question_chinese": "她写的句子像___一样美。",
+          "question_pinyin": "她写的句子像___一样美。",
+          "question_english": "The sentences she writes are as beautiful as poetry."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Poem / Poetry'?",
+          "correct": "诗",
+          "options": [
+            "诗",
+            "口语",
+            "鼓励",
+            "地道"
+          ],
+          "option_pinyin": [
+            "shī",
+            "kǒu yǔ",
+            "gǔ lì",
+            "dì dào"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l9_17",
+      "chinese": "启发",
+      "pinyin": "qǐ fā",
+      "english": "To inspire / To enlighten / Inspiration",
+      "part_of_speech": "verb/noun",
+      "example": "这本书让我很受启发。",
+      "translation": "This book is very inspiring for me.",
+      "example_pinyin": "zhè běn shū ràng wǒ hěn shòu qǐ fā",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 启发 mean?",
+          "correct": "To inspire / To enlighten / Inspiration",
+          "options": [
+            "Language",
+            "Even more / More",
+            "Fluent / Fluently",
+            "To inspire / To enlighten / Inspiration"
+          ],
+          "option_pinyin": [
+            "yǔ yán",
+            "gèng",
+            "liú lì",
+            "qǐ fā"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To inspire / To enlighten / Inspiration",
+          "correct": "启发",
+          "options": [
+            "口语",
+            "启发",
+            "一样",
+            "流利"
+          ],
+          "option_pinyin": [
+            "kǒu yǔ",
+            "qǐ fā",
+            "yí yàng",
+            "liú lì"
+          ],
+          "question_chinese": "这本书让我很受___。",
+          "question_pinyin": "这本书让我很受___。",
+          "question_english": "This book is very inspiring for me."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To inspire / To enlighten / Inspiration'?",
+          "correct": "启发",
+          "options": [
+            "启发",
+            "像",
+            "厉害",
+            "流利"
+          ],
+          "option_pinyin": [
+            "qǐ fā",
+            "xiàng",
+            "lì hài",
+            "liú lì"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l9_p01",

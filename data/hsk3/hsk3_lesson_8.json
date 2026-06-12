@@ -20,16 +20,16 @@
           "question": "What does 跟 mean?",
           "correct": "To follow / With / And",
           "options": [
-            "As soon as / Once...then",
-            "Anyway / In any case",
             "To follow / With / And",
-            "No matter (what/how/who)"
+            "No matter (what/how/who)",
+            "To believe / To trust",
+            "To decide / Decision"
           ],
           "option_pinyin": [
-            "yī…jiù…",
-            "fǎn zhèng",
             "gēn",
-            "wú lùn"
+            "wú lùn",
+            "xiāng xìn",
+            "jué dìng"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: To follow / With / And",
           "correct": "跟",
           "options": [
+            "哪怕",
             "跟",
-            "决定",
-            "肯定",
-            "一…就…"
+            "相信",
+            "不管"
           ],
           "option_pinyin": [
+            "nǎ pà",
             "gēn",
-            "jué dìng",
-            "kěn dìng",
-            "yī…jiù…"
+            "xiāng xìn",
+            "bù guǎn"
           ],
-          "question_chinese": "我___你一起去。",
-          "question_pinyin": "我___你一起去。",
-          "question_english": "I'll go with you."
+          "question_chinese": "你去哪儿，我就___去哪儿。",
+          "question_pinyin": "你去哪儿，我就___去哪儿。",
+          "question_english": "Wherever you go, I'll follow."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To follow / With / And'?",
           "correct": "跟",
           "options": [
-            "选择",
-            "跟",
+            "哪怕",
             "只要",
-            "随便"
+            "选择",
+            "跟"
           ],
           "option_pinyin": [
-            "xuǎn zé",
-            "gēn",
+            "nǎ pà",
             "zhǐ yào",
-            "suí biàn"
+            "xuǎn zé",
+            "gēn"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 不管 mean?",
           "correct": "No matter / Regardless of",
           "options": [
-            "To decide / Decision",
-            "As long as / So long as",
-            "No matter (what/how/who)",
-            "No matter / Regardless of"
+            "No matter / Regardless of",
+            "As soon as / Once...then",
+            "Even if / Even though",
+            "Anyway / In any case"
           ],
           "option_pinyin": [
-            "jué dìng",
-            "zhǐ yào",
-            "wú lùn",
-            "bù guǎn"
+            "bù guǎn",
+            "yī…jiù…",
+            "nǎ pà",
+            "fǎn zhèng"
           ]
         },
         {
@@ -103,20 +103,20 @@
           "question": "Fill in: No matter / Regardless of",
           "correct": "不管",
           "options": [
-            "不管",
-            "决定",
-            "无论",
-            "跟"
+            "反正",
+            "跟",
+            "肯定",
+            "不管"
           ],
           "option_pinyin": [
-            "bù guǎn",
-            "jué dìng",
-            "wú lùn",
-            "gēn"
+            "fǎn zhèng",
+            "gēn",
+            "kěn dìng",
+            "bù guǎn"
           ],
-          "question_chinese": "___天气好不好，我都去。",
-          "question_pinyin": "___天气好不好，我都去。",
-          "question_english": "Regardless of whether the weather is good, I'll go."
+          "question_chinese": "___天气怎样，我们都去。",
+          "question_pinyin": "___天气怎样，我们都去。",
+          "question_english": "No matter what the weather is like, we'll go."
         },
         {
           "type": "multiple_choice",
@@ -124,15 +124,15 @@
           "correct": "不管",
           "options": [
             "不管",
-            "反正",
-            "只要",
-            "无论"
+            "肯定",
+            "随便",
+            "支持"
           ],
           "option_pinyin": [
             "bù guǎn",
-            "fǎn zhèng",
-            "zhǐ yào",
-            "wú lùn"
+            "kěn dìng",
+            "suí biàn",
+            "zhī chí"
           ]
         }
       ],
@@ -152,16 +152,16 @@
           "question": "What does 只要 mean?",
           "correct": "As long as / So long as",
           "options": [
-            "To follow / With / And",
-            "As long as / So long as",
-            "No matter / Regardless of",
-            "To choose / Choice"
+            "As you like / Casual / Careless",
+            "To believe / To trust",
+            "No matter (what/how/who)",
+            "As long as / So long as"
           ],
           "option_pinyin": [
-            "gēn",
-            "zhǐ yào",
-            "bù guǎn",
-            "xuǎn zé"
+            "suí biàn",
+            "xiāng xìn",
+            "wú lùn",
+            "zhǐ yào"
           ]
         },
         {
@@ -169,36 +169,36 @@
           "question": "Fill in: As long as / So long as",
           "correct": "只要",
           "options": [
-            "一…就…",
-            "跟",
             "只要",
-            "反正"
+            "支持",
+            "随便",
+            "肯定"
           ],
           "option_pinyin": [
-            "yī…jiù…",
-            "gēn",
             "zhǐ yào",
-            "fǎn zhèng"
+            "zhī chí",
+            "suí biàn",
+            "kěn dìng"
           ],
-          "question_chinese": "___你努力，就能成功。",
-          "question_pinyin": "___你努力，就能成功。",
-          "question_english": "As long as you work hard, you can succeed."
+          "question_chinese": "___你高兴，我做什么都可以。",
+          "question_pinyin": "___你高兴，我做什么都可以。",
+          "question_english": "As long as you're happy, I can do anything."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'As long as / So long as'?",
           "correct": "只要",
           "options": [
-            "跟",
             "哪怕",
-            "不管",
-            "只要"
+            "一…就…",
+            "只要",
+            "决定"
           ],
           "option_pinyin": [
-            "gēn",
             "nǎ pà",
-            "bù guǎn",
-            "zhǐ yào"
+            "yī…jiù…",
+            "zhǐ yào",
+            "jué dìng"
           ]
         }
       ],
@@ -218,16 +218,16 @@
           "question": "What does 肯定 mean?",
           "correct": "Definitely / Certainly",
           "options": [
-            "Definitely / Certainly",
-            "As soon as / Once...then",
             "As long as / So long as",
-            "Anyway / In any case"
+            "Definitely / Certainly",
+            "Even if / Even though",
+            "To follow / With / And"
           ],
           "option_pinyin": [
-            "kěn dìng",
-            "yī…jiù…",
             "zhǐ yào",
-            "fǎn zhèng"
+            "kěn dìng",
+            "nǎ pà",
+            "gēn"
           ]
         },
         {
@@ -235,35 +235,35 @@
           "question": "Fill in: Definitely / Certainly",
           "correct": "肯定",
           "options": [
-            "哪怕",
+            "肯定",
             "只要",
-            "选择",
-            "肯定"
+            "决定",
+            "无论"
           ],
           "option_pinyin": [
-            "nǎ pà",
+            "kěn dìng",
             "zhǐ yào",
-            "xuǎn zé",
-            "kěn dìng"
+            "jué dìng",
+            "wú lùn"
           ],
-          "question_chinese": "他___会来的。",
-          "question_pinyin": "他___会来的。",
-          "question_english": "He will definitely come."
+          "question_chinese": "跟你一起去，___很开心。",
+          "question_pinyin": "跟你一起去，___很开心。",
+          "question_english": "Going with you is definitely fun."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Definitely / Certainly'?",
           "correct": "肯定",
           "options": [
-            "跟",
-            "决定",
-            "只要",
+            "一…就…",
+            "反正",
+            "相信",
             "肯定"
           ],
           "option_pinyin": [
-            "gēn",
-            "jué dìng",
-            "zhǐ yào",
+            "yī…jiù…",
+            "fǎn zhèng",
+            "xiāng xìn",
             "kěn dìng"
           ]
         }
@@ -284,16 +284,16 @@
           "question": "What does 随便 mean?",
           "correct": "As you like / Casual / Careless",
           "options": [
-            "To choose / Choice",
+            "No matter / Regardless of",
+            "Anyway / In any case",
             "As you like / Casual / Careless",
-            "Even if / Even though",
-            "No matter / Regardless of"
+            "Definitely / Certainly"
           ],
           "option_pinyin": [
-            "xuǎn zé",
+            "bù guǎn",
+            "fǎn zhèng",
             "suí biàn",
-            "nǎ pà",
-            "bù guǎn"
+            "kěn dìng"
           ]
         },
         {
@@ -302,34 +302,34 @@
           "correct": "随便",
           "options": [
             "只要",
-            "无论",
-            "随便",
-            "决定"
+            "相信",
+            "肯定",
+            "随便"
           ],
           "option_pinyin": [
             "zhǐ yào",
-            "wú lùn",
-            "suí biàn",
-            "jué dìng"
+            "xiāng xìn",
+            "kěn dìng",
+            "suí biàn"
           ],
-          "question_chinese": "___，你来决定吧。",
-          "question_pinyin": "___，你来决定吧。",
-          "question_english": "Whatever, you decide."
+          "question_chinese": "反正___，你决定吧。",
+          "question_pinyin": "反正___，你决定吧。",
+          "question_english": "Anyway, whatever — you decide."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'As you like / Casual / Careless'?",
           "correct": "随便",
           "options": [
-            "跟",
-            "无论",
-            "只要",
+            "一…就…",
+            "不管",
+            "决定",
             "随便"
           ],
           "option_pinyin": [
-            "gēn",
-            "wú lùn",
-            "zhǐ yào",
+            "yī…jiù…",
+            "bù guǎn",
+            "jué dìng",
             "suí biàn"
           ]
         }
@@ -350,16 +350,16 @@
           "question": "What does 反正 mean?",
           "correct": "Anyway / In any case",
           "options": [
+            "As long as / So long as",
             "Anyway / In any case",
             "To follow / With / And",
-            "As long as / So long as",
-            "No matter (what/how/who)"
+            "To support / Support"
           ],
           "option_pinyin": [
+            "zhǐ yào",
             "fǎn zhèng",
             "gēn",
-            "zhǐ yào",
-            "wú lùn"
+            "zhī chí"
           ]
         },
         {
@@ -367,36 +367,36 @@
           "question": "Fill in: Anyway / In any case",
           "correct": "反正",
           "options": [
-            "不管",
+            "随便",
+            "选择",
             "反正",
-            "无论",
-            "哪怕"
+            "跟"
           ],
           "option_pinyin": [
-            "bù guǎn",
+            "suí biàn",
+            "xuǎn zé",
             "fǎn zhèng",
-            "wú lùn",
-            "nǎ pà"
+            "gēn"
           ],
-          "question_chinese": "___我不去了。",
-          "question_pinyin": "___我不去了。",
-          "question_english": "Anyway, I'm not going."
+          "question_chinese": "___你一决定，就马上告诉我。",
+          "question_pinyin": "___你一决定，就马上告诉我。",
+          "question_english": "Anyway, as soon as you decide, tell me right away."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Anyway / In any case'?",
           "correct": "反正",
           "options": [
-            "一…就…",
-            "不管",
             "随便",
-            "反正"
+            "反正",
+            "相信",
+            "哪怕"
           ],
           "option_pinyin": [
-            "yī…jiù…",
-            "bù guǎn",
             "suí biàn",
-            "fǎn zhèng"
+            "fǎn zhèng",
+            "xiāng xìn",
+            "nǎ pà"
           ]
         }
       ],
@@ -423,16 +423,16 @@
           "question": "What does 无论 mean?",
           "correct": "No matter (what/how/who)",
           "options": [
+            "Definitely / Certainly",
+            "Even if / Even though",
             "As long as / So long as",
-            "Anyway / In any case",
-            "No matter (what/how/who)",
-            "No matter / Regardless of"
+            "No matter (what/how/who)"
           ],
           "option_pinyin": [
+            "kěn dìng",
+            "nǎ pà",
             "zhǐ yào",
-            "fǎn zhèng",
-            "wú lùn",
-            "bù guǎn"
+            "wú lùn"
           ]
         },
         {
@@ -440,36 +440,36 @@
           "question": "Fill in: No matter (what/how/who)",
           "correct": "无论",
           "options": [
-            "只要",
-            "跟",
+            "肯定",
             "无论",
-            "肯定"
+            "支持",
+            "只要"
           ],
           "option_pinyin": [
-            "zhǐ yào",
-            "gēn",
+            "kěn dìng",
             "wú lùn",
-            "kěn dìng"
+            "zhī chí",
+            "zhǐ yào"
           ],
-          "question_chinese": "___多难，我都坚持。",
-          "question_pinyin": "___多难，我都坚持。",
-          "question_english": "No matter how hard, I will persist."
+          "question_chinese": "___如何，我都会跟你一起去。",
+          "question_pinyin": "___如何，我都会跟你一起去。",
+          "question_english": "No matter what, I will go with you."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'No matter (what/how/who)'?",
           "correct": "无论",
           "options": [
-            "无论",
-            "反正",
             "哪怕",
-            "随便"
+            "支持",
+            "相信",
+            "无论"
           ],
           "option_pinyin": [
-            "wú lùn",
-            "fǎn zhèng",
             "nǎ pà",
-            "suí biàn"
+            "zhī chí",
+            "xiāng xìn",
+            "wú lùn"
           ]
         }
       ],
@@ -489,16 +489,16 @@
           "question": "What does 决定 mean?",
           "correct": "To decide / Decision",
           "options": [
+            "Definitely / Certainly",
+            "No matter (what/how/who)",
             "As you like / Casual / Careless",
-            "As long as / So long as",
-            "To decide / Decision",
-            "Even if / Even though"
+            "To decide / Decision"
           ],
           "option_pinyin": [
+            "kěn dìng",
+            "wú lùn",
             "suí biàn",
-            "zhǐ yào",
-            "jué dìng",
-            "nǎ pà"
+            "jué dìng"
           ]
         },
         {
@@ -506,20 +506,20 @@
           "question": "Fill in: To decide / Decision",
           "correct": "决定",
           "options": [
+            "相信",
             "跟",
-            "随便",
-            "决定",
-            "不管"
+            "一…就…",
+            "决定"
           ],
           "option_pinyin": [
+            "xiāng xìn",
             "gēn",
-            "suí biàn",
-            "jué dìng",
-            "bù guǎn"
+            "yī…jiù…",
+            "jué dìng"
           ],
-          "question_chinese": "我们___去旅游。",
-          "question_pinyin": "我们___去旅游。",
-          "question_english": "We decided to go traveling."
+          "question_chinese": "今天去哪儿玩？你___吧。",
+          "question_pinyin": "今天去哪儿玩？你___吧。",
+          "question_english": "Where should we go today? You decide."
         },
         {
           "type": "multiple_choice",
@@ -527,15 +527,15 @@
           "correct": "决定",
           "options": [
             "决定",
-            "一…就…",
-            "肯定",
-            "无论"
+            "只要",
+            "随便",
+            "跟"
           ],
           "option_pinyin": [
             "jué dìng",
-            "yī…jiù…",
-            "kěn dìng",
-            "wú lùn"
+            "zhǐ yào",
+            "suí biàn",
+            "gēn"
           ]
         }
       ],
@@ -555,16 +555,16 @@
           "question": "What does 选择 mean?",
           "correct": "To choose / Choice",
           "options": [
-            "To decide / Decision",
-            "As long as / So long as",
-            "Anyway / In any case",
-            "To choose / Choice"
+            "To choose / Choice",
+            "To follow / With / And",
+            "To support / Support",
+            "To decide / Decision"
           ],
           "option_pinyin": [
-            "jué dìng",
-            "zhǐ yào",
-            "fǎn zhèng",
-            "xuǎn zé"
+            "xuǎn zé",
+            "gēn",
+            "zhī chí",
+            "jué dìng"
           ]
         },
         {
@@ -572,36 +572,36 @@
           "question": "Fill in: To choose / Choice",
           "correct": "选择",
           "options": [
-            "哪怕",
+            "决定",
             "选择",
-            "跟",
+            "无论",
             "随便"
           ],
           "option_pinyin": [
-            "nǎ pà",
+            "jué dìng",
             "xuǎn zé",
-            "gēn",
+            "wú lùn",
             "suí biàn"
           ],
-          "question_chinese": "你可以___你想要的。",
-          "question_pinyin": "你可以___你想要的。",
-          "question_english": "You can choose what you want."
+          "question_chinese": "我不知道___哪个工作，怎么办？",
+          "question_pinyin": "我不知道___哪个工作，怎么办？",
+          "question_english": "I don't know which job to choose — what should I do?"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To choose / Choice'?",
           "correct": "选择",
           "options": [
+            "跟",
             "选择",
-            "哪怕",
-            "决定",
-            "无论"
+            "无论",
+            "决定"
           ],
           "option_pinyin": [
+            "gēn",
             "xuǎn zé",
-            "nǎ pà",
-            "jué dìng",
-            "wú lùn"
+            "wú lùn",
+            "jué dìng"
           ]
         }
       ],
@@ -623,14 +623,14 @@
           "options": [
             "To decide / Decision",
             "To choose / Choice",
-            "Even if / Even though",
-            "No matter (what/how/who)"
+            "To believe / To trust",
+            "Even if / Even though"
           ],
           "option_pinyin": [
             "jué dìng",
             "xuǎn zé",
-            "nǎ pà",
-            "wú lùn"
+            "xiāng xìn",
+            "nǎ pà"
           ]
         },
         {
@@ -638,36 +638,36 @@
           "question": "Fill in: Even if / Even though",
           "correct": "哪怕",
           "options": [
+            "随便",
             "哪怕",
-            "肯定",
-            "决定",
-            "不管"
+            "相信",
+            "无论"
           ],
           "option_pinyin": [
+            "suí biàn",
             "nǎ pà",
-            "kěn dìng",
-            "jué dìng",
-            "bù guǎn"
+            "xiāng xìn",
+            "wú lùn"
           ],
-          "question_chinese": "___下雨，我也要去。",
-          "question_pinyin": "___下雨，我也要去。",
-          "question_english": "Even if it rains, I'll go."
+          "question_chinese": "___工资少一点，只要工作有意思就好。",
+          "question_pinyin": "___工资少一点，只要工作有意思就好。",
+          "question_english": "Even if the pay is a little lower, as long as the work is interesting, that's fine."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Even if / Even though'?",
           "correct": "哪怕",
           "options": [
-            "跟",
+            "肯定",
             "随便",
-            "只要",
-            "哪怕"
+            "哪怕",
+            "无论"
           ],
           "option_pinyin": [
-            "gēn",
+            "kěn dìng",
             "suí biàn",
-            "zhǐ yào",
-            "nǎ pà"
+            "nǎ pà",
+            "wú lùn"
           ]
         }
       ],
@@ -687,16 +687,16 @@
           "question": "What does 一…就… mean?",
           "correct": "As soon as / Once...then",
           "options": [
-            "Definitely / Certainly",
-            "Even if / Even though",
-            "Anyway / In any case",
-            "As soon as / Once...then"
+            "To choose / Choice",
+            "As soon as / Once...then",
+            "To believe / To trust",
+            "Definitely / Certainly"
           ],
           "option_pinyin": [
-            "kěn dìng",
-            "nǎ pà",
-            "fǎn zhèng",
-            "yī…jiù…"
+            "xuǎn zé",
+            "yī…jiù…",
+            "xiāng xìn",
+            "kěn dìng"
           ]
         },
         {
@@ -704,20 +704,20 @@
           "question": "Fill in: As soon as / Once...then",
           "correct": "一…就…",
           "options": [
-            "随便",
             "选择",
-            "一…就…",
-            "决定"
+            "支持",
+            "随便",
+            "一…就…"
           ],
           "option_pinyin": [
-            "suí biàn",
             "xuǎn zé",
-            "yī…jiù…",
-            "jué dìng"
+            "zhī chí",
+            "suí biàn",
+            "yī…jiù…"
           ],
-          "question_chinese": "我 ___ 回家 ___ 睡觉。",
-          "question_pinyin": "我 ___ 回家 ___ 睡觉。",
-          "question_english": "As soon as I get home, I sleep."
+          "question_chinese": "___。",
+          "question_pinyin": "___。",
+          "question_english": "As soon as / Once...then"
         },
         {
           "type": "multiple_choice",
@@ -725,19 +725,151 @@
           "correct": "一…就…",
           "options": [
             "一…就…",
+            "选择",
             "不管",
-            "肯定",
-            "无论"
+            "反正"
           ],
           "option_pinyin": [
             "yī…jiù…",
+            "xuǎn zé",
             "bù guǎn",
-            "kěn dìng",
-            "wú lùn"
+            "fǎn zhèng"
           ]
         }
       ],
       "example_pinyin": "tā yī lái jiù zǒu wǒ dōu bù zhī dào tā lái le"
+    },
+    {
+      "id": "hsk3_l8_13",
+      "chinese": "支持",
+      "pinyin": "zhī chí",
+      "english": "To support / Support",
+      "part_of_speech": "verb",
+      "example": "不管你做什么选择，我都支持你。",
+      "translation": "No matter what choice you make, I support you.",
+      "example_pinyin": "bù guǎn nǐ zuò shén me xuǎn zé wǒ dōu zhī chí nǐ",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 支持 mean?",
+          "correct": "To support / Support",
+          "options": [
+            "As soon as / Once...then",
+            "To choose / Choice",
+            "No matter / Regardless of",
+            "To support / Support"
+          ],
+          "option_pinyin": [
+            "yī…jiù…",
+            "xuǎn zé",
+            "bù guǎn",
+            "zhī chí"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To support / Support",
+          "correct": "支持",
+          "options": [
+            "相信",
+            "支持",
+            "无论",
+            "哪怕"
+          ],
+          "option_pinyin": [
+            "xiāng xìn",
+            "zhī chí",
+            "wú lùn",
+            "nǎ pà"
+          ],
+          "question_chinese": "不管你做什么选择，我都___你。",
+          "question_pinyin": "不管你做什么选择，我都___你。",
+          "question_english": "No matter what choice you make, I support you."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To support / Support'?",
+          "correct": "支持",
+          "options": [
+            "支持",
+            "只要",
+            "跟",
+            "无论"
+          ],
+          "option_pinyin": [
+            "zhī chí",
+            "zhǐ yào",
+            "gēn",
+            "wú lùn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l8_14",
+      "chinese": "相信",
+      "pinyin": "xiāng xìn",
+      "english": "To believe / To trust",
+      "part_of_speech": "verb",
+      "example": "我相信你一定能做到。",
+      "translation": "I believe you can definitely do it.",
+      "example_pinyin": "wǒ xiāng xìn nǐ yí dìng néng zuò dào",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 相信 mean?",
+          "correct": "To believe / To trust",
+          "options": [
+            "Even if / Even though",
+            "As you like / Casual / Careless",
+            "To believe / To trust",
+            "As soon as / Once...then"
+          ],
+          "option_pinyin": [
+            "nǎ pà",
+            "suí biàn",
+            "xiāng xìn",
+            "yī…jiù…"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To believe / To trust",
+          "correct": "相信",
+          "options": [
+            "哪怕",
+            "相信",
+            "跟",
+            "选择"
+          ],
+          "option_pinyin": [
+            "nǎ pà",
+            "xiāng xìn",
+            "gēn",
+            "xuǎn zé"
+          ],
+          "question_chinese": "我___你一定能做到。",
+          "question_pinyin": "我___你一定能做到。",
+          "question_english": "I believe you can definitely do it."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To believe / To trust'?",
+          "correct": "相信",
+          "options": [
+            "跟",
+            "只要",
+            "相信",
+            "决定"
+          ],
+          "option_pinyin": [
+            "gēn",
+            "zhǐ yào",
+            "xiāng xìn",
+            "jué dìng"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l8_p01",

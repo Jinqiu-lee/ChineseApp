@@ -20,16 +20,16 @@
           "question": "What does 越来越 mean?",
           "correct": "More and more / Increasingly",
           "options": [
-            "Thin / Slim",
-            "To diet / To restrict eating",
+            "To lose weight / To diet",
+            "To exercise / To work out",
             "More and more / Increasingly",
-            "Body weight"
+            "Lazy"
           ],
           "option_pinyin": [
-            "shòu",
-            "jié shí",
+            "jiǎn féi",
+            "duàn liàn",
             "yuè lái yuè",
-            "tǐ zhòng"
+            "lǎn"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: More and more / Increasingly",
           "correct": "越来越",
           "options": [
-            "体重",
-            "坚持",
-            "胖",
-            "越来越"
+            "越来越",
+            "最近",
+            "锻炼",
+            "营养"
           ],
           "option_pinyin": [
-            "tǐ zhòng",
-            "jiān chí",
-            "pàng",
-            "yuè lái yuè"
+            "yuè lái yuè",
+            "zuì jìn",
+            "duàn liàn",
+            "yíng yǎng"
           ],
-          "question_chinese": "天气___热了。",
-          "question_pinyin": "天气___热了。",
-          "question_english": "The weather is getting hotter and hotter."
+          "question_chinese": "你最近___胖了。",
+          "question_pinyin": "你最近___胖了。",
+          "question_english": "You've been getting fatter and fatter lately."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'More and more / Increasingly'?",
           "correct": "越来越",
           "options": [
-            "健康",
+            "营养",
             "越来越",
-            "坚持",
-            "比较"
+            "节食",
+            "坚持"
           ],
           "option_pinyin": [
-            "jiàn kāng",
+            "yíng yǎng",
             "yuè lái yuè",
-            "jiān chí",
-            "bǐ jiào"
+            "jié shí",
+            "jiān chí"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 最近 mean?",
           "correct": "Recently / Lately",
           "options": [
-            "To persist / To keep at it",
+            "Relatively / Comparatively",
             "So / This / Like this",
             "Recently / Lately",
-            "Relatively / Comparatively"
+            "More and more / Increasingly"
           ],
           "option_pinyin": [
-            "jiān chí",
+            "bǐ jiào",
             "zhè me",
             "zuì jìn",
-            "bǐ jiào"
+            "yuè lái yuè"
           ]
         },
         {
@@ -103,106 +103,40 @@
           "question": "Fill in: Recently / Lately",
           "correct": "最近",
           "options": [
-            "这么",
+            "体重",
+            "营养",
             "最近",
-            "节食",
-            "瘦"
+            "锻炼"
           ],
           "option_pinyin": [
-            "zhè me",
+            "tǐ zhòng",
+            "yíng yǎng",
             "zuì jìn",
-            "jié shí",
-            "shòu"
+            "duàn liàn"
           ],
-          "question_chinese": "你___怎么样？",
-          "question_pinyin": "你___怎么样？",
-          "question_english": "How have you been recently?"
+          "question_chinese": "___吃太多了，而且没有锻炼。",
+          "question_pinyin": "___吃太多了，而且没有锻炼。",
+          "question_english": "I've been eating too much lately, and haven't been exercising either."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Recently / Lately'?",
           "correct": "最近",
           "options": [
-            "比较",
-            "最近",
-            "坚持",
-            "健康"
+            "健康",
+            "瘦",
+            "这么",
+            "最近"
           ],
           "option_pinyin": [
-            "bǐ jiào",
-            "zuì jìn",
-            "jiān chí",
-            "jiàn kāng"
+            "jiàn kāng",
+            "shòu",
+            "zhè me",
+            "zuì jìn"
           ]
         }
       ],
       "example_pinyin": "zuì jìn chī tài duō le ér qiě méi yǒu duàn liàn"
-    },
-    {
-      "id": "hsk3_l5_03",
-      "chinese": "胖",
-      "pinyin": "pàng",
-      "english": "Fat / Overweight",
-      "part_of_speech": "adjective",
-      "example": "你越来越胖了，要注意健康。",
-      "translation": "You've been getting fatter and fatter; you need to watch your health.",
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "What does 胖 mean?",
-          "correct": "Fat / Overweight",
-          "options": [
-            "Health / Healthy",
-            "Body weight",
-            "To lose weight / To diet",
-            "Fat / Overweight"
-          ],
-          "option_pinyin": [
-            "jiàn kāng",
-            "tǐ zhòng",
-            "jiǎn féi",
-            "pàng"
-          ]
-        },
-        {
-          "type": "fill_blank",
-          "question": "Fill in: Fat / Overweight",
-          "correct": "胖",
-          "options": [
-            "越来越",
-            "比较",
-            "减肥",
-            "胖"
-          ],
-          "option_pinyin": [
-            "yuè lái yuè",
-            "bǐ jiào",
-            "jiǎn féi",
-            "pàng"
-          ],
-          "question_chinese": "我觉得自己___了。",
-          "question_pinyin": "我觉得自己___了。",
-          "question_english": "I feel like I've gotten fat."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'Fat / Overweight'?",
-          "correct": "胖",
-          "options": [
-            "锻炼",
-            "越来越",
-            "坚持",
-            "胖"
-          ],
-          "option_pinyin": [
-            "duàn liàn",
-            "yuè lái yuè",
-            "jiān chí",
-            "pàng"
-          ]
-        }
-      ],
-      "example_pinyin": "nǐ yuè lái yuè pàng le yào zhù yì jiàn kāng"
     },
     {
       "id": "hsk3_l5_04",
@@ -218,16 +152,16 @@
           "question": "What does 锻炼 mean?",
           "correct": "To exercise / To work out",
           "options": [
+            "To exercise / To work out",
+            "To pay attention to / To be careful",
             "To persist / To keep at it",
-            "Thin / Slim",
-            "Body weight",
-            "To exercise / To work out"
+            "Recently / Lately"
           ],
           "option_pinyin": [
+            "duàn liàn",
+            "zhù yì",
             "jiān chí",
-            "shòu",
-            "tǐ zhòng",
-            "duàn liàn"
+            "zuì jìn"
           ]
         },
         {
@@ -235,36 +169,36 @@
           "question": "Fill in: To exercise / To work out",
           "correct": "锻炼",
           "options": [
-            "体重",
-            "锻炼",
-            "瘦",
-            "胖"
+            "健康",
+            "懒",
+            "减肥",
+            "锻炼"
           ],
           "option_pinyin": [
-            "tǐ zhòng",
-            "duàn liàn",
-            "shòu",
-            "pàng"
+            "jiàn kāng",
+            "lǎn",
+            "jiǎn féi",
+            "duàn liàn"
           ],
-          "question_chinese": "我每天___一小时。",
-          "question_pinyin": "我每天___一小时。",
-          "question_english": "I exercise one hour every day."
+          "question_chinese": "我打算开始___。",
+          "question_pinyin": "我打算开始___。",
+          "question_english": "I'm planning to start exercising."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To exercise / To work out'?",
           "correct": "锻炼",
           "options": [
-            "锻炼",
-            "节食",
-            "比较",
-            "体重"
+            "健康",
+            "减肥",
+            "体重",
+            "锻炼"
           ],
           "option_pinyin": [
-            "duàn liàn",
-            "jié shí",
-            "bǐ jiào",
-            "tǐ zhòng"
+            "jiàn kāng",
+            "jiǎn féi",
+            "tǐ zhòng",
+            "duàn liàn"
           ]
         }
       ],
@@ -284,16 +218,16 @@
           "question": "What does 坚持 mean?",
           "correct": "To persist / To keep at it",
           "options": [
-            "So / This / Like this",
             "To persist / To keep at it",
-            "Recently / Lately",
-            "Health / Healthy"
+            "To diet / To restrict eating",
+            "Thin / Slim",
+            "So / This / Like this"
           ],
           "option_pinyin": [
-            "zhè me",
             "jiān chí",
-            "zuì jìn",
-            "jiàn kāng"
+            "jié shí",
+            "shòu",
+            "zhè me"
           ]
         },
         {
@@ -301,36 +235,36 @@
           "question": "Fill in: To persist / To keep at it",
           "correct": "坚持",
           "options": [
-            "体重",
-            "坚持",
-            "锻炼",
-            "比较"
+            "注意",
+            "减肥",
+            "越来越",
+            "坚持"
           ],
           "option_pinyin": [
-            "tǐ zhòng",
-            "jiān chí",
-            "duàn liàn",
-            "bǐ jiào"
+            "zhù yì",
+            "jiǎn féi",
+            "yuè lái yuè",
+            "jiān chí"
           ],
-          "question_chinese": "你要___锻炼。",
-          "question_pinyin": "你要___锻炼。",
-          "question_english": "You need to keep exercising."
+          "question_chinese": "你越___锻炼，身体越健康。",
+          "question_pinyin": "你越___锻炼，身体越健康。",
+          "question_english": "The more you persist in exercising, the healthier your body gets."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To persist / To keep at it'?",
           "correct": "坚持",
           "options": [
-            "这么",
+            "越来越",
             "坚持",
-            "减肥",
-            "胖"
+            "营养",
+            "最近"
           ],
           "option_pinyin": [
-            "zhè me",
+            "yuè lái yuè",
             "jiān chí",
-            "jiǎn féi",
-            "pàng"
+            "yíng yǎng",
+            "zuì jìn"
           ]
         }
       ],
@@ -350,16 +284,16 @@
           "question": "What does 体重 mean?",
           "correct": "Body weight",
           "options": [
-            "Relatively / Comparatively",
-            "So / This / Like this",
             "Body weight",
-            "Fat / Overweight"
+            "Relatively / Comparatively",
+            "Thin / Slim",
+            "To exercise / To work out"
           ],
           "option_pinyin": [
-            "bǐ jiào",
-            "zhè me",
             "tǐ zhòng",
-            "pàng"
+            "bǐ jiào",
+            "shòu",
+            "duàn liàn"
           ]
         },
         {
@@ -368,35 +302,35 @@
           "correct": "体重",
           "options": [
             "体重",
-            "坚持",
-            "胖",
-            "瘦"
+            "懒",
+            "营养",
+            "减肥"
           ],
           "option_pinyin": [
             "tǐ zhòng",
-            "jiān chí",
-            "pàng",
-            "shòu"
+            "lǎn",
+            "yíng yǎng",
+            "jiǎn féi"
           ],
-          "question_chinese": "我的___增加了。",
-          "question_pinyin": "我的___增加了。",
-          "question_english": "My body weight has increased."
+          "question_chinese": "你越锻炼，___越容易减下来。",
+          "question_pinyin": "你越锻炼，___越容易减下来。",
+          "question_english": "The more you exercise, the easier it is to lose weight."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Body weight'?",
           "correct": "体重",
           "options": [
-            "节食",
-            "比较",
             "体重",
-            "坚持"
+            "懒",
+            "这么",
+            "最近"
           ],
           "option_pinyin": [
-            "jié shí",
-            "bǐ jiào",
             "tǐ zhòng",
-            "jiān chí"
+            "lǎn",
+            "zhè me",
+            "zuì jìn"
           ]
         }
       ],
@@ -416,16 +350,16 @@
           "question": "What does 减肥 mean?",
           "correct": "To lose weight / To diet",
           "options": [
-            "To lose weight / To diet",
-            "Thin / Slim",
-            "Health / Healthy",
-            "More and more / Increasingly"
+            "Greasy / Oily",
+            "To diet / To restrict eating",
+            "To pay attention to / To be careful",
+            "To lose weight / To diet"
           ],
           "option_pinyin": [
-            "jiǎn féi",
-            "shòu",
-            "jiàn kāng",
-            "yuè lái yuè"
+            "yóu nì",
+            "jié shí",
+            "zhù yì",
+            "jiǎn féi"
           ]
         },
         {
@@ -433,36 +367,36 @@
           "question": "Fill in: To lose weight / To diet",
           "correct": "减肥",
           "options": [
-            "健康",
-            "最近",
             "减肥",
-            "瘦"
+            "油腻",
+            "体重",
+            "懒"
           ],
           "option_pinyin": [
-            "jiàn kāng",
-            "zuì jìn",
             "jiǎn féi",
-            "shòu"
+            "yóu nì",
+            "tǐ zhòng",
+            "lǎn"
           ],
-          "question_chinese": "我想___。",
-          "question_pinyin": "我想___。",
-          "question_english": "I want to lose weight."
+          "question_chinese": "她在节食___，现在越来越瘦了。",
+          "question_pinyin": "她在节食___，现在越来越瘦了。",
+          "question_english": "She's been dieting to lose weight; now she's getting thinner and thinner."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To lose weight / To diet'?",
           "correct": "减肥",
           "options": [
-            "节食",
+            "减肥",
+            "坚持",
             "最近",
-            "比较",
-            "减肥"
+            "营养"
           ],
           "option_pinyin": [
-            "jié shí",
+            "jiǎn féi",
+            "jiān chí",
             "zuì jìn",
-            "bǐ jiào",
-            "jiǎn féi"
+            "yíng yǎng"
           ]
         }
       ],
@@ -482,16 +416,16 @@
           "question": "What does 健康 mean?",
           "correct": "Health / Healthy",
           "options": [
-            "Health / Healthy",
-            "More and more / Increasingly",
-            "So / This / Like this",
-            "To persist / To keep at it"
+            "To lose weight / To diet",
+            "Nutrition / Nutrients / Nutritious",
+            "Recently / Lately",
+            "Health / Healthy"
           ],
           "option_pinyin": [
-            "jiàn kāng",
-            "yuè lái yuè",
-            "zhè me",
-            "jiān chí"
+            "jiǎn féi",
+            "yíng yǎng",
+            "zuì jìn",
+            "jiàn kāng"
           ]
         },
         {
@@ -499,36 +433,36 @@
           "question": "Fill in: Health / Healthy",
           "correct": "健康",
           "options": [
-            "这么",
-            "节食",
             "健康",
-            "锻炼"
+            "瘦",
+            "比较",
+            "这么"
           ],
           "option_pinyin": [
-            "zhè me",
-            "jié shí",
             "jiàn kāng",
-            "duàn liàn"
+            "shòu",
+            "bǐ jiào",
+            "zhè me"
           ],
-          "question_chinese": "运动对___有好处。",
-          "question_pinyin": "运动对___有好处。",
-          "question_english": "Exercise is good for health."
+          "question_chinese": "比较___的方法是多锻炼，少节食。",
+          "question_pinyin": "比较___的方法是多锻炼，少节食。",
+          "question_english": "The relatively healthier approach is to exercise more and diet less."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Health / Healthy'?",
           "correct": "健康",
           "options": [
-            "瘦",
-            "最近",
+            "健康",
+            "营养",
             "越来越",
-            "健康"
+            "坚持"
           ],
           "option_pinyin": [
-            "shòu",
-            "zuì jìn",
+            "jiàn kāng",
+            "yíng yǎng",
             "yuè lái yuè",
-            "jiàn kāng"
+            "jiān chí"
           ]
         }
       ],
@@ -548,16 +482,16 @@
           "question": "What does 比较 mean?",
           "correct": "Relatively / Comparatively",
           "options": [
+            "To diet / To restrict eating",
             "Relatively / Comparatively",
-            "Health / Healthy",
-            "Body weight",
-            "To exercise / To work out"
+            "So / This / Like this",
+            "Thin / Slim"
           ],
           "option_pinyin": [
+            "jié shí",
             "bǐ jiào",
-            "jiàn kāng",
-            "tǐ zhòng",
-            "duàn liàn"
+            "zhè me",
+            "shòu"
           ]
         },
         {
@@ -565,36 +499,36 @@
           "question": "Fill in: Relatively / Comparatively",
           "correct": "比较",
           "options": [
-            "节食",
-            "健康",
             "减肥",
+            "坚持",
+            "锻炼",
             "比较"
           ],
           "option_pinyin": [
-            "jié shí",
-            "jiàn kāng",
             "jiǎn féi",
+            "jiān chí",
+            "duàn liàn",
             "bǐ jiào"
           ],
-          "question_chinese": "这里的天气___好。",
-          "question_pinyin": "这里的天气___好。",
-          "question_english": "The weather here is relatively good."
+          "question_chinese": "这个减肥方法___健康。",
+          "question_pinyin": "这个减肥方法___健康。",
+          "question_english": "This weight-loss method is relatively healthy."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Relatively / Comparatively'?",
           "correct": "比较",
           "options": [
-            "越来越",
+            "节食",
             "锻炼",
             "比较",
-            "节食"
+            "越来越"
           ],
           "option_pinyin": [
-            "yuè lái yuè",
+            "jié shí",
             "duàn liàn",
             "bǐ jiào",
-            "jié shí"
+            "yuè lái yuè"
           ]
         }
       ],
@@ -614,16 +548,16 @@
           "question": "What does 这么 mean?",
           "correct": "So / This / Like this",
           "options": [
-            "Body weight",
+            "So / This / Like this",
             "Health / Healthy",
-            "To diet / To restrict eating",
-            "So / This / Like this"
+            "Greasy / Oily",
+            "Nutrition / Nutrients / Nutritious"
           ],
           "option_pinyin": [
-            "tǐ zhòng",
+            "zhè me",
             "jiàn kāng",
-            "jié shí",
-            "zhè me"
+            "yóu nì",
+            "yíng yǎng"
           ]
         },
         {
@@ -631,36 +565,36 @@
           "question": "Fill in: So / This / Like this",
           "correct": "这么",
           "options": [
-            "胖",
-            "瘦",
-            "比较",
-            "这么"
+            "越来越",
+            "这么",
+            "懒",
+            "节食"
           ],
           "option_pinyin": [
-            "pàng",
-            "shòu",
-            "bǐ jiào",
-            "zhè me"
+            "yuè lái yuè",
+            "zhè me",
+            "lǎn",
+            "jié shí"
           ],
-          "question_chinese": "你___努力。",
-          "question_pinyin": "你___努力。",
-          "question_english": "You work so hard."
+          "question_chinese": "你怎么___瘦，要多吃一点啊。",
+          "question_pinyin": "你怎么___瘦，要多吃一点啊。",
+          "question_english": "How are you so thin? You need to make sure you eat more."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'So / This / Like this'?",
           "correct": "这么",
           "options": [
-            "健康",
+            "坚持",
             "锻炼",
             "这么",
-            "越来越"
+            "瘦"
           ],
           "option_pinyin": [
-            "jiàn kāng",
+            "jiān chí",
             "duàn liàn",
             "zhè me",
-            "yuè lái yuè"
+            "shòu"
           ]
         }
       ],
@@ -680,16 +614,16 @@
           "question": "What does 节食 mean?",
           "correct": "To diet / To restrict eating",
           "options": [
-            "Fat / Overweight",
-            "To persist / To keep at it",
+            "Lazy",
             "To diet / To restrict eating",
-            "More and more / Increasingly"
+            "Relatively / Comparatively",
+            "Recently / Lately"
           ],
           "option_pinyin": [
-            "pàng",
-            "jiān chí",
+            "lǎn",
             "jié shí",
-            "yuè lái yuè"
+            "bǐ jiào",
+            "zuì jìn"
           ]
         },
         {
@@ -697,36 +631,36 @@
           "question": "Fill in: To diet / To restrict eating",
           "correct": "节食",
           "options": [
-            "减肥",
             "瘦",
-            "体重",
-            "节食"
+            "懒",
+            "节食",
+            "健康"
           ],
           "option_pinyin": [
-            "jiǎn féi",
             "shòu",
-            "tǐ zhòng",
-            "jié shí"
+            "lǎn",
+            "jié shí",
+            "jiàn kāng"
           ],
-          "question_chinese": "他在___。",
-          "question_pinyin": "他在___。",
-          "question_english": "He is dieting."
+          "question_chinese": "她在___减肥，现在越来越瘦了。",
+          "question_pinyin": "她在___减肥，现在越来越瘦了。",
+          "question_english": "She's been dieting to lose weight; now she's getting thinner and thinner."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To diet / To restrict eating'?",
           "correct": "节食",
           "options": [
-            "减肥",
+            "坚持",
+            "油腻",
             "节食",
-            "瘦",
-            "比较"
+            "瘦"
           ],
           "option_pinyin": [
-            "jiǎn féi",
+            "jiān chí",
+            "yóu nì",
             "jié shí",
-            "shòu",
-            "bǐ jiào"
+            "shòu"
           ]
         }
       ],
@@ -746,16 +680,16 @@
           "question": "What does 瘦 mean?",
           "correct": "Thin / Slim",
           "options": [
-            "Recently / Lately",
-            "To lose weight / To diet",
+            "Health / Healthy",
+            "So / This / Like this",
             "Thin / Slim",
-            "Health / Healthy"
+            "Body weight"
           ],
           "option_pinyin": [
-            "zuì jìn",
-            "jiǎn féi",
+            "jiàn kāng",
+            "zhè me",
             "shòu",
-            "jiàn kāng"
+            "tǐ zhòng"
           ]
         },
         {
@@ -763,40 +697,304 @@
           "question": "Fill in: Thin / Slim",
           "correct": "瘦",
           "options": [
-            "比较",
-            "健康",
             "瘦",
-            "最近"
+            "健康",
+            "注意",
+            "营养"
           ],
           "option_pinyin": [
-            "bǐ jiào",
-            "jiàn kāng",
             "shòu",
-            "zuì jìn"
+            "jiàn kāng",
+            "zhù yì",
+            "yíng yǎng"
           ],
-          "question_chinese": "她___了很多。",
-          "question_pinyin": "她___了很多。",
-          "question_english": "She has become much slimmer."
+          "question_chinese": "她越来越___了。",
+          "question_pinyin": "她越来越___了。",
+          "question_english": "She's getting thinner and thinner."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Thin / Slim'?",
           "correct": "瘦",
           "options": [
+            "体重",
+            "健康",
             "瘦",
-            "节食",
-            "锻炼",
-            "越来越"
+            "懒"
           ],
           "option_pinyin": [
+            "tǐ zhòng",
+            "jiàn kāng",
             "shòu",
-            "jié shí",
-            "duàn liàn",
-            "yuè lái yuè"
+            "lǎn"
           ]
         }
       ],
       "example_pinyin": "tā yuè lái yuè shòu le"
+    },
+    {
+      "id": "hsk3_l5_13",
+      "chinese": "油腻",
+      "pinyin": "yóu nì",
+      "english": "Greasy / Oily",
+      "part_of_speech": "adjective",
+      "example": "这道菜太油腻了，不健康。",
+      "translation": "This dish is too greasy, not healthy.",
+      "example_pinyin": "zhè dào cài tài yóu nì le bù jiàn kāng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 油腻 mean?",
+          "correct": "Greasy / Oily",
+          "options": [
+            "To exercise / To work out",
+            "More and more / Increasingly",
+            "To persist / To keep at it",
+            "Greasy / Oily"
+          ],
+          "option_pinyin": [
+            "duàn liàn",
+            "yuè lái yuè",
+            "jiān chí",
+            "yóu nì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Greasy / Oily",
+          "correct": "油腻",
+          "options": [
+            "节食",
+            "最近",
+            "这么",
+            "油腻"
+          ],
+          "option_pinyin": [
+            "jié shí",
+            "zuì jìn",
+            "zhè me",
+            "yóu nì"
+          ],
+          "question_chinese": "这道菜太___了，不健康。",
+          "question_pinyin": "这道菜太___了，不健康。",
+          "question_english": "This dish is too greasy, not healthy."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Greasy / Oily'?",
+          "correct": "油腻",
+          "options": [
+            "越来越",
+            "健康",
+            "油腻",
+            "注意"
+          ],
+          "option_pinyin": [
+            "yuè lái yuè",
+            "jiàn kāng",
+            "yóu nì",
+            "zhù yì"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l5_14",
+      "chinese": "注意",
+      "pinyin": "zhù yì",
+      "english": "To pay attention to / To be careful",
+      "part_of_speech": "verb",
+      "example": "她最近比较注意饮食，也坚持锻炼。",
+      "translation": "She has been paying attention to her diet and persisting with exercise.",
+      "example_pinyin": "tā zuì jìn bǐ jiào zhù yì yǐn shí yě jiān chí duàn liàn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 注意 mean?",
+          "correct": "To pay attention to / To be careful",
+          "options": [
+            "Health / Healthy",
+            "Body weight",
+            "To diet / To restrict eating",
+            "To pay attention to / To be careful"
+          ],
+          "option_pinyin": [
+            "jiàn kāng",
+            "tǐ zhòng",
+            "jié shí",
+            "zhù yì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To pay attention to / To be careful",
+          "correct": "注意",
+          "options": [
+            "这么",
+            "注意",
+            "减肥",
+            "最近"
+          ],
+          "option_pinyin": [
+            "zhè me",
+            "zhù yì",
+            "jiǎn féi",
+            "zuì jìn"
+          ],
+          "question_chinese": "她___饮食，也坚持锻炼。",
+          "question_pinyin": "她___饮食，也坚持锻炼。",
+          "question_english": "She has been paying attention to her diet and persisting with exercise."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To pay attention to / To be careful'?",
+          "correct": "注意",
+          "options": [
+            "瘦",
+            "注意",
+            "比较",
+            "最近"
+          ],
+          "option_pinyin": [
+            "shòu",
+            "zhù yì",
+            "bǐ jiào",
+            "zuì jìn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l5_15",
+      "chinese": "懒",
+      "pinyin": "lǎn",
+      "english": "Lazy",
+      "part_of_speech": "adjective",
+      "example": "他最近很懒，不想锻炼。",
+      "translation": "He has been very lazy lately and doesn't want to exercise.",
+      "example_pinyin": "tā zuì jìn hěn lǎn bù xiǎng duàn liàn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 懒 mean?",
+          "correct": "Lazy",
+          "options": [
+            "Relatively / Comparatively",
+            "So / This / Like this",
+            "Nutrition / Nutrients / Nutritious",
+            "Lazy"
+          ],
+          "option_pinyin": [
+            "bǐ jiào",
+            "zhè me",
+            "yíng yǎng",
+            "lǎn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Lazy",
+          "correct": "懒",
+          "options": [
+            "懒",
+            "健康",
+            "锻炼",
+            "这么"
+          ],
+          "option_pinyin": [
+            "lǎn",
+            "jiàn kāng",
+            "duàn liàn",
+            "zhè me"
+          ],
+          "question_chinese": "他最近很___，不想锻炼。",
+          "question_pinyin": "他最近很___，不想锻炼。",
+          "question_english": "He has been very lazy lately and doesn't want to exercise."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Lazy'?",
+          "correct": "懒",
+          "options": [
+            "瘦",
+            "懒",
+            "坚持",
+            "油腻"
+          ],
+          "option_pinyin": [
+            "shòu",
+            "lǎn",
+            "jiān chí",
+            "yóu nì"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l5_16",
+      "chinese": "营养",
+      "pinyin": "yíng yǎng",
+      "english": "Nutrition / Nutrients / Nutritious",
+      "part_of_speech": "noun",
+      "example": "均衡饮食很重要，要注意营养。",
+      "translation": "A balanced diet is important; you need to pay attention to nutrition.",
+      "example_pinyin": "jūn héng yǐn shí hěn zhòng yào yào zhù yì yíng yǎng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 营养 mean?",
+          "correct": "Nutrition / Nutrients / Nutritious",
+          "options": [
+            "So / This / Like this",
+            "Thin / Slim",
+            "To lose weight / To diet",
+            "Nutrition / Nutrients / Nutritious"
+          ],
+          "option_pinyin": [
+            "zhè me",
+            "shòu",
+            "jiǎn féi",
+            "yíng yǎng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Nutrition / Nutrients / Nutritious",
+          "correct": "营养",
+          "options": [
+            "最近",
+            "瘦",
+            "坚持",
+            "营养"
+          ],
+          "option_pinyin": [
+            "zuì jìn",
+            "shòu",
+            "jiān chí",
+            "yíng yǎng"
+          ],
+          "question_chinese": "均衡饮食很重要，要注意___。",
+          "question_pinyin": "均衡饮食很重要，要注意___。",
+          "question_english": "A balanced diet is important; you need to pay attention to nutrition."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Nutrition / Nutrients / Nutritious'?",
+          "correct": "营养",
+          "options": [
+            "营养",
+            "懒",
+            "瘦",
+            "最近"
+          ],
+          "option_pinyin": [
+            "yíng yǎng",
+            "lǎn",
+            "shòu",
+            "zuì jìn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l5_p01",

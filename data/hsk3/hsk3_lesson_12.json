@@ -21,14 +21,14 @@
           "correct": "Important",
           "options": [
             "Important",
-            "By (passive marker)",
-            "To move (furniture/objects)",
+            "Key",
+            "To take / To hold / To carry",
             "Thing / Item / Stuff"
           ],
           "option_pinyin": [
             "zhòng yào",
-            "bèi",
-            "bān",
+            "yào shi",
+            "ná",
             "dōng xi"
           ]
         },
@@ -37,36 +37,36 @@
           "question": "Fill in: Important",
           "correct": "重要",
           "options": [
-            "保管",
-            "还",
-            "拿",
+            "丢失",
+            "被",
+            "搬",
             "重要"
           ],
           "option_pinyin": [
-            "bǎo guǎn",
-            "huán",
-            "ná",
+            "diū shī",
+            "bèi",
+            "bān",
             "zhòng yào"
           ],
-          "question_chinese": "这件事很___。",
-          "question_pinyin": "这件事很___。",
-          "question_english": "This matter is very important."
+          "question_chinese": "把___的东西放在我这儿。",
+          "question_pinyin": "把___的东西放在我这儿。",
+          "question_english": "Put the important things here with me."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Important'?",
           "correct": "重要",
           "options": [
+            "搬",
             "重要",
             "借",
-            "东西",
-            "提"
+            "乱"
           ],
           "option_pinyin": [
+            "bān",
             "zhòng yào",
             "jiè",
-            "dōng xi",
-            "tí"
+            "luàn"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 东西 mean?",
           "correct": "Thing / Item / Stuff",
           "options": [
-            "Important",
-            "To carry on back",
+            "Messy / Chaotic / Disorderly",
             "Thing / Item / Stuff",
-            "To return (something)"
+            "Important",
+            "To borrow / To lend"
           ],
           "option_pinyin": [
-            "zhòng yào",
-            "bēi",
+            "luàn",
             "dōng xi",
-            "huán"
+            "zhòng yào",
+            "jiè"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: Thing / Item / Stuff",
           "correct": "东西",
           "options": [
-            "背",
+            "提",
             "东西",
             "被",
-            "还"
+            "拿"
           ],
           "option_pinyin": [
-            "bēi",
+            "tí",
             "dōng xi",
             "bèi",
-            "huán"
+            "ná"
           ],
-          "question_chinese": "把你的___拿走。",
-          "question_pinyin": "把你的___拿走。",
-          "question_english": "Take your things away."
+          "question_chinese": "你能帮我保管这个___吗？",
+          "question_pinyin": "你能帮我保管这个___吗？",
+          "question_english": "Can you look after this thing for me?"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Thing / Item / Stuff'?",
           "correct": "东西",
           "options": [
-            "被",
-            "提",
-            "东西",
-            "还"
+            "丢失",
+            "背",
+            "拿",
+            "东西"
           ],
           "option_pinyin": [
-            "bèi",
-            "tí",
-            "dōng xi",
-            "huán"
+            "diū shī",
+            "bēi",
+            "ná",
+            "dōng xi"
           ]
         }
       ],
@@ -140,69 +140,69 @@
     },
     {
       "id": "hsk3_l12_03",
-      "chinese": "放",
-      "pinyin": "fàng",
-      "english": "To put / To place",
+      "chinese": "放心",
+      "pinyin": "fàng xīn",
+      "english": "To stop worrying / To be at ease",
       "part_of_speech": "verb",
-      "example": "把重要的东西放在我这儿。",
-      "translation": "Put the important things here with me.",
+      "example": "放心吧，我会保管好的。",
+      "translation": "Don't worry, I will keep it safe.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 放 mean?",
-          "correct": "To put / To place",
+          "question": "What does 放心 mean?",
+          "correct": "To stop worrying / To be at ease",
           "options": [
-            "To carry (in hand) / To mention",
-            "Thing / Item / Stuff",
             "To carry on back",
-            "To put / To place"
+            "Messy / Chaotic / Disorderly",
+            "To stop worrying / To be at ease",
+            "Thing / Item / Stuff"
           ],
           "option_pinyin": [
-            "tí",
-            "dōng xi",
             "bēi",
-            "fàng"
+            "luàn",
+            "fàng xīn",
+            "dōng xi"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To put / To place",
-          "correct": "放",
+          "question": "Fill in: To stop worrying / To be at ease",
+          "correct": "放心",
           "options": [
-            "放",
-            "还",
-            "保管",
-            "东西"
+            "放心",
+            "被",
+            "重要",
+            "提"
           ],
           "option_pinyin": [
-            "fàng",
-            "huán",
-            "bǎo guǎn",
-            "dōng xi"
+            "fàng xīn",
+            "bèi",
+            "zhòng yào",
+            "tí"
           ],
-          "question_chinese": "把书___在书架上。",
-          "question_pinyin": "把书___在书架上。",
-          "question_english": "Put the book on the bookshelf."
+          "question_chinese": "___吧，我会保管好的。",
+          "question_pinyin": "___吧，我会保管好的。",
+          "question_english": "Don't worry, I will keep it safe."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To put / To place'?",
-          "correct": "放",
+          "question": "Which word means 'To stop worrying / To be at ease'?",
+          "correct": "放心",
           "options": [
-            "还",
-            "放",
-            "借",
-            "东西"
+            "搬",
+            "背",
+            "放心",
+            "丢失"
           ],
           "option_pinyin": [
-            "huán",
-            "fàng",
-            "jiè",
-            "dōng xi"
+            "bān",
+            "bēi",
+            "fàng xīn",
+            "diū shī"
           ]
         }
       ],
-      "example_pinyin": "bǎ zhòng yào de dōng xī fàng zài wǒ zhè ér"
+      "example_pinyin": "fàng xīn ba wǒ huì bǎo guǎn hǎo de"
     },
     {
       "id": "hsk3_l12_04",
@@ -218,16 +218,16 @@
           "question": "What does 拿 mean?",
           "correct": "To take / To hold / To carry",
           "options": [
-            "To borrow / To lend",
-            "To take / To hold / To carry",
             "Important",
-            "By (passive marker)"
+            "To stop worrying / To be at ease",
+            "To take / To hold / To carry",
+            "To carry (in hand) / To mention"
           ],
           "option_pinyin": [
-            "jiè",
-            "ná",
             "zhòng yào",
-            "bèi"
+            "fàng xīn",
+            "ná",
+            "tí"
           ]
         },
         {
@@ -235,36 +235,36 @@
           "question": "Fill in: To take / To hold / To carry",
           "correct": "拿",
           "options": [
-            "拿",
-            "重要",
+            "丢失",
             "搬",
-            "借"
+            "重要",
+            "拿"
           ],
           "option_pinyin": [
-            "ná",
-            "zhòng yào",
+            "diū shī",
             "bān",
-            "jiè"
+            "zhòng yào",
+            "ná"
           ],
-          "question_chinese": "你能帮我___一下吗？",
-          "question_pinyin": "你能帮我___一下吗？",
-          "question_english": "Can you help me carry this?"
+          "question_chinese": "我的书包被人___走了。",
+          "question_pinyin": "我的书包被人___走了。",
+          "question_english": "My schoolbag was taken away by someone."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To take / To hold / To carry'?",
           "correct": "拿",
           "options": [
-            "东西",
-            "还",
-            "拿",
-            "丢"
+            "放心",
+            "搬",
+            "被",
+            "拿"
           ],
           "option_pinyin": [
-            "dōng xi",
-            "huán",
-            "ná",
-            "diū"
+            "fàng xīn",
+            "bān",
+            "bèi",
+            "ná"
           ]
         }
       ],
@@ -284,16 +284,16 @@
           "question": "What does 搬 mean?",
           "correct": "To move (furniture/objects)",
           "options": [
-            "Important",
-            "Thing / Item / Stuff",
             "To move (furniture/objects)",
-            "To take / To hold / To carry"
+            "To return (something)",
+            "To borrow / To lend",
+            "To stop worrying / To be at ease"
           ],
           "option_pinyin": [
-            "zhòng yào",
-            "dōng xi",
             "bān",
-            "ná"
+            "huán",
+            "jiè",
+            "fàng xīn"
           ]
         },
         {
@@ -301,36 +301,36 @@
           "question": "Fill in: To move (furniture/objects)",
           "correct": "搬",
           "options": [
-            "东西",
+            "被",
+            "搬",
             "保管",
-            "背",
-            "搬"
+            "提"
           ],
           "option_pinyin": [
-            "dōng xi",
+            "bèi",
+            "bān",
             "bǎo guǎn",
-            "bēi",
-            "bān"
+            "tí"
           ],
-          "question_chinese": "我们要___家了。",
-          "question_pinyin": "我们要___家了。",
-          "question_english": "We're moving house."
+          "question_chinese": "把东西___到楼上去。",
+          "question_pinyin": "把东西___到楼上去。",
+          "question_english": "Move the things upstairs."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To move (furniture/objects)'?",
           "correct": "搬",
           "options": [
+            "还",
+            "放心",
             "搬",
-            "保管",
-            "放",
-            "借"
+            "丢失"
           ],
           "option_pinyin": [
+            "huán",
+            "fàng xīn",
             "bān",
-            "bǎo guǎn",
-            "fàng",
-            "jiè"
+            "diū shī"
           ]
         }
       ],
@@ -350,16 +350,16 @@
           "question": "What does 背 mean?",
           "correct": "To carry on back",
           "options": [
-            "To carry (in hand) / To mention",
-            "To borrow / To lend",
-            "To move (furniture/objects)",
-            "To carry on back"
+            "To return (something)",
+            "Thing / Item / Stuff",
+            "To carry on back",
+            "To stop worrying / To be at ease"
           ],
           "option_pinyin": [
-            "tí",
-            "jiè",
-            "bān",
-            "bēi"
+            "huán",
+            "dōng xi",
+            "bēi",
+            "fàng xīn"
           ]
         },
         {
@@ -367,35 +367,35 @@
           "question": "Fill in: To carry on back",
           "correct": "背",
           "options": [
-            "被",
-            "拿",
-            "放",
-            "背"
+            "背",
+            "提",
+            "东西",
+            "被"
           ],
           "option_pinyin": [
-            "bèi",
-            "ná",
-            "fàng",
-            "bēi"
+            "bēi",
+            "tí",
+            "dōng xi",
+            "bèi"
           ],
-          "question_chinese": "我___着一个书包。",
-          "question_pinyin": "我___着一个书包。",
-          "question_english": "I'm carrying a backpack on my back."
+          "question_chinese": "他___着包去上学。",
+          "question_pinyin": "他___着包去上学。",
+          "question_english": "He carries his bag on his back to school."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To carry on back'?",
           "correct": "背",
           "options": [
+            "提",
             "重要",
-            "东西",
-            "丢",
+            "放心",
             "背"
           ],
           "option_pinyin": [
+            "tí",
             "zhòng yào",
-            "dōng xi",
-            "diū",
+            "fàng xīn",
             "bēi"
           ]
         }
@@ -416,16 +416,16 @@
           "question": "What does 提 mean?",
           "correct": "To carry (in hand) / To mention",
           "options": [
-            "Important",
-            "To lose / To misplace",
-            "To carry (in hand) / To mention",
-            "To borrow / To lend"
+            "To stop worrying / To be at ease",
+            "To keep safely / To look after",
+            "Thing / Item / Stuff",
+            "To carry (in hand) / To mention"
           ],
           "option_pinyin": [
-            "zhòng yào",
-            "diū",
-            "tí",
-            "jiè"
+            "fàng xīn",
+            "bǎo guǎn",
+            "dōng xi",
+            "tí"
           ]
         },
         {
@@ -433,36 +433,36 @@
           "question": "Fill in: To carry (in hand) / To mention",
           "correct": "提",
           "options": [
-            "丢",
+            "背",
             "提",
             "保管",
-            "东西"
+            "还"
           ],
           "option_pinyin": [
-            "diū",
+            "bēi",
             "tí",
             "bǎo guǎn",
-            "dōng xi"
+            "huán"
           ],
-          "question_chinese": "她___着一个袋子。",
-          "question_pinyin": "她___着一个袋子。",
-          "question_english": "She's carrying a bag in her hand."
+          "question_chinese": "她___着袋子走进来。",
+          "question_pinyin": "她___着袋子走进来。",
+          "question_english": "She walked in carrying a bag in her hand."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To carry (in hand) / To mention'?",
           "correct": "提",
           "options": [
-            "借",
-            "还",
+            "背",
             "提",
-            "丢"
+            "丢失",
+            "拿"
           ],
           "option_pinyin": [
-            "jiè",
-            "huán",
+            "bēi",
             "tí",
-            "diū"
+            "diū shī",
+            "ná"
           ]
         }
       ],
@@ -482,15 +482,15 @@
           "question": "What does 保管 mean?",
           "correct": "To keep safely / To look after",
           "options": [
-            "To take / To hold / To carry",
+            "To lose / To misplace permanently",
             "To keep safely / To look after",
-            "By (passive marker)",
+            "To move (furniture/objects)",
             "Important"
           ],
           "option_pinyin": [
-            "ná",
+            "diū shī",
             "bǎo guǎn",
-            "bèi",
+            "bān",
             "zhòng yào"
           ]
         },
@@ -499,20 +499,20 @@
           "question": "Fill in: To keep safely / To look after",
           "correct": "保管",
           "options": [
-            "保管",
-            "借",
-            "搬",
-            "背"
+            "还",
+            "放心",
+            "拿",
+            "保管"
           ],
           "option_pinyin": [
-            "bǎo guǎn",
-            "jiè",
-            "bān",
-            "bēi"
+            "huán",
+            "fàng xīn",
+            "ná",
+            "bǎo guǎn"
           ],
-          "question_chinese": "你帮我___这个。",
-          "question_pinyin": "你帮我___这个。",
-          "question_english": "Help me keep this safe."
+          "question_chinese": "你能帮我___这个东西吗？",
+          "question_pinyin": "你能帮我___这个东西吗？",
+          "question_english": "Can you look after this thing for me?"
         },
         {
           "type": "multiple_choice",
@@ -520,15 +520,15 @@
           "correct": "保管",
           "options": [
             "保管",
-            "重要",
             "被",
-            "搬"
+            "重要",
+            "还"
           ],
           "option_pinyin": [
             "bǎo guǎn",
-            "zhòng yào",
             "bèi",
-            "bān"
+            "zhòng yào",
+            "huán"
           ]
         }
       ],
@@ -548,16 +548,16 @@
           "question": "What does 借 mean?",
           "correct": "To borrow / To lend",
           "options": [
-            "To carry on back",
+            "To stop worrying / To be at ease",
+            "To move (furniture/objects)",
             "To borrow / To lend",
-            "To put / To place",
-            "To move (furniture/objects)"
+            "To lose / To misplace permanently"
           ],
           "option_pinyin": [
-            "bēi",
+            "fàng xīn",
+            "bān",
             "jiè",
-            "fàng",
-            "bān"
+            "diū shī"
           ]
         },
         {
@@ -565,36 +565,36 @@
           "question": "Fill in: To borrow / To lend",
           "correct": "借",
           "options": [
+            "乱",
+            "借",
             "背",
-            "拿",
-            "东西",
-            "借"
+            "保管"
           ],
           "option_pinyin": [
+            "luàn",
+            "jiè",
             "bēi",
-            "ná",
-            "dōng xi",
-            "jiè"
+            "bǎo guǎn"
           ],
-          "question_chinese": "我想___你的书。",
-          "question_pinyin": "我想___你的书。",
-          "question_english": "I want to borrow your book."
+          "question_chinese": "他___给我一支笔，我要还给他。",
+          "question_pinyin": "他___给我一支笔，我要还给他。",
+          "question_english": "He lent me a pen — I need to return it to him."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To borrow / To lend'?",
           "correct": "借",
           "options": [
-            "背",
-            "拿",
+            "乱",
+            "提",
             "借",
-            "丢"
+            "放心"
           ],
           "option_pinyin": [
-            "bēi",
-            "ná",
+            "luàn",
+            "tí",
             "jiè",
-            "diū"
+            "fàng xīn"
           ]
         }
       ],
@@ -614,15 +614,15 @@
           "question": "What does 还 mean?",
           "correct": "To return (something)",
           "options": [
-            "To lose / To misplace",
-            "To take / To hold / To carry",
+            "To carry on back",
             "By (passive marker)",
+            "Key",
             "To return (something)"
           ],
           "option_pinyin": [
-            "diū",
-            "ná",
+            "bēi",
             "bèi",
+            "yào shi",
             "huán"
           ]
         },
@@ -631,36 +631,36 @@
           "question": "Fill in: To return (something)",
           "correct": "还",
           "options": [
-            "保管",
+            "丢失",
+            "重要",
             "还",
-            "放",
-            "拿"
+            "借"
           ],
           "option_pinyin": [
-            "bǎo guǎn",
+            "diū shī",
+            "zhòng yào",
             "huán",
-            "fàng",
-            "ná"
+            "jiè"
           ],
-          "question_chinese": "我把书___给你了。",
-          "question_pinyin": "我把书___给你了。",
-          "question_english": "I returned the book to you."
+          "question_chinese": "我把书___给他了。",
+          "question_pinyin": "我把书___给他了。",
+          "question_english": "I returned the book to him."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To return (something)'?",
           "correct": "还",
           "options": [
-            "东西",
+            "乱",
+            "钥匙",
             "被",
-            "还",
-            "借"
+            "还"
           ],
           "option_pinyin": [
-            "dōng xi",
+            "luàn",
+            "yào shi",
             "bèi",
-            "huán",
-            "jiè"
+            "huán"
           ]
         }
       ],
@@ -668,69 +668,69 @@
     },
     {
       "id": "hsk3_l12_11",
-      "chinese": "丢",
-      "pinyin": "diū",
-      "english": "To lose / To misplace",
+      "chinese": "丢失",
+      "pinyin": "diū shī",
+      "english": "To lose / To misplace permanently",
       "part_of_speech": "verb",
-      "example": "要记得放好，别丢了。",
-      "translation": "Remember to put it away properly — don't lose it.",
+      "example": "他的手机丢失了，找不到了。",
+      "translation": "He lost his phone and can't find it.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 丢 mean?",
-          "correct": "To lose / To misplace",
+          "question": "What does 丢失 mean?",
+          "correct": "To lose / To misplace permanently",
           "options": [
-            "To move (furniture/objects)",
-            "Thing / Item / Stuff",
-            "To lose / To misplace",
-            "To carry (in hand) / To mention"
+            "To carry (in hand) / To mention",
+            "To lose / To misplace permanently",
+            "To keep safely / To look after",
+            "Thing / Item / Stuff"
           ],
           "option_pinyin": [
-            "bān",
-            "dōng xi",
-            "diū",
-            "tí"
+            "tí",
+            "diū shī",
+            "bǎo guǎn",
+            "dōng xi"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To lose / To misplace",
-          "correct": "丢",
+          "question": "Fill in: To lose / To misplace permanently",
+          "correct": "丢失",
           "options": [
-            "重要",
-            "放",
-            "还",
-            "丢"
+            "背",
+            "东西",
+            "保管",
+            "丢失"
           ],
           "option_pinyin": [
-            "zhòng yào",
-            "fàng",
-            "huán",
-            "diū"
+            "bēi",
+            "dōng xi",
+            "bǎo guǎn",
+            "diū shī"
           ],
-          "question_chinese": "我把钥匙___了。",
-          "question_pinyin": "我把钥匙___了。",
-          "question_english": "I lost my keys."
+          "question_chinese": "他的手机___了，找不到了。",
+          "question_pinyin": "他的手机___了，找不到了。",
+          "question_english": "He lost his phone and can't find it."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To lose / To misplace'?",
-          "correct": "丢",
+          "question": "Which word means 'To lose / To misplace permanently'?",
+          "correct": "丢失",
           "options": [
-            "还",
-            "背",
-            "丢",
-            "放"
+            "钥匙",
+            "借",
+            "丢失",
+            "提"
           ],
           "option_pinyin": [
-            "huán",
-            "bēi",
-            "diū",
-            "fàng"
+            "yào shi",
+            "jiè",
+            "diū shī",
+            "tí"
           ]
         }
       ],
-      "example_pinyin": "yào jì de fàng hǎo bié diū le"
+      "example_pinyin": "tā de shǒu jī diū shī le zhǎo bú dào le"
     },
     {
       "id": "hsk3_l12_12",
@@ -746,16 +746,16 @@
           "question": "What does 被 mean?",
           "correct": "By (passive marker)",
           "options": [
-            "To take / To hold / To carry",
+            "Messy / Chaotic / Disorderly",
             "By (passive marker)",
-            "To keep safely / To look after",
-            "To put / To place"
+            "Important",
+            "Thing / Item / Stuff"
           ],
           "option_pinyin": [
-            "ná",
+            "luàn",
             "bèi",
-            "bǎo guǎn",
-            "fàng"
+            "zhòng yào",
+            "dōng xi"
           ]
         },
         {
@@ -764,39 +764,171 @@
           "correct": "被",
           "options": [
             "被",
-            "放",
-            "提",
-            "重要"
+            "丢失",
+            "拿",
+            "放心"
           ],
           "option_pinyin": [
             "bèi",
-            "fàng",
-            "tí",
-            "zhòng yào"
+            "diū shī",
+            "ná",
+            "fàng xīn"
           ],
-          "question_chinese": "我的钱包___偷了。",
-          "question_pinyin": "我的钱包___偷了。",
-          "question_english": "My wallet was stolen."
+          "question_chinese": "我的书包___人拿走了。",
+          "question_pinyin": "我的书包___人拿走了。",
+          "question_english": "My schoolbag was taken away by someone."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'By (passive marker)'?",
           "correct": "被",
           "options": [
+            "放心",
             "被",
-            "背",
             "东西",
             "还"
           ],
           "option_pinyin": [
+            "fàng xīn",
             "bèi",
-            "bēi",
             "dōng xi",
             "huán"
           ]
         }
       ],
       "example_pinyin": "wǒ de shū bāo bèi rén ná zǒu le"
+    },
+    {
+      "id": "hsk3_l12_13",
+      "chinese": "钥匙",
+      "pinyin": "yào shi",
+      "english": "Key",
+      "part_of_speech": "noun",
+      "example": "请把钥匙放在门口。",
+      "translation": "Please put the key by the door.",
+      "example_pinyin": "qǐng bǎ yào shi fàng zài mén kǒu",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 钥匙 mean?",
+          "correct": "Key",
+          "options": [
+            "To carry on back",
+            "To take / To hold / To carry",
+            "Key",
+            "Thing / Item / Stuff"
+          ],
+          "option_pinyin": [
+            "bēi",
+            "ná",
+            "yào shi",
+            "dōng xi"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Key",
+          "correct": "钥匙",
+          "options": [
+            "背",
+            "拿",
+            "钥匙",
+            "放心"
+          ],
+          "option_pinyin": [
+            "bēi",
+            "ná",
+            "yào shi",
+            "fàng xīn"
+          ],
+          "question_chinese": "请把___放在门口。",
+          "question_pinyin": "请把___放在门口。",
+          "question_english": "Please put the key by the door."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Key'?",
+          "correct": "钥匙",
+          "options": [
+            "钥匙",
+            "借",
+            "背",
+            "重要"
+          ],
+          "option_pinyin": [
+            "yào shi",
+            "jiè",
+            "bēi",
+            "zhòng yào"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l12_14",
+      "chinese": "乱",
+      "pinyin": "luàn",
+      "english": "Messy / Chaotic / Disorderly",
+      "part_of_speech": "adjective",
+      "example": "他的房间很乱，找不到东西。",
+      "translation": "His room is very messy and he can't find anything.",
+      "example_pinyin": "tā de fáng jiān hěn luàn zhǎo bú dào dōng xī",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 乱 mean?",
+          "correct": "Messy / Chaotic / Disorderly",
+          "options": [
+            "To return (something)",
+            "Thing / Item / Stuff",
+            "Messy / Chaotic / Disorderly",
+            "Key"
+          ],
+          "option_pinyin": [
+            "huán",
+            "dōng xi",
+            "luàn",
+            "yào shi"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Messy / Chaotic / Disorderly",
+          "correct": "乱",
+          "options": [
+            "东西",
+            "钥匙",
+            "背",
+            "乱"
+          ],
+          "option_pinyin": [
+            "dōng xi",
+            "yào shi",
+            "bēi",
+            "luàn"
+          ],
+          "question_chinese": "他的房间很___，找不到东西。",
+          "question_pinyin": "他的房间很___，找不到东西。",
+          "question_english": "His room is very messy and he can't find anything."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Messy / Chaotic / Disorderly'?",
+          "correct": "乱",
+          "options": [
+            "东西",
+            "保管",
+            "放心",
+            "乱"
+          ],
+          "option_pinyin": [
+            "dōng xi",
+            "bǎo guǎn",
+            "fàng xīn",
+            "luàn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l12_p01",

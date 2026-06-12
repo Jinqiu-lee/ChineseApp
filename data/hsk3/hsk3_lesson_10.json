@@ -20,16 +20,16 @@
           "question": "What does 数学 mean?",
           "correct": "Mathematics",
           "options": [
+            "Easy",
+            "Writing / To write / Composition",
             "Much more (degree after comparison)",
-            "Hardworking / To work hard",
-            "Mathematics",
-            "History"
+            "Mathematics"
           ],
           "option_pinyin": [
+            "róng yì",
+            "xiě zuò",
             "duō le",
-            "nǔ lì",
-            "shù xué",
-            "lì shǐ"
+            "shù xué"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: Mathematics",
           "correct": "数学",
           "options": [
-            "难",
             "数学",
-            "努力",
-            "进步"
+            "一些",
+            "内容",
+            "成绩"
           ],
           "option_pinyin": [
-            "nán",
             "shù xué",
-            "nǔ lì",
-            "jìn bù"
+            "yì xiē",
+            "nèi róng",
+            "chéng jì"
           ],
-          "question_chinese": "___很难学。",
-          "question_pinyin": "___很难学。",
-          "question_english": "Mathematics is very hard to learn."
+          "question_chinese": "___比历史难多了。",
+          "question_pinyin": "___比历史难多了。",
+          "question_english": "Maths is much harder than history."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Mathematics'?",
           "correct": "数学",
           "options": [
-            "难",
-            "科目",
-            "一些",
-            "数学"
+            "好多了",
+            "数学",
+            "内容",
+            "成绩"
           ],
           "option_pinyin": [
-            "nán",
-            "kē mù",
-            "yì xiē",
-            "shù xué"
+            "hǎo duō le",
+            "shù xué",
+            "nèi róng",
+            "chéng jì"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 历史 mean?",
           "correct": "History",
           "options": [
-            "Easy",
+            "To revise / To review",
             "History",
-            "Much better",
-            "Progress / To improve"
+            "Content / Subject matter",
+            "Much more (degree after comparison)"
           ],
           "option_pinyin": [
-            "róng yì",
+            "fù xí",
             "lì shǐ",
-            "hǎo duō le",
-            "jìn bù"
+            "nèi róng",
+            "duō le"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: History",
           "correct": "历史",
           "options": [
-            "努力",
-            "容易",
             "历史",
-            "进步"
+            "困难",
+            "一些",
+            "提升"
           ],
           "option_pinyin": [
-            "nǔ lì",
-            "róng yì",
             "lì shǐ",
-            "jìn bù"
+            "kùn nán",
+            "yì xiē",
+            "tí shēng"
           ],
-          "question_chinese": "我喜欢学___。",
-          "question_pinyin": "我喜欢学___。",
-          "question_english": "I like studying history."
+          "question_chinese": "数学比___难多了。",
+          "question_pinyin": "数学比___难多了。",
+          "question_english": "Maths is much harder than history."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'History'?",
           "correct": "历史",
           "options": [
-            "数学",
+            "提升",
             "历史",
-            "容易",
-            "复习"
+            "一些",
+            "科目"
           ],
           "option_pinyin": [
-            "shù xué",
+            "tí shēng",
             "lì shǐ",
-            "róng yì",
-            "fù xí"
+            "yì xiē",
+            "kē mù"
           ]
         }
       ],
@@ -140,69 +140,69 @@
     },
     {
       "id": "hsk3_l10_03",
-      "chinese": "难",
-      "pinyin": "nán",
-      "english": "Difficult / Hard",
+      "chinese": "困难",
+      "pinyin": "kùn nán",
+      "english": "Difficult / Difficulty",
       "part_of_speech": "adjective",
-      "example": "你觉得哪个科目最难？",
-      "translation": "Which subject do you find the hardest?",
+      "example": "这道题对我来说很困难。",
+      "translation": "This question is very difficult for me.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 难 mean?",
-          "correct": "Difficult / Hard",
+          "question": "What does 困难 mean?",
+          "correct": "Difficult / Difficulty",
           "options": [
-            "To revise / To review",
-            "Difficult / Hard",
-            "School subject",
-            "Results / Grades / Score"
+            "Mathematics",
+            "Results / Grades / Score",
+            "Some / A few / A little",
+            "Difficult / Difficulty"
           ],
           "option_pinyin": [
-            "fù xí",
-            "nán",
-            "kē mù",
-            "chéng jì"
+            "shù xué",
+            "chéng jì",
+            "yì xiē",
+            "kùn nán"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Difficult / Hard",
-          "correct": "难",
+          "question": "Fill in: Difficult / Difficulty",
+          "correct": "困难",
           "options": [
-            "难",
+            "努力",
             "科目",
-            "一些",
-            "努力"
+            "困难",
+            "多了"
           ],
           "option_pinyin": [
-            "nán",
+            "nǔ lì",
             "kē mù",
-            "yì xiē",
-            "nǔ lì"
+            "kùn nán",
+            "duō le"
           ],
-          "question_chinese": "这道题很___。",
-          "question_pinyin": "这道题很___。",
-          "question_english": "This question is very difficult."
+          "question_chinese": "这道题对我来说很___。",
+          "question_pinyin": "这道题对我来说很___。",
+          "question_english": "This question is very difficult for me."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Difficult / Hard'?",
-          "correct": "难",
+          "question": "Which word means 'Difficult / Difficulty'?",
+          "correct": "困难",
           "options": [
-            "难",
-            "好多了",
-            "一些",
-            "复习"
+            "提升",
+            "困难",
+            "写作",
+            "科目"
           ],
           "option_pinyin": [
-            "nán",
-            "hǎo duō le",
-            "yì xiē",
-            "fù xí"
+            "tí shēng",
+            "kùn nán",
+            "xiě zuò",
+            "kē mù"
           ]
         }
       ],
-      "example_pinyin": "nǐ jué de nǎ ge kē mù zuì nán"
+      "example_pinyin": "zhè dào tí duì wǒ lái shuō hěn kùn nán"
     },
     {
       "id": "hsk3_l10_04",
@@ -218,16 +218,16 @@
           "question": "What does 容易 mean?",
           "correct": "Easy",
           "options": [
-            "Hardworking / To work hard",
-            "Easy",
-            "Some / A few / A little",
-            "To revise / To review"
+            "Content / Subject matter",
+            "Much more (degree after comparison)",
+            "Results / Grades / Score",
+            "Easy"
           ],
           "option_pinyin": [
-            "nǔ lì",
-            "róng yì",
-            "yì xiē",
-            "fù xí"
+            "nèi róng",
+            "duō le",
+            "chéng jì",
+            "róng yì"
           ]
         },
         {
@@ -236,34 +236,34 @@
           "correct": "容易",
           "options": [
             "多了",
-            "成绩",
             "容易",
-            "好多了"
+            "一些",
+            "提升"
           ],
           "option_pinyin": [
             "duō le",
-            "chéng jì",
             "róng yì",
-            "hǎo duō le"
+            "yì xiē",
+            "tí shēng"
           ],
-          "question_chinese": "这个___做。",
-          "question_pinyin": "这个___做。",
-          "question_english": "This is easy to do."
+          "question_chinese": "这个科目___一些，你不用太担心。",
+          "question_pinyin": "这个科目___一些，你不用太担心。",
+          "question_english": "This subject is a little easier — you don't need to worry too much."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Easy'?",
           "correct": "容易",
           "options": [
-            "努力",
-            "进步",
+            "困难",
             "好多了",
+            "数学",
             "容易"
           ],
           "option_pinyin": [
-            "nǔ lì",
-            "jìn bù",
+            "kùn nán",
             "hǎo duō le",
+            "shù xué",
             "róng yì"
           ]
         }
@@ -284,16 +284,16 @@
           "question": "What does 成绩 mean?",
           "correct": "Results / Grades / Score",
           "options": [
+            "To practice / Practice",
             "Hardworking / To work hard",
-            "Much better",
-            "Difficult / Hard",
-            "Results / Grades / Score"
+            "Results / Grades / Score",
+            "Difficult / Difficulty"
           ],
           "option_pinyin": [
+            "liàn xí",
             "nǔ lì",
-            "hǎo duō le",
-            "nán",
-            "chéng jì"
+            "chéng jì",
+            "kùn nán"
           ]
         },
         {
@@ -301,36 +301,36 @@
           "question": "Fill in: Results / Grades / Score",
           "correct": "成绩",
           "options": [
+            "提升",
             "成绩",
-            "科目",
-            "难",
-            "历史"
+            "多了",
+            "一些"
           ],
           "option_pinyin": [
+            "tí shēng",
             "chéng jì",
-            "kē mù",
-            "nán",
-            "lì shǐ"
+            "duō le",
+            "yì xiē"
           ],
-          "question_chinese": "我的___提高了。",
-          "question_pinyin": "我的___提高了。",
-          "question_english": "My grades have improved."
+          "question_chinese": "她这次的___进步了很多。",
+          "question_pinyin": "她这次的___进步了很多。",
+          "question_english": "Her grades improved a lot this time."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Results / Grades / Score'?",
           "correct": "成绩",
           "options": [
-            "数学",
-            "容易",
-            "努力",
-            "成绩"
+            "一些",
+            "困难",
+            "成绩",
+            "好多了"
           ],
           "option_pinyin": [
-            "shù xué",
-            "róng yì",
-            "nǔ lì",
-            "chéng jì"
+            "yì xiē",
+            "kùn nán",
+            "chéng jì",
+            "hǎo duō le"
           ]
         }
       ],
@@ -350,16 +350,16 @@
           "question": "What does 科目 mean?",
           "correct": "School subject",
           "options": [
-            "Results / Grades / Score",
             "School subject",
-            "Difficult / Hard",
-            "Easy"
+            "Mathematics",
+            "Some / A few / A little",
+            "Writing / To write / Composition"
           ],
           "option_pinyin": [
-            "chéng jì",
             "kē mù",
-            "nán",
-            "róng yì"
+            "shù xué",
+            "yì xiē",
+            "xiě zuò"
           ]
         },
         {
@@ -367,36 +367,36 @@
           "question": "Fill in: School subject",
           "correct": "科目",
           "options": [
-            "成绩",
-            "进步",
+            "复习",
+            "写作",
             "科目",
-            "历史"
+            "一些"
           ],
           "option_pinyin": [
-            "chéng jì",
-            "jìn bù",
+            "fù xí",
+            "xiě zuò",
             "kē mù",
-            "lì shǐ"
+            "yì xiē"
           ],
-          "question_chinese": "你最喜欢哪个___？",
-          "question_pinyin": "你最喜欢哪个___？",
-          "question_english": "Which subject do you like most?"
+          "question_chinese": "你觉得哪个___最难？",
+          "question_pinyin": "你觉得哪个___最难？",
+          "question_english": "Which subject do you find the hardest?"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'School subject'?",
           "correct": "科目",
           "options": [
-            "好多了",
+            "多了",
             "科目",
-            "进步",
-            "成绩"
+            "练习",
+            "努力"
           ],
           "option_pinyin": [
-            "hǎo duō le",
+            "duō le",
             "kē mù",
-            "jìn bù",
-            "chéng jì"
+            "liàn xí",
+            "nǔ lì"
           ]
         }
       ],
@@ -416,16 +416,16 @@
           "question": "What does 复习 mean?",
           "correct": "To revise / To review",
           "options": [
-            "To revise / To review",
-            "Hardworking / To work hard",
-            "History",
-            "Results / Grades / Score"
+            "Difficult / Difficulty",
+            "To improve / To enhance / To raise",
+            "School subject",
+            "To revise / To review"
           ],
           "option_pinyin": [
-            "fù xí",
-            "nǔ lì",
-            "lì shǐ",
-            "chéng jì"
+            "kùn nán",
+            "tí shēng",
+            "kē mù",
+            "fù xí"
           ]
         },
         {
@@ -433,36 +433,36 @@
           "question": "Fill in: To revise / To review",
           "correct": "复习",
           "options": [
-            "难",
+            "数学",
             "复习",
-            "容易",
-            "努力"
+            "练习",
+            "容易"
           ],
           "option_pinyin": [
-            "nán",
+            "shù xué",
             "fù xí",
-            "róng yì",
-            "nǔ lì"
+            "liàn xí",
+            "róng yì"
           ],
-          "question_chinese": "考试前要好好___。",
-          "question_pinyin": "考试前要好好___。",
-          "question_english": "Revise well before the exam."
+          "question_chinese": "我每天都要___数学。",
+          "question_pinyin": "我每天都要___数学。",
+          "question_english": "I need to revise maths every day."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To revise / To review'?",
           "correct": "复习",
           "options": [
-            "一些",
-            "努力",
+            "数学",
+            "历史",
             "复习",
-            "容易"
+            "好多了"
           ],
           "option_pinyin": [
-            "yì xiē",
-            "nǔ lì",
+            "shù xué",
+            "lì shǐ",
             "fù xí",
-            "róng yì"
+            "hǎo duō le"
           ]
         }
       ],
@@ -482,16 +482,16 @@
           "question": "What does 努力 mean?",
           "correct": "Hardworking / To work hard",
           "options": [
-            "Hardworking / To work hard",
             "School subject",
-            "Easy",
-            "Some / A few / A little"
+            "To revise / To review",
+            "Difficult / Difficulty",
+            "Hardworking / To work hard"
           ],
           "option_pinyin": [
-            "nǔ lì",
             "kē mù",
-            "róng yì",
-            "yì xiē"
+            "fù xí",
+            "kùn nán",
+            "nǔ lì"
           ]
         },
         {
@@ -499,20 +499,20 @@
           "question": "Fill in: Hardworking / To work hard",
           "correct": "努力",
           "options": [
-            "成绩",
-            "进步",
+            "数学",
             "努力",
-            "好多了"
+            "好多了",
+            "多了"
           ],
           "option_pinyin": [
-            "chéng jì",
-            "jìn bù",
+            "shù xué",
             "nǔ lì",
-            "hǎo duō le"
+            "hǎo duō le",
+            "duō le"
           ],
-          "question_chinese": "你很___！",
-          "question_pinyin": "你很___！",
-          "question_english": "You're very hardworking!"
+          "question_chinese": "他___复习了一个月，成绩好多了。",
+          "question_pinyin": "他___复习了一个月，成绩好多了。",
+          "question_english": "He studied hard for a month and his grades are much better."
         },
         {
           "type": "multiple_choice",
@@ -520,15 +520,15 @@
           "correct": "努力",
           "options": [
             "多了",
-            "容易",
             "努力",
-            "难"
+            "困难",
+            "成绩"
           ],
           "option_pinyin": [
             "duō le",
-            "róng yì",
             "nǔ lì",
-            "nán"
+            "kùn nán",
+            "chéng jì"
           ]
         }
       ],
@@ -549,15 +549,15 @@
           "correct": "Some / A few / A little",
           "options": [
             "Some / A few / A little",
-            "Much better",
-            "School subject",
-            "Results / Grades / Score"
+            "Results / Grades / Score",
+            "To improve / To enhance / To raise",
+            "Difficult / Difficulty"
           ],
           "option_pinyin": [
             "yì xiē",
-            "hǎo duō le",
-            "kē mù",
-            "chéng jì"
+            "chéng jì",
+            "tí shēng",
+            "kùn nán"
           ]
         },
         {
@@ -565,35 +565,35 @@
           "question": "Fill in: Some / A few / A little",
           "correct": "一些",
           "options": [
-            "科目",
-            "难",
-            "一些",
-            "进步"
+            "容易",
+            "努力",
+            "多了",
+            "一些"
           ],
           "option_pinyin": [
-            "kē mù",
-            "nán",
-            "yì xiē",
-            "jìn bù"
+            "róng yì",
+            "nǔ lì",
+            "duō le",
+            "yì xiē"
           ],
-          "question_chinese": "我有___问题想问。",
-          "question_pinyin": "我有___问题想问。",
-          "question_english": "I have some questions to ask."
+          "question_chinese": "老师给了我们___练习题。",
+          "question_pinyin": "老师给了我们___练习题。",
+          "question_english": "The teacher gave us some exercises."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Some / A few / A little'?",
           "correct": "一些",
           "options": [
-            "努力",
+            "好多了",
+            "数学",
             "一些",
-            "历史",
             "复习"
           ],
           "option_pinyin": [
-            "nǔ lì",
+            "hǎo duō le",
+            "shù xué",
             "yì xiē",
-            "lì shǐ",
             "fù xí"
           ]
         }
@@ -602,69 +602,69 @@
     },
     {
       "id": "hsk3_l10_10",
-      "chinese": "进步",
-      "pinyin": "jìn bù",
-      "english": "Progress / To improve",
-      "part_of_speech": "noun/verb",
-      "example": "她这次的成绩进步了很多。",
-      "translation": "Her grades improved a lot this time.",
+      "chinese": "提升",
+      "pinyin": "tí shēng",
+      "english": "To improve / To enhance / To raise",
+      "part_of_speech": "verb",
+      "example": "他的成绩提升了很多。",
+      "translation": "His grades improved a lot.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 进步 mean?",
-          "correct": "Progress / To improve",
+          "question": "What does 提升 mean?",
+          "correct": "To improve / To enhance / To raise",
           "options": [
-            "School subject",
-            "Hardworking / To work hard",
-            "History",
-            "Progress / To improve"
+            "Content / Subject matter",
+            "To improve / To enhance / To raise",
+            "Some / A few / A little",
+            "Much more (degree after comparison)"
           ],
           "option_pinyin": [
-            "kē mù",
-            "nǔ lì",
-            "lì shǐ",
-            "jìn bù"
+            "nèi róng",
+            "tí shēng",
+            "yì xiē",
+            "duō le"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Progress / To improve",
-          "correct": "进步",
+          "question": "Fill in: To improve / To enhance / To raise",
+          "correct": "提升",
           "options": [
-            "多了",
-            "一些",
-            "进步",
-            "难"
+            "提升",
+            "努力",
+            "成绩",
+            "多了"
           ],
           "option_pinyin": [
-            "duō le",
-            "yì xiē",
-            "jìn bù",
-            "nán"
+            "tí shēng",
+            "nǔ lì",
+            "chéng jì",
+            "duō le"
           ],
-          "question_chinese": "你___了很多。",
-          "question_pinyin": "你___了很多。",
-          "question_english": "You've improved a lot."
+          "question_chinese": "他的成绩___了很多。",
+          "question_pinyin": "他的成绩___了很多。",
+          "question_english": "His grades improved a lot."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Progress / To improve'?",
-          "correct": "进步",
+          "question": "Which word means 'To improve / To enhance / To raise'?",
+          "correct": "提升",
           "options": [
-            "进步",
-            "努力",
-            "好多了",
-            "一些"
+            "一些",
+            "提升",
+            "历史",
+            "练习"
           ],
           "option_pinyin": [
-            "jìn bù",
-            "nǔ lì",
-            "hǎo duō le",
-            "yì xiē"
+            "yì xiē",
+            "tí shēng",
+            "lì shǐ",
+            "liàn xí"
           ]
         }
       ],
-      "example_pinyin": "tā zhè cì de chéng jì jìn bù le hěn duō"
+      "example_pinyin": "tā de chéng jì tí shēng le hěn duō"
     },
     {
       "id": "hsk3_l10_11",
@@ -681,15 +681,15 @@
           "correct": "Much better",
           "options": [
             "Much better",
-            "Results / Grades / Score",
-            "Mathematics",
-            "Some / A few / A little"
+            "Some / A few / A little",
+            "Content / Subject matter",
+            "Easy"
           ],
           "option_pinyin": [
             "hǎo duō le",
-            "chéng jì",
-            "shù xué",
-            "yì xiē"
+            "yì xiē",
+            "nèi róng",
+            "róng yì"
           ]
         },
         {
@@ -697,36 +697,36 @@
           "question": "Fill in: Much better",
           "correct": "好多了",
           "options": [
-            "努力",
+            "一些",
+            "提升",
             "好多了",
-            "成绩",
-            "数学"
+            "复习"
           ],
           "option_pinyin": [
-            "nǔ lì",
+            "yì xiē",
+            "tí shēng",
             "hǎo duō le",
-            "chéng jì",
-            "shù xué"
+            "fù xí"
           ],
-          "question_chinese": "今天感觉___。",
-          "question_pinyin": "今天感觉___。",
-          "question_english": "Feeling much better today."
+          "question_chinese": "他的成绩比以前___。",
+          "question_pinyin": "他的成绩比以前___。",
+          "question_english": "His grades are much better than before."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Much better'?",
           "correct": "好多了",
           "options": [
-            "多了",
-            "进步",
-            "努力",
-            "好多了"
+            "困难",
+            "好多了",
+            "科目",
+            "努力"
           ],
           "option_pinyin": [
-            "duō le",
-            "jìn bù",
-            "nǔ lì",
-            "hǎo duō le"
+            "kùn nán",
+            "hǎo duō le",
+            "kē mù",
+            "nǔ lì"
           ]
         }
       ],
@@ -746,16 +746,16 @@
           "question": "What does 多了 mean?",
           "correct": "Much more (degree after comparison)",
           "options": [
-            "Results / Grades / Score",
-            "Mathematics",
-            "Easy",
-            "Much more (degree after comparison)"
+            "To improve / To enhance / To raise",
+            "Much more (degree after comparison)",
+            "To practice / Practice",
+            "Mathematics"
           ],
           "option_pinyin": [
-            "chéng jì",
-            "shù xué",
-            "róng yì",
-            "duō le"
+            "tí shēng",
+            "duō le",
+            "liàn xí",
+            "shù xué"
           ]
         },
         {
@@ -763,40 +763,238 @@
           "question": "Fill in: Much more (degree after comparison)",
           "correct": "多了",
           "options": [
+            "复习",
+            "一些",
             "多了",
-            "科目",
-            "容易",
-            "历史"
+            "数学"
           ],
           "option_pinyin": [
+            "fù xí",
+            "yì xiē",
             "duō le",
-            "kē mù",
-            "róng yì",
-            "lì shǐ"
+            "shù xué"
           ],
           "question_chinese": "数学比历史难___。",
           "question_pinyin": "数学比历史难___。",
-          "question_english": "Mathematics is much harder than history."
+          "question_english": "Maths is much harder than history."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Much more (degree after comparison)'?",
           "correct": "多了",
           "options": [
-            "难",
-            "复习",
-            "努力",
+            "提升",
+            "数学",
+            "写作",
             "多了"
           ],
           "option_pinyin": [
-            "nán",
-            "fù xí",
-            "nǔ lì",
+            "tí shēng",
+            "shù xué",
+            "xiě zuò",
             "duō le"
           ]
         }
       ],
       "example_pinyin": "shù xué bǐ lì shǐ nán duō le"
+    },
+    {
+      "id": "hsk3_l10_13",
+      "chinese": "练习",
+      "pinyin": "liàn xí",
+      "english": "To practice / Practice",
+      "part_of_speech": "verb/noun",
+      "example": "老师给了我们一些练习题。",
+      "translation": "The teacher gave us some practice questions.",
+      "example_pinyin": "lǎo shī gěi le wǒ men yī xiē liàn xí tí",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 练习 mean?",
+          "correct": "To practice / Practice",
+          "options": [
+            "Writing / To write / Composition",
+            "Easy",
+            "Results / Grades / Score",
+            "To practice / Practice"
+          ],
+          "option_pinyin": [
+            "xiě zuò",
+            "róng yì",
+            "chéng jì",
+            "liàn xí"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To practice / Practice",
+          "correct": "练习",
+          "options": [
+            "多了",
+            "复习",
+            "历史",
+            "练习"
+          ],
+          "option_pinyin": [
+            "duō le",
+            "fù xí",
+            "lì shǐ",
+            "liàn xí"
+          ],
+          "question_chinese": "老师给了我们一些___题。",
+          "question_pinyin": "老师给了我们一些___题。",
+          "question_english": "The teacher gave us some practice questions."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To practice / Practice'?",
+          "correct": "练习",
+          "options": [
+            "数学",
+            "努力",
+            "好多了",
+            "练习"
+          ],
+          "option_pinyin": [
+            "shù xué",
+            "nǔ lì",
+            "hǎo duō le",
+            "liàn xí"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l10_14",
+      "chinese": "写作",
+      "pinyin": "xiě zuò",
+      "english": "Writing / To write / Composition",
+      "part_of_speech": "noun/verb",
+      "example": "写作需要多练习。",
+      "translation": "Writing requires a lot of practice.",
+      "example_pinyin": "xiě zuò xū yào duō liàn xí",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 写作 mean?",
+          "correct": "Writing / To write / Composition",
+          "options": [
+            "Writing / To write / Composition",
+            "Some / A few / A little",
+            "To improve / To enhance / To raise",
+            "Results / Grades / Score"
+          ],
+          "option_pinyin": [
+            "xiě zuò",
+            "yì xiē",
+            "tí shēng",
+            "chéng jì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Writing / To write / Composition",
+          "correct": "写作",
+          "options": [
+            "写作",
+            "成绩",
+            "科目",
+            "复习"
+          ],
+          "option_pinyin": [
+            "xiě zuò",
+            "chéng jì",
+            "kē mù",
+            "fù xí"
+          ],
+          "question_chinese": "___需要多练习。",
+          "question_pinyin": "___需要多练习。",
+          "question_english": "Writing requires a lot of practice."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Writing / To write / Composition'?",
+          "correct": "写作",
+          "options": [
+            "困难",
+            "内容",
+            "努力",
+            "写作"
+          ],
+          "option_pinyin": [
+            "kùn nán",
+            "nèi róng",
+            "nǔ lì",
+            "xiě zuò"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l10_15",
+      "chinese": "内容",
+      "pinyin": "nèi róng",
+      "english": "Content / Subject matter",
+      "part_of_speech": "noun",
+      "example": "再认真复习这些科目的内容。",
+      "translation": "Carefully revise the content of these subjects again.",
+      "example_pinyin": "zài rèn zhēn fù xí zhè xiē kē mù dì nèi róng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 内容 mean?",
+          "correct": "Content / Subject matter",
+          "options": [
+            "Much more (degree after comparison)",
+            "Content / Subject matter",
+            "Much better",
+            "To improve / To enhance / To raise"
+          ],
+          "option_pinyin": [
+            "duō le",
+            "nèi róng",
+            "hǎo duō le",
+            "tí shēng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Content / Subject matter",
+          "correct": "内容",
+          "options": [
+            "内容",
+            "好多了",
+            "科目",
+            "提升"
+          ],
+          "option_pinyin": [
+            "nèi róng",
+            "hǎo duō le",
+            "kē mù",
+            "tí shēng"
+          ],
+          "question_chinese": "再认真复习这些科目的___。",
+          "question_pinyin": "再认真复习这些科目的___。",
+          "question_english": "Carefully revise the content of these subjects again."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Content / Subject matter'?",
+          "correct": "内容",
+          "options": [
+            "提升",
+            "复习",
+            "努力",
+            "内容"
+          ],
+          "option_pinyin": [
+            "tí shēng",
+            "fù xí",
+            "nǔ lì",
+            "nèi róng"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l10_p01",

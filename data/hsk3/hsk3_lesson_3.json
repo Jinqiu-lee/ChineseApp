@@ -20,16 +20,16 @@
           "question": "What does 饮料 mean?",
           "correct": "Drink / Beverage",
           "options": [
-            "To put / To place",
-            "[Measure word for machines/appliances]",
-            "Enough / Sufficient",
-            "Drink / Beverage"
+            "Drink / Beverage",
+            "Right side / On the right",
+            "Right next to / Adjacent to",
+            "Bottle / [Measure word for bottles]"
           ],
           "option_pinyin": [
-            "fàng",
-            "tái",
-            "gòu",
-            "yǐn liào"
+            "yǐn liào",
+            "yòu biān",
+            "āi zhe",
+            "píng"
           ]
         },
         {
@@ -37,20 +37,20 @@
           "question": "Fill in: Drink / Beverage",
           "correct": "饮料",
           "options": [
-            "果汁",
-            "矿泉水",
+            "瓶",
+            "就",
             "饮料",
-            "放"
+            "左边"
           ],
           "option_pinyin": [
-            "guǒ zhī",
-            "kuàng quán shuǐ",
+            "píng",
+            "jiù",
             "yǐn liào",
-            "fàng"
+            "zuǒ biān"
           ],
-          "question_chinese": "你要什么___？",
-          "question_pinyin": "你要什么___？",
-          "question_english": "What drink do you want?"
+          "question_chinese": "桌子上放着很多___。",
+          "question_pinyin": "桌子上放着很多___。",
+          "question_english": "Many drinks are placed on the table."
         },
         {
           "type": "multiple_choice",
@@ -58,14 +58,14 @@
           "correct": "饮料",
           "options": [
             "饮料",
-            "放",
-            "旁边",
+            "着",
+            "果汁",
             "矿泉水"
           ],
           "option_pinyin": [
             "yǐn liào",
-            "fàng",
-            "páng biān",
+            "zhe",
+            "guǒ zhī",
             "kuàng quán shuǐ"
           ]
         }
@@ -74,69 +74,69 @@
     },
     {
       "id": "hsk3_l3_02",
-      "chinese": "放",
-      "pinyin": "fàng",
-      "english": "To put / To place",
+      "chinese": "摆",
+      "pinyin": "bǎi",
+      "english": "To arrange / To display / To place",
       "part_of_speech": "verb",
-      "example": "我去拿几瓶过来，放在桌子上。",
-      "translation": "I'll go get a few bottles and place them on the table.",
+      "example": "把书摆在书架上。",
+      "translation": "Put the books on the shelf.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 放 mean?",
-          "correct": "To put / To place",
+          "question": "What does 摆 mean?",
+          "correct": "To arrange / To display / To place",
           "options": [
-            "To put / To place",
-            "Right side / On the right",
-            "Enough / Sufficient",
-            "Left side / On the left"
+            "Right next to / Adjacent to",
+            "[Measure word for machines/appliances]",
+            "To arrange / To display / To place",
+            "Bottle / [Measure word for bottles]"
           ],
           "option_pinyin": [
-            "fàng",
-            "yòu biān",
-            "gòu",
-            "zuǒ biān"
+            "āi zhe",
+            "tái",
+            "bǎi",
+            "píng"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To put / To place",
-          "correct": "放",
+          "question": "Fill in: To arrange / To display / To place",
+          "correct": "摆",
           "options": [
-            "就",
-            "果汁",
-            "台",
-            "放"
+            "右边",
+            "瓶",
+            "摆",
+            "左边"
           ],
           "option_pinyin": [
-            "jiù",
-            "guǒ zhī",
-            "tái",
-            "fàng"
+            "yòu biān",
+            "píng",
+            "bǎi",
+            "zuǒ biān"
           ],
-          "question_chinese": "把书___在桌子上。",
-          "question_pinyin": "把书___在桌子上。",
-          "question_english": "Put the book on the table."
+          "question_chinese": "把书___在书架上。",
+          "question_pinyin": "把书___在书架上。",
+          "question_english": "Put the books on the shelf."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To put / To place'?",
-          "correct": "放",
+          "question": "Which word means 'To arrange / To display / To place'?",
+          "correct": "摆",
           "options": [
-            "放",
-            "着",
-            "够",
-            "台"
+            "矿泉水",
+            "挨着",
+            "右边",
+            "摆"
           ],
           "option_pinyin": [
-            "fàng",
-            "zhe",
-            "gòu",
-            "tái"
+            "kuàng quán shuǐ",
+            "āi zhe",
+            "yòu biān",
+            "bǎi"
           ]
         }
       ],
-      "example_pinyin": "wǒ qù ná jǐ píng guò lái fàng zài zhuō zi shàng"
+      "example_pinyin": "bǎ shū bǎi zài shū jià shàng"
     },
     {
       "id": "hsk3_l3_03",
@@ -152,16 +152,16 @@
           "question": "What does 台 mean?",
           "correct": "[Measure word for machines/appliances]",
           "options": [
-            "To put / To place",
-            "Just / Right there / Exactly",
-            "Fruit juice",
-            "[Measure word for machines/appliances]"
+            "[Measure word for phones, movies, novels, TV shows]",
+            "[Measure word for machines/appliances]",
+            "Novel / Fiction",
+            "Right next to / Adjacent to"
           ],
           "option_pinyin": [
-            "fàng",
-            "jiù",
-            "guǒ zhī",
-            "tái"
+            "bù",
+            "tái",
+            "xiǎo shuō",
+            "āi zhe"
           ]
         },
         {
@@ -169,36 +169,36 @@
           "question": "Fill in: [Measure word for machines/appliances]",
           "correct": "台",
           "options": [
+            "瓶",
+            "就",
             "台",
-            "矿泉水",
-            "饮料",
-            "放"
+            "部"
           ],
           "option_pinyin": [
+            "píng",
+            "jiù",
             "tái",
-            "kuàng quán shuǐ",
-            "yǐn liào",
-            "fàng"
+            "bù"
           ],
-          "question_chinese": "这___电脑是我的。",
-          "question_pinyin": "这___电脑是我的。",
-          "question_english": "This computer is mine."
+          "question_chinese": "房间里放着一___电脑。",
+          "question_pinyin": "房间里放着一___电脑。",
+          "question_english": "A computer is placed in the room."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means '[Measure word for machines/appliances]'?",
           "correct": "台",
           "options": [
-            "左边",
-            "瓶",
-            "够",
-            "台"
+            "台",
+            "摆",
+            "部",
+            "瓶"
           ],
           "option_pinyin": [
-            "zuǒ biān",
-            "píng",
-            "gòu",
-            "tái"
+            "tái",
+            "bǎi",
+            "bù",
+            "píng"
           ]
         }
       ],
@@ -219,15 +219,15 @@
           "correct": "Bottle / [Measure word for bottles]",
           "options": [
             "Bottle / [Measure word for bottles]",
-            "Next to / Beside",
-            "Just / Right there / Exactly",
-            "Fruit juice"
+            "Left side / On the left",
+            "Drink / Beverage",
+            "Just / Right there / Exactly"
           ],
           "option_pinyin": [
             "píng",
-            "páng biān",
-            "jiù",
-            "guǒ zhī"
+            "zuǒ biān",
+            "yǐn liào",
+            "jiù"
           ]
         },
         {
@@ -235,35 +235,35 @@
           "question": "Fill in: Bottle / [Measure word for bottles]",
           "correct": "瓶",
           "options": [
-            "旁边",
-            "就",
+            "够",
             "瓶",
-            "台"
+            "挨着",
+            "就"
           ],
           "option_pinyin": [
-            "páng biān",
-            "jiù",
+            "gòu",
             "píng",
-            "tái"
+            "āi zhe",
+            "jiù"
           ],
-          "question_chinese": "一___水。",
-          "question_pinyin": "一___水。",
-          "question_english": "A bottle of water."
+          "question_chinese": "桌子上有两___矿泉水。",
+          "question_pinyin": "桌子上有两___矿泉水。",
+          "question_english": "There are two bottles of mineral water on the table."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Bottle / [Measure word for bottles]'?",
           "correct": "瓶",
           "options": [
-            "果汁",
-            "左边",
-            "够",
+            "台",
+            "矿泉水",
+            "着",
             "瓶"
           ],
           "option_pinyin": [
-            "guǒ zhī",
-            "zuǒ biān",
-            "gòu",
+            "tái",
+            "kuàng quán shuǐ",
+            "zhe",
             "píng"
           ]
         }
@@ -284,16 +284,16 @@
           "question": "What does 果汁 mean?",
           "correct": "Fruit juice",
           "options": [
-            "Enough / Sufficient",
-            "[Measure word for machines/appliances]",
             "Fruit juice",
-            "To put / To place"
+            "Left side / On the left",
+            "Right next to / Adjacent to",
+            "[Measure word for machines/appliances]"
           ],
           "option_pinyin": [
-            "gòu",
-            "tái",
             "guǒ zhī",
-            "fàng"
+            "zuǒ biān",
+            "āi zhe",
+            "tái"
           ]
         },
         {
@@ -301,36 +301,36 @@
           "question": "Fill in: Fruit juice",
           "correct": "果汁",
           "options": [
-            "矿泉水",
-            "够",
-            "左边",
-            "果汁"
+            "挨着",
+            "小说",
+            "果汁",
+            "左边"
           ],
           "option_pinyin": [
-            "kuàng quán shuǐ",
-            "gòu",
-            "zuǒ biān",
-            "guǒ zhī"
+            "āi zhe",
+            "xiǎo shuō",
+            "guǒ zhī",
+            "zuǒ biān"
           ],
-          "question_chinese": "我要喝___。",
-          "question_pinyin": "我要喝___。",
-          "question_english": "I want to drink fruit juice."
+          "question_chinese": "左边放着___，右边放着矿泉水。",
+          "question_pinyin": "左边放着___，右边放着矿泉水。",
+          "question_english": "Fruit juice is placed on the left; mineral water is placed on the right."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Fruit juice'?",
           "correct": "果汁",
           "options": [
-            "果汁",
             "左边",
+            "果汁",
             "着",
-            "放"
+            "够"
           ],
           "option_pinyin": [
-            "guǒ zhī",
             "zuǒ biān",
+            "guǒ zhī",
             "zhe",
-            "fàng"
+            "gòu"
           ]
         }
       ],
@@ -350,16 +350,16 @@
           "question": "What does 矿泉水 mean?",
           "correct": "Mineral water",
           "options": [
-            "Left side / On the left",
-            "Fruit juice",
+            "[Measure word for phones, movies, novels, TV shows]",
+            "Right side / On the right",
             "Mineral water",
-            "To put / To place"
+            "Fruit juice"
           ],
           "option_pinyin": [
-            "zuǒ biān",
-            "guǒ zhī",
+            "bù",
+            "yòu biān",
             "kuàng quán shuǐ",
-            "fàng"
+            "guǒ zhī"
           ]
         },
         {
@@ -368,35 +368,35 @@
           "correct": "矿泉水",
           "options": [
             "台",
-            "矿泉水",
-            "够",
-            "左边"
+            "摆",
+            "部",
+            "矿泉水"
           ],
           "option_pinyin": [
             "tái",
-            "kuàng quán shuǐ",
-            "gòu",
-            "zuǒ biān"
+            "bǎi",
+            "bù",
+            "kuàng quán shuǐ"
           ],
-          "question_chinese": "给我一瓶___。",
-          "question_pinyin": "给我一瓶___。",
-          "question_english": "Give me a bottle of mineral water."
+          "question_chinese": "冰箱就在门口旁边，你去拿一瓶___吧。",
+          "question_pinyin": "冰箱就在门口旁边，你去拿一瓶___吧。",
+          "question_english": "The fridge is right beside the entrance; go get a bottle of mineral water."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Mineral water'?",
           "correct": "矿泉水",
           "options": [
-            "果汁",
-            "够",
+            "着",
             "矿泉水",
-            "瓶"
+            "挨着",
+            "饮料"
           ],
           "option_pinyin": [
-            "guǒ zhī",
-            "gòu",
+            "zhe",
             "kuàng quán shuǐ",
-            "píng"
+            "āi zhe",
+            "yǐn liào"
           ]
         }
       ],
@@ -416,16 +416,16 @@
           "question": "What does 就 mean?",
           "correct": "Just / Right there / Exactly",
           "options": [
-            "[Measure word for machines/appliances]",
-            "Enough / Sufficient",
-            "Bottle / [Measure word for bottles]",
-            "Just / Right there / Exactly"
+            "Just / Right there / Exactly",
+            "Mineral water",
+            "Novel / Fiction",
+            "[Measure word for phones, movies, novels, TV shows]"
           ],
           "option_pinyin": [
-            "tái",
-            "gòu",
-            "píng",
-            "jiù"
+            "jiù",
+            "kuàng quán shuǐ",
+            "xiǎo shuō",
+            "bù"
           ]
         },
         {
@@ -433,36 +433,36 @@
           "question": "Fill in: Just / Right there / Exactly",
           "correct": "就",
           "options": [
-            "旁边",
             "果汁",
             "就",
-            "台"
+            "左边",
+            "饮料"
           ],
           "option_pinyin": [
-            "páng biān",
             "guǒ zhī",
             "jiù",
-            "tái"
+            "zuǒ biān",
+            "yǐn liào"
           ],
-          "question_chinese": "银行___在你旁边。",
-          "question_pinyin": "银行___在你旁边。",
-          "question_english": "The bank is right next to you."
+          "question_chinese": "电脑___在你右边。",
+          "question_pinyin": "电脑___在你右边。",
+          "question_english": "The computer is right to your right."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Just / Right there / Exactly'?",
           "correct": "就",
           "options": [
+            "左边",
+            "饮料",
             "就",
-            "矿泉水",
-            "台",
-            "饮料"
+            "着"
           ],
           "option_pinyin": [
+            "zuǒ biān",
+            "yǐn liào",
             "jiù",
-            "kuàng quán shuǐ",
-            "tái",
-            "yǐn liào"
+            "zhe"
           ]
         }
       ],
@@ -470,69 +470,69 @@
     },
     {
       "id": "hsk3_l3_08",
-      "chinese": "旁边",
-      "pinyin": "páng biān",
-      "english": "Next to / Beside",
-      "part_of_speech": "noun",
-      "example": "冰箱就在门口旁边。",
-      "translation": "The fridge is right beside the entrance.",
+      "chinese": "挨着",
+      "pinyin": "āi zhe",
+      "english": "Right next to / Adjacent to",
+      "part_of_speech": "verb",
+      "example": "图书馆挨着咖啡厅。",
+      "translation": "The library is right next to the coffee shop.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 旁边 mean?",
-          "correct": "Next to / Beside",
+          "question": "What does 挨着 mean?",
+          "correct": "Right next to / Adjacent to",
           "options": [
-            "Left side / On the left",
-            "Next to / Beside",
-            "To put / To place",
-            "Bottle / [Measure word for bottles]"
+            "Right next to / Adjacent to",
+            "To arrange / To display / To place",
+            "Right side / On the right",
+            "[Measure word for machines/appliances]"
           ],
           "option_pinyin": [
-            "zuǒ biān",
-            "páng biān",
-            "fàng",
-            "píng"
+            "āi zhe",
+            "bǎi",
+            "yòu biān",
+            "tái"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Next to / Beside",
-          "correct": "旁边",
+          "question": "Fill in: Right next to / Adjacent to",
+          "correct": "挨着",
           "options": [
-            "饮料",
-            "旁边",
+            "挨着",
+            "着",
             "就",
-            "放"
+            "够"
           ],
           "option_pinyin": [
-            "yǐn liào",
-            "páng biān",
+            "āi zhe",
+            "zhe",
             "jiù",
-            "fàng"
+            "gòu"
           ],
-          "question_chinese": "银行在邮局___。",
-          "question_pinyin": "银行在邮局___。",
-          "question_english": "The bank is next to the post office."
+          "question_chinese": "图书馆___咖啡厅。",
+          "question_pinyin": "图书馆___咖啡厅。",
+          "question_english": "The library is right next to the coffee shop."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Next to / Beside'?",
-          "correct": "旁边",
+          "question": "Which word means 'Right next to / Adjacent to'?",
+          "correct": "挨着",
           "options": [
+            "着",
+            "挨着",
             "果汁",
-            "放",
-            "矿泉水",
-            "旁边"
+            "瓶"
           ],
           "option_pinyin": [
+            "zhe",
+            "āi zhe",
             "guǒ zhī",
-            "fàng",
-            "kuàng quán shuǐ",
-            "páng biān"
+            "píng"
           ]
         }
       ],
-      "example_pinyin": "bīng xiāng jiù zài mén kǒu páng biān"
+      "example_pinyin": "tú shū guǎn āi zhe kā fēi tīng"
     },
     {
       "id": "hsk3_l3_09",
@@ -548,15 +548,15 @@
           "question": "What does 右边 mean?",
           "correct": "Right side / On the right",
           "options": [
+            "Enough / Sufficient",
+            "[Measure word for machines/appliances]",
             "Right side / On the right",
-            "Bottle / [Measure word for bottles]",
-            "[Aspect particle: ongoing state]",
             "Left side / On the left"
           ],
           "option_pinyin": [
+            "gòu",
+            "tái",
             "yòu biān",
-            "píng",
-            "zhe",
             "zuǒ biān"
           ]
         },
@@ -565,36 +565,36 @@
           "question": "Fill in: Right side / On the right",
           "correct": "右边",
           "options": [
-            "就",
+            "饮料",
             "够",
             "右边",
-            "果汁"
+            "矿泉水"
           ],
           "option_pinyin": [
-            "jiù",
+            "yǐn liào",
             "gòu",
             "yòu biān",
-            "guǒ zhī"
+            "kuàng quán shuǐ"
           ],
-          "question_chinese": "厕所在___。",
-          "question_pinyin": "厕所在___。",
-          "question_english": "The bathroom is on the right."
+          "question_chinese": "___放着一瓶果汁。",
+          "question_pinyin": "___放着一瓶果汁。",
+          "question_english": "One bottle of fruit juice is placed on the right."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Right side / On the right'?",
           "correct": "右边",
           "options": [
-            "右边",
+            "着",
             "饮料",
-            "台",
-            "左边"
+            "右边",
+            "果汁"
           ],
           "option_pinyin": [
-            "yòu biān",
+            "zhe",
             "yǐn liào",
-            "tái",
-            "zuǒ biān"
+            "yòu biān",
+            "guǒ zhī"
           ]
         }
       ],
@@ -614,16 +614,16 @@
           "question": "What does 左边 mean?",
           "correct": "Left side / On the left",
           "options": [
+            "Left side / On the left",
             "Just / Right there / Exactly",
-            "[Measure word for machines/appliances]",
-            "Next to / Beside",
-            "Left side / On the left"
+            "Enough / Sufficient",
+            "To arrange / To display / To place"
           ],
           "option_pinyin": [
+            "zuǒ biān",
             "jiù",
-            "tái",
-            "páng biān",
-            "zuǒ biān"
+            "gòu",
+            "bǎi"
           ]
         },
         {
@@ -631,36 +631,36 @@
           "question": "Fill in: Left side / On the left",
           "correct": "左边",
           "options": [
-            "矿泉水",
+            "够",
             "左边",
-            "瓶",
-            "放"
+            "右边",
+            "台"
           ],
           "option_pinyin": [
-            "kuàng quán shuǐ",
+            "gòu",
             "zuǒ biān",
-            "píng",
-            "fàng"
+            "yòu biān",
+            "tái"
           ],
-          "question_chinese": "图书馆在___。",
-          "question_pinyin": "图书馆在___。",
-          "question_english": "The library is on the left."
+          "question_chinese": "___放着两瓶矿泉水。",
+          "question_pinyin": "___放着两瓶矿泉水。",
+          "question_english": "Two bottles of mineral water are placed on the left."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Left side / On the left'?",
           "correct": "左边",
           "options": [
-            "矿泉水",
             "果汁",
-            "旁边",
-            "左边"
+            "部",
+            "左边",
+            "小说"
           ],
           "option_pinyin": [
-            "kuàng quán shuǐ",
             "guǒ zhī",
-            "páng biān",
-            "zuǒ biān"
+            "bù",
+            "zuǒ biān",
+            "xiǎo shuō"
           ]
         }
       ],
@@ -680,15 +680,15 @@
           "question": "What does 够 mean?",
           "correct": "Enough / Sufficient",
           "options": [
-            "To put / To place",
+            "Novel / Fiction",
+            "[Measure word for machines/appliances]",
             "Drink / Beverage",
-            "Fruit juice",
             "Enough / Sufficient"
           ],
           "option_pinyin": [
-            "fàng",
+            "xiǎo shuō",
+            "tái",
             "yǐn liào",
-            "guǒ zhī",
             "gòu"
           ]
         },
@@ -697,36 +697,36 @@
           "question": "Fill in: Enough / Sufficient",
           "correct": "够",
           "options": [
-            "饮料",
-            "旁边",
+            "着",
             "够",
+            "摆",
             "就"
           ],
           "option_pinyin": [
-            "yǐn liào",
-            "páng biān",
+            "zhe",
             "gòu",
+            "bǎi",
             "jiù"
           ],
-          "question_chinese": "钱___了吗？",
-          "question_pinyin": "钱___了吗？",
-          "question_english": "Is the money enough?"
+          "question_chinese": "这些饮料___喝了吗？",
+          "question_pinyin": "这些饮料___喝了吗？",
+          "question_english": "Are these drinks enough to drink?"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Enough / Sufficient'?",
           "correct": "够",
           "options": [
-            "左边",
-            "台",
             "够",
-            "矿泉水"
+            "台",
+            "就",
+            "果汁"
           ],
           "option_pinyin": [
-            "zuǒ biān",
-            "tái",
             "gòu",
-            "kuàng quán shuǐ"
+            "tái",
+            "jiù",
+            "guǒ zhī"
           ]
         }
       ],
@@ -746,16 +746,16 @@
           "question": "What does 着 mean?",
           "correct": "[Aspect particle: ongoing state]",
           "options": [
-            "[Measure word for machines/appliances]",
-            "Mineral water",
             "[Aspect particle: ongoing state]",
-            "To put / To place"
+            "Right next to / Adjacent to",
+            "Bottle / [Measure word for bottles]",
+            "Novel / Fiction"
           ],
           "option_pinyin": [
-            "tái",
-            "kuàng quán shuǐ",
             "zhe",
-            "fàng"
+            "āi zhe",
+            "píng",
+            "xiǎo shuō"
           ]
         },
         {
@@ -763,40 +763,172 @@
           "question": "Fill in: [Aspect particle: ongoing state]",
           "correct": "着",
           "options": [
-            "左边",
-            "右边",
+            "部",
+            "就",
             "着",
-            "放"
+            "小说"
           ],
           "option_pinyin": [
-            "zuǒ biān",
-            "yòu biān",
+            "bù",
+            "jiù",
             "zhe",
-            "fàng"
+            "xiǎo shuō"
           ],
-          "question_chinese": "门开___。",
-          "question_pinyin": "门开___。",
-          "question_english": "The door is open."
+          "question_chinese": "桌子上放___两瓶矿泉水。",
+          "question_pinyin": "桌子上放___两瓶矿泉水。",
+          "question_english": "Two bottles of mineral water are placed on the table."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means '[Aspect particle: ongoing state]'?",
           "correct": "着",
           "options": [
-            "够",
-            "就",
             "着",
-            "饮料"
+            "挨着",
+            "就",
+            "够"
           ],
           "option_pinyin": [
-            "gòu",
-            "jiù",
             "zhe",
-            "yǐn liào"
+            "āi zhe",
+            "jiù",
+            "gòu"
           ]
         }
       ],
       "example_pinyin": "zhuō zi shàng fàng zhe liǎng píng kuàng quán shuǐ"
+    },
+    {
+      "id": "hsk3_l3_13",
+      "chinese": "小说",
+      "pinyin": "xiǎo shuō",
+      "english": "Novel / Fiction",
+      "part_of_speech": "noun",
+      "example": "这部小说很有意思。",
+      "translation": "This novel is very interesting.",
+      "example_pinyin": "zhè bù xiǎo shuō hěn yǒu yì si",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 小说 mean?",
+          "correct": "Novel / Fiction",
+          "options": [
+            "Left side / On the left",
+            "Enough / Sufficient",
+            "Drink / Beverage",
+            "Novel / Fiction"
+          ],
+          "option_pinyin": [
+            "zuǒ biān",
+            "gòu",
+            "yǐn liào",
+            "xiǎo shuō"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Novel / Fiction",
+          "correct": "小说",
+          "options": [
+            "摆",
+            "够",
+            "小说",
+            "挨着"
+          ],
+          "option_pinyin": [
+            "bǎi",
+            "gòu",
+            "xiǎo shuō",
+            "āi zhe"
+          ],
+          "question_chinese": "这部___很有意思。",
+          "question_pinyin": "这部___很有意思。",
+          "question_english": "This novel is very interesting."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Novel / Fiction'?",
+          "correct": "小说",
+          "options": [
+            "小说",
+            "部",
+            "挨着",
+            "着"
+          ],
+          "option_pinyin": [
+            "xiǎo shuō",
+            "bù",
+            "āi zhe",
+            "zhe"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk3_l3_14",
+      "chinese": "部",
+      "pinyin": "bù",
+      "english": "[Measure word for phones, movies, novels, TV shows]",
+      "part_of_speech": "measure word",
+      "example": "他买了一部新手机。",
+      "translation": "He bought a new mobile phone.",
+      "example_pinyin": "tā mǎi le yī bù xīn shǒu jī",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 部 mean?",
+          "correct": "[Measure word for phones, movies, novels, TV shows]",
+          "options": [
+            "[Measure word for machines/appliances]",
+            "Left side / On the left",
+            "Right next to / Adjacent to",
+            "[Measure word for phones, movies, novels, TV shows]"
+          ],
+          "option_pinyin": [
+            "tái",
+            "zuǒ biān",
+            "āi zhe",
+            "bù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: [Measure word for phones, movies, novels, TV shows]",
+          "correct": "部",
+          "options": [
+            "挨着",
+            "部",
+            "矿泉水",
+            "着"
+          ],
+          "option_pinyin": [
+            "āi zhe",
+            "bù",
+            "kuàng quán shuǐ",
+            "zhe"
+          ],
+          "question_chinese": "他买了一___新手机。",
+          "question_pinyin": "他买了一___新手机。",
+          "question_english": "He bought a new mobile phone."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means '[Measure word for phones, movies, novels, TV shows]'?",
+          "correct": "部",
+          "options": [
+            "左边",
+            "摆",
+            "饮料",
+            "部"
+          ],
+          "option_pinyin": [
+            "zuǒ biān",
+            "bǎi",
+            "yǐn liào",
+            "bù"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk3_l3_p01",
