@@ -92,6 +92,10 @@ export default function VocabularySection({ vocabulary, showPinyin = true, avata
 
 function ReadOnlyWordsView({ words, showPinyin, avatarId }) {
   const [selectedWord, setSelectedWord] = useState(null);
+  const [showExPinyin, setShowExPinyin] = useState(false);
+
+  // Reset example-pinyin toggle when a different word is opened
+  useEffect(() => { setShowExPinyin(false); }, [selectedWord?.id]);
 
   return (
     <View style={styles.readOnlyList}>
@@ -157,7 +161,21 @@ function ReadOnlyWordsView({ words, showPinyin, avatarId }) {
 
                 {selectedWord.example ? (
                   <View style={styles.reviewExampleBox}>
-                    <Text style={styles.reviewExampleChinese}>{selectedWord.example}</Text>
+                    <View style={styles.reviewExampleHeader}>
+                      <Text style={styles.reviewExampleChinese}>{selectedWord.example}</Text>
+                      {selectedWord.example_pinyin ? (
+                        <TouchableOpacity
+                          style={[styles.exPinyinToggle, showExPinyin && styles.exPinyinToggleOn]}
+                          onPress={() => setShowExPinyin(v => !v)}
+                          hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                        >
+                          <Text style={[styles.exPinyinToggleText, showExPinyin && styles.exPinyinToggleTextOn]}>拼</Text>
+                        </TouchableOpacity>
+                      ) : null}
+                    </View>
+                    {showExPinyin && selectedWord.example_pinyin ? (
+                      <Text style={styles.reviewExamplePinyin}>{selectedWord.example_pinyin}</Text>
+                    ) : null}
                     {selectedWord.translation ? (
                       <Text style={styles.reviewExampleEnglish}>{selectedWord.translation}</Text>
                     ) : null}
@@ -769,6 +787,9 @@ function AudioExercisePanel({ word, words, avatarId, onNext }) {
 
 function CompletionCard({ words, showPinyin, avatarId }) {
   const [selectedWord, setSelectedWord] = useState(null);
+  const [showExPinyin, setShowExPinyin] = useState(false);
+
+  useEffect(() => { setShowExPinyin(false); }, [selectedWord?.id]);
 
   return (
     <View style={styles.completionCard}>
@@ -836,7 +857,21 @@ function CompletionCard({ words, showPinyin, avatarId }) {
 
                 {selectedWord.example ? (
                   <View style={styles.reviewExampleBox}>
-                    <Text style={styles.reviewExampleChinese}>{selectedWord.example}</Text>
+                    <View style={styles.reviewExampleHeader}>
+                      <Text style={styles.reviewExampleChinese}>{selectedWord.example}</Text>
+                      {selectedWord.example_pinyin ? (
+                        <TouchableOpacity
+                          style={[styles.exPinyinToggle, showExPinyin && styles.exPinyinToggleOn]}
+                          onPress={() => setShowExPinyin(v => !v)}
+                          hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                        >
+                          <Text style={[styles.exPinyinToggleText, showExPinyin && styles.exPinyinToggleTextOn]}>拼</Text>
+                        </TouchableOpacity>
+                      ) : null}
+                    </View>
+                    {showExPinyin && selectedWord.example_pinyin ? (
+                      <Text style={styles.reviewExamplePinyin}>{selectedWord.example_pinyin}</Text>
+                    ) : null}
                     {selectedWord.translation ? (
                       <Text style={styles.reviewExampleEnglish}>{selectedWord.translation}</Text>
                     ) : null}
@@ -856,9 +891,11 @@ function CompletionCard({ words, showPinyin, avatarId }) {
 // ─────────────────────────────────────────────────────────────────────────────
 
 function PhraseFeedSection({ phrases, showPinyin, avatarId, initialDone, onAllDone, lessonId, levelId }) {
-  const [isOpen, setIsOpen]             = useState(false);
-  const [visibleCount, setVisibleCount] = useState(1);
-  const [flowDone]                      = useState(!!initialDone);
+  const [isOpen, setIsOpen]               = useState(false);
+  const [visibleCount, setVisibleCount]   = useState(1);
+  const [flowDone]                        = useState(!!initialDone);
+  const [showLocalPinyin, setShowLocalPinyin] = useState(false);
+  const pinyinOn = showPinyin || showLocalPinyin;
   const completionNotified              = useRef(!!initialDone);
   const storageKey = lessonId ? `phraseProgress_${levelId}_lesson_${lessonId}` : null;
 
@@ -909,12 +946,25 @@ function PhraseFeedSection({ phrases, showPinyin, avatarId, initialDone, onAllDo
 
       {isOpen && (
         <View style={styles.feedBody}>
+          {/* Show Pinyin toggle — only visible for levels 2-6 where showPinyin=false */}
+          {!showPinyin && (
+            <TouchableOpacity
+              style={[styles.feedPinyinToggle, showLocalPinyin && styles.feedPinyinToggleOn]}
+              onPress={() => setShowLocalPinyin(v => !v)}
+              activeOpacity={0.8}
+            >
+              <Text style={[styles.feedPinyinToggleText, showLocalPinyin && styles.feedPinyinToggleTextOn]}>
+                {showLocalPinyin ? 'Hide Pinyin' : 'Show Pinyin'}
+              </Text>
+            </TouchableOpacity>
+          )}
+
           {flowDone ? (
             phrases.map((phrase, i) => (
               <View key={phrase.id ?? i} style={styles.feedDoneRow}>
                 <View style={{ flex: 1 }}>
                   <Text style={styles.feedDoneChinese}>{phrase.chinese}</Text>
-                  {showPinyin && phrase.pinyin
+                  {pinyinOn && phrase.pinyin
                     ? <Text style={styles.feedDonePinyin}>{phrase.pinyin}</Text>
                     : null}
                   <Text style={styles.feedDoneEnglish}>{phrase.english}</Text>
@@ -931,7 +981,7 @@ function PhraseFeedSection({ phrases, showPinyin, avatarId, initialDone, onAllDo
                   <View key={phrase.id ?? i} style={styles.feedDoneRow}>
                     <View style={{ flex: 1 }}>
                       <Text style={styles.feedDoneChinese}>{phrase.chinese}</Text>
-                      {showPinyin && phrase.pinyin
+                      {pinyinOn && phrase.pinyin
                         ? <Text style={styles.feedDonePinyin}>{phrase.pinyin}</Text>
                         : null}
                       <Text style={styles.feedDoneEnglish}>{phrase.english}</Text>
@@ -945,7 +995,7 @@ function PhraseFeedSection({ phrases, showPinyin, avatarId, initialDone, onAllDo
                 <View key={phrase.id ?? i} style={styles.feedActiveCard}>
                   <View>
                     <Text style={styles.feedActiveChinese}>{phrase.chinese}</Text>
-                    {showPinyin && phrase.pinyin
+                    {pinyinOn && phrase.pinyin
                       ? <Text style={styles.feedActivePinyin}>{phrase.pinyin}</Text>
                       : null}
                     <Text style={styles.feedActiveEnglish}>{phrase.english}</Text>
@@ -1472,11 +1522,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#F7F4F0',
     borderRadius: 14,
     padding: 16,
-    alignItems: 'center',
     gap: 6,
   },
-  reviewExampleChinese: { fontSize: 17, fontWeight: '700', color: DEEP_NAVY, textAlign: 'center' },
-  reviewExampleEnglish: { fontSize: 13, color: SLATE_TEAL, textAlign: 'center', fontStyle: 'italic' },
+  reviewExampleHeader: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    gap: 8,
+  },
+  reviewExampleChinese: { fontSize: 17, fontWeight: '700', color: DEEP_NAVY, flex: 1 },
+  reviewExamplePinyin:  { fontSize: 13, color: WARM_ORANGE, fontStyle: 'italic' },
+  reviewExampleEnglish: { fontSize: 13, color: SLATE_TEAL, fontStyle: 'italic' },
 
   // ── Phrase feed ────────────────────────────────────────────────────────────
   feedSection: { marginBottom: 16 },
@@ -1718,4 +1774,26 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(244,197,66,0.3)',
   },
   audioBtnText: { fontSize: 14, fontWeight: '600', color: VG.gold },
+
+  // Phrase-feed "Show Pinyin" toggle
+  feedPinyinToggle: {
+    alignSelf: 'flex-end',
+    paddingHorizontal: 12,
+    paddingVertical: 5,
+    borderRadius: 8,
+    borderWidth: 1.5,
+    borderColor: 'rgba(155,104,70,0.4)',
+  },
+  feedPinyinToggleOn: {
+    backgroundColor: WARM_BROWN,
+    borderColor: WARM_BROWN,
+  },
+  feedPinyinToggleText: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: SLATE_TEAL,
+  },
+  feedPinyinToggleTextOn: {
+    color: '#fff',
+  },
 });
