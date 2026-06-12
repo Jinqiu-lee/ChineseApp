@@ -425,6 +425,33 @@ function shuffle(arr) {
   return a;
 }
 
+// Stable key that identifies an exercise by its question content.
+function exerciseKey(ex) {
+  if (!ex) return '__null__';
+  switch (ex.type) {
+    case 'flashcard':       return `fc:${ex.vocabItem?.chinese ?? ''}`;
+    case 'audio_choice':    return `ac:${ex.chinese ?? ''}`;
+    case 'fill_blank':      return `fb:${ex.displayText ?? ''}`;
+    case 'arrange':         return `arr:${(ex.correctTokens || []).join('')}`;
+    case 'match_pairs':     return `mp:${(ex.pairs || []).map(p => p.chinese).sort().join(',')}`;
+    case 'speak':           return `sp:${ex.subtype}:${ex.chinese || ex.answerChinese || ''}`;
+    case 'image_exercise':  return `img:${ex.subtype}:${ex.correct || ex.chinese || ''}`;
+    case 'pinyin_exercise': return `pn:${ex.subtype}:${ex.syllable ?? ''}`;
+    default:                return `${ex.type}`;
+  }
+}
+
+// Remove occurrences beyond maxTimes of the same exercise within one stage.
+function capRepeats(exercises, maxTimes = 2) {
+  const counts = new Map();
+  return exercises.filter(ex => {
+    const k = exerciseKey(ex);
+    const n = (counts.get(k) ?? 0) + 1;
+    counts.set(k, n);
+    return n <= maxTimes;
+  });
+}
+
 // Fix 3: per-stage sentence picker with soft dedup.
 // Cycles through pool without repeating Chinese strings within a stage.
 // When the pool is exhausted, falls back to allow repeats so stages never break.
@@ -1142,6 +1169,9 @@ function buildLearnRound(newWords, allWords, sentences, gramSentences, gramPoint
   const sp = shuffle([...pool]);
   let spIdx = 0;
   const nextSp = () => sp[spIdx++ % sp.length];
+  let fbIdx = 0;
+  const fillFb = (sent) => makeFillBlank(sent, av) || fallbackAudio(fbIdx++, av);
+  const arrFb  = (sent) => makeArrange(sent, av) || makeFillBlank(sent, av) || fallbackAudio(fbIdx++, av);
 
   // Fix 4: unified sentence pool for stages 3-5 (key sentences + grammar examples; no dialogue yet)
   const allSent = shuffle([...sentences, ...gramSentences]).filter(Boolean);
@@ -1200,12 +1230,12 @@ function buildLearnRound(newWords, allWords, sentences, gramSentences, gramPoint
   const s3 = [
     makeImageToWord(av[3 % av.length], av, L, 1),
     makeImageToWord(av[4 % av.length], av, L, 1),
-    arrangeOrFallback(pickerS3.next(), 0, av),
-    arrangeOrFallback(pickerS3.next(), 0, av),
-    arrangeOrFallback(pickerS3.next(), 0, av),
-    fillOrFallback(pickerS3.next(), 0, av),
-    fillOrFallback(pickerS3.next(), 0, av),
-    fillOrFallback(pickerS3.next(), 0, av),
+    arrFb(pickerS3.next()),
+    arrFb(pickerS3.next()),
+    arrFb(pickerS3.next()),
+    fillFb(pickerS3.next()),
+    fillFb(pickerS3.next()),
+    fillFb(pickerS3.next()),
     makeSpeakTranslate(nextSp()),
     makeSpeakTranslate(nextSp()),
   ];
@@ -1216,8 +1246,8 @@ function buildLearnRound(newWords, allWords, sentences, gramSentences, gramPoint
     makeMatchPairs(shuffle([...av])),
     makeListenToImage(av[6 % av.length], av, L, 0),
     makeListenToImage(av[7 % av.length], av, L, 0),
-    fillOrFallback(pickerS4.next(), 0, av),
-    fillOrFallback(pickerS4.next(), 0, av),
+    fillFb(pickerS4.next()),
+    fillFb(pickerS4.next()),
     makeAudioChoice(av[8 % av.length], av),
     makeSpeakRepeat(nextSp()),
     makeSpeakRepeat(nextSp()),
@@ -1227,8 +1257,8 @@ function buildLearnRound(newWords, allWords, sentences, gramSentences, gramPoint
     makeImageToWord(av[5 % av.length], av, L, 2),
     makeImageToWord(av[6 % av.length], av, L, 2),
     makeAudioChoice(av[9 % av.length], av),
-    fillOrFallback(pickerS5.next(), 0, av),
-    arrangeOrFallback(pickerS5.next(), 0, av),
+    fillFb(pickerS5.next()),
+    arrFb(pickerS5.next()),
     makeMatchPairs(shuffle([...av])),
     makeSpeakRepeat(nextSp()),
     makeSpeakRepeat(nextSp()),
@@ -1245,6 +1275,9 @@ function buildPracticeRound(vocab, sentences, pool, respondOrFallback, L) {
   const sp = shuffle([...pool]);
   let spIdx = 0;
   const nextSp = () => sp[spIdx++ % sp.length];
+  let fbIdx = 0;
+  const fillFb = (sent) => makeFillBlank(sent, sv) || fallbackAudio(fbIdx++, sv);
+  const arrFb  = (sent) => makeArrange(sent, sv) || makeFillBlank(sent, sv) || fallbackAudio(fbIdx++, sv);
 
   // Stage 1
   const sent1 = makeSentPicker(shuffle([...sentences]));
@@ -1256,21 +1289,21 @@ function buildPracticeRound(vocab, sentences, pool, respondOrFallback, L) {
     makeWordToImage(sv[4 % sv.length], sv, L, 0),
     makeAudioChoice(sv[5 % sv.length], sv),
     makeAudioChoice(sv[6 % sv.length], sv),
-    fillOrFallback(sent1.next(), 0, sv),
-    fillOrFallback(sent1.next(), 0, sv),
+    fillFb(sent1.next()),
+    fillFb(sent1.next()),
     makeMatchPairs(shuffle([...sv])),
     makeMatchPairs(shuffle([...sv])),
   ];
   // Stage 2
   const sent2 = makeSentPicker(shuffle([...sentences]));
   const s2 = [
-    fillOrFallback(sent2.next(), 0, sv),
-    fillOrFallback(sent2.next(), 0, sv),
-    fillOrFallback(sent2.next(), 0, sv),
-    fillOrFallback(sent2.next(), 0, sv),
-    arrangeOrFallback(sent2.next(), 0, sv),
-    arrangeOrFallback(sent2.next(), 0, sv),
-    arrangeOrFallback(sent2.next(), 0, sv),
+    fillFb(sent2.next()),
+    fillFb(sent2.next()),
+    fillFb(sent2.next()),
+    fillFb(sent2.next()),
+    arrFb(sent2.next()),
+    arrFb(sent2.next()),
+    arrFb(sent2.next()),
     makeSpeakRepeat(nextSp()),
     makeSpeakTranslate(nextSp()),
     respondOrFallback(0),
@@ -1278,24 +1311,25 @@ function buildPracticeRound(vocab, sentences, pool, respondOrFallback, L) {
   // Stage 3
   const sent3 = makeSentPicker(shuffle([...sentences]));
   const s3 = [
-    arrangeOrFallback(sent3.next(), 0, sv),
-    arrangeOrFallback(sent3.next(), 0, sv),
-    arrangeOrFallback(sent3.next(), 0, sv),
-    arrangeOrFallback(sent3.next(), 0, sv),
-    arrangeOrFallback(sent3.next(), 0, sv),
-    fillOrFallback(sent3.next(), 0, sv),
-    fillOrFallback(sent3.next(), 0, sv),
-    fillOrFallback(sent3.next(), 0, sv),
+    arrFb(sent3.next()),
+    arrFb(sent3.next()),
+    arrFb(sent3.next()),
+    arrFb(sent3.next()),
+    arrFb(sent3.next()),
+    fillFb(sent3.next()),
+    fillFb(sent3.next()),
+    fillFb(sent3.next()),
     makeSpeakTranslate(nextSp()),
     makeSpeakTranslate(nextSp()),
   ];
-  // Stage 4
+  // Stage 4 — interleave match_pairs with audio/fill to break up runs of 4 identical types
+  const sent4 = makeSentPicker(shuffle([...sentences]));
   const s4 = [
     makeMatchPairs(shuffle([...sv])),
-    makeMatchPairs(shuffle([...sv])),
-    makeMatchPairs(shuffle([...sv])),
-    makeMatchPairs(shuffle([...sv])),
     makeAudioChoice(sv[7 % sv.length], sv),
+    makeMatchPairs(shuffle([...sv])),
+    fillFb(sent4.next()),
+    makeMatchPairs(shuffle([...sv])),
     makeAudioChoice(sv[8 % sv.length], sv),
     makeSpeakRepeat(nextSp()),
     makeSpeakTranslate(nextSp()),
@@ -1307,10 +1341,10 @@ function buildPracticeRound(vocab, sentences, pool, respondOrFallback, L) {
   const s5 = [
     makeAudioChoice(sv[9  % sv.length], sv),
     makeAudioChoice(sv[10 % sv.length], sv),
-    fillOrFallback(sent5.next(), 0, sv),
-    fillOrFallback(sent5.next(), 0, sv),
-    arrangeOrFallback(sent5.next(), 0, sv),
-    arrangeOrFallback(sent5.next(), 0, sv),
+    fillFb(sent5.next()),
+    fillFb(sent5.next()),
+    arrFb(sent5.next()),
+    arrFb(sent5.next()),
     makeMatchPairs(shuffle([...sv])),
     makeSpeakRepeat(nextSp()),
     makeSpeakTranslate(nextSp()),
@@ -1326,16 +1360,19 @@ function buildMasteryRound(vocab, sentences, pool, respondOrFallback, L) {
   const sp = shuffle([...pool]);
   let spIdx = 0;
   const nextSp = () => sp[spIdx++ % sp.length];
+  let fbIdx = 0;
+  const fillFb = (sent) => makeFillBlank(sent, sv) || fallbackAudio(fbIdx++, sv);
+  const arrFb  = (sent) => makeArrange(sent, sv) || makeFillBlank(sent, sv) || fallbackAudio(fbIdx++, sv);
 
   // Stage 1
   const sent1 = makeSentPicker(shuffle([...sentences]));
   const s1 = [
-    arrangeOrFallback(sent1.next(), 0, sv),
-    arrangeOrFallback(sent1.next(), 0, sv),
-    arrangeOrFallback(sent1.next(), 0, sv),
-    fillOrFallback(sent1.next(), 0, sv),
-    fillOrFallback(sent1.next(), 0, sv),
-    fillOrFallback(sent1.next(), 0, sv),
+    arrFb(sent1.next()),
+    arrFb(sent1.next()),
+    arrFb(sent1.next()),
+    fillFb(sent1.next()),
+    fillFb(sent1.next()),
+    fillFb(sent1.next()),
     makeSpeakRepeat(nextSp()),
     makeSpeakRepeat(nextSp()),
     makeMatchPairs(shuffle([...sv])),
@@ -1348,9 +1385,9 @@ function buildMasteryRound(vocab, sentences, pool, respondOrFallback, L) {
     makeSpeakRepeat(nextSp()),
     makeSpeakRepeat(nextSp()),
     makeSpeakRepeat(nextSp()),
-    fillOrFallback(sent2.next(), 0, sv),
-    fillOrFallback(sent2.next(), 0, sv),
-    fillOrFallback(sent2.next(), 0, sv),
+    fillFb(sent2.next()),
+    fillFb(sent2.next()),
+    fillFb(sent2.next()),
     makeMatchPairs(shuffle([...sv])),
     makeMatchPairs(shuffle([...sv])),
     makeMatchPairs(shuffle([...sv])),
@@ -1363,10 +1400,10 @@ function buildMasteryRound(vocab, sentences, pool, respondOrFallback, L) {
     makeSpeakTranslate(nextSp()),
     makeSentenceToImage(sent3.next(), sv[2 % sv.length], sv, L),
     makeSentenceToImage(sent3.next(), sv[5 % sv.length], sv, L),
-    arrangeOrFallback(sent3.next(), 0, sv),
-    arrangeOrFallback(sent3.next(), 0, sv),
-    fillOrFallback(sent3.next(), 0, sv),
-    fillOrFallback(sent3.next(), 0, sv),
+    arrFb(sent3.next()),
+    arrFb(sent3.next()),
+    fillFb(sent3.next()),
+    fillFb(sent3.next()),
   ];
   // Stage 4
   const s4 = [
@@ -1386,8 +1423,8 @@ function buildMasteryRound(vocab, sentences, pool, respondOrFallback, L) {
   const s5 = [
     makeSentenceToImage(sent5.next(), sv[0], sv, L),
     makeSentenceToImage(sent5.next(), sv[1 % sv.length], sv, L),
-    arrangeOrFallback(sent5.next(), 0, sv),
-    arrangeOrFallback(sent5.next(), 0, sv),
+    arrFb(sent5.next()),
+    arrFb(sent5.next()),
     makeMatchPairs(shuffle([...sv])),
     makeSpeakRepeat(nextSp()),
     makeSpeakTranslate(nextSp()),
@@ -1496,13 +1533,24 @@ export function generateRounds(lessonData) {
     }
   }
 
-  // Inject mini_exercises (vocabulary + grammar) into stages 1 and 3 of each round
+  // Inject mini_exercises across ALL 5 stages of each round (up to 2 per stage).
+  // Distributing evenly ensures the full pool is covered rather than stacking on S1/S3 only.
   const miniPool = buildMiniExercisePool(lessonData);
   if (miniPool.length > 0) {
     let mIdx = 0;
     for (const round of rounds) {
-      for (let k = 0; k < 2 && mIdx < miniPool.length; k++) round[0].push(miniPool[mIdx++]); // stage 1
-      for (let k = 0; k < 2 && mIdx < miniPool.length; k++) round[2].push(miniPool[mIdx++]); // stage 3
+      for (let stageIdx = 0; stageIdx < 5; stageIdx++) {
+        for (let k = 0; k < 2 && mIdx < miniPool.length; k++) {
+          round[stageIdx].push(miniPool[mIdx++]);
+        }
+      }
+    }
+  }
+
+  // Ensure no exercise appears more than twice within any single stage.
+  for (const round of rounds) {
+    for (let i = 0; i < round.length; i++) {
+      round[i] = capRepeats(round[i]);
     }
   }
 
