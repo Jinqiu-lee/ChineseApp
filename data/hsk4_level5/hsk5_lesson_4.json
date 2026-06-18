@@ -20,16 +20,16 @@
           "question": "What does 菜肴 mean?",
           "correct": "Dish; prepared food",
           "options": [
+            "Fresh",
             "Dish; prepared food",
-            "Nutrition; nutritious",
-            "Cooking; culinary arts",
-            "Characteristic; special feature"
+            "Diet; eating habits; food and drink",
+            "Cooking; culinary arts"
           ],
           "option_pinyin": [
+            "xīn xiān",
             "cài yáo",
-            "yíng yǎng",
-            "pēng rèn",
-            "tè sè"
+            "yǐn shí",
+            "pēng rèn"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: Dish; prepared food",
           "correct": "菜肴",
           "options": [
-            "菜肴",
-            "食谱",
-            "烹饪",
-            "口味"
+            "美食",
+            "煮",
+            "厨师",
+            "菜肴"
           ],
           "option_pinyin": [
-            "cài yáo",
-            "shí pǔ",
-            "pēng rèn",
-            "kǒu wèi"
+            "měi shí",
+            "zhǔ",
+            "chú shī",
+            "cài yáo"
           ],
-          "question_chinese": "这道___非常美味。",
-          "question_pinyin": "这道___非常美味。",
-          "question_english": "This dish is very delicious."
+          "question_chinese": "这道___既新鲜又营养，是餐厅最受欢迎的特色菜。",
+          "question_pinyin": "这道___既新鲜又营养，是餐厅最受欢迎的特色菜。",
+          "question_english": "This dish is both fresh and nutritious; it is the restaurant's most popular signature dish."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Dish; prepared food'?",
           "correct": "菜肴",
           "options": [
-            "特色",
-            "菜肴",
-            "烹饪",
-            "口味"
+            "美食",
+            "厨师",
+            "煮",
+            "菜肴"
           ],
           "option_pinyin": [
-            "tè sè",
-            "cài yáo",
-            "pēng rèn",
-            "kǒu wèi"
+            "měi shí",
+            "chú shī",
+            "zhǔ",
+            "cài yáo"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 食材 mean?",
           "correct": "Ingredient; foodstuff",
           "options": [
-            "Delicious food; gourmet food",
-            "Diet; eating habits; food and drink",
+            "To season; to flavour",
+            "To boil / To cook (in water)",
             "Ingredient; foodstuff",
-            "Recipe; cookbook"
+            "Characteristic; special feature"
           ],
           "option_pinyin": [
-            "měi shí",
-            "yǐn shí",
+            "tiáo wèi",
+            "zhǔ",
             "shí cái",
-            "shí pǔ"
+            "tè sè"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: Ingredient; foodstuff",
           "correct": "食材",
           "options": [
-            "特色",
-            "新鲜",
-            "食谱",
-            "食材"
+            "食材",
+            "炖",
+            "口味",
+            "炒"
           ],
           "option_pinyin": [
-            "tè sè",
-            "xīn xiān",
-            "shí pǔ",
-            "shí cái"
+            "shí cái",
+            "dùn",
+            "kǒu wèi",
+            "chǎo"
           ],
-          "question_chinese": "好的___是美食的基础。",
-          "question_pinyin": "好的___是美食的基础。",
-          "question_english": "Good ingredients are the foundation of great food."
+          "question_chinese": "___越新鲜，菜的口味越好，这是厨师的基本原则。",
+          "question_pinyin": "___越新鲜，菜的口味越好，这是厨师的基本原则。",
+          "question_english": "The fresher the ingredients used, the better the flavour of the dish — this is a chef's basic principle."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Ingredient; foodstuff'?",
           "correct": "食材",
           "options": [
-            "特色",
-            "食谱",
-            "厨师",
-            "食材"
+            "新鲜",
+            "煎",
+            "食材",
+            "调味"
           ],
           "option_pinyin": [
-            "tè sè",
-            "shí pǔ",
-            "chú shī",
-            "shí cái"
+            "xīn xiān",
+            "jiān",
+            "shí cái",
+            "tiáo wèi"
           ]
         }
       ],
@@ -153,15 +153,15 @@
           "correct": "To season; to flavour",
           "options": [
             "To season; to flavour",
-            "Nutrition; nutritious",
-            "Chef; cook",
-            "Ingredient; foodstuff"
+            "Ingredient; foodstuff",
+            "To stir-fry",
+            "Recipe; cookbook"
           ],
           "option_pinyin": [
             "tiáo wèi",
-            "yíng yǎng",
-            "chú shī",
-            "shí cái"
+            "shí cái",
+            "chǎo",
+            "shí pǔ"
           ]
         },
         {
@@ -169,36 +169,36 @@
           "question": "Fill in: To season; to flavour",
           "correct": "调味",
           "options": [
-            "菜肴",
-            "饮食",
-            "特色",
-            "调味"
+            "厨师",
+            "调味",
+            "炖",
+            "煎"
           ],
           "option_pinyin": [
-            "cài yáo",
-            "yǐn shí",
-            "tè sè",
-            "tiáo wèi"
+            "chú shī",
+            "tiáo wèi",
+            "dùn",
+            "jiān"
           ],
-          "question_chinese": "他在给汤___。",
-          "question_pinyin": "他在给汤___。",
-          "question_english": "He is seasoning the soup."
+          "question_chinese": "厨师把食材切好以后，再按照食谱___，最后大火翻炒。",
+          "question_pinyin": "厨师把食材切好以后，再按照食谱___，最后大火翻炒。",
+          "question_english": "After the chef cuts the ingredients, he seasons them according to the recipe, then stir-fries them over high heat."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To season; to flavour'?",
           "correct": "调味",
           "options": [
-            "营养",
+            "特色",
+            "菜肴",
             "调味",
-            "厨师",
-            "饮食"
+            "煎"
           ],
           "option_pinyin": [
-            "yíng yǎng",
+            "tè sè",
+            "cài yáo",
             "tiáo wèi",
-            "chú shī",
-            "yǐn shí"
+            "jiān"
           ]
         }
       ],
@@ -218,16 +218,16 @@
           "question": "What does 厨师 mean?",
           "correct": "Chef; cook",
           "options": [
-            "Nutrition; nutritious",
-            "Fresh",
-            "Chef; cook",
-            "Ingredient; foodstuff"
+            "Ingredient; foodstuff",
+            "To pan-fry / To fry in shallow oil",
+            "Taste preference; flavour",
+            "Chef; cook"
           ],
           "option_pinyin": [
-            "yíng yǎng",
-            "xīn xiān",
-            "chú shī",
-            "shí cái"
+            "shí cái",
+            "jiān",
+            "kǒu wèi",
+            "chú shī"
           ]
         },
         {
@@ -235,36 +235,36 @@
           "question": "Fill in: Chef; cook",
           "correct": "厨师",
           "options": [
-            "食谱",
             "厨师",
+            "菜肴",
             "新鲜",
-            "营养"
+            "煎"
           ],
           "option_pinyin": [
-            "shí pǔ",
             "chú shī",
+            "cài yáo",
             "xīn xiān",
-            "yíng yǎng"
+            "jiān"
           ],
-          "question_chinese": "他是一位优秀的___。",
-          "question_pinyin": "他是一位优秀的___。",
-          "question_english": "He is an excellent chef."
+          "question_chinese": "食材越新鲜，菜的口味越好，这是___的基本原则。",
+          "question_pinyin": "食材越新鲜，菜的口味越好，这是___的基本原则。",
+          "question_english": "The fresher the ingredients used, the better the flavour of the dish — this is a chef's basic principle."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Chef; cook'?",
           "correct": "厨师",
           "options": [
+            "食谱",
             "厨师",
-            "特色",
-            "食材",
-            "营养"
+            "炖",
+            "煮"
           ],
           "option_pinyin": [
+            "shí pǔ",
             "chú shī",
-            "tè sè",
-            "shí cái",
-            "yíng yǎng"
+            "dùn",
+            "zhǔ"
           ]
         }
       ],
@@ -284,16 +284,16 @@
           "question": "What does 饮食 mean?",
           "correct": "Diet; eating habits; food and drink",
           "options": [
-            "To season; to flavour",
-            "Diet; eating habits; food and drink",
-            "Chef; cook",
-            "Characteristic; special feature"
+            "Recipe; cookbook",
+            "To stir-fry",
+            "Characteristic; special feature",
+            "Diet; eating habits; food and drink"
           ],
           "option_pinyin": [
-            "tiáo wèi",
-            "yǐn shí",
-            "chú shī",
-            "tè sè"
+            "shí pǔ",
+            "chǎo",
+            "tè sè",
+            "yǐn shí"
           ]
         },
         {
@@ -301,20 +301,20 @@
           "question": "Fill in: Diet; eating habits; food and drink",
           "correct": "饮食",
           "options": [
-            "烹饪",
-            "特色",
-            "饮食",
-            "厨师"
+            "食材",
+            "炒",
+            "厨师",
+            "饮食"
           ],
           "option_pinyin": [
-            "pēng rèn",
-            "tè sè",
-            "yǐn shí",
-            "chú shī"
+            "shí cái",
+            "chǎo",
+            "chú shī",
+            "yǐn shí"
           ],
-          "question_chinese": "健康的___非常重要。",
-          "question_pinyin": "健康的___非常重要。",
-          "question_english": "Healthy eating habits are very important."
+          "question_chinese": "均衡的___既能满足口味，又能保证每天所需的营养。",
+          "question_pinyin": "均衡的___既能满足口味，又能保证每天所需的营养。",
+          "question_english": "A balanced diet can both satisfy taste preferences and ensure the nutrition needed each day."
         },
         {
           "type": "multiple_choice",
@@ -322,85 +322,19 @@
           "correct": "饮食",
           "options": [
             "饮食",
-            "口味",
-            "厨师",
-            "烹饪"
+            "炖",
+            "炒",
+            "食材"
           ],
           "option_pinyin": [
             "yǐn shí",
-            "kǒu wèi",
-            "chú shī",
-            "pēng rèn"
+            "dùn",
+            "chǎo",
+            "shí cái"
           ]
         }
       ],
       "example_pinyin": "jūn héng de yǐn shí jì néng mǎn zú kǒu wèi yòu néng bǎo zhèng měi tiān suǒ xū de yíng yǎng"
-    },
-    {
-      "id": "hsk5_l4_06",
-      "chinese": "营养",
-      "pinyin": "yíng yǎng",
-      "english": "Nutrition; nutritious",
-      "part_of_speech": "noun/adjective",
-      "example": "这道菜肴既新鲜又营养，是餐厅最受欢迎的特色菜。",
-      "translation": "This dish is both fresh and nutritious; it is the restaurant's most popular signature dish.",
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "What does 营养 mean?",
-          "correct": "Nutrition; nutritious",
-          "options": [
-            "Diet; eating habits; food and drink",
-            "Fresh",
-            "Nutrition; nutritious",
-            "Recipe; cookbook"
-          ],
-          "option_pinyin": [
-            "yǐn shí",
-            "xīn xiān",
-            "yíng yǎng",
-            "shí pǔ"
-          ]
-        },
-        {
-          "type": "fill_blank",
-          "question": "Fill in: Nutrition; nutritious",
-          "correct": "营养",
-          "options": [
-            "美食",
-            "厨师",
-            "营养",
-            "调味"
-          ],
-          "option_pinyin": [
-            "měi shí",
-            "chú shī",
-            "yíng yǎng",
-            "tiáo wèi"
-          ],
-          "question_chinese": "蔬菜富含___。",
-          "question_pinyin": "蔬菜富含___。",
-          "question_english": "Vegetables are rich in nutrition."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'Nutrition; nutritious'?",
-          "correct": "营养",
-          "options": [
-            "营养",
-            "食谱",
-            "口味",
-            "饮食"
-          ],
-          "option_pinyin": [
-            "yíng yǎng",
-            "shí pǔ",
-            "kǒu wèi",
-            "yǐn shí"
-          ]
-        }
-      ],
-      "example_pinyin": "zhè dào cài yáo jì xīn xiān yòu yíng yǎng shì cān tīng zuì shòu huān yíng de tè sè cài"
     },
     {
       "id": "hsk5_l4_07",
@@ -416,15 +350,15 @@
           "question": "What does 口味 mean?",
           "correct": "Taste preference; flavour",
           "options": [
-            "Nutrition; nutritious",
-            "To season; to flavour",
+            "To stew / To braise / To simmer",
             "Taste preference; flavour",
+            "Chef; cook",
             "Fresh"
           ],
           "option_pinyin": [
-            "yíng yǎng",
-            "tiáo wèi",
+            "dùn",
             "kǒu wèi",
+            "chú shī",
             "xīn xiān"
           ]
         },
@@ -433,36 +367,36 @@
           "question": "Fill in: Taste preference; flavour",
           "correct": "口味",
           "options": [
-            "烹饪",
+            "煮",
+            "厨师",
             "口味",
-            "食材",
-            "特色"
+            "食谱"
           ],
           "option_pinyin": [
-            "pēng rèn",
+            "zhǔ",
+            "chú shī",
             "kǒu wèi",
-            "shí cái",
-            "tè sè"
+            "shí pǔ"
           ],
-          "question_chinese": "每个地方的___不一样。",
-          "question_pinyin": "每个地方的___不一样。",
-          "question_english": "Every place has a different taste preference."
+          "question_chinese": "均衡的饮食既能满足___，又能保证每天所需的营养。",
+          "question_pinyin": "均衡的饮食既能满足___，又能保证每天所需的营养。",
+          "question_english": "A balanced diet can both satisfy taste preferences and ensure the nutrition needed each day."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Taste preference; flavour'?",
           "correct": "口味",
           "options": [
-            "营养",
-            "烹饪",
-            "食材",
-            "口味"
+            "厨师",
+            "口味",
+            "菜肴",
+            "特色"
           ],
           "option_pinyin": [
-            "yíng yǎng",
-            "pēng rèn",
-            "shí cái",
-            "kǒu wèi"
+            "chú shī",
+            "kǒu wèi",
+            "cài yáo",
+            "tè sè"
           ]
         }
       ],
@@ -483,15 +417,15 @@
           "correct": "Characteristic; special feature",
           "options": [
             "Delicious food; gourmet food",
-            "Fresh",
             "Characteristic; special feature",
-            "To season; to flavour"
+            "Recipe; cookbook",
+            "Ingredient; foodstuff"
           ],
           "option_pinyin": [
             "měi shí",
-            "xīn xiān",
             "tè sè",
-            "tiáo wèi"
+            "shí pǔ",
+            "shí cái"
           ]
         },
         {
@@ -500,35 +434,35 @@
           "correct": "特色",
           "options": [
             "特色",
+            "口味",
             "烹饪",
-            "食谱",
-            "新鲜"
+            "食材"
           ],
           "option_pinyin": [
             "tè sè",
+            "kǒu wèi",
             "pēng rèn",
-            "shí pǔ",
-            "xīn xiān"
+            "shí cái"
           ],
-          "question_chinese": "这道菜是本店的___菜。",
-          "question_pinyin": "这道菜是本店的___菜。",
-          "question_english": "This dish is the restaurant's specialty."
+          "question_chinese": "越了解烹饪技术，做出来的菜肴越有___。",
+          "question_pinyin": "越了解烹饪技术，做出来的菜肴越有___。",
+          "question_english": "The more you understand cooking techniques, the more distinctive the dishes you produce."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Characteristic; special feature'?",
           "correct": "特色",
           "options": [
-            "特色",
+            "食材",
+            "新鲜",
             "饮食",
-            "菜肴",
-            "新鲜"
+            "特色"
           ],
           "option_pinyin": [
-            "tè sè",
+            "shí cái",
+            "xīn xiān",
             "yǐn shí",
-            "cài yáo",
-            "xīn xiān"
+            "tè sè"
           ]
         }
       ],
@@ -548,16 +482,16 @@
           "question": "What does 烹饪 mean?",
           "correct": "Cooking; culinary arts",
           "options": [
-            "Characteristic; special feature",
             "Cooking; culinary arts",
-            "Diet; eating habits; food and drink",
-            "Dish; prepared food"
+            "Fresh",
+            "Dish; prepared food",
+            "Chef; cook"
           ],
           "option_pinyin": [
-            "tè sè",
             "pēng rèn",
-            "yǐn shí",
-            "cài yáo"
+            "xīn xiān",
+            "cài yáo",
+            "chú shī"
           ]
         },
         {
@@ -565,35 +499,35 @@
           "question": "Fill in: Cooking; culinary arts",
           "correct": "烹饪",
           "options": [
-            "美食",
-            "食谱",
-            "特色",
-            "烹饪"
+            "烹饪",
+            "菜肴",
+            "炖",
+            "煎"
           ],
           "option_pinyin": [
-            "měi shí",
-            "shí pǔ",
-            "tè sè",
-            "pēng rèn"
+            "pēng rèn",
+            "cài yáo",
+            "dùn",
+            "jiān"
           ],
-          "question_chinese": "她擅长___各种菜肴。",
-          "question_pinyin": "她擅长___各种菜肴。",
-          "question_english": "She is good at cooking all kinds of dishes."
+          "question_chinese": "越了解___技术，做出来的菜肴越有特色。",
+          "question_pinyin": "越了解___技术，做出来的菜肴越有特色。",
+          "question_english": "The more you understand cooking techniques, the more distinctive the dishes you produce."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Cooking; culinary arts'?",
           "correct": "烹饪",
           "options": [
-            "饮食",
-            "菜肴",
-            "厨师",
+            "煎",
+            "调味",
+            "口味",
             "烹饪"
           ],
           "option_pinyin": [
-            "yǐn shí",
-            "cài yáo",
-            "chú shī",
+            "jiān",
+            "tiáo wèi",
+            "kǒu wèi",
             "pēng rèn"
           ]
         }
@@ -614,16 +548,16 @@
           "question": "What does 新鲜 mean?",
           "correct": "Fresh",
           "options": [
+            "To boil / To cook (in water)",
+            "To stew / To braise / To simmer",
             "Fresh",
-            "Nutrition; nutritious",
-            "Chef; cook",
-            "Ingredient; foodstuff"
+            "Diet; eating habits; food and drink"
           ],
           "option_pinyin": [
+            "zhǔ",
+            "dùn",
             "xīn xiān",
-            "yíng yǎng",
-            "chú shī",
-            "shí cái"
+            "yǐn shí"
           ]
         },
         {
@@ -632,19 +566,19 @@
           "correct": "新鲜",
           "options": [
             "调味",
+            "新鲜",
             "口味",
-            "特色",
-            "新鲜"
+            "美食"
           ],
           "option_pinyin": [
             "tiáo wèi",
+            "xīn xiān",
             "kǒu wèi",
-            "tè sè",
-            "xīn xiān"
+            "měi shí"
           ],
-          "question_chinese": "这些蔬菜非常___。",
-          "question_pinyin": "这些蔬菜非常___。",
-          "question_english": "These vegetables are very fresh."
+          "question_chinese": "她把___食材一一清洗干净，准备按照食谱烹饪一道传统美食。",
+          "question_pinyin": "她把___食材一一清洗干净，准备按照食谱烹饪一道传统美食。",
+          "question_english": "She washed all the fresh ingredients one by one and prepared to cook a traditional dish following a recipe."
         },
         {
           "type": "multiple_choice",
@@ -653,14 +587,14 @@
           "options": [
             "新鲜",
             "调味",
-            "烹饪",
-            "口味"
+            "炖",
+            "厨师"
           ],
           "option_pinyin": [
             "xīn xiān",
             "tiáo wèi",
-            "pēng rèn",
-            "kǒu wèi"
+            "dùn",
+            "chú shī"
           ]
         }
       ],
@@ -680,16 +614,16 @@
           "question": "What does 食谱 mean?",
           "correct": "Recipe; cookbook",
           "options": [
-            "Delicious food; gourmet food",
-            "Fresh",
+            "Taste preference; flavour",
+            "To season; to flavour",
             "Recipe; cookbook",
-            "Diet; eating habits; food and drink"
+            "To pan-fry / To fry in shallow oil"
           ],
           "option_pinyin": [
-            "měi shí",
-            "xīn xiān",
+            "kǒu wèi",
+            "tiáo wèi",
             "shí pǔ",
-            "yǐn shí"
+            "jiān"
           ]
         },
         {
@@ -697,36 +631,36 @@
           "question": "Fill in: Recipe; cookbook",
           "correct": "食谱",
           "options": [
-            "饮食",
-            "厨师",
             "食材",
+            "煎",
+            "美食",
             "食谱"
           ],
           "option_pinyin": [
-            "yǐn shí",
-            "chú shī",
             "shí cái",
+            "jiān",
+            "měi shí",
             "shí pǔ"
           ],
-          "question_chinese": "她按照___上的步骤做菜。",
-          "question_pinyin": "她按照___上的步骤做菜。",
-          "question_english": "She followed the steps on the recipe."
+          "question_chinese": "厨师把食材切好以后，再按照___调味，最后大火翻炒。",
+          "question_pinyin": "厨师把食材切好以后，再按照___调味，最后大火翻炒。",
+          "question_english": "After the chef cuts the ingredients, he seasons them according to the recipe, then stir-fries them over high heat."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Recipe; cookbook'?",
           "correct": "食谱",
           "options": [
-            "口味",
-            "食谱",
-            "厨师",
-            "特色"
+            "饮食",
+            "新鲜",
+            "调味",
+            "食谱"
           ],
           "option_pinyin": [
-            "kǒu wèi",
-            "shí pǔ",
-            "chú shī",
-            "tè sè"
+            "yǐn shí",
+            "xīn xiān",
+            "tiáo wèi",
+            "shí pǔ"
           ]
         }
       ],
@@ -746,16 +680,16 @@
           "question": "What does 美食 mean?",
           "correct": "Delicious food; gourmet food",
           "options": [
-            "Chef; cook",
-            "Cooking; culinary arts",
+            "Fresh",
+            "Characteristic; special feature",
             "Delicious food; gourmet food",
-            "Characteristic; special feature"
+            "To pan-fry / To fry in shallow oil"
           ],
           "option_pinyin": [
-            "chú shī",
-            "pēng rèn",
+            "xīn xiān",
+            "tè sè",
             "měi shí",
-            "tè sè"
+            "jiān"
           ]
         },
         {
@@ -763,40 +697,304 @@
           "question": "Fill in: Delicious food; gourmet food",
           "correct": "美食",
           "options": [
-            "烹饪",
-            "美食",
-            "新鲜",
-            "食谱"
+            "饮食",
+            "特色",
+            "煮",
+            "美食"
           ],
           "option_pinyin": [
-            "pēng rèn",
-            "měi shí",
-            "xīn xiān",
-            "shí pǔ"
+            "yǐn shí",
+            "tè sè",
+            "zhǔ",
+            "měi shí"
           ],
-          "question_chinese": "她喜欢四处寻找各地___。",
-          "question_pinyin": "她喜欢四处寻找各地___。",
-          "question_english": "She loves searching for delicious food from all over."
+          "question_chinese": "她把新鲜食材一一清洗干净，准备按照食谱烹饪一道传统___。",
+          "question_pinyin": "她把新鲜食材一一清洗干净，准备按照食谱烹饪一道传统___。",
+          "question_english": "She washed all the fresh ingredients one by one and prepared to cook a traditional dish following a recipe."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Delicious food; gourmet food'?",
           "correct": "美食",
           "options": [
-            "特色",
             "美食",
-            "厨师",
+            "特色",
+            "菜肴",
             "口味"
           ],
           "option_pinyin": [
-            "tè sè",
             "měi shí",
-            "chú shī",
+            "tè sè",
+            "cài yáo",
             "kǒu wèi"
           ]
         }
       ],
       "example_pinyin": "tā bǎ xīn xiān shí cái yī yī qīng xǐ gān jìng zhǔn bèi àn zhào shí pǔ pēng rèn yī dào chuán tǒng měi shí"
+    },
+    {
+      "id": "hsk5_l4_13",
+      "chinese": "炒",
+      "pinyin": "chǎo",
+      "english": "To stir-fry",
+      "part_of_speech": "verb",
+      "example": "厨师把新鲜食材炒得又香又嫩。",
+      "translation": "The chef stir-fried the fresh ingredients until they were fragrant and tender.",
+      "example_pinyin": "chú shī bǎ xīn xiān shí cái chǎo dé yòu xiāng yòu nèn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 炒 mean?",
+          "correct": "To stir-fry",
+          "options": [
+            "To stir-fry",
+            "Fresh",
+            "To boil / To cook (in water)",
+            "Recipe; cookbook"
+          ],
+          "option_pinyin": [
+            "chǎo",
+            "xīn xiān",
+            "zhǔ",
+            "shí pǔ"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To stir-fry",
+          "correct": "炒",
+          "options": [
+            "特色",
+            "炒",
+            "口味",
+            "烹饪"
+          ],
+          "option_pinyin": [
+            "tè sè",
+            "chǎo",
+            "kǒu wèi",
+            "pēng rèn"
+          ],
+          "question_chinese": "厨师把新鲜食材___得又香又嫩。",
+          "question_pinyin": "厨师把新鲜食材___得又香又嫩。",
+          "question_english": "The chef stir-fried the fresh ingredients until they were fragrant and tender."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To stir-fry'?",
+          "correct": "炒",
+          "options": [
+            "调味",
+            "炒",
+            "食材",
+            "饮食"
+          ],
+          "option_pinyin": [
+            "tiáo wèi",
+            "chǎo",
+            "shí cái",
+            "yǐn shí"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk5_l4_14",
+      "chinese": "煎",
+      "pinyin": "jiān",
+      "english": "To pan-fry / To fry in shallow oil",
+      "part_of_speech": "verb",
+      "example": "按照食谱，把鱼煎到两面金黄就可以了。",
+      "translation": "According to the recipe, pan-fry the fish until both sides are golden.",
+      "example_pinyin": "àn zhào shí pǔ bǎ yú jiān dào liǎng miàn jīn huáng jiù kě yǐ le",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 煎 mean?",
+          "correct": "To pan-fry / To fry in shallow oil",
+          "options": [
+            "Dish; prepared food",
+            "Ingredient; foodstuff",
+            "To pan-fry / To fry in shallow oil",
+            "Characteristic; special feature"
+          ],
+          "option_pinyin": [
+            "cài yáo",
+            "shí cái",
+            "jiān",
+            "tè sè"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To pan-fry / To fry in shallow oil",
+          "correct": "煎",
+          "options": [
+            "煎",
+            "特色",
+            "食谱",
+            "炖"
+          ],
+          "option_pinyin": [
+            "jiān",
+            "tè sè",
+            "shí pǔ",
+            "dùn"
+          ],
+          "question_chinese": "按照食谱，把鱼___到两面金黄就可以了。",
+          "question_pinyin": "按照食谱，把鱼___到两面金黄就可以了。",
+          "question_english": "According to the recipe, pan-fry the fish until both sides are golden."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To pan-fry / To fry in shallow oil'?",
+          "correct": "煎",
+          "options": [
+            "新鲜",
+            "煎",
+            "煮",
+            "菜肴"
+          ],
+          "option_pinyin": [
+            "xīn xiān",
+            "jiān",
+            "zhǔ",
+            "cài yáo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk5_l4_15",
+      "chinese": "煮",
+      "pinyin": "zhǔ",
+      "english": "To boil / To cook (in water)",
+      "part_of_speech": "verb",
+      "example": "妈妈把新鲜食材煮成了一锅美味的汤。",
+      "translation": "Mum boiled the fresh ingredients into a pot of delicious soup.",
+      "example_pinyin": "mā mā bǎ xīn xiān shí cái zhǔ chéng le yī guō měi wèi de tāng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 煮 mean?",
+          "correct": "To boil / To cook (in water)",
+          "options": [
+            "Ingredient; foodstuff",
+            "To boil / To cook (in water)",
+            "To stew / To braise / To simmer",
+            "Recipe; cookbook"
+          ],
+          "option_pinyin": [
+            "shí cái",
+            "zhǔ",
+            "dùn",
+            "shí pǔ"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To boil / To cook (in water)",
+          "correct": "煮",
+          "options": [
+            "食材",
+            "特色",
+            "煮",
+            "炒"
+          ],
+          "option_pinyin": [
+            "shí cái",
+            "tè sè",
+            "zhǔ",
+            "chǎo"
+          ],
+          "question_chinese": "妈妈把新鲜食材___成了一锅美味的汤。",
+          "question_pinyin": "妈妈把新鲜食材___成了一锅美味的汤。",
+          "question_english": "Mum boiled the fresh ingredients into a delicious soup."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To boil / To cook (in water)'?",
+          "correct": "煮",
+          "options": [
+            "食材",
+            "饮食",
+            "煮",
+            "新鲜"
+          ],
+          "option_pinyin": [
+            "shí cái",
+            "yǐn shí",
+            "zhǔ",
+            "xīn xiān"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk5_l4_16",
+      "chinese": "炖",
+      "pinyin": "dùn",
+      "english": "To stew / To braise / To simmer",
+      "part_of_speech": "verb",
+      "example": "这道特色菜需要用小火慢慢炖两个小时。",
+      "translation": "This signature dish needs to be simmered on low heat for two hours.",
+      "example_pinyin": "zhè dào tè sè cài xū yào yòng xiǎo huǒ màn màn dùn liǎng gè xiǎo shí",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 炖 mean?",
+          "correct": "To stew / To braise / To simmer",
+          "options": [
+            "To stew / To braise / To simmer",
+            "To boil / To cook (in water)",
+            "Recipe; cookbook",
+            "Dish; prepared food"
+          ],
+          "option_pinyin": [
+            "dùn",
+            "zhǔ",
+            "shí pǔ",
+            "cài yáo"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To stew / To braise / To simmer",
+          "correct": "炖",
+          "options": [
+            "食谱",
+            "炖",
+            "美食",
+            "煮"
+          ],
+          "option_pinyin": [
+            "shí pǔ",
+            "dùn",
+            "měi shí",
+            "zhǔ"
+          ],
+          "question_chinese": "这道特色菜需要用小火慢慢___两个小时。",
+          "question_pinyin": "这道特色菜需要用小火慢慢___两个小时。",
+          "question_english": "This signature dish needs to be simmered on low heat for two hours."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To stew / To braise / To simmer'?",
+          "correct": "炖",
+          "options": [
+            "炖",
+            "美食",
+            "菜肴",
+            "厨师"
+          ],
+          "option_pinyin": [
+            "dùn",
+            "měi shí",
+            "cài yáo",
+            "chú shī"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l4_p01",
@@ -1072,307 +1270,80 @@
     },
     {
       "number": 2,
-      "title": "越...越... — The more...the more... (e.g. 越新鲜越好吃)",
-      "explanation": "越...越... expresses that as one quality or action increases, another quality or result also increases proportionally. Structure: 越 + verb/adjective A + 越 + verb/adjective B. The subject can be shared or different. 食材越新鲜，菜肴越好吃 - The fresher the ingredients, the more delicious the dish.",
+      "title": "在……上/下/中 — In terms of / Under / In the process of",
+      "explanation": "在……上/下/中 is a prepositional phrase placed before the main clause. It expresses the condition, aspect, scope, or circumstance of an action.\n\n在……上 — focuses on an aspect or domain:\n• 在饮食上，我们要注重营养均衡。\n  (In terms of diet, we should focus on balanced nutrition.)\n• 在烹饪上，厨师有着丰富的经验。\n  (In terms of cooking, the chef has rich experience.)\n\n在……下 — under a condition or influence:\n• 在厨师的指导下，他学会了很多烹饪技巧。\n  (Under the chef's guidance, he learned many cooking techniques.)\n• 在新鲜食材的基础下，菜肴更加美味。\n  (With fresh ingredients as a foundation, the dishes are more delicious.)\n\n在……中 — in the midst of / during a process:\n• 在烹饪中，食材的处理方式非常关键。\n  (In the process of cooking, how ingredients are handled is crucial.)\n• 在品尝美食中，他发现了很多特色口味。\n  (While enjoying delicious food, he discovered many unique flavours.)",
       "examples": [
         {
-          "chinese": "厨师的烹饪技术越高，做出来的菜肴口味越好。",
-          "pinyin": "Chú shī de pēng rèn jì shù yuè gāo, zuò chū lái de cài yáo kǒu wèi yuè hǎo.",
-          "english": "The higher a chef's cooking skill, the better the flavour of the dishes produced."
+          "chinese": "在饮食上，厨师建议多吃新鲜食材。",
+          "pinyin": "zài yǐn shí shàng chú shī jiàn yì duō chī xīn xiān shí cái",
+          "english": "In terms of diet, the chef recommends eating more fresh ingredients."
         },
         {
-          "chinese": "他越按照食谱做菜，越能掌握调味的方法。",
-          "pinyin": "Tā yuè àn zhào shí pǔ zuò cài, yuè néng zhǎng wò tiáo wèi de fāng fǎ.",
-          "english": "The more he cooks following the recipe, the better he masters the methods of seasoning."
+          "chinese": "在厨师的指导下，他学会了多种烹饪方法。",
+          "pinyin": "zài chú shī de zhǐ dǎo xià tā xué huì le duō zhǒng pēng rèn fāng fǎ",
+          "english": "Under the chef's guidance, he learned various cooking methods."
+        },
+        {
+          "chinese": "在烹饪中，掌握火候是最重要的技巧。",
+          "pinyin": "zài pēng rèn zhōng zhǎng wò huǒ hòu shì zuì zhòng yào de jì qiǎo",
+          "english": "In the process of cooking, controlling the heat is the most important skill."
         }
       ],
       "exercises": [
         {
-          "question": "食材 _____ 新鲜，菜肴 _____ 好吃。",
+          "question": "___饮食上，我们要选择新鲜的食材来保持健康。",
           "type": "multiple_choice",
-          "correct": "越…越…",
+          "correct": "在",
           "options": [
-            "越…越…",
-            "既…又…",
-            "不管…都…",
-            "只有…才…"
-          ],
-          "option_pinyin": [
-            "yuè...yuè...",
-            "jì...yòu...",
-            "bù guǎn...dōu...",
-            "zhǐ yǒu...cái..."
-          ],
-          "word_hints": {
-            "食材": "shí cái",
-            "菜肴": "cài yáo"
-          }
-        },
-        {
-          "question": "Choose the correct sentence using 越...越...",
-          "type": "multiple_choice",
-          "correct": "他越了解烹饪，越喜欢做菜。",
-          "options": [
-            "他越了解烹饪，越喜欢做菜。",
-            "他了解越烹饪，越喜欢做菜。",
-            "越他了解烹饪，喜欢越做菜。",
-            "他越烹饪了解，越喜欢做菜。"
-          ],
-          "option_pinyin": [
-            "Tā yuè liǎo jiě pēng rèn, yuè xǐ huān zuò cài.",
-            "Tā liǎo jiě yuè pēng rèn, yuè xǐ huān zuò cài.",
-            "Yuè tā liǎo jiě pēng rèn, xǐ huān yuè zuò cài.",
-            "Tā yuè pēng rèn liǎo jiě, yuè xǐ huān zuò cài."
-          ],
-          "word_hints": {
-            "烹饪": "pēng rèn"
-          }
-        },
-        {
-          "question": "What does 越...越... express?",
-          "type": "multiple_choice",
-          "correct": "As one thing increases, another thing increases proportionally",
-          "options": [
-            "As one thing increases, another thing increases proportionally",
-            "Two qualities existing at the same time",
-            "A condition and its necessary result",
-            "Something unchanging regardless of circumstances"
-          ],
-          "option_pinyin": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "word_hints": {}
-        },
-        {
-          "question": "这道菜的口味越特别，越 _____ 食客的兴趣。",
-          "type": "multiple_choice",
-          "correct": "能吸引",
-          "options": [
-            "能吸引",
-            "食材",
-            "调味",
-            "食谱"
-          ],
-          "option_pinyin": [
-            "néng xī yǐn",
-            "shí cái",
-            "tiáo wèi",
-            "shí pǔ"
-          ],
-          "word_hints": {
-            "口味": "kǒu wèi",
-            "特色": "tè sè"
-          }
-        },
-        {
-          "question": "Which sentence uses 越...越... correctly?",
-          "type": "multiple_choice",
-          "correct": "他越学越有兴趣，根本停不下来。",
-          "options": [
-            "他越学越有兴趣，根本停不下来。",
-            "他学越越有兴趣，根本停不下来。",
-            "越他学有兴趣越，根本停不下来。",
-            "他越有兴趣学越，根本停不下来。"
-          ],
-          "option_pinyin": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "word_hints": {}
-        }
-      ],
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "越...越... expresses...",
-          "correct": "The more X, the more Y — two things intensify together proportionally",
-          "options": [
-            "The more X, the more Y — two things intensify together proportionally",
-            "A gradual increase over time: 'more and more'",
-            "The highest degree: 'the most'",
-            "An unexpected contrast between two things"
-          ],
-          "option_pinyin": [
-            "yuè...yuè...",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": "fill_blank",
-          "question": "Fill in: The fresher the ingredients, the more delicious the food.",
-          "correct": "越",
-          "options": [
-            "越",
-            "更",
-            "最",
-            "很"
-          ],
-          "option_pinyin": [
-            "yuè",
-            "gèng",
-            "zuì",
-            "hěn"
-          ],
-          "question_chinese": "食材___新鲜，菜越好吃。",
-          "question_pinyin": "食材___新鲜，菜越好吃。",
-          "question_english": "The fresher the ingredients, the more delicious the food."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which sentence correctly uses 越...越...?",
-          "correct": "他练得越多，厨艺越好。",
-          "options": [
-            "他练得越多，厨艺越好。",
-            "他越练得多，越厨艺好。",
-            "越他练得多，厨艺越好。",
-            "他练得多越，越厨艺好。"
-          ],
-          "option_pinyin": [
-            "tā liàn de yuè duō chú yì yuè hǎo",
-            "tā yuè liàn de duō yuè chú yì hǎo",
-            "yuè tā liàn de duō chú yì yuè hǎo",
-            "tā liàn de duō yuè yuè chú yì hǎo"
-          ]
-        }
-      ]
-    },
-    {
-      "number": 3,
-      "title": "把 construction for cooking — 把 + ingredient + action (e.g. 把食材切好)",
-      "explanation": "The 把 construction is very common in cooking contexts. It places the object (usually the ingredient or dish) before the verb to emphasise the result or transformation. Structure: 把 + ingredient/object + verb + result complement. 把蔬菜切好 - Cut the vegetables into shape. 把汤煮热 - Heat the soup. The focus is on what is done to the object.",
-      "examples": [
-        {
-          "chinese": "厨师把新鲜食材清洗干净，然后开始按照食谱调味。",
-          "pinyin": "Chú shī bǎ xīn xiān shí cái qīng xǐ gān jìng, rán hòu kāi shǐ àn zhào shí pǔ tiáo wèi.",
-          "english": "The chef washed the fresh ingredients clean, then began seasoning according to the recipe."
-        },
-        {
-          "chinese": "她把那道特色菜肴做得非常好，营养与口味都兼顾到了。",
-          "pinyin": "Tā bǎ nà dào tè sè cài yáo zuò de fēi cháng hǎo, yíng yǎng yǔ kǒu wèi dōu jiān gù dào le.",
-          "english": "She prepared that signature dish extremely well, balancing both nutrition and flavour."
-        }
-      ],
-      "exercises": [
-        {
-          "question": "厨师 _____ 食材切成小块，然后下锅翻炒。",
-          "type": "multiple_choice",
-          "correct": "把",
-          "options": [
-            "把",
-            "被",
-            "让",
-            "给"
-          ],
-          "option_pinyin": [
-            "bǎ",
-            "bèi",
-            "ràng",
-            "gěi"
-          ],
-          "word_hints": {
-            "食材": "shí cái",
-            "厨师": "chú shī"
-          }
-        },
-        {
-          "question": "Choose the correct sentence using the 把 construction.",
-          "type": "multiple_choice",
-          "correct": "她把这道菜肴调味得恰到好处。",
-          "options": [
-            "她把这道菜肴调味得恰到好处。",
-            "她这道菜肴把调味得恰到好处。",
-            "把她这道菜肴调味恰到好处得。",
-            "她调味这道菜肴把得恰到好处。"
-          ],
-          "option_pinyin": [
-            "Tā bǎ zhè dào cài yáo tiáo wèi de qià dào hǎo chù.",
-            "Tā zhè dào cài yáo bǎ tiáo wèi de qià dào hǎo chù.",
-            "Bǎ tā zhè dào cài yáo tiáo wèi qià dào hǎo chù de.",
-            "Tā tiáo wèi zhè dào cài yáo bǎ de qià dào hǎo chù."
-          ],
-          "word_hints": {
-            "菜肴": "cài yáo",
-            "调味": "tiáo wèi"
-          }
-        },
-        {
-          "question": "What does the 把 construction emphasise in cooking contexts?",
-          "type": "multiple_choice",
-          "correct": "The result or transformation done to the ingredient/object",
-          "options": [
-            "The result or transformation done to the ingredient/object",
-            "The time at which the cooking happened",
-            "The person who is doing the cooking",
-            "The reason the food was cooked"
-          ],
-          "option_pinyin": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "word_hints": {}
-        },
-        {
-          "question": "他 _____ 那道美食的食谱记在了本子上，方便以后再做。",
-          "type": "multiple_choice",
-          "correct": "把",
-          "options": [
-            "把",
-            "被",
+            "在",
             "用",
-            "对"
+            "从",
+            "让"
           ],
           "option_pinyin": [
-            "bǎ",
-            "bèi",
+            "zài",
             "yòng",
-            "duì"
+            "cóng",
+            "ràng"
           ],
           "word_hints": {
-            "食谱": "shí pǔ",
-            "美食": "měi shí"
+            "食材": "shí cái"
           }
         },
         {
-          "question": "Which sentence uses the 把 construction correctly for a cooking context?",
+          "question": "Which sentence correctly uses 在……上/下/中?",
           "type": "multiple_choice",
-          "correct": "她把汤煮好了，端到桌上。",
+          "correct": "在厨师的指导下，他学会了炒、煎、煮、炖等多种烹饪方式。",
           "options": [
-            "她把汤煮好了，端到桌上。",
-            "汤她把煮好了，端到桌上。",
-            "她煮把汤好了，端到桌上。",
-            "煮好了她把汤，端到桌上。"
+            "在厨师的指导下，他学会了炒、煎、煮、炖等多种烹饪方式。",
+            "厨师的指导在下，学会了烹饪方式。",
+            "他在了厨师指导下学会烹饪。",
+            "在下厨师指导，烹饪方式学会了。"
           ],
           "option_pinyin": [
-            "Tā bǎ tāng zhǔ hǎo le, duān dào zhuō shàng.",
-            "Tāng tā bǎ zhǔ hǎo le, duān dào zhuō shàng.",
-            "Tā zhǔ bǎ tāng hǎo le, duān dào zhuō shàng.",
-            "Zhǔ hǎo le tā bǎ tāng, duān dào zhuō shàng."
+            "zài chú shī de zhǐ dǎo xià tā xué huì le chǎo jiān zhǔ dùn děng duō zhǒng pēng rèn fāng shì",
+            "",
+            "",
+            ""
           ],
-          "word_hints": {}
+          "word_hints": {
+            "指导": "zhǐ dǎo"
+          }
         }
       ],
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "In the 把 construction for cooking (e.g. 把食材切好), 把 is used to...",
-          "correct": "Move the object before the verb to emphasise the handling or processing of the ingredient",
+          "question": "在饮食上 is used to mean...",
+          "correct": "In terms of diet / Regarding the aspect of eating",
           "options": [
-            "Move the object before the verb to emphasise the handling or processing of the ingredient",
-            "Show that an action was done to you (passive)",
-            "Indicate that an action will happen in the future",
-            "Express that something was done by someone else"
+            "In terms of diet / Regarding the aspect of eating",
+            "Under the condition of eating",
+            "During the process of eating something",
+            "Because of the food"
           ],
           "option_pinyin": [
-            "bǎ + OBJ + V",
+            "zài yǐn shí shàng",
             "",
             "",
             ""
@@ -1380,39 +1351,39 @@
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Please wash the ingredients clean first.",
-          "correct": "把",
+          "question": "Fill in: Under the chef's guidance, he learned many cooking techniques.",
+          "correct": "在",
           "options": [
-            "把",
-            "让",
-            "被",
-            "给"
+            "在",
+            "用",
+            "从",
+            "让"
           ],
           "option_pinyin": [
-            "bǎ",
-            "ràng",
-            "bèi",
-            "gěi"
+            "zài",
+            "yòng",
+            "cóng",
+            "ràng"
           ],
-          "question_chinese": "请先___食材洗干净。",
-          "question_pinyin": "请先___食材洗干净。",
-          "question_english": "Please wash the ingredients clean first."
+          "question_chinese": "___厨师的指导下，他学会了很多烹饪技巧。",
+          "question_pinyin": "___厨师的指导下，他学会了很多烹饪技巧。",
+          "question_english": "Under the chef's guidance, he learned many cooking techniques."
         },
         {
           "type": "multiple_choice",
-          "question": "Which sentence correctly uses the 把 construction?",
-          "correct": "他把食材切好了，准备开始烹饪。",
+          "question": "Which sentence correctly uses 在……上/下/中?",
+          "correct": "在烹饪上，食材的新鲜度非常重要。",
           "options": [
-            "他把食材切好了，准备开始烹饪。",
-            "他食材把切好了，准备开始烹饪。",
-            "把他食材切好了，准备开始烹饪。",
-            "他切好了食材，把准备开始烹饪。"
+            "在烹饪上，食材的新鲜度非常重要。",
+            "烹饪在上，食材新鲜度重要。",
+            "食材新鲜度，在烹饪上重要很。",
+            "在上烹饪，食材的新鲜度非常重要。"
           ],
           "option_pinyin": [
-            "tā bǎ shí cái qiē hǎo le zhǔn bèi kāi shǐ pēng rèn",
-            "tā shí cái bǎ qiē hǎo le zhǔn bèi kāi shǐ pēng rèn",
-            "bǎ tā shí cái qiē hǎo le zhǔn bèi kāi shǐ pēng rèn",
-            "tā qiē hǎo le shí cái bǎ zhǔn bèi kāi shǐ pēng rèn"
+            "zài pēng rèn shàng shí cái de xīn xiān dù fēi cháng zhòng yào",
+            "",
+            "",
+            ""
           ]
         }
       ]
