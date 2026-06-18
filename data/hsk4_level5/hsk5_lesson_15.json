@@ -14,37 +14,261 @@
       "part_of_speech": "noun",
       "example": "他尽力完成每一个任务，最终取得了令人骄傲的成就。",
       "translation": "He did his best to complete every task and ultimately achieved accomplishments that made everyone proud.",
-      "example_pinyin": "tā jìn lì wán chéng měi yí gè rèn wù zuì zhōng qǔ dé le lìng rén jiāo ào de chéng jiù"
+      "example_pinyin": "tā jìn lì wán chéng měi yí gè rèn wù zuì zhōng qǔ dé le lìng rén jiāo ào de chéng jiù",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 成就 mean?",
+          "correct": "Achievement; accomplishment",
+          "options": [
+            "To inspire; to motivate; motivation",
+            "To overcome; to surmount",
+            "Persevering / Unwavering persistence / Dogged",
+            "Achievement; accomplishment"
+          ],
+          "option_pinyin": [
+            "jī lì",
+            "kè fú",
+            "jiān chí bù xiè",
+            "chéng jiù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Achievement; accomplishment",
+          "correct": "成就",
+          "options": [
+            "自豪",
+            "奋斗",
+            "坚持不懈",
+            "成就"
+          ],
+          "option_pinyin": [
+            "zì háo",
+            "fèn dòu",
+            "jiān chí bù xiè",
+            "chéng jiù"
+          ],
+          "question_chinese": "他尽力完成每一个任务，最终取得了令人骄傲的___。",
+          "question_pinyin": "他尽力完成每一个任务，最终取得了令人骄傲的___。",
+          "question_english": "He did his best to complete every task and ultimately achieved accomplishments that made everyone proud."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Achievement; accomplishment'?",
+          "correct": "成就",
+          "options": [
+            "价值",
+            "成就",
+            "坚持不懈",
+            "骄傲"
+          ],
+          "option_pinyin": [
+            "jià zhí",
+            "chéng jiù",
+            "jiān chí bù xiè",
+            "jiāo ào"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l15_02",
-      "chinese": "目标",
-      "pinyin": "mù biāo",
-      "english": "Goal; target; objective",
+      "chinese": "性格",
+      "pinyin": "xìng gé",
+      "english": "Personality / Character / Temperament",
       "part_of_speech": "noun",
-      "example": "凭借坚强的意志力和不懈的努力，他终于克服了所有挑战，实现了目标。",
-      "translation": "Relying on strong willpower and tireless effort, he finally overcame all challenges and achieved his goal.",
-      "example_pinyin": "píng jiè jiān qiáng de yì zhì lì hé bù xiè de nǔ lì tā zhōng yú kè fú le suǒ yǒu tiǎo zhàn shí xiàn le mù biāo"
+      "example": "一个人的性格会影响他如何面对局限，找到突破的方向。",
+      "translation": "A person's personality influences how they face limitations and find the direction for a breakthrough.",
+      "example_pinyin": "yí gè rén de xìng gé huì yǐng xiǎng tā rú hé miàn duì jú xiàn zhǎo dào tū pò de fāng xiàng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 性格 mean?",
+          "correct": "Personality / Character / Temperament",
+          "options": [
+            "Personality / Character / Temperament",
+            "Limitation / Constraint / To limit",
+            "To strive; to struggle; to fight for",
+            "To inspire; to motivate; motivation"
+          ],
+          "option_pinyin": [
+            "xìng gé",
+            "jú xiàn",
+            "fèn dòu",
+            "jī lì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Personality / Character / Temperament",
+          "correct": "性格",
+          "options": [
+            "价值",
+            "性格",
+            "克服",
+            "成就"
+          ],
+          "option_pinyin": [
+            "jià zhí",
+            "xìng gé",
+            "kè fú",
+            "chéng jiù"
+          ],
+          "question_chinese": "一个人的___会影响他如何面对局限，找到突破的方向。",
+          "question_pinyin": "一个人的___会影响他如何面对局限，找到突破的方向。",
+          "question_english": "A person's personality influences how they face limitations and find the direction for a breakthrough."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Personality / Character / Temperament'?",
+          "correct": "性格",
+          "options": [
+            "局限",
+            "奋斗",
+            "性格",
+            "自豪"
+          ],
+          "option_pinyin": [
+            "jú xiàn",
+            "fèn dòu",
+            "xìng gé",
+            "zì háo"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l15_03",
-      "chinese": "努力",
-      "pinyin": "nǔ lì",
-      "english": "To work hard; hard-working; effort",
-      "part_of_speech": "verb/adjective/noun",
-      "example": "凭借坚强的意志力和不懈的努力，他终于克服了所有挑战，实现了目标。",
-      "translation": "Relying on strong willpower and tireless effort, he finally overcame all challenges and achieved his goal.",
-      "example_pinyin": "píng jiè jiān qiáng de yì zhì lì hé bù xiè de nǔ lì tā zhōng yú kè fú le suǒ yǒu tiǎo zhàn shí xiàn le mù biāo"
+      "chinese": "骄傲",
+      "pinyin": "jiāo ào",
+      "english": "Proud / Pride / Arrogant",
+      "part_of_speech": "adjective/noun",
+      "example": "取得成就时感到骄傲是正常的，但不能因此而忽视自己的局限。",
+      "translation": "Feeling proud when achieving something is normal, but one must not overlook their own limitations because of it.",
+      "example_pinyin": "qǔ dé chéng jiù shí gǎn dào jiāo ào shì zhèng cháng de dàn bù néng yīn cǐ ér hū shì zì jǐ de jú xiàn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 骄傲 mean?",
+          "correct": "Proud / Pride / Arrogant",
+          "options": [
+            "Limitation / Constraint / To limit",
+            "Proud / Pride / Arrogant",
+            "Achievement; accomplishment",
+            "To overcome; to surmount"
+          ],
+          "option_pinyin": [
+            "jú xiàn",
+            "jiāo ào",
+            "chéng jiù",
+            "kè fú"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Proud / Pride / Arrogant",
+          "correct": "骄傲",
+          "options": [
+            "骄傲",
+            "局限",
+            "自豪",
+            "性格"
+          ],
+          "option_pinyin": [
+            "jiāo ào",
+            "jú xiàn",
+            "zì háo",
+            "xìng gé"
+          ],
+          "question_chinese": "取得成就时感到___是正常的，但不能因此而忽视自己的局限。",
+          "question_pinyin": "取得成就时感到___是正常的，但不能因此而忽视自己的局限。",
+          "question_english": "Feeling proud when achieving something is normal, but one must not overlook their own limitations because of it."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Proud / Pride / Arrogant'?",
+          "correct": "骄傲",
+          "options": [
+            "坚持不懈",
+            "骄傲",
+            "激励",
+            "克服"
+          ],
+          "option_pinyin": [
+            "jiān chí bù xiè",
+            "jiāo ào",
+            "jī lì",
+            "kè fú"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l15_04",
-      "chinese": "坚持",
-      "pinyin": "jiān chí",
-      "english": "To persist; to persevere",
-      "part_of_speech": "verb",
-      "example": "不论遇到多大的困难，她都不放弃，始终为梦想而奋斗。",
-      "translation": "Regardless of how great the difficulties she encountered, she never gave up and always strove for her dream.",
-      "example_pinyin": "bù lùn yù dào duō dà de kùn nán tā dōu bù fàng qì shǐ zhōng wèi mèng xiǎng ér fèn dòu"
+      "chinese": "坚持不懈",
+      "pinyin": "jiān chí bù xiè",
+      "english": "Persevering / Unwavering persistence / Dogged",
+      "part_of_speech": "adjective/verb",
+      "example": "凭借坚持不懈的精神，她终于克服了局限，取得了令人骄傲的成就。",
+      "translation": "With unwavering persistence, she finally overcame her limitations and achieved something truly worth being proud of.",
+      "example_pinyin": "píng jiè jiān chí bù xiè de jīng shén tā zhōng yú kè fú liǎo jú xiàn qǔ dé le lìng rén jiāo ào de chéng jiù",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 坚持不懈 mean?",
+          "correct": "Persevering / Unwavering persistence / Dogged",
+          "options": [
+            "Achievement; accomplishment",
+            "To overcome; to surmount",
+            "Breakthrough; to break through",
+            "Persevering / Unwavering persistence / Dogged"
+          ],
+          "option_pinyin": [
+            "chéng jiù",
+            "kè fú",
+            "tū pò",
+            "jiān chí bù xiè"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Persevering / Unwavering persistence / Dogged",
+          "correct": "坚持不懈",
+          "options": [
+            "坚持不懈",
+            "价值",
+            "突破",
+            "成就"
+          ],
+          "option_pinyin": [
+            "jiān chí bù xiè",
+            "jià zhí",
+            "tū pò",
+            "chéng jiù"
+          ],
+          "question_chinese": "凭借___的精神，她终于克服了局限，取得了令人骄傲的成就。",
+          "question_pinyin": "凭借___的精神，她终于克服了局限，取得了令人骄傲的成就。",
+          "question_english": "With unwavering persistence, she finally overcame her limitations and achieved something truly worth being proud of."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Persevering / Unwavering persistence / Dogged'?",
+          "correct": "坚持不懈",
+          "options": [
+            "自豪",
+            "突破",
+            "坚持不懈",
+            "性格"
+          ],
+          "option_pinyin": [
+            "zì háo",
+            "tū pò",
+            "jiān chí bù xiè",
+            "xìng gé"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l15_05",
@@ -54,17 +278,129 @@
       "part_of_speech": "verb",
       "example": "凭借坚强的意志力和不懈的努力，他终于克服了所有挑战，实现了目标。",
       "translation": "Relying on strong willpower and tireless effort, he finally overcame all challenges and achieved his goal.",
-      "example_pinyin": "píng jiè jiān qiáng de yì zhì lì hé bù xiè de nǔ lì tā zhōng yú kè fú le suǒ yǒu tiǎo zhàn shí xiàn le mù biāo"
+      "example_pinyin": "píng jiè jiān qiáng de yì zhì lì hé bù xiè de nǔ lì tā zhōng yú kè fú le suǒ yǒu tiǎo zhàn shí xiàn le mù biāo",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 克服 mean?",
+          "correct": "To overcome; to surmount",
+          "options": [
+            "Persevering / Unwavering persistence / Dogged",
+            "To inspire; to motivate; motivation",
+            "Value / Worth / Significance",
+            "To overcome; to surmount"
+          ],
+          "option_pinyin": [
+            "jiān chí bù xiè",
+            "jī lì",
+            "jià zhí",
+            "kè fú"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To overcome; to surmount",
+          "correct": "克服",
+          "options": [
+            "自豪",
+            "成就",
+            "克服",
+            "骄傲"
+          ],
+          "option_pinyin": [
+            "zì háo",
+            "chéng jiù",
+            "kè fú",
+            "jiāo ào"
+          ],
+          "question_chinese": "凭借坚强的意志力和不懈的努力，他终于___了所有挑战，实现了目标。",
+          "question_pinyin": "凭借坚强的意志力和不懈的努力，他终于___了所有挑战，实现了目标。",
+          "question_english": "Relying on strong willpower and tireless effort, he finally overcame all challenges and achieved his goal."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To overcome; to surmount'?",
+          "correct": "克服",
+          "options": [
+            "价值",
+            "突破",
+            "局限",
+            "克服"
+          ],
+          "option_pinyin": [
+            "jià zhí",
+            "tū pò",
+            "jú xiàn",
+            "kè fú"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l15_06",
-      "chinese": "挑战",
-      "pinyin": "tiǎo zhàn",
-      "english": "Challenge; to challenge",
+      "chinese": "局限",
+      "pinyin": "jú xiàn",
+      "english": "Limitation / Constraint / To limit",
       "part_of_speech": "noun/verb",
-      "example": "凭借团队的力量，他们克服了一个又一个挑战，最终成功实现了目标。",
-      "translation": "By relying on the strength of their team, they overcame one challenge after another and ultimately achieved their goal.",
-      "example_pinyin": "píng jiè tuán duì de lì liàng tā men kè fú le yí gè yòu yí gè tiǎo zhàn zuì zhōng chéng gōng shí xiàn le mù biāo"
+      "example": "了解自己的局限，才能找到突破的方向，体现真正的价值。",
+      "translation": "Understanding one's limitations is what allows you to find the direction for a breakthrough and demonstrate true value.",
+      "example_pinyin": "liǎo jiě zì jǐ de jú xiàn cái néng zhǎo dào tū pò de fāng xiàng tǐ xiàn zhēn zhèng de jià zhí",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 局限 mean?",
+          "correct": "Limitation / Constraint / To limit",
+          "options": [
+            "Limitation / Constraint / To limit",
+            "To overcome; to surmount",
+            "To inspire; to motivate; motivation",
+            "Persevering / Unwavering persistence / Dogged"
+          ],
+          "option_pinyin": [
+            "jú xiàn",
+            "kè fú",
+            "jī lì",
+            "jiān chí bù xiè"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Limitation / Constraint / To limit",
+          "correct": "局限",
+          "options": [
+            "克服",
+            "局限",
+            "成就",
+            "奋斗"
+          ],
+          "option_pinyin": [
+            "kè fú",
+            "jú xiàn",
+            "chéng jiù",
+            "fèn dòu"
+          ],
+          "question_chinese": "了解自己的___，才能找到突破的方向，体现真正的价值。",
+          "question_pinyin": "了解自己的___，才能找到突破的方向，体现真正的价值。",
+          "question_english": "Understanding one's limitations is what allows you to find the direction for a breakthrough and demonstrate true value."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Limitation / Constraint / To limit'?",
+          "correct": "局限",
+          "options": [
+            "局限",
+            "克服",
+            "成就",
+            "坚持不懈"
+          ],
+          "option_pinyin": [
+            "jú xiàn",
+            "kè fú",
+            "chéng jiù",
+            "jiān chí bù xiè"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l15_07",
@@ -74,17 +410,63 @@
       "part_of_speech": "noun/verb",
       "example": "这次突破不仅让她感到自豪，也激励了周围很多人努力奋斗。",
       "translation": "This breakthrough not only made her feel proud but also inspired many people around her to work hard and strive.",
-      "example_pinyin": "zhè cì tū pò bù jǐn ràng tā gǎn dào zì háo yě jī lì le zhōu wéi hěn duō rén nǔ lì fèn dòu"
-    },
-    {
-      "id": "hsk5_l15_08",
-      "chinese": "成功",
-      "pinyin": "chéng gōng",
-      "english": "Success; to succeed; successful",
-      "part_of_speech": "noun/verb/adjective",
-      "example": "凭借团队的力量，他们克服了一个又一个挑战，最终成功实现了目标。",
-      "translation": "By relying on the strength of their team, they overcame one challenge after another and ultimately achieved their goal.",
-      "example_pinyin": "píng jiè tuán duì de lì liàng tā men kè fú le yí gè yòu yí gè tiǎo zhàn zuì zhōng chéng gōng shí xiàn le mù biāo"
+      "example_pinyin": "zhè cì tū pò bù jǐn ràng tā gǎn dào zì háo yě jī lì le zhōu wéi hěn duō rén nǔ lì fèn dòu",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 突破 mean?",
+          "correct": "Breakthrough; to break through",
+          "options": [
+            "Breakthrough; to break through",
+            "To strive; to struggle; to fight for",
+            "Limitation / Constraint / To limit",
+            "Proud; to feel proud"
+          ],
+          "option_pinyin": [
+            "tū pò",
+            "fèn dòu",
+            "jú xiàn",
+            "zì háo"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Breakthrough; to break through",
+          "correct": "突破",
+          "options": [
+            "坚持不懈",
+            "性格",
+            "突破",
+            "克服"
+          ],
+          "option_pinyin": [
+            "jiān chí bù xiè",
+            "xìng gé",
+            "tū pò",
+            "kè fú"
+          ],
+          "question_chinese": "这次___不仅让她感到自豪，也激励了周围很多人努力奋斗。",
+          "question_pinyin": "这次___不仅让她感到自豪，也激励了周围很多人努力奋斗。",
+          "question_english": "This breakthrough not only made her feel proud but also inspired many people around her to work hard and strive."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Breakthrough; to break through'?",
+          "correct": "突破",
+          "options": [
+            "局限",
+            "性格",
+            "坚持不懈",
+            "突破"
+          ],
+          "option_pinyin": [
+            "jú xiàn",
+            "xìng gé",
+            "jiān chí bù xiè",
+            "tū pò"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l15_09",
@@ -94,7 +476,63 @@
       "part_of_speech": "adjective/verb",
       "example": "不论结果如何，只要尽力了，就值得为自己感到自豪。",
       "translation": "Regardless of the outcome, as long as you have done your best, you deserve to feel proud of yourself.",
-      "example_pinyin": "bù lùn jié guǒ rú hé zhǐ yào jìn lì le jiù zhí de wèi zì jǐ gǎn dào zì háo"
+      "example_pinyin": "bù lùn jié guǒ rú hé zhǐ yào jìn lì le jiù zhí de wèi zì jǐ gǎn dào zì háo",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 自豪 mean?",
+          "correct": "Proud; to feel proud",
+          "options": [
+            "Proud; to feel proud",
+            "Achievement; accomplishment",
+            "To overcome; to surmount",
+            "To inspire; to motivate; motivation"
+          ],
+          "option_pinyin": [
+            "zì háo",
+            "chéng jiù",
+            "kè fú",
+            "jī lì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Proud; to feel proud",
+          "correct": "自豪",
+          "options": [
+            "突破",
+            "奋斗",
+            "骄傲",
+            "自豪"
+          ],
+          "option_pinyin": [
+            "tū pò",
+            "fèn dòu",
+            "jiāo ào",
+            "zì háo"
+          ],
+          "question_chinese": "不论结果如何，只要尽力了，就值得为自己感到___。",
+          "question_pinyin": "不论结果如何，只要尽力了，就值得为自己感到___。",
+          "question_english": "Regardless of the outcome, as long as you have done your best, you deserve to feel proud of yourself."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Proud; to feel proud'?",
+          "correct": "自豪",
+          "options": [
+            "自豪",
+            "成就",
+            "激励",
+            "性格"
+          ],
+          "option_pinyin": [
+            "zì háo",
+            "chéng jiù",
+            "jī lì",
+            "xìng gé"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l15_10",
@@ -104,7 +542,63 @@
       "part_of_speech": "verb/noun",
       "example": "这次突破不仅让她感到自豪，也激励了周围很多人努力奋斗。",
       "translation": "This breakthrough not only made her feel proud but also inspired many people around her to work hard and strive.",
-      "example_pinyin": "zhè cì tū pò bù jǐn ràng tā gǎn dào zì háo yě jī lì le zhōu wéi hěn duō rén nǔ lì fèn dòu"
+      "example_pinyin": "zhè cì tū pò bù jǐn ràng tā gǎn dào zì háo yě jī lì le zhōu wéi hěn duō rén nǔ lì fèn dòu",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 激励 mean?",
+          "correct": "To inspire; to motivate; motivation",
+          "options": [
+            "Value / Worth / Significance",
+            "To inspire; to motivate; motivation",
+            "Proud / Pride / Arrogant",
+            "To overcome; to surmount"
+          ],
+          "option_pinyin": [
+            "jià zhí",
+            "jī lì",
+            "jiāo ào",
+            "kè fú"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To inspire; to motivate; motivation",
+          "correct": "激励",
+          "options": [
+            "自豪",
+            "局限",
+            "骄傲",
+            "激励"
+          ],
+          "option_pinyin": [
+            "zì háo",
+            "jú xiàn",
+            "jiāo ào",
+            "jī lì"
+          ],
+          "question_chinese": "这次突破不仅让她感到自豪，也___了周围很多人努力奋斗。",
+          "question_pinyin": "这次突破不仅让她感到自豪，也___了周围很多人努力奋斗。",
+          "question_english": "This breakthrough not only made her feel proud but also inspired many people around her to work hard and strive."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To inspire; to motivate; motivation'?",
+          "correct": "激励",
+          "options": [
+            "奋斗",
+            "性格",
+            "激励",
+            "成就"
+          ],
+          "option_pinyin": [
+            "fèn dòu",
+            "xìng gé",
+            "jī lì",
+            "chéng jiù"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l15_11",
@@ -114,17 +608,129 @@
       "part_of_speech": "verb",
       "example": "不论遇到多大的困难，她都不放弃，始终为梦想而奋斗。",
       "translation": "Regardless of how great the difficulties she encountered, she never gave up and always strove for her dream.",
-      "example_pinyin": "bù lùn yù dào duō dà de kùn nán tā dōu bù fàng qì shǐ zhōng wèi mèng xiǎng ér fèn dòu"
+      "example_pinyin": "bù lùn yù dào duō dà de kùn nán tā dōu bù fàng qì shǐ zhōng wèi mèng xiǎng ér fèn dòu",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 奋斗 mean?",
+          "correct": "To strive; to struggle; to fight for",
+          "options": [
+            "Limitation / Constraint / To limit",
+            "To strive; to struggle; to fight for",
+            "Persevering / Unwavering persistence / Dogged",
+            "Proud / Pride / Arrogant"
+          ],
+          "option_pinyin": [
+            "jú xiàn",
+            "fèn dòu",
+            "jiān chí bù xiè",
+            "jiāo ào"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To strive; to struggle; to fight for",
+          "correct": "奋斗",
+          "options": [
+            "奋斗",
+            "克服",
+            "突破",
+            "骄傲"
+          ],
+          "option_pinyin": [
+            "fèn dòu",
+            "kè fú",
+            "tū pò",
+            "jiāo ào"
+          ],
+          "question_chinese": "不论遇到多大的困难，她都不放弃，始终为梦想而___。",
+          "question_pinyin": "不论遇到多大的困难，她都不放弃，始终为梦想而___。",
+          "question_english": "Regardless of how great the difficulties she encountered, she never gave up and always strove for her dream."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To strive; to struggle; to fight for'?",
+          "correct": "奋斗",
+          "options": [
+            "克服",
+            "奋斗",
+            "性格",
+            "价值"
+          ],
+          "option_pinyin": [
+            "kè fú",
+            "fèn dòu",
+            "xìng gé",
+            "jià zhí"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l15_12",
-      "chinese": "实现",
-      "pinyin": "shí xiàn",
-      "english": "To realize; to achieve; to fulfil",
-      "part_of_speech": "verb",
-      "example": "凭借坚强的意志力和不懈的努力，他终于克服了所有挑战，实现了目标。",
-      "translation": "Relying on strong willpower and tireless effort, he finally overcame all challenges and achieved his goal.",
-      "example_pinyin": "píng jiè jiān qiáng de yì zhì lì hé bù xiè de nǔ lì tā zhōng yú kè fú le suǒ yǒu tiǎo zhàn shí xiàn le mù biāo"
+      "chinese": "价值",
+      "pinyin": "jià zhí",
+      "english": "Value / Worth / Significance",
+      "part_of_speech": "noun",
+      "example": "不断突破自我的局限，是体现一个人真正价值的方式。",
+      "translation": "Continually breaking through one's own limitations is the way to demonstrate a person's true value.",
+      "example_pinyin": "bù duàn tū pò zì wǒ de jú xiàn shì tǐ xiàn yí gè rén zhēn zhèng jià zhí de fāng shì",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 价值 mean?",
+          "correct": "Value / Worth / Significance",
+          "options": [
+            "Value / Worth / Significance",
+            "Personality / Character / Temperament",
+            "To strive; to struggle; to fight for",
+            "Proud / Pride / Arrogant"
+          ],
+          "option_pinyin": [
+            "jià zhí",
+            "xìng gé",
+            "fèn dòu",
+            "jiāo ào"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Value / Worth / Significance",
+          "correct": "价值",
+          "options": [
+            "局限",
+            "价值",
+            "成就",
+            "克服"
+          ],
+          "option_pinyin": [
+            "jú xiàn",
+            "jià zhí",
+            "chéng jiù",
+            "kè fú"
+          ],
+          "question_chinese": "不断突破自我的局限，是体现一个人真正___的方式。",
+          "question_pinyin": "不断突破自我的局限，是体现一个人真正___的方式。",
+          "question_english": "Continually breaking through one's own limitations is the way to demonstrate a person's true value."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Value / Worth / Significance'?",
+          "correct": "价值",
+          "options": [
+            "价值",
+            "突破",
+            "成就",
+            "克服"
+          ],
+          "option_pinyin": [
+            "jià zhí",
+            "tū pò",
+            "chéng jiù",
+            "kè fú"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l15_p01",
