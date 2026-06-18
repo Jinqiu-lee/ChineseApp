@@ -21,16 +21,16 @@
           "question": "What does 感知 mean?",
           "correct": "to perceive, perception",
           "options": [
-            "concept, idea, notion",
             "to perceive, perception",
-            "to convey, to communicate",
-            "perspective, viewpoint"
+            "to associate, association",
+            "to immerse, immersion",
+            "realm, level, state"
           ],
           "option_pinyin": [
-            "guān niàn",
             "gǎn zhī",
-            "chuán dá",
-            "shì jiǎo"
+            "lián xiǎng",
+            "chén jìn",
+            "jìng jiè"
           ]
         },
         {
@@ -38,102 +38,102 @@
           "question": "Fill in: to perceive, perception",
           "correct": "感知",
           "options": [
-            "情感",
-            "独特",
             "境界",
-            "感知"
+            "传达",
+            "感知",
+            "独特"
           ],
           "option_pinyin": [
-            "qíng gǎn",
-            "dú tè",
             "jìng jiè",
-            "gǎn zhī"
+            "chuán dá",
+            "gǎn zhī",
+            "dú tè"
           ],
           "question_chinese": "人类通过感官___世界，形成对美的独特理解。",
           "question_pinyin": "人类通过感官___世界，形成对美的独特理解。",
-          "question_english": "Humans perceive the world through their senses, forming a unique understanding of beauty."
+          "question_english": "Humans perceive the world through the senses, forming a unique understanding of beauty."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'to perceive, perception'?",
           "correct": "感知",
           "options": [
-            "背景",
-            "共鸣",
+            "视角",
+            "观念",
             "感知",
-            "联想"
+            "细腻"
           ],
           "option_pinyin": [
-            "bèi jǐng",
-            "gòng míng",
+            "shì jiǎo",
+            "guān niàn",
             "gǎn zhī",
-            "lián xiǎng"
+            "xì nì"
           ]
         }
       ]
     },
     {
       "id": "hsk6_l14_02",
-      "chinese": "情感",
-      "pinyin": "qíng gǎn",
-      "english": "emotion, feeling",
-      "part_of_speech": "noun",
-      "example": "优秀的艺术作品往往能够触动人深处的情感。",
-      "translation": "Excellent works of art can often touch the deep emotions within a person.",
-      "example_pinyin": "yōu xiù de yì shù zuò pǐn wǎng wǎng néng gòu chù dòng rén shēn chù de qíng gǎn",
+      "chinese": "细腻",
+      "pinyin": "xì nì",
+      "english": "Delicate / Meticulous / Subtle / Fine",
+      "part_of_speech": "adjective",
+      "example": "他的笔触细腻，每一条线条都传达出深刻的思想与独特的审美境界。",
+      "translation": "His brushstrokes are delicate, with every line conveying profound thought and a unique aesthetic realm.",
+      "example_pinyin": "tā de bǐ chù xì nì měi yī tiáo xiàn tiáo dōu chuán dá chū shēn kè de sī xiǎng yǔ dú tè de shěn měi jìng jiè",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 情感 mean?",
-          "correct": "emotion, feeling",
+          "question": "What does 细腻 mean?",
+          "correct": "Delicate / Meticulous / Subtle / Fine",
           "options": [
             "to immerse, immersion",
-            "emotion, feeling",
-            "to inspire, inspiration",
-            "to convey, to communicate"
+            "Delicate / Meticulous / Subtle / Fine",
+            "to associate, association",
+            "Thought / Idea / Ideology / Thinking"
           ],
           "option_pinyin": [
             "chén jìn",
-            "qíng gǎn",
-            "qǐ fā",
-            "chuán dá"
+            "xì nì",
+            "lián xiǎng",
+            "sī xiǎng"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: emotion, feeling",
-          "correct": "情感",
+          "question": "Fill in: Delicate / Meticulous / Subtle / Fine",
+          "correct": "细腻",
           "options": [
-            "诠释",
-            "启发",
-            "独特",
-            "情感"
+            "境界",
+            "思想",
+            "细腻",
+            "超越"
           ],
           "option_pinyin": [
-            "quán shì",
-            "qǐ fā",
-            "dú tè",
-            "qíng gǎn"
+            "jìng jiè",
+            "sī xiǎng",
+            "xì nì",
+            "chāo yuè"
           ],
-          "question_chinese": "优秀的艺术作品往往能够触动人深处的___。",
-          "question_pinyin": "优秀的艺术作品往往能够触动人深处的___。",
-          "question_english": "Outstanding works of art can often touch the deepest emotions of a person."
+          "question_chinese": "他的笔触___，每一条线条都传达出深刻的思想与独特的审美境界。",
+          "question_pinyin": "他的笔触___，每一条线条都传达出深刻的思想与独特的审美境界。",
+          "question_english": "His brushstrokes are delicate, with every line conveying profound thought and a unique aesthetic realm."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'emotion, feeling'?",
-          "correct": "情感",
+          "question": "Which word means 'Delicate / Meticulous / Subtle / Fine'?",
+          "correct": "细腻",
           "options": [
-            "传达",
-            "情感",
-            "启发",
-            "背景"
+            "境界",
+            "直觉",
+            "细腻",
+            "共鸣"
           ],
           "option_pinyin": [
-            "chuán dá",
-            "qíng gǎn",
-            "qǐ fā",
-            "bèi jǐng"
+            "jìng jiè",
+            "zhí jué",
+            "xì nì",
+            "gòng míng"
           ]
         }
       ]
@@ -153,16 +153,16 @@
           "question": "What does 传达 mean?",
           "correct": "to convey, to communicate",
           "options": [
-            "to associate, association",
-            "to inspire, inspiration",
             "resonance, to resonate",
-            "to convey, to communicate"
+            "to convey, to communicate",
+            "perspective, viewpoint",
+            "Delicate / Meticulous / Subtle / Fine"
           ],
           "option_pinyin": [
-            "lián xiǎng",
-            "qǐ fā",
             "gòng míng",
-            "chuán dá"
+            "chuán dá",
+            "shì jiǎo",
+            "xì nì"
           ]
         },
         {
@@ -170,36 +170,36 @@
           "question": "Fill in: to convey, to communicate",
           "correct": "传达",
           "options": [
+            "共鸣",
+            "独特",
             "超越",
-            "背景",
-            "传达",
-            "观念"
+            "传达"
           ],
           "option_pinyin": [
+            "gòng míng",
+            "dú tè",
             "chāo yuè",
-            "bèi jǐng",
-            "chuán dá",
-            "guān niàn"
+            "chuán dá"
           ],
           "question_chinese": "艺术家通过色彩和线条___自己内心的情感。",
           "question_pinyin": "艺术家通过色彩和线条___自己内心的情感。",
-          "question_english": "Artists convey their inner emotions through color and line."
+          "question_english": "The artist conveys their inner emotions through color and lines."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'to convey, to communicate'?",
           "correct": "传达",
           "options": [
-            "独特",
-            "传达",
-            "诠释",
-            "境界"
+            "境界",
+            "感知",
+            "直觉",
+            "传达"
           ],
           "option_pinyin": [
-            "dú tè",
-            "chuán dá",
-            "quán shì",
-            "jìng jiè"
+            "jìng jiè",
+            "gǎn zhī",
+            "zhí jué",
+            "chuán dá"
           ]
         }
       ]
@@ -219,15 +219,15 @@
           "question": "What does 观念 mean?",
           "correct": "concept, idea, notion",
           "options": [
-            "to convey, to communicate",
-            "to interpret, to explain",
             "concept, idea, notion",
+            "to inspire, inspiration",
+            "to immerse, immersion",
             "unique, distinctive"
           ],
           "option_pinyin": [
-            "chuán dá",
-            "quán shì",
             "guān niàn",
+            "qǐ fā",
+            "chén jìn",
             "dú tè"
           ]
         },
@@ -236,36 +236,36 @@
           "question": "Fill in: concept, idea, notion",
           "correct": "观念",
           "options": [
+            "细腻",
             "观念",
-            "感知",
-            "境界",
-            "沉浸"
+            "传达",
+            "感知"
           ],
           "option_pinyin": [
+            "xì nì",
             "guān niàn",
-            "gǎn zhī",
-            "jìng jiè",
-            "chén jìn"
+            "chuán dá",
+            "gǎn zhī"
           ],
           "question_chinese": "随着时代的发展，人们的审美___也在不断变化。",
           "question_pinyin": "随着时代的发展，人们的审美___也在不断变化。",
-          "question_english": "As the times change, people's aesthetic concepts continue to evolve."
+          "question_english": "As times develop, people's aesthetic concepts keep changing."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'concept, idea, notion'?",
           "correct": "观念",
           "options": [
-            "境界",
             "传达",
             "观念",
-            "情感"
+            "沉浸",
+            "独特"
           ],
           "option_pinyin": [
-            "jìng jiè",
             "chuán dá",
             "guān niàn",
-            "qíng gǎn"
+            "chén jìn",
+            "dú tè"
           ]
         }
       ]
@@ -285,16 +285,16 @@
           "question": "What does 独特 mean?",
           "correct": "unique, distinctive",
           "options": [
-            "background, context",
+            "to perceive, perception",
             "unique, distinctive",
-            "intuition",
-            "realm, level, state"
+            "to inspire, inspiration",
+            "resonance, to resonate"
           ],
           "option_pinyin": [
-            "bèi jǐng",
+            "gǎn zhī",
             "dú tè",
-            "zhí jué",
-            "jìng jiè"
+            "qǐ fā",
+            "gòng míng"
           ]
         },
         {
@@ -302,36 +302,36 @@
           "question": "Fill in: unique, distinctive",
           "correct": "独特",
           "options": [
-            "传达",
-            "联想",
-            "直觉",
-            "独特"
+            "独特",
+            "启发",
+            "共鸣",
+            "传达"
           ],
           "option_pinyin": [
-            "chuán dá",
-            "lián xiǎng",
-            "zhí jué",
-            "dú tè"
+            "dú tè",
+            "qǐ fā",
+            "gòng míng",
+            "chuán dá"
           ],
           "question_chinese": "每位艺术家都有自己___的创作风格和表达方式。",
           "question_pinyin": "每位艺术家都有自己___的创作风格和表达方式。",
-          "question_english": "Every artist has their own unique creative style and means of expression."
+          "question_english": "Every artist has their own unique style of creation and mode of expression."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'unique, distinctive'?",
           "correct": "独特",
           "options": [
-            "沉浸",
+            "思想",
+            "传达",
             "独特",
-            "诠释",
-            "背景"
+            "视角"
           ],
           "option_pinyin": [
-            "chén jìn",
+            "sī xiǎng",
+            "chuán dá",
             "dú tè",
-            "quán shì",
-            "bèi jǐng"
+            "shì jiǎo"
           ]
         }
       ]
@@ -351,16 +351,16 @@
           "question": "What does 共鸣 mean?",
           "correct": "resonance, to resonate",
           "options": [
+            "perspective, viewpoint",
+            "to interpret, to explain",
             "to perceive, perception",
-            "unique, distinctive",
-            "resonance, to resonate",
-            "to transcend, to surpass"
+            "resonance, to resonate"
           ],
           "option_pinyin": [
+            "shì jiǎo",
+            "quán shì",
             "gǎn zhī",
-            "dú tè",
-            "gòng míng",
-            "chāo yuè"
+            "gòng míng"
           ]
         },
         {
@@ -368,16 +368,16 @@
           "question": "Fill in: resonance, to resonate",
           "correct": "共鸣",
           "options": [
-            "直觉",
-            "背景",
-            "传达",
-            "共鸣"
+            "感知",
+            "观念",
+            "共鸣",
+            "超越"
           ],
           "option_pinyin": [
-            "zhí jué",
-            "bèi jǐng",
-            "chuán dá",
-            "gòng míng"
+            "gǎn zhī",
+            "guān niàn",
+            "gòng míng",
+            "chāo yuè"
           ],
           "question_chinese": "这首歌引发了很多听众的___，大家都深有感触。",
           "question_pinyin": "这首歌引发了很多听众的___，大家都深有感触。",
@@ -388,16 +388,16 @@
           "question": "Which word means 'resonance, to resonate'?",
           "correct": "共鸣",
           "options": [
-            "启发",
             "共鸣",
-            "视角",
-            "独特"
+            "传达",
+            "感知",
+            "视角"
           ],
           "option_pinyin": [
-            "qǐ fā",
             "gòng míng",
-            "shì jiǎo",
-            "dú tè"
+            "chuán dá",
+            "gǎn zhī",
+            "shì jiǎo"
           ]
         }
       ]
@@ -417,16 +417,16 @@
           "question": "What does 直觉 mean?",
           "correct": "intuition",
           "options": [
-            "to convey, to communicate",
+            "Thought / Idea / Ideology / Thinking",
             "intuition",
-            "to immerse, immersion",
-            "perspective, viewpoint"
+            "to convey, to communicate",
+            "unique, distinctive"
           ],
           "option_pinyin": [
-            "chuán dá",
+            "sī xiǎng",
             "zhí jué",
-            "chén jìn",
-            "shì jiǎo"
+            "chuán dá",
+            "dú tè"
           ]
         },
         {
@@ -434,16 +434,16 @@
           "question": "Fill in: intuition",
           "correct": "直觉",
           "options": [
+            "超越",
             "直觉",
-            "独特",
-            "联想",
-            "传达"
+            "传达",
+            "共鸣"
           ],
           "option_pinyin": [
+            "chāo yuè",
             "zhí jué",
-            "dú tè",
-            "lián xiǎng",
-            "chuán dá"
+            "chuán dá",
+            "gòng míng"
           ],
           "question_chinese": "欣赏艺术有时候靠的是___，而不是逻辑分析。",
           "question_pinyin": "欣赏艺术有时候靠的是___，而不是逻辑分析。",
@@ -454,82 +454,82 @@
           "question": "Which word means 'intuition'?",
           "correct": "直觉",
           "options": [
-            "背景",
-            "境界",
-            "超越",
-            "直觉"
+            "思想",
+            "直觉",
+            "传达",
+            "细腻"
           ],
           "option_pinyin": [
-            "bèi jǐng",
-            "jìng jiè",
-            "chāo yuè",
-            "zhí jué"
+            "sī xiǎng",
+            "zhí jué",
+            "chuán dá",
+            "xì nì"
           ]
         }
       ]
     },
     {
       "id": "hsk6_l14_08",
-      "chinese": "背景",
-      "pinyin": "bèi jǐng",
-      "english": "background, context",
+      "chinese": "思想",
+      "pinyin": "sī xiǎng",
+      "english": "Thought / Idea / Ideology / Thinking",
       "part_of_speech": "noun",
-      "example": "了解作品的历史背景有助于更深入地理解其艺术价值。",
-      "translation": "Understanding the historical background of a work helps one understand its artistic value more deeply.",
-      "example_pinyin": "liǎo jiě zuò pǐn de lì shǐ bèi jǐng yǒu zhù yú gēng shēn rù dì lǐ jiě qí yì shù jià zhí",
+      "example": "了解艺术家的思想背景，有助于更深入地解读作品的意境。",
+      "translation": "Understanding an artist's intellectual background helps to interpret the meaning of a work more deeply.",
+      "example_pinyin": "liǎo jiě yì shù jiā de sī xiǎng bèi jǐng yǒu zhù yú gēng shēn rù dì jiě dú zuò pǐn de yì jìng",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 背景 mean?",
-          "correct": "background, context",
+          "question": "What does 思想 mean?",
+          "correct": "Thought / Idea / Ideology / Thinking",
           "options": [
+            "Thought / Idea / Ideology / Thinking",
+            "intuition",
             "resonance, to resonate",
-            "to interpret, to explain",
-            "background, context",
-            "to immerse, immersion"
+            "to inspire, inspiration"
           ],
           "option_pinyin": [
+            "sī xiǎng",
+            "zhí jué",
             "gòng míng",
-            "quán shì",
-            "bèi jǐng",
-            "chén jìn"
+            "qǐ fā"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: background, context",
-          "correct": "背景",
+          "question": "Fill in: Thought / Idea / Ideology / Thinking",
+          "correct": "思想",
           "options": [
-            "诠释",
-            "背景",
-            "联想",
-            "启发"
+            "直觉",
+            "思想",
+            "观念",
+            "沉浸"
           ],
           "option_pinyin": [
-            "quán shì",
-            "bèi jǐng",
-            "lián xiǎng",
-            "qǐ fā"
+            "zhí jué",
+            "sī xiǎng",
+            "guān niàn",
+            "chén jìn"
           ],
-          "question_chinese": "了解作品的历史___有助于更深入地理解其艺术价值。",
-          "question_pinyin": "了解作品的历史___有助于更深入地理解其艺术价值。",
-          "question_english": "Understanding the historical background of a work helps one appreciate its artistic value more deeply."
+          "question_chinese": "了解艺术家的___背景，有助于更深入地解读作品的意境。",
+          "question_pinyin": "了解艺术家的___背景，有助于更深入地解读作品的意境。",
+          "question_english": "Understanding an artist's intellectual background helps to interpret the meaning of a work more deeply."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'background, context'?",
-          "correct": "背景",
+          "question": "Which word means 'Thought / Idea / Ideology / Thinking'?",
+          "correct": "思想",
           "options": [
-            "背景",
             "诠释",
-            "观念",
-            "传达"
+            "沉浸",
+            "思想",
+            "共鸣"
           ],
           "option_pinyin": [
-            "bèi jǐng",
             "quán shì",
-            "guān niàn",
-            "chuán dá"
+            "chén jìn",
+            "sī xiǎng",
+            "gòng míng"
           ]
         }
       ]
@@ -549,16 +549,16 @@
           "question": "What does 境界 mean?",
           "correct": "realm, level, state",
           "options": [
-            "to interpret, to explain",
             "realm, level, state",
-            "to associate, association",
-            "resonance, to resonate"
+            "intuition",
+            "to transcend, to surpass",
+            "perspective, viewpoint"
           ],
           "option_pinyin": [
-            "quán shì",
             "jìng jiè",
-            "lián xiǎng",
-            "gòng míng"
+            "zhí jué",
+            "chāo yuè",
+            "shì jiǎo"
           ]
         },
         {
@@ -566,36 +566,36 @@
           "question": "Fill in: realm, level, state",
           "correct": "境界",
           "options": [
-            "境界",
+            "感知",
             "联想",
-            "诠释",
-            "观念"
+            "直觉",
+            "境界"
           ],
           "option_pinyin": [
-            "jìng jiè",
+            "gǎn zhī",
             "lián xiǎng",
-            "quán shì",
-            "guān niàn"
+            "zhí jué",
+            "jìng jiè"
           ],
           "question_chinese": "真正的艺术欣赏能够将人带入一种超越日常的精神___。",
           "question_pinyin": "真正的艺术欣赏能够将人带入一种超越日常的精神___。",
-          "question_english": "True art appreciation can take a person into a spiritual realm that transcends everyday life."
+          "question_english": "True art appreciation can bring a person into a spiritual realm that transcends everyday life."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'realm, level, state'?",
           "correct": "境界",
           "options": [
-            "感知",
-            "共鸣",
-            "境界",
-            "联想"
+            "启发",
+            "传达",
+            "独特",
+            "境界"
           ],
           "option_pinyin": [
-            "gǎn zhī",
-            "gòng míng",
-            "jìng jiè",
-            "lián xiǎng"
+            "qǐ fā",
+            "chuán dá",
+            "dú tè",
+            "jìng jiè"
           ]
         }
       ]
@@ -615,16 +615,16 @@
           "question": "What does 联想 mean?",
           "correct": "to associate, association",
           "options": [
-            "to interpret, to explain",
             "to associate, association",
-            "intuition",
-            "perspective, viewpoint"
+            "resonance, to resonate",
+            "Thought / Idea / Ideology / Thinking",
+            "concept, idea, notion"
           ],
           "option_pinyin": [
-            "quán shì",
             "lián xiǎng",
-            "zhí jué",
-            "shì jiǎo"
+            "gòng míng",
+            "sī xiǎng",
+            "guān niàn"
           ]
         },
         {
@@ -632,36 +632,36 @@
           "question": "Fill in: to associate, association",
           "correct": "联想",
           "options": [
-            "视角",
-            "联想",
             "超越",
-            "感知"
+            "联想",
+            "直觉",
+            "细腻"
           ],
           "option_pinyin": [
-            "shì jiǎo",
-            "lián xiǎng",
             "chāo yuè",
-            "gǎn zhī"
+            "lián xiǎng",
+            "zhí jué",
+            "xì nì"
           ],
           "question_chinese": "看到这幅画，我会自然___到童年时的夏天。",
           "question_pinyin": "看到这幅画，我会自然___到童年时的夏天。",
-          "question_english": "Looking at this painting, I naturally associate it with summer in my childhood."
+          "question_english": "Looking at this painting, I naturally associate it with summers from my childhood."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'to associate, association'?",
           "correct": "联想",
           "options": [
-            "观念",
-            "超越",
+            "共鸣",
             "联想",
-            "传达"
+            "启发",
+            "思想"
           ],
           "option_pinyin": [
-            "guān niàn",
-            "chāo yuè",
+            "gòng míng",
             "lián xiǎng",
-            "chuán dá"
+            "qǐ fā",
+            "sī xiǎng"
           ]
         }
       ]
@@ -681,16 +681,16 @@
           "question": "What does 视角 mean?",
           "correct": "perspective, viewpoint",
           "options": [
+            "to inspire, inspiration",
             "to immerse, immersion",
-            "to convey, to communicate",
-            "intuition",
-            "perspective, viewpoint"
+            "perspective, viewpoint",
+            "intuition"
           ],
           "option_pinyin": [
+            "qǐ fā",
             "chén jìn",
-            "chuán dá",
-            "zhí jué",
-            "shì jiǎo"
+            "shì jiǎo",
+            "zhí jué"
           ]
         },
         {
@@ -698,15 +698,15 @@
           "question": "Fill in: perspective, viewpoint",
           "correct": "视角",
           "options": [
-            "沉浸",
-            "观念",
-            "独特",
+            "境界",
+            "传达",
+            "思想",
             "视角"
           ],
           "option_pinyin": [
-            "chén jìn",
-            "guān niàn",
-            "dú tè",
+            "jìng jiè",
+            "chuán dá",
+            "sī xiǎng",
             "shì jiǎo"
           ],
           "question_chinese": "从不同的___欣赏同一件艺术品，会得到完全不同的体验。",
@@ -718,16 +718,16 @@
           "question": "Which word means 'perspective, viewpoint'?",
           "correct": "视角",
           "options": [
-            "诠释",
+            "视角",
             "超越",
-            "境界",
-            "视角"
+            "独特",
+            "境界"
           ],
           "option_pinyin": [
-            "quán shì",
+            "shì jiǎo",
             "chāo yuè",
-            "jìng jiè",
-            "shì jiǎo"
+            "dú tè",
+            "jìng jiè"
           ]
         }
       ]
@@ -747,16 +747,16 @@
           "question": "What does 启发 mean?",
           "correct": "to inspire, inspiration",
           "options": [
-            "intuition",
-            "to interpret, to explain",
-            "to transcend, to surpass",
-            "to inspire, inspiration"
+            "Delicate / Meticulous / Subtle / Fine",
+            "Thought / Idea / Ideology / Thinking",
+            "to inspire, inspiration",
+            "to associate, association"
           ],
           "option_pinyin": [
-            "zhí jué",
-            "quán shì",
-            "chāo yuè",
-            "qǐ fā"
+            "xì nì",
+            "sī xiǎng",
+            "qǐ fā",
+            "lián xiǎng"
           ]
         },
         {
@@ -764,16 +764,16 @@
           "question": "Fill in: to inspire, inspiration",
           "correct": "启发",
           "options": [
+            "细腻",
             "启发",
             "境界",
-            "联想",
-            "独特"
+            "联想"
           ],
           "option_pinyin": [
+            "xì nì",
             "qǐ fā",
             "jìng jiè",
-            "lián xiǎng",
-            "dú tè"
+            "lián xiǎng"
           ],
           "question_chinese": "好的艺术作品能够___人们思考生命的意义。",
           "question_pinyin": "好的艺术作品能够___人们思考生命的意义。",
@@ -784,16 +784,16 @@
           "question": "Which word means 'to inspire, inspiration'?",
           "correct": "启发",
           "options": [
-            "启发",
             "传达",
-            "诠释",
-            "联想"
+            "沉浸",
+            "思想",
+            "启发"
           ],
           "option_pinyin": [
-            "qǐ fā",
             "chuán dá",
-            "quán shì",
-            "lián xiǎng"
+            "chén jìn",
+            "sī xiǎng",
+            "qǐ fā"
           ]
         }
       ]
@@ -813,16 +813,16 @@
           "question": "What does 超越 mean?",
           "correct": "to transcend, to surpass",
           "options": [
-            "intuition",
             "to inspire, inspiration",
-            "unique, distinctive",
-            "to transcend, to surpass"
+            "to immerse, immersion",
+            "to transcend, to surpass",
+            "to perceive, perception"
           ],
           "option_pinyin": [
-            "zhí jué",
             "qǐ fā",
-            "dú tè",
-            "chāo yuè"
+            "chén jìn",
+            "chāo yuè",
+            "gǎn zhī"
           ]
         },
         {
@@ -830,20 +830,20 @@
           "question": "Fill in: to transcend, to surpass",
           "correct": "超越",
           "options": [
-            "启发",
-            "超越",
-            "视角",
-            "联想"
+            "思想",
+            "共鸣",
+            "沉浸",
+            "超越"
           ],
           "option_pinyin": [
-            "qǐ fā",
-            "chāo yuè",
-            "shì jiǎo",
-            "lián xiǎng"
+            "sī xiǎng",
+            "gòng míng",
+            "chén jìn",
+            "chāo yuè"
           ],
           "question_chinese": "伟大的艺术作品往往能够___时代和文化的限制。",
           "question_pinyin": "伟大的艺术作品往往能够___时代和文化的限制。",
-          "question_english": "Great works of art can often transcend the boundaries of time and culture."
+          "question_english": "Great works of art are often able to transcend the limitations of time and culture."
         },
         {
           "type": "multiple_choice",
@@ -851,15 +851,15 @@
           "correct": "超越",
           "options": [
             "超越",
-            "情感",
             "直觉",
-            "传达"
+            "感知",
+            "启发"
           ],
           "option_pinyin": [
             "chāo yuè",
-            "qíng gǎn",
             "zhí jué",
-            "chuán dá"
+            "gǎn zhī",
+            "qǐ fā"
           ]
         }
       ]
@@ -879,16 +879,16 @@
           "question": "What does 沉浸 mean?",
           "correct": "to immerse, immersion",
           "options": [
-            "to convey, to communicate",
-            "to inspire, inspiration",
-            "concept, idea, notion",
-            "to immerse, immersion"
+            "to perceive, perception",
+            "to immerse, immersion",
+            "Delicate / Meticulous / Subtle / Fine",
+            "to transcend, to surpass"
           ],
           "option_pinyin": [
-            "chuán dá",
-            "qǐ fā",
-            "guān niàn",
-            "chén jìn"
+            "gǎn zhī",
+            "chén jìn",
+            "xì nì",
+            "chāo yuè"
           ]
         },
         {
@@ -896,15 +896,15 @@
           "question": "Fill in: to immerse, immersion",
           "correct": "沉浸",
           "options": [
+            "联想",
             "沉浸",
-            "共鸣",
-            "超越",
+            "直觉",
             "感知"
           ],
           "option_pinyin": [
+            "lián xiǎng",
             "chén jìn",
-            "gòng míng",
-            "chāo yuè",
+            "zhí jué",
             "gǎn zhī"
           ],
           "question_chinese": "她完全___在音乐里，忘记了时间的流逝。",
@@ -916,15 +916,15 @@
           "question": "Which word means 'to immerse, immersion'?",
           "correct": "沉浸",
           "options": [
-            "直觉",
-            "超越",
-            "境界",
+            "思想",
+            "传达",
+            "联想",
             "沉浸"
           ],
           "option_pinyin": [
-            "zhí jué",
-            "chāo yuè",
-            "jìng jiè",
+            "sī xiǎng",
+            "chuán dá",
+            "lián xiǎng",
             "chén jìn"
           ]
         }
@@ -945,16 +945,16 @@
           "question": "What does 诠释 mean?",
           "correct": "to interpret, to explain",
           "options": [
-            "to perceive, perception",
-            "background, context",
-            "intuition",
-            "to interpret, to explain"
+            "to convey, to communicate",
+            "to immerse, immersion",
+            "to interpret, to explain",
+            "Delicate / Meticulous / Subtle / Fine"
           ],
           "option_pinyin": [
-            "gǎn zhī",
-            "bèi jǐng",
-            "zhí jué",
-            "quán shì"
+            "chuán dá",
+            "chén jìn",
+            "quán shì",
+            "xì nì"
           ]
         },
         {
@@ -962,36 +962,36 @@
           "question": "Fill in: to interpret, to explain",
           "correct": "诠释",
           "options": [
-            "感知",
-            "背景",
-            "诠释",
-            "传达"
+            "共鸣",
+            "传达",
+            "独特",
+            "诠释"
           ],
           "option_pinyin": [
-            "gǎn zhī",
-            "bèi jǐng",
-            "quán shì",
-            "chuán dá"
+            "gòng míng",
+            "chuán dá",
+            "dú tè",
+            "quán shì"
           ],
           "question_chinese": "每位表演者都以自己的方式___了这首作品的意境。",
           "question_pinyin": "每位表演者都以自己的方式___了这首作品的意境。",
-          "question_english": "Each performer interpreted the mood of this piece in their own way."
+          "question_english": "Each performer interpreted the artistic conception of this work in their own way."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'to interpret, to explain'?",
           "correct": "诠释",
           "options": [
-            "情感",
             "诠释",
-            "感知",
-            "背景"
+            "传达",
+            "联想",
+            "感知"
           ],
           "option_pinyin": [
-            "qíng gǎn",
             "quán shì",
-            "gǎn zhī",
-            "bèi jǐng"
+            "chuán dá",
+            "lián xiǎng",
+            "gǎn zhī"
           ]
         }
       ]

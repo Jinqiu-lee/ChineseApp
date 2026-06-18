@@ -21,16 +21,16 @@
           "question": "What does 抽象 mean?",
           "correct": "abstract",
           "options": [
-            "subjective",
-            "to understand, understanding",
             "abstract",
-            "to feel, feeling, perception"
+            "Imagination / Creative imagination",
+            "Technique / Skill / Craft",
+            "line, stroke"
           ],
           "option_pinyin": [
-            "zhǔ guān",
-            "lǐ jiě",
             "chōu xiàng",
-            "gǎn shòu"
+            "xiǎng xiàng lì",
+            "jì qiǎo",
+            "xiàn tiáo"
           ]
         },
         {
@@ -38,36 +38,36 @@
           "question": "Fill in: abstract",
           "correct": "抽象",
           "options": [
-            "创作",
-            "审美",
+            "线条",
+            "形式",
             "抽象",
-            "感受"
+            "理念"
           ],
           "option_pinyin": [
-            "chuàng zuò",
-            "shěn měi",
+            "xiàn tiáo",
+            "xíng shì",
             "chōu xiàng",
-            "gǎn shòu"
+            "lǐ niàn"
           ],
           "question_chinese": "___艺术不直接描绘现实，而是通过形状和色彩传达情感。",
           "question_pinyin": "___艺术不直接描绘现实，而是通过形状和色彩传达情感。",
-          "question_english": "Abstract art does not depict reality directly; instead it conveys emotion through shape and color."
+          "question_english": "Abstract art does not depict reality directly, but conveys emotion through shapes and colors."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'abstract'?",
           "correct": "抽象",
           "options": [
+            "审美",
+            "解读",
             "抽象",
-            "形式",
-            "创作",
-            "线条"
+            "具体"
           ],
           "option_pinyin": [
+            "shěn měi",
+            "jiě dú",
             "chōu xiàng",
-            "xíng shì",
-            "chuàng zuò",
-            "xiàn tiáo"
+            "jù tǐ"
           ]
         }
       ]
@@ -87,16 +87,16 @@
           "question": "What does 具体 mean?",
           "correct": "concrete, specific",
           "options": [
+            "Technique / Skill / Craft",
             "concrete, specific",
-            "meaning, significance",
-            "to feel, feeling, perception",
-            "form, style"
+            "Imagination / Creative imagination",
+            "color, hue"
           ],
           "option_pinyin": [
+            "jì qiǎo",
             "jù tǐ",
-            "yì yì",
-            "gǎn shòu",
-            "xíng shì"
+            "xiǎng xiàng lì",
+            "sè cǎi"
           ]
         },
         {
@@ -104,36 +104,36 @@
           "question": "Fill in: concrete, specific",
           "correct": "具体",
           "options": [
+            "线条",
             "色彩",
-            "理解",
-            "表达",
-            "具体"
+            "具体",
+            "象征"
           ],
           "option_pinyin": [
+            "xiàn tiáo",
             "sè cǎi",
-            "lǐ jiě",
-            "biǎo dá",
-            "jù tǐ"
+            "jù tǐ",
+            "xiàng zhēng"
           ],
           "question_chinese": "与抽象艺术相对，___艺术描绘真实可见的形象。",
           "question_pinyin": "与抽象艺术相对，___艺术描绘真实可见的形象。",
-          "question_english": "In contrast to abstract art, concrete art depicts real and visible images."
+          "question_english": "In contrast to abstract art, representational art depicts real, visible forms."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'concrete, specific'?",
           "correct": "具体",
           "options": [
+            "线条",
+            "空白",
             "具体",
-            "感受",
-            "理解",
-            "创作"
+            "涂鸦"
           ],
           "option_pinyin": [
+            "xiàn tiáo",
+            "kōng bái",
             "jù tǐ",
-            "gǎn shòu",
-            "lǐ jiě",
-            "chuàng zuò"
+            "tú yā"
           ]
         }
       ]
@@ -153,16 +153,16 @@
           "question": "What does 形式 mean?",
           "correct": "form, style",
           "options": [
-            "to create, creation",
-            "to symbolize, symbol",
+            "Graffiti / To doodle / Street art",
             "form, style",
-            "to understand, understanding"
+            "aesthetic sense, aesthetics",
+            "concrete, specific"
           ],
           "option_pinyin": [
-            "chuàng zuò",
-            "xiàng zhēng",
+            "tú yā",
             "xíng shì",
-            "lǐ jiě"
+            "shěn měi",
+            "jù tǐ"
           ]
         },
         {
@@ -170,300 +170,300 @@
           "question": "Fill in: form, style",
           "correct": "形式",
           "options": [
-            "理解",
-            "色彩",
-            "形式",
-            "具体"
+            "涂鸦",
+            "理念",
+            "象征",
+            "形式"
           ],
           "option_pinyin": [
-            "lǐ jiě",
-            "sè cǎi",
-            "xíng shì",
-            "jù tǐ"
+            "tú yā",
+            "lǐ niàn",
+            "xiàng zhēng",
+            "xíng shì"
           ],
           "question_chinese": "艺术的___多种多样，从绘画到雕塑，各有其美。",
           "question_pinyin": "艺术的___多种多样，从绘画到雕塑，各有其美。",
-          "question_english": "Art takes many forms, from painting to sculpture, each with its own beauty."
+          "question_english": "Art takes many forms — from painting to sculpture, each has its own beauty."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'form, style'?",
           "correct": "形式",
           "options": [
-            "意义",
-            "色彩",
-            "形式",
-            "表达"
+            "线条",
+            "抽象",
+            "空白",
+            "形式"
           ],
           "option_pinyin": [
-            "yì yì",
-            "sè cǎi",
-            "xíng shì",
-            "biǎo dá"
+            "xiàn tiáo",
+            "chōu xiàng",
+            "kōng bái",
+            "xíng shì"
           ]
         }
       ]
     },
     {
       "id": "hsk6_l13_04",
-      "chinese": "感受",
-      "pinyin": "gǎn shòu",
-      "english": "to feel, feeling, perception",
+      "chinese": "解读",
+      "pinyin": "jiě dú",
+      "english": "Interpretation / To interpret / To read (meaning)",
       "part_of_speech": "verb/noun",
-      "example": "每个人对同一幅抽象画的感受都可能不同。",
-      "translation": "Every person may have a different feeling when looking at the same abstract painting.",
-      "example_pinyin": "měi gè rén duì tóng yī fú chōu xiàng huà de gǎn shòu dōu kě néng bù tóng",
+      "example": "每个人对同一件艺术品的解读都不同，这正是艺术的魅力所在。",
+      "translation": "Each person's interpretation of the same work of art is different — this is precisely where the charm of art lies.",
+      "example_pinyin": "měi gè rén duì tóng yī jiàn yì shù pǐn de jiě dú dōu bù tóng zhè zhèng shì yì shù de mèi lì suǒ zài",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 感受 mean?",
-          "correct": "to feel, feeling, perception",
+          "question": "What does 解读 mean?",
+          "correct": "Interpretation / To interpret / To read (meaning)",
           "options": [
-            "to create, creation",
-            "subjective",
-            "style",
-            "to feel, feeling, perception"
+            "Interpretation / To interpret / To read (meaning)",
+            "meaning, significance",
+            "Technique / Skill / Craft",
+            "Concept / Philosophy / Guiding idea"
           ],
           "option_pinyin": [
-            "chuàng zuò",
-            "zhǔ guān",
-            "fēng gé",
-            "gǎn shòu"
+            "jiě dú",
+            "yì yì",
+            "jì qiǎo",
+            "lǐ niàn"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: to feel, feeling, perception",
-          "correct": "感受",
+          "question": "Fill in: Interpretation / To interpret / To read (meaning)",
+          "correct": "解读",
           "options": [
-            "感受",
-            "线条",
-            "审美",
-            "象征"
+            "具体",
+            "解读",
+            "形式",
+            "抽象"
           ],
           "option_pinyin": [
-            "gǎn shòu",
-            "xiàn tiáo",
-            "shěn měi",
-            "xiàng zhēng"
+            "jù tǐ",
+            "jiě dú",
+            "xíng shì",
+            "chōu xiàng"
           ],
-          "question_chinese": "每个人对同一幅抽象画的___都可能不同。",
-          "question_pinyin": "每个人对同一幅抽象画的___都可能不同。",
-          "question_english": "Each person may have a different feeling when looking at the same abstract painting."
+          "question_chinese": "每个人对同一件艺术品的___都不同，这正是艺术的魅力所在。",
+          "question_pinyin": "每个人对同一件艺术品的___都不同，这正是艺术的魅力所在。",
+          "question_english": "Each person's interpretation of the same work of art is different — this is precisely where the charm of art lies."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'to feel, feeling, perception'?",
-          "correct": "感受",
+          "question": "Which word means 'Interpretation / To interpret / To read (meaning)'?",
+          "correct": "解读",
           "options": [
-            "感受",
-            "表达",
-            "欣赏",
-            "具体"
+            "形式",
+            "解读",
+            "技巧",
+            "理念"
           ],
           "option_pinyin": [
-            "gǎn shòu",
-            "biǎo dá",
-            "xīn shǎng",
-            "jù tǐ"
+            "xíng shì",
+            "jiě dú",
+            "jì qiǎo",
+            "lǐ niàn"
           ]
         }
       ]
     },
     {
       "id": "hsk6_l13_05",
-      "chinese": "理解",
-      "pinyin": "lǐ jiě",
-      "english": "to understand, understanding",
-      "part_of_speech": "verb/noun",
-      "example": "对抽象艺术的理解往往需要一定的文化背景和艺术知识。",
-      "translation": "Understanding abstract art often requires a certain cultural background and artistic knowledge.",
-      "example_pinyin": "duì chōu xiàng yì shù de lǐ jiě wǎng wǎng xū yào yí dìng de wén huà bèi jǐng hé yì shù zhī shí",
+      "chinese": "理念",
+      "pinyin": "lǐ niàn",
+      "english": "Concept / Philosophy / Guiding idea",
+      "part_of_speech": "noun",
+      "example": "不同艺术家的创作理念各不相同，正是这种差异造就了艺术的多样性。",
+      "translation": "The creative concepts of different artists vary greatly, and it is precisely this difference that creates art's diversity.",
+      "example_pinyin": "bù tóng yì shù jiā de chuàng zuò lǐ niàn gè bù xiāng tóng zhèng shì zhè zhǒng chà yì zào jiù le yì shù de duō yàng xìng",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 理解 mean?",
-          "correct": "to understand, understanding",
+          "question": "What does 理念 mean?",
+          "correct": "Concept / Philosophy / Guiding idea",
           "options": [
-            "to symbolize, symbol",
-            "to understand, understanding",
-            "form, style",
-            "color, hue"
+            "abstract",
+            "Concept / Philosophy / Guiding idea",
+            "meaning, significance",
+            "Graffiti / To doodle / Street art"
           ],
           "option_pinyin": [
-            "xiàng zhēng",
-            "lǐ jiě",
-            "xíng shì",
-            "sè cǎi"
+            "chōu xiàng",
+            "lǐ niàn",
+            "yì yì",
+            "tú yā"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: to understand, understanding",
-          "correct": "理解",
+          "question": "Fill in: Concept / Philosophy / Guiding idea",
+          "correct": "理念",
           "options": [
-            "表达",
-            "主观",
-            "风格",
-            "理解"
-          ],
-          "option_pinyin": [
-            "biǎo dá",
-            "zhǔ guān",
-            "fēng gé",
-            "lǐ jiě"
-          ],
-          "question_chinese": "对抽象艺术的___往往需要一定的文化背景和艺术知识。",
-          "question_pinyin": "对抽象艺术的___往往需要一定的文化背景和艺术知识。",
-          "question_english": "Understanding abstract art often requires a certain cultural background and knowledge of art."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'to understand, understanding'?",
-          "correct": "理解",
-          "options": [
-            "理解",
+            "理念",
             "意义",
-            "表达",
+            "涂鸦",
             "形式"
           ],
           "option_pinyin": [
-            "lǐ jiě",
+            "lǐ niàn",
             "yì yì",
-            "biǎo dá",
+            "tú yā",
             "xíng shì"
+          ],
+          "question_chinese": "不同艺术家的创作___各不相同，正是这种差异造就了艺术的多样性。",
+          "question_pinyin": "不同艺术家的创作___各不相同，正是这种差异造就了艺术的多样性。",
+          "question_english": "The creative concepts of different artists vary greatly, and it is precisely this difference that creates art's diversity."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Concept / Philosophy / Guiding idea'?",
+          "correct": "理念",
+          "options": [
+            "色彩",
+            "形式",
+            "理念",
+            "审美"
+          ],
+          "option_pinyin": [
+            "sè cǎi",
+            "xíng shì",
+            "lǐ niàn",
+            "shěn měi"
           ]
         }
       ]
     },
     {
       "id": "hsk6_l13_06",
-      "chinese": "欣赏",
-      "pinyin": "xīn shǎng",
-      "english": "to appreciate, to enjoy",
-      "part_of_speech": "verb",
-      "example": "学会欣赏不同风格的艺术，可以拓宽一个人的视野。",
-      "translation": "Learning to appreciate different styles of art can broaden a person's horizons.",
-      "example_pinyin": "xué huì xīn shǎng bù tóng fēng gé de yì shù kě yǐ tuò kuān yí gè rén de shì yě",
+      "chinese": "涂鸦",
+      "pinyin": "tú yā",
+      "english": "Graffiti / To doodle / Street art",
+      "part_of_speech": "noun/verb",
+      "example": "街头涂鸦是一种充满想象力的艺术形式，能够传达艺术家独特的审美理念。",
+      "translation": "Street graffiti is an imaginative art form that can convey the artist's unique aesthetic concepts.",
+      "example_pinyin": "jiē tóu tú yā shì yī zhǒng chōng mǎn xiǎng xiàng lì de yì shù xíng shì néng gòu chuán dá yì shù jiā dú tè de shěn měi lǐ niàn",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 欣赏 mean?",
-          "correct": "to appreciate, to enjoy",
+          "question": "What does 涂鸦 mean?",
+          "correct": "Graffiti / To doodle / Street art",
           "options": [
-            "to appreciate, to enjoy",
             "aesthetic sense, aesthetics",
-            "style",
-            "form, style"
+            "subjective",
+            "abstract",
+            "Graffiti / To doodle / Street art"
           ],
           "option_pinyin": [
-            "xīn shǎng",
             "shěn měi",
-            "fēng gé",
-            "xíng shì"
+            "zhǔ guān",
+            "chōu xiàng",
+            "tú yā"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: to appreciate, to enjoy",
-          "correct": "欣赏",
+          "question": "Fill in: Graffiti / To doodle / Street art",
+          "correct": "涂鸦",
           "options": [
-            "象征",
-            "线条",
-            "欣赏",
-            "具体"
+            "抽象",
+            "解读",
+            "涂鸦",
+            "象征"
           ],
           "option_pinyin": [
-            "xiàng zhēng",
-            "xiàn tiáo",
-            "xīn shǎng",
-            "jù tǐ"
+            "chōu xiàng",
+            "jiě dú",
+            "tú yā",
+            "xiàng zhēng"
           ],
-          "question_chinese": "学会___不同风格的艺术，可以拓宽一个人的视野。",
-          "question_pinyin": "学会___不同风格的艺术，可以拓宽一个人的视野。",
-          "question_english": "Learning to appreciate art of different styles can broaden one's horizons."
+          "question_chinese": "街头___是一种充满想象力的艺术形式，能够传达艺术家独特的审美理念。",
+          "question_pinyin": "街头___是一种充满想象力的艺术形式，能够传达艺术家独特的审美理念。",
+          "question_english": "Street graffiti is an imaginative art form that can convey the artist's unique aesthetic concepts."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'to appreciate, to enjoy'?",
-          "correct": "欣赏",
+          "question": "Which word means 'Graffiti / To doodle / Street art'?",
+          "correct": "涂鸦",
           "options": [
-            "欣赏",
-            "色彩",
-            "线条",
-            "表达"
+            "涂鸦",
+            "形式",
+            "抽象",
+            "审美"
           ],
           "option_pinyin": [
-            "xīn shǎng",
-            "sè cǎi",
-            "xiàn tiáo",
-            "biǎo dá"
+            "tú yā",
+            "xíng shì",
+            "chōu xiàng",
+            "shěn měi"
           ]
         }
       ]
     },
     {
       "id": "hsk6_l13_07",
-      "chinese": "表达",
-      "pinyin": "biǎo dá",
-      "english": "to express, expression",
-      "part_of_speech": "verb/noun",
-      "example": "艺术是人类情感和思想的重要表达方式。",
-      "translation": "Art is an important form of expression for human emotions and thoughts.",
-      "example_pinyin": "yì shù shì rén lèi qíng gǎn hé sī xiǎng de zhòng yào biǎo dá fāng shì",
+      "chinese": "空白",
+      "pinyin": "kōng bái",
+      "english": "Blank space / Empty space / White space",
+      "part_of_speech": "noun/adjective",
+      "example": "画面中的空白并非无意义，而是艺术家刻意留下的想象空间。",
+      "translation": "The blank space in a painting is not meaningless — it is the imaginative space deliberately left by the artist.",
+      "example_pinyin": "huà miàn zhōng de kòng bái bìng fēi wú yì yì ér shì yì shù jiā kè yì liú xià de xiǎng xiàng kōng jiān",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 表达 mean?",
-          "correct": "to express, expression",
+          "question": "What does 空白 mean?",
+          "correct": "Blank space / Empty space / White space",
           "options": [
-            "to express, expression",
-            "subjective",
-            "to symbolize, symbol",
-            "form, style"
+            "color, hue",
+            "Blank space / Empty space / White space",
+            "form, style",
+            "Concept / Philosophy / Guiding idea"
           ],
           "option_pinyin": [
-            "biǎo dá",
-            "zhǔ guān",
-            "xiàng zhēng",
-            "xíng shì"
+            "sè cǎi",
+            "kōng bái",
+            "xíng shì",
+            "lǐ niàn"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: to express, expression",
-          "correct": "表达",
+          "question": "Fill in: Blank space / Empty space / White space",
+          "correct": "空白",
           "options": [
-            "意义",
-            "审美",
-            "创作",
-            "表达"
+            "象征",
+            "空白",
+            "形式",
+            "涂鸦"
           ],
           "option_pinyin": [
-            "yì yì",
-            "shěn měi",
-            "chuàng zuò",
-            "biǎo dá"
+            "xiàng zhēng",
+            "kōng bái",
+            "xíng shì",
+            "tú yā"
           ],
-          "question_chinese": "艺术是人类情感和思想的重要___方式。",
-          "question_pinyin": "艺术是人类情感和思想的重要___方式。",
-          "question_english": "Art is an important way for humans to express emotions and ideas."
+          "question_chinese": "画面中的___并非无意义，而是艺术家刻意留下的想象空间。",
+          "question_pinyin": "画面中的___并非无意义，而是艺术家刻意留下的想象空间。",
+          "question_english": "The blank space in a painting is not meaningless — it is the imaginative space deliberately left by the artist."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'to express, expression'?",
-          "correct": "表达",
+          "question": "Which word means 'Blank space / Empty space / White space'?",
+          "correct": "空白",
           "options": [
-            "欣赏",
-            "表达",
+            "色彩",
+            "空白",
             "形式",
-            "审美"
+            "具体"
           ],
           "option_pinyin": [
-            "xīn shǎng",
-            "biǎo dá",
+            "sè cǎi",
+            "kōng bái",
             "xíng shì",
-            "shěn měi"
+            "jù tǐ"
           ]
         }
       ]
@@ -483,16 +483,16 @@
           "question": "What does 色彩 mean?",
           "correct": "color, hue",
           "options": [
-            "to create, creation",
-            "form, style",
             "color, hue",
-            "to symbolize, symbol"
+            "Blank space / Empty space / White space",
+            "Graffiti / To doodle / Street art",
+            "meaning, significance"
           ],
           "option_pinyin": [
-            "chuàng zuò",
-            "xíng shì",
             "sè cǎi",
-            "xiàng zhēng"
+            "kōng bái",
+            "tú yā",
+            "yì yì"
           ]
         },
         {
@@ -500,36 +500,36 @@
           "question": "Fill in: color, hue",
           "correct": "色彩",
           "options": [
-            "审美",
+            "空白",
             "色彩",
-            "主观",
-            "欣赏"
+            "解读",
+            "技巧"
           ],
           "option_pinyin": [
-            "shěn měi",
+            "kōng bái",
             "sè cǎi",
-            "zhǔ guān",
-            "xīn shǎng"
+            "jiě dú",
+            "jì qiǎo"
           ],
-          "question_chinese": "这幅画的___非常丰富，给人温暖的感受。",
-          "question_pinyin": "这幅画的___非常丰富，给人温暖的感受。",
-          "question_english": "The colors of this painting are very rich, giving people a warm feeling."
+          "question_chinese": "___。",
+          "question_pinyin": "___。",
+          "question_english": "color, hue"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'color, hue'?",
           "correct": "色彩",
           "options": [
+            "主观",
+            "技巧",
             "色彩",
-            "创作",
-            "具体",
-            "表达"
+            "涂鸦"
           ],
           "option_pinyin": [
+            "zhǔ guān",
+            "jì qiǎo",
             "sè cǎi",
-            "chuàng zuò",
-            "jù tǐ",
-            "biǎo dá"
+            "tú yā"
           ]
         }
       ]
@@ -549,16 +549,16 @@
           "question": "What does 线条 mean?",
           "correct": "line, stroke",
           "options": [
-            "aesthetic sense, aesthetics",
-            "subjective",
-            "meaning, significance",
-            "line, stroke"
+            "line, stroke",
+            "Blank space / Empty space / White space",
+            "to symbolize, symbol",
+            "aesthetic sense, aesthetics"
           ],
           "option_pinyin": [
-            "shěn měi",
-            "zhǔ guān",
-            "yì yì",
-            "xiàn tiáo"
+            "xiàn tiáo",
+            "kōng bái",
+            "xiàng zhēng",
+            "shěn měi"
           ]
         },
         {
@@ -566,16 +566,16 @@
           "question": "Fill in: line, stroke",
           "correct": "线条",
           "options": [
-            "线条",
-            "象征",
-            "表达",
-            "理解"
+            "抽象",
+            "想象力",
+            "空白",
+            "线条"
           ],
           "option_pinyin": [
-            "xiàn tiáo",
-            "xiàng zhēng",
-            "biǎo dá",
-            "lǐ jiě"
+            "chōu xiàng",
+            "xiǎng xiàng lì",
+            "kōng bái",
+            "xiàn tiáo"
           ],
           "question_chinese": "简洁的___往往能传达出丰富的情感内容。",
           "question_pinyin": "简洁的___往往能传达出丰富的情感内容。",
@@ -586,82 +586,82 @@
           "question": "Which word means 'line, stroke'?",
           "correct": "线条",
           "options": [
-            "感受",
-            "线条",
+            "意义",
             "形式",
-            "意义"
+            "理念",
+            "线条"
           ],
           "option_pinyin": [
-            "gǎn shòu",
-            "xiàn tiáo",
+            "yì yì",
             "xíng shì",
-            "yì yì"
+            "lǐ niàn",
+            "xiàn tiáo"
           ]
         }
       ]
     },
     {
       "id": "hsk6_l13_10",
-      "chinese": "创作",
-      "pinyin": "chuàng zuò",
-      "english": "to create, creation",
-      "part_of_speech": "verb/noun",
-      "example": "艺术创作需要想象力，也需要技巧。",
-      "translation": "Artistic creation requires both imagination and skill.",
-      "example_pinyin": "yì shù chuàng zuò xū yào xiǎng xiàng lì yě xū yào jì qiǎo",
+      "chinese": "想象力",
+      "pinyin": "xiǎng xiàng lì",
+      "english": "Imagination / Creative imagination",
+      "part_of_speech": "noun",
+      "example": "丰富的想象力是艺术创作的核心，能让作品超越现实的限制。",
+      "translation": "Rich imagination is the core of artistic creation, allowing works to transcend the limitations of reality.",
+      "example_pinyin": "fēng fù de xiǎng xiàng lì shì yì shù chuàng zuò de hé xīn néng ràng zuò pǐn chāo yuè xiàn shí de xiàn zhì",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 创作 mean?",
-          "correct": "to create, creation",
+          "question": "What does 想象力 mean?",
+          "correct": "Imagination / Creative imagination",
           "options": [
-            "meaning, significance",
-            "aesthetic sense, aesthetics",
-            "to create, creation",
-            "form, style"
+            "Imagination / Creative imagination",
+            "Graffiti / To doodle / Street art",
+            "color, hue",
+            "Interpretation / To interpret / To read (meaning)"
           ],
           "option_pinyin": [
-            "yì yì",
-            "shěn měi",
-            "chuàng zuò",
-            "xíng shì"
+            "xiǎng xiàng lì",
+            "tú yā",
+            "sè cǎi",
+            "jiě dú"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: to create, creation",
-          "correct": "创作",
+          "question": "Fill in: Imagination / Creative imagination",
+          "correct": "想象力",
           "options": [
-            "创作",
-            "意义",
-            "具体",
-            "风格"
+            "象征",
+            "想象力",
+            "空白",
+            "具体"
           ],
           "option_pinyin": [
-            "chuàng zuò",
-            "yì yì",
-            "jù tǐ",
-            "fēng gé"
+            "xiàng zhēng",
+            "xiǎng xiàng lì",
+            "kōng bái",
+            "jù tǐ"
           ],
-          "question_chinese": "艺术___需要想象力，也需要技巧。",
-          "question_pinyin": "艺术___需要想象力，也需要技巧。",
-          "question_english": "Artistic creation requires both imagination and skill."
+          "question_chinese": "艺术创作需要___，也需要技巧。",
+          "question_pinyin": "艺术创作需要___，也需要技巧。",
+          "question_english": "Artistic creation requires imagination as well as technique."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'to create, creation'?",
-          "correct": "创作",
+          "question": "Which word means 'Imagination / Creative imagination'?",
+          "correct": "想象力",
           "options": [
-            "欣赏",
-            "创作",
+            "涂鸦",
+            "想象力",
             "意义",
-            "表达"
+            "色彩"
           ],
           "option_pinyin": [
-            "xīn shǎng",
-            "chuàng zuò",
+            "tú yā",
+            "xiǎng xiàng lì",
             "yì yì",
-            "biǎo dá"
+            "sè cǎi"
           ]
         }
       ]
@@ -681,16 +681,16 @@
           "question": "What does 审美 mean?",
           "correct": "aesthetic sense, aesthetics",
           "options": [
+            "meaning, significance",
+            "Technique / Skill / Craft",
             "aesthetic sense, aesthetics",
-            "to feel, feeling, perception",
-            "subjective",
-            "color, hue"
+            "Blank space / Empty space / White space"
           ],
           "option_pinyin": [
+            "yì yì",
+            "jì qiǎo",
             "shěn měi",
-            "gǎn shòu",
-            "zhǔ guān",
-            "sè cǎi"
+            "kōng bái"
           ]
         },
         {
@@ -698,15 +698,15 @@
           "question": "Fill in: aesthetic sense, aesthetics",
           "correct": "审美",
           "options": [
-            "风格",
-            "感受",
-            "抽象",
+            "线条",
+            "形式",
+            "色彩",
             "审美"
           ],
           "option_pinyin": [
-            "fēng gé",
-            "gǎn shòu",
-            "chōu xiàng",
+            "xiàn tiáo",
+            "xíng shì",
+            "sè cǎi",
             "shěn měi"
           ],
           "question_chinese": "不同文化背景的人，___观念也会有所不同。",
@@ -718,16 +718,16 @@
           "question": "Which word means 'aesthetic sense, aesthetics'?",
           "correct": "审美",
           "options": [
-            "线条",
             "审美",
-            "具体",
-            "表达"
+            "象征",
+            "理念",
+            "线条"
           ],
           "option_pinyin": [
-            "xiàn tiáo",
             "shěn měi",
-            "jù tǐ",
-            "biǎo dá"
+            "xiàng zhēng",
+            "lǐ niàn",
+            "xiàn tiáo"
           ]
         }
       ]
@@ -747,16 +747,16 @@
           "question": "What does 意义 mean?",
           "correct": "meaning, significance",
           "options": [
-            "to feel, feeling, perception",
-            "abstract",
+            "concrete, specific",
+            "color, hue",
             "meaning, significance",
-            "to understand, understanding"
+            "Imagination / Creative imagination"
           ],
           "option_pinyin": [
-            "gǎn shòu",
-            "chōu xiàng",
+            "jù tǐ",
+            "sè cǎi",
             "yì yì",
-            "lǐ jiě"
+            "xiǎng xiàng lì"
           ]
         },
         {
@@ -764,16 +764,16 @@
           "question": "Fill in: meaning, significance",
           "correct": "意义",
           "options": [
-            "创作",
-            "表达",
+            "具体",
+            "意义",
             "线条",
-            "意义"
+            "想象力"
           ],
           "option_pinyin": [
-            "chuàng zuò",
-            "biǎo dá",
+            "jù tǐ",
+            "yì yì",
             "xiàn tiáo",
-            "yì yì"
+            "xiǎng xiàng lì"
           ],
           "question_chinese": "抽象艺术的___往往由观者自己来赋予。",
           "question_pinyin": "抽象艺术的___往往由观者自己来赋予。",
@@ -784,16 +784,16 @@
           "question": "Which word means 'meaning, significance'?",
           "correct": "意义",
           "options": [
-            "意义",
-            "主观",
-            "创作",
-            "象征"
+            "形式",
+            "技巧",
+            "色彩",
+            "意义"
           ],
           "option_pinyin": [
-            "yì yì",
-            "zhǔ guān",
-            "chuàng zuò",
-            "xiàng zhēng"
+            "xíng shì",
+            "jì qiǎo",
+            "sè cǎi",
+            "yì yì"
           ]
         }
       ]
@@ -813,16 +813,16 @@
           "question": "What does 象征 mean?",
           "correct": "to symbolize, symbol",
           "options": [
+            "meaning, significance",
+            "Technique / Skill / Craft",
             "to symbolize, symbol",
-            "line, stroke",
-            "to create, creation",
-            "to express, expression"
+            "abstract"
           ],
           "option_pinyin": [
+            "yì yì",
+            "jì qiǎo",
             "xiàng zhēng",
-            "xiàn tiáo",
-            "chuàng zuò",
-            "biǎo dá"
+            "chōu xiàng"
           ]
         },
         {
@@ -830,102 +830,102 @@
           "question": "Fill in: to symbolize, symbol",
           "correct": "象征",
           "options": [
-            "审美",
-            "象征",
-            "线条",
-            "主观"
+            "色彩",
+            "涂鸦",
+            "技巧",
+            "象征"
           ],
           "option_pinyin": [
-            "shěn měi",
-            "xiàng zhēng",
-            "xiàn tiáo",
-            "zhǔ guān"
+            "sè cǎi",
+            "tú yā",
+            "jì qiǎo",
+            "xiàng zhēng"
           ],
           "question_chinese": "白色在西方文化中___纯洁，在东亚文化中则常与哀悼相关。",
           "question_pinyin": "白色在西方文化中___纯洁，在东亚文化中则常与哀悼相关。",
-          "question_english": "White symbolizes purity in Western culture, while in East Asian cultures it is often associated with mourning."
+          "question_english": "White symbolizes purity in Western culture, but in East Asian culture it is often associated with mourning."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'to symbolize, symbol'?",
           "correct": "象征",
           "options": [
-            "主观",
             "象征",
-            "风格",
-            "欣赏"
+            "空白",
+            "抽象",
+            "意义"
           ],
           "option_pinyin": [
-            "zhǔ guān",
             "xiàng zhēng",
-            "fēng gé",
-            "xīn shǎng"
+            "kōng bái",
+            "chōu xiàng",
+            "yì yì"
           ]
         }
       ]
     },
     {
       "id": "hsk6_l13_14",
-      "chinese": "风格",
-      "pinyin": "fēng gé",
-      "english": "style",
+      "chinese": "技巧",
+      "pinyin": "jì qiǎo",
+      "english": "Technique / Skill / Craft",
       "part_of_speech": "noun",
-      "example": "这位艺术家的风格独特，一眼就能辨认出。",
-      "translation": "This artist's style is unique — can be recognized at a glance.",
-      "example_pinyin": "zhè wèi yì shù jiā de fēng gé dú tè yī yǎn jiù néng biàn rèn chū",
+      "example": "掌握一定的绘画技巧，有助于更自由地表达自己的想象力和审美理念。",
+      "translation": "Mastering certain painting techniques helps one more freely express their imagination and aesthetic concepts.",
+      "example_pinyin": "zhǎng wò yí dìng de huì huà jì qiǎo yǒu zhù yú gèng zì yóu dì biǎo dá zì jǐ de xiǎng xiàng lì hé shěn měi lǐ niàn",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 风格 mean?",
-          "correct": "style",
+          "question": "What does 技巧 mean?",
+          "correct": "Technique / Skill / Craft",
           "options": [
-            "style",
-            "form, style",
-            "to feel, feeling, perception",
-            "line, stroke"
+            "abstract",
+            "Technique / Skill / Craft",
+            "concrete, specific",
+            "to symbolize, symbol"
           ],
           "option_pinyin": [
-            "fēng gé",
-            "xíng shì",
-            "gǎn shòu",
-            "xiàn tiáo"
+            "chōu xiàng",
+            "jì qiǎo",
+            "jù tǐ",
+            "xiàng zhēng"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: style",
-          "correct": "风格",
+          "question": "Fill in: Technique / Skill / Craft",
+          "correct": "技巧",
           "options": [
-            "形式",
-            "象征",
-            "审美",
-            "风格"
+            "想象力",
+            "技巧",
+            "空白",
+            "抽象"
           ],
           "option_pinyin": [
-            "xíng shì",
-            "xiàng zhēng",
-            "shěn měi",
-            "fēng gé"
+            "xiǎng xiàng lì",
+            "jì qiǎo",
+            "kōng bái",
+            "chōu xiàng"
           ],
-          "question_chinese": "这位艺术家的___独特，一眼就能辨认出。",
-          "question_pinyin": "这位艺术家的___独特，一眼就能辨认出。",
-          "question_english": "This artist's style is unique and recognizable at a glance."
+          "question_chinese": "艺术创作需要想象力，也需要___。",
+          "question_pinyin": "艺术创作需要想象力，也需要___。",
+          "question_english": "Artistic creation requires imagination as well as technique."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'style'?",
-          "correct": "风格",
+          "question": "Which word means 'Technique / Skill / Craft'?",
+          "correct": "技巧",
           "options": [
-            "风格",
-            "主观",
-            "创作",
-            "感受"
+            "色彩",
+            "形式",
+            "想象力",
+            "技巧"
           ],
           "option_pinyin": [
-            "fēng gé",
-            "zhǔ guān",
-            "chuàng zuò",
-            "gǎn shòu"
+            "sè cǎi",
+            "xíng shì",
+            "xiǎng xiàng lì",
+            "jì qiǎo"
           ]
         }
       ]
@@ -945,16 +945,16 @@
           "question": "What does 主观 mean?",
           "correct": "subjective",
           "options": [
-            "color, hue",
+            "form, style",
+            "Technique / Skill / Craft",
             "subjective",
-            "concrete, specific",
-            "form, style"
+            "concrete, specific"
           ],
           "option_pinyin": [
-            "sè cǎi",
+            "xíng shì",
+            "jì qiǎo",
             "zhǔ guān",
-            "jù tǐ",
-            "xíng shì"
+            "jù tǐ"
           ]
         },
         {
@@ -962,16 +962,16 @@
           "question": "Fill in: subjective",
           "correct": "主观",
           "options": [
-            "欣赏",
-            "主观",
-            "风格",
-            "审美"
+            "涂鸦",
+            "形式",
+            "理念",
+            "主观"
           ],
           "option_pinyin": [
-            "xīn shǎng",
-            "zhǔ guān",
-            "fēng gé",
-            "shěn měi"
+            "tú yā",
+            "xíng shì",
+            "lǐ niàn",
+            "zhǔ guān"
           ],
           "question_chinese": "艺术欣赏带有很强的___性，没有绝对的对错之分。",
           "question_pinyin": "艺术欣赏带有很强的___性，没有绝对的对错之分。",
@@ -983,15 +983,15 @@
           "correct": "主观",
           "options": [
             "主观",
-            "意义",
-            "风格",
-            "线条"
+            "形式",
+            "想象力",
+            "抽象"
           ],
           "option_pinyin": [
             "zhǔ guān",
-            "yì yì",
-            "fēng gé",
-            "xiàn tiáo"
+            "xíng shì",
+            "xiǎng xiàng lì",
+            "chōu xiàng"
           ]
         }
       ]
