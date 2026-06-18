@@ -8,23 +8,135 @@
   "vocabulary": [
     {
       "id": "hsk5_l12_01",
-      "chinese": "诚实",
-      "pinyin": "chéng shí",
-      "english": "Honest; honesty",
-      "part_of_speech": "adjective/noun",
-      "example": "无论如何，一个诚实的人总会赢得别人的尊重。",
-      "translation": "No matter what, an honest person will always earn the respect of others.",
-      "example_pinyin": "wú lùn rú hé yí gè chéng shí de rén zǒng huì yíng dé bié rén de zūn zhòng"
+      "chinese": "品格",
+      "pinyin": "pǐn gé",
+      "english": "Character / Moral character / Personal integrity",
+      "part_of_speech": "noun",
+      "example": "谦虚、善良和负责任，是一个人良好品格的体现。",
+      "translation": "Modesty, kindness, and responsibility are the embodiment of a person's good character.",
+      "example_pinyin": "qiān xū shàn liáng hé fù zé rèn shì yí gè rén liáng hǎo pǐn gé de tǐ xiàn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 品格 mean?",
+          "correct": "Character / Moral character / Personal integrity",
+          "options": [
+            "Character / Moral character / Personal integrity",
+            "Negative / Pessimistic / Passive",
+            "To envy / To admire / Envy",
+            "Careful; attentive"
+          ],
+          "option_pinyin": [
+            "pǐn gé",
+            "xiāo jí",
+            "xiàn mù",
+            "xì xīn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Character / Moral character / Personal integrity",
+          "correct": "品格",
+          "options": [
+            "细心",
+            "谦虚",
+            "品格",
+            "自信"
+          ],
+          "option_pinyin": [
+            "xì xīn",
+            "qiān xū",
+            "pǐn gé",
+            "zì xìn"
+          ],
+          "question_chinese": "谦虚、善良和负责任，是一个人良好___的体现。",
+          "question_pinyin": "谦虚、善良和负责任，是一个人良好___的体现。",
+          "question_english": "Modesty, kindness, and responsibility are the embodiment of a person's good character."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Character / Moral character / Personal integrity'?",
+          "correct": "品格",
+          "options": [
+            "坚强",
+            "耐心",
+            "品格",
+            "乐观"
+          ],
+          "option_pinyin": [
+            "jiān qiáng",
+            "nài xīn",
+            "pǐn gé",
+            "lè guān"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_02",
-      "chinese": "勇敢",
-      "pinyin": "yǒng gǎn",
-      "english": "Brave; courageous",
-      "part_of_speech": "adjective",
-      "example": "与其对朋友不诚实，不如勇敢地说出真相。",
-      "translation": "Rather than being dishonest with a friend, it is better to bravely tell the truth.",
-      "example_pinyin": "yǔ qí duì péng yǒu bù chéng shí bù rú yǒng gǎn dì shuō chū zhēn xiàng"
+      "chinese": "品质",
+      "pinyin": "pǐn zhì",
+      "english": "Quality / Character trait / Virtue",
+      "part_of_speech": "noun",
+      "example": "坚强和自信是面对困难时最重要的品质。",
+      "translation": "Resilience and confidence are the most important qualities when facing difficulties.",
+      "example_pinyin": "jiān qiáng hé zì xìn shì miàn duì kùn nán shí zuì zhòng yào de pǐn zhì",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 品质 mean?",
+          "correct": "Quality / Character trait / Virtue",
+          "options": [
+            "Jealous / To be jealous / Jealousy",
+            "Quality / Character trait / Virtue",
+            "To evade / To avoid / To run away from",
+            "Responsible; to take responsibility"
+          ],
+          "option_pinyin": [
+            "jí dù",
+            "pǐn zhì",
+            "táo bì",
+            "fù zé rèn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Quality / Character trait / Virtue",
+          "correct": "品质",
+          "options": [
+            "意志力",
+            "品质",
+            "细心",
+            "消极"
+          ],
+          "option_pinyin": [
+            "yì zhì lì",
+            "pǐn zhì",
+            "xì xīn",
+            "xiāo jí"
+          ],
+          "question_chinese": "坚强和自信是面对困难时最重要的___。",
+          "question_pinyin": "坚强和自信是面对困难时最重要的___。",
+          "question_english": "Resilience and confidence are the most important qualities when facing difficulties."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Quality / Character trait / Virtue'?",
+          "correct": "品质",
+          "options": [
+            "坚强",
+            "意志力",
+            "品质",
+            "品格"
+          ],
+          "option_pinyin": [
+            "jiān qiáng",
+            "yì zhì lì",
+            "pǐn zhì",
+            "pǐn gé"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_03",
@@ -34,7 +146,63 @@
       "part_of_speech": "adjective",
       "example": "他还特别谦虚，从不觉得自己比别人强。",
       "translation": "He is also very humble and never thinks he is better than others.",
-      "example_pinyin": "tā hái tè bié qiān xū cóng bù jué de zì jǐ bǐ bié rén qiáng"
+      "example_pinyin": "tā hái tè bié qiān xū cóng bù jué de zì jǐ bǐ bié rén qiáng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 谦虚 mean?",
+          "correct": "Modest; humble",
+          "options": [
+            "Willpower; strength of will",
+            "Confident; self-confident",
+            "Negative / Pessimistic / Passive",
+            "Modest; humble"
+          ],
+          "option_pinyin": [
+            "yì zhì lì",
+            "zì xìn",
+            "xiāo jí",
+            "qiān xū"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Modest; humble",
+          "correct": "谦虚",
+          "options": [
+            "抱怨",
+            "谦虚",
+            "意志力",
+            "自信"
+          ],
+          "option_pinyin": [
+            "bào yuàn",
+            "qiān xū",
+            "yì zhì lì",
+            "zì xìn"
+          ],
+          "question_chinese": "他还特别___，从不觉得自己比别人强。",
+          "question_pinyin": "他还特别___，从不觉得自己比别人强。",
+          "question_english": "He is also very humble and never thinks he is better than others."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Modest; humble'?",
+          "correct": "谦虚",
+          "options": [
+            "嫉妒",
+            "品质",
+            "谦虚",
+            "羡慕"
+          ],
+          "option_pinyin": [
+            "jí dù",
+            "pǐn zhì",
+            "qiān xū",
+            "xiàn mù"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_04",
@@ -44,7 +212,63 @@
       "part_of_speech": "adjective/noun",
       "example": "她做事非常细心，从来不会出差错。",
       "translation": "She is extremely careful in everything she does and never makes mistakes.",
-      "example_pinyin": "tā zuò shì fēi cháng xì xīn cóng lái bú huì chū chā cuò"
+      "example_pinyin": "tā zuò shì fēi cháng xì xīn cóng lái bú huì chū chā cuò",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 耐心 mean?",
+          "correct": "Patient; patience",
+          "options": [
+            "Careful; attentive",
+            "Responsible; to take responsibility",
+            "Patient; patience",
+            "Optimistic"
+          ],
+          "option_pinyin": [
+            "xì xīn",
+            "fù zé rèn",
+            "nài xīn",
+            "lè guān"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Patient; patience",
+          "correct": "耐心",
+          "options": [
+            "善良",
+            "嫉妒",
+            "谦虚",
+            "耐心"
+          ],
+          "option_pinyin": [
+            "shàn liáng",
+            "jí dù",
+            "qiān xū",
+            "nài xīn"
+          ],
+          "question_chinese": "___。",
+          "question_pinyin": "___。",
+          "question_english": "Patient; patience"
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Patient; patience'?",
+          "correct": "耐心",
+          "options": [
+            "抱怨",
+            "耐心",
+            "消极",
+            "谦虚"
+          ],
+          "option_pinyin": [
+            "bào yuàn",
+            "nài xīn",
+            "xiāo jí",
+            "qiān xū"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_05",
@@ -54,7 +278,63 @@
       "part_of_speech": "adjective",
       "example": "他在困难面前表现出了坚强的意志力，让大家非常佩服。",
       "translation": "He displayed great willpower in the face of difficulty, which everyone found very admirable.",
-      "example_pinyin": "tā zài kùn nán miàn qián biǎo xiàn chū le jiān qiáng de yì zhì lì ràng dà jiā fēi cháng pèi fú"
+      "example_pinyin": "tā zài kùn nán miàn qián biǎo xiàn chū le jiān qiáng de yì zhì lì ràng dà jiā fēi cháng pèi fú",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 坚强 mean?",
+          "correct": "Strong-willed; resilient",
+          "options": [
+            "Character / Moral character / Personal integrity",
+            "To envy / To admire / Envy",
+            "Optimistic",
+            "Strong-willed; resilient"
+          ],
+          "option_pinyin": [
+            "pǐn gé",
+            "xiàn mù",
+            "lè guān",
+            "jiān qiáng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Strong-willed; resilient",
+          "correct": "坚强",
+          "options": [
+            "坚强",
+            "逃避",
+            "嫉妒",
+            "乐观"
+          ],
+          "option_pinyin": [
+            "jiān qiáng",
+            "táo bì",
+            "jí dù",
+            "lè guān"
+          ],
+          "question_chinese": "他在困难面前表现出了___的意志力，让大家非常佩服。",
+          "question_pinyin": "他在困难面前表现出了___的意志力，让大家非常佩服。",
+          "question_english": "He displayed great willpower in the face of difficulty, which everyone found very admirable."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Strong-willed; resilient'?",
+          "correct": "坚强",
+          "options": [
+            "品格",
+            "坚强",
+            "善良",
+            "耐心"
+          ],
+          "option_pinyin": [
+            "pǐn gé",
+            "jiān qiáng",
+            "shàn liáng",
+            "nài xīn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_06",
@@ -64,7 +344,63 @@
       "part_of_speech": "adjective/noun",
       "example": "在压力面前，他表现出了难得的冷静和自信。",
       "translation": "Under pressure, he displayed a rare calmness and confidence.",
-      "example_pinyin": "zài yā lì miàn qián tā biǎo xiàn chū le nán dé de lěng jìng hé zì xìn"
+      "example_pinyin": "zài yā lì miàn qián tā biǎo xiàn chū le nán dé de lěng jìng hé zì xìn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 自信 mean?",
+          "correct": "Confident; self-confident",
+          "options": [
+            "To envy / To admire / Envy",
+            "Strong-willed; resilient",
+            "Confident; self-confident",
+            "Kind-hearted; good-natured"
+          ],
+          "option_pinyin": [
+            "xiàn mù",
+            "jiān qiáng",
+            "zì xìn",
+            "shàn liáng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Confident; self-confident",
+          "correct": "自信",
+          "options": [
+            "品格",
+            "抱怨",
+            "品质",
+            "自信"
+          ],
+          "option_pinyin": [
+            "pǐn gé",
+            "bào yuàn",
+            "pǐn zhì",
+            "zì xìn"
+          ],
+          "question_chinese": "在压力面前，他表现出了难得的冷静和___。",
+          "question_pinyin": "在压力面前，他表现出了难得的冷静和___。",
+          "question_english": "Under pressure, he displayed a rare calmness and confidence."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Confident; self-confident'?",
+          "correct": "自信",
+          "options": [
+            "自信",
+            "逃避",
+            "坚强",
+            "意志力"
+          ],
+          "option_pinyin": [
+            "zì xìn",
+            "táo bì",
+            "jiān qiáng",
+            "yì zhì lì"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_07",
@@ -74,7 +410,63 @@
       "part_of_speech": "adjective",
       "example": "这种善良和谦虚的品质，真的值得我们好好学习。",
       "translation": "These qualities of kindness and humility are truly worth learning from.",
-      "example_pinyin": "zhè zhǒng shàn liáng hé qiān xū de pǐn zhì zhēn de zhí de wǒ men hǎo hǎo xué xí"
+      "example_pinyin": "zhè zhǒng shàn liáng hé qiān xū de pǐn zhì zhēn de zhí de wǒ men hǎo hǎo xué xí",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 善良 mean?",
+          "correct": "Kind-hearted; good-natured",
+          "options": [
+            "To complain / Complaint",
+            "Strong-willed; resilient",
+            "Confident; self-confident",
+            "Kind-hearted; good-natured"
+          ],
+          "option_pinyin": [
+            "bào yuàn",
+            "jiān qiáng",
+            "zì xìn",
+            "shàn liáng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Kind-hearted; good-natured",
+          "correct": "善良",
+          "options": [
+            "品质",
+            "负责任",
+            "善良",
+            "抱怨"
+          ],
+          "option_pinyin": [
+            "pǐn zhì",
+            "fù zé rèn",
+            "shàn liáng",
+            "bào yuàn"
+          ],
+          "question_chinese": "这种___和谦虚的品质，真的值得我们好好学习。",
+          "question_pinyin": "这种___和谦虚的品质，真的值得我们好好学习。",
+          "question_english": "These qualities of kindness and humility are truly worth learning from."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Kind-hearted; good-natured'?",
+          "correct": "善良",
+          "options": [
+            "坚强",
+            "善良",
+            "消极",
+            "逃避"
+          ],
+          "option_pinyin": [
+            "jiān qiáng",
+            "shàn liáng",
+            "xiāo jí",
+            "táo bì"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_08",
@@ -84,7 +476,63 @@
       "part_of_speech": "adjective/verb",
       "example": "一个负责任的人，无论如何都不会逃避自己的义务。",
       "translation": "A responsible person will never shirk their duties, no matter what.",
-      "example_pinyin": "yí gè fù zé rèn de rén wú lùn rú hé dōu bú huì táo bì zì jǐ de yì wù"
+      "example_pinyin": "yí gè fù zé rèn de rén wú lùn rú hé dōu bú huì táo bì zì jǐ de yì wù",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 负责任 mean?",
+          "correct": "Responsible; to take responsibility",
+          "options": [
+            "Jealous / To be jealous / Jealousy",
+            "Negative / Pessimistic / Passive",
+            "Responsible; to take responsibility",
+            "Careful; attentive"
+          ],
+          "option_pinyin": [
+            "jí dù",
+            "xiāo jí",
+            "fù zé rèn",
+            "xì xīn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Responsible; to take responsibility",
+          "correct": "负责任",
+          "options": [
+            "负责任",
+            "消极",
+            "意志力",
+            "耐心"
+          ],
+          "option_pinyin": [
+            "fù zé rèn",
+            "xiāo jí",
+            "yì zhì lì",
+            "nài xīn"
+          ],
+          "question_chinese": "一个___的人，无论如何都不会逃避自己的义务。",
+          "question_pinyin": "一个___的人，无论如何都不会逃避自己的义务。",
+          "question_english": "A responsible person will never shirk their duties, no matter what."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Responsible; to take responsibility'?",
+          "correct": "负责任",
+          "options": [
+            "负责任",
+            "消极",
+            "细心",
+            "品质"
+          ],
+          "option_pinyin": [
+            "fù zé rèn",
+            "xiāo jí",
+            "xì xīn",
+            "pǐn zhì"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_09",
@@ -94,17 +542,129 @@
       "part_of_speech": "adjective",
       "example": "她做事非常细心，从来不会出差错。",
       "translation": "She is extremely careful in everything she does and never makes mistakes.",
-      "example_pinyin": "tā zuò shì fēi cháng xì xīn cóng lái bú huì chū chā cuò"
+      "example_pinyin": "tā zuò shì fēi cháng xì xīn cóng lái bú huì chū chā cuò",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 细心 mean?",
+          "correct": "Careful; attentive",
+          "options": [
+            "Confident; self-confident",
+            "Careful; attentive",
+            "To evade / To avoid / To run away from",
+            "Patient; patience"
+          ],
+          "option_pinyin": [
+            "zì xìn",
+            "xì xīn",
+            "táo bì",
+            "nài xīn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Careful; attentive",
+          "correct": "细心",
+          "options": [
+            "细心",
+            "品格",
+            "品质",
+            "逃避"
+          ],
+          "option_pinyin": [
+            "xì xīn",
+            "pǐn gé",
+            "pǐn zhì",
+            "táo bì"
+          ],
+          "question_chinese": "她做事非常___，从来不会出差错。",
+          "question_pinyin": "她做事非常___，从来不会出差错。",
+          "question_english": "She is extremely careful in everything she does and never makes mistakes."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Careful; attentive'?",
+          "correct": "细心",
+          "options": [
+            "细心",
+            "品质",
+            "消极",
+            "负责任"
+          ],
+          "option_pinyin": [
+            "xì xīn",
+            "pǐn zhì",
+            "xiāo jí",
+            "fù zé rèn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_10",
-      "chinese": "积极",
-      "pinyin": "jī jí",
-      "english": "Positive; proactive; enthusiastic",
+      "chinese": "消极",
+      "pinyin": "xiāo jí",
+      "english": "Negative / Pessimistic / Passive",
       "part_of_speech": "adjective",
-      "example": "与其抱怨困难，不如积极地寻找解决办法。",
-      "translation": "Rather than complaining about difficulties, it is better to proactively look for solutions.",
-      "example_pinyin": "yǔ qí bào yuàn kùn nán bù rú jī jí dì xún zhǎo jiě jué bàn fǎ"
+      "example": "与其保持消极的态度，不如培养乐观和坚强的品质。",
+      "translation": "Rather than maintaining a negative attitude, it is better to cultivate optimistic and resilient qualities.",
+      "example_pinyin": "yǔ qí bǎo chí xiāo jí de tài dù bù rú péi yǎng lè guān hé jiān qiáng de pǐn zhì",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 消极 mean?",
+          "correct": "Negative / Pessimistic / Passive",
+          "options": [
+            "Negative / Pessimistic / Passive",
+            "Quality / Character trait / Virtue",
+            "Patient; patience",
+            "Strong-willed; resilient"
+          ],
+          "option_pinyin": [
+            "xiāo jí",
+            "pǐn zhì",
+            "nài xīn",
+            "jiān qiáng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Negative / Pessimistic / Passive",
+          "correct": "消极",
+          "options": [
+            "品格",
+            "羡慕",
+            "负责任",
+            "消极"
+          ],
+          "option_pinyin": [
+            "pǐn gé",
+            "xiàn mù",
+            "fù zé rèn",
+            "xiāo jí"
+          ],
+          "question_chinese": "与其保持___的态度，不如培养乐观和坚强的品质。",
+          "question_pinyin": "与其保持___的态度，不如培养乐观和坚强的品质。",
+          "question_english": "Rather than maintaining a negative attitude, it is better to cultivate optimistic and resilient qualities."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Negative / Pessimistic / Passive'?",
+          "correct": "消极",
+          "options": [
+            "坚强",
+            "乐观",
+            "消极",
+            "耐心"
+          ],
+          "option_pinyin": [
+            "jiān qiáng",
+            "lè guān",
+            "xiāo jí",
+            "nài xīn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_11",
@@ -114,7 +674,63 @@
       "part_of_speech": "adjective",
       "example": "保持乐观的态度，与其担心未来，不如好好把握现在。",
       "translation": "Maintain an optimistic attitude — rather than worrying about the future, it is better to make the most of the present.",
-      "example_pinyin": "bǎo chí lè guān de tài dù yǔ qí dān xīn wèi lái bù rú hǎo hǎo bǎ wò xiàn zài"
+      "example_pinyin": "bǎo chí lè guān de tài dù yǔ qí dān xīn wèi lái bù rú hǎo hǎo bǎ wò xiàn zài",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 乐观 mean?",
+          "correct": "Optimistic",
+          "options": [
+            "Jealous / To be jealous / Jealousy",
+            "Careful; attentive",
+            "Optimistic",
+            "Quality / Character trait / Virtue"
+          ],
+          "option_pinyin": [
+            "jí dù",
+            "xì xīn",
+            "lè guān",
+            "pǐn zhì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Optimistic",
+          "correct": "乐观",
+          "options": [
+            "负责任",
+            "意志力",
+            "善良",
+            "乐观"
+          ],
+          "option_pinyin": [
+            "fù zé rèn",
+            "yì zhì lì",
+            "shàn liáng",
+            "lè guān"
+          ],
+          "question_chinese": "保持___的态度，与其担心未来，不如好好把握现在。",
+          "question_pinyin": "保持___的态度，与其担心未来，不如好好把握现在。",
+          "question_english": "Maintain an optimistic attitude — rather than worrying about the future, it is better to make the most of the present."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Optimistic'?",
+          "correct": "乐观",
+          "options": [
+            "乐观",
+            "品质",
+            "意志力",
+            "自信"
+          ],
+          "option_pinyin": [
+            "lè guān",
+            "pǐn zhì",
+            "yì zhì lì",
+            "zì xìn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_12",
@@ -124,7 +740,327 @@
       "part_of_speech": "noun",
       "example": "他在困难面前表现出了坚强的意志力，让大家非常佩服。",
       "translation": "He displayed great willpower in the face of difficulty, which everyone found very admirable.",
-      "example_pinyin": "tā zài kùn nán miàn qián biǎo xiàn chū le jiān qiáng de yì zhì lì ràng dà jiā fēi cháng pèi fú"
+      "example_pinyin": "tā zài kùn nán miàn qián biǎo xiàn chū le jiān qiáng de yì zhì lì ràng dà jiā fēi cháng pèi fú",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 意志力 mean?",
+          "correct": "Willpower; strength of will",
+          "options": [
+            "Responsible; to take responsibility",
+            "Patient; patience",
+            "Character / Moral character / Personal integrity",
+            "Willpower; strength of will"
+          ],
+          "option_pinyin": [
+            "fù zé rèn",
+            "nài xīn",
+            "pǐn gé",
+            "yì zhì lì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Willpower; strength of will",
+          "correct": "意志力",
+          "options": [
+            "消极",
+            "抱怨",
+            "谦虚",
+            "意志力"
+          ],
+          "option_pinyin": [
+            "xiāo jí",
+            "bào yuàn",
+            "qiān xū",
+            "yì zhì lì"
+          ],
+          "question_chinese": "他在困难面前表现出了坚强的___，让大家非常佩服。",
+          "question_pinyin": "他在困难面前表现出了坚强的___，让大家非常佩服。",
+          "question_english": "He displayed great willpower in the face of difficulty, which everyone found very admirable."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Willpower; strength of will'?",
+          "correct": "意志力",
+          "options": [
+            "嫉妒",
+            "善良",
+            "意志力",
+            "消极"
+          ],
+          "option_pinyin": [
+            "jí dù",
+            "shàn liáng",
+            "yì zhì lì",
+            "xiāo jí"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk5_l12_13",
+      "chinese": "抱怨",
+      "pinyin": "bào yuàn",
+      "english": "To complain / Complaint",
+      "part_of_speech": "verb/noun",
+      "example": "无论遇到什么困难，都应该避免抱怨，保持乐观和坚强的心态。",
+      "translation": "No matter what difficulties you face, you should avoid complaining and maintain an optimistic and resilient mindset.",
+      "example_pinyin": "wú lùn yù dào shén me kùn nán dōu yīng gāi bì miǎn bào yuàn bǎo chí lè guān hé jiān qiáng de xīn tài",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 抱怨 mean?",
+          "correct": "To complain / Complaint",
+          "options": [
+            "Quality / Character trait / Virtue",
+            "Confident; self-confident",
+            "Willpower; strength of will",
+            "To complain / Complaint"
+          ],
+          "option_pinyin": [
+            "pǐn zhì",
+            "zì xìn",
+            "yì zhì lì",
+            "bào yuàn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To complain / Complaint",
+          "correct": "抱怨",
+          "options": [
+            "抱怨",
+            "消极",
+            "谦虚",
+            "乐观"
+          ],
+          "option_pinyin": [
+            "bào yuàn",
+            "xiāo jí",
+            "qiān xū",
+            "lè guān"
+          ],
+          "question_chinese": "无论遇到什么困难，都应该避免___，保持乐观和坚强的心态。",
+          "question_pinyin": "无论遇到什么困难，都应该避免___，保持乐观和坚强的心态。",
+          "question_english": "No matter what difficulties you face, you should avoid complaining and maintain an optimistic and resilient mindset."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To complain / Complaint'?",
+          "correct": "抱怨",
+          "options": [
+            "消极",
+            "抱怨",
+            "谦虚",
+            "坚强"
+          ],
+          "option_pinyin": [
+            "xiāo jí",
+            "bào yuàn",
+            "qiān xū",
+            "jiān qiáng"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk5_l12_14",
+      "chinese": "逃避",
+      "pinyin": "táo bì",
+      "english": "To evade / To avoid / To run away from",
+      "part_of_speech": "verb",
+      "example": "一个有品格的人，无论如何都不会逃避自己的责任。",
+      "translation": "A person of good character will never evade their responsibilities, no matter what.",
+      "example_pinyin": "yí gè yǒu pǐn gé de rén wú lùn rú hé dōu bú huì táo bì zì jǐ de zé rèn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 逃避 mean?",
+          "correct": "To evade / To avoid / To run away from",
+          "options": [
+            "Careful; attentive",
+            "To evade / To avoid / To run away from",
+            "Kind-hearted; good-natured",
+            "Character / Moral character / Personal integrity"
+          ],
+          "option_pinyin": [
+            "xì xīn",
+            "táo bì",
+            "shàn liáng",
+            "pǐn gé"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To evade / To avoid / To run away from",
+          "correct": "逃避",
+          "options": [
+            "抱怨",
+            "自信",
+            "细心",
+            "逃避"
+          ],
+          "option_pinyin": [
+            "bào yuàn",
+            "zì xìn",
+            "xì xīn",
+            "táo bì"
+          ],
+          "question_chinese": "一个有品格的人，无论如何都不会___自己的责任。",
+          "question_pinyin": "一个有品格的人，无论如何都不会___自己的责任。",
+          "question_english": "A person of good character will never evade their responsibilities, no matter what."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To evade / To avoid / To run away from'?",
+          "correct": "逃避",
+          "options": [
+            "细心",
+            "谦虚",
+            "逃避",
+            "自信"
+          ],
+          "option_pinyin": [
+            "xì xīn",
+            "qiān xū",
+            "táo bì",
+            "zì xìn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk5_l12_15",
+      "chinese": "羡慕",
+      "pinyin": "xiàn mù",
+      "english": "To envy / To admire / Envy",
+      "part_of_speech": "verb/noun",
+      "example": "与其羡慕别人的品质，不如努力培养自己的品格。",
+      "translation": "Rather than envying others' qualities, it is better to work hard to cultivate your own character.",
+      "example_pinyin": "yǔ qí xiàn mù bié rén de pǐn zhì bù rú nǔ lì péi yǎng zì jǐ de pǐn gé",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 羡慕 mean?",
+          "correct": "To envy / To admire / Envy",
+          "options": [
+            "Confident; self-confident",
+            "Willpower; strength of will",
+            "To envy / To admire / Envy",
+            "Character / Moral character / Personal integrity"
+          ],
+          "option_pinyin": [
+            "zì xìn",
+            "yì zhì lì",
+            "xiàn mù",
+            "pǐn gé"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To envy / To admire / Envy",
+          "correct": "羡慕",
+          "options": [
+            "耐心",
+            "羡慕",
+            "意志力",
+            "逃避"
+          ],
+          "option_pinyin": [
+            "nài xīn",
+            "xiàn mù",
+            "yì zhì lì",
+            "táo bì"
+          ],
+          "question_chinese": "与其___别人的品质，不如努力培养自己的品格。",
+          "question_pinyin": "与其___别人的品质，不如努力培养自己的品格。",
+          "question_english": "Rather than envying others' qualities, it is better to work hard to cultivate your own character."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To envy / To admire / Envy'?",
+          "correct": "羡慕",
+          "options": [
+            "品质",
+            "品格",
+            "羡慕",
+            "意志力"
+          ],
+          "option_pinyin": [
+            "pǐn zhì",
+            "pǐn gé",
+            "xiàn mù",
+            "yì zhì lì"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk5_l12_16",
+      "chinese": "嫉妒",
+      "pinyin": "jí dù",
+      "english": "Jealous / To be jealous / Jealousy",
+      "part_of_speech": "verb/noun",
+      "example": "嫉妒和抱怨都是消极的情绪，只会影响自己的心态和品格。",
+      "translation": "Jealousy and complaining are both negative emotions that only affect one's own mindset and character.",
+      "example_pinyin": "jí dù hé bào yuàn dōu shì xiāo jí de qíng xù zhǐ huì yǐng xiǎng zì jǐ de xīn tài hé pǐn gé",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 嫉妒 mean?",
+          "correct": "Jealous / To be jealous / Jealousy",
+          "options": [
+            "Jealous / To be jealous / Jealousy",
+            "To envy / To admire / Envy",
+            "Modest; humble",
+            "To complain / Complaint"
+          ],
+          "option_pinyin": [
+            "jí dù",
+            "xiàn mù",
+            "qiān xū",
+            "bào yuàn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Jealous / To be jealous / Jealousy",
+          "correct": "嫉妒",
+          "options": [
+            "自信",
+            "嫉妒",
+            "羡慕",
+            "善良"
+          ],
+          "option_pinyin": [
+            "zì xìn",
+            "jí dù",
+            "xiàn mù",
+            "shàn liáng"
+          ],
+          "question_chinese": "___和抱怨都是消极的情绪，只会影响自己的心态和品格。",
+          "question_pinyin": "___和抱怨都是消极的情绪，只会影响自己的心态和品格。",
+          "question_english": "Jealousy and complaining are both negative emotions that only affect one's own mindset and character."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Jealous / To be jealous / Jealousy'?",
+          "correct": "嫉妒",
+          "options": [
+            "嫉妒",
+            "善良",
+            "逃避",
+            "耐心"
+          ],
+          "option_pinyin": [
+            "jí dù",
+            "shàn liáng",
+            "táo bì",
+            "nài xīn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l12_p01",
