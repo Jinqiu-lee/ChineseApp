@@ -8,13 +8,69 @@
   "vocabulary": [
     {
       "id": "hsk5_l11_01",
-      "chinese": "艺术",
-      "pinyin": "yì shù",
-      "english": "Art; the arts",
-      "part_of_speech": "noun",
-      "example": "我之前从来没看过这种艺术形式。",
-      "translation": "I had never seen this art form before.",
-      "example_pinyin": "wǒ zhī qián cóng lái méi kàn guò zhè zhǒng yì shù xíng shì"
+      "chinese": "擅长",
+      "pinyin": "shàn cháng",
+      "english": "To be skilled in / To be good at / To excel at",
+      "part_of_speech": "verb",
+      "example": "她擅长创作民间风格的作品，每一件都受到了观众的欣赏。",
+      "translation": "She excels at creating works in a folk style, and each piece is appreciated by the audience.",
+      "example_pinyin": "tā shàn cháng chuàng zuò mín jiān fēng gé de zuò pǐn měi yī jiàn dōu shòu dào le guān zhòng de xīn shǎng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 擅长 mean?",
+          "correct": "To be skilled in / To be good at / To excel at",
+          "options": [
+            "To be skilled in / To be good at / To excel at",
+            "Museum",
+            "Style; manner",
+            "To appreciate; to enjoy"
+          ],
+          "option_pinyin": [
+            "shàn cháng",
+            "bó wù guǎn",
+            "fēng gé",
+            "xīn shǎng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To be skilled in / To be good at / To excel at",
+          "correct": "擅长",
+          "options": [
+            "欣赏",
+            "传承",
+            "擅长",
+            "创作"
+          ],
+          "option_pinyin": [
+            "xīn shǎng",
+            "chuán chéng",
+            "shàn cháng",
+            "chuàng zuò"
+          ],
+          "question_chinese": "她___创作民间风格的作品，每一件都受到了观众的欣赏。",
+          "question_pinyin": "她___创作民间风格的作品，每一件都受到了观众的欣赏。",
+          "question_english": "She excels at creating works in a folk style, and each piece is appreciated by the audience."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To be skilled in / To be good at / To excel at'?",
+          "correct": "擅长",
+          "options": [
+            "擅长",
+            "雕塑",
+            "作品",
+            "传统"
+          ],
+          "option_pinyin": [
+            "shàn cháng",
+            "diāo sù",
+            "zuò pǐn",
+            "chuán tǒng"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_02",
@@ -24,7 +80,63 @@
       "part_of_speech": "noun",
       "example": "这位艺术家的风格独特，每一件作品都令人印象深刻。",
       "translation": "This artist's style is unique; every piece leaves a deep impression on the viewer.",
-      "example_pinyin": "zhè wèi yì shù jiā de fēng gé dú tè měi yī jiàn zuò pǐn dōu lìng rén yìn xiàng shēn kè"
+      "example_pinyin": "zhè wèi yì shù jiā de fēng gé dú tè měi yī jiàn zuò pǐn dōu lìng rén yìn xiàng shēn kè",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 作品 mean?",
+          "correct": "Work; piece (of art or literature)",
+          "options": [
+            "To appreciate; to enjoy",
+            "To pass down / To inherit / To transmit; inheritance",
+            "Work; piece (of art or literature)",
+            "Exhibition; to exhibit"
+          ],
+          "option_pinyin": [
+            "xīn shǎng",
+            "chuán chéng",
+            "zuò pǐn",
+            "zhǎn lǎn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Work; piece (of art or literature)",
+          "correct": "作品",
+          "options": [
+            "作品",
+            "文化遗产",
+            "传统",
+            "雕塑"
+          ],
+          "option_pinyin": [
+            "zuò pǐn",
+            "wén huà yí chǎn",
+            "chuán tǒng",
+            "diāo sù"
+          ],
+          "question_chinese": "这位艺术家的风格独特，每一件___都令人印象深刻。",
+          "question_pinyin": "这位艺术家的风格独特，每一件___都令人印象深刻。",
+          "question_english": "This artist's style is unique; every piece leaves a deep impression on the viewer."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Work; piece (of art or literature)'?",
+          "correct": "作品",
+          "options": [
+            "民间",
+            "作品",
+            "文化遗产",
+            "展览"
+          ],
+          "option_pinyin": [
+            "mín jiān",
+            "zuò pǐn",
+            "wén huà yí chǎn",
+            "zhǎn lǎn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_03",
@@ -34,7 +146,63 @@
       "part_of_speech": "noun/verb",
       "example": "通过这次展览，观众对中国文化遗产有了更深的了解。",
       "translation": "Through this exhibition, the audience gained a deeper understanding of China's cultural heritage.",
-      "example_pinyin": "tōng guò zhè cì zhǎn lǎn guān zhòng duì zhōng guó wén huà yí chǎn yǒu le gēng shēn de liǎo jiě"
+      "example_pinyin": "tōng guò zhè cì zhǎn lǎn guān zhòng duì zhōng guó wén huà yí chǎn yǒu le gēng shēn de liǎo jiě",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 展览 mean?",
+          "correct": "Exhibition; to exhibit",
+          "options": [
+            "Exhibition; to exhibit",
+            "To be skilled in / To be good at / To excel at",
+            "Sculpture; to sculpt",
+            "Moreover / And also / Furthermore"
+          ],
+          "option_pinyin": [
+            "zhǎn lǎn",
+            "shàn cháng",
+            "diāo sù",
+            "bìng qiě"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Exhibition; to exhibit",
+          "correct": "展览",
+          "options": [
+            "文化遗产",
+            "欣赏",
+            "博物馆",
+            "展览"
+          ],
+          "option_pinyin": [
+            "wén huà yí chǎn",
+            "xīn shǎng",
+            "bó wù guǎn",
+            "zhǎn lǎn"
+          ],
+          "question_chinese": "通过这次___，观众对中国文化遗产有了更深的了解。",
+          "question_pinyin": "通过这次___，观众对中国文化遗产有了更深的了解。",
+          "question_english": "Through this exhibition, the audience gained a deeper understanding of China's cultural heritage."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Exhibition; to exhibit'?",
+          "correct": "展览",
+          "options": [
+            "文化遗产",
+            "创作",
+            "并且",
+            "展览"
+          ],
+          "option_pinyin": [
+            "wén huà yí chǎn",
+            "chuàng zuò",
+            "bìng qiě",
+            "zhǎn lǎn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_04",
@@ -44,7 +212,63 @@
       "part_of_speech": "verb",
       "example": "这幅画值得慢慢欣赏，每一处细节都充满了艺术感。",
       "translation": "This painting is worth appreciating slowly; every detail is full of artistic feeling.",
-      "example_pinyin": "zhè fú huà zhí de màn màn xīn shǎng měi yī chù xì jié dōu chōng mǎn le yì shù gǎn"
+      "example_pinyin": "zhè fú huà zhí de màn màn xīn shǎng měi yī chù xì jié dōu chōng mǎn le yì shù gǎn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 欣赏 mean?",
+          "correct": "To appreciate; to enjoy",
+          "options": [
+            "Sculpture; to sculpt",
+            "Tradition; traditional",
+            "Folk; among the people",
+            "To appreciate; to enjoy"
+          ],
+          "option_pinyin": [
+            "diāo sù",
+            "chuán tǒng",
+            "mín jiān",
+            "xīn shǎng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To appreciate; to enjoy",
+          "correct": "欣赏",
+          "options": [
+            "创作",
+            "作品",
+            "欣赏",
+            "传承"
+          ],
+          "option_pinyin": [
+            "chuàng zuò",
+            "zuò pǐn",
+            "xīn shǎng",
+            "chuán chéng"
+          ],
+          "question_chinese": "这幅画值得慢慢___，每一处细节都充满了艺术感。",
+          "question_pinyin": "这幅画值得慢慢___，每一处细节都充满了艺术感。",
+          "question_english": "This painting is worth appreciating slowly; every detail is full of artistic feeling."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To appreciate; to enjoy'?",
+          "correct": "欣赏",
+          "options": [
+            "欣赏",
+            "博物馆",
+            "风格",
+            "展览"
+          ],
+          "option_pinyin": [
+            "xīn shǎng",
+            "bó wù guǎn",
+            "fēng gé",
+            "zhǎn lǎn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_05",
@@ -54,7 +278,63 @@
       "part_of_speech": "verb/noun",
       "example": "他通过长期创作，逐渐形成了自己独特的艺术风格。",
       "translation": "Through sustained creative work, he gradually developed his own unique artistic style.",
-      "example_pinyin": "tā tōng guò cháng qī chuàng zuò zhú jiàn xíng chéng le zì jǐ dú tè de yì shù fēng gé"
+      "example_pinyin": "tā tōng guò cháng qī chuàng zuò zhú jiàn xíng chéng le zì jǐ dú tè de yì shù fēng gé",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 创作 mean?",
+          "correct": "To create; creative work",
+          "options": [
+            "Folk; among the people",
+            "Style; manner",
+            "To pass down / To inherit / To transmit; inheritance",
+            "To create; creative work"
+          ],
+          "option_pinyin": [
+            "mín jiān",
+            "fēng gé",
+            "chuán chéng",
+            "chuàng zuò"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To create; creative work",
+          "correct": "创作",
+          "options": [
+            "创作",
+            "传承",
+            "文化遗产",
+            "展览"
+          ],
+          "option_pinyin": [
+            "chuàng zuò",
+            "chuán chéng",
+            "wén huà yí chǎn",
+            "zhǎn lǎn"
+          ],
+          "question_chinese": "他通过长期___，逐渐形成了自己独特的艺术风格。",
+          "question_pinyin": "他通过长期___，逐渐形成了自己独特的艺术风格。",
+          "question_english": "Through sustained creative work, he gradually developed his own unique artistic style."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To create; creative work'?",
+          "correct": "创作",
+          "options": [
+            "文化遗产",
+            "雕塑",
+            "创作",
+            "传承"
+          ],
+          "option_pinyin": [
+            "wén huà yí chǎn",
+            "diāo sù",
+            "chuàng zuò",
+            "chuán chéng"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_06",
@@ -64,7 +344,63 @@
       "part_of_speech": "noun/adjective",
       "example": "他不但擅长传统绘画，而且在雕塑方面也很有才华。",
       "translation": "He is not only skilled in traditional painting but also very talented in sculpture.",
-      "example_pinyin": "tā bù dàn shàn cháng chuán tǒng huì huà ér qiě zài diāo sù fāng miàn yě hěn yǒu cái huá"
+      "example_pinyin": "tā bù dàn shàn cháng chuán tǒng huì huà ér qiě zài diāo sù fāng miàn yě hěn yǒu cái huá",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 传统 mean?",
+          "correct": "Tradition; traditional",
+          "options": [
+            "Exhibition; to exhibit",
+            "Tradition; traditional",
+            "To appreciate; to enjoy",
+            "To create; creative work"
+          ],
+          "option_pinyin": [
+            "zhǎn lǎn",
+            "chuán tǒng",
+            "xīn shǎng",
+            "chuàng zuò"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Tradition; traditional",
+          "correct": "传统",
+          "options": [
+            "擅长",
+            "雕塑",
+            "传统",
+            "民间"
+          ],
+          "option_pinyin": [
+            "shàn cháng",
+            "diāo sù",
+            "chuán tǒng",
+            "mín jiān"
+          ],
+          "question_chinese": "他不但擅长___绘画，而且在雕塑方面也很有才华。",
+          "question_pinyin": "他不但擅长___绘画，而且在雕塑方面也很有才华。",
+          "question_english": "He is not only skilled in traditional painting but also very talented in sculpture."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Tradition; traditional'?",
+          "correct": "传统",
+          "options": [
+            "风格",
+            "雕塑",
+            "擅长",
+            "传统"
+          ],
+          "option_pinyin": [
+            "fēng gé",
+            "diāo sù",
+            "shàn cháng",
+            "chuán tǒng"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_07",
@@ -74,17 +410,129 @@
       "part_of_speech": "noun",
       "example": "这位艺术家的风格独特，每一件作品都令人印象深刻。",
       "translation": "This artist's style is unique; every piece leaves a deep impression on the viewer.",
-      "example_pinyin": "zhè wèi yì shù jiā de fēng gé dú tè měi yī jiàn zuò pǐn dōu lìng rén yìn xiàng shēn kè"
+      "example_pinyin": "zhè wèi yì shù jiā de fēng gé dú tè měi yī jiàn zuò pǐn dōu lìng rén yìn xiàng shēn kè",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 风格 mean?",
+          "correct": "Style; manner",
+          "options": [
+            "Style; manner",
+            "Folk; among the people",
+            "To create; creative work",
+            "Exhibition; to exhibit"
+          ],
+          "option_pinyin": [
+            "fēng gé",
+            "mín jiān",
+            "chuàng zuò",
+            "zhǎn lǎn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Style; manner",
+          "correct": "风格",
+          "options": [
+            "展览",
+            "民间",
+            "风格",
+            "作品"
+          ],
+          "option_pinyin": [
+            "zhǎn lǎn",
+            "mín jiān",
+            "fēng gé",
+            "zuò pǐn"
+          ],
+          "question_chinese": "这位艺术家的___独特，每一件作品都令人印象深刻。",
+          "question_pinyin": "这位艺术家的___独特，每一件作品都令人印象深刻。",
+          "question_english": "This artist's style is unique; every piece leaves a deep impression on the viewer."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Style; manner'?",
+          "correct": "风格",
+          "options": [
+            "擅长",
+            "风格",
+            "作品",
+            "文化遗产"
+          ],
+          "option_pinyin": [
+            "shàn cháng",
+            "fēng gé",
+            "zuò pǐn",
+            "wén huà yí chǎn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_08",
-      "chinese": "表演",
-      "pinyin": "biǎo yǎn",
-      "english": "To perform; performance",
+      "chinese": "传承",
+      "pinyin": "chuán chéng",
+      "english": "To pass down / To inherit / To transmit; inheritance",
       "part_of_speech": "verb/noun",
-      "example": "博物馆里的表演让游客感受到了传统文化的魅力。",
-      "translation": "The performance in the museum allowed visitors to experience the charm of traditional culture.",
-      "example_pinyin": "bó wù guǎn lǐ de biǎo yǎn ràng yóu kè gǎn shòu dào le chuán tǒng wén huà de mèi lì"
+      "example": "博物馆举办展览，帮助人们传承珍贵的文化遗产。",
+      "translation": "Museums hold exhibitions to help people pass down precious cultural heritage.",
+      "example_pinyin": "bó wù guǎn jǔ bàn zhǎn lǎn bāng zhù rén men chuán chéng zhēn guì de wén huà yí chǎn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 传承 mean?",
+          "correct": "To pass down / To inherit / To transmit; inheritance",
+          "options": [
+            "To create; creative work",
+            "Exhibition; to exhibit",
+            "Tradition; traditional",
+            "To pass down / To inherit / To transmit; inheritance"
+          ],
+          "option_pinyin": [
+            "chuàng zuò",
+            "zhǎn lǎn",
+            "chuán tǒng",
+            "chuán chéng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To pass down / To inherit / To transmit; inheritance",
+          "correct": "传承",
+          "options": [
+            "风格",
+            "民间",
+            "传承",
+            "作品"
+          ],
+          "option_pinyin": [
+            "fēng gé",
+            "mín jiān",
+            "chuán chéng",
+            "zuò pǐn"
+          ],
+          "question_chinese": "博物馆举办展览，帮助人们___珍贵的文化遗产。",
+          "question_pinyin": "博物馆举办展览，帮助人们___珍贵的文化遗产。",
+          "question_english": "Museums hold exhibitions to help people pass down precious cultural heritage."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To pass down / To inherit / To transmit; inheritance'?",
+          "correct": "传承",
+          "options": [
+            "创作",
+            "传承",
+            "并且",
+            "雕塑"
+          ],
+          "option_pinyin": [
+            "chuàng zuò",
+            "chuán chéng",
+            "bìng qiě",
+            "diāo sù"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_09",
@@ -94,7 +542,63 @@
       "part_of_speech": "noun",
       "example": "博物馆里的表演让游客感受到了传统文化的魅力。",
       "translation": "The performance in the museum allowed visitors to experience the charm of traditional culture.",
-      "example_pinyin": "bó wù guǎn lǐ de biǎo yǎn ràng yóu kè gǎn shòu dào le chuán tǒng wén huà de mèi lì"
+      "example_pinyin": "bó wù guǎn lǐ de biǎo yǎn ràng yóu kè gǎn shòu dào le chuán tǒng wén huà de mèi lì",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 博物馆 mean?",
+          "correct": "Museum",
+          "options": [
+            "Moreover / And also / Furthermore",
+            "Tradition; traditional",
+            "Museum",
+            "Sculpture; to sculpt"
+          ],
+          "option_pinyin": [
+            "bìng qiě",
+            "chuán tǒng",
+            "bó wù guǎn",
+            "diāo sù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Museum",
+          "correct": "博物馆",
+          "options": [
+            "博物馆",
+            "传承",
+            "民间",
+            "传统"
+          ],
+          "option_pinyin": [
+            "bó wù guǎn",
+            "chuán chéng",
+            "mín jiān",
+            "chuán tǒng"
+          ],
+          "question_chinese": "___里的表演让游客感受到了传统文化的魅力。",
+          "question_pinyin": "___里的表演让游客感受到了传统文化的魅力。",
+          "question_english": "The performance in the museum allowed visitors to experience the charm of traditional culture."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Museum'?",
+          "correct": "博物馆",
+          "options": [
+            "文化遗产",
+            "欣赏",
+            "创作",
+            "博物馆"
+          ],
+          "option_pinyin": [
+            "wén huà yí chǎn",
+            "xīn shǎng",
+            "chuàng zuò",
+            "bó wù guǎn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_10",
@@ -104,7 +608,63 @@
       "part_of_speech": "noun",
       "example": "通过这次展览，观众对中国文化遗产有了更深的了解。",
       "translation": "Through this exhibition, the audience gained a deeper understanding of China's cultural heritage.",
-      "example_pinyin": "tōng guò zhè cì zhǎn lǎn guān zhòng duì zhōng guó wén huà yí chǎn yǒu le gēng shēn de liǎo jiě"
+      "example_pinyin": "tōng guò zhè cì zhǎn lǎn guān zhòng duì zhōng guó wén huà yí chǎn yǒu le gēng shēn de liǎo jiě",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 文化遗产 mean?",
+          "correct": "Cultural heritage",
+          "options": [
+            "Cultural heritage",
+            "Style; manner",
+            "Work; piece (of art or literature)",
+            "To appreciate; to enjoy"
+          ],
+          "option_pinyin": [
+            "wén huà yí chǎn",
+            "fēng gé",
+            "zuò pǐn",
+            "xīn shǎng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Cultural heritage",
+          "correct": "文化遗产",
+          "options": [
+            "风格",
+            "传承",
+            "传统",
+            "文化遗产"
+          ],
+          "option_pinyin": [
+            "fēng gé",
+            "chuán chéng",
+            "chuán tǒng",
+            "wén huà yí chǎn"
+          ],
+          "question_chinese": "通过这次展览，观众对中国___有了更深的了解。",
+          "question_pinyin": "通过这次展览，观众对中国___有了更深的了解。",
+          "question_english": "Through this exhibition, the audience gained a deeper understanding of China's cultural heritage."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Cultural heritage'?",
+          "correct": "文化遗产",
+          "options": [
+            "博物馆",
+            "文化遗产",
+            "雕塑",
+            "创作"
+          ],
+          "option_pinyin": [
+            "bó wù guǎn",
+            "wén huà yí chǎn",
+            "diāo sù",
+            "chuàng zuò"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_11",
@@ -114,7 +674,63 @@
       "part_of_speech": "noun/adjective",
       "example": "民间艺术是人民智慧的结晶，值得我们好好传承。",
       "translation": "Folk art is the crystallisation of people's wisdom and is worth preserving well.",
-      "example_pinyin": "mín jiān yì shù shì rén mín zhì huì de jié jīng zhí de wǒ men hǎo hǎo chuán chéng"
+      "example_pinyin": "mín jiān yì shù shì rén mín zhì huì de jié jīng zhí de wǒ men hǎo hǎo chuán chéng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 民间 mean?",
+          "correct": "Folk; among the people",
+          "options": [
+            "Exhibition; to exhibit",
+            "To appreciate; to enjoy",
+            "To create; creative work",
+            "Folk; among the people"
+          ],
+          "option_pinyin": [
+            "zhǎn lǎn",
+            "xīn shǎng",
+            "chuàng zuò",
+            "mín jiān"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Folk; among the people",
+          "correct": "民间",
+          "options": [
+            "传统",
+            "民间",
+            "雕塑",
+            "博物馆"
+          ],
+          "option_pinyin": [
+            "chuán tǒng",
+            "mín jiān",
+            "diāo sù",
+            "bó wù guǎn"
+          ],
+          "question_chinese": "___艺术是人民智慧的结晶，值得我们好好传承。",
+          "question_pinyin": "___艺术是人民智慧的结晶，值得我们好好传承。",
+          "question_english": "Folk art is the crystallisation of people's wisdom and is worth preserving well."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Folk; among the people'?",
+          "correct": "民间",
+          "options": [
+            "文化遗产",
+            "传承",
+            "民间",
+            "风格"
+          ],
+          "option_pinyin": [
+            "wén huà yí chǎn",
+            "chuán chéng",
+            "mín jiān",
+            "fēng gé"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_12",
@@ -124,7 +740,129 @@
       "part_of_speech": "noun/verb",
       "example": "他不但擅长传统绘画，而且在雕塑方面也很有才华。",
       "translation": "He is not only skilled in traditional painting but also very talented in sculpture.",
-      "example_pinyin": "tā bù dàn shàn cháng chuán tǒng huì huà ér qiě zài diāo sù fāng miàn yě hěn yǒu cái huá"
+      "example_pinyin": "tā bù dàn shàn cháng chuán tǒng huì huà ér qiě zài diāo sù fāng miàn yě hěn yǒu cái huá",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 雕塑 mean?",
+          "correct": "Sculpture; to sculpt",
+          "options": [
+            "To create; creative work",
+            "Sculpture; to sculpt",
+            "Museum",
+            "Tradition; traditional"
+          ],
+          "option_pinyin": [
+            "chuàng zuò",
+            "diāo sù",
+            "bó wù guǎn",
+            "chuán tǒng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Sculpture; to sculpt",
+          "correct": "雕塑",
+          "options": [
+            "传承",
+            "博物馆",
+            "雕塑",
+            "风格"
+          ],
+          "option_pinyin": [
+            "chuán chéng",
+            "bó wù guǎn",
+            "diāo sù",
+            "fēng gé"
+          ],
+          "question_chinese": "他不但擅长传统绘画，而且在___方面也很有才华。",
+          "question_pinyin": "他不但擅长传统绘画，而且在___方面也很有才华。",
+          "question_english": "He is not only skilled in traditional painting but also very talented in sculpture."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Sculpture; to sculpt'?",
+          "correct": "雕塑",
+          "options": [
+            "展览",
+            "民间",
+            "作品",
+            "雕塑"
+          ],
+          "option_pinyin": [
+            "zhǎn lǎn",
+            "mín jiān",
+            "zuò pǐn",
+            "diāo sù"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk5_l11_13",
+      "chinese": "并且",
+      "pinyin": "bìng qiě",
+      "english": "Moreover / And also / Furthermore",
+      "part_of_speech": "conjunction",
+      "example": "他擅长传统绘画，并且对雕塑创作也很感兴趣。",
+      "translation": "He excels at traditional painting and is also very interested in sculpture.",
+      "example_pinyin": "tā shàn cháng chuán tǒng huì huà bìng qiě duì diāo sù chuàng zuò yě hěn gǎn xìng qù",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 并且 mean?",
+          "correct": "Moreover / And also / Furthermore",
+          "options": [
+            "Sculpture; to sculpt",
+            "To create; creative work",
+            "Moreover / And also / Furthermore",
+            "Folk; among the people"
+          ],
+          "option_pinyin": [
+            "diāo sù",
+            "chuàng zuò",
+            "bìng qiě",
+            "mín jiān"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Moreover / And also / Furthermore",
+          "correct": "并且",
+          "options": [
+            "雕塑",
+            "欣赏",
+            "并且",
+            "传统"
+          ],
+          "option_pinyin": [
+            "diāo sù",
+            "xīn shǎng",
+            "bìng qiě",
+            "chuán tǒng"
+          ],
+          "question_chinese": "他擅长传统绘画，___对雕塑创作也很感兴趣。",
+          "question_pinyin": "他擅长传统绘画，___对雕塑创作也很感兴趣。",
+          "question_english": "He excels at traditional painting and is also very interested in sculpture."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Moreover / And also / Furthermore'?",
+          "correct": "并且",
+          "options": [
+            "雕塑",
+            "创作",
+            "擅长",
+            "并且"
+          ],
+          "option_pinyin": [
+            "diāo sù",
+            "chuàng zuò",
+            "shàn cháng",
+            "bìng qiě"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk5_l11_p01",
@@ -177,9 +915,9 @@
     },
     {
       "id": "hsk5_l11_p09",
-      "chinese": "博物馆展览",
-      "pinyin": "bó wù guǎn zhǎn lǎn",
-      "english": "Museum exhibition",
+      "chinese": "传承文化",
+      "pinyin": "chuán chéng wén huà",
+      "english": "Inheriting Culture",
       "part_of_speech": "phrase"
     }
   ],
@@ -233,72 +971,77 @@
   "grammar_points": [
     {
       "number": 1,
-      "title": "值得 — Worth doing",
-      "explanation": "值得 means 'to be worth' doing something. It is placed before a verb or verb phrase to indicate that an action deserves the effort. Structure: 值得 + verb (+ object). It can also be negated as 不值得. 这本书值得读 - This book is worth reading.",
+      "title": "并且 — Moreover; and also; furthermore",
+      "explanation": "并且 is a conjunction meaning \"moreover\", \"and also\", or \"furthermore\". It connects two clauses or elements to add information, showing that both points are true simultaneously. Unlike 但是 (contrast) or 因为 (cause), 并且 is purely additive.\n\nStructures:\n• Subject + clause 1 + 并且 + clause 2\n• Clause 1 + 并且 + clause 2 (different or same subjects)\n\n• 他擅长传统绘画，并且在雕塑创作方面也有很高的造诣。\n  (He excels at traditional painting and is also highly accomplished in sculpture.)\n• 民间文化遗产需要传承，并且要让更多年轻人了解和欣赏。\n  (Folk cultural heritage needs to be passed down, and moreover, more young people need to appreciate it.)\n\nNotes:\n• 并且 is more formal than 也 and slightly more emphatic than 而且\n• The second clause introduced by 并且 often carries additional weight or importance\n• Both clauses share a common direction — they reinforce, not contradict, each other",
       "examples": [
         {
-          "chinese": "这座博物馆值得参观，里面有很多珍贵的文化遗产。",
-          "pinyin": "Zhè zuò bó wù guǎn zhí de cān guān, lǐ miàn yǒu hěn duō zhēn guì de wén huà yí chǎn.",
-          "english": "This museum is worth visiting; it contains many precious cultural heritage items."
+          "chinese": "他擅长传统绘画，并且在雕塑创作方面也有很高的造诣。",
+          "pinyin": "tā shàn cháng chuán tǒng huì huà bìng qiě zài diāo sù chuàng zuò fāng miàn yě yǒu hěn gāo de zào yì",
+          "english": "He excels at traditional painting and is also highly accomplished in sculpture."
         },
         {
-          "chinese": "他的作品风格独特，值得我们深入研究。",
-          "pinyin": "Tā de zuò pǐn fēng gé dú tè, zhí de wǒ men shēn rù yán jiū.",
-          "english": "His work has a unique style and is worth studying in depth."
+          "chinese": "博物馆的展览内容丰富，并且吸引了许多热爱文化遗产的观众。",
+          "pinyin": "bó wù guǎn de zhǎn lǎn nèi róng fēng fù bìng qiě xī yǐn le xǔ duō rè ài wén huà yí chǎn de guān zhòng",
+          "english": "The museum's exhibition is rich in content and has also attracted many audiences who love cultural heritage."
+        },
+        {
+          "chinese": "这位艺术家的作品风格独特，并且受到了广大观众的欣赏。",
+          "pinyin": "zhè wèi yì shù jiā de zuò pǐn fēng gé dú tè bìng qiě shòu dào le guǎng dà guān zhòng de xīn shǎng",
+          "english": "This artist's works have a unique style and have also been appreciated by a wide audience."
         }
       ],
       "exercises": [
         {
-          "question": "这次展览非常精彩，_____ 去看看。",
+          "question": "这次博物馆展览内容精彩，___吸引了很多民间文化爱好者。",
           "type": "multiple_choice",
-          "correct": "值得",
+          "correct": "并且",
           "options": [
-            "值得",
-            "通过",
-            "不但",
-            "传统"
+            "并且",
+            "但是",
+            "虽然",
+            "因为"
           ],
           "option_pinyin": [
-            "zhí de",
-            "tōng guò",
-            "bú dàn",
-            "chuán tǒng"
+            "bìng qiě",
+            "dàn shì",
+            "suī rán",
+            "yīn wèi"
           ],
           "word_hints": {
+            "博物馆": "bó wù guǎn",
             "展览": "zhǎn lǎn"
           }
         },
         {
-          "question": "Choose the sentence that uses 值得 correctly.",
+          "question": "Which sentence correctly uses 并且?",
           "type": "multiple_choice",
-          "correct": "这位艺术家的作品值得欣赏。",
+          "correct": "他的作品风格独特，并且每一件都受到了观众的高度欣赏。",
           "options": [
-            "这位艺术家的作品值得欣赏。",
-            "值得欣赏这位艺术家的作品。",
-            "这位艺术家值得的作品欣赏。",
-            "欣赏这位值得艺术家的作品。"
+            "他的作品风格独特，并且每一件都受到了观众的高度欣赏。",
+            "并且他的作品风格独特，每一件都受到了观众高度欣赏。",
+            "他的作品风格独特并且，每一件都高度欣赏观众了。",
+            "观众高度欣赏并且，他的作品风格独特每一件。"
           ],
           "option_pinyin": [
-            "Zhè wèi yì shù jiā de zuò pǐn zhí de xīn shǎng.",
-            "Zhí de xīn shǎng zhè wèi yì shù jiā de zuò pǐn.",
-            "Zhè wèi yì shù jiā zhí de de zuò pǐn xīn shǎng.",
-            "Xīn shǎng zhè wèi zhí de yì shù jiā de zuò pǐn."
+            "tā de zuò pǐn fēng gé dú tè bìng qiě měi yī jiàn dōu shòu dào le guān zhòng de gāo dù xīn shǎng",
+            "",
+            "",
+            ""
           ],
           "word_hints": {
-            "艺术家": "yì shù jiā",
             "作品": "zuò pǐn",
             "欣赏": "xīn shǎng"
           }
         },
         {
-          "question": "What does 值得 mean?",
+          "question": "What does 并且 express?",
           "type": "multiple_choice",
-          "correct": "Worth doing",
+          "correct": "Moreover; and also — adds a second fact or quality to the first (additive, not contrasting)",
           "options": [
-            "Worth doing",
-            "Not allowed to do",
-            "Forced to do",
-            "Finished doing"
+            "Moreover; and also — adds a second fact or quality to the first (additive, not contrasting)",
+            "Although; even though — introduces a concession",
+            "Because; therefore — introduces a cause and result",
+            "No matter how — introduces a condition that cannot change the result"
           ],
           "option_pinyin": [
             "",
@@ -307,269 +1050,279 @@
             ""
           ],
           "word_hints": {}
-        },
-        {
-          "question": "这件雕塑虽然简单，但 _____ 细细品味。",
-          "type": "multiple_choice",
-          "correct": "值得",
-          "options": [
-            "值得",
-            "创作",
-            "表演",
-            "通过"
-          ],
-          "option_pinyin": [
-            "zhí de",
-            "chuàng zuò",
-            "biǎo yǎn",
-            "tōng guò"
-          ],
-          "word_hints": {
-            "雕塑": "diāo sù"
-          }
-        },
-        {
-          "question": "Which sentence uses 值得 correctly?",
-          "type": "multiple_choice",
-          "correct": "这部电影值得看，故事很感人。",
-          "options": [
-            "这部电影值得看，故事很感人。",
-            "这部电影看值得，故事很感人。",
-            "值得这部电影看，故事很感人。",
-            "这部值得电影看，故事很感人。"
-          ],
-          "option_pinyin": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "word_hints": {}
-        }
-      ]
-    },
-    {
-      "number": 2,
-      "title": "不但…而且… — Not only… but also…",
-      "explanation": "不但…而且… links two clauses to show that the second quality or action adds to the first rather than contrasting it. It emphasises accumulation or progression. Structure: Subject + 不但 + clause 1 + 而且 + clause 2. Both clauses usually share the same subject. 她不但会唱歌，而且会跳舞 - She can not only sing but also dance.",
-      "examples": [
-        {
-          "chinese": "这幅画不但色彩鲜艳，而且构图非常有创意。",
-          "pinyin": "Zhè fú huà bú dàn sè cǎi xiān yàn, ér qiě gòu tú fēi cháng yǒu chuàng yì.",
-          "english": "This painting is not only vivid in colour but also very creative in composition."
-        },
-        {
-          "chinese": "参观博物馆不但能增长知识，而且能欣赏到珍贵的文化遗产。",
-          "pinyin": "Cān guān bó wù guǎn bú dàn néng zēng zhǎng zhī shi, ér qiě néng xīn shǎng dào zhēn guì de wén huà yí chǎn.",
-          "english": "Visiting a museum not only broadens knowledge but also allows you to appreciate precious cultural heritage."
         }
       ],
-      "exercises": [
+      "mini_exercises": [
         {
-          "question": "她 _____ 喜欢民间艺术，_____ 自己也开始学习创作。",
           "type": "multiple_choice",
-          "correct": "不但…而且…",
+          "question": "并且 means...",
+          "correct": "Moreover; and also — adds a second point that reinforces the first (additive relationship)",
           "options": [
-            "不但…而且…",
-            "虽然…但是…",
-            "因为…所以…",
-            "如果…就…"
+            "Moreover; and also — adds a second point that reinforces the first (additive relationship)",
+            "However; but — introduces a contrast to the first point",
+            "Because — introduces the reason for the first point",
+            "No matter — introduces a condition regardless of the result"
           ],
           "option_pinyin": [
-            "bú dàn…ér qiě…",
-            "suī rán…dàn shì…",
-            "yīn wèi…suǒ yǐ…",
-            "rú guǒ…jiù…"
-          ],
-          "word_hints": {
-            "民间艺术": "mín jiān yì shù",
-            "创作": "chuàng zuò"
-          }
-        },
-        {
-          "question": "Choose the correct sentence using 不但…而且…",
-          "type": "multiple_choice",
-          "correct": "这位舞蹈家不但表演精彩，而且非常谦虚。",
-          "options": [
-            "这位舞蹈家不但表演精彩，而且非常谦虚。",
-            "这位舞蹈家不但表演精彩，但是非常谦虚。",
-            "而且这位舞蹈家表演精彩，不但非常谦虚。",
-            "这位舞蹈家表演精彩不但，非常谦虚而且。"
-          ],
-          "option_pinyin": [
-            "Zhè wèi wǔ dǎo jiā bú dàn biǎo yǎn jīng cǎi, ér qiě fēi cháng qiān xū.",
-            "Zhè wèi wǔ dǎo jiā bú dàn biǎo yǎn jīng cǎi, dàn shì fēi cháng qiān xū.",
-            "Ér qiě zhè wèi wǔ dǎo jiā biǎo yǎn jīng cǎi, bú dàn fēi cháng qiān xū.",
-            "Zhè wèi wǔ dǎo jiā biǎo yǎn jīng cǎi bú dàn, fēi cháng qiān xū ér qiě."
-          ],
-          "word_hints": {
-            "表演": "biǎo yǎn"
-          }
-        },
-        {
-          "question": "What does 不但…而且… express?",
-          "type": "multiple_choice",
-          "correct": "Not only… but also… (adding more qualities)",
-          "options": [
-            "Not only… but also… (adding more qualities)",
-            "Although… even so…",
-            "Because… therefore…",
-            "If… then…"
-          ],
-          "option_pinyin": [
-            "",
+            "bìng qiě",
             "",
             "",
             ""
-          ],
-          "word_hints": {}
+          ]
         },
         {
-          "question": "这个展览不但吸引了本地观众，_____ 还吸引了很多外国游客。",
-          "type": "multiple_choice",
-          "correct": "而且",
+          "type": "fill_blank",
+          "question": "Fill in: The museum's exhibition is wonderful and has also attracted many visitors.",
+          "correct": "并且",
           "options": [
-            "而且",
+            "并且",
             "但是",
             "虽然",
             "所以"
           ],
           "option_pinyin": [
-            "ér qiě",
+            "bìng qiě",
             "dàn shì",
             "suī rán",
             "suǒ yǐ"
           ],
+          "question_chinese": "博物馆的展览内容精彩，___吸引了很多热爱文化遗产的观众。",
+          "question_pinyin": "博物馆的展览内容精彩，___吸引了很多热爱文化遗产的观众。",
+          "question_english": "The museum's exhibition is wonderful and has also attracted many visitors who love cultural heritage."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 并且?",
+          "correct": "她擅长创作传统风格的作品，并且对文化遗产的传承也很有热情。",
+          "options": [
+            "她擅长创作传统风格的作品，并且对文化遗产的传承也很有热情。",
+            "并且她擅长，创作传统风格的作品文化遗产传承热情。",
+            "文化遗产传承并且，她擅长创作传统风格作品热情。",
+            "她创作传统风格并且，作品文化遗产传承擅长热情。"
+          ],
+          "option_pinyin": [
+            "tā shàn cháng chuàng zuò chuán tǒng fēng gé de zuò pǐn bìng qiě duì wén huà yí chǎn de chuán chéng yě hěn yǒu rè qíng",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "再…也… — No matter how… still…",
+      "explanation": "再…也… expresses that even under an extreme degree or condition, the result in the main clause remains unchanged. 再 introduces the degree (how adj/adv something is), and 也 introduces the result that holds regardless.\n\nStructures:\n• 再 + adjective + 也 + verb phrase\n• 再 + adverb + verb + 也 + verb phrase\n• 再 + adjective + 的 + noun + 也 + verb phrase\n\n• 再有才华的艺术家，也需要长期创作才能形成独特的风格。\n  (No matter how talented an artist is, they still need long-term creative work to develop their unique style.)\n• 这件雕塑再精美，也需要认真传承才能流传后世。\n  (No matter how exquisite this sculpture is, it still needs to be carefully passed on.)\n\nNotes:\n• 再 here is not the adverb \"again\" — it means \"no matter how\"\n• The 也 clause often contains a negative verb (不, 没) or an emphasis on inevitability\n• This pattern is stronger and more emphatic than 无论…也…",
+      "examples": [
+        {
+          "chinese": "再有才华的艺术家，也需要长期创作才能形成独特的风格。",
+          "pinyin": "zài yǒu cái huá de yì shù jiā yě xū yào cháng qī chuàng zuò cái néng xíng chéng dú tè de fēng gé",
+          "english": "No matter how talented an artist is, they still need long-term creative work to develop their unique style."
+        },
+        {
+          "chinese": "这件雕塑再精美，也需要认真传承才能流传后世。",
+          "pinyin": "zhè jiàn diāo sù zài jīng měi yě xū yào rèn zhēn chuán chéng cái néng liú chuán hòu shì",
+          "english": "No matter how exquisite this sculpture is, it still needs to be carefully passed on to future generations."
+        },
+        {
+          "chinese": "博物馆的展览再精彩，也只是暂时的，文化遗产的传承才是根本。",
+          "pinyin": "bó wù guǎn de zhǎn lǎn zài jīng cǎi yě zhǐ shì zàn shí de wén huà yí chǎn de chuán chéng cái shì gēn běn",
+          "english": "No matter how wonderful the museum's exhibition is, it's only temporary; the inheritance of cultural heritage is what matters most."
+        }
+      ],
+      "exercises": [
+        {
+          "question": "民间艺术___古老，___需要我们认真传承下去。",
+          "type": "multiple_choice",
+          "correct": "再…也…",
+          "options": [
+            "再…也…",
+            "虽然…但是…",
+            "因为…所以…",
+            "不但…而且…"
+          ],
+          "option_pinyin": [
+            "zài … yě …",
+            "suī rán … dàn shì …",
+            "yīn wèi … suǒ yǐ …",
+            "bú dàn … ér qiě …"
+          ],
           "word_hints": {
-            "展览": "zhǎn lǎn"
+            "民间": "mín jiān",
+            "传承": "chuán chéng"
           }
         },
         {
-          "question": "Which word correctly pairs with 不但 in the pattern 不但…_____…?",
+          "question": "Which sentence correctly uses 再…也…?",
           "type": "multiple_choice",
-          "correct": "而且",
+          "correct": "这次展览再精彩，也只有一周，要好好欣赏每一件作品。",
           "options": [
-            "而且",
-            "但是",
-            "可是",
-            "然而"
+            "这次展览再精彩，也只有一周，要好好欣赏每一件作品。",
+            "这次展览也精彩，再只有一周，要好好欣赏每一件作品。",
+            "再这次展览精彩，也只有一周好好欣赏每一件作品。",
+            "这次展览精彩再，好好欣赏也只有一周每一件作品。"
           ],
           "option_pinyin": [
-            "ér qiě",
-            "dàn shì",
-            "kě shì",
-            "rán ér"
+            "zhè cì zhǎn lǎn zài jīng cǎi yě zhǐ yǒu yī zhōu yào hǎo hǎo xīn shǎng měi yī jiàn zuò pǐn",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "展览": "zhǎn lǎn",
+            "欣赏": "xīn shǎng",
+            "作品": "zuò pǐn"
+          }
+        },
+        {
+          "question": "What does 再…也… express?",
+          "type": "multiple_choice",
+          "correct": "\"No matter how [adj/adv]… still…\" — the result holds even under an extreme degree or condition",
+          "options": [
+            "\"No matter how [adj/adv]… still…\" — the result holds even under an extreme degree or condition",
+            "\"Both… and…\" — two positive qualities exist together",
+            "\"Although… still…\" — acknowledges a concession, then states the result",
+            "\"Because… therefore…\" — introduces a cause and its effect"
+          ],
+          "option_pinyin": [
+            "",
+            "",
+            "",
+            ""
           ],
           "word_hints": {}
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "再…也… means...",
+          "correct": "\"No matter how [adj/adv]… still [result]\" — emphasises that the result holds even under extreme conditions",
+          "options": [
+            "\"No matter how [adj/adv]… still [result]\" — emphasises that the result holds even under extreme conditions",
+            "\"Not only… but also…\" — accumulates two positive qualities",
+            "\"Although… still…\" — concedes a fact and states a contrasting result",
+            "\"If… then…\" — introduces a conditional relationship"
+          ],
+          "option_pinyin": [
+            "zài … yě …",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: No matter how unique this work is, it still needs to be carefully preserved.",
+          "correct": "再",
+          "options": [
+            "再",
+            "很",
+            "更",
+            "非常"
+          ],
+          "option_pinyin": [
+            "zài",
+            "hěn",
+            "gèng",
+            "fēi cháng"
+          ],
+          "question_chinese": "这件作品___独特，也需要认真传承，让更多人欣赏到。",
+          "question_pinyin": "这件作品___独特，也需要认真传承，让更多人欣赏到。",
+          "question_english": "No matter how unique this work is, it still needs to be carefully preserved so more people can appreciate it."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 再…也…?",
+          "correct": "再有名的艺术家，也需要不断创作才能保持自己独特的风格。",
+          "options": [
+            "再有名的艺术家，也需要不断创作才能保持自己独特的风格。",
+            "有名的艺术家再，也需要不断创作才能保持独特风格。",
+            "艺术家再有名，需要不断创作也才能保持风格独特。",
+            "也有名的艺术家，再需要不断创作才能保持独特风格。"
+          ],
+          "option_pinyin": [
+            "zài yǒu míng de yì shù jiā yě xū yào bù duàn chuàng zuò cái néng bǎo chí zì jǐ dú tè de fēng gé",
+            "",
+            "",
+            ""
+          ]
         }
       ]
     },
     {
       "number": 3,
-      "title": "通过 — Through; by means of",
-      "explanation": "通过 means 'through', 'by means of', or 'via'. It introduces the method, channel, or process by which something is achieved. Structure: 通过 + noun/verb phrase + (subject) + result. It can appear at the start of the sentence or after the subject. 通过努力学习，他考上了大学 - Through hard study, he got into university.",
+      "title": "对于 — Regarding; as for; with regard to",
+      "explanation": "对于 is a preposition meaning \"regarding\", \"as for\", \"with regard to\", or \"in relation to\". It introduces the topic or object that the main clause discusses or evaluates.\n\nStructures:\n• 对于 + topic noun/phrase + (subject) + predicate\n• Subject + 对于 + topic + predicate\n\n• 对于民间文化遗产的传承，我们每个人都有责任。\n  (As for the inheritance of folk cultural heritage, each of us has a responsibility.)\n• 对于这次博物馆展览，观众的反响非常热烈。\n  (Regarding this museum exhibition, the audience's response was very enthusiastic.)\n\nNotes:\n• 对于 is more formal than 对 and specifically introduces a topic for discussion\n• 对于 can appear at the start of the sentence (most common) or after the subject\n• Do not confuse with 对 (toward/to) — 对于 always introduces a topic, not a direction of action",
       "examples": [
         {
-          "chinese": "通过这次展览，我对中国传统艺术有了全新的认识。",
-          "pinyin": "Tōng guò zhè cì zhǎn lǎn, wǒ duì Zhōng guó chuán tǒng yì shù yǒu le quán xīn de rèn shi.",
-          "english": "Through this exhibition, I gained a completely new understanding of traditional Chinese art."
+          "chinese": "对于民间文化遗产的传承，我们每个人都有责任。",
+          "pinyin": "duì yú mín jiān wén huà yí chǎn de chuán chéng wǒ men měi gè rén dōu yǒu zé rèn",
+          "english": "Regarding the inheritance of folk cultural heritage, each of us has a responsibility."
         },
         {
-          "chinese": "他通过长期创作，逐渐形成了自己独特的艺术风格。",
-          "pinyin": "Tā tōng guò cháng qī chuàng zuò, zhú jiàn xíng chéng le zì jǐ dú tè de yì shù fēng gé.",
-          "english": "Through sustained creative work, he gradually developed his own unique artistic style."
+          "chinese": "对于雕塑创作，他有着独特的风格和深厚的才华。",
+          "pinyin": "duì yú diāo sù chuàng zuò tā yǒu zhe dú tè de fēng gé hé shēn hòu de cái huá",
+          "english": "With regard to sculpture, he has a unique style and deep talent."
+        },
+        {
+          "chinese": "对于这次博物馆展览，观众的反响非常热烈。",
+          "pinyin": "duì yú zhè cì bó wù guǎn zhǎn lǎn guān zhòng de fǎn xiǎng fēi cháng rè liè",
+          "english": "As for this museum exhibition, the audience's response was very enthusiastic."
         }
       ],
       "exercises": [
         {
-          "question": "_____ 参观博物馆，我们了解了很多文化遗产的故事。",
+          "question": "___民间文化遗产的传承，年轻一代应该积极参与。",
           "type": "multiple_choice",
-          "correct": "通过",
+          "correct": "对于",
           "options": [
-            "通过",
-            "值得",
-            "展览",
-            "创作"
+            "对于",
+            "虽然",
+            "并且",
+            "随着"
           ],
           "option_pinyin": [
-            "tōng guò",
-            "zhí de",
-            "zhǎn lǎn",
-            "chuàng zuò"
-          ],
-          "word_hints": {
-            "博物馆": "bó wù guǎn",
-            "文化遗产": "wén huà yí chǎn"
-          }
-        },
-        {
-          "question": "Choose the correct use of 通过.",
-          "type": "multiple_choice",
-          "correct": "通过这次合作，两国的文化交流更加密切了。",
-          "options": [
-            "通过这次合作，两国的文化交流更加密切了。",
-            "这次合作通过，两国的文化交流更加密切了。",
-            "两国通过，文化交流这次合作更加密切了。",
-            "文化交流通过密切，这次合作两国了。"
-          ],
-          "option_pinyin": [
-            "Tōng guò zhè cì hé zuò, liǎng guó de wén huà jiāo liú gèng jiā mì qiē le.",
-            "Zhè cì hé zuò tōng guò, liǎng guó de wén huà jiāo liú gèng jiā mì qiē le.",
-            "Liǎng guó tōng guò, wén huà jiāo liú zhè cì hé zuò gèng jiā mì qiē le.",
-            "Wén huà jiāo liú tōng guò mì qiē, zhè cì hé zuò liǎng guó le."
-          ],
-          "word_hints": {
-            "文化": "wén huà"
-          }
-        },
-        {
-          "question": "What does 通过 mean in 通过努力, he succeeded?",
-          "type": "multiple_choice",
-          "correct": "By means of; through",
-          "options": [
-            "By means of; through",
-            "In spite of",
-            "Because of",
-            "Without"
-          ],
-          "option_pinyin": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "word_hints": {}
-        },
-        {
-          "question": "_____ 学习民间舞蹈，她深深爱上了中国传统文化。",
-          "type": "multiple_choice",
-          "correct": "通过",
-          "options": [
-            "通过",
-            "不但",
-            "值得",
-            "风格"
-          ],
-          "option_pinyin": [
-            "tōng guò",
-            "bú dàn",
-            "zhí de",
-            "fēng gé"
+            "duì yú",
+            "suī rán",
+            "bìng qiě",
+            "suí zhe"
           ],
           "word_hints": {
             "民间": "mín jiān",
-            "传统文化": "chuán tǒng wén huà"
+            "传承": "chuán chéng"
           }
         },
         {
-          "question": "Which sentence uses 通过 correctly?",
+          "question": "Which sentence correctly uses 对于?",
           "type": "multiple_choice",
-          "correct": "他通过大量阅读，提高了语言能力。",
+          "correct": "对于民间艺术的欣赏，每个人都有不同的感受。",
           "options": [
-            "他通过大量阅读，提高了语言能力。",
-            "通过他大量阅读，提高了语言能力。",
-            "他大量阅读通过，提高了语言能力。",
-            "他通过提高了语言能力，大量阅读。"
+            "对于民间艺术的欣赏，每个人都有不同的感受。",
+            "民间艺术对于的欣赏，每个人都有不同的感受。",
+            "每个人对于，民间艺术欣赏都有不同的感受。",
+            "欣赏对于民间，艺术每个人都有不同的感受。"
+          ],
+          "option_pinyin": [
+            "duì yú mín jiān yì shù de xīn shǎng měi gè rén dōu yǒu bù tóng de gǎn shòu",
+            "",
+            "",
+            ""
+          ],
+          "word_hints": {
+            "民间": "mín jiān",
+            "欣赏": "xīn shǎng"
+          }
+        },
+        {
+          "question": "What does 对于 express?",
+          "type": "multiple_choice",
+          "correct": "Regarding; as for — introduces the topic or object under discussion",
+          "options": [
+            "Regarding; as for — introduces the topic or object under discussion",
+            "By means of — introduces the method by which something is achieved",
+            "Although; even though — introduces a concession",
+            "Because of — introduces a cause or reason"
           ],
           "option_pinyin": [
             "",
@@ -578,6 +1331,62 @@
             ""
           ],
           "word_hints": {}
+        }
+      ],
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "对于 means...",
+          "correct": "Regarding; as for — introduces the topic or person that the statement is about",
+          "options": [
+            "Regarding; as for — introduces the topic or person that the statement is about",
+            "By means of; through — introduces the method used",
+            "Although — introduces a concession before the main point",
+            "And also; moreover — adds a second point to the first"
+          ],
+          "option_pinyin": [
+            "duì yú",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Regarding the artworks at this exhibition, the audience all expressed great appreciation.",
+          "correct": "对于",
+          "options": [
+            "对于",
+            "通过",
+            "因为",
+            "虽然"
+          ],
+          "option_pinyin": [
+            "duì yú",
+            "tōng guò",
+            "yīn wèi",
+            "suī rán"
+          ],
+          "question_chinese": "___这次展览的作品，观众们都表示非常欣赏。",
+          "question_pinyin": "___这次展览的作品，观众们都表示非常欣赏。",
+          "question_english": "Regarding the artworks at this exhibition, the audience all expressed great appreciation."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which sentence correctly uses 对于?",
+          "correct": "对于传统文化的传承，博物馆和民间社团都在积极推广。",
+          "options": [
+            "对于传统文化的传承，博物馆和民间社团都在积极推广。",
+            "传统文化对于，博物馆传承民间社团都在积极推广。",
+            "博物馆对于，传统文化的传承民间社团推广积极。",
+            "传承对于传统文化的，博物馆和民间社团积极都在推广。"
+          ],
+          "option_pinyin": [
+            "duì yú chuán tǒng wén huà de chuán chéng bó wù guǎn hé mín jiān shè tuán dōu zài jī jí tuī guǎng",
+            "",
+            "",
+            ""
+          ]
         }
       ]
     }
