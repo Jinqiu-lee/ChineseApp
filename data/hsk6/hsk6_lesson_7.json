@@ -20,16 +20,16 @@
           "question": "What does 闹钟 mean?",
           "correct": "alarm clock",
           "options": [
-            "pattern, regularity; regular",
             "alarm clock",
             "hormone",
-            "biological clock, circadian rhythm"
+            "experiment; to experiment",
+            "mechanism, system"
           ],
           "option_pinyin": [
-            "guī lǜ",
             "nào zhōng",
             "jī sù",
-            "shēng wù zhōng"
+            "shí yàn",
+            "jī zhì"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: alarm clock",
           "correct": "闹钟",
           "options": [
-            "过渡",
-            "充足",
-            "规律",
-            "闹钟"
+            "机制",
+            "生物钟",
+            "闹钟",
+            "规律"
           ],
           "option_pinyin": [
-            "guò dù",
-            "chōng zú",
-            "guī lǜ",
-            "nào zhōng"
+            "jī zhì",
+            "shēng wù zhōng",
+            "nào zhōng",
+            "guī lǜ"
           ],
-          "question_chinese": "他每天用___叫醒自己。",
-          "question_pinyin": "他每天用___叫醒自己。",
-          "question_english": "He uses an alarm clock to wake himself up every day."
+          "question_chinese": "他每天早上都依赖___起床，从来没有自然醒过。",
+          "question_pinyin": "他每天早上都依赖___起床，从来没有自然醒过。",
+          "question_english": "He relies on an alarm clock to wake up every morning and has never woken naturally."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'alarm clock'?",
           "correct": "闹钟",
           "options": [
-            "生物钟",
+            "疲劳",
+            "睡眠",
             "闹钟",
-            "充足",
-            "自然"
+            "危害"
           ],
           "option_pinyin": [
-            "shēng wù zhōng",
+            "pí láo",
+            "shuì mián",
             "nào zhōng",
-            "chōng zú",
-            "zì rán"
+            "wēi hài"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 危害 mean?",
           "correct": "harm, danger; to harm",
           "options": [
+            "experiment; to experiment",
+            "harm, danger; to harm",
             "hormone",
-            "sufficient, adequate",
-            "suddenly, abruptly",
-            "harm, danger; to harm"
+            "State / Condition / Status"
           ],
           "option_pinyin": [
+            "shí yàn",
+            "wēi hài",
             "jī sù",
-            "chōng zú",
-            "tū rán",
-            "wēi hài"
+            "zhuàng tài"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: harm, danger; to harm",
           "correct": "危害",
           "options": [
-            "必要",
-            "自然",
+            "机制",
+            "状态",
             "危害",
-            "睡眠"
+            "必要"
           ],
           "option_pinyin": [
-            "bì yào",
-            "zì rán",
+            "jī zhì",
+            "zhuàng tài",
             "wēi hài",
-            "shuì mián"
+            "bì yào"
           ],
-          "question_chinese": "睡眠不足对身体有___。",
-          "question_pinyin": "睡眠不足对身体有___。",
-          "question_english": "Insufficient sleep is harmful to the body."
+          "question_chinese": "长期缺乏睡眠对身体健康的___不可忽视。",
+          "question_pinyin": "长期缺乏睡眠对身体健康的___不可忽视。",
+          "question_english": "The harm of chronic sleep deprivation to physical health cannot be ignored."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'harm, danger; to harm'?",
           "correct": "危害",
           "options": [
-            "规律",
+            "机制",
+            "影响",
             "危害",
-            "过渡",
-            "机制"
+            "突然"
           ],
           "option_pinyin": [
-            "guī lǜ",
+            "jī zhì",
+            "yǐng xiǎng",
             "wēi hài",
-            "guò dù",
-            "jī zhì"
+            "tū rán"
           ]
         }
       ],
@@ -152,16 +152,16 @@
           "question": "What does 生物钟 mean?",
           "correct": "biological clock, circadian rhythm",
           "options": [
-            "sleep",
-            "to transition; transition (period)",
+            "suddenly, abruptly",
             "biological clock, circadian rhythm",
-            "pattern, regularity; regular"
+            "tired, fatigued; fatigue",
+            "harm, danger; to harm"
           ],
           "option_pinyin": [
-            "shuì mián",
-            "guò dù",
+            "tū rán",
             "shēng wù zhōng",
-            "guī lǜ"
+            "pí láo",
+            "wēi hài"
           ]
         },
         {
@@ -169,20 +169,20 @@
           "question": "Fill in: biological clock, circadian rhythm",
           "correct": "生物钟",
           "options": [
-            "生物钟",
-            "闹钟",
-            "机制",
-            "实验"
+            "突然",
+            "规律",
+            "必要",
+            "生物钟"
           ],
           "option_pinyin": [
-            "shēng wù zhōng",
-            "nào zhōng",
-            "jī zhì",
-            "shí yàn"
+            "tū rán",
+            "guī lǜ",
+            "bì yào",
+            "shēng wù zhōng"
           ],
-          "question_chinese": "长期熬夜会打乱你的___。",
-          "question_pinyin": "长期熬夜会打乱你的___。",
-          "question_english": "Staying up late regularly will disrupt your biological clock."
+          "question_chinese": "频繁倒时差会打乱一个人的___，使身体长时间处于不适状态。",
+          "question_pinyin": "频繁倒时差会打乱一个人的___，使身体长时间处于不适状态。",
+          "question_english": "Frequent jet lag can disrupt a person's biological clock, leaving the body in discomfort for a long time."
         },
         {
           "type": "multiple_choice",
@@ -190,15 +190,15 @@
           "correct": "生物钟",
           "options": [
             "机制",
-            "睡眠",
-            "生物钟",
-            "危害"
+            "闹钟",
+            "影响",
+            "生物钟"
           ],
           "option_pinyin": [
             "jī zhì",
-            "shuì mián",
-            "shēng wù zhōng",
-            "wēi hài"
+            "nào zhōng",
+            "yǐng xiǎng",
+            "shēng wù zhōng"
           ]
         }
       ],
@@ -218,16 +218,16 @@
           "question": "What does 睡眠 mean?",
           "correct": "sleep",
           "options": [
-            "natural; naturally",
             "sleep",
-            "to affect; influence",
-            "mechanism, system"
+            "sufficient, adequate",
+            "experiment; to experiment",
+            "pattern, regularity; regular"
           ],
           "option_pinyin": [
-            "zì rán",
             "shuì mián",
-            "yǐng xiǎng",
-            "jī zhì"
+            "chōng zú",
+            "shí yàn",
+            "guī lǜ"
           ]
         },
         {
@@ -235,36 +235,36 @@
           "question": "Fill in: sleep",
           "correct": "睡眠",
           "options": [
+            "危害",
+            "睡眠",
             "生物钟",
-            "激素",
-            "影响",
-            "睡眠"
+            "闹钟"
           ],
           "option_pinyin": [
+            "wēi hài",
+            "shuì mián",
             "shēng wù zhōng",
-            "jī sù",
-            "yǐng xiǎng",
-            "shuì mián"
+            "nào zhōng"
           ],
-          "question_chinese": "充足的___对健康很重要。",
-          "question_pinyin": "充足的___对健康很重要。",
-          "question_english": "Adequate sleep is very important for health."
+          "question_chinese": "良好的___对恢复体力和保持健康起着至关重要的作用。",
+          "question_pinyin": "良好的___对恢复体力和保持健康起着至关重要的作用。",
+          "question_english": "Good sleep is essential for restoring energy and maintaining health."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'sleep'?",
           "correct": "睡眠",
           "options": [
-            "实验",
+            "生物钟",
             "睡眠",
-            "过渡",
-            "自然"
+            "实验",
+            "规律"
           ],
           "option_pinyin": [
-            "shí yàn",
+            "shēng wù zhōng",
             "shuì mián",
-            "guò dù",
-            "zì rán"
+            "shí yàn",
+            "guī lǜ"
           ]
         }
       ],
@@ -285,15 +285,15 @@
           "correct": "pattern, regularity; regular",
           "options": [
             "alarm clock",
-            "suddenly, abruptly",
             "pattern, regularity; regular",
-            "necessary, essential"
+            "sufficient, adequate",
+            "suddenly, abruptly"
           ],
           "option_pinyin": [
             "nào zhōng",
-            "tū rán",
             "guī lǜ",
-            "bì yào"
+            "chōng zú",
+            "tū rán"
           ]
         },
         {
@@ -301,36 +301,36 @@
           "question": "Fill in: pattern, regularity; regular",
           "correct": "规律",
           "options": [
-            "影响",
-            "自然",
-            "生物钟",
-            "规律"
+            "规律",
+            "充足",
+            "突然",
+            "生物钟"
           ],
           "option_pinyin": [
-            "yǐng xiǎng",
-            "zì rán",
-            "shēng wù zhōng",
-            "guī lǜ"
+            "guī lǜ",
+            "chōng zú",
+            "tū rán",
+            "shēng wù zhōng"
           ],
-          "question_chinese": "保持___的作息时间有助于健康。",
-          "question_pinyin": "保持___的作息时间有助于健康。",
-          "question_english": "Maintaining a regular schedule is good for health."
+          "question_chinese": "保持___的睡眠时间有助于提高睡眠质量。",
+          "question_pinyin": "保持___的睡眠时间有助于提高睡眠质量。",
+          "question_english": "Maintaining regular sleep hours helps improve the quality of sleep."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'pattern, regularity; regular'?",
           "correct": "规律",
           "options": [
-            "充足",
+            "状态",
+            "生物钟",
             "规律",
-            "疲劳",
-            "突然"
+            "疲劳"
           ],
           "option_pinyin": [
-            "chōng zú",
+            "zhuàng tài",
+            "shēng wù zhōng",
             "guī lǜ",
-            "pí láo",
-            "tū rán"
+            "pí láo"
           ]
         }
       ],
@@ -350,16 +350,16 @@
           "question": "What does 突然 mean?",
           "correct": "suddenly, abruptly",
           "options": [
-            "biological clock, circadian rhythm",
-            "suddenly, abruptly",
-            "experiment; to experiment",
-            "tired, fatigued; fatigue"
+            "tired, fatigued; fatigue",
+            "to transition; transition (period)",
+            "alarm clock",
+            "suddenly, abruptly"
           ],
           "option_pinyin": [
-            "shēng wù zhōng",
-            "tū rán",
-            "shí yàn",
-            "pí láo"
+            "pí láo",
+            "guò dù",
+            "nào zhōng",
+            "tū rán"
           ]
         },
         {
@@ -367,36 +367,36 @@
           "question": "Fill in: suddenly, abruptly",
           "correct": "突然",
           "options": [
+            "闹钟",
+            "睡眠",
             "突然",
-            "规律",
-            "激素",
-            "生物钟"
+            "必要"
           ],
           "option_pinyin": [
+            "nào zhōng",
+            "shuì mián",
             "tū rán",
-            "guī lǜ",
-            "jī sù",
-            "shēng wù zhōng"
+            "bì yào"
           ],
-          "question_chinese": "他___从睡梦中醒来。",
-          "question_pinyin": "他___从睡梦中醒来。",
-          "question_english": "He suddenly woke up from his sleep."
+          "question_chinese": "在深度睡眠中被闹钟___吵醒，会让人感到头晕、疲惫。",
+          "question_pinyin": "在深度睡眠中被闹钟___吵醒，会让人感到头晕、疲惫。",
+          "question_english": "Being suddenly woken by an alarm clock during deep sleep makes a person feel dizzy and exhausted."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'suddenly, abruptly'?",
           "correct": "突然",
           "options": [
-            "自然",
-            "机制",
-            "必要",
-            "突然"
+            "突然",
+            "生物钟",
+            "闹钟",
+            "疲劳"
           ],
           "option_pinyin": [
-            "zì rán",
-            "jī zhì",
-            "bì yào",
-            "tū rán"
+            "tū rán",
+            "shēng wù zhōng",
+            "nào zhōng",
+            "pí láo"
           ]
         }
       ],
@@ -416,16 +416,16 @@
           "question": "What does 影响 mean?",
           "correct": "to affect; influence",
           "options": [
-            "suddenly, abruptly",
-            "to transition; transition (period)",
+            "State / Condition / Status",
             "to affect; influence",
-            "experiment; to experiment"
+            "biological clock, circadian rhythm",
+            "pattern, regularity; regular"
           ],
           "option_pinyin": [
-            "tū rán",
-            "guò dù",
+            "zhuàng tài",
             "yǐng xiǎng",
-            "shí yàn"
+            "shēng wù zhōng",
+            "guī lǜ"
           ]
         },
         {
@@ -433,36 +433,36 @@
           "question": "Fill in: to affect; influence",
           "correct": "影响",
           "options": [
-            "过渡",
+            "必要",
             "影响",
-            "激素",
-            "充足"
+            "生物钟",
+            "突然"
           ],
           "option_pinyin": [
-            "guò dù",
+            "bì yào",
             "yǐng xiǎng",
-            "jī sù",
-            "chōng zú"
+            "shēng wù zhōng",
+            "tū rán"
           ],
-          "question_chinese": "手机使用过多会___睡眠。",
-          "question_pinyin": "手机使用过多会___睡眠。",
-          "question_english": "Excessive phone use will affect sleep."
+          "question_chinese": "睡眠不足会严重___白天的工作效率和情绪状态。",
+          "question_pinyin": "睡眠不足会严重___白天的工作效率和情绪状态。",
+          "question_english": "Insufficient sleep can seriously affect daytime work efficiency and emotional state."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'to affect; influence'?",
           "correct": "影响",
           "options": [
+            "状态",
             "影响",
-            "过渡",
-            "睡眠",
-            "生物钟"
+            "生物钟",
+            "危害"
           ],
           "option_pinyin": [
+            "zhuàng tài",
             "yǐng xiǎng",
-            "guò dù",
-            "shuì mián",
-            "shēng wù zhōng"
+            "shēng wù zhōng",
+            "wēi hài"
           ]
         }
       ],
@@ -470,69 +470,69 @@
     },
     {
       "id": "hsk6_l7_08",
-      "chinese": "自然",
-      "pinyin": "zì rán",
-      "english": "natural; naturally",
-      "part_of_speech": "adjective/adverb",
-      "example": "如果每天在固定时间睡觉，身体会自然地在同一时间醒来。",
-      "translation": "If you go to sleep at a fixed time every day, your body will naturally wake up at the same time.",
+      "chinese": "状态",
+      "pinyin": "zhuàng tài",
+      "english": "State / Condition / Status",
+      "part_of_speech": "noun",
+      "example": "保持良好的睡眠状态，身体才能以自然的规律正常运转。",
+      "translation": "Maintaining a good sleep state allows the body to function normally according to its natural rhythm.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 自然 mean?",
-          "correct": "natural; naturally",
+          "question": "What does 状态 mean?",
+          "correct": "State / Condition / Status",
           "options": [
-            "to transition; transition (period)",
-            "natural; naturally",
-            "hormone",
-            "suddenly, abruptly"
+            "State / Condition / Status",
+            "to affect; influence",
+            "suddenly, abruptly",
+            "sufficient, adequate"
           ],
           "option_pinyin": [
-            "guò dù",
-            "zì rán",
-            "jī sù",
-            "tū rán"
+            "zhuàng tài",
+            "yǐng xiǎng",
+            "tū rán",
+            "chōng zú"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: natural; naturally",
-          "correct": "自然",
+          "question": "Fill in: State / Condition / Status",
+          "correct": "状态",
           "options": [
-            "自然",
-            "激素",
-            "过渡",
-            "睡眠"
+            "影响",
+            "状态",
+            "睡眠",
+            "实验"
           ],
           "option_pinyin": [
-            "zì rán",
-            "jī sù",
-            "guò dù",
-            "shuì mián"
+            "yǐng xiǎng",
+            "zhuàng tài",
+            "shuì mián",
+            "shí yàn"
           ],
-          "question_chinese": "他们之间的对话很___。",
-          "question_pinyin": "他们之间的对话很___。",
-          "question_english": "The conversation between them is very natural."
+          "question_chinese": "保持良好的睡眠___，身体才能以自然的规律正常运转。",
+          "question_pinyin": "保持良好的睡眠___，身体才能以自然的规律正常运转。",
+          "question_english": "Maintaining a good sleep state allows the body to function normally according to its natural rhythm."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'natural; naturally'?",
-          "correct": "自然",
+          "question": "Which word means 'State / Condition / Status'?",
+          "correct": "状态",
           "options": [
-            "闹钟",
-            "突然",
-            "自然",
-            "激素"
+            "过渡",
+            "实验",
+            "状态",
+            "突然"
           ],
           "option_pinyin": [
-            "nào zhōng",
-            "tū rán",
-            "zì rán",
-            "jī sù"
+            "guò dù",
+            "shí yàn",
+            "zhuàng tài",
+            "tū rán"
           ]
         }
       ],
-      "example_pinyin": "rú guǒ měi tiān zài gù dìng shí jiān shuì jiào shēn tǐ huì zì rán dì zài tóng yī shí jiān xǐng lái"
+      "example_pinyin": "bǎo chí liáng hǎo de shuì mián zhuàng tài shēn tǐ cái néng yǐ zì rán de guī lǜ zhèng cháng yùn zhuàn"
     },
     {
       "id": "hsk6_l7_09",
@@ -548,15 +548,15 @@
           "question": "What does 机制 mean?",
           "correct": "mechanism, system",
           "options": [
-            "to transition; transition (period)",
             "mechanism, system",
             "to affect; influence",
+            "necessary, essential",
             "tired, fatigued; fatigue"
           ],
           "option_pinyin": [
-            "guò dù",
             "jī zhì",
             "yǐng xiǎng",
+            "bì yào",
             "pí láo"
           ]
         },
@@ -565,36 +565,36 @@
           "question": "Fill in: mechanism, system",
           "correct": "机制",
           "options": [
-            "疲劳",
-            "机制",
-            "必要",
-            "闹钟"
+            "闹钟",
+            "激素",
+            "影响",
+            "机制"
           ],
           "option_pinyin": [
-            "pí láo",
-            "jī zhì",
-            "bì yào",
-            "nào zhōng"
+            "nào zhōng",
+            "jī sù",
+            "yǐng xiǎng",
+            "jī zhì"
           ],
-          "question_chinese": "大脑有控制睡眠的___。",
-          "question_pinyin": "大脑有控制睡眠的___。",
-          "question_english": "The brain has a mechanism that controls sleep."
+          "question_chinese": "人体的自我修复___在深度睡眠阶段最为活跃。",
+          "question_pinyin": "人体的自我修复___在深度睡眠阶段最为活跃。",
+          "question_english": "The body's self-repair mechanism is most active during the deep sleep stage."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'mechanism, system'?",
           "correct": "机制",
           "options": [
-            "睡眠",
-            "必要",
-            "机制",
-            "生物钟"
+            "充足",
+            "生物钟",
+            "规律",
+            "机制"
           ],
           "option_pinyin": [
-            "shuì mián",
-            "bì yào",
-            "jī zhì",
-            "shēng wù zhōng"
+            "chōng zú",
+            "shēng wù zhōng",
+            "guī lǜ",
+            "jī zhì"
           ]
         }
       ],
@@ -614,16 +614,16 @@
           "question": "What does 激素 mean?",
           "correct": "hormone",
           "options": [
-            "experiment; to experiment",
-            "biological clock, circadian rhythm",
-            "to affect; influence",
-            "hormone"
+            "hormone",
+            "suddenly, abruptly",
+            "State / Condition / Status",
+            "sleep"
           ],
           "option_pinyin": [
-            "shí yàn",
-            "shēng wù zhōng",
-            "yǐng xiǎng",
-            "jī sù"
+            "jī sù",
+            "tū rán",
+            "zhuàng tài",
+            "shuì mián"
           ]
         },
         {
@@ -631,36 +631,36 @@
           "question": "Fill in: hormone",
           "correct": "激素",
           "options": [
-            "实验",
-            "睡眠",
-            "规律",
-            "激素"
+            "必要",
+            "激素",
+            "影响",
+            "危害"
           ],
           "option_pinyin": [
-            "shí yàn",
-            "shuì mián",
-            "guī lǜ",
-            "jī sù"
+            "bì yào",
+            "jī sù",
+            "yǐng xiǎng",
+            "wēi hài"
           ],
-          "question_chinese": "___的变化会影响睡眠质量。",
-          "question_pinyin": "___的变化会影响睡眠质量。",
-          "question_english": "Changes in hormones can affect sleep quality."
+          "question_chinese": "睡眠期间，身体会分泌多种对健康有益的___。",
+          "question_pinyin": "睡眠期间，身体会分泌多种对健康有益的___。",
+          "question_english": "During sleep, the body secretes various hormones that are beneficial to health."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'hormone'?",
           "correct": "激素",
           "options": [
-            "过渡",
-            "必要",
-            "机制",
-            "激素"
+            "突然",
+            "激素",
+            "充足",
+            "状态"
           ],
           "option_pinyin": [
-            "guò dù",
-            "bì yào",
-            "jī zhì",
-            "jī sù"
+            "tū rán",
+            "jī sù",
+            "chōng zú",
+            "zhuàng tài"
           ]
         }
       ],
@@ -680,16 +680,16 @@
           "question": "What does 疲劳 mean?",
           "correct": "tired, fatigued; fatigue",
           "options": [
-            "to affect; influence",
-            "to transition; transition (period)",
-            "necessary, essential",
-            "tired, fatigued; fatigue"
+            "sufficient, adequate",
+            "experiment; to experiment",
+            "tired, fatigued; fatigue",
+            "to affect; influence"
           ],
           "option_pinyin": [
-            "yǐng xiǎng",
-            "guò dù",
-            "bì yào",
-            "pí láo"
+            "chōng zú",
+            "shí yàn",
+            "pí láo",
+            "yǐng xiǎng"
           ]
         },
         {
@@ -697,20 +697,20 @@
           "question": "Fill in: tired, fatigued; fatigue",
           "correct": "疲劳",
           "options": [
-            "疲劳",
             "机制",
-            "激素",
-            "规律"
+            "生物钟",
+            "状态",
+            "疲劳"
           ],
           "option_pinyin": [
-            "pí láo",
             "jī zhì",
-            "jī sù",
-            "guī lǜ"
+            "shēng wù zhōng",
+            "zhuàng tài",
+            "pí láo"
           ],
-          "question_chinese": "长时间工作容易导致___。",
-          "question_pinyin": "长时间工作容易导致___。",
-          "question_english": "Working for long hours easily leads to fatigue."
+          "question_chinese": "长期睡眠不规律会导致慢性___，严重影响生活质量。",
+          "question_pinyin": "长期睡眠不规律会导致慢性___，严重影响生活质量。",
+          "question_english": "Long-term irregular sleep can lead to chronic fatigue, seriously affecting quality of life."
         },
         {
           "type": "multiple_choice",
@@ -718,15 +718,15 @@
           "correct": "疲劳",
           "options": [
             "疲劳",
-            "生物钟",
-            "过渡",
-            "激素"
+            "必要",
+            "规律",
+            "机制"
           ],
           "option_pinyin": [
             "pí láo",
-            "shēng wù zhōng",
-            "guò dù",
-            "jī sù"
+            "bì yào",
+            "guī lǜ",
+            "jī zhì"
           ]
         }
       ],
@@ -746,16 +746,16 @@
           "question": "What does 充足 mean?",
           "correct": "sufficient, adequate",
           "options": [
-            "to affect; influence",
-            "necessary, essential",
-            "pattern, regularity; regular",
-            "sufficient, adequate"
+            "harm, danger; to harm",
+            "State / Condition / Status",
+            "sufficient, adequate",
+            "hormone"
           ],
           "option_pinyin": [
-            "yǐng xiǎng",
-            "bì yào",
-            "guī lǜ",
-            "chōng zú"
+            "wēi hài",
+            "zhuàng tài",
+            "chōng zú",
+            "jī sù"
           ]
         },
         {
@@ -763,36 +763,36 @@
           "question": "Fill in: sufficient, adequate",
           "correct": "充足",
           "options": [
-            "必要",
+            "危害",
             "充足",
-            "疲劳",
+            "机制",
             "激素"
           ],
           "option_pinyin": [
-            "bì yào",
+            "wēi hài",
             "chōng zú",
-            "pí láo",
+            "jī zhì",
             "jī sù"
           ],
-          "question_chinese": "___的睡眠可以提高工作效率。",
-          "question_pinyin": "___的睡眠可以提高工作效率。",
-          "question_english": "Adequate sleep can improve work efficiency."
+          "question_chinese": "每晚保证___的睡眠是维持健康的基本条件之一。",
+          "question_pinyin": "每晚保证___的睡眠是维持健康的基本条件之一。",
+          "question_english": "Ensuring adequate sleep every night is one of the basic conditions for maintaining good health."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'sufficient, adequate'?",
           "correct": "充足",
           "options": [
-            "充足",
-            "危害",
-            "影响",
-            "生物钟"
+            "生物钟",
+            "实验",
+            "状态",
+            "充足"
           ],
           "option_pinyin": [
-            "chōng zú",
-            "wēi hài",
-            "yǐng xiǎng",
-            "shēng wù zhōng"
+            "shēng wù zhōng",
+            "shí yàn",
+            "zhuàng tài",
+            "chōng zú"
           ]
         }
       ],
@@ -812,16 +812,16 @@
           "question": "What does 必要 mean?",
           "correct": "necessary, essential",
           "options": [
-            "biological clock, circadian rhythm",
             "sufficient, adequate",
-            "sleep",
-            "necessary, essential"
+            "experiment; to experiment",
+            "necessary, essential",
+            "alarm clock"
           ],
           "option_pinyin": [
-            "shēng wù zhōng",
             "chōng zú",
-            "shuì mián",
-            "bì yào"
+            "shí yàn",
+            "bì yào",
+            "nào zhōng"
           ]
         },
         {
@@ -829,36 +829,36 @@
           "question": "Fill in: necessary, essential",
           "correct": "必要",
           "options": [
-            "必要",
+            "状态",
             "突然",
             "实验",
-            "闹钟"
+            "必要"
           ],
           "option_pinyin": [
-            "bì yào",
+            "zhuàng tài",
             "tū rán",
             "shí yàn",
-            "nào zhōng"
+            "bì yào"
           ],
-          "question_chinese": "小睡有时候是___的。",
-          "question_pinyin": "小睡有时候是___的。",
-          "question_english": "Napping is sometimes necessary."
+          "question_chinese": "有人认为闹钟是现代生活中不可缺少的___工具，但也有人持不同看法。",
+          "question_pinyin": "有人认为闹钟是现代生活中不可缺少的___工具，但也有人持不同看法。",
+          "question_english": "Some people consider alarm clocks a necessary tool in modern life, but others hold a different view."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'necessary, essential'?",
           "correct": "必要",
           "options": [
+            "必要",
             "影响",
-            "实验",
-            "机制",
-            "必要"
+            "闹钟",
+            "充足"
           ],
           "option_pinyin": [
+            "bì yào",
             "yǐng xiǎng",
-            "shí yàn",
-            "jī zhì",
-            "bì yào"
+            "nào zhōng",
+            "chōng zú"
           ]
         }
       ],
@@ -879,15 +879,15 @@
           "correct": "experiment; to experiment",
           "options": [
             "alarm clock",
-            "natural; naturally",
-            "to affect; influence",
-            "experiment; to experiment"
+            "experiment; to experiment",
+            "harm, danger; to harm",
+            "necessary, essential"
           ],
           "option_pinyin": [
             "nào zhōng",
-            "zì rán",
-            "yǐng xiǎng",
-            "shí yàn"
+            "shí yàn",
+            "wēi hài",
+            "bì yào"
           ]
         },
         {
@@ -895,36 +895,36 @@
           "question": "Fill in: experiment; to experiment",
           "correct": "实验",
           "options": [
-            "闹钟",
-            "自然",
+            "激素",
             "实验",
-            "生物钟"
+            "影响",
+            "闹钟"
           ],
           "option_pinyin": [
-            "nào zhōng",
-            "zì rán",
+            "jī sù",
             "shí yàn",
-            "shēng wù zhōng"
+            "yǐng xiǎng",
+            "nào zhōng"
           ],
-          "question_chinese": "科学家做了很多睡眠___。",
-          "question_pinyin": "科学家做了很多睡眠___。",
-          "question_english": "Scientists have conducted many sleep experiments."
+          "question_chinese": "研究人员通过___证明，被闹钟强行唤醒会干扰睡眠周期。",
+          "question_pinyin": "研究人员通过___证明，被闹钟强行唤醒会干扰睡眠周期。",
+          "question_english": "Researchers proved through experiments that being forcibly awakened by an alarm clock disrupts sleep cycles."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'experiment; to experiment'?",
           "correct": "实验",
           "options": [
-            "危害",
-            "实验",
-            "闹钟",
-            "自然"
+            "状态",
+            "生物钟",
+            "激素",
+            "实验"
           ],
           "option_pinyin": [
-            "wēi hài",
-            "shí yàn",
-            "nào zhōng",
-            "zì rán"
+            "zhuàng tài",
+            "shēng wù zhōng",
+            "jī sù",
+            "shí yàn"
           ]
         }
       ],
@@ -944,16 +944,16 @@
           "question": "What does 过渡 mean?",
           "correct": "to transition; transition (period)",
           "options": [
-            "alarm clock",
-            "necessary, essential",
             "biological clock, circadian rhythm",
-            "to transition; transition (period)"
+            "experiment; to experiment",
+            "to transition; transition (period)",
+            "harm, danger; to harm"
           ],
           "option_pinyin": [
-            "nào zhōng",
-            "bì yào",
             "shēng wù zhōng",
-            "guò dù"
+            "shí yàn",
+            "guò dù",
+            "wēi hài"
           ]
         },
         {
@@ -961,36 +961,36 @@
           "question": "Fill in: to transition; transition (period)",
           "correct": "过渡",
           "options": [
-            "自然",
+            "突然",
+            "生物钟",
             "规律",
-            "过渡",
-            "睡眠"
+            "过渡"
           ],
           "option_pinyin": [
-            "zì rán",
+            "tū rán",
+            "shēng wù zhōng",
             "guī lǜ",
-            "guò dù",
-            "shuì mián"
+            "guò dù"
           ],
-          "question_chinese": "换时区需要___期来调整。",
-          "question_pinyin": "换时区需要___期来调整。",
-          "question_english": "Crossing time zones requires a transition period to adjust."
+          "question_chinese": "从睡眠到清醒需要一个自然的___阶段，而闹钟往往会打断这一过程。",
+          "question_pinyin": "从睡眠到清醒需要一个自然的___阶段，而闹钟往往会打断这一过程。",
+          "question_english": "There needs to be a natural transition phase from sleep to wakefulness, and alarm clocks often interrupt this process."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'to transition; transition (period)'?",
           "correct": "过渡",
           "options": [
-            "激素",
             "过渡",
-            "突然",
-            "影响"
+            "生物钟",
+            "激素",
+            "闹钟"
           ],
           "option_pinyin": [
-            "jī sù",
             "guò dù",
-            "tū rán",
-            "yǐng xiǎng"
+            "shēng wù zhōng",
+            "jī sù",
+            "nào zhōng"
           ]
         }
       ],
