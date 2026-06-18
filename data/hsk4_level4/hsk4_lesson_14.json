@@ -20,15 +20,15 @@
           "question": "What does 社会 mean?",
           "correct": "Society",
           "options": [
-            "Law; legislation",
-            "Science; scientific",
-            "Education; to educate",
+            "Citizen",
+            "Career / Occupation / Profession",
+            "Excellent / Outstanding / Exceptional",
             "Society"
           ],
           "option_pinyin": [
-            "fǎ lǜ",
-            "kē xué",
-            "jiào yù",
+            "gōng mín",
+            "zhí yè",
+            "yōu xiù",
             "shè huì"
           ]
         },
@@ -37,36 +37,36 @@
           "question": "Fill in: Society",
           "correct": "社会",
           "options": [
-            "国际",
-            "科学",
-            "知识",
-            "社会"
+            "民族",
+            "社会",
+            "艺术",
+            "丰富"
           ],
           "option_pinyin": [
-            "guó jì",
-            "kē xué",
-            "zhī shi",
-            "shè huì"
+            "mín zú",
+            "shè huì",
+            "yì shù",
+            "fēng fù"
           ],
-          "question_chinese": "我们生活在___中。",
-          "question_pinyin": "我们生活在___中。",
-          "question_english": "We live in society."
+          "question_chinese": "在任何___中，法律的知识是每个公民必须了解的。",
+          "question_pinyin": "在任何___中，法律的知识是每个公民必须了解的。",
+          "question_english": "In any society, legal knowledge is something every citizen must understand."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Society'?",
           "correct": "社会",
           "options": [
-            "科学",
             "社会",
-            "发展",
-            "教育"
+            "职业",
+            "民族",
+            "责任"
           ],
           "option_pinyin": [
-            "kē xué",
             "shè huì",
-            "fā zhǎn",
-            "jiào yù"
+            "zhí yè",
+            "mín zú",
+            "zé rèn"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 责任 mean?",
           "correct": "Responsibility; duty",
           "options": [
+            "Excellent / Outstanding / Exceptional",
             "Language",
-            "To attach importance to; to value",
-            "Responsibility; duty",
-            "Knowledge"
+            "International",
+            "Responsibility; duty"
           ],
           "option_pinyin": [
+            "yōu xiù",
             "yǔ yán",
-            "zhòng shì",
-            "zé rèn",
-            "zhī shi"
+            "guó jì",
+            "zé rèn"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: Responsibility; duty",
           "correct": "责任",
           "options": [
-            "发展",
-            "责任",
-            "艺术",
-            "科学"
+            "法律",
+            "民族",
+            "公民",
+            "责任"
           ],
           "option_pinyin": [
-            "fā zhǎn",
-            "zé rèn",
-            "yì shù",
-            "kē xué"
+            "fǎ lǜ",
+            "mín zú",
+            "gōng mín",
+            "zé rèn"
           ],
-          "question_chinese": "他有___帮助别人。",
-          "question_pinyin": "他有___帮助别人。",
-          "question_english": "He has a responsibility to help others."
+          "question_chinese": "无论遇到什么困难，每个人都有社会___去帮助他人。",
+          "question_pinyin": "无论遇到什么困难，每个人都有社会___去帮助他人。",
+          "question_english": "No matter what difficulties one faces, everyone has a social responsibility to help others."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Responsibility; duty'?",
           "correct": "责任",
           "options": [
-            "重视",
-            "发展",
-            "国际",
-            "责任"
+            "民族",
+            "知识",
+            "责任",
+            "丰富"
           ],
           "option_pinyin": [
-            "zhòng shì",
-            "fā zhǎn",
-            "guó jì",
-            "zé rèn"
+            "mín zú",
+            "zhī shi",
+            "zé rèn",
+            "fēng fù"
           ]
         }
       ],
@@ -152,16 +152,16 @@
           "question": "What does 法律 mean?",
           "correct": "Law; legislation",
           "options": [
-            "Law; legislation",
-            "Language",
             "Education; to educate",
-            "Knowledge"
+            "Knowledge",
+            "Excellent / Outstanding / Exceptional",
+            "Law; legislation"
           ],
           "option_pinyin": [
-            "fǎ lǜ",
-            "yǔ yán",
             "jiào yù",
-            "zhī shi"
+            "zhī shi",
+            "yōu xiù",
+            "fǎ lǜ"
           ]
         },
         {
@@ -169,36 +169,36 @@
           "question": "Fill in: Law; legislation",
           "correct": "法律",
           "options": [
-            "法律",
-            "责任",
+            "教育",
             "国际",
-            "知识"
+            "责任",
+            "法律"
           ],
           "option_pinyin": [
-            "fǎ lǜ",
-            "zé rèn",
+            "jiào yù",
             "guó jì",
-            "zhī shi"
+            "zé rèn",
+            "fǎ lǜ"
           ],
-          "question_chinese": "___面前人人平等。",
-          "question_pinyin": "___面前人人平等。",
-          "question_english": "Everyone is equal before the law."
+          "question_chinese": "任何社会都需要___知识来维护秩序。",
+          "question_pinyin": "任何社会都需要___知识来维护秩序。",
+          "question_english": "Any society needs legal knowledge to maintain order."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Law; legislation'?",
           "correct": "法律",
           "options": [
-            "语言",
             "法律",
-            "重视",
-            "发展"
+            "教育",
+            "语言",
+            "科学"
           ],
           "option_pinyin": [
-            "yǔ yán",
             "fǎ lǜ",
-            "zhòng shì",
-            "fā zhǎn"
+            "jiào yù",
+            "yǔ yán",
+            "kē xué"
           ]
         }
       ],
@@ -218,16 +218,16 @@
           "question": "What does 教育 mean?",
           "correct": "Education; to educate",
           "options": [
-            "Law; legislation",
+            "Responsibility; duty",
             "Education; to educate",
-            "International",
-            "Knowledge"
+            "Rich / Abundant / To enrich",
+            "International"
           ],
           "option_pinyin": [
-            "fǎ lǜ",
+            "zé rèn",
             "jiào yù",
-            "guó jì",
-            "zhī shi"
+            "fēng fù",
+            "guó jì"
           ]
         },
         {
@@ -236,35 +236,35 @@
           "correct": "教育",
           "options": [
             "艺术",
-            "科学",
             "国际",
-            "教育"
+            "教育",
+            "职业"
           ],
           "option_pinyin": [
             "yì shù",
-            "kē xué",
             "guó jì",
-            "jiào yù"
+            "jiào yù",
+            "zhí yè"
           ],
-          "question_chinese": "___非常重要。",
-          "question_pinyin": "___非常重要。",
-          "question_english": "Education is very important."
+          "question_chinese": "由优秀的教师负责___，学生才能获得丰富的知识。",
+          "question_pinyin": "由优秀的教师负责___，学生才能获得丰富的知识。",
+          "question_english": "It is because excellent teachers take responsibility for education that students can gain rich knowledge."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Education; to educate'?",
           "correct": "教育",
           "options": [
-            "语言",
             "教育",
-            "重视",
-            "知识"
+            "知识",
+            "丰富",
+            "语言"
           ],
           "option_pinyin": [
-            "yǔ yán",
             "jiào yù",
-            "zhòng shì",
-            "zhī shi"
+            "zhī shi",
+            "fēng fù",
+            "yǔ yán"
           ]
         }
       ],
@@ -284,16 +284,16 @@
           "question": "What does 科学 mean?",
           "correct": "Science; scientific",
           "options": [
-            "To develop; development",
-            "Responsibility; duty",
-            "Science; scientific",
-            "Knowledge"
+            "Citizen",
+            "Education; to educate",
+            "Knowledge",
+            "Science; scientific"
           ],
           "option_pinyin": [
-            "fā zhǎn",
-            "zé rèn",
-            "kē xué",
-            "zhī shi"
+            "gōng mín",
+            "jiào yù",
+            "zhī shi",
+            "kē xué"
           ]
         },
         {
@@ -302,35 +302,35 @@
           "correct": "科学",
           "options": [
             "科学",
-            "重视",
-            "知识",
-            "教育"
+            "职业",
+            "责任",
+            "语言"
           ],
           "option_pinyin": [
             "kē xué",
-            "zhòng shì",
-            "zhī shi",
-            "jiào yù"
+            "zhí yè",
+            "zé rèn",
+            "yǔ yán"
           ],
-          "question_chinese": "___让生活更美好。",
-          "question_pinyin": "___让生活更美好。",
-          "question_english": "Science makes life better."
+          "question_chinese": "___和艺术都是社会发展的重要组成部分。",
+          "question_pinyin": "___和艺术都是社会发展的重要组成部分。",
+          "question_english": "Both science and art are important components of social development."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Science; scientific'?",
           "correct": "科学",
           "options": [
-            "教育",
+            "知识",
             "科学",
-            "法律",
-            "发展"
+            "艺术",
+            "责任"
           ],
           "option_pinyin": [
-            "jiào yù",
+            "zhī shi",
             "kē xué",
-            "fǎ lǜ",
-            "fā zhǎn"
+            "yì shù",
+            "zé rèn"
           ]
         }
       ],
@@ -350,16 +350,16 @@
           "question": "What does 知识 mean?",
           "correct": "Knowledge",
           "options": [
-            "Language",
-            "Art; the arts",
+            "Science; scientific",
             "Knowledge",
-            "To develop; development"
+            "Responsibility; duty",
+            "Society"
           ],
           "option_pinyin": [
-            "yǔ yán",
-            "yì shù",
+            "kē xué",
             "zhī shi",
-            "fā zhǎn"
+            "zé rèn",
+            "shè huì"
           ]
         },
         {
@@ -367,36 +367,36 @@
           "question": "Fill in: Knowledge",
           "correct": "知识",
           "options": [
-            "国际",
             "知识",
-            "法律",
-            "教育"
+            "承担",
+            "语言",
+            "优秀"
           ],
           "option_pinyin": [
-            "guó jì",
             "zhī shi",
-            "fǎ lǜ",
-            "jiào yù"
+            "chéng dān",
+            "yǔ yán",
+            "yōu xiù"
           ],
-          "question_chinese": "学习___很重要。",
-          "question_pinyin": "学习___很重要。",
-          "question_english": "Learning knowledge is very important."
+          "question_chinese": "任何人都有学习___的权利。",
+          "question_pinyin": "任何人都有学习___的权利。",
+          "question_english": "Anyone has the right to acquire knowledge."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Knowledge'?",
           "correct": "知识",
           "options": [
-            "知识",
-            "教育",
+            "科学",
             "语言",
-            "法律"
+            "知识",
+            "公民"
           ],
           "option_pinyin": [
-            "zhī shi",
-            "jiào yù",
+            "kē xué",
             "yǔ yán",
-            "fǎ lǜ"
+            "zhī shi",
+            "gōng mín"
           ]
         }
       ],
@@ -416,16 +416,16 @@
           "question": "What does 语言 mean?",
           "correct": "Language",
           "options": [
-            "Science; scientific",
-            "Language",
-            "International",
-            "Society"
+            "Rich / Abundant / To enrich",
+            "Citizen",
+            "Career / Occupation / Profession",
+            "Language"
           ],
           "option_pinyin": [
-            "kē xué",
-            "yǔ yán",
-            "guó jì",
-            "shè huì"
+            "fēng fù",
+            "gōng mín",
+            "zhí yè",
+            "yǔ yán"
           ]
         },
         {
@@ -433,36 +433,36 @@
           "question": "Fill in: Language",
           "correct": "语言",
           "options": [
-            "科学",
-            "民族",
+            "国际",
+            "知识",
             "语言",
-            "国际"
+            "法律"
           ],
           "option_pinyin": [
-            "kē xué",
-            "mín zú",
+            "guó jì",
+            "zhī shi",
             "yǔ yán",
-            "guó jì"
+            "fǎ lǜ"
           ],
-          "question_chinese": "汉语是一种美丽的___。",
-          "question_pinyin": "汉语是一种美丽的___。",
-          "question_english": "Chinese is a beautiful language."
+          "question_chinese": "___是文化传承的工具，任何语言都值得重视和保护。",
+          "question_pinyin": "___是文化传承的工具，任何语言都值得重视和保护。",
+          "question_english": "Language is a tool for cultural heritage; any language is worthy of valuing and protecting."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Language'?",
           "correct": "语言",
           "options": [
-            "科学",
-            "教育",
             "社会",
-            "语言"
+            "责任",
+            "语言",
+            "教育"
           ],
           "option_pinyin": [
-            "kē xué",
-            "jiào yù",
             "shè huì",
-            "yǔ yán"
+            "zé rèn",
+            "yǔ yán",
+            "jiào yù"
           ]
         }
       ],
@@ -482,15 +482,15 @@
           "question": "What does 艺术 mean?",
           "correct": "Art; the arts",
           "options": [
-            "Responsibility; duty",
-            "Art; the arts",
             "Language",
+            "Art; the arts",
+            "Excellent / Outstanding / Exceptional",
             "Ethnic group; nationality; nation"
           ],
           "option_pinyin": [
-            "zé rèn",
-            "yì shù",
             "yǔ yán",
+            "yì shù",
+            "yōu xiù",
             "mín zú"
           ]
         },
@@ -499,36 +499,36 @@
           "question": "Fill in: Art; the arts",
           "correct": "艺术",
           "options": [
-            "科学",
-            "重视",
+            "语言",
             "艺术",
-            "语言"
+            "知识",
+            "承担"
           ],
           "option_pinyin": [
-            "kē xué",
-            "zhòng shì",
+            "yǔ yán",
             "yì shù",
-            "yǔ yán"
+            "zhī shi",
+            "chéng dān"
           ],
-          "question_chinese": "她很喜欢___。",
-          "question_pinyin": "她很喜欢___。",
-          "question_english": "She likes art very much."
+          "question_chinese": "由各领域的专家共同发展科学和___，才能让社会进步。",
+          "question_pinyin": "由各领域的专家共同发展科学和___，才能让社会进步。",
+          "question_english": "It is by having experts from all fields jointly developing science and art that society can progress."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Art; the arts'?",
           "correct": "艺术",
           "options": [
-            "教育",
-            "语言",
             "艺术",
-            "国际"
+            "责任",
+            "承担",
+            "民族"
           ],
           "option_pinyin": [
-            "jiào yù",
-            "yǔ yán",
             "yì shù",
-            "guó jì"
+            "zé rèn",
+            "chéng dān",
+            "mín zú"
           ]
         }
       ],
@@ -548,15 +548,15 @@
           "question": "What does 民族 mean?",
           "correct": "Ethnic group; nationality; nation",
           "options": [
-            "Art; the arts",
-            "Law; legislation",
-            "To attach importance to; to value",
+            "Society",
+            "Excellent / Outstanding / Exceptional",
+            "International",
             "Ethnic group; nationality; nation"
           ],
           "option_pinyin": [
-            "yì shù",
-            "fǎ lǜ",
-            "zhòng shì",
+            "shè huì",
+            "yōu xiù",
+            "guó jì",
             "mín zú"
           ]
         },
@@ -565,36 +565,36 @@
           "question": "Fill in: Ethnic group; nationality; nation",
           "correct": "民族",
           "options": [
+            "职业",
             "民族",
-            "法律",
-            "重视",
-            "社会"
+            "社会",
+            "法律"
           ],
           "option_pinyin": [
+            "zhí yè",
             "mín zú",
-            "fǎ lǜ",
-            "zhòng shì",
-            "shè huì"
+            "shè huì",
+            "fǎ lǜ"
           ],
-          "question_chinese": "中国有五十六个___。",
-          "question_pinyin": "中国有五十六个___。",
-          "question_english": "China has 56 ethnic groups."
+          "question_chinese": "国际交流促进了不同___之间的相互了解和发展。",
+          "question_pinyin": "国际交流促进了不同___之间的相互了解和发展。",
+          "question_english": "International exchange promotes mutual understanding and development between different ethnic groups."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Ethnic group; nationality; nation'?",
           "correct": "民族",
           "options": [
-            "教育",
             "民族",
-            "责任",
-            "发展"
+            "国际",
+            "承担",
+            "艺术"
           ],
           "option_pinyin": [
-            "jiào yù",
             "mín zú",
-            "zé rèn",
-            "fā zhǎn"
+            "guó jì",
+            "chéng dān",
+            "yì shù"
           ]
         }
       ],
@@ -614,16 +614,16 @@
           "question": "What does 国际 mean?",
           "correct": "International",
           "options": [
-            "Law; legislation",
-            "Art; the arts",
-            "To develop; development",
-            "International"
+            "International",
+            "Language",
+            "Rich / Abundant / To enrich",
+            "Art; the arts"
           ],
           "option_pinyin": [
-            "fǎ lǜ",
-            "yì shù",
-            "fā zhǎn",
-            "guó jì"
+            "guó jì",
+            "yǔ yán",
+            "fēng fù",
+            "yì shù"
           ]
         },
         {
@@ -631,172 +631,370 @@
           "question": "Fill in: International",
           "correct": "国际",
           "options": [
-            "发展",
-            "艺术",
+            "责任",
+            "教育",
             "国际",
             "科学"
           ],
           "option_pinyin": [
-            "fā zhǎn",
-            "yì shù",
+            "zé rèn",
+            "jiào yù",
             "guó jì",
             "kē xué"
           ],
-          "question_chinese": "这是一个___会议。",
-          "question_pinyin": "这是一个___会议。",
-          "question_english": "This is an international conference."
+          "question_chinese": "___交流由各国代表来共同进行。",
+          "question_pinyin": "___交流由各国代表来共同进行。",
+          "question_english": "International exchanges are conducted jointly by representatives of various countries."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'International'?",
           "correct": "国际",
           "options": [
+            "责任",
             "国际",
-            "法律",
-            "知识",
-            "民族"
+            "教育",
+            "社会"
           ],
           "option_pinyin": [
+            "zé rèn",
             "guó jì",
-            "fǎ lǜ",
-            "zhī shi",
-            "mín zú"
+            "jiào yù",
+            "shè huì"
           ]
         }
       ],
       "example_pinyin": "guó jì jiāo liú yóu gè guó dài biǎo lái gòng tóng jìn xíng"
     },
     {
-      "id": "hsk4_l14_11",
-      "chinese": "发展",
-      "pinyin": "fā zhǎn",
-      "english": "To develop; development",
-      "part_of_speech": "verb/noun",
-      "example": "教育的发展由社会和政府共同负责。",
-      "translation": "Educational development is the shared responsibility of society and the government.",
+      "id": "hsk4_l14_12",
+      "chinese": "承担",
+      "pinyin": "chéng dān",
+      "english": "To bear / To take on / To shoulder (responsibility)",
+      "part_of_speech": "verb",
+      "example": "每个人都要承担自己的社会责任。",
+      "translation": "Everyone must shoulder their own social responsibilities.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 发展 mean?",
-          "correct": "To develop; development",
+          "question": "What does 承担 mean?",
+          "correct": "To bear / To take on / To shoulder (responsibility)",
           "options": [
-            "To develop; development",
-            "Law; legislation",
-            "Education; to educate",
-            "Ethnic group; nationality; nation"
+            "Excellent / Outstanding / Exceptional",
+            "Art; the arts",
+            "To bear / To take on / To shoulder (responsibility)",
+            "Science; scientific"
           ],
           "option_pinyin": [
-            "fā zhǎn",
-            "fǎ lǜ",
-            "jiào yù",
-            "mín zú"
+            "yōu xiù",
+            "yì shù",
+            "chéng dān",
+            "kē xué"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To develop; development",
-          "correct": "发展",
+          "question": "Fill in: To bear / To take on / To shoulder (responsibility)",
+          "correct": "承担",
           "options": [
-            "知识",
-            "发展",
+            "社会",
+            "承担",
+            "职业",
+            "知识"
+          ],
+          "option_pinyin": [
+            "shè huì",
+            "chéng dān",
+            "zhí yè",
+            "zhī shi"
+          ],
+          "question_chinese": "每个人都要___自己的社会责任。",
+          "question_pinyin": "每个人都要___自己的社会责任。",
+          "question_english": "Everyone must shoulder their own social responsibilities."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To bear / To take on / To shoulder (responsibility)'?",
+          "correct": "承担",
+          "options": [
+            "承担",
+            "教育",
+            "民族",
+            "语言"
+          ],
+          "option_pinyin": [
+            "chéng dān",
+            "jiào yù",
+            "mín zú",
+            "yǔ yán"
+          ]
+        }
+      ],
+      "example_pinyin": "měi gè rén dōu yào chéng dān zì jǐ de shè huì zé rèn"
+    },
+    {
+      "id": "hsk4_l14_13",
+      "chinese": "职业",
+      "pinyin": "zhí yè",
+      "english": "Career / Occupation / Profession",
+      "part_of_speech": "noun",
+      "example": "选择一个好的职业非常重要。",
+      "translation": "Choosing a good career is very important.",
+      "example_pinyin": "xuǎn zé yí gè hǎo de zhí yè fēi cháng zhòng yào",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 职业 mean?",
+          "correct": "Career / Occupation / Profession",
+          "options": [
+            "Career / Occupation / Profession",
+            "Science; scientific",
+            "Responsibility; duty",
+            "To bear / To take on / To shoulder (responsibility)"
+          ],
+          "option_pinyin": [
+            "zhí yè",
+            "kē xué",
+            "zé rèn",
+            "chéng dān"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Career / Occupation / Profession",
+          "correct": "职业",
+          "options": [
             "国际",
+            "教育",
+            "职业",
+            "知识"
+          ],
+          "option_pinyin": [
+            "guó jì",
+            "jiào yù",
+            "zhí yè",
+            "zhī shi"
+          ],
+          "question_chinese": "选择一个好的___非常重要。",
+          "question_pinyin": "选择一个好的___非常重要。",
+          "question_english": "Choosing a good career is very important."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Career / Occupation / Profession'?",
+          "correct": "职业",
+          "options": [
+            "法律",
+            "承担",
+            "职业",
+            "语言"
+          ],
+          "option_pinyin": [
+            "fǎ lǜ",
+            "chéng dān",
+            "zhí yè",
+            "yǔ yán"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l14_14",
+      "chinese": "公民",
+      "pinyin": "gōng mín",
+      "english": "Citizen",
+      "part_of_speech": "noun",
+      "example": "每个公民都应该遵守法律。",
+      "translation": "Every citizen should abide by the law.",
+      "example_pinyin": "měi gè gōng mín dōu yīng gāi zūn shǒu fǎ lǜ",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 公民 mean?",
+          "correct": "Citizen",
+          "options": [
+            "International",
+            "To bear / To take on / To shoulder (responsibility)",
+            "Art; the arts",
+            "Citizen"
+          ],
+          "option_pinyin": [
+            "guó jì",
+            "chéng dān",
+            "yì shù",
+            "gōng mín"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Citizen",
+          "correct": "公民",
+          "options": [
+            "公民",
+            "法律",
+            "丰富",
+            "科学"
+          ],
+          "option_pinyin": [
+            "gōng mín",
+            "fǎ lǜ",
+            "fēng fù",
+            "kē xué"
+          ],
+          "question_chinese": "每个___都应该遵守法律。",
+          "question_pinyin": "每个___都应该遵守法律。",
+          "question_english": "Every citizen should abide by the law."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Citizen'?",
+          "correct": "公民",
+          "options": [
+            "责任",
+            "优秀",
+            "语言",
+            "公民"
+          ],
+          "option_pinyin": [
+            "zé rèn",
+            "yōu xiù",
+            "yǔ yán",
+            "gōng mín"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l14_15",
+      "chinese": "优秀",
+      "pinyin": "yōu xiù",
+      "english": "Excellent / Outstanding / Exceptional",
+      "part_of_speech": "adjective",
+      "example": "她是一位非常优秀的教育工作者。",
+      "translation": "She is a very outstanding educator.",
+      "example_pinyin": "tā shì yī wèi fēi cháng yōu xiù de jiào yù gōng zuò zhě",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 优秀 mean?",
+          "correct": "Excellent / Outstanding / Exceptional",
+          "options": [
+            "Excellent / Outstanding / Exceptional",
+            "Society",
+            "Career / Occupation / Profession",
+            "Art; the arts"
+          ],
+          "option_pinyin": [
+            "yōu xiù",
+            "shè huì",
+            "zhí yè",
+            "yì shù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Excellent / Outstanding / Exceptional",
+          "correct": "优秀",
+          "options": [
+            "承担",
+            "职业",
+            "优秀",
+            "语言"
+          ],
+          "option_pinyin": [
+            "chéng dān",
+            "zhí yè",
+            "yōu xiù",
+            "yǔ yán"
+          ],
+          "question_chinese": "她是一位非常___的教育工作者。",
+          "question_pinyin": "她是一位非常___的教育工作者。",
+          "question_english": "She is a very outstanding educator."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Excellent / Outstanding / Exceptional'?",
+          "correct": "优秀",
+          "options": [
+            "语言",
+            "法律",
+            "公民",
+            "优秀"
+          ],
+          "option_pinyin": [
+            "yǔ yán",
+            "fǎ lǜ",
+            "gōng mín",
+            "yōu xiù"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l14_16",
+      "chinese": "丰富",
+      "pinyin": "fēng fù",
+      "english": "Rich / Abundant / To enrich",
+      "part_of_speech": "adjective/verb",
+      "example": "中国有着丰富的文化传统。",
+      "translation": "China has rich cultural traditions.",
+      "example_pinyin": "zhōng guó yǒu zhe fēng fù de wén huà chuán tǒng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 丰富 mean?",
+          "correct": "Rich / Abundant / To enrich",
+          "options": [
+            "Society",
+            "Citizen",
+            "Art; the arts",
+            "Rich / Abundant / To enrich"
+          ],
+          "option_pinyin": [
+            "shè huì",
+            "gōng mín",
+            "yì shù",
+            "fēng fù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Rich / Abundant / To enrich",
+          "correct": "丰富",
+          "options": [
+            "语言",
+            "国际",
+            "科学",
+            "丰富"
+          ],
+          "option_pinyin": [
+            "yǔ yán",
+            "guó jì",
+            "kē xué",
+            "fēng fù"
+          ],
+          "question_chinese": "中国有着___的文化传统。",
+          "question_pinyin": "中国有着___的文化传统。",
+          "question_english": "China has rich cultural traditions."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Rich / Abundant / To enrich'?",
+          "correct": "丰富",
+          "options": [
+            "丰富",
+            "国际",
+            "艺术",
             "民族"
           ],
           "option_pinyin": [
-            "zhī shi",
-            "fā zhǎn",
+            "fēng fù",
             "guó jì",
+            "yì shù",
             "mín zú"
-          ],
-          "question_chinese": "这个城市___得很快。",
-          "question_pinyin": "这个城市___得很快。",
-          "question_english": "This city is developing very quickly."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'To develop; development'?",
-          "correct": "发展",
-          "options": [
-            "民族",
-            "发展",
-            "科学",
-            "责任"
-          ],
-          "option_pinyin": [
-            "mín zú",
-            "fā zhǎn",
-            "kē xué",
-            "zé rèn"
           ]
         }
-      ],
-      "example_pinyin": "jiào yù de fā zhǎn yóu shè huì hé zhèng fǔ gòng tóng fù zé"
-    },
-    {
-      "id": "hsk4_l14_12",
-      "chinese": "重视",
-      "pinyin": "zhòng shì",
-      "english": "To attach importance to; to value",
-      "part_of_speech": "verb",
-      "example": "无论你走到哪里，都要记得重视自己的社会责任。",
-      "translation": "No matter where you go, always remember to value your social responsibilities.",
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "What does 重视 mean?",
-          "correct": "To attach importance to; to value",
-          "options": [
-            "Education; to educate",
-            "Responsibility; duty",
-            "Art; the arts",
-            "To attach importance to; to value"
-          ],
-          "option_pinyin": [
-            "jiào yù",
-            "zé rèn",
-            "yì shù",
-            "zhòng shì"
-          ]
-        },
-        {
-          "type": "fill_blank",
-          "question": "Fill in: To attach importance to; to value",
-          "correct": "重视",
-          "options": [
-            "艺术",
-            "重视",
-            "责任",
-            "法律"
-          ],
-          "option_pinyin": [
-            "yì shù",
-            "zhòng shì",
-            "zé rèn",
-            "fǎ lǜ"
-          ],
-          "question_chinese": "我们要___这个问题。",
-          "question_pinyin": "我们要___这个问题。",
-          "question_english": "We must take this issue seriously."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'To attach importance to; to value'?",
-          "correct": "重视",
-          "options": [
-            "法律",
-            "重视",
-            "教育",
-            "国际"
-          ],
-          "option_pinyin": [
-            "fǎ lǜ",
-            "zhòng shì",
-            "jiào yù",
-            "guó jì"
-          ]
-        }
-      ],
-      "example_pinyin": "wú lùn nǐ zǒu dào nǎ lǐ dōu yào jì de zhòng shì zì jǐ de shè huì zé rèn"
+      ]
     },
     {
       "id": "hsk4_l14_p01",
@@ -842,16 +1040,16 @@
     },
     {
       "id": "hsk4_l14_p07",
-      "chinese": "尊重法律",
-      "pinyin": "zūn zhòng fǎ lǜ",
-      "english": "Respect the law",
+      "chinese": "集体主义",
+      "pinyin": "jí tǐ zhǔ yì",
+      "english": "Collectivism",
       "part_of_speech": "phrase"
     },
     {
       "id": "hsk4_l14_p08",
-      "chinese": "传播知识",
-      "pinyin": "chuán bō zhī shi",
-      "english": "Spread knowledge",
+      "chinese": "个人主义",
+      "pinyin": "gè rén zhǔ yì",
+      "english": "Individualism",
       "part_of_speech": "phrase"
     }
   ],

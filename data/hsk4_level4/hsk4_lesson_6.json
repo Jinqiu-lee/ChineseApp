@@ -20,15 +20,15 @@
           "question": "What does 购物 mean?",
           "correct": "Shopping; to shop",
           "options": [
-            "Material; ingredient",
-            "Free (of charge)",
-            "Shop assistant; salesperson",
+            "To discuss; discussion",
+            "Customer; client",
+            "Preferential / Discount / Special offer",
             "Shopping; to shop"
           ],
           "option_pinyin": [
-            "cái liào",
-            "miǎn fèi",
-            "shòu huò yuán",
+            "tǎo lùn",
+            "gù kè",
+            "yōu huì",
             "gòu wù"
           ]
         },
@@ -37,36 +37,36 @@
           "question": "Fill in: Shopping; to shop",
           "correct": "购物",
           "options": [
-            "质量",
-            "材料",
+            "购物",
             "售货员",
-            "购物"
+            "缺点",
+            "打折"
           ],
           "option_pinyin": [
-            "zhì liàng",
-            "cái liào",
+            "gòu wù",
             "shòu huò yuán",
-            "gòu wù"
+            "quē diǎn",
+            "dǎ zhé"
           ],
-          "question_chinese": "她喜欢去___。",
-          "question_pinyin": "她喜欢去___。",
-          "question_english": "She likes to go shopping."
+          "question_chinese": "她喜欢逛商场，另外也经常在网上___。",
+          "question_pinyin": "她喜欢逛商场，另外也经常在网上___。",
+          "question_english": "She likes to stroll around shopping malls; besides, she also often shops online."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Shopping; to shop'?",
           "correct": "购物",
           "options": [
-            "逛",
+            "讨论",
             "购物",
-            "合适",
-            "缺点"
+            "打折",
+            "试"
           ],
           "option_pinyin": [
-            "guàng",
+            "tǎo lùn",
             "gòu wù",
-            "hé shì",
-            "quē diǎn"
+            "dǎ zhé",
+            "shì"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 打折 mean?",
           "correct": "To discount; on sale",
           "options": [
+            "To discuss; discussion",
+            "Suitable; appropriate; right",
             "To discount; on sale",
-            "Free (of charge)",
-            "To stroll; to browse (shops)",
-            "Material; ingredient"
+            "Shop assistant; salesperson"
           ],
           "option_pinyin": [
+            "tǎo lùn",
+            "hé shì",
             "dǎ zhé",
-            "miǎn fèi",
-            "guàng",
-            "cái liào"
+            "shòu huò yuán"
           ]
         },
         {
@@ -104,34 +104,34 @@
           "correct": "打折",
           "options": [
             "打折",
-            "合适",
             "购物",
-            "免费"
+            "合适",
+            "逛"
           ],
           "option_pinyin": [
             "dǎ zhé",
-            "hé shì",
             "gòu wù",
-            "miǎn fèi"
+            "hé shì",
+            "guàng"
           ],
-          "question_chinese": "这家店在___，很便宜。",
-          "question_pinyin": "这家店在___，很便宜。",
-          "question_english": "This store is having a sale; everything is cheap."
+          "question_chinese": "这件衣服的质量很好，值得购买，尤其是现在___。",
+          "question_pinyin": "这件衣服的质量很好，值得购买，尤其是现在___。",
+          "question_english": "The quality of this piece of clothing is very good and worth buying, especially now that it is on sale."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To discount; on sale'?",
           "correct": "打折",
           "options": [
-            "逛",
-            "售货员",
+            "免费",
             "打折",
+            "优惠",
             "缺点"
           ],
           "option_pinyin": [
-            "guàng",
-            "shòu huò yuán",
+            "miǎn fèi",
             "dǎ zhé",
+            "yōu huì",
             "quē diǎn"
           ]
         }
@@ -152,16 +152,16 @@
           "question": "What does 顾客 mean?",
           "correct": "Customer; client",
           "options": [
-            "Material; ingredient",
             "Customer; client",
-            "Advantage; strong point; merit",
-            "Quality"
+            "Free (of charge)",
+            "Suitable; appropriate; right",
+            "To discuss; discussion"
           ],
           "option_pinyin": [
-            "cái liào",
             "gù kè",
-            "yōu diǎn",
-            "zhì liàng"
+            "miǎn fèi",
+            "hé shì",
+            "tǎo lùn"
           ]
         },
         {
@@ -169,36 +169,36 @@
           "question": "Fill in: Customer; client",
           "correct": "顾客",
           "options": [
-            "合适",
-            "讨论",
+            "免费",
+            "材料",
             "逛",
             "顾客"
           ],
           "option_pinyin": [
-            "hé shì",
-            "tǎo lùn",
+            "miǎn fèi",
+            "cái liào",
             "guàng",
             "gù kè"
           ],
-          "question_chinese": "这家店的___很多。",
-          "question_pinyin": "这家店的___很多。",
-          "question_english": "This store has many customers."
+          "question_chinese": "___可以先免费试用，另外我们还提供七天退货服务。",
+          "question_pinyin": "___可以先免费试用，另外我们还提供七天退货服务。",
+          "question_english": "Customers can try it for free first; besides, we also offer a seven-day return service."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Customer; client'?",
           "correct": "顾客",
           "options": [
-            "购物",
+            "免费",
             "顾客",
-            "质量",
-            "售货员"
+            "试",
+            "讨论"
           ],
           "option_pinyin": [
-            "gòu wù",
+            "miǎn fèi",
             "gù kè",
-            "zhì liàng",
-            "shòu huò yuán"
+            "shì",
+            "tǎo lùn"
           ]
         }
       ],
@@ -218,16 +218,16 @@
           "question": "What does 售货员 mean?",
           "correct": "Shop assistant; salesperson",
           "options": [
-            "Suitable; appropriate; right",
-            "Shop assistant; salesperson",
-            "Shopping; to shop",
-            "To discount; on sale"
+            "Free (of charge)",
+            "Material; ingredient",
+            "Disadvantage; weakness; shortcoming",
+            "Shop assistant; salesperson"
           ],
           "option_pinyin": [
-            "hé shì",
-            "shòu huò yuán",
-            "gòu wù",
-            "dǎ zhé"
+            "miǎn fèi",
+            "cái liào",
+            "quē diǎn",
+            "shòu huò yuán"
           ]
         },
         {
@@ -235,36 +235,36 @@
           "question": "Fill in: Shop assistant; salesperson",
           "correct": "售货员",
           "options": [
+            "合适",
+            "退货",
             "售货员",
-            "缺点",
-            "免费",
-            "顾客"
+            "打折"
           ],
           "option_pinyin": [
+            "hé shì",
+            "tuì huò",
             "shòu huò yuán",
-            "quē diǎn",
-            "miǎn fèi",
-            "gù kè"
+            "dǎ zhé"
           ],
-          "question_chinese": "那位___很热情。",
-          "question_pinyin": "那位___很热情。",
-          "question_english": "That salesperson is very enthusiastic."
+          "question_chinese": "___向顾客详细介绍了商品的优点和缺点。",
+          "question_pinyin": "___向顾客详细介绍了商品的优点和缺点。",
+          "question_english": "The shop assistant introduced the product's advantages and disadvantages to the customer in detail."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Shop assistant; salesperson'?",
           "correct": "售货员",
           "options": [
+            "优惠",
             "售货员",
-            "合适",
             "打折",
-            "免费"
+            "质量"
           ],
           "option_pinyin": [
+            "yōu huì",
             "shòu huò yuán",
-            "hé shì",
             "dǎ zhé",
-            "miǎn fèi"
+            "zhì liàng"
           ]
         }
       ],
@@ -284,16 +284,16 @@
           "question": "What does 免费 mean?",
           "correct": "Free (of charge)",
           "options": [
-            "Shop assistant; salesperson",
-            "Suitable; appropriate; right",
             "Free (of charge)",
-            "To discuss; discussion"
+            "Customer; client",
+            "Suitable; appropriate; right",
+            "Preferential / Discount / Special offer"
           ],
           "option_pinyin": [
-            "shòu huò yuán",
-            "hé shì",
             "miǎn fèi",
-            "tǎo lùn"
+            "gù kè",
+            "hé shì",
+            "yōu huì"
           ]
         },
         {
@@ -301,20 +301,20 @@
           "question": "Fill in: Free (of charge)",
           "correct": "免费",
           "options": [
-            "合适",
-            "缺点",
-            "质量",
-            "免费"
+            "免费",
+            "讨论",
+            "逛",
+            "打折"
           ],
           "option_pinyin": [
-            "hé shì",
-            "quē diǎn",
-            "zhì liàng",
-            "miǎn fèi"
+            "miǎn fèi",
+            "tǎo lùn",
+            "guàng",
+            "dǎ zhé"
           ],
-          "question_chinese": "这里的停车是___的。",
-          "question_pinyin": "这里的停车是___的。",
-          "question_english": "Parking here is free."
+          "question_chinese": "顾客可以先___试用，另外我们还提供七天退货服务。",
+          "question_pinyin": "顾客可以先___试用，另外我们还提供七天退货服务。",
+          "question_english": "Customers can try it for free first; besides, we also offer a seven-day return service."
         },
         {
           "type": "multiple_choice",
@@ -322,15 +322,15 @@
           "correct": "免费",
           "options": [
             "免费",
-            "顾客",
-            "材料",
-            "售货员"
+            "优惠",
+            "打折",
+            "质量"
           ],
           "option_pinyin": [
             "miǎn fèi",
-            "gù kè",
-            "cái liào",
-            "shòu huò yuán"
+            "yōu huì",
+            "dǎ zhé",
+            "zhì liàng"
           ]
         }
       ],
@@ -338,69 +338,69 @@
     },
     {
       "id": "hsk4_l6_06",
-      "chinese": "优点",
-      "pinyin": "yōu diǎn",
-      "english": "Advantage; strong point; merit",
-      "part_of_speech": "noun",
-      "example": "售货员向顾客详细介绍了商品的优点和缺点。",
-      "translation": "The shop assistant introduced the product's advantages and disadvantages to the customer in detail.",
+      "chinese": "试",
+      "pinyin": "shì",
+      "english": "To try / To test / To taste",
+      "part_of_speech": "verb",
+      "example": "你可以先试一下，看合不合适。",
+      "translation": "You can try it first to see if it is suitable.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 优点 mean?",
-          "correct": "Advantage; strong point; merit",
+          "question": "What does 试 mean?",
+          "correct": "To try / To test / To taste",
           "options": [
-            "Disadvantage; weakness; shortcoming",
-            "Quality",
-            "Advantage; strong point; merit",
-            "Shopping; to shop"
+            "To discuss; discussion",
+            "Material; ingredient",
+            "Shopping; to shop",
+            "To try / To test / To taste"
           ],
           "option_pinyin": [
-            "quē diǎn",
-            "zhì liàng",
-            "yōu diǎn",
-            "gòu wù"
+            "tǎo lùn",
+            "cái liào",
+            "gòu wù",
+            "shì"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Advantage; strong point; merit",
-          "correct": "优点",
+          "question": "Fill in: To try / To test / To taste",
+          "correct": "试",
           "options": [
-            "顾客",
-            "优点",
-            "售货员",
-            "免费"
+            "合适",
+            "试",
+            "材料",
+            "优惠"
           ],
           "option_pinyin": [
-            "gù kè",
-            "yōu diǎn",
-            "shòu huò yuán",
-            "miǎn fèi"
+            "hé shì",
+            "shì",
+            "cái liào",
+            "yōu huì"
           ],
-          "question_chinese": "这个产品有很多___。",
-          "question_pinyin": "这个产品有很多___。",
-          "question_english": "This product has many advantages."
+          "question_chinese": "你可以先___一下，看合不合适。",
+          "question_pinyin": "你可以先___一下，看合不合适。",
+          "question_english": "You can try it first to see if it is suitable."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Advantage; strong point; merit'?",
-          "correct": "优点",
+          "question": "Which word means 'To try / To test / To taste'?",
+          "correct": "试",
           "options": [
+            "打折",
             "讨论",
-            "顾客",
-            "优点",
-            "免费"
+            "试",
+            "顾客"
           ],
           "option_pinyin": [
+            "dǎ zhé",
             "tǎo lùn",
-            "gù kè",
-            "yōu diǎn",
-            "miǎn fèi"
+            "shì",
+            "gù kè"
           ]
         }
       ],
-      "example_pinyin": "shòu huò yuán xiàng gù kè xiáng xì jiè shào le shāng pǐn de yōu diǎn hé quē diǎn"
+      "example_pinyin": "nǐ kě yǐ xiān shì yī xià kàn hé bù hé shì"
     },
     {
       "id": "hsk4_l6_07",
@@ -416,16 +416,16 @@
           "question": "What does 缺点 mean?",
           "correct": "Disadvantage; weakness; shortcoming",
           "options": [
+            "Material; ingredient",
+            "Free (of charge)",
             "Shopping; to shop",
-            "Disadvantage; weakness; shortcoming",
-            "Quality",
-            "Customer; client"
+            "Disadvantage; weakness; shortcoming"
           ],
           "option_pinyin": [
+            "cái liào",
+            "miǎn fèi",
             "gòu wù",
-            "quē diǎn",
-            "zhì liàng",
-            "gù kè"
+            "quē diǎn"
           ]
         },
         {
@@ -433,35 +433,35 @@
           "question": "Fill in: Disadvantage; weakness; shortcoming",
           "correct": "缺点",
           "options": [
-            "合适",
+            "逛",
             "免费",
-            "讨论",
+            "打折",
             "缺点"
           ],
           "option_pinyin": [
-            "hé shì",
+            "guàng",
             "miǎn fèi",
-            "tǎo lùn",
+            "dǎ zhé",
             "quē diǎn"
           ],
-          "question_chinese": "这个计划也有___。",
-          "question_pinyin": "这个计划也有___。",
-          "question_english": "This plan has its flaws too."
+          "question_chinese": "售货员向顾客详细介绍了商品的优点和___。",
+          "question_pinyin": "售货员向顾客详细介绍了商品的优点和___。",
+          "question_english": "The shop assistant introduced the product's advantages and disadvantages to the customer in detail."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Disadvantage; weakness; shortcoming'?",
           "correct": "缺点",
           "options": [
-            "售货员",
-            "材料",
             "免费",
+            "退货",
+            "打折",
             "缺点"
           ],
           "option_pinyin": [
-            "shòu huò yuán",
-            "cái liào",
             "miǎn fèi",
+            "tuì huò",
+            "dǎ zhé",
             "quē diǎn"
           ]
         }
@@ -482,16 +482,16 @@
           "question": "What does 质量 mean?",
           "correct": "Quality",
           "options": [
+            "To try / To test / To taste",
             "Quality",
-            "Advantage; strong point; merit",
             "Material; ingredient",
-            "To stroll; to browse (shops)"
+            "To discuss; discussion"
           ],
           "option_pinyin": [
+            "shì",
             "zhì liàng",
-            "yōu diǎn",
             "cái liào",
-            "guàng"
+            "tǎo lùn"
           ]
         },
         {
@@ -499,36 +499,36 @@
           "question": "Fill in: Quality",
           "correct": "质量",
           "options": [
-            "合适",
             "质量",
-            "顾客",
-            "免费"
+            "缺点",
+            "免费",
+            "逛"
           ],
           "option_pinyin": [
-            "hé shì",
             "zhì liàng",
-            "gù kè",
-            "miǎn fèi"
+            "quē diǎn",
+            "miǎn fèi",
+            "guàng"
           ],
-          "question_chinese": "这件衣服的___很好。",
-          "question_pinyin": "这件衣服的___很好。",
-          "question_english": "The quality of this clothing is very good."
+          "question_chinese": "这件衣服的___很好，值得购买，尤其是现在打折。",
+          "question_pinyin": "这件衣服的___很好，值得购买，尤其是现在打折。",
+          "question_english": "The quality of this piece of clothing is very good and worth buying, especially now that it is on sale."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Quality'?",
           "correct": "质量",
           "options": [
-            "材料",
+            "逛",
+            "质量",
             "免费",
-            "打折",
-            "质量"
+            "材料"
           ],
           "option_pinyin": [
-            "cái liào",
+            "guàng",
+            "zhì liàng",
             "miǎn fèi",
-            "dǎ zhé",
-            "zhì liàng"
+            "cái liào"
           ]
         }
       ],
@@ -548,16 +548,16 @@
           "question": "What does 材料 mean?",
           "correct": "Material; ingredient",
           "options": [
-            "Material; ingredient",
+            "To try / To test / To taste",
+            "Shop assistant; salesperson",
             "Quality",
-            "To discount; on sale",
-            "To discuss; discussion"
+            "Material; ingredient"
           ],
           "option_pinyin": [
-            "cái liào",
+            "shì",
+            "shòu huò yuán",
             "zhì liàng",
-            "dǎ zhé",
-            "tǎo lùn"
+            "cái liào"
           ]
         },
         {
@@ -565,36 +565,36 @@
           "question": "Fill in: Material; ingredient",
           "correct": "材料",
           "options": [
-            "售货员",
             "材料",
-            "逛",
-            "优点"
+            "打折",
+            "退货",
+            "购物"
           ],
           "option_pinyin": [
-            "shòu huò yuán",
             "cái liào",
-            "guàng",
-            "yōu diǎn"
+            "dǎ zhé",
+            "tuì huò",
+            "gòu wù"
           ],
-          "question_chinese": "这双鞋的___非常好。",
-          "question_pinyin": "这双鞋的___非常好。",
-          "question_english": "The material of these shoes is excellent."
+          "question_chinese": "这双鞋子___好，价格也合适，值得买。",
+          "question_pinyin": "这双鞋子___好，价格也合适，值得买。",
+          "question_english": "The material of these shoes is good and the price is right. They are worth buying."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Material; ingredient'?",
           "correct": "材料",
           "options": [
+            "逛",
             "讨论",
-            "优点",
-            "材料",
-            "合适"
+            "退货",
+            "材料"
           ],
           "option_pinyin": [
+            "guàng",
             "tǎo lùn",
-            "yōu diǎn",
-            "cái liào",
-            "hé shì"
+            "tuì huò",
+            "cái liào"
           ]
         }
       ],
@@ -615,15 +615,15 @@
           "correct": "To stroll; to browse (shops)",
           "options": [
             "To stroll; to browse (shops)",
-            "Suitable; appropriate; right",
             "Shopping; to shop",
-            "To discount; on sale"
+            "To return goods / Return / Refund",
+            "Disadvantage; weakness; shortcoming"
           ],
           "option_pinyin": [
             "guàng",
-            "hé shì",
             "gòu wù",
-            "dǎ zhé"
+            "tuì huò",
+            "quē diǎn"
           ]
         },
         {
@@ -631,20 +631,20 @@
           "question": "Fill in: To stroll; to browse (shops)",
           "correct": "逛",
           "options": [
-            "逛",
-            "售货员",
-            "优点",
-            "购物"
+            "缺点",
+            "打折",
+            "顾客",
+            "逛"
           ],
           "option_pinyin": [
-            "guàng",
-            "shòu huò yuán",
-            "yōu diǎn",
-            "gòu wù"
+            "quē diǎn",
+            "dǎ zhé",
+            "gù kè",
+            "guàng"
           ],
-          "question_chinese": "我们去___街吧。",
-          "question_pinyin": "我们去___街吧。",
-          "question_english": "Let's go window-shopping."
+          "question_chinese": "她喜欢___商场，另外也经常在网上购物。",
+          "question_pinyin": "她喜欢___商场，另外也经常在网上购物。",
+          "question_english": "She likes to stroll around shopping malls; besides, she also often shops online."
         },
         {
           "type": "multiple_choice",
@@ -652,15 +652,15 @@
           "correct": "逛",
           "options": [
             "逛",
-            "缺点",
-            "打折",
-            "合适"
+            "免费",
+            "合适",
+            "材料"
           ],
           "option_pinyin": [
             "guàng",
-            "quē diǎn",
-            "dǎ zhé",
-            "hé shì"
+            "miǎn fèi",
+            "hé shì",
+            "cái liào"
           ]
         }
       ],
@@ -680,16 +680,16 @@
           "question": "What does 合适 mean?",
           "correct": "Suitable; appropriate; right",
           "options": [
-            "Shop assistant; salesperson",
-            "Shopping; to shop",
-            "Suitable; appropriate; right",
-            "Disadvantage; weakness; shortcoming"
+            "Customer; client",
+            "To discount; on sale",
+            "Material; ingredient",
+            "Suitable; appropriate; right"
           ],
           "option_pinyin": [
-            "shòu huò yuán",
-            "gòu wù",
-            "hé shì",
-            "quē diǎn"
+            "gù kè",
+            "dǎ zhé",
+            "cái liào",
+            "hé shì"
           ]
         },
         {
@@ -697,20 +697,20 @@
           "question": "Fill in: Suitable; appropriate; right",
           "correct": "合适",
           "options": [
-            "合适",
+            "购物",
             "缺点",
-            "逛",
-            "打折"
+            "试",
+            "合适"
           ],
           "option_pinyin": [
-            "hé shì",
+            "gòu wù",
             "quē diǎn",
-            "guàng",
-            "dǎ zhé"
+            "shì",
+            "hé shì"
           ],
-          "question_chinese": "这件衣服很___。",
-          "question_pinyin": "这件衣服很___。",
-          "question_english": "This piece of clothing fits very well."
+          "question_chinese": "这双鞋子材料好，价格也___，值得买。",
+          "question_pinyin": "这双鞋子材料好，价格也___，值得买。",
+          "question_english": "The material of these shoes is good and the price is right. They are worth buying."
         },
         {
           "type": "multiple_choice",
@@ -718,15 +718,15 @@
           "correct": "合适",
           "options": [
             "合适",
-            "打折",
-            "购物",
-            "质量"
+            "售货员",
+            "免费",
+            "逛"
           ],
           "option_pinyin": [
             "hé shì",
-            "dǎ zhé",
-            "gòu wù",
-            "zhì liàng"
+            "shòu huò yuán",
+            "miǎn fèi",
+            "guàng"
           ]
         }
       ],
@@ -746,16 +746,16 @@
           "question": "What does 讨论 mean?",
           "correct": "To discuss; discussion",
           "options": [
+            "Material; ingredient",
+            "To return goods / Return / Refund",
             "To discuss; discussion",
-            "Advantage; strong point; merit",
-            "Quality",
-            "Shop assistant; salesperson"
+            "To discount; on sale"
           ],
           "option_pinyin": [
+            "cái liào",
+            "tuì huò",
             "tǎo lùn",
-            "yōu diǎn",
-            "zhì liàng",
-            "shòu huò yuán"
+            "dǎ zhé"
           ]
         },
         {
@@ -763,40 +763,172 @@
           "question": "Fill in: To discuss; discussion",
           "correct": "讨论",
           "options": [
-            "售货员",
+            "优惠",
+            "退货",
             "讨论",
-            "顾客",
             "合适"
           ],
           "option_pinyin": [
-            "shòu huò yuán",
+            "yōu huì",
+            "tuì huò",
             "tǎo lùn",
-            "gù kè",
             "hé shì"
           ],
-          "question_chinese": "他们正在___这个问题。",
-          "question_pinyin": "他们正在___这个问题。",
-          "question_english": "They are discussing this issue."
+          "question_chinese": "我们可以一起___哪些商品值得在网上买。",
+          "question_pinyin": "我们可以一起___哪些商品值得在网上买。",
+          "question_english": "We can discuss together which products are worth buying online."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To discuss; discussion'?",
           "correct": "讨论",
           "options": [
-            "优点",
-            "质量",
+            "优惠",
             "讨论",
-            "免费"
+            "质量",
+            "打折"
           ],
           "option_pinyin": [
-            "yōu diǎn",
-            "zhì liàng",
+            "yōu huì",
             "tǎo lùn",
-            "miǎn fèi"
+            "zhì liàng",
+            "dǎ zhé"
           ]
         }
       ],
       "example_pinyin": "wǒ men kě yǐ yì qǐ tǎo lùn nǎ xiē shāng pǐn zhí de zài wǎng shàng mǎi"
+    },
+    {
+      "id": "hsk4_l6_13",
+      "chinese": "优惠",
+      "pinyin": "yōu huì",
+      "english": "Preferential / Discount / Special offer",
+      "part_of_speech": "adjective/noun",
+      "example": "今天有优惠活动，买两件打八折。",
+      "translation": "There is a special offer today, buy two items at 80% off.",
+      "example_pinyin": "jīn tiān yǒu yōu huì huó dòng mǎi liǎng jiàn dǎ bā zhé",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 优惠 mean?",
+          "correct": "Preferential / Discount / Special offer",
+          "options": [
+            "Free (of charge)",
+            "To return goods / Return / Refund",
+            "To discuss; discussion",
+            "Preferential / Discount / Special offer"
+          ],
+          "option_pinyin": [
+            "miǎn fèi",
+            "tuì huò",
+            "tǎo lùn",
+            "yōu huì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Preferential / Discount / Special offer",
+          "correct": "优惠",
+          "options": [
+            "售货员",
+            "逛",
+            "优惠",
+            "讨论"
+          ],
+          "option_pinyin": [
+            "shòu huò yuán",
+            "guàng",
+            "yōu huì",
+            "tǎo lùn"
+          ],
+          "question_chinese": "今天有___活动，买两件打八折。",
+          "question_pinyin": "今天有___活动，买两件打八折。",
+          "question_english": "There is a special offer today."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Preferential / Discount / Special offer'?",
+          "correct": "优惠",
+          "options": [
+            "优惠",
+            "售货员",
+            "试",
+            "顾客"
+          ],
+          "option_pinyin": [
+            "yōu huì",
+            "shòu huò yuán",
+            "shì",
+            "gù kè"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l6_14",
+      "chinese": "退货",
+      "pinyin": "tuì huò",
+      "english": "To return goods / Return / Refund",
+      "part_of_speech": "verb/noun",
+      "example": "这件衣服有问题，我想退货。",
+      "translation": "There is a problem with this piece of clothing, I would like to return it.",
+      "example_pinyin": "zhè jiàn yī fú yǒu wèn tí wǒ xiǎng tuì huò",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 退货 mean?",
+          "correct": "To return goods / Return / Refund",
+          "options": [
+            "Suitable; appropriate; right",
+            "Shopping; to shop",
+            "To discount; on sale",
+            "To return goods / Return / Refund"
+          ],
+          "option_pinyin": [
+            "hé shì",
+            "gòu wù",
+            "dǎ zhé",
+            "tuì huò"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To return goods / Return / Refund",
+          "correct": "退货",
+          "options": [
+            "材料",
+            "顾客",
+            "打折",
+            "退货"
+          ],
+          "option_pinyin": [
+            "cái liào",
+            "gù kè",
+            "dǎ zhé",
+            "tuì huò"
+          ],
+          "question_chinese": "这件衣服有问题，我想___。",
+          "question_pinyin": "这件衣服有问题，我想___。",
+          "question_english": "I would like to return this item."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To return goods / Return / Refund'?",
+          "correct": "退货",
+          "options": [
+            "退货",
+            "讨论",
+            "合适",
+            "购物"
+          ],
+          "option_pinyin": [
+            "tuì huò",
+            "tǎo lùn",
+            "hé shì",
+            "gòu wù"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk4_l6_p01",
@@ -880,9 +1012,9 @@
       "english": "The material of these shoes is good and the price is right. They are worth buying."
     },
     {
-      "chinese": "购物时要比较质量和价格，不能只看打折。",
-      "pinyin": "Gòu wù shí yào bǐ jiào zhì liàng hé jià gé, bù néng zhǐ kàn dǎ zhé.",
-      "english": "When shopping, compare quality and price; don't only look at discounts."
+      "chinese": "购物时要比较质量和价格，不能只看价钱。",
+      "pinyin": "Gòu wù shí yào bǐ jiào zhì liàng hé jià gé, bù néng zhǐ kàn jià gé.",
+      "english": "When shopping, compare quality and price; don't only look at price."
     },
     {
       "chinese": "售货员说这款商品有打折优惠，顾客非常感兴趣。",

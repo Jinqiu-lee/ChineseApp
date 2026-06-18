@@ -21,15 +21,15 @@
           "correct": "To communicate; communication; exchange",
           "options": [
             "To explain; explanation",
-            "Word; term; expression",
-            "To praise; praise",
-            "To communicate; communication; exchange"
+            "Polite; politeness",
+            "To communicate; communication; exchange",
+            "Detailed; in detail"
           ],
           "option_pinyin": [
             "jiě shì",
-            "cí yǔ",
-            "biǎo yáng",
-            "jiāo liú"
+            "lǐ mào",
+            "jiāo liú",
+            "xiáng xì"
           ]
         },
         {
@@ -38,34 +38,34 @@
           "correct": "交流",
           "options": [
             "交流",
-            "批评",
-            "对话",
-            "解释"
+            "解释",
+            "词语",
+            "客户"
           ],
           "option_pinyin": [
             "jiāo liú",
-            "pī píng",
-            "duì huà",
-            "jiě shì"
+            "jiě shì",
+            "cí yǔ",
+            "kè hù"
           ],
-          "question_chinese": "我们需要多___。",
-          "question_pinyin": "我们需要多___。",
-          "question_english": "We need to communicate more."
+          "question_chinese": "批评和表扬都是有效的___方式。",
+          "question_pinyin": "批评和表扬都是有效的___方式。",
+          "question_english": "Both criticism and praise are effective ways of communication."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To communicate; communication; exchange'?",
           "correct": "交流",
           "options": [
+            "解释",
             "翻译",
-            "礼貌",
-            "详细",
+            "说明",
             "交流"
           ],
           "option_pinyin": [
+            "jiě shì",
             "fān yì",
-            "lǐ mào",
-            "xiáng xì",
+            "shuō míng",
             "jiāo liú"
           ]
         }
@@ -87,15 +87,15 @@
           "correct": "Dialogue; conversation",
           "options": [
             "Dialogue; conversation",
-            "To explain; to illustrate; explanation",
-            "Word; term; expression",
-            "To praise; praise"
+            "To translate; translator; translation",
+            "Detailed; in detail",
+            "Information; news; message"
           ],
           "option_pinyin": [
             "duì huà",
-            "shuō míng",
-            "cí yǔ",
-            "biǎo yáng"
+            "fān yì",
+            "xiáng xì",
+            "xìn xī"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: Dialogue; conversation",
           "correct": "对话",
           "options": [
-            "说明",
-            "词语",
-            "对话",
-            "礼貌"
+            "解释",
+            "批评",
+            "交流",
+            "对话"
           ],
           "option_pinyin": [
-            "shuō míng",
-            "cí yǔ",
-            "duì huà",
-            "lǐ mào"
+            "jiě shì",
+            "pī píng",
+            "jiāo liú",
+            "duì huà"
           ],
-          "question_chinese": "他们进行了友好的___。",
-          "question_pinyin": "他们进行了友好的___。",
-          "question_english": "They had a friendly dialogue."
+          "question_chinese": "通过___，他们更好地了解了彼此的想法。",
+          "question_pinyin": "通过___，他们更好地了解了彼此的想法。",
+          "question_english": "Through dialogue, they better understood each other's thoughts."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Dialogue; conversation'?",
           "correct": "对话",
           "options": [
-            "表扬",
-            "翻译",
             "详细",
-            "对话"
+            "对话",
+            "说明",
+            "礼貌"
           ],
           "option_pinyin": [
-            "biǎo yáng",
-            "fān yì",
             "xiáng xì",
-            "duì huà"
+            "duì huà",
+            "shuō míng",
+            "lǐ mào"
           ]
         }
       ],
@@ -152,16 +152,16 @@
           "question": "What does 解释 mean?",
           "correct": "To explain; explanation",
           "options": [
-            "Detailed; in detail",
-            "Polite; politeness",
             "To explain; explanation",
-            "Dialogue; conversation"
+            "To explain; to illustrate; explanation",
+            "Detailed; in detail",
+            "Polite; politeness"
           ],
           "option_pinyin": [
-            "xiáng xì",
-            "lǐ mào",
             "jiě shì",
-            "duì huà"
+            "shuō míng",
+            "xiáng xì",
+            "lǐ mào"
           ]
         },
         {
@@ -169,20 +169,20 @@
           "question": "Fill in: To explain; explanation",
           "correct": "解释",
           "options": [
-            "批评",
-            "详细",
-            "翻译",
-            "解释"
+            "解释",
+            "清楚",
+            "对话",
+            "批评"
           ],
           "option_pinyin": [
-            "pī píng",
-            "xiáng xì",
-            "fān yì",
-            "jiě shì"
+            "jiě shì",
+            "qīng chǔ",
+            "duì huà",
+            "pī píng"
           ],
-          "question_chinese": "他___了原因。",
-          "question_pinyin": "他___了原因。",
-          "question_english": "He explained the reason."
+          "question_chinese": "对于这个词语，老师做了详细的___。",
+          "question_pinyin": "对于这个词语，老师做了详细的___。",
+          "question_english": "Regarding this word, the teacher gave a detailed explanation."
         },
         {
           "type": "multiple_choice",
@@ -190,15 +190,15 @@
           "correct": "解释",
           "options": [
             "解释",
-            "翻译",
-            "直接",
-            "对话"
+            "清楚",
+            "说明",
+            "翻译"
           ],
           "option_pinyin": [
             "jiě shì",
-            "fān yì",
-            "zhí jiē",
-            "duì huà"
+            "qīng chǔ",
+            "shuō míng",
+            "fān yì"
           ]
         }
       ],
@@ -219,15 +219,15 @@
           "correct": "Polite; politeness",
           "options": [
             "To translate; translator; translation",
-            "To criticize; criticism",
-            "Polite; politeness",
-            "Dialogue; conversation"
+            "Information; news; message",
+            "To explain; to illustrate; explanation",
+            "Polite; politeness"
           ],
           "option_pinyin": [
             "fān yì",
-            "pī píng",
-            "lǐ mào",
-            "duì huà"
+            "xìn xī",
+            "shuō míng",
+            "lǐ mào"
           ]
         },
         {
@@ -235,36 +235,36 @@
           "question": "Fill in: Polite; politeness",
           "correct": "礼貌",
           "options": [
-            "解释",
             "礼貌",
+            "对话",
             "详细",
-            "翻译"
+            "客户"
           ],
           "option_pinyin": [
-            "jiě shì",
             "lǐ mào",
+            "duì huà",
             "xiáng xì",
-            "fān yì"
+            "kè hù"
           ],
-          "question_chinese": "要学会___地说话。",
-          "question_pinyin": "要学会___地说话。",
-          "question_english": "Learn to speak politely."
+          "question_chinese": "她用___的语气说明了情况，大家都很满意。",
+          "question_pinyin": "她用___的语气说明了情况，大家都很满意。",
+          "question_english": "She explained the situation in a polite tone, and everyone was satisfied."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Polite; politeness'?",
           "correct": "礼貌",
           "options": [
-            "批评",
-            "详细",
             "礼貌",
-            "表扬"
+            "表扬",
+            "直接",
+            "交流"
           ],
           "option_pinyin": [
-            "pī píng",
-            "xiáng xì",
             "lǐ mào",
-            "biǎo yáng"
+            "biǎo yáng",
+            "zhí jiē",
+            "jiāo liú"
           ]
         }
       ],
@@ -284,16 +284,16 @@
           "question": "What does 表扬 mean?",
           "correct": "To praise; praise",
           "options": [
-            "To explain; explanation",
-            "Detailed; in detail",
+            "To praise; praise",
             "Polite; politeness",
-            "To praise; praise"
+            "Client / Customer",
+            "Clear / Clearly / To understand clearly"
           ],
           "option_pinyin": [
-            "jiě shì",
-            "xiáng xì",
+            "biǎo yáng",
             "lǐ mào",
-            "biǎo yáng"
+            "kè hù",
+            "qīng chǔ"
           ]
         },
         {
@@ -301,20 +301,20 @@
           "question": "Fill in: To praise; praise",
           "correct": "表扬",
           "options": [
-            "说明",
-            "批评",
             "表扬",
-            "解释"
+            "说明",
+            "解释",
+            "信息"
           ],
           "option_pinyin": [
-            "shuō míng",
-            "pī píng",
             "biǎo yáng",
-            "jiě shì"
+            "shuō míng",
+            "jiě shì",
+            "xìn xī"
           ],
-          "question_chinese": "老师___了她的作文。",
-          "question_pinyin": "老师___了她的作文。",
-          "question_english": "The teacher praised her essay."
+          "question_chinese": "批评和___都是有效的交流方式。",
+          "question_pinyin": "批评和___都是有效的交流方式。",
+          "question_english": "Both criticism and praise are effective ways of communication."
         },
         {
           "type": "multiple_choice",
@@ -323,14 +323,14 @@
           "options": [
             "表扬",
             "词语",
-            "解释",
-            "交流"
+            "详细",
+            "礼貌"
           ],
           "option_pinyin": [
             "biǎo yáng",
             "cí yǔ",
-            "jiě shì",
-            "jiāo liú"
+            "xiáng xì",
+            "lǐ mào"
           ]
         }
       ],
@@ -352,14 +352,14 @@
           "options": [
             "To translate; translator; translation",
             "To criticize; criticism",
-            "Dialogue; conversation",
-            "Polite; politeness"
+            "Information; news; message",
+            "Detailed; in detail"
           ],
           "option_pinyin": [
             "fān yì",
             "pī píng",
-            "duì huà",
-            "lǐ mào"
+            "xìn xī",
+            "xiáng xì"
           ]
         },
         {
@@ -368,35 +368,35 @@
           "correct": "批评",
           "options": [
             "交流",
-            "批评",
-            "说明",
-            "对话"
+            "直接",
+            "解释",
+            "批评"
           ],
           "option_pinyin": [
             "jiāo liú",
-            "pī píng",
-            "shuō míng",
-            "duì huà"
+            "zhí jiē",
+            "jiě shì",
+            "pī píng"
           ],
-          "question_chinese": "他___我做错了。",
-          "question_pinyin": "他___我做错了。",
-          "question_english": "He criticized me for making a mistake."
+          "question_chinese": "___和表扬都是有效的交流方式。",
+          "question_pinyin": "___和表扬都是有效的交流方式。",
+          "question_english": "Both criticism and praise are effective ways of communication."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To criticize; criticism'?",
           "correct": "批评",
           "options": [
-            "表扬",
-            "对话",
-            "词语",
-            "批评"
+            "翻译",
+            "解释",
+            "批评",
+            "礼貌"
           ],
           "option_pinyin": [
-            "biǎo yáng",
-            "duì huà",
-            "cí yǔ",
-            "pī píng"
+            "fān yì",
+            "jiě shì",
+            "pī píng",
+            "lǐ mào"
           ]
         }
       ],
@@ -417,15 +417,15 @@
           "correct": "Word; term; expression",
           "options": [
             "Word; term; expression",
-            "Polite; politeness",
             "Direct; directly",
-            "To translate; translator; translation"
+            "To explain; explanation",
+            "Clear / Clearly / To understand clearly"
           ],
           "option_pinyin": [
             "cí yǔ",
-            "lǐ mào",
             "zhí jiē",
-            "fān yì"
+            "jiě shì",
+            "qīng chǔ"
           ]
         },
         {
@@ -433,36 +433,36 @@
           "question": "Fill in: Word; term; expression",
           "correct": "词语",
           "options": [
-            "说明",
-            "详细",
+            "清楚",
+            "表扬",
             "词语",
-            "表扬"
+            "交流"
           ],
           "option_pinyin": [
-            "shuō míng",
-            "xiáng xì",
+            "qīng chǔ",
+            "biǎo yáng",
             "cí yǔ",
-            "biǎo yáng"
+            "jiāo liú"
           ],
-          "question_chinese": "你学了多少个汉语___？",
-          "question_pinyin": "你学了多少个汉语___？",
-          "question_english": "How many Chinese words have you learned?"
+          "question_chinese": "对于这个___，老师做了详细的解释。",
+          "question_pinyin": "对于这个___，老师做了详细的解释。",
+          "question_english": "Regarding this word, the teacher gave a detailed explanation."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Word; term; expression'?",
           "correct": "词语",
           "options": [
-            "词语",
-            "交流",
-            "解释",
-            "翻译"
+            "直接",
+            "客户",
+            "说明",
+            "词语"
           ],
           "option_pinyin": [
-            "cí yǔ",
-            "jiāo liú",
-            "jiě shì",
-            "fān yì"
+            "zhí jiē",
+            "kè hù",
+            "shuō míng",
+            "cí yǔ"
           ]
         }
       ],
@@ -482,16 +482,16 @@
           "question": "What does 说明 mean?",
           "correct": "To explain; to illustrate; explanation",
           "options": [
-            "Word; term; expression",
-            "To explain; explanation",
-            "Information; news; message",
-            "To explain; to illustrate; explanation"
+            "Clear / Clearly / To understand clearly",
+            "To communicate; communication; exchange",
+            "To explain; to illustrate; explanation",
+            "Dialogue; conversation"
           ],
           "option_pinyin": [
-            "cí yǔ",
-            "jiě shì",
-            "xìn xī",
-            "shuō míng"
+            "qīng chǔ",
+            "jiāo liú",
+            "shuō míng",
+            "duì huà"
           ]
         },
         {
@@ -499,35 +499,35 @@
           "question": "Fill in: To explain; to illustrate; explanation",
           "correct": "说明",
           "options": [
-            "批评",
+            "详细",
             "说明",
-            "礼貌",
-            "对话"
+            "清楚",
+            "表扬"
           ],
           "option_pinyin": [
-            "pī píng",
+            "xiáng xì",
             "shuō míng",
-            "lǐ mào",
-            "duì huà"
+            "qīng chǔ",
+            "biǎo yáng"
           ],
-          "question_chinese": "请___一下使用方法。",
-          "question_pinyin": "请___一下使用方法。",
-          "question_english": "Please explain how to use it."
+          "question_chinese": "她用礼貌的语气___了情况，大家都很满意。",
+          "question_pinyin": "她用礼貌的语气___了情况，大家都很满意。",
+          "question_english": "She explained the situation in a polite tone, and everyone was satisfied."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To explain; to illustrate; explanation'?",
           "correct": "说明",
           "options": [
-            "批评",
-            "表扬",
-            "信息",
+            "礼貌",
+            "交流",
+            "详细",
             "说明"
           ],
           "option_pinyin": [
-            "pī píng",
-            "biǎo yáng",
-            "xìn xī",
+            "lǐ mào",
+            "jiāo liú",
+            "xiáng xì",
             "shuō míng"
           ]
         }
@@ -548,16 +548,16 @@
           "question": "What does 信息 mean?",
           "correct": "Information; news; message",
           "options": [
-            "Dialogue; conversation",
-            "To communicate; communication; exchange",
-            "To praise; praise",
-            "Information; news; message"
+            "Clear / Clearly / To understand clearly",
+            "Information; news; message",
+            "Detailed; in detail",
+            "Direct; directly"
           ],
           "option_pinyin": [
-            "duì huà",
-            "jiāo liú",
-            "biǎo yáng",
-            "xìn xī"
+            "qīng chǔ",
+            "xìn xī",
+            "xiáng xì",
+            "zhí jiē"
           ]
         },
         {
@@ -565,36 +565,36 @@
           "question": "Fill in: Information; news; message",
           "correct": "信息",
           "options": [
-            "交流",
-            "说明",
+            "解释",
             "信息",
-            "词语"
+            "词语",
+            "对话"
           ],
           "option_pinyin": [
-            "jiāo liú",
-            "shuō míng",
+            "jiě shì",
             "xìn xī",
-            "cí yǔ"
+            "cí yǔ",
+            "duì huà"
           ],
-          "question_chinese": "他发了一条___给我。",
-          "question_pinyin": "他发了一条___给我。",
-          "question_english": "He sent me a message."
+          "question_chinese": "是否需要翻译这段___，请告诉我。",
+          "question_pinyin": "是否需要翻译这段___，请告诉我。",
+          "question_english": "Please let me know whether or not you need this message translated."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Information; news; message'?",
           "correct": "信息",
           "options": [
-            "详细",
-            "解释",
-            "信息",
-            "批评"
+            "客户",
+            "批评",
+            "直接",
+            "信息"
           ],
           "option_pinyin": [
-            "xiáng xì",
-            "jiě shì",
-            "xìn xī",
-            "pī píng"
+            "kè hù",
+            "pī píng",
+            "zhí jiē",
+            "xìn xī"
           ]
         }
       ],
@@ -614,16 +614,16 @@
           "question": "What does 翻译 mean?",
           "correct": "To translate; translator; translation",
           "options": [
-            "To explain; explanation",
-            "To criticize; criticism",
-            "To translate; translator; translation",
-            "Dialogue; conversation"
+            "To communicate; communication; exchange",
+            "Word; term; expression",
+            "Dialogue; conversation",
+            "To translate; translator; translation"
           ],
           "option_pinyin": [
-            "jiě shì",
-            "pī píng",
-            "fān yì",
-            "duì huà"
+            "jiāo liú",
+            "cí yǔ",
+            "duì huà",
+            "fān yì"
           ]
         },
         {
@@ -631,36 +631,36 @@
           "question": "Fill in: To translate; translator; translation",
           "correct": "翻译",
           "options": [
-            "详细",
-            "信息",
             "翻译",
-            "对话"
+            "批评",
+            "详细",
+            "词语"
           ],
           "option_pinyin": [
-            "xiáng xì",
-            "xìn xī",
             "fān yì",
-            "duì huà"
+            "pī píng",
+            "xiáng xì",
+            "cí yǔ"
           ],
-          "question_chinese": "你能帮我___这句话吗？",
-          "question_pinyin": "你能帮我___这句话吗？",
-          "question_english": "Can you help me translate this sentence?"
+          "question_chinese": "是否需要___这段信息，请告诉我。",
+          "question_pinyin": "是否需要___这段信息，请告诉我。",
+          "question_english": "Please let me know whether or not you need this message translated."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To translate; translator; translation'?",
           "correct": "翻译",
           "options": [
-            "直接",
-            "词语",
             "翻译",
-            "交流"
+            "对话",
+            "客户",
+            "直接"
           ],
           "option_pinyin": [
-            "zhí jiē",
-            "cí yǔ",
             "fān yì",
-            "jiāo liú"
+            "duì huà",
+            "kè hù",
+            "zhí jiē"
           ]
         }
       ],
@@ -680,16 +680,16 @@
           "question": "What does 详细 mean?",
           "correct": "Detailed; in detail",
           "options": [
-            "Dialogue; conversation",
             "Detailed; in detail",
-            "Word; term; expression",
-            "Information; news; message"
+            "To praise; praise",
+            "Direct; directly",
+            "To translate; translator; translation"
           ],
           "option_pinyin": [
-            "duì huà",
             "xiáng xì",
-            "cí yǔ",
-            "xìn xī"
+            "biǎo yáng",
+            "zhí jiē",
+            "fān yì"
           ]
         },
         {
@@ -697,36 +697,36 @@
           "question": "Fill in: Detailed; in detail",
           "correct": "详细",
           "options": [
-            "对话",
-            "表扬",
+            "详细",
             "说明",
-            "详细"
+            "礼貌",
+            "解释"
           ],
           "option_pinyin": [
-            "duì huà",
-            "biǎo yáng",
+            "xiáng xì",
             "shuō míng",
-            "xiáng xì"
+            "lǐ mào",
+            "jiě shì"
           ],
-          "question_chinese": "他解释得很___。",
-          "question_pinyin": "他解释得很___。",
-          "question_english": "He explained it in great detail."
+          "question_chinese": "对于这个词语，老师做了___的解释。",
+          "question_pinyin": "对于这个词语，老师做了___的解释。",
+          "question_english": "Regarding this word, the teacher gave a detailed explanation."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Detailed; in detail'?",
           "correct": "详细",
           "options": [
-            "解释",
+            "清楚",
             "详细",
-            "翻译",
-            "信息"
+            "客户",
+            "表扬"
           ],
           "option_pinyin": [
-            "jiě shì",
+            "qīng chǔ",
             "xiáng xì",
-            "fān yì",
-            "xìn xī"
+            "kè hù",
+            "biǎo yáng"
           ]
         }
       ],
@@ -746,16 +746,16 @@
           "question": "What does 直接 mean?",
           "correct": "Direct; directly",
           "options": [
-            "Word; term; expression",
-            "To explain; explanation",
+            "Client / Customer",
             "Direct; directly",
-            "Information; news; message"
+            "To criticize; criticism",
+            "To explain; explanation"
           ],
           "option_pinyin": [
-            "cí yǔ",
-            "jiě shì",
+            "kè hù",
             "zhí jiē",
-            "xìn xī"
+            "pī píng",
+            "jiě shì"
           ]
         },
         {
@@ -763,40 +763,172 @@
           "question": "Fill in: Direct; directly",
           "correct": "直接",
           "options": [
-            "交流",
             "直接",
-            "解释",
-            "批评"
+            "对话",
+            "详细",
+            "解释"
           ],
           "option_pinyin": [
-            "jiāo liú",
             "zhí jiē",
-            "jiě shì",
-            "pī píng"
+            "duì huà",
+            "xiáng xì",
+            "jiě shì"
           ],
-          "question_chinese": "他说话很___。",
-          "question_pinyin": "他说话很___。",
-          "question_english": "He speaks very directly."
+          "question_chinese": "他很___，总是直接表达自己的想法。",
+          "question_pinyin": "他很___，总是直接表达自己的想法。",
+          "question_english": "He is very direct and always expresses his thoughts directly."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Direct; directly'?",
           "correct": "直接",
           "options": [
-            "批评",
             "直接",
-            "表扬",
-            "礼貌"
+            "批评",
+            "解释",
+            "详细"
           ],
           "option_pinyin": [
-            "pī píng",
             "zhí jiē",
-            "biǎo yáng",
-            "lǐ mào"
+            "pī píng",
+            "jiě shì",
+            "xiáng xì"
           ]
         }
       ],
       "example_pinyin": "tā hěn zhí jiē zǒng shì zhí jiē biǎo dá zì jǐ de xiǎng fǎ"
+    },
+    {
+      "id": "hsk4_l3_13",
+      "chinese": "客户",
+      "pinyin": "kè hù",
+      "english": "Client / Customer",
+      "part_of_speech": "noun",
+      "example": "他负责和客户保持联系。",
+      "translation": "He is responsible for maintaining contact with clients.",
+      "example_pinyin": "tā fù zé hé kè hù bǎo chí lián xì",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 客户 mean?",
+          "correct": "Client / Customer",
+          "options": [
+            "Word; term; expression",
+            "To explain; to illustrate; explanation",
+            "To translate; translator; translation",
+            "Client / Customer"
+          ],
+          "option_pinyin": [
+            "cí yǔ",
+            "shuō míng",
+            "fān yì",
+            "kè hù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Client / Customer",
+          "correct": "客户",
+          "options": [
+            "批评",
+            "客户",
+            "信息",
+            "解释"
+          ],
+          "option_pinyin": [
+            "pī píng",
+            "kè hù",
+            "xìn xī",
+            "jiě shì"
+          ],
+          "question_chinese": "他负责和___保持联系。",
+          "question_pinyin": "他负责和___保持联系。",
+          "question_english": "He is responsible for maintaining contact with clients."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Client / Customer'?",
+          "correct": "客户",
+          "options": [
+            "直接",
+            "详细",
+            "客户",
+            "清楚"
+          ],
+          "option_pinyin": [
+            "zhí jiē",
+            "xiáng xì",
+            "kè hù",
+            "qīng chǔ"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l3_14",
+      "chinese": "清楚",
+      "pinyin": "qīng chǔ",
+      "english": "Clear / Clearly / To understand clearly",
+      "part_of_speech": "adjective/adverb",
+      "example": "请你说清楚一点，我没听懂。",
+      "translation": "Please speak more clearly, I did not understand.",
+      "example_pinyin": "qǐng nǐ shuō qīng chǔ yì diǎn wǒ méi tīng dǒng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 清楚 mean?",
+          "correct": "Clear / Clearly / To understand clearly",
+          "options": [
+            "To communicate; communication; exchange",
+            "Client / Customer",
+            "Clear / Clearly / To understand clearly",
+            "Detailed; in detail"
+          ],
+          "option_pinyin": [
+            "jiāo liú",
+            "kè hù",
+            "qīng chǔ",
+            "xiáng xì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Clear / Clearly / To understand clearly",
+          "correct": "清楚",
+          "options": [
+            "清楚",
+            "对话",
+            "交流",
+            "解释"
+          ],
+          "option_pinyin": [
+            "qīng chǔ",
+            "duì huà",
+            "jiāo liú",
+            "jiě shì"
+          ],
+          "question_chinese": "请你说___一点，我没听懂。",
+          "question_pinyin": "请你说___一点，我没听懂。",
+          "question_english": "Please speak more clearly."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Clear / Clearly / To understand clearly'?",
+          "correct": "清楚",
+          "options": [
+            "客户",
+            "对话",
+            "清楚",
+            "礼貌"
+          ],
+          "option_pinyin": [
+            "kè hù",
+            "duì huà",
+            "qīng chǔ",
+            "lǐ mào"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk4_l3_p01",

@@ -20,16 +20,16 @@
           "question": "What does 工资 mean?",
           "correct": "Salary; wages",
           "options": [
+            "[Measure word for sets, suites, or complete collections]",
+            "Income; earnings",
             "Salary; wages",
-            "Bonus; prize money",
-            "Price",
-            "To pay; payment"
+            "Rich; wealthy"
           ],
           "option_pinyin": [
+            "tào",
+            "shōu rù",
             "gōng zī",
-            "jiǎng jīn",
-            "jià gé",
-            "fù kuǎn"
+            "fù"
           ]
         },
         {
@@ -38,35 +38,35 @@
           "correct": "工资",
           "options": [
             "工资",
-            "价格",
+            "节省",
             "零钱",
-            "估计"
+            "存"
           ],
           "option_pinyin": [
             "gōng zī",
-            "jià gé",
+            "jié shěng",
             "líng qián",
-            "gū jì"
+            "cún"
           ],
-          "question_chinese": "他的___每月有五千元。",
-          "question_pinyin": "他的___每月有五千元。",
-          "question_english": "His salary is 5,000 yuan per month."
+          "question_chinese": "为了存钱买房，他每个月都把___的一半存起来。",
+          "question_pinyin": "为了存钱买房，他每个月都把___的一半存起来。",
+          "question_english": "In order to save money to buy a house, he saves half his salary every month."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Salary; wages'?",
           "correct": "工资",
           "options": [
-            "价格",
-            "浪费",
             "工资",
-            "富"
+            "块",
+            "付款",
+            "穷"
           ],
           "option_pinyin": [
-            "jià gé",
-            "làng fèi",
             "gōng zī",
-            "fù"
+            "kuài",
+            "fù kuǎn",
+            "qióng"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 收入 mean?",
           "correct": "Income; earnings",
           "options": [
-            "Salary; wages",
             "Income; earnings",
-            "Price",
-            "Bonus; prize money"
+            "To save (money); to deposit",
+            "Salary; wages",
+            "To save / To economize / Frugal"
           ],
           "option_pinyin": [
-            "gōng zī",
             "shōu rù",
-            "jià gé",
-            "jiǎng jīn"
+            "cún",
+            "gōng zī",
+            "jié shěng"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: Income; earnings",
           "correct": "收入",
           "options": [
-            "存",
-            "价格",
-            "浪费",
-            "收入"
+            "块",
+            "富",
+            "收入",
+            "付款"
           ],
           "option_pinyin": [
-            "cún",
-            "jià gé",
-            "làng fèi",
-            "shōu rù"
+            "kuài",
+            "fù",
+            "shōu rù",
+            "fù kuǎn"
           ],
-          "question_chinese": "她的___比上个月多了。",
-          "question_pinyin": "她的___比上个月多了。",
-          "question_english": "Her income is more than last month."
+          "question_chinese": "既然你已经赚到足够的钱，就应该合理安排___。",
+          "question_pinyin": "既然你已经赚到足够的钱，就应该合理安排___。",
+          "question_english": "Since you have already earned enough money, you should manage your income wisely."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Income; earnings'?",
           "correct": "收入",
           "options": [
-            "富",
-            "浪费",
-            "价格",
-            "收入"
+            "笔",
+            "收入",
+            "奖金",
+            "支付"
           ],
           "option_pinyin": [
-            "fù",
-            "làng fèi",
-            "jià gé",
-            "shōu rù"
+            "bǐ",
+            "shōu rù",
+            "jiǎng jīn",
+            "zhī fù"
           ]
         }
       ],
@@ -152,16 +152,16 @@
           "question": "What does 付款 mean?",
           "correct": "To pay; payment",
           "options": [
-            "Change (small coins); pocket money",
+            "To estimate; estimate",
+            "Rich; wealthy",
             "Poor; poverty-stricken",
-            "To pay; payment",
-            "Salary; wages"
+            "To pay; payment"
           ],
           "option_pinyin": [
-            "líng qián",
+            "gū jì",
+            "fù",
             "qióng",
-            "fù kuǎn",
-            "gōng zī"
+            "fù kuǎn"
           ]
         },
         {
@@ -169,36 +169,36 @@
           "question": "Fill in: To pay; payment",
           "correct": "付款",
           "options": [
-            "富",
-            "赚",
+            "工资",
             "付款",
-            "工资"
+            "财务",
+            "笔"
           ],
           "option_pinyin": [
-            "fù",
-            "zhuàn",
+            "gōng zī",
             "fù kuǎn",
-            "gōng zī"
+            "cái wù",
+            "bǐ"
           ],
-          "question_chinese": "请在这里___。",
-          "question_pinyin": "请在这里___。",
-          "question_english": "Please pay here."
+          "question_chinese": "请问您用什么___方式？现金还是手机支付？",
+          "question_pinyin": "请问您用什么___方式？现金还是手机支付？",
+          "question_english": "May I ask what payment method you will use? Cash or mobile payment?"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To pay; payment'?",
           "correct": "付款",
           "options": [
-            "奖金",
-            "浪费",
             "存",
-            "付款"
+            "工资",
+            "付款",
+            "收入"
           ],
           "option_pinyin": [
-            "jiǎng jīn",
-            "làng fèi",
             "cún",
-            "fù kuǎn"
+            "gōng zī",
+            "fù kuǎn",
+            "shōu rù"
           ]
         }
       ],
@@ -218,16 +218,16 @@
           "question": "What does 富 mean?",
           "correct": "Rich; wealthy",
           "options": [
-            "Bonus; prize money",
+            "To earn; to make (money)",
+            "To save (money); to deposit",
             "Rich; wealthy",
-            "To waste; wasteful",
-            "Price"
+            "Bonus; prize money"
           ],
           "option_pinyin": [
-            "jiǎng jīn",
+            "zhuàn",
+            "cún",
             "fù",
-            "làng fèi",
-            "jià gé"
+            "jiǎng jīn"
           ]
         },
         {
@@ -235,36 +235,36 @@
           "question": "Fill in: Rich; wealthy",
           "correct": "富",
           "options": [
-            "收入",
-            "奖金",
-            "富",
-            "零钱"
+            "赚",
+            "消费",
+            "估计",
+            "富"
           ],
           "option_pinyin": [
-            "shōu rù",
-            "jiǎng jīn",
-            "fù",
-            "líng qián"
+            "zhuàn",
+            "xiāo fèi",
+            "gū jì",
+            "fù"
           ],
-          "question_chinese": "他家很___。",
-          "question_pinyin": "他家很___。",
-          "question_english": "His family is very wealthy."
+          "question_chinese": "他通过努力工作变得越来越___。",
+          "question_pinyin": "他通过努力工作变得越来越___。",
+          "question_english": "He became richer and richer through hard work."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Rich; wealthy'?",
           "correct": "富",
           "options": [
-            "价格",
-            "零钱",
-            "富",
-            "收入"
+            "工资",
+            "穷",
+            "支付",
+            "富"
           ],
           "option_pinyin": [
-            "jià gé",
-            "líng qián",
-            "fù",
-            "shōu rù"
+            "gōng zī",
+            "qióng",
+            "zhī fù",
+            "fù"
           ]
         }
       ],
@@ -284,16 +284,16 @@
           "question": "What does 穷 mean?",
           "correct": "Poor; poverty-stricken",
           "options": [
-            "Poor; poverty-stricken",
-            "To waste; wasteful",
-            "Rich; wealthy",
-            "Salary; wages"
+            "To save (money); to deposit",
+            "Salary; wages",
+            "[Measure word for sets, suites, or complete collections]",
+            "Poor; poverty-stricken"
           ],
           "option_pinyin": [
-            "qióng",
-            "làng fèi",
-            "fù",
-            "gōng zī"
+            "cún",
+            "gōng zī",
+            "tào",
+            "qióng"
           ]
         },
         {
@@ -301,36 +301,36 @@
           "question": "Fill in: Poor; poverty-stricken",
           "correct": "穷",
           "options": [
-            "奖金",
-            "价格",
-            "付款",
+            "富",
+            "估计",
+            "支付",
             "穷"
           ],
           "option_pinyin": [
-            "jiǎng jīn",
-            "jià gé",
-            "fù kuǎn",
+            "fù",
+            "gū jì",
+            "zhī fù",
             "qióng"
           ],
-          "question_chinese": "他们家以前很___。",
-          "question_pinyin": "他们家以前很___。",
-          "question_english": "Their family used to be very poor."
+          "question_chinese": "乱花钱，你的收入再高也会变___。",
+          "question_pinyin": "乱花钱，你的收入再高也会变___。",
+          "question_english": "If you spend money carelessly, no matter how high your income is you will still end up poor."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Poor; poverty-stricken'?",
           "correct": "穷",
           "options": [
+            "奖金",
+            "消费",
             "穷",
-            "零钱",
-            "工资",
-            "存"
+            "赚"
           ],
           "option_pinyin": [
+            "jiǎng jīn",
+            "xiāo fèi",
             "qióng",
-            "líng qián",
-            "gōng zī",
-            "cún"
+            "zhuàn"
           ]
         }
       ],
@@ -350,16 +350,16 @@
           "question": "What does 赚 mean?",
           "correct": "To earn; to make (money)",
           "options": [
-            "Salary; wages",
-            "Poor; poverty-stricken",
             "To earn; to make (money)",
-            "Price"
+            "[Measure word for sets, suites, or complete collections]",
+            "To consume / Consumption / Spending",
+            "Change (small coins); pocket money"
           ],
           "option_pinyin": [
-            "gōng zī",
-            "qióng",
             "zhuàn",
-            "jià gé"
+            "tào",
+            "xiāo fèi",
+            "líng qián"
           ]
         },
         {
@@ -367,36 +367,36 @@
           "question": "Fill in: To earn; to make (money)",
           "correct": "赚",
           "options": [
-            "穷",
+            "价格",
+            "付款",
             "赚",
-            "浪费",
-            "价格"
+            "零钱"
           ],
           "option_pinyin": [
-            "qióng",
+            "jià gé",
+            "fù kuǎn",
             "zhuàn",
-            "làng fèi",
-            "jià gé"
+            "líng qián"
           ],
-          "question_chinese": "他努力工作来___钱。",
-          "question_pinyin": "他努力工作来___钱。",
-          "question_english": "He works hard to earn money."
+          "question_chinese": "既然你已经___到足够的钱，就应该合理安排收入。",
+          "question_pinyin": "既然你已经___到足够的钱，就应该合理安排收入。",
+          "question_english": "Since you have already earned enough money, you should manage your income wisely."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To earn; to make (money)'?",
           "correct": "赚",
           "options": [
-            "浪费",
-            "存",
-            "赚",
-            "价格"
+            "支付",
+            "块",
+            "工资",
+            "赚"
           ],
           "option_pinyin": [
-            "làng fèi",
-            "cún",
-            "zhuàn",
-            "jià gé"
+            "zhī fù",
+            "kuài",
+            "gōng zī",
+            "zhuàn"
           ]
         }
       ],
@@ -417,14 +417,14 @@
           "correct": "To save (money); to deposit",
           "options": [
             "To earn; to make (money)",
-            "Income; earnings",
-            "Poor; poverty-stricken",
+            "Finance / Financial / Accounting",
+            "[Measure word for sets, suites, or complete collections]",
             "To save (money); to deposit"
           ],
           "option_pinyin": [
             "zhuàn",
-            "shōu rù",
-            "qióng",
+            "cái wù",
+            "tào",
             "cún"
           ]
         },
@@ -434,35 +434,35 @@
           "correct": "存",
           "options": [
             "存",
-            "价格",
-            "奖金",
-            "收入"
+            "赚",
+            "付款",
+            "套"
           ],
           "option_pinyin": [
             "cún",
-            "jià gé",
-            "jiǎng jīn",
-            "shōu rù"
+            "zhuàn",
+            "fù kuǎn",
+            "tào"
           ],
-          "question_chinese": "他把钱___在银行里。",
-          "question_pinyin": "他把钱___在银行里。",
-          "question_english": "He saves money in the bank."
+          "question_chinese": "为了___钱买房，他每个月都把工资的一半存起来。",
+          "question_pinyin": "为了___钱买房，他每个月都把工资的一半存起来。",
+          "question_english": "In order to save money to buy a house, he saves half his salary every month."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To save (money); to deposit'?",
           "correct": "存",
           "options": [
-            "价格",
-            "存",
-            "零钱",
-            "收入"
+            "笔",
+            "赚",
+            "财务",
+            "存"
           ],
           "option_pinyin": [
-            "jià gé",
-            "cún",
-            "líng qián",
-            "shōu rù"
+            "bǐ",
+            "zhuàn",
+            "cái wù",
+            "cún"
           ]
         }
       ],
@@ -482,16 +482,16 @@
           "question": "What does 奖金 mean?",
           "correct": "Bonus; prize money",
           "options": [
-            "Change (small coins); pocket money",
-            "Bonus; prize money",
-            "Salary; wages",
-            "To waste; wasteful"
+            "To save (money); to deposit",
+            "To pay / To make a payment",
+            "To estimate; estimate",
+            "Bonus; prize money"
           ],
           "option_pinyin": [
-            "líng qián",
-            "jiǎng jīn",
-            "gōng zī",
-            "làng fèi"
+            "cún",
+            "zhī fù",
+            "gū jì",
+            "jiǎng jīn"
           ]
         },
         {
@@ -499,20 +499,20 @@
           "question": "Fill in: Bonus; prize money",
           "correct": "奖金",
           "options": [
-            "奖金",
-            "工资",
             "富",
-            "零钱"
+            "奖金",
+            "零钱",
+            "收入"
           ],
           "option_pinyin": [
-            "jiǎng jīn",
-            "gōng zī",
             "fù",
-            "líng qián"
+            "jiǎng jīn",
+            "líng qián",
+            "shōu rù"
           ],
-          "question_chinese": "这个月他得到了___。",
-          "question_pinyin": "这个月他得到了___。",
-          "question_english": "He received a bonus this month."
+          "question_chinese": "年底公司发了丰厚的___，大家都很高兴。",
+          "question_pinyin": "年底公司发了丰厚的___，大家都很高兴。",
+          "question_english": "At year-end, the company paid a generous bonus, and everyone was very happy."
         },
         {
           "type": "multiple_choice",
@@ -520,15 +520,15 @@
           "correct": "奖金",
           "options": [
             "收入",
-            "价格",
             "奖金",
-            "估计"
+            "财务",
+            "笔"
           ],
           "option_pinyin": [
             "shōu rù",
-            "jià gé",
             "jiǎng jīn",
-            "gū jì"
+            "cái wù",
+            "bǐ"
           ]
         }
       ],
@@ -549,15 +549,15 @@
           "correct": "Change (small coins); pocket money",
           "options": [
             "Salary; wages",
-            "Income; earnings",
             "Change (small coins); pocket money",
-            "Rich; wealthy"
+            "[Measure word for sets, suites, or complete collections]",
+            "To save / To economize / Frugal"
           ],
           "option_pinyin": [
             "gōng zī",
-            "shōu rù",
             "líng qián",
-            "fù"
+            "tào",
+            "jié shěng"
           ]
         },
         {
@@ -565,36 +565,36 @@
           "question": "Fill in: Change (small coins); pocket money",
           "correct": "零钱",
           "options": [
-            "收入",
-            "存",
-            "穷",
-            "零钱"
+            "笔",
+            "块",
+            "零钱",
+            "奖金"
           ],
           "option_pinyin": [
-            "shōu rù",
-            "cún",
-            "qióng",
-            "líng qián"
+            "bǐ",
+            "kuài",
+            "líng qián",
+            "jiǎng jīn"
           ],
-          "question_chinese": "我没有___。",
-          "question_pinyin": "我没有___。",
-          "question_english": "I don't have any change."
+          "question_chinese": "我打算把___和奖金都存起来。",
+          "question_pinyin": "我打算把___和奖金都存起来。",
+          "question_english": "I plan to save both the small change and the bonus."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Change (small coins); pocket money'?",
           "correct": "零钱",
           "options": [
-            "零钱",
+            "支付",
             "存",
-            "付款",
-            "奖金"
+            "消费",
+            "零钱"
           ],
           "option_pinyin": [
-            "líng qián",
+            "zhī fù",
             "cún",
-            "fù kuǎn",
-            "jiǎng jīn"
+            "xiāo fèi",
+            "líng qián"
           ]
         }
       ],
@@ -614,16 +614,16 @@
           "question": "What does 价格 mean?",
           "correct": "Price",
           "options": [
-            "To earn; to make (money)",
-            "Bonus; prize money",
-            "Poor; poverty-stricken",
-            "Price"
+            "Price",
+            "[Measure word for sums of money or written items]",
+            "Salary; wages",
+            "To estimate; estimate"
           ],
           "option_pinyin": [
-            "zhuàn",
-            "jiǎng jīn",
-            "qióng",
-            "jià gé"
+            "jià gé",
+            "bǐ",
+            "gōng zī",
+            "gū jì"
           ]
         },
         {
@@ -631,36 +631,36 @@
           "question": "Fill in: Price",
           "correct": "价格",
           "options": [
-            "浪费",
-            "富",
-            "付款",
+            "零钱",
+            "笔",
+            "穷",
             "价格"
           ],
           "option_pinyin": [
-            "làng fèi",
-            "fù",
-            "fù kuǎn",
+            "líng qián",
+            "bǐ",
+            "qióng",
             "jià gé"
           ],
-          "question_chinese": "这件衣服的___太高了。",
-          "question_pinyin": "这件衣服的___太高了。",
-          "question_english": "The price of this clothing is too high."
+          "question_chinese": "他估计这件商品的___是一千块。",
+          "question_pinyin": "他估计这件商品的___是一千块。",
+          "question_english": "He estimates the price of this item is one thousand yuan."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Price'?",
           "correct": "价格",
           "options": [
-            "工资",
-            "收入",
+            "付款",
             "估计",
-            "价格"
+            "价格",
+            "收入"
           ],
           "option_pinyin": [
-            "gōng zī",
-            "shōu rù",
+            "fù kuǎn",
             "gū jì",
-            "jià gé"
+            "jià gé",
+            "shōu rù"
           ]
         }
       ],
@@ -680,16 +680,16 @@
           "question": "What does 估计 mean?",
           "correct": "To estimate; estimate",
           "options": [
-            "Salary; wages",
-            "Price",
             "To estimate; estimate",
-            "Bonus; prize money"
+            "To pay / To make a payment",
+            "Bonus; prize money",
+            "To save (money); to deposit"
           ],
           "option_pinyin": [
-            "gōng zī",
-            "jià gé",
             "gū jì",
-            "jiǎng jīn"
+            "zhī fù",
+            "jiǎng jīn",
+            "cún"
           ]
         },
         {
@@ -697,36 +697,36 @@
           "question": "Fill in: To estimate; estimate",
           "correct": "估计",
           "options": [
-            "价格",
-            "估计",
-            "存",
-            "收入"
+            "笔",
+            "块",
+            "节省",
+            "估计"
           ],
           "option_pinyin": [
-            "jià gé",
-            "gū jì",
-            "cún",
-            "shōu rù"
+            "bǐ",
+            "kuài",
+            "jié shěng",
+            "gū jì"
           ],
-          "question_chinese": "我___要花三个小时。",
-          "question_pinyin": "我___要花三个小时。",
-          "question_english": "I estimate it will take three hours."
+          "question_chinese": "他___这件商品的价格是一千块。",
+          "question_pinyin": "他___这件商品的价格是一千块。",
+          "question_english": "He estimates the price of this item is one thousand yuan."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To estimate; estimate'?",
           "correct": "估计",
           "options": [
-            "奖金",
-            "零钱",
+            "收入",
             "估计",
-            "价格"
+            "支付",
+            "笔"
           ],
           "option_pinyin": [
-            "jiǎng jīn",
-            "líng qián",
+            "shōu rù",
             "gū jì",
-            "jià gé"
+            "zhī fù",
+            "bǐ"
           ]
         }
       ],
@@ -734,69 +734,465 @@
     },
     {
       "id": "hsk4_l5_12",
-      "chinese": "浪费",
-      "pinyin": "làng fèi",
-      "english": "To waste; wasteful",
+      "chinese": "节省",
+      "pinyin": "jié shěng",
+      "english": "To save / To economize / Frugal",
       "part_of_speech": "verb/adjective",
-      "example": "不要浪费金钱，否则你很快就会变穷。",
-      "translation": "Don't waste money, otherwise you will quickly become poor.",
+      "example": "我们应该节省用水，保护环境。",
+      "translation": "We should save water to protect the environment.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 浪费 mean?",
-          "correct": "To waste; wasteful",
+          "question": "What does 节省 mean?",
+          "correct": "To save / To economize / Frugal",
           "options": [
-            "Rich; wealthy",
-            "To waste; wasteful",
-            "To estimate; estimate",
-            "Salary; wages"
+            "Change (small coins); pocket money",
+            "Poor; poverty-stricken",
+            "To save / To economize / Frugal",
+            "To consume / Consumption / Spending"
+          ],
+          "option_pinyin": [
+            "líng qián",
+            "qióng",
+            "jié shěng",
+            "xiāo fèi"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To save / To economize / Frugal",
+          "correct": "节省",
+          "options": [
+            "存",
+            "奖金",
+            "财务",
+            "节省"
+          ],
+          "option_pinyin": [
+            "cún",
+            "jiǎng jīn",
+            "cái wù",
+            "jié shěng"
+          ],
+          "question_chinese": "我们应该___用水，保护环境。",
+          "question_pinyin": "我们应该___用水，保护环境。",
+          "question_english": "We should save water to protect the environment."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To save / To economize / Frugal'?",
+          "correct": "节省",
+          "options": [
+            "笔",
+            "节省",
+            "财务",
+            "富"
+          ],
+          "option_pinyin": [
+            "bǐ",
+            "jié shěng",
+            "cái wù",
+            "fù"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ men yīng gāi jié shěng yòng shuǐ bǎo hù huán jìng"
+    },
+    {
+      "id": "hsk4_l5_13",
+      "chinese": "支付",
+      "pinyin": "zhī fù",
+      "english": "To pay / To make a payment",
+      "part_of_speech": "verb",
+      "example": "你可以用手机支付，非常方便。",
+      "translation": "You can pay with your phone, it is very convenient.",
+      "example_pinyin": "nǐ kě yǐ yòng shǒu jī zhī fù fēi cháng fāng biàn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 支付 mean?",
+          "correct": "To pay / To make a payment",
+          "options": [
+            "[Measure word for yuan / pieces of something]",
+            "Poor; poverty-stricken",
+            "To pay / To make a payment",
+            "Rich; wealthy"
+          ],
+          "option_pinyin": [
+            "kuài",
+            "qióng",
+            "zhī fù",
+            "fù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To pay / To make a payment",
+          "correct": "支付",
+          "options": [
+            "财务",
+            "支付",
+            "存",
+            "套"
+          ],
+          "option_pinyin": [
+            "cái wù",
+            "zhī fù",
+            "cún",
+            "tào"
+          ],
+          "question_chinese": "你可以用手机___，非常方便。",
+          "question_pinyin": "你可以用手机___，非常方便。",
+          "question_english": "You can pay with your phone."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To pay / To make a payment'?",
+          "correct": "支付",
+          "options": [
+            "支付",
+            "套",
+            "节省",
+            "收入"
+          ],
+          "option_pinyin": [
+            "zhī fù",
+            "tào",
+            "jié shěng",
+            "shōu rù"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l5_14",
+      "chinese": "消费",
+      "pinyin": "xiāo fèi",
+      "english": "To consume / Consumption / Spending",
+      "part_of_speech": "verb/noun",
+      "example": "我们要理性消费，不能乱花钱。",
+      "translation": "We should consume rationally and not spend money carelessly.",
+      "example_pinyin": "wǒ men yào lǐ xìng xiāo fèi bù néng luàn huā qián",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 消费 mean?",
+          "correct": "To consume / Consumption / Spending",
+          "options": [
+            "To save (money); to deposit",
+            "To consume / Consumption / Spending",
+            "Bonus; prize money",
+            "[Measure word for sets, suites, or complete collections]"
+          ],
+          "option_pinyin": [
+            "cún",
+            "xiāo fèi",
+            "jiǎng jīn",
+            "tào"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To consume / Consumption / Spending",
+          "correct": "消费",
+          "options": [
+            "付款",
+            "工资",
+            "富",
+            "消费"
+          ],
+          "option_pinyin": [
+            "fù kuǎn",
+            "gōng zī",
+            "fù",
+            "xiāo fèi"
+          ],
+          "question_chinese": "我们要理性___，不能乱花钱。",
+          "question_pinyin": "我们要理性___，不能乱花钱。",
+          "question_english": "We should consume rationally."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To consume / Consumption / Spending'?",
+          "correct": "消费",
+          "options": [
+            "消费",
+            "支付",
+            "套",
+            "收入"
+          ],
+          "option_pinyin": [
+            "xiāo fèi",
+            "zhī fù",
+            "tào",
+            "shōu rù"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l5_15",
+      "chinese": "财务",
+      "pinyin": "cái wù",
+      "english": "Finance / Financial / Accounting",
+      "part_of_speech": "noun",
+      "example": "他在公司负责财务工作。",
+      "translation": "He is responsible for financial work at the company.",
+      "example_pinyin": "tā zài gōng sī fù zé cái wù gōng zuò",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 财务 mean?",
+          "correct": "Finance / Financial / Accounting",
+          "options": [
+            "Change (small coins); pocket money",
+            "Poor; poverty-stricken",
+            "Finance / Financial / Accounting",
+            "To pay / To make a payment"
+          ],
+          "option_pinyin": [
+            "líng qián",
+            "qióng",
+            "cái wù",
+            "zhī fù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Finance / Financial / Accounting",
+          "correct": "财务",
+          "options": [
+            "财务",
+            "价格",
+            "消费",
+            "套"
+          ],
+          "option_pinyin": [
+            "cái wù",
+            "jià gé",
+            "xiāo fèi",
+            "tào"
+          ],
+          "question_chinese": "他在公司负责___工作。",
+          "question_pinyin": "他在公司负责___工作。",
+          "question_english": "He is responsible for financial work."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Finance / Financial / Accounting'?",
+          "correct": "财务",
+          "options": [
+            "支付",
+            "财务",
+            "存",
+            "估计"
+          ],
+          "option_pinyin": [
+            "zhī fù",
+            "cái wù",
+            "cún",
+            "gū jì"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l5_16",
+      "chinese": "块",
+      "pinyin": "kuài",
+      "english": "[Measure word for yuan / pieces of something]",
+      "part_of_speech": "measure word",
+      "example": "这本书只要二十块钱。",
+      "translation": "This book only costs twenty yuan.",
+      "example_pinyin": "zhè běn shū zhǐ yào èr shí kuài qián",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 块 mean?",
+          "correct": "[Measure word for yuan / pieces of something]",
+          "options": [
+            "Income; earnings",
+            "[Measure word for yuan / pieces of something]",
+            "Poor; poverty-stricken",
+            "Bonus; prize money"
+          ],
+          "option_pinyin": [
+            "shōu rù",
+            "kuài",
+            "qióng",
+            "jiǎng jīn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: [Measure word for yuan / pieces of something]",
+          "correct": "块",
+          "options": [
+            "估计",
+            "块",
+            "零钱",
+            "价格"
+          ],
+          "option_pinyin": [
+            "gū jì",
+            "kuài",
+            "líng qián",
+            "jià gé"
+          ],
+          "question_chinese": "这本书只要二十___钱。",
+          "question_pinyin": "这本书只要二十___钱。",
+          "question_english": "This book only costs twenty yuan."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means '[Measure word for yuan / pieces of something]'?",
+          "correct": "块",
+          "options": [
+            "富",
+            "存",
+            "块",
+            "零钱"
           ],
           "option_pinyin": [
             "fù",
-            "làng fèi",
-            "gū jì",
+            "cún",
+            "kuài",
+            "líng qián"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l5_17",
+      "chinese": "笔",
+      "pinyin": "bǐ",
+      "english": "[Measure word for sums of money or written items]",
+      "part_of_speech": "measure word",
+      "example": "他赚了一大笔钱，买了新房子。",
+      "translation": "He earned a large sum of money and bought a new house.",
+      "example_pinyin": "tā zhuàn le yī dà bǐ qián mǎi le xīn fáng zi",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 笔 mean?",
+          "correct": "[Measure word for sums of money or written items]",
+          "options": [
+            "Poor; poverty-stricken",
+            "[Measure word for sums of money or written items]",
+            "Change (small coins); pocket money",
+            "Salary; wages"
+          ],
+          "option_pinyin": [
+            "qióng",
+            "bǐ",
+            "líng qián",
             "gōng zī"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To waste; wasteful",
-          "correct": "浪费",
+          "question": "Fill in: [Measure word for sums of money or written items]",
+          "correct": "笔",
           "options": [
-            "浪费",
+            "付款",
             "奖金",
-            "穷",
-            "赚"
+            "笔",
+            "存"
           ],
           "option_pinyin": [
-            "làng fèi",
+            "fù kuǎn",
             "jiǎng jīn",
-            "qióng",
-            "zhuàn"
+            "bǐ",
+            "cún"
           ],
-          "question_chinese": "不要___钱。",
-          "question_pinyin": "不要___钱。",
-          "question_english": "Don't waste money."
+          "question_chinese": "他赚了一大___钱，买了新房子。",
+          "question_pinyin": "他赚了一大___钱，买了新房子。",
+          "question_english": "He earned a large sum of money."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To waste; wasteful'?",
-          "correct": "浪费",
+          "question": "Which word means '[Measure word for sums of money or written items]'?",
+          "correct": "笔",
           "options": [
-            "浪费",
-            "工资",
-            "估计",
-            "穷"
+            "笔",
+            "收入",
+            "支付",
+            "富"
           ],
           "option_pinyin": [
-            "làng fèi",
-            "gōng zī",
-            "gū jì",
-            "qióng"
+            "bǐ",
+            "shōu rù",
+            "zhī fù",
+            "fù"
           ]
         }
-      ],
-      "example_pinyin": "bú yào làng fèi jīn qián fǒu zé nǐ hěn kuài jiù huì biàn qióng"
+      ]
+    },
+    {
+      "id": "hsk4_l5_18",
+      "chinese": "套",
+      "pinyin": "tào",
+      "english": "[Measure word for sets, suites, or complete collections]",
+      "part_of_speech": "measure word",
+      "example": "他们买了一套新房子。",
+      "translation": "They bought a new apartment.",
+      "example_pinyin": "tā men mǎi le yī tào xīn fáng zi",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 套 mean?",
+          "correct": "[Measure word for sets, suites, or complete collections]",
+          "options": [
+            "Change (small coins); pocket money",
+            "To pay; payment",
+            "[Measure word for sets, suites, or complete collections]",
+            "To save / To economize / Frugal"
+          ],
+          "option_pinyin": [
+            "líng qián",
+            "fù kuǎn",
+            "tào",
+            "jié shěng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: [Measure word for sets, suites, or complete collections]",
+          "correct": "套",
+          "options": [
+            "存",
+            "套",
+            "块",
+            "笔"
+          ],
+          "option_pinyin": [
+            "cún",
+            "tào",
+            "kuài",
+            "bǐ"
+          ],
+          "question_chinese": "他们买了一___新房子。",
+          "question_pinyin": "他们买了一___新房子。",
+          "question_english": "They bought a new apartment."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means '[Measure word for sets, suites, or complete collections]'?",
+          "correct": "套",
+          "options": [
+            "块",
+            "零钱",
+            "套",
+            "节省"
+          ],
+          "option_pinyin": [
+            "kuài",
+            "líng qián",
+            "tào",
+            "jié shěng"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk4_l5_p01",
@@ -905,114 +1301,59 @@
   "grammar_points": [
     {
       "number": 1,
-      "title": "为了 — In order to / For the sake of",
-      "explanation": "为了 expresses purpose or goal. It is placed at the beginning of a sentence or before the verb phrase it modifies. The structure is: 为了 + Goal + Subject + Action. The subject can appear before or after 为了. This pattern is used when someone does something intentionally in pursuit of a specific aim. Example: 为了赚更多钱，他每天工作十二个小时。(In order to earn more money, he works twelve hours every day.)",
+      "title": "名量词 and 动量词 — Nominal and Verbal Measure Words",
+      "explanation": "Chinese uses specific measure words with both nouns and verbs.\n\n名量词 (Nominal Measure Words) — used with nouns to count things:\n• 块 (kuài) — for yuan or informal chunks: 一块钱 (one yuan)\n• 笔 (bǐ) — for sums of money or written items: 一笔收入 (a sum of income)\n• 套 (tào) — for complete sets/suites: 一套房子 (an apartment)\n• 件 (jiàn) — for clothing or matters: 一件衣服 (a piece of clothing)\n\n动量词 (Verbal Measure Words) — placed after the verb to count actions:\n• 遍 (biàn) — complete once through: 看了三遍 (read three times through)\n• 次 (cì) — general times: 去了两次 (went twice)\n• 口 (kǒu) — bites or mouthfuls: 吃了几口 (ate a few bites)\n\nStructure: Verb + Number + 动量词 (e.g., 看了两遍 / 吃了三口)",
       "examples": [
         {
-          "chinese": "为了不浪费工资，她每月都认真记账。",
-          "pinyin": "Wèi le bú làng fèi gōng zī, tā měi yuè dōu rèn zhēn jì zhàng.",
-          "english": "In order not to waste her salary, she keeps careful accounts every month."
+          "chinese": "他赚了一大笔钱，准备买房。",
+          "pinyin": "tā zhuàn le yī dà bǐ qián zhǔn bèi mǎi fáng",
+          "english": "He earned a large sum of money and plans to buy a house."
         },
         {
-          "chinese": "为了存钱买房，他减少了不必要的消费。",
-          "pinyin": "Wèi le cún qián mǎi fáng, tā jiǎn shǎo le bú bì yào de xiāo fèi.",
-          "english": "In order to save money to buy a house, he reduced unnecessary spending."
+          "chinese": "他们买了一套新房子。",
+          "pinyin": "tā men mǎi le yī tào xīn fáng zi",
+          "english": "They bought a new apartment."
+        },
+        {
+          "chinese": "我把这道题做了两遍，终于明白了。",
+          "pinyin": "wǒ bǎ zhè dào tí zuò le liǎng biàn zhōng yú míng bái le",
+          "english": "I worked through this problem twice and finally understood it."
         }
       ],
       "exercises": [
         {
-          "question": "_____ 赚更多钱，他找了第二份工作。",
+          "question": "Choose the correct measure word: 他买了一___新房子。",
           "type": "multiple_choice",
-          "correct": "为了",
+          "correct": "套",
           "options": [
-            "为了",
-            "因为",
-            "虽然",
-            "既然"
+            "套",
+            "条",
+            "颗",
+            "张"
           ],
           "option_pinyin": [
-            "wèi le",
-            "yīn wèi",
-            "suī rán",
-            "jì rán"
-          ],
-          "word_hints": {
-            "赚": "zhuàn"
-          }
-        },
-        {
-          "question": "Choose the correct sentence using 为了.",
-          "type": "multiple_choice",
-          "correct": "为了不浪费，她仔细估计了价格。",
-          "options": [
-            "为了不浪费，她仔细估计了价格。",
-            "她为了不浪费，仔细了估计价格。",
-            "她不浪费为了，仔细估计了价格。",
-            "不浪费为了她，仔细估计了价格。"
-          ],
-          "option_pinyin": [
-            "Wèi le bú làng fèi, tā zǐ xì gū jì le jià gé.",
-            "Tā wèi le bú làng fèi, zǐ xì le gū jì jià gé.",
-            "Tā bú làng fèi wèi le, zǐ xì gū jì le jià gé.",
-            "Bú làng fèi wèi le tā, zǐ xì gū jì le jià gé."
-          ],
-          "word_hints": {
-            "浪费": "làng fèi",
-            "估计": "gū jì",
-            "价格": "jià gé"
-          }
-        },
-        {
-          "question": "她每个月都存钱，_____ 以后可以买房。",
-          "type": "multiple_choice",
-          "correct": "为了",
-          "options": [
-            "为了",
-            "否则",
-            "既然",
-            "即使"
-          ],
-          "option_pinyin": [
-            "wèi le",
-            "fǒu zé",
-            "jì rán",
-            "jí shǐ"
+            "tào",
+            "tiáo",
+            "kē",
+            "zhāng"
           ],
           "word_hints": {}
         },
         {
-          "question": "Which sentence uses 为了 correctly?",
+          "question": "Which sentence correctly uses a 动量词?",
           "type": "multiple_choice",
-          "correct": "为了学好中文，他每天练习两个小时。",
+          "correct": "我看了这本书两遍，记住了所有内容。",
           "options": [
-            "为了学好中文，他每天练习两个小时。",
-            "他每天练习两个小时，为了学好中文的。",
-            "他为了每天练习学好中文两个小时。",
-            "他学好中文每天练习为了两个小时。"
+            "我看了这本书两遍，记住了所有内容。",
+            "我看了两本遍书，记住了内容。",
+            "遍两我看了这本书，记住了。",
+            "我看遍了这本书两，记住了。"
           ],
           "option_pinyin": [
-            "",
+            "wǒ kàn le zhè běn shū liǎng biàn jì zhù le suǒ yǒu nèi róng",
             "",
             "",
             ""
-          ],
-          "word_hints": {}
-        },
-        {
-          "question": "他 _____ 节省开支，每天带饭上班。",
-          "type": "multiple_choice",
-          "correct": "为了",
-          "options": [
-            "为了",
-            "通过",
-            "对于",
-            "从来"
-          ],
-          "option_pinyin": [
-            "wèi le",
-            "tōng guò",
-            "duì yú",
-            "cóng lái"
           ],
           "word_hints": {}
         }
@@ -1020,56 +1361,56 @@
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "为了 + VP expresses the _____ of an action.",
-          "correct": "Purpose (why the action is done — the goal being aimed for)",
+          "question": "名量词 (nominal measure words) are used with...",
+          "correct": "Nouns — to count people, objects, or amounts",
           "options": [
-            "Purpose (why the action is done — the goal being aimed for)",
-            "Result (what happened after the action)",
-            "Duration (how long the action takes)",
-            "Manner (how the action is performed)"
+            "Nouns — to count people, objects, or amounts",
+            "Verbs — to count how many times an action occurs",
+            "Adjectives — to show degrees of comparison",
+            "Time expressions — to measure duration"
           ],
           "option_pinyin": [
-            "mù de",
-            "jié guǒ",
-            "shí duàn",
-            "fāng shì"
+            "míng liàng cí",
+            "dòng liàng cí",
+            "",
+            ""
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: In order to earn more money, he works overtime every day.",
-          "correct": "为了",
+          "question": "Fill in: He earned a large sum of money.",
+          "correct": "笔",
           "options": [
-            "为了",
-            "因为",
-            "既然",
-            "否则"
+            "笔",
+            "块",
+            "套",
+            "件"
           ],
           "option_pinyin": [
-            "wèi le",
-            "yīn wèi",
-            "jì rán",
-            "fǒu zé"
+            "bǐ",
+            "kuài",
+            "tào",
+            "jiàn"
           ],
-          "question_chinese": "他___赚更多钱，每天加班。",
-          "question_pinyin": "他___赚更多钱，每天加班。",
-          "question_english": "In order to earn more money, he works overtime every day."
+          "question_chinese": "他赚了一大___钱，买了新房子。",
+          "question_pinyin": "他赚了一大___钱，买了新房子。",
+          "question_english": "He earned a large sum of money and bought a new house."
         },
         {
           "type": "multiple_choice",
-          "question": "Which sentence correctly uses 为了?",
-          "correct": "为了节约，他不买零食。",
+          "question": "Which sentence correctly uses a 动量词 (verbal measure word)?",
+          "correct": "我看了这本书两遍，记住了所有内容。",
           "options": [
-            "为了节约，他不买零食。",
-            "他不买零食，为了节约。",
-            "为了他节约，不买零食。",
-            "他节约为了，不买零食。"
+            "我看了这本书两遍，记住了所有内容。",
+            "我看了两本书遍，记住了内容。",
+            "我遍看了这本书两，记住了内容。",
+            "两遍我看了这本书，记住了。"
           ],
           "option_pinyin": [
-            "wèi le jié yuē tā bù mǎi líng shí",
-            "tā bù mǎi líng shí wèi le jié yuē",
-            "wèi le tā jié yuē bù mǎi líng shí",
-            "tā jié yuē wèi le bù mǎi líng shí"
+            "wǒ kàn le zhè běn shū liǎng biàn jì zhù le suǒ yǒu nèi róng",
+            "",
+            "",
+            ""
           ]
         }
       ]

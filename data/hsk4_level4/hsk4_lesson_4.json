@@ -21,15 +21,15 @@
           "correct": "Profession; occupation; career",
           "options": [
             "Profession; occupation; career",
-            "To manage; management",
+            "Reporter; journalist",
             "Professor; to teach (advanced level)",
-            "To become"
+            "PhD; doctor (academic)"
           ],
           "option_pinyin": [
             "zhí yè",
-            "guǎn lǐ",
+            "jì zhě",
             "jiào shòu",
-            "chéng wéi"
+            "bó shì"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: Profession; occupation; career",
           "correct": "职业",
           "options": [
+            "招聘",
             "职业",
-            "背景",
-            "教授",
-            "成功"
+            "成功",
+            "教授"
           ],
           "option_pinyin": [
+            "zhāo pìn",
             "zhí yè",
-            "bèi jǐng",
-            "jiào shòu",
-            "chéng gōng"
+            "chéng gōng",
+            "jiào shòu"
           ],
-          "question_chinese": "你的___是什么？",
-          "question_pinyin": "你的___是什么？",
-          "question_english": "What is your occupation?"
+          "question_chinese": "她决定应聘这个职位，因为她对___发展非常重视。",
+          "question_pinyin": "她决定应聘这个职位，因为她对___发展非常重视。",
+          "question_english": "She decided to apply for this position because she places great importance on career development."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Profession; occupation; career'?",
           "correct": "职业",
           "options": [
+            "经历",
+            "博士",
             "成为",
-            "职业",
-            "教授",
-            "成功"
+            "职业"
           ],
           "option_pinyin": [
+            "jīng lì",
+            "bó shì",
             "chéng wéi",
-            "zhí yè",
-            "jiào shòu",
-            "chéng gōng"
+            "zhí yè"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 技术 mean?",
           "correct": "Technology; technique; skill",
           "options": [
+            "Project; program; item",
             "Success; to succeed; successful",
-            "To be responsible for; responsible",
             "Technology; technique; skill",
-            "Professor; to teach (advanced level)"
+            "Reporter; journalist"
           ],
           "option_pinyin": [
+            "xiàng mù",
             "chéng gōng",
-            "fù zé",
             "jì shù",
-            "jiào shòu"
+            "jì zhě"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: Technology; technique; skill",
           "correct": "技术",
           "options": [
+            "经历",
+            "招聘",
             "技术",
-            "管理",
-            "成功",
-            "教授"
+            "宣传"
           ],
           "option_pinyin": [
+            "jīng lì",
+            "zhāo pìn",
             "jì shù",
-            "guǎn lǐ",
-            "chéng gōng",
-            "jiào shòu"
+            "xuān chuán"
           ],
-          "question_chinese": "他有很好的___。",
-          "question_pinyin": "他有很好的___。",
-          "question_english": "He has very good technical skills."
+          "question_chinese": "她继续提高___水平，希望成为一名博士。",
+          "question_pinyin": "她继续提高___水平，希望成为一名博士。",
+          "question_english": "She continues to improve her technical skills, hoping to become a PhD."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Technology; technique; skill'?",
           "correct": "技术",
           "options": [
+            "记者",
+            "技术",
             "经历",
-            "成为",
-            "经验",
-            "技术"
+            "博士"
           ],
           "option_pinyin": [
+            "jì zhě",
+            "jì shù",
             "jīng lì",
-            "chéng wéi",
-            "jīng yàn",
-            "jì shù"
+            "bó shì"
           ]
         }
       ],
@@ -152,16 +152,16 @@
           "question": "What does 经历 mean?",
           "correct": "Experience; to experience",
           "options": [
-            "Profession; occupation; career",
+            "Experience; to experience",
+            "To apply for a job",
             "To be responsible for; responsible",
-            "To become",
-            "Experience; to experience"
+            "Profession; occupation; career"
           ],
           "option_pinyin": [
-            "zhí yè",
+            "jīng lì",
+            "yìng pìn",
             "fù zé",
-            "chéng wéi",
-            "jīng lì"
+            "zhí yè"
           ]
         },
         {
@@ -169,20 +169,20 @@
           "question": "Fill in: Experience; to experience",
           "correct": "经历",
           "options": [
-            "职业",
-            "经验",
-            "管理",
-            "经历"
+            "态度",
+            "经历",
+            "负责",
+            "成为"
           ],
           "option_pinyin": [
-            "zhí yè",
-            "jīng yàn",
-            "guǎn lǐ",
-            "jīng lì"
+            "tài dù",
+            "jīng lì",
+            "fù zé",
+            "chéng wéi"
           ],
-          "question_chinese": "这是一次宝贵的___。",
-          "question_pinyin": "这是一次宝贵的___。",
-          "question_english": "This is a valuable experience."
+          "question_chinese": "他通过在公司工作获得了宝贵的___。",
+          "question_pinyin": "他通过在公司工作获得了宝贵的___。",
+          "question_english": "He gained valuable experience through working at the company."
         },
         {
           "type": "multiple_choice",
@@ -190,15 +190,15 @@
           "correct": "经历",
           "options": [
             "经历",
-            "记者",
             "博士",
-            "教授"
+            "态度",
+            "经验"
           ],
           "option_pinyin": [
             "jīng lì",
-            "jì zhě",
             "bó shì",
-            "jiào shòu"
+            "tài dù",
+            "jīng yàn"
           ]
         }
       ],
@@ -218,15 +218,15 @@
           "question": "What does 经验 mean?",
           "correct": "Experience (gained knowledge)",
           "options": [
-            "Background; backdrop; context",
             "Professor; to teach (advanced level)",
-            "To be responsible for; responsible",
+            "Technology; technique; skill",
+            "Reporter; journalist",
             "Experience (gained knowledge)"
           ],
           "option_pinyin": [
-            "bèi jǐng",
             "jiào shòu",
-            "fù zé",
+            "jì shù",
+            "jì zhě",
             "jīng yàn"
           ]
         },
@@ -235,20 +235,20 @@
           "question": "Fill in: Experience (gained knowledge)",
           "correct": "经验",
           "options": [
-            "经历",
-            "经验",
+            "记者",
             "负责",
-            "应聘"
+            "经验",
+            "博士"
           ],
           "option_pinyin": [
-            "jīng lì",
-            "jīng yàn",
+            "jì zhě",
             "fù zé",
-            "yìng pìn"
+            "jīng yàn",
+            "bó shì"
           ],
-          "question_chinese": "他有丰富的工作___。",
-          "question_pinyin": "他有丰富的工作___。",
-          "question_english": "He has rich work experience."
+          "question_chinese": "通过不断积累___，他终于成为了一名成功的记者。",
+          "question_pinyin": "通过不断积累___，他终于成为了一名成功的记者。",
+          "question_english": "Through continuously accumulating experience, he finally became a successful reporter."
         },
         {
           "type": "multiple_choice",
@@ -256,15 +256,15 @@
           "correct": "经验",
           "options": [
             "经验",
-            "成为",
-            "博士",
-            "经历"
+            "招聘",
+            "负责",
+            "教授"
           ],
           "option_pinyin": [
             "jīng yàn",
-            "chéng wéi",
-            "bó shì",
-            "jīng lì"
+            "zhāo pìn",
+            "fù zé",
+            "jiào shòu"
           ]
         }
       ],
@@ -284,16 +284,16 @@
           "question": "What does 负责 mean?",
           "correct": "To be responsible for; responsible",
           "options": [
-            "To be responsible for; responsible",
-            "Reporter; journalist",
+            "Success; to succeed; successful",
             "Project; program; item",
-            "Professor; to teach (advanced level)"
+            "To recruit; to hire; recruitment",
+            "To be responsible for; responsible"
           ],
           "option_pinyin": [
-            "fù zé",
-            "jì zhě",
+            "chéng gōng",
             "xiàng mù",
-            "jiào shòu"
+            "zhāo pìn",
+            "fù zé"
           ]
         },
         {
@@ -301,35 +301,35 @@
           "question": "Fill in: To be responsible for; responsible",
           "correct": "负责",
           "options": [
+            "宣传",
+            "博士",
             "负责",
-            "职业",
-            "成功",
-            "招聘"
+            "技术"
           ],
           "option_pinyin": [
+            "xuān chuán",
+            "bó shì",
             "fù zé",
-            "zhí yè",
-            "chéng gōng",
-            "zhāo pìn"
+            "jì shù"
           ],
-          "question_chinese": "他___这个项目。",
-          "question_pinyin": "他___这个项目。",
-          "question_english": "He is responsible for this project."
+          "question_chinese": "他不仅___项目管理，而且还负责招聘新员工。",
+          "question_pinyin": "他不仅___项目管理，而且还负责招聘新员工。",
+          "question_english": "He is not only responsible for project management, but also for recruiting new employees."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To be responsible for; responsible'?",
           "correct": "负责",
           "options": [
-            "招聘",
-            "记者",
-            "应聘",
+            "管理",
+            "技术",
+            "态度",
             "负责"
           ],
           "option_pinyin": [
-            "zhāo pìn",
-            "jì zhě",
-            "yìng pìn",
+            "guǎn lǐ",
+            "jì shù",
+            "tài dù",
             "fù zé"
           ]
         }
@@ -351,15 +351,15 @@
           "correct": "To manage; management",
           "options": [
             "To manage; management",
-            "Profession; occupation; career",
-            "Professor; to teach (advanced level)",
-            "To apply for a job"
+            "Project; program; item",
+            "Technology; technique; skill",
+            "Experience; to experience"
           ],
           "option_pinyin": [
             "guǎn lǐ",
-            "zhí yè",
-            "jiào shòu",
-            "yìng pìn"
+            "xiàng mù",
+            "jì shù",
+            "jīng lì"
           ]
         },
         {
@@ -367,36 +367,36 @@
           "question": "Fill in: To manage; management",
           "correct": "管理",
           "options": [
+            "职业",
             "管理",
             "记者",
-            "应聘",
-            "成功"
+            "经验"
           ],
           "option_pinyin": [
+            "zhí yè",
             "guǎn lǐ",
             "jì zhě",
-            "yìng pìn",
-            "chéng gōng"
+            "jīng yàn"
           ],
-          "question_chinese": "她___一个大团队。",
-          "question_pinyin": "她___一个大团队。",
-          "question_english": "She manages a large team."
+          "question_chinese": "这家公司正在招聘有经验的教授来___研究团队。",
+          "question_pinyin": "这家公司正在招聘有经验的教授来___研究团队。",
+          "question_english": "This company is recruiting experienced professors to manage the research team."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To manage; management'?",
           "correct": "管理",
           "options": [
-            "成功",
-            "项目",
-            "技术",
-            "管理"
+            "职业",
+            "成为",
+            "管理",
+            "项目"
           ],
           "option_pinyin": [
-            "chéng gōng",
-            "xiàng mù",
-            "jì shù",
-            "guǎn lǐ"
+            "zhí yè",
+            "chéng wéi",
+            "guǎn lǐ",
+            "xiàng mù"
           ]
         }
       ],
@@ -416,16 +416,16 @@
           "question": "What does 成功 mean?",
           "correct": "Success; to succeed; successful",
           "options": [
+            "To become",
+            "To publicize / Publicity / Promotion",
             "Success; to succeed; successful",
-            "To be responsible for; responsible",
-            "To apply for a job",
-            "Project; program; item"
+            "Reporter; journalist"
           ],
           "option_pinyin": [
+            "chéng wéi",
+            "xuān chuán",
             "chéng gōng",
-            "fù zé",
-            "yìng pìn",
-            "xiàng mù"
+            "jì zhě"
           ]
         },
         {
@@ -433,36 +433,36 @@
           "question": "Fill in: Success; to succeed; successful",
           "correct": "成功",
           "options": [
+            "经历",
             "成功",
-            "应聘",
-            "负责",
-            "背景"
+            "招聘",
+            "应聘"
           ],
           "option_pinyin": [
+            "jīng lì",
             "chéng gōng",
-            "yìng pìn",
-            "fù zé",
-            "bèi jǐng"
+            "zhāo pìn",
+            "yìng pìn"
           ],
-          "question_chinese": "他的努力让他___了。",
-          "question_pinyin": "他的努力让他___了。",
-          "question_english": "His hard work led to his success."
+          "question_chinese": "通过不断积累经验，他终于成为了一名___的记者。",
+          "question_pinyin": "通过不断积累经验，他终于成为了一名___的记者。",
+          "question_english": "Through continuously accumulating experience, he finally became a successful reporter."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Success; to succeed; successful'?",
           "correct": "成功",
           "options": [
-            "记者",
+            "项目",
+            "宣传",
             "成功",
-            "教授",
-            "博士"
+            "态度"
           ],
           "option_pinyin": [
-            "jì zhě",
+            "xiàng mù",
+            "xuān chuán",
             "chéng gōng",
-            "jiào shòu",
-            "bó shì"
+            "tài dù"
           ]
         }
       ],
@@ -482,16 +482,16 @@
           "question": "What does 成为 mean?",
           "correct": "To become",
           "options": [
-            "To recruit; to hire; recruitment",
-            "PhD; doctor (academic)",
-            "Professor; to teach (advanced level)",
-            "To become"
+            "Technology; technique; skill",
+            "To be responsible for; responsible",
+            "To become",
+            "Profession; occupation; career"
           ],
           "option_pinyin": [
-            "zhāo pìn",
-            "bó shì",
-            "jiào shòu",
-            "chéng wéi"
+            "jì shù",
+            "fù zé",
+            "chéng wéi",
+            "zhí yè"
           ]
         },
         {
@@ -499,36 +499,36 @@
           "question": "Fill in: To become",
           "correct": "成为",
           "options": [
+            "教授",
             "负责",
-            "经历",
-            "成为",
-            "成功"
+            "技术",
+            "成为"
           ],
           "option_pinyin": [
+            "jiào shòu",
             "fù zé",
-            "jīng lì",
-            "chéng wéi",
-            "chéng gōng"
+            "jì shù",
+            "chéng wéi"
           ],
-          "question_chinese": "她想___一名医生。",
-          "question_pinyin": "她想___一名医生。",
-          "question_english": "She wants to become a doctor."
+          "question_chinese": "她继续提高技术水平，希望___一名博士。",
+          "question_pinyin": "她继续提高技术水平，希望___一名博士。",
+          "question_english": "She continues to improve her technical skills, hoping to become a PhD."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To become'?",
           "correct": "成为",
           "options": [
+            "项目",
+            "博士",
             "成为",
-            "成功",
-            "招聘",
-            "项目"
+            "记者"
           ],
           "option_pinyin": [
+            "xiàng mù",
+            "bó shì",
             "chéng wéi",
-            "chéng gōng",
-            "zhāo pìn",
-            "xiàng mù"
+            "jì zhě"
           ]
         }
       ],
@@ -548,16 +548,16 @@
           "question": "What does 教授 mean?",
           "correct": "Professor; to teach (advanced level)",
           "options": [
-            "Background; backdrop; context",
-            "Professor; to teach (advanced level)",
-            "To manage; management",
-            "To recruit; to hire; recruitment"
+            "Attitude / Manner / Stance",
+            "To publicize / Publicity / Promotion",
+            "To become",
+            "Professor; to teach (advanced level)"
           ],
           "option_pinyin": [
-            "bèi jǐng",
-            "jiào shòu",
-            "guǎn lǐ",
-            "zhāo pìn"
+            "tài dù",
+            "xuān chuán",
+            "chéng wéi",
+            "jiào shòu"
           ]
         },
         {
@@ -565,36 +565,36 @@
           "question": "Fill in: Professor; to teach (advanced level)",
           "correct": "教授",
           "options": [
-            "招聘",
-            "成功",
+            "博士",
+            "经验",
             "教授",
-            "背景"
+            "技术"
           ],
           "option_pinyin": [
-            "zhāo pìn",
-            "chéng gōng",
+            "bó shì",
+            "jīng yàn",
             "jiào shòu",
-            "bèi jǐng"
+            "jì shù"
           ],
-          "question_chinese": "他是一位___。",
-          "question_pinyin": "他是一位___。",
-          "question_english": "He is a professor."
+          "question_chinese": "这家公司正在招聘有经验的___来管理研究团队。",
+          "question_pinyin": "这家公司正在招聘有经验的___来管理研究团队。",
+          "question_english": "This company is recruiting experienced professors to manage the research team."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Professor; to teach (advanced level)'?",
           "correct": "教授",
           "options": [
-            "背景",
+            "负责",
             "教授",
-            "成为",
-            "技术"
+            "技术",
+            "应聘"
           ],
           "option_pinyin": [
-            "bèi jǐng",
+            "fù zé",
             "jiào shòu",
-            "chéng wéi",
-            "jì shù"
+            "jì shù",
+            "yìng pìn"
           ]
         }
       ],
@@ -614,16 +614,16 @@
           "question": "What does 记者 mean?",
           "correct": "Reporter; journalist",
           "options": [
-            "To become",
-            "Profession; occupation; career",
+            "Success; to succeed; successful",
+            "Professor; to teach (advanced level)",
             "Reporter; journalist",
-            "To apply for a job"
+            "Background; backdrop; context"
           ],
           "option_pinyin": [
-            "chéng wéi",
-            "zhí yè",
+            "chéng gōng",
+            "jiào shòu",
             "jì zhě",
-            "yìng pìn"
+            "bèi jǐng"
           ]
         },
         {
@@ -631,33 +631,33 @@
           "question": "Fill in: Reporter; journalist",
           "correct": "记者",
           "options": [
-            "负责",
+            "招聘",
             "成为",
-            "记者",
-            "职业"
+            "态度",
+            "记者"
           ],
           "option_pinyin": [
-            "fù zé",
+            "zhāo pìn",
             "chéng wéi",
-            "jì zhě",
-            "zhí yè"
+            "tài dù",
+            "jì zhě"
           ],
-          "question_chinese": "她是一名___。",
-          "question_pinyin": "她是一名___。",
-          "question_english": "She is a journalist."
+          "question_chinese": "通过不断积累经验，他终于成为了一名成功的___。",
+          "question_pinyin": "通过不断积累经验，他终于成为了一名成功的___。",
+          "question_english": "Through continuously accumulating experience, he finally became a successful reporter."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Reporter; journalist'?",
           "correct": "记者",
           "options": [
-            "成功",
+            "博士",
             "教授",
             "记者",
             "负责"
           ],
           "option_pinyin": [
-            "chéng gōng",
+            "bó shì",
             "jiào shòu",
             "jì zhě",
             "fù zé"
@@ -680,16 +680,16 @@
           "question": "What does 博士 mean?",
           "correct": "PhD; doctor (academic)",
           "options": [
-            "PhD; doctor (academic)",
-            "Profession; occupation; career",
-            "Experience (gained knowledge)",
-            "To become"
+            "Experience; to experience",
+            "Background; backdrop; context",
+            "Technology; technique; skill",
+            "PhD; doctor (academic)"
           ],
           "option_pinyin": [
-            "bó shì",
-            "zhí yè",
-            "jīng yàn",
-            "chéng wéi"
+            "jīng lì",
+            "bèi jǐng",
+            "jì shù",
+            "bó shì"
           ]
         },
         {
@@ -697,36 +697,36 @@
           "question": "Fill in: PhD; doctor (academic)",
           "correct": "博士",
           "options": [
-            "应聘",
-            "职业",
-            "博士",
-            "背景"
+            "经历",
+            "负责",
+            "技术",
+            "博士"
           ],
           "option_pinyin": [
-            "yìng pìn",
-            "zhí yè",
-            "bó shì",
-            "bèi jǐng"
+            "jīng lì",
+            "fù zé",
+            "jì shù",
+            "bó shì"
           ],
-          "question_chinese": "他拿到了___学位。",
-          "question_pinyin": "他拿到了___学位。",
-          "question_english": "He obtained his doctorate degree."
+          "question_chinese": "她继续提高技术水平，希望成为一名___。",
+          "question_pinyin": "她继续提高技术水平，希望成为一名___。",
+          "question_english": "She continues to improve her technical skills, hoping to become a PhD."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'PhD; doctor (academic)'?",
           "correct": "博士",
           "options": [
-            "经历",
-            "职业",
-            "经验",
-            "博士"
+            "博士",
+            "背景",
+            "招聘",
+            "记者"
           ],
           "option_pinyin": [
-            "jīng lì",
-            "zhí yè",
-            "jīng yàn",
-            "bó shì"
+            "bó shì",
+            "bèi jǐng",
+            "zhāo pìn",
+            "jì zhě"
           ]
         }
       ],
@@ -746,16 +746,16 @@
           "question": "What does 招聘 mean?",
           "correct": "To recruit; to hire; recruitment",
           "options": [
-            "Background; backdrop; context",
-            "Success; to succeed; successful",
-            "To become",
-            "To recruit; to hire; recruitment"
+            "To recruit; to hire; recruitment",
+            "To apply for a job",
+            "Attitude / Manner / Stance",
+            "Profession; occupation; career"
           ],
           "option_pinyin": [
-            "bèi jǐng",
-            "chéng gōng",
-            "chéng wéi",
-            "zhāo pìn"
+            "zhāo pìn",
+            "yìng pìn",
+            "tài dù",
+            "zhí yè"
           ]
         },
         {
@@ -763,35 +763,35 @@
           "question": "Fill in: To recruit; to hire; recruitment",
           "correct": "招聘",
           "options": [
-            "博士",
-            "应聘",
+            "经历",
             "招聘",
-            "教授"
+            "负责",
+            "态度"
           ],
           "option_pinyin": [
-            "bó shì",
-            "yìng pìn",
+            "jīng lì",
             "zhāo pìn",
-            "jiào shòu"
+            "fù zé",
+            "tài dù"
           ],
-          "question_chinese": "这家公司正在___新员工。",
-          "question_pinyin": "这家公司正在___新员工。",
-          "question_english": "This company is hiring new employees."
+          "question_chinese": "这家公司正在___有经验的教授来管理研究团队。",
+          "question_pinyin": "这家公司正在___有经验的教授来管理研究团队。",
+          "question_english": "This company is recruiting experienced professors to manage the research team."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To recruit; to hire; recruitment'?",
           "correct": "招聘",
           "options": [
-            "成功",
-            "负责",
-            "记者",
+            "背景",
+            "管理",
+            "博士",
             "招聘"
           ],
           "option_pinyin": [
-            "chéng gōng",
-            "fù zé",
-            "jì zhě",
+            "bèi jǐng",
+            "guǎn lǐ",
+            "bó shì",
             "zhāo pìn"
           ]
         }
@@ -812,15 +812,15 @@
           "question": "What does 应聘 mean?",
           "correct": "To apply for a job",
           "options": [
-            "To become",
+            "To be responsible for; responsible",
             "To apply for a job",
-            "To recruit; to hire; recruitment",
+            "Experience (gained knowledge)",
             "PhD; doctor (academic)"
           ],
           "option_pinyin": [
-            "chéng wéi",
+            "fù zé",
             "yìng pìn",
-            "zhāo pìn",
+            "jīng yàn",
             "bó shì"
           ]
         },
@@ -829,36 +829,36 @@
           "question": "Fill in: To apply for a job",
           "correct": "应聘",
           "options": [
-            "教授",
+            "项目",
             "应聘",
-            "管理",
-            "经历"
+            "博士",
+            "背景"
           ],
           "option_pinyin": [
-            "jiào shòu",
+            "xiàng mù",
             "yìng pìn",
-            "guǎn lǐ",
-            "jīng lì"
+            "bó shì",
+            "bèi jǐng"
           ],
-          "question_chinese": "她去___那个职位。",
-          "question_pinyin": "她去___那个职位。",
-          "question_english": "She went to apply for that position."
+          "question_chinese": "她决定___这个职位，因为她对职业发展非常重视。",
+          "question_pinyin": "她决定___这个职位，因为她对职业发展非常重视。",
+          "question_english": "She decided to apply for this position because she places great importance on career development."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To apply for a job'?",
           "correct": "应聘",
           "options": [
-            "成为",
-            "教授",
-            "项目",
-            "应聘"
+            "背景",
+            "应聘",
+            "管理",
+            "招聘"
           ],
           "option_pinyin": [
-            "chéng wéi",
-            "jiào shòu",
-            "xiàng mù",
-            "yìng pìn"
+            "bèi jǐng",
+            "yìng pìn",
+            "guǎn lǐ",
+            "zhāo pìn"
           ]
         }
       ],
@@ -878,16 +878,16 @@
           "question": "What does 背景 mean?",
           "correct": "Background; backdrop; context",
           "options": [
+            "Reporter; journalist",
             "Background; backdrop; context",
-            "To apply for a job",
-            "Experience (gained knowledge)",
-            "Technology; technique; skill"
+            "To publicize / Publicity / Promotion",
+            "PhD; doctor (academic)"
           ],
           "option_pinyin": [
+            "jì zhě",
             "bèi jǐng",
-            "yìng pìn",
-            "jīng yàn",
-            "jì shù"
+            "xuān chuán",
+            "bó shì"
           ]
         },
         {
@@ -895,36 +895,36 @@
           "question": "Fill in: Background; backdrop; context",
           "correct": "背景",
           "options": [
-            "教授",
-            "背景",
-            "成功",
-            "成为"
+            "技术",
+            "经验",
+            "成为",
+            "背景"
           ],
           "option_pinyin": [
-            "jiào shòu",
-            "bèi jǐng",
-            "chéng gōng",
-            "chéng wéi"
+            "jì shù",
+            "jīng yàn",
+            "chéng wéi",
+            "bèi jǐng"
           ],
-          "question_chinese": "他有很好的教育___。",
-          "question_pinyin": "他有很好的教育___。",
-          "question_english": "He has a good educational background."
+          "question_chinese": "请介绍一下你的工作经历和技术___。",
+          "question_pinyin": "请介绍一下你的工作经历和技术___。",
+          "question_english": "Please introduce your work experience and technical background."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Background; backdrop; context'?",
           "correct": "背景",
           "options": [
-            "教授",
-            "博士",
+            "技术",
+            "背景",
             "管理",
-            "背景"
+            "态度"
           ],
           "option_pinyin": [
-            "jiào shòu",
-            "bó shì",
+            "jì shù",
+            "bèi jǐng",
             "guǎn lǐ",
-            "bèi jǐng"
+            "tài dù"
           ]
         }
       ],
@@ -944,16 +944,16 @@
           "question": "What does 项目 mean?",
           "correct": "Project; program; item",
           "options": [
-            "To recruit; to hire; recruitment",
-            "Technology; technique; skill",
-            "To become",
-            "Project; program; item"
+            "To apply for a job",
+            "Reporter; journalist",
+            "Project; program; item",
+            "PhD; doctor (academic)"
           ],
           "option_pinyin": [
-            "zhāo pìn",
-            "jì shù",
-            "chéng wéi",
-            "xiàng mù"
+            "yìng pìn",
+            "jì zhě",
+            "xiàng mù",
+            "bó shì"
           ]
         },
         {
@@ -961,40 +961,172 @@
           "question": "Fill in: Project; program; item",
           "correct": "项目",
           "options": [
+            "职业",
             "项目",
-            "博士",
-            "技术",
-            "职业"
+            "背景",
+            "管理"
           ],
           "option_pinyin": [
+            "zhí yè",
             "xiàng mù",
-            "bó shì",
-            "jì shù",
-            "zhí yè"
+            "bèi jǐng",
+            "guǎn lǐ"
           ],
-          "question_chinese": "这个___非常重要。",
-          "question_pinyin": "这个___非常重要。",
-          "question_english": "This project is very important."
+          "question_chinese": "他负责公司最重要的___，压力非常大。",
+          "question_pinyin": "他负责公司最重要的___，压力非常大。",
+          "question_english": "He is responsible for the company's most important project, which puts him under a lot of pressure."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Project; program; item'?",
           "correct": "项目",
           "options": [
-            "背景",
+            "管理",
+            "负责",
             "项目",
-            "经验",
-            "成为"
+            "应聘"
           ],
           "option_pinyin": [
-            "bèi jǐng",
+            "guǎn lǐ",
+            "fù zé",
             "xiàng mù",
-            "jīng yàn",
-            "chéng wéi"
+            "yìng pìn"
           ]
         }
       ],
       "example_pinyin": "tā fù zé gōng sī zuì zhòng yào de xiàng mù yā lì fēi cháng dà"
+    },
+    {
+      "id": "hsk4_l4_16",
+      "chinese": "宣传",
+      "pinyin": "xuān chuán",
+      "english": "To publicize / Publicity / Promotion",
+      "part_of_speech": "verb/noun",
+      "example": "公司需要做好宣传工作来吸引更多客户。",
+      "translation": "The company needs to do good publicity work to attract more clients.",
+      "example_pinyin": "gōng sī xū yào zuò hǎo xuān chuán gōng zuò lái xī yǐn gèng duō kè hù",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 宣传 mean?",
+          "correct": "To publicize / Publicity / Promotion",
+          "options": [
+            "Project; program; item",
+            "Technology; technique; skill",
+            "To publicize / Publicity / Promotion",
+            "Experience; to experience"
+          ],
+          "option_pinyin": [
+            "xiàng mù",
+            "jì shù",
+            "xuān chuán",
+            "jīng lì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To publicize / Publicity / Promotion",
+          "correct": "宣传",
+          "options": [
+            "教授",
+            "宣传",
+            "招聘",
+            "技术"
+          ],
+          "option_pinyin": [
+            "jiào shòu",
+            "xuān chuán",
+            "zhāo pìn",
+            "jì shù"
+          ],
+          "question_chinese": "公司需要做好___工作来吸引更多客户。",
+          "question_pinyin": "公司需要做好___工作来吸引更多客户。",
+          "question_english": "The company needs to do good publicity work."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To publicize / Publicity / Promotion'?",
+          "correct": "宣传",
+          "options": [
+            "技术",
+            "宣传",
+            "招聘",
+            "教授"
+          ],
+          "option_pinyin": [
+            "jì shù",
+            "xuān chuán",
+            "zhāo pìn",
+            "jiào shòu"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l4_17",
+      "chinese": "态度",
+      "pinyin": "tài dù",
+      "english": "Attitude / Manner / Stance",
+      "part_of_speech": "noun",
+      "example": "工作态度非常重要，影响工作结果。",
+      "translation": "Work attitude is very important and affects work results.",
+      "example_pinyin": "gōng zuò tài dù fēi cháng zhòng yào yǐng xiǎng gōng zuò jié guǒ",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 态度 mean?",
+          "correct": "Attitude / Manner / Stance",
+          "options": [
+            "Project; program; item",
+            "Attitude / Manner / Stance",
+            "Experience (gained knowledge)",
+            "Technology; technique; skill"
+          ],
+          "option_pinyin": [
+            "xiàng mù",
+            "tài dù",
+            "jīng yàn",
+            "jì shù"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Attitude / Manner / Stance",
+          "correct": "态度",
+          "options": [
+            "态度",
+            "职业",
+            "经验",
+            "教授"
+          ],
+          "option_pinyin": [
+            "tài dù",
+            "zhí yè",
+            "jīng yàn",
+            "jiào shòu"
+          ],
+          "question_chinese": "工作___非常重要，影响工作结果。",
+          "question_pinyin": "工作___非常重要，影响工作结果。",
+          "question_english": "Work attitude is very important."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Attitude / Manner / Stance'?",
+          "correct": "态度",
+          "options": [
+            "背景",
+            "态度",
+            "教授",
+            "项目"
+          ],
+          "option_pinyin": [
+            "bèi jǐng",
+            "tài dù",
+            "jiào shòu",
+            "xiàng mù"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk4_l4_p01",

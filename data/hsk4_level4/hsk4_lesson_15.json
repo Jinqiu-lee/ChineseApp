@@ -20,16 +20,16 @@
           "question": "What does 京剧 mean?",
           "correct": "Peking Opera",
           "options": [
-            "Performance; to perform",
-            "Novel; fiction",
             "Peking Opera",
-            "Art; the arts"
+            "To attract",
+            "Magazine",
+            "Actor; actress"
           ],
           "option_pinyin": [
-            "yǎn chū",
-            "xiǎo shuō",
             "jīng jù",
-            "yì shù"
+            "xī yǐn",
+            "zá zhì",
+            "yǎn yuán"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: Peking Opera",
           "correct": "京剧",
           "options": [
+            "订阅",
             "京剧",
-            "演员",
-            "精彩",
-            "杂志"
+            "演出",
+            "著名"
           ],
           "option_pinyin": [
+            "dìng yuè",
             "jīng jù",
-            "yǎn yuán",
-            "jīng cǎi",
-            "zá zhì"
+            "yǎn chū",
+            "zhù míng"
           ],
-          "question_chinese": "她喜欢看___。",
-          "question_pinyin": "她喜欢看___。",
-          "question_english": "She likes watching Peking Opera."
+          "question_chinese": "这场___演出非常精彩，吸引了很多外国观众。",
+          "question_pinyin": "这场___演出非常精彩，吸引了很多外国观众。",
+          "question_english": "This Peking Opera performance was brilliant and attracted many foreign audience members."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Peking Opera'?",
           "correct": "京剧",
           "options": [
+            "吸引",
             "京剧",
             "著名",
-            "小说",
-            "表演"
+            "价值观"
           ],
           "option_pinyin": [
+            "xī yǐn",
             "jīng jù",
             "zhù míng",
-            "xiǎo shuō",
-            "biǎo yǎn"
+            "jià zhí guān"
           ]
         }
       ],
@@ -86,16 +86,16 @@
           "question": "What does 演员 mean?",
           "correct": "Actor; actress",
           "options": [
+            "Charm / Charisma / Appeal",
+            "Reading; to read",
             "Actor; actress",
-            "Peking Opera",
-            "Brilliant; spectacular",
-            "Novel; fiction"
+            "Values / Value system / Worldview"
           ],
           "option_pinyin": [
+            "mèi lì",
+            "yuè dú",
             "yǎn yuán",
-            "jīng jù",
-            "jīng cǎi",
-            "xiǎo shuō"
+            "jià zhí guān"
           ]
         },
         {
@@ -103,36 +103,36 @@
           "question": "Fill in: Actor; actress",
           "correct": "演员",
           "options": [
-            "著名",
+            "位",
+            "订阅",
             "演员",
-            "小说",
-            "演出"
+            "阅读"
           ],
           "option_pinyin": [
-            "zhù míng",
+            "wèi",
+            "dìng yuè",
             "yǎn yuán",
-            "xiǎo shuō",
-            "yǎn chū"
+            "yuè dú"
           ],
-          "question_chinese": "她是一位有名的___。",
-          "question_pinyin": "她是一位有名的___。",
-          "question_english": "She is a famous actress."
+          "question_chinese": "那位著名___的功夫表演让全场观众惊叹不已。",
+          "question_pinyin": "那位著名___的功夫表演让全场观众惊叹不已。",
+          "question_english": "The famous actor's kung fu performance left the entire audience in amazement."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Actor; actress'?",
           "correct": "演员",
           "options": [
+            "脸谱",
+            "价值观",
             "演员",
-            "阅读",
-            "功夫",
-            "演出"
+            "场"
           ],
           "option_pinyin": [
+            "liǎn pǔ",
+            "jià zhí guān",
             "yǎn yuán",
-            "yuè dú",
-            "gōng fu",
-            "yǎn chū"
+            "chǎng"
           ]
         }
       ],
@@ -152,16 +152,16 @@
           "question": "What does 演出 mean?",
           "correct": "Performance; to perform",
           "options": [
-            "Actor; actress",
+            "Values / Value system / Worldview",
+            "To perform; performance",
             "Performance; to perform",
-            "Peking Opera",
-            "Magazine"
+            "Painted face / Face mask (in Chinese opera)"
           ],
           "option_pinyin": [
-            "yǎn yuán",
+            "jià zhí guān",
+            "biǎo yǎn",
             "yǎn chū",
-            "jīng jù",
-            "zá zhì"
+            "liǎn pǔ"
           ]
         },
         {
@@ -170,34 +170,34 @@
           "correct": "演出",
           "options": [
             "演出",
-            "演员",
-            "吸引",
+            "精彩",
+            "订阅",
             "著名"
           ],
           "option_pinyin": [
             "yǎn chū",
-            "yǎn yuán",
-            "xī yǐn",
+            "jīng cǎi",
+            "dìng yuè",
             "zhù míng"
           ],
-          "question_chinese": "今晚有一场___。",
-          "question_pinyin": "今晚有一场___。",
-          "question_english": "There is a performance tonight."
+          "question_chinese": "___。",
+          "question_pinyin": "___。",
+          "question_english": "Performance; to perform"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Performance; to perform'?",
           "correct": "演出",
           "options": [
-            "演员",
             "演出",
-            "小说",
+            "著名",
+            "杂志",
             "功夫"
           ],
           "option_pinyin": [
-            "yǎn yuán",
             "yǎn chū",
-            "xiǎo shuō",
+            "zhù míng",
+            "zá zhì",
             "gōng fu"
           ]
         }
@@ -218,16 +218,16 @@
           "question": "What does 表演 mean?",
           "correct": "To perform; performance",
           "options": [
-            "Reading; to read",
+            "To perform; performance",
+            "Painted face / Face mask (in Chinese opera)",
             "To attract",
-            "Art; the arts",
-            "To perform; performance"
+            "Brilliant; spectacular"
           ],
           "option_pinyin": [
-            "yuè dú",
+            "biǎo yǎn",
+            "liǎn pǔ",
             "xī yǐn",
-            "yì shù",
-            "biǎo yǎn"
+            "jīng cǎi"
           ]
         },
         {
@@ -235,36 +235,36 @@
           "question": "Fill in: To perform; performance",
           "correct": "表演",
           "options": [
-            "阅读",
-            "吸引",
-            "表演",
-            "杂志"
+            "功夫",
+            "位",
+            "精彩",
+            "表演"
           ],
           "option_pinyin": [
-            "yuè dú",
-            "xī yǐn",
-            "biǎo yǎn",
-            "zá zhì"
+            "gōng fu",
+            "wèi",
+            "jīng cǎi",
+            "biǎo yǎn"
           ],
-          "question_chinese": "他的___很精彩。",
-          "question_pinyin": "他的___很精彩。",
-          "question_english": "His performance was wonderful."
+          "question_chinese": "这场精彩的功夫___吸引了数千名观众。",
+          "question_pinyin": "这场精彩的功夫___吸引了数千名观众。",
+          "question_english": "This brilliant kung fu performance attracted thousands of audience members."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To perform; performance'?",
           "correct": "表演",
           "options": [
-            "小说",
+            "杂志",
             "表演",
-            "阅读",
-            "杂志"
+            "场",
+            "精彩"
           ],
           "option_pinyin": [
-            "xiǎo shuō",
+            "zá zhì",
             "biǎo yǎn",
-            "yuè dú",
-            "zá zhì"
+            "chǎng",
+            "jīng cǎi"
           ]
         }
       ],
@@ -284,15 +284,15 @@
           "question": "What does 功夫 mean?",
           "correct": "Kung fu; skill",
           "options": [
-            "Actor; actress",
-            "Reading; to read",
-            "Performance; to perform",
+            "[Respectful measure word for people]",
+            "Magazine",
+            "Brilliant; spectacular",
             "Kung fu; skill"
           ],
           "option_pinyin": [
-            "yǎn yuán",
-            "yuè dú",
-            "yǎn chū",
+            "wèi",
+            "zá zhì",
+            "jīng cǎi",
             "gōng fu"
           ]
         },
@@ -302,35 +302,35 @@
           "correct": "功夫",
           "options": [
             "杂志",
-            "小说",
             "功夫",
-            "演员"
+            "价值观",
+            "魅力"
           ],
           "option_pinyin": [
             "zá zhì",
-            "xiǎo shuō",
             "gōng fu",
-            "yǎn yuán"
+            "jià zhí guān",
+            "mèi lì"
           ],
-          "question_chinese": "他学了很多年___。",
-          "question_pinyin": "他学了很多年___。",
-          "question_english": "He has studied kung fu for many years."
+          "question_chinese": "他的___表演真的出神入化，全场观众都鼓掌了。",
+          "question_pinyin": "他的___表演真的出神入化，全场观众都鼓掌了。",
+          "question_english": "His kung fu performance was truly supremely skilled — the entire audience applauded."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Kung fu; skill'?",
           "correct": "功夫",
           "options": [
+            "演出",
             "功夫",
-            "演员",
-            "京剧",
-            "阅读"
+            "精彩",
+            "演员"
           ],
           "option_pinyin": [
+            "yǎn chū",
             "gōng fu",
-            "yǎn yuán",
-            "jīng jù",
-            "yuè dú"
+            "jīng cǎi",
+            "yǎn yuán"
           ]
         }
       ],
@@ -338,69 +338,69 @@
     },
     {
       "id": "hsk4_l15_06",
-      "chinese": "艺术",
-      "pinyin": "yì shù",
-      "english": "Art; the arts",
+      "chinese": "脸谱",
+      "pinyin": "liǎn pǔ",
+      "english": "Painted face / Face mask (in Chinese opera)",
       "part_of_speech": "noun",
-      "example": "他喜欢各种艺术，尤其是京剧和功夫。",
-      "translation": "He enjoys all kinds of art, especially Peking Opera and kung fu.",
+      "example": "京剧的脸谱非常有特色，代表不同的人物性格。",
+      "translation": "The painted faces in Peking opera are very distinctive.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 艺术 mean?",
-          "correct": "Art; the arts",
+          "question": "What does 脸谱 mean?",
+          "correct": "Painted face / Face mask (in Chinese opera)",
           "options": [
-            "Reading; to read",
-            "Actor; actress",
-            "Art; the arts",
-            "Novel; fiction"
+            "Peking Opera",
+            "[Measure word for performances, events, or games]",
+            "To attract",
+            "Painted face / Face mask (in Chinese opera)"
           ],
           "option_pinyin": [
-            "yuè dú",
-            "yǎn yuán",
-            "yì shù",
-            "xiǎo shuō"
+            "jīng jù",
+            "chǎng",
+            "xī yǐn",
+            "liǎn pǔ"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Art; the arts",
-          "correct": "艺术",
+          "question": "Fill in: Painted face / Face mask (in Chinese opera)",
+          "correct": "脸谱",
           "options": [
-            "艺术",
-            "表演",
-            "小说",
-            "京剧"
+            "演出",
+            "脸谱",
+            "位",
+            "精彩"
           ],
           "option_pinyin": [
-            "yì shù",
-            "biǎo yǎn",
-            "xiǎo shuō",
-            "jīng jù"
+            "yǎn chū",
+            "liǎn pǔ",
+            "wèi",
+            "jīng cǎi"
           ],
-          "question_chinese": "她很喜欢___。",
-          "question_pinyin": "她很喜欢___。",
-          "question_english": "She likes art very much."
+          "question_chinese": "京剧的___非常有特色，代表不同的人物性格。",
+          "question_pinyin": "京剧的___非常有特色，代表不同的人物性格。",
+          "question_english": "The painted faces in Peking opera are very distinctive."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Art; the arts'?",
-          "correct": "艺术",
+          "question": "Which word means 'Painted face / Face mask (in Chinese opera)'?",
+          "correct": "脸谱",
           "options": [
-            "精彩",
+            "脸谱",
             "功夫",
-            "演员",
-            "艺术"
+            "位",
+            "演员"
           ],
           "option_pinyin": [
-            "jīng cǎi",
+            "liǎn pǔ",
             "gōng fu",
-            "yǎn yuán",
-            "yì shù"
+            "wèi",
+            "yǎn yuán"
           ]
         }
       ],
-      "example_pinyin": "tā xǐ huān gè zhǒng yì shù yóu qí shì jīng jù hé gōng fu"
+      "example_pinyin": "jīng jù de liǎn pǔ fēi cháng yǒu tè sè dài biǎo bù tóng de rén wù xìng gé"
     },
     {
       "id": "hsk4_l15_07",
@@ -416,16 +416,16 @@
           "question": "What does 著名 mean?",
           "correct": "Famous; renowned",
           "options": [
+            "[Measure word for performances, events, or games]",
             "To attract",
-            "Kung fu; skill",
             "Famous; renowned",
-            "Performance; to perform"
+            "Reading; to read"
           ],
           "option_pinyin": [
+            "chǎng",
             "xī yǐn",
-            "gōng fu",
             "zhù míng",
-            "yǎn chū"
+            "yuè dú"
           ]
         },
         {
@@ -433,36 +433,36 @@
           "question": "Fill in: Famous; renowned",
           "correct": "著名",
           "options": [
-            "小说",
-            "阅读",
-            "著名",
-            "艺术"
+            "精彩",
+            "杂志",
+            "演出",
+            "著名"
           ],
           "option_pinyin": [
-            "xiǎo shuō",
-            "yuè dú",
-            "zhù míng",
-            "yì shù"
+            "jīng cǎi",
+            "zá zhì",
+            "yǎn chū",
+            "zhù míng"
           ],
-          "question_chinese": "这是一家___的餐厅。",
-          "question_pinyin": "这是一家___的餐厅。",
-          "question_english": "This is a famous restaurant."
+          "question_chinese": "我被这本___小说完全吸引了，一口气读完了全书。",
+          "question_pinyin": "我被这本___小说完全吸引了，一口气读完了全书。",
+          "question_english": "I was completely captivated by this famous novel and read the whole book in one go."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Famous; renowned'?",
           "correct": "著名",
           "options": [
-            "京剧",
-            "功夫",
             "著名",
-            "阅读"
+            "演员",
+            "精彩",
+            "脸谱"
           ],
           "option_pinyin": [
-            "jīng jù",
-            "gōng fu",
             "zhù míng",
-            "yuè dú"
+            "yǎn yuán",
+            "jīng cǎi",
+            "liǎn pǔ"
           ]
         }
       ],
@@ -482,16 +482,16 @@
           "question": "What does 阅读 mean?",
           "correct": "Reading; to read",
           "options": [
+            "To subscribe / Subscription",
+            "To attract",
             "Reading; to read",
-            "Performance; to perform",
-            "Famous; renowned",
-            "Magazine"
+            "Peking Opera"
           ],
           "option_pinyin": [
+            "dìng yuè",
+            "xī yǐn",
             "yuè dú",
-            "yǎn chū",
-            "zhù míng",
-            "zá zhì"
+            "jīng jù"
           ]
         },
         {
@@ -499,36 +499,36 @@
           "question": "Fill in: Reading; to read",
           "correct": "阅读",
           "options": [
-            "演出",
-            "吸引",
-            "艺术",
-            "阅读"
+            "价值观",
+            "阅读",
+            "杂志",
+            "著名"
           ],
           "option_pinyin": [
-            "yǎn chū",
-            "xī yǐn",
-            "yì shù",
-            "yuè dú"
+            "jià zhí guān",
+            "yuè dú",
+            "zá zhì",
+            "zhù míng"
           ],
-          "question_chinese": "她每天___半小时。",
-          "question_pinyin": "她每天___半小时。",
-          "question_english": "She reads for half an hour every day."
+          "question_chinese": "___小说是了解一个民族文化最精彩的方式之一。",
+          "question_pinyin": "___小说是了解一个民族文化最精彩的方式之一。",
+          "question_english": "Reading novels is one of the most brilliant ways to understand an ethnic group's culture."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Reading; to read'?",
           "correct": "阅读",
           "options": [
-            "表演",
-            "阅读",
-            "杂志",
-            "功夫"
+            "价值观",
+            "京剧",
+            "场",
+            "阅读"
           ],
           "option_pinyin": [
-            "biǎo yǎn",
-            "yuè dú",
-            "zá zhì",
-            "gōng fu"
+            "jià zhí guān",
+            "jīng jù",
+            "chǎng",
+            "yuè dú"
           ]
         }
       ],
@@ -536,69 +536,69 @@
     },
     {
       "id": "hsk4_l15_09",
-      "chinese": "小说",
-      "pinyin": "xiǎo shuō",
-      "english": "Novel; fiction",
-      "part_of_speech": "noun",
-      "example": "他喜欢阅读，尤其是历史小说。",
-      "translation": "He enjoys reading, especially historical novels.",
+      "chinese": "订阅",
+      "pinyin": "dìng yuè",
+      "english": "To subscribe / Subscription",
+      "part_of_speech": "verb/noun",
+      "example": "我订阅了这本杂志，每月都能收到。",
+      "translation": "I subscribed to this magazine and receive it every month.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 小说 mean?",
-          "correct": "Novel; fiction",
+          "question": "What does 订阅 mean?",
+          "correct": "To subscribe / Subscription",
           "options": [
-            "Famous; renowned",
-            "Novel; fiction",
-            "Magazine",
-            "To perform; performance"
+            "Performance; to perform",
+            "Charm / Charisma / Appeal",
+            "[Measure word for performances, events, or games]",
+            "To subscribe / Subscription"
           ],
           "option_pinyin": [
-            "zhù míng",
-            "xiǎo shuō",
-            "zá zhì",
-            "biǎo yǎn"
+            "yǎn chū",
+            "mèi lì",
+            "chǎng",
+            "dìng yuè"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Novel; fiction",
-          "correct": "小说",
+          "question": "Fill in: To subscribe / Subscription",
+          "correct": "订阅",
           "options": [
-            "演员",
-            "演出",
-            "小说",
-            "功夫"
+            "价值观",
+            "订阅",
+            "吸引",
+            "著名"
           ],
           "option_pinyin": [
-            "yǎn yuán",
-            "yǎn chū",
-            "xiǎo shuō",
-            "gōng fu"
+            "jià zhí guān",
+            "dìng yuè",
+            "xī yǐn",
+            "zhù míng"
           ],
-          "question_chinese": "这本___很有意思。",
-          "question_pinyin": "这本___很有意思。",
-          "question_english": "This novel is very interesting."
+          "question_chinese": "我___了这本杂志，每月都能收到。",
+          "question_pinyin": "我___了这本杂志，每月都能收到。",
+          "question_english": "I subscribed to this magazine and receive it every month."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Novel; fiction'?",
-          "correct": "小说",
+          "question": "Which word means 'To subscribe / Subscription'?",
+          "correct": "订阅",
           "options": [
-            "演出",
-            "阅读",
-            "小说",
-            "功夫"
+            "演员",
+            "精彩",
+            "订阅",
+            "吸引"
           ],
           "option_pinyin": [
-            "yǎn chū",
-            "yuè dú",
-            "xiǎo shuō",
-            "gōng fu"
+            "yǎn yuán",
+            "jīng cǎi",
+            "dìng yuè",
+            "xī yǐn"
           ]
         }
       ],
-      "example_pinyin": "tā xǐ huān yuè dú yóu qí shì lì shǐ xiǎo shuō"
+      "example_pinyin": "wǒ dìng yuè le zhè běn zá zhì měi yuè dōu néng shōu dào"
     },
     {
       "id": "hsk4_l15_10",
@@ -614,16 +614,16 @@
           "question": "What does 杂志 mean?",
           "correct": "Magazine",
           "options": [
-            "Reading; to read",
-            "To perform; performance",
             "Magazine",
-            "Novel; fiction"
+            "[Measure word for performances, events, or games]",
+            "Brilliant; spectacular",
+            "To subscribe / Subscription"
           ],
           "option_pinyin": [
-            "yuè dú",
-            "biǎo yǎn",
             "zá zhì",
-            "xiǎo shuō"
+            "chǎng",
+            "jīng cǎi",
+            "dìng yuè"
           ]
         },
         {
@@ -631,36 +631,36 @@
           "question": "Fill in: Magazine",
           "correct": "杂志",
           "options": [
-            "功夫",
+            "阅读",
             "杂志",
-            "精彩",
-            "京剧"
+            "京剧",
+            "脸谱"
           ],
           "option_pinyin": [
-            "gōng fu",
+            "yuè dú",
             "zá zhì",
-            "jīng cǎi",
-            "jīng jù"
+            "jīng jù",
+            "liǎn pǔ"
           ],
-          "question_chinese": "他喜欢看___。",
-          "question_pinyin": "他喜欢看___。",
-          "question_english": "He likes reading magazines."
+          "question_chinese": "这本艺术___每期都有精彩的文章，你应该订阅一下。",
+          "question_pinyin": "这本艺术___每期都有精彩的文章，你应该订阅一下。",
+          "question_english": "This art magazine has brilliant articles every issue — you should subscribe."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Magazine'?",
           "correct": "杂志",
           "options": [
-            "杂志",
-            "功夫",
+            "京剧",
             "演员",
-            "艺术"
+            "订阅",
+            "杂志"
           ],
           "option_pinyin": [
-            "zá zhì",
-            "gōng fu",
+            "jīng jù",
             "yǎn yuán",
-            "yì shù"
+            "dìng yuè",
+            "zá zhì"
           ]
         }
       ],
@@ -680,16 +680,16 @@
           "question": "What does 吸引 mean?",
           "correct": "To attract",
           "options": [
+            "Peking Opera",
+            "Painted face / Face mask (in Chinese opera)",
             "To attract",
-            "Kung fu; skill",
-            "Performance; to perform",
-            "Novel; fiction"
+            "[Measure word for performances, events, or games]"
           ],
           "option_pinyin": [
+            "jīng jù",
+            "liǎn pǔ",
             "xī yǐn",
-            "gōng fu",
-            "yǎn chū",
-            "xiǎo shuō"
+            "chǎng"
           ]
         },
         {
@@ -697,20 +697,20 @@
           "question": "Fill in: To attract",
           "correct": "吸引",
           "options": [
+            "订阅",
             "表演",
-            "杂志",
             "吸引",
-            "著名"
+            "精彩"
           ],
           "option_pinyin": [
+            "dìng yuè",
             "biǎo yǎn",
-            "zá zhì",
             "xī yǐn",
-            "zhù míng"
+            "jīng cǎi"
           ],
-          "question_chinese": "这部电影___了很多观众。",
-          "question_pinyin": "这部电影___了很多观众。",
-          "question_english": "This movie attracted many viewers."
+          "question_chinese": "我被那位著名演员的演技深深地___住了。",
+          "question_pinyin": "我被那位著名演员的演技深深地___住了。",
+          "question_english": "I was deeply captivated by that famous actor's acting skills."
         },
         {
           "type": "multiple_choice",
@@ -718,15 +718,15 @@
           "correct": "吸引",
           "options": [
             "吸引",
-            "小说",
-            "表演",
-            "演员"
+            "京剧",
+            "脸谱",
+            "表演"
           ],
           "option_pinyin": [
             "xī yǐn",
-            "xiǎo shuō",
-            "biǎo yǎn",
-            "yǎn yuán"
+            "jīng jù",
+            "liǎn pǔ",
+            "biǎo yǎn"
           ]
         }
       ],
@@ -746,16 +746,16 @@
           "question": "What does 精彩 mean?",
           "correct": "Brilliant; spectacular",
           "options": [
-            "Peking Opera",
-            "Art; the arts",
             "Brilliant; spectacular",
-            "Novel; fiction"
+            "[Respectful measure word for people]",
+            "Reading; to read",
+            "Kung fu; skill"
           ],
           "option_pinyin": [
-            "jīng jù",
-            "yì shù",
             "jīng cǎi",
-            "xiǎo shuō"
+            "wèi",
+            "yuè dú",
+            "gōng fu"
           ]
         },
         {
@@ -764,39 +764,303 @@
           "correct": "精彩",
           "options": [
             "精彩",
-            "著名",
-            "功夫",
-            "杂志"
+            "场",
+            "演员",
+            "著名"
           ],
           "option_pinyin": [
             "jīng cǎi",
-            "zhù míng",
-            "gōng fu",
-            "zá zhì"
+            "chǎng",
+            "yǎn yuán",
+            "zhù míng"
           ],
-          "question_chinese": "这场比赛非常___。",
-          "question_pinyin": "这场比赛非常___。",
-          "question_english": "This game was very exciting."
+          "question_chinese": "___。",
+          "question_pinyin": "___。",
+          "question_english": "Brilliant; spectacular"
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Brilliant; spectacular'?",
           "correct": "精彩",
           "options": [
-            "著名",
-            "表演",
             "精彩",
-            "演出"
+            "表演",
+            "订阅",
+            "杂志"
           ],
           "option_pinyin": [
-            "zhù míng",
-            "biǎo yǎn",
             "jīng cǎi",
-            "yǎn chū"
+            "biǎo yǎn",
+            "dìng yuè",
+            "zá zhì"
           ]
         }
       ],
       "example_pinyin": "zhè běn zá zhì xī yǐn le hěn duō dú zhě yóu qí shì xǐ huān yuè dú xiǎo shuō de nián qīng rén"
+    },
+    {
+      "id": "hsk4_l15_13",
+      "chinese": "场",
+      "pinyin": "chǎng",
+      "english": "[Measure word for performances, events, or games]",
+      "part_of_speech": "measure word",
+      "example": "我们一起去看了一场精彩的演出。",
+      "translation": "We went together to watch a wonderful performance.",
+      "example_pinyin": "wǒ men yì qǐ qù kàn le yī cháng jīng cǎi de yǎn chū",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 场 mean?",
+          "correct": "[Measure word for performances, events, or games]",
+          "options": [
+            "Magazine",
+            "[Measure word for performances, events, or games]",
+            "To subscribe / Subscription",
+            "Kung fu; skill"
+          ],
+          "option_pinyin": [
+            "zá zhì",
+            "chǎng",
+            "dìng yuè",
+            "gōng fu"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: [Measure word for performances, events, or games]",
+          "correct": "场",
+          "options": [
+            "订阅",
+            "场",
+            "脸谱",
+            "杂志"
+          ],
+          "option_pinyin": [
+            "dìng yuè",
+            "chǎng",
+            "liǎn pǔ",
+            "zá zhì"
+          ],
+          "question_chinese": "我们一起去看了一___精彩的演出。",
+          "question_pinyin": "我们一起去看了一___精彩的演出。",
+          "question_english": "We went together to watch a wonderful performance."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means '[Measure word for performances, events, or games]'?",
+          "correct": "场",
+          "options": [
+            "表演",
+            "魅力",
+            "场",
+            "杂志"
+          ],
+          "option_pinyin": [
+            "biǎo yǎn",
+            "mèi lì",
+            "chǎng",
+            "zá zhì"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l15_14",
+      "chinese": "位",
+      "pinyin": "wèi",
+      "english": "[Respectful measure word for people]",
+      "part_of_speech": "measure word",
+      "example": "今天来了一位著名的京剧演员。",
+      "translation": "A famous Peking opera performer came today.",
+      "example_pinyin": "jīn tiān lái le yī wèi zhù míng de jīng jù yǎn yuán",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 位 mean?",
+          "correct": "[Respectful measure word for people]",
+          "options": [
+            "Peking Opera",
+            "[Respectful measure word for people]",
+            "To subscribe / Subscription",
+            "[Measure word for performances, events, or games]"
+          ],
+          "option_pinyin": [
+            "jīng jù",
+            "wèi",
+            "dìng yuè",
+            "chǎng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: [Respectful measure word for people]",
+          "correct": "位",
+          "options": [
+            "脸谱",
+            "阅读",
+            "吸引",
+            "位"
+          ],
+          "option_pinyin": [
+            "liǎn pǔ",
+            "yuè dú",
+            "xī yǐn",
+            "wèi"
+          ],
+          "question_chinese": "今天来了一___著名的京剧演员。",
+          "question_pinyin": "今天来了一___著名的京剧演员。",
+          "question_english": "A famous Peking opera performer came today."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means '[Respectful measure word for people]'?",
+          "correct": "位",
+          "options": [
+            "演出",
+            "魅力",
+            "脸谱",
+            "位"
+          ],
+          "option_pinyin": [
+            "yǎn chū",
+            "mèi lì",
+            "liǎn pǔ",
+            "wèi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l15_15",
+      "chinese": "价值观",
+      "pinyin": "jià zhí guān",
+      "english": "Values / Value system / Worldview",
+      "part_of_speech": "noun",
+      "example": "艺术作品可以影响人的价值观。",
+      "translation": "Works of art can influence people's values.",
+      "example_pinyin": "yì shù zuò pǐn kě yǐ yǐng xiǎng rén de jià zhí guān",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 价值观 mean?",
+          "correct": "Values / Value system / Worldview",
+          "options": [
+            "Kung fu; skill",
+            "Performance; to perform",
+            "Values / Value system / Worldview",
+            "Charm / Charisma / Appeal"
+          ],
+          "option_pinyin": [
+            "gōng fu",
+            "yǎn chū",
+            "jià zhí guān",
+            "mèi lì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Values / Value system / Worldview",
+          "correct": "价值观",
+          "options": [
+            "演员",
+            "价值观",
+            "订阅",
+            "吸引"
+          ],
+          "option_pinyin": [
+            "yǎn yuán",
+            "jià zhí guān",
+            "dìng yuè",
+            "xī yǐn"
+          ],
+          "question_chinese": "艺术作品可以影响人的___。",
+          "question_pinyin": "艺术作品可以影响人的___。",
+          "question_english": "Works of art can influence people's values."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Values / Value system / Worldview'?",
+          "correct": "价值观",
+          "options": [
+            "价值观",
+            "阅读",
+            "功夫",
+            "杂志"
+          ],
+          "option_pinyin": [
+            "jià zhí guān",
+            "yuè dú",
+            "gōng fu",
+            "zá zhì"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l15_16",
+      "chinese": "魅力",
+      "pinyin": "mèi lì",
+      "english": "Charm / Charisma / Appeal",
+      "part_of_speech": "noun",
+      "example": "京剧有着独特的魅力，吸引了很多外国人。",
+      "translation": "Peking opera has a unique charm that attracts many foreigners.",
+      "example_pinyin": "jīng jù yǒu zhe dú tè de mèi lì xī yǐn le hěn duō wài guó rén",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 魅力 mean?",
+          "correct": "Charm / Charisma / Appeal",
+          "options": [
+            "Charm / Charisma / Appeal",
+            "Famous; renowned",
+            "Brilliant; spectacular",
+            "Magazine"
+          ],
+          "option_pinyin": [
+            "mèi lì",
+            "zhù míng",
+            "jīng cǎi",
+            "zá zhì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Charm / Charisma / Appeal",
+          "correct": "魅力",
+          "options": [
+            "杂志",
+            "魅力",
+            "功夫",
+            "位"
+          ],
+          "option_pinyin": [
+            "zá zhì",
+            "mèi lì",
+            "gōng fu",
+            "wèi"
+          ],
+          "question_chinese": "京剧有着独特的___，吸引了很多外国人。",
+          "question_pinyin": "京剧有着独特的___，吸引了很多外国人。",
+          "question_english": "Peking opera has a unique charm."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Charm / Charisma / Appeal'?",
+          "correct": "魅力",
+          "options": [
+            "魅力",
+            "位",
+            "脸谱",
+            "场"
+          ],
+          "option_pinyin": [
+            "mèi lì",
+            "wèi",
+            "liǎn pǔ",
+            "chǎng"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk4_l15_p01",
@@ -1074,182 +1338,119 @@
     },
     {
       "number": 2,
-      "title": "尤其 — Especially / In particular",
-      "explanation": "尤其 (yóu qí) means 'especially' or 'in particular'. It singles out one item from a group already mentioned. Typical structure: Subject + Verb + Object, 尤其是 + [Specific Item]. 尤其 appears after the main clause and before or after the subject of the secondary clause. Contrast with 特别: 特别 can go directly before adjectives and verbs (特别好, 特别喜欢), while 尤其 typically introduces a noun or clause and usually follows 是. Both can combine: 尤其特别 is possible for emphasis but rare.",
+      "title": "一口气 — In one breath / Non-stop",
+      "explanation": "一口气 literally means \"one breath\". Used as an adverb before a verb, it expresses doing something continuously from start to finish without stopping.\n\nStructure: Subject + 一口气 + Verb + (Object)\n\n• 他一口气读完了整本书。(He read the whole book in one go.)\n• 她一口气爬上了山顶。(She climbed to the top of the mountain without stopping.)\n• 我一口气喝完了一整瓶水。(I drank a whole bottle of water in one go.)\n\nTone: 一口气 often implies impressive effort or intensity. It is commonly used to describe reading, eating, running, or speaking without pause.",
       "examples": [
         {
-          "chinese": "她喜欢中国艺术，尤其是京剧。",
-          "pinyin": "Tā xǐ huan zhōng guó yì shù, yóu qí shì jīng jù.",
-          "english": "She loves Chinese art, especially Peking Opera."
+          "chinese": "他一口气读完了整本书，一页都没跳过。",
+          "pinyin": "tā yì kǒu qì dú wán le zhěng běn shū yī yè dōu méi tiào guò",
+          "english": "He read the whole book in one go, without skipping a single page."
         },
         {
-          "chinese": "这本杂志吸引了很多读者，尤其是喜欢阅读小说的年轻人。",
-          "pinyin": "Zhè běn zá zhì xī yǐn le hěn duō dú zhě, yóu qí shì xǐ huan yuè dú xiǎo shuō de nián qīng rén.",
-          "english": "This magazine attracted many readers, especially young people who enjoy reading novels."
+          "chinese": "她一口气把所有作业做完了。",
+          "pinyin": "tā yì kǒu qì bǎ suǒ yǒu zuò yè zuò wán le",
+          "english": "She finished all her homework in one go."
+        },
+        {
+          "chinese": "他一口气说了很多话，让大家都很惊讶。",
+          "pinyin": "tā yì kǒu qì shuō le hěn duō huà ràng dà jiā dōu hěn jīng yà",
+          "english": "He spoke a great deal in one go, surprising everyone."
         }
       ],
       "exercises": [
         {
-          "question": "他对艺术很感兴趣，___是功夫表演。",
+          "question": "Choose the correct sentence using 一口气",
           "type": "multiple_choice",
-          "correct": "尤其",
+          "correct": "她一口气跑完了全程，非常厉害。",
           "options": [
-            "尤其",
-            "因此",
-            "虽然",
-            "反而"
+            "她一口气跑完了全程，非常厉害。",
+            "她跑完了一口气全程，厉害非常。",
+            "一口气她全程跑完了，非常厉害。",
+            "她全程一口跑完了气，厉害。"
           ],
           "option_pinyin": [
-            "yóu qí",
-            "yīn cǐ",
-            "suī rán",
-            "fǎn ér"
-          ],
-          "word_hints": {
-            "艺术": "yì shù",
-            "功夫": "gōng fu",
-            "表演": "biǎo yǎn"
-          }
-        },
-        {
-          "question": "这场演出非常精彩，___是那位著名演员的段落。",
-          "type": "multiple_choice",
-          "correct": "尤其",
-          "options": [
-            "尤其",
-            "而且",
-            "所以",
-            "不过"
-          ],
-          "option_pinyin": [
-            "yóu qí",
-            "ér qiě",
-            "suǒ yǐ",
-            "bú guò"
-          ],
-          "word_hints": {
-            "演出": "yǎn chū",
-            "精彩": "jīng cǎi",
-            "著名": "zhù míng",
-            "演员": "yǎn yuán"
-          }
-        },
-        {
-          "question": "Choose the sentence that uses 尤其 correctly.",
-          "type": "multiple_choice",
-          "correct": "他喜欢阅读，尤其是历史小说。",
-          "options": [
-            "他喜欢阅读，尤其是历史小说。",
-            "尤其他喜欢阅读历史小说。",
-            "他尤其喜欢，是历史小说阅读。",
-            "他喜欢尤其阅读历史小说。"
-          ],
-          "option_pinyin": [
-            "Tā xǐ huan yuè dú, yóu qí shì lì shǐ xiǎo shuō.",
-            "Yóu qí tā xǐ huan yuè dú lì shǐ xiǎo shuō.",
-            "Tā yóu qí xǐ huan, shì lì shǐ xiǎo shuō yuè dú.",
-            "Tā xǐ huan yóu qí yuè dú lì shǐ xiǎo shuō."
-          ],
-          "word_hints": {
-            "阅读": "yuè dú",
-            "小说": "xiǎo shuō"
-          }
-        },
-        {
-          "question": "What is the difference between 尤其 and 特别?",
-          "type": "multiple_choice",
-          "correct": "尤其 singles out a specific item (尤其是...); 特别 modifies verbs and adjectives directly",
-          "options": [
-            "尤其 singles out a specific item (尤其是...); 特别 modifies verbs and adjectives directly",
-            "特别 singles out a specific item; 尤其 modifies adjectives directly",
-            "They have completely different meanings",
-            "尤其 can only appear at the start of a sentence"
-          ],
-          "option_pinyin": [
-            "",
+            "tā yì kǒu qì pǎo wán le quán chéng fēi cháng lì hài",
             "",
             "",
             ""
           ],
-          "word_hints": {}
+          "word_hints": {
+            "全程": "quán chéng",
+            "厉害": "lì hai"
+          }
         },
         {
-          "question": "这位著名演员吸引了很多粉丝，___是喜欢京剧的观众。",
+          "question": "他___把三道菜全吃完了，一点儿都没剩。",
           "type": "multiple_choice",
-          "correct": "尤其",
+          "correct": "一口气",
           "options": [
-            "尤其",
-            "并且",
-            "但是",
-            "即使"
+            "一口气",
+            "每次",
+            "偶尔",
+            "渐渐"
           ],
           "option_pinyin": [
-            "yóu qí",
-            "bìng qiě",
-            "dàn shì",
-            "jí shǐ"
+            "yī kǒu qì",
+            "měi cì",
+            "ǒu ěr",
+            "jiàn jiàn"
           ],
-          "word_hints": {
-            "著名": "zhù míng",
-            "演员": "yǎn yuán",
-            "吸引": "xī yǐn",
-            "京剧": "jīng jù"
-          }
+          "word_hints": {}
         }
       ],
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "尤其 is similar to 特别, but 尤其...",
-          "correct": "More strongly singles out one item from a group; often appears in more formal or written contexts",
+          "question": "一口气 means...",
+          "correct": "In one breath — to do something non-stop or continuously",
           "options": [
-            "More strongly singles out one item from a group; often appears in more formal or written contexts",
-            "Is only used in negative sentences",
-            "Comes after the verb, not before",
-            "Only applies to people, not things or places"
+            "In one breath — to do something non-stop or continuously",
+            "To take a deep breath before doing something",
+            "To do something very slowly and carefully",
+            "To pause in the middle of doing something"
           ],
           "option_pinyin": [
-            "yóu qí (zhèng shì)",
-            "fǒu dìng jù",
-            "V + hòu",
-            "rén wù"
+            "yī kǒu qì",
+            "",
+            "",
+            ""
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: He likes watching performances, especially Peking Opera.",
-          "correct": "尤其",
+          "question": "Fill in: She finished all her homework in one go.",
+          "correct": "一口气",
           "options": [
-            "尤其",
-            "另外",
-            "虽然",
-            "因此"
+            "一口气",
+            "每次",
+            "偶尔",
+            "渐渐"
           ],
           "option_pinyin": [
-            "yóu qí",
-            "lìng wài",
-            "suī rán",
-            "yīn cǐ"
+            "yī kǒu qì",
+            "měi cì",
+            "ǒu ěr",
+            "jiàn jiàn"
           ],
-          "question_chinese": "他喜欢看演出，___喜欢看京剧。",
-          "question_pinyin": "他喜欢看演出，___喜欢看京剧。",
-          "question_english": "He likes watching performances, especially Peking Opera."
+          "question_chinese": "她___把作业全做完了。",
+          "question_pinyin": "她___把作业全做完了。",
+          "question_english": "She finished all her homework in one go."
         },
         {
           "type": "multiple_choice",
-          "question": "Which sentence correctly uses 尤其?",
-          "correct": "她喜欢艺术，尤其是音乐。",
+          "question": "Which sentence correctly uses 一口气?",
+          "correct": "他一口气读完了整本书，一页都没跳过。",
           "options": [
-            "她喜欢艺术，尤其是音乐。",
-            "尤其她喜欢，艺术是音乐。",
-            "她尤其，喜欢艺术是音乐。",
-            "艺术她喜欢，尤其音乐是。"
+            "他一口气读完了整本书，一页都没跳过。",
+            "他读了一口气书，整本。",
+            "他一口气，读完书整本了。",
+            "整本书他气一口读完了。"
           ],
           "option_pinyin": [
-            "tā xǐ huān yì shù yóu qí shì yīn yuè",
-            "yóu qí tā xǐ huān yì shù shì yīn yuè",
-            "tā yóu qí xǐ huān yì shù shì yīn yuè",
-            "yì shù tā xǐ huān yóu qí yīn yuè shì"
+            "tā yì kǒu qì dú wán le zhěng běn shū yī yè dōu méi tiào guò",
+            "",
+            "",
+            ""
           ]
         }
       ]

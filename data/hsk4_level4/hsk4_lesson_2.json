@@ -20,16 +20,16 @@
           "question": "What does 诚实 mean?",
           "correct": "Honest; honesty",
           "options": [
-            "Friendly",
-            "Sorry; to feel sorry",
+            "To apologize; apology",
+            "Misunderstanding; to misunderstand",
             "Honest; honesty",
-            "To encourage; encouragement"
+            "To trust / Trust / Confidence"
           ],
           "option_pinyin": [
-            "yǒu hǎo",
-            "bào qiàn",
+            "dào qiàn",
+            "wù huì",
             "chéng shí",
-            "gǔ lì"
+            "xìn rèn"
           ]
         },
         {
@@ -37,36 +37,36 @@
           "question": "Fill in: Honest; honesty",
           "correct": "诚实",
           "options": [
-            "友谊",
-            "支持",
             "联系",
-            "诚实"
+            "诚实",
+            "抱歉",
+            "中断"
           ],
           "option_pinyin": [
-            "yǒu yì",
-            "zhī chí",
             "lián xì",
-            "chéng shí"
+            "chéng shí",
+            "bào qiàn",
+            "zhōng duàn"
           ],
-          "question_chinese": "做人要___。",
-          "question_pinyin": "做人要___。",
-          "question_english": "Be honest in life."
+          "question_chinese": "他从来不对朋友说谎，是一个非常___的人。",
+          "question_pinyin": "他从来不对朋友说谎，是一个非常___的人。",
+          "question_english": "He never lies to his friends; he is a very honest person."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Honest; honesty'?",
           "correct": "诚实",
           "options": [
-            "支持",
-            "共同",
-            "友谊",
-            "诚实"
+            "诚实",
+            "信任",
+            "谅解",
+            "消失"
           ],
           "option_pinyin": [
-            "zhī chí",
-            "gòng tóng",
-            "yǒu yì",
-            "chéng shí"
+            "chéng shí",
+            "xìn rèn",
+            "liàng jiě",
+            "xiāo shī"
           ]
         }
       ],
@@ -87,15 +87,15 @@
           "correct": "Confidence; faith",
           "options": [
             "Confidence; faith",
+            "Sorry; to feel sorry",
             "Misunderstanding; to misunderstand",
-            "To apologize; apology",
-            "Honest; honesty"
+            "[Measure word for sections, periods, or segments]"
           ],
           "option_pinyin": [
             "xìn xīn",
+            "bào qiàn",
             "wù huì",
-            "dào qiàn",
-            "chéng shí"
+            "duàn"
           ]
         },
         {
@@ -103,35 +103,35 @@
           "question": "Fill in: Confidence; faith",
           "correct": "信心",
           "options": [
-            "联系",
-            "友好",
             "信心",
-            "友谊"
+            "信任",
+            "诚实",
+            "中断"
           ],
           "option_pinyin": [
-            "lián xì",
-            "yǒu hǎo",
             "xìn xīn",
-            "yǒu yì"
+            "xìn rèn",
+            "chéng shí",
+            "zhōng duàn"
           ],
-          "question_chinese": "我对你有___。",
-          "question_pinyin": "我对你有___。",
-          "question_english": "I have confidence in you."
+          "question_chinese": "我也会给你更多的___和鼓励。",
+          "question_pinyin": "我也会给你更多的___和鼓励。",
+          "question_english": "I will also give you more confidence and encouragement."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Confidence; faith'?",
           "correct": "信心",
           "options": [
-            "道歉",
-            "抱歉",
-            "诚实",
+            "信任",
+            "共同",
+            "误会",
             "信心"
           ],
           "option_pinyin": [
-            "dào qiàn",
-            "bào qiàn",
-            "chéng shí",
+            "xìn rèn",
+            "gòng tóng",
+            "wù huì",
             "xìn xīn"
           ]
         }
@@ -152,16 +152,16 @@
           "question": "What does 联系 mean?",
           "correct": "To contact; to keep in touch; connection",
           "options": [
-            "Common; shared; together",
-            "Confidence; faith",
+            "Honest; honesty",
+            "Sorry; to feel sorry",
             "To contact; to keep in touch; connection",
-            "To encourage; encouragement"
+            "[Measure word for sections, periods, or segments]"
           ],
           "option_pinyin": [
-            "gòng tóng",
-            "xìn xīn",
+            "chéng shí",
+            "bào qiàn",
             "lián xì",
-            "gǔ lì"
+            "duàn"
           ]
         },
         {
@@ -169,36 +169,36 @@
           "question": "Fill in: To contact; to keep in touch; connection",
           "correct": "联系",
           "options": [
+            "抱歉",
             "联系",
-            "鼓励",
-            "互相",
-            "友谊"
+            "友谊",
+            "信任"
           ],
           "option_pinyin": [
+            "bào qiàn",
             "lián xì",
-            "gǔ lì",
-            "hù xiāng",
-            "yǒu yì"
+            "yǒu yì",
+            "xìn rèn"
           ],
-          "question_chinese": "我们要保持___。",
-          "question_pinyin": "我们要保持___。",
-          "question_english": "We must keep in touch."
+          "question_chinese": "我们分开后仍然保持___，友谊从未中断。",
+          "question_pinyin": "我们分开后仍然保持___，友谊从未中断。",
+          "question_english": "After we parted, we still kept in touch, and our friendship was never interrupted."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To contact; to keep in touch; connection'?",
           "correct": "联系",
           "options": [
-            "互相",
-            "道歉",
-            "友好",
-            "联系"
+            "诚实",
+            "信任",
+            "联系",
+            "抱歉"
           ],
           "option_pinyin": [
-            "hù xiāng",
-            "dào qiàn",
-            "yǒu hǎo",
-            "lián xì"
+            "chéng shí",
+            "xìn rèn",
+            "lián xì",
+            "bào qiàn"
           ]
         }
       ],
@@ -206,69 +206,69 @@
     },
     {
       "id": "hsk4_l2_04",
-      "chinese": "互相",
-      "pinyin": "hù xiāng",
-      "english": "Mutually; each other",
-      "part_of_speech": "adverb",
-      "example": "真正的朋友会互相支持，共同进步。",
-      "translation": "True friends support each other and make progress together.",
+      "chinese": "谅解",
+      "pinyin": "liàng jiě",
+      "english": "To forgive / To pardon / Understanding",
+      "part_of_speech": "verb/noun",
+      "example": "希望你能谅解我这次的错误。",
+      "translation": "I hope you can forgive my mistake this time.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 互相 mean?",
-          "correct": "Mutually; each other",
+          "question": "What does 谅解 mean?",
+          "correct": "To forgive / To pardon / Understanding",
           "options": [
-            "Mutually; each other",
-            "To encourage; encouragement",
             "Honest; honesty",
-            "To contact; to keep in touch; connection"
+            "Confidence; faith",
+            "To forgive / To pardon / Understanding",
+            "Misunderstanding; to misunderstand"
           ],
           "option_pinyin": [
-            "hù xiāng",
-            "gǔ lì",
             "chéng shí",
-            "lián xì"
+            "xìn xīn",
+            "liàng jiě",
+            "wù huì"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: Mutually; each other",
-          "correct": "互相",
+          "question": "Fill in: To forgive / To pardon / Understanding",
+          "correct": "谅解",
           "options": [
-            "误会",
-            "道歉",
-            "鼓励",
-            "互相"
+            "友谊",
+            "抱歉",
+            "长久",
+            "谅解"
           ],
           "option_pinyin": [
-            "wù huì",
-            "dào qiàn",
-            "gǔ lì",
-            "hù xiāng"
+            "yǒu yì",
+            "bào qiàn",
+            "cháng jiǔ",
+            "liàng jiě"
           ],
-          "question_chinese": "朋友应该___帮助。",
-          "question_pinyin": "朋友应该___帮助。",
-          "question_english": "Friends should help each other."
+          "question_chinese": "希望你能___我这次的错误。",
+          "question_pinyin": "希望你能___我这次的错误。",
+          "question_english": "I hope you can forgive my mistake this time."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'Mutually; each other'?",
-          "correct": "互相",
+          "question": "Which word means 'To forgive / To pardon / Understanding'?",
+          "correct": "谅解",
           "options": [
-            "诚实",
-            "互相",
-            "信心",
-            "联系"
+            "共同",
+            "谅解",
+            "友谊",
+            "道歉"
           ],
           "option_pinyin": [
-            "chéng shí",
-            "hù xiāng",
-            "xìn xīn",
-            "lián xì"
+            "gòng tóng",
+            "liàng jiě",
+            "yǒu yì",
+            "dào qiàn"
           ]
         }
       ],
-      "example_pinyin": "zhēn zhèng de péng yǒu huì hù xiāng zhī chí gòng tóng jìn bù"
+      "example_pinyin": "xī wàng nǐ néng liàng jiě wǒ zhè cì de cuò wù"
     },
     {
       "id": "hsk4_l2_05",
@@ -284,16 +284,16 @@
           "question": "What does 共同 mean?",
           "correct": "Common; shared; together",
           "options": [
-            "Confidence; faith",
-            "Honest; honesty",
-            "Common; shared; together",
-            "Misunderstanding; to misunderstand"
+            "To trust / Trust / Confidence",
+            "To forgive / To pardon / Understanding",
+            "To interrupt / To break off / To suspend",
+            "Common; shared; together"
           ],
           "option_pinyin": [
-            "xìn xīn",
-            "chéng shí",
-            "gòng tóng",
-            "wù huì"
+            "xìn rèn",
+            "liàng jiě",
+            "zhōng duàn",
+            "gòng tóng"
           ]
         },
         {
@@ -301,36 +301,36 @@
           "question": "Fill in: Common; shared; together",
           "correct": "共同",
           "options": [
-            "道歉",
+            "友好",
+            "诚实",
             "共同",
-            "误会",
-            "抱歉"
+            "段"
           ],
           "option_pinyin": [
-            "dào qiàn",
+            "yǒu hǎo",
+            "chéng shí",
             "gòng tóng",
-            "wù huì",
-            "bào qiàn"
+            "duàn"
           ],
-          "question_chinese": "我们有___的爱好。",
-          "question_pinyin": "我们有___的爱好。",
-          "question_english": "We have common hobbies."
+          "question_chinese": "真正的朋友会互相支持，___进步。",
+          "question_pinyin": "真正的朋友会互相支持，___进步。",
+          "question_english": "True friends support each other and make progress together."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Common; shared; together'?",
           "correct": "共同",
           "options": [
-            "支持",
             "共同",
-            "诚实",
-            "友好"
+            "误会",
+            "友好",
+            "信任"
           ],
           "option_pinyin": [
-            "zhī chí",
             "gòng tóng",
-            "chéng shí",
-            "yǒu hǎo"
+            "wù huì",
+            "yǒu hǎo",
+            "xìn rèn"
           ]
         }
       ],
@@ -338,135 +338,135 @@
     },
     {
       "id": "hsk4_l2_06",
-      "chinese": "支持",
-      "pinyin": "zhī chí",
-      "english": "To support; support",
-      "part_of_speech": "verb/noun",
-      "example": "真正的朋友会互相支持，共同进步。",
-      "translation": "True friends support each other and make progress together.",
+      "chinese": "说谎",
+      "pinyin": "shuō huǎng",
+      "english": "To lie / To tell a lie",
+      "part_of_speech": "verb",
+      "example": "他从来不说谎，总是说实话。",
+      "translation": "He never lies and always tells the truth.",
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "What does 支持 mean?",
-          "correct": "To support; support",
+          "question": "What does 说谎 mean?",
+          "correct": "To lie / To tell a lie",
           "options": [
-            "To encourage; encouragement",
-            "To support; support",
+            "Misunderstanding; to misunderstand",
             "Friendly",
+            "To trust / Trust / Confidence",
+            "To lie / To tell a lie"
+          ],
+          "option_pinyin": [
+            "wù huì",
+            "yǒu hǎo",
+            "xìn rèn",
+            "shuō huǎng"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To lie / To tell a lie",
+          "correct": "说谎",
+          "options": [
+            "信任",
+            "抱歉",
+            "道歉",
+            "说谎"
+          ],
+          "option_pinyin": [
+            "xìn rèn",
+            "bào qiàn",
+            "dào qiàn",
+            "shuō huǎng"
+          ],
+          "question_chinese": "他从来不___，总是说实话。",
+          "question_pinyin": "他从来不___，总是说实话。",
+          "question_english": "He never lies and always tells the truth."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To lie / To tell a lie'?",
+          "correct": "说谎",
+          "options": [
+            "中断",
+            "段",
+            "谅解",
+            "说谎"
+          ],
+          "option_pinyin": [
+            "zhōng duàn",
+            "duàn",
+            "liàng jiě",
+            "shuō huǎng"
+          ]
+        }
+      ],
+      "example_pinyin": "tā cóng lái bù shuō huǎng zǒng shì shuō shí huà"
+    },
+    {
+      "id": "hsk4_l2_07",
+      "chinese": "信任",
+      "pinyin": "xìn rèn",
+      "english": "To trust / Trust / Confidence",
+      "part_of_speech": "verb/noun",
+      "example": "真正的友谊需要互相信任。",
+      "translation": "True friendship requires mutual trust.",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 信任 mean?",
+          "correct": "To trust / Trust / Confidence",
+          "options": [
+            "To disappear / To vanish",
+            "To contact; to keep in touch; connection",
+            "To trust / Trust / Confidence",
             "Confidence; faith"
           ],
           "option_pinyin": [
-            "gǔ lì",
-            "zhī chí",
-            "yǒu hǎo",
+            "xiāo shī",
+            "lián xì",
+            "xìn rèn",
             "xìn xīn"
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: To support; support",
-          "correct": "支持",
+          "question": "Fill in: To trust / Trust / Confidence",
+          "correct": "信任",
           "options": [
-            "鼓励",
-            "支持",
-            "信心",
-            "误会"
+            "诚实",
+            "谅解",
+            "信任",
+            "信心"
           ],
           "option_pinyin": [
-            "gǔ lì",
-            "zhī chí",
-            "xìn xīn",
-            "wù huì"
+            "chéng shí",
+            "liàng jiě",
+            "xìn rèn",
+            "xìn xīn"
           ],
-          "question_chinese": "谢谢你___我。",
-          "question_pinyin": "谢谢你___我。",
-          "question_english": "Thank you for supporting me."
+          "question_chinese": "真正的友谊需要互相___。",
+          "question_pinyin": "真正的友谊需要互相___。",
+          "question_english": "True friendship requires mutual trust."
         },
         {
           "type": "multiple_choice",
-          "question": "Which word means 'To support; support'?",
-          "correct": "支持",
+          "question": "Which word means 'To trust / Trust / Confidence'?",
+          "correct": "信任",
           "options": [
-            "道歉",
-            "支持",
-            "信心",
-            "友谊"
+            "共同",
+            "联系",
+            "说谎",
+            "信任"
           ],
           "option_pinyin": [
-            "dào qiàn",
-            "zhī chí",
-            "xìn xīn",
-            "yǒu yì"
+            "gòng tóng",
+            "lián xì",
+            "shuō huǎng",
+            "xìn rèn"
           ]
         }
       ],
-      "example_pinyin": "zhēn zhèng de péng yǒu huì hù xiāng zhī chí gòng tóng jìn bù"
-    },
-    {
-      "id": "hsk4_l2_07",
-      "chinese": "鼓励",
-      "pinyin": "gǔ lì",
-      "english": "To encourage; encouragement",
-      "part_of_speech": "verb/noun",
-      "example": "无论遇到什么困难，她都会鼓励我继续努力。",
-      "translation": "No matter what difficulties I face, she always encourages me to keep working hard.",
-      "mini_exercises": [
-        {
-          "type": "multiple_choice",
-          "question": "What does 鼓励 mean?",
-          "correct": "To encourage; encouragement",
-          "options": [
-            "Misunderstanding; to misunderstand",
-            "To support; support",
-            "Sorry; to feel sorry",
-            "To encourage; encouragement"
-          ],
-          "option_pinyin": [
-            "wù huì",
-            "zhī chí",
-            "bào qiàn",
-            "gǔ lì"
-          ]
-        },
-        {
-          "type": "fill_blank",
-          "question": "Fill in: To encourage; encouragement",
-          "correct": "鼓励",
-          "options": [
-            "鼓励",
-            "联系",
-            "道歉",
-            "友好"
-          ],
-          "option_pinyin": [
-            "gǔ lì",
-            "lián xì",
-            "dào qiàn",
-            "yǒu hǎo"
-          ],
-          "question_chinese": "老师___我们要努力。",
-          "question_pinyin": "老师___我们要努力。",
-          "question_english": "The teacher encouraged us to work hard."
-        },
-        {
-          "type": "multiple_choice",
-          "question": "Which word means 'To encourage; encouragement'?",
-          "correct": "鼓励",
-          "options": [
-            "友好",
-            "联系",
-            "支持",
-            "鼓励"
-          ],
-          "option_pinyin": [
-            "yǒu hǎo",
-            "lián xì",
-            "zhī chí",
-            "gǔ lì"
-          ]
-        }
-      ],
-      "example_pinyin": "wú lùn yù dào shén me kùn nán tā dū huì gǔ lì wǒ jì xù nǔ lì"
+      "example_pinyin": "zhēn zhèng de yǒu yì xū yào hù xiāng xìn rèn"
     },
     {
       "id": "hsk4_l2_08",
@@ -482,16 +482,16 @@
           "question": "What does 友谊 mean?",
           "correct": "Friendship",
           "options": [
-            "Misunderstanding; to misunderstand",
             "Friendship",
-            "Honest; honesty",
-            "Common; shared; together"
+            "To forgive / To pardon / Understanding",
+            "Confidence; faith",
+            "[Measure word for sections, periods, or segments]"
           ],
           "option_pinyin": [
-            "wù huì",
             "yǒu yì",
-            "chéng shí",
-            "gòng tóng"
+            "liàng jiě",
+            "xìn xīn",
+            "duàn"
           ]
         },
         {
@@ -499,36 +499,36 @@
           "question": "Fill in: Friendship",
           "correct": "友谊",
           "options": [
+            "段",
             "友谊",
-            "道歉",
-            "误会",
-            "联系"
+            "信心",
+            "中断"
           ],
           "option_pinyin": [
+            "duàn",
             "yǒu yì",
-            "dào qiàn",
-            "wù huì",
-            "lián xì"
+            "xìn xīn",
+            "zhōng duàn"
           ],
-          "question_chinese": "我们的___很珍贵。",
-          "question_pinyin": "我们的___很珍贵。",
-          "question_english": "Our friendship is very precious."
+          "question_chinese": "我们虽然有误会，却没有影响___。",
+          "question_pinyin": "我们虽然有误会，却没有影响___。",
+          "question_english": "Although we had a misunderstanding, it didn't influence our friendship."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Friendship'?",
           "correct": "友谊",
           "options": [
-            "误会",
-            "抱歉",
             "友谊",
-            "联系"
+            "道歉",
+            "说谎",
+            "友好"
           ],
           "option_pinyin": [
-            "wù huì",
-            "bào qiàn",
             "yǒu yì",
-            "lián xì"
+            "dào qiàn",
+            "shuō huǎng",
+            "yǒu hǎo"
           ]
         }
       ],
@@ -548,16 +548,16 @@
           "question": "What does 友好 mean?",
           "correct": "Friendly",
           "options": [
+            "Honest; honesty",
             "Friendly",
-            "Mutually; each other",
-            "To apologize; apology",
-            "Friendship"
+            "To trust / Trust / Confidence",
+            "Sorry; to feel sorry"
           ],
           "option_pinyin": [
+            "chéng shí",
             "yǒu hǎo",
-            "hù xiāng",
-            "dào qiàn",
-            "yǒu yì"
+            "xìn rèn",
+            "bào qiàn"
           ]
         },
         {
@@ -565,35 +565,35 @@
           "question": "Fill in: Friendly",
           "correct": "友好",
           "options": [
-            "诚实",
+            "友好",
+            "说谎",
             "道歉",
-            "抱歉",
-            "友好"
+            "信任"
           ],
           "option_pinyin": [
-            "chéng shí",
+            "yǒu hǎo",
+            "shuō huǎng",
             "dào qiàn",
-            "bào qiàn",
-            "yǒu hǎo"
+            "xìn rèn"
           ],
-          "question_chinese": "她对每个人都很___。",
-          "question_pinyin": "她对每个人都很___。",
-          "question_english": "She is friendly to everyone."
+          "question_chinese": "你还是那么___，一点都没变。",
+          "question_pinyin": "你还是那么___，一点都没变。",
+          "question_english": "You are still just as friendly. You haven't changed at all."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Friendly'?",
           "correct": "友好",
           "options": [
-            "互相",
-            "误会",
-            "友谊",
+            "说谎",
+            "道歉",
+            "诚实",
             "友好"
           ],
           "option_pinyin": [
-            "hù xiāng",
-            "wù huì",
-            "yǒu yì",
+            "shuō huǎng",
+            "dào qiàn",
+            "chéng shí",
             "yǒu hǎo"
           ]
         }
@@ -615,15 +615,15 @@
           "correct": "Misunderstanding; to misunderstand",
           "options": [
             "Common; shared; together",
-            "Friendly",
-            "Misunderstanding; to misunderstand",
-            "Friendship"
+            "Confidence; faith",
+            "Lasting / Long-term / For a long time",
+            "Misunderstanding; to misunderstand"
           ],
           "option_pinyin": [
             "gòng tóng",
-            "yǒu hǎo",
-            "wù huì",
-            "yǒu yì"
+            "xìn xīn",
+            "cháng jiǔ",
+            "wù huì"
           ]
         },
         {
@@ -631,36 +631,36 @@
           "question": "Fill in: Misunderstanding; to misunderstand",
           "correct": "误会",
           "options": [
-            "互相",
+            "友谊",
             "联系",
-            "道歉",
+            "信心",
             "误会"
           ],
           "option_pinyin": [
-            "hù xiāng",
+            "yǒu yì",
             "lián xì",
-            "dào qiàn",
+            "xìn xīn",
             "wù huì"
           ],
-          "question_chinese": "我们之间有个___。",
-          "question_pinyin": "我们之间有个___。",
-          "question_english": "There is a misunderstanding between us."
+          "question_chinese": "我们虽然有___，却没有影响友谊。",
+          "question_pinyin": "我们虽然有___，却没有影响友谊。",
+          "question_english": "Although we had a misunderstanding, it didn't influence our friendship."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Misunderstanding; to misunderstand'?",
           "correct": "误会",
           "options": [
-            "信心",
-            "联系",
+            "共同",
+            "友好",
             "误会",
-            "诚实"
+            "道歉"
           ],
           "option_pinyin": [
-            "xìn xīn",
-            "lián xì",
+            "gòng tóng",
+            "yǒu hǎo",
             "wù huì",
-            "chéng shí"
+            "dào qiàn"
           ]
         }
       ],
@@ -680,15 +680,15 @@
           "question": "What does 道歉 mean?",
           "correct": "To apologize; apology",
           "options": [
-            "Honest; honesty",
-            "Confidence; faith",
-            "Misunderstanding; to misunderstand",
+            "To interrupt / To break off / To suspend",
+            "To forgive / To pardon / Understanding",
+            "[Measure word for sections, periods, or segments]",
             "To apologize; apology"
           ],
           "option_pinyin": [
-            "chéng shí",
-            "xìn xīn",
-            "wù huì",
+            "zhōng duàn",
+            "liàng jiě",
+            "duàn",
             "dào qiàn"
           ]
         },
@@ -697,36 +697,36 @@
           "question": "Fill in: To apologize; apology",
           "correct": "道歉",
           "options": [
-            "互相",
-            "共同",
+            "联系",
+            "友谊",
             "道歉",
-            "诚实"
+            "抱歉"
           ],
           "option_pinyin": [
-            "hù xiāng",
-            "gòng tóng",
+            "lián xì",
+            "yǒu yì",
             "dào qiàn",
-            "chéng shí"
+            "bào qiàn"
           ],
-          "question_chinese": "他向她___了。",
-          "question_pinyin": "他向她___了。",
-          "question_english": "He apologized to her."
+          "question_chinese": "他___之后，两个人的感情更深了。",
+          "question_pinyin": "他___之后，两个人的感情更深了。",
+          "question_english": "After he apologized, their bond became even deeper."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'To apologize; apology'?",
           "correct": "道歉",
           "options": [
-            "道歉",
-            "诚实",
-            "鼓励",
-            "共同"
+            "长久",
+            "共同",
+            "信心",
+            "道歉"
           ],
           "option_pinyin": [
-            "dào qiàn",
-            "chéng shí",
-            "gǔ lì",
-            "gòng tóng"
+            "cháng jiǔ",
+            "gòng tóng",
+            "xìn xīn",
+            "dào qiàn"
           ]
         }
       ],
@@ -747,14 +747,14 @@
           "correct": "Sorry; to feel sorry",
           "options": [
             "Sorry; to feel sorry",
-            "Friendship",
-            "Misunderstanding; to misunderstand",
+            "Confidence; faith",
+            "To trust / Trust / Confidence",
             "Friendly"
           ],
           "option_pinyin": [
             "bào qiàn",
-            "yǒu yì",
-            "wù huì",
+            "xìn xīn",
+            "xìn rèn",
             "yǒu hǎo"
           ]
         },
@@ -763,40 +763,304 @@
           "question": "Fill in: Sorry; to feel sorry",
           "correct": "抱歉",
           "options": [
-            "支持",
-            "互相",
+            "误会",
+            "抱歉",
             "信心",
-            "抱歉"
+            "道歉"
           ],
           "option_pinyin": [
-            "zhī chí",
-            "hù xiāng",
+            "wù huì",
+            "bào qiàn",
             "xìn xīn",
-            "bào qiàn"
+            "dào qiàn"
           ],
-          "question_chinese": "我很___，我来晚了。",
-          "question_pinyin": "我很___，我来晚了。",
-          "question_english": "I'm sorry, I came late."
+          "question_chinese": "我知道上次的事情让你误会了，我真的很___。",
+          "question_pinyin": "我知道上次的事情让你误会了，我真的很___。",
+          "question_english": "I know what happened last time caused a misunderstanding. I am truly sorry."
         },
         {
           "type": "multiple_choice",
           "question": "Which word means 'Sorry; to feel sorry'?",
           "correct": "抱歉",
           "options": [
+            "消失",
+            "信心",
             "抱歉",
+            "段"
+          ],
+          "option_pinyin": [
+            "xiāo shī",
+            "xìn xīn",
+            "bào qiàn",
+            "duàn"
+          ]
+        }
+      ],
+      "example_pinyin": "wǒ zhī dào shàng cì de shì qíng ràng nǐ wù huì le wǒ zhēn de hěn bào qiàn"
+    },
+    {
+      "id": "hsk4_l2_13",
+      "chinese": "中断",
+      "pinyin": "zhōng duàn",
+      "english": "To interrupt / To break off / To suspend",
+      "part_of_speech": "verb",
+      "example": "联系中断了，我不知道他现在怎么样。",
+      "translation": "Contact was broken off, and I do not know how he is now.",
+      "example_pinyin": "lián xì zhōng duàn le wǒ bù zhī dào tā xiàn zài zěn me yàng",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 中断 mean?",
+          "correct": "To interrupt / To break off / To suspend",
+          "options": [
+            "Friendship",
+            "Friendly",
+            "To interrupt / To break off / To suspend",
+            "To contact; to keep in touch; connection"
+          ],
+          "option_pinyin": [
+            "yǒu yì",
+            "yǒu hǎo",
+            "zhōng duàn",
+            "lián xì"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To interrupt / To break off / To suspend",
+          "correct": "中断",
+          "options": [
+            "段",
             "道歉",
-            "误会",
-            "信心"
+            "中断",
+            "消失"
+          ],
+          "option_pinyin": [
+            "duàn",
+            "dào qiàn",
+            "zhōng duàn",
+            "xiāo shī"
+          ],
+          "question_chinese": "联系___了，我不知道他现在怎么样。",
+          "question_pinyin": "联系___了，我不知道他现在怎么样。",
+          "question_english": "Contact was broken off."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To interrupt / To break off / To suspend'?",
+          "correct": "中断",
+          "options": [
+            "道歉",
+            "长久",
+            "共同",
+            "中断"
+          ],
+          "option_pinyin": [
+            "dào qiàn",
+            "cháng jiǔ",
+            "gòng tóng",
+            "zhōng duàn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l2_14",
+      "chinese": "消失",
+      "pinyin": "xiāo shī",
+      "english": "To disappear / To vanish",
+      "part_of_speech": "verb",
+      "example": "朋友突然消失了，让我很担心。",
+      "translation": "My friend suddenly disappeared, which made me very worried.",
+      "example_pinyin": "péng yǒu tū rán xiāo shī le ràng wǒ hěn dān xīn",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 消失 mean?",
+          "correct": "To disappear / To vanish",
+          "options": [
+            "Sorry; to feel sorry",
+            "To apologize; apology",
+            "Misunderstanding; to misunderstand",
+            "To disappear / To vanish"
           ],
           "option_pinyin": [
             "bào qiàn",
             "dào qiàn",
             "wù huì",
-            "xìn xīn"
+            "xiāo shī"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: To disappear / To vanish",
+          "correct": "消失",
+          "options": [
+            "信任",
+            "诚实",
+            "友好",
+            "消失"
+          ],
+          "option_pinyin": [
+            "xìn rèn",
+            "chéng shí",
+            "yǒu hǎo",
+            "xiāo shī"
+          ],
+          "question_chinese": "朋友突然___了，让我很担心。",
+          "question_pinyin": "朋友突然___了，让我很担心。",
+          "question_english": "My friend suddenly disappeared."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'To disappear / To vanish'?",
+          "correct": "消失",
+          "options": [
+            "联系",
+            "消失",
+            "友谊",
+            "段"
+          ],
+          "option_pinyin": [
+            "lián xì",
+            "xiāo shī",
+            "yǒu yì",
+            "duàn"
           ]
         }
-      ],
-      "example_pinyin": "wǒ zhī dào shàng cì de shì qíng ràng nǐ wù huì le wǒ zhēn de hěn bào qiàn"
+      ]
+    },
+    {
+      "id": "hsk4_l2_15",
+      "chinese": "长久",
+      "pinyin": "cháng jiǔ",
+      "english": "Lasting / Long-term / For a long time",
+      "part_of_speech": "adjective/adverb",
+      "example": "他们的友谊非常长久。",
+      "translation": "Their friendship is very lasting.",
+      "example_pinyin": "tā men de yǒu yì fēi cháng cháng jiǔ",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 长久 mean?",
+          "correct": "Lasting / Long-term / For a long time",
+          "options": [
+            "Sorry; to feel sorry",
+            "To disappear / To vanish",
+            "Lasting / Long-term / For a long time",
+            "Confidence; faith"
+          ],
+          "option_pinyin": [
+            "bào qiàn",
+            "xiāo shī",
+            "cháng jiǔ",
+            "xìn xīn"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: Lasting / Long-term / For a long time",
+          "correct": "长久",
+          "options": [
+            "长久",
+            "谅解",
+            "说谎",
+            "中断"
+          ],
+          "option_pinyin": [
+            "cháng jiǔ",
+            "liàng jiě",
+            "shuō huǎng",
+            "zhōng duàn"
+          ],
+          "question_chinese": "他们的友谊非常___。",
+          "question_pinyin": "他们的友谊非常___。",
+          "question_english": "Their friendship is very lasting."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means 'Lasting / Long-term / For a long time'?",
+          "correct": "长久",
+          "options": [
+            "误会",
+            "长久",
+            "中断",
+            "友好"
+          ],
+          "option_pinyin": [
+            "wù huì",
+            "cháng jiǔ",
+            "zhōng duàn",
+            "yǒu hǎo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hsk4_l2_16",
+      "chinese": "段",
+      "pinyin": "duàn",
+      "english": "[Measure word for sections, periods, or segments]",
+      "part_of_speech": "measure word",
+      "example": "我们已经认识了一段时间了。",
+      "translation": "We have known each other for a period of time.",
+      "example_pinyin": "wǒ men yǐ jīng rèn shí le yī duàn shí jiān le",
+      "mini_exercises": [
+        {
+          "type": "multiple_choice",
+          "question": "What does 段 mean?",
+          "correct": "[Measure word for sections, periods, or segments]",
+          "options": [
+            "[Measure word for sections, periods, or segments]",
+            "Friendship",
+            "To interrupt / To break off / To suspend",
+            "Friendly"
+          ],
+          "option_pinyin": [
+            "duàn",
+            "yǒu yì",
+            "zhōng duàn",
+            "yǒu hǎo"
+          ]
+        },
+        {
+          "type": "fill_blank",
+          "question": "Fill in: [Measure word for sections, periods, or segments]",
+          "correct": "段",
+          "options": [
+            "段",
+            "抱歉",
+            "联系",
+            "信任"
+          ],
+          "option_pinyin": [
+            "duàn",
+            "bào qiàn",
+            "lián xì",
+            "xìn rèn"
+          ],
+          "question_chinese": "我们已经认识了一___时间了。",
+          "question_pinyin": "我们已经认识了一___时间了。",
+          "question_english": "We have known each other for a period of time."
+        },
+        {
+          "type": "multiple_choice",
+          "question": "Which word means '[Measure word for sections, periods, or segments]'?",
+          "correct": "段",
+          "options": [
+            "说谎",
+            "道歉",
+            "信任",
+            "段"
+          ],
+          "option_pinyin": [
+            "shuō huǎng",
+            "dào qiàn",
+            "xìn rèn",
+            "duàn"
+          ]
+        }
+      ]
     },
     {
       "id": "hsk4_l2_p01",
@@ -898,174 +1162,120 @@
   "grammar_points": [
     {
       "number": 1,
-      "title": "却 — But / However (indicating contrast)",
-      "explanation": "却 is placed directly before a verb or adjective to show contrast or an unexpected result. It appears inside the second clause, not at the start of the sentence. It often signals something surprising or contrary to expectations. The subject of the second clause may be stated or omitted if it is the same as the first. Structure: [Clause 1], Subject + 却 + Verb/Adj.",
+      "title": "一点儿 + 都/也 + 不/没 — Not even a little bit",
+      "explanation": "This pattern expresses complete negation — not even the smallest amount. There are two main structures based on tense:\n\n1. 一点儿 + 都/也 + 不 + adjective/verb (present/habitual negation)\n• 今天一点儿都不冷。(It is not cold at all today.)\n• 我一点儿也不累。(I am not tired at all.)\n\n2. 一点儿 + 都/也 + 没 + verb (past/completed action negation)\n• 她一点儿都没变。(She has not changed at all.)\n• 我一点儿也没吃。(I did not eat anything at all.)\n\nNote: 都 and 也 are interchangeable here. 一点儿 adds emotional emphasis compared to just 不/没.",
       "examples": [
         {
-          "chinese": "他们有误会，却互相谅解了。",
-          "pinyin": "Tā men yǒu wù huì, què hù xiāng liàng jiě le.",
-          "english": "They had a misunderstanding, but forgave each other anyway."
+          "chinese": "今天一点儿都不冷，穿一件衣服就可以了。",
+          "pinyin": "jīn tiān yì diǎn ér dōu bù lěng chuān yī jiàn yī fú jiù kě yǐ le",
+          "english": "It is not cold at all today; one piece of clothing is enough."
         },
         {
-          "chinese": "她很忙，却从不忘记联系老朋友。",
-          "pinyin": "Tā hěn máng, què cóng bú wàng jì lián xì lǎo péng yǒu.",
-          "english": "She is very busy, but never forgets to contact old friends."
+          "chinese": "他一点儿也没变，还是那么年轻。",
+          "pinyin": "tā yì diǎn ér yě méi biàn hái shì nà me nián qīng",
+          "english": "He has not changed at all; still so young."
+        },
+        {
+          "chinese": "我一点儿都不喜欢这种食物。",
+          "pinyin": "wǒ yì diǎn ér dōu bù xǐ huān zhè zhǒng shí wù",
+          "english": "I do not like this kind of food at all."
         }
       ],
       "exercises": [
         {
-          "question": "他们发生了误会，_____ 还是好朋友。",
+          "question": "Choose the correct sentence using 一点儿 + 都/也 + 不/没",
           "type": "multiple_choice",
-          "correct": "却",
+          "correct": "我一点儿都不觉得累。",
           "options": [
-            "却",
-            "所以",
-            "因为",
-            "于是"
+            "我一点儿都不觉得累。",
+            "我都一点儿不觉得累。",
+            "我不一点儿都觉得累。",
+            "一点儿我都不累觉得。"
           ],
           "option_pinyin": [
-            "què",
-            "suǒ yǐ",
-            "yīn wèi",
-            "yú shì"
-          ],
-          "word_hints": {
-            "误会": "wù huì"
-          }
-        },
-        {
-          "question": "Choose the sentence where 却 is used correctly.",
-          "type": "multiple_choice",
-          "correct": "他道歉了，友谊却更淡了。",
-          "options": [
-            "他道歉了，友谊却更淡了。",
-            "却他道歉了，友谊更淡了。",
-            "他道歉了，友谊更淡了却。",
-            "他道歉却了，友谊更淡了。"
-          ],
-          "option_pinyin": [
-            "Tā dào qiàn le, yǒu yì què gèng dàn le.",
-            "Què tā dào qiàn le, yǒu yì gèng dàn le.",
-            "Tā dào qiàn le, yǒu yì gèng dàn le què.",
-            "Tā dào qiàn què le, yǒu yì gèng dàn le."
-          ],
-          "word_hints": {
-            "道歉": "dào qiàn",
-            "友谊": "yǒu yì"
-          }
-        },
-        {
-          "question": "她没有信心，_____ 坚持下去了。",
-          "type": "multiple_choice",
-          "correct": "却",
-          "options": [
-            "却",
-            "而且",
-            "不仅",
-            "因此"
-          ],
-          "option_pinyin": [
-            "què",
-            "ér qiě",
-            "bù jǐn",
-            "yīn cǐ"
-          ],
-          "word_hints": {
-            "信心": "xìn xīn"
-          }
-        },
-        {
-          "question": "What does 却 indicate in a sentence?",
-          "type": "multiple_choice",
-          "correct": "An unexpected contrast",
-          "options": [
-            "An unexpected contrast",
-            "A cause and effect",
-            "A condition",
-            "An addition"
-          ],
-          "option_pinyin": [
-            "",
+            "wǒ yì diǎn ér dōu bù jué dé lèi",
             "",
             "",
             ""
           ],
-          "word_hints": {}
+          "word_hints": {
+            "觉得": "jué de"
+          }
         },
         {
-          "question": "他道歉了，她 _____ 没有原谅他。",
+          "question": "这部电影___有意思，我中途就离开了。",
           "type": "multiple_choice",
-          "correct": "却",
+          "correct": "一点儿都不",
           "options": [
-            "却",
-            "也",
-            "都",
-            "还"
+            "一点儿都不",
+            "非常",
+            "有一点儿",
+            "特别"
           ],
           "option_pinyin": [
-            "què",
-            "yě",
-            "dōu",
-            "hái"
+            "yī diǎnr dōu bù",
+            "fēi cháng",
+            "yǒu yī diǎnr",
+            "tè bié"
           ],
           "word_hints": {
-            "道歉": "dào qiàn"
+            "中途": "zhōng tú"
           }
         }
       ],
       "mini_exercises": [
         {
           "type": "multiple_choice",
-          "question": "却 differs from 但是/可是 in that...",
-          "correct": "却 is an adverb placed before the verb; 但是/可是 are conjunctions linking two clauses",
+          "question": "一点儿 + 都/也 + 不/没 expresses...",
+          "correct": "Complete negation — not even a tiny bit",
           "options": [
-            "却 is an adverb placed before the verb; 但是/可是 are conjunctions linking two clauses",
-            "却 and 但是 are completely interchangeable",
-            "却 must start the sentence; 但是 must end it",
-            "却 is only used in questions; 但是 in statements"
+            "Complete negation — not even a tiny bit",
+            "Partial negation — a little bit less than expected",
+            "Emphasis that something is very much the case",
+            "A contrast between two situations"
           ],
           "option_pinyin": [
-            "què (adv)",
-            "jiāo huàn",
-            "kāi tóu / jié wěi",
-            "wèn jù / chén shù"
+            "yī diǎnr dōu bù / méi",
+            "",
+            "",
+            ""
           ]
         },
         {
           "type": "fill_blank",
-          "question": "Fill in: He said he would come, but he didn't show up.",
-          "correct": "却",
+          "question": "Fill in: He hasn't changed at all, still so young.",
+          "correct": "一点儿",
           "options": [
-            "却",
-            "就",
-            "也",
-            "还"
+            "一点儿",
+            "非常",
+            "有点儿",
+            "很多"
           ],
           "option_pinyin": [
-            "què",
-            "jiù",
-            "yě",
-            "hái"
+            "yī diǎnr",
+            "fēi cháng",
+            "yǒu diǎnr",
+            "hěn duō"
           ],
-          "question_chinese": "他说要来，___没有出现。",
-          "question_pinyin": "他说要来，___没有出现。",
-          "question_english": "He said he would come, but he didn't show up."
+          "question_chinese": "他___都没变，还是那么年轻。",
+          "question_pinyin": "他___都没变，还是那么年轻。",
+          "question_english": "He hasn't changed at all, still so young."
         },
         {
           "type": "multiple_choice",
-          "question": "Which sentence correctly uses 却?",
-          "correct": "他学了很多年，却还是不流利。",
+          "question": "Which sentence correctly uses 一点儿...都/也...不/没?",
+          "correct": "今天一点儿都不冷，穿一件衣服就行了。",
           "options": [
-            "他学了很多年，却还是不流利。",
-            "却他学了很多年，还是不流利。",
-            "他却了学很多年，还是不流利。",
-            "他学了很多年，还是不流利却。"
+            "今天一点儿都不冷，穿一件衣服就行了。",
+            "今天一点儿不都冷，穿一件衣服。",
+            "今天都一点儿不冷，就穿一件。",
+            "今天不一点儿都冷，衣服一件。"
           ],
           "option_pinyin": [
-            "tā xué le hěn duō nián què hái shì bù liú lì",
-            "què tā xué le hěn duō nián hái shì bù liú lì",
-            "tā què le xué hěn duō nián hái shì bù liú lì",
-            "tā xué le hěn duō nián hái shì bù liú lì què"
+            "jīn tiān yì diǎn ér dōu bù lěng chuān yī jiàn yī fú jiù xíng le",
+            "",
+            "",
+            ""
           ]
         }
       ]
@@ -1300,7 +1510,7 @@
           }
         },
         {
-          "question": "他们 _____ 联系，从来没有中断过友谊。",
+          "question": "他们 _____ 联系，友谊从来没有中断过。",
           "type": "multiple_choice",
           "correct": "互相",
           "options": [
