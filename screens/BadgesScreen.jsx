@@ -4,14 +4,14 @@ import ScreenBackground from '../components/ScreenBackground';
 import useProgress, { ALL_BADGES, getRank, getXPToNextRank } from '../hooks/useProgress';
 import { DEEP_NAVY, WARM_ORANGE, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
-export default function BadgesScreen({ onBack }) {
+export default function BadgesScreen({ onBack, currentLevelId}) {
   const { xp, streak, progress } = useProgress();
   const earned = new Set(progress.earnedBadges || []);
   const rank = getRank(xp);
   const { nextRank, xpNeeded, progress: rankProgress } = getXPToNextRank(xp);
 
   return (
-    <ScreenBackground levelId="hsk5">
+    <ScreenBackground levelId={currentLevelId || 'hsk1'}>
       {/* Header */}
       <View style={styles.header}>
         <TouchableOpacity onPress={onBack} style={styles.backBtn}>
@@ -24,22 +24,22 @@ export default function BadgesScreen({ onBack }) {
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
 
         {/* XP & Rank card */}
-        <View style={[styles.rankCard, { borderColor: rank.color }]}>
+        <View style={[styles.rankCard, { borderColor: 'rgba(122,79,30,0.5)'}]}>
           <View style={styles.rankRow}>
             <View>
               <Text style={styles.rankLabel}>Current Rank</Text>
-              <Text style={[styles.rankName, { color: rank.color }]}>{rank.rank}</Text>
+              <Text style={[styles.rankName, { color: '#8E4200'}]}>{rank.rank}</Text>
               <Text style={styles.rankChinese}>{rank.rankChinese}</Text>
             </View>
             <View style={styles.xpBlock}>
-              <Text style={[styles.xpTotal, { color: rank.color }]}>{xp}</Text>
+              <Text style={[styles.xpTotal, { color: '#8E4200'}]}>{xp}</Text>
               <Text style={styles.xpUnit}>XP</Text>
             </View>
           </View>
 
           {/* XP bar */}
           <View style={styles.barBg}>
-            <View style={[styles.barFill, { width: `${Math.round(rankProgress * 100)}%`, backgroundColor: rank.color }]} />
+            <View style={[styles.barFill, { width: `${Math.round(rankProgress * 100)}%`, backgroundColor: '#8E4200'}]} />
           </View>
           {nextRank
             ? <Text style={styles.barLabel}>{xpNeeded} XP to {nextRank.rank} ({nextRank.rankChinese})</Text>
@@ -96,40 +96,40 @@ const styles = StyleSheet.create({
   scroll: { paddingHorizontal: 16, paddingTop: 8 },
 
   rankCard: {
-    backgroundColor: 'rgba(255,255,255,0.12)',
+    backgroundColor: 'rgba(255,248,220,0.88)',
     borderRadius: 8,
-    padding: 20,
+    padding: 12,
     borderWidth: 1.5,
     marginBottom: 12,
   },
   rankRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 },
-  rankLabel: { fontSize: 12, color: 'rgba(255,255,255,0.6)', fontWeight: '600', marginBottom: 2 },
-  rankName: { fontSize: 24, fontWeight: '900' },
-  rankChinese: { fontSize: 14, color: 'rgba(255,255,255,0.7)', marginTop: 2 },
+  rankLabel: { fontSize: 12, color: 'rgba(100,70,20,0.8)', fontWeight: '600', marginBottom: 2 },
+  rankName: { fontSize: 22, fontWeight: '900', color: '#3d1a78' },
+  rankChinese: { fontSize: 15, color: 'rgba(100,70,20,0.7)', marginTop: 2 },
   xpBlock: { alignItems: 'center' },
-  xpTotal: { fontSize: 40, fontWeight: '900', lineHeight: 44 },
-  xpUnit: { fontSize: 14, color: 'rgba(255,255,255,0.6)', fontWeight: '700' },
+  xpTotal: { fontSize: 26, fontWeight: '900', lineHeight: 44 },
+  xpUnit: { fontSize: 10, color: 'rgba(100,70,20,0.7)', fontWeight: '700' },
 
-  barBg: { height: 8, backgroundColor: 'rgba(255,255,255,0.15)', borderRadius: 4, overflow: 'hidden', marginBottom: 6 },
+  barBg: { height: 8, backgroundColor: 'rgba(100,70,20,0.15)', borderRadius: 4, overflow: 'hidden', marginBottom: 6 },
   barFill: { height: '100%', borderRadius: 4 },
-  barLabel: { fontSize: 12, color: 'rgba(255,255,255,0.6)', textAlign: 'right' },
+  barLabel: { fontSize: 12, color: 'rgba(100,70,20,0.7)', textAlign: 'right' },
 
   streakCard: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 14,
-    backgroundColor: 'rgba(255,243,205,0.12)',
+    backgroundColor: 'rgba(255,243,200,0.85)',
     borderRadius: 8,
-    padding: 16,
+    padding: 10,
     borderWidth: 1,
-    borderColor: 'rgba(255,214,0,0.3)',
+    borderColor: 'rgba(180,120,30,0.5)',
     marginBottom: 20,
   },
-  streakFire: { fontSize: 36 },
-  streakCount: { fontSize: 20, fontWeight: '800', color: '#ffeaa7' },
-  streakSub: { fontSize: 13, color: 'rgba(255,255,255,0.55)', marginTop: 2 },
+  streakFire: { fontSize: 26 },
+  streakCount: { fontSize: 16, fontWeight: '800', color: '#5c3a10' },
+  streakSub: { fontSize:10, color: 'rgba(100,70,20,0.7)', marginTop: 2 },
 
-  sectionTitle: { fontSize: 16, fontWeight: '800', color: CARD_WHITE, marginBottom: 14 },
+  sectionTitle: { fontSize: 16, fontWeight: '800', color: '#3a2000', marginBottom: 14 },
 
   badgesGrid: {
     flexDirection: 'row',
@@ -140,23 +140,23 @@ const styles = StyleSheet.create({
   badgeCard: {
     width: '47%',
     borderRadius: 8,
-    padding: 16,
+    padding: 10,
     alignItems: 'center',
-    gap: 4,
+    gap: 2,
     borderWidth: 1.5,
   },
   badgeCardEarned: {
-    backgroundColor: 'rgba(255,255,255,0.13)',
-    borderColor: 'rgba(255,255,255,0.3)',
+    backgroundColor: 'rgba(255,248,220,0.88)',
+    borderColor: 'rgba(180,120,30,0.5)',
   },
   badgeCardLocked: {
-    backgroundColor: 'rgba(0,0,0,0.2)',
-    borderColor: 'rgba(255,255,255,0.08)',
+    backgroundColor: 'rgba(255,248,220,0.45)',
+    borderColor: 'rgba(180,120,30,0.25)',
   },
-  badgeEmoji: { fontSize: 36, marginBottom: 4 },
+  badgeEmoji: { fontSize: 28, marginBottom: 4 },
   badgeEmojiLocked: { opacity: 0.5 },
-  badgeName: { fontSize: 14, fontWeight: '800', color: CARD_WHITE, textAlign: 'center' },
-  badgeNameChinese: { fontSize: 12, color: 'rgba(255,255,255,0.7)', textAlign: 'center' },
-  badgeDesc: { fontSize: 11, color: 'rgba(255,255,255,0.55)', textAlign: 'center', lineHeight: 15, marginTop: 2 },
-  badgeTextLocked: { color: 'rgba(255,255,255,0.3)' },
+  badgeName: { fontSize: 14, fontWeight: '800', color: '#3a2000', textAlign: 'center' },
+  badgeNameChinese: { fontSize: 14, color: 'rgba(80,50,10,0.8)', textAlign: 'center' },
+  badgeDesc: { fontSize: 12, color: 'rgba(100,70,20,0.7)', textAlign: 'center', lineHeight: 15, marginTop: 2 },
+  badgeTextLocked: { color: 'rgba(100,70,20,0.35)' },
 });

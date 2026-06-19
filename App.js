@@ -31,7 +31,10 @@ import RewardModal from './components/RewardModal';
 import useProgress, { computeNewBadges } from './hooks/useProgress';
 import BadgesScreen from './screens/BadgesScreen';
 import PaywallScreen from './screens/PaywallScreen';
+import ProfileScreen from './screens/ProfileScreen';
+import TabBar from './components/TabBar';
 import { checkSubscriptionStatus } from './services/RevenueCatService';
+import FoundationsScreen from './screens/FoundationsScreen';
 
 // Pinyin lesson data
 import pinyinLesson1  from './data/pinyin/pinyin_lesson_1.json';
@@ -178,6 +181,8 @@ const DEFAULT_LEVEL_STATE = {
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [currentScreen, setCurrentScreen] = useState('onboarding');
+  const [activeTab, setActiveTab] = useState('home');
+  const [pinyinSystemOrigin, setPinyinSystemOrigin] = useState('foundations'); // 'tab' | 'foundations'
   const [userData, setUserData] = useState(null);
   const [currentLessonId, setCurrentLessonId] = useState(null);
   const [currentLessonLevelId, setCurrentLessonLevelId] = useState(null);
@@ -390,6 +395,7 @@ export default function App() {
     setReturnLevelId(levelId);
     setReturnLessonId(currentLessonId);
     setCurrentScreen('home');
+    setActiveTab('learn');
     setCurrentLessonId(null);
     setCurrentQuizLevelId(null);
     setCurrentStageIndex(null);
@@ -439,7 +445,23 @@ export default function App() {
 
   // ── Pinyin Learning System handlers ─────────────────────────
   const handleOpenPinyinSystem = () => {
+    setPinyinSystemOrigin('foundations');
     setCurrentScreen('pinyinSystem');
+  };
+
+  const handleTabPress = (tab) => {
+    setActiveTab(tab);
+    if (tab === 'home') {
+      setCurrentScreen('home');
+    } else if (tab === 'learn') {
+      setCurrentScreen('foundations');
+    } else if (tab === 'practice') {
+      Alert.alert('Coming Soon', 'Video lessons are on their way! 🎬');
+    } else if (tab === 'achievements') {
+      setCurrentScreen('badges');
+    } else if (tab === 'profile') {
+      setCurrentScreen('profile');
+    }
   };
 
   const handleSelectPinyinLesson = (lessonId) => {
@@ -868,6 +890,17 @@ export default function App() {
         />
       );
     }
+    if (currentScreen === 'foundations') {
+      return (
+        <FoundationsScreen
+          currentLevelId={userData?.result?.recommendedLevel || 'hsk1'}
+          onPinyinPress={() => {
+            setPinyinSystemOrigin('tab');
+            setCurrentScreen('pinyinSystem');
+          }}
+        />
+      );
+    }
     if (currentScreen === 'lesson') {
       return (
         <LessonDetailScreen
@@ -973,7 +1006,9 @@ export default function App() {
     if (currentScreen === 'pinyinSystem') {
       return (
         <PinyinSystemScreen
-          onBack={() => setCurrentScreen('foundationsPinyin')}
+          onBack={pinyinSystemOrigin === 'tab'
+            ? handleBackToHome
+            : () => setCurrentScreen('foundationsPinyin')}
           onSelectLesson={handleSelectPinyinLesson}
           onFinalQuiz={handlePinyinFinalQuiz}
           quizPassedLessons={pinyinQuizPassed}
@@ -1045,7 +1080,24 @@ export default function App() {
       );
     }
     if (currentScreen === 'badges') {
-      return <BadgesScreen onBack={() => setCurrentScreen('home')} />;
+      return (
+        <BadgesScreen
+          currentLevelId={userData?.result?.recommendedLevel || 'hsk1'}
+          onBack={() => { setCurrentScreen('home'); setActiveTab('home'); }}
+        />
+      );
+    }
+    if (currentScreen === 'profile') {
+      return (
+        <ProfileScreen
+          userData={userData}
+          levelState={levelState}
+          onChangeLevelConfirm={handleChangeLevelConfirm}
+          onRetakeTest={handleRetakeTest}
+          onResetProgress={handleResetProgress}
+          onCharactersPress={() => handleOpenFoundationsPinyin('home')}
+        />
+      );
     }
     if (currentScreen === 'paywall') {
       return (
@@ -1070,36 +1122,45 @@ export default function App() {
     return null;
   };
 
+  const TAB_SCREENS = new Set(['home','foundations', 'badges', 'profile']);
+  const showTabBar = TAB_SCREENS.has(currentScreen)
+    || (currentScreen === 'pinyinSystem' && pinyinSystemOrigin === 'tab');
+
   return (
     <SafeAreaProvider>
       <View style={{ flex: 1 }}>
-        {renderCurrentScreen()}
-        <UnlockModal
-          visible={!!unlockModal}
-          title={unlockModal?.title}
-          message={unlockModal?.message}
-          primaryLabel={unlockModal?.primaryLabel}
-          secondaryLabel={unlockModal?.secondaryLabel}
-          onPrimary={unlockModal?.onPrimary}
-          onSecondary={unlockModal?.onSecondary}
-        />
-        <RewardModal
-          visible={rewardModal !== null}
-          xpEarned={rewardModal?.xpEarned || 0}
-          scorePercent={rewardModal?.scorePercent || 0}
-          totalXP={xp}
-          newBadges={rewardModal?.newBadges || []}
-          streak={streak}
-          onClose={() => {
-            const stageIndex = rewardModal?.stageIndex;
-            setRewardModal(null);
-            handleStageContinue(stageIndex);
-          }}
-          onBreak={() => {
-            setRewardModal(null);
-            setCurrentScreen('lessonStages');
-          }}
-        />
+        <View style={{ flex: 1 }}>
+          {renderCurrentScreen()}
+          <UnlockModal
+            visible={!!unlockModal}
+            title={unlockModal?.title}
+            message={unlockModal?.message}
+            primaryLabel={unlockModal?.primaryLabel}
+            secondaryLabel={unlockModal?.secondaryLabel}
+            onPrimary={unlockModal?.onPrimary}
+            onSecondary={unlockModal?.onSecondary}
+          />
+          <RewardModal
+            visible={rewardModal !== null}
+            xpEarned={rewardModal?.xpEarned || 0}
+            scorePercent={rewardModal?.scorePercent || 0}
+            totalXP={xp}
+            newBadges={rewardModal?.newBadges || []}
+            streak={streak}
+            onClose={() => {
+              const stageIndex = rewardModal?.stageIndex;
+              setRewardModal(null);
+              handleStageContinue(stageIndex);
+            }}
+            onBreak={() => {
+              setRewardModal(null);
+              setCurrentScreen('lessonStages');
+            }}
+          />
+        </View>
+        {showTabBar && (
+          <TabBar activeTab={activeTab} onTabPress={handleTabPress} />
+        )}
       </View>
     </SafeAreaProvider>
   );

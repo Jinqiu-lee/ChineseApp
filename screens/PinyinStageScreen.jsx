@@ -266,7 +266,7 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
         ) : (
           <ScrollView
             style={{ flex: 1 }}
-            contentContainerStyle={{ padding: 16, flexGrow: 1 }}
+            contentContainerStyle={{ padding: 16, paddingBottom: 32 }}
             keyboardShouldPersistTaps="handled"
             showsVerticalScrollIndicator={false}
           >

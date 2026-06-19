@@ -240,14 +240,6 @@ export default function FoundationsPinyinScreen({ onBack, lessonContext = null, 
             </View>
           </View>
 
-          {/* Practice reminder */}
-          <View style={styles.practiceReminder}>
-            <Text style={styles.practiceReminderTitle}>🎯 Practice in Your Lessons</Text>
-            <Text style={styles.practiceReminderText}>
-              Each lesson has a Pinyin Focus section with exercises tailored to the sounds you're learning. Go back to your lesson to practice!
-            </Text>
-          </View>
-
           <View style={{ height: 40 }} />
         </ScrollView>
       </SafeAreaView>
@@ -375,10 +367,4 @@ const styles = StyleSheet.create({
   systemBtnSub:   { fontSize: 12, color: SLATE_TEAL },
   systemBtnArrow: { fontSize: 18, color: WARM_BROWN, fontWeight: '700' },
 
-  practiceReminder: {
-    backgroundColor: CARD_WHITE, borderRadius: 16,
-    padding: 18, marginTop: 8, borderWidth: 1, borderColor: 'rgba(155,104,70,0.20)',
-  },
-  practiceReminderTitle: { fontSize: 14, fontWeight: '800', color: WARM_ORANGE, marginBottom: 8 },
-  practiceReminderText:  { fontSize: 13, color: SLATE_TEAL, lineHeight: 20 },
 });

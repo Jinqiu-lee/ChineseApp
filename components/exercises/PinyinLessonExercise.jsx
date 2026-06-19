@@ -180,22 +180,22 @@ export default function PinyinLessonExercise({ exercise, onCorrect, onWrong }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, paddingTop: 8, paddingHorizontal: 8 },
+  container: { paddingTop: 8, paddingHorizontal: 8 },
 
-  topRow: { marginBottom: 20, backgroundColor: CARD_WHITE, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 10 },
-  instruction: { fontSize: 16, fontWeight: '700', color: DEEP_NAVY },
+  topRow: { marginBottom: 12, backgroundColor: CARD_WHITE, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 10 },
+  instruction: { fontSize: 15, fontWeight: '700', color: DEEP_NAVY },
 
   // Listen card
   listenCard: {
-    backgroundColor: CARD_WHITE, borderRadius: 20, padding: 32,
-    alignItems: 'center', marginBottom: 28,
-    borderWidth: 2, borderColor: SLATE_TEAL, gap: 8,
+    backgroundColor: CARD_WHITE, borderRadius: 20, padding: 20,
+    alignItems: 'center', marginBottom: 16,
+    borderWidth: 2, borderColor: SLATE_TEAL, gap: 6,
   },
-  listenIcon: { fontSize: 48 },
+  listenIcon: { fontSize: 36 },
   listenTap:  { fontSize: 13, color: SLATE_TEAL },
-  revealedBox:     { marginTop: 12, alignItems: 'center', gap: 4 },
+  revealedBox:     { marginTop: 6, alignItems: 'center', gap: 4 },
   revealedLabel:   { fontSize: 11, color: SLATE_TEAL, textTransform: 'uppercase', letterSpacing: 1 },
-  revealedSyllable:{ fontSize: 36, fontWeight: '900', color: SLATE_TEAL, letterSpacing: 2 },
+  revealedSyllable:{ fontSize: 28, fontWeight: '900', color: SLATE_TEAL, letterSpacing: 2 },
 
   // Prompt card (sandhi / neutral)
   promptCard: {
@@ -214,13 +214,13 @@ const styles = StyleSheet.create({
   syllableText: { fontSize: 44, fontWeight: '900', color: WARM_BROWN, letterSpacing: 2 },
 
   // Choices
-  choices:      { gap: 10 },
-  choice:       { backgroundColor: CARD_WHITE, borderRadius: 14, padding: 16, borderWidth: 2, borderColor: 'rgba(155,104,70,0.22)', alignItems: 'center' },
-  choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: SUCCESS, alignItems: 'center' },
-  choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: ERROR, alignItems: 'center' },
-  choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, padding: 16, borderWidth: 2, borderColor: 'rgba(155,104,70,0.10)', alignItems: 'center' },
-  choiceText:   { fontSize: 21, fontWeight: '700', color: DEEP_NAVY, textAlign: 'center' },
-  toneMark:     { fontSize: 36, fontWeight: '900', textAlign: 'center' },
+  choices:      { gap: 8 },
+  choice:       { backgroundColor: CARD_WHITE, borderRadius: 14, paddingVertical: 11, paddingHorizontal: 16, borderWidth: 2, borderColor: 'rgba(155,104,70,0.22)', alignItems: 'center' },
+  choiceCorrect:{ backgroundColor: '#e8f5e9', borderRadius: 14, paddingVertical: 11, paddingHorizontal: 16, borderWidth: 2, borderColor: SUCCESS, alignItems: 'center' },
+  choiceWrong:  { backgroundColor: '#fde8e8', borderRadius: 14, paddingVertical: 11, paddingHorizontal: 16, borderWidth: 2, borderColor: ERROR, alignItems: 'center' },
+  choiceDimmed: { backgroundColor: '#F5F2EE', borderRadius: 14, paddingVertical: 11, paddingHorizontal: 16, borderWidth: 2, borderColor: 'rgba(155,104,70,0.10)', alignItems: 'center' },
+  choiceText:   { fontSize: 19, fontWeight: '700', color: DEEP_NAVY, textAlign: 'center' },
+  toneMark:     { fontSize: 30, fontWeight: '900', textAlign: 'center' },
 
 
   // Show Pinyin
@@ -232,14 +232,14 @@ const styles = StyleSheet.create({
   pinyinPill:         { backgroundColor: '#eaf2f3', borderRadius: 12, paddingHorizontal: 14, paddingVertical: 6, borderWidth: 1, borderColor: 'rgba(55,73,80,0.30)' },
   pinyinPillText:     { fontSize: 18, fontWeight: '800', color: SLATE_TEAL, letterSpacing: 1 },
   nextBtn: {
-    marginTop: 16, backgroundColor: SUCCESS, borderRadius: 14,
-    padding: 16, alignItems: 'center',
+    marginTop: 10, backgroundColor: SUCCESS, borderRadius: 14,
+    padding: 14, alignItems: 'center',
   },
   nextBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 
   continueBtn: {
-    marginTop: 16, backgroundColor: DEEP_NAVY, borderRadius: 14,
-    padding: 16, alignItems: 'center',
+    marginTop: 10, backgroundColor: DEEP_NAVY, borderRadius: 14,
+    padding: 14, alignItems: 'center',
   },
   continueBtnText: { fontSize: 16, fontWeight: '800', color: CARD_WHITE },
 });

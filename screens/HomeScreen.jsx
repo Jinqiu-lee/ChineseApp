@@ -5,13 +5,11 @@ import ScreenBackground from '../components/ScreenBackground';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR } from '../constants/colors';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import ConfettiCannon from 'react-native-confetti-cannon';
-import LevelChangeModal from '../components/LevelChangeModal';
 import AvatarCharacter from '../components/AvatarCharacter';
 import AvatarPicker from '../components/AvatarPicker';
 import AVATARS from '../config/avatarConfig';
 import useProgress from '../hooks/useProgress';
 import { LEVEL_WELCOME, LEVEL_QUOTES } from '../data/emotionalContent';
-import { getVanGoghMessage } from '../data/vanGoghMessages';
 import { loadQuizProgress } from '../utils/quizProgressStorage';
 const DEV_UNLOCK_ALL = true; // mirrors App.js — set false for production
 
@@ -199,18 +197,13 @@ export default function HomeScreen({
 }) {
   const { xp, streak } = useProgress();
 
-  const [showMenu, setShowMenu] = useState(false);
   const [showFavouritePrompt, setShowFavouritePrompt] = useState(false);
   const [favouriteSet, setFavouriteSet] = useState(false);
   const [selectedLevel, setSelectedLevel] = useState(
     () => returnLevelId ? LEVEL_CONFIG.find(l => l.id === returnLevelId) ?? null : null
   );
-  const [showLevelChangeModal, setShowLevelChangeModal] = useState(false);
   const [foundationModal, setFoundationModal] = useState(null); // 'pinyin' | 'characters' | null
   const [avatarId, setAvatarId] = useState('eileen');
-  const [vanGoghGreeting, setVanGoghGreeting] = useState(null);
-  const [vanGoghAvatar, setVanGoghAvatar] = useState(require('../assets/avatar/Van_Gogh_梵高/van_gogh_portrait_2.png'));
-  const [vanGoghStreakMsg, setVanGoghStreakMsg] = useState(null);
   const [levelQuizProgress, setLevelQuizProgress] = useState(null);
 
   const confettiRef = useRef(null);
@@ -261,38 +254,6 @@ export default function HomeScreen({
   useEffect(() => {
     AsyncStorage.getItem('avatarId').then(val => { if (val) { setAvatarId(val); setFavouriteSet(true); } }).catch(() => {});
   }, []);
-
-  useEffect(() => {
-    const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
-    AsyncStorage.getItem('last_active_date').then(lastDate => {
-      let category = 'dailyGreeting';
-      let avatar = require('../assets/avatar/Van_Gogh_梵高/van_gogh_portrait_2.png');
-      if (lastDate && lastDate !== today) {
-        const msPerDay = 24 * 60 * 60 * 1000;
-        const daysDiff = Math.round((new Date(today) - new Date(lastDate)) / msPerDay);
-        if (daysDiff >= 7) {
-          category = 'welcomeBackLong';
-          avatar = require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_background.png');
-        } else if (daysDiff >= 1) {
-          category = 'welcomeBackShort';
-          avatar = require('../assets/avatar/Van_Gogh_梵高/Van_Gogh_background.png');
-        }
-      }
-      setVanGoghGreeting(getVanGoghMessage(category));
-      setVanGoghAvatar(avatar);
-      AsyncStorage.setItem('last_active_date', today).catch(() => {});
-    }).catch(() => {
-      setVanGoghGreeting(getVanGoghMessage('dailyGreeting'));
-    });
-  }, []);
-
-  useEffect(() => {
-    if (streak >= 2) {
-      setVanGoghStreakMsg(getVanGoghMessage('streakActive', { days: streak }));
-    } else {
-      setVanGoghStreakMsg(null);
-    }
-  }, [streak]);
 
   // Load quiz progress whenever the user opens a level's lesson list
   useEffect(() => {
@@ -351,7 +312,6 @@ export default function HomeScreen({
   const isHsk3Plus = currentLevelConfig.number >= 3;
 
   const handlePinyinSection = () => {
-    setShowMenu(false);
     if (isHsk3Plus) {
       Alert.alert(
         '🔊 Pinyin – HSK 1 & 2',
@@ -367,7 +327,6 @@ export default function HomeScreen({
   };
 
   const handleCharactersSection = () => {
-    setShowMenu(false);
     setFoundationModal('characters');
   };
 
@@ -385,11 +344,6 @@ export default function HomeScreen({
       return;
     }
     setSelectedLevel(level);
-  };
-
-  const handleChangeLevelConfirm = (newLevelId) => {
-    onChangeLevelConfirm(newLevelId);
-    setShowLevelChangeModal(false);
   };
 
   // ── Level lessons view ──────────────────────────────────────────
@@ -508,11 +462,7 @@ export default function HomeScreen({
       <StatusBar barStyle="dark-content" />
 
       <View style={styles.topHeader}>
-        <TouchableOpacity style={styles.menuButton} onPress={() => setShowMenu(true)}>
-          <Text style={styles.menuIcon}>☰</Text>
-        </TouchableOpacity>
         <Text style={styles.appTitle}>Chinese Learning</Text>
-        <View style={{ width: 44 }} />
       </View>
 
       <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
@@ -607,54 +557,6 @@ export default function HomeScreen({
           );
         })()}
 
-        {/* Van Gogh quote — single card, welcome-back takes priority over daily greeting */}
-        {(vanGoghStreakMsg || vanGoghGreeting) && (
-          <View style={styles.vgCard}>
-            <Image
-              source={require('../assets/avatar/Van_Gogh_梵高/van_gogh_portrait_2.png')}
-              style={styles.vgAvatarImage}
-            />
-            <View style={styles.vgTextBlock}>
-              <Text style={styles.vgMessageText}>
-                {(vanGoghStreakMsg ?? vanGoghGreeting).text}
-              </Text>
-              <Text style={styles.vgSignature}>— Vincent</Text>
-            </View>
-          </View>
-        )}
-
-
-        {/* Chinese Foundations */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>📖 Chinese Foundations</Text>
-          <View style={styles.foundationsRow}>
-            {/* Pinyin card — dimmed for HSK3+ */}
-            <TouchableOpacity
-              style={[styles.foundationCard, isHsk3Plus && styles.foundationCardDimmed]}
-              onPress={handlePinyinSection}
-              activeOpacity={0.8}
-            >
-              <Text style={[styles.foundationEmoji, isHsk3Plus && styles.foundationEmojiDimmed]}>🔊</Text>
-              <Text style={[styles.foundationTitle, isHsk3Plus && styles.foundationTitleDimmed]}>Pinyin</Text>
-              <Text style={[styles.foundationSubtitle, isHsk3Plus && styles.foundationSubtitleDimmed]}>Sound System</Text>
-              <Text style={[styles.foundationPoetic, isHsk3Plus && styles.foundationSubtitleDimmed]}>The path you walk</Text>
-              {isHsk3Plus && <Text style={styles.foundationLevelTag}>HSK 1–2</Text>}
-            </TouchableOpacity>
-            {/* Characters card — highlighted for HSK3+ */}
-            <TouchableOpacity
-              style={[styles.foundationCard, isHsk3Plus && styles.foundationCardHighlighted]}
-              onPress={handleCharactersSection}
-              activeOpacity={0.8}
-            >
-              <Text style={styles.foundationEmoji}>✍️</Text>
-              <Text style={styles.foundationTitle}>Characters</Text>
-              <Text style={styles.foundationSubtitle}>Writing System</Text>
-              <Text style={styles.foundationPoetic}>The structure you build</Text>
-              {isHsk3Plus && <Text style={styles.foundationRecommendedTag}>Recommended ✦</Text>}
-            </TouchableOpacity>
-          </View>
-        </View>
-
         {/* Chinese Journey path */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>🗺 Chinese Journey</Text>
@@ -724,136 +626,6 @@ export default function HomeScreen({
         />
       )}
 
-      {/* Menu Modal */}
-      <Modal
-        visible={showMenu}
-        transparent={true}
-        animationType="fade"
-        onRequestClose={() => setShowMenu(false)}
-      >
-        <TouchableOpacity
-          style={styles.modalOverlay}
-          activeOpacity={1}
-          onPress={() => setShowMenu(false)}
-        >
-          <View style={styles.menuPanel}>
-            <View style={styles.menuHeader}>
-              <Text style={styles.menuHeaderText}>Menu</Text>
-              <TouchableOpacity onPress={() => setShowMenu(false)}>
-                <Text style={styles.menuClose}>✕</Text>
-              </TouchableOpacity>
-            </View>
-
-            <View style={[styles.menuLevelCard, { borderColor: currentLevelConfig.color }]}>
-              <Text style={styles.menuLevelEmoji}>{currentLevelConfig.emoji}</Text>
-              <View>
-                <Text style={styles.menuLevelLabel}>Current Level</Text>
-                <Text style={[styles.menuLevelText, { color: currentLevelConfig.color }]}>
-                  Level {currentLevelConfig.number}: {currentLevelConfig.title}
-                </Text>
-              </View>
-            </View>
-
-            <View style={styles.menuSectionHeader}>
-              <Text style={styles.menuSectionTitle}>📖 Learning Tools</Text>
-            </View>
-
-            <TouchableOpacity style={styles.menuItem} onPress={() => { setShowMenu(false); onAchievementsPress?.(); }}>
-              <Text style={styles.menuItemEmoji}>🏆</Text>
-              <View style={styles.menuItemTextContainer}>
-                <Text style={styles.menuItemText}>Achievements</Text>
-                <Text style={styles.menuItemSubtext}>Badges & XP progress</Text>
-              </View>
-              <Text style={styles.menuItemArrow}>→</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={[styles.menuItem, isHsk3Plus && styles.menuItemDimmed]} onPress={handlePinyinSection}>
-              <Text style={styles.menuItemEmoji}>🔊</Text>
-              <View style={styles.menuItemTextContainer}>
-                <Text style={[styles.menuItemText, isHsk3Plus && styles.menuItemTextDimmed]}>Pinyin Learning</Text>
-                <Text style={styles.menuItemSubtext}>{isHsk3Plus ? 'HSK 1–2 · Beginner level' : 'Tones & Pronunciation'}</Text>
-              </View>
-              <Text style={styles.menuItemArrow}>→</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={[styles.menuItem, isHsk3Plus && styles.menuItemHighlighted]} onPress={handleCharactersSection}>
-              <Text style={styles.menuItemEmoji}>✍️</Text>
-              <View style={styles.menuItemTextContainer}>
-                <Text style={styles.menuItemText}>Chinese Characters</Text>
-                <Text style={styles.menuItemSubtext}>{isHsk3Plus ? 'Recommended for HSK 3+' : 'Stroke Order & Radicals'}</Text>
-              </View>
-              <Text style={styles.menuItemArrow}>→</Text>
-            </TouchableOpacity>
-
-            <View style={styles.menuSectionHeader}>
-              <Text style={styles.menuSectionTitle}>⚙️ Settings</Text>
-            </View>
-
-            {levelState.levelSetBy === 'manual' && (
-              <TouchableOpacity
-                style={[styles.menuItem, levelState.levelChangedUsed && styles.menuItemDisabled]}
-                onPress={() => {
-                  if (levelState.levelChangedUsed) return;
-                  setShowMenu(false);
-                  setShowLevelChangeModal(true);
-                }}
-              >
-                <Text style={styles.menuItemEmoji}>🔄</Text>
-                <View style={styles.menuItemTextContainer}>
-                  <Text style={[styles.menuItemText, levelState.levelChangedUsed && styles.menuItemTextDisabled]}>
-                    Change Level
-                  </Text>
-                  {levelState.levelChangedUsed && (
-                    <Text style={styles.menuItemSubtext}>Already used (one-time only)</Text>
-                  )}
-                </View>
-                {!levelState.levelChangedUsed && <Text style={styles.menuItemArrow}>→</Text>}
-              </TouchableOpacity>
-            )}
-
-            <TouchableOpacity
-              style={styles.menuItem}
-              onPress={() => { setShowMenu(false); onRetakeTest(); }}
-            >
-              <Text style={styles.menuItemEmoji}>📝</Text>
-              <View style={styles.menuItemTextContainer}>
-                <Text style={styles.menuItemText}>Retake Placement Test</Text>
-              </View>
-              <Text style={styles.menuItemArrow}>→</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={styles.menuItem}
-              onPress={() => {
-                setShowMenu(false);
-                Alert.alert(
-                  'Reset Progress',
-                  'This will erase all your progress and return you to onboarding. This cannot be undone.',
-                  [
-                    { text: 'Cancel', style: 'cancel' },
-                    { text: 'Reset', style: 'destructive', onPress: onResetProgress },
-                  ]
-                );
-              }}
-            >
-              <Text style={styles.menuItemEmoji}>🗑️</Text>
-              <View style={styles.menuItemTextContainer}>
-                <Text style={styles.menuItemText}>Reset Progress</Text>
-              </View>
-              <Text style={styles.menuItemArrow}>→</Text>
-            </TouchableOpacity>
-
-          </View>
-        </TouchableOpacity>
-      </Modal>
-
-      <LevelChangeModal
-        visible={showLevelChangeModal}
-        onClose={() => setShowLevelChangeModal(false)}
-        onConfirm={handleChangeLevelConfirm}
-        currentLevelId={result.recommendedLevel}
-        mode="manual"
-      />
 
       {/* Foundation Description Modal */}
       <Modal
