@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, Image, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal, Animated, ImageBackground, Alert } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Modal, Animated } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScreenBackground from '../components/ScreenBackground';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, SOFT_SALMON, CARD_WHITE, TEXT_LIGHT, MUTED_LIGHT, SUCCESS, ERROR } from '../constants/colors';
@@ -12,6 +12,7 @@ import useProgress from '../hooks/useProgress';
 import { LEVEL_WELCOME, LEVEL_QUOTES } from '../data/emotionalContent';
 import { loadQuizProgress } from '../utils/quizProgressStorage';
 const DEV_UNLOCK_ALL = true; // mirrors App.js — set false for production
+const SCROLL_KEY = 'homescreen_scroll_y';
 
 const LEVEL_CONFIG = [
   { id: 'hsk1', number: 1, emoji: '🌻', title: 'Sunflower Fields',    subtitle: 'HSK 1', color: WARM_BROWN,   tagline: 'Your warm beginning',        welcomeColor: '#1C2A44' },
@@ -193,7 +194,6 @@ export default function HomeScreen({
   onRetakeTest,
   onResetProgress,
   onAchievementsPress,
-  onFoundationsPinyinPress,
 }) {
   const { xp, streak } = useProgress();
 
@@ -209,9 +209,19 @@ export default function HomeScreen({
   const confettiRef = useRef(null);
   const [confettiActive, setConfettiActive] = useState(false);
   const avatarBounce = useRef(new Animated.Value(1)).current;
+  const scrollRef = useRef(null);
   const lessonScrollViewRef = useRef(null);
   const lessonsSectionYRef = useRef(0);
   const lessonYOffsetsRef = useRef({});
+
+  useEffect(() => {
+    AsyncStorage.getItem(SCROLL_KEY).then(val => {
+      if (val && scrollRef.current) {
+        const y = parseFloat(val);
+        setTimeout(() => { scrollRef.current?.scrollTo({ y, animated: false }); }, 100);
+      }
+    });
+  }, []);
 
   // Scroll to the lesson the user came from when returning to lesson list
   useEffect(() => {
@@ -309,29 +319,6 @@ export default function HomeScreen({
     return msgs[day];
   })();
 
-  const isHsk3Plus = currentLevelConfig.number >= 3;
-
-  const handlePinyinSection = () => {
-    if (isHsk3Plus) {
-      Alert.alert(
-        '🔊 Pinyin – HSK 1 & 2',
-        "You've already reached HSK 3! Pinyin is designed for beginners at HSK 1–2 level.\n\nAt your level, focus on Chinese Characters to strengthen your reading and writing skills.",
-        [
-          { text: 'Go to Characters', onPress: () => setFoundationModal('characters'), style: 'default' },
-          { text: 'Open Pinyin Anyway', onPress: () => { if (onFoundationsPinyinPress) onFoundationsPinyinPress(); }, style: 'cancel' },
-        ]
-      );
-    } else {
-      if (onFoundationsPinyinPress) onFoundationsPinyinPress();
-    }
-  };
-
-  const handleCharactersSection = () => {
-    setFoundationModal('characters');
-  };
-
-  const canChangeLevel = levelState.levelSetBy === 'manual' && !levelState.levelChangedUsed;
-
   const handleLevelPress = (level) => {
     const isLocked = !levelState.unlockedLevels.includes(level.id);
     if (isLocked) {
@@ -361,8 +348,17 @@ export default function HomeScreen({
           <Text style={styles.appTitle}>{selectedLevel.emoji} Level {selectedLevel.number}</Text>
           <View style={{ width: 44 }} />
         </View>
-
-        <ScrollView ref={lessonScrollViewRef} style={styles.container} contentContainerStyle={styles.contentContainer}>
+        <ScrollView
+        ref={(r) => { scrollRef.current = r; lessonScrollViewRef.current = r; }}
+        onScrollEndDrag={(e) => {
+          AsyncStorage.setItem(SCROLL_KEY, String(e.nativeEvent.contentOffset.y));
+        }}
+        onMomentumScrollEnd={(e) => {
+          AsyncStorage.setItem(SCROLL_KEY, String(e.nativeEvent.contentOffset.y));
+        }}
+        scrollEventThrottle={16}
+        style={styles.container}
+        contentContainerStyle={styles.contentContainer}>
           <View style={[styles.levelDetailBadge, { borderColor: selectedLevel.color }]}>
             <Text style={styles.levelDetailEmoji}>{selectedLevel.emoji}</Text>
             <View>

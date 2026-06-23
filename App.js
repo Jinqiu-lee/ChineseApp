@@ -169,6 +169,18 @@ const STORAGE_KEYS = {
   pinyinLearnDone:    '@chineseapp:pinyinLearnDone',
   quizPassedLessons:  '@chineseapp:quizPassedLessons',
   sectionProgress:    '@chineseapp:sectionProgress',
+  lastScreen:         '@chineseapp:lastScreen',
+};
+
+// Screens that are safe to restore — mid-exercise and paywall states are excluded
+const RESTORABLE_SCREENS = new Set(['lesson', 'lessonStages', 'pinyinSystem', 'pinyinLesson']);
+
+const saveLastScreen = (screen, ctx = {}) => {
+  if (!RESTORABLE_SCREENS.has(screen)) {
+    AsyncStorage.removeItem(STORAGE_KEYS.lastScreen).catch(() => {});
+    return;
+  }
+  AsyncStorage.setItem(STORAGE_KEYS.lastScreen, JSON.stringify({ screen, ...ctx })).catch(() => {});
 };
 
 const DEFAULT_LEVEL_STATE = {
@@ -232,7 +244,36 @@ export default function App() {
         const parsedUser = savedUser ? JSON.parse(savedUser) : null;
         if (parsedUser) {
           setUserData(parsedUser);
-          setCurrentScreen('home');
+          // Restore last active screen if it's a safe one
+          try {
+            const savedLastScreen = await AsyncStorage.getItem(STORAGE_KEYS.lastScreen);
+            if (savedLastScreen) {
+              const { screen, levelId, lessonId, pinyinLessonId } = JSON.parse(savedLastScreen);
+              if (RESTORABLE_SCREENS.has(screen)) {
+                if ((screen === 'lesson' || screen === 'lessonStages') && levelId && lessonId) {
+                  setCurrentLessonLevelId(levelId);
+                  setCurrentLessonId(lessonId);
+                  setCurrentScreen(screen);
+                } else if ((screen === 'pinyinLesson') && pinyinLessonId) {
+                  setCurrentPinyinLessonId(pinyinLessonId);
+                  setPinyinLessonInitialTab('learn');
+                  setPinyinSystemOrigin('foundations');
+                  setCurrentScreen(screen);
+                } else if (screen === 'pinyinSystem') {
+                  setPinyinSystemOrigin('foundations');
+                  setCurrentScreen('pinyinSystem');
+                } else {
+                  setCurrentScreen('home');
+                }
+              } else {
+                setCurrentScreen('home');
+              }
+            } else {
+              setCurrentScreen('home');
+            }
+          } catch {
+            setCurrentScreen('home');
+          }
         }
         if (savedLevel) {
           const parsed = JSON.parse(savedLevel);
@@ -365,6 +406,7 @@ export default function App() {
     const r1Done = (stageProgress[`${levelId}_${lessonId}_r1`] || []).length >= 5;
     const r2Done = (stageProgress[`${levelId}_${lessonId}_r2`] || []).length >= 5;
     setCurrentRound(r1Done && r2Done ? 3 : r1Done ? 2 : 1);
+    saveLastScreen('lesson', { levelId, lessonId });
     goToLesson('learning');
   };
 
@@ -394,6 +436,7 @@ export default function App() {
   const handleBackToHome = (levelId = null) => {
     setReturnLevelId(levelId);
     setReturnLessonId(currentLessonId);
+    saveLastScreen('home'); // clears last_screen (home is not restorable)
     setCurrentScreen('home');
     setActiveTab('learn');
     setCurrentLessonId(null);
@@ -446,14 +489,17 @@ export default function App() {
   // ── Pinyin Learning System handlers ─────────────────────────
   const handleOpenPinyinSystem = () => {
     setPinyinSystemOrigin('foundations');
+    saveLastScreen('pinyinSystem');
     setCurrentScreen('pinyinSystem');
   };
 
   const handleTabPress = (tab) => {
     setActiveTab(tab);
     if (tab === 'home') {
+      saveLastScreen('home');
       setCurrentScreen('home');
     } else if (tab === 'learn') {
+      saveLastScreen('home');
       setCurrentScreen('foundations');
     } else if (tab === 'practice') {
       Alert.alert('Coming Soon', 'Video lessons are on their way! 🎬');
@@ -467,6 +513,7 @@ export default function App() {
   const handleSelectPinyinLesson = (lessonId) => {
     setCurrentPinyinLessonId(lessonId);
     setPinyinLessonInitialTab('learn');
+    saveLastScreen('pinyinLesson', { pinyinLessonId: lessonId });
     setCurrentScreen('pinyinLesson');
   };
 
@@ -626,6 +673,7 @@ export default function App() {
 
   // ── Stage navigation handlers ────────────────────────────────
   const handleStartPractice = () => {
+    saveLastScreen('lessonStages', { levelId: currentLessonLevelId, lessonId: currentLessonId });
     setCurrentScreen('lessonStages');
   };
 
@@ -886,7 +934,6 @@ export default function App() {
           onRetakeTest={handleRetakeTest}
           onResetProgress={handleResetProgress}
           onAchievementsPress={() => setCurrentScreen('badges')}
-          onFoundationsPinyinPress={() => handleOpenFoundationsPinyin('home')}
         />
       );
     }

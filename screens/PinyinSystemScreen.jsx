@@ -1,13 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import ScreenBackground from '../components/ScreenBackground';
-import AvatarCharacter from '../components/AvatarCharacter';
 import AVATARS from '../config/avatarConfig';
-const SELECTABLE_AVATARS = AVATARS.filter(a =>
-  ['eileen','libai','luxun','dante','camus','jane','elena','liucixin'].includes(a.id)
-);
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
 // Pinyin quote pool — keyed by avatarId, 7 quotes each (one per day of week).
@@ -120,11 +116,6 @@ export default function PinyinSystemScreen({ onBack, onSelectLesson, onFinalQuiz
     AsyncStorage.getItem('avatarId').then(val => { if (val) setAvatarId(val); }).catch(() => {});
   }, []);
 
-  const handleSelectAvatar = (id) => {
-    setAvatarId(id);
-    AsyncStorage.setItem('avatarId', id).catch(() => {});
-  };
-
   const todayQuote = (() => {
     const day = new Date().getDay();
     const pool = PINYIN_QUOTES[avatarId] || PINYIN_QUOTES.eileen;
@@ -160,6 +151,15 @@ export default function PinyinSystemScreen({ onBack, onSelectLesson, onFinalQuiz
           <View style={{ width: 60 }} />
         </View>
 
+        {/* Guide banner — read-only, set from FoundationsScreen */}
+        <View style={styles.guideBanner}>
+          <Image source={selectedAvatarData.images.neutral} style={styles.guideBannerImg} resizeMode="cover" />
+          <View>
+            <Text style={styles.guideBannerLabel}>Your Guide</Text>
+            <Text style={styles.guideBannerName}>{selectedAvatarData.englishName}</Text>
+          </View>
+        </View>
+
         <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
 
           {/* Hero card */}
@@ -169,38 +169,6 @@ export default function PinyinSystemScreen({ onBack, onSelectLesson, onFinalQuiz
             <Text style={styles.heroDesc}>
               10 structured lessons covering all initials, finals, tones, and special rules. Pass each lesson quiz to unlock the next.
             </Text>
-
-            {/* Original 8 avatars — tap to choose your guide */}
-            <Text style={styles.avatarGridLabel}>Choose your guide</Text>
-            <View style={styles.avatarGrid}>
-              {SELECTABLE_AVATARS.map(av => (
-                <TouchableOpacity
-                  key={av.id}
-                  style={[styles.avatarGridItem, av.id === avatarId && styles.avatarGridItemSelected]}
-                  onPress={() => handleSelectAvatar(av.id)}
-                  activeOpacity={0.8}
-                >
-                  <AvatarCharacter avatarId={av.id} expression="idle" size={52} />
-                  <Text style={[styles.avatarGridName, av.id === avatarId && styles.avatarGridNameSelected]} numberOfLines={1}>
-                    {av.englishName.split(' ')[0]}
-                  </Text>
-                </TouchableOpacity>
-              ))}
-            </View>
-
-            {/* "Choose as guide" confirmation button */}
-            <TouchableOpacity
-              style={styles.guideConfirmBtn}
-              onPress={() => handleSelectAvatar(avatarId)}
-              activeOpacity={0.85}
-            >
-              <Text style={styles.guideConfirmIcon}>🎙️</Text>
-              <View style={{ flex: 1 }}>
-                <Text style={styles.guideConfirmTitle}>{selectedAvatarData.englishName} is your Pinyin Guide</Text>
-                <Text style={styles.guideConfirmSub}>Their messages appear on quiz results & stage completions</Text>
-              </View>
-              <Text style={styles.guideConfirmCheck}>✓</Text>
-            </TouchableOpacity>
 
             {/* Selected avatar quote */}
             <View style={styles.quoteBubble}>
@@ -323,31 +291,16 @@ const styles = StyleSheet.create({
   heroTitle: { fontSize: 22, fontWeight: '900', color: DEEP_NAVY, marginBottom: 8, textAlign: 'center' },
   heroDesc:  { fontSize: 14, color: SLATE_TEAL, lineHeight: 20, textAlign: 'center', marginBottom: 16 },
 
-  // Avatar grid
-  avatarGridLabel: { fontSize: 11, fontWeight: '700', color: SLATE_TEAL, letterSpacing: 1, marginBottom: 10, alignSelf: 'flex-start' },
-  avatarGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 16, width: '100%', justifyContent: 'center' },
-  avatarGridItem: {
-    alignItems: 'center', width: 68,
-    backgroundColor: CARD_WHITE, borderRadius: 8, paddingVertical: 8, paddingHorizontal: 4,
-    borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.15)',
-  },
-  avatarGridItemSelected: {
-    borderColor: WARM_ORANGE, borderWidth: 2,
-    backgroundColor: '#FFF8ED',
-  },
-  avatarGridName: { fontSize: 10, color: SLATE_TEAL, marginTop: 4, fontWeight: '600', textAlign: 'center' },
-  avatarGridNameSelected: { color: WARM_BROWN, fontWeight: '800' },
-
-  // Guide confirm button
-  guideConfirmBtn: {
+  // Guide banner (read-only strip below header)
+  guideBanner: {
     flexDirection: 'row', alignItems: 'center', gap: 10,
-    backgroundColor: '#FFF3E0', borderRadius: 12, padding: 14,
-    borderWidth: 1.5, borderColor: WARM_ORANGE, width: '100%', marginBottom: 4,
+    paddingHorizontal: 20, paddingVertical: 10,
+    backgroundColor: CARD_WHITE,
+    borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.15)',
   },
-  guideConfirmIcon:  { fontSize: 22 },
-  guideConfirmTitle: { fontSize: 13, fontWeight: '800', color: WARM_BROWN, marginBottom: 2 },
-  guideConfirmSub:   { fontSize: 11, color: SLATE_TEAL, lineHeight: 16 },
-  guideConfirmCheck: { fontSize: 18, color: WARM_ORANGE, fontWeight: '900' },
+  guideBannerImg:   { width: 36, height: 36, borderRadius: 18 },
+  guideBannerLabel: { fontSize: 10, fontWeight: '700', color: SLATE_TEAL, textTransform: 'uppercase', letterSpacing: 0.8 },
+  guideBannerName:  { fontSize: 14, fontWeight: '800', color: WARM_BROWN },
 
   // Quote bubble
   quoteBubble: {
