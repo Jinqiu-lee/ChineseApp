@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MandaGlow — Learn Mandarin with Van Gogh</title>
+<meta name="description" content="MandaGlow is a Mandarin learning app spanning HSK 1–6, guided by literary avatars and painted in the light of Van Gogh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --night: #12192e;
+    --night-2: #1c2846;
+    --night-3: #263865;
+    --gold: #f9ca24;
+    --gold-muted: #c8a84b;
+    --cream: #f4ecd8;
+    --cream-dim: #cfc6b0;
+    --ink: #0b0f1c;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--night);
+    color: var(--cream);
+    font-family: 'Inter', -apple-system, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: var(--gold); }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 3px;
+  }
+
+  .display {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+  }
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    position: relative;
+    min-height: 78vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 1.5rem 4rem;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%, var(--night-3) 0%, var(--night) 70%);
+  }
+
+  .hero canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.55;
+  }
+
+  .hero-content { position: relative; z-index: 2; max-width: 640px; }
+
+  .eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-muted);
+    margin-bottom: 1.25rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 7vw, 4.6rem);
+    margin: 0 0 0.5rem;
+    color: var(--cream);
+    letter-spacing: 0.01em;
+  }
+
+  .hero .tagline {
+    font-size: clamp(1.1rem, 2.4vw, 1.35rem);
+    font-style: italic;
+    color: var(--gold);
+    margin: 0 0 1.75rem;
+  }
+
+  .hero p.lede {
+    font-size: 1.05rem;
+    color: var(--cream-dim);
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* ---------- Sections ---------- */
+
+  section { padding: 5rem 1.5rem; }
+
+  .wrap { max-width: 880px; margin: 0 auto; }
+
+  .section-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  h2.display {
+    font-size: clamp(1.9rem, 4vw, 2.6rem);
+    margin: 0 0 1.25rem;
+    color: var(--cream);
+  }
+
+  .lead-text {
+    font-size: 1.05rem;
+    color: var(--cream-dim);
+    max-width: 62ch;
+  }
+
+  /* ---------- Avatar strip ---------- */
+
+  .avatars {
+    background: var(--night-2);
+    border-top: 1px solid rgba(249,202,36,0.12);
+    border-bottom: 1px solid rgba(249,202,36,0.12);
+  }
+
+  .avatar-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.75rem;
+  }
+
+  .avatar-chip {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid rgba(249,202,36,0.3);
+    border-radius: 999px;
+    color: var(--cream);
+    background: rgba(249,202,36,0.05);
+  }
+
+  /* ---------- Feature grid ---------- */
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.75rem;
+    margin-top: 2.5rem;
+  }
+
+  .feature {
+    padding: 1.75rem;
+    background: var(--night-2);
+    border: 1px solid rgba(249,202,36,0.1);
+    border-radius: 4px;
+  }
+
+  .feature .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: var(--gold-muted);
+    display: block;
+    margin-bottom: 0.6rem;
+  }
+
+  .feature h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0 0 0.5rem;
+    color: var(--cream);
+  }
+
+  .feature p {
+    font-size: 0.92rem;
+    color: var(--cream-dim);
+    margin: 0;
+  }
+
+  /* ---------- Contact ---------- */
+
+  .contact {
+    text-align: center;
+    background: radial-gradient(ellipse 70% 100% at 50% 100%, var(--night-3) 0%, var(--night) 70%);
+  }
+
+  .contact-card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1rem;
+    padding: 2.5rem 3rem;
+    border: 1px solid rgba(249,202,36,0.25);
+    border-radius: 6px;
+    background: rgba(249,202,36,0.04);
+  }
+
+  .contact-email {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 0.01em;
+  }
+
+  .contact-email:hover { text-decoration: underline; }
+
+  /* ---------- Footer ---------- */
+
+  footer {
+    padding: 2.5rem 1.5rem 3rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--cream-dim);
+    border-top: 1px solid rgba(249,202,36,0.1);
+  }
+
+  footer a { color: var(--gold-muted); margin: 0 0.6rem; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <div class="eyebrow">Mandarin, painted in light</div>
+    <h1 class="display">MandaGlow</h1>
+    <p class="tagline">Learn Mandarin with Van Gogh</p>
+    <p class="lede">A Mandarin learning journey through HSK 1–6, where every level is a painting, and every lesson is guided by a voice from literature.</p>
+  </div>
+</header>
+
+<section class="avatars">
+  <div class="wrap">
+    <div class="section-eyebrow">Your guides</div>
+    <h2 class="display">Six voices, six ways into the language</h2>
+    <p class="lead-text">Each learner picks up Mandarin alongside a literary companion — their tone, their era, their way of seeing carried through every lesson.</p>
+    <div class="avatar-row">
+      <span class="avatar-chip">Li Bai</span>
+      <span class="avatar-chip">Lu Xun</span>
+      <span class="avatar-chip">Zhang Ailing</span>
+      <span class="avatar-chip">Jane Austen</span>
+      <span class="avatar-chip">Dante</span>
+      <span class="avatar-chip">Camus</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-eyebrow">Inside the app</div>
+    <h2 class="display">Built for the way language actually sticks</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <span class="num">01</span>
+        <h3>HSK 1–6 Curriculum</h3>
+        <p>A complete path from first greetings to fluency, structured lesson by lesson.</p>
+      </div>
+      <div class="feature">
+        <span class="num">02</span>
+        <h3>Pinyin, from the ground up</h3>
+        <p>A standalone system for pronunciation, unlocked one quiz at a time.</p>
+      </div>
+      <div class="feature">
+        <span class="num">03</span>
+        <h3>Practice that adapts</h3>
+        <p>Words, grammar, and sentences woven into exercises as you go — never a static list.</p>
+      </div>
+      <div class="feature">
+        <span class="num">04</span>
+        <h3>A painting for every level</h3>
+        <p>Each HSK stage is set against a real Van Gogh work, chosen for its mood.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="section-eyebrow">Get in touch</div>
+    <h2 class="display">Questions, feedback, or a bug to report?</h2>
+    <div class="contact-card">
+      <p class="lead-text" style="margin:0;">We read every message.</p>
+      <a class="contact-email" href="mailto:ljinqiuc1@gmail.com">ljinqiuc1@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 MandaGlow. All rights reserved.</p>
+  <p>
+    <a href="https://jinqiu-lee.github.io/mandaglow-privacy">Privacy Policy</a>
+    ·
+    <a href="mailto:ljinqiuc1@gmail.com">Contact</a>
+  </p>
+</footer>
+
+<script>
+  // Quiet starry-night canvas: soft drifting points, no swirl overload.
+  const canvas = document.getElementById('stars');
+  const ctx = canvas.getContext('2d');
+  let stars = [];
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function resize() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+    const count = Math.floor((canvas.width * canvas.height) / 9000);
+    stars = Array.from({ length: count }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.4 + 0.3,
+      phase: Math.random() * Math.PI * 2,
+      speed: 0.004 + Math.random() * 0.006
+    }));
+  }
+
+  function draw(t) {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#f9ca24';
+    for (const s of stars) {
+      const twinkle = prefersReduced ? 0.6 : 0.4 + 0.6 * Math.abs(Math.sin(s.phase + t * s.speed));
+      ctx.globalAlpha = twinkle * 0.8;
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.globalAlpha = 1;
+    if (!prefersReduced) requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+  requestAnimationFrame(draw);
+</script>
+
+</body>
+</html>
