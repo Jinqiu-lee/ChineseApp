@@ -1,9 +1,9 @@
 // ── RevenueCat paywall service ────────────────────────────────────────────────
 // Set MVP_FREE_MODE = true during testing — everything is unlocked, no real
 // purchases happen. Flip to false before launch to activate real RevenueCat.
-export const MVP_FREE_MODE = true;
+export const MVP_FREE_MODE = false;
 
-const API_KEY = 'YOUR_REVENUECAT_API_KEY'; // Replace before launch
+const API_KEY = process.env.EXPO_PUBLIC_REVENUECAT_API_KEY || '';
 
 let Purchases = null;
 

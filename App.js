@@ -33,7 +33,7 @@ import BadgesScreen from './screens/BadgesScreen';
 import PaywallScreen from './screens/PaywallScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import TabBar from './components/TabBar';
-import { checkSubscriptionStatus } from './services/RevenueCatService';
+import { checkSubscriptionStatus, initRevenueCat } from './services/RevenueCatService';
 import FoundationsScreen from './screens/FoundationsScreen';
 
 // Pinyin lesson data
@@ -176,6 +176,7 @@ const STORAGE_KEYS = {
 const RESTORABLE_SCREENS = new Set(['lesson', 'lessonStages', 'pinyinSystem', 'pinyinLesson']);
 
 const saveLastScreen = (screen, ctx = {}) => {
+  console.log('saveLastScreen called:', screen, ctx);
   if (!RESTORABLE_SCREENS.has(screen)) {
     AsyncStorage.removeItem(STORAGE_KEYS.lastScreen).catch(() => {});
     return;
@@ -228,6 +229,7 @@ export default function App() {
   // ── Load saved data on startup ──────────────────────────────
   useEffect(() => {
     const load = async () => {
+      initRevenueCat(); // fire-and-forget — runs in parallel, completes well before paywall is reachable
       try {
         const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage, savedQuizPassedLessons, savedSectionProgress, savedPinyinLearnDone] = await Promise.all([
           AsyncStorage.getItem(STORAGE_KEYS.userData),
@@ -247,6 +249,7 @@ export default function App() {
           // Restore last active screen if it's a safe one
           try {
             const savedLastScreen = await AsyncStorage.getItem(STORAGE_KEYS.lastScreen);
+            console.log('lastScreen from storage:', savedLastScreen);
             if (savedLastScreen) {
               const { screen, levelId, lessonId, pinyinLessonId } = JSON.parse(savedLastScreen);
               if (RESTORABLE_SCREENS.has(screen)) {
@@ -607,8 +610,17 @@ export default function App() {
     setCurrentScreen('pinyinLesson');
   };
 
-  const handleOpenPinyinLinkedHSKLesson = () => {
+  const handleOpenPinyinLinkedHSKLesson = async () => {
     const lessonId = currentPinyinLessonId;
+    if (lessonId > 3) {
+      const subscribed = await checkSubscriptionStatus();
+      if (!subscribed) {
+        setCurrentLessonLevelId('hsk1');
+        setCurrentLessonId(lessonId);
+        setCurrentScreen('paywall');
+        return;
+      }
+    }
     setCurrentLessonLevelId('hsk1');
     setCurrentLessonId(lessonId);
     const r1Done = (stageProgress[`hsk1_${lessonId}_r1`] || []).length >= 5;
@@ -926,6 +938,7 @@ export default function App() {
           userData={userData}
           levelState={levelState}
           lessonProgress={lessonProgress}
+          quizPassedLessons={quizPassedLessons}
           returnLevelId={returnLevelId}
           returnLessonId={returnLessonId}
           onLessonPress={handleLessonPress}

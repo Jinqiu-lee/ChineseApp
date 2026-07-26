@@ -28,13 +28,21 @@
       ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/icons/icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#1a0a00"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["expo-notifications"],
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icons/icon.png",
+          "color": "#C8860A"
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "5115a894-8dc2-4779-b775-141e092f3548"

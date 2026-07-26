@@ -72,7 +72,7 @@ export default function PaywallScreen({ onDismiss, onSubscribed }) {
           <Text style={styles.price}>$5.99</Text>
           <Text style={styles.pricePeriod}>/ month</Text>
         </View>
-        <Text style={styles.priceNote}>Cancel anytime · 7-day free trial</Text>
+        <Text style={styles.priceNote}>Cancel anytime</Text>
 
         {/* CTA */}
         <TouchableOpacity

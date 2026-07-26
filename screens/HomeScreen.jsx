@@ -186,6 +186,7 @@ export default function HomeScreen({
   userData,
   levelState,
   lessonProgress,
+  quizPassedLessons = {},
   returnLevelId = null,
   returnLessonId = null,
   onLessonPress,
@@ -405,24 +406,27 @@ export default function HomeScreen({
           >
             <Text style={styles.sectionTitle}>📚 Lessons</Text>
             {lessons.map((lesson) => {
-              const isDone = (lessonProgress[selectedLevel.id] || []).includes(lesson.id);
+              const isDone        = (lessonProgress[selectedLevel.id] || []).includes(lesson.id);
+              const levelUnlocked = levelState.unlockedLevels.includes(selectedLevel.id);
+              const isLocked      = !levelUnlocked || (lesson.id > 1 && !(quizPassedLessons[selectedLevel.id] || []).includes(lesson.id - 1));
               return (
               <TouchableOpacity
                 key={lesson.id}
-                style={[styles.lessonCard, isDone && styles.lessonCardDone]}
-                onPress={() => onLessonPress(selectedLevel.id, lesson.id)}
+                style={[styles.lessonCard, isDone && styles.lessonCardDone, isLocked && styles.lessonCardLocked]}
+                onPress={isLocked ? undefined : () => onLessonPress(selectedLevel.id, lesson.id)}
                 onLayout={(e) => { lessonYOffsetsRef.current[lesson.id] = e.nativeEvent.layout.y; }}
-                activeOpacity={0.7}
+                activeOpacity={isLocked ? 1 : 0.7}
+                disabled={isLocked}
               >
-                <View style={[styles.lessonNumber, { backgroundColor: selectedLevel.color }]}>
-                  <Text style={[styles.lessonNumberText, { color: CARD_WHITE }]}>{lesson.id}</Text>
+                <View style={[styles.lessonNumber, { backgroundColor: isLocked ? 'rgba(55,73,80,0.2)' : selectedLevel.color }]}>
+                  <Text style={[styles.lessonNumberText, { color: isLocked ? 'rgba(55,73,80,0.5)' : CARD_WHITE }]}>{lesson.id}</Text>
                 </View>
                 <View style={styles.lessonInfo}>
-                  <Text style={styles.lessonTitle}>{lesson.title}</Text>
-                  <Text style={styles.lessonChinese}>{lesson.topic_chinese}</Text>
+                  <Text style={[styles.lessonTitle, isLocked && styles.dimmed]}>{lesson.title}</Text>
+                  <Text style={[styles.lessonChinese, isLocked && styles.dimmed]}>{lesson.topic_chinese}</Text>
                 </View>
-                <Text style={[styles.lessonArrow, isDone && { color: SUCCESS }]}>
-                  {isDone ? '✓' : '→'}
+                <Text style={[styles.lessonArrow, isDone && !isLocked && { color: SUCCESS }]}>
+                  {isLocked ? '🔒' : isDone ? '✓' : '→'}
                 </Text>
               </TouchableOpacity>
               );
@@ -921,6 +925,7 @@ const styles = StyleSheet.create({
     marginBottom: 10, borderWidth: 1, borderColor: VG.border,
   },
   lessonCardDone:   { borderColor: 'rgba(125,196,122,0.45)' },
+  lessonCardLocked: { opacity: 0.55, borderColor: 'rgba(55,73,80,0.2)' },
   lessonNumber:     { width: 40, height: 40, borderRadius: 20, alignItems: 'center', justifyContent: 'center', marginRight: 14 },
   lessonNumberText: { fontSize: 16, fontWeight: '800' },
   lessonInfo:       { flex: 1 },
