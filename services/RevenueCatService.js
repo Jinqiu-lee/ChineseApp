@@ -1,9 +1,16 @@
 // ── RevenueCat paywall service ────────────────────────────────────────────────
 // Set MVP_FREE_MODE = true during testing — everything is unlocked, no real
 // purchases happen. Flip to false before launch to activate real RevenueCat.
+import { Platform } from 'react-native';
+
 export const MVP_FREE_MODE = false;
 
-const API_KEY = process.env.EXPO_PUBLIC_REVENUECAT_API_KEY || '';
+// RevenueCat issues separate keys per store; fall back to the shared var so
+// this keeps working before env vars are migrated.
+const API_KEY = (Platform.OS === 'ios'
+  ? process.env.EXPO_PUBLIC_REVENUECAT_API_KEY_IOS
+  : process.env.EXPO_PUBLIC_REVENUECAT_API_KEY_ANDROID
+) || process.env.EXPO_PUBLIC_REVENUECAT_API_KEY || '';
 
 let Purchases = null;
 

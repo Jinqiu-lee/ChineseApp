@@ -170,6 +170,7 @@ const STORAGE_KEYS = {
   quizPassedLessons:  '@chineseapp:quizPassedLessons',
   sectionProgress:    '@chineseapp:sectionProgress',
   lastScreen:         '@chineseapp:lastScreen',
+  placementProgress:  '@chineseapp:placementProgress',
 };
 
 // Screens that are safe to restore — mid-exercise and paywall states are excluded
@@ -185,7 +186,7 @@ const saveLastScreen = (screen, ctx = {}) => {
 };
 
 const DEFAULT_LEVEL_STATE = {
-  unlockedLevels: ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6'],
+  unlockedLevels: ['hsk1'],
   completedLevels: [],
   levelSetBy: 'manual',
   levelChangedUsed: false,
@@ -206,6 +207,7 @@ export default function App() {
   const [roundScores, setRoundScores] = useState({});      // { "hsk1_5_r1": {score,total} }
   const [levelState, setLevelState] = useState(DEFAULT_LEVEL_STATE);
   const [currentRound, setCurrentRound] = useState(1);    // 1 | 2 | 3
+  const [placementResume, setPlacementResume] = useState(null); // saved mid-test progress to resume after force-quit
   const [returnLevelId, setReturnLevelId] = useState(null); // which level list to return to on back
   const [returnLessonId, setReturnLessonId] = useState(null); // which lesson to scroll to on back
   const [pinyinReturnTo, setPinyinReturnTo] = useState('home'); // 'home' | 'lessonPinyin'
@@ -231,7 +233,7 @@ export default function App() {
     const load = async () => {
       initRevenueCat(); // fire-and-forget — runs in parallel, completes well before paywall is reachable
       try {
-        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage, savedQuizPassedLessons, savedSectionProgress, savedPinyinLearnDone] = await Promise.all([
+        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage, savedQuizPassedLessons, savedSectionProgress, savedPinyinLearnDone, savedPlacementProgress] = await Promise.all([
           AsyncStorage.getItem(STORAGE_KEYS.userData),
           AsyncStorage.getItem(STORAGE_KEYS.levelState),
           AsyncStorage.getItem(STORAGE_KEYS.lessonProgress),
@@ -242,6 +244,7 @@ export default function App() {
           AsyncStorage.getItem(STORAGE_KEYS.quizPassedLessons),
           AsyncStorage.getItem(STORAGE_KEYS.sectionProgress),
           AsyncStorage.getItem(STORAGE_KEYS.pinyinLearnDone),
+          AsyncStorage.getItem(STORAGE_KEYS.placementProgress),
         ]);
         const parsedUser = savedUser ? JSON.parse(savedUser) : null;
         if (parsedUser) {
@@ -277,10 +280,16 @@ export default function App() {
           } catch {
             setCurrentScreen('home');
           }
+        } else if (savedPlacementProgress) {
+          // No completed onboarding yet — resume an in-progress placement test
+          // left behind by a force-quit rather than restarting from welcome.
+          try {
+            setPlacementResume(JSON.parse(savedPlacementProgress));
+          } catch {}
         }
         if (savedLevel) {
           const parsed = JSON.parse(savedLevel);
-          setLevelState({ ...parsed, unlockedLevels: ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6'] });
+          setLevelState(parsed);
         }
         if (savedProgress)          setLessonProgress(JSON.parse(savedProgress));
         if (savedStageProgress)     setStageProgress(JSON.parse(savedStageProgress));
@@ -380,11 +389,13 @@ export default function App() {
     const extraIdx = data.result.unlockNext ? startIdx + 1 : startIdx;
     setUserData(data);
     setLevelState({
-      unlockedLevels: ALL_LEVEL_IDS.slice(0, Math.min(extraIdx + 1, ALL_LEVEL_IDS.length)),
+      unlockedLevels: ALL_LEVEL_IDS.slice(startIdx, Math.min(extraIdx + 1, ALL_LEVEL_IDS.length)),
       completedLevels: [],
       levelSetBy: data.result.source || 'manual',
       levelChangedUsed: false,
     });
+    setPlacementResume(null);
+    AsyncStorage.removeItem(STORAGE_KEYS.placementProgress).catch(() => {});
     setCurrentScreen('home');
   };
 
@@ -455,7 +466,7 @@ export default function App() {
     }));
     setLevelState(prev => ({
       ...prev,
-      unlockedLevels: ALL_LEVEL_IDS.slice(0, startIdx + 1),
+      unlockedLevels: ALL_LEVEL_IDS.slice(startIdx, startIdx + 1),
       completedLevels: [],
       levelChangedUsed: true,
     }));
@@ -929,6 +940,7 @@ export default function App() {
           onComplete={handleOnboardingComplete}
           initialAge={userData?.age}
           onCancel={userData ? handleBackToHome : null}
+          resumeData={placementResume}
         />
       );
     }
@@ -1171,6 +1183,14 @@ export default function App() {
             const levelId = currentLessonLevelId;
             const lessonId = currentLessonId;
             if (!levelId || !lessonId) { setCurrentScreen('home'); return; }
+            // Subscribing unlocks every level at or below the one that triggered
+            // the paywall — union with whatever's already unlocked so levels the
+            // user earned above this one (via quiz-pass) aren't affected.
+            const idx = Math.max(ALL_LEVEL_IDS.indexOf(levelId), 0);
+            setLevelState(prev => ({
+              ...prev,
+              unlockedLevels: [...new Set([...prev.unlockedLevels, ...ALL_LEVEL_IDS.slice(0, idx + 1)])],
+            }));
             const r1Done = (stageProgress[`${levelId}_${lessonId}_r1`] || []).length >= 5;
             const r2Done = (stageProgress[`${levelId}_${lessonId}_r2`] || []).length >= 5;
             setCurrentRound(r1Done && r2Done ? 3 : r1Done ? 2 : 1);

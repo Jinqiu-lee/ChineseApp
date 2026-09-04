@@ -11,7 +11,6 @@ import AVATARS from '../config/avatarConfig';
 import useProgress from '../hooks/useProgress';
 import { LEVEL_WELCOME, LEVEL_QUOTES } from '../data/emotionalContent';
 import { loadQuizProgress } from '../utils/quizProgressStorage';
-const DEV_UNLOCK_ALL = true; // mirrors App.js — set false for production
 const SCROLL_KEY = 'homescreen_scroll_y';
 
 const LEVEL_CONFIG = [
@@ -434,18 +433,30 @@ export default function HomeScreen({
           </View>
 
           <View style={styles.quizSection}>
-            <TouchableOpacity
-              style={[styles.quizCard, { borderColor: selectedLevel.color }]}
-              onPress={() => onLevelQuizPress(selectedLevel.id)}
-              activeOpacity={0.8}
-            >
-              <Text style={styles.quizEmoji}>🏆</Text>
-              <View style={styles.quizInfo}>
-                <Text style={styles.quizTitle}>Level Final Quiz</Text>
-                <Text style={styles.quizDesc}>Test your knowledge · 30 questions</Text>
-              </View>
-              <QuizProgressBadge progress={levelQuizProgress} color={selectedLevel.color} />
-            </TouchableOpacity>
+            {(() => {
+              const levelUnlocked = levelState.unlockedLevels.includes(selectedLevel.id);
+              const allLessonsCleared = levelUnlocked && lessons.length > 0 && lessons.every((lesson) =>
+                (lessonProgress[selectedLevel.id] || []).includes(lesson.id) &&
+                (quizPassedLessons[selectedLevel.id] || []).includes(lesson.id)
+              );
+              return (
+                <TouchableOpacity
+                  style={[styles.quizCard, { borderColor: selectedLevel.color }, !allLessonsCleared && styles.lessonCardLocked]}
+                  onPress={allLessonsCleared ? () => onLevelQuizPress(selectedLevel.id) : undefined}
+                  activeOpacity={allLessonsCleared ? 0.8 : 1}
+                  disabled={!allLessonsCleared}
+                >
+                  <Text style={styles.quizEmoji}>🏆</Text>
+                  <View style={styles.quizInfo}>
+                    <Text style={styles.quizTitle}>Level Final Quiz</Text>
+                    <Text style={styles.quizDesc}>Test your knowledge · 30 questions</Text>
+                  </View>
+                  {allLessonsCleared
+                    ? <QuizProgressBadge progress={levelQuizProgress} color={selectedLevel.color} />
+                    : <Text style={styles.lessonArrow}>🔒</Text>}
+                </TouchableOpacity>
+              );
+            })()}
           </View>
 
           <View style={{ height: 40 }} />

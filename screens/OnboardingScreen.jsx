@@ -4,6 +4,7 @@ import {
   ScrollView, TextInput, Animated, Modal, StatusBar, Image,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import {
   BASIC_QUESTIONS_ADULT,
   ADVANCED_QUESTIONS, getPlacementResult,
@@ -94,6 +95,8 @@ const LEVEL_DETAILS = [
 ];
 const LEVEL_DETAILS_MAP = Object.fromEntries(LEVEL_DETAILS.map(l => [l.id, l]));
 
+const PLACEMENT_PROGRESS_KEY = "@chineseapp:placementProgress";
+
 const STEP_WELCOME = "welcome";
 const STEP_AGE    = "age";
 const STEP_PATH   = "path";
@@ -108,19 +111,34 @@ const TYPE_LABELS = {
   image_mc: { label: "🖼️ Picture Match",   bg: "#fff4e6" },
 };
 
-export default function OnboardingScreen({ onComplete, initialAge, onCancel }) {
-  const [step, setStep]             = useState(initialAge ? STEP_PATH : STEP_WELCOME);
-  const [age, setAge]               = useState(initialAge ? String(initialAge) : "");
+export default function OnboardingScreen({ onComplete, initialAge, onCancel, resumeData }) {
+  const [step, setStep]             = useState(resumeData?.step || (initialAge ? STEP_PATH : STEP_WELCOME));
+  const [age, setAge]               = useState(resumeData?.age != null ? String(resumeData.age) : (initialAge ? String(initialAge) : ""));
   const [ageError, setAgeError]     = useState("");
-  const [phase, setPhase]           = useState(1);
-  const [questions, setQuestions]   = useState([]);
-  const [qIndex, setQIndex]         = useState(0);
+  const [phase, setPhase]           = useState(resumeData?.phase || 1);
+  const [questions, setQuestions]   = useState(() => {
+    if (resumeData?.step !== STEP_TEST) return [];
+    return resumeData.phase === 2 ? ADVANCED_QUESTIONS : BASIC_QUESTIONS_ADULT;
+  });
+  const [qIndex, setQIndex]         = useState(resumeData?.qIndex ?? 0);
   const [selected, setSelected]     = useState(null);
-  const [basicScore, setBasicScore] = useState(0);
-  const [advScore, setAdvScore]     = useState(null);
+  const [basicScore, setBasicScore] = useState(resumeData?.basicScore ?? 0);
+  const [advScore, setAdvScore]     = useState(resumeData?.advScore ?? null);
   const [answered, setAnswered]     = useState(false);
   const [result, setResult]         = useState(null);
   const [showLevelsPanel, setShowLevelsPanel] = useState(false);
+
+  // Persist mid-test progress so a force-quit can resume instead of restarting.
+  // selected/answered are per-question UI state that resets every question, so
+  // they're intentionally excluded. STEP_RESULTS is excluded too — `result`
+  // itself isn't persisted, so resuming into that step would render nothing.
+  useEffect(() => {
+    if (step === STEP_RESULTS) return;
+    AsyncStorage.setItem(
+      PLACEMENT_PROGRESS_KEY,
+      JSON.stringify({ step, phase, qIndex, basicScore, advScore, age })
+    ).catch(() => {});
+  }, [step, phase, qIndex, basicScore, advScore, age]);
 
   // Step-transition fade (unchanged)
   const fadeAnim = useRef(new Animated.Value(1)).current;

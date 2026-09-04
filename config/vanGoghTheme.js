@@ -13,10 +13,10 @@ const LEVEL_BACKGROUND_IMAGES = {
   hsk1: require('../assets/UI_design_images/Sunflowers-level1.jpg'),
   hsk2: require('../assets/UI_design_images/The-Cafe-Terrace-at-Night-1888-level2.jpg'),
   hsk3: require('../assets/UI_design_images/Wheat-Field_level3.webp'),
-  hsk4: require('../assets/UI_design_images/villiages_homes_level4.avif'),
+  hsk4: require('../assets/UI_design_images/villiages_homes_level4.webp'),
   hsk5: require('../assets/UI_design_images/Starry_Night_level5.webp'),
-  hsk6: require('../assets/UI_design_images/images_level6.avif'),
-  pinyin: require('../assets/UI_design_images/Pinyin_background.avif'),
+  hsk6: require('../assets/UI_design_images/images_level6.webp'),
+  pinyin: require('../assets/UI_design_images/Pinyin_background.webp'),
   default: require('../assets/UI_design_images/abstarct_expressive_yellow_brush_strokes_oncanvas_background .jpeg'),
 };
 
