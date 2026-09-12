@@ -200,6 +200,7 @@ export default function App() {
   const [userData, setUserData] = useState(null);
   const [currentLessonId, setCurrentLessonId] = useState(null);
   const [currentLessonLevelId, setCurrentLessonLevelId] = useState(null);
+  const [paywallOrigin, setPaywallOrigin] = useState(null); // null = lesson gate; 'settings' = Settings shortcut
   const [currentQuizLevelId, setCurrentQuizLevelId] = useState(null);
   const [currentStageIndex, setCurrentStageIndex] = useState(null);
   const [lessonProgress, setLessonProgress] = useState({});
@@ -259,7 +260,13 @@ export default function App() {
                 if ((screen === 'lesson' || screen === 'lessonStages') && levelId && lessonId) {
                   setCurrentLessonLevelId(levelId);
                   setCurrentLessonId(lessonId);
-                  setCurrentScreen(screen);
+                  if (lessonId > 3 && !(await checkSubscriptionStatus())) {
+                    // Subscription may have lapsed while the app was closed — re-gate
+                    // instead of resuming straight into paid content.
+                    setCurrentScreen('paywall');
+                  } else {
+                    setCurrentScreen(screen);
+                  }
                 } else if ((screen === 'pinyinLesson') && pinyinLessonId) {
                   setCurrentPinyinLessonId(pinyinLessonId);
                   setPinyinLessonInitialTab('learn');
@@ -422,6 +429,14 @@ export default function App() {
     setCurrentRound(r1Done && r2Done ? 3 : r1Done ? 2 : 1);
     saveLastScreen('lesson', { levelId, lessonId });
     goToLesson('learning');
+  };
+
+  const handleUpgradePress = () => {
+    const levelId = userData?.result?.recommendedLevel || 'hsk1'; // current active level, shown on Profile as "Current Level"
+    setCurrentLessonLevelId(levelId);
+    setCurrentLessonId(4); // first premium lesson id — required so onSubscribed's existing (!levelId || !lessonId) guard doesn't skip the unlock
+    setPaywallOrigin('settings');
+    setCurrentScreen('paywall');
   };
 
   const handleQuizPass = () => {
@@ -1168,6 +1183,7 @@ export default function App() {
           onRetakeTest={handleRetakeTest}
           onResetProgress={handleResetProgress}
           onCharactersPress={() => handleOpenFoundationsPinyin('home')}
+          onUpgradePress={handleUpgradePress}
         />
       );
     }
@@ -1177,7 +1193,9 @@ export default function App() {
           onDismiss={() => {
             setCurrentLessonId(null);
             setCurrentLessonLevelId(null);
-            setCurrentScreen('home');
+            const origin = paywallOrigin;
+            setPaywallOrigin(null);
+            setCurrentScreen(origin === 'settings' ? 'profile' : 'home');
           }}
           onSubscribed={() => {
             const levelId = currentLessonLevelId;
@@ -1191,6 +1209,12 @@ export default function App() {
               ...prev,
               unlockedLevels: [...new Set([...prev.unlockedLevels, ...ALL_LEVEL_IDS.slice(0, idx + 1)])],
             }));
+            const origin = paywallOrigin;
+            setPaywallOrigin(null);
+            if (origin === 'settings') {
+              setCurrentScreen('profile');
+              return;
+            }
             const r1Done = (stageProgress[`${levelId}_${lessonId}_r1`] || []).length >= 5;
             const r2Done = (stageProgress[`${levelId}_${lessonId}_r2`] || []).length >= 5;
             setCurrentRound(r1Done && r2Done ? 3 : r1Done ? 2 : 1);

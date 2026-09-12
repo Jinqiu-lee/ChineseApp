@@ -26,6 +26,7 @@ export default function ProfileScreen({
   onRetakeTest,
   onResetProgress,
   onCharactersPress,
+  onUpgradePress,
 }) {
   const { xp, streak } = useProgress();
   const [showLevelChangeModal, setShowLevelChangeModal] = useState(false);
@@ -151,6 +152,15 @@ export default function ProfileScreen({
 
           {/* Settings */}
           <Text style={styles.sectionLabel}>SETTINGS</Text>
+
+          <TouchableOpacity style={styles.row} onPress={onUpgradePress} activeOpacity={0.8}>
+            <Text style={styles.rowIcon}>👑</Text>
+            <View style={styles.rowText}>
+              <Text style={styles.rowTitle}>Upgrade to Premium</Text>
+              <Text style={styles.rowSub}>Unlock all levels and lessons</Text>
+            </View>
+            <Text style={styles.rowArrow}>→</Text>
+          </TouchableOpacity>
 
           {canChangeLevel ? (
             <TouchableOpacity style={styles.row} onPress={() => setShowLevelChangeModal(true)} activeOpacity={0.8}>

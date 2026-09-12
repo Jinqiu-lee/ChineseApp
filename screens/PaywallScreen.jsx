@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet,
-  ActivityIndicator, Alert,
+  ActivityIndicator, Alert, Linking,
 } from 'react-native';
 import ScreenBackground from '../components/ScreenBackground';
 import { purchaseSubscription, restorePurchases } from '../services/RevenueCatService';
@@ -13,9 +13,15 @@ const BULLETS = [
   '✦ All literary avatars & dialogues',
 ];
 
+const PRIVACY_POLICY_URL = 'https://jinqiu-lee.github.io/mandaglow-privacy';
+const TERMS_OF_USE_URL = 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
+
 export default function PaywallScreen({ onDismiss, onSubscribed }) {
   const [loading, setLoading] = useState(false);
   const [restoring, setRestoring] = useState(false);
+
+  const openPrivacyPolicy = () => Linking.openURL(PRIVACY_POLICY_URL).catch(() => {});
+  const openTermsOfUse = () => Linking.openURL(TERMS_OF_USE_URL).catch(() => {});
 
   const handlePurchase = async () => {
     setLoading(true);
@@ -68,11 +74,23 @@ export default function PaywallScreen({ onDismiss, onSubscribed }) {
         </View>
 
         {/* Price */}
+        <Text style={styles.priceNote}>MandaGlow Premium</Text>
         <View style={styles.priceBlock}>
           <Text style={styles.price}>$5.99</Text>
           <Text style={styles.pricePeriod}>/ month</Text>
         </View>
         <Text style={styles.priceNote}>Cancel anytime</Text>
+
+        {/* Legal links */}
+        <View style={styles.legalRow}>
+          <TouchableOpacity onPress={openPrivacyPolicy} activeOpacity={0.7}>
+            <Text style={styles.legalLink}>Privacy Policy</Text>
+          </TouchableOpacity>
+          <Text style={styles.legalDot}> · </Text>
+          <TouchableOpacity onPress={openTermsOfUse} activeOpacity={0.7}>
+            <Text style={styles.legalLink}>Terms of Use</Text>
+          </TouchableOpacity>
+        </View>
 
         {/* CTA */}
         <TouchableOpacity
@@ -189,6 +207,22 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: 'rgba(255,255,255,0.55)',
     marginBottom: 28,
+  },
+
+  legalRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: -18,
+    marginBottom: 24,
+  },
+  legalLink: {
+    fontSize: 12,
+    color: 'rgba(255,255,255,0.55)',
+    textDecorationLine: 'underline',
+  },
+  legalDot: {
+    fontSize: 12,
+    color: 'rgba(255,255,255,0.4)',
   },
 
   ctaBtn: {
