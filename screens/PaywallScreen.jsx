@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet,
-  ActivityIndicator, Alert, Linking,
+  ActivityIndicator, Alert, Linking, Platform,
 } from 'react-native';
 import ScreenBackground from '../components/ScreenBackground';
 import { purchaseSubscription, restorePurchases } from '../services/RevenueCatService';
@@ -14,7 +14,9 @@ const BULLETS = [
 ];
 
 const PRIVACY_POLICY_URL = 'https://jinqiu-lee.github.io/mandaglow-privacy';
-const TERMS_OF_USE_URL = 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
+const TERMS_OF_USE_URL = Platform.OS === 'ios'
+  ? 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/'
+  : 'https://play.google.com/intl/en_us/about/play-terms/';
 
 export default function PaywallScreen({ onDismiss, onSubscribed }) {
   const [loading, setLoading] = useState(false);
