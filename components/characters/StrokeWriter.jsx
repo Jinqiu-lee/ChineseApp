@@ -20,9 +20,10 @@ const HINT_AFTER_MISSES = 2;
 function thresholdsFor(median, leniency) {
   const len = polylineLength(median);
   return {
-    start: clamp(len * 0.55, 190, 420) * leniency,
-    end:   clamp(len * 0.60, 210, 460) * leniency,
-    shape: clamp(len * 0.30, 110, 240) * leniency,
+    start: clamp(len * 0.60, 240, 470) * leniency,
+    // People lift early, so the end point is judged most gently of the three.
+    end:   clamp(len * 0.70, 290, 540) * leniency,
+    shape: clamp(len * 0.34, 145, 290) * leniency,
   };
 }
 
@@ -81,6 +82,7 @@ export default function StrokeWriter({
   size = 280,
   leniency = 1,
   onComplete,
+  onDrawingChange,
 }) {
   const data = STROKE_DATA[char];
   const strokes = data?.strokes ?? [];
@@ -129,10 +131,18 @@ export default function StrokeWriter({
   const pan = useMemo(() => PanResponder.create({
     onStartShouldSetPanResponder: () => !complete,
     onMoveShouldSetPanResponder: () => !complete,
+    // Claim the gesture ahead of the enclosing ScrollView, and refuse to hand
+    // it back mid-stroke. Without these the list scrolls instead of drawing,
+    // which feels like the canvas ignoring your finger.
+    onStartShouldSetPanResponderCapture: () => !complete,
+    onMoveShouldSetPanResponderCapture: () => !complete,
+    onPanResponderTerminationRequest: () => false,
+    onShouldBlockNativeResponder: () => true,
     onPanResponderGrant: (e) => {
       const { locationX, locationY } = e.nativeEvent;
       traceRef.current = [[locationX, locationY]];
       setTrace(traceRef.current);
+      onDrawingChange?.(true);
     },
     onPanResponderMove: (e) => {
       const { locationX, locationY } = e.nativeEvent;
@@ -144,9 +154,9 @@ export default function StrokeWriter({
         setTrace(traceRef.current);
       }
     },
-    onPanResponderRelease: () => finish(traceRef.current),
-    onPanResponderTerminate: () => { setTrace([]); traceRef.current = []; },
-  }), [complete, size, leniency, strokes.length, totalMisses]);
+    onPanResponderRelease: () => { onDrawingChange?.(false); finish(traceRef.current); },
+    onPanResponderTerminate: () => { onDrawingChange?.(false); setTrace([]); traceRef.current = []; },
+  }), [complete, size, leniency, strokes.length, totalMisses, onDrawingChange]);
 
   const reset = () => {
     setDone(0); setMisses(0); setTotalMisses(0); setTrace([]); traceRef.current = [];
@@ -225,7 +235,7 @@ export default function StrokeWriter({
               d={tracePath}
               fill="none"
               stroke={SLATE_TEAL}
-              strokeWidth={26}
+              strokeWidth={42}
               strokeLinecap="round"
               strokeLinejoin="round"
               opacity={0.75}
@@ -244,11 +254,6 @@ export default function StrokeWriter({
         </TouchableOpacity>
       </View>
 
-      {complete && (
-        <Text style={styles.doneNote}>
-          {totalMisses === 0 ? 'Perfect — no retries ✓' : `Written ✓  (${totalMisses} retries)`}
-        </Text>
-      )}
     </View>
   );
 }
@@ -269,5 +274,4 @@ const styles = StyleSheet.create({
   },
   progress:  { fontSize: 14, fontWeight: '700', color: SLATE_TEAL },
   resetLink: { fontSize: 14, fontWeight: '700', color: WARM_ORANGE },
-  doneNote:  { fontSize: 15, fontWeight: '800', color: DEEP_NAVY, marginTop: 6, textAlign: 'center' },
 });

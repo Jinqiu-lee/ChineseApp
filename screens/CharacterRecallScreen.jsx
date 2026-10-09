@@ -1,9 +1,11 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScreenBackground from '../components/ScreenBackground';
 import StrokeAnimator from '../components/characters/StrokeAnimator';
 import { StrokeCombo } from '../components/characters/StrokeVisual';
+import StrokeWriter from '../components/characters/StrokeWriter';
+import { PRACTICE_STAGES, questionsForStage, buildLessonQuiz } from '../data/characters/practiceStages';
 import { getStrokePinyin } from '../data/characters/strokeAssets';
 import { speakChinese } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
@@ -62,10 +64,18 @@ function buildPinyinMap(lessonData) {
   return m;
 }
 
-export default function CharacterRecallScreen({ lessonData, onBack, onComplete }) {
+export default function CharacterRecallScreen({
+  lessonData,
+  stageIndex = 0,
+  mode = 'practice',          // 'practice' | 'quiz'
+  onBack,
+  onComplete,
+}) {
+  const quiz = mode === 'quiz';
+  const stage = PRACTICE_STAGES[stageIndex] || PRACTICE_STAGES[0];
   const questions = useMemo(
-    () => shuffle(lessonData?.recall_pool || []).map(q => ({ ...q, choices: shuffle(q.choices || []) })),
-    [lessonData],
+    () => (quiz ? buildLessonQuiz(lessonData) : questionsForStage(lessonData, stageIndex)),
+    [lessonData, stageIndex, quiz],
   );
   const pinyinMap = useMemo(() => buildPinyinMap(lessonData), [lessonData]);
   const pinyinFor = (t) => pinyinMap[t] || getStrokePinyin(t) || '';
@@ -78,12 +88,20 @@ export default function CharacterRecallScreen({ lessonData, onBack, onComplete }
 
   const total = questions.length;
   const q = questions[index];
+  const isWrite = q?.type === 'write';
 
-  // Auto-play listening questions when they appear.
+  const { width: winW, height: winH } = useWindowDimensions();
+  const canvas = Math.round(Math.min(winW - 76, winH * 0.33, 276));
+
+  // Listening questions always speak themselves; in a quiz everything that has
+  // a voice does, since the quiz is meant to exercise listening throughout.
   useEffect(() => {
     if (!q) return;
-    if (AUTOPLAY_TYPES.has(q.type) && q.audio_text) speakChinese(q.audio_text);
-  }, [index, q]);
+    if (q.type === 'write') { speakChinese(q.char); return; }
+    const sayable = q.audio_text || (hasHan(q.prompt_char) ? q.prompt_char : null);
+    if (!sayable) return;
+    if (quiz || AUTOPLAY_TYPES.has(q.type)) speakChinese(sayable);
+  }, [index, q, quiz]);
 
   if (!q && !showResult) return null;
 
@@ -92,6 +110,15 @@ export default function CharacterRecallScreen({ lessonData, onBack, onComplete }
     setPicked(choice);
     if (choice === q.correct) setScore(s => s + 1);
     if (q.audio_text) speakChinese(q.audio_text);
+  };
+
+  // Writing a character counts as getting it right — the value is in doing it.
+  const writeDone = () => {
+    setScore(s => s + 1);
+    setTimeout(() => {
+      if (index + 1 >= total) setShow(true);
+      else setIndex(i => i + 1);
+    }, 800);
   };
 
   const next = () => {
@@ -112,13 +139,15 @@ export default function CharacterRecallScreen({ lessonData, onBack, onComplete }
           <View style={s.resultWrap}>
             <View style={s.resultCard}>
               <Text style={s.resultEmoji}>{passed ? '🎉' : '📖'}</Text>
-              <Text style={s.resultTitle}>{passed ? 'Lesson Complete!' : 'Almost there'}</Text>
+              <Text style={s.resultTitle}>
+                {passed ? (quiz ? 'Quiz Passed!' : 'Stage Complete!') : 'Almost there'}
+              </Text>
               <Text style={s.resultScore}>{score} / {total}</Text>
               <Text style={s.resultPct}>{pct}%</Text>
               <Text style={s.resultNote}>
                 {passed
-                  ? 'The next lesson is unlocked.'
-                  : `You need ${PASS_SCORE}% to complete this lesson. Try again.`}
+                  ? (quiz ? 'The next lesson is unlocked.' : 'The next stage is unlocked.')
+                  : `You need ${PASS_SCORE}% to pass. Try again.`}
               </Text>
               <TouchableOpacity style={s.primaryBtn} onPress={() => onComplete(pct, passed)} activeOpacity={0.85}>
                 <Text style={s.primaryBtnText}>{passed ? 'Continue' : 'Back to Lesson'}</Text>
@@ -197,7 +226,49 @@ export default function CharacterRecallScreen({ lessonData, onBack, onComplete }
     }
   };
 
-  const showAnswerHints = !NO_ANSWER_HINTS.has(q.type);
+  // ── A write question ──────────────────────────────────────────────────────
+  if (isWrite) {
+    const wProgress = total > 0 ? (index / total) * 100 : 0;
+    return (
+      <ScreenBackground levelId="hsk1">
+        <SafeAreaView style={s.safe}>
+          <StatusBar barStyle="dark-content" />
+          <View style={s.header}>
+            <TouchableOpacity onPress={onBack} style={s.backBtn}>
+              <Text style={s.backBtnText}>← Exit</Text>
+            </TouchableOpacity>
+            <Text style={s.headerTitle}>{index + 1} / {total}</Text>
+            <Text style={s.headerScore}>{score} ✓</Text>
+          </View>
+          <View style={s.progressTrack}>
+            <View style={[s.progressFill, { width: `${wProgress}%` }]} />
+          </View>
+
+          <View style={s.writeStage}>
+            <Text style={s.typeLabel}>{quiz ? '📝 Lesson Quiz' : `${stage.icon} ${stage.name}`}</Text>
+            <View style={s.writeHead}>
+              <Text style={s.writeChar}>{q.char}</Text>
+              <Text style={s.writePinyin}>{pinyinFor(q.char)}</Text>
+              <TouchableOpacity onPress={() => speakChinese(q.char)} activeOpacity={0.7}>
+                <Text style={s.writeAudio}>🔊</Text>
+              </TouchableOpacity>
+            </View>
+            {/* No reference animation here — this stage is from memory. */}
+            <StrokeWriter
+              key={`${index}-${q.char}`}
+              char={q.char}
+              size={canvas}
+              onComplete={writeDone}
+            />
+          </View>
+        </SafeAreaView>
+      </ScreenBackground>
+    );
+  }
+
+  // In a quiz, Meaning → Character withholds pinyin too: it is a test, not practice.
+  const showAnswerHints = !NO_ANSWER_HINTS.has(q.type)
+    && !(quiz && q.type === 'meaning_to_char');
   const progress = total > 0 ? (index / total) * 100 : 0;
 
   return (
@@ -218,7 +289,7 @@ export default function CharacterRecallScreen({ lessonData, onBack, onComplete }
         </View>
 
         <ScrollView contentContainerStyle={s.content} showsVerticalScrollIndicator={false}>
-          <Text style={s.typeLabel}>{TYPE_LABELS[q.type] || 'Recall'}</Text>
+          <Text style={s.typeLabel}>{quiz ? '📝 Lesson Quiz' : `${stage.icon} ${stage.name}`}</Text>
 
           {/* Question frame — warm cream, deliberately a different colour from
               the white answer buttons so the prompt never blends into the art. */}
@@ -318,6 +389,18 @@ const s = StyleSheet.create({
   progressFill:  { height: 4, backgroundColor: WARM_ORANGE },
 
   content: { padding: 20, alignItems: 'center' },
+
+  writeStage: { flex: 1, alignItems: 'center', paddingTop: 16, paddingHorizontal: 20, gap: 14 },
+  // Framed like every other question prompt, so it reads against the artwork.
+  writeHead: {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 12,
+    backgroundColor: '#FFF3E0', borderRadius: 16,
+    paddingHorizontal: 22, paddingVertical: 12,
+    borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.35)',
+  },
+  writeChar:  { fontSize: 44, fontWeight: '900', color: DEEP_NAVY },
+  writePinyin:{ fontSize: 20, fontWeight: '700', color: WARM_BROWN },
+  writeAudio: { fontSize: 26 },
 
   typeLabel: {
     fontSize: 11, fontWeight: '800', color: SLATE_TEAL, letterSpacing: 1,

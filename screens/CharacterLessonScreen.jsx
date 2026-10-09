@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, Image,
+  useWindowDimensions,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScreenBackground from '../components/ScreenBackground';
@@ -8,11 +9,13 @@ import StrokeAnimator from '../components/characters/StrokeAnimator';
 import StrokeVisual, { StrokeCombo } from '../components/characters/StrokeVisual';
 import StrokeWriter from '../components/characters/StrokeWriter';
 import { getStrokeVisual, getRuleVisual, getStrokePinyin } from '../data/characters/strokeAssets';
+import { PRACTICE_STAGES, TOTAL_PRACTICE_STAGES, QUIZ_LENGTH } from '../data/characters/practiceStages';
 import { speakChinese } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
 
 // One prominent size shared by Parts 1-3 so every animation reads the same.
 const ART = 180;
+const MAX_REWRITES = 3;   // after this, Practice is the only way forward
 const CHOICE_ART = 60;
 
 // Shown under any question once an answer has been picked: says whether it was
@@ -467,50 +470,101 @@ function PatternCard({ item }) {
 }
 
 // ── Part 5 · Write ───────────────────────────────────────────────────────────
-// One canvas at a time, with a chip row to switch character. Written ones keep
-// a tick so progress through the set is visible.
-function WritePart({ chars, infoFor }) {
-  const [active, setActive] = useState(chars[0]);
-  const [written, setWritten] = useState({});
-  const info = infoFor(active) || {};
+// One character at a time on a fixed, non-scrolling screen. A small animated
+// reference shows the stroke order; finishing a character advances to the next,
+// and finishing the last one hands off to Practice.
+function MiniGrid({ char, size = 76 }) {
+  return (
+    <View style={[s.miniGrid, { width: size, height: size }]}>
+      <View style={s.miniCrossV} />
+      <View style={s.miniCrossH} />
+      <StrokeAnimator char={char} size={size - 10} loop colored />
+    </View>
+  );
+}
+
+function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasSize }) {
+  const [idx, setIdx] = useState(0);
+  const advancing = useRef(false);
+
+  const char = chars[idx];
+
+  // Say each character as it comes up, so the sound is attached to the writing.
+  useEffect(() => { if (char) speakChinese(char); }, [char]);
+  const info = infoFor(char) || {};
+  const last = idx >= chars.length - 1;
+
+  const [finished, setFinished] = useState(false);
+  const [rewrites, setRewrites] = useState(0);
+
+  const handleComplete = () => {
+    if (advancing.current) return;
+    advancing.current = true;
+    speakChinese(char);
+    // Let the finished character register before moving on.
+    setTimeout(() => {
+      advancing.current = false;
+      if (last) setFinished(true);
+      else setIdx(i => i + 1);
+    }, 900);
+  };
+
+  const again = () => { setRewrites(n => n + 1); setIdx(0); setFinished(false); };
+
+  if (finished) {
+    return (
+      <View style={s.writeDoneWrap}>
+        <Text style={s.writeDoneEmoji}>✍️</Text>
+        <Text style={s.writeDoneTitle}>All {chars.length} written</Text>
+
+        <TouchableOpacity style={s.writeDoneBtn} onPress={onAllDone} activeOpacity={0.85}>
+          <Text style={s.writeDoneBtnText}>🎯 Go to Practice</Text>
+        </TouchableOpacity>
+
+        {/* Rewriting is offered a limited number of times, then the only way on
+            is Practice. */}
+        {rewrites < MAX_REWRITES && (
+          <TouchableOpacity style={s.writeAgainBtn} onPress={again} activeOpacity={0.85}>
+            <Text style={s.writeAgainText}>
+              ↻ Write one more time{rewrites > 0 ? `  (${MAX_REWRITES - rewrites} left)` : ''}
+            </Text>
+          </TouchableOpacity>
+        )}
+      </View>
+    );
+  }
 
   return (
-    <View style={{ gap: 12 }}>
-      <View style={s.chipRow}>
-        {chars.map(c => (
-          <TouchableOpacity
-            key={c}
-            style={[s.chip, c === active && s.chipActive, written[c] && s.chipDone]}
-            onPress={() => setActive(c)}
-            activeOpacity={0.8}
-          >
-            <Text style={[s.chipText, c === active && s.chipTextActive]}>{c}</Text>
-            {written[c] && <Text style={s.chipTick}>✓</Text>}
-          </TouchableOpacity>
-        ))}
+    <View style={s.writeWrap}>
+      <View style={s.writeTop}>
+        <TouchableOpacity onPress={onBack} style={s.writeBack} activeOpacity={0.7}>
+          <Text style={s.writeBackText}>← Back</Text>
+        </TouchableOpacity>
+        <Text style={s.writeCount}>{idx + 1} / {chars.length}</Text>
       </View>
 
-      <View style={s.card}>
-        <View style={s.titleRow}>
-          <Text style={s.bigName}>{active}</Text>
-          {!!info.pinyin && <Text style={s.bigPinyin}>{info.pinyin}</Text>}
-          <TouchableOpacity onPress={() => speakChinese(active)} style={s.audioBtn} activeOpacity={0.7}>
-            <Text style={s.audioIcon}>🔊</Text>
-          </TouchableOpacity>
+      <View style={s.writeRef}>
+        <MiniGrid char={char} />
+        <View style={{ flex: 1 }}>
+          <View style={s.titleRow}>
+            <Text style={s.bigName}>{char}</Text>
+            {!!info.pinyin && <Text style={s.bigPinyin}>{info.pinyin}</Text>}
+            <TouchableOpacity onPress={() => speakChinese(char)} style={s.audioBtn} activeOpacity={0.7}>
+              <Text style={s.audioIcon}>🔊</Text>
+            </TouchableOpacity>
+          </View>
+          {!!info.meaning && <Text style={s.meaningEn}>{info.meaning}</Text>}
         </View>
-        {!!info.meaning && <Text style={s.meaningEn}>{info.meaning}</Text>}
+      </View>
 
-        <View style={{ alignSelf: 'center' }}>
-          <StrokeWriter
-            key={active}
-            char={active}
-            size={ART + 60}
-            onComplete={() => {
-              setWritten(w => ({ ...w, [active]: true }));
-              speakChinese(active);
-            }}
-          />
-        </View>
+      <View style={{ alignSelf: 'center' }}>
+        <StrokeWriter
+          key={char}
+          char={char}
+          size={canvasSize}
+          onDrawingChange={onDrawingChange}
+          onComplete={handleComplete}
+        />
       </View>
     </View>
   );
@@ -520,14 +574,21 @@ function WritePart({ chars, infoFor }) {
 export default function CharacterLessonScreen({
   lessonData,
   learnDone = false,
-  recallPassed = false,
+  partsDone = [],
+  stagesPassed = [],
+  quizPassed = false,
   initialTab = 'learn',
   onBack,
   onLearnComplete,
-  onStartRecall,
+  onPartDone,
+  onStartStage,
+  onStartQuiz,
 }) {
   const [tab, setTab] = useState(initialTab);
-  const [slide, setSlide] = useState(0);
+  const [openPart, setOpenPart] = useState(null); // null = the stage list
+  const [drawing, setDrawing] = useState(false); // freeze the slide while tracing
+  const { width: winW, height: winH } = useWindowDimensions();
+  const writeCanvas = Math.round(Math.min(winW - 76, winH * 0.33, 276));
   if (!lessonData) return null;
 
   const lc = lessonData.learn_content || {};
@@ -558,103 +619,191 @@ export default function CharacterLessonScreen({
     ...((p5.characters || []).length
       ? [{
           part: p5,
-          body: <WritePart chars={p5.characters} infoFor={(c) => charInfo[c]} />,
+          noScroll: true,
+          body: (
+            <WritePart
+              chars={p5.characters}
+              infoFor={(c) => charInfo[c]}
+              onDrawingChange={setDrawing}
+              onBack={() => setOpenPart(null)}
+              onAllDone={() => finishPart(4)}
+              canvasSize={writeCanvas}
+            />
+          ),
         }]
       : []),
   ];
 
-  const lastSlide = slide >= SLIDES.length - 1;
-  const current = SLIDES[slide];
+  // Icons and accent colours for the stage list, matching how the HSK levels
+  // present their practice stages. Names and blurbs come from the lesson data.
+  const PART_META = [
+    { icon: '👁',  color: '#5E789F' },
+    { icon: '🧱',  color: '#38529D' },
+    { icon: '📖',  color: '#25523D' },
+    { icon: '🧩',  color: '#b87243' },
+    { icon: '✍️',  color: WARM_ORANGE },
+  ];
 
-  const renderLearn = () => (
-    <View style={{ flex: 1 }}>
+  const allPartsDone = SLIDES.every((_, i) => partsDone.includes(i));
+
+  // Finishing the last outstanding part is what unlocks Practice.
+  const finishPart = (i) => {
+    onPartDone?.(i);
+    const after = partsDone.includes(i) ? partsDone : [...partsDone, i];
+    if (SLIDES.every((_, n) => after.includes(n))) onLearnComplete?.();
+    else if (i + 1 < SLIDES.length) setOpenPart(i + 1);  // straight on to the next
+    else setOpenPart(null);
+  };
+
+  // ── Learn: the stage list ─────────────────────────────────────────────────
+  const renderPartList = () => (
+    <ScrollView contentContainerStyle={s.tabContent} showsVerticalScrollIndicator={false}>
       <View style={s.dotsRow}>
         {SLIDES.map((_, i) => (
-          <TouchableOpacity
-            key={i}
-            onPress={() => setSlide(i)}
-            activeOpacity={0.7}
-            style={[s.dot, i === slide && s.dotActive, i < slide && s.dotDone]}
-          />
+          <View key={i} style={[s.dot, partsDone.includes(i) && s.dotDone]} />
         ))}
       </View>
 
-      <ScrollView
-        key={slide}
-        contentContainerStyle={s.tabContent}
-        showsVerticalScrollIndicator={false}
-      >
-        <View style={s.partHead}>
-          <View style={s.partNum}><Text style={s.partNumText}>{slide + 1}</Text></View>
-          <View style={{ flex: 1 }}>
-            <Text style={s.partTitle}>{current.part.title}</Text>
-            <Text style={s.partSub}>{current.part.subtitle}</Text>
-          </View>
-          <Text style={s.partCount}>{slide + 1}/{SLIDES.length}</Text>
-        </View>
+      {SLIDES.map((sl, i) => {
+        const meta = PART_META[i] || PART_META[0];
+        const done = partsDone.includes(i);
+        return (
+          <TouchableOpacity
+            key={i}
+            style={s.stageCard}
+            onPress={() => setOpenPart(i)}
+            activeOpacity={0.85}
+          >
+            <View style={[s.stageIcon, { backgroundColor: meta.color }]}>
+              <Text style={s.stageIconText}>{meta.icon}</Text>
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={s.stageName}>{sl.part.title}</Text>
+              <Text style={s.stageDesc}>{sl.part.subtitle}</Text>
+            </View>
+            {done
+              ? <Text style={s.stageCheck}>✅</Text>
+              : <View style={[s.stageGo, { backgroundColor: meta.color }]}>
+                  <Text style={s.stageGoText}>→</Text>
+                </View>}
+          </TouchableOpacity>
+        );
+      })}
 
+      {allPartsDone && (
+        <TouchableOpacity style={s.navPrimary} onPress={onLearnComplete} activeOpacity={0.85}>
+          <Text style={s.navPrimaryText}>🎯 Go to Practice</Text>
+        </TouchableOpacity>
+      )}
+
+      <View style={{ height: 40 }} />
+    </ScrollView>
+  );
+
+  // ── Learn: one open part ──────────────────────────────────────────────────
+  const renderOpenPart = () => {
+    const current = SLIDES[openPart];
+    const meta = PART_META[openPart] || PART_META[0];
+
+    const head = (
+      <View style={s.partHead}>
+        <View style={[s.partNum, { backgroundColor: meta.color }]}>
+          <Text style={s.partNumText}>{openPart + 1}</Text>
+        </View>
+        <View style={{ flex: 1 }}>
+          <Text style={s.partTitle}>{current.part.title}</Text>
+          <Text style={s.partSub}>{current.part.subtitle}</Text>
+        </View>
+      </View>
+    );
+
+    if (current.noScroll) {
+      return <View style={s.fixedSlide}>{head}{current.body}</View>;
+    }
+
+    return (
+      <ScrollView contentContainerStyle={s.tabContent} showsVerticalScrollIndicator={false}>
+        {head}
         {current.part.intro ? <Text style={s.intro}>{current.part.intro}</Text> : null}
         {current.body}
 
-        {/* Navigation sits at the end of the content, so it is reached by
-            scrolling to the bottom rather than floating over the slide. */}
         <View style={s.navBar}>
-          <TouchableOpacity
-            style={[s.navBtn, slide === 0 && s.navBtnDisabled]}
-            onPress={() => slide > 0 && setSlide(slide - 1)}
-            disabled={slide === 0}
-            activeOpacity={0.8}
-          >
-            <Text style={[s.navBtnText, slide === 0 && s.navBtnTextDisabled]}>← Back</Text>
+          <TouchableOpacity style={s.navBtn} onPress={() => setOpenPart(null)} activeOpacity={0.8}>
+            <Text style={s.navBtnText}>← Back</Text>
           </TouchableOpacity>
-
-          <TouchableOpacity
-            style={s.navPrimary}
-            onPress={() => (lastSlide ? onLearnComplete() : setSlide(slide + 1))}
-            activeOpacity={0.85}
-          >
-            <Text style={s.navPrimaryText}>{lastSlide ? '🎯 Start Practice' : 'Next →'}</Text>
+          <TouchableOpacity style={s.navPrimary} onPress={() => finishPart(openPart)} activeOpacity={0.85}>
+            <Text style={s.navPrimaryText}>Done ✓</Text>
           </TouchableOpacity>
         </View>
 
         <View style={{ height: 40 }} />
       </ScrollView>
-    </View>
-  );
+    );
+  };
 
+  const renderLearn = () => (openPart == null ? renderPartList() : renderOpenPart());
+
+  // Practice is four stages, unlocked in order, same shape as the Pinyin course.
   const renderPractice = () => (
     <ScrollView contentContainerStyle={s.tabContent} showsVerticalScrollIndicator={false}>
-      {!learnDone ? (
+      {!learnDone && (
         <View style={s.lockedBanner}>
           <Text style={s.lockedEmoji}>🔒</Text>
           <Text style={s.lockedTitle}>Complete Learn First</Text>
           <Text style={s.lockedSub}>
-            Work through all five parts, then tap "Start Practice" to unlock Recall.
+            Work through all five parts to unlock Practice.
           </Text>
         </View>
-      ) : (
-        <Text style={s.intro}>
-          Recall mixes every question type from this lesson. Score 60% to complete it
-          and unlock the next lesson.
-        </Text>
       )}
 
-      <TouchableOpacity
-        style={[s.recallCard, !learnDone && s.recallLocked]}
-        onPress={() => learnDone && onStartRecall()}
-        activeOpacity={learnDone ? 0.85 : 1}
-      >
-        <View style={[s.recallDot, { backgroundColor: learnDone ? '#296614' : 'rgba(55,73,80,0.18)' }]}>
-          <Text style={s.recallDotText}>{recallPassed ? '✓' : learnDone ? '🎯' : '🔒'}</Text>
-        </View>
-        <View style={{ flex: 1 }}>
-          <Text style={[s.recallTitle, !learnDone && s.lockedText]}>Practice · Recall</Text>
-          <Text style={s.recallDesc}>
-            {recallPassed ? 'Passed! 🎉' : `${(lessonData.recall_pool || []).length} questions · 60% to pass`}
-          </Text>
-        </View>
-        {learnDone && <Text style={s.recallArrow}>→</Text>}
-      </TouchableOpacity>
+      {PRACTICE_STAGES.map(stage => {
+        const stageDone = stagesPassed.includes(stage.index);
+        const unlocked  = learnDone && (stage.index === 0 || stagesPassed.includes(stage.index - 1));
+        return (
+          <TouchableOpacity
+            key={stage.index}
+            style={[s.recallCard, !unlocked && s.recallLocked]}
+            onPress={() => unlocked && onStartStage(stage.index)}
+            activeOpacity={unlocked ? 0.85 : 1}
+          >
+            <View style={[s.recallDot, { backgroundColor: unlocked ? stage.color : 'rgba(55,73,80,0.18)' }]}>
+              <Text style={s.recallDotText}>{stageDone ? '✓' : unlocked ? stage.icon : '🔒'}</Text>
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={[s.recallTitle, !unlocked && s.lockedText]}>{stage.name}</Text>
+              <Text style={s.recallDesc}>
+                {stageDone ? 'Passed 🎉' : stage.desc}
+              </Text>
+            </View>
+            {unlocked && <Text style={s.recallArrow}>{stageDone ? '↩' : '→'}</Text>}
+          </TouchableOpacity>
+        );
+      })}
+
+      {/* Passing every stage unlocks the lesson quiz. */}
+      {(() => {
+        const unlocked = stagesPassed.length >= TOTAL_PRACTICE_STAGES;
+        return (
+          <TouchableOpacity
+            style={[s.quizCta, !unlocked && s.recallLocked]}
+            onPress={() => unlocked && onStartQuiz?.()}
+            activeOpacity={unlocked ? 0.85 : 1}
+          >
+            <Text style={s.quizCtaEmoji}>{quizPassed ? '🏆' : unlocked ? '📝' : '🔒'}</Text>
+            <View style={{ flex: 1 }}>
+              <Text style={[s.quizCtaTitle, !unlocked && s.lockedText]}>Lesson Quiz</Text>
+              <Text style={s.quizCtaSub}>
+                {quizPassed
+                  ? 'Passed 🎉'
+                  : unlocked
+                    ? `${QUIZ_LENGTH} questions · 60% to pass`
+                    : 'Finish all four stages to unlock'}
+              </Text>
+            </View>
+            {unlocked && <Text style={s.recallArrow}>→</Text>}
+          </TouchableOpacity>
+        );
+      })()}
 
       <View style={{ height: 40 }} />
     </ScrollView>
@@ -729,7 +878,6 @@ const s = StyleSheet.create({
     borderBottomWidth: 1, borderBottomColor: 'rgba(155,104,70,0.12)',
   },
   dot:       { width: 32, height: 5, borderRadius: 3, backgroundColor: 'rgba(55,73,80,0.20)' },
-  dotActive: { backgroundColor: WARM_ORANGE },
   dotDone:   { backgroundColor: SUCCESS },
 
   // Part header — two steps larger than before
@@ -741,7 +889,6 @@ const s = StyleSheet.create({
   partNumText: { color: CARD_WHITE, fontWeight: '900', fontSize: 18 },
   partTitle:   { fontSize: 24, fontWeight: '900', color: DEEP_NAVY },
   partSub:     { fontSize: 17, color: SLATE_TEAL, marginTop: 2 },
-  partCount:   { fontSize: 14, fontWeight: '700', color: SLATE_TEAL },
 
   intro: {
     fontSize: 15, color: SLATE_TEAL, lineHeight: 22, marginBottom: 14,
@@ -833,17 +980,63 @@ const s = StyleSheet.create({
   doneRow:    { flexDirection: 'row', alignItems: 'center', gap: 10 },
   replayLink: { fontSize: 15, color: WARM_ORANGE, fontWeight: '700' },
 
-  chipRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, justifyContent: 'center' },
-  chip: {
-    minWidth: 48, paddingHorizontal: 12, paddingVertical: 8, borderRadius: 10,
-    backgroundColor: CARD_WHITE, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.25)',
-    alignItems: 'center',
+
+  writeDoneWrap: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 14, paddingHorizontal: 10 },
+  writeDoneEmoji: { fontSize: 54 },
+  writeDoneTitle: { fontSize: 20, fontWeight: '900', color: DEEP_NAVY, marginBottom: 4 },
+  writeDoneBtn: {
+    alignSelf: 'stretch', backgroundColor: SLATE_TEAL, borderRadius: 14,
+    paddingVertical: 16, paddingHorizontal: 24, alignItems: 'center',
   },
-  chipActive:     { borderColor: WARM_ORANGE, borderWidth: 2.5 },
-  chipDone:       { backgroundColor: 'rgba(46,125,50,0.12)' },
-  chipText:       { fontSize: 22, fontWeight: '800', color: DEEP_NAVY },
-  chipTextActive: { color: WARM_ORANGE },
-  chipTick:       { fontSize: 11, fontWeight: '900', color: SUCCESS },
+  writeDoneBtnText: { fontSize: 17, fontWeight: '800', color: CARD_WHITE },
+  writeAgainBtn: {
+    paddingHorizontal: 20, paddingVertical: 13, borderRadius: 14,
+    borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.35)', backgroundColor: CARD_WHITE,
+  },
+  writeAgainText: { fontSize: 15, fontWeight: '700', color: WARM_BROWN },
+
+  quizCta: {
+    flexDirection: 'row', alignItems: 'center', gap: 12,
+    backgroundColor: SLATE_TEAL, borderRadius: 14, padding: 18, marginTop: 8,
+  },
+  quizCtaEmoji: { fontSize: 30 },
+  quizCtaTitle: { fontSize: 17, fontWeight: '800', color: CARD_WHITE, marginBottom: 2 },
+  quizCtaSub:   { fontSize: 13, color: 'rgba(255,255,255,0.78)' },
+
+  stageCard: {
+    flexDirection: 'row', alignItems: 'center', gap: 14,
+    backgroundColor: CARD_WHITE, borderRadius: 12, padding: 16, marginBottom: 12,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
+  },
+  stageIcon: { width: 54, height: 54, borderRadius: 27, alignItems: 'center', justifyContent: 'center' },
+  stageIconText: { fontSize: 26 },
+  stageName: { fontSize: 16, fontWeight: '800', color: DEEP_NAVY, marginBottom: 3 },
+  stageDesc: { fontSize: 13, color: SLATE_TEAL },
+  stageCheck: { fontSize: 22 },
+  stageGo: { width: 30, height: 30, borderRadius: 15, alignItems: 'center', justifyContent: 'center' },
+  stageGoText: { color: CARD_WHITE, fontWeight: '900', fontSize: 15 },
+
+  fixedSlide: { flex: 1, paddingHorizontal: 20, paddingTop: 10, gap: 10 },
+  writeWrap:  { flex: 1, gap: 12 },
+  writeTop:   { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+  writeBack:  {
+    paddingHorizontal: 14, paddingVertical: 8, borderRadius: 10,
+    backgroundColor: CARD_WHITE, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.30)',
+  },
+  writeBackText: { fontSize: 14, fontWeight: '700', color: WARM_BROWN },
+  writeCount: { fontSize: 15, fontWeight: '800', color: SLATE_TEAL },
+  writeRef: {
+    flexDirection: 'row', alignItems: 'center', gap: 10,
+    backgroundColor: CARD_WHITE, borderRadius: 14, padding: 10,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
+  },
+  miniGrid: {
+    alignItems: 'center', justifyContent: 'center',
+    backgroundColor: '#FFF8ED', borderRadius: 8,
+    borderWidth: 1.5, borderColor: 'rgba(196,80,58,0.35)',
+  },
+  miniCrossV: { position: 'absolute', left: '50%', top: 0, bottom: 0, width: 1, backgroundColor: 'rgba(196,80,58,0.25)' },
+  miniCrossH: { position: 'absolute', top: '50%', left: 0, right: 0, height: 1, backgroundColor: 'rgba(196,80,58,0.25)' },
 
   logicTag: {
     alignSelf: 'flex-start', fontSize: 13, fontWeight: '700', color: WARM_BROWN,
@@ -919,9 +1112,7 @@ const s = StyleSheet.create({
     paddingHorizontal: 20, paddingVertical: 15, borderRadius: 14,
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.30)', backgroundColor: CARD_WHITE,
   },
-  navBtnDisabled:     { opacity: 0.35 },
   navBtnText:         { fontSize: 16, fontWeight: '700', color: WARM_BROWN },
-  navBtnTextDisabled: { color: SLATE_TEAL },
   navPrimary: {
     flex: 1, backgroundColor: SLATE_TEAL, borderRadius: 14,
     paddingVertical: 16, alignItems: 'center',

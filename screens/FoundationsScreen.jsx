@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet,
-  ScrollView, Alert, Image, StatusBar,
+  ScrollView, Image, StatusBar,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -12,7 +12,6 @@ import { LEVEL_QUOTES } from '../data/emotionalContent';
 import { DEEP_NAVY, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
 const FoundationsScreen = ({ currentLevelId, onPinyinPress, onCharactersPress }) => {
-  const isLevel1 = currentLevelId === 'hsk1';
   const [avatarId, setAvatarId] = useState('eileen');
 
   useEffect(() => {
@@ -49,18 +48,12 @@ const FoundationsScreen = ({ currentLevelId, onPinyinPress, onCharactersPress })
             <Text style={styles.cardCaption}>The path you walk</Text>
           </TouchableOpacity>
 
-          {/* Characters card */}
-          <TouchableOpacity
-            style={[styles.card, !isLevel1 && styles.cardLocked]}
-            onPress={onCharactersPress
-              ? onCharactersPress
-              : () => Alert.alert('Coming Soon', 'Chinese Characters system is coming in a future update! ✍️')}
-            activeOpacity={0.7}
-          >
+          {/* Characters card — the course is live and open at every level */}
+          <TouchableOpacity style={styles.card} onPress={onCharactersPress} activeOpacity={0.85}>
             <Text style={styles.cardIcon}>✍️</Text>
-            <Text style={styles.cardTitle}>Characters {!isLevel1 ? '🔒' : ''}</Text>
+            <Text style={styles.cardTitle}>Characters</Text>
             <Text style={styles.cardSub}>Writing System</Text>
-            <Text style={styles.cardCaption}>{isLevel1 ? 'The structure you build' : 'Coming soon'}</Text>
+            <Text style={styles.cardCaption}>The structure you build</Text>
           </TouchableOpacity>
 
           {/* Guide picker */}
@@ -101,7 +94,6 @@ const styles = StyleSheet.create({
     shadowColor: '#000', shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.15, shadowRadius: 6, elevation: 4,
   },
-  cardLocked:  { opacity: 0.6 },
   cardIcon:    { fontSize: 36, marginBottom: 8 },
   cardTitle:   { fontSize: 20, fontWeight: '700', color: '#1a1a2e', marginBottom: 4 },
   cardSub:     { fontSize: 14, color: '#555', marginBottom: 4 },

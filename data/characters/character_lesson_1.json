@@ -558,7 +558,6 @@
     "part5_write": {
       "title": "Write",
       "subtitle": "Trace each character in stroke order",
-      "intro": "Write with your finger, following the stroke order you just learned. Miss twice and the next stroke is shown.",
       "characters": [
         "一",
         "二",
@@ -795,7 +794,35 @@
     },
     {
       "type": "missing_stroke",
-      "question": "Which stroke is missing from 十?",
+      "prompt_char": "二",
+      "shown_strokes": [
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "三",
+      "shown_strokes": [
+        "横",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_stroke",
       "prompt_char": "十",
       "shown_strokes": [
         "横"
@@ -810,7 +837,20 @@
     },
     {
       "type": "missing_stroke",
-      "question": "Which stroke completes 人?",
+      "prompt_char": "八",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_stroke",
       "prompt_char": "人",
       "shown_strokes": [
         "撇"
@@ -825,7 +865,52 @@
     },
     {
       "type": "missing_stroke",
-      "question": "Which stroke completes 木?",
+      "prompt_char": "个",
+      "shown_strokes": [
+        "撇",
+        "捺"
+      ],
+      "correct": "竖",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "大",
+      "shown_strokes": [
+        "横",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "天",
+      "shown_strokes": [
+        "横",
+        "横",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_stroke",
       "prompt_char": "木",
       "shown_strokes": [
         "横",
@@ -842,9 +927,8 @@
     },
     {
       "type": "missing_component",
-      "question": "大 plus which stroke makes 天?",
-      "prompt_char": "天",
-      "shown_component": "大",
+      "prompt_char": "二",
+      "shown_component": "一",
       "correct": "横",
       "choices": [
         "横",
@@ -855,10 +939,45 @@
     },
     {
       "type": "missing_component",
-      "question": "人 plus which stroke makes 个?",
+      "prompt_char": "三",
+      "shown_component": "二",
+      "correct": "横",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_component",
+      "prompt_char": "十",
+      "shown_component": "一",
+      "correct": "竖",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_component",
       "prompt_char": "个",
       "shown_component": "人",
       "correct": "竖",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_component",
+      "prompt_char": "天",
+      "shown_component": "大",
+      "correct": "横",
       "choices": [
         "横",
         "竖",

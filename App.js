@@ -40,6 +40,7 @@ import CharactersSystemScreen from './screens/CharactersSystemScreen';
 import CharacterLessonScreen from './screens/CharacterLessonScreen';
 import CharacterRecallScreen from './screens/CharacterRecallScreen';
 import { getCharacterLesson } from './data/characters';
+import { TOTAL_PRACTICE_STAGES } from './data/characters/practiceStages';
 
 // Pinyin lesson data
 import pinyinLesson1  from './data/pinyin/pinyin_lesson_1.json';
@@ -177,6 +178,8 @@ const STORAGE_KEYS = {
   pinyinLearnDone:    '@chineseapp:pinyinLearnDone',
   charLessonsPassed:  '@chineseapp:charLessonsPassed',
   charLearnDone:      '@chineseapp:charLearnDone',
+  charStageProgress:  '@chineseapp:charStageProgress',
+  charLearnParts:     '@chineseapp:charLearnParts',
   quizPassedLessons:  '@chineseapp:quizPassedLessons',
   sectionProgress:    '@chineseapp:sectionProgress',
   lastScreen:         '@chineseapp:lastScreen',
@@ -232,6 +235,9 @@ export default function App() {
   const [charLearnDone, setCharLearnDone] = useState({});             // { "char_1": true }
   const [currentCharLessonId, setCurrentCharLessonId] = useState(null);
   const [charLessonInitialTab, setCharLessonInitialTab] = useState('learn');
+  const [charStageProgress, setCharStageProgress] = useState({}); // { "char_1": [0,1] }
+  const [currentCharStage, setCurrentCharStage] = useState(0);
+  const [charLearnParts, setCharLearnParts] = useState({}); // { "char_1": [0,1,2] }
   const [quizPassedLessons, setQuizPassedLessons] = useState({});     // { "hsk1": [1,2,...], "hsk2": [...] }
   const [sectionProgress, setSectionProgress] = useState({});         // { "hsk1_5": { newwords: true, grammar: true, ... } }
   const [pinyinLessonInitialTab, setPinyinLessonInitialTab] = useState('learn');
@@ -248,7 +254,7 @@ export default function App() {
     const load = async () => {
       initRevenueCat(); // fire-and-forget — runs in parallel, completes well before paywall is reachable
       try {
-        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage, savedQuizPassedLessons, savedSectionProgress, savedPinyinLearnDone, savedPlacementProgress, savedCharPassed, savedCharLearnDone] = await Promise.all([
+        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage, savedQuizPassedLessons, savedSectionProgress, savedPinyinLearnDone, savedPlacementProgress, savedCharPassed, savedCharLearnDone, savedCharStages, savedCharParts] = await Promise.all([
           AsyncStorage.getItem(STORAGE_KEYS.userData),
           AsyncStorage.getItem(STORAGE_KEYS.levelState),
           AsyncStorage.getItem(STORAGE_KEYS.lessonProgress),
@@ -262,6 +268,8 @@ export default function App() {
           AsyncStorage.getItem(STORAGE_KEYS.placementProgress),
           AsyncStorage.getItem(STORAGE_KEYS.charLessonsPassed),
           AsyncStorage.getItem(STORAGE_KEYS.charLearnDone),
+          AsyncStorage.getItem(STORAGE_KEYS.charStageProgress),
+          AsyncStorage.getItem(STORAGE_KEYS.charLearnParts),
         ]);
         const parsedUser = savedUser ? JSON.parse(savedUser) : null;
         if (parsedUser) {
@@ -324,6 +332,8 @@ export default function App() {
         if (savedPinyinLearnDone)   setPinyinLearnDone(JSON.parse(savedPinyinLearnDone));
         if (savedCharPassed)        setCharLessonsPassed(JSON.parse(savedCharPassed));
         if (savedCharLearnDone)     setCharLearnDone(JSON.parse(savedCharLearnDone));
+        if (savedCharStages)        setCharStageProgress(JSON.parse(savedCharStages));
+        if (savedCharParts)         setCharLearnParts(JSON.parse(savedCharParts));
       } catch (e) {
         console.warn('Failed to restore saved data:', e);
       } finally {
@@ -384,6 +394,16 @@ export default function App() {
     if (isLoading) return;
     AsyncStorage.setItem(STORAGE_KEYS.charLearnDone, JSON.stringify(charLearnDone)).catch(console.warn);
   }, [charLearnDone, isLoading]);
+
+  useEffect(() => {
+    if (isLoading) return;
+    AsyncStorage.setItem(STORAGE_KEYS.charStageProgress, JSON.stringify(charStageProgress)).catch(console.warn);
+  }, [charStageProgress, isLoading]);
+
+  useEffect(() => {
+    if (isLoading) return;
+    AsyncStorage.setItem(STORAGE_KEYS.charLearnParts, JSON.stringify(charLearnParts)).catch(console.warn);
+  }, [charLearnParts, isLoading]);
 
   useEffect(() => {
     if (isLoading) return;
@@ -581,13 +601,56 @@ export default function App() {
     setCurrentScreen('charLesson');
   };
 
+  // Practice runs as one chain: the first stage still outstanding, then the
+  // next, and once every stage is passed, the lesson quiz.
+  const goToNextCharStep = (passedStages) => {
+    for (let i = 0; i < TOTAL_PRACTICE_STAGES; i++) {
+      if (!passedStages.includes(i)) {
+        setCurrentCharStage(i);
+        setCurrentScreen('charRecall');
+        return;
+      }
+    }
+    setCurrentScreen('charQuiz');
+  };
+
   const handleCharLearnComplete = () => {
     const key = `char_${currentCharLessonId}`;
     setCharLearnDone(prev => (prev[key] ? prev : { ...prev, [key]: true }));
+    goToNextCharStep(charStageProgress[key] || []);
+  };
+
+  const handleCharPartDone = (partIndex) => {
+    const key = `char_${currentCharLessonId}`;
+    setCharLearnParts(prev => {
+      const seen = prev[key] || [];
+      return seen.includes(partIndex) ? prev : { ...prev, [key]: [...seen, partIndex] };
+    });
+  };
+
+  const handleStartCharStage = (stageIndex) => {
+    setCurrentCharStage(stageIndex);
     setCurrentScreen('charRecall');
   };
 
   const handleCharRecallComplete = (scorePercent, passed) => {
+    const lessonId = currentCharLessonId;
+    if (!passed || !lessonId) {
+      setCharLessonInitialTab('practice');
+      setCurrentScreen('charLesson');
+      return;
+    }
+
+    const key = `char_${lessonId}`;
+    const already = charStageProgress[key] || [];
+    const stagesNow = already.includes(currentCharStage) ? already : [...already, currentCharStage];
+    setCharStageProgress(prev => ({ ...prev, [key]: stagesNow }));
+
+    // Stages are steps towards the quiz; the lesson itself is finished there.
+    goToNextCharStep(stagesNow);
+  };
+
+  const handleCharQuizComplete = (scorePercent, passed) => {
     const lessonId = currentCharLessonId;
     if (!passed || !lessonId) {
       setCharLessonInitialTab('practice');
@@ -1075,19 +1138,35 @@ export default function App() {
         <CharacterLessonScreen
           lessonData={getCharacterLesson(currentCharLessonId)}
           learnDone={!!charLearnDone[`char_${currentCharLessonId}`]}
-          recallPassed={charLessonsPassed.includes(currentCharLessonId)}
+          partsDone={charLearnParts[`char_${currentCharLessonId}`] || []}
+          stagesPassed={charStageProgress[`char_${currentCharLessonId}`] || []}
           initialTab={charLessonInitialTab}
           onBack={() => setCurrentScreen('charactersSystem')}
           onLearnComplete={handleCharLearnComplete}
-          onStartRecall={() => setCurrentScreen('charRecall')}
+          onPartDone={handleCharPartDone}
+          onStartStage={handleStartCharStage}
+          onStartQuiz={() => setCurrentScreen('charQuiz')}
+          quizPassed={charLessonsPassed.includes(currentCharLessonId)}
+        />
+      );
+    }
+    if (currentScreen === 'charQuiz') {
+      return (
+        <CharacterRecallScreen
+          key={`quiz-${currentCharLessonId}`}
+          lessonData={getCharacterLesson(currentCharLessonId)}
+          mode="quiz"
+          onBack={() => { setCharLessonInitialTab('practice'); setCurrentScreen('charLesson'); }}
+          onComplete={handleCharQuizComplete}
         />
       );
     }
     if (currentScreen === 'charRecall') {
       return (
         <CharacterRecallScreen
-          key={currentCharLessonId}
+          key={`${currentCharLessonId}-${currentCharStage}`}
           lessonData={getCharacterLesson(currentCharLessonId)}
+          stageIndex={currentCharStage}
           onBack={() => { setCharLessonInitialTab('practice'); setCurrentScreen('charLesson'); }}
           onComplete={handleCharRecallComplete}
         />
