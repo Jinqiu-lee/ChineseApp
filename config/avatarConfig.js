@@ -28,7 +28,7 @@ const AVATARS = [
     englishName: 'Li Bai',
     gender: 'male',
     videos: {
-      idle:  require('../assets/avatar/Libai_李白/Video-李白Libai.mp4'),
+      idle:  require('../assets/avatar/Libai_李白/libai_idle.mp4'),
       happy: require('../assets/avatar/Libai_李白/libai_content_happy.mp4'),
     },
     images: {
