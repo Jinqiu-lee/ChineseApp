@@ -1,0 +1,870 @@
+{
+  "id": 1,
+  "title": "Characters Are Built From Strokes",
+  "emoji": "✍️",
+  "subtitle": "横 竖 撇 捺 · 一 二 三 十 八 人 个 大 天 木",
+  "description": "Meet the four basic strokes, learn the two oldest writing rules, then watch ten characters build themselves out of pieces you already know.",
+  "new_strokes": [
+    "横",
+    "竖",
+    "撇",
+    "捺"
+  ],
+  "new_characters": [
+    "一",
+    "二",
+    "三",
+    "十",
+    "八",
+    "人",
+    "个",
+    "大",
+    "天",
+    "木"
+  ],
+  "new_words": [
+    "一个人",
+    "八个人",
+    "十个人",
+    "大人",
+    "三天",
+    "八天",
+    "十天"
+  ],
+  "learn_content": {
+    "part1_discover": {
+      "title": "Discover",
+      "subtitle": "The four basic strokes",
+      "intro": "Every Chinese character is made of strokes. These four build everything in this lesson.",
+      "strokes": [
+        {
+          "stroke": "横",
+          "pinyin": "héng",
+          "name_en": "horizontal",
+          "direction": "left → right",
+          "explanation": "横 = a flat line, written left to right.",
+          "audio_text": "横",
+          "example_char": "一",
+          "example_pinyin": "yī",
+          "example_meaning": "one",
+          "example_note": "一 is a single 横 — nothing else.",
+          "example_stroke_order": [
+            "横"
+          ]
+        },
+        {
+          "stroke": "竖",
+          "pinyin": "shù",
+          "name_en": "vertical",
+          "direction": "top → bottom",
+          "explanation": "竖 = a straight line, written top to bottom.",
+          "audio_text": "竖",
+          "example_char": "十",
+          "example_pinyin": "shí",
+          "example_meaning": "ten",
+          "example_note": "十 is a 横 with a 竖 through it.",
+          "example_stroke_order": [
+            "横",
+            "竖"
+          ]
+        },
+        {
+          "stroke": "撇",
+          "pinyin": "piě",
+          "name_en": "left-falling",
+          "direction": "top-right → bottom-left",
+          "explanation": "撇 = a stroke that sweeps down to the left.",
+          "audio_text": "撇",
+          "example_char": "八",
+          "example_pinyin": "bā",
+          "example_meaning": "eight",
+          "example_note": "八 opens with a 撇 on the left.",
+          "example_stroke_order": [
+            "撇",
+            "捺"
+          ]
+        },
+        {
+          "stroke": "捺",
+          "pinyin": "nà",
+          "name_en": "right-falling",
+          "direction": "top-left → bottom-right",
+          "explanation": "捺 = a stroke that spreads down to the right.",
+          "audio_text": "捺",
+          "example_char": "八",
+          "example_pinyin": "bā",
+          "example_meaning": "eight",
+          "example_note": "八 closes with a 捺 on the right.",
+          "example_stroke_order": [
+            "撇",
+            "捺"
+          ]
+        }
+      ],
+      "recognition_check": [
+        {
+          "show_stroke": "横",
+          "choices": [
+            "横",
+            "竖",
+            "撇",
+            "捺"
+          ],
+          "correct": "横"
+        },
+        {
+          "show_stroke": "撇",
+          "choices": [
+            "横",
+            "竖",
+            "撇",
+            "捺"
+          ],
+          "correct": "撇"
+        },
+        {
+          "show_stroke": "捺",
+          "choices": [
+            "横",
+            "竖",
+            "撇",
+            "捺"
+          ],
+          "correct": "捺"
+        },
+        {
+          "show_stroke": "竖",
+          "choices": [
+            "横",
+            "竖",
+            "撇",
+            "捺"
+          ],
+          "correct": "竖"
+        }
+      ]
+    },
+    "part2_build": {
+      "title": "Build",
+      "subtitle": "Two basic writing rules",
+      "intro": "Stroke order is not decoration — it is the rule that makes characters look right. Two rules cover this whole lesson.",
+      "rules": [
+        {
+          "rule": "先横后竖",
+          "rule_pinyin": "xiān héng hòu shù",
+          "rule_en": "Horizontal before vertical",
+          "audio_text": "先横后竖",
+          "choices": [
+            "横",
+            "竖"
+          ],
+          "correct": "横",
+          "result_char": "十",
+          "result_pinyin": "shí",
+          "result_meaning": "ten",
+          "stroke_order": [
+            "横",
+            "竖"
+          ],
+          "explanation": "Write the 横 across, then the 竖 down through it. That gives you 十."
+        },
+        {
+          "rule": "先撇后捺",
+          "rule_pinyin": "xiān piě hòu nà",
+          "rule_en": "Left-falling before right-falling",
+          "audio_text": "先撇后捺",
+          "choices": [
+            "撇",
+            "捺"
+          ],
+          "correct": "撇",
+          "result_char": "人",
+          "result_pinyin": "rén",
+          "result_meaning": "person",
+          "stroke_order": [
+            "撇",
+            "捺"
+          ],
+          "explanation": "The 撇 leans left first, then the 捺 spreads right to meet it. That gives you 人."
+        }
+      ]
+    },
+    "part3_read": {
+      "title": "Read",
+      "subtitle": "Watch each character being built",
+      "intro": "Tap to reveal each stroke in order. Try to guess what comes next before you tap.",
+      "characters": [
+        {
+          "character": "一",
+          "pinyin": "yī",
+          "meaning": "one",
+          "stroke_order": [
+            "横"
+          ],
+          "stroke_count": 1,
+          "built_from": "横",
+          "note": "One stroke, one meaning.",
+          "predict": null
+        },
+        {
+          "character": "二",
+          "pinyin": "èr",
+          "meaning": "two",
+          "stroke_order": [
+            "横",
+            "横"
+          ],
+          "stroke_count": 2,
+          "built_from": "一 + 横",
+          "note": "Add a second 横 under the first.",
+          "predict": {
+            "shown": 1,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "捺"
+            ],
+            "correct": "横"
+          }
+        },
+        {
+          "character": "三",
+          "pinyin": "sān",
+          "meaning": "three",
+          "stroke_order": [
+            "横",
+            "横",
+            "横"
+          ],
+          "stroke_count": 3,
+          "built_from": "二 + 横",
+          "note": "Three 横 stacked. The pattern is now obvious.",
+          "predict": {
+            "shown": 2,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "捺"
+            ],
+            "correct": "横"
+          }
+        },
+        {
+          "character": "十",
+          "pinyin": "shí",
+          "meaning": "ten",
+          "stroke_order": [
+            "横",
+            "竖"
+          ],
+          "stroke_count": 2,
+          "built_from": "横 + 竖",
+          "note": "先横后竖 — the rule you just learned.",
+          "predict": {
+            "shown": 1,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "捺"
+            ],
+            "correct": "竖"
+          }
+        },
+        {
+          "character": "八",
+          "pinyin": "bā",
+          "meaning": "eight",
+          "stroke_order": [
+            "撇",
+            "捺"
+          ],
+          "stroke_count": 2,
+          "built_from": "撇 + 捺 (apart)",
+          "note": "撇 and 捺 standing apart, not touching.",
+          "predict": {
+            "shown": 1,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "捺"
+            ],
+            "correct": "捺"
+          }
+        },
+        {
+          "character": "人",
+          "pinyin": "rén",
+          "meaning": "person",
+          "stroke_order": [
+            "撇",
+            "捺"
+          ],
+          "stroke_count": 2,
+          "built_from": "撇 + 捺 (joined at the top)",
+          "note": "Same two strokes as 八 — but joined at the top. A person standing on two legs.",
+          "predict": {
+            "shown": 1,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "捺"
+            ],
+            "correct": "捺"
+          }
+        },
+        {
+          "character": "个",
+          "pinyin": "gè",
+          "meaning": "(measure word for people and things)",
+          "stroke_order": [
+            "撇",
+            "捺",
+            "竖"
+          ],
+          "stroke_count": 3,
+          "built_from": "人 + 竖",
+          "note": "You already know 人. Add a 竖 underneath and you have 个.",
+          "predict": {
+            "shown": 2,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "捺"
+            ],
+            "correct": "竖"
+          }
+        },
+        {
+          "character": "大",
+          "pinyin": "dà",
+          "meaning": "big",
+          "stroke_order": [
+            "横",
+            "撇",
+            "捺"
+          ],
+          "stroke_count": 3,
+          "built_from": "一 + 人",
+          "note": "A 人 stretching both arms wide — that is 大, big.",
+          "predict": {
+            "shown": 1,
+            "choices": [
+              "撇 + 捺",
+              "竖 + 横",
+              "横 + 横",
+              "捺 + 撇"
+            ],
+            "correct": "撇 + 捺"
+          }
+        },
+        {
+          "character": "天",
+          "pinyin": "tiān",
+          "meaning": "sky / day",
+          "stroke_order": [
+            "横",
+            "横",
+            "撇",
+            "捺"
+          ],
+          "stroke_count": 4,
+          "built_from": "一 + 大",
+          "note": "大 with one more 横 on top — the sky above a person.",
+          "predict": {
+            "shown": 3,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "捺"
+            ],
+            "correct": "捺"
+          }
+        },
+        {
+          "character": "木",
+          "pinyin": "mù",
+          "meaning": "tree / wood",
+          "stroke_order": [
+            "横",
+            "竖",
+            "撇",
+            "捺"
+          ],
+          "stroke_count": 4,
+          "built_from": "横 + 竖 + 撇 + 捺",
+          "note": "All four strokes of this lesson, in order, in one character.",
+          "predict": {
+            "shown": 3,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "捺"
+            ],
+            "correct": "捺"
+          }
+        }
+      ]
+    },
+    "part4_use": {
+      "title": "Use",
+      "subtitle": "Put the characters into words",
+      "intro": "Now the characters start working together.",
+      "patterns": [
+        {
+          "logic": "number + 天(day) = Number of days ",
+          "build": "三 + 天 = 三天",
+          "word": "三天",
+          "pinyin": "sān tiān",
+          "meaning": "three days",
+          "audio_text": "三天",
+          "note": "天 means sky — and also day.",
+          "variations": [
+            {
+              "word": "三天",
+              "pinyin": "sān tiān",
+              "meaning": "three days",
+              "audio_text": "三天"
+            },
+            {
+              "word": "八天",
+              "pinyin": "bā tiān",
+              "meaning": "eight days",
+              "audio_text": "八天"
+            },
+            {
+              "word": "十天",
+              "pinyin": "shí tiān",
+              "meaning": "ten days",
+              "audio_text": "十天"
+            }
+          ],
+          "quiz": {
+            "template": [
+              null,
+              null
+            ],
+            "answer": [
+              "一",
+              "天"
+            ],
+            "choices": [
+              "一",
+              "二",
+              "天",
+              "人"
+            ],
+            "result_word": "一天",
+            "result_pinyin": "yì tiān",
+            "result_meaning": "one day",
+            "audio_text": "一天",
+            "distractor_note": "二 cannot count days — Chinese uses 两 for that."
+          }
+        },
+        {
+          "logic": "number + measure word + noun ",
+          "build": "一 + 个 + 人 = 一个人",
+          "word": "一个人",
+          "pinyin": "yí ge rén",
+          "meaning": "one person",
+          "audio_text": "一个人",
+          "note": "个 is the counter that sits between a number and 人. Note: 一 is said yí here, not yī — the tone shifts before 个. (Pinyin Lesson 8 covers this rule.)",
+          "variations": [
+            {
+              "word": "一个人",
+              "pinyin": "yí ge rén",
+              "meaning": "one person",
+              "audio_text": "一个人"
+            },
+            {
+              "word": "八个人",
+              "pinyin": "bā ge rén",
+              "meaning": "eight people",
+              "audio_text": "八个人"
+            },
+            {
+              "word": "十个人",
+              "pinyin": "shí ge rén",
+              "meaning": "ten people",
+              "audio_text": "十个人"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "三",
+              null,
+              "人"
+            ],
+            "answer": [
+              "个"
+            ],
+            "choices": [
+              "个",
+              "天",
+              "大",
+              "木"
+            ],
+            "result_word": "三个人",
+            "result_pinyin": "sān ge rén",
+            "result_meaning": "three people",
+            "audio_text": "三个人"
+          }
+        },
+        {
+          "build": "大 + 人 = 大人",
+          "word": "大人",
+          "pinyin": "dà rén",
+          "meaning": "adult",
+          "audio_text": "大人",
+          "note": "Literally 'big person' — a grown-up.",
+          "variations": [
+            {
+              "word": "大人",
+              "pinyin": "dà rén",
+              "meaning": "adult",
+              "audio_text": "大人"
+            }
+          ],
+          "logic": "size word + 人(person) = a kind of person",
+          "quiz": {
+            "template": [
+              "大",
+              null
+            ],
+            "answer": [
+              "人"
+            ],
+            "choices": [
+              "人",
+              "八",
+              "天",
+              "十"
+            ],
+            "result_word": "大人",
+            "result_pinyin": "dà rén",
+            "result_meaning": "adult",
+            "audio_text": "大人"
+          }
+        }
+      ]
+    },
+    "part5_write": {
+      "title": "Write",
+      "subtitle": "Trace each character in stroke order",
+      "intro": "Write with your finger, following the stroke order you just learned. Miss twice and the next stroke is shown.",
+      "characters": [
+        "一",
+        "二",
+        "三",
+        "十",
+        "八",
+        "人",
+        "个",
+        "大",
+        "天",
+        "木"
+      ]
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "question": "What does 人 mean?",
+      "prompt_char": "人",
+      "correct": "person",
+      "choices": [
+        "person",
+        "big",
+        "ten",
+        "tree"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "question": "What does 木 mean?",
+      "prompt_char": "木",
+      "correct": "tree / wood",
+      "choices": [
+        "tree / wood",
+        "sky / day",
+        "eight",
+        "three"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "question": "What does 天 mean?",
+      "prompt_char": "天",
+      "correct": "sky / day",
+      "choices": [
+        "sky / day",
+        "person",
+        "one",
+        "big"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "question": "What does 大人 mean?",
+      "prompt_char": "大人",
+      "correct": "adult",
+      "choices": [
+        "adult",
+        "three days",
+        "one person",
+        "ten people"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "question": "Which character means \"ten\"?",
+      "correct": "十",
+      "choices": [
+        "十",
+        "八",
+        "二",
+        "木"
+      ],
+      "prompt_en": "ten"
+    },
+    {
+      "type": "meaning_to_char",
+      "question": "Which character means \"big\"?",
+      "correct": "大",
+      "choices": [
+        "大",
+        "天",
+        "人",
+        "个"
+      ],
+      "prompt_en": "big"
+    },
+    {
+      "type": "meaning_to_char",
+      "question": "Which word means \"eight people\"?",
+      "correct": "八个人",
+      "choices": [
+        "八个人",
+        "八天",
+        "十个人",
+        "大人"
+      ],
+      "prompt_en": "eight people"
+    },
+    {
+      "type": "meaning_to_char",
+      "question": "Which word means \"three days\"?",
+      "correct": "三天",
+      "choices": [
+        "三天",
+        "三个人",
+        "十天",
+        "大人"
+      ],
+      "prompt_en": "three days"
+    },
+    {
+      "type": "audio_to_char",
+      "question": "Listen and choose the character.",
+      "audio_text": "木",
+      "correct": "木",
+      "choices": [
+        "木",
+        "人",
+        "大",
+        "十"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "question": "Listen and choose the character.",
+      "audio_text": "天",
+      "correct": "天",
+      "choices": [
+        "天",
+        "大",
+        "二",
+        "八"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "question": "Listen and choose the word.",
+      "audio_text": "一个人",
+      "correct": "一个人",
+      "choices": [
+        "一个人",
+        "十个人",
+        "八个人",
+        "三天"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "question": "Listen and choose the word.",
+      "audio_text": "十天",
+      "correct": "十天",
+      "choices": [
+        "十天",
+        "三天",
+        "八天",
+        "大人"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "question": "How do you say 木?",
+      "prompt_char": "木",
+      "audio_text": "木",
+      "correct": "mù",
+      "choices": [
+        "mù",
+        "rén",
+        "dà",
+        "shí"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "question": "How do you say 个?",
+      "prompt_char": "个",
+      "audio_text": "个",
+      "correct": "gè",
+      "choices": [
+        "gè",
+        "bā",
+        "èr",
+        "tiān"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "question": "How do you say 大人?",
+      "prompt_char": "大人",
+      "audio_text": "大人",
+      "correct": "dà rén",
+      "choices": [
+        "dà rén",
+        "dà tiān",
+        "shí rén",
+        "bā rén"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "question": "Which character is sān?",
+      "prompt_pinyin": "sān",
+      "correct": "三",
+      "choices": [
+        "三",
+        "二",
+        "十",
+        "八"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "question": "Which character is rén?",
+      "prompt_pinyin": "rén",
+      "correct": "人",
+      "choices": [
+        "人",
+        "个",
+        "八",
+        "大"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "question": "Which word is sān tiān?",
+      "prompt_pinyin": "sān tiān",
+      "correct": "三天",
+      "choices": [
+        "三天",
+        "八天",
+        "十天",
+        "三个人"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "question": "Which stroke is missing from 十?",
+      "prompt_char": "十",
+      "shown_strokes": [
+        "横"
+      ],
+      "correct": "竖",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "question": "Which stroke completes 人?",
+      "prompt_char": "人",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "question": "Which stroke completes 木?",
+      "prompt_char": "木",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_component",
+      "question": "大 plus which stroke makes 天?",
+      "prompt_char": "天",
+      "shown_component": "大",
+      "correct": "横",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    },
+    {
+      "type": "missing_component",
+      "question": "人 plus which stroke makes 个?",
+      "prompt_char": "个",
+      "shown_component": "人",
+      "correct": "竖",
+      "choices": [
+        "横",
+        "竖",
+        "撇",
+        "捺"
+      ]
+    }
+  ]
+}

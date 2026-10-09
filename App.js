@@ -35,6 +35,11 @@ import ProfileScreen from './screens/ProfileScreen';
 import TabBar from './components/TabBar';
 import { checkSubscriptionStatus, initRevenueCat } from './services/RevenueCatService';
 import FoundationsScreen from './screens/FoundationsScreen';
+import StrokeAnimatorTestScreen from './screens/StrokeAnimatorTestScreen';
+import CharactersSystemScreen from './screens/CharactersSystemScreen';
+import CharacterLessonScreen from './screens/CharacterLessonScreen';
+import CharacterRecallScreen from './screens/CharacterRecallScreen';
+import { getCharacterLesson } from './data/characters';
 
 // Pinyin lesson data
 import pinyinLesson1  from './data/pinyin/pinyin_lesson_1.json';
@@ -158,6 +163,9 @@ const LESSONS = LESSONS_BY_LEVEL.hsk1; // keep for backward compat
 
 const ALL_LEVEL_IDS = ['hsk1', 'hsk2', 'hsk3', 'hsk4', 'hsk5', 'hsk6'];
 
+// XP for completing one Characters lesson (an HSK practice stage awards 20).
+const CHAR_LESSON_XP = 30;
+
 const STORAGE_KEYS = {
   userData:           '@chineseapp:userData',
   levelState:         '@chineseapp:levelState',
@@ -167,6 +175,8 @@ const STORAGE_KEYS = {
   pinyinQuizPassed:   '@chineseapp:pinyinQuizPassed',
   pinyinStageProgress:'@chineseapp:pinyinStageProgress',
   pinyinLearnDone:    '@chineseapp:pinyinLearnDone',
+  charLessonsPassed:  '@chineseapp:charLessonsPassed',
+  charLearnDone:      '@chineseapp:charLearnDone',
   quizPassedLessons:  '@chineseapp:quizPassedLessons',
   sectionProgress:    '@chineseapp:sectionProgress',
   lastScreen:         '@chineseapp:lastScreen',
@@ -218,6 +228,10 @@ export default function App() {
   const [pinyinQuizPassed, setPinyinQuizPassed] = useState([]);       // [1,2,3,...] lesson IDs passed
   const [pinyinStageProgress, setPinyinStageProgress] = useState({}); // { "pinyin_1": [0,1,2] }
   const [pinyinLearnDone, setPinyinLearnDone] = useState({});         // { "pinyin_1": true }
+  const [charLessonsPassed, setCharLessonsPassed] = useState([]);     // [1,2,...] character lesson ids completed
+  const [charLearnDone, setCharLearnDone] = useState({});             // { "char_1": true }
+  const [currentCharLessonId, setCurrentCharLessonId] = useState(null);
+  const [charLessonInitialTab, setCharLessonInitialTab] = useState('learn');
   const [quizPassedLessons, setQuizPassedLessons] = useState({});     // { "hsk1": [1,2,...], "hsk2": [...] }
   const [sectionProgress, setSectionProgress] = useState({});         // { "hsk1_5": { newwords: true, grammar: true, ... } }
   const [pinyinLessonInitialTab, setPinyinLessonInitialTab] = useState('learn');
@@ -234,7 +248,7 @@ export default function App() {
     const load = async () => {
       initRevenueCat(); // fire-and-forget — runs in parallel, completes well before paywall is reachable
       try {
-        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage, savedQuizPassedLessons, savedSectionProgress, savedPinyinLearnDone, savedPlacementProgress] = await Promise.all([
+        const [savedUser, savedLevel, savedProgress, savedStageProgress, savedRoundScores, savedPinyinQuiz, savedPinyinStage, savedQuizPassedLessons, savedSectionProgress, savedPinyinLearnDone, savedPlacementProgress, savedCharPassed, savedCharLearnDone] = await Promise.all([
           AsyncStorage.getItem(STORAGE_KEYS.userData),
           AsyncStorage.getItem(STORAGE_KEYS.levelState),
           AsyncStorage.getItem(STORAGE_KEYS.lessonProgress),
@@ -246,6 +260,8 @@ export default function App() {
           AsyncStorage.getItem(STORAGE_KEYS.sectionProgress),
           AsyncStorage.getItem(STORAGE_KEYS.pinyinLearnDone),
           AsyncStorage.getItem(STORAGE_KEYS.placementProgress),
+          AsyncStorage.getItem(STORAGE_KEYS.charLessonsPassed),
+          AsyncStorage.getItem(STORAGE_KEYS.charLearnDone),
         ]);
         const parsedUser = savedUser ? JSON.parse(savedUser) : null;
         if (parsedUser) {
@@ -306,6 +322,8 @@ export default function App() {
         if (savedQuizPassedLessons) setQuizPassedLessons(JSON.parse(savedQuizPassedLessons));
         if (savedSectionProgress)   setSectionProgress(JSON.parse(savedSectionProgress));
         if (savedPinyinLearnDone)   setPinyinLearnDone(JSON.parse(savedPinyinLearnDone));
+        if (savedCharPassed)        setCharLessonsPassed(JSON.parse(savedCharPassed));
+        if (savedCharLearnDone)     setCharLearnDone(JSON.parse(savedCharLearnDone));
       } catch (e) {
         console.warn('Failed to restore saved data:', e);
       } finally {
@@ -356,6 +374,16 @@ export default function App() {
     if (isLoading) return;
     AsyncStorage.setItem(STORAGE_KEYS.pinyinLearnDone, JSON.stringify(pinyinLearnDone)).catch(console.warn);
   }, [pinyinLearnDone, isLoading]);
+
+  useEffect(() => {
+    if (isLoading) return;
+    AsyncStorage.setItem(STORAGE_KEYS.charLessonsPassed, JSON.stringify(charLessonsPassed)).catch(console.warn);
+  }, [charLessonsPassed, isLoading]);
+
+  useEffect(() => {
+    if (isLoading) return;
+    AsyncStorage.setItem(STORAGE_KEYS.charLearnDone, JSON.stringify(charLearnDone)).catch(console.warn);
+  }, [charLearnDone, isLoading]);
 
   useEffect(() => {
     if (isLoading) return;
@@ -544,6 +572,42 @@ export default function App() {
     setPinyinLessonInitialTab('learn');
     saveLastScreen('pinyinLesson', { pinyinLessonId: lessonId });
     setCurrentScreen('pinyinLesson');
+  };
+
+  // ── Chinese Characters course ───────────────────────────────
+  const handleSelectCharLesson = (lessonId) => {
+    setCurrentCharLessonId(lessonId);
+    setCharLessonInitialTab('learn');
+    setCurrentScreen('charLesson');
+  };
+
+  const handleCharLearnComplete = () => {
+    const key = `char_${currentCharLessonId}`;
+    setCharLearnDone(prev => (prev[key] ? prev : { ...prev, [key]: true }));
+    setCurrentScreen('charRecall');
+  };
+
+  const handleCharRecallComplete = (scorePercent, passed) => {
+    const lessonId = currentCharLessonId;
+    if (!passed || !lessonId) {
+      setCharLessonInitialTab('practice');
+      setCurrentScreen('charLesson');
+      return;
+    }
+    setCharLessonsPassed(prev => (prev.includes(lessonId) ? prev : [...prev, lessonId]));
+
+    // Same XP / streak / badge pipeline the HSK stages use. awardXP updates the
+    // streak internally; computeNewBadges is snapshotted first so the modal can
+    // show what was just earned.
+    const pct = scorePercent / 100;
+    const newBadges = computeNewBadges(xpProgress, CHAR_LESSON_XP, 'characters', lessonId, pct);
+    awardXP(CHAR_LESSON_XP, 'characters', lessonId, pct);
+    setRewardModal({
+      xpEarned: CHAR_LESSON_XP,
+      scorePercent: pct,
+      newBadges,
+      onDone: () => setCurrentScreen('charactersSystem'),
+    });
   };
 
   const handleStartPinyinStage = (stageIndex) => {
@@ -985,6 +1049,47 @@ export default function App() {
             setPinyinSystemOrigin('tab');
             setCurrentScreen('pinyinSystem');
           }}
+          onCharactersPress={() => setCurrentScreen('charactersSystem')}
+        />
+      );
+    }
+    if (currentScreen === 'strokeTest') {
+      return (
+        <StrokeAnimatorTestScreen
+          onBack={() => { setCurrentScreen('foundations'); setActiveTab('learn'); }}
+        />
+      );
+    }
+    if (currentScreen === 'charactersSystem') {
+      return (
+        <CharactersSystemScreen
+          onBack={() => { setCurrentScreen('foundations'); setActiveTab('learn'); }}
+          onSelectLesson={handleSelectCharLesson}
+          quizPassedLessons={charLessonsPassed}
+          learnDone={charLearnDone}
+        />
+      );
+    }
+    if (currentScreen === 'charLesson') {
+      return (
+        <CharacterLessonScreen
+          lessonData={getCharacterLesson(currentCharLessonId)}
+          learnDone={!!charLearnDone[`char_${currentCharLessonId}`]}
+          recallPassed={charLessonsPassed.includes(currentCharLessonId)}
+          initialTab={charLessonInitialTab}
+          onBack={() => setCurrentScreen('charactersSystem')}
+          onLearnComplete={handleCharLearnComplete}
+          onStartRecall={() => setCurrentScreen('charRecall')}
+        />
+      );
+    }
+    if (currentScreen === 'charRecall') {
+      return (
+        <CharacterRecallScreen
+          key={currentCharLessonId}
+          lessonData={getCharacterLesson(currentCharLessonId)}
+          onBack={() => { setCharLessonInitialTab('practice'); setCurrentScreen('charLesson'); }}
+          onComplete={handleCharRecallComplete}
         />
       );
     }
@@ -1252,12 +1357,17 @@ export default function App() {
             newBadges={rewardModal?.newBadges || []}
             streak={streak}
             onClose={() => {
+              // Courses other than the HSK stages supply their own continuation.
+              const done = rewardModal?.onDone;
               const stageIndex = rewardModal?.stageIndex;
               setRewardModal(null);
+              if (done) { done(); return; }
               handleStageContinue(stageIndex);
             }}
             onBreak={() => {
+              const done = rewardModal?.onDone;
               setRewardModal(null);
+              if (done) { done(); return; }
               setCurrentScreen('lessonStages');
             }}
           />

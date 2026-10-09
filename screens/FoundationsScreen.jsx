@@ -11,7 +11,7 @@ import AVATARS from '../config/avatarConfig';
 import { LEVEL_QUOTES } from '../data/emotionalContent';
 import { DEEP_NAVY, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
-const FoundationsScreen = ({ currentLevelId, onPinyinPress }) => {
+const FoundationsScreen = ({ currentLevelId, onPinyinPress, onCharactersPress }) => {
   const isLevel1 = currentLevelId === 'hsk1';
   const [avatarId, setAvatarId] = useState('eileen');
 
@@ -52,7 +52,9 @@ const FoundationsScreen = ({ currentLevelId, onPinyinPress }) => {
           {/* Characters card */}
           <TouchableOpacity
             style={[styles.card, !isLevel1 && styles.cardLocked]}
-            onPress={() => Alert.alert('Coming Soon', 'Chinese Characters system is coming in a future update! ✍️')}
+            onPress={onCharactersPress
+              ? onCharactersPress
+              : () => Alert.alert('Coming Soon', 'Chinese Characters system is coming in a future update! ✍️')}
             activeOpacity={0.7}
           >
             <Text style={styles.cardIcon}>✍️</Text>
