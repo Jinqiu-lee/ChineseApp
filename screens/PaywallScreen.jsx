@@ -4,7 +4,7 @@ import {
   ActivityIndicator, Alert, Linking, Platform,
 } from 'react-native';
 import ScreenBackground from '../components/ScreenBackground';
-import { purchaseSubscription, restorePurchases } from '../services/RevenueCatService';
+import { purchaseSubscription, restorePurchases, getApiKeyFingerprint } from '../services/RevenueCatService';
 import { WARM_ORANGE, DEEP_NAVY, CARD_WHITE, WARM_BROWN } from '../constants/colors';
 
 const BULLETS = [
@@ -30,8 +30,30 @@ export default function PaywallScreen({ onDismiss, onSubscribed }) {
     try {
       const success = await purchaseSubscription();
       if (success) onSubscribed?.();
-    } catch {
-      Alert.alert('Purchase failed', 'Please try again or restore purchases.');
+    } catch (e) {
+      console.log('[Paywall] purchase error code:', e?.code);
+      console.log('[Paywall] purchase error message:', e?.message);
+      console.log('[Paywall] purchase error underlyingErrorMessage:', e?.underlyingErrorMessage);
+      console.log('[Paywall] purchase error userInfo:', JSON.stringify(e?.userInfo, null, 2));
+      console.log('[Paywall] purchase error raw:', e ? JSON.stringify(e, Object.getOwnPropertyNames(e), 2) : e);
+      console.log('[Paywall] configured key:', getApiKeyFingerprint());
+
+      const userInfoStr = e?.userInfo ? JSON.stringify(e.userInfo) : null;
+
+      const details = [
+        e?.code != null ? `Code: ${e.code}` : null,
+        e?.underlyingErrorMessage ? `Underlying: ${e.underlyingErrorMessage}` : null,
+        e?.message ? `Message: ${e.message}` : null,
+        userInfoStr ? `UserInfo: ${userInfoStr}` : null,
+        `Key: ${getApiKeyFingerprint()}`,
+      ].filter(Boolean).join('\n');
+
+      Alert.alert(
+        'Purchase failed',
+        details
+          ? `Please try again or restore purchases.\n\n${details}`
+          : 'Please try again or restore purchases.',
+      );
     } finally {
       setLoading(false);
     }
