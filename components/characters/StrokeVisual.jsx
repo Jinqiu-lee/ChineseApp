@@ -14,7 +14,16 @@ export default function StrokeVisual({ stroke, size = 60, loop = false }) {
     return <Image source={v.asset} style={{ width: size, height: size }} resizeMode="contain" />;
   }
   if (v.kind === 'draw') {
-    return <StrokeAnimator char={v.char} size={size} loop={loop} />;
+    // `highlight` picks out one stroke inside a host character, for strokes
+    // that have neither artwork nor a glyph of their own.
+    return (
+      <StrokeAnimator
+        char={v.char}
+        size={size}
+        loop={loop}
+        highlightStroke={v.highlight != null ? v.highlight : null}
+      />
+    );
   }
   return <Text style={[styles.glyph, { fontSize: size * 0.6 }]}>{stroke}</Text>;
 }

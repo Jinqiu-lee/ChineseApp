@@ -24,18 +24,25 @@ const STROKE_ASSETS = {
   '横撇': { asset: require('./gifs/hengpie.gif'), animated: true, format: 'gif', pinyin: 'héngpiě' },
   '撇折': { asset: require('./gifs/piezhe.gif'),  animated: true, format: 'gif', pinyin: 'piězhé' },
   '竖折': { asset: require('./gifs/shuzhe.gif'),  animated: true, format: 'gif', pinyin: 'shùzhé' },
+  '横折': { asset: require('./gifs/hengzhe.gif'), animated: true, format: 'gif', pinyin: 'héngzhé' },
+  '竖勾': { asset: require('./gifs/shugou.gif'),  animated: true, format: 'gif', pinyin: 'shùgōu' },
 
   // ── Static stills (no animation available, but they render correctly) ──
   '撇点':     { asset: require('./gifs/piedian.png'),            animated: false, format: 'png',  pinyin: 'piědiǎn' },
   '横折提':   { asset: require('./gifs/hengzheti.png'),          animated: false, format: 'png',  pinyin: 'héngzhétí' },
   '横撇弯钩': { asset: require('./gifs/hengpiewangou.jpg'),      animated: false, format: 'jpg',  pinyin: 'héngpiěwāngōu' },
-  '竖勾':     { asset: require('./gifs/shugou.jpeg'),            animated: false, format: 'jpeg', pinyin: 'shùgōu' },
   '横折折折钩': { asset: require('./gifs/hengzhezhezhegou.png'), animated: false, format: 'png',  pinyin: 'héngzhézhézhégōu' },
 
-  // Deliberately NOT registered (WebP only — would render frozen):
-  //   横 竖 横钩 横折 横折钩 横折弯钩 竖提 竖弯钩 竖折折钩
-  // 横 and 竖 fall back to StrokeAnimator below. Replace the .webp files with
-  // .gif versions and add them here to upgrade any of the others.
+  // ── WebP placeholders ─────────────────────────────────────────────────
+  // These render as a frozen first frame on Android (RN's Image cannot animate
+  // WebP). They are registered anyway so lessons 2-3 have the right picture;
+  // swap each for a .gif and flip `animated` to true when one arrives.
+  '横折钩': { asset: require('./gifs/hengzhegou.webp'), animated: false, format: 'webp', pinyin: 'héngzhégōu' },
+  '竖折折钩': { asset: require('./gifs/shuzhezhegou.webp'), animated: false, format: 'webp', pinyin: 'shùzhézhégōu' },
+
+  // Still WebP-only and unused so far:
+  //   横 竖 横钩 横折弯钩 竖提 竖弯钩
+  // 横 and 竖 fall back to StrokeAnimator below.
 };
 
 // Strokes with no usable file: draw them with StrokeAnimator using this glyph.
@@ -44,13 +51,21 @@ const STROKE_FALLBACK_CHARS = {
   '横': '一',
   '竖': '丨',
   '撇': '丿',
+  '点': '丶',
+};
+
+// Strokes with neither a file nor a glyph of their own: show them inside a
+// character that contains them, with that one stroke highlighted.
+const STROKE_IN_CHARACTER = {
+  '竖弯': { char: '四', strokeIndex: 3 },
+  '卧钩': { char: '心', strokeIndex: 1 },
 };
 
 // Pinyin for every stroke name, including ones with no asset. Single source of
 // truth so answer buttons can be labelled without duplicating it per lesson.
 const STROKE_PINYIN = {
   '横': 'héng', '竖': 'shù', '撇': 'piě', '捺': 'nà', '点': 'diǎn', '提': 'tí',
-  '弯钩': 'wāngōu', '斜钩': 'xiégōu', '横钩': 'hénggōu', '竖勾': 'shùgōu',
+  '弯钩': 'wāngōu', '斜钩': 'xiégōu', '卧钩': 'wògōu', '横钩': 'hénggōu', '竖勾': 'shùgōu',
   '横折': 'héngzhé', '横折钩': 'héngzhégōu', '横折弯钩': 'héngzhéwāngōu',
   '横折提': 'héngzhétí', '横撇': 'héngpiě', '横撇弯钩': 'héngpiěwāngōu',
   '横折折折钩': 'héngzhézhézhégōu',
@@ -100,6 +115,8 @@ export function getStrokeVisual(stroke) {
   if (entry) return { kind: 'gif', ...entry };
   const char = STROKE_FALLBACK_CHARS[stroke];
   if (char) return { kind: 'draw', char };
+  const inChar = STROKE_IN_CHARACTER[stroke];
+  if (inChar) return { kind: 'draw', char: inChar.char, highlight: inChar.strokeIndex };
   return { kind: 'none' };
 }
 
@@ -107,6 +124,7 @@ export function getStrokeAsset(stroke) {
   return STROKE_ASSETS[stroke] || null;
 }
 
-export const MISSING_STROKES = [];
+// Strokes still waiting on artwork.
+export const MISSING_STROKES = ['竖弯', '卧钩'];
 
 export default STROKE_ASSETS;

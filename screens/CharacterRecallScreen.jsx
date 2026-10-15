@@ -288,7 +288,8 @@ export default function CharacterRecallScreen({
           <View style={[s.progressFill, { width: `${progress}%` }]} />
         </View>
 
-        <ScrollView contentContainerStyle={s.content} showsVerticalScrollIndicator={false}>
+        {/* Keyed on the question so each one opens at the top. */}
+        <ScrollView key={index} contentContainerStyle={s.content} showsVerticalScrollIndicator={false}>
           <Text style={s.typeLabel}>{quiz ? '📝 Lesson Quiz' : `${stage.icon} ${stage.name}`}</Text>
 
           {/* Question frame — warm cream, deliberately a different colour from

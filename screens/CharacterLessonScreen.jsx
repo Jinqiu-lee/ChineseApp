@@ -9,7 +9,7 @@ import StrokeAnimator from '../components/characters/StrokeAnimator';
 import StrokeVisual, { StrokeCombo } from '../components/characters/StrokeVisual';
 import StrokeWriter from '../components/characters/StrokeWriter';
 import { getStrokeVisual, getRuleVisual, getStrokePinyin } from '../data/characters/strokeAssets';
-import { PRACTICE_STAGES, TOTAL_PRACTICE_STAGES, QUIZ_LENGTH } from '../data/characters/practiceStages';
+import { stagesForLesson, practiceStageCount, QUIZ_LENGTH } from '../data/characters/practiceStages';
 import { speakChinese } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
 
@@ -483,7 +483,7 @@ function MiniGrid({ char, size = 76 }) {
   );
 }
 
-function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasSize }) {
+function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasSize, canGoToPractice = true }) {
   const [idx, setIdx] = useState(0);
   const advancing = useRef(false);
 
@@ -518,7 +518,9 @@ function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasS
         <Text style={s.writeDoneTitle}>All {chars.length} written</Text>
 
         <TouchableOpacity style={s.writeDoneBtn} onPress={onAllDone} activeOpacity={0.85}>
-          <Text style={s.writeDoneBtnText}>🎯 Go to Practice</Text>
+          <Text style={s.writeDoneBtnText}>
+            {canGoToPractice ? '🎯 Go to Practice' : '← Back to parts'}
+          </Text>
         </TouchableOpacity>
 
         {/* Rewriting is offered a limited number of times, then the only way on
@@ -586,7 +588,6 @@ export default function CharacterLessonScreen({
 }) {
   const [tab, setTab] = useState(initialTab);
   const [openPart, setOpenPart] = useState(null); // null = the stage list
-  const [drawing, setDrawing] = useState(false); // freeze the slide while tracing
   const { width: winW, height: winH } = useWindowDimensions();
   const writeCanvas = Math.round(Math.min(winW - 76, winH * 0.33, 276));
   if (!lessonData) return null;
@@ -603,6 +604,17 @@ export default function CharacterLessonScreen({
     (p3.characters || []).map(c => [c.character, { pinyin: c.pinyin, meaning: c.meaning }]),
   );
 
+  // Every Learn part except Write. If these are all ticked, finishing Write
+  // completes the section, so its button can head straight for Practice.
+  const otherPartsDone = [0, 1, 2, 3].every(n => partsDone.includes(n));
+  const canGoToPractice = learnDone || otherPartsDone;
+
+  const handleWriteFinished = () => {
+    onPartDone?.(4);
+    if (canGoToPractice) onLearnComplete?.();   // -> Practice, first stage still outstanding
+    else setOpenPart(null);                     // other parts remain, so back to the list
+  };
+
   const SLIDES = [
     {
       part: p1,
@@ -613,7 +625,12 @@ export default function CharacterLessonScreen({
         </>
       ),
     },
-    { part: p2, body: (p2.rules || []).map(r => <RuleCard key={r.rule} item={r} />) },
+    {
+      part: p2,
+      // Keyed on the character, not the rule — one rule can produce several
+      // characters (先中间后两边 covers 山, 小 and 少).
+      body: (p2.rules || []).map((r, i) => <RuleCard key={`${r.result_char}-${i}`} item={r} />),
+    },
     { part: p3, body: (p3.characters || []).map(c => <BuildCard key={c.character} item={c} />) },
     { part: p4, body: (p4.patterns || []).map(pt => <PatternCard key={pt.word} item={pt} />) },
     ...((p5.characters || []).length
@@ -624,9 +641,9 @@ export default function CharacterLessonScreen({
             <WritePart
               chars={p5.characters}
               infoFor={(c) => charInfo[c]}
-              onDrawingChange={setDrawing}
               onBack={() => setOpenPart(null)}
-              onAllDone={() => finishPart(4)}
+              onAllDone={handleWriteFinished}
+              canGoToPractice={canGoToPractice}
               canvasSize={writeCanvas}
             />
           ),
@@ -648,16 +665,21 @@ export default function CharacterLessonScreen({
 
   // Finishing the last outstanding part is what unlocks Practice.
   const finishPart = (i) => {
+    const alreadyDone = partsDone.includes(i);
     onPartDone?.(i);
-    const after = partsDone.includes(i) ? partsDone : [...partsDone, i];
-    if (SLIDES.every((_, n) => after.includes(n))) onLearnComplete?.();
+    const after = alreadyDone ? partsDone : [...partsDone, i];
+    // Only hand off to Practice when this part was the last one outstanding.
+    // Re-doing a part that was already ticked just carries on through Learn.
+    const justCompletedTheSet = !alreadyDone && SLIDES.every((_, n) => after.includes(n));
+
+    if (justCompletedTheSet) onLearnComplete?.();
     else if (i + 1 < SLIDES.length) setOpenPart(i + 1);  // straight on to the next
     else setOpenPart(null);
   };
 
   // ── Learn: the stage list ─────────────────────────────────────────────────
   const renderPartList = () => (
-    <ScrollView contentContainerStyle={s.tabContent} showsVerticalScrollIndicator={false}>
+    <ScrollView key="part-list" contentContainerStyle={s.tabContent} showsVerticalScrollIndicator={false}>
       <View style={s.dotsRow}>
         {SLIDES.map((_, i) => (
           <View key={i} style={[s.dot, partsDone.includes(i) && s.dotDone]} />
@@ -722,7 +744,13 @@ export default function CharacterLessonScreen({
     }
 
     return (
-      <ScrollView contentContainerStyle={s.tabContent} showsVerticalScrollIndicator={false}>
+      // Keyed on the part so moving to the next one starts at the top
+      // instead of inheriting the previous part's scroll position.
+      <ScrollView
+        key={`part-${openPart}`}
+        contentContainerStyle={s.tabContent}
+        showsVerticalScrollIndicator={false}
+      >
         {head}
         {current.part.intro ? <Text style={s.intro}>{current.part.intro}</Text> : null}
         {current.body}
@@ -745,7 +773,7 @@ export default function CharacterLessonScreen({
 
   // Practice is four stages, unlocked in order, same shape as the Pinyin course.
   const renderPractice = () => (
-    <ScrollView contentContainerStyle={s.tabContent} showsVerticalScrollIndicator={false}>
+    <ScrollView key="practice" contentContainerStyle={s.tabContent} showsVerticalScrollIndicator={false}>
       {!learnDone && (
         <View style={s.lockedBanner}>
           <Text style={s.lockedEmoji}>🔒</Text>
@@ -756,7 +784,7 @@ export default function CharacterLessonScreen({
         </View>
       )}
 
-      {PRACTICE_STAGES.map(stage => {
+      {stagesForLesson(lessonData.id).map(stage => {
         const stageDone = stagesPassed.includes(stage.index);
         const unlocked  = learnDone && (stage.index === 0 || stagesPassed.includes(stage.index - 1));
         return (
@@ -782,7 +810,7 @@ export default function CharacterLessonScreen({
 
       {/* Passing every stage unlocks the lesson quiz. */}
       {(() => {
-        const unlocked = stagesPassed.length >= TOTAL_PRACTICE_STAGES;
+        const unlocked = stagesPassed.length >= practiceStageCount(lessonData.id);
         return (
           <TouchableOpacity
             style={[s.quizCta, !unlocked && s.recallLocked]}
