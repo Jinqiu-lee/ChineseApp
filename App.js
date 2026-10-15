@@ -40,7 +40,7 @@ import CharactersSystemScreen from './screens/CharactersSystemScreen';
 import CharacterLessonScreen from './screens/CharacterLessonScreen';
 import CharacterRecallScreen from './screens/CharacterRecallScreen';
 import { getCharacterLesson } from './data/characters';
-import { TOTAL_PRACTICE_STAGES } from './data/characters/practiceStages';
+import { practiceStageCount } from './data/characters/practiceStages';
 
 // Pinyin lesson data
 import pinyinLesson1  from './data/pinyin/pinyin_lesson_1.json';
@@ -604,7 +604,9 @@ export default function App() {
   // Practice runs as one chain: the first stage still outstanding, then the
   // next, and once every stage is passed, the lesson quiz.
   const goToNextCharStep = (passedStages) => {
-    for (let i = 0; i < TOTAL_PRACTICE_STAGES; i++) {
+    const lesson = getCharacterLesson(currentCharLessonId);
+    const stageCount = practiceStageCount(lesson?.id || 1);
+    for (let i = 0; i < stageCount; i++) {
       if (!passedStages.includes(i)) {
         setCurrentCharStage(i);
         setCurrentScreen('charRecall');
@@ -1278,7 +1280,8 @@ export default function App() {
       return (
         <PinyinSystemScreen
           onBack={pinyinSystemOrigin === 'tab'
-            ? handleBackToHome
+            // Reached from the Foundations tab, so back belongs there — not home.
+            ? () => { setCurrentScreen('foundations'); setActiveTab('learn'); }
             : () => setCurrentScreen('foundationsPinyin')}
           onSelectLesson={handleSelectPinyinLesson}
           onFinalQuiz={handlePinyinFinalQuiz}
