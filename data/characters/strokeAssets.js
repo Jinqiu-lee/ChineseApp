@@ -14,35 +14,34 @@
 // filenames break Metro's dev-server URLs and Android's asset packager.
 
 const STROKE_ASSETS = {
-  // ── Animated GIFs ─────────────────────────────────────────────────
-  '撇':   { asset: require('./gifs/pie.gif'),     animated: true, format: 'gif', pinyin: 'piě'   },
-  '捺':   { asset: require('./gifs/na.gif'),      animated: true, format: 'gif', pinyin: 'nà'    },
-  '点':   { asset: require('./gifs/dian.gif'),    animated: true, format: 'gif', pinyin: 'diǎn'  },
-  '提':   { asset: require('./gifs/ti.gif'),      animated: true, format: 'gif', pinyin: 'tí'    },
-  '弯钩': { asset: require('./gifs/wangou.gif'),  animated: true, format: 'gif', pinyin: 'wāngōu' },
-  '斜钩': { asset: require('./gifs/xiegou.gif'),  animated: true, format: 'gif', pinyin: 'xiégōu' },
-  '横撇': { asset: require('./gifs/hengpie.gif'), animated: true, format: 'gif', pinyin: 'héngpiě' },
-  '撇折': { asset: require('./gifs/piezhe.gif'),  animated: true, format: 'gif', pinyin: 'piězhé' },
-  '竖折': { asset: require('./gifs/shuzhe.gif'),  animated: true, format: 'gif', pinyin: 'shùzhé' },
+  // Built from ./gifs, preferring an animated GIF, then a static image, then a
+  // static WebP. An *animated* WebP is deliberately excluded: RN freezes it on
+  // frame 1, which for a hooked stroke shows the wrong shape entirely.
+  '捺': { asset: require('./gifs/na.gif'), animated: true, format: 'gif', pinyin: 'nà' },
+  '提': { asset: require('./gifs/ti.gif'), animated: true, format: 'gif', pinyin: 'tí' },
+  '撇': { asset: require('./gifs/pie.gif'), animated: true, format: 'gif', pinyin: 'piě' },
+  '横': { asset: require('./gifs/heng.gif'), animated: true, format: 'gif', pinyin: 'héng' },
+  '点': { asset: require('./gifs/dian.gif'), animated: true, format: 'gif', pinyin: 'diǎn' },
+  '弯钩': { asset: require('./gifs/wangou.gif'), animated: true, format: 'gif', pinyin: 'wāngōu' },
+  // Converted frame-for-frame from the uploaded wogou.webp, because RN's Image
+  // animates GIF but freezes animated WebP. Same 300×300, same 200ms timing.
+  '卧钩': { asset: require('./gifs/wogou.gif'), animated: true, format: 'gif', pinyin: 'wògōu' },
+  '撇折': { asset: require('./gifs/piezhe.gif'), animated: true, format: 'gif', pinyin: 'piězhé' },
+  '撇点': { asset: require('./gifs/piedian.png'), animated: false, format: 'png', pinyin: 'piědiǎn' },
+  '斜钩': { asset: require('./gifs/xiegou.gif'), animated: true, format: 'gif', pinyin: 'xiégōu' },
   '横折': { asset: require('./gifs/hengzhe.gif'), animated: true, format: 'gif', pinyin: 'héngzhé' },
-  '竖勾': { asset: require('./gifs/shugou.gif'),  animated: true, format: 'gif', pinyin: 'shùgōu' },
-
-  // ── Static stills (no animation available, but they render correctly) ──
-  '撇点':     { asset: require('./gifs/piedian.png'),            animated: false, format: 'png',  pinyin: 'piědiǎn' },
-  '横折提':   { asset: require('./gifs/hengzheti.png'),          animated: false, format: 'png',  pinyin: 'héngzhétí' },
-  '横撇弯钩': { asset: require('./gifs/hengpiewangou.jpg'),      animated: false, format: 'jpg',  pinyin: 'héngpiěwāngōu' },
-  '横折折折钩': { asset: require('./gifs/hengzhezhezhegou.png'), animated: false, format: 'png',  pinyin: 'héngzhézhézhégōu' },
-
-  // ── WebP placeholders ─────────────────────────────────────────────────
-  // These render as a frozen first frame on Android (RN's Image cannot animate
-  // WebP). They are registered anyway so lessons 2-3 have the right picture;
-  // swap each for a .gif and flip `animated` to true when one arrives.
-  '横折钩': { asset: require('./gifs/hengzhegou.webp'), animated: false, format: 'webp', pinyin: 'héngzhégōu' },
-  '竖折折钩': { asset: require('./gifs/shuzhezhegou.webp'), animated: false, format: 'webp', pinyin: 'shùzhézhégōu' },
-
-  // Still WebP-only and unused so far:
-  //   横 竖 横钩 横折弯钩 竖提 竖弯钩
-  // 横 and 竖 fall back to StrokeAnimator below.
+  '横撇': { asset: require('./gifs/hengpie.gif'), animated: true, format: 'gif', pinyin: 'héngpiě' },
+  '横钩': { asset: require('./gifs/henggou.gif'), animated: true, format: 'gif', pinyin: 'hénggōu' },
+  '竖勾': { asset: require('./gifs/shugou.gif'), animated: true, format: 'gif', pinyin: 'shùgōu' },
+  '竖折': { asset: require('./gifs/shuzhe.gif'), animated: true, format: 'gif', pinyin: 'shùzhé' },
+  '横折弯': { asset: require('./gifs/hengzhewan.png'), animated: false, format: 'png', pinyin: 'héngzhéwān' },
+  '横折提': { asset: require('./gifs/hengzheti.png'), animated: false, format: 'png', pinyin: 'héngzhétí' },
+  '横折钩': { asset: require('./gifs/hengzhegou.gif'), animated: true, format: 'gif', pinyin: 'héngzhégōu' },
+  '横斜钩': { asset: require('./gifs/hengxiegou.webp'), animated: false, format: 'webp', pinyin: 'héngxiégōu' },
+  '竖折撇': { asset: require('./gifs/shuzhepie.png'), animated: false, format: 'png', pinyin: 'shùzhépiě' },
+  '横撇弯钩': { asset: require('./gifs/hengpiewangou.png'), animated: false, format: 'png', pinyin: 'héngpiěwāngōu' },
+  '竖折折钩': { asset: require('./gifs/shuzhezhegou.gif'), animated: true, format: 'gif', pinyin: 'shùzhézhégōu' },
+  '横折折折钩': { asset: require('./gifs/hengzhezhezhegou.png'), animated: false, format: 'png', pinyin: 'héngzhézhézhégōu' },
 };
 
 // Strokes with no usable file: draw them with StrokeAnimator using this glyph.
@@ -57,8 +56,13 @@ const STROKE_FALLBACK_CHARS = {
 // Strokes with neither a file nor a glyph of their own: show them inside a
 // character that contains them, with that one stroke highlighted.
 const STROKE_IN_CHARACTER = {
-  '竖弯': { char: '四', strokeIndex: 3 },
-  '卧钩': { char: '心', strokeIndex: 1 },
+  '竖弯':     { char: '四', strokeIndex: 3 },
+  '竖提':     { char: '以', strokeIndex: 0 },
+  '横折弯钩': { char: '九', strokeIndex: 1 },
+  // Its only file is an animated WebP, which RN freezes on frame 1 — the bare
+  // opening vertical, indistinguishable from 竖弯. Drawing it inside 七 shows
+  // the hook. Replace with a .gif and register it above to undo this.
+  '竖弯钩': { char: '七', strokeIndex: 1 },
 };
 
 // Pinyin for every stroke name, including ones with no asset. Single source of
@@ -71,6 +75,7 @@ const STROKE_PINYIN = {
   '横折折折钩': 'héngzhézhézhégōu',
   '竖折': 'shùzhé', '竖弯钩': 'shùwāngōu', '竖提': 'shùtí', '竖折折钩': 'shùzhézhégōu',
   '撇折': 'piězhé', '撇点': 'piědiǎn',
+  '横折弯': 'héngzhéwān', '横斜钩': 'héngxiégōu', '竖折撇': 'shùzhépiě', '竖弯': 'shùwān',
 };
 
 export function getStrokePinyin(stroke) {
@@ -125,6 +130,7 @@ export function getStrokeAsset(stroke) {
 }
 
 // Strokes still waiting on artwork.
-export const MISSING_STROKES = ['竖弯', '卧钩'];
+// No usable still of their own — drawn inside a host character instead.
+export const MISSING_STROKES = ['竖弯', '竖提', '竖弯钩', '横折弯钩'];
 
 export default STROKE_ASSETS;

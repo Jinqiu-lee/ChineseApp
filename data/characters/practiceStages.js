@@ -72,6 +72,75 @@ function shuffle(arr) {
 // with the rest rather than needing a separate mode.
 const asWriteQuestions = (chars) => chars.map(c => ({ type: 'write', char: c }));
 
+/**
+ * Take `count` questions, spreading them over as many different answers as
+ * possible before repeating any.
+ *
+ * Plain shuffle-and-slice quietly starves the pool: every word Part 4 teaches
+ * has questions here, so a 12-question stage drawn from 60 could easily ask
+ * about 九月 three ways and never mention 几月 at all. Sampling by distinct
+ * answer means a single sitting covers the widest spread of material it can,
+ * and only doubles up once everything has been seen.
+ */
+function sampleByCoverage(pool, count) {
+  const byAnswer = new Map();
+  for (const q of shuffle(pool)) {
+    const key = q.correct ?? q.prompt_char ?? q.audio_text ?? JSON.stringify(q);
+    if (!byAnswer.has(key)) byAnswer.set(key, []);
+    byAnswer.get(key).push(q);
+  }
+
+  // Round-robin across answers: one question each, then seconds, and so on.
+  const buckets = shuffle([...byAnswer.values()]);
+  const picked = [];
+  for (let round = 0; picked.length < count; round++) {
+    const before = picked.length;
+    for (const b of buckets) {
+      if (picked.length >= count) break;
+      if (b[round]) picked.push(b[round]);
+    }
+    if (picked.length === before) break;   // pool exhausted
+  }
+  return shuffle(picked);
+}
+
+/**
+ * Every word Part 4 "Use" teaches — the headline word of each pattern, each of
+ * its variations, and anything a pattern or sentence quiz builds.
+ *
+ * A variation is taught exactly as deliberately as the word above it, so 好人
+ * and 好山好水 both have to be practised. This is the list the Read & Use stage
+ * guarantees, and the list the build-time check holds every lesson to.
+ */
+export function useWordsForLesson(lessonData) {
+  const p4 = lessonData?.learn_content?.part4_use;
+  if (!p4) return [];
+  const words = [];
+  const add = (w) => { if (w && !words.includes(w)) words.push(w); };
+
+  for (const p of p4.patterns || []) {
+    add(p.word);
+    for (const v of p.variations || []) add(v.word);
+    if (p.quiz) add(p.quiz.result_word);
+  }
+  for (const st of p4.sentences || []) {
+    for (const b of st.breakdown || []) add(b.part);
+  }
+  return words;
+}
+
+const answerOf = (q) => q.correct ?? q.prompt_char ?? q.audio_text;
+
+// Which word a question is actually about. Not always `correct`: for
+// char_to_meaning the answer is the English meaning, and the word being tested
+// is in prompt_char instead.
+function subjectOf(q, words) {
+  for (const k of [q.correct, q.prompt_char, q.audio_text]) {
+    if (k && words.has(k)) return k;
+  }
+  return null;
+}
+
 /** Questions for one practice stage. */
 export function questionsForStage(lessonData, stageIndex) {
   const stage = PRACTICE_STAGES[stageIndex];
@@ -85,9 +154,30 @@ export function questionsForStage(lessonData, stageIndex) {
     ? pool
     : pool.filter(q => stage.types.includes(q.type));
 
-  return shuffle(matching)
-    .slice(0, QUESTIONS_PER_STAGE)
-    .map(q => ({ ...q, choices: shuffle(q.choices || []) }));
+  let picked;
+  if (stage.name === 'Read & Use') {
+    // This is the stage that owns the vocabulary, so every word Part 4 taught
+    // is asked here — one question each — before characters fill the rest.
+    // Without this a word can sit in the pool for good and never be drawn,
+    // which is how 好山好水 went untested for an entire course.
+    const words = new Set(useWordsForLesson(lessonData));
+    const wordQs = [];
+    const claimed = new Set();
+    for (const q of shuffle(matching)) {
+      const w = subjectOf(q, words);
+      if (w && !claimed.has(w)) { claimed.add(w); wordQs.push(q); }
+    }
+    const guaranteed = wordQs.slice(0, QUESTIONS_PER_STAGE);
+    const rest = matching.filter(q => !guaranteed.includes(q) && !subjectOf(q, words));
+    picked = shuffle([
+      ...guaranteed,
+      ...sampleByCoverage(rest, QUESTIONS_PER_STAGE - guaranteed.length),
+    ]);
+  } else {
+    picked = sampleByCoverage(matching, QUESTIONS_PER_STAGE);
+  }
+
+  return picked.map(q => ({ ...q, choices: shuffle(q.choices || []) }));
 }
 
 export function writeCharsForStage(lessonData) {
@@ -109,14 +199,14 @@ const RECALL_FROM_CURRENT = 8;   // roughly half; the rest comes from earlier le
 export function buildRecallMix(lessonData, length = RECALL_LENGTH) {
   const lessonId = lessonData?.id || 1;
 
-  const current = shuffle(lessonData?.recall_pool || []).slice(0, RECALL_FROM_CURRENT);
+  const current = sampleByCoverage(lessonData?.recall_pool || [], RECALL_FROM_CURRENT);
 
   const earlier = [];
   for (let i = 1; i < lessonId; i++) {
     const prev = CHARACTER_LESSONS[i];
     if (prev?.recall_pool) earlier.push(...prev.recall_pool);
   }
-  const revisited = shuffle(earlier).slice(0, length - current.length);
+  const revisited = sampleByCoverage(earlier, length - current.length);
 
   // If there is not enough history yet, top up from this lesson.
   const short = length - current.length - revisited.length;
@@ -140,8 +230,7 @@ const QUIZ_WRITE_COUNT = 4;
  */
 export function buildLessonQuiz(lessonData, length = QUIZ_LENGTH) {
   const writes = shuffle(writeCharsForStage(lessonData)).slice(0, QUIZ_WRITE_COUNT);
-  const asked = shuffle(lessonData?.recall_pool || [])
-    .slice(0, Math.max(0, length - writes.length))
+  const asked = sampleByCoverage(lessonData?.recall_pool || [], Math.max(0, length - writes.length))
     .map(q => ({ ...q, choices: shuffle(q.choices || []) }));
 
   return shuffle([...asked, ...asWriteQuestions(writes)]);

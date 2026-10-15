@@ -10,6 +10,7 @@ import StrokeVisual, { StrokeCombo } from '../components/characters/StrokeVisual
 import StrokeWriter from '../components/characters/StrokeWriter';
 import { getStrokeVisual, getRuleVisual, getStrokePinyin } from '../data/characters/strokeAssets';
 import { stagesForLesson, practiceStageCount, QUIZ_LENGTH } from '../data/characters/practiceStages';
+import { getCharacterReading } from '../data/characters';
 import { speakChinese } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
 
@@ -104,7 +105,7 @@ function StrokeCard({ item }) {
           <Text style={s.exampleMeaning}>{item.example_meaning}</Text>
           <Text style={s.body}>{item.example_note}</Text>
         </View>
-        <TouchableOpacity onPress={() => speakChinese(item.example_char)} style={s.audioBtn} activeOpacity={0.7}>
+        <TouchableOpacity onPress={() => speakChinese(item.example_char, 'female', item.example_pinyin)} style={s.audioBtn} activeOpacity={0.7}>
           <Text style={s.audioIcon}>🔊</Text>
         </TouchableOpacity>
       </View>
@@ -158,6 +159,100 @@ function RecognitionCheck({ item }) {
 }
 
 // ── Part 2 · Build ───────────────────────────────────────────────────────────
+// Optional block shown ABOVE the writing rules, from part2_build.structure.
+// It names how a character is put together (左右结构 and friends) before the
+// learner is told what order to write the pieces in — the order only makes
+// sense once you can see the pieces. Lessons without a `structure` key skip it.
+function StructureCard({ item }) {
+  const [picked, setPicked] = useState(null);
+  const check = item.check;
+
+  return (
+    <View style={[s.card, s.structureCard]}>
+      <View style={s.titleRow}>
+        <Text style={s.bigName}>{item.name}</Text>
+        <Text style={s.bigPinyin}>{item.pinyin}</Text>
+        {item.audio_text ? (
+          <TouchableOpacity onPress={() => speakChinese(item.audio_text, 'female', item.pinyin)} style={s.audioBtn} activeOpacity={0.7}>
+            <Text style={s.audioIcon}>🔊</Text>
+          </TouchableOpacity>
+        ) : null}
+      </View>
+      <Text style={s.meaningEn}>{item.name_en}</Text>
+
+      {item.intro ? <Text style={s.body}>{item.intro}</Text> : null}
+      {item.explanation ? <Text style={s.body}>{item.explanation}</Text> : null}
+
+      {item.rule ? (
+        <View style={s.structureRule}>
+          <Text style={s.structureRuleCn}>{item.rule}</Text>
+          <Text style={s.structureRuleEn}>{item.rule_en}</Text>
+        </View>
+      ) : null}
+
+      {/* Each example is shown split: the left part, the right part, the whole. */}
+      {(item.examples || []).map(ex => (
+        <TouchableOpacity
+          key={ex.character}
+          style={s.splitRow}
+          onPress={() => speakChinese(ex.character, 'female', ex.pinyin)}
+          activeOpacity={0.8}
+        >
+          <View style={s.splitBox}>
+            <View style={s.splitHalf}><Text style={s.splitPart}>{ex.left}</Text></View>
+            <View style={s.splitDivider} />
+            <View style={s.splitHalf}><Text style={s.splitPart}>{ex.right}</Text></View>
+          </View>
+          <Text style={s.splitEquals}>=</Text>
+          <View style={s.splitWhole}>
+            <Text style={s.splitWholeChar}>{ex.character}</Text>
+            <Text style={s.splitWholePy}>{ex.pinyin}</Text>
+          </View>
+          <View style={s.splitNotes}>
+            <Text style={s.splitNote}>{ex.meaning}</Text>
+            <Text style={s.splitNoteDim}>{ex.left} — {ex.left_note}</Text>
+            <Text style={s.splitNoteDim}>{ex.right} — {ex.right_note}</Text>
+          </View>
+        </TouchableOpacity>
+      ))}
+
+      {item.contrast ? (
+        <View style={s.contrastBox}>
+          <Text style={s.contrastChars}>{(item.contrast.characters || []).join('  ')}</Text>
+          <Text style={s.body}>{item.contrast.note}</Text>
+        </View>
+      ) : null}
+
+      {check ? (
+        <View style={{ gap: 10 }}>
+          <Text style={s.structureQ}>{check.question}</Text>
+          <View style={s.choiceRow}>
+            {check.choices.map(c => {
+              const chosen = picked === c;
+              const reveal = picked != null;
+              return (
+                <TouchableOpacity
+                  key={c}
+                  style={[
+                    s.charChoice,
+                    reveal && c === check.correct && s.choiceRight,
+                    reveal && chosen && c !== check.correct && s.choiceWrong,
+                  ]}
+                  onPress={() => { speakChinese(c); if (picked == null) setPicked(c); }}
+                  activeOpacity={0.8}
+                >
+                  <Text style={s.charChoiceText}>{c}</Text>
+                </TouchableOpacity>
+              );
+            })}
+          </View>
+          <AnswerFeedback picked={picked} correct={check.correct} />
+        </View>
+      ) : null}
+    </View>
+  );
+}
+
 function RuleCard({ item }) {
   // Both slots are blank: the learner lays the strokes down in writing order.
   const order = item.stroke_order || [];
@@ -244,7 +339,7 @@ function RuleCard({ item }) {
             <Text style={s.meaningEn}>{item.result_meaning}</Text>
             <Text style={s.body}>{item.explanation}</Text>
           </View>
-          <TouchableOpacity onPress={() => speakChinese(item.result_char)} style={s.audioBtn} activeOpacity={0.7}>
+          <TouchableOpacity onPress={() => speakChinese(item.result_char, 'female', item.result_pinyin)} style={s.audioBtn} activeOpacity={0.7}>
             <Text style={s.audioIcon}>🔊</Text>
           </TouchableOpacity>
         </View>
@@ -263,7 +358,7 @@ function BuildCard({ item }) {
   const [picked, setPicked] = useState(null);
   const complete = shown >= total;
 
-  const reveal = () => { setShown(total); speakChinese(item.character); };
+  const reveal = () => { setShown(total); speakChinese(item.character, 'female', item.pinyin); };
   const reset  = () => { setShown(startShown); setPicked(null); };
 
   return (
@@ -285,7 +380,7 @@ function BuildCard({ item }) {
       <View style={s.titleRow}>
         <Text style={s.bigName}>{item.character}</Text>
         <Text style={s.bigPinyin}>{item.pinyin}</Text>
-        <TouchableOpacity onPress={() => speakChinese(item.character)} style={s.audioBtn} activeOpacity={0.7}>
+        <TouchableOpacity onPress={() => speakChinese(item.character, 'female', item.pinyin)} style={s.audioBtn} activeOpacity={0.7}>
           <Text style={s.audioIcon}>🔊</Text>
         </TouchableOpacity>
       </View>
@@ -346,7 +441,7 @@ function WordArt({ word }) {
 }
 
 // "? + ? = one day" — fill each blank by tapping a character.
-function PatternQuiz({ quiz }) {
+function PatternQuiz({ quiz, pinyinFor }) {
   const [filled, setFilled] = useState([]);           // chars chosen so far
   const blanks = quiz.template.filter(t => t == null).length;
   const done = filled.length >= blanks;
@@ -357,7 +452,7 @@ function PatternQuiz({ quiz }) {
 
   // Speak the finished word as soon as it is built correctly.
   useEffect(() => {
-    if (done && correct) speakChinese(quiz.audio_text);
+    if (done && correct) speakChinese(quiz.audio_text, 'female', quiz.result_pinyin);
   }, [done, correct, quiz.audio_text]);
 
   // Walk the template, substituting chosen characters into the blanks in order.
@@ -395,7 +490,7 @@ function PatternQuiz({ quiz }) {
           <TouchableOpacity
             key={c}
             style={[s.charChoice, done && s.charChoiceIdle]}
-            onPress={() => { speakChinese(c); pick(c); }}
+            onPress={() => { speakChinese(c, 'female', pinyinFor?.(c)); pick(c); }}
             activeOpacity={0.8}
           >
             <Text style={s.charChoiceText}>{c}</Text>
@@ -415,7 +510,7 @@ function PatternQuiz({ quiz }) {
             </Text>
           </View>
           <View style={s.quizActions}>
-            <TouchableOpacity onPress={() => speakChinese(quiz.audio_text)} style={s.smallBtn} activeOpacity={0.85}>
+            <TouchableOpacity onPress={() => speakChinese(quiz.audio_text, 'female', quiz.result_pinyin)} style={s.smallBtn} activeOpacity={0.85}>
               <Text style={s.smallBtnText}>🔊</Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={reset} activeOpacity={0.7}>
@@ -428,7 +523,7 @@ function PatternQuiz({ quiz }) {
   );
 }
 
-function PatternCard({ item }) {
+function PatternCard({ item, pinyinFor }) {
   return (
     <View style={{ marginBottom: 20 }}>
       {/* The word itself, in its own big frame */}
@@ -443,7 +538,7 @@ function PatternCard({ item }) {
         <View style={s.titleRow}>
           <Text style={s.bigName}>{item.word}</Text>
           <Text style={s.bigPinyin}>{item.pinyin}</Text>
-          <TouchableOpacity onPress={() => speakChinese(item.audio_text)} style={s.audioBtn} activeOpacity={0.7}>
+          <TouchableOpacity onPress={() => speakChinese(item.audio_text, 'female', item.pinyin)} style={s.audioBtn} activeOpacity={0.7}>
             <Text style={s.audioIcon}>🔊</Text>
           </TouchableOpacity>
         </View>
@@ -455,7 +550,7 @@ function PatternCard({ item }) {
       {item.variations?.length > 1 && (
         <View style={s.varWrap}>
           {item.variations.map(v => (
-            <TouchableOpacity key={v.word} style={s.varPill} onPress={() => speakChinese(v.audio_text)} activeOpacity={0.8}>
+            <TouchableOpacity key={v.word} style={s.varPill} onPress={() => speakChinese(v.audio_text, 'female', v.pinyin)} activeOpacity={0.8}>
               <Text style={s.varCn}>{v.word}</Text>
               <Text style={s.varPy}>{v.pinyin}</Text>
               <Text style={s.varEnText}>{v.meaning}</Text>
@@ -464,7 +559,129 @@ function PatternCard({ item }) {
         </View>
       )}
 
-      {item.quiz && <PatternQuiz quiz={item.quiz} />}
+      {item.quiz && <PatternQuiz quiz={item.quiz} pinyinFor={pinyinFor} />}
+    </View>
+  );
+}
+
+// Optional block shown BELOW the word patterns, from part4_use.sentences.
+// The first point in the course where words are strung into a whole sentence,
+// so it shows the sentence, then takes it apart piece by piece.
+function SentenceCard({ item, pinyinFor }) {
+  const [picked, setPicked] = useState([]);
+  const quiz = item.quiz;
+  const blanks = quiz ? quiz.template.filter(t => t == null).length : 0;
+  const done = quiz ? picked.length >= blanks : false;
+  const correct = done && picked.every((c, i) => c === quiz.answer[i]);
+
+  useEffect(() => {
+    if (done && correct) speakChinese(quiz.audio_text, 'female', quiz.result_pinyin);
+  }, [done, correct, quiz?.audio_text]);
+
+  let blankIdx = -1;
+  const cells = (quiz?.template || []).map((t, i) => {
+    if (t != null) return { key: i, text: t, kind: 'fixed' };
+    blankIdx += 1;
+    const v = picked[blankIdx];
+    return { key: i, text: v || '?', kind: v ? 'filled' : 'blank', slot: blankIdx };
+  });
+
+  return (
+    <View style={{ marginBottom: 20 }}>
+      <View style={s.card}>
+        {item.intro ? <Text style={s.logicTag}>{item.intro}</Text> : null}
+
+        <View style={s.sentenceStage}>
+          <Text style={s.sentenceCn}>{item.sentence}</Text>
+          <Text style={s.sentencePy}>{item.pinyin}</Text>
+          <TouchableOpacity
+            onPress={() => speakChinese(item.audio_text, 'female', item.pinyin)}
+            style={s.sentenceAudioBtn}
+            activeOpacity={0.85}
+          >
+            <Text style={s.sentenceAudioText}>🔊  Listen</Text>
+          </TouchableOpacity>
+        </View>
+
+        <Text style={s.meaningEn}>{item.meaning}</Text>
+
+        {/* The sentence taken apart, in reading order. */}
+        <View style={s.breakdownRow}>
+          {(item.breakdown || []).map((b, i) => (
+            <React.Fragment key={`${b.part}-${i}`}>
+              {i > 0 && <Text style={s.breakdownArrow}>›</Text>}
+              <TouchableOpacity
+                style={s.breakdownChip}
+                onPress={() => speakChinese(b.audio_text || b.part, 'female', b.pinyin)}
+                activeOpacity={0.8}
+              >
+                <Text style={s.breakdownRole}>{b.role}</Text>
+                <Text style={s.breakdownCn}>{b.part}</Text>
+                <Text style={s.breakdownPy}>{b.pinyin}</Text>
+                <Text style={s.breakdownEn}>{b.meaning}</Text>
+              </TouchableOpacity>
+            </React.Fragment>
+          ))}
+        </View>
+
+        {item.note ? <Text style={s.body}>{item.note}</Text> : null}
+      </View>
+
+      {quiz && (
+        <View style={s.quizCard}>
+          <View style={s.equationRow}>
+            {cells.map(c => (
+              <View
+                key={c.key}
+                style={[
+                  s.eqCell, s.eqCellWide,
+                  c.kind === 'blank' && s.eqCellBlank,
+                  c.kind === 'filled' && (
+                    done ? (picked[c.slot] === quiz.answer[c.slot] ? s.eqCellRight : s.eqCellWrong) : s.eqCellFilled
+                  ),
+                ]}
+              >
+                <Text style={s.eqCellText}>{c.text}</Text>
+              </View>
+            ))}
+          </View>
+
+          <View style={s.choiceRow}>
+            {quiz.choices.map(c => (
+              <TouchableOpacity
+                key={c}
+                style={[s.charChoice, done && s.charChoiceIdle]}
+                onPress={() => { speakChinese(c, 'female', pinyinFor?.(c)); if (!done) setPicked([...picked, c]); }}
+                activeOpacity={0.8}
+              >
+                <Text style={s.charChoiceText}>{c}</Text>
+                <Text style={s.charChoiceAudio}>🔊</Text>
+              </TouchableOpacity>
+            ))}
+          </View>
+
+          {done && (
+            <>
+              <View style={[s.feedback, correct ? s.feedbackRight : s.feedbackWrong]}>
+                <Text style={s.feedbackIcon}>{correct ? '✓' : '✕'}</Text>
+                <Text style={[s.feedbackText, correct ? s.feedbackTextRight : s.feedbackTextWrong]}>
+                  {correct
+                    ? `${quiz.result_word} — ${quiz.result_meaning}`
+                    : `Not quite — the answer is ${quiz.answer.join(' ')}`}
+                </Text>
+              </View>
+              <View style={s.quizActions}>
+                <TouchableOpacity onPress={() => speakChinese(quiz.audio_text, 'female', quiz.result_pinyin)} style={s.smallBtn} activeOpacity={0.85}>
+                  <Text style={s.smallBtnText}>🔊</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => setPicked([])} activeOpacity={0.7}>
+                  <Text style={s.replayLink}>↻ try again</Text>
+                </TouchableOpacity>
+              </View>
+            </>
+          )}
+        </View>
+      )}
     </View>
   );
 }
@@ -489,10 +706,11 @@ function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasS
 
   const char = chars[idx];
 
-  // Say each character as it comes up, so the sound is attached to the writing.
-  useEffect(() => { if (char) speakChinese(char); }, [char]);
   const info = infoFor(char) || {};
   const last = idx >= chars.length - 1;
+
+  // Say each character as it comes up, so the sound is attached to the writing.
+  useEffect(() => { if (char) speakChinese(char, 'female', info.pinyin); }, [char, info.pinyin]);
 
   const [finished, setFinished] = useState(false);
   const [rewrites, setRewrites] = useState(0);
@@ -500,7 +718,7 @@ function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasS
   const handleComplete = () => {
     if (advancing.current) return;
     advancing.current = true;
-    speakChinese(char);
+    speakChinese(char, 'female', info.pinyin);
     // Let the finished character register before moving on.
     setTimeout(() => {
       advancing.current = false;
@@ -551,7 +769,7 @@ function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasS
           <View style={s.titleRow}>
             <Text style={s.bigName}>{char}</Text>
             {!!info.pinyin && <Text style={s.bigPinyin}>{info.pinyin}</Text>}
-            <TouchableOpacity onPress={() => speakChinese(char)} style={s.audioBtn} activeOpacity={0.7}>
+            <TouchableOpacity onPress={() => speakChinese(char, 'female', info.pinyin)} style={s.audioBtn} activeOpacity={0.7}>
               <Text style={s.audioIcon}>🔊</Text>
             </TouchableOpacity>
           </View>
@@ -600,9 +818,33 @@ export default function CharacterLessonScreen({
   const p5 = lc.part5_write    || {};
 
   // Pinyin/meaning for the Write part come from the characters taught in Part 3.
-  const charInfo = Object.fromEntries(
-    (p3.characters || []).map(c => [c.character, { pinyin: c.pinyin, meaning: c.meaning }]),
-  );
+  // Part 5 writes characters that Part 3 may never have read, so gather
+  // readings from every part that introduces one.
+  const charInfo = {
+    ...Object.fromEntries((p1.strokes || []).map(x =>
+      [x.example_char, { pinyin: x.example_pinyin, meaning: x.example_meaning }])),
+    ...Object.fromEntries((p2.rules || []).map(r =>
+      [r.result_char, { pinyin: r.result_pinyin, meaning: r.result_meaning }])),
+    ...Object.fromEntries((p3.characters || []).map(c =>
+      [c.character, { pinyin: c.pinyin, meaning: c.meaning }])),
+  };
+
+  // Every reading this lesson knows, so audio never has to guess at a
+  // polyphonic character like 子 (zǐ alone, neutral in 儿子) or 了.
+  const pinyinMap = {
+    ...Object.fromEntries((p1.strokes || []).map(x => [x.example_char, x.example_pinyin])),
+    ...Object.fromEntries((p2.rules || []).map(r => [r.result_char, r.result_pinyin])),
+    ...Object.fromEntries((p3.characters || []).map(c => [c.character, c.pinyin])),
+    ...Object.fromEntries((p4.patterns || []).map(x => [x.word, x.pinyin])),
+    ...Object.fromEntries((p4.patterns || []).flatMap(x => (x.variations || []).map(v => [v.word, v.pinyin]))),
+    // Multi-character pieces of a sentence (没有, 说话) need their own reading —
+    // speaking them character by character gets the tones wrong.
+    ...Object.fromEntries((p4.sentences || []).flatMap(st => (st.breakdown || []).map(b => [b.part, b.pinyin]))),
+    ...Object.fromEntries((p2.structure?.examples || []).map(ex => [ex.character, ex.pinyin])),
+  };
+  // Fall back to the course-wide lookup: a lesson often uses a character
+  // taught elsewhere (Lesson 4's 儿子 needs 子 from Lesson 6).
+  const pinyinFor = (t) => pinyinMap[t] || getCharacterReading(t);
 
   // Every Learn part except Write. If these are all ticked, finishing Write
   // completes the section, so its button can head straight for Practice.
@@ -627,12 +869,29 @@ export default function CharacterLessonScreen({
     },
     {
       part: p2,
-      // Keyed on the character, not the rule — one rule can produce several
-      // characters (先中间后两边 covers 山, 小 and 少).
-      body: (p2.rules || []).map((r, i) => <RuleCard key={`${r.result_char}-${i}`} item={r} />),
+      // Structure comes first when a lesson teaches one: you cannot follow a
+      // left-before-right rule until you can see which part is the left.
+      // Rules are keyed on the character, not the rule — one rule can produce
+      // several characters (先中间后两边 covers 山, 小 and 少).
+      body: (
+        <>
+          {p2.structure && <StructureCard item={p2.structure} />}
+          {(p2.rules || []).map((r, i) => <RuleCard key={`${r.result_char}-${i}`} item={r} />)}
+        </>
+      ),
     },
     { part: p3, body: (p3.characters || []).map(c => <BuildCard key={c.character} item={c} />) },
-    { part: p4, body: (p4.patterns || []).map(pt => <PatternCard key={pt.word} item={pt} />) },
+    {
+      part: p4,
+      body: (
+        <>
+          {(p4.patterns || []).map(pt => <PatternCard key={pt.word} item={pt} pinyinFor={pinyinFor} />)}
+          {(p4.sentences || []).map((st, i) => (
+            <SentenceCard key={`${st.sentence}-${i}`} item={st} pinyinFor={pinyinFor} />
+          ))}
+        </>
+      ),
+    },
     ...((p5.characters || []).length
       ? [{
           part: p5,
@@ -963,13 +1222,13 @@ const s = StyleSheet.create({
   strokeChoiceWide: { width: CHOICE_ART * 2 + 36 },
   strokeChoiceIdle: { opacity: 0.5 },
   textChoice: {
-    minWidth: 76, paddingHorizontal: 16, paddingVertical: 10, borderRadius: 12,
+    minWidth: 92, paddingHorizontal: 18, paddingVertical: 12, borderRadius: 12,
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.30)', backgroundColor: CARD_WHITE,
     alignItems: 'center',
   },
-  textChoiceLabel:  { fontSize: 22, fontWeight: '800', color: DEEP_NAVY },
-  textChoicePinyin: { fontSize: 13, color: WARM_BROWN, marginTop: 1 },
-  textChoiceAudio:  { fontSize: 18, marginTop: 3 },
+  textChoiceLabel:  { fontSize: 28, lineHeight: 36, fontWeight: '800', color: DEEP_NAVY },
+  textChoicePinyin: { fontSize: 16, color: WARM_BROWN, marginTop: 2 },
+  textChoiceAudio:  { fontSize: 20, marginTop: 3 },
   choiceRight:  { backgroundColor: 'rgba(46,125,50,0.18)', borderColor: SUCCESS, borderWidth: 2.5 },
   choiceWrong:  { backgroundColor: 'rgba(196,80,58,0.15)', borderColor: '#C4503A', borderWidth: 2.5 },
   choiceMark:       { position: 'absolute', top: 2, right: 5, fontSize: 15, fontWeight: '900', color: DEEP_NAVY },
@@ -1066,6 +1325,68 @@ const s = StyleSheet.create({
   miniCrossV: { position: 'absolute', left: '50%', top: 0, bottom: 0, width: 1, backgroundColor: 'rgba(196,80,58,0.25)' },
   miniCrossH: { position: 'absolute', top: '50%', left: 0, right: 0, height: 1, backgroundColor: 'rgba(196,80,58,0.25)' },
 
+  // Part 2 · character structure (左右结构), shown before the writing rules
+  structureCard: { borderColor: WARM_ORANGE, borderWidth: 1.5 },
+  structureRule: {
+    backgroundColor: '#FFF3E0', borderRadius: 10, padding: 12, gap: 3,
+    borderLeftWidth: 4, borderLeftColor: WARM_ORANGE,
+  },
+  structureRuleCn: { fontSize: 19, fontWeight: '900', color: DEEP_NAVY },
+  structureRuleEn: { fontSize: 14, color: SLATE_TEAL },
+  structureQ:      { fontSize: 16, fontWeight: '800', color: DEEP_NAVY },
+
+  splitRow: {
+    flexDirection: 'row', alignItems: 'center', gap: 8,
+    backgroundColor: '#FFF8ED', borderRadius: 12, padding: 10,
+  },
+  splitBox: {
+    flexDirection: 'row', alignItems: 'stretch', height: 54,
+    borderRadius: 8, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.35)',
+    backgroundColor: CARD_WHITE, overflow: 'hidden',
+  },
+  splitHalf:    { minWidth: 32, paddingHorizontal: 6, alignItems: 'center', justifyContent: 'center' },
+  splitDivider: { width: 1.5, backgroundColor: 'rgba(155,104,70,0.35)' },
+  splitPart:    { fontSize: 24, fontWeight: '800', color: WARM_BROWN },
+  splitEquals:  { fontSize: 16, fontWeight: '800', color: SLATE_TEAL },
+  splitWhole:   { alignItems: 'center', minWidth: 44 },
+  splitWholeChar: { fontSize: 32, fontWeight: '900', color: DEEP_NAVY },
+  splitWholePy:   { fontSize: 12, color: WARM_BROWN },
+  splitNotes:   { flex: 1, gap: 1 },
+  splitNote:    { fontSize: 14, fontWeight: '700', color: WARM_ORANGE },
+  splitNoteDim: { fontSize: 12, color: SLATE_TEAL, lineHeight: 16 },
+
+  contrastBox: {
+    flexDirection: 'row', alignItems: 'flex-start', gap: 12,
+    backgroundColor: 'rgba(55,73,80,0.06)', borderRadius: 12, padding: 12,
+  },
+  contrastChars: { fontSize: 26, fontWeight: '900', color: DEEP_NAVY, letterSpacing: 2 },
+
+  // Part 4 · a whole sentence
+  sentenceStage: {
+    alignSelf: 'stretch', alignItems: 'center', gap: 6,
+    backgroundColor: '#FFF8ED', borderRadius: 14, paddingVertical: 18, paddingHorizontal: 12,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)',
+  },
+  sentenceCn: { fontSize: 32, fontWeight: '900', color: DEEP_NAVY, textAlign: 'center', letterSpacing: 1 },
+  sentencePy: { fontSize: 16, fontWeight: '600', color: WARM_BROWN, textAlign: 'center' },
+  sentenceAudioBtn: {
+    marginTop: 4, paddingHorizontal: 18, paddingVertical: 9, borderRadius: 20,
+    backgroundColor: WARM_BROWN,
+  },
+  sentenceAudioText: { fontSize: 15, fontWeight: '800', color: CARD_WHITE },
+
+  breakdownRow:   { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 6 },
+  breakdownArrow: { fontSize: 18, fontWeight: '900', color: SLATE_TEAL },
+  breakdownChip: {
+    flexGrow: 1, alignItems: 'center', paddingHorizontal: 10, paddingVertical: 8,
+    borderRadius: 12, borderWidth: 1, borderColor: 'rgba(155,104,70,0.25)',
+    backgroundColor: CARD_WHITE,
+  },
+  breakdownRole: { fontSize: 11, fontWeight: '700', color: SLATE_TEAL, textTransform: 'uppercase', letterSpacing: 0.5 },
+  breakdownCn:   { fontSize: 22, fontWeight: '900', color: DEEP_NAVY, marginTop: 2 },
+  breakdownPy:   { fontSize: 13, color: WARM_BROWN },
+  breakdownEn:   { fontSize: 13, fontWeight: '700', color: WARM_ORANGE },
+
   logicTag: {
     alignSelf: 'flex-start', fontSize: 13, fontWeight: '700', color: WARM_BROWN,
     backgroundColor: '#FFF3E0', borderRadius: 8, paddingHorizontal: 10, paddingVertical: 5,
@@ -1101,7 +1422,7 @@ const s = StyleSheet.create({
     flexWrap: 'wrap', gap: 6,
   },
   eqCell: {
-    minWidth: 52, height: 52, borderRadius: 10,
+    minWidth: 60, height: 60, borderRadius: 10,
     alignItems: 'center', justifyContent: 'center',
     backgroundColor: '#FFF8ED', borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.25)',
   },
@@ -1117,19 +1438,21 @@ const s = StyleSheet.create({
   eqCellFilled: { borderColor: WARM_ORANGE },
   eqCellRight:  { backgroundColor: 'rgba(46,125,50,0.18)', borderColor: SUCCESS },
   eqCellWrong:  { backgroundColor: 'rgba(196,80,58,0.15)', borderColor: '#C4503A' },
-  eqCellText:   { fontSize: 26, fontWeight: '900', color: DEEP_NAVY },
+  eqCellText:   { fontSize: 30, fontWeight: '900', color: DEEP_NAVY },
+  // A sentence blank holds a whole word, not one character.
+  eqCellWide:   { paddingHorizontal: 10 },
   eqPlus:       { fontSize: 18, fontWeight: '800', color: SLATE_TEAL },
   eqEquals:     { fontSize: 18, fontWeight: '800', color: SLATE_TEAL, marginHorizontal: 2 },
   eqMeaning:    { fontSize: 16, fontWeight: '700', color: WARM_ORANGE },
 
   charChoice: {
-    minWidth: 64, paddingHorizontal: 14, paddingVertical: 10, borderRadius: 12,
+    minWidth: 78, paddingHorizontal: 16, paddingVertical: 12, borderRadius: 12,
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.30)', backgroundColor: CARD_WHITE,
     alignItems: 'center',
   },
   charChoiceIdle:  { opacity: 0.5 },
-  charChoiceText:  { fontSize: 26, fontWeight: '900', color: DEEP_NAVY },
-  charChoiceAudio: { fontSize: 13, marginTop: 2 },
+  charChoiceText:  { fontSize: 32, lineHeight: 40, fontWeight: '900', color: DEEP_NAVY },
+  charChoiceAudio: { fontSize: 15, marginTop: 2 },
   quizActions: { flexDirection: 'row', alignItems: 'center', gap: 14 },
 
   // Slide navigation (inside the scroll content)

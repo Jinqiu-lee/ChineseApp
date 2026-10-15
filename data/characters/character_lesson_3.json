@@ -1190,6 +1190,75 @@
         "太小",
         "太少"
       ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "小火",
+      "audio_text": "小火",
+      "correct": "a small fire",
+      "choices": [
+        "a small fire",
+        "too big",
+        "too small",
+        "too few"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "小火",
+      "correct": "小火",
+      "choices": [
+        "小火",
+        "太大",
+        "太小",
+        "太少"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "四月",
+      "audio_text": "四月",
+      "correct": "April",
+      "choices": [
+        "April",
+        "too big",
+        "too small",
+        "too few"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "四月",
+      "correct": "四月",
+      "choices": [
+        "四月",
+        "太大",
+        "太小",
+        "太少"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "四个人",
+      "audio_text": "四个人",
+      "correct": "four people",
+      "choices": [
+        "four people",
+        "too big",
+        "too small",
+        "too few"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "四个人",
+      "correct": "四个人",
+      "choices": [
+        "四个人",
+        "太大",
+        "太小",
+        "太少"
+      ]
     }
   ]
 }

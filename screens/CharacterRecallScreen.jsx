@@ -7,6 +7,7 @@ import { StrokeCombo } from '../components/characters/StrokeVisual';
 import StrokeWriter from '../components/characters/StrokeWriter';
 import { PRACTICE_STAGES, questionsForStage, buildLessonQuiz } from '../data/characters/practiceStages';
 import { getStrokePinyin } from '../data/characters/strokeAssets';
+import { getCharacterReading } from '../data/characters';
 import { speakChinese } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
 
@@ -78,7 +79,7 @@ export default function CharacterRecallScreen({
     [lessonData, stageIndex, quiz],
   );
   const pinyinMap = useMemo(() => buildPinyinMap(lessonData), [lessonData]);
-  const pinyinFor = (t) => pinyinMap[t] || getStrokePinyin(t) || '';
+  const pinyinFor = (t) => pinyinMap[t] || getCharacterReading(t) || getStrokePinyin(t) || '';
 
   const [index, setIndex]     = useState(0);
   const [picked, setPicked]   = useState(null);
@@ -97,10 +98,10 @@ export default function CharacterRecallScreen({
   // a voice does, since the quiz is meant to exercise listening throughout.
   useEffect(() => {
     if (!q) return;
-    if (q.type === 'write') { speakChinese(q.char); return; }
+    if (q.type === 'write') { speakChinese(q.char, 'female', pinyinFor(q.char)); return; }
     const sayable = q.audio_text || (hasHan(q.prompt_char) ? q.prompt_char : null);
     if (!sayable) return;
-    if (quiz || AUTOPLAY_TYPES.has(q.type)) speakChinese(sayable);
+    if (quiz || AUTOPLAY_TYPES.has(q.type)) speakChinese(sayable, 'female', pinyinFor(sayable));
   }, [index, q, quiz]);
 
   if (!q && !showResult) return null;
@@ -109,7 +110,7 @@ export default function CharacterRecallScreen({
     if (picked != null) return;
     setPicked(choice);
     if (choice === q.correct) setScore(s => s + 1);
-    if (q.audio_text) speakChinese(q.audio_text);
+    if (q.audio_text) speakChinese(q.audio_text, 'female', pinyinFor(q.audio_text));
   };
 
   // Writing a character counts as getting it right — the value is in doing it.
@@ -166,7 +167,7 @@ export default function CharacterRecallScreen({
     switch (q.type) {
       case 'audio_to_char':
         return (
-          <TouchableOpacity style={s.audioBig} onPress={() => speakChinese(q.audio_text)} activeOpacity={0.8}>
+          <TouchableOpacity style={s.audioBig} onPress={() => speakChinese(q.audio_text, 'female', pinyinFor(q.audio_text))} activeOpacity={0.8}>
             <Text style={s.audioBigIcon}>🔊</Text>
           </TouchableOpacity>
         );
@@ -215,7 +216,7 @@ export default function CharacterRecallScreen({
             {hasHan(q.prompt_char) && (
               <TouchableOpacity
                 style={s.promptAudioBtn}
-                onPress={() => speakChinese(q.audio_text || q.prompt_char)}
+                onPress={() => speakChinese(q.audio_text || q.prompt_char, 'female', pinyinFor(q.audio_text || q.prompt_char))}
                 activeOpacity={0.8}
               >
                 <Text style={s.promptAudioText}>🔊</Text>
@@ -249,7 +250,7 @@ export default function CharacterRecallScreen({
             <View style={s.writeHead}>
               <Text style={s.writeChar}>{q.char}</Text>
               <Text style={s.writePinyin}>{pinyinFor(q.char)}</Text>
-              <TouchableOpacity onPress={() => speakChinese(q.char)} activeOpacity={0.7}>
+              <TouchableOpacity onPress={() => speakChinese(q.char, 'female', pinyinFor(q.char))} activeOpacity={0.7}>
                 <Text style={s.writeAudio}>🔊</Text>
               </TouchableOpacity>
             </View>
@@ -346,7 +347,7 @@ export default function CharacterRecallScreen({
                   </View>
                   {canSpeak && (
                     <TouchableOpacity
-                      onPress={() => speakChinese(c)}
+                      onPress={() => speakChinese(c, 'female', pinyinFor(c))}
                       style={s.choiceAudioBtn}
                       activeOpacity={0.6}
                       hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
@@ -452,22 +453,22 @@ const s = StyleSheet.create({
   choices: { width: '100%', gap: 10, marginTop: 22 },
   choice: {
     flexDirection: 'row', alignItems: 'center',
-    backgroundColor: CARD_WHITE, borderRadius: 14, paddingVertical: 14, paddingHorizontal: 18,
+    backgroundColor: CARD_WHITE, borderRadius: 14, paddingVertical: 17, paddingHorizontal: 18,
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.22)',
   },
-  choiceCompact: { paddingVertical: 8, paddingHorizontal: 14 },
+  choiceCompact: { paddingVertical: 10, paddingHorizontal: 14 },
   choiceMain:   { flex: 1, alignItems: 'center' },
   choiceRight:  { backgroundColor: 'rgba(46,125,50,0.18)', borderColor: SUCCESS, borderWidth: 2.5 },
   choiceWrong:  { backgroundColor: 'rgba(196,80,58,0.15)', borderColor: '#C4503A', borderWidth: 2.5 },
-  choiceText:   { fontSize: 20, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center' },
+  choiceText:   { fontSize: 26, lineHeight: 34, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center' },
   // Listen→Character and Pinyin→Character: the glyph is the whole answer.
-  choiceTextBig: { fontSize: 28, lineHeight: 36 },
+  choiceTextBig: { fontSize: 34, lineHeight: 44 },
   // Dashed underline signals "tap me for the reading", Duolingo-style.
   choiceHintable: {
     borderBottomWidth: 1.5, borderBottomColor: SLATE_TEAL, borderStyle: 'dashed',
     paddingBottom: 2,
   },
-  choicePinyin: { fontSize: 14, color: WARM_BROWN, marginTop: 3, textAlign: 'center' },
+  choicePinyin: { fontSize: 17, color: WARM_BROWN, marginTop: 4, textAlign: 'center' },
   choiceAudioBtn:  { paddingLeft: 10 },
   choiceAudioIcon: { fontSize: 22 },
 

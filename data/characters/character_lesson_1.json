@@ -984,6 +984,98 @@
         "撇",
         "捺"
       ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "八天",
+      "audio_text": "八天",
+      "correct": "eight days",
+      "choices": [
+        "eight days",
+        "three days",
+        "ten days",
+        "one day"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "八天",
+      "correct": "八天",
+      "choices": [
+        "八天",
+        "三天",
+        "十天",
+        "一天"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "一天",
+      "audio_text": "一天",
+      "correct": "one day",
+      "choices": [
+        "one day",
+        "three days",
+        "eight days",
+        "ten days"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "一天",
+      "correct": "一天",
+      "choices": [
+        "一天",
+        "三天",
+        "八天",
+        "十天"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "十个人",
+      "audio_text": "十个人",
+      "correct": "ten people",
+      "choices": [
+        "ten people",
+        "one person",
+        "eight people",
+        "three people"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "十个人",
+      "correct": "十个人",
+      "choices": [
+        "十个人",
+        "一个人",
+        "八个人",
+        "三个人"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "三个人",
+      "audio_text": "三个人",
+      "correct": "three people",
+      "choices": [
+        "three people",
+        "one person",
+        "eight people",
+        "ten people"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "三个人",
+      "correct": "三个人",
+      "choices": [
+        "三个人",
+        "一个人",
+        "八个人",
+        "十个人"
+      ]
     }
   ]
 }

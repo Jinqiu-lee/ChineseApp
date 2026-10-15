@@ -7,6 +7,9 @@ import characterLesson2 from './character_lesson_2.json';
 import characterLesson3 from './character_lesson_3.json';
 import characterLesson4 from './character_lesson_4.json';
 import characterLesson5 from './character_lesson_5.json';
+import characterLesson6 from './character_lesson_6.json';
+import characterLesson7 from './character_lesson_7.json';
+import characterLesson8 from './character_lesson_8.json';
 
 export const CHARACTER_LESSONS = {
   1: characterLesson1,
@@ -14,6 +17,9 @@ export const CHARACTER_LESSONS = {
   3: characterLesson3,
   4: characterLesson4,
   5: characterLesson5,
+  6: characterLesson6,
+  7: characterLesson7,
+  8: characterLesson8,
 };
 
 export const TOTAL_CHARACTER_LESSONS = 20;
@@ -31,6 +37,25 @@ export const CHARACTER_LESSON_PREVIEWS = [
     subtitle: 'Coming soon',
   })),
 ];
+
+// Every character reading the course knows, from whichever lesson teaches it.
+// A lesson often uses a character it did not introduce — Lesson 4's 儿子 needs
+// 子, which is taught in Lesson 6 — and polyphonic characters like 子 (zǐ alone,
+// neutral in 儿子) cannot be read correctly without it.
+const COURSE_READINGS = (() => {
+  const m = {};
+  for (const lesson of Object.values(CHARACTER_LESSONS)) {
+    const lc = lesson.learn_content || {};
+    (lc.part1_discover?.strokes || []).forEach(x => { m[x.example_char] = x.example_pinyin; });
+    (lc.part2_build?.rules || []).forEach(r => { m[r.result_char] = r.result_pinyin; });
+    (lc.part3_read?.characters || []).forEach(c => { m[c.character] = c.pinyin; });
+  }
+  return m;
+})();
+
+export function getCharacterReading(char) {
+  return COURSE_READINGS[char];
+}
 
 export function getCharacterLesson(id) {
   return CHARACTER_LESSONS[id] || null;

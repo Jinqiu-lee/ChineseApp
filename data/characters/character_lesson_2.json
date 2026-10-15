@@ -1034,6 +1034,121 @@
         "三月",
         "十月"
       ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "八月",
+      "audio_text": "八月",
+      "correct": "August",
+      "choices": [
+        "August",
+        "June",
+        "March",
+        "October"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "八月",
+      "correct": "八月",
+      "choices": [
+        "八月",
+        "六月",
+        "三月",
+        "十月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "五月",
+      "audio_text": "五月",
+      "correct": "May",
+      "choices": [
+        "May",
+        "June",
+        "March",
+        "August"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "五月",
+      "correct": "五月",
+      "choices": [
+        "五月",
+        "六月",
+        "三月",
+        "八月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "五个月",
+      "audio_text": "五个月",
+      "correct": "five months",
+      "choices": [
+        "five months",
+        "six months",
+        "one month",
+        "eight months"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "五个月",
+      "correct": "五个月",
+      "choices": [
+        "五个月",
+        "六个月",
+        "一个月",
+        "八个月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "八个月",
+      "audio_text": "八个月",
+      "correct": "eight months",
+      "choices": [
+        "eight months",
+        "six months",
+        "one month",
+        "five months"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "八个月",
+      "correct": "八个月",
+      "choices": [
+        "八个月",
+        "六个月",
+        "一个月",
+        "五个月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "三个月",
+      "audio_text": "三个月",
+      "correct": "three months",
+      "choices": [
+        "three months",
+        "six months",
+        "one month",
+        "five months"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "三个月",
+      "correct": "三个月",
+      "choices": [
+        "三个月",
+        "六个月",
+        "一个月",
+        "五个月"
+      ]
     }
   ]
 }

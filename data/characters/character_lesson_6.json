@@ -1,0 +1,1160 @@
+{
+  "id": 6,
+  "title": "Characters Combine Meanings",
+  "emoji": "💗",
+  "subtitle": "卧钩 斜钩 横钩 弯钩 · 心 子 我 手 好 了",
+  "description": "Four hooked strokes, and characters built by putting two meanings side by side: 女 and 子 together make 好.",
+  "new_strokes": [
+    "卧钩",
+    "斜钩",
+    "横钩",
+    "弯钩"
+  ],
+  "new_characters": [
+    "心",
+    "子",
+    "我",
+    "手",
+    "好",
+    "了"
+  ],
+  "new_words": [
+    "小心",
+    "手心",
+    "女儿",
+    "女子",
+    "子女",
+    "好人",
+    "你好"
+  ],
+  "learn_content": {
+    "part1_discover": {
+      "title": "Discover",
+      "subtitle": "Four hooked strokes",
+      "intro": "Each of these ends by flicking the brush away.",
+      "strokes": [
+        {
+          "stroke": "卧钩",
+          "pinyin": "wògōu",
+          "name_en": "reclining hook",
+          "direction": "curving right, then hook up",
+          "explanation": "卧钩 = a stroke that lies down and lifts at the end.",
+          "audio_text": "卧钩",
+          "example_char": "心",
+          "example_pinyin": "xīn",
+          "example_meaning": "heart",
+          "example_note": "心's second stroke is the long 卧钩 that holds the dots.",
+          "example_stroke_order": [
+            "点",
+            "卧钩",
+            "点",
+            "点"
+          ]
+        },
+        {
+          "stroke": "斜钩",
+          "pinyin": "xiégōu",
+          "name_en": "slanting hook",
+          "direction": "down-right, then hook up",
+          "explanation": "斜钩 = a long diagonal that hooks upward at the end.",
+          "audio_text": "斜钩",
+          "example_char": "我",
+          "example_pinyin": "wǒ",
+          "example_meaning": "I / me",
+          "example_note": "我's long sweep to the right is a 斜钩.",
+          "example_stroke_order": [
+            "撇",
+            "横",
+            "竖勾",
+            "提",
+            "斜钩",
+            "撇",
+            "点"
+          ]
+        },
+        {
+          "stroke": "横钩",
+          "pinyin": "hénggōu",
+          "name_en": "horizontal with hook",
+          "direction": "left → right, then hook down",
+          "explanation": "横钩 = a 横 that drops into a small hook at its end.",
+          "audio_text": "横钩",
+          "example_char": "了",
+          "example_pinyin": "le",
+          "example_meaning": "(completed action)",
+          "example_note": "了 is just a 横钩 and a 弯钩 — two strokes, nothing else.",
+          "example_stroke_order": [
+            "横钩",
+            "弯钩"
+          ]
+        },
+        {
+          "stroke": "弯钩",
+          "pinyin": "wāngōu",
+          "name_en": "curved hook",
+          "direction": "down with a curve, then hook left",
+          "explanation": "弯钩 = a 竖 that bows gently before hooking.",
+          "audio_text": "弯钩",
+          "example_char": "子",
+          "example_pinyin": "zǐ",
+          "example_meaning": "child",
+          "example_note": "子's middle stroke curves down: 弯钩.",
+          "example_stroke_order": [
+            "横钩",
+            "弯钩",
+            "横"
+          ]
+        }
+      ],
+      "recognition_check": [
+        {
+          "show_stroke": "卧钩",
+          "choices": [
+            "卧钩",
+            "斜钩",
+            "弯钩",
+            "竖勾"
+          ],
+          "correct": "卧钩"
+        },
+        {
+          "show_stroke": "斜钩",
+          "choices": [
+            "卧钩",
+            "斜钩",
+            "弯钩",
+            "捺"
+          ],
+          "correct": "斜钩"
+        },
+        {
+          "show_stroke": "横钩",
+          "choices": [
+            "横钩",
+            "横折",
+            "卧钩",
+            "弯钩"
+          ],
+          "correct": "横钩"
+        },
+        {
+          "show_stroke": "弯钩",
+          "choices": [
+            "卧钩",
+            "斜钩",
+            "弯钩",
+            "竖"
+          ],
+          "correct": "弯钩"
+        }
+      ]
+    },
+    "part2_build": {
+      "title": "Build",
+      "subtitle": "Six characters, in order",
+      "intro": "Two of these are made of parts you already know.",
+      "rules": [
+        {
+          "rule": "先左后右",
+          "rule_pinyin": "xiān zuǒ hòu yòu",
+          "rule_en": "Left before right",
+          "audio_text": "先左后右",
+          "choices": [
+            "点",
+            "卧钩",
+            "横",
+            "竖"
+          ],
+          "correct": "点",
+          "result_char": "心",
+          "result_pinyin": "xīn",
+          "result_meaning": "heart",
+          "stroke_order": [
+            "点",
+            "卧钩",
+            "点",
+            "点"
+          ],
+          "explanation": "The left dot, the long hook, then the two dots above it."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "横钩",
+            "弯钩",
+            "横",
+            "点"
+          ],
+          "correct": "横钩",
+          "result_char": "子",
+          "result_pinyin": "zǐ",
+          "result_meaning": "child",
+          "stroke_order": [
+            "横钩",
+            "弯钩",
+            "横"
+          ],
+          "explanation": "Head, body, then the arms across."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "横钩",
+            "弯钩",
+            "横",
+            "竖"
+          ],
+          "correct": "横钩",
+          "result_char": "了",
+          "result_pinyin": "le",
+          "result_meaning": "(completed action)",
+          "stroke_order": [
+            "横钩",
+            "弯钩"
+          ],
+          "explanation": "子 without its arms — only two strokes."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "撇",
+            "横",
+            "弯钩",
+            "点"
+          ],
+          "correct": "撇",
+          "result_char": "手",
+          "result_pinyin": "shǒu",
+          "result_meaning": "hand",
+          "stroke_order": [
+            "撇",
+            "横",
+            "横",
+            "弯钩"
+          ],
+          "explanation": "Three lines across, then the hook straight down."
+        },
+        {
+          "rule": "先左后右",
+          "rule_pinyin": "xiān zuǒ hòu yòu",
+          "rule_en": "Left before right",
+          "audio_text": "先左后右",
+          "choices": [
+            "撇",
+            "横",
+            "竖勾",
+            "提",
+            "斜钩",
+            "点"
+          ],
+          "correct": "撇",
+          "result_char": "我",
+          "result_pinyin": "wǒ",
+          "result_meaning": "I / me",
+          "stroke_order": [
+            "撇",
+            "横",
+            "竖勾",
+            "提",
+            "斜钩",
+            "撇",
+            "点"
+          ],
+          "explanation": "Build the left side first, then the long 斜钩 and its two marks."
+        },
+        {
+          "rule": "先左后右",
+          "rule_pinyin": "xiān zuǒ hòu yòu",
+          "rule_en": "Left before right",
+          "audio_text": "先左后右",
+          "choices": [
+            "撇点",
+            "撇",
+            "提",
+            "横钩",
+            "弯钩",
+            "横"
+          ],
+          "correct": "撇点",
+          "result_char": "好",
+          "result_pinyin": "hǎo",
+          "result_meaning": "good",
+          "stroke_order": [
+            "撇点",
+            "撇",
+            "提",
+            "横钩",
+            "弯钩",
+            "横"
+          ],
+          "explanation": "All of 女 first, then all of 子. As a left-hand radical 女 ends in a 提 (tí) that lifts towards the 子."
+        }
+      ]
+    },
+    "part3_read": {
+      "title": "Read",
+      "subtitle": "Two meanings in one character",
+      "intro": "Put two characters together and their meanings combine.",
+      "characters": [
+        {
+          "character": "子",
+          "pinyin": "zǐ",
+          "meaning": "child",
+          "stroke_order": [
+            "横钩",
+            "弯钩",
+            "横"
+          ],
+          "stroke_count": 3,
+          "built_from": "横折 + 弯钩 + 横",
+          "note": "A swaddled infant: big head, small body, arms out.",
+          "predict": {
+            "shown": 2,
+            "choices": [
+              "横",
+              "点",
+              "撇",
+              "竖"
+            ],
+            "correct": "横"
+          }
+        },
+        {
+          "character": "好",
+          "pinyin": "hǎo",
+          "meaning": "good",
+          "stroke_order": [
+            "撇点",
+            "撇",
+            "提",
+            "横钩",
+            "弯钩",
+            "横"
+          ],
+          "stroke_count": 6,
+          "built_from": "女 + 子",
+          "note": "A woman beside her child. Both meanings are kept, and together they mean good.",
+          "predict": {
+            "shown": 5,
+            "choices": [
+              "横",
+              "点",
+              "撇",
+              "竖"
+            ],
+            "correct": "横"
+          }
+        }
+      ]
+    },
+    "part4_use": {
+      "title": "Use",
+      "subtitle": "Hearts, hands and people",
+      "intro": "心 and 子 turn up inside a great many everyday words.",
+      "patterns": [
+        {
+          "logic": "thing + 心 = a kind of care or centre",
+          "build": "小 + 心 = 小心",
+          "word": "小心",
+          "pinyin": "xiǎoxīn",
+          "meaning": "be careful",
+          "audio_text": "小心",
+          "note": "Literally small heart: keep your heart small and watchful.",
+          "variations": [
+            {
+              "word": "小心",
+              "pinyin": "xiǎoxīn",
+              "meaning": "be careful",
+              "audio_text": "小心"
+            },
+            {
+              "word": "手心",
+              "pinyin": "shǒuxīn",
+              "meaning": "the palm of the hand",
+              "audio_text": "手心"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "手",
+              null
+            ],
+            "answer": [
+              "心"
+            ],
+            "choices": [
+              "心",
+              "子",
+              "手",
+              "我"
+            ],
+            "result_word": "手心",
+            "result_pinyin": "shǒuxīn",
+            "result_meaning": "the palm of the hand",
+            "audio_text": "手心"
+          }
+        },
+        {
+          "logic": "女 and 子 pair up into family words",
+          "build": "女 + 子 = 女子",
+          "word": "女子",
+          "pinyin": "nǚzǐ",
+          "meaning": "a girl / woman",
+          "audio_text": "女子",
+          "note": "Swap the order and the meaning changes: 子女 means one's children.",
+          "variations": [
+            {
+              "word": "女儿",
+              "pinyin": "nǚ'ér",
+              "meaning": "daughter",
+              "audio_text": "女儿"
+            },
+            {
+              "word": "女子",
+              "pinyin": "nǚzǐ",
+              "meaning": "a girl / woman",
+              "audio_text": "女子"
+            },
+            {
+              "word": "子女",
+              "pinyin": "zǐnǚ",
+              "meaning": "children",
+              "audio_text": "子女"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "子",
+              null
+            ],
+            "answer": [
+              "女"
+            ],
+            "choices": [
+              "女",
+              "子",
+              "心",
+              "手"
+            ],
+            "result_word": "子女",
+            "result_pinyin": "zǐnǚ",
+            "result_meaning": "children",
+            "audio_text": "子女"
+          }
+        },
+        {
+          "logic": "好 + noun = a good one of them",
+          "build": "好 + 人 = 好人",
+          "word": "好人",
+          "pinyin": "hǎorén",
+          "meaning": "a good person",
+          "audio_text": "好人",
+          "note": "好山好水 repeats the pattern twice to praise a landscape.",
+          "variations": [
+            {
+              "word": "好人",
+              "pinyin": "hǎorén",
+              "meaning": "a good person",
+              "audio_text": "好人"
+            },
+            {
+              "word": "好山好水",
+              "pinyin": "hǎo shān hǎo shuǐ",
+              "meaning": "beautiful scenery",
+              "audio_text": "好山好水"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "好",
+              null
+            ],
+            "answer": [
+              "人"
+            ],
+            "choices": [
+              "人",
+              "子",
+              "心",
+              "我"
+            ],
+            "result_word": "好人",
+            "result_pinyin": "hǎorén",
+            "result_meaning": "a good person",
+            "audio_text": "好人"
+          }
+        },
+        {
+          "logic": "你 + 好 = hello",
+          "build": "你 + 好 = 你好",
+          "word": "你好",
+          "pinyin": "nǐ hǎo",
+          "meaning": "hello",
+          "audio_text": "你好",
+          "note": "你 (nǐ) means you — so a greeting is literally wishing you good.",
+          "variations": [
+            {
+              "word": "你好",
+              "pinyin": "nǐ hǎo",
+              "meaning": "hello",
+              "audio_text": "你好"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "你",
+              null
+            ],
+            "answer": [
+              "好"
+            ],
+            "choices": [
+              "好",
+              "心",
+              "子",
+              "我"
+            ],
+            "result_word": "你好",
+            "result_pinyin": "nǐ hǎo",
+            "result_meaning": "hello",
+            "audio_text": "你好"
+          }
+        }
+      ]
+    },
+    "part5_write": {
+      "title": "Write",
+      "subtitle": "Write every character in this lesson",
+      "characters": [
+        "心",
+        "子",
+        "了",
+        "手",
+        "我",
+        "好"
+      ]
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "心",
+      "correct": "heart",
+      "choices": [
+        "heart",
+        "child",
+        "I / me",
+        "hand"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "heart",
+      "correct": "心",
+      "choices": [
+        "心",
+        "子",
+        "我",
+        "手"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "心",
+      "audio_text": "心",
+      "correct": "xīn",
+      "choices": [
+        "xīn",
+        "zǐ",
+        "wǒ",
+        "shǒu"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "xīn",
+      "correct": "心",
+      "choices": [
+        "心",
+        "子",
+        "我",
+        "手"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "心",
+      "correct": "心",
+      "choices": [
+        "心",
+        "子",
+        "我",
+        "手"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "心",
+      "shown_strokes": [
+        "点",
+        "卧钩",
+        "点"
+      ],
+      "correct": "点",
+      "choices": [
+        "点",
+        "卧钩",
+        "斜钩",
+        "弯钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "子",
+      "correct": "child",
+      "choices": [
+        "child",
+        "heart",
+        "I / me",
+        "hand"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "child",
+      "correct": "子",
+      "choices": [
+        "子",
+        "心",
+        "我",
+        "手"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "子",
+      "audio_text": "子",
+      "correct": "zǐ",
+      "choices": [
+        "zǐ",
+        "xīn",
+        "wǒ",
+        "shǒu"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zǐ",
+      "correct": "子",
+      "choices": [
+        "子",
+        "心",
+        "我",
+        "手"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "子",
+      "correct": "子",
+      "choices": [
+        "子",
+        "心",
+        "我",
+        "手"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "子",
+      "shown_strokes": [
+        "横钩",
+        "弯钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "卧钩",
+        "斜钩",
+        "弯钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "我",
+      "correct": "I / me",
+      "choices": [
+        "I / me",
+        "heart",
+        "child",
+        "hand"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "I / me",
+      "correct": "我",
+      "choices": [
+        "我",
+        "心",
+        "子",
+        "手"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "我",
+      "audio_text": "我",
+      "correct": "wǒ",
+      "choices": [
+        "wǒ",
+        "xīn",
+        "zǐ",
+        "shǒu"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "wǒ",
+      "correct": "我",
+      "choices": [
+        "我",
+        "心",
+        "子",
+        "手"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "我",
+      "correct": "我",
+      "choices": [
+        "我",
+        "心",
+        "子",
+        "手"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "我",
+      "shown_strokes": [
+        "撇",
+        "横",
+        "竖勾",
+        "提",
+        "斜钩",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "点",
+        "卧钩",
+        "斜钩",
+        "弯钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "手",
+      "correct": "hand",
+      "choices": [
+        "hand",
+        "heart",
+        "child",
+        "I / me"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "hand",
+      "correct": "手",
+      "choices": [
+        "手",
+        "心",
+        "子",
+        "我"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "手",
+      "audio_text": "手",
+      "correct": "shǒu",
+      "choices": [
+        "shǒu",
+        "xīn",
+        "zǐ",
+        "wǒ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shǒu",
+      "correct": "手",
+      "choices": [
+        "手",
+        "心",
+        "子",
+        "我"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "手",
+      "correct": "手",
+      "choices": [
+        "手",
+        "心",
+        "子",
+        "我"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "手",
+      "shown_strokes": [
+        "撇",
+        "横",
+        "横"
+      ],
+      "correct": "弯钩",
+      "choices": [
+        "弯钩",
+        "卧钩",
+        "斜钩",
+        "横"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "好",
+      "correct": "good",
+      "choices": [
+        "good",
+        "heart",
+        "child",
+        "I / me"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "good",
+      "correct": "好",
+      "choices": [
+        "好",
+        "心",
+        "子",
+        "我"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "好",
+      "audio_text": "好",
+      "correct": "hǎo",
+      "choices": [
+        "hǎo",
+        "xīn",
+        "zǐ",
+        "wǒ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "hǎo",
+      "correct": "好",
+      "choices": [
+        "好",
+        "心",
+        "子",
+        "我"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "好",
+      "correct": "好",
+      "choices": [
+        "好",
+        "心",
+        "子",
+        "我"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "好",
+      "shown_strokes": [
+        "撇点",
+        "撇",
+        "提",
+        "横钩",
+        "弯钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "卧钩",
+        "斜钩",
+        "弯钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "了",
+      "correct": "(completed action)",
+      "choices": [
+        "(completed action)",
+        "heart",
+        "child",
+        "I / me"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "(completed action)",
+      "correct": "了",
+      "choices": [
+        "了",
+        "心",
+        "子",
+        "我"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "了",
+      "audio_text": "了",
+      "correct": "le",
+      "choices": [
+        "le",
+        "xīn",
+        "zǐ",
+        "wǒ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "le",
+      "correct": "了",
+      "choices": [
+        "了",
+        "心",
+        "子",
+        "我"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "了",
+      "correct": "了",
+      "choices": [
+        "了",
+        "心",
+        "子",
+        "我"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "了",
+      "shown_strokes": [
+        "横钩"
+      ],
+      "correct": "弯钩",
+      "choices": [
+        "弯钩",
+        "卧钩",
+        "斜钩",
+        "横"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "小心",
+      "correct": "be careful",
+      "choices": [
+        "be careful",
+        "the palm of the hand",
+        "daughter",
+        "a girl / woman"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "小心",
+      "correct": "小心",
+      "choices": [
+        "小心",
+        "手心",
+        "女儿",
+        "女子"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "手心",
+      "correct": "the palm of the hand",
+      "choices": [
+        "the palm of the hand",
+        "be careful",
+        "daughter",
+        "a girl / woman"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "手心",
+      "correct": "手心",
+      "choices": [
+        "手心",
+        "小心",
+        "女儿",
+        "女子"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "女儿",
+      "correct": "daughter",
+      "choices": [
+        "daughter",
+        "be careful",
+        "the palm of the hand",
+        "a girl / woman"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "女儿",
+      "correct": "女儿",
+      "choices": [
+        "女儿",
+        "小心",
+        "手心",
+        "女子"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "女子",
+      "correct": "a girl / woman",
+      "choices": [
+        "a girl / woman",
+        "be careful",
+        "the palm of the hand",
+        "daughter"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "女子",
+      "correct": "女子",
+      "choices": [
+        "女子",
+        "小心",
+        "手心",
+        "女儿"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "子女",
+      "correct": "children",
+      "choices": [
+        "children",
+        "be careful",
+        "the palm of the hand",
+        "daughter"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "子女",
+      "correct": "子女",
+      "choices": [
+        "子女",
+        "小心",
+        "手心",
+        "女儿"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "好人",
+      "correct": "a good person",
+      "choices": [
+        "a good person",
+        "be careful",
+        "the palm of the hand",
+        "daughter"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "好人",
+      "correct": "好人",
+      "choices": [
+        "好人",
+        "小心",
+        "手心",
+        "女儿"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "你好",
+      "correct": "hello",
+      "choices": [
+        "hello",
+        "be careful",
+        "the palm of the hand",
+        "daughter"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "你好",
+      "correct": "你好",
+      "choices": [
+        "你好",
+        "小心",
+        "手心",
+        "女儿"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "好山好水",
+      "audio_text": "好山好水",
+      "correct": "beautiful scenery",
+      "choices": [
+        "beautiful scenery",
+        "be careful",
+        "the palm of the hand",
+        "a girl / woman"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "好山好水",
+      "correct": "好山好水",
+      "choices": [
+        "好山好水",
+        "小心",
+        "手心",
+        "女子"
+      ]
+    }
+  ]
+}

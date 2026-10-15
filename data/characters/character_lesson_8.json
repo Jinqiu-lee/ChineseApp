@@ -1,0 +1,1216 @@
+{
+  "id": 8,
+  "title": "Characters Have a Structure",
+  "emoji": "🧩",
+  "subtitle": "横折弯 横折提 横折折折钩 · 没 说 话 奶 牛 有",
+  "description": "Three turning strokes, and the first idea that holds a character together: a left half and a right half, written in that order.",
+  "new_strokes": [
+    "横折弯",
+    "横折提",
+    "横折折折钩"
+  ],
+  "new_characters": [
+    "没",
+    "说",
+    "话",
+    "奶",
+    "牛",
+    "有"
+  ],
+  "new_words": [
+    "没有",
+    "说话",
+    "奶奶",
+    "牛奶"
+  ],
+  "learn_content": {
+    "part1_discover": {
+      "title": "Discover",
+      "subtitle": "Three strokes that turn",
+      "intro": "Each of these starts as a 横 and then changes direction — once, twice, or three times.",
+      "strokes": [
+        {
+          "stroke": "横折弯",
+          "pinyin": "héngzhéwān",
+          "name_en": "horizontal, turn, curve",
+          "direction": "right, down, then curving right again",
+          "explanation": "横折弯 = a 横折 whose foot curves away to the right and simply stops. No hook.",
+          "audio_text": "横折弯",
+          "example_char": "没",
+          "example_pinyin": "méi",
+          "example_meaning": "not have",
+          "example_note": "没 has a 横折弯 as its fifth stroke, in the part on the right.",
+          "example_stroke_order": [
+            "点",
+            "点",
+            "提",
+            "撇",
+            "横折弯",
+            "横撇",
+            "捺"
+          ]
+        },
+        {
+          "stroke": "横折提",
+          "pinyin": "héngzhétí",
+          "name_en": "horizontal, turn, rise",
+          "direction": "right, down-left, then lift to the right",
+          "explanation": "横折提 = a 横折 that finishes with a 提 flicking upward.",
+          "audio_text": "横折提",
+          "example_char": "说",
+          "example_pinyin": "shuō",
+          "example_meaning": "to speak",
+          "example_note": "说 begins with 讠— a 点 and then this 横折提.",
+          "example_stroke_order": [
+            "点",
+            "横折提",
+            "点",
+            "撇",
+            "竖",
+            "横折",
+            "横",
+            "撇",
+            "竖弯钩"
+          ]
+        },
+        {
+          "stroke": "横折折折钩",
+          "pinyin": "héngzhézhézhégōu",
+          "name_en": "horizontal, turn, turn, turn, hook",
+          "direction": "right, down, right, down, then hook",
+          "explanation": "横折折折钩 = the longest stroke in the course. Four changes of direction without lifting the brush.",
+          "audio_text": "横折折折钩",
+          "example_char": "奶",
+          "example_pinyin": "nǎi",
+          "example_meaning": "milk / grandma",
+          "example_note": "奶's fourth stroke is this whole zig-zag — it is 乃 in one go.",
+          "example_stroke_order": [
+            "撇点",
+            "撇",
+            "提",
+            "横折折折钩",
+            "撇"
+          ]
+        }
+      ],
+      "recognition_check": [
+        {
+          "show_stroke": "横折弯",
+          "choices": [
+            "横折弯",
+            "横折弯钩",
+            "横折",
+            "横斜钩"
+          ],
+          "correct": "横折弯"
+        },
+        {
+          "show_stroke": "横折提",
+          "choices": [
+            "横折提",
+            "横折",
+            "提",
+            "竖提"
+          ],
+          "correct": "横折提"
+        },
+        {
+          "show_stroke": "横折折折钩",
+          "choices": [
+            "横折折折钩",
+            "竖折折钩",
+            "横折弯钩",
+            "横折钩"
+          ],
+          "correct": "横折折折钩"
+        },
+        {
+          "show_stroke": "横折提",
+          "choices": [
+            "横折提",
+            "横撇",
+            "横钩",
+            "横折弯"
+          ],
+          "correct": "横折提"
+        }
+      ]
+    },
+    "part2_build": {
+      "title": "Build",
+      "subtitle": "Structure first, then the order",
+      "intro": "Before writing these six, look at how they are put together.",
+      "structure": {
+        "name": "左右结构",
+        "pinyin": "zuǒ yòu jiégòu",
+        "name_en": "Left-right structure",
+        "audio_text": "左右结构",
+        "intro": "Most Chinese characters are not one solid shape. They are two or three smaller parts standing next to each other, and where those parts sit is called the character's 结构 — its structure.",
+        "explanation": "The commonest structure of all is 左右结构: a narrow part on the left, a wider part on the right. The left part is squeezed thinner than it would be standing alone, and it is always written first, completely, before the right part is begun.",
+        "rule": "左右结构 → 先左后右",
+        "rule_en": "Left-right structure → write the left part first, then the right",
+        "examples": [
+          {
+            "character": "没",
+            "pinyin": "méi",
+            "meaning": "not have",
+            "left": "氵",
+            "left_note": "water, squeezed to three strokes",
+            "right": "殳",
+            "right_note": "a hand holding something"
+          },
+          {
+            "character": "说",
+            "pinyin": "shuō",
+            "meaning": "to speak",
+            "left": "讠",
+            "left_note": "speech, only two strokes wide",
+            "right": "兑",
+            "right_note": "here for its sound"
+          },
+          {
+            "character": "话",
+            "pinyin": "huà",
+            "meaning": "speech / words",
+            "left": "讠",
+            "left_note": "speech again — the same narrow radical",
+            "right": "舌",
+            "right_note": "tongue"
+          },
+          {
+            "character": "奶",
+            "pinyin": "nǎi",
+            "meaning": "milk / grandma",
+            "left": "女",
+            "left_note": "woman, with its last stroke lifted to a 提",
+            "right": "乃",
+            "right_note": "here for its sound"
+          }
+        ],
+        "contrast": {
+          "characters": [
+            "牛",
+            "有"
+          ],
+          "note": "牛 and 有 in this lesson are not left-right. 牛 is a single part, and 有 is 上下结构 — one piece above another. Watch for the difference as you write them."
+        },
+        "check": {
+          "question": "Which of these is NOT 左右结构?",
+          "choices": [
+            "牛",
+            "没",
+            "说",
+            "奶"
+          ],
+          "correct": "牛"
+        }
+      },
+      "rules": [
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "撇",
+            "横",
+            "竖",
+            "点"
+          ],
+          "correct": "撇",
+          "result_char": "牛",
+          "result_pinyin": "niú",
+          "result_meaning": "cow",
+          "stroke_order": [
+            "撇",
+            "横",
+            "横",
+            "竖"
+          ],
+          "explanation": "One part, no halves. The short 撇, both 横, then the 竖 straight down the middle."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "横",
+            "撇",
+            "竖",
+            "点"
+          ],
+          "correct": "横",
+          "result_char": "有",
+          "result_pinyin": "yǒu",
+          "result_meaning": "to have",
+          "stroke_order": [
+            "横",
+            "撇",
+            "竖",
+            "横折钩",
+            "横",
+            "横"
+          ],
+          "explanation": "上下结构: the two strokes on top, then the whole of 月 beneath them."
+        },
+        {
+          "rule": "先左后右",
+          "rule_pinyin": "xiān zuǒ hòu yòu",
+          "rule_en": "Left before right",
+          "audio_text": "先左后右",
+          "choices": [
+            "点",
+            "横折弯",
+            "撇",
+            "捺"
+          ],
+          "correct": "点",
+          "result_char": "没",
+          "result_pinyin": "méi",
+          "result_meaning": "not have",
+          "stroke_order": [
+            "点",
+            "点",
+            "提",
+            "撇",
+            "横折弯",
+            "横撇",
+            "捺"
+          ],
+          "explanation": "All three strokes of 氵 first, then 殳 — and the 横折弯 inside it."
+        },
+        {
+          "rule": "先左后右",
+          "rule_pinyin": "xiān zuǒ hòu yòu",
+          "rule_en": "Left before right",
+          "audio_text": "先左后右",
+          "choices": [
+            "点",
+            "横折提",
+            "撇",
+            "竖弯钩"
+          ],
+          "correct": "点",
+          "result_char": "说",
+          "result_pinyin": "shuō",
+          "result_meaning": "to speak",
+          "stroke_order": [
+            "点",
+            "横折提",
+            "点",
+            "撇",
+            "竖",
+            "横折",
+            "横",
+            "撇",
+            "竖弯钩"
+          ],
+          "explanation": "讠is only 点 and 横折提. Finish it before touching the right half."
+        },
+        {
+          "rule": "先左后右",
+          "rule_pinyin": "xiān zuǒ hòu yòu",
+          "rule_en": "Left before right",
+          "audio_text": "先左后右",
+          "choices": [
+            "点",
+            "横折提",
+            "撇",
+            "横"
+          ],
+          "correct": "点",
+          "result_char": "话",
+          "result_pinyin": "huà",
+          "result_meaning": "speech / words",
+          "stroke_order": [
+            "点",
+            "横折提",
+            "撇",
+            "横",
+            "竖",
+            "竖",
+            "横折",
+            "横"
+          ],
+          "explanation": "The same 讠opening as 说, then 舌 — 千 over 口."
+        },
+        {
+          "rule": "先左后右",
+          "rule_pinyin": "xiān zuǒ hòu yòu",
+          "rule_en": "Left before right",
+          "audio_text": "先左后右",
+          "choices": [
+            "撇点",
+            "撇",
+            "提",
+            "横折折折钩"
+          ],
+          "correct": "撇点",
+          "result_char": "奶",
+          "result_pinyin": "nǎi",
+          "result_meaning": "milk / grandma",
+          "stroke_order": [
+            "撇点",
+            "撇",
+            "提",
+            "横折折折钩",
+            "撇"
+          ],
+          "explanation": "女 on the left ends in a 提, not a 横 — that is what makes room for 乃."
+        }
+      ]
+    },
+    "part3_read": {
+      "title": "Read",
+      "subtitle": "What the left half tells you",
+      "intro": "In a 左右结构 character the left part very often tells you what the character is about.",
+      "characters": [
+        {
+          "character": "说",
+          "pinyin": "shuō",
+          "meaning": "to speak",
+          "stroke_order": [
+            "点",
+            "横折提",
+            "点",
+            "撇",
+            "竖",
+            "横折",
+            "横",
+            "撇",
+            "竖弯钩"
+          ],
+          "stroke_count": 9,
+          "built_from": "讠 + 兑",
+          "note": "讠is 言 speech, squeezed narrow. Almost every character with 讠has to do with talking.",
+          "predict": {
+            "shown": 1,
+            "choices": [
+              "横折提",
+              "横折",
+              "横撇",
+              "提"
+            ],
+            "correct": "横折提"
+          }
+        },
+        {
+          "character": "话",
+          "pinyin": "huà",
+          "meaning": "speech / words",
+          "stroke_order": [
+            "点",
+            "横折提",
+            "撇",
+            "横",
+            "竖",
+            "竖",
+            "横折",
+            "横"
+          ],
+          "stroke_count": 8,
+          "built_from": "讠 + 舌",
+          "note": "Speech on the left, tongue on the right. 话 is what a tongue produces.",
+          "predict": {
+            "shown": 1,
+            "choices": [
+              "横折提",
+              "横钩",
+              "横折弯",
+              "竖提"
+            ],
+            "correct": "横折提"
+          }
+        },
+        {
+          "character": "没",
+          "pinyin": "méi",
+          "meaning": "not have",
+          "stroke_order": [
+            "点",
+            "点",
+            "提",
+            "撇",
+            "横折弯",
+            "横撇",
+            "捺"
+          ],
+          "stroke_count": 7,
+          "built_from": "氵 + 殳",
+          "note": "氵is 水 water, squeezed to three strokes — the same 水 you wrote in Lesson 3.",
+          "predict": {
+            "shown": 4,
+            "choices": [
+              "横折弯",
+              "横折钩",
+              "横折弯钩",
+              "竖折"
+            ],
+            "correct": "横折弯"
+          }
+        },
+        {
+          "character": "奶",
+          "pinyin": "nǎi",
+          "meaning": "milk / grandma",
+          "stroke_order": [
+            "撇点",
+            "撇",
+            "提",
+            "横折折折钩",
+            "撇"
+          ],
+          "stroke_count": 5,
+          "built_from": "女 + 乃",
+          "note": "女 woman on the left. 奶 is milk, and doubled it is the woman who raised your parent.",
+          "predict": {
+            "shown": 3,
+            "choices": [
+              "横折折折钩",
+              "横折钩",
+              "竖折折钩",
+              "横折弯钩"
+            ],
+            "correct": "横折折折钩"
+          }
+        }
+      ]
+    },
+    "part4_use": {
+      "title": "Use",
+      "subtitle": "Having, speaking, and grandma",
+      "intro": "These four words are among the most used in the whole language.",
+      "patterns": [
+        {
+          "logic": "没 + 有 = the negative of having",
+          "build": "没 + 有 = 没有",
+          "word": "没有",
+          "pinyin": "méiyǒu",
+          "meaning": "to not have",
+          "audio_text": "没有",
+          "note": "有 means to have. Put 没 in front and it becomes to not have — or, of something past, did not.",
+          "variations": [
+            {
+              "word": "有",
+              "pinyin": "yǒu",
+              "meaning": "to have",
+              "audio_text": "有"
+            },
+            {
+              "word": "没有",
+              "pinyin": "méiyǒu",
+              "meaning": "to not have",
+              "audio_text": "没有"
+            }
+          ],
+          "quiz": {
+            "template": [
+              null,
+              "有"
+            ],
+            "answer": [
+              "没"
+            ],
+            "choices": [
+              "没",
+              "说",
+              "牛",
+              "奶"
+            ],
+            "result_word": "没有",
+            "result_pinyin": "méiyǒu",
+            "result_meaning": "to not have",
+            "audio_text": "没有"
+          }
+        },
+        {
+          "logic": "说 + 话 = to do the thing and the thing done",
+          "build": "说 + 话 = 说话",
+          "word": "说话",
+          "pinyin": "shuōhuà",
+          "meaning": "to speak",
+          "audio_text": "说话",
+          "note": "说 is the act, 话 is what comes out. Chinese often pairs a verb with its own object like this.",
+          "variations": [
+            {
+              "word": "说话",
+              "pinyin": "shuōhuà",
+              "meaning": "to speak",
+              "audio_text": "说话"
+            },
+            {
+              "word": "话",
+              "pinyin": "huà",
+              "meaning": "speech / words",
+              "audio_text": "话"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "说",
+              null
+            ],
+            "answer": [
+              "话"
+            ],
+            "choices": [
+              "话",
+              "有",
+              "牛",
+              "奶"
+            ],
+            "result_word": "说话",
+            "result_pinyin": "shuōhuà",
+            "result_meaning": "to speak",
+            "audio_text": "说话"
+          }
+        },
+        {
+          "logic": "a doubled character = a family member",
+          "build": "奶 + 奶 = 奶奶",
+          "word": "奶奶",
+          "pinyin": "nǎinai",
+          "meaning": "grandma",
+          "audio_text": "奶奶",
+          "note": "牛奶 is built the plainer way: 牛 cow + 奶 milk.",
+          "variations": [
+            {
+              "word": "奶奶",
+              "pinyin": "nǎinai",
+              "meaning": "grandma",
+              "audio_text": "奶奶"
+            },
+            {
+              "word": "牛奶",
+              "pinyin": "niúnǎi",
+              "meaning": "cow's milk",
+              "audio_text": "牛奶"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "牛",
+              null
+            ],
+            "answer": [
+              "奶"
+            ],
+            "choices": [
+              "奶",
+              "有",
+              "说",
+              "没"
+            ],
+            "result_word": "牛奶",
+            "result_pinyin": "niúnǎi",
+            "result_meaning": "cow's milk",
+            "audio_text": "牛奶"
+          }
+        }
+      ],
+      "sentences": [
+        {
+          "sentence": "奶奶没有说话。",
+          "pinyin": "nǎinai méiyǒu shuōhuà.",
+          "meaning": "Grandma did not speak.",
+          "audio_text": "奶奶没有说话",
+          "intro": "Your first full sentence. Every word in it comes from this lesson.",
+          "breakdown": [
+            {
+              "part": "奶奶",
+              "pinyin": "nǎinai",
+              "meaning": "grandma",
+              "role": "who",
+              "audio_text": "奶奶"
+            },
+            {
+              "part": "没有",
+              "pinyin": "méiyǒu",
+              "meaning": "did not",
+              "role": "the negative",
+              "audio_text": "没有"
+            },
+            {
+              "part": "说话",
+              "pinyin": "shuōhuà",
+              "meaning": "speak",
+              "role": "what",
+              "audio_text": "说话"
+            }
+          ],
+          "note": "Chinese word order here is the same as English: who, then not, then the action. 。is the Chinese full stop.",
+          "quiz": {
+            "template": [
+              "奶奶",
+              null,
+              "说话"
+            ],
+            "answer": [
+              "没有"
+            ],
+            "choices": [
+              "没有",
+              "牛奶",
+              "奶奶",
+              "说话"
+            ],
+            "result_word": "奶奶没有说话",
+            "result_pinyin": "nǎinai méiyǒu shuōhuà",
+            "result_meaning": "Grandma did not speak.",
+            "audio_text": "奶奶没有说话"
+          }
+        }
+      ]
+    },
+    "part5_write": {
+      "title": "Write",
+      "subtitle": "Write every character in this lesson",
+      "characters": [
+        "没",
+        "说",
+        "话",
+        "奶",
+        "牛",
+        "有"
+      ]
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "没",
+      "correct": "not have",
+      "choices": [
+        "not have",
+        "to speak",
+        "speech / words",
+        "milk / grandma"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "not have",
+      "correct": "没",
+      "choices": [
+        "没",
+        "说",
+        "话",
+        "奶"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "没",
+      "audio_text": "没",
+      "correct": "méi",
+      "choices": [
+        "méi",
+        "shuō",
+        "huà",
+        "nǎi"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "méi",
+      "correct": "没",
+      "choices": [
+        "没",
+        "说",
+        "话",
+        "奶"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "没",
+      "correct": "没",
+      "choices": [
+        "没",
+        "说",
+        "话",
+        "奶"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "没",
+      "shown_strokes": [
+        "点",
+        "点",
+        "提",
+        "撇",
+        "横折弯",
+        "横撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "捺",
+        "横折弯",
+        "横折提",
+        "横折折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "说",
+      "correct": "to speak",
+      "choices": [
+        "to speak",
+        "not have",
+        "speech / words",
+        "milk / grandma"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to speak",
+      "correct": "说",
+      "choices": [
+        "说",
+        "没",
+        "话",
+        "奶"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "说",
+      "audio_text": "说",
+      "correct": "shuō",
+      "choices": [
+        "shuō",
+        "méi",
+        "huà",
+        "nǎi"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shuō",
+      "correct": "说",
+      "choices": [
+        "说",
+        "没",
+        "话",
+        "奶"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "说",
+      "correct": "说",
+      "choices": [
+        "说",
+        "没",
+        "话",
+        "奶"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "说",
+      "shown_strokes": [
+        "点",
+        "横折提",
+        "点",
+        "撇",
+        "竖",
+        "横折",
+        "横",
+        "撇"
+      ],
+      "correct": "竖弯钩",
+      "choices": [
+        "竖弯钩",
+        "横折弯",
+        "横折提",
+        "横折折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "话",
+      "correct": "speech / words",
+      "choices": [
+        "speech / words",
+        "not have",
+        "to speak",
+        "milk / grandma"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "speech / words",
+      "correct": "话",
+      "choices": [
+        "话",
+        "没",
+        "说",
+        "奶"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "话",
+      "audio_text": "话",
+      "correct": "huà",
+      "choices": [
+        "huà",
+        "méi",
+        "shuō",
+        "nǎi"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "huà",
+      "correct": "话",
+      "choices": [
+        "话",
+        "没",
+        "说",
+        "奶"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "话",
+      "correct": "话",
+      "choices": [
+        "话",
+        "没",
+        "说",
+        "奶"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "话",
+      "shown_strokes": [
+        "点",
+        "横折提",
+        "撇",
+        "横",
+        "竖",
+        "竖",
+        "横折"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "横折弯",
+        "横折提",
+        "横折折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "奶",
+      "correct": "milk / grandma",
+      "choices": [
+        "milk / grandma",
+        "not have",
+        "to speak",
+        "speech / words"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "milk / grandma",
+      "correct": "奶",
+      "choices": [
+        "奶",
+        "没",
+        "说",
+        "话"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "奶",
+      "audio_text": "奶",
+      "correct": "nǎi",
+      "choices": [
+        "nǎi",
+        "méi",
+        "shuō",
+        "huà"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "nǎi",
+      "correct": "奶",
+      "choices": [
+        "奶",
+        "没",
+        "说",
+        "话"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "奶",
+      "correct": "奶",
+      "choices": [
+        "奶",
+        "没",
+        "说",
+        "话"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "奶",
+      "shown_strokes": [
+        "撇点",
+        "撇",
+        "提",
+        "横折折折钩"
+      ],
+      "correct": "撇",
+      "choices": [
+        "撇",
+        "横折弯",
+        "横折提",
+        "横折折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "牛",
+      "correct": "cow",
+      "choices": [
+        "cow",
+        "not have",
+        "to speak",
+        "speech / words"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "cow",
+      "correct": "牛",
+      "choices": [
+        "牛",
+        "没",
+        "说",
+        "话"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "牛",
+      "audio_text": "牛",
+      "correct": "niú",
+      "choices": [
+        "niú",
+        "méi",
+        "shuō",
+        "huà"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "niú",
+      "correct": "牛",
+      "choices": [
+        "牛",
+        "没",
+        "说",
+        "话"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "牛",
+      "correct": "牛",
+      "choices": [
+        "牛",
+        "没",
+        "说",
+        "话"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "牛",
+      "shown_strokes": [
+        "撇",
+        "横",
+        "横"
+      ],
+      "correct": "竖",
+      "choices": [
+        "竖",
+        "横折弯",
+        "横折提",
+        "横折折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "有",
+      "correct": "to have",
+      "choices": [
+        "to have",
+        "not have",
+        "to speak",
+        "speech / words"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to have",
+      "correct": "有",
+      "choices": [
+        "有",
+        "没",
+        "说",
+        "话"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "有",
+      "audio_text": "有",
+      "correct": "yǒu",
+      "choices": [
+        "yǒu",
+        "méi",
+        "shuō",
+        "huà"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yǒu",
+      "correct": "有",
+      "choices": [
+        "有",
+        "没",
+        "说",
+        "话"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "有",
+      "correct": "有",
+      "choices": [
+        "有",
+        "没",
+        "说",
+        "话"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "有",
+      "shown_strokes": [
+        "横",
+        "撇",
+        "竖",
+        "横折钩",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "横折弯",
+        "横折提",
+        "横折折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "没有",
+      "correct": "to not have",
+      "choices": [
+        "to not have",
+        "to speak",
+        "grandma",
+        "cow's milk"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "没有",
+      "correct": "没有",
+      "choices": [
+        "没有",
+        "说话",
+        "奶奶",
+        "牛奶"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "说话",
+      "correct": "to speak",
+      "choices": [
+        "to speak",
+        "to not have",
+        "grandma",
+        "cow's milk"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "说话",
+      "correct": "说话",
+      "choices": [
+        "说话",
+        "没有",
+        "奶奶",
+        "牛奶"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "奶奶",
+      "correct": "grandma",
+      "choices": [
+        "grandma",
+        "to not have",
+        "to speak",
+        "cow's milk"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "奶奶",
+      "correct": "奶奶",
+      "choices": [
+        "奶奶",
+        "没有",
+        "说话",
+        "牛奶"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "牛奶",
+      "correct": "cow's milk",
+      "choices": [
+        "cow's milk",
+        "to not have",
+        "to speak",
+        "grandma"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "牛奶",
+      "correct": "牛奶",
+      "choices": [
+        "牛奶",
+        "没有",
+        "说话",
+        "奶奶"
+      ]
+    }
+  ]
+}

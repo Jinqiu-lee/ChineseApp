@@ -1,0 +1,1325 @@
+{
+  "id": 7,
+  "title": "Characters Stretch and Curve",
+  "emoji": "🪁",
+  "subtitle": "横斜钩 横折弯钩 竖提 · 飞 风 九 几 以 可 机",
+  "description": "Three long strokes that travel before they stop, and the characters they carry — wind, flight, and the number you ask for.",
+  "new_strokes": [
+    "横斜钩",
+    "横折弯钩",
+    "竖提"
+  ],
+  "new_characters": [
+    "飞",
+    "风",
+    "九",
+    "几",
+    "以",
+    "可",
+    "机"
+  ],
+  "new_words": [
+    "大风",
+    "大雨",
+    "大地",
+    "九月",
+    "九个月",
+    "九天",
+    "几个人",
+    "几月",
+    "飞机",
+    "可以"
+  ],
+  "learn_content": {
+    "part1_discover": {
+      "title": "Discover",
+      "subtitle": "Three long strokes",
+      "intro": "Each of these travels a long way before it finishes.",
+      "strokes": [
+        {
+          "stroke": "横斜钩",
+          "pinyin": "héngxiégōu",
+          "name_en": "horizontal, slant, hook",
+          "direction": "right, then down-right, then hook up",
+          "explanation": "横斜钩 = a 横 that leans away into a long diagonal and hooks at the end.",
+          "audio_text": "横斜钩",
+          "example_char": "飞",
+          "example_pinyin": "fēi",
+          "example_meaning": "to fly",
+          "example_note": "飞 is built on one great 横斜钩 — the wing itself.",
+          "example_stroke_order": [
+            "横斜钩",
+            "点",
+            "提"
+          ]
+        },
+        {
+          "stroke": "横折弯钩",
+          "pinyin": "héngzhéwāngōu",
+          "name_en": "horizontal, turn, curve, hook",
+          "direction": "right, down, curving right, then hook up",
+          "explanation": "横折弯钩 = a 横折 that curves along the bottom and lifts into a hook.",
+          "audio_text": "横折弯钩",
+          "example_char": "九",
+          "example_pinyin": "jiǔ",
+          "example_meaning": "nine",
+          "example_note": "九 is a 撇 and one 横折弯钩 — two strokes, and the second does nearly all of it.",
+          "example_stroke_order": [
+            "撇",
+            "横折弯钩"
+          ]
+        },
+        {
+          "stroke": "竖提",
+          "pinyin": "shùtí",
+          "name_en": "vertical then rise",
+          "direction": "straight down, then lift away to the right",
+          "explanation": "竖提 = a 竖 that lifts to the right instead of stopping.",
+          "audio_text": "竖提",
+          "example_char": "以",
+          "example_pinyin": "yǐ",
+          "example_meaning": "by means of",
+          "example_note": "以 opens with a 竖提 on its left side.",
+          "example_stroke_order": [
+            "竖提",
+            "点",
+            "撇",
+            "点"
+          ]
+        }
+      ],
+      "recognition_check": [
+        {
+          "show_stroke": "横斜钩",
+          "choices": [
+            "横斜钩",
+            "横折弯钩",
+            "竖提",
+            "斜钩"
+          ],
+          "correct": "横斜钩"
+        },
+        {
+          "show_stroke": "横折弯钩",
+          "choices": [
+            "横折弯钩",
+            "横斜钩",
+            "竖弯钩",
+            "竖提"
+          ],
+          "correct": "横折弯钩"
+        },
+        {
+          "show_stroke": "竖提",
+          "choices": [
+            "竖提",
+            "提",
+            "竖勾",
+            "横折提"
+          ],
+          "correct": "竖提"
+        },
+        {
+          "show_stroke": "横斜钩",
+          "choices": [
+            "横斜钩",
+            "弯钩",
+            "横钩",
+            "横折弯钩"
+          ],
+          "correct": "横斜钩"
+        }
+      ]
+    },
+    "part2_build": {
+      "title": "Build",
+      "subtitle": "Seven characters, in order",
+      "intro": "The long stroke always comes after whatever leans on it.",
+      "rules": [
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "横斜钩",
+            "点",
+            "提",
+            "撇"
+          ],
+          "correct": "横斜钩",
+          "result_char": "飞",
+          "result_pinyin": "fēi",
+          "result_meaning": "to fly",
+          "stroke_order": [
+            "横斜钩",
+            "点",
+            "提"
+          ],
+          "explanation": "The great wing first, then the two small marks tucked inside it."
+        },
+        {
+          "rule": "先外后内",
+          "rule_pinyin": "xiān wài hòu nèi",
+          "rule_en": "Outside before inside",
+          "audio_text": "先外后内",
+          "choices": [
+            "撇",
+            "横斜钩",
+            "点",
+            "横"
+          ],
+          "correct": "撇",
+          "result_char": "风",
+          "result_pinyin": "fēng",
+          "result_meaning": "wind",
+          "stroke_order": [
+            "撇",
+            "横斜钩",
+            "撇",
+            "点"
+          ],
+          "explanation": "Draw the frame — 撇 then 横斜钩 — and only then the two strokes it encloses."
+        },
+        {
+          "rule": "从左到右",
+          "rule_pinyin": "cóng zuǒ dào yòu",
+          "rule_en": "Left to right",
+          "audio_text": "从左到右",
+          "choices": [
+            "撇",
+            "横折弯钩",
+            "横",
+            "点"
+          ],
+          "correct": "撇",
+          "result_char": "九",
+          "result_pinyin": "jiǔ",
+          "result_meaning": "nine",
+          "stroke_order": [
+            "撇",
+            "横折弯钩"
+          ],
+          "explanation": "A short 撇, then the long curve that carries the rest of the character."
+        },
+        {
+          "rule": "从左到右",
+          "rule_pinyin": "cóng zuǒ dào yòu",
+          "rule_en": "Left to right",
+          "audio_text": "从左到右",
+          "choices": [
+            "撇",
+            "横折弯钩",
+            "竖",
+            "提"
+          ],
+          "correct": "撇",
+          "result_char": "几",
+          "result_pinyin": "jǐ",
+          "result_meaning": "how many",
+          "stroke_order": [
+            "撇",
+            "横折弯钩"
+          ],
+          "explanation": "The same two strokes as 九, standing further apart and more upright."
+        },
+        {
+          "rule": "从左到右",
+          "rule_pinyin": "cóng zuǒ dào yòu",
+          "rule_en": "Left to right",
+          "audio_text": "从左到右",
+          "choices": [
+            "竖提",
+            "点",
+            "撇",
+            "横"
+          ],
+          "correct": "竖提",
+          "result_char": "以",
+          "result_pinyin": "yǐ",
+          "result_meaning": "by means of",
+          "stroke_order": [
+            "竖提",
+            "点",
+            "撇",
+            "点"
+          ],
+          "explanation": "Finish the left side completely before beginning the right."
+        },
+        {
+          "rule": "先横后竖",
+          "rule_pinyin": "xiān héng hòu shù",
+          "rule_en": "Horizontal before vertical",
+          "audio_text": "先横后竖",
+          "choices": [
+            "横",
+            "竖",
+            "横折",
+            "点"
+          ],
+          "correct": "横",
+          "result_char": "可",
+          "result_pinyin": "kě",
+          "result_meaning": "can / may",
+          "stroke_order": [
+            "横",
+            "竖",
+            "横折",
+            "横",
+            "竖勾"
+          ],
+          "explanation": "The top line, then the small 口, and the long hooked vertical last."
+        },
+        {
+          "rule": "从左到右",
+          "rule_pinyin": "cóng zuǒ dào yòu",
+          "rule_en": "Left to right",
+          "audio_text": "从左到右",
+          "choices": [
+            "横",
+            "竖",
+            "撇",
+            "横折弯钩"
+          ],
+          "correct": "横",
+          "result_char": "机",
+          "result_pinyin": "jī",
+          "result_meaning": "machine",
+          "stroke_order": [
+            "横",
+            "竖",
+            "撇",
+            "点",
+            "撇",
+            "横折弯钩"
+          ],
+          "explanation": "All of 木 on the left, then all of 几 on the right."
+        }
+      ]
+    },
+    "part3_read": {
+      "title": "Read",
+      "subtitle": "One stroke can carry a character",
+      "intro": "九 and 几 are made of the very same two strokes. Only the shape tells them apart.",
+      "characters": [
+        {
+          "character": "九",
+          "pinyin": "jiǔ",
+          "meaning": "nine",
+          "stroke_order": [
+            "撇",
+            "横折弯钩"
+          ],
+          "stroke_count": 2,
+          "built_from": "撇 + 横折弯钩",
+          "note": "Two strokes, and the second one does nearly all the work.",
+          "predict": {
+            "shown": 1,
+            "choices": [
+              "横折弯钩",
+              "竖弯钩",
+              "捺",
+              "点"
+            ],
+            "correct": "横折弯钩"
+          }
+        },
+        {
+          "character": "几",
+          "pinyin": "jǐ",
+          "meaning": "how many",
+          "stroke_order": [
+            "撇",
+            "横折弯钩"
+          ],
+          "stroke_count": 2,
+          "built_from": "撇 + 横折弯钩",
+          "note": "The same two strokes as 九, but wider and squarer. Shape matters as much as stroke count.",
+          "predict": {
+            "shown": 1,
+            "choices": [
+              "横折弯钩",
+              "横斜钩",
+              "竖提",
+              "提"
+            ],
+            "correct": "横折弯钩"
+          }
+        },
+        {
+          "character": "风",
+          "pinyin": "fēng",
+          "meaning": "wind",
+          "stroke_order": [
+            "撇",
+            "横斜钩",
+            "撇",
+            "点"
+          ],
+          "stroke_count": 4,
+          "built_from": "撇 + 横斜钩 + 撇 + 点",
+          "note": "A frame with something moving inside it — air on the move.",
+          "predict": {
+            "shown": 3,
+            "choices": [
+              "点",
+              "提",
+              "撇",
+              "横"
+            ],
+            "correct": "点"
+          }
+        },
+        {
+          "character": "机",
+          "pinyin": "jī",
+          "meaning": "machine",
+          "stroke_order": [
+            "横",
+            "竖",
+            "撇",
+            "点",
+            "撇",
+            "横折弯钩"
+          ],
+          "stroke_count": 6,
+          "built_from": "木 + 几",
+          "note": "木 on the left, 几 on the right. 几 jǐ is also there for its sound: 机 is jī.",
+          "predict": {
+            "shown": 5,
+            "choices": [
+              "横折弯钩",
+              "竖弯钩",
+              "捺",
+              "竖"
+            ],
+            "correct": "横折弯钩"
+          }
+        }
+      ]
+    },
+    "part4_use": {
+      "title": "Use",
+      "subtitle": "Weather, counting and asking",
+      "intro": "几 is how you ask for a number you do not yet know.",
+      "patterns": [
+        {
+          "logic": "大 + a thing = a big one of it",
+          "build": "大 + 风 = 大风",
+          "word": "大风",
+          "pinyin": "dà fēng",
+          "meaning": "a strong wind",
+          "audio_text": "大风",
+          "note": "雨 (yǔ) means rain. It is new here, and used only in this pair.",
+          "variations": [
+            {
+              "word": "大风",
+              "pinyin": "dà fēng",
+              "meaning": "a strong wind",
+              "audio_text": "大风"
+            },
+            {
+              "word": "大雨",
+              "pinyin": "dà yǔ",
+              "meaning": "heavy rain",
+              "audio_text": "大雨"
+            },
+            {
+              "word": "大地",
+              "pinyin": "dà dì",
+              "meaning": "the earth",
+              "audio_text": "大地"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "大",
+              null
+            ],
+            "answer": [
+              "风"
+            ],
+            "choices": [
+              "风",
+              "九",
+              "几",
+              "以"
+            ],
+            "result_word": "大风",
+            "result_pinyin": "dà fēng",
+            "result_meaning": "a strong wind",
+            "audio_text": "大风"
+          }
+        },
+        {
+          "logic": "九 counts like every number you know",
+          "build": "九 + 月 = 九月",
+          "word": "九月",
+          "pinyin": "jiǔ yuè",
+          "meaning": "September",
+          "audio_text": "九月",
+          "note": "Exactly the shapes you used for 七月 and 七个月 in Lesson 4.",
+          "variations": [
+            {
+              "word": "九月",
+              "pinyin": "jiǔ yuè",
+              "meaning": "September",
+              "audio_text": "九月"
+            },
+            {
+              "word": "九个月",
+              "pinyin": "jiǔ ge yuè",
+              "meaning": "nine months",
+              "audio_text": "九个月"
+            },
+            {
+              "word": "九天",
+              "pinyin": "jiǔ tiān",
+              "meaning": "nine days",
+              "audio_text": "九天"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "九",
+              null,
+              "月"
+            ],
+            "answer": [
+              "个"
+            ],
+            "choices": [
+              "个",
+              "天",
+              "人",
+              "风"
+            ],
+            "result_word": "九个月",
+            "result_pinyin": "jiǔ ge yuè",
+            "result_meaning": "nine months",
+            "audio_text": "九个月"
+          }
+        },
+        {
+          "logic": "几 asks for a number instead of giving one",
+          "build": "几 + 个 + 人 = 几个人",
+          "word": "几个人",
+          "pinyin": "jǐ ge rén",
+          "meaning": "how many people",
+          "audio_text": "几个人",
+          "note": "Put 几 where a number would stand and the statement turns into a question.",
+          "variations": [
+            {
+              "word": "几个人",
+              "pinyin": "jǐ ge rén",
+              "meaning": "how many people",
+              "audio_text": "几个人"
+            },
+            {
+              "word": "几月",
+              "pinyin": "jǐ yuè",
+              "meaning": "which month",
+              "audio_text": "几月"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "几",
+              null
+            ],
+            "answer": [
+              "月"
+            ],
+            "choices": [
+              "月",
+              "人",
+              "天",
+              "风"
+            ],
+            "result_word": "几月",
+            "result_pinyin": "jǐ yuè",
+            "result_meaning": "which month",
+            "audio_text": "几月"
+          }
+        },
+        {
+          "logic": "飞 + 机 = a machine that flies",
+          "build": "飞 + 机 = 飞机",
+          "word": "飞机",
+          "pinyin": "fēijī",
+          "meaning": "aeroplane",
+          "audio_text": "飞机",
+          "note": "可以 is built the same way: 可 can, 以 by means of — together, may or can.",
+          "variations": [
+            {
+              "word": "飞机",
+              "pinyin": "fēijī",
+              "meaning": "aeroplane",
+              "audio_text": "飞机"
+            },
+            {
+              "word": "可以",
+              "pinyin": "kěyǐ",
+              "meaning": "can / may",
+              "audio_text": "可以"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "飞",
+              null
+            ],
+            "answer": [
+              "机"
+            ],
+            "choices": [
+              "机",
+              "风",
+              "九",
+              "以"
+            ],
+            "result_word": "飞机",
+            "result_pinyin": "fēijī",
+            "result_meaning": "aeroplane",
+            "audio_text": "飞机"
+          }
+        }
+      ]
+    },
+    "part5_write": {
+      "title": "Write",
+      "subtitle": "Write every character in this lesson",
+      "characters": [
+        "风",
+        "飞",
+        "九",
+        "几",
+        "以"
+      ]
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "飞",
+      "correct": "to fly",
+      "choices": [
+        "to fly",
+        "wind",
+        "nine",
+        "how many"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to fly",
+      "correct": "飞",
+      "choices": [
+        "飞",
+        "风",
+        "九",
+        "几"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "飞",
+      "audio_text": "飞",
+      "correct": "fēi",
+      "choices": [
+        "fēi",
+        "fēng",
+        "jiǔ",
+        "jǐ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "fēi",
+      "correct": "飞",
+      "choices": [
+        "飞",
+        "风",
+        "九",
+        "几"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "飞",
+      "correct": "飞",
+      "choices": [
+        "飞",
+        "风",
+        "九",
+        "几"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "飞",
+      "shown_strokes": [
+        "横斜钩",
+        "点"
+      ],
+      "correct": "提",
+      "choices": [
+        "提",
+        "横斜钩",
+        "横折弯钩",
+        "竖提"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "风",
+      "correct": "wind",
+      "choices": [
+        "wind",
+        "to fly",
+        "nine",
+        "how many"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "wind",
+      "correct": "风",
+      "choices": [
+        "风",
+        "飞",
+        "九",
+        "几"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "风",
+      "audio_text": "风",
+      "correct": "fēng",
+      "choices": [
+        "fēng",
+        "fēi",
+        "jiǔ",
+        "jǐ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "fēng",
+      "correct": "风",
+      "choices": [
+        "风",
+        "飞",
+        "九",
+        "几"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "风",
+      "correct": "风",
+      "choices": [
+        "风",
+        "飞",
+        "九",
+        "几"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "风",
+      "shown_strokes": [
+        "撇",
+        "横斜钩",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "点",
+        "横斜钩",
+        "横折弯钩",
+        "竖提"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "九",
+      "correct": "nine",
+      "choices": [
+        "nine",
+        "to fly",
+        "wind",
+        "how many"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "nine",
+      "correct": "九",
+      "choices": [
+        "九",
+        "飞",
+        "风",
+        "几"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "九",
+      "audio_text": "九",
+      "correct": "jiǔ",
+      "choices": [
+        "jiǔ",
+        "fēi",
+        "fēng",
+        "jǐ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "jiǔ",
+      "correct": "九",
+      "choices": [
+        "九",
+        "飞",
+        "风",
+        "几"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "九",
+      "correct": "九",
+      "choices": [
+        "九",
+        "飞",
+        "风",
+        "几"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "九",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "横折弯钩",
+      "choices": [
+        "横折弯钩",
+        "横斜钩",
+        "竖提",
+        "点"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "几",
+      "correct": "how many",
+      "choices": [
+        "how many",
+        "to fly",
+        "wind",
+        "nine"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "how many",
+      "correct": "几",
+      "choices": [
+        "几",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "几",
+      "audio_text": "几",
+      "correct": "jǐ",
+      "choices": [
+        "jǐ",
+        "fēi",
+        "fēng",
+        "jiǔ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "jǐ",
+      "correct": "几",
+      "choices": [
+        "几",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "几",
+      "correct": "几",
+      "choices": [
+        "几",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "几",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "横折弯钩",
+      "choices": [
+        "横折弯钩",
+        "横斜钩",
+        "竖提",
+        "点"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "以",
+      "correct": "by means of",
+      "choices": [
+        "by means of",
+        "to fly",
+        "wind",
+        "nine"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "by means of",
+      "correct": "以",
+      "choices": [
+        "以",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "以",
+      "audio_text": "以",
+      "correct": "yǐ",
+      "choices": [
+        "yǐ",
+        "fēi",
+        "fēng",
+        "jiǔ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yǐ",
+      "correct": "以",
+      "choices": [
+        "以",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "以",
+      "correct": "以",
+      "choices": [
+        "以",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "以",
+      "shown_strokes": [
+        "竖提",
+        "点",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "点",
+        "横斜钩",
+        "横折弯钩",
+        "竖提"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "可",
+      "correct": "can / may",
+      "choices": [
+        "can / may",
+        "to fly",
+        "wind",
+        "nine"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "can / may",
+      "correct": "可",
+      "choices": [
+        "可",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "可",
+      "audio_text": "可",
+      "correct": "kě",
+      "choices": [
+        "kě",
+        "fēi",
+        "fēng",
+        "jiǔ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "kě",
+      "correct": "可",
+      "choices": [
+        "可",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "可",
+      "correct": "可",
+      "choices": [
+        "可",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "可",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "横折",
+        "横"
+      ],
+      "correct": "竖勾",
+      "choices": [
+        "竖勾",
+        "横斜钩",
+        "横折弯钩",
+        "竖提"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "机",
+      "correct": "machine",
+      "choices": [
+        "machine",
+        "to fly",
+        "wind",
+        "nine"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "machine",
+      "correct": "机",
+      "choices": [
+        "机",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "机",
+      "audio_text": "机",
+      "correct": "jī",
+      "choices": [
+        "jī",
+        "fēi",
+        "fēng",
+        "jiǔ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "jī",
+      "correct": "机",
+      "choices": [
+        "机",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "机",
+      "correct": "机",
+      "choices": [
+        "机",
+        "飞",
+        "风",
+        "九"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "机",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "撇",
+        "点",
+        "撇"
+      ],
+      "correct": "横折弯钩",
+      "choices": [
+        "横折弯钩",
+        "横斜钩",
+        "竖提",
+        "点"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "大风",
+      "correct": "a strong wind",
+      "choices": [
+        "a strong wind",
+        "heavy rain",
+        "the earth",
+        "September"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "大风",
+      "correct": "大风",
+      "choices": [
+        "大风",
+        "大雨",
+        "大地",
+        "九月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "大雨",
+      "correct": "heavy rain",
+      "choices": [
+        "heavy rain",
+        "a strong wind",
+        "the earth",
+        "September"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "大雨",
+      "correct": "大雨",
+      "choices": [
+        "大雨",
+        "大风",
+        "大地",
+        "九月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "大地",
+      "correct": "the earth",
+      "choices": [
+        "the earth",
+        "a strong wind",
+        "heavy rain",
+        "September"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "大地",
+      "correct": "大地",
+      "choices": [
+        "大地",
+        "大风",
+        "大雨",
+        "九月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "九月",
+      "correct": "September",
+      "choices": [
+        "September",
+        "a strong wind",
+        "heavy rain",
+        "the earth"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "九月",
+      "correct": "九月",
+      "choices": [
+        "九月",
+        "大风",
+        "大雨",
+        "大地"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "九个月",
+      "correct": "nine months",
+      "choices": [
+        "nine months",
+        "a strong wind",
+        "heavy rain",
+        "the earth"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "九个月",
+      "correct": "九个月",
+      "choices": [
+        "九个月",
+        "大风",
+        "大雨",
+        "大地"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "九天",
+      "correct": "nine days",
+      "choices": [
+        "nine days",
+        "a strong wind",
+        "heavy rain",
+        "the earth"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "九天",
+      "correct": "九天",
+      "choices": [
+        "九天",
+        "大风",
+        "大雨",
+        "大地"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "几个人",
+      "correct": "how many people",
+      "choices": [
+        "how many people",
+        "a strong wind",
+        "heavy rain",
+        "the earth"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "几个人",
+      "correct": "几个人",
+      "choices": [
+        "几个人",
+        "大风",
+        "大雨",
+        "大地"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "几月",
+      "correct": "which month",
+      "choices": [
+        "which month",
+        "a strong wind",
+        "heavy rain",
+        "the earth"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "几月",
+      "correct": "几月",
+      "choices": [
+        "几月",
+        "大风",
+        "大雨",
+        "大地"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "飞机",
+      "correct": "aeroplane",
+      "choices": [
+        "aeroplane",
+        "a strong wind",
+        "heavy rain",
+        "the earth"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "飞机",
+      "correct": "飞机",
+      "choices": [
+        "飞机",
+        "大风",
+        "大雨",
+        "大地"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "可以",
+      "correct": "can / may",
+      "choices": [
+        "can / may",
+        "a strong wind",
+        "heavy rain",
+        "the earth"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "可以",
+      "correct": "可以",
+      "choices": [
+        "可以",
+        "大风",
+        "大雨",
+        "大地"
+      ]
+    }
+  ]
+}

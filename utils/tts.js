@@ -12,7 +12,12 @@ const GOOGLE_TTS_API_KEY = GOOGLE_API_KEY;
 // Character-level overrides: every instance of this character gets the given pinyin.
 // Value is the pinyin tone-number string passed to SSML <phoneme>.
 const PHONEME_OVERRIDES = {
+  // The stroke 撇 is piě. Google TTS reads the bare character as piē.
+  '撇': 'pie3',
   '谁': 'shei2',
+  // 没 is polyphonic (méi = not have, mò = sink). The course only ever uses
+  // méi, and Google TTS reads the bare character as mò.
+  '没': 'mei2',
   // 说 — Google TTS zh-CN misreads this as shui4; force shuō (tone 1)
   '说': 'shuo1',
   // Note: 背 is polyphonic (bēi = carry on back, bèi = background/memorize)
@@ -27,6 +32,41 @@ const PHONEME_OVERRIDES = {
 // Default TTS reads 还 as hái (still/also) — override only "return" compounds to huán.
 // 不了 as a sentence-final particle is read as bù le (neutral tone), not bù liǎo.
 const COMPOUND_PHONEME_OVERRIDES = {
+  // ── Words where 子 keeps its full third tone ─────────────────────────
+  // 子 is neutral as a suffix (儿子, 桌子) but zǐ in these.
+  '女子': [['女', 'nv3'], ['子', 'zi3']],
+  '子女': [['子', 'zi3'], ['女', 'nv3']],
+
+  // ── Stroke names (笔画) ───────────────────────────────────────────────
+  // 撇 defaults to piē and 折 to zhē; as stroke names they are piě and zhé.
+  // Longest first: these are applied in order, so a prefix must not match
+  // before the longer name it belongs to.
+  '横折折折钩': [['横', 'heng2'], ['折', 'zhe2'], ['折', 'zhe2'], ['折', 'zhe2'], ['钩', 'gou1']],
+  '横撇弯钩': [['横', 'heng2'], ['撇', 'pie3'], ['弯', 'wan1'], ['钩', 'gou1']],
+  '横折弯钩': [['横', 'heng2'], ['折', 'zhe2'], ['弯', 'wan1'], ['钩', 'gou1']],
+  '竖折折钩': [['竖', 'shu4'], ['折', 'zhe2'], ['折', 'zhe2'], ['钩', 'gou1']],
+  // 横折弯 must stay BELOW 横折弯钩 above: it is a prefix of it, and whichever
+  // entry is listed first wins.
+  '横折弯': [['横', 'heng2'], ['折', 'zhe2'], ['弯', 'wan1']],
+  '横斜钩': [['横', 'heng2'], ['斜', 'xie2'], ['钩', 'gou1']],
+  '竖折撇': [['竖', 'shu4'], ['折', 'zhe2'], ['撇', 'pie3']],
+  '横折提': [['横', 'heng2'], ['折', 'zhe2'], ['提', 'ti2']],
+  '横折钩': [['横', 'heng2'], ['折', 'zhe2'], ['钩', 'gou1']],
+  '竖弯钩': [['竖', 'shu4'], ['弯', 'wan1'], ['钩', 'gou1']],
+  '撇折': [['撇', 'pie3'], ['折', 'zhe2']],
+  '撇点': [['撇', 'pie3'], ['点', 'dian3']],
+  '横撇': [['横', 'heng2'], ['撇', 'pie3']],
+  '横折': [['横', 'heng2'], ['折', 'zhe2']],
+  '横钩': [['横', 'heng2'], ['钩', 'gou1']],
+  '竖折': [['竖', 'shu4'], ['折', 'zhe2']],
+  '竖弯': [['竖', 'shu4'], ['弯', 'wan1']],
+  '竖提': [['竖', 'shu4'], ['提', 'ti2']],
+  '竖钩': [['竖', 'shu4'], ['钩', 'gou1']],
+  '竖勾': [['竖', 'shu4'], ['勾', 'gou1']],
+  '卧钩': [['卧', 'wo4'], ['钩', 'gou1']],
+  '斜钩': [['斜', 'xie2'], ['钩', 'gou1']],
+  '弯钩': [['弯', 'wan1'], ['钩', 'gou1']],
+
   // 还 huán (return) — default TTS reads hái, so override return-meaning compounds only
   '还书': [['还', 'huan2'], ['书', 'shu1']],
   '还钱': [['还', 'huan2'], ['钱', 'qian2']],
@@ -176,6 +216,44 @@ function resolvePolyphonic(text) {
   return result;
 }
 
+// Wraps bare occurrences of `char`, skipping any already inside a <phoneme>
+// element — a compound override may have handled them already, and nesting
+// phoneme tags produces invalid SSML.
+function wrapBareChar(text, char, pinyin) {
+  const tag = `<phoneme alphabet="pinyin" ph="${pinyin}">${char}</phoneme>`;
+  let out = '';
+  let i = 0;
+  let depth = 0;
+  while (i < text.length) {
+    if (text[i] === '<') {
+      const close = text.indexOf('>', i);
+      const chunk = text.slice(i, close === -1 ? text.length : close + 1);
+      if (chunk.startsWith('</phoneme')) depth -= 1;
+      else if (chunk.startsWith('<phoneme')) depth += 1;
+      out += chunk;
+      i += chunk.length;
+      continue;
+    }
+    if (text[i] === char && depth === 0) { out += tag; i += 1; continue; }
+    out += text[i];
+    i += 1;
+  }
+  return out;
+}
+
+// Some characters cannot be read correctly from the text alone: 子 is zǐ on its
+// own but neutral in 儿子/桌子, and 了 is le or liǎo depending on the sentence.
+// When the caller knows the reading, use it rather than guessing.
+function ssmlFromPinyin(text, hint) {
+  const chars = [...text];
+  const syllables = hint.trim().split(/[\s']+/);
+  if (syllables.length !== chars.length) return null; // can't line them up
+  const inner = chars
+    .map((c, i) => `<phoneme alphabet="pinyin" ph="${pinyinToNumbered(syllables[i])}">${c}</phoneme>`)
+    .join('');
+  return `<speak>${inner}</speak>`;
+}
+
 function buildSSML(text) {
   let inner = text;
 
@@ -195,10 +273,7 @@ function buildSSML(text) {
 
   // Step 3: apply single-character overrides to any remaining bare characters
   for (const [char, pinyin] of Object.entries(PHONEME_OVERRIDES)) {
-    inner = inner.replaceAll(
-      char,
-      `<phoneme alphabet="pinyin" ph="${pinyin}">${char}</phoneme>`,
-    );
+    inner = wrapBareChar(inner, char, pinyin);
   }
 
   return `<speak>${inner}</speak>`;
@@ -653,7 +728,7 @@ export async function speakChinese(text, gender = 'female', pinyinHint = null) {
   }
 
   const vc = VOICE_CONFIG[gender] || VOICE_CONFIG.female;
-  const cacheKey = `${gender}:${text}`;
+  const cacheKey = `${gender}:${text}:${pinyinHint || ''}`;
 
   try {
     let base64Audio = audioCache.get(cacheKey);
@@ -665,7 +740,7 @@ export async function speakChinese(text, gender = 'female', pinyinHint = null) {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            input: { ssml: buildSSML(text) },
+            input: { ssml: (pinyinHint && ssmlFromPinyin(text, pinyinHint)) || buildSSML(text) },
             voice: {
               languageCode: 'zh-CN',
               ssmlGender: vc.ssmlGender,
