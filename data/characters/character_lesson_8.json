@@ -212,10 +212,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "横折提",
             "撇",
+            "横折弯",
             "横",
-            "竖",
-            "点"
+            "竖"
           ],
           "correct": "撇",
           "result_char": "牛",
@@ -235,10 +236,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "横折弯",
             "横",
+            "横折钩",
             "撇",
-            "竖",
-            "点"
+            "竖"
           ],
           "correct": "横",
           "result_char": "有",
@@ -260,10 +262,13 @@
           "rule_en": "Left before right",
           "audio_text": "先左后右",
           "choices": [
+            "横折提",
             "点",
-            "横折弯",
+            "捺",
+            "提",
+            "横撇",
             "撇",
-            "捺"
+            "横折弯"
           ],
           "correct": "点",
           "result_char": "没",
@@ -286,10 +291,14 @@
           "rule_en": "Left before right",
           "audio_text": "先左后右",
           "choices": [
+            "横折弯",
             "点",
+            "竖弯钩",
             "横折提",
+            "横",
             "撇",
-            "竖弯钩"
+            "横折",
+            "竖"
           ],
           "correct": "点",
           "result_char": "说",
@@ -314,8 +323,11 @@
           "rule_en": "Left before right",
           "audio_text": "先左后右",
           "choices": [
+            "横折弯",
             "点",
+            "横折",
             "横折提",
+            "竖",
             "撇",
             "横"
           ],
@@ -341,10 +353,11 @@
           "rule_en": "Left before right",
           "audio_text": "先左后右",
           "choices": [
+            "横折弯",
             "撇点",
+            "横折折折钩",
             "撇",
-            "提",
-            "横折折折钩"
+            "提"
           ],
           "correct": "撇点",
           "result_char": "奶",
@@ -385,14 +398,14 @@
           "built_from": "讠 + 兑",
           "note": "讠is 言 speech, squeezed narrow. Almost every character with 讠has to do with talking.",
           "predict": {
-            "shown": 1,
+            "shown": 0,
             "choices": [
+              "横折折折钩",
+              "点",
               "横折提",
-              "横折",
-              "横撇",
-              "提"
+              "横折弯"
             ],
-            "correct": "横折提"
+            "correct": "点"
           }
         },
         {
@@ -413,14 +426,14 @@
           "built_from": "讠 + 舌",
           "note": "Speech on the left, tongue on the right. 话 is what a tongue produces.",
           "predict": {
-            "shown": 1,
+            "shown": 7,
             "choices": [
+              "横折折折钩",
+              "横",
               "横折提",
-              "横钩",
-              "横折弯",
-              "竖提"
+              "横折弯"
             ],
-            "correct": "横折提"
+            "correct": "横"
           }
         },
         {
@@ -440,14 +453,14 @@
           "built_from": "氵 + 殳",
           "note": "氵is 水 water, squeezed to three strokes — the same 水 you wrote in Lesson 3.",
           "predict": {
-            "shown": 4,
+            "shown": 1,
             "choices": [
-              "横折弯",
-              "横折钩",
-              "横折弯钩",
-              "竖折"
+              "横折折折钩",
+              "点",
+              "横折提",
+              "横折弯"
             ],
-            "correct": "横折弯"
+            "correct": "点"
           }
         },
         {
@@ -465,14 +478,14 @@
           "built_from": "女 + 乃",
           "note": "女 woman on the left. 奶 is milk, and doubled it is the woman who raised your parent.",
           "predict": {
-            "shown": 3,
+            "shown": 2,
             "choices": [
               "横折折折钩",
-              "横折钩",
-              "竖折折钩",
-              "横折弯钩"
+              "提",
+              "横折提",
+              "横折弯"
             ],
-            "correct": "横折折折钩"
+            "correct": "提"
           }
         }
       ]
@@ -734,25 +747,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "没",
-      "shown_strokes": [
-        "点",
-        "点",
-        "提",
-        "撇",
-        "横折弯",
-        "横撇"
-      ],
-      "correct": "捺",
-      "choices": [
-        "捺",
-        "横折弯",
-        "横折提",
-        "横折折折钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "说",
       "correct": "to speak",
@@ -806,27 +800,6 @@
         "没",
         "话",
         "奶"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "说",
-      "shown_strokes": [
-        "点",
-        "横折提",
-        "点",
-        "撇",
-        "竖",
-        "横折",
-        "横",
-        "撇"
-      ],
-      "correct": "竖弯钩",
-      "choices": [
-        "竖弯钩",
-        "横折弯",
-        "横折提",
-        "横折折折钩"
       ]
     },
     {
@@ -886,26 +859,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "话",
-      "shown_strokes": [
-        "点",
-        "横折提",
-        "撇",
-        "横",
-        "竖",
-        "竖",
-        "横折"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "横折弯",
-        "横折提",
-        "横折折折钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "奶",
       "correct": "milk / grandma",
@@ -959,23 +912,6 @@
         "没",
         "说",
         "话"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "奶",
-      "shown_strokes": [
-        "撇点",
-        "撇",
-        "提",
-        "横折折折钩"
-      ],
-      "correct": "撇",
-      "choices": [
-        "撇",
-        "横折弯",
-        "横折提",
-        "横折折折钩"
       ]
     },
     {
@@ -1035,22 +971,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "牛",
-      "shown_strokes": [
-        "撇",
-        "横",
-        "横"
-      ],
-      "correct": "竖",
-      "choices": [
-        "竖",
-        "横折弯",
-        "横折提",
-        "横折折折钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "有",
       "correct": "to have",
@@ -1104,24 +1024,6 @@
         "没",
         "说",
         "话"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "有",
-      "shown_strokes": [
-        "横",
-        "撇",
-        "竖",
-        "横折钩",
-        "横"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "横折弯",
-        "横折提",
-        "横折折折钩"
       ]
     },
     {
@@ -1210,6 +1112,285 @@
         "没有",
         "说话",
         "奶奶"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "没",
+      "shown_strokes": [],
+      "correct": "点",
+      "choices": [
+        "横折折折钩",
+        "点",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "没",
+      "shown_strokes": [
+        "点",
+        "点",
+        "提"
+      ],
+      "correct": "撇",
+      "choices": [
+        "横折折折钩",
+        "撇",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "没",
+      "shown_strokes": [
+        "点",
+        "点",
+        "提",
+        "撇",
+        "横折弯",
+        "横撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "横折折折钩",
+        "捺",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "说",
+      "shown_strokes": [],
+      "correct": "点",
+      "choices": [
+        "横折折折钩",
+        "点",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "说",
+      "shown_strokes": [
+        "点",
+        "横折提",
+        "点",
+        "撇"
+      ],
+      "correct": "竖",
+      "choices": [
+        "横折折折钩",
+        "竖",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "说",
+      "shown_strokes": [
+        "点",
+        "横折提",
+        "点",
+        "撇",
+        "竖",
+        "横折",
+        "横",
+        "撇"
+      ],
+      "correct": "竖弯钩",
+      "choices": [
+        "横折折折钩",
+        "竖弯钩",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "话",
+      "shown_strokes": [],
+      "correct": "点",
+      "choices": [
+        "横折折折钩",
+        "点",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "话",
+      "shown_strokes": [
+        "点",
+        "横折提",
+        "撇",
+        "横"
+      ],
+      "correct": "竖",
+      "choices": [
+        "横折折折钩",
+        "竖",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "话",
+      "shown_strokes": [
+        "点",
+        "横折提",
+        "撇",
+        "横",
+        "竖",
+        "竖",
+        "横折"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折折折钩",
+        "横",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "奶",
+      "shown_strokes": [],
+      "correct": "撇点",
+      "choices": [
+        "横折折折钩",
+        "撇点",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "奶",
+      "shown_strokes": [
+        "撇点",
+        "撇"
+      ],
+      "correct": "提",
+      "choices": [
+        "横折折折钩",
+        "提",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "奶",
+      "shown_strokes": [
+        "撇点",
+        "撇",
+        "提",
+        "横折折折钩"
+      ],
+      "correct": "撇",
+      "choices": [
+        "横折折折钩",
+        "撇",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "牛",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "横折折折钩",
+        "撇",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "牛",
+      "shown_strokes": [
+        "撇",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折折折钩",
+        "横",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "牛",
+      "shown_strokes": [
+        "撇",
+        "横",
+        "横"
+      ],
+      "correct": "竖",
+      "choices": [
+        "横折折折钩",
+        "竖",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "有",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "横折折折钩",
+        "横",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "有",
+      "shown_strokes": [
+        "横",
+        "撇",
+        "竖"
+      ],
+      "correct": "横折钩",
+      "choices": [
+        "横折折折钩",
+        "横折钩",
+        "横折提",
+        "横折弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "有",
+      "shown_strokes": [
+        "横",
+        "撇",
+        "竖",
+        "横折钩",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折折折钩",
+        "横",
+        "横折提",
+        "横折弯"
       ]
     }
   ]

@@ -6,6 +6,14 @@ import { DEEP_NAVY, WARM_ORANGE } from '../../constants/colors';
 
 const AnimatedPath = Animated.createAnimatedComponent(Path);
 
+// How many strokes a character has, straight from the stroke data.
+// A question that blanks out a stroke in the MIDDLE needs this to show how many
+// strokes still follow the blank — without it the equation silently claims the
+// character ends there.
+export function strokeCount(char) {
+  return STROKE_DATA[char]?.medians?.length || 0;
+}
+
 // hanzi-writer-data lives in a 1024x1024 space with the y-axis pointing up,
 // so the whole drawing is flipped back with translate(0,900) scale(1,-1).
 const VIEWBOX = 1024;

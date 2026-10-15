@@ -15,9 +15,9 @@ import { speakChinese } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
 
 // One prominent size shared by Parts 1-3 so every animation reads the same.
-const ART = 180;
+const ART = 160;
 const MAX_REWRITES = 3;   // after this, Practice is the only way forward
-const CHOICE_ART = 60;
+const CHOICE_ART = 54;
 
 // Shown under any question once an answer has been picked: says whether it was
 // right and, if not, names the correct answer.
@@ -364,12 +364,15 @@ function BuildCard({ item }) {
   return (
     <View style={s.card}>
       <View style={s.artStage}>
-        {/* Once finished, drop revealUpTo so the whole character draws itself
-            on a loop instead of only the last stroke repeating. */}
+        {/* Dropping revealUpTo lets the whole character draw itself on a loop
+            instead of only the last stroke repeating. Two cases want that:
+            once the card is finished, and when the question asks for the very
+            first stroke — there is nothing before it to show, so revealUpTo={0}
+            would leave an empty box. */}
         <StrokeAnimator
           char={item.character}
           size={ART}
-          revealUpTo={complete ? null : shown}
+          revealUpTo={complete || shown === 0 ? null : shown}
           loop
           colored
         />
@@ -389,16 +392,20 @@ function BuildCard({ item }) {
 
       {item.predict && !complete && (
         <>
-          {/* Pattern, not prose: 横 + ? = 大 */}
+          {/* Pattern, not prose: 横 + ? = 大
+              Every stroke is drawn except the one being asked about, wherever
+              it sits — first, middle or last. The blank is the only hidden
+              cell, so the row always shows the character's true stroke count
+              and the question reads the same at any position. */}
           <View style={s.equationRow}>
-            {item.stroke_order.slice(0, shown).map((st, i) => (
+            {item.stroke_order.map((st, i) => (
               <React.Fragment key={`${st}-${i}`}>
                 {i > 0 && <Text style={s.eqPlus}>+</Text>}
-                <View style={s.eqCell}><StrokeCombo value={st} size={38} /></View>
+                {i === shown
+                  ? <View style={[s.eqCell, s.eqCellBlank]}><Text style={s.eqQ}>?</Text></View>
+                  : <View style={s.eqCell}><StrokeCombo value={st} size={34} /></View>}
               </React.Fragment>
             ))}
-            <Text style={s.eqPlus}>+</Text>
-            <View style={[s.eqCell, s.eqCellBlank]}><Text style={s.eqQ}>?</Text></View>
             <Text style={s.eqEquals}>=</Text>
             <Text style={s.eqChar}>{item.character}</Text>
           </View>
@@ -1222,12 +1229,12 @@ const s = StyleSheet.create({
   strokeChoiceWide: { width: CHOICE_ART * 2 + 36 },
   strokeChoiceIdle: { opacity: 0.5 },
   textChoice: {
-    minWidth: 92, paddingHorizontal: 18, paddingVertical: 12, borderRadius: 12,
+    minWidth: 80, paddingHorizontal: 16, paddingVertical: 10, borderRadius: 12,
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.30)', backgroundColor: CARD_WHITE,
     alignItems: 'center',
   },
-  textChoiceLabel:  { fontSize: 28, lineHeight: 36, fontWeight: '800', color: DEEP_NAVY },
-  textChoicePinyin: { fontSize: 16, color: WARM_BROWN, marginTop: 2 },
+  textChoiceLabel:  { fontSize: 22, lineHeight: 29, fontWeight: '800', color: DEEP_NAVY },
+  textChoicePinyin: { fontSize: 12, color: WARM_BROWN, marginTop: 2 },
   textChoiceAudio:  { fontSize: 20, marginTop: 3 },
   choiceRight:  { backgroundColor: 'rgba(46,125,50,0.18)', borderColor: SUCCESS, borderWidth: 2.5 },
   choiceWrong:  { backgroundColor: 'rgba(196,80,58,0.15)', borderColor: '#C4503A', borderWidth: 2.5 },
@@ -1422,7 +1429,7 @@ const s = StyleSheet.create({
     flexWrap: 'wrap', gap: 6,
   },
   eqCell: {
-    minWidth: 60, height: 60, borderRadius: 10,
+    minWidth: 50, height: 50, borderRadius: 10,
     alignItems: 'center', justifyContent: 'center',
     backgroundColor: '#FFF8ED', borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.25)',
   },
@@ -1438,7 +1445,7 @@ const s = StyleSheet.create({
   eqCellFilled: { borderColor: WARM_ORANGE },
   eqCellRight:  { backgroundColor: 'rgba(46,125,50,0.18)', borderColor: SUCCESS },
   eqCellWrong:  { backgroundColor: 'rgba(196,80,58,0.15)', borderColor: '#C4503A' },
-  eqCellText:   { fontSize: 30, fontWeight: '900', color: DEEP_NAVY },
+  eqCellText:   { fontSize: 26, fontWeight: '900', color: DEEP_NAVY },
   // A sentence blank holds a whole word, not one character.
   eqCellWide:   { paddingHorizontal: 10 },
   eqPlus:       { fontSize: 18, fontWeight: '800', color: SLATE_TEAL },
@@ -1446,12 +1453,13 @@ const s = StyleSheet.create({
   eqMeaning:    { fontSize: 16, fontWeight: '700', color: WARM_ORANGE },
 
   charChoice: {
-    minWidth: 78, paddingHorizontal: 16, paddingVertical: 12, borderRadius: 12,
+    minWidth: 70, paddingHorizontal: 15, paddingVertical: 10, borderRadius: 12,
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.30)', backgroundColor: CARD_WHITE,
     alignItems: 'center',
   },
   charChoiceIdle:  { opacity: 0.5 },
-  charChoiceText:  { fontSize: 32, lineHeight: 40, fontWeight: '900', color: DEEP_NAVY },
+  // Chinese-only answers, the same 28 the Practice screen uses.
+  charChoiceText:  { fontSize: 28, lineHeight: 36, fontWeight: '900', color: DEEP_NAVY },
   charChoiceAudio: { fontSize: 15, marginTop: 2 },
   quizActions: { flexDirection: 'row', alignItems: 'center', gap: 14 },
 

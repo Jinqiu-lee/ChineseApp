@@ -129,10 +129,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "竖弯钩",
             "横折钩",
+            "横撇",
             "点",
-            "提",
-            "横"
+            "提"
           ],
           "correct": "横折钩",
           "result_char": "习",
@@ -151,10 +152,11 @@
           "rule_en": "Middle before the sides",
           "audio_text": "先中间后两边",
           "choices": [
+            "提",
             "竖勾",
+            "捺",
             "横撇",
-            "撇",
-            "捺"
+            "撇"
           ],
           "correct": "竖勾",
           "result_char": "水",
@@ -174,10 +176,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "横折钩",
             "横",
+            "横撇",
             "竖弯钩",
-            "竖",
-            "点"
+            "提"
           ],
           "correct": "横",
           "result_char": "七",
@@ -195,11 +198,12 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "横撇",
             "竖",
+            "点",
             "横折",
-            "横",
             "提",
-            "点"
+            "横"
           ],
           "correct": "竖",
           "result_char": "虫",
@@ -221,10 +225,11 @@
           "rule_en": "Left to right",
           "audio_text": "从左到右",
           "choices": [
+            "横折钩",
             "撇",
+            "横撇",
             "竖弯钩",
-            "横",
-            "点"
+            "提"
           ],
           "correct": "撇",
           "result_char": "儿",
@@ -242,11 +247,12 @@
           "rule_en": "Left to right",
           "audio_text": "从左到右",
           "choices": [
+            "横撇",
             "横",
+            "竖弯钩",
             "竖",
-            "提",
             "横折钩",
-            "竖弯钩"
+            "提"
           ],
           "correct": "横",
           "result_char": "地",
@@ -281,14 +287,14 @@
           "built_from": "横 + 竖弯钩",
           "note": "Two strokes, and the second one does all the work.",
           "predict": {
-            "shown": 1,
+            "shown": 0,
             "choices": [
               "竖弯钩",
-              "竖",
-              "撇",
-              "点"
+              "横",
+              "横撇",
+              "提"
             ],
-            "correct": "竖弯钩"
+            "correct": "横"
           }
         },
         {
@@ -305,9 +311,9 @@
           "predict": {
             "shown": 1,
             "choices": [
+              "横折钩",
               "竖弯钩",
-              "捺",
-              "横",
+              "横撇",
               "提"
             ],
             "correct": "竖弯钩"
@@ -329,14 +335,14 @@
           "built_from": "口 + 竖 + 提 + 点",
           "note": "A grub drawn from above: a body, a line through it, and a tail.",
           "predict": {
-            "shown": 5,
+            "shown": 1,
             "choices": [
-              "点",
-              "提",
-              "横",
-              "捺"
+              "竖弯钩",
+              "横折",
+              "横撇",
+              "提"
             ],
-            "correct": "点"
+            "correct": "横折"
           }
         },
         {
@@ -355,14 +361,14 @@
           "built_from": "土 + 也",
           "note": "Earth on the left, 也 on the right. The first character you write one whole side at a time.",
           "predict": {
-            "shown": 5,
+            "shown": 2,
             "choices": [
-              "竖弯钩",
-              "竖",
+              "横折钩",
               "提",
-              "点"
+              "竖弯钩",
+              "横撇"
             ],
-            "correct": "竖弯钩"
+            "correct": "提"
           }
         }
       ]
@@ -614,21 +620,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "习",
-      "shown_strokes": [
-        "横折钩",
-        "点"
-      ],
-      "correct": "提",
-      "choices": [
-        "提",
-        "横撇",
-        "竖弯钩",
-        "点"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "水",
       "correct": "water",
@@ -682,22 +673,6 @@
         "习",
         "七",
         "地"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "水",
-      "shown_strokes": [
-        "竖勾",
-        "横撇",
-        "撇"
-      ],
-      "correct": "捺",
-      "choices": [
-        "捺",
-        "提",
-        "横撇",
-        "竖弯钩"
       ]
     },
     {
@@ -757,20 +732,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "七",
-      "shown_strokes": [
-        "横"
-      ],
-      "correct": "竖弯钩",
-      "choices": [
-        "竖弯钩",
-        "提",
-        "横撇",
-        "点"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "地",
       "correct": "earth / ground",
@@ -824,24 +785,6 @@
         "习",
         "水",
         "七"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "地",
-      "shown_strokes": [
-        "横",
-        "竖",
-        "提",
-        "横折钩",
-        "竖"
-      ],
-      "correct": "竖弯钩",
-      "choices": [
-        "竖弯钩",
-        "提",
-        "横撇",
-        "点"
       ]
     },
     {
@@ -901,24 +844,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "虫",
-      "shown_strokes": [
-        "竖",
-        "横折",
-        "横",
-        "竖",
-        "提"
-      ],
-      "correct": "点",
-      "choices": [
-        "点",
-        "提",
-        "横撇",
-        "竖弯钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "儿",
       "correct": "child / son",
@@ -972,20 +897,6 @@
         "习",
         "水",
         "七"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "儿",
-      "shown_strokes": [
-        "撇"
-      ],
-      "correct": "竖弯钩",
-      "choices": [
-        "竖弯钩",
-        "提",
-        "横撇",
-        "点"
       ]
     },
     {
@@ -1162,6 +1073,234 @@
         "七月",
         "七个月",
         "七个人"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "习",
+      "shown_strokes": [],
+      "correct": "横折钩",
+      "choices": [
+        "竖弯钩",
+        "横折钩",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "习",
+      "shown_strokes": [
+        "横折钩"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖弯钩",
+        "点",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "习",
+      "shown_strokes": [
+        "横折钩",
+        "点"
+      ],
+      "correct": "提",
+      "choices": [
+        "横折钩",
+        "提",
+        "竖弯钩",
+        "横撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "水",
+      "shown_strokes": [],
+      "correct": "竖勾",
+      "choices": [
+        "竖弯钩",
+        "竖勾",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "水",
+      "shown_strokes": [
+        "竖勾",
+        "横撇"
+      ],
+      "correct": "撇",
+      "choices": [
+        "竖弯钩",
+        "撇",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "水",
+      "shown_strokes": [
+        "竖勾",
+        "横撇",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "竖弯钩",
+        "捺",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "七",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "竖弯钩",
+        "横",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "七",
+      "shown_strokes": [
+        "横"
+      ],
+      "correct": "竖弯钩",
+      "choices": [
+        "横折钩",
+        "竖弯钩",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "地",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "竖弯钩",
+        "横",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "地",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "提"
+      ],
+      "correct": "横折钩",
+      "choices": [
+        "竖弯钩",
+        "横折钩",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "地",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "提",
+        "横折钩",
+        "竖"
+      ],
+      "correct": "竖弯钩",
+      "choices": [
+        "横折钩",
+        "竖弯钩",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "虫",
+      "shown_strokes": [],
+      "correct": "竖",
+      "choices": [
+        "竖弯钩",
+        "竖",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "虫",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "横"
+      ],
+      "correct": "竖",
+      "choices": [
+        "竖弯钩",
+        "竖",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "虫",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "横",
+        "竖",
+        "提"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖弯钩",
+        "点",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "儿",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "竖弯钩",
+        "撇",
+        "横撇",
+        "提"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "儿",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "竖弯钩",
+      "choices": [
+        "横折钩",
+        "竖弯钩",
+        "横撇",
+        "提"
       ]
     }
   ]

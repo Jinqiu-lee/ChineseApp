@@ -129,10 +129,11 @@
           "rule_en": "Horizontal before vertical",
           "audio_text": "先横后竖",
           "choices": [
+            "横折钩",
             "横",
+            "点",
             "竖",
-            "横折",
-            "撇"
+            "横折"
           ],
           "correct": "横",
           "result_char": "五",
@@ -152,10 +153,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "横折钩",
             "点",
+            "横折",
             "横",
-            "撇",
-            "捺"
+            "撇"
           ],
           "correct": "点",
           "result_char": "六",
@@ -175,10 +177,11 @@
           "rule_en": "Outside before inside",
           "audio_text": "先外后内",
           "choices": [
+            "横折",
             "撇",
+            "点",
             "横折钩",
-            "横",
-            "竖"
+            "横"
           ],
           "correct": "撇",
           "result_char": "月",
@@ -212,14 +215,14 @@
           "built_from": "竖 + 横折 + 横",
           "note": "An open mouth. The base closes it last.",
           "predict": {
-            "shown": 2,
+            "shown": 0,
             "choices": [
-              "横",
+              "横折钩",
               "竖",
               "横折",
               "点"
             ],
-            "correct": "横"
+            "correct": "竖"
           }
         },
         {
@@ -238,9 +241,9 @@
           "predict": {
             "shown": 3,
             "choices": [
+              "横折钩",
               "横",
-              "竖",
-              "撇",
+              "横折",
               "点"
             ],
             "correct": "横"
@@ -261,14 +264,14 @@
           "built_from": "日 + 横",
           "note": "One more line again. Stood upright, it is an eye.",
           "predict": {
-            "shown": 4,
+            "shown": 1,
             "choices": [
               "横",
-              "竖",
-              "撇",
+              "横折",
+              "横折钩",
               "点"
             ],
-            "correct": "横"
+            "correct": "横折"
           }
         },
         {
@@ -287,14 +290,14 @@
           "built_from": "横 + 竖 + 竖 + 横 + 横 + 横",
           "note": "The outline of an ear, lines and all.",
           "predict": {
-            "shown": 5,
+            "shown": 2,
             "choices": [
-              "横",
+              "横折钩",
               "竖",
-              "撇",
-              "捺"
+              "横折",
+              "点"
             ],
-            "correct": "横"
+            "correct": "竖"
           }
         }
       ]
@@ -476,22 +479,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "五",
-      "shown_strokes": [
-        "横",
-        "竖",
-        "横折"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "点",
-        "横折",
-        "横折钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "六",
       "correct": "six",
@@ -545,22 +532,6 @@
         "五",
         "月",
         "口"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "六",
-      "shown_strokes": [
-        "点",
-        "横",
-        "撇"
-      ],
-      "correct": "点",
-      "choices": [
-        "点",
-        "横折",
-        "横折钩",
-        "横"
       ]
     },
     {
@@ -620,22 +591,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "月",
-      "shown_strokes": [
-        "撇",
-        "横折钩",
-        "横"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "点",
-        "横折",
-        "横折钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "口",
       "correct": "mouth",
@@ -689,21 +644,6 @@
         "五",
         "六",
         "月"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "口",
-      "shown_strokes": [
-        "竖",
-        "横折"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "点",
-        "横折",
-        "横折钩"
       ]
     },
     {
@@ -763,22 +703,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "日",
-      "shown_strokes": [
-        "竖",
-        "横折",
-        "横"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "点",
-        "横折",
-        "横折钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "目",
       "correct": "eye",
@@ -835,23 +759,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "目",
-      "shown_strokes": [
-        "竖",
-        "横折",
-        "横",
-        "横"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "点",
-        "横折",
-        "横折钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "耳",
       "correct": "ear",
@@ -905,24 +812,6 @@
         "五",
         "六",
         "月"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "耳",
-      "shown_strokes": [
-        "横",
-        "竖",
-        "竖",
-        "横",
-        "横"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "点",
-        "横折",
-        "横折钩"
       ]
     },
     {
@@ -1148,6 +1037,309 @@
         "六个月",
         "一个月",
         "五个月"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "五",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "五",
+      "shown_strokes": [
+        "横",
+        "竖"
+      ],
+      "correct": "横折",
+      "choices": [
+        "横",
+        "横折",
+        "横折钩",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "五",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "横折"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "六",
+      "shown_strokes": [],
+      "correct": "点",
+      "choices": [
+        "横",
+        "点",
+        "横折钩",
+        "横折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "六",
+      "shown_strokes": [
+        "点",
+        "横"
+      ],
+      "correct": "撇",
+      "choices": [
+        "横折钩",
+        "撇",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "六",
+      "shown_strokes": [
+        "点",
+        "横",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "横",
+        "点",
+        "横折钩",
+        "横折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "月",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "横折钩",
+        "撇",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "月",
+      "shown_strokes": [
+        "撇",
+        "横折钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "月",
+      "shown_strokes": [
+        "撇",
+        "横折钩",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "口",
+      "shown_strokes": [],
+      "correct": "竖",
+      "choices": [
+        "横折钩",
+        "竖",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "口",
+      "shown_strokes": [
+        "竖"
+      ],
+      "correct": "横折",
+      "choices": [
+        "横",
+        "横折",
+        "横折钩",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "口",
+      "shown_strokes": [
+        "竖",
+        "横折"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "日",
+      "shown_strokes": [],
+      "correct": "竖",
+      "choices": [
+        "横折钩",
+        "竖",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "日",
+      "shown_strokes": [
+        "竖",
+        "横折"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "日",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "目",
+      "shown_strokes": [],
+      "correct": "竖",
+      "choices": [
+        "横折钩",
+        "竖",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "目",
+      "shown_strokes": [
+        "竖",
+        "横折"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "目",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "横",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "耳",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "耳",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "竖"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "耳",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "竖",
+        "横",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横折钩",
+        "横",
+        "横折",
+        "点"
       ]
     }
   ]

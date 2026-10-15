@@ -2,16 +2,21 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScreenBackground from '../components/ScreenBackground';
-import StrokeAnimator from '../components/characters/StrokeAnimator';
+import StrokeAnimator, { strokeCount } from '../components/characters/StrokeAnimator';
 import { StrokeCombo } from '../components/characters/StrokeVisual';
 import StrokeWriter from '../components/characters/StrokeWriter';
 import { PRACTICE_STAGES, questionsForStage, buildLessonQuiz } from '../data/characters/practiceStages';
 import { getStrokePinyin } from '../data/characters/strokeAssets';
-import { getCharacterReading } from '../data/characters';
+import { getCharacterReading, getCharacterStrokeOrder } from '../data/characters';
 import { speakChinese } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
 
 const PASS_SCORE = 60;
+
+// Height of the question body for the two types that must match each other:
+// a Chinese character (glyph 74 + gap 8 + its 🔊 button 28) and a listen
+// question, whose circle is sized to the same number.
+const PROMPT_BODY = 110;
 
 const TYPE_LABELS = {
   char_to_meaning:   '🀄 Character → Meaning',
@@ -34,6 +39,11 @@ const HINTABLE_TYPES = new Set(['audio_to_char', 'pinyin_to_char']);
 
 // Answers are strokes, so they are shown as shapes rather than their names.
 const STROKE_ANSWER_TYPES = new Set(['missing_stroke', 'missing_component']);
+
+// Answers are English prose, which reads larger than pinyin at the same point
+// size and so gets a size of its own. Pinyin answers (char_to_pinyin) stay on
+// the base size — they are short Latin tokens, not sentences.
+const EN_ANSWER_TYPES = new Set(['char_to_meaning']);
 
 // The task here is listening, so the prompt plays by itself.
 const AUTOPLAY_TYPES = new Set(['audio_to_char']);
@@ -178,24 +188,54 @@ export default function CharacterRecallScreen({
       case 'meaning_to_char':
         return <Text style={s.promptEn}>{q.prompt_en || q.question}</Text>;
 
-      case 'missing_stroke':
+      case 'missing_stroke': {
+        // The blank can sit anywhere, so every OTHER stroke is drawn — before
+        // it and after it. The question data only stores the strokes up to the
+        // blank, so the rest comes from the course-wide stroke-order lookup.
+        const blank = (q.shown_strokes || []).length;
+        const order = getCharacterStrokeOrder(q.prompt_char);
+        // hideStroke draws the finished character minus the quizzed stroke,
+        // and leaves out its grey silhouette too so the shape isn't given away.
         return (
           <View style={s.promptInner}>
-            <StrokeAnimator char={q.prompt_char} size={104} revealUpTo={(q.shown_strokes || []).length} colored />
+            <StrokeAnimator char={q.prompt_char} size={104} hideStroke={blank} colored />
             <View style={s.equationRow}>
-              {(q.shown_strokes || []).map((st, i) => (
-                <React.Fragment key={`${st}-${i}`}>
-                  {i > 0 && <Text style={s.eqSign}>+</Text>}
-                  <View style={s.eqCell}><StrokeCombo value={st} size={28} /></View>
-                </React.Fragment>
-              ))}
-              <Text style={s.eqSign}>+</Text>
-              <View style={[s.eqCell, s.eqCellBlank]}><Text style={s.eqQ}>?</Text></View>
+              {order
+                ? order.map((st, i) => (
+                    <React.Fragment key={`${st}-${i}`}>
+                      {i > 0 && <Text style={s.eqSign}>+</Text>}
+                      {i === blank
+                        ? <View style={[s.eqCell, s.eqCellBlank]}><Text style={s.eqQ}>?</Text></View>
+                        : <View style={s.eqCell}><StrokeCombo value={st} size={28} /></View>}
+                    </React.Fragment>
+                  ))
+                : (
+                  // No order on record: fall back to the strokes we do have,
+                  // with the remainder as muted placeholders so the equation
+                  // still adds up to the real stroke count.
+                  <>
+                    {(q.shown_strokes || []).map((st, i) => (
+                      <React.Fragment key={`${st}-${i}`}>
+                        {i > 0 && <Text style={s.eqSign}>+</Text>}
+                        <View style={s.eqCell}><StrokeCombo value={st} size={28} /></View>
+                      </React.Fragment>
+                    ))}
+                    {blank > 0 && <Text style={s.eqSign}>+</Text>}
+                    <View style={[s.eqCell, s.eqCellBlank]}><Text style={s.eqQ}>?</Text></View>
+                    {Array.from({ length: Math.max(0, strokeCount(q.prompt_char) - blank - 1) }).map((_, i) => (
+                      <React.Fragment key={`rest-${i}`}>
+                        <Text style={s.eqSign}>+</Text>
+                        <View style={[s.eqCell, s.eqCellRest]}><Text style={s.eqRestDot}>·</Text></View>
+                      </React.Fragment>
+                    ))}
+                  </>
+                )}
               <Text style={s.eqSign}>=</Text>
               <Text style={s.eqResult}>{q.prompt_char}</Text>
             </View>
           </View>
         );
+      }
 
       case 'missing_component':
         return (
@@ -299,8 +339,15 @@ export default function CharacterRecallScreen({
             {renderPrompt()}
           </View>
 
+          {/* Once answered, the distractors have done their job and only get in
+              the way of reading the result: keep the correct answer, plus the
+              wrong one if that is what was picked. A correct pick leaves one
+              button, a wrong pick two. */}
           <View style={s.choices}>
-            {q.choices.map(c => {
+            {(picked == null
+              ? q.choices
+              : q.choices.filter(c => c === picked || c === q.correct)
+            ).map(c => {
               const isPicked  = picked === c;
               const isCorrect = c === q.correct;
               const reveal    = picked != null;
@@ -309,6 +356,8 @@ export default function CharacterRecallScreen({
               const canSpeak  = (showAnswerHints || asStroke) && hasHan(c);
               const hintable  = HINTABLE_TYPES.has(q.type) && hasHan(c) && !!pinyinFor(c);
               const hinted    = hints[c];
+              // Filled green or red: the text on top has to switch to white.
+              const lit       = reveal && (isCorrect || isPicked);
               return (
                 <TouchableOpacity
                   key={c}
@@ -332,17 +381,27 @@ export default function CharacterRecallScreen({
                         activeOpacity={0.6}
                         hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
                       >
-                        <Text style={[s.choiceText, s.choiceTextBig, s.choiceHintable]}>{c}</Text>
-                        {hinted && <Text style={s.choicePinyin}>{pinyinFor(c)}</Text>}
+                        <Text style={[
+                          s.choiceText, s.choiceTextCn, s.choiceHintable,
+                          lit && s.choiceTextLit, lit && s.choiceHintableLit,
+                        ]}>{c}</Text>
+                        {hinted && <Text style={[s.choicePinyin, lit && s.choicePinyinLit]}>{pinyinFor(c)}</Text>}
                       </TouchableOpacity>
                     ) : (
                       <>
-                        <Text style={s.choiceText}>{c}</Text>
-                        {!!py && <Text style={s.choicePinyin}>{py}</Text>}
+                        {/* One style cannot serve all three: a Chinese glyph, an
+                            English phrase and a pinyin token read at very
+                            different sizes for the same point size. */}
+                        <Text style={[
+                          s.choiceText,
+                          hasHan(c) ? s.choiceTextCn : EN_ANSWER_TYPES.has(q.type) && s.choiceTextEn,
+                          lit && s.choiceTextLit,
+                        ]}>{c}</Text>
+                        {!!py && <Text style={[s.choicePinyin, lit && s.choicePinyinLit]}>{py}</Text>}
                       </>
                     )}
                     {asStroke && !!getStrokePinyin(c) && (
-                      <Text style={s.choicePinyin}>{getStrokePinyin(c)}</Text>
+                      <Text style={[s.choicePinyin, lit && s.choicePinyinLit]}>{getStrokePinyin(c)}</Text>
                     )}
                   </View>
                   {canSpeak && (
@@ -417,16 +476,21 @@ const s = StyleSheet.create({
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.35)',
   },
   questionFrameCompact: { padding: 12, gap: 8 },
-  promptInner: { alignItems: 'center', gap: 8 },
+  // The frame itself has no fixed height — it grows with whatever is inside,
+  // so an English question sits in a short frame and a long one in a taller.
+  // The exception is the pair below: a Chinese-character question and a listen
+  // question are given the same body height (PROMPT_BODY) so the page does not
+  // jump as you move between them.
+  promptInner: { alignItems: 'center', justifyContent: 'center', gap: 8, minHeight: PROMPT_BODY },
 
-  promptChar:   { fontSize: 76, fontWeight: '900', color: DEEP_NAVY, textAlign: 'center' },
+  promptChar:   { fontSize: 60, lineHeight: 74, fontWeight: '900', color: DEEP_NAVY, textAlign: 'center' },
   promptPinyin: { fontSize: 46, fontWeight: '900', color: WARM_BROWN, textAlign: 'center' },
   promptEn:     { fontSize: 34, fontWeight: '900', color: WARM_ORANGE, textAlign: 'center' },
   promptAudioBtn: {
     backgroundColor: SLATE_TEAL, borderRadius: 10,
-    paddingVertical: 8, paddingHorizontal: 18,
+    paddingVertical: 6, paddingHorizontal: 14,
   },
-  promptAudioText: { color: CARD_WHITE, fontWeight: '800', fontSize: 16 },
+  promptAudioText: { color: CARD_WHITE, fontWeight: '800', fontSize: 12 },
 
   // 大 + ? = 天
   equationRow: {
@@ -439,36 +503,49 @@ const s = StyleSheet.create({
     backgroundColor: CARD_WHITE, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.25)',
   },
   eqCellBlank: { borderStyle: 'dashed' },
+  // A stroke that comes after the blank: present, but not the thing being asked.
+  eqCellRest:  { backgroundColor: 'rgba(55,73,80,0.06)', borderColor: 'rgba(155,104,70,0.15)' },
+  eqRestDot:   { fontSize: 15, fontWeight: '900', color: 'rgba(55,73,80,0.35)' },
   eqQ:         { fontSize: 19, fontWeight: '900', color: SLATE_TEAL },
   eqSign:      { fontSize: 17, fontWeight: '800', color: SLATE_TEAL, marginHorizontal: 2 },
   eqResult:    { fontSize: 34, fontWeight: '900', color: DEEP_NAVY },
 
   audioBig: {
-    width: 130, height: 130, borderRadius: 65, backgroundColor: CARD_WHITE,
+    width: PROMPT_BODY, height: PROMPT_BODY, borderRadius: PROMPT_BODY / 2, backgroundColor: CARD_WHITE,
     alignItems: 'center', justifyContent: 'center',
     borderWidth: 2, borderColor: 'rgba(155,104,70,0.25)',
   },
-  audioBigIcon: { fontSize: 52 },
+  audioBigIcon: { fontSize: 40 },
 
   choices: { width: '100%', gap: 10, marginTop: 22 },
   choice: {
     flexDirection: 'row', alignItems: 'center',
-    backgroundColor: CARD_WHITE, borderRadius: 14, paddingVertical: 17, paddingHorizontal: 18,
+    backgroundColor: CARD_WHITE, borderRadius: 14, paddingVertical: 14, paddingHorizontal: 18,
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.22)',
   },
   choiceCompact: { paddingVertical: 10, paddingHorizontal: 14 },
   choiceMain:   { flex: 1, alignItems: 'center' },
-  choiceRight:  { backgroundColor: 'rgba(46,125,50,0.18)', borderColor: SUCCESS, borderWidth: 2.5 },
-  choiceWrong:  { backgroundColor: 'rgba(196,80,58,0.15)', borderColor: '#C4503A', borderWidth: 2.5 },
+  // Once the distractors are filtered away the result is the only thing on
+  // screen, so it reads as a solid verdict rather than a faint tint. At this
+  // strength the navy text no longer has the contrast to sit on top, so
+  // anything inside a filled button switches to white — see `lit` above.
+  choiceRight:  { backgroundColor: 'rgba(46,125,50,0.7)', borderColor: SUCCESS, borderWidth: 2.5 },
+  choiceWrong:  { backgroundColor: 'rgba(196,80,58,0.7)', borderColor: '#C4503A', borderWidth: 2.5 },
+  choiceTextLit:     { color: CARD_WHITE },
+  choicePinyinLit:   { color: 'rgba(255,255,255,0.92)' },
+  choiceHintableLit: { borderBottomColor: 'rgba(255,255,255,0.75)' },
+  // Answer text comes in three sizes and only three: Chinese 28, pinyin 26,
+  // English 24. Every question type picks one of them, so a bare character is
+  // the same size whichever question is asking for it.
   choiceText:   { fontSize: 26, lineHeight: 34, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center' },
-  // Listen→Character and Pinyin→Character: the glyph is the whole answer.
-  choiceTextBig: { fontSize: 34, lineHeight: 44 },
+  choiceTextCn: { fontSize: 28, lineHeight: 36 },
+  choiceTextEn: { fontSize: 22, lineHeight: 29 },
   // Dashed underline signals "tap me for the reading", Duolingo-style.
   choiceHintable: {
     borderBottomWidth: 1.5, borderBottomColor: SLATE_TEAL, borderStyle: 'dashed',
     paddingBottom: 2,
   },
-  choicePinyin: { fontSize: 17, color: WARM_BROWN, marginTop: 4, textAlign: 'center' },
+  choicePinyin: { fontSize: 14, color: WARM_BROWN, marginTop: 4, textAlign: 'center' },
   choiceAudioBtn:  { paddingLeft: 10 },
   choiceAudioIcon: { fontSize: 22 },
 

@@ -49,8 +49,8 @@
           "example_note": "飞 is built on one great 横斜钩 — the wing itself.",
           "example_stroke_order": [
             "横斜钩",
-            "点",
-            "提"
+            "撇",
+            "点"
           ]
         },
         {
@@ -142,10 +142,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "竖提",
             "横斜钩",
-            "点",
-            "提",
-            "撇"
+            "横折弯钩",
+            "撇",
+            "点"
           ],
           "correct": "横斜钩",
           "result_char": "飞",
@@ -153,10 +154,10 @@
           "result_meaning": "to fly",
           "stroke_order": [
             "横斜钩",
-            "点",
-            "提"
+            "撇",
+            "点"
           ],
-          "explanation": "The great wing first, then the two small marks tucked inside it."
+          "explanation": "The great wing first, then the short 撇 and the 点 tucked inside it."
         },
         {
           "rule": "先外后内",
@@ -164,10 +165,11 @@
           "rule_en": "Outside before inside",
           "audio_text": "先外后内",
           "choices": [
+            "竖提",
             "撇",
+            "横折弯钩",
             "横斜钩",
-            "点",
-            "横"
+            "点"
           ],
           "correct": "撇",
           "result_char": "风",
@@ -187,10 +189,11 @@
           "rule_en": "Left to right",
           "audio_text": "从左到右",
           "choices": [
+            "点",
             "撇",
+            "竖提",
             "横折弯钩",
-            "横",
-            "点"
+            "横斜钩"
           ],
           "correct": "撇",
           "result_char": "九",
@@ -208,10 +211,11 @@
           "rule_en": "Left to right",
           "audio_text": "从左到右",
           "choices": [
+            "点",
             "撇",
+            "竖提",
             "横折弯钩",
-            "竖",
-            "提"
+            "横斜钩"
           ],
           "correct": "撇",
           "result_char": "几",
@@ -229,10 +233,11 @@
           "rule_en": "Left to right",
           "audio_text": "从左到右",
           "choices": [
+            "横折弯钩",
             "竖提",
+            "横斜钩",
             "点",
-            "撇",
-            "横"
+            "撇"
           ],
           "correct": "竖提",
           "result_char": "以",
@@ -252,10 +257,11 @@
           "rule_en": "Horizontal before vertical",
           "audio_text": "先横后竖",
           "choices": [
+            "横斜钩",
             "横",
+            "竖勾",
             "竖",
-            "横折",
-            "点"
+            "横折"
           ],
           "correct": "横",
           "result_char": "可",
@@ -276,10 +282,12 @@
           "rule_en": "Left to right",
           "audio_text": "从左到右",
           "choices": [
+            "横斜钩",
             "横",
+            "横折弯钩",
             "竖",
-            "撇",
-            "横折弯钩"
+            "点",
+            "撇"
           ],
           "correct": "横",
           "result_char": "机",
@@ -314,14 +322,14 @@
           "built_from": "撇 + 横折弯钩",
           "note": "Two strokes, and the second one does nearly all the work.",
           "predict": {
-            "shown": 1,
+            "shown": 0,
             "choices": [
+              "竖提",
+              "撇",
               "横折弯钩",
-              "竖弯钩",
-              "捺",
-              "点"
+              "横斜钩"
             ],
-            "correct": "横折弯钩"
+            "correct": "撇"
           }
         },
         {
@@ -338,10 +346,10 @@
           "predict": {
             "shown": 1,
             "choices": [
+              "撇",
               "横折弯钩",
-              "横斜钩",
               "竖提",
-              "提"
+              "横斜钩"
             ],
             "correct": "横折弯钩"
           }
@@ -360,14 +368,14 @@
           "built_from": "撇 + 横斜钩 + 撇 + 点",
           "note": "A frame with something moving inside it — air on the move.",
           "predict": {
-            "shown": 3,
+            "shown": 1,
             "choices": [
-              "点",
-              "提",
               "撇",
-              "横"
+              "横斜钩",
+              "竖提",
+              "横折弯钩"
             ],
-            "correct": "点"
+            "correct": "横斜钩"
           }
         },
         {
@@ -386,14 +394,14 @@
           "built_from": "木 + 几",
           "note": "木 on the left, 几 on the right. 几 jǐ is also there for its sound: 机 is jī.",
           "predict": {
-            "shown": 5,
+            "shown": 2,
             "choices": [
+              "竖提",
+              "撇",
               "横折弯钩",
-              "竖弯钩",
-              "捺",
-              "竖"
+              "横斜钩"
             ],
-            "correct": "横折弯钩"
+            "correct": "撇"
           }
         }
       ]
@@ -656,21 +664,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "飞",
-      "shown_strokes": [
-        "横斜钩",
-        "点"
-      ],
-      "correct": "提",
-      "choices": [
-        "提",
-        "横斜钩",
-        "横折弯钩",
-        "竖提"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "风",
       "correct": "wind",
@@ -724,22 +717,6 @@
         "飞",
         "九",
         "几"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "风",
-      "shown_strokes": [
-        "撇",
-        "横斜钩",
-        "撇"
-      ],
-      "correct": "点",
-      "choices": [
-        "点",
-        "横斜钩",
-        "横折弯钩",
-        "竖提"
       ]
     },
     {
@@ -799,20 +776,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "九",
-      "shown_strokes": [
-        "撇"
-      ],
-      "correct": "横折弯钩",
-      "choices": [
-        "横折弯钩",
-        "横斜钩",
-        "竖提",
-        "点"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "几",
       "correct": "how many",
@@ -866,20 +829,6 @@
         "飞",
         "风",
         "九"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "几",
-      "shown_strokes": [
-        "撇"
-      ],
-      "correct": "横折弯钩",
-      "choices": [
-        "横折弯钩",
-        "横斜钩",
-        "竖提",
-        "点"
       ]
     },
     {
@@ -939,22 +888,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "以",
-      "shown_strokes": [
-        "竖提",
-        "点",
-        "撇"
-      ],
-      "correct": "点",
-      "choices": [
-        "点",
-        "横斜钩",
-        "横折弯钩",
-        "竖提"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "可",
       "correct": "can / may",
@@ -1011,23 +944,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "可",
-      "shown_strokes": [
-        "横",
-        "竖",
-        "横折",
-        "横"
-      ],
-      "correct": "竖勾",
-      "choices": [
-        "竖勾",
-        "横斜钩",
-        "横折弯钩",
-        "竖提"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "机",
       "correct": "machine",
@@ -1081,24 +997,6 @@
         "飞",
         "风",
         "九"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "机",
-      "shown_strokes": [
-        "横",
-        "竖",
-        "撇",
-        "点",
-        "撇"
-      ],
-      "correct": "横折弯钩",
-      "choices": [
-        "横折弯钩",
-        "横斜钩",
-        "竖提",
-        "点"
       ]
     },
     {
@@ -1319,6 +1217,275 @@
         "大风",
         "大雨",
         "大地"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "飞",
+      "shown_strokes": [],
+      "correct": "横斜钩",
+      "choices": [
+        "撇",
+        "横斜钩",
+        "竖提",
+        "横折弯钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "飞",
+      "shown_strokes": [
+        "横斜钩"
+      ],
+      "correct": "撇",
+      "choices": [
+        "竖提",
+        "撇",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "飞",
+      "shown_strokes": [
+        "横斜钩",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖提",
+        "点",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "风",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "竖提",
+        "撇",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "风",
+      "shown_strokes": [
+        "撇",
+        "横斜钩"
+      ],
+      "correct": "撇",
+      "choices": [
+        "竖提",
+        "撇",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "风",
+      "shown_strokes": [
+        "撇",
+        "横斜钩",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖提",
+        "点",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "九",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "竖提",
+        "撇",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "九",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "横折弯钩",
+      "choices": [
+        "撇",
+        "横折弯钩",
+        "竖提",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "几",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "竖提",
+        "撇",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "几",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "横折弯钩",
+      "choices": [
+        "撇",
+        "横折弯钩",
+        "竖提",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "以",
+      "shown_strokes": [],
+      "correct": "竖提",
+      "choices": [
+        "撇",
+        "竖提",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "以",
+      "shown_strokes": [
+        "竖提",
+        "点"
+      ],
+      "correct": "撇",
+      "choices": [
+        "竖提",
+        "撇",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "以",
+      "shown_strokes": [
+        "竖提",
+        "点",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖提",
+        "点",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "可",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "竖提",
+        "横",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "可",
+      "shown_strokes": [
+        "横",
+        "竖"
+      ],
+      "correct": "横折",
+      "choices": [
+        "竖提",
+        "横折",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "可",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "横折",
+        "横"
+      ],
+      "correct": "竖勾",
+      "choices": [
+        "竖提",
+        "竖勾",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "机",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "竖提",
+        "横",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "机",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖提",
+        "点",
+        "横折弯钩",
+        "横斜钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "机",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "撇",
+        "点",
+        "撇"
+      ],
+      "correct": "横折弯钩",
+      "choices": [
+        "撇",
+        "横折弯钩",
+        "竖提",
+        "横斜钩"
       ]
     }
   ]

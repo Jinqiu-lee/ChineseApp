@@ -132,10 +132,11 @@
           "rule_en": "Middle before the sides",
           "audio_text": "先中间后两边",
           "choices": [
+            "横折",
             "竖",
+            "竖勾",
             "竖折",
-            "横",
-            "撇"
+            "竖弯"
           ],
           "correct": "竖",
           "result_char": "山",
@@ -154,11 +155,12 @@
           "rule_en": "Outside, then inside, then close",
           "audio_text": "先外后内再封口",
           "choices": [
+            "竖折",
             "竖",
+            "横",
             "横折",
-            "撇",
             "竖弯",
-            "横"
+            "撇"
           ],
           "correct": "竖",
           "result_char": "四",
@@ -179,10 +181,11 @@
           "rule_en": "Middle before the sides",
           "audio_text": "先中间后两边",
           "choices": [
+            "竖弯",
             "竖勾",
+            "竖折",
             "撇",
-            "点",
-            "横"
+            "点"
           ],
           "correct": "竖勾",
           "result_char": "小",
@@ -201,10 +204,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "竖折",
             "竖勾",
+            "捺",
             "横撇",
-            "撇",
-            "捺"
+            "撇"
           ],
           "correct": "竖勾",
           "result_char": "水",
@@ -224,10 +228,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "竖弯",
             "点",
+            "竖折",
             "撇",
-            "捺",
-            "横"
+            "捺"
           ],
           "correct": "点",
           "result_char": "火",
@@ -247,10 +252,11 @@
           "rule_en": "Middle before the sides",
           "audio_text": "先中间后两边",
           "choices": [
+            "竖弯",
             "竖",
+            "竖折",
             "撇",
-            "点",
-            "横"
+            "点"
           ],
           "correct": "竖",
           "result_char": "少",
@@ -270,10 +276,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "竖折",
             "横",
+            "点",
             "撇",
-            "捺",
-            "点"
+            "捺"
           ],
           "correct": "横",
           "result_char": "太",
@@ -307,14 +314,14 @@
           "built_from": "竖勾 + 撇 + 点",
           "note": "Three small marks around a centre — small. The opposite of 大.",
           "predict": {
-            "shown": 2,
+            "shown": 0,
             "choices": [
-              "点",
-              "撇",
-              "横",
-              "竖"
+              "竖",
+              "竖勾",
+              "竖弯",
+              "竖折"
             ],
-            "correct": "点"
+            "correct": "竖勾"
           }
         },
         {
@@ -333,10 +340,10 @@
           "predict": {
             "shown": 3,
             "choices": [
+              "竖勾",
               "撇",
-              "捺",
-              "横",
-              "竖"
+              "竖弯",
+              "竖折"
             ],
             "correct": "撇"
           }
@@ -355,14 +362,14 @@
           "built_from": "大 + 点",
           "note": "大 with a dot beneath: beyond big — too big.",
           "predict": {
-            "shown": 3,
+            "shown": 1,
             "choices": [
-              "点",
-              "横",
-              "竖",
-              "捺"
+              "竖勾",
+              "撇",
+              "竖弯",
+              "竖折"
             ],
-            "correct": "点"
+            "correct": "撇"
           }
         }
       ]
@@ -591,21 +598,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "山",
-      "shown_strokes": [
-        "竖",
-        "竖折"
-      ],
-      "correct": "竖",
-      "choices": [
-        "竖",
-        "竖折",
-        "竖弯",
-        "竖勾"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "四",
       "correct": "four",
@@ -659,23 +651,6 @@
         "山",
         "小",
         "水"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "四",
-      "shown_strokes": [
-        "竖",
-        "横折",
-        "撇",
-        "竖弯"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "竖折",
-        "竖弯",
-        "竖勾"
       ]
     },
     {
@@ -735,21 +710,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "小",
-      "shown_strokes": [
-        "竖勾",
-        "撇"
-      ],
-      "correct": "点",
-      "choices": [
-        "点",
-        "竖折",
-        "竖弯",
-        "竖勾"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "水",
       "correct": "water",
@@ -803,22 +763,6 @@
         "山",
         "四",
         "小"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "水",
-      "shown_strokes": [
-        "竖勾",
-        "横撇",
-        "撇"
-      ],
-      "correct": "捺",
-      "choices": [
-        "捺",
-        "竖折",
-        "竖弯",
-        "竖勾"
       ]
     },
     {
@@ -878,22 +822,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "火",
-      "shown_strokes": [
-        "点",
-        "撇",
-        "撇"
-      ],
-      "correct": "捺",
-      "choices": [
-        "捺",
-        "竖折",
-        "竖弯",
-        "竖勾"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "少",
       "correct": "few / little",
@@ -950,22 +878,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "少",
-      "shown_strokes": [
-        "竖",
-        "撇",
-        "点"
-      ],
-      "correct": "撇",
-      "choices": [
-        "撇",
-        "竖折",
-        "竖弯",
-        "竖勾"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "太",
       "correct": "too / extremely",
@@ -1019,22 +931,6 @@
         "山",
         "四",
         "小"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "太",
-      "shown_strokes": [
-        "横",
-        "撇",
-        "捺"
-      ],
-      "correct": "点",
-      "choices": [
-        "点",
-        "竖折",
-        "竖弯",
-        "竖勾"
       ]
     },
     {
@@ -1258,6 +1154,304 @@
         "太大",
         "太小",
         "太少"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "山",
+      "shown_strokes": [],
+      "correct": "竖",
+      "choices": [
+        "竖勾",
+        "竖",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "山",
+      "shown_strokes": [
+        "竖"
+      ],
+      "correct": "竖折",
+      "choices": [
+        "竖",
+        "竖折",
+        "竖勾",
+        "竖弯"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "山",
+      "shown_strokes": [
+        "竖",
+        "竖折"
+      ],
+      "correct": "竖",
+      "choices": [
+        "竖勾",
+        "竖",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "四",
+      "shown_strokes": [],
+      "correct": "竖",
+      "choices": [
+        "竖勾",
+        "竖",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "四",
+      "shown_strokes": [
+        "竖",
+        "横折"
+      ],
+      "correct": "撇",
+      "choices": [
+        "竖勾",
+        "撇",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "四",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "撇",
+        "竖弯"
+      ],
+      "correct": "横",
+      "choices": [
+        "竖勾",
+        "横",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "小",
+      "shown_strokes": [],
+      "correct": "竖勾",
+      "choices": [
+        "竖",
+        "竖勾",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "小",
+      "shown_strokes": [
+        "竖勾"
+      ],
+      "correct": "撇",
+      "choices": [
+        "竖勾",
+        "撇",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "小",
+      "shown_strokes": [
+        "竖勾",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖勾",
+        "点",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "水",
+      "shown_strokes": [],
+      "correct": "竖勾",
+      "choices": [
+        "竖",
+        "竖勾",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "水",
+      "shown_strokes": [
+        "竖勾",
+        "横撇"
+      ],
+      "correct": "撇",
+      "choices": [
+        "竖勾",
+        "撇",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "水",
+      "shown_strokes": [
+        "竖勾",
+        "横撇",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "竖勾",
+        "捺",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "火",
+      "shown_strokes": [],
+      "correct": "点",
+      "choices": [
+        "竖勾",
+        "点",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "火",
+      "shown_strokes": [
+        "点",
+        "撇"
+      ],
+      "correct": "撇",
+      "choices": [
+        "竖勾",
+        "撇",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "火",
+      "shown_strokes": [
+        "点",
+        "撇",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "竖勾",
+        "捺",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "少",
+      "shown_strokes": [],
+      "correct": "竖",
+      "choices": [
+        "竖勾",
+        "竖",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "少",
+      "shown_strokes": [
+        "竖",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖勾",
+        "点",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "少",
+      "shown_strokes": [
+        "竖",
+        "撇",
+        "点"
+      ],
+      "correct": "撇",
+      "choices": [
+        "竖勾",
+        "撇",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "太",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "竖勾",
+        "横",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "太",
+      "shown_strokes": [
+        "横",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "竖勾",
+        "捺",
+        "竖弯",
+        "竖折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "太",
+      "shown_strokes": [
+        "横",
+        "撇",
+        "捺"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖勾",
+        "点",
+        "竖弯",
+        "竖折"
       ]
     }
   ]

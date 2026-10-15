@@ -129,10 +129,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "竖折折钩",
             "横",
+            "撇点",
             "撇折",
-            "点",
-            "竖"
+            "点"
           ],
           "correct": "横",
           "result_char": "云",
@@ -152,10 +153,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "竖折折钩",
             "撇点",
+            "撇折",
             "撇",
-            "横",
-            "点"
+            "横"
           ],
           "correct": "撇点",
           "result_char": "女",
@@ -174,10 +176,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "竖折折钩",
             "撇",
+            "撇点",
             "撇折",
-            "点",
-            "横"
+            "点"
           ],
           "correct": "撇",
           "result_char": "么",
@@ -196,10 +199,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "撇折",
             "横折",
+            "撇点",
             "竖折折钩",
-            "横",
-            "撇"
+            "横"
           ],
           "correct": "横折",
           "result_char": "马",
@@ -218,11 +222,12 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "撇点",
             "撇",
+            "横",
             "横折钩",
-            "点",
             "竖折折钩",
-            "横"
+            "点"
           ],
           "correct": "撇",
           "result_char": "鸟",
@@ -243,12 +248,13 @@
           "rule_en": "Left before right",
           "audio_text": "先左后右",
           "choices": [
+            "撇折",
             "撇点",
+            "横",
             "撇",
-            "提",
-            "横折",
             "竖折折钩",
-            "横"
+            "提",
+            "横折"
           ],
           "correct": "撇点",
           "result_char": "妈",
@@ -284,14 +290,14 @@
           "built_from": "撇点 + 撇 + 横",
           "note": "A figure kneeling with arms crossed — the old drawing of a woman.",
           "predict": {
-            "shown": 2,
+            "shown": 0,
             "choices": [
               "横",
-              "竖",
-              "撇",
-              "点"
+              "撇点",
+              "竖折折钩",
+              "撇折"
             ],
-            "correct": "横"
+            "correct": "撇点"
           }
         },
         {
@@ -309,10 +315,10 @@
           "predict": {
             "shown": 2,
             "choices": [
+              "竖折折钩",
               "横",
-              "点",
-              "撇",
-              "竖"
+              "撇折",
+              "撇点"
             ],
             "correct": "横"
           }
@@ -332,14 +338,14 @@
           "built_from": "马 + 撇 + 点",
           "note": "Nearly the same shape as 马, with a beak on top and an eye inside.",
           "predict": {
-            "shown": 4,
+            "shown": 1,
             "choices": [
-              "横",
-              "点",
-              "撇",
-              "捺"
+              "竖折折钩",
+              "横折钩",
+              "撇折",
+              "撇点"
             ],
-            "correct": "横"
+            "correct": "横折钩"
           }
         },
         {
@@ -358,14 +364,14 @@
           "built_from": "女 + 马",
           "note": "女 carries the meaning, 马 carries the sound: mǎ becomes mā. The first character you have met that works this way.",
           "predict": {
-            "shown": 5,
+            "shown": 2,
             "choices": [
-              "横",
-              "点",
-              "撇",
-              "竖"
+              "竖折折钩",
+              "提",
+              "撇折",
+              "撇点"
             ],
-            "correct": "横"
+            "correct": "提"
           }
         }
       ]
@@ -609,22 +615,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "云",
-      "shown_strokes": [
-        "横",
-        "横",
-        "撇折"
-      ],
-      "correct": "点",
-      "choices": [
-        "点",
-        "撇点",
-        "撇折",
-        "竖折折钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "女",
       "correct": "woman",
@@ -678,21 +668,6 @@
         "云",
         "么",
         "马"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "女",
-      "shown_strokes": [
-        "撇点",
-        "撇"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "撇点",
-        "撇折",
-        "竖折折钩"
       ]
     },
     {
@@ -752,21 +727,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "么",
-      "shown_strokes": [
-        "撇",
-        "撇折"
-      ],
-      "correct": "点",
-      "choices": [
-        "点",
-        "撇点",
-        "撇折",
-        "竖折折钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "马",
       "correct": "horse",
@@ -820,21 +780,6 @@
         "云",
         "女",
         "么"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "马",
-      "shown_strokes": [
-        "横折",
-        "竖折折钩"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "撇点",
-        "撇折",
-        "竖折折钩"
       ]
     },
     {
@@ -894,23 +839,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "鸟",
-      "shown_strokes": [
-        "撇",
-        "横折钩",
-        "点",
-        "竖折折钩"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "撇点",
-        "撇折",
-        "竖折折钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "妈",
       "correct": "mother",
@@ -964,24 +892,6 @@
         "云",
         "女",
         "么"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "妈",
-      "shown_strokes": [
-        "撇点",
-        "撇",
-        "提",
-        "横折",
-        "竖折折钩"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "撇点",
-        "撇折",
-        "竖折折钩"
       ]
     },
     {
@@ -1136,6 +1046,262 @@
         "女儿",
         "妈妈",
         "木马"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "云",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "竖折折钩",
+        "横",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "云",
+      "shown_strokes": [
+        "横",
+        "横"
+      ],
+      "correct": "撇折",
+      "choices": [
+        "横",
+        "撇折",
+        "竖折折钩",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "云",
+      "shown_strokes": [
+        "横",
+        "横",
+        "撇折"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖折折钩",
+        "点",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "女",
+      "shown_strokes": [],
+      "correct": "撇点",
+      "choices": [
+        "横",
+        "撇点",
+        "竖折折钩",
+        "撇折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "女",
+      "shown_strokes": [
+        "撇点"
+      ],
+      "correct": "撇",
+      "choices": [
+        "竖折折钩",
+        "撇",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "女",
+      "shown_strokes": [
+        "撇点",
+        "撇"
+      ],
+      "correct": "横",
+      "choices": [
+        "竖折折钩",
+        "横",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "么",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "竖折折钩",
+        "撇",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "么",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "撇折",
+      "choices": [
+        "横",
+        "撇折",
+        "竖折折钩",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "么",
+      "shown_strokes": [
+        "撇",
+        "撇折"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖折折钩",
+        "点",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "马",
+      "shown_strokes": [],
+      "correct": "横折",
+      "choices": [
+        "竖折折钩",
+        "横折",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "马",
+      "shown_strokes": [
+        "横折"
+      ],
+      "correct": "竖折折钩",
+      "choices": [
+        "横",
+        "竖折折钩",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "马",
+      "shown_strokes": [
+        "横折",
+        "竖折折钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "竖折折钩",
+        "横",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "鸟",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "竖折折钩",
+        "撇",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "鸟",
+      "shown_strokes": [
+        "撇",
+        "横折钩"
+      ],
+      "correct": "点",
+      "choices": [
+        "竖折折钩",
+        "点",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "鸟",
+      "shown_strokes": [
+        "撇",
+        "横折钩",
+        "点",
+        "竖折折钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "竖折折钩",
+        "横",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "妈",
+      "shown_strokes": [],
+      "correct": "撇点",
+      "choices": [
+        "横",
+        "撇点",
+        "竖折折钩",
+        "撇折"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "妈",
+      "shown_strokes": [
+        "撇点",
+        "撇",
+        "提"
+      ],
+      "correct": "横折",
+      "choices": [
+        "竖折折钩",
+        "横折",
+        "撇折",
+        "撇点"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "妈",
+      "shown_strokes": [
+        "撇点",
+        "撇",
+        "提",
+        "横折",
+        "竖折折钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "竖折折钩",
+        "横",
+        "撇折",
+        "撇点"
       ]
     }
   ]

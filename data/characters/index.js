@@ -57,6 +57,25 @@ export function getCharacterReading(char) {
   return COURSE_READINGS[char];
 }
 
+// Stroke ORDER by name, from whichever lesson teaches the character.
+// strokeData.js holds the shapes but not the names, and a missing-stroke
+// question stores only the strokes before its blank — so showing the strokes
+// that come after it needs this lookup.
+const COURSE_STROKE_ORDERS = (() => {
+  const m = {};
+  for (const lesson of Object.values(CHARACTER_LESSONS)) {
+    const lc = lesson.learn_content || {};
+    (lc.part1_discover?.strokes || []).forEach(x => { m[x.example_char] = x.example_stroke_order; });
+    (lc.part2_build?.rules || []).forEach(r => { m[r.result_char] = r.stroke_order; });
+    (lc.part3_read?.characters || []).forEach(c => { m[c.character] = c.stroke_order; });
+  }
+  return m;
+})();
+
+export function getCharacterStrokeOrder(char) {
+  return COURSE_STROKE_ORDERS[char] || null;
+}
+
 export function getCharacterLesson(id) {
   return CHARACTER_LESSONS[id] || null;
 }

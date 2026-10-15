@@ -155,7 +155,9 @@
           "rule_en": "Horizontal before vertical",
           "audio_text": "先横后竖",
           "choices": [
+            "捺",
             "横",
+            "撇",
             "竖"
           ],
           "correct": "横",
@@ -174,7 +176,9 @@
           "rule_en": "Left-falling before right-falling",
           "audio_text": "先撇后捺",
           "choices": [
+            "竖",
             "撇",
+            "横",
             "捺"
           ],
           "correct": "撇",
@@ -220,10 +224,10 @@
           "predict": {
             "shown": 1,
             "choices": [
+              "捺",
               "横",
-              "竖",
               "撇",
-              "捺"
+              "竖"
             ],
             "correct": "横"
           }
@@ -241,12 +245,12 @@
           "built_from": "二 + 横",
           "note": "Three 横 stacked. The pattern is now obvious.",
           "predict": {
-            "shown": 2,
+            "shown": 1,
             "choices": [
+              "捺",
               "横",
-              "竖",
               "撇",
-              "捺"
+              "竖"
             ],
             "correct": "横"
           }
@@ -265,10 +269,10 @@
           "predict": {
             "shown": 1,
             "choices": [
-              "横",
+              "捺",
               "竖",
               "撇",
-              "捺"
+              "横"
             ],
             "correct": "竖"
           }
@@ -285,14 +289,14 @@
           "built_from": "撇 + 捺 (apart)",
           "note": "撇 and 捺 standing apart, not touching.",
           "predict": {
-            "shown": 1,
+            "shown": 0,
             "choices": [
-              "横",
-              "竖",
+              "捺",
               "撇",
-              "捺"
+              "竖",
+              "横"
             ],
-            "correct": "捺"
+            "correct": "撇"
           }
         },
         {
@@ -309,10 +313,10 @@
           "predict": {
             "shown": 1,
             "choices": [
-              "横",
-              "竖",
               "撇",
-              "捺"
+              "捺",
+              "竖",
+              "横"
             ],
             "correct": "捺"
           }
@@ -330,14 +334,14 @@
           "built_from": "人 + 竖",
           "note": "You already know 人. Add a 竖 underneath and you have 个.",
           "predict": {
-            "shown": 2,
+            "shown": 0,
             "choices": [
-              "横",
-              "竖",
+              "捺",
               "撇",
-              "捺"
+              "竖",
+              "横"
             ],
-            "correct": "竖"
+            "correct": "撇"
           }
         },
         {
@@ -377,14 +381,14 @@
           "built_from": "一 + 大",
           "note": "大 with one more 横 on top — the sky above a person.",
           "predict": {
-            "shown": 3,
+            "shown": 0,
             "choices": [
+              "捺",
               "横",
-              "竖",
               "撇",
-              "捺"
+              "竖"
             ],
-            "correct": "捺"
+            "correct": "横"
           }
         },
         {
@@ -403,10 +407,10 @@
           "predict": {
             "shown": 3,
             "choices": [
-              "横",
-              "竖",
               "撇",
-              "捺"
+              "捺",
+              "竖",
+              "横"
             ],
             "correct": "捺"
           }
@@ -793,139 +797,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "二",
-      "shown_strokes": [
-        "横"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "竖",
-        "撇",
-        "捺"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "三",
-      "shown_strokes": [
-        "横",
-        "横"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "竖",
-        "撇",
-        "捺"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "十",
-      "shown_strokes": [
-        "横"
-      ],
-      "correct": "竖",
-      "choices": [
-        "横",
-        "竖",
-        "撇",
-        "捺"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "八",
-      "shown_strokes": [
-        "撇"
-      ],
-      "correct": "捺",
-      "choices": [
-        "横",
-        "竖",
-        "撇",
-        "捺"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "人",
-      "shown_strokes": [
-        "撇"
-      ],
-      "correct": "捺",
-      "choices": [
-        "横",
-        "竖",
-        "撇",
-        "捺"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "个",
-      "shown_strokes": [
-        "撇",
-        "捺"
-      ],
-      "correct": "竖",
-      "choices": [
-        "横",
-        "竖",
-        "撇",
-        "捺"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "大",
-      "shown_strokes": [
-        "横",
-        "撇"
-      ],
-      "correct": "捺",
-      "choices": [
-        "横",
-        "竖",
-        "撇",
-        "捺"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "天",
-      "shown_strokes": [
-        "横",
-        "横",
-        "撇"
-      ],
-      "correct": "捺",
-      "choices": [
-        "横",
-        "竖",
-        "撇",
-        "捺"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "木",
-      "shown_strokes": [
-        "横",
-        "竖",
-        "撇"
-      ],
-      "correct": "捺",
-      "choices": [
-        "横",
-        "竖",
-        "撇",
-        "捺"
-      ]
-    },
-    {
       "type": "missing_component",
       "prompt_char": "二",
       "shown_component": "一",
@@ -1075,6 +946,319 @@
         "一个人",
         "八个人",
         "十个人"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "二",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "捺",
+        "横",
+        "撇",
+        "竖"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "二",
+      "shown_strokes": [
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "捺",
+        "横",
+        "撇",
+        "竖"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "三",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "捺",
+        "横",
+        "撇",
+        "竖"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "三",
+      "shown_strokes": [
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "捺",
+        "横",
+        "撇",
+        "竖"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "三",
+      "shown_strokes": [
+        "横",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "捺",
+        "横",
+        "撇",
+        "竖"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "十",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "捺",
+        "横",
+        "撇",
+        "竖"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "十",
+      "shown_strokes": [
+        "横"
+      ],
+      "correct": "竖",
+      "choices": [
+        "捺",
+        "竖",
+        "撇",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "八",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "捺",
+        "撇",
+        "竖",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "八",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "撇",
+        "捺",
+        "竖",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "人",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "捺",
+        "撇",
+        "竖",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "人",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "撇",
+        "捺",
+        "竖",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "个",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "捺",
+        "撇",
+        "竖",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "个",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "撇",
+        "捺",
+        "竖",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "个",
+      "shown_strokes": [
+        "撇",
+        "捺"
+      ],
+      "correct": "竖",
+      "choices": [
+        "捺",
+        "竖",
+        "撇",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "大",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "捺",
+        "横",
+        "撇",
+        "竖"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "大",
+      "shown_strokes": [
+        "横"
+      ],
+      "correct": "撇",
+      "choices": [
+        "捺",
+        "撇",
+        "竖",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "大",
+      "shown_strokes": [
+        "横",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "撇",
+        "捺",
+        "竖",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "天",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "捺",
+        "横",
+        "撇",
+        "竖"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "天",
+      "shown_strokes": [
+        "横",
+        "横"
+      ],
+      "correct": "撇",
+      "choices": [
+        "捺",
+        "撇",
+        "竖",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "天",
+      "shown_strokes": [
+        "横",
+        "横",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "撇",
+        "捺",
+        "竖",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "木",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "捺",
+        "横",
+        "撇",
+        "竖"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "木",
+      "shown_strokes": [
+        "横",
+        "竖"
+      ],
+      "correct": "撇",
+      "choices": [
+        "捺",
+        "撇",
+        "竖",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "木",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "撇",
+        "捺",
+        "竖",
+        "横"
       ]
     }
   ]

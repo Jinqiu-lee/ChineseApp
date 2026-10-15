@@ -160,10 +160,11 @@
           "rule_en": "Left before right",
           "audio_text": "先左后右",
           "choices": [
+            "弯钩",
             "点",
+            "横钩",
             "卧钩",
-            "横",
-            "竖"
+            "斜钩"
           ],
           "correct": "点",
           "result_char": "心",
@@ -183,10 +184,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "斜钩",
             "横钩",
+            "卧钩",
             "弯钩",
-            "横",
-            "点"
+            "横"
           ],
           "correct": "横钩",
           "result_char": "子",
@@ -205,10 +207,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "点",
             "横钩",
+            "斜钩",
             "弯钩",
-            "横",
-            "竖"
+            "卧钩"
           ],
           "correct": "横钩",
           "result_char": "了",
@@ -226,10 +229,11 @@
           "rule_en": "Top to bottom",
           "audio_text": "从上到下",
           "choices": [
+            "斜钩",
             "撇",
+            "卧钩",
             "横",
-            "弯钩",
-            "点"
+            "弯钩"
           ],
           "correct": "撇",
           "result_char": "手",
@@ -249,12 +253,13 @@
           "rule_en": "Left before right",
           "audio_text": "先左后右",
           "choices": [
+            "卧钩",
             "撇",
+            "点",
             "横",
-            "竖勾",
-            "提",
             "斜钩",
-            "点"
+            "竖勾",
+            "提"
           ],
           "correct": "撇",
           "result_char": "我",
@@ -277,12 +282,13 @@
           "rule_en": "Left before right",
           "audio_text": "先左后右",
           "choices": [
+            "卧钩",
             "撇点",
+            "横",
             "撇",
-            "提",
-            "横钩",
             "弯钩",
-            "横"
+            "提",
+            "横钩"
           ],
           "correct": "撇点",
           "result_char": "好",
@@ -318,14 +324,14 @@
           "built_from": "横折 + 弯钩 + 横",
           "note": "A swaddled infant: big head, small body, arms out.",
           "predict": {
-            "shown": 2,
+            "shown": 0,
             "choices": [
-              "横",
-              "点",
-              "撇",
-              "竖"
+              "弯钩",
+              "横钩",
+              "斜钩",
+              "卧钩"
             ],
-            "correct": "横"
+            "correct": "横钩"
           }
         },
         {
@@ -346,10 +352,10 @@
           "predict": {
             "shown": 5,
             "choices": [
+              "横钩",
               "横",
-              "点",
-              "撇",
-              "竖"
+              "斜钩",
+              "卧钩"
             ],
             "correct": "横"
           }
@@ -602,22 +608,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "心",
-      "shown_strokes": [
-        "点",
-        "卧钩",
-        "点"
-      ],
-      "correct": "点",
-      "choices": [
-        "点",
-        "卧钩",
-        "斜钩",
-        "弯钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "子",
       "correct": "child",
@@ -671,21 +661,6 @@
         "心",
         "我",
         "手"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "子",
-      "shown_strokes": [
-        "横钩",
-        "弯钩"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "卧钩",
-        "斜钩",
-        "弯钩"
       ]
     },
     {
@@ -745,25 +720,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "我",
-      "shown_strokes": [
-        "撇",
-        "横",
-        "竖勾",
-        "提",
-        "斜钩",
-        "撇"
-      ],
-      "correct": "点",
-      "choices": [
-        "点",
-        "卧钩",
-        "斜钩",
-        "弯钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "手",
       "correct": "hand",
@@ -817,22 +773,6 @@
         "心",
         "子",
         "我"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "手",
-      "shown_strokes": [
-        "撇",
-        "横",
-        "横"
-      ],
-      "correct": "弯钩",
-      "choices": [
-        "弯钩",
-        "卧钩",
-        "斜钩",
-        "横"
       ]
     },
     {
@@ -892,24 +832,6 @@
       ]
     },
     {
-      "type": "missing_stroke",
-      "prompt_char": "好",
-      "shown_strokes": [
-        "撇点",
-        "撇",
-        "提",
-        "横钩",
-        "弯钩"
-      ],
-      "correct": "横",
-      "choices": [
-        "横",
-        "卧钩",
-        "斜钩",
-        "弯钩"
-      ]
-    },
-    {
       "type": "char_to_meaning",
       "prompt_char": "了",
       "correct": "(completed action)",
@@ -963,20 +885,6 @@
         "心",
         "子",
         "我"
-      ]
-    },
-    {
-      "type": "missing_stroke",
-      "prompt_char": "了",
-      "shown_strokes": [
-        "横钩"
-      ],
-      "correct": "弯钩",
-      "choices": [
-        "弯钩",
-        "卧钩",
-        "斜钩",
-        "横"
       ]
     },
     {
@@ -1154,6 +1062,252 @@
         "小心",
         "手心",
         "女子"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "心",
+      "shown_strokes": [],
+      "correct": "点",
+      "choices": [
+        "横钩",
+        "点",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "心",
+      "shown_strokes": [
+        "点",
+        "卧钩"
+      ],
+      "correct": "点",
+      "choices": [
+        "横钩",
+        "点",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "心",
+      "shown_strokes": [
+        "点",
+        "卧钩",
+        "点"
+      ],
+      "correct": "点",
+      "choices": [
+        "横钩",
+        "点",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "子",
+      "shown_strokes": [],
+      "correct": "横钩",
+      "choices": [
+        "弯钩",
+        "横钩",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "子",
+      "shown_strokes": [
+        "横钩"
+      ],
+      "correct": "弯钩",
+      "choices": [
+        "横钩",
+        "弯钩",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "子",
+      "shown_strokes": [
+        "横钩",
+        "弯钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "横钩",
+        "横",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "我",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "横钩",
+        "撇",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "我",
+      "shown_strokes": [
+        "撇",
+        "横",
+        "竖勾"
+      ],
+      "correct": "提",
+      "choices": [
+        "横钩",
+        "提",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "我",
+      "shown_strokes": [
+        "撇",
+        "横",
+        "竖勾",
+        "提",
+        "斜钩",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "横钩",
+        "点",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "手",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "横钩",
+        "撇",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "手",
+      "shown_strokes": [
+        "撇",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横钩",
+        "横",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "手",
+      "shown_strokes": [
+        "撇",
+        "横",
+        "横"
+      ],
+      "correct": "弯钩",
+      "choices": [
+        "横钩",
+        "弯钩",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "好",
+      "shown_strokes": [],
+      "correct": "撇点",
+      "choices": [
+        "横钩",
+        "撇点",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "好",
+      "shown_strokes": [
+        "撇点",
+        "撇",
+        "提"
+      ],
+      "correct": "横钩",
+      "choices": [
+        "弯钩",
+        "横钩",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "好",
+      "shown_strokes": [
+        "撇点",
+        "撇",
+        "提",
+        "横钩",
+        "弯钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "横钩",
+        "横",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "了",
+      "shown_strokes": [],
+      "correct": "横钩",
+      "choices": [
+        "弯钩",
+        "横钩",
+        "斜钩",
+        "卧钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "了",
+      "shown_strokes": [
+        "横钩"
+      ],
+      "correct": "弯钩",
+      "choices": [
+        "横钩",
+        "弯钩",
+        "斜钩",
+        "卧钩"
       ]
     }
   ]

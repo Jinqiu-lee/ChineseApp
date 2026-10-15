@@ -37,7 +37,15 @@ const STROKE_ASSETS = {
   '横折弯': { asset: require('./gifs/hengzhewan.png'), animated: false, format: 'png', pinyin: 'héngzhéwān' },
   '横折提': { asset: require('./gifs/hengzheti.png'), animated: false, format: 'png', pinyin: 'héngzhétí' },
   '横折钩': { asset: require('./gifs/hengzhegou.gif'), animated: true, format: 'gif', pinyin: 'héngzhégōu' },
+  // These three were uploaded as animated WebP and converted frame-for-frame to
+  // GIF, same as 卧钩: RN's Image animates GIF but freezes animated WebP, and a
+  // frozen hooked stroke shows the wrong shape — 竖弯钩 froze into a bare 竖弯.
+  '横折弯钩': { asset: require('./gifs/hengzhewangou.gif'), animated: true, format: 'gif', pinyin: 'héngzhéwāngōu' },
+  '竖提': { asset: require('./gifs/shuti.gif'), animated: true, format: 'gif', pinyin: 'shùtí' },
+  '竖弯钩': { asset: require('./gifs/shuwangou.gif'), animated: true, format: 'gif', pinyin: 'shùwāngōu' },
   '横斜钩': { asset: require('./gifs/hengxiegou.webp'), animated: false, format: 'webp', pinyin: 'héngxiégōu' },
+  // Static WebP, so RN renders it correctly — the freeze only bites animated ones.
+  '竖弯': { asset: require('./gifs/shuwan.webp'), animated: false, format: 'webp', pinyin: 'shùwān' },
   '竖折撇': { asset: require('./gifs/shuzhepie.png'), animated: false, format: 'png', pinyin: 'shùzhépiě' },
   '横撇弯钩': { asset: require('./gifs/hengpiewangou.png'), animated: false, format: 'png', pinyin: 'héngpiěwāngōu' },
   '竖折折钩': { asset: require('./gifs/shuzhezhegou.gif'), animated: true, format: 'gif', pinyin: 'shùzhézhégōu' },
@@ -55,15 +63,11 @@ const STROKE_FALLBACK_CHARS = {
 
 // Strokes with neither a file nor a glyph of their own: show them inside a
 // character that contains them, with that one stroke highlighted.
-const STROKE_IN_CHARACTER = {
-  '竖弯':     { char: '四', strokeIndex: 3 },
-  '竖提':     { char: '以', strokeIndex: 0 },
-  '横折弯钩': { char: '九', strokeIndex: 1 },
-  // Its only file is an animated WebP, which RN freezes on frame 1 — the bare
-  // opening vertical, indistinguishable from 竖弯. Drawing it inside 七 shows
-  // the hook. Replace with a .gif and register it above to undo this.
-  '竖弯钩': { char: '七', strokeIndex: 1 },
-};
+// Currently empty: every stroke the course teaches now has artwork of its own.
+// Kept because it is the right home for any future stroke that arrives without
+// a file — add { char, strokeIndex } and it is drawn inside a host character
+// with that one stroke picked out, no other code needs to change.
+const STROKE_IN_CHARACTER = {};
 
 // Pinyin for every stroke name, including ones with no asset. Single source of
 // truth so answer buttons can be labelled without duplicating it per lesson.
@@ -129,8 +133,7 @@ export function getStrokeAsset(stroke) {
   return STROKE_ASSETS[stroke] || null;
 }
 
-// Strokes still waiting on artwork.
-// No usable still of their own — drawn inside a host character instead.
-export const MISSING_STROKES = ['竖弯', '竖提', '竖弯钩', '横折弯钩'];
+// Strokes still waiting on artwork — none. Every stroke resolves to a file.
+export const MISSING_STROKES = [];
 
 export default STROKE_ASSETS;
