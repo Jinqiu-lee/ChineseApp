@@ -1,0 +1,1141 @@
+{
+  "id": 4,
+  "title": "Characters Can Borrow a Sound",
+  "emoji": "🐦",
+  "subtitle": "撇点 撇折 竖折折钩 · 云 女 么 马 鸟 妈",
+  "description": "Three curving strokes, and a new idea: 妈 takes its meaning from 女 and its sound from 马.",
+  "new_strokes": [
+    "撇点",
+    "撇折",
+    "竖折折钩"
+  ],
+  "new_characters": [
+    "云",
+    "女",
+    "么",
+    "马",
+    "鸟",
+    "妈"
+  ],
+  "new_words": [
+    "女儿",
+    "妈妈",
+    "木马",
+    "小马",
+    "小鸟",
+    "白云",
+    "什么"
+  ],
+  "learn_content": {
+    "part1_discover": {
+      "title": "Discover",
+      "subtitle": "Three curving strokes",
+      "intro": "These bend part-way through, which is why each counts as a single stroke.",
+      "strokes": [
+        {
+          "stroke": "撇点",
+          "pinyin": "piědiǎn",
+          "name_en": "left-falling then dot",
+          "direction": "down-left, then press right",
+          "explanation": "撇点 = a 撇 that turns and presses into a 点, without lifting.",
+          "audio_text": "撇点",
+          "example_char": "女",
+          "example_pinyin": "nǚ",
+          "example_meaning": "woman",
+          "example_note": "女 opens with a 撇点.",
+          "example_stroke_order": [
+            "撇点",
+            "撇",
+            "横"
+          ]
+        },
+        {
+          "stroke": "撇折",
+          "pinyin": "piězhé",
+          "name_en": "left-falling then turn",
+          "direction": "down-left, then right",
+          "explanation": "撇折 = a 撇 that turns a corner and runs right.",
+          "audio_text": "撇折",
+          "example_char": "云",
+          "example_pinyin": "yún",
+          "example_meaning": "cloud",
+          "example_note": "云's third stroke turns: 撇折.",
+          "example_stroke_order": [
+            "横",
+            "横",
+            "撇折",
+            "点"
+          ]
+        },
+        {
+          "stroke": "竖折折钩",
+          "pinyin": "shùzhézhégōu",
+          "name_en": "vertical, turn, turn, hook",
+          "direction": "down, right, down, hook",
+          "explanation": "竖折折钩 = one long stroke that turns twice and ends in a hook.",
+          "audio_text": "竖折折钩",
+          "example_char": "马",
+          "example_pinyin": "mǎ",
+          "example_meaning": "horse",
+          "example_note": "马's whole body is one 竖折折钩.",
+          "example_stroke_order": [
+            "横折",
+            "竖折折钩",
+            "横"
+          ]
+        }
+      ],
+      "recognition_check": [
+        {
+          "show_stroke": "撇点",
+          "choices": [
+            "撇点",
+            "撇折",
+            "竖折折钩",
+            "撇"
+          ],
+          "correct": "撇点"
+        },
+        {
+          "show_stroke": "撇折",
+          "choices": [
+            "撇点",
+            "撇折",
+            "竖折折钩",
+            "点"
+          ],
+          "correct": "撇折"
+        },
+        {
+          "show_stroke": "竖折折钩",
+          "choices": [
+            "撇点",
+            "撇折",
+            "竖折折钩",
+            "竖折"
+          ],
+          "correct": "竖折折钩"
+        }
+      ]
+    },
+    "part2_build": {
+      "title": "Build",
+      "subtitle": "Six characters, in order",
+      "intro": "Lay each character down the way it is written.",
+      "rules": [
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "横",
+            "撇折",
+            "点",
+            "竖"
+          ],
+          "correct": "横",
+          "result_char": "云",
+          "result_pinyin": "yún",
+          "result_meaning": "cloud",
+          "stroke_order": [
+            "横",
+            "横",
+            "撇折",
+            "点"
+          ],
+          "explanation": "Two lines, then the turn, then the dot."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "撇点",
+            "撇",
+            "横",
+            "点"
+          ],
+          "correct": "撇点",
+          "result_char": "女",
+          "result_pinyin": "nǚ",
+          "result_meaning": "woman",
+          "stroke_order": [
+            "撇点",
+            "撇",
+            "横"
+          ],
+          "explanation": "The long 横 crosses everything last."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "撇",
+            "撇折",
+            "点",
+            "横"
+          ],
+          "correct": "撇",
+          "result_char": "么",
+          "result_pinyin": "me",
+          "result_meaning": "(question particle)",
+          "stroke_order": [
+            "撇",
+            "撇折",
+            "点"
+          ],
+          "explanation": "A small character, written straight down."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "横折",
+            "竖折折钩",
+            "横",
+            "撇"
+          ],
+          "correct": "横折",
+          "result_char": "马",
+          "result_pinyin": "mǎ",
+          "result_meaning": "horse",
+          "stroke_order": [
+            "横折",
+            "竖折折钩",
+            "横"
+          ],
+          "explanation": "Head, body, then the line through the middle."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "撇",
+            "横折钩",
+            "点",
+            "竖折折钩",
+            "横"
+          ],
+          "correct": "撇",
+          "result_char": "鸟",
+          "result_pinyin": "niǎo",
+          "result_meaning": "bird",
+          "stroke_order": [
+            "撇",
+            "横折钩",
+            "点",
+            "竖折折钩",
+            "横"
+          ],
+          "explanation": "A bird is a 马 with a beak and an eye added."
+        },
+        {
+          "rule": "先左后右",
+          "rule_pinyin": "xiān zuǒ hòu yòu",
+          "rule_en": "Left before right",
+          "audio_text": "先左后右",
+          "choices": [
+            "撇点",
+            "撇",
+            "横",
+            "横折",
+            "竖折折钩"
+          ],
+          "correct": "撇点",
+          "result_char": "妈",
+          "result_pinyin": "mā",
+          "result_meaning": "mother",
+          "stroke_order": [
+            "撇点",
+            "撇",
+            "横",
+            "横折",
+            "竖折折钩",
+            "横"
+          ],
+          "explanation": "Write the whole of 女 first, then the whole of 马."
+        }
+      ]
+    },
+    "part3_read": {
+      "title": "Read",
+      "subtitle": "A character made of two others",
+      "intro": "女 tells you what 妈 means. 马 tells you how it sounds.",
+      "characters": [
+        {
+          "character": "女",
+          "pinyin": "nǚ",
+          "meaning": "woman",
+          "stroke_order": [
+            "撇点",
+            "撇",
+            "横"
+          ],
+          "stroke_count": 3,
+          "built_from": "撇点 + 撇 + 横",
+          "note": "A figure kneeling with arms crossed — the old drawing of a woman.",
+          "predict": {
+            "shown": 2,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "点"
+            ],
+            "correct": "横"
+          }
+        },
+        {
+          "character": "马",
+          "pinyin": "mǎ",
+          "meaning": "horse",
+          "stroke_order": [
+            "横折",
+            "竖折折钩",
+            "横"
+          ],
+          "stroke_count": 3,
+          "built_from": "横折 + 竖折折钩 + 横",
+          "note": "Mane, body and legs, flattened into three strokes.",
+          "predict": {
+            "shown": 2,
+            "choices": [
+              "横",
+              "点",
+              "撇",
+              "竖"
+            ],
+            "correct": "横"
+          }
+        },
+        {
+          "character": "鸟",
+          "pinyin": "niǎo",
+          "meaning": "bird",
+          "stroke_order": [
+            "撇",
+            "横折钩",
+            "点",
+            "竖折折钩",
+            "横"
+          ],
+          "stroke_count": 5,
+          "built_from": "马 + 撇 + 点",
+          "note": "Nearly the same shape as 马, with a beak on top and an eye inside.",
+          "predict": {
+            "shown": 4,
+            "choices": [
+              "横",
+              "点",
+              "撇",
+              "捺"
+            ],
+            "correct": "横"
+          }
+        },
+        {
+          "character": "妈",
+          "pinyin": "mā",
+          "meaning": "mother",
+          "stroke_order": [
+            "撇点",
+            "撇",
+            "横",
+            "横折",
+            "竖折折钩",
+            "横"
+          ],
+          "stroke_count": 6,
+          "built_from": "女 + 马",
+          "note": "女 carries the meaning, 马 carries the sound: mǎ becomes mā. The first character you have met that works this way.",
+          "predict": {
+            "shown": 5,
+            "choices": [
+              "横",
+              "点",
+              "撇",
+              "竖"
+            ],
+            "correct": "横"
+          }
+        }
+      ]
+    },
+    "part4_use": {
+      "title": "Use",
+      "subtitle": "Family, animals and the sky",
+      "intro": "Some of these pair with characters you already know.",
+      "patterns": [
+        {
+          "logic": "女 + 儿 = a daughter",
+          "build": "女 + 儿 = 女儿",
+          "word": "女儿",
+          "pinyin": "nǚ'ér",
+          "meaning": "daughter",
+          "audio_text": "女儿",
+          "note": "儿 means child. 妈妈 doubles the character, the way family words often do.",
+          "variations": [
+            {
+              "word": "女儿",
+              "pinyin": "nǚ'ér",
+              "meaning": "daughter",
+              "audio_text": "女儿"
+            },
+            {
+              "word": "妈妈",
+              "pinyin": "māma",
+              "meaning": "mum",
+              "audio_text": "妈妈"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "女",
+              null
+            ],
+            "answer": [
+              "儿"
+            ],
+            "choices": [
+              "儿",
+              "马",
+              "鸟",
+              "云"
+            ],
+            "result_word": "女儿",
+            "result_pinyin": "nǚ'ér",
+            "result_meaning": "daughter",
+            "audio_text": "女儿"
+          }
+        },
+        {
+          "logic": "material or size + 马/鸟 = a kind of animal",
+          "build": "木 + 马 = 木马",
+          "word": "木马",
+          "pinyin": "mù mǎ",
+          "meaning": "a wooden horse",
+          "audio_text": "木马",
+          "note": "木 is the wood you met in Lesson 1.",
+          "variations": [
+            {
+              "word": "木马",
+              "pinyin": "mù mǎ",
+              "meaning": "a wooden horse",
+              "audio_text": "木马"
+            },
+            {
+              "word": "小马",
+              "pinyin": "xiǎo mǎ",
+              "meaning": "a pony",
+              "audio_text": "小马"
+            },
+            {
+              "word": "小鸟",
+              "pinyin": "xiǎo niǎo",
+              "meaning": "a little bird",
+              "audio_text": "小鸟"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "小",
+              null
+            ],
+            "answer": [
+              "马"
+            ],
+            "choices": [
+              "马",
+              "鸟",
+              "云",
+              "女"
+            ],
+            "result_word": "小马",
+            "result_pinyin": "xiǎo mǎ",
+            "result_meaning": "a pony",
+            "audio_text": "小马"
+          }
+        },
+        {
+          "logic": "colour + 云 = a kind of cloud",
+          "build": "白 + 云 = 白云",
+          "word": "白云",
+          "pinyin": "bái yún",
+          "meaning": "a white cloud",
+          "audio_text": "白云",
+          "note": "白 (bái) means white — a new character, used here only to colour the cloud.",
+          "variations": [
+            {
+              "word": "白云",
+              "pinyin": "bái yún",
+              "meaning": "a white cloud",
+              "audio_text": "白云"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "白",
+              null
+            ],
+            "answer": [
+              "云"
+            ],
+            "choices": [
+              "云",
+              "马",
+              "鸟",
+              "么"
+            ],
+            "result_word": "白云",
+            "result_pinyin": "bái yún",
+            "result_meaning": "a white cloud",
+            "audio_text": "白云"
+          }
+        },
+        {
+          "logic": "什 + 么 = what",
+          "build": "什 + 么 = 什么",
+          "word": "什么",
+          "pinyin": "shénme",
+          "meaning": "what",
+          "audio_text": "什么",
+          "note": "什 (shén) almost never appears alone — it exists to make 什么, the word for \"what\".",
+          "variations": [
+            {
+              "word": "什么",
+              "pinyin": "shénme",
+              "meaning": "what",
+              "audio_text": "什么"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "什",
+              null
+            ],
+            "answer": [
+              "么"
+            ],
+            "choices": [
+              "么",
+              "云",
+              "女",
+              "马"
+            ],
+            "result_word": "什么",
+            "result_pinyin": "shénme",
+            "result_meaning": "what",
+            "audio_text": "什么"
+          }
+        }
+      ]
+    },
+    "part5_write": {
+      "title": "Write",
+      "subtitle": "Write every character in this lesson",
+      "characters": [
+        "云",
+        "女",
+        "么",
+        "马",
+        "鸟"
+      ]
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "云",
+      "correct": "cloud",
+      "choices": [
+        "cloud",
+        "woman",
+        "(question particle)",
+        "horse"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "cloud",
+      "correct": "云",
+      "choices": [
+        "云",
+        "女",
+        "么",
+        "马"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "云",
+      "audio_text": "云",
+      "correct": "yún",
+      "choices": [
+        "yún",
+        "nǚ",
+        "me",
+        "mǎ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yún",
+      "correct": "云",
+      "choices": [
+        "云",
+        "女",
+        "么",
+        "马"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "云",
+      "correct": "云",
+      "choices": [
+        "云",
+        "女",
+        "么",
+        "马"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "云",
+      "shown_strokes": [
+        "横",
+        "横",
+        "撇折"
+      ],
+      "correct": "点",
+      "choices": [
+        "点",
+        "撇点",
+        "撇折",
+        "竖折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "女",
+      "correct": "woman",
+      "choices": [
+        "woman",
+        "cloud",
+        "(question particle)",
+        "horse"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "woman",
+      "correct": "女",
+      "choices": [
+        "女",
+        "云",
+        "么",
+        "马"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "女",
+      "audio_text": "女",
+      "correct": "nǚ",
+      "choices": [
+        "nǚ",
+        "yún",
+        "me",
+        "mǎ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "nǚ",
+      "correct": "女",
+      "choices": [
+        "女",
+        "云",
+        "么",
+        "马"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "女",
+      "correct": "女",
+      "choices": [
+        "女",
+        "云",
+        "么",
+        "马"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "女",
+      "shown_strokes": [
+        "撇点",
+        "撇"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "撇点",
+        "撇折",
+        "竖折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "么",
+      "correct": "(question particle)",
+      "choices": [
+        "(question particle)",
+        "cloud",
+        "woman",
+        "horse"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "(question particle)",
+      "correct": "么",
+      "choices": [
+        "么",
+        "云",
+        "女",
+        "马"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "么",
+      "audio_text": "么",
+      "correct": "me",
+      "choices": [
+        "me",
+        "yún",
+        "nǚ",
+        "mǎ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "me",
+      "correct": "么",
+      "choices": [
+        "么",
+        "云",
+        "女",
+        "马"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "么",
+      "correct": "么",
+      "choices": [
+        "么",
+        "云",
+        "女",
+        "马"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "么",
+      "shown_strokes": [
+        "撇",
+        "撇折"
+      ],
+      "correct": "点",
+      "choices": [
+        "点",
+        "撇点",
+        "撇折",
+        "竖折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "马",
+      "correct": "horse",
+      "choices": [
+        "horse",
+        "cloud",
+        "woman",
+        "(question particle)"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "horse",
+      "correct": "马",
+      "choices": [
+        "马",
+        "云",
+        "女",
+        "么"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "马",
+      "audio_text": "马",
+      "correct": "mǎ",
+      "choices": [
+        "mǎ",
+        "yún",
+        "nǚ",
+        "me"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "mǎ",
+      "correct": "马",
+      "choices": [
+        "马",
+        "云",
+        "女",
+        "么"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "马",
+      "correct": "马",
+      "choices": [
+        "马",
+        "云",
+        "女",
+        "么"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "马",
+      "shown_strokes": [
+        "横折",
+        "竖折折钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "撇点",
+        "撇折",
+        "竖折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "鸟",
+      "correct": "bird",
+      "choices": [
+        "bird",
+        "cloud",
+        "woman",
+        "(question particle)"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "bird",
+      "correct": "鸟",
+      "choices": [
+        "鸟",
+        "云",
+        "女",
+        "么"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "鸟",
+      "audio_text": "鸟",
+      "correct": "niǎo",
+      "choices": [
+        "niǎo",
+        "yún",
+        "nǚ",
+        "me"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "niǎo",
+      "correct": "鸟",
+      "choices": [
+        "鸟",
+        "云",
+        "女",
+        "么"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "鸟",
+      "correct": "鸟",
+      "choices": [
+        "鸟",
+        "云",
+        "女",
+        "么"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "鸟",
+      "shown_strokes": [
+        "撇",
+        "横折钩",
+        "点",
+        "竖折折钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "撇点",
+        "撇折",
+        "竖折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "妈",
+      "correct": "mother",
+      "choices": [
+        "mother",
+        "cloud",
+        "woman",
+        "(question particle)"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "mother",
+      "correct": "妈",
+      "choices": [
+        "妈",
+        "云",
+        "女",
+        "么"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "妈",
+      "audio_text": "妈",
+      "correct": "mā",
+      "choices": [
+        "mā",
+        "yún",
+        "nǚ",
+        "me"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "mā",
+      "correct": "妈",
+      "choices": [
+        "妈",
+        "云",
+        "女",
+        "么"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "妈",
+      "correct": "妈",
+      "choices": [
+        "妈",
+        "云",
+        "女",
+        "么"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "妈",
+      "shown_strokes": [
+        "撇点",
+        "撇",
+        "横",
+        "横折",
+        "竖折折钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "撇点",
+        "撇折",
+        "竖折折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "女儿",
+      "correct": "daughter",
+      "choices": [
+        "daughter",
+        "mum",
+        "a wooden horse",
+        "a pony"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "女儿",
+      "correct": "女儿",
+      "choices": [
+        "女儿",
+        "妈妈",
+        "木马",
+        "小马"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "妈妈",
+      "correct": "mum",
+      "choices": [
+        "mum",
+        "daughter",
+        "a wooden horse",
+        "a pony"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "妈妈",
+      "correct": "妈妈",
+      "choices": [
+        "妈妈",
+        "女儿",
+        "木马",
+        "小马"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "木马",
+      "correct": "a wooden horse",
+      "choices": [
+        "a wooden horse",
+        "daughter",
+        "mum",
+        "a pony"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "木马",
+      "correct": "木马",
+      "choices": [
+        "木马",
+        "女儿",
+        "妈妈",
+        "小马"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "小马",
+      "correct": "a pony",
+      "choices": [
+        "a pony",
+        "daughter",
+        "mum",
+        "a wooden horse"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "小马",
+      "correct": "小马",
+      "choices": [
+        "小马",
+        "女儿",
+        "妈妈",
+        "木马"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "小鸟",
+      "correct": "a little bird",
+      "choices": [
+        "a little bird",
+        "daughter",
+        "mum",
+        "a wooden horse"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "小鸟",
+      "correct": "小鸟",
+      "choices": [
+        "小鸟",
+        "女儿",
+        "妈妈",
+        "木马"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "白云",
+      "correct": "a white cloud",
+      "choices": [
+        "a white cloud",
+        "daughter",
+        "mum",
+        "a wooden horse"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "白云",
+      "correct": "白云",
+      "choices": [
+        "白云",
+        "女儿",
+        "妈妈",
+        "木马"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "什么",
+      "correct": "what",
+      "choices": [
+        "what",
+        "daughter",
+        "mum",
+        "a wooden horse"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "什么",
+      "correct": "什么",
+      "choices": [
+        "什么",
+        "女儿",
+        "妈妈",
+        "木马"
+      ]
+    }
+  ]
+}

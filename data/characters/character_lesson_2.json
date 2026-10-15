@@ -1,0 +1,1039 @@
+{
+  "id": 2,
+  "title": "Characters Can Be Pictures",
+  "emoji": "🖼",
+  "subtitle": "点 横折 横折钩 · 五 六 月 口 日 目 耳",
+  "description": "Three new strokes, then characters that are drawings of the thing they name — a mouth, the sun, an eye, an ear.",
+  "new_strokes": [
+    "点",
+    "横折",
+    "横折钩"
+  ],
+  "new_characters": [
+    "五",
+    "六",
+    "月",
+    "口",
+    "日",
+    "目",
+    "耳"
+  ],
+  "new_words": [
+    "六月",
+    "三月",
+    "十月",
+    "六个月",
+    "一个月"
+  ],
+  "learn_content": {
+    "part1_discover": {
+      "title": "Discover",
+      "subtitle": "Three new strokes",
+      "intro": "Each of these turns or presses in a way the first four did not.",
+      "strokes": [
+        {
+          "stroke": "点",
+          "pinyin": "diǎn",
+          "name_en": "dot",
+          "direction": "press → lift",
+          "explanation": "点 = a short dot, pressed down and lifted away.",
+          "audio_text": "点",
+          "example_char": "六",
+          "example_pinyin": "liù",
+          "example_meaning": "six",
+          "example_note": "六 opens with a 点 sitting on top.",
+          "example_stroke_order": [
+            "点",
+            "横",
+            "撇",
+            "点"
+          ]
+        },
+        {
+          "stroke": "横折",
+          "pinyin": "héngzhé",
+          "name_en": "horizontal then turn",
+          "direction": "left → right, then down",
+          "explanation": "横折 = a 横 that turns a corner and heads down, without lifting.",
+          "audio_text": "横折",
+          "example_char": "口",
+          "example_pinyin": "kǒu",
+          "example_meaning": "mouth",
+          "example_note": "口's second stroke is one 横折.",
+          "example_stroke_order": [
+            "竖",
+            "横折",
+            "横"
+          ]
+        },
+        {
+          "stroke": "横折钩",
+          "pinyin": "héngzhégōu",
+          "name_en": "horizontal, turn, hook",
+          "direction": "across, down, hook left",
+          "explanation": "横折钩 = a 横折 that finishes with a small hook.",
+          "audio_text": "横折钩",
+          "example_char": "月",
+          "example_pinyin": "yuè",
+          "example_meaning": "moon / month",
+          "example_note": "月's whole frame is one 横折钩.",
+          "example_stroke_order": [
+            "撇",
+            "横折钩",
+            "横",
+            "横"
+          ]
+        }
+      ],
+      "recognition_check": [
+        {
+          "show_stroke": "点",
+          "choices": [
+            "点",
+            "横折",
+            "横折钩",
+            "横"
+          ],
+          "correct": "点"
+        },
+        {
+          "show_stroke": "横折",
+          "choices": [
+            "点",
+            "横折",
+            "横折钩",
+            "竖"
+          ],
+          "correct": "横折"
+        },
+        {
+          "show_stroke": "横折钩",
+          "choices": [
+            "点",
+            "横折",
+            "横折钩",
+            "撇"
+          ],
+          "correct": "横折钩"
+        }
+      ]
+    },
+    "part2_build": {
+      "title": "Build",
+      "subtitle": "Three ordering rules",
+      "intro": "Where a stroke sits decides when you write it.",
+      "rules": [
+        {
+          "rule": "先横后竖",
+          "rule_pinyin": "xiān héng hòu shù",
+          "rule_en": "Horizontal before vertical",
+          "audio_text": "先横后竖",
+          "choices": [
+            "横",
+            "竖",
+            "横折",
+            "撇"
+          ],
+          "correct": "横",
+          "result_char": "五",
+          "result_pinyin": "wǔ",
+          "result_meaning": "five",
+          "stroke_order": [
+            "横",
+            "竖",
+            "横折",
+            "横"
+          ],
+          "explanation": "The top 横 first, then down, then the turn, then the base."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "点",
+            "横",
+            "撇",
+            "捺"
+          ],
+          "correct": "点",
+          "result_char": "六",
+          "result_pinyin": "liù",
+          "result_meaning": "six",
+          "stroke_order": [
+            "点",
+            "横",
+            "撇",
+            "点"
+          ],
+          "explanation": "The dot on top comes first, then the line, then the two legs."
+        },
+        {
+          "rule": "先外后内",
+          "rule_pinyin": "xiān wài hòu nèi",
+          "rule_en": "Outside before inside",
+          "audio_text": "先外后内",
+          "choices": [
+            "撇",
+            "横折钩",
+            "横",
+            "竖"
+          ],
+          "correct": "撇",
+          "result_char": "月",
+          "result_pinyin": "yuè",
+          "result_meaning": "moon / month",
+          "stroke_order": [
+            "撇",
+            "横折钩",
+            "横",
+            "横"
+          ],
+          "explanation": "Draw the frame, then fill the two lines inside it."
+        }
+      ]
+    },
+    "part3_read": {
+      "title": "Read",
+      "subtitle": "Characters that are pictures",
+      "intro": "Each of these started as a drawing. Guess the last stroke, then reveal.",
+      "characters": [
+        {
+          "character": "口",
+          "pinyin": "kǒu",
+          "meaning": "mouth",
+          "stroke_order": [
+            "竖",
+            "横折",
+            "横"
+          ],
+          "stroke_count": 3,
+          "built_from": "竖 + 横折 + 横",
+          "note": "An open mouth. The base closes it last.",
+          "predict": {
+            "shown": 2,
+            "choices": [
+              "横",
+              "竖",
+              "横折",
+              "点"
+            ],
+            "correct": "横"
+          }
+        },
+        {
+          "character": "日",
+          "pinyin": "rì",
+          "meaning": "sun / day",
+          "stroke_order": [
+            "竖",
+            "横折",
+            "横",
+            "横"
+          ],
+          "stroke_count": 4,
+          "built_from": "口 + 横",
+          "note": "口 with one line inside — the sun, and so also a day.",
+          "predict": {
+            "shown": 3,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "点"
+            ],
+            "correct": "横"
+          }
+        },
+        {
+          "character": "目",
+          "pinyin": "mù",
+          "meaning": "eye",
+          "stroke_order": [
+            "竖",
+            "横折",
+            "横",
+            "横",
+            "横"
+          ],
+          "stroke_count": 5,
+          "built_from": "日 + 横",
+          "note": "One more line again. Stood upright, it is an eye.",
+          "predict": {
+            "shown": 4,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "点"
+            ],
+            "correct": "横"
+          }
+        },
+        {
+          "character": "耳",
+          "pinyin": "ěr",
+          "meaning": "ear",
+          "stroke_order": [
+            "横",
+            "竖",
+            "竖",
+            "横",
+            "横",
+            "横"
+          ],
+          "stroke_count": 6,
+          "built_from": "横 + 竖 + 竖 + 横 + 横 + 横",
+          "note": "The outline of an ear, lines and all.",
+          "predict": {
+            "shown": 5,
+            "choices": [
+              "横",
+              "竖",
+              "撇",
+              "捺"
+            ],
+            "correct": "横"
+          }
+        }
+      ]
+    },
+    "part4_use": {
+      "title": "Use",
+      "subtitle": "Months and lengths of time",
+      "intro": "月 is the moon — and the month.",
+      "patterns": [
+        {
+          "logic": "number + 月(month) = the name of that month",
+          "build": "六 + 月 = 六月",
+          "word": "六月",
+          "pinyin": "liù yuè",
+          "meaning": "June",
+          "audio_text": "六月",
+          "note": "The sixth moon is the sixth month.",
+          "variations": [
+            {
+              "word": "三月",
+              "pinyin": "sān yuè",
+              "meaning": "March",
+              "audio_text": "三月"
+            },
+            {
+              "word": "八月",
+              "pinyin": "bā yuè",
+              "meaning": "August",
+              "audio_text": "八月"
+            },
+            {
+              "word": "十月",
+              "pinyin": "shí yuè",
+              "meaning": "October",
+              "audio_text": "十月"
+            }
+          ],
+          "quiz": {
+            "template": [
+              null,
+              null
+            ],
+            "answer": [
+              "五",
+              "月"
+            ],
+            "choices": [
+              "五",
+              "六",
+              "月",
+              "日"
+            ],
+            "result_word": "五月",
+            "result_pinyin": "wǔ yuè",
+            "result_meaning": "May",
+            "audio_text": "五月"
+          }
+        },
+        {
+          "logic": "number + 个 + 月 = that many months long",
+          "build": "六 + 个 + 月 = 六个月",
+          "word": "六个月",
+          "pinyin": "liù ge yuè",
+          "meaning": "six months",
+          "audio_text": "六个月",
+          "note": "Add 个 and it stops being a date and becomes a duration.",
+          "variations": [
+            {
+              "word": "一个月",
+              "pinyin": "yí ge yuè",
+              "meaning": "one month",
+              "audio_text": "一个月"
+            },
+            {
+              "word": "五个月",
+              "pinyin": "wǔ ge yuè",
+              "meaning": "five months",
+              "audio_text": "五个月"
+            },
+            {
+              "word": "八个月",
+              "pinyin": "bā ge yuè",
+              "meaning": "eight months",
+              "audio_text": "八个月"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "三",
+              null,
+              "月"
+            ],
+            "answer": [
+              "个"
+            ],
+            "choices": [
+              "个",
+              "日",
+              "口",
+              "目"
+            ],
+            "result_word": "三个月",
+            "result_pinyin": "sān ge yuè",
+            "result_meaning": "three months",
+            "audio_text": "三个月"
+          }
+        }
+      ]
+    },
+    "part5_write": {
+      "title": "Write",
+      "subtitle": "Write every character in this lesson",
+      "characters": [
+        "五",
+        "六",
+        "月",
+        "口",
+        "日",
+        "目",
+        "耳"
+      ]
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "五",
+      "correct": "five",
+      "choices": [
+        "five",
+        "six",
+        "moon / month",
+        "mouth"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "five",
+      "correct": "五",
+      "choices": [
+        "五",
+        "六",
+        "月",
+        "口"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "五",
+      "audio_text": "五",
+      "correct": "wǔ",
+      "choices": [
+        "wǔ",
+        "liù",
+        "yuè",
+        "kǒu"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "wǔ",
+      "correct": "五",
+      "choices": [
+        "五",
+        "六",
+        "月",
+        "口"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "五",
+      "correct": "五",
+      "choices": [
+        "五",
+        "六",
+        "月",
+        "口"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "五",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "横折"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "点",
+        "横折",
+        "横折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "六",
+      "correct": "six",
+      "choices": [
+        "six",
+        "five",
+        "moon / month",
+        "mouth"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "six",
+      "correct": "六",
+      "choices": [
+        "六",
+        "五",
+        "月",
+        "口"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "六",
+      "audio_text": "六",
+      "correct": "liù",
+      "choices": [
+        "liù",
+        "wǔ",
+        "yuè",
+        "kǒu"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "liù",
+      "correct": "六",
+      "choices": [
+        "六",
+        "五",
+        "月",
+        "口"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "六",
+      "correct": "六",
+      "choices": [
+        "六",
+        "五",
+        "月",
+        "口"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "六",
+      "shown_strokes": [
+        "点",
+        "横",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "点",
+        "横折",
+        "横折钩",
+        "横"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "月",
+      "correct": "moon / month",
+      "choices": [
+        "moon / month",
+        "five",
+        "six",
+        "mouth"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "moon / month",
+      "correct": "月",
+      "choices": [
+        "月",
+        "五",
+        "六",
+        "口"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "月",
+      "audio_text": "月",
+      "correct": "yuè",
+      "choices": [
+        "yuè",
+        "wǔ",
+        "liù",
+        "kǒu"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yuè",
+      "correct": "月",
+      "choices": [
+        "月",
+        "五",
+        "六",
+        "口"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "月",
+      "correct": "月",
+      "choices": [
+        "月",
+        "五",
+        "六",
+        "口"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "月",
+      "shown_strokes": [
+        "撇",
+        "横折钩",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "点",
+        "横折",
+        "横折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "口",
+      "correct": "mouth",
+      "choices": [
+        "mouth",
+        "five",
+        "six",
+        "moon / month"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "mouth",
+      "correct": "口",
+      "choices": [
+        "口",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "口",
+      "audio_text": "口",
+      "correct": "kǒu",
+      "choices": [
+        "kǒu",
+        "wǔ",
+        "liù",
+        "yuè"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "kǒu",
+      "correct": "口",
+      "choices": [
+        "口",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "口",
+      "correct": "口",
+      "choices": [
+        "口",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "口",
+      "shown_strokes": [
+        "竖",
+        "横折"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "点",
+        "横折",
+        "横折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "日",
+      "correct": "sun / day",
+      "choices": [
+        "sun / day",
+        "five",
+        "six",
+        "moon / month"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "sun / day",
+      "correct": "日",
+      "choices": [
+        "日",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "日",
+      "audio_text": "日",
+      "correct": "rì",
+      "choices": [
+        "rì",
+        "wǔ",
+        "liù",
+        "yuè"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "rì",
+      "correct": "日",
+      "choices": [
+        "日",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "日",
+      "correct": "日",
+      "choices": [
+        "日",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "日",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "点",
+        "横折",
+        "横折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "目",
+      "correct": "eye",
+      "choices": [
+        "eye",
+        "five",
+        "six",
+        "moon / month"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "eye",
+      "correct": "目",
+      "choices": [
+        "目",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "目",
+      "audio_text": "目",
+      "correct": "mù",
+      "choices": [
+        "mù",
+        "wǔ",
+        "liù",
+        "yuè"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "mù",
+      "correct": "目",
+      "choices": [
+        "目",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "目",
+      "correct": "目",
+      "choices": [
+        "目",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "目",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "横",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "点",
+        "横折",
+        "横折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "耳",
+      "correct": "ear",
+      "choices": [
+        "ear",
+        "five",
+        "six",
+        "moon / month"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "ear",
+      "correct": "耳",
+      "choices": [
+        "耳",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "耳",
+      "audio_text": "耳",
+      "correct": "ěr",
+      "choices": [
+        "ěr",
+        "wǔ",
+        "liù",
+        "yuè"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "ěr",
+      "correct": "耳",
+      "choices": [
+        "耳",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "耳",
+      "correct": "耳",
+      "choices": [
+        "耳",
+        "五",
+        "六",
+        "月"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "耳",
+      "shown_strokes": [
+        "横",
+        "竖",
+        "竖",
+        "横",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "点",
+        "横折",
+        "横折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "六月",
+      "correct": "June",
+      "choices": [
+        "June",
+        "March",
+        "October",
+        "six months"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "六月",
+      "correct": "六月",
+      "choices": [
+        "六月",
+        "三月",
+        "十月",
+        "六个月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "三月",
+      "correct": "March",
+      "choices": [
+        "March",
+        "June",
+        "October",
+        "six months"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "三月",
+      "correct": "三月",
+      "choices": [
+        "三月",
+        "六月",
+        "十月",
+        "六个月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "十月",
+      "correct": "October",
+      "choices": [
+        "October",
+        "June",
+        "March",
+        "six months"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "十月",
+      "correct": "十月",
+      "choices": [
+        "十月",
+        "六月",
+        "三月",
+        "六个月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "六个月",
+      "correct": "six months",
+      "choices": [
+        "six months",
+        "June",
+        "March",
+        "October"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "六个月",
+      "correct": "六个月",
+      "choices": [
+        "六个月",
+        "六月",
+        "三月",
+        "十月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "一个月",
+      "correct": "one month",
+      "choices": [
+        "one month",
+        "June",
+        "March",
+        "October"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "一个月",
+      "correct": "一个月",
+      "choices": [
+        "一个月",
+        "六月",
+        "三月",
+        "十月"
+      ]
+    }
+  ]
+}

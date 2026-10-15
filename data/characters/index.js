@@ -3,19 +3,31 @@
 // A preview without a matching entry here renders as "Coming soon" and stays locked.
 
 import characterLesson1 from './character_lesson_1.json';
+import characterLesson2 from './character_lesson_2.json';
+import characterLesson3 from './character_lesson_3.json';
+import characterLesson4 from './character_lesson_4.json';
+import characterLesson5 from './character_lesson_5.json';
 
 export const CHARACTER_LESSONS = {
   1: characterLesson1,
+  2: characterLesson2,
+  3: characterLesson3,
+  4: characterLesson4,
+  5: characterLesson5,
 };
 
 export const TOTAL_CHARACTER_LESSONS = 20;
 
-// Titles for the lesson list. Lessons 2-20 are placeholders until authored.
+// Titles for the lesson list. Authored lessons take their name and subtitle
+// from their own JSON, so the two can never drift apart.
+const AUTHORED = Object.values(CHARACTER_LESSONS)
+  .map(l => ({ id: l.id, title: l.title, subtitle: l.subtitle }));
+
 export const CHARACTER_LESSON_PREVIEWS = [
-  { id: 1, title: 'Characters Are Built From Strokes', subtitle: '横 竖 撇 捺 · 一 二 三 十 八 人 个 大 天 木' },
-  ...Array.from({ length: TOTAL_CHARACTER_LESSONS - 1 }, (_, i) => ({
-    id: i + 2,
-    title: `Lesson ${i + 2}`,
+  ...AUTHORED,
+  ...Array.from({ length: TOTAL_CHARACTER_LESSONS - AUTHORED.length }, (_, i) => ({
+    id: AUTHORED.length + i + 1,
+    title: `Lesson ${AUTHORED.length + i + 1}`,
     subtitle: 'Coming soon',
   })),
 ];

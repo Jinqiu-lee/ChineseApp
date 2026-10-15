@@ -1,0 +1,1195 @@
+{
+  "id": 3,
+  "title": "Characters Relate to Each Other",
+  "emoji": "🔗",
+  "subtitle": "竖折 竖弯 竖勾 · 山 四 小 水 火 少 太",
+  "description": "Three turning strokes, seven new characters, and the way one character grows out of another: 小 becomes 少, 大 becomes 太.",
+  "new_strokes": [
+    "竖折",
+    "竖弯",
+    "竖勾"
+  ],
+  "new_characters": [
+    "山",
+    "四",
+    "小",
+    "水",
+    "火",
+    "少",
+    "太"
+  ],
+  "new_words": [
+    "太大",
+    "太小",
+    "太少",
+    "大山",
+    "大火",
+    "小火",
+    "大水",
+    "四天"
+  ],
+  "learn_content": {
+    "part1_discover": {
+      "title": "Discover",
+      "subtitle": "Three turning strokes",
+      "intro": "Each of these starts as a 竖 and then does something at the end.",
+      "strokes": [
+        {
+          "stroke": "竖折",
+          "pinyin": "shùzhé",
+          "name_en": "vertical then turn",
+          "direction": "down → right",
+          "explanation": "竖折 = 由「竖」和「横」连续书写组合而成 — a 竖 and a 横 written as one stroke.",
+          "audio_text": "竖折",
+          "example_char": "山",
+          "example_pinyin": "shān",
+          "example_meaning": "mountain",
+          "example_note": "山's second stroke turns along the base: 竖折.",
+          "example_stroke_order": [
+            "竖",
+            "竖折",
+            "竖"
+          ]
+        },
+        {
+          "stroke": "竖弯",
+          "pinyin": "shùwān",
+          "name_en": "vertical then curve",
+          "direction": "down → curving right",
+          "explanation": "竖弯 = a 竖 that bends away to the right instead of turning a sharp corner.",
+          "audio_text": "竖弯",
+          "example_char": "四",
+          "example_pinyin": "sì",
+          "example_meaning": "four",
+          "example_note": "四's fourth stroke curves rather than turns.",
+          "example_stroke_order": [
+            "竖",
+            "横折",
+            "撇",
+            "竖弯",
+            "横"
+          ]
+        },
+        {
+          "stroke": "竖勾",
+          "pinyin": "shùgōu",
+          "name_en": "vertical with hook",
+          "direction": "down → flick left",
+          "explanation": "竖勾 = a 竖 that finishes with a small hook to the left.",
+          "audio_text": "竖勾",
+          "example_char": "小",
+          "example_pinyin": "xiǎo",
+          "example_meaning": "small",
+          "example_note": "小 begins with a 竖勾 straight down the middle.",
+          "example_stroke_order": [
+            "竖勾",
+            "撇",
+            "点"
+          ]
+        }
+      ],
+      "recognition_check": [
+        {
+          "show_stroke": "竖折",
+          "choices": [
+            "竖折",
+            "竖弯",
+            "竖勾",
+            "竖"
+          ],
+          "correct": "竖折"
+        },
+        {
+          "show_stroke": "竖勾",
+          "choices": [
+            "竖折",
+            "竖弯",
+            "竖勾",
+            "撇"
+          ],
+          "correct": "竖勾"
+        },
+        {
+          "show_stroke": "竖弯",
+          "choices": [
+            "竖折",
+            "竖弯",
+            "竖勾",
+            "点"
+          ],
+          "correct": "竖弯"
+        }
+      ]
+    },
+    "part2_build": {
+      "title": "Build",
+      "subtitle": "Seven characters, in order",
+      "intro": "Lay each character's strokes down in the order they are written.",
+      "rules": [
+        {
+          "rule": "先中间后两边",
+          "rule_pinyin": "xiān zhōngjiān hòu liǎngbiān",
+          "rule_en": "Middle before the sides",
+          "audio_text": "先中间后两边",
+          "choices": [
+            "竖",
+            "竖折",
+            "横",
+            "撇"
+          ],
+          "correct": "竖",
+          "result_char": "山",
+          "result_pinyin": "shān",
+          "result_meaning": "mountain",
+          "stroke_order": [
+            "竖",
+            "竖折",
+            "竖"
+          ],
+          "explanation": "The centre peak goes down first, then the sides."
+        },
+        {
+          "rule": "先外后内再封口",
+          "rule_pinyin": "xiān wài hòu nèi zài fēng kǒu",
+          "rule_en": "Outside, then inside, then close",
+          "audio_text": "先外后内再封口",
+          "choices": [
+            "竖",
+            "横折",
+            "撇",
+            "竖弯",
+            "横"
+          ],
+          "correct": "竖",
+          "result_char": "四",
+          "result_pinyin": "sì",
+          "result_meaning": "four",
+          "stroke_order": [
+            "竖",
+            "横折",
+            "撇",
+            "竖弯",
+            "横"
+          ],
+          "explanation": "Frame, contents, and only then the closing line at the bottom."
+        },
+        {
+          "rule": "先中间后两边",
+          "rule_pinyin": "xiān zhōngjiān hòu liǎngbiān",
+          "rule_en": "Middle before the sides",
+          "audio_text": "先中间后两边",
+          "choices": [
+            "竖勾",
+            "撇",
+            "点",
+            "横"
+          ],
+          "correct": "竖勾",
+          "result_char": "小",
+          "result_pinyin": "xiǎo",
+          "result_meaning": "small",
+          "stroke_order": [
+            "竖勾",
+            "撇",
+            "点"
+          ],
+          "explanation": "The hooked centre stroke leads; the two marks follow."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "竖勾",
+            "横撇",
+            "撇",
+            "捺"
+          ],
+          "correct": "竖勾",
+          "result_char": "水",
+          "result_pinyin": "shuǐ",
+          "result_meaning": "water",
+          "stroke_order": [
+            "竖勾",
+            "横撇",
+            "撇",
+            "捺"
+          ],
+          "explanation": "The hooked centre stroke first, then the strokes either side. The second one is 横撇 (héngpiě) — a 横 that turns into a 撇; you will meet it properly later."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "点",
+            "撇",
+            "捺",
+            "横"
+          ],
+          "correct": "点",
+          "result_char": "火",
+          "result_pinyin": "huǒ",
+          "result_meaning": "fire",
+          "stroke_order": [
+            "点",
+            "撇",
+            "撇",
+            "捺"
+          ],
+          "explanation": "The two sparks first, then the body of the flame."
+        },
+        {
+          "rule": "先中间后两边",
+          "rule_pinyin": "xiān zhōngjiān hòu liǎngbiān",
+          "rule_en": "Middle before the sides",
+          "audio_text": "先中间后两边",
+          "choices": [
+            "竖",
+            "撇",
+            "点",
+            "横"
+          ],
+          "correct": "竖",
+          "result_char": "少",
+          "result_pinyin": "shǎo",
+          "result_meaning": "few / little",
+          "stroke_order": [
+            "竖",
+            "撇",
+            "点",
+            "撇"
+          ],
+          "explanation": "Same centre-first habit as 小, with one extra stroke."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "横",
+            "撇",
+            "捺",
+            "点"
+          ],
+          "correct": "横",
+          "result_char": "太",
+          "result_pinyin": "tài",
+          "result_meaning": "too / extremely",
+          "stroke_order": [
+            "横",
+            "撇",
+            "捺",
+            "点"
+          ],
+          "explanation": "Write 大 as you already know it, then add the dot."
+        }
+      ]
+    },
+    "part3_read": {
+      "title": "Read",
+      "subtitle": "One character grows into another",
+      "intro": "Add a stroke and the meaning shifts: 小 becomes 少, 大 becomes 太.",
+      "characters": [
+        {
+          "character": "小",
+          "pinyin": "xiǎo",
+          "meaning": "small",
+          "stroke_order": [
+            "竖勾",
+            "撇",
+            "点"
+          ],
+          "stroke_count": 3,
+          "built_from": "竖勾 + 撇 + 点",
+          "note": "Three small marks around a centre — small. The opposite of 大.",
+          "predict": {
+            "shown": 2,
+            "choices": [
+              "点",
+              "撇",
+              "横",
+              "竖"
+            ],
+            "correct": "点"
+          }
+        },
+        {
+          "character": "少",
+          "pinyin": "shǎo",
+          "meaning": "few / little",
+          "stroke_order": [
+            "竖",
+            "撇",
+            "点",
+            "撇"
+          ],
+          "stroke_count": 4,
+          "built_from": "小 + 撇",
+          "note": "小 with one more 撇 across it: not just small — few.",
+          "predict": {
+            "shown": 3,
+            "choices": [
+              "撇",
+              "捺",
+              "横",
+              "竖"
+            ],
+            "correct": "撇"
+          }
+        },
+        {
+          "character": "太",
+          "pinyin": "tài",
+          "meaning": "too / extremely",
+          "stroke_order": [
+            "横",
+            "撇",
+            "捺",
+            "点"
+          ],
+          "stroke_count": 4,
+          "built_from": "大 + 点",
+          "note": "大 with a dot beneath: beyond big — too big.",
+          "predict": {
+            "shown": 3,
+            "choices": [
+              "点",
+              "横",
+              "竖",
+              "捺"
+            ],
+            "correct": "点"
+          }
+        }
+      ]
+    },
+    "part4_use": {
+      "title": "Use",
+      "subtitle": "Describing things",
+      "intro": "太 judges, 大 and 小 describe, 四 counts.",
+      "patterns": [
+        {
+          "logic": "太 + adjective = too …",
+          "build": "太 + 大 = 太大",
+          "word": "太大",
+          "pinyin": "tài dà",
+          "meaning": "too big",
+          "audio_text": "太大",
+          "note": "太 is a complaint: more than you wanted.",
+          "variations": [
+            {
+              "word": "太大",
+              "pinyin": "tài dà",
+              "meaning": "too big",
+              "audio_text": "太大"
+            },
+            {
+              "word": "太小",
+              "pinyin": "tài xiǎo",
+              "meaning": "too small",
+              "audio_text": "太小"
+            },
+            {
+              "word": "太少",
+              "pinyin": "tài shǎo",
+              "meaning": "too few",
+              "audio_text": "太少"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "太",
+              null
+            ],
+            "answer": [
+              "小"
+            ],
+            "choices": [
+              "小",
+              "少",
+              "山",
+              "火"
+            ],
+            "result_word": "太小",
+            "result_pinyin": "tài xiǎo",
+            "result_meaning": "too small",
+            "audio_text": "太小"
+          }
+        },
+        {
+          "logic": "大 or 小 + noun = a big or small one",
+          "build": "大 + 山 = 大山",
+          "word": "大山",
+          "pinyin": "dà shān",
+          "meaning": "a big mountain",
+          "audio_text": "大山",
+          "note": "大 and 小 sit in front of almost any thing. 大水 is literally \"big water\" — a flood.",
+          "variations": [
+            {
+              "word": "大火",
+              "pinyin": "dà huǒ",
+              "meaning": "a big fire",
+              "audio_text": "大火"
+            },
+            {
+              "word": "小火",
+              "pinyin": "xiǎo huǒ",
+              "meaning": "a small fire",
+              "audio_text": "小火"
+            },
+            {
+              "word": "大水",
+              "pinyin": "dà shuǐ",
+              "meaning": "a flood",
+              "audio_text": "大水"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "大",
+              null
+            ],
+            "answer": [
+              "水"
+            ],
+            "choices": [
+              "水",
+              "山",
+              "火",
+              "目"
+            ],
+            "result_word": "大水",
+            "result_pinyin": "dà shuǐ",
+            "result_meaning": "a flood",
+            "audio_text": "大水"
+          }
+        },
+        {
+          "logic": "四 counts the same way the numbers you know already do",
+          "build": "四 + 天 = 四天",
+          "word": "四天",
+          "pinyin": "sì tiān",
+          "meaning": "four days",
+          "audio_text": "四天",
+          "note": "Nothing new to learn — 四 simply joins the pattern.",
+          "variations": [
+            {
+              "word": "四天",
+              "pinyin": "sì tiān",
+              "meaning": "four days",
+              "audio_text": "四天"
+            },
+            {
+              "word": "四月",
+              "pinyin": "sì yuè",
+              "meaning": "April",
+              "audio_text": "四月"
+            },
+            {
+              "word": "四个人",
+              "pinyin": "sì ge rén",
+              "meaning": "four people",
+              "audio_text": "四个人"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "四",
+              null,
+              "人"
+            ],
+            "answer": [
+              "个"
+            ],
+            "choices": [
+              "个",
+              "天",
+              "月",
+              "山"
+            ],
+            "result_word": "四个人",
+            "result_pinyin": "sì ge rén",
+            "result_meaning": "four people",
+            "audio_text": "四个人"
+          }
+        }
+      ]
+    },
+    "part5_write": {
+      "title": "Write",
+      "subtitle": "Write every character in this lesson",
+      "characters": [
+        "山",
+        "四",
+        "小",
+        "水",
+        "火",
+        "少",
+        "太"
+      ]
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "山",
+      "correct": "mountain",
+      "choices": [
+        "mountain",
+        "four",
+        "small",
+        "water"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "mountain",
+      "correct": "山",
+      "choices": [
+        "山",
+        "四",
+        "小",
+        "水"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "山",
+      "audio_text": "山",
+      "correct": "shān",
+      "choices": [
+        "shān",
+        "sì",
+        "xiǎo",
+        "shuǐ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shān",
+      "correct": "山",
+      "choices": [
+        "山",
+        "四",
+        "小",
+        "水"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "山",
+      "correct": "山",
+      "choices": [
+        "山",
+        "四",
+        "小",
+        "水"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "山",
+      "shown_strokes": [
+        "竖",
+        "竖折"
+      ],
+      "correct": "竖",
+      "choices": [
+        "竖",
+        "竖折",
+        "竖弯",
+        "竖勾"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "四",
+      "correct": "four",
+      "choices": [
+        "four",
+        "mountain",
+        "small",
+        "water"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "four",
+      "correct": "四",
+      "choices": [
+        "四",
+        "山",
+        "小",
+        "水"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "四",
+      "audio_text": "四",
+      "correct": "sì",
+      "choices": [
+        "sì",
+        "shān",
+        "xiǎo",
+        "shuǐ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "sì",
+      "correct": "四",
+      "choices": [
+        "四",
+        "山",
+        "小",
+        "水"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "四",
+      "correct": "四",
+      "choices": [
+        "四",
+        "山",
+        "小",
+        "水"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "四",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "撇",
+        "竖弯"
+      ],
+      "correct": "横",
+      "choices": [
+        "横",
+        "竖折",
+        "竖弯",
+        "竖勾"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "小",
+      "correct": "small",
+      "choices": [
+        "small",
+        "mountain",
+        "four",
+        "water"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "small",
+      "correct": "小",
+      "choices": [
+        "小",
+        "山",
+        "四",
+        "水"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "小",
+      "audio_text": "小",
+      "correct": "xiǎo",
+      "choices": [
+        "xiǎo",
+        "shān",
+        "sì",
+        "shuǐ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "xiǎo",
+      "correct": "小",
+      "choices": [
+        "小",
+        "山",
+        "四",
+        "水"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "小",
+      "correct": "小",
+      "choices": [
+        "小",
+        "山",
+        "四",
+        "水"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "小",
+      "shown_strokes": [
+        "竖勾",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "点",
+        "竖折",
+        "竖弯",
+        "竖勾"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "水",
+      "correct": "water",
+      "choices": [
+        "water",
+        "mountain",
+        "four",
+        "small"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "water",
+      "correct": "水",
+      "choices": [
+        "水",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "水",
+      "audio_text": "水",
+      "correct": "shuǐ",
+      "choices": [
+        "shuǐ",
+        "shān",
+        "sì",
+        "xiǎo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shuǐ",
+      "correct": "水",
+      "choices": [
+        "水",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "水",
+      "correct": "水",
+      "choices": [
+        "水",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "水",
+      "shown_strokes": [
+        "竖勾",
+        "横撇",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "捺",
+        "竖折",
+        "竖弯",
+        "竖勾"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "火",
+      "correct": "fire",
+      "choices": [
+        "fire",
+        "mountain",
+        "four",
+        "small"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "fire",
+      "correct": "火",
+      "choices": [
+        "火",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "火",
+      "audio_text": "火",
+      "correct": "huǒ",
+      "choices": [
+        "huǒ",
+        "shān",
+        "sì",
+        "xiǎo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "huǒ",
+      "correct": "火",
+      "choices": [
+        "火",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "火",
+      "correct": "火",
+      "choices": [
+        "火",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "火",
+      "shown_strokes": [
+        "点",
+        "撇",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "捺",
+        "竖折",
+        "竖弯",
+        "竖勾"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "少",
+      "correct": "few / little",
+      "choices": [
+        "few / little",
+        "mountain",
+        "four",
+        "small"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "few / little",
+      "correct": "少",
+      "choices": [
+        "少",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "少",
+      "audio_text": "少",
+      "correct": "shǎo",
+      "choices": [
+        "shǎo",
+        "shān",
+        "sì",
+        "xiǎo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shǎo",
+      "correct": "少",
+      "choices": [
+        "少",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "少",
+      "correct": "少",
+      "choices": [
+        "少",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "少",
+      "shown_strokes": [
+        "竖",
+        "撇",
+        "点"
+      ],
+      "correct": "撇",
+      "choices": [
+        "撇",
+        "竖折",
+        "竖弯",
+        "竖勾"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "太",
+      "correct": "too / extremely",
+      "choices": [
+        "too / extremely",
+        "mountain",
+        "four",
+        "small"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "too / extremely",
+      "correct": "太",
+      "choices": [
+        "太",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "太",
+      "audio_text": "太",
+      "correct": "tài",
+      "choices": [
+        "tài",
+        "shān",
+        "sì",
+        "xiǎo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "tài",
+      "correct": "太",
+      "choices": [
+        "太",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "太",
+      "correct": "太",
+      "choices": [
+        "太",
+        "山",
+        "四",
+        "小"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "太",
+      "shown_strokes": [
+        "横",
+        "撇",
+        "捺"
+      ],
+      "correct": "点",
+      "choices": [
+        "点",
+        "竖折",
+        "竖弯",
+        "竖勾"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "太大",
+      "correct": "too big",
+      "choices": [
+        "too big",
+        "too small",
+        "too few",
+        "a big mountain"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "太大",
+      "correct": "太大",
+      "choices": [
+        "太大",
+        "太小",
+        "太少",
+        "大山"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "太小",
+      "correct": "too small",
+      "choices": [
+        "too small",
+        "too big",
+        "too few",
+        "a big mountain"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "太小",
+      "correct": "太小",
+      "choices": [
+        "太小",
+        "太大",
+        "太少",
+        "大山"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "太少",
+      "correct": "too few",
+      "choices": [
+        "too few",
+        "too big",
+        "too small",
+        "a big mountain"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "太少",
+      "correct": "太少",
+      "choices": [
+        "太少",
+        "太大",
+        "太小",
+        "大山"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "大山",
+      "correct": "a big mountain",
+      "choices": [
+        "a big mountain",
+        "too big",
+        "too small",
+        "too few"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "大山",
+      "correct": "大山",
+      "choices": [
+        "大山",
+        "太大",
+        "太小",
+        "太少"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "大火",
+      "correct": "a big fire",
+      "choices": [
+        "a big fire",
+        "too big",
+        "too small",
+        "too few"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "大火",
+      "correct": "大火",
+      "choices": [
+        "大火",
+        "太大",
+        "太小",
+        "太少"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "大水",
+      "correct": "a flood",
+      "choices": [
+        "a flood",
+        "too big",
+        "too small",
+        "too few"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "大水",
+      "correct": "大水",
+      "choices": [
+        "大水",
+        "太大",
+        "太小",
+        "太少"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "四天",
+      "correct": "four days",
+      "choices": [
+        "four days",
+        "too big",
+        "too small",
+        "too few"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "四天",
+      "correct": "四天",
+      "choices": [
+        "四天",
+        "太大",
+        "太小",
+        "太少"
+      ]
+    }
+  ]
+}
