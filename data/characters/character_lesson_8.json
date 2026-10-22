@@ -1,6 +1,6 @@
 {
   "id": 8,
-  "title": "Characters Have a Structure",
+  "title": "Lesson 8 · Characters Have a Structure",
   "emoji": "🧩",
   "subtitle": "横折弯 横折提 横折折折钩 · 没 说 话 奶 牛 有",
   "description": "Three turning strokes, and the first idea that holds a character together: a left half and a right half, written in that order.",
@@ -125,14 +125,14 @@
           "correct": "横折折折钩"
         },
         {
-          "show_stroke": "横折提",
+          "show_stroke": "横折弯钩",
           "choices": [
+            "横折弯钩",
             "横折提",
-            "横撇",
-            "横钩",
-            "横折弯"
+            "横折弯",
+            "竖弯钩"
           ],
-          "correct": "横折提"
+          "correct": "横折弯钩"
         }
       ]
     },
@@ -145,8 +145,7 @@
         "pinyin": "zuǒ yòu jiégòu",
         "name_en": "Left-right structure",
         "audio_text": "左右结构",
-        "intro": "Most Chinese characters are not one solid shape. They are two or three smaller parts standing next to each other, and where those parts sit is called the character's 结构 — its structure.",
-        "explanation": "The commonest structure of all is 左右结构: a narrow part on the left, a wider part on the right. The left part is squeezed thinner than it would be standing alone, and it is always written first, completely, before the right part is begun.",
+        "demo_char": "说",
         "rule": "左右结构 → 先左后右",
         "rule_en": "Left-right structure → write the left part first, then the right",
         "examples": [
@@ -192,7 +191,7 @@
             "牛",
             "有"
           ],
-          "note": "牛 and 有 in this lesson are not left-right. 牛 is a single part, and 有 is 上下结构 — one piece above another. Watch for the difference as you write them."
+          "note": "牛 and 有 in this lesson are not left-right. 牛 is a single part, and 有 is 半包围结构 — the top-left strokes wrap around 月. Watch for the difference as you write them."
         },
         "check": {
           "question": "Which of these is NOT 左右结构?",
@@ -254,7 +253,7 @@
             "横",
             "横"
           ],
-          "explanation": "上下结构: the two strokes on top, then the whole of 月 beneath them."
+          "explanation": "The two strokes on top wrap the left shoulder, then the whole of 月 goes inside them."
         },
         {
           "rule": "先左后右",
@@ -1391,6 +1390,18 @@
         "横",
         "横折提",
         "横折弯"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "奶奶没有说话。",
+      "audio_text": "奶奶没有说话",
+      "correct": "Grandma did not speak.",
+      "choices": [
+        "Grandma did not speak.",
+        "Grandma drank the milk.",
+        "Grandma has no milk.",
+        "Grandma is speaking."
       ]
     }
   ]

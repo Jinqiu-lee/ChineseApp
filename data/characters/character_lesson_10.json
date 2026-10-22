@@ -1,0 +1,1498 @@
+{
+  "id": 10,
+  "title": "Lesson 10 · Characters Ask and Answer",
+  "emoji": "💬",
+  "subtitle": "竖折撇 · 专 你 中 什 白 国",
+  "description": "One last new stroke, the structure where the inside comes first, and enough characters to ask a question and answer it.",
+  "new_strokes": [
+    "竖折撇"
+  ],
+  "new_characters": [
+    "专",
+    "你",
+    "中",
+    "什",
+    "白",
+    "国"
+  ],
+  "new_words": [
+    "专心",
+    "专注",
+    "专业",
+    "什么",
+    "白云",
+    "太阳",
+    "中国",
+    "哪国"
+  ],
+  "learn_content": {
+    "part1_discover": {
+      "title": "Discover",
+      "subtitle": "The last of the folding strokes",
+      "intro": "竖折撇 goes down, turns, and then sweeps away — all without lifting the brush.",
+      "strokes": [
+        {
+          "stroke": "竖折撇",
+          "pinyin": "shùzhépiě",
+          "name_en": "vertical, turn, throw away",
+          "direction": "down, then right, then sweeping down-left",
+          "explanation": "竖折撇 = a 竖 that folds right and finishes as a 撇.",
+          "audio_text": "竖折撇",
+          "example_char": "专",
+          "example_pinyin": "zhuān",
+          "example_meaning": "focused",
+          "example_note": "专 is four strokes, and the third is this whole fold in one movement.",
+          "example_stroke_order": [
+            "横",
+            "横",
+            "竖折撇",
+            "点"
+          ]
+        }
+      ],
+      "recognition_check": [
+        {
+          "show_stroke": "竖折撇",
+          "choices": [
+            "竖折撇",
+            "竖折",
+            "撇折",
+            "横折折撇"
+          ],
+          "correct": "竖折撇"
+        },
+        {
+          "show_stroke": "竖折",
+          "choices": [
+            "竖折",
+            "竖折撇",
+            "撇折",
+            "横折折撇"
+          ],
+          "correct": "竖折"
+        },
+        {
+          "show_stroke": "竖提",
+          "choices": [
+            "竖提",
+            "竖折撇",
+            "竖折",
+            "撇折"
+          ],
+          "correct": "竖提"
+        }
+      ]
+    },
+    "part2_build": {
+      "title": "Build",
+      "subtitle": "Inside first, then seven characters",
+      "intro": "Lesson 9 met 辶 as an exception. Here it is in its own right.",
+      "structures": [
+        {
+          "name": "半包围结构",
+          "pinyin": "bàn bāowéi jiégòu",
+          "name_en": "Semi-enclosure, the 辶 kind",
+          "audio_text": "半包围结构",
+          "demo_char": "这",
+          "rule": "半包围结构（辶）→ 先里后外",
+          "rule_en": "When 辶 is the wrapper, write what is inside FIRST, then 辶 around it",
+          "examples": [
+            {
+              "character": "这",
+              "pinyin": "zhè",
+              "meaning": "this",
+              "outer": "辶",
+              "outer_note": "written last, sweeping under and around",
+              "inner": "文",
+              "inner_note": "goes down first, complete"
+            },
+            {
+              "character": "远",
+              "pinyin": "yuǎn",
+              "meaning": "far",
+              "outer": "辶",
+              "outer_note": "the same wrapper, the same order",
+              "inner": "元",
+              "inner_note": "first, as always with 辶"
+            }
+          ],
+          "check": {
+            "question": "Which part of 这 is written FIRST?",
+            "choices": [
+              "文",
+              "辶",
+              "月",
+              "囗"
+            ],
+            "correct": "文",
+            "explain": "辶 is the one wrapper that goes last."
+          }
+        }
+      ],
+      "rules": [
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "竖",
+            "横",
+            "撇",
+            "竖折撇",
+            "点"
+          ],
+          "correct": "横",
+          "result_char": "专",
+          "result_pinyin": "zhuān",
+          "result_meaning": "focused",
+          "stroke_order": [
+            "横",
+            "横",
+            "竖折撇",
+            "点"
+          ],
+          "explanation": "Two 横, then the folding 竖折撇, then a 点 on its shoulder."
+        },
+        {
+          "rule": "从左到右",
+          "rule_pinyin": "cóng zuǒ dào yòu",
+          "rule_en": "Left to right",
+          "audio_text": "从左到右",
+          "choices": [
+            "竖折撇",
+            "撇",
+            "点",
+            "竖",
+            "竖勾",
+            "横钩"
+          ],
+          "correct": "撇",
+          "result_char": "你",
+          "result_pinyin": "nǐ",
+          "result_meaning": "you",
+          "stroke_order": [
+            "撇",
+            "竖",
+            "撇",
+            "横钩",
+            "竖勾",
+            "撇",
+            "点"
+          ],
+          "explanation": "亻 on the left — 撇 and 竖 — then all of 尔."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "点",
+            "竖",
+            "竖折撇",
+            "横折",
+            "横"
+          ],
+          "correct": "竖",
+          "result_char": "中",
+          "result_pinyin": "zhōng",
+          "result_meaning": "middle",
+          "stroke_order": [
+            "竖",
+            "横折",
+            "横",
+            "竖"
+          ],
+          "explanation": "The box first, then the 竖 driven straight down through the middle."
+        },
+        {
+          "rule": "从左到右",
+          "rule_pinyin": "cóng zuǒ dào yòu",
+          "rule_en": "Left to right",
+          "audio_text": "从左到右",
+          "choices": [
+            "点",
+            "撇",
+            "竖折撇",
+            "竖",
+            "横"
+          ],
+          "correct": "撇",
+          "result_char": "什",
+          "result_pinyin": "shén",
+          "result_meaning": "what (only in 什么)",
+          "stroke_order": [
+            "撇",
+            "竖",
+            "横",
+            "竖"
+          ],
+          "explanation": "亻 again, then 十 — four strokes in total."
+        },
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "竖折撇",
+            "撇",
+            "横",
+            "竖",
+            "横折"
+          ],
+          "correct": "撇",
+          "result_char": "白",
+          "result_pinyin": "bái",
+          "result_meaning": "white",
+          "stroke_order": [
+            "撇",
+            "竖",
+            "横折",
+            "横",
+            "横"
+          ],
+          "explanation": "The 撇 on top, then the box, then the two lines inside it."
+        },
+        {
+          "rule": "先外后里再封口",
+          "rule_pinyin": "xiān wài hòu lǐ zài fēngkǒu",
+          "rule_en": "Outside, inside, then close",
+          "audio_text": "先外后里再封口",
+          "choices": [
+            "竖折撇",
+            "竖",
+            "点",
+            "横折",
+            "横"
+          ],
+          "correct": "竖",
+          "result_char": "国",
+          "result_pinyin": "guó",
+          "result_meaning": "country",
+          "stroke_order": [
+            "竖",
+            "横折",
+            "横",
+            "横",
+            "竖",
+            "横",
+            "点",
+            "横"
+          ],
+          "explanation": "囗 opens, 玉 goes inside, and the last 横 seals the bottom."
+        }
+      ]
+    },
+    "part3_read": {
+      "title": "Read",
+      "subtitle": "The characters you need to say who you are",
+      "intro": "是 is the verb to be. With 你 and 中国 you can already introduce yourself.",
+      "characters": [
+        {
+          "character": "专",
+          "pinyin": "zhuān",
+          "meaning": "focused",
+          "stroke_order": [
+            "横",
+            "横",
+            "竖折撇",
+            "点"
+          ],
+          "stroke_count": 4,
+          "built_from": "横 + 横 + 竖折撇 + 点",
+          "note": "Four strokes. 专 means to give something your whole attention.",
+          "predict": {
+            "shown": 2,
+            "choices": [
+              "撇",
+              "竖折撇",
+              "点",
+              "横"
+            ],
+            "correct": "竖折撇"
+          }
+        },
+        {
+          "character": "你",
+          "pinyin": "nǐ",
+          "meaning": "you",
+          "stroke_order": [
+            "撇",
+            "竖",
+            "撇",
+            "横钩",
+            "竖勾",
+            "撇",
+            "点"
+          ],
+          "stroke_count": 7,
+          "built_from": "亻 + 尔",
+          "note": "亻 is 人 squeezed thin — a person standing on the left.",
+          "predict": {
+            "shown": 0,
+            "choices": [
+              "点",
+              "撇",
+              "横",
+              "竖折撇"
+            ],
+            "correct": "撇"
+          }
+        },
+        {
+          "character": "中",
+          "pinyin": "zhōng",
+          "meaning": "middle",
+          "stroke_order": [
+            "竖",
+            "横折",
+            "横",
+            "竖"
+          ],
+          "stroke_count": 4,
+          "built_from": "口 + 竖",
+          "note": "A box with a line straight through the centre. 中国 is the middle kingdom.",
+          "predict": {
+            "shown": 3,
+            "choices": [
+              "点",
+              "竖",
+              "横",
+              "竖折撇"
+            ],
+            "correct": "竖"
+          }
+        }
+      ]
+    },
+    "part4_use": {
+      "title": "Use",
+      "subtitle": "Asking what, and which, and who",
+      "intro": "With 是 and 什么 you can ask about anything you can see.",
+      "patterns": [
+        {
+          "logic": "专 + X = giving it your whole attention",
+          "build": "专 + 心 = 专心",
+          "word": "专心",
+          "pinyin": "zhuānxīn",
+          "meaning": "to concentrate",
+          "audio_text": "专心",
+          "note": "专心 is a focused heart, 专注 a focused gaze, 专业 a focused line of work.",
+          "variations": [
+            {
+              "word": "专心",
+              "pinyin": "zhuānxīn",
+              "meaning": "to concentrate",
+              "audio_text": "专心"
+            },
+            {
+              "word": "专注",
+              "pinyin": "zhuānzhù",
+              "meaning": "to focus",
+              "audio_text": "专注"
+            },
+            {
+              "word": "专业",
+              "pinyin": "zhuānyè",
+              "meaning": "a specialism",
+              "audio_text": "专业"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "专",
+              null
+            ],
+            "answer": [
+              "心"
+            ],
+            "choices": [
+              "心",
+              "业",
+              "国",
+              "白"
+            ],
+            "result_word": "专心",
+            "result_pinyin": "zhuānxīn",
+            "result_meaning": "to concentrate",
+            "audio_text": "专心"
+          }
+        },
+        {
+          "logic": "什 + 么 = what",
+          "build": "什 + 么 = 什么",
+          "word": "什么",
+          "pinyin": "shénme",
+          "meaning": "what",
+          "audio_text": "什么",
+          "note": "什 is never used alone. 么 you met in Lesson 5.",
+          "variations": [
+            {
+              "word": "什么",
+              "pinyin": "shénme",
+              "meaning": "what",
+              "audio_text": "什么"
+            }
+          ],
+          "quiz": {
+            "template": [
+              null
+            ],
+            "answer": [
+              "什么"
+            ],
+            "choices": [
+              "什么",
+              "哪国",
+              "中国",
+              "白云"
+            ],
+            "result_word": "什么",
+            "result_pinyin": "shénme",
+            "result_meaning": "what",
+            "audio_text": "什么"
+          }
+        },
+        {
+          "logic": "colour or size + thing = a described thing",
+          "build": "白 + 云 = 白云",
+          "word": "白云",
+          "pinyin": "báiyún",
+          "meaning": "white cloud",
+          "audio_text": "白云",
+          "note": "太阳 was Lesson 9. 白云 is built the same way: a describing word, then the thing.",
+          "variations": [
+            {
+              "word": "白云",
+              "pinyin": "báiyún",
+              "meaning": "white cloud",
+              "audio_text": "白云"
+            },
+            {
+              "word": "太阳",
+              "pinyin": "tàiyáng",
+              "meaning": "the sun",
+              "audio_text": "太阳"
+            }
+          ],
+          "quiz": {
+            "template": [
+              null,
+              "云"
+            ],
+            "answer": [
+              "白"
+            ],
+            "choices": [
+              "白",
+              "中",
+              "国",
+              "是"
+            ],
+            "result_word": "白云",
+            "result_pinyin": "báiyún",
+            "result_meaning": "white cloud",
+            "audio_text": "白云"
+          }
+        },
+        {
+          "logic": "中 + 国 = the middle kingdom",
+          "build": "中 + 国 = 中国",
+          "word": "中国",
+          "pinyin": "zhōngguó",
+          "meaning": "China",
+          "audio_text": "中国",
+          "note": "哪国 asks which country — the same shape with 哪 in front.",
+          "variations": [
+            {
+              "word": "中国",
+              "pinyin": "zhōngguó",
+              "meaning": "China",
+              "audio_text": "中国"
+            },
+            {
+              "word": "哪国",
+              "pinyin": "nǎ guó",
+              "meaning": "which country",
+              "audio_text": "哪国"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "中",
+              null
+            ],
+            "answer": [
+              "国"
+            ],
+            "choices": [
+              "国",
+              "中",
+              "白",
+              "是"
+            ],
+            "result_word": "中国",
+            "result_pinyin": "zhōngguó",
+            "result_meaning": "China",
+            "audio_text": "中国"
+          }
+        }
+      ],
+      "sentences": [
+        {
+          "intro": "Your first question and answer.",
+          "sentence": "你是哪国人？",
+          "pinyin": "nǐ shì nǎ guó rén?",
+          "meaning": "Which country are you from?",
+          "audio_text": "你是哪国人",
+          "answer_image": "🇨🇳",
+          "reply": {
+            "sentence": "我是中国人。",
+            "pinyin": "wǒ shì zhōngguó rén.",
+            "meaning": "I am Chinese.",
+            "audio_text": "我是中国人"
+          },
+          "note": "A 是 B puts two things on either side of 是. To answer, swap 哪国 for the country.",
+          "quiz": {
+            "template": [
+              "你",
+              null,
+              "哪国人"
+            ],
+            "answer": [
+              "是"
+            ],
+            "choices": [
+              "是",
+              "什",
+              "中",
+              "白"
+            ],
+            "result_word": "你是哪国人",
+            "result_pinyin": "nǐ shì nǎ guó rén",
+            "result_meaning": "Which country are you from?",
+            "audio_text": "你是哪国人"
+          }
+        },
+        {
+          "intro": "Point at something and ask.",
+          "sentence": "这是什么？",
+          "pinyin": "zhè shì shénme?",
+          "meaning": "What is this?",
+          "audio_text": "这是什么",
+          "answer_image": "🌞",
+          "reply": {
+            "sentence": "这是太阳。",
+            "pinyin": "zhè shì tàiyáng.",
+            "meaning": "This is the sun.",
+            "audio_text": "这是太阳"
+          },
+          "note": "Keep 这是 and replace 什么 with the answer. The word order never changes.",
+          "quiz": {
+            "template": [
+              "这",
+              "是",
+              null
+            ],
+            "answer": [
+              "什么"
+            ],
+            "choices": [
+              "什么",
+              "哪国",
+              "中国",
+              "白云"
+            ],
+            "result_word": "这是什么",
+            "result_pinyin": "zhè shì shénme",
+            "result_meaning": "What is this?",
+            "audio_text": "这是什么"
+          }
+        },
+        {
+          "intro": "Now for something further away.",
+          "sentence": "那是什么？",
+          "pinyin": "nà shì shénme?",
+          "meaning": "What is that?",
+          "audio_text": "那是什么",
+          "answer_image": "☁️",
+          "reply": {
+            "sentence": "那是白云。",
+            "pinyin": "nà shì báiyún.",
+            "meaning": "That is a white cloud.",
+            "audio_text": "那是白云"
+          },
+          "note": "这 for near, 那 for far — the only thing that changes between the two questions.",
+          "quiz": {
+            "template": [
+              null,
+              "是",
+              "什么"
+            ],
+            "answer": [
+              "那"
+            ],
+            "choices": [
+              "那",
+              "这",
+              "哪",
+              "中"
+            ],
+            "result_word": "那是什么",
+            "result_pinyin": "nà shì shénme",
+            "result_meaning": "What is that?",
+            "audio_text": "那是什么"
+          }
+        }
+      ]
+    },
+    "part5_write": {
+      "title": "Write",
+      "subtitle": "Write every character in this lesson",
+      "characters": [
+        "专",
+        "你",
+        "中",
+        "什",
+        "么",
+        "白",
+        "国"
+      ]
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "专",
+      "audio_text": "专",
+      "correct": "focused",
+      "choices": [
+        "focused",
+        "you",
+        "to be",
+        "middle"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "focused",
+      "correct": "专",
+      "choices": [
+        "专",
+        "你",
+        "白",
+        "中"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "专",
+      "audio_text": "专",
+      "correct": "zhuān",
+      "choices": [
+        "zhuān",
+        "nǐ",
+        "shì",
+        "zhōng"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zhuān",
+      "correct": "专",
+      "choices": [
+        "专",
+        "你",
+        "白",
+        "中"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "专",
+      "correct": "专",
+      "choices": [
+        "专",
+        "你",
+        "白",
+        "中"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "专",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "撇",
+        "横",
+        "点",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "专",
+      "shown_strokes": [
+        "横",
+        "横"
+      ],
+      "correct": "竖折撇",
+      "choices": [
+        "撇",
+        "竖折撇",
+        "点",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "专",
+      "shown_strokes": [
+        "横",
+        "横",
+        "竖折撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "撇",
+        "点",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "你",
+      "audio_text": "你",
+      "correct": "you",
+      "choices": [
+        "you",
+        "focused",
+        "to be",
+        "middle"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "you",
+      "correct": "你",
+      "choices": [
+        "你",
+        "专",
+        "白",
+        "中"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "你",
+      "audio_text": "你",
+      "correct": "nǐ",
+      "choices": [
+        "nǐ",
+        "zhuān",
+        "shì",
+        "zhōng"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "nǐ",
+      "correct": "你",
+      "choices": [
+        "你",
+        "专",
+        "白",
+        "中"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "你",
+      "correct": "你",
+      "choices": [
+        "你",
+        "专",
+        "白",
+        "中"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "你",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "点",
+        "撇",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "你",
+      "shown_strokes": [
+        "撇",
+        "竖",
+        "撇"
+      ],
+      "correct": "横钩",
+      "choices": [
+        "点",
+        "横钩",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "你",
+      "shown_strokes": [
+        "撇",
+        "竖",
+        "撇",
+        "横钩",
+        "竖勾",
+        "撇"
+      ],
+      "correct": "点",
+      "choices": [
+        "撇",
+        "点",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "中",
+      "audio_text": "中",
+      "correct": "middle",
+      "choices": [
+        "middle",
+        "focused",
+        "you",
+        "to be"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "middle",
+      "correct": "中",
+      "choices": [
+        "中",
+        "专",
+        "你",
+        "白"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "中",
+      "audio_text": "中",
+      "correct": "zhōng",
+      "choices": [
+        "zhōng",
+        "zhuān",
+        "nǐ",
+        "shì"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zhōng",
+      "correct": "中",
+      "choices": [
+        "中",
+        "专",
+        "你",
+        "白"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "中",
+      "correct": "中",
+      "choices": [
+        "中",
+        "专",
+        "你",
+        "白"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "中",
+      "shown_strokes": [],
+      "correct": "竖",
+      "choices": [
+        "点",
+        "竖",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "中",
+      "shown_strokes": [
+        "竖",
+        "横折"
+      ],
+      "correct": "横",
+      "choices": [
+        "撇",
+        "横",
+        "点",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "中",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "横"
+      ],
+      "correct": "竖",
+      "choices": [
+        "点",
+        "竖",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "什",
+      "audio_text": "什",
+      "correct": "what (only in 什么)",
+      "choices": [
+        "what (only in 什么)",
+        "focused",
+        "you",
+        "to be"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "what (only in 什么)",
+      "correct": "什",
+      "choices": [
+        "什",
+        "专",
+        "你",
+        "中"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "什",
+      "audio_text": "什",
+      "correct": "shén",
+      "choices": [
+        "shén",
+        "zhuān",
+        "nǐ",
+        "shì"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shén",
+      "correct": "什",
+      "choices": [
+        "什",
+        "专",
+        "你",
+        "中"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "什",
+      "correct": "什",
+      "choices": [
+        "什",
+        "专",
+        "你",
+        "中"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "什",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "点",
+        "撇",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "什",
+      "shown_strokes": [
+        "撇",
+        "竖"
+      ],
+      "correct": "横",
+      "choices": [
+        "撇",
+        "横",
+        "点",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "什",
+      "shown_strokes": [
+        "撇",
+        "竖",
+        "横"
+      ],
+      "correct": "竖",
+      "choices": [
+        "点",
+        "竖",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "白",
+      "audio_text": "白",
+      "correct": "white",
+      "choices": [
+        "white",
+        "focused",
+        "you",
+        "to be"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "white",
+      "correct": "白",
+      "choices": [
+        "白",
+        "专",
+        "你",
+        "中"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "白",
+      "audio_text": "白",
+      "correct": "bái",
+      "choices": [
+        "bái",
+        "zhuān",
+        "nǐ",
+        "shì"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "bái",
+      "correct": "白",
+      "choices": [
+        "白",
+        "专",
+        "你",
+        "中"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "白",
+      "correct": "白",
+      "choices": [
+        "白",
+        "专",
+        "你",
+        "中"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "白",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "点",
+        "撇",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "白",
+      "shown_strokes": [
+        "撇",
+        "竖"
+      ],
+      "correct": "横折",
+      "choices": [
+        "点",
+        "横折",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "白",
+      "shown_strokes": [
+        "撇",
+        "竖",
+        "横折",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "撇",
+        "横",
+        "点",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "国",
+      "audio_text": "国",
+      "correct": "country",
+      "choices": [
+        "country",
+        "focused",
+        "you",
+        "to be"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "country",
+      "correct": "国",
+      "choices": [
+        "国",
+        "专",
+        "你",
+        "中"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "国",
+      "audio_text": "国",
+      "correct": "guó",
+      "choices": [
+        "guó",
+        "zhuān",
+        "nǐ",
+        "shì"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "guó",
+      "correct": "国",
+      "choices": [
+        "国",
+        "专",
+        "你",
+        "中"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "国",
+      "correct": "国",
+      "choices": [
+        "国",
+        "专",
+        "你",
+        "中"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "国",
+      "shown_strokes": [],
+      "correct": "竖",
+      "choices": [
+        "点",
+        "竖",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "国",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "横",
+        "横"
+      ],
+      "correct": "竖",
+      "choices": [
+        "点",
+        "竖",
+        "横",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "国",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "横",
+        "横",
+        "竖",
+        "横",
+        "点"
+      ],
+      "correct": "横",
+      "choices": [
+        "撇",
+        "横",
+        "点",
+        "竖折撇"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "你是哪国人？",
+      "audio_text": "你是哪国人",
+      "correct": "Which country are you from?",
+      "choices": [
+        "Which country are you from?",
+        "What is this?",
+        "What is that?",
+        "What is the sun?"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "这是什么？",
+      "audio_text": "这是什么",
+      "correct": "What is this?",
+      "choices": [
+        "What is this?",
+        "Which country are you from?",
+        "What is that?",
+        "What is the sun?"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "那是什么？",
+      "audio_text": "那是什么",
+      "correct": "What is that?",
+      "choices": [
+        "What is that?",
+        "Which country are you from?",
+        "What is this?",
+        "What is the sun?"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "专心",
+      "audio_text": "专心",
+      "correct": "to concentrate",
+      "choices": [
+        "to concentrate",
+        "focused attention",
+        "a specialism",
+        "what"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "专心",
+      "correct": "专心",
+      "choices": [
+        "专心",
+        "专注",
+        "专业",
+        "什么"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "专注",
+      "audio_text": "专注",
+      "correct": "focused attention",
+      "choices": [
+        "focused attention",
+        "to concentrate",
+        "a specialism",
+        "what"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "专注",
+      "correct": "专注",
+      "choices": [
+        "专注",
+        "专心",
+        "专业",
+        "什么"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "专业",
+      "audio_text": "专业",
+      "correct": "a specialism",
+      "choices": [
+        "a specialism",
+        "to concentrate",
+        "focused attention",
+        "what"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "专业",
+      "correct": "专业",
+      "choices": [
+        "专业",
+        "专心",
+        "专注",
+        "什么"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "什么",
+      "audio_text": "什么",
+      "correct": "what",
+      "choices": [
+        "what",
+        "to concentrate",
+        "focused attention",
+        "a specialism"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "什么",
+      "correct": "什么",
+      "choices": [
+        "什么",
+        "专心",
+        "专注",
+        "专业"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "白云",
+      "audio_text": "白云",
+      "correct": "white cloud",
+      "choices": [
+        "white cloud",
+        "to concentrate",
+        "focused attention",
+        "a specialism"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "白云",
+      "correct": "白云",
+      "choices": [
+        "白云",
+        "专心",
+        "专注",
+        "专业"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "太阳",
+      "audio_text": "太阳",
+      "correct": "the sun",
+      "choices": [
+        "the sun",
+        "to concentrate",
+        "focused attention",
+        "a specialism"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "太阳",
+      "correct": "太阳",
+      "choices": [
+        "太阳",
+        "专心",
+        "专注",
+        "专业"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "中国",
+      "audio_text": "中国",
+      "correct": "China",
+      "choices": [
+        "China",
+        "to concentrate",
+        "focused attention",
+        "a specialism"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "中国",
+      "correct": "中国",
+      "choices": [
+        "中国",
+        "专心",
+        "专注",
+        "专业"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "哪国",
+      "audio_text": "哪国",
+      "correct": "which country",
+      "choices": [
+        "which country",
+        "to concentrate",
+        "focused attention",
+        "a specialism"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "哪国",
+      "correct": "哪国",
+      "choices": [
+        "哪国",
+        "专心",
+        "专注",
+        "专业"
+      ]
+    }
+  ]
+}

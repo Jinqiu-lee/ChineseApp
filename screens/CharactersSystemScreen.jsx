@@ -2,7 +2,9 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScreenBackground from '../components/ScreenBackground';
-import { CHARACTER_LESSON_PREVIEWS, TOTAL_CHARACTER_LESSONS, hasCharacterLesson } from '../data/characters';
+import {
+  getCharacterPart, previewsForPart, lessonCountForPart, hasCharacterLesson,
+} from '../data/characters';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
 const LESSON_COLORS = [
@@ -13,12 +15,20 @@ const LESSON_COLORS = [
 export default function CharactersSystemScreen({
   onBack,
   onSelectLesson,
+  part = 1,                 // which half of the course this screen is showing
   quizPassedLessons = [],   // [1, 2, ...] completed lesson ids
   learnDone = {},           // { "char_1": true }
 }) {
-  // Same rule as Pinyin: lesson 1 is open, every later lesson needs the one before it.
-  const isLessonUnlocked = (id) => (id === 1 ? true : quizPassedLessons.includes(id - 1));
+  const partInfo = getCharacterPart(part);
+  const lessons  = previewsForPart(part);
+  const total    = lessonCountForPart(part);
+  const [firstId] = partInfo.range;
+
+  // Same rule as Pinyin: the first lesson of the half is open once the half
+  // itself is, and every later lesson needs the one before it.
+  const isLessonUnlocked = (id) => (id === firstId ? true : quizPassedLessons.includes(id - 1));
   const isLessonCompleted = (id) => quizPassedLessons.includes(id);
+  const doneInPart = quizPassedLessons.filter(id => id >= partInfo.range[0] && id <= partInfo.range[1]).length;
 
   return (
     <ScreenBackground levelId="hsk1">
@@ -29,21 +39,21 @@ export default function CharactersSystemScreen({
           <TouchableOpacity onPress={onBack} style={styles.backBtn}>
             <Text style={styles.backBtnText}>← Back</Text>
           </TouchableOpacity>
-          <Text style={styles.headerTitle}>Chinese Characters</Text>
+          <Text style={styles.headerTitle}>{partInfo.title}</Text>
           <View style={{ width: 60 }} />
         </View>
 
         <ScrollView contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
           <View style={styles.heroCard}>
-            <Text style={styles.heroEmoji}>✍️</Text>
-            <Text style={styles.heroTitle}>Build Characters From Strokes</Text>
+            <Text style={styles.heroEmoji}>{partInfo.icon}</Text>
+            <Text style={styles.heroTitle}>{partInfo.subtitle}</Text>
             <Text style={styles.heroDesc}>
-              {TOTAL_CHARACTER_LESSONS} lessons. Each one teaches strokes, writing rules,
+              {total} lessons. Each one teaches strokes, writing rules,
               character construction and real words — then checks what stuck.
             </Text>
             <View style={styles.heroStats}>
               <View style={styles.heroStat}>
-                <Text style={styles.heroStatNum}>{quizPassedLessons.length}/{TOTAL_CHARACTER_LESSONS}</Text>
+                <Text style={styles.heroStatNum}>{doneInPart}/{total}</Text>
                 <Text style={styles.heroStatLabel}>Completed</Text>
               </View>
               <View style={styles.heroStatDivider} />
@@ -61,7 +71,20 @@ export default function CharactersSystemScreen({
 
           <Text style={styles.sectionLabel}>LESSONS</Text>
 
-          {CHARACTER_LESSON_PREVIEWS.map(lesson => {
+          {/* A half with nothing authored yet gets one honest placeholder,
+              rather than ten identical "Coming soon" rows. */}
+          {lessons.length === 0 && (
+            <View style={styles.emptyCard}>
+              <Text style={styles.emptyEmoji}>{partInfo.icon}</Text>
+              <Text style={styles.emptyTitle}>Being written now</Text>
+              <Text style={styles.emptyDesc}>
+                Lessons {partInfo.range[0]}–{partInfo.range[1]} will cover {partInfo.subtitle.toLowerCase()}.
+                They will appear here as soon as they are ready.
+              </Text>
+            </View>
+          )}
+
+          {lessons.map(lesson => {
             const authored  = hasCharacterLesson(lesson.id);
             const unlocked  = authored && isLessonUnlocked(lesson.id);
             const completed = isLessonCompleted(lesson.id);
@@ -127,6 +150,15 @@ const styles = StyleSheet.create({
   headerTitle: { fontSize: 15, fontWeight: '700', color: DEEP_NAVY },
 
   content: { padding: 20 },
+
+  // Shown when a half of the course has no lessons written yet.
+  emptyCard: {
+    backgroundColor: CARD_WHITE, borderRadius: 16, padding: 24, alignItems: 'center', gap: 8,
+    borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.2)', borderStyle: 'dashed',
+  },
+  emptyEmoji: { fontSize: 40 },
+  emptyTitle: { fontSize: 18, fontWeight: '800', color: DEEP_NAVY },
+  emptyDesc:  { fontSize: 14, color: SLATE_TEAL, textAlign: 'center', lineHeight: 20 },
 
   heroCard: {
     backgroundColor: CARD_WHITE, borderRadius: 8, padding: 24, alignItems: 'center',

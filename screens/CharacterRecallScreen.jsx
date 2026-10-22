@@ -18,6 +18,21 @@ const PASS_SCORE = 60;
 // question, whose circle is sized to the same number.
 const PROMPT_BODY = 110;
 
+// The question frame is a fixed size. Rather than letting a long prompt wrap
+// and push it taller, the text scales down until it fits on one line — so
+// every question of a given type occupies exactly the same box, whether it is
+// one character or a whole sentence.
+//   1-4 characters keep the full size; a 7-character sentence shrinks to fit.
+// `em` is how wide one character runs at a given point size: a CJK glyph is
+// square, Latin averages a little over half that.
+const PROMPT_PADDING = 76;   // screen padding 20×2 + frame padding 18×2
+
+function fitFontSize(text, available, max, min, em) {
+  const count = [...(text || '')].length || 1;
+  const fit = Math.floor(available / (count * em));
+  return Math.max(min, Math.min(max, fit));
+}
+
 const TYPE_LABELS = {
   char_to_meaning:   '🀄 Character → Meaning',
   meaning_to_char:   '💡 Meaning → Character',
@@ -72,6 +87,13 @@ function buildPinyinMap(lessonData) {
     if (p.quiz) m[p.quiz.result_word] = p.quiz.result_pinyin;
   });
   (lc.part2_build?.rules || []).forEach(r => { m[r.result_char] = r.result_pinyin; });
+  // Sentences carry readings for words the lesson uses but does not teach —
+  // 是 appears in every Lesson 10 sentence without being a taught character.
+  (lc.part4_use?.sentences || []).forEach(st => {
+    m[st.sentence] = st.pinyin;
+    if (st.reply) m[st.reply.sentence] = st.reply.pinyin;
+    (st.breakdown || []).forEach(b => { m[b.part] = b.pinyin; });
+  });
   return m;
 }
 
@@ -102,6 +124,7 @@ export default function CharacterRecallScreen({
   const isWrite = q?.type === 'write';
 
   const { width: winW, height: winH } = useWindowDimensions();
+  const promptWidth = winW - PROMPT_PADDING;
   const canvas = Math.round(Math.min(winW - 76, winH * 0.33, 276));
 
   // Listening questions always speak themselves; in a quiz everything that has
@@ -182,11 +205,24 @@ export default function CharacterRecallScreen({
           </TouchableOpacity>
         );
 
-      case 'pinyin_to_char':
-        return <Text style={s.promptPinyin}>{q.prompt_pinyin}</Text>;
+      case 'pinyin_to_char': {
+        const size = fitFontSize(q.prompt_pinyin, promptWidth, 46, 22, 0.55);
+        return (
+          <Text style={[s.promptPinyin, { fontSize: size, lineHeight: Math.round(size * 1.25) }]}>
+            {q.prompt_pinyin}
+          </Text>
+        );
+      }
 
-      case 'meaning_to_char':
-        return <Text style={s.promptEn}>{q.prompt_en || q.question}</Text>;
+      case 'meaning_to_char': {
+        const text = q.prompt_en || q.question;
+        const size = fitFontSize(text, promptWidth, 34, 18, 0.55);
+        return (
+          <Text style={[s.promptEn, { fontSize: size, lineHeight: Math.round(size * 1.3) }]}>
+            {text}
+          </Text>
+        );
+      }
 
       case 'missing_stroke': {
         // The blank can sit anywhere, so every OTHER stroke is drawn — before
@@ -248,11 +284,15 @@ export default function CharacterRecallScreen({
           </View>
         );
 
-      default:
+      default: {
         if (!q.prompt_char) return null;
+        // A single glyph gets the full 60; a sentence shrinks to the same box.
+        const size = fitFontSize(q.prompt_char, promptWidth, 60, 26, 1);
         return (
           <View style={s.promptInner}>
-            <Text style={s.promptChar}>{q.prompt_char}</Text>
+            <Text style={[s.promptChar, { fontSize: size, lineHeight: Math.round(size * 1.24) }]}>
+              {q.prompt_char}
+            </Text>
             {hasHan(q.prompt_char) && (
               <TouchableOpacity
                 style={s.promptAudioBtn}
@@ -264,6 +304,7 @@ export default function CharacterRecallScreen({
             )}
           </View>
         );
+      }
     }
   };
 

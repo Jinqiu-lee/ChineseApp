@@ -9,9 +9,15 @@ import ScreenBackground from '../components/ScreenBackground';
 import AvatarPicker from '../components/AvatarPicker';
 import AVATARS from '../config/avatarConfig';
 import { LEVEL_QUOTES } from '../data/emotionalContent';
+import { CHARACTER_PARTS, isCharacterPartUnlocked } from '../data/characters';
 import { DEEP_NAVY, SLATE_TEAL, WARM_BROWN, CARD_WHITE } from '../constants/colors';
 
-const FoundationsScreen = ({ currentLevelId, onPinyinPress, onCharactersPress }) => {
+const FoundationsScreen = ({
+  currentLevelId,
+  onPinyinPress,
+  onCharactersPress,            // (partId) => void
+  charLessonsPassed = [],       // which character lessons are done, for the Part 2 gate
+}) => {
   const [avatarId, setAvatarId] = useState('eileen');
 
   useEffect(() => {
@@ -48,13 +54,26 @@ const FoundationsScreen = ({ currentLevelId, onPinyinPress, onCharactersPress })
             <Text style={styles.cardCaption}>The path you walk</Text>
           </TouchableOpacity>
 
-          {/* Characters card — the course is live and open at every level */}
-          <TouchableOpacity style={styles.card} onPress={onCharactersPress} activeOpacity={0.85}>
-            <Text style={styles.cardIcon}>✍️</Text>
-            <Text style={styles.cardTitle}>Characters</Text>
-            <Text style={styles.cardSub}>Writing System</Text>
-            <Text style={styles.cardCaption}>The structure you build</Text>
-          </TouchableOpacity>
+          {/* The characters course is two halves, each its own card. The
+              second opens only once the last lesson of the first is passed. */}
+          {CHARACTER_PARTS.map(part => {
+            const unlocked = isCharacterPartUnlocked(part.id, charLessonsPassed);
+            return (
+              <TouchableOpacity
+                key={part.id}
+                style={[styles.card, !unlocked && styles.cardLocked]}
+                onPress={() => unlocked && onCharactersPress?.(part.id)}
+                activeOpacity={unlocked ? 0.85 : 1}
+              >
+                <Text style={styles.cardIcon}>{unlocked ? part.icon : '🔒'}</Text>
+                <Text style={[styles.cardTitle, !unlocked && styles.cardLockedText]}>{part.short}</Text>
+                <Text style={[styles.cardSub, !unlocked && styles.cardLockedText]}>{part.subtitle}</Text>
+                <Text style={[styles.cardCaption, !unlocked && styles.cardLockedText]}>
+                  {unlocked ? part.caption : `Finish Lesson ${part.unlockedBy} to unlock`}
+                </Text>
+              </TouchableOpacity>
+            );
+          })}
 
           {/* Guide picker */}
           <Text style={styles.sectionLabel}>CHOOSE YOUR GUIDE</Text>
@@ -94,6 +113,8 @@ const styles = StyleSheet.create({
     shadowColor: '#000', shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.15, shadowRadius: 6, elevation: 4,
   },
+  cardLocked:     { opacity: 0.55 },
+  cardLockedText: { color: SLATE_TEAL },
   cardIcon:    { fontSize: 36, marginBottom: 8 },
   cardTitle:   { fontSize: 20, fontWeight: '700', color: '#1a1a2e', marginBottom: 4 },
   cardSub:     { fontSize: 14, color: '#555', marginBottom: 4 },

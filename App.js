@@ -39,7 +39,7 @@ import StrokeAnimatorTestScreen from './screens/StrokeAnimatorTestScreen';
 import CharactersSystemScreen from './screens/CharactersSystemScreen';
 import CharacterLessonScreen from './screens/CharacterLessonScreen';
 import CharacterRecallScreen from './screens/CharacterRecallScreen';
-import { getCharacterLesson } from './data/characters';
+import { getCharacterLesson, partForLesson } from './data/characters';
 import { practiceStageCount } from './data/characters/practiceStages';
 
 // Pinyin lesson data
@@ -232,6 +232,7 @@ export default function App() {
   const [pinyinStageProgress, setPinyinStageProgress] = useState({}); // { "pinyin_1": [0,1,2] }
   const [pinyinLearnDone, setPinyinLearnDone] = useState({});         // { "pinyin_1": true }
   const [charLessonsPassed, setCharLessonsPassed] = useState([]);     // [1,2,...] character lesson ids completed
+  const [charactersPart, setCharactersPart] = useState(1);            // which half of the characters course is open
   const [charLearnDone, setCharLearnDone] = useState({});             // { "char_1": true }
   const [currentCharLessonId, setCurrentCharLessonId] = useState(null);
   const [charLessonInitialTab, setCharLessonInitialTab] = useState('learn');
@@ -596,6 +597,7 @@ export default function App() {
 
   // ── Chinese Characters course ───────────────────────────────
   const handleSelectCharLesson = (lessonId) => {
+    setCharactersPart(partForLesson(lessonId));
     setCurrentCharLessonId(lessonId);
     setCharLessonInitialTab('learn');
     setCurrentScreen('charLesson');
@@ -1114,7 +1116,11 @@ export default function App() {
             setPinyinSystemOrigin('tab');
             setCurrentScreen('pinyinSystem');
           }}
-          onCharactersPress={() => setCurrentScreen('charactersSystem')}
+          onCharactersPress={(partId) => {
+            setCharactersPart(partId || 1);
+            setCurrentScreen('charactersSystem');
+          }}
+          charLessonsPassed={charLessonsPassed}
         />
       );
     }
@@ -1130,6 +1136,7 @@ export default function App() {
         <CharactersSystemScreen
           onBack={() => { setCurrentScreen('foundations'); setActiveTab('learn'); }}
           onSelectLesson={handleSelectCharLesson}
+          part={charactersPart}
           quizPassedLessons={charLessonsPassed}
           learnDone={charLearnDone}
         />

@@ -87,8 +87,10 @@ function StrokeCard({ item }) {
       </View>
 
       <View style={s.titleRow}>
-        <Text style={s.bigName}>{item.stroke}</Text>
-        <Text style={s.bigPinyin}>{item.pinyin}</Text>
+        <View style={s.titleStack}>
+          <Text style={s.bigName}>{item.stroke}</Text>
+          <Text style={s.bigPinyin}>{item.pinyin}</Text>
+        </View>
         <TouchableOpacity onPress={() => speakChinese(item.audio_text)} style={s.audioBtn} activeOpacity={0.7}>
           <Text style={s.audioIcon}>🔊</Text>
         </TouchableOpacity>
@@ -135,18 +137,11 @@ function RecognitionCheck({ item }) {
                 answered && right && s.choiceRight,
                 answered && chosen && !right && s.choiceWrong,
               ]}
-              onPress={() => !answered && setPicked(c)}
-              activeOpacity={answered ? 1 : 0.8}
+              onPress={() => { speakChinese(c); if (!answered) setPicked(c); }}
+              activeOpacity={0.8}
             >
               <Text style={s.textChoiceLabel}>{c}</Text>
               <Text style={s.textChoicePinyin}>{getStrokePinyin(c)}</Text>
-              <TouchableOpacity
-                onPress={() => speakChinese(c)}
-                activeOpacity={0.6}
-                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
-              >
-                <Text style={s.textChoiceAudio}>🔊</Text>
-              </TouchableOpacity>
               {answered && right && <Text style={s.choiceMarkInline}>✓</Text>}
               {answered && chosen && !right && <Text style={s.choiceMarkInline}>✕</Text>}
             </TouchableOpacity>
@@ -170,8 +165,10 @@ function StructureCard({ item }) {
   return (
     <View style={[s.card, s.structureCard]}>
       <View style={s.titleRow}>
-        <Text style={s.bigName}>{item.name}</Text>
-        <Text style={s.bigPinyin}>{item.pinyin}</Text>
+        <View style={s.titleStack}>
+          <Text style={s.bigName}>{item.name}</Text>
+          <Text style={s.bigPinyin}>{item.pinyin}</Text>
+        </View>
         {item.audio_text ? (
           <TouchableOpacity onPress={() => speakChinese(item.audio_text, 'female', item.pinyin)} style={s.audioBtn} activeOpacity={0.7}>
             <Text style={s.audioIcon}>🔊</Text>
@@ -179,6 +176,15 @@ function StructureCard({ item }) {
         ) : null}
       </View>
       <Text style={s.meaningEn}>{item.name_en}</Text>
+
+      {/* A character writing itself says what the structure is far quicker
+          than a paragraph: the narrow left part goes down first, complete,
+          then the right. */}
+      {item.demo_char ? (
+        <View style={s.artStage}>
+          <StrokeAnimator char={item.demo_char} size={ART} loop colored />
+        </View>
+      ) : null}
 
       {item.intro ? <Text style={s.body}>{item.intro}</Text> : null}
       {item.explanation ? <Text style={s.body}>{item.explanation}</Text> : null}
@@ -190,8 +196,17 @@ function StructureCard({ item }) {
         </View>
       ) : null}
 
-      {/* Each example is shown split: the left part, the right part, the whole. */}
-      {(item.examples || []).map(ex => (
+      {/* Each example is shown split into its two parts, then whole. A
+          left-right character names them left/right; a wrapping one names
+          them outer/inner, and the separator says which it is — "|" for two
+          parts side by side, "⊃" for one holding the other. */}
+      {(item.examples || []).map(ex => {
+        const wrapped = ex.outer != null;
+        const first   = wrapped ? ex.outer : ex.left;
+        const second  = wrapped ? ex.inner : ex.right;
+        const firstNote  = wrapped ? ex.outer_note : ex.left_note;
+        const secondNote = wrapped ? ex.inner_note : ex.right_note;
+        return (
         <TouchableOpacity
           key={ex.character}
           style={s.splitRow}
@@ -199,9 +214,11 @@ function StructureCard({ item }) {
           activeOpacity={0.8}
         >
           <View style={s.splitBox}>
-            <View style={s.splitHalf}><Text style={s.splitPart}>{ex.left}</Text></View>
-            <View style={s.splitDivider} />
-            <View style={s.splitHalf}><Text style={s.splitPart}>{ex.right}</Text></View>
+            <View style={s.splitHalf}><Text style={s.splitPart}>{first}</Text></View>
+            {wrapped
+              ? <View style={s.splitWrapMark}><Text style={s.splitWrapText}>⊃</Text></View>
+              : <View style={s.splitDivider} />}
+            <View style={s.splitHalf}><Text style={s.splitPart}>{second}</Text></View>
           </View>
           <Text style={s.splitEquals}>=</Text>
           <View style={s.splitWhole}>
@@ -210,11 +227,60 @@ function StructureCard({ item }) {
           </View>
           <View style={s.splitNotes}>
             <Text style={s.splitNote}>{ex.meaning}</Text>
-            <Text style={s.splitNoteDim}>{ex.left} — {ex.left_note}</Text>
-            <Text style={s.splitNoteDim}>{ex.right} — {ex.right_note}</Text>
+            <Text style={s.splitNoteDim}>{first} — {firstNote}</Text>
+            <Text style={s.splitNoteDim}>{second} — {secondNote}</Text>
           </View>
         </TouchableOpacity>
-      ))}
+      );})}
+
+      {/* The exception comes after the examples: see the rule work once
+          before being told where it does not. 辶 reverses 先外后里 for every
+          character built on it, not just 这. */}
+      {item.exception ? (
+        <View style={s.exceptionBox}>
+          <View style={s.exceptionHead}>
+            <Text style={s.exceptionRadical}>{item.exception.radical}</Text>
+            <View style={{ flex: 1 }}>
+              <Text style={s.exceptionName}>{item.exception.name}</Text>
+              {item.exception.pinyin ? (
+                <Text style={s.exceptionPinyin}>{item.exception.pinyin}</Text>
+              ) : null}
+              <Text style={s.exceptionNameEn}>{item.exception.name_en}</Text>
+            </View>
+            {item.exception.audio_text ? (
+              <TouchableOpacity
+                onPress={() => speakChinese(item.exception.audio_text, 'female', item.exception.pinyin)}
+                style={s.audioBtn}
+                activeOpacity={0.7}
+              >
+                <Text style={s.audioIcon}>🔊</Text>
+              </TouchableOpacity>
+            ) : null}
+          </View>
+
+          <Text style={s.exceptionRuleCn}>{item.exception.rule}</Text>
+          <Text style={s.exceptionRuleEn}>{item.exception.rule_en}</Text>
+          {item.exception.note ? <Text style={s.body}>{item.exception.note}</Text> : null}
+
+          {/* Shown as plain glyphs: most of these are not taught in this
+              lesson and have no stroke data to animate. */}
+          <View style={s.exceptionRow}>
+            {(item.exception.characters || []).map(ch => (
+              <TouchableOpacity
+                key={ch.character}
+                style={s.exceptionChip}
+                onPress={() => speakChinese(ch.audio_text || ch.character, 'female', ch.pinyin)}
+                activeOpacity={0.8}
+              >
+                <Text style={s.exceptionChipCn}>{ch.character}</Text>
+                <Text style={s.exceptionChipPy}>{ch.pinyin}</Text>
+                <Text style={s.exceptionChipEn}>{ch.meaning}</Text>
+                {ch.inner ? <Text style={s.exceptionChipInner}>{ch.inner} first</Text> : null}
+              </TouchableOpacity>
+            ))}
+          </View>
+        </View>
+      ) : null}
 
       {item.contrast ? (
         <View style={s.contrastBox}>
@@ -223,30 +289,49 @@ function StructureCard({ item }) {
         </View>
       ) : null}
 
+      {/* Answers here are always short — a single character, or a stroke shown
+          as its shape. They share the compact buttons the rest of the lesson
+          uses, which only works because nothing longer goes in them: a
+          sentence at this size fills the screen. Any explaining belongs in
+          `explain`, shown after the answer. */}
       {check ? (
         <View style={{ gap: 10 }}>
           <Text style={s.structureQ}>{check.question}</Text>
-          <View style={s.choiceRow}>
-            {check.choices.map(c => {
-              const chosen = picked === c;
-              const reveal = picked != null;
-              return (
-                <TouchableOpacity
-                  key={c}
-                  style={[
-                    s.charChoice,
-                    reveal && c === check.correct && s.choiceRight,
-                    reveal && chosen && c !== check.correct && s.choiceWrong,
-                  ]}
-                  onPress={() => { speakChinese(c); if (picked == null) setPicked(c); }}
-                  activeOpacity={0.8}
-                >
-                  <Text style={s.charChoiceText}>{c}</Text>
-                </TouchableOpacity>
-              );
-            })}
-          </View>
-          <AnswerFeedback picked={picked} correct={check.correct} />
+          {check.answer_kind === 'stroke' ? (
+            <StrokeChoiceRow
+              choices={check.choices}
+              correct={check.correct}
+              picked={picked}
+              onPick={setPicked}
+            />
+          ) : (
+            <>
+              <View style={s.choiceRow}>
+                {check.choices.map(c => {
+                  const chosen = picked === c;
+                  const reveal = picked != null;
+                  return (
+                    <TouchableOpacity
+                      key={c}
+                      style={[
+                        s.charChoice,
+                        reveal && c === check.correct && s.choiceRight,
+                        reveal && chosen && c !== check.correct && s.choiceWrong,
+                      ]}
+                      onPress={() => { speakChinese(c); if (picked == null) setPicked(c); }}
+                      activeOpacity={0.8}
+                    >
+                      <Text style={s.charChoiceText}>{c}</Text>
+                    </TouchableOpacity>
+                  );
+                })}
+              </View>
+              <AnswerFeedback picked={picked} correct={check.correct} />
+            </>
+          )}
+          {picked != null && check.explain ? (
+            <Text style={s.body}>{check.explain}</Text>
+          ) : null}
         </View>
       ) : null}
     </View>
@@ -381,8 +466,10 @@ function BuildCard({ item }) {
       {/* The character, pinyin and meaning are always shown — the task is to
           work out the stroke order, not to guess which character it is. */}
       <View style={s.titleRow}>
-        <Text style={s.bigName}>{item.character}</Text>
-        <Text style={s.bigPinyin}>{item.pinyin}</Text>
+        <View style={s.titleStack}>
+          <Text style={s.bigName}>{item.character}</Text>
+          <Text style={s.bigPinyin}>{item.pinyin}</Text>
+        </View>
         <TouchableOpacity onPress={() => speakChinese(item.character, 'female', item.pinyin)} style={s.audioBtn} activeOpacity={0.7}>
           <Text style={s.audioIcon}>🔊</Text>
         </TouchableOpacity>
@@ -500,8 +587,7 @@ function PatternQuiz({ quiz, pinyinFor }) {
             onPress={() => { speakChinese(c, 'female', pinyinFor?.(c)); pick(c); }}
             activeOpacity={0.8}
           >
-            <Text style={s.charChoiceText}>{c}</Text>
-            <Text style={s.charChoiceAudio}>🔊</Text>
+            <Text style={[s.charChoiceText, s.charChoiceTextAudio]}>{c}</Text>
           </TouchableOpacity>
         ))}
       </View>
@@ -543,8 +629,10 @@ function PatternCard({ item, pinyinFor }) {
         </View>
 
         <View style={s.titleRow}>
-          <Text style={s.bigName}>{item.word}</Text>
-          <Text style={s.bigPinyin}>{item.pinyin}</Text>
+          <View style={s.titleStack}>
+            <Text style={s.bigName}>{item.word}</Text>
+            <Text style={s.bigPinyin}>{item.pinyin}</Text>
+          </View>
           <TouchableOpacity onPress={() => speakChinese(item.audio_text, 'female', item.pinyin)} style={s.audioBtn} activeOpacity={0.7}>
             <Text style={s.audioIcon}>🔊</Text>
           </TouchableOpacity>
@@ -612,9 +700,39 @@ function SentenceCard({ item, pinyinFor }) {
 
         <Text style={s.meaningEn}>{item.meaning}</Text>
 
-        {/* The sentence taken apart, in reading order. */}
+        {/* A picture of the answer, shown before the words for it — you can
+            work out 这是太阳 from a sun without reading any Chinese. */}
+        {item.answer_image ? (
+          <View style={s.answerImageStage}>
+            <Text style={s.answerImageGlyph}>{item.answer_image}</Text>
+          </View>
+        ) : null}
+
+        {/* A question needs its answer next to it, or the pattern is only half
+            shown. Rendered as a reply so the pair reads as one exchange. */}
+        {item.reply ? (
+          <View style={s.replyStage}>
+            <Text style={s.replyArrow}>↳</Text>
+            <View style={{ flex: 1 }}>
+              <Text style={s.replyCn}>{item.reply.sentence}</Text>
+              <Text style={s.replyPy}>{item.reply.pinyin}</Text>
+              <Text style={s.replyEn}>{item.reply.meaning}</Text>
+            </View>
+            <TouchableOpacity
+              onPress={() => speakChinese(item.reply.audio_text || item.reply.sentence, 'female', item.reply.pinyin)}
+              style={s.audioBtn}
+              activeOpacity={0.7}
+            >
+              <Text style={s.audioIcon}>🔊</Text>
+            </TouchableOpacity>
+          </View>
+        ) : null}
+
+        {/* The sentence taken apart, in reading order. Optional: a sentence
+            carried by a picture does not need naming piece by piece. */}
+        {item.breakdown?.length ? (
         <View style={s.breakdownRow}>
-          {(item.breakdown || []).map((b, i) => (
+          {item.breakdown.map((b, i) => (
             <React.Fragment key={`${b.part}-${i}`}>
               {i > 0 && <Text style={s.breakdownArrow}>›</Text>}
               <TouchableOpacity
@@ -630,6 +748,7 @@ function SentenceCard({ item, pinyinFor }) {
             </React.Fragment>
           ))}
         </View>
+        ) : null}
 
         {item.note ? <Text style={s.body}>{item.note}</Text> : null}
       </View>
@@ -661,8 +780,7 @@ function SentenceCard({ item, pinyinFor }) {
                 onPress={() => { speakChinese(c, 'female', pinyinFor?.(c)); if (!done) setPicked([...picked, c]); }}
                 activeOpacity={0.8}
               >
-                <Text style={s.charChoiceText}>{c}</Text>
-                <Text style={s.charChoiceAudio}>🔊</Text>
+                <Text style={[s.charChoiceText, s.charChoiceTextAudio]}>{c}</Text>
               </TouchableOpacity>
             ))}
           </View>
@@ -774,8 +892,10 @@ function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasS
         <MiniGrid char={char} />
         <View style={{ flex: 1 }}>
           <View style={s.titleRow}>
-            <Text style={s.bigName}>{char}</Text>
-            {!!info.pinyin && <Text style={s.bigPinyin}>{info.pinyin}</Text>}
+            <View style={s.titleStack}>
+              <Text style={s.bigName}>{char}</Text>
+              {!!info.pinyin && <Text style={s.bigPinyin}>{info.pinyin}</Text>}
+            </View>
             <TouchableOpacity onPress={() => speakChinese(char, 'female', info.pinyin)} style={s.audioBtn} activeOpacity={0.7}>
               <Text style={s.audioIcon}>🔊</Text>
             </TouchableOpacity>
@@ -847,7 +967,12 @@ export default function CharacterLessonScreen({
     // Multi-character pieces of a sentence (没有, 说话) need their own reading —
     // speaking them character by character gets the tones wrong.
     ...Object.fromEntries((p4.sentences || []).flatMap(st => (st.breakdown || []).map(b => [b.part, b.pinyin]))),
-    ...Object.fromEntries((p2.structure?.examples || []).map(ex => [ex.character, ex.pinyin])),
+    ...Object.fromEntries((p4.sentences || []).filter(st => st.reply).map(st => [st.reply.sentence, st.reply.pinyin])),
+    ...Object.fromEntries(
+      (p2.structures || (p2.structure ? [p2.structure] : []))
+        .flatMap(st => st.examples || [])
+        .map(ex => [ex.character, ex.pinyin]),
+    ),
   };
   // Fall back to the course-wide lookup: a lesson often uses a character
   // taught elsewhere (Lesson 4's 儿子 needs 子 from Lesson 6).
@@ -882,7 +1007,11 @@ export default function CharacterLessonScreen({
       // several characters (先中间后两边 covers 山, 小 and 少).
       body: (
         <>
-          {p2.structure && <StructureCard item={p2.structure} />}
+          {/* A lesson may teach one structure (Lesson 8) or several
+              (Lesson 9 teaches both kinds of enclosure). */}
+          {(p2.structures || (p2.structure ? [p2.structure] : [])).map((st, i) => (
+            <StructureCard key={st.name || i} item={st} />
+          ))}
           {(p2.rules || []).map((r, i) => <RuleCard key={`${r.result_char}-${i}`} item={r} />)}
         </>
       ),
@@ -1109,7 +1238,13 @@ export default function CharacterLessonScreen({
         <StatusBar barStyle="dark-content" />
 
         <View style={s.header}>
-          <TouchableOpacity onPress={onBack} style={s.backBtn}>
+          {/* Back goes up exactly one level: out of an open part to the part
+              list, and only from the list itself out of the lesson. Without
+              this it always left the lesson, skipping a level. */}
+          <TouchableOpacity
+            onPress={openPart != null ? () => setOpenPart(null) : onBack}
+            style={s.backBtn}
+          >
             <Text style={s.backBtnText}>← Back</Text>
           </TouchableOpacity>
           <Text style={s.headerTitle} numberOfLines={1}>
@@ -1204,8 +1339,11 @@ const s = StyleSheet.create({
   },
 
   titleRow:  { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  // Pinyin reads as a label for the character above it, not as a second title
+  // beside it — so it is stacked underneath and a good deal smaller.
+  titleStack: { flex: 1 },
   bigName:   { fontSize: 30, fontWeight: '900', color: DEEP_NAVY },
-  bigPinyin: { fontSize: 20, fontWeight: '700', color: WARM_BROWN, flex: 1 },
+  bigPinyin: { fontSize: 16, fontWeight: '700', color: WARM_BROWN, marginTop: 1 },
   sub:       { fontSize: 15, color: SLATE_TEAL },
   body:      { flex: 1, fontSize: 15, color: SLATE_TEAL, lineHeight: 21 },
   audioBtn:  { padding: 6 },
@@ -1235,7 +1373,6 @@ const s = StyleSheet.create({
   },
   textChoiceLabel:  { fontSize: 22, lineHeight: 29, fontWeight: '800', color: DEEP_NAVY },
   textChoicePinyin: { fontSize: 12, color: WARM_BROWN, marginTop: 2 },
-  textChoiceAudio:  { fontSize: 20, marginTop: 3 },
   choiceRight:  { backgroundColor: 'rgba(46,125,50,0.18)', borderColor: SUCCESS, borderWidth: 2.5 },
   choiceWrong:  { backgroundColor: 'rgba(196,80,58,0.15)', borderColor: '#C4503A', borderWidth: 2.5 },
   choiceMark:       { position: 'absolute', top: 2, right: 5, fontSize: 15, fontWeight: '900', color: DEEP_NAVY },
@@ -1342,6 +1479,30 @@ const s = StyleSheet.create({
   structureRuleEn: { fontSize: 14, color: SLATE_TEAL },
   structureQ:      { fontSize: 16, fontWeight: '800', color: DEEP_NAVY },
 
+  // An exception to the rule just stated — deliberately a different colour
+  // from the rule box so it reads as "but not these".
+  exceptionBox: {
+    backgroundColor: 'rgba(196,80,58,0.07)', borderRadius: 12, padding: 12, gap: 8,
+    borderLeftWidth: 4, borderLeftColor: '#C4503A',
+  },
+  exceptionHead:     { flexDirection: 'row', alignItems: 'center', gap: 10 },
+  exceptionRadical:  { fontSize: 34, fontWeight: '900', color: '#C4503A' },
+  exceptionName:     { fontSize: 17, fontWeight: '900', color: DEEP_NAVY },
+  exceptionPinyin:   { fontSize: 13, fontWeight: '700', color: WARM_BROWN },
+  exceptionNameEn:   { fontSize: 13, color: SLATE_TEAL },
+  exceptionRuleCn:   { fontSize: 18, fontWeight: '900', color: '#C4503A' },
+  exceptionRuleEn:   { fontSize: 14, color: SLATE_TEAL, lineHeight: 19 },
+  exceptionRow:      { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  exceptionChip: {
+    flexGrow: 1, alignItems: 'center', paddingHorizontal: 12, paddingVertical: 8,
+    borderRadius: 10, backgroundColor: CARD_WHITE,
+    borderWidth: 1, borderColor: 'rgba(196,80,58,0.25)',
+  },
+  exceptionChipCn:    { fontSize: 26, fontWeight: '900', color: DEEP_NAVY },
+  exceptionChipPy:    { fontSize: 13, color: WARM_BROWN },
+  exceptionChipEn:    { fontSize: 12, fontWeight: '700', color: WARM_ORANGE },
+  exceptionChipInner: { fontSize: 11, color: SLATE_TEAL, marginTop: 2 },
+
   splitRow: {
     flexDirection: 'row', alignItems: 'center', gap: 8,
     backgroundColor: '#FFF8ED', borderRadius: 12, padding: 10,
@@ -1353,6 +1514,9 @@ const s = StyleSheet.create({
   },
   splitHalf:    { minWidth: 32, paddingHorizontal: 6, alignItems: 'center', justifyContent: 'center' },
   splitDivider: { width: 1.5, backgroundColor: 'rgba(155,104,70,0.35)' },
+  // Shown instead of the divider when one part wraps around the other.
+  splitWrapMark: { justifyContent: 'center', paddingHorizontal: 2 },
+  splitWrapText: { fontSize: 15, fontWeight: '900', color: WARM_BROWN },
   splitPart:    { fontSize: 24, fontWeight: '800', color: WARM_BROWN },
   splitEquals:  { fontSize: 16, fontWeight: '800', color: SLATE_TEAL },
   splitWhole:   { alignItems: 'center', minWidth: 44 },
@@ -1381,6 +1545,25 @@ const s = StyleSheet.create({
     backgroundColor: WARM_BROWN,
   },
   sentenceAudioText: { fontSize: 15, fontWeight: '800', color: CARD_WHITE },
+
+  // A picture standing in for the answer.
+  answerImageStage: {
+    alignSelf: 'stretch', alignItems: 'center', justifyContent: 'center',
+    paddingVertical: 14, borderRadius: 14, backgroundColor: '#FFF8ED',
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.15)',
+  },
+  answerImageGlyph: { fontSize: 72, lineHeight: 84 },
+
+  // The answer to a question sentence.
+  replyStage: {
+    flexDirection: 'row', alignItems: 'center', gap: 10,
+    backgroundColor: 'rgba(46,125,50,0.08)', borderRadius: 12, padding: 12,
+    borderLeftWidth: 4, borderLeftColor: SUCCESS,
+  },
+  replyArrow: { fontSize: 20, fontWeight: '900', color: SUCCESS },
+  replyCn:    { fontSize: 24, fontWeight: '900', color: DEEP_NAVY, letterSpacing: 1 },
+  replyPy:    { fontSize: 14, fontWeight: '600', color: WARM_BROWN, marginTop: 1 },
+  replyEn:    { fontSize: 14, fontWeight: '700', color: WARM_ORANGE, marginTop: 1 },
 
   breakdownRow:   { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 6 },
   breakdownArrow: { fontSize: 18, fontWeight: '900', color: SLATE_TEAL },
@@ -1417,7 +1600,7 @@ const s = StyleSheet.create({
   },
   varCn:     { fontSize: 20, fontWeight: '800', color: DEEP_NAVY },
   varPy:     { fontSize: 13, color: WARM_BROWN },
-  varEnText: { fontSize: 14, fontWeight: '700', color: WARM_ORANGE },
+  varEnText: { fontSize: 12, fontWeight: '700', color: WARM_ORANGE },
 
   // Pattern completion question
   quizCard: {
@@ -1460,7 +1643,8 @@ const s = StyleSheet.create({
   charChoiceIdle:  { opacity: 0.5 },
   // Chinese-only answers, the same 28 the Practice screen uses.
   charChoiceText:  { fontSize: 28, lineHeight: 36, fontWeight: '900', color: DEEP_NAVY },
-  charChoiceAudio: { fontSize: 15, marginTop: 2 },
+  // Part 4's answers, two steps down from the Part 2 buttons.
+  charChoiceTextAudio: { fontSize: 24, lineHeight: 31 },
   quizActions: { flexDirection: 'row', alignItems: 'center', gap: 14 },
 
   // Slide navigation (inside the scroll content)

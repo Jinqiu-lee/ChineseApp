@@ -15,6 +15,8 @@ const PHONEME_OVERRIDES = {
   // The stroke 撇 is piě. Google TTS reads the bare character as piē.
   '撇': 'pie3',
   '谁': 'shei2',
+  // 什 alone is shí; the course only ever means shén (什么).
+  '什': 'shen2',
   // 没 is polyphonic (méi = not have, mò = sink). The course only ever uses
   // méi, and Google TTS reads the bare character as mò.
   '没': 'mei2',
@@ -34,6 +36,10 @@ const PHONEME_OVERRIDES = {
 const COMPOUND_PHONEME_OVERRIDES = {
   // ── Words where 子 keeps its full third tone ─────────────────────────
   // 子 is neutral as a suffix (儿子, 桌子) but zǐ in these.
+  // 不 is toned bù alone, but unstressed inside a V-not-V phrase.
+  '来不及': [['来', 'lai2'], ['不', 'bu5'], ['及', 'ji2']],
+  // 什 is shí alone but shén in 什么, and 么 goes neutral.
+  '什么': [['什', 'shen2'], ['么', 'me5']],
   '女子': [['女', 'nv3'], ['子', 'zi3']],
   '子女': [['子', 'zi3'], ['女', 'nv3']],
 
@@ -42,6 +48,7 @@ const COMPOUND_PHONEME_OVERRIDES = {
   // Longest first: these are applied in order, so a prefix must not match
   // before the longer name it belongs to.
   '横折折折钩': [['横', 'heng2'], ['折', 'zhe2'], ['折', 'zhe2'], ['折', 'zhe2'], ['钩', 'gou1']],
+  '横折折撇': [['横', 'heng2'], ['折', 'zhe2'], ['折', 'zhe2'], ['撇', 'pie3']],
   '横撇弯钩': [['横', 'heng2'], ['撇', 'pie3'], ['弯', 'wan1'], ['钩', 'gou1']],
   '横折弯钩': [['横', 'heng2'], ['折', 'zhe2'], ['弯', 'wan1'], ['钩', 'gou1']],
   '竖折折钩': [['竖', 'shu4'], ['折', 'zhe2'], ['折', 'zhe2'], ['钩', 'gou1']],
@@ -50,6 +57,7 @@ const COMPOUND_PHONEME_OVERRIDES = {
   '横折弯': [['横', 'heng2'], ['折', 'zhe2'], ['弯', 'wan1']],
   '横斜钩': [['横', 'heng2'], ['斜', 'xie2'], ['钩', 'gou1']],
   '竖折撇': [['竖', 'shu4'], ['折', 'zhe2'], ['撇', 'pie3']],
+  '横折折撇': [['横', 'heng2'], ['折', 'zhe2'], ['折', 'zhe2'], ['撇', 'pie3']],
   '横折提': [['横', 'heng2'], ['折', 'zhe2'], ['提', 'ti2']],
   '横折钩': [['横', 'heng2'], ['折', 'zhe2'], ['钩', 'gou1']],
   '竖弯钩': [['竖', 'shu4'], ['弯', 'wan1'], ['钩', 'gou1']],

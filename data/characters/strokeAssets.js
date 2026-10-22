@@ -48,6 +48,7 @@ const STROKE_ASSETS = {
   '竖弯': { asset: require('./gifs/shuwan.webp'), animated: false, format: 'webp', pinyin: 'shùwān' },
   '竖折撇': { asset: require('./gifs/shuzhepie.png'), animated: false, format: 'png', pinyin: 'shùzhépiě' },
   '横撇弯钩': { asset: require('./gifs/hengpiewangou.png'), animated: false, format: 'png', pinyin: 'héngpiěwāngōu' },
+  '横折折撇': { asset: require('./gifs/hengzhezhepie.png'), animated: false, format: 'png', pinyin: 'héngzhézhépiě' },
   '竖折折钩': { asset: require('./gifs/shuzhezhegou.gif'), animated: true, format: 'gif', pinyin: 'shùzhézhégōu' },
   '横折折折钩': { asset: require('./gifs/hengzhezhezhegou.png'), animated: false, format: 'png', pinyin: 'héngzhézhézhégōu' },
 };
@@ -63,7 +64,7 @@ const STROKE_FALLBACK_CHARS = {
 
 // Strokes with neither a file nor a glyph of their own: show them inside a
 // character that contains them, with that one stroke highlighted.
-// Currently empty: every stroke the course teaches now has artwork of its own.
+// Currently empty: every stroke the course teaches has artwork of its own.
 // Kept because it is the right home for any future stroke that arrives without
 // a file — add { char, strokeIndex } and it is drawn inside a host character
 // with that one stroke picked out, no other code needs to change.
@@ -80,6 +81,7 @@ const STROKE_PINYIN = {
   '竖折': 'shùzhé', '竖弯钩': 'shùwāngōu', '竖提': 'shùtí', '竖折折钩': 'shùzhézhégōu',
   '撇折': 'piězhé', '撇点': 'piědiǎn',
   '横折弯': 'héngzhéwān', '横斜钩': 'héngxiégōu', '竖折撇': 'shùzhépiě', '竖弯': 'shùwān',
+  '横折折撇': 'héngzhézhépiě',
 };
 
 export function getStrokePinyin(stroke) {

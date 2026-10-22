@@ -1,0 +1,1543 @@
+{
+  "id": 9,
+  "title": "Lesson 9 · Characters Wrap Around",
+  "emoji": "🌞",
+  "subtitle": "横折折撇 横撇弯钩 · 及 来 不 这 那 阳 哪",
+  "description": "Two strokes that fold more than once, and the two structures where one part wraps around another — partly, or all the way.",
+  "new_strokes": [
+    "横折折撇",
+    "横撇弯钩"
+  ],
+  "new_characters": [
+    "及",
+    "来",
+    "不",
+    "这",
+    "那",
+    "阳",
+    "哪"
+  ],
+  "new_words": [
+    "来不及",
+    "这个",
+    "那个",
+    "哪个",
+    "哪国",
+    "太阳"
+  ],
+  "learn_content": {
+    "part1_discover": {
+      "title": "Discover",
+      "subtitle": "Two strokes that fold twice",
+      "intro": "Both of these change direction more than once without the brush leaving the paper.",
+      "strokes": [
+        {
+          "stroke": "横折折撇",
+          "pinyin": "héngzhézhépiě",
+          "name_en": "horizontal, turn, turn, throw away",
+          "direction": "right, down-left, right again, then sweep down-left",
+          "explanation": "横折折撇 = two folds and then a 撇 running away to the bottom left.",
+          "audio_text": "横折折撇",
+          "example_char": "及",
+          "example_pinyin": "jí",
+          "example_meaning": "to reach",
+          "example_note": "及 is only three strokes, and this long folding one is the middle of them.",
+          "example_stroke_order": [
+            "撇",
+            "横折折撇",
+            "捺"
+          ]
+        },
+        {
+          "stroke": "横撇弯钩",
+          "pinyin": "héngpiěwāngōu",
+          "name_en": "horizontal, throw, curve, hook",
+          "direction": "right, down-left, curving round, then hook up",
+          "explanation": "横撇弯钩 = the whole ear shape 阝 in a single stroke.",
+          "audio_text": "横撇弯钩",
+          "example_char": "阳",
+          "example_pinyin": "yáng",
+          "example_meaning": "sun",
+          "example_note": "阳 opens with 阝 — one stroke, not three — and then a 竖.",
+          "example_stroke_order": [
+            "横撇弯钩",
+            "竖",
+            "竖",
+            "横折",
+            "横",
+            "横"
+          ]
+        }
+      ],
+      "recognition_check": [
+        {
+          "show_stroke": "横折折撇",
+          "choices": [
+            "横折折撇",
+            "横撇弯钩",
+            "撇折",
+            "横折弯"
+          ],
+          "correct": "横折折撇"
+        },
+        {
+          "show_stroke": "横撇弯钩",
+          "choices": [
+            "横撇弯钩",
+            "横折折撇",
+            "横撇",
+            "弯钩"
+          ],
+          "correct": "横撇弯钩"
+        },
+        {
+          "show_stroke": "撇折",
+          "choices": [
+            "撇折",
+            "横折折撇",
+            "卧钩",
+            "弯钩"
+          ],
+          "correct": "撇折"
+        }
+      ]
+    },
+    "part2_build": {
+      "title": "Build",
+      "subtitle": "Two structures, then seven characters",
+      "intro": "Lesson 8 put two parts side by side. These two put one part around another.",
+      "structures": [
+        {
+          "name": "半包围结构",
+          "pinyin": "bàn bāowéi jiégòu",
+          "name_en": "Semi-enclosure",
+          "audio_text": "半包围结构",
+          "demo_char": "月",
+          "rule": "半包围结构 → 先外后里",
+          "rule_en": "Semi-enclosure → write the wrapper first, then what it holds",
+          "exception": {
+            "radical": "辶",
+            "name": "走之底",
+            "pinyin": "zǒuzhīdǐ",
+            "name_en": "the walking radical",
+            "audio_text": "走之底",
+            "rule": "走之底 → 先里后外",
+            "rule_en": "The walking radical is the exception(will be in lesson 10): write 'inside' FIRST, then 辶 ",
+            "characters": [
+              {
+                "character": "这",
+                "pinyin": "zhè",
+                "meaning": "this",
+                "inner": "文",
+                "audio_text": "这"
+              },
+              {
+                "character": "远",
+                "pinyin": "yuǎn",
+                "meaning": "far",
+                "inner": "元",
+                "audio_text": "远"
+              },
+              {
+                "character": "近",
+                "pinyin": "jìn",
+                "meaning": "near",
+                "inner": "斤",
+                "audio_text": "近"
+              }
+            ]
+          },
+          "examples": [
+            {
+              "character": "月",
+              "pinyin": "yuè",
+              "meaning": "moon / month",
+              "outer": "冂",
+              "outer_note": "the frame, open at the bottom",
+              "inner": "二",
+              "inner_note": "two strokes written after it, inside"
+            },
+            {
+              "character": "有",
+              "pinyin": "yǒu",
+              "meaning": "to have",
+              "outer": "𠂇",
+              "outer_note": "the top-left wrap: 横 then 撇",
+              "inner": "月",
+              "inner_note": "written afterwards, tucked under the arm"
+            }
+          ],
+          "check": {
+            "question": "Which of these does NOT follow 先外后里(outside fisrt, then inside)?",
+            "choices": [
+              "这",
+              "月",
+              "国",
+              "目"
+            ],
+            "correct": "这",
+            "explain": "这 is built on 辶, so the inside goes first."
+          }
+        },
+        {
+          "name": "全包围结构",
+          "pinyin": "quán bāowéi jiégòu",
+          "name_en": "Full enclosure",
+          "audio_text": "全包围结构",
+          "demo_char": "国",
+          "rule": "全包围结构 → 先外后里再封口",
+          "rule_en": "Full enclosure → outside first, then inside, then close the bottom",
+          "examples": [
+            {
+              "character": "目",
+              "pinyin": "mù",
+              "meaning": "eye",
+              "outer": "囗",
+              "outer_note": "the box, left and top first",
+              "inner": "二",
+              "inner_note": "the two lines inside"
+            },
+            {
+              "character": "国",
+              "pinyin": "guó",
+              "meaning": "country",
+              "outer": "囗",
+              "outer_note": "the same box",
+              "inner": "玉",
+              "inner_note": "jade, kept safe inside the walls"
+            }
+          ],
+          "contrast": {
+            "characters": [
+              "口"
+            ],
+            "note": "口 is the bare box with nothing inside, so it is only 竖, 横折, 横 — but the last stroke still closes it."
+          },
+          "check": {
+            "question": "Which stroke comes LAST in 国?",
+            "answer_kind": "stroke",
+            "choices": [
+              "横",
+              "竖",
+              "点",
+              "横折"
+            ],
+            "correct": "横",
+            "explain": "The bottom line closes the box — 先外后里再封口."
+          }
+        }
+      ],
+      "rules": [
+        {
+          "rule": "从上到下",
+          "rule_pinyin": "cóng shàng dào xià",
+          "rule_en": "Top to bottom",
+          "audio_text": "从上到下",
+          "choices": [
+            "横",
+            "撇",
+            "横撇弯钩",
+            "横折折撇",
+            "捺"
+          ],
+          "correct": "撇",
+          "result_char": "及",
+          "result_pinyin": "jí",
+          "result_meaning": "to reach",
+          "stroke_order": [
+            "撇",
+            "横折折撇",
+            "捺"
+          ],
+          "explanation": "A 撇, the long folding stroke, then the 捺 striding out to the right."
+        },
+        {
+          "rule": "先中间后两边",
+          "rule_pinyin": "xiān zhōngjiān hòu liǎngbiān",
+          "rule_en": "Middle before the sides",
+          "audio_text": "先中间后两边",
+          "choices": [
+            "横折折撇",
+            "横",
+            "捺",
+            "点",
+            "竖",
+            "撇"
+          ],
+          "correct": "横",
+          "result_char": "来",
+          "result_pinyin": "lái",
+          "result_meaning": "to come",
+          "stroke_order": [
+            "横",
+            "点",
+            "撇",
+            "横",
+            "竖",
+            "撇",
+            "捺"
+          ],
+          "explanation": "横, the two small marks, the long 横, the 竖 down the middle, then 撇 and 捺."
+        },
+        {
+          "rule": "先横后撇",
+          "rule_pinyin": "xiān héng hòu piě",
+          "rule_en": "Horizontal before the throw",
+          "audio_text": "先横后撇",
+          "choices": [
+            "横折折撇",
+            "横",
+            "点",
+            "撇",
+            "竖"
+          ],
+          "correct": "横",
+          "result_char": "不",
+          "result_pinyin": "bù",
+          "result_meaning": "not",
+          "stroke_order": [
+            "横",
+            "撇",
+            "竖",
+            "点"
+          ],
+          "explanation": "The roof first, then 撇, 竖 and a 点 — four strokes and no more."
+        },
+        {
+          "rule": "先里后外",
+          "rule_pinyin": "xiān lǐ hòu wài",
+          "rule_en": "Inside before the walking radical",
+          "audio_text": "先里后外",
+          "choices": [
+            "横撇弯钩",
+            "点",
+            "横折折撇",
+            "横",
+            "捺",
+            "撇"
+          ],
+          "correct": "点",
+          "result_char": "这",
+          "result_pinyin": "zhè",
+          "result_meaning": "this",
+          "stroke_order": [
+            "点",
+            "横",
+            "撇",
+            "捺",
+            "点",
+            "横折折撇",
+            "捺"
+          ],
+          "explanation": "辶 is the exception(will be in lesson 10): 文 first, then wrap 辶 around it."
+        },
+        {
+          "rule": "从左到右",
+          "rule_pinyin": "cóng zuǒ dào yòu",
+          "rule_en": "Left to right",
+          "audio_text": "从左到右",
+          "choices": [
+            "横折",
+            "横折钩",
+            "竖",
+            "横",
+            "横撇弯钩",
+            "撇"
+          ],
+          "correct": "横折钩",
+          "result_char": "那",
+          "result_pinyin": "nà",
+          "result_meaning": "that",
+          "stroke_order": [
+            "横折钩",
+            "横",
+            "横",
+            "撇",
+            "横撇弯钩",
+            "竖"
+          ],
+          "explanation": "The left block completely, then 阝 — 横撇弯钩 and 竖."
+        },
+        {
+          "rule": "从左到右",
+          "rule_pinyin": "cóng zuǒ dào yòu",
+          "rule_en": "Left to right",
+          "audio_text": "从左到右",
+          "choices": [
+            "横折折撇",
+            "横撇弯钩",
+            "横",
+            "竖",
+            "横折"
+          ],
+          "correct": "横撇弯钩",
+          "result_char": "阳",
+          "result_pinyin": "yáng",
+          "result_meaning": "sun",
+          "stroke_order": [
+            "横撇弯钩",
+            "竖",
+            "竖",
+            "横折",
+            "横",
+            "横"
+          ],
+          "explanation": "阝 on the left in one stroke plus its 竖, then all of 日."
+        }
+      ]
+    },
+    "part3_read": {
+      "title": "Read",
+      "subtitle": "One stroke can be a whole radical",
+      "intro": "阝 looks like three strokes and is written as one. Count carefully.",
+      "characters": [
+        {
+          "character": "及",
+          "pinyin": "jí",
+          "meaning": "to reach",
+          "stroke_order": [
+            "撇",
+            "横折折撇",
+            "捺"
+          ],
+          "stroke_count": 3,
+          "built_from": "撇 + 横折折撇 + 捺",
+          "note": "Three strokes. A hand reaching forward and just catching someone.",
+          "predict": {
+            "shown": 1,
+            "choices": [
+              "捺",
+              "横折折撇",
+              "撇",
+              "横撇弯钩"
+            ],
+            "correct": "横折折撇"
+          }
+        },
+        {
+          "character": "阳",
+          "pinyin": "yáng",
+          "meaning": "sun",
+          "stroke_order": [
+            "横撇弯钩",
+            "竖",
+            "竖",
+            "横折",
+            "横",
+            "横"
+          ],
+          "stroke_count": 6,
+          "built_from": "阝 + 日",
+          "note": "日 the sun on the right. 阳 is the sunny side of a hill — the 阝 is the hill.",
+          "predict": {
+            "shown": 0,
+            "choices": [
+              "捺",
+              "横撇弯钩",
+              "撇",
+              "横折折撇"
+            ],
+            "correct": "横撇弯钩"
+          }
+        },
+        {
+          "character": "这",
+          "pinyin": "zhè",
+          "meaning": "this",
+          "stroke_order": [
+            "点",
+            "横",
+            "撇",
+            "捺",
+            "点",
+            "横折折撇",
+            "捺"
+          ],
+          "stroke_count": 7,
+          "built_from": "辶 + 文",
+          "note": "辶 means walking. 文 inside gives the sound, not the meaning.",
+          "predict": {
+            "shown": 5,
+            "choices": [
+              "捺",
+              "横折折撇",
+              "撇",
+              "横撇弯钩"
+            ],
+            "correct": "横折折撇"
+          }
+        },
+        {
+          "character": "哪",
+          "pinyin": "nǎ",
+          "meaning": "which",
+          "stroke_order": [
+            "竖",
+            "横折",
+            "横",
+            "横折钩",
+            "横",
+            "横",
+            "撇",
+            "横撇弯钩",
+            "竖"
+          ],
+          "stroke_count": 9,
+          "built_from": "口 + 那",
+          "note": "那 means that; add 口 the mouth and it becomes a question: which?",
+          "predict": {
+            "shown": 7,
+            "choices": [
+              "撇",
+              "横撇弯钩",
+              "横",
+              "横折钩"
+            ],
+            "correct": "横撇弯钩"
+          }
+        }
+      ]
+    },
+    "part4_use": {
+      "title": "Use",
+      "subtitle": "This one, that one, which one?",
+      "intro": "这 那 哪 are a set: near, far, and the question that asks between them.",
+      "patterns": [
+        {
+          "logic": "这 / 那 / 哪 + 个 = this / that / which one",
+          "build": "这 + 个 = 这个",
+          "word": "这个",
+          "pinyin": "zhège",
+          "meaning": "this one",
+          "audio_text": "这个",
+          "note": "这 is what is near you, 那 is what is further away, 哪 asks which.",
+          "variations": [
+            {
+              "word": "这个",
+              "pinyin": "zhège",
+              "meaning": "this one",
+              "audio_text": "这个"
+            },
+            {
+              "word": "那个",
+              "pinyin": "nàge",
+              "meaning": "that one",
+              "audio_text": "那个"
+            },
+            {
+              "word": "哪个",
+              "pinyin": "nǎge",
+              "meaning": "which one",
+              "audio_text": "哪个"
+            }
+          ],
+          "quiz": {
+            "template": [
+              null,
+              "个"
+            ],
+            "answer": [
+              "哪"
+            ],
+            "choices": [
+              "哪",
+              "这",
+              "那",
+              "来"
+            ],
+            "result_word": "哪个",
+            "result_pinyin": "nǎge",
+            "result_meaning": "which one",
+            "audio_text": "哪个"
+          }
+        },
+        {
+          "logic": "哪 + a noun = which one of them?",
+          "build": "哪 + 国 = 哪国",
+          "word": "哪国",
+          "pinyin": "nǎ guó",
+          "meaning": "which country",
+          "audio_text": "哪国",
+          "note": "国 (guó) means country. 哪 can stand in front of almost any noun to ask which.",
+          "variations": [
+            {
+              "word": "哪国",
+              "pinyin": "nǎ guó",
+              "meaning": "which country",
+              "audio_text": "哪国"
+            },
+            {
+              "word": "哪个",
+              "pinyin": "nǎge",
+              "meaning": "which one",
+              "audio_text": "哪个"
+            }
+          ],
+          "quiz": {
+            "template": [
+              null,
+              "国"
+            ],
+            "answer": [
+              "哪"
+            ],
+            "choices": [
+              "哪",
+              "那",
+              "这",
+              "不"
+            ],
+            "result_word": "哪国",
+            "result_pinyin": "nǎ guó",
+            "result_meaning": "which country",
+            "audio_text": "哪国"
+          }
+        },
+        {
+          "logic": "太 + 阳 = the great bright thing",
+          "build": "太 + 阳 = 太阳",
+          "word": "太阳",
+          "pinyin": "tàiyáng",
+          "meaning": "the sun",
+          "audio_text": "太阳",
+          "note": "太 means greatest, 阳 the sunny side. Together: the sun itself.",
+          "variations": [
+            {
+              "word": "太阳",
+              "pinyin": "tàiyáng",
+              "meaning": "the sun",
+              "audio_text": "太阳"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "太",
+              null
+            ],
+            "answer": [
+              "阳"
+            ],
+            "choices": [
+              "阳",
+              "那",
+              "国",
+              "来"
+            ],
+            "result_word": "太阳",
+            "result_pinyin": "tàiyáng",
+            "result_meaning": "the sun",
+            "audio_text": "太阳"
+          }
+        },
+        {
+          "logic": "来 + 不 + 及 = cannot get there in time",
+          "build": "来 + 不 + 及 = 来不及",
+          "word": "来不及",
+          "pinyin": "lái bu jí",
+          "meaning": "not enough time",
+          "audio_text": "来不及",
+          "note": "Literally come-not-reach. 不 in the middle turns any such pair into its negative.",
+          "variations": [
+            {
+              "word": "来不及",
+              "pinyin": "lái bu jí",
+              "meaning": "not enough time",
+              "audio_text": "来不及"
+            }
+          ],
+          "quiz": {
+            "template": [
+              "来",
+              null,
+              "及"
+            ],
+            "answer": [
+              "不"
+            ],
+            "choices": [
+              "不",
+              "这",
+              "哪",
+              "阳"
+            ],
+            "result_word": "来不及",
+            "result_pinyin": "lái bu jí",
+            "result_meaning": "not enough time",
+            "audio_text": "来不及"
+          }
+        }
+      ]
+    },
+    "part5_write": {
+      "title": "Write",
+      "subtitle": "Write every character in this lesson",
+      "characters": [
+        "及",
+        "这",
+        "阳",
+        "那",
+        "不",
+        "来"
+      ]
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "及",
+      "audio_text": "及",
+      "correct": "to reach",
+      "choices": [
+        "to reach",
+        "to come",
+        "not",
+        "this"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to reach",
+      "correct": "及",
+      "choices": [
+        "及",
+        "来",
+        "不",
+        "这"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "及",
+      "audio_text": "及",
+      "correct": "jí",
+      "choices": [
+        "jí",
+        "lái",
+        "bù",
+        "zhè"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "jí",
+      "correct": "及",
+      "choices": [
+        "及",
+        "来",
+        "不",
+        "这"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "及",
+      "correct": "及",
+      "choices": [
+        "及",
+        "来",
+        "不",
+        "这"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "及",
+      "shown_strokes": [],
+      "correct": "撇",
+      "choices": [
+        "捺",
+        "撇",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "及",
+      "shown_strokes": [
+        "撇"
+      ],
+      "correct": "横折折撇",
+      "choices": [
+        "捺",
+        "横折折撇",
+        "撇",
+        "横撇弯钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "及",
+      "shown_strokes": [
+        "撇",
+        "横折折撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "撇",
+        "捺",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "来",
+      "audio_text": "来",
+      "correct": "to come",
+      "choices": [
+        "to come",
+        "to reach",
+        "not",
+        "this"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to come",
+      "correct": "来",
+      "choices": [
+        "来",
+        "及",
+        "不",
+        "这"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "来",
+      "audio_text": "来",
+      "correct": "lái",
+      "choices": [
+        "lái",
+        "jí",
+        "bù",
+        "zhè"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "lái",
+      "correct": "来",
+      "choices": [
+        "来",
+        "及",
+        "不",
+        "这"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "来",
+      "correct": "来",
+      "choices": [
+        "来",
+        "及",
+        "不",
+        "这"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "来",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "撇",
+        "横",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "来",
+      "shown_strokes": [
+        "横",
+        "点",
+        "撇"
+      ],
+      "correct": "横",
+      "choices": [
+        "撇",
+        "横",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "来",
+      "shown_strokes": [
+        "横",
+        "点",
+        "撇",
+        "横",
+        "竖",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "撇",
+        "捺",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "不",
+      "audio_text": "不",
+      "correct": "not",
+      "choices": [
+        "not",
+        "to reach",
+        "to come",
+        "this"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "not",
+      "correct": "不",
+      "choices": [
+        "不",
+        "及",
+        "来",
+        "这"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "不",
+      "audio_text": "不",
+      "correct": "bù",
+      "choices": [
+        "bù",
+        "jí",
+        "lái",
+        "zhè"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "bù",
+      "correct": "不",
+      "choices": [
+        "不",
+        "及",
+        "来",
+        "这"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "不",
+      "correct": "不",
+      "choices": [
+        "不",
+        "及",
+        "来",
+        "这"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "不",
+      "shown_strokes": [],
+      "correct": "横",
+      "choices": [
+        "撇",
+        "横",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "不",
+      "shown_strokes": [
+        "横",
+        "撇"
+      ],
+      "correct": "竖",
+      "choices": [
+        "撇",
+        "竖",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "不",
+      "shown_strokes": [
+        "横",
+        "撇",
+        "竖"
+      ],
+      "correct": "点",
+      "choices": [
+        "撇",
+        "点",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "这",
+      "audio_text": "这",
+      "correct": "this",
+      "choices": [
+        "this",
+        "to reach",
+        "to come",
+        "not"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "this",
+      "correct": "这",
+      "choices": [
+        "这",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "这",
+      "audio_text": "这",
+      "correct": "zhè",
+      "choices": [
+        "zhè",
+        "jí",
+        "lái",
+        "bù"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zhè",
+      "correct": "这",
+      "choices": [
+        "这",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "这",
+      "correct": "这",
+      "choices": [
+        "这",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "这",
+      "shown_strokes": [],
+      "correct": "点",
+      "choices": [
+        "撇",
+        "点",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "这",
+      "shown_strokes": [
+        "点",
+        "横",
+        "撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "撇",
+        "捺",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "这",
+      "shown_strokes": [
+        "点",
+        "横",
+        "撇",
+        "捺",
+        "点",
+        "横折折撇"
+      ],
+      "correct": "捺",
+      "choices": [
+        "撇",
+        "捺",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "那",
+      "audio_text": "那",
+      "correct": "that",
+      "choices": [
+        "that",
+        "to reach",
+        "to come",
+        "not"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "that",
+      "correct": "那",
+      "choices": [
+        "那",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "那",
+      "audio_text": "那",
+      "correct": "nà",
+      "choices": [
+        "nà",
+        "jí",
+        "lái",
+        "bù"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "nà",
+      "correct": "那",
+      "choices": [
+        "那",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "那",
+      "correct": "那",
+      "choices": [
+        "那",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "那",
+      "shown_strokes": [],
+      "correct": "横折钩",
+      "choices": [
+        "横撇弯钩",
+        "横折钩",
+        "撇",
+        "横"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "那",
+      "shown_strokes": [
+        "横折钩",
+        "横",
+        "横"
+      ],
+      "correct": "撇",
+      "choices": [
+        "横撇弯钩",
+        "撇",
+        "横",
+        "横折钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "那",
+      "shown_strokes": [
+        "横折钩",
+        "横",
+        "横",
+        "撇",
+        "横撇弯钩"
+      ],
+      "correct": "竖",
+      "choices": [
+        "撇",
+        "竖",
+        "横",
+        "横折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "阳",
+      "audio_text": "阳",
+      "correct": "sun",
+      "choices": [
+        "sun",
+        "to reach",
+        "to come",
+        "not"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "sun",
+      "correct": "阳",
+      "choices": [
+        "阳",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "阳",
+      "audio_text": "阳",
+      "correct": "yáng",
+      "choices": [
+        "yáng",
+        "jí",
+        "lái",
+        "bù"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yáng",
+      "correct": "阳",
+      "choices": [
+        "阳",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "阳",
+      "correct": "阳",
+      "choices": [
+        "阳",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "阳",
+      "shown_strokes": [],
+      "correct": "横撇弯钩",
+      "choices": [
+        "捺",
+        "横撇弯钩",
+        "撇",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "阳",
+      "shown_strokes": [
+        "横撇弯钩",
+        "竖",
+        "竖"
+      ],
+      "correct": "横折",
+      "choices": [
+        "撇",
+        "横折",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "阳",
+      "shown_strokes": [
+        "横撇弯钩",
+        "竖",
+        "竖",
+        "横折",
+        "横"
+      ],
+      "correct": "横",
+      "choices": [
+        "撇",
+        "横",
+        "横撇弯钩",
+        "横折折撇"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "哪",
+      "audio_text": "哪",
+      "correct": "which",
+      "choices": [
+        "which",
+        "to reach",
+        "to come",
+        "not"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "which",
+      "correct": "哪",
+      "choices": [
+        "哪",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "哪",
+      "audio_text": "哪",
+      "correct": "nǎ",
+      "choices": [
+        "nǎ",
+        "jí",
+        "lái",
+        "bù"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "nǎ",
+      "correct": "哪",
+      "choices": [
+        "哪",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "哪",
+      "correct": "哪",
+      "choices": [
+        "哪",
+        "及",
+        "来",
+        "不"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "哪",
+      "shown_strokes": [],
+      "correct": "竖",
+      "choices": [
+        "撇",
+        "竖",
+        "横",
+        "横折钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "哪",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "横",
+        "横折钩"
+      ],
+      "correct": "横",
+      "choices": [
+        "横撇弯钩",
+        "横",
+        "撇",
+        "横折钩"
+      ]
+    },
+    {
+      "type": "missing_stroke",
+      "prompt_char": "哪",
+      "shown_strokes": [
+        "竖",
+        "横折",
+        "横",
+        "横折钩",
+        "横",
+        "横",
+        "撇",
+        "横撇弯钩"
+      ],
+      "correct": "竖",
+      "choices": [
+        "撇",
+        "竖",
+        "横",
+        "横折钩"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "来不及",
+      "audio_text": "来不及",
+      "correct": "not enough time",
+      "choices": [
+        "not enough time",
+        "this one",
+        "that one",
+        "which one"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "来不及",
+      "correct": "来不及",
+      "choices": [
+        "来不及",
+        "这个",
+        "那个",
+        "哪个"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "这个",
+      "audio_text": "这个",
+      "correct": "this one",
+      "choices": [
+        "this one",
+        "not enough time",
+        "that one",
+        "which one"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "这个",
+      "correct": "这个",
+      "choices": [
+        "这个",
+        "来不及",
+        "那个",
+        "哪个"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "那个",
+      "audio_text": "那个",
+      "correct": "that one",
+      "choices": [
+        "that one",
+        "not enough time",
+        "this one",
+        "which one"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "那个",
+      "correct": "那个",
+      "choices": [
+        "那个",
+        "来不及",
+        "这个",
+        "哪个"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "哪个",
+      "audio_text": "哪个",
+      "correct": "which one",
+      "choices": [
+        "which one",
+        "not enough time",
+        "this one",
+        "that one"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "哪个",
+      "correct": "哪个",
+      "choices": [
+        "哪个",
+        "来不及",
+        "这个",
+        "那个"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "哪国",
+      "audio_text": "哪国",
+      "correct": "which country",
+      "choices": [
+        "which country",
+        "not enough time",
+        "this one",
+        "that one"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "哪国",
+      "correct": "哪国",
+      "choices": [
+        "哪国",
+        "来不及",
+        "这个",
+        "那个"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "太阳",
+      "audio_text": "太阳",
+      "correct": "the sun",
+      "choices": [
+        "the sun",
+        "not enough time",
+        "this one",
+        "that one"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "太阳",
+      "correct": "太阳",
+      "choices": [
+        "太阳",
+        "来不及",
+        "这个",
+        "那个"
+      ]
+    }
+  ]
+}
