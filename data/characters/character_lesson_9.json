@@ -1538,6 +1538,351 @@
         "这个",
         "那个"
       ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "这个",
+      "audio_text": "这个",
+      "pinyin": "zhège",
+      "meaning": "this one",
+      "correct": "这个",
+      "choices": [
+        "这个"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "那个",
+      "audio_text": "那个",
+      "pinyin": "nàge",
+      "meaning": "that one",
+      "correct": "那个",
+      "choices": [
+        "那个"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "哪个",
+      "audio_text": "哪个",
+      "pinyin": "nǎge",
+      "meaning": "which one",
+      "correct": "哪个",
+      "choices": [
+        "哪个"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "not enough time",
+      "tiles": [
+        "来",
+        "不",
+        "及",
+        "这"
+      ],
+      "answer": [
+        "来",
+        "不",
+        "及"
+      ],
+      "result": "来不及",
+      "pinyin": "lái bu jí",
+      "correct": "来不及",
+      "choices": [
+        "来不及"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "this one",
+      "tiles": [
+        "这",
+        "个",
+        "及"
+      ],
+      "answer": [
+        "这",
+        "个"
+      ],
+      "result": "这个",
+      "pinyin": "zhège",
+      "correct": "这个",
+      "choices": [
+        "这个"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "that one",
+      "tiles": [
+        "那",
+        "个",
+        "及"
+      ],
+      "answer": [
+        "那",
+        "个"
+      ],
+      "result": "那个",
+      "pinyin": "nàge",
+      "correct": "那个",
+      "choices": [
+        "那个"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "及",
+          "pinyin": "jí",
+          "english": "to reach"
+        },
+        {
+          "id": 2,
+          "chinese": "阳",
+          "pinyin": "yáng",
+          "english": "sun"
+        },
+        {
+          "id": 3,
+          "chinese": "来",
+          "pinyin": "lái",
+          "english": "to come"
+        },
+        {
+          "id": 4,
+          "chinese": "不",
+          "pinyin": "bù",
+          "english": "not"
+        },
+        {
+          "id": 5,
+          "chinese": "这",
+          "pinyin": "zhè",
+          "english": "this"
+        }
+      ],
+      "correct": "char:及阳来不这",
+      "choices": [
+        "to reach",
+        "sun",
+        "to come",
+        "not",
+        "this"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "来",
+          "pinyin": "lái",
+          "english": "to come"
+        },
+        {
+          "id": 2,
+          "chinese": "不",
+          "pinyin": "bù",
+          "english": "not"
+        },
+        {
+          "id": 3,
+          "chinese": "这",
+          "pinyin": "zhè",
+          "english": "this"
+        },
+        {
+          "id": 4,
+          "chinese": "那",
+          "pinyin": "nà",
+          "english": "that"
+        },
+        {
+          "id": 5,
+          "chinese": "哪",
+          "pinyin": "nǎ",
+          "english": "which"
+        }
+      ],
+      "correct": "char:来不这那哪",
+      "choices": [
+        "to come",
+        "not",
+        "this",
+        "that",
+        "which"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "这个",
+          "pinyin": "zhège",
+          "english": "this one"
+        },
+        {
+          "id": 2,
+          "chinese": "那个",
+          "pinyin": "nàge",
+          "english": "that one"
+        },
+        {
+          "id": 3,
+          "chinese": "哪个",
+          "pinyin": "nǎge",
+          "english": "which one"
+        },
+        {
+          "id": 4,
+          "chinese": "哪国",
+          "pinyin": "nǎ guó",
+          "english": "which country"
+        },
+        {
+          "id": 5,
+          "chinese": "太阳",
+          "pinyin": "tàiyáng",
+          "english": "the sun"
+        }
+      ],
+      "correct": "word:这个那个哪个哪国太阳",
+      "choices": [
+        "this one",
+        "that one",
+        "which one",
+        "which country",
+        "the sun"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "那个",
+          "pinyin": "nàge",
+          "english": "that one"
+        },
+        {
+          "id": 2,
+          "chinese": "哪个",
+          "pinyin": "nǎge",
+          "english": "which one"
+        },
+        {
+          "id": 3,
+          "chinese": "哪国",
+          "pinyin": "nǎ guó",
+          "english": "which country"
+        },
+        {
+          "id": 4,
+          "chinese": "太阳",
+          "pinyin": "tàiyáng",
+          "english": "the sun"
+        },
+        {
+          "id": 5,
+          "chinese": "来不及",
+          "pinyin": "lái bu jí",
+          "english": "not enough time"
+        }
+      ],
+      "correct": "word:那个哪个哪国太阳来不及",
+      "choices": [
+        "that one",
+        "which one",
+        "which country",
+        "the sun",
+        "not enough time"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null,
+        "个"
+      ],
+      "correct": "哪",
+      "choices": [
+        "哪",
+        "这",
+        "那",
+        "来"
+      ],
+      "result_word": "哪个",
+      "result_pinyin": "nǎge",
+      "result_meaning": "which one",
+      "audio_text": "哪个"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null,
+        "国"
+      ],
+      "correct": "哪",
+      "choices": [
+        "哪",
+        "那",
+        "这",
+        "不"
+      ],
+      "result_word": "哪国",
+      "result_pinyin": "nǎ guó",
+      "result_meaning": "which country",
+      "audio_text": "哪国"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "太",
+        null
+      ],
+      "correct": "阳",
+      "choices": [
+        "阳",
+        "那",
+        "国",
+        "来"
+      ],
+      "result_word": "太阳",
+      "result_pinyin": "tàiyáng",
+      "result_meaning": "the sun",
+      "audio_text": "太阳"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "来",
+        null,
+        "及"
+      ],
+      "correct": "不",
+      "choices": [
+        "不",
+        "这",
+        "哪",
+        "阳"
+      ],
+      "result_word": "来不及",
+      "result_pinyin": "lái bu jí",
+      "result_meaning": "not enough time",
+      "audio_text": "来不及"
     }
   ]
 }

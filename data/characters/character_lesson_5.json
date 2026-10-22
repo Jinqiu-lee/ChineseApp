@@ -1302,6 +1302,347 @@
         "撇折",
         "撇点"
       ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "女儿",
+      "audio_text": "女儿",
+      "pinyin": "nǚ'ér",
+      "meaning": "daughter",
+      "correct": "女儿",
+      "choices": [
+        "女儿"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "妈妈",
+      "audio_text": "妈妈",
+      "pinyin": "māma",
+      "meaning": "mum",
+      "correct": "妈妈",
+      "choices": [
+        "妈妈"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "木马",
+      "audio_text": "木马",
+      "pinyin": "mù mǎ",
+      "meaning": "a wooden horse",
+      "correct": "木马",
+      "choices": [
+        "木马"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "daughter",
+      "tiles": [
+        "女",
+        "儿",
+        "云"
+      ],
+      "answer": [
+        "女",
+        "儿"
+      ],
+      "result": "女儿",
+      "pinyin": "nǚ'ér",
+      "correct": "女儿",
+      "choices": [
+        "女儿"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "mum",
+      "tiles": [
+        "妈",
+        "妈",
+        "云"
+      ],
+      "answer": [
+        "妈",
+        "妈"
+      ],
+      "result": "妈妈",
+      "pinyin": "māma",
+      "correct": "妈妈",
+      "choices": [
+        "妈妈"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "a wooden horse",
+      "tiles": [
+        "木",
+        "马",
+        "云"
+      ],
+      "answer": [
+        "木",
+        "马"
+      ],
+      "result": "木马",
+      "pinyin": "mù mǎ",
+      "correct": "木马",
+      "choices": [
+        "木马"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "女",
+          "pinyin": "nǚ",
+          "english": "woman"
+        },
+        {
+          "id": 2,
+          "chinese": "云",
+          "pinyin": "yún",
+          "english": "cloud"
+        },
+        {
+          "id": 3,
+          "chinese": "马",
+          "pinyin": "mǎ",
+          "english": "horse"
+        },
+        {
+          "id": 4,
+          "chinese": "么",
+          "pinyin": "me",
+          "english": "(question particle)"
+        },
+        {
+          "id": 5,
+          "chinese": "鸟",
+          "pinyin": "niǎo",
+          "english": "bird"
+        }
+      ],
+      "correct": "char:女云马么鸟",
+      "choices": [
+        "woman",
+        "cloud",
+        "horse",
+        "(question particle)",
+        "bird"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "云",
+          "pinyin": "yún",
+          "english": "cloud"
+        },
+        {
+          "id": 2,
+          "chinese": "马",
+          "pinyin": "mǎ",
+          "english": "horse"
+        },
+        {
+          "id": 3,
+          "chinese": "么",
+          "pinyin": "me",
+          "english": "(question particle)"
+        },
+        {
+          "id": 4,
+          "chinese": "鸟",
+          "pinyin": "niǎo",
+          "english": "bird"
+        },
+        {
+          "id": 5,
+          "chinese": "妈",
+          "pinyin": "mā",
+          "english": "mother"
+        }
+      ],
+      "correct": "char:云马么鸟妈",
+      "choices": [
+        "cloud",
+        "horse",
+        "(question particle)",
+        "bird",
+        "mother"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "女儿",
+          "pinyin": "nǚ'ér",
+          "english": "daughter"
+        },
+        {
+          "id": 2,
+          "chinese": "妈妈",
+          "pinyin": "māma",
+          "english": "mum"
+        },
+        {
+          "id": 3,
+          "chinese": "木马",
+          "pinyin": "mù mǎ",
+          "english": "a wooden horse"
+        },
+        {
+          "id": 4,
+          "chinese": "小马",
+          "pinyin": "xiǎo mǎ",
+          "english": "a pony"
+        },
+        {
+          "id": 5,
+          "chinese": "小鸟",
+          "pinyin": "xiǎo niǎo",
+          "english": "a little bird"
+        }
+      ],
+      "correct": "word:女儿妈妈木马小马小鸟",
+      "choices": [
+        "daughter",
+        "mum",
+        "a wooden horse",
+        "a pony",
+        "a little bird"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "木马",
+          "pinyin": "mù mǎ",
+          "english": "a wooden horse"
+        },
+        {
+          "id": 2,
+          "chinese": "小马",
+          "pinyin": "xiǎo mǎ",
+          "english": "a pony"
+        },
+        {
+          "id": 3,
+          "chinese": "小鸟",
+          "pinyin": "xiǎo niǎo",
+          "english": "a little bird"
+        },
+        {
+          "id": 4,
+          "chinese": "白云",
+          "pinyin": "bái yún",
+          "english": "a white cloud"
+        },
+        {
+          "id": 5,
+          "chinese": "什么",
+          "pinyin": "shénme",
+          "english": "what"
+        }
+      ],
+      "correct": "word:木马小马小鸟白云什么",
+      "choices": [
+        "a wooden horse",
+        "a pony",
+        "a little bird",
+        "a white cloud",
+        "what"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "女",
+        null
+      ],
+      "correct": "儿",
+      "choices": [
+        "儿",
+        "马",
+        "鸟",
+        "云"
+      ],
+      "result_word": "女儿",
+      "result_pinyin": "nǚ'ér",
+      "result_meaning": "daughter",
+      "audio_text": "女儿"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "小",
+        null
+      ],
+      "correct": "马",
+      "choices": [
+        "马",
+        "鸟",
+        "云",
+        "女"
+      ],
+      "result_word": "小马",
+      "result_pinyin": "xiǎo mǎ",
+      "result_meaning": "a pony",
+      "audio_text": "小马"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "白",
+        null
+      ],
+      "correct": "云",
+      "choices": [
+        "云",
+        "马",
+        "鸟",
+        "么"
+      ],
+      "result_word": "白云",
+      "result_pinyin": "bái yún",
+      "result_meaning": "a white cloud",
+      "audio_text": "白云"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null
+      ],
+      "correct": "什么",
+      "choices": [
+        "什么",
+        "妈妈",
+        "小鸟",
+        "木马"
+      ],
+      "result_word": "什么",
+      "result_pinyin": "shénme",
+      "result_meaning": "what",
+      "audio_text": "什么"
     }
   ]
 }

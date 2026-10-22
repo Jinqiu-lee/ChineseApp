@@ -1260,6 +1260,319 @@
         "竖",
         "横"
       ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "三天",
+      "audio_text": "三天",
+      "pinyin": "sān tiān",
+      "meaning": "three days",
+      "correct": "三天",
+      "choices": [
+        "三天"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "八天",
+      "audio_text": "八天",
+      "pinyin": "bā tiān",
+      "meaning": "eight days",
+      "correct": "八天",
+      "choices": [
+        "八天"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "十天",
+      "audio_text": "十天",
+      "pinyin": "shí tiān",
+      "meaning": "ten days",
+      "correct": "十天",
+      "choices": [
+        "十天"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "one person",
+      "tiles": [
+        "一",
+        "个",
+        "人",
+        "二"
+      ],
+      "answer": [
+        "一",
+        "个",
+        "人"
+      ],
+      "result": "一个人",
+      "pinyin": "yí ge rén",
+      "correct": "一个人",
+      "choices": [
+        "一个人"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "eight people",
+      "tiles": [
+        "八",
+        "个",
+        "人",
+        "一"
+      ],
+      "answer": [
+        "八",
+        "个",
+        "人"
+      ],
+      "result": "八个人",
+      "pinyin": "bā ge rén",
+      "correct": "八个人",
+      "choices": [
+        "八个人"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "ten people",
+      "tiles": [
+        "十",
+        "个",
+        "人",
+        "一"
+      ],
+      "answer": [
+        "十",
+        "个",
+        "人"
+      ],
+      "result": "十个人",
+      "pinyin": "shí ge rén",
+      "correct": "十个人",
+      "choices": [
+        "十个人"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "一",
+          "pinyin": "yī",
+          "english": "one"
+        },
+        {
+          "id": 2,
+          "chinese": "十",
+          "pinyin": "shí",
+          "english": "ten"
+        },
+        {
+          "id": 3,
+          "chinese": "八",
+          "pinyin": "bā",
+          "english": "eight"
+        },
+        {
+          "id": 4,
+          "chinese": "人",
+          "pinyin": "rén",
+          "english": "person"
+        },
+        {
+          "id": 5,
+          "chinese": "二",
+          "pinyin": "èr",
+          "english": "two"
+        }
+      ],
+      "correct": "char:一十八人二",
+      "choices": [
+        "one",
+        "ten",
+        "eight",
+        "person",
+        "two"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "三",
+          "pinyin": "sān",
+          "english": "three"
+        },
+        {
+          "id": 2,
+          "chinese": "个",
+          "pinyin": "gè",
+          "english": "(measure word for people and things)"
+        },
+        {
+          "id": 3,
+          "chinese": "大",
+          "pinyin": "dà",
+          "english": "big"
+        },
+        {
+          "id": 4,
+          "chinese": "天",
+          "pinyin": "tiān",
+          "english": "sky / day"
+        },
+        {
+          "id": 5,
+          "chinese": "木",
+          "pinyin": "mù",
+          "english": "tree / wood"
+        }
+      ],
+      "correct": "char:三个大天木",
+      "choices": [
+        "three",
+        "(measure word for people and things)",
+        "big",
+        "sky / day",
+        "tree / wood"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "三天",
+          "pinyin": "sān tiān",
+          "english": "three days"
+        },
+        {
+          "id": 2,
+          "chinese": "八天",
+          "pinyin": "bā tiān",
+          "english": "eight days"
+        },
+        {
+          "id": 3,
+          "chinese": "十天",
+          "pinyin": "shí tiān",
+          "english": "ten days"
+        },
+        {
+          "id": 4,
+          "chinese": "一个人",
+          "pinyin": "yí ge rén",
+          "english": "one person"
+        },
+        {
+          "id": 5,
+          "chinese": "八个人",
+          "pinyin": "bā ge rén",
+          "english": "eight people"
+        }
+      ],
+      "correct": "word:三天八天十天一个人八个人",
+      "choices": [
+        "three days",
+        "eight days",
+        "ten days",
+        "one person",
+        "eight people"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "十天",
+          "pinyin": "shí tiān",
+          "english": "ten days"
+        },
+        {
+          "id": 2,
+          "chinese": "一个人",
+          "pinyin": "yí ge rén",
+          "english": "one person"
+        },
+        {
+          "id": 3,
+          "chinese": "八个人",
+          "pinyin": "bā ge rén",
+          "english": "eight people"
+        },
+        {
+          "id": 4,
+          "chinese": "十个人",
+          "pinyin": "shí ge rén",
+          "english": "ten people"
+        },
+        {
+          "id": 5,
+          "chinese": "大人",
+          "pinyin": "dà rén",
+          "english": "adult"
+        }
+      ],
+      "correct": "word:十天一个人八个人十个人大人",
+      "choices": [
+        "ten days",
+        "one person",
+        "eight people",
+        "ten people",
+        "adult"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "三",
+        null,
+        "人"
+      ],
+      "correct": "个",
+      "choices": [
+        "个",
+        "天",
+        "大",
+        "木"
+      ],
+      "result_word": "三个人",
+      "result_pinyin": "sān ge rén",
+      "result_meaning": "three people",
+      "audio_text": "三个人"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "大",
+        null
+      ],
+      "correct": "人",
+      "choices": [
+        "人",
+        "八",
+        "天",
+        "十"
+      ],
+      "result_word": "大人",
+      "result_pinyin": "dà rén",
+      "result_meaning": "adult",
+      "audio_text": "大人"
     }
   ]
 }

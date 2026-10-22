@@ -1,0 +1,1875 @@
+{
+  "id": 11,
+  "part": 2,
+  "title": "Lesson 11 · Characters Share Parts",
+  "emoji": "🧩",
+  "subtitle": "人 口 女 · 单人旁 口字旁 女字旁",
+  "description": "Three characters you know become three radicals, and nine new characters built from them.",
+  "new_strokes": [],
+  "new_characters": [
+    "你",
+    "他",
+    "她",
+    "们",
+    "吃",
+    "喝",
+    "叫",
+    "妈",
+    "好"
+  ],
+  "new_words": [
+    "你好",
+    "你们好",
+    "我妈妈",
+    "我奶奶",
+    "她妈妈",
+    "米饭",
+    "面条",
+    "牛奶"
+  ],
+  "learn_content": {
+    "part1_blocks": {
+      "title": "Discover",
+      "subtitle": "独体字 · Characters that stand alone",
+      "intro": "Three characters that were once pictures. Watch each one become the character it is today.",
+      "blocks": [
+        {
+          "character": "人",
+          "pinyin": "rén",
+          "meaning": "person",
+          "audio_text": "人",
+          "picture": "l11-p1-ren",
+          "note": "Two legs walking. 人 is still just those two strokes.",
+          "match": {
+            "prompt_picture": "l11-p1-ren",
+            "choices": [
+              "人",
+              "口",
+              "女"
+            ],
+            "correct": "人"
+          }
+        },
+        {
+          "character": "口",
+          "pinyin": "kǒu",
+          "meaning": "mouth",
+          "audio_text": "口",
+          "picture": "l11-p1-kou",
+          "note": "An open mouth, squared off by the brush.",
+          "match": {
+            "prompt_picture": "l11-p1-kou",
+            "choices": [
+              "口",
+              "人",
+              "女"
+            ],
+            "correct": "口"
+          }
+        },
+        {
+          "character": "女",
+          "pinyin": "nǚ",
+          "meaning": "woman",
+          "audio_text": "女",
+          "picture": "l11-p1-nv",
+          "note": "A figure kneeling with arms crossed.",
+          "match": {
+            "prompt_picture": "l11-p1-nv",
+            "choices": [
+              "女",
+              "人",
+              "口"
+            ],
+            "correct": "女"
+          }
+        }
+      ],
+      "match": {
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "l11-p1-ren",
+            "character": "人"
+          },
+          {
+            "picture": "l11-p1-kou",
+            "character": "口"
+          },
+          {
+            "picture": "l11-p1-nv",
+            "character": "女"
+          }
+        ]
+      }
+    },
+    "part2_components": {
+      "title": "Decode",
+      "subtitle": "部件与部首 · Components and radicals",
+      "components": [
+        {
+          "radical": "亻",
+          "name": "单人旁",
+          "pinyin": "dānrénpáng",
+          "name_en": "the standing-person radical",
+          "audio_text": "单人旁",
+          "from": {
+            "character": "人",
+            "pinyin": "rén",
+            "meaning": "person"
+          },
+          "hint": "人 squeezed thin and stood on the left.",
+          "characters": [
+            {
+              "character": "你",
+              "pinyin": "nǐ",
+              "meaning": "you",
+              "audio_text": "你"
+            },
+            {
+              "character": "他",
+              "pinyin": "tā",
+              "meaning": "he",
+              "audio_text": "他"
+            },
+            {
+              "character": "们",
+              "pinyin": "men",
+              "meaning": "plural marker",
+              "audio_text": "们"
+            }
+          ],
+          "find": {
+            "question": "Which part of 你 is the radical?",
+            "choices": [
+              "亻",
+              "尔",
+              "小",
+              "人"
+            ],
+            "correct": "亻"
+          },
+          "reveal": {
+            "category": "people",
+            "note": "All three are about people — 你 you, 他 he, 们 marking more than one."
+          }
+        },
+        {
+          "radical": "口",
+          "name": "口字旁",
+          "pinyin": "kǒuzìpáng",
+          "name_en": "the mouth radical",
+          "audio_text": "口字旁",
+          "from": {
+            "character": "口",
+            "pinyin": "kǒu",
+            "meaning": "mouth"
+          },
+          "hint": "口 keeps its shape but shrinks to the left.",
+          "characters": [
+            {
+              "character": "吃",
+              "pinyin": "chī",
+              "meaning": "to eat",
+              "audio_text": "吃"
+            },
+            {
+              "character": "喝",
+              "pinyin": "hē",
+              "meaning": "to drink",
+              "audio_text": "喝"
+            },
+            {
+              "character": "叫",
+              "pinyin": "jiào",
+              "meaning": "to be called",
+              "audio_text": "叫"
+            }
+          ],
+          "find": {
+            "question": "Which part of 吃 is the radical?",
+            "choices": [
+              "口",
+              "乞",
+              "人",
+              "女"
+            ],
+            "correct": "口"
+          },
+          "reveal": {
+            "category": "things the mouth does",
+            "note": "Eating, drinking, calling out — all of them need a mouth."
+          }
+        },
+        {
+          "radical": "女",
+          "name": "女字旁",
+          "pinyin": "nǚzìpáng",
+          "name_en": "the woman radical",
+          "audio_text": "女字旁",
+          "from": {
+            "character": "女",
+            "pinyin": "nǚ",
+            "meaning": "woman"
+          },
+          "hint": "女 narrows and its last stroke lifts to a 提.",
+          "characters": [
+            {
+              "character": "她",
+              "pinyin": "tā",
+              "meaning": "she",
+              "audio_text": "她"
+            },
+            {
+              "character": "妈",
+              "pinyin": "mā",
+              "meaning": "mum",
+              "audio_text": "妈"
+            },
+            {
+              "character": "好",
+              "pinyin": "hǎo",
+              "meaning": "good",
+              "audio_text": "好"
+            }
+          ],
+          "find": {
+            "question": "Which part of 妈 is the radical?",
+            "choices": [
+              "女",
+              "马",
+              "口",
+              "亻"
+            ],
+            "correct": "女"
+          },
+          "reveal": {
+            "category": "not always about women",
+            "note": "她 and 妈 are. 好 is not — it means good. The radical pointed you close, not all the way."
+          }
+        }
+      ],
+      "group": {
+        "question": "Which character does NOT carry 口?",
+        "choices": [
+          "她",
+          "吃",
+          "喝",
+          "叫"
+        ],
+        "correct": "她",
+        "explain": "她 carries 女. The other three are all things a mouth does."
+      }
+    },
+    "part3_dialogue": {
+      "title": "Use",
+      "subtitle": "词语与情景对话 · Words and dialogue",
+      "characters": [
+        {
+          "character": "我",
+          "pinyin": "wǒ",
+          "meaning": "I / me",
+          "audio_text": "我"
+        }
+      ],
+      "words": [
+        {
+          "word": "你好",
+          "pinyin": "nǐ hǎo",
+          "meaning": "hello",
+          "audio_text": "你好",
+          "built_from": "你 + 好"
+        },
+        {
+          "word": "你们好",
+          "pinyin": "nǐmen hǎo",
+          "meaning": "hello (to several people)",
+          "audio_text": "你们好",
+          "built_from": "你 + 们 + 好"
+        },
+        {
+          "word": "我妈妈",
+          "pinyin": "wǒ māma",
+          "meaning": "my mum",
+          "audio_text": "我妈妈",
+          "built_from": "我 + 妈妈"
+        },
+        {
+          "word": "我奶奶",
+          "pinyin": "wǒ nǎinai",
+          "meaning": "my grandma",
+          "audio_text": "我奶奶",
+          "built_from": "我 + 奶奶"
+        },
+        {
+          "word": "她妈妈",
+          "pinyin": "tā māma",
+          "meaning": "her mum",
+          "audio_text": "她妈妈",
+          "built_from": "她 + 妈妈"
+        },
+        {
+          "word": "米饭",
+          "pinyin": "mǐfàn",
+          "meaning": "cooked rice",
+          "audio_text": "米饭",
+          "built_from": "米 + 饭"
+        },
+        {
+          "word": "面条",
+          "pinyin": "miàntiáo",
+          "meaning": "noodles",
+          "audio_text": "面条",
+          "built_from": "面 + 条"
+        },
+        {
+          "word": "牛奶",
+          "pinyin": "niúnǎi",
+          "meaning": "milk",
+          "audio_text": "牛奶",
+          "built_from": "牛 + 奶"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Introductions",
+          "goal": "你 他 叫",
+          "picture": "l11-p3-introduction",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你叫什么？",
+              "pinyin": "nǐ jiào shénme?",
+              "meaning": "What are you called?",
+              "audio_text": "你叫什么"
+            },
+            {
+              "speaker": "B",
+              "text": "我叫小云。",
+              "pinyin": "wǒ jiào Xiǎo Yún.",
+              "meaning": "I am called Xiao Yun.",
+              "audio_text": "我叫小云"
+            },
+            {
+              "speaker": "A",
+              "text": "他叫什么？",
+              "pinyin": "tā jiào shénme?",
+              "meaning": "What is he called?",
+              "audio_text": "他叫什么"
+            },
+            {
+              "speaker": "B",
+              "text": "他叫小阳。",
+              "pinyin": "tā jiào Xiǎo Yáng.",
+              "meaning": "He is called Xiao Yang.",
+              "audio_text": "他叫小阳"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我叫小云。",
+            "pinyin": "wǒ jiào Xiǎo Yún.",
+            "meaning": "I am called Xiao Yun.",
+            "audio_text": "我叫小云"
+          },
+          "speak": {
+            "question": "Build the question: what are you called?",
+            "tiles": [
+              "你",
+              "叫",
+              "什么",
+              "我"
+            ],
+            "answer": [
+              "你",
+              "叫",
+              "什么"
+            ],
+            "result": "你叫什么？",
+            "pinyin": "nǐ jiào shénme?"
+          }
+        },
+        {
+          "title": "At the table",
+          "goal": "吃 米饭 面条",
+          "picture": "l11-p3-at-the-table",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你吃什么？",
+              "pinyin": "nǐ chī shénme?",
+              "meaning": "What are you eating?",
+              "audio_text": "你吃什么"
+            },
+            {
+              "speaker": "B",
+              "text": "我吃米饭。",
+              "pinyin": "wǒ chī mǐfàn.",
+              "meaning": "I am eating rice.",
+              "audio_text": "我吃米饭"
+            },
+            {
+              "speaker": "A",
+              "text": "你妈妈吃什么？",
+              "pinyin": "nǐ māma chī shénme?",
+              "meaning": "What is your mum eating?",
+              "audio_text": "你妈妈吃什么"
+            },
+            {
+              "speaker": "B",
+              "text": "她吃面条。",
+              "pinyin": "tā chī miàntiáo.",
+              "meaning": "She is eating noodles.",
+              "audio_text": "她吃面条"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "她吃面条。",
+            "pinyin": "tā chī miàntiáo.",
+            "meaning": "She is eating noodles.",
+            "audio_text": "她吃面条"
+          },
+          "speak": {
+            "question": "Build it: I am eating rice.",
+            "tiles": [
+              "我",
+              "吃",
+              "米饭",
+              "你"
+            ],
+            "answer": [
+              "我",
+              "吃",
+              "米饭"
+            ],
+            "result": "我吃米饭。",
+            "pinyin": "wǒ chī mǐfàn."
+          }
+        },
+        {
+          "title": "Something to drink",
+          "goal": "喝 水 牛奶",
+          "picture": "l11-p3-something-to-drink",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你们喝什么？",
+              "pinyin": "nǐmen hē shénme?",
+              "meaning": "What are you (all) drinking?",
+              "audio_text": "你们喝什么"
+            },
+            {
+              "speaker": "B",
+              "text": "我喝水，她喝牛奶。",
+              "pinyin": "wǒ hē shuǐ, tā hē niúnǎi.",
+              "meaning": "I drink water, she drinks milk.",
+              "audio_text": "我喝水，她喝牛奶"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "她喝牛奶。",
+            "pinyin": "tā hē niúnǎi.",
+            "meaning": "She drinks milk.",
+            "audio_text": "她喝牛奶"
+          },
+          "speak": {
+            "question": "Build it: I drink water.",
+            "tiles": [
+              "我",
+              "喝",
+              "水",
+              "你"
+            ],
+            "answer": [
+              "我",
+              "喝",
+              "水"
+            ],
+            "result": "我喝水。",
+            "pinyin": "wǒ hē shuǐ."
+          }
+        },
+        {
+          "title": "How are you?",
+          "goal": "好 很 谢谢",
+          "picture": "l11-p3-how-are-you",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你好吗？",
+              "pinyin": "nǐ hǎo ma?",
+              "meaning": "How are you?",
+              "audio_text": "你好吗"
+            },
+            {
+              "speaker": "B",
+              "text": "我很好，谢谢！",
+              "pinyin": "wǒ hěn hǎo, xièxie!",
+              "meaning": "I am very well, thank you!",
+              "audio_text": "我很好，谢谢"
+            },
+            {
+              "speaker": "A",
+              "text": "你奶奶好吗？",
+              "pinyin": "nǐ nǎinai hǎo ma?",
+              "meaning": "How is your grandma?",
+              "audio_text": "你奶奶好吗"
+            },
+            {
+              "speaker": "B",
+              "text": "她也很好！",
+              "pinyin": "tā yě hěn hǎo!",
+              "meaning": "She is very well too!",
+              "audio_text": "她也很好"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "她也很好！",
+            "pinyin": "tā yě hěn hǎo!",
+            "meaning": "She is very well too!",
+            "audio_text": "她也很好"
+          },
+          "speak": {
+            "question": "Build it: I am very well.",
+            "tiles": [
+              "我",
+              "很",
+              "好",
+              "你"
+            ],
+            "answer": [
+              "我",
+              "很",
+              "好"
+            ],
+            "result": "我很好。",
+            "pinyin": "wǒ hěn hǎo."
+          }
+        }
+      ],
+      "read_aloud": {
+        "title": "Say them yourself",
+        "intro": "Listen, then read each one aloud.",
+        "items": [
+          {
+            "text": "你好",
+            "pinyin": "nǐ hǎo",
+            "meaning": "hello",
+            "audio_text": "你好"
+          },
+          {
+            "text": "我奶奶",
+            "pinyin": "wǒ nǎinai",
+            "meaning": "my grandma",
+            "audio_text": "我奶奶"
+          },
+          {
+            "text": "牛奶",
+            "pinyin": "niúnǎi",
+            "meaning": "milk",
+            "audio_text": "牛奶"
+          }
+        ]
+      }
+    },
+    "part4_write": {
+      "title": "Write",
+      "subtitle": "汉字书写 · Write every character in this lesson",
+      "characters": [
+        "你",
+        "他",
+        "她",
+        "吃",
+        "叫",
+        "妈"
+      ]
+    },
+    "part5_culture": {
+      "title": "Discover Chinese",
+      "subtitle": "汉字探秘 · Culture and language insights",
+      "topic": "他、她、它，听起来一样吗？",
+      "topic_en": "他, 她 and 它 — do they sound the same?",
+      "listen": {
+        "intro": "Listen to both.",
+        "items": [
+          {
+            "character": "他",
+            "pinyin": "tā",
+            "meaning": "he",
+            "audio_text": "他"
+          },
+          {
+            "character": "她",
+            "pinyin": "tā",
+            "meaning": "she",
+            "audio_text": "她"
+          },
+          {
+            "character": "它",
+            "pinyin": "tā",
+            "meaning": "it",
+            "audio_text": "它"
+          }
+        ]
+      },
+      "notice": "All three are tā. In speech there is no difference at all.",
+      "discover": "他 is written for he, 她 for she, 它 for an animal or a thing. The distinction exists only on the page — hearing tā tells you nothing about which character was meant.",
+      "try": {
+        "intro": "Choose the right character.",
+        "items": [
+          {
+            "sentence": "小云是女生。___ 是我的朋友。",
+            "pinyin": "Xiǎo Yún shì nǚshēng. ___ shì wǒ de péngyou.",
+            "meaning": "Xiao Yun is a girl. ___ is my friend.",
+            "choices": [
+              "她",
+              "他"
+            ],
+            "correct": "她"
+          },
+          {
+            "sentence": "小阳是男生。___ 是我的朋友。",
+            "pinyin": "Xiǎo Yáng shì nánshēng. ___ shì wǒ de péngyou.",
+            "meaning": "Xiao Yang is a boy. ___ is my friend.",
+            "choices": [
+              "他",
+              "她"
+            ],
+            "correct": "他"
+          }
+        ]
+      },
+      "picture": "l11-p5-ta"
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "你",
+      "audio_text": "你",
+      "correct": "you",
+      "choices": [
+        "you",
+        "he",
+        "she",
+        "plural marker"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "you",
+      "correct": "你",
+      "choices": [
+        "你",
+        "他",
+        "她",
+        "们"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "你",
+      "audio_text": "你",
+      "correct": "nǐ",
+      "choices": [
+        "nǐ",
+        "tā",
+        "men",
+        "chī"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "nǐ",
+      "correct": "你",
+      "choices": [
+        "你",
+        "他",
+        "她",
+        "们"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "你",
+      "correct": "你",
+      "choices": [
+        "你",
+        "他",
+        "她",
+        "们"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "他",
+      "audio_text": "他",
+      "correct": "he",
+      "choices": [
+        "he",
+        "you",
+        "she",
+        "plural marker"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "he",
+      "correct": "他",
+      "choices": [
+        "他",
+        "你",
+        "她",
+        "们"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "他",
+      "audio_text": "他",
+      "correct": "tā",
+      "choices": [
+        "tā",
+        "nǐ",
+        "men",
+        "chī"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "他",
+      "correct": "他",
+      "choices": [
+        "他",
+        "你",
+        "们",
+        "吃"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "她",
+      "audio_text": "她",
+      "correct": "she",
+      "choices": [
+        "she",
+        "you",
+        "he",
+        "plural marker"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "she",
+      "correct": "她",
+      "choices": [
+        "她",
+        "你",
+        "他",
+        "们"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "她",
+      "audio_text": "她",
+      "correct": "tā",
+      "choices": [
+        "tā",
+        "nǐ",
+        "men",
+        "chī"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "她",
+      "correct": "她",
+      "choices": [
+        "她",
+        "你",
+        "们",
+        "吃"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "们",
+      "audio_text": "们",
+      "correct": "plural marker",
+      "choices": [
+        "plural marker",
+        "you",
+        "he",
+        "she"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "plural marker",
+      "correct": "们",
+      "choices": [
+        "们",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "们",
+      "audio_text": "们",
+      "correct": "men",
+      "choices": [
+        "men",
+        "nǐ",
+        "tā",
+        "chī"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "men",
+      "correct": "们",
+      "choices": [
+        "们",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "们",
+      "correct": "们",
+      "choices": [
+        "们",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "吃",
+      "audio_text": "吃",
+      "correct": "to eat",
+      "choices": [
+        "to eat",
+        "you",
+        "he",
+        "she"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to eat",
+      "correct": "吃",
+      "choices": [
+        "吃",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "吃",
+      "audio_text": "吃",
+      "correct": "chī",
+      "choices": [
+        "chī",
+        "nǐ",
+        "tā",
+        "men"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "chī",
+      "correct": "吃",
+      "choices": [
+        "吃",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "吃",
+      "correct": "吃",
+      "choices": [
+        "吃",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "喝",
+      "audio_text": "喝",
+      "correct": "to drink",
+      "choices": [
+        "to drink",
+        "you",
+        "he",
+        "she"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to drink",
+      "correct": "喝",
+      "choices": [
+        "喝",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "喝",
+      "audio_text": "喝",
+      "correct": "hē",
+      "choices": [
+        "hē",
+        "nǐ",
+        "tā",
+        "men"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "hē",
+      "correct": "喝",
+      "choices": [
+        "喝",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "喝",
+      "correct": "喝",
+      "choices": [
+        "喝",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "叫",
+      "audio_text": "叫",
+      "correct": "to be called",
+      "choices": [
+        "to be called",
+        "you",
+        "he",
+        "she"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to be called",
+      "correct": "叫",
+      "choices": [
+        "叫",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "叫",
+      "audio_text": "叫",
+      "correct": "jiào",
+      "choices": [
+        "jiào",
+        "nǐ",
+        "tā",
+        "men"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "jiào",
+      "correct": "叫",
+      "choices": [
+        "叫",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "叫",
+      "correct": "叫",
+      "choices": [
+        "叫",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "妈",
+      "audio_text": "妈",
+      "correct": "mum",
+      "choices": [
+        "mum",
+        "you",
+        "he",
+        "she"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "mum",
+      "correct": "妈",
+      "choices": [
+        "妈",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "妈",
+      "audio_text": "妈",
+      "correct": "mā",
+      "choices": [
+        "mā",
+        "nǐ",
+        "tā",
+        "men"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "mā",
+      "correct": "妈",
+      "choices": [
+        "妈",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "妈",
+      "correct": "妈",
+      "choices": [
+        "妈",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "好",
+      "audio_text": "好",
+      "correct": "good",
+      "choices": [
+        "good",
+        "you",
+        "he",
+        "she"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "good",
+      "correct": "好",
+      "choices": [
+        "好",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "好",
+      "audio_text": "好",
+      "correct": "hǎo",
+      "choices": [
+        "hǎo",
+        "nǐ",
+        "tā",
+        "men"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "hǎo",
+      "correct": "好",
+      "choices": [
+        "好",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "好",
+      "correct": "好",
+      "choices": [
+        "好",
+        "你",
+        "他",
+        "她"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "人",
+      "audio_text": "人",
+      "correct": "person",
+      "choices": [
+        "person",
+        "mouth",
+        "woman",
+        "you"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "人",
+      "correct": "人",
+      "choices": [
+        "人",
+        "口",
+        "女",
+        "你"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "口",
+      "audio_text": "口",
+      "correct": "mouth",
+      "choices": [
+        "mouth",
+        "person",
+        "woman",
+        "you"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "口",
+      "correct": "口",
+      "choices": [
+        "口",
+        "人",
+        "女",
+        "你"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "女",
+      "audio_text": "女",
+      "correct": "woman",
+      "choices": [
+        "woman",
+        "person",
+        "mouth",
+        "you"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "女",
+      "correct": "女",
+      "choices": [
+        "女",
+        "人",
+        "口",
+        "你"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "你",
+      "audio_text": "你",
+      "correct": "亻",
+      "choices": [
+        "亻",
+        "口",
+        "女",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "他",
+      "audio_text": "他",
+      "correct": "亻",
+      "choices": [
+        "亻",
+        "口",
+        "女",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "们",
+      "audio_text": "们",
+      "correct": "亻",
+      "choices": [
+        "亻",
+        "口",
+        "女",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "吃",
+      "audio_text": "吃",
+      "correct": "口",
+      "choices": [
+        "亻",
+        "口",
+        "女",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "喝",
+      "audio_text": "喝",
+      "correct": "口",
+      "choices": [
+        "亻",
+        "口",
+        "女",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "叫",
+      "audio_text": "叫",
+      "correct": "口",
+      "choices": [
+        "亻",
+        "口",
+        "女",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "她",
+      "audio_text": "她",
+      "correct": "女",
+      "choices": [
+        "亻",
+        "口",
+        "女",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "妈",
+      "audio_text": "妈",
+      "correct": "女",
+      "choices": [
+        "亻",
+        "口",
+        "女",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "好",
+      "audio_text": "好",
+      "correct": "女",
+      "choices": [
+        "亻",
+        "口",
+        "女",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "你好",
+      "audio_text": "你好",
+      "correct": "hello",
+      "choices": [
+        "hello",
+        "hello (to several people)",
+        "my mum",
+        "my grandma"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "你好",
+      "correct": "你好",
+      "choices": [
+        "你好",
+        "你们好",
+        "我妈妈",
+        "我奶奶"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "你们好",
+      "audio_text": "你们好",
+      "correct": "hello (to several people)",
+      "choices": [
+        "hello (to several people)",
+        "hello",
+        "my mum",
+        "my grandma"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "你们好",
+      "correct": "你们好",
+      "choices": [
+        "你们好",
+        "你好",
+        "我妈妈",
+        "我奶奶"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "我妈妈",
+      "audio_text": "我妈妈",
+      "correct": "my mum",
+      "choices": [
+        "my mum",
+        "hello",
+        "hello (to several people)",
+        "my grandma"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "我妈妈",
+      "correct": "我妈妈",
+      "choices": [
+        "我妈妈",
+        "你好",
+        "你们好",
+        "我奶奶"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "我奶奶",
+      "audio_text": "我奶奶",
+      "correct": "my grandma",
+      "choices": [
+        "my grandma",
+        "hello",
+        "hello (to several people)",
+        "my mum"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "我奶奶",
+      "correct": "我奶奶",
+      "choices": [
+        "我奶奶",
+        "你好",
+        "你们好",
+        "我妈妈"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "她妈妈",
+      "audio_text": "她妈妈",
+      "correct": "her mum",
+      "choices": [
+        "her mum",
+        "hello",
+        "hello (to several people)",
+        "my mum"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "她妈妈",
+      "correct": "她妈妈",
+      "choices": [
+        "她妈妈",
+        "你好",
+        "你们好",
+        "我妈妈"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "米饭",
+      "audio_text": "米饭",
+      "correct": "cooked rice",
+      "choices": [
+        "cooked rice",
+        "hello",
+        "hello (to several people)",
+        "my mum"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "米饭",
+      "correct": "米饭",
+      "choices": [
+        "米饭",
+        "你好",
+        "你们好",
+        "我妈妈"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "面条",
+      "audio_text": "面条",
+      "correct": "noodles",
+      "choices": [
+        "noodles",
+        "hello",
+        "hello (to several people)",
+        "my mum"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "面条",
+      "correct": "面条",
+      "choices": [
+        "面条",
+        "你好",
+        "你们好",
+        "我妈妈"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "牛奶",
+      "audio_text": "牛奶",
+      "correct": "milk",
+      "choices": [
+        "milk",
+        "hello",
+        "hello (to several people)",
+        "my mum"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "牛奶",
+      "correct": "牛奶",
+      "choices": [
+        "牛奶",
+        "你好",
+        "你们好",
+        "我妈妈"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "你好",
+      "audio_text": "你好",
+      "pinyin": "nǐ hǎo",
+      "meaning": "hello",
+      "correct": "你好",
+      "choices": [
+        "你好"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我奶奶",
+      "audio_text": "我奶奶",
+      "pinyin": "wǒ nǎinai",
+      "meaning": "my grandma",
+      "correct": "我奶奶",
+      "choices": [
+        "我奶奶"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "牛奶",
+      "audio_text": "牛奶",
+      "pinyin": "niúnǎi",
+      "meaning": "milk",
+      "correct": "牛奶",
+      "choices": [
+        "牛奶"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "你",
+          "pinyin": "nǐ",
+          "english": "you"
+        },
+        {
+          "id": 2,
+          "chinese": "他",
+          "pinyin": "tā",
+          "english": "he"
+        },
+        {
+          "id": 3,
+          "chinese": "们",
+          "pinyin": "men",
+          "english": "plural marker"
+        },
+        {
+          "id": 4,
+          "chinese": "吃",
+          "pinyin": "chī",
+          "english": "to eat"
+        },
+        {
+          "id": 5,
+          "chinese": "喝",
+          "pinyin": "hē",
+          "english": "to drink"
+        }
+      ],
+      "correct": "char:你他们吃喝",
+      "choices": [
+        "you",
+        "he",
+        "plural marker",
+        "to eat",
+        "to drink"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "喝",
+          "pinyin": "hē",
+          "english": "to drink"
+        },
+        {
+          "id": 2,
+          "chinese": "叫",
+          "pinyin": "jiào",
+          "english": "to be called"
+        },
+        {
+          "id": 3,
+          "chinese": "她",
+          "pinyin": "tā",
+          "english": "she"
+        },
+        {
+          "id": 4,
+          "chinese": "妈",
+          "pinyin": "mā",
+          "english": "mum"
+        },
+        {
+          "id": 5,
+          "chinese": "好",
+          "pinyin": "hǎo",
+          "english": "good"
+        }
+      ],
+      "correct": "char:喝叫她妈好",
+      "choices": [
+        "to drink",
+        "to be called",
+        "she",
+        "mum",
+        "good"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "你好",
+          "pinyin": "nǐ hǎo",
+          "english": "hello"
+        },
+        {
+          "id": 2,
+          "chinese": "你们好",
+          "pinyin": "nǐmen hǎo",
+          "english": "hello (to several people)"
+        },
+        {
+          "id": 3,
+          "chinese": "我妈妈",
+          "pinyin": "wǒ māma",
+          "english": "my mum"
+        },
+        {
+          "id": 4,
+          "chinese": "我奶奶",
+          "pinyin": "wǒ nǎinai",
+          "english": "my grandma"
+        },
+        {
+          "id": 5,
+          "chinese": "她妈妈",
+          "pinyin": "tā māma",
+          "english": "her mum"
+        }
+      ],
+      "correct": "word:你好你们好我妈妈我奶奶她妈妈",
+      "choices": [
+        "hello",
+        "hello (to several people)",
+        "my mum",
+        "my grandma",
+        "her mum"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "我奶奶",
+          "pinyin": "wǒ nǎinai",
+          "english": "my grandma"
+        },
+        {
+          "id": 2,
+          "chinese": "她妈妈",
+          "pinyin": "tā māma",
+          "english": "her mum"
+        },
+        {
+          "id": 3,
+          "chinese": "米饭",
+          "pinyin": "mǐfàn",
+          "english": "cooked rice"
+        },
+        {
+          "id": 4,
+          "chinese": "面条",
+          "pinyin": "miàntiáo",
+          "english": "noodles"
+        },
+        {
+          "id": 5,
+          "chinese": "牛奶",
+          "pinyin": "niúnǎi",
+          "english": "milk"
+        }
+      ],
+      "correct": "word:我奶奶她妈妈米饭面条牛奶",
+      "choices": [
+        "my grandma",
+        "her mum",
+        "cooked rice",
+        "noodles",
+        "milk"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null,
+        "叫",
+        "什么"
+      ],
+      "correct": "你",
+      "choices": [
+        "你",
+        "我",
+        "吃",
+        "米饭"
+      ],
+      "result_word": "你叫什么？",
+      "result_pinyin": "nǐ jiào shénme?",
+      "result_meaning": "What are you called?",
+      "audio_text": "你叫什么"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null,
+        "吃",
+        "米饭"
+      ],
+      "correct": "我",
+      "choices": [
+        "我",
+        "你",
+        "叫",
+        "什么"
+      ],
+      "result_word": "我吃米饭。",
+      "result_pinyin": "wǒ chī mǐfàn.",
+      "result_meaning": "I am eating rice.",
+      "audio_text": "我吃米饭"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null,
+        "喝",
+        "水"
+      ],
+      "correct": "我",
+      "choices": [
+        "我",
+        "你",
+        "叫",
+        "什么"
+      ],
+      "result_word": "我喝水。",
+      "result_pinyin": "wǒ hē shuǐ.",
+      "result_meaning": "I drink water.",
+      "audio_text": "我喝水"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null,
+        "很",
+        "好"
+      ],
+      "correct": "我",
+      "choices": [
+        "我",
+        "你",
+        "叫",
+        "什么"
+      ],
+      "result_word": "我很好。",
+      "result_pinyin": "wǒ hěn hǎo.",
+      "result_meaning": "I am very well.",
+      "audio_text": "我很好"
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "What are you called?",
+      "tiles": [
+        "你",
+        "叫",
+        "什么",
+        "我"
+      ],
+      "answer": [
+        "你",
+        "叫",
+        "什么"
+      ],
+      "result": "你叫什么？",
+      "pinyin": "nǐ jiào shénme?",
+      "correct": "你叫什么",
+      "choices": [
+        "你叫什么"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I am eating rice.",
+      "tiles": [
+        "我",
+        "吃",
+        "米饭",
+        "你"
+      ],
+      "answer": [
+        "我",
+        "吃",
+        "米饭"
+      ],
+      "result": "我吃米饭。",
+      "pinyin": "wǒ chī mǐfàn.",
+      "correct": "我吃米饭",
+      "choices": [
+        "我吃米饭"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I drink water.",
+      "tiles": [
+        "我",
+        "喝",
+        "水",
+        "你"
+      ],
+      "answer": [
+        "我",
+        "喝",
+        "水"
+      ],
+      "result": "我喝水。",
+      "pinyin": "wǒ hē shuǐ.",
+      "correct": "我喝水",
+      "choices": [
+        "我喝水"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I am very well.",
+      "tiles": [
+        "我",
+        "很",
+        "好",
+        "你"
+      ],
+      "answer": [
+        "我",
+        "很",
+        "好"
+      ],
+      "result": "我很好。",
+      "pinyin": "wǒ hěn hǎo.",
+      "correct": "我很好",
+      "choices": [
+        "我很好"
+      ]
+    }
+  ]
+}

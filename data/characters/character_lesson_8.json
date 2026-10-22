@@ -1403,6 +1403,313 @@
         "Grandma has no milk.",
         "Grandma is speaking."
       ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "没有",
+      "audio_text": "没有",
+      "pinyin": "méiyǒu",
+      "meaning": "to not have",
+      "correct": "没有",
+      "choices": [
+        "没有"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "有",
+      "audio_text": "有",
+      "pinyin": "yǒu",
+      "meaning": "to have",
+      "correct": "有",
+      "choices": [
+        "有"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "说话",
+      "audio_text": "说话",
+      "pinyin": "shuōhuà",
+      "meaning": "to speak",
+      "correct": "说话",
+      "choices": [
+        "说话"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "Grandma did not speak.",
+      "tiles": [
+        "奶奶",
+        "没有",
+        "说话",
+        "没"
+      ],
+      "answer": [
+        "奶奶",
+        "没有",
+        "说话"
+      ],
+      "result": "奶奶没有说话",
+      "pinyin": "nǎinai méiyǒu shuōhuà",
+      "correct": "奶奶没有说话",
+      "choices": [
+        "奶奶没有说话"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "没",
+          "pinyin": "méi",
+          "english": "not have"
+        },
+        {
+          "id": 2,
+          "chinese": "说",
+          "pinyin": "shuō",
+          "english": "to speak"
+        },
+        {
+          "id": 3,
+          "chinese": "奶",
+          "pinyin": "nǎi",
+          "english": "milk / grandma"
+        },
+        {
+          "id": 4,
+          "chinese": "牛",
+          "pinyin": "niú",
+          "english": "cow"
+        },
+        {
+          "id": 5,
+          "chinese": "有",
+          "pinyin": "yǒu",
+          "english": "to have"
+        }
+      ],
+      "correct": "char:没说奶牛有",
+      "choices": [
+        "not have",
+        "to speak",
+        "milk / grandma",
+        "cow",
+        "to have"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "说",
+          "pinyin": "shuō",
+          "english": "to speak"
+        },
+        {
+          "id": 2,
+          "chinese": "奶",
+          "pinyin": "nǎi",
+          "english": "milk / grandma"
+        },
+        {
+          "id": 3,
+          "chinese": "牛",
+          "pinyin": "niú",
+          "english": "cow"
+        },
+        {
+          "id": 4,
+          "chinese": "有",
+          "pinyin": "yǒu",
+          "english": "to have"
+        },
+        {
+          "id": 5,
+          "chinese": "话",
+          "pinyin": "huà",
+          "english": "speech / words"
+        }
+      ],
+      "correct": "char:说奶牛有话",
+      "choices": [
+        "to speak",
+        "milk / grandma",
+        "cow",
+        "to have",
+        "speech / words"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "没有",
+          "pinyin": "méiyǒu",
+          "english": "to not have"
+        },
+        {
+          "id": 2,
+          "chinese": "有",
+          "pinyin": "yǒu",
+          "english": "to have"
+        },
+        {
+          "id": 3,
+          "chinese": "说话",
+          "pinyin": "shuōhuà",
+          "english": "to speak"
+        },
+        {
+          "id": 4,
+          "chinese": "话",
+          "pinyin": "huà",
+          "english": "speech / words"
+        },
+        {
+          "id": 5,
+          "chinese": "奶奶",
+          "pinyin": "nǎinai",
+          "english": "grandma"
+        }
+      ],
+      "correct": "word:没有有说话话奶奶",
+      "choices": [
+        "to not have",
+        "to have",
+        "to speak",
+        "speech / words",
+        "grandma"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "有",
+          "pinyin": "yǒu",
+          "english": "to have"
+        },
+        {
+          "id": 2,
+          "chinese": "说话",
+          "pinyin": "shuōhuà",
+          "english": "to speak"
+        },
+        {
+          "id": 3,
+          "chinese": "话",
+          "pinyin": "huà",
+          "english": "speech / words"
+        },
+        {
+          "id": 4,
+          "chinese": "奶奶",
+          "pinyin": "nǎinai",
+          "english": "grandma"
+        },
+        {
+          "id": 5,
+          "chinese": "牛奶",
+          "pinyin": "niúnǎi",
+          "english": "cow's milk"
+        }
+      ],
+      "correct": "word:有说话话奶奶牛奶",
+      "choices": [
+        "to have",
+        "to speak",
+        "speech / words",
+        "grandma",
+        "cow's milk"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null,
+        "有"
+      ],
+      "correct": "没",
+      "choices": [
+        "没",
+        "说",
+        "牛",
+        "奶"
+      ],
+      "result_word": "没有",
+      "result_pinyin": "méiyǒu",
+      "result_meaning": "to not have",
+      "audio_text": "没有"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "说",
+        null
+      ],
+      "correct": "话",
+      "choices": [
+        "话",
+        "有",
+        "牛",
+        "奶"
+      ],
+      "result_word": "说话",
+      "result_pinyin": "shuōhuà",
+      "result_meaning": "to speak",
+      "audio_text": "说话"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "牛",
+        null
+      ],
+      "correct": "奶",
+      "choices": [
+        "奶",
+        "有",
+        "说",
+        "没"
+      ],
+      "result_word": "牛奶",
+      "result_pinyin": "niúnǎi",
+      "result_meaning": "cow's milk",
+      "audio_text": "牛奶"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "奶奶",
+        null,
+        "说话"
+      ],
+      "correct": "没有",
+      "choices": [
+        "没有",
+        "牛奶",
+        "奶奶",
+        "说话"
+      ],
+      "result_word": "奶奶没有说话",
+      "result_pinyin": "nǎinai méiyǒu shuōhuà",
+      "result_meaning": "Grandma did not speak.",
+      "audio_text": "奶奶没有说话"
     }
   ]
 }

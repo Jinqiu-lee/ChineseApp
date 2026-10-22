@@ -1493,6 +1493,410 @@
         "专注",
         "专业"
       ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "专心",
+      "audio_text": "专心",
+      "pinyin": "zhuānxīn",
+      "meaning": "to concentrate",
+      "correct": "专心",
+      "choices": [
+        "专心"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "专注",
+      "audio_text": "专注",
+      "pinyin": "zhuānzhù",
+      "meaning": "to focus",
+      "correct": "专注",
+      "choices": [
+        "专注"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "专业",
+      "audio_text": "专业",
+      "pinyin": "zhuānyè",
+      "meaning": "a specialism",
+      "correct": "专业",
+      "choices": [
+        "专业"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "Which country are you from?",
+      "tiles": [
+        "你",
+        "是",
+        "哪国人",
+        "专"
+      ],
+      "answer": [
+        "你",
+        "是",
+        "哪国人"
+      ],
+      "result": "你是哪国人",
+      "pinyin": "nǐ shì nǎ guó rén",
+      "correct": "你是哪国人",
+      "choices": [
+        "你是哪国人"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "What is this?",
+      "tiles": [
+        "这",
+        "是",
+        "什么",
+        "专"
+      ],
+      "answer": [
+        "这",
+        "是",
+        "什么"
+      ],
+      "result": "这是什么",
+      "pinyin": "zhè shì shénme",
+      "correct": "这是什么",
+      "choices": [
+        "这是什么"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "What is that?",
+      "tiles": [
+        "那",
+        "是",
+        "什么",
+        "专"
+      ],
+      "answer": [
+        "那",
+        "是",
+        "什么"
+      ],
+      "result": "那是什么",
+      "pinyin": "nà shì shénme",
+      "correct": "那是什么",
+      "choices": [
+        "那是什么"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "专",
+          "pinyin": "zhuān",
+          "english": "focused"
+        },
+        {
+          "id": 2,
+          "chinese": "你",
+          "pinyin": "nǐ",
+          "english": "you"
+        },
+        {
+          "id": 3,
+          "chinese": "中",
+          "pinyin": "zhōng",
+          "english": "middle"
+        },
+        {
+          "id": 4,
+          "chinese": "什",
+          "pinyin": "shén",
+          "english": "what (only in 什么)"
+        },
+        {
+          "id": 5,
+          "chinese": "白",
+          "pinyin": "bái",
+          "english": "white"
+        }
+      ],
+      "correct": "char:专你中什白",
+      "choices": [
+        "focused",
+        "you",
+        "middle",
+        "what (only in 什么)",
+        "white"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "你",
+          "pinyin": "nǐ",
+          "english": "you"
+        },
+        {
+          "id": 2,
+          "chinese": "中",
+          "pinyin": "zhōng",
+          "english": "middle"
+        },
+        {
+          "id": 3,
+          "chinese": "什",
+          "pinyin": "shén",
+          "english": "what (only in 什么)"
+        },
+        {
+          "id": 4,
+          "chinese": "白",
+          "pinyin": "bái",
+          "english": "white"
+        },
+        {
+          "id": 5,
+          "chinese": "国",
+          "pinyin": "guó",
+          "english": "country"
+        }
+      ],
+      "correct": "char:你中什白国",
+      "choices": [
+        "you",
+        "middle",
+        "what (only in 什么)",
+        "white",
+        "country"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "专心",
+          "pinyin": "zhuānxīn",
+          "english": "to concentrate"
+        },
+        {
+          "id": 2,
+          "chinese": "专注",
+          "pinyin": "zhuānzhù",
+          "english": "to focus"
+        },
+        {
+          "id": 3,
+          "chinese": "专业",
+          "pinyin": "zhuānyè",
+          "english": "a specialism"
+        },
+        {
+          "id": 4,
+          "chinese": "什么",
+          "pinyin": "shénme",
+          "english": "what"
+        },
+        {
+          "id": 5,
+          "chinese": "白云",
+          "pinyin": "báiyún",
+          "english": "white cloud"
+        }
+      ],
+      "correct": "word:专心专注专业什么白云",
+      "choices": [
+        "to concentrate",
+        "to focus",
+        "a specialism",
+        "what",
+        "white cloud"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "什么",
+          "pinyin": "shénme",
+          "english": "what"
+        },
+        {
+          "id": 2,
+          "chinese": "白云",
+          "pinyin": "báiyún",
+          "english": "white cloud"
+        },
+        {
+          "id": 3,
+          "chinese": "太阳",
+          "pinyin": "tàiyáng",
+          "english": "the sun"
+        },
+        {
+          "id": 4,
+          "chinese": "中国",
+          "pinyin": "zhōngguó",
+          "english": "China"
+        },
+        {
+          "id": 5,
+          "chinese": "哪国",
+          "pinyin": "nǎ guó",
+          "english": "which country"
+        }
+      ],
+      "correct": "word:什么白云太阳中国哪国",
+      "choices": [
+        "what",
+        "white cloud",
+        "the sun",
+        "China",
+        "which country"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "专",
+        null
+      ],
+      "correct": "心",
+      "choices": [
+        "心",
+        "业",
+        "国",
+        "白"
+      ],
+      "result_word": "专心",
+      "result_pinyin": "zhuānxīn",
+      "result_meaning": "to concentrate",
+      "audio_text": "专心"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null
+      ],
+      "correct": "什么",
+      "choices": [
+        "什么",
+        "哪国",
+        "中国",
+        "白云"
+      ],
+      "result_word": "什么",
+      "result_pinyin": "shénme",
+      "result_meaning": "what",
+      "audio_text": "什么"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null,
+        "云"
+      ],
+      "correct": "白",
+      "choices": [
+        "白",
+        "中",
+        "国",
+        "是"
+      ],
+      "result_word": "白云",
+      "result_pinyin": "báiyún",
+      "result_meaning": "white cloud",
+      "audio_text": "白云"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "中",
+        null
+      ],
+      "correct": "国",
+      "choices": [
+        "国",
+        "中",
+        "白",
+        "是"
+      ],
+      "result_word": "中国",
+      "result_pinyin": "zhōngguó",
+      "result_meaning": "China",
+      "audio_text": "中国"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "你",
+        null,
+        "哪国人"
+      ],
+      "correct": "是",
+      "choices": [
+        "是",
+        "什",
+        "中",
+        "白"
+      ],
+      "result_word": "你是哪国人",
+      "result_pinyin": "nǐ shì nǎ guó rén",
+      "result_meaning": "Which country are you from?",
+      "audio_text": "你是哪国人"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "这",
+        "是",
+        null
+      ],
+      "correct": "什么",
+      "choices": [
+        "什么",
+        "哪国",
+        "中国",
+        "白云"
+      ],
+      "result_word": "这是什么",
+      "result_pinyin": "zhè shì shénme",
+      "result_meaning": "What is this?",
+      "audio_text": "这是什么"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null,
+        "是",
+        "什么"
+      ],
+      "correct": "那",
+      "choices": [
+        "那",
+        "这",
+        "哪",
+        "中"
+      ],
+      "result_word": "那是什么",
+      "result_pinyin": "nà shì shénme",
+      "result_meaning": "What is that?",
+      "audio_text": "那是什么"
     }
   ]
 }

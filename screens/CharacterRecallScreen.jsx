@@ -1,11 +1,16 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar, useWindowDimensions } from 'react-native';
+import {
+  View, Text, TouchableOpacity, StyleSheet, ScrollView, StatusBar,
+  useWindowDimensions, Image,
+} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import ScreenBackground from '../components/ScreenBackground';
 import StrokeAnimator, { strokeCount } from '../components/characters/StrokeAnimator';
 import { StrokeCombo } from '../components/characters/StrokeVisual';
 import StrokeWriter from '../components/characters/StrokeWriter';
-import { PRACTICE_STAGES, questionsForStage, buildLessonQuiz } from '../data/characters/practiceStages';
+import { ReadAloud } from '../components/characters/LessonTwoParts';
+import MatchPairsExercise from '../components/exercises/MatchPairsExercise';
+import { stagesFor, questionsForStage, buildLessonQuiz } from '../data/characters/practiceStages';
 import { getStrokePinyin } from '../data/characters/strokeAssets';
 import { getCharacterReading, getCharacterStrokeOrder } from '../data/characters';
 import { speakChinese } from '../utils/tts';
@@ -41,6 +46,22 @@ const TYPE_LABELS = {
   pinyin_to_char:    '✏️ Pinyin → Character',
   missing_stroke:    '🖌 Missing Stroke',
   missing_component: '🧩 Missing Component',
+  char_to_radical:   '🧩 Character → Radical',
+  read_aloud:        '🎤 Read Aloud',
+  matching:          '🔗 Match the Pairs',
+  sentence_build:    '🧱 Build the Sentence',
+  word_build:        '➕ Complete the Word',
+};
+
+// Some questions show a Chinese character and want something other than a
+// reading back. Without a line saying so, "你 🔊" with 亻口女日 underneath
+// looks identical to a question asking what 你 means.
+const PROMPT_LINES = {
+  sentence_build:  'Tap the words in the right order.',
+  word_build:      'Which character completes it?',
+  char_to_radical: 'Which radical does this character carry?',
+  char_to_meaning: 'What does this mean?',
+  char_to_pinyin:  'How is this read?',
 };
 
 // Showing pinyin outright would hand over the answer in these: one asks you to
@@ -97,6 +118,64 @@ function buildPinyinMap(lessonData) {
   return m;
 }
 
+// Tap the words in order to build the sentence.
+function SentenceBuildQuestion({ q, onDone }) {
+  const [tiles, setTiles] = useState([]);
+  // The data lists the tiles in the order they belong, so they have to be
+  // shuffled before they are shown — otherwise the answer is just "left to
+  // right". Shuffled once per question, not on every render.
+  const [offered] = useState(() => shuffle(q.tiles));
+  const done = tiles.length >= q.answer.length;
+  const right = done && tiles.join('') === q.answer.join('');
+
+  useEffect(() => { if (done) onDone(right); }, [done]);
+
+  return (
+    <View style={{ gap: 14, width: '100%' }}>
+      <View style={s.slotRow}>
+        {q.answer.map((_, i) => (
+          <View
+            key={i}
+            style={[
+              s.slot,
+              tiles[i] && s.slotFilled,
+              done && (tiles[i] === q.answer[i] ? s.slotRight : s.slotWrong),
+            ]}
+          >
+            <Text style={[s.slotText, done && tiles[i] && s.slotTextLit]}>
+              {tiles[i] || '?'}
+            </Text>
+          </View>
+        ))}
+      </View>
+      <View style={s.tileRow}>
+        {offered.map(t => (
+          <TouchableOpacity
+            key={t}
+            style={[s.tile, tiles.includes(t) && s.tileUsed]}
+            onPress={() => {
+              if (tiles.includes(t) || done) return;
+              speakChinese(t);
+              setTiles([...tiles, t]);
+            }}
+            activeOpacity={0.8}
+          >
+            <Text style={s.tileText}>{t}</Text>
+          </TouchableOpacity>
+        ))}
+      </View>
+      {done && (
+        <View style={[s.feedback, right ? s.feedbackRight : s.feedbackWrong]}>
+          <Text style={s.feedbackIcon}>{right ? '✓' : '✕'}</Text>
+          <Text style={[s.feedbackText, right ? s.feedbackTextRight : s.feedbackTextWrong]}>
+            {right ? `${q.result}  ${q.pinyin}` : `Not quite — ${q.result}`}
+          </Text>
+        </View>
+      )}
+    </View>
+  );
+}
+
 export default function CharacterRecallScreen({
   lessonData,
   stageIndex = 0,
@@ -105,7 +184,9 @@ export default function CharacterRecallScreen({
   onComplete,
 }) {
   const quiz = mode === 'quiz';
-  const stage = PRACTICE_STAGES[stageIndex] || PRACTICE_STAGES[0];
+  // Each half of the course has its own stage list.
+  const allStages = stagesFor(lessonData?.id || 1);
+  const stage = allStages[stageIndex] || allStages[0];
   const questions = useMemo(
     () => (quiz ? buildLessonQuiz(lessonData) : questionsForStage(lessonData, stageIndex)),
     [lessonData, stageIndex, quiz],
@@ -122,6 +203,10 @@ export default function CharacterRecallScreen({
   const total = questions.length;
   const q = questions[index];
   const isWrite = q?.type === 'write';
+  const isRead  = q?.type === 'read_aloud';
+  // Answered in one gesture each, so they score themselves rather than
+  // going through pick().
+  const isSelfScored = q?.type === 'matching' || q?.type === 'sentence_build';
 
   const { width: winW, height: winH } = useWindowDimensions();
   const promptWidth = winW - PROMPT_PADDING;
@@ -284,6 +369,35 @@ export default function CharacterRecallScreen({
           </View>
         );
 
+      // These carry their whole question in the answer area.
+      case 'matching':
+        return null;
+
+      case 'word_build':
+        return (
+          <View style={s.promptInner}>
+            <View style={s.equationRow}>
+              {q.template.map((t, i) => (
+                <React.Fragment key={i}>
+                  {i > 0 && <Text style={s.eqSign}>+</Text>}
+                  {t == null
+                    ? <View style={[s.eqCell, s.eqCellBlank]}><Text style={s.eqQ}>?</Text></View>
+                    : <View style={s.eqCell}><Text style={s.eqCellText}>{t}</Text></View>}
+                </React.Fragment>
+              ))}
+              <Text style={s.eqSign}>=</Text>
+            </View>
+            <Text style={s.wordBuildMeaning}>{q.result_meaning}</Text>
+          </View>
+        );
+
+      case 'sentence_build':
+        return (
+          <View style={s.promptInner}>
+            <Text style={s.promptEn}>{q.prompt_en}</Text>
+          </View>
+        );
+
       default: {
         if (!q.prompt_char) return null;
         // A single glyph gets the full 60; a sentence shrinks to the same box.
@@ -309,6 +423,49 @@ export default function CharacterRecallScreen({
   };
 
   // ── A write question ──────────────────────────────────────────────────────
+  // Saying a word aloud, scored the same way writing one is: completing it
+  // counts. Same component as Part 3, so the two behave identically.
+  if (isRead) {
+    const rProgress = total > 0 ? (index / total) * 100 : 0;
+    return (
+      <ScreenBackground levelId="hsk1">
+        <SafeAreaView style={s.safe}>
+          <StatusBar barStyle="dark-content" />
+          <View style={s.header}>
+            <TouchableOpacity onPress={onBack} style={s.backBtn}>
+              <Text style={s.backBtnText}>← Exit</Text>
+            </TouchableOpacity>
+            <Text style={s.headerTitle}>{index + 1} / {total}</Text>
+            <Text style={s.headerScore}>{score} ✓</Text>
+          </View>
+          <View style={s.progressTrack}>
+            <View style={[s.progressFill, { width: `${rProgress}%` }]} />
+          </View>
+
+          <ScrollView key={index} contentContainerStyle={s.content} showsVerticalScrollIndicator={false}>
+            <Text style={s.typeLabel}>{quiz ? '📝 Lesson Quiz' : `${stage.icon} ${stage.name}`}</Text>
+            <ReadAloud
+              key={index}
+              item={{
+                text: q.prompt_char,
+                pinyin: q.pinyin || pinyinFor(q.prompt_char),
+                meaning: q.meaning,
+                audio_text: q.audio_text || q.prompt_char,
+                intro: 'Listen, then read it aloud.',
+              }}
+            />
+            <TouchableOpacity style={s.primaryBtn} onPress={() => { setScore(x => x + 1); next(); }} activeOpacity={0.85}>
+              <Text style={s.primaryBtnText}>
+                {index + 1 >= total ? 'See Results' : 'Next →'}
+              </Text>
+            </TouchableOpacity>
+            <View style={{ height: 40 }} />
+          </ScrollView>
+        </SafeAreaView>
+      </ScreenBackground>
+    );
+  }
+
   if (isWrite) {
     const wProgress = total > 0 ? (index / total) * 100 : 0;
     return (
@@ -348,6 +505,13 @@ export default function CharacterRecallScreen({
     );
   }
 
+  // Matching and sentence-building report their own result when complete.
+  const selfScore = (right) => {
+    if (picked != null) return;
+    setPicked(right ? '__right__' : '__wrong__');
+    if (right) setScore(x => x + 1);
+  };
+
   // In a quiz, Meaning → Character withholds pinyin too: it is a test, not practice.
   const showAnswerHints = !NO_ANSWER_HINTS.has(q.type)
     && !(quiz && q.type === 'meaning_to_char');
@@ -377,9 +541,26 @@ export default function CharacterRecallScreen({
           {/* Question frame — warm cream, deliberately a different colour from
               the white answer buttons so the prompt never blends into the art. */}
           <View style={[s.questionFrame, STROKE_ANSWER_TYPES.has(q.type) && s.questionFrameCompact]}>
+            {PROMPT_LINES[q.type] ? (
+              <Text style={s.promptLine}>{PROMPT_LINES[q.type]}</Text>
+            ) : null}
             {renderPrompt()}
           </View>
 
+          {isSelfScored ? (
+            <View style={s.choices}>
+              {q.type === 'matching'
+                ? (
+                  <MatchPairsExercise
+                    key={index}
+                    exercise={{ pairs: q.pairs }}
+                    onComplete={() => selfScore(true)}
+                  />
+                )
+                : <SentenceBuildQuestion key={index} q={q} onDone={selfScore} />}
+            </View>
+          ) : (
+          <>
           {/* Once answered, the distractors have done their job and only get in
               the way of reading the result: keep the correct answer, plus the
               wrong one if that is what was picked. A correct pick leaves one
@@ -459,6 +640,8 @@ export default function CharacterRecallScreen({
               );
             })}
           </View>
+          </>
+          )}
 
           {picked != null && (
             <TouchableOpacity style={s.primaryBtn} onPress={next} activeOpacity={0.85}>
@@ -524,6 +707,45 @@ const s = StyleSheet.create({
   // jump as you move between them.
   promptInner: { alignItems: 'center', justifyContent: 'center', gap: 8, minHeight: PROMPT_BODY },
 
+  // sentence building
+  slotRow: { flexDirection: 'row', justifyContent: 'center', flexWrap: 'wrap', gap: 6 },
+  slot: {
+    minWidth: 58, height: 52, borderRadius: 10, alignItems: 'center', justifyContent: 'center',
+    borderWidth: 1.5, borderStyle: 'dashed', borderColor: 'rgba(155,104,70,0.35)',
+    backgroundColor: CARD_WHITE,
+  },
+  slotFilled: { borderStyle: 'solid', borderColor: WARM_ORANGE },
+  // Same strength as the answer buttons, so a filled slot reads as a verdict
+  // rather than a tint — which means the glyph on top has to go white.
+  slotRight:  { backgroundColor: 'rgba(46,125,50,0.7)', borderColor: SUCCESS },
+  slotWrong:  { backgroundColor: 'rgba(196,80,58,0.7)', borderColor: '#C4503A' },
+  slotText:    { fontSize: 22, fontWeight: '900', color: DEEP_NAVY },
+  slotTextLit: { color: CARD_WHITE },
+  tileRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, justifyContent: 'center' },
+  tile: {
+    minWidth: 58, paddingHorizontal: 14, paddingVertical: 10, borderRadius: 10,
+    backgroundColor: CARD_WHITE, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.3)',
+    alignItems: 'center',
+  },
+  tileUsed:  { opacity: 0.35 },
+  tileText:  { fontSize: 22, fontWeight: '900', color: DEEP_NAVY },
+  feedback:  { flexDirection: 'row', alignItems: 'center', gap: 8, borderRadius: 10, padding: 10 },
+  feedbackRight:     { backgroundColor: 'rgba(46,125,50,0.12)' },
+  feedbackWrong:     { backgroundColor: 'rgba(196,80,58,0.10)' },
+  feedbackIcon:      { fontSize: 16, fontWeight: '900' },
+  feedbackText:      { flex: 1, fontSize: 15, fontWeight: '700' },
+  feedbackTextRight: { color: '#2E7D32' },
+  feedbackTextWrong: { color: '#C4503A' },
+
+  eqCellText:        { fontSize: 24, fontWeight: '900', color: DEEP_NAVY },
+  wordBuildMeaning:  { fontSize: 18, fontWeight: '800', color: WARM_ORANGE, textAlign: 'center' },
+
+  // Says what the question wants, for the types where the prompt alone
+  // does not make that obvious.
+  promptLine: {
+    fontSize: 15, fontWeight: '700', color: SLATE_TEAL,
+    textAlign: 'center', marginBottom: -4,
+  },
   promptChar:   { fontSize: 60, lineHeight: 74, fontWeight: '900', color: DEEP_NAVY, textAlign: 'center' },
   promptPinyin: { fontSize: 46, fontWeight: '900', color: WARM_BROWN, textAlign: 'center' },
   promptEn:     { fontSize: 34, fontWeight: '900', color: WARM_ORANGE, textAlign: 'center' },

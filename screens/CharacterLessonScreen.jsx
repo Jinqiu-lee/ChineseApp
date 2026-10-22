@@ -8,6 +8,10 @@ import ScreenBackground from '../components/ScreenBackground';
 import StrokeAnimator from '../components/characters/StrokeAnimator';
 import StrokeVisual, { StrokeCombo } from '../components/characters/StrokeVisual';
 import StrokeWriter from '../components/characters/StrokeWriter';
+import {
+  BlockCard, MatchCard, ComponentCard, CharacterIntroCard, WordCard,
+  DialogueCard, CultureCard, ReadAloud,
+} from '../components/characters/LessonTwoParts';
 import { getStrokeVisual, getRuleVisual, getStrokePinyin } from '../data/characters/strokeAssets';
 import { stagesForLesson, practiceStageCount, QUIZ_LENGTH } from '../data/characters/practiceStages';
 import { getCharacterReading } from '../data/characters';
@@ -149,6 +153,38 @@ function RecognitionCheck({ item }) {
         })}
       </View>
       <AnswerFeedback picked={picked} correct={item.correct} label={strokeLabel} />
+    </View>
+  );
+}
+
+// The round-up at the end of Characters 2's Part 2: one character out of four
+// carries a different radical from the rest.
+function GroupCheck({ item }) {
+  const [picked, setPicked] = useState(null);
+  return (
+    <View style={[s.card, s.structureCard]}>
+      <Text style={s.structureQ}>{item.question}</Text>
+      <View style={s.choiceRow}>
+        {item.choices.map(c => {
+          const reveal = picked != null;
+          return (
+            <TouchableOpacity
+              key={c}
+              style={[
+                s.charChoice,
+                reveal && c === item.correct && s.choiceRight,
+                reveal && picked === c && c !== item.correct && s.choiceWrong,
+              ]}
+              onPress={() => { speakChinese(c); if (picked == null) setPicked(c); }}
+              activeOpacity={0.8}
+            >
+              <Text style={s.charChoiceText}>{c}</Text>
+            </TouchableOpacity>
+          );
+        })}
+      </View>
+      <AnswerFeedback picked={picked} correct={item.correct} />
+      {picked != null && item.explain ? <Text style={s.body}>{item.explain}</Text> : null}
     </View>
   );
 }
@@ -825,7 +861,13 @@ function MiniGrid({ char, size = 76 }) {
   );
 }
 
-function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasSize, canGoToPractice = true }) {
+function WritePart({
+  chars, infoFor, onDrawingChange, onAllDone, onBack, canvasSize,
+  completesLearn = true,   // finishing here ticks the last outstanding part
+  hasNextPart = false,     // a part follows Write (Characters 2's culture part)
+  nextLabel = '',          // names that part, so the button says where it goes
+  showPinyin = true,
+}) {
   const [idx, setIdx] = useState(0);
   const advancing = useRef(false);
 
@@ -839,6 +881,10 @@ function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasS
 
   const [finished, setFinished] = useState(false);
   const [rewrites, setRewrites] = useState(0);
+  const [showMeaning, setShowMeaning] = useState(false);
+
+  // Each new character starts hidden again.
+  useEffect(() => { setShowMeaning(false); }, [char]);
 
   const handleComplete = () => {
     if (advancing.current) return;
@@ -860,14 +906,18 @@ function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasS
         <Text style={s.writeDoneEmoji}>✍️</Text>
         <Text style={s.writeDoneTitle}>All {chars.length} written</Text>
 
+        {/* Says what it will actually do: hand off to Practice when this was
+            the last part outstanding, otherwise carry on to the next one. */}
         <TouchableOpacity style={s.writeDoneBtn} onPress={onAllDone} activeOpacity={0.85}>
           <Text style={s.writeDoneBtnText}>
-            {canGoToPractice ? '🎯 Go to Practice' : '← Back to parts'}
+            {hasNextPart
+              ? (nextLabel || 'Continue →')
+              : completesLearn ? '🎯 Go to Practice' : '← Back to parts'}
           </Text>
         </TouchableOpacity>
 
-        {/* Rewriting is offered a limited number of times, then the only way on
-            is Practice. */}
+        {/* Rewriting is offered a limited number of times, then the only way
+            on is forward. */}
         {rewrites < MAX_REWRITES && (
           <TouchableOpacity style={s.writeAgainBtn} onPress={again} activeOpacity={0.85}>
             <Text style={s.writeAgainText}>
@@ -875,6 +925,10 @@ function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasS
             </Text>
           </TouchableOpacity>
         )}
+
+        <TouchableOpacity onPress={onBack} activeOpacity={0.7}>
+          <Text style={s.writeDoneBack}>← Back to parts</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -894,13 +948,26 @@ function WritePart({ chars, infoFor, onDrawingChange, onAllDone, onBack, canvasS
           <View style={s.titleRow}>
             <View style={s.titleStack}>
               <Text style={s.bigName}>{char}</Text>
-              {!!info.pinyin && <Text style={s.bigPinyin}>{info.pinyin}</Text>}
+              {showPinyin && !!info.pinyin && <Text style={s.bigPinyin}>{info.pinyin}</Text>}
             </View>
             <TouchableOpacity onPress={() => speakChinese(char, 'female', info.pinyin)} style={s.audioBtn} activeOpacity={0.7}>
               <Text style={s.audioIcon}>🔊</Text>
             </TouchableOpacity>
           </View>
-          {!!info.meaning && <Text style={s.meaningEn}>{info.meaning}</Text>}
+          {/* The meaning is the thing being recalled, so it stays hidden
+              until asked for — writing 妈 from a prompt that already says
+              "mum" is copying, not remembering. */}
+          {!!info.meaning && (
+            showMeaning ? (
+              <TouchableOpacity onPress={() => setShowMeaning(false)} activeOpacity={0.7}>
+                <Text style={s.meaningEn}>{info.meaning}</Text>
+              </TouchableOpacity>
+            ) : (
+              <TouchableOpacity onPress={() => setShowMeaning(true)} activeOpacity={0.7}>
+                <Text style={s.meaningHint}>tap for meaning</Text>
+              </TouchableOpacity>
+            )
+          )}
         </View>
       </View>
 
@@ -954,6 +1021,15 @@ export default function CharacterLessonScreen({
       [r.result_char, { pinyin: r.result_pinyin, meaning: r.result_meaning }])),
     ...Object.fromEntries((p3.characters || []).map(c =>
       [c.character, { pinyin: c.pinyin, meaning: c.meaning }])),
+    // Characters 2 keeps the same facts under different keys. Without these
+    // its Write part would show a bare character with no reading at all.
+    ...Object.fromEntries((lc.part1_blocks?.blocks || []).map(x =>
+      [x.character, { pinyin: x.pinyin, meaning: x.meaning }])),
+    ...Object.fromEntries((lc.part2_components?.components || []).flatMap(c =>
+      [[c.from.character, { pinyin: c.from.pinyin, meaning: c.from.meaning }],
+       ...c.characters.map(x => [x.character, { pinyin: x.pinyin, meaning: x.meaning }])])),
+    ...Object.fromEntries((lc.part3_dialogue?.characters || []).map(x =>
+      [x.character, { pinyin: x.pinyin, meaning: x.meaning }])),
   };
 
   // Every reading this lesson knows, so audio never has to guess at a
@@ -973,23 +1049,92 @@ export default function CharacterLessonScreen({
         .flatMap(st => st.examples || [])
         .map(ex => [ex.character, ex.pinyin]),
     ),
+    // Characters 2 keeps its readings in different places.
+    ...Object.fromEntries((lc.part1_blocks?.blocks || []).map(x => [x.character, x.pinyin])),
+    ...Object.fromEntries((lc.part2_components?.components || []).flatMap(c =>
+      [[c.from.character, c.from.pinyin], ...c.characters.map(x => [x.character, x.pinyin])])),
+    ...Object.fromEntries((lc.part3_dialogue?.words || []).map(w => [w.word, w.pinyin])),
+    ...Object.fromEntries((lc.part3_dialogue?.dialogues || [])
+      .flatMap(d => d.lines.map(l => [l.text, l.pinyin]))),
   };
   // Fall back to the course-wide lookup: a lesson often uses a character
   // taught elsewhere (Lesson 4's 儿子 needs 子 from Lesson 6).
   const pinyinFor = (t) => pinyinMap[t] || getCharacterReading(t);
 
-  // Every Learn part except Write. If these are all ticked, finishing Write
-  // completes the section, so its button can head straight for Practice.
-  const otherPartsDone = [0, 1, 2, 3].every(n => partsDone.includes(n));
-  const canGoToPractice = learnDone || otherPartsDone;
 
-  const handleWriteFinished = () => {
-    onPartDone?.(4);
-    if (canGoToPractice) onLearnComplete?.();   // -> Practice, first stage still outstanding
-    else setOpenPart(null);                     // other parts remain, so back to the list
-  };
+  // Characters Foundations 2 teaches components and usage rather than strokes,
+  // so its lessons carry a different set of parts. Part 4 is the exception:
+  // writing is taught exactly as it was in lessons 1-10, same WritePart.
+  const b1 = lc.part1_blocks     || null;
+  const b2 = lc.part2_components || null;
+  const b3 = lc.part3_dialogue   || null;
+  const b5 = lc.part5_culture    || null;
+  const isPartTwo = Boolean(b1 || b2 || b3 || b5);
+  const writeTwo = isPartTwo ? (lc.part4_write || {}) : {};
 
-  const SLIDES = [
+  const SLIDES_TWO = [
+    {
+      part: b1 || {},
+      body: (
+        <>
+          {(b1?.blocks || []).map(x => <BlockCard key={x.character} item={x} />)}
+          {b1?.match ? <MatchCard item={b1.match} /> : null}
+        </>
+      ),
+    },
+    {
+      part: b2 || {},
+      body: (
+        <>
+          {b2?.caveat ? <Text style={s.intro}>{b2.caveat}</Text> : null}
+          {(b2?.components || []).map(x => <ComponentCard key={x.radical} item={x} />)}
+          {b2?.group ? <GroupCheck item={b2.group} /> : null}
+        </>
+      ),
+    },
+    {
+      part: b3 || {},
+      body: (
+        <>
+          {/* characters, then the words they build, then the dialogues */}
+          {(b3?.characters || []).map(c => <CharacterIntroCard key={c.character} item={c} />)}
+          {(b3?.words || []).map(w => <WordCard key={w.word} item={w} />)}
+          {/* A few of those words, said aloud. */}
+          {b3?.read_aloud ? (
+            <View style={s.card}>
+              <Text style={s.structureQ}>{b3.read_aloud.title}</Text>
+              {b3.read_aloud.intro ? <Text style={s.body}>{b3.read_aloud.intro}</Text> : null}
+              {b3.read_aloud.items.map(x => <ReadAloud key={x.text} item={x} />)}
+            </View>
+          ) : null}
+          {(b3?.dialogues || []).map((d, i) => <DialogueCard key={`${d.title}-${i}`} item={d} />)}
+        </>
+      ),
+    },
+    ...((writeTwo.characters || []).length
+      ? [{
+          part: writeTwo,
+          noScroll: true,
+          body: (
+            <WritePart
+              showPinyin={false}
+              chars={writeTwo.characters}
+              infoFor={(c) => charInfo[c]}
+              onBack={() => setOpenPart(null)}
+              onAllDone={handleWriteFinished}
+              completesLearn={writeCompletesLearn}
+              hasNextPart={writeHasNextPart}
+              nextLabel={nextPartLabel}
+              nextLabel={nextPartLabel}
+              canvasSize={writeCanvas}
+            />
+          ),
+        }]
+      : []),
+    { part: b5 || {}, body: b5 ? <CultureCard item={b5} /> : null },
+  ];
+
+  const SLIDES_ONE = [
     {
       part: p1,
       body: (
@@ -1038,7 +1183,8 @@ export default function CharacterLessonScreen({
               infoFor={(c) => charInfo[c]}
               onBack={() => setOpenPart(null)}
               onAllDone={handleWriteFinished}
-              canGoToPractice={canGoToPractice}
+              completesLearn={writeCompletesLearn}
+              hasNextPart={writeHasNextPart}
               canvasSize={writeCanvas}
             />
           ),
@@ -1046,15 +1192,53 @@ export default function CharacterLessonScreen({
       : []),
   ];
 
+  const SLIDES = isPartTwo ? SLIDES_TWO : SLIDES_ONE;
+
+  // Write is the LAST part in Characters 1 and the FOURTH in Characters 2,
+  // where a culture part follows it. Its index is worked out from the slide
+  // list rather than assumed — hard-coding 4 ticked the wrong part in the
+  // second half, which left Practice locked.
+  const writeIndex = SLIDES.findIndex(sl => sl.noScroll);
+
+  // What finishing Write will actually do, which is what its button says.
+  // A following part always wins: in Characters 2 the culture part comes
+  // after writing, so Write hands on to it rather than skipping to Practice.
+  const writeHasNextPart = writeIndex >= 0 && writeIndex + 1 < SLIDES.length;
+  const writeCompletesLearn =
+    !writeHasNextPart &&
+    writeIndex >= 0 &&
+    SLIDES.every((_, i) => i === writeIndex || partsDone.includes(i));
+  const nextPartLabel = writeHasNextPart
+    ? `Go to Part ${writeIndex + 2}${SLIDES[writeIndex + 1]?.part?.title ? ` · ${SLIDES[writeIndex + 1].part.title}` : ''} →`
+    : '';
+
   // Icons and accent colours for the stage list, matching how the HSK levels
   // present their practice stages. Names and blurbs come from the lesson data.
-  const PART_META = [
-    { icon: '👁',  color: '#5E789F' },
-    { icon: '🧱',  color: '#38529D' },
-    { icon: '📖',  color: '#25523D' },
-    { icon: '🧩',  color: '#b87243' },
-    { icon: '✍️',  color: WARM_ORANGE },
-  ];
+  const PART_META = isPartTwo
+    ? [
+        { icon: '👁',  color: '#5E789F' },   // 独体字
+        { icon: '🧩',  color: '#b87243' },   // 部件与部首
+        { icon: '💬',  color: '#25523D' },   // 使用
+        { icon: '✍️',  color: WARM_ORANGE }, // 书写
+        { icon: '🔍',  color: '#6B4FA0' },   // 汉字探秘
+      ]
+    : [
+        { icon: '👁',  color: '#5E789F' },
+        { icon: '🧱',  color: '#38529D' },
+        { icon: '📖',  color: '#25523D' },
+        { icon: '🧩',  color: '#b87243' },
+        { icon: '✍️',  color: WARM_ORANGE },
+      ];
+
+  // Finishing Write is no different from finishing any other part: tick it,
+  // then either move on or hand off to Practice. finishPart already does both.
+  //
+  // A function declaration, not a const arrow: the SLIDES array above passes
+  // this to WritePart, and an arrow declared here would still be in its
+  // temporal dead zone when that array is built.
+  function handleWriteFinished() {
+    if (writeIndex >= 0) finishPart(writeIndex);
+  }
 
   const allPartsDone = SLIDES.every((_, i) => partsDone.includes(i));
 
@@ -1154,8 +1338,14 @@ export default function CharacterLessonScreen({
           <TouchableOpacity style={s.navBtn} onPress={() => setOpenPart(null)} activeOpacity={0.8}>
             <Text style={s.navBtnText}>← Back</Text>
           </TouchableOpacity>
+          {/* Finishing the last outstanding part goes straight to Practice,
+              so the button says that rather than a bare "Done". */}
           <TouchableOpacity style={s.navPrimary} onPress={() => finishPart(openPart)} activeOpacity={0.85}>
-            <Text style={s.navPrimaryText}>Done ✓</Text>
+            <Text style={s.navPrimaryText}>
+              {SLIDES.every((_, i) => i === openPart || partsDone.includes(i))
+                ? '🎯 Go to Practice'
+                : 'Done ✓'}
+            </Text>
           </TouchableOpacity>
         </View>
 
@@ -1398,6 +1588,10 @@ const s = StyleSheet.create({
     backgroundColor: '#F1F7EE', borderRadius: 12, padding: 12,
   },
 
+  meaningHint: {
+    fontSize: 14, fontWeight: '700', color: SLATE_TEAL,
+    textDecorationLine: 'underline', textDecorationStyle: 'dashed',
+  },
   builtFrom:  { fontSize: 14, color: SLATE_TEAL, fontStyle: 'italic' },
 
   // Smaller action button, shared by every reveal / check affordance
@@ -1424,6 +1618,7 @@ const s = StyleSheet.create({
     paddingHorizontal: 20, paddingVertical: 13, borderRadius: 14,
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.35)', backgroundColor: CARD_WHITE,
   },
+  writeDoneBack: { fontSize: 15, fontWeight: '700', color: WARM_BROWN, marginTop: 4 },
   writeAgainText: { fontSize: 15, fontWeight: '700', color: WARM_BROWN },
 
   quizCta: {

@@ -1487,6 +1487,353 @@
         "竖提",
         "横斜钩"
       ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "大风",
+      "audio_text": "大风",
+      "pinyin": "dà fēng",
+      "meaning": "a strong wind",
+      "correct": "大风",
+      "choices": [
+        "大风"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "大雨",
+      "audio_text": "大雨",
+      "pinyin": "dà yǔ",
+      "meaning": "heavy rain",
+      "correct": "大雨",
+      "choices": [
+        "大雨"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "大地",
+      "audio_text": "大地",
+      "pinyin": "dà dì",
+      "meaning": "the earth",
+      "correct": "大地",
+      "choices": [
+        "大地"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "nine months",
+      "tiles": [
+        "九",
+        "个",
+        "月",
+        "飞"
+      ],
+      "answer": [
+        "九",
+        "个",
+        "月"
+      ],
+      "result": "九个月",
+      "pinyin": "jiǔ ge yuè",
+      "correct": "九个月",
+      "choices": [
+        "九个月"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "how many people",
+      "tiles": [
+        "几",
+        "个",
+        "人",
+        "飞"
+      ],
+      "answer": [
+        "几",
+        "个",
+        "人"
+      ],
+      "result": "几个人",
+      "pinyin": "jǐ ge rén",
+      "correct": "几个人",
+      "choices": [
+        "几个人"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "a strong wind",
+      "tiles": [
+        "大",
+        "风",
+        "飞"
+      ],
+      "answer": [
+        "大",
+        "风"
+      ],
+      "result": "大风",
+      "pinyin": "dà fēng",
+      "correct": "大风",
+      "choices": [
+        "大风"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "飞",
+          "pinyin": "fēi",
+          "english": "to fly"
+        },
+        {
+          "id": 2,
+          "chinese": "九",
+          "pinyin": "jiǔ",
+          "english": "nine"
+        },
+        {
+          "id": 3,
+          "chinese": "以",
+          "pinyin": "yǐ",
+          "english": "by means of"
+        },
+        {
+          "id": 4,
+          "chinese": "风",
+          "pinyin": "fēng",
+          "english": "wind"
+        },
+        {
+          "id": 5,
+          "chinese": "几",
+          "pinyin": "jǐ",
+          "english": "how many"
+        }
+      ],
+      "correct": "char:飞九以风几",
+      "choices": [
+        "to fly",
+        "nine",
+        "by means of",
+        "wind",
+        "how many"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "以",
+          "pinyin": "yǐ",
+          "english": "by means of"
+        },
+        {
+          "id": 2,
+          "chinese": "风",
+          "pinyin": "fēng",
+          "english": "wind"
+        },
+        {
+          "id": 3,
+          "chinese": "几",
+          "pinyin": "jǐ",
+          "english": "how many"
+        },
+        {
+          "id": 4,
+          "chinese": "可",
+          "pinyin": "kě",
+          "english": "can / may"
+        },
+        {
+          "id": 5,
+          "chinese": "机",
+          "pinyin": "jī",
+          "english": "machine"
+        }
+      ],
+      "correct": "char:以风几可机",
+      "choices": [
+        "by means of",
+        "wind",
+        "how many",
+        "can / may",
+        "machine"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "大风",
+          "pinyin": "dà fēng",
+          "english": "a strong wind"
+        },
+        {
+          "id": 2,
+          "chinese": "大雨",
+          "pinyin": "dà yǔ",
+          "english": "heavy rain"
+        },
+        {
+          "id": 3,
+          "chinese": "大地",
+          "pinyin": "dà dì",
+          "english": "the earth"
+        },
+        {
+          "id": 4,
+          "chinese": "九月",
+          "pinyin": "jiǔ yuè",
+          "english": "September"
+        },
+        {
+          "id": 5,
+          "chinese": "九个月",
+          "pinyin": "jiǔ ge yuè",
+          "english": "nine months"
+        }
+      ],
+      "correct": "word:大风大雨大地九月九个月",
+      "choices": [
+        "a strong wind",
+        "heavy rain",
+        "the earth",
+        "September",
+        "nine months"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "九天",
+          "pinyin": "jiǔ tiān",
+          "english": "nine days"
+        },
+        {
+          "id": 2,
+          "chinese": "几个人",
+          "pinyin": "jǐ ge rén",
+          "english": "how many people"
+        },
+        {
+          "id": 3,
+          "chinese": "几月",
+          "pinyin": "jǐ yuè",
+          "english": "which month"
+        },
+        {
+          "id": 4,
+          "chinese": "飞机",
+          "pinyin": "fēijī",
+          "english": "aeroplane"
+        },
+        {
+          "id": 5,
+          "chinese": "可以",
+          "pinyin": "kěyǐ",
+          "english": "can / may"
+        }
+      ],
+      "correct": "word:九天几个人几月飞机可以",
+      "choices": [
+        "nine days",
+        "how many people",
+        "which month",
+        "aeroplane",
+        "can / may"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "大",
+        null
+      ],
+      "correct": "风",
+      "choices": [
+        "风",
+        "九",
+        "几",
+        "以"
+      ],
+      "result_word": "大风",
+      "result_pinyin": "dà fēng",
+      "result_meaning": "a strong wind",
+      "audio_text": "大风"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "九",
+        null,
+        "月"
+      ],
+      "correct": "个",
+      "choices": [
+        "个",
+        "天",
+        "人",
+        "风"
+      ],
+      "result_word": "九个月",
+      "result_pinyin": "jiǔ ge yuè",
+      "result_meaning": "nine months",
+      "audio_text": "九个月"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "几",
+        null
+      ],
+      "correct": "月",
+      "choices": [
+        "月",
+        "人",
+        "天",
+        "风"
+      ],
+      "result_word": "几月",
+      "result_pinyin": "jǐ yuè",
+      "result_meaning": "which month",
+      "audio_text": "几月"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "飞",
+        null
+      ],
+      "correct": "机",
+      "choices": [
+        "机",
+        "风",
+        "九",
+        "以"
+      ],
+      "result_word": "飞机",
+      "result_pinyin": "fēijī",
+      "result_meaning": "aeroplane",
+      "audio_text": "飞机"
     }
   ]
 }

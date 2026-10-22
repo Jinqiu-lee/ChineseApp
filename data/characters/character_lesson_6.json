@@ -1309,6 +1309,352 @@
         "斜钩",
         "卧钩"
       ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "小心",
+      "audio_text": "小心",
+      "pinyin": "xiǎoxīn",
+      "meaning": "be careful",
+      "correct": "小心",
+      "choices": [
+        "小心"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "手心",
+      "audio_text": "手心",
+      "pinyin": "shǒuxīn",
+      "meaning": "the palm of the hand",
+      "correct": "手心",
+      "choices": [
+        "手心"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "女子",
+      "audio_text": "女子",
+      "pinyin": "nǚzǐ",
+      "meaning": "a girl / woman",
+      "correct": "女子",
+      "choices": [
+        "女子"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "beautiful scenery",
+      "tiles": [
+        "好",
+        "山",
+        "好",
+        "水",
+        "心"
+      ],
+      "answer": [
+        "好",
+        "山",
+        "好",
+        "水"
+      ],
+      "result": "好山好水",
+      "pinyin": "hǎo shān hǎo shuǐ",
+      "correct": "好山好水",
+      "choices": [
+        "好山好水"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "be careful",
+      "tiles": [
+        "小",
+        "心",
+        "子"
+      ],
+      "answer": [
+        "小",
+        "心"
+      ],
+      "result": "小心",
+      "pinyin": "xiǎoxīn",
+      "correct": "小心",
+      "choices": [
+        "小心"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "the palm of the hand",
+      "tiles": [
+        "手",
+        "心",
+        "子"
+      ],
+      "answer": [
+        "手",
+        "心"
+      ],
+      "result": "手心",
+      "pinyin": "shǒuxīn",
+      "correct": "手心",
+      "choices": [
+        "手心"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "心",
+          "pinyin": "xīn",
+          "english": "heart"
+        },
+        {
+          "id": 2,
+          "chinese": "我",
+          "pinyin": "wǒ",
+          "english": "I / me"
+        },
+        {
+          "id": 3,
+          "chinese": "了",
+          "pinyin": "le",
+          "english": "(completed action)"
+        },
+        {
+          "id": 4,
+          "chinese": "子",
+          "pinyin": "zǐ",
+          "english": "child"
+        },
+        {
+          "id": 5,
+          "chinese": "手",
+          "pinyin": "shǒu",
+          "english": "hand"
+        }
+      ],
+      "correct": "char:心我了子手",
+      "choices": [
+        "heart",
+        "I / me",
+        "(completed action)",
+        "child",
+        "hand"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "我",
+          "pinyin": "wǒ",
+          "english": "I / me"
+        },
+        {
+          "id": 2,
+          "chinese": "了",
+          "pinyin": "le",
+          "english": "(completed action)"
+        },
+        {
+          "id": 3,
+          "chinese": "子",
+          "pinyin": "zǐ",
+          "english": "child"
+        },
+        {
+          "id": 4,
+          "chinese": "手",
+          "pinyin": "shǒu",
+          "english": "hand"
+        },
+        {
+          "id": 5,
+          "chinese": "好",
+          "pinyin": "hǎo",
+          "english": "good"
+        }
+      ],
+      "correct": "char:我了子手好",
+      "choices": [
+        "I / me",
+        "(completed action)",
+        "child",
+        "hand",
+        "good"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "小心",
+          "pinyin": "xiǎoxīn",
+          "english": "be careful"
+        },
+        {
+          "id": 2,
+          "chinese": "手心",
+          "pinyin": "shǒuxīn",
+          "english": "the palm of the hand"
+        },
+        {
+          "id": 3,
+          "chinese": "女子",
+          "pinyin": "nǚzǐ",
+          "english": "a girl / woman"
+        },
+        {
+          "id": 4,
+          "chinese": "女儿",
+          "pinyin": "nǚ'ér",
+          "english": "daughter"
+        },
+        {
+          "id": 5,
+          "chinese": "子女",
+          "pinyin": "zǐnǚ",
+          "english": "children"
+        }
+      ],
+      "correct": "word:小心手心女子女儿子女",
+      "choices": [
+        "be careful",
+        "the palm of the hand",
+        "a girl / woman",
+        "daughter",
+        "children"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "女儿",
+          "pinyin": "nǚ'ér",
+          "english": "daughter"
+        },
+        {
+          "id": 2,
+          "chinese": "子女",
+          "pinyin": "zǐnǚ",
+          "english": "children"
+        },
+        {
+          "id": 3,
+          "chinese": "好人",
+          "pinyin": "hǎorén",
+          "english": "a good person"
+        },
+        {
+          "id": 4,
+          "chinese": "好山好水",
+          "pinyin": "hǎo shān hǎo shuǐ",
+          "english": "beautiful scenery"
+        },
+        {
+          "id": 5,
+          "chinese": "你好",
+          "pinyin": "nǐ hǎo",
+          "english": "hello"
+        }
+      ],
+      "correct": "word:女儿子女好人好山好水你好",
+      "choices": [
+        "daughter",
+        "children",
+        "a good person",
+        "beautiful scenery",
+        "hello"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "手",
+        null
+      ],
+      "correct": "心",
+      "choices": [
+        "心",
+        "子",
+        "手",
+        "我"
+      ],
+      "result_word": "手心",
+      "result_pinyin": "shǒuxīn",
+      "result_meaning": "the palm of the hand",
+      "audio_text": "手心"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "子",
+        null
+      ],
+      "correct": "女",
+      "choices": [
+        "女",
+        "子",
+        "心",
+        "手"
+      ],
+      "result_word": "子女",
+      "result_pinyin": "zǐnǚ",
+      "result_meaning": "children",
+      "audio_text": "子女"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "好",
+        null
+      ],
+      "correct": "人",
+      "choices": [
+        "人",
+        "子",
+        "心",
+        "我"
+      ],
+      "result_word": "好人",
+      "result_pinyin": "hǎorén",
+      "result_meaning": "a good person",
+      "audio_text": "好人"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "你",
+        null
+      ],
+      "correct": "好",
+      "choices": [
+        "好",
+        "心",
+        "子",
+        "我"
+      ],
+      "result_word": "你好",
+      "result_pinyin": "nǐ hǎo",
+      "result_meaning": "hello",
+      "audio_text": "你好"
     }
   ]
 }

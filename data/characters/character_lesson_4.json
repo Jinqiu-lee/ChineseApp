@@ -1302,6 +1302,353 @@
         "横撇",
         "提"
       ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "七月",
+      "audio_text": "七月",
+      "pinyin": "qī yuè",
+      "meaning": "July",
+      "correct": "七月",
+      "choices": [
+        "七月"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "七个月",
+      "audio_text": "七个月",
+      "pinyin": "qī ge yuè",
+      "meaning": "seven months",
+      "correct": "七个月",
+      "choices": [
+        "七个月"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "七个人",
+      "audio_text": "七个人",
+      "pinyin": "qī ge rén",
+      "meaning": "seven people",
+      "correct": "七个人",
+      "choices": [
+        "七个人"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "seven months",
+      "tiles": [
+        "七",
+        "个",
+        "月",
+        "习"
+      ],
+      "answer": [
+        "七",
+        "个",
+        "月"
+      ],
+      "result": "七个月",
+      "pinyin": "qī ge yuè",
+      "correct": "七个月",
+      "choices": [
+        "七个月"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "seven people",
+      "tiles": [
+        "七",
+        "个",
+        "人",
+        "习"
+      ],
+      "answer": [
+        "七",
+        "个",
+        "人"
+      ],
+      "result": "七个人",
+      "pinyin": "qī ge rén",
+      "correct": "七个人",
+      "choices": [
+        "七个人"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "July",
+      "tiles": [
+        "七",
+        "月",
+        "习"
+      ],
+      "answer": [
+        "七",
+        "月"
+      ],
+      "result": "七月",
+      "pinyin": "qī yuè",
+      "correct": "七月",
+      "choices": [
+        "七月"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "习",
+          "pinyin": "xí",
+          "english": "to practise"
+        },
+        {
+          "id": 2,
+          "chinese": "水",
+          "pinyin": "shuǐ",
+          "english": "water"
+        },
+        {
+          "id": 3,
+          "chinese": "儿",
+          "pinyin": "ér",
+          "english": "child / son"
+        },
+        {
+          "id": 4,
+          "chinese": "七",
+          "pinyin": "qī",
+          "english": "seven"
+        },
+        {
+          "id": 5,
+          "chinese": "虫",
+          "pinyin": "chóng",
+          "english": "insect"
+        }
+      ],
+      "correct": "char:习水儿七虫",
+      "choices": [
+        "to practise",
+        "water",
+        "child / son",
+        "seven",
+        "insect"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "水",
+          "pinyin": "shuǐ",
+          "english": "water"
+        },
+        {
+          "id": 2,
+          "chinese": "儿",
+          "pinyin": "ér",
+          "english": "child / son"
+        },
+        {
+          "id": 3,
+          "chinese": "七",
+          "pinyin": "qī",
+          "english": "seven"
+        },
+        {
+          "id": 4,
+          "chinese": "虫",
+          "pinyin": "chóng",
+          "english": "insect"
+        },
+        {
+          "id": 5,
+          "chinese": "地",
+          "pinyin": "dì",
+          "english": "earth / ground"
+        }
+      ],
+      "correct": "char:水儿七虫地",
+      "choices": [
+        "water",
+        "child / son",
+        "seven",
+        "insect",
+        "earth / ground"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "七月",
+          "pinyin": "qī yuè",
+          "english": "July"
+        },
+        {
+          "id": 2,
+          "chinese": "七个月",
+          "pinyin": "qī ge yuè",
+          "english": "seven months"
+        },
+        {
+          "id": 3,
+          "chinese": "七个人",
+          "pinyin": "qī ge rén",
+          "english": "seven people"
+        },
+        {
+          "id": 4,
+          "chinese": "大地",
+          "pinyin": "dà dì",
+          "english": "the earth"
+        },
+        {
+          "id": 5,
+          "chinese": "大水",
+          "pinyin": "dà shuǐ",
+          "english": "a flood"
+        }
+      ],
+      "correct": "word:七月七个月七个人大地大水",
+      "choices": [
+        "July",
+        "seven months",
+        "seven people",
+        "the earth",
+        "a flood"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "大地",
+          "pinyin": "dà dì",
+          "english": "the earth"
+        },
+        {
+          "id": 2,
+          "chinese": "大水",
+          "pinyin": "dà shuǐ",
+          "english": "a flood"
+        },
+        {
+          "id": 3,
+          "chinese": "小虫",
+          "pinyin": "xiǎo chóng",
+          "english": "a little insect"
+        },
+        {
+          "id": 4,
+          "chinese": "儿子",
+          "pinyin": "ér zi",
+          "english": "son"
+        },
+        {
+          "id": 5,
+          "chinese": "学习",
+          "pinyin": "xuéxí",
+          "english": "to study"
+        }
+      ],
+      "correct": "word:大地大水小虫儿子学习",
+      "choices": [
+        "the earth",
+        "a flood",
+        "a little insect",
+        "son",
+        "to study"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "七",
+        null,
+        "人"
+      ],
+      "correct": "个",
+      "choices": [
+        "个",
+        "月",
+        "水",
+        "地"
+      ],
+      "result_word": "七个人",
+      "result_pinyin": "qī ge rén",
+      "result_meaning": "seven people",
+      "audio_text": "七个人"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "小",
+        null
+      ],
+      "correct": "虫",
+      "choices": [
+        "虫",
+        "水",
+        "地",
+        "儿"
+      ],
+      "result_word": "小虫",
+      "result_pinyin": "xiǎo chóng",
+      "result_meaning": "a little insect",
+      "audio_text": "小虫"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "儿",
+        null
+      ],
+      "correct": "子",
+      "choices": [
+        "子",
+        "儿",
+        "虫",
+        "七"
+      ],
+      "result_word": "儿子",
+      "result_pinyin": "ér zi",
+      "result_meaning": "son",
+      "audio_text": "儿子"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "学",
+        null
+      ],
+      "correct": "习",
+      "choices": [
+        "习",
+        "水",
+        "地",
+        "虫"
+      ],
+      "result_word": "学习",
+      "result_pinyin": "xuéxí",
+      "result_meaning": "to study",
+      "audio_text": "学习"
     }
   ]
 }

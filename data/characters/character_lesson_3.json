@@ -1453,6 +1453,333 @@
         "竖弯",
         "竖折"
       ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "太大",
+      "audio_text": "太大",
+      "pinyin": "tài dà",
+      "meaning": "too big",
+      "correct": "太大",
+      "choices": [
+        "太大"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "太小",
+      "audio_text": "太小",
+      "pinyin": "tài xiǎo",
+      "meaning": "too small",
+      "correct": "太小",
+      "choices": [
+        "太小"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "太少",
+      "audio_text": "太少",
+      "pinyin": "tài shǎo",
+      "meaning": "too few",
+      "correct": "太少",
+      "choices": [
+        "太少"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "four people",
+      "tiles": [
+        "四",
+        "个",
+        "人",
+        "山"
+      ],
+      "answer": [
+        "四",
+        "个",
+        "人"
+      ],
+      "result": "四个人",
+      "pinyin": "sì ge rén",
+      "correct": "四个人",
+      "choices": [
+        "四个人"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "too big",
+      "tiles": [
+        "太",
+        "大",
+        "山"
+      ],
+      "answer": [
+        "太",
+        "大"
+      ],
+      "result": "太大",
+      "pinyin": "tài dà",
+      "correct": "太大",
+      "choices": [
+        "太大"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "too small",
+      "tiles": [
+        "太",
+        "小",
+        "山"
+      ],
+      "answer": [
+        "太",
+        "小"
+      ],
+      "result": "太小",
+      "pinyin": "tài xiǎo",
+      "correct": "太小",
+      "choices": [
+        "太小"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "山",
+          "pinyin": "shān",
+          "english": "mountain"
+        },
+        {
+          "id": 2,
+          "chinese": "四",
+          "pinyin": "sì",
+          "english": "four"
+        },
+        {
+          "id": 3,
+          "chinese": "小",
+          "pinyin": "xiǎo",
+          "english": "small"
+        },
+        {
+          "id": 4,
+          "chinese": "水",
+          "pinyin": "shuǐ",
+          "english": "water"
+        },
+        {
+          "id": 5,
+          "chinese": "火",
+          "pinyin": "huǒ",
+          "english": "fire"
+        }
+      ],
+      "correct": "char:山四小水火",
+      "choices": [
+        "mountain",
+        "four",
+        "small",
+        "water",
+        "fire"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "小",
+          "pinyin": "xiǎo",
+          "english": "small"
+        },
+        {
+          "id": 2,
+          "chinese": "水",
+          "pinyin": "shuǐ",
+          "english": "water"
+        },
+        {
+          "id": 3,
+          "chinese": "火",
+          "pinyin": "huǒ",
+          "english": "fire"
+        },
+        {
+          "id": 4,
+          "chinese": "少",
+          "pinyin": "shǎo",
+          "english": "few / little"
+        },
+        {
+          "id": 5,
+          "chinese": "太",
+          "pinyin": "tài",
+          "english": "too / extremely"
+        }
+      ],
+      "correct": "char:小水火少太",
+      "choices": [
+        "small",
+        "water",
+        "fire",
+        "few / little",
+        "too / extremely"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "太大",
+          "pinyin": "tài dà",
+          "english": "too big"
+        },
+        {
+          "id": 2,
+          "chinese": "太小",
+          "pinyin": "tài xiǎo",
+          "english": "too small"
+        },
+        {
+          "id": 3,
+          "chinese": "太少",
+          "pinyin": "tài shǎo",
+          "english": "too few"
+        },
+        {
+          "id": 4,
+          "chinese": "大山",
+          "pinyin": "dà shān",
+          "english": "a big mountain"
+        },
+        {
+          "id": 5,
+          "chinese": "大火",
+          "pinyin": "dà huǒ",
+          "english": "a big fire"
+        }
+      ],
+      "correct": "word:太大太小太少大山大火",
+      "choices": [
+        "too big",
+        "too small",
+        "too few",
+        "a big mountain",
+        "a big fire"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "小火",
+          "pinyin": "xiǎo huǒ",
+          "english": "a small fire"
+        },
+        {
+          "id": 2,
+          "chinese": "大水",
+          "pinyin": "dà shuǐ",
+          "english": "a flood"
+        },
+        {
+          "id": 3,
+          "chinese": "四天",
+          "pinyin": "sì tiān",
+          "english": "four days"
+        },
+        {
+          "id": 4,
+          "chinese": "四月",
+          "pinyin": "sì yuè",
+          "english": "April"
+        },
+        {
+          "id": 5,
+          "chinese": "四个人",
+          "pinyin": "sì ge rén",
+          "english": "four people"
+        }
+      ],
+      "correct": "word:小火大水四天四月四个人",
+      "choices": [
+        "a small fire",
+        "a flood",
+        "four days",
+        "April",
+        "four people"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "太",
+        null
+      ],
+      "correct": "小",
+      "choices": [
+        "小",
+        "少",
+        "山",
+        "火"
+      ],
+      "result_word": "太小",
+      "result_pinyin": "tài xiǎo",
+      "result_meaning": "too small",
+      "audio_text": "太小"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "大",
+        null
+      ],
+      "correct": "水",
+      "choices": [
+        "水",
+        "山",
+        "火",
+        "目"
+      ],
+      "result_word": "大水",
+      "result_pinyin": "dà shuǐ",
+      "result_meaning": "a flood",
+      "audio_text": "大水"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "四",
+        null,
+        "人"
+      ],
+      "correct": "个",
+      "choices": [
+        "个",
+        "天",
+        "月",
+        "山"
+      ],
+      "result_word": "四个人",
+      "result_pinyin": "sì ge rén",
+      "result_meaning": "four people",
+      "audio_text": "四个人"
     }
   ]
 }

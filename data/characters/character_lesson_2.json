@@ -1341,6 +1341,301 @@
         "横折",
         "点"
       ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "六月",
+      "audio_text": "六月",
+      "pinyin": "liù yuè",
+      "meaning": "June",
+      "correct": "六月",
+      "choices": [
+        "六月"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "三月",
+      "audio_text": "三月",
+      "pinyin": "sān yuè",
+      "meaning": "March",
+      "correct": "三月",
+      "choices": [
+        "三月"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "八月",
+      "audio_text": "八月",
+      "pinyin": "bā yuè",
+      "meaning": "August",
+      "correct": "八月",
+      "choices": [
+        "八月"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "six months",
+      "tiles": [
+        "六",
+        "个",
+        "月",
+        "五"
+      ],
+      "answer": [
+        "六",
+        "个",
+        "月"
+      ],
+      "result": "六个月",
+      "pinyin": "liù ge yuè",
+      "correct": "六个月",
+      "choices": [
+        "六个月"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "one month",
+      "tiles": [
+        "一",
+        "个",
+        "月",
+        "五"
+      ],
+      "answer": [
+        "一",
+        "个",
+        "月"
+      ],
+      "result": "一个月",
+      "pinyin": "yí ge yuè",
+      "correct": "一个月",
+      "choices": [
+        "一个月"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "five months",
+      "tiles": [
+        "五",
+        "个",
+        "月",
+        "六"
+      ],
+      "answer": [
+        "五",
+        "个",
+        "月"
+      ],
+      "result": "五个月",
+      "pinyin": "wǔ ge yuè",
+      "correct": "五个月",
+      "choices": [
+        "五个月"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "六",
+          "pinyin": "liù",
+          "english": "six"
+        },
+        {
+          "id": 2,
+          "chinese": "口",
+          "pinyin": "kǒu",
+          "english": "mouth"
+        },
+        {
+          "id": 3,
+          "chinese": "月",
+          "pinyin": "yuè",
+          "english": "moon / month"
+        },
+        {
+          "id": 4,
+          "chinese": "五",
+          "pinyin": "wǔ",
+          "english": "five"
+        },
+        {
+          "id": 5,
+          "chinese": "日",
+          "pinyin": "rì",
+          "english": "sun / day"
+        }
+      ],
+      "correct": "char:六口月五日",
+      "choices": [
+        "six",
+        "mouth",
+        "moon / month",
+        "five",
+        "sun / day"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "月",
+          "pinyin": "yuè",
+          "english": "moon / month"
+        },
+        {
+          "id": 2,
+          "chinese": "五",
+          "pinyin": "wǔ",
+          "english": "five"
+        },
+        {
+          "id": 3,
+          "chinese": "日",
+          "pinyin": "rì",
+          "english": "sun / day"
+        },
+        {
+          "id": 4,
+          "chinese": "目",
+          "pinyin": "mù",
+          "english": "eye"
+        },
+        {
+          "id": 5,
+          "chinese": "耳",
+          "pinyin": "ěr",
+          "english": "ear"
+        }
+      ],
+      "correct": "char:月五日目耳",
+      "choices": [
+        "moon / month",
+        "five",
+        "sun / day",
+        "eye",
+        "ear"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "六月",
+          "pinyin": "liù yuè",
+          "english": "June"
+        },
+        {
+          "id": 2,
+          "chinese": "三月",
+          "pinyin": "sān yuè",
+          "english": "March"
+        },
+        {
+          "id": 3,
+          "chinese": "八月",
+          "pinyin": "bā yuè",
+          "english": "August"
+        },
+        {
+          "id": 4,
+          "chinese": "十月",
+          "pinyin": "shí yuè",
+          "english": "October"
+        },
+        {
+          "id": 5,
+          "chinese": "六个月",
+          "pinyin": "liù ge yuè",
+          "english": "six months"
+        }
+      ],
+      "correct": "word:六月三月八月十月六个月",
+      "choices": [
+        "June",
+        "March",
+        "August",
+        "October",
+        "six months"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "十月",
+          "pinyin": "shí yuè",
+          "english": "October"
+        },
+        {
+          "id": 2,
+          "chinese": "六个月",
+          "pinyin": "liù ge yuè",
+          "english": "six months"
+        },
+        {
+          "id": 3,
+          "chinese": "一个月",
+          "pinyin": "yí ge yuè",
+          "english": "one month"
+        },
+        {
+          "id": 4,
+          "chinese": "五个月",
+          "pinyin": "wǔ ge yuè",
+          "english": "five months"
+        },
+        {
+          "id": 5,
+          "chinese": "八个月",
+          "pinyin": "bā ge yuè",
+          "english": "eight months"
+        }
+      ],
+      "correct": "word:十月六个月一个月五个月八个月",
+      "choices": [
+        "October",
+        "six months",
+        "one month",
+        "five months",
+        "eight months"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "三",
+        null,
+        "月"
+      ],
+      "correct": "个",
+      "choices": [
+        "个",
+        "日",
+        "口",
+        "目"
+      ],
+      "result_word": "三个月",
+      "result_pinyin": "sān ge yuè",
+      "result_meaning": "three months",
+      "audio_text": "三个月"
     }
   ]
 }

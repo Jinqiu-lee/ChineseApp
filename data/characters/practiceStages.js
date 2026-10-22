@@ -2,9 +2,59 @@
 // Each stage draws from the lesson's recall_pool by question type, except the
 // Write stage which traces characters instead of answering questions.
 
-import { CHARACTER_LESSONS } from './index';
+import { CHARACTER_LESSONS, partForLesson } from './index';
 
 export const QUESTIONS_PER_STAGE = 12;
+
+// Characters Foundations 2 practises different things: there are no strokes to
+// recognise, so Stage 1 asks about single characters and radicals, Stage 2
+// about the compound characters built from them, and the final stage does the
+// job Recall does in Characters 1 — this lesson mixed with everything before.
+export const PRACTICE_STAGES_TWO = [
+  {
+    index: 0,
+    name: 'Radical Recognition',
+    desc: 'Single characters and the radicals they become',
+    icon: '🧩',
+    color: '#296614',
+    types: ['char_to_radical', 'char_to_meaning', 'matching', 'read_aloud'],
+  },
+  {
+    index: 1,
+    name: 'Character Recognition',
+    desc: 'The characters built from those parts',
+    icon: '🔍',
+    color: '#1467A3',
+    types: [
+      'char_to_pinyin', 'meaning_to_char', 'pinyin_to_char', 'audio_to_char',
+      'matching', 'word_build', 'sentence_build', 'read_aloud',
+    ],
+  },
+  {
+    index: 2,
+    name: 'Use',
+    desc: 'Words and dialogue from this lesson',
+    icon: '💬',
+    color: '#DE692F',
+    types: 'all',
+  },
+  {
+    index: 3,
+    name: 'Write',
+    desc: 'Write each character from memory',
+    icon: '✍️',
+    color: '#B63E2C',
+    kind: 'write',
+  },
+  {
+    index: 4,
+    name: 'Comprehensive',
+    desc: 'This lesson plus everything before it',
+    icon: '🏆',
+    color: '#6B4FA0',
+    kind: 'recall',
+  },
+];
 
 export const PRACTICE_STAGES = [
   {
@@ -21,7 +71,10 @@ export const PRACTICE_STAGES = [
     desc: 'Characters, pinyin, meaning and sound',
     icon: '📖',
     color: '#1467A3',
-    types: ['char_to_pinyin', 'char_to_meaning', 'meaning_to_char', 'pinyin_to_char', 'audio_to_char'],
+    types: [
+      'char_to_pinyin', 'char_to_meaning', 'meaning_to_char', 'pinyin_to_char',
+      'audio_to_char', 'matching', 'word_build', 'sentence_build', 'read_aloud',
+    ],
   },
   {
     index: 2,
@@ -49,10 +102,16 @@ export const PRACTICE_STAGES = [
   },
 ];
 
-// Recall only exists once there is something earlier to revisit, so Lesson 1
-// has four stages and every lesson after it has five.
+/** The stage list for whichever half of the course a lesson belongs to. */
+export function stagesFor(lessonId) {
+  return partForLesson(lessonId) === 2 ? PRACTICE_STAGES_TWO : PRACTICE_STAGES;
+}
+
+// Every lesson has all five stages. The first lesson of a half has nothing
+// earlier to revisit, so its final stage mixes that lesson's own questions
+// instead — buildRecallMix already falls back that way.
 export function stagesForLesson(lessonId) {
-  return PRACTICE_STAGES.filter(st => st.kind !== 'recall' || lessonId > 1);
+  return stagesFor(lessonId);
 }
 
 export function practiceStageCount(lessonId) {
@@ -131,9 +190,41 @@ export function useWordsForLesson(lessonData) {
 
 const answerOf = (q) => q.correct ?? q.prompt_char ?? q.audio_text;
 
+// Question types that are answered by doing rather than by picking one of four.
+// Left to chance they are rare — there are far fewer of them than there are
+// multiple-choice questions — so every stage reserves a few slots for them.
+const RICH_TYPES = new Set(['matching', 'sentence_build', 'read_aloud', 'word_build']);
+const RICH_PER_STAGE = 3;
+
+/**
+ * Keep a stage from being all multiple choice.
+ *
+ * Reserves up to RICH_PER_STAGE slots for matching / sentence-building /
+ * speaking when the pool has any, then fills the rest the usual way.
+ */
+function withVariety(matching_, count) {
+  const rich = matching_.filter(q => RICH_TYPES.has(q.type));
+  const plain = matching_.filter(q => !RICH_TYPES.has(q.type));
+  if (!rich.length) return sampleByCoverage(matching_, count);
+
+  const wanted = Math.min(RICH_PER_STAGE, rich.length, Math.max(1, Math.floor(count / 4)));
+  const picked = sampleByCoverage(rich, wanted);
+  return shuffle([...picked, ...sampleByCoverage(plain, count - picked.length)]);
+}
+
 // Which word a question is actually about. Not always `correct`: for
 // char_to_meaning the answer is the English meaning, and the word being tested
 // is in prompt_char instead.
+// Every Use-word a single question asks about. Most cover one; a matching
+// question covers all five of its pairs.
+function wordsCoveredBy(q, words) {
+  if (q.type === 'matching') {
+    return (q.pairs || []).map(p => p.chinese).filter(w => words.has(w));
+  }
+  const one = subjectOf(q, words);
+  return one ? [one] : [];
+}
+
 function subjectOf(q, words) {
   for (const k of [q.correct, q.prompt_char, q.audio_text]) {
     if (k && words.has(k)) return k;
@@ -143,7 +234,7 @@ function subjectOf(q, words) {
 
 /** Questions for one practice stage. */
 export function questionsForStage(lessonData, stageIndex) {
-  const stage = PRACTICE_STAGES[stageIndex];
+  const stage = stagesFor(lessonData?.id || 1)[stageIndex];
   if (!stage) return [];
 
   if (stage.kind === 'write') return asWriteQuestions(writeCharsForStage(lessonData));
@@ -161,31 +252,61 @@ export function questionsForStage(lessonData, stageIndex) {
     // Without this a word can sit in the pool for good and never be drawn,
     // which is how 好山好水 went untested for an entire course.
     const words = new Set(useWordsForLesson(lessonData));
+
+    // Reserve a couple of the richer formats first. A word-matching question
+    // covers five words in one slot, so it helps the guarantee below rather
+    // than crowding it out.
+    const rich = matching.filter(q => RICH_TYPES.has(q.type));
+    let reserved = rich.length
+      ? sampleByCoverage(rich, Math.min(RICH_PER_STAGE, rich.length))
+      : [];
+
+    // Give back slots if the Use-words would no longer fit. The guarantee
+    // comes first: a word that is never asked about is a hole in the lesson,
+    // a stage with two rich questions instead of three is not.
+    const claimedBy = (qs) => {
+      const c = new Set();
+      for (const q of qs) for (const w of wordsCoveredBy(q, words)) c.add(w);
+      return c;
+    };
+    while (reserved.length) {
+      const need = [...words].filter(w => !claimedBy(reserved).has(w)).length;
+      if (reserved.length + need <= QUESTIONS_PER_STAGE) break;
+      reserved = reserved.slice(0, -1);
+    }
+
+    const claimed = claimedBy(reserved);
+
+    // Then make sure every remaining Use-word is asked about.
     const wordQs = [];
-    const claimed = new Set();
     for (const q of shuffle(matching)) {
+      if (reserved.includes(q)) continue;
       const w = subjectOf(q, words);
       if (w && !claimed.has(w)) { claimed.add(w); wordQs.push(q); }
     }
-    const guaranteed = wordQs.slice(0, QUESTIONS_PER_STAGE);
-    const rest = matching.filter(q => !guaranteed.includes(q) && !subjectOf(q, words));
+    const room = QUESTIONS_PER_STAGE - reserved.length;
+    const guaranteed = wordQs.slice(0, room);
+    const used = new Set([...reserved, ...guaranteed]);
+    const rest = matching.filter(q => !used.has(q) && !subjectOf(q, words));
     picked = shuffle([
+      ...reserved,
       ...guaranteed,
-      ...sampleByCoverage(rest, QUESTIONS_PER_STAGE - guaranteed.length),
+      ...sampleByCoverage(rest, room - guaranteed.length),
     ]);
   } else {
-    picked = sampleByCoverage(matching, QUESTIONS_PER_STAGE);
+    picked = withVariety(matching, QUESTIONS_PER_STAGE);
   }
 
   return picked.map(q => ({ ...q, choices: shuffle(q.choices || []) }));
 }
 
 export function writeCharsForStage(lessonData) {
-  return lessonData?.learn_content?.part5_write?.characters || [];
+  const lc = lessonData?.learn_content || {};
+  return (lc.part5_write || lc.part4_write)?.characters || [];
 }
 
-export function isWriteStage(stageIndex) {
-  return PRACTICE_STAGES[stageIndex]?.kind === 'write';
+export function isWriteStage(stageIndex, lessonId = 1) {
+  return stagesFor(lessonId)[stageIndex]?.kind === 'write';
 }
 
 // ── Recall stage ────────────────────────────────────────────────────────────
@@ -199,10 +320,13 @@ const RECALL_FROM_CURRENT = 8;   // roughly half; the rest comes from earlier le
 export function buildRecallMix(lessonData, length = RECALL_LENGTH) {
   const lessonId = lessonData?.id || 1;
 
-  const current = sampleByCoverage(lessonData?.recall_pool || [], RECALL_FROM_CURRENT);
+  const current = withVariety(lessonData?.recall_pool || [], RECALL_FROM_CURRENT);
 
+  // Revisit only within the same half: Characters 2 asks about radicals and
+  // words, and a stroke question from Lesson 3 would be off-topic there.
   const earlier = [];
-  for (let i = 1; i < lessonId; i++) {
+  const from = partForLesson(lessonId) === 2 ? 11 : 1;
+  for (let i = from; i < lessonId; i++) {
     const prev = CHARACTER_LESSONS[i];
     if (prev?.recall_pool) earlier.push(...prev.recall_pool);
   }
