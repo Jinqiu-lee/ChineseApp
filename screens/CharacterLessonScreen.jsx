@@ -12,6 +12,7 @@ import {
   BlockCard, MatchCard, ComponentCard, CharacterIntroCard, WordCard,
   DialogueCard, CultureCard, ReadAloud,
 } from '../components/characters/LessonTwoParts';
+import { Gloss } from '../components/characters/Gloss';
 import { getStrokeVisual, getRuleVisual, getStrokePinyin } from '../data/characters/strokeAssets';
 import { stagesForLesson, practiceStageCount, QUIZ_LENGTH } from '../data/characters/practiceStages';
 import { getCharacterReading } from '../data/characters';
@@ -881,11 +882,6 @@ function WritePart({
 
   const [finished, setFinished] = useState(false);
   const [rewrites, setRewrites] = useState(0);
-  const [showMeaning, setShowMeaning] = useState(false);
-
-  // Each new character starts hidden again.
-  useEffect(() => { setShowMeaning(false); }, [char]);
-
   const handleComplete = () => {
     if (advancing.current) return;
     advancing.current = true;
@@ -947,27 +943,19 @@ function WritePart({
         <View style={{ flex: 1 }}>
           <View style={s.titleRow}>
             <View style={s.titleStack}>
-              <Text style={s.bigName}>{char}</Text>
+              {/* Underlined: tap to hear it and to see what it means. The
+                  meaning stays hidden until asked for — writing 妈 from a
+                  prompt that already says "mum" is copying, not remembering. */}
+              <Gloss
+                text={char}
+                meaning={info.meaning}
+                style={s.bigName}
+                align="left"
+                onPress={() => speakChinese(char, 'female', info.pinyin)}
+              />
               {showPinyin && !!info.pinyin && <Text style={s.bigPinyin}>{info.pinyin}</Text>}
             </View>
-            <TouchableOpacity onPress={() => speakChinese(char, 'female', info.pinyin)} style={s.audioBtn} activeOpacity={0.7}>
-              <Text style={s.audioIcon}>🔊</Text>
-            </TouchableOpacity>
           </View>
-          {/* The meaning is the thing being recalled, so it stays hidden
-              until asked for — writing 妈 from a prompt that already says
-              "mum" is copying, not remembering. */}
-          {!!info.meaning && (
-            showMeaning ? (
-              <TouchableOpacity onPress={() => setShowMeaning(false)} activeOpacity={0.7}>
-                <Text style={s.meaningEn}>{info.meaning}</Text>
-              </TouchableOpacity>
-            ) : (
-              <TouchableOpacity onPress={() => setShowMeaning(true)} activeOpacity={0.7}>
-                <Text style={s.meaningHint}>tap for meaning</Text>
-              </TouchableOpacity>
-            )
-          )}
         </View>
       </View>
 
@@ -1087,7 +1075,9 @@ export default function CharacterLessonScreen({
       body: (
         <>
           {b2?.caveat ? <Text style={s.intro}>{b2.caveat}</Text> : null}
-          {(b2?.components || []).map(x => <ComponentCard key={x.radical} item={x} />)}
+          {(b2?.components || []).map(x => (
+            <ComponentCard key={x.radical} item={x} radicalAudio={b2.radical_audio} />
+          ))}
           {b2?.group ? <GroupCheck item={b2.group} /> : null}
         </>
       ),
@@ -1588,10 +1578,6 @@ const s = StyleSheet.create({
     backgroundColor: '#F1F7EE', borderRadius: 12, padding: 12,
   },
 
-  meaningHint: {
-    fontSize: 14, fontWeight: '700', color: SLATE_TEAL,
-    textDecorationLine: 'underline', textDecorationStyle: 'dashed',
-  },
   builtFrom:  { fontSize: 14, color: SLATE_TEAL, fontStyle: 'italic' },
 
   // Smaller action button, shared by every reveal / check affordance

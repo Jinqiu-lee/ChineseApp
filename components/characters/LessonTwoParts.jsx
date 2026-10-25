@@ -20,6 +20,7 @@ import {
 } from 'react-native';
 import StrokeAnimator from './StrokeAnimator';
 import { getLessonImage } from '../../data/characters/lessonImages';
+import { GlossSentence } from './Gloss';
 import { speakChinese } from '../../utils/tts';
 import { startRecording, stopAndTranscribe, calculateAccuracy } from '../../utils/speechRecognition';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../../constants/colors';
@@ -59,7 +60,7 @@ function Picture({ value, height, style, zoomable = true }) {
 
   return (
     <>
-      <TouchableOpacity onPress={() => setZoomed(true)} activeOpacity={0.9}>
+      <TouchableOpacity style={s.pictureTouch} onPress={() => setZoomed(true)} activeOpacity={0.9}>
         {img}
       </TouchableOpacity>
 
@@ -92,7 +93,16 @@ function Feedback({ picked, correct, explain }) {
 }
 
 // A row of short answers. Used by every check in this half.
-function Choices({ choices, correct, picked, onPick, big = false }) {
+// `audioFor` decides what a tapped answer says. A radical shape is not a
+// character — tapping 灬 or 氵 made the voice read it as something it is not —
+// so a question can map each shape to its spoken name, and anything with no
+// entry stays silent rather than saying the wrong thing.
+function say(c, audioFor) {
+  const a = audioFor ? audioFor(c) : { text: c };
+  if (a) speakChinese(a.text, 'female', a.pinyin);
+}
+
+function Choices({ choices, correct, picked, onPick, big = false, labelFor, audioFor }) {
   return (
     <View style={s.choiceRow}>
       {choices.map(c => {
@@ -105,14 +115,63 @@ function Choices({ choices, correct, picked, onPick, big = false }) {
               reveal && c === correct && s.choiceRight,
               reveal && picked === c && c !== correct && s.choiceWrong,
             ]}
-            onPress={() => { speakChinese(c); if (picked == null) onPick(c); }}
+            onPress={() => { say(c, audioFor); if (picked == null) onPick(c); }}
             activeOpacity={0.8}
           >
-            <Text style={big ? s.choiceTextBig : s.choiceText}>{c}</Text>
+            <Text style={big ? s.choiceTextBig : s.choiceText}>
+              {labelFor ? labelFor(c) : c}
+            </Text>
           </TouchableOpacity>
         );
       })}
     </View>
+  );
+}
+
+// A question with more than one right answer: 火 is the fire radical beside a
+// character and 灬 is the same radical beneath one, so both have to be picked.
+// Selections toggle, and nothing is marked until Check is pressed.
+function MultiChoices({ choices, correct, chosen, setChosen, checked, onCheck, big = false, audioFor }) {
+  return (
+    <>
+      <View style={s.choiceRow}>
+        {choices.map(c => {
+          const sel = chosen.includes(c);
+          const isRight = correct.includes(c);
+          return (
+            <TouchableOpacity
+              key={c}
+              style={[
+                s.choice,
+                sel && !checked && s.choiceChosen,
+                checked && isRight && s.choiceRight,
+                checked && sel && !isRight && s.choiceWrong,
+              ]}
+              onPress={() => {
+                say(c, audioFor);
+                if (checked) return;
+                setChosen(sel ? chosen.filter(x => x !== c) : [...chosen, c]);
+              }}
+              activeOpacity={0.8}
+            >
+              <Text style={big ? s.choiceTextBig : s.choiceText}>{c}</Text>
+            </TouchableOpacity>
+          );
+        })}
+      </View>
+      {!checked && (
+        <TouchableOpacity
+          style={[s.stepBtn, !chosen.length && s.stepBtnOff]}
+          disabled={!chosen.length}
+          onPress={onCheck}
+          activeOpacity={0.85}
+        >
+          <Text style={s.stepBtnText}>
+            {chosen.length ? `Check ${chosen.length} picked →` : 'Pick every shape it takes'}
+          </Text>
+        </TouchableOpacity>
+      )}
+    </>
   );
 }
 
@@ -172,18 +231,26 @@ export function BlockCard({ item }) {
 // The round-up at the end of Part 1: every picture against every character.
 export function MatchCard({ item }) {
   const [picked, setPicked] = useState({});
-  const chars = item.pairs.map(p => p.character);
+  // Rows and answers both came out in data order, so row 1's answer was always
+  // the first button and the card could be solved straight down the diagonal
+  // without looking at a single picture. Both are shuffled once per mount —
+  // once, not per render, or the buttons would move under the finger.
+  const [rows] = useState(() => shuffle(item.pairs));
+  const [answersFor] = useState(() => {
+    const chars = item.pairs.map(p => p.character);
+    return Object.fromEntries(item.pairs.map(p => [p.picture, shuffle(chars)]));
+  });
   return (
     <View style={[s.card, s.cardAccent]}>
       <Text style={s.q}>{item.question}</Text>
-      {item.pairs.map(pair => {
+      {rows.map(pair => {
         const got = picked[pair.picture];
         return (
           <View key={pair.picture} style={s.matchRow}>
             <View style={s.pictureBoxSmall}><Picture value={pair.picture} height={58} /></View>
             <View style={{ flex: 1 }}>
               <Choices
-                choices={chars}
+                choices={answersFor[pair.picture]}
                 correct={pair.character}
                 picked={got ?? null}
                 onPick={(c) => setPicked(p => ({ ...p, [pair.picture]: c }))}
@@ -200,9 +267,25 @@ export function MatchCard({ item }) {
 // ── Part 2 · 部件与部首 ──────────────────────────────────────────────────────
 // Revealed a step at a time: the radical, where it came from, the characters
 // that carry it, a guess at what they share, and only then the answer.
-export function ComponentCard({ item }) {
+// A radical does not always carry the same number of characters — Lesson 12's
+// 木字旁 group has two where the others have three — so the button says how
+// many this one actually has.
+const COUNT_WORD = ['', 'one', 'two', 'three', 'four', 'five', 'six'];
+
+export function ComponentCard({ item, radicalAudio }) {
   const [step, setStep] = useState(0);        // 0 shape · 1 characters · 2 find · 3 reveal
   const [found, setFound] = useState(null);
+  // A find question may have several right answers; those are gathered before
+  // being checked, rather than scored on the first tap.
+  const multi = Array.isArray(item.find?.correct);
+  const [chosen, setChosen] = useState([]);
+  const [checked, setChecked] = useState(false);
+  // Answers that are radical shapes speak the radical's name; fragments like
+  // 执 or 干 are not words and stay silent.
+  const findAudio = (c) => (radicalAudio || {})[c] || null;
+  const allRight = multi && checked
+    && chosen.length === item.find.correct.length
+    && chosen.every(c => item.find.correct.includes(c));
 
   return (
     <View style={s.card}>
@@ -231,7 +314,11 @@ export function ComponentCard({ item }) {
 
       {step === 0 && (
         <TouchableOpacity style={s.stepBtn} onPress={() => setStep(1)} activeOpacity={0.85}>
-          <Text style={s.stepBtnText}>Find it inside three characters →</Text>
+          <Text style={s.stepBtnText}>
+            {item.characters.length === 1
+              ? 'Find it inside this character →'
+              : `Find it inside ${COUNT_WORD[item.characters.length] || item.characters.length} characters →`}
+          </Text>
         </TouchableOpacity>
       )}
 
@@ -261,14 +348,42 @@ export function ComponentCard({ item }) {
       {step >= 2 && item.find && (
         <View style={{ gap: 10 }}>
           <Text style={s.q}>{item.find.question}</Text>
-          <Choices
-            choices={item.find.choices}
-            correct={item.find.correct}
-            picked={found}
-            onPick={(c) => { setFound(c); setStep(3); }}
-            big
-          />
-          <Feedback picked={found} correct={item.find.correct} />
+          {multi ? (
+            <>
+              <MultiChoices
+                choices={item.find.choices}
+                correct={item.find.correct}
+                chosen={chosen}
+                setChosen={setChosen}
+                checked={checked}
+                onCheck={() => { setChecked(true); setStep(3); }}
+                audioFor={findAudio}
+                big
+              />
+              {checked && (
+                <View style={[s.feedback, allRight ? s.feedbackRight : s.feedbackWrong]}>
+                  <Text style={s.feedbackIcon}>{allRight ? '✓' : '✕'}</Text>
+                  <Text style={[s.feedbackText, allRight ? s.feedbackTextRight : s.feedbackTextWrong]}>
+                    {allRight
+                      ? `Both — ${item.find.correct.join(' and ')}`
+                      : `Not quite — it is ${item.find.correct.join(' and ')}, both of them`}
+                  </Text>
+                </View>
+              )}
+            </>
+          ) : (
+            <>
+              <Choices
+                choices={item.find.choices}
+                correct={item.find.correct}
+                picked={found}
+                onPick={(c) => { setFound(c); setStep(3); }}
+                audioFor={findAudio}
+                big
+              />
+              <Feedback picked={found} correct={item.find.correct} />
+            </>
+          )}
         </View>
       )}
 
@@ -425,12 +540,26 @@ export function DialogueCard({ item }) {
 
   return (
     <View style={s.card}>
-      {getLessonImage(item.picture) ? (
+      {/* Most dialogues carry one picture. One that contrasts two things —
+          这是汗水 / 那是泪水 — carries two, shown side by side under the word
+          that points at each. */}
+      {(item.pictures || []).length ? (
+        <View style={s.picturePair}>
+          {item.pictures.map((p, i) => (
+            <View key={i} style={s.picturePairCell}>
+              <View style={s.pictureWide}><Picture value={p.picture} height={130} /></View>
+              {p.label ? <Text style={s.picturePairLabel}>{p.label}</Text> : null}
+              {p.caption ? <Text style={s.picturePairCaption}>{p.caption}</Text> : null}
+            </View>
+          ))}
+        </View>
+      ) : getLessonImage(item.picture) ? (
         <View style={s.pictureWide}><Picture value={item.picture} height={170} /></View>
       ) : null}
 
       <View style={s.dialogueHead}>
-        {getLessonImage(item.picture) ? null : <Text style={s.dialoguePic}>{item.picture}</Text>}
+        {(item.pictures || []).length || getLessonImage(item.picture)
+          ? null : <Text style={s.dialoguePic}>{item.picture}</Text>}
         <View style={{ flex: 1 }}>
           <Text style={s.dialogueTitle}>{item.title}</Text>
           <Text style={s.dialogueGoal}>{item.goal}</Text>
@@ -447,7 +576,11 @@ export function DialogueCard({ item }) {
         >
           <Text style={s.lineSpeaker}>{l.speaker}</Text>
           <View style={{ flex: 1 }}>
-            <Text style={s.lineCn}>{l.text}</Text>
+            {/* The line already shows what the whole sentence means; the
+                underline is for looking up one word inside it. Nested Text
+                presses win over the row's own tap, so the audio still works
+                everywhere else on the row. */}
+            <GlossSentence text={l.text} style={s.lineCn} />
             <Text style={s.linePy}>{l.pinyin}</Text>
             <Text style={s.lineEn}>{l.meaning}</Text>
           </View>
@@ -462,16 +595,26 @@ export function DialogueCard({ item }) {
       {speak && (
         <View style={s.speakBox}>
           <Text style={s.q}>{speak.question}</Text>
+          {/* A filled slot gives the word back when tapped — a mis-tap used to
+              be unrecoverable until all the slots were full. */}
           <View style={s.slotRow}>
             {speak.answer.map((_, i) => (
-              <View key={i} style={[s.slot, tiles[i] && s.slotFilled,
-                done && (tiles[i] === speak.answer[i] ? s.slotRight : s.slotWrong)]}>
+              <TouchableOpacity
+                key={i}
+                style={[s.slot, tiles[i] && s.slotFilled,
+                  done && (tiles[i] === speak.answer[i] ? s.slotRight : s.slotWrong)]}
+                onPress={() => { if (!done && tiles[i]) setTiles(t => t.filter((_, j) => j !== i)); }}
+                activeOpacity={!done && tiles[i] ? 0.6 : 1}
+              >
                 <Text style={[s.slotText, done && tiles[i] && s.slotTextLit]}>
                   {tiles[i] || '?'}
                 </Text>
-              </View>
+              </TouchableOpacity>
             ))}
           </View>
+          {!done && tiles.length > 0 && (
+            <Text style={s.undoHint}>tap a word to take it back</Text>
+          )}
           <View style={s.choiceRow}>
             {offered.map(t => (
               <TouchableOpacity
@@ -506,6 +649,15 @@ export function DialogueCard({ item }) {
 // ── Part 5 · 汉字探秘 ───────────────────────────────────────────────────────
 export function CultureCard({ item }) {
   const [answers, setAnswers] = useState({});
+  // Step numbers come from the blocks this lesson actually carries. Lesson 11
+  // has listen/notice/discover/try and still reads 1-4; Lesson 12 adds the
+  // five-phase cycle and the seasons and reads 1-6, with no hard-coded digits.
+  const order = ['listen', 'notice', 'discover', 'cycle', 'seasons', 'try']
+    .filter(k => item[k]);
+  const no = (k) => order.indexOf(k) + 1;
+  // 五行 reads far faster as a picture than as a glyph, so each element can
+  // carry an emoji. Lessons without the map simply show the character alone.
+  const emo = (c) => (item.emoji || {})[c] || null;
   return (
     <View style={[s.card, s.cardAccent]}>
       <Text style={s.topicCn}>{item.topic}</Text>
@@ -516,7 +668,7 @@ export function CultureCard({ item }) {
 
       {item.listen && (
         <View style={{ gap: 8 }}>
-          <Text style={s.stepLabel}>1 · Listen</Text>
+          <Text style={s.stepLabel}>{no('listen')} · Listen</Text>
           {item.listen.intro ? <Text style={s.body}>{item.listen.intro}</Text> : null}
           <View style={s.listenRow}>
             {item.listen.items.map(x => (
@@ -529,7 +681,6 @@ export function CultureCard({ item }) {
                 <Text style={s.listenCn}>{x.character}</Text>
                 <Text style={s.listenPy}>{x.pinyin}</Text>
                 <Text style={s.listenEn}>{x.meaning}</Text>
-                <Text style={s.audioIconSm}>🔊</Text>
               </TouchableOpacity>
             ))}
           </View>
@@ -538,21 +689,74 @@ export function CultureCard({ item }) {
 
       {item.notice ? (
         <View style={{ gap: 4 }}>
-          <Text style={s.stepLabel}>2 · Notice</Text>
+          <Text style={s.stepLabel}>{no('notice')} · Notice</Text>
           <Text style={s.body}>{item.notice}</Text>
         </View>
       ) : null}
 
       {item.discover ? (
         <View style={{ gap: 4 }}>
-          <Text style={s.stepLabel}>3 · Discover</Text>
+          <Text style={s.stepLabel}>{no('discover')} · Discover</Text>
           <Text style={s.body}>{item.discover}</Text>
         </View>
       ) : null}
 
+      {item.cycle && (
+        <View style={{ gap: 10 }}>
+          <Text style={s.stepLabel}>{no('cycle')} · {item.cycle.title}</Text>
+          {item.cycle.intro ? <Text style={s.body}>{item.cycle.intro}</Text> : null}
+          {getLessonImage(item.cycle.picture) ? (
+            <View style={s.pictureWide}><Picture value={item.cycle.picture} height={300} /></View>
+          ) : null}
+          {/* Each step is its own tappable line: 木 → 火, and what that means. */}
+          {item.cycle.steps.map((st, i) => (
+            <TouchableOpacity
+              key={i}
+              style={s.cycleRow}
+              onPress={() => speakChinese(st.audio_text, 'female', st.pinyin)}
+              activeOpacity={0.8}
+            >
+              <View style={s.cycleCell}>
+                {emo(st.from) ? <Text style={s.cycleEmoji}>{emo(st.from)}</Text> : null}
+                <Text style={s.cycleGlyph}>{st.from}</Text>
+              </View>
+              <Text style={s.cycleArrow}>→</Text>
+              <View style={s.cycleCell}>
+                {emo(st.to) ? <Text style={s.cycleEmoji}>{emo(st.to)}</Text> : null}
+                <Text style={s.cycleGlyph}>{st.to}</Text>
+              </View>
+              <Text style={s.cycleText}>{st.text}</Text>
+            </TouchableOpacity>
+          ))}
+        </View>
+      )}
+
+      {item.seasons && (
+        <View style={{ gap: 8 }}>
+          <Text style={s.stepLabel}>{no('seasons')} · {item.seasons.title}</Text>
+          {item.seasons.intro ? <Text style={s.body}>{item.seasons.intro}</Text> : null}
+          {item.seasons.items.map((x, i) => (
+            <TouchableOpacity
+              key={i}
+              style={s.seasonRow}
+              onPress={() => speakChinese(x.character, 'female', x.pinyin)}
+              activeOpacity={0.8}
+            >
+              {emo(x.character) ? <Text style={s.seasonEmoji}>{emo(x.character)}</Text> : null}
+              <Text style={s.seasonGlyph}>{x.character}</Text>
+              <View style={{ flex: 1 }}>
+                <Text style={s.seasonLabel}>{x.label}</Text>
+                <Text style={s.seasonNote}>{x.note}</Text>
+              </View>
+            </TouchableOpacity>
+          ))}
+          {item.seasons.caveat ? <Text style={s.caveat}>{item.seasons.caveat}</Text> : null}
+        </View>
+      )}
+
       {item.try && (
         <View style={{ gap: 10 }}>
-          <Text style={s.stepLabel}>4 · Try it</Text>
+          <Text style={s.stepLabel}>{no('try')} · Try it</Text>
           {item.try.intro ? <Text style={s.body}>{item.try.intro}</Text> : null}
           {item.try.items.map((x, i) => (
             <View key={i} style={s.tryBox}>
@@ -564,6 +768,7 @@ export function CultureCard({ item }) {
                 correct={x.correct}
                 picked={answers[i] ?? null}
                 onPick={(c) => setAnswers(a => ({ ...a, [i]: c }))}
+                labelFor={(c) => (emo(c) ? `${emo(c)} ${c}` : c)}
                 big
               />
               <Feedback picked={answers[i] ?? null} correct={x.correct} />
@@ -605,6 +810,12 @@ const s = StyleSheet.create({
     position: 'absolute', bottom: 40,
     color: 'rgba(255,255,255,0.7)', fontSize: 14, fontWeight: '600',
   },
+
+  // The zoom wrapper has to carry a width of its own: the image inside it is
+  // width:'100%', and in a box that centres its children (pictureBoxSmall) an
+  // auto-width wrapper gives that percentage nothing to resolve against, so the
+  // image collapses to zero width and the question looks empty.
+  pictureTouch: { alignSelf: 'stretch', width: '100%' },
 
   // Uploaded artwork runs the width of the card.
   pictureWide: {
@@ -661,6 +872,8 @@ const s = StyleSheet.create({
     backgroundColor: WARM_BROWN,
   },
   stepBtnText: { fontSize: 15, fontWeight: '800', color: CARD_WHITE },
+  stepBtnOff:  { opacity: 0.45 },
+  choiceChosen: { borderColor: WARM_ORANGE, borderWidth: 2.5, backgroundColor: '#FFF3E0' },
 
   carryRow:  { flexDirection: 'row', flexWrap: 'wrap', gap: 8, justifyContent: 'center' },
   carryChip: {
@@ -734,11 +947,44 @@ const s = StyleSheet.create({
   topicCn:   { fontSize: 22, fontWeight: '900', color: DEEP_NAVY },
   topicEn:   { fontSize: 15, color: SLATE_TEAL },
   stepLabel: { fontSize: 12, fontWeight: '800', color: WARM_BROWN, letterSpacing: 0.5, textTransform: 'uppercase' },
-  listenRow:  { flexDirection: 'row', gap: 10 },
+  // Lesson 11 shows three of these and Lesson 12 shows five, so the row wraps
+  // rather than squeezing five 36pt glyphs into one line. At minWidth 92 three
+  // still sit on one row, which leaves Lesson 11 looking exactly as it did.
+  listenRow:  { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
   listenChip: {
-    flex: 1, alignItems: 'center', paddingVertical: 12, borderRadius: 12,
+    flex: 1, minWidth: 92, alignItems: 'center', paddingVertical: 12, borderRadius: 12,
     backgroundColor: '#FFF8ED', borderWidth: 1, borderColor: 'rgba(155,104,70,0.22)',
   },
+
+  undoHint: { fontSize: 12, color: WARM_BROWN, textAlign: 'center', marginTop: -4 },
+
+  picturePair:        { flexDirection: 'row', gap: 10 },
+  picturePairCell:    { flex: 1, gap: 4 },
+  picturePairLabel:   { fontSize: 20, fontWeight: '900', color: DEEP_NAVY, textAlign: 'center' },
+  picturePairCaption: { fontSize: 13, fontWeight: '700', color: WARM_BROWN, textAlign: 'center' },
+
+  // 五行 · one line per step of the generative cycle.
+  cycleRow: {
+    flexDirection: 'row', alignItems: 'center', gap: 8,
+    backgroundColor: '#FFF8ED', borderRadius: 12, paddingHorizontal: 12, paddingVertical: 10,
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
+  },
+  cycleCell:  { alignItems: 'center', width: 34 },
+  cycleEmoji: { fontSize: 18 },
+  cycleGlyph: { fontSize: 24, fontWeight: '900', color: DEEP_NAVY },
+  cycleArrow: { fontSize: 16, color: WARM_BROWN },
+  cycleText:  { flex: 1, fontSize: 14, color: SLATE_TEAL, lineHeight: 19 },
+
+  seasonRow: {
+    flexDirection: 'row', alignItems: 'center', gap: 12,
+    paddingHorizontal: 12, paddingVertical: 8,
+    borderRadius: 12, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
+  },
+  seasonEmoji: { fontSize: 22 },
+  seasonGlyph: { fontSize: 28, fontWeight: '900', color: DEEP_NAVY, width: 36, textAlign: 'center' },
+  seasonLabel: { fontSize: 15, fontWeight: '800', color: DEEP_NAVY },
+  seasonNote:  { fontSize: 13, color: SLATE_TEAL },
+  caveat:      { fontSize: 13, fontStyle: 'italic', color: WARM_BROWN, lineHeight: 18 },
   listenCn: { fontSize: 36, fontWeight: '900', color: DEEP_NAVY },
   listenPy: { fontSize: 15, fontWeight: '700', color: WARM_BROWN },
   listenEn: { fontSize: 13, fontWeight: '700', color: WARM_ORANGE },

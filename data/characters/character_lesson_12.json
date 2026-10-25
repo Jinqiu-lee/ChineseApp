@@ -1,0 +1,2213 @@
+{
+  "id": 12,
+  "part": 2,
+  "title": "Lesson 12 · Water, Fire and Wood",
+  "emoji": "🌊",
+  "subtitle": "水 火 木 · 三点水 火字旁 四点底 木字旁",
+  "description": "Three more characters become four radical shapes, and eight new characters built from them.",
+  "new_strokes": [],
+  "new_characters": [
+    "汗",
+    "泪",
+    "海",
+    "炎",
+    "热",
+    "炒",
+    "桌",
+    "椅"
+  ],
+  "new_words": [
+    "汗水",
+    "泪水",
+    "炎热",
+    "很热",
+    "炒饭",
+    "桌子",
+    "椅子"
+  ],
+  "learn_content": {
+    "part1_blocks": {
+      "title": "Discover",
+      "subtitle": "独体字 · Characters that stand alone",
+      "intro": "Three more characters that began as pictures of the world. Watch each one become the character it is today.",
+      "blocks": [
+        {
+          "character": "水",
+          "pinyin": "shuǐ",
+          "meaning": "water",
+          "audio_text": "水",
+          "picture": "l12-p1-shui",
+          "note": "Three ripples around a current. The middle stroke is the river itself.",
+          "match": {
+            "prompt_picture": "l12-p1-shui",
+            "choices": [
+              "水",
+              "火",
+              "木"
+            ],
+            "correct": "水"
+          }
+        },
+        {
+          "character": "火",
+          "pinyin": "huǒ",
+          "meaning": "fire",
+          "audio_text": "火",
+          "picture": "l12-p1-huo",
+          "note": "A flame with sparks flying off either side.",
+          "match": {
+            "prompt_picture": "l12-p1-huo",
+            "choices": [
+              "水",
+              "火",
+              "木"
+            ],
+            "correct": "火"
+          }
+        },
+        {
+          "character": "木",
+          "pinyin": "mù",
+          "meaning": "wood",
+          "audio_text": "木",
+          "picture": "l12-p1-mu",
+          "note": "A tree: trunk, branches reaching up, roots spreading below.",
+          "match": {
+            "prompt_picture": "l12-p1-mu",
+            "choices": [
+              "水",
+              "火",
+              "木"
+            ],
+            "correct": "木"
+          }
+        }
+      ],
+      "match": {
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "l12-p1-shui",
+            "character": "水"
+          },
+          {
+            "picture": "l12-p1-huo",
+            "character": "火"
+          },
+          {
+            "picture": "l12-p1-mu",
+            "character": "木"
+          }
+        ]
+      }
+    },
+    "part2_components": {
+      "title": "Decode",
+      "subtitle": "部件与部首 · Components and radicals",
+      "caveat": "A radical points you close, not all the way: 海 is the sea, not a drop of water.",
+      "components": [
+        {
+          "radical": "氵",
+          "name": "三点水",
+          "pinyin": "sān diǎn shuǐ",
+          "name_en": "the three-drops-of-water radical",
+          "audio_text": "三点水",
+          "from": {
+            "character": "水",
+            "pinyin": "shuǐ",
+            "meaning": "water"
+          },
+          "hint": "水 turns on its side and loses its spread — three drops running down the left.",
+          "characters": [
+            {
+              "character": "汗",
+              "pinyin": "hàn",
+              "meaning": "sweat",
+              "audio_text": "汗"
+            },
+            {
+              "character": "泪",
+              "pinyin": "lèi",
+              "meaning": "tear",
+              "audio_text": "泪"
+            },
+            {
+              "character": "海",
+              "pinyin": "hǎi",
+              "meaning": "sea",
+              "audio_text": "海"
+            }
+          ],
+          "find": {
+            "question": "Which part of 汗 is the radical?",
+            "choices": [
+              "氵",
+              "干",
+              "木",
+              "火"
+            ],
+            "correct": "氵"
+          },
+          "reveal": {
+            "category": "water, in one form or another",
+            "note": "Sweat, tears, the sea — every one of them is water."
+          }
+        },
+        {
+          "radical": "火",
+          "name": "火字旁",
+          "pinyin": "huǒ zì páng",
+          "name_en": "the fire radical, standing beside",
+          "audio_text": "火字旁",
+          "from": {
+            "character": "火",
+            "pinyin": "huǒ",
+            "meaning": "fire"
+          },
+          "hint": "Beside a character 火 keeps its own shape — 炒, a wok over a flame. Stacked on itself it becomes 炎.",
+          "characters": [
+            {
+              "character": "炒",
+              "pinyin": "chǎo",
+              "meaning": "to stir-fry",
+              "audio_text": "炒"
+            },
+            {
+              "character": "炎",
+              "pinyin": "yán",
+              "meaning": "blazing",
+              "audio_text": "炎"
+            }
+          ],
+          "find": {
+            "question": "Which part of 炒 is the radical?",
+            "choices": [
+              "火",
+              "少",
+              "氵",
+              "木"
+            ],
+            "correct": "火"
+          },
+          "reveal": {
+            "category": "fire you can still see",
+            "note": "炒 sets one fire at the side of the wok. 炎 stacks two of them — twice the fire, twice the heat."
+          }
+        },
+        {
+          "radical": "灬",
+          "name": "四点底",
+          "pinyin": "sì diǎn dǐ",
+          "name_en": "the four-dots radical, sitting underneath",
+          "audio_text": "四点底",
+          "from": {
+            "character": "火",
+            "pinyin": "huǒ",
+            "meaning": "fire"
+          },
+          "hint": "Underneath a character the same 火 flattens into four dots — embers under a pot.",
+          "characters": [
+            {
+              "character": "热",
+              "pinyin": "rè",
+              "meaning": "hot",
+              "audio_text": "热"
+            }
+          ],
+          "find": {
+            "question": "You have now seen both. Which two shapes can the fire radical take?",
+            "choices": [
+              "火",
+              "灬",
+              "氵",
+              "木"
+            ],
+            "correct": [
+              "火",
+              "灬"
+            ]
+          },
+          "reveal": {
+            "category": "fire you cannot see",
+            "note": "The dots are still 火. 热 is heat coming up from underneath."
+          }
+        },
+        {
+          "radical": "木",
+          "name": "木字旁",
+          "pinyin": "mù zì páng",
+          "name_en": "the wood radical",
+          "audio_text": "木字旁",
+          "from": {
+            "character": "木",
+            "pinyin": "mù",
+            "meaning": "wood"
+          },
+          "hint": "木 narrows beside a character (椅) and lies flat underneath one (桌).",
+          "characters": [
+            {
+              "character": "桌",
+              "pinyin": "zhuō",
+              "meaning": "table",
+              "audio_text": "桌"
+            },
+            {
+              "character": "椅",
+              "pinyin": "yǐ",
+              "meaning": "chair",
+              "audio_text": "椅"
+            }
+          ],
+          "find": {
+            "question": "Which part of 椅 is the radical?",
+            "choices": [
+              "木",
+              "奇",
+              "大",
+              "可"
+            ],
+            "correct": "木"
+          },
+          "reveal": {
+            "category": "things made of wood",
+            "note": "A table and a chair. The radical tells you what they are made of, not what they are for."
+          }
+        }
+      ],
+      "group": {
+        "question": "Which character does NOT carry 火?",
+        "choices": [
+          "海",
+          "炎",
+          "热",
+          "炒"
+        ],
+        "correct": "海",
+        "explain": "海 carries 氵. The other three are all about heat."
+      },
+      "radical_audio": {
+        "氵": {
+          "text": "三点水",
+          "pinyin": "sān diǎn shuǐ"
+        },
+        "火": {
+          "text": "火字旁",
+          "pinyin": "huǒ zì páng"
+        },
+        "灬": {
+          "text": "四点底",
+          "pinyin": "sì diǎn dǐ"
+        },
+        "木": {
+          "text": "木字旁",
+          "pinyin": "mù zì páng"
+        }
+      }
+    },
+    "part3_dialogue": {
+      "title": "Use",
+      "subtitle": "词语与情景对话 · Words and dialogue",
+      "characters": [
+        {
+          "character": "这",
+          "pinyin": "zhè",
+          "meaning": "this",
+          "audio_text": "这"
+        },
+        {
+          "character": "那",
+          "pinyin": "nà",
+          "meaning": "that",
+          "audio_text": "那"
+        }
+      ],
+      "words": [
+        {
+          "word": "汗水",
+          "pinyin": "hànshuǐ",
+          "meaning": "sweat",
+          "audio_text": "汗水",
+          "built_from": "汗 + 水"
+        },
+        {
+          "word": "泪水",
+          "pinyin": "lèishuǐ",
+          "meaning": "tears",
+          "audio_text": "泪水",
+          "built_from": "泪 + 水"
+        },
+        {
+          "word": "炎热",
+          "pinyin": "yánrè",
+          "meaning": "scorching hot",
+          "audio_text": "炎热",
+          "built_from": "炎 + 热"
+        },
+        {
+          "word": "很热",
+          "pinyin": "hěn rè",
+          "meaning": "very hot",
+          "audio_text": "很热",
+          "built_from": "很 + 热"
+        },
+        {
+          "word": "炒饭",
+          "pinyin": "chǎofàn",
+          "meaning": "fried rice",
+          "audio_text": "炒饭",
+          "built_from": "炒 + 饭"
+        },
+        {
+          "word": "桌子",
+          "pinyin": "zhuōzi",
+          "meaning": "table",
+          "audio_text": "桌子",
+          "built_from": "桌 + 子"
+        },
+        {
+          "word": "椅子",
+          "pinyin": "yǐzi",
+          "meaning": "chair",
+          "audio_text": "椅子",
+          "built_from": "椅 + 子"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "This and that",
+          "goal": "这 那 汗水 泪水",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "这是什么？",
+              "pinyin": "zhè shì shénme?",
+              "meaning": "What is this?",
+              "audio_text": "这是什么"
+            },
+            {
+              "speaker": "B",
+              "text": "这是汗水。",
+              "pinyin": "zhè shì hànshuǐ.",
+              "meaning": "This is sweat.",
+              "audio_text": "这是汗水"
+            },
+            {
+              "speaker": "A",
+              "text": "那是什么？",
+              "pinyin": "nà shì shénme?",
+              "meaning": "What is that?",
+              "audio_text": "那是什么"
+            },
+            {
+              "speaker": "B",
+              "text": "那是泪水。",
+              "pinyin": "nà shì lèishuǐ.",
+              "meaning": "That is tears.",
+              "audio_text": "那是泪水"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "这是汗水。",
+            "pinyin": "zhè shì hànshuǐ.",
+            "meaning": "This is sweat.",
+            "audio_text": "这是汗水"
+          },
+          "speak": {
+            "question": "Build it: that is tears.",
+            "tiles": [
+              "泪水",
+              "这",
+              "那",
+              "是"
+            ],
+            "answer": [
+              "那",
+              "是",
+              "泪水"
+            ],
+            "result": "那是泪水。",
+            "pinyin": "nà shì lèishuǐ."
+          },
+          "pictures": [
+            {
+              "picture": "l12-p3-hanshui",
+              "label": "这",
+              "caption": "汗水 hànshuǐ"
+            },
+            {
+              "picture": "l12-p3-leishui",
+              "label": "那",
+              "caption": "泪水 lèishuǐ"
+            }
+          ]
+        },
+        {
+          "title": "Table and chair",
+          "goal": "这 那 桌子 椅子",
+          "picture": "l12-p3-zhuozi-yizi",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "这是什么？",
+              "pinyin": "zhè shì shénme?",
+              "meaning": "What is this?",
+              "audio_text": "这是什么"
+            },
+            {
+              "speaker": "B",
+              "text": "这是桌子。",
+              "pinyin": "zhè shì zhuōzi.",
+              "meaning": "This is a table.",
+              "audio_text": "这是桌子"
+            },
+            {
+              "speaker": "A",
+              "text": "那是什么？",
+              "pinyin": "nà shì shénme?",
+              "meaning": "What is that?",
+              "audio_text": "那是什么"
+            },
+            {
+              "speaker": "B",
+              "text": "那是椅子。",
+              "pinyin": "nà shì yǐzi.",
+              "meaning": "That is a chair.",
+              "audio_text": "那是椅子"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "那是椅子。",
+            "pinyin": "nà shì yǐzi.",
+            "meaning": "That is a chair.",
+            "audio_text": "那是椅子"
+          },
+          "speak": {
+            "question": "Build it: this is a table.",
+            "tiles": [
+              "桌子",
+              "那",
+              "是",
+              "这"
+            ],
+            "answer": [
+              "这",
+              "是",
+              "桌子"
+            ],
+            "result": "这是桌子。",
+            "pinyin": "zhè shì zhuōzi."
+          }
+        },
+        {
+          "title": "What is your mum eating?",
+          "goal": "吃 炒饭",
+          "picture": "l12-p3-chaofan",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你妈妈吃什么？",
+              "pinyin": "nǐ māma chī shénme?",
+              "meaning": "What is your mum eating?",
+              "audio_text": "你妈妈吃什么"
+            },
+            {
+              "speaker": "B",
+              "text": "她吃炒饭。",
+              "pinyin": "tā chī chǎofàn.",
+              "meaning": "She is eating fried rice.",
+              "audio_text": "她吃炒饭"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "她吃炒饭。",
+            "pinyin": "tā chī chǎofàn.",
+            "meaning": "She is eating fried rice.",
+            "audio_text": "她吃炒饭"
+          },
+          "speak": {
+            "question": "Build it: she is eating fried rice.",
+            "tiles": [
+              "炒饭",
+              "我",
+              "她",
+              "吃"
+            ],
+            "answer": [
+              "她",
+              "吃",
+              "炒饭"
+            ],
+            "result": "她吃炒饭。",
+            "pinyin": "tā chī chǎofàn."
+          }
+        },
+        {
+          "title": "How is the weather?",
+          "goal": "很热 炎热",
+          "picture": "l12-p3-weather",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "今天天气怎么样？",
+              "pinyin": "jīntiān tiānqì zěnmeyàng?",
+              "meaning": "How is the weather today?",
+              "audio_text": "今天天气怎么样"
+            },
+            {
+              "speaker": "B",
+              "text": "天气很热。",
+              "pinyin": "tiānqì hěn rè.",
+              "meaning": "The weather is hot.",
+              "audio_text": "天气很热"
+            },
+            {
+              "speaker": "A",
+              "text": "昨天天气怎么样？",
+              "pinyin": "zuótiān tiānqì zěnmeyàng?",
+              "meaning": "How was the weather yesterday?",
+              "audio_text": "昨天天气怎么样"
+            },
+            {
+              "speaker": "B",
+              "text": "昨天很炎热！",
+              "pinyin": "zuótiān hěn yánrè!",
+              "meaning": "Yesterday was scorching!",
+              "audio_text": "昨天很炎热"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "天气很热。",
+            "pinyin": "tiānqì hěn rè.",
+            "meaning": "The weather is hot.",
+            "audio_text": "天气很热"
+          },
+          "speak": {
+            "question": "Build it: the weather is hot.",
+            "tiles": [
+              "很热",
+              "昨天",
+              "天气",
+              "炎热"
+            ],
+            "answer": [
+              "天气",
+              "很热"
+            ],
+            "result": "天气很热。",
+            "pinyin": "tiānqì hěn rè."
+          }
+        }
+      ],
+      "read_aloud": {
+        "title": "Say them yourself",
+        "intro": "Listen, then read each one aloud.",
+        "items": [
+          {
+            "text": "汗水",
+            "pinyin": "hànshuǐ",
+            "meaning": "sweat",
+            "audio_text": "汗水"
+          },
+          {
+            "text": "炒饭",
+            "pinyin": "chǎofàn",
+            "meaning": "fried rice",
+            "audio_text": "炒饭"
+          },
+          {
+            "text": "很热",
+            "pinyin": "hěn rè",
+            "meaning": "very hot",
+            "audio_text": "很热"
+          }
+        ]
+      },
+      "support_words": [
+        {
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning": "today"
+        },
+        {
+          "word": "昨天",
+          "pinyin": "zuótiān",
+          "meaning": "yesterday"
+        },
+        {
+          "word": "天气",
+          "pinyin": "tiānqì",
+          "meaning": "weather"
+        },
+        {
+          "word": "怎么样",
+          "pinyin": "zěnmeyàng",
+          "meaning": "how is it?"
+        },
+        {
+          "word": "什么",
+          "pinyin": "shénme",
+          "meaning": "what"
+        },
+        {
+          "word": "是",
+          "pinyin": "shì",
+          "meaning": "to be"
+        },
+        {
+          "word": "很",
+          "pinyin": "hěn",
+          "meaning": "very"
+        }
+      ]
+    },
+    "part4_write": {
+      "title": "Write",
+      "subtitle": "汉字书写 · Write every character in this lesson",
+      "characters": [
+        "汗",
+        "泪",
+        "炎",
+        "热",
+        "桌",
+        "椅",
+        "炒"
+      ]
+    },
+    "part5_culture": {
+      "title": "Discover Chinese",
+      "subtitle": "汉字探秘 · Culture and language insights",
+      "topic": "五行的秘密",
+      "topic_en": "The Secret of the Five Elements",
+      "picture": "l12-p5-five-elements",
+      "listen": {
+        "intro": "Five characters, one system. Tap each to hear it.",
+        "items": [
+          {
+            "character": "金",
+            "pinyin": "jīn",
+            "meaning": "metal / gold",
+            "audio_text": "金"
+          },
+          {
+            "character": "木",
+            "pinyin": "mù",
+            "meaning": "wood",
+            "audio_text": "木"
+          },
+          {
+            "character": "水",
+            "pinyin": "shuǐ",
+            "meaning": "water",
+            "audio_text": "水"
+          },
+          {
+            "character": "火",
+            "pinyin": "huǒ",
+            "meaning": "fire",
+            "audio_text": "火"
+          },
+          {
+            "character": "土",
+            "pinyin": "tǔ",
+            "meaning": "earth / soil",
+            "audio_text": "土"
+          }
+        ]
+      },
+      "notice": "Three of these you met earlier today — 木, 水 and 火 are the characters you just learned to decode.",
+      "discover": "They are not five separate things. Traditional Chinese thought links them in a ring, each one feeding the next, and that ring is called 五行 wǔxíng — the five phases.",
+      "cycle": {
+        "title": "相生 · The generative cycle",
+        "intro": "Follow the ring. Each element gives rise to the one after it.",
+        "picture": "l12-p5-cycle",
+        "steps": [
+          {
+            "from": "木",
+            "to": "火",
+            "text": "Wood feeds fire.",
+            "audio_text": "木生火",
+            "pinyin": "mù shēng huǒ"
+          },
+          {
+            "from": "火",
+            "to": "土",
+            "text": "Fire leaves ash, and ash is earth.",
+            "audio_text": "火生土",
+            "pinyin": "huǒ shēng tǔ"
+          },
+          {
+            "from": "土",
+            "to": "金",
+            "text": "Earth yields metal.",
+            "audio_text": "土生金",
+            "pinyin": "tǔ shēng jīn"
+          },
+          {
+            "from": "金",
+            "to": "水",
+            "text": "Metal is associated with water.",
+            "audio_text": "金生水",
+            "pinyin": "jīn shēng shuǐ"
+          },
+          {
+            "from": "水",
+            "to": "木",
+            "text": "Water nourishes wood.",
+            "audio_text": "水生木",
+            "pinyin": "shuǐ shēng mù"
+          }
+        ]
+      },
+      "seasons": {
+        "title": "Where you meet them",
+        "intro": "The same five turn up in how the year is described.",
+        "items": [
+          {
+            "character": "木",
+            "pinyin": "mù",
+            "label": "Spring",
+            "note": "growth"
+          },
+          {
+            "character": "火",
+            "pinyin": "huǒ",
+            "label": "Summer",
+            "note": "heat"
+          },
+          {
+            "character": "金",
+            "pinyin": "jīn",
+            "label": "Autumn",
+            "note": "harvest"
+          },
+          {
+            "character": "水",
+            "pinyin": "shuǐ",
+            "label": "Winter",
+            "note": "storage"
+          },
+          {
+            "character": "土",
+            "pinyin": "tǔ",
+            "label": "The centre",
+            "note": "the turn between seasons"
+          }
+        ],
+        "caveat": "Traditional schemes vary, and not every one maps the five the same way."
+      },
+      "try": {
+        "intro": "Follow the ring.",
+        "items": [
+          {
+            "sentence": "木生___。",
+            "pinyin": "mù shēng ___.",
+            "meaning": "Wood feeds ___.",
+            "choices": [
+              "火",
+              "水"
+            ],
+            "correct": "火"
+          },
+          {
+            "sentence": "___生木。",
+            "pinyin": "___ shēng mù.",
+            "meaning": "___ nourishes wood.",
+            "choices": [
+              "水",
+              "金"
+            ],
+            "correct": "水"
+          },
+          {
+            "sentence": "火生___。",
+            "pinyin": "huǒ shēng ___.",
+            "meaning": "Fire leaves ash, and ash is ___.",
+            "choices": [
+              "土",
+              "金"
+            ],
+            "correct": "土"
+          }
+        ]
+      },
+      "emoji": {
+        "金": "🪙",
+        "木": "🌳",
+        "水": "💧",
+        "火": "🔥",
+        "土": "⛰️"
+      }
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "水",
+      "audio_text": "水",
+      "correct": "water",
+      "choices": [
+        "sea",
+        "that",
+        "water",
+        "chair"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "水",
+      "correct": "水",
+      "choices": [
+        "热",
+        "炎",
+        "海",
+        "水"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "water",
+      "correct": "水",
+      "choices": [
+        "热",
+        "椅",
+        "炎",
+        "水"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "水",
+      "audio_text": "水",
+      "correct": "shuǐ",
+      "choices": [
+        "yán",
+        "zhè",
+        "huǒ",
+        "shuǐ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shuǐ",
+      "correct": "水",
+      "choices": [
+        "火",
+        "木",
+        "椅",
+        "水"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "火",
+      "audio_text": "火",
+      "correct": "fire",
+      "choices": [
+        "to stir-fry",
+        "sweat",
+        "table",
+        "fire"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "火",
+      "correct": "火",
+      "choices": [
+        "火",
+        "木",
+        "桌",
+        "热"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "fire",
+      "correct": "火",
+      "choices": [
+        "热",
+        "水",
+        "火",
+        "这"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "火",
+      "audio_text": "火",
+      "correct": "huǒ",
+      "choices": [
+        "mù",
+        "yán",
+        "rè",
+        "huǒ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "huǒ",
+      "correct": "火",
+      "choices": [
+        "海",
+        "火",
+        "椅",
+        "热"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "木",
+      "audio_text": "木",
+      "correct": "wood",
+      "choices": [
+        "wood",
+        "blazing",
+        "water",
+        "that"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "木",
+      "correct": "木",
+      "choices": [
+        "这",
+        "水",
+        "炒",
+        "木"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "wood",
+      "correct": "木",
+      "choices": [
+        "水",
+        "木",
+        "汗",
+        "这"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "木",
+      "audio_text": "木",
+      "correct": "mù",
+      "choices": [
+        "mù",
+        "yǐ",
+        "yán",
+        "rè"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "mù",
+      "correct": "木",
+      "choices": [
+        "椅",
+        "木",
+        "泪",
+        "火"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "汗",
+      "audio_text": "汗",
+      "correct": "sweat",
+      "choices": [
+        "water",
+        "sweat",
+        "to stir-fry",
+        "wood"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "汗",
+      "correct": "汗",
+      "choices": [
+        "炒",
+        "椅",
+        "汗",
+        "火"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "sweat",
+      "correct": "汗",
+      "choices": [
+        "水",
+        "热",
+        "木",
+        "汗"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "汗",
+      "audio_text": "汗",
+      "correct": "hàn",
+      "choices": [
+        "hàn",
+        "shuǐ",
+        "zhè",
+        "nà"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "hàn",
+      "correct": "汗",
+      "choices": [
+        "木",
+        "汗",
+        "炎",
+        "水"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "泪",
+      "audio_text": "泪",
+      "correct": "tear",
+      "choices": [
+        "this",
+        "blazing",
+        "tear",
+        "fire"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "泪",
+      "correct": "泪",
+      "choices": [
+        "泪",
+        "炎",
+        "木",
+        "桌"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "tear",
+      "correct": "泪",
+      "choices": [
+        "这",
+        "泪",
+        "火",
+        "热"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "泪",
+      "audio_text": "泪",
+      "correct": "lèi",
+      "choices": [
+        "zhuō",
+        "lèi",
+        "mù",
+        "yán"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "lèi",
+      "correct": "泪",
+      "choices": [
+        "热",
+        "泪",
+        "木",
+        "桌"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "海",
+      "audio_text": "海",
+      "correct": "sea",
+      "choices": [
+        "wood",
+        "sea",
+        "chair",
+        "hot"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "海",
+      "correct": "海",
+      "choices": [
+        "泪",
+        "海",
+        "炒",
+        "这"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "sea",
+      "correct": "海",
+      "choices": [
+        "海",
+        "桌",
+        "那",
+        "木"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "海",
+      "audio_text": "海",
+      "correct": "hǎi",
+      "choices": [
+        "zhuō",
+        "hǎi",
+        "zhè",
+        "rè"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "hǎi",
+      "correct": "海",
+      "choices": [
+        "热",
+        "汗",
+        "泪",
+        "海"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "炎",
+      "audio_text": "炎",
+      "correct": "blazing",
+      "choices": [
+        "to stir-fry",
+        "sweat",
+        "blazing",
+        "hot"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "炎",
+      "correct": "炎",
+      "choices": [
+        "炎",
+        "泪",
+        "那",
+        "热"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "blazing",
+      "correct": "炎",
+      "choices": [
+        "桌",
+        "热",
+        "炎",
+        "这"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "炎",
+      "audio_text": "炎",
+      "correct": "yán",
+      "choices": [
+        "lèi",
+        "yán",
+        "huǒ",
+        "zhuō"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yán",
+      "correct": "炎",
+      "choices": [
+        "木",
+        "炎",
+        "汗",
+        "火"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "热",
+      "audio_text": "热",
+      "correct": "hot",
+      "choices": [
+        "chair",
+        "hot",
+        "to stir-fry",
+        "sea"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "热",
+      "correct": "热",
+      "choices": [
+        "桌",
+        "椅",
+        "海",
+        "热"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "hot",
+      "correct": "热",
+      "choices": [
+        "椅",
+        "热",
+        "桌",
+        "这"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "热",
+      "audio_text": "热",
+      "correct": "rè",
+      "choices": [
+        "lèi",
+        "rè",
+        "yǐ",
+        "zhuō"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "rè",
+      "correct": "热",
+      "choices": [
+        "那",
+        "桌",
+        "海",
+        "热"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "炒",
+      "audio_text": "炒",
+      "correct": "to stir-fry",
+      "choices": [
+        "table",
+        "wood",
+        "to stir-fry",
+        "tear"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "炒",
+      "correct": "炒",
+      "choices": [
+        "椅",
+        "汗",
+        "水",
+        "炒"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to stir-fry",
+      "correct": "炒",
+      "choices": [
+        "炒",
+        "木",
+        "火",
+        "那"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "炒",
+      "audio_text": "炒",
+      "correct": "chǎo",
+      "choices": [
+        "huǒ",
+        "rè",
+        "zhè",
+        "chǎo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "chǎo",
+      "correct": "炒",
+      "choices": [
+        "炒",
+        "水",
+        "炎",
+        "海"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "桌",
+      "audio_text": "桌",
+      "correct": "table",
+      "choices": [
+        "wood",
+        "table",
+        "this",
+        "chair"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "桌",
+      "correct": "桌",
+      "choices": [
+        "火",
+        "汗",
+        "木",
+        "桌"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "table",
+      "correct": "桌",
+      "choices": [
+        "炎",
+        "木",
+        "汗",
+        "桌"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "桌",
+      "audio_text": "桌",
+      "correct": "zhuō",
+      "choices": [
+        "mù",
+        "huǒ",
+        "lèi",
+        "zhuō"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zhuō",
+      "correct": "桌",
+      "choices": [
+        "热",
+        "桌",
+        "汗",
+        "炎"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "椅",
+      "audio_text": "椅",
+      "correct": "chair",
+      "choices": [
+        "sea",
+        "hot",
+        "water",
+        "chair"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "椅",
+      "correct": "椅",
+      "choices": [
+        "炒",
+        "水",
+        "泪",
+        "椅"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "chair",
+      "correct": "椅",
+      "choices": [
+        "火",
+        "椅",
+        "海",
+        "木"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "椅",
+      "audio_text": "椅",
+      "correct": "yǐ",
+      "choices": [
+        "yǐ",
+        "mù",
+        "zhuō",
+        "hǎi"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yǐ",
+      "correct": "椅",
+      "choices": [
+        "汗",
+        "那",
+        "桌",
+        "椅"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "这",
+      "audio_text": "这",
+      "correct": "this",
+      "choices": [
+        "this",
+        "water",
+        "chair",
+        "table"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "这",
+      "correct": "这",
+      "choices": [
+        "水",
+        "泪",
+        "那",
+        "这"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "this",
+      "correct": "这",
+      "choices": [
+        "椅",
+        "这",
+        "桌",
+        "炎"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "这",
+      "audio_text": "这",
+      "correct": "zhè",
+      "choices": [
+        "zhè",
+        "zhuō",
+        "hàn",
+        "lèi"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zhè",
+      "correct": "这",
+      "choices": [
+        "桌",
+        "汗",
+        "椅",
+        "这"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "那",
+      "audio_text": "那",
+      "correct": "that",
+      "choices": [
+        "that",
+        "blazing",
+        "water",
+        "to stir-fry"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "那",
+      "correct": "那",
+      "choices": [
+        "水",
+        "炎",
+        "热",
+        "那"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "that",
+      "correct": "那",
+      "choices": [
+        "木",
+        "热",
+        "这",
+        "那"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "那",
+      "audio_text": "那",
+      "correct": "nà",
+      "choices": [
+        "huǒ",
+        "nà",
+        "zhuō",
+        "zhè"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "nà",
+      "correct": "那",
+      "choices": [
+        "那",
+        "泪",
+        "这",
+        "炎"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "汗",
+      "audio_text": "汗",
+      "correct": "氵",
+      "choices": [
+        "口",
+        "氵",
+        "火",
+        "灬"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "泪",
+      "audio_text": "泪",
+      "correct": "氵",
+      "choices": [
+        "氵",
+        "口",
+        "木",
+        "火"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "海",
+      "audio_text": "海",
+      "correct": "氵",
+      "choices": [
+        "灬",
+        "火",
+        "日",
+        "氵"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "炎",
+      "audio_text": "炎",
+      "correct": "火",
+      "choices": [
+        "火",
+        "日",
+        "女",
+        "木"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "热",
+      "audio_text": "热",
+      "correct": "灬",
+      "choices": [
+        "亻",
+        "氵",
+        "日",
+        "灬"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "炒",
+      "audio_text": "炒",
+      "correct": "火",
+      "choices": [
+        "氵",
+        "火",
+        "木",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "桌",
+      "audio_text": "桌",
+      "correct": "木",
+      "choices": [
+        "木",
+        "口",
+        "女",
+        "火"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "椅",
+      "audio_text": "椅",
+      "correct": "木",
+      "choices": [
+        "女",
+        "日",
+        "亻",
+        "木"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "汗水",
+      "audio_text": "汗水",
+      "correct": "sweat",
+      "choices": [
+        "scorching hot",
+        "sweat",
+        "tears",
+        "very hot"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "汗水",
+      "correct": "汗水",
+      "choices": [
+        "很热",
+        "泪水",
+        "炒饭",
+        "汗水"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "泪水",
+      "audio_text": "泪水",
+      "correct": "tears",
+      "choices": [
+        "very hot",
+        "tears",
+        "fried rice",
+        "table"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "泪水",
+      "correct": "泪水",
+      "choices": [
+        "泪水",
+        "椅子",
+        "很热",
+        "汗水"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "炎热",
+      "audio_text": "炎热",
+      "correct": "scorching hot",
+      "choices": [
+        "fried rice",
+        "scorching hot",
+        "sweat",
+        "tears"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "炎热",
+      "correct": "炎热",
+      "choices": [
+        "炎热",
+        "很热",
+        "炒饭",
+        "椅子"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "很热",
+      "audio_text": "很热",
+      "correct": "very hot",
+      "choices": [
+        "sweat",
+        "tears",
+        "scorching hot",
+        "very hot"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "很热",
+      "correct": "很热",
+      "choices": [
+        "汗水",
+        "桌子",
+        "很热",
+        "炒饭"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "炒饭",
+      "audio_text": "炒饭",
+      "correct": "fried rice",
+      "choices": [
+        "tears",
+        "scorching hot",
+        "fried rice",
+        "sweat"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "炒饭",
+      "correct": "炒饭",
+      "choices": [
+        "炒饭",
+        "汗水",
+        "泪水",
+        "椅子"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "桌子",
+      "audio_text": "桌子",
+      "correct": "table",
+      "choices": [
+        "table",
+        "fried rice",
+        "sweat",
+        "tears"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "桌子",
+      "correct": "桌子",
+      "choices": [
+        "泪水",
+        "很热",
+        "桌子",
+        "炎热"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "椅子",
+      "audio_text": "椅子",
+      "correct": "chair",
+      "choices": [
+        "sweat",
+        "chair",
+        "very hot",
+        "tears"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "椅子",
+      "correct": "椅子",
+      "choices": [
+        "汗水",
+        "炎热",
+        "炒饭",
+        "椅子"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "水",
+          "pinyin": "shuǐ",
+          "english": "water"
+        },
+        {
+          "id": 2,
+          "chinese": "火",
+          "pinyin": "huǒ",
+          "english": "fire"
+        },
+        {
+          "id": 3,
+          "chinese": "木",
+          "pinyin": "mù",
+          "english": "wood"
+        },
+        {
+          "id": 4,
+          "chinese": "这",
+          "pinyin": "zhè",
+          "english": "this"
+        },
+        {
+          "id": 5,
+          "chinese": "那",
+          "pinyin": "nà",
+          "english": "that"
+        }
+      ],
+      "correct": "char:水火木这那",
+      "choices": [
+        "water",
+        "fire",
+        "wood",
+        "this",
+        "that"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "汗",
+          "pinyin": "hàn",
+          "english": "sweat"
+        },
+        {
+          "id": 2,
+          "chinese": "泪",
+          "pinyin": "lèi",
+          "english": "tear"
+        },
+        {
+          "id": 3,
+          "chinese": "海",
+          "pinyin": "hǎi",
+          "english": "sea"
+        },
+        {
+          "id": 4,
+          "chinese": "炎",
+          "pinyin": "yán",
+          "english": "blazing"
+        },
+        {
+          "id": 5,
+          "chinese": "热",
+          "pinyin": "rè",
+          "english": "hot"
+        }
+      ],
+      "correct": "char:汗泪海炎热",
+      "choices": [
+        "sweat",
+        "tear",
+        "sea",
+        "blazing",
+        "hot"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "炒",
+          "pinyin": "chǎo",
+          "english": "to stir-fry"
+        },
+        {
+          "id": 2,
+          "chinese": "桌",
+          "pinyin": "zhuō",
+          "english": "table"
+        },
+        {
+          "id": 3,
+          "chinese": "椅",
+          "pinyin": "yǐ",
+          "english": "chair"
+        },
+        {
+          "id": 4,
+          "chinese": "水",
+          "pinyin": "shuǐ",
+          "english": "water"
+        },
+        {
+          "id": 5,
+          "chinese": "火",
+          "pinyin": "huǒ",
+          "english": "fire"
+        }
+      ],
+      "correct": "char:炒桌椅水火",
+      "choices": [
+        "to stir-fry",
+        "table",
+        "chair",
+        "water",
+        "fire"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "汗水",
+          "pinyin": "hànshuǐ",
+          "english": "sweat"
+        },
+        {
+          "id": 2,
+          "chinese": "泪水",
+          "pinyin": "lèishuǐ",
+          "english": "tears"
+        },
+        {
+          "id": 3,
+          "chinese": "炒饭",
+          "pinyin": "chǎofàn",
+          "english": "fried rice"
+        },
+        {
+          "id": 4,
+          "chinese": "桌子",
+          "pinyin": "zhuōzi",
+          "english": "table"
+        },
+        {
+          "id": 5,
+          "chinese": "椅子",
+          "pinyin": "yǐzi",
+          "english": "chair"
+        }
+      ],
+      "correct": "word:汗水泪水炒饭桌子椅子",
+      "choices": [
+        "sweat",
+        "tears",
+        "fried rice",
+        "table",
+        "chair"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "汗",
+        null
+      ],
+      "correct": "水",
+      "choices": [
+        "子",
+        "水",
+        "火",
+        "木"
+      ],
+      "result_word": "汗水",
+      "result_pinyin": "hànshuǐ",
+      "result_meaning": "sweat",
+      "audio_text": "汗水"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "炒",
+        null
+      ],
+      "correct": "饭",
+      "choices": [
+        "子",
+        "热",
+        "饭",
+        "水"
+      ],
+      "result_word": "炒饭",
+      "result_pinyin": "chǎofàn",
+      "result_meaning": "fried rice",
+      "audio_text": "炒饭"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "桌",
+        null
+      ],
+      "correct": "子",
+      "choices": [
+        "火",
+        "水",
+        "子",
+        "饭"
+      ],
+      "result_word": "桌子",
+      "result_pinyin": "zhuōzi",
+      "result_meaning": "table",
+      "audio_text": "桌子"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        null,
+        "热"
+      ],
+      "correct": "炎",
+      "choices": [
+        "桌",
+        "炒",
+        "椅",
+        "炎"
+      ],
+      "result_word": "炎热",
+      "result_pinyin": "yánrè",
+      "result_meaning": "scorching hot",
+      "audio_text": "炎热"
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "This is sweat.",
+      "tiles": [
+        "汗水",
+        "那",
+        "这",
+        "是"
+      ],
+      "answer": [
+        "这",
+        "是",
+        "汗水"
+      ],
+      "result": "这是汗水。",
+      "pinyin": "zhè shì hànshuǐ.",
+      "correct": "这是汗水",
+      "choices": [
+        "这是汗水"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "That is a chair.",
+      "tiles": [
+        "椅子",
+        "是",
+        "这",
+        "那"
+      ],
+      "answer": [
+        "那",
+        "是",
+        "椅子"
+      ],
+      "result": "那是椅子。",
+      "pinyin": "nà shì yǐzi.",
+      "correct": "那是椅子",
+      "choices": [
+        "那是椅子"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "She is eating fried rice.",
+      "tiles": [
+        "炒饭",
+        "吃",
+        "我",
+        "她"
+      ],
+      "answer": [
+        "她",
+        "吃",
+        "炒饭"
+      ],
+      "result": "她吃炒饭。",
+      "pinyin": "tā chī chǎofàn.",
+      "correct": "她吃炒饭",
+      "choices": [
+        "她吃炒饭"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "The weather is hot.",
+      "tiles": [
+        "很热",
+        "炎热",
+        "天气"
+      ],
+      "answer": [
+        "天气",
+        "很热"
+      ],
+      "result": "天气很热。",
+      "pinyin": "tiānqì hěn rè.",
+      "correct": "天气很热",
+      "choices": [
+        "天气很热"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "汗水",
+      "audio_text": "汗水",
+      "pinyin": "hànshuǐ",
+      "meaning": "sweat",
+      "correct": "汗水",
+      "choices": [
+        "汗水"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "炒饭",
+      "audio_text": "炒饭",
+      "pinyin": "chǎofàn",
+      "meaning": "fried rice",
+      "correct": "炒饭",
+      "choices": [
+        "炒饭"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "很热",
+      "audio_text": "很热",
+      "pinyin": "hěn rè",
+      "meaning": "very hot",
+      "correct": "很热",
+      "choices": [
+        "很热"
+      ]
+    }
+  ]
+}

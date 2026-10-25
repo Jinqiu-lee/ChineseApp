@@ -9,10 +9,11 @@ import StrokeAnimator, { strokeCount } from '../components/characters/StrokeAnim
 import { StrokeCombo } from '../components/characters/StrokeVisual';
 import StrokeWriter from '../components/characters/StrokeWriter';
 import { ReadAloud } from '../components/characters/LessonTwoParts';
+import { Gloss, Underlined } from '../components/characters/Gloss';
 import MatchPairsExercise from '../components/exercises/MatchPairsExercise';
 import { stagesFor, questionsForStage, buildLessonQuiz } from '../data/characters/practiceStages';
 import { getStrokePinyin } from '../data/characters/strokeAssets';
-import { getCharacterReading, getCharacterStrokeOrder } from '../data/characters';
+import { getCharacterReading, getCharacterStrokeOrder, getCharacterMeaning } from '../data/characters';
 import { speakChinese } from '../utils/tts';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../constants/colors';
 
@@ -132,22 +133,31 @@ function SentenceBuildQuestion({ q, onDone }) {
 
   return (
     <View style={{ gap: 14, width: '100%' }}>
+      {/* A filled slot can be tapped to take the word back. Without this a
+          mis-tap was unrecoverable: the question scores itself the moment the
+          last slot fills, so there was no point at which a wrong tile could
+          be undone. */}
       <View style={s.slotRow}>
         {q.answer.map((_, i) => (
-          <View
+          <TouchableOpacity
             key={i}
             style={[
               s.slot,
               tiles[i] && s.slotFilled,
               done && (tiles[i] === q.answer[i] ? s.slotRight : s.slotWrong),
             ]}
+            onPress={() => { if (!done && tiles[i]) setTiles(t => t.filter((_, j) => j !== i)); }}
+            activeOpacity={!done && tiles[i] ? 0.6 : 1}
           >
             <Text style={[s.slotText, done && tiles[i] && s.slotTextLit]}>
               {tiles[i] || '?'}
             </Text>
-          </View>
+          </TouchableOpacity>
         ))}
       </View>
+      {!done && tiles.length > 0 && (
+        <Text style={s.undoHint}>tap a word to take it back</Text>
+      )}
       <View style={s.tileRow}>
         {offered.map(t => (
           <TouchableOpacity
@@ -199,6 +209,7 @@ export default function CharacterRecallScreen({
   const [score, setScore]     = useState(0);
   const [showResult, setShow] = useState(false);
   const [hints, setHints]     = useState({}); // which answers have had pinyin revealed
+  const [glosses, setGloss]   = useState({}); // which answers have had English revealed
 
   const total = questions.length;
   const q = questions[index];
@@ -245,6 +256,7 @@ export default function CharacterRecallScreen({
     setIndex(i => i + 1);
     setPicked(null);
     setHints({});
+    setGloss({});
   };
 
   // ── Result ────────────────────────────────────────────────────────────────
@@ -404,18 +416,17 @@ export default function CharacterRecallScreen({
         const size = fitFontSize(q.prompt_char, promptWidth, 60, 26, 1);
         return (
           <View style={s.promptInner}>
-            <Text style={[s.promptChar, { fontSize: size, lineHeight: Math.round(size * 1.24) }]}>
-              {q.prompt_char}
-            </Text>
-            {hasHan(q.prompt_char) && (
-              <TouchableOpacity
-                style={s.promptAudioBtn}
-                onPress={() => speakChinese(q.audio_text || q.prompt_char, 'female', pinyinFor(q.audio_text || q.prompt_char))}
-                activeOpacity={0.8}
-              >
-                <Text style={s.promptAudioText}>🔊</Text>
-              </TouchableOpacity>
-            )}
+            {/* The character being asked about can be looked up too. */}
+            {/* No separate 🔊 in Practice: tapping the character says it and
+                shows what it means. The one exception is the listen question,
+                whose button IS the question. */}
+            <Gloss
+              text={q.prompt_char}
+              style={[s.promptChar, { fontSize: size, lineHeight: Math.round(size * 1.24) }]}
+              glossStyle={s.promptGloss}
+              onPress={() => hasHan(q.prompt_char) && speakChinese(
+                q.audio_text || q.prompt_char, 'female', pinyinFor(q.audio_text || q.prompt_char))}
+            />
           </View>
         );
       }
@@ -486,11 +497,15 @@ export default function CharacterRecallScreen({
           <View style={s.writeStage}>
             <Text style={s.typeLabel}>{quiz ? '📝 Lesson Quiz' : `${stage.icon} ${stage.name}`}</Text>
             <View style={s.writeHead}>
-              <Text style={s.writeChar}>{q.char}</Text>
+              {/* No 🔊: the character is spoken as the question opens. Tapping
+                  it says it again and shows what it means. */}
+              <Gloss
+                text={q.char}
+                style={s.writeChar}
+                glossStyle={s.promptGloss}
+                onPress={() => speakChinese(q.char, 'female', pinyinFor(q.char))}
+              />
               <Text style={s.writePinyin}>{pinyinFor(q.char)}</Text>
-              <TouchableOpacity onPress={() => speakChinese(q.char, 'female', pinyinFor(q.char))} activeOpacity={0.7}>
-                <Text style={s.writeAudio}>🔊</Text>
-              </TouchableOpacity>
             </View>
             {/* No reference animation here — this stage is from memory. */}
             <StrokeWriter
@@ -599,15 +614,43 @@ export default function CharacterRecallScreen({
                       // Duolingo-style hint: dashed underline, tap to reveal the
                       // reading without it being given away up front.
                       <TouchableOpacity
-                        onPress={() => setHints(h => ({ ...h, [c]: !h[c] }))}
+                        onPress={() => {
+                          if (canSpeak) speakChinese(c, 'female', pinyinFor(c));
+                          setHints(h => ({ ...h, [c]: !h[c] }));
+                        }}
                         activeOpacity={0.6}
                         hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
                       >
-                        <Text style={[
-                          s.choiceText, s.choiceTextCn, s.choiceHintable,
-                          lit && s.choiceTextLit, lit && s.choiceHintableLit,
-                        ]}>{c}</Text>
-                        {hinted && <Text style={[s.choicePinyin, lit && s.choicePinyinLit]}>{pinyinFor(c)}</Text>}
+                        <Underlined color={lit ? CARD_WHITE : DEEP_NAVY}>
+                          <Text style={[s.choiceText, s.choiceTextCn, lit && s.choiceTextLit]}>{c}</Text>
+                        </Underlined>
+                        {hinted && (
+                          <Text style={[s.choicePinyin, lit && s.choicePinyinLit]}>
+                            {[pinyinFor(c), getCharacterMeaning(c)].filter(Boolean).join('  ·  ')}
+                          </Text>
+                        )}
+                      </TouchableOpacity>
+                    ) : hasHan(c) && getCharacterMeaning(c) ? (
+                      // Same underline as the pinyin hint above, but this one
+                      // reveals the English. The text is its own touchable so
+                      // looking a word up does not answer the question.
+                      <TouchableOpacity
+                        onPress={() => {
+                          if (canSpeak) speakChinese(c, 'female', pinyinFor(c));
+                          setGloss(g => ({ ...g, [c]: !g[c] }));
+                        }}
+                        activeOpacity={0.6}
+                        hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                      >
+                        <Underlined color={lit ? CARD_WHITE : DEEP_NAVY}>
+                          <Text style={[s.choiceText, s.choiceTextCn, lit && s.choiceTextLit]}>{c}</Text>
+                        </Underlined>
+                        {!!py && <Text style={[s.choicePinyin, lit && s.choicePinyinLit]}>{py}</Text>}
+                        {glosses[c] && (
+                          <Text style={[s.choiceGloss, lit && s.choicePinyinLit]}>
+                            {getCharacterMeaning(c)}
+                          </Text>
+                        )}
                       </TouchableOpacity>
                     ) : (
                       <>
@@ -626,16 +669,6 @@ export default function CharacterRecallScreen({
                       <Text style={[s.choicePinyin, lit && s.choicePinyinLit]}>{getStrokePinyin(c)}</Text>
                     )}
                   </View>
-                  {canSpeak && (
-                    <TouchableOpacity
-                      onPress={() => speakChinese(c, 'female', pinyinFor(c))}
-                      style={s.choiceAudioBtn}
-                      activeOpacity={0.6}
-                      hitSlop={{ top: 10, bottom: 10, left: 10, right: 10 }}
-                    >
-                      <Text style={s.choiceAudioIcon}>🔊</Text>
-                    </TouchableOpacity>
-                  )}
                 </TouchableOpacity>
               );
             })}
@@ -720,6 +753,7 @@ const s = StyleSheet.create({
   slotRight:  { backgroundColor: 'rgba(46,125,50,0.7)', borderColor: SUCCESS },
   slotWrong:  { backgroundColor: 'rgba(196,80,58,0.7)', borderColor: '#C4503A' },
   slotText:    { fontSize: 22, fontWeight: '900', color: DEEP_NAVY },
+  undoHint:    { fontSize: 12, color: WARM_BROWN, textAlign: 'center', marginTop: -6 },
   slotTextLit: { color: CARD_WHITE },
   tileRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, justifyContent: 'center' },
   tile: {
@@ -729,13 +763,21 @@ const s = StyleSheet.create({
   },
   tileUsed:  { opacity: 0.35 },
   tileText:  { fontSize: 22, fontWeight: '900', color: DEEP_NAVY },
-  feedback:  { flexDirection: 'row', alignItems: 'center', gap: 8, borderRadius: 10, padding: 10 },
-  feedbackRight:     { backgroundColor: 'rgba(46,125,50,0.12)' },
-  feedbackWrong:     { backgroundColor: 'rgba(196,80,58,0.10)' },
-  feedbackIcon:      { fontSize: 16, fontWeight: '900' },
+  feedback:  {
+    flexDirection: 'row', alignItems: 'center', gap: 8,
+    borderRadius: 10, padding: 10, borderWidth: 1.5,
+  },
+  // A filled verdict, the same language as the answer buttons and the slots
+  // above it — at 12% the bar read as no verdict at all, just a tint.
+  // The fill is a step darker than `choiceRight` on purpose: the text here is
+  // 15px against the buttons' 26-28px, and white on rgba(46,125,50,0.7) is
+  // only 2.9:1 — fine behind 28px, not behind 15px. At 0.8 these clear 4.5:1.
+  feedbackRight:     { backgroundColor: 'rgba(27,94,32,0.8)',  borderColor: SUCCESS },
+  feedbackWrong:     { backgroundColor: 'rgba(155,45,30,0.8)', borderColor: '#C4503A' },
+  feedbackIcon:      { fontSize: 16, fontWeight: '900', color: CARD_WHITE },
   feedbackText:      { flex: 1, fontSize: 15, fontWeight: '700' },
-  feedbackTextRight: { color: '#2E7D32' },
-  feedbackTextWrong: { color: '#C4503A' },
+  feedbackTextRight: { color: CARD_WHITE },
+  feedbackTextWrong: { color: CARD_WHITE },
 
   eqCellText:        { fontSize: 24, fontWeight: '900', color: DEEP_NAVY },
   wordBuildMeaning:  { fontSize: 18, fontWeight: '800', color: WARM_ORANGE, textAlign: 'center' },
@@ -796,19 +838,15 @@ const s = StyleSheet.create({
   choiceWrong:  { backgroundColor: 'rgba(196,80,58,0.7)', borderColor: '#C4503A', borderWidth: 2.5 },
   choiceTextLit:     { color: CARD_WHITE },
   choicePinyinLit:   { color: 'rgba(255,255,255,0.92)' },
-  choiceHintableLit: { borderBottomColor: 'rgba(255,255,255,0.75)' },
   // Answer text comes in three sizes and only three: Chinese 28, pinyin 26,
   // English 24. Every question type picks one of them, so a bare character is
   // the same size whichever question is asking for it.
   choiceText:   { fontSize: 26, lineHeight: 34, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center' },
   choiceTextCn: { fontSize: 28, lineHeight: 36 },
   choiceTextEn: { fontSize: 22, lineHeight: 29 },
-  // Dashed underline signals "tap me for the reading", Duolingo-style.
-  choiceHintable: {
-    borderBottomWidth: 1.5, borderBottomColor: SLATE_TEAL, borderStyle: 'dashed',
-    paddingBottom: 2,
-  },
   choicePinyin: { fontSize: 14, color: WARM_BROWN, marginTop: 4, textAlign: 'center' },
+  choiceGloss:  { fontSize: 13, fontWeight: '700', color: WARM_ORANGE, marginTop: 2, textAlign: 'center' },
+  promptGloss:  { fontSize: 15, fontWeight: '700', color: WARM_ORANGE, marginTop: 4, textAlign: 'center' },
   choiceAudioBtn:  { paddingLeft: 10 },
   choiceAudioIcon: { fontSize: 22 },
 

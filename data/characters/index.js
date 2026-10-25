@@ -13,6 +13,7 @@ import characterLesson8 from './character_lesson_8.json';
 import characterLesson9 from './character_lesson_9.json';
 import characterLesson10 from './character_lesson_10.json';
 import characterLesson11 from './character_lesson_11.json';
+import characterLesson12 from './character_lesson_12.json';
 
 export const CHARACTER_LESSONS = {
   1: characterLesson1,
@@ -26,6 +27,7 @@ export const CHARACTER_LESSONS = {
   9: characterLesson9,
   10: characterLesson10,
   11: characterLesson11,
+  12: characterLesson12,
 };
 
 export const TOTAL_CHARACTER_LESSONS = 20;
@@ -112,6 +114,66 @@ const COURSE_READINGS = (() => {
   }
   return m;
 })();
+
+// Every English gloss the course knows, from whichever lesson teaches it —
+// both halves, single characters and whole words. This is what the tap-to-
+// reveal underline reads: a character shown in Lesson 12's practice may have
+// been taught back in Lesson 3, and a word like 汗水 is glossed as a word
+// rather than as 汗 plus 水.
+const COURSE_MEANINGS = (() => {
+  const m = {};
+  const put = (k, v) => { if (k && v && !(k in m)) m[k] = v; };
+  for (const lesson of Object.values(CHARACTER_LESSONS)) {
+    const lc = lesson.learn_content || {};
+
+    // Characters Foundations 1
+    (lc.part1_discover?.strokes || []).forEach(x => put(x.example_char, x.example_meaning));
+    (lc.part2_build?.rules || []).forEach(r => put(r.result_char, r.result_meaning));
+    (lc.part3_read?.characters || []).forEach(c => put(c.character, c.meaning));
+    (lc.part4_use?.patterns || []).forEach(p => {
+      put(p.word, p.meaning);
+      (p.variations || []).forEach(v => put(v.word, v.meaning));
+    });
+
+    // Characters Foundations 2
+    (lc.part1_blocks?.blocks || []).forEach(x => put(x.character, x.meaning));
+    (lc.part2_components?.components || []).forEach(c => {
+      put(c.from?.character, c.from?.meaning);
+      (c.characters || []).forEach(x => put(x.character, x.meaning));
+    });
+    (lc.part3_dialogue?.characters || []).forEach(x => put(x.character, x.meaning));
+    (lc.part3_dialogue?.words || []).forEach(w => put(w.word, w.meaning));
+    // Glossed but never taught or tested — see support_words in the lesson JSON.
+    (lc.part3_dialogue?.support_words || []).forEach(w => put(w.word, w.meaning));
+    (lc.part5_culture?.listen?.items || []).forEach(x => put(x.character, x.meaning));
+  }
+  return m;
+})();
+
+/** The English gloss for a character or word, or undefined if the course never taught it. */
+export function getCharacterMeaning(text) {
+  return COURSE_MEANINGS[text];
+}
+
+/**
+ * Split a run of Chinese into the longest units the course can gloss, so
+ * 这是汗水 comes back as 这 / 是 / 汗水 rather than four separate characters.
+ * Anything with no gloss is returned as a single character with meaning null.
+ */
+export function segmentForGloss(text, maxUnit = 4) {
+  const out = [];
+  let i = 0;
+  while (i < text.length) {
+    let hit = null;
+    for (let len = Math.min(maxUnit, text.length - i); len >= 1; len--) {
+      const slice = text.slice(i, i + len);
+      if (COURSE_MEANINGS[slice]) { hit = { text: slice, meaning: COURSE_MEANINGS[slice] }; break; }
+    }
+    if (hit) { out.push(hit); i += hit.text.length; }
+    else { out.push({ text: text[i], meaning: null }); i += 1; }
+  }
+  return out;
+}
 
 export function getCharacterReading(char) {
   return COURSE_READINGS[char];
