@@ -762,6 +762,47 @@
           }
         ]
       },
+      "destructive": {
+        "title": "相克 · The controlling cycle",
+        "intro": "The same five, read the other way round. Here each one checks the next — the blue dashed arrows in the diagram above.",
+        "steps": [
+          {
+            "from": "木",
+            "to": "土",
+            "text": "Wood parts the earth — roots break through soil.",
+            "audio_text": "木克土",
+            "pinyin": "mù kè tǔ"
+          },
+          {
+            "from": "土",
+            "to": "水",
+            "text": "Earth dams water.",
+            "audio_text": "土克水",
+            "pinyin": "tǔ kè shuǐ"
+          },
+          {
+            "from": "水",
+            "to": "火",
+            "text": "Water puts out fire.",
+            "audio_text": "水克火",
+            "pinyin": "shuǐ kè huǒ"
+          },
+          {
+            "from": "火",
+            "to": "金",
+            "text": "Fire melts metal.",
+            "audio_text": "火克金",
+            "pinyin": "huǒ kè jīn"
+          },
+          {
+            "from": "金",
+            "to": "木",
+            "text": "Metal cuts wood — the axe to the tree.",
+            "audio_text": "金克木",
+            "pinyin": "jīn kè mù"
+          }
+        ]
+      },
       "seasons": {
         "title": "Where you meet them",
         "intro": "The same five turn up in how the year is described.",

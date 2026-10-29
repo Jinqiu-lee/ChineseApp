@@ -652,8 +652,8 @@ export function CultureCard({ item }) {
   // Step numbers come from the blocks this lesson actually carries. Lesson 11
   // has listen/notice/discover/try and still reads 1-4; Lesson 12 adds the
   // five-phase cycle and the seasons and reads 1-6, with no hard-coded digits.
-  const order = ['listen', 'notice', 'discover', 'cycle', 'seasons', 'try']
-    .filter(k => item[k]);
+  const order = ['listen', 'notice', 'discover', 'forms', 'cycle', 'destructive',
+                 'journey', 'seasons', 'idioms', 'shop', 'try'].filter(k => item[k]);
   const no = (k) => order.indexOf(k) + 1;
   // 五行 reads far faster as a picture than as a glyph, so each element can
   // carry an emoji. Lessons without the map simply show the character alone.
@@ -701,33 +701,156 @@ export function CultureCard({ item }) {
         </View>
       ) : null}
 
-      {item.cycle && (
+      {/* 相生 and 相克 are the same five elements read two ways, so they share
+          a renderer. The arrow is tinted on the countering cycle — two
+          identical columns of 木 → 土 rows would be hard to tell apart, and
+          the diagram above already distinguishes them by arrow. */}
+      {[['cycle', item.cycle, false], ['destructive', item.destructive, true]]
+        .filter(([, block]) => block)
+        .map(([key, block, counters]) => (
+          <View key={key} style={{ gap: 10 }}>
+            <Text style={s.stepLabel}>{no(key)} · {block.title}</Text>
+            {block.intro ? <Text style={s.body}>{block.intro}</Text> : null}
+            {getLessonImage(block.picture) ? (
+              <View style={s.pictureWide}><Picture value={block.picture} height={300} /></View>
+            ) : null}
+            {/* Each step is its own tappable line: 木 → 火, and what that means. */}
+            {block.steps.map((st, i) => (
+              <TouchableOpacity
+                key={i}
+                style={s.cycleRow}
+                onPress={() => speakChinese(st.audio_text, 'female', st.pinyin)}
+                activeOpacity={0.8}
+              >
+                <View style={s.cycleCell}>
+                  {emo(st.from) ? <Text style={s.cycleEmoji}>{emo(st.from)}</Text> : null}
+                  <Text style={s.cycleGlyph}>{st.from}</Text>
+                </View>
+                <Text style={[s.cycleArrow, counters && s.cycleArrowCounter]}>→</Text>
+                <View style={s.cycleCell}>
+                  {emo(st.to) ? <Text style={s.cycleEmoji}>{emo(st.to)}</Text> : null}
+                  <Text style={s.cycleGlyph}>{st.to}</Text>
+                </View>
+                <Text style={s.cycleText}>{st.text}</Text>
+              </TouchableOpacity>
+            ))}
+          </View>
+        ))}
+
+      {/* One character, more than one way of writing it — 钱 beside 錢, and
+          the component that links them. */}
+      {item.forms && (
         <View style={{ gap: 10 }}>
-          <Text style={s.stepLabel}>{no('cycle')} · {item.cycle.title}</Text>
-          {item.cycle.intro ? <Text style={s.body}>{item.cycle.intro}</Text> : null}
-          {getLessonImage(item.cycle.picture) ? (
-            <View style={s.pictureWide}><Picture value={item.cycle.picture} height={300} /></View>
+          <Text style={s.stepLabel}>{no('forms')} · {item.forms.title}</Text>
+          {item.forms.intro ? <Text style={s.body}>{item.forms.intro}</Text> : null}
+          {getLessonImage(item.forms.picture) ? (
+            <View style={s.pictureWide}><Picture value={item.forms.picture} height={180} /></View>
           ) : null}
-          {/* Each step is its own tappable line: 木 → 火, and what that means. */}
-          {item.cycle.steps.map((st, i) => (
-            <TouchableOpacity
-              key={i}
-              style={s.cycleRow}
-              onPress={() => speakChinese(st.audio_text, 'female', st.pinyin)}
-              activeOpacity={0.8}
-            >
-              <View style={s.cycleCell}>
-                {emo(st.from) ? <Text style={s.cycleEmoji}>{emo(st.from)}</Text> : null}
-                <Text style={s.cycleGlyph}>{st.from}</Text>
+          <View style={s.formsRow}>
+            {item.forms.items.map((f, i) => (
+              <TouchableOpacity
+                key={i}
+                style={s.formCard}
+                onPress={() => f.audio_text && speakChinese(f.audio_text, 'female', f.pinyin)}
+                activeOpacity={f.audio_text ? 0.8 : 1}
+              >
+                <Text style={s.formGlyph}>{f.character}</Text>
+                <Text style={s.formLabel}>{f.label}</Text>
+                {f.note ? <Text style={s.formNote}>{f.note}</Text> : null}
+              </TouchableOpacity>
+            ))}
+          </View>
+        </View>
+      )}
+
+      {/* A story told in order — shells, then coins, then notes. */}
+      {item.journey && (
+        <View style={{ gap: 10 }}>
+          <Text style={s.stepLabel}>{no('journey')} · {item.journey.title}</Text>
+          {item.journey.intro ? <Text style={s.body}>{item.journey.intro}</Text> : null}
+          {item.journey.steps.map((st, i) => (
+            <View key={i} style={s.journeyRow}>
+              <View style={s.journeyMark}>
+                <Text style={s.journeyEmoji}>{st.emoji}</Text>
+                {i < item.journey.steps.length - 1 ? <Text style={s.journeyTail}>↓</Text> : null}
               </View>
-              <Text style={s.cycleArrow}>→</Text>
-              <View style={s.cycleCell}>
-                {emo(st.to) ? <Text style={s.cycleEmoji}>{emo(st.to)}</Text> : null}
-                <Text style={s.cycleGlyph}>{st.to}</Text>
+              <View style={{ flex: 1, gap: 6 }}>
+                <Text style={s.journeyLabel}>{st.label}</Text>
+                {st.text ? <Text style={s.body}>{st.text}</Text> : null}
+                {getLessonImage(st.picture) ? (
+                  <View style={s.pictureWide}><Picture value={st.picture} height={140} /></View>
+                ) : null}
               </View>
-              <Text style={s.cycleText}>{st.text}</Text>
-            </TouchableOpacity>
+            </View>
           ))}
+        </View>
+      )}
+
+      {/* 成语 — four characters that mean one thing together. Each glyph keeps
+          its own reading and sense underneath, because the whole point of
+          口是心非 is what the individual characters are doing. */}
+      {item.idioms && (
+        <View style={{ gap: 10 }}>
+          <Text style={s.stepLabel}>{no('idioms')} · {item.idioms.title}</Text>
+          {item.idioms.intro ? <Text style={s.body}>{item.idioms.intro}</Text> : null}
+          {item.idioms.items.map((id, i) => (
+            <View key={i} style={s.idiomCard}>
+              <TouchableOpacity
+                style={s.idiomRow}
+                onPress={() => speakChinese(id.audio_text || id.idiom, 'female', id.pinyin)}
+                activeOpacity={0.8}
+              >
+                {(id.chars || []).map((c, j) => (
+                  <View key={j} style={s.idiomCell}>
+                    <Text style={s.idiomGlyph}>{c.character}</Text>
+                    <Text style={s.idiomCellPy}>{c.pinyin}</Text>
+                    <Text style={s.idiomCellEn}>{c.meaning}</Text>
+                  </View>
+                ))}
+              </TouchableOpacity>
+              <Text style={s.idiomPinyin}>{id.pinyin}</Text>
+              {id.literal ? <Text style={s.idiomLiteral}>literally: {id.literal}</Text> : null}
+              <Text style={s.idiomMeaning}>{id.meaning}</Text>
+              {getLessonImage(id.illustration) ? (
+                <View style={s.pictureWide}><Picture value={id.illustration} height={170} /></View>
+              ) : null}
+              {id.note ? <Text style={s.body}>{id.note}</Text> : null}
+              {id.example ? (
+                <View style={s.idiomEg}>
+                  <Text style={s.idiomEgCn}>{id.example.text}</Text>
+                  <Text style={s.idiomEgPy}>{id.example.pinyin}</Text>
+                  <Text style={s.idiomEgEn}>{id.example.meaning}</Text>
+                </View>
+              ) : null}
+            </View>
+          ))}
+        </View>
+      )}
+
+      {/* Prices on a shelf, so the question that follows has something to
+          read them off. */}
+      {item.shop && (
+        <View style={{ gap: 10 }}>
+          <Text style={s.stepLabel}>{no('shop')} · {item.shop.title}</Text>
+          {item.shop.intro ? <Text style={s.body}>{item.shop.intro}</Text> : null}
+          <View style={s.shelfRow}>
+            {item.shop.items.map((it, i) => (
+              <TouchableOpacity
+                key={i}
+                style={s.shelfCard}
+                onPress={() => speakChinese(it.audio_text || it.word, 'female', it.pinyin)}
+                activeOpacity={0.8}
+              >
+                {getLessonImage(it.picture)
+                  ? <Picture value={it.picture} height={84} zoomable={false} />
+                  : <Text style={s.shelfEmoji}>{it.picture}</Text>}
+                <Text style={s.shelfCn}>{it.word}</Text>
+                <Text style={s.shelfPy}>{it.pinyin}</Text>
+                <Text style={s.shelfPrice}>{it.price}</Text>
+                <Text style={s.shelfPriceCn}>{it.price_cn}</Text>
+              </TouchableOpacity>
+            ))}
+          </View>
         </View>
       )}
 
@@ -973,6 +1096,7 @@ const s = StyleSheet.create({
   cycleEmoji: { fontSize: 18 },
   cycleGlyph: { fontSize: 24, fontWeight: '900', color: DEEP_NAVY },
   cycleArrow: { fontSize: 16, color: WARM_BROWN },
+  cycleArrowCounter: { color: '#C4503A', fontWeight: '900' },
   cycleText:  { flex: 1, fontSize: 14, color: SLATE_TEAL, lineHeight: 19 },
 
   seasonRow: {
@@ -980,6 +1104,50 @@ const s = StyleSheet.create({
     paddingHorizontal: 12, paddingVertical: 8,
     borderRadius: 12, borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
   },
+  formsRow:   { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
+  formCard: {
+    flex: 1, minWidth: 92, alignItems: 'center', gap: 2, paddingVertical: 12,
+    borderRadius: 12, backgroundColor: '#FFF8ED',
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.22)',
+  },
+  formGlyph: { fontSize: 38, fontWeight: '900', color: DEEP_NAVY },
+  formLabel: { fontSize: 13, fontWeight: '800', color: WARM_ORANGE, textAlign: 'center' },
+  formNote:  { fontSize: 12, color: SLATE_TEAL, textAlign: 'center', paddingHorizontal: 6 },
+
+  journeyRow:   { flexDirection: 'row', gap: 12 },
+  journeyMark:  { alignItems: 'center', width: 34 },
+  journeyEmoji: { fontSize: 26 },
+  journeyTail:  { fontSize: 16, color: WARM_BROWN, marginTop: 2 },
+  journeyLabel: { fontSize: 15, fontWeight: '800', color: DEEP_NAVY },
+
+  idiomCard: {
+    gap: 6, padding: 12, borderRadius: 12, backgroundColor: '#FFF8ED',
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.22)',
+  },
+  idiomRow:     { flexDirection: 'row', gap: 6 },
+  idiomCell:    { flex: 1, alignItems: 'center' },
+  idiomGlyph:   { fontSize: 30, fontWeight: '900', color: DEEP_NAVY },
+  idiomCellPy:  { fontSize: 12, fontWeight: '700', color: WARM_BROWN },
+  idiomCellEn:  { fontSize: 11, color: SLATE_TEAL, textAlign: 'center' },
+  idiomPinyin:  { fontSize: 15, fontWeight: '800', color: WARM_BROWN, textAlign: 'center', marginTop: 4 },
+  idiomLiteral: { fontSize: 13, fontStyle: 'italic', color: SLATE_TEAL, textAlign: 'center' },
+  idiomMeaning: { fontSize: 16, fontWeight: '800', color: WARM_ORANGE, textAlign: 'center' },
+  idiomEg:   { gap: 2, backgroundColor: CARD_WHITE, borderRadius: 10, padding: 10 },
+  idiomEgCn: { fontSize: 17, fontWeight: '800', color: DEEP_NAVY },
+  idiomEgPy: { fontSize: 13, fontWeight: '700', color: WARM_BROWN },
+  idiomEgEn: { fontSize: 13, color: SLATE_TEAL },
+
+  shelfRow:  { flexDirection: 'row', gap: 10 },
+  shelfCard: {
+    flex: 1, alignItems: 'center', gap: 2, padding: 10, borderRadius: 12,
+    backgroundColor: CARD_WHITE, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.25)',
+  },
+  shelfEmoji:   { fontSize: 46 },
+  shelfCn:      { fontSize: 20, fontWeight: '900', color: DEEP_NAVY, marginTop: 4 },
+  shelfPy:      { fontSize: 13, fontWeight: '700', color: WARM_BROWN },
+  shelfPrice:   { fontSize: 22, fontWeight: '900', color: WARM_ORANGE, marginTop: 2 },
+  shelfPriceCn: { fontSize: 13, fontWeight: '700', color: SLATE_TEAL },
+
   seasonEmoji: { fontSize: 22 },
   seasonGlyph: { fontSize: 28, fontWeight: '900', color: DEEP_NAVY, width: 36, textAlign: 'center' },
   seasonLabel: { fontSize: 15, fontWeight: '800', color: DEEP_NAVY },

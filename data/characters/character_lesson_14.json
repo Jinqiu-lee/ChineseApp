@@ -1,0 +1,1728 @@
+{
+  "id": 14,
+  "part": 2,
+  "title": "Lesson 14 · Speech, Heart and Eye",
+  "emoji": "❤️",
+  "subtitle": "言 心 目 · 言字旁 竖心旁 目字旁",
+  "description": "Three more characters become radicals, and six new characters built from them.",
+  "new_strokes": [],
+  "new_characters": [
+    "说",
+    "话",
+    "谁",
+    "情",
+    "眼",
+    "睛"
+  ],
+  "new_words": [
+    "说话",
+    "心情",
+    "眼睛",
+    "谁的"
+  ],
+  "learn_content": {
+    "part1_blocks": {
+      "title": "Discover",
+      "subtitle": "独体字 · Characters that stand alone",
+      "intro": "Three more characters that began as pictures — a mouth speaking, a heart, an eye.",
+      "blocks": [
+        {
+          "character": "言",
+          "pinyin": "yán",
+          "meaning": "speech",
+          "audio_text": "言",
+          "picture": "💬",
+          "note": "A mouth with lines rising out of it — sound leaving the lips.",
+          "match": {
+            "prompt_picture": "💬",
+            "choices": [
+              "言",
+              "心",
+              "目"
+            ],
+            "correct": "言"
+          }
+        },
+        {
+          "character": "心",
+          "pinyin": "xīn",
+          "meaning": "heart",
+          "audio_text": "心",
+          "picture": "❤️",
+          "note": "A heart drawn from life, its chambers and the vessel above.",
+          "match": {
+            "prompt_picture": "❤️",
+            "choices": [
+              "言",
+              "心",
+              "目"
+            ],
+            "correct": "心"
+          }
+        },
+        {
+          "character": "目",
+          "pinyin": "mù",
+          "meaning": "eye (classical)",
+          "audio_text": "目",
+          "picture": "👁️",
+          "note": "An eye stood on end. The two middle strokes are the pupil.",
+          "match": {
+            "prompt_picture": "👁️",
+            "choices": [
+              "言",
+              "心",
+              "目"
+            ],
+            "correct": "目"
+          }
+        }
+      ],
+      "match": {
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "💬",
+            "character": "言"
+          },
+          {
+            "picture": "❤️",
+            "character": "心"
+          },
+          {
+            "picture": "👁️",
+            "character": "目"
+          }
+        ]
+      }
+    },
+    "part2_components": {
+      "title": "Decode",
+      "subtitle": "部件与部首 · Components and radicals",
+      "caveat": "A radical tells you what a character is about — not exactly what it means.",
+      "components": [
+        {
+          "radical": "讠",
+          "name": "言字旁",
+          "pinyin": "yán zì páng",
+          "name_en": "the speech radical",
+          "audio_text": "言字旁",
+          "from": {
+            "character": "言",
+            "pinyin": "yán",
+            "meaning": "speech"
+          },
+          "hint": "言 loses its mouth and shrinks to two strokes on the left — 讠.",
+          "characters": [
+            {
+              "character": "说",
+              "pinyin": "shuō",
+              "meaning": "to speak",
+              "audio_text": "说"
+            },
+            {
+              "character": "话",
+              "pinyin": "huà",
+              "meaning": "words",
+              "audio_text": "话"
+            },
+            {
+              "character": "谁",
+              "pinyin": "shéi",
+              "meaning": "who",
+              "audio_text": "谁"
+            }
+          ],
+          "find": {
+            "question": "Which part of 说 is the radical?",
+            "choices": [
+              "讠",
+              "兑",
+              "忄",
+              "目"
+            ],
+            "correct": "讠"
+          },
+          "reveal": {
+            "category": "things made of words",
+            "note": "Speaking, words, and asking who — none of them happen in silence."
+          }
+        },
+        {
+          "radical": "忄",
+          "name": "竖心旁 · 心字底",
+          "pinyin": "shù xīn páng",
+          "name_en": "the heart radical, standing or sitting",
+          "audio_text": "竖心旁",
+          "from": {
+            "character": "心",
+            "pinyin": "xīn",
+            "meaning": "heart"
+          },
+          "hint": "心 has two shapes. Beside a character it stands up thin as 忄 — 情. Underneath one it keeps its own form, 心, as in 想 \"to think\", which you will meet in Part 5.",
+          "characters": [
+            {
+              "character": "情",
+              "pinyin": "qíng",
+              "meaning": "feeling",
+              "audio_text": "情"
+            }
+          ],
+          "find": {
+            "question": "心 does not always look the same. Which two shapes can the heart radical take?",
+            "choices": [
+              "忄",
+              "心",
+              "讠",
+              "目"
+            ],
+            "correct": [
+              "忄",
+              "心"
+            ]
+          },
+          "reveal": {
+            "category": "what goes on inside",
+            "note": "A character carrying 忄 or 心 is about feeling or thinking — 情 is how you feel."
+          }
+        },
+        {
+          "radical": "目",
+          "name": "目字旁",
+          "pinyin": "mù zì páng",
+          "name_en": "the eye radical",
+          "audio_text": "目字旁",
+          "from": {
+            "character": "目",
+            "pinyin": "mù",
+            "meaning": "eye (classical)"
+          },
+          "hint": "目 narrows a little and stands on the left, keeping its shape.",
+          "characters": [
+            {
+              "character": "眼",
+              "pinyin": "yǎn",
+              "meaning": "eye",
+              "audio_text": "眼"
+            },
+            {
+              "character": "睛",
+              "pinyin": "jīng",
+              "meaning": "eyeball",
+              "audio_text": "睛"
+            }
+          ],
+          "find": {
+            "question": "Which part of 眼 is the radical?",
+            "choices": [
+              "目",
+              "艮",
+              "讠",
+              "忄"
+            ],
+            "correct": "目"
+          },
+          "reveal": {
+            "category": "the eye itself",
+            "note": "眼 and 睛 both carry 目, and together they make the word for eyes."
+          }
+        }
+      ],
+      "radical_audio": {
+        "讠": {
+          "text": "言字旁",
+          "pinyin": "yán zì páng"
+        },
+        "忄": {
+          "text": "竖心旁",
+          "pinyin": "shù xīn páng"
+        },
+        "心": {
+          "text": "心字底",
+          "pinyin": "xīn zì dǐ"
+        },
+        "目": {
+          "text": "目字旁",
+          "pinyin": "mù zì páng"
+        }
+      },
+      "group": {
+        "question": "Which character does NOT carry 讠?",
+        "choices": [
+          "情",
+          "说",
+          "话",
+          "谁"
+        ],
+        "correct": "情",
+        "explain": "情 carries 忄. The other three are all made of words."
+      }
+    },
+    "part3_dialogue": {
+      "title": "Use",
+      "subtitle": "词语与情景对话 · Words and dialogue",
+      "characters": [
+        {
+          "character": "的",
+          "pinyin": "de",
+          "meaning": "belonging to",
+          "audio_text": "的"
+        }
+      ],
+      "words": [
+        {
+          "word": "说话",
+          "pinyin": "shuōhuà",
+          "meaning": "to speak",
+          "audio_text": "说话",
+          "built_from": "说 + 话"
+        },
+        {
+          "word": "心情",
+          "pinyin": "xīnqíng",
+          "meaning": "mood",
+          "audio_text": "心情",
+          "built_from": "心 + 情"
+        },
+        {
+          "word": "眼睛",
+          "pinyin": "yǎnjing",
+          "meaning": "eyes",
+          "audio_text": "眼睛",
+          "built_from": "眼 + 睛"
+        },
+        {
+          "word": "谁的",
+          "pinyin": "shéi de",
+          "meaning": "whose",
+          "audio_text": "谁的",
+          "built_from": "谁 + 的"
+        }
+      ],
+      "support_words": [
+        {
+          "word": "在",
+          "pinyin": "zài",
+          "meaning": "in the middle of doing"
+        },
+        {
+          "word": "大",
+          "pinyin": "dà",
+          "meaning": "big"
+        },
+        {
+          "word": "好",
+          "pinyin": "hǎo",
+          "meaning": "good"
+        },
+        {
+          "word": "不好",
+          "pinyin": "bù hǎo",
+          "meaning": "not good"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "His eyes",
+          "goal": "的 眼睛",
+          "picture": "👁️",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "他的眼睛大吗？",
+              "pinyin": "tā de yǎnjing dà ma?",
+              "meaning": "Are his eyes big?",
+              "audio_text": "他的眼睛大吗"
+            },
+            {
+              "speaker": "B",
+              "text": "他的眼睛大。",
+              "pinyin": "tā de yǎnjing dà.",
+              "meaning": "His eyes are big.",
+              "audio_text": "他的眼睛大"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "他的眼睛大。",
+            "pinyin": "tā de yǎnjing dà.",
+            "meaning": "His eyes are big.",
+            "audio_text": "他的眼睛大"
+          },
+          "speak": {
+            "question": "Build it: his eyes are big.",
+            "tiles": [
+              "眼睛",
+              "他的",
+              "我的",
+              "大"
+            ],
+            "answer": [
+              "他的",
+              "眼睛",
+              "大"
+            ],
+            "result": "他的眼睛大。",
+            "pinyin": "tā de yǎnjing dà."
+          }
+        },
+        {
+          "title": "Moods",
+          "goal": "心情 好 不好",
+          "picture": "❤️",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "我心情好。",
+              "pinyin": "wǒ xīnqíng hǎo.",
+              "meaning": "I am in a good mood.",
+              "audio_text": "我心情好"
+            },
+            {
+              "speaker": "B",
+              "text": "她心情不好。",
+              "pinyin": "tā xīnqíng bù hǎo.",
+              "meaning": "She is in a bad mood.",
+              "audio_text": "她心情不好"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我心情好。",
+            "pinyin": "wǒ xīnqíng hǎo.",
+            "meaning": "I am in a good mood.",
+            "audio_text": "我心情好"
+          },
+          "speak": {
+            "question": "Build it: she is in a bad mood.",
+            "tiles": [
+              "心情",
+              "不好",
+              "好",
+              "她"
+            ],
+            "answer": [
+              "她",
+              "心情",
+              "不好"
+            ],
+            "result": "她心情不好。",
+            "pinyin": "tā xīnqíng bù hǎo."
+          }
+        },
+        {
+          "title": "Who is talking?",
+          "goal": "谁 在 说话",
+          "picture": "💬",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "谁在说话？",
+              "pinyin": "shéi zài shuōhuà?",
+              "meaning": "Who is talking?",
+              "audio_text": "谁在说话"
+            },
+            {
+              "speaker": "B",
+              "text": "我妈妈在说话。",
+              "pinyin": "wǒ māma zài shuōhuà.",
+              "meaning": "My mum is talking.",
+              "audio_text": "我妈妈在说话"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我妈妈在说话。",
+            "pinyin": "wǒ māma zài shuōhuà.",
+            "meaning": "My mum is talking.",
+            "audio_text": "我妈妈在说话"
+          },
+          "speak": {
+            "question": "Build it: who is talking?",
+            "tiles": [
+              "说话",
+              "在",
+              "我",
+              "谁"
+            ],
+            "answer": [
+              "谁",
+              "在",
+              "说话"
+            ],
+            "result": "谁在说话？",
+            "pinyin": "shéi zài shuōhuà?"
+          }
+        }
+      ],
+      "read_aloud": {
+        "title": "Say them yourself",
+        "intro": "Listen, then read each one aloud.",
+        "items": [
+          {
+            "text": "说话",
+            "pinyin": "shuōhuà",
+            "meaning": "to speak",
+            "audio_text": "说话"
+          },
+          {
+            "text": "心情",
+            "pinyin": "xīnqíng",
+            "meaning": "mood",
+            "audio_text": "心情"
+          },
+          {
+            "text": "眼睛",
+            "pinyin": "yǎnjing",
+            "meaning": "eyes",
+            "audio_text": "眼睛"
+          }
+        ]
+      }
+    },
+    "part4_write": {
+      "title": "Write",
+      "subtitle": "汉字书写 · Write every character in this lesson",
+      "characters": [
+        "心",
+        "目",
+        "言",
+        "说",
+        "谁"
+      ]
+    },
+    "part5_culture": {
+      "title": "Discover Chinese",
+      "subtitle": "汉字探秘 · Culture and language insights",
+      "topic": "心里有什么？",
+      "topic_en": "What's inside the heart?",
+      "picture": "l14-p5-xin",
+      "listen": {
+        "intro": "The heart, and the two shapes it takes. Tap each to hear it.",
+        "items": [
+          {
+            "character": "心",
+            "pinyin": "xīn",
+            "meaning": "heart",
+            "audio_text": "心"
+          },
+          {
+            "character": "情",
+            "pinyin": "qíng",
+            "meaning": "feeling",
+            "audio_text": "情"
+          },
+          {
+            "character": "心情",
+            "pinyin": "xīnqíng",
+            "meaning": "mood",
+            "audio_text": "心情"
+          }
+        ]
+      },
+      "notice": "In Chinese the heart is not only where feeling lives — it is where thinking lives too. A character carrying 心 or 忄 may be about an emotion, or about a thought.",
+      "discover": "That is why 想 means \"to think\" and not \"to love\": the heart underneath it is doing the thinking. Four-character sayings called 成语 chéngyǔ lean on this constantly — the heart stands in for the whole inner life.",
+      "idioms": {
+        "title": "成语 · Four characters, one idea",
+        "intro": "Two sayings built on 心. Tap either to hear it.",
+        "items": [
+          {
+            "idiom": "心想事成",
+            "pinyin": "xīn xiǎng shì chéng",
+            "audio_text": "心想事成",
+            "literal": "heart thinks — matter becomes",
+            "meaning": "May your wishes come true",
+            "illustration": "l14-p5-xinxiangshicheng-art",
+            "chars": [
+              {
+                "character": "心",
+                "pinyin": "xīn",
+                "meaning": "heart"
+              },
+              {
+                "character": "想",
+                "pinyin": "xiǎng",
+                "meaning": "to think"
+              },
+              {
+                "character": "事",
+                "pinyin": "shì",
+                "meaning": "matter"
+              },
+              {
+                "character": "成",
+                "pinyin": "chéng",
+                "meaning": "to become"
+              }
+            ],
+            "note": "A New Year greeting you will see on red envelopes and doorways. 想 is 心 sitting underneath — the heart doing the thinking.",
+            "example": {
+              "text": "祝你心想事成！",
+              "pinyin": "Zhù nǐ xīn xiǎng shì chéng!",
+              "meaning": "Wishing you all your wishes come true!"
+            }
+          },
+          {
+            "idiom": "口是心非",
+            "pinyin": "kǒu shì xīn fēi",
+            "audio_text": "口是心非",
+            "literal": "mouth yes — heart no",
+            "meaning": "Saying one thing while thinking another",
+            "illustration": "l14-p5-koushixinfei-art",
+            "chars": [
+              {
+                "character": "口",
+                "pinyin": "kǒu",
+                "meaning": "mouth"
+              },
+              {
+                "character": "是",
+                "pinyin": "shì",
+                "meaning": "yes / is"
+              },
+              {
+                "character": "心",
+                "pinyin": "xīn",
+                "meaning": "heart"
+              },
+              {
+                "character": "非",
+                "pinyin": "fēi",
+                "meaning": "no / not"
+              }
+            ],
+            "note": "The mouth agrees and the heart disagrees. Not quite lying — more the polite \"yes\" you give when you mean no.",
+            "example": {
+              "text": "他说他很好，可是他口是心非。",
+              "pinyin": "Tā shuō tā hěn hǎo, kěshì tā kǒu shì xīn fēi.",
+              "meaning": "He says he is fine, but he does not mean it."
+            }
+          }
+        ]
+      },
+      "try": {
+        "intro": "Which saying fits?",
+        "items": [
+          {
+            "sentence": "她说「好」，心里想「不好」。",
+            "pinyin": "Tā shuō \"hǎo\", xīnlǐ xiǎng \"bù hǎo\".",
+            "meaning": "She says \"fine\", but inside she thinks \"not fine\".",
+            "choices": [
+              "口是心非",
+              "心想事成"
+            ],
+            "correct": "口是心非"
+          },
+          {
+            "sentence": "新年快乐！祝你___！",
+            "pinyin": "Xīnnián kuàilè! Zhù nǐ ___!",
+            "meaning": "Happy New Year! Wishing you ___!",
+            "choices": [
+              "心想事成",
+              "口是心非"
+            ],
+            "correct": "心想事成"
+          }
+        ]
+      }
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "言",
+      "audio_text": "言",
+      "correct": "speech",
+      "choices": [
+        "to speak",
+        "words",
+        "speech",
+        "heart"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "言",
+      "correct": "言",
+      "choices": [
+        "情",
+        "睛",
+        "言",
+        "说"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "speech",
+      "correct": "言",
+      "choices": [
+        "心",
+        "情",
+        "言",
+        "目"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "言",
+      "audio_text": "言",
+      "correct": "yán",
+      "choices": [
+        "yán",
+        "yǎn",
+        "qíng",
+        "shéi"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yán",
+      "correct": "言",
+      "choices": [
+        "言",
+        "目",
+        "睛",
+        "心"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "心",
+      "audio_text": "心",
+      "correct": "heart",
+      "choices": [
+        "words",
+        "speech",
+        "belonging to",
+        "heart"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "心",
+      "correct": "心",
+      "choices": [
+        "眼",
+        "的",
+        "言",
+        "心"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "heart",
+      "correct": "心",
+      "choices": [
+        "说",
+        "情",
+        "谁",
+        "心"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "心",
+      "audio_text": "心",
+      "correct": "xīn",
+      "choices": [
+        "shuō",
+        "mù",
+        "xīn",
+        "yán"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "xīn",
+      "correct": "心",
+      "choices": [
+        "话",
+        "谁",
+        "心",
+        "言"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "目",
+      "audio_text": "目",
+      "correct": "eye (classical)",
+      "choices": [
+        "belonging to",
+        "eye (classical)",
+        "feeling",
+        "heart"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "目",
+      "correct": "目",
+      "choices": [
+        "睛",
+        "心",
+        "目",
+        "言"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "eye (classical)",
+      "correct": "目",
+      "choices": [
+        "眼",
+        "目",
+        "谁",
+        "的"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "目",
+      "audio_text": "目",
+      "correct": "mù",
+      "choices": [
+        "de",
+        "mù",
+        "yán",
+        "yǎn"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "mù",
+      "correct": "目",
+      "choices": [
+        "言",
+        "目",
+        "心",
+        "睛"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "说",
+      "audio_text": "说",
+      "correct": "to speak",
+      "choices": [
+        "to speak",
+        "speech",
+        "words",
+        "who"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "说",
+      "correct": "说",
+      "choices": [
+        "说",
+        "睛",
+        "情",
+        "心"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to speak",
+      "correct": "说",
+      "choices": [
+        "说",
+        "言",
+        "情",
+        "心"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "说",
+      "audio_text": "说",
+      "correct": "shuō",
+      "choices": [
+        "shuō",
+        "qíng",
+        "mù",
+        "shéi"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shuō",
+      "correct": "说",
+      "choices": [
+        "睛",
+        "的",
+        "眼",
+        "说"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "话",
+      "audio_text": "话",
+      "correct": "words",
+      "choices": [
+        "to speak",
+        "eye",
+        "words",
+        "eye (classical)"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "话",
+      "correct": "话",
+      "choices": [
+        "眼",
+        "言",
+        "话",
+        "谁"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "words",
+      "correct": "话",
+      "choices": [
+        "目",
+        "言",
+        "话",
+        "的"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "话",
+      "audio_text": "话",
+      "correct": "huà",
+      "choices": [
+        "yǎn",
+        "shuō",
+        "yán",
+        "huà"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "huà",
+      "correct": "话",
+      "choices": [
+        "话",
+        "目",
+        "说",
+        "谁"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "谁",
+      "audio_text": "谁",
+      "correct": "who",
+      "choices": [
+        "who",
+        "belonging to",
+        "to speak",
+        "words"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "谁",
+      "correct": "谁",
+      "choices": [
+        "情",
+        "谁",
+        "心",
+        "的"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "who",
+      "correct": "谁",
+      "choices": [
+        "睛",
+        "心",
+        "谁",
+        "情"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "谁",
+      "audio_text": "谁",
+      "correct": "shéi",
+      "choices": [
+        "de",
+        "huà",
+        "jīng",
+        "shéi"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shéi",
+      "correct": "谁",
+      "choices": [
+        "谁",
+        "睛",
+        "话",
+        "情"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "情",
+      "audio_text": "情",
+      "correct": "feeling",
+      "choices": [
+        "belonging to",
+        "feeling",
+        "speech",
+        "eye (classical)"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "情",
+      "correct": "情",
+      "choices": [
+        "睛",
+        "谁",
+        "眼",
+        "情"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "feeling",
+      "correct": "情",
+      "choices": [
+        "目",
+        "情",
+        "睛",
+        "谁"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "情",
+      "audio_text": "情",
+      "correct": "qíng",
+      "choices": [
+        "yǎn",
+        "mù",
+        "qíng",
+        "yán"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "qíng",
+      "correct": "情",
+      "choices": [
+        "心",
+        "谁",
+        "话",
+        "情"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "眼",
+      "audio_text": "眼",
+      "correct": "eye",
+      "choices": [
+        "to speak",
+        "eye",
+        "belonging to",
+        "words"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "眼",
+      "correct": "眼",
+      "choices": [
+        "言",
+        "的",
+        "心",
+        "眼"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "eye",
+      "correct": "眼",
+      "choices": [
+        "话",
+        "睛",
+        "心",
+        "眼"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "眼",
+      "audio_text": "眼",
+      "correct": "yǎn",
+      "choices": [
+        "mù",
+        "yǎn",
+        "shéi",
+        "de"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yǎn",
+      "correct": "眼",
+      "choices": [
+        "心",
+        "眼",
+        "的",
+        "谁"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "睛",
+      "audio_text": "睛",
+      "correct": "eyeball",
+      "choices": [
+        "eye (classical)",
+        "eyeball",
+        "who",
+        "heart"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "睛",
+      "correct": "睛",
+      "choices": [
+        "言",
+        "睛",
+        "情",
+        "眼"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "eyeball",
+      "correct": "睛",
+      "choices": [
+        "话",
+        "睛",
+        "言",
+        "说"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "睛",
+      "audio_text": "睛",
+      "correct": "jīng",
+      "choices": [
+        "huà",
+        "jīng",
+        "mù",
+        "de"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "jīng",
+      "correct": "睛",
+      "choices": [
+        "话",
+        "睛",
+        "目",
+        "心"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "的",
+      "audio_text": "的",
+      "correct": "belonging to",
+      "choices": [
+        "belonging to",
+        "heart",
+        "eyeball",
+        "eye (classical)"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "的",
+      "correct": "的",
+      "choices": [
+        "言",
+        "的",
+        "心",
+        "情"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "belonging to",
+      "correct": "的",
+      "choices": [
+        "心",
+        "目",
+        "的",
+        "言"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "的",
+      "audio_text": "的",
+      "correct": "de",
+      "choices": [
+        "shéi",
+        "jīng",
+        "de",
+        "mù"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "de",
+      "correct": "的",
+      "choices": [
+        "的",
+        "目",
+        "说",
+        "谁"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "说",
+      "audio_text": "说",
+      "correct": "讠",
+      "choices": [
+        "扌",
+        "土",
+        "讠",
+        "钅"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "话",
+      "audio_text": "话",
+      "correct": "讠",
+      "choices": [
+        "扌",
+        "忄",
+        "钅",
+        "讠"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "谁",
+      "audio_text": "谁",
+      "correct": "讠",
+      "choices": [
+        "讠",
+        "扌",
+        "土",
+        "氵"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "情",
+      "audio_text": "情",
+      "correct": "忄",
+      "choices": [
+        "忄",
+        "心",
+        "土",
+        "目"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "眼",
+      "audio_text": "眼",
+      "correct": "目",
+      "choices": [
+        "目",
+        "土",
+        "讠",
+        "钅"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "睛",
+      "audio_text": "睛",
+      "correct": "目",
+      "choices": [
+        "忄",
+        "讠",
+        "心",
+        "目"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "说话",
+      "audio_text": "说话",
+      "correct": "to speak",
+      "choices": [
+        "mood",
+        "whose",
+        "to speak",
+        "eyes"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "说话",
+      "correct": "说话",
+      "choices": [
+        "眼睛",
+        "说话",
+        "谁的",
+        "心情"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "心情",
+      "audio_text": "心情",
+      "correct": "mood",
+      "choices": [
+        "eyes",
+        "mood",
+        "whose",
+        "to speak"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "心情",
+      "correct": "心情",
+      "choices": [
+        "心情",
+        "说话",
+        "眼睛",
+        "谁的"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "眼睛",
+      "audio_text": "眼睛",
+      "correct": "eyes",
+      "choices": [
+        "mood",
+        "eyes",
+        "whose",
+        "to speak"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "眼睛",
+      "correct": "眼睛",
+      "choices": [
+        "眼睛",
+        "说话",
+        "心情",
+        "谁的"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "谁的",
+      "audio_text": "谁的",
+      "correct": "whose",
+      "choices": [
+        "eyes",
+        "to speak",
+        "mood",
+        "whose"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "谁的",
+      "correct": "谁的",
+      "choices": [
+        "谁的",
+        "眼睛",
+        "说话",
+        "心情"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "言",
+          "pinyin": "yán",
+          "english": "speech"
+        },
+        {
+          "id": 2,
+          "chinese": "心",
+          "pinyin": "xīn",
+          "english": "heart"
+        },
+        {
+          "id": 3,
+          "chinese": "目",
+          "pinyin": "mù",
+          "english": "eye (classical)"
+        },
+        {
+          "id": 4,
+          "chinese": "说",
+          "pinyin": "shuō",
+          "english": "to speak"
+        },
+        {
+          "id": 5,
+          "chinese": "话",
+          "pinyin": "huà",
+          "english": "words"
+        }
+      ],
+      "correct": "char:言心目说话",
+      "choices": [
+        "speech",
+        "heart",
+        "eye (classical)",
+        "to speak",
+        "words"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "谁",
+          "pinyin": "shéi",
+          "english": "who"
+        },
+        {
+          "id": 2,
+          "chinese": "情",
+          "pinyin": "qíng",
+          "english": "feeling"
+        },
+        {
+          "id": 3,
+          "chinese": "眼",
+          "pinyin": "yǎn",
+          "english": "eye"
+        },
+        {
+          "id": 4,
+          "chinese": "睛",
+          "pinyin": "jīng",
+          "english": "eyeball"
+        },
+        {
+          "id": 5,
+          "chinese": "的",
+          "pinyin": "de",
+          "english": "belonging to"
+        }
+      ],
+      "correct": "char:谁情眼睛的",
+      "choices": [
+        "who",
+        "feeling",
+        "eye",
+        "eyeball",
+        "belonging to"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "说",
+          "pinyin": "shuō",
+          "english": "to speak"
+        },
+        {
+          "id": 2,
+          "chinese": "话",
+          "pinyin": "huà",
+          "english": "words"
+        },
+        {
+          "id": 3,
+          "chinese": "谁",
+          "pinyin": "shéi",
+          "english": "who"
+        },
+        {
+          "id": 4,
+          "chinese": "情",
+          "pinyin": "qíng",
+          "english": "feeling"
+        },
+        {
+          "id": 5,
+          "chinese": "眼",
+          "pinyin": "yǎn",
+          "english": "eye"
+        }
+      ],
+      "correct": "char:说话谁情眼",
+      "choices": [
+        "to speak",
+        "words",
+        "who",
+        "feeling",
+        "eye"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "说话",
+          "pinyin": "shuōhuà",
+          "english": "to speak"
+        },
+        {
+          "id": 2,
+          "chinese": "心情",
+          "pinyin": "xīnqíng",
+          "english": "mood"
+        },
+        {
+          "id": 3,
+          "chinese": "眼睛",
+          "pinyin": "yǎnjing",
+          "english": "eyes"
+        },
+        {
+          "id": 4,
+          "chinese": "谁的",
+          "pinyin": "shéi de",
+          "english": "whose"
+        }
+      ],
+      "correct": "word:说话心情眼睛谁的",
+      "choices": [
+        "to speak",
+        "mood",
+        "eyes",
+        "whose"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "说",
+        null
+      ],
+      "correct": "话",
+      "choices": [
+        "心",
+        "目",
+        "谁",
+        "话"
+      ],
+      "result_word": "说话",
+      "result_pinyin": "shuōhuà",
+      "result_meaning": "to speak",
+      "audio_text": "说话"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "心",
+        null
+      ],
+      "correct": "情",
+      "choices": [
+        "睛",
+        "情",
+        "眼",
+        "话"
+      ],
+      "result_word": "心情",
+      "result_pinyin": "xīnqíng",
+      "result_meaning": "mood",
+      "audio_text": "心情"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "眼",
+        null
+      ],
+      "correct": "睛",
+      "choices": [
+        "话",
+        "睛",
+        "情",
+        "的"
+      ],
+      "result_word": "眼睛",
+      "result_pinyin": "yǎnjing",
+      "result_meaning": "eyes",
+      "audio_text": "眼睛"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "谁",
+        null
+      ],
+      "correct": "的",
+      "choices": [
+        "的",
+        "情",
+        "话",
+        "睛"
+      ],
+      "result_word": "谁的",
+      "result_pinyin": "shéi de",
+      "result_meaning": "whose",
+      "audio_text": "谁的"
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "His eyes are big.",
+      "tiles": [
+        "眼睛",
+        "我的",
+        "他的",
+        "大"
+      ],
+      "answer": [
+        "他的",
+        "眼睛",
+        "大"
+      ],
+      "result": "他的眼睛大。",
+      "pinyin": "tā de yǎnjing dà.",
+      "correct": "他的眼睛大",
+      "choices": [
+        "他的眼睛大"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I am in a good mood.",
+      "tiles": [
+        "心情",
+        "不好",
+        "我",
+        "好"
+      ],
+      "answer": [
+        "我",
+        "心情",
+        "好"
+      ],
+      "result": "我心情好。",
+      "pinyin": "wǒ xīnqíng hǎo.",
+      "correct": "我心情好",
+      "choices": [
+        "我心情好"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "She is in a bad mood.",
+      "tiles": [
+        "不好",
+        "心情",
+        "她",
+        "好"
+      ],
+      "answer": [
+        "她",
+        "心情",
+        "不好"
+      ],
+      "result": "她心情不好。",
+      "pinyin": "tā xīnqíng bù hǎo.",
+      "correct": "她心情不好",
+      "choices": [
+        "她心情不好"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "Who is talking?",
+      "tiles": [
+        "说话",
+        "在",
+        "我",
+        "谁"
+      ],
+      "answer": [
+        "谁",
+        "在",
+        "说话"
+      ],
+      "result": "谁在说话？",
+      "pinyin": "shéi zài shuōhuà?",
+      "correct": "谁在说话",
+      "choices": [
+        "谁在说话"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "说话",
+      "audio_text": "说话",
+      "pinyin": "shuōhuà",
+      "meaning": "to speak",
+      "correct": "说话",
+      "choices": [
+        "说话"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "心情",
+      "audio_text": "心情",
+      "pinyin": "xīnqíng",
+      "meaning": "mood",
+      "correct": "心情",
+      "choices": [
+        "心情"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "眼睛",
+      "audio_text": "眼睛",
+      "pinyin": "yǎnjing",
+      "meaning": "eyes",
+      "correct": "眼睛",
+      "choices": [
+        "眼睛"
+      ]
+    }
+  ]
+}

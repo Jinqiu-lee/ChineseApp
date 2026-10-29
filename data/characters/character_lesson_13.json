@@ -1,0 +1,1771 @@
+{
+  "id": 13,
+  "part": 2,
+  "title": "Lesson 13 · Metal, Earth and Hand",
+  "emoji": "🪙",
+  "subtitle": "金 土 手 · 金字旁 土字旁 提手旁",
+  "description": "Three more characters become radicals, and five new characters built from them.",
+  "new_strokes": [],
+  "new_characters": [
+    "钱",
+    "地",
+    "块",
+    "打",
+    "扫"
+  ],
+  "new_words": [
+    "金钱",
+    "多少钱",
+    "一块钱",
+    "十块钱",
+    "打扫",
+    "扫地"
+  ],
+  "learn_content": {
+    "part1_blocks": {
+      "title": "Discover",
+      "subtitle": "独体字 · Characters that stand alone",
+      "intro": "Three more characters that began as pictures. Watch each one become the character it is today.",
+      "blocks": [
+        {
+          "character": "金",
+          "pinyin": "jīn",
+          "meaning": "metal / gold",
+          "audio_text": "金",
+          "picture": "🪙",
+          "note": "Metal under a roof, with two nuggets buried beneath it.",
+          "match": {
+            "prompt_picture": "🪙",
+            "choices": [
+              "金",
+              "土",
+              "手"
+            ],
+            "correct": "金"
+          }
+        },
+        {
+          "character": "土",
+          "pinyin": "tǔ",
+          "meaning": "earth / soil",
+          "audio_text": "土",
+          "picture": "⛰️",
+          "note": "A mound of earth pressed up out of the ground.",
+          "match": {
+            "prompt_picture": "⛰️",
+            "choices": [
+              "金",
+              "土",
+              "手"
+            ],
+            "correct": "土"
+          }
+        },
+        {
+          "character": "手",
+          "pinyin": "shǒu",
+          "meaning": "hand",
+          "audio_text": "手",
+          "picture": "✋",
+          "note": "A hand with its fingers spread, drawn from the wrist up.",
+          "match": {
+            "prompt_picture": "✋",
+            "choices": [
+              "金",
+              "土",
+              "手"
+            ],
+            "correct": "手"
+          }
+        }
+      ],
+      "match": {
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "🪙",
+            "character": "金"
+          },
+          {
+            "picture": "⛰️",
+            "character": "土"
+          },
+          {
+            "picture": "✋",
+            "character": "手"
+          }
+        ]
+      }
+    },
+    "part2_components": {
+      "title": "Decode",
+      "subtitle": "部件与部首 · Components and radicals",
+      "caveat": "A radical tells you what a character is made of or done with — not what it means.",
+      "components": [
+        {
+          "radical": "钅",
+          "name": "金字旁",
+          "pinyin": "jīn zì páng",
+          "name_en": "the metal radical",
+          "audio_text": "金字旁",
+          "from": {
+            "character": "金",
+            "pinyin": "jīn",
+            "meaning": "metal / gold"
+          },
+          "hint": "金 loses its spread and stands thin on the left — 钅. The metal is still in there.",
+          "characters": [
+            {
+              "character": "钱",
+              "pinyin": "qián",
+              "meaning": "money",
+              "audio_text": "钱"
+            }
+          ],
+          "find": {
+            "question": "Which part of 钱 is the radical?",
+            "choices": [
+              "钅",
+              "戋",
+              "土",
+              "扌"
+            ],
+            "correct": "钅"
+          },
+          "reveal": {
+            "category": "metal, and what it buys",
+            "note": "钱 is money — and money, for most of Chinese history, was metal."
+          }
+        },
+        {
+          "radical": "土",
+          "name": "土字旁",
+          "pinyin": "tǔ zì páng",
+          "name_en": "the earth radical",
+          "audio_text": "土字旁",
+          "from": {
+            "character": "土",
+            "pinyin": "tǔ",
+            "meaning": "earth / soil"
+          },
+          "hint": "土 keeps its shape beside a character, its last stroke lifting into a 提.",
+          "characters": [
+            {
+              "character": "地",
+              "pinyin": "dì",
+              "meaning": "ground",
+              "audio_text": "地"
+            },
+            {
+              "character": "块",
+              "pinyin": "kuài",
+              "meaning": "a piece",
+              "audio_text": "块"
+            }
+          ],
+          "find": {
+            "question": "Which part of 地 is the radical?",
+            "choices": [
+              "土",
+              "也",
+              "钅",
+              "扌"
+            ],
+            "correct": "土"
+          },
+          "reveal": {
+            "category": "ground, and pieces of it",
+            "note": "地 is the ground itself. 块 is a lump broken off it — which is why it counts money."
+          }
+        },
+        {
+          "radical": "扌",
+          "name": "提手旁",
+          "pinyin": "tí shǒu páng",
+          "name_en": "the hand radical",
+          "audio_text": "提手旁",
+          "from": {
+            "character": "手",
+            "pinyin": "shǒu",
+            "meaning": "hand"
+          },
+          "hint": "手 drops a stroke and stands up narrow on the left — 扌.",
+          "characters": [
+            {
+              "character": "打",
+              "pinyin": "dǎ",
+              "meaning": "to hit",
+              "audio_text": "打"
+            },
+            {
+              "character": "扫",
+              "pinyin": "sǎo",
+              "meaning": "to sweep",
+              "audio_text": "扫"
+            }
+          ],
+          "find": {
+            "question": "Which part of 打 is the radical?",
+            "choices": [
+              "扌",
+              "丁",
+              "手",
+              "土"
+            ],
+            "correct": "扌"
+          },
+          "reveal": {
+            "category": "things you do with your hands",
+            "note": "Hitting, sweeping — both need a hand, so both carry one."
+          }
+        }
+      ],
+      "radical_audio": {
+        "钅": {
+          "text": "金字旁",
+          "pinyin": "jīn zì páng"
+        },
+        "土": {
+          "text": "土字旁",
+          "pinyin": "tǔ zì páng"
+        },
+        "扌": {
+          "text": "提手旁",
+          "pinyin": "tí shǒu páng"
+        }
+      },
+      "group": {
+        "question": "Which of these carries the metal radical 钅?",
+        "choices": [
+          "钱",
+          "地",
+          "打",
+          "扫"
+        ],
+        "correct": "钱",
+        "explain": "钱 alone. 地 and 块 carry 土; 打 and 扫 carry 扌."
+      }
+    },
+    "part3_dialogue": {
+      "title": "Use",
+      "subtitle": "词语与情景对话 · Words and dialogue",
+      "characters": [
+        {
+          "character": "多",
+          "pinyin": "duō",
+          "meaning": "many",
+          "audio_text": "多"
+        },
+        {
+          "character": "少",
+          "pinyin": "shǎo",
+          "meaning": "few / little",
+          "audio_text": "少"
+        }
+      ],
+      "words": [
+        {
+          "word": "金钱",
+          "pinyin": "jīnqián",
+          "meaning": "money, as wealth",
+          "audio_text": "金钱",
+          "built_from": "金 + 钱"
+        },
+        {
+          "word": "多少钱",
+          "pinyin": "duōshao qián",
+          "meaning": "how much is it?",
+          "audio_text": "多少钱",
+          "built_from": "多少 + 钱"
+        },
+        {
+          "word": "一块钱",
+          "pinyin": "yí kuài qián",
+          "meaning": "one yuan",
+          "audio_text": "一块钱",
+          "built_from": "一 + 块 + 钱"
+        },
+        {
+          "word": "十块钱",
+          "pinyin": "shí kuài qián",
+          "meaning": "ten yuan",
+          "audio_text": "十块钱",
+          "built_from": "十 + 块 + 钱"
+        },
+        {
+          "word": "打扫",
+          "pinyin": "dǎsǎo",
+          "meaning": "to clean up",
+          "audio_text": "打扫",
+          "built_from": "打 + 扫"
+        },
+        {
+          "word": "扫地",
+          "pinyin": "sǎo dì",
+          "meaning": "to sweep the floor",
+          "audio_text": "扫地",
+          "built_from": "扫 + 地"
+        }
+      ],
+      "support_words": [
+        {
+          "word": "多少",
+          "pinyin": "duōshao",
+          "meaning": "how much / how many"
+        },
+        {
+          "word": "在",
+          "pinyin": "zài",
+          "meaning": "in the middle of doing"
+        },
+        {
+          "word": "做",
+          "pinyin": "zuò",
+          "meaning": "to do"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "How much?",
+          "goal": "多少钱 一块钱 十块钱",
+          "picture": "🪙",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "水多少钱？",
+              "pinyin": "shuǐ duōshao qián?",
+              "meaning": "How much is the water?",
+              "audio_text": "水多少钱"
+            },
+            {
+              "speaker": "B",
+              "text": "水一块钱。",
+              "pinyin": "shuǐ yí kuài qián.",
+              "meaning": "The water is one yuan.",
+              "audio_text": "水一块钱"
+            },
+            {
+              "speaker": "A",
+              "text": "炒饭多少钱？",
+              "pinyin": "chǎofàn duōshao qián?",
+              "meaning": "How much is the fried rice?",
+              "audio_text": "炒饭多少钱"
+            },
+            {
+              "speaker": "B",
+              "text": "炒饭十块钱。",
+              "pinyin": "chǎofàn shí kuài qián.",
+              "meaning": "The fried rice is ten yuan.",
+              "audio_text": "炒饭十块钱"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "炒饭多少钱？",
+            "pinyin": "chǎofàn duōshao qián?",
+            "meaning": "How much is the fried rice?",
+            "audio_text": "炒饭多少钱"
+          },
+          "speak": {
+            "question": "Build it: how much is the fried rice?",
+            "tiles": [
+              "多少钱",
+              "一块钱",
+              "炒饭"
+            ],
+            "answer": [
+              "炒饭",
+              "多少钱"
+            ],
+            "result": "炒饭多少钱？",
+            "pinyin": "chǎofàn duōshao qián?"
+          }
+        },
+        {
+          "title": "What are you doing?",
+          "goal": "在 做 打扫",
+          "picture": "🧹",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你在做什么？",
+              "pinyin": "nǐ zài zuò shénme?",
+              "meaning": "What are you doing?",
+              "audio_text": "你在做什么"
+            },
+            {
+              "speaker": "B",
+              "text": "我在打扫。",
+              "pinyin": "wǒ zài dǎsǎo.",
+              "meaning": "I am cleaning.",
+              "audio_text": "我在打扫"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我在打扫。",
+            "pinyin": "wǒ zài dǎsǎo.",
+            "meaning": "I am cleaning.",
+            "audio_text": "我在打扫"
+          },
+          "speak": {
+            "question": "Build it: I am cleaning.",
+            "tiles": [
+              "打扫",
+              "在",
+              "你",
+              "我"
+            ],
+            "answer": [
+              "我",
+              "在",
+              "打扫"
+            ],
+            "result": "我在打扫。",
+            "pinyin": "wǒ zài dǎsǎo."
+          }
+        },
+        {
+          "title": "Sweeping the floor",
+          "goal": "扫地",
+          "picture": "🏠",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你扫地吗？",
+              "pinyin": "nǐ sǎo dì ma?",
+              "meaning": "Do you sweep the floor?",
+              "audio_text": "你扫地吗"
+            },
+            {
+              "speaker": "B",
+              "text": "我扫地！",
+              "pinyin": "wǒ sǎo dì!",
+              "meaning": "I sweep the floor!",
+              "audio_text": "我扫地"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我扫地！",
+            "pinyin": "wǒ sǎo dì!",
+            "meaning": "I sweep the floor!",
+            "audio_text": "我扫地"
+          },
+          "speak": {
+            "question": "Build it: I sweep the floor.",
+            "tiles": [
+              "扫地",
+              "打扫",
+              "我"
+            ],
+            "answer": [
+              "我",
+              "扫地"
+            ],
+            "result": "我扫地！",
+            "pinyin": "wǒ sǎo dì!"
+          }
+        }
+      ],
+      "read_aloud": {
+        "title": "Say them yourself",
+        "intro": "Listen, then read each one aloud.",
+        "items": [
+          {
+            "text": "多少钱",
+            "pinyin": "duōshao qián",
+            "meaning": "how much is it?",
+            "audio_text": "多少钱"
+          },
+          {
+            "text": "一块钱",
+            "pinyin": "yí kuài qián",
+            "meaning": "one yuan",
+            "audio_text": "一块钱"
+          },
+          {
+            "text": "打扫",
+            "pinyin": "dǎsǎo",
+            "meaning": "to clean up",
+            "audio_text": "打扫"
+          }
+        ]
+      }
+    },
+    "part4_write": {
+      "title": "Write",
+      "subtitle": "汉字书写 · Write every character in this lesson",
+      "characters": [
+        "金",
+        "土",
+        "手",
+        "打",
+        "地",
+        "钱"
+      ]
+    },
+    "part5_culture": {
+      "title": "Discover Chinese",
+      "subtitle": "汉字探秘 · Culture and language insights",
+      "topic": "钱从哪里来？",
+      "topic_en": "Where does money come from?",
+      "picture": "l13-p5-jin",
+      "listen": {
+        "intro": "Three words, one idea. Tap each to hear it.",
+        "items": [
+          {
+            "character": "金",
+            "pinyin": "jīn",
+            "meaning": "metal / gold",
+            "audio_text": "金"
+          },
+          {
+            "character": "钱",
+            "pinyin": "qián",
+            "meaning": "money",
+            "audio_text": "钱"
+          },
+          {
+            "character": "金钱",
+            "pinyin": "jīnqián",
+            "meaning": "money, as wealth",
+            "audio_text": "金钱"
+          }
+        ]
+      },
+      "notice": "Look at the left-hand side of 钱. That is 钅 — 金 squeezed thin. The character carries metal inside it.",
+      "discover": "For most of Chinese history money WAS metal: bronze coins, cast with a square hole so they could be strung together and carried in the thousands. A character for money built out of the character for metal is not a coincidence — it is a description.",
+      "forms": {
+        "title": "简体与繁体 · Two ways to write it",
+        "intro": "The simplified form is the one you are learning. The traditional form, still used in Taiwan and Hong Kong, keeps the whole of 金 on its left.",
+        "picture": "l13-p5-forms",
+        "items": [
+          {
+            "character": "钱",
+            "label": "simplified",
+            "pinyin": "qián",
+            "audio_text": "钱",
+            "note": "what you write"
+          },
+          {
+            "character": "錢",
+            "label": "traditional",
+            "pinyin": "qián",
+            "audio_text": "钱",
+            "note": "the full 金 on the left"
+          },
+          {
+            "character": "钅",
+            "label": "the metal clue",
+            "note": "金 as a radical"
+          }
+        ]
+      },
+      "journey": {
+        "title": "From shells to notes",
+        "intro": "What counted as money changed three times over.",
+        "steps": [
+          {
+            "emoji": "🐚",
+            "label": "Shells",
+            "text": "The earliest money of all — which is why 贝, the shell, still sits inside characters about buying and selling."
+          },
+          {
+            "emoji": "🪙",
+            "label": "Metal coins",
+            "text": "Bronze, round, square-holed, strung on a cord. This is the money 钱 was named for.",
+            "picture": "l13-p5-coins"
+          },
+          {
+            "emoji": "💴",
+            "label": "Notes and coins",
+            "text": "The money in your hand today — still counted in 块.",
+            "picture": "l13-p5-modern"
+          }
+        ]
+      },
+      "shop": {
+        "title": "小挑战 · Mini challenge",
+        "intro": "Two things for sale. Read the prices, then answer below.",
+        "items": [
+          {
+            "word": "水",
+            "pinyin": "shuǐ",
+            "audio_text": "水",
+            "picture": "💧",
+            "price": "¥1",
+            "price_cn": "一块钱"
+          },
+          {
+            "word": "炒饭",
+            "pinyin": "chǎofàn",
+            "audio_text": "炒饭",
+            "picture": "l13-p5-chaofan",
+            "price": "¥10",
+            "price_cn": "十块钱"
+          }
+        ]
+      },
+      "try": {
+        "intro": "Answer from the prices above.",
+        "items": [
+          {
+            "sentence": "炒饭多少钱？",
+            "pinyin": "Chǎofàn duōshao qián?",
+            "meaning": "How much is the fried rice?",
+            "choices": [
+              "十块钱",
+              "一块钱"
+            ],
+            "correct": "十块钱"
+          },
+          {
+            "sentence": "水多少钱？",
+            "pinyin": "Shuǐ duōshao qián?",
+            "meaning": "How much is the water?",
+            "choices": [
+              "一块钱",
+              "十块钱"
+            ],
+            "correct": "一块钱"
+          }
+        ]
+      }
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "金",
+      "audio_text": "金",
+      "correct": "metal / gold",
+      "choices": [
+        "metal / gold",
+        "to hit",
+        "to sweep",
+        "ground"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "金",
+      "correct": "金",
+      "choices": [
+        "打",
+        "钱",
+        "金",
+        "少"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "metal / gold",
+      "correct": "金",
+      "choices": [
+        "金",
+        "打",
+        "地",
+        "手"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "金",
+      "audio_text": "金",
+      "correct": "jīn",
+      "choices": [
+        "sǎo",
+        "jīn",
+        "dì",
+        "duō"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "jīn",
+      "correct": "金",
+      "choices": [
+        "手",
+        "少",
+        "块",
+        "金"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "土",
+      "audio_text": "土",
+      "correct": "earth / soil",
+      "choices": [
+        "a piece",
+        "many",
+        "money",
+        "earth / soil"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "土",
+      "correct": "土",
+      "choices": [
+        "手",
+        "土",
+        "打",
+        "地"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "earth / soil",
+      "correct": "土",
+      "choices": [
+        "土",
+        "手",
+        "地",
+        "扫"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "土",
+      "audio_text": "土",
+      "correct": "tǔ",
+      "choices": [
+        "tǔ",
+        "jīn",
+        "shǒu",
+        "dì"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "tǔ",
+      "correct": "土",
+      "choices": [
+        "土",
+        "金",
+        "地",
+        "块"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "手",
+      "audio_text": "手",
+      "correct": "hand",
+      "choices": [
+        "hand",
+        "earth / soil",
+        "metal / gold",
+        "many"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "手",
+      "correct": "手",
+      "choices": [
+        "地",
+        "手",
+        "块",
+        "多"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "hand",
+      "correct": "手",
+      "choices": [
+        "钱",
+        "扫",
+        "手",
+        "金"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "手",
+      "audio_text": "手",
+      "correct": "shǒu",
+      "choices": [
+        "jīn",
+        "shǒu",
+        "shǎo",
+        "sǎo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shǒu",
+      "correct": "手",
+      "choices": [
+        "多",
+        "块",
+        "手",
+        "钱"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "钱",
+      "audio_text": "钱",
+      "correct": "money",
+      "choices": [
+        "to sweep",
+        "metal / gold",
+        "money",
+        "to hit"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "钱",
+      "correct": "钱",
+      "choices": [
+        "多",
+        "手",
+        "金",
+        "钱"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "money",
+      "correct": "钱",
+      "choices": [
+        "打",
+        "块",
+        "钱",
+        "少"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "钱",
+      "audio_text": "钱",
+      "correct": "qián",
+      "choices": [
+        "dì",
+        "tǔ",
+        "qián",
+        "sǎo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "qián",
+      "correct": "钱",
+      "choices": [
+        "手",
+        "金",
+        "钱",
+        "扫"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "地",
+      "audio_text": "地",
+      "correct": "ground",
+      "choices": [
+        "metal / gold",
+        "hand",
+        "ground",
+        "a piece"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "地",
+      "correct": "地",
+      "choices": [
+        "地",
+        "扫",
+        "土",
+        "多"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "ground",
+      "correct": "地",
+      "choices": [
+        "金",
+        "地",
+        "块",
+        "打"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "地",
+      "audio_text": "地",
+      "correct": "dì",
+      "choices": [
+        "sǎo",
+        "jīn",
+        "dì",
+        "qián"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "dì",
+      "correct": "地",
+      "choices": [
+        "手",
+        "扫",
+        "钱",
+        "地"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "块",
+      "audio_text": "块",
+      "correct": "a piece",
+      "choices": [
+        "money",
+        "metal / gold",
+        "a piece",
+        "to sweep"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "块",
+      "correct": "块",
+      "choices": [
+        "土",
+        "块",
+        "少",
+        "钱"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a piece",
+      "correct": "块",
+      "choices": [
+        "手",
+        "块",
+        "少",
+        "土"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "块",
+      "audio_text": "块",
+      "correct": "kuài",
+      "choices": [
+        "kuài",
+        "shǒu",
+        "qián",
+        "jīn"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "kuài",
+      "correct": "块",
+      "choices": [
+        "金",
+        "多",
+        "手",
+        "块"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "打",
+      "audio_text": "打",
+      "correct": "to hit",
+      "choices": [
+        "many",
+        "ground",
+        "hand",
+        "to hit"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "打",
+      "correct": "打",
+      "choices": [
+        "钱",
+        "土",
+        "少",
+        "打"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to hit",
+      "correct": "打",
+      "choices": [
+        "块",
+        "打",
+        "多",
+        "钱"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "打",
+      "audio_text": "打",
+      "correct": "dǎ",
+      "choices": [
+        "jīn",
+        "dǎ",
+        "kuài",
+        "tǔ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "dǎ",
+      "correct": "打",
+      "choices": [
+        "打",
+        "金",
+        "手",
+        "多"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "扫",
+      "audio_text": "扫",
+      "correct": "to sweep",
+      "choices": [
+        "metal / gold",
+        "to sweep",
+        "many",
+        "to hit"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "扫",
+      "correct": "扫",
+      "choices": [
+        "打",
+        "多",
+        "扫",
+        "钱"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to sweep",
+      "correct": "扫",
+      "choices": [
+        "块",
+        "金",
+        "土",
+        "扫"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "扫",
+      "audio_text": "扫",
+      "correct": "sǎo",
+      "choices": [
+        "kuài",
+        "jīn",
+        "sǎo",
+        "duō"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "sǎo",
+      "correct": "扫",
+      "choices": [
+        "手",
+        "扫",
+        "钱",
+        "地"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "多",
+      "audio_text": "多",
+      "correct": "many",
+      "choices": [
+        "to hit",
+        "many",
+        "money",
+        "ground"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "多",
+      "correct": "多",
+      "choices": [
+        "金",
+        "土",
+        "手",
+        "多"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "many",
+      "correct": "多",
+      "choices": [
+        "扫",
+        "块",
+        "打",
+        "多"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "多",
+      "audio_text": "多",
+      "correct": "duō",
+      "choices": [
+        "tǔ",
+        "sǎo",
+        "dǎ",
+        "duō"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "duō",
+      "correct": "多",
+      "choices": [
+        "多",
+        "地",
+        "块",
+        "打"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "少",
+      "audio_text": "少",
+      "correct": "few / little",
+      "choices": [
+        "ground",
+        "few / little",
+        "metal / gold",
+        "hand"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "少",
+      "correct": "少",
+      "choices": [
+        "钱",
+        "手",
+        "少",
+        "打"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "few / little",
+      "correct": "少",
+      "choices": [
+        "地",
+        "多",
+        "扫",
+        "少"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "少",
+      "audio_text": "少",
+      "correct": "shǎo",
+      "choices": [
+        "shǎo",
+        "tǔ",
+        "qián",
+        "jīn"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shǎo",
+      "correct": "少",
+      "choices": [
+        "打",
+        "少",
+        "块",
+        "扫"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "钱",
+      "audio_text": "钱",
+      "correct": "钅",
+      "choices": [
+        "木",
+        "扌",
+        "灬",
+        "钅"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "地",
+      "audio_text": "地",
+      "correct": "土",
+      "choices": [
+        "土",
+        "扌",
+        "氵",
+        "口"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "块",
+      "audio_text": "块",
+      "correct": "土",
+      "choices": [
+        "土",
+        "火",
+        "氵",
+        "口"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "打",
+      "audio_text": "打",
+      "correct": "扌",
+      "choices": [
+        "扌",
+        "钅",
+        "氵",
+        "口"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "扫",
+      "audio_text": "扫",
+      "correct": "扌",
+      "choices": [
+        "木",
+        "氵",
+        "扌",
+        "土"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "金钱",
+      "audio_text": "金钱",
+      "correct": "money, as wealth",
+      "choices": [
+        "one yuan",
+        "how much is it?",
+        "money, as wealth",
+        "ten yuan"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "金钱",
+      "correct": "金钱",
+      "choices": [
+        "多少钱",
+        "打扫",
+        "扫地",
+        "金钱"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "多少钱",
+      "audio_text": "多少钱",
+      "correct": "how much is it?",
+      "choices": [
+        "ten yuan",
+        "how much is it?",
+        "to sweep the floor",
+        "one yuan"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "多少钱",
+      "correct": "多少钱",
+      "choices": [
+        "扫地",
+        "一块钱",
+        "多少钱",
+        "金钱"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "一块钱",
+      "audio_text": "一块钱",
+      "correct": "one yuan",
+      "choices": [
+        "to clean up",
+        "money, as wealth",
+        "ten yuan",
+        "one yuan"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "一块钱",
+      "correct": "一块钱",
+      "choices": [
+        "十块钱",
+        "扫地",
+        "打扫",
+        "一块钱"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "十块钱",
+      "audio_text": "十块钱",
+      "correct": "ten yuan",
+      "choices": [
+        "ten yuan",
+        "how much is it?",
+        "to clean up",
+        "money, as wealth"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "十块钱",
+      "correct": "十块钱",
+      "choices": [
+        "十块钱",
+        "多少钱",
+        "金钱",
+        "打扫"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "打扫",
+      "audio_text": "打扫",
+      "correct": "to clean up",
+      "choices": [
+        "one yuan",
+        "money, as wealth",
+        "to clean up",
+        "how much is it?"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "打扫",
+      "correct": "打扫",
+      "choices": [
+        "金钱",
+        "打扫",
+        "一块钱",
+        "十块钱"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "扫地",
+      "audio_text": "扫地",
+      "correct": "to sweep the floor",
+      "choices": [
+        "how much is it?",
+        "one yuan",
+        "to sweep the floor",
+        "ten yuan"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "扫地",
+      "correct": "扫地",
+      "choices": [
+        "金钱",
+        "一块钱",
+        "扫地",
+        "多少钱"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "金",
+          "pinyin": "jīn",
+          "english": "metal / gold"
+        },
+        {
+          "id": 2,
+          "chinese": "土",
+          "pinyin": "tǔ",
+          "english": "earth / soil"
+        },
+        {
+          "id": 3,
+          "chinese": "手",
+          "pinyin": "shǒu",
+          "english": "hand"
+        },
+        {
+          "id": 4,
+          "chinese": "钱",
+          "pinyin": "qián",
+          "english": "money"
+        },
+        {
+          "id": 5,
+          "chinese": "地",
+          "pinyin": "dì",
+          "english": "ground"
+        }
+      ],
+      "correct": "char:金土手钱地",
+      "choices": [
+        "metal / gold",
+        "earth / soil",
+        "hand",
+        "money",
+        "ground"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "块",
+          "pinyin": "kuài",
+          "english": "a piece"
+        },
+        {
+          "id": 2,
+          "chinese": "打",
+          "pinyin": "dǎ",
+          "english": "to hit"
+        },
+        {
+          "id": 3,
+          "chinese": "扫",
+          "pinyin": "sǎo",
+          "english": "to sweep"
+        },
+        {
+          "id": 4,
+          "chinese": "多",
+          "pinyin": "duō",
+          "english": "many"
+        },
+        {
+          "id": 5,
+          "chinese": "少",
+          "pinyin": "shǎo",
+          "english": "few / little"
+        }
+      ],
+      "correct": "char:块打扫多少",
+      "choices": [
+        "a piece",
+        "to hit",
+        "to sweep",
+        "many",
+        "few / little"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "金钱",
+          "pinyin": "jīnqián",
+          "english": "money, as wealth"
+        },
+        {
+          "id": 2,
+          "chinese": "多少钱",
+          "pinyin": "duōshao qián",
+          "english": "how much is it?"
+        },
+        {
+          "id": 3,
+          "chinese": "一块钱",
+          "pinyin": "yí kuài qián",
+          "english": "one yuan"
+        },
+        {
+          "id": 4,
+          "chinese": "十块钱",
+          "pinyin": "shí kuài qián",
+          "english": "ten yuan"
+        },
+        {
+          "id": 5,
+          "chinese": "打扫",
+          "pinyin": "dǎsǎo",
+          "english": "to clean up"
+        }
+      ],
+      "correct": "word:金钱多少钱一块钱十块钱打扫",
+      "choices": [
+        "money, as wealth",
+        "how much is it?",
+        "one yuan",
+        "ten yuan",
+        "to clean up"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "扫地",
+          "pinyin": "sǎo dì",
+          "english": "to sweep the floor"
+        },
+        {
+          "id": 2,
+          "chinese": "金钱",
+          "pinyin": "jīnqián",
+          "english": "money, as wealth"
+        },
+        {
+          "id": 3,
+          "chinese": "打扫",
+          "pinyin": "dǎsǎo",
+          "english": "to clean up"
+        },
+        {
+          "id": 4,
+          "chinese": "一块钱",
+          "pinyin": "yí kuài qián",
+          "english": "one yuan"
+        },
+        {
+          "id": 5,
+          "chinese": "十块钱",
+          "pinyin": "shí kuài qián",
+          "english": "ten yuan"
+        }
+      ],
+      "correct": "word:扫地金钱打扫一块钱十块钱",
+      "choices": [
+        "to sweep the floor",
+        "money, as wealth",
+        "to clean up",
+        "one yuan",
+        "ten yuan"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "金",
+        null
+      ],
+      "correct": "钱",
+      "choices": [
+        "地",
+        "钱",
+        "块",
+        "手"
+      ],
+      "result_word": "金钱",
+      "result_pinyin": "jīnqián",
+      "result_meaning": "money, as wealth",
+      "audio_text": "金钱"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "打",
+        null
+      ],
+      "correct": "扫",
+      "choices": [
+        "扫",
+        "块",
+        "地",
+        "手"
+      ],
+      "result_word": "打扫",
+      "result_pinyin": "dǎsǎo",
+      "result_meaning": "to clean up",
+      "audio_text": "打扫"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "扫",
+        null
+      ],
+      "correct": "地",
+      "choices": [
+        "地",
+        "钱",
+        "块",
+        "打"
+      ],
+      "result_word": "扫地",
+      "result_pinyin": "sǎo dì",
+      "result_meaning": "to sweep the floor",
+      "audio_text": "扫地"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "十",
+        "块",
+        null
+      ],
+      "correct": "钱",
+      "choices": [
+        "手",
+        "土",
+        "地",
+        "钱"
+      ],
+      "result_word": "十块钱",
+      "result_pinyin": "shí kuài qián",
+      "result_meaning": "ten yuan",
+      "audio_text": "十块钱"
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "The water is one yuan.",
+      "tiles": [
+        "一块钱",
+        "十块钱",
+        "水"
+      ],
+      "answer": [
+        "水",
+        "一块钱"
+      ],
+      "result": "水一块钱。",
+      "pinyin": "shuǐ yí kuài qián.",
+      "correct": "水一块钱",
+      "choices": [
+        "水一块钱"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "The fried rice is ten yuan.",
+      "tiles": [
+        "十块钱",
+        "炒饭",
+        "一块钱"
+      ],
+      "answer": [
+        "炒饭",
+        "十块钱"
+      ],
+      "result": "炒饭十块钱。",
+      "pinyin": "chǎofàn shí kuài qián.",
+      "correct": "炒饭十块钱",
+      "choices": [
+        "炒饭十块钱"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I am cleaning.",
+      "tiles": [
+        "打扫",
+        "我",
+        "在",
+        "扫地"
+      ],
+      "answer": [
+        "我",
+        "在",
+        "打扫"
+      ],
+      "result": "我在打扫。",
+      "pinyin": "wǒ zài dǎsǎo.",
+      "correct": "我在打扫",
+      "choices": [
+        "我在打扫"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I sweep the floor.",
+      "tiles": [
+        "扫地",
+        "我",
+        "打扫"
+      ],
+      "answer": [
+        "我",
+        "扫地"
+      ],
+      "result": "我扫地！",
+      "pinyin": "wǒ sǎo dì!",
+      "correct": "我扫地",
+      "choices": [
+        "我扫地"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "多少钱",
+      "audio_text": "多少钱",
+      "pinyin": "duōshao qián",
+      "meaning": "how much is it?",
+      "correct": "多少钱",
+      "choices": [
+        "多少钱"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "一块钱",
+      "audio_text": "一块钱",
+      "pinyin": "yí kuài qián",
+      "meaning": "one yuan",
+      "correct": "一块钱",
+      "choices": [
+        "一块钱"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "打扫",
+      "audio_text": "打扫",
+      "pinyin": "dǎsǎo",
+      "meaning": "to clean up",
+      "correct": "打扫",
+      "choices": [
+        "打扫"
+      ]
+    }
+  ]
+}

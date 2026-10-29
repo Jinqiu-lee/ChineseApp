@@ -55,6 +55,25 @@ const LESSON_IMAGES = {
   // ── Lesson 12 · Part 5 · 五行 ────────────────────────────────────────────
   'l12-p5-five-elements': require('./lesson_images/l12/l12-p5-five-elements.png'),
   'l12-p5-cycle':         require('./lesson_images/l12/l12-p5-cycle.webp'),
+
+  // ── Lesson 13 · Part 5 · 钱从哪里来 ──────────────────────────────────────
+  // Parts 1-4 still carry emoji; an emoji falls through getLessonImage and
+  // renders as text, which is the fallback this map was built around.
+  'l13-p5-jin':     require('./lesson_images/l13/l13-p5-jin.jpeg'),
+  'l13-p5-forms':   require('./lesson_images/l13/l13-p5-forms.jpeg'),
+  'l13-p5-coins':   require('./lesson_images/l13/l13-p5-coins.jpeg'),
+  'l13-p5-modern':  require('./lesson_images/l13/l13-p5-modern.jpeg'),
+  'l13-p5-chaofan': require('./lesson_images/l13/l13-p5-chaofan.jpeg'),
+
+  // ── Lesson 14 · Part 5 · 心里有什么 ──────────────────────────────────────
+  // Each 成语 has two pictures: the four characters themselves, and a drawing
+  // of what it means. The card shows the drawing; the characters are set in
+  // type above it, one cell each.
+  'l14-p5-xin':                 require('./lesson_images/l14/l14-p5-xin.jpeg'),
+  'l14-p5-xinxiangshicheng':    require('./lesson_images/l14/l14-p5-xinxiangshicheng.png'),
+  'l14-p5-xinxiangshicheng-art':require('./lesson_images/l14/l14-p5-xinxiangshicheng-art.jpg'),
+  'l14-p5-koushixinfei':        require('./lesson_images/l14/l14-p5-koushixinfei.jpeg'),
+  'l14-p5-koushixinfei-art':    require('./lesson_images/l14/l14-p5-koushixinfei-art.jpg'),
 };
 
 /** The asset for a key, or null when there is no artwork for it yet. */
