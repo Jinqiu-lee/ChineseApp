@@ -842,8 +842,12 @@ const s = StyleSheet.create({
   audioBigIcon: { fontSize: 40 },
 
   choices: { width: '100%', gap: 10, marginTop: 22 },
+  // minHeight, because not every answer carries an underline: one with a
+  // reading or a gloss gets the rule and its 4px gap, one without does not.
+  // Without a floor the buttons in a single question come out different
+  // heights and the shorter ones read as smaller.
   choice: {
-    flexDirection: 'row', alignItems: 'center',
+    flexDirection: 'row', alignItems: 'center', minHeight: 72,
     backgroundColor: CARD_WHITE, borderRadius: 14, paddingVertical: 14, paddingHorizontal: 18,
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.22)',
   },

@@ -258,7 +258,7 @@
         {
           "word": "山上",
           "pinyin": "shān shang",
-          "meaning": "up the mountain",
+          "meaning": "on the mountain",
           "audio_text": "山上",
           "built_from": "山 + 上"
         },
@@ -320,46 +320,46 @@
       ],
       "dialogues": [
         {
-          "title": "Here",
-          "goal": "这儿 小花 小草",
-          "picture": "🌼",
+          "title": "On the mountain",
+          "goal": "山上 小花 小草",
+          "picture": "l17-p3-on-the-mountain",
           "lines": [
             {
               "speaker": "A",
-              "text": "这儿有小花小草。",
-              "pinyin": "Zhèr yǒu xiǎo huā xiǎo cǎo.",
-              "meaning": "There are little flowers and grass here.",
-              "audio_text": "这儿有小花小草"
+              "text": "山上有小花小草。",
+              "pinyin": "Shān shang yǒu xiǎo huā xiǎo cǎo.",
+              "meaning": "There are little flowers and grass on the mountain.",
+              "audio_text": "山上有小花小草"
             }
           ],
           "read": {
             "intro": "Listen, then read it aloud.",
-            "text": "这儿有小花小草。",
-            "pinyin": "Zhèr yǒu xiǎo huā xiǎo cǎo.",
-            "meaning": "There are little flowers and grass here.",
-            "audio_text": "这儿有小花小草"
+            "text": "山上有小花小草。",
+            "pinyin": "Shān shang yǒu xiǎo huā xiǎo cǎo.",
+            "meaning": "There are little flowers and grass on the mountain.",
+            "audio_text": "山上有小花小草"
           },
           "speak": {
-            "question": "Build it: there are little flowers and grass here.",
+            "question": "There are little flowers and grass on the mountain.",
             "tiles": [
               "小花小草",
-              "山上",
+              "山下",
               "有",
-              "这儿"
+              "山上"
             ],
             "answer": [
-              "这儿",
+              "山上",
               "有",
               "小花小草"
             ],
-            "result": "这儿有小花小草。",
-            "pinyin": "Zhèr yǒu xiǎo huā xiǎo cǎo."
+            "result": "山上有小花小草。",
+            "pinyin": "Shān shang yǒu xiǎo huā xiǎo cǎo."
           }
         },
         {
           "title": "Where are you?",
           "goal": "在 哪儿 山上",
-          "picture": "⛰️",
+          "picture": "l17-p3-where-are-you",
           "lines": [
             {
               "speaker": "A",
@@ -403,7 +403,7 @@
         {
           "title": "Where are you going?",
           "goal": "去 哪儿 上山",
-          "picture": "🥾",
+          "picture": "l17-p3-where-going",
           "lines": [
             {
               "speaker": "A",
@@ -447,7 +447,7 @@
         {
           "title": "Something to drink",
           "goal": "喝茶",
-          "picture": "🍵",
+          "picture": "l17-p3-tea",
           "lines": [
             {
               "speaker": "A",
@@ -491,7 +491,7 @@
         {
           "title": "How old?",
           "goal": "几岁 六岁",
-          "picture": "🎂",
+          "picture": "l17-p3-how-old",
           "lines": [
             {
               "speaker": "A",
@@ -1579,23 +1579,23 @@
     },
     {
       "type": "sentence_build",
-      "prompt_en": "There are little flowers and grass here.",
+      "prompt_en": "There are little flowers and grass on the mountain.",
       "tiles": [
         "小花小草",
-        "山上",
+        "山下",
         "有",
-        "这儿"
+        "山上"
       ],
       "answer": [
-        "这儿",
+        "山上",
         "有",
         "小花小草"
       ],
-      "result": "这儿有小花小草。",
-      "pinyin": "Zhèr yǒu xiǎo huā xiǎo cǎo.",
-      "correct": "这儿有小花小草",
+      "result": "山上有小花小草。",
+      "pinyin": "Shān shang yǒu xiǎo huā xiǎo cǎo.",
+      "correct": "山上有小花小草",
       "choices": [
-        "这儿有小花小草"
+        "山上有小花小草"
       ]
     },
     {
@@ -1784,11 +1784,11 @@
     },
     {
       "type": "read_aloud",
-      "prompt_char": "这儿有小花小草。",
-      "audio_text": "这儿有小花小草",
-      "pinyin": "Zhèr yǒu xiǎo huā xiǎo cǎo.",
-      "meaning": "There are little flowers and grass here.",
-      "correct": "这儿有小花小草。",
+      "prompt_char": "山上有小花小草。",
+      "audio_text": "山上有小花小草",
+      "pinyin": "Shān shang yǒu xiǎo huā xiǎo cǎo.",
+      "meaning": "There are little flowers and grass on the mountain.",
+      "correct": "山上有小花小草。",
       "choices": [
         "这儿有小花小草。"
       ]

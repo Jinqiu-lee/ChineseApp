@@ -113,6 +113,15 @@ const LESSON_IMAGES = {
   'l15-p5-moon':        require('./lesson_images/l15/l15-p5-moon.jpeg'),
 
   // ── Lesson 16 · 耳 足, and the 阝 that is not an ear ─────────────────────
+  'l16-p1-er': require('./lesson_images/l16/l16-p1-er.png'),
+  'l16-p1-zu': require('./lesson_images/l16/l16-p1-zu.jpeg'),
+
+  // The 跳舞还是跑步 dialogue asks about two things, so it carries two
+  // pictures the way Lesson 12's 这/那 does.
+  'l16-p3-on-the-road': require('./lesson_images/l16/l16-p3-on-the-road.webp'),
+  'l16-p3-dancing':     require('./lesson_images/l16/l16-p3-dancing.png'),
+  'l16-p3-running':     require('./lesson_images/l16/l16-p3-running.webp'),
+
   'l16-p5-not-an-ear': require('./lesson_images/l16/l16-p5-not-an-ear.png'),
   'l16-p5-fu':         require('./lesson_images/l16/l16-p5-fu.png'),
   'l16-p5-mountains':  require('./lesson_images/l16/l16-p5-mountains.jpeg'),
@@ -121,6 +130,13 @@ const LESSON_IMAGES = {
   'l16-p5-chen':       require('./lesson_images/l16/l16-p5-chen.jpeg'),
 
   // ── Lesson 17 · 花 草 山, and the green world under 艹 ───────────────────
+  // Part 3 · one per dialogue
+  'l17-p3-on-the-mountain': require('./lesson_images/l17/l17-p3-on-the-mountain.jpg'),
+  'l17-p3-where-are-you':   require('./lesson_images/l17/l17-p3-where-are-you.jpg'),
+  'l17-p3-where-going':     require('./lesson_images/l17/l17-p3-where-going.webp'),
+  'l17-p3-tea':             require('./lesson_images/l17/l17-p3-tea.jpg'),
+  'l17-p3-how-old':         require('./lesson_images/l17/l17-p3-how-old.jpg'),
+
   'l17-p5-huacha':    require('./lesson_images/l17/l17-p5-huacha.jpeg'),
   'l17-p5-hua':       require('./lesson_images/l17/l17-p5-hua.jpeg'),
   'l17-p5-hua-bloom': require('./lesson_images/l17/l17-p5-hua-bloom.jpeg'),

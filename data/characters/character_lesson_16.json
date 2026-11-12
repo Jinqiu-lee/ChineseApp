@@ -36,10 +36,10 @@
           "pinyin": "ěr",
           "meaning": "ear",
           "audio_text": "耳",
-          "picture": "👂",
+          "picture": "l16-p1-er",
           "note": "An ear, drawn from the side — rim, lobe and all.",
           "match": {
-            "prompt_picture": "👂",
+            "prompt_picture": "l16-p1-er",
             "choices": [
               "耳",
               "足"
@@ -52,10 +52,10 @@
           "pinyin": "zú",
           "meaning": "foot",
           "audio_text": "足",
-          "picture": "🦶",
+          "picture": "l16-p1-zu",
           "note": "A foot below a knee: the square is the leg, the rest is the foot itself.",
           "match": {
-            "prompt_picture": "🦶",
+            "prompt_picture": "l16-p1-zu",
             "choices": [
               "耳",
               "足"
@@ -68,11 +68,11 @@
         "question": "Match each picture to its character.",
         "pairs": [
           {
-            "picture": "👂",
+            "picture": "l16-p1-er",
             "character": "耳"
           },
           {
-            "picture": "🦶",
+            "picture": "l16-p1-zu",
             "character": "足"
           }
         ]
@@ -418,7 +418,7 @@
         {
           "title": "Out on the road",
           "goal": "路上 都是 行人",
-          "picture": "🚶",
+          "picture": "l16-p3-on-the-road",
           "lines": [
             {
               "speaker": "A",
@@ -455,7 +455,6 @@
         {
           "title": "Dancing or running?",
           "goal": "跳舞 跑步 都行",
-          "picture": "💃",
           "lines": [
             {
               "speaker": "A",
@@ -496,7 +495,19 @@
             ],
             "result": "我们去跳舞还是跑步？",
             "pinyin": "Wǒmen qù tiàowǔ háishi pǎobù?"
-          }
+          },
+          "pictures": [
+            {
+              "picture": "l16-p3-dancing",
+              "label": "跳舞",
+              "caption": "tiàowǔ"
+            },
+            {
+              "picture": "l16-p3-running",
+              "label": "跑步",
+              "caption": "pǎobù"
+            }
+          ]
         }
       ],
       "read_aloud": {
