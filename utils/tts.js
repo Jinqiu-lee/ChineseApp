@@ -108,6 +108,10 @@ const COMPOUND_PHONEME_OVERRIDES = {
   // POLYPHONIC_RULES default excludes 旅 from háng triggers, but this compound
   // override is an extra safeguard so buildSSML always forces xing2 explicitly.
   '旅行': [['旅', 'lv3'], ['行', 'xing2']],
+  // 都 is dū (a capital) but dōu (all) in everyday use — the Characters
+  // course teaches the second. 行 is xíng here, not háng.
+  '都行': [['都', 'dou1'], ['行', 'xing2']],
+  '行人': [['行', 'xing2'], ['人', 'ren2']],
   // 大夫 — colloquial word for doctor: 大 is dài (dai4), not dà (da4)
   '大夫': [['大', 'dai4'], ['夫', 'fu0']],
   // 体重 — always zhòng4 (body weight); prevents word-boundary false trigger

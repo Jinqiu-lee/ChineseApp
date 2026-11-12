@@ -13,14 +13,14 @@
 // Part 4 is deliberately absent here: the lesson screen keeps using WritePart,
 // so stroke order is taught exactly as it was in lessons 1-10.
 
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet, Image, ActivityIndicator,
   Modal, useWindowDimensions,
 } from 'react-native';
 import StrokeAnimator from './StrokeAnimator';
 import { getLessonImage } from '../../data/characters/lessonImages';
-import { GlossSentence } from './Gloss';
+import { GlossSentence, Underlined } from './Gloss';
 import { speakChinese } from '../../utils/tts';
 import { startRecording, stopAndTranscribe, calculateAccuracy } from '../../utils/speechRecognition';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../../constants/colors';
@@ -102,25 +102,45 @@ function say(c, audioFor) {
   if (a) speakChinese(a.text, 'female', a.pinyin);
 }
 
-function Choices({ choices, correct, picked, onPick, big = false, labelFor, audioFor }) {
+function Choices({ choices, correct, picked, onPick, big = false, labelFor, audioFor, textStyle, revealFor, choiceStyle }) {
+  // Which answers have had their reading shown. The underline sits on the
+  // answer itself, so the word can be read before it is chosen; the padding
+  // around it stays the tap target for choosing.
+  const [shown, setShown] = useState({});
   return (
     <View style={s.choiceRow}>
       {choices.map(c => {
         const reveal = picked != null;
+        const read = revealFor ? revealFor(c) : null;
+        const body = (
+          <Text style={textStyle || (big ? s.choiceTextBig : s.choiceText)}>
+            {labelFor ? labelFor(c) : c}
+          </Text>
+        );
         return (
           <TouchableOpacity
             key={c}
             style={[
               s.choice,
+              choiceStyle,
+              read && s.choiceRoomy,
               reveal && c === correct && s.choiceRight,
               reveal && picked === c && c !== correct && s.choiceWrong,
             ]}
             onPress={() => { say(c, audioFor); if (picked == null) onPick(c); }}
             activeOpacity={0.8}
           >
-            <Text style={big ? s.choiceTextBig : s.choiceText}>
-              {labelFor ? labelFor(c) : c}
-            </Text>
+            {read ? (
+              <>
+                <TouchableOpacity
+                  onPress={() => { say(c, audioFor); setShown(h => ({ ...h, [c]: !h[c] })); }}
+                  activeOpacity={0.6}
+                >
+                  <Underlined color={DEEP_NAVY}>{body}</Underlined>
+                </TouchableOpacity>
+                {(shown[c] || reveal) && <Text style={s.choiceRead}>{read}</Text>}
+              </>
+            ) : body}
           </TouchableOpacity>
         );
       })}
@@ -131,7 +151,7 @@ function Choices({ choices, correct, picked, onPick, big = false, labelFor, audi
 // A question with more than one right answer: 火 is the fire radical beside a
 // character and 灬 is the same radical beneath one, so both have to be picked.
 // Selections toggle, and nothing is marked until Check is pressed.
-function MultiChoices({ choices, correct, chosen, setChosen, checked, onCheck, big = false, audioFor }) {
+function MultiChoices({ choices, correct, chosen, setChosen, checked, onCheck, big = false, audioFor, textStyle }) {
   return (
     <>
       <View style={s.choiceRow}>
@@ -154,7 +174,7 @@ function MultiChoices({ choices, correct, chosen, setChosen, checked, onCheck, b
               }}
               activeOpacity={0.8}
             >
-              <Text style={big ? s.choiceTextBig : s.choiceText}>{c}</Text>
+              <Text style={textStyle || (big ? s.choiceTextBig : s.choiceText)}>{c}</Text>
             </TouchableOpacity>
           );
         })}
@@ -229,7 +249,7 @@ export function BlockCard({ item }) {
 }
 
 // The round-up at the end of Part 1: every picture against every character.
-export function MatchCard({ item }) {
+export function MatchCard({ item, compact = false }) {
   const [picked, setPicked] = useState({});
   // Rows and answers both came out in data order, so row 1's answer was always
   // the first button and the card could be solved straight down the diagonal
@@ -254,6 +274,8 @@ export function MatchCard({ item }) {
                 correct={pair.character}
                 picked={got ?? null}
                 onPick={(c) => setPicked(p => ({ ...p, [pair.picture]: c }))}
+                textStyle={compact ? s.choiceTextSmall : null}
+                choiceStyle={compact ? s.choiceTight : null}
                 big
               />
             </View>
@@ -282,7 +304,14 @@ export function ComponentCard({ item, radicalAudio }) {
   const [checked, setChecked] = useState(false);
   // Answers that are radical shapes speak the radical's name; fragments like
   // 执 or 干 are not words and stay silent.
-  const findAudio = (c) => (radicalAudio || {})[c] || null;
+  const findAudio = (c) => ({ ...(radicalAudio || {}), ...(item.radical_audio || {}) })[c] || null;
+  // An answer that is a glyph reads at glyph size; an answer that is an
+  // English phrase — "on top", "on the left" — does not. Those match the
+  // question above them instead of towering over it.
+  // Glyph answers sit one step below the Part 1 size; worded answers keep the
+  // size of the question they answer, which is smaller again.
+  const findTextStyle = (item.find?.choices || []).some(c => /[\u4e00-\u9fff]/.test(c))
+    ? s.choiceTextSmall : s.findTextEn;
   const allRight = multi && checked
     && chosen.length === item.find.correct.length
     && chosen.every(c => item.find.correct.includes(c));
@@ -311,6 +340,12 @@ export function ComponentCard({ item, radicalAudio }) {
       </TouchableOpacity>
       <Text style={s.meaningEn}>{item.name_en}</Text>
       {item.hint ? <Text style={s.body}>{item.hint}</Text> : null}
+
+      {/* Optional: a chart of the radical in use. Lessons without one are
+          unchanged — an absent key just renders nothing. */}
+      {getLessonImage(item.picture) ? (
+        <View style={s.pictureWide}><Picture value={item.picture} height={190} /></View>
+      ) : null}
 
       {step === 0 && (
         <TouchableOpacity style={s.stepBtn} onPress={() => setStep(1)} activeOpacity={0.85}>
@@ -358,6 +393,7 @@ export function ComponentCard({ item, radicalAudio }) {
                 checked={checked}
                 onCheck={() => { setChecked(true); setStep(3); }}
                 audioFor={findAudio}
+                textStyle={findTextStyle}
                 big
               />
               {checked && (
@@ -379,6 +415,7 @@ export function ComponentCard({ item, radicalAudio }) {
                 picked={found}
                 onPick={(c) => { setFound(c); setStep(3); }}
                 audioFor={findAudio}
+                textStyle={findTextStyle}
                 big
               />
               <Feedback picked={found} correct={item.find.correct} />
@@ -401,12 +438,27 @@ export function ComponentCard({ item, radicalAudio }) {
 // Listen, then say it back. Same engine as the speaking exercises in the
 // Chinese Journey lessons — startRecording / stopAndTranscribe / accuracy —
 // in a card-sized shell rather than a full exercise screen.
-export function ReadAloud({ item }) {
+export function ReadAloud({ item, onBusy }) {
   const [phase, setPhase] = useState('idle');   // idle · recording · processing · result
   const [accuracy, setAccuracy] = useState(null);
   const recordingRef = useRef(null);
 
   const target = item.text;
+
+  // Tell whoever owns the Next button that the microphone is in use. Without
+  // this the parent cannot know, and moving on mid-recording leaves the
+  // recorder running — which is why the next question could not start one.
+  const busy = phase === 'recording' || phase === 'processing';
+  useEffect(() => { onBusy?.(busy); }, [busy]);
+
+  // Whatever happens — Next, Exit, a re-render that swaps the question —
+  // hand the microphone back, or nothing can record again.
+  useEffect(() => () => {
+    onBusy?.(false);
+    const rec = recordingRef.current;
+    recordingRef.current = null;
+    if (rec) rec.stopAndUnloadAsync?.().catch(() => {});
+  }, []);
 
   const begin = async () => {
     try {
@@ -444,7 +496,10 @@ export function ReadAloud({ item }) {
         onPress={() => speakChinese(item.audio_text || target, 'female', item.pinyin)}
         activeOpacity={0.8}
       >
-        <View style={{ flex: 1 }}>
+        {/* Laid out along the line rather than stacked: three short pieces of
+            text on top of each other made the box tall and narrow. They wrap
+            onto a second line only when the meaning is long. */}
+        <View style={s.readLine}>
           <Text style={s.readCn}>{target}</Text>
           <Text style={s.readPy}>{item.pinyin}</Text>
           <Text style={s.readEn}>{item.meaning}</Text>
@@ -647,13 +702,51 @@ export function DialogueCard({ item }) {
 }
 
 // ── Part 5 · 汉字探秘 ───────────────────────────────────────────────────────
+// Screen-4-style challenge: several right answers, nothing marked until Check.
+function FindAll({ item, label }) {
+  const [chosen, setChosen] = useState([]);
+  const [checked, setChecked] = useState(false);
+  const right = checked
+    && chosen.length === item.correct.length
+    && chosen.every(c => item.correct.includes(c));
+  return (
+    <View style={{ gap: 10 }}>
+      <Text style={s.stepLabel}>{label}</Text>
+      <Text style={s.q}>{item.question}</Text>
+      {item.intro ? <Text style={s.body}>{item.intro}</Text> : null}
+      <MultiChoices
+        choices={item.choices}
+        correct={item.correct}
+        chosen={chosen}
+        setChosen={setChosen}
+        checked={checked}
+        onCheck={() => setChecked(true)}
+        big
+      />
+      {checked && (
+        <>
+          <View style={[s.feedback, right ? s.feedbackRight : s.feedbackWrong]}>
+            <Text style={s.feedbackIcon}>{right ? '✓' : '✕'}</Text>
+            <Text style={[s.feedbackText, right ? s.feedbackTextRight : s.feedbackTextWrong]}>
+              {right ? `All of them — ${item.correct.join(' ')}`
+                     : `The ones with it are ${item.correct.join(' ')}`}
+            </Text>
+          </View>
+          {item.explain ? <Text style={s.body}>{item.explain}</Text> : null}
+        </>
+      )}
+    </View>
+  );
+}
+
 export function CultureCard({ item }) {
   const [answers, setAnswers] = useState({});
   // Step numbers come from the blocks this lesson actually carries. Lesson 11
   // has listen/notice/discover/try and still reads 1-4; Lesson 12 adds the
   // five-phase cycle and the seasons and reads 1-6, with no hard-coded digits.
-  const order = ['listen', 'notice', 'discover', 'forms', 'cycle', 'destructive',
-                 'journey', 'seasons', 'idioms', 'shop', 'try'].filter(k => item[k]);
+  const order = ['listen', 'notice', 'discover', 'gallery', 'forms', 'secrets',
+                 'cycle', 'destructive', 'journey', 'seasons', 'idioms', 'shop',
+                 'match', 'find_all', 'try'].filter(k => item[k]);
   const no = (k) => order.indexOf(k) + 1;
   // 五行 reads far faster as a picture than as a glyph, so each element can
   // carry an emoji. Lessons without the map simply show the character alone.
@@ -737,6 +830,32 @@ export function CultureCard({ item }) {
           </View>
         ))}
 
+      {/* A character and the thing it names, side by side. Carries the weight
+          a paragraph would otherwise have to. */}
+      {item.gallery && (
+        <View style={{ gap: 10 }}>
+          <Text style={s.stepLabel}>{no('gallery')} · {item.gallery.title}</Text>
+          {item.gallery.intro ? <Text style={s.body}>{item.gallery.intro}</Text> : null}
+          <View style={s.galleryRow}>
+            {item.gallery.items.map((g, i) => (
+              <TouchableOpacity
+                key={i}
+                style={s.galleryCard}
+                onPress={() => speakChinese(g.audio_text || g.character, 'female', g.pinyin)}
+                activeOpacity={0.8}
+              >
+                {getLessonImage(g.picture)
+                  ? <Picture value={g.picture} height={96} zoomable={false} />
+                  : <Text style={s.galleryEmoji}>{g.picture}</Text>}
+                <Text style={s.galleryCn}>{g.character}</Text>
+                <Text style={s.galleryPy}>{g.pinyin}</Text>
+                <Text style={s.galleryEn}>{g.meaning}</Text>
+              </TouchableOpacity>
+            ))}
+          </View>
+        </View>
+      )}
+
       {/* One character, more than one way of writing it — 钱 beside 錢, and
           the component that links them. */}
       {item.forms && (
@@ -789,6 +908,49 @@ export function CultureCard({ item }) {
       {/* 成语 — four characters that mean one thing together. Each glyph keeps
           its own reading and sense underneath, because the whole point of
           口是心非 is what the individual characters are doing. */}
+      {/* Two readings of one shape — 月 the moon and 月 the flesh. A card per
+          secret: the picture carries it, the chips show it at work. */}
+      {item.secrets && (
+        <View style={{ gap: 10 }}>
+          <Text style={s.stepLabel}>{no('secrets')} · {item.secrets.title}</Text>
+          {item.secrets.intro ? <Text style={s.body}>{item.secrets.intro}</Text> : null}
+          {item.secrets.items.map((sec, i) => (
+            <View key={i} style={s.secretCard}>
+              <TouchableOpacity
+                style={s.secretHead}
+                onPress={() => sec.audio_text && speakChinese(sec.audio_text, 'female', sec.pinyin)}
+                activeOpacity={sec.audio_text ? 0.7 : 1}
+              >
+                <Text style={s.secretGlyph}>{sec.radical}</Text>
+                <View style={{ flex: 1 }}>
+                  <Text style={s.secretName}>{sec.name}</Text>
+                  <Text style={s.secretNameEn}>{sec.name_en}</Text>
+                </View>
+              </TouchableOpacity>
+              {getLessonImage(sec.picture) ? (
+                <View style={s.pictureWide}><Picture value={sec.picture} height={170} /></View>
+              ) : null}
+              <View style={s.secretChips}>
+                {(sec.chars || []).map(c => (
+                  <TouchableOpacity
+                    key={c.character}
+                    style={s.carryChip}
+                    onPress={() => speakChinese(c.audio_text || c.character, 'female', c.pinyin)}
+                    activeOpacity={0.8}
+                  >
+                    {c.emoji ? <Text style={s.carryEmoji}>{c.emoji}</Text> : null}
+                    <Text style={s.carryCn}>{c.character}</Text>
+                    <Text style={s.carryPy}>{c.pinyin}</Text>
+                    <Text style={s.carryEn}>{c.meaning}</Text>
+                  </TouchableOpacity>
+                ))}
+              </View>
+              {sec.note ? <Text style={s.body}>{sec.note}</Text> : null}
+            </View>
+          ))}
+        </View>
+      )}
+
       {item.idioms && (
         <View style={{ gap: 10 }}>
           <Text style={s.stepLabel}>{no('idioms')} · {item.idioms.title}</Text>
@@ -877,6 +1039,17 @@ export function CultureCard({ item }) {
         </View>
       )}
 
+      {/* Picture → character, the same card Part 1 ends with. */}
+      {item.match && (
+        <View style={{ gap: 10 }}>
+          <Text style={s.stepLabel}>{no('match')} · {item.match.title || 'Match them up'}</Text>
+          <MatchCard item={item.match} compact />
+        </View>
+      )}
+
+      {/* Tap every one that fits — more than one answer is right. */}
+      {item.find_all && <FindAll item={item.find_all} label={`${no('find_all')} · ${item.find_all.title}`} />}
+
       {item.try && (
         <View style={{ gap: 10 }}>
           <Text style={s.stepLabel}>{no('try')} · Try it</Text>
@@ -892,7 +1065,8 @@ export function CultureCard({ item }) {
                 picked={answers[i] ?? null}
                 onPick={(c) => setAnswers(a => ({ ...a, [i]: c }))}
                 labelFor={(c) => (emo(c) ? `${emo(c)} ${c}` : c)}
-                big
+                textStyle={s.tryChoiceText}
+                revealFor={(c) => (item.try.choice_pinyin || {})[c] || null}
               />
               <Feedback picked={answers[i] ?? null} correct={x.correct} />
             </View>
@@ -965,6 +1139,10 @@ const s = StyleSheet.create({
   meaningEn: { fontSize: 16, fontWeight: '700', color: WARM_ORANGE },
   body:      { fontSize: 15, color: SLATE_TEAL, lineHeight: 21 },
   q:         { fontSize: 16, fontWeight: '800', color: DEEP_NAVY },
+  // Two steps below the question. A worded answer is a phrase, not a glyph —
+  // "nothing — it is always the same" is 31 characters, and four of those in
+  // a row need the room.
+  findTextEn: { fontSize: 13, lineHeight: 18, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center' },
   audioIcon:   { fontSize: 24 },
   audioIconSm: { fontSize: 18 },
 
@@ -977,8 +1155,15 @@ const s = StyleSheet.create({
     borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.30)', backgroundColor: CARD_WHITE,
     alignItems: 'center',
   },
+  // Extra room so the ring around an underlined answer is still a tap target
+  // for choosing it, rather than being all text.
+  choiceRoomy: { paddingHorizontal: 20, paddingVertical: 14 },
+  choiceRead:  { fontSize: 13, fontWeight: '700', color: WARM_BROWN, textAlign: 'center', marginTop: 2 },
   choiceText:    { fontSize: 18, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center' },
   choiceTextBig: { fontSize: 28, lineHeight: 36, fontWeight: '900', color: DEEP_NAVY },
+  // One step down, frame included: six answers in a row do not fit at glyph size.
+  choiceTextSmall: { fontSize: 24, lineHeight: 30, fontWeight: '900', color: DEEP_NAVY },
+  choiceTight:     { minWidth: 54, paddingHorizontal: 11, paddingVertical: 7 },
   choiceRight:   { backgroundColor: 'rgba(46,125,50,0.18)', borderColor: SUCCESS, borderWidth: 2.5 },
   choiceWrong:   { backgroundColor: 'rgba(196,80,58,0.15)', borderColor: '#C4503A', borderWidth: 2.5 },
 
@@ -1004,6 +1189,7 @@ const s = StyleSheet.create({
     borderRadius: 12, backgroundColor: '#FFF8ED',
     borderWidth: 1, borderColor: 'rgba(155,104,70,0.22)',
   },
+  carryEmoji: { fontSize: 22 },
   carryCn: { fontSize: 30, fontWeight: '900', color: DEEP_NAVY },
   carryPy: { fontSize: 13, color: WARM_BROWN },
   carryEn: { fontSize: 12, fontWeight: '700', color: WARM_ORANGE },
@@ -1120,6 +1306,27 @@ const s = StyleSheet.create({
   journeyTail:  { fontSize: 16, color: WARM_BROWN, marginTop: 2 },
   journeyLabel: { fontSize: 15, fontWeight: '800', color: DEEP_NAVY },
 
+  galleryRow:   { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
+  galleryCard: {
+    flex: 1, minWidth: 136, alignItems: 'center', gap: 2, padding: 10,
+    borderRadius: 12, backgroundColor: CARD_WHITE,
+    borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.25)',
+  },
+  galleryEmoji: { fontSize: 52 },
+  galleryCn: { fontSize: 30, fontWeight: '900', color: DEEP_NAVY, marginTop: 4 },
+  galleryPy: { fontSize: 13, fontWeight: '700', color: WARM_BROWN },
+  galleryEn: { fontSize: 13, fontWeight: '700', color: WARM_ORANGE },
+
+  secretCard: {
+    gap: 10, padding: 12, borderRadius: 12, backgroundColor: '#FFF8ED',
+    borderWidth: 1, borderColor: 'rgba(155,104,70,0.22)',
+  },
+  secretHead:   { flexDirection: 'row', alignItems: 'center', gap: 12 },
+  secretGlyph:  { fontSize: 40, fontWeight: '900', color: DEEP_NAVY, width: 52, textAlign: 'center' },
+  secretName:   { fontSize: 18, fontWeight: '900', color: DEEP_NAVY },
+  secretNameEn: { fontSize: 14, fontWeight: '700', color: WARM_ORANGE },
+  secretChips:  { flexDirection: 'row', flexWrap: 'wrap', gap: 8, justifyContent: 'center' },
+
   idiomCard: {
     gap: 6, padding: 12, borderRadius: 12, backgroundColor: '#FFF8ED',
     borderWidth: 1, borderColor: 'rgba(155,104,70,0.22)',
@@ -1133,7 +1340,9 @@ const s = StyleSheet.create({
   idiomLiteral: { fontSize: 13, fontStyle: 'italic', color: SLATE_TEAL, textAlign: 'center' },
   idiomMeaning: { fontSize: 16, fontWeight: '800', color: WARM_ORANGE, textAlign: 'center' },
   idiomEg:   { gap: 2, backgroundColor: CARD_WHITE, borderRadius: 10, padding: 10 },
-  idiomEgCn: { fontSize: 17, fontWeight: '800', color: DEEP_NAVY },
+  // One step up, and the same size as `tryCn` — the two Chinese sentences in
+  // this part now read alike instead of one being quietly smaller.
+  idiomEgCn: { fontSize: 20, lineHeight: 28, fontWeight: '800', color: DEEP_NAVY },
   idiomEgPy: { fontSize: 13, fontWeight: '700', color: WARM_BROWN },
   idiomEgEn: { fontSize: 13, color: SLATE_TEAL },
 
@@ -1162,12 +1371,20 @@ const s = StyleSheet.create({
     borderWidth: 1, borderColor: 'rgba(155,104,70,0.18)',
   },
   // read-and-record
-  readBox: { gap: 10, backgroundColor: '#FFF3E0', borderRadius: 12, padding: 12 },
+  // alignSelf matters: in Learn this sits in a card that stretches its
+  // children, but in Practice the question column centres them, and a box
+  // with no width of its own shrinks to fit its text there — which is what
+  // folded the row back into a column. Stretching makes it fill either one.
+  readBox: {
+    alignSelf: 'stretch', width: '100%',
+    gap: 10, backgroundColor: '#FFF3E0', borderRadius: 12, padding: 12,
+  },
   readTarget: {
     flexDirection: 'row', alignItems: 'center', gap: 10,
     backgroundColor: CARD_WHITE, borderRadius: 10, padding: 11,
     borderWidth: 1, borderColor: 'rgba(155,104,70,0.2)',
   },
+  readLine: { flex: 1, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'baseline', gap: 8 },
   readCn: { fontSize: 22, fontWeight: '900', color: DEEP_NAVY },
   readPy: { fontSize: 13, color: WARM_BROWN },
   readEn: { fontSize: 13, color: SLATE_TEAL },
@@ -1190,6 +1407,9 @@ const s = StyleSheet.create({
   charIntroEn: { fontSize: 13, fontWeight: '700', color: WARM_ORANGE },
 
   tryCn: { fontSize: 20, fontWeight: '800', color: DEEP_NAVY, lineHeight: 28 },
+  // The answers read at the question's size — they are the same kind of text,
+  // and at 28 they were shouting over it.
+  tryChoiceText: { fontSize: 20, lineHeight: 28, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center' },
   tryPy: { fontSize: 13, color: WARM_BROWN },
   tryEn: { fontSize: 13, color: SLATE_TEAL },
 });

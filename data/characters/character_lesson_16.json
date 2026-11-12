@@ -1,0 +1,2093 @@
+{
+  "id": 16,
+  "part": 2,
+  "title": "Lesson 16 · Ear, Foot and the Shape That Lies",
+  "emoji": "👂",
+  "subtitle": "耳 足 · 左耳旁 右耳旁 足字旁 双人旁",
+  "description": "Two more characters, four radical shapes, and one of them is not what everyone calls it.",
+  "new_strokes": [],
+  "new_characters": [
+    "阳",
+    "阴",
+    "都",
+    "行",
+    "路",
+    "跑",
+    "跳"
+  ],
+  "new_words": [
+    "太阳",
+    "阴天",
+    "都是",
+    "都行",
+    "路上",
+    "行人",
+    "跑步",
+    "跳舞"
+  ],
+  "learn_content": {
+    "part1_blocks": {
+      "title": "Discover",
+      "subtitle": "独体字 · Characters that stand alone",
+      "intro": "Two more characters drawn from the body. Remember the ear — Part 5 comes back to it.",
+      "blocks": [
+        {
+          "character": "耳",
+          "pinyin": "ěr",
+          "meaning": "ear",
+          "audio_text": "耳",
+          "picture": "👂",
+          "note": "An ear, drawn from the side — rim, lobe and all.",
+          "match": {
+            "prompt_picture": "👂",
+            "choices": [
+              "耳",
+              "足"
+            ],
+            "correct": "耳"
+          }
+        },
+        {
+          "character": "足",
+          "pinyin": "zú",
+          "meaning": "foot",
+          "audio_text": "足",
+          "picture": "🦶",
+          "note": "A foot below a knee: the square is the leg, the rest is the foot itself.",
+          "match": {
+            "prompt_picture": "🦶",
+            "choices": [
+              "耳",
+              "足"
+            ],
+            "correct": "足"
+          }
+        }
+      ],
+      "match": {
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "👂",
+            "character": "耳"
+          },
+          {
+            "picture": "🦶",
+            "character": "足"
+          }
+        ]
+      }
+    },
+    "part2_components": {
+      "title": "Decode",
+      "subtitle": "部件与部首 · Components and radicals",
+      "caveat": "One of these is not what it looks like. 阝 is not an ear — and which side it stands on changes what it means.",
+      "components": [
+        {
+          "radical": "阝",
+          "name": "左耳旁",
+          "pinyin": "zuǒ ěr páng",
+          "name_en": "the left 阝, from 阜 — a hill",
+          "audio_text": "左耳旁",
+          "from": {
+            "character": "阜",
+            "pinyin": "fù",
+            "meaning": "a mound / hill"
+          },
+          "hint": "On the LEFT this is 阜 worn down — a slope, a hillside, high ground.",
+          "characters": [
+            {
+              "character": "阳",
+              "pinyin": "yáng",
+              "meaning": "sun / yang",
+              "audio_text": "阳"
+            },
+            {
+              "character": "阴",
+              "pinyin": "yīn",
+              "meaning": "shade / yin",
+              "audio_text": "阴"
+            }
+          ],
+          "find": {
+            "question": "Which part of 阳 is the radical?",
+            "choices": [
+              "阝",
+              "日",
+              "⻊",
+              "彳"
+            ],
+            "correct": "阝"
+          },
+          "reveal": {
+            "category": "sunlight on a hillside",
+            "note": "阳 is the lit side of the hill and 阴 the shaded one. That is where yang and yin come from."
+          }
+        },
+        {
+          "radical": "阝",
+          "name": "右耳旁",
+          "pinyin": "yòu ěr páng",
+          "name_en": "the right 阝, from 邑 — a town",
+          "audio_text": "右耳旁",
+          "from": {
+            "character": "邑",
+            "pinyin": "yì",
+            "meaning": "a walled town"
+          },
+          "hint": "The same shape on the RIGHT is a different character altogether: 邑, a walled town.",
+          "characters": [
+            {
+              "character": "都",
+              "pinyin": "dōu",
+              "meaning": "all",
+              "audio_text": "都"
+            }
+          ],
+          "find": {
+            "question": "阝 means two different things. What decides which?",
+            "choices": [
+              "which side it stands on",
+              "its size",
+              "the stroke order",
+              "nothing — it is always the same"
+            ],
+            "correct": "which side it stands on"
+          },
+          "reveal": {
+            "category": "towns and places",
+            "note": "都 is a capital city — and, from there, \"all of them\". Part 5 has the full story."
+          },
+          "radical_audio": {
+            "阝": {
+              "text": "右耳旁",
+              "pinyin": "yòu ěr páng"
+            }
+          }
+        },
+        {
+          "radical": "⻊",
+          "name": "足字旁",
+          "pinyin": "zú zì páng",
+          "name_en": "the foot radical",
+          "audio_text": "足字旁",
+          "from": {
+            "character": "足",
+            "pinyin": "zú",
+            "meaning": "foot"
+          },
+          "hint": "足 narrows and its last stroke lifts, so it can stand beside a character.",
+          "characters": [
+            {
+              "character": "路",
+              "pinyin": "lù",
+              "meaning": "road",
+              "audio_text": "路"
+            },
+            {
+              "character": "跑",
+              "pinyin": "pǎo",
+              "meaning": "to run",
+              "audio_text": "跑"
+            },
+            {
+              "character": "跳",
+              "pinyin": "tiào",
+              "meaning": "to jump",
+              "audio_text": "跳"
+            }
+          ],
+          "find": {
+            "question": "Which part of 跑 is the radical?",
+            "choices": [
+              "⻊",
+              "包",
+              "阝",
+              "彳"
+            ],
+            "correct": "⻊"
+          },
+          "reveal": {
+            "category": "things you do with your feet",
+            "note": "A road, running, jumping — none of them happen sitting down."
+          }
+        },
+        {
+          "radical": "彳",
+          "name": "双人旁",
+          "pinyin": "shuāng rén páng",
+          "name_en": "the step radical",
+          "audio_text": "双人旁",
+          "from": {
+            "character": "行",
+            "pinyin": "xíng",
+            "meaning": "to go / all right"
+          },
+          "hint": "彳 is the left half of 行 on its own — a crossroads cut down the middle.",
+          "characters": [
+            {
+              "character": "行",
+              "pinyin": "xíng",
+              "meaning": "to go / all right",
+              "audio_text": "行"
+            }
+          ],
+          "find": {
+            "question": "Where does 彳 come from?",
+            "choices": [
+              "行",
+              "足",
+              "耳",
+              "阜"
+            ],
+            "correct": "行"
+          },
+          "reveal": {
+            "category": "going somewhere",
+            "note": "行 is to walk, to go — and when something will do, 都行: either way works."
+          }
+        }
+      ],
+      "radical_audio": {
+        "阝": {
+          "text": "左耳旁",
+          "pinyin": "zuǒ ěr páng"
+        },
+        "⻊": {
+          "text": "足字旁",
+          "pinyin": "zú zì páng"
+        },
+        "彳": {
+          "text": "双人旁",
+          "pinyin": "shuāng rén páng"
+        }
+      },
+      "group": {
+        "question": "Which character does NOT carry ⻊?",
+        "choices": [
+          "行",
+          "路",
+          "跑",
+          "跳"
+        ],
+        "correct": "行",
+        "explain": "行 carries 彳. The other three all need feet."
+      }
+    },
+    "part3_dialogue": {
+      "title": "Use",
+      "subtitle": "词语与情景对话 · Words and dialogue",
+      "characters": [
+        {
+          "character": "太",
+          "pinyin": "tài",
+          "meaning": "very / too",
+          "audio_text": "太"
+        }
+      ],
+      "words": [
+        {
+          "word": "太阳",
+          "pinyin": "tàiyáng",
+          "meaning": "the sun",
+          "audio_text": "太阳",
+          "built_from": "太 + 阳"
+        },
+        {
+          "word": "阴天",
+          "pinyin": "yīntiān",
+          "meaning": "a cloudy day",
+          "audio_text": "阴天",
+          "built_from": "阴 + 天"
+        },
+        {
+          "word": "都是",
+          "pinyin": "dōu shì",
+          "meaning": "all of them are",
+          "audio_text": "都是",
+          "built_from": "都 + 是"
+        },
+        {
+          "word": "都行",
+          "pinyin": "dōu xíng",
+          "meaning": "either is fine",
+          "audio_text": "都行",
+          "built_from": "都 + 行"
+        },
+        {
+          "word": "路上",
+          "pinyin": "lù shang",
+          "meaning": "on the road",
+          "audio_text": "路上",
+          "built_from": "路 + 上"
+        },
+        {
+          "word": "行人",
+          "pinyin": "xíng rén",
+          "meaning": "pedestrian",
+          "audio_text": "行人",
+          "built_from": "行 + 人"
+        },
+        {
+          "word": "跑步",
+          "pinyin": "pǎobù",
+          "meaning": "to go running",
+          "audio_text": "跑步",
+          "built_from": "跑 + 步"
+        },
+        {
+          "word": "跳舞",
+          "pinyin": "tiàowǔ",
+          "meaning": "to dance",
+          "audio_text": "跳舞",
+          "built_from": "跳 + 舞"
+        }
+      ],
+      "support_words": [
+        {
+          "word": "步",
+          "pinyin": "bù",
+          "meaning": "a step"
+        },
+        {
+          "word": "舞",
+          "pinyin": "wǔ",
+          "meaning": "a dance"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning": "we"
+        },
+        {
+          "word": "去",
+          "pinyin": "qù",
+          "meaning": "to go"
+        },
+        {
+          "word": "还是",
+          "pinyin": "háishi",
+          "meaning": "or"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Yesterday and today",
+          "goal": "阴天 太阳",
+          "picture": "🌤️",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "昨天是阴天。",
+              "pinyin": "Zuótiān shì yīntiān.",
+              "meaning": "Yesterday was cloudy.",
+              "audio_text": "昨天是阴天"
+            },
+            {
+              "speaker": "B",
+              "text": "今天有太阳！",
+              "pinyin": "Jīntiān yǒu tàiyáng!",
+              "meaning": "Today there is sun!",
+              "audio_text": "今天有太阳"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "今天有太阳！",
+            "pinyin": "Jīntiān yǒu tàiyáng!",
+            "meaning": "Today there is sun!",
+            "audio_text": "今天有太阳"
+          },
+          "speak": {
+            "question": "Build it: yesterday was cloudy.",
+            "tiles": [
+              "阴天",
+              "今天",
+              "是",
+              "昨天"
+            ],
+            "answer": [
+              "昨天",
+              "是",
+              "阴天"
+            ],
+            "result": "昨天是阴天。",
+            "pinyin": "Zuótiān shì yīntiān."
+          }
+        },
+        {
+          "title": "Out on the road",
+          "goal": "路上 都是 行人",
+          "picture": "🚶",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "路上都是行人。",
+              "pinyin": "Lù shang dōu shì xíngrén.",
+              "meaning": "The road is full of people on foot.",
+              "audio_text": "路上都是行人"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "路上都是行人。",
+            "pinyin": "Lù shang dōu shì xíngrén.",
+            "meaning": "The road is full of people on foot.",
+            "audio_text": "路上都是行人"
+          },
+          "speak": {
+            "question": "Build it: the road is full of pedestrians.",
+            "tiles": [
+              "行人",
+              "都是",
+              "太阳",
+              "路上"
+            ],
+            "answer": [
+              "路上",
+              "都是",
+              "行人"
+            ],
+            "result": "路上都是行人。",
+            "pinyin": "Lù shang dōu shì xíngrén."
+          }
+        },
+        {
+          "title": "Dancing or running?",
+          "goal": "跳舞 跑步 都行",
+          "picture": "💃",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "我们去跳舞还是跑步？",
+              "pinyin": "Wǒmen qù tiàowǔ háishi pǎobù?",
+              "meaning": "Shall we go dancing or running?",
+              "audio_text": "我们去跳舞还是跑步"
+            },
+            {
+              "speaker": "B",
+              "text": "都行！",
+              "pinyin": "Dōu xíng!",
+              "meaning": "Either is fine!",
+              "audio_text": "都行"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我们去跳舞还是跑步？",
+            "pinyin": "Wǒmen qù tiàowǔ háishi pǎobù?",
+            "meaning": "Shall we go dancing or running?",
+            "audio_text": "我们去跳舞还是跑步"
+          },
+          "speak": {
+            "question": "Build it: shall we go dancing or running?",
+            "tiles": [
+              "跑步",
+              "跳舞",
+              "还是",
+              "我们去",
+              "都行"
+            ],
+            "answer": [
+              "我们去",
+              "跳舞",
+              "还是",
+              "跑步"
+            ],
+            "result": "我们去跳舞还是跑步？",
+            "pinyin": "Wǒmen qù tiàowǔ háishi pǎobù?"
+          }
+        }
+      ],
+      "read_aloud": {
+        "title": "Say them yourself",
+        "intro": "Listen, then read each one aloud.",
+        "items": [
+          {
+            "text": "太阳",
+            "pinyin": "tàiyáng",
+            "meaning": "the sun",
+            "audio_text": "太阳"
+          },
+          {
+            "text": "跳舞",
+            "pinyin": "tiàowǔ",
+            "meaning": "to dance",
+            "audio_text": "跳舞"
+          },
+          {
+            "text": "都行",
+            "pinyin": "dōu xíng",
+            "meaning": "either is fine",
+            "audio_text": "都行"
+          }
+        ]
+      }
+    },
+    "part4_write": {
+      "title": "Write",
+      "subtitle": "汉字书写 · Write every character in this lesson",
+      "characters": [
+        "耳",
+        "足",
+        "阴",
+        "阳",
+        "行",
+        "都"
+      ]
+    },
+    "part5_culture": {
+      "title": "Discover Chinese",
+      "subtitle": "汉字探秘 · Culture and language insights",
+      "topic": "阝 不是耳朵",
+      "topic_en": "阝 is not an ear",
+      "picture": "l16-p5-not-an-ear",
+      "listen": {
+        "intro": "One shape, two characters behind it. Tap each to hear it.",
+        "items": [
+          {
+            "character": "阝",
+            "pinyin": "ěr dōng páng",
+            "meaning": "the shape both became",
+            "audio_text": "耳东旁"
+          },
+          {
+            "character": "阜",
+            "pinyin": "fù",
+            "meaning": "a hill",
+            "audio_text": "阜"
+          },
+          {
+            "character": "邑",
+            "pinyin": "yì",
+            "meaning": "a town",
+            "audio_text": "邑"
+          }
+        ]
+      },
+      "notice": "阝 is nicknamed 耳旁, the \"ear\". It has never been an ear.",
+      "discover": "It is two different characters that wore down into the same shape. Which one it is depends on nothing but the side of the character it stands on.",
+      "forms": {
+        "title": "两个来源 · Two sources",
+        "intro": "Neither of them started out looking like this.",
+        "items": [
+          {
+            "character": "阜",
+            "label": "on the LEFT",
+            "pinyin": "fù",
+            "audio_text": "阜",
+            "note": "a hill, a slope"
+          },
+          {
+            "character": "邑",
+            "label": "on the RIGHT",
+            "pinyin": "yì",
+            "audio_text": "邑",
+            "note": "a walled town"
+          },
+          {
+            "character": "阝",
+            "label": "what both became",
+            "note": "the same five strokes"
+          }
+        ]
+      },
+      "secrets": {
+        "title": "左边还是右边？· Left or right?",
+        "intro": "The side tells you everything.",
+        "items": [
+          {
+            "radical": "阝",
+            "name": "左耳旁 · 山",
+            "name_en": "On the left — hills and high ground",
+            "picture": "l16-p5-mountains",
+            "chars": [
+              {
+                "character": "阳",
+                "pinyin": "yáng",
+                "meaning": "the sunny side",
+                "audio_text": "阳"
+              },
+              {
+                "character": "阴",
+                "pinyin": "yīn",
+                "meaning": "the shaded side",
+                "audio_text": "阴"
+              },
+              {
+                "character": "陈",
+                "pinyin": "chén",
+                "meaning": "a surname",
+                "audio_text": "陈"
+              },
+              {
+                "character": "降",
+                "pinyin": "jiàng",
+                "meaning": "to descend",
+                "audio_text": "降"
+              },
+              {
+                "character": "险",
+                "pinyin": "xiǎn",
+                "meaning": "steep, risky",
+                "audio_text": "险"
+              },
+              {
+                "character": "阶",
+                "pinyin": "jiē",
+                "meaning": "a step",
+                "audio_text": "阶"
+              }
+            ],
+            "note": "Slopes, heights, going up and coming down.",
+            "audio_text": "左耳旁",
+            "pinyin": "zuǒ ěr páng"
+          },
+          {
+            "radical": "阝",
+            "name": "右耳旁 · 城",
+            "name_en": "On the right — towns and places",
+            "picture": "l16-p5-city",
+            "chars": [
+              {
+                "character": "都",
+                "pinyin": "dū",
+                "meaning": "a capital city",
+                "audio_text": "都"
+              },
+              {
+                "character": "郊",
+                "pinyin": "jiāo",
+                "meaning": "the outskirts",
+                "audio_text": "郊"
+              },
+              {
+                "character": "郭",
+                "pinyin": "guō",
+                "meaning": "an outer wall",
+                "audio_text": "郭"
+              },
+              {
+                "character": "邦",
+                "pinyin": "bāng",
+                "meaning": "a state",
+                "audio_text": "邦"
+              },
+              {
+                "character": "郑",
+                "pinyin": "zhèng",
+                "meaning": "a surname",
+                "audio_text": "郑"
+              }
+            ],
+            "note": "Cities, districts, old kingdoms — and a great many surnames.",
+            "audio_text": "右耳旁",
+            "pinyin": "yòu ěr páng"
+          }
+        ]
+      },
+      "idioms": {
+        "title": "小知识 · 耳东陈",
+        "intro": "Ask a Chinese speaker which 陈 they mean and they will tell you this one.",
+        "items": [
+          {
+            "idiom": "耳东陈",
+            "pinyin": "ěr dōng chén",
+            "audio_text": "耳东陈",
+            "literal": "ear, east — 陈",
+            "meaning": "how people spell out the surname 陈",
+            "illustration": "l16-p5-chen",
+            "chars": [
+              {
+                "character": "耳",
+                "pinyin": "ěr",
+                "meaning": "\"ear\" — the 阝",
+                "audio_text": "耳"
+              },
+              {
+                "character": "东",
+                "pinyin": "dōng",
+                "meaning": "east",
+                "audio_text": "东"
+              },
+              {
+                "character": "陈",
+                "pinyin": "chén",
+                "meaning": "the surname",
+                "audio_text": "陈"
+              }
+            ],
+            "note": "陈 is 阝 on the left and 东 on the right. The \"ear\" is really 阜, a hill — so even the nickname for the surname is built on the mistake this lesson just undid."
+          }
+        ]
+      },
+      "try": {
+        "intro": "Which side, and so which meaning?",
+        "items": [
+          {
+            "sentence": "阳",
+            "pinyin": "yáng",
+            "meaning": "the sunny side of a hill",
+            "choices": [
+              "左边 · 山",
+              "右边 · 城"
+            ],
+            "correct": "左边 · 山"
+          },
+          {
+            "sentence": "都",
+            "pinyin": "dōu",
+            "meaning": "a capital city",
+            "choices": [
+              "右边 · 城",
+              "左边 · 山"
+            ],
+            "correct": "右边 · 城"
+          }
+        ]
+      }
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "耳",
+      "audio_text": "耳",
+      "correct": "ear",
+      "choices": [
+        "to jump",
+        "road",
+        "ear",
+        "shade / yin"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "耳",
+      "correct": "耳",
+      "choices": [
+        "耳",
+        "阴",
+        "路",
+        "太"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "ear",
+      "correct": "耳",
+      "choices": [
+        "耳",
+        "都",
+        "跳",
+        "路"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "耳",
+      "audio_text": "耳",
+      "correct": "ěr",
+      "choices": [
+        "tài",
+        "xíng",
+        "ěr",
+        "yīn"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "ěr",
+      "correct": "耳",
+      "choices": [
+        "耳",
+        "跳",
+        "跑",
+        "都"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "足",
+      "audio_text": "足",
+      "correct": "foot",
+      "choices": [
+        "very / too",
+        "foot",
+        "shade / yin",
+        "all"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "足",
+      "correct": "足",
+      "choices": [
+        "太",
+        "耳",
+        "都",
+        "足"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "foot",
+      "correct": "足",
+      "choices": [
+        "阳",
+        "耳",
+        "路",
+        "足"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "足",
+      "audio_text": "足",
+      "correct": "zú",
+      "choices": [
+        "zú",
+        "ěr",
+        "yīn",
+        "dōu"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zú",
+      "correct": "足",
+      "choices": [
+        "足",
+        "太",
+        "都",
+        "阳"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "阳",
+      "audio_text": "阳",
+      "correct": "sun / yang",
+      "choices": [
+        "road",
+        "ear",
+        "foot",
+        "sun / yang"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "阳",
+      "correct": "阳",
+      "choices": [
+        "跳",
+        "阳",
+        "阴",
+        "跑"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "sun / yang",
+      "correct": "阳",
+      "choices": [
+        "阳",
+        "路",
+        "阴",
+        "跑"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "阳",
+      "audio_text": "阳",
+      "correct": "yáng",
+      "choices": [
+        "pǎo",
+        "tiào",
+        "yáng",
+        "tài"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yáng",
+      "correct": "阳",
+      "choices": [
+        "阳",
+        "耳",
+        "都",
+        "足"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "阴",
+      "audio_text": "阴",
+      "correct": "shade / yin",
+      "choices": [
+        "shade / yin",
+        "to run",
+        "ear",
+        "road"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "阴",
+      "correct": "阴",
+      "choices": [
+        "阴",
+        "太",
+        "路",
+        "跳"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "shade / yin",
+      "correct": "阴",
+      "choices": [
+        "耳",
+        "阴",
+        "太",
+        "跑"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "阴",
+      "audio_text": "阴",
+      "correct": "yīn",
+      "choices": [
+        "zú",
+        "xíng",
+        "yīn",
+        "lù"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yīn",
+      "correct": "阴",
+      "choices": [
+        "跑",
+        "阳",
+        "足",
+        "阴"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "都",
+      "audio_text": "都",
+      "correct": "all",
+      "choices": [
+        "to go / all right",
+        "all",
+        "foot",
+        "to run"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "都",
+      "correct": "都",
+      "choices": [
+        "太",
+        "都",
+        "耳",
+        "阳"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "all",
+      "correct": "都",
+      "choices": [
+        "耳",
+        "太",
+        "都",
+        "足"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "都",
+      "audio_text": "都",
+      "correct": "dōu",
+      "choices": [
+        "dōu",
+        "yáng",
+        "lù",
+        "xíng"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "dōu",
+      "correct": "都",
+      "choices": [
+        "路",
+        "都",
+        "阴",
+        "足"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "行",
+      "audio_text": "行",
+      "correct": "to go / all right",
+      "choices": [
+        "to go / all right",
+        "foot",
+        "to run",
+        "very / too"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "行",
+      "correct": "行",
+      "choices": [
+        "路",
+        "跑",
+        "阴",
+        "行"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to go / all right",
+      "correct": "行",
+      "choices": [
+        "耳",
+        "太",
+        "行",
+        "足"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "行",
+      "audio_text": "行",
+      "correct": "xíng",
+      "choices": [
+        "xíng",
+        "tiào",
+        "ěr",
+        "yáng"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "xíng",
+      "correct": "行",
+      "choices": [
+        "足",
+        "路",
+        "阴",
+        "行"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "路",
+      "audio_text": "路",
+      "correct": "road",
+      "choices": [
+        "foot",
+        "sun / yang",
+        "all",
+        "road"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "路",
+      "correct": "路",
+      "choices": [
+        "行",
+        "足",
+        "路",
+        "阴"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "road",
+      "correct": "路",
+      "choices": [
+        "路",
+        "足",
+        "耳",
+        "太"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "路",
+      "audio_text": "路",
+      "correct": "lù",
+      "choices": [
+        "yīn",
+        "pǎo",
+        "lù",
+        "zú"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "lù",
+      "correct": "路",
+      "choices": [
+        "都",
+        "跑",
+        "路",
+        "耳"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "跑",
+      "audio_text": "跑",
+      "correct": "to run",
+      "choices": [
+        "very / too",
+        "foot",
+        "sun / yang",
+        "to run"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "跑",
+      "correct": "跑",
+      "choices": [
+        "足",
+        "行",
+        "跑",
+        "阴"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to run",
+      "correct": "跑",
+      "choices": [
+        "太",
+        "行",
+        "耳",
+        "跑"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "跑",
+      "audio_text": "跑",
+      "correct": "pǎo",
+      "choices": [
+        "pǎo",
+        "xíng",
+        "dōu",
+        "yáng"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "pǎo",
+      "correct": "跑",
+      "choices": [
+        "足",
+        "耳",
+        "跳",
+        "跑"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "跳",
+      "audio_text": "跳",
+      "correct": "to jump",
+      "choices": [
+        "very / too",
+        "road",
+        "ear",
+        "to jump"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "跳",
+      "correct": "跳",
+      "choices": [
+        "跳",
+        "都",
+        "阳",
+        "阴"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to jump",
+      "correct": "跳",
+      "choices": [
+        "跳",
+        "太",
+        "耳",
+        "都"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "跳",
+      "audio_text": "跳",
+      "correct": "tiào",
+      "choices": [
+        "dōu",
+        "xíng",
+        "yáng",
+        "tiào"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "tiào",
+      "correct": "跳",
+      "choices": [
+        "太",
+        "跑",
+        "跳",
+        "行"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "太",
+      "audio_text": "太",
+      "correct": "very / too",
+      "choices": [
+        "road",
+        "to run",
+        "very / too",
+        "ear"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "太",
+      "correct": "太",
+      "choices": [
+        "足",
+        "耳",
+        "太",
+        "跳"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "very / too",
+      "correct": "太",
+      "choices": [
+        "太",
+        "都",
+        "跳",
+        "跑"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "太",
+      "audio_text": "太",
+      "correct": "tài",
+      "choices": [
+        "tiào",
+        "zú",
+        "yáng",
+        "tài"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "tài",
+      "correct": "太",
+      "choices": [
+        "太",
+        "耳",
+        "路",
+        "阴"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "阳",
+      "audio_text": "阳",
+      "correct": "阝",
+      "choices": [
+        "日",
+        "阝",
+        "土",
+        "⻊"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "阴",
+      "audio_text": "阴",
+      "correct": "阝",
+      "choices": [
+        "阝",
+        "讠",
+        "忄",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "都",
+      "audio_text": "都",
+      "correct": "阝",
+      "choices": [
+        "阝",
+        "彳",
+        "钅",
+        "忄"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "行",
+      "audio_text": "行",
+      "correct": "彳",
+      "choices": [
+        "忄",
+        "雨",
+        "彳",
+        "土"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "路",
+      "audio_text": "路",
+      "correct": "⻊",
+      "choices": [
+        "阝",
+        "⻊",
+        "目",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "跑",
+      "audio_text": "跑",
+      "correct": "⻊",
+      "choices": [
+        "钅",
+        "月",
+        "⻊",
+        "忄"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "跳",
+      "audio_text": "跳",
+      "correct": "⻊",
+      "choices": [
+        "讠",
+        "⻊",
+        "忄",
+        "阝"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "太阳",
+      "audio_text": "太阳",
+      "correct": "the sun",
+      "choices": [
+        "a cloudy day",
+        "to dance",
+        "the sun",
+        "pedestrian"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "太阳",
+      "correct": "太阳",
+      "choices": [
+        "都行",
+        "跑步",
+        "都是",
+        "太阳"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "阴天",
+      "audio_text": "阴天",
+      "correct": "a cloudy day",
+      "choices": [
+        "all of them are",
+        "a cloudy day",
+        "to go running",
+        "to dance"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "阴天",
+      "correct": "阴天",
+      "choices": [
+        "阴天",
+        "路上",
+        "都是",
+        "行人"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "都是",
+      "audio_text": "都是",
+      "correct": "all of them are",
+      "choices": [
+        "to dance",
+        "pedestrian",
+        "all of them are",
+        "on the road"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "都是",
+      "correct": "都是",
+      "choices": [
+        "跳舞",
+        "都行",
+        "都是",
+        "阴天"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "都行",
+      "audio_text": "都行",
+      "correct": "either is fine",
+      "choices": [
+        "all of them are",
+        "either is fine",
+        "the sun",
+        "a cloudy day"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "都行",
+      "correct": "都行",
+      "choices": [
+        "路上",
+        "太阳",
+        "行人",
+        "都行"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "路上",
+      "audio_text": "路上",
+      "correct": "on the road",
+      "choices": [
+        "on the road",
+        "either is fine",
+        "all of them are",
+        "the sun"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "路上",
+      "correct": "路上",
+      "choices": [
+        "路上",
+        "都行",
+        "跳舞",
+        "都是"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "行人",
+      "audio_text": "行人",
+      "correct": "pedestrian",
+      "choices": [
+        "to dance",
+        "to go running",
+        "pedestrian",
+        "the sun"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "行人",
+      "correct": "行人",
+      "choices": [
+        "行人",
+        "阴天",
+        "都行",
+        "路上"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "跑步",
+      "audio_text": "跑步",
+      "correct": "to go running",
+      "choices": [
+        "to dance",
+        "the sun",
+        "either is fine",
+        "to go running"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "跑步",
+      "correct": "跑步",
+      "choices": [
+        "都是",
+        "跳舞",
+        "都行",
+        "跑步"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "跳舞",
+      "audio_text": "跳舞",
+      "correct": "to dance",
+      "choices": [
+        "the sun",
+        "a cloudy day",
+        "on the road",
+        "to dance"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "跳舞",
+      "correct": "跳舞",
+      "choices": [
+        "跳舞",
+        "阴天",
+        "行人",
+        "跑步"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "耳",
+          "pinyin": "ěr",
+          "english": "ear"
+        },
+        {
+          "id": 2,
+          "chinese": "足",
+          "pinyin": "zú",
+          "english": "foot"
+        },
+        {
+          "id": 3,
+          "chinese": "阳",
+          "pinyin": "yáng",
+          "english": "sun / yang"
+        },
+        {
+          "id": 4,
+          "chinese": "阴",
+          "pinyin": "yīn",
+          "english": "shade / yin"
+        },
+        {
+          "id": 5,
+          "chinese": "都",
+          "pinyin": "dōu",
+          "english": "all"
+        }
+      ],
+      "correct": "char:耳足阳阴都",
+      "choices": [
+        "ear",
+        "foot",
+        "sun / yang",
+        "shade / yin",
+        "all"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "行",
+          "pinyin": "xíng",
+          "english": "to go / all right"
+        },
+        {
+          "id": 2,
+          "chinese": "路",
+          "pinyin": "lù",
+          "english": "road"
+        },
+        {
+          "id": 3,
+          "chinese": "跑",
+          "pinyin": "pǎo",
+          "english": "to run"
+        },
+        {
+          "id": 4,
+          "chinese": "跳",
+          "pinyin": "tiào",
+          "english": "to jump"
+        },
+        {
+          "id": 5,
+          "chinese": "太",
+          "pinyin": "tài",
+          "english": "very / too"
+        }
+      ],
+      "correct": "char:行路跑跳太",
+      "choices": [
+        "to go / all right",
+        "road",
+        "to run",
+        "to jump",
+        "very / too"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "阳",
+          "pinyin": "yáng",
+          "english": "sun / yang"
+        },
+        {
+          "id": 2,
+          "chinese": "阴",
+          "pinyin": "yīn",
+          "english": "shade / yin"
+        },
+        {
+          "id": 3,
+          "chinese": "路",
+          "pinyin": "lù",
+          "english": "road"
+        },
+        {
+          "id": 4,
+          "chinese": "跑",
+          "pinyin": "pǎo",
+          "english": "to run"
+        },
+        {
+          "id": 5,
+          "chinese": "跳",
+          "pinyin": "tiào",
+          "english": "to jump"
+        }
+      ],
+      "correct": "char:阳阴路跑跳",
+      "choices": [
+        "sun / yang",
+        "shade / yin",
+        "road",
+        "to run",
+        "to jump"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "太阳",
+          "pinyin": "tàiyáng",
+          "english": "the sun"
+        },
+        {
+          "id": 2,
+          "chinese": "阴天",
+          "pinyin": "yīntiān",
+          "english": "a cloudy day"
+        },
+        {
+          "id": 3,
+          "chinese": "都是",
+          "pinyin": "dōu shì",
+          "english": "all of them are"
+        },
+        {
+          "id": 4,
+          "chinese": "都行",
+          "pinyin": "dōu xíng",
+          "english": "either is fine"
+        },
+        {
+          "id": 5,
+          "chinese": "路上",
+          "pinyin": "lù shang",
+          "english": "on the road"
+        }
+      ],
+      "correct": "word:太阳阴天都是都行路上",
+      "choices": [
+        "the sun",
+        "a cloudy day",
+        "all of them are",
+        "either is fine",
+        "on the road"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "行人",
+          "pinyin": "xíng rén",
+          "english": "pedestrian"
+        },
+        {
+          "id": 2,
+          "chinese": "跑步",
+          "pinyin": "pǎobù",
+          "english": "to go running"
+        },
+        {
+          "id": 3,
+          "chinese": "跳舞",
+          "pinyin": "tiàowǔ",
+          "english": "to dance"
+        },
+        {
+          "id": 4,
+          "chinese": "太阳",
+          "pinyin": "tàiyáng",
+          "english": "the sun"
+        },
+        {
+          "id": 5,
+          "chinese": "路上",
+          "pinyin": "lù shang",
+          "english": "on the road"
+        }
+      ],
+      "correct": "word:行人跑步跳舞太阳路上",
+      "choices": [
+        "pedestrian",
+        "to go running",
+        "to dance",
+        "the sun",
+        "on the road"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "太",
+        null
+      ],
+      "correct": "阳",
+      "choices": [
+        "阴",
+        "都",
+        "行",
+        "阳"
+      ],
+      "result_word": "太阳",
+      "result_pinyin": "tàiyáng",
+      "result_meaning": "the sun",
+      "audio_text": "太阳"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "阴",
+        null
+      ],
+      "correct": "天",
+      "choices": [
+        "上",
+        "步",
+        "天",
+        "人"
+      ],
+      "result_word": "阴天",
+      "result_pinyin": "yīntiān",
+      "result_meaning": "a cloudy day",
+      "audio_text": "阴天"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "跑",
+        null
+      ],
+      "correct": "步",
+      "choices": [
+        "人",
+        "舞",
+        "步",
+        "上"
+      ],
+      "result_word": "跑步",
+      "result_pinyin": "pǎobù",
+      "result_meaning": "to go running",
+      "audio_text": "跑步"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "跳",
+        null
+      ],
+      "correct": "舞",
+      "choices": [
+        "天",
+        "行",
+        "舞",
+        "步"
+      ],
+      "result_word": "跳舞",
+      "result_pinyin": "tiàowǔ",
+      "result_meaning": "to dance",
+      "audio_text": "跳舞"
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "Yesterday was cloudy.",
+      "tiles": [
+        "阴天",
+        "今天",
+        "是",
+        "昨天"
+      ],
+      "answer": [
+        "昨天",
+        "是",
+        "阴天"
+      ],
+      "result": "昨天是阴天。",
+      "pinyin": "Zuótiān shì yīntiān.",
+      "correct": "昨天是阴天",
+      "choices": [
+        "昨天是阴天"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "Today there is sun.",
+      "tiles": [
+        "太阳",
+        "有",
+        "阴天",
+        "今天"
+      ],
+      "answer": [
+        "今天",
+        "有",
+        "太阳"
+      ],
+      "result": "今天有太阳！",
+      "pinyin": "Jīntiān yǒu tàiyáng!",
+      "correct": "今天有太阳",
+      "choices": [
+        "今天有太阳"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "The road is full of pedestrians.",
+      "tiles": [
+        "行人",
+        "都是",
+        "太阳",
+        "路上"
+      ],
+      "answer": [
+        "路上",
+        "都是",
+        "行人"
+      ],
+      "result": "路上都是行人。",
+      "pinyin": "Lù shang dōu shì xíngrén.",
+      "correct": "路上都是行人",
+      "choices": [
+        "路上都是行人"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "We are going running.",
+      "tiles": [
+        "跑步",
+        "跳舞",
+        "去",
+        "我们"
+      ],
+      "answer": [
+        "我们",
+        "去",
+        "跑步"
+      ],
+      "result": "我们去跑步。",
+      "pinyin": "Wǒmen qù pǎobù.",
+      "correct": "我们去跑步",
+      "choices": [
+        "我们去跑步"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "跑步",
+      "audio_text": "跑步",
+      "pinyin": "pǎobù",
+      "meaning": "to go running",
+      "correct": "跑步",
+      "choices": [
+        "跑步"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我们去跳舞还是跑步？",
+      "audio_text": "我们去跳舞还是跑步",
+      "pinyin": "Wǒmen qù tiàowǔ háishi pǎobù?",
+      "meaning": "Shall we go dancing or running?",
+      "correct": "我们去跳舞还是跑步？",
+      "choices": [
+        "我们去跳舞还是跑步？"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "行人",
+      "audio_text": "行人",
+      "pinyin": "xíng rén",
+      "meaning": "pedestrian",
+      "correct": "行人",
+      "choices": [
+        "行人"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "都行",
+      "audio_text": "都行",
+      "pinyin": "dōu xíng",
+      "meaning": "either is fine",
+      "correct": "都行",
+      "choices": [
+        "都行"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "路上都是行人。",
+      "audio_text": "路上都是行人",
+      "pinyin": "Lù shang dōu shì xíngrén.",
+      "meaning": "The road is full of people on foot.",
+      "correct": "路上都是行人。",
+      "choices": [
+        "路上都是行人。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "太阳",
+      "audio_text": "太阳",
+      "pinyin": "tàiyáng",
+      "meaning": "the sun",
+      "correct": "太阳",
+      "choices": [
+        "太阳"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "路上",
+      "audio_text": "路上",
+      "pinyin": "lù shang",
+      "meaning": "on the road",
+      "correct": "路上",
+      "choices": [
+        "路上"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "都是",
+      "audio_text": "都是",
+      "pinyin": "dōu shì",
+      "meaning": "all of them are",
+      "correct": "都是",
+      "choices": [
+        "都是"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "今天有太阳！",
+      "audio_text": "今天有太阳",
+      "pinyin": "Jīntiān yǒu tàiyáng!",
+      "meaning": "Today there is sun!",
+      "correct": "今天有太阳！",
+      "choices": [
+        "今天有太阳！"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "阴天",
+      "audio_text": "阴天",
+      "pinyin": "yīntiān",
+      "meaning": "a cloudy day",
+      "correct": "阴天",
+      "choices": [
+        "阴天"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "跳舞",
+      "audio_text": "跳舞",
+      "pinyin": "tiàowǔ",
+      "meaning": "to dance",
+      "correct": "跳舞",
+      "choices": [
+        "跳舞"
+      ]
+    }
+  ]
+}

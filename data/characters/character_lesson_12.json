@@ -2241,6 +2241,28 @@
     },
     {
       "type": "read_aloud",
+      "prompt_char": "椅子",
+      "audio_text": "椅子",
+      "pinyin": "yǐzi",
+      "meaning": "chair",
+      "correct": "椅子",
+      "choices": [
+        "椅子"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "那是椅子。",
+      "audio_text": "那是椅子",
+      "pinyin": "nà shì yǐzi.",
+      "meaning": "That is a chair.",
+      "correct": "那是椅子。",
+      "choices": [
+        "那是椅子。"
+      ]
+    },
+    {
+      "type": "read_aloud",
       "prompt_char": "很热",
       "audio_text": "很热",
       "pinyin": "hěn rè",
@@ -2248,6 +2270,72 @@
       "correct": "很热",
       "choices": [
         "很热"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "泪水",
+      "audio_text": "泪水",
+      "pinyin": "lèishuǐ",
+      "meaning": "tears",
+      "correct": "泪水",
+      "choices": [
+        "泪水"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "炎热",
+      "audio_text": "炎热",
+      "pinyin": "yánrè",
+      "meaning": "scorching hot",
+      "correct": "炎热",
+      "choices": [
+        "炎热"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "这是汗水。",
+      "audio_text": "这是汗水",
+      "pinyin": "zhè shì hànshuǐ.",
+      "meaning": "This is sweat.",
+      "correct": "这是汗水。",
+      "choices": [
+        "这是汗水。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "天气很热。",
+      "audio_text": "天气很热",
+      "pinyin": "tiānqì hěn rè.",
+      "meaning": "The weather is hot.",
+      "correct": "天气很热。",
+      "choices": [
+        "天气很热。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "她吃炒饭。",
+      "audio_text": "她吃炒饭",
+      "pinyin": "tā chī chǎofàn.",
+      "meaning": "She is eating fried rice.",
+      "correct": "她吃炒饭。",
+      "choices": [
+        "她吃炒饭。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "桌子",
+      "audio_text": "桌子",
+      "pinyin": "zhuōzi",
+      "meaning": "table",
+      "correct": "桌子",
+      "choices": [
+        "桌子"
       ]
     }
   ]

@@ -1526,39 +1526,6 @@
       ]
     },
     {
-      "type": "read_aloud",
-      "prompt_char": "你好",
-      "audio_text": "你好",
-      "pinyin": "nǐ hǎo",
-      "meaning": "hello",
-      "correct": "你好",
-      "choices": [
-        "你好"
-      ]
-    },
-    {
-      "type": "read_aloud",
-      "prompt_char": "我奶奶",
-      "audio_text": "我奶奶",
-      "pinyin": "wǒ nǎinai",
-      "meaning": "my grandma",
-      "correct": "我奶奶",
-      "choices": [
-        "我奶奶"
-      ]
-    },
-    {
-      "type": "read_aloud",
-      "prompt_char": "牛奶",
-      "audio_text": "牛奶",
-      "pinyin": "niúnǎi",
-      "meaning": "milk",
-      "correct": "牛奶",
-      "choices": [
-        "牛奶"
-      ]
-    },
-    {
       "type": "matching",
       "mode": "char",
       "instruction": "Match each one to its meaning.",
@@ -1896,6 +1863,138 @@
       "correct": "我很好",
       "choices": [
         "我很好"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "她也很好！",
+      "audio_text": "她也很好",
+      "pinyin": "tā yě hěn hǎo!",
+      "meaning": "She is very well too!",
+      "correct": "她也很好！",
+      "choices": [
+        "她也很好！"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我奶奶",
+      "audio_text": "我奶奶",
+      "pinyin": "wǒ nǎinai",
+      "meaning": "my grandma",
+      "correct": "我奶奶",
+      "choices": [
+        "我奶奶"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "你们好",
+      "audio_text": "你们好",
+      "pinyin": "nǐmen hǎo",
+      "meaning": "hello (to several people)",
+      "correct": "你们好",
+      "choices": [
+        "你们好"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我妈妈",
+      "audio_text": "我妈妈",
+      "pinyin": "wǒ māma",
+      "meaning": "my mum",
+      "correct": "我妈妈",
+      "choices": [
+        "我妈妈"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "面条",
+      "audio_text": "面条",
+      "pinyin": "miàntiáo",
+      "meaning": "noodles",
+      "correct": "面条",
+      "choices": [
+        "面条"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "你好",
+      "audio_text": "你好",
+      "pinyin": "nǐ hǎo",
+      "meaning": "hello",
+      "correct": "你好",
+      "choices": [
+        "你好"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "她吃面条。",
+      "audio_text": "她吃面条",
+      "pinyin": "tā chī miàntiáo.",
+      "meaning": "She is eating noodles.",
+      "correct": "她吃面条。",
+      "choices": [
+        "她吃面条。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "牛奶",
+      "audio_text": "牛奶",
+      "pinyin": "niúnǎi",
+      "meaning": "milk",
+      "correct": "牛奶",
+      "choices": [
+        "牛奶"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "她妈妈",
+      "audio_text": "她妈妈",
+      "pinyin": "tā māma",
+      "meaning": "her mum",
+      "correct": "她妈妈",
+      "choices": [
+        "她妈妈"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "她喝牛奶。",
+      "audio_text": "她喝牛奶",
+      "pinyin": "tā hē niúnǎi.",
+      "meaning": "She drinks milk.",
+      "correct": "她喝牛奶。",
+      "choices": [
+        "她喝牛奶。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "米饭",
+      "audio_text": "米饭",
+      "pinyin": "mǐfàn",
+      "meaning": "cooked rice",
+      "correct": "米饭",
+      "choices": [
+        "米饭"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我叫小云。",
+      "audio_text": "我叫小云",
+      "pinyin": "wǒ jiào Xiǎo Yún.",
+      "meaning": "I am called Xiao Yun.",
+      "correct": "我叫小云。",
+      "choices": [
+        "我叫小云。"
       ]
     }
   ]

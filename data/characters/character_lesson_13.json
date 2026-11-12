@@ -32,10 +32,10 @@
           "pinyin": "jīn",
           "meaning": "metal / gold",
           "audio_text": "金",
-          "picture": "🪙",
+          "picture": "l13-p1-jin",
           "note": "Metal under a roof, with two nuggets buried beneath it.",
           "match": {
-            "prompt_picture": "🪙",
+            "prompt_picture": "l13-p1-jin",
             "choices": [
               "金",
               "土",
@@ -49,10 +49,10 @@
           "pinyin": "tǔ",
           "meaning": "earth / soil",
           "audio_text": "土",
-          "picture": "⛰️",
+          "picture": "l13-p1-tu",
           "note": "A mound of earth pressed up out of the ground.",
           "match": {
-            "prompt_picture": "⛰️",
+            "prompt_picture": "l13-p1-tu",
             "choices": [
               "金",
               "土",
@@ -66,10 +66,10 @@
           "pinyin": "shǒu",
           "meaning": "hand",
           "audio_text": "手",
-          "picture": "✋",
+          "picture": "l13-p1-shou",
           "note": "A hand with its fingers spread, drawn from the wrist up.",
           "match": {
-            "prompt_picture": "✋",
+            "prompt_picture": "l13-p1-shou",
             "choices": [
               "金",
               "土",
@@ -83,15 +83,15 @@
         "question": "Match each picture to its character.",
         "pairs": [
           {
-            "picture": "🪙",
+            "picture": "l13-p1-jin",
             "character": "金"
           },
           {
-            "picture": "⛰️",
+            "picture": "l13-p1-tu",
             "character": "土"
           },
           {
-            "picture": "✋",
+            "picture": "l13-p1-shou",
             "character": "手"
           }
         ]
@@ -309,6 +309,11 @@
       ],
       "support_words": [
         {
+          "word": "你们",
+          "pinyin": "nǐmen",
+          "meaning": "you (more than one)"
+        },
+        {
           "word": "多少",
           "pinyin": "duōshao",
           "meaning": "how much / how many"
@@ -328,7 +333,7 @@
         {
           "title": "How much?",
           "goal": "多少钱 一块钱 十块钱",
-          "picture": "🪙",
+          "picture": "l13-p3-how-much",
           "lines": [
             {
               "speaker": "A",
@@ -383,15 +388,15 @@
         },
         {
           "title": "What are you doing?",
-          "goal": "在 做 打扫",
-          "picture": "🧹",
+          "goal": "你们 在 做 打扫",
+          "picture": "l13-p3-doing",
           "lines": [
             {
               "speaker": "A",
-              "text": "你在做什么？",
-              "pinyin": "nǐ zài zuò shénme?",
+              "text": "你们在做什么？",
+              "pinyin": "nǐmen zài zuò shénme?",
               "meaning": "What are you doing?",
-              "audio_text": "你在做什么"
+              "audio_text": "你们在做什么"
             },
             {
               "speaker": "B",
@@ -413,7 +418,7 @@
             "tiles": [
               "打扫",
               "在",
-              "你",
+              "你们",
               "我"
             ],
             "answer": [
@@ -428,7 +433,7 @@
         {
           "title": "Sweeping the floor",
           "goal": "扫地",
-          "picture": "🏠",
+          "picture": "l13-p3-sweeping",
           "lines": [
             {
               "speaker": "A",
@@ -587,20 +592,20 @@
       },
       "shop": {
         "title": "小挑战 · Mini challenge",
-        "intro": "Two things for sale. Read the prices, then answer below.",
+        "intro": "Two things for sale. Tap either to ask its price, then answer below.",
         "items": [
           {
             "word": "水",
-            "pinyin": "shuǐ",
-            "audio_text": "水",
-            "picture": "💧",
+            "pinyin": "shuǐ duōshao qián",
+            "audio_text": "水多少钱",
+            "picture": "l11-p3-something-to-drink",
             "price": "¥1",
             "price_cn": "一块钱"
           },
           {
             "word": "炒饭",
-            "pinyin": "chǎofàn",
-            "audio_text": "炒饭",
+            "pinyin": "chǎofàn duōshao qián",
+            "audio_text": "炒饭多少钱",
             "picture": "l13-p5-chaofan",
             "price": "¥10",
             "price_cn": "十块钱"
@@ -1736,17 +1741,6 @@
     },
     {
       "type": "read_aloud",
-      "prompt_char": "多少钱",
-      "audio_text": "多少钱",
-      "pinyin": "duōshao qián",
-      "meaning": "how much is it?",
-      "correct": "多少钱",
-      "choices": [
-        "多少钱"
-      ]
-    },
-    {
-      "type": "read_aloud",
       "prompt_char": "一块钱",
       "audio_text": "一块钱",
       "pinyin": "yí kuài qián",
@@ -1758,6 +1752,72 @@
     },
     {
       "type": "read_aloud",
+      "prompt_char": "我扫地！",
+      "audio_text": "我扫地",
+      "pinyin": "wǒ sǎo dì!",
+      "meaning": "I sweep the floor!",
+      "correct": "我扫地！",
+      "choices": [
+        "我扫地！"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "多少钱",
+      "audio_text": "多少钱",
+      "pinyin": "duōshao qián",
+      "meaning": "how much is it?",
+      "correct": "多少钱",
+      "choices": [
+        "多少钱"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "金钱",
+      "audio_text": "金钱",
+      "pinyin": "jīnqián",
+      "meaning": "money, as wealth",
+      "correct": "金钱",
+      "choices": [
+        "金钱"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "十块钱",
+      "audio_text": "十块钱",
+      "pinyin": "shí kuài qián",
+      "meaning": "ten yuan",
+      "correct": "十块钱",
+      "choices": [
+        "十块钱"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我在打扫。",
+      "audio_text": "我在打扫",
+      "pinyin": "wǒ zài dǎsǎo.",
+      "meaning": "I am cleaning.",
+      "correct": "我在打扫。",
+      "choices": [
+        "我在打扫。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "炒饭多少钱？",
+      "audio_text": "炒饭多少钱",
+      "pinyin": "chǎofàn duōshao qián?",
+      "meaning": "How much is the fried rice?",
+      "correct": "炒饭多少钱？",
+      "choices": [
+        "炒饭多少钱？"
+      ]
+    },
+    {
+      "type": "read_aloud",
       "prompt_char": "打扫",
       "audio_text": "打扫",
       "pinyin": "dǎsǎo",
@@ -1765,6 +1825,17 @@
       "correct": "打扫",
       "choices": [
         "打扫"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "扫地",
+      "audio_text": "扫地",
+      "pinyin": "sǎo dì",
+      "meaning": "to sweep the floor",
+      "correct": "扫地",
+      "choices": [
+        "扫地"
       ]
     }
   ]

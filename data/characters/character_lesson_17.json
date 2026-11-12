@@ -1,0 +1,1819 @@
+{
+  "id": 17,
+  "part": 2,
+  "title": "Lesson 17 · Flowers, Grass and Mountains",
+  "emoji": "🌿",
+  "subtitle": "花 草 山 · 草字头 山字头",
+  "description": "Two radicals that sit on the roof of a character, and the green world hiding under one of them.",
+  "new_strokes": [],
+  "new_characters": [
+    "花",
+    "草",
+    "茶",
+    "岁"
+  ],
+  "new_words": [
+    "小花",
+    "小草",
+    "喝茶",
+    "花茶",
+    "山上",
+    "山下",
+    "上山",
+    "下山",
+    "几岁"
+  ],
+  "learn_content": {
+    "part1_blocks": {
+      "title": "Discover",
+      "subtitle": "独体字 · Characters that stand alone",
+      "intro": "A flower, grass and a mountain. Two of them hide the same piece on top — Part 5 is about that piece.",
+      "blocks": [
+        {
+          "character": "花",
+          "pinyin": "huā",
+          "meaning": "a flower",
+          "audio_text": "花",
+          "picture": "🌸",
+          "note": "Grass on top, 化 beneath — the plant that changes into colour.",
+          "match": {
+            "prompt_picture": "🌸",
+            "choices": [
+              "花",
+              "草",
+              "山"
+            ],
+            "correct": "花"
+          }
+        },
+        {
+          "character": "草",
+          "pinyin": "cǎo",
+          "meaning": "grass",
+          "audio_text": "草",
+          "picture": "🌿",
+          "note": "Two shoots pushing up through the ground, with 早 below.",
+          "match": {
+            "prompt_picture": "🌿",
+            "choices": [
+              "花",
+              "草",
+              "山"
+            ],
+            "correct": "草"
+          }
+        },
+        {
+          "character": "山",
+          "pinyin": "shān",
+          "meaning": "a mountain",
+          "audio_text": "山",
+          "picture": "⛰️",
+          "note": "Three peaks, the tallest in the middle. It has barely changed in 3,000 years.",
+          "match": {
+            "prompt_picture": "⛰️",
+            "choices": [
+              "花",
+              "草",
+              "山"
+            ],
+            "correct": "山"
+          }
+        }
+      ],
+      "match": {
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "🌸",
+            "character": "花"
+          },
+          {
+            "picture": "🌿",
+            "character": "草"
+          },
+          {
+            "picture": "⛰️",
+            "character": "山"
+          }
+        ]
+      }
+    },
+    "part2_components": {
+      "title": "Decode",
+      "subtitle": "部件与部首 · Components and radicals",
+      "caveat": "Both of these sit on TOP of a character rather than beside it.",
+      "components": [
+        {
+          "radical": "艹",
+          "name": "草字头",
+          "pinyin": "cǎo zì tóu",
+          "name_en": "the grass radical, sitting on top",
+          "audio_text": "草字头",
+          "from": {
+            "character": "草",
+            "pinyin": "cǎo",
+            "meaning": "grass"
+          },
+          "hint": "草 loses everything but its two shoots and becomes a roof — 艹.",
+          "characters": [
+            {
+              "character": "花",
+              "pinyin": "huā",
+              "meaning": "a flower",
+              "audio_text": "花"
+            },
+            {
+              "character": "草",
+              "pinyin": "cǎo",
+              "meaning": "grass",
+              "audio_text": "草"
+            },
+            {
+              "character": "茶",
+              "pinyin": "chá",
+              "meaning": "tea",
+              "audio_text": "茶"
+            }
+          ],
+          "find": {
+            "question": "Where does 艹 sit in 花?",
+            "choices": [
+              "on top",
+              "on the left",
+              "underneath",
+              "on the right"
+            ],
+            "correct": "on top"
+          },
+          "reveal": {
+            "category": "things that grow",
+            "note": "A flower, grass, a tea bush. If a character wears 艹, something green is involved."
+          }
+        },
+        {
+          "radical": "山",
+          "name": "山字头",
+          "pinyin": "shān zì tóu",
+          "name_en": "the mountain radical, sitting on top",
+          "audio_text": "山字头",
+          "from": {
+            "character": "山",
+            "pinyin": "shān",
+            "meaning": "a mountain"
+          },
+          "hint": "山 flattens a little and sits on the roof too — as in 岁.",
+          "characters": [
+            {
+              "character": "岁",
+              "pinyin": "suì",
+              "meaning": "years old",
+              "audio_text": "岁"
+            }
+          ],
+          "find": {
+            "question": "Which part of 岁 is the radical?",
+            "choices": [
+              "山",
+              "夕",
+              "艹",
+              "日"
+            ],
+            "correct": "山"
+          },
+          "reveal": {
+            "category": "mountains, and the years that pass over them",
+            "note": "岁 is a year of your life. 她几岁？ — how many has she had?"
+          }
+        }
+      ],
+      "radical_audio": {
+        "艹": {
+          "text": "草字头",
+          "pinyin": "cǎo zì tóu"
+        },
+        "山": {
+          "text": "山字头",
+          "pinyin": "shān zì tóu"
+        }
+      },
+      "group": {
+        "question": "Which character does NOT wear 艹?",
+        "choices": [
+          "岁",
+          "花",
+          "草",
+          "茶"
+        ],
+        "correct": "岁",
+        "explain": "岁 wears 山. The other three are all plants."
+      }
+    },
+    "part3_dialogue": {
+      "title": "Use",
+      "subtitle": "词语与情景对话 · Words and dialogue",
+      "characters": [
+        {
+          "character": "在",
+          "pinyin": "zài",
+          "meaning": "to be at",
+          "audio_text": "在"
+        },
+        {
+          "character": "去",
+          "pinyin": "qù",
+          "meaning": "to go",
+          "audio_text": "去"
+        }
+      ],
+      "words": [
+        {
+          "word": "小花",
+          "pinyin": "xiǎo huā",
+          "meaning": "a little flower",
+          "audio_text": "小花",
+          "built_from": "小 + 花"
+        },
+        {
+          "word": "小草",
+          "pinyin": "xiǎo cǎo",
+          "meaning": "a blade of grass",
+          "audio_text": "小草",
+          "built_from": "小 + 草"
+        },
+        {
+          "word": "喝茶",
+          "pinyin": "hē chá",
+          "meaning": "to drink tea",
+          "audio_text": "喝茶",
+          "built_from": "喝 + 茶"
+        },
+        {
+          "word": "花茶",
+          "pinyin": "huāchá",
+          "meaning": "flower tea",
+          "audio_text": "花茶",
+          "built_from": "花 + 茶"
+        },
+        {
+          "word": "山上",
+          "pinyin": "shān shang",
+          "meaning": "up the mountain",
+          "audio_text": "山上",
+          "built_from": "山 + 上"
+        },
+        {
+          "word": "山下",
+          "pinyin": "shān xià",
+          "meaning": "at the foot of the mountain",
+          "audio_text": "山下",
+          "built_from": "山 + 下"
+        },
+        {
+          "word": "上山",
+          "pinyin": "shàng shān",
+          "meaning": "to go up a mountain",
+          "audio_text": "上山",
+          "built_from": "上 + 山"
+        },
+        {
+          "word": "下山",
+          "pinyin": "xià shān",
+          "meaning": "to come down a mountain",
+          "audio_text": "下山",
+          "built_from": "下 + 山"
+        },
+        {
+          "word": "几岁",
+          "pinyin": "jǐ suì",
+          "meaning": "how old",
+          "audio_text": "几岁",
+          "built_from": "几 + 岁"
+        }
+      ],
+      "support_words": [
+        {
+          "word": "这儿",
+          "pinyin": "zhèr",
+          "meaning": "here"
+        },
+        {
+          "word": "哪儿",
+          "pinyin": "nǎr",
+          "meaning": "where"
+        },
+        {
+          "word": "几",
+          "pinyin": "jǐ",
+          "meaning": "how many"
+        },
+        {
+          "word": "六",
+          "pinyin": "liù",
+          "meaning": "six"
+        },
+        {
+          "word": "小",
+          "pinyin": "xiǎo",
+          "meaning": "small"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Here",
+          "goal": "这儿 小花 小草",
+          "picture": "🌼",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "这儿有小花小草。",
+              "pinyin": "Zhèr yǒu xiǎo huā xiǎo cǎo.",
+              "meaning": "There are little flowers and grass here.",
+              "audio_text": "这儿有小花小草"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "这儿有小花小草。",
+            "pinyin": "Zhèr yǒu xiǎo huā xiǎo cǎo.",
+            "meaning": "There are little flowers and grass here.",
+            "audio_text": "这儿有小花小草"
+          },
+          "speak": {
+            "question": "Build it: there are little flowers and grass here.",
+            "tiles": [
+              "小花小草",
+              "山上",
+              "有",
+              "这儿"
+            ],
+            "answer": [
+              "这儿",
+              "有",
+              "小花小草"
+            ],
+            "result": "这儿有小花小草。",
+            "pinyin": "Zhèr yǒu xiǎo huā xiǎo cǎo."
+          }
+        },
+        {
+          "title": "Where are you?",
+          "goal": "在 哪儿 山上",
+          "picture": "⛰️",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你在哪儿？",
+              "pinyin": "Nǐ zài nǎr?",
+              "meaning": "Where are you?",
+              "audio_text": "你在哪儿"
+            },
+            {
+              "speaker": "B",
+              "text": "我在山上。",
+              "pinyin": "Wǒ zài shān shang.",
+              "meaning": "I am up the mountain.",
+              "audio_text": "我在山上"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我在山上。",
+            "pinyin": "Wǒ zài shān shang.",
+            "meaning": "I am up the mountain.",
+            "audio_text": "我在山上"
+          },
+          "speak": {
+            "question": "Build it: I am up the mountain.",
+            "tiles": [
+              "山上",
+              "山下",
+              "在",
+              "我"
+            ],
+            "answer": [
+              "我",
+              "在",
+              "山上"
+            ],
+            "result": "我在山上。",
+            "pinyin": "Wǒ zài shān shang."
+          }
+        },
+        {
+          "title": "Where are you going?",
+          "goal": "去 哪儿 上山",
+          "picture": "🥾",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你去哪儿？",
+              "pinyin": "Nǐ qù nǎr?",
+              "meaning": "Where are you going?",
+              "audio_text": "你去哪儿"
+            },
+            {
+              "speaker": "B",
+              "text": "我上山。",
+              "pinyin": "Wǒ shàng shān.",
+              "meaning": "I am going up the mountain.",
+              "audio_text": "我上山"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "你去哪儿？",
+            "pinyin": "Nǐ qù nǎr?",
+            "meaning": "Where are you going?",
+            "audio_text": "你去哪儿"
+          },
+          "speak": {
+            "question": "Build it: where are you going?",
+            "tiles": [
+              "哪儿",
+              "去",
+              "这儿",
+              "你"
+            ],
+            "answer": [
+              "你",
+              "去",
+              "哪儿"
+            ],
+            "result": "你去哪儿？",
+            "pinyin": "Nǐ qù nǎr?"
+          }
+        },
+        {
+          "title": "Something to drink",
+          "goal": "喝茶",
+          "picture": "🍵",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你喝什么？",
+              "pinyin": "Nǐ hē shénme?",
+              "meaning": "What are you drinking?",
+              "audio_text": "你喝什么"
+            },
+            {
+              "speaker": "B",
+              "text": "我喝茶。",
+              "pinyin": "Wǒ hē chá.",
+              "meaning": "I am drinking tea.",
+              "audio_text": "我喝茶"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我喝茶。",
+            "pinyin": "Wǒ hē chá.",
+            "meaning": "I am drinking tea.",
+            "audio_text": "我喝茶"
+          },
+          "speak": {
+            "question": "Build it: I am drinking tea.",
+            "tiles": [
+              "茶",
+              "水",
+              "喝",
+              "我"
+            ],
+            "answer": [
+              "我",
+              "喝",
+              "茶"
+            ],
+            "result": "我喝茶。",
+            "pinyin": "Wǒ hē chá."
+          }
+        },
+        {
+          "title": "How old?",
+          "goal": "几岁 六岁",
+          "picture": "🎂",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "她几岁？",
+              "pinyin": "Tā jǐ suì?",
+              "meaning": "How old is she?",
+              "audio_text": "她几岁"
+            },
+            {
+              "speaker": "B",
+              "text": "她六岁。",
+              "pinyin": "Tā liù suì.",
+              "meaning": "She is six.",
+              "audio_text": "她六岁"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "她几岁？",
+            "pinyin": "Tā jǐ suì?",
+            "meaning": "How old is she?",
+            "audio_text": "她几岁"
+          },
+          "speak": {
+            "question": "Build it: how old is she?",
+            "tiles": [
+              "几岁",
+              "六岁",
+              "她"
+            ],
+            "answer": [
+              "她",
+              "几岁"
+            ],
+            "result": "她几岁？",
+            "pinyin": "Tā jǐ suì?"
+          }
+        }
+      ],
+      "read_aloud": {
+        "title": "Say them yourself",
+        "intro": "Listen, then read each one aloud.",
+        "items": [
+          {
+            "text": "喝茶",
+            "pinyin": "hē chá",
+            "meaning": "to drink tea",
+            "audio_text": "喝茶"
+          },
+          {
+            "text": "山上",
+            "pinyin": "shān shang",
+            "meaning": "up the mountain",
+            "audio_text": "山上"
+          },
+          {
+            "text": "几岁",
+            "pinyin": "jǐ suì",
+            "meaning": "how old",
+            "audio_text": "几岁"
+          }
+        ]
+      }
+    },
+    "part4_write": {
+      "title": "Write",
+      "subtitle": "汉字书写 · Write every character in this lesson",
+      "characters": [
+        "花",
+        "草",
+        "山",
+        "岁",
+        "茶"
+      ]
+    },
+    "part5_culture": {
+      "title": "Discover Chinese",
+      "subtitle": "汉字探秘 · Culture and language insights",
+      "topic": "草字头的秘密",
+      "topic_en": "The secret of 艹",
+      "picture": "l17-p5-huacha",
+      "listen": {
+        "intro": "你发现了吗？ Three characters. Tap each one.",
+        "items": [
+          {
+            "character": "花",
+            "pinyin": "huā",
+            "meaning": "a flower",
+            "audio_text": "花"
+          },
+          {
+            "character": "草",
+            "pinyin": "cǎo",
+            "meaning": "grass",
+            "audio_text": "草"
+          },
+          {
+            "character": "茶",
+            "pinyin": "chá",
+            "meaning": "tea",
+            "audio_text": "茶"
+          }
+        ]
+      },
+      "notice": "它们都有草字头「艹」！ Every one of them wears the same roof.",
+      "gallery": {
+        "title": "草字头的家族 · The plant family",
+        "intro": "艹 on top, something green underneath.",
+        "items": [
+          {
+            "character": "花",
+            "pinyin": "huā",
+            "meaning": "a flower",
+            "audio_text": "花",
+            "picture": "l17-p5-hua-bloom"
+          },
+          {
+            "character": "草",
+            "pinyin": "cǎo",
+            "meaning": "grass",
+            "audio_text": "草",
+            "picture": "l17-p5-cao"
+          },
+          {
+            "character": "茶",
+            "pinyin": "chá",
+            "meaning": "tea",
+            "audio_text": "茶",
+            "picture": "l17-p5-cha"
+          },
+          {
+            "character": "菜",
+            "pinyin": "cài",
+            "meaning": "vegetables",
+            "audio_text": "菜",
+            "picture": "l17-p5-cai"
+          }
+        ]
+      },
+      "forms": {
+        "title": "汉字里的自然 · Nature inside the characters",
+        "intro": "A component is a clue, not a translation — but it is a good clue.",
+        "picture": "l17-p5-shan",
+        "items": [
+          {
+            "character": "艹",
+            "label": "→ plants",
+            "note": "花 草 茶 菜"
+          },
+          {
+            "character": "山",
+            "label": "→ mountains",
+            "note": "岁 峰 岛"
+          }
+        ]
+      },
+      "find_all": {
+        "title": "汉字小侦探 · Character detective",
+        "question": "哪些汉字有草字头？",
+        "intro": "Tap every character that wears 艹.",
+        "choices": [
+          "花",
+          "山",
+          "茶",
+          "峰",
+          "菜",
+          "草"
+        ],
+        "correct": [
+          "花",
+          "茶",
+          "菜",
+          "草"
+        ],
+        "explain": "山 and 峰 are mountains — 峰 is a mountain peak. The other four all grow."
+      }
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "花",
+      "audio_text": "花",
+      "correct": "a flower",
+      "choices": [
+        "a mountain",
+        "to go",
+        "to be at",
+        "a flower"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "花",
+      "correct": "花",
+      "choices": [
+        "花",
+        "山",
+        "在",
+        "茶"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a flower",
+      "correct": "花",
+      "choices": [
+        "茶",
+        "山",
+        "花",
+        "岁"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "花",
+      "audio_text": "花",
+      "correct": "huā",
+      "choices": [
+        "zài",
+        "huā",
+        "cǎo",
+        "suì"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "huā",
+      "correct": "花",
+      "choices": [
+        "在",
+        "山",
+        "花",
+        "去"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "草",
+      "audio_text": "草",
+      "correct": "grass",
+      "choices": [
+        "grass",
+        "a mountain",
+        "years old",
+        "to be at"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "草",
+      "correct": "草",
+      "choices": [
+        "花",
+        "草",
+        "山",
+        "茶"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "grass",
+      "correct": "草",
+      "choices": [
+        "山",
+        "在",
+        "草",
+        "去"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "草",
+      "audio_text": "草",
+      "correct": "cǎo",
+      "choices": [
+        "huā",
+        "suì",
+        "qù",
+        "cǎo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "cǎo",
+      "correct": "草",
+      "choices": [
+        "山",
+        "在",
+        "草",
+        "去"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "山",
+      "audio_text": "山",
+      "correct": "a mountain",
+      "choices": [
+        "a flower",
+        "years old",
+        "to go",
+        "a mountain"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "山",
+      "correct": "山",
+      "choices": [
+        "山",
+        "去",
+        "在",
+        "草"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a mountain",
+      "correct": "山",
+      "choices": [
+        "茶",
+        "花",
+        "山",
+        "在"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "山",
+      "audio_text": "山",
+      "correct": "shān",
+      "choices": [
+        "shān",
+        "suì",
+        "chá",
+        "zài"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shān",
+      "correct": "山",
+      "choices": [
+        "茶",
+        "山",
+        "花",
+        "去"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "茶",
+      "audio_text": "茶",
+      "correct": "tea",
+      "choices": [
+        "a mountain",
+        "tea",
+        "to be at",
+        "to go"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "茶",
+      "correct": "茶",
+      "choices": [
+        "在",
+        "花",
+        "茶",
+        "草"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "tea",
+      "correct": "茶",
+      "choices": [
+        "花",
+        "茶",
+        "草",
+        "山"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "茶",
+      "audio_text": "茶",
+      "correct": "chá",
+      "choices": [
+        "cǎo",
+        "chá",
+        "zài",
+        "huā"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "chá",
+      "correct": "茶",
+      "choices": [
+        "山",
+        "岁",
+        "茶",
+        "花"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "岁",
+      "audio_text": "岁",
+      "correct": "years old",
+      "choices": [
+        "a mountain",
+        "a flower",
+        "years old",
+        "to be at"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "岁",
+      "correct": "岁",
+      "choices": [
+        "山",
+        "岁",
+        "花",
+        "草"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "years old",
+      "correct": "岁",
+      "choices": [
+        "茶",
+        "岁",
+        "草",
+        "去"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "岁",
+      "audio_text": "岁",
+      "correct": "suì",
+      "choices": [
+        "qù",
+        "suì",
+        "huā",
+        "zài"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "suì",
+      "correct": "岁",
+      "choices": [
+        "草",
+        "岁",
+        "在",
+        "花"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "在",
+      "audio_text": "在",
+      "correct": "to be at",
+      "choices": [
+        "years old",
+        "tea",
+        "a flower",
+        "to be at"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "在",
+      "correct": "在",
+      "choices": [
+        "草",
+        "山",
+        "去",
+        "在"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to be at",
+      "correct": "在",
+      "choices": [
+        "在",
+        "山",
+        "草",
+        "花"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "在",
+      "audio_text": "在",
+      "correct": "zài",
+      "choices": [
+        "cǎo",
+        "zài",
+        "huā",
+        "shān"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zài",
+      "correct": "在",
+      "choices": [
+        "在",
+        "草",
+        "岁",
+        "花"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "去",
+      "audio_text": "去",
+      "correct": "to go",
+      "choices": [
+        "years old",
+        "to be at",
+        "to go",
+        "a mountain"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "去",
+      "correct": "去",
+      "choices": [
+        "去",
+        "草",
+        "岁",
+        "山"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to go",
+      "correct": "去",
+      "choices": [
+        "岁",
+        "茶",
+        "去",
+        "花"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "去",
+      "audio_text": "去",
+      "correct": "qù",
+      "choices": [
+        "shān",
+        "zài",
+        "suì",
+        "qù"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "qù",
+      "correct": "去",
+      "choices": [
+        "花",
+        "去",
+        "茶",
+        "草"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "花",
+      "audio_text": "花",
+      "correct": "艹",
+      "choices": [
+        "艹",
+        "目",
+        "彳",
+        "扌"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "草",
+      "audio_text": "草",
+      "correct": "艹",
+      "choices": [
+        "忄",
+        "讠",
+        "阝",
+        "艹"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "茶",
+      "audio_text": "茶",
+      "correct": "艹",
+      "choices": [
+        "月",
+        "艹",
+        "彳",
+        "忄"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "岁",
+      "audio_text": "岁",
+      "correct": "山",
+      "choices": [
+        "日",
+        "讠",
+        "山",
+        "忄"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "小花",
+      "audio_text": "小花",
+      "correct": "a little flower",
+      "choices": [
+        "a little flower",
+        "to come down a mountain",
+        "to drink tea",
+        "how old"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "小花",
+      "correct": "小花",
+      "choices": [
+        "几岁",
+        "山上",
+        "小花",
+        "上山"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "小草",
+      "audio_text": "小草",
+      "correct": "a blade of grass",
+      "choices": [
+        "to go up a mountain",
+        "up the mountain",
+        "flower tea",
+        "a blade of grass"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "小草",
+      "correct": "小草",
+      "choices": [
+        "小草",
+        "山上",
+        "喝茶",
+        "小花"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "喝茶",
+      "audio_text": "喝茶",
+      "correct": "to drink tea",
+      "choices": [
+        "flower tea",
+        "to drink tea",
+        "a little flower",
+        "how old"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "喝茶",
+      "correct": "喝茶",
+      "choices": [
+        "喝茶",
+        "几岁",
+        "小花",
+        "下山"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "花茶",
+      "audio_text": "花茶",
+      "correct": "flower tea",
+      "choices": [
+        "to drink tea",
+        "to go up a mountain",
+        "at the foot of the mountain",
+        "flower tea"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "花茶",
+      "correct": "花茶",
+      "choices": [
+        "山下",
+        "花茶",
+        "下山",
+        "小草"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "山上",
+      "audio_text": "山上",
+      "correct": "up the mountain",
+      "choices": [
+        "up the mountain",
+        "to come down a mountain",
+        "to go up a mountain",
+        "how old"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "山上",
+      "correct": "山上",
+      "choices": [
+        "山上",
+        "上山",
+        "小花",
+        "喝茶"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "山下",
+      "audio_text": "山下",
+      "correct": "at the foot of the mountain",
+      "choices": [
+        "at the foot of the mountain",
+        "to drink tea",
+        "to go up a mountain",
+        "a little flower"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "山下",
+      "correct": "山下",
+      "choices": [
+        "花茶",
+        "山下",
+        "山上",
+        "下山"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "上山",
+      "audio_text": "上山",
+      "correct": "to go up a mountain",
+      "choices": [
+        "a blade of grass",
+        "to go up a mountain",
+        "to drink tea",
+        "to come down a mountain"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "上山",
+      "correct": "上山",
+      "choices": [
+        "上山",
+        "下山",
+        "喝茶",
+        "小花"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "下山",
+      "audio_text": "下山",
+      "correct": "to come down a mountain",
+      "choices": [
+        "a little flower",
+        "at the foot of the mountain",
+        "to come down a mountain",
+        "how old"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "下山",
+      "correct": "下山",
+      "choices": [
+        "下山",
+        "小花",
+        "喝茶",
+        "上山"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "几岁",
+      "audio_text": "几岁",
+      "correct": "how old",
+      "choices": [
+        "a little flower",
+        "how old",
+        "flower tea",
+        "to drink tea"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "几岁",
+      "correct": "几岁",
+      "choices": [
+        "小草",
+        "几岁",
+        "喝茶",
+        "下山"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "花",
+          "pinyin": "huā",
+          "english": "a flower"
+        },
+        {
+          "id": 2,
+          "chinese": "草",
+          "pinyin": "cǎo",
+          "english": "grass"
+        },
+        {
+          "id": 3,
+          "chinese": "山",
+          "pinyin": "shān",
+          "english": "a mountain"
+        },
+        {
+          "id": 4,
+          "chinese": "茶",
+          "pinyin": "chá",
+          "english": "tea"
+        },
+        {
+          "id": 5,
+          "chinese": "岁",
+          "pinyin": "suì",
+          "english": "years old"
+        }
+      ],
+      "correct": "char:花草山茶岁",
+      "choices": [
+        "a flower",
+        "grass",
+        "a mountain",
+        "tea",
+        "years old"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "在",
+          "pinyin": "zài",
+          "english": "to be at"
+        },
+        {
+          "id": 2,
+          "chinese": "去",
+          "pinyin": "qù",
+          "english": "to go"
+        },
+        {
+          "id": 3,
+          "chinese": "花",
+          "pinyin": "huā",
+          "english": "a flower"
+        },
+        {
+          "id": 4,
+          "chinese": "草",
+          "pinyin": "cǎo",
+          "english": "grass"
+        },
+        {
+          "id": 5,
+          "chinese": "茶",
+          "pinyin": "chá",
+          "english": "tea"
+        }
+      ],
+      "correct": "char:在去花草茶",
+      "choices": [
+        "to be at",
+        "to go",
+        "a flower",
+        "grass",
+        "tea"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "小花",
+          "pinyin": "xiǎo huā",
+          "english": "a little flower"
+        },
+        {
+          "id": 2,
+          "chinese": "小草",
+          "pinyin": "xiǎo cǎo",
+          "english": "a blade of grass"
+        },
+        {
+          "id": 3,
+          "chinese": "喝茶",
+          "pinyin": "hē chá",
+          "english": "to drink tea"
+        },
+        {
+          "id": 4,
+          "chinese": "花茶",
+          "pinyin": "huāchá",
+          "english": "flower tea"
+        },
+        {
+          "id": 5,
+          "chinese": "几岁",
+          "pinyin": "jǐ suì",
+          "english": "how old"
+        }
+      ],
+      "correct": "word:小花小草喝茶花茶几岁",
+      "choices": [
+        "a little flower",
+        "a blade of grass",
+        "to drink tea",
+        "flower tea",
+        "how old"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "山上",
+          "pinyin": "shān shang",
+          "english": "up the mountain"
+        },
+        {
+          "id": 2,
+          "chinese": "山下",
+          "pinyin": "shān xià",
+          "english": "at the foot of the mountain"
+        },
+        {
+          "id": 3,
+          "chinese": "上山",
+          "pinyin": "shàng shān",
+          "english": "to go up a mountain"
+        },
+        {
+          "id": 4,
+          "chinese": "下山",
+          "pinyin": "xià shān",
+          "english": "to come down a mountain"
+        },
+        {
+          "id": 5,
+          "chinese": "喝茶",
+          "pinyin": "hē chá",
+          "english": "to drink tea"
+        }
+      ],
+      "correct": "word:山上山下上山下山喝茶",
+      "choices": [
+        "up the mountain",
+        "at the foot of the mountain",
+        "to go up a mountain",
+        "to come down a mountain",
+        "to drink tea"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "花",
+        null
+      ],
+      "correct": "茶",
+      "choices": [
+        "岁",
+        "山",
+        "茶",
+        "草"
+      ],
+      "result_word": "花茶",
+      "result_pinyin": "huāchá",
+      "result_meaning": "flower tea",
+      "audio_text": "花茶"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "喝",
+        null
+      ],
+      "correct": "茶",
+      "choices": [
+        "茶",
+        "花",
+        "山",
+        "草"
+      ],
+      "result_word": "喝茶",
+      "result_pinyin": "hē chá",
+      "result_meaning": "to drink tea",
+      "audio_text": "喝茶"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "山",
+        null
+      ],
+      "correct": "上",
+      "choices": [
+        "山",
+        "上",
+        "花",
+        "下"
+      ],
+      "result_word": "山上",
+      "result_pinyin": "shān shang",
+      "result_meaning": "up the mountain",
+      "audio_text": "山上"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "几",
+        null
+      ],
+      "correct": "岁",
+      "choices": [
+        "草",
+        "茶",
+        "山",
+        "岁"
+      ],
+      "result_word": "几岁",
+      "result_pinyin": "jǐ suì",
+      "result_meaning": "how old",
+      "audio_text": "几岁"
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "There are little flowers and grass here.",
+      "tiles": [
+        "小花小草",
+        "山上",
+        "有",
+        "这儿"
+      ],
+      "answer": [
+        "这儿",
+        "有",
+        "小花小草"
+      ],
+      "result": "这儿有小花小草。",
+      "pinyin": "Zhèr yǒu xiǎo huā xiǎo cǎo.",
+      "correct": "这儿有小花小草",
+      "choices": [
+        "这儿有小花小草"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I am up the mountain.",
+      "tiles": [
+        "山上",
+        "山下",
+        "在",
+        "我"
+      ],
+      "answer": [
+        "我",
+        "在",
+        "山上"
+      ],
+      "result": "我在山上。",
+      "pinyin": "Wǒ zài shān shang.",
+      "correct": "我在山上",
+      "choices": [
+        "我在山上"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "Where are you going?",
+      "tiles": [
+        "哪儿",
+        "去",
+        "这儿",
+        "你"
+      ],
+      "answer": [
+        "你",
+        "去",
+        "哪儿"
+      ],
+      "result": "你去哪儿？",
+      "pinyin": "Nǐ qù nǎr?",
+      "correct": "你去哪儿",
+      "choices": [
+        "你去哪儿"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I am drinking tea.",
+      "tiles": [
+        "茶",
+        "水",
+        "喝",
+        "我"
+      ],
+      "answer": [
+        "我",
+        "喝",
+        "茶"
+      ],
+      "result": "我喝茶。",
+      "pinyin": "Wǒ hē chá.",
+      "correct": "我喝茶",
+      "choices": [
+        "我喝茶"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我喝茶。",
+      "audio_text": "我喝茶",
+      "pinyin": "Wǒ hē chá.",
+      "meaning": "I am drinking tea.",
+      "correct": "我喝茶。",
+      "choices": [
+        "我喝茶。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "小花",
+      "audio_text": "小花",
+      "pinyin": "xiǎo huā",
+      "meaning": "a little flower",
+      "correct": "小花",
+      "choices": [
+        "小花"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "小草",
+      "audio_text": "小草",
+      "pinyin": "xiǎo cǎo",
+      "meaning": "a blade of grass",
+      "correct": "小草",
+      "choices": [
+        "小草"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "你去哪儿？",
+      "audio_text": "你去哪儿",
+      "pinyin": "Nǐ qù nǎr?",
+      "meaning": "Where are you going?",
+      "correct": "你去哪儿？",
+      "choices": [
+        "你去哪儿？"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "山上",
+      "audio_text": "山上",
+      "pinyin": "shān shang",
+      "meaning": "up the mountain",
+      "correct": "山上",
+      "choices": [
+        "山上"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "山下",
+      "audio_text": "山下",
+      "pinyin": "shān xià",
+      "meaning": "at the foot of the mountain",
+      "correct": "山下",
+      "choices": [
+        "山下"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "花茶",
+      "audio_text": "花茶",
+      "pinyin": "huāchá",
+      "meaning": "flower tea",
+      "correct": "花茶",
+      "choices": [
+        "花茶"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我在山上。",
+      "audio_text": "我在山上",
+      "pinyin": "Wǒ zài shān shang.",
+      "meaning": "I am up the mountain.",
+      "correct": "我在山上。",
+      "choices": [
+        "我在山上。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "上山",
+      "audio_text": "上山",
+      "pinyin": "shàng shān",
+      "meaning": "to go up a mountain",
+      "correct": "上山",
+      "choices": [
+        "上山"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "喝茶",
+      "audio_text": "喝茶",
+      "pinyin": "hē chá",
+      "meaning": "to drink tea",
+      "correct": "喝茶",
+      "choices": [
+        "喝茶"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "几岁",
+      "audio_text": "几岁",
+      "pinyin": "jǐ suì",
+      "meaning": "how old",
+      "correct": "几岁",
+      "choices": [
+        "几岁"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "这儿有小花小草。",
+      "audio_text": "这儿有小花小草",
+      "pinyin": "Zhèr yǒu xiǎo huā xiǎo cǎo.",
+      "meaning": "There are little flowers and grass here.",
+      "correct": "这儿有小花小草。",
+      "choices": [
+        "这儿有小花小草。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "她几岁？",
+      "audio_text": "她几岁",
+      "pinyin": "Tā jǐ suì?",
+      "meaning": "How old is she?",
+      "correct": "她几岁？",
+      "choices": [
+        "她几岁？"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "下山",
+      "audio_text": "下山",
+      "pinyin": "xià shān",
+      "meaning": "to come down a mountain",
+      "correct": "下山",
+      "choices": [
+        "下山"
+      ]
+    }
+  ]
+}

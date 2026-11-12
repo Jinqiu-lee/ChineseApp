@@ -179,7 +179,7 @@ function GroupCheck({ item }) {
               onPress={() => { speakChinese(c); if (picked == null) setPicked(c); }}
               activeOpacity={0.8}
             >
-              <Text style={s.charChoiceText}>{c}</Text>
+              <Text style={[s.charChoiceText, s.charChoiceTextSmall]}>{c}</Text>
             </TouchableOpacity>
           );
         })}
@@ -1075,8 +1075,11 @@ export default function CharacterLessonScreen({
       body: (
         <>
           {b2?.caveat ? <Text style={s.intro}>{b2.caveat}</Text> : null}
-          {(b2?.components || []).map(x => (
-            <ComponentCard key={x.radical} item={x} radicalAudio={b2.radical_audio} />
+          {/* Keyed by position, not by radical: Lesson 16 teaches 阝 twice —
+              once from 阜 on the left, once from 邑 on the right — so the
+              radical alone is not unique within a part. */}
+          {(b2?.components || []).map((x, i) => (
+            <ComponentCard key={`${x.radical}-${i}`} item={x} radicalAudio={b2.radical_audio} />
           ))}
           {b2?.group ? <GroupCheck item={b2.group} /> : null}
         </>
@@ -1824,6 +1827,9 @@ const s = StyleSheet.create({
   charChoiceIdle:  { opacity: 0.5 },
   // Chinese-only answers, the same 28 the Practice screen uses.
   charChoiceText:  { fontSize: 28, lineHeight: 36, fontWeight: '900', color: DEEP_NAVY },
+  // Characters 2's Part 2 answers, one step down. Applied here rather than to
+  // charChoiceText itself, which StructureCard — a Characters 1 block — shares.
+  charChoiceTextSmall: { fontSize: 24, lineHeight: 31 },
   // Part 4's answers, two steps down from the Part 2 buttons.
   charChoiceTextAudio: { fontSize: 24, lineHeight: 31 },
   quizActions: { flexDirection: 'row', alignItems: 'center', gap: 14 },

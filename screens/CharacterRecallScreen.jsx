@@ -210,6 +210,11 @@ export default function CharacterRecallScreen({
   const [showResult, setShow] = useState(false);
   const [hints, setHints]     = useState({}); // which answers have had pinyin revealed
   const [glosses, setGloss]   = useState({}); // which answers have had English revealed
+  // True while a read-aloud question holds the microphone. Moving on then
+  // used to leave the recorder running, so the next question could not start
+  // one — now Next waits and says so.
+  const [recBusy, setRecBusy] = useState(false);
+  const [recNudge, setNudge]  = useState(false);
 
   const total = questions.length;
   const q = questions[index];
@@ -257,6 +262,8 @@ export default function CharacterRecallScreen({
     setPicked(null);
     setHints({});
     setGloss({});
+    setRecBusy(false);
+    setNudge(false);
   };
 
   // ── Result ────────────────────────────────────────────────────────────────
@@ -303,7 +310,7 @@ export default function CharacterRecallScreen({
         );
 
       case 'pinyin_to_char': {
-        const size = fitFontSize(q.prompt_pinyin, promptWidth, 46, 22, 0.55);
+        const size = fitFontSize(q.prompt_pinyin, promptWidth, 44, 22, 0.55);
         return (
           <Text style={[s.promptPinyin, { fontSize: size, lineHeight: Math.round(size * 1.25) }]}>
             {q.prompt_pinyin}
@@ -313,7 +320,7 @@ export default function CharacterRecallScreen({
 
       case 'meaning_to_char': {
         const text = q.prompt_en || q.question;
-        const size = fitFontSize(text, promptWidth, 34, 18, 0.55);
+        const size = fitFontSize(text, promptWidth, 30, 18, 0.55);
         return (
           <Text style={[s.promptEn, { fontSize: size, lineHeight: Math.round(size * 1.3) }]}>
             {text}
@@ -413,7 +420,7 @@ export default function CharacterRecallScreen({
       default: {
         if (!q.prompt_char) return null;
         // A single glyph gets the full 60; a sentence shrinks to the same box.
-        const size = fitFontSize(q.prompt_char, promptWidth, 60, 26, 1);
+        const size = fitFontSize(q.prompt_char, promptWidth, 56, 26, 1);
         return (
           <View style={s.promptInner}>
             {/* The character being asked about can be looked up too. */}
@@ -457,6 +464,7 @@ export default function CharacterRecallScreen({
             <Text style={s.typeLabel}>{quiz ? '📝 Lesson Quiz' : `${stage.icon} ${stage.name}`}</Text>
             <ReadAloud
               key={index}
+              onBusy={(b) => { setRecBusy(b); if (b) setNudge(false); }}
               item={{
                 text: q.prompt_char,
                 pinyin: q.pinyin || pinyinFor(q.prompt_char),
@@ -465,11 +473,24 @@ export default function CharacterRecallScreen({
                 intro: 'Listen, then read it aloud.',
               }}
             />
-            <TouchableOpacity style={s.primaryBtn} onPress={() => { setScore(x => x + 1); next(); }} activeOpacity={0.85}>
+            <TouchableOpacity
+              style={[s.primaryBtn, recBusy && s.primaryBtnWaiting]}
+              onPress={() => {
+                if (recBusy) { setNudge(true); return; }
+                setScore(x => x + 1);
+                next();
+              }}
+              activeOpacity={recBusy ? 1 : 0.85}
+            >
               <Text style={s.primaryBtnText}>
                 {index + 1 >= total ? 'See Results' : 'Next →'}
               </Text>
             </TouchableOpacity>
+            {recBusy && (
+              <Text style={[s.recNudge, recNudge && s.recNudgeLoud]}>
+                {recNudge ? '⏹  Stop the recording first, then Next' : 'Recording — stop it when you are done'}
+              </Text>
+            )}
             <View style={{ height: 40 }} />
           </ScrollView>
         </SafeAreaView>
@@ -589,7 +610,6 @@ export default function CharacterRecallScreen({
               const isCorrect = c === q.correct;
               const reveal    = picked != null;
               const asStroke  = STROKE_ANSWER_TYPES.has(q.type);
-              const py        = showAnswerHints ? pinyinFor(c) : '';
               const canSpeak  = (showAnswerHints || asStroke) && hasHan(c);
               const hintable  = HINTABLE_TYPES.has(q.type) && hasHan(c) && !!pinyinFor(c);
               const hinted    = hints[c];
@@ -645,7 +665,6 @@ export default function CharacterRecallScreen({
                         <Underlined color={lit ? CARD_WHITE : DEEP_NAVY}>
                           <Text style={[s.choiceText, s.choiceTextCn, lit && s.choiceTextLit]}>{c}</Text>
                         </Underlined>
-                        {!!py && <Text style={[s.choicePinyin, lit && s.choicePinyinLit]}>{py}</Text>}
                         {glosses[c] && (
                           <Text style={[s.choiceGloss, lit && s.choicePinyinLit]}>
                             {getCharacterMeaning(c)}
@@ -662,7 +681,6 @@ export default function CharacterRecallScreen({
                           hasHan(c) ? s.choiceTextCn : EN_ANSWER_TYPES.has(q.type) && s.choiceTextEn,
                           lit && s.choiceTextLit,
                         ]}>{c}</Text>
-                        {!!py && <Text style={[s.choicePinyin, lit && s.choicePinyinLit]}>{py}</Text>}
                       </>
                     )}
                     {asStroke && !!getStrokePinyin(c) && (
@@ -779,7 +797,7 @@ const s = StyleSheet.create({
   feedbackTextRight: { color: CARD_WHITE },
   feedbackTextWrong: { color: CARD_WHITE },
 
-  eqCellText:        { fontSize: 24, fontWeight: '900', color: DEEP_NAVY },
+  eqCellText:        { fontSize: 28, fontWeight: '900', color: DEEP_NAVY },
   wordBuildMeaning:  { fontSize: 18, fontWeight: '800', color: WARM_ORANGE, textAlign: 'center' },
 
   // Says what the question wants, for the types where the prompt alone
@@ -788,9 +806,9 @@ const s = StyleSheet.create({
     fontSize: 15, fontWeight: '700', color: SLATE_TEAL,
     textAlign: 'center', marginBottom: -4,
   },
-  promptChar:   { fontSize: 60, lineHeight: 74, fontWeight: '900', color: DEEP_NAVY, textAlign: 'center' },
-  promptPinyin: { fontSize: 46, fontWeight: '900', color: WARM_BROWN, textAlign: 'center' },
-  promptEn:     { fontSize: 34, fontWeight: '900', color: WARM_ORANGE, textAlign: 'center' },
+  promptChar:   { fontSize: 56, lineHeight: 69, fontWeight: '900', color: DEEP_NAVY, textAlign: 'center' },
+  promptPinyin: { fontSize: 44, fontWeight: '900', color: WARM_BROWN, textAlign: 'center' },
+  promptEn:     { fontSize: 30, fontWeight: '900', color: WARM_ORANGE, textAlign: 'center' },
   promptAudioBtn: {
     backgroundColor: SLATE_TEAL, borderRadius: 10,
     paddingVertical: 6, paddingHorizontal: 14,
@@ -802,8 +820,9 @@ const s = StyleSheet.create({
     flexDirection: 'row', alignItems: 'center', justifyContent: 'center',
     flexWrap: 'wrap', gap: 6,
   },
+  // Sized to the glyph inside it: 28pt needs more than a 40pt box.
   eqCell: {
-    minWidth: 40, height: 40, borderRadius: 8,
+    minWidth: 48, height: 48, borderRadius: 9,
     alignItems: 'center', justifyContent: 'center',
     backgroundColor: CARD_WHITE, borderWidth: 1.5, borderColor: 'rgba(155,104,70,0.25)',
   },
@@ -811,7 +830,7 @@ const s = StyleSheet.create({
   // A stroke that comes after the blank: present, but not the thing being asked.
   eqCellRest:  { backgroundColor: 'rgba(55,73,80,0.06)', borderColor: 'rgba(155,104,70,0.15)' },
   eqRestDot:   { fontSize: 15, fontWeight: '900', color: 'rgba(55,73,80,0.35)' },
-  eqQ:         { fontSize: 19, fontWeight: '900', color: SLATE_TEAL },
+  eqQ:         { fontSize: 22, fontWeight: '900', color: SLATE_TEAL },
   eqSign:      { fontSize: 17, fontWeight: '800', color: SLATE_TEAL, marginHorizontal: 2 },
   eqResult:    { fontSize: 34, fontWeight: '900', color: DEEP_NAVY },
 
@@ -841,11 +860,14 @@ const s = StyleSheet.create({
   // Answer text comes in three sizes and only three: Chinese 28, pinyin 26,
   // English 24. Every question type picks one of them, so a bare character is
   // the same size whichever question is asking for it.
-  choiceText:   { fontSize: 26, lineHeight: 34, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center' },
+  choiceText:   { fontSize: 22, lineHeight: 29, fontWeight: '800', color: DEEP_NAVY, textAlign: 'center' },
   choiceTextCn: { fontSize: 28, lineHeight: 36 },
-  choiceTextEn: { fontSize: 22, lineHeight: 29 },
+  choiceTextEn: { fontSize: 20, lineHeight: 27 },
   choicePinyin: { fontSize: 14, color: WARM_BROWN, marginTop: 4, textAlign: 'center' },
   choiceGloss:  { fontSize: 13, fontWeight: '700', color: WARM_ORANGE, marginTop: 2, textAlign: 'center' },
+  primaryBtnWaiting: { opacity: 0.45 },
+  recNudge:     { fontSize: 13, fontWeight: '700', color: WARM_BROWN, textAlign: 'center', marginTop: 8 },
+  recNudgeLoud: { color: '#C4503A', fontSize: 14 },
   promptGloss:  { fontSize: 15, fontWeight: '700', color: WARM_ORANGE, marginTop: 4, textAlign: 'center' },
   choiceAudioBtn:  { paddingLeft: 10 },
   choiceAudioIcon: { fontSize: 22 },

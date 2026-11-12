@@ -56,9 +56,16 @@ const LESSON_IMAGES = {
   'l12-p5-five-elements': require('./lesson_images/l12/l12-p5-five-elements.png'),
   'l12-p5-cycle':         require('./lesson_images/l12/l12-p5-cycle.webp'),
 
-  // ── Lesson 13 · Part 5 · 钱从哪里来 ──────────────────────────────────────
-  // Parts 1-4 still carry emoji; an emoji falls through getLessonImage and
-  // renders as text, which is the fallback this map was built around.
+  // ── Lesson 13 · Part 1 · 独体字 金 土 手 ─────────────────────────────────
+  'l13-p1-jin':  require('./lesson_images/l13/l13-p1-jin.jpeg'),
+  'l13-p1-tu':   require('./lesson_images/l13/l13-p1-tu.webp'),
+  'l13-p1-shou': require('./lesson_images/l13/l13-p1-shou.jpeg'),
+
+  // ── Lesson 13 · Part 3 · one per dialogue ───────────────────────────────
+  'l13-p3-how-much': require('./lesson_images/l13/l13-p3-how-much.jpg'),
+  'l13-p3-doing':    require('./lesson_images/l13/l13-p3-doing.jpg'),
+  'l13-p3-sweeping': require('./lesson_images/l13/l13-p3-sweeping.jpg'),
+
   'l13-p5-jin':     require('./lesson_images/l13/l13-p5-jin.jpeg'),
   'l13-p5-forms':   require('./lesson_images/l13/l13-p5-forms.jpeg'),
   'l13-p5-coins':   require('./lesson_images/l13/l13-p5-coins.jpeg'),
@@ -69,11 +76,60 @@ const LESSON_IMAGES = {
   // Each 成语 has two pictures: the four characters themselves, and a drawing
   // of what it means. The card shows the drawing; the characters are set in
   // type above it, one cell each.
+  // Part 1 · the three 独体字, each picture becoming its character
+  'l14-p1-yan': require('./lesson_images/l14/l14-p1-yan.png'),
+  'l14-p1-xin': require('./lesson_images/l14/l14-p1-xin.png'),
+  'l14-p1-mu':  require('./lesson_images/l14/l14-p1-mu.png'),
+
+  // Part 2 · a chart of each radical at work. The heart chart shows both
+  // 忄 and 心, so it belongs on the 心字底 frame — on 竖心旁 it would give
+  // away the second shape before the question asks for it.
+  'l14-p2-yan': require('./lesson_images/l14/l14-p2-yan.png'),
+  'l14-p2-xin': require('./lesson_images/l14/l14-p2-xin.png'),
+  'l14-p2-mu':  require('./lesson_images/l14/l14-p2-mu.jpeg'),
+
+  // Part 3 · one per dialogue
+  'l14-p3-his-eyes':       require('./lesson_images/l14/l14-p3-his-eyes.png'),
+  'l14-p3-moods':          require('./lesson_images/l14/l14-p3-moods.png'),
+  'l14-p3-who-is-talking': require('./lesson_images/l14/l14-p3-who-is-talking.png'),
+
   'l14-p5-xin':                 require('./lesson_images/l14/l14-p5-xin.jpeg'),
   'l14-p5-xinxiangshicheng':    require('./lesson_images/l14/l14-p5-xinxiangshicheng.png'),
   'l14-p5-xinxiangshicheng-art':require('./lesson_images/l14/l14-p5-xinxiangshicheng-art.jpg'),
   'l14-p5-koushixinfei':        require('./lesson_images/l14/l14-p5-koushixinfei.jpeg'),
   'l14-p5-koushixinfei-art':    require('./lesson_images/l14/l14-p5-koushixinfei-art.jpg'),
+
+  // ── Lesson 15 · 日 月 雨 ─────────────────────────────────────────────────
+  'l15-p1-ri':  require('./lesson_images/l15/l15-p1-ri.png'),
+  'l15-p1-yue': require('./lesson_images/l15/l15-p1-yue.png'),
+  'l15-p1-yu':  require('./lesson_images/l15/l15-p1-yu.png'),
+
+  // Part 5 · the two origins of 月, and what each one kept
+  'l15-p5-split':       require('./lesson_images/l15/l15-p5-split.jpeg'),
+  'l15-p5-two-origins': require('./lesson_images/l15/l15-p5-two-origins.jpeg'),
+  'l15-p5-scripts':     require('./lesson_images/l15/l15-p5-scripts.jpeg'),
+  'l15-p5-body':        require('./lesson_images/l15/l15-p5-body.jpeg'),
+  'l15-p5-phases':      require('./lesson_images/l15/l15-p5-phases.jpeg'),
+  'l15-p5-moon':        require('./lesson_images/l15/l15-p5-moon.jpeg'),
+
+  // ── Lesson 16 · 耳 足, and the 阝 that is not an ear ─────────────────────
+  'l16-p5-not-an-ear': require('./lesson_images/l16/l16-p5-not-an-ear.png'),
+  'l16-p5-fu':         require('./lesson_images/l16/l16-p5-fu.png'),
+  'l16-p5-mountains':  require('./lesson_images/l16/l16-p5-mountains.jpeg'),
+  'l16-p5-city':       require('./lesson_images/l16/l16-p5-city.jpeg'),
+  'l16-p5-guo':        require('./lesson_images/l16/l16-p5-guo.jpeg'),
+  'l16-p5-chen':       require('./lesson_images/l16/l16-p5-chen.jpeg'),
+
+  // ── Lesson 17 · 花 草 山, and the green world under 艹 ───────────────────
+  'l17-p5-huacha':    require('./lesson_images/l17/l17-p5-huacha.jpeg'),
+  'l17-p5-hua':       require('./lesson_images/l17/l17-p5-hua.jpeg'),
+  'l17-p5-hua-bloom': require('./lesson_images/l17/l17-p5-hua-bloom.jpeg'),
+  'l17-p5-cao':       require('./lesson_images/l17/l17-p5-cao.jpeg'),
+  'l17-p5-cha':       require('./lesson_images/l17/l17-p5-cha.jpeg'),
+  'l17-p5-cha-plant': require('./lesson_images/l17/l17-p5-cha-plant.jpeg'),
+  'l17-p5-cha-art':   require('./lesson_images/l17/l17-p5-cha-art.jpeg'),
+  'l17-p5-cai':       require('./lesson_images/l17/l17-p5-cai.jpeg'),
+  'l17-p5-shan':      require('./lesson_images/l17/l17-p5-shan.jpeg'),
 };
 
 /** The asset for a key, or null when there is no artwork for it yet. */

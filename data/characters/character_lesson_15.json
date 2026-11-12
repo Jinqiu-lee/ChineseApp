@@ -1,0 +1,2224 @@
+{
+  "id": 15,
+  "part": 2,
+  "title": "Lesson 15 · Sun, Moon and Rain",
+  "emoji": "🌙",
+  "subtitle": "日 月 雨 · 日字旁 月字旁 雨字头",
+  "description": "Three more characters become radicals, six new characters built from them — and 月 turns out to be two characters wearing one shape.",
+  "new_strokes": [],
+  "new_characters": [
+    "明",
+    "昨",
+    "早",
+    "雪",
+    "有",
+    "脸"
+  ],
+  "new_words": [
+    "明天",
+    "昨天",
+    "今天",
+    "月亮",
+    "早上好",
+    "下雨",
+    "雨水",
+    "下雪",
+    "脸上"
+  ],
+  "learn_content": {
+    "part1_blocks": {
+      "title": "Discover",
+      "subtitle": "独体字 · Characters that stand alone",
+      "intro": "Three more pictures from the sky. Watch each one become the character it is today.",
+      "blocks": [
+        {
+          "character": "日",
+          "pinyin": "rì",
+          "meaning": "sun",
+          "audio_text": "日",
+          "picture": "l15-p1-ri",
+          "note": "The sun, with a mark in the middle so it is never mistaken for an empty circle.",
+          "match": {
+            "prompt_picture": "l15-p1-ri",
+            "choices": [
+              "日",
+              "月",
+              "雨"
+            ],
+            "correct": "日"
+          }
+        },
+        {
+          "character": "月",
+          "pinyin": "yuè",
+          "meaning": "moon",
+          "audio_text": "月",
+          "picture": "l15-p1-yue",
+          "note": "A crescent, not a full moon — the shape the moon holds for most of the month.",
+          "match": {
+            "prompt_picture": "l15-p1-yue",
+            "choices": [
+              "日",
+              "月",
+              "雨"
+            ],
+            "correct": "月"
+          }
+        },
+        {
+          "character": "雨",
+          "pinyin": "yǔ",
+          "meaning": "rain",
+          "audio_text": "雨",
+          "picture": "l15-p1-yu",
+          "note": "Drops falling from a cloud, lined up under the sky.",
+          "match": {
+            "prompt_picture": "l15-p1-yu",
+            "choices": [
+              "日",
+              "月",
+              "雨"
+            ],
+            "correct": "雨"
+          }
+        }
+      ],
+      "match": {
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "l15-p1-ri",
+            "character": "日"
+          },
+          {
+            "picture": "l15-p1-yue",
+            "character": "月"
+          },
+          {
+            "picture": "l15-p1-yu",
+            "character": "雨"
+          }
+        ]
+      }
+    },
+    "part2_components": {
+      "title": "Decode",
+      "subtitle": "部件与部首 · Components and radicals",
+      "caveat": "A radical tells you what a character is about — and 月 has two stories, which Part 5 unpicks.",
+      "components": [
+        {
+          "radical": "日",
+          "name": "日字旁",
+          "pinyin": "rì zì páng",
+          "name_en": "the sun radical",
+          "audio_text": "日字旁",
+          "from": {
+            "character": "日",
+            "pinyin": "rì",
+            "meaning": "sun"
+          },
+          "hint": "日 keeps its shape wherever it goes — on the left, or underneath.",
+          "characters": [
+            {
+              "character": "明",
+              "pinyin": "míng",
+              "meaning": "bright",
+              "audio_text": "明"
+            },
+            {
+              "character": "昨",
+              "pinyin": "zuó",
+              "meaning": "yesterday",
+              "audio_text": "昨"
+            },
+            {
+              "character": "早",
+              "pinyin": "zǎo",
+              "meaning": "early",
+              "audio_text": "早"
+            }
+          ],
+          "find": {
+            "question": "Which part of 昨 is the radical?",
+            "choices": [
+              "日",
+              "乍",
+              "月",
+              "雨"
+            ],
+            "correct": "日"
+          },
+          "reveal": {
+            "category": "light, and days",
+            "note": "A day is one turn of the sun, so 日 turns up in 昨 and 早 as well as in 明."
+          }
+        },
+        {
+          "radical": "月",
+          "name": "月字旁",
+          "pinyin": "yuè zì páng",
+          "name_en": "the moon radical",
+          "audio_text": "月字旁",
+          "from": {
+            "character": "月",
+            "pinyin": "yuè",
+            "meaning": "moon"
+          },
+          "hint": "月 narrows and stands tall beside a character.",
+          "characters": [
+            {
+              "character": "有",
+              "pinyin": "yǒu",
+              "meaning": "to have",
+              "audio_text": "有"
+            },
+            {
+              "character": "脸",
+              "pinyin": "liǎn",
+              "meaning": "face",
+              "audio_text": "脸"
+            }
+          ],
+          "find": {
+            "question": "Which part of 脸 is the radical?",
+            "choices": [
+              "月",
+              "佥",
+              "日",
+              "雨"
+            ],
+            "correct": "月"
+          },
+          "reveal": {
+            "category": "not the moon at all",
+            "note": "脸 is a face. What is the moon doing in it? Part 5 has the answer."
+          }
+        },
+        {
+          "radical": "雨",
+          "name": "雨字头",
+          "pinyin": "yǔ zì tóu",
+          "name_en": "the rain radical, sitting on top",
+          "audio_text": "雨字头",
+          "from": {
+            "character": "雨",
+            "pinyin": "yǔ",
+            "meaning": "rain"
+          },
+          "hint": "雨 flattens and sits on the roof of a character rather than beside it.",
+          "characters": [
+            {
+              "character": "雪",
+              "pinyin": "xuě",
+              "meaning": "snow",
+              "audio_text": "雪"
+            }
+          ],
+          "find": {
+            "question": "Where does 雨 sit in 雪?",
+            "choices": [
+              "on top",
+              "on the left",
+              "underneath",
+              "on the right"
+            ],
+            "correct": "on top"
+          },
+          "reveal": {
+            "category": "what falls from the sky",
+            "note": "Snow is rain that changed its mind, so 雪 wears 雨 as a hat."
+          }
+        }
+      ],
+      "radical_audio": {
+        "日": {
+          "text": "日字旁",
+          "pinyin": "rì zì páng"
+        },
+        "月": {
+          "text": "月字旁",
+          "pinyin": "yuè zì páng"
+        },
+        "雨": {
+          "text": "雨字头",
+          "pinyin": "yǔ zì tóu"
+        }
+      },
+      "group": {
+        "question": "Which character does NOT carry 日?",
+        "choices": [
+          "雪",
+          "明",
+          "昨",
+          "早"
+        ],
+        "correct": "雪",
+        "explain": "雪 wears 雨 on top. The other three are all about the sun and the day."
+      }
+    },
+    "part3_dialogue": {
+      "title": "Use",
+      "subtitle": "词语与情景对话 · Words and dialogue",
+      "characters": [
+        {
+          "character": "上",
+          "pinyin": "shàng",
+          "meaning": "up / on",
+          "audio_text": "上"
+        },
+        {
+          "character": "下",
+          "pinyin": "xià",
+          "meaning": "down",
+          "audio_text": "下"
+        }
+      ],
+      "words": [
+        {
+          "word": "明天",
+          "pinyin": "míngtiān",
+          "meaning": "tomorrow",
+          "audio_text": "明天",
+          "built_from": "明 + 天"
+        },
+        {
+          "word": "昨天",
+          "pinyin": "zuótiān",
+          "meaning": "yesterday",
+          "audio_text": "昨天",
+          "built_from": "昨 + 天"
+        },
+        {
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning": "today",
+          "audio_text": "今天",
+          "built_from": "今 + 天"
+        },
+        {
+          "word": "月亮",
+          "pinyin": "yuèliang",
+          "meaning": "the moon",
+          "audio_text": "月亮",
+          "built_from": "月 + 亮"
+        },
+        {
+          "word": "早上好",
+          "pinyin": "zǎoshang hǎo",
+          "meaning": "good morning",
+          "audio_text": "早上好",
+          "built_from": "早上 + 好"
+        },
+        {
+          "word": "下雨",
+          "pinyin": "xià yǔ",
+          "meaning": "to rain",
+          "audio_text": "下雨",
+          "built_from": "下 + 雨"
+        },
+        {
+          "word": "雨水",
+          "pinyin": "yǔshuǐ",
+          "meaning": "rainwater",
+          "audio_text": "雨水",
+          "built_from": "雨 + 水"
+        },
+        {
+          "word": "下雪",
+          "pinyin": "xià xuě",
+          "meaning": "to snow",
+          "audio_text": "下雪",
+          "built_from": "下 + 雪"
+        },
+        {
+          "word": "脸上",
+          "pinyin": "liǎn shang",
+          "meaning": "on the face",
+          "audio_text": "脸上",
+          "built_from": "脸 + 上"
+        }
+      ],
+      "support_words": [
+        {
+          "word": "天",
+          "pinyin": "tiān",
+          "meaning": "day / sky"
+        },
+        {
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning": "today"
+        },
+        {
+          "word": "早上",
+          "pinyin": "zǎoshang",
+          "meaning": "morning"
+        },
+        {
+          "word": "没有",
+          "pinyin": "méiyǒu",
+          "meaning": "did not / have not"
+        },
+        {
+          "word": "了",
+          "pinyin": "le",
+          "meaning": "(marks it as done)"
+        },
+        {
+          "word": "你的",
+          "pinyin": "nǐ de",
+          "meaning": "your"
+        },
+        {
+          "word": "老师",
+          "pinyin": "lǎoshī",
+          "meaning": "teacher"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Good morning",
+          "goal": "早上好 老师",
+          "picture": "🌅",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "早上好，老师！",
+              "pinyin": "Zǎoshang hǎo, lǎoshī!",
+              "meaning": "Good morning, teacher!",
+              "audio_text": "早上好，老师"
+            },
+            {
+              "speaker": "B",
+              "text": "你好！",
+              "pinyin": "Nǐ hǎo!",
+              "meaning": "Hello!",
+              "audio_text": "你好"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "早上好，老师！",
+            "pinyin": "Zǎoshang hǎo, lǎoshī!",
+            "meaning": "Good morning, teacher!",
+            "audio_text": "早上好，老师"
+          },
+          "speak": {
+            "question": "Build it: good morning, teacher.",
+            "tiles": [
+              "老师",
+              "你好",
+              "早上好"
+            ],
+            "answer": [
+              "早上好",
+              "老师"
+            ],
+            "result": "早上好，老师！",
+            "pinyin": "Zǎoshang hǎo, lǎoshī!"
+          }
+        },
+        {
+          "title": "Rain and snow",
+          "goal": "昨天 今天 下雨 下雪",
+          "picture": "🌧️",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "昨天下雨，今天下雪。",
+              "pinyin": "Zuótiān xià yǔ, jīntiān xià xuě.",
+              "meaning": "It rained yesterday; today it is snowing.",
+              "audio_text": "昨天下雨，今天下雪"
+            },
+            {
+              "speaker": "B",
+              "text": "明天早上不下雪。",
+              "pinyin": "Míngtiān zǎoshang bú xià xuě.",
+              "meaning": "Tomorrow morning it will not snow.",
+              "audio_text": "明天早上不下雪"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "昨天下雨，今天下雪。",
+            "pinyin": "Zuótiān xià yǔ, jīntiān xià xuě.",
+            "meaning": "It rained yesterday; today it is snowing.",
+            "audio_text": "昨天下雨，今天下雪"
+          },
+          "speak": {
+            "question": "Build it: today it is snowing.",
+            "tiles": [
+              "下雪",
+              "下雨",
+              "今天"
+            ],
+            "answer": [
+              "今天",
+              "下雪"
+            ],
+            "result": "今天下雪。",
+            "pinyin": "Jīntiān xià xuě."
+          }
+        },
+        {
+          "title": "On your face",
+          "goal": "脸上 有 雨水",
+          "picture": "💧",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你的脸上有雨水。",
+              "pinyin": "Nǐ de liǎn shang yǒu yǔshuǐ.",
+              "meaning": "There is rainwater on your face.",
+              "audio_text": "你的脸上有雨水"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "你的脸上有雨水。",
+            "pinyin": "Nǐ de liǎn shang yǒu yǔshuǐ.",
+            "meaning": "There is rainwater on your face.",
+            "audio_text": "你的脸上有雨水"
+          },
+          "speak": {
+            "question": "Build it: there is rainwater on your face.",
+            "tiles": [
+              "雨水",
+              "脸上",
+              "有",
+              "你的",
+              "雪水"
+            ],
+            "answer": [
+              "你的",
+              "脸上",
+              "有",
+              "雨水"
+            ],
+            "result": "你的脸上有雨水。",
+            "pinyin": "Nǐ de liǎn shang yǒu yǔshuǐ."
+          }
+        },
+        {
+          "title": "Did it rain?",
+          "goal": "下雨了吗 没有",
+          "picture": "☔",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "今天早上下雨了吗？",
+              "pinyin": "Jīntiān zǎoshang xià yǔ le ma?",
+              "meaning": "Did it rain this morning?",
+              "audio_text": "今天早上下雨了吗"
+            },
+            {
+              "speaker": "B",
+              "text": "没有下雨。",
+              "pinyin": "Méiyǒu xià yǔ.",
+              "meaning": "It did not rain.",
+              "audio_text": "没有下雨"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "没有下雨。",
+            "pinyin": "Méiyǒu xià yǔ.",
+            "meaning": "It did not rain.",
+            "audio_text": "没有下雨"
+          },
+          "speak": {
+            "question": "Build it: it did not rain.",
+            "tiles": [
+              "下雨",
+              "下雪",
+              "没有"
+            ],
+            "answer": [
+              "没有",
+              "下雨"
+            ],
+            "result": "没有下雨。",
+            "pinyin": "Méiyǒu xià yǔ."
+          }
+        }
+      ],
+      "read_aloud": {
+        "title": "Say them yourself",
+        "intro": "Listen, then read each one aloud.",
+        "items": [
+          {
+            "text": "早上好",
+            "pinyin": "zǎoshang hǎo",
+            "meaning": "good morning",
+            "audio_text": "早上好"
+          },
+          {
+            "text": "下雨",
+            "pinyin": "xià yǔ",
+            "meaning": "to rain",
+            "audio_text": "下雨"
+          },
+          {
+            "text": "月亮",
+            "pinyin": "yuèliang",
+            "meaning": "the moon",
+            "audio_text": "月亮"
+          }
+        ]
+      }
+    },
+    "part4_write": {
+      "title": "Write",
+      "subtitle": "汉字书写 · Write every character in this lesson",
+      "characters": [
+        "日",
+        "月",
+        "雨",
+        "雪",
+        "明",
+        "早"
+      ]
+    },
+    "part5_culture": {
+      "title": "Discover Chinese",
+      "subtitle": "汉字探秘 · Culture and language insights",
+      "topic": "月字旁的两个秘密",
+      "topic_en": "The two secrets of 月",
+      "picture": "l15-p5-split",
+      "listen": {
+        "intro": "Two different characters. Look what happened to them.",
+        "items": [
+          {
+            "character": "月",
+            "pinyin": "yuè",
+            "meaning": "moon",
+            "audio_text": "月"
+          },
+          {
+            "character": "肉",
+            "pinyin": "ròu",
+            "meaning": "flesh",
+            "audio_text": "肉"
+          },
+          {
+            "character": "⺼",
+            "pinyin": "ròu",
+            "meaning": "flesh, squeezed",
+            "audio_text": "⺼"
+          }
+        ]
+      },
+      "notice": "脸 is a face. 肝 is a liver. Neither has anything to do with the moon — so why do both carry 月?",
+      "discover": "Because that 月 is not 月. It is 肉 \"flesh\", worn thin by centuries of brush strokes until the two looked the same.",
+      "forms": {
+        "title": "一个形状，两个来源 · One shape, two sources",
+        "intro": "The old forms were nothing alike.",
+        "picture": "l15-p5-two-origins",
+        "items": [
+          {
+            "character": "月",
+            "label": "the moon",
+            "pinyin": "yuè",
+            "audio_text": "月",
+            "note": "a crescent"
+          },
+          {
+            "character": "肉",
+            "label": "flesh",
+            "pinyin": "ròu",
+            "audio_text": "肉",
+            "note": "a cut of meat"
+          },
+          {
+            "character": "⺼",
+            "label": "flesh, inside a character",
+            "note": "where they met"
+          }
+        ]
+      },
+      "secrets": {
+        "title": "两个秘密 · The two secrets",
+        "intro": "Almost every 月 you meet is the first one.",
+        "items": [
+          {
+            "radical": "⺼",
+            "name": "肉月旁 · 身体",
+            "name_en": "Secret 1 · the body",
+            "picture": "l15-p5-body",
+            "chars": [
+              {
+                "character": "脸",
+                "pinyin": "liǎn",
+                "meaning": "face",
+                "audio_text": "脸",
+                "emoji": "😊"
+              },
+              {
+                "character": "腿",
+                "pinyin": "tuǐ",
+                "meaning": "leg",
+                "audio_text": "腿",
+                "emoji": "🦵"
+              },
+              {
+                "character": "脑",
+                "pinyin": "nǎo",
+                "meaning": "brain",
+                "audio_text": "脑",
+                "emoji": "🧠"
+              },
+              {
+                "character": "脚",
+                "pinyin": "jiǎo",
+                "meaning": "foot",
+                "audio_text": "脚",
+                "emoji": "🦶"
+              },
+              {
+                "character": "臂",
+                "pinyin": "bì",
+                "meaning": "arm",
+                "audio_text": "臂",
+                "emoji": "💪"
+              },
+              {
+                "character": "肝",
+                "pinyin": "gān",
+                "meaning": "liver",
+                "audio_text": "肝",
+                "emoji": "🫀"
+              }
+            ],
+            "note": "Every one of them is a part of you."
+          },
+          {
+            "radical": "月",
+            "name": "月字旁 · 月亮和时间",
+            "name_en": "Secret 2 · the moon and time",
+            "picture": "l15-p5-phases",
+            "chars": [
+              {
+                "character": "朔",
+                "pinyin": "shuò",
+                "meaning": "new moon",
+                "audio_text": "朔"
+              },
+              {
+                "character": "望",
+                "pinyin": "wàng",
+                "meaning": "full moon",
+                "audio_text": "望"
+              },
+              {
+                "character": "期",
+                "pinyin": "qī",
+                "meaning": "a period",
+                "audio_text": "期"
+              },
+              {
+                "character": "朝",
+                "pinyin": "zhāo",
+                "meaning": "morning",
+                "audio_text": "朝"
+              },
+              {
+                "character": "朗",
+                "pinyin": "lǎng",
+                "meaning": "bright",
+                "audio_text": "朗"
+              }
+            ],
+            "note": "A handful only — the moon kept far fewer characters than the flesh did."
+          }
+        ]
+      },
+      "match": {
+        "title": "Which part of the body?",
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "😊",
+            "character": "脸"
+          },
+          {
+            "picture": "🦵",
+            "character": "腿"
+          },
+          {
+            "picture": "🧠",
+            "character": "脑"
+          },
+          {
+            "picture": "🦶",
+            "character": "脚"
+          },
+          {
+            "picture": "💪",
+            "character": "臂"
+          },
+          {
+            "picture": "🫀",
+            "character": "肝"
+          }
+        ]
+      },
+      "try": {
+        "intro": "One last look. Which 月 is hiding in each?",
+        "choice_pinyin": {
+          "肉 flesh": "ròu",
+          "月 moon": "yuè"
+        },
+        "items": [
+          {
+            "sentence": "脸",
+            "pinyin": "liǎn",
+            "meaning": "face",
+            "choices": [
+              "肉 flesh",
+              "月 moon"
+            ],
+            "correct": "肉 flesh"
+          },
+          {
+            "sentence": "明",
+            "pinyin": "míng",
+            "meaning": "bright — 日 and 月 together",
+            "choices": [
+              "月 moon",
+              "肉 flesh"
+            ],
+            "correct": "月 moon"
+          }
+        ]
+      }
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "日",
+      "audio_text": "日",
+      "correct": "sun",
+      "choices": [
+        "face",
+        "sun",
+        "snow",
+        "rain"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "日",
+      "correct": "日",
+      "choices": [
+        "日",
+        "下",
+        "上",
+        "有"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "sun",
+      "correct": "日",
+      "choices": [
+        "脸",
+        "日",
+        "下",
+        "雨"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "日",
+      "audio_text": "日",
+      "correct": "rì",
+      "choices": [
+        "liǎn",
+        "rì",
+        "míng",
+        "xuě"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "rì",
+      "correct": "日",
+      "choices": [
+        "雨",
+        "日",
+        "脸",
+        "月"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "月",
+      "audio_text": "月",
+      "correct": "moon",
+      "choices": [
+        "face",
+        "early",
+        "to have",
+        "moon"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "月",
+      "correct": "月",
+      "choices": [
+        "日",
+        "早",
+        "昨",
+        "月"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "moon",
+      "correct": "月",
+      "choices": [
+        "下",
+        "上",
+        "月",
+        "明"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "月",
+      "audio_text": "月",
+      "correct": "yuè",
+      "choices": [
+        "rì",
+        "yǔ",
+        "yuè",
+        "liǎn"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yuè",
+      "correct": "月",
+      "choices": [
+        "脸",
+        "上",
+        "月",
+        "早"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "雨",
+      "audio_text": "雨",
+      "correct": "rain",
+      "choices": [
+        "moon",
+        "rain",
+        "sun",
+        "snow"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "雨",
+      "correct": "雨",
+      "choices": [
+        "明",
+        "雨",
+        "脸",
+        "日"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "rain",
+      "correct": "雨",
+      "choices": [
+        "有",
+        "明",
+        "雨",
+        "下"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "雨",
+      "audio_text": "雨",
+      "correct": "yǔ",
+      "choices": [
+        "yuè",
+        "zuó",
+        "liǎn",
+        "yǔ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yǔ",
+      "correct": "雨",
+      "choices": [
+        "昨",
+        "月",
+        "雪",
+        "雨"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "明",
+      "audio_text": "明",
+      "correct": "bright",
+      "choices": [
+        "yesterday",
+        "up / on",
+        "sun",
+        "bright"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "明",
+      "correct": "明",
+      "choices": [
+        "下",
+        "明",
+        "雨",
+        "有"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "bright",
+      "correct": "明",
+      "choices": [
+        "明",
+        "早",
+        "日",
+        "雪"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "明",
+      "audio_text": "明",
+      "correct": "míng",
+      "choices": [
+        "liǎn",
+        "míng",
+        "zuó",
+        "zǎo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "míng",
+      "correct": "明",
+      "choices": [
+        "下",
+        "有",
+        "日",
+        "明"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "昨",
+      "audio_text": "昨",
+      "correct": "yesterday",
+      "choices": [
+        "bright",
+        "face",
+        "yesterday",
+        "sun"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "昨",
+      "correct": "昨",
+      "choices": [
+        "昨",
+        "明",
+        "有",
+        "雪"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "yesterday",
+      "correct": "昨",
+      "choices": [
+        "脸",
+        "下",
+        "月",
+        "昨"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "昨",
+      "audio_text": "昨",
+      "correct": "zuó",
+      "choices": [
+        "zuó",
+        "zǎo",
+        "yuè",
+        "liǎn"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zuó",
+      "correct": "昨",
+      "choices": [
+        "雨",
+        "明",
+        "脸",
+        "昨"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "早",
+      "audio_text": "早",
+      "correct": "early",
+      "choices": [
+        "down",
+        "rain",
+        "early",
+        "sun"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "早",
+      "correct": "早",
+      "choices": [
+        "上",
+        "昨",
+        "下",
+        "早"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "early",
+      "correct": "早",
+      "choices": [
+        "脸",
+        "早",
+        "明",
+        "月"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "早",
+      "audio_text": "早",
+      "correct": "zǎo",
+      "choices": [
+        "rì",
+        "shàng",
+        "xuě",
+        "zǎo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zǎo",
+      "correct": "早",
+      "choices": [
+        "早",
+        "下",
+        "上",
+        "脸"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "雪",
+      "audio_text": "雪",
+      "correct": "snow",
+      "choices": [
+        "down",
+        "face",
+        "yesterday",
+        "snow"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "雪",
+      "correct": "雪",
+      "choices": [
+        "雪",
+        "有",
+        "上",
+        "早"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "snow",
+      "correct": "雪",
+      "choices": [
+        "有",
+        "雪",
+        "脸",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "雪",
+      "audio_text": "雪",
+      "correct": "xuě",
+      "choices": [
+        "yuè",
+        "xuě",
+        "zuó",
+        "zǎo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "xuě",
+      "correct": "雪",
+      "choices": [
+        "雪",
+        "月",
+        "上",
+        "早"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "有",
+      "audio_text": "有",
+      "correct": "to have",
+      "choices": [
+        "up / on",
+        "to have",
+        "rain",
+        "snow"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "有",
+      "correct": "有",
+      "choices": [
+        "雪",
+        "有",
+        "日",
+        "早"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to have",
+      "correct": "有",
+      "choices": [
+        "雪",
+        "日",
+        "有",
+        "下"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "有",
+      "audio_text": "有",
+      "correct": "yǒu",
+      "choices": [
+        "xià",
+        "shàng",
+        "zǎo",
+        "yǒu"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yǒu",
+      "correct": "有",
+      "choices": [
+        "有",
+        "上",
+        "早",
+        "雪"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "脸",
+      "audio_text": "脸",
+      "correct": "face",
+      "choices": [
+        "yesterday",
+        "face",
+        "sun",
+        "to have"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "脸",
+      "correct": "脸",
+      "choices": [
+        "上",
+        "昨",
+        "脸",
+        "月"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "face",
+      "correct": "脸",
+      "choices": [
+        "有",
+        "下",
+        "脸",
+        "上"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "脸",
+      "audio_text": "脸",
+      "correct": "liǎn",
+      "choices": [
+        "rì",
+        "xià",
+        "liǎn",
+        "yǒu"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "liǎn",
+      "correct": "脸",
+      "choices": [
+        "下",
+        "脸",
+        "月",
+        "日"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "上",
+      "audio_text": "上",
+      "correct": "up / on",
+      "choices": [
+        "down",
+        "to have",
+        "moon",
+        "up / on"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "上",
+      "correct": "上",
+      "choices": [
+        "上",
+        "月",
+        "下",
+        "早"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "up / on",
+      "correct": "上",
+      "choices": [
+        "月",
+        "上",
+        "雨",
+        "明"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "上",
+      "audio_text": "上",
+      "correct": "shàng",
+      "choices": [
+        "yuè",
+        "míng",
+        "rì",
+        "shàng"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "shàng",
+      "correct": "上",
+      "choices": [
+        "上",
+        "日",
+        "明",
+        "脸"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "下",
+      "audio_text": "下",
+      "correct": "down",
+      "choices": [
+        "face",
+        "down",
+        "up / on",
+        "snow"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "下",
+      "correct": "下",
+      "choices": [
+        "下",
+        "雪",
+        "昨",
+        "脸"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "down",
+      "correct": "下",
+      "choices": [
+        "下",
+        "昨",
+        "雪",
+        "早"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "下",
+      "audio_text": "下",
+      "correct": "xià",
+      "choices": [
+        "yǒu",
+        "liǎn",
+        "xià",
+        "xuě"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "xià",
+      "correct": "下",
+      "choices": [
+        "月",
+        "脸",
+        "昨",
+        "下"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "明",
+      "audio_text": "明",
+      "correct": "日",
+      "choices": [
+        "扌",
+        "钅",
+        "日",
+        "目"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "昨",
+      "audio_text": "昨",
+      "correct": "日",
+      "choices": [
+        "忄",
+        "心",
+        "日",
+        "土"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "早",
+      "audio_text": "早",
+      "correct": "日",
+      "choices": [
+        "忄",
+        "目",
+        "日",
+        "心"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "雪",
+      "audio_text": "雪",
+      "correct": "雨",
+      "choices": [
+        "日",
+        "雨",
+        "心",
+        "钅"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "有",
+      "audio_text": "有",
+      "correct": "月",
+      "choices": [
+        "月",
+        "土",
+        "钅",
+        "讠"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "脸",
+      "audio_text": "脸",
+      "correct": "月",
+      "choices": [
+        "钅",
+        "月",
+        "日",
+        "扌"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "明天",
+      "audio_text": "明天",
+      "correct": "tomorrow",
+      "choices": [
+        "rainwater",
+        "today",
+        "tomorrow",
+        "on the face"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "明天",
+      "correct": "明天",
+      "choices": [
+        "脸上",
+        "月亮",
+        "明天",
+        "昨天"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "昨天",
+      "audio_text": "昨天",
+      "correct": "yesterday",
+      "choices": [
+        "to snow",
+        "today",
+        "to rain",
+        "yesterday"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "昨天",
+      "correct": "昨天",
+      "choices": [
+        "今天",
+        "雨水",
+        "昨天",
+        "月亮"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "今天",
+      "audio_text": "今天",
+      "correct": "today",
+      "choices": [
+        "rainwater",
+        "on the face",
+        "today",
+        "good morning"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "今天",
+      "correct": "今天",
+      "choices": [
+        "下雪",
+        "早上好",
+        "月亮",
+        "今天"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "月亮",
+      "audio_text": "月亮",
+      "correct": "the moon",
+      "choices": [
+        "the moon",
+        "to snow",
+        "yesterday",
+        "today"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "月亮",
+      "correct": "月亮",
+      "choices": [
+        "脸上",
+        "月亮",
+        "今天",
+        "雨水"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "早上好",
+      "audio_text": "早上好",
+      "correct": "good morning",
+      "choices": [
+        "on the face",
+        "good morning",
+        "yesterday",
+        "to snow"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "早上好",
+      "correct": "早上好",
+      "choices": [
+        "雨水",
+        "早上好",
+        "昨天",
+        "脸上"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "下雨",
+      "audio_text": "下雨",
+      "correct": "to rain",
+      "choices": [
+        "rainwater",
+        "to rain",
+        "the moon",
+        "to snow"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "下雨",
+      "correct": "下雨",
+      "choices": [
+        "下雨",
+        "早上好",
+        "雨水",
+        "今天"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "雨水",
+      "audio_text": "雨水",
+      "correct": "rainwater",
+      "choices": [
+        "to rain",
+        "rainwater",
+        "good morning",
+        "today"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "雨水",
+      "correct": "雨水",
+      "choices": [
+        "雨水",
+        "脸上",
+        "今天",
+        "早上好"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "下雪",
+      "audio_text": "下雪",
+      "correct": "to snow",
+      "choices": [
+        "to snow",
+        "the moon",
+        "on the face",
+        "good morning"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "下雪",
+      "correct": "下雪",
+      "choices": [
+        "下雨",
+        "下雪",
+        "脸上",
+        "早上好"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "脸上",
+      "audio_text": "脸上",
+      "correct": "on the face",
+      "choices": [
+        "on the face",
+        "today",
+        "the moon",
+        "rainwater"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "脸上",
+      "correct": "脸上",
+      "choices": [
+        "早上好",
+        "脸上",
+        "昨天",
+        "雨水"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "日",
+          "pinyin": "rì",
+          "english": "sun"
+        },
+        {
+          "id": 2,
+          "chinese": "月",
+          "pinyin": "yuè",
+          "english": "moon"
+        },
+        {
+          "id": 3,
+          "chinese": "雨",
+          "pinyin": "yǔ",
+          "english": "rain"
+        },
+        {
+          "id": 4,
+          "chinese": "明",
+          "pinyin": "míng",
+          "english": "bright"
+        },
+        {
+          "id": 5,
+          "chinese": "昨",
+          "pinyin": "zuó",
+          "english": "yesterday"
+        }
+      ],
+      "correct": "char:日月雨明昨",
+      "choices": [
+        "sun",
+        "moon",
+        "rain",
+        "bright",
+        "yesterday"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "早",
+          "pinyin": "zǎo",
+          "english": "early"
+        },
+        {
+          "id": 2,
+          "chinese": "雪",
+          "pinyin": "xuě",
+          "english": "snow"
+        },
+        {
+          "id": 3,
+          "chinese": "有",
+          "pinyin": "yǒu",
+          "english": "to have"
+        },
+        {
+          "id": 4,
+          "chinese": "脸",
+          "pinyin": "liǎn",
+          "english": "face"
+        },
+        {
+          "id": 5,
+          "chinese": "上",
+          "pinyin": "shàng",
+          "english": "up / on"
+        }
+      ],
+      "correct": "char:早雪有脸上",
+      "choices": [
+        "early",
+        "snow",
+        "to have",
+        "face",
+        "up / on"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "下",
+          "pinyin": "xià",
+          "english": "down"
+        },
+        {
+          "id": 2,
+          "chinese": "明",
+          "pinyin": "míng",
+          "english": "bright"
+        },
+        {
+          "id": 3,
+          "chinese": "昨",
+          "pinyin": "zuó",
+          "english": "yesterday"
+        },
+        {
+          "id": 4,
+          "chinese": "早",
+          "pinyin": "zǎo",
+          "english": "early"
+        },
+        {
+          "id": 5,
+          "chinese": "雪",
+          "pinyin": "xuě",
+          "english": "snow"
+        }
+      ],
+      "correct": "char:下明昨早雪",
+      "choices": [
+        "down",
+        "bright",
+        "yesterday",
+        "early",
+        "snow"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "明天",
+          "pinyin": "míngtiān",
+          "english": "tomorrow"
+        },
+        {
+          "id": 2,
+          "chinese": "昨天",
+          "pinyin": "zuótiān",
+          "english": "yesterday"
+        },
+        {
+          "id": 3,
+          "chinese": "今天",
+          "pinyin": "jīntiān",
+          "english": "today"
+        },
+        {
+          "id": 4,
+          "chinese": "月亮",
+          "pinyin": "yuèliang",
+          "english": "the moon"
+        },
+        {
+          "id": 5,
+          "chinese": "早上好",
+          "pinyin": "zǎoshang hǎo",
+          "english": "good morning"
+        }
+      ],
+      "correct": "word:明天昨天今天月亮早上好",
+      "choices": [
+        "tomorrow",
+        "yesterday",
+        "today",
+        "the moon",
+        "good morning"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "下雨",
+          "pinyin": "xià yǔ",
+          "english": "to rain"
+        },
+        {
+          "id": 2,
+          "chinese": "雨水",
+          "pinyin": "yǔshuǐ",
+          "english": "rainwater"
+        },
+        {
+          "id": 3,
+          "chinese": "下雪",
+          "pinyin": "xià xuě",
+          "english": "to snow"
+        },
+        {
+          "id": 4,
+          "chinese": "脸上",
+          "pinyin": "liǎn shang",
+          "english": "on the face"
+        },
+        {
+          "id": 5,
+          "chinese": "月亮",
+          "pinyin": "yuèliang",
+          "english": "the moon"
+        }
+      ],
+      "correct": "word:下雨雨水下雪脸上月亮",
+      "choices": [
+        "to rain",
+        "rainwater",
+        "to snow",
+        "on the face",
+        "the moon"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "明",
+        null
+      ],
+      "correct": "天",
+      "choices": [
+        "天",
+        "上",
+        "下",
+        "水"
+      ],
+      "result_word": "明天",
+      "result_pinyin": "míngtiān",
+      "result_meaning": "tomorrow",
+      "audio_text": "明天"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "下",
+        null
+      ],
+      "correct": "雪",
+      "choices": [
+        "雨",
+        "日",
+        "月",
+        "雪"
+      ],
+      "result_word": "下雪",
+      "result_pinyin": "xià xuě",
+      "result_meaning": "to snow",
+      "audio_text": "下雪"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "雨",
+        null
+      ],
+      "correct": "水",
+      "choices": [
+        "上",
+        "雪",
+        "天",
+        "水"
+      ],
+      "result_word": "雨水",
+      "result_pinyin": "yǔshuǐ",
+      "result_meaning": "rainwater",
+      "audio_text": "雨水"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "脸",
+        null
+      ],
+      "correct": "上",
+      "choices": [
+        "水",
+        "上",
+        "天",
+        "下"
+      ],
+      "result_word": "脸上",
+      "result_pinyin": "liǎn shang",
+      "result_meaning": "on the face",
+      "audio_text": "脸上"
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "Good morning.",
+      "tiles": [
+        "好",
+        "晚上",
+        "早上"
+      ],
+      "answer": [
+        "早上",
+        "好"
+      ],
+      "result": "早上好！",
+      "pinyin": "Zǎoshang hǎo!",
+      "correct": "早上好",
+      "choices": [
+        "早上好"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "Today it is snowing.",
+      "tiles": [
+        "下雪",
+        "下雨",
+        "今天"
+      ],
+      "answer": [
+        "今天",
+        "下雪"
+      ],
+      "result": "今天下雪。",
+      "pinyin": "Jīntiān xià xuě.",
+      "correct": "今天下雪",
+      "choices": [
+        "今天下雪"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "It did not rain.",
+      "tiles": [
+        "下雨",
+        "下雪",
+        "没有"
+      ],
+      "answer": [
+        "没有",
+        "下雨"
+      ],
+      "result": "没有下雨。",
+      "pinyin": "Méiyǒu xià yǔ.",
+      "correct": "没有下雨",
+      "choices": [
+        "没有下雨"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "There is rainwater on your face.",
+      "tiles": [
+        "雨水",
+        "脸上",
+        "有",
+        "你的",
+        "雪水"
+      ],
+      "answer": [
+        "你的",
+        "脸上",
+        "有",
+        "雨水"
+      ],
+      "result": "你的脸上有雨水。",
+      "pinyin": "Nǐ de liǎn shang yǒu yǔshuǐ.",
+      "correct": "你的脸上有雨水",
+      "choices": [
+        "你的脸上有雨水"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "脸上",
+      "audio_text": "脸上",
+      "pinyin": "liǎn shang",
+      "meaning": "on the face",
+      "correct": "脸上",
+      "choices": [
+        "脸上"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "月亮",
+      "audio_text": "月亮",
+      "pinyin": "yuèliang",
+      "meaning": "the moon",
+      "correct": "月亮",
+      "choices": [
+        "月亮"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "下雪",
+      "audio_text": "下雪",
+      "pinyin": "xià xuě",
+      "meaning": "to snow",
+      "correct": "下雪",
+      "choices": [
+        "下雪"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "你的脸上有雨水。",
+      "audio_text": "你的脸上有雨水",
+      "pinyin": "Nǐ de liǎn shang yǒu yǔshuǐ.",
+      "meaning": "There is rainwater on your face.",
+      "correct": "你的脸上有雨水。",
+      "choices": [
+        "你的脸上有雨水。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "今天",
+      "audio_text": "今天",
+      "pinyin": "jīntiān",
+      "meaning": "today",
+      "correct": "今天",
+      "choices": [
+        "今天"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "下雨",
+      "audio_text": "下雨",
+      "pinyin": "xià yǔ",
+      "meaning": "to rain",
+      "correct": "下雨",
+      "choices": [
+        "下雨"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "雨水",
+      "audio_text": "雨水",
+      "pinyin": "yǔshuǐ",
+      "meaning": "rainwater",
+      "correct": "雨水",
+      "choices": [
+        "雨水"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "早上好，老师！",
+      "audio_text": "早上好，老师",
+      "pinyin": "Zǎoshang hǎo, lǎoshī!",
+      "meaning": "Good morning, teacher!",
+      "correct": "早上好，老师！",
+      "choices": [
+        "早上好，老师！"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "没有下雨。",
+      "audio_text": "没有下雨",
+      "pinyin": "Méiyǒu xià yǔ.",
+      "meaning": "It did not rain.",
+      "correct": "没有下雨。",
+      "choices": [
+        "没有下雨。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "昨天",
+      "audio_text": "昨天",
+      "pinyin": "zuótiān",
+      "meaning": "yesterday",
+      "correct": "昨天",
+      "choices": [
+        "昨天"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "早上好",
+      "audio_text": "早上好",
+      "pinyin": "zǎoshang hǎo",
+      "meaning": "good morning",
+      "correct": "早上好",
+      "choices": [
+        "早上好"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "明天",
+      "audio_text": "明天",
+      "pinyin": "míngtiān",
+      "meaning": "tomorrow",
+      "correct": "明天",
+      "choices": [
+        "明天"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "昨天下雨，今天下雪。",
+      "audio_text": "昨天下雨，今天下雪",
+      "pinyin": "Zuótiān xià yǔ, jīntiān xià xuě.",
+      "meaning": "It rained yesterday; today it is snowing.",
+      "correct": "昨天下雨，今天下雪。",
+      "choices": [
+        "昨天下雨，今天下雪。"
+      ]
+    }
+  ]
+}
