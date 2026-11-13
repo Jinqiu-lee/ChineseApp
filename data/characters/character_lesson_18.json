@@ -380,7 +380,7 @@
         {
           "title": "Have you?",
           "goal": "喝过",
-          "picture": "🍵",
+          "picture": "l18-p3-have-you",
           "lines": [
             {
               "speaker": "A",
@@ -426,7 +426,7 @@
         {
           "title": "Two gardens",
           "goal": "花园 茶园 上边 下边",
-          "picture": "l18-p1-guo",
+          "picture": "l18-p3-gardens",
           "lines": [
             {
               "speaker": "A",
@@ -463,7 +463,7 @@
         {
           "title": "She went home",
           "goal": "回家 了",
-          "picture": "🏠",
+          "picture": "l18-p3-go-home",
           "lines": [
             {
               "speaker": "A",
@@ -507,7 +507,7 @@
         {
           "title": "Which country?",
           "goal": "哪国人 中国人",
-          "picture": "🌏",
+          "picture": "l18-p3-which-country",
           "lines": [
             {
               "speaker": "A",
@@ -632,9 +632,8 @@
             "chars": [
               {
                 "character": "囗",
-                "pinyin": "wéi",
                 "meaning": "a boundary",
-                "audio_text": "囗"
+                "audio_text": "国字框"
               },
               {
                 "character": "玉",
@@ -655,9 +654,8 @@
             "chars": [
               {
                 "character": "宀",
-                "pinyin": "mián",
                 "meaning": "a roof",
-                "audio_text": "宀"
+                "audio_text": "宝盖头"
               },
               {
                 "character": "豕",
@@ -675,7 +673,6 @@
         "items": [
           {
             "sentence": "国 = 囗 + ___",
-            "pinyin": "guó = wéi + ___",
             "meaning": "What is kept inside the wall?",
             "choices": [
               "玉",
@@ -685,7 +682,6 @@
           },
           {
             "sentence": "家 = 宀 + ___",
-            "pinyin": "jiā = mián + ___",
             "meaning": "What is under the roof?",
             "choices": [
               "豕",

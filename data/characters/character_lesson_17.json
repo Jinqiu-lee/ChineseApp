@@ -216,7 +216,7 @@
         {
           "character": "在",
           "pinyin": "zài",
-          "meaning": "to be at",
+          "meaning": "at; in the middle of doing",
           "audio_text": "在"
         },
         {
@@ -544,7 +544,7 @@
           {
             "text": "山上",
             "pinyin": "shān shang",
-            "meaning": "up the mountain",
+            "meaning": "on the mountain",
             "audio_text": "山上"
           },
           {
@@ -679,7 +679,7 @@
       "choices": [
         "a mountain",
         "to go",
-        "to be at",
+        "at; in the middle of doing",
         "a flower"
       ]
     },
@@ -737,7 +737,7 @@
         "grass",
         "a mountain",
         "years old",
-        "to be at"
+        "at; in the middle of doing"
       ]
     },
     {
@@ -850,7 +850,7 @@
       "choices": [
         "a mountain",
         "tea",
-        "to be at",
+        "at; in the middle of doing",
         "to go"
       ]
     },
@@ -908,7 +908,7 @@
         "a mountain",
         "a flower",
         "years old",
-        "to be at"
+        "at; in the middle of doing"
       ]
     },
     {
@@ -960,12 +960,12 @@
       "type": "char_to_meaning",
       "prompt_char": "在",
       "audio_text": "在",
-      "correct": "to be at",
+      "correct": "at; in the middle of doing",
       "choices": [
         "years old",
         "tea",
         "a flower",
-        "to be at"
+        "at; in the middle of doing"
       ]
     },
     {
@@ -981,7 +981,7 @@
     },
     {
       "type": "meaning_to_char",
-      "prompt_en": "to be at",
+      "prompt_en": "at; in the middle of doing",
       "correct": "在",
       "choices": [
         "在",
@@ -1020,7 +1020,7 @@
       "correct": "to go",
       "choices": [
         "years old",
-        "to be at",
+        "at; in the middle of doing",
         "to go",
         "a mountain"
       ]
@@ -1148,7 +1148,7 @@
       "correct": "a blade of grass",
       "choices": [
         "to go up a mountain",
-        "up the mountain",
+        "on the mountain",
         "flower tea",
         "a blade of grass"
       ]
@@ -1214,9 +1214,9 @@
       "type": "char_to_meaning",
       "prompt_char": "山上",
       "audio_text": "山上",
-      "correct": "up the mountain",
+      "correct": "on the mountain",
       "choices": [
-        "up the mountain",
+        "on the mountain",
         "to come down a mountain",
         "to go up a mountain",
         "how old"
@@ -1379,7 +1379,7 @@
           "id": 1,
           "chinese": "在",
           "pinyin": "zài",
-          "english": "to be at"
+          "english": "at; in the middle of doing"
         },
         {
           "id": 2,
@@ -1408,7 +1408,7 @@
       ],
       "correct": "char:在去花草茶",
       "choices": [
-        "to be at",
+        "at; in the middle of doing",
         "to go",
         "a flower",
         "grass",
@@ -1469,7 +1469,7 @@
           "id": 1,
           "chinese": "山上",
           "pinyin": "shān shang",
-          "english": "up the mountain"
+          "english": "on the mountain"
         },
         {
           "id": 2,
@@ -1498,7 +1498,7 @@
       ],
       "correct": "word:山上山下上山下山喝茶",
       "choices": [
-        "up the mountain",
+        "on the mountain",
         "at the foot of the mountain",
         "to go up a mountain",
         "to come down a mountain",
@@ -1556,7 +1556,7 @@
       ],
       "result_word": "山上",
       "result_pinyin": "shān shang",
-      "result_meaning": "up the mountain",
+      "result_meaning": "on the mountain",
       "audio_text": "山上"
     },
     {
@@ -1710,7 +1710,7 @@
       "prompt_char": "山上",
       "audio_text": "山上",
       "pinyin": "shān shang",
-      "meaning": "up the mountain",
+      "meaning": "on the mountain",
       "correct": "山上",
       "choices": [
         "山上"

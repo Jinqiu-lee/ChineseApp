@@ -5,7 +5,7 @@ import {
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { speakAsAvatar } from '../../utils/tts';
-import { startRecording, stopAndTranscribe, calculateAccuracy } from '../../utils/speechRecognition';
+import { startRecording, stopAndTranscribe, calculateAccuracy, watchSilence } from '../../utils/speechRecognition';
 import AvatarCharacter from '../AvatarCharacter';
 
 const MAX_ATTEMPTS = 3;
@@ -25,6 +25,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
   const [showHint, setShowHint] = useState(false);
   const [avatarId, setAvatarId] = useState(avatarIdProp || 'eileen');
   const recordingRef = useRef(null);
+  const silenceRef = useRef(null);          // cancels the auto-stop watcher
   const timerRef = useRef(null);
 
   useEffect(() => {
@@ -114,6 +115,8 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
     try {
       setPhase('recording');
       recordingRef.current = await startRecording();
+      // Five seconds of nothing and it stops itself. The Stop button stays.
+      silenceRef.current = watchSilence(recordingRef.current, () => handleStopRecording());
     } catch (err) {
       console.error('startRecording error:', err);
       setPhase('idle');
@@ -121,6 +124,7 @@ export default function SpeakExercise({ exercise, onCorrect, onWrong, avatarId: 
   };
 
   const handleStopRecording = async () => {
+    silenceRef.current?.(); silenceRef.current = null;
     clearInterval(timerRef.current);
     if (!recordingRef.current) return;
     setPhase('processing');

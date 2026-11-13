@@ -21,6 +21,7 @@ import characterLesson16 from './character_lesson_16.json';
 import characterLesson17 from './character_lesson_17.json';
 import characterLesson18 from './character_lesson_18.json';
 import characterLesson19 from './character_lesson_19.json';
+import characterLesson20 from './character_lesson_20.json';
 
 export const CHARACTER_LESSONS = {
   1: characterLesson1,
@@ -42,6 +43,7 @@ export const CHARACTER_LESSONS = {
   17: characterLesson17,
   18: characterLesson18,
   19: characterLesson19,
+  20: characterLesson20,
 };
 
 export const TOTAL_CHARACTER_LESSONS = 20;

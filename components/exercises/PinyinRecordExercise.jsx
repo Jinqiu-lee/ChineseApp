@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, ActivityIndicator } from 'react-native';
 import { speakPinyin } from '../../utils/tts';
-import { startRecording, stopAndTranscribe, calculateAccuracy } from '../../utils/speechRecognition';
+import { startRecording, stopAndTranscribe, calculateAccuracy, watchSilence } from '../../utils/speechRecognition';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS, ERROR } from '../../constants/colors';
 
 // Handles two Stage-4 exercise types:
@@ -37,8 +37,13 @@ export default function PinyinRecordExercise({ exercise, onCorrect, onWrong, noA
     setAnswered(false);
   };
 
+  // Cancels the auto-stop watcher, and lets it reach the current handler.
+  const silenceRef = useRef(null);
+  const handleRecordRef = useRef(null);
+
   const handleRecord = async () => {
     if (isRecording) {
+      silenceRef.current?.(); silenceRef.current = null;
       setIsRecording(false);
       setIsProcessing(true);
       try {
@@ -65,11 +70,15 @@ export default function PinyinRecordExercise({ exercise, onCorrect, onWrong, noA
         const rec = await startRecording();
         setRecording(rec);
         setIsRecording(true);
+        // Five seconds of nothing and it stops itself; Stop still works.
+        silenceRef.current = watchSilence(rec, () => handleRecordRef.current?.());
       } catch (e) {
         console.warn('Microphone error:', e);
       }
     }
   };
+
+  handleRecordRef.current = handleRecord;
 
   const instruction = type === 'listen_record'
     ? '🎙️ Listen, then record yourself saying it'

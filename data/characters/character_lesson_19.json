@@ -33,7 +33,7 @@
         {
           "character": "犬",
           "pinyin": "quǎn",
-          "meaning": "a dog",
+          "meaning": "dog (classical)",
           "audio_text": "犬",
           "picture": "l19-p1-quan",
           "note": "A dog seen from the side, ear up and tail curling.",
@@ -114,14 +114,14 @@
           "from": {
             "character": "犬",
             "pinyin": "quǎn",
-            "meaning": "a dog"
+            "meaning": "dog (classical)"
           },
           "hint": "犬 stands up, turns side-on and loses its dot — 犭. It is called 反犬 because it is the dog reversed.",
           "characters": [
             {
               "character": "狗",
               "pinyin": "gǒu",
-              "meaning": "a dog (the everyday word)",
+              "meaning": "dog",
               "audio_text": "狗"
             },
             {
@@ -350,7 +350,7 @@
         {
           "title": "Cats or dogs?",
           "goal": "猫 狗 喜欢",
-          "picture": "🐱",
+          "picture": "l19-p3-dog-or-cat",
           "lines": [
             {
               "speaker": "A",
@@ -438,7 +438,7 @@
         {
           "title": "Traffic",
           "goal": "路上 车辆 很多",
-          "picture": "🚗",
+          "picture": "l19-p3-traffic",
           "lines": [
             {
               "speaker": "A",
@@ -588,7 +588,7 @@
           {
             "character": "丝",
             "pinyin": "sī",
-            "meaning": "silk, from the cocoon",
+            "meaning": "silk",
             "audio_text": "丝",
             "picture": "l19-p5-cocoons"
           },
@@ -642,12 +642,12 @@
       "type": "char_to_meaning",
       "prompt_char": "犬",
       "audio_text": "犬",
-      "correct": "a dog",
+      "correct": "dog (classical)",
       "choices": [
         "a vehicle",
         "a cat",
         "green",
-        "a dog"
+        "dog (classical)"
       ]
     },
     {
@@ -663,7 +663,7 @@
     },
     {
       "type": "meaning_to_char",
-      "prompt_en": "a dog",
+      "prompt_en": "dog (classical)",
       "correct": "犬",
       "choices": [
         "红",
@@ -759,7 +759,7 @@
       "correct": "a vehicle",
       "choices": [
         "a thread",
-        "a dog",
+        "dog (classical)",
         "a vehicle",
         "green"
       ]
@@ -813,12 +813,12 @@
       "type": "char_to_meaning",
       "prompt_char": "狗",
       "audio_text": "狗",
-      "correct": "a dog (the everyday word)",
+      "correct": "dog",
       "choices": [
         "a cat",
         "colour",
         "a thread",
-        "a dog (the everyday word)"
+        "dog"
       ]
     },
     {
@@ -834,7 +834,7 @@
     },
     {
       "type": "meaning_to_char",
-      "prompt_en": "a dog (the everyday word)",
+      "prompt_en": "dog",
       "correct": "狗",
       "choices": [
         "车",
@@ -872,7 +872,7 @@
       "audio_text": "猫",
       "correct": "a cat",
       "choices": [
-        "a dog (the everyday word)",
+        "dog",
         "green",
         "a cat",
         "colour"
@@ -932,7 +932,7 @@
         "red",
         "silk",
         "colour",
-        "a dog"
+        "dog (classical)"
       ]
     },
     {
@@ -1044,7 +1044,7 @@
       "correct": "a thread",
       "choices": [
         "green",
-        "a dog (the everyday word)",
+        "dog",
         "red",
         "a thread"
       ]
@@ -1473,7 +1473,7 @@
           "id": 1,
           "chinese": "犬",
           "pinyin": "quǎn",
-          "english": "a dog"
+          "english": "dog (classical)"
         },
         {
           "id": 2,
@@ -1491,7 +1491,7 @@
           "id": 4,
           "chinese": "狗",
           "pinyin": "gǒu",
-          "english": "a dog (the everyday word)"
+          "english": "dog"
         },
         {
           "id": 5,
@@ -1502,10 +1502,10 @@
       ],
       "correct": "char:犬丝车狗猫",
       "choices": [
-        "a dog",
+        "dog (classical)",
         "silk",
         "a vehicle",
-        "a dog (the everyday word)",
+        "dog",
         "a cat"
       ]
     },
@@ -1563,7 +1563,7 @@
           "id": 1,
           "chinese": "狗",
           "pinyin": "gǒu",
-          "english": "a dog (the everyday word)"
+          "english": "dog"
         },
         {
           "id": 2,
@@ -1592,7 +1592,7 @@
       ],
       "correct": "char:狗猫红绿线",
       "choices": [
-        "a dog (the everyday word)",
+        "dog",
         "a cat",
         "red",
         "green",

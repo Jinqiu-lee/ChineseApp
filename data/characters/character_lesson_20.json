@@ -1,0 +1,1947 @@
+{
+  "id": 20,
+  "part": 2,
+  "title": "Lesson 20 · Doors, Bamboo and Cloth",
+  "emoji": "👕",
+  "subtitle": "门 竹 衣 · 门字框 竹字头 衣字旁",
+  "description": "The last three radicals of this half — one frames a character, one roofs it, one dresses it.",
+  "new_strokes": [],
+  "new_characters": [
+    "问",
+    "篮",
+    "裤",
+    "裙"
+  ],
+  "new_words": [
+    "开门",
+    "关门",
+    "请问",
+    "篮球",
+    "篮子",
+    "衣服",
+    "裤子",
+    "裙子"
+  ],
+  "learn_content": {
+    "part1_blocks": {
+      "title": "Discover",
+      "subtitle": "独体字 · Characters that stand alone",
+      "intro": "A door, bamboo and a garment — the last three characters of this half, and each one still looks like the thing it names.",
+      "blocks": [
+        {
+          "character": "门",
+          "pinyin": "mén",
+          "meaning": "a door",
+          "audio_text": "门",
+          "picture": "l20-p1-men",
+          "note": "Two leaves of a door, hinged either side of the opening.",
+          "match": {
+            "prompt_picture": "l20-p1-men",
+            "choices": [
+              "门",
+              "竹",
+              "衣"
+            ],
+            "correct": "门"
+          }
+        },
+        {
+          "character": "竹",
+          "pinyin": "zhú",
+          "meaning": "bamboo",
+          "audio_text": "竹",
+          "picture": "l20-p1-zhu",
+          "note": "Two bamboo stems, each with a pair of leaves drooping from it.",
+          "match": {
+            "prompt_picture": "l20-p1-zhu",
+            "choices": [
+              "门",
+              "竹",
+              "衣"
+            ],
+            "correct": "竹"
+          }
+        },
+        {
+          "character": "衣",
+          "pinyin": "yī",
+          "meaning": "clothing",
+          "audio_text": "衣",
+          "picture": "l20-p1-yi",
+          "note": "A garment seen from the front: collar at the top, sleeves either side.",
+          "match": {
+            "prompt_picture": "l20-p1-yi",
+            "choices": [
+              "门",
+              "竹",
+              "衣"
+            ],
+            "correct": "衣"
+          }
+        }
+      ],
+      "match": {
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "l20-p1-men",
+            "character": "门"
+          },
+          {
+            "picture": "l20-p1-zhu",
+            "character": "竹"
+          },
+          {
+            "picture": "l20-p1-yi",
+            "character": "衣"
+          }
+        ]
+      }
+    },
+    "part2_components": {
+      "title": "Decode",
+      "subtitle": "部件与部首 · Components and radicals",
+      "caveat": "One frames a character, one sits on its roof, and one stands at its side — a door, a plant and a garment.",
+      "components": [
+        {
+          "radical": "门",
+          "name": "门字框",
+          "pinyin": "mén zì kuàng",
+          "name_en": "the door frame, open at the bottom",
+          "audio_text": "门字框",
+          "from": {
+            "character": "门",
+            "pinyin": "mén",
+            "meaning": "a door"
+          },
+          "hint": "门 keeps its shape and wraps round whatever is written inside it — a frame with no floor.",
+          "characters": [
+            {
+              "character": "问",
+              "pinyin": "wèn",
+              "meaning": "to ask",
+              "audio_text": "问"
+            }
+          ],
+          "find": {
+            "question": "Where does 门 sit in 问?",
+            "choices": [
+              "round the outside",
+              "on the left",
+              "underneath",
+              "on top"
+            ],
+            "correct": "round the outside"
+          },
+          "reveal": {
+            "category": "what happens at a door",
+            "note": "问 is a mouth inside a doorway — someone standing at the door, asking."
+          }
+        },
+        {
+          "radical": "⺮",
+          "name": "竹字头",
+          "pinyin": "zhú zì tóu",
+          "name_en": "the bamboo radical, sitting on top",
+          "audio_text": "竹字头",
+          "from": {
+            "character": "竹",
+            "pinyin": "zhú",
+            "meaning": "bamboo"
+          },
+          "hint": "竹 loses its stems, keeps its leaves, and lies flat across the roof — ⺮.",
+          "picture": "l20-p2-zhuzitou",
+          "characters": [
+            {
+              "character": "篮",
+              "pinyin": "lán",
+              "meaning": "a basket",
+              "audio_text": "篮"
+            }
+          ],
+          "find": {
+            "question": "Which part of 篮 is the radical?",
+            "choices": [
+              "⺮",
+              "监",
+              "门",
+              "衤"
+            ],
+            "correct": "⺮"
+          },
+          "reveal": {
+            "category": "things woven out of bamboo",
+            "note": "A basket, a box, a lantern — before plastic, these were all bamboo, so they all wear ⺮."
+          }
+        },
+        {
+          "radical": "衤",
+          "name": "衣字旁",
+          "pinyin": "yī zì páng",
+          "name_en": "the clothing radical",
+          "audio_text": "衣字旁",
+          "from": {
+            "character": "衣",
+            "pinyin": "yī",
+            "meaning": "clothing"
+          },
+          "hint": "衣 narrows to stand on the left and gains a dot — 衤. It is easy to confuse with 礻, which is not clothing at all.",
+          "characters": [
+            {
+              "character": "裤",
+              "pinyin": "kù",
+              "meaning": "trousers",
+              "audio_text": "裤"
+            },
+            {
+              "character": "裙",
+              "pinyin": "qún",
+              "meaning": "a skirt",
+              "audio_text": "裙"
+            }
+          ],
+          "find": {
+            "question": "Which part of 裙 is the radical?",
+            "choices": [
+              "衤",
+              "君",
+              "⺮",
+              "门"
+            ],
+            "correct": "衤"
+          },
+          "reveal": {
+            "category": "things you wear",
+            "note": "Trousers, a skirt, socks, sleeves — if a character wears 衤, so do you."
+          }
+        }
+      ],
+      "radical_audio": {
+        "门": {
+          "text": "门字框",
+          "pinyin": "mén zì kuàng"
+        },
+        "⺮": {
+          "text": "竹字头",
+          "pinyin": "zhú zì tóu"
+        },
+        "衤": {
+          "text": "衣字旁",
+          "pinyin": "yī zì páng"
+        }
+      },
+      "group": {
+        "question": "Which character does NOT wear 衤?",
+        "choices": [
+          "篮",
+          "裤",
+          "裙",
+          "袜"
+        ],
+        "correct": "篮",
+        "explain": "篮 wears ⺮ — it is made of bamboo, not cloth."
+      }
+    },
+    "part3_dialogue": {
+      "title": "Use",
+      "subtitle": "词语与情景对话 · Words and dialogue",
+      "characters": [
+        {
+          "character": "开",
+          "pinyin": "kāi",
+          "meaning": "to open",
+          "audio_text": "开"
+        },
+        {
+          "character": "关",
+          "pinyin": "guān",
+          "meaning": "to close",
+          "audio_text": "关"
+        }
+      ],
+      "words": [
+        {
+          "word": "开门",
+          "pinyin": "kāi mén",
+          "meaning": "to open the door",
+          "audio_text": "开门",
+          "built_from": "开 + 门"
+        },
+        {
+          "word": "关门",
+          "pinyin": "guān mén",
+          "meaning": "to close the door",
+          "audio_text": "关门",
+          "built_from": "关 + 门"
+        },
+        {
+          "word": "请问",
+          "pinyin": "qǐngwèn",
+          "meaning": "excuse me, may I ask",
+          "audio_text": "请问",
+          "built_from": "请 + 问"
+        },
+        {
+          "word": "篮球",
+          "pinyin": "lánqiú",
+          "meaning": "basketball",
+          "audio_text": "篮球",
+          "built_from": "篮 + 球"
+        },
+        {
+          "word": "篮子",
+          "pinyin": "lánzi",
+          "meaning": "a basket",
+          "audio_text": "篮子",
+          "built_from": "篮 + 子"
+        },
+        {
+          "word": "衣服",
+          "pinyin": "yīfu",
+          "meaning": "clothes",
+          "audio_text": "衣服",
+          "built_from": "衣 + 服"
+        },
+        {
+          "word": "裤子",
+          "pinyin": "kùzi",
+          "meaning": "trousers",
+          "audio_text": "裤子",
+          "built_from": "裤 + 子"
+        },
+        {
+          "word": "裙子",
+          "pinyin": "qúnzi",
+          "meaning": "a skirt",
+          "audio_text": "裙子",
+          "built_from": "裙 + 子"
+        }
+      ],
+      "support_words": [
+        {
+          "word": "请",
+          "pinyin": "qǐng",
+          "meaning": "please"
+        },
+        {
+          "word": "球",
+          "pinyin": "qiú",
+          "meaning": "a ball"
+        },
+        {
+          "word": "呢",
+          "pinyin": "ne",
+          "meaning": "and what about…?"
+        },
+        {
+          "word": "喜欢",
+          "pinyin": "xǐhuan",
+          "meaning": "to like"
+        },
+        {
+          "word": "两百五十",
+          "pinyin": "liǎng bǎi wǔshí",
+          "meaning": "two hundred and fifty"
+        },
+        {
+          "word": "两百",
+          "pinyin": "liǎng bǎi",
+          "meaning": "two hundred"
+        },
+        {
+          "word": "块钱",
+          "pinyin": "kuài qián",
+          "meaning": "yuan"
+        },
+        {
+          "word": "好",
+          "pinyin": "hǎo",
+          "meaning": "all right"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Whose clothes?",
+          "goal": "谁的 衣服",
+          "picture": "👕",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "这是谁的衣服？",
+              "pinyin": "Zhè shì shéi de yīfu?",
+              "meaning": "Whose clothes are these?",
+              "audio_text": "这是谁的衣服"
+            },
+            {
+              "speaker": "B",
+              "text": "这是我的衣服。",
+              "pinyin": "Zhè shì wǒ de yīfu.",
+              "meaning": "These are my clothes.",
+              "audio_text": "这是我的衣服"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "这是谁的衣服？",
+            "pinyin": "Zhè shì shéi de yīfu?",
+            "meaning": "Whose clothes are these?",
+            "audio_text": "这是谁的衣服"
+          },
+          "speak": {
+            "question": "Build it: these are my clothes.",
+            "tiles": [
+              "衣服",
+              "裙子",
+              "我的",
+              "这是"
+            ],
+            "answer": [
+              "这是",
+              "我的",
+              "衣服"
+            ],
+            "result": "这是我的衣服。",
+            "pinyin": "Zhè shì wǒ de yīfu."
+          }
+        },
+        {
+          "title": "How much?",
+          "goal": "请问 裙子 裤子 呢",
+          "picture": "l20-p5-modern",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "请问，裙子多少钱？",
+              "pinyin": "Qǐngwèn, qúnzi duōshao qián?",
+              "meaning": "Excuse me, how much is the skirt?",
+              "audio_text": "请问，裙子多少钱"
+            },
+            {
+              "speaker": "B",
+              "text": "裙子两百五十块钱。",
+              "pinyin": "Qúnzi liǎng bǎi wǔshí kuài qián.",
+              "meaning": "The skirt is 250 yuan.",
+              "audio_text": "裙子两百五十块钱"
+            },
+            {
+              "speaker": "A",
+              "text": "裤子呢？",
+              "pinyin": "Kùzi ne?",
+              "meaning": "And the trousers?",
+              "audio_text": "裤子呢"
+            },
+            {
+              "speaker": "B",
+              "text": "裤子两百块。",
+              "pinyin": "Kùzi liǎng bǎi kuài.",
+              "meaning": "The trousers are 200.",
+              "audio_text": "裤子两百块"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "请问，裙子多少钱？",
+            "pinyin": "Qǐngwèn, qúnzi duōshao qián?",
+            "meaning": "Excuse me, how much is the skirt?",
+            "audio_text": "请问，裙子多少钱"
+          },
+          "speak": {
+            "question": "Build it: excuse me, how much is the skirt?",
+            "tiles": [
+              "多少钱",
+              "裙子",
+              "裤子",
+              "请问"
+            ],
+            "answer": [
+              "请问",
+              "裙子",
+              "多少钱"
+            ],
+            "result": "请问，裙子多少钱？",
+            "pinyin": "Qǐngwèn, qúnzi duōshao qián?"
+          }
+        },
+        {
+          "title": "Basketball",
+          "goal": "喜欢 打篮球",
+          "picture": "🏀",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "我喜欢打篮球！",
+              "pinyin": "Wǒ xǐhuan dǎ lánqiú!",
+              "meaning": "I love playing basketball!",
+              "audio_text": "我喜欢打篮球"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我喜欢打篮球！",
+            "pinyin": "Wǒ xǐhuan dǎ lánqiú!",
+            "meaning": "I love playing basketball!",
+            "audio_text": "我喜欢打篮球"
+          },
+          "speak": {
+            "question": "Build it: I love playing basketball.",
+            "tiles": [
+              "篮球",
+              "篮子",
+              "打",
+              "我喜欢"
+            ],
+            "answer": [
+              "我喜欢",
+              "打",
+              "篮球"
+            ],
+            "result": "我喜欢打篮球！",
+            "pinyin": "Wǒ xǐhuan dǎ lánqiú!"
+          }
+        },
+        {
+          "title": "Open and shut",
+          "goal": "开门 关门",
+          "picture": "l20-p1-men",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "请开门。",
+              "pinyin": "Qǐng kāi mén.",
+              "meaning": "Please open the door.",
+              "audio_text": "请开门"
+            },
+            {
+              "speaker": "B",
+              "text": "好，我关门了。",
+              "pinyin": "Hǎo, wǒ guān mén le.",
+              "meaning": "All right, I have closed the door.",
+              "audio_text": "好，我关门了"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "请开门。",
+            "pinyin": "Qǐng kāi mén.",
+            "meaning": "Please open the door.",
+            "audio_text": "请开门"
+          },
+          "speak": {
+            "question": "Build it: please open the door.",
+            "tiles": [
+              "开门",
+              "关门",
+              "请"
+            ],
+            "answer": [
+              "请",
+              "开门"
+            ],
+            "result": "请开门。",
+            "pinyin": "Qǐng kāi mén."
+          }
+        }
+      ],
+      "read_aloud": {
+        "title": "Say them yourself",
+        "intro": "Listen, then read each one aloud.",
+        "items": [
+          {
+            "text": "请问",
+            "pinyin": "qǐngwèn",
+            "meaning": "excuse me, may I ask",
+            "audio_text": "请问"
+          },
+          {
+            "text": "衣服",
+            "pinyin": "yīfu",
+            "meaning": "clothes",
+            "audio_text": "衣服"
+          },
+          {
+            "text": "篮球",
+            "pinyin": "lánqiú",
+            "meaning": "basketball",
+            "audio_text": "篮球"
+          }
+        ]
+      }
+    },
+    "part4_write": {
+      "title": "Write",
+      "subtitle": "汉字书写 · Write every character in this lesson",
+      "characters": [
+        "门",
+        "衣",
+        "问",
+        "竹",
+        "裤",
+        "裙"
+      ]
+    },
+    "part5_culture": {
+      "title": "Discover Chinese",
+      "subtitle": "汉字探秘 · Culture and language insights",
+      "topic": "古人穿什么？",
+      "topic_en": "What did people wear?",
+      "picture": "l20-p5-dynasties",
+      "listen": {
+        "intro": "Three words you can wear. Tap each one.",
+        "items": [
+          {
+            "character": "衣",
+            "pinyin": "yī",
+            "meaning": "clothing",
+            "audio_text": "衣"
+          },
+          {
+            "character": "裤",
+            "pinyin": "kù",
+            "meaning": "trousers",
+            "audio_text": "裤"
+          },
+          {
+            "character": "裙",
+            "pinyin": "qún",
+            "meaning": "a skirt",
+            "audio_text": "裙"
+          }
+        ]
+      },
+      "notice": "古人穿裤子和裙子吗？ Did people in ancient China wear trousers and skirts?",
+      "discover": "They did — robes, skirts, trousers and jackets, in styles that changed with every dynasty. What has not changed is the character: 衣 is still drawn as a garment, collar and sleeves and all.",
+      "gallery": {
+        "title": "古人与现代人 · Then and now",
+        "intro": "The clothes changed. The character did not.",
+        "items": [
+          {
+            "character": "古人",
+            "pinyin": "gǔrén",
+            "meaning": "people long ago",
+            "audio_text": "古人",
+            "picture": "l20-p5-ancient"
+          },
+          {
+            "character": "现代人",
+            "pinyin": "xiàndàirén",
+            "meaning": "people today",
+            "audio_text": "现代人",
+            "picture": "l20-p5-modern"
+          }
+        ]
+      },
+      "forms": {
+        "title": "衣字的秘密 · The secret of 衣",
+        "intro": "Standing alone it is 衣. Standing on the left of another character it narrows and gains a dot.",
+        "picture": "l20-p5-yi-scripts",
+        "items": [
+          {
+            "character": "衣",
+            "label": "on its own",
+            "pinyin": "yī",
+            "audio_text": "衣",
+            "note": "clothing"
+          },
+          {
+            "character": "衤",
+            "label": "on the left",
+            "audio_text": "衣字旁",
+            "note": "衣字旁"
+          },
+          {
+            "character": "礻",
+            "label": "NOT this one",
+            "note": "a different radical entirely"
+          }
+        ]
+      },
+      "secrets": {
+        "title": "衣字旁的家族 · The clothing family",
+        "intro": "这些汉字有什么相同的地方？",
+        "items": [
+          {
+            "radical": "衤",
+            "name": "衣字旁",
+            "name_en": "Everything you put on",
+            "audio_text": "衣字旁",
+            "pinyin": "yī zì páng",
+            "chars": [
+              {
+                "character": "裤",
+                "pinyin": "kù",
+                "meaning": "trousers",
+                "audio_text": "裤"
+              },
+              {
+                "character": "裙",
+                "pinyin": "qún",
+                "meaning": "a skirt",
+                "audio_text": "裙"
+              },
+              {
+                "character": "袜",
+                "pinyin": "wà",
+                "meaning": "socks",
+                "audio_text": "袜"
+              },
+              {
+                "character": "袖",
+                "pinyin": "xiù",
+                "meaning": "a sleeve",
+                "audio_text": "袖"
+              },
+              {
+                "character": "衬",
+                "pinyin": "chèn",
+                "meaning": "a lining",
+                "audio_text": "衬"
+              },
+              {
+                "character": "被",
+                "pinyin": "bèi",
+                "meaning": "a quilt",
+                "audio_text": "被"
+              }
+            ],
+            "note": "它们都有衣字旁，很多都和衣服或布料有关。Cloth, or something made of it — right down to the quilt on the bed."
+          }
+        ]
+      },
+      "match": {
+        "title": "汉字小侦探 · Character detective",
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "👖",
+            "character": "裤"
+          },
+          {
+            "picture": "👗",
+            "character": "裙"
+          },
+          {
+            "picture": "🧦",
+            "character": "袜"
+          },
+          {
+            "picture": "👕",
+            "character": "袖"
+          }
+        ]
+      }
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "门",
+      "audio_text": "门",
+      "correct": "a door",
+      "choices": [
+        "a door",
+        "a skirt",
+        "to ask",
+        "a basket"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "门",
+      "correct": "门",
+      "choices": [
+        "裤",
+        "衣",
+        "开",
+        "门"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a door",
+      "correct": "门",
+      "choices": [
+        "裙",
+        "门",
+        "关",
+        "篮"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "门",
+      "audio_text": "门",
+      "correct": "mén",
+      "choices": [
+        "mén",
+        "lán",
+        "zhú",
+        "guān"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "mén",
+      "correct": "门",
+      "choices": [
+        "竹",
+        "关",
+        "门",
+        "篮"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "竹",
+      "audio_text": "竹",
+      "correct": "bamboo",
+      "choices": [
+        "trousers",
+        "to ask",
+        "bamboo",
+        "clothing"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "竹",
+      "correct": "竹",
+      "choices": [
+        "关",
+        "衣",
+        "竹",
+        "问"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "bamboo",
+      "correct": "竹",
+      "choices": [
+        "衣",
+        "竹",
+        "篮",
+        "裙"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "竹",
+      "audio_text": "竹",
+      "correct": "zhú",
+      "choices": [
+        "kù",
+        "kāi",
+        "zhú",
+        "lán"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zhú",
+      "correct": "竹",
+      "choices": [
+        "裙",
+        "关",
+        "门",
+        "竹"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "衣",
+      "audio_text": "衣",
+      "correct": "clothing",
+      "choices": [
+        "trousers",
+        "to close",
+        "clothing",
+        "a door"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "衣",
+      "correct": "衣",
+      "choices": [
+        "裤",
+        "关",
+        "篮",
+        "衣"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "clothing",
+      "correct": "衣",
+      "choices": [
+        "关",
+        "开",
+        "衣",
+        "问"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "衣",
+      "audio_text": "衣",
+      "correct": "yī",
+      "choices": [
+        "yī",
+        "qún",
+        "wèn",
+        "mén"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yī",
+      "correct": "衣",
+      "choices": [
+        "裙",
+        "问",
+        "开",
+        "衣"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "问",
+      "audio_text": "问",
+      "correct": "to ask",
+      "choices": [
+        "to close",
+        "a basket",
+        "to ask",
+        "trousers"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "问",
+      "correct": "问",
+      "choices": [
+        "裙",
+        "关",
+        "开",
+        "问"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to ask",
+      "correct": "问",
+      "choices": [
+        "问",
+        "门",
+        "衣",
+        "关"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "问",
+      "audio_text": "问",
+      "correct": "wèn",
+      "choices": [
+        "wèn",
+        "lán",
+        "guān",
+        "mén"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "wèn",
+      "correct": "问",
+      "choices": [
+        "竹",
+        "关",
+        "门",
+        "问"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "篮",
+      "audio_text": "篮",
+      "correct": "a basket",
+      "choices": [
+        "trousers",
+        "to open",
+        "a basket",
+        "bamboo"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "篮",
+      "correct": "篮",
+      "choices": [
+        "关",
+        "衣",
+        "裙",
+        "篮"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a basket",
+      "correct": "篮",
+      "choices": [
+        "裙",
+        "篮",
+        "关",
+        "开"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "篮",
+      "audio_text": "篮",
+      "correct": "lán",
+      "choices": [
+        "kù",
+        "lán",
+        "kāi",
+        "guān"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "lán",
+      "correct": "篮",
+      "choices": [
+        "篮",
+        "关",
+        "衣",
+        "门"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "裤",
+      "audio_text": "裤",
+      "correct": "trousers",
+      "choices": [
+        "a skirt",
+        "to open",
+        "clothing",
+        "trousers"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "裤",
+      "correct": "裤",
+      "choices": [
+        "关",
+        "篮",
+        "裤",
+        "衣"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "trousers",
+      "correct": "裤",
+      "choices": [
+        "裤",
+        "问",
+        "关",
+        "衣"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "裤",
+      "audio_text": "裤",
+      "correct": "kù",
+      "choices": [
+        "guān",
+        "kù",
+        "wèn",
+        "yī"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "kù",
+      "correct": "裤",
+      "choices": [
+        "关",
+        "裤",
+        "裙",
+        "篮"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "裙",
+      "audio_text": "裙",
+      "correct": "a skirt",
+      "choices": [
+        "a skirt",
+        "a basket",
+        "to ask",
+        "clothing"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "裙",
+      "correct": "裙",
+      "choices": [
+        "篮",
+        "问",
+        "衣",
+        "裙"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a skirt",
+      "correct": "裙",
+      "choices": [
+        "关",
+        "裙",
+        "篮",
+        "门"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "裙",
+      "audio_text": "裙",
+      "correct": "qún",
+      "choices": [
+        "kù",
+        "wèn",
+        "qún",
+        "yī"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "qún",
+      "correct": "裙",
+      "choices": [
+        "裤",
+        "裙",
+        "开",
+        "篮"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "开",
+      "audio_text": "开",
+      "correct": "to open",
+      "choices": [
+        "to open",
+        "clothing",
+        "trousers",
+        "a door"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "开",
+      "correct": "开",
+      "choices": [
+        "开",
+        "篮",
+        "裙",
+        "竹"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to open",
+      "correct": "开",
+      "choices": [
+        "篮",
+        "开",
+        "衣",
+        "问"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "开",
+      "audio_text": "开",
+      "correct": "kāi",
+      "choices": [
+        "zhú",
+        "kù",
+        "lán",
+        "kāi"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "kāi",
+      "correct": "开",
+      "choices": [
+        "开",
+        "关",
+        "篮",
+        "裙"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "关",
+      "audio_text": "关",
+      "correct": "to close",
+      "choices": [
+        "bamboo",
+        "to open",
+        "trousers",
+        "to close"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "关",
+      "correct": "关",
+      "choices": [
+        "关",
+        "篮",
+        "开",
+        "衣"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to close",
+      "correct": "关",
+      "choices": [
+        "问",
+        "裤",
+        "关",
+        "竹"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "关",
+      "audio_text": "关",
+      "correct": "guān",
+      "choices": [
+        "guān",
+        "yī",
+        "kù",
+        "lán"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "guān",
+      "correct": "关",
+      "choices": [
+        "竹",
+        "开",
+        "衣",
+        "关"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "问",
+      "audio_text": "问",
+      "correct": "门",
+      "choices": [
+        "车",
+        "⻊",
+        "纟",
+        "门"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "篮",
+      "audio_text": "篮",
+      "correct": "⺮",
+      "choices": [
+        "⺮",
+        "彳",
+        "囗",
+        "门"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "裤",
+      "audio_text": "裤",
+      "correct": "衤",
+      "choices": [
+        "衤",
+        "宀",
+        "⺮",
+        "阝"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "裙",
+      "audio_text": "裙",
+      "correct": "衤",
+      "choices": [
+        "衤",
+        "车",
+        "山",
+        "彳"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "开门",
+      "audio_text": "开门",
+      "correct": "to open the door",
+      "choices": [
+        "to open the door",
+        "a skirt",
+        "to close the door",
+        "clothes"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "开门",
+      "correct": "开门",
+      "choices": [
+        "篮球",
+        "关门",
+        "请问",
+        "开门"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "关门",
+      "audio_text": "关门",
+      "correct": "to close the door",
+      "choices": [
+        "to close the door",
+        "a basket",
+        "to open the door",
+        "excuse me, may I ask"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "关门",
+      "correct": "关门",
+      "choices": [
+        "裤子",
+        "关门",
+        "开门",
+        "篮球"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "请问",
+      "audio_text": "请问",
+      "correct": "excuse me, may I ask",
+      "choices": [
+        "to close the door",
+        "excuse me, may I ask",
+        "a basket",
+        "to open the door"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "请问",
+      "correct": "请问",
+      "choices": [
+        "请问",
+        "开门",
+        "关门",
+        "衣服"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "篮球",
+      "audio_text": "篮球",
+      "correct": "basketball",
+      "choices": [
+        "to open the door",
+        "trousers",
+        "basketball",
+        "a basket"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "篮球",
+      "correct": "篮球",
+      "choices": [
+        "请问",
+        "篮球",
+        "裙子",
+        "衣服"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "篮子",
+      "audio_text": "篮子",
+      "correct": "a basket",
+      "choices": [
+        "excuse me, may I ask",
+        "trousers",
+        "a basket",
+        "to close the door"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "篮子",
+      "correct": "篮子",
+      "choices": [
+        "篮子",
+        "关门",
+        "衣服",
+        "篮球"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "衣服",
+      "audio_text": "衣服",
+      "correct": "clothes",
+      "choices": [
+        "trousers",
+        "excuse me, may I ask",
+        "to open the door",
+        "clothes"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "衣服",
+      "correct": "衣服",
+      "choices": [
+        "裙子",
+        "开门",
+        "衣服",
+        "请问"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "裤子",
+      "audio_text": "裤子",
+      "correct": "trousers",
+      "choices": [
+        "a basket",
+        "to close the door",
+        "trousers",
+        "excuse me, may I ask"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "裤子",
+      "correct": "裤子",
+      "choices": [
+        "开门",
+        "裤子",
+        "请问",
+        "篮子"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "裙子",
+      "audio_text": "裙子",
+      "correct": "a skirt",
+      "choices": [
+        "a skirt",
+        "clothes",
+        "to open the door",
+        "basketball"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "裙子",
+      "correct": "裙子",
+      "choices": [
+        "裤子",
+        "裙子",
+        "篮球",
+        "篮子"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "门",
+          "pinyin": "mén",
+          "english": "a door"
+        },
+        {
+          "id": 2,
+          "chinese": "竹",
+          "pinyin": "zhú",
+          "english": "bamboo"
+        },
+        {
+          "id": 3,
+          "chinese": "衣",
+          "pinyin": "yī",
+          "english": "clothing"
+        },
+        {
+          "id": 4,
+          "chinese": "问",
+          "pinyin": "wèn",
+          "english": "to ask"
+        },
+        {
+          "id": 5,
+          "chinese": "篮",
+          "pinyin": "lán",
+          "english": "a basket"
+        }
+      ],
+      "correct": "char:门竹衣问篮",
+      "choices": [
+        "a door",
+        "bamboo",
+        "clothing",
+        "to ask",
+        "a basket"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "裤",
+          "pinyin": "kù",
+          "english": "trousers"
+        },
+        {
+          "id": 2,
+          "chinese": "裙",
+          "pinyin": "qún",
+          "english": "a skirt"
+        },
+        {
+          "id": 3,
+          "chinese": "开",
+          "pinyin": "kāi",
+          "english": "to open"
+        },
+        {
+          "id": 4,
+          "chinese": "关",
+          "pinyin": "guān",
+          "english": "to close"
+        },
+        {
+          "id": 5,
+          "chinese": "问",
+          "pinyin": "wèn",
+          "english": "to ask"
+        }
+      ],
+      "correct": "char:裤裙开关问",
+      "choices": [
+        "trousers",
+        "a skirt",
+        "to open",
+        "to close",
+        "to ask"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "开门",
+          "pinyin": "kāi mén",
+          "english": "to open the door"
+        },
+        {
+          "id": 2,
+          "chinese": "关门",
+          "pinyin": "guān mén",
+          "english": "to close the door"
+        },
+        {
+          "id": 3,
+          "chinese": "请问",
+          "pinyin": "qǐngwèn",
+          "english": "excuse me, may I ask"
+        },
+        {
+          "id": 4,
+          "chinese": "篮球",
+          "pinyin": "lánqiú",
+          "english": "basketball"
+        },
+        {
+          "id": 5,
+          "chinese": "篮子",
+          "pinyin": "lánzi",
+          "english": "a basket"
+        }
+      ],
+      "correct": "word:开门关门请问篮球篮子",
+      "choices": [
+        "to open the door",
+        "to close the door",
+        "excuse me, may I ask",
+        "basketball",
+        "a basket"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "衣服",
+          "pinyin": "yīfu",
+          "english": "clothes"
+        },
+        {
+          "id": 2,
+          "chinese": "裤子",
+          "pinyin": "kùzi",
+          "english": "trousers"
+        },
+        {
+          "id": 3,
+          "chinese": "裙子",
+          "pinyin": "qúnzi",
+          "english": "a skirt"
+        },
+        {
+          "id": 4,
+          "chinese": "开门",
+          "pinyin": "kāi mén",
+          "english": "to open the door"
+        },
+        {
+          "id": 5,
+          "chinese": "请问",
+          "pinyin": "qǐngwèn",
+          "english": "excuse me, may I ask"
+        }
+      ],
+      "correct": "word:衣服裤子裙子开门请问",
+      "choices": [
+        "clothes",
+        "trousers",
+        "a skirt",
+        "to open the door",
+        "excuse me, may I ask"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "开",
+        null
+      ],
+      "correct": "门",
+      "choices": [
+        "问",
+        "竹",
+        "衣",
+        "门"
+      ],
+      "result_word": "开门",
+      "result_pinyin": "kāi mén",
+      "result_meaning": "to open the door",
+      "audio_text": "开门"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "篮",
+        null
+      ],
+      "correct": "球",
+      "choices": [
+        "子",
+        "门",
+        "球",
+        "衣"
+      ],
+      "result_word": "篮球",
+      "result_pinyin": "lánqiú",
+      "result_meaning": "basketball",
+      "audio_text": "篮球"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "裤",
+        null
+      ],
+      "correct": "子",
+      "choices": [
+        "子",
+        "服",
+        "球",
+        "门"
+      ],
+      "result_word": "裤子",
+      "result_pinyin": "kùzi",
+      "result_meaning": "trousers",
+      "audio_text": "裤子"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "衣",
+        null
+      ],
+      "correct": "服",
+      "choices": [
+        "子",
+        "球",
+        "门",
+        "服"
+      ],
+      "result_word": "衣服",
+      "result_pinyin": "yīfu",
+      "result_meaning": "clothes",
+      "audio_text": "衣服"
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "These are my clothes.",
+      "tiles": [
+        "衣服",
+        "裙子",
+        "我的",
+        "这是"
+      ],
+      "answer": [
+        "这是",
+        "我的",
+        "衣服"
+      ],
+      "result": "这是我的衣服。",
+      "pinyin": "Zhè shì wǒ de yīfu.",
+      "correct": "这是我的衣服",
+      "choices": [
+        "这是我的衣服"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "Please open the door.",
+      "tiles": [
+        "开门",
+        "关门",
+        "请"
+      ],
+      "answer": [
+        "请",
+        "开门"
+      ],
+      "result": "请开门。",
+      "pinyin": "Qǐng kāi mén.",
+      "correct": "请开门",
+      "choices": [
+        "请开门"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I love playing basketball.",
+      "tiles": [
+        "篮球",
+        "篮子",
+        "打",
+        "我喜欢"
+      ],
+      "answer": [
+        "我喜欢",
+        "打",
+        "篮球"
+      ],
+      "result": "我喜欢打篮球！",
+      "pinyin": "Wǒ xǐhuan dǎ lánqiú!",
+      "correct": "我喜欢打篮球",
+      "choices": [
+        "我喜欢打篮球"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "Excuse me, how much is the skirt?",
+      "tiles": [
+        "多少钱",
+        "裙子",
+        "裤子",
+        "请问"
+      ],
+      "answer": [
+        "请问",
+        "裙子",
+        "多少钱"
+      ],
+      "result": "请问，裙子多少钱？",
+      "pinyin": "Qǐngwèn, qúnzi duōshao qián?",
+      "correct": "请问裙子多少钱",
+      "choices": [
+        "请问裙子多少钱"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "请问，裙子多少钱？",
+      "audio_text": "请问，裙子多少钱",
+      "pinyin": "Qǐngwèn, qúnzi duōshao qián?",
+      "meaning": "Excuse me, how much is the skirt?",
+      "correct": "请问，裙子多少钱？",
+      "choices": [
+        "请问，裙子多少钱？"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "这是谁的衣服？",
+      "audio_text": "这是谁的衣服",
+      "pinyin": "Zhè shì shéi de yīfu?",
+      "meaning": "Whose clothes are these?",
+      "correct": "这是谁的衣服？",
+      "choices": [
+        "这是谁的衣服？"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "篮子",
+      "audio_text": "篮子",
+      "pinyin": "lánzi",
+      "meaning": "a basket",
+      "correct": "篮子",
+      "choices": [
+        "篮子"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "篮球",
+      "audio_text": "篮球",
+      "pinyin": "lánqiú",
+      "meaning": "basketball",
+      "correct": "篮球",
+      "choices": [
+        "篮球"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "裤子",
+      "audio_text": "裤子",
+      "pinyin": "kùzi",
+      "meaning": "trousers",
+      "correct": "裤子",
+      "choices": [
+        "裤子"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "衣服",
+      "audio_text": "衣服",
+      "pinyin": "yīfu",
+      "meaning": "clothes",
+      "correct": "衣服",
+      "choices": [
+        "衣服"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我喜欢打篮球！",
+      "audio_text": "我喜欢打篮球",
+      "pinyin": "Wǒ xǐhuan dǎ lánqiú!",
+      "meaning": "I love playing basketball!",
+      "correct": "我喜欢打篮球！",
+      "choices": [
+        "我喜欢打篮球！"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "开门",
+      "audio_text": "开门",
+      "pinyin": "kāi mén",
+      "meaning": "to open the door",
+      "correct": "开门",
+      "choices": [
+        "开门"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "请开门。",
+      "audio_text": "请开门",
+      "pinyin": "Qǐng kāi mén.",
+      "meaning": "Please open the door.",
+      "correct": "请开门。",
+      "choices": [
+        "请开门。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "裙子",
+      "audio_text": "裙子",
+      "pinyin": "qúnzi",
+      "meaning": "a skirt",
+      "correct": "裙子",
+      "choices": [
+        "裙子"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "请问",
+      "audio_text": "请问",
+      "pinyin": "qǐngwèn",
+      "meaning": "excuse me, may I ask",
+      "correct": "请问",
+      "choices": [
+        "请问"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "关门",
+      "audio_text": "关门",
+      "pinyin": "guān mén",
+      "meaning": "to close the door",
+      "correct": "关门",
+      "choices": [
+        "关门"
+      ]
+    }
+  ]
+}

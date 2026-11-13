@@ -10,7 +10,9 @@ const STT_URL = `https://speech.googleapis.com/v1/speech:recognize?key=${GOOGLE_
 // iOS  → LINEAR16 PCM (.caf) → STT encoding: LINEAR16
 // Android → AMR-WB (.amr)    → STT encoding: AMR_WB
 const RECORDING_OPTIONS = {
-  isMeteringEnabled: false,
+  // On, so a recording can hear its own silence and stop itself — see
+  // watchSilence below. Metering costs nothing when nobody reads it.
+  isMeteringEnabled: true,
   android: {
     extension: '.amr',
     outputFormat: Audio.AndroidOutputFormat.AMR_WB,
@@ -52,6 +54,78 @@ export async function startRecording() {
 
   const { recording } = await Audio.Recording.createAsync(RECORDING_OPTIONS);
   return recording;
+}
+
+/**
+ * Stop a recording that has gone quiet.
+ *
+ * Calls `onSilence` once the microphone has stayed at room level for
+ * `silenceMs` without a break. The Stop button is untouched — this only
+ * covers tapping Record and then saying nothing, or walking away mid-answer.
+ *
+ * The level is measured against the room, not against a fixed number. A
+ * first pass of `calibrateMs` listens to the room as it sounds before anyone
+ * speaks, and only something `speechMargin` dB above that counts as a voice.
+ * A fixed threshold does not work: expo-av meters from -160 dB (true silence)
+ * to 0 dB, and an ordinary quiet room already sits near -40, so anything
+ * absolute is either never reached or tripped constantly.
+ *
+ * If the platform reports no metering, this never fires. Cutting a recording
+ * short because we cannot hear it would be worse than letting it run.
+ *
+ * Returns a cancel function; call it when the recording stops for any other
+ * reason.
+ */
+export function watchSilence(recording, onSilence, opts = {}) {
+  const {
+    silenceMs    = 5000,   // how long the room has to stay quiet
+    pollMs       = 200,
+    calibrateMs  = 700,    // how long we listen before judging anything
+    speechMargin = 10,     // dB above the room that counts as speech
+    quietestRoom = -50,    // do not treat a silent booth as the bar to beat
+  } = opts;
+
+  const startedAt = Date.now();
+  const samples = [];
+  let roomLevel = null;
+  let lastSound = Date.now();
+  let done = false;
+  const cancel = () => { done = true; clearInterval(timer); };
+
+  const timer = setInterval(async () => {
+    if (done) return;
+    let level = null;
+    try {
+      const status = await recording.getStatusAsync();
+      if (!status?.isRecording) return;
+      level = typeof status.metering === 'number' ? status.metering : null;
+    } catch {
+      cancel();           // the recording went away under us
+      return;
+    }
+    if (level == null) return;              // no meter here; never auto-stop
+
+    const now = Date.now();
+
+    if (roomLevel == null) {
+      samples.push(level);
+      if (now - startedAt < calibrateMs) return;
+      const mean = samples.reduce((a, b) => a + b, 0) / samples.length;
+      roomLevel = Math.max(quietestRoom, mean);
+      lastSound = now;                      // the clock starts after calibration
+      if (__DEV__) {
+        console.log(`[watchSilence] room ${roomLevel.toFixed(1)} dB · ` +
+          `speech above ${(roomLevel + speechMargin).toFixed(1)} dB · ` +
+          `stops after ${silenceMs / 1000}s quiet`);
+      }
+      return;
+    }
+
+    if (level > roomLevel + speechMargin) { lastSound = now; return; }
+    if (now - lastSound >= silenceMs) { cancel(); onSilence(); }
+  }, pollMs);
+
+  return cancel;
 }
 
 // ── Pinyin conversion ────────────────────────────────────────────────────

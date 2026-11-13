@@ -6,7 +6,7 @@ import { speakPinyin } from '../utils/tts';
 import PinyinLessonExercise from '../components/exercises/PinyinLessonExercise';
 import PinyinRecordExercise from '../components/exercises/PinyinRecordExercise';
 import { buildStage1, buildStage2, buildStage3, buildStage4 } from '../utils/pinyinLessonGenerator';
-import { startRecording, stopAndTranscribe, calculateAccuracy } from '../utils/speechRecognition';
+import { startRecording, stopAndTranscribe, calculateAccuracy, watchSilence } from '../utils/speechRecognition';
 import ScreenBackground from '../components/ScreenBackground';
 import AvatarCharacter from '../components/AvatarCharacter';
 import { getAvatar } from '../config/avatarConfig';
@@ -77,8 +77,13 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
     else setCurrent(next);
   };
 
+  // Cancels the auto-stop watcher, and lets it reach the current handler.
+  const silenceRef = useRef(null);
+  const handleSpeakRecordRef = useRef(null);
+
   const handleSpeakRecord = async () => {
     if (speakIsRecording) {
+      silenceRef.current?.(); silenceRef.current = null;
       setSpeakIsRecording(false);
       setSpeakIsProcessing(true);
       try {
@@ -99,11 +104,15 @@ export default function PinyinStageScreen({ lessonData, stageIndex, onComplete, 
         const rec = await startRecording();
         setSpeakRec(rec);
         setSpeakIsRecording(true);
+        // Five seconds of nothing and it stops itself; Stop still works.
+        silenceRef.current = watchSilence(rec, () => handleSpeakRecordRef.current?.());
       } catch (e) {
         console.warn('Microphone error:', e);
       }
     }
   };
+
+  handleSpeakRecordRef.current = handleSpeakRecord;
 
   const handleSpeakTryAgain = () => {
     setSpeakResult(null);

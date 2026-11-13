@@ -152,6 +152,12 @@ const LESSON_IMAGES = {
   'l18-p1-guo': require('./lesson_images/l18/l18-p1-guo.png'),
   'l18-p1-jia': require('./lesson_images/l18/l18-p1-jia.png'),
 
+  // Part 3 · one per dialogue
+  'l18-p3-have-you':      require('./lesson_images/l18/l18-p3-have-you.jpg'),
+  'l18-p3-gardens':       require('./lesson_images/l18/l18-p3-gardens.jpeg'),
+  'l18-p3-go-home':       require('./lesson_images/l18/l18-p3-go-home.jpg'),
+  'l18-p3-which-country': require('./lesson_images/l18/l18-p3-which-country.jpg'),
+
   'l18-p5-city-gate':      require('./lesson_images/l18/l18-p5-city-gate.jpeg'),
   'l18-p5-city-plan':      require('./lesson_images/l18/l18-p5-city-plan.jpeg'),
   'l18-p5-courtyard':      require('./lesson_images/l18/l18-p5-courtyard.jpeg'),
@@ -162,6 +168,10 @@ const LESSON_IMAGES = {
   'l19-p1-si':   require('./lesson_images/l19/l19-p1-si.png'),
   'l19-p1-che':  require('./lesson_images/l19/l19-p1-che.png'),
 
+  // Part 3 · two of the four dialogues
+  'l19-p3-dog-or-cat': require('./lesson_images/l19/l19-p3-dog-or-cat.jpg'),
+  'l19-p3-traffic':    require('./lesson_images/l19/l19-p3-traffic.jpeg'),
+
   // Part 5 · cocoon to cloth
   'l19-p5-cocoons':    require('./lesson_images/l19/l19-p5-cocoons.jpeg'),
   'l19-p5-reeling':    require('./lesson_images/l19/l19-p5-reeling.jpeg'),
@@ -169,6 +179,18 @@ const LESSON_IMAGES = {
   'l19-p5-spools':     require('./lesson_images/l19/l19-p5-spools.jpeg'),
   'l19-p5-weaving':    require('./lesson_images/l19/l19-p5-weaving.jpeg'),
   'l19-p5-silk-cloth': require('./lesson_images/l19/l19-p5-silk-cloth.jpeg'),
+
+  // ── Lesson 20 · 门 竹 衣, and what people wore ───────────────────────────
+  'l20-p1-men': require('./lesson_images/l20/l20-p1-men.png'),
+  'l20-p1-zhu': require('./lesson_images/l20/l20-p1-zhu.png'),
+  'l20-p1-yi':  require('./lesson_images/l20/l20-p1-yi.png'),
+
+  'l20-p2-zhuzitou': require('./lesson_images/l20/l20-p2-zhuzitou.jpg'),
+
+  'l20-p5-dynasties':  require('./lesson_images/l20/l20-p5-dynasties.jpeg'),
+  'l20-p5-ancient':    require('./lesson_images/l20/l20-p5-ancient.jpeg'),
+  'l20-p5-modern':     require('./lesson_images/l20/l20-p5-modern.jpeg'),
+  'l20-p5-yi-scripts': require('./lesson_images/l20/l20-p5-yi-scripts.jpeg'),
 };
 
 /** The asset for a key, or null when there is no artwork for it yet. */

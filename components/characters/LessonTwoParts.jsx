@@ -22,7 +22,7 @@ import StrokeAnimator from './StrokeAnimator';
 import { getLessonImage } from '../../data/characters/lessonImages';
 import { GlossSentence, Underlined } from './Gloss';
 import { speakChinese } from '../../utils/tts';
-import { startRecording, stopAndTranscribe, calculateAccuracy } from '../../utils/speechRecognition';
+import { startRecording, stopAndTranscribe, calculateAccuracy, watchSilence } from '../../utils/speechRecognition';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../../constants/colors';
 
 const ART = 160;
@@ -442,6 +442,7 @@ export function ReadAloud({ item, onBusy }) {
   const [phase, setPhase] = useState('idle');   // idle · recording · processing · result
   const [accuracy, setAccuracy] = useState(null);
   const recordingRef = useRef(null);
+  const silenceRef = useRef(null);          // cancels the auto-stop watcher
 
   const target = item.text;
 
@@ -455,6 +456,7 @@ export function ReadAloud({ item, onBusy }) {
   // hand the microphone back, or nothing can record again.
   useEffect(() => () => {
     onBusy?.(false);
+    silenceRef.current?.(); silenceRef.current = null;
     const rec = recordingRef.current;
     recordingRef.current = null;
     if (rec) rec.stopAndUnloadAsync?.().catch(() => {});
@@ -464,6 +466,8 @@ export function ReadAloud({ item, onBusy }) {
     try {
       recordingRef.current = await startRecording();
       setPhase('recording');
+      // Five seconds of nothing and it stops itself. The Stop button stays.
+      silenceRef.current = watchSilence(recordingRef.current, () => finish());
     } catch (e) {
       console.log('[ReadAloud] could not start recording:', e?.message);
       setPhase('idle');
@@ -471,6 +475,7 @@ export function ReadAloud({ item, onBusy }) {
   };
 
   const finish = async () => {
+    silenceRef.current?.(); silenceRef.current = null;
     setPhase('processing');
     try {
       const transcript = await stopAndTranscribe(recordingRef.current, target);
@@ -940,7 +945,7 @@ export function CultureCard({ item }) {
                   >
                     {c.emoji ? <Text style={s.carryEmoji}>{c.emoji}</Text> : null}
                     <Text style={s.carryCn}>{c.character}</Text>
-                    <Text style={s.carryPy}>{c.pinyin}</Text>
+                    {c.pinyin ? <Text style={s.carryPy}>{c.pinyin}</Text> : null}
                     <Text style={s.carryEn}>{c.meaning}</Text>
                   </TouchableOpacity>
                 ))}
@@ -1057,7 +1062,7 @@ export function CultureCard({ item }) {
           {item.try.items.map((x, i) => (
             <View key={i} style={s.tryBox}>
               <Text style={s.tryCn}>{x.sentence}</Text>
-              <Text style={s.tryPy}>{x.pinyin}</Text>
+              {x.pinyin ? <Text style={s.tryPy}>{x.pinyin}</Text> : null}
               <Text style={s.tryEn}>{x.meaning}</Text>
               <Choices
                 choices={x.choices}
