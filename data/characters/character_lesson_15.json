@@ -123,19 +123,22 @@
               "character": "明",
               "pinyin": "míng",
               "meaning": "bright",
-              "audio_text": "明"
+              "audio_text": "明",
+              "emoji": "💡"
             },
             {
               "character": "昨",
               "pinyin": "zuó",
               "meaning": "yesterday",
-              "audio_text": "昨"
+              "audio_text": "昨",
+              "picture": "l15-p2-zuo"
             },
             {
               "character": "早",
               "pinyin": "zǎo",
               "meaning": "early",
-              "audio_text": "早"
+              "audio_text": "早",
+              "emoji": "🌅"
             }
           ],
           "find": {
@@ -211,7 +214,8 @@
               "character": "雪",
               "pinyin": "xuě",
               "meaning": "snow",
-              "audio_text": "雪"
+              "audio_text": "雪",
+              "emoji": "❄️"
             }
           ],
           "find": {
@@ -275,67 +279,76 @@
       ],
       "words": [
         {
+          "word": "今天",
+          "pinyin": "jīntiān",
+          "meaning": "today",
+          "audio_text": "今天",
+          "built_from": "今 + 天",
+          "picture": "l15-p3-jintian"
+        },
+        {
           "word": "明天",
           "pinyin": "míngtiān",
           "meaning": "tomorrow",
           "audio_text": "明天",
-          "built_from": "明 + 天"
+          "built_from": "明 + 天",
+          "picture": "l15-p3-mingtian"
         },
         {
           "word": "昨天",
           "pinyin": "zuótiān",
           "meaning": "yesterday",
           "audio_text": "昨天",
-          "built_from": "昨 + 天"
-        },
-        {
-          "word": "今天",
-          "pinyin": "jīntiān",
-          "meaning": "today",
-          "audio_text": "今天",
-          "built_from": "今 + 天"
+          "built_from": "昨 + 天",
+          "picture": "l15-p3-zuotian"
         },
         {
           "word": "月亮",
           "pinyin": "yuèliang",
           "meaning": "the moon",
           "audio_text": "月亮",
-          "built_from": "月 + 亮"
+          "built_from": "月 + 亮",
+          "emoji": "🌙"
         },
         {
           "word": "早上好",
           "pinyin": "zǎoshang hǎo",
           "meaning": "good morning",
           "audio_text": "早上好",
-          "built_from": "早上 + 好"
+          "built_from": "早上 + 好",
+          "emoji": "🌅"
         },
         {
           "word": "下雨",
           "pinyin": "xià yǔ",
           "meaning": "to rain",
           "audio_text": "下雨",
-          "built_from": "下 + 雨"
+          "built_from": "下 + 雨",
+          "emoji": "🌧️"
         },
         {
           "word": "雨水",
           "pinyin": "yǔshuǐ",
           "meaning": "rainwater",
           "audio_text": "雨水",
-          "built_from": "雨 + 水"
+          "built_from": "雨 + 水",
+          "emoji": "💧"
         },
         {
           "word": "下雪",
           "pinyin": "xià xuě",
           "meaning": "to snow",
           "audio_text": "下雪",
-          "built_from": "下 + 雪"
+          "built_from": "下 + 雪",
+          "emoji": "🌨️"
         },
         {
           "word": "脸上",
           "pinyin": "liǎn shang",
           "meaning": "on the face",
           "audio_text": "脸上",
-          "built_from": "脸 + 上"
+          "built_from": "脸 + 上",
+          "emoji": "😊"
         }
       ],
       "support_words": [
@@ -379,7 +392,7 @@
         {
           "title": "Good morning",
           "goal": "早上好 老师",
-          "picture": "🌅",
+          "picture": "l15-p3-good-morning",
           "lines": [
             {
               "speaker": "A",
@@ -421,7 +434,18 @@
         {
           "title": "Rain and snow",
           "goal": "昨天 今天 下雨 下雪",
-          "picture": "🌧️",
+          "pictures": [
+            {
+              "picture": "l15-p3-xiayu",
+              "label": "下雨",
+              "caption": "xià yǔ"
+            },
+            {
+              "picture": "l15-p3-xiaxue",
+              "label": "下雪",
+              "caption": "xià xuě"
+            }
+          ],
           "lines": [
             {
               "speaker": "A",
@@ -463,7 +487,7 @@
         {
           "title": "On your face",
           "goal": "脸上 有 雨水",
-          "picture": "💧",
+          "picture": "l15-p3-on-your-face",
           "lines": [
             {
               "speaker": "A",
@@ -502,7 +526,7 @@
         {
           "title": "Did it rain?",
           "goal": "下雨了吗 没有",
-          "picture": "☔",
+          "picture": "l15-p3-xiayu",
           "lines": [
             {
               "speaker": "A",

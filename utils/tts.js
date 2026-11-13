@@ -22,6 +22,9 @@ const PHONEME_OVERRIDES = {
   '没': 'mei2',
   // 说 — Google TTS zh-CN misreads this as shui4; force shuō (tone 1)
   '说': 'shuo1',
+  // 呢 is ní only in 呢子 (wool). As a sentence-final particle it is ne,
+  // which is the only way this course uses it — 裤子呢？
+  '呢': 'ne5',
   // Note: 背 is polyphonic (bēi = carry on back, bèi = background/memorize)
   // and handled per-compound in COMPOUND_PHONEME_OVERRIDES below.
   // Note: 还 is NOT here — it is polyphonic (hái vs huán) and handled

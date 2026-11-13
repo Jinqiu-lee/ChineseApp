@@ -21,6 +21,7 @@ import {
 import StrokeAnimator from './StrokeAnimator';
 import { getLessonImage } from '../../data/characters/lessonImages';
 import { GlossSentence, Underlined } from './Gloss';
+import MatchPairsExercise from '../exercises/MatchPairsExercise';
 import { speakChinese } from '../../utils/tts';
 import { startRecording, stopAndTranscribe, calculateAccuracy, watchSilence } from '../../utils/speechRecognition';
 import { DEEP_NAVY, WARM_ORANGE, SLATE_TEAL, WARM_BROWN, CARD_WHITE, SUCCESS } from '../../constants/colors';
@@ -97,6 +98,25 @@ function Feedback({ picked, correct, explain }) {
 // character — tapping 灬 or 氵 made the voice read it as something it is not —
 // so a question can map each shape to its spoken name, and anything with no
 // entry stays silent rather than saying the wrong thing.
+/**
+ * A small icon in a fixed box: an emoji if that is what the data carries, a
+ * photograph if it carries an image key. Both land at the same size, so a
+ * row can mix the two without one towering over the other.
+ */
+function Pictogram({ value, size }) {
+  const asset = getLessonImage(value);
+  if (asset) {
+    return (
+      <Image
+        source={asset}
+        style={{ width: size, height: size, borderRadius: 6 }}
+        resizeMode="contain"
+      />
+    );
+  }
+  return <Text style={{ fontSize: size, lineHeight: Math.round(size * 1.2) }}>{value}</Text>;
+}
+
 function say(c, audioFor) {
   const a = audioFor ? audioFor(c) : { text: c };
   if (a) speakChinese(a.text, 'female', a.pinyin);
@@ -249,7 +269,7 @@ export function BlockCard({ item }) {
 }
 
 // The round-up at the end of Part 1: every picture against every character.
-export function MatchCard({ item, compact = false }) {
+export function MatchCard({ item }) {
   const [picked, setPicked] = useState({});
   // Rows and answers both came out in data order, so row 1's answer was always
   // the first button and the card could be solved straight down the diagonal
@@ -274,8 +294,6 @@ export function MatchCard({ item, compact = false }) {
                 correct={pair.character}
                 picked={got ?? null}
                 onPick={(c) => setPicked(p => ({ ...p, [pair.picture]: c }))}
-                textStyle={compact ? s.choiceTextSmall : null}
-                choiceStyle={compact ? s.choiceTight : null}
                 big
               />
             </View>
@@ -366,8 +384,11 @@ export function ComponentCard({ item, radicalAudio }) {
               onPress={() => speakChinese(c.audio_text || c.character, 'female', c.pinyin)}
               activeOpacity={0.8}
             >
+              {(c.picture || c.emoji)
+                      ? <Pictogram value={c.picture || c.emoji} size={22} />
+                      : null}
               <Text style={s.carryCn}>{c.character}</Text>
-              <Text style={s.carryPy}>{c.pinyin}</Text>
+              {c.pinyin ? <Text style={s.carryPy}>{c.pinyin}</Text> : null}
               <Text style={s.carryEn}>{c.meaning}</Text>
             </TouchableOpacity>
           ))}
@@ -556,6 +577,9 @@ export function CharacterIntroCard({ item }) {
       activeOpacity={0.8}
     >
       <StrokeAnimator char={item.character} size={64} loop colored />
+      {(item.picture || item.emoji)
+        ? <Pictogram value={item.picture || item.emoji} size={34} />
+        : null}
       <View style={{ flex: 1 }}>
         <Text style={s.charIntroCn}>{item.character}</Text>
         <Text style={s.charIntroPy}>{item.pinyin}</Text>
@@ -574,6 +598,9 @@ export function WordCard({ item }) {
       onPress={() => speakChinese(item.audio_text || item.word, 'female', item.pinyin)}
       activeOpacity={0.8}
     >
+      {(item.picture || item.emoji)
+        ? <View style={s.wordIcon}><Pictogram value={item.picture || item.emoji} size={30} /></View>
+        : null}
       <View style={{ flex: 1 }}>
         <Text style={s.wordCn}>{item.word}</Text>
         <Text style={s.wordPy}>{item.pinyin}</Text>
@@ -943,7 +970,9 @@ export function CultureCard({ item }) {
                     onPress={() => speakChinese(c.audio_text || c.character, 'female', c.pinyin)}
                     activeOpacity={0.8}
                   >
-                    {c.emoji ? <Text style={s.carryEmoji}>{c.emoji}</Text> : null}
+                    {(c.picture || c.emoji)
+                      ? <Pictogram value={c.picture || c.emoji} size={22} />
+                      : null}
                     <Text style={s.carryCn}>{c.character}</Text>
                     {c.pinyin ? <Text style={s.carryPy}>{c.pinyin}</Text> : null}
                     <Text style={s.carryEn}>{c.meaning}</Text>
@@ -1044,11 +1073,23 @@ export function CultureCard({ item }) {
         </View>
       )}
 
-      {/* Picture → character, the same card Part 1 ends with. */}
+      {/* A true matching: one set of characters against one set of pictures,
+          each used once. The Part 1 card asks the same question four times
+          with every answer on offer each time, which is not the same thing. */}
       {item.match && (
         <View style={{ gap: 10 }}>
           <Text style={s.stepLabel}>{no('match')} · {item.match.title || 'Match them up'}</Text>
-          <MatchCard item={item.match} compact />
+          {item.match.question ? <Text style={s.body}>{item.match.question}</Text> : null}
+          {/* The exercise fills its parent, so the parent needs a height. */}
+          <View style={{ minHeight: item.match.pairs.length * 74 + 100 }}>
+            <MatchPairsExercise
+              exercise={{ pairs: item.match.pairs.map((p, i) => ({
+                id: i + 1, chinese: p.character, pinyin: p.pinyin, english: p.picture,
+              })) }}
+              renderRight={(v) => <Pictogram value={v} size={34} />}
+              onComplete={() => {}}
+            />
+          </View>
         </View>
       )}
 
@@ -1168,7 +1209,6 @@ const s = StyleSheet.create({
   choiceTextBig: { fontSize: 28, lineHeight: 36, fontWeight: '900', color: DEEP_NAVY },
   // One step down, frame included: six answers in a row do not fit at glyph size.
   choiceTextSmall: { fontSize: 24, lineHeight: 30, fontWeight: '900', color: DEEP_NAVY },
-  choiceTight:     { minWidth: 54, paddingHorizontal: 11, paddingVertical: 7 },
   choiceRight:   { backgroundColor: 'rgba(46,125,50,0.18)', borderColor: SUCCESS, borderWidth: 2.5 },
   choiceWrong:   { backgroundColor: 'rgba(196,80,58,0.15)', borderColor: '#C4503A', borderWidth: 2.5 },
 
@@ -1215,6 +1255,7 @@ const s = StyleSheet.create({
   wordCn:    { fontSize: 24, fontWeight: '900', color: DEEP_NAVY },
   wordPy:    { fontSize: 14, color: WARM_BROWN },
   wordEn:    { fontSize: 14, fontWeight: '700', color: WARM_ORANGE },
+  wordIcon:  { marginRight: 12 },
   wordBuilt: { fontSize: 13, color: SLATE_TEAL },
 
   // dialogue
@@ -1321,6 +1362,7 @@ const s = StyleSheet.create({
   galleryCn: { fontSize: 30, fontWeight: '900', color: DEEP_NAVY, marginTop: 4 },
   galleryPy: { fontSize: 13, fontWeight: '700', color: WARM_BROWN },
   galleryEn: { fontSize: 13, fontWeight: '700', color: WARM_ORANGE },
+
 
   secretCard: {
     gap: 10, padding: 12, borderRadius: 12, backgroundColor: '#FFF8ED',

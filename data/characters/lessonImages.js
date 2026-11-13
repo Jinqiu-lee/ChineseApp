@@ -29,11 +29,23 @@ const LESSON_IMAGES = {
   'l11-p1-kou': require('./lesson_images/l11/l11-p1-kou.png'),
   'l11-p1-nv':  require('./lesson_images/l11/l11-p1-nv.jpeg'),
 
+  // ── Lesson 11 · Part 2 · two the emoji could not carry ──────────────────
+  'l11-p2-jiao': require('./lesson_images/l11/l11-p2-jiao.webp'),
+  'l11-p2-mama': require('./lesson_images/l11/l11-p2-mama.jpeg'),
+  'l11-p2-ni':     require('./lesson_images/l11/l11-p2-ni.png'),
+  'l11-p2-ta-he':  require('./lesson_images/l11/l11-p2-ta-he.png'),
+  'l11-p2-ta-she': require('./lesson_images/l11/l11-p2-ta-she.png'),
+  'l11-p2-men':    require('./lesson_images/l11/l11-p2-men.png'),
+
   // ── Lesson 11 · Part 3 · one per dialogue ────────────────────────────────
   'l11-p3-introduction':       require('./lesson_images/l11/l11-p3-introduction.jpeg'),
   'l11-p3-at-the-table':       require('./lesson_images/l11/l11-p3-at-the-table.jpg'),
   'l11-p3-something-to-drink': require('./lesson_images/l11/l11-p3-something-to-drink.jpeg'),
   'l11-p3-how-are-you':        require('./lesson_images/l11/l11-p3-how-are-you.jpeg'),
+  'l11-p3-wo':                 require('./lesson_images/l11/l11-p3-wo.png'),
+  'l11-p3-women':              require('./lesson_images/l11/l11-p3-women.png'),
+  'l11-p3-tamen-he':           require('./lesson_images/l11/l11-p3-tamen-he.png'),
+  'l11-p3-tamen-she':          require('./lesson_images/l11/l11-p3-tamen-she.png'),
 
   // ── Lesson 11 · Part 5 · 他 / 她 / 它 ─────────────────────────────────────
   'l11-p5-ta': require('./lesson_images/l11/l11-p5-ta.jpeg'),
@@ -49,6 +61,7 @@ const LESSON_IMAGES = {
   'l12-p3-hanshui':     require('./lesson_images/l12/l12-p3-hanshui.jpg'),
   'l12-p3-leishui':     require('./lesson_images/l12/l12-p3-leishui.png'),
   'l12-p3-zhuozi-yizi': require('./lesson_images/l12/l12-p3-zhuozi-yizi.png'),
+  'l12-p2-zhuozi':      require('./lesson_images/l12/l12-p2-zhuozi.jpg'),
   'l12-p3-chaofan':     require('./lesson_images/l12/l12-p3-chaofan.png'),
   'l12-p3-weather':     require('./lesson_images/l12/l12-p3-weather.jpeg'),
 
@@ -87,6 +100,8 @@ const LESSON_IMAGES = {
   'l14-p2-yan': require('./lesson_images/l14/l14-p2-yan.png'),
   'l14-p2-xin': require('./lesson_images/l14/l14-p2-xin.png'),
   'l14-p2-mu':  require('./lesson_images/l14/l14-p2-mu.jpeg'),
+  'l14-p2-xiang': require('./lesson_images/l14/l14-p2-xiang.jpg'),
+  'l14-p2-wang':  require('./lesson_images/l14/l14-p2-wang.jpg'),
 
   // Part 3 · one per dialogue
   'l14-p3-his-eyes':       require('./lesson_images/l14/l14-p3-his-eyes.png'),
@@ -103,6 +118,16 @@ const LESSON_IMAGES = {
   'l15-p1-ri':  require('./lesson_images/l15/l15-p1-ri.png'),
   'l15-p1-yue': require('./lesson_images/l15/l15-p1-yue.png'),
   'l15-p1-yu':  require('./lesson_images/l15/l15-p1-yu.png'),
+
+  // Part 2 · 昨, and the word built on it
+  'l15-p2-zuo': require('./lesson_images/l15/l15-p2-zuo.png'),
+  'l15-p3-zuotian':  require('./lesson_images/l15/l15-p3-zuotian.png'),
+  'l15-p3-jintian':  require('./lesson_images/l15/l15-p3-jintian.png'),
+  'l15-p3-mingtian': require('./lesson_images/l15/l15-p3-mingtian.png'),
+  'l15-p3-good-morning': require('./lesson_images/l15/l15-p3-good-morning.jpeg'),
+  'l15-p3-on-your-face': require('./lesson_images/l15/l15-p3-on-your-face.png'),
+  'l15-p3-xiayu':        require('./lesson_images/l15/l15-p3-xiayu.jpeg'),
+  'l15-p3-xiaxue':       require('./lesson_images/l15/l15-p3-xiaxue.png'),
 
   // Part 5 · the two origins of 月, and what each one kept
   'l15-p5-split':       require('./lesson_images/l15/l15-p5-split.jpeg'),
@@ -136,6 +161,10 @@ const LESSON_IMAGES = {
   'l17-p3-where-going':     require('./lesson_images/l17/l17-p3-where-going.webp'),
   'l17-p3-tea':             require('./lesson_images/l17/l17-p3-tea.jpg'),
   'l17-p3-how-old':         require('./lesson_images/l17/l17-p3-how-old.jpg'),
+  'l17-p3-shanshang':       require('./lesson_images/l17/l17-p3-shanshang.webp'),
+  'l17-p3-shanxia':         require('./lesson_images/l17/l17-p3-shanxia.png'),
+  'l17-p3-shangshan':       require('./lesson_images/l17/l17-p3-shangshan.jpg'),
+  'l17-p3-xiashan':         require('./lesson_images/l17/l17-p3-xiashan.png'),
 
   'l17-p5-huacha':    require('./lesson_images/l17/l17-p5-huacha.jpeg'),
   'l17-p5-hua':       require('./lesson_images/l17/l17-p5-hua.jpeg'),
@@ -151,12 +180,14 @@ const LESSON_IMAGES = {
   'l18-p1-zou': require('./lesson_images/l18/l18-p1-zou.png'),
   'l18-p1-guo': require('./lesson_images/l18/l18-p1-guo.png'),
   'l18-p1-jia': require('./lesson_images/l18/l18-p1-jia.png'),
+  'l18-p2-an':  require('./lesson_images/l18/l18-p2-an.jpeg'),
 
   // Part 3 · one per dialogue
   'l18-p3-have-you':      require('./lesson_images/l18/l18-p3-have-you.jpg'),
   'l18-p3-gardens':       require('./lesson_images/l18/l18-p3-gardens.jpeg'),
   'l18-p3-go-home':       require('./lesson_images/l18/l18-p3-go-home.jpg'),
   'l18-p3-which-country': require('./lesson_images/l18/l18-p3-which-country.jpg'),
+  'l18-p3-naguoren':      require('./lesson_images/l18/l18-p3-naguoren.jpeg'),
 
   'l18-p5-city-gate':      require('./lesson_images/l18/l18-p5-city-gate.jpeg'),
   'l18-p5-city-plan':      require('./lesson_images/l18/l18-p5-city-plan.jpeg'),
@@ -186,10 +217,18 @@ const LESSON_IMAGES = {
   'l20-p1-yi':  require('./lesson_images/l20/l20-p1-yi.png'),
 
   'l20-p2-zhuzitou': require('./lesson_images/l20/l20-p2-zhuzitou.jpg'),
+  'l20-p2-lanzi':    require('./lesson_images/l20/l20-p2-lanzi.jpeg'),
+
+  // 开门 / 关门 — one dialogue, two pictures.
+  'l20-p3-open-door':  require('./lesson_images/l20/l20-p3-open-door.png'),
+  'l20-p3-close-door': require('./lesson_images/l20/l20-p3-close-door.png'),
 
   'l20-p5-dynasties':  require('./lesson_images/l20/l20-p5-dynasties.jpeg'),
   'l20-p5-ancient':    require('./lesson_images/l20/l20-p5-ancient.jpeg'),
   'l20-p5-modern':     require('./lesson_images/l20/l20-p5-modern.jpeg'),
+  'l20-p5-xiandairen': require('./lesson_images/l20/l20-p5-xiandairen.jpeg'),
+  'l20-p5-chenshan':   require('./lesson_images/l20/l20-p5-chenshan.jpeg'),
+  'l20-p5-beizi':      require('./lesson_images/l20/l20-p5-beizi.jpg'),
   'l20-p5-yi-scripts': require('./lesson_images/l20/l20-p5-yi-scripts.jpeg'),
 };
 

@@ -122,13 +122,15 @@
               "character": "狗",
               "pinyin": "gǒu",
               "meaning": "dog",
-              "audio_text": "狗"
+              "audio_text": "狗",
+              "emoji": "🐶"
             },
             {
               "character": "猫",
               "pinyin": "māo",
               "meaning": "a cat",
-              "audio_text": "猫"
+              "audio_text": "猫",
+              "emoji": "🐱"
             }
           ],
           "find": {
@@ -163,19 +165,22 @@
               "character": "红",
               "pinyin": "hóng",
               "meaning": "red",
-              "audio_text": "红"
+              "audio_text": "红",
+              "emoji": "🔴"
             },
             {
               "character": "绿",
               "pinyin": "lǜ",
               "meaning": "green",
-              "audio_text": "绿"
+              "audio_text": "绿",
+              "emoji": "🟢"
             },
             {
               "character": "线",
               "pinyin": "xiàn",
               "meaning": "a thread",
-              "audio_text": "线"
+              "audio_text": "线",
+              "emoji": "🧵"
             }
           ],
           "find": {
@@ -210,7 +215,8 @@
               "character": "辆",
               "pinyin": "liàng",
               "meaning": "(counts vehicles)",
-              "audio_text": "辆"
+              "audio_text": "辆",
+              "emoji": "🚗"
             }
           ],
           "find": {
@@ -272,56 +278,64 @@
           "pinyin": "xiǎo gǒu",
           "meaning": "a puppy",
           "audio_text": "小狗",
-          "built_from": "小 + 狗"
+          "built_from": "小 + 狗",
+          "emoji": "🐶"
         },
         {
           "word": "小猫",
           "pinyin": "xiǎo māo",
           "meaning": "a kitten",
           "audio_text": "小猫",
-          "built_from": "小 + 猫"
+          "built_from": "小 + 猫",
+          "emoji": "🐱"
         },
         {
           "word": "红色",
           "pinyin": "hóngsè",
           "meaning": "the colour red",
           "audio_text": "红色",
-          "built_from": "红 + 色"
+          "built_from": "红 + 色",
+          "emoji": "🔴"
         },
         {
           "word": "绿色",
           "pinyin": "lǜsè",
           "meaning": "the colour green",
           "audio_text": "绿色",
-          "built_from": "绿 + 色"
+          "built_from": "绿 + 色",
+          "emoji": "🟢"
         },
         {
           "word": "线上",
           "pinyin": "xiàn shang",
           "meaning": "online",
           "audio_text": "线上",
-          "built_from": "线 + 上"
+          "built_from": "线 + 上",
+          "emoji": "💻"
         },
         {
           "word": "线下",
           "pinyin": "xiàn xià",
           "meaning": "offline",
           "audio_text": "线下",
-          "built_from": "线 + 下"
+          "built_from": "线 + 下",
+          "emoji": "🏬"
         },
         {
           "word": "车辆",
           "pinyin": "chēliàng",
           "meaning": "vehicles",
           "audio_text": "车辆",
-          "built_from": "车 + 辆"
+          "built_from": "车 + 辆",
+          "emoji": "🚗"
         },
         {
           "word": "一辆车",
           "pinyin": "yí liàng chē",
           "meaning": "one car",
           "audio_text": "一辆车",
-          "built_from": "一 + 辆 + 车"
+          "built_from": "一 + 辆 + 车",
+          "emoji": "🚙"
         }
       ],
       "support_words": [

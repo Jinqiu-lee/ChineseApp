@@ -11,7 +11,7 @@ function shuffle(arr) {
   return a;
 }
 
-export default function MatchPairsExercise({ exercise, onComplete }) {
+export default function MatchPairsExercise({ exercise, onComplete, renderRight }) {
   const { pairs } = exercise;
   const [leftItems] = useState(() => shuffle([...pairs]));
   const [rightItems] = useState(() => shuffle([...pairs]));
@@ -110,7 +110,9 @@ export default function MatchPairsExercise({ exercise, onComplete }) {
               disabled={matched.includes(item.id)}
               activeOpacity={0.75}
             >
-              <Text style={styles.cellEnglish}>{item.english}</Text>
+              {renderRight
+                ? renderRight(item.english)
+                : <Text style={styles.cellEnglish}>{item.english}</Text>}
             </TouchableOpacity>
           ))}
         </View>

@@ -123,19 +123,22 @@
               "character": "汗",
               "pinyin": "hàn",
               "meaning": "sweat",
-              "audio_text": "汗"
+              "audio_text": "汗",
+              "picture": "l12-p3-hanshui"
             },
             {
               "character": "泪",
               "pinyin": "lèi",
               "meaning": "tear",
-              "audio_text": "泪"
+              "audio_text": "泪",
+              "picture": "l12-p3-leishui"
             },
             {
               "character": "海",
               "pinyin": "hǎi",
               "meaning": "sea",
-              "audio_text": "海"
+              "audio_text": "海",
+              "emoji": "🌊"
             }
           ],
           "find": {
@@ -170,13 +173,15 @@
               "character": "炒",
               "pinyin": "chǎo",
               "meaning": "to stir-fry",
-              "audio_text": "炒"
+              "audio_text": "炒",
+              "emoji": "🍳"
             },
             {
               "character": "炎",
               "pinyin": "yán",
               "meaning": "blazing",
-              "audio_text": "炎"
+              "audio_text": "炎",
+              "emoji": "🔥"
             }
           ],
           "find": {
@@ -211,7 +216,8 @@
               "character": "热",
               "pinyin": "rè",
               "meaning": "hot",
-              "audio_text": "热"
+              "audio_text": "热",
+              "emoji": "🥵"
             }
           ],
           "find": {
@@ -249,13 +255,15 @@
               "character": "桌",
               "pinyin": "zhuō",
               "meaning": "table",
-              "audio_text": "桌"
+              "audio_text": "桌",
+              "picture": "l12-p2-zhuozi"
             },
             {
               "character": "椅",
               "pinyin": "yǐ",
               "meaning": "chair",
-              "audio_text": "椅"
+              "audio_text": "椅",
+              "emoji": "🪑"
             }
           ],
           "find": {
@@ -327,49 +335,56 @@
           "pinyin": "hànshuǐ",
           "meaning": "sweat",
           "audio_text": "汗水",
-          "built_from": "汗 + 水"
+          "built_from": "汗 + 水",
+          "picture": "l12-p3-hanshui"
         },
         {
           "word": "泪水",
           "pinyin": "lèishuǐ",
           "meaning": "tears",
           "audio_text": "泪水",
-          "built_from": "泪 + 水"
+          "built_from": "泪 + 水",
+          "picture": "l12-p3-leishui"
         },
         {
           "word": "炎热",
           "pinyin": "yánrè",
           "meaning": "scorching hot",
           "audio_text": "炎热",
-          "built_from": "炎 + 热"
+          "built_from": "炎 + 热",
+          "emoji": "🔥"
         },
         {
           "word": "很热",
           "pinyin": "hěn rè",
           "meaning": "very hot",
           "audio_text": "很热",
-          "built_from": "很 + 热"
+          "built_from": "很 + 热",
+          "emoji": "🥵"
         },
         {
           "word": "炒饭",
           "pinyin": "chǎofàn",
           "meaning": "fried rice",
           "audio_text": "炒饭",
-          "built_from": "炒 + 饭"
+          "built_from": "炒 + 饭",
+          "emoji": "🍛"
         },
         {
           "word": "桌子",
           "pinyin": "zhuōzi",
           "meaning": "table",
           "audio_text": "桌子",
-          "built_from": "桌 + 子"
+          "built_from": "桌 + 子",
+          "picture": "l12-p2-zhuozi"
         },
         {
           "word": "椅子",
           "pinyin": "yǐzi",
           "meaning": "chair",
           "audio_text": "椅子",
-          "built_from": "椅 + 子"
+          "built_from": "椅 + 子",
+          "emoji": "🪑"
         }
       ],
       "dialogues": [

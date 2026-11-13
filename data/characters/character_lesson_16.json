@@ -100,13 +100,15 @@
               "character": "阳",
               "pinyin": "yáng",
               "meaning": "sun / yang",
-              "audio_text": "阳"
+              "audio_text": "阳",
+              "emoji": "☀️"
             },
             {
               "character": "阴",
               "pinyin": "yīn",
               "meaning": "shade / yin",
-              "audio_text": "阴"
+              "audio_text": "阴",
+              "emoji": "☁️"
             }
           ],
           "find": {
@@ -182,19 +184,22 @@
               "character": "路",
               "pinyin": "lù",
               "meaning": "road",
-              "audio_text": "路"
+              "audio_text": "路",
+              "emoji": "🛣️"
             },
             {
               "character": "跑",
               "pinyin": "pǎo",
               "meaning": "to run",
-              "audio_text": "跑"
+              "audio_text": "跑",
+              "emoji": "🏃"
             },
             {
               "character": "跳",
               "pinyin": "tiào",
               "meaning": "to jump",
-              "audio_text": "跳"
+              "audio_text": "跳",
+              "emoji": "🤸"
             }
           ],
           "find": {
@@ -229,7 +234,8 @@
               "character": "行",
               "pinyin": "xíng",
               "meaning": "to go / all right",
-              "audio_text": "行"
+              "audio_text": "行",
+              "emoji": "🚶"
             }
           ],
           "find": {
@@ -291,14 +297,16 @@
           "pinyin": "tàiyáng",
           "meaning": "the sun",
           "audio_text": "太阳",
-          "built_from": "太 + 阳"
+          "built_from": "太 + 阳",
+          "emoji": "☀️"
         },
         {
           "word": "阴天",
           "pinyin": "yīntiān",
           "meaning": "a cloudy day",
           "audio_text": "阴天",
-          "built_from": "阴 + 天"
+          "built_from": "阴 + 天",
+          "emoji": "☁️"
         },
         {
           "word": "都是",
@@ -312,35 +320,40 @@
           "pinyin": "dōu xíng",
           "meaning": "either is fine",
           "audio_text": "都行",
-          "built_from": "都 + 行"
+          "built_from": "都 + 行",
+          "emoji": "👌"
         },
         {
           "word": "路上",
           "pinyin": "lù shang",
           "meaning": "on the road",
           "audio_text": "路上",
-          "built_from": "路 + 上"
+          "built_from": "路 + 上",
+          "emoji": "🛣️"
         },
         {
           "word": "行人",
           "pinyin": "xíng rén",
           "meaning": "pedestrian",
           "audio_text": "行人",
-          "built_from": "行 + 人"
+          "built_from": "行 + 人",
+          "emoji": "🚶"
         },
         {
           "word": "跑步",
           "pinyin": "pǎobù",
           "meaning": "to go running",
           "audio_text": "跑步",
-          "built_from": "跑 + 步"
+          "built_from": "跑 + 步",
+          "emoji": "🏃"
         },
         {
           "word": "跳舞",
           "pinyin": "tiàowǔ",
           "meaning": "to dance",
           "audio_text": "跳舞",
-          "built_from": "跳 + 舞"
+          "built_from": "跳 + 舞",
+          "emoji": "💃"
         }
       ],
       "support_words": [

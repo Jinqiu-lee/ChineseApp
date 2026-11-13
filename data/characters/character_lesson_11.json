@@ -19,7 +19,10 @@
   ],
   "new_words": [
     "你好",
-    "你们好",
+    "你们",
+    "我们",
+    "他们",
+    "她们",
     "我妈妈",
     "我奶奶",
     "她妈妈",
@@ -124,19 +127,22 @@
               "character": "你",
               "pinyin": "nǐ",
               "meaning": "you",
-              "audio_text": "你"
+              "audio_text": "你",
+              "picture": "l11-p2-ni"
             },
             {
               "character": "他",
               "pinyin": "tā",
               "meaning": "he",
-              "audio_text": "他"
+              "audio_text": "他",
+              "picture": "l11-p2-ta-he"
             },
             {
               "character": "们",
               "pinyin": "men",
               "meaning": "plural marker",
-              "audio_text": "们"
+              "audio_text": "们",
+              "picture": "l11-p2-men"
             }
           ],
           "find": {
@@ -171,19 +177,22 @@
               "character": "吃",
               "pinyin": "chī",
               "meaning": "to eat",
-              "audio_text": "吃"
+              "audio_text": "吃",
+              "emoji": "🍽️"
             },
             {
               "character": "喝",
               "pinyin": "hē",
               "meaning": "to drink",
-              "audio_text": "喝"
+              "audio_text": "喝",
+              "emoji": "🥤"
             },
             {
               "character": "叫",
               "pinyin": "jiào",
               "meaning": "to be called",
-              "audio_text": "叫"
+              "audio_text": "叫",
+              "picture": "l11-p2-jiao"
             }
           ],
           "find": {
@@ -218,19 +227,22 @@
               "character": "她",
               "pinyin": "tā",
               "meaning": "she",
-              "audio_text": "她"
+              "audio_text": "她",
+              "picture": "l11-p2-ta-she"
             },
             {
               "character": "妈",
               "pinyin": "mā",
               "meaning": "mum",
-              "audio_text": "妈"
+              "audio_text": "妈",
+              "picture": "l11-p2-mama"
             },
             {
               "character": "好",
               "pinyin": "hǎo",
               "meaning": "good",
-              "audio_text": "好"
+              "audio_text": "好",
+              "emoji": "👍"
             }
           ],
           "find": {
@@ -269,7 +281,8 @@
           "character": "我",
           "pinyin": "wǒ",
           "meaning": "I / me",
-          "audio_text": "我"
+          "audio_text": "我",
+          "picture": "l11-p3-wo"
         }
       ],
       "words": [
@@ -278,56 +291,88 @@
           "pinyin": "nǐ hǎo",
           "meaning": "hello",
           "audio_text": "你好",
-          "built_from": "你 + 好"
+          "built_from": "你 + 好",
+          "emoji": "👋"
         },
         {
-          "word": "你们好",
-          "pinyin": "nǐmen hǎo",
-          "meaning": "hello (to several people)",
-          "audio_text": "你们好",
-          "built_from": "你 + 们 + 好"
+          "word": "你们",
+          "pinyin": "nǐmen",
+          "meaning": "you (more than one)",
+          "audio_text": "你们",
+          "built_from": "你 + 们",
+          "picture": "l11-p2-men"
+        },
+        {
+          "word": "我们",
+          "pinyin": "wǒmen",
+          "meaning": "we",
+          "audio_text": "我们",
+          "built_from": "我 + 们",
+          "picture": "l11-p3-women"
+        },
+        {
+          "word": "他们",
+          "pinyin": "tāmen",
+          "meaning": "they",
+          "audio_text": "他们",
+          "built_from": "他 + 们",
+          "picture": "l11-p3-tamen-he"
+        },
+        {
+          "word": "她们",
+          "pinyin": "tāmen",
+          "meaning": "they (all female)",
+          "audio_text": "她们",
+          "built_from": "她 + 们",
+          "picture": "l11-p3-tamen-she"
         },
         {
           "word": "我妈妈",
           "pinyin": "wǒ māma",
           "meaning": "my mum",
           "audio_text": "我妈妈",
-          "built_from": "我 + 妈妈"
+          "built_from": "我 + 妈妈",
+          "picture": "l11-p2-mama"
         },
         {
           "word": "我奶奶",
           "pinyin": "wǒ nǎinai",
           "meaning": "my grandma",
           "audio_text": "我奶奶",
-          "built_from": "我 + 奶奶"
+          "built_from": "我 + 奶奶",
+          "emoji": "👵"
         },
         {
           "word": "她妈妈",
           "pinyin": "tā māma",
           "meaning": "her mum",
           "audio_text": "她妈妈",
-          "built_from": "她 + 妈妈"
+          "built_from": "她 + 妈妈",
+          "picture": "l11-p2-mama"
         },
         {
           "word": "米饭",
           "pinyin": "mǐfàn",
           "meaning": "cooked rice",
           "audio_text": "米饭",
-          "built_from": "米 + 饭"
+          "built_from": "米 + 饭",
+          "emoji": "🍚"
         },
         {
           "word": "面条",
           "pinyin": "miàntiáo",
           "meaning": "noodles",
           "audio_text": "面条",
-          "built_from": "面 + 条"
+          "built_from": "面 + 条",
+          "emoji": "🍜"
         },
         {
           "word": "牛奶",
           "pinyin": "niúnǎi",
           "meaning": "milk",
           "audio_text": "牛奶",
-          "built_from": "牛 + 奶"
+          "built_from": "牛 + 奶",
+          "emoji": "🥛"
         }
       ],
       "dialogues": [
@@ -1348,7 +1393,7 @@
       "correct": "hello",
       "choices": [
         "hello",
-        "hello (to several people)",
+        "you (more than one)",
         "my mum",
         "my grandma"
       ]
@@ -1359,18 +1404,18 @@
       "correct": "你好",
       "choices": [
         "你好",
-        "你们好",
+        "你们",
         "我妈妈",
         "我奶奶"
       ]
     },
     {
       "type": "char_to_meaning",
-      "prompt_char": "你们好",
-      "audio_text": "你们好",
-      "correct": "hello (to several people)",
+      "prompt_char": "你们",
+      "audio_text": "你们",
+      "correct": "you (more than one)",
       "choices": [
-        "hello (to several people)",
+        "you (more than one)",
         "hello",
         "my mum",
         "my grandma"
@@ -1378,13 +1423,82 @@
     },
     {
       "type": "audio_to_char",
-      "audio_text": "你们好",
-      "correct": "你们好",
+      "audio_text": "你们",
+      "correct": "你们",
       "choices": [
-        "你们好",
+        "你们",
         "你好",
         "我妈妈",
         "我奶奶"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "我们",
+      "audio_text": "我们",
+      "correct": "we",
+      "choices": [
+        "we",
+        "you (more than one)",
+        "they",
+        "hello"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "我们",
+      "correct": "我们",
+      "choices": [
+        "我们",
+        "你们",
+        "你好",
+        "我妈妈"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "他们",
+      "audio_text": "他们",
+      "correct": "they",
+      "choices": [
+        "they",
+        "they (all female)",
+        "we",
+        "you (more than one)"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "他们",
+      "correct": "他们",
+      "choices": [
+        "他们",
+        "我们",
+        "你们",
+        "你好"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "她们",
+      "audio_text": "她们",
+      "correct": "they (all female)",
+      "choices": [
+        "they (all female)",
+        "they",
+        "we",
+        "my mum"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "她们",
+      "correct": "她们",
+      "choices": [
+        "她们",
+        "我们",
+        "你们",
+        "我妈妈"
       ]
     },
     {
@@ -1395,7 +1509,7 @@
       "choices": [
         "my mum",
         "hello",
-        "hello (to several people)",
+        "you (more than one)",
         "my grandma"
       ]
     },
@@ -1406,7 +1520,7 @@
       "choices": [
         "我妈妈",
         "你好",
-        "你们好",
+        "你们",
         "我奶奶"
       ]
     },
@@ -1418,7 +1532,7 @@
       "choices": [
         "my grandma",
         "hello",
-        "hello (to several people)",
+        "you (more than one)",
         "my mum"
       ]
     },
@@ -1429,7 +1543,7 @@
       "choices": [
         "我奶奶",
         "你好",
-        "你们好",
+        "你们",
         "我妈妈"
       ]
     },
@@ -1441,7 +1555,7 @@
       "choices": [
         "her mum",
         "hello",
-        "hello (to several people)",
+        "you (more than one)",
         "my mum"
       ]
     },
@@ -1452,7 +1566,7 @@
       "choices": [
         "她妈妈",
         "你好",
-        "你们好",
+        "你们",
         "我妈妈"
       ]
     },
@@ -1464,7 +1578,7 @@
       "choices": [
         "cooked rice",
         "hello",
-        "hello (to several people)",
+        "you (more than one)",
         "my mum"
       ]
     },
@@ -1475,7 +1589,7 @@
       "choices": [
         "米饭",
         "你好",
-        "你们好",
+        "你们",
         "我妈妈"
       ]
     },
@@ -1487,7 +1601,7 @@
       "choices": [
         "noodles",
         "hello",
-        "hello (to several people)",
+        "you (more than one)",
         "my mum"
       ]
     },
@@ -1498,7 +1612,7 @@
       "choices": [
         "面条",
         "你好",
-        "你们好",
+        "你们",
         "我妈妈"
       ]
     },
@@ -1510,7 +1624,7 @@
       "choices": [
         "milk",
         "hello",
-        "hello (to several people)",
+        "you (more than one)",
         "my mum"
       ]
     },
@@ -1521,7 +1635,7 @@
       "choices": [
         "牛奶",
         "你好",
-        "你们好",
+        "你们",
         "我妈妈"
       ]
     },
@@ -1628,9 +1742,9 @@
         },
         {
           "id": 2,
-          "chinese": "你们好",
-          "pinyin": "nǐmen hǎo",
-          "english": "hello (to several people)"
+          "chinese": "你们",
+          "pinyin": "nǐmen",
+          "english": "you (more than one)"
         },
         {
           "id": 3,
@@ -1651,10 +1765,10 @@
           "english": "her mum"
         }
       ],
-      "correct": "word:你好你们好我妈妈我奶奶她妈妈",
+      "correct": "word:你好你们我妈妈我奶奶她妈妈",
       "choices": [
         "hello",
-        "hello (to several people)",
+        "you (more than one)",
         "my mum",
         "my grandma",
         "her mum"
@@ -1889,13 +2003,24 @@
     },
     {
       "type": "read_aloud",
-      "prompt_char": "你们好",
-      "audio_text": "你们好",
-      "pinyin": "nǐmen hǎo",
-      "meaning": "hello (to several people)",
-      "correct": "你们好",
+      "prompt_char": "你们",
+      "audio_text": "你们",
+      "pinyin": "nǐmen",
+      "meaning": "you (more than one)",
+      "correct": "你们",
       "choices": [
-        "你们好"
+        "你们"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我们",
+      "audio_text": "我们",
+      "pinyin": "wǒmen",
+      "meaning": "we",
+      "correct": "我们",
+      "choices": [
+        "我们"
       ]
     },
     {

@@ -8,6 +8,7 @@
   "new_strokes": [],
   "new_characters": [
     "问",
+    "闻",
     "篮",
     "裤",
     "裙"
@@ -20,7 +21,9 @@
     "篮子",
     "衣服",
     "裤子",
-    "裙子"
+    "裙子",
+    "耳闻",
+    "闻到"
   ],
   "learn_content": {
     "part1_blocks": {
@@ -120,7 +123,15 @@
               "character": "问",
               "pinyin": "wèn",
               "meaning": "to ask",
-              "audio_text": "问"
+              "audio_text": "问",
+              "emoji": "🙋"
+            },
+            {
+              "character": "闻",
+              "pinyin": "wén",
+              "meaning": "to hear; to smell",
+              "audio_text": "闻",
+              "emoji": "👃"
             }
           ],
           "find": {
@@ -135,8 +146,9 @@
           },
           "reveal": {
             "category": "what happens at a door",
-            "note": "问 is a mouth inside a doorway — someone standing at the door, asking."
-          }
+            "note": "问 is a mouth inside a doorway — someone at the door, asking. 闻 is an ear in the same doorway, listening."
+          },
+          "picture": null
         },
         {
           "radical": "⺮",
@@ -150,13 +162,14 @@
             "meaning": "bamboo"
           },
           "hint": "竹 loses its stems, keeps its leaves, and lies flat across the roof — ⺮.",
-          "picture": "l20-p2-zhuzitou",
+          "picture": "l20-p2-lanzi",
           "characters": [
             {
               "character": "篮",
               "pinyin": "lán",
               "meaning": "a basket",
-              "audio_text": "篮"
+              "audio_text": "篮",
+              "emoji": "🧺"
             }
           ],
           "find": {
@@ -191,13 +204,15 @@
               "character": "裤",
               "pinyin": "kù",
               "meaning": "trousers",
-              "audio_text": "裤"
+              "audio_text": "裤",
+              "emoji": "👖"
             },
             {
               "character": "裙",
               "pinyin": "qún",
               "meaning": "a skirt",
-              "audio_text": "裙"
+              "audio_text": "裙",
+              "emoji": "👗"
             }
           ],
           "find": {
@@ -212,7 +227,7 @@
           },
           "reveal": {
             "category": "things you wear",
-            "note": "Trousers, a skirt, socks, sleeves — if a character wears 衤, so do you."
+            "note": "Trousers, a skirt, socks, a shirt — if a character wears 衤, so do you."
           }
         }
       ],
@@ -265,56 +280,80 @@
           "pinyin": "kāi mén",
           "meaning": "to open the door",
           "audio_text": "开门",
-          "built_from": "开 + 门"
+          "built_from": "开 + 门",
+          "picture": "l20-p3-open-door"
         },
         {
           "word": "关门",
           "pinyin": "guān mén",
           "meaning": "to close the door",
           "audio_text": "关门",
-          "built_from": "关 + 门"
+          "built_from": "关 + 门",
+          "picture": "l20-p3-close-door"
         },
         {
           "word": "请问",
           "pinyin": "qǐngwèn",
           "meaning": "excuse me, may I ask",
           "audio_text": "请问",
-          "built_from": "请 + 问"
+          "built_from": "请 + 问",
+          "emoji": "🙋"
         },
         {
           "word": "篮球",
           "pinyin": "lánqiú",
           "meaning": "basketball",
           "audio_text": "篮球",
-          "built_from": "篮 + 球"
+          "built_from": "篮 + 球",
+          "emoji": "🏀"
         },
         {
           "word": "篮子",
           "pinyin": "lánzi",
           "meaning": "a basket",
           "audio_text": "篮子",
-          "built_from": "篮 + 子"
+          "built_from": "篮 + 子",
+          "emoji": "🧺"
         },
         {
           "word": "衣服",
           "pinyin": "yīfu",
           "meaning": "clothes",
           "audio_text": "衣服",
-          "built_from": "衣 + 服"
+          "built_from": "衣 + 服",
+          "emoji": "👕"
         },
         {
           "word": "裤子",
           "pinyin": "kùzi",
           "meaning": "trousers",
           "audio_text": "裤子",
-          "built_from": "裤 + 子"
+          "built_from": "裤 + 子",
+          "emoji": "👖"
         },
         {
           "word": "裙子",
           "pinyin": "qúnzi",
           "meaning": "a skirt",
           "audio_text": "裙子",
-          "built_from": "裙 + 子"
+          "built_from": "裙 + 子",
+          "emoji": "👗"
+        },
+        {
+          "word": "耳闻",
+          "pinyin": "ěrwén",
+          "meaning": "to hear of",
+          "audio_text": "耳闻",
+          "built_from": "耳 + 闻",
+          "emoji": "👂"
+        },
+        {
+          "word": "闻到",
+          "pinyin": "wén dào",
+          "meaning": "to smell something",
+          "audio_text": "闻到",
+          "built_from": "闻 + 到",
+          "emoji": "👃"
         }
       ],
       "support_words": [
@@ -357,6 +396,11 @@
           "word": "好",
           "pinyin": "hǎo",
           "meaning": "all right"
+        },
+        {
+          "word": "到",
+          "pinyin": "dào",
+          "meaning": "(marks it as achieved)"
         }
       ],
       "dialogues": [
@@ -502,7 +546,6 @@
         {
           "title": "Open and shut",
           "goal": "开门 关门",
-          "picture": "l20-p1-men",
           "lines": [
             {
               "speaker": "A",
@@ -539,7 +582,19 @@
             ],
             "result": "请开门。",
             "pinyin": "Qǐng kāi mén."
-          }
+          },
+          "pictures": [
+            {
+              "picture": "l20-p3-open-door",
+              "label": "开门",
+              "caption": "kāi mén"
+            },
+            {
+              "picture": "l20-p3-close-door",
+              "label": "关门",
+              "caption": "guān mén"
+            }
+          ]
         }
       ],
       "read_aloud": {
@@ -626,7 +681,7 @@
             "pinyin": "xiàndàirén",
             "meaning": "people today",
             "audio_text": "现代人",
-            "picture": "l20-p5-modern"
+            "picture": "l20-p5-xiandairen"
           }
         ]
       },
@@ -670,37 +725,36 @@
                 "character": "裤",
                 "pinyin": "kù",
                 "meaning": "trousers",
-                "audio_text": "裤"
+                "audio_text": "裤",
+                "emoji": "👖"
               },
               {
                 "character": "裙",
                 "pinyin": "qún",
                 "meaning": "a skirt",
-                "audio_text": "裙"
+                "audio_text": "裙",
+                "emoji": "👗"
               },
               {
                 "character": "袜",
                 "pinyin": "wà",
                 "meaning": "socks",
-                "audio_text": "袜"
+                "audio_text": "袜",
+                "emoji": "🧦"
               },
               {
-                "character": "袖",
-                "pinyin": "xiù",
-                "meaning": "a sleeve",
-                "audio_text": "袖"
+                "character": "衬衫",
+                "pinyin": "chènshān",
+                "meaning": "a shirt",
+                "audio_text": "衬衫",
+                "picture": "l20-p5-chenshan"
               },
               {
-                "character": "衬",
-                "pinyin": "chèn",
-                "meaning": "a lining",
-                "audio_text": "衬"
-              },
-              {
-                "character": "被",
-                "pinyin": "bèi",
+                "character": "被子",
+                "pinyin": "bèizi",
                 "meaning": "a quilt",
-                "audio_text": "被"
+                "audio_text": "被子",
+                "picture": "l20-p5-beizi"
               }
             ],
             "note": "它们都有衣字旁，很多都和衣服或布料有关。Cloth, or something made of it — right down to the quilt on the bed."
@@ -724,8 +778,8 @@
             "character": "袜"
           },
           {
-            "picture": "👕",
-            "character": "袖"
+            "picture": "l20-p5-chenshan",
+            "character": "衬衫"
           }
         ]
       }
@@ -1941,6 +1995,143 @@
       "correct": "关门",
       "choices": [
         "关门"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "闻",
+      "audio_text": "闻",
+      "correct": "to hear; to smell",
+      "choices": [
+        "bamboo",
+        "a basket",
+        "a skirt",
+        "to hear; to smell"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "闻",
+      "correct": "闻",
+      "choices": [
+        "衣",
+        "闻",
+        "竹",
+        "裤"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to hear; to smell",
+      "correct": "闻",
+      "choices": [
+        "衣",
+        "裙",
+        "关",
+        "闻"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "闻",
+      "audio_text": "闻",
+      "correct": "wén",
+      "choices": [
+        "guān",
+        "lán",
+        "wén",
+        "mén"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "wén",
+      "correct": "闻",
+      "choices": [
+        "闻",
+        "开",
+        "关",
+        "篮"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "闻",
+      "audio_text": "闻",
+      "correct": "门",
+      "choices": [
+        "辶",
+        "⺮",
+        "门",
+        "囗"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "耳闻",
+      "audio_text": "耳闻",
+      "correct": "to hear of",
+      "choices": [
+        "to hear of",
+        "to smell something",
+        "to open the door",
+        "a skirt"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "耳闻",
+      "correct": "耳闻",
+      "choices": [
+        "篮子",
+        "请问",
+        "裙子",
+        "耳闻"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "耳闻",
+      "audio_text": "耳闻",
+      "pinyin": "ěrwén",
+      "meaning": "to hear of",
+      "correct": "耳闻",
+      "choices": [
+        "耳闻"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "闻到",
+      "audio_text": "闻到",
+      "correct": "to smell something",
+      "choices": [
+        "to smell something",
+        "excuse me, may I ask",
+        "trousers",
+        "basketball"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "闻到",
+      "correct": "闻到",
+      "choices": [
+        "衣服",
+        "开门",
+        "闻到",
+        "篮子"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "闻到",
+      "audio_text": "闻到",
+      "pinyin": "wén dào",
+      "meaning": "to smell something",
+      "correct": "闻到",
+      "choices": [
+        "闻到"
       ]
     }
   ]

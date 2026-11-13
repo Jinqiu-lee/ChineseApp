@@ -120,19 +120,22 @@
               "character": "说",
               "pinyin": "shuō",
               "meaning": "to speak",
-              "audio_text": "说"
+              "audio_text": "说",
+              "emoji": "🗣️"
             },
             {
               "character": "话",
               "pinyin": "huà",
               "meaning": "words",
-              "audio_text": "话"
+              "audio_text": "话",
+              "emoji": "💬"
             },
             {
               "character": "谁",
               "pinyin": "shéi",
               "meaning": "who",
-              "audio_text": "谁"
+              "audio_text": "谁",
+              "emoji": "❓"
             }
           ],
           "find": {
@@ -168,7 +171,8 @@
               "character": "情",
               "pinyin": "qíng",
               "meaning": "feeling",
-              "audio_text": "情"
+              "audio_text": "情",
+              "emoji": "❤️"
             }
           ],
           "find": {
@@ -204,13 +208,15 @@
               "character": "想",
               "pinyin": "xiǎng",
               "meaning": "to think",
-              "audio_text": "想"
+              "audio_text": "想",
+              "picture": "l14-p2-xiang"
             },
             {
               "character": "忘",
               "pinyin": "wàng",
               "meaning": "to forget",
-              "audio_text": "忘"
+              "audio_text": "忘",
+              "picture": "l14-p2-wang"
             }
           ],
           "find": {
@@ -249,13 +255,15 @@
               "character": "眼",
               "pinyin": "yǎn",
               "meaning": "eye",
-              "audio_text": "眼"
+              "audio_text": "眼",
+              "emoji": "👁️"
             },
             {
               "character": "睛",
               "pinyin": "jīng",
               "meaning": "eyeball",
-              "audio_text": "睛"
+              "audio_text": "睛",
+              "emoji": "👀"
             }
           ],
           "find": {
@@ -322,28 +330,32 @@
           "pinyin": "shuōhuà",
           "meaning": "to speak",
           "audio_text": "说话",
-          "built_from": "说 + 话"
+          "built_from": "说 + 话",
+          "emoji": "🗣️"
         },
         {
           "word": "心情",
           "pinyin": "xīnqíng",
           "meaning": "mood",
           "audio_text": "心情",
-          "built_from": "心 + 情"
+          "built_from": "心 + 情",
+          "emoji": "❤️"
         },
         {
           "word": "眼睛",
           "pinyin": "yǎnjing",
           "meaning": "eyes",
           "audio_text": "眼睛",
-          "built_from": "眼 + 睛"
+          "built_from": "眼 + 睛",
+          "emoji": "👀"
         },
         {
           "word": "谁的",
           "pinyin": "shéi de",
           "meaning": "whose",
           "audio_text": "谁的",
-          "built_from": "谁 + 的"
+          "built_from": "谁 + 的",
+          "emoji": "❓"
         }
       ],
       "support_words": [
