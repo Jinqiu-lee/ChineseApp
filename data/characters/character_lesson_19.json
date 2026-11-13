@@ -1,0 +1,1979 @@
+{
+  "id": 19,
+  "part": 2,
+  "title": "Lesson 19 · Dogs, Threads and Wheels",
+  "emoji": "🧵",
+  "subtitle": "犬 丝 车 · 反犬旁 绞丝旁 车字旁",
+  "description": "Three more radicals — and the reason the characters for colours are made of silk.",
+  "new_strokes": [],
+  "new_characters": [
+    "狗",
+    "猫",
+    "红",
+    "绿",
+    "线",
+    "辆"
+  ],
+  "new_words": [
+    "小狗",
+    "小猫",
+    "红色",
+    "绿色",
+    "线上",
+    "线下",
+    "车辆",
+    "一辆车"
+  ],
+  "learn_content": {
+    "part1_blocks": {
+      "title": "Discover",
+      "subtitle": "独体字 · Characters that stand alone",
+      "intro": "A dog, a thread and a cart. Each one becomes a radical, and the thread turns out to carry the colours.",
+      "blocks": [
+        {
+          "character": "犬",
+          "pinyin": "quǎn",
+          "meaning": "a dog",
+          "audio_text": "犬",
+          "picture": "l19-p1-quan",
+          "note": "A dog seen from the side, ear up and tail curling.",
+          "match": {
+            "prompt_picture": "l19-p1-quan",
+            "choices": [
+              "犬",
+              "丝",
+              "车"
+            ],
+            "correct": "犬"
+          }
+        },
+        {
+          "character": "丝",
+          "pinyin": "sī",
+          "meaning": "silk",
+          "audio_text": "丝",
+          "picture": "l19-p1-si",
+          "note": "Two twists of thread side by side — silk, before anything is made of it.",
+          "match": {
+            "prompt_picture": "l19-p1-si",
+            "choices": [
+              "犬",
+              "丝",
+              "车"
+            ],
+            "correct": "丝"
+          }
+        },
+        {
+          "character": "车",
+          "pinyin": "chē",
+          "meaning": "a vehicle",
+          "audio_text": "车",
+          "picture": "l19-p1-che",
+          "note": "A cart from above: two wheels and the axle between them.",
+          "match": {
+            "prompt_picture": "l19-p1-che",
+            "choices": [
+              "犬",
+              "丝",
+              "车"
+            ],
+            "correct": "车"
+          }
+        }
+      ],
+      "match": {
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "l19-p1-quan",
+            "character": "犬"
+          },
+          {
+            "picture": "l19-p1-si",
+            "character": "丝"
+          },
+          {
+            "picture": "l19-p1-che",
+            "character": "车"
+          }
+        ]
+      }
+    },
+    "part2_components": {
+      "title": "Decode",
+      "subtitle": "部件与部首 · Components and radicals",
+      "caveat": "All three stand on the left — but one of them changes shape so much it is hard to recognise.",
+      "components": [
+        {
+          "radical": "犭",
+          "name": "反犬旁",
+          "pinyin": "fǎn quǎn páng",
+          "name_en": "the dog radical, turned on its side",
+          "audio_text": "反犬旁",
+          "from": {
+            "character": "犬",
+            "pinyin": "quǎn",
+            "meaning": "a dog"
+          },
+          "hint": "犬 stands up, turns side-on and loses its dot — 犭. It is called 反犬 because it is the dog reversed.",
+          "characters": [
+            {
+              "character": "狗",
+              "pinyin": "gǒu",
+              "meaning": "a dog (the everyday word)",
+              "audio_text": "狗"
+            },
+            {
+              "character": "猫",
+              "pinyin": "māo",
+              "meaning": "a cat",
+              "audio_text": "猫"
+            }
+          ],
+          "find": {
+            "question": "Which part of 狗 is the radical?",
+            "choices": [
+              "犭",
+              "句",
+              "纟",
+              "车"
+            ],
+            "correct": "犭"
+          },
+          "reveal": {
+            "category": "animals with four legs",
+            "note": "A dog, a cat — and most other furred animals wear 犭 too."
+          }
+        },
+        {
+          "radical": "纟",
+          "name": "绞丝旁",
+          "pinyin": "jiǎo sī páng",
+          "name_en": "the silk radical",
+          "audio_text": "绞丝旁",
+          "from": {
+            "character": "丝",
+            "pinyin": "sī",
+            "meaning": "silk"
+          },
+          "hint": "丝 is two twists of thread. Keep one, stand it on the left, and you have 纟.",
+          "characters": [
+            {
+              "character": "红",
+              "pinyin": "hóng",
+              "meaning": "red",
+              "audio_text": "红"
+            },
+            {
+              "character": "绿",
+              "pinyin": "lǜ",
+              "meaning": "green",
+              "audio_text": "绿"
+            },
+            {
+              "character": "线",
+              "pinyin": "xiàn",
+              "meaning": "a thread",
+              "audio_text": "线"
+            }
+          ],
+          "find": {
+            "question": "Which part of 绿 is the radical?",
+            "choices": [
+              "纟",
+              "录",
+              "犭",
+              "车"
+            ],
+            "correct": "纟"
+          },
+          "reveal": {
+            "category": "thread — and, surprisingly, colour",
+            "note": "红 and 绿 are colours. Why would a colour be made of silk? Part 5 answers that."
+          }
+        },
+        {
+          "radical": "车",
+          "name": "车字旁",
+          "pinyin": "chē zì páng",
+          "name_en": "the vehicle radical",
+          "audio_text": "车字旁",
+          "from": {
+            "character": "车",
+            "pinyin": "chē",
+            "meaning": "a vehicle"
+          },
+          "hint": "车 narrows and its last stroke lifts into a 提, so it can stand beside another piece.",
+          "characters": [
+            {
+              "character": "辆",
+              "pinyin": "liàng",
+              "meaning": "(counts vehicles)",
+              "audio_text": "辆"
+            }
+          ],
+          "find": {
+            "question": "Which part of 辆 is the radical?",
+            "choices": [
+              "车",
+              "两",
+              "纟",
+              "犭"
+            ],
+            "correct": "车"
+          },
+          "reveal": {
+            "category": "things with wheels",
+            "note": "辆 does not mean anything on its own — it is the word you count cars with: 一辆车."
+          }
+        }
+      ],
+      "radical_audio": {
+        "犭": {
+          "text": "反犬旁",
+          "pinyin": "fǎn quǎn páng"
+        },
+        "纟": {
+          "text": "绞丝旁",
+          "pinyin": "jiǎo sī páng"
+        },
+        "车": {
+          "text": "车字旁",
+          "pinyin": "chē zì páng"
+        }
+      },
+      "group": {
+        "question": "Which character does NOT carry 纟?",
+        "choices": [
+          "猫",
+          "红",
+          "绿",
+          "线"
+        ],
+        "correct": "猫",
+        "explain": "猫 carries 犭 — it is an animal, not a thread."
+      }
+    },
+    "part3_dialogue": {
+      "title": "Use",
+      "subtitle": "词语与情景对话 · Words and dialogue",
+      "characters": [
+        {
+          "character": "色",
+          "pinyin": "sè",
+          "meaning": "colour",
+          "audio_text": "色"
+        }
+      ],
+      "words": [
+        {
+          "word": "小狗",
+          "pinyin": "xiǎo gǒu",
+          "meaning": "a puppy",
+          "audio_text": "小狗",
+          "built_from": "小 + 狗"
+        },
+        {
+          "word": "小猫",
+          "pinyin": "xiǎo māo",
+          "meaning": "a kitten",
+          "audio_text": "小猫",
+          "built_from": "小 + 猫"
+        },
+        {
+          "word": "红色",
+          "pinyin": "hóngsè",
+          "meaning": "the colour red",
+          "audio_text": "红色",
+          "built_from": "红 + 色"
+        },
+        {
+          "word": "绿色",
+          "pinyin": "lǜsè",
+          "meaning": "the colour green",
+          "audio_text": "绿色",
+          "built_from": "绿 + 色"
+        },
+        {
+          "word": "线上",
+          "pinyin": "xiàn shang",
+          "meaning": "online",
+          "audio_text": "线上",
+          "built_from": "线 + 上"
+        },
+        {
+          "word": "线下",
+          "pinyin": "xiàn xià",
+          "meaning": "offline",
+          "audio_text": "线下",
+          "built_from": "线 + 下"
+        },
+        {
+          "word": "车辆",
+          "pinyin": "chēliàng",
+          "meaning": "vehicles",
+          "audio_text": "车辆",
+          "built_from": "车 + 辆"
+        },
+        {
+          "word": "一辆车",
+          "pinyin": "yí liàng chē",
+          "meaning": "one car",
+          "audio_text": "一辆车",
+          "built_from": "一 + 辆 + 车"
+        }
+      ],
+      "support_words": [
+        {
+          "word": "喜欢",
+          "pinyin": "xǐhuan",
+          "meaning": "to like"
+        },
+        {
+          "word": "还是",
+          "pinyin": "háishi",
+          "meaning": "or"
+        },
+        {
+          "word": "颜色",
+          "pinyin": "yánsè",
+          "meaning": "colour"
+        },
+        {
+          "word": "很多",
+          "pinyin": "hěn duō",
+          "meaning": "a lot of"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Cats or dogs?",
+          "goal": "猫 狗 喜欢",
+          "picture": "🐱",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你喜欢猫还是狗？",
+              "pinyin": "Nǐ xǐhuan māo háishi gǒu?",
+              "meaning": "Do you like cats or dogs?",
+              "audio_text": "你喜欢猫还是狗"
+            },
+            {
+              "speaker": "B",
+              "text": "我喜欢猫。",
+              "pinyin": "Wǒ xǐhuan māo.",
+              "meaning": "I like cats.",
+              "audio_text": "我喜欢猫"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "你喜欢猫还是狗？",
+            "pinyin": "Nǐ xǐhuan māo háishi gǒu?",
+            "meaning": "Do you like cats or dogs?",
+            "audio_text": "你喜欢猫还是狗"
+          },
+          "speak": {
+            "question": "Build it: do you like cats or dogs?",
+            "tiles": [
+              "猫",
+              "还是",
+              "狗",
+              "你喜欢",
+              "小猫"
+            ],
+            "answer": [
+              "你喜欢",
+              "猫",
+              "还是",
+              "狗"
+            ],
+            "result": "你喜欢猫还是狗？",
+            "pinyin": "Nǐ xǐhuan māo háishi gǒu?"
+          }
+        },
+        {
+          "title": "Which colour?",
+          "goal": "颜色 绿色",
+          "picture": "l19-p5-spools",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你喜欢什么颜色？",
+              "pinyin": "Nǐ xǐhuan shénme yánsè?",
+              "meaning": "What colour do you like?",
+              "audio_text": "你喜欢什么颜色"
+            },
+            {
+              "speaker": "B",
+              "text": "我喜欢绿色。",
+              "pinyin": "Wǒ xǐhuan lǜsè.",
+              "meaning": "I like green.",
+              "audio_text": "我喜欢绿色"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我喜欢绿色。",
+            "pinyin": "Wǒ xǐhuan lǜsè.",
+            "meaning": "I like green.",
+            "audio_text": "我喜欢绿色"
+          },
+          "speak": {
+            "question": "Build it: I like green.",
+            "tiles": [
+              "绿色",
+              "红色",
+              "我喜欢"
+            ],
+            "answer": [
+              "我喜欢",
+              "绿色"
+            ],
+            "result": "我喜欢绿色。",
+            "pinyin": "Wǒ xǐhuan lǜsè."
+          }
+        },
+        {
+          "title": "Traffic",
+          "goal": "路上 车辆 很多",
+          "picture": "🚗",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "路上有很多车辆。",
+              "pinyin": "Lù shang yǒu hěn duō chēliàng.",
+              "meaning": "There are a lot of vehicles on the road.",
+              "audio_text": "路上有很多车辆"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "路上有很多车辆。",
+            "pinyin": "Lù shang yǒu hěn duō chēliàng.",
+            "meaning": "There are a lot of vehicles on the road.",
+            "audio_text": "路上有很多车辆"
+          },
+          "speak": {
+            "question": "Build it: there are a lot of vehicles on the road.",
+            "tiles": [
+              "车辆",
+              "很多",
+              "有",
+              "路上",
+              "线上"
+            ],
+            "answer": [
+              "路上",
+              "有",
+              "很多",
+              "车辆"
+            ],
+            "result": "路上有很多车辆。",
+            "pinyin": "Lù shang yǒu hěn duō chēliàng."
+          }
+        },
+        {
+          "title": "My red car",
+          "goal": "一辆 红色的车",
+          "picture": "🚘",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "我有一辆红色的车。",
+              "pinyin": "Wǒ yǒu yí liàng hóngsè de chē.",
+              "meaning": "I have a red car.",
+              "audio_text": "我有一辆红色的车"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我有一辆红色的车。",
+            "pinyin": "Wǒ yǒu yí liàng hóngsè de chē.",
+            "meaning": "I have a red car.",
+            "audio_text": "我有一辆红色的车"
+          },
+          "speak": {
+            "question": "Build it: I have a red car.",
+            "tiles": [
+              "红色的车",
+              "绿色的车",
+              "一辆",
+              "我有"
+            ],
+            "answer": [
+              "我有",
+              "一辆",
+              "红色的车"
+            ],
+            "result": "我有一辆红色的车。",
+            "pinyin": "Wǒ yǒu yí liàng hóngsè de chē."
+          }
+        }
+      ],
+      "read_aloud": {
+        "title": "Say them yourself",
+        "intro": "Listen, then read each one aloud.",
+        "items": [
+          {
+            "text": "小猫",
+            "pinyin": "xiǎo māo",
+            "meaning": "a kitten",
+            "audio_text": "小猫"
+          },
+          {
+            "text": "红色",
+            "pinyin": "hóngsè",
+            "meaning": "the colour red",
+            "audio_text": "红色"
+          },
+          {
+            "text": "车辆",
+            "pinyin": "chēliàng",
+            "meaning": "vehicles",
+            "audio_text": "车辆"
+          }
+        ]
+      }
+    },
+    "part4_write": {
+      "title": "Write",
+      "subtitle": "汉字书写 · Write every character in this lesson",
+      "characters": [
+        "犬",
+        "车",
+        "丝",
+        "线",
+        "红",
+        "猫",
+        "狗"
+      ]
+    },
+    "part5_culture": {
+      "title": "Discover Chinese",
+      "subtitle": "汉字探秘 · Culture and language insights",
+      "topic": "丝线与颜色",
+      "topic_en": "Silk threads, and where the colours come from",
+      "picture": "l19-p5-threads",
+      "listen": {
+        "intro": "你发现了吗？ Three characters. Tap each one.",
+        "items": [
+          {
+            "character": "红",
+            "pinyin": "hóng",
+            "meaning": "red",
+            "audio_text": "红"
+          },
+          {
+            "character": "绿",
+            "pinyin": "lǜ",
+            "meaning": "green",
+            "audio_text": "绿"
+          },
+          {
+            "character": "线",
+            "pinyin": "xiàn",
+            "meaning": "a thread",
+            "audio_text": "线"
+          }
+        ]
+      },
+      "notice": "它们都有绞丝旁「纟」！ A colour, another colour, and a thread — all three built on silk.",
+      "discover": "纟 is the squeezed form of 糸 mì, a skein of silk. Before dye was common, a colour was something you bought as thread — so the character for the colour was made of the thread it came on.",
+      "gallery": {
+        "title": "从一根丝线开始 · It starts with one thread",
+        "intro": "蚕吐丝，人们把丝织成布。",
+        "items": [
+          {
+            "character": "丝",
+            "pinyin": "sī",
+            "meaning": "silk, from the cocoon",
+            "audio_text": "丝",
+            "picture": "l19-p5-cocoons"
+          },
+          {
+            "character": "丝线",
+            "pinyin": "sīxiàn",
+            "meaning": "silk thread",
+            "audio_text": "丝线",
+            "picture": "l19-p5-threads"
+          },
+          {
+            "character": "织布",
+            "pinyin": "zhī bù",
+            "meaning": "to weave cloth",
+            "audio_text": "织布",
+            "picture": "l19-p5-weaving"
+          },
+          {
+            "character": "丝绸",
+            "pinyin": "sīchóu",
+            "meaning": "silk fabric",
+            "audio_text": "丝绸",
+            "picture": "l19-p5-silk-cloth"
+          }
+        ]
+      },
+      "find_all": {
+        "title": "汉字小侦探 · Character detective",
+        "question": "哪些汉字有绞丝旁？",
+        "intro": "Tap every character built on 纟.",
+        "choices": [
+          "线",
+          "花",
+          "红",
+          "山",
+          "绿",
+          "织"
+        ],
+        "correct": [
+          "线",
+          "红",
+          "绿",
+          "织"
+        ],
+        "explain": "花 grows under 艹 and 山 is a mountain. The other four all began as thread — 织 is to weave."
+      }
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "犬",
+      "audio_text": "犬",
+      "correct": "a dog",
+      "choices": [
+        "a vehicle",
+        "a cat",
+        "green",
+        "a dog"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "犬",
+      "correct": "犬",
+      "choices": [
+        "红",
+        "猫",
+        "犬",
+        "狗"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a dog",
+      "correct": "犬",
+      "choices": [
+        "红",
+        "犬",
+        "绿",
+        "猫"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "犬",
+      "audio_text": "犬",
+      "correct": "quǎn",
+      "choices": [
+        "hóng",
+        "quǎn",
+        "liàng",
+        "gǒu"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "quǎn",
+      "correct": "犬",
+      "choices": [
+        "犬",
+        "车",
+        "辆",
+        "丝"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "丝",
+      "audio_text": "丝",
+      "correct": "silk",
+      "choices": [
+        "a vehicle",
+        "silk",
+        "(counts vehicles)",
+        "red"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "丝",
+      "correct": "丝",
+      "choices": [
+        "猫",
+        "犬",
+        "辆",
+        "丝"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "silk",
+      "correct": "丝",
+      "choices": [
+        "绿",
+        "色",
+        "猫",
+        "丝"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "丝",
+      "audio_text": "丝",
+      "correct": "sī",
+      "choices": [
+        "liàng",
+        "xiàn",
+        "sī",
+        "lǜ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "sī",
+      "correct": "丝",
+      "choices": [
+        "丝",
+        "狗",
+        "辆",
+        "红"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "车",
+      "audio_text": "车",
+      "correct": "a vehicle",
+      "choices": [
+        "a thread",
+        "a dog",
+        "a vehicle",
+        "green"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "车",
+      "correct": "车",
+      "choices": [
+        "色",
+        "车",
+        "红",
+        "犬"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a vehicle",
+      "correct": "车",
+      "choices": [
+        "红",
+        "犬",
+        "车",
+        "绿"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "车",
+      "audio_text": "车",
+      "correct": "chē",
+      "choices": [
+        "chē",
+        "māo",
+        "quǎn",
+        "liàng"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "chē",
+      "correct": "车",
+      "choices": [
+        "猫",
+        "车",
+        "红",
+        "丝"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "狗",
+      "audio_text": "狗",
+      "correct": "a dog (the everyday word)",
+      "choices": [
+        "a cat",
+        "colour",
+        "a thread",
+        "a dog (the everyday word)"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "狗",
+      "correct": "狗",
+      "choices": [
+        "狗",
+        "色",
+        "丝",
+        "红"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a dog (the everyday word)",
+      "correct": "狗",
+      "choices": [
+        "车",
+        "狗",
+        "线",
+        "犬"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "狗",
+      "audio_text": "狗",
+      "correct": "gǒu",
+      "choices": [
+        "chē",
+        "gǒu",
+        "māo",
+        "quǎn"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "gǒu",
+      "correct": "狗",
+      "choices": [
+        "绿",
+        "辆",
+        "狗",
+        "色"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "猫",
+      "audio_text": "猫",
+      "correct": "a cat",
+      "choices": [
+        "a dog (the everyday word)",
+        "green",
+        "a cat",
+        "colour"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "猫",
+      "correct": "猫",
+      "choices": [
+        "狗",
+        "红",
+        "猫",
+        "色"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a cat",
+      "correct": "猫",
+      "choices": [
+        "辆",
+        "狗",
+        "红",
+        "猫"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "猫",
+      "audio_text": "猫",
+      "correct": "māo",
+      "choices": [
+        "xiàn",
+        "quǎn",
+        "sè",
+        "māo"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "māo",
+      "correct": "猫",
+      "choices": [
+        "线",
+        "犬",
+        "猫",
+        "色"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "红",
+      "audio_text": "红",
+      "correct": "red",
+      "choices": [
+        "red",
+        "silk",
+        "colour",
+        "a dog"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "红",
+      "correct": "红",
+      "choices": [
+        "红",
+        "狗",
+        "线",
+        "丝"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "red",
+      "correct": "红",
+      "choices": [
+        "车",
+        "色",
+        "红",
+        "猫"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "红",
+      "audio_text": "红",
+      "correct": "hóng",
+      "choices": [
+        "gǒu",
+        "chē",
+        "hóng",
+        "xiàn"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "hóng",
+      "correct": "红",
+      "choices": [
+        "红",
+        "色",
+        "辆",
+        "狗"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "绿",
+      "audio_text": "绿",
+      "correct": "green",
+      "choices": [
+        "green",
+        "(counts vehicles)",
+        "a thread",
+        "silk"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "绿",
+      "correct": "绿",
+      "choices": [
+        "线",
+        "绿",
+        "车",
+        "猫"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "green",
+      "correct": "绿",
+      "choices": [
+        "红",
+        "线",
+        "犬",
+        "绿"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "绿",
+      "audio_text": "绿",
+      "correct": "lǜ",
+      "choices": [
+        "liàng",
+        "sī",
+        "chē",
+        "lǜ"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "lǜ",
+      "correct": "绿",
+      "choices": [
+        "绿",
+        "车",
+        "猫",
+        "犬"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "线",
+      "audio_text": "线",
+      "correct": "a thread",
+      "choices": [
+        "green",
+        "a dog (the everyday word)",
+        "red",
+        "a thread"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "线",
+      "correct": "线",
+      "choices": [
+        "红",
+        "绿",
+        "车",
+        "线"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a thread",
+      "correct": "线",
+      "choices": [
+        "辆",
+        "线",
+        "车",
+        "猫"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "线",
+      "audio_text": "线",
+      "correct": "xiàn",
+      "choices": [
+        "gǒu",
+        "sè",
+        "chē",
+        "xiàn"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "xiàn",
+      "correct": "线",
+      "choices": [
+        "线",
+        "车",
+        "绿",
+        "辆"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "辆",
+      "audio_text": "辆",
+      "correct": "(counts vehicles)",
+      "choices": [
+        "red",
+        "a vehicle",
+        "silk",
+        "(counts vehicles)"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "辆",
+      "correct": "辆",
+      "choices": [
+        "线",
+        "犬",
+        "车",
+        "辆"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "(counts vehicles)",
+      "correct": "辆",
+      "choices": [
+        "犬",
+        "辆",
+        "线",
+        "狗"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "辆",
+      "audio_text": "辆",
+      "correct": "liàng",
+      "choices": [
+        "gǒu",
+        "sī",
+        "liàng",
+        "sè"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "liàng",
+      "correct": "辆",
+      "choices": [
+        "丝",
+        "辆",
+        "绿",
+        "猫"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "色",
+      "audio_text": "色",
+      "correct": "colour",
+      "choices": [
+        "(counts vehicles)",
+        "colour",
+        "silk",
+        "a vehicle"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "色",
+      "correct": "色",
+      "choices": [
+        "车",
+        "犬",
+        "狗",
+        "色"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "colour",
+      "correct": "色",
+      "choices": [
+        "绿",
+        "红",
+        "色",
+        "车"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "色",
+      "audio_text": "色",
+      "correct": "sè",
+      "choices": [
+        "sè",
+        "gǒu",
+        "sī",
+        "liàng"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "sè",
+      "correct": "色",
+      "choices": [
+        "绿",
+        "车",
+        "线",
+        "色"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "狗",
+      "audio_text": "狗",
+      "correct": "犭",
+      "choices": [
+        "艹",
+        "⻊",
+        "犭",
+        "辶"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "猫",
+      "audio_text": "猫",
+      "correct": "犭",
+      "choices": [
+        "宀",
+        "艹",
+        "犭",
+        "月"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "红",
+      "audio_text": "红",
+      "correct": "纟",
+      "choices": [
+        "阝",
+        "雨",
+        "艹",
+        "纟"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "绿",
+      "audio_text": "绿",
+      "correct": "纟",
+      "choices": [
+        "日",
+        "艹",
+        "车",
+        "纟"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "线",
+      "audio_text": "线",
+      "correct": "纟",
+      "choices": [
+        "宀",
+        "日",
+        "山",
+        "纟"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "辆",
+      "audio_text": "辆",
+      "correct": "车",
+      "choices": [
+        "⻊",
+        "艹",
+        "纟",
+        "车"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "小狗",
+      "audio_text": "小狗",
+      "correct": "a puppy",
+      "choices": [
+        "one car",
+        "offline",
+        "a puppy",
+        "vehicles"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "小狗",
+      "correct": "小狗",
+      "choices": [
+        "小狗",
+        "红色",
+        "线上",
+        "小猫"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "小猫",
+      "audio_text": "小猫",
+      "correct": "a kitten",
+      "choices": [
+        "online",
+        "a kitten",
+        "the colour red",
+        "one car"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "小猫",
+      "correct": "小猫",
+      "choices": [
+        "线上",
+        "绿色",
+        "小猫",
+        "一辆车"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "红色",
+      "audio_text": "红色",
+      "correct": "the colour red",
+      "choices": [
+        "the colour green",
+        "a kitten",
+        "a puppy",
+        "the colour red"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "红色",
+      "correct": "红色",
+      "choices": [
+        "线下",
+        "一辆车",
+        "红色",
+        "小猫"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "绿色",
+      "audio_text": "绿色",
+      "correct": "the colour green",
+      "choices": [
+        "online",
+        "one car",
+        "vehicles",
+        "the colour green"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "绿色",
+      "correct": "绿色",
+      "choices": [
+        "绿色",
+        "线下",
+        "小狗",
+        "车辆"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "线上",
+      "audio_text": "线上",
+      "correct": "online",
+      "choices": [
+        "the colour red",
+        "online",
+        "the colour green",
+        "offline"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "线上",
+      "correct": "线上",
+      "choices": [
+        "绿色",
+        "一辆车",
+        "车辆",
+        "线上"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "线下",
+      "audio_text": "线下",
+      "correct": "offline",
+      "choices": [
+        "the colour red",
+        "one car",
+        "offline",
+        "a kitten"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "线下",
+      "correct": "线下",
+      "choices": [
+        "小狗",
+        "车辆",
+        "线上",
+        "线下"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "车辆",
+      "audio_text": "车辆",
+      "correct": "vehicles",
+      "choices": [
+        "a kitten",
+        "a puppy",
+        "vehicles",
+        "one car"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "车辆",
+      "correct": "车辆",
+      "choices": [
+        "线下",
+        "车辆",
+        "小狗",
+        "线上"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "一辆车",
+      "audio_text": "一辆车",
+      "correct": "one car",
+      "choices": [
+        "the colour red",
+        "the colour green",
+        "one car",
+        "vehicles"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "一辆车",
+      "correct": "一辆车",
+      "choices": [
+        "一辆车",
+        "线上",
+        "小狗",
+        "线下"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "犬",
+          "pinyin": "quǎn",
+          "english": "a dog"
+        },
+        {
+          "id": 2,
+          "chinese": "丝",
+          "pinyin": "sī",
+          "english": "silk"
+        },
+        {
+          "id": 3,
+          "chinese": "车",
+          "pinyin": "chē",
+          "english": "a vehicle"
+        },
+        {
+          "id": 4,
+          "chinese": "狗",
+          "pinyin": "gǒu",
+          "english": "a dog (the everyday word)"
+        },
+        {
+          "id": 5,
+          "chinese": "猫",
+          "pinyin": "māo",
+          "english": "a cat"
+        }
+      ],
+      "correct": "char:犬丝车狗猫",
+      "choices": [
+        "a dog",
+        "silk",
+        "a vehicle",
+        "a dog (the everyday word)",
+        "a cat"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "红",
+          "pinyin": "hóng",
+          "english": "red"
+        },
+        {
+          "id": 2,
+          "chinese": "绿",
+          "pinyin": "lǜ",
+          "english": "green"
+        },
+        {
+          "id": 3,
+          "chinese": "线",
+          "pinyin": "xiàn",
+          "english": "a thread"
+        },
+        {
+          "id": 4,
+          "chinese": "辆",
+          "pinyin": "liàng",
+          "english": "(counts vehicles)"
+        },
+        {
+          "id": 5,
+          "chinese": "色",
+          "pinyin": "sè",
+          "english": "colour"
+        }
+      ],
+      "correct": "char:红绿线辆色",
+      "choices": [
+        "red",
+        "green",
+        "a thread",
+        "(counts vehicles)",
+        "colour"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "狗",
+          "pinyin": "gǒu",
+          "english": "a dog (the everyday word)"
+        },
+        {
+          "id": 2,
+          "chinese": "猫",
+          "pinyin": "māo",
+          "english": "a cat"
+        },
+        {
+          "id": 3,
+          "chinese": "红",
+          "pinyin": "hóng",
+          "english": "red"
+        },
+        {
+          "id": 4,
+          "chinese": "绿",
+          "pinyin": "lǜ",
+          "english": "green"
+        },
+        {
+          "id": 5,
+          "chinese": "线",
+          "pinyin": "xiàn",
+          "english": "a thread"
+        }
+      ],
+      "correct": "char:狗猫红绿线",
+      "choices": [
+        "a dog (the everyday word)",
+        "a cat",
+        "red",
+        "green",
+        "a thread"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "小狗",
+          "pinyin": "xiǎo gǒu",
+          "english": "a puppy"
+        },
+        {
+          "id": 2,
+          "chinese": "小猫",
+          "pinyin": "xiǎo māo",
+          "english": "a kitten"
+        },
+        {
+          "id": 3,
+          "chinese": "红色",
+          "pinyin": "hóngsè",
+          "english": "the colour red"
+        },
+        {
+          "id": 4,
+          "chinese": "绿色",
+          "pinyin": "lǜsè",
+          "english": "the colour green"
+        },
+        {
+          "id": 5,
+          "chinese": "线上",
+          "pinyin": "xiàn shang",
+          "english": "online"
+        }
+      ],
+      "correct": "word:小狗小猫红色绿色线上",
+      "choices": [
+        "a puppy",
+        "a kitten",
+        "the colour red",
+        "the colour green",
+        "online"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "线下",
+          "pinyin": "xiàn xià",
+          "english": "offline"
+        },
+        {
+          "id": 2,
+          "chinese": "车辆",
+          "pinyin": "chēliàng",
+          "english": "vehicles"
+        },
+        {
+          "id": 3,
+          "chinese": "一辆车",
+          "pinyin": "yí liàng chē",
+          "english": "one car"
+        },
+        {
+          "id": 4,
+          "chinese": "小狗",
+          "pinyin": "xiǎo gǒu",
+          "english": "a puppy"
+        },
+        {
+          "id": 5,
+          "chinese": "红色",
+          "pinyin": "hóngsè",
+          "english": "the colour red"
+        }
+      ],
+      "correct": "word:线下车辆一辆车小狗红色",
+      "choices": [
+        "offline",
+        "vehicles",
+        "one car",
+        "a puppy",
+        "the colour red"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "小",
+        null
+      ],
+      "correct": "狗",
+      "choices": [
+        "猫",
+        "狗",
+        "车",
+        "红"
+      ],
+      "result_word": "小狗",
+      "result_pinyin": "xiǎo gǒu",
+      "result_meaning": "a puppy",
+      "audio_text": "小狗"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "红",
+        null
+      ],
+      "correct": "色",
+      "choices": [
+        "色",
+        "丝",
+        "辆",
+        "线"
+      ],
+      "result_word": "红色",
+      "result_pinyin": "hóngsè",
+      "result_meaning": "the colour red",
+      "audio_text": "红色"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "绿",
+        null
+      ],
+      "correct": "色",
+      "choices": [
+        "车",
+        "狗",
+        "猫",
+        "色"
+      ],
+      "result_word": "绿色",
+      "result_pinyin": "lǜsè",
+      "result_meaning": "the colour green",
+      "audio_text": "绿色"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "车",
+        null
+      ],
+      "correct": "辆",
+      "choices": [
+        "辆",
+        "红",
+        "线",
+        "色"
+      ],
+      "result_word": "车辆",
+      "result_pinyin": "chēliàng",
+      "result_meaning": "vehicles",
+      "audio_text": "车辆"
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I like cats.",
+      "tiles": [
+        "猫",
+        "狗",
+        "我喜欢"
+      ],
+      "answer": [
+        "我喜欢",
+        "猫"
+      ],
+      "result": "我喜欢猫。",
+      "pinyin": "Wǒ xǐhuan māo.",
+      "correct": "我喜欢猫",
+      "choices": [
+        "我喜欢猫"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I like green.",
+      "tiles": [
+        "绿色",
+        "红色",
+        "我喜欢"
+      ],
+      "answer": [
+        "我喜欢",
+        "绿色"
+      ],
+      "result": "我喜欢绿色。",
+      "pinyin": "Wǒ xǐhuan lǜsè.",
+      "correct": "我喜欢绿色",
+      "choices": [
+        "我喜欢绿色"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "There are a lot of vehicles on the road.",
+      "tiles": [
+        "车辆",
+        "很多",
+        "有",
+        "路上",
+        "线上"
+      ],
+      "answer": [
+        "路上",
+        "有",
+        "很多",
+        "车辆"
+      ],
+      "result": "路上有很多车辆。",
+      "pinyin": "Lù shang yǒu hěn duō chēliàng.",
+      "correct": "路上有很多车辆",
+      "choices": [
+        "路上有很多车辆"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I have a red car.",
+      "tiles": [
+        "红色的车",
+        "绿色的车",
+        "一辆",
+        "我有"
+      ],
+      "answer": [
+        "我有",
+        "一辆",
+        "红色的车"
+      ],
+      "result": "我有一辆红色的车。",
+      "pinyin": "Wǒ yǒu yí liàng hóngsè de chē.",
+      "correct": "我有一辆红色的车",
+      "choices": [
+        "我有一辆红色的车"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "绿色",
+      "audio_text": "绿色",
+      "pinyin": "lǜsè",
+      "meaning": "the colour green",
+      "correct": "绿色",
+      "choices": [
+        "绿色"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "小猫",
+      "audio_text": "小猫",
+      "pinyin": "xiǎo māo",
+      "meaning": "a kitten",
+      "correct": "小猫",
+      "choices": [
+        "小猫"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我喜欢绿色。",
+      "audio_text": "我喜欢绿色",
+      "pinyin": "Wǒ xǐhuan lǜsè.",
+      "meaning": "I like green.",
+      "correct": "我喜欢绿色。",
+      "choices": [
+        "我喜欢绿色。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "车辆",
+      "audio_text": "车辆",
+      "pinyin": "chēliàng",
+      "meaning": "vehicles",
+      "correct": "车辆",
+      "choices": [
+        "车辆"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我有一辆红色的车。",
+      "audio_text": "我有一辆红色的车",
+      "pinyin": "Wǒ yǒu yí liàng hóngsè de chē.",
+      "meaning": "I have a red car.",
+      "correct": "我有一辆红色的车。",
+      "choices": [
+        "我有一辆红色的车。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "线上",
+      "audio_text": "线上",
+      "pinyin": "xiàn shang",
+      "meaning": "online",
+      "correct": "线上",
+      "choices": [
+        "线上"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "线下",
+      "audio_text": "线下",
+      "pinyin": "xiàn xià",
+      "meaning": "offline",
+      "correct": "线下",
+      "choices": [
+        "线下"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "小狗",
+      "audio_text": "小狗",
+      "pinyin": "xiǎo gǒu",
+      "meaning": "a puppy",
+      "correct": "小狗",
+      "choices": [
+        "小狗"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "红色",
+      "audio_text": "红色",
+      "pinyin": "hóngsè",
+      "meaning": "the colour red",
+      "correct": "红色",
+      "choices": [
+        "红色"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "路上有很多车辆。",
+      "audio_text": "路上有很多车辆",
+      "pinyin": "Lù shang yǒu hěn duō chēliàng.",
+      "meaning": "There are a lot of vehicles on the road.",
+      "correct": "路上有很多车辆。",
+      "choices": [
+        "路上有很多车辆。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "一辆车",
+      "audio_text": "一辆车",
+      "pinyin": "yí liàng chē",
+      "meaning": "one car",
+      "correct": "一辆车",
+      "choices": [
+        "一辆车"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "你喜欢猫还是狗？",
+      "audio_text": "你喜欢猫还是狗",
+      "pinyin": "Nǐ xǐhuan māo háishi gǒu?",
+      "meaning": "Do you like cats or dogs?",
+      "correct": "你喜欢猫还是狗？",
+      "choices": [
+        "你喜欢猫还是狗？"
+      ]
+    }
+  ]
+}

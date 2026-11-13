@@ -146,6 +146,29 @@ const LESSON_IMAGES = {
   'l17-p5-cha-art':   require('./lesson_images/l17/l17-p5-cha-art.jpeg'),
   'l17-p5-cai':       require('./lesson_images/l17/l17-p5-cai.jpeg'),
   'l17-p5-shan':      require('./lesson_images/l17/l17-p5-shan.jpeg'),
+
+  // ── Lesson 18 · 走 国 家, and what is inside the last two ────────────────
+  'l18-p1-zou': require('./lesson_images/l18/l18-p1-zou.png'),
+  'l18-p1-guo': require('./lesson_images/l18/l18-p1-guo.png'),
+  'l18-p1-jia': require('./lesson_images/l18/l18-p1-jia.png'),
+
+  'l18-p5-city-gate':      require('./lesson_images/l18/l18-p5-city-gate.jpeg'),
+  'l18-p5-city-plan':      require('./lesson_images/l18/l18-p5-city-plan.jpeg'),
+  'l18-p5-courtyard':      require('./lesson_images/l18/l18-p5-courtyard.jpeg'),
+  'l18-p5-home-with-pigs': require('./lesson_images/l18/l18-p5-home-with-pigs.jpeg'),
+
+  // ── Lesson 19 · 犬 丝 车, and why a colour is made of silk ───────────────
+  'l19-p1-quan': require('./lesson_images/l19/l19-p1-quan.png'),
+  'l19-p1-si':   require('./lesson_images/l19/l19-p1-si.png'),
+  'l19-p1-che':  require('./lesson_images/l19/l19-p1-che.png'),
+
+  // Part 5 · cocoon to cloth
+  'l19-p5-cocoons':    require('./lesson_images/l19/l19-p5-cocoons.jpeg'),
+  'l19-p5-reeling':    require('./lesson_images/l19/l19-p5-reeling.jpeg'),
+  'l19-p5-threads':    require('./lesson_images/l19/l19-p5-threads.jpeg'),
+  'l19-p5-spools':     require('./lesson_images/l19/l19-p5-spools.jpeg'),
+  'l19-p5-weaving':    require('./lesson_images/l19/l19-p5-weaving.jpeg'),
+  'l19-p5-silk-cloth': require('./lesson_images/l19/l19-p5-silk-cloth.jpeg'),
 };
 
 /** The asset for a key, or null when there is no artwork for it yet. */

@@ -19,6 +19,8 @@ import characterLesson14 from './character_lesson_14.json';
 import characterLesson15 from './character_lesson_15.json';
 import characterLesson16 from './character_lesson_16.json';
 import characterLesson17 from './character_lesson_17.json';
+import characterLesson18 from './character_lesson_18.json';
+import characterLesson19 from './character_lesson_19.json';
 
 export const CHARACTER_LESSONS = {
   1: characterLesson1,
@@ -38,6 +40,8 @@ export const CHARACTER_LESSONS = {
   15: characterLesson15,
   16: characterLesson16,
   17: characterLesson17,
+  18: characterLesson18,
+  19: characterLesson19,
 };
 
 export const TOTAL_CHARACTER_LESSONS = 20;

@@ -1,0 +1,2141 @@
+{
+  "id": 18,
+  "part": 2,
+  "title": "Lesson 18 · A Country and a Home",
+  "emoji": "🏠",
+  "subtitle": "走 国 家 · 走之底 国字框 宝盖头",
+  "description": "Three radicals that hold a character underneath, around and above — and what is hidden inside 国 and 家.",
+  "new_strokes": [],
+  "new_characters": [
+    "过",
+    "边",
+    "园",
+    "回",
+    "家",
+    "安"
+  ],
+  "new_words": [
+    "吃过",
+    "喝过",
+    "上边",
+    "下边",
+    "花园",
+    "茶园",
+    "回家",
+    "国家",
+    "哪国人",
+    "中国",
+    "安全"
+  ],
+  "learn_content": {
+    "part1_blocks": {
+      "title": "Discover",
+      "subtitle": "独体字 · Characters that stand alone",
+      "intro": "Walking, a country, a home. Two of these have something hidden inside them — Part 5 opens them up.",
+      "blocks": [
+        {
+          "character": "走",
+          "pinyin": "zǒu",
+          "meaning": "to walk",
+          "audio_text": "走",
+          "picture": "l18-p1-zou",
+          "note": "A swinging arm above a foot — someone mid-stride.",
+          "match": {
+            "prompt_picture": "l18-p1-zou",
+            "choices": [
+              "走",
+              "国",
+              "家"
+            ],
+            "correct": "走"
+          }
+        },
+        {
+          "character": "国",
+          "pinyin": "guó",
+          "meaning": "a country",
+          "audio_text": "国",
+          "picture": "l18-p1-guo",
+          "note": "A boundary drawn round something worth guarding.",
+          "match": {
+            "prompt_picture": "l18-p1-guo",
+            "choices": [
+              "走",
+              "国",
+              "家"
+            ],
+            "correct": "国"
+          }
+        },
+        {
+          "character": "家",
+          "pinyin": "jiā",
+          "meaning": "home",
+          "audio_text": "家",
+          "picture": "l18-p1-jia",
+          "note": "A roof, and underneath it a pig. Part 5 explains why.",
+          "match": {
+            "prompt_picture": "l18-p1-jia",
+            "choices": [
+              "走",
+              "国",
+              "家"
+            ],
+            "correct": "家"
+          }
+        }
+      ],
+      "match": {
+        "question": "Match each picture to its character.",
+        "pairs": [
+          {
+            "picture": "l18-p1-zou",
+            "character": "走"
+          },
+          {
+            "picture": "l18-p1-guo",
+            "character": "国"
+          },
+          {
+            "picture": "l18-p1-jia",
+            "character": "家"
+          }
+        ]
+      }
+    },
+    "part2_components": {
+      "title": "Decode",
+      "subtitle": "部件与部首 · Components and radicals",
+      "caveat": "Three radicals, three different ways of holding a character: underneath it, around it, and over it.",
+      "components": [
+        {
+          "radical": "辶",
+          "name": "走之底",
+          "pinyin": "zǒu zhī dǐ",
+          "name_en": "the walking radical, running underneath",
+          "audio_text": "走之底",
+          "from": {
+            "character": "走",
+            "pinyin": "zǒu",
+            "meaning": "to walk"
+          },
+          "hint": "走 flattens into a stroke that starts at the top left and sweeps along the bottom — 辶 carries the character rather than standing beside it.",
+          "characters": [
+            {
+              "character": "过",
+              "pinyin": "guò",
+              "meaning": "to have done",
+              "audio_text": "过"
+            },
+            {
+              "character": "边",
+              "pinyin": "biān",
+              "meaning": "a side",
+              "audio_text": "边"
+            }
+          ],
+          "find": {
+            "question": "Which part of 过 is the radical?",
+            "choices": [
+              "辶",
+              "寸",
+              "囗",
+              "宀"
+            ],
+            "correct": "辶"
+          },
+          "reveal": {
+            "category": "movement, and places you pass",
+            "note": "过 is having been somewhere or done something; 边 is the side you walk along."
+          }
+        },
+        {
+          "radical": "囗",
+          "name": "国字框",
+          "pinyin": "guó zì kuàng",
+          "name_en": "the enclosure, drawn all the way round",
+          "audio_text": "国字框",
+          "from": {
+            "character": "国",
+            "pinyin": "guó",
+            "meaning": "a country"
+          },
+          "hint": "囗 is a wall with no gap in it. Whatever goes inside is surrounded on all four sides.",
+          "characters": [
+            {
+              "character": "园",
+              "pinyin": "yuán",
+              "meaning": "a garden",
+              "audio_text": "园"
+            },
+            {
+              "character": "回",
+              "pinyin": "huí",
+              "meaning": "to return",
+              "audio_text": "回"
+            }
+          ],
+          "find": {
+            "question": "Where does 囗 sit in 园?",
+            "choices": [
+              "all the way round",
+              "on the left",
+              "on top",
+              "underneath"
+            ],
+            "correct": "all the way round"
+          },
+          "reveal": {
+            "category": "things with a boundary",
+            "note": "A garden has a wall. 回 is going back inside one — which is how it came to mean return."
+          }
+        },
+        {
+          "radical": "宀",
+          "name": "宝盖头",
+          "pinyin": "bǎo gài tóu",
+          "name_en": "the roof, sitting over everything",
+          "audio_text": "宝盖头",
+          "from": {
+            "character": "家",
+            "pinyin": "jiā",
+            "meaning": "home"
+          },
+          "hint": "宀 is a roof with two walls starting to come down — it covers whatever is written beneath it.",
+          "characters": [
+            {
+              "character": "家",
+              "pinyin": "jiā",
+              "meaning": "home",
+              "audio_text": "家"
+            },
+            {
+              "character": "安",
+              "pinyin": "ān",
+              "meaning": "at peace",
+              "audio_text": "安"
+            }
+          ],
+          "find": {
+            "question": "Which part of 安 is the radical?",
+            "choices": [
+              "宀",
+              "女",
+              "囗",
+              "辶"
+            ],
+            "correct": "宀"
+          },
+          "reveal": {
+            "category": "under a roof",
+            "note": "家 is a home. 安 is a woman under a roof — safe, settled, at peace."
+          }
+        }
+      ],
+      "radical_audio": {
+        "辶": {
+          "text": "走之底",
+          "pinyin": "zǒu zhī dǐ"
+        },
+        "囗": {
+          "text": "国字框",
+          "pinyin": "guó zì kuàng"
+        },
+        "宀": {
+          "text": "宝盖头",
+          "pinyin": "bǎo gài tóu"
+        }
+      },
+      "group": {
+        "question": "Which character is NOT held inside 囗?",
+        "choices": [
+          "安",
+          "园",
+          "回",
+          "国"
+        ],
+        "correct": "安",
+        "explain": "安 wears 宀, a roof. The other three are walled in on all four sides."
+      }
+    },
+    "part3_dialogue": {
+      "title": "Use",
+      "subtitle": "词语与情景对话 · Words and dialogue",
+      "characters": [
+        {
+          "character": "中",
+          "pinyin": "zhōng",
+          "meaning": "middle",
+          "audio_text": "中"
+        },
+        {
+          "character": "了",
+          "pinyin": "le",
+          "meaning": "(marks it as done)",
+          "audio_text": "了"
+        }
+      ],
+      "words": [
+        {
+          "word": "吃过",
+          "pinyin": "chī guo",
+          "meaning": "to have eaten",
+          "audio_text": "吃过",
+          "built_from": "吃 + 过"
+        },
+        {
+          "word": "喝过",
+          "pinyin": "hē guo",
+          "meaning": "to have drunk",
+          "audio_text": "喝过",
+          "built_from": "喝 + 过"
+        },
+        {
+          "word": "上边",
+          "pinyin": "shàngbian",
+          "meaning": "the upper side",
+          "audio_text": "上边",
+          "built_from": "上 + 边"
+        },
+        {
+          "word": "下边",
+          "pinyin": "xiàbian",
+          "meaning": "the lower side",
+          "audio_text": "下边",
+          "built_from": "下 + 边"
+        },
+        {
+          "word": "花园",
+          "pinyin": "huāyuán",
+          "meaning": "a flower garden",
+          "audio_text": "花园",
+          "built_from": "花 + 园"
+        },
+        {
+          "word": "茶园",
+          "pinyin": "cháyuán",
+          "meaning": "a tea garden",
+          "audio_text": "茶园",
+          "built_from": "茶 + 园"
+        },
+        {
+          "word": "回家",
+          "pinyin": "huí jiā",
+          "meaning": "to go home",
+          "audio_text": "回家",
+          "built_from": "回 + 家"
+        },
+        {
+          "word": "国家",
+          "pinyin": "guójiā",
+          "meaning": "a nation",
+          "audio_text": "国家",
+          "built_from": "国 + 家"
+        },
+        {
+          "word": "哪国人",
+          "pinyin": "nǎ guó rén",
+          "meaning": "which nationality",
+          "audio_text": "哪国人",
+          "built_from": "哪 + 国 + 人"
+        },
+        {
+          "word": "中国",
+          "pinyin": "Zhōngguó",
+          "meaning": "China",
+          "audio_text": "中国",
+          "built_from": "中 + 国"
+        },
+        {
+          "word": "安全",
+          "pinyin": "ānquán",
+          "meaning": "safe",
+          "audio_text": "安全",
+          "built_from": "安 + 全"
+        }
+      ],
+      "support_words": [
+        {
+          "word": "全",
+          "pinyin": "quán",
+          "meaning": "whole, complete"
+        },
+        {
+          "word": "中国人",
+          "pinyin": "Zhōngguó rén",
+          "meaning": "a Chinese person"
+        },
+        {
+          "word": "哪儿",
+          "pinyin": "nǎr",
+          "meaning": "where"
+        },
+        {
+          "word": "吗",
+          "pinyin": "ma",
+          "meaning": "(makes it a question)"
+        }
+      ],
+      "dialogues": [
+        {
+          "title": "Have you?",
+          "goal": "喝过",
+          "picture": "🍵",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你喝过茶吗？",
+              "pinyin": "Nǐ hē guo chá ma?",
+              "meaning": "Have you drunk tea before?",
+              "audio_text": "你喝过茶吗"
+            },
+            {
+              "speaker": "B",
+              "text": "我喝过。",
+              "pinyin": "Wǒ hē guo.",
+              "meaning": "I have.",
+              "audio_text": "我喝过"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "你喝过茶吗？",
+            "pinyin": "Nǐ hē guo chá ma?",
+            "meaning": "Have you drunk tea before?",
+            "audio_text": "你喝过茶吗"
+          },
+          "speak": {
+            "question": "Build it: have you drunk tea before?",
+            "tiles": [
+              "茶",
+              "吗",
+              "你",
+              "喝过",
+              "吃过"
+            ],
+            "answer": [
+              "你",
+              "喝过",
+              "茶",
+              "吗"
+            ],
+            "result": "你喝过茶吗？",
+            "pinyin": "Nǐ hē guo chá ma?"
+          }
+        },
+        {
+          "title": "Two gardens",
+          "goal": "花园 茶园 上边 下边",
+          "picture": "l18-p1-guo",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "花园在上边，茶园在下边。",
+              "pinyin": "Huāyuán zài shàngbian, cháyuán zài xiàbian.",
+              "meaning": "The flower garden is up above, the tea garden down below.",
+              "audio_text": "花园在上边，茶园在下边"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "花园在上边，茶园在下边。",
+            "pinyin": "Huāyuán zài shàngbian, cháyuán zài xiàbian.",
+            "meaning": "The flower garden is up above, the tea garden down below.",
+            "audio_text": "花园在上边，茶园在下边"
+          },
+          "speak": {
+            "question": "Build it: the flower garden is up above.",
+            "tiles": [
+              "上边",
+              "下边",
+              "在",
+              "花园"
+            ],
+            "answer": [
+              "花园",
+              "在",
+              "上边"
+            ],
+            "result": "花园在上边。",
+            "pinyin": "Huāyuán zài shàngbian."
+          }
+        },
+        {
+          "title": "She went home",
+          "goal": "回家 了",
+          "picture": "🏠",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你妈妈去哪儿了？",
+              "pinyin": "Nǐ māma qù nǎr le?",
+              "meaning": "Where did your mum go?",
+              "audio_text": "你妈妈去哪儿了"
+            },
+            {
+              "speaker": "B",
+              "text": "她回家了。",
+              "pinyin": "Tā huí jiā le.",
+              "meaning": "She went home.",
+              "audio_text": "她回家了"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "她回家了。",
+            "pinyin": "Tā huí jiā le.",
+            "meaning": "She went home.",
+            "audio_text": "她回家了"
+          },
+          "speak": {
+            "question": "Build it: she went home.",
+            "tiles": [
+              "回家",
+              "了",
+              "我",
+              "她"
+            ],
+            "answer": [
+              "她",
+              "回家",
+              "了"
+            ],
+            "result": "她回家了。",
+            "pinyin": "Tā huí jiā le."
+          }
+        },
+        {
+          "title": "Which country?",
+          "goal": "哪国人 中国人",
+          "picture": "🌏",
+          "lines": [
+            {
+              "speaker": "A",
+              "text": "你是哪国人？",
+              "pinyin": "Nǐ shì nǎ guó rén?",
+              "meaning": "Which country are you from?",
+              "audio_text": "你是哪国人"
+            },
+            {
+              "speaker": "B",
+              "text": "我是中国人！",
+              "pinyin": "Wǒ shì Zhōngguó rén!",
+              "meaning": "I am Chinese!",
+              "audio_text": "我是中国人"
+            }
+          ],
+          "read": {
+            "intro": "Listen, then read it aloud.",
+            "text": "我是中国人！",
+            "pinyin": "Wǒ shì Zhōngguó rén!",
+            "meaning": "I am Chinese!",
+            "audio_text": "我是中国人"
+          },
+          "speak": {
+            "question": "Build it: which country are you from?",
+            "tiles": [
+              "哪国人",
+              "中国人",
+              "是",
+              "你"
+            ],
+            "answer": [
+              "你",
+              "是",
+              "哪国人"
+            ],
+            "result": "你是哪国人？",
+            "pinyin": "Nǐ shì nǎ guó rén?"
+          }
+        }
+      ],
+      "read_aloud": {
+        "title": "Say them yourself",
+        "intro": "Listen, then read each one aloud.",
+        "items": [
+          {
+            "text": "回家",
+            "pinyin": "huí jiā",
+            "meaning": "to go home",
+            "audio_text": "回家"
+          },
+          {
+            "text": "中国",
+            "pinyin": "Zhōngguó",
+            "meaning": "China",
+            "audio_text": "中国"
+          },
+          {
+            "text": "安全",
+            "pinyin": "ānquán",
+            "meaning": "safe",
+            "audio_text": "安全"
+          }
+        ]
+      }
+    },
+    "part4_write": {
+      "title": "Write",
+      "subtitle": "汉字书写 · Write every character in this lesson",
+      "characters": [
+        "走",
+        "国",
+        "家",
+        "回",
+        "过",
+        "边",
+        "园"
+      ]
+    },
+    "part5_culture": {
+      "title": "Discover Chinese",
+      "subtitle": "汉字探秘 · Culture and language insights",
+      "topic": "国与家",
+      "topic_en": "A country, and a home",
+      "picture": "l18-p5-city-gate",
+      "listen": {
+        "intro": "Two characters, two ideas. Tap each one.",
+        "items": [
+          {
+            "character": "国",
+            "pinyin": "guó",
+            "meaning": "a country",
+            "audio_text": "国"
+          },
+          {
+            "character": "家",
+            "pinyin": "jiā",
+            "meaning": "home",
+            "audio_text": "家"
+          },
+          {
+            "character": "国家",
+            "pinyin": "guójiā",
+            "meaning": "a nation",
+            "audio_text": "国家"
+          }
+        ]
+      },
+      "notice": "你知道「国」和「家」有什么关系吗？ What do a country and a home have to do with each other?",
+      "discover": "国是很多人的家，家是每个人生活的地方。A country is home to many people; a family has a home of its own. Open either character and you find the same idea: something enclosed, and something kept safe inside.",
+      "secrets": {
+        "title": "打开这两个字 · Open them up",
+        "intro": "Each one is two pieces.",
+        "items": [
+          {
+            "radical": "囗",
+            "name": "国 = 囗 + 玉",
+            "name_en": "An enclosure, and jade inside it",
+            "audio_text": "国",
+            "pinyin": "guó",
+            "picture": "l18-p5-city-plan",
+            "chars": [
+              {
+                "character": "囗",
+                "pinyin": "wéi",
+                "meaning": "a boundary",
+                "audio_text": "囗"
+              },
+              {
+                "character": "玉",
+                "pinyin": "yù",
+                "meaning": "jade",
+                "audio_text": "玉"
+              }
+            ],
+            "note": "A wall drawn all the way round, with treasure kept inside it. The old form held a weapon instead — 戈 — because a border had to be guarded."
+          },
+          {
+            "radical": "宀",
+            "name": "家 = 宀 + 豕",
+            "name_en": "A roof, and a pig underneath",
+            "audio_text": "家",
+            "pinyin": "jiā",
+            "picture": "l18-p5-home-with-pigs",
+            "chars": [
+              {
+                "character": "宀",
+                "pinyin": "mián",
+                "meaning": "a roof",
+                "audio_text": "宀"
+              },
+              {
+                "character": "豕",
+                "pinyin": "shǐ",
+                "meaning": "a pig",
+                "audio_text": "豕"
+              }
+            ],
+            "note": "古时候，人们住在房子里，也养猪。Long ago people lived in houses and kept pigs under the same roof — so a home is a roof with a pig beneath it."
+          }
+        ]
+      },
+      "try": {
+        "intro": "国是大家，家是小家。A country is the larger home; a family is the everyday one.",
+        "items": [
+          {
+            "sentence": "国 = 囗 + ___",
+            "pinyin": "guó = wéi + ___",
+            "meaning": "What is kept inside the wall?",
+            "choices": [
+              "玉",
+              "豕"
+            ],
+            "correct": "玉"
+          },
+          {
+            "sentence": "家 = 宀 + ___",
+            "pinyin": "jiā = mián + ___",
+            "meaning": "What is under the roof?",
+            "choices": [
+              "豕",
+              "玉"
+            ],
+            "correct": "豕"
+          }
+        ]
+      }
+    }
+  },
+  "recall_pool": [
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "走",
+      "audio_text": "走",
+      "correct": "to walk",
+      "choices": [
+        "a garden",
+        "to return",
+        "to walk",
+        "to have done"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "走",
+      "correct": "走",
+      "choices": [
+        "走",
+        "安",
+        "过",
+        "家"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to walk",
+      "correct": "走",
+      "choices": [
+        "回",
+        "边",
+        "走",
+        "安"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "走",
+      "audio_text": "走",
+      "correct": "zǒu",
+      "choices": [
+        "biān",
+        "guò",
+        "guó",
+        "zǒu"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zǒu",
+      "correct": "走",
+      "choices": [
+        "回",
+        "了",
+        "过",
+        "走"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "国",
+      "audio_text": "国",
+      "correct": "a country",
+      "choices": [
+        "a garden",
+        "to return",
+        "to have done",
+        "a country"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "国",
+      "correct": "国",
+      "choices": [
+        "安",
+        "过",
+        "了",
+        "国"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a country",
+      "correct": "国",
+      "choices": [
+        "园",
+        "边",
+        "过",
+        "国"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "国",
+      "audio_text": "国",
+      "correct": "guó",
+      "choices": [
+        "yuán",
+        "guó",
+        "zhōng",
+        "biān"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "guó",
+      "correct": "国",
+      "choices": [
+        "过",
+        "园",
+        "国",
+        "中"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "家",
+      "audio_text": "家",
+      "correct": "home",
+      "choices": [
+        "middle",
+        "home",
+        "to walk",
+        "at peace"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "家",
+      "correct": "家",
+      "choices": [
+        "边",
+        "家",
+        "国",
+        "走"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "home",
+      "correct": "家",
+      "choices": [
+        "家",
+        "回",
+        "园",
+        "国"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "家",
+      "audio_text": "家",
+      "correct": "jiā",
+      "choices": [
+        "zǒu",
+        "biān",
+        "jiā",
+        "guò"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "jiā",
+      "correct": "家",
+      "choices": [
+        "边",
+        "园",
+        "过",
+        "家"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "过",
+      "audio_text": "过",
+      "correct": "to have done",
+      "choices": [
+        "middle",
+        "to have done",
+        "to return",
+        "a country"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "过",
+      "correct": "过",
+      "choices": [
+        "过",
+        "国",
+        "家",
+        "回"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to have done",
+      "correct": "过",
+      "choices": [
+        "了",
+        "中",
+        "过",
+        "安"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "过",
+      "audio_text": "过",
+      "correct": "guò",
+      "choices": [
+        "zhōng",
+        "yuán",
+        "guò",
+        "jiā"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "guò",
+      "correct": "过",
+      "choices": [
+        "安",
+        "边",
+        "回",
+        "过"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "边",
+      "audio_text": "边",
+      "correct": "a side",
+      "choices": [
+        "at peace",
+        "a side",
+        "to return",
+        "to walk"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "边",
+      "correct": "边",
+      "choices": [
+        "边",
+        "家",
+        "中",
+        "过"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a side",
+      "correct": "边",
+      "choices": [
+        "边",
+        "国",
+        "安",
+        "过"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "边",
+      "audio_text": "边",
+      "correct": "biān",
+      "choices": [
+        "guò",
+        "guó",
+        "biān",
+        "jiā"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "biān",
+      "correct": "边",
+      "choices": [
+        "走",
+        "家",
+        "边",
+        "国"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "园",
+      "audio_text": "园",
+      "correct": "a garden",
+      "choices": [
+        "(marks it as done)",
+        "at peace",
+        "a garden",
+        "to have done"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "园",
+      "correct": "园",
+      "choices": [
+        "国",
+        "家",
+        "回",
+        "园"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "a garden",
+      "correct": "园",
+      "choices": [
+        "过",
+        "园",
+        "中",
+        "走"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "园",
+      "audio_text": "园",
+      "correct": "yuán",
+      "choices": [
+        "guò",
+        "biān",
+        "jiā",
+        "yuán"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "yuán",
+      "correct": "园",
+      "choices": [
+        "了",
+        "园",
+        "走",
+        "过"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "回",
+      "audio_text": "回",
+      "correct": "to return",
+      "choices": [
+        "a garden",
+        "to return",
+        "middle",
+        "to walk"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "回",
+      "correct": "回",
+      "choices": [
+        "回",
+        "中",
+        "边",
+        "安"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "to return",
+      "correct": "回",
+      "choices": [
+        "家",
+        "安",
+        "回",
+        "走"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "回",
+      "audio_text": "回",
+      "correct": "huí",
+      "choices": [
+        "jiā",
+        "ān",
+        "yuán",
+        "huí"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "huí",
+      "correct": "回",
+      "choices": [
+        "回",
+        "了",
+        "走",
+        "中"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "安",
+      "audio_text": "安",
+      "correct": "at peace",
+      "choices": [
+        "to return",
+        "home",
+        "to walk",
+        "at peace"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "安",
+      "correct": "安",
+      "choices": [
+        "回",
+        "过",
+        "安",
+        "国"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "at peace",
+      "correct": "安",
+      "choices": [
+        "走",
+        "安",
+        "边",
+        "国"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "安",
+      "audio_text": "安",
+      "correct": "ān",
+      "choices": [
+        "ān",
+        "huí",
+        "guó",
+        "guò"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "ān",
+      "correct": "安",
+      "choices": [
+        "园",
+        "家",
+        "走",
+        "安"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "中",
+      "audio_text": "中",
+      "correct": "middle",
+      "choices": [
+        "to return",
+        "home",
+        "middle",
+        "a country"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "中",
+      "correct": "中",
+      "choices": [
+        "回",
+        "安",
+        "了",
+        "中"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "middle",
+      "correct": "中",
+      "choices": [
+        "国",
+        "了",
+        "中",
+        "回"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "中",
+      "audio_text": "中",
+      "correct": "zhōng",
+      "choices": [
+        "ān",
+        "zǒu",
+        "yuán",
+        "zhōng"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "zhōng",
+      "correct": "中",
+      "choices": [
+        "安",
+        "中",
+        "回",
+        "边"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "了",
+      "audio_text": "了",
+      "correct": "(marks it as done)",
+      "choices": [
+        "to return",
+        "(marks it as done)",
+        "at peace",
+        "home"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "了",
+      "correct": "了",
+      "choices": [
+        "国",
+        "边",
+        "园",
+        "了"
+      ]
+    },
+    {
+      "type": "meaning_to_char",
+      "prompt_en": "(marks it as done)",
+      "correct": "了",
+      "choices": [
+        "走",
+        "家",
+        "了",
+        "中"
+      ]
+    },
+    {
+      "type": "char_to_pinyin",
+      "prompt_char": "了",
+      "audio_text": "了",
+      "correct": "le",
+      "choices": [
+        "jiā",
+        "le",
+        "huí",
+        "biān"
+      ]
+    },
+    {
+      "type": "pinyin_to_char",
+      "prompt_pinyin": "le",
+      "correct": "了",
+      "choices": [
+        "过",
+        "边",
+        "了",
+        "国"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "过",
+      "audio_text": "过",
+      "correct": "辶",
+      "choices": [
+        "艹",
+        "目",
+        "宀",
+        "辶"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "边",
+      "audio_text": "边",
+      "correct": "辶",
+      "choices": [
+        "辶",
+        "阝",
+        "山",
+        "目"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "园",
+      "audio_text": "园",
+      "correct": "囗",
+      "choices": [
+        "囗",
+        "宀",
+        "日",
+        "雨"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "回",
+      "audio_text": "回",
+      "correct": "囗",
+      "choices": [
+        "囗",
+        "目",
+        "辶",
+        "艹"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "家",
+      "audio_text": "家",
+      "correct": "宀",
+      "choices": [
+        "月",
+        "阝",
+        "讠",
+        "宀"
+      ]
+    },
+    {
+      "type": "char_to_radical",
+      "prompt_char": "安",
+      "audio_text": "安",
+      "correct": "宀",
+      "choices": [
+        "雨",
+        "囗",
+        "忄",
+        "宀"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "吃过",
+      "audio_text": "吃过",
+      "correct": "to have eaten",
+      "choices": [
+        "China",
+        "to have eaten",
+        "safe",
+        "a flower garden"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "吃过",
+      "correct": "吃过",
+      "choices": [
+        "国家",
+        "吃过",
+        "哪国人",
+        "中国"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "喝过",
+      "audio_text": "喝过",
+      "correct": "to have drunk",
+      "choices": [
+        "a nation",
+        "to have drunk",
+        "a flower garden",
+        "a tea garden"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "喝过",
+      "correct": "喝过",
+      "choices": [
+        "回家",
+        "喝过",
+        "茶园",
+        "下边"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "上边",
+      "audio_text": "上边",
+      "correct": "the upper side",
+      "choices": [
+        "which nationality",
+        "the upper side",
+        "safe",
+        "China"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "上边",
+      "correct": "上边",
+      "choices": [
+        "上边",
+        "回家",
+        "花园",
+        "茶园"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "下边",
+      "audio_text": "下边",
+      "correct": "the lower side",
+      "choices": [
+        "to go home",
+        "to have eaten",
+        "a tea garden",
+        "the lower side"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "下边",
+      "correct": "下边",
+      "choices": [
+        "花园",
+        "下边",
+        "中国",
+        "茶园"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "花园",
+      "audio_text": "花园",
+      "correct": "a flower garden",
+      "choices": [
+        "a flower garden",
+        "a tea garden",
+        "the upper side",
+        "China"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "花园",
+      "correct": "花园",
+      "choices": [
+        "安全",
+        "花园",
+        "喝过",
+        "中国"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "茶园",
+      "audio_text": "茶园",
+      "correct": "a tea garden",
+      "choices": [
+        "which nationality",
+        "to have drunk",
+        "China",
+        "a tea garden"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "茶园",
+      "correct": "茶园",
+      "choices": [
+        "回家",
+        "上边",
+        "茶园",
+        "喝过"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "回家",
+      "audio_text": "回家",
+      "correct": "to go home",
+      "choices": [
+        "safe",
+        "to go home",
+        "China",
+        "to have drunk"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "回家",
+      "correct": "回家",
+      "choices": [
+        "回家",
+        "喝过",
+        "茶园",
+        "吃过"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "国家",
+      "audio_text": "国家",
+      "correct": "a nation",
+      "choices": [
+        "a nation",
+        "a flower garden",
+        "China",
+        "to have drunk"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "国家",
+      "correct": "国家",
+      "choices": [
+        "国家",
+        "吃过",
+        "哪国人",
+        "下边"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "哪国人",
+      "audio_text": "哪国人",
+      "correct": "which nationality",
+      "choices": [
+        "which nationality",
+        "the lower side",
+        "to go home",
+        "a tea garden"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "哪国人",
+      "correct": "哪国人",
+      "choices": [
+        "上边",
+        "喝过",
+        "下边",
+        "哪国人"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "中国",
+      "audio_text": "中国",
+      "correct": "China",
+      "choices": [
+        "China",
+        "a flower garden",
+        "a nation",
+        "to have eaten"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "中国",
+      "correct": "中国",
+      "choices": [
+        "中国",
+        "回家",
+        "哪国人",
+        "下边"
+      ]
+    },
+    {
+      "type": "char_to_meaning",
+      "prompt_char": "安全",
+      "audio_text": "安全",
+      "correct": "safe",
+      "choices": [
+        "safe",
+        "a flower garden",
+        "to go home",
+        "to have drunk"
+      ]
+    },
+    {
+      "type": "audio_to_char",
+      "audio_text": "安全",
+      "correct": "安全",
+      "choices": [
+        "茶园",
+        "安全",
+        "上边",
+        "中国"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "走",
+          "pinyin": "zǒu",
+          "english": "to walk"
+        },
+        {
+          "id": 2,
+          "chinese": "国",
+          "pinyin": "guó",
+          "english": "a country"
+        },
+        {
+          "id": 3,
+          "chinese": "家",
+          "pinyin": "jiā",
+          "english": "home"
+        },
+        {
+          "id": 4,
+          "chinese": "过",
+          "pinyin": "guò",
+          "english": "to have done"
+        },
+        {
+          "id": 5,
+          "chinese": "边",
+          "pinyin": "biān",
+          "english": "a side"
+        }
+      ],
+      "correct": "char:走国家过边",
+      "choices": [
+        "to walk",
+        "a country",
+        "home",
+        "to have done",
+        "a side"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "园",
+          "pinyin": "yuán",
+          "english": "a garden"
+        },
+        {
+          "id": 2,
+          "chinese": "回",
+          "pinyin": "huí",
+          "english": "to return"
+        },
+        {
+          "id": 3,
+          "chinese": "安",
+          "pinyin": "ān",
+          "english": "at peace"
+        },
+        {
+          "id": 4,
+          "chinese": "中",
+          "pinyin": "zhōng",
+          "english": "middle"
+        },
+        {
+          "id": 5,
+          "chinese": "了",
+          "pinyin": "le",
+          "english": "(marks it as done)"
+        }
+      ],
+      "correct": "char:园回安中了",
+      "choices": [
+        "a garden",
+        "to return",
+        "at peace",
+        "middle",
+        "(marks it as done)"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "char",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "过",
+          "pinyin": "guò",
+          "english": "to have done"
+        },
+        {
+          "id": 2,
+          "chinese": "边",
+          "pinyin": "biān",
+          "english": "a side"
+        },
+        {
+          "id": 3,
+          "chinese": "园",
+          "pinyin": "yuán",
+          "english": "a garden"
+        },
+        {
+          "id": 4,
+          "chinese": "回",
+          "pinyin": "huí",
+          "english": "to return"
+        },
+        {
+          "id": 5,
+          "chinese": "家",
+          "pinyin": "jiā",
+          "english": "home"
+        }
+      ],
+      "correct": "char:过边园回家",
+      "choices": [
+        "to have done",
+        "a side",
+        "a garden",
+        "to return",
+        "home"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "吃过",
+          "pinyin": "chī guo",
+          "english": "to have eaten"
+        },
+        {
+          "id": 2,
+          "chinese": "喝过",
+          "pinyin": "hē guo",
+          "english": "to have drunk"
+        },
+        {
+          "id": 3,
+          "chinese": "上边",
+          "pinyin": "shàngbian",
+          "english": "the upper side"
+        },
+        {
+          "id": 4,
+          "chinese": "下边",
+          "pinyin": "xiàbian",
+          "english": "the lower side"
+        },
+        {
+          "id": 5,
+          "chinese": "花园",
+          "pinyin": "huāyuán",
+          "english": "a flower garden"
+        }
+      ],
+      "correct": "word:吃过喝过上边下边花园",
+      "choices": [
+        "to have eaten",
+        "to have drunk",
+        "the upper side",
+        "the lower side",
+        "a flower garden"
+      ]
+    },
+    {
+      "type": "matching",
+      "mode": "word",
+      "instruction": "Match each one to its meaning.",
+      "pairs": [
+        {
+          "id": 1,
+          "chinese": "茶园",
+          "pinyin": "cháyuán",
+          "english": "a tea garden"
+        },
+        {
+          "id": 2,
+          "chinese": "回家",
+          "pinyin": "huí jiā",
+          "english": "to go home"
+        },
+        {
+          "id": 3,
+          "chinese": "国家",
+          "pinyin": "guójiā",
+          "english": "a nation"
+        },
+        {
+          "id": 4,
+          "chinese": "中国",
+          "pinyin": "Zhōngguó",
+          "english": "China"
+        },
+        {
+          "id": 5,
+          "chinese": "安全",
+          "pinyin": "ānquán",
+          "english": "safe"
+        }
+      ],
+      "correct": "word:茶园回家国家中国安全",
+      "choices": [
+        "a tea garden",
+        "to go home",
+        "a nation",
+        "China",
+        "safe"
+      ]
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "回",
+        null
+      ],
+      "correct": "家",
+      "choices": [
+        "国",
+        "边",
+        "园",
+        "家"
+      ],
+      "result_word": "回家",
+      "result_pinyin": "huí jiā",
+      "result_meaning": "to go home",
+      "audio_text": "回家"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "中",
+        null
+      ],
+      "correct": "国",
+      "choices": [
+        "国",
+        "园",
+        "家",
+        "回"
+      ],
+      "result_word": "中国",
+      "result_pinyin": "Zhōngguó",
+      "result_meaning": "China",
+      "audio_text": "中国"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "花",
+        null
+      ],
+      "correct": "园",
+      "choices": [
+        "国",
+        "家",
+        "园",
+        "边"
+      ],
+      "result_word": "花园",
+      "result_pinyin": "huāyuán",
+      "result_meaning": "a flower garden",
+      "audio_text": "花园"
+    },
+    {
+      "type": "word_build",
+      "template": [
+        "上",
+        null
+      ],
+      "correct": "边",
+      "choices": [
+        "边",
+        "家",
+        "回",
+        "园"
+      ],
+      "result_word": "上边",
+      "result_pinyin": "shàngbian",
+      "result_meaning": "the upper side",
+      "audio_text": "上边"
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I have drunk it.",
+      "tiles": [
+        "喝过",
+        "吃过",
+        "我"
+      ],
+      "answer": [
+        "我",
+        "喝过"
+      ],
+      "result": "我喝过。",
+      "pinyin": "Wǒ hē guo.",
+      "correct": "我喝过",
+      "choices": [
+        "我喝过"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "She went home.",
+      "tiles": [
+        "回家",
+        "了",
+        "我",
+        "她"
+      ],
+      "answer": [
+        "她",
+        "回家",
+        "了"
+      ],
+      "result": "她回家了。",
+      "pinyin": "Tā huí jiā le.",
+      "correct": "她回家了",
+      "choices": [
+        "她回家了"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "I am Chinese.",
+      "tiles": [
+        "中国人",
+        "哪国人",
+        "是",
+        "我"
+      ],
+      "answer": [
+        "我",
+        "是",
+        "中国人"
+      ],
+      "result": "我是中国人！",
+      "pinyin": "Wǒ shì Zhōngguó rén!",
+      "correct": "我是中国人",
+      "choices": [
+        "我是中国人"
+      ]
+    },
+    {
+      "type": "sentence_build",
+      "prompt_en": "The flower garden is up above.",
+      "tiles": [
+        "上边",
+        "下边",
+        "在",
+        "花园"
+      ],
+      "answer": [
+        "花园",
+        "在",
+        "上边"
+      ],
+      "result": "花园在上边。",
+      "pinyin": "Huāyuán zài shàngbian.",
+      "correct": "花园在上边",
+      "choices": [
+        "花园在上边"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "下边",
+      "audio_text": "下边",
+      "pinyin": "xiàbian",
+      "meaning": "the lower side",
+      "correct": "下边",
+      "choices": [
+        "下边"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "花园",
+      "audio_text": "花园",
+      "pinyin": "huāyuán",
+      "meaning": "a flower garden",
+      "correct": "花园",
+      "choices": [
+        "花园"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "我是中国人！",
+      "audio_text": "我是中国人",
+      "pinyin": "Wǒ shì Zhōngguó rén!",
+      "meaning": "I am Chinese!",
+      "correct": "我是中国人！",
+      "choices": [
+        "我是中国人！"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "喝过",
+      "audio_text": "喝过",
+      "pinyin": "hē guo",
+      "meaning": "to have drunk",
+      "correct": "喝过",
+      "choices": [
+        "喝过"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "她回家了。",
+      "audio_text": "她回家了",
+      "pinyin": "Tā huí jiā le.",
+      "meaning": "She went home.",
+      "correct": "她回家了。",
+      "choices": [
+        "她回家了。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "安全",
+      "audio_text": "安全",
+      "pinyin": "ānquán",
+      "meaning": "safe",
+      "correct": "安全",
+      "choices": [
+        "安全"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "吃过",
+      "audio_text": "吃过",
+      "pinyin": "chī guo",
+      "meaning": "to have eaten",
+      "correct": "吃过",
+      "choices": [
+        "吃过"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "国家",
+      "audio_text": "国家",
+      "pinyin": "guójiā",
+      "meaning": "a nation",
+      "correct": "国家",
+      "choices": [
+        "国家"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "茶园",
+      "audio_text": "茶园",
+      "pinyin": "cháyuán",
+      "meaning": "a tea garden",
+      "correct": "茶园",
+      "choices": [
+        "茶园"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "回家",
+      "audio_text": "回家",
+      "pinyin": "huí jiā",
+      "meaning": "to go home",
+      "correct": "回家",
+      "choices": [
+        "回家"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "上边",
+      "audio_text": "上边",
+      "pinyin": "shàngbian",
+      "meaning": "the upper side",
+      "correct": "上边",
+      "choices": [
+        "上边"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "花园在上边，茶园在下边。",
+      "audio_text": "花园在上边，茶园在下边",
+      "pinyin": "Huāyuán zài shàngbian, cháyuán zài xiàbian.",
+      "meaning": "The flower garden is up above, the tea garden down below.",
+      "correct": "花园在上边，茶园在下边。",
+      "choices": [
+        "花园在上边，茶园在下边。"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "哪国人",
+      "audio_text": "哪国人",
+      "pinyin": "nǎ guó rén",
+      "meaning": "which nationality",
+      "correct": "哪国人",
+      "choices": [
+        "哪国人"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "中国",
+      "audio_text": "中国",
+      "pinyin": "Zhōngguó",
+      "meaning": "China",
+      "correct": "中国",
+      "choices": [
+        "中国"
+      ]
+    },
+    {
+      "type": "read_aloud",
+      "prompt_char": "你喝过茶吗？",
+      "audio_text": "你喝过茶吗",
+      "pinyin": "Nǐ hē guo chá ma?",
+      "meaning": "Have you drunk tea before?",
+      "correct": "你喝过茶吗？",
+      "choices": [
+        "你喝过茶吗？"
+      ]
+    }
+  ]
+}
